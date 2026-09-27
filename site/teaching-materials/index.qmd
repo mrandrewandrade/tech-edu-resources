@@ -92,6 +92,27 @@ Filters are saved in the page URL as you select them, so you can copy the addres
   </article>
 
   <article class="bs-slide-card" data-slide-card
+    data-collection="General"
+    data-courses="TTJ|TAS"
+    data-tags="vehicle inspection|service|maintenance|planning|safety|printable"
+    data-search="vehicle service preparation inspection worksheet pre job specifications wheels tires brakes steering suspension under hood maintenance planning safety printable TTJ TAS">
+    <a class="bs-slide-thumb" href="../assets/materials/vehicle-service-preparation-and-inspection-worksheet.pdf" aria-label="Open Vehicle Service Preparation and Inspection Worksheet PDF">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>SERVICE</strong><span>Inspect + plan</span></span>
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="../assets/materials/vehicle-service-preparation-and-inspection-worksheet.pdf">Vehicle Service Preparation and Inspection Worksheet</a></h2>
+      <p class="bs-slide-card-description">A reusable pre-job worksheet for recording vehicle specifications, inspecting commonly serviced systems, checking under the hood, and getting teacher approval before work begins.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TTJ">TTJ</button><button type="button" data-slide-card-course="TAS">TAS</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="vehicle inspection">Vehicle inspection</button><button type="button" data-slide-card-tag="maintenance">Maintenance</button><button type="button" data-slide-card-tag="planning">Planning</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="../assets/materials/vehicle-service-preparation-and-inspection-worksheet.pdf">Open PDF</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1qr5sM-ZgNY96qmiGFxrwiCHdngDDYqrpPWGjeGRGYGg/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
     data-collection="Well-Being"
     data-courses="TAS|TEJ|TTJ"
     data-tags="identity|reflection|goals|self-awareness|introductory"
