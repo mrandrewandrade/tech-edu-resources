@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Significant figures and rounding.">
+<meta name="description" content="Coulombs, potential difference, current, reference voltage, and a first connection to capacitors.">
 
-<title>1.1 Significant Figures – Technological Education Resources</title>
+<title>2.1 Charge, Voltage &amp; Current – Technological Education Resources</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,11 +87,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/bs-components.css">
 <link rel="stylesheet" href="../../assets/commons-overrides.css">
 <link rel="stylesheet" href="../../assets/bs-learn.css">
-<meta property="og:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta property="og:description" content="Significant figures and rounding.">
+<meta property="og:title" content="2.1 Charge, Voltage &amp; Current – Technological Education Resources">
+<meta property="og:description" content="Coulombs, potential difference, current, reference voltage, and a first connection to capacitors.">
 <meta property="og:site_name" content="Technological Education Resources">
-<meta name="twitter:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta name="twitter:description" content="Significant figures and rounding.">
+<meta name="twitter:title" content="2.1 Charge, Voltage &amp; Current – Technological Education Resources">
+<meta name="twitter:description" content="Coulombs, potential difference, current, reference voltage, and a first connection to capacitors.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/01-charge-voltage-current.html">2.1 Charge, Voltage &amp; Current</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.1 Significant Figures</span></a>
   </div>
 </li>
@@ -264,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/02-basic-electronics/01-charge-voltage-current.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tej3-4/02-basic-electronics/01-charge-voltage-current.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">2.1 Charge, Voltage &amp; Current</span></a>
   </div>
 </li>
@@ -298,27 +298,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#core-idea" id="toc-core-idea" class="nav-link active" data-scroll-target="#core-idea">Core idea</a></li>
-  <li><a href="#calculations" id="toc-calculations" class="nav-link" data-scroll-target="#calculations">Calculations</a>
+  <li><a href="#charge" id="toc-charge" class="nav-link active" data-scroll-target="#charge">Charge</a></li>
+  <li><a href="#voltage-potential-difference" id="toc-voltage-potential-difference" class="nav-link" data-scroll-target="#voltage-potential-difference">Voltage: potential difference</a>
   <ul class="collapse">
-  <li><a href="#adding-and-subtracting" id="toc-adding-and-subtracting" class="nav-link" data-scroll-target="#adding-and-subtracting">Adding and subtracting</a></li>
-  <li><a href="#multiplying-and-dividing" id="toc-multiplying-and-dividing" class="nav-link" data-scroll-target="#multiplying-and-dividing">Multiplying and dividing</a></li>
+  <li><a href="#raised-glass-analogy" id="toc-raised-glass-analogy" class="nav-link" data-scroll-target="#raised-glass-analogy">Raised-glass analogy</a></li>
   </ul></li>
-  <li><a href="#class-material" id="toc-class-material" class="nav-link" data-scroll-target="#class-material">Class material</a></li>
+  <li><a href="#current-charge-in-motion" id="toc-current-charge-in-motion" class="nav-link" data-scroll-target="#current-charge-in-motion">Current: charge in motion</a></li>
+  <li><a href="#why-coulombs-matter-later" id="toc-why-coulombs-matter-later" class="nav-link" data-scroll-target="#why-coulombs-matter-later">Why coulombs matter later</a></li>
+  <li><a href="#quick-check" id="toc-quick-check" class="nav-link" data-scroll-target="#quick-check">Quick check</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/01-charge-voltage-current.html">2.1 Charge, Voltage &amp; Current</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">1.1 Significant Figures</h1>
+<h1 class="title">2.1 Charge, Voltage &amp; Current</h1>
 </div>
 
 <div>
   <div class="description">
-    Significant figures and rounding.
+    Coulombs, potential difference, current, reference voltage, and a first connection to capacitors.
   </div>
 </div>
 
@@ -335,42 +336,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="core-idea" class="level2">
-<h2 class="anchored" data-anchor-id="core-idea">Core idea</h2>
-<p>Significant figures communicate the precision of a measured or stated value.</p>
+<section id="charge" class="level2">
+<h2 class="anchored" data-anchor-id="charge">Charge</h2>
+<p>Electric charge is represented by <strong>Q</strong> and measured in <strong>coulombs (C)</strong>.</p>
+<p>One coulomb corresponds to approximately <strong>6.25 × 10¹⁸ elementary charges</strong>. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;30-32]</a></p>
+<p>We normally do not count individual electrons. The coulomb gives us a practical unit for talking about an amount of charge.</p>
+</section>
+<section id="voltage-potential-difference" class="level2">
+<h2 class="anchored" data-anchor-id="voltage-potential-difference">Voltage: potential difference</h2>
+<p>Voltage is a <strong>potential difference between two points</strong>. It is measured in <strong>volts (V)</strong>. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;33-35]</a></p>
+<p>A useful relationship is:</p>
+<p><strong>1 V = 1 J/C</strong></p>
+<p>That means voltage can be understood as energy available per unit of charge.</p>
+<section id="raised-glass-analogy" class="level3">
+<h3 class="anchored" data-anchor-id="raised-glass-analogy">Raised-glass analogy</h3>
+<p>Imagine choosing the floor as a reference height.</p>
 <ul>
-<li>Non-zero digits are significant.</li>
-<li>Zeros between significant digits are significant.</li>
-<li>Leading zeros are not significant.</li>
-<li>Trailing zeros are significant when the notation makes the precision clear.</li>
-<li>In scientific notation, the coefficient makes the intended significant figures clear.</li>
+<li>a glass on the floor is at the reference level</li>
+<li>lifting the glass gives it more gravitational potential energy</li>
+<li>a point above the reference can be treated as positive</li>
+<li>a point below a chosen reference can be treated as negative</li>
 </ul>
-<p>Examples:</p>
-<p><strong>42.7</strong> has 3 significant figures.<br> <strong>0.00420</strong> has 3 significant figures.</p>
+<p>Voltage works similarly as a <strong>difference relative to a reference point</strong>. In an electronic system, that reference is often called <strong>ground</strong>.</p>
+<p>The analogy is about <strong>potential</strong>, not about electricity literally behaving like water.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Voltage can exist without current
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A battery can have a voltage across its terminals even when nothing is connected and no current is flowing. <a href="../../references.html#ref-grob2016">[1, p.&nbsp;49]</a></p>
+</div>
+</div>
 </section>
-<section id="calculations" class="level2">
-<h2 class="anchored" data-anchor-id="calculations">Calculations</h2>
-<section id="adding-and-subtracting" class="level3">
-<h3 class="anchored" data-anchor-id="adding-and-subtracting">Adding and subtracting</h3>
-<p>Round the answer to the least precise decimal place.</p>
-<p><strong>16.3 + 17.14 = 33.44 → 33.4</strong></p>
 </section>
-<section id="multiplying-and-dividing" class="level3">
-<h3 class="anchored" data-anchor-id="multiplying-and-dividing">Multiplying and dividing</h3>
-<p>Round the answer to the same number of significant figures as the value with the fewest significant figures.</p>
-<p><strong>6.23 × 1.23 = 7.6629 → 7.66</strong> (3 significant figures)</p>
-<p>Keep full calculator precision through the calculation and round once, at the end.</p>
+<section id="current-charge-in-motion" class="level2">
+<h2 class="anchored" data-anchor-id="current-charge-in-motion">Current: charge in motion</h2>
+<p>Current is represented by <strong>I</strong> and measured in <strong>amperes (A)</strong>.</p>
+<p><strong>I = Q / t</strong></p>
+<p>Therefore:</p>
+<p><strong>1 A = 1 C/s</strong></p>
+<p>Current is a <strong>rate</strong>. A useful water analogy is the rate at which water is being poured, not the total amount of water in the glass. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;35-38]</a></p>
 </section>
+<section id="why-coulombs-matter-later" class="level2">
+<h2 class="anchored" data-anchor-id="why-coulombs-matter-later">Why coulombs matter later</h2>
+<p>Capacitors give charge a practical meaning.</p>
+<p>A capacitor stores separated charge and electrical energy. Its capacitance tells us how much charge can be stored at a given voltage:</p>
+<p><strong>C = Q / V</strong></p>
+<p>We will use that relationship later. For now, the important connection is:</p>
+<p><strong>charge + voltage -&gt; capacitor behaviour</strong></p>
+<p>Modern multilayer ceramic capacitors are extremely common. <em>Open Circuits</em> notes that a smartphone may contain hundreds of MLCCs, many used to help stabilize power supplies. <a href="../../references.html#ref-opencircuits2023">[2, p.&nbsp;36]</a></p>
 </section>
-<section id="class-material" class="level2">
-<h2 class="anchored" data-anchor-id="class-material">Class material</h2>
-<ul>
-<li><a href="https://docs.google.com/presentation/d/1_EwePZ6fGRK-brHzccWetx0QSCgA4LFQ_vYn8hibq8c/edit?usp=drivesdk">Day 6 slides: Significant figures</a></li>
-<li><a href="https://docs.google.com/presentation/d/1erzc59cGdQb_AMdyey9qycehUKAHyV7Rmpe6u1a9iMQ/edit?usp=drivesdk">Day 7 slides: Significant figures review and number systems</a></li>
-<li><a href="https://drive.google.com/file/d/1ep-nUmzdp9LIc74qZqz_OfeASG1rulMA/view?usp=drivesdk">Presentation 1: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1yexhwUDedo25OSewC8WK8FDLQ0Cw89D_/view?usp=drivesdk">Presentation 2: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1eDQR4YRVu6Ny7Ud5PC6YKqn-lvc6FZof/view?usp=drivesdk">Assignment: Number Systems practice problems</a></li>
-</ul>
+<section id="quick-check" class="level2">
+<h2 class="anchored" data-anchor-id="quick-check">Quick check</h2>
+<ol type="1">
+<li>What does a coulomb measure?</li>
+<li>What is the difference between voltage and current?</li>
+<li>Can voltage exist when current is zero?</li>
+<li>If 3.0 C of charge passes a point in 2.0 s, what is the current?</li>
+<li>Why might capacitors make the idea of charge useful when looking at a motherboard?</li>
+</ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -381,7 +410,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Add one worked example or common mistake.</p>
+<p>Add one better analogy, diagram, or real component example for charge, voltage, or current.</p>
 </div>
 </div>
 

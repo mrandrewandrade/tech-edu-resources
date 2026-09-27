@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Significant figures and rounding.">
+<meta name="description" content="Charge, voltage, current, circuits, Ohm’s law, power, and energy using practical computer-electronics examples.">
 
-<title>1.1 Significant Figures – Technological Education Resources</title>
+<title>2. Basic Electronics – Technological Education Resources</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,15 +87,15 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/bs-components.css">
 <link rel="stylesheet" href="../../assets/commons-overrides.css">
 <link rel="stylesheet" href="../../assets/bs-learn.css">
-<meta property="og:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta property="og:description" content="Significant figures and rounding.">
+<meta property="og:title" content="2. Basic Electronics – Technological Education Resources">
+<meta property="og:description" content="Charge, voltage, current, circuits, Ohm’s law, power, and energy using practical computer-electronics examples.">
 <meta property="og:site_name" content="Technological Education Resources">
-<meta name="twitter:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta name="twitter:description" content="Significant figures and rounding.">
+<meta name="twitter:title" content="2. Basic Electronics – Technological Education Resources">
+<meta name="twitter:description" content="Charge, voltage, current, circuits, Ohm’s law, power, and energy using practical computer-electronics examples.">
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar docked nav-fixed bs-learn-article ter-notes-lesson quarto-light">
+<body class="nav-sidebar docked nav-fixed bs-learn-article bs-learn-track-index quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -184,14 +184,14 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.1 Significant Figures</span></a>
   </div>
 </li>
@@ -255,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../tej3-4/02-basic-electronics/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../tej3-4/02-basic-electronics/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">2. Basic Electronics</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -293,37 +293,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#core-idea" id="toc-core-idea" class="nav-link active" data-scroll-target="#core-idea">Core idea</a></li>
-  <li><a href="#calculations" id="toc-calculations" class="nav-link" data-scroll-target="#calculations">Calculations</a>
-  <ul class="collapse">
-  <li><a href="#adding-and-subtracting" id="toc-adding-and-subtracting" class="nav-link" data-scroll-target="#adding-and-subtracting">Adding and subtracting</a></li>
-  <li><a href="#multiplying-and-dividing" id="toc-multiplying-and-dividing" class="nav-link" data-scroll-target="#multiplying-and-dividing">Multiplying and dividing</a></li>
-  </ul></li>
-  <li><a href="#class-material" id="toc-class-material" class="nav-link" data-scroll-target="#class-material">Class material</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">1.1 Significant Figures</h1>
+<h1 class="title">2. Basic Electronics</h1>
 </div>
 
 <div>
   <div class="description">
-    Significant figures and rounding.
+    Charge, voltage, current, circuits, Ohm’s law, power, and energy using practical computer-electronics examples.
   </div>
 </div>
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -335,55 +321,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="core-idea" class="level2">
-<h2 class="anchored" data-anchor-id="core-idea">Core idea</h2>
-<p>Significant figures communicate the precision of a measured or stated value.</p>
+<p>This unit builds a practical model of electricity before introducing specific components in detail.</p>
+<p>Grob’s <em>Basic Electronics</em> is the main technical reference for charge, potential difference, current, closed circuits, Ohm’s law, power, energy, opens, and shorts. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;22-49, 76-99]</a></p>
+<p><em>Open Circuits</em> is used as a visual reference for what these ideas look like inside real electronic components and power-conversion hardware. <a href="../../references.html#ref-opencircuits2023">[2]</a></p>
+<ol type="1">
+<li><a href="../../tej3-4/02-basic-electronics/01-charge-voltage-current.html">2.1 Charge, Voltage &amp; Current</a></li>
+<li><a href="../../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html">2.2 Closed, Open &amp; Short Circuits</a></li>
+<li><a href="../../tej3-4/02-basic-electronics/03-ohms-law.html">2.3 Ohm’s Law</a></li>
+<li><a href="../../tej3-4/02-basic-electronics/04-power-energy.html">2.4 Power &amp; Energy</a></li>
+</ol>
+<section id="why-this-order" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-order">Why this order?</h2>
+<p>The goal is to understand the quantities first:</p>
 <ul>
-<li>Non-zero digits are significant.</li>
-<li>Zeros between significant digits are significant.</li>
-<li>Leading zeros are not significant.</li>
-<li>Trailing zeros are significant when the notation makes the precision clear.</li>
-<li>In scientific notation, the coefficient makes the intended significant figures clear.</li>
+<li><strong>charge</strong> tells us how much electric charge is involved</li>
+<li><strong>voltage</strong> tells us the potential difference between two points</li>
+<li><strong>current</strong> tells us how quickly charge is moving</li>
+<li><strong>resistance</strong> describes opposition to current</li>
+<li><strong>power</strong> tells us how quickly energy is transferred</li>
+<li><strong>energy</strong> tells us the total amount transferred over time</li>
 </ul>
-<p>Examples:</p>
-<p><strong>42.7</strong> has 3 significant figures.<br> <strong>0.00420</strong> has 3 significant figures.</p>
-</section>
-<section id="calculations" class="level2">
-<h2 class="anchored" data-anchor-id="calculations">Calculations</h2>
-<section id="adding-and-subtracting" class="level3">
-<h3 class="anchored" data-anchor-id="adding-and-subtracting">Adding and subtracting</h3>
-<p>Round the answer to the least precise decimal place.</p>
-<p><strong>16.3 + 17.14 = 33.44 → 33.4</strong></p>
-</section>
-<section id="multiplying-and-dividing" class="level3">
-<h3 class="anchored" data-anchor-id="multiplying-and-dividing">Multiplying and dividing</h3>
-<p>Round the answer to the same number of significant figures as the value with the fewest significant figures.</p>
-<p><strong>6.23 × 1.23 = 7.6629 → 7.66</strong> (3 significant figures)</p>
-<p>Keep full calculator precision through the calculation and round once, at the end.</p>
-</section>
-</section>
-<section id="class-material" class="level2">
-<h2 class="anchored" data-anchor-id="class-material">Class material</h2>
-<ul>
-<li><a href="https://docs.google.com/presentation/d/1_EwePZ6fGRK-brHzccWetx0QSCgA4LFQ_vYn8hibq8c/edit?usp=drivesdk">Day 6 slides: Significant figures</a></li>
-<li><a href="https://docs.google.com/presentation/d/1erzc59cGdQb_AMdyey9qycehUKAHyV7Rmpe6u1a9iMQ/edit?usp=drivesdk">Day 7 slides: Significant figures review and number systems</a></li>
-<li><a href="https://drive.google.com/file/d/1ep-nUmzdp9LIc74qZqz_OfeASG1rulMA/view?usp=drivesdk">Presentation 1: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1yexhwUDedo25OSewC8WK8FDLQ0Cw89D_/view?usp=drivesdk">Presentation 2: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1eDQR4YRVu6Ny7Ud5PC6YKqn-lvc6FZof/view?usp=drivesdk">Assignment: Number Systems practice problems</a></li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Improve these notes
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Add one worked example or common mistake.</p>
-</div>
-</div>
+<p>Specific components such as resistors, capacitors, diodes, and transistors can then be introduced when we actually use them.</p>
 
 
 </section>

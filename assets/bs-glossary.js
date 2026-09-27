@@ -4,6 +4,20 @@
   const ENTRY_SELECTOR = "[data-bs-glossary-entry]";
   const CATEGORY_SELECTOR = "[data-bs-glossary-filter-category]";
   const TRACK_SELECTOR = "[data-bs-glossary-filter-track]";
+  const DEPLOYMENT_BASES = ["/commons", "/tech-edu-resources"];
+
+  function siteBaseForPath(pathname) {
+    const path = String(pathname || "");
+    return (
+      DEPLOYMENT_BASES.find(function (base) {
+        return path === base || path.startsWith(base + "/");
+      }) || ""
+    );
+  }
+
+  const SITE_BASE = siteBaseForPath(
+    typeof window !== "undefined" ? window.location.pathname : ""
+  );
 
   function parseList(value) {
     if (!value) {
@@ -737,7 +751,7 @@
         anchor.remove();
       });
       sidebarContent.replaceChildren(clonedBody);
-      sidebarEntryLink.href = "/tech-edu-resources/glossary/#" + encodeURIComponent(canonicalSlug);
+      sidebarEntryLink.href = SITE_BASE + "/glossary/#" + encodeURIComponent(canonicalSlug);
       sidebar.hidden = false;
       sidebar.setAttribute("aria-hidden", "false");
       if (!options || options.focus !== false) {

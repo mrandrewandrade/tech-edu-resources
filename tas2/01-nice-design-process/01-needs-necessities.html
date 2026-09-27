@@ -71,13 +71,13 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/aa-logo.svg">
+<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/commons/assets/branding/logo/favicon.svg">
 
-<link rel="icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.ico" sizes="any">
+<link rel="icon" href="https://andrewandrade.ca/commons/assets/branding/logo/favicon.ico" sizes="any">
 
-<link rel="apple-touch-icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="https://andrewandrade.ca/commons/assets/branding/logo/apple-touch-icon.png">
 
-<link rel="manifest" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/site.webmanifest">
+<link rel="manifest" href="https://andrewandrade.ca/commons/assets/branding/logo/site.webmanifest">
 
 <meta name="theme-color" content="#062650">
 
@@ -116,32 +116,51 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../slides/2026-27-tas-2-sem-1.html"> 
-<span class="menu-text">TAS Slides</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">TAS</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tas">    
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tas-2-sem-1.html">
+ <span class="dropdown-text">Slides</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../slides/2026-27-tej-3-sem-1.html"> 
-<span class="menu-text">TEJ Slides</span></a>
+        <li>
+    <a class="dropdown-item" href="../../tas2/index.html">
+ <span class="dropdown-text">Notes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../tas2/index.html" aria-current="page"> 
-<span class="menu-text">TAS Notes</span></a>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tej" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">TEJ</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tej">    
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tej-3-sem-1.html">
+ <span class="dropdown-text">Slides</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../tej3-4/index.html"> 
-<span class="menu-text">TEJ Notes</span></a>
+        <li>
+    <a class="dropdown-item" href="../../tej3-4/index.html">
+ <span class="dropdown-text">Notes</span></a>
   </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../teacher-slides/index.html"> 
-<span class="menu-text">General Slides</span></a>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-educator-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Educator Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-educator-resources">    
+        <li>
+    <a class="dropdown-item" href="../../teacher-slides/index.html">
+ <span class="dropdown-text">Slides</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../teaching-materials/index.html"> 
-<span class="menu-text">General Materials</span></a>
+        <li>
+    <a class="dropdown-item" href="../../teaching-materials/index.html">
+ <span class="dropdown-text">Materials</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../glossary/index.html"> 
 <span class="menu-text">Glossary</span></a>
@@ -151,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Lore</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://andrewandrade.ca/tech-edu-resources/about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -219,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#core-idea" id="toc-core-idea" class="nav-link active" data-scroll-target="#core-idea">Core idea</a></li>
   <li><a href="#start-with-the-situation" id="toc-start-with-the-situation" class="nav-link" data-scroll-target="#start-with-the-situation">Start with the situation</a></li>
   <li><a href="#needs" id="toc-needs" class="nav-link" data-scroll-target="#needs">Needs</a></li>
@@ -310,11 +329,13 @@ ul.task-list li input[type="checkbox"] {
 
   "use strict";
 
-  const base = window.location.pathname.startsWith("/tech-edu-resources/")
+  const base = ["/commons", "/tech-edu-resources"].find(function (candidate) {
 
-    ? "/tech-edu-resources"
+    return window.location.pathname === candidate ||
 
-    : "";
+      window.location.pathname.startsWith(candidate + "/");
+
+  }) || "";
 
   [
 
@@ -415,7 +436,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/tech-edu-resources\/");
+        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/commons\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -746,11 +767,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><strong>CC BY-SA 4.0 · Share, modify, and redistribute.</strong> Modified versions remain CC BY-SA 4.0 and attribute the original source: <a href="https://andrewandrade.ca/">andrewandrade.ca</a> · <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when you adapt it so future versions can credit you too. <strong>Sharing is caring.</strong></p>
+<p>Website code: <a href="https://andrewandrade.ca/commons/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/commons/licensing.html">CC BY-SA 4.0</a>.</p>
+<p>Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, <a href="https://andrewandrade.ca/">andrewandrade.ca</a>, and <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when adapting it. <strong>Sharing is caring.</strong></p>
+<p>The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.</p>
 </div>   
     <div class="nav-footer-center">
-<p>Website code: <a href="https://andrewandrade.ca/tech-edu-resources/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/tech-edu-resources/licensing.html">CC BY-SA 4.0</a>.</p>
-</div>
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
@@ -761,11 +784,6 @@ ul.task-list li input[type="checkbox"] {
     <li class="nav-item">
     <a class="nav-link" href="../../licensing.html">
 <p>Licensing</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
-<p>About</p>
 </a>
   </li>  
 </ul>

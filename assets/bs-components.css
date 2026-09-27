@@ -349,11 +349,18 @@
 
 .nav-footer-left {
   color: var(--bs-navy);
-  font-weight: 700;
+  flex: 1 1 auto;
+  max-width: none;
+  text-align: left;
 }
 
 .nav-footer-center {
-  max-width: 760px;
+  display: none;
+}
+
+.nav-footer-right {
+  flex: 0 0 auto;
+  align-self: flex-start;
 }
 
 @media (max-width: 980px) {

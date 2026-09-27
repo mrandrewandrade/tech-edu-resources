@@ -1,12 +1,10 @@
 (function () {
   "use strict";
 
-  const REPOSITORY_BASE = "/tech-edu-resources";
-  const SITE_BASE =
-    typeof window !== "undefined" &&
-    window.location.pathname.startsWith(REPOSITORY_BASE + "/")
-      ? REPOSITORY_BASE
-      : "";
+  const DEPLOYMENT_BASES = ["/commons", "/tech-edu-resources"];
+  const SITE_BASE = siteBaseForPath(
+    typeof window !== "undefined" ? window.location.pathname : ""
+  );
   const MANIFEST_ROUTE = SITE_BASE + "/assets/bs-learn-sequence.json";
   let bootstrapToc = null;
   const ID_TOKEN_ATTRIBUTES = [
@@ -67,15 +65,25 @@
     return manifest.lessons;
   }
 
+  function siteBaseForPath(pathname) {
+    const route = normalizeRoute(pathname);
+    return (
+      DEPLOYMENT_BASES.find(function (base) {
+        return route === base || route.startsWith(base + "/");
+      }) || ""
+    );
+  }
+
   function deploymentRelativeRoute(pathname) {
     const route = normalizeRoute(pathname);
-    if (route === REPOSITORY_BASE || route === REPOSITORY_BASE + "/") {
+    const base = siteBaseForPath(route);
+    if (!base) {
+      return route;
+    }
+    if (route === base || route === base + "/") {
       return "/";
     }
-    if (route.startsWith(REPOSITORY_BASE + "/")) {
-      return normalizeRoute(route.slice(REPOSITORY_BASE.length));
-    }
-    return route;
+    return normalizeRoute(route.slice(base.length));
   }
 
   function browserRoute(pathname) {
@@ -1076,6 +1084,7 @@
     setActiveSidebar: setActiveSidebar,
     shouldExpandTrack: shouldExpandTrack,
     sidebarRouteMatches: sidebarRouteMatches,
+    siteBaseForPath: siteBaseForPath,
     tocHashTargets: tocHashTargets,
     startsNewTrack: startsNewTrack
   };

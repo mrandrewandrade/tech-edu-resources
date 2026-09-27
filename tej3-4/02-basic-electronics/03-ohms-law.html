@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Significant figures and rounding.">
+<meta name="description" content="Use voltage, current, and resistance to predict circuit behaviour.">
 
-<title>1.1 Significant Figures – Technological Education Resources</title>
+<title>2.3 Ohm’s Law – Technological Education Resources</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,11 +87,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/bs-components.css">
 <link rel="stylesheet" href="../../assets/commons-overrides.css">
 <link rel="stylesheet" href="../../assets/bs-learn.css">
-<meta property="og:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta property="og:description" content="Significant figures and rounding.">
+<meta property="og:title" content="2.3 Ohm’s Law – Technological Education Resources">
+<meta property="og:description" content="Use voltage, current, and resistance to predict circuit behaviour.">
 <meta property="og:site_name" content="Technological Education Resources">
-<meta name="twitter:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta name="twitter:description" content="Significant figures and rounding.">
+<meta name="twitter:title" content="2.3 Ohm’s Law – Technological Education Resources">
+<meta name="twitter:description" content="Use voltage, current, and resistance to predict circuit behaviour.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/03-ohms-law.html">2.3 Ohm’s Law</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.1 Significant Figures</span></a>
   </div>
 </li>
@@ -276,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/02-basic-electronics/03-ohms-law.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tej3-4/02-basic-electronics/03-ohms-law.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">2.3 Ohm’s Law</span></a>
   </div>
 </li>
@@ -298,27 +298,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#core-idea" id="toc-core-idea" class="nav-link active" data-scroll-target="#core-idea">Core idea</a></li>
-  <li><a href="#calculations" id="toc-calculations" class="nav-link" data-scroll-target="#calculations">Calculations</a>
-  <ul class="collapse">
-  <li><a href="#adding-and-subtracting" id="toc-adding-and-subtracting" class="nav-link" data-scroll-target="#adding-and-subtracting">Adding and subtracting</a></li>
-  <li><a href="#multiplying-and-dividing" id="toc-multiplying-and-dividing" class="nav-link" data-scroll-target="#multiplying-and-dividing">Multiplying and dividing</a></li>
-  </ul></li>
-  <li><a href="#class-material" id="toc-class-material" class="nav-link" data-scroll-target="#class-material">Class material</a></li>
+  <li><a href="#the-relationship" id="toc-the-relationship" class="nav-link active" data-scroll-target="#the-relationship">The relationship</a></li>
+  <li><a href="#what-the-relationship-means" id="toc-what-the-relationship-means" class="nav-link" data-scroll-target="#what-the-relationship-means">What the relationship means</a></li>
+  <li><a href="#a-practical-computer-example" id="toc-a-practical-computer-example" class="nav-link" data-scroll-target="#a-practical-computer-example">A practical computer example</a></li>
+  <li><a href="#open-and-short-circuits-are-limits-of-the-same-model" id="toc-open-and-short-circuits-are-limits-of-the-same-model" class="nav-link" data-scroll-target="#open-and-short-circuits-are-limits-of-the-same-model">Open and short circuits are limits of the same model</a></li>
+  <li><a href="#significant-figures-still-apply" id="toc-significant-figures-still-apply" class="nav-link" data-scroll-target="#significant-figures-still-apply">Significant figures still apply</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/03-ohms-law.html">2.3 Ohm’s Law</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">1.1 Significant Figures</h1>
+<h1 class="title">2.3 Ohm’s Law</h1>
 </div>
 
 <div>
   <div class="description">
-    Significant figures and rounding.
+    Use voltage, current, and resistance to predict circuit behaviour.
   </div>
 </div>
 
@@ -335,42 +334,81 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="core-idea" class="level2">
-<h2 class="anchored" data-anchor-id="core-idea">Core idea</h2>
-<p>Significant figures communicate the precision of a measured or stated value.</p>
+<section id="the-relationship" class="level2">
+<h2 class="anchored" data-anchor-id="the-relationship">The relationship</h2>
+<p>Ohm’s law connects voltage, current, and resistance. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;76-84]</a></p>
+<p><strong>I = V / R</strong></p>
+<p>Rearranged:</p>
+<p><strong>V = I × R</strong></p>
+<p><strong>R = V / I</strong></p>
+<p>Where:</p>
 <ul>
-<li>Non-zero digits are significant.</li>
-<li>Zeros between significant digits are significant.</li>
-<li>Leading zeros are not significant.</li>
-<li>Trailing zeros are significant when the notation makes the precision clear.</li>
-<li>In scientific notation, the coefficient makes the intended significant figures clear.</li>
+<li><strong>V</strong> is voltage in volts</li>
+<li><strong>I</strong> is current in amperes</li>
+<li><strong>R</strong> is resistance in ohms</li>
 </ul>
-<p>Examples:</p>
-<p><strong>42.7</strong> has 3 significant figures.<br> <strong>0.00420</strong> has 3 significant figures.</p>
 </section>
-<section id="calculations" class="level2">
-<h2 class="anchored" data-anchor-id="calculations">Calculations</h2>
-<section id="adding-and-subtracting" class="level3">
-<h3 class="anchored" data-anchor-id="adding-and-subtracting">Adding and subtracting</h3>
-<p>Round the answer to the least precise decimal place.</p>
-<p><strong>16.3 + 17.14 = 33.44 → 33.4</strong></p>
-</section>
-<section id="multiplying-and-dividing" class="level3">
-<h3 class="anchored" data-anchor-id="multiplying-and-dividing">Multiplying and dividing</h3>
-<p>Round the answer to the same number of significant figures as the value with the fewest significant figures.</p>
-<p><strong>6.23 × 1.23 = 7.6629 → 7.66</strong> (3 significant figures)</p>
-<p>Keep full calculator precision through the calculation and round once, at the end.</p>
-</section>
-</section>
-<section id="class-material" class="level2">
-<h2 class="anchored" data-anchor-id="class-material">Class material</h2>
+<section id="what-the-relationship-means" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-relationship-means">What the relationship means</h2>
+<p>For a resistive load:</p>
 <ul>
-<li><a href="https://docs.google.com/presentation/d/1_EwePZ6fGRK-brHzccWetx0QSCgA4LFQ_vYn8hibq8c/edit?usp=drivesdk">Day 6 slides: Significant figures</a></li>
-<li><a href="https://docs.google.com/presentation/d/1erzc59cGdQb_AMdyey9qycehUKAHyV7Rmpe6u1a9iMQ/edit?usp=drivesdk">Day 7 slides: Significant figures review and number systems</a></li>
-<li><a href="https://drive.google.com/file/d/1ep-nUmzdp9LIc74qZqz_OfeASG1rulMA/view?usp=drivesdk">Presentation 1: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1yexhwUDedo25OSewC8WK8FDLQ0Cw89D_/view?usp=drivesdk">Presentation 2: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1eDQR4YRVu6Ny7Ud5PC6YKqn-lvc6FZof/view?usp=drivesdk">Assignment: Number Systems practice problems</a></li>
+<li>increasing voltage while resistance stays constant increases current</li>
+<li>increasing resistance while voltage stays constant decreases current</li>
 </ul>
+<p>We will introduce resistor components in detail when we actually start using them. For now, resistance is the idea of <strong>opposition to current</strong>.</p>
+</section>
+<section id="a-practical-computer-example" class="level2">
+<h2 class="anchored" data-anchor-id="a-practical-computer-example">A practical computer example</h2>
+<p>Suppose a USB device is operating at:</p>
+<ul>
+<li><strong>5.00 V</strong></li>
+<li><strong>0.900 A</strong></li>
+</ul>
+<p>Its equivalent resistance at that operating point is:</p>
+<p><strong>R = V / I</strong></p>
+<p><strong>R = 5.00 V / 0.900 A</strong></p>
+<p><strong>R = 5.56 Ω</strong></p>
+<p>Both measured values have 3 significant figures, so the final result is reported with 3 significant figures.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>A real USB device is not just a resistor
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Digital electronics can change how much current they draw as they operate. The calculated resistance is an <strong>equivalent resistance at that operating point</strong>, not necessarily a fixed physical resistor inside the device.</p>
+</div>
+</div>
+</section>
+<section id="open-and-short-circuits-are-limits-of-the-same-model" class="level2">
+<h2 class="anchored" data-anchor-id="open-and-short-circuits-are-limits-of-the-same-model">Open and short circuits are limits of the same model</h2>
+<p>Ohm’s law helps explain the two failure cases from the previous lesson:</p>
+<ul>
+<li><strong>open circuit:</strong> resistance becomes extremely large, so current approaches zero</li>
+<li><strong>short circuit:</strong> resistance becomes very small, so current can become very large</li>
+</ul>
+<p>The source and wiring always have some real resistance, so practical short-circuit current is finite.</p>
+</section>
+<section id="significant-figures-still-apply" class="level2">
+<h2 class="anchored" data-anchor-id="significant-figures-still-apply">Significant figures still apply</h2>
+<p>Use the number-system rules from Unit 1:</p>
+<ul>
+<li>keep full calculator precision during the calculation</li>
+<li>for multiplication or division, round the final answer to the fewest significant figures in the inputs</li>
+<li>round once, at the end</li>
+</ul>
+</section>
+<section id="practice" class="level2">
+<h2 class="anchored" data-anchor-id="practice">Practice</h2>
+<ol type="1">
+<li>A 12.0 V load has an effective resistance of 48.0 Ω. Find the current.</li>
+<li>A device draws 0.250 A from a 12.0 V supply. Find its equivalent resistance.</li>
+<li>A circuit draws 2.00 A through a 5.00 Ω load. Find the voltage.</li>
+<li>Explain why a short circuit can create much more current than a normal load.</li>
+</ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -381,7 +419,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Add one worked example or common mistake.</p>
+<p>Add one example from a label on a real electronic device.</p>
 </div>
 </div>
 

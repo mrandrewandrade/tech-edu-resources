@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Significant figures and rounding.">
+<meta name="description" content="Calculate electrical power, total computer power draw, and energy used over time.">
 
-<title>1.1 Significant Figures – Technological Education Resources</title>
+<title>2.4 Power &amp; Energy – Technological Education Resources</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,11 +87,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/bs-components.css">
 <link rel="stylesheet" href="../../assets/commons-overrides.css">
 <link rel="stylesheet" href="../../assets/bs-learn.css">
-<meta property="og:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta property="og:description" content="Significant figures and rounding.">
+<meta property="og:title" content="2.4 Power &amp; Energy – Technological Education Resources">
+<meta property="og:description" content="Calculate electrical power, total computer power draw, and energy used over time.">
 <meta property="og:site_name" content="Technological Education Resources">
-<meta name="twitter:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta name="twitter:description" content="Significant figures and rounding.">
+<meta name="twitter:title" content="2.4 Power &amp; Energy – Technological Education Resources">
+<meta name="twitter:description" content="Calculate electrical power, total computer power draw, and energy used over time.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/04-power-energy.html">2.4 Power &amp; Energy</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.1 Significant Figures</span></a>
   </div>
 </li>
@@ -282,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/02-basic-electronics/04-power-energy.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tej3-4/02-basic-electronics/04-power-energy.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">2.4 Power &amp; Energy</span></a>
   </div>
 </li>
@@ -298,27 +298,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#core-idea" id="toc-core-idea" class="nav-link active" data-scroll-target="#core-idea">Core idea</a></li>
-  <li><a href="#calculations" id="toc-calculations" class="nav-link" data-scroll-target="#calculations">Calculations</a>
+  <li><a href="#power" id="toc-power" class="nav-link active" data-scroll-target="#power">Power</a></li>
+  <li><a href="#device-labels-give-useful-information" id="toc-device-labels-give-useful-information" class="nav-link" data-scroll-target="#device-labels-give-useful-information">Device labels give useful information</a>
   <ul class="collapse">
-  <li><a href="#adding-and-subtracting" id="toc-adding-and-subtracting" class="nav-link" data-scroll-target="#adding-and-subtracting">Adding and subtracting</a></li>
-  <li><a href="#multiplying-and-dividing" id="toc-multiplying-and-dividing" class="nav-link" data-scroll-target="#multiplying-and-dividing">Multiplying and dividing</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
   </ul></li>
-  <li><a href="#class-material" id="toc-class-material" class="nav-link" data-scroll-target="#class-material">Class material</a></li>
+  <li><a href="#checkpoint-plug-in-two-usb-devices" id="toc-checkpoint-plug-in-two-usb-devices" class="nav-link" data-scroll-target="#checkpoint-plug-in-two-usb-devices">Checkpoint: plug in two USB devices</a></li>
+  <li><a href="#energy" id="toc-energy" class="nav-link" data-scroll-target="#energy">Energy</a></li>
+  <li><a href="#power-supply-vs-battery" id="toc-power-supply-vs-battery" class="nav-link" data-scroll-target="#power-supply-vs-battery">Power supply vs battery</a></li>
+  <li><a href="#inside-a-computer" id="toc-inside-a-computer" class="nav-link" data-scroll-target="#inside-a-computer">Inside a computer</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/04-power-energy.html">2.4 Power &amp; Energy</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">1.1 Significant Figures</h1>
+<h1 class="title">2.4 Power &amp; Energy</h1>
 </div>
 
 <div>
   <div class="description">
-    Significant figures and rounding.
+    Calculate electrical power, total computer power draw, and energy used over time.
   </div>
 </div>
 
@@ -335,42 +337,102 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="core-idea" class="level2">
-<h2 class="anchored" data-anchor-id="core-idea">Core idea</h2>
-<p>Significant figures communicate the precision of a measured or stated value.</p>
+<section id="power" class="level2">
+<h2 class="anchored" data-anchor-id="power">Power</h2>
+<p>Electrical power is the <strong>rate of energy transfer</strong>. It is represented by <strong>P</strong> and measured in <strong>watts (W)</strong>. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;86-93]</a></p>
+<p><strong>P = V × I</strong></p>
+<p>One watt is one joule per second:</p>
+<p><strong>1 W = 1 J/s</strong></p>
+<p>Power supplies are rated in watts because they must deliver energy quickly enough for all of the connected loads.</p>
+</section>
+<section id="device-labels-give-useful-information" class="level2">
+<h2 class="anchored" data-anchor-id="device-labels-give-useful-information">Device labels give useful information</h2>
+<p>Grob uses appliance nameplates as a practical example: if voltage and power are listed, current can be calculated with <strong>I = P / V</strong>. <a href="../../references.html#ref-grob2016">[1, p.&nbsp;98]</a></p>
+<p>We can do the same thing with computer hardware and USB devices.</p>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<p>A USB device operates at:</p>
 <ul>
-<li>Non-zero digits are significant.</li>
-<li>Zeros between significant digits are significant.</li>
-<li>Leading zeros are not significant.</li>
-<li>Trailing zeros are significant when the notation makes the precision clear.</li>
-<li>In scientific notation, the coefficient makes the intended significant figures clear.</li>
+<li><strong>5.00 V</strong></li>
+<li><strong>0.900 A</strong></li>
 </ul>
-<p>Examples:</p>
-<p><strong>42.7</strong> has 3 significant figures.<br> <strong>0.00420</strong> has 3 significant figures.</p>
-</section>
-<section id="calculations" class="level2">
-<h2 class="anchored" data-anchor-id="calculations">Calculations</h2>
-<section id="adding-and-subtracting" class="level3">
-<h3 class="anchored" data-anchor-id="adding-and-subtracting">Adding and subtracting</h3>
-<p>Round the answer to the least precise decimal place.</p>
-<p><strong>16.3 + 17.14 = 33.44 → 33.4</strong></p>
-</section>
-<section id="multiplying-and-dividing" class="level3">
-<h3 class="anchored" data-anchor-id="multiplying-and-dividing">Multiplying and dividing</h3>
-<p>Round the answer to the same number of significant figures as the value with the fewest significant figures.</p>
-<p><strong>6.23 × 1.23 = 7.6629 → 7.66</strong> (3 significant figures)</p>
-<p>Keep full calculator precision through the calculation and round once, at the end.</p>
+<p><strong>P = V × I</strong></p>
+<p><strong>P = 5.00 V × 0.900 A = 4.50 W</strong></p>
+<p>The answer has 3 significant figures.</p>
 </section>
 </section>
-<section id="class-material" class="level2">
-<h2 class="anchored" data-anchor-id="class-material">Class material</h2>
+<section id="checkpoint-plug-in-two-usb-devices" class="level2">
+<h2 class="anchored" data-anchor-id="checkpoint-plug-in-two-usb-devices">Checkpoint: plug in two USB devices</h2>
+<p>A computer is already drawing <strong>338 W</strong>.</p>
+<p>You plug in:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Device</th>
+<th style="text-align: right;">Voltage</th>
+<th style="text-align: right;">Current</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>USB A</td>
+<td style="text-align: right;">5.00 V</td>
+<td style="text-align: right;">0.900 A</td>
+</tr>
+<tr class="even">
+<td>USB B</td>
+<td style="text-align: right;">5.00 V</td>
+<td style="text-align: right;">1.50 A</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate:</p>
+<ol type="1">
+<li>the power used by USB A</li>
+<li>the power used by USB B</li>
+<li>the combined USB power</li>
+<li>the new total computer power draw</li>
+<li>the final answers using the correct significant-figure or decimal-place rule</li>
+</ol>
+<details>
+<summary>
+<strong>Check your work</strong>
+</summary>
+<p>USB A:</p>
+<p><strong>5.00 V × 0.900 A = 4.50 W</strong></p>
+<p>USB B:</p>
+<p><strong>5.00 V × 1.50 A = 7.50 W</strong></p>
+<p>Combined USB power:</p>
+<p><strong>4.50 W + 7.50 W = 12.00 W</strong></p>
+<p>New computer total:</p>
+<p><strong>338 W + 12.00 W = 350 W</strong></p>
+<p>To make the intended precision explicit:</p>
+<p><strong>3.50 × 10² W</strong></p>
+</details>
+</section>
+<section id="energy" class="level2">
+<h2 class="anchored" data-anchor-id="energy">Energy</h2>
+<p>Power tells us <strong>how fast</strong> energy is transferred. Energy tells us <strong>how much total</strong> has been transferred.</p>
+<p><strong>E = P × t</strong></p>
+<p>For two USB devices drawing <strong>12.00 W</strong> for <strong>2.00 h</strong>:</p>
+<p><strong>E = 12.00 W × 2.00 h = 24.0 Wh</strong></p>
+<p>That is also:</p>
+<p><strong>86.4 kJ</strong></p>
+</section>
+<section id="power-supply-vs-battery" class="level2">
+<h2 class="anchored" data-anchor-id="power-supply-vs-battery">Power supply vs battery</h2>
+<p>Keep these ideas separate:</p>
 <ul>
-<li><a href="https://docs.google.com/presentation/d/1_EwePZ6fGRK-brHzccWetx0QSCgA4LFQ_vYn8hibq8c/edit?usp=drivesdk">Day 6 slides: Significant figures</a></li>
-<li><a href="https://docs.google.com/presentation/d/1erzc59cGdQb_AMdyey9qycehUKAHyV7Rmpe6u1a9iMQ/edit?usp=drivesdk">Day 7 slides: Significant figures review and number systems</a></li>
-<li><a href="https://drive.google.com/file/d/1ep-nUmzdp9LIc74qZqz_OfeASG1rulMA/view?usp=drivesdk">Presentation 1: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1yexhwUDedo25OSewC8WK8FDLQ0Cw89D_/view?usp=drivesdk">Presentation 2: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1eDQR4YRVu6Ny7Ud5PC6YKqn-lvc6FZof/view?usp=drivesdk">Assignment: Number Systems practice problems</a></li>
+<li>a <strong>power-supply rating in watts</strong> describes a rate of energy delivery</li>
+<li>a <strong>battery capacity in watt-hours</strong> describes an amount of stored energy</li>
 </ul>
+</section>
+<section id="inside-a-computer" class="level2">
+<h2 class="anchored" data-anchor-id="inside-a-computer">Inside a computer</h2>
+<p>Modern electronics repeatedly convert and stabilize power.</p>
+<p><em>Open Circuits</em> shows that multilayer ceramic capacitors are commonly used for local power-supply stability, and it also shows compact DC-DC converter modules that change one DC voltage into another more efficiently than a simple linear regulator. <a href="../../references.html#ref-opencircuits2023">[2, pp.&nbsp;36, 249]</a></p>
+<p>This gives us a path into later topics:</p>
+<p><strong>power -&gt; voltage conversion -&gt; capacitors and inductors -&gt; real motherboard power circuits</strong></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -381,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Add one worked example or common mistake.</p>
+<p>Add the voltage, current, or power rating from a real computer component or USB device and show one calculation.</p>
 </div>
 </div>
 

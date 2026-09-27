@@ -1,12 +1,20 @@
 (function () {
   "use strict";
 
-  const REPOSITORY_BASE = "/tech-edu-resources";
-  const SITE_BASE =
-    typeof window !== "undefined" &&
-    window.location.pathname.startsWith(REPOSITORY_BASE + "/")
-      ? REPOSITORY_BASE
-      : "";
+  const DEPLOYMENT_BASES = ["/commons", "/tech-edu-resources"];
+
+  function siteBaseForPath(pathname) {
+    const path = String(pathname || "");
+    return (
+      DEPLOYMENT_BASES.find(function (base) {
+        return path === base || path.startsWith(base + "/");
+      }) || ""
+    );
+  }
+
+  const SITE_BASE = siteBaseForPath(
+    typeof window !== "undefined" ? window.location.pathname : ""
+  );
   const DIFFICULTY_SELECTOR = "[data-bs-filter-difficulty]";
   const TRACK_SELECTOR = "[data-bs-filter-track]";
   const TERM_SELECTOR = "[data-bs-filter-term]";
@@ -994,7 +1002,7 @@
 
   function isMainSiteIndex() {
     const path = window.location.pathname.replace(/\/index\.html$/, "/");
-    return path === "/";
+    return path === (SITE_BASE || "") + "/";
   }
 
   function createTermLookup() {
@@ -1163,6 +1171,8 @@
         !document.body.classList.contains("bs-learn-track-index")) ||
       document.body.classList.contains("bs-research-article") ||
       engineBenchmarkPage;
+    const persistentLessonToc =
+      document.body.classList.contains("ter-notes-lesson");
 
     const tools = document.createElement("div");
     tools.className = "bs-site-tools";
@@ -1799,7 +1809,7 @@
     };
 
     const updateRightRailForScroll = function () {
-      if (!marginSidebar || !inRefinedRightRail()) {
+      if (!marginSidebar || !inRefinedRightRail() || persistentLessonToc) {
         rightRailScrollCollapsed = false;
         if (marginSidebar) {
           marginSidebar.classList.remove(
@@ -2485,7 +2495,8 @@
     mountLesson: mountLesson,
     parseList: parseList,
     rankLessonItems: rankLessonItems,
-    setAllGroupsExpanded: setAllGroupsExpanded
+    setAllGroupsExpanded: setAllGroupsExpanded,
+    siteBaseForPath: siteBaseForPath
   };
 
   if (typeof module !== "undefined" && module.exports) {

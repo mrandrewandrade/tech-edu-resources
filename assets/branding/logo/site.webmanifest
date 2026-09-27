@@ -1,19 +1,21 @@
 {
-  "name": "Technological Education Resources",
-  "short_name": "Tech Edu",
+  "name": "andrewandrade.ca",
+  "short_name": "&drade",
   "icons": [
     {
-      "src": "web-app-manifest-192x192.png",
+      "src": "/commons/assets/branding/logo/web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
-      "src": "web-app-manifest-512x512.png",
+      "src": "/commons/assets/branding/logo/web-app-manifest-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "theme_color": "#062650",
-  "background_color": "#FFFFFF",
+  "background_color": "#ffffff",
   "display": "standalone"
 }

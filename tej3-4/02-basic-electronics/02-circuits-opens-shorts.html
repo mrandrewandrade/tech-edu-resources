@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Significant figures and rounding.">
+<meta name="description" content="Complete paths, open circuits, short circuits, fuses, and basic troubleshooting.">
 
-<title>1.1 Significant Figures – Technological Education Resources</title>
+<title>2.2 Closed, Open &amp; Short Circuits – Technological Education Resources</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,11 +87,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/bs-components.css">
 <link rel="stylesheet" href="../../assets/commons-overrides.css">
 <link rel="stylesheet" href="../../assets/bs-learn.css">
-<meta property="og:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta property="og:description" content="Significant figures and rounding.">
+<meta property="og:title" content="2.2 Closed, Open &amp; Short Circuits – Technological Education Resources">
+<meta property="og:description" content="Complete paths, open circuits, short circuits, fuses, and basic troubleshooting.">
 <meta property="og:site_name" content="Technological Education Resources">
-<meta name="twitter:title" content="1.1 Significant Figures – Technological Education Resources">
-<meta name="twitter:description" content="Significant figures and rounding.">
+<meta name="twitter:title" content="2.2 Closed, Open &amp; Short Circuits – Technological Education Resources">
+<meta name="twitter:description" content="Complete paths, open circuits, short circuits, fuses, and basic troubleshooting.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html">2.2 Closed, Open &amp; Short Circuits</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1.1 Significant Figures</span></a>
   </div>
 </li>
@@ -270,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">2.2 Closed, Open &amp; Short Circuits</span></a>
   </div>
 </li>
@@ -298,27 +298,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#core-idea" id="toc-core-idea" class="nav-link active" data-scroll-target="#core-idea">Core idea</a></li>
-  <li><a href="#calculations" id="toc-calculations" class="nav-link" data-scroll-target="#calculations">Calculations</a>
-  <ul class="collapse">
-  <li><a href="#adding-and-subtracting" id="toc-adding-and-subtracting" class="nav-link" data-scroll-target="#adding-and-subtracting">Adding and subtracting</a></li>
-  <li><a href="#multiplying-and-dividing" id="toc-multiplying-and-dividing" class="nav-link" data-scroll-target="#multiplying-and-dividing">Multiplying and dividing</a></li>
-  </ul></li>
-  <li><a href="#class-material" id="toc-class-material" class="nav-link" data-scroll-target="#class-material">Class material</a></li>
+  <li><a href="#a-circuit-needs-a-complete-path" id="toc-a-circuit-needs-a-complete-path" class="nav-link active" data-scroll-target="#a-circuit-needs-a-complete-path">A circuit needs a complete path</a></li>
+  <li><a href="#open-circuit" id="toc-open-circuit" class="nav-link" data-scroll-target="#open-circuit">Open circuit</a></li>
+  <li><a href="#short-circuit" id="toc-short-circuit" class="nav-link" data-scroll-target="#short-circuit">Short circuit</a></li>
+  <li><a href="#fuses-intentionally-create-an-open" id="toc-fuses-intentionally-create-an-open" class="nav-link" data-scroll-target="#fuses-intentionally-create-an-open">Fuses intentionally create an open</a></li>
+  <li><a href="#switches-are-controlled-opens-and-closes" id="toc-switches-are-controlled-opens-and-closes" class="nav-link" data-scroll-target="#switches-are-controlled-opens-and-closes">Switches are controlled opens and closes</a></li>
+  <li><a href="#measurement-reminder" id="toc-measurement-reminder" class="nav-link" data-scroll-target="#measurement-reminder">Measurement reminder</a></li>
+  <li><a href="#quick-check" id="toc-quick-check" class="nav-link" data-scroll-target="#quick-check">Quick check</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/index.html">1. Number Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/01-number-systems/01-significant-figures.html">1.1 Significant Figures</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/index.html">2. Basic Electronics</a></li><li class="breadcrumb-item"><a href="../../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html">2.2 Closed, Open &amp; Short Circuits</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">1.1 Significant Figures</h1>
+<h1 class="title">2.2 Closed, Open &amp; Short Circuits</h1>
 </div>
 
 <div>
   <div class="description">
-    Significant figures and rounding.
+    Complete paths, open circuits, short circuits, fuses, and basic troubleshooting.
   </div>
 </div>
 
@@ -335,42 +335,88 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="core-idea" class="level2">
-<h2 class="anchored" data-anchor-id="core-idea">Core idea</h2>
-<p>Significant figures communicate the precision of a measured or stated value.</p>
+<section id="a-circuit-needs-a-complete-path" class="level2">
+<h2 class="anchored" data-anchor-id="a-circuit-needs-a-complete-path">A circuit needs a complete path</h2>
+<p>A basic electric circuit needs:</p>
+<ol type="1">
+<li>a <strong>source</strong> that creates a potential difference</li>
+<li>a <strong>conductive path</strong></li>
+<li>a <strong>load</strong> that uses or transforms electrical energy</li>
+<li>a path back to the source</li>
+</ol>
+<p>A <strong>closed circuit</strong> has a complete path, so current can flow. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;40-42]</a></p>
+</section>
+<section id="open-circuit" class="level2">
+<h2 class="anchored" data-anchor-id="open-circuit">Open circuit</h2>
+<p>An <strong>open circuit</strong> has a break in the path.</p>
+<p>In the ideal model:</p>
 <ul>
-<li>Non-zero digits are significant.</li>
-<li>Zeros between significant digits are significant.</li>
-<li>Leading zeros are not significant.</li>
-<li>Trailing zeros are significant when the notation makes the precision clear.</li>
-<li>In scientific notation, the coefficient makes the intended significant figures clear.</li>
+<li>current is <strong>0 A</strong></li>
+<li>resistance across the break is treated as extremely high</li>
+<li>voltage can still exist across the open gap</li>
 </ul>
-<p>Examples:</p>
-<p><strong>42.7</strong> has 3 significant figures.<br> <strong>0.00420</strong> has 3 significant figures.</p>
-</section>
-<section id="calculations" class="level2">
-<h2 class="anchored" data-anchor-id="calculations">Calculations</h2>
-<section id="adding-and-subtracting" class="level3">
-<h3 class="anchored" data-anchor-id="adding-and-subtracting">Adding and subtracting</h3>
-<p>Round the answer to the least precise decimal place.</p>
-<p><strong>16.3 + 17.14 = 33.44 → 33.4</strong></p>
-</section>
-<section id="multiplying-and-dividing" class="level3">
-<h3 class="anchored" data-anchor-id="multiplying-and-dividing">Multiplying and dividing</h3>
-<p>Round the answer to the same number of significant figures as the value with the fewest significant figures.</p>
-<p><strong>6.23 × 1.23 = 7.6629 → 7.66</strong> (3 significant figures)</p>
-<p>Keep full calculator precision through the calculation and round once, at the end.</p>
-</section>
-</section>
-<section id="class-material" class="level2">
-<h2 class="anchored" data-anchor-id="class-material">Class material</h2>
+<p>Grob uses a simple 10 V circuit to show that opening the path stops current everywhere in that series path. <a href="../../references.html#ref-grob2016">[1, p.&nbsp;96]</a></p>
+<p>Open circuits can be intentional or accidental:</p>
 <ul>
-<li><a href="https://docs.google.com/presentation/d/1_EwePZ6fGRK-brHzccWetx0QSCgA4LFQ_vYn8hibq8c/edit?usp=drivesdk">Day 6 slides: Significant figures</a></li>
-<li><a href="https://docs.google.com/presentation/d/1erzc59cGdQb_AMdyey9qycehUKAHyV7Rmpe6u1a9iMQ/edit?usp=drivesdk">Day 7 slides: Significant figures review and number systems</a></li>
-<li><a href="https://drive.google.com/file/d/1ep-nUmzdp9LIc74qZqz_OfeASG1rulMA/view?usp=drivesdk">Presentation 1: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1yexhwUDedo25OSewC8WK8FDLQ0Cw89D_/view?usp=drivesdk">Presentation 2: Significant Figures</a></li>
-<li><a href="https://drive.google.com/file/d/1eDQR4YRVu6Ny7Ud5PC6YKqn-lvc6FZof/view?usp=drivesdk">Assignment: Number Systems practice problems</a></li>
+<li>an open switch</li>
+<li>a disconnected cable</li>
+<li>a broken wire or PCB trace</li>
+<li>a failed component</li>
+<li>a blown fuse</li>
 </ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Troubleshooting idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>No current does not automatically mean no voltage.</strong></p>
+<p>An open circuit can still have the applied voltage across the break.</p>
+</div>
+</div>
+</section>
+<section id="short-circuit" class="level2">
+<h2 class="anchored" data-anchor-id="short-circuit">Short circuit</h2>
+<p>A <strong>short circuit</strong> creates a path with very low resistance.</p>
+<p>Ohm’s law predicts that, for a given voltage, lower resistance allows more current:</p>
+<p><strong>I = V / R</strong></p>
+<p>Real wires and sources never have exactly zero resistance, but a short can still allow enough current to overheat wiring or damage components. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;96-97]</a></p>
+</section>
+<section id="fuses-intentionally-create-an-open" class="level2">
+<h2 class="anchored" data-anchor-id="fuses-intentionally-create-an-open">Fuses intentionally create an open</h2>
+<p>A fuse protects a circuit by <strong>opening the path</strong> if the current becomes too high.</p>
+<p><em>Open Circuits</em> shows cartridge fuses in which a metal element heats and melts when current exceeds the fuse rating. <a href="../../references.html#ref-opencircuits2023">[2, pp.&nbsp;54-58]</a></p>
+<p>The sequence is:</p>
+<p><strong>excess current -&gt; heating -&gt; fuse element opens -&gt; current stops</strong></p>
+<p>A blown fuse is usually evidence of another problem. Find the cause before simply replacing the fuse.</p>
+</section>
+<section id="switches-are-controlled-opens-and-closes" class="level2">
+<h2 class="anchored" data-anchor-id="switches-are-controlled-opens-and-closes">Switches are controlled opens and closes</h2>
+<p>A normally open pushbutton has a deliberate break in the circuit until it is pressed. Pressing the button moves a metal contact into place and completes the circuit. <a href="../../references.html#ref-opencircuits2023">[2, p.&nbsp;109]</a></p>
+<p>This gives us a useful mental model:</p>
+<ul>
+<li><strong>open switch</strong> -&gt; path broken</li>
+<li><strong>closed switch</strong> -&gt; path complete</li>
+</ul>
+</section>
+<section id="measurement-reminder" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-reminder">Measurement reminder</h2>
+<p>Measure resistance with the circuit power off. A voltage can remain across an open circuit even when no current is flowing. <a href="../../references.html#ref-grob2016">[1, pp.&nbsp;95-96]</a></p>
+</section>
+<section id="quick-check" class="level2">
+<h2 class="anchored" data-anchor-id="quick-check">Quick check</h2>
+<p>For each situation, predict the current and explain why:</p>
+<ol type="1">
+<li>a switch is open</li>
+<li>a switch is closed</li>
+<li>a wire directly connects the positive and negative sides of a low-voltage source</li>
+<li>a fuse has blown</li>
+<li>a USB cable has an internal broken conductor</li>
+</ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -381,7 +427,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Add one worked example or common mistake.</p>
+<p>Add a real troubleshooting example of an open or short circuit.</p>
 </div>
 </div>
 
