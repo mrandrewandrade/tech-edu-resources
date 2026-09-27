@@ -1002,7 +1002,7 @@
 
   function isMainSiteIndex() {
     const path = window.location.pathname.replace(/\/index\.html$/, "/");
-    return path === "/";
+    return path === (SITE_BASE || "") + "/";
   }
 
   function createTermLookup() {

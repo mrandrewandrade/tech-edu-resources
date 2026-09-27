@@ -42,19 +42,24 @@ website:
     title: "Tech Edu"
     collapse-below: xl
     left:
-      - href: slides/tas.qmd
-        text: TAS Slides
-      - href: slides/tej.qmd
-        text: TEJ Slides
-      - href: tas2/index.qmd
-        text: TAS Notes
-      - href: tej3-4/index.qmd
-        text: TEJ Notes
-    right:
-      - href: teacher-slides/index.qmd
-        text: General Slides
-      - href: teaching-materials/index.qmd
-        text: General Materials
+      - text: TAS
+        menu:
+          - href: slides/tas.qmd
+            text: Slides
+          - href: tas2/index.qmd
+            text: Notes
+      - text: TEJ
+        menu:
+          - href: slides/tej.qmd
+            text: Slides
+          - href: tej3-4/index.qmd
+            text: Notes
+      - text: Educator Resources
+        menu:
+          - href: teacher-slides/index.qmd
+            text: Slides
+          - href: teaching-materials/index.qmd
+            text: Materials
       - href: glossary/index.qmd
         text: Glossary
       - href: lore/index.qmd
@@ -117,16 +122,16 @@ website:
               href: tej3-4/02-basic-electronics/04-power-energy.qmd
   page-footer:
     left: |
-      **CC BY-SA 4.0 · Share, modify, and redistribute.** Modified versions remain CC BY-SA 4.0 and attribute the original source: [andrewandrade.ca](https://andrewandrade.ca/) · [github.com/mrandrewandrade](https://github.com/mrandrewandrade). Add your own name and links when you adapt it so future versions can credit you too. **Sharing is caring.**
-    center: |
       Website code: [AGPL 3.0](https://andrewandrade.ca/commons/licensing.html). Educational content: [CC BY-SA 4.0](https://andrewandrade.ca/commons/licensing.html).
+
+      Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, [andrewandrade.ca](https://andrewandrade.ca/), and [github.com/mrandrewandrade](https://github.com/mrandrewandrade). Add your own name and links when adapting it. **Sharing is caring.**
+
+      The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.
     right:
       - text: References
         href: references.qmd
       - text: Licensing
         href: licensing.qmd
-      - text: About
-        href: about.qmd
 
 format:
   html:
