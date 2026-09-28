@@ -72,6 +72,26 @@ Filters are saved in the page URL as you select them, so you can copy the addres
 
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
+    data-courses=""
+    data-tags="assessment|observation|evidence|support|teacher tool|tracking|digital|printable"
+    data-search="daily learning tracker teacher tool assessment observation evidence support student activity shop task observe worksheet match sort count research present explain follow directions identify communicate answer teamwork independent prompted guided digital printable google sheet google doc">
+    <a class="bs-slide-thumb" href="https://docs.google.com/spreadsheets/d/1I17zjCB22EyH5g-2AzfgK4J2ZrkIfOqsfUAEkQ2YHvw/edit?usp=drivesdk" aria-label="Open Daily Learning Tracker digital template">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>DAILY</strong><span>Evidence + support</span></span>
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/spreadsheets/d/1I17zjCB22EyH5g-2AzfgK4J2ZrkIfOqsfUAEkQ2YHvw/edit?usp=drivesdk">Daily Learning Tracker</a></h2>
+      <p class="bs-slide-card-description">Quickly record what students did, what they demonstrated, and how much support they needed.</p>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="assessment">Assessment</button><button type="button" data-slide-card-tag="observation">Observation</button><button type="button" data-slide-card-tag="teacher tool">Teacher tool</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/spreadsheets/d/1I17zjCB22EyH5g-2AzfgK4J2ZrkIfOqsfUAEkQ2YHvw/edit?usp=drivesdk">Open Digital Tracker</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1ojqE98LMdJ_bGUZ1Q7wYiuYsUMYHIPjuDj7GhK0lEUw/edit?usp=drivesdk">Open Printable Tracker</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
     data-courses="TAS|TEJ|TTJ"
     data-tags="identity|communication|documentation|pdf|introductory"
     data-search="name tag pdf student number introductory identity communication documentation submission">
