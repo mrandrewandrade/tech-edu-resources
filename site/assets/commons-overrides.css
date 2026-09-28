@@ -2,21 +2,28 @@
    Keep the inherited component system intact while using a consistent,
    simpler icon family for the Commons landing page. */
 
-/* Use the actual emblem plus Quarto's visible site title in the navbar.
-   The old Technology Commons lockup hid the navbar text entirely. */
+/* Give the full-colour emblem enough room while retaining dark, readable
+   navigation text on a calm mist-blue surface. */
+.navbar {
+  min-height: 82px;
+  padding-block: 0.55rem;
+  background-color: #E8EEF2;
+  border-bottom-color: #C8D3DB;
+}
+
 .navbar-brand-container .navbar-brand-logo {
   display: flex;
   align-items: center;
   width: auto;
   height: auto;
-  margin-right: 0.45rem;
+  margin-right: 0.65rem;
   background: none;
 }
 
 .navbar-brand-container .navbar-brand-logo .navbar-logo {
   width: auto;
-  height: 42px;
-  max-height: 42px;
+  height: 58px;
+  max-height: 58px;
   opacity: 1;
 }
 
@@ -27,7 +34,20 @@
 
 .navbar-brand-container .navbar-title {
   color: var(--bs-navy-dark) !important;
+  font-size: 1.18rem;
   font-weight: 800;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar .quarto-navbar-tools .quarto-navigation-tool {
+  color: var(--bs-navy-dark) !important;
+  font-size: 1.04rem;
+  font-weight: 680;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .show > .nav-link {
+  color: var(--bs-text-inverse) !important;
 }
 
 body.bs-landing-page .bs-home-explore-icon::before {
@@ -169,16 +189,25 @@ body.bs-research-article #title-block-header .quarto-categories {
   margin: 0;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 767px) {
+  .navbar {
+    min-height: 68px;
+    padding-block: 0.4rem;
+  }
+
   .navbar-brand-container .navbar-brand-logo {
     width: auto;
     height: auto;
-    margin-right: 0.3rem;
+    margin-right: 0.4rem;
   }
 
   .navbar-brand-container .navbar-brand-logo .navbar-logo {
-    height: 32px;
-    max-height: 32px;
+    height: 42px;
+    max-height: 42px;
+  }
+
+  .navbar-brand-container .navbar-title {
+    font-size: 1rem;
   }
 
   body.bs-research-article #title-block-header .quarto-title-meta {
