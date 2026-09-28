@@ -3,12 +3,12 @@
    simpler icon family for the Commons landing page. */
 
 /* Give the full-colour emblem enough room while retaining dark, readable
-   navigation text on a calm mist-blue surface. */
+   navigation text on the same warm ivory used by the home-page symbols. */
 .navbar {
   min-height: 82px;
   padding-block: 0.55rem;
-  background-color: #E8EEF2;
-  border-bottom-color: #C8D3DB;
+  background-color: var(--bs-ivory);
+  border-bottom-color: var(--bs-border);
 }
 
 .navbar-brand-container .navbar-brand-logo {
@@ -216,17 +216,34 @@ body.bs-research-article #title-block-header .quarto-categories {
 }
 
 
-/* Slides use a presentation-screen icon; Notes use a notebook icon on the TER home page. */
+/* Current-class links use distinct course-and-resource symbols. */
 body.bs-landing-page
-  .bs-home-explore-link--slides
+  .bs-home-explore-link--tas.bs-home-explore-link--slides
+  .bs-home-explore-icon::before,
+body.bs-landing-page
+  .bs-home-explore-link--resources.bs-home-explore-link--slides
   .bs-home-explore-icon::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='12' rx='1.5'/%3E%3Cpath d='M8 20h8M12 16v4M8 12l2.7-3 2.2 2 3.1-4'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='12' rx='1.5'/%3E%3Cpath d='M8 20h8M12 16v4M8 12l2.7-3 2.2 2 3.1-4'/%3E%3C/svg%3E");
 }
 
 body.bs-landing-page
-  .bs-home-explore-link--notes
+  .bs-home-explore-link--tas.bs-home-explore-link--notes
   .bs-home-explore-icon::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3.5h12a2 2 0 0 1 2 2v15H6a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2zM8 3.5v17M11 8h6M11 12h6M11 16h4'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3.5h12a2 2 0 0 1 2 2v15H6a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2zM8 3.5v17M11 8h6M11 12h6M11 16h4'/%3E%3C/svg%3E");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--tej.bs-home-explore-link--slides
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3.5' width='18' height='13' rx='2'/%3E%3Cpath d='M8 20.5h8M12 16.5v4M7 8h3M7 11h6M16 8h1M16 11h1'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3.5' width='18' height='13' rx='2'/%3E%3Cpath d='M8 20.5h8M12 16.5v4M7 8h3M7 11h6M16 8h1M16 11h1'/%3E%3C/svg%3E");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--tej.bs-home-explore-link--notes
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h8l4 4v14H6zM14 3v5h4M11 11l-2 2 2 2M14 11l2 2-2 2'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h8l4 4v14H6zM14 3v5h4M11 11l-2 2 2 2M14 11l2 2-2 2'/%3E%3C/svg%3E");
 }
