@@ -2,17 +2,14 @@
    Keep the inherited component system intact while using a consistent,
    simpler icon family for the Commons landing page. */
 
-/* Set the full-colour emblem against a compact black disc while keeping the
-   original light navbar and typography. */
+/* Keep the full-colour emblem slightly larger on the original light navbar. */
 .navbar-brand-container .navbar-brand-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
+  width: auto;
+  height: auto;
   margin-right: 0.45rem;
-  border-radius: 50%;
-  background: #111;
+  background: none;
 }
 
 .navbar-brand-container .navbar-brand-logo .navbar-logo {
@@ -49,6 +46,16 @@ body.bs-landing-page
   .bs-home-explore-icon::before {
   -webkit-mask-image: url("icons/commons-chip.svg");
   mask-image: url("icons/commons-chip.svg");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--tas.bs-home-explore-link--notes
+  .bs-home-explore-icon::before,
+body.bs-landing-page
+  .bs-home-explore-link--tej.bs-home-explore-link--notes
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("icons/commons-book.svg");
+  mask-image: url("icons/commons-book.svg");
 }
 
 body.bs-landing-page
