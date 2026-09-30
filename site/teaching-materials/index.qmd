@@ -134,6 +134,27 @@ Filters are saved in the page URL as you select them, so you can copy the addres
 
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
+    data-courses="TEJ"
+    data-tags="schematics|circuit diagrams|IEC symbols|electrical drawing|polarity|current direction|components|meters|reference guide|teacher asset|student reference"
+    data-search="Technology Commons Classroom Schematic Style Guide TEJ hand sketches slide diagrams generated circuit assets IEC 60617 IEC 61082 symbols reference letters battery polarity conventional current electron flow circuit layout wires junctions components meters ammeter voltmeter labels values drawing checklist electrical engineering reference guide">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit" aria-label="Open Technology Commons Classroom Schematic Style Guide">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>IEC</strong><span>Draw + label</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs&sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit">Classroom Schematic Style Guide</a></h2>
+      <p class="bs-slide-card-description">A consistent TEJ standard for hand-drawn, slide-based, and generated circuit schematics, including IEC symbols, battery polarity, current direction, layout, junctions, components, meters, labels, and final drawing checks.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="IEC symbols">IEC symbols</button><button type="button" data-slide-card-tag="electrical drawing">Electrical drawing</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
     data-courses="TAS|TEJ|TTJ"
     data-tags="identity|communication|documentation|pdf|introductory"
     data-search="name tag pdf student number introductory identity communication documentation submission">
