@@ -113,6 +113,27 @@ Filters are saved in the page URL as you select them, so you can copy the addres
 
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
+    data-courses="TEJ"
+    data-tags="circuit calculations|schematics|GUESS method|problem solving|electrical engineering|equations|units|significant digits|worksheet|printable"
+    data-search="circuit calculations general schematic GUESS handout given unknown equations substitute solve statement solution electrical engineering problem solving circuit diagram symbols units metric prefixes significant digits decimal places calculator final answer self check worksheet printable TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit" aria-label="Open Circuit Calculations General Schematic and GUESS Handout">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>GUESS</strong><span>Draw + calculate</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo&sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit">Circuit Calculations: General Schematic + GUESS Handout</a></h2>
+      <p class="bs-slide-card-description">A reusable worksheet for organizing circuit calculations through a schematic and the GUESS process: givens, unknowns, equations, substitution and solving, and a final statement with units.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="circuit calculations">Circuit calculations</button><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="GUESS method">GUESS method</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
     data-courses="TAS|TEJ|TTJ"
     data-tags="identity|communication|documentation|pdf|introductory"
     data-search="name tag pdf student number introductory identity communication documentation submission">
