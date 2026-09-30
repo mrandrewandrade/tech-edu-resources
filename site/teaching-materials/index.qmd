@@ -92,6 +92,27 @@ Filters are saved in the page URL as you select them, so you can copy the addres
 
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
+    data-courses="TEJ"
+    data-tags="electrical engineering|SI prefixes|scientific notation|electrical quantities|units|formula reference|cheat sheet|printable"
+    data-search="SI prefixes electrical quantities cheat sheet engineering powers of ten multiplier normalized E notation scientific notation voltage volt V current ampere amp A resistance ohm omega R power watt W P units symbols formula reference conversion metric printable TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit" aria-label="Open SI Prefixes and Electrical Quantities Cheat Sheet">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>SI + E</strong><span>Prefixes + quantities</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c&sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">SI Prefixes and Electrical Quantities Cheat Sheet</a></h2>
+      <p class="bs-slide-card-description">A printable electrical-engineering quick reference for SI prefixes, powers of ten, normalized and E notation, and the symbols and units used for voltage, current, resistance, and power.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="SI prefixes">SI prefixes</button><button type="button" data-slide-card-tag="electrical quantities">Electrical quantities</button><button type="button" data-slide-card-tag="formula reference">Formula reference</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
     data-courses="TAS|TEJ|TTJ"
     data-tags="identity|communication|documentation|pdf|introductory"
     data-search="name tag pdf student number introductory identity communication documentation submission">
