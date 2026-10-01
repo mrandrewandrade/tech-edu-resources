@@ -213,6 +213,11 @@ body.bs-slide-library .bs-slide-thumb img {
   background: var(--bs-surface);
 }
 
+body.bs-slide-library .bs-slide-thumb.bs-nice-slide-thumb img {
+  object-fit: cover;
+  object-position: 82% center;
+}
+
 body.bs-slide-library .bs-slide-thumb-fallback {
   position: absolute;
   inset: 0;
@@ -229,6 +234,17 @@ body.bs-slide-library .bs-slide-thumb-fallback strong {
   font-size: clamp(2.1rem, 7vw, 3.2rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
+}
+
+body.bs-slide-library .bs-slide-thumb-fallback.bs-nice-card-fallback strong {
+  display: grid;
+  width: 7rem;
+  height: 7rem;
+  place-items: center;
+  border: 3px solid var(--bs-copper);
+  border-radius: 50%;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
 }
 
 body.bs-slide-library .bs-slide-thumb-fallback > span:last-child {
