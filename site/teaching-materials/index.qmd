@@ -337,6 +337,27 @@ Filters are saved in the page URL as you select them, so you can copy the addres
   </article>
 
   <article class="bs-slide-card" data-slide-card
+    data-collection="General"
+    data-courses="TAS"
+    data-tags="communicate|pitch|feedback|planning|revision|engineering design"
+    data-search="NICE design process communicate pitch show your idea check problem needs situation need want alternative situation yes no maybe tally feedback package plan plan feedback revision flow chart engineering design TAS">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1F_7NWcW4Bzd-PE7BdLssdBxeT-49clS92381QXjW8gw/edit" aria-label="Open N.I.C.E. Design Process Step 3 Communicate materials">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>3</strong><span>Communicate</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1F_7NWcW4Bzd-PE7BdLssdBxeT-49clS92381QXjW8gw&sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1F_7NWcW4Bzd-PE7BdLssdBxeT-49clS92381QXjW8gw/edit">N.I.C.E. Design Process Step 3: Communicate</a></h2>
+      <p class="bs-slide-card-description">A coordinated three-document package for pitching and showing an idea, checking the problem and needs, gathering feedback, building a plan, testing whether it would work, and recording revisions.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="communicate">Communicate</button><button type="button" data-slide-card-tag="feedback">Feedback</button><button type="button" data-slide-card-tag="planning">Planning</button></div>
+      <a class="bs-slide-open" href="https://docs.google.com/document/d/1F_7NWcW4Bzd-PE7BdLssdBxeT-49clS92381QXjW8gw/edit">Open Pitch + Show Your Idea</a>
+      <a class="bs-slide-open" href="https://docs.google.com/document/d/173eivGi-7of6WWqpPsK81p4Z2Q6_3fIiW5ffjRI6jRQ/edit">Open Feedback Package</a>
+      <a class="bs-slide-open" href="https://docs.google.com/document/d/1QWY7ss3aY5wHh4ETOcSDGZxgpkrrIXcCYnWlXNv1lxo/edit">Open Plan + Plan Feedback (2 pages)</a>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
     data-collection="Well-Being"
     data-courses="TAS|TEJ|TTJ"
     data-tags="goals|reflection|progress|self-regulation|planning|typst|quarto"
