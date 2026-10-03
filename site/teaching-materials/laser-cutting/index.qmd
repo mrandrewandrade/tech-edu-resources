@@ -1,0 +1,57 @@
+---
+title: "Laser Cutting"
+subtitle: "Raw vector files for classroom fabrication"
+description: "Download and preview reusable SVG files for laser-cutting projects."
+format:
+  html:
+    page-layout: full
+    toc: false
+    title-block-style: plain
+    body-classes: "bs-editorial-page bs-title-eyebrow bs-laser-collection"
+    css:
+      - ../../assets/teacher-slides.css
+      - ../../assets/laser-cutting.css
+execute:
+  enabled: false
+---
+
+```{=html}
+<div class="bs-laser-shell">
+  <p class="bs-laser-back"><a href="../index.qmd">← General materials</a></p>
+
+  <section class="bs-laser-hero">
+    <div>
+      <p class="bs-laser-kicker">Digital fabrication · Raw SVG files</p>
+      <p class="bs-laser-lead">Preview each design, open the raw vector in your browser, or download it for editing and fabrication. Check dimensions, material thickness, joints, and kerf compensation before cutting.</p>
+    </div>
+  </section>
+
+  <section class="bs-laser-section" aria-labelledby="laser-files-title">
+    <div class="bs-laser-section-heading">
+      <p class="bs-laser-kicker">Available files</p>
+      <h2 id="laser-files-title">Easel templates</h2>
+    </div>
+
+    <article class="bs-laser-resource-card">
+      <a class="bs-laser-preview" href="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg" aria-label="Open the raw laser-cut easel SVG">
+        <img src="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg" alt="Preview of the laser-cut easel SVG template">
+      </a>
+      <div class="bs-laser-resource-copy">
+        <p class="bs-laser-kicker">Easel · Quarter-inch plywood</p>
+        <h3>Freestanding Easel Template</h3>
+        <p>A raw SVG containing the vector parts for a small freestanding easel. Use it as a starting file and confirm scale, slots, material thickness, and kerf for your machine and stock.</p>
+        <dl class="bs-laser-file-details">
+          <div><dt>Format</dt><dd>SVG</dd></div>
+          <div><dt>Canvas</dt><dd>1000 × 907</dd></div>
+          <div><dt>Suggested stock</dt><dd>Quarter-inch plywood</dd></div>
+        </dl>
+        <div class="bs-laser-actions">
+          <a class="bs-laser-button bs-laser-button-primary" href="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg">Open raw SVG</a>
+          <a class="bs-laser-button" href="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg" download>Download SVG</a>
+        </div>
+        <p class="bs-laser-attribution">Source: <a href="https://www.freepatternsarea.com/">Free Patterns Area</a>. The SVG metadata identifies the file as <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
+      </div>
+    </article>
+  </section>
+</div>
+```
