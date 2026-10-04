@@ -1,0 +1,28 @@
+---
+title: "CS01 Fast Electricity-to-Computer Bridge"
+description: "Connect familiar circuit roles to computer parts and information flow."
+pathway: "Main Quest"
+categories: [main quest, electricity, computer parts, block diagram, 45 minutes, low risk, observation]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisites:** H01, basic electricity, D01\
+**Previous:** [Digital logic and stable inputs](../03-digital-logic-inputs/index.qmd)\
+**Next:** [CS02 Parts, baseline testing, ESD, and safe opening](cs02-parts-baseline-esd.qmd)
+
+## Learning goal
+
+Treat a computer as a powered circuit and as an information-processing system.
+
+![Power flows through a sealed PSU to parallel computer loads.](/assets/tej/Computer_Power_Connections.svg){width=94%}
+
+Identify source, conductors, protection, controls, and loads. Then identify input, processing, memory, storage, and output. The PSU is a sealed conversion and protection unit. Read its external label only.
+
+## Activity and evidence
+
+Annotate one real computer photograph and one functional block diagram. Explain why internal loads connect to regulated rails in parallel and why the front-panel power button usually signals control logic instead of directly carrying total load current.
+
+## Resources
+
+- [Student activity packages](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf)
+- Lab link: CS01 observation and diagram check in the student package

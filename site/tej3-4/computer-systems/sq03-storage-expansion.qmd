@@ -1,0 +1,19 @@
+---
+title: "SQ03 Storage and Expansion Upgrades"
+description: "Research, install, and verify a compatible SATA, NVMe, or PCIe device."
+pathway: "Side Quest"
+categories: [side quest, storage, SATA, NVMe, PCIe, upgrade, 120 minutes, data risk, optional lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisites:** CS03, CS05, CS06\
+**Previous:** [SQ02 Fault stations](sq02-fault-stations.qmd)\
+**Next:** [SQ04 Linux inventory](sq04-linux-inventory.qmd)
+
+State the upgrade purpose and success measure. Research physical form factor, interface/keying, port or lane availability, power, firmware support, operating-system support, and the data plan.
+
+After approval, protect required data, install the device without forcing it, inspect before power, verify it in firmware and Linux, and run an appropriate test.
+
+For a device visible in firmware but absent in Linux, inspect inventory, driver support, partition/filesystem state, mount state, and logs. Do not initialize, format, or overwrite a drive without explicit approval.
+
+Submit the compatibility table, installation record, verification, and updated asset record.

@@ -137,12 +137,47 @@ website:
               href: tej3-4/03-digital-logic-inputs/04-pull-up-active-low.qmd
             - text: "3.5 Debouncing & Protection"
               href: tej3-4/03-digital-logic-inputs/05-debounce-protection.qmd
-            - text: "3.6 Circuits Culminating Project"
+            - text: "3.6 Logic Gates & Truth Tables"
+              href: tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.qmd
+            - text: "3.7 Circuits Culminating Project"
               href: tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.qmd
-        - section: "4. Microcontrollers"
+        - section: "4. Basic Computer Systems"
+          href: tej3-4/computer-systems/index.qmd
+          contents:
+            - text: "CS01 Electricity Bridge"
+              href: tej3-4/computer-systems/cs01-electricity-bridge.qmd
+            - text: "CS02 Parts, Baseline & ESD"
+              href: tej3-4/computer-systems/cs02-parts-baseline-esd.qmd
+            - text: "CS03 Power & Connections"
+              href: tej3-4/computer-systems/cs03-power-connections.qmd
+            - text: "CS04 Ready-to-Power"
+              href: tej3-4/computer-systems/cs04-ready-to-power.qmd
+            - text: "CS05 POST & BIOS/UEFI"
+              href: tej3-4/computer-systems/cs05-post-firmware.qmd
+            - text: "CS06 Linux Mint Xfce"
+              href: tej3-4/computer-systems/cs06-linux-mint.qmd
+            - text: "CS07 RAM Upgrade"
+              href: tej3-4/computer-systems/cs07-ram-upgrade.qmd
+            - text: "CS08 Benchmark Challenge"
+              href: tej3-4/computer-systems/cs08-benchmark-challenge.qmd
+            - section: "Side Quests"
+              contents:
+                - text: "SQ01 Teardown & Reassembly"
+                  href: tej3-4/computer-systems/sq01-teardown.qmd
+                - text: "SQ02 Fault Stations"
+                  href: tej3-4/computer-systems/sq02-fault-stations.qmd
+                - text: "SQ03 Storage & Expansion"
+                  href: tej3-4/computer-systems/sq03-storage-expansion.qmd
+                - text: "SQ04 Linux Inventory"
+                  href: tej3-4/computer-systems/sq04-linux-inventory.qmd
+                - text: "SQ05 Power & Thermal"
+                  href: tej3-4/computer-systems/sq05-power-thermal.qmd
+                - text: "SQ06 Repair & Reuse"
+                  href: tej3-4/computer-systems/sq06-repair-reuse.qmd
+        - section: "5. Microcontrollers"
           href: tej3-4/04-microcontrollers/index.qmd
           contents: []
-        - section: "5. Control Systems & CNC"
+        - section: "6. Control Systems & CNC"
           href: tej3-4/05-control-systems/index.qmd
           contents:
             - text: "C01 Control-System Anatomy"
@@ -167,12 +202,12 @@ website:
               href: tej3-4/05-control-systems/c10-cnc.qmd
             - text: "C11 Culminating Project"
               href: tej3-4/05-control-systems/c11-culminating-project.qmd
-        - section: "6. General Fabrication (Shared)"
+        - section: "7. General Fabrication (Shared)"
           href: teaching-materials/index.qmd
           contents:
             - text: "Laser Cutting"
               href: teaching-materials/laser-cutting/index.qmd
-        - section: "Electronics Library"
+        - section: "8. Electronics Library"
           href: tej3-4/electronics-library/index.qmd
           contents:
             - text: "H01 Safety & Lab Practice"

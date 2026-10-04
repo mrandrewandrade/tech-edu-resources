@@ -20,10 +20,11 @@ Current units:
 1. [Number Systems](01-number-systems/index.qmd)
 2. [Basic Electronics](02-basic-electronics/index.qmd)
 3. [Digital Logic and Stable Inputs](03-digital-logic-inputs/index.qmd)
-4. [Microcontrollers](04-microcontrollers/index.qmd)
-5. [Control Systems and CNC](05-control-systems/index.qmd)
-6. [Shared General Fabrication](../teaching-materials/index.qmd)
-7. [Electronics Library](electronics-library/index.qmd) - modules, labs, downloads, and restricted references
+4. [Basic Computer Systems](computer-systems/index.qmd)
+5. [Microcontrollers](04-microcontrollers/index.qmd)
+6. [Control Systems and CNC](05-control-systems/index.qmd)
+7. [Shared General Fabrication](../teaching-materials/index.qmd)
+8. [Electronics Library](electronics-library/index.qmd) - modules, labs, downloads, and restricted references
 
 ```{=html}
 <details class="bs-learn-filter-panel" data-bs-learn-filters aria-label="Search TEJ notes">
@@ -39,7 +40,8 @@ Current units:
 <button type="button" class="bs-learn-filter" data-bs-filter-track="tej-number-systems" aria-pressed="false">1. Number Systems</button>
 <button type="button" class="bs-learn-filter" data-bs-filter-track="tej-basic-electronics" aria-pressed="false">2. Basic Electronics</button>
 <button type="button" class="bs-learn-filter" data-bs-filter-track="tej-digital-inputs" aria-pressed="false">3. Digital Logic and Stable Inputs</button>
-<button type="button" class="bs-learn-filter" data-bs-filter-track="tej-control-systems" aria-pressed="false">5. Control Systems and CNC</button>
+<button type="button" class="bs-learn-filter" data-bs-filter-track="tej-computer-systems" aria-pressed="false">4. Basic Computer Systems</button>
+<button type="button" class="bs-learn-filter" data-bs-filter-track="tej-control-systems" aria-pressed="false">6. Control Systems and CNC</button>
 </div>
 </details>
 <div class="bs-learn-filter-footer"><p class="bs-learn-result-count" aria-live="polite" data-bs-learn-result-count></p><button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear search and filters</button></div>
@@ -69,20 +71,31 @@ Current units:
 </div>
 </details>
 
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tej-digital-inputs" data-bs-total-lessons="6" open>
-<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="03-digital-logic-inputs/index.qmd">3. Digital Logic and Stable Inputs</a><span data-bs-learn-group-count>6 lessons</span></span></summary>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tej-digital-inputs" data-bs-total-lessons="7" open>
+<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="03-digital-logic-inputs/index.qmd">3. Digital Logic and Stable Inputs</a><span data-bs-learn-group-count>7 lessons</span></span></summary>
 <div class="bs-learn-catalogue-section-items">
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["Digital Voltage Levels","GPIO","3.3 V","5 V"]' data-bs-search-body='["Interpret guaranteed high, low, indeterminate, and unsafe voltages."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/01-digital-levels.qmd">3.1 Digital Voltage Levels</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["Floating Inputs","Switches","Noise"]' data-bs-search-body='["Explain why an open switch needs a defined idle path."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/02-switches-floating-inputs.qmd">3.2 Switches and Floating Inputs</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["Pull-Down","Active High","Resistor"]' data-bs-search-body='["Use an external pull-down resistor for a defined low state."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/03-pull-down-inputs.qmd">3.3 External Pull-Downs</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["Pull-Up","Active Low","Switch to Ground"]' data-bs-search-body='["Use a switch to ground and interpret the pressed state as low."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/04-pull-up-active-low.qmd">3.4 Pull-Ups and Active-Low Logic</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["INPUT_PULLUP","Debounce","Protection"]' data-bs-search-body='["Compare pull-ups, debounce contacts, and protect GPIO inputs."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/05-debounce-protection.qmd">3.5 Debouncing and Protection</a></div></article>
-<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["Logic Project","Truth Table","Output Driver"]' data-bs-search-body='["Complete a stable-input logic project before microcontrollers."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/06-circuits-culminating-project.qmd">3.6 Circuits Culminating Project</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["Logic Gates","Truth Table","Binary Test Order","Three Inputs","Two Outputs"]' data-bs-search-body='["Count from 000 to 111 and evaluate each output in its own column."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/06-logic-gates-truth-tables.qmd">3.6 Logic Gates and Truth Tables</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-digital-inputs" data-bs-search-primary='["Logic Project","Truth Table","Output Driver"]' data-bs-search-body='["Complete a stable-input logic project before computer systems and microcontrollers."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-digital-logic-inputs/06-circuits-culminating-project.qmd">3.7 Circuits Culminating Project</a></div></article>
+</div>
+</details>
+
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tej-computer-systems" data-bs-total-lessons="14" open>
+<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="computer-systems/index.qmd">4. Basic Computer Systems</a><span data-bs-learn-group-count>14 quests</span></span></summary>
+<div class="bs-learn-catalogue-section-items">
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-computer-systems" data-bs-search-primary='["CS01-CS04","Main Quest","Parts","Power","Safe Opening","First Boot"]' data-bs-search-body='["Bridge electricity to computer parts, establish a baseline, inspect connections, and pass the first-boot gate."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/cs01-electricity-bridge.qmd">CS01-CS04 Hardware Foundations</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-computer-systems" data-bs-search-primary='["CS05-CS07","POST","BIOS","UEFI","Linux Mint","RAM Upgrade"]' data-bs-search-body='["Verify firmware, commission Linux Mint Xfce, and complete a compatible RAM upgrade."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/cs05-post-firmware.qmd">CS05-CS07 Commission and Upgrade</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-computer-systems" data-bs-search-primary='["CS08","Benchmark","Best Computer","Main Quest"]' data-bs-search-body='["Use repeatable tests and compatible approved parts to build the best computer for a stated user."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/cs08-benchmark-challenge.qmd">CS08 Benchmark Challenge</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-computer-systems" data-bs-search-primary='["SQ01-SQ06","Side Quest","Fault Stations","Storage","Linux","Thermal","Repair"]' data-bs-search-body='["Optional supervised work in service, troubleshooting, upgrades, administration, thermal control, repair, and reuse."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/index.qmd#side-quests">SQ01-SQ06 Side Quests</a></div></article>
 </div>
 </details>
 
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tej-control-systems" data-bs-total-lessons="11" open>
-<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="05-control-systems/index.qmd">5. Control Systems and CNC</a><span data-bs-learn-group-count>11 lessons</span></span></summary>
+<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="05-control-systems/index.qmd">6. Control Systems and CNC</a><span data-bs-learn-group-count>11 lessons</span></span></summary>
 <div class="bs-learn-catalogue-section-items">
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-control-systems" data-bs-search-primary='["Control System Anatomy","Feedback","Setpoint","Error"]' data-bs-search-body='["Identify the controller, process, disturbance, feedback, and error."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="05-control-systems/c01-control-system-anatomy.qmd">C01 Control-System Anatomy</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-control-systems" data-bs-search-primary='["Open Loop","Closed Loop","Hysteresis","Proportional","PID"]' data-bs-search-body='["Compare major control methods using one simulated process."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="05-control-systems/c06-pid.qmd">C02-C06 Feedback and PID</a></div></article>

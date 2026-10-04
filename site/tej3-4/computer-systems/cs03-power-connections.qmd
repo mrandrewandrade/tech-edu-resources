@@ -1,0 +1,36 @@
+---
+title: "CS03 Computer Power and Connections"
+description: "Trace computer power and data paths, read the PSU label, and calculate bounded load power."
+pathway: "Main Quest"
+categories: [main quest, PSU, power, connectors, parallel loads, GUESS, 75 minutes, supervised hardware, physical lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisites:** CS02, power, parallel circuits, conductors\
+**Previous:** [CS02 Parts and baseline](cs02-parts-baseline-esd.qmd)\
+**Next:** [CS04 Ready-to-power inspection](cs04-ready-to-power.qmd)
+
+![A functional computer-power schematic with parallel loads.](/assets/tej/Computer_Power_Connections.svg){width=96%}
+
+## GUESS example
+
+For a $12.0\ \mathrm{V}$ rail carrying $3.25\ \mathrm{A}$:
+
+$$
+\begin{aligned}
+P &= VI \\
+  &= (12.0\ \mathrm{V})(3.25\ \mathrm{A}) \\
+  &= 39.00000\ \mathrm{W} \\
+  &= 39.0\ \mathrm{W}
+\end{aligned}
+$$
+
+The final result has three significant figures. On the Casio fx-991ES PLUS C, enter `12.0 × 3.25 =`.
+
+## Lab L22 preparation
+
+Trace one power path and one data path without disconnecting anything. Record connector type, keying, latch, destination, and purpose. A PSU wattage is a capacity rating, not a live measurement of present use.
+
+Never force keyed connectors or probe inside an energized computer.
+
+[Student activity packages and problem set](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf)

@@ -15,7 +15,7 @@ format:
 ::: {.tej-library-panel}
 ## Start here
 
-This hub follows the authoritative TEJ hardware-module sequence. H01 is the first complete module package. Programming, Linux, and systems have planned curricular scope but remain **Later** for implementation.
+This hub follows the authoritative TEJ hardware-module sequence. H01, D01, C06, and the Basic Computer Systems layer have complete activity resources. Deeper programming, Linux, and systems lessons remain **Later** for implementation.
 
 - [Quick reference and handbook](#quick-reference-and-handbook)
 - [Hardware modules](#hardware-modules)
@@ -113,6 +113,11 @@ Ten questions: Q1 to Q5 required, Q6 to Q10 optional Level 4 evidence.
 <span class="tej-badge required">Required</span> <span class="tej-badge">Reviewed</span>
 <h3><a href="../03-digital-logic-inputs/index.qmd">D01 Digital inputs and stable switches</a></h3>
 <p>Required pre-microcontroller sequence with authoritative circuits, state tables, debouncing, compatibility, and a logic-system project.</p>
+</article>
+<article class="tej-module-card" data-tej-module data-status="reviewed" data-access="public" data-search="CS01 CS02 CS03 CS04 CS05 CS06 CS07 CS08 SQ01 SQ02 SQ03 SQ04 SQ05 SQ06 computer systems Linux Mint RAM benchmark POST BIOS UEFI repair thermal">
+<span class="tej-badge required">Main Quest</span> <span class="tej-badge">Side Quests</span> <span class="tej-badge">Reviewed</span>
+<h3><a href="../computer-systems/index.qmd">CS01-CS08 Basic Computer Systems</a></h3>
+<p>Fast electricity bridge, safe opening, power connections, first boot, firmware, Linux Mint Xfce, RAM upgrade, benchmarking, and six optional service extensions.</p>
 </article>
 <article class="tej-module-card" data-tej-module data-status="reviewed" data-access="public" data-search="C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 control PID CNC LinuxCNC state machine motor feedback">
 <span class="tej-badge required">Required</span> <span class="tej-badge">Reviewed pathway</span>

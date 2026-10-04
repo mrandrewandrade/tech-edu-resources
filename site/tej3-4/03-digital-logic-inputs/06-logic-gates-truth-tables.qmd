@@ -1,0 +1,55 @@
+---
+title: "3.6 Logic Gates, Truth Tables, and Binary Test Order"
+description: "Read logic symbols and build complete three-input, two-output truth tables by counting in binary."
+sidebar: tej
+toc: true
+categories: [main quest, logic gates, truth tables, binary, simulation, low risk]
+execute: {enabled: false}
+---
+
+## Gate meanings
+
+| Gate | Output is 1 when... |
+|:--|:--|
+| NOT | the single input is 0 |
+| AND | every input is 1 |
+| OR | at least one input is 1 |
+| NAND | the AND result is inverted |
+| NOR | the OR result is inverted |
+| XOR | the inputs differ for the two-input case |
+| XNOR | the inputs match for the two-input case |
+
+Use the standard logic symbols and the readable reference in the [Electronics Handbook](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Reference-Handbook.html).
+
+## Three inputs and two outputs
+
+Name the input columns first, then count from binary 000 to 111. Evaluate each output equation on the same row.
+
+Example equations:
+
+$$Y_1=A\cdot B+\overline{C}$$
+
+$$Y_2=A\oplus C$$
+
+| Decimal | $A$ | $B$ | $C$ | $Y_1$ | $Y_2$ |
+|--:|:--:|:--:|:--:|:--:|:--:|
+| 0 | 0 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0 | 1 |
+| 2 | 0 | 1 | 0 | 1 | 0 |
+| 3 | 0 | 1 | 1 | 0 | 1 |
+| 4 | 1 | 0 | 0 | 1 | 1 |
+| 5 | 1 | 0 | 1 | 0 | 0 |
+| 6 | 1 | 1 | 0 | 1 | 1 |
+| 7 | 1 | 1 | 1 | 1 | 0 |
+
+## Reliable table method
+
+1. For $n$ inputs, create $2^n$ rows.
+2. Count upward in binary. The rightmost input changes every row.
+3. Evaluate any NOT operations first.
+4. Evaluate each gate or intermediate node in circuit order.
+5. Record every output in its own column.
+6. Verify at least one row with a simulator or physical logic circuit.
+
+**Previous:** [Debouncing and protection](05-debounce-protection.qmd)\
+**Next:** [Circuits culminating project](06-circuits-culminating-project.qmd)

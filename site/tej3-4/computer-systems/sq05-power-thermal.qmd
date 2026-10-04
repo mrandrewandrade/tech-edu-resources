@@ -1,0 +1,28 @@
+---
+title: "SQ05 Power, Efficiency, Cooling, and Thermal Behaviour"
+description: "Measure power and temperature, then explain computer cooling as a feedback-control system."
+pathway: "Side Quest"
+categories: [side quest, power, energy, cooling, fan control, thermal, feedback, 120 minutes, enclosed meter, optional lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisites:** CS03, CS06, control-system basics\
+**Previous:** [SQ04 Linux inventory](sq04-linux-inventory.qmd)\
+**Next:** [SQ06 Repair and reuse](sq06-repair-reuse.qmd)
+
+Predict relative power at shutdown, standby, idle, and approved load. Use an enclosed wall meter and approved sensor tools. Record power, CPU temperature, and fan evidence at the same timed intervals.
+
+For $74.6\ \mathrm{W}$ over $2.50\ \mathrm{h}$:
+
+$$
+\begin{aligned}
+E &= Pt \\
+  &= (74.6\ \mathrm{W})(2.50\ \mathrm{h}) \\
+  &= 186.50000\ \mathrm{Wh} \\
+  &= 0.187\ \mathrm{kWh}
+\end{aligned}
+$$
+
+Draw the feedback loop with temperature sensor, controller, fan, heat source, and measured temperature. Compare one approved setting, cleaning, or configuration change using the same workload.
+
+No internal live probing. Keep cooling hardware installed and stop for abnormal heat, smell, sound, or fan failure.

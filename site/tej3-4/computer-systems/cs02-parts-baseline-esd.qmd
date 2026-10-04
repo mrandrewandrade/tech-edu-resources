@@ -1,0 +1,27 @@
+---
+title: "CS02 Parts, Baseline Testing, ESD, and Safe Opening"
+description: "Establish a known-good baseline before opening an assigned computer safely."
+pathway: "Main Quest"
+categories: [main quest, baseline, ESD, parts, safe opening, 75 minutes, supervised hardware, physical lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisite:** [CS01](cs01-electricity-bridge.qmd)\
+**Previous:** [CS01 Fast electricity-to-computer bridge](cs01-electricity-bridge.qmd)\
+**Next:** [CS03 Computer power and connections](cs03-power-connections.qmd)
+
+## Known-good baseline
+
+Record the asset number, model, visible damage, startup result, display, sound, operating system, and unusual behaviour before service. This evidence distinguishes a pre-existing problem from one introduced during the activity.
+
+![A labelled desktop-computer cutaway.](/assets/tej/Computer_System_Cutaway.svg){width=90%}
+
+## Physical lab L21
+
+Shut down, unplug, use the approved ESD area, photograph cable locations, and open only the directed chassis panel. Identify the PSU, motherboard, CPU cooler, RAM, storage, fans, and power/data cables.
+
+::: {.callout-important title="Stop and ask"}
+Stop for liquid, a swollen cell, burnt areas, damaged insulation, loose metal, an unknown modification, or uncertainty. Never open the PSU.
+:::
+
+Submit the baseline, labelled photograph, safety sign-off, and after-reassembly check.

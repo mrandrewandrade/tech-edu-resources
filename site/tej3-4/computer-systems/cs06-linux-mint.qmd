@@ -1,0 +1,23 @@
+---
+title: "CS06 Linux Mint Xfce Installation and Commissioning"
+description: "Install the approved Linux Mint Xfce image and verify the workstation."
+pathway: "Main Quest"
+categories: [main quest, Linux Mint, Xfce, installation, commissioning, storage, 150 minutes, data loss risk, physical lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisite:** [CS05](cs05-post-firmware.qmd)\
+**Previous:** [CS05 POST and BIOS/UEFI](cs05-post-firmware.qmd)\
+**Next:** [CS07 RAM upgrade](cs07-ram-upgrade.qmd)
+
+## Installation gate
+
+Record the assigned asset, exact target drive model/capacity, preserved files, approved installer, and firmware detection. The teacher must confirm any erase or partition choice.
+
+Use the live session first to test display, keyboard, mouse, USB, sound, and network. After approval, install the classroom image, apply approved updates, and verify CPU, RAM, storage, USB, sound, display, network, restart, and login.
+
+::: {.callout-important title="Data safety"}
+An erase-disk installation destroys data on the selected drive. Confirm the exact target and preserve required files before continuing.
+:::
+
+Official references: [Linux Mint download](https://linuxmint.com/download.php/) and [installation guide](https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html).

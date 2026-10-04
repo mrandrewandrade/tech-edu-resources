@@ -1,0 +1,19 @@
+---
+title: "SQ01 Controlled Teardown and Reassembly"
+description: "Document, remove, and reinstall approved field-replaceable parts."
+pathway: "Side Quest"
+categories: [side quest, teardown, reassembly, service, documentation, 120 minutes, supervised hardware, optional lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisites:** CS02 and CS04\
+**Previous:** [CS08 Benchmark challenge](cs08-benchmark-challenge.qmd)\
+**Next:** [SQ02 Fault stations](sq02-fault-stations.qmd)
+
+Record the known-good baseline and photograph every side before opening. Create a fastener map and cable map. Remove only the RAM, storage, cables, fans, or drive cages approved for this station.
+
+Explain the electrical and mechanical purpose of each connector or fastener removed. Reassemble, complete the ready-to-power gate, POST, and acceptance check.
+
+Never open the PSU. Stop for liquid, a swollen cell, burnt areas, damaged parts, or uncertainty.
+
+Submit the photo sequence, maps, parts-tray record, and verified return to service.

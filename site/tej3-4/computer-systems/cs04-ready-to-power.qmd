@@ -1,0 +1,25 @@
+---
+title: "CS04 Ready-to-Power Inspection and First Boot"
+description: "Use a signed inspection gate before a supervised first boot."
+pathway: "Main Quest"
+categories: [main quest, inspection, first boot, safety, commissioning, 60 minutes, supervised power, physical lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisite:** [CS03](cs03-power-connections.qmd)\
+**Previous:** [CS03 Computer power and connections](cs03-power-connections.qmd)\
+**Next:** [CS05 POST and BIOS/UEFI](cs05-post-firmware.qmd)
+
+![The commissioning route from baseline to final evidence.](/assets/tej/Computer_Commissioning_Flow.svg){width=100%}
+
+## Ready-to-power gate
+
+Check for loose metal, seating, connector alignment, secure cooling, cable clearance, external display/keyboard, and a stable chassis. The teacher must inspect and sign before power is applied.
+
+Predict lights, fan motion, display messages, and sounds. During the supervised boot, record the actual order and compare it with the prediction.
+
+::: {.callout-important title="Stop conditions"}
+Remove power and notify the teacher for smoke, smell, unusual noise, blocked fans, repeated power cycling, or abnormal heat.
+:::
+
+Submit the signed gate, startup prediction, observation record, and one safe next test for a no-display result.

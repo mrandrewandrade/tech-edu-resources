@@ -1,0 +1,17 @@
+---
+title: "SQ04 Linux Hardware Inventory and Introductory Administration"
+description: "Compare physical, firmware, and Linux evidence for one workstation."
+pathway: "Side Quest"
+categories: [side quest, Linux, inventory, administration, command line, diagnostics, 120 minutes, approved commands, optional lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisite:** CS06\
+**Previous:** [SQ03 Storage and expansion](sq03-storage-expansion.qmd)\
+**Next:** [SQ05 Power and thermal behaviour](sq05-power-thermal.qmd)
+
+Predict which layer can report CPU, RAM, storage, USB, network, and temperature information. Use only teacher-approved commands, which may include `lscpu`, `free -h`, `lsblk`, `lspci`, `lsusb`, `ip address`, `smartctl`, and `sensors`.
+
+Capture the command and relevant output rather than the entire terminal history. Compare physical labels, firmware records, and Linux results. Explain one disagreement and produce a concise workstation inventory.
+
+Administrative changes require separate approval. Treat a failing drive or health warning as evidence for caution, not dependable storage.

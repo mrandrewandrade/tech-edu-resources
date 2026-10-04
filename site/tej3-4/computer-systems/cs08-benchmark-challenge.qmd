@@ -1,0 +1,21 @@
+---
+title: "CS08 Build-the-Best-Computer Benchmarking Challenge"
+description: "Use repeatable tests and approved compatible parts to improve a computer for a stated user."
+pathway: "Main Quest"
+categories: [main quest, benchmark, compatibility, optimization, design, evidence, 240 minutes, supervised hardware, physical lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisites:** CS01-CS07\
+**Previous:** [CS07 RAM upgrade](cs07-ram-upgrade.qmd)\
+**Next:** [Side Quest Hub](index.qmd#side-quests)
+
+![A repeatable benchmark and improvement loop.](/assets/tej/Computer_Benchmark_Loop.svg){width=100%}
+
+Define what best means for the assigned user before final testing. Record hardware, operating system, benchmark version, run conditions, units, and baseline results. Use evidence to identify a bottleneck and propose an approved compatible change.
+
+After the change, complete the inspection gate and rerun the same tests under the same conditions. Report boot/login time, a CPU task, a memory task, a storage task, temperature evidence, and one user-task measure where suitable.
+
+Submit the build plan, parts record, before/after table, graph, uncertainty note, and evidence-based recommendation.
+
+[Download the complete student activity package](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf).

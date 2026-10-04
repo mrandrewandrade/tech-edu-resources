@@ -1,0 +1,21 @@
+---
+title: "SQ02 Teacher-Prepared POST and Hardware Fault Stations"
+description: "Diagnose a controlled computer fault by recording evidence and changing one variable at a time."
+pathway: "Side Quest"
+categories: [side quest, POST, troubleshooting, beep code, boot order, fault station, 90 minutes, teacher-prepared faults, optional lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisite:** CS05\
+**Previous:** [SQ01 Teardown](sq01-teardown.qmd)\
+**Next:** [SQ03 Storage and expansion](sq03-storage-expansion.qmd)
+
+The teacher prepares every fault and records the known baseline. Possible stations include improperly seated RAM, disconnected storage, wrong boot order, or an approved fan connection issue.
+
+Record the symptom before touching the station. Predict the normal result, list two possible causes, choose one safe test, make only the approved correction, and verify return to baseline.
+
+::: {.callout-important title="No student-created faults"}
+Never create a short, damage a connector, invent a fault, or change hardware while power is connected.
+:::
+
+Submit the prediction, hypothesis/test log, correction, and verified result.

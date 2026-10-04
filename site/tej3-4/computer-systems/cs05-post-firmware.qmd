@@ -1,0 +1,21 @@
+---
+title: "CS05 POST and BIOS/UEFI"
+description: "Observe POST and use firmware information to verify essential hardware and boot order."
+pathway: "Main Quest"
+categories: [main quest, POST, BIOS, UEFI, firmware, boot order, 60 minutes, low risk, physical lab]
+---
+
+**Pathway:** {{< meta pathway >}}\
+**Prerequisite:** [CS04](cs04-ready-to-power.qmd)\
+**Previous:** [CS04 Ready-to-power inspection](cs04-ready-to-power.qmd)\
+**Next:** [CS06 Linux Mint Xfce installation](cs06-linux-mint.qmd)
+
+## Startup sequence
+
+Power command, stable rails, firmware startup, POST, boot-device selection, bootloader, operating system.
+
+Record firmware vendor/version, CPU, RAM, storage, date/time, and boot order without changing unapproved settings. Explain the different jobs of POST, firmware, a bootloader, and an operating system.
+
+The Main Quest uses a known-good machine. Predict possible symptoms for missing RAM, a missing boot drive, and wrong boot order, but do not create a fault. Teacher-prepared faults belong in [SQ02](sq02-fault-stations.qmd).
+
+Submit the sequence diagram, firmware record, explanation, and normal reboot check.
