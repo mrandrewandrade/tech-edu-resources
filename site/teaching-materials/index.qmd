@@ -73,19 +73,19 @@ Filters are saved in the page URL as you select them, so you can copy the addres
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
     data-courses="TAS|TEJ"
-    data-tags="laser cutting|SVG|vector design|digital fabrication|easel|plywood|template"
-    data-search="laser cutting raw SVG vector design digital fabrication easel template quarter inch plywood 1/4 inch cut file fabrication TAS TEJ">
-    <a class="bs-slide-thumb" href="laser-cutting/index.qmd" aria-label="Browse the Laser Cutting collection">
-      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>LASER</strong><span>SVG cut files</span></span>
-      <img src="../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg" alt="Laser-cut easel vector template" loading="lazy" onerror="this.hidden=true">
+    data-tags="laser fabrication|SVG|vector design|digital fabrication|calibration|French cleat|shop organization|parametric design"
+    data-search="laser fabrication 337 generated SVG vector design calibration kerf fit gauge French cleat tool holders jigs projects themes Inkscape Veccy plywood measured thickness TAS TEJ">
+    <a class="bs-slide-thumb" href="laser-cutting/index.qmd" aria-label="Browse the Laser Fabrication Library">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>LASER</strong><span>Measure · fit · make</span></span>
+      <img src="../assets/laser-library/previews/calibration/tc-cal-dimension-verification.svg" alt="Dimension verification sheet from the laser fabrication library" loading="lazy" onerror="this.hidden=true">
     </a>
     <div class="bs-slide-card-body">
       <p class="bs-slide-card-collection">General</p>
-      <h2 class="bs-slide-card-title"><a href="laser-cutting/index.qmd">Laser Cutting</a></h2>
-      <p class="bs-slide-card-description">A growing collection of raw SVG files for laser-cut projects, beginning with a freestanding easel template for quarter-inch plywood.</p>
+      <h2 class="bs-slide-card-title"><a href="laser-cutting/index.qmd">Laser Fabrication Library</a></h2>
+      <p class="bs-slide-card-description">A searchable, manifest-driven collection of 337 calibration files, exact-size shapes, French-cleat modules, shop-coverage organizers, jigs, project starters and parametric recipes.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
-      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="laser cutting">Laser cutting</button><button type="button" data-slide-card-tag="SVG">SVG</button><button type="button" data-slide-card-tag="digital fabrication">Digital fabrication</button></div>
-      <a class="bs-slide-open" href="laser-cutting/index.qmd">Browse laser-cutting files</a>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="laser fabrication">Laser fabrication</button><button type="button" data-slide-card-tag="calibration">Calibration</button><button type="button" data-slide-card-tag="shop organization">Shop organization</button></div>
+      <a class="bs-slide-open" href="laser-cutting/index.qmd">Browse 337 generated assets</a>
     </div>
   </article>
 

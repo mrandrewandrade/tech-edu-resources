@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1280" viewBox="0 0 150 300">
+<title>French-cleat module face 150 × 300 mm</title>
+<desc>A standard blank module face with mounting references and label area.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;french-cleat&quot;,&quot;description&quot;:&quot;A standard blank module face with mounting references and label area.&quot;,&quot;dimensional_tests&quot;:{},&quot;dimensions&quot;:{&quot;height&quot;:300,&quot;width&quot;:150},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Veccy&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/french-cleat/tc-cleat-module-face-150x300mm.svg&quot;,&quot;svg&quot;:&quot;generated/svg/french-cleat/tc-cleat-module-face-150x300mm.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-cleat-module-face-150x300mm&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Face size is not a load rating. Use an appropriate solid cleat/backer and approved fasteners.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;SCORE&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;face_height_mm&quot;:300,&quot;face_width_mm&quot;:150},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;module-faces&quot;,&quot;tags&quot;:[&quot;French cleat&quot;,&quot;module face&quot;,&quot;shadow board&quot;],&quot;title&quot;:&quot;French-cleat module face 150 \u00d7 300 mm&quot;,&quot;tool_family&quot;:&quot;modular organization&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="150" height="300" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="0" y="0" width="150" height="300" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<circle cx="12" cy="12" r="2.6" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<circle cx="138" cy="12" r="2.6" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+</g>
+<g id="score" aria-label="SCORE">
+<line x1="10" y1="30" x2="140" y2="30" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="75" y="22" font-family="sans-serif" font-size="4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">MODULE 150 × 300 mm</text>
+</g>
+</svg>

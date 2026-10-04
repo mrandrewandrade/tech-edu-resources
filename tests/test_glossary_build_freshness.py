@@ -72,7 +72,7 @@ class GlossaryBuildFreshnessTests(unittest.TestCase):
         self.assertEqual(html.count('class="bs-glossary-entry"'), expected)
         self.assertEqual(len(lookup["entries"]), expected)
 
-    def test_render_generates_glossary_and_course_navigation(self) -> None:
+    def test_render_generates_navigation_and_validates_laser_catalogue(self) -> None:
         with mock.patch.dict(os.environ, {}, clear=True), mock.patch.object(bs_pre_render, "run") as run:
             self.assertEqual(bs_pre_render.main(), 0)
         self.assertEqual(
@@ -90,6 +90,13 @@ class GlossaryBuildFreshnessTests(unittest.TestCase):
                         bs_pre_render.sys.executable,
                         str(bs_pre_render.REPO_ROOT / "scripts" / "course_notes.py"),
                         "generate",
+                    ]
+                ),
+                mock.call(
+                    [
+                        bs_pre_render.sys.executable,
+                        str(bs_pre_render.REPO_ROOT / "scripts" / "laser_library.py"),
+                        "validate",
                     ]
                 ),
             ],
