@@ -1,0 +1,40 @@
+---
+title: "Logo & Lettermark Design | Shape, Type and Negative Space"
+description: "A reusable logo-design lesson using letterforms, simple vector geometry, negative space and one-colour testing for communication and fabrication."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Design for recognition
+
+A logo is not a small illustration of everything an organization does. It is an identifying mark that must remain recognizable across sizes, materials, and contexts. A **lettermark** starts with one or more letterforms and changes their shape, spacing, overlap, or negative space to create a distinctive symbol.
+
+## Development sequence
+
+1. Identify the audience, context, and qualities the mark should communicate.
+2. Sketch at least six alternatives before opening vector software.
+3. Build two or three candidates using letterforms and simple geometry.
+4. Test positive and reversed versions in one colour.
+5. Reduce the design until every remaining element has a job.
+6. Check it at small size, from a distance, and as an engraved silhouette.
+
+## Negative space
+
+Negative space is the area around and inside shapes. It can separate forms, reveal a second symbol, improve recognition, or create ambiguity. Test by filling the entire logo black. If the important counter-shapes close up, revise the spacing or simplify the form.
+
+## Fabrication constraint
+
+Very thin lines, tiny counters, and detached islands may fail when engraved or cut. Preserve an editable master, then create a fabrication copy in which critical text is converted to paths and small features are checked against the material and machine.
+
+::: {.ter-project-brief}
+### Project
+
+Create a lettermark and place it with your name inside an exact rectangular plaque. This file becomes the artwork for [Name + Logo: Engrave and Cut](../03-laser-cutting/01-name-logo.qmd).
+:::
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology** and useful in **TDJ2O** and **TIJ1O** projects involving visual identity, vector graphics, typography, design alternatives, and communication.
+:::
+
+Next: [Layout, Typography & Colour](04-layout-typography-colour.qmd).

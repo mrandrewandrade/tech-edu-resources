@@ -1,0 +1,38 @@
+---
+title: "Name + Logo | First Laser Engrave and Cut Project"
+description: "An accessible first laser-cutting project: prepare an SVG name plaque with engraved text and logo artwork inside an exact cut rectangle."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Design brief
+
+Create a rectangular plaque containing your name and an original logo or lettermark. The artwork will be engraved and the rectangle will be cut. Keep the first fabrication experience intentionally simple so attention can stay on file preparation, operation choice, and safe workflow.
+:::
+
+## Learning goals
+
+Students distinguish raster from vector information, engrave from cut operations, and artwork from structural geometry. They create an SVG at an exact physical size, place readable text and artwork inside safe margins, and verify the file before it enters the machine workflow.
+
+## File preparation
+
+1. Set document units to millimetres.
+2. Create one exact rectangle for the plaque boundary.
+3. Add the student's name with deliberate typography and spacing.
+4. Add the original [logo or lettermark](../02-digital-design/03-logos-lettermarks.qmd).
+5. Keep artwork inside an agreed margin.
+6. Classify every object as engrave, score, or cut.
+7. Save an editable master; convert text to paths only in a fabrication copy if required.
+8. Reopen or import the file and verify the rectangle dimensions.
+
+## Before pressing start
+
+Follow the local material approval, focus, ventilation, supervision, fire-watch, and shutdown procedure. Preview the machine path and confirm there is only one plaque boundary.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Useful for **TIJ1O** and **TDJ2O** learning involving vector graphics, visual communication, exact dimensions, file preparation, manufacturing processes, safe tool use, and evaluation of a produced artifact. Communications Technology connections belong primarily in the preceding digital-design unit.
+:::
+
+Next: add an open-ended requirement in [Make It Stand](02-make-it-stand.qmd). Browse [core geometry and project starters](../../teaching-materials/laser-cutting/?type=project-components#library) without copying a complete final solution.

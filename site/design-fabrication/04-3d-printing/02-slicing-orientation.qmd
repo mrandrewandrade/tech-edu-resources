@@ -1,0 +1,34 @@
+---
+title: "3D Printing Slicing | Layer Height, Walls, Infill, Orientation & Supports"
+description: "Connect slicer settings and print orientation to toolpaths, time, strength, surface quality, support material and risk."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## The slicer is manufacturing software
+
+A slicer converts the 3D model into layers and machine instructions. Previewing the toolpath is part of design verification, not an optional final click.
+
+## Settings with consequences
+
+- **Layer height:** changes vertical detail, surface texture, time, and the number of layer interfaces.
+- **Walls/perimeters:** strongly affect shell strength and feature quality.
+- **Infill:** supports top surfaces and can change stiffness, mass, and time; more is not automatically better.
+- **Top and bottom layers:** close surfaces and distribute loads.
+- **Orientation:** changes overhangs, supports, surface finish, dimensional behaviour, and the direction of layer weakness.
+- **Supports:** make some overhangs possible but add material, time, cleanup, and surface evidence.
+
+## Orientation comparison
+
+Choose a bracket or hook and compare at least three orientations. For each, record support volume, estimated time, contact area, critical surface quality, likely load direction, and risk of failure. Select an orientation against the actual requirements rather than the most attractive preview.
+
+## Before printing
+
+Inspect the first layer, thin walls, bridges, unsupported islands, travel, seams, and total material. Confirm the correct printer and approved material profile. Follow local supervision and machine procedures.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Strongly relevant to **TMJ2O** and senior Manufacturing Technology, and useful in **TDJ2O**, **TIJ1O**, and **TEJ2O** projects involving CAM, process planning, material efficiency, quality, and evaluation.
+:::
+
+Next: [Tolerances & Functional Parts](03-tolerances-functional-parts.qmd).

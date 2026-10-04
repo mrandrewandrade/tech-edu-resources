@@ -1,8 +1,8 @@
 # Technological Education Resources
 
-Open classroom resources supporting the Ontario Technological Education curriculum, including current TAS and TEJ class slides, collaborative notes, reusable presentations, assignments, and teaching materials.
+Open educator-first resources supporting the Ontario Technological Education curriculum, including reusable presentations, teaching materials, General Design & Fabrication curriculum, TEJ notes, and current TAS and TEJ class slides.
 
-Live site: https://andrewandrade.ca/commons/
+Live site: https://andrewandrade.ca/tech-edu-resources/
 
 ## Build and check
 
@@ -26,7 +26,8 @@ The rendered output is `site/_site`. Do not edit generated output directly.
 
 - `site/slides/tas.qmd`: chronological TAS class slides.
 - `site/slides/tej.qmd`: chronological TEJ class slides.
-- `site/tas2/`: intentionally unfinished TAS collaborative notes.
+- `site/design-fabrication/`: reusable General Design & Fabrication curriculum covering the N.I.C.E. design process, digital design, laser cutting, 3D printing, and planned fabrication methods.
+- `site/tas2/`: compatibility redirects and retired TAS course scaffolding; reusable curriculum is canonical under `site/design-fabrication/`.
 - `site/tej3-4/`: intentionally unfinished TEJ collaborative notes.
 - `site/teacher-slides/`: General Slides, searchable reusable presentations.
 - `site/teaching-materials/`: General Materials, searchable assignments, worksheets, and worked examples.

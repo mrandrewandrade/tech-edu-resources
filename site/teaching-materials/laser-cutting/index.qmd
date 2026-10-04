@@ -1,7 +1,7 @@
 ---
-title: "Laser Fabrication Library"
+title: "Laser Fabrication Library | SVG, Calibration & Tool Holders"
 subtitle: "Measure first. Test fit. Then make it yours."
-description: "Search, preview and download the Technology Commons laser-fabrication catalogue."
+description: "Free SVG laser-cutting resources for Ontario technology education: calibration files, exact geometry, stands, joinery, jigs, tool holders and shop organization."
 format:
   html:
     page-layout: full
@@ -24,11 +24,25 @@ execute:
       <p class="bs-laser-kicker">Technology Commons · Open fabrication library</p>
       <p class="bs-laser-lead">Start with calibration, download simple editable geometry, and build toward measured assemblies and original parametric designs. The catalogue contains <strong data-laser-total>232 purpose-built generated assets</strong>; none are claimed as physically verified.</p>
       <div class="bs-laser-actions">
+        <a class="bs-laser-button bs-laser-button-primary" href="../../design-fabrication/03-laser-cutting/index.qmd">Teach the laser-cutting curriculum</a>
         <a class="bs-laser-button bs-laser-button-primary" href="https://raw.githubusercontent.com/mrandrewandrade/assets/master/laser/generated/downloads/technology-commons-laser-library.zip">Download complete SVG bundle</a>
         <a class="bs-laser-button" href="https://github.com/mrandrewandrade/assets/tree/master/laser">Generators, metadata and tests</a>
         <a class="bs-laser-button" href="#library">Browse assets</a>
       </div>
     </div>
+  </section>
+
+  <section class="bs-laser-guides" aria-label="Curriculum pathways">
+    <article>
+      <p class="bs-laser-kicker">Learn before downloading</p>
+      <h2>From first cut to calibrated assembly</h2>
+      <p>Use the <a href="../../design-fabrication/03-laser-cutting/index.qmd">Laser Cutting &amp; 2D Fabrication curriculum</a> for the complete project sequence: name-and-logo plaque, stands, measured holders, material fit, assemblies, tool organization, and capstone work.</p>
+    </article>
+    <article>
+      <p class="bs-laser-kicker">Apply the files</p>
+      <h2>Choose a learning goal</h2>
+      <p><a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.qmd">Learn to design a stand</a>, <a href="../../design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd">learn to make parts fit</a>, or <a href="../../design-fabrication/03-laser-cutting/06-tool-holder.qmd">learn to design a tool holder</a>. Library geometry is a starting point; students still measure, test, and revise.</p>
+    </article>
   </section>
 
   <section class="bs-laser-workflow" aria-labelledby="workflow-title">

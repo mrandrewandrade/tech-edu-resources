@@ -1,0 +1,38 @@
+---
+title: "Laser Cutting for Technology Education | SVG, Kerf, Fits & Fabrication"
+description: "Free laser-cutting lessons and SVG fabrication resources for Ontario technology education. Learn vector design, material thickness, kerf, fit testing, joinery, tool holders and digital fabrication."
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
+execute:
+  enabled: false
+---
+
+This mini-curriculum moves from a deliberately easy first cut to measured, calibrated, useful fabrication. Students use vector design, test real materials, make evidence-based fit decisions, combine laser-cut precision with conventional materials, and complete a full design cycle.
+
+The learning sequence lives here. The separate [Laser Fabrication Library](../../teaching-materials/laser-cutting/index.qmd) holds downloadable SVGs, calibration files, editable geometry, project components, holders, and inspiration.
+
+## Project sequence
+
+<ol class="ter-lesson-sequence">
+  <li><a href="01-name-logo.qmd">Name + Logo: Engrave and Cut</a> — one easy first fabrication file.</li>
+  <li><a href="02-make-it-stand.qmd">Make It Stand</a> — investigate stability, supports, slots, and balance.</li>
+  <li><a href="03-measure-place.qmd">Measure + Place</a> — use calipers, exact geometry, spacing, arrays, and margins.</li>
+  <li><a href="04-material-fit-calibration.qmd">Material Fit + Calibration</a> — measure actual stock, test kerf and choose a fit.</li>
+  <li><a href="05-assemblies-hybrid-fabrication.qmd">Assemblies + Hybrid Fabrication</a> — combine precision faces with structural backers and conventional hardware.</li>
+  <li><a href="06-tool-holder.qmd">Tool Holder</a> — organize real shop tools through measurement, access, ergonomics, and revision.</li>
+  <li><a href="07-wall-bench-module.qmd">Wall + Bench Tool Module</a> — design for secure vertical storage and stable portable use.</li>
+  <li><a href="08-capstone.qmd">Design &amp; Fabrication Capstone</a> — identify a genuine need and complete a full N.I.C.E. cycle.</li>
+</ol>
+
+## Safety and local procedures
+
+This curriculum does not replace machine-specific training, supervision, ventilation rules, approved-material lists, fire-watch procedures, or local emergency practices. Students should operate equipment only after the responsible teacher has provided and documented the required instruction.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Strongly relevant to **TIJ1O Exploring Technologies**, **TDJ2O Technological Design**, and **TMJ2O Manufacturing Technology**. Measurement, joinery, fixtures, and material use can support **TCJ2O**; enclosure and electronics contexts can support **TEJ2O**; and tool-organization or service contexts can support selected **TTJ2O** applications.
+
+Senior applications may fit **TDJ3M/TDJ4M**, **TDJ3O/TDJ4O**, and relevant **TMJ3M/TMJ4M**, **TMJ3C/TMJ4C**, or **TMJ3E/TMJ4E** projects when the actual lesson addresses CAD/CAM, manufacturing processes, precision, fixtures, or assemblies.
+:::
+
+Start with [Name + Logo: Engrave and Cut](01-name-logo.qmd), or [browse the complete fabrication library](../../teaching-materials/laser-cutting/index.qmd).

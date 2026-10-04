@@ -1,0 +1,46 @@
+---
+title: "Prototype, Evaluate & Iterate | Test a Technology Design"
+description: "Plan a purposeful prototype, gather evidence, evaluate a technological solution and turn findings into the next design iteration."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 3
+execute:
+  enabled: false
+---
+
+## Core idea
+
+A prototype answers a question. It does not need to look finished, and it should not consume more time or material than the question requires.
+
+## Choose the question first
+
+Examples:
+
+- Is the text readable at the intended distance?
+- Will the stand resist tipping when the desk is bumped?
+- Does a measured tool fit with enough clearance for one-hand removal?
+- Does the interface flow make sense without explanation?
+- Is a tab-and-slot joint loose, sliding, snug, or too tight on the actual material?
+
+Choose a prototype type that produces evidence: a paper interface, cardboard form study, small material coupon, single joint, partial assembly, digital mock-up, or full working model.
+
+## Plan and test
+
+1. Name the requirement or uncertainty being tested.
+2. Define what success would look like.
+3. Record dimensions, settings, material, and version.
+4. Test with the intended user or realistic conditions.
+5. Separate observations from explanations.
+6. Decide what to keep, change, or test next.
+
+## Evaluate the design, not the student
+
+Evaluation compares evidence with the need, requirements, and restrictions. A failed test can be a successful learning result when it identifies the next useful change.
+
+End with a precise next-version statement: **“In version 2, I will change ___ because the test showed ___.”**
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Useful across **TIJ1O**, **TDJ**, **TMJ**, **TCJ**, **TEJ**, and **TTJ** projects where students plan prototypes, test safely, interpret evidence, evaluate performance, and improve a technological solution.
+:::
+
+Continue to [Digital Design & Communication](../02-digital-design/index.qmd), then apply the same cycle to [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd) or [3D Printing](../04-3d-printing/index.qmd).

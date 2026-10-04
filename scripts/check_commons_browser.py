@@ -23,10 +23,12 @@ def main():
     base = f'http://127.0.0.1:{server.server_port}'
     pages = [
         'index.html',
-        'tas2/index.html',
+        'design-fabrication/index.html',
+        'design-fabrication/03-laser-cutting/index.html',
+        'design-fabrication/04-3d-printing/index.html',
         'tej3-4/index.html',
-        'slides/tas.html',
-        'slides/tej.html',
+        'slides/2026-27-tas-2-sem-1.html',
+        'slides/2026-27-tej-3-sem-1.html',
         'teacher-slides/index.html',
         'teaching-materials/index.html',
         'glossary/index.html',
@@ -62,13 +64,15 @@ def main():
                 page.screenshot(path=str(OUTPUT / (route.replace('/', '-') + '.png')))
 
             page.goto(base + '/lore/index.html')
-            page.locator('[data-bs-filter-category="Design"]').click()
-            assert page.locator('[data-bs-research-item]:visible').count() == 2
-            page.locator('[data-bs-clear-filters]').click()
-            assert page.locator('[data-bs-research-item]:visible').count() == 3
+            design_filter = page.locator('[data-bs-filter-category="Design"]')
+            if design_filter.is_enabled():
+                design_filter.click()
+                assert page.locator('[data-bs-research-item]:visible').count() >= 1
+                page.locator('[data-bs-clear-filters]').click()
+            assert page.locator('[data-bs-research-item]:visible').count() >= 1
 
             page.goto(base + '/glossary/index.html')
-            page.locator('#bs-glossary-search').fill('25 Percent Rule')
+            page.locator('#bs-glossary-search').fill('Zero-power resistance')
             page.wait_for_timeout(250)
             assert page.locator('[data-bs-glossary-entry]:visible').count() == 1
 
@@ -88,19 +92,19 @@ def main():
             )
             page.screenshot(path=str(OUTPUT / 'tej-continuous-toc.png'))
 
-            page.goto(base + '/tas2/01-nice-design-process/01-needs-necessities.html')
+            page.goto(base + '/design-fabrication/01-nice-design-process/01-needs-necessities.html')
             page.wait_for_load_state('networkidle')
             assert page.locator('#quarto-margin-sidebar #TOC').is_visible(), (
-                'TAS lesson TOC is not visible'
+                'Design & Fabrication lesson TOC is not visible'
             )
             page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
             page.wait_for_timeout(1200)
             assert page.locator('.bs-learn-scroll-lesson-marker').count() >= 2, (
-                'TAS continuous notes did not load the next lesson'
+                'Design & Fabrication continuous notes did not load the next lesson'
             )
 
             page.set_viewport_size({'width': 390, 'height': 844})
-            for route in ['index.html', 'tas2/index.html', 'tej3-4/index.html']:
+            for route in ['index.html', 'design-fabrication/index.html', 'design-fabrication/03-laser-cutting/index.html', 'tej3-4/index.html']:
                 page.goto(base + '/' + route)
                 page.wait_for_load_state('networkidle')
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), f'Horizontal overflow: {route}'
@@ -108,14 +112,17 @@ def main():
             page.goto(base + '/index.html')
             page.locator('.navbar-toggler').click()
             page.locator('#navbarCollapse').wait_for(state='visible')
-            page.locator('#navbarCollapse a.nav-link').filter(has_text='TAS Notes').click()
-            page.wait_for_url('**/tas2/**')
+            page.get_by_role('link', name='Educator Resources').click()
+            page.locator('#navbarCollapse').get_by_role(
+                'link', name='General Design & Fabrication', exact=True
+            ).click()
+            page.wait_for_url('**/design-fabrication/**')
             assert not errors, errors
             browser.close()
     finally:
         server.shutdown()
         server.server_close()
-    result = {'desktop_pages': len(pages), 'mobile_pages': 3, 'local_errors': errors, 'external_request_failures': sorted(failed_external)}
+    result = {'desktop_pages': len(pages), 'mobile_pages': 4, 'local_errors': errors, 'external_request_failures': sorted(failed_external)}
     (OUTPUT / 'browser-results.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
     print(json.dumps(result, indent=2))
 

@@ -1,0 +1,35 @@
+---
+title: "Additive Manufacturing & CAD | Model with Design Intent"
+description: "Introduce additive manufacturing and create editable 3D CAD models using sketches, constraints, dimensions, features and design intent."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Additive manufacturing
+
+Unlike subtractive processes that remove material or forming processes that reshape it, additive manufacturing creates a part by depositing or joining material layer by layer. The digital model must become a printable toolpath, so model, slicer, machine, material, and orientation all influence the result.
+
+## Model with intent
+
+Begin from a measured need. Use constrained sketches, exact dimensions, and named parameters where the CAD tool supports them. Build features in a sequence another person can understand and revise.
+
+Common operations include extrude, revolve, hole, fillet, chamfer, pattern, mirror, shell, and Boolean combine. Use each because it describes the intended geometry—not merely because it produces the visible shape once.
+
+## First modelling task
+
+Model a small cable guide or labelled spacer with controlled width, height, hole diameter, wall thickness, and edge treatment. Change one parameter and confirm the model updates predictably. Export an appropriate mesh for slicing while retaining the editable source model.
+
+## Model checks
+
+- Is the body watertight and intended as one part or several?
+- Are walls and small features plausible for the selected process?
+- Can critical dimensions be traced to a measurement or requirement?
+- Is the part oriented in CAD for clarity, even if print orientation changes later?
+- Is the editable source saved alongside the exported manufacturing file?
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Supports **TDJ2O**, **TMJ2O**, **TIJ1O**, **TEJ2O**, and senior design/manufacturing learning involving CAD, geometric modelling, design communication, manufacturing preparation, and iteration.
+:::
+
+Next: [Slicing, Orientation & Supports](02-slicing-orientation.qmd).

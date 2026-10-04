@@ -1,0 +1,38 @@
+---
+title: "Measure + Place | Calipers and Exact Geometry for Laser Cutting"
+description: "Design a simple measured holder using calipers, exact circles, holes, spacing, alignment, duplication, arrays and margins."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Design brief
+
+Create a simple holder for measured classroom objects such as markers, pencils, screwdrivers, drill bits, or small electronics tools. The openings must come from real measurements, not a generic file or guessed diameter.
+:::
+
+## Measure the object
+
+Use calipers correctly and record units. Measure more than one example when nominally identical objects may vary. Identify the controlling dimension: outside diameter, widest body, collar, taper, handle shape, or removal clearance.
+
+## Build the layout
+
+1. Create one opening from an exact measured dimension.
+2. Decide what clearance the task requires; do not silently treat a nominal measurement as a finished fit.
+3. Duplicate the opening into a controlled row or array.
+4. Set centre-to-centre spacing and edge margins numerically.
+5. Align labels and openings consistently.
+6. Check that the remaining material between openings is strong enough for the intended use.
+
+Use [circles, holes, slots, rulers, and spacing templates](../../teaching-materials/laser-cutting/?type=core-geometry#library) as editable references. The source geometry is a starting point; the student's measured object determines the final design.
+
+## Evidence
+
+Submit a measurement table, dimensioned layout, fabrication file, fit observation, and one revision. A visually even layout is not enough if tools bind, fall through, or cannot be removed easily.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Useful for **TIJ1O**, **TMJ2O**, **TDJ2O**, **TCJ2O**, **TEJ2O**, and **TTJ2O** contexts involving measurement, precision, layout, repeated geometry, tool organization, and prototype evaluation.
+:::
+
+Next: learn why the measured opening and the cut result can differ in [Material Fit + Calibration](04-material-fit-calibration.qmd).

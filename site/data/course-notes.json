@@ -2,24 +2,56 @@
   "schema_version": 1,
   "courses": [
     {
-      "id": "tas",
-      "title": "TAS Notes",
+      "id": "design-fabrication",
+      "title": "General Design & Fabrication",
       "units": [
         {
-          "id": "tas-nice",
+          "id": "design-nice",
           "order": 1,
           "title": "1. N.I.C.E. Design Process",
           "lessons": [
-            {
-              "order": 1,
-              "title": "Needs & Necessities",
-              "source": "tas2/01-nice-design-process/01-needs-necessities.qmd"
-            },
-            {
-              "order": 2,
-              "title": "Investigate & Inquire",
-              "source": "tas2/01-nice-design-process/02-investigate-inquire.qmd"
-            }
+            {"order": 1, "title": "Needs & Necessities", "source": "design-fabrication/01-nice-design-process/01-needs-necessities.qmd"},
+            {"order": 2, "title": "Investigate & Inquire", "source": "design-fabrication/01-nice-design-process/02-investigate-inquire.qmd"},
+            {"order": 3, "title": "Create & Communicate", "source": "design-fabrication/01-nice-design-process/03-create-communicate.qmd"},
+            {"order": 4, "title": "Prototype, Evaluate & Iterate", "source": "design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.qmd"}
+          ]
+        },
+        {
+          "id": "design-digital",
+          "order": 2,
+          "title": "2. Digital Design & Communication",
+          "lessons": [
+            {"order": 1, "title": "Raster, Vector & SVG", "source": "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"},
+            {"order": 2, "title": "Vector Geometry & Exact Construction", "source": "design-fabrication/02-digital-design/02-vector-geometry.qmd"},
+            {"order": 3, "title": "Logos, Lettermarks & Negative Space", "source": "design-fabrication/02-digital-design/03-logos-lettermarks.qmd"},
+            {"order": 4, "title": "Layout, Typography & Colour", "source": "design-fabrication/02-digital-design/04-layout-typography-colour.qmd"},
+            {"order": 5, "title": "Animation, UI/UX & Interface Prototypes", "source": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"}
+          ]
+        },
+        {
+          "id": "design-laser",
+          "order": 3,
+          "title": "3. Laser Cutting & 2D Fabrication",
+          "lessons": [
+            {"order": 1, "title": "Name + Logo: Engrave and Cut", "source": "design-fabrication/03-laser-cutting/01-name-logo.qmd"},
+            {"order": 2, "title": "Make It Stand", "source": "design-fabrication/03-laser-cutting/02-make-it-stand.qmd"},
+            {"order": 3, "title": "Measure + Place", "source": "design-fabrication/03-laser-cutting/03-measure-place.qmd"},
+            {"order": 4, "title": "Material Fit + Calibration", "source": "design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd"},
+            {"order": 5, "title": "Assemblies + Hybrid Fabrication", "source": "design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd"},
+            {"order": 6, "title": "Tool Holder", "source": "design-fabrication/03-laser-cutting/06-tool-holder.qmd"},
+            {"order": 7, "title": "Wall + Bench Tool Module", "source": "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd"},
+            {"order": 8, "title": "Design & Fabrication Capstone", "source": "design-fabrication/03-laser-cutting/08-capstone.qmd"}
+          ]
+        },
+        {
+          "id": "design-additive",
+          "order": 4,
+          "title": "4. 3D Printing & Additive Manufacturing",
+          "lessons": [
+            {"order": 1, "title": "Additive Manufacturing & CAD", "source": "design-fabrication/04-3d-printing/01-additive-cad.qmd"},
+            {"order": 2, "title": "Slicing, Orientation & Supports", "source": "design-fabrication/04-3d-printing/02-slicing-orientation.qmd"},
+            {"order": 3, "title": "Tolerances & Functional Parts", "source": "design-fabrication/04-3d-printing/03-tolerances-functional-parts.qmd"},
+            {"order": 4, "title": "Functional-Part Design Challenge", "source": "design-fabrication/04-3d-printing/04-design-challenge.qmd"}
           ]
         }
       ]
@@ -33,36 +65,12 @@
           "order": 1,
           "title": "1. Number Systems",
           "lessons": [
-            {
-              "order": 1,
-              "title": "Significant Figures",
-              "source": "tej3-4/01-number-systems/01-significant-figures.qmd"
-            },
-            {
-              "order": 2,
-              "title": "Powers of 10",
-              "source": "tej3-4/01-number-systems/02-powers-of-10.qmd"
-            },
-            {
-              "order": 3,
-              "title": "Scientific Calculator",
-              "source": "tej3-4/01-number-systems/06-scientific-calculator.qmd"
-            },
-            {
-              "order": 4,
-              "title": "Scientific Notation",
-              "source": "tej3-4/01-number-systems/03-scientific-notation.qmd"
-            },
-            {
-              "order": 5,
-              "title": "Engineering Notation",
-              "source": "tej3-4/01-number-systems/04-engineering-notation.qmd"
-            },
-            {
-              "order": 6,
-              "title": "Metric Prefixes",
-              "source": "tej3-4/01-number-systems/05-metric-prefixes.qmd"
-            }
+            {"order": 1, "title": "Significant Figures", "source": "tej3-4/01-number-systems/01-significant-figures.qmd"},
+            {"order": 2, "title": "Powers of 10", "source": "tej3-4/01-number-systems/02-powers-of-10.qmd"},
+            {"order": 3, "title": "Scientific Calculator", "source": "tej3-4/01-number-systems/06-scientific-calculator.qmd"},
+            {"order": 4, "title": "Scientific Notation", "source": "tej3-4/01-number-systems/03-scientific-notation.qmd"},
+            {"order": 5, "title": "Engineering Notation", "source": "tej3-4/01-number-systems/04-engineering-notation.qmd"},
+            {"order": 6, "title": "Metric Prefixes", "source": "tej3-4/01-number-systems/05-metric-prefixes.qmd"}
           ]
         },
         {
@@ -70,26 +78,10 @@
           "order": 2,
           "title": "2. Basic Electronics",
           "lessons": [
-            {
-              "order": 1,
-              "title": "Charge, Voltage & Current",
-              "source": "tej3-4/02-basic-electronics/01-charge-voltage-current.qmd"
-            },
-            {
-              "order": 2,
-              "title": "Closed, Open & Short Circuits",
-              "source": "tej3-4/02-basic-electronics/02-circuits-opens-shorts.qmd"
-            },
-            {
-              "order": 3,
-              "title": "Ohm's Law",
-              "source": "tej3-4/02-basic-electronics/03-ohms-law.qmd"
-            },
-            {
-              "order": 4,
-              "title": "Power & Energy",
-              "source": "tej3-4/02-basic-electronics/04-power-energy.qmd"
-            }
+            {"order": 1, "title": "Charge, Voltage & Current", "source": "tej3-4/02-basic-electronics/01-charge-voltage-current.qmd"},
+            {"order": 2, "title": "Closed, Open & Short Circuits", "source": "tej3-4/02-basic-electronics/02-circuits-opens-shorts.qmd"},
+            {"order": 3, "title": "Ohm's Law", "source": "tej3-4/02-basic-electronics/03-ohms-law.qmd"},
+            {"order": 4, "title": "Power & Energy", "source": "tej3-4/02-basic-electronics/04-power-energy.qmd"}
           ]
         }
       ]

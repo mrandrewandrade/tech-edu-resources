@@ -1,0 +1,41 @@
+---
+title: "Laser Cutter Calibration | Material Thickness, Kerf & Fit Tests"
+description: "Teach actual plywood thickness, SVG dimension checks, laser kerf, inside and outside dimensions, and loose, sliding, snug and press fits."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Nominal is not actual
+
+Plywood sold as 1/4 inch may not measure 6.35 mm. Sheet variation, glue layers, moisture, focus, power, speed, material batch, and machine condition affect the result. Measure the actual sheet with calipers in several places and record the range.
+
+## Kerf changes parts and holes differently
+
+The laser removes a band of material. With a path placed on the intended boundary, an outside part usually finishes smaller while an inside opening usually finishes larger. The exact change must be tested on the local machine and material rather than copied from a universal number.
+
+## Classroom workflow
+
+```text
+measure
+test
+choose fit
+modify
+cut
+evaluate
+```
+
+1. Verify a known SVG dimension before cutting.
+2. Cut a dimension coupon and compare drawing dimensions with finished dimensions.
+3. Cut a tab-and-slot or thickness gauge across a small range.
+4. Label results and test with the actual material or mating part.
+5. Choose a fit for the function: loose, sliding, snug, or press.
+6. Record stock, machine settings, selected dimension, result, and next adjustment.
+
+[Open the calibration library](../../teaching-materials/laser-cutting/?type=calibration#library) for dimension sheets, kerf tests, fit series, hole tests, and material-thickness tools.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Strongly relevant to **TMJ2O Manufacturing Technology**, **TDJ2O**, and **TIJ1O**, with applications in **TCJ2O**, **TEJ2O**, and senior manufacturing/design courses involving measurement, tolerance, process control, quality, jigs, fixtures, and CAD/CAM.
+:::
+
+Next: use calibrated choices in [Assemblies + Hybrid Fabrication](05-assemblies-hybrid-fabrication.qmd).

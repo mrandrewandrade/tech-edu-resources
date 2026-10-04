@@ -1,0 +1,105 @@
+---
+title: "General Design & Fabrication"
+subtitle: "Design ideas, communicate them, fabricate them, test them, and improve them."
+description: "Free General Design & Fabrication lessons for Ontario Technological Education, including TIJ1O, TDJ, TMJ, TTJ, TCJ, TEJ and TGJ applications in design, prototyping and digital fabrication."
+page-layout: full
+toc: false
+format:
+  html:
+    title-block-style: plain
+    body-classes: "ter-design-fabrication bs-title-eyebrow"
+execute:
+  enabled: false
+---
+
+::: {.ter-curriculum-hero}
+::: {.ter-curriculum-kicker}
+Ontario Technological Education · Reusable curriculum
+:::
+
+This open pathway helps students move from a real need to a communicated idea, a measured prototype, and an improved fabricated result. It connects the design process with digital design, laser cutting, 3D printing, manufacturing, and classroom projects without tying the learning to one course timetable.
+
+<ol class="ter-design-cycle" aria-label="Design and fabrication learning cycle">
+  <li>Design</li>
+  <li>Communicate</li>
+  <li>Fabricate</li>
+  <li>Test</li>
+  <li>Iterate</li>
+</ol>
+:::
+
+## Learning pathway
+
+<div class="ter-path-grid">
+  <article class="ter-path-card">
+    <p class="ter-path-number">01 · Start here</p>
+    <h2>N.I.C.E. Design Process</h2>
+    <p>Understand the situation, distinguish necessities from nice-to-haves, investigate existing solutions, generate alternatives, communicate a concept, prototype, evaluate, and begin the next iteration.</p>
+    <p class="ter-path-action"><a href="01-nice-design-process/index.qmd">Learn the design process</a></p>
+  </article>
+  <article class="ter-path-card">
+    <p class="ter-path-number">02 · Communicate</p>
+    <h2>Digital Design &amp; Communication</h2>
+    <p>Build visual literacy through raster and vector graphics, SVG, paths, exact geometry, logos, typography, layout, animation, user flows, and interface prototypes.</p>
+    <p class="ter-path-action"><a href="02-digital-design/index.qmd">Build digital design skills</a></p>
+  </article>
+  <article class="ter-path-card">
+    <p class="ter-path-number">03 · Fabricate in 2D</p>
+    <h2>Laser Cutting &amp; 2D Fabrication</h2>
+    <p>Progress from a first engraved plaque to calibrated fits, assemblies, measured tool holders, removable wall-and-bench modules, and an independent capstone.</p>
+    <p class="ter-path-action"><a href="03-laser-cutting/index.qmd">Follow the laser-cutting curriculum</a></p>
+  </article>
+  <article class="ter-path-card">
+    <p class="ter-path-number">04 · Fabricate in 3D</p>
+    <h2>3D Printing &amp; Additive Manufacturing</h2>
+    <p>Learn CAD, slicing, orientation, supports, tolerances, fasteners, functional parts, assemblies, repair parts, and evidence-based iteration.</p>
+    <p class="ter-path-action"><a href="04-3d-printing/index.qmd">Explore additive manufacturing</a></p>
+  </article>
+  <article class="ter-path-card ter-path-card--planned">
+    <p class="ter-status">Planned · 05</p>
+    <h2>CNC &amp; Digital Machining</h2>
+    <p>A future pathway for CAM, work coordinates, toolpaths, workholding, end mills, pockets, profiles, and safe machine-specific practice.</p>
+    <p class="ter-path-action"><a href="05-cnc-digital-machining/index.qmd">View the planned scope</a></p>
+  </article>
+  <article class="ter-path-card ter-path-card--planned">
+    <p class="ter-status">Planned · 06</p>
+    <h2>Textiles &amp; Soft Goods</h2>
+    <p>A future pathway for patterns, seam allowance, sewing, fasteners, embroidery, heat transfer, wearables, and soft-goods prototyping.</p>
+    <p class="ter-path-action"><a href="06-textiles-soft-goods/index.qmd">View the planned scope</a></p>
+  </article>
+  <article class="ter-path-card ter-path-card--planned">
+    <p class="ter-status">Planned · 07</p>
+    <h2>Other Fabrication Methods</h2>
+    <p>Intentional placeholders for vinyl cutting, plasma cutting, sheet metal, forming, molding, casting, and composites as equipment and instruction become available.</p>
+    <p class="ter-path-action"><a href="07-other-fabrication/index.qmd">View future methods</a></p>
+  </article>
+</div>
+
+## TIJ1O Exploring Technologies and reusable Ontario technology resources
+
+These lessons are used in TAS / Exploring Technologies and can support Ontario secondary school technology programs in different ways. Teachers can use the whole sequence or select a design process, communication, measurement, or fabrication lesson that fits a local project and available equipment.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** The complete pathway is especially useful for **TIJ1O Exploring Technologies**. Individual units transfer to **TDJ2O Technological Design**, **TMJ2O Manufacturing Technology**, **TGJ2O Communications Technology**, **TEJ2O Computer Technology**, **TCJ2O Construction Technology**, **THJ2O Green Industries**, and **TTJ2O Transportation Technology** where the learning genuinely involves design, measurement, prototyping, communication, or fabrication. Selected lessons can also support senior TDJ, TMJ, TGJ, TEJ, TCJ, and TTJ courses.
+:::
+
+## Resource collections
+
+- [Use reusable presentations in General Slides](../teacher-slides/index.qmd).
+- [Find assignments, worksheets, handouts, and fabrication files in General Materials](../teaching-materials/index.qmd).
+- [Browse the laser fabrication asset library](../teaching-materials/laser-cutting/index.qmd) for calibration files, editable geometry, stands, joinery, tool holders, and shop-organization starters.
+- [Open TEJ Notes](../tej3-4/index.qmd) for reusable electronics and computer-engineering concepts.
+
+```{=html}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "General Design & Fabrication",
+  "description": "Open lessons for design process, digital design, laser cutting, 3D printing, prototyping and digital fabrication in Ontario Technological Education.",
+  "learningResourceType": "Curriculum",
+  "educationalUse": ["instruction", "project-based learning", "teacher planning"],
+  "inLanguage": "en-CA"
+}
+</script>
+```

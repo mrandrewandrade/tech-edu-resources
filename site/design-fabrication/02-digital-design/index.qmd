@@ -1,0 +1,37 @@
+---
+title: "Digital Design & Communication | Vector Graphics, Logos, UI/UX & Animation"
+description: "Reusable Ontario technology lessons for raster and vector graphics, SVG, exact geometry, logo design, typography, layout, animation and UI/UX prototyping."
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
+execute:
+  enabled: false
+---
+
+Digital design is both communication and preparation for fabrication. Students learn how images are represented, construct clean vector geometry, communicate identity and hierarchy, and test interfaces before those skills become cut lines, engraved artwork, printed parts, or screen-based prototypes.
+
+## Learning sequence
+
+<ol class="ter-lesson-sequence">
+  <li><a href="01-raster-vector-svg.qmd">Raster, Vector &amp; SVG</a> — pixels, resolution, paths, fill, stroke, scale, and file choices.</li>
+  <li><a href="02-vector-geometry.qmd">Vector Geometry &amp; Exact Construction</a> — shapes, nodes, Boolean operations, alignment, duplication, and dimensions.</li>
+  <li><a href="03-logos-lettermarks.qmd">Logos, Lettermarks &amp; Negative Space</a> — identity, simplification, typography, and one-colour testing.</li>
+  <li><a href="04-layout-typography-colour.qmd">Layout, Typography &amp; Colour</a> — hierarchy, spacing, contrast, readable type, and intentional palettes.</li>
+  <li><a href="05-animation-ui-ux.qmd">Animation, UI/UX &amp; Interface Prototypes</a> — user needs, flows, states, feedback, websites, apps, and motion.</li>
+</ol>
+
+## Readiness for fabrication
+
+Before moving into laser cutting, students should be able to distinguish raster engraving from vector cutting, verify document units, construct rather than trace simple geometry, remove accidental overlaps, and check a known dimension after export.
+
+::: {.ter-project-brief}
+### Suggested bridge project
+
+Create a name-and-logo plaque as a communication artifact first. Establish a clear rectangle, legible name, simple lettermark, and intentional spacing. Then carry the same SVG into the first laser-cutting lesson to engrave the artwork and cut the boundary.
+:::
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology**, **TDJ2O Technological Design**, and **TIJ1O Exploring Technologies**. Individual lessons support senior communications and technological-design courses involving graphic communication, digital imagery, animation, web design, interactive media, CAD, and design documentation.
+:::
+
+Next: [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd).

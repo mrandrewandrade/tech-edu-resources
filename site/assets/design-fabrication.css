@@ -1,0 +1,206 @@
+/* General Design & Fabrication curriculum */
+
+.ter-design-fabrication .quarto-title-block,
+.ter-design-fabrication main.content {
+  max-width: 1180px;
+}
+
+.ter-design-fabrication .ter-curriculum-hero {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(2rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--bs-border);
+}
+
+.ter-design-fabrication .ter-curriculum-hero .lead {
+  max-width: 760px;
+  margin: 0;
+  color: var(--bs-text-secondary);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.55;
+}
+
+.ter-curriculum-kicker,
+.ter-path-number,
+.ter-status {
+  color: var(--bs-copper-dark);
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.ter-design-cycle {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.ter-design-cycle li {
+  position: relative;
+  padding: 1rem 0.8rem;
+  background: var(--bs-surface);
+  color: var(--bs-navy-dark);
+  font-weight: 720;
+  text-align: center;
+}
+
+.ter-design-cycle li + li {
+  border-left: 1px solid var(--bs-border);
+}
+
+.ter-path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.ter-path-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: clamp(1.25rem, 2.5vw, 1.8rem);
+  border: 1px solid var(--bs-border);
+  border-radius: 9px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-path-card h2,
+.ter-path-card h3 {
+  margin: 0.35rem 0 0.7rem;
+  color: var(--bs-navy-dark);
+  line-height: 1.18;
+}
+
+.ter-path-card p:not(.ter-path-number):not(.ter-status) {
+  color: var(--bs-text-secondary);
+  line-height: 1.58;
+}
+
+.ter-path-card .ter-path-action {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--bs-border);
+  font-weight: 720;
+}
+
+.ter-path-card .ter-path-action a {
+  text-decoration: none;
+}
+
+.ter-path-card .ter-path-action a::after {
+  content: " →";
+}
+
+.ter-path-card--planned {
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.ter-curriculum-relevance {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--bs-copper-dark);
+  background: color-mix(in srgb, var(--bs-ivory) 60%, var(--bs-surface));
+  color: var(--bs-text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.ter-curriculum-relevance > :last-child {
+  margin-bottom: 0;
+}
+
+.ter-lesson-sequence {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.2rem 0 2rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: lesson;
+}
+
+.ter-lesson-sequence li {
+  counter-increment: lesson;
+  padding: 1rem 1rem 1rem 3.6rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 7px;
+  background: var(--bs-surface);
+}
+
+.ter-lesson-sequence li::before {
+  content: counter(lesson, decimal-leading-zero);
+  float: left;
+  margin-left: -2.7rem;
+  color: var(--bs-copper-dark);
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-weight: 700;
+}
+
+.ter-lesson-sequence a {
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.ter-project-brief {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 7px;
+  background: var(--bs-surface);
+}
+
+.ter-project-brief > :first-child {
+  margin-top: 0;
+}
+
+.ter-project-brief > :last-child {
+  margin-bottom: 0;
+}
+
+.ter-two-state {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.ter-two-state > div {
+  padding: 1rem;
+  border-top: 3px solid var(--bs-copper-dark);
+  background: var(--bs-surface);
+}
+
+[data-bs-theme="dark"] .ter-design-fabrication .ter-path-card h2,
+[data-bs-theme="dark"] .ter-design-fabrication .ter-path-card h3,
+[data-bs-theme="dark"] .ter-design-cycle li {
+  color: var(--bs-text);
+}
+
+[data-bs-theme="dark"] .ter-curriculum-relevance {
+  background: color-mix(in srgb, var(--bs-surface) 88%, var(--bs-copper));
+}
+
+@media (max-width: 760px) {
+  .ter-path-grid,
+  .ter-two-state {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-design-cycle {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-design-cycle li + li {
+    border-top: 1px solid var(--bs-border);
+    border-left: 0;
+  }
+}

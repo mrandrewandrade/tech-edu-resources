@@ -1,46 +1,18 @@
 ---
-title: "1.1 Needs & Necessities"
-description: "Define the need before choosing the solution."
-sidebar: tas2
-body-classes: "bs-learn-article ter-notes-lesson"
-toc: true
-toc-depth: 3
+title: "Needs & Necessities has moved"
+description: "This resource has moved to the General Design & Fabrication curriculum."
+search: false
+sidebar: false
+toc: false
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0; url=../../design-fabrication/01-nice-design-process/01-needs-necessities.html">
+        <link rel="canonical" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/01-nice-design-process/01-needs-necessities.html">
+        <meta name="robots" content="noindex,follow">
 execute:
   enabled: false
 ---
 
-## Core idea
-
-Define the need before choosing the solution.
-
-**A need describes the function, not the product.**
-
-## Start with the situation
-
-- What is happening?
-- Who needs something?
-- What must it do?
-- Where will it be used?
-- What limits the solution?
-
-Separate facts from assumptions, interpretations, and opinions.
-
-## Needs
-
-- **Requirement:** something the design must include or accomplish.
-- **Restriction:** a limit the design must work within.
-- **Necessity, 10/10:** the design fails without it, or the restriction must be followed.
-- **Nice-to-have, 1-9/10:** improves the design, but is not required.
-
-## Class example
-
-We used the name-tag problem to identify requirements and restrictions, then separate necessities from nice-to-haves.
-
-- [Worked example: Name Tag Needs Assessment](https://docs.google.com/document/d/1E7Io8pd1ZfymHki94Jnn5-1JUzcM5wrODzr5hTEjoa8/edit?tab=t.0)
-- [Day 6 Needs & Necessities slides](https://docs.google.com/presentation/d/1TX9yMuScKH04QcF0TBzkMZTycqwOfSDpK0wZtJ-EbJQ/edit?usp=drivesdk)
-
-::: {.callout-tip}
-## Improve these notes
-
-Add one clear example or correction from class. Keep it short.
-:::
+This resource now lives in [General Design & Fabrication](../../design-fabrication/01-nice-design-process/01-needs-necessities.qmd).

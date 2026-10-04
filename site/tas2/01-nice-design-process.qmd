@@ -1,9 +1,18 @@
 ---
-title: "1. N.I.C.E. Design Process"
-description: "This unit now uses separate lesson pages."
+title: "N.I.C.E. Design Process has moved"
+description: "This resource has moved to the General Design & Fabrication curriculum."
+search: false
+sidebar: false
 toc: false
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0; url=../design-fabrication/01-nice-design-process/">
+        <link rel="canonical" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/01-nice-design-process/">
+        <meta name="robots" content="noindex,follow">
+execute:
+  enabled: false
 ---
 
-This unit now has a unit page and separate lesson notes.
-
-[Open 1. N.I.C.E. Design Process](01-nice-design-process/index.qmd)
+This resource now lives in [General Design & Fabrication](../design-fabrication/01-nice-design-process/index.qmd).

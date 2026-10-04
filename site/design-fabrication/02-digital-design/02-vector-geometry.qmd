@@ -1,0 +1,37 @@
+---
+title: "Vector Geometry & Exact Construction | Paths, Nodes and Boolean Operations"
+description: "Build precise SVG geometry with shapes, nodes, Boolean operations, alignment, duplication, arrays and exact dimensions."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Construct before tracing
+
+Simple manufactured geometry should usually be constructed from known dimensions. Rectangles, circles, polygons, slots, and repeated patterns are easier to verify when their geometry remains intentional.
+
+## Core operations
+
+- Set width, height, position, radius, and rotation numerically.
+- Align objects to each other or to the page.
+- Distribute repeated objects with controlled spacing.
+- Convert shapes to paths only when node-level editing is needed.
+- Use union, difference, intersection, and exclusion to combine shapes.
+- Simplify cautiously; a “simplify” command can change dimensions.
+- Inspect for doubled paths, open contours, tiny fragments, and accidental fills.
+
+## Dimension challenge
+
+Construct a 100 × 50 mm plate containing four 5 mm holes, each centred 10 mm from two adjacent edges. Duplicate and align the holes rather than positioning every one by eye. Export, reopen, and measure the plate and centre distances.
+
+Then create a rounded slot from two circles and a rectangle. Compare the constructed result with a freehand approximation and explain which one is easier to revise when the slot width changes.
+
+## Fabrication check
+
+Colour conventions differ between machines and software. Geometry and dimensions are the durable source of truth. Before fabrication, classify each path by intended operation—engrave, score, or cut—and confirm the receiving workflow.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Supports **TDJ2O**, **TGJ2O**, **TIJ1O**, and **TMJ2O** skills in geometric construction, visual communication, CAD/CAM preparation, measurement, and manufacturing documentation.
+:::
+
+Next: [Logos, Lettermarks & Negative Space](03-logos-lettermarks.qmd).
