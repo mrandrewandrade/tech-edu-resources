@@ -216,7 +216,7 @@
       .then(function (document) {
         assets = document.assets || [];
         root.querySelectorAll("[data-laser-total]").forEach(function (element) {
-          element.textContent = assets.length + " generated assets";
+          element.textContent = assets.length + " purpose-built generated assets";
         });
         populateFilters();
         readState();

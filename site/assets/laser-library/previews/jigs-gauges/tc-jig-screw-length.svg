@@ -1,27 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="284.4444" viewBox="0 0 180 80">
-<title>Screw length gauge</title>
-<desc>A labelled workshop measurement or setup starter template.</desc>
-<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;jigs-gauges&quot;,&quot;description&quot;:&quot;A labelled workshop measurement or setup starter template.&quot;,&quot;dimensional_tests&quot;:{},&quot;dimensions&quot;:{&quot;height&quot;:80,&quot;width&quot;:180},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/jigs-gauges/tc-jig-screw-length.svg&quot;,&quot;svg&quot;:&quot;generated/svg/jigs-gauges/tc-jig-screw-length.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-jig-screw-length&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Reference geometry only. Compare against certified measuring tools before relying on it for inspection.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;screw-length&quot;,&quot;tags&quot;:[&quot;gauge&quot;,&quot;jig&quot;,&quot;screw-length&quot;],&quot;title&quot;:&quot;Screw length gauge&quot;,&quot;tool_family&quot;:&quot;screw-length&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
-<rect x="0" y="0" width="180" height="80" fill="#fffdf8"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="248.8889" viewBox="0 0 180 70">
+<title>Screw length gauge 0–120 mm</title>
+<desc>A linear under-head datum and millimetre scale for measuring screw length—not screw diameter.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;jigs-gauges&quot;,&quot;description&quot;:&quot;A linear under-head datum and millimetre scale for measuring screw length\u2014not screw diameter.&quot;,&quot;dimensional_tests&quot;:{&quot;minor_division_mm&quot;:1,&quot;scale_length_mm&quot;:120},&quot;dimensions&quot;:{&quot;height&quot;:70,&quot;width&quot;:180},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/jigs-gauges/tc-jig-screw-length.svg&quot;,&quot;svg&quot;:&quot;generated/svg/jigs-gauges/tc-jig-screw-length.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-jig-screw-length&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Seat the underside of the screw head on the vertical zero datum and read the tip against the engraved scale.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;SCORE&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;measurement_axis&quot;:&quot;under-head-to-tip&quot;,&quot;minor_division_mm&quot;:1,&quot;scale_length_mm&quot;:120},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;screw-length&quot;,&quot;tags&quot;:[&quot;gauge&quot;,&quot;jig&quot;,&quot;length&quot;,&quot;screw&quot;,&quot;screw-length&quot;],&quot;title&quot;:&quot;Screw length gauge 0\u2013120 mm&quot;,&quot;tool_family&quot;:&quot;screw-length&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="180" height="70" fill="#fffdf8"/>
 <g id="cut" aria-label="CUT">
-<rect x="0.5" y="0.5" width="179" height="79" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
-<circle cx="20" cy="43" r="1.5" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
-<circle cx="43" cy="43" r="2" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
-<circle cx="66" cy="43" r="2.5" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
-<circle cx="89" cy="43" r="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
-<circle cx="112" cy="43" r="4" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
-<circle cx="135" cy="43" r="5" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
-<circle cx="158" cy="43" r="6" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="0.5" y="0.5" width="179" height="69" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+</g>
+<g id="score" aria-label="SCORE">
+<line x1="25" y1="18" x2="25" y2="58" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="25" y1="53" x2="145" y2="53" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="25" y1="53" x2="25" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="26" y1="53" x2="26" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="27" y1="53" x2="27" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="28" y1="53" x2="28" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="29" y1="53" x2="29" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="30" y1="53" x2="30" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="31" y1="53" x2="31" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="32" y1="53" x2="32" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="33" y1="53" x2="33" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="34" y1="53" x2="34" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="35" y1="53" x2="35" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="36" y1="53" x2="36" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="37" y1="53" x2="37" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="38" y1="53" x2="38" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="39" y1="53" x2="39" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="40" y1="53" x2="40" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="41" y1="53" x2="41" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="42" y1="53" x2="42" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="43" y1="53" x2="43" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="44" y1="53" x2="44" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="45" y1="53" x2="45" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="46" y1="53" x2="46" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="47" y1="53" x2="47" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="48" y1="53" x2="48" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="49" y1="53" x2="49" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="50" y1="53" x2="50" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="51" y1="53" x2="51" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="52" y1="53" x2="52" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="53" y1="53" x2="53" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="54" y1="53" x2="54" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="55" y1="53" x2="55" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="56" y1="53" x2="56" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="57" y1="53" x2="57" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="58" y1="53" x2="58" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="59" y1="53" x2="59" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="60" y1="53" x2="60" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="61" y1="53" x2="61" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="62" y1="53" x2="62" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="63" y1="53" x2="63" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="64" y1="53" x2="64" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="65" y1="53" x2="65" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="66" y1="53" x2="66" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="67" y1="53" x2="67" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="68" y1="53" x2="68" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="69" y1="53" x2="69" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="70" y1="53" x2="70" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="71" y1="53" x2="71" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="72" y1="53" x2="72" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="73" y1="53" x2="73" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="74" y1="53" x2="74" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="75" y1="53" x2="75" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="76" y1="53" x2="76" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="77" y1="53" x2="77" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="78" y1="53" x2="78" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="79" y1="53" x2="79" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="80" y1="53" x2="80" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="81" y1="53" x2="81" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="82" y1="53" x2="82" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="83" y1="53" x2="83" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="84" y1="53" x2="84" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="85" y1="53" x2="85" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="86" y1="53" x2="86" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="87" y1="53" x2="87" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="88" y1="53" x2="88" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="89" y1="53" x2="89" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="90" y1="53" x2="90" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="91" y1="53" x2="91" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="92" y1="53" x2="92" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="93" y1="53" x2="93" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="94" y1="53" x2="94" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="95" y1="53" x2="95" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="96" y1="53" x2="96" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="97" y1="53" x2="97" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="98" y1="53" x2="98" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="99" y1="53" x2="99" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="100" y1="53" x2="100" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="101" y1="53" x2="101" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="102" y1="53" x2="102" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="103" y1="53" x2="103" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="104" y1="53" x2="104" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="105" y1="53" x2="105" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="106" y1="53" x2="106" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="107" y1="53" x2="107" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="108" y1="53" x2="108" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="109" y1="53" x2="109" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="110" y1="53" x2="110" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="111" y1="53" x2="111" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="112" y1="53" x2="112" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="113" y1="53" x2="113" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="114" y1="53" x2="114" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="115" y1="53" x2="115" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="116" y1="53" x2="116" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="117" y1="53" x2="117" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="118" y1="53" x2="118" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="119" y1="53" x2="119" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="120" y1="53" x2="120" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="121" y1="53" x2="121" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="122" y1="53" x2="122" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="123" y1="53" x2="123" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="124" y1="53" x2="124" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="125" y1="53" x2="125" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="126" y1="53" x2="126" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="127" y1="53" x2="127" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="128" y1="53" x2="128" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="129" y1="53" x2="129" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="130" y1="53" x2="130" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="131" y1="53" x2="131" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="132" y1="53" x2="132" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="133" y1="53" x2="133" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="134" y1="53" x2="134" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="135" y1="53" x2="135" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="136" y1="53" x2="136" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="137" y1="53" x2="137" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="138" y1="53" x2="138" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="139" y1="53" x2="139" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="140" y1="53" x2="140" y2="48" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="141" y1="53" x2="141" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="142" y1="53" x2="142" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="143" y1="53" x2="143" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="144" y1="53" x2="144" y2="50.5" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="145" y1="53" x2="145" y2="45" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
 </g>
 <g id="engrave" aria-label="ENGRAVE">
-<text x="90" y="13" font-family="sans-serif" font-size="3.5" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">SCREW LENGTH GAUGE</text>
-<text x="20" y="67" font-family="sans-serif" font-size="2.3" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">3</text>
-<text x="43" y="67" font-family="sans-serif" font-size="2.3" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">4</text>
-<text x="66" y="67" font-family="sans-serif" font-size="2.3" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">5</text>
-<text x="89" y="67" font-family="sans-serif" font-size="2.3" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">6</text>
-<text x="112" y="67" font-family="sans-serif" font-size="2.3" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">8</text>
-<text x="135" y="67" font-family="sans-serif" font-size="2.3" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">10</text>
-<text x="158" y="67" font-family="sans-serif" font-size="2.3" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">12</text>
+<text x="90" y="9" font-family="sans-serif" font-size="3.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">SCREW LENGTH — UNDER HEAD TO TIP</text>
+<text x="23" y="17" font-family="sans-serif" font-size="2.2" text-anchor="end" fill="#000000" stroke="none" data-operation="ENGRAVE">HEAD DATUM</text>
+<text x="25" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">0</text>
+<text x="35" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">10</text>
+<text x="45" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">20</text>
+<text x="55" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">30</text>
+<text x="65" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">40</text>
+<text x="75" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">50</text>
+<text x="85" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">60</text>
+<text x="95" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">70</text>
+<text x="105" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">80</text>
+<text x="115" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">90</text>
+<text x="125" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">100</text>
+<text x="135" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">110</text>
+<text x="145" y="64" font-family="sans-serif" font-size="2.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">120</text>
+<text x="151" y="64" font-family="sans-serif" font-size="2.2" text-anchor="start" fill="#000000" stroke="none" data-operation="ENGRAVE">mm</text>
 </g>
 </svg>
