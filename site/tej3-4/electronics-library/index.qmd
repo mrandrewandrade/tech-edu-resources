@@ -1,0 +1,112 @@
+---
+title: "TEJ Electronics Library"
+description: "Searchable hardware modules, components, labs, projects, downloads, and restricted teaching references."
+sidebar: tej
+page-layout: full
+toc: true
+execute: {enabled: false}
+format:
+  html:
+    include-after-body:
+      - ../../includes/tej-electronics-script.html
+---
+
+::: {.tej-library-intro}
+::: {.tej-library-panel}
+## Start here
+
+This hub follows the authoritative TEJ hardware-module sequence. H01 is the first complete module package. Programming, Linux, and systems have planned curricular scope but remain **Later** for implementation.
+
+- [Formula and calculator centre](#formula-and-calculator-centre)
+- [Hardware modules](#hardware-modules)
+- [Component index](components/index.qmd)
+- [Lab index](labs/index.qmd)
+- [Project index](projects/index.qmd)
+:::
+
+::: {.tej-library-panel}
+## Access legend
+
+<span class="tej-badge required">Required</span>
+<span class="tej-badge">Optional Level 4</span>
+<span class="tej-badge restricted">Restricted</span>
+<span class="tej-badge later">Later</span>
+
+Restricted links require the appropriate school Google Drive access. No copyrighted textbook PDF is hosted on this public site.
+:::
+:::
+
+## Formula and calculator centre
+
+::: {.tej-download-grid}
+::: {.tej-download-card}
+### Electronics formula reference
+
+SI prefixes through measurement safety, with true mathematical subscripts and verified Casio fx-991ES PLUS C procedures.
+
+[Open accessible HTML](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Formula-Reference.html){target="_blank"}<br>
+[Download formula-reference PDF](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Formula-Reference.pdf){target="_blank"}<br>
+[View maintained QMD source](https://github.com/mrandrewandrade/assets/blob/master/electronics/reference/TEJ-Electronics-Formula-Reference.qmd){target="_blank"}
+:::
+
+::: {.tej-download-card}
+### Basic circuit calculations
+
+Ten questions: Q1 to Q5 required, Q6 to Q10 optional Level 4 evidence.
+
+[Download student worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf){target="_blank"}<br>
+[Teacher answer key, restricted](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit){target="_blank"}
+:::
+:::
+
+## Hardware modules
+
+<div class="tej-filter-row" aria-label="Filter hardware modules">
+  <label>Search <input type="search" data-tej-search placeholder="Try fuse, parallel, motor, or Tinkercad"></label>
+  <label>Status <select data-tej-status><option value="all">All statuses</option><option value="reviewed">Reviewed</option><option value="planned">Planned</option></select></label>
+  <label>Access <select data-tej-access><option value="all">All access</option><option value="public">Public</option><option value="restricted">Restricted</option></select></label>
+</div>
+
+<p data-tej-count aria-live="polite"></p>
+
+<div class="tej-module-grid" data-tej-catalogue>
+<article class="tej-module-card" data-tej-module data-status="reviewed" data-access="public" data-search="H01 safety lab fuse switch LED bench supply DMM USB power bank automotive fuse panel">
+<span class="tej-badge required">Required</span> <span class="tej-badge">Reviewed</span>
+<h3><a href="modules/h01-safety-lab-practice.qmd">H01 Safety and lab practice</a></h3>
+<p>Protected low-voltage circuit anatomy, GUESS calculation, meter placement, Tinkercad, physical build, troubleshooting, and reflection.</p>
+</article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H02 charge current voltage energy battery phone charger vehicle"><span class="tej-badge required">Required</span><h3>H02 Charge, current, voltage, energy</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H03 AC DC waveform frequency RMS alternator wall adapter"><span class="tej-badge required">Required</span><h3>H03 AC versus DC</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H04 symbols circuit anatomy flashlight USB fan schematic"><span class="tej-badge required">Required</span><h3>H04 Schematic symbols and circuit anatomy</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H05 multimeter DMM continuity resistance voltage current fuse battery"><span class="tej-badge required">Required</span><h3>H05 Multimeter fundamentals</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H06 resistance resistor colour code tolerance"><span class="tej-badge required">Required</span><h3>H06 Resistance and resistor identification</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H07 ohm law LED current accessory"><span class="tej-badge required">Required</span><h3>H07 Ohm's law</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H08 power energy gaming PC vehicle lamp"><span class="tej-badge required">Required</span><h3>H08 Power and energy</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H09 series circuits string lights"><span class="tej-badge required">Required</span><h3>H09 Series circuits</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H10 parallel branches household vehicle"><span class="tej-badge required">Required</span><h3>H10 Parallel circuits</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H11 series parallel Kirchhoff KCL KVL"><span class="tej-badge required">Required</span><h3>H11 Series-parallel and Kirchhoff</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H12 voltage current divider potentiometer LDR"><span class="tej-badge required">Required</span><h3>H12 Voltage and current dividers</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H13 Thevenin Norton maximum power"><span class="tej-badge">Optional Level 4</span><h3>H13 Thevenin, Norton, maximum power</h3><p>Planned extension.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H14 conductors protection fuse breaker wire"><span class="tej-badge required">Required</span><h3>H14 Conductors and protection</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H15 batteries sources power bank lead acid"><span class="tej-badge required">Required</span><h3>H15 Batteries and sources</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H16 faults troubleshooting open short"><span class="tej-badge required">Required</span><h3>H16 Faults and troubleshooting</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H17 magnetism electromagnetism speaker solenoid"><span class="tej-badge required">Required</span><h3>H17 Magnetism and electromagnetism</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H18 relay solenoid motor flyback"><span class="tej-badge required">Required</span><h3>H18 Relays, solenoids, and motors</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H19 capacitor RC response camera flash"><span class="tej-badge required">Required</span><h3>H19 Capacitors and RC response</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H20 inductor LR response ignition coil"><span class="tej-badge">Optional Level 4</span><h3>H20 Inductors and LR response</h3><p>Planned extension.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H21 diode LED polarity current limiting"><span class="tej-badge required">Required</span><h3>H21 Diodes and LEDs</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H22 rectifier power supply bridge regulator"><span class="tej-badge required">Required</span><h3>H22 Rectifiers and power supplies</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H23 transistor switch BJT MOSFET fan relay"><span class="tej-badge required">Required</span><h3>H23 Transistor as a switch</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H24 555 timer flasher monostable astable"><span class="tej-badge required">Required</span><h3>H24 555 timer</h3><p>Planned from the Hardware Modules tab.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H25 AC impedance resonance filters"><span class="tej-badge">Optional Level 4</span><h3>H25 AC impedance, resonance, and filters</h3><p>Planned extension.</p></article>
+<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H26 amplifier op amp sensor"><span class="tej-badge">Optional Level 4</span><h3>H26 Amplifiers and op-amps</h3><p>Planned extension.</p></article>
+</div>
+
+## Restricted references
+
+- [Grob's Basic Electronics, 12th edition folder, restricted](https://drive.google.com/drive/folders/1Q_uSqf8qoEsLPAmbxNJ1BLaKgJ1ga7x1){target="_blank"}
+- [Make: Electronics and related books, restricted](https://drive.google.com/drive/folders/15gMc6wnIanBA-gGAV90exV5UMWT4KlDf){target="_blank"}
+- [Open Circuits, restricted visual reference](https://drive.google.com/file/d/1nRmKUWh6R0IsVMxQbFk2x4d_9B0GY3_G/view){target="_blank"}
+- [All About Circuits textbook, open resource](https://www.allaboutcircuits.com/textbook/){target="_blank"}
+- [Ontario TEJ curriculum, open official PDF](https://www.edu.gov.on.ca/eng/curriculum/secondary/2009teched1112curr.pdf){target="_blank"}
+- [Casio fx-991ES PLUS manual, open official PDF](https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/004-en/f/fx-570_991ES_PLUS_EN.pdf){target="_blank"}

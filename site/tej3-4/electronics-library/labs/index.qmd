@@ -1,0 +1,17 @@
+---
+title: "TEJ Lab Index"
+description: "Search-ready hardware labs and Tinkercad activities."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+| Lab | Module | Mode | Time | Safety | Status |
+|:--|:--|:--|--:|:--|:--|
+| L01 Protected low-voltage circuit | H01 | Tinkercad then physical | 75 min | protected extra-low voltage | complete |
+| L02 Resistance measurement and V-I behaviour | H06/H07 | physical | 75 min | current-limited source | planned |
+| L03 Ohm's law verification | H07 | Tinkercad then physical | 75 min | low voltage only | planned |
+| L04 Series circuits and open faults | H09/H16 | Tinkercad and physical | 90 min | power off for resistance | planned |
+| L05 Parallel branches and faults | H10/H16 | Tinkercad and physical | 90 min | fused/current-limited | planned |
+
+[Download the H01 lab](https://mrandrewandrade.github.io/assets/H01_Safety_Lab_Practice_Lab.pdf){target="_blank"}

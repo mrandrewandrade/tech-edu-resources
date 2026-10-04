@@ -20,6 +20,8 @@ project:
     - assets/commons-lore.js
     - assets/teacher-slides.js
     - assets/teacher-slides.css
+    - assets/tej-electronics.js
+    - assets/tej-electronics.css
     - "assets/laser-cutting/**"
     - assets/bs-glossary-lookup.json
     - "assets/lore/**"
@@ -122,6 +124,17 @@ website:
               href: tej3-4/02-basic-electronics/03-ohms-law.qmd
             - text: "2.4 Power & Energy"
               href: tej3-4/02-basic-electronics/04-power-energy.qmd
+        - section: "Electronics Library"
+          href: tej3-4/electronics-library/index.qmd
+          contents:
+            - text: "H01 Safety & Lab Practice"
+              href: tej3-4/electronics-library/modules/h01-safety-lab-practice.qmd
+            - text: "Components"
+              href: tej3-4/electronics-library/components/index.qmd
+            - text: "Labs"
+              href: tej3-4/electronics-library/labs/index.qmd
+            - text: "Projects"
+              href: tej3-4/electronics-library/projects/index.qmd
   page-footer:
     left: |
       Website code: [AGPL 3.0](https://andrewandrade.ca/commons/licensing.html). Educational content: [CC BY-SA 4.0](https://andrewandrade.ca/commons/licensing.html).

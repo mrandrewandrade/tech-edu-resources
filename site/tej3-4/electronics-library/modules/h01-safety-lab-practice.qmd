@@ -1,0 +1,87 @@
+---
+title: "H01 Safety and Lab Practice"
+description: "Calculate, simulate, build, measure, troubleshoot, and reflect using a protected low-voltage circuit."
+sidebar: tej
+page-layout: full
+toc: true
+execute: {enabled: false}
+---
+
+<span class="tej-badge required">Required</span> <span class="tej-badge">Reviewed foundation module</span>
+
+## Learning route
+
+1. Inspect a USB power bank and automotive fuse-panel branch as real systems.
+2. Study a simplified blade-fuse cutaway.
+3. Identify source, conductors, control, protection, and load.
+4. Read the proper series schematic.
+5. Complete a GUESS current and power calculation.
+6. Enter the exact Casio sequence and preserve Ans.
+7. Verify meter placement and readings in Tinkercad.
+8. Build and measure the protected low-voltage circuit.
+9. Diagnose a teacher-approved open fault.
+10. Reflect on evidence, limits, and next steps.
+
+## Downloads
+
+::: {.tej-download-grid}
+::: {.tej-download-card}
+### Lesson slides
+
+[Open staged H01 slide source](https://github.com/mrandrewandrade/slides/blob/main/2026-27/semester-1/period-1/tej/future/h01-safety-lab-practice.qmd){target="_blank"}
+
+The deck is staged in Future and has not been promoted to Current.
+:::
+
+::: {.tej-download-card}
+### Student worksheet
+
+[Download student worksheet PDF](https://mrandrewandrade.github.io/assets/H01_Safety_Lab_Practice_Student_Worksheet.pdf){target="_blank"}<br>
+[View maintained source](https://github.com/mrandrewandrade/assets/blob/master/electronics/modules/H01-safety-lab-practice/H01_Safety_Lab_Practice_Student_Worksheet.qmd){target="_blank"}
+:::
+
+::: {.tej-download-card}
+### Tinkercad guide
+
+[Download Tinkercad verification guide](https://mrandrewandrade.github.io/assets/H01_Safety_Lab_Practice_Tinkercad_Guide.pdf){target="_blank"}
+:::
+
+::: {.tej-download-card}
+### Physical lab
+
+[Download lab handout](https://mrandrewandrade.github.io/assets/H01_Safety_Lab_Practice_Lab.pdf){target="_blank"}
+:::
+
+::: {.tej-download-card}
+### Schematics and formula reference
+
+[Download schematic SVG](https://mrandrewandrade.github.io/assets/H01_Safety_Lab_Practice_Schematic.svg){target="_blank"}<br>
+[Open formula reference](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Formula-Reference.html){target="_blank"}
+:::
+
+::: {.tej-download-card}
+### Teacher resources
+
+<span class="tej-badge restricted">Restricted</span>
+
+[Open teacher answer key in restricted Drive](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit){target="_blank"}<br>
+[Open Grob licensed reference folder](https://drive.google.com/drive/folders/1Q_uSqf8qoEsLPAmbxNJ1BLaKgJ1ga7x1){target="_blank"}
+:::
+:::
+
+## Safety boundary
+
+Use protected extra-low voltage, a current-limited source, correctly rated conductors and components, and teacher approval before energizing. Never connect classroom breadboards or meters to mains voltage. Never use resistance or continuity mode on an energized circuit.
+
+## Curriculum links
+
+- TEJ3M A1: professional practice and collaboration
+- TEJ3M A2: health, safety, and environmental responsibility
+- TEJ3M B1: foundational electronics concepts and components
+
+## References
+
+- Grob, *Basic Electronics*, 12th edition, Experiment 1-1 and Chapter 8, restricted school access
+- [Ontario Technological Education curriculum](https://www.edu.gov.on.ca/eng/curriculum/secondary/2009teched1112curr.pdf)
+- [All About Circuits textbook](https://www.allaboutcircuits.com/textbook/)
+- [Casio fx-991ES PLUS manual](https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/004-en/f/fx-570_991ES_PLUS_EN.pdf)

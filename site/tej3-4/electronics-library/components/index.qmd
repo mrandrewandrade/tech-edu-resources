@@ -1,0 +1,21 @@
+---
+title: "TEJ Component Index"
+description: "Component roles, modules, selection fields, and source boundaries."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+| Component | Role | Modules | Selection fields | Status |
+|:--|:--|:--|:--|:--|
+| Resistor | current limiting and division | H06-H12, H21-H24 | resistance, tolerance, power, package | indexed |
+| Fuse | overcurrent protection | H01, H14, H16 | current, voltage, speed, interrupt rating | H01 complete |
+| Switch | manual control | all modules | poles, throws, current, voltage, action | H01 complete |
+| LED | indication and light output | H01, H21 | colour, forward voltage, current, power | H01 complete |
+| Capacitor | storage, timing, filtering | H19, H22, H24 | capacitance, voltage, polarity, ESR | planned |
+| Diode | polarity, protection, rectification | H21, H22 | current, forward drop, reverse voltage, recovery | planned |
+| BJT or MOSFET | switching and amplification | H23, H26 | voltage, current, power, drive, pinout | planned |
+| Relay | isolated electromechanical switching | H18 | coil and contact ratings, form | planned |
+| Motor | electrical to mechanical conversion | H18, H23 | voltage, stall current, speed, torque | planned |
+
+Copyrighted cutaway artwork remains a restricted visual reference. Public pages use original diagrams or appropriately licensed open media.

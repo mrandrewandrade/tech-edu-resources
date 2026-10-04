@@ -1,0 +1,18 @@
+---
+title: "TEJ Project Index"
+description: "Project pathways indexed by context, components, equipment, difficulty, and safety."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+The project collection is intentionally **planned**. Programming, Linux, and systems implementations remain **Later**.
+
+| Project seed | Context | Components | Difficulty | Safety category | Status |
+|:--|:--|:--|:--|:--|:--|
+| Protected bicycle light | bicycle and transportation | fuse, switch, LED, resistor | introductory | protected extra-low voltage | H01 extension ready |
+| USB power monitor | computer and household | connector, sensor, display | intermediate | low-voltage USB | planned |
+| Vehicle temperature alarm | automotive | sensor, transistor, buzzer | intermediate | protected 12 V model | planned |
+| Accessible reminder device | household and accessibility | timer, LED, buzzer | intermediate | low-voltage battery | planned |
+
+Future project records will add stock, cost, supplier, substitutes, curriculum expectations, estimated time, source paths, and public or restricted access.

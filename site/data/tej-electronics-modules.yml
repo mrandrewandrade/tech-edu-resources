@@ -1,0 +1,135 @@
+modules:
+  - id: H01
+    topic: Safety and lab practice
+    status: reviewed
+    access: public
+    requirement: required
+    components: [fuse, switch, resistor, led]
+    equipment: [bench supply, DMM, breadboard]
+    context: [USB power bank, automotive fuse panel]
+    page: tej3-4/electronics-library/modules/h01-safety-lab-practice.qmd
+  - id: H02
+    topic: Charge, current, voltage, energy
+    status: planned
+    access: public
+    requirement: required
+  - id: H03
+    topic: AC versus DC
+    status: planned
+    access: public
+    requirement: required
+  - id: H04
+    topic: Schematic symbols and circuit anatomy
+    status: planned
+    access: public
+    requirement: required
+  - id: H05
+    topic: Multimeter fundamentals
+    status: planned
+    access: public
+    requirement: required
+  - id: H06
+    topic: Resistance and resistor identification
+    status: planned
+    access: public
+    requirement: required
+  - id: H07
+    topic: Ohm's law
+    status: planned
+    access: public
+    requirement: required
+  - id: H08
+    topic: Power and energy
+    status: planned
+    access: public
+    requirement: required
+  - id: H09
+    topic: Series circuits
+    status: planned
+    access: public
+    requirement: required
+  - id: H10
+    topic: Parallel circuits
+    status: planned
+    access: public
+    requirement: required
+  - id: H11
+    topic: Series-parallel and Kirchhoff
+    status: planned
+    access: public
+    requirement: required
+  - id: H12
+    topic: Voltage and current dividers
+    status: planned
+    access: public
+    requirement: required
+  - id: H13
+    topic: Thevenin, Norton, maximum power
+    status: planned
+    access: public
+    requirement: optional-level-4
+  - id: H14
+    topic: Conductors and protection
+    status: planned
+    access: public
+    requirement: required
+  - id: H15
+    topic: Batteries and sources
+    status: planned
+    access: public
+    requirement: required
+  - id: H16
+    topic: Faults and troubleshooting
+    status: planned
+    access: public
+    requirement: required
+  - id: H17
+    topic: Magnetism and electromagnetism
+    status: planned
+    access: public
+    requirement: required
+  - id: H18
+    topic: Relays, solenoids, and motors
+    status: planned
+    access: public
+    requirement: required
+  - id: H19
+    topic: Capacitors and RC response
+    status: planned
+    access: public
+    requirement: required
+  - id: H20
+    topic: Inductors and LR response
+    status: planned
+    access: public
+    requirement: optional-level-4
+  - id: H21
+    topic: Diodes and LEDs
+    status: planned
+    access: public
+    requirement: required
+  - id: H22
+    topic: Rectifiers and power supplies
+    status: planned
+    access: public
+    requirement: required
+  - id: H23
+    topic: Transistor as a switch
+    status: planned
+    access: public
+    requirement: required
+  - id: H24
+    topic: 555 timer
+    status: planned
+    access: public
+    requirement: required
+  - id: H25
+    topic: AC impedance, resonance, and filters
+    status: planned
+    access: public
+    requirement: optional-level-4
+  - id: H26
+    topic: Amplifiers and op-amps
+    status: planned
+    access: public
+    requirement: optional-level-4
