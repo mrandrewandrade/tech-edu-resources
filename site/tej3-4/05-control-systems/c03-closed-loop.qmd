@@ -1,0 +1,25 @@
+---
+title: "C03 Closed-Loop Feedback"
+description: "Use measured output and negative feedback to calculate and reduce error."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Closed-loop control measures output and compares it with the setpoint. Negative feedback applies a correcting action intended to reduce the error.
+
+$$e=r-y$$
+
+If a thermostat setpoint is $24.0^\circ\mathrm{C}$ and measured temperature is $21.5^\circ\mathrm{C}$, then $e=+2.5^\circ\mathrm{C}$. A heating controller should increase its command.
+
+## Response evidence
+
+Plot setpoint and measured output on the same time axis. Identify only features that the data support:
+
+- rise time
+- overshoot
+- steady-state error
+- cycling or oscillation
+- disturbance recovery
+
+Examples include thermostats, cruise control, regulated power supplies, and servo position systems.

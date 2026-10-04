@@ -124,6 +124,54 @@ website:
               href: tej3-4/02-basic-electronics/03-ohms-law.qmd
             - text: "2.4 Power & Energy"
               href: tej3-4/02-basic-electronics/04-power-energy.qmd
+        - section: "3. Digital Logic & Stable Inputs"
+          href: tej3-4/03-digital-logic-inputs/index.qmd
+          contents:
+            - text: "3.1 Digital Voltage Levels"
+              href: tej3-4/03-digital-logic-inputs/01-digital-levels.qmd
+            - text: "3.2 Switches & Floating Inputs"
+              href: tej3-4/03-digital-logic-inputs/02-switches-floating-inputs.qmd
+            - text: "3.3 External Pull-Downs"
+              href: tej3-4/03-digital-logic-inputs/03-pull-down-inputs.qmd
+            - text: "3.4 Pull-Ups & Active-Low Logic"
+              href: tej3-4/03-digital-logic-inputs/04-pull-up-active-low.qmd
+            - text: "3.5 Debouncing & Protection"
+              href: tej3-4/03-digital-logic-inputs/05-debounce-protection.qmd
+            - text: "3.6 Circuits Culminating Project"
+              href: tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.qmd
+        - section: "4. Microcontrollers"
+          href: tej3-4/04-microcontrollers/index.qmd
+          contents: []
+        - section: "5. Control Systems & CNC"
+          href: tej3-4/05-control-systems/index.qmd
+          contents:
+            - text: "C01 Control-System Anatomy"
+              href: tej3-4/05-control-systems/c01-control-system-anatomy.qmd
+            - text: "C02 Open-Loop Control"
+              href: tej3-4/05-control-systems/c02-open-loop.qmd
+            - text: "C03 Closed-Loop Feedback"
+              href: tej3-4/05-control-systems/c03-closed-loop.qmd
+            - text: "C04 On-Off & Hysteresis"
+              href: tej3-4/05-control-systems/c04-hysteresis.qmd
+            - text: "C05 Proportional Control"
+              href: tej3-4/05-control-systems/c05-proportional.qmd
+            - text: "C06 Integral, Derivative & PID"
+              href: tej3-4/05-control-systems/c06-pid.qmd
+            - text: "C07 State Machines"
+              href: tej3-4/05-control-systems/c07-state-machines.qmd
+            - text: "C08 Safety Controls & Interlocks"
+              href: tej3-4/05-control-systems/c08-safety-interlocks.qmd
+            - text: "C09 Motor & Motion Control"
+              href: tej3-4/05-control-systems/c09-motion-control.qmd
+            - text: "C10 CNC as a Control System"
+              href: tej3-4/05-control-systems/c10-cnc.qmd
+            - text: "C11 Culminating Project"
+              href: tej3-4/05-control-systems/c11-culminating-project.qmd
+        - section: "6. General Fabrication (Shared)"
+          href: teaching-materials/index.qmd
+          contents:
+            - text: "Laser Cutting"
+              href: teaching-materials/laser-cutting/index.qmd
         - section: "Electronics Library"
           href: tej3-4/electronics-library/index.qmd
           contents:

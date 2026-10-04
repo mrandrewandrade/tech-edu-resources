@@ -1,0 +1,26 @@
+---
+title: "C08 Safety Controls and Interlocks"
+description: "Model normally closed stops, guard interlocks, limits, faults, and fail-safe behaviour."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Safety controls should move the system toward a safe state when a stop is pressed, a guard opens, a limit is reached, or a healthy control wire breaks.
+
+Topics include normally closed stop circuits, emergency-stop principles, guard and door interlocks, limit switches, fault states, and fail-safe design.
+
+## Classroom model analysis
+
+Draw and explain these states:
+
+1. normal operation
+2. stop pressed
+3. guard open
+4. limit reached
+5. control wire broken
+6. reset requested while the unsafe condition remains
+
+::: {.callout-warning title="Industrial safety boundary"}
+Classroom models teach concepts. Certified industrial safety systems require formal risk assessment, approved components, validated architecture, documentation, and qualified supervision.
+:::

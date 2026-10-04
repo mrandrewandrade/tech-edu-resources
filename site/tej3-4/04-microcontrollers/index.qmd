@@ -1,0 +1,13 @@
+---
+title: "4. Microcontrollers"
+description: "The programming and GPIO strand begins after the stable-input circuits culminating project."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+This strand begins only after students complete digital voltage levels, pull resistors, active-low logic, debouncing, GPIO compatibility, and the circuits culminating project.
+
+Planned device pathways include Arduino-compatible boards, Raspberry Pi, micro:bit, and other available controllers. Every activity must identify the exact board, GPIO voltage, current limits, and protection requirements rather than assuming all devices behave alike.
+
+The first programming activity will reuse the same active-low switch circuit from the D01 module so students can separate hardware behaviour from code behaviour.

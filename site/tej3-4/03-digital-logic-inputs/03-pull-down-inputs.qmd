@@ -1,0 +1,28 @@
+---
+title: "3.3 External Pull-Down Resistors"
+description: "Use a resistor to establish a low state while an open switch disconnects the positive rail."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+A pull-down resistor connects the input weakly to ground. The input reads low while the switch is open. Closing the switch connects the input to $V_{CC}$ and produces a high state.
+
+![A switch connects a GPIO input to VCC while a resistor pulls the open input to ground.](/assets/tej/External_Pull_Down_Input.svg){fig-alt="A GPIO input is connected through a pull-down resistor to ground and through a normally open switch to VCC." width=90%}
+
+::: {.table-responsive}
+| Switch | Connection | Voltage | Logic | Active? |
+|:--|:--|:--|:--:|:--|
+| open | through $R_{PD}$ to ground | about $0\ \mathrm{V}$ | 0 | inactive |
+| closed | to $V_{CC}$ | about $V_{CC}$ | 1 | active |
+:::
+
+The GPIO input draws very little current. The pull-down supplies a defined idle state without significantly loading the signal.
+
+## Verification
+
+1. Predict both states.
+2. Calculate any current path that exists when the switch closes.
+3. Draw the schematic with a junction dot at the input node.
+4. Verify pin voltage for both states.
+5. Disconnect the resistor and document the floating-input limitation.

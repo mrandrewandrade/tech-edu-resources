@@ -1,0 +1,30 @@
+---
+title: "C10 CNC as a Control System"
+description: "Relate CAD, CAM, G-code, controllers, drives, motors, axes, limits, offsets, interlocks, and LinuxCNC."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+A CNC machine combines a controller, motor drives, axes, home and limit switches, spindle or tool control, coordinate systems, work offsets, G-code, and motion planning.
+
+| Layer | Role |
+|:--|:--|
+| CAD | defines geometry |
+| CAM | selects tools and creates toolpaths |
+| G-code | expresses motion and machine functions |
+| controller | plans and coordinates motion |
+| drives and motors | move axes and tool systems |
+| machine process | creates the finished part |
+
+Open-loop stepper systems assume commanded steps produced motion. Closed-loop servo systems measure motion and correct error. Both architectures need homing, limits, interlocks, and an emergency-stop strategy suitable for the machine.
+
+LinuxCNC provides G-code interpretation, real-time motion control, hardware connections through HAL, and support for open-loop stepper or closed-loop servo systems. Review the official [LinuxCNC architecture](https://linuxcnc.org/docs/master/html/en/getting-started/about-linuxcnc.html).
+
+## Shared fabrication links
+
+- [Teaching Materials](../../teaching-materials/index.qmd) for reusable CAD, materials, tools, and safety resources
+- [Laser Cutting](../../teaching-materials/laser-cutting/index.qmd) for existing vector and laser resources
+- [Robert Abraham CNC lathe project](../../lore/iteration-1-robert-abraham-cnc-lathe.qmd) for a local LinuxCNC retrofit example
+
+These links preserve the shared fabrication section without duplicating downloads or project files.

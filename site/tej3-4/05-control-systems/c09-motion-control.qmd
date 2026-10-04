@@ -1,0 +1,24 @@
+---
+title: "C09 Motor and Motion Control"
+description: "Connect DC motors, PWM, H-bridges, servos, steppers, encoders, and driver boards."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Motion control joins logic signals with power electronics and mechanical loads.
+
+| System | Command | Typical feedback |
+|:--|:--|:--|
+| DC motor | direction and PWM | speed or position encoder |
+| H-bridge | direction and PWM | current, speed, or position |
+| hobby servo | command pulse | internal position feedback |
+| stepper driver | step and direction | often open loop; optional encoder |
+
+Check supply voltage, running and stall current, driver rating, switching loss, thermal path, flyback or recirculation, direction logic, and stop behaviour.
+
+GPIO pins do not drive motors directly. Use a transistor, MOSFET, H-bridge, or driver board rated for the load.
+
+## Investigation
+
+Predict speed or position response, collect sample data, graph command and measured output, identify response features, make one design change, and show whether performance improved.

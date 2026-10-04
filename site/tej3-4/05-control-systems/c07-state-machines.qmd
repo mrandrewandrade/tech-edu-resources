@@ -1,0 +1,26 @@
+---
+title: "C07 Sequential Control and State Machines"
+description: "Define states, transitions, outputs, timers, reset behaviour, and fault states."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+A state machine describes the present operating state, the outputs associated with that state, and the conditions that permit a transition.
+
+| State | Outputs | Transition |
+|:--|:--|:--|
+| idle | motor off | start and guards safe |
+| run | motor command active | stop, limit, or timer done |
+| complete | complete indicator | reset |
+| fault | outputs safe | fault cleared and reset approved |
+
+## Design choices
+
+- Define the initial state.
+- Define every input condition once.
+- Include timers where time changes behaviour.
+- Provide reset and fault states.
+- Decide how stop and safety inputs affect every state.
+
+Suitable examples include an elevator, vending machine, traffic light, game, or miniature conveyor.

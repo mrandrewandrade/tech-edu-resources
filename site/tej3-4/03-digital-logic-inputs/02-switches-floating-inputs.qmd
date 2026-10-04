@@ -1,0 +1,23 @@
+---
+title: "3.2 Switches and Floating Inputs"
+description: "Explain why an open switch needs a pull resistor to establish a defined GPIO state."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+A closed switch can connect an input to a voltage rail. An open switch disconnects that path. Without another connection, a high-impedance input floats and can respond to leakage, nearby signals, static charge, or a hand near the wire.
+
+![An unconnected GPIO input is marked incorrect because no circuit establishes a defined voltage.](/assets/tej/Floating_Input.svg){fig-alt="An unconnected wire enters a GPIO input. A red X marks the floating wire as incorrect." width=90%}
+
+| Switch position | Electrical connection | Pin voltage | Logical state |
+|:--|:--|:--|:--:|
+| closed to ground | ground | near $0\ \mathrm{V}$ | 0 |
+| closed to supply | $V_{CC}$ | near $V_{CC}$ | 1 |
+| open without a pull | none | undefined | invalid |
+
+Arduino's official digital-pin documentation notes that an input with nothing connected can report apparently random state changes. [Read the Arduino digital-pin reference](https://docs.arduino.cc/learn/microcontrollers/digital-pins/).
+
+## Evidence check
+
+Predict the pin state before simulation. If a simulator displays a stable 0 or 1 for a floating input, record that as a simulator limitation rather than proof of a valid physical design.

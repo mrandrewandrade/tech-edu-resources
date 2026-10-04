@@ -1,0 +1,26 @@
+---
+title: "3.4 External Pull-Ups and Active-Low Logic"
+description: "Use a switch to ground with a pull-up resistor and interpret the pressed state as active-low."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+A pull-up resistor connects the input weakly to $V_{CC}$. A switch to ground produces a low voltage when pressed. Because the pressed state is active at logic 0, the signal is active-low.
+
+![A resistor pulls a GPIO input to VCC while a switch connects the input to ground when pressed.](/assets/tej/External_Pull_Up_Input.svg){fig-alt="A GPIO input is connected through a pull-up resistor to VCC and through a normally open switch to ground." width=90%}
+
+::: {.table-responsive}
+| Switch | Connection | Voltage | Logic | Active? |
+|:--|:--|:--|:--:|:--|
+| open | through $R_{PU}$ to $V_{CC}$ | about $V_{CC}$ | 1 | inactive |
+| pressed | to ground | about $0\ \mathrm{V}$ | 0 | active |
+:::
+
+When the switch closes, the resistor prevents a direct source short. The current is approximately
+
+$$I=\frac{V_{CC}}{R_{PU}}.$$
+
+For $V_{CC}=5.0\ \mathrm{V}$ and $R_{PU}=10\ \mathrm{k}\Omega$, the switch current is $0.50\ \mathrm{mA}$.
+
+Use an overbar, `/BUTTON`, or `BUTTON_N` to show the active-low convention. State the convention instead of relying on colour or a label alone.

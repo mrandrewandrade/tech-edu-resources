@@ -1,0 +1,31 @@
+---
+title: "5. Control Systems and CNC"
+description: "Feedback, hysteresis, proportional and PID control, state machines, safety controls, motion, CNC, and LinuxCNC."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+This pathway connects electronics, programming, Linux, and shared fabrication resources. Mathematics remains appropriate for high school: students interpret graphs, calculate error and controller output, and explain how gain changes affect response without requiring calculus.
+
+## Module sequence
+
+1. [C01 Control-system anatomy](c01-control-system-anatomy.qmd)
+2. [C02 Open-loop control](c02-open-loop.qmd)
+3. [C03 Closed-loop feedback](c03-closed-loop.qmd)
+4. [C04 On-off control and hysteresis](c04-hysteresis.qmd)
+5. [C05 Proportional control](c05-proportional.qmd)
+6. [C06 Integral, derivative, and PID control](c06-pid.qmd)
+7. [C07 Sequential control and state machines](c07-state-machines.qmd)
+8. [C08 Safety controls and interlocks](c08-safety-interlocks.qmd)
+9. [C09 Motor and motion control](c09-motion-control.qmd)
+10. [C10 CNC as a control system](c10-cnc.qmd)
+11. [C11 Culminating project](c11-culminating-project.qmd)
+
+## Required comparison activity
+
+Use the same simulated process to compare open loop, on-off, hysteresis, proportional, and PI or PID control. [Download the control-method comparison](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf).
+
+## Shared fabrication resources
+
+Tooling, materials, CAD, CAM, laser cutting, 3D printing, and shop-safety downloads remain in [Teaching Materials](../../teaching-materials/index.qmd). CNC pages link to those shared resources instead of duplicating them.

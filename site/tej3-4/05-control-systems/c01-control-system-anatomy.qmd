@@ -1,0 +1,22 @@
+---
+title: "C01 Control-System Anatomy"
+description: "Identify input, controller, output, process, disturbance, feedback, setpoint, and error."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+A control system influences a process or plant. A disturbance changes the process without being requested. In a feedback system, a sensor measures output so the controller can compare it with the setpoint.
+
+![Reference block diagrams for open loop, closed loop, PID, and CNC systems.](/assets/tej/Control_Systems_Reference.svg){fig-alt="Block diagrams show command through controller and plant for open loop, feedback returning measured output in closed loop, P I D actions, and the CAD to CNC machine chain." width=100%}
+
+$$e=r-y$$
+
+| Symbol | Meaning |
+|:--:|:--|
+| $r$ | setpoint |
+| $y$ | measured output |
+| $e$ | error |
+| $u$ | controller output |
+
+Draw a block diagram for a thermostat, cruise control system, or motor-speed controller. Label one realistic disturbance.

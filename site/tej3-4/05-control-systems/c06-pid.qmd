@@ -1,0 +1,34 @@
+---
+title: "C06 Integral, Derivative, and PID Control"
+description: "Compare P, PI, PD, and PID control using a sampled high-school model."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Integral action responds to accumulated error and can remove steady-state error. Derivative action responds to how quickly error changes and can reduce overshoot when measurements are sufficiently clean.
+
+For a sampled spreadsheet or simulator:
+
+$$u_k=K_Pe_k+K_I\sum_{j=0}^{k}e_j\Delta t+K_D\frac{e_k-e_{k-1}}{\Delta t}$$
+
+This finite-difference form does not require calculus.
+
+| Mode | Benefit | Limitation |
+|:--|:--|:--|
+| P | fast, simple correction | steady-state error can remain |
+| PI | removes persistent error | windup and added overshoot |
+| PD | anticipates rapid change | noise sensitivity |
+| PID | combines all actions | added tuning and protection |
+
+Integral windup occurs when error keeps accumulating while the output is saturated. Limit or pause the accumulation as part of the simulation.
+
+## Manual tuning sequence
+
+1. Begin with every gain at zero.
+2. Increase $K_P$ until the response is useful.
+3. Add a small $K_I$ to remove remaining error.
+4. Add $K_D$ only when the data quality supports it.
+5. Compare graphs after every change.
+
+[Download the required PID comparison activity](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf). A physical PID build is optional.

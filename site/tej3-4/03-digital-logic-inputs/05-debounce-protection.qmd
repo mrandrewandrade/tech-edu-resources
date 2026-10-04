@@ -1,0 +1,34 @@
+---
+title: "3.5 Internal Pull-Ups, Debouncing, and Protection"
+description: "Compare internal and external pull-ups, control contact bounce, and protect a GPIO input."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+## Internal pull-ups
+
+Many microcontrollers can enable a resistor inside the device. With Arduino-style APIs, `INPUT_PULLUP` enables that resistor. A switch connects the pin to ground, so released reads `HIGH` and pressed reads `LOW`.
+
+```cpp
+pinMode(buttonPin, INPUT_PULLUP);
+bool pressed = digitalRead(buttonPin) == LOW;
+```
+
+Use an external resistor when the internal value is too weak or uncertain, the wire is long or noisy, the input needs a defined reset state, the voltage domain differs, or an RC time constant requires a specific resistance.
+
+## Contact bounce
+
+Mechanical contacts can produce several rapid transitions during one press. Debounce with a timed software state machine, an RC network connected to a suitable threshold input, or a dedicated circuit.
+
+$$\tau=RC$$
+
+![An RC pull-up network filters rapid transitions before the GPIO input.](/assets/tej/RC_Debounce_Input.svg){fig-alt="A pull-up resistor and capacitor connect to the switch and GPIO node to form an RC debounce circuit." width=88%}
+
+## Protection and compatibility
+
+A series resistor and clamp network can limit abnormal current, but it does not turn every 5 V signal into a safe 3.3 V input. Check thresholds, absolute maximum ratings, clamp-current limits, power sequencing, wiring length, and the signal source.
+
+::: {.callout-warning title="3.3 V and 5 V warning"}
+Do not imply that all GPIO pins are 5 V tolerant. Confirm the exact board, processor, shield, and sensor before connection.
+:::

@@ -1,0 +1,29 @@
+---
+title: "3.1 Digital Voltage Levels and Logic States"
+description: "Interpret high, low, indeterminate, and unsafe GPIO voltages before connecting a switch or sensor."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Digital inputs measure voltage. The input circuit compares the pin voltage with thresholds specified by the device manufacturer.
+
+| Region | Meaning |
+|:--|:--|
+| $V_{IN}\leq V_{IL(\max)}$ | guaranteed low |
+| $V_{IL(\max)}<V_{IN}<V_{IH(\min)}$ | not guaranteed |
+| $V_{IN}\geq V_{IH(\min)}$ | guaranteed high, provided the voltage remains within absolute limits |
+
+## Compatibility check
+
+1. Identify the receiving device supply and GPIO domain.
+2. Find guaranteed input-high and input-low thresholds.
+3. Check absolute maximum pin voltage.
+4. Check whether the source remains valid while the receiving device is unpowered.
+5. Select an approved direct connection, divider, buffer, or level shifter.
+
+Raspberry Pi documentation describes its general-purpose header pins as 3.3 V GPIO and warns against using 5 V for 3.3 V components. A nearby 5 V power pin does not make an input 5 V tolerant. See the official [Raspberry Pi GPIO documentation](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio-and-the-40-pin-header).
+
+::: {.callout-warning title="Hardware boundary"}
+Check the exact board and processor. Do not generalize one Arduino, Raspberry Pi, micro:bit, or other microcontroller specification to another device.
+:::

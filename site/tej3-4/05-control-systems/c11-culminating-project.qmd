@@ -1,0 +1,33 @@
+---
+title: "C11 Control-Systems and CNC Culminating Project"
+description: "Apply control evidence to a simulation, controller, motion system, or supervised CNC subsystem."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+## Project pathways
+
+- simulated thermostat with hysteresis
+- motor-speed control investigation
+- servo position system
+- stepper axis with homing and limits
+- elevator or vending-machine state machine
+- logic game or miniature conveyor controller
+- CNC-machine subsystem model
+- LinuxCNC configuration and documented machine test where equipment and supervision permit
+
+## Required evidence
+
+1. System block diagram.
+2. Expected-response prediction.
+3. Sample response data or simulation.
+4. Graph of setpoint and measured output over time.
+5. Relevant identification of rise time, overshoot, steady-state error, or cycling.
+6. One design change and evidence showing whether it improved performance.
+7. Fault, limit, interlock, and safe-state analysis.
+8. Written engineering conclusion.
+
+For control-method projects, compare open loop, on-off, hysteresis, proportional, and PI or PID control using the same process where possible.
+
+Physical PID and CNC-machine operation are optional and require an approved setup and direct supervision.

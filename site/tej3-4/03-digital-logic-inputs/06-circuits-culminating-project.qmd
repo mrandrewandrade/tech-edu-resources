@@ -1,0 +1,37 @@
+---
+title: "3.6 Circuits Culminating Project"
+description: "Combine logic gates, stable switch inputs, indicators, and an output-driver circuit before microcontrollers."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Complete this project before moving to the separate microcontroller strand.
+
+## Design brief
+
+Create a low-voltage system with:
+
+- at least two stable switch inputs using justified pull resistors
+- at least two logic functions and a complete truth table
+- visible state indicators with correct current limiting
+- a transistor or driver board when the output load exceeds the logic-device rating
+- a defined reset or idle state
+- one planned fault and a safe diagnostic method
+
+Possible systems include an access interlock model, two-button game, alarm logic, bicycle-light controller, or miniature conveyor permissive circuit.
+
+## Evidence cycle
+
+1. Predict the behaviour.
+2. Calculate using GUESS.
+3. Draw a proper schematic.
+4. Simulate or verify.
+5. Build or test where appropriate.
+6. Compare expected and observed results.
+7. Diagnose a fault or limitation.
+8. Explain and reflect.
+
+Assessment uses mathematical reasoning, schematic quality, verification evidence, safe construction, troubleshooting, design decisions, and documentation.
+
+[Download the D01 digital-input worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf).

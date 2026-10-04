@@ -1,0 +1,21 @@
+---
+title: "C02 Open-Loop Control"
+description: "Predict fixed-command systems that do not measure the result."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Open-loop control sends a command without measuring whether the process reached the intended result.
+
+Examples include timed motor operation, fixed PWM, simple conveyor timing, toaster timers, and stepper systems without position feedback.
+
+## Investigation
+
+1. Predict motor speed for a fixed $60\%$ command.
+2. Add a load disturbance halfway through the run.
+3. Plot command and measured speed.
+4. Explain why the controller cannot correct the speed drop.
+5. Identify one situation where open-loop control remains appropriate.
+
+Open loop can be simple, inexpensive, and repeatable when load and environment remain predictable. Its main limitation is the absence of automatic correction.

@@ -1,0 +1,26 @@
+---
+title: "3. Digital Logic and Stable Inputs"
+description: "Logic gates, truth tables, pull resistors, active-low signals, debouncing, GPIO protection, and a circuits culminating project."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+This strand finishes the circuits foundation before microcontroller programming begins. A switch input must have a defined voltage, a valid logic level, and an interface that respects the receiving device limits.
+
+## Required sequence
+
+1. [Digital voltage levels and logic states](01-digital-levels.qmd)
+2. [Switches and floating inputs](02-switches-floating-inputs.qmd)
+3. [External pull-down resistors](03-pull-down-inputs.qmd)
+4. [External pull-up resistors and active-low logic](04-pull-up-active-low.qmd)
+5. [Internal pull-ups, contact bounce, and protection](05-debounce-protection.qmd)
+6. [Circuits culminating project](06-circuits-culminating-project.qmd)
+
+## Downloads
+
+- [Two-page electronics quick reference](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Quick-Reference.pdf)
+- [Electronics reference handbook](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Reference-Handbook.html)
+- [D01 student worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf)
+
+Teacher keys remain in restricted Google Drive.

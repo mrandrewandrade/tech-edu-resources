@@ -1,0 +1,21 @@
+---
+title: "C04 On-Off Control and Hysteresis"
+description: "Reduce rapid switching by using separate upper and lower thresholds."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+On-off control applies full output or zero output. A single threshold can produce rapid switching when noise or process lag moves the measurement around the setpoint.
+
+Hysteresis uses two thresholds. For heating with setpoint $r$ and half-band $h$:
+
+- turn on when $y<r-h$
+- turn off when $y>r+h$
+- retain the previous state inside the band
+
+With $r=22^\circ\mathrm{C}$ and $h=1^\circ\mathrm{C}$, heat turns on below $21^\circ\mathrm{C}$ and turns off above $23^\circ\mathrm{C}$.
+
+## Investigation
+
+Compare $h=0$, $0.5$, and $1.0^\circ\mathrm{C}$ using the same simulated room. Graph temperature and heater state. Discuss cycling frequency, temperature variation, and actuator wear.

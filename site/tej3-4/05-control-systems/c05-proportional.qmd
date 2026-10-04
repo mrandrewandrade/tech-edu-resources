@@ -1,0 +1,25 @@
+---
+title: "C05 Proportional Control"
+description: "Relate controller output to present error and investigate proportional gain."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+Proportional control makes the command proportional to present error.
+
+$$u=K_Pe$$
+
+For $K_P=20\%/{}^\circ\mathrm{C}$ and $e=2.0^\circ\mathrm{C}$, the command is $40\%$ before applying output limits.
+
+Higher proportional gain often gives a faster response and smaller steady-state error. Excessive gain can produce overshoot or oscillation.
+
+## Evidence table
+
+| Gain | Rise time | Overshoot | Steady-state error | Stability |
+|--:|--:|--:|--:|:--|
+| low | | | | |
+| medium | | | | |
+| high | | | | |
+
+Choose one gain and defend the choice using the graph rather than the gain number alone.
