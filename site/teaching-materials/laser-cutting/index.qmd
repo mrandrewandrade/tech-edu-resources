@@ -100,6 +100,7 @@ execute:
             <div class="bs-laser-filter-grid">
               <label>Type<select data-laser-filter="type"><option value="">All types</option></select></label>
               <label>Shop<select data-laser-filter="shop"><option value="">All shops</option></select></label>
+              <label>Technology Area<select data-laser-filter="technology"><option value="">All technology areas</option></select></label>
               <label>Function<select data-laser-filter="function"><option value="">All functions</option></select></label>
               <label>Geometry<select data-laser-filter="geometry"><option value="">All geometry</option></select></label>
               <label>Material<select data-laser-filter="material"><option value="">All materials</option></select></label>
@@ -156,5 +157,5 @@ execute:
   </section>
 </div>
 
-<script src="../../assets/laser-library.js?v=20261004-search" defer></script>
+<script src="../../assets/laser-library.js?v=20261004-technology-areas" defer></script>
 ```

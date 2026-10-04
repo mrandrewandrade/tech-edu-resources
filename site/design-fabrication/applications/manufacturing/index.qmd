@@ -1,0 +1,38 @@
+---
+title: "Manufacturing Technology Project Ideas"
+subtitle: "TMJ2O and senior TMJ · process planning, workholding, inspection, and repeatability"
+description: "Manufacturing projects for setup gauges, shadow boards, inspection templates, and small production systems."
+toc: true
+---
+
+Manufacturing applications should foreground process capability, setup, repeatability, inspection, waste, and safe production. A laser-cut template can support machining or assembly, but it is not automatically a precision instrument or a load-rated machine component.
+
+## Project directions
+
+:::: {.ter-project-grid}
+::: {.ter-project-card}
+### Setup-block and datum kit
+<p class="ter-course-code">TMJ2O / senior TMJ · Gauge family</p>
+Create a labelled set of reference blocks for rapid layout, then verify each finished dimension against a trusted instrument.
+<dl><dt>Process</dt><dd>Drawing → process plan → trial coupon → fabricate → inspect → record deviation</dd><dt>Skills</dt><dd>Datums, tolerances, caliper use, inspection record, non-conformance</dd><dt>Difficulty / size</dt><dd>Intermediate · 10–50 mm reference blocks</dd><dt>Material</dt><dd>Stable sheet or machined stock appropriate to the intended accuracy</dd><dt>Structural</dt><dd>Protect datum edges; add a case that prevents mixing pieces</dd><dt>Safety</dt><dd>Shop reference only unless calibrated through an approved process</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=manufacturing&type=jigs-gauges">Manufacturing gauges</a></dd><dt>Lesson</dt><dd><a href="../../03-laser-cutting/03-measure-place.qmd">Measure + Place</a></dd><dt>Extension</dt><dd>Create an inspection report with nominal, actual, error, and disposition</dd></dl>
+:::
+::: {.ter-project-card}
+### Visual tool-control board
+<p class="ter-course-code">TMJ2O · Organizer family</p>
+Design a shadow-board module for one real tool set so missing tools and incorrect placement are obvious at a glance.
+<dl><dt>Process</dt><dd>Inventory → trace/measure → placement study → prototype retention → load test</dd><dt>Skills</dt><dd>5S thinking, reach, tool clearance, labelling, assembly planning</dd><dt>Difficulty / size</dt><dd>Intermediate · one bounded module, not a whole shop wall</dd><dt>Material</dt><dd>Plywood face with suitable retainers and verified mounting system</dd><dt>Structural</dt><dd>Backer and fasteners carry load; thin decorative parts do not</dd><dt>Safety</dt><dd>Heavy or sharp tools require positive retention and instructor approval</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=manufacturing&type=tool-holders">Manufacturing holder kits</a></dd><dt>Lesson</dt><dd><a href="../../03-laser-cutting/07-wall-bench-module.qmd">Wall + Bench Module</a></dd><dt>Extension</dt><dd>Time retrieval and return before and after the redesign</dd></dl>
+:::
+::: {.ter-project-card}
+### Repeatable assembly fixture
+<p class="ter-course-code">Senior TMJ · Portable work module</p>
+Build a low-force fixture that locates parts consistently during marking or a classroom assembly operation.
+<dl><dt>Process</dt><dd>Task analysis → 3-2-1 locating concept → prototype → capability trial</dd><dt>Skills</dt><dd>Workholding, constraints, poka-yoke, cycle observation, revision</dd><dt>Difficulty / size</dt><dd>Advanced · bench fixture under 400 mm</dd><dt>Material</dt><dd>Plywood/acrylic prototype; metal only when process and equipment justify it</dd><dt>Structural</dt><dd>Separate locators from clamps; state forces and wear points</dd><dt>Safety</dt><dd>Never use an unreviewed fixture in powered cutting or high-force operations</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=manufacturing&type=core-geometry">Exact geometry starters</a></dd><dt>Lesson</dt><dd><a href="../../01-nice-design-process/04-prototype-evaluate-iterate.qmd">Prototype, Evaluate & Iterate</a></dd><dt>Extension</dt><dd>Run ten samples and report variation, failure modes, and redesign</dd></dl>
+:::
+::::
+
+::: {.ter-curriculum-relevance}
+**Curriculum context:** Connect the chosen project to manufacturing design, measurement, process planning, production, quality control, material use, safe work, and career expectations in the specific TMJ course being taught.
+:::
+
+[Back to all technology areas](../index.qmd)
+

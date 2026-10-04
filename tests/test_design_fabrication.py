@@ -24,6 +24,18 @@ class DesignFabricationTests(unittest.TestCase):
             "05-cnc-digital-machining/index.qmd",
             "06-textiles-soft-goods/index.qmd",
             "07-other-fabrication/index.qmd",
+            "applications/index.qmd",
+            "applications/exploring-technologies/index.qmd",
+            "applications/technological-design/index.qmd",
+            "applications/manufacturing/index.qmd",
+            "applications/construction/index.qmd",
+            "applications/transportation/index.qmd",
+            "applications/computer-technology/index.qmd",
+            "applications/communications-technology/index.qmd",
+            "applications/green-industries/index.qmd",
+            "applications/hairstyling-aesthetics/index.qmd",
+            "applications/hospitality-tourism/index.qmd",
+            "applications/health-care/index.qmd",
         ]
         for relative in required:
             self.assertTrue((CURRICULUM / relative).is_file(), relative)
@@ -65,6 +77,27 @@ class DesignFabricationTests(unittest.TestCase):
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")
         for code in ("TIJ1O", "TDJ", "TMJ", "TGJ", "TEJ", "TCJ", "THJ", "TTJ"):
             self.assertIn(code, main)
+
+    def test_application_layer_is_cross_process_and_substantial(self) -> None:
+        landing = self.read("design-fabrication/applications/index.qmd")
+        self.assertIn("The fabrication method is transferable", landing)
+        for code in ("TIJ1O", "TDJ2O", "TMJ2O", "TCJ2O", "TTJ2O", "TEJ2O", "TGJ2O", "THJ2O", "TXJ2O", "TFJ2O", "TPJ2O"):
+            self.assertIn(code, landing)
+        pages = list((CURRICULUM / "applications").glob("*/index.qmd"))
+        self.assertEqual(len(pages), 11)
+        for page in pages:
+            content = page.read_text(encoding="utf-8")
+            self.assertGreaterEqual(content.count("ter-project-card"), 3, page)
+            for field in ("<dt>Process", "<dt>Skills", "<dt>Material", "<dt>Structural", "<dt>Safety", "<dt>Library", "<dt>Lesson", "<dt>Extension"):
+                self.assertIn(field, content, (page, field))
+
+    def test_sensitive_application_pages_state_boundaries(self) -> None:
+        hair = self.read("design-fabrication/applications/hairstyling-aesthetics/index.qmd").lower()
+        hospitality = self.read("design-fabrication/applications/hospitality-tourism/index.qmd").lower()
+        health = self.read("design-fabrication/applications/health-care/index.qmd").lower()
+        self.assertIn("heat-safe", hair)
+        self.assertIn("food-contact", hospitality)
+        self.assertIn("not medical devices", health)
 
     def test_course_code_queries_have_specific_pages(self) -> None:
         expectations = {

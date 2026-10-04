@@ -1,0 +1,38 @@
+---
+title: "Computer Technology / Engineering Project Ideas"
+subtitle: "TEJ2O and senior TEJ · electronics fixtures, enclosures, interfaces, and test workflow"
+description: "Computer Technology projects for PCB fixtures, cable management, electronics enclosures, and test-lead modules."
+toc: true
+---
+
+Computer Technology and engineering applications combine electrical function with physical interfaces. Fabrication is valuable when it makes a circuit safer to test, a cable route legible, an enclosure serviceable, or a user interaction easier to evaluate.
+
+## Project directions
+
+:::: {.ter-project-grid}
+::: {.ter-project-card}
+### PCB layout and soldering fixture
+<p class="ter-course-code">TEJ2O · Gauge / fixture family</p>
+Design a low-force fixture that locates a small board and selected components while students plan or inspect assembly.
+<dl><dt>Process</dt><dd>Measure PCB → locate keep-outs → prototype supports → fit test</dd><dt>Skills</dt><dd>2.54 mm pitch, datums, board clearance, CAD, tolerance</dd><dt>Difficulty / size</dt><dd>Intermediate · under 180 × 120 mm</dd><dt>Material</dt><dd>Laser-cut sheet or heat-resistant printed parts selected for the task</dd><dt>Structural</dt><dd>Support the board without flexing or loading components</dd><dt>Safety</dt><dd>Keep combustible fixtures away from hot soldering work unless material is approved</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=computer-technology&type=jigs-gauges">PCB and cable gauges</a></dd><dt>Lesson</dt><dd><a href="../../04-3d-printing/03-tolerances-functional-parts.qmd">Tolerances & Functional Parts</a></dd><dt>Extension</dt><dd>Add interchangeable board locators with a documented interface</dd></dl>
+:::
+::: {.ter-project-card}
+### Test-lead and cable module
+<p class="ter-course-code">TEJ2O / senior TEJ · Portable work module</p>
+Organize leads and cables by function so they deploy without tangling and return to a visible inventory.
+<dl><dt>Process</dt><dd>Workflow study → bend-radius check → comb prototypes → carry/use test</dd><dt>Skills</dt><dd>Cable geometry, strain relief, labelling, modular interfaces</dd><dt>Difficulty / size</dt><dd>Introductory–intermediate · under 300 mm wide</dd><dt>Material</dt><dd>Plywood face, printed clips, or flexible retainers</dd><dt>Structural</dt><dd>Avoid sharp edges and loads on connectors</dd><dt>Safety</dt><dd>Disconnect and de-energize leads before storage</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=computer-technology&type=tool-holders">Electronics organizers</a></dd><dt>Lesson</dt><dd><a href="../../03-laser-cutting/07-wall-bench-module.qmd">Wall + Bench Module</a></dd><dt>Extension</dt><dd>Add visual status for tested, suspect, and repair-needed leads</dd></dl>
+:::
+::: {.ter-project-card}
+### Serviceable sensor enclosure
+<p class="ter-course-code">Senior TEJ · Organizer / enclosure family</p>
+Enclose a low-voltage sensor project while preserving airflow, connector access, mounting, and repair.
+<dl><dt>Process</dt><dd>Requirements → component keep-outs → CAD → fit coupon → enclosure → thermal observation</dd><dt>Skills</dt><dd>Interfaces, tolerances, ventilation, fastening, assembly drawing</dd><dt>Difficulty / size</dt><dd>Intermediate–advanced · device-sized</dd><dt>Material</dt><dd>Printed polymer or sheet assembly suitable for classroom voltage and temperature</dd><dt>Structural</dt><dd>Mount boards at defined points; protect cables from pullout</dd><dt>Safety</dt><dd>No mains voltage; account for heat and battery requirements</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=computer-technology&type=core-geometry">Fan and mounting patterns</a></dd><dt>Lesson</dt><dd><a href="../../04-3d-printing/04-design-challenge.qmd">3D Printing Design Challenge</a></dd><dt>Extension</dt><dd>Perform a timed service task and redesign the enclosure access</dd></dl>
+:::
+::::
+
+::: {.ter-curriculum-relevance}
+**Curriculum context:** Link projects to electronics, computer systems, technical communication, programming or interfacing, troubleshooting, safe low-voltage work, environmental responsibility, and engineering careers in the current TEJ course.
+:::
+
+[Back to all technology areas](../index.qmd)
+

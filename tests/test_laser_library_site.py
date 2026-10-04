@@ -19,6 +19,14 @@ class LaserLibrarySiteTests(unittest.TestCase):
         self.assertTrue(any("Veccy" in item["editors"] for item in assets))
         self.assertTrue(any(item["fit_type"] != "none" for item in assets))
         self.assertTrue(all(item["units"] == "mm" for item in assets))
+        expected_areas = {
+            "exploring-technologies", "technological-design", "manufacturing", "construction",
+            "transportation", "computer-technology", "communications-technology", "green-industries",
+            "hairstyling-aesthetics", "hospitality-tourism", "health-care",
+        }
+        represented = {area for item in assets for area in item["technology_areas"]}
+        self.assertEqual(represented, expected_areas)
+        self.assertTrue(all(len(item["technology_areas"]) <= 6 for item in assets))
 
     def test_duplicate_ids_are_rejected(self):
         document = laser_library.load_catalog(laser_library.PUBLIC_CATALOG)

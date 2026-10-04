@@ -19,7 +19,7 @@ PUBLIC_ROOT = ROOT / "site" / "assets" / "laser-library"
 PUBLIC_CATALOG = PUBLIC_ROOT / "catalog.json"
 REQUIRED = {
     "id", "title", "description", "category", "subcategory", "shop", "tool_family",
-    "tags", "skill_level", "dimensions", "units", "material", "fit_type",
+    "tags", "technology_areas", "skill_level", "dimensions", "units", "material", "fit_type",
     "kerf_assumptions", "generator", "parameters", "operations", "files", "editors",
     "license", "attribution", "source_reference", "sensitivity", "trademark_status",
     "review_status", "notes",

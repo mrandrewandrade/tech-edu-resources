@@ -2,7 +2,20 @@
   "use strict";
 
   const PAGE_SIZE = 48;
-  const FILTERS = ["type", "shop", "function", "geometry", "material", "operation", "editor", "level", "theme"];
+  const FILTERS = ["type", "shop", "technology", "function", "geometry", "material", "operation", "editor", "level", "theme"];
+  const TECHNOLOGY_LABELS = {
+    "exploring-technologies": "Exploring Technologies",
+    "technological-design": "Technological Design",
+    "manufacturing": "Manufacturing",
+    "construction": "Construction",
+    "transportation": "Transportation",
+    "computer-technology": "Computer Technology / Engineering",
+    "communications-technology": "Communications Technology",
+    "green-industries": "Green Industries",
+    "hairstyling-aesthetics": "Hairstyling & Aesthetics",
+    "hospitality-tourism": "Hospitality & Tourism",
+    "health-care": "Health Care"
+  };
 
   function normalise(value) {
     return String(value || "")
@@ -27,6 +40,7 @@
   function valueFor(asset, key) {
     if (key === "type") return asset.category;
     if (key === "shop") return asset.shop;
+    if (key === "technology") return asset.technology_areas || [];
     if (key === "function") return asset.tool_family === "none" ? "" : asset.tool_family;
     if (key === "geometry") return asset.subcategory;
     if (key === "material") return asset.material && asset.material.name;
@@ -157,7 +171,7 @@
       return assets.filter(function (asset) {
         const haystack = normalise([
           asset.id, asset.title, asset.description, asset.category, asset.subcategory,
-          asset.shop, asset.tool_family, (asset.tags || []).join(" "),
+          asset.shop, asset.tool_family, (asset.tags || []).join(" "), (asset.technology_areas || []).join(" "),
           (asset.operations || []).join(" "), (asset.editors || []).join(" ")
         ].join(" "));
         const matchesQuery = !query || haystack.includes(query) || queryTokens.every(function (token) {
@@ -197,7 +211,7 @@
         values.forEach(function (value) {
           const option = document.createElement("option");
           option.value = normalise(value);
-          option.textContent = titleCase(value);
+          option.textContent = key === "technology" ? (TECHNOLOGY_LABELS[value] || titleCase(value)) : titleCase(value);
           select.appendChild(option);
         });
       });

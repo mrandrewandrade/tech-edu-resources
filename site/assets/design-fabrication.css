@@ -179,6 +179,112 @@
   background: var(--bs-surface);
 }
 
+.ter-transfer-statement {
+  margin: 1.5rem 0 2rem;
+  padding: 1.1rem 1.25rem;
+  border-left: 4px solid var(--bs-copper-dark);
+  background: var(--bs-surface);
+  color: var(--bs-navy-dark);
+  font-size: clamp(1.08rem, 2vw, 1.3rem);
+  font-weight: 720;
+}
+
+.ter-application-grid,
+.ter-project-grid,
+.ter-family-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2.5rem;
+}
+
+.ter-application-card,
+.ter-project-card,
+.ter-family-card {
+  padding: 1.15rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  background: var(--bs-surface);
+}
+
+.ter-application-card h2,
+.ter-application-card h3,
+.ter-project-card h2,
+.ter-project-card h3,
+.ter-family-card h3 {
+  margin-top: 0;
+  color: var(--bs-navy-dark);
+}
+
+.ter-application-card .ter-course-code,
+.ter-project-card .ter-course-code {
+  color: var(--bs-copper-dark);
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ter-project-card dl {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.35fr) 1fr;
+  margin: 0.8rem 0 0;
+  font-size: 0.93rem;
+}
+
+.ter-project-card dt,
+.ter-project-card dd {
+  margin: 0;
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--bs-border);
+}
+
+.ter-project-card dt {
+  padding-right: 0.75rem;
+  color: var(--bs-navy-dark);
+  font-weight: 720;
+}
+
+.ter-application-card > :last-child,
+.ter-project-card > :last-child,
+.ter-family-card > :last-child {
+  margin-bottom: 0;
+}
+
+.ter-method-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  list-style: none;
+}
+
+.ter-method-list li {
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 999px;
+  background: var(--bs-ivory);
+  color: var(--bs-navy-dark);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+[data-bs-theme="dark"] .ter-transfer-statement,
+[data-bs-theme="dark"] .ter-application-card h2,
+[data-bs-theme="dark"] .ter-application-card h3,
+[data-bs-theme="dark"] .ter-project-card h2,
+[data-bs-theme="dark"] .ter-project-card h3,
+[data-bs-theme="dark"] .ter-family-card h3,
+[data-bs-theme="dark"] .ter-project-card dt {
+  color: var(--bs-text);
+}
+
+[data-bs-theme="dark"] .ter-method-list li {
+  background: var(--bs-surface);
+  color: var(--bs-text);
+}
+
 [data-bs-theme="dark"] .ter-design-fabrication .ter-path-card h2,
 [data-bs-theme="dark"] .ter-design-fabrication .ter-path-card h3,
 [data-bs-theme="dark"] .ter-design-cycle li {
@@ -191,8 +297,20 @@
 
 @media (max-width: 760px) {
   .ter-path-grid,
-  .ter-two-state {
+  .ter-two-state,
+  .ter-application-grid,
+  .ter-project-grid,
+  .ter-family-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ter-project-card dl {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-project-card dd {
+    padding-top: 0;
+    border-top: 0;
   }
 
   .ter-design-cycle {
