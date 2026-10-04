@@ -80,7 +80,8 @@ def sync(source_catalog: Path) -> None:
     library_root = source_catalog.parents[1]
     source_preview_root = library_root / "generated" / "previews"
     source_recipes = library_root / "veccy" / "recipes.json"
-    if not source_preview_root.is_dir() or not source_recipes.is_file():
+    source_classroom_kit = library_root / "generated" / "classroom-kit"
+    if not source_preview_root.is_dir() or not source_recipes.is_file() or not source_classroom_kit.is_dir():
         raise LaserLibraryError(f"{library_root} is not a generated Technology Commons laser library")
     PUBLIC_ROOT.mkdir(parents=True, exist_ok=True)
     destination_previews = PUBLIC_ROOT / "previews"
@@ -89,7 +90,11 @@ def sync(source_catalog: Path) -> None:
     shutil.copytree(source_preview_root, destination_previews)
     shutil.copy2(source_catalog, PUBLIC_CATALOG)
     shutil.copy2(source_recipes, PUBLIC_ROOT / "veccy-recipes.json")
-    print(f"Synced {document['count']} assets from {source_catalog}")
+    destination_classroom_kit = PUBLIC_ROOT / "classroom-kit"
+    if destination_classroom_kit.exists():
+        shutil.rmtree(destination_classroom_kit)
+    shutil.copytree(source_classroom_kit, destination_classroom_kit)
+    print(f"Synced {document['count']} catalogue assets and the classroom kit from {source_catalog}")
 
 
 def main() -> int:

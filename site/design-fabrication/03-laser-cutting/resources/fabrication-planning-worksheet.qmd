@@ -1,0 +1,96 @@
+---
+title: "Fabrication Planning Worksheet"
+description: "A reusable print-friendly planning sheet connecting a real need, measured orthographic views, parts, operations, assembly, safety, testing and revision."
+toc: false
+page-layout: full
+body-classes: "ter-design-fabrication ter-fabrication-worksheet"
+execute: {enabled: false}
+---
+
+::: {.ter-worksheet-toolbar}
+[Return to the classroom toolkit](index.qmd) · Use the browser's **Print** command and select **Save as PDF** if a digital copy is needed.
+:::
+
+::: {.ter-worksheet-page}
+
+# Fabrication planning record
+
+**Designer(s):** <span class="ter-write-line"></span> **Date:** <span class="ter-write-line ter-write-line--short"></span> **Project/version:** <span class="ter-write-line"></span>
+
+## 1 · Need and success criteria
+
+**Who needs what, where, and why?**
+
+<div class="ter-writing-space ter-writing-space--small"></div>
+
+**A successful solution must…** Write three observable criteria and one constraint.
+
+<div class="ter-writing-space ter-writing-space--medium"></div>
+
+## 2 · Measure the real context
+
+| Item / interface | Tool used | Nominal (mm) | Measured range (mm) | Clearance or fit decision | Why this controls the design |
+|---|---|---:|---:|---|---|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+**Material:** __________ **Measured thickness:** ______ mm **Machine/material calibration source:** ____________________
+
+## 3 · Draw before opening Inkscape
+
+::: {.ter-view-grid}
+::: {.ter-view-box}
+**FRONT** · add overall dimensions, centres and labels
+:::
+::: {.ter-view-box}
+**TOP** · show openings, spacing, margins and access
+:::
+::: {.ter-view-box}
+**SIDE** · show height, support, load path and assembly
+:::
+:::
+
+## 4 · Parts and operations
+
+| Part name | Qty | Finished size (mm) | Source component | CUT / SCORE / ENGRAVE | Material |
+|---|---:|---|---|---|---|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+**Assembly order:** 1. ____________________ 2. ____________________ 3. ____________________ 4. ____________________
+
+## 5 · Preflight and approval
+
+::: {.ter-check-grid}
+- [ ] Document and display units are mm
+- [ ] Page size matches intended physical output
+- [ ] Critical dimensions match the plan
+- [ ] HOLE and CIRCLE PART intent is named
+- [ ] Every intended cut path appears once
+- [ ] No hidden or stray objects
+- [ ] Text is handled according to local workflow
+- [ ] CUT / SCORE / ENGRAVE are separated
+- [ ] Small fit coupon was cut where needed
+- [ ] Material, ventilation and fire-watch rules checked
+- [ ] Mounting/load plan has teacher approval where required
+- [ ] Machine preview matches the intended parts
+:::
+
+**Teacher / operator approval before fabrication:** ____________________ **Date/time:** ____________________
+
+## 6 · Test, evidence and revision
+
+| Test | Expected result | Actual evidence / measurement | Pass? | Revision made |
+|---|---|---|:---:|---|
+| Fit / clearance |  |  |  |  |
+| Stability / load |  |  |  |  |
+| Access / removal |  |  |  |  |
+| Layout / readability |  |  |  |  |
+
+**Next version:** Change ______________________________ because ____________________________________________.
+
+:::

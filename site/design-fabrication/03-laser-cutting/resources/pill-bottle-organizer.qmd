@@ -1,0 +1,79 @@
+---
+title: "Pill-Bottle Organizer | Four Reference Assemblies"
+description: "Configurable laser-cut pill-bottle organizer references for auto-shop organization, with parts, exploded diagrams, BOMs, measured parameters and honest test status."
+page-layout: full
+toc: true
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson ter-toolkit"
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Design problem
+
+Create an organizer for labelled shop pill bottles used to separate small fasteners or parts. The organizer should make contents visible, bottles easy to return and the storage location predictable. **Measure the actual classroom bottles.** The downloadable files use a documented example: 34 mm body, 42 mm cap, 36 mm opening and 42 mm centre spacing.
+:::
+
+The 36 mm opening allows the example body to pass through while the larger cap retains the bottle. That is a hypothesis to test, not a universal bottle size. Cut one opening coupon before a complete rack.
+
+[Download all four references (ZIP)](../../../assets/laser-library/classroom-kit/technology-commons-first-laser-projects.zip){.btn .btn-primary} [Open the assembly manifest](../../../assets/laser-library/classroom-kit/pill-bottle/assemblies.json){.btn .btn-outline-secondary}
+
+## Compare the systems
+
+::: {.ter-project-grid}
+::: {.ter-project-card}
+### A · Simple shelf rack
+
+**Parts:** perforated shelf, base, two sides.<br>
+**Use:** introductory free-standing rack; simplest load path.<br>
+**Question:** How high should the shelf sit so bottles are retained but easy to lift?
+
+[Parts SVG](../../../assets/laser-library/classroom-kit/pill-bottle/simple-shelf-rack/parts.svg) · [Exploded diagram](../../../assets/laser-library/classroom-kit/pill-bottle/simple-shelf-rack/exploded.svg)
+:::
+::: {.ter-project-card}
+### B · Dowel-supported rack
+
+**Parts:** top and bottom plates plus four purchased dowels.<br>
+**Use:** introduces hybrid fabrication and repeatable spacing.<br>
+**Question:** What dowel-hole allowance gives alignment without wobble?
+
+[Parts SVG](../../../assets/laser-library/classroom-kit/pill-bottle/dowel-supported-rack/parts.svg) · [Exploded diagram](../../../assets/laser-library/classroom-kit/pill-bottle/dowel-supported-rack/exploded.svg)
+:::
+::: {.ter-project-card}
+### C · Reinforced wall rack
+
+**Parts:** shelf, back, two gussets, site-specific fasteners.<br>
+**Use:** studies load path and wall responsibility.<br>
+**Question:** Which wall, anchor and fastener system is approved for the total load?
+
+[Parts SVG](../../../assets/laser-library/classroom-kit/pill-bottle/reinforced-wall-rack/parts.svg) · [Exploded diagram](../../../assets/laser-library/classroom-kit/pill-bottle/reinforced-wall-rack/exploded.svg)
+:::
+::: {.ter-project-card}
+### D · Removable wall / bench rack
+
+**Parts:** shelf, module back, two bench feet and wall adapter.<br>
+**Use:** same organizer body, two locations.<br>
+**Question:** Can the transfer interface be obvious, stable and impossible to install backwards?
+
+[Parts SVG](../../../assets/laser-library/classroom-kit/pill-bottle/removable-wall-bench-rack/parts.svg) · [Exploded diagram](../../../assets/laser-library/classroom-kit/pill-bottle/removable-wall-bench-rack/exploded.svg)
+:::
+:::
+
+## Bill-of-material and parameter routine
+
+For any selected reference:
+
+1. Measure at least three bottles: body diameter, cap diameter, height and any taper.
+2. Choose the controlling diameter and required radial clearance.
+3. Calculate `opening = largest measured body + 2 × radial clearance`.
+4. Set centre spacing from cap diameter, hand access and remaining material—not appearance alone.
+5. Update part dimensions and BOM before nesting.
+6. Cut an opening coupon, record actual fit, then revise the source.
+7. Dry-assemble; test insertion, removal, labels, tipping and collisions.
+
+## Physical-test record
+
+All four files currently have status **unverified**. Do not change that label because the SVG opens correctly. Record the material, measured thickness, machine, settings reference, date, tester, actual opening, fit result, load and revision before promoting a design to `fit-tested` or `shop-tested`.
+
+::: {.callout-warning}
+Wall mounting is not a decorative SVG problem. The wall substrate, anchor, fastener, backer, load, impact and inspection routine must be approved by the responsible instructor. A laser-cut plate is not a rated anchor.
+:::

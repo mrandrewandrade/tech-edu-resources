@@ -125,6 +125,36 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("design-fabrication/03-laser-cutting", library)
         self.assertIn("teaching-materials/laser-cutting", curriculum)
 
+    def test_first_laser_projects_toolkit_is_complete(self) -> None:
+        toolkit = self.read("design-fabrication/03-laser-cutting/resources/index.qmd")
+        for label in ("Basic Geometry", "Hole", "Slot", "Structure", "Wall + Mounting", "Organizer"):
+            self.assertIn(label, toolkit)
+        for relative in (
+            "design-fabrication/03-laser-cutting/resources/fabrication-planning-worksheet.qmd",
+            "design-fabrication/03-laser-cutting/resources/paper-to-inkscape.qmd",
+            "design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd",
+            "design-fabrication/03-laser-cutting/resources/active-sequence-slides.qmd",
+        ):
+            self.assertTrue((SITE / relative).is_file(), relative)
+
+        first_project = self.read("design-fabrication/03-laser-cutting/01-name-logo.qmd")
+        self.assertIn("pre-cut", first_project)
+        self.assertIn("Photopea", first_project)
+        self.assertIn("export", first_project.lower())
+        self.assertIn("PNG", first_project)
+
+        organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
+        for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench"):
+            self.assertIn(design, organizer)
+        self.assertIn("unverified", organizer)
+
+    def test_public_classroom_kit_has_palettes_and_reference_assemblies(self) -> None:
+        kit = SITE / "assets" / "laser-library" / "classroom-kit"
+        self.assertTrue((kit / "manifest.json").is_file())
+        self.assertEqual(len(list((kit / "palettes").glob("*.svg"))), 6)
+        assembly = __import__("json").loads((kit / "pill-bottle" / "assemblies.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(assembly["designs"]), 4)
+
 
 if __name__ == "__main__":
     unittest.main()

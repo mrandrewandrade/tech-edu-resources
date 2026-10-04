@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120mm" height="80mm" viewBox="0 0 120 80">
+<title>Name and Logo Engraving Template</title>
+<desc>Editable Inkscape source for a measured, pre-cut rectangular blank.</desc>
+<metadata id="technology-commons-classroom-kit">{&quot;default_blank_mm&quot;:[100,40],&quot;description&quot;:&quot;Editable Inkscape source for a measured, pre-cut rectangular blank.&quot;,&quot;output&quot;:&quot;PNG engraving artwork&quot;,&quot;project&quot;:&quot;name-logo&quot;,&quot;review_status&quot;:&quot;unverified&quot;,&quot;safe_margin_mm&quot;:5,&quot;title&quot;:&quot;Name and Logo Engraving Template&quot;,&quot;units&quot;:&quot;mm&quot;,&quot;version&quot;:&quot;1.0.0&quot;}</metadata>
+<text x="8" y="9" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="5.5" font-weight="700" text-anchor="start" data-role="annotation">NAME + LOGO ENGRAVING TEMPLATE</text>
+<text x="8" y="16" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">Set page to the measured blank size before exporting PNG.</text>
+<g id="blank-boundary-guide" aria-label="Measured blank boundary (guide only)" data-output="guide-only" data-default-width-mm="100" data-default-height-mm="40">
+<rect x="10" y="24" width="100" height="40" fill="none" stroke="#7b8794" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+</g>
+<g id="safe-area-guide" aria-label="Safe area (guide only)" data-output="guide-only" data-default-margin-mm="5">
+<rect x="15" y="29" width="90" height="30" fill="none" stroke="#9aa3ad" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="1 1" data-operation="ENGRAVE"/>
+</g>
+<g id="student-name-placeholder" aria-label="Replace with student name" data-output="engrave">
+<text x="60" y="44" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="9" font-weight="700" text-anchor="middle" data-role="annotation">YOUR NAME</text>
+</g>
+<g id="student-logo-placeholder" aria-label="Replace with original logo" data-output="engrave">
+<circle cx="94" cy="44" r="7" fill="none" stroke="#111111" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="ENGRAVE"/>
+<text x="94" y="46" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="middle" data-role="annotation">A</text>
+</g>
+<text x="10" y="72" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">Delete both guides before export · crop to page · export at instructor-set DPI</text>
+</svg>
