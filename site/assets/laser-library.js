@@ -208,6 +208,15 @@
       render(true);
     }
 
+    function searchAllAssets() {
+      // The search box is catalogue-wide. Clear a category preset inherited
+      // from the URL so examples such as "animals" work from every view.
+      if (normalise(search.value)) {
+        selects.forEach(function (select) { select.value = ""; });
+      }
+      resetPageAndRender();
+    }
+
     fetch(catalogUrl)
       .then(function (response) {
         if (!response.ok) throw new Error("Catalogue request failed: " + response.status);
@@ -228,7 +237,7 @@
         empty.textContent = error.message;
       });
 
-    search.addEventListener("input", resetPageAndRender);
+    search.addEventListener("input", searchAllAssets);
     selects.forEach(function (select) { select.addEventListener("change", resetPageAndRender); });
     clear.addEventListener("click", function () {
       search.value = "";
