@@ -54,6 +54,7 @@ execute:
     <button type="button" data-laser-preset="type" data-laser-value="jigs-gauges">Jigs + gauges</button>
     <button type="button" data-laser-preset="type" data-laser-value="project-components">Project starters</button>
     <button type="button" data-laser-preset="type" data-laser-value="themed-starters">Themed starters</button>
+    <button type="button" data-laser-preset="theme" data-laser-value="animals">Animals</button>
   </nav>
 
   <section class="bs-laser-safety" aria-labelledby="cleat-safety-title">
@@ -73,18 +74,28 @@ execute:
     </div>
 
     <div class="bs-laser-controls" data-laser-controls>
-      <label class="bs-laser-search-label" for="laser-search">Search titles, tags, tools and geometry</label>
-      <input id="laser-search" type="search" placeholder="Try kerf, socket, 50 mm, French cleat…" autocomplete="off" data-laser-search>
-      <div class="bs-laser-filter-grid">
-        <label>Type<select data-laser-filter="type"><option value="">All types</option></select></label>
-        <label>Shop<select data-laser-filter="shop"><option value="">All shops</option></select></label>
-        <label>Function<select data-laser-filter="function"><option value="">All functions</option></select></label>
-        <label>Geometry<select data-laser-filter="geometry"><option value="">All geometry</option></select></label>
-        <label>Material<select data-laser-filter="material"><option value="">All materials</option></select></label>
-        <label>Operation<select data-laser-filter="operation"><option value="">All operations</option></select></label>
-        <label>Editor<select data-laser-filter="editor"><option value="">All editors</option></select></label>
-        <label>Skill level<select data-laser-filter="level"><option value="">All levels</option></select></label>
-        <label>Theme<select data-laser-filter="theme"><option value="">All themes</option></select></label>
+      <div class="bs-laser-search-row">
+        <label class="bs-laser-search-label" for="laser-search">
+          <span>Search titles, tags, tools and geometry</span>
+          <input id="laser-search" type="search" placeholder="Try animals, kerf, socket, 50 mm…" autocomplete="off" data-laser-search>
+        </label>
+        <details class="bs-laser-filter-details" data-laser-filter-details>
+          <summary>Filters <span class="bs-laser-filter-badge" data-laser-filter-count>0</span></summary>
+          <div class="bs-laser-filter-panel">
+            <p>Filters narrow the current search. Preset buttons above always start a fresh view.</p>
+            <div class="bs-laser-filter-grid">
+              <label>Type<select data-laser-filter="type"><option value="">All types</option></select></label>
+              <label>Shop<select data-laser-filter="shop"><option value="">All shops</option></select></label>
+              <label>Function<select data-laser-filter="function"><option value="">All functions</option></select></label>
+              <label>Geometry<select data-laser-filter="geometry"><option value="">All geometry</option></select></label>
+              <label>Material<select data-laser-filter="material"><option value="">All materials</option></select></label>
+              <label>Operation<select data-laser-filter="operation"><option value="">All operations</option></select></label>
+              <label>Editor<select data-laser-filter="editor"><option value="">All editors</option></select></label>
+              <label>Skill level<select data-laser-filter="level"><option value="">All levels</option></select></label>
+              <label>Theme<select data-laser-filter="theme"><option value="">All themes</option></select></label>
+            </div>
+          </div>
+        </details>
       </div>
       <div class="bs-laser-filter-footer">
         <p data-laser-count role="status" aria-live="polite">Loading catalogue…</p>

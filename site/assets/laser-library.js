@@ -5,7 +5,11 @@
   const FILTERS = ["type", "shop", "function", "geometry", "material", "operation", "editor", "level", "theme"];
 
   function normalise(value) {
-    return String(value || "").trim().toLowerCase();
+    return String(value || "")
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim()
+      .toLowerCase();
   }
 
   function titleCase(value) {
@@ -122,6 +126,8 @@
     const empty = root.querySelector("[data-laser-empty]");
     const clear = root.querySelector("[data-laser-clear]");
     const more = root.querySelector("[data-laser-more]");
+    const filterDetails = root.querySelector("[data-laser-filter-details]");
+    const filterCount = root.querySelector("[data-laser-filter-count]");
     const selects = Array.from(root.querySelectorAll("[data-laser-filter]"));
     let assets = [];
     let shown = PAGE_SIZE;
@@ -145,6 +151,7 @@
 
     function filteredAssets() {
       const query = normalise(search.value);
+      const queryTokens = query.split(/\s+/).filter(Boolean);
       const active = {};
       selects.forEach(function (select) { active[select.dataset.laserFilter] = normalise(select.value); });
       return assets.filter(function (asset) {
@@ -153,7 +160,10 @@
           asset.shop, asset.tool_family, (asset.tags || []).join(" "),
           (asset.operations || []).join(" "), (asset.editors || []).join(" ")
         ].join(" "));
-        return (!query || haystack.includes(query)) && FILTERS.every(function (key) {
+        const matchesQuery = !query || haystack.includes(query) || queryTokens.every(function (token) {
+          return haystack.includes(token) || (token.endsWith("s") && haystack.includes(token.slice(0, -1)));
+        });
+        return matchesQuery && FILTERS.every(function (key) {
           return matchesValue(asset, key, active[key]);
         });
       });
@@ -171,7 +181,10 @@
         (matches.length > visible.length ? " · showing " + visible.length : "");
       empty.hidden = matches.length !== 0;
       more.hidden = matches.length <= visible.length;
-      clear.hidden = !normalise(search.value) && selects.every(function (select) { return !select.value; });
+      const activeFilterCount = selects.filter(function (select) { return Boolean(select.value); }).length;
+      filterCount.textContent = String(activeFilterCount);
+      filterCount.parentElement.setAttribute("aria-label", "Filters, " + activeFilterCount + " active");
+      clear.hidden = !normalise(search.value) && activeFilterCount === 0;
     }
 
     function populateFilters() {
@@ -220,6 +233,7 @@
     clear.addEventListener("click", function () {
       search.value = "";
       selects.forEach(function (select) { select.value = ""; });
+      filterDetails.open = false;
       resetPageAndRender();
       search.focus();
     });
@@ -227,9 +241,12 @@
     root.addEventListener("click", function (event) {
       const preset = event.target.closest("[data-laser-preset]");
       if (!preset) return;
+      search.value = "";
+      selects.forEach(function (select) { select.value = ""; });
       const target = root.querySelector('[data-laser-filter="' + preset.dataset.laserPreset + '"]');
       if (!target) return;
       target.value = normalise(preset.dataset.laserValue);
+      filterDetails.open = false;
       resetPageAndRender();
       root.querySelector("[data-laser-controls]").scrollIntoView({ behavior: "smooth", block: "start" });
     });
