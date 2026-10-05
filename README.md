@@ -26,6 +26,7 @@ The rendered output is `site/_site`. Do not edit generated output directly.
 
 - `site/slides/tas.qmd`: chronological TAS class slides.
 - `site/slides/tej.qmd`: chronological TEJ class slides.
+- `site/slides/ttj.qmd`: chronological TTJ/TTS class slides plus confirmed teacher-created transportation lesson packages.
 - `site/design-fabrication/`: reusable General Design & Fabrication curriculum covering the N.I.C.E. design process, digital design, laser cutting, 3D printing, and planned fabrication methods.
 - `site/tas2/`: compatibility redirects and retired TAS course scaffolding; reusable curriculum is canonical under `site/design-fabrication/`.
 - `site/tej3-4/`: intentionally unfinished TEJ collaborative notes.
