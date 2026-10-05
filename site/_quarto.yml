@@ -144,7 +144,11 @@ website:
         - section: "4. Basic Computer Systems"
           href: tej3-4/computer-systems/index.qmd
           contents:
-            - text: "Pilot: Computer Recovery Crew"
+            - text: "Main Mission: Power & Parts"
+              href: tej3-4/computer-systems/computer-power-parts.qmd
+            - text: "Side Quest: Make It Print"
+              href: tej3-4/computer-systems/make-it-print.qmd
+            - text: "Side Quest: Recovery & OS Comparison"
               href: tej3-4/computer-systems/computer-recovery-crew-pilot.qmd
             - text: "CS01 Electricity Bridge"
               href: tej3-4/computer-systems/cs01-electricity-bridge.qmd
@@ -156,7 +160,7 @@ website:
               href: tej3-4/computer-systems/cs04-ready-to-power.qmd
             - text: "CS05 POST & BIOS/UEFI"
               href: tej3-4/computer-systems/cs05-post-firmware.qmd
-            - text: "CS06 Xubuntu 26.04 LTS"
+            - text: "CS06 Approved Linux"
               href: tej3-4/computer-systems/cs06-linux-mint.qmd
             - text: "CS07 RAM Upgrade"
               href: tej3-4/computer-systems/cs07-ram-upgrade.qmd
