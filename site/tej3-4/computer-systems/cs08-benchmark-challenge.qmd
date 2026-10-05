@@ -14,7 +14,9 @@ categories: [main quest, benchmark, compatibility, optimization, design, evidenc
 
 Define what best means for the assigned user before final testing. Record hardware, operating system, benchmark version, run conditions, units, and baseline results. Use evidence to identify a bottleneck and propose an approved compatible change.
 
-After the change, complete the inspection gate and rerun the same tests under the same conditions. Report boot/login time, a CPU task, a memory task, a storage task, temperature evidence, and one user-task measure where suitable.
+Formal benchmarking begins after the system is operational. USB live-session boot time is a deployment check, not a fair benchmark. An approved storage improvement may be included when equipment is available, but an SSD installation is not required. SQ03 remains the deeper storage and expansion Side Quest.
+
+After the change, complete the inspection gate and rerun the same tests under identical conditions. Report boot/login time, a CPU task, a memory task, a storage task, temperature evidence, and one real user task such as loading Tinkercad or opening Inkscape.
 
 Submit the build plan, parts record, before/after table, graph, uncertainty note, and evidence-based recommendation.
 

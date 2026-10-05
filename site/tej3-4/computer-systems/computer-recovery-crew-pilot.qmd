@@ -1,0 +1,55 @@
+---
+title: "Computer Recovery Crew Pilot"
+description: "A limited Side Quest deployment route for preparing classroom computers without completing CS01-CS08 early."
+pathway: "Side Quest pilot"
+categories: [side quest, recovery crew, pilot, Xubuntu, Intel Mac, diagnostics, triage, approval gates, developing difficulty, 90 minutes, supervised hardware, physical lab]
+---
+
+::: {.callout-important title="Entry and scope"}
+Power Circuits Questions 1-6 must be complete first. Places are limited. Work only on the assigned machine. This pilot prepares equipment quickly and does not complete CS01-CS08 early.
+:::
+
+## Pilot deployment route
+
+1. Record the known-condition baseline.
+2. Complete safe opening with ESD controls.
+3. Inventory installed parts, RAM, and storage.
+4. Complete the reassembly inspection.
+5. Obtain the teacher's ready-to-power signature.
+6. Observe POST and firmware on a PC, or run Apple Diagnostics on an Intel Mac.
+7. Run the Xubuntu 26.04 LTS live-session tests.
+8. Classify the machine green, yellow, or red.
+9. Complete only teacher-approved hardware work.
+10. Install only after teacher approval.
+11. Complete acceptance testing.
+
+Quick live-session tests cover display, keyboard, mouse, USB, Ethernet, Wi-Fi, sound, and storage visibility. USB boot time is not a fair benchmark. Formal before-and-after benchmarking remains in CS08.
+
+## Safety and data gates
+
+Students never open or probe inside a PSU, create a short, invent a fault, move unapproved parts, force a connector, or erase or partition a drive without written teacher approval. Do not photograph passwords, network secrets, private screens, or unnecessary serial numbers.
+
+A teacher signature is required before power, moving RAM, replacing storage, erasing, partitioning, or installing. The machine does not need to work for the student to succeed. Assessment uses safety, documentation, reasoning, and following approval gates.
+
+## Deployment policy
+
+- Xubuntu 26.04 LTS is the standard student desktop.
+- Lubuntu 26.04 LTS is a fallback for exceptionally weak hardware.
+- Ubuntu Server is reserved for a later dedicated SSH and systems-administration machine.
+
+## Google Classroom-ready posting
+
+**Title:** Computer Recovery Crew Pilot  
+**Topic:** Side Quests
+
+Power Circuits Questions 1-6 must be complete first. Places are limited. Students work only on the assigned machine. Submit the completed job sheet and approved photos. Success is based on safe evidence, not whether the machine works. Teacher approval is required before power, hardware changes, or installation.
+
+## Downloads
+
+- [Pilot Job Sheet](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Job-Sheet.pdf)
+- [Teacher Launch Guide](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Teacher-Launch-Guide.pdf) (staff planning resource)
+- [Formal CS01-CS08 student packages](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf)
+
+Official references: [Xubuntu 26.04](https://xubuntu.org/release/26.04/), [Ubuntu bootable USB guidance](https://ubuntu.com/desktop/docs/en/latest/how-to/create-a-bootable-usb-stick/), [Apple Intel startup keys](https://support.apple.com/102603), and [Apple Diagnostics](https://support.apple.com/102550).
+
+**Return to:** [Basic Computer Systems hub](index.qmd)

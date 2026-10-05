@@ -1,10 +1,14 @@
 ---
 title: "Basic Computer Systems"
-description: "A short Main Quest from basic electricity to a safe, upgraded, benchmarked Linux workstation, followed by optional Side Quests."
-categories: [computer systems, main quest, side quests, Linux, hardware, commissioning]
+description: "A short Main Quest from basic electricity to a safe, upgraded, benchmarked Xubuntu workstation, plus a separate recovery pilot and optional Side Quests."
+categories: [computer systems, main quest, side quests, recovery pilot, Xubuntu, Linux, hardware, commissioning]
 ---
 
 The required route moves quickly from the electricity you already know to useful computer service work. Complete CS01-CS08 in order. Choose Side Quests when time, equipment, and teacher approval allow.
+
+::: {.callout-note title="Current pilot is separate from the Main Quest"}
+All students complete Power Circuits Questions 1-6 first. A limited group of early finishers may join the [Computer Recovery Crew pilot](computer-recovery-crew-pilot.qmd) to prepare equipment. This quick deployment route does not complete CS01-CS08 early. The whole class later completes the formal Computer Power and Best Workstation Project.
+:::
 
 ![A desktop-computer cutaway showing the sealed power supply, motherboard, CPU, RAM, storage, expansion slots, and fan.](/assets/tej/Computer_System_Cutaway.svg){width=92%}
 
@@ -19,7 +23,7 @@ Never open or probe inside a power supply. Power off and unplug before changing 
 3. [CS03 Computer power and connections](cs03-power-connections.qmd)
 4. [CS04 Ready-to-power inspection and first boot](cs04-ready-to-power.qmd)
 5. [CS05 POST and BIOS/UEFI](cs05-post-firmware.qmd)
-6. [CS06 Linux Mint Xfce installation and commissioning](cs06-linux-mint.qmd)
+6. [CS06 Xubuntu 26.04 LTS installation and commissioning](cs06-linux-mint.qmd)
 7. [CS07 RAM compatibility, installation, and verification](cs07-ram-upgrade.qmd)
 8. [CS08 Build-the-best-computer challenge](cs08-benchmark-challenge.qmd)
 
@@ -35,6 +39,8 @@ Never open or probe inside a power supply. Power off and unplug before changing 
 ## Downloads
 
 - [Student activity packages](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf)
+- [Computer Recovery Crew Pilot Job Sheet](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Job-Sheet.pdf)
+- [Pilot Teacher Launch Guide](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Teacher-Launch-Guide.pdf) (staff planning resource)
 - [Electronics Quick Reference](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Quick-Reference.pdf)
 
 Teacher answer materials, fault cards, the master tracker, and the internal Leaderboard should remain in teacher-controlled locations. Students submit evidence through Google Classroom and do not edit the master tracker.
