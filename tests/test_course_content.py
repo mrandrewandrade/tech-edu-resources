@@ -22,8 +22,14 @@ class CourseContentTests(unittest.TestCase):
             self.assertNotIn("Identity, Listening & Communication", content)
         self.assertIn("0. [Expectations]", tas)
         self.assertIn("1. [N.I.C.E. Design Process]", tas)
-        self.assertIn("0. [Expectations]", tej)
-        self.assertIn("1. [Number Systems]", tej)
+        self.assertIn(
+            "0. [Course Orientation, Safety, Design Process, and Documentation]", tej
+        )
+        self.assertIn(
+            "1. [Number Systems, Measurement, Units, and Calculator Skills]", tej
+        )
+        self.assertIn("## Curriculum Roadmap", tej)
+        self.assertIn("[Open the complete curriculum roadmap](curriculum/index.qmd)", tej)
 
     def test_retired_lessons_are_compatibility_only(self) -> None:
         config = self.read("_quarto.yml")

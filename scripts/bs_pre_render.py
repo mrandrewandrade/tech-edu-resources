@@ -15,6 +15,13 @@ def run(command: list[str]) -> None:
 
 
 def main() -> int:
+    print("Generating the TEJ curriculum roadmap.")
+    run(
+        [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "build_tej_curriculum.py"),
+        ]
+    )
     print("Generating Technology Commons glossary.")
     run(
         [

@@ -22,6 +22,8 @@ project:
     - assets/teacher-slides.css
     - assets/tej-electronics.js
     - assets/tej-electronics.css
+    - assets/tej-curriculum.js
+    - assets/tej-curriculum.css
     - "assets/laser-cutting/**"
     - assets/bs-glossary-lookup.json
     - "assets/lore/**"
@@ -95,10 +97,12 @@ website:
       contents:
         - text: "Course Home"
           href: tej3-4/index.qmd
-        - section: "0. Expectations"
+        - text: "Curriculum Roadmap"
+          href: tej3-4/curriculum/index.qmd
+        - section: "0. Orientation, Safety & Design"
           href: tej3-4/00-expectations/index.qmd
           contents: []
-        - section: "1. Number Systems"
+        - section: "1. Numbers, Measurement & Calculator"
           href: tej3-4/01-number-systems/index.qmd
           contents:
             - text: "1.1 Significant Figures"
@@ -113,7 +117,7 @@ website:
               href: tej3-4/01-number-systems/04-engineering-notation.qmd
             - text: "1.6 Metric Prefixes"
               href: tej3-4/01-number-systems/05-metric-prefixes.qmd
-        - section: "2. Basic Electronics"
+        - section: "2-5. Electricity, Circuits & Components"
           href: tej3-4/02-basic-electronics/index.qmd
           contents:
             - text: "2.1 Charge, Voltage & Current"
@@ -124,7 +128,7 @@ website:
               href: tej3-4/02-basic-electronics/03-ohms-law.qmd
             - text: "2.4 Power & Energy"
               href: tej3-4/02-basic-electronics/04-power-energy.qmd
-        - section: "3. Digital Logic & Stable Inputs"
+        - section: "6. Digital Logic & Stable Inputs"
           href: tej3-4/03-digital-logic-inputs/index.qmd
           contents:
             - text: "3.1 Digital Voltage Levels"
@@ -141,7 +145,14 @@ website:
               href: tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.qmd
             - text: "3.7 Circuits Culminating Project"
               href: tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.qmd
-        - section: "4. Basic Computer Systems"
+        - section: "7. Fabrication & PCB Workflow"
+          href: tej3-4/curriculum/index.qmd#unit-7
+          contents:
+            - text: "Shared Fabrication Resources"
+              href: teaching-materials/index.qmd
+            - text: "Laser Cutting"
+              href: teaching-materials/laser-cutting/index.qmd
+        - section: "8. Basic Computer Systems"
           href: tej3-4/computer-systems/index.qmd
           contents:
             - text: "Main Mission: Power & Parts"
@@ -180,10 +191,28 @@ website:
                   href: tej3-4/computer-systems/sq05-power-thermal.qmd
                 - text: "SQ06 Repair & Reuse"
                   href: tej3-4/computer-systems/sq06-repair-reuse.qmd
-        - section: "5. Microcontrollers"
+        - section: "9. Linux & Operating Systems"
+          href: tej3-4/curriculum/index.qmd#unit-9
+          contents: []
+        - section: "10. Programming Fundamentals"
+          href: tej3-4/curriculum/index.qmd#unit-10
+          contents: []
+        - section: "11. Microcontrollers"
           href: tej3-4/04-microcontrollers/index.qmd
           contents: []
-        - section: "6. Control Systems & CNC"
+        - section: "12. Networking & Systems"
+          href: tej3-4/curriculum/index.qmd#unit-12
+          contents: []
+        - section: "13. Data Science & ML"
+          href: tej3-4/curriculum/index.qmd#unit-13
+          contents: []
+        - section: "14. Language Models & AI"
+          href: tej3-4/curriculum/index.qmd#unit-14
+          contents: []
+        - section: "15. Culminating Projects"
+          href: tej3-4/electronics-library/projects/index.qmd
+          contents: []
+        - section: "Bonus: Control Systems & CNC"
           href: tej3-4/05-control-systems/index.qmd
           contents:
             - text: "C01 Control-System Anatomy"
@@ -208,12 +237,7 @@ website:
               href: tej3-4/05-control-systems/c10-cnc.qmd
             - text: "C11 Culminating Project"
               href: tej3-4/05-control-systems/c11-culminating-project.qmd
-        - section: "7. General Fabrication (Shared)"
-          href: teaching-materials/index.qmd
-          contents:
-            - text: "Laser Cutting"
-              href: teaching-materials/laser-cutting/index.qmd
-        - section: "8. Electronics Library"
+        - section: "Electronics Library"
           href: tej3-4/electronics-library/index.qmd
           contents:
             - text: "H01 Safety & Lab Practice"
@@ -245,6 +269,7 @@ format:
       - assets/bs-components.css
       - assets/commons-overrides.css
       - assets/bs-learn.css
+      - assets/tej-curriculum.css
     include-after-body:
       - includes/bs-scripts.html
     include-in-header:

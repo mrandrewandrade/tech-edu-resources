@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / ".tools" / "review" / "tej-electronics"
 ROUTES = [
     "tej3-4/index.html",
+    "tej3-4/curriculum/index.html",
     "tej3-4/03-digital-logic-inputs/index.html",
     "tej3-4/03-digital-logic-inputs/02-switches-floating-inputs.html",
     "tej3-4/03-digital-logic-inputs/03-pull-down-inputs.html",
@@ -38,6 +39,7 @@ ROUTES = [
 ]
 SCREENSHOT_ROUTES = {
     "tej3-4/index.html",
+    "tej3-4/curriculum/index.html",
     "tej3-4/03-digital-logic-inputs/04-pull-up-active-low.html",
     "tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.html",
     "tej3-4/computer-systems/index.html",
@@ -84,9 +86,24 @@ def main():
                     assert response and response.ok, route
                     page.wait_for_load_state("networkidle")
                     assert page.locator("main").inner_text().strip(), f"Empty main: {route}"
-                    assert page.evaluate(
-                        "document.documentElement.scrollWidth <= innerWidth + 1"
-                    ), f"Horizontal overflow at {label}: {route}"
+                    overflow = page.evaluate(
+                        """() => ({
+                            pageWidth: document.documentElement.scrollWidth,
+                            viewportWidth: innerWidth,
+                            offenders: [...document.querySelectorAll('body *')]
+                                .filter((element) => element.getBoundingClientRect().right > innerWidth + 1)
+                                .slice(0, 8)
+                                .map((element) => ({
+                                    tag: element.tagName,
+                                    className: element.className,
+                                    right: Math.round(element.getBoundingClientRect().right),
+                                    text: (element.textContent || '').trim().slice(0, 80),
+                                })),
+                        })"""
+                    )
+                    assert overflow["pageWidth"] <= overflow["viewportWidth"] + 1, (
+                        f"Horizontal overflow at {label}: {route}: {overflow}"
+                    )
                     broken = page.locator("img").evaluate_all(
                         """(images) => images
                         .filter((image) => image.src.startsWith(location.origin)
@@ -94,6 +111,18 @@ def main():
                         .map((image) => image.src)"""
                     )
                     assert not broken, f"Broken images at {route}: {broken}"
+                    if route == "tej3-4/curriculum/index.html":
+                        cards = page.locator("[data-tej-roadmap-module]")
+                        assert cards.count() >= 150, "Roadmap module cards are missing"
+                        assert page.locator("[data-tej-roadmap-count]").inner_text().strip()
+                        search = page.locator("[data-tej-roadmap-search]")
+                        search.fill("pull-up")
+                        visible_cards = page.locator(
+                            "[data-tej-roadmap-module]:not([hidden])"
+                        )
+                        assert visible_cards.count() >= 1, "Roadmap search returned no results"
+                        assert visible_cards.count() < cards.count(), "Roadmap search did not filter"
+                        search.fill("")
                     if route in SCREENSHOT_ROUTES:
                         name = route.replace("/", "-").replace(".html", "")
                         page.screenshot(

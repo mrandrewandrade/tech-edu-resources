@@ -15,8 +15,9 @@ format:
 ::: {.tej-library-panel}
 ## Start here
 
-This hub follows the authoritative TEJ hardware-module sequence. H01, D01, C06, and the Basic Computer Systems layer have complete activity resources. Deeper programming, Linux, and systems lessons remain **Later** for implementation.
+This hub follows the authoritative TEJ hardware-module sequence. H01, D01, C06, and the Basic Computer Systems layer have complete activity resources. Deeper programming, Linux, and systems lessons remain **Planned** for implementation.
 
+- [Complete curriculum roadmap](../curriculum/index.qmd)
 - [Quick reference and handbook](#quick-reference-and-handbook)
 - [Hardware modules](#hardware-modules)
 - [Component index](components/index.qmd)
@@ -28,9 +29,9 @@ This hub follows the authoritative TEJ hardware-module sequence. H01, D01, C06, 
 ## Access legend
 
 <span class="tej-badge required">Required</span>
-<span class="tej-badge">Optional Level 4</span>
+<span class="tej-badge">Extension</span>
 <span class="tej-badge restricted">Restricted</span>
-<span class="tej-badge later">Later</span>
+<span class="tej-badge status-planned">Planned</span>
 
 Restricted links require the appropriate school Google Drive access. No copyrighted textbook PDF is hosted on this public site.
 :::
@@ -72,15 +73,15 @@ Ten questions: Q1 to Q5 required, Q6 to Q10 optional Level 4 evidence.
 
 <div class="tej-filter-row" aria-label="Filter hardware modules">
   <label>Search <input type="search" data-tej-search placeholder="Try fuse, parallel, motor, or Tinkercad"></label>
-  <label>Status <select data-tej-status><option value="all">All statuses</option><option value="reviewed">Reviewed</option><option value="planned">Planned</option></select></label>
+  <label>Status <select data-tej-status><option value="all">All statuses</option><option value="published">Published</option><option value="pilot">Pilot</option><option value="in-development">In development</option><option value="planned">Planned</option><option value="bonus">Bonus</option></select></label>
   <label>Access <select data-tej-access><option value="all">All access</option><option value="public">Public</option><option value="restricted">Restricted</option></select></label>
 </div>
 
 <p data-tej-count aria-live="polite"></p>
 
 <div class="tej-module-grid" data-tej-catalogue>
-<article class="tej-module-card" data-tej-module data-status="reviewed" data-access="public" data-search="H01 safety lab fuse switch LED bench supply DMM USB power bank automotive fuse panel">
-<span class="tej-badge required">Required</span> <span class="tej-badge">Reviewed</span>
+<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="H01 safety lab fuse switch LED bench supply DMM USB power bank automotive fuse panel">
+<span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span>
 <h3><a href="modules/h01-safety-lab-practice.qmd">H01 Safety and lab practice</a></h3>
 <p>Protected low-voltage circuit anatomy, GUESS calculation, meter placement, Tinkercad, physical build, troubleshooting, and reflection.</p>
 </article>
@@ -109,22 +110,22 @@ Ten questions: Q1 to Q5 required, Q6 to Q10 optional Level 4 evidence.
 <article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H24 555 timer flasher monostable astable"><span class="tej-badge required">Required</span><h3>H24 555 timer</h3><p>Planned from the Hardware Modules tab.</p></article>
 <article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H25 AC impedance resonance filters"><span class="tej-badge">Optional Level 4</span><h3>H25 AC impedance, resonance, and filters</h3><p>Planned extension.</p></article>
 <article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H26 amplifier op amp sensor"><span class="tej-badge">Optional Level 4</span><h3>H26 Amplifiers and op-amps</h3><p>Planned extension.</p></article>
-<article class="tej-module-card" data-tej-module data-status="reviewed" data-access="public" data-search="D01 digital input GPIO switch floating pull-up pull-down active-low debounce protection logic gate">
-<span class="tej-badge required">Required</span> <span class="tej-badge">Reviewed</span>
+<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="D01 digital input GPIO switch floating pull-up pull-down active-low debounce protection logic gate">
+<span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span>
 <h3><a href="../03-digital-logic-inputs/index.qmd">D01 Digital inputs and stable switches</a></h3>
 <p>Required pre-microcontroller sequence with authoritative circuits, state tables, debouncing, compatibility, and a logic-system project.</p>
 </article>
-<article class="tej-module-card" data-tej-module data-status="reviewed" data-access="public" data-search="CS01 CS02 CS03 CS04 CS05 CS06 CS07 CS08 SQ01 SQ02 SQ03 SQ04 SQ05 SQ06 computer systems Xubuntu Lubuntu recovery pilot RAM benchmark POST BIOS UEFI repair thermal">
-<span class="tej-badge required">Main Quest</span> <span class="tej-badge">Side Quests</span> <span class="tej-badge">Reviewed</span>
+<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="CS01 CS02 CS03 CS04 CS05 CS06 CS07 CS08 SQ01 SQ02 SQ03 SQ04 SQ05 SQ06 computer systems Xubuntu Lubuntu recovery pilot RAM benchmark POST BIOS UEFI repair thermal">
+<span class="tej-badge required">Main Quest</span> <span class="tej-badge">Side Quests</span> <span class="tej-badge status-published">Published</span>
 <h3><a href="../computer-systems/index.qmd">CS01-CS08 Basic Computer Systems</a></h3>
 <p>Fast electricity bridge, safe opening, power connections, first boot, firmware, Xubuntu 26.04 LTS, RAM upgrade, benchmarking, a separate recovery pilot, and six optional service extensions.</p>
 </article>
-<article class="tej-module-card" data-tej-module data-status="reviewed" data-access="public" data-search="C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 control PID CNC LinuxCNC state machine motor feedback">
-<span class="tej-badge required">Required</span> <span class="tej-badge">Reviewed pathway</span>
+<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 control PID CNC LinuxCNC state machine motor feedback">
+<span class="tej-badge">Bonus pathway</span> <span class="tej-badge status-published">Published</span>
 <h3><a href="../05-control-systems/index.qmd">C01-C11 Control Systems and CNC</a></h3>
 <p>Open and closed loop control, hysteresis, proportional and PID control, state machines, safety interlocks, motion control, CNC, and a culminating project.</p>
 </article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="PCBA electronics manufacturing PCB assembly soldering inspection"><span class="tej-badge later">Later</span><h3>PCBA electronics manufacturing</h3><p>Retained as a later pathway after circuits, interfacing, and control systems.</p></article>
+<article class="tej-module-card" data-tej-module data-status="bonus" data-access="public" data-search="PCBA electronics manufacturing PCB assembly soldering inspection"><span class="tej-badge status-bonus">Bonus</span><h3>PCBA electronics manufacturing</h3><p>Retained as an optional later pathway after circuits, interfacing, fabrication, and control systems.</p></article>
 </div>
 
 ## Restricted references

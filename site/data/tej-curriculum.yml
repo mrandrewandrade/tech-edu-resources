@@ -1,0 +1,1420 @@
+schema_version: 1
+updated: 2026-10-04
+title: TEJ Curriculum Roadmap
+purpose: >-
+  Curriculum-only public metadata for the complete TEJ learning pathway. This file
+  must never contain student numbers, aliases, scores, private notes, credentials,
+  teacher-only links, or leaderboard data.
+
+statuses:
+  - Published
+  - Pilot
+  - In development
+  - Planned
+  - Bonus
+  - Restricted source
+
+access_levels:
+  - Public
+  - Teacher only
+  - Classroom restricted
+  - External official source
+
+sources:
+  - source_id: ON-TEJ
+    title: Ontario Technological Education, Grades 11 and 12
+    use: Curriculum expectations and program framing
+    url: https://www.edu.gov.on.ca/eng/curriculum/secondary/2009teched1112curr.pdf
+    access_level: External official source
+    copyright_permissions_note: Link to the official source. Do not republish the document as site content.
+  - source_id: GROWING-SUCCESS
+    title: Growing Success
+    use: Assessment and evaluation policy
+    url: https://www.edu.gov.on.ca/eng/policyfunding/growSuccess.pdf
+    access_level: External official source
+    copyright_permissions_note: Link to the official source. Summaries must be original.
+  - source_id: AAC
+    title: All About Circuits textbook
+    use: Open electronics reference
+    url: https://www.allaboutcircuits.com/textbook/
+    access_level: External official source
+    copyright_permissions_note: Link to the source and verify page-level licence requirements before reuse.
+  - source_id: CASIO-FX991
+    title: Casio fx-570ES PLUS and fx-991ES PLUS User's Guide
+    use: Calculator workflow and notation
+    url: https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/004-en/f/fx-570_991ES_PLUS_EN.pdf
+    access_level: External official source
+    copyright_permissions_note: Link to the official manual. Use original classroom explanations and screenshots only when permitted.
+  - source_id: ISLP
+    title: An Introduction to Statistical Learning with Python
+    use: Teacher and reference source for the planned machine-learning pathway
+    url: https://www.statlearning.com/
+    access_level: External official source
+    copyright_permissions_note: Link to the official site. Do not copy or republish the textbook.
+  - source_id: GOOGLE-MLCC
+    title: Google Machine Learning Crash Course
+    use: Supplementary interactive machine-learning material
+    url: https://developers.google.com/machine-learning/crash-course/
+    access_level: External official source
+    copyright_permissions_note: Link to selected official modules and follow the source licence and attribution requirements.
+  - source_id: GOOGLE-RECSYS
+    title: Google Recommendation Systems
+    use: Supplementary recommender-systems material
+    url: https://developers.google.com/machine-learning/recommendation
+    access_level: External official source
+    copyright_permissions_note: Link to the official course and follow the source licence and attribution requirements.
+  - source_id: KARPATHY-ZERO-HERO
+    title: Neural Networks - Zero to Hero
+    use: Advanced reference after solid Python and introductory mathematics
+    url: https://karpathy.ai/zero-to-hero.html
+    access_level: External official source
+    copyright_permissions_note: Link to the official course. Do not imply it is a required beginner course.
+  - source_id: GROB
+    title: Grob's Basic Electronics, 12th edition
+    use: Teacher planning source for electronics sequencing and experiments
+    url: ''
+    access_level: Classroom restricted
+    copyright_permissions_note: Classroom source available through the teacher. Do not upload scans or chapters publicly.
+  - source_id: OPEN-CIRCUITS
+    title: Open Circuits
+    use: Restricted visual reference for component interiors
+    url: ''
+    access_level: Classroom restricted
+    copyright_permissions_note: Classroom source available through the teacher. Use original diagrams or separately cleared assets publicly.
+  - source_id: MAKE-ELECTRONICS
+    title: Make - Electronics
+    use: Teacher reference for hands-on build ideas
+    url: ''
+    access_level: Classroom restricted
+    copyright_permissions_note: Classroom source available through the teacher. Do not publish copied pages or diagrams.
+
+units:
+  - unit_id: '0'
+    title: Course Orientation, Safety, Design Process, and Documentation
+    short_description: Establish safe practice, the design process, evidence standards, privacy, attribution, and documentation habits.
+    status: Published
+    pathway: core
+    prerequisites: []
+    estimated_time: 3-5 periods
+    simulation_requirement: Optional orientation only
+    physical_lab_requirement: Required safety orientation
+    equipment: [PPE, emergency equipment, low-voltage training equipment]
+    software: [Google Drive, browser]
+    safety_level: Foundational
+    student_deliverables: [safety agreement, design-process record, documentation sample]
+    assessment_evidence: [safe conduct, hazard identification, clear source attribution]
+    public_notes_route: tej3-4/00-expectations/index.qmd
+    student_handout: Published course materials
+    teacher_guide: Teacher controlled
+    slides: Existing course orientation slides
+    source_references: [ON-TEJ, GROWING-SUCCESS]
+    access_level: Public
+    copyright_permissions_note: Original summaries and openly shareable course materials only.
+    implementation_notes: Keep safety, accessibility, privacy, and documentation visible throughout the course.
+    module_defaults: &unit0_defaults
+      status: Planned
+      pathway: core
+      prerequisites: []
+      estimated_time: 1-2 periods
+      simulation_requirement: Not required
+      physical_lab_requirement: Required
+      equipment: [PPE, classroom safety equipment]
+      software: [Google Drive]
+      safety_level: Foundational
+      student_deliverables: [short safety or documentation record]
+      assessment_evidence: [accurate procedure, safe practice, complete documentation]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned or existing course slides
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original course content and official links only.
+      implementation_notes: Publish only after accessibility and classroom checks.
+    modules:
+      - module_id: OR01
+        title: Course orientation and learning pathways
+        short_description: Understand course expectations, core and optional pathways, assessment evidence, and how to use the public library.
+        status: Published
+        public_notes_route: tej3-4/00-expectations/index.qmd
+      - module_id: H01
+        title: Safety, emergency response, and ESD
+        short_description: Identify electrical, thermal, mechanical, chemical, and electrostatic hazards and respond safely.
+        status: Published
+        public_notes_route: tej3-4/electronics-library/modules/h01-safety-lab-practice.qmd
+      - module_id: OR03
+        title: Design process and technical documentation
+        short_description: Define needs, investigate options, plan, build, test, revise, cite sources, and keep an evidence trail.
+        status: In development
+        physical_lab_requirement: Optional
+      - module_id: OR04
+        title: Privacy, copyright, and responsible technology use
+        short_description: Protect personal information, distinguish public and restricted sources, and document permitted reuse.
+        status: In development
+        physical_lab_requirement: Not required
+
+  - unit_id: '1'
+    title: Number Systems, Measurement, Units, and Calculator Skills
+    short_description: Build the quantitative habits required for circuit analysis, programming, and data work.
+    status: Published
+    pathway: core
+    prerequisites: [Unit 0]
+    estimated_time: 8-12 periods
+    simulation_requirement: Not required
+    physical_lab_requirement: Optional measurement stations
+    equipment: [scientific calculator, ruler, DMM]
+    software: [browser]
+    safety_level: Low
+    student_deliverables: [worked calculations, calculator evidence, measurement record]
+    assessment_evidence: [correct units, significant figures, notation, and calculator workflow]
+    public_notes_route: tej3-4/01-number-systems/index.qmd
+    student_handout: Published lessons and practice
+    teacher_guide: Teacher controlled
+    slides: Existing number-systems slides
+    source_references: [CASIO-FX991, ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original explanations with links to official manuals.
+    implementation_notes: Keep calculator keystrokes secondary to mathematical meaning.
+    module_defaults: &unit1_defaults
+      status: Published
+      pathway: core
+      prerequisites: [Unit 0]
+      estimated_time: 1-2 periods
+      simulation_requirement: Not required
+      physical_lab_requirement: Optional
+      equipment: [scientific calculator]
+      software: [browser]
+      safety_level: Low
+      student_deliverables: [worked examples and practice]
+      assessment_evidence: [correct process, notation, units, and answer]
+      public_notes_route: tej3-4/01-number-systems/index.qmd
+      student_handout: Published lesson practice
+      teacher_guide: Teacher controlled
+      slides: Existing slides
+      source_references: [CASIO-FX991]
+      access_level: Public
+      copyright_permissions_note: Original explanations and official links.
+      implementation_notes: Maintain accessible examples and explicit calculator steps.
+    modules:
+      - module_id: "NS01"
+        title: "Binary, decimal, and hexadecimal"
+        short_description: "Convert and interpret values across number systems used in electronics and computing."
+      - module_id: "NS02"
+        title: "Measurement and units"
+        short_description: "Record measured quantities with units and distinguish measured precision from exact counts."
+      - module_id: "NS03"
+        title: "Significant figures"
+        short_description: "Apply significant-figure and decimal-place rules to calculations."
+        public_notes_route: "tej3-4/01-number-systems/01-significant-figures.qmd"
+      - module_id: "NS04"
+        title: "Scientific notation and powers of ten"
+        short_description: "Represent and calculate with very large and small values."
+        public_notes_route: "tej3-4/01-number-systems/03-scientific-notation.qmd"
+      - module_id: "NS05"
+        title: "Engineering notation and metric prefixes"
+        short_description: "Express technical values in powers of one thousand and standard prefixes."
+        public_notes_route: "tej3-4/01-number-systems/04-engineering-notation.qmd"
+      - module_id: "NS06"
+        title: "Scientific calculator and GUESS workflow"
+        short_description: "Enter expressions reliably and present Given, Unknown, Equation, Substitute, and Solve evidence."
+        public_notes_route: "tej3-4/01-number-systems/06-scientific-calculator.qmd"
+
+  - unit_id: '2'
+    title: Electricity, Charge, Voltage, Current, Resistance, Power, and Energy
+    short_description: Develop a practical model of electrical quantities, sources, loads, AC, and DC.
+    status: Published
+    pathway: core
+    prerequisites: [Unit 1]
+    estimated_time: 8-12 periods
+    simulation_requirement: Recommended for comparison
+    physical_lab_requirement: Required low-voltage investigations
+    equipment: [protected low-voltage source, DMM, resistive loads]
+    software: [Tinkercad Circuits]
+    safety_level: Low-voltage electrical
+    student_deliverables: [concept explanations, GUESS calculations, measurement comparison]
+    assessment_evidence: [correct quantity relationships, units, safety decisions]
+    public_notes_route: tej3-4/02-basic-electronics/index.qmd
+    student_handout: Published core lessons
+    teacher_guide: Teacher controlled
+    slides: Existing basic-electricity slides
+    source_references: [GROB, AAC, OPEN-CIRCUITS]
+    access_level: Public
+    copyright_permissions_note: Public pages use original text and diagrams. Restricted sources remain teacher controlled.
+    implementation_notes: Preserve the completed basic-electricity sequence and expand only with verified resources.
+    module_defaults: &unit2_defaults
+      status: Published
+      pathway: core
+      prerequisites: [Unit 1]
+      estimated_time: 2-3 periods
+      simulation_requirement: Recommended
+      physical_lab_requirement: Required
+      equipment: [protected low-voltage source, DMM, resistors]
+      software: [Tinkercad Circuits]
+      safety_level: Low-voltage electrical
+      student_deliverables: [calculation, explanation, measured or simulated comparison]
+      assessment_evidence: [accurate units, model, and safety reasoning]
+      public_notes_route: tej3-4/02-basic-electronics/index.qmd
+      student_handout: Published lesson practice
+      teacher_guide: Teacher controlled
+      slides: Existing slides
+      source_references: [GROB, AAC]
+      access_level: Public
+      copyright_permissions_note: Original summaries with source citations.
+      implementation_notes: Do not expose restricted textbook pages.
+    modules:
+      - module_id: "H02"
+        title: "Charge, voltage, and current"
+        short_description: "Relate charge, potential difference, current, and resistance to practical sources and loads."
+        public_notes_route: "tej3-4/02-basic-electronics/01-charge-voltage-current.qmd"
+      - module_id: "EL02"
+        title: "Resistance, closed paths, opens, and shorts"
+        short_description: "Explain opposition to current and identify safe and unsafe circuit states."
+        public_notes_route: "tej3-4/02-basic-electronics/02-circuits-opens-shorts.qmd"
+      - module_id: "H08"
+        title: "Power and energy"
+        short_description: "Calculate electrical power and energy and distinguish ratings from actual use."
+        public_notes_route: "tej3-4/02-basic-electronics/04-power-energy.qmd"
+      - module_id: "H03"
+        title: "AC and DC"
+        short_description: "Compare polarity, direction, waveform, frequency, common sources, and safe classroom measurements."
+        status: "In development"
+
+  - unit_id: '3'
+    title: DC Circuit Analysis
+    short_description: Analyze series, parallel, and mixed DC circuits with Ohm's law, KCL, KVL, dividers, equivalent resistance, and fault reasoning.
+    status: In development
+    pathway: core
+    prerequisites: [Unit 2]
+    estimated_time: 15-22 periods
+    simulation_requirement: Required for verification
+    physical_lab_requirement: Required
+    equipment: [breadboards, protected DC sources, DMMs, resistor kits]
+    software: [Tinkercad Circuits]
+    safety_level: Low-voltage electrical
+    student_deliverables: [GUESS calculations, schematics, simulations, measured comparisons, fault diagnosis]
+    assessment_evidence: [equations before substitution, units, full calculator result, correct precision, interpretation]
+    public_notes_route: tej3-4/02-basic-electronics/index.qmd
+    student_handout: Partly published; full sequence in development
+    teacher_guide: Teacher controlled
+    slides: Existing and planned circuit-analysis slides
+    source_references: [GROB, AAC, CASIO-FX991]
+    access_level: Public
+    copyright_permissions_note: Original worked examples and diagrams with citations.
+    implementation_notes: Do not label planned series and parallel packages as complete.
+    module_defaults: &unit3_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [H02, EL02]
+      estimated_time: 2-3 periods
+      simulation_requirement: Required
+      physical_lab_requirement: Required
+      equipment: [breadboard, protected DC source, DMM, resistors]
+      software: [Tinkercad Circuits]
+      safety_level: Low-voltage electrical
+      student_deliverables: [GUESS solution, schematic, simulation, measurement table]
+      assessment_evidence: [correct analysis and calculated-simulated-measured comparison]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [GROB, AAC]
+      access_level: Public
+      copyright_permissions_note: Original calculations and diagrams only.
+      implementation_notes: Build and verify the complete resource package before publication.
+    modules:
+      - module_id: "H07"
+        title: "Ohm's law"
+        short_description: "Solve for voltage, current, and resistance and check whether the answer is physically reasonable."
+        status: "Published"
+        public_notes_route: "tej3-4/02-basic-electronics/03-ohms-law.qmd"
+      - module_id: "H09"
+        title: "Series circuits"
+        short_description: "Apply current equality, voltage division, equivalent resistance, total power, and open-circuit behaviour."
+      - module_id: "H10"
+        title: "Parallel circuits"
+        short_description: "Apply voltage equality, branch current, total current, equivalent resistance, power, opens, and shorts."
+      - module_id: "H11"
+        title: "Series-parallel circuits with KCL and KVL"
+        short_description: "Reduce mixed networks and use Kirchhoff's laws to solve and check them."
+      - module_id: "H12"
+        title: "Voltage dividers, current dividers, and equivalent resistance"
+        short_description: "Design and analyze divider networks and recognize loading effects."
+      - module_id: "H13"
+        title: "Thevenin, Norton, and maximum power"
+        short_description: "Model a network at two terminals as an advanced bridge."
+        pathway: "extension"
+        status: "Bonus"
+      - module_id: "H16"
+        title: "Faults, opens, shorts, and troubleshooting"
+        short_description: "Predict symptoms and use evidence to locate a fault safely."
+      - module_id: "DC07"
+        title: "GUESS and calculator workflow"
+        short_description: "Present a complete calculation trail with exact equations, units, precision, and an answer sentence."
+        status: "Published"
+        public_notes_route: "tej3-4/01-number-systems/06-scientific-calculator.qmd"
+
+  - unit_id: '4'
+    title: Breadboarding, Schematics, Simulation, and Measurement
+    short_description: Translate real systems into clean breadboards and schematics, then compare calculated, simulated, and measured behaviour.
+    status: In development
+    pathway: core
+    prerequisites: [Units 2 and 3]
+    estimated_time: 12-18 periods
+    simulation_requirement: Required
+    physical_lab_requirement: Required
+    equipment: [breadboards, leads, protected sources, DMMs, components]
+    software: [Tinkercad Circuits, KiCad]
+    safety_level: Low-voltage lab
+    student_deliverables: [breadboard build, schematic, simulation, measurement plan, uncertainty statement]
+    assessment_evidence: [clean wiring, correct symbols, meter safety, agreement and explained differences]
+    public_notes_route: tej3-4/electronics-library/index.qmd
+    student_handout: H01 published; remaining packages planned
+    teacher_guide: Teacher controlled
+    slides: Mixed published and planned
+    source_references: [GROB, AAC]
+    access_level: Public
+    copyright_permissions_note: Original diagrams and procedures. Restricted source material stays teacher controlled.
+    implementation_notes: This unit precedes component projects, PCB work, and Linux.
+    module_defaults: &unit4_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [H07]
+      estimated_time: 2-3 periods
+      simulation_requirement: Required
+      physical_lab_requirement: Required
+      equipment: [breadboard, DMM, protected DC source, leads]
+      software: [Tinkercad Circuits, KiCad]
+      safety_level: Low-voltage lab
+      student_deliverables: [schematic, build, test record]
+      assessment_evidence: [safe setup, accurate translation, clear evidence]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [GROB, AAC]
+      access_level: Public
+      copyright_permissions_note: Original diagrams and instructions only.
+      implementation_notes: Publish after diagram, accessibility, and lab verification.
+    modules:
+      - module_id: "H04"
+        title: "Sources, conductors, controls, protection, and loads"
+        short_description: "Identify the functional parts of a circuit and trace power through a real device."
+        status: "Published"
+        public_notes_route: "tej3-4/electronics-library/modules/h01-safety-lab-practice.qmd"
+      - module_id: "BB02"
+        title: "Breadboard anatomy and clean wiring"
+        short_description: "Use rails, terminal strips, colour conventions, routing, and checks to build readable circuits."
+      - module_id: "BB03"
+        title: "Schematic symbols and Tinkercad verification"
+        short_description: "Translate between a real build, a standard schematic, and a simulation."
+      - module_id: "BB04"
+        title: "KiCad schematic capture"
+        short_description: "Draw, annotate, connect, and check a basic circuit schematic in KiCad."
+      - module_id: "H05"
+        title: "Multimeter safety and measurement modes"
+        short_description: "Measure continuity, resistance, voltage, and current using the correct power state, jack, range, and meter placement."
+      - module_id: "BB06"
+        title: "Measurement uncertainty and comparison"
+        short_description: "Compare calculated, simulated, and measured values and explain tolerance and measurement limits."
+
+  - unit_id: '5'
+    title: Electronic Components and Applied Circuits
+    short_description: Understand component behaviour by building useful low-voltage circuits with resistors, sensors, semiconductors, timing, and actuators.
+    status: Planned
+    pathway: core
+    prerequisites: [Unit 4]
+    estimated_time: 20-30 periods
+    simulation_requirement: Required where models are suitable
+    physical_lab_requirement: Required
+    equipment: [component kits, DMMs, protected sources, breadboards, oscilloscope when available]
+    software: [Tinkercad Circuits, KiCad]
+    safety_level: Low-voltage lab with stored-energy and inductive-load controls
+    student_deliverables: [component records, calculations, simulations, builds, troubleshooting evidence]
+    assessment_evidence: [ratings, polarity, protection, measurements, functional explanation]
+    public_notes_route: tej3-4/electronics-library/components/index.qmd
+    student_handout: Planned modular packages
+    teacher_guide: Teacher controlled
+    slides: Planned modular slides
+    source_references: [GROB, AAC, MAKE-ELECTRONICS, OPEN-CIRCUITS]
+    access_level: Public
+    copyright_permissions_note: Use original public diagrams and link to official or licensed sources.
+    implementation_notes: Inductors and op-amps are extensions. All hardware limits must be explicit.
+    module_defaults: &unit5_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Unit 4]
+      estimated_time: 2-4 periods
+      simulation_requirement: Required where available
+      physical_lab_requirement: Required
+      equipment: [breadboard, DMM, protected source, relevant components]
+      software: [Tinkercad Circuits, KiCad]
+      safety_level: Low-voltage lab
+      student_deliverables: [calculation, schematic, build, test record]
+      assessment_evidence: [correct component selection, protection, and interpretation]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [GROB, AAC]
+      access_level: Public
+      copyright_permissions_note: Original classroom materials with citations.
+      implementation_notes: Confirm stock, ratings, and safe failure modes before release.
+    modules:
+      - module_id: "H06"
+        title: "Resistors, potentiometers, LDRs, and sensors"
+        short_description: "Select and measure fixed and variable resistive components and use them in dividers."
+      - module_id: "H14"
+        title: "Conductors and protection"
+        short_description: "Relate conductor size, resistance, voltage drop, heat, current rating, fuses, and breakers."
+      - module_id: "H15"
+        title: "Batteries and sources"
+        short_description: "Compare cells, packs, internal resistance, capacity, charging limits, and source selection."
+      - module_id: "H17"
+        title: "Magnetism and electromagnetism"
+        short_description: "Connect current, magnetic fields, coils, force, and practical electromagnetic devices."
+      - module_id: "H19"
+        title: "Capacitors and RC response"
+        short_description: "Explain charge storage, time constant, filtering, timing, and safe handling."
+      - module_id: "H20"
+        title: "Inductors and magnetic energy"
+        short_description: "Explore inductance, back EMF, and LR response as an extension."
+        pathway: "extension"
+        status: "Bonus"
+      - module_id: "H21"
+        title: "Diodes and LEDs"
+        short_description: "Apply polarity, forward voltage, reverse blocking, current limiting, and diode-mode testing."
+      - module_id: "H22"
+        title: "Rectifiers and power supplies"
+        short_description: "Trace rectification, smoothing, regulation, and protected low-voltage supply blocks."
+      - module_id: "H18"
+        title: "Relays, solenoids, motors, and flyback protection"
+        short_description: "Separate control and load circuits and protect switching devices from inductive transients."
+      - module_id: "H23"
+        title: "Transistors as switches"
+        short_description: "Use a BJT or MOSFET to control a load within voltage, current, power, and thermal limits."
+      - module_id: "H24"
+        title: "555 timers"
+        short_description: "Build and calculate monostable and astable timing circuits."
+      - module_id: "H25"
+        title: "AC impedance, resonance, and filters"
+        short_description: "Explore frequency-dependent behaviour as an extension."
+        pathway: "extension"
+        status: "Bonus"
+      - module_id: "H26"
+        title: "Amplifiers and op-amps"
+        short_description: "Introduce gain, feedback, and sensor conditioning as an extension."
+        pathway: "extension"
+        status: "Bonus"
+
+  - unit_id: '6'
+    title: Digital Logic and Stable Inputs
+    short_description: Build defined, protected digital inputs and progress from gates and truth tables to combinational and sequential logic.
+    status: Published
+    pathway: core
+    prerequisites: [Units 3 to 5]
+    estimated_time: 15-22 periods
+    simulation_requirement: Required for logic verification
+    physical_lab_requirement: Required for stable-input circuits
+    equipment: [logic ICs or simulator, switches, pull resistors, LEDs, protected supplies]
+    software: [Tinkercad Circuits or logic simulator]
+    safety_level: Low-voltage digital
+    student_deliverables: [stable-input circuits, truth tables, Boolean expressions, logic project]
+    assessment_evidence: [defined states, correct binary test order, separate output columns, safe interfaces]
+    public_notes_route: tej3-4/03-digital-logic-inputs/index.qmd
+    student_handout: D01 worksheet and public lessons
+    teacher_guide: Teacher keys restricted
+    slides: Existing digital-input and logic resources
+    source_references: [AAC, ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original diagrams, tables, and explanations. Teacher keys remain restricted.
+    implementation_notes: Preserve the completed stable-input work. Add advanced logic without changing existing routes.
+    module_defaults: &unit6_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Unit 5]
+      estimated_time: 1-3 periods
+      simulation_requirement: Required
+      physical_lab_requirement: Optional unless noted
+      equipment: [switches, resistors, LEDs, logic hardware]
+      software: [logic simulator or Tinkercad Circuits]
+      safety_level: Low-voltage digital
+      student_deliverables: [truth table, Boolean expression, simulation or circuit]
+      assessment_evidence: [correct states, binary count order, output reasoning]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [AAC]
+      access_level: Public
+      copyright_permissions_note: Original logic diagrams and tables.
+      implementation_notes: Check logic-voltage compatibility before physical builds.
+    modules:
+      - module_id: "DL01"
+        title: "Binary, hexadecimal, and logic levels"
+        short_description: "Connect number representation to guaranteed high, low, indeterminate, and unsafe voltage ranges."
+        status: "Published"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/01-digital-levels.qmd"
+      - module_id: "DL02"
+        title: "Floating inputs and pull-down resistors"
+        short_description: "Explain why an open input floats and create a defined active-high input."
+        status: "Published"
+        physical_lab_requirement: "Required"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/03-pull-down-inputs.qmd"
+      - module_id: "DL03"
+        title: "Pull-ups and active-low logic"
+        short_description: "Use a resistor or internal pull-up with a grounded switch and interpret the pressed state as low."
+        status: "Published"
+        physical_lab_requirement: "Required"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/04-pull-up-active-low.qmd"
+      - module_id: "DL04"
+        title: "Debouncing and input protection"
+        short_description: "Control contact bounce and protect inputs from invalid voltage and current."
+        status: "Published"
+        physical_lab_requirement: "Required"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/05-debounce-protection.qmd"
+      - module_id: "DL05"
+        title: "Logic gates and Boolean algebra"
+        short_description: "Analyze NOT, AND, OR, NAND, NOR, XOR, and XNOR functions and expressions."
+        status: "Published"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.qmd"
+      - module_id: "DL06"
+        title: "Truth tables and binary test order"
+        short_description: "Count input combinations from zero upward and record each output in its own column."
+        status: "Published"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.qmd"
+      - module_id: "DL07"
+        title: "Karnaugh maps"
+        short_description: "Simplify small Boolean functions visually as an extension."
+        pathway: "extension"
+        status: "Bonus"
+      - module_id: "DL08"
+        title: "Adders and combinational logic"
+        short_description: "Build half adders, full adders, and multi-output combinational systems."
+      - module_id: "DL09"
+        title: "Sequential logic and state machines"
+        short_description: "Introduce memory, latches, flip-flops, states, events, and transitions."
+      - module_id: "DL10"
+        title: "Circuits culminating project"
+        short_description: "Design, simulate, build, test, and explain a stable-input logic system."
+        status: "Published"
+        physical_lab_requirement: "Required"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.qmd"
+
+  - unit_id: '7'
+    title: Fabrication and PCB Workflow
+    short_description: Move safely from breadboard prototypes to soldered assemblies, PCBs, connectors, enclosures, and manufacturing files.
+    status: Planned
+    pathway: core
+    prerequisites: [Units 4 and 5]
+    estimated_time: 15-25 periods
+    simulation_requirement: Not required; design-rule checks required
+    physical_lab_requirement: Required
+    equipment: [soldering stations, hand tools, fume controls, DMMs, 3D printer, laser cutter when available]
+    software: [KiCad, EasyEDA optional, CAD software]
+    safety_level: Shop and soldering
+    student_deliverables: [soldered practice board, inspected assembly, PCB files, BOM, enclosure plan]
+    assessment_evidence: [safe process, joint quality, continuity, design-rule checks, manufacturable files]
+    public_notes_route: teaching-materials/index.qmd
+    student_handout: Planned
+    teacher_guide: Teacher controlled
+    slides: Planned
+    source_references: [ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original procedures and diagrams with manufacturer links where needed.
+    implementation_notes: Place after breadboarding and components and before Linux. Advanced manufacturing remains optional.
+    module_defaults: &unit7_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Units 4 and 5]
+      estimated_time: 1-4 periods
+      simulation_requirement: Not required
+      physical_lab_requirement: Required
+      equipment: [soldering and fabrication equipment as applicable]
+      software: [KiCad]
+      safety_level: Shop and soldering
+      student_deliverables: [process evidence, inspected artifact, test record]
+      assessment_evidence: [safety, workmanship, continuity, documentation]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original classroom procedures and official links.
+      implementation_notes: Verify equipment, ventilation, and accessibility before release.
+    modules:
+      - module_id: "FAB01"
+        title: "Shop and soldering safety"
+        short_description: "Use PPE, fume controls, heat-safe work habits, tool checks, and emergency procedures."
+      - module_id: "FAB02"
+        title: "Wire preparation, connectors, and strain relief"
+        short_description: "Strip, tin, terminate, secure, identify, and inspect conductors and connectors."
+      - module_id: "FAB03"
+        title: "Through-hole soldering"
+        short_description: "Create reliable joints with correct heating, solder quantity, lead trimming, and inspection."
+      - module_id: "FAB04"
+        title: "Desoldering and perfboard"
+        short_description: "Remove components without damage and translate a proven circuit to perfboard."
+      - module_id: "FAB05"
+        title: "Inspection and continuity testing"
+        short_description: "Find bridges, opens, reversed parts, weak joints, and mechanical problems before power-up."
+      - module_id: "FAB06"
+        title: "Breadboard-to-schematic translation"
+        short_description: "Convert a verified prototype into a complete, annotated, electrically checked schematic."
+      - module_id: "FAB07"
+        title: "Schematic-to-PCB workflow"
+        short_description: "Use KiCad for footprints, placement, routing, design rules, and board checks; use EasyEDA only as an optional workflow."
+      - module_id: "FAB08"
+        title: "Gerbers, ordering, assembly, and grants"
+        short_description: "Export manufacturing files, follow an approved student ordering process, assemble, and inspect the board."
+      - module_id: "FAB09"
+        title: "Enclosures, 3D printing, laser cutting, and BOMs"
+        short_description: "Design a safe enclosure and document materials, parts, dimensions, and assembly."
+      - module_id: "FAB10"
+        title: "PCBA manufacturing and advanced CNC"
+        short_description: "Survey automated assembly and advanced fabrication as a later specialized pathway."
+        status: "Bonus"
+        pathway: "bonus"
+        physical_lab_requirement: "Optional"
+
+  - unit_id: '8'
+    title: Basic Computer Systems
+    short_description: Preserve the completed electricity-to-computer sprint, Linux commissioning sequence, service side quests, and current pilots.
+    status: Published
+    pathway: core
+    prerequisites: [Units 2 to 4]
+    estimated_time: 18-30 periods plus optional side quests
+    simulation_requirement: Not required
+    physical_lab_requirement: Required
+    equipment: [teacher-approved desktop computers, ESD equipment, tools, installer USB, test equipment]
+    software: [approved Linux distribution, benchmark tools]
+    safety_level: Computer service with sealed-PSU boundary
+    student_deliverables: [baseline, labelled evidence, readiness check, installation record, upgrade evidence, benchmark report]
+    assessment_evidence: [safe service, successful POST, verified configuration, repeatable comparison]
+    public_notes_route: tej3-4/computer-systems/index.qmd
+    student_handout: Published core packages and selected side quests
+    teacher_guide: Teacher controlled
+    slides: Existing Basic Electricity to Basic Computer Systems resources
+    source_references: [ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original public instructions and diagrams. Teacher fault cards and trackers remain restricted.
+    implementation_notes: Keep existing routes. The Power and Parts lab remains a shell until actual evidence and values are ready.
+    module_defaults: &unit8_defaults
+      status: Published
+      pathway: core
+      prerequisites: [Units 2 to 4]
+      estimated_time: 1-3 periods
+      simulation_requirement: Not required
+      physical_lab_requirement: Required
+      equipment: [teacher-approved desktop computer, ESD equipment, service tools]
+      software: [approved Linux distribution]
+      safety_level: Computer service with sealed-PSU boundary
+      student_deliverables: [task record and verification evidence]
+      assessment_evidence: [safe method, accurate identification, successful verification]
+      public_notes_route: tej3-4/computer-systems/index.qmd
+      student_handout: Published activity package
+      teacher_guide: Teacher controlled
+      slides: Existing slides
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original classroom resources only.
+      implementation_notes: Never open or probe a PSU. Teacher approval gates all power-up and hardware changes.
+    modules:
+      - module_id: "CS01"
+        title: "Electricity-to-computer bridge"
+        short_description: "Map source, protection, controls, conductors, and parallel loads onto a computer."
+        public_notes_route: "tej3-4/computer-systems/cs01-electricity-bridge.qmd"
+      - module_id: "CS02"
+        title: "Parts, baseline testing, ESD, and safe opening"
+        short_description: "Record the starting condition and identify essential parts before and after safe opening."
+        public_notes_route: "tej3-4/computer-systems/cs02-parts-baseline-esd.qmd"
+      - module_id: "CS03"
+        title: "PSU and power distribution"
+        short_description: "Trace power and data connections and distinguish PSU rating from actual use."
+        public_notes_route: "tej3-4/computer-systems/cs03-power-connections.qmd"
+      - module_id: "CS04"
+        title: "Ready-to-power inspection and first boot"
+        short_description: "Complete a supervised inspection gate and recognize normal startup behaviour."
+        public_notes_route: "tej3-4/computer-systems/cs04-ready-to-power.qmd"
+      - module_id: "CS05"
+        title: "POST and BIOS or UEFI"
+        short_description: "Observe POST, inspect firmware information, and explain the boot sequence."
+        public_notes_route: "tej3-4/computer-systems/cs05-post-firmware.qmd"
+      - module_id: "CS06"
+        title: "OS live-session testing, selection, and installation"
+        short_description: "Compare approved lightweight Linux options and safely install the selected classroom system."
+        public_notes_route: "tej3-4/computer-systems/cs06-linux-mint.qmd"
+      - module_id: "CS07"
+        title: "RAM compatibility and upgrade"
+        short_description: "Research, install, and verify a compatible memory upgrade."
+        public_notes_route: "tej3-4/computer-systems/cs07-ram-upgrade.qmd"
+      - module_id: "CS08"
+        title: "Benchmark and best-workstation challenge"
+        short_description: "Compare machines with repeatable tests and justify an evidence-based build."
+        public_notes_route: "tej3-4/computer-systems/cs08-benchmark-challenge.qmd"
+      - module_id: "SQ01"
+        title: "Controlled teardown and reassembly"
+        short_description: "Document and safely remove and reinstall approved field-replaceable parts."
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/sq01-teardown.qmd"
+      - module_id: "SQ02"
+        title: "POST and hardware fault stations"
+        short_description: "Diagnose teacher-prepared faults with one controlled change at a time."
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/sq02-fault-stations.qmd"
+      - module_id: "SQ03"
+        title: "Storage and expansion upgrades"
+        short_description: "Compare interfaces and complete an approved compatible upgrade."
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/sq03-storage-expansion.qmd"
+      - module_id: "SQ04"
+        title: "Linux hardware inventory and administration"
+        short_description: "Compare physical, firmware, and operating-system evidence."
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/sq04-linux-inventory.qmd"
+      - module_id: "SQ05"
+        title: "Power, efficiency, cooling, and thermal behaviour"
+        short_description: "Use external measurement and approved workloads to study power and thermal feedback."
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/sq05-power-thermal.qmd"
+      - module_id: "SQ06"
+        title: "Repair, reuse, recovery, and advanced commissioning"
+        short_description: "Return a machine to service or justify a safe reuse plan."
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/sq06-repair-reuse.qmd"
+      - module_id: "CSP01"
+        title: "Computer Power and Parts Lab Shell"
+        short_description: "Future lab shell awaiting the actual computer, photographs, approved method, and cited values."
+        status: "In development"
+        student_handout: "Fillable Google Doc shell"
+        public_notes_route: "tej3-4/computer-systems/computer-power-parts.qmd"
+      - module_id: "CSP02"
+        title: "Make It Print"
+        short_description: "Printer setup and verification Side Quest."
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/make-it-print.qmd"
+      - module_id: "CSP03"
+        title: "Computer Recovery and OS Comparison"
+        short_description: "Small-pair pilot comparing recovery and lightweight Linux options."
+        status: "Pilot"
+        pathway: "side quest"
+        public_notes_route: "tej3-4/computer-systems/computer-recovery-crew-pilot.qmd"
+
+  - unit_id: '9'
+    title: Linux and Operating Systems
+    short_description: Build a complete planned pathway from operating-system concepts and desktop use to safe command-line administration.
+    status: Planned
+    pathway: core
+    prerequisites: [Unit 8]
+    estimated_time: 20-30 periods
+    simulation_requirement: Optional virtual machine
+    physical_lab_requirement: Required on approved computers or Raspberry Pi hardware
+    equipment: [classroom computer or Raspberry Pi, installer media, approved storage]
+    software: [Xubuntu, Linux Mint Xfce, Lubuntu, terminal, SSH, tmux]
+    safety_level: Data, account, storage, and network safety
+    student_deliverables: [installation record, command-line tasks, administration evidence, backup and troubleshooting plan]
+    assessment_evidence: [least privilege, correct commands, safe storage choices, reproducible results]
+    public_notes_route: Not yet available
+    student_handout: Planned
+    teacher_guide: Teacher controlled
+    slides: Planned
+    source_references: [ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original instructions with official distribution and tool documentation links.
+    implementation_notes: Advanced administration is optional. Do not present the scope as implemented until lessons are tested.
+    module_defaults: &unit9_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Unit 8]
+      estimated_time: 1-3 periods
+      simulation_requirement: Optional virtual machine
+      physical_lab_requirement: Required
+      equipment: [approved Linux computer or Raspberry Pi]
+      software: [Linux desktop, terminal]
+      safety_level: Data and system administration
+      student_deliverables: [command transcript and short explanation]
+      assessment_evidence: [correct command choice, safe scope, verified outcome]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original instructions and official documentation links.
+      implementation_notes: Test commands against the approved classroom image before publication.
+    modules:
+      - module_id: "LX01"
+        title: "What an operating system does"
+        short_description: "Explain kernels, drivers, filesystems, processes, services, users, and interfaces."
+      - module_id: "LX02"
+        title: "Distributions and desktop environments"
+        short_description: "Compare Xubuntu, Mint Xfce, and Lubuntu for hardware fit, support, accessibility, and classroom use."
+        status: "Pilot"
+      - module_id: "LX03"
+        title: "Installation media, partitions, and filesystems"
+        short_description: "Prepare approved media and understand target drives, partitions, filesystems, and data-loss risk."
+      - module_id: "LX04"
+        title: "Users, groups, accounts, and permissions"
+        short_description: "Distinguish standard and administrator work and apply least privilege."
+      - module_id: "LX05"
+        title: "Files, directories, history, and the command-line explorer game"
+        short_description: "Navigate safely, use command history, and complete a structured exploration challenge."
+      - module_id: "LX06"
+        title: "Package management and open-source applications"
+        short_description: "Install, remove, update, and evaluate software from trusted sources."
+      - module_id: "LX07"
+        title: "Processes, services, logs, and configuration"
+        short_description: "Inspect running software, service state, logs, and configuration files."
+      - module_id: "LX08"
+        title: "Storage mounting, Windows drives, recovery, and privacy"
+        short_description: "Mount only approved drives, protect private data, and document recovery decisions."
+      - module_id: "LX09"
+        title: "SSH, tmux, and remote administration"
+        short_description: "Connect securely and collaborate in a teacher-approved remote terminal session."
+      - module_id: "LX10"
+        title: "Shell scripting, pipes, redirection, and scheduling"
+        short_description: "Build reviewable automation with safe inputs, logs, cron, and a teacher-approved yt-dlp example."
+      - module_id: "LX11"
+        title: "Backups, updates, and troubleshooting"
+        short_description: "Verify backups, apply updates, and diagnose power, hardware, OS, service, network, and application layers."
+      - module_id: "LX12"
+        title: "Customization, accessibility, and performance"
+        short_description: "Improve usability without creating unnecessary background load or instability."
+      - module_id: "LX13"
+        title: "Advanced Linux administration"
+        short_description: "Extend into services, hardening, deployment, and recovery only after core administration is secure."
+        status: "Bonus"
+        pathway: "bonus"
+
+  - unit_id: '10'
+    title: Programming Fundamentals
+    short_description: Use Python as an accessible general-purpose language and C or C++ for embedded work without forcing one device ecosystem.
+    status: Planned
+    pathway: core
+    prerequisites: [Units 1 and 6]
+    estimated_time: 30-45 periods
+    simulation_requirement: Optional
+    physical_lab_requirement: Optional until embedded modules
+    equipment: [computer, optional Raspberry Pi or Arduino-compatible board]
+    software: [Python, code editor, Git, C or C++ toolchain]
+    safety_level: Data, code, and connected-hardware safety
+    student_deliverables: [small programs, tests, documentation, version history, embedded exercise]
+    assessment_evidence: [correct logic, readable code, testing, debugging, source use, responsible AI use]
+    public_notes_route: Not yet available
+    student_handout: Planned
+    teacher_guide: Teacher controlled
+    slides: Planned
+    source_references: [ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original examples and links to official language and library documentation.
+    implementation_notes: Keep Python and embedded C or C++ connected but distinct.
+    module_defaults: &unit10_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Unit 1]
+      estimated_time: 2-4 periods
+      simulation_requirement: Optional
+      physical_lab_requirement: Not required
+      equipment: [computer]
+      software: [Python, code editor, Git]
+      safety_level: Data and code safety
+      student_deliverables: [working program, tests, documentation]
+      assessment_evidence: [correctness, readability, test evidence, explanation]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original code examples and official documentation links.
+      implementation_notes: Publish only after code is tested on classroom systems.
+    modules:
+      - module_id: "P01"
+        title: "Algorithms and pseudocode"
+        short_description: "Decompose a task and express precise steps before selecting syntax."
+      - module_id: "P02"
+        title: "Variables, data types, input, output, and operators"
+        short_description: "Store values, preserve units, interact with users, and evaluate expressions."
+      - module_id: "P03"
+        title: "Conditions and loops"
+        short_description: "Implement decisions, repetition, counters, and bounded iteration."
+      - module_id: "P04"
+        title: "Functions and scope"
+        short_description: "Create reusable interfaces with parameters, return values, local state, and documented contracts."
+      - module_id: "P05"
+        title: "Lists, arrays, and strings"
+        short_description: "Store, index, traverse, transform, and validate collections."
+      - module_id: "P06"
+        title: "Files, errors, and exceptions"
+        short_description: "Read and write approved data while handling missing, malformed, or unsafe inputs."
+      - module_id: "P07"
+        title: "Debugging, testing, documentation, and Git"
+        short_description: "Reproduce faults, design tests, explain decisions, and preserve a useful version history."
+      - module_id: "P08"
+        title: "Data representation, binary, bit operations, and serial communication"
+        short_description: "Connect program values to hardware states and exchanged bytes."
+      - module_id: "P09"
+        title: "Introductory objects and interfaces"
+        short_description: "Use simple objects where they improve structure and explore graphical or web interfaces as an extension."
+        pathway: "extension"
+      - module_id: "P10"
+        title: "Python on Linux and Raspberry Pi"
+        short_description: "Build command-line tools, data scripts, and approved hardware or service integrations."
+      - module_id: "P11"
+        title: "C and C++ for Arduino-compatible boards"
+        short_description: "Compile embedded programs, read board and library documentation, and respect memory and electrical limits."
+        physical_lab_requirement: "Required"
+        equipment: [Arduino-compatible board, protected interface circuit]
+        software: [Arduino-compatible C or C++ toolchain]
+      - module_id: "P12"
+        title: "Responsible use of AI coding assistants"
+        short_description: "Protect private data, verify output, cite assistance, test code, and retain human understanding and accountability."
+
+  - unit_id: '11'
+    title: Microcontrollers and Physical Computing
+    short_description: Build a hardware-neutral pathway for Arduino-compatible boards, Raspberry Pi, micro:bit, BeagleBone, and other available controllers.
+    status: Planned
+    pathway: core
+    prerequisites: [Units 5, 6, and 10]
+    estimated_time: 25-40 periods
+    simulation_requirement: Recommended where the selected board is supported
+    physical_lab_requirement: Required
+    equipment: [available controller boards, sensors, LEDs, buzzers, relays, motors, servos, protected supplies]
+    software: [board toolchain, serial monitor, optional simulator]
+    safety_level: Low-voltage embedded interfacing
+    student_deliverables: [board record, interface calculations, code, state model, integrated project]
+    assessment_evidence: [electrical limits, stable inputs, safe outputs, tested code, documentation]
+    public_notes_route: tej3-4/04-microcontrollers/index.qmd
+    student_handout: Planned
+    teacher_guide: Teacher controlled
+    slides: Planned
+    source_references: [ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original wiring diagrams and code with official board documentation links.
+    implementation_notes: Never assume all boards use the same voltage or current limits.
+    module_defaults: &unit11_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Units 6 and 10]
+      estimated_time: 2-4 periods
+      simulation_requirement: Recommended
+      physical_lab_requirement: Required
+      equipment: [selected controller board, breadboard, protected interface components]
+      software: [selected board toolchain, serial monitor]
+      safety_level: Low-voltage embedded interfacing
+      student_deliverables: [wiring diagram, code, test evidence]
+      assessment_evidence: [safe interface, correct behaviour, readable program]
+      public_notes_route: tej3-4/04-microcontrollers/index.qmd
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original materials and official documentation links.
+      implementation_notes: State the exact board, voltage limits, pins, and protection in every activity.
+    modules:
+      - module_id: "MC01"
+        title: "Board identification and GPIO limits"
+        short_description: "Identify the controller, logic voltage, current limits, power inputs, and protected connection rules."
+      - module_id: "MC02"
+        title: "Digital output and stable digital input"
+        short_description: "Drive LEDs safely and read pull-up or pull-down switch inputs before adding complexity."
+      - module_id: "MC03"
+        title: "Analog input, PWM, and timing"
+        short_description: "Convert sensor values, control average output, and schedule responsive behaviour."
+      - module_id: "MC04"
+        title: "Serial communication and sensors"
+        short_description: "Exchange diagnostic data and integrate documented digital or analog sensors."
+      - module_id: "MC05"
+        title: "Buzzers, relays, motors, and servos"
+        short_description: "Drive actuators through suitable interfaces, separate power paths, and apply flyback protection."
+      - module_id: "MC06"
+        title: "State machines and debouncing"
+        short_description: "Build non-blocking behaviour with states, events, transitions, timers, and stable inputs."
+      - module_id: "MC07"
+        title: "Interrupts"
+        short_description: "Use interrupts only where justified and explain timing, shared-state, and debugging limits."
+        pathway: "extension"
+        status: "Bonus"
+      - module_id: "MC08"
+        title: "Data logging"
+        short_description: "Record timestamped measurements with sampling, units, metadata, and error handling."
+      - module_id: "MC09"
+        title: "Networking and voltage-level interfacing"
+        short_description: "Add networking as an extension and safely connect devices with different logic voltages."
+        pathway: "extension"
+      - module_id: "MC10"
+        title: "Physical-computing project pathways"
+        short_description: "Build a documented sensor, actuator, accessibility, game-controller, or data-logging project."
+
+  - unit_id: '12'
+    title: Networking and Systems Administration
+    short_description: Move from network fundamentals to safe classroom services, remote administration, backups, and defensive security.
+    status: Planned
+    pathway: core
+    prerequisites: [Units 9 and 10]
+    estimated_time: 20-30 periods
+    simulation_requirement: Optional isolated network simulation
+    physical_lab_requirement: Required on an approved classroom network
+    equipment: [computer, Raspberry Pi or server, network equipment, approved storage]
+    software: [Linux, SSH, tmux, web or file server software]
+    safety_level: Network, account, data, and privacy
+    student_deliverables: [network map, service deployment, administration transcript, security and backup checklist]
+    assessment_evidence: [correct addressing, least privilege, service verification, logs, privacy controls]
+    public_notes_route: Not yet available
+    student_handout: Planned
+    teacher_guide: Teacher controlled
+    slides: Planned
+    source_references: [ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original instructions with links to official documentation.
+    implementation_notes: Use defensive administration only and follow school network policy.
+    module_defaults: &unit12_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Units 9 and 10]
+      estimated_time: 2-4 periods
+      simulation_requirement: Optional
+      physical_lab_requirement: Required
+      equipment: [approved Linux host, network access]
+      software: [Linux networking tools]
+      safety_level: Network and privacy
+      student_deliverables: [configuration record and verification evidence]
+      assessment_evidence: [correct model, safe configuration, verified service]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original materials and official documentation links.
+      implementation_notes: Keep labs isolated or teacher approved and never expose insecure services publicly.
+    modules:
+      - module_id: "S01"
+        title: "Network hardware, MAC and IP addresses, DHCP, and DNS"
+        short_description: "Identify common hardware and explain local addressing and name resolution."
+      - module_id: "S02"
+        title: "Ports, protocols, ping, and traceroute"
+        short_description: "Interpret endpoints and use basic diagnostic tools responsibly."
+      - module_id: "S03"
+        title: "SSH and file transfer"
+        short_description: "Verify hosts, authenticate securely, and transfer approved files."
+      - module_id: "S04"
+        title: "Client and server roles"
+        short_description: "Deploy and test introductory web and file services on a classroom network."
+      - module_id: "S05"
+        title: "Users, permissions, logs, and service management"
+        short_description: "Operate services with bounded accounts and useful evidence."
+      - module_id: "S06"
+        title: "Storage, backups, updates, authentication, and privacy"
+        short_description: "Protect data and maintain an approved system with defensive security controls."
+      - module_id: "S07"
+        title: "Collaborative tmux session"
+        short_description: "Work together in a teacher-approved shared terminal while preserving accountability."
+      - module_id: "S08"
+        title: "Ubuntu Server and Raspberry Pi server projects"
+        short_description: "Build a documented small service with clear purpose, limits, backup, and shutdown procedures."
+
+  - unit_id: '13'
+    title: Data Science and Machine Learning
+    short_description: Use Python to ask responsible questions of data and progress from baselines to supervised, unsupervised, and recommendation models.
+    status: Planned
+    pathway: extension
+    prerequisites: [Unit 10, introductory algebra and statistics]
+    estimated_time: 30-45 periods
+    simulation_requirement: Required computational notebooks or scripts
+    physical_lab_requirement: Not required
+    equipment: [computer]
+    software: [Python, NumPy, pandas, plotting libraries, scikit-learn]
+    safety_level: Data privacy and responsible model use
+    student_deliverables: [notebooks or scripts, evaluation tables, model card, project report]
+    assessment_evidence: [clean data process, valid split, baseline, appropriate metrics, limitations]
+    public_notes_route: Not yet available
+    student_handout: Planned
+    teacher_guide: Teacher controlled
+    slides: Planned
+    source_references: [ISLP, GOOGLE-MLCC, GOOGLE-RECSYS]
+    access_level: Public
+    copyright_permissions_note: Link to official sources. Do not copy or republish textbooks. Use original examples and non-personal data.
+    implementation_notes: Never use student personal information as a machine-learning dataset.
+    module_defaults: &unit13_defaults
+      status: Planned
+      pathway: extension
+      prerequisites: [PF01-PF07]
+      estimated_time: 2-4 periods
+      simulation_requirement: Required computational work
+      physical_lab_requirement: Not required
+      equipment: [computer]
+      software: [Python, NumPy, pandas, plotting libraries, scikit-learn]
+      safety_level: Data privacy
+      student_deliverables: [notebook or script, evaluation evidence, reflection]
+      assessment_evidence: [correct method, reproducible result, limitations]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [ISLP, GOOGLE-MLCC]
+      access_level: Public
+      copyright_permissions_note: Original classroom materials with official links.
+      implementation_notes: Use small, non-personal, age-appropriate datasets.
+    modules:
+      - module_id: "ML01"
+        title: "Data, questions, features, labels, and privacy"
+        short_description: "Frame an answerable question and document what data may and may not be used."
+      - module_id: "ML02"
+        title: "Python data tools"
+        short_description: "Use NumPy, pandas, plotting, and cleaning workflows."
+      - module_id: "ML03"
+        title: "Training, validation, and test data"
+        short_description: "Establish baselines and prevent leakage, overfitting, and misleading claims."
+      - module_id: "ML04"
+        title: "Linear regression"
+        short_description: "Fit and evaluate a line using features, targets, residuals, loss, and appropriate metrics."
+      - module_id: "ML05"
+        title: "Classification"
+        short_description: "Analyze binary and multiclass predictions with confusion matrices, accuracy, precision, recall, thresholds, and imbalance."
+      - module_id: "ML06"
+        title: "Resampling and model evaluation"
+        short_description: "Use train-test splits and cross-validation to compare models."
+      - module_id: "ML07"
+        title: "Trees and ensemble methods"
+        short_description: "Compare interpretable decision trees with ensemble approaches."
+      - module_id: "ML08"
+        title: "Clustering and unsupervised learning"
+        short_description: "Explore grouping and representation without labels and discuss interpretation limits."
+      - module_id: "ML09"
+        title: "Recommender systems"
+        short_description: "Compare popularity, content-based, and collaborative approaches with candidate generation, scoring, re-ranking, diversity, and feedback loops."
+        source_references: [GOOGLE-RECSYS, ISLP]
+      - module_id: "ML10"
+        title: "Neural-network introduction"
+        short_description: "Build intuition for layers, activations, optimization, and evaluation without production-scale training."
+      - module_id: "ML11"
+        title: "Responsible machine learning"
+        short_description: "Evaluate bias, fairness, privacy, explainability, energy use, class imbalance, and misleading metrics."
+
+  - unit_id: '14'
+    title: Language Models and Applied AI
+    short_description: Study small language models, prompting, grounding, evaluation, and responsible application after programming and introductory machine learning.
+    status: Planned
+    pathway: extension
+    prerequisites: [Units 10 and 13]
+    estimated_time: 25-40 periods
+    simulation_requirement: Required computational work
+    physical_lab_requirement: Not required
+    equipment: [computer]
+    software: [Python, notebooks, approved local models or APIs]
+    safety_level: Privacy, copyright, security, and human oversight
+    student_deliverables: [small models or demonstrations, evaluation set, citations, project report]
+    assessment_evidence: [accurate explanation, reproducible evaluation, grounded claims, responsible data use]
+    public_notes_route: Not yet available
+    student_handout: Planned
+    teacher_guide: Teacher controlled
+    slides: Planned
+    source_references: [KARPATHY-ZERO-HERO, GOOGLE-MLCC]
+    access_level: Public
+    copyright_permissions_note: Link to official sources. Use original lessons and approved model or API terms.
+    implementation_notes: Most modules are advanced, enrichment, or pilot. Do not train a production-scale LLM on classroom hardware.
+    module_defaults: &unit14_defaults
+      status: Planned
+      pathway: extension
+      prerequisites: [Unit 10 and introductory machine learning]
+      estimated_time: 1-4 periods
+      simulation_requirement: Required computational work
+      physical_lab_requirement: Not required
+      equipment: [computer]
+      software: [Python, notebooks, approved local model or API]
+      safety_level: AI privacy and security
+      student_deliverables: [code or demonstration, evaluation evidence, documentation]
+      assessment_evidence: [conceptual accuracy, reproducibility, limitations, responsible use]
+      public_notes_route: Not yet available
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [KARPATHY-ZERO-HERO]
+      access_level: Public
+      copyright_permissions_note: Original classroom materials and official links only.
+      implementation_notes: Use tiny educational models, visual demonstrations, approved APIs, or local small models.
+    modules:
+      - module_id: "AI01"
+        title: "What a language model predicts"
+        short_description: "Explain next-token prediction and distinguish probability from understanding."
+      - module_id: "AI02"
+        title: "Text, characters, words, tokens, and tokenization"
+        short_description: "Compare representations and their practical consequences."
+      - module_id: "AI03"
+        title: "Counts, n-grams, and a small bigram model"
+        short_description: "Build and inspect a tiny count-based language model."
+      - module_id: "AI04"
+        title: "Probability, loss, and sampling"
+        short_description: "Evaluate predictions and generate outputs with controlled randomness."
+      - module_id: "AI05"
+        title: "Embeddings"
+        short_description: "Represent tokens or items as learned vectors and inspect similarity carefully."
+      - module_id: "AI06"
+        title: "Neural networks and backpropagation intuition"
+        short_description: "Trace how parameters affect loss and how gradients support learning."
+      - module_id: "AI07"
+        title: "Attention and Transformers"
+        short_description: "Build an age-appropriate conceptual model of attention and Transformer blocks."
+      - module_id: "AI08"
+        title: "Building a very small language model"
+        short_description: "Train or run a tiny educational model and document data, limits, and resource use."
+        status: "Bonus"
+        pathway: "bonus"
+      - module_id: "AI09"
+        title: "Prompting, structured output, and tool use"
+        short_description: "Write bounded instructions, request machine-readable output, and verify tool results."
+      - module_id: "AI10"
+        title: "Retrieval and grounding"
+        short_description: "Connect answers to approved sources and distinguish retrieved evidence from generated text."
+      - module_id: "AI11"
+        title: "Evaluation"
+        short_description: "Test accuracy, hallucination, citations, reproducibility, and adversarial inputs."
+      - module_id: "AI12"
+        title: "Responsible AI"
+        short_description: "Address privacy, copyright, bias, security, energy use, oversight, and appropriate school use."
+      - module_id: "AI13"
+        title: "Applied AI project"
+        short_description: "Build a local or approved small-data application with a clear evaluation and no private student information."
+        status: "Pilot"
+
+  - unit_id: '15'
+    title: Culminating Projects
+    short_description: Maintain a circuits and logic milestone followed by a final integrated technology project with multiple valid pathways.
+    status: In development
+    pathway: core
+    prerequisites: [Relevant preceding units]
+    estimated_time: 10-15 periods plus 20-35 periods
+    simulation_requirement: Required where applicable
+    physical_lab_requirement: Required for device pathways; optional for software-only pathways
+    equipment: [project-specific approved equipment and components]
+    software: [project-specific approved tools]
+    safety_level: Project-specific with teacher approval gates
+    student_deliverables: [proposal, BOM, design evidence, prototype, tests, presentation, reflection]
+    assessment_evidence: [requirements, iteration, safety, function, testing, documentation, communication]
+    public_notes_route: tej3-4/electronics-library/projects/index.qmd
+    student_handout: Circuits project published; final project planned
+    teacher_guide: Teacher controlled
+    slides: Mixed published and planned
+    source_references: [ON-TEJ, GROWING-SUCCESS]
+    access_level: Public
+    copyright_permissions_note: Original project briefs, rubrics, and student-created evidence with consent rules.
+    implementation_notes: Use a component budget and approve each project's safety, data, and network scope.
+    module_defaults: &unit15_defaults
+      status: Planned
+      pathway: core
+      prerequisites: [Relevant preceding units]
+      estimated_time: 10-35 periods
+      simulation_requirement: Required where applicable
+      physical_lab_requirement: Project dependent
+      equipment: [teacher-approved project materials]
+      software: [project-specific tools]
+      safety_level: Project-specific
+      student_deliverables: [proposal, design, BOM, build or implementation, tests, presentation]
+      assessment_evidence: [complete design process and verified requirements]
+      public_notes_route: tej3-4/electronics-library/projects/index.qmd
+      student_handout: Planned
+      teacher_guide: Teacher controlled
+      slides: Planned
+      source_references: [ON-TEJ, GROWING-SUCCESS]
+      access_level: Public
+      copyright_permissions_note: Original project resources and properly licensed assets.
+      implementation_notes: Require teacher approval before procurement, fabrication, networking, or data collection.
+    modules:
+      - module_id: "PR01"
+        title: "Circuits and Digital Logic Culminating Project"
+        short_description: "Build or simulate a logic-gate game, elevator controller, vending machine, vehicle-control aid, or equivalent circuit system."
+        status: "Published"
+        public_notes_route: "tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.qmd"
+      - module_id: "PR02"
+        title: "Final Integrated Technology Project"
+        short_description: "Choose a servo mechanism, Raspberry Pi controller, sensor logger, accessible technology, network service, machine-learning application, recommendation system, applied AI project, or student-designed device under a component budget."
+
+  - unit_id: '16'
+    title: Bonus Pathway - Control Systems and CNC
+    short_description: Preserve the complete C01-C11 sequence as an optional specialized pathway connected to electronics, programming, microcontrollers, motors, sensors, fabrication, Linux, and state machines.
+    status: Bonus
+    pathway: bonus
+    prerequisites: [Units 5, 6, 7, 9, 10, and 11 as applicable]
+    estimated_time: 15-30 periods
+    simulation_requirement: Required for controller comparison
+    physical_lab_requirement: Optional teacher-approved equipment labs
+    equipment: [sensors, motors, controllers, optional CNC trainer]
+    software: [controller simulator, LinuxCNC where approved]
+    safety_level: Motion, machine, and interlock safety
+    student_deliverables: [control diagrams, response comparison, safety analysis, optional motion or CNC evidence]
+    assessment_evidence: [feedback reasoning, stable response, safe-state design, verified interlocks]
+    public_notes_route: tej3-4/05-control-systems/index.qmd
+    student_handout: Published C01-C11 pathway
+    teacher_guide: Teacher controlled
+    slides: Existing control-systems resources
+    source_references: [ON-TEJ]
+    access_level: Public
+    copyright_permissions_note: Original public notes and diagrams. Equipment procedures remain teacher controlled where required.
+    implementation_notes: This is not part of the required core. Preserve all existing routes and clearly show prerequisites.
+    module_defaults: &unit16_defaults
+      status: Published
+      pathway: bonus
+      prerequisites: [Relevant electronics and programming modules]
+      estimated_time: 1-3 periods
+      simulation_requirement: Required where applicable
+      physical_lab_requirement: Optional
+      equipment: [teacher-approved control-system equipment]
+      software: [controller simulator]
+      safety_level: Motion and control safety
+      student_deliverables: [diagram, simulation or lab evidence, explanation]
+      assessment_evidence: [correct control model, response interpretation, safety reasoning]
+      public_notes_route: tej3-4/05-control-systems/index.qmd
+      student_handout: Published activity where linked
+      teacher_guide: Teacher controlled
+      slides: Existing resources
+      source_references: [ON-TEJ]
+      access_level: Public
+      copyright_permissions_note: Original classroom content and official links.
+      implementation_notes: Require teacher approval for all physical motion and CNC equipment.
+    modules:
+      - module_id: "C01"
+        title: "Control-system anatomy"
+        short_description: "Identify command, controller, plant, output, disturbance, sensor, and feedback."
+        public_notes_route: "tej3-4/05-control-systems/c01-control-system-anatomy.qmd"
+      - module_id: "C02"
+        title: "Open-loop control"
+        short_description: "Predict strengths and limitations of control without output feedback."
+        public_notes_route: "tej3-4/05-control-systems/c02-open-loop.qmd"
+      - module_id: "C03"
+        title: "Closed-loop feedback"
+        short_description: "Explain setpoint, measurement, error, controller action, and response."
+        public_notes_route: "tej3-4/05-control-systems/c03-closed-loop.qmd"
+      - module_id: "C04"
+        title: "On-off control and hysteresis"
+        short_description: "Compare simple switching with a deadband that prevents chatter."
+        public_notes_route: "tej3-4/05-control-systems/c04-hysteresis.qmd"
+      - module_id: "C05"
+        title: "Proportional control"
+        short_description: "Relate error, gain, output, response speed, and steady-state behaviour."
+        public_notes_route: "tej3-4/05-control-systems/c05-proportional.qmd"
+      - module_id: "C06"
+        title: "PID control"
+        short_description: "Compare proportional, integral, and derivative contributions using high-school mathematics."
+        public_notes_route: "tej3-4/05-control-systems/c06-pid.qmd"
+      - module_id: "C07"
+        title: "State machines"
+        short_description: "Model sequential control with states, events, transitions, timers, and outputs."
+        public_notes_route: "tej3-4/05-control-systems/c07-state-machines.qmd"
+      - module_id: "C08"
+        title: "Safety interlocks"
+        short_description: "Design permissives, stops, guards, safe states, and fault responses."
+        public_notes_route: "tej3-4/05-control-systems/c08-safety-interlocks.qmd"
+      - module_id: "C09"
+        title: "Motion control"
+        short_description: "Connect motor drive, sensing, position or speed goals, limits, and feedback."
+        public_notes_route: "tej3-4/05-control-systems/c09-motion-control.qmd"
+      - module_id: "C10"
+        title: "CNC and LinuxCNC"
+        short_description: "Interpret CNC as a coordinated control system and use physical equipment only when approved."
+        public_notes_route: "tej3-4/05-control-systems/c10-cnc.qmd"
+      - module_id: "C11"
+        title: "Control-systems culminating project"
+        short_description: "Build or simulate a documented control pathway with explicit safety and verification."
+        public_notes_route: "tej3-4/05-control-systems/c11-culminating-project.qmd"
