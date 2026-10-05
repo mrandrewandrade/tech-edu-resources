@@ -42,6 +42,7 @@ class DesignFabricationTests(unittest.TestCase):
             "02-digital-design/07-website-ui-ux.qmd",
             "03-laser-cutting/index.qmd",
             "03-laser-cutting/holiday-ornament-reindeer.qmd",
+            "03-laser-cutting/resources/reverse-engineer-improve.qmd",
             "04-3d-printing/index.qmd",
             "04-3d-printing/faux-enamel-pin-jewellery.qmd",
             "tools/tool-organizer-gallery/index.qmd",
@@ -233,6 +234,21 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Tool Organizer Gallery", nav)
         self.assertIn("Fabrication Planning Sheet", nav)
         self.assertIn("Fabrication Plate Builder", nav)
+
+    def test_reverse_engineering_assignment_is_originality_and_evidence_first(self) -> None:
+        assignment = self.read("design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.qmd")
+        for quality in ("Faster", "Cheaper", "Better looking", "More ergonomic", "More positive", "More serviceable"):
+            self.assertIn(quality, assignment)
+        for evidence in ("three attributed references", "decision matrix", "critical-dimension coupon", "before-and-after comparison", "user test", "revision notes"):
+            self.assertIn(evidence, assignment)
+        for boundary in ("The goal is not to make a copy", "Do not trace product photographs", "Reuse a file only when its licence clearly permits"):
+            self.assertIn(boundary, assignment)
+        for source in ("etsy.com", "glowforge.com", "instructables.com", "printables.com", "thingiverse.com", "makerworld.com", "onshape.com", "sketchfab.com", "openverse.org", "thenounproject.com"):
+            self.assertIn(source, assignment)
+
+        toolkit = self.read("design-fabrication/03-laser-cutting/resources/index.qmd")
+        self.assertIn("Good Idea, Better Product", toolkit)
+        self.assertIn("reverse-engineer-improve.qmd", toolkit)
 
     def test_public_classroom_kit_has_palettes_and_reference_assemblies(self) -> None:
         kit = SITE / "assets" / "laser-library" / "classroom-kit"

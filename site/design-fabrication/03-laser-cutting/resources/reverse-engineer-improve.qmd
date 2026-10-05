@@ -1,0 +1,156 @@
+---
+title: "Good Idea, Better Product | Reverse-Engineering Design Challenge"
+description: "A classroom assignment for studying an existing tool holder or organizer, identifying opportunities, and developing a faster, cheaper, clearer, more ergonomic, or more delightful original solution."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [need, requirement, criterion, constraint, design-brief, investigation, dimension, tolerance, prototype, evidence, evaluation, feedback, iteration, trade-off, assembly, serviceability]
+highlighted-terms: [criterion, trade-off, iteration]
+toc: true
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Study it. Understand it. Make it better.
+
+Choose an existing tool holder, organizer, fixture, or storage product as a precedent. Study what it does well, identify a real opportunity, then create an **original design** that improves the experience for a defined user and context.
+
+The goal is not to make a copy. The goal is to learn from a good idea, explain how it works, and produce a better response to the problem using your own measurements, geometry, testing, and documentation.
+:::
+
+Your evidence should justify each criterion, make every trade-off visible, and show at least one iteration.
+
+## The design challenge
+
+Develop a tool holder or organizer that improves at least **three** of these qualities:
+
+- **Faster:** quicker to fabricate, assemble, install, use, inspect, clean, or return tools to.
+- **Cheaper:** less material, fewer parts, common hardware, shorter machine time, or lower replacement cost.
+- **Better looking:** clearer proportions, stronger visual hierarchy, intentional colour and form, or a better fit with its setting.
+- **More ergonomic:** easier reach, a safer grip, better visibility, comfortable clearances, and one-hand use where appropriate.
+- **More positive:** creates calm, confidence, pride, delight, belonging, or satisfaction instead of clutter and frustration.
+- **More useful:** holds the right objects, supports a wider range, or solves a problem the precedent misses.
+- **More durable or serviceable:** stronger load path, replaceable wear parts, accessible fasteners, or easier repair.
+- **More responsible:** less waste, fewer mixed materials, efficient sheet layout, or parts that can be reused.
+
+Every gain has a possible [trade-off](../../../glossary/index.qmd#trade-off). A cheaper design may take longer to assemble. A smaller design may make tools harder to grasp. State what improved, what did not, and what evidence supports the claim.
+
+## 1. Find precedents
+
+Collect at least **three references from two different source types**. Include one commercial product and one build, model, or assembly that reveals how parts might work together.
+
+### Product and laser-project ideas
+
+- [Etsy tool-holder results](https://www.etsy.com/ca/search?q=tool%20holder): compare use cases, forms, prices, claims, and recurring themes in public reviews. Do not copy seller photos, artwork, or files.
+- [Glowforge Catalog](https://glowforge.com/b/catalog): study laser-cut construction, layer strategies, visual language, and product categories. Catalog access does not grant permission to redistribute or recreate a paid design.
+- [Instructables tool-organizer search](https://www.instructables.com/search/?q=tool%20organizer&projects=all): look for build sequences, material choices, mistakes, tests, and revisions.
+
+### Mechanisms and fabrication ideas
+
+- [Printables tool-holder search](https://www.printables.com/search/models?q=tool%20holder): inspect mounting, retention, modularity, print orientation, user makes, ratings, and comments.
+- [Thingiverse tool-holder and organization group](https://www.thingiverse.com/groups/tool-holders-diy-organization): compare holders for specific tools with broader workshop systems.
+- [MakerWorld tool-holder collection](https://makerworld.com/en/collections/6356556-tool-holders): study adjustable, magnetic, modular, and low-support approaches.
+
+### Assemblies and form studies
+
+- [Onshape public documents](https://cad.onshape.com/documents): use the Public filter to study part relationships, assemblies, parameters, and drawings.
+- [Sketchfab tool-holder models](https://sketchfab.com/search?features=downloadable&q=tool%20holder&type=models): rotate models to inspect form, access, and assembly. Check the licence on each model before downloading or reusing anything.
+
+### Graphics and visual language
+
+- [Openverse](https://openverse.org/), [Openclipart](https://openclipart.org/), and [Noun Project](https://thenounproject.com/): investigate symbols, silhouettes, and graphic styles for labels. Check the individual licence and attribution requirement before use.
+
+Start locally too: browse the [Laser Fabrication Library](../../../teaching-materials/laser-cutting/index.qmd), [purpose-built holder kits](../../../teaching-materials/laser-cutting/?type=tool-holders#library), [five organizer reference assemblies](pill-bottle-organizer.qmd), and [Tool Organizer Gallery](../../tools/tool-organizer-gallery/index.qmd).
+
+::: {.callout-important}
+## Publicly visible does not mean free to copy
+
+Record the creator or seller, page title, URL, access date, and stated licence for every reference. You may analyze publicly observable functions, interfaces, proportions, mechanisms, and user feedback. Do not trace product photographs, reproduce logos or distinctive decoration, download files without permission, bypass payment, or present another person's work as your own. Reuse a file only when its licence clearly permits your intended use, and provide the required attribution.
+:::
+
+## 2. Reverse engineer the problem, not the artwork
+
+For each precedent, make an evidence table.
+
+| Question | Evidence to record |
+|---|---|
+| Who is it for? | User, setting, tools, reach zone, and likely routine |
+| What problem does it solve? | Need, current frustration, and desired result |
+| How does it work? | Support, retention, mounting, labels, load path, and assembly |
+| What looks successful? | Features supported by photographs, specifications, build notes, or repeated review themes |
+| What could improve? | Specific issue, affected user, and evidence rather than a guess |
+| What cannot be confirmed online? | Hidden dimensions, material grade, strength, comfort, fit, or long-term durability |
+
+Treat reviews as clues, not facts. Look for repeated observations, separate shipping or seller issues from product-design issues, and verify what you can with direct measurement and testing.
+
+## 3. Write an improvement brief
+
+Use this sentence frame:
+
+> Design an original **[product]** for **[user and setting]** that **[solves the need]**. It must **[three measurable criteria]** while respecting **[material, machine, time, safety, and cost constraints]**.
+
+Turn broad intentions into testable criteria.
+
+| Intention | Testable version |
+|---|---|
+| Faster | A user can identify, remove, and return the selected tool in 10 seconds or less. |
+| Cheaper | The design fits within the assigned sheet area and uses no more than two purchased fastener types. |
+| Better looking | Three users can identify the intended tool group and describe the visual hierarchy without prompting. |
+| More ergonomic | The target tools can be removed with one hand without pinching neighbouring tools or twisting the wrist sharply. |
+| More positive | User feedback includes a chosen feeling, such as calm or confidence, and identifies the feature that created it. |
+| More serviceable | A damaged holder component can be replaced without discarding the backer or removing unrelated tools. |
+
+## 4. Generate and select concepts
+
+1. Measure the real tools, mounting area, stock, and critical hand clearances.
+2. Sketch at least three meaningfully different concepts. Changing only decoration does not create a new concept.
+3. Annotate the support method, retention method, mounting interface, assembly order, and expected load path.
+4. Score each concept against the criteria using a decision matrix.
+5. Explain the selected concept and one trade-off you accepted.
+
+## 5. Build evidence before the full product
+
+Create the smallest useful test first. This might be one opening, slot series, hook, magnet pocket, label system, removable joint, or cardboard reach mock-up.
+
+Test and record:
+
+- fit and clearance using the actual tools;
+- removal and return time;
+- one-hand access and neighbouring-tool collisions;
+- visibility and missing-tool recognition;
+- stability, mounting, and expected load direction;
+- assembly time, part count, material use, and estimated cost;
+- user words, actions, and emotional response;
+- one change made because of the evidence.
+
+Do not claim a safe load, accessibility, durability, or ergonomic success without a suitable test.
+
+## 6. Submit the design story
+
+Your submission must include:
+
+1. a precedent board with at least three attributed references;
+2. a feature-and-problem analysis in your own words;
+3. a measured improvement brief with criteria and constraints;
+4. three concepts and a decision matrix;
+5. your own editable CAD or vector source and an exported fabrication file;
+6. a critical-dimension coupon or low-fidelity prototype;
+7. build photographs and a short user test;
+8. a before-and-after comparison against the chosen precedent;
+9. revision notes showing what changed and why;
+10. a final evaluation that distinguishes measured results from opinions and unverified claims.
+
+## Assessment focus
+
+| Area | Evidence of strong work |
+|---|---|
+| Investigation | Varied, relevant, attributed precedents and careful interpretation of user evidence |
+| Originality | New geometry and decisions tied to this user, tool set, and context |
+| Improvement | Clear, measurable gains in at least three selected qualities |
+| Technical quality | Accurate measurement, suitable tolerances, efficient layout, and intentional assembly |
+| Testing | A critical question tested early with recorded results and a meaningful revision |
+| Communication | Clear drawings, source links, licences, comparison, and honest claim language |
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Adaptable to **TIJ1O**, **TDJ2O**, **TMJ2O**, **TTJ2O**, **TCJ2O**, **TEJ2O**, and senior design or manufacturing courses. The teacher should select a scope, process, and assessment emphasis appropriate to the course, available equipment, and local safety procedures.
+:::
+
+Continue with the [Tool Organizer project guidance](../06-tool-holder.qmd), then use the [Fabrication Planning Worksheet](fabrication-planning-worksheet.qmd) to document the selected direction.
