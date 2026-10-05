@@ -28,6 +28,8 @@ execute: {enabled: false}
 
 ## Bring in building blocks
 
+If the project begins as a plate with a row, grid, radial or perimeter hole pattern, use the [Fabrication Plate Builder](../../tools/plate-builder/index.qmd) first. Its output is intentionally plain: `CUT_OUTER`, `CUT_HOLES` and an optional `GUIDES` group. Inkscape remains the place to add labels, slots, custom profiles and manufacturing intent.
+
 1. Open the relevant [component palette](index.qmd#inkscape-component-palettes).
 2. Select the named component group and copy it into the master file.
 3. Use the toolbar or **Object → Transform** to enter exact width, height and position.
@@ -55,3 +57,5 @@ For the first name-tag engraving, set the page to the measured pre-cut blank, ke
 ## Evidence to submit
 
 Submit the paper plan, editable SVG master, fabrication/export file, photograph or measurement from the test, and one sentence naming what changed in the next version.
+
+Use [Material Fit + Calibration](../04-material-fit-calibration.qmd) whenever a dimension must mate with real stock, hardware or an object.

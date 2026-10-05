@@ -1,41 +1,79 @@
 ---
 title: "Laser Cutter Calibration | Material Thickness, Kerf & Fit Tests"
-description: "Teach actual plywood thickness, SVG dimension checks, laser kerf, inside and outside dimensions, and loose, sliding, snug and press fits."
-body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+description: "A measurable classroom workflow for machine checks, stock measurement, kerf, slots, holes and fit decisions."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson ter-calibration-lesson"
 toc: true
 execute: {enabled: false}
 ---
 
-## Nominal is not actual
+Calibration is not one magic kerf value. It is a short, recorded test that connects **this sheet**, **this machine condition**, **this geometry**, and **this intended fit**.
 
-Plywood sold as 1/4 inch may not measure 6.35 mm. Sheet variation, glue layers, moisture, focus, power, speed, material batch, and machine condition affect the result. Measure the actual sheet with calipers in several places and record the range.
+<div class="ter-calibration-process" aria-label="Calibration workflow"><span>1 · Check machine</span><span>2 · Measure stock</span><span>3 · Verify scale</span><span>4 · Cut a test</span><span>5 · Measure result</span><span>6 · Choose + record fit</span></div>
 
-## Kerf changes parts and holes differently
+## Machine check or material calibration?
 
-The laser removes a band of material. With a path placed on the intended boundary, an outside part usually finishes smaller while an inside opening usually finishes larger. The exact change must be tested on the local machine and material rather than copied from a universal number.
+<div class="ter-two-state">
+<section><h3>Machine check</h3><p>Confirm the machine can locate and focus on the material, the bed and optics are ready, and the artwork aligns as expected. This is about machine condition and setup.</p><ul><li>Material is flat and supported.</li><li>Focus point lands on the material, away from an edge or hole.</li><li>Camera alignment is reasonable.</li><li>Approved settings and ventilation procedure are available.</li></ul></section>
+<section><h3>Material calibration</h3><p>Measure how one stock-and-setting combination changes size and fit. This is about the result of the process.</p><ul><li>Actual thickness and batch are recorded.</li><li>A known drawing dimension imports at 100%.</li><li>Cut width and finished dimensions are measured.</li><li>Slots and holes are tested against the real mating object.</li></ul></section>
+</div>
 
-## Classroom workflow
+Glowforge’s current guidance explains that **Set Focus** measures the head-to-material distance at a selected point and can improve focus and camera placement; it also advises selecting a point on the material, not close to an edge. If Set Focus is not used, autofocus runs before a print and can fall back to the selected material thickness if measurement fails. Use those features as machine setup—not as a substitute for a fit coupon. See [Glowforge: Alignment](https://support.glowforge.com/hc/en-us/articles/360033633714-Alignment) and [Glowforge: About Autofocus](https://support.glowforge.com/hc/en-us/articles/21250121938331-About-Autofocus).
 
-```text
-measure
-test
-choose fit
-modify
-cut
-evaluate
-```
+## 1 · Measure the actual sheet
 
-1. Verify a known SVG dimension before cutting.
-2. Cut a dimension coupon and compare drawing dimensions with finished dimensions.
-3. Cut a tab-and-slot or thickness gauge across a small range.
-4. Label results and test with the actual material or mating part.
-5. Choose a fit for the function: loose, sliding, snug, or press.
-6. Record stock, machine settings, selected dimension, result, and next adjustment.
+Plywood sold as 1/4 inch may not measure 6.35 mm. Measure at several locations with callipers, including near—but not on—a visibly damaged edge. Record the minimum, maximum and the value used to design the test.
 
-[Open the calibration library](../../teaching-materials/laser-cutting/?type=calibration#library) for dimension sheets, kerf tests, fit series, hole tests, and material-thickness tools.
+<div class="ter-calibration-card-grid">
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-material-thickness.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-material-thickness.svg" alt="Material thickness measurement reference"><strong>Material thickness</strong><span>Record a measured range, not a catalogue assumption.</span></a>
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-ruler-check.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-ruler-check.svg" alt="SVG ruler scale verification reference"><strong>Ruler / scale check</strong><span>Confirm millimetres and 100% import before cutting.</span></a>
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-dimension-verification.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-dimension-verification.svg" alt="Dimension verification coupon reference"><strong>Dimension verification</strong><span>Compare a known drawing dimension to the finished result.</span></a>
+</div>
+
+## 2 · Understand what kerf changes
+
+The beam removes a narrow band centred on the path. With the path drawn on the intended boundary, an outside part tends to finish smaller and an inside opening tends to finish larger. The magnitude varies, so do not copy a universal number.
+
+![Kerf diagram showing the cut band around a vector path, a smaller outside part and a larger inside opening.](../../assets/kerf-diagram.svg){.ter-kerf-diagram}
+
+BRM’s current [kerf and kerf-compensation explanation](https://support.brmlasers.com/en/materials-and-parameters/materials/kerf-and-kerf-compensation) is a useful process reference. BRM also hosts a [free kerf gauge SVG](https://support.brmlasers.com/en/downloads/cut-files/laser-files), credited there to Nameek and Elplatt, and explicitly tells users to check scale after import. Use it as another test method, not as a pre-approved local setting.
+
+Ponoko’s 2011 article, [Figuring out kerf for precision parts](https://www.ponoko.com/blog/ponoko/figuring-out-kerf-for-precision-parts/), is included only as a **historical/conceptual** example of test-and-revise thinking. Do not copy its old settings or service-specific assumptions.
+
+<div class="ter-calibration-card-grid">
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-kerf-test.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-kerf-test.svg" alt="Kerf test coupon preview"><strong>Kerf test</strong><span>Measure a repeated cut rather than guessing from one edge.</span></a>
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-tab-fit.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-tab-fit.svg" alt="Tab fit coupon preview"><strong>Tab fit</strong><span>Test the male feature and its orientation.</span></a>
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-slot-fit.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-slot-fit.svg" alt="Slot fit coupon preview"><strong>Slot fit</strong><span>Start from measured thickness, then compare a small series.</span></a>
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-four-fit-series.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-four-fit-series.svg" alt="Loose sliding snug and press fit series preview"><strong>Four-fit series</strong><span>Name the function: loose, sliding, snug or press.</span></a>
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-hole-fit.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-hole-fit.svg" alt="Hole fit series preview"><strong>Hole fit</strong><span>Test the actual bottle, dowel or fastener—not only a calliper.</span></a>
+</div>
+
+## 3 · Cut, measure and decide
+
+1. Open one test SVG in Inkscape and confirm document units, `viewBox` scale and a known dimension.
+2. Label the coupon with material, batch, date, machine and revision before cutting.
+3. Use the instructor-approved machine setup for this material.
+4. Let the coupon cool and measure it consistently; do not force a calliper into a soft or angled edge.
+5. Test the real mating object in every candidate feature.
+6. Select the fit that serves the function. A press fit is not automatically “more accurate” than a sliding fit.
+7. Update the source dimension, save the record and repeat only the smallest necessary test.
+
+::: {.callout-warning}
+Kerf compensation changes geometry; it does not correct loose belts, damaged optics, poor focus, warped stock, unapproved settings or an incorrectly scaled import. Stop and resolve a machine-check problem before interpreting the coupon.
+:::
+
+## Printable calibration record
+
+<section class="ter-calibration-record">
+<h3>Technology Commons · Laser calibration record</h3>
+<div class="ter-record-grid"><p>Name / group <span></span></p><p>Date <span></span></p><p>Machine <span></span></p><p>File + revision <span></span></p><p>Material / batch <span></span></p><p>Nominal thickness <span></span></p><p>Measured min / max <span></span></p><p>Drawing scale checked with <span></span></p><p>Approved settings reference <span></span></p><p>Focus method / location <span></span></p></div>
+<table><thead><tr><th>Feature / nominal</th><th>Measured result</th><th>Real-object fit</th><th>Decision / next revision</th></tr></thead><tbody><tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr></tbody></table>
+<p>Selected fit and why <span class="ter-record-line"></span></p><p>Observed issues / machine-check follow-up <span class="ter-record-line"></span></p><p>Tester / instructor review <span class="ter-record-line"></span></p>
+</section>
+
+[Open the complete calibration library](../../teaching-materials/laser-cutting/?type=calibration#library) for downloadable source files.
 
 ::: {.ter-curriculum-relevance}
 **Ontario curriculum relevance:** Strongly relevant to **TMJ2O Manufacturing Technology**, **TDJ2O**, and **TIJ1O**, with applications in **TCJ2O**, **TEJ2O**, and senior manufacturing/design courses involving measurement, tolerance, process control, quality, jigs, fixtures, and CAD/CAM.
 :::
 
-Next: use calibrated choices in [Assemblies + Hybrid Fabrication](05-assemblies-hybrid-fabrication.qmd).
+Next: apply the recorded dimensions in [Assemblies + Hybrid Fabrication](05-assemblies-hybrid-fabrication.qmd), the [Fabrication Plate Builder](../tools/plate-builder/index.qmd), or your own Inkscape source.

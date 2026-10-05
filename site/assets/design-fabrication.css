@@ -442,6 +442,31 @@
 .ter-parts-preview img { display: block; width: 100%; height: 210px; padding: .65rem; object-fit: contain; }
 .ter-file-actions { display: flex; flex-wrap: wrap; gap: .55rem; }
 .ter-design-question { margin: 1rem 0 0; padding: .7rem .8rem; border-left: 3px solid var(--bs-copper-dark); background: var(--bs-ivory); }
+.ter-toolkit code { white-space:normal; overflow-wrap:anywhere; }
+
+.ter-reference-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:1rem 0 2rem; }
+.ter-reference-card { min-width:0; border:1px solid var(--bs-border); border-radius:9px; background:var(--bs-surface); padding:.8rem; }
+.ter-reference-card svg { display:block; width:100%; height:125px; background:#f7f4ee; border-radius:6px; fill:none; stroke:var(--bs-navy-dark); stroke-width:2; }
+.ter-reference-card h3 { margin:.7rem 0 .4rem; }
+.ter-reference-card p { overflow-wrap:anywhere; }
+.ter-reference-meta { font-size:.78rem; color:var(--bs-muted); }
+
+.ter-calibration-process { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:.35rem; margin:1rem 0 1.5rem; }
+.ter-calibration-process span { padding:.65rem .45rem; background:var(--bs-navy-dark); color:#fff; border-radius:6px; text-align:center; font-size:.82rem; font-weight:700; }
+.ter-calibration-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; margin:1rem 0 1.5rem; }
+.ter-calibration-card { min-width:0; border:1px solid var(--bs-border); border-radius:8px; overflow:hidden; background:var(--bs-surface); color:var(--bs-text); text-decoration:none; }
+.ter-calibration-card img { display:block; width:100%; height:155px; padding:.45rem; object-fit:contain; background:#fff; }
+.ter-calibration-card strong,.ter-calibration-card span { display:block; padding:.25rem .65rem; }
+.ter-calibration-card span { padding-top:0; padding-bottom:.65rem; font-size:.84rem; color:var(--bs-muted); }
+.ter-kerf-diagram { display:block; width:min(100%,900px); height:auto; margin:1rem auto; }
+.ter-calibration-record { margin:1rem 0; padding:1rem; border:2px solid var(--bs-navy-dark); background:#fff; color:#142536; }
+.ter-calibration-record h3 { margin-top:0; }
+.ter-record-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.35rem 1rem; }
+.ter-record-grid p { display:flex; gap:.5rem; margin:.2rem 0; }
+.ter-record-grid span,.ter-record-line { flex:1; min-width:3rem; border-bottom:1px solid #64727a; }
+.ter-calibration-record table { width:100%; table-layout:fixed; margin:1rem 0; font-size:.82rem; }
+.ter-calibration-record th,.ter-calibration-record td { border:1px solid #65747c; padding:.35rem; overflow-wrap:anywhere; }
+.ter-calibration-record td { height:2.2rem; }
 
 .ter-fabrication-worksheet main.content { max-width: 1120px; }
 .ter-worksheet-toolbar { margin-bottom: 1rem; padding: .8rem 1rem; border: 1px solid var(--bs-border); background: var(--bs-surface); }
@@ -505,6 +530,10 @@
     grid-template-columns: 1fr;
   }
 
+  .ter-reference-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .ter-calibration-process { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .ter-calibration-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+
   .ter-toolkit-banner img { height: 230px; }
 
   .ter-assembly-jump { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -529,4 +558,25 @@
     border-top: 1px solid var(--bs-border);
     border-left: 0;
   }
+}
+
+@media (max-width: 480px) {
+  .ter-assembly-jump, .ter-reference-grid, .ter-assembly-facts { grid-template-columns:1fr; }
+  .ter-assembly-preview img { height:240px; padding:.35rem; }
+  .ter-parts-preview img { height:165px; padding:.35rem; }
+  .ter-assembly-card__body { padding:.8rem; }
+  .ter-file-actions .btn { width:100%; white-space:normal; }
+  .ter-reference-card svg { height:105px; }
+  .ter-toolkit-banner { min-width:0; padding:.7rem; }
+  .ter-toolkit-banner img { height:190px; }
+  .ter-calibration-process,.ter-calibration-card-grid,.ter-record-grid { grid-template-columns:1fr; }
+  .ter-calibration-card img { height:125px; }
+  .ter-calibration-record { padding:.55rem; overflow-x:auto; }
+  .ter-calibration-record table { min-width:540px; }
+}
+
+@media print {
+  .ter-calibration-record { break-inside:avoid; padding:6mm; }
+  .ter-calibration-record table { font-size:9pt; }
+  .ter-calibration-record td { height:14mm; }
 }

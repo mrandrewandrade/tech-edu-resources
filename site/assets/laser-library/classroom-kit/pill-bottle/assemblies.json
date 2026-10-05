@@ -1,5 +1,95 @@
 {
   "designs": {
+    "captured-bottle-rack": {
+      "assembly_notes": "the lower plate locates each bottle body; the removable upper plate sits below the cap shoulder and is retained by two hand knobs",
+      "bom": [
+        {
+          "part": "lower locating plate",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "part": "base",
+          "qty": 1,
+          "size_mm": [
+            190,
+            55
+          ]
+        },
+        {
+          "part": "upper keeper plate",
+          "qty": 1,
+          "size_mm": [
+            190,
+            55
+          ]
+        },
+        {
+          "part": "back",
+          "qty": 1,
+          "size_mm": [
+            190,
+            95
+          ]
+        },
+        {
+          "part": "standoff",
+          "qty": 2,
+          "size_mm": [
+            70,
+            22
+          ]
+        },
+        {
+          "part": "M6 hand knob, bolt and washer set",
+          "qty": 2,
+          "size": "site-specific"
+        }
+      ],
+      "files": {
+        "exploded": "pill-bottle/captured-bottle-rack/exploded.svg",
+        "parts": "pill-bottle/captured-bottle-rack/parts.svg"
+      },
+      "parameters": {
+        "assembly": "the lower plate locates each bottle body; the removable upper plate sits below the cap shoulder and is retained by two hand knobs",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_capture_per_side_mm": 2.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "interface_hole_mm": 6.4,
+        "keeper_opening_diameter_mm": 38.0,
+        "keeper_type": "hand-knob-retained removable upper plate",
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench or approved wall backer",
+        "opening_diameter_mm": 36.0,
+        "physical_test_record_fields": [
+          "bottle body diameter",
+          "cap diameter",
+          "material thickness",
+          "opening fit",
+          "keeper height",
+          "knob clearance",
+          "load test",
+          "revision"
+        ],
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "The keeper is a serviceable anti-lift feature, not a child-resistant lock. Physically test access, load path and wall mounting before use.",
+        "service_sequence": [
+          "support bottles",
+          "remove two hand knobs",
+          "lift keeper plate",
+          "remove or replace bottles",
+          "refit plate and hand knobs",
+          "record fit and revision"
+        ]
+      },
+      "physical_test_status": "unverified"
+    },
     "dowel-supported-rack": {
       "assembly_notes": "dowels align and separate two plates",
       "bom": [

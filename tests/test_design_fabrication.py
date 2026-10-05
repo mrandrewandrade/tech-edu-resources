@@ -144,15 +144,16 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("PNG", first_project)
 
         organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
-        for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench"):
+        for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench", "Captured bottle rack"):
             self.assertIn(design, organizer)
         self.assertIn("unverified", organizer)
-        self.assertEqual(organizer.count('class="ter-assembly-card"'), 4)
-        self.assertEqual(organizer.count("True-size parts sheet"), 4)
-        self.assertEqual(organizer.count("Download parts SVG"), 4)
+        self.assertIn("Ideas, not answers", organizer)
+        self.assertEqual(organizer.count('class="ter-assembly-card"'), 5)
+        self.assertEqual(organizer.count("True-size parts sheet"), 5)
+        self.assertEqual(organizer.count("Download parts SVG"), 5)
 
         for relative in ("exploded.svg", "parts.svg"):
-            self.assertGreaterEqual(organizer.count(relative), 8)
+            self.assertGreaterEqual(organizer.count(relative), 10)
 
         laser_home = self.read("design-fabrication/03-laser-cutting/index.qmd")
         self.assertIn("Browse the assembly gallery", laser_home)
@@ -161,13 +162,31 @@ class DesignFabricationTests(unittest.TestCase):
         nav = self.read("_quarto.yml")
         self.assertIn("Organizer Assembly Gallery", nav)
         self.assertIn("Fabrication Planning Sheet", nav)
+        self.assertIn("Fabrication Plate Builder", nav)
 
     def test_public_classroom_kit_has_palettes_and_reference_assemblies(self) -> None:
         kit = SITE / "assets" / "laser-library" / "classroom-kit"
         self.assertTrue((kit / "manifest.json").is_file())
         self.assertEqual(len(list((kit / "palettes").glob("*.svg"))), 6)
         assembly = __import__("json").loads((kit / "pill-bottle" / "assemblies.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(assembly["designs"]), 4)
+        self.assertEqual(len(assembly["designs"]), 5)
+        self.assertIn("captured-bottle-rack", assembly["designs"])
+
+    def test_plate_builder_and_calibration_workflow_are_connected(self) -> None:
+        builder = self.read("design-fabrication/tools/plate-builder/index.qmd")
+        for label in ("Rectangle", "Rounded rectangle", "Circle", "Ring", "Staggered grid", "Radial", "Perimeter", "Download SVG", "Copy share link"):
+            self.assertIn(label, builder)
+        script = self.read("assets/plate-builder.js")
+        for group in ("CUT_OUTER", "CUT_HOLES", "GUIDES"):
+            self.assertIn(group, script)
+        self.assertNotIn("<text", script.split("function buildSvg", 1)[1].split("function encodeState", 1)[0])
+
+        calibration = self.read("design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd")
+        for asset in ("material-thickness", "ruler-check", "dimension-verification", "kerf-test", "tab-fit", "slot-fit", "four-fit-series", "hole-fit"):
+            self.assertIn(asset, calibration)
+        for source in ("support.glowforge.com", "support.brmlasers.com", "ponoko.com"):
+            self.assertIn(source, calibration)
+        self.assertIn("Printable calibration record", calibration)
 
 
 if __name__ == "__main__":

@@ -316,10 +316,62 @@
       "title": "Removable Wall Bench Rack Exploded Diagram"
     },
     {
-      "description": "Parameters, BOMs, notes and verification status for four references.",
+      "description": "True-size reference parts; adapt measured parameters before cutting.",
+      "kind": "reference-assembly",
+      "parameters": {
+        "assembly": "the lower plate locates each bottle body; the removable upper plate sits below the cap shoulder and is retained by two hand knobs",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_capture_per_side_mm": 2.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "interface_hole_mm": 6.4,
+        "keeper_opening_diameter_mm": 38.0,
+        "keeper_type": "hand-knob-retained removable upper plate",
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench or approved wall backer",
+        "opening_diameter_mm": 36.0,
+        "physical_test_record_fields": [
+          "bottle body diameter",
+          "cap diameter",
+          "material thickness",
+          "opening fit",
+          "keeper height",
+          "knob clearance",
+          "load test",
+          "revision"
+        ],
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "The keeper is a serviceable anti-lift feature, not a child-resistant lock. Physically test access, load path and wall mounting before use.",
+        "service_sequence": [
+          "support bottles",
+          "remove two hand knobs",
+          "lift keeper plate",
+          "remove or replace bottles",
+          "refit plate and hand knobs",
+          "record fit and revision"
+        ]
+      },
+      "path": "pill-bottle/captured-bottle-rack/parts.svg",
+      "review_status": "unverified",
+      "title": "Captured Bottle Rack"
+    },
+    {
+      "description": "Assembly relationship diagram.",
+      "kind": "teacher-diagram",
+      "parameters": {
+        "design": "captured-bottle-rack"
+      },
+      "path": "pill-bottle/captured-bottle-rack/exploded.svg",
+      "review_status": "unverified",
+      "title": "Captured Bottle Rack Exploded Diagram"
+    },
+    {
+      "description": "Parameters, BOMs, notes and verification status for five references.",
       "kind": "manifest",
       "parameters": {
-        "design_count": 4
+        "design_count": 5
       },
       "path": "pill-bottle/assemblies.json",
       "review_status": "unverified",

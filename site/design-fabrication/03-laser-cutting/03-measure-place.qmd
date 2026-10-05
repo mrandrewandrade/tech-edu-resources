@@ -31,6 +31,8 @@ For the first controlled organizer exercise, compare the [Hole](../../assets/las
 
 Draw front, top and side views on the [planning worksheet](resources/fabrication-planning-worksheet.qmd) before building the digital layout. Use the [Paper-to-Inkscape workflow](resources/paper-to-inkscape.qmd) for datums, grouping, alignment and preflight.
 
+For a row, grid, staggered, radial or perimeter layout, the [Fabrication Plate Builder](../tools/plate-builder/index.qmd) can turn the checked measurements into a reproducible true-size SVG. It validates boundaries and overlap, but the [calibration lesson](04-material-fit-calibration.qmd) is still required to decide the finished fit.
+
 ## Evidence
 
 Submit a measurement table, dimensioned layout, fabrication file, fit observation, and one revision. A visually even layout is not enough if tools bind, fall through, or cannot be removed easily.

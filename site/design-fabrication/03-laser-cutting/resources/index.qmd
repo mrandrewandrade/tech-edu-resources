@@ -13,7 +13,7 @@ This toolkit supports one connected sequence: **name + logo engraving → make i
 
 <div class="ter-toolkit-banner">
 <a href="pill-bottle-organizer.qmd"><img src="../../../assets/laser-library/classroom-kit/pill-bottle/reinforced-wall-rack/exploded.svg" alt="Exploded preview of the reinforced wall organizer"></a>
-<div><p class="ter-assembly-kicker">Four visible reference systems</p><h2>Organizer assembly gallery</h2><p>See the complete assemblies and true-size cutting sheets side by side. Each design has its own parts download, exploded view, build concept and test question.</p><p><a class="btn btn-primary" href="pill-bottle-organizer.qmd">See all four assemblies + files</a></p></div>
+<div><p class="ter-assembly-kicker">Five visible reference systems</p><h2>Organizer assembly gallery</h2><p>See the complete assemblies and true-size cutting sheets side by side. Each design has its own parts download, exploded view, build concept and test question.</p><p><a class="btn btn-primary" href="pill-bottle-organizer.qmd">See all five assemblies + files</a></p></div>
 </div>
 
 ## Start here
@@ -28,6 +28,8 @@ Use the [reusable fabrication planning worksheet](fabrication-planning-worksheet
 ### Move the plan into the file
 
 Follow [Paper to Inkscape](paper-to-inkscape.qmd) to set millimetres, bring in named components, set exact dimensions, align, duplicate, classify operations and complete a preflight check.
+
+For a clean base plate with repeated measured holes, start in the [Fabrication Plate Builder](../../tools/plate-builder/index.qmd). Resolve its geometry warnings, download the SVG, then finish labels and project-specific details in Inkscape.
 :::
 ::: {.ter-project-card}
 ### Use measured building blocks
@@ -102,7 +104,7 @@ Mount plate, keyhole study, cleat face and removable foot. Instructor approval i
 
 ![Organizer palette preview](../../../assets/laser-library/classroom-kit/palettes/organizer.svg){.ter-resource-preview loading="lazy"}
 
-Bottle retainer, repeated-opening row, label tab and divider.
+Bottle retainer, repeated-opening row, label tab, divider, keeper rail and removable keeper plate.
 
 [Open or download SVG](../../../assets/laser-library/classroom-kit/palettes/organizer.svg){.btn .btn-sm .btn-outline-primary}
 :::
@@ -134,7 +136,7 @@ A **hole** is a closed cut path inside a larger part; the inside becomes waste a
 ::: {.ter-feature-asset}
 ![Exploded removable wall and bench organizer](../../../assets/laser-library/classroom-kit/pill-bottle/removable-wall-bench-rack/exploded.svg){loading="lazy"}
 
-### Four organizer assemblies
+### Five organizer assemblies
 
 [See all assemblies, parts sheets, BOMs and downloads](pill-bottle-organizer.qmd){.btn .btn-primary}
 :::
