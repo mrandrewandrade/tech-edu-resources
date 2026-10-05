@@ -1,7 +1,7 @@
 ---
 title: "Waterloo Engineering Track"
-subtitle: "Independent TEJ enrichment pathway for engineering mathematics, modelling, energy, programming, and control"
-description: "A progressive enrichment curriculum embedded in TEJ for students considering engineering programs."
+subtitle: "Optional computer engineering technology enrichment in mathematics, modelling, energy, programming, and control"
+description: "A progressive engineering-enrichment pathway built around practical course work."
 sidebar: tej
 toc: true
 toc-depth: 3
@@ -9,89 +9,83 @@ execute: {enabled: false}
 ---
 
 ::: {.callout-note title="Independent enrichment pathway"}
-The Waterloo Engineering Track is a locally developed TEJ enrichment pathway. It is not created, approved, or endorsed by the University of Waterloo, it does not reproduce a Waterloo course, and it does not guarantee admission or university credit. The name identifies the preparation goal. The mathematical and engineering habits are intended to be useful for many first- and second-year engineering pathways.
+This optional track adds engineering mathematics and modelling to regular Computer Engineering Technology work. It is locally developed, is not endorsed by the University of Waterloo, and does not guarantee admission or university credit.
 :::
 
 ::: {.callout-warning title="Planning status"}
-This is a work-in-progress curriculum plan. Existing linked TEJ lessons and assignments may be used now. WET-coded handouts, answer keys, and the thermal-process capstone must be developed, safety-checked, accessibility-reviewed, and classroom-tested before release.
+This is a work-in-progress roadmap. Linked course lessons may be used now. The new assignments, answer keys, and thermal-process project are placeholders until they are developed, checked, and classroom-tested.
 :::
 
-## Purpose
+## Why this track
 
-The student completes the regular TEJ sequence, laboratories, safety requirements, and projects. Track work extends selected TEJ activities with more algebra, systems of equations, conservation laws, energy balances, measurement analysis, programming, modelling, optimization, and technical communication.
+First-year engineering asks students to turn physical situations into equations, solve them carefully, test their assumptions, and explain the result. This track builds those habits through circuits, measurements, programs, sensors, actuators, energy, and control systems.
 
-The track is not a separate chemical-engineering course and should not become a collection of disconnected university problems. Every extension begins with a real TEJ circuit, measurement, program, computer system, sensor, actuator, or controller. Applications then connect the same mathematics to electrical, computer, mechanical, mechatronics, systems, chemical, civil, environmental, and related engineering fields.
+The preparation is useful across electrical, computer, mechanical, mechatronics, systems, chemical, civil, environmental, and related programs. Waterloo's current program pages provide examples for [Electrical Engineering](https://uwaterloo.ca/future-students/programs/electrical-engineering), [Mechanical Engineering](https://uwaterloo.ca/future-students/programs/mechanical-engineering), [Mechatronics Engineering](https://uwaterloo.ca/engineering/future-students/mechatronics-engineering), [Systems Design Engineering](https://uwaterloo.ca/future-students/programs/systems-design-engineering), and [Chemical Engineering](https://uwaterloo.ca/future-students/programs/chemical-engineering).
 
-The pathway is designed around four recurring questions:
+Every activity returns to four questions:
 
 1. What is the system boundary?
 2. What quantities enter, leave, accumulate, or are transformed?
 3. What equations and assumptions represent the system?
 4. Do calculated, simulated, and measured results agree closely enough to support the conclusion?
 
-## Relationship to Waterloo engineering
+## Learning goals and why they matter
 
-Waterloo's current first-year examples vary by program, but the common preparation pattern is mathematics, physical science, computation, design, laboratories, and communication. Electrical Engineering emphasizes calculus, linear algebra, programming, circuits, logic, and physics. Mechanical Engineering emphasizes mathematics, mechanics, chemistry, materials, electrical engineering, and design. Mechatronics combines mathematics, computation, circuits, statics, materials, and algorithms. Systems Design emphasizes mathematics, computation, modelling, design, communication, and human or ecological systems. Chemical Engineering combines mathematics, chemistry, programming, engineering concepts, laboratories, and design.
-
-Current program descriptions are available from Waterloo for [Electrical Engineering](https://uwaterloo.ca/future-students/programs/electrical-engineering), [Mechanical Engineering](https://uwaterloo.ca/future-students/programs/mechanical-engineering), [Mechatronics Engineering](https://uwaterloo.ca/engineering/future-students/mechatronics-engineering), [Systems Design Engineering](https://uwaterloo.ca/future-students/programs/systems-design-engineering), and [Chemical Engineering](https://uwaterloo.ca/future-students/programs/chemical-engineering). Course names and sequences can change; these links are context, not track requirements.
-
-## Intended learning outcomes
-
-By the end of the pathway, the student should be able to:
-
-1. define variables, units, directions, sign conventions, assumptions, and a system boundary before calculating;
-2. use dimensional analysis, engineering notation, significant figures, estimation, and a complete GUESS solution;
-3. derive equations from circuit and system diagrams instead of selecting formulas by appearance;
-4. solve and verify two- and three-variable linear systems by substitution, elimination, and matrix or software methods;
-5. apply conservation of charge, current, voltage, power, energy, and material to appropriate models;
-6. collect repeatable data, construct calibration models, quantify error, and distinguish interpolation from unsupported extrapolation;
-7. implement a discrete-time model in a spreadsheet or program and compare its prediction with measurements;
-8. compare design alternatives using constraints, efficiency, sensitivity, cost, safety, and uncertainty;
-9. design, build, program, test, revise, and communicate a small instrumented engineering system.
+| Learning goal | Why it matters |
+|---|---|
+| Define variables, units, directions, assumptions, and the system boundary before calculating. | A clear model prevents hidden assumptions and sign errors. |
+| Use dimensional analysis, engineering notation, significant figures, estimation, and the Given–Unknown–Equation–Substitute–Solve method. | Units and estimates expose impossible calculator results. |
+| Derive equations from circuit and system diagrams. | Engineers must model unfamiliar systems, not only recognize familiar formulas. |
+| Solve and verify linear systems with two or three variables. | Coupled equations appear in circuits, structures, processes, controls, and data models. |
+| Apply conservation of charge, current, voltage, power, energy, and material. | Conservation laws connect many branches of engineering. |
+| Collect repeatable data, calibrate a model, and quantify error and uncertainty. | Measurements are evidence only when their limits are understood. |
+| Build a step-by-step model in a spreadsheet or program and compare it with measurements. | Computational models let engineers predict changing systems and test ideas safely. |
+| Compare designs using constraints, efficiency, sensitivity, cost, safety, and uncertainty. | Engineering decisions require trade-offs rather than one perfect answer. |
+| Design, build, program, test, revise, and explain an instrumented system. | A complete project joins mathematical reasoning with practical work and communication. |
 
 ## Pathway structure
 
-The suggested pathway adds approximately 35 to 50 hours across a full TEJ course. Most work replaces a simpler practice set or adds one challenge section; it should not become an unmanageable second course. Chapters WET01 through WET06 establish the minimum analytical core. Later chapters may be selected to match the student's interests and available equipment.
+The suggested pathway adds approximately 35 to 50 hours across a full course. Most work replaces simpler practice or adds one challenge section. Chapters 1 through 6 form the analytical core; later chapters can match the student's interests and available equipment.
 
-| Track chapter | Place in the TEJ sequence | Engineering mathematics | Required track evidence | Principal references |
+| Track chapter | Course connection | Engineering mathematics | Required evidence | References |
 |---|---|---|---|---|
-| WET00 Engineering baseline and notebook | Unit 0 and H01 | arithmetic, algebra diagnostic, estimation, graph reading, units | diagnostic, learning plan, calculation standard and notebook setup | Ontario TEJ expectations; course safety resources |
-| WET01 Quantities, units, and scale | NS02-NS06 | dimensional analysis, engineering notation, significant figures, ratios and rates | WET-A01 quantity and unit audit | Grob Ch. 0; Çengel Ch. 1; Chapra Chs. 1 and 3 |
-| WET02 Algebraic electrical models | H02, EL02 and H07 | rearranging equations, proportional and inverse relationships, domains and physical constraints | WET-A02 resistive design brief | Grob Chs. 1 and 3 |
-| WET03 Conservation in series and parallel networks | H09 and H10 | sums, equivalent models, simultaneous constraints, power checks | WET-A03 series-parallel design proof | Grob Chs. 4-6 |
-| WET04 Coupled equations, KCL, and KVL | H11 and H12 | two- and three-variable linear systems, matrices, signs, residual checks | WET-A04 branch-current system | Grob Chs. 7 and 9; Chapra Chs. 9 and 12 |
-| WET05 Equivalent models and optimization | H13 and H16 | functions, graphing, extrema, constraints, sensitivity and fault cases | WET-A05 source/load optimization memo | Grob Ch. 10; Chapra Chs. 13-16 |
-| WET06 Power and energy balances | H08, H15, CS03 and SQ05 | power versus energy, efficiency, storage, thermal energy and balances | WET-A06 energy audit and WET-L01 thermal balance | Grob Chs. 1 and 12; Çengel Chs. 3, 5 and 6 |
-| WET07 Measurement, calibration, and uncertainty | H05, BB06 and H06 | slope, intercept, regression, residuals, percent error and uncertainty | WET-L02 sensor calibration | Grob Ch. 8; Chapra Chs. 3, 4, 17 and 20 |
-| WET08 Transient and discrete-time systems | H19, H20 and H24 | exponentials, time constants, recurrence relations and numerical stepping | WET-A07 transient model | Grob Chs. 16, 18-22; Chapra Ch. 25 as teacher extension |
-| WET09 Logic, algorithms, and state | Digital Logic, Programming and Microcontrollers | Boolean expressions, binary enumeration, functions, conditions, arrays and state transition tables | WET-A08 solver and WET-A09 safety state machine | TEJ digital-input sequence; Chapra Ch. 2 |
-| WET10 Electromechanical systems | H17, H18, H23 and C09 | speed, torque, gear ratio, electrical/mechanical power and efficiency | WET-L03 actuator characterization | Grob Chs. 13-14 and relevant switching chapters |
-| WET11 Feedback, models, and design decisions | C01-C08 | error, gain, saturation, hysteresis, response metrics, parameter variation and trade-offs | WET-A10 control-method comparison | TEJ control sequence; Çengel Ch. 3; Chapra Chs. 16 and 20 |
-| WET12 Integrated engineering project | Unit 15 and C11 | integrated modelling, validation, optimization and evidence-based revision | WET-P01 capstone portfolio | all selected sources and manufacturer documentation |
+| Chapter 0: Engineering baseline and notebook | orientation and safety | arithmetic, algebra diagnostic, estimation, graph reading, units | diagnostic, learning plan, calculation standard, notebook setup | course safety resources |
+| Chapter 1: Quantities, units, and scale | number systems and measurement | dimensional analysis, engineering notation, significant figures, ratios and rates | Assignment 1: quantity and unit audit | [[1, Ch. 0]](../../references.qmd#ref-grob2016) [[27, Ch. 1]](../../references.qmd#ref-cengel2008) [[28, Chs. 1, 3]](../../references.qmd#ref-chapra2010) |
+| Chapter 2: Algebraic electrical models | charge, voltage, current, and resistance | rearranging equations, proportional and inverse relationships, domains and physical constraints | Assignment 2: resistive design brief | [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016) |
+| Chapter 3: Series and parallel networks | series and parallel circuits | sums, equivalent models, simultaneous constraints, power checks | Assignment 3: series-parallel design proof | [[1, Chs. 4–6]](../../references.qmd#ref-grob2016) |
+| Chapter 4: Coupled equations and Kirchhoff's laws | branch, node, and loop analysis | two- and three-variable linear systems, matrices, signs, residual checks | Assignment 4: branch-current system | [[1, Chs. 7, 9]](../../references.qmd#ref-grob2016) [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010) |
+| Chapter 5: Equivalent models and optimization | source equivalents and loading | functions, graphing, extrema, constraints, sensitivity and fault cases | Assignment 5: source/load optimization memo | [[1, Ch. 10]](../../references.qmd#ref-grob2016) [[28, Chs. 13–16]](../../references.qmd#ref-chapra2010) |
+| Chapter 6: Power and energy balances | power, energy, computer systems, and thermal behaviour | power versus energy, efficiency, storage, thermal energy and balances | Assignment 6: energy audit; Lab 1: thermal balance | [[1, Chs. 1, 12]](../../references.qmd#ref-grob2016) [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008) |
+| Chapter 7: Measurement, calibration, and uncertainty | measurement and sensors | slope, intercept, regression, residuals, percent error and uncertainty | Lab 2: sensor calibration | [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3, 4, 17, 20]](../../references.qmd#ref-chapra2010) |
+| Chapter 8: Transient and step-by-step systems | changing electrical and thermal systems | exponentials, time constants, recurrence relations and numerical stepping | Assignment 7: transient model | [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010) |
+| Chapter 9: Logic, algorithms, and state | digital logic, programming, and microcontrollers | Boolean expressions, binary enumeration, functions, conditions, arrays and state-transition tables | Assignment 8: solver; Assignment 9: safety state machine | [[28, Ch. 2]](../../references.qmd#ref-chapra2010) |
+| Chapter 10: Electromechanical systems | motors, switching, protection, and motion | speed, torque, gear ratio, electrical and mechanical power, efficiency | Lab 3: actuator characterization | [[1, Chs. 13–14]](../../references.qmd#ref-grob2016) |
+| Chapter 11: Feedback, models, and design decisions | control systems | error, gain, saturation, hysteresis, response metrics, parameter variation and trade-offs | Assignment 10: control-method comparison | [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010) |
+| Chapter 12: Integrated engineering project | culminating project | integrated modelling, validation, optimization and evidence-based revision | Project 1: capstone portfolio | selected sources and manufacturer documentation |
 
 ## Chapter specifications
 
-### WET00 Engineering baseline and notebook
+### Chapter 0: Engineering baseline and notebook
 
 The track begins with a short diagnostic rather than a mark. The student demonstrates fraction and decimal operations, equation rearrangement, graph interpretation, unit conversions, calculator use, estimation, and a short technical explanation. The result determines which skills require review.
 
 The engineering notebook standard requires a dated problem statement, system diagram, givens, unknowns, assumptions, equations before substitution, units carried through the work, full calculator result, rounded answer, reasonableness check, and revision record. Safety decisions and failed tests remain part of the record.
 
-### WET01 Quantities, units, and scale
+### Chapter 1: Quantities, units, and scale
 
 Complete [Number Systems, Measurement, Units, and Calculator Skills](../01-number-systems/index.qmd), then extend the work to compound units such as coulombs per second, joules per second, watt-hours, kilograms per second, litres per minute, joules per kilogram-degree Celsius, revolutions per minute, radians per second, and dollars per kilowatt-hour.
 
 The student should convert units by multiplying by identities, not by moving decimals without explanation. Estimation precedes calculator work. Final answers must state whether the magnitude is physically plausible.
 
-### WET02 Algebraic electrical models
+### Chapter 2: Algebraic electrical models
 
 Complete [Charge, Voltage, and Current](../02-basic-electronics/01-charge-voltage-current.qmd), [Closed, Open, and Short Circuits](../02-basic-electronics/02-circuits-opens-shorts.qmd), and [Ohm's Law](../02-basic-electronics/03-ohms-law.qmd).
 
 Track problems require the student to derive and rearrange relationships, identify impossible values, state operating limits, and compare symbolic predictions with simulation. Problems should include design choices rather than only asking for a missing number.
 
-### WET03 Conservation in series and parallel networks
+### Chapter 3: Conservation in series and parallel networks
 
-Use the regular H09 and H10 circuit sequence. The extension emphasizes why the current, voltage, resistance, and power rules follow from circuit structure. Each solution includes at least two independent checks.
+Use the regular series and parallel circuit sequence. The extension emphasizes why the current, voltage, resistance, and power rules follow from circuit structure. Each solution includes at least two independent checks.
 
 The student should be able to demonstrate:
 
@@ -103,19 +97,19 @@ $$P_T=\sum P_k$$
 
 The power equation is used as a conservation check after the circuit has been solved.
 
-### WET04 Coupled equations, KCL, and KVL
+### Chapter 4: Coupled equations and Kirchhoff's laws
 
-This chapter is the central systems-of-equations experience. Grob Chapter 9 explicitly progresses from KCL and KVL to branch-current, node-voltage, and mesh-current methods. The student first solves a two-source network using elimination, then expresses the same equations in matrix form, and finally uses software to verify the result. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
+This is the central systems-of-equations chapter. It progresses from Kirchhoff's current law and Kirchhoff's voltage law to branch-current, node-voltage, and mesh-current methods. The student solves a two-source network by elimination, writes the equations in matrix form, and uses software to verify the result. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
 
-The solution must include a labelled schematic, assumed directions, independent node and loop equations, the algebraic solution, substitution back into the original equations, a KCL residual, a KVL residual, and a power balance. A negative current is interpreted as evidence that the actual direction is opposite to the assumed reference, not as a failed calculation.
+The solution includes a labelled schematic, assumed directions, independent node and loop equations, the algebraic solution, substitution into the original equations, a current-law residual, a voltage-law residual, and a power balance. A negative current means the actual direction is opposite to the assumed direction; it does not mean the calculation failed.
 
-### WET05 Equivalent models and optimization
+### Chapter 5: Equivalent models and optimization
 
 Thevenin and Norton equivalents reduce a network to a useful model at two terminals. The student varies a load, graphs delivered power, identifies a maximum, and then explains why maximum power is not always the same design objective as maximum efficiency, minimum cost, lowest temperature, or longest battery life.
 
 This chapter introduces engineering optimization without requiring calculus. A valid recommendation must name the objective, constraints, variables, feasible alternatives, evidence, and trade-offs.
 
-### WET06 Power and energy balances
+### Chapter 6: Power and energy balances
 
 Complete [Power and Energy](../02-basic-electronics/04-power-energy.qmd), then apply a conserved-quantity balance:
 
@@ -139,21 +133,21 @@ The introductory calculation treats water as a closed batch and calculates an ob
 
 $$\overline V_j\overline I_jt_j=C_{\mathrm{eff}}\Delta T_j+K(T_{\mathrm{avg},j}-T_{\mathrm{room},j})t_j$$
 
-Two runs produce two linear equations. A third run tests the model. Çengel Chapters 3, 5, and 6 provide the teacher background for energy analysis, closed systems, and control volumes; the student activity remains original, low-voltage, and appropriate for TEJ. [[27, Chs. 3, 5-6]](../../references.qmd#ref-cengel2008)
+Two runs produce two linear equations. A third run tests the model. The teacher background covers energy analysis, closed systems, and control volumes; the student activity remains original, low-voltage, and appropriate for a high-school laboratory. [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)
 
 ::: {.callout-important title="Thermal-project safety boundary"}
 Use only teacher-approved protected low-voltage equipment. Students do not construct or probe mains circuits. Keep liquids isolated from exposed electronics, include temperature and current limits, provide secondary containment, and define a safe shutdown state before testing.
 :::
 
-### WET07 Measurement, calibration, and uncertainty
+### Chapter 7: Measurement, calibration, and uncertainty
 
-Use H05 and BB06 to compare calculated, simulated, and measured values. Calibrate one sensor or actuator using repeated measurements. The student produces a scatter plot, fitted relationship, residual table, stated valid range, and discussion of uncertainty.
+Compare calculated, simulated, and measured values, then calibrate one sensor or actuator using repeated measurements. The student produces a scatter plot, fitted relationship, residual table, stated valid range, and discussion of uncertainty.
 
 The objective is not to force every data set to be linear. The student must explain whether the model is suitable, where interpolation is defensible, and why extrapolation beyond the measured range may be unsafe.
 
-### WET08 Transient and discrete-time systems
+### Chapter 8: Transient and step-by-step systems
 
-RC and LR circuits provide a TEJ route into changing systems. The student measures or simulates a transient, identifies a time constant, and compares observations with a model. A spreadsheet or program then advances the model one time step at a time.
+Resistor-capacitor and resistor-inductor circuits provide a practical route into changing systems. The student measures or simulates a transient response, identifies a time constant, and compares observations with a model. A spreadsheet or program then advances the model one time step at a time.
 
 For the thermal process, an accessible no-calculus model is:
 
@@ -161,13 +155,13 @@ $$T_{n+1}=T_n+\frac{P_{\mathrm{in}}-K(T_n-T_{\mathrm{room}})}{C_{\mathrm{eff}}}\
 
 The student changes the time step and explains why a numerical model can become inaccurate or unstable. Differential equations may be named as the later university language for the same idea, but they are not required to complete the track.
 
-### WET09 Logic, algorithms, and state
+### Chapter 9: Logic, algorithms, and state
 
 Complete the [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd) sequence and the appropriate Programming and Microcontroller modules. Three-input truth tables must count in binary order from $000$ to $111$, with a separate column for each output.
 
-The programming extension implements one previously solved model. Suitable programs include a GUESS calculator with unit checks, a two- or three-equation solver, an RC simulator, a thermal time-step model, or a calibration tool. The student supplies tests, explains invalid-input handling, and compares program output with one hand calculation.
+The programming extension implements one previously solved model. Suitable programs include a Given–Unknown–Equation–Substitute–Solve calculator with unit checks, a two- or three-equation solver, a resistor-capacitor circuit simulator, a thermal time-step model, or a calibration tool. The student supplies tests, explains invalid-input handling, and compares program output with one hand calculation.
 
-### WET10 Electromechanical systems
+### Chapter 10: Electromechanical systems
 
 Use magnetism, electromagnetism, switching, motors, protection, and motion control to connect electrical input to mechanical output. The minimum mathematical set is:
 
@@ -179,37 +173,37 @@ $$\eta=\frac{P_{\mathrm{mechanical}}}{P_{\mathrm{electrical}}}$$
 
 The student characterizes one approved actuator or pump across several operating points and explains why speed, torque, flow, current, temperature, and efficiency cannot all be optimized independently.
 
-### WET11 Feedback, models, and design decisions
+### Chapter 11: Feedback, models, and design decisions
 
-Complete the [Control Systems and CNC](../05-control-systems/index.qmd) comparison sequence. Use the same process model and disturbance when comparing open loop, on-off control, hysteresis, proportional control, and PI or PID control. Record rise time, overshoot, settling behaviour, steady-state error, saturation, and failure response.
+Complete the [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd) comparison sequence. Use the same process model and disturbance when comparing open-loop, on-off, hysteresis, proportional, proportional-integral, and proportional-integral-derivative control. Record rise time, overshoot, settling behaviour, steady-state error, saturation, and failure response.
 
 Calculus is not required. The student should understand the operational meaning of accumulated error and rate of change, use graphs accurately, and explain how changing a parameter affects the complete system.
 
-### WET12 Integrated engineering project
+### Chapter 12: Integrated engineering project
 
-The recommended project is an **instrumented low-voltage thermal process controller**. It connects TEJ circuits, sensors, microcontrollers, programming, energy, data, safety, and control while providing useful preparation across engineering disciplines.
+The recommended project is an **instrumented low-voltage thermal process controller**. It connects circuits, sensors, microcontrollers, programming, energy, data, safety, and control while providing useful preparation across engineering disciplines.
 
 The student may propose a different project when it preserves the same mathematical and validation requirements. Suitable alternatives include a motor or pump test stand, battery discharge and thermal monitor, environmental chamber model, controlled fan-and-temperature system, tank-level simulator, or instrumented renewable-energy demonstrator.
 
 ## Assignment and lab sequence
 
-| Code | Assignment or lab | Required student evidence | Status and TEJ connection |
+| Item | Assignment or lab | Required student evidence | Course connection |
 |---|---|---|---|
-| WET-D00 | Engineering mathematics baseline | diagnostic, correction record and learning targets | New track diagnostic; ungraded |
-| WET-A01 | Quantity and unit audit | variable table, unit conversions, estimates and GUESS solutions | Extends NS02-NS06 |
-| WET-A02 | Resistive design brief | schematic, symbolic relationships, selected values, simulation and limits | Extends H07; use the existing [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf) as prerequisite practice |
-| WET-A03 | Series-parallel design proof | complete circuit solution with voltage, current, resistance and power checks | Extends H09-H10 and the same circuit-calculation package |
-| WET-A04 | Branch-current system | two-source circuit, two or three independent equations, hand and software solutions, KCL/KVL residuals | Extends H11; based on Grob Ch. 9 methods |
-| WET-A05 | Source/load optimization memo | graph, feasible region or tested range, optimum, constraints and recommendation | Extends H13 and H16 |
-| WET-A06 | Energy audit | measured or documented load, power profile, energy, cost, uncertainty and improvement recommendation | Extends H08, H15 and the [Computer Power and Parts mission](../computer-systems/computer-power-parts.qmd) |
-| WET-L01 | Electrical-to-thermal energy balance | circuit, measurements, $VIt$, $mc\Delta T$, losses, efficiency and safety record | New supervised low-voltage track lab |
-| WET-L02 | Sensor calibration and model check | repeated data, scatter plot, regression, residuals, valid range and uncertainty | Extends H05, BB06 and H06 |
-| WET-A07 | Transient model | RC or thermal data, time constant or parameters, spreadsheet/program model and prediction comparison | Extends H19-H20 and Programming |
-| WET-A08 | Engineering calculation program | documented code, test cases, hand-check and invalid-input behaviour | Extends Programming Fundamentals |
-| WET-A09 | Safety state machine | state diagram, transition table, normal sequence, interlocks and fault recovery | Extends digital logic, microcontrollers and C07-C08; use the [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf) first |
-| WET-L03 | Actuator characterization | electrical input, motion or flow output, efficiency graph, limits and protection | Extends H17, H18, H23 and C09 |
-| WET-A10 | Control-method comparison | common process, common disturbance, response graphs, metrics and recommendation | Uses the existing [Control Methods Comparison](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf) |
-| WET-P01 | Integrated engineering capstone | requirements, design, model, build or approved simulation, code, validation, revision and technical report | Extends Unit 15 and C11 |
+| Diagnostic | Engineering mathematics baseline | diagnostic, correction record and learning targets | ungraded starting point |
+| Assignment 1 | Quantity and unit audit | variable table, unit conversions, estimates and Given–Unknown–Equation–Substitute–Solve solutions | extends number systems and measurement |
+| Assignment 2 | Resistive design brief | schematic, symbolic relationships, selected values, simulation and limits | extends Ohm's law; use the existing [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf) as prerequisite practice |
+| Assignment 3 | Series-parallel design proof | complete circuit solution with voltage, current, resistance and power checks | extends series and parallel circuits and the same calculation package |
+| Assignment 4 | Branch-current system | two-source circuit, two or three independent equations, hand and software solutions, current-law and voltage-law residuals | extends Kirchhoff's laws; based on [[1, Ch. 9]](../../references.qmd#ref-grob2016) |
+| Assignment 5 | Source/load optimization memo | graph, feasible region or tested range, optimum, constraints and recommendation | extends equivalent circuits and source loading |
+| Assignment 6 | Energy audit | measured or documented load, power profile, energy, cost, uncertainty and improvement recommendation | extends power and energy through the [Computer Power and Parts mission](../computer-systems/computer-power-parts.qmd) |
+| Lab 1 | Electrical-to-thermal energy balance | circuit, measurements, $VIt$, $mc\Delta T$, losses, efficiency and safety record | new supervised low-voltage investigation |
+| Lab 2 | Sensor calibration and model check | repeated data, scatter plot, regression, residuals, valid range and uncertainty | extends measurement and sensors |
+| Assignment 7 | Transient model | resistor-capacitor or thermal data, time constant or parameters, spreadsheet or program model, prediction comparison | extends changing systems and programming |
+| Assignment 8 | Engineering calculation program | documented code, test cases, hand-check and invalid-input behaviour | extends programming fundamentals |
+| Assignment 9 | Safety state machine | state diagram, transition table, normal sequence, interlocks and fault recovery | extends digital logic and microcontrollers; use the [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf) first |
+| Lab 3 | Actuator characterization | electrical input, motion or flow output, efficiency graph, limits and protection | extends motors, protection, and motion control |
+| Assignment 10 | Control-method comparison | common process, common disturbance, response graphs, metrics and recommendation | uses the existing [Control Methods Comparison](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf) |
+| Project 1 | Integrated engineering capstone | requirements, design, model, build or approved simulation, code, validation, revision and technical report | extends the culminating project and control-systems work |
 
 ## Capstone gates
 
@@ -242,7 +236,7 @@ A polished answer with an unjustified model should not receive a high track resu
 
 | Engineering direction | Strongest track connections |
 |---|---|
-| Electrical and Computer | circuits, KCL/KVL, equivalent networks, power, logic, programming, embedded systems and control |
+| Electrical and Computer | circuits, Kirchhoff's laws, equivalent networks, power, logic, programming, embedded systems and control |
 | Mechanical and Mechatronics | energy conversion, sensors, actuators, torque, motion, thermal behaviour, programming and control |
 | Systems Design | boundaries, requirements, models, feedback, trade-offs, optimization, uncertainty and communication |
 | Chemical and Biological | conservation laws, energy balances, transient models, sensors, process data and control |
@@ -253,7 +247,7 @@ A polished answer with an unjustified model should not receive a high track resu
 
 The textbooks are teacher references. Public track materials must use original explanations, diagrams, values, and questions. Do not copy or republish textbook pages or problem sets.
 
-### Grob's Basic Electronics, 12th edition
+### [[1]](../../references.qmd#ref-grob2016) Grob's Basic Electronics, 12th edition
 
 | Chapters used | Track use |
 |---|---|
@@ -263,16 +257,16 @@ The textbooks are teacher references. Public track materials must use original e
 | Chs. 4-6, Series, Parallel, and Series-Parallel Circuits | network structure and conservation checks |
 | Ch. 7, Voltage Dividers and Current Dividers | proportional models and loading |
 | Ch. 8, Analog and Digital Multimeters | measurement practice |
-| Ch. 9, Kirchhoff's Laws | KCL, KVL, branch currents, node voltage, mesh current and simultaneous equations |
+| Ch. 9, Kirchhoff's Laws | current law, voltage law, branch currents, node voltage, mesh current and simultaneous equations |
 | Ch. 10, Network Theorems | equivalent models and maximum-power investigations |
 | Ch. 12, Batteries | stored energy, capacity and source behaviour |
 | Chs. 13-14, Magnetism and Electromagnetism | electromechanical systems |
 | Chs. 16, 18-22 | capacitance, inductance, transients and time constants |
-| Chs. 27-30 and 33 | optional device, switching, sensor-interface and op-amp extensions |
+| Chs. 27–30 and 33 | optional device, switching, sensor-interface and operational-amplifier extensions |
 
 Grob remains the primary electronics sequencing source. [[1]](../../references.qmd#ref-grob2016)
 
-### Çengel, Introduction to Thermodynamics and Heat Transfer, 2nd edition
+### [[27]](../../references.qmd#ref-cengel2008) Çengel, Introduction to Thermodynamics and Heat Transfer, 2nd edition
 
 | Chapters used | Teacher use in the track |
 |---|---|
@@ -285,7 +279,7 @@ Grob remains the primary electronics sequencing source. [[1]](../../references.q
 
 This is a restricted teacher reference. Student materials use a deliberately smaller high-school model. [[27]](../../references.qmd#ref-cengel2008)
 
-### Chapra and Canale, Numerical Methods for Engineers, 6th edition
+### [[28]](../../references.qmd#ref-chapra2010) Chapra and Canale, Numerical Methods for Engineers, 6th edition
 
 | Chapters used | Teacher use in the track |
 |---|---|
@@ -302,4 +296,4 @@ Chapter 12 is particularly useful as a teacher reference because it places react
 
 ## Implementation status
 
-This page defines the intended track and source map. Existing TEJ lessons and linked activities can be used now. WET-coded assignments and the thermal-process capstone still require separate student handouts, answer keys, equipment verification, accessibility review, and classroom piloting before they are labelled published.
+This page defines the intended track and source map. Existing course lessons and linked activities can be used now. The new assignments and thermal-process project still require student handouts, answer keys, equipment verification, accessibility review, and classroom testing before they are labelled published.
