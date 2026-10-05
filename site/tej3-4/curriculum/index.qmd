@@ -2187,7 +2187,7 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 
 <div class="tej-roadmap-unit-summary">
 <p><span class="tej-badge status-published">Published</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></p>
-<p>Preserve the completed electricity-to-computer sprint, Linux commissioning sequence, service side quests, and current pilots.</p>
+<p>Connect Power Circuits Questions 1-6 to a completed parallel-load calculation worksheet, then continue through the electricity-to-computer sprint, recovery pilot, Linux commissioning sequence, and service side quests.</p>
 
 | Unit field | Roadmap record |
 |:--|:--|
@@ -2205,12 +2205,43 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Slides | Existing Basic Electricity to Basic Computer Systems resources |
 | Source references | ON-TEJ |
 | Copyright or permissions | Original public instructions and diagrams. Teacher fault cards and trackers remain restricted. |
-| Implementation notes | Keep existing routes. The Power and Parts lab remains a shell until actual evidence and values are ready. |
+| Implementation notes | Use CSB01 as the current calculation bridge. Keep CSP01 as a separate physical lab shell until the actual computer, photographs, approved method, and cited values are ready. |
 
 [Public notes](../computer-systems/index.qmd)
 </div>
 
 <div class="tej-roadmap-module-grid">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="published" data-pathway="core" data-access="public" data-search="CSB01 Computer Power and Parallel Loads calculation bridge Complete the student-ready worksheet after Power Circuits Questions 1-6 using GUESS, parallel-load relationships, units, calculator values, and significant figures. scientific calculator provided reference circuit Google Docs or compatible document editor">
+<div class="tej-roadmap-module-heading">
+<h3>CSB01: Computer Power and Parallel Loads calculation bridge</h3>
+<div><span class="tej-badge status-published">Published</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+</div>
+<p>Complete the student-ready worksheet after Power Circuits Questions 1-6 using GUESS, parallel-load relationships, units, calculator values, and significant figures.</p>
+<details>
+<summary>Requirements, evidence, and implementation notes</summary>
+
+| Field | Roadmap record |
+|:--|:--|
+| Prerequisites | Power Circuits Questions 1-6 |
+| Estimated time | 1-2 periods |
+| Simulation | Not required |
+| Physical lab | Not required |
+| Equipment | scientific calculator, provided reference circuit |
+| Software | Google Docs or compatible document editor |
+| Safety level | Mathematical model with sealed-PSU boundary |
+| Student deliverables | completed Computer Power and Parallel Loads worksheet |
+| Assessment evidence | equations before substitution, units, full calculator values, significant figures, answer sentences |
+| Student handout | Published fillable Google Doc |
+| Teacher guide | Teacher controlled |
+| Slides | Existing slides |
+| Source references | ON-TEJ |
+| Copyright or permissions | Original classroom resources only. |
+| Implementation notes | Complete after Power Circuits Questions 1-6. This calculation worksheet is distinct from the future CSP01 physical lab shell. |
+
+[Public notes](../computer-systems/index.qmd)
+</details>
+</article>
+
 <article class="tej-roadmap-module" data-tej-roadmap-module data-status="published" data-pathway="core" data-access="public" data-search="CS01 Electricity-to-computer bridge Map source, protection, controls, conductors, and parallel loads onto a computer. teacher-approved desktop computer ESD equipment service tools approved Linux distribution">
 <div class="tej-roadmap-module-heading">
 <h3>CS01: Electricity-to-computer bridge</h3>

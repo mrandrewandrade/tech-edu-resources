@@ -679,7 +679,7 @@ units:
 
   - unit_id: '8'
     title: Basic Computer Systems
-    short_description: Preserve the completed electricity-to-computer sprint, Linux commissioning sequence, service side quests, and current pilots.
+    short_description: Connect Power Circuits Questions 1-6 to a completed parallel-load calculation worksheet, then continue through the electricity-to-computer sprint, recovery pilot, Linux commissioning sequence, and service side quests.
     status: Published
     pathway: core
     prerequisites: [Units 2 to 4]
@@ -698,7 +698,7 @@ units:
     source_references: [ON-TEJ]
     access_level: Public
     copyright_permissions_note: Original public instructions and diagrams. Teacher fault cards and trackers remain restricted.
-    implementation_notes: Keep existing routes. The Power and Parts lab remains a shell until actual evidence and values are ready.
+    implementation_notes: Use CSB01 as the current calculation bridge. Keep CSP01 as a separate physical lab shell until the actual computer, photographs, approved method, and cited values are ready.
     module_defaults: &unit8_defaults
       status: Published
       pathway: core
@@ -720,6 +720,21 @@ units:
       copyright_permissions_note: Original classroom resources only.
       implementation_notes: Never open or probe a PSU. Teacher approval gates all power-up and hardware changes.
     modules:
+      - module_id: "CSB01"
+        title: "Computer Power and Parallel Loads calculation bridge"
+        short_description: "Complete the student-ready worksheet after Power Circuits Questions 1-6 using GUESS, parallel-load relationships, units, calculator values, and significant figures."
+        status: "Published"
+        prerequisites: [Power Circuits Questions 1-6]
+        estimated_time: 1-2 periods
+        physical_lab_requirement: Not required
+        equipment: [scientific calculator, provided reference circuit]
+        software: [Google Docs or compatible document editor]
+        safety_level: Mathematical model with sealed-PSU boundary
+        student_deliverables: [completed Computer Power and Parallel Loads worksheet]
+        assessment_evidence: [equations before substitution, units, full calculator values, significant figures, answer sentences]
+        public_notes_route: "tej3-4/computer-systems/index.qmd"
+        student_handout: "Published fillable Google Doc"
+        implementation_notes: "Complete after Power Circuits Questions 1-6. This calculation worksheet is distinct from the future CSP01 physical lab shell."
       - module_id: "CS01"
         title: "Electricity-to-computer bridge"
         short_description: "Map source, protection, controls, conductors, and parallel loads onto a computer."

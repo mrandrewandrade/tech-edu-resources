@@ -37,7 +37,10 @@ class TejCurriculumTests(unittest.TestCase):
         }
         self.assertIn("grounded switch", modules["DL03"]["short_description"].lower())
         self.assertIn("binary test order", modules["DL06"]["title"].lower())
+        self.assertEqual(modules["CSB01"]["status"], "Published")
+        self.assertIn("calculation bridge", modules["CSB01"]["title"].lower())
         self.assertIn("lab shell", modules["CSP01"]["title"].lower())
+        self.assertEqual(modules["CSP01"]["status"], "In development")
 
     def test_public_page_excludes_private_workbook(self) -> None:
         page = PAGE.read_text(encoding="utf-8").lower()

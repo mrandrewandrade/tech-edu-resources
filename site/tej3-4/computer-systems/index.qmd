@@ -1,13 +1,13 @@
 ---
 title: "8. Basic Computer Systems"
-description: "Three current missions plus the later CS01-CS08 Best Workstation Project."
+description: "A published calculation bridge, current classroom missions, and the CS01-CS08 Best Workstation Project."
 categories: [computer systems, main quest, side quests, OS comparison, Linux, hardware, commissioning]
 ---
 
-The required route moves quickly from the electricity you already know to useful computer service work. Complete CS01-CS08 in order. Choose Side Quests when time, equipment, and teacher approval allow.
+The required route moves quickly from the electricity you already know to useful computer service work. Complete the calculation bridge, then CS01-CS08 in order. Choose Side Quests when time, equipment, and teacher approval allow.
 
 ::: {.callout-note title="Current classroom missions"}
-All students complete Power Circuits Questions 1-6 first. [Computer Power and Parts](computer-power-parts.qmd) is currently a future-lab shell awaiting the actual classroom computer, photographs, and approved measurement method. Approved early finishers may choose [Make It Print](make-it-print.qmd), while a limited pair completes the [Computer Recovery and OS Comparison](computer-recovery-crew-pilot.qmd).
+All students complete Power Circuits Questions 1-6, then the published [Computer Power and Parallel Loads worksheet](https://docs.google.com/document/d/1hNVY7AojMABGcfcUCIRSbB4IevMV5e6AKuueP5Q45i0/edit). In parallel, a small teacher-approved team may begin [Computer Recovery and OS Comparison](computer-recovery-crew-pilot.qmd) so matched computers are ready for safe opening, parts identification, POST, operating-system testing, upgrades, and benchmarking. [Computer Power and Parts](computer-power-parts.qmd) remains a separate future physical lab shell.
 :::
 
 ![A desktop-computer cutaway showing the sealed power supply, motherboard, CPU, RAM, storage, expansion slots, and fan.](/assets/tej/Computer_System_Cutaway.svg){width=92%}
@@ -18,13 +18,14 @@ Never open or probe inside a power supply. Power off and unplug before changing 
 
 ## Current missions
 
+- **Published calculation bridge (CSB01):** [Computer Power and Parallel Loads worksheet](https://docs.google.com/document/d/1hNVY7AojMABGcfcUCIRSbB4IevMV5e6AKuueP5Q45i0/edit), completed after Power Circuits Questions 1-6
 - **Future lab shell:** [Computer Power and Parts](computer-power-parts.qmd), not ready for student release
 - **Side Quest:** [Make It Print](make-it-print.qmd), one shared submission per pair
 - **Side Quest:** [Computer Recovery and OS Comparison](computer-recovery-crew-pilot.qmd), one shared Google Doc per pair
 
 ## After Thanksgiving: CS01-CS08 Best Workstation Project
 
-After Thanksgiving, students use the operating system selected by the comparison pilot to commission, upgrade, benchmark, and recommend a classroom computer. The pilot does not complete this project early.
+After the calculation bridge and equipment preparation, students use the operating system selected by the comparison pilot to commission, upgrade, benchmark, and recommend a classroom computer. The pilot does not complete this project early.
 
 1. [CS01 Fast electricity-to-computer bridge](cs01-electricity-bridge.qmd)
 2. [CS02 Parts, baseline testing, ESD, and safe opening](cs02-parts-baseline-esd.qmd)
@@ -46,12 +47,12 @@ After Thanksgiving, students use the operating system selected by the comparison
 
 ## Downloads
 
+- [Computer Power and Parallel Loads fillable worksheet](https://docs.google.com/document/d/1hNVY7AojMABGcfcUCIRSbB4IevMV5e6AKuueP5Q45i0/edit)
 - [Student activity packages](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf)
 - [Make It Print printable backup](https://mrandrewandrade.github.io/assets/TEJ-Make-It-Print-Side-Quest.pdf)
 - [Recovery and OS Comparison printable backup](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Job-Sheet.pdf)
 - [Recovery and OS Comparison teacher guide](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Teacher-Launch-Guide.pdf)
-- [Computer Power and Parts printable backup](https://mrandrewandrade.github.io/assets/TEJ-Computer-Power-and-Parts-Mission.pdf)
-- [Computer Power and Parts teacher guide](https://mrandrewandrade.github.io/assets/TEJ-Computer-Power-and-Parts-Teacher-Guide.pdf)
+- [Future Computer Power and Parts physical lab shell](computer-power-parts.qmd)
 - [Electronics Quick Reference](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Quick-Reference.pdf)
 
 Teacher answer materials, fault cards, the master tracker, and the internal Leaderboard should remain in teacher-controlled locations. Students submit evidence through Google Classroom and do not edit the master tracker.
