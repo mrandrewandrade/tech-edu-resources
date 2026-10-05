@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="198.0952" viewBox="0 0 210 65">
+<title>Kerf test comb</title>
+<desc>Twelve parallel cut lines for measuring average machine/material kerf.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;calibration&quot;,&quot;description&quot;:&quot;Twelve parallel cut lines for measuring average machine/material kerf.&quot;,&quot;dimensional_tests&quot;:{},&quot;dimensions&quot;:{&quot;height&quot;:65,&quot;width&quot;:210},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/calibration/tc-cal-kerf-test.svg&quot;,&quot;svg&quot;:&quot;generated/svg/calibration/tc-cal-kerf-test.svg&quot;},&quot;fit_type&quot;:&quot;measurement&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-cal-kerf-test&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Verify dimensions and local machine operation mapping before fabrication.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;SCORE&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;cut_count&quot;:12},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;kerf&quot;,&quot;tags&quot;:[&quot;calibration&quot;,&quot;comb&quot;,&quot;kerf&quot;],&quot;title&quot;:&quot;Kerf test comb&quot;,&quot;tool_family&quot;:&quot;none&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="210" height="65" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="5" y="5" width="200" height="55" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<line x1="20" y1="22" x2="20" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="34" y1="22" x2="34" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="48" y1="22" x2="48" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="62" y1="22" x2="62" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="76" y1="22" x2="76" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="90" y1="22" x2="90" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="104" y1="22" x2="104" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="118" y1="22" x2="118" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="132" y1="22" x2="132" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="146" y1="22" x2="146" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="160" y1="22" x2="160" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<line x1="174" y1="22" x2="174" y2="52" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+</g>
+<g id="score" aria-label="SCORE">
+<line x1="15" y1="22" x2="190" y2="22" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="105" y="13" font-family="sans-serif" font-size="3.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">KERF TEST — measure removed comb width</text>
+<text x="105" y="58" font-family="sans-serif" font-size="2.8" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">12 cut lines · kerf = (reference − result) / 12</text>
+</g>
+</svg>

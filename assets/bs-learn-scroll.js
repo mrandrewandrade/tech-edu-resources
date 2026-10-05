@@ -599,9 +599,12 @@
     if (pathname.includes("/tej3-4/")) {
       courseHome = SITE_BASE + "/tej3-4/";
       courseLabel = "Return to TEJ Notes";
+    } else if (pathname.includes("/design-fabrication/")) {
+      courseHome = SITE_BASE + "/design-fabrication/";
+      courseLabel = "Return to General Design & Fabrication";
     } else if (pathname.includes("/tas2/")) {
-      courseHome = SITE_BASE + "/tas2/";
-      courseLabel = "Return to TAS Notes";
+      courseHome = SITE_BASE + "/design-fabrication/";
+      courseLabel = "Open General Design & Fabrication";
     }
     end.className = "bs-learn-scroll-end";
     end.dataset.bsLearnScrollEnd = "";

@@ -71,13 +71,15 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/commons/assets/branding/logo/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.svg">
 
-<link rel="icon" href="https://andrewandrade.ca/commons/assets/branding/logo/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon-96x96.png">
 
-<link rel="apple-touch-icon" href="https://andrewandrade.ca/commons/assets/branding/logo/apple-touch-icon.png">
+<link rel="icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.ico" sizes="any">
 
-<link rel="manifest" href="https://andrewandrade.ca/commons/assets/branding/logo/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/apple-touch-icon.png">
+
+<link rel="manifest" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/site.webmanifest">
 
 <meta name="theme-color" content="#062650">
 
@@ -87,16 +89,21 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/bs-components.css">
 <link rel="stylesheet" href="../assets/commons-overrides.css">
 <link rel="stylesheet" href="../assets/bs-learn.css">
+<link rel="stylesheet" href="../assets/tej-curriculum.css">
 <link rel="stylesheet" href="../assets/teacher-slides.css">
 <meta property="og:title" content="General Materials – Technological Education Resources">
 <meta property="og:description" content="Search and filter reusable classroom assignments and teaching materials across technological education, human well-being, and cross-curricular learning.">
+<meta property="og:image" content="https://andrewandrade.ca/tech-edu-resources/assets/laser-library/previews/calibration/tc-cal-dimension-verification.svg">
 <meta property="og:site_name" content="Technological Education Resources">
+<meta property="og:image:alt" content="Dimension verification sheet from the laser fabrication library">
 <meta name="twitter:title" content="General Materials – Technological Education Resources">
 <meta name="twitter:description" content="Search and filter reusable classroom assignments and teaching materials across technological education, human well-being, and cross-curricular learning.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://andrewandrade.ca/tech-edu-resources/assets/laser-library/previews/calibration/tc-cal-dimension-verification.svg">
+<meta name="twitter:image:alt" content="Dimension verification sheet from the laser fabrication library">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed bs-editorial-page bs-title-eyebrow bs-research-index bs-slide-library quarto-light">
+<body class="nav-sidebar docked nav-fixed bs-editorial-page bs-title-eyebrow bs-research-index bs-slide-library quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -104,8 +111,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/branding/emblem/commons-emblem-monochrome-blue.svg" alt="Technological Education Resources" class="navbar-logo light-content">
-    <img src="../assets/branding/emblem/commons-emblem-monochrome-blue.svg" alt="Technological Education Resources" class="navbar-logo dark-content">
+    <img src="../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo light-content">
+    <img src="../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Tech Edu</span>
@@ -118,50 +125,49 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">TAS</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tas">    
-        <li>
-    <a class="dropdown-item" href="../slides/2026-27-tas-2-sem-1.html">
- <span class="dropdown-text">Slides</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../tas2/index.html">
- <span class="dropdown-text">Notes</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tej" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">TEJ</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tej">    
-        <li>
-    <a class="dropdown-item" href="../slides/2026-27-tej-3-sem-1.html">
- <span class="dropdown-text">Slides</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../tej3-4/index.html">
- <span class="dropdown-text">Notes</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-educator-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Educator Resources</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-educator-resources">    
         <li>
     <a class="dropdown-item" href="../teacher-slides/index.html">
- <span class="dropdown-text">Slides</span></a>
+ <span class="dropdown-text">General Slides</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../teaching-materials/index.html">
- <span class="dropdown-text">Materials</span></a>
+ <span class="dropdown-text">General Materials</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../design-fabrication/index.html">
+ <span class="dropdown-text">General Design &amp; Fabrication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tej3-4/index.html">
+ <span class="dropdown-text">TEJ Notes</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-classes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Classes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-classes">    
+        <li>
+    <a class="dropdown-item" href="../slides/2026-27-tas-2-sem-1.html">
+ <span class="dropdown-text">TAS Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/2026-27-tej-3-sem-1.html">
+ <span class="dropdown-text">TEJ Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/2026-27-ttj-sem-1.html">
+ <span class="dropdown-text">TTJ / TTS Slides</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../glossary/index.html"> 
 <span class="menu-text">Glossary</span></a>
@@ -180,16 +186,471 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tej3-4/curriculum/index.html#unit-7">7. Fabrication &amp; PCB Workflow</a></li><li class="breadcrumb-item"><a href="../teaching-materials/index.html">Shared Fabrication Resources</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/curriculum/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Curriculum Roadmap</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">0. Orientation, Safety &amp; Design</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tej3-4/01-number-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Numbers, Measurement &amp; Calculator</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Significant Figures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/01-number-systems/02-powers-of-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Powers of 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/01-number-systems/06-scientific-calculator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Scientific Calculator</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/01-number-systems/03-scientific-notation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Scientific Notation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/01-number-systems/04-engineering-notation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 Engineering Notation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/01-number-systems/05-metric-prefixes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 Metric Prefixes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tej3-4/02-basic-electronics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2-5. Electricity, Circuits &amp; Components</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/02-basic-electronics/01-charge-voltage-current.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Charge, Voltage &amp; Current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Closed, Open &amp; Short Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/02-basic-electronics/03-ohms-law.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Ohm’s Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/02-basic-electronics/04-power-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Power &amp; Energy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tej3-4/03-digital-logic-inputs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Digital Logic &amp; Stable Inputs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/03-digital-logic-inputs/01-digital-levels.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Digital Voltage Levels</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/03-digital-logic-inputs/02-switches-floating-inputs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Switches &amp; Floating Inputs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/03-digital-logic-inputs/03-pull-down-inputs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 External Pull-Downs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/03-digital-logic-inputs/04-pull-up-active-low.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Pull-Ups &amp; Active-Low Logic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/03-digital-logic-inputs/05-debounce-protection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 Debouncing &amp; Protection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 Logic Gates &amp; Truth Tables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 Circuits Culminating Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tej3-4/curriculum/index.html#unit-7" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Fabrication &amp; PCB Workflow</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../teaching-materials/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Shared Fabrication Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../teaching-materials/laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Laser Cutting</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tej3-4/computer-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Basic Computer Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/computer-power-parts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main Mission: Power &amp; Parts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/make-it-print.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Side Quest: Make It Print</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/computer-recovery-crew-pilot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Side Quest: Recovery &amp; OS Comparison</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs01-electricity-bridge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS01 Electricity Bridge</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs02-parts-baseline-esd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS02 Parts, Baseline &amp; ESD</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs03-power-connections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS03 Power &amp; Connections</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs04-ready-to-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS04 Ready-to-Power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs05-post-firmware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS05 POST &amp; BIOS/UEFI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs06-linux-mint.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS06 Approved Linux</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs07-ram-upgrade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS07 RAM Upgrade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/cs08-benchmark-challenge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS08 Benchmark Challenge</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Side Quests</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/sq01-teardown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ01 Teardown &amp; Reassembly</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/sq02-fault-stations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ02 Fault Stations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/sq03-storage-expansion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ03 Storage &amp; Expansion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/sq04-linux-inventory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ04 Linux Inventory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/sq05-power-thermal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ05 Power &amp; Thermal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/computer-systems/sq06-repair-reuse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ06 Repair &amp; Reuse</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">9. Linux &amp; Operating Systems</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">10. Programming Fundamentals</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">11. Microcontrollers</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">12. Networking &amp; Systems</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">13. Data Science &amp; ML</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">14. Language Models &amp; AI</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">15. Culminating Projects</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tej3-4/05-control-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bonus: Control Systems &amp; CNC</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c01-control-system-anatomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C01 Control-System Anatomy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c02-open-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C02 Open-Loop Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c03-closed-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C03 Closed-Loop Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c04-hysteresis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C04 On-Off &amp; Hysteresis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c05-proportional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C05 Proportional Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c06-pid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C06 Integral, Derivative &amp; PID</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c07-state-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C07 State Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c08-safety-interlocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C08 Safety Controls &amp; Interlocks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c09-motion-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C09 Motor &amp; Motion Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c10-cnc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C10 CNC as a Control System</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/05-control-systems/c11-culminating-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C11 Culminating Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electronics Library</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/electronics-library/modules/h01-safety-lab-practice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">H01 Safety &amp; Lab Practice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/electronics-library/components/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Components</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/electronics-library/labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tej3-4/electronics-library/projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tej3-4/curriculum/index.html#unit-7">7. Fabrication &amp; PCB Workflow</a></li><li class="breadcrumb-item"><a href="../teaching-materials/index.html">Shared Fabrication Resources</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">General Materials</h1>
 <p class="subtitle lead">Reusable assignments, worksheets, handouts, and worked examples</p>
@@ -202,7 +663,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -217,7 +678,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="bs-page-shell">
 <div class="bs-reading-column">
 <div class="bs-editorial-lead">
-<p>Reusable classroom materials for students and teachers. Most resources link directly to their published file or student-facing Google Doc. Print-first Quarto/Typst resources that depend on precise PDF layout are maintained separately at <a href="https://andrewandrade.ca/assets/">andrewandrade.ca/assets</a>. Current TAS design-process examples and templates link to their student-facing Google Docs in the <a href="https://drive.google.com/drive/folders/1rWNYdJpppXTj5Oq_FO6mBqT-Ihee6b3S">Teaching folder</a>.</p>
+<p>Reusable classroom materials for students and teachers. Generated PDFs link directly to their canonical files at <a href="https://andrewandrade.ca/assets/">andrewandrade.ca/assets</a>, avoiding duplicate copies. Editable classroom resources and current TAS design-process examples link to their student-facing Google Docs in the <a href="https://drive.google.com/drive/folders/1rWNYdJpppXTj5Oq_FO6mBqT-Ihee6b3S">Teaching folder</a>.</p>
 </div>
 <p>The library intentionally links to <strong>generic teaching materials, not student submissions or student copies</strong>. <strong>General</strong> materials are broadly reusable across subjects and technology courses. <strong>Well-Being</strong> materials focus on identity, reflection, listening, goal setting, community, and related learning routines.</p>
 </div>
@@ -256,52 +717,227 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="bs-slide-grid" data-slide-grid="">
 
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TAS|TEJ" data-tags="laser fabrication|SVG|vector design|digital fabrication|calibration|French cleat|shop organization|parametric design" data-search="laser fabrication 232 generated SVG vector design calibration kerf fit gauge French cleat tool holders jigs projects themes Inkscape Veccy plywood measured thickness TAS TEJ">
+    <a class="bs-slide-thumb" href="../teaching-materials/laser-cutting/index.html" aria-label="Browse the Laser Fabrication Library">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>LASER</strong><span>Measure · fit · make</span></span>
+      <img src="../assets/laser-library/previews/calibration/tc-cal-dimension-verification.svg" alt="Dimension verification sheet from the laser fabrication library" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="../teaching-materials/laser-cutting/index.html">Laser Fabrication Library</a></h2>
+      <p class="bs-slide-card-description">A searchable, manifest-driven collection of 232 calibration files, exact-size shapes, French-cleat modules, shop-coverage organizers, jigs, project starters and parametric recipes.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="laser fabrication">Laser fabrication</button><button type="button" data-slide-card-tag="calibration">Calibration</button><button type="button" data-slide-card-tag="shop organization">Shop organization</button></div>
+      <a class="bs-slide-open" href="../teaching-materials/laser-cutting/index.html">Browse 232 generated assets</a>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="" data-tags="assessment|observation|evidence|support|teacher tool|tracking|digital|printable" data-search="daily learning tracker teacher tool assessment observation evidence support student activity shop task observe worksheet match sort count research present explain follow directions identify communicate answer teamwork independent prompted guided digital printable google sheet google doc">
+    <a class="bs-slide-thumb" href="https://docs.google.com/spreadsheets/d/1I17zjCB22EyH5g-2AzfgK4J2ZrkIfOqsfUAEkQ2YHvw/edit?usp=drivesdk" aria-label="Open Daily Learning Tracker digital template">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>DAILY</strong><span>Evidence + support</span></span>
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/spreadsheets/d/1I17zjCB22EyH5g-2AzfgK4J2ZrkIfOqsfUAEkQ2YHvw/edit?usp=drivesdk">Daily Learning Tracker</a></h2>
+      <p class="bs-slide-card-description">Quickly record what students did, what they demonstrated, and how much support they needed.</p>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="assessment">Assessment</button><button type="button" data-slide-card-tag="observation">Observation</button><button type="button" data-slide-card-tag="teacher tool">Teacher tool</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/spreadsheets/d/1I17zjCB22EyH5g-2AzfgK4J2ZrkIfOqsfUAEkQ2YHvw/edit?usp=drivesdk">Open Digital Tracker</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1ojqE98LMdJ_bGUZ1Q7wYiuYsUMYHIPjuDj7GhK0lEUw/edit?usp=drivesdk">Open Printable Tracker</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TEJ" data-tags="electrical engineering|SI prefixes|scientific notation|electrical quantities|units|formula reference|cheat sheet|printable" data-search="SI prefixes electrical quantities cheat sheet engineering powers of ten multiplier normalized E notation scientific notation voltage volt V current ampere amp A resistance ohm omega R power watt W P units symbols formula reference conversion metric printable TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit" aria-label="Open SI Prefixes and Electrical Quantities Cheat Sheet">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>SI + E</strong><span>Prefixes + quantities</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">SI Prefixes and Electrical Quantities Cheat Sheet</a></h2>
+      <p class="bs-slide-card-description">A printable electrical-engineering quick reference for SI prefixes, powers of ten, normalized and E notation, and the symbols and units used for voltage, current, resistance, and power.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="SI prefixes">SI prefixes</button><button type="button" data-slide-card-tag="electrical quantities">Electrical quantities</button><button type="button" data-slide-card-tag="formula reference">Formula reference</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TEJ" data-tags="circuit calculations|schematics|GUESS method|problem solving|electrical engineering|equations|units|significant digits|worksheet|printable" data-search="circuit calculations general schematic GUESS handout given unknown equations substitute solve statement solution electrical engineering problem solving circuit diagram symbols units metric prefixes significant digits decimal places calculator final answer self check worksheet printable TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit" aria-label="Open Circuit Calculations General Schematic and GUESS Handout">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>GUESS</strong><span>Draw + calculate</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit">Circuit Calculations: General Schematic + GUESS Handout</a></h2>
+      <p class="bs-slide-card-description">A reusable worksheet for organizing circuit calculations through a schematic and the GUESS process: givens, unknowns, equations, substitution and solving, and a final statement with units.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="circuit calculations">Circuit calculations</button><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="GUESS method">GUESS method</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TEJ" data-tags="schematics|circuit diagrams|IEC symbols|electrical drawing|polarity|current direction|components|meters|reference guide|teacher asset|student reference" data-search="Technology Commons Classroom Schematic Style Guide TEJ hand sketches slide diagrams generated circuit assets IEC 60617 IEC 61082 symbols reference letters battery polarity conventional current electron flow circuit layout wires junctions components meters ammeter voltmeter labels values drawing checklist electrical engineering reference guide">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit" aria-label="Open Technology Commons Classroom Schematic Style Guide">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>IEC</strong><span>Draw + label</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit">Classroom Schematic Style Guide</a></h2>
+      <p class="bs-slide-card-description">A consistent TEJ standard for hand-drawn, slide-based, and generated circuit schematics, including IEC symbols, battery polarity, current direction, layout, junctions, components, meters, labels, and final drawing checks.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="IEC symbols">IEC symbols</button><button type="button" data-slide-card-tag="electrical drawing">Electrical drawing</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
   <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TAS|TEJ|TTJ" data-tags="identity|communication|documentation|pdf|introductory" data-search="name tag pdf student number introductory identity communication documentation submission">
-    <a class="bs-slide-thumb" href="../assets/materials/0.0-name-tag-pdf.pdf" aria-label="Open Name Tag PDF">
+    <a class="bs-slide-thumb" href="https://andrewandrade.ca/assets/0.0-name-tag-pdf.pdf" aria-label="Open Name Tag PDF">
       <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>0.0</strong><span>Name tag + PDF</span></span>
     </a>
     <div class="bs-slide-card-body">
       <p class="bs-slide-card-collection">General</p>
-      <h2 class="bs-slide-card-title anchored"><a href="../assets/materials/0.0-name-tag-pdf.pdf">Name Tag PDF</a></h2>
+      <h2 class="bs-slide-card-title anchored"><a href="https://andrewandrade.ca/assets/0.0-name-tag-pdf.pdf">Name Tag PDF</a></h2>
       <p class="bs-slide-card-description">A short introductory deliverable for making a readable name tag, documenting it clearly, and submitting a checked PDF.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
       <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="identity">Identity</button><button type="button" data-slide-card-tag="documentation">Documentation</button><button type="button" data-slide-card-tag="pdf">PDF</button></div>
       <div class="bs-slide-actions">
-        <a class="bs-slide-open" href="../assets/materials/0.0-name-tag-pdf.pdf">Open PDF</a>
-        <a class="bs-slide-open" href="../assets/materials/0.0-name-tag-pdf.docx">Editable Word</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/0.0-name-tag-pdf.pdf">Open PDF</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TTJ|TAS" data-tags="vehicle inspection|service|maintenance|planning|printable" data-search="vehicle service preparation inspection worksheet pre job specifications wheels tires brakes steering suspension under hood maintenance planning printable TTJ TAS">
+    <a class="bs-slide-thumb" href="../assets/materials/vehicle-service-preparation-and-inspection-worksheet.pdf" aria-label="Open Vehicle Service Preparation and Inspection Worksheet PDF">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>SERVICE</strong><span>Inspect + plan</span></span>
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="../assets/materials/vehicle-service-preparation-and-inspection-worksheet.pdf">Vehicle Service Preparation and Inspection Worksheet</a></h2>
+      <p class="bs-slide-card-description">A reusable pre-job worksheet for recording vehicle specifications, inspecting commonly serviced systems, checking under the hood, and getting teacher approval before work begins.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TTJ">TTJ</button><button type="button" data-slide-card-course="TAS">TAS</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="vehicle inspection">Vehicle inspection</button><button type="button" data-slide-card-tag="maintenance">Maintenance</button><button type="button" data-slide-card-tag="planning">Planning</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="../assets/materials/vehicle-service-preparation-and-inspection-worksheet.pdf">Open PDF</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1qr5sM-ZgNY96qmiGFxrwiCHdngDDYqrpPWGjeGRGYGg/edit">Open Google Doc</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TTJ|TTS" data-tags="automotive fluids|vehicle inspection|under the hood|engine oil|coolant|brake fluid|power steering|transmission fluid|washer fluid|maintenance|colouring handout|fillable worksheet" data-search="vehicle fluid check resource set six fluids under the hood colouring handout fillable vehicle check handout engine oil coolant antifreeze brake fluid power steering transmission windshield washer fluid level condition inspection automotive maintenance TTJ TTS">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1A9eWYhH3B-51FcWnXkQJZFRjASSM-vZZ8pO0rj4Pw0A/edit" aria-label="Open Vehicle Fluid Check Resource Set">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>6</strong><span>Inspect + record</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1A9eWYhH3B-51FcWnXkQJZFRjASSM-vZZ8pO0rj4Pw0A&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1A9eWYhH3B-51FcWnXkQJZFRjASSM-vZZ8pO0rj4Pw0A/edit">Vehicle Fluid Check Resource Set</a></h2>
+      <p class="bs-slide-card-description">A connected fluid-check package with the picture-based colouring handout, cleaned Engine Bay Fluid Check job sheet, and corresponding teaching slides.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TTJ">TTJ</button><button type="button" data-slide-card-course="TTS">TTS</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="automotive fluids">Automotive fluids</button><button type="button" data-slide-card-tag="vehicle inspection">Vehicle inspection</button><button type="button" data-slide-card-tag="fillable worksheet">Fillable worksheet</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1A9eWYhH3B-51FcWnXkQJZFRjASSM-vZZ8pO0rj4Pw0A/edit">Open colouring handout</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1jqq_I6tpNQIAOnYsZpnlmFQk5TgxBZXYOwXMTqtaBtc/edit">Open Engine Bay Fluid Check job sheet</a>
+        <a class="bs-slide-open" href="https://docs.google.com/presentation/d/1oQtCh3sCQohDOO2UooPQqvvP3Gl0kwYsMmX-1iLVmkU/edit">Open teaching slides</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TTJ|TTS" data-tags="oil change|engine oil|oil filter|vehicle maintenance|picture-first handout|service record|job sheet|inspection|torque|problem solving|reflection|assessment" data-search="oil change resource set picture first handout teaching slides generic engine oil filter service oil change job sheet job record automotive transportation vehicle maintenance make model year engine size odometer specifications oil grade filter part number drain plug torque tools drain pan inspection viscosity metal sealing surface washer problems fixes leak check final oil level used oil cleanup teacher approval verification reflection assessment TTJ TTS">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1kp98b19S_lWpMf2DHjGZ7XlCNJvYOjCZgbJCtmlw0Uk/edit" aria-label="Open Oil Change Resource Set">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>OIL</strong><span>Service + verify</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1kp98b19S_lWpMf2DHjGZ7XlCNJvYOjCZgbJCtmlw0Uk&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1kp98b19S_lWpMf2DHjGZ7XlCNJvYOjCZgbJCtmlw0Uk/edit">Oil Change Resource Set</a></h2>
+      <p class="bs-slide-card-description">A connected oil-service package with the picture-first student handout, Volvo teaching deck, cleaned Volvo job sheet, and vehicle-service preparation sheet.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TTJ">TTJ</button><button type="button" data-slide-card-course="TTS">TTS</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="oil change">Oil change</button><button type="button" data-slide-card-tag="vehicle maintenance">Vehicle maintenance</button><button type="button" data-slide-card-tag="service record">Service record</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1kp98b19S_lWpMf2DHjGZ7XlCNJvYOjCZgbJCtmlw0Uk/edit">Open picture-first handout</a>
+        <a class="bs-slide-open" href="https://docs.google.com/presentation/d/1lDzGWGh0XUp3V1Yo3IguZdYv1wn0mpk1Tq9dnJTLam0/edit">Open teaching slides</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1qYx6Zw2lEsq2mhvFdQsaOuK_CanN2Ry_2N773obEGaA/edit">Open Volvo Oil Change job sheet</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/17RdKZJnMBdQrVmgBCDyJ5eNaRVe6CicAgdkFaiWxVE0/edit">Open Vehicle Service Preparation sheet</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TTJ|TTS" data-tags="wheel service|wheel removal|wheel installation|vehicle lifting|lug nuts|torque wrench|picture-first handout|vehicle maintenance" data-search="wheel removal installation picture first handout breaker bar ratchet torque wrench impact wrench impact socket wheel chocks floor jack jack stands lift points lug nuts star pattern vehicle maintenance TTJ TTS">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/177989ZybE2fp7ChZ0Tv0foAtyrXO1RrbXYNMdVYS_CI/edit" aria-label="Open Wheel Removal and Installation Picture-First Handout">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>WHEEL</strong><span>Remove + install</span></span>
+      <img src="https://drive.google.com/thumbnail?id=177989ZybE2fp7ChZ0Tv0foAtyrXO1RrbXYNMdVYS_CI&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/177989ZybE2fp7ChZ0Tv0foAtyrXO1RrbXYNMdVYS_CI/edit">Wheel Removal and Installation</a></h2>
+      <p class="bs-slide-card-description">A picture-first student handout covering wheel-service tools, vehicle support, wheel removal, inspection, installation, star-pattern tightening, and final torque.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TTJ">TTJ</button><button type="button" data-slide-card-course="TTS">TTS</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="wheel service">Wheel service</button><button type="button" data-slide-card-tag="vehicle maintenance">Vehicle maintenance</button><button type="button" data-slide-card-tag="picture-first handout">Picture-first handout</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/177989ZybE2fp7ChZ0Tv0foAtyrXO1RrbXYNMdVYS_CI/edit">Open picture-first handout</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card="" data-collection="Well-Being" data-courses="TAS|TEJ|TTJ" data-tags="land-based learning|lettermark|Truth and Reconciliation|Indigenous ways of knowing being and doing|Good Life values|personal identity|observation|sketching|design process|visual communication|reflection|student assignment|completed example|presentation" data-search="Land Lettermark Truth and Reconciliation Design Jam corresponding resource set 59 slide presentation student assignment handout completed example handout Indigenous ways of knowing being and doing Good Life values initials personal identity land based learning observation nature sketching design process visual communication reflection TAS TEJ TTJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1_1fblxxHRxKe_OfjyrTgpch1JTgSNmiS_yN6Cjf2Wgc/edit" aria-label="Open Land Lettermark student assignment handout">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">Well-Being</span><strong>LAND</strong><span>Slides + handouts</span></span>
+      <img src="https://drive.google.com/thumbnail?id=1_1fblxxHRxKe_OfjyrTgpch1JTgSNmiS_yN6Cjf2Wgc&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">Well-Being</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1_1fblxxHRxKe_OfjyrTgpch1JTgSNmiS_yN6Cjf2Wgc/edit">Land Lettermark Assignment Resource Set</a></h2>
+      <p class="bs-slide-card-description">Three corresponding resources for the Land Lettermark design jam: the 59-slide presentation, student assignment handout, and completed example handout.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="land-based learning">Land-based learning</button><button type="button" data-slide-card-tag="lettermark">Lettermark</button><button type="button" data-slide-card-tag="Truth and Reconciliation">Truth and Reconciliation</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1_1fblxxHRxKe_OfjyrTgpch1JTgSNmiS_yN6Cjf2Wgc/edit">Open student assignment handout</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1DKPz7jnvK6YPuiiPRYqlNex0iiKnb__v-THI9GYvw6U/edit">Open completed example handout</a>
+        <a class="bs-slide-open" href="https://docs.google.com/presentation/d/1VVHjddapceM_KcJyeeqBMTBThJRcA8hQH-Az3i61e8U/edit">Open 59-slide presentation</a>
       </div>
     </div>
   </article>
 
   <article class="bs-slide-card" data-slide-card="" data-collection="Well-Being" data-courses="TAS|TEJ|TTJ" data-tags="identity|reflection|goals|self-awareness|introductory" data-search="past present becoming identity reflection self awareness goals introductory about me">
-    <a class="bs-slide-thumb" href="../assets/materials/0.1-past-present-becoming.pdf" aria-label="Open Past Present and Becoming PDF">
+    <a class="bs-slide-thumb" href="https://andrewandrade.ca/assets/0.1-past-present-becoming.pdf" aria-label="Open Past Present and Becoming PDF">
       <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">Well-Being</span><strong>0.1</strong><span>Past · present · becoming</span></span>
     </a>
     <div class="bs-slide-card-body">
       <p class="bs-slide-card-collection">Well-Being</p>
-      <h2 class="bs-slide-card-title anchored"><a href="../assets/materials/0.1-past-present-becoming.pdf">Past, Present &amp; Becoming</a></h2>
+      <h2 class="bs-slide-card-title anchored"><a href="https://andrewandrade.ca/assets/0.1-past-present-becoming.pdf">Past, Present &amp; Becoming</a></h2>
       <p class="bs-slide-card-description">An introductory communication and reflection activity with explicit student choice, privacy, and non-disclosure safeguards.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
       <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="identity">Identity</button><button type="button" data-slide-card-tag="reflection">Reflection</button><button type="button" data-slide-card-tag="goals">Goals</button></div>
       <div class="bs-slide-actions">
-        <a class="bs-slide-open" href="../assets/materials/0.1-past-present-becoming.pdf">Open PDF</a>
-        <a class="bs-slide-open" href="../assets/materials/0.1-past-present-becoming.docx">Editable Word</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/0.1-past-present-becoming.pdf">Open PDF</a>
       </div>
     </div>
   </article>
 
   <article class="bs-slide-card" data-slide-card="" data-collection="Well-Being" data-courses="TAS|TEJ|TTJ" data-tags="listening|reflection|communication|community|presentation|printable|digitize" data-search="the way we meet listening notes reflection presentation community connection communication black white printable digitize google doc pdf">
-    <a class="bs-slide-thumb" href="../assets/materials/0.2-the-way-we-meet-notes-bw.pdf" aria-label="Open The Way We Meet black-and-white listening notes PDF">
+    <a class="bs-slide-thumb" href="https://andrewandrade.ca/assets/0.2-the-way-we-meet-notes-bw.pdf" aria-label="Open The Way We Meet black-and-white listening notes PDF">
       <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">Well-Being</span><strong>0.2</strong><span>Listen + connect</span></span>
     </a>
     <div class="bs-slide-card-body">
       <p class="bs-slide-card-collection">Well-Being</p>
-      <h2 class="bs-slide-card-title anchored"><a href="../assets/materials/0.2-the-way-we-meet-notes-bw.pdf">The Way We Meet: Listening Notes &amp; Reflection</a></h2>
+      <h2 class="bs-slide-card-title anchored"><a href="https://andrewandrade.ca/assets/0.2-the-way-we-meet-notes-bw.pdf">The Way We Meet: Listening Notes &amp; Reflection</a></h2>
       <p class="bs-slide-card-description">Black-and-white listening notes for printing. The Google Doc provides the digital version and directions for preparing one readable PDF for submission.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
       <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="listening">Listening</button><button type="button" data-slide-card-tag="reflection">Reflection</button><button type="button" data-slide-card-tag="community">Community</button></div>
       <div class="bs-slide-actions">
-        <a class="bs-slide-open" href="../assets/materials/0.2-the-way-we-meet-notes-bw.pdf">Open B&amp;W print PDF</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/0.2-the-way-we-meet.pdf">Open assignment PDF</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/0.2-the-way-we-meet-notes.pdf">Open colour notes</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/0.2-the-way-we-meet-notes-bw.pdf">Open B&amp;W print notes</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/0.1-0.2-combined-teacher-marking.pdf">Open teacher marking PDF</a>
         <a class="bs-slide-open" href="https://docs.google.com/document/d/1hAmElSY8qL7bGIAtZ8gGLXHEDra1b5cYGd2k9jx8vsI/edit?usp=drivesdk">Open Google Doc / digitize</a>
       </div>
     </div>
@@ -321,45 +957,36 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </article>
 
-  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TAS" data-tags="needs|necessities|requirements|constraints|engineering design|planning" data-search="end of term celebration NICE worksheet needs necessities requirements restrictions constraints planning engineering design TAS">
-    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1NjqU14fbHXOqF4TcLscAD4cMvwVFL1gOJjMWn86-OzE/edit?usp=drivesdk" aria-label="Open N.I.C.E. Design Process Step 1 Needs Assessment template">
-      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>1</strong><span>Needs assessment</span></span>
+  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TAS|TEJ|TTJ" data-tags="NICE design process|needs|inquiry|communicate|feedback|planning|evaluate|engineering design" data-search="NICE design process slides design log cover mantras phrase bank goal setting logs sketches reflections belonging community worksheet needs necessities requirements restrictions inquiry research communicate online pitch show your idea print feedback package plan plan feedback evaluate completed examples music at the party engineering design TAS TEJ TTJ">
+    <a class="bs-slide-thumb bs-nice-slide-thumb" href="../teaching-materials/nice-design-process/index.html" aria-label="Browse the N.I.C.E. Design Process collection">
+      <span class="bs-slide-thumb-fallback bs-nice-card-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">Complete collection</span><strong>N.I.C.E.</strong><span>Needs · Inquiry · Communicate · Evaluate</span></span>
+      <img src="https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/export/png?id=1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ&amp;pageid=p1" alt="N.I.C.E. Design Process circle diagram" loading="lazy" onerror="this.hidden=true">
     </a>
     <div class="bs-slide-card-body">
       <p class="bs-slide-card-collection">General</p>
-      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1NjqU14fbHXOqF4TcLscAD4cMvwVFL1gOJjMWn86-OzE/edit?usp=drivesdk">N.I.C.E. Design Process Step 1: Needs Assessment</a></h2>
-      <p class="bs-slide-card-description">End-of-term celebration example for separating facts from assumptions, identifying requirements and restrictions, and deciding which needs are necessities or nice-to-haves.</p>
-      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button></div>
-      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="needs">Needs</button><button type="button" data-slide-card-tag="requirements">Requirements</button><button type="button" data-slide-card-tag="engineering design">Engineering design</button></div>
-      <a class="bs-slide-open" href="https://docs.google.com/document/d/1NjqU14fbHXOqF4TcLscAD4cMvwVFL1gOJjMWn86-OzE/edit?usp=drivesdk">Open template</a>
-    </div>
-  </article>
-
-  <article class="bs-slide-card" data-slide-card="" data-collection="General" data-courses="TAS" data-tags="inquiry|research|brainstorming|compare solutions|improvement|engineering design" data-search="celebration research brainstorming inquiry investigate existing solutions compare improve engineering design TAS">
-    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1_a1V6ecPPywiNxMBiH2gyxDWQUfNZZUYa_sMOXsm9k4/edit?usp=drivesdk" aria-label="Open N.I.C.E. Design Process Step 2 Investigation and Inquiry template">
-      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>2</strong><span>Inquiry + research</span></span>
-    </a>
-    <div class="bs-slide-card-body">
-      <p class="bs-slide-card-collection">General</p>
-      <h2 class="bs-slide-card-title anchored"><a href="https://docs.google.com/document/d/1_a1V6ecPPywiNxMBiH2gyxDWQUfNZZUYa_sMOXsm9k4/edit?usp=drivesdk">N.I.C.E. Design Process Step 2: Investigation and Inquiry</a></h2>
-      <p class="bs-slide-card-description">End-of-term celebration worksheet for asking useful questions, investigating existing solutions, comparing them against the needs, brainstorming, and improving an idea.</p>
-      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button></div>
-      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="inquiry">Inquiry</button><button type="button" data-slide-card-tag="research">Research</button><button type="button" data-slide-card-tag="brainstorming">Brainstorming</button></div>
-      <a class="bs-slide-open" href="https://docs.google.com/document/d/1_a1V6ecPPywiNxMBiH2gyxDWQUfNZZUYa_sMOXsm9k4/edit?usp=drivesdk">Open template</a>
+      <h2 class="bs-slide-card-title anchored"><a href="../teaching-materials/nice-design-process/index.html">N.I.C.E. Design Process</a></h2>
+      <p class="bs-slide-card-description">The complete reusable collection: overview slides, a Design Log and phrase bank, numbered student worksheets, print and online options, feedback and planning tools, evaluation, and completed examples.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="NICE design process">N.I.C.E.</button><button type="button" data-slide-card-tag="engineering design">Engineering design</button><button type="button" data-slide-card-tag="feedback">Feedback</button></div>
+      <a class="bs-slide-open" href="../teaching-materials/nice-design-process/index.html">Browse the complete collection</a>
     </div>
   </article>
 
   <article class="bs-slide-card" data-slide-card="" data-collection="Well-Being" data-courses="TAS|TEJ|TTJ" data-tags="goals|reflection|progress|self-regulation|planning|typst|quarto" data-search="weekly smart goal progress log goals reflection progress self regulation planning typst quarto print pdf">
-    <a class="bs-slide-thumb" href="https://andrewandrade.ca/assets/#weekly-progress-title" aria-label="Open Weekly SMART Goal Progress Log on the generated assets site">
+    <a class="bs-slide-thumb" href="https://andrewandrade.ca/assets/weekly-smart-goal-progress-log.pdf" aria-label="Open Weekly SMART Goal Progress Log PDF">
       <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">Well-Being</span><strong>GOAL</strong><span>Plan + reflect</span></span>
     </a>
     <div class="bs-slide-card-body">
       <p class="bs-slide-card-collection">Well-Being</p>
-      <h2 class="bs-slide-card-title anchored"><a href="https://andrewandrade.ca/assets/#weekly-progress-title">Weekly SMART Goal Progress Log</a></h2>
-      <p class="bs-slide-card-description">A print-first goal-setting and progress log generated from Quarto/Typst for precise page layout. The PDFs and generated downloads are maintained on the /assets site rather than duplicated here.</p>
+      <h2 class="bs-slide-card-title anchored"><a href="https://andrewandrade.ca/assets/weekly-smart-goal-progress-log.pdf">Weekly SMART Goal Progress Log</a></h2>
+      <p class="bs-slide-card-description">A print-first goal-setting and progress log generated from Quarto/Typst for precise page layout, with colour and black-and-white versions linked directly from the generated assets site.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
       <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="goals">Goals</button><button type="button" data-slide-card-tag="reflection">Reflection</button><button type="button" data-slide-card-tag="progress">Progress</button></div>
-      <a class="bs-slide-open" href="https://andrewandrade.ca/assets/#weekly-progress-title">Open on /assets</a>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/weekly-smart-goal-progress-log.pdf">Open colour PDF</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/weekly-smart-goal-progress-log-bw.pdf">Open B&amp;W print PDF</a>
+        <a class="bs-slide-open" href="https://andrewandrade.ca/assets/weekly-smart-goal-progress-log-andrew-bw.pdf">Andrew’s classroom B&amp;W + QR</a>
+      </div>
     </div>
   </article>
 
@@ -486,7 +1113,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/commons\/");
+        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/tech-edu-resources\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

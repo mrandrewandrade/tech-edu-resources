@@ -1,0 +1,582 @@
+/* General Design & Fabrication curriculum */
+
+.ter-design-fabrication .quarto-title-block,
+.ter-design-fabrication main.content {
+  max-width: 1180px;
+}
+
+.ter-design-fabrication .ter-curriculum-hero {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(2rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--bs-border);
+}
+
+.ter-design-fabrication .ter-curriculum-hero .lead {
+  max-width: 760px;
+  margin: 0;
+  color: var(--bs-text-secondary);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.55;
+}
+
+.ter-curriculum-kicker,
+.ter-path-number,
+.ter-status {
+  color: var(--bs-copper-dark);
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.ter-design-cycle {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.ter-design-cycle li {
+  position: relative;
+  padding: 1rem 0.8rem;
+  background: var(--bs-surface);
+  color: var(--bs-navy-dark);
+  font-weight: 720;
+  text-align: center;
+}
+
+.ter-design-cycle li + li {
+  border-left: 1px solid var(--bs-border);
+}
+
+.ter-path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.ter-path-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: clamp(1.25rem, 2.5vw, 1.8rem);
+  border: 1px solid var(--bs-border);
+  border-radius: 9px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-path-card h2,
+.ter-path-card h3 {
+  margin: 0.35rem 0 0.7rem;
+  color: var(--bs-navy-dark);
+  line-height: 1.18;
+}
+
+.ter-path-card p:not(.ter-path-number):not(.ter-status) {
+  color: var(--bs-text-secondary);
+  line-height: 1.58;
+}
+
+.ter-path-card .ter-path-action {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--bs-border);
+  font-weight: 720;
+}
+
+.ter-path-card .ter-path-action a {
+  text-decoration: none;
+}
+
+.ter-path-card .ter-path-action a::after {
+  content: " →";
+}
+
+.ter-path-card--planned {
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.ter-curriculum-relevance {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--bs-copper-dark);
+  background: color-mix(in srgb, var(--bs-ivory) 60%, var(--bs-surface));
+  color: var(--bs-text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.ter-curriculum-relevance > :last-child {
+  margin-bottom: 0;
+}
+
+.ter-lesson-sequence {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.2rem 0 2rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: lesson;
+}
+
+.ter-lesson-sequence li {
+  counter-increment: lesson;
+  padding: 1rem 1rem 1rem 3.6rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 7px;
+  background: var(--bs-surface);
+}
+
+.ter-lesson-sequence li::before {
+  content: counter(lesson, decimal-leading-zero);
+  float: left;
+  margin-left: -2.7rem;
+  color: var(--bs-copper-dark);
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-weight: 700;
+}
+
+.ter-lesson-sequence a {
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.ter-project-brief {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 7px;
+  background: var(--bs-surface);
+}
+
+.ter-project-brief > :first-child {
+  margin-top: 0;
+}
+
+.ter-project-brief > :last-child {
+  margin-bottom: 0;
+}
+
+.ter-two-state {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.ter-two-state > div {
+  padding: 1rem;
+  border-top: 3px solid var(--bs-copper-dark);
+  background: var(--bs-surface);
+}
+
+.ter-transfer-statement {
+  margin: 1.5rem 0 2rem;
+  padding: 1.1rem 1.25rem;
+  border-left: 4px solid var(--bs-copper-dark);
+  background: var(--bs-surface);
+  color: var(--bs-navy-dark);
+  font-size: clamp(1.08rem, 2vw, 1.3rem);
+  font-weight: 720;
+}
+
+.ter-application-grid,
+.ter-project-grid,
+.ter-family-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2.5rem;
+}
+
+.ter-application-card,
+.ter-project-card,
+.ter-family-card {
+  padding: 1.15rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  background: var(--bs-surface);
+}
+
+.ter-application-card h2,
+.ter-application-card h3,
+.ter-project-card h2,
+.ter-project-card h3,
+.ter-family-card h3 {
+  margin-top: 0;
+  color: var(--bs-navy-dark);
+}
+
+.ter-application-card .ter-course-code,
+.ter-project-card .ter-course-code {
+  color: var(--bs-copper-dark);
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ter-project-card dl {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.35fr) 1fr;
+  margin: 0.8rem 0 0;
+  font-size: 0.93rem;
+}
+
+.ter-project-card dt,
+.ter-project-card dd {
+  margin: 0;
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--bs-border);
+}
+
+.ter-project-card dt {
+  padding-right: 0.75rem;
+  color: var(--bs-navy-dark);
+  font-weight: 720;
+}
+
+.ter-application-card > :last-child,
+.ter-project-card > :last-child,
+.ter-family-card > :last-child {
+  margin-bottom: 0;
+}
+
+.ter-method-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  list-style: none;
+}
+
+.ter-method-list li {
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 999px;
+  background: var(--bs-ivory);
+  color: var(--bs-navy-dark);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.ter-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.ter-resource-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid var(--bs-border);
+  border-top: 3px solid var(--bs-copper-dark);
+  border-radius: 7px;
+  background: var(--bs-surface);
+}
+
+.ter-resource-card h3 { margin-top: 0; }
+
+.ter-resource-preview {
+  width: 100%;
+  height: 210px;
+  margin: 0 0 .9rem;
+  padding: .55rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 6px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.ter-resource-card .btn { margin-top: auto; align-self: flex-start; }
+
+.ter-feature-assets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.ter-feature-asset {
+  overflow: hidden;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  background: var(--bs-surface);
+}
+
+.ter-feature-asset > img {
+  width: 100%;
+  height: 250px;
+  padding: .7rem;
+  border-bottom: 1px solid var(--bs-border);
+  background: #fff;
+  object-fit: contain;
+}
+
+.ter-feature-asset > :not(img) { margin-inline: 1rem; }
+.ter-feature-asset > :last-child { margin-bottom: 1rem; }
+
+.ter-toolkit-banner {
+  display: grid;
+  grid-template-columns: minmax(280px, .9fr) minmax(320px, 1.1fr);
+  gap: 1.35rem;
+  align-items: center;
+  margin: 1.4rem 0 2rem;
+  padding: 1rem;
+  border: 1px solid var(--bs-border-strong);
+  border-top: 4px solid var(--bs-copper-dark);
+  border-radius: 10px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-toolkit-banner > a { display: block; border: 1px solid var(--bs-border); border-radius: 7px; background: #fff; }
+.ter-toolkit-banner img { display: block; width: 100%; height: 280px; padding: .65rem; object-fit: contain; }
+.ter-toolkit-banner h2 { margin: .2rem 0 .6rem; }
+.ter-toolkit-banner p:last-child { margin-bottom: 0; }
+
+.ter-assembly-jump {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .7rem;
+  margin: .5rem 0 1rem;
+}
+
+.ter-assembly-jump a {
+  overflow: hidden;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--bs-navy-dark);
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.ter-assembly-jump a:hover,
+.ter-assembly-jump a:focus-visible { transform: translateY(-2px); box-shadow: var(--bs-shadow-soft); }
+.ter-assembly-jump img { display: block; width: 100%; height: 145px; padding: .35rem; object-fit: contain; }
+.ter-assembly-jump span { display: block; padding: .55rem .65rem; border-top: 1px solid var(--bs-border); font-size: .86rem; font-weight: 680; }
+.ter-assembly-jump strong { display: inline-grid; width: 1.45rem; height: 1.45rem; margin-right: .25rem; place-items: center; border-radius: 50%; background: var(--bs-copper-dark); color: #fff; }
+
+.ter-assembly-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.ter-assembly-card {
+  overflow: hidden;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 10px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-assembly-preview,
+.ter-parts-preview {
+  position: relative;
+  display: block;
+  background: #fff;
+}
+
+.ter-assembly-preview img {
+  display: block;
+  width: 100%;
+  height: clamp(290px, 34vw, 460px);
+  padding: 1rem;
+  object-fit: contain;
+}
+
+.ter-assembly-preview span,
+.ter-parts-preview span {
+  position: absolute;
+  right: .65rem;
+  bottom: .65rem;
+  padding: .3rem .55rem;
+  border-radius: 999px;
+  background: rgba(16, 36, 55, .9);
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 720;
+  letter-spacing: .02em;
+}
+
+.ter-assembly-card__body {
+  padding: 1.15rem;
+  border-top: 4px solid var(--bs-copper-dark);
+}
+
+.ter-assembly-card__body h3 { margin: .1rem 0 .5rem; }
+.ter-assembly-kicker { margin: 0; color: var(--bs-copper-dark); font-size: .78rem; font-weight: 780; letter-spacing: .08em; text-transform: uppercase; }
+
+.ter-assembly-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .45rem;
+  margin: 1rem 0;
+}
+
+.ter-assembly-facts div { padding: .55rem; border: 1px solid var(--bs-border); border-radius: 6px; }
+.ter-assembly-facts dt { color: var(--bs-muted); font-size: .72rem; text-transform: uppercase; }
+.ter-assembly-facts dd { margin: .1rem 0 0; font-size: .9rem; font-weight: 700; }
+
+.ter-parts-preview {
+  margin: 1rem 0;
+  border: 1px solid var(--bs-border);
+  border-radius: 7px;
+}
+
+.ter-parts-preview img { display: block; width: 100%; height: 210px; padding: .65rem; object-fit: contain; }
+.ter-file-actions { display: flex; flex-wrap: wrap; gap: .55rem; }
+.ter-design-question { margin: 1rem 0 0; padding: .7rem .8rem; border-left: 3px solid var(--bs-copper-dark); background: var(--bs-ivory); }
+.ter-toolkit code { white-space:normal; overflow-wrap:anywhere; }
+
+.ter-reference-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:1rem 0 2rem; }
+.ter-reference-card { min-width:0; border:1px solid var(--bs-border); border-radius:9px; background:var(--bs-surface); padding:.8rem; }
+.ter-reference-card svg { display:block; width:100%; height:125px; background:#f7f4ee; border-radius:6px; fill:none; stroke:var(--bs-navy-dark); stroke-width:2; }
+.ter-reference-card h3 { margin:.7rem 0 .4rem; }
+.ter-reference-card p { overflow-wrap:anywhere; }
+.ter-reference-meta { font-size:.78rem; color:var(--bs-muted); }
+
+.ter-calibration-process { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:.35rem; margin:1rem 0 1.5rem; }
+.ter-calibration-process span { padding:.65rem .45rem; background:var(--bs-navy-dark); color:#fff; border-radius:6px; text-align:center; font-size:.82rem; font-weight:700; }
+.ter-calibration-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; margin:1rem 0 1.5rem; }
+.ter-calibration-card { min-width:0; border:1px solid var(--bs-border); border-radius:8px; overflow:hidden; background:var(--bs-surface); color:var(--bs-text); text-decoration:none; }
+.ter-calibration-card img { display:block; width:100%; height:155px; padding:.45rem; object-fit:contain; background:#fff; }
+.ter-calibration-card strong,.ter-calibration-card span { display:block; padding:.25rem .65rem; }
+.ter-calibration-card span { padding-top:0; padding-bottom:.65rem; font-size:.84rem; color:var(--bs-muted); }
+.ter-kerf-diagram { display:block; width:min(100%,900px); height:auto; margin:1rem auto; }
+.ter-calibration-record { margin:1rem 0; padding:1rem; border:2px solid var(--bs-navy-dark); background:#fff; color:#142536; }
+.ter-calibration-record h3 { margin-top:0; }
+.ter-record-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.35rem 1rem; }
+.ter-record-grid p { display:flex; gap:.5rem; margin:.2rem 0; }
+.ter-record-grid span,.ter-record-line { flex:1; min-width:3rem; border-bottom:1px solid #64727a; }
+.ter-calibration-record table { width:100%; table-layout:fixed; margin:1rem 0; font-size:.82rem; }
+.ter-calibration-record th,.ter-calibration-record td { border:1px solid #65747c; padding:.35rem; overflow-wrap:anywhere; }
+.ter-calibration-record td { height:2.2rem; }
+
+.ter-fabrication-worksheet main.content { max-width: 1120px; }
+.ter-worksheet-toolbar { margin-bottom: 1rem; padding: .8rem 1rem; border: 1px solid var(--bs-border); background: var(--bs-surface); }
+.ter-worksheet-page { padding: 1.2rem; border: 1px solid var(--bs-border-strong); background: #fff; color: #142536; }
+.ter-write-line { display: inline-block; min-width: 12rem; border-bottom: 1px solid #44515c; }
+.ter-write-line--short { min-width: 6rem; }
+.ter-writing-space { min-height: 5rem; border: 1px solid #9da7af; background-image: linear-gradient(#e1e5e8 1px, transparent 1px); background-size: 100% 1.4rem; }
+.ter-writing-space--small { min-height: 4rem; }
+.ter-writing-space--medium { min-height: 7rem; }
+.ter-view-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .7rem; }
+.ter-view-box { min-height: 15rem; padding: .6rem; border: 1px solid #7d8992; background-image: linear-gradient(#edf0f2 1px, transparent 1px), linear-gradient(90deg,#edf0f2 1px,transparent 1px); background-size: 5mm 5mm; }
+.ter-check-grid { columns: 2; column-gap: 2rem; }
+
+@media print {
+  .ter-worksheet-toolbar, header, nav, footer, .sidebar, #quarto-margin-sidebar { display: none !important; }
+  .ter-worksheet-page { border: 0; padding: 0; }
+  .ter-fabrication-worksheet main.content { max-width: none; margin: 0; padding: 0; }
+  .ter-view-box { min-height: 13rem; }
+  @page { size: letter; margin: 10mm; }
+}
+
+[data-bs-theme="dark"] .ter-transfer-statement,
+[data-bs-theme="dark"] .ter-application-card h2,
+[data-bs-theme="dark"] .ter-application-card h3,
+[data-bs-theme="dark"] .ter-project-card h2,
+[data-bs-theme="dark"] .ter-project-card h3,
+[data-bs-theme="dark"] .ter-family-card h3,
+[data-bs-theme="dark"] .ter-project-card dt {
+  color: var(--bs-text);
+}
+
+[data-bs-theme="dark"] .ter-method-list li {
+  background: var(--bs-surface);
+  color: var(--bs-text);
+}
+
+[data-bs-theme="dark"] .ter-design-fabrication .ter-path-card h2,
+[data-bs-theme="dark"] .ter-design-fabrication .ter-path-card h3,
+[data-bs-theme="dark"] .ter-design-cycle li {
+  color: var(--bs-text);
+}
+
+[data-bs-theme="dark"] .ter-curriculum-relevance {
+  background: color-mix(in srgb, var(--bs-surface) 88%, var(--bs-copper));
+}
+
+@media (max-width: 760px) {
+  .ter-path-grid,
+  .ter-two-state,
+  .ter-application-grid,
+  .ter-project-grid,
+  .ter-family-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-resource-grid,
+  .ter-feature-assets,
+  .ter-assembly-gallery,
+  .ter-toolkit-banner,
+  .ter-view-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-reference-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .ter-calibration-process { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .ter-calibration-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+
+  .ter-toolkit-banner img { height: 230px; }
+
+  .ter-assembly-jump { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ter-assembly-jump img { height: 120px; }
+
+  .ter-assembly-preview img { height: 320px; }
+
+  .ter-project-card dl {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-project-card dd {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .ter-design-cycle {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-design-cycle li + li {
+    border-top: 1px solid var(--bs-border);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ter-assembly-jump, .ter-reference-grid, .ter-assembly-facts { grid-template-columns:1fr; }
+  .ter-assembly-preview img { height:240px; padding:.35rem; }
+  .ter-parts-preview img { height:165px; padding:.35rem; }
+  .ter-assembly-card__body { padding:.8rem; }
+  .ter-file-actions .btn { width:100%; white-space:normal; }
+  .ter-reference-card svg { height:105px; }
+  .ter-toolkit-banner { min-width:0; padding:.7rem; }
+  .ter-toolkit-banner img { height:190px; }
+  .ter-calibration-process,.ter-calibration-card-grid,.ter-record-grid { grid-template-columns:1fr; }
+  .ter-calibration-card img { height:125px; }
+  .ter-calibration-record { padding:.55rem; overflow-x:auto; }
+  .ter-calibration-record table { min-width:540px; }
+}
+
+@media print {
+  .ter-calibration-record { break-inside:avoid; padding:6mm; }
+  .ter-calibration-record table { font-size:9pt; }
+  .ter-calibration-record td { height:14mm; }
+}

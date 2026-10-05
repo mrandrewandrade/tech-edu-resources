@@ -2,32 +2,298 @@
   "schema_version": 1,
   "lessons": [
     {
-      "course_id": "tas",
-      "course_title": "TAS Notes",
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
       "lesson_order": 1,
-      "route": "/commons/tas2/01-nice-design-process/01-needs-necessities.html",
+      "route": "/commons/design-fabrication/01-nice-design-process/01-needs-necessities.html",
       "title": "Needs & Necessities",
-      "track_id": "tas-nice",
+      "track_id": "design-nice",
       "track_order": 1,
       "track_title": "1. N.I.C.E. Design Process",
       "previous_route": null,
-      "next_route": "/commons/tas2/01-nice-design-process/02-investigate-inquire.html",
+      "next_route": "/commons/design-fabrication/01-nice-design-process/02-investigate-inquire.html",
       "next_starts_new_track": false,
       "sequence_index": 0
     },
     {
-      "course_id": "tas",
-      "course_title": "TAS Notes",
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
       "lesson_order": 2,
-      "route": "/commons/tas2/01-nice-design-process/02-investigate-inquire.html",
+      "route": "/commons/design-fabrication/01-nice-design-process/02-investigate-inquire.html",
       "title": "Investigate & Inquire",
-      "track_id": "tas-nice",
+      "track_id": "design-nice",
       "track_order": 1,
       "track_title": "1. N.I.C.E. Design Process",
-      "previous_route": "/commons/tas2/01-nice-design-process/01-needs-necessities.html",
-      "next_route": null,
+      "previous_route": "/commons/design-fabrication/01-nice-design-process/01-needs-necessities.html",
+      "next_route": "/commons/design-fabrication/01-nice-design-process/03-create-communicate.html",
       "next_starts_new_track": false,
       "sequence_index": 1
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 3,
+      "route": "/commons/design-fabrication/01-nice-design-process/03-create-communicate.html",
+      "title": "Create & Communicate",
+      "track_id": "design-nice",
+      "track_order": 1,
+      "track_title": "1. N.I.C.E. Design Process",
+      "previous_route": "/commons/design-fabrication/01-nice-design-process/02-investigate-inquire.html",
+      "next_route": "/commons/design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html",
+      "next_starts_new_track": false,
+      "sequence_index": 2
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 4,
+      "route": "/commons/design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html",
+      "title": "Prototype, Evaluate & Iterate",
+      "track_id": "design-nice",
+      "track_order": 1,
+      "track_title": "1. N.I.C.E. Design Process",
+      "previous_route": "/commons/design-fabrication/01-nice-design-process/03-create-communicate.html",
+      "next_route": "/commons/design-fabrication/02-digital-design/01-raster-vector-svg.html",
+      "next_starts_new_track": true,
+      "sequence_index": 3
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 1,
+      "route": "/commons/design-fabrication/02-digital-design/01-raster-vector-svg.html",
+      "title": "Raster, Vector & SVG",
+      "track_id": "design-digital",
+      "track_order": 2,
+      "track_title": "2. Digital Design & Communication",
+      "previous_route": "/commons/design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html",
+      "next_route": "/commons/design-fabrication/02-digital-design/02-vector-geometry.html",
+      "next_starts_new_track": false,
+      "sequence_index": 4
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 2,
+      "route": "/commons/design-fabrication/02-digital-design/02-vector-geometry.html",
+      "title": "Vector Geometry & Exact Construction",
+      "track_id": "design-digital",
+      "track_order": 2,
+      "track_title": "2. Digital Design & Communication",
+      "previous_route": "/commons/design-fabrication/02-digital-design/01-raster-vector-svg.html",
+      "next_route": "/commons/design-fabrication/02-digital-design/03-logos-lettermarks.html",
+      "next_starts_new_track": false,
+      "sequence_index": 5
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 3,
+      "route": "/commons/design-fabrication/02-digital-design/03-logos-lettermarks.html",
+      "title": "Logos, Lettermarks & Negative Space",
+      "track_id": "design-digital",
+      "track_order": 2,
+      "track_title": "2. Digital Design & Communication",
+      "previous_route": "/commons/design-fabrication/02-digital-design/02-vector-geometry.html",
+      "next_route": "/commons/design-fabrication/02-digital-design/04-layout-typography-colour.html",
+      "next_starts_new_track": false,
+      "sequence_index": 6
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 4,
+      "route": "/commons/design-fabrication/02-digital-design/04-layout-typography-colour.html",
+      "title": "Layout, Typography & Colour",
+      "track_id": "design-digital",
+      "track_order": 2,
+      "track_title": "2. Digital Design & Communication",
+      "previous_route": "/commons/design-fabrication/02-digital-design/03-logos-lettermarks.html",
+      "next_route": "/commons/design-fabrication/02-digital-design/05-animation-ui-ux.html",
+      "next_starts_new_track": false,
+      "sequence_index": 7
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 5,
+      "route": "/commons/design-fabrication/02-digital-design/05-animation-ui-ux.html",
+      "title": "Animation, UI/UX & Interface Prototypes",
+      "track_id": "design-digital",
+      "track_order": 2,
+      "track_title": "2. Digital Design & Communication",
+      "previous_route": "/commons/design-fabrication/02-digital-design/04-layout-typography-colour.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
+      "next_starts_new_track": true,
+      "sequence_index": 8
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 1,
+      "route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
+      "title": "Name + Logo: Engrave and Cut",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/02-digital-design/05-animation-ui-ux.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
+      "next_starts_new_track": false,
+      "sequence_index": 9
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 2,
+      "route": "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
+      "title": "Make It Stand",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
+      "next_starts_new_track": false,
+      "sequence_index": 10
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 3,
+      "route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
+      "title": "Measure + Place",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
+      "next_starts_new_track": false,
+      "sequence_index": 11
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 4,
+      "route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
+      "title": "Material Fit + Calibration",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
+      "next_starts_new_track": false,
+      "sequence_index": 12
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 5,
+      "route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
+      "title": "Assemblies + Hybrid Fabrication",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/06-tool-holder.html",
+      "next_starts_new_track": false,
+      "sequence_index": 13
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 6,
+      "route": "/commons/design-fabrication/03-laser-cutting/06-tool-holder.html",
+      "title": "Tool Holder",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
+      "next_starts_new_track": false,
+      "sequence_index": 14
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 7,
+      "route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
+      "title": "Wall + Bench Tool Module",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/06-tool-holder.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
+      "next_starts_new_track": false,
+      "sequence_index": 15
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 8,
+      "route": "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
+      "title": "Design & Fabrication Capstone",
+      "track_id": "design-laser",
+      "track_order": 3,
+      "track_title": "3. Laser Cutting & 2D Fabrication",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
+      "next_route": "/commons/design-fabrication/04-3d-printing/01-additive-cad.html",
+      "next_starts_new_track": true,
+      "sequence_index": 16
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 1,
+      "route": "/commons/design-fabrication/04-3d-printing/01-additive-cad.html",
+      "title": "Additive Manufacturing & CAD",
+      "track_id": "design-additive",
+      "track_order": 4,
+      "track_title": "4. 3D Printing & Additive Manufacturing",
+      "previous_route": "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
+      "next_route": "/commons/design-fabrication/04-3d-printing/02-slicing-orientation.html",
+      "next_starts_new_track": false,
+      "sequence_index": 17
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 2,
+      "route": "/commons/design-fabrication/04-3d-printing/02-slicing-orientation.html",
+      "title": "Slicing, Orientation & Supports",
+      "track_id": "design-additive",
+      "track_order": 4,
+      "track_title": "4. 3D Printing & Additive Manufacturing",
+      "previous_route": "/commons/design-fabrication/04-3d-printing/01-additive-cad.html",
+      "next_route": "/commons/design-fabrication/04-3d-printing/03-tolerances-functional-parts.html",
+      "next_starts_new_track": false,
+      "sequence_index": 18
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 3,
+      "route": "/commons/design-fabrication/04-3d-printing/03-tolerances-functional-parts.html",
+      "title": "Tolerances & Functional Parts",
+      "track_id": "design-additive",
+      "track_order": 4,
+      "track_title": "4. 3D Printing & Additive Manufacturing",
+      "previous_route": "/commons/design-fabrication/04-3d-printing/02-slicing-orientation.html",
+      "next_route": "/commons/design-fabrication/04-3d-printing/04-design-challenge.html",
+      "next_starts_new_track": false,
+      "sequence_index": 19
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 4,
+      "route": "/commons/design-fabrication/04-3d-printing/04-design-challenge.html",
+      "title": "Functional-Part Design Challenge",
+      "track_id": "design-additive",
+      "track_order": 4,
+      "track_title": "4. 3D Printing & Additive Manufacturing",
+      "previous_route": "/commons/design-fabrication/04-3d-printing/03-tolerances-functional-parts.html",
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 20
     },
     {
       "course_id": "tej",
@@ -41,7 +307,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/01-number-systems/02-powers-of-10.html",
       "next_starts_new_track": false,
-      "sequence_index": 2
+      "sequence_index": 21
     },
     {
       "course_id": "tej",
@@ -55,7 +321,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/01-significant-figures.html",
       "next_route": "/commons/tej3-4/01-number-systems/06-scientific-calculator.html",
       "next_starts_new_track": false,
-      "sequence_index": 3
+      "sequence_index": 22
     },
     {
       "course_id": "tej",
@@ -69,7 +335,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/02-powers-of-10.html",
       "next_route": "/commons/tej3-4/01-number-systems/03-scientific-notation.html",
       "next_starts_new_track": false,
-      "sequence_index": 4
+      "sequence_index": 23
     },
     {
       "course_id": "tej",
@@ -83,7 +349,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/06-scientific-calculator.html",
       "next_route": "/commons/tej3-4/01-number-systems/04-engineering-notation.html",
       "next_starts_new_track": false,
-      "sequence_index": 5
+      "sequence_index": 24
     },
     {
       "course_id": "tej",
@@ -97,7 +363,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/03-scientific-notation.html",
       "next_route": "/commons/tej3-4/01-number-systems/05-metric-prefixes.html",
       "next_starts_new_track": false,
-      "sequence_index": 6
+      "sequence_index": 25
     },
     {
       "course_id": "tej",
@@ -111,7 +377,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/04-engineering-notation.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/01-charge-voltage-current.html",
       "next_starts_new_track": true,
-      "sequence_index": 7
+      "sequence_index": 26
     },
     {
       "course_id": "tej",
@@ -125,7 +391,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/05-metric-prefixes.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/02-circuits-opens-shorts.html",
       "next_starts_new_track": false,
-      "sequence_index": 8
+      "sequence_index": 27
     },
     {
       "course_id": "tej",
@@ -139,7 +405,7 @@
       "previous_route": "/commons/tej3-4/02-basic-electronics/01-charge-voltage-current.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/03-ohms-law.html",
       "next_starts_new_track": false,
-      "sequence_index": 9
+      "sequence_index": 28
     },
     {
       "course_id": "tej",
@@ -153,7 +419,7 @@
       "previous_route": "/commons/tej3-4/02-basic-electronics/02-circuits-opens-shorts.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/04-power-energy.html",
       "next_starts_new_track": false,
-      "sequence_index": 10
+      "sequence_index": 29
     },
     {
       "course_id": "tej",
@@ -167,7 +433,7 @@
       "previous_route": "/commons/tej3-4/02-basic-electronics/03-ohms-law.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 11
+      "sequence_index": 30
     }
   ]
 }

@@ -1,0 +1,116 @@
+body.bs-laser-collection #title-block-header { margin-bottom: 1.5rem; }
+
+.bs-laser-shell {
+  width: min(1240px, calc(100% - 2rem));
+  margin: 0 auto 4rem;
+}
+
+.bs-laser-back { margin: 0 0 0.9rem; }
+.bs-laser-back a { color: var(--bs-text-secondary); font-size: 0.88rem; font-weight: 700; text-decoration: none; }
+.bs-laser-back a:hover, .bs-laser-back a:focus-visible { color: var(--bs-link-hover); text-decoration: underline; text-underline-offset: 0.16em; }
+
+.bs-laser-hero,
+.bs-laser-workflow,
+.bs-laser-safety,
+.bs-laser-guides article,
+.bs-laser-test-batch {
+  border: 1px solid var(--bs-border);
+  border-radius: 10px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.bs-laser-hero { padding: clamp(1.4rem, 4vw, 2.6rem); border-left: 5px solid var(--bs-copper-dark); }
+.bs-laser-kicker { margin: 0; color: var(--bs-copper-dark); font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; }
+.bs-laser-lead { max-width: 880px; margin: 0.65rem 0 0; color: var(--bs-text-secondary); font-size: clamp(1rem, 2vw, 1.18rem); line-height: 1.65; }
+
+.bs-laser-workflow { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(480px, 1.2fr); gap: 2rem; margin-top: 1.2rem; padding: clamp(1.25rem, 3vw, 2rem); }
+.bs-laser-workflow h2, .bs-laser-safety h2, .bs-laser-guides h2, .bs-laser-test-batch h2 { margin: .35rem 0 .6rem; color: var(--bs-navy-dark); letter-spacing: -.025em; }
+.bs-laser-workflow p, .bs-laser-safety p, .bs-laser-guides p, .bs-laser-test-batch p { color: var(--bs-text-secondary); line-height: 1.6; }
+.bs-laser-workflow ol { display: grid; grid-template-columns: repeat(5, 1fr); gap: .65rem; margin: 0; padding: 0; list-style: none; counter-reset: steps; }
+.bs-laser-workflow li { min-width: 0; padding: .8rem; border: 1px solid var(--bs-border); border-radius: 8px; background: color-mix(in srgb, var(--bs-surface) 90%, var(--bs-copper-light)); counter-increment: steps; }
+.bs-laser-workflow li::before { content: counter(steps); display: grid; width: 1.55rem; height: 1.55rem; margin-bottom: .55rem; place-items: center; border-radius: 999px; background: var(--bs-navy-dark); color: var(--bs-text-inverse); font-size: .75rem; font-weight: 800; }
+.bs-laser-workflow li strong, .bs-laser-workflow li span { display: block; }
+.bs-laser-workflow li span { margin-top: .25rem; color: var(--bs-text-secondary); font-size: .82rem; line-height: 1.4; }
+
+.bs-laser-category-links { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1.2rem 0 0; }
+.bs-laser-category-links button, .bs-laser-filter-footer button, .bs-laser-more { padding: .58rem .78rem; border: 1px solid var(--bs-border); border-radius: 999px; background: var(--bs-surface); color: var(--bs-navy-dark); font-weight: 700; }
+.bs-laser-category-links button:hover, .bs-laser-category-links button:focus-visible, .bs-laser-filter-footer button:hover, .bs-laser-more:hover { border-color: var(--bs-copper-dark); background: color-mix(in srgb, var(--bs-surface) 88%, var(--bs-copper-light)); }
+
+.bs-laser-safety { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 2.2rem; padding: clamp(1.2rem, 3vw, 2rem); border-left: 5px solid var(--bs-navy-dark); }
+.bs-laser-safety div { max-width: 900px; }
+
+.bs-laser-library-section { margin-top: clamp(2.5rem, 6vw, 4rem); scroll-margin-top: 6rem; }
+.bs-laser-section-heading { max-width: 840px; margin-bottom: 1.2rem; }
+.bs-laser-section-heading h2 { margin: .35rem 0 0; color: var(--bs-navy-dark); font-size: clamp(1.75rem, 4vw, 2.4rem); letter-spacing: -.035em; }
+.bs-laser-section-heading p:last-child { color: var(--bs-text-secondary); line-height: 1.6; }
+
+.bs-laser-controls { position: sticky; top: 4.2rem; z-index: 5; padding: .75rem; border: 1px solid var(--bs-border); border-radius: 10px; background: color-mix(in srgb, var(--bs-surface) 94%, transparent); box-shadow: var(--bs-shadow-soft); backdrop-filter: blur(10px); }
+.bs-laser-search-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: .75rem; }
+.bs-laser-search-label { position: relative; display: block; margin: 0; color: var(--bs-navy-dark); font-weight: 750; }
+.bs-laser-search-label span { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.bs-laser-controls input, .bs-laser-controls select { width: 100%; min-height: 2.45rem; border: 1px solid var(--bs-border); border-radius: 6px; background: var(--bs-surface); color: var(--bs-text-primary); }
+.bs-laser-controls input { padding: .45rem .7rem; font-size: 1rem; }
+.bs-laser-controls select { margin-top: .22rem; padding: .45rem .5rem; }
+.bs-laser-controls input:focus, .bs-laser-controls select:focus { outline: 3px solid color-mix(in srgb, var(--bs-copper-dark) 24%, transparent); border-color: var(--bs-copper-dark); }
+.bs-laser-filter-details { position: relative; margin: 0; }
+.bs-laser-filter-details summary { display: flex; min-height: 2.45rem; align-items: center; gap: .48rem; padding: .42rem .72rem; border: 1px solid var(--bs-border); border-radius: 6px; background: var(--bs-surface); color: var(--bs-navy-dark); cursor: pointer; font-weight: 750; list-style: none; }
+.bs-laser-filter-details summary::-webkit-details-marker { display: none; }
+.bs-laser-filter-details summary::before { content: "\2630"; font-size: .95rem; }
+.bs-laser-filter-details[open] summary { border-color: var(--bs-copper-dark); background: color-mix(in srgb, var(--bs-surface) 88%, var(--bs-copper-light)); }
+.bs-laser-filter-badge { display: grid; min-width: 1.45rem; height: 1.45rem; padding: 0 .3rem; place-items: center; border-radius: 999px; background: var(--bs-navy-dark); color: var(--bs-text-inverse); font-size: .72rem; }
+.bs-laser-filter-panel { position: absolute; top: calc(100% + .55rem); right: 0; width: min(960px, calc(100vw - 3rem)); max-height: min(60vh, 34rem); overflow: auto; padding: .9rem; border: 1px solid var(--bs-border); border-radius: 9px; background: var(--bs-surface); box-shadow: 0 18px 45px rgba(18, 36, 52, .18); }
+.bs-laser-filter-panel > p { margin: 0 0 .65rem; color: var(--bs-text-secondary); font-size: .82rem; }
+.bs-laser-filter-grid { display: grid; grid-template-columns: repeat(3, minmax(160px, 1fr)); gap: .65rem; }
+.bs-laser-filter-grid label { color: var(--bs-text-secondary); font-size: .78rem; font-weight: 720; }
+.bs-laser-filter-footer { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: .55rem; }
+.bs-laser-filter-footer p { margin: 0; color: var(--bs-text-secondary); font-size: .9rem; }
+
+.bs-laser-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.2rem; }
+.bs-laser-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid var(--bs-border); border-radius: 10px; background: var(--bs-surface); box-shadow: var(--bs-shadow-soft); }
+.bs-laser-card-preview { display: grid; aspect-ratio: 4 / 3; place-items: center; padding: 1rem; overflow: hidden; border-bottom: 1px solid var(--bs-border); background: #fffdf8; }
+.bs-laser-card-preview img { width: 100%; height: 100%; object-fit: contain; transition: transform .18s ease; }
+.bs-laser-card-preview:hover img { transform: scale(1.025); }
+.bs-laser-card-body { display: flex; flex: 1; flex-direction: column; padding: 1rem; }
+.bs-laser-card-title { margin: .35rem 0 0; color: var(--bs-navy-dark); font-size: 1.18rem; line-height: 1.2; letter-spacing: -.018em; }
+.bs-laser-card-description { margin: .6rem 0; color: var(--bs-text-secondary); font-size: .9rem; line-height: 1.52; }
+.bs-laser-card-facts { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem .8rem; margin: .2rem 0 .65rem; }
+.bs-laser-card-facts div { min-width: 0; padding-top: .45rem; border-top: 1px solid var(--bs-border); }
+.bs-laser-card-facts dt { color: var(--bs-text-secondary); font-size: .68rem; font-weight: 720; letter-spacing: .04em; text-transform: uppercase; }
+.bs-laser-card-facts dd { margin: .08rem 0 0; overflow-wrap: anywhere; font-size: .82rem; font-weight: 700; }
+.bs-laser-fit-warning { margin: .1rem 0 .6rem; padding: .55rem .65rem; border-left: 3px solid var(--bs-copper-dark); background: color-mix(in srgb, var(--bs-surface) 87%, var(--bs-copper-light)); color: var(--bs-text-secondary); font-size: .78rem; line-height: 1.45; }
+.bs-laser-actions { display: flex; flex-wrap: wrap; gap: .48rem; margin-top: auto; padding-top: .55rem; }
+.bs-laser-button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.55rem; padding: .56rem .78rem; border: 1px solid var(--bs-copper-dark); border-radius: 6px; font-weight: 720; text-decoration: none; }
+.bs-laser-button-primary { border-color: var(--bs-navy-dark); background: var(--bs-navy-dark); color: var(--bs-text-inverse); }
+.bs-laser-button:hover, .bs-laser-button:focus-visible { transform: translateY(-1px); text-decoration: none; }
+.bs-laser-license-note { margin: .75rem 0 0; padding-top: .65rem; border-top: 1px solid var(--bs-border); color: var(--bs-text-secondary); font-size: .69rem; line-height: 1.4; }
+.bs-laser-empty { padding: 1.5rem; border: 1px dashed var(--bs-border); border-radius: 8px; color: var(--bs-text-secondary); text-align: center; }
+.bs-laser-more { display: block; margin: 1.2rem auto 0; }
+
+.bs-laser-guides { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3.5rem; }
+.bs-laser-guides article, .bs-laser-test-batch { padding: clamp(1.2rem, 3vw, 2rem); }
+.bs-laser-guides ol { padding-left: 1.25rem; }
+.bs-laser-guides li { margin: .35rem 0; }
+.bs-laser-test-batch { margin-top: 1rem; border-left: 5px solid var(--bs-copper-dark); }
+
+@media (max-width: 1040px) {
+  .bs-laser-workflow { grid-template-columns: 1fr; }
+  .bs-laser-workflow ol { grid-template-columns: repeat(5, minmax(110px, 1fr)); overflow-x: auto; padding-bottom: .3rem; }
+  .bs-laser-filter-grid { grid-template-columns: repeat(2, minmax(150px, 1fr)); }
+  .bs-laser-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  .bs-laser-shell { width: min(100%, calc(100% - 1rem)); }
+  .bs-laser-safety { align-items: flex-start; flex-direction: column; }
+  .bs-laser-controls { position: static; }
+  .bs-laser-search-row { grid-template-columns: 1fr; align-items: stretch; gap: .5rem; }
+  .bs-laser-filter-details summary { justify-content: space-between; }
+  .bs-laser-filter-panel { position: static; width: auto; max-height: none; margin-top: .55rem; box-shadow: none; }
+  .bs-laser-filter-grid { grid-template-columns: 1fr 1fr; }
+  .bs-laser-card-grid, .bs-laser-guides { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 430px) {
+  .bs-laser-filter-grid { grid-template-columns: 1fr; }
+}

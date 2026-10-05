@@ -1,0 +1,27 @@
+{
+  "format": "technology-commons-veccy-recipe-v1",
+  "editor": "https://veccy.app/",
+  "note": "Human-readable graph recipes for Veccy's variable and expression workflow. Export SVG and verify scale in Inkscape before cutting.",
+  "recipes": [
+    {"id":"circle-ring","title":"Circle or ring","variables":{"outer_diameter":50,"wall":5},"steps":["Create circles with diameters outer_diameter and outer_diameter-2*wall","Centre both circles","Difference inner from outer"]},
+    {"id":"rectangle","title":"Rectangle or rounded plate","variables":{"width":100,"height":60,"corner_radius":5},"steps":["Create a rectangle width × height","Set corner radius","Keep document units in millimetres after SVG export"]},
+    {"id":"slot","title":"Fit-aware slot","variables":{"material_thickness":6,"clearance":0.15,"length":25},"steps":["Create a rectangle length × (material_thickness+clearance)","Optionally round the closed end by half the slot width"]},
+    {"id":"hole-grid","title":"Hole grid","variables":{"diameter":6,"columns":6,"rows":4,"spacing_x":20,"spacing_y":20},"steps":["Create one diameter circle","Apply a grid array with columns, rows, spacing_x, and spacing_y"]},
+    {"id":"mounting-plate","title":"Four-hole mounting plate","variables":{"width":100,"height":70,"hole_diameter":4.3,"spacing_x":80,"spacing_y":50},"steps":["Create the outer plate","Create one hole and make a 2 × 2 grid","Centre the hole grid on the plate"]},
+    {"id":"fit-gauge","title":"Slot fit gauge","variables":{"material_thickness":6,"step":0.1,"count":7},"steps":["Create one slot at material_thickness-step*3","Linear-array count slots","Increment each slot width by step","Label values after export in Inkscape"]},
+    {"id":"french-cleat-module","title":"French-cleat module face","variables":{"width":150,"height":200,"material_thickness":6,"clearance":0.2},"steps":["Create a width × height face","Add two mounting holes","Create a separate cleat strip and lower standoff","Test anti-lift clearance physically"]},
+    {"id":"tool-rack","title":"Generic tool rack","variables":{"count":8,"diameter":12,"spacing":24,"edge":15},"steps":["Create one retention hole or U-slot","Linear-array count features at spacing","Create a backing plate width = 2*edge+(count-1)*spacing+diameter"]},
+    {"id":"socket-rack","title":"Socket rack","variables":{"count":10,"diameter":18,"spacing":26},"steps":["Follow the generic tool-rack recipe","Measure sockets; do not rely on drive size alone"]},
+    {"id":"screwdriver-rack","title":"Screwdriver rack","variables":{"count":8,"diameter":12,"spacing":24},"steps":["Follow the generic tool-rack recipe","Use a fit sample for handle and shaft clearance"]},
+    {"id":"drill-bit-rack","title":"Drill-bit rack","variables":{"count":13,"diameter":6,"spacing":12},"steps":["Follow the generic tool-rack recipe","Label nominal sizes; verify actual shanks"]},
+    {"id":"wrench-rack","title":"Wrench comb","variables":{"count":10,"slot_width":8,"spacing":18,"slot_depth":24},"steps":["Create one open-ended U-slot","Linear-array count slots","Vary widths only from measured wrench geometry"]},
+    {"id":"cable-comb","title":"Cable comb","variables":{"count":10,"slot_width":6,"spacing":14,"slot_depth":18},"steps":["Create one U-slot","Linear-array count slots","Round internal ends where useful"]},
+    {"id":"frame","title":"Frame","variables":{"width":150,"height":100,"border":12},"steps":["Create outer and inner rounded rectangles","Centre","Difference inner from outer"]},
+    {"id":"sign","title":"Sign blank","variables":{"width":200,"height":100,"corner_radius":8,"hole_diameter":5},"steps":["Create rounded rectangle","Create one mounting hole","Mirror or array the hole","Add non-critical lettering in Inkscape"]},
+    {"id":"easel","title":"Simple easel components","variables":{"height":180,"material_thickness":6,"clearance":0.15},"steps":["Create one triangular leg and two copies","Create crosspiece slots material_thickness+clearance","Prototype before scaling"]},
+    {"id":"cross-stand","title":"Cross stand","variables":{"width":120,"height":80,"material_thickness":6,"clearance":0.15},"steps":["Create two plates","Slot one from top and one from bottom to half height","Use slot width material_thickness+clearance"]},
+    {"id":"finger-joint-panel","title":"Finger-joint edge","variables":{"length":150,"material_thickness":6,"finger_count":9,"clearance":0.1},"steps":["Create a panel","Build alternating tabs across the edge","Use odd finger_count","Apply clearance according to the tested machine convention"]},
+    {"id":"tab-slot-panel","title":"Tab-and-slot panel","variables":{"tab_width":20,"material_thickness":6,"clearance":0.15},"steps":["Create a tab width tab_width","Create mating slot width tab_width and thickness material_thickness+clearance","Cut a test pair first"]},
+    {"id":"shadow-board","title":"Shadow-board layout","variables":{"width":300,"height":450,"label_height":8,"spacing":15},"steps":["Create the module face","Arrange generic retention geometry","Add labels and generic outlines","Avoid copied branded silhouettes"]}
+  ]
+}

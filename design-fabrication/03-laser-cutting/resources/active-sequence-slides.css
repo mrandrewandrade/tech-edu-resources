@@ -1,0 +1,54 @@
+body.ter-classroom-slides { padding-top: 0 !important; }
+.ter-classroom-slides #quarto-header,
+.ter-classroom-slides #quarto-sidebar,
+.ter-classroom-slides #quarto-margin-sidebar,
+.ter-classroom-slides footer.footer,
+.ter-classroom-slides .breadcrumb { display: none !important; }
+.ter-classroom-slides #quarto-content { display: block; }
+.ter-classroom-slides main.content { max-width: 1500px; margin: 0 auto; padding: 2rem clamp(1rem, 4vw, 4rem); }
+
+.ter-classroom-slides section.level1 {
+  margin: 4rem 0 1.25rem;
+  padding-bottom: .45rem;
+  border-bottom: 4px solid var(--bs-copper-dark);
+}
+
+.ter-classroom-slides section.level2 {
+  min-height: min(70vh, 760px);
+  margin: 1.5rem 0;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  border: 1px solid var(--bs-border);
+  border-radius: 12px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ter-classroom-slides section.level2 h2 {
+  margin-top: 0;
+  color: var(--bs-navy-dark);
+  font-size: clamp(2rem, 4.2vw, 4.4rem);
+  letter-spacing: -.035em;
+}
+
+.ter-classroom-slides section.level2 p,
+.ter-classroom-slides section.level2 li {
+  font-size: clamp(1.05rem, 1.8vw, 1.65rem);
+  line-height: 1.42;
+}
+
+.ter-classroom-slides section.level2 img {
+  display: block;
+  max-height: 48vh;
+  margin-inline: auto;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  background: white;
+}
+
+@media print {
+  .ter-classroom-slides section.level2 { min-height: 0; page-break-after: always; box-shadow: none; }
+}
