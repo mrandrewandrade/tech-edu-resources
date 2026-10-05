@@ -1,4 +1,30 @@
 {
+  "absolute-path": {
+    "term": "Absolute path",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An absolute path identifies a resource from a complete root location.",
+    "long_definition": "An absolute path identifies a resource from a complete root location.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "file-path",
+      "relative-path",
+      "uniform-resource-locator"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnurl2025"
+      }
+    ]
+  },
   "acceleration": {
     "term": "Acceleration",
     "aliases": [],
@@ -24,6 +50,160 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "actual-dimension": {
+    "term": "Actual dimension",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An actual dimension is the measured size of a manufactured feature or part.",
+    "long_definition": "An actual dimension is the measured size of a manufactured feature or part.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "calibration",
+      "nominal-dimension",
+      "tolerance"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "additive-manufacturing": {
+    "term": "Additive manufacturing",
+    "aliases": [
+      "AM"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Additive manufacturing makes an object by joining material from digital model data, usually layer by layer.",
+    "long_definition": "Additive manufacturing makes an object by joining material from digital model data, usually layer by layer.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "three-d-printing"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "nistadditive"
+      }
+    ]
+  },
+  "ai-disclosure": {
+    "term": "AI disclosure",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An AI disclosure identifies how an AI system contributed to submitted work.",
+    "long_definition": "An AI disclosure identifies how an AI system contributed to submitted work.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "artificial-intelligence",
+      "attribution",
+      "provenance"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "unescoai2023"
+      }
+    ]
+  },
+  "ai-output": {
+    "term": "AI output",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "AI output is content or a prediction produced by an artificial-intelligence system.",
+    "long_definition": "AI output is content or a prediction produced by an artificial-intelligence system.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "artificial-intelligence",
+      "generative-ai",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistgenai2024"
+      }
+    ]
+  },
+  "alignment": {
+    "term": "Alignment",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Alignment places objects or text along a shared edge, centre, axis, or reference.",
+    "long_definition": "Alignment places objects or text along a shared edge, centre, axis, or reference.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "distribution",
+      "visual-hierarchy"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
+  "alignment-template": {
+    "term": "Alignment template",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An alignment template positions work or marks repeatable locations during fabrication.",
+    "long_definition": "An alignment template positions work or marks repeatable locations during fabrication.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "drilling-template",
+      "template"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
   "ampere": {
     "term": "Ampere",
     "aliases": [
@@ -46,6 +226,707 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "animation": {
+    "term": "Animation",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Animation creates the appearance of change or motion by presenting a sequence of images or states over time.",
+    "long_definition": "Animation creates the appearance of change or motion by presenting a sequence of images or states over time. Pencil2D is used in this curriculum for introductory frame-based 2D animation.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "frame",
+      "keyframe",
+      "timeline"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "pencil2dmanual"
+      }
+    ]
+  },
+  "artificial-intelligence": {
+    "term": "Artificial intelligence",
+    "aliases": [
+      "AI"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Artificial intelligence describes machine-based systems that produce outputs from supplied inputs for human-defined objectives.",
+    "long_definition": "Artificial intelligence describes machine-based systems that produce outputs from supplied inputs for human-defined objectives.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "generative-ai",
+      "human-oversight"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistairmf2023",
+        "section": "Sec. 1.2"
+      }
+    ]
+  },
+  "aspect-ratio": {
+    "term": "Aspect ratio",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Aspect ratio is the proportional relationship between an image's width and height.",
+    "long_definition": "Aspect ratio is the proportional relationship between an image's width and height.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "image-dimensions",
+      "image-resolution"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "assembly": {
+    "term": "Assembly",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An assembly is a collection of parts positioned and related to represent a complete product or mechanism.",
+    "long_definition": "An assembly is a collection of parts positioned and related to represent a complete product or mechanism.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "part",
+      "serviceability"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapeassembly"
+      }
+    ]
+  },
+  "attribution": {
+    "term": "Attribution",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Attribution identifies the creator or source of material used in a work.",
+    "long_definition": "Attribution identifies the creator or source of material used in a work.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "copyright",
+      "licence",
+      "source"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "cipocopyright"
+      }
+    ]
+  },
+  "audience": {
+    "term": "Audience",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "The audience is the group of people a design is intended to reach or serve.",
+    "long_definition": "The audience is the group of people a design is intended to reach or serve.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "purpose",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "authoritative-source": {
+    "term": "Authoritative source",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An authoritative source is produced by an organization or expert with recognized responsibility and expertise for the subject.",
+    "long_definition": "An authoritative source is produced by an organization or expert with recognized responsibility and expertise for the subject.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "primary-source",
+      "source",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "unescoai2023"
+      }
+    ]
+  },
+  "backer": {
+    "term": "Backer",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A backer is a supporting piece fixed behind another component to reinforce or mount it.",
+    "long_definition": "A backer is a supporting piece fixed behind another component to reinforce or mount it.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "assembly",
+      "fastener"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "bias": {
+    "term": "Bias",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Bias is a systematic tendency that can produce unfair, distorted, or unrepresentative results.",
+    "long_definition": "Bias is a systematic tendency that can produce unfair, distorted, or unrepresentative results.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "ai-output",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistairmf2023"
+      }
+    ]
+  },
+  "bolt": {
+    "term": "Bolt",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A bolt is an externally threaded fastener normally assembled with a nut or threaded component.",
+    "long_definition": "A bolt is an externally threaded fastener normally assembled with a nut or threaded component.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "fastener",
+      "nut",
+      "washer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "boolean-operation": {
+    "term": "Boolean operation",
+    "aliases": [
+      "Boolean",
+      "Difference",
+      "Intersection",
+      "Union",
+      "Vector Boolean"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A Boolean operation combines or subtracts shapes using union, difference, or intersection rules.",
+    "long_definition": "A Boolean operation combines or subtracts shapes using union, difference, or intersection rules.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
+  "bridge": {
+    "term": "Bridge",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A bridge is printed material that spans between supported regions without support directly underneath.",
+    "long_definition": "A bridge is printed material that spans between supported regions without support directly underneath.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "overhang",
+      "support-material"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "build-plate": {
+    "term": "Build plate",
+    "aliases": [
+      "Print bed"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "The build plate is the printer surface on which a 3D print is formed.",
+    "long_definition": "The build plate is the printer surface on which a 3D print is formed.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "print-orientation",
+      "three-d-printing"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "burr": {
+    "term": "Burr",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A burr is an unwanted raised edge or small piece of material left by a manufacturing process.",
+    "long_definition": "A burr is an unwanted raised edge or small piece of material left by a manufacturing process.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "deburring"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "calibration": {
+    "term": "Calibration",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Calibration compares a measurement or machine result with a known reference and records or corrects the difference.",
+    "long_definition": "Calibration compares a measurement or machine result with a known reference and records or corrects the difference.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "actual-dimension",
+      "test-coupon",
+      "tolerance"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "chamfer": {
+    "term": "Chamfer",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A chamfer replaces a sharp edge with a flat angled face.",
+    "long_definition": "A chamfer replaces a sharp edge with a flat angled face.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "feature",
+      "fillet"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "clearance": {
+    "term": "Clearance",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Clearance is the intentional space between neighbouring parts or features.",
+    "long_definition": "Clearance is the intentional space between neighbouring parts or features. Required clearance depends on the process, material, machine, and desired fit.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "fit",
+      "tolerance"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "clearance-hole": {
+    "term": "Clearance hole",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A clearance hole is large enough for a fastener's shank to pass through without thread engagement.",
+    "long_definition": "A clearance hole is large enough for a fastener's shank to pass through without thread engagement.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "bolt",
+      "fastener",
+      "pilot-hole"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "computer-aided-design": {
+    "term": "Computer-aided design",
+    "aliases": [
+      "CAD"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Computer-aided design uses software to create, modify, analyse, or document a design.",
+    "long_definition": "Computer-aided design uses software to create, modify, analyse, or document a design. Onshape is the primary parametric CAD tool used in this curriculum.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "parametric-modelling",
+      "solid-modelling"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "concept": {
+    "term": "Concept",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A design concept is a proposed overall approach to solving a design problem.",
+    "long_definition": "A design concept is a proposed overall approach to solving a design problem. It describes the main idea before all construction details are fixed.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "design-brief",
+      "prototype",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "constraint": {
+    "term": "Constraint",
+    "aliases": [
+      "Restriction"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A constraint is a limit that a design must stay within.",
+    "long_definition": "A constraint is a limit that a design must stay within, such as time, cost, size, material, safety, or available tools.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "criterion",
+      "requirement",
+      "trade-off"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "context": {
+    "term": "Context",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Context is the surrounding information needed to interpret a request, statement, or result.",
+    "long_definition": "Context is the surrounding information needed to interpret a request, statement, or result.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "prompt",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistgenai2024"
+      }
+    ]
+  },
+  "contrast": {
+    "term": "Contrast",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Contrast is a visible difference between elements that helps them remain distinguishable.",
+    "long_definition": "Contrast is a visible difference between elements that helps them remain distinguishable.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "visual-hierarchy"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22",
+        "section": "Sec. 1.4.3"
+      }
+    ]
+  },
+  "copyright": {
+    "term": "Copyright",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Copyright is the legal protection given to original works, controlling specified uses such as copying and publishing.",
+    "long_definition": "Copyright is the legal protection given to original works, controlling specified uses such as copying and publishing.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "attribution",
+      "licence"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "cipocopyright"
+      }
+    ]
+  },
+  "counterbore": {
+    "term": "Counterbore",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A counterbore is a flat-bottomed cylindrical recess that lets a fastener head or component sit below a surface.",
+    "long_definition": "A counterbore is a flat-bottomed cylindrical recess that lets a fastener head or component sit below a surface.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "countersink",
+      "fastener"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "countersink": {
+    "term": "Countersink",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A countersink is a conical recess that seats a matching fastener head flush with or below a surface.",
+    "long_definition": "A countersink is a conical recess that seats a matching fastener head flush with or below a surface.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "counterbore",
+      "fastener"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "criterion": {
+    "term": "Criterion",
+    "aliases": [
+      "Criteria",
+      "Design criteria",
+      "Design criterion"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A criterion is a standard used to judge whether a design succeeds.",
+    "long_definition": "A criterion is a standard used to judge whether a design succeeds.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "constraint",
+      "evaluation",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
   },
   "current": {
     "term": "Current",
@@ -71,6 +952,110 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "deburring": {
+    "term": "Deburring",
+    "aliases": [
+      "Deburr"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Deburring removes unwanted burrs and sharp edges left by manufacturing.",
+    "long_definition": "Deburring removes unwanted burrs and sharp edges left by manufacturing.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "burr"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "design-brief": {
+    "term": "Design brief",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A design brief states the problem, intended users, goals, and major limits of a project.",
+    "long_definition": "A design brief states the problem, intended users, goals, and major limits of a project.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "audience",
+      "constraint",
+      "requirement",
+      "specification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "design-intent": {
+    "term": "Design intent",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Design intent is the planned way a model should behave when dimensions or features change.",
+    "long_definition": "Design intent is the planned way a model should behave when dimensions or features change.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "geometric-constraint",
+      "parametric-modelling"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapesketch"
+      }
+    ]
+  },
+  "dimension": {
+    "term": "Dimension",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A dimension gives a measured or specified size, distance, angle, or location.",
+    "long_definition": "A dimension gives a measured or specified size, distance, angle, or location.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "geometric-constraint",
+      "nominal-dimension",
+      "specification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapesketch"
+      }
+    ]
   },
   "displacement": {
     "term": "Displacement",
@@ -116,6 +1101,106 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "distribution": {
+    "term": "Distribution",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Distribution spaces selected objects evenly along a direction or between reference points.",
+    "long_definition": "Distribution spaces selected objects evenly along a direction or between reference points.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "alignment"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
+  "dowel": {
+    "term": "Dowel",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A dowel is a cylindrical pin used to align, locate, or join parts.",
+    "long_definition": "A dowel is a cylindrical pin used to align, locate, or join parts.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "joint",
+      "spacer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "drilling-template": {
+    "term": "Drilling template",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A drilling template guides hole positions so a pattern can be transferred or repeated accurately.",
+    "long_definition": "A drilling template guides hole positions so a pattern can be transferred or repeated accurately.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "alignment-template",
+      "pilot-hole"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "edge": {
+    "term": "Edge",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An edge is a line segment that connects two vertices and bounds faces in a polygon mesh.",
+    "long_definition": "An edge is a line segment that connects two vertices and bounds faces in a polygon mesh.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "face",
+      "polygon-mesh",
+      "vertex"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blendermesh"
+      }
+    ]
+  },
   "engineering-design-process": {
     "term": "Engineering Design Process",
     "aliases": [
@@ -135,8 +1220,227 @@
     "inline_terms": {},
     "status": "published",
     "added": "2026-09-24",
-    "updated": "2026-09-24",
-    "references": []
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013",
+        "section": "Appendix I"
+      }
+    ]
+  },
+  "engraving": {
+    "term": "Engraving",
+    "aliases": [
+      "Laser engraving"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Laser engraving removes or alters a surface to create a visible recessed mark or image.",
+    "long_definition": "Laser engraving removes or alters a surface to create a visible recessed mark or image.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "raster-engraving",
+      "scoring"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "evaluation": {
+    "term": "Evaluation",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Evaluation compares a design or result with its criteria and evidence.",
+    "long_definition": "Evaluation compares a design or result with its criteria and evidence.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "criterion",
+      "evidence",
+      "feedback",
+      "iteration"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "evidence": {
+    "term": "Evidence",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Evidence is information used to support a conclusion or design decision.",
+    "long_definition": "Evidence is information used to support a conclusion or design decision.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "evaluation",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "extrude": {
+    "term": "Extrude",
+    "aliases": [
+      "Extrusion"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Extrude creates or removes three-dimensional volume by extending a sketch region in a direction.",
+    "long_definition": "Extrude creates or removes three-dimensional volume by extending a sketch region in a direction.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "feature",
+      "sketch",
+      "solid-modelling"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "face": {
+    "term": "Face",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A face is a surface region bounded by edges in a polygon mesh.",
+    "long_definition": "A face is a surface region bounded by edges in a polygon mesh.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "edge",
+      "polygon-mesh",
+      "vertex"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blendermesh"
+      }
+    ]
+  },
+  "fastener": {
+    "term": "Fastener",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A fastener is hardware used to join or secure two or more parts.",
+    "long_definition": "A fastener is hardware used to join or secure two or more parts.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "bolt",
+      "nut",
+      "screw",
+      "washer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "feature": {
+    "term": "Feature",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A feature is a modelling operation that creates or changes part geometry.",
+    "long_definition": "A feature is a modelling operation that creates or changes part geometry.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "extrude",
+      "fillet",
+      "part",
+      "revolve"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "feedback": {
+    "term": "Feedback",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Feedback is information about a design's performance or effect that can guide revision.",
+    "long_definition": "Feedback is information about a design's performance or effect that can guide revision.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "evaluation",
+      "iteration",
+      "prototype"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
   },
   "feet-per-second-squared": {
     "term": "Feet per Second Squared",
@@ -161,6 +1465,766 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "file-path": {
+    "term": "File path",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A file path identifies the location of a file or folder in a file system.",
+    "long_definition": "A file path identifies the location of a file or folder in a file system.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "absolute-path",
+      "relative-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnurl2025"
+      }
+    ]
+  },
+  "fill": {
+    "term": "Fill",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Fill is the paint applied to the interior of a vector shape.",
+    "long_definition": "Fill is the paint applied to the interior of a vector shape.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "stroke",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023",
+        "section": "Ch. 13"
+      }
+    ]
+  },
+  "fillet": {
+    "term": "Fillet",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A fillet replaces a sharp edge with a rounded transition.",
+    "long_definition": "A fillet replaces a sharp edge with a rounded transition.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "chamfer",
+      "feature"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "fit": {
+    "term": "Fit",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Fit describes how tightly or freely mating parts go together.",
+    "long_definition": "Fit describes how tightly or freely mating parts go together.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "clearance",
+      "press-fit",
+      "sliding-fit",
+      "tolerance"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "fit-gauge": {
+    "term": "Fit gauge",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A fit gauge contains test features used to compare mating sizes and choose a working fit.",
+    "long_definition": "A fit gauge contains test features used to compare mating sizes and choose a working fit.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "calibration",
+      "fit",
+      "test-coupon"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "focus": {
+    "term": "Laser focus",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Laser focus is the position where the beam is concentrated to a small spot on or near the material surface.",
+    "long_definition": "Laser focus is the position where the beam is concentrated to a small spot on or near the material surface.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "laser-cutter",
+      "set-focus"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "glowforgeautofocus"
+      }
+    ]
+  },
+  "frame": {
+    "term": "Frame",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A frame is one position in an animation timeline that can hold or display image content.",
+    "long_definition": "A frame is one position in an animation timeline that can hold or display image content.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "animation",
+      "frame-rate",
+      "keyframe"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "pencil2dmanual"
+      }
+    ]
+  },
+  "frame-rate": {
+    "term": "Frame rate",
+    "aliases": [
+      "FPS",
+      "Frames per second"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Frame rate is the number of animation frames presented per second.",
+    "long_definition": "Frame rate is the number of animation frames presented per second.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "frame"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "pencil2dmanual"
+      }
+    ]
+  },
+  "french-cleat": {
+    "term": "French cleat",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A French cleat is a mounting system that hangs an object from matching interlocking bevelled strips.",
+    "long_definition": "A French cleat is a mounting system that hangs an object from matching interlocking bevelled strips.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "backer",
+      "fastener"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "front-view": {
+    "term": "Front view",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A front view is an orthographic view looking directly at the chosen front of an object.",
+    "long_definition": "A front view is an orthographic view looking directly at the chosen front of an object.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "orthographic-projection",
+      "side-view",
+      "top-view"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "generative-ai": {
+    "term": "Generative AI",
+    "aliases": [
+      "GenAI",
+      "Generative artificial intelligence"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Generative AI is artificial intelligence that produces synthetic content such as text, images, audio, video, or code.",
+    "long_definition": "Generative AI is artificial intelligence that produces synthetic content such as text, images, audio, video, or code.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "ai-output",
+      "artificial-intelligence",
+      "prompt"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistgenai2024"
+      }
+    ]
+  },
+  "geometric-constraint": {
+    "term": "Geometric constraint",
+    "aliases": [
+      "Constraint in CAD",
+      "Sketch constraint"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A geometric constraint limits or fixes relationships between entities in a CAD sketch.",
+    "long_definition": "A geometric constraint limits or fixes relationships between entities in a CAD sketch.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "design-intent",
+      "dimension",
+      "sketch"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapesketch"
+      }
+    ]
+  },
+  "gusset": {
+    "term": "Gusset",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A gusset is a plate or bracket that reinforces the connection between structural members.",
+    "long_definition": "A gusset is a plate or bracket that reinforces the connection between structural members.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "joint",
+      "spacer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "hallucination": {
+    "term": "Hallucination",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A hallucination is confidently presented AI output that is false or inconsistent with the supplied information.",
+    "long_definition": "A hallucination is confidently presented AI output that is false or inconsistent with the supplied information.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "ai-output",
+      "source",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistgenai2024"
+      }
+    ]
+  },
+  "hinge": {
+    "term": "Hinge",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A hinge is a joint that permits controlled rotation between connected parts.",
+    "long_definition": "A hinge is a joint that permits controlled rotation between connected parts.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "assembly",
+      "joint"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "human-oversight": {
+    "term": "Human oversight",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Human oversight is meaningful human review and control of an automated system and its effects.",
+    "long_definition": "Human oversight is meaningful human review and control of an automated system and its effects.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "artificial-intelligence",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistairmf2023"
+      }
+    ]
+  },
+  "hyperlink": {
+    "term": "Hyperlink",
+    "aliases": [
+      "Link",
+      "Web link"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A hyperlink connects a user from one web resource or location to another.",
+    "long_definition": "A hyperlink connects a user from one web resource or location to another.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "hypertext-markup-language",
+      "uniform-resource-locator"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "htmlstandard"
+      }
+    ]
+  },
+  "hypertext-markup-language": {
+    "term": "HyperText Markup Language",
+    "aliases": [
+      "HTML"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "HTML is the markup language used to define the structure and meaning of web content.",
+    "long_definition": "HTML is the markup language used to define the structure and meaning of web content.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "hyperlink",
+      "webpage"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "htmlstandard"
+      }
+    ]
+  },
+  "image-dimensions": {
+    "term": "Image dimensions",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Image dimensions state an image's width and height, usually in pixels for raster images.",
+    "long_definition": "Image dimensions state an image's width and height, usually in pixels for raster images.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "aspect-ratio",
+      "image-resolution",
+      "pixel"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "image-resolution": {
+    "term": "Image resolution",
+    "aliases": [
+      "Resolution"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Image resolution describes the amount of pixel detail in a raster image.",
+    "long_definition": "Image resolution describes the amount of pixel detail in a raster image.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "image-dimensions",
+      "pixel",
+      "raster-image"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "infill": {
+    "term": "Infill",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Infill is the internal printed structure inside a part's outer walls.",
+    "long_definition": "Infill is the internal printed structure inside a part's outer walls.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "perimeter-wall",
+      "slicer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "interface-state": {
+    "term": "Interface state",
+    "aliases": [
+      "State",
+      "UI state"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Interface state is the current condition of an interface or control, such as selected, disabled, loading, or complete.",
+    "long_definition": "Interface state is the current condition of an interface or control, such as selected, disabled, loading, or complete.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "user-interface"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
+  },
+  "investigation": {
+    "term": "Investigation",
+    "aliases": [
+      "Inquiry"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Investigation gathers and examines information needed to understand a design problem.",
+    "long_definition": "Investigation gathers and examines information needed to understand a design problem.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "evidence",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "isometric-view": {
+    "term": "Isometric view",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An isometric view represents three principal dimensions using equally scaled axes.",
+    "long_definition": "An isometric view represents three principal dimensions using equally scaled axes.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "orthographic-projection"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "iteration": {
+    "term": "Iteration",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Iteration is a repeated cycle of testing, evaluating, and revising a design.",
+    "long_definition": "Iteration is a repeated cycle of testing, evaluating, and revising a design.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "evaluation",
+      "feedback",
+      "prototype"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "joint": {
+    "term": "Joint",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A joint is the connection where two or more parts meet and transfer load or maintain alignment.",
+    "long_definition": "A joint is the connection where two or more parts meet and transfer load or maintain alignment.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "assembly",
+      "fastener",
+      "tab"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "jpeg": {
+    "term": "JPEG",
+    "aliases": [
+      "JPG"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "JPEG is a raster image format that uses lossy compression and is commonly used for photographs.",
+    "long_definition": "JPEG is a raster image format that uses lossy compression and is commonly used for photographs.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "png",
+      "raster-image"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "kerf": {
+    "term": "Kerf",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Kerf is the width of material removed by a cutting process.",
+    "long_definition": "Kerf is the width of material removed by a cutting process. Laser kerf varies with the machine, material, thickness, focus, power, speed, and other settings.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "calibration",
+      "laser-cutting",
+      "test-coupon"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "keyframe": {
+    "term": "Keyframe",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A keyframe stores a defined image or property value at a specific point in an animation timeline.",
+    "long_definition": "A keyframe stores a defined image or property value at a specific point in an animation timeline.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "animation",
+      "frame",
+      "timeline"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blenderanimation"
+      }
+    ]
+  },
   "kilometres-per-hour": {
     "term": "Kilometres per Hour",
     "aliases": [
@@ -183,6 +2247,265 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "laser-cutter": {
+    "term": "Laser cutter",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A laser cutter is a computer-controlled machine that uses a focused laser beam to cut, score, or engrave material.",
+    "long_definition": "A laser cutter is a computer-controlled machine that uses a focused laser beam to cut, score, or engrave material.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "engraving",
+      "laser-cutting",
+      "scoring"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "laser-cutting": {
+    "term": "Laser cutting",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Laser cutting separates material along a programmed path using energy from a focused laser beam.",
+    "long_definition": "Laser cutting separates material along a programmed path using energy from a focused laser beam.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "kerf",
+      "laser-cutter",
+      "vector-cut"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "layer": {
+    "term": "Layer",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A layer is one deposited cross-section of a 3D-printed object.",
+    "long_definition": "A layer is one deposited cross-section of a 3D-printed object.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "layer-height",
+      "three-d-printing"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "nistadditive"
+      }
+    ]
+  },
+  "layer-height": {
+    "term": "Layer height",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Layer height is the vertical thickness assigned to each printed layer.",
+    "long_definition": "Layer height is the vertical thickness assigned to each printed layer.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "layer",
+      "slicer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "lettermark": {
+    "term": "Lettermark",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A lettermark is a logo built mainly from letters or initials.",
+    "long_definition": "A lettermark is a logo built mainly from letters or initials.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "logo",
+      "typography"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
+  "licence": {
+    "term": "Licence",
+    "aliases": [
+      "License"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A licence grants permission to use a protected work under stated conditions.",
+    "long_definition": "A licence grants permission to use a protected work under stated conditions.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "attribution",
+      "copyright"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "cipocopyright"
+      }
+    ]
+  },
+  "logo": {
+    "term": "Logo",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A logo is a visual mark used to identify an organization, product, project, or person.",
+    "long_definition": "A logo is a visual mark used to identify an organization, product, project, or person.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "lettermark",
+      "negative-space",
+      "vector-graphic"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
+  "loop": {
+    "term": "Loop",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A loop repeats an animation sequence from its beginning after it reaches the end.",
+    "long_definition": "A loop repeats an animation sequence from its beginning after it reaches the end.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "animation",
+      "timeline"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "pencil2dmanual"
+      }
+    ]
+  },
+  "loose-fit": {
+    "term": "Loose fit",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A loose fit leaves enough clearance for mating parts to move or assemble freely.",
+    "long_definition": "A loose fit leaves enough clearance for mating parts to move or assemble freely.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "clearance",
+      "fit",
+      "press-fit",
+      "sliding-fit",
+      "snug-fit"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "material-thickness": {
+    "term": "Material thickness",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Material thickness is the measured distance between a sheet's two main surfaces.",
+    "long_definition": "Material thickness is the measured distance between a sheet's two main surfaces.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "actual-dimension",
+      "set-focus",
+      "slot"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "glowforgeautofocus"
+      }
+    ]
   },
   "metre": {
     "term": "Metre",
@@ -275,6 +2598,156 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "mirror": {
+    "term": "Mirror",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Mirror copies geometry across a selected line, plane, or face.",
+    "long_definition": "Mirror copies geometry across a selected line, plane, or face.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "feature",
+      "pattern"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "modifier": {
+    "term": "Modifier",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A modifier applies a non-destructive operation that changes how Blender geometry is evaluated or displayed.",
+    "long_definition": "A modifier applies a non-destructive operation that changes how Blender geometry is evaluated or displayed.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "polygon-mesh"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blendermesh"
+      }
+    ]
+  },
+  "navigation": {
+    "term": "Navigation",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Navigation is the set of controls and paths that lets users move through content or tasks.",
+    "long_definition": "Navigation is the set of controls and paths that lets users move through content or tasks.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "user-flow",
+      "website"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
+  },
+  "necessity": {
+    "term": "Necessity",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A necessity is a requirement that must be met for a design to be acceptable.",
+    "long_definition": "A necessity is a requirement that must be met for a design to be acceptable.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "need",
+      "nice-to-have",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "need": {
+    "term": "Need",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A need is a problem or condition that a design is intended to address.",
+    "long_definition": "A need is a problem or condition that a design is intended to address.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "necessity",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "negative-space": {
+    "term": "Negative space",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Negative space is the unoccupied area around or within visible shapes.",
+    "long_definition": "Negative space is the unoccupied area around or within visible shapes.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "logo",
+      "visual-hierarchy"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
   "nice-design-process": {
     "term": "N.I.C.E. Design Process",
     "aliases": [
@@ -293,8 +2766,118 @@
     "inline_terms": {},
     "status": "published",
     "added": "2026-09-24",
-    "updated": "2026-09-24",
-    "references": []
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013",
+        "section": "Appendix I"
+      }
+    ]
+  },
+  "nice-to-have": {
+    "term": "Nice-to-have",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A nice-to-have is a desirable feature that is not required for the design to succeed.",
+    "long_definition": "A nice-to-have is a desirable feature that is not required for the design to succeed.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "necessity",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "node": {
+    "term": "Node",
+    "aliases": [
+      "Anchor point",
+      "Path node"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A node is an editable point that defines part of a vector path.",
+    "long_definition": "A node is an editable point that defines part of a vector path.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
+  "nominal-dimension": {
+    "term": "Nominal dimension",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A nominal dimension is the stated or target size used to identify a feature or part.",
+    "long_definition": "A nominal dimension is the stated or target size used to identify a feature or part.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "actual-dimension",
+      "dimension",
+      "tolerance"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "nut": {
+    "term": "Nut",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A nut is an internally threaded fastener used with a matching bolt or threaded part.",
+    "long_definition": "A nut is an internally threaded fastener used with a matching bolt or threaded part.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "bolt",
+      "fastener",
+      "washer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
   },
   "ohm": {
     "term": "Ohm",
@@ -318,6 +2901,327 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "onion-skinning": {
+    "term": "Onion skinning",
+    "aliases": [
+      "Onion skin"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Onion skinning displays nearby animation frames as faint overlays to guide the current drawing.",
+    "long_definition": "Onion skinning displays nearby animation frames as faint overlays to guide the current drawing.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "frame",
+      "keyframe"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "pencil2dmanual"
+      }
+    ]
+  },
+  "orthographic-projection": {
+    "term": "Orthographic projection",
+    "aliases": [
+      "Orthographic drawing"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Orthographic projection represents an object with separate perpendicular views without perspective shortening.",
+    "long_definition": "Orthographic projection represents an object with separate perpendicular views without perspective shortening.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "front-view",
+      "side-view",
+      "top-view"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "overhang": {
+    "term": "Overhang",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "An overhang is geometry that extends outward beyond the layer below it.",
+    "long_definition": "An overhang is geometry that extends outward beyond the layer below it.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "bridge",
+      "print-orientation",
+      "support-material"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "parametric-modelling": {
+    "term": "Parametric modelling",
+    "aliases": [
+      "Parametric design",
+      "Parametric modeling"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Parametric modelling controls geometry with dimensions, constraints, and ordered features that can be edited.",
+    "long_definition": "Parametric modelling controls geometry with dimensions, constraints, and ordered features that can be edited.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "computer-aided-design",
+      "design-intent",
+      "feature"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "part": {
+    "term": "Part",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A part is one distinct solid component represented in a CAD model.",
+    "long_definition": "A part is one distinct solid component represented in a CAD model.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "assembly",
+      "solid-modelling"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "pattern": {
+    "term": "Pattern",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A pattern creates repeated copies of geometry or features using defined spacing or rotation.",
+    "long_definition": "A pattern creates repeated copies of geometry or features using defined spacing or rotation.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "feature",
+      "mirror"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "perimeter-wall": {
+    "term": "Perimeter wall",
+    "aliases": [
+      "Perimeter",
+      "Wall"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A perimeter wall is an outer shell printed around a layer's interior.",
+    "long_definition": "A perimeter wall is an outer shell printed around a layer's interior.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "infill",
+      "layer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "personal-information": {
+    "term": "Personal information",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Personal information is recorded information about an identifiable individual.",
+    "long_definition": "Personal information is recorded information about an identifiable individual.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "privacy"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "privacyai2023"
+      }
+    ]
+  },
+  "pilot-hole": {
+    "term": "Pilot hole",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A pilot hole is a smaller hole drilled before a screw or larger cutting tool to guide it and reduce splitting or wandering.",
+    "long_definition": "A pilot hole is a smaller hole drilled before a screw or larger cutting tool to guide it and reduce splitting or wandering.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "clearance-hole",
+      "screw"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "pixel": {
+    "term": "Pixel",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A pixel is one addressable picture element in a raster image or display.",
+    "long_definition": "A pixel is one addressable picture element in a raster image or display.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "image-resolution",
+      "raster-image"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "png": {
+    "term": "PNG",
+    "aliases": [
+      "Portable Network Graphics"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "PNG is a lossless raster image format that supports transparency.",
+    "long_definition": "PNG is a lossless raster image format that supports transparency.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "jpeg",
+      "raster-image",
+      "transparency"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "polygon-mesh": {
+    "term": "Polygon mesh",
+    "aliases": [
+      "3D mesh",
+      "Mesh",
+      "Mesh model"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A polygon mesh represents a surface using vertices, edges, and faces.",
+    "long_definition": "A polygon mesh represents a surface using vertices, edges, and faces. Blender is used in this curriculum for artistic mesh modelling, rendering, and animation.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "edge",
+      "face",
+      "solid-modelling",
+      "vertex"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blendermesh"
+      }
+    ]
   },
   "position": {
     "term": "Position",
@@ -363,6 +3267,370 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "press-fit": {
+    "term": "Press fit",
+    "aliases": [
+      "Interference fit"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A press fit uses interference between mating parts so assembly requires force and resists separation.",
+    "long_definition": "A press fit uses interference between mating parts so assembly requires force and resists separation.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "clearance",
+      "fit",
+      "sliding-fit",
+      "snug-fit"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "primary-source": {
+    "term": "Primary source",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A primary source is original evidence or a first-hand record created by a direct participant, authority, or system.",
+    "long_definition": "A primary source is original evidence or a first-hand record created by a direct participant, authority, or system.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "authoritative-source",
+      "source",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "unescoai2023"
+      }
+    ]
+  },
+  "print-orientation": {
+    "term": "Print orientation",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Print orientation is the direction and position in which a model is placed on the build plate.",
+    "long_definition": "Print orientation is the direction and position in which a model is placed on the build plate.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "build-plate",
+      "overhang",
+      "support-material"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "privacy": {
+    "term": "Privacy",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Privacy is a person's ability to control how information about them is collected, used, disclosed, and retained.",
+    "long_definition": "Privacy is a person's ability to control how information about them is collected, used, disclosed, and retained.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "personal-information"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "privacyai2023"
+      }
+    ]
+  },
+  "prompt": {
+    "term": "Prompt",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A prompt is input that instructs or provides context to a generative-AI system.",
+    "long_definition": "A prompt is input that instructs or provides context to a generative-AI system.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "context",
+      "generative-ai"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistgenai2024"
+      }
+    ]
+  },
+  "prototype": {
+    "term": "Prototype",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A prototype is a model or early version built to test a design idea.",
+    "long_definition": "A prototype is a model or early version built to test a design idea. It may test only selected features rather than reproduce the final product.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "evaluation",
+      "feedback",
+      "iteration"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "provenance": {
+    "term": "Provenance",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Provenance records where content or data came from and how it changed.",
+    "long_definition": "Provenance records where content or data came from and how it changed.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "ai-disclosure",
+      "attribution",
+      "source"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistgenai2024"
+      }
+    ]
+  },
+  "purpose": {
+    "term": "Purpose",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Purpose is the intended function or reason for creating a design.",
+    "long_definition": "Purpose is the intended function or reason for creating a design.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "audience",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "raster-engraving": {
+    "term": "Raster engraving",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Raster engraving scans across an image area in rows to reproduce tones or filled regions on a surface.",
+    "long_definition": "Raster engraving scans across an image area in rows to reproduce tones or filled regions on a surface.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "engraving",
+      "raster-image",
+      "vector-cut"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "raster-image": {
+    "term": "Raster image",
+    "aliases": [
+      "Bitmap image",
+      "Raster",
+      "Raster graphic"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A raster image stores an image as a grid of pixels.",
+    "long_definition": "A raster image stores an image as a grid of pixels.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "image-resolution",
+      "pixel",
+      "vector-graphic"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "relative-path": {
+    "term": "Relative path",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A relative path locates a resource from the location of the current file or document.",
+    "long_definition": "A relative path locates a resource from the location of the current file or document.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "absolute-path",
+      "file-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnurl2025"
+      }
+    ]
+  },
+  "rendering": {
+    "term": "Rendering",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Rendering calculates a final image from a three-dimensional scene, its materials, lights, and camera.",
+    "long_definition": "Rendering calculates a final image from a three-dimensional scene, its materials, lights, and camera.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "animation",
+      "polygon-mesh"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blendermesh"
+      }
+    ]
+  },
+  "reproducibility": {
+    "term": "Reproducibility",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Reproducibility is the ability to obtain a consistent result by following the documented inputs and procedure.",
+    "long_definition": "Reproducibility is the ability to obtain a consistent result by following the documented inputs and procedure.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "provenance",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistairmf2023"
+      }
+    ]
+  },
+  "requirement": {
+    "term": "Requirement",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A requirement is a condition or capability that a design must satisfy.",
+    "long_definition": "A requirement is a condition or capability that a design must satisfy.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "constraint",
+      "criterion",
+      "specification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
   "resistance": {
     "term": "Resistance",
     "aliases": [
@@ -386,6 +3654,84 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "responsive-design": {
+    "term": "Responsive design",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Responsive design adapts a webpage's layout to different viewport sizes and device capabilities.",
+    "long_definition": "Responsive design adapts a webpage's layout to different viewport sizes and device capabilities.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "user-interface",
+      "webpage"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
+  },
+  "revolve": {
+    "term": "Revolve",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Revolve creates or removes three-dimensional volume by rotating a sketch region around an axis.",
+    "long_definition": "Revolve creates or removes three-dimensional volume by rotating a sketch region around an axis.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "feature",
+      "sketch"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "scalable-vector-graphics": {
+    "term": "Scalable Vector Graphics",
+    "aliases": [
+      "SVG"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "SVG is a text-based web format for describing two-dimensional vector graphics.",
+    "long_definition": "SVG is a text-based web format for describing two-dimensional vector graphics. Inkscape can edit SVG paths and document dimensions for this curriculum's fabrication workflows.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "vector-graphic",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023",
+        "section": "Sec. 1.1"
+      }
+    ]
+  },
   "scalar": {
     "term": "Scalar",
     "aliases": [],
@@ -406,6 +3752,400 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "scoring": {
+    "term": "Scoring",
+    "aliases": [
+      "Laser scoring"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Laser scoring marks a vector path on the surface without cutting fully through the material.",
+    "long_definition": "Laser scoring marks a vector path on the surface without cutting fully through the material.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "engraving",
+      "vector-cut"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "screw": {
+    "term": "Screw",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A screw is an externally threaded fastener that forms or engages threads to hold parts together.",
+    "long_definition": "A screw is an externally threaded fastener that forms or engages threads to hold parts together.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "fastener",
+      "pilot-hole",
+      "washer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "sculpting": {
+    "term": "Sculpting",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Sculpting reshapes a digital mesh with brush-like tools that push, pull, smooth, or add surface detail.",
+    "long_definition": "Sculpting reshapes a digital mesh with brush-like tools that push, pull, smooth, or add surface detail.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "polygon-mesh"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blendermesh"
+      }
+    ]
+  },
+  "serviceability": {
+    "term": "Serviceability",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Serviceability is the ease with which a product can be inspected, maintained, repaired, or have parts replaced.",
+    "long_definition": "Serviceability is the ease with which a product can be inspected, maintained, repaired, or have parts replaced.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "assembly",
+      "fastener"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "set-focus": {
+    "term": "Set Focus",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Set Focus measures the distance from a Glowforge print head to a selected point on the material before printing.",
+    "long_definition": "Set Focus measures the distance from a Glowforge print head to a selected point on the material before printing.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "focus",
+      "material-thickness"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "glowforgealignment"
+      }
+    ]
+  },
+  "side-view": {
+    "term": "Side view",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A side view is an orthographic view looking directly at one side of an object.",
+    "long_definition": "A side view is an orthographic view looking directly at one side of an object.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "front-view",
+      "orthographic-projection",
+      "top-view"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "sketch": {
+    "term": "CAD sketch",
+    "aliases": [
+      "2D sketch"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A CAD sketch is a two-dimensional set of geometric entities used to define or drive model features.",
+    "long_definition": "A CAD sketch is a two-dimensional set of geometric entities used to define or drive model features.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "dimension",
+      "extrude",
+      "geometric-constraint"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapesketch"
+      }
+    ]
+  },
+  "slicer": {
+    "term": "Slicer",
+    "aliases": [
+      "Slicing software"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A slicer converts a 3D model into layered machine instructions and print settings.",
+    "long_definition": "A slicer converts a 3D model into layered machine instructions and print settings.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "infill",
+      "layer-height",
+      "print-orientation"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "sliding-fit": {
+    "term": "Sliding fit",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A sliding fit provides clearance for mating parts to move against each other with limited play.",
+    "long_definition": "A sliding fit provides clearance for mating parts to move against each other with limited play.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "clearance",
+      "fit",
+      "loose-fit",
+      "press-fit",
+      "snug-fit"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "slot": {
+    "term": "Slot",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A slot is a narrow opening designed to receive a tab, fastener, or moving feature.",
+    "long_definition": "A slot is a narrow opening designed to receive a tab, fastener, or moving feature.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "clearance",
+      "tab"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "snug-fit": {
+    "term": "Snug fit",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A snug fit holds mating parts with little play while still allowing assembly without a heavy press.",
+    "long_definition": "A snug fit holds mating parts with little play while still allowing assembly without a heavy press.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "fit",
+      "loose-fit",
+      "press-fit",
+      "sliding-fit"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "solid-modelling": {
+    "term": "Solid modelling",
+    "aliases": [
+      "Solid modeling"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Solid modelling represents a closed three-dimensional volume rather than only its visible surface.",
+    "long_definition": "Solid modelling represents a closed three-dimensional volume rather than only its visible surface.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "computer-aided-design",
+      "part",
+      "polygon-mesh"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "source": {
+    "term": "Source",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A source is the person, record, publication, dataset, or system from which information comes.",
+    "long_definition": "A source is the person, record, publication, dataset, or system from which information comes.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "authoritative-source",
+      "primary-source",
+      "verification"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "unescoai2023"
+      }
+    ]
+  },
+  "spacer": {
+    "term": "Spacer",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A spacer maintains a specified distance between parts.",
+    "long_definition": "A spacer maintains a specified distance between parts.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "assembly",
+      "fastener"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "specification": {
+    "term": "Specification",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A specification states measurable requirements for a design, part, material, or process.",
+    "long_definition": "A specification states measurable requirements for a design, part, material, or process.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "design-brief",
+      "dimension",
+      "requirement"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
   },
   "speed": {
     "term": "Speed",
@@ -431,6 +4171,536 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "step-file": {
+    "term": "STEP file",
+    "aliases": [
+      "STEP",
+      "STP"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A STEP file exchanges structured product-model geometry between CAD systems.",
+    "long_definition": "A STEP file exchanges structured product-model geometry between CAD systems.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "computer-aided-design",
+      "stl"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "stl": {
+    "term": "STL",
+    "aliases": [
+      "Stereolithography file"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "STL is a file format that represents a model's surface as a set of triangles.",
+    "long_definition": "STL is a file format that represents a model's surface as a set of triangles.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "polygon-mesh",
+      "slicer",
+      "step-file",
+      "three-mf"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "stroke": {
+    "term": "Stroke",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Stroke is the painted outline of a vector path or shape.",
+    "long_definition": "Stroke is the painted outline of a vector path or shape.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "fill",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023",
+        "section": "Ch. 13"
+      }
+    ]
+  },
+  "support-material": {
+    "term": "Support material",
+    "aliases": [
+      "Print support",
+      "Supports"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Support material is temporary printed structure that holds up geometry that cannot print reliably on its own.",
+    "long_definition": "Support material is temporary printed structure that holds up geometry that cannot print reliably on its own.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "bridge",
+      "overhang",
+      "print-orientation"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "tab": {
+    "term": "Tab",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A tab is a projecting feature designed to locate in a matching slot or opening.",
+    "long_definition": "A tab is a projecting feature designed to locate in a matching slot or opening.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "joint",
+      "slot"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "template": {
+    "term": "Template",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A template is a reusable guide for locating, shaping, or checking features.",
+    "long_definition": "A template is a reusable guide for locating, shaping, or checking features.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "alignment-template",
+      "drilling-template"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "test-coupon": {
+    "term": "Test coupon",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A test coupon is a small sample made with the intended material and process to check settings or dimensions.",
+    "long_definition": "A test coupon is a small sample made with the intended material and process to check settings or dimensions.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "calibration",
+      "fit-gauge",
+      "test-print"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "test-print": {
+    "term": "Test print",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A test print is a small or simplified print used to check settings, fit, or geometry before the final print.",
+    "long_definition": "A test print is a small or simplified print used to check settings, fit, or geometry before the final print.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "calibration",
+      "prototype",
+      "tolerance"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "three-d-printing": {
+    "term": "3D printing",
+    "aliases": [
+      "3D print"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "3D printing makes physical objects from digital models by adding material through an automated process.",
+    "long_definition": "3D printing makes physical objects from digital models by adding material through an automated process.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "additive-manufacturing",
+      "slicer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "nistadditive"
+      }
+    ]
+  },
+  "three-mf": {
+    "term": "3MF",
+    "aliases": [
+      "3D Manufacturing Format"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "3MF is a 3D-manufacturing file format that can package model geometry, units, materials, and other production information.",
+    "long_definition": "3MF is a 3D-manufacturing file format that can package model geometry, units, materials, and other production information.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "slicer",
+      "stl"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "threemfcore"
+      }
+    ]
+  },
+  "timeline": {
+    "term": "Timeline",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A timeline arranges animation frames and changes in time order.",
+    "long_definition": "A timeline arranges animation frames and changes in time order.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "frame",
+      "keyframe"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "pencil2dmanual"
+      }
+    ]
+  },
+  "tolerance": {
+    "term": "Tolerance",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Tolerance is the permitted variation from a specified dimension or value.",
+    "long_definition": "Tolerance is the permitted variation from a specified dimension or value.",
+    "categories": [
+      "3D Printing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "clearance",
+      "dimension",
+      "fit"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "prusaslicer"
+      }
+    ]
+  },
+  "top-view": {
+    "term": "Top view",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A top view is an orthographic view looking directly down at an object.",
+    "long_definition": "A top view is an orthographic view looking directly down at an object.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "front-view",
+      "orthographic-projection",
+      "side-view"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "onshapefeatures"
+      }
+    ]
+  },
+  "trade-off": {
+    "term": "Trade-off",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A trade-off accepts a disadvantage in one area to gain an advantage in another.",
+    "long_definition": "A trade-off accepts a disadvantage in one area to gain an advantage in another.",
+    "categories": [
+      "Design Process"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "constraint",
+      "criterion",
+      "evaluation"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "ngss2013"
+      }
+    ]
+  },
+  "transparency": {
+    "term": "Transparency",
+    "aliases": [
+      "Alpha transparency"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Transparency allows image content to be partly or fully see-through.",
+    "long_definition": "Transparency allows image content to be partly or fully see-through.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "png",
+      "raster-image"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnimages2025"
+      }
+    ]
+  },
+  "typography": {
+    "term": "Typography",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Typography is the selection and arrangement of type to communicate written information.",
+    "long_definition": "Typography is the selection and arrangement of type to communicate written information.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "lettermark",
+      "visual-hierarchy"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
+  },
+  "uniform-resource-locator": {
+    "term": "Uniform Resource Locator",
+    "aliases": [
+      "URL",
+      "Web address"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A URL is an address that identifies where a resource can be found and how it can be accessed.",
+    "long_definition": "A URL is an address that identifies where a resource can be found and how it can be accessed.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "hyperlink",
+      "website"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "website",
+        "key": "mdnurl2025"
+      }
+    ]
+  },
+  "user-experience": {
+    "term": "User experience",
+    "aliases": [
+      "UX"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "User experience is a person's overall experience while using a product, system, or service.",
+    "long_definition": "User experience is a person's overall experience while using a product, system, or service.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "user-flow",
+      "user-interface"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
+  },
+  "user-flow": {
+    "term": "User flow",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A user flow is the sequence of steps a user follows to complete a task.",
+    "long_definition": "A user flow is the sequence of steps a user follows to complete a task.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "navigation",
+      "user-experience"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
+  },
+  "user-interface": {
+    "term": "User interface",
+    "aliases": [
+      "UI"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A user interface is the controls and information through which a person interacts with a system.",
+    "long_definition": "A user interface is the controls and information through which a person interacts with a system.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "interface-state",
+      "user-experience"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
+  },
   "vector": {
     "term": "Vector",
     "aliases": [],
@@ -452,6 +4722,90 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "vector-cut": {
+    "term": "Vector cut",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A vector cut follows vector paths to separate material along defined lines.",
+    "long_definition": "A vector cut follows vector paths to separate material along defined lines.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "laser-cutting",
+      "raster-engraving",
+      "scoring"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "troteclaserparameters"
+      }
+    ]
+  },
+  "vector-graphic": {
+    "term": "Vector graphic",
+    "aliases": [
+      "Vector graphics",
+      "Vector image"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A vector graphic describes shapes with geometric paths rather than a fixed grid of pixels.",
+    "long_definition": "A vector graphic describes shapes with geometric paths rather than a fixed grid of pixels.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "raster-image",
+      "scalable-vector-graphics",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023"
+      }
+    ]
+  },
+  "vector-path": {
+    "term": "Vector path",
+    "aliases": [
+      "Path"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A vector path is a geometric outline made from line or curve segments.",
+    "long_definition": "A vector path is a geometric outline made from line or curve segments.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "node",
+      "stroke",
+      "vector-graphic"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "w3csvg2023",
+        "section": "Ch. 9"
+      }
+    ]
   },
   "velocity": {
     "term": "Velocity",
@@ -477,6 +4831,86 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "verification": {
+    "term": "Verification",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Verification checks a claim, output, or result against evidence and requirements.",
+    "long_definition": "Verification checks a claim, output, or result against evidence and requirements.",
+    "categories": [
+      "AI & Digital Literacy"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "evidence",
+      "source"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nistairmf2023"
+      }
+    ]
+  },
+  "vertex": {
+    "term": "Vertex",
+    "aliases": [
+      "Mesh vertex"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A vertex is a point that defines a corner or location in a polygon mesh.",
+    "long_definition": "A vertex is a point that defines a corner or location in a polygon mesh.",
+    "categories": [
+      "CAD & Technical Drawing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "edge",
+      "face",
+      "polygon-mesh"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "blendermesh"
+      }
+    ]
+  },
+  "visual-hierarchy": {
+    "term": "Visual hierarchy",
+    "aliases": [
+      "Hierarchy"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "Visual hierarchy uses differences such as size, position, spacing, and contrast to show reading order and importance.",
+    "long_definition": "Visual hierarchy uses differences such as size, position, spacing, and contrast to show reading order and importance.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "contrast",
+      "typography"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "wcag22"
+      }
+    ]
   },
   "volt": {
     "term": "Volt",
@@ -524,6 +4958,33 @@
     "updated": "2026-09-24",
     "references": []
   },
+  "washer": {
+    "term": "Washer",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A washer is a thin part placed under a fastener head or nut to distribute load, protect a surface, or provide another specified function.",
+    "long_definition": "A washer is a thin part placed under a fastener head or nut to distribute load, protect a surface, or provide another specified function.",
+    "categories": [
+      "Fabrication & Manufacturing"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "bolt",
+      "fastener",
+      "nut",
+      "screw"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "nasafasteners1990"
+      }
+    ]
+  },
   "watt": {
     "term": "Watt",
     "aliases": [
@@ -545,5 +5006,109 @@
     "added": "2026-09-24",
     "updated": "2026-09-24",
     "references": []
+  },
+  "web-browser": {
+    "term": "Web browser",
+    "aliases": [
+      "Browser"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A web browser retrieves and presents web resources and provides controls for navigating them.",
+    "long_definition": "A web browser retrieves and presents web resources and provides controls for navigating them.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "web-server",
+      "webpage"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "htmlstandard"
+      }
+    ]
+  },
+  "web-server": {
+    "term": "Web server",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A web server receives network requests and returns web resources such as HTML, images, and stylesheets.",
+    "long_definition": "A web server receives network requests and returns web resources such as HTML, images, and stylesheets.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "web-browser",
+      "website"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "htmlstandard"
+      }
+    ]
+  },
+  "webpage": {
+    "term": "Webpage",
+    "aliases": [
+      "Web page"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A webpage is a document or application presented by a web browser at a URL.",
+    "long_definition": "A webpage is a document or application presented by a web browser at a URL.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "hypertext-markup-language",
+      "website"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "htmlstandard"
+      }
+    ]
+  },
+  "website": {
+    "term": "Website",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A website is a related collection of webpages and resources published under a common identity or location.",
+    "long_definition": "A website is a related collection of webpages and resources published under a common identity or location.",
+    "categories": [
+      "Web & UI/UX"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "navigation",
+      "webpage"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-04",
+    "updated": "2026-10-04",
+    "references": [
+      {
+        "type": "manual",
+        "key": "htmlstandard"
+      }
+    ]
   }
 }

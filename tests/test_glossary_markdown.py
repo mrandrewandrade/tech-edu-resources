@@ -166,8 +166,30 @@ class GlossaryPageGenerationTests(unittest.TestCase):
             'rel="noopener noreferrer"',
             output,
         )
-        self.assertIn('aria-label="Reference 1">[1]</a></p>', output)
+        self.assertIn(
+            'aria-label="Reference 1, p. 1211">[1, p. 1211]</a></p>',
+            output,
+        )
         self.assertNotIn('<section class="bs-glossary-references">', output)
+
+    def test_web_reference_keeps_stable_number_and_section_locator(self) -> None:
+        entry = public_entry(
+            "Artificial intelligence",
+            "artificial-intelligence",
+            references=(
+                {
+                    "type": "manual",
+                    "key": "nistairmf2023",
+                    "section": "Sec. 1.2",
+                },
+            ),
+        )
+        output = learn_glossary.build_entries_html([entry], {}, {})
+        self.assertIn(
+            'href="../references.html#ref-nistairmf2023"',
+            output,
+        )
+        self.assertIn("[4, Sec. 1.2]</a>", output)
 
     def test_unrelated_definition_has_no_grob_citation(self) -> None:
         output = learn_glossary.build_entries_html([self.ace], {}, {})

@@ -78,8 +78,8 @@ class LessonInlineGlossaryTests(unittest.TestCase):
             'data-bs-glossary-slug="ahead-in-the-count">Ahead in the Race</a>',
             result.stdout,
         )
-        self.assertIn('href="https://andrewandrade.ca/commons/glossary/#ace"', result.stdout)
-        self.assertIn('href="https://andrewandrade.ca/commons/glossary/#ahead-in-the-count"', result.stdout)
+        self.assertIn('href="https://andrewandrade.ca/tech-edu-resources/glossary/#ace"', result.stdout)
+        self.assertIn('href="https://andrewandrade.ca/tech-edu-resources/glossary/#ahead-in-the-count"', result.stdout)
         self.assertIn(
             "Ace appears again, and Ahead in the Count appears again",
             result.stdout,

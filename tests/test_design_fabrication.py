@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import re
 import unittest
+import json
 from pathlib import Path
+
+import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -112,6 +115,23 @@ class DesignFabricationTests(unittest.TestCase):
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")
         for code in ("TIJ1O", "TDJ", "TMJ", "TGJ", "TEJ", "TCJ", "THJ", "TTJ"):
             self.assertIn(code, main)
+
+    def test_curriculum_glossary_metadata_resolves(self) -> None:
+        glossary = json.loads((ROOT / "glossary" / "glossary.json").read_text(encoding="utf-8"))
+        canonical = set(glossary)
+        integrated_pages = 0
+        for page in CURRICULUM.rglob("*.qmd"):
+            source = page.read_text(encoding="utf-8")
+            if not source.startswith("---\n"):
+                continue
+            metadata = yaml.safe_load(source.split("---", 2)[1]) or {}
+            terms = metadata.get("terms", [])
+            highlighted = metadata.get("highlighted-terms", [])
+            if terms:
+                integrated_pages += 1
+            self.assertLessEqual(set(terms), canonical, page)
+            self.assertLessEqual(set(highlighted), set(terms), page)
+        self.assertGreaterEqual(integrated_pages, 25)
 
     def test_application_layer_is_cross_process_and_substantial(self) -> None:
         landing = self.read("design-fabrication/applications/index.qmd")

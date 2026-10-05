@@ -75,7 +75,7 @@ REFERENCE_TYPES = {
     "editorial",
     "unresolved",
 }
-BIBLIOGRAPHY_KEYS = {"grob2016"}
+BIBLIOGRAPHY_KEYS = set(learn_glossary.BIBLIOGRAPHY_REFERENCES)
 
 ValidationError = learn_glossary.ValidationError
 
@@ -180,23 +180,30 @@ def _validate_reference(reference: object, slug: str, index: int) -> None:
     reference_type = reference.get("type")
     if reference_type not in REFERENCE_TYPES:
         raise ValidationError(f"{slug} reference {index} has an invalid type")
+    key = reference.get("key")
+    if key is not None:
+        if key not in BIBLIOGRAPHY_KEYS:
+            raise ValidationError(
+                f"{slug} reference {index} has an unknown bibliography key"
+            )
+        expected_type = learn_glossary.BIBLIOGRAPHY_REFERENCES[str(key)]["type"]
+        if reference_type != expected_type:
+            raise ValidationError(
+                f"{slug} reference {index} type does not match bibliography key"
+            )
+
     if reference_type == "book":
-        key = reference.get("key")
-        if key is not None:
-            if key not in BIBLIOGRAPHY_KEYS:
-                raise ValidationError(
-                    f"{slug} reference {index} has an unknown bibliography key"
-                )
-        else:
+        if key is None:
             for field in ("title", "author"):
                 _require_contract_string(reference, field, f"{slug} reference {index}")
         if not reference.get("pages") and not reference.get("section"):
             raise ValidationError(
                 f"{slug} reference {index} requires pages or a section"
             )
-    elif reference_type in {"article", "manual", "website", "online_glossary"}:
-        for field in ("title", "url"):
-            _require_contract_string(reference, field, f"{slug} reference {index}")
+    elif reference_type in {"article", "manual", "website", "online_glossary", "software"}:
+        if key is None:
+            for field in ("title", "url"):
+                _require_contract_string(reference, field, f"{slug} reference {index}")
     elif reference_type in {"forum", "reddit"}:
         for field in ("title", "url", "note"):
             _require_contract_string(reference, field, f"{slug} reference {index}")

@@ -86,6 +86,12 @@ TRACKS = (
 )
 GLOSSARY_CATEGORIES = (
     "Design Process",
+    "AI & Digital Literacy",
+    "Digital Design & Media",
+    "Web & UI/UX",
+    "CAD & Technical Drawing",
+    "Fabrication & Manufacturing",
+    "3D Printing",
     "Electrical & Electronics",
     "Measurement & Motion",
     "Units & Notation",
@@ -108,6 +114,132 @@ BIBLIOGRAPHY_REFERENCES = {
     "grob2016": {
         "number": "1",
         "href": "../references.html#ref-grob2016",
+        "type": "book",
+    },
+    "opencircuits2023": {
+        "number": "2",
+        "href": "../references.html#ref-opencircuits2023",
+        "type": "book",
+    },
+    "ngss2013": {
+        "number": "3",
+        "href": "../references.html#ref-ngss2013",
+        "type": "manual",
+    },
+    "nistairmf2023": {
+        "number": "4",
+        "href": "../references.html#ref-nistairmf2023",
+        "type": "manual",
+    },
+    "nistgenai2024": {
+        "number": "5",
+        "href": "../references.html#ref-nistgenai2024",
+        "type": "manual",
+    },
+    "unescoai2023": {
+        "number": "6",
+        "href": "../references.html#ref-unescoai2023",
+        "type": "manual",
+    },
+    "privacyai2023": {
+        "number": "7",
+        "href": "../references.html#ref-privacyai2023",
+        "type": "website",
+    },
+    "w3csvg2023": {
+        "number": "8",
+        "href": "../references.html#ref-w3csvg2023",
+        "type": "manual",
+    },
+    "mdnimages2025": {
+        "number": "9",
+        "href": "../references.html#ref-mdnimages2025",
+        "type": "website",
+    },
+    "pencil2dmanual": {
+        "number": "10",
+        "href": "../references.html#ref-pencil2dmanual",
+        "type": "manual",
+    },
+    "htmlstandard": {
+        "number": "11",
+        "href": "../references.html#ref-htmlstandard",
+        "type": "manual",
+    },
+    "mdnurl2025": {
+        "number": "12",
+        "href": "../references.html#ref-mdnurl2025",
+        "type": "website",
+    },
+    "onshapesketch": {
+        "number": "13",
+        "href": "../references.html#ref-onshapesketch",
+        "type": "manual",
+    },
+    "onshapefeatures": {
+        "number": "14",
+        "href": "../references.html#ref-onshapefeatures",
+        "type": "manual",
+    },
+    "onshapeassembly": {
+        "number": "15",
+        "href": "../references.html#ref-onshapeassembly",
+        "type": "manual",
+    },
+    "blendermesh": {
+        "number": "16",
+        "href": "../references.html#ref-blendermesh",
+        "type": "manual",
+    },
+    "blenderanimation": {
+        "number": "17",
+        "href": "../references.html#ref-blenderanimation",
+        "type": "manual",
+    },
+    "nistadditive": {
+        "number": "18",
+        "href": "../references.html#ref-nistadditive",
+        "type": "website",
+    },
+    "threemfcore": {
+        "number": "19",
+        "href": "../references.html#ref-threemfcore",
+        "type": "manual",
+    },
+    "prusaslicer": {
+        "number": "20",
+        "href": "../references.html#ref-prusaslicer",
+        "type": "manual",
+    },
+    "glowforgealignment": {
+        "number": "21",
+        "href": "../references.html#ref-glowforgealignment",
+        "type": "manual",
+    },
+    "glowforgeautofocus": {
+        "number": "22",
+        "href": "../references.html#ref-glowforgeautofocus",
+        "type": "manual",
+    },
+    "nasafasteners1990": {
+        "number": "23",
+        "href": "../references.html#ref-nasafasteners1990",
+        "type": "manual",
+    },
+    "cipocopyright": {
+        "number": "24",
+        "href": "../references.html#ref-cipocopyright",
+        "type": "website",
+    },
+    "wcag22": {
+        "number": "25",
+        "href": "../references.html#ref-wcag22",
+        "type": "manual",
+    },
+    "troteclaserparameters": {
+        "number": "26",
+        "href": "../references.html#ref-troteclaserparameters",
+        "type": "manual",
     }
 }
 
@@ -553,7 +685,8 @@ def validate_public_data(
                     f"Tracked entry {slug} reference {reference_index} "
                     "has unexpected bibliography fields"
                 )
-            if reference.get("type") != "book" or key not in BIBLIOGRAPHY_REFERENCES:
+            citation = BIBLIOGRAPHY_REFERENCES.get(str(key))
+            if citation is None or reference.get("type") != citation["type"]:
                 raise ValidationError(
                     f"Tracked entry {slug} reference {reference_index} "
                     "has an invalid bibliography key"
@@ -802,8 +935,9 @@ def discover_tracks() -> list[dict[str, object]]:
             }
         )
     tracks.sort(key=lambda track: int(track["order"]))
-    if not tracks:
-        raise ValidationError("No Learn track index pages were discovered")
+    # The Technology Education site can publish the shared glossary without
+    # carrying the legacy Learn-track curriculum. An empty track list still
+    # produces deterministic glossary, lookup, and navigation outputs.
     if [int(track["order"]) for track in tracks] != list(
         range(1, len(tracks) + 1)
     ):
@@ -867,8 +1001,7 @@ def discover_lessons() -> list[dict[str, object]]:
         lesson["body_search_text"] = lesson_body_search_text(path)
         lessons.append(lesson)
 
-    if not lessons:
-        raise ValidationError("No current Learn lessons were discovered")
+    # Glossary-only deployments do not require legacy Learn lesson pages.
     return lessons
 
 
@@ -997,7 +1130,8 @@ def build_learn_sequence(
         "schema_version": 1,
         "lessons": lessons,
     }
-    validate_learn_sequence(sequence)
+    if lessons:
+        validate_learn_sequence(sequence)
     return sequence
 
 
@@ -1005,6 +1139,8 @@ def discover_cube_lessons() -> list[dict[str, object]]:
     tracks = discover_tracks()
     lessons = discover_lessons()
     curriculum = build_curriculum(tracks, lessons)
+    if not curriculum:
+        return []
     for track in curriculum:
         if track["id"] != "doubling-cube":
             continue
@@ -1171,8 +1307,7 @@ def discover_research_articles() -> list[dict[str, object]]:
                 ),
             }
         )
-    if not articles:
-        raise ValidationError("No current Research articles were discovered")
+    # Research articles are optional in glossary-only site deployments.
     return articles
 
 
@@ -1727,22 +1862,38 @@ def public_references_html(entry: dict[str, object]) -> str:
 
 
 def inline_bibliography_citations_html(entry: dict[str, object]) -> str:
-    keys: list[str] = []
+    citations: list[tuple[str, str]] = []
     for reference in entry.get("references", []):
         if not isinstance(reference, dict):
             continue
         key = str(reference.get("key") or "")
-        if key in BIBLIOGRAPHY_REFERENCES and key not in keys:
-            keys.append(key)
+        locators: list[str] = []
+        section = str(reference.get("section") or "").strip()
+        if section:
+            locators.append(section)
+        pages = str(reference.get("pages") or "").strip()
+        if pages:
+            if re.match(r"^pp?\.\s", pages, re.IGNORECASE):
+                locators.append(pages)
+            elif re.search(r"[-–]", pages):
+                locators.append(f"pp. {pages}")
+            else:
+                locators.append(f"p. {pages}")
+        detail = ", ".join(locators)
+        item = (key, detail)
+        if key in BIBLIOGRAPHY_REFERENCES and item not in citations:
+            citations.append(item)
     links = []
-    for key in keys:
+    for key, detail in citations:
         citation = BIBLIOGRAPHY_REFERENCES[key]
         number = html.escape(str(citation["number"]))
+        visible = f"[{number}{', ' + html.escape(detail) if detail else ''}]"
+        aria_detail = f", {detail}" if detail else ""
         links.append(
             f'<a class="bs-glossary-citation" '
             f'href="{html_attr(citation["href"])}" target="_blank" '
-            f'rel="noopener noreferrer" aria-label="Reference {number}">'
-            f'[{number}]</a>'
+            f'rel="noopener noreferrer" aria-label="Reference {number}{html_attr(aria_detail)}">'
+            f'{visible}</a>'
         )
     return " ".join(links)
 
@@ -2083,7 +2234,9 @@ def build_authoring_terms(entries: list[dict[str, object]]) -> str:
     for entry in entries:
         term = str(entry["term"]).replace("|", "\\|")
         slug = str(entry["slug"])
-        lines.append(f"| {term} | `{slug}` | `/commons/glossary/#{slug}` |")
+        lines.append(
+            f"| {term} | `{slug}` | `/tech-edu-resources/glossary/#{slug}` |"
+        )
     content = "\n".join(lines) + "\n"
     assert_no_forbidden_text(content, "generated authoring term list")
     return content
@@ -2251,7 +2404,8 @@ def validate_generated() -> dict[str, int]:
         research_articles,
     )
     learn_sequence = build_learn_sequence(curriculum)
-    validate_learn_sequence(learn_sequence)
+    if learn_sequence["lessons"]:
+        validate_learn_sequence(learn_sequence)
 
     missing = [path for path in expected if not path.exists()]
     changed = [
@@ -2423,7 +2577,10 @@ def validate_generated() -> dict[str, int]:
             )
 
     quarto_config = QUARTO_CONFIG_PATH.read_text(encoding="utf-8")
-    if "metadata-files:" not in quarto_config or "_learn-navigation.yml" not in quarto_config:
+    if curriculum and (
+        "metadata-files:" not in quarto_config
+        or "_learn-navigation.yml" not in quarto_config
+    ):
         raise ValidationError(
             "Quarto configuration is missing the generated Learn navigation metadata"
         )

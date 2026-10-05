@@ -34,7 +34,7 @@ local function lookup_html()
     '    <strong>Look Up a Term</strong>',
     '    <button type="button" class="bs-term-lookup-close" data-bs-term-lookup-close aria-controls="bs-term-lookup-panel" aria-expanded="true" aria-label="Collapse term lookup to the right"><span aria-hidden="true">&rarr;</span></button>',
     '  </div>',
-    '  <form action="https://andrewandrade.ca/commons/glossary/" method="get" data-bs-term-lookup-form>',
+    '  <form action="https://andrewandrade.ca/tech-edu-resources/glossary/" method="get" data-bs-term-lookup-form>',
     '    <label class="visually-hidden" for="bs-term-lookup-input">Term or alias</label>',
     '    <div class="bs-term-lookup-controls">',
     '      <input id="bs-term-lookup-input" name="q" type="search" required autocomplete="off" spellcheck="false" placeholder="Enter Term">',

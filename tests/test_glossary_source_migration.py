@@ -111,6 +111,41 @@ class CanonicalGlossaryJsonTests(unittest.TestCase):
         second, _ = source.build_production_source()
         self.assertEqual(first, second)
 
+    def test_design_fabrication_expansion_entries_are_all_sourced(self) -> None:
+        expansion = {
+            slug: entry
+            for slug, entry in self.entries.items()
+            if entry["added"] == "2026-10-04"
+        }
+        self.assertGreaterEqual(len(expansion), 170)
+        missing = [slug for slug, entry in expansion.items() if not entry["references"]]
+        self.assertEqual(missing, [])
+
+    def test_curriculum_aliases_resolve_to_expected_canonicals(self) -> None:
+        owners = {
+            source.normalize_lookup(alias): slug
+            for slug, entry in self.entries.items()
+            for alias in entry["aliases"]
+        }
+        expected = {
+            "AI": "artificial-intelligence",
+            "CAD": "computer-aided-design",
+            "JPG": "jpeg",
+            "SVG": "scalable-vector-graphics",
+            "UI": "user-interface",
+            "UX": "user-experience",
+            "STEP": "step-file",
+        }
+        for alias, slug in expected.items():
+            self.assertEqual(owners[source.normalize_lookup(alias)], slug)
+
+    def test_reference_numbers_preserve_existing_sequence(self) -> None:
+        references = learn_glossary.BIBLIOGRAPHY_REFERENCES
+        self.assertEqual(references["grob2016"]["number"], "1")
+        self.assertEqual(references["opencircuits2023"]["number"], "2")
+        self.assertEqual(references["ngss2013"]["number"], "3")
+        self.assertEqual(references["troteclaserparameters"]["number"], "26")
+
 
 if __name__ == "__main__":
     unittest.main()
