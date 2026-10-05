@@ -147,6 +147,20 @@ class DesignFabricationTests(unittest.TestCase):
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench"):
             self.assertIn(design, organizer)
         self.assertIn("unverified", organizer)
+        self.assertEqual(organizer.count("ter-assembly-card\">"), 4)
+        self.assertEqual(organizer.count("True-size parts sheet"), 4)
+        self.assertEqual(organizer.count("Download parts SVG"), 4)
+
+        for relative in ("exploded.svg", "parts.svg"):
+            self.assertGreaterEqual(organizer.count(relative), 8)
+
+        laser_home = self.read("design-fabrication/03-laser-cutting/index.qmd")
+        self.assertIn("Browse the assembly gallery", laser_home)
+        self.assertIn("removable-wall-bench-rack/exploded.svg", laser_home)
+
+        nav = self.read("_quarto.yml")
+        self.assertIn("Organizer Assembly Gallery", nav)
+        self.assertIn("Fabrication Planning Sheet", nav)
 
     def test_public_classroom_kit_has_palettes_and_reference_assemblies(self) -> None:
         kit = SITE / "assets" / "laser-library" / "classroom-kit"
