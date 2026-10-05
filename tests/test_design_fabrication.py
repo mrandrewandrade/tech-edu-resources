@@ -35,6 +35,7 @@ class DesignFabricationTests(unittest.TestCase):
         required = [
             "index.qmd",
             "resources/index.qmd",
+            "resources/work-in-progress/index.qmd",
             "01-nice-design-process/index.qmd",
             "ai/index.qmd",
             "ai/07-ai-design-audit.qmd",
@@ -252,7 +253,7 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("reverse-engineer-improve.qmd", toolkit)
 
     def test_free_online_resource_directory_is_broad_and_careful(self) -> None:
-        directory = self.read("design-fabrication/resources/index.qmd")
+        directory = self.read("design-fabrication/resources/work-in-progress/index.qmd")
         for heading in (
             "Find ideas and understand products",
             "Inclusive design, ergonomics, and accessibility",
@@ -289,12 +290,20 @@ class DesignFabricationTests(unittest.TestCase):
             "creator, page title, URL, access date, and licence",
             "Teacher review is required",
             "Machine information is not machine authorization",
+            "Work in progress · Research notes · Not fully reviewed",
+            "broad initial online research pass",
+            "received complete editorial, technical, licensing, accessibility, age-suitability, or classroom review",
+            "Entries are leads, not endorsements",
         ):
             self.assertIn(boundary, directory)
 
         nav = self.read("_quarto.yml")
-        self.assertIn("Free Online Resource Directory", nav)
-        self.assertIn("design-fabrication/resources/index.qmd", nav)
+        self.assertIn("Free Online Resource Directory · Work in Progress", nav)
+        self.assertIn("design-fabrication/resources/work-in-progress/index.qmd", nav)
+
+        redirect = self.read("design-fabrication/resources/index.qmd")
+        self.assertIn('http-equiv="refresh"', redirect)
+        self.assertIn("resources/work-in-progress/", redirect)
 
         for relative in (
             "design-fabrication/index.qmd",
@@ -308,7 +317,9 @@ class DesignFabricationTests(unittest.TestCase):
             "design-fabrication/06-textiles-soft-goods/index.qmd",
             "design-fabrication/07-other-fabrication/index.qmd",
         ):
-            self.assertIn("resources/index.qmd", self.read(relative), relative)
+            content = self.read(relative)
+            self.assertIn("resources/work-in-progress/index.qmd", content, relative)
+            self.assertIn("Work in Progress", content, relative)
 
     def test_public_classroom_kit_has_palettes_and_reference_assemblies(self) -> None:
         kit = SITE / "assets" / "laser-library" / "classroom-kit"

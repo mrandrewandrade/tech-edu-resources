@@ -1,0 +1,225 @@
+---
+title: "Work in Progress | Free Online Design & Fabrication Resources"
+subtitle: "Working notes for ideas, tutorials, software, models, and open collections"
+description: "Work-in-progress research notes for free and mixed-access design and fabrication resources. Every entry requires further teacher, technical, licensing, and classroom review."
+page-layout: full
+toc: true
+body-classes: "ter-design-fabrication bs-learn-article"
+execute: {enabled: false}
+---
+
+::: {.ter-status}
+Work in progress · Research notes · Not fully reviewed
+:::
+
+::: {.callout-warning}
+## Working draft: verify before classroom use
+
+This directory was assembled from a broad initial online research pass. It has **not** received complete editorial, technical, licensing, accessibility, age-suitability, or classroom review. Entries are leads, not endorsements. Descriptions may be incomplete, access conditions may change, and important limitations may be missing. A teacher must open and assess each resource before assigning it, and students must verify every claim, file, dimension, licence, and machine setting they use.
+:::
+
+Use these working notes to find ideas, learn a process, inspect how something works, or locate material that may support an original design after verification. The strongest links also appear inside the lessons where students need them.
+
+**Last reviewed: October 5, 2026.** Websites, prices, account rules, and licences change. Confirm the current terms before classroom use.
+
+::: {.callout-important}
+## Free access is not the same as permission to copy
+
+A page that is free to view may contain paid files, copyrighted photographs, restricted trademarks, or models with different licences. For every reused asset, record the **creator, page title, URL, access date, and licence**. Check whether attribution, adaptation, redistribution, or commercial use is allowed. Measure and test downloaded geometry before fabrication. A community upload is not proof that dimensions, safety, ownership, or printability are correct.
+:::
+
+## How the access labels work
+
+| Label | Meaning |
+|---|---|
+| **Open source / open content** | Source or content is available under a stated open licence. The licence still has conditions. |
+| **Free access** | Useful material can be viewed or used without payment. Reuse rights vary. |
+| **Free account** | Core access is free, but registration may be required. Protect student privacy and use board-approved accounts. |
+| **Mixed** | Free and paid material appear together, or some features require payment. Filter carefully. |
+
+Teacher review is required for public marketplaces, community galleries, comments, advertising, external downloads, and age-appropriate content. Local machine training and safety procedures always take priority over online advice.
+
+## Find ideas and understand products
+
+Use these sources to identify needs, compare existing solutions, study mechanisms, and read build evidence. They are starting points for investigation, not answer banks.
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [Instructables](https://www.instructables.com/) | Build sequences, materials, tests, and maker documentation | Free access. Quality and licences vary by project. |
+| [Hackaday.io Projects](https://hackaday.io/projects) | Open hardware, electronics, mechanisms, and prototypes | Free access. Check each project's files and licence. |
+| [Arduino Project Hub](https://projecthub.arduino.cc/) | Documented physical-computing projects | Free access. Some builds require purchased parts or accounts. |
+| [Adafruit Learning System](https://learn.adafruit.com/) | Detailed electronics, fabrication, coding, and wearable guides | Free access. Product links are commercial. |
+| [SparkFun Learn](https://learn.sparkfun.com/) | Electronics tutorials, hookup guides, and classroom ideas | Free access. Confirm hardware versions. |
+| [Raspberry Pi Projects](https://projects.raspberrypi.org/) | Guided computing and physical-computing projects | Free access. Hardware may be required. |
+| [micro:bit Projects](https://microbit.org/projects/) | Short classroom coding and invention projects | Free access. Check local account and device policies. |
+| [iFixit](https://www.ifixit.com/) | Teardowns, repair sequences, fasteners, and serviceability | Free access. Device-specific hazards still apply. |
+| [Google Patents](https://patents.google.com/) | Product history, mechanisms, drawings, and claims | Free access. A patent drawing is not permission to copy a protected invention. |
+| [Etsy](https://www.etsy.com/ca/search?q=tool%20holder) | Commercial precedents, product language, and user-review themes | Mixed marketplace. Analyze, do not copy sellers' work. |
+| [Glowforge Catalog](https://glowforge.com/b/catalog) | Laser-cut product categories, layers, and construction ideas | Mixed. Visibility does not grant file or reproduction rights. |
+| [Smithsonian Learning Lab](https://learninglab.si.edu/) | Museum objects, collections, and classroom investigations | Free access. Check rights on each item. |
+| [OER Commons](https://www.oercommons.org/) | Open educational lessons and project resources | Free access. Check the licence on each resource. |
+
+Use the [N.I.C.E. Design Process](../../01-nice-design-process/index.qmd) to turn investigation into criteria, alternatives, tests, and revisions. The [Good Idea, Better Product challenge](../../03-laser-cutting/resources/reverse-engineer-improve.qmd) provides a complete reverse-engineering assignment.
+
+## Inclusive design, ergonomics, and accessibility
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [Cambridge Inclusive Design](https://www-edc.eng.cam.ac.uk/research/inclusive-design) | Designing for a range of capabilities and reducing exclusion | Free access to research and tools. |
+| [Microsoft Inclusive Design guidebook](https://inclusive.microsoft.design/tools-and-activities/Inclusive101Guidebook.pdf) | Activities for recognizing exclusion and designing with people | Free PDF. Cite the source; do not treat personas as substitutes for real users. |
+| [W3C Web Accessibility Initiative](https://www.w3.org/WAI/fundamentals/) | Accessibility principles that transfer to digital and physical communication | Free access. Use current W3C guidance. |
+| [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) | Testing text and background colour contrast | Free access. Contrast is one accessibility check, not the whole experience. |
+| [Canadian Centre for Occupational Health and Safety: Ergonomics](https://www.ccohs.ca/oshanswers/ergonomics/) | Workstation, reach, posture, repetition, and task-design background | Free access. Apply local school and workplace requirements. |
+| [The Centre for Excellence in Universal Design](https://universaldesign.ie/about-universal-design) | Universal-design principles and guidance | Free access. Adapt to the actual user and setting. |
+
+## Graphics, images, icons, fonts, and colour
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [Inkscape Learn](https://inkscape.org/learn/) | Free vector drawing, SVG, layout, and fabrication artwork | Open-source software and free learning resources. |
+| [Photopea Learn](https://www.photopea.com/learn/) | Browser-based raster editing and image preparation | Free access with advertising; paid option available. |
+| [GIMP](https://www.gimp.org/) | Free raster-image editing | Open-source software. Download from the official site. |
+| [Krita](https://krita.org/) | Digital painting, illustration, and texture work | Open-source software. |
+| [Pencil2D](https://www.pencil2d.org/) | Hand-drawn 2D animation | Open-source software. |
+| [Blender](https://www.blender.org/) | 3D art, rendering, animation, and mesh modelling | Open-source software. |
+| [Openverse](https://openverse.org/) | Searching openly licensed images and audio | Free access. Verify the licence at the original source. |
+| [Wikimedia Commons](https://commons.wikimedia.org/) | Images, diagrams, media, and historical references | Free access. Each file has its own licence and attribution. |
+| [Openclipart](https://openclipart.org/) | Simple public-domain clip art and silhouettes | Free access. Inspect geometry before fabrication. |
+| [SVG Repo](https://www.svgrepo.com/) | Searchable SVG icons and graphics | Free access. Licences vary by item. |
+| [Noun Project](https://thenounproject.com/icons/) | Symbols, interface icons, and visual-language research | Mixed. Free use commonly requires attribution. Check each icon. |
+| [Font Awesome Free](https://fontawesome.com/search?o=r&m=free) | Interface and wayfinding icons | Free subset. Follow the licence and attribution terms. |
+| [Google Fonts](https://fonts.google.com/) | Openly licensed typefaces | Free access. Check legibility, cut bridges, and the font's licence. |
+| [Coolors](https://coolors.co/) | Building and checking colour palettes | Mixed. Free core tools; account and paid features are optional. |
+| [Adobe Color](https://color.adobe.com/) | Colour wheels, harmony, trends, and accessibility tools | Free access; some Adobe features may require an account. |
+| [Poly Haven](https://polyhaven.com/) | CC0 textures, HDRIs, and 3D assets for Blender | Free/open content. Confirm the current CC0 terms. |
+
+## Laser cutting and 2D fabrication
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [Technology Commons Laser Fabrication Library](../../../teaching-materials/laser-cutting/index.qmd) | Tested starter geometry, palettes, calibration files, holders, jigs, and assemblies | Free local classroom resource. Verify material and machine settings. |
+| [Fabrication Plate Builder](../../tools/plate-builder/index.qmd) | Dimensioned plates, holes, grids, and radial layouts | Free local tool. Measure the exported reference dimension. |
+| [Boxes.py online generator](https://boxes.hackerspace-bamberg.de/) | Parametric boxes, trays, hinges, racks, and mechanisms | Open-source generator. Test material thickness, kerf, and fit. |
+| [Boxes.py documentation](https://florianfesti.github.io/boxes/html/) | Understanding generator parameters and constructions | Free access. Generated files still need inspection. |
+| [MakerCase](https://www.makercase.com/) | Basic laser-cut box generation | Mixed. Basic tools are free; Pro features are paid. Test joints locally. |
+| [Templatemaker](https://www.templatemaker.nl/) | Paper, card, and packaging templates | Free generator with use conditions. Do not redistribute generated files without checking the terms. |
+| [Deepnest](https://deepnest.io/) | Nesting vector parts to reduce sheet waste | Open-source software. Inspect orientation, grain, spacing, and cut order. |
+| [Ponoko Design Guides](https://www.ponoko.com/make-and-sell/design-guides) | File preparation, materials, and laser-design background | Free access. Vendor settings are not universal machine settings. |
+
+## 3D CAD and modelling tools
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [Onshape Education plans](https://www.onshape.com/en/education/plans) | Browser-based parametric CAD, assemblies, and drawings | Free for eligible education users; account required. Check document visibility. |
+| [Onshape Student Resources](https://www.onshape.com/en/education/student-resources) | Self-paced CAD learning and educator resources | Free access; Onshape account may be required for activities. |
+| [Tinkercad](https://www.tinkercad.com/) | Beginner 3D design, circuits, and codeblocks | Free account. Use board-approved class and privacy settings. |
+| [FreeCAD](https://www.freecad.org/) | Parametric CAD and technical modelling | Open-source software. |
+| [OpenSCAD](https://openscad.org/) | Code-based parametric solid modelling | Open-source software. |
+| [Blender](https://www.blender.org/) | Mesh modelling, sculpting, rendering, and animation | Open-source software. Use CAD for tightly constrained mechanical parts. |
+| [SolveSpace](https://solvespace.com/) | Lightweight parametric 2D/3D CAD | Open-source software. |
+| [SketchUp Free](https://www.sketchup.com/en/plans-and-pricing/sketchup-free) | Browser-based spatial and architectural modelling | Mixed; free web plan requires an account. Confirm education and privacy terms. |
+
+## Downloadable 3D models and scans
+
+Downloaded models can support comparison, remixing where permitted, museum study, or a component that would be wasteful to redraw. They should not replace original modelling in an assignment designed to assess CAD skill.
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [Printables](https://www.printables.com/) | Printable models, makes, comments, and remixes | Mixed community library. Check each licence and model history. |
+| [Thingiverse](https://www.thingiverse.com/) | Large community model library | Free access. Licence, quality, and completeness vary. |
+| [MakerWorld](https://makerworld.com/) | Models, profiles, makes, and print feedback | Mixed community library. Account may be required for some actions. |
+| [Thangs free-model search](https://thangs.com/digital/search/free?scope=thangs&view=list) | Cross-library model discovery and geometric search | Mixed. A free filter does not replace checking the source licence. |
+| [Sketchfab downloadable models](https://sketchfab.com/search?features=downloadable&type=models) | Rotating, inspecting, and downloading permitted 3D work | Mixed. Check each licence, attribution, and download format. |
+| [GrabCAD Community Library](https://grabcad.com/library) | Mechanical CAD references and assemblies | Free account. Verify contributor rights, scale, and engineering suitability. |
+| [NASA 3D Resources](https://science.nasa.gov/3d-resources/) | Spacecraft, terrain, and science models | Free downloads subject to NASA media-use guidelines. |
+| [Smithsonian Open Access](https://www.si.edu/OpenAccess) | Museum scans, images, and 3D objects | Open access where marked. Check the record and usage guidance. |
+| [NIH 3D](https://3d.nih.gov/) | Biomedical and scientific 3D models | Free access. Check each record; models are not automatically suitable for medical use. |
+| [Scan the World](https://www.myminifactory.com/scantheworld/) | Cultural-heritage 3D scans | Mixed platform. Check the object's licence and cultural context. |
+
+## Slicing, repair, and print preparation
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/) | Slicing, supports, orientation, previews, and print estimates | Open-source software. Use a profile approved for the local printer. |
+| [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura/) | General-purpose slicing and toolpath preview | Open-source software. Validate machine dimensions and profile. |
+| [OrcaSlicer official repository](https://github.com/OrcaSlicer/OrcaSlicer) | Modern slicing, calibration, and multi-printer workflows | Open-source software. Use the official repository, not lookalike download sites. |
+| [MeshLab](https://www.meshlab.net/) | Inspecting, cleaning, measuring, and converting meshes | Open-source software. Keep an untouched source copy. |
+| [Autodesk Meshmixer](https://marketplace.autodesk.com/apps/2e40e347-0369-4603-b83f-ecab324aed0f) | Inspecting, combining, simplifying, and repairing meshes | Free software. Download from the official Autodesk listing and keep an untouched source copy. |
+
+## Electronics, circuits, and physical computing
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [Wokwi](https://wokwi.com/) | Browser simulation for Arduino, ESP32, Pi Pico, sensors, and code | Free for personal use; paid professional features exist. Simulation is not a final hardware test. |
+| [Tinkercad Circuits](https://www.tinkercad.com/circuits) | Beginner circuits, Arduino, and breadboard simulation | Free account. Use approved classroom account settings. |
+| [CircuitJS](https://www.falstad.com/circuit/) | Fast browser-based circuit exploration | Free access. Simplified simulation does not model every real component limit. |
+| [KiCad](https://www.kicad.org/) | Schematic capture and printed-circuit-board design | Open-source software. Fabrication still requires design-rule checks. |
+| [KiCad documentation](https://docs.kicad.org/) | Official tutorials and reference manuals | Free access. Match documentation to the installed version. |
+| [All About Circuits textbook](https://www.allaboutcircuits.com/textbook/) | Free electronics explanations and worked examples | Free access. Cross-check safety-critical information. |
+| [Arduino Documentation](https://docs.arduino.cc/) | Official board, language, tutorial, and hardware references | Free access. Check the exact board revision. |
+| [micro:bit MakeCode](https://makecode.microbit.org/) | Block and text coding with browser simulation | Free access. Saving and sharing options vary. |
+
+## Websites, UI/UX, and coding
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [MDN Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) | Structured HTML, CSS, JavaScript, accessibility, and publishing lessons | Free access and open-source examples. |
+| [web.dev Learn](https://web.dev/learn/) | Modern browser, performance, accessibility, and design courses | Free access. |
+| [freeCodeCamp](https://www.freecodecamp.org/learn/) | Interactive coding lessons and projects | Free account for saved progress. Review public profile settings. |
+| [CodePen](https://codepen.io/) | Small browser experiments and front-end examples | Mixed. Public work and community content require review. |
+| [GitHub Pages documentation](https://docs.github.com/en/pages) | Publishing a static website from a repository | Free for eligible GitHub plans; account and repository settings apply. |
+| [W3C HTML validator](https://validator.w3.org/) | Checking HTML syntax | Free access. A valid page can still have usability problems. |
+| [PageSpeed Insights](https://pagespeed.web.dev/) | Performance and accessibility diagnostics | Free access. Interpret automated results with human testing. |
+
+## Textiles, patterns, and soft goods
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [FreeSewing](https://freesewing.eu/) | Parametric sewing patterns generated from measurements | Free and open source. Check pattern options, fit, seam allowance, and licence. |
+| [Seamly2D](https://github.com/FashionFreedom/Seamly2D) | Parametric pattern drafting and measurement files | Open-source software. Test with inexpensive fabric before final material. |
+| [Ink/Stitch](https://inkstitch.org/) | Machine-embroidery design inside Inkscape | Open-source software. Machine, needle, stabilizer, and thread tests are still required. |
+| [Sewing.org](https://www.sewing.org/) | Sewing terminology, articles, and learning resources | Free access. Check publication age and local machine practice. |
+| [Textile School](https://www.textileschool.com/) | Fibre, fabric, testing, and manufacturing background | Free access with commercial content. Verify technical claims with material data. |
+| [Instructables sewing projects](https://www.instructables.com/craft/sewing/projects/) | Build sequences and soft-goods ideas | Free access. Quality and rights vary by project. |
+
+## Repair, circular design, and responsible fabrication
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [iFixit EDU K-12 resources](https://edu.ifixit.com/k12/educator-resources) | Repair activities, device investigation, and educator resources | Free access. Use devices without damaged batteries or unknown hazards. |
+| [Precious Plastic](https://www.preciousplastic.com/about/open-source) | Open-source plastic recycling systems and community examples | Open source. Machinery and heated plastics require specialist safety review. |
+| [Appropedia](https://www.appropedia.org/) | Appropriate technology, sustainability, and community projects | Free/open collaborative content. Check sources and local suitability. |
+| [Open Source Ecology Wiki](https://wiki.opensourceecology.org/) | Open machine, agriculture, and infrastructure documentation | Free access. Completeness and engineering validation vary. |
+| [Repair Café](https://www.repaircafe.org/en/) | Community repair culture, events, and repair knowledge | Free access. Local events and participation rules vary. |
+| [Open Repair Alliance](https://openrepair.org/) | Repair data, standards, and the wider repair ecosystem | Free access. Useful for research and data literacy. |
+| [Ellen MacArthur Foundation: Circular Design](https://www.ellenmacarthurfoundation.org/topics/circular-design/overview) | Durability, reuse, material loops, and circular-design framing | Free access. Translate broad principles into measurable project criteria. |
+
+## CNC and digital machining
+
+| Resource | Best use | Access and checks |
+|---|---|---|
+| [FreeCAD](https://www.freecad.org/) | Parametric parts and Path workbench exploration | Open-source software. CAM output must match the exact machine and controller. |
+| [LinuxCNC](https://linuxcnc.org/) | Open CNC control software and documentation | Open source. Use only with an approved, configured machine. |
+| [GRBL official repository](https://github.com/gnea/grbl) | Understanding a common open-source CNC controller | Open source. Firmware changes can alter machine behaviour. |
+| [Autodesk Fusion learning](https://help.autodesk.com/view/fusion360/ENU/courses/) | Official CAD/CAM learning modules | Free learning content. Software plans and education eligibility can change. |
+| [NYC CNC Academy](https://academy.nyccnc.com/) | Machining, CAM, workholding, and inspection videos | Mixed/free learning content. Local procedures take priority. |
+
+::: {.callout-warning}
+## Machine information is not machine authorization
+
+Online feeds, speeds, toolpaths, printer profiles, laser settings, electrical circuits, and material claims are examples, not universal instructions. Use the exact local machine manual, approved material list, guarding, ventilation, supervision, and teacher procedures. Simulate, measure, make a small test, and stop when evidence is unexpected.
+:::
+
+## A simple student source record
+
+For every external reference, save:
+
+1. creator or organization;
+2. page, product, project, or file title;
+3. direct URL and access date;
+4. access label and stated licence;
+5. what you learned from it;
+6. what you reused, adapted, or deliberately changed;
+7. what you verified through measurement, testing, or another source.
+
+Do not submit a folder of links as research. Turn sources into evidence, criteria, alternatives, decisions, tests, and an original result.
