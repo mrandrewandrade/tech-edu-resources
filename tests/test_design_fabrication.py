@@ -34,6 +34,7 @@ class DesignFabricationTests(unittest.TestCase):
     def test_canonical_curriculum_structure_exists(self) -> None:
         required = [
             "index.qmd",
+            "resources/index.qmd",
             "01-nice-design-process/index.qmd",
             "ai/index.qmd",
             "ai/07-ai-design-audit.qmd",
@@ -249,6 +250,65 @@ class DesignFabricationTests(unittest.TestCase):
         toolkit = self.read("design-fabrication/03-laser-cutting/resources/index.qmd")
         self.assertIn("Good Idea, Better Product", toolkit)
         self.assertIn("reverse-engineer-improve.qmd", toolkit)
+
+    def test_free_online_resource_directory_is_broad_and_careful(self) -> None:
+        directory = self.read("design-fabrication/resources/index.qmd")
+        for heading in (
+            "Find ideas and understand products",
+            "Inclusive design, ergonomics, and accessibility",
+            "Graphics, images, icons, fonts, and colour",
+            "Laser cutting and 2D fabrication",
+            "3D CAD and modelling tools",
+            "Downloadable 3D models and scans",
+            "Electronics, circuits, and physical computing",
+            "Websites, UI/UX, and coding",
+            "Textiles, patterns, and soft goods",
+            "Repair, circular design, and responsible fabrication",
+            "CNC and digital machining",
+        ):
+            self.assertIn(heading, directory)
+
+        links = re.findall(r"https://[^)\s]+", directory)
+        domains = {re.sub(r"^www\.", "", link.split("/", 3)[2].lower()) for link in links}
+        self.assertGreaterEqual(len(links), 70)
+        self.assertGreaterEqual(len(domains), 55)
+
+        for domain in (
+            "instructables.com", "ifixit.com", "w3.org", "inkscape.org",
+            "openverse.org", "onshape.com", "freecad.org", "printables.com",
+            "science.nasa.gov", "si.edu", "kicad.org", "microbit.org",
+            "developer.mozilla.org", "freesewing.eu", "inkstitch.org",
+            "preciousplastic.com", "linuxcnc.org",
+        ):
+            self.assertIn(domain, domains)
+
+        for boundary in (
+            "Free access is not the same as permission to copy",
+            "Free account",
+            "Mixed",
+            "creator, page title, URL, access date, and licence",
+            "Teacher review is required",
+            "Machine information is not machine authorization",
+        ):
+            self.assertIn(boundary, directory)
+
+        nav = self.read("_quarto.yml")
+        self.assertIn("Free Online Resource Directory", nav)
+        self.assertIn("design-fabrication/resources/index.qmd", nav)
+
+        for relative in (
+            "design-fabrication/index.qmd",
+            "design-fabrication/01-nice-design-process/index.qmd",
+            "design-fabrication/02-digital-design/index.qmd",
+            "design-fabrication/02-digital-design/07-website-ui-ux.qmd",
+            "design-fabrication/03-laser-cutting/resources/index.qmd",
+            "design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.qmd",
+            "design-fabrication/04-3d-printing/index.qmd",
+            "design-fabrication/05-cnc-digital-machining/index.qmd",
+            "design-fabrication/06-textiles-soft-goods/index.qmd",
+            "design-fabrication/07-other-fabrication/index.qmd",
+        ):
+            self.assertIn("resources/index.qmd", self.read(relative), relative)
 
     def test_public_classroom_kit_has_palettes_and_reference_assemblies(self) -> None:
         kit = SITE / "assets" / "laser-library" / "classroom-kit"
