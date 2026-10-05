@@ -1,50 +1,18 @@
 ---
-title: "TAS Notes"
-description: "Lean, collaborative Exploring Technologies notes organized by unit and lesson."
-sidebar: tas2
-page-layout: full
+title: "General Design & Fabrication has moved"
+description: "This resource has moved to the General Design & Fabrication curriculum."
+search: false
+sidebar: false
 toc: false
 format:
   html:
-    title-block-style: plain
-    body-classes: "bs-learn-index bs-title-eyebrow"
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0; url=../design-fabrication/">
+        <link rel="canonical" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/">
+        <meta name="robots" content="noindex,follow">
 execute:
   enabled: false
 ---
 
-**Work in progress.** These notes are intentionally lean. They record what we have taught so far and are a starting point for student improvements.
-
-Current units:
-
-0. [Expectations](00-expectations/index.qmd)
-1. [N.I.C.E. Design Process](01-nice-design-process/index.qmd)
-
-```{=html}
-<details class="bs-learn-filter-panel" data-bs-learn-filters aria-label="Search TAS notes">
-<summary class="bs-learn-filters-summary">Search and filter TAS lessons</summary>
-<div class="bs-learn-filter-body">
-<div class="bs-learn-search-group">
-<label for="bs-learn-search">Search lessons</label>
-<input id="bs-learn-search" type="search" placeholder="Try needs, inquiry, or requirements" autocomplete="off" data-bs-learn-search>
-</div>
-<details class="bs-learn-filter-disclosure">
-<summary>Unit Filter</summary>
-<div class="bs-learn-filter-options" role="group" aria-label="Filter by unit">
-<button type="button" class="bs-learn-filter" data-bs-filter-track="tas-nice" aria-pressed="false">1. N.I.C.E. Design Process</button>
-</div>
-</details>
-<div class="bs-learn-filter-footer"><p class="bs-learn-result-count" aria-live="polite" data-bs-learn-result-count></p><button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear search and filters</button></div>
-</div>
-</details>
-
-<div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tas-nice" data-bs-total-lessons="2" open>
-<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="01-nice-design-process/index.qmd">1. N.I.C.E. Design Process</a><span data-bs-learn-group-count>2 lessons</span></span></summary>
-<div class="bs-learn-catalogue-section-items">
-<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-difficulties="[]" data-bs-track="tas-nice" data-bs-terms="[]" data-bs-search-primary='["Needs & Necessities","requirements","restrictions","necessities","nice-to-have"]' data-bs-search-body='["Define the need before choosing the solution."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="01-nice-design-process/01-needs-necessities.qmd">1.1 Needs &amp; Necessities</a></div></article>
-<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-difficulties="[]" data-bs-track="tas-nice" data-bs-terms="[]" data-bs-search-primary='["Investigate & Inquire","research","compare","existing solutions","inquiry"]' data-bs-search-body='["Need, look, choose, change."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="01-nice-design-process/02-investigate-inquire.qmd">1.2 Investigate &amp; Inquire</a></div></article>
-</div>
-</details>
-</div>
-<p class="bs-learn-empty" data-bs-learn-empty hidden>No TAS lessons match this search.</p>
-```
+This resource now lives in [General Design & Fabrication](../design-fabrication/index.qmd).

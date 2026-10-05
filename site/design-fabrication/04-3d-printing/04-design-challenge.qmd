@@ -1,0 +1,38 @@
+---
+title: "3D Printing Design Challenge | Prototype a Functional Part"
+description: "Identify a measured need and design, slice, print, test and revise a functional bracket, adapter, repair part, organizer or assembly component."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Design brief
+
+Identify a small genuine need that additive manufacturing can address appropriately. Design a functional part such as a bracket, adapter, spacer, knob, cable guide, tool holder, enclosure feature, assembly connector, or low-risk repair component. Print a focused prototype, test it, and revise the model.
+:::
+
+## Required evidence
+
+- situation, user, need, requirements, and restrictions;
+- measurements and the source of critical dimensions;
+- alternatives and justification for using 3D printing;
+- editable CAD model and exported manufacturing file;
+- orientation and slicer decisions with a toolpath preview;
+- a fit or feature test where uncertainty is high;
+- observations from realistic use;
+- at least one model revision tied to evidence.
+
+## Appropriate scope
+
+Avoid parts whose failure could cause injury, electrical hazard, vehicle failure, uncontrolled motion, or significant property damage unless a qualified local process explicitly supports the application. A classroom prototype is evidence for learning, not an automatic certification for service.
+
+## Evaluate process as well as part
+
+Consider material used, support waste, print time, failed attempts, repairability, and whether another process or an off-the-shelf component would better meet the need.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Adaptable to **TIJ1O**, **TDJ2O**, **TMJ2O**, **TEJ2O**, and senior technology courses where CAD, additive manufacturing, technical problem solving, prototyping, and evaluation authentically fit the project.
+:::
+
+Return to the [General Design & Fabrication pathway](../index.qmd) or compare additive and [laser-cut hybrid fabrication](../03-laser-cutting/05-assemblies-hybrid-fabrication.qmd).

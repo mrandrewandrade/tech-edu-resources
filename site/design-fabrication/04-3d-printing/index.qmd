@@ -1,0 +1,32 @@
+---
+title: "3D Printing for Technology Education | CAD, Slicing, Tolerances & Functional Parts"
+description: "Reusable 3D-printing lessons for Ontario technology education covering CAD, slicing, layer height, walls, infill, orientation, supports, tolerances, fasteners and functional parts."
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
+execute:
+  enabled: false
+---
+
+Additive manufacturing builds geometry layer by layer. That process makes some forms easier and introduces new constraints: orientation changes strength and finish, holes may print undersize, supports leave evidence, thin walls can fail, and nominally mating parts need tested clearance.
+
+## Learning sequence
+
+<ol class="ter-lesson-sequence">
+  <li><a href="01-additive-cad.qmd">Additive Manufacturing &amp; CAD</a> — model purposeful 3D geometry from dimensions and design intent.</li>
+  <li><a href="02-slicing-orientation.qmd">Slicing, Orientation &amp; Supports</a> — connect layer height, walls, infill, toolpaths, strength, time, and surface quality.</li>
+  <li><a href="03-tolerances-functional-parts.qmd">Tolerances &amp; Functional Parts</a> — test holes, clearance, press fits, fasteners, assemblies, brackets, adapters, and repair parts.</li>
+  <li><a href="04-design-challenge.qmd">Functional-Part Design Challenge</a> — solve a measured problem, print a focused prototype, test it, and revise.</li>
+</ol>
+
+## What this unit does not assume
+
+Printer setup, material approval, ventilation, enclosure, maintenance, supervision, and emergency procedures remain local responsibilities. Profiles and tolerances are printer-, material-, and process-dependent; students should measure and test rather than copy a universal number.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Useful for **TIJ1O**, **TDJ2O**, **TMJ2O**, and **TEJ2O**, with strong transfer to senior Technological Design and Manufacturing Technology courses involving CAD/CAM, additive manufacturing, functional parts, prototyping, assemblies, and quality control.
+
+Relevant senior contexts can include **TDJ3M/TDJ4M**, **TDJ3O/TDJ4O**, and appropriate **TMJ3M/TMJ4M**, **TMJ3C/TMJ4C**, or **TMJ3E/TMJ4E** projects. Apply those aliases only where the actual assignment matches the course focus.
+:::
+
+Start with [Additive Manufacturing & CAD](01-additive-cad.qmd).

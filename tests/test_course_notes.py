@@ -18,12 +18,18 @@ class CourseNotesManifestTests(unittest.TestCase):
         routes_by_course: dict[str, list[str]] = {}
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
+        design_routes = routes_by_course["design-fabrication"]
+        self.assertEqual(len(design_routes), 21)
         self.assertEqual(
-            routes_by_course["tas"],
-            [
-                "/commons/tas2/01-nice-design-process/01-needs-necessities.html",
-                "/commons/tas2/01-nice-design-process/02-investigate-inquire.html",
-            ],
+            design_routes[0],
+            "/commons/design-fabrication/01-nice-design-process/01-needs-necessities.html",
+        )
+        self.assertEqual(
+            design_routes[-1],
+            "/commons/design-fabrication/04-3d-printing/04-design-challenge.html",
+        )
+        self.assertTrue(
+            any(route.endswith("/03-laser-cutting/06-tool-holder.html") for route in design_routes)
         )
         self.assertEqual(
             routes_by_course["tej"],
@@ -42,7 +48,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         )
 
     def test_course_boundaries_stop_cleanly(self) -> None:
-        for course_id in ("tas", "tej"):
+        for course_id in ("design-fabrication", "tej"):
             course_lessons = [
                 lesson for lesson in self.lessons if lesson["course_id"] == course_id
             ]
@@ -54,13 +60,15 @@ class CourseNotesManifestTests(unittest.TestCase):
 
     def test_cross_course_link_fails_validation(self) -> None:
         broken = copy.deepcopy(self.manifest)
-        tas_lessons = [
-            lesson for lesson in broken["lessons"] if lesson["course_id"] == "tas"
+        design_lessons = [
+            lesson
+            for lesson in broken["lessons"]
+            if lesson["course_id"] == "design-fabrication"
         ]
         tej_first = next(
             lesson for lesson in broken["lessons"] if lesson["course_id"] == "tej"
         )
-        tas_lessons[-1]["next_route"] = tej_first["route"]
+        design_lessons[-1]["next_route"] = tej_first["route"]
         with self.assertRaisesRegex(course_notes.ValidationError, "broken next route"):
             course_notes.validate_manifest(broken)
 

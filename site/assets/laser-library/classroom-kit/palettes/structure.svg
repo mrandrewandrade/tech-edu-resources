@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="216mm" height="170mm" viewBox="0 0 216 170">
+<title>Structure Palette</title>
+<desc>Reusable supports, feet and braces.</desc>
+<metadata id="technology-commons-classroom-kit">{&quot;description&quot;:&quot;Reusable supports, feet and braces.&quot;,&quot;palette&quot;:&quot;structure&quot;,&quot;review_status&quot;:&quot;unverified&quot;,&quot;title&quot;:&quot;Structure Palette&quot;,&quot;units&quot;:&quot;mm&quot;,&quot;version&quot;:&quot;1.0.0&quot;}</metadata>
+<text x="10" y="12" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="start" data-role="annotation">STRUCTURE</text>
+<text x="10" y="20" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="400" text-anchor="start" data-role="annotation">Parts support a load only after material, grain, joints and assembly have been tested.</text>
+<text x="10" y="27" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">RED = CUT · BLUE = SCORE · dimensions in mm · test before production</text>
+<g id="component-gusset-50" aria-label="Triangular gusset" data-width-mm="50" data-height-mm="50">
+<rect x="8" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Triangular gusset</text>
+<text x="13" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">50 × 50</text>
+<polygon points="30,82 80,82 30,32" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-t-foot" aria-label="T-foot" data-width-mm="80" data-height-mm="35" data-slot-width-mm="8">
+<rect x="112" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">T-foot</text>
+<text x="117" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">80 × 35 · slot 6</text>
+<path d="M 124 79 H 204 V 89 H 168 V 64 H 160 V 89 H 124 Z" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-brace-80" aria-label="Brace rail" data-width-mm="80" data-height-mm="16">
+<rect x="8" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Brace rail</text>
+<text x="13" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">80 × 16</text>
+<rect x="16" y="122" width="80" height="16" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-easel-leg" aria-label="Easel leg" data-width-mm="70" data-height-mm="18" data-pivot-mm="4">
+<rect x="112" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Easel leg</text>
+<text x="117" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">70 × 18 · pivot Ø4</text>
+<rect x="125" y="121" width="70" height="18" rx="4" ry="4" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="187" cy="130" r="2" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+</svg>

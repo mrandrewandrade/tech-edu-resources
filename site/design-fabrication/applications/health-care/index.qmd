@@ -1,0 +1,41 @@
+---
+title: "Health Care Project Ideas"
+subtitle: "TPJ2O and related courses · non-clinical models, communication, accessibility, and workflow"
+description: "Health Care projects for non-clinical teaching models, PPE communication, accessibility prototypes, and workflow simulations."
+toc: true
+---
+
+Health Care applications here are for **education, communication, accessibility exploration, and workflow simulation**. They are not medical devices, diagnostic tools, clinical organizers, or substitutes for infection-prevention and biomedical review.
+
+::: {.ter-curriculum-relevance}
+**Clinical boundary:** Keep unverified fabricated objects out of patient care, sterile fields, medication handling, food service, and clinical decision making. Do not claim that classroom materials can be disinfected or sterilized without authoritative evidence and an approved procedure.
+:::
+
+## Project directions
+
+:::: {.ter-project-grid}
+::: {.ter-project-card}
+### Non-clinical anatomy teaching model
+<p class="ter-course-code">TPJ2O · Display family</p>
+Create a simplified removable-layer model that explains one body system without implying diagnostic accuracy.
+<dl><dt>Process</dt><dd>Authoritative research → abstraction → labelled prototype → peer explanation</dd><dt>Skills</dt><dd>Source evaluation, scale limits, visual hierarchy, accessible language</dd><dt>Difficulty / size</dt><dd>Intermediate · tabletop</dd><dt>Material</dt><dd>Card, plywood, or printed polymer for classroom demonstration only</dd><dt>Structural</dt><dd>Retain removable parts and avoid small loose pieces where inappropriate</dd><dt>Safety</dt><dd>Educational model only; review sensitive content and accessibility</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=health-care&type=project-components">Display components</a></dd><dt>Lesson</dt><dd><a href="../../02-digital-design/04-layout-typography-colour.qmd">Layout, Type & Colour</a></dd><dt>Extension</dt><dd>Add tactile and plain-language features after consulting users</dd></dl>
+:::
+::: {.ter-project-card}
+### PPE sequence communication board
+<p class="ter-course-code">TPJ2O · Gauge / sequence family</p>
+Prototype a board that communicates an instructor-approved practice sequence using replaceable cards and explicit status.
+<dl><dt>Process</dt><dd>Verify source → task analysis → icon system → usability test → correction</dd><dt>Skills</dt><dd>Procedural communication, sequencing, contrast, human factors</dd><dt>Difficulty / size</dt><dd>Introductory–intermediate · wall or tabletop teaching display</dd><dt>Material</dt><dd>Non-clinical display stock with replaceable information cards</dd><dt>Structural</dt><dd>Secure parts; design for update rather than permanent outdated text</dd><dt>Safety</dt><dd>Teaching aid only; current official procedure always governs</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=health-care&type=themed-starters">Safety and PPE starters</a></dd><dt>Lesson</dt><dd><a href="../../01-nice-design-process/03-create-communicate.qmd">Create & Communicate</a></dd><dt>Extension</dt><dd>Test comprehension without relying on colour alone</dd></dl>
+:::
+::: {.ter-project-card}
+### Accessibility task prototype
+<p class="ter-course-code">Related senior courses · Organizer / interface family</p>
+Prototype a non-clinical aid for a simulated daily task, then use feedback to identify where assumptions failed.
+<dl><dt>Process</dt><dd>User-informed need → alternatives → low-fidelity model → consent-based test → iterate</dd><dt>Skills</dt><dd>Universal design, ergonomics, ethics, observation, documentation</dd><dt>Difficulty / size</dt><dd>Intermediate · hand or desktop scale</dd><dt>Material</dt><dd>Soft mock-up materials before rigid fabrication</dd><dt>Structural</dt><dd>No body-supporting or load-bearing function</dd><dt>Safety</dt><dd>Simulation only; not for treatment, transfer, mobility, or unsupervised personal use</dd><dt>Library</dt><dd><a href="../../../teaching-materials/laser-cutting/?technology=health-care&type=core-geometry">Labels and simple geometry</a></dd><dt>Lesson</dt><dd><a href="../../01-nice-design-process/01-needs-necessities.qmd">Needs & Necessities</a></dd><dt>Extension</dt><dd>Compare universal, adjustable, and individualized design strategies</dd></dl>
+:::
+::::
+
+::: {.ter-curriculum-relevance}
+**Curriculum context:** Connect work to human development and needs, professional communication, ethics, privacy, universal design, infection prevention, safe practice, teamwork, and Health Care careers in the current TPJ course.
+:::
+
+[Back to all technology areas](../index.qmd)

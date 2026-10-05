@@ -1,0 +1,129 @@
+---
+title: "General Design & Fabrication"
+subtitle: "Design ideas, communicate them, fabricate them, test them, and improve them."
+description: "Free General Design & Fabrication lessons and project ideas for Ontario Broad-Based Technological Education, organized by fabrication method and technology area."
+page-layout: full
+toc: false
+format:
+  html:
+    title-block-style: plain
+    body-classes: "ter-design-fabrication bs-title-eyebrow"
+execute:
+  enabled: false
+---
+
+::: {.ter-curriculum-hero}
+::: {.ter-curriculum-kicker}
+Ontario Broad-Based Technological Education · Reusable curriculum
+:::
+
+This open pathway helps students move from a real need to a communicated idea, a measured prototype, and an improved fabricated result. It connects design with digital communication and fabrication without treating any one technology area—or any one machine—as the default context.
+
+::: {.ter-transfer-statement}
+The fabrication method is transferable. The application changes with the technology area.
+:::
+
+<ol class="ter-design-cycle" aria-label="Design and fabrication learning cycle">
+  <li>Design</li>
+  <li>Communicate</li>
+  <li>Fabricate</li>
+  <li>Test</li>
+  <li>Iterate</li>
+</ol>
+:::
+
+## Explore by fabrication method
+
+<div class="ter-path-grid">
+  <article class="ter-path-card">
+    <p class="ter-path-number">01 · Start here</p>
+    <h2>N.I.C.E. Design Process</h2>
+    <p>Understand the situation, distinguish necessities from nice-to-haves, investigate existing solutions, generate alternatives, communicate a concept, prototype, evaluate, and begin the next iteration.</p>
+    <p class="ter-path-action"><a href="01-nice-design-process/index.qmd">Learn the design process</a></p>
+  </article>
+  <article class="ter-path-card">
+    <p class="ter-path-number">02 · Communicate</p>
+    <h2>Digital Design &amp; Communication</h2>
+    <p>Build visual literacy through raster and vector graphics, SVG, paths, exact geometry, logos, typography, layout, animation, user flows, and interface prototypes.</p>
+    <p class="ter-path-action"><a href="02-digital-design/index.qmd">Build digital design skills</a></p>
+  </article>
+  <article class="ter-path-card">
+    <p class="ter-path-number">03 · Fabricate in 2D</p>
+    <h2>Laser Cutting &amp; 2D Fabrication</h2>
+    <p>Progress from a first engraved plaque to calibrated fits, assemblies, measured tool holders, removable wall-and-bench modules, and an independent capstone.</p>
+    <p class="ter-path-action"><a href="03-laser-cutting/index.qmd">Follow the laser-cutting curriculum</a></p>
+  </article>
+  <article class="ter-path-card">
+    <p class="ter-path-number">04 · Fabricate in 3D</p>
+    <h2>3D Printing &amp; Additive Manufacturing</h2>
+    <p>Learn CAD, slicing, orientation, supports, tolerances, fasteners, functional parts, assemblies, repair parts, and evidence-based iteration.</p>
+    <p class="ter-path-action"><a href="04-3d-printing/index.qmd">Explore additive manufacturing</a></p>
+  </article>
+  <article class="ter-path-card ter-path-card--planned">
+    <p class="ter-status">Planned · 05</p>
+    <h2>CNC &amp; Digital Machining</h2>
+    <p>A future pathway for CAM, work coordinates, toolpaths, workholding, end mills, pockets, profiles, and safe machine-specific practice.</p>
+    <p class="ter-path-action"><a href="05-cnc-digital-machining/index.qmd">View the planned scope</a></p>
+  </article>
+  <article class="ter-path-card ter-path-card--planned">
+    <p class="ter-status">Planned · 06</p>
+    <h2>Textiles &amp; Soft Goods</h2>
+    <p>A future pathway for patterns, seam allowance, sewing, fasteners, embroidery, heat transfer, wearables, and soft-goods prototyping.</p>
+    <p class="ter-path-action"><a href="06-textiles-soft-goods/index.qmd">View the planned scope</a></p>
+  </article>
+  <article class="ter-path-card ter-path-card--planned">
+    <p class="ter-status">Planned · 07</p>
+    <h2>Other Fabrication Methods</h2>
+    <p>Intentional placeholders for vinyl cutting, plasma cutting, sheet metal, forming, molding, casting, and composites as equipment and instruction become available.</p>
+    <p class="ter-path-action"><a href="07-other-fabrication/index.qmd">View future methods</a></p>
+  </article>
+</div>
+
+## Explore by technology area
+
+Start with the context when you already know the course or sector. Each application page offers substantial project directions, process choices, material and structural considerations, safety boundaries, library starting points, and lesson connections.
+
+<div class="ter-application-grid">
+  <article class="ter-application-card"><p class="ter-course-code">TIJ1O / TAS</p><h3>Exploring Technologies</h3><p>Short builds that compare methods and technology contexts.</p><p><a href="applications/exploring-technologies/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TDJ2O / senior</p><h3>Technological Design</h3><p>Requirements, models, testing, ergonomics, and iteration.</p><p><a href="applications/technological-design/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TMJ2O / senior</p><h3>Manufacturing</h3><p>Setup, workholding, inspection, organization, and production.</p><p><a href="applications/manufacturing/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TCJ2O / senior</p><h3>Construction</h3><p>Layout, joinery models, site modules, and material systems.</p><p><a href="applications/construction/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TTJ2O / senior</p><h3>Transportation</h3><p>Service workflow, gauges, tool control, and diagnostics.</p><p><a href="applications/transportation/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TEJ2O / senior</p><h3>Computer Technology / Engineering</h3><p>Electronics fixtures, enclosures, cables, and interfaces.</p><p><a href="applications/computer-technology/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TGJ2O / senior</p><h3>Communications Technology</h3><p>Displays, production aids, props, and wayfinding.</p><p><a href="applications/communications-technology/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">THJ2O / related</p><h3>Green Industries</h3><p>Plant systems, field aids, habitat communication, and repair.</p><p><a href="applications/green-industries/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TXJ2O / TXJ3E / TXJ4E</p><h3>Hairstyling &amp; Aesthetics</h3><p>Consultation, workstation flow, and dry-tool organization.</p><p><a href="applications/hairstyling-aesthetics/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TFJ2O / related</p><h3>Hospitality &amp; Tourism</h3><p>Service communication, displays, and visitor experience.</p><p><a href="applications/hospitality-tourism/index.qmd">Explore ideas →</a></p></article>
+  <article class="ter-application-card"><p class="ter-course-code">TPJ2O / related</p><h3>Health Care</h3><p>Non-clinical models, accessibility, communication, and simulation.</p><p><a href="applications/health-care/index.qmd">Explore ideas →</a></p></article>
+</div>
+
+[See all project families and planning guidance](applications/index.qmd).
+
+## Reusable Ontario technology resources
+
+These lessons can support Ontario secondary school Broad-Based Technological Education in different ways. Teachers can use the whole sequence or select a design process, communication, measurement, or fabrication lesson that fits a local project, technology context, and available equipment.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** The complete pathway is especially useful for **TIJ1O Exploring Technologies**. Individual units also transfer to **TDJ, TMJ, TGJ, TEJ, TCJ, THJ, TTJ, TXJ, TFJ, and TPJ** contexts where the learning genuinely involves design, measurement, prototyping, communication, or fabrication. The application pages make those connections explicit without claiming one-to-one curriculum expectation mappings.
+:::
+
+## Resource collections
+
+- [Use reusable presentations in General Slides](../teacher-slides/index.qmd).
+- [Find assignments, worksheets, handouts, and fabrication files in General Materials](../teaching-materials/index.qmd).
+- [Browse the laser fabrication asset library](../teaching-materials/laser-cutting/index.qmd) for calibration files, editable geometry, stands, joinery, tool holders, and shop-organization starters.
+- [Open TEJ Notes](../tej3-4/index.qmd) for reusable electronics and computer-engineering concepts.
+
+```{=html}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "General Design & Fabrication",
+  "description": "Open lessons for design process, digital design, laser cutting, 3D printing, prototyping and digital fabrication in Ontario Technological Education.",
+  "learningResourceType": "Curriculum",
+  "educationalUse": ["instruction", "project-based learning", "teacher planning"],
+  "inLanguage": "en-CA"
+}
+</script>
+```

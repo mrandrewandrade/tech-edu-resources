@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" viewBox="0 0 160 110">
+<title>Circle centering template</title>
+<desc>Crosshairs, diagonals and concentric scored circles locate the centre of round work up to 80 mm diameter.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;jigs-gauges&quot;,&quot;description&quot;:&quot;Crosshairs, diagonals and concentric scored circles locate the centre of round work up to 80 mm diameter.&quot;,&quot;dimensional_tests&quot;:{&quot;centre_hole_diameter_mm&quot;:4,&quot;largest_reference_diameter_mm&quot;:80},&quot;dimensions&quot;:{&quot;height&quot;:110,&quot;width&quot;:160},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Veccy&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/jigs-gauges/tc-jig-centering-template.svg&quot;,&quot;svg&quot;:&quot;generated/svg/jigs-gauges/tc-jig-centering-template.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-jig-centering-template&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Use the scored references to align the work, then mark through the 4 mm centre hole.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;SCORE&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;centre_hole_mm&quot;:4,&quot;reference_diameters_mm&quot;:[20,40,60,80]},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;centering&quot;,&quot;tags&quot;:[&quot;centering&quot;,&quot;gauge&quot;,&quot;jig&quot;,&quot;template&quot;],&quot;title&quot;:&quot;Circle centering template&quot;,&quot;tool_family&quot;:&quot;centering&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="160" height="110" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="0.5" y="0.5" width="159" height="109" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<circle cx="80" cy="60" r="2" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+</g>
+<g id="score" aria-label="SCORE">
+<line x1="12" y1="60" x2="148" y2="60" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="80" y1="18" x2="80" y2="102" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="35" y1="15" x2="125" y2="105" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="35" y1="105" x2="125" y2="15" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<circle cx="80" cy="60" r="10" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="true"/>
+<circle cx="80" cy="60" r="20" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="true"/>
+<circle cx="80" cy="60" r="30" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="true"/>
+<circle cx="80" cy="60" r="40" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="true"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="80" y="10" font-family="sans-serif" font-size="3.5" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">CIRCLE CENTRE FINDER</text>
+<text x="91.5" y="58.5" font-family="sans-serif" font-size="2.1" text-anchor="start" fill="#000000" stroke="none" data-operation="ENGRAVE">Ø20</text>
+<text x="101.5" y="58.5" font-family="sans-serif" font-size="2.1" text-anchor="start" fill="#000000" stroke="none" data-operation="ENGRAVE">Ø40</text>
+<text x="111.5" y="58.5" font-family="sans-serif" font-size="2.1" text-anchor="start" fill="#000000" stroke="none" data-operation="ENGRAVE">Ø60</text>
+<text x="121.5" y="58.5" font-family="sans-serif" font-size="2.1" text-anchor="start" fill="#000000" stroke="none" data-operation="ENGRAVE">Ø80</text>
+</g>
+</svg>

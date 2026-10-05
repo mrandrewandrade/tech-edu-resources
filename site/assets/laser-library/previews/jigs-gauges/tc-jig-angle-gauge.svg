@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="355.5556" viewBox="0 0 180 100">
+<title>Angle reference 15°–90°</title>
+<desc>A common-vertex angle fan with a scored baseline and six exact reference rays.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;jigs-gauges&quot;,&quot;description&quot;:&quot;A common-vertex angle fan with a scored baseline and six exact reference rays.&quot;,&quot;dimensional_tests&quot;:{&quot;largest_angle_deg&quot;:90},&quot;dimensions&quot;:{&quot;height&quot;:100,&quot;width&quot;:180},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/jigs-gauges/tc-jig-angle-gauge.svg&quot;,&quot;svg&quot;:&quot;generated/svg/jigs-gauges/tc-jig-angle-gauge.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-jig-angle-gauge&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Align one workpiece edge to the horizontal datum and compare the second edge to a scored ray.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;SCORE&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;angles_deg&quot;:[15,30,45,60,75,90],&quot;ray_length_mm&quot;:68},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;angle-gauges&quot;,&quot;tags&quot;:[&quot;angle&quot;,&quot;angle-gauges&quot;,&quot;gauge&quot;,&quot;jig&quot;],&quot;title&quot;:&quot;Angle reference 15\u00b0\u201390\u00b0&quot;,&quot;tool_family&quot;:&quot;angle-gauges&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="180" height="100" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="0.5" y="0.5" width="179" height="99" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+</g>
+<g id="score" aria-label="SCORE">
+<line x1="15" y1="88" x2="165" y2="88" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="90" y1="88" x2="155.683" y2="70.4003" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="90" y1="88" x2="148.8897" y2="54" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="90" y1="88" x2="138.0833" y2="39.9167" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="90" y1="88" x2="124" y2="29.1103" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="90" y1="88" x2="107.5997" y2="22.317" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+<line x1="90" y1="88" x2="90" y2="20" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="90" y="10" font-family="sans-serif" font-size="3.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">ANGLE REFERENCE — ALIGN TO BASELINE</text>
+<text x="163.4104" y="68.3298" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">15°</text>
+<text x="155.8179" y="50" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">30°</text>
+<text x="143.7401" y="34.2599" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">45°</text>
+<text x="128" y="22.1821" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">60°</text>
+<text x="109.6702" y="14.5896" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">75°</text>
+<text x="90" y="12" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">90°</text>
+</g>
+</svg>

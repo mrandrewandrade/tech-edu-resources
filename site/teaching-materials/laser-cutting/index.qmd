@@ -1,7 +1,7 @@
 ---
-title: "Laser Cutting"
-subtitle: "Raw vector files for classroom fabrication"
-description: "Download and preview reusable SVG files for laser-cutting projects."
+title: "Laser Fabrication Library | SVG, Calibration & Tool Holders"
+subtitle: "Measure first. Test fit. Then make it yours."
+description: "Free SVG laser-cutting resources for Ontario technology education: calibration files, exact geometry, stands, joinery, jigs, tool holders and shop organization."
 format:
   html:
     page-layout: full
@@ -16,42 +16,147 @@ execute:
 ---
 
 ```{=html}
-<div class="bs-laser-shell">
+<div class="bs-laser-shell" data-laser-library data-catalog="../../assets/laser-library/catalog.json">
   <p class="bs-laser-back"><a href="../index.qmd">← General materials</a></p>
 
   <section class="bs-laser-hero">
     <div>
-      <p class="bs-laser-kicker">Digital fabrication · Raw SVG files</p>
-      <p class="bs-laser-lead">Preview each design, open the raw vector in your browser, or download it for editing and fabrication. Check dimensions, material thickness, joints, and kerf compensation before cutting.</p>
+      <p class="bs-laser-kicker">Technology Commons · Open fabrication library</p>
+      <p class="bs-laser-lead">Start with calibration, download simple editable geometry, and build toward measured assemblies and original parametric designs. The catalogue contains <strong data-laser-total>232 purpose-built generated assets</strong>; none are claimed as physically verified.</p>
+      <p><a href="../../design-fabrication/03-laser-cutting/resources/index.qmd"><strong>First projects classroom toolkit:</strong> planning sheet, name-tag files, six Inkscape palettes, individual components, pill-bottle reference assemblies and teaching slides.</a></p>
+      <div class="bs-laser-actions">
+        <a class="bs-laser-button bs-laser-button-primary" href="../../design-fabrication/03-laser-cutting/index.qmd">Teach the laser-cutting curriculum</a>
+        <a class="bs-laser-button bs-laser-button-primary" href="https://raw.githubusercontent.com/mrandrewandrade/assets/master/laser/generated/downloads/technology-commons-laser-library.zip">Download complete SVG bundle</a>
+        <a class="bs-laser-button" href="https://github.com/mrandrewandrade/assets/tree/master/laser">Generators, metadata and tests</a>
+        <a class="bs-laser-button" href="#library">Browse assets</a>
+      </div>
     </div>
   </section>
 
-  <section class="bs-laser-section" aria-labelledby="laser-files-title">
-    <div class="bs-laser-section-heading">
-      <p class="bs-laser-kicker">Available files</p>
-      <h2 id="laser-files-title">Easel templates</h2>
-    </div>
-
-    <article class="bs-laser-resource-card">
-      <a class="bs-laser-preview" href="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg" aria-label="Open the raw laser-cut easel SVG">
-        <img src="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg" alt="Preview of the laser-cut easel SVG template">
-      </a>
-      <div class="bs-laser-resource-copy">
-        <p class="bs-laser-kicker">Easel · Quarter-inch plywood</p>
-        <h3>Freestanding Easel Template</h3>
-        <p>A raw SVG containing the vector parts for a small freestanding easel. Use it as a starting file and confirm scale, slots, material thickness, and kerf for your machine and stock.</p>
-        <dl class="bs-laser-file-details">
-          <div><dt>Format</dt><dd>SVG</dd></div>
-          <div><dt>Canvas</dt><dd>1000 × 907</dd></div>
-          <div><dt>Suggested stock</dt><dd>Quarter-inch plywood</dd></div>
-        </dl>
-        <div class="bs-laser-actions">
-          <a class="bs-laser-button bs-laser-button-primary" href="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg">Open raw SVG</a>
-          <a class="bs-laser-button" href="../../assets/laser-cutting/free-laser-cut-easel-template-quarter-inch-plywood-svg.svg" download>Download SVG</a>
-        </div>
-        <p class="bs-laser-attribution">Source: <a href="https://www.freepatternsarea.com/">Free Patterns Area</a>. The SVG metadata identifies the file as <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
-      </div>
+  <section class="bs-laser-guides" aria-label="Curriculum pathways">
+    <article>
+      <p class="bs-laser-kicker">Learn before downloading</p>
+      <h2>From first cut to calibrated assembly</h2>
+      <p>Use the <a href="../../design-fabrication/03-laser-cutting/index.qmd">Laser Cutting &amp; 2D Fabrication curriculum</a> for the complete project sequence: name-and-logo plaque, stands, measured holders, material fit, assemblies, tool organization, and capstone work.</p>
+    </article>
+    <article>
+      <p class="bs-laser-kicker">Apply the files</p>
+      <h2>Choose a learning goal</h2>
+      <p><a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.qmd">Learn to design a stand</a>, <a href="../../design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd">learn to make parts fit</a>, or <a href="../../design-fabrication/03-laser-cutting/06-tool-holder.qmd">learn to design a tool holder</a>. Library geometry is a starting point; students still measure, test, and revise.</p>
     </article>
   </section>
+
+  <section class="bs-laser-workflow" aria-labelledby="workflow-title">
+    <div>
+      <p class="bs-laser-kicker">Material standard</p>
+      <h2 id="workflow-title">Nominal 1/4 inch is not a measurement</h2>
+      <p>Baltic birch sold as 1/4 inch may not be 6.35 mm. Sheet thickness, glue layers, focus and machine settings change fit. Use calipers and record the actual stock.</p>
+    </div>
+    <ol>
+      <li><strong>Measure</strong><span>Check the sheet in several places.</span></li>
+      <li><strong>Test</strong><span>Cut dimensions, kerf and fit gauges.</span></li>
+      <li><strong>Select fit</strong><span>Choose loose, slip, snug or press from evidence.</span></li>
+      <li><strong>Modify</strong><span>Update thickness, clearance and geometry.</span></li>
+      <li><strong>Cut + evaluate</strong><span>Prototype, measure and iterate.</span></li>
+    </ol>
+  </section>
+
+  <nav class="bs-laser-category-links" aria-label="Laser library category views">
+    <button type="button" data-laser-preset="type" data-laser-value="calibration">Calibration first</button>
+    <button type="button" data-laser-preset="type" data-laser-value="core-geometry">Core geometry</button>
+    <button type="button" data-laser-preset="type" data-laser-value="french-cleat">French cleats</button>
+    <button type="button" data-laser-preset="type" data-laser-value="tool-holders">Tool holders</button>
+    <button type="button" data-laser-preset="type" data-laser-value="jigs-gauges">Jigs + gauges</button>
+    <button type="button" data-laser-preset="type" data-laser-value="project-components">Project starters</button>
+    <button type="button" data-laser-preset="type" data-laser-value="themed-starters">Themed starters</button>
+    <button type="button" data-laser-preset="theme" data-laser-value="animals">Animals</button>
+  </nav>
+
+  <section class="bs-laser-safety" aria-labelledby="cleat-safety-title">
+    <div>
+      <p class="bs-laser-kicker">Signature collection</p>
+      <h2 id="cleat-safety-title">Removable French-cleat organization</h2>
+      <p>Standard module faces, backers, standoffs, retainers, jigs, shelves and generic holders create obvious homes for tools and let complete sets travel to a bench. Faces are configuration—not a load rating. Thin laser-cut plywood is not a substitute for a structural rail, suitable backing or approved fasteners.</p>
+    </div>
+    <button type="button" class="bs-laser-button" data-laser-preset="type" data-laser-value="french-cleat">Explore the cleat system</button>
+  </section>
+
+  <section id="library" class="bs-laser-library-section" aria-labelledby="library-title">
+    <div class="bs-laser-section-heading">
+      <p class="bs-laser-kicker">Manifest-driven catalogue</p>
+      <h2 id="library-title">Find a fabrication starting point</h2>
+      <p>Cards are generated in the browser from the canonical structured manifest. Filters stay in the URL so a useful view can be bookmarked or shared.</p>
+    </div>
+
+    <div class="bs-laser-controls" data-laser-controls>
+      <div class="bs-laser-search-row">
+        <label class="bs-laser-search-label" for="laser-search">
+          <span>Search titles, tags, tools and geometry</span>
+          <input id="laser-search" type="search" placeholder="Try animals, kerf, socket, 50 mm…" autocomplete="off" data-laser-search>
+        </label>
+        <details class="bs-laser-filter-details" data-laser-filter-details>
+          <summary>Filters <span class="bs-laser-filter-badge" data-laser-filter-count>0</span></summary>
+          <div class="bs-laser-filter-panel">
+            <p>Filters narrow the current search. Preset buttons above always start a fresh view.</p>
+            <div class="bs-laser-filter-grid">
+              <label>Type<select data-laser-filter="type"><option value="">All types</option></select></label>
+              <label>Shop<select data-laser-filter="shop"><option value="">All shops</option></select></label>
+              <label>Technology Area<select data-laser-filter="technology"><option value="">All technology areas</option></select></label>
+              <label>Function<select data-laser-filter="function"><option value="">All functions</option></select></label>
+              <label>Geometry<select data-laser-filter="geometry"><option value="">All geometry</option></select></label>
+              <label>Material<select data-laser-filter="material"><option value="">All materials</option></select></label>
+              <label>Operation<select data-laser-filter="operation"><option value="">All operations</option></select></label>
+              <label>Editor<select data-laser-filter="editor"><option value="">All editors</option></select></label>
+              <label>Skill level<select data-laser-filter="level"><option value="">All levels</option></select></label>
+              <label>Theme<select data-laser-filter="theme"><option value="">All themes</option></select></label>
+            </div>
+          </div>
+        </details>
+      </div>
+      <div class="bs-laser-filter-footer">
+        <p data-laser-count role="status" aria-live="polite">Loading catalogue…</p>
+        <button type="button" data-laser-clear hidden>Clear search and filters</button>
+      </div>
+    </div>
+
+    <div class="bs-laser-card-grid" data-laser-grid></div>
+    <p class="bs-laser-empty" data-laser-empty hidden>No assets match this combination. Try clearing a filter.</p>
+    <button type="button" class="bs-laser-more" data-laser-more hidden>Show 48 more</button>
+    <noscript><p class="bs-laser-empty">JavaScript is required for the searchable catalogue. The complete SVG bundle remains available above.</p></noscript>
+  </section>
+
+  <section class="bs-laser-guides" aria-label="Editor and fabrication guidance">
+    <article>
+      <p class="bs-laser-kicker">Primary editor</p>
+      <h2>Inkscape checklist</h2>
+      <ol>
+        <li>Open the SVG at 100%; do not scale on import.</li>
+        <li>Confirm document and display units are millimetres.</li>
+        <li>Measure a known feature with the Measure tool.</li>
+        <li>Inspect CUT (red), SCORE (blue) and ENGRAVE (black) geometry.</li>
+        <li>Remove overlapping lines after combining or duplicating shapes.</li>
+        <li>Save an editable copy and run a small physical test.</li>
+      </ol>
+      <p>Text is not used for structural geometry. If engraved typography must look exact on another computer, convert a copy to paths after editing.</p>
+    </article>
+    <article id="veccy-guidance">
+      <p class="bs-laser-kicker">Parametric browser option</p>
+      <h2>Veccy: change variables, not copies</h2>
+      <p>Use the curated recipes for circles, rings, slots, fit gauges, module faces, racks, frames, stands and joinery. Define meaningful variables such as <code>material_thickness</code>, <code>clearance</code>, <code>count</code>, <code>diameter</code>, <code>spacing</code>, <code>width</code> and <code>height</code>, then reference them in feature expressions.</p>
+      <div class="bs-laser-actions">
+        <a class="bs-laser-button bs-laser-button-primary" href="https://veccy.app/">Open Veccy</a>
+        <a class="bs-laser-button" href="../../assets/laser-library/veccy-recipes.json">View 20 recipes</a>
+      </div>
+      <p>Export SVG, open it in Inkscape, confirm millimetres and physical size, then test-cut. Vectorpea is a compatibility target, not the primary workflow.</p>
+    </article>
+  </section>
+
+  <section class="bs-laser-test-batch" aria-labelledby="test-batch-title">
+    <p class="bs-laser-kicker">Physical verification</p>
+    <h2 id="test-batch-title">First shop test batch</h2>
+    <p>Cut the dimension sheet, circle/hole tests, fit gauge, one French-cleat sample, one removable holder, one stand and one joint. Record stock measurements, machine settings, actual dimensions, selected fit, assembly result and changes. Only then advance an asset from <code>unverified</code> to <code>dimension-tested</code>, <code>fit-tested</code> or <code>shop-tested</code>.</p>
+  </section>
 </div>
+
+<script src="../../assets/laser-library.js?v=20261004-technology-areas" defer></script>
 ```

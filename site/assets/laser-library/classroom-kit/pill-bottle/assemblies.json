@@ -1,0 +1,306 @@
+{
+  "designs": {
+    "captured-bottle-rack": {
+      "assembly_notes": "the lower plate locates each bottle body; the removable upper plate sits below the cap shoulder and is retained by two hand knobs",
+      "bom": [
+        {
+          "part": "lower locating plate",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "part": "base",
+          "qty": 1,
+          "size_mm": [
+            190,
+            55
+          ]
+        },
+        {
+          "part": "upper keeper plate",
+          "qty": 1,
+          "size_mm": [
+            190,
+            55
+          ]
+        },
+        {
+          "part": "back",
+          "qty": 1,
+          "size_mm": [
+            190,
+            95
+          ]
+        },
+        {
+          "part": "standoff",
+          "qty": 2,
+          "size_mm": [
+            70,
+            22
+          ]
+        },
+        {
+          "part": "M6 hand knob, bolt and washer set",
+          "qty": 2,
+          "size": "site-specific"
+        }
+      ],
+      "files": {
+        "exploded": "pill-bottle/captured-bottle-rack/exploded.svg",
+        "parts": "pill-bottle/captured-bottle-rack/parts.svg"
+      },
+      "parameters": {
+        "assembly": "the lower plate locates each bottle body; the removable upper plate sits below the cap shoulder and is retained by two hand knobs",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_capture_per_side_mm": 2.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "interface_hole_mm": 6.4,
+        "keeper_opening_diameter_mm": 38.0,
+        "keeper_type": "hand-knob-retained removable upper plate",
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench or approved wall backer",
+        "opening_diameter_mm": 36.0,
+        "physical_test_record_fields": [
+          "bottle body diameter",
+          "cap diameter",
+          "material thickness",
+          "opening fit",
+          "keeper height",
+          "knob clearance",
+          "load test",
+          "revision"
+        ],
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "The keeper is a serviceable anti-lift feature, not a child-resistant lock. Physically test access, load path and wall mounting before use.",
+        "service_sequence": [
+          "support bottles",
+          "remove two hand knobs",
+          "lift keeper plate",
+          "remove or replace bottles",
+          "refit plate and hand knobs",
+          "record fit and revision"
+        ]
+      },
+      "physical_test_status": "unverified"
+    },
+    "dowel-supported-rack": {
+      "assembly_notes": "dowels align and separate two plates",
+      "bom": [
+        {
+          "part": "top plate",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "part": "bottom plate",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "length_mm": 85,
+          "part": "6 mm dowel",
+          "qty": 4
+        }
+      ],
+      "files": {
+        "exploded": "pill-bottle/dowel-supported-rack/exploded.svg",
+        "parts": "pill-bottle/dowel-supported-rack/parts.svg"
+      },
+      "parameters": {
+        "assembly": "dowels align and separate two plates",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "dowel_diameter_mm": 6.0,
+        "dowel_hole_start_mm": 6.4,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench/free-standing",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0
+      },
+      "physical_test_status": "unverified"
+    },
+    "reinforced-wall-rack": {
+      "assembly_notes": "two shelf tabs locate in the back; gussets reinforce the shelf-to-back joint",
+      "bom": [
+        {
+          "part": "shelf",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "part": "back",
+          "qty": 1,
+          "size_mm": [
+            190,
+            90
+          ]
+        },
+        {
+          "part": "gusset",
+          "qty": 2,
+          "size_mm": [
+            60,
+            60
+          ]
+        },
+        {
+          "part": "approved wall fastener",
+          "qty": 3,
+          "size": "site-specific"
+        }
+      ],
+      "files": {
+        "exploded": "pill-bottle/reinforced-wall-rack/exploded.svg",
+        "parts": "pill-bottle/reinforced-wall-rack/parts.svg"
+      },
+      "parameters": {
+        "assembly": "two shelf tabs locate in the back; gussets reinforce the shelf-to-back joint",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "wall",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "Instructor approves wall, anchors, fasteners and load test.",
+        "shelf_tab_width_mm": 30,
+        "slot_start_mm": 6.2
+      },
+      "physical_test_status": "unverified"
+    },
+    "removable-wall-bench-rack": {
+      "assembly_notes": "two removable M6 hand knobs register the same module to either bench supports or an approved wall adapter",
+      "bom": [
+        {
+          "part": "shelf",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "part": "module back",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "part": "bench foot",
+          "qty": 2,
+          "size_mm": [
+            70,
+            28
+          ]
+        },
+        {
+          "part": "wall adapter",
+          "qty": 1,
+          "size_mm": [
+            170,
+            45
+          ]
+        },
+        {
+          "part": "M6 hand knob, bolt and washer set",
+          "qty": 2,
+          "size": "site-specific"
+        }
+      ],
+      "files": {
+        "exploded": "pill-bottle/removable-wall-bench-rack/exploded.svg",
+        "parts": "pill-bottle/removable-wall-bench-rack/parts.svg"
+      },
+      "parameters": {
+        "assembly": "two removable M6 hand knobs register the same module to either bench supports or an approved wall adapter",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "interface_hole_mm": 6.4,
+        "interface_spacing_mm": 130,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "removable wall/bench",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "Adapter interface and wall installation require instructor approval and load testing."
+      },
+      "physical_test_status": "unverified"
+    },
+    "simple-shelf-rack": {
+      "assembly_notes": "side tabs locate in matching shelf and base slots; dry-fit before adhesive or approved fasteners",
+      "bom": [
+        {
+          "part": "top shelf",
+          "qty": 1,
+          "size_mm": [
+            190,
+            70
+          ]
+        },
+        {
+          "part": "base",
+          "qty": 1,
+          "size_mm": [
+            190,
+            55
+          ]
+        },
+        {
+          "part": "side",
+          "qty": 2,
+          "size_mm": [
+            55,
+            90
+          ]
+        }
+      ],
+      "files": {
+        "exploded": "pill-bottle/simple-shelf-rack/exploded.svg",
+        "parts": "pill-bottle/simple-shelf-rack/parts.svg"
+      },
+      "parameters": {
+        "assembly": "side tabs locate in matching shelf and base slots; dry-fit before adhesive or approved fasteners",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench/free-standing",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "slot_start_mm": 6.2,
+        "tab_width_mm": 20
+      },
+      "physical_test_status": "unverified"
+    }
+  },
+  "project": "pill-bottle-organizer",
+  "schema_version": 1,
+  "units": "mm"
+}

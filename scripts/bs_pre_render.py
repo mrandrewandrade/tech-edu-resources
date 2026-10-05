@@ -38,6 +38,14 @@ def main() -> int:
             "generate",
         ]
     )
+    print("Validating the public laser fabrication catalogue.")
+    run(
+        [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "laser_library.py"),
+            "validate",
+        ]
+    )
     return 0
 
 if __name__ == "__main__":

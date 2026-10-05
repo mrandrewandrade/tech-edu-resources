@@ -1,0 +1,61 @@
+---
+title: "Paper to Inkscape | Student Workflow"
+description: "A concise student workflow for translating measured front, top and side plans into clean, exact, cut-ready Inkscape files."
+toc: true
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+execute: {enabled: false}
+---
+
+## The rule
+
+**Build the design from measurements and named parts. Do not redraw every primitive by eye.** Keep the editable master; make a separate fabrication copy only when the local machine workflow requires converted text or flattened artwork.
+
+## Before the screen
+
+1. Complete the [fabrication planning worksheet](fabrication-planning-worksheet.qmd).
+2. Draw front, top and side views. Mark the datum—the edge or centre from which important dimensions are located.
+3. Measure the real object and sheet. Record ranges when objects vary.
+4. Decide whether each circle means a **hole** or a **circle part**.
+5. Identify one critical feature to test before the complete cut.
+
+## Set up Inkscape
+
+1. Open **File → Document Properties**.
+2. Set display units and document units to **mm**.
+3. Set the page to the intended physical output size.
+4. Save immediately as `project-name_v01_master.svg`.
+5. Turn on snapping only when it supports the intended datum and alignment; do not let snapping replace entered dimensions.
+
+## Bring in building blocks
+
+If the project begins as a plate with a row, grid, radial or perimeter hole pattern, use the [Fabrication Plate Builder](../../tools/plate-builder/index.qmd) first. Its output is intentionally plain: `CUT_OUTER`, `CUT_HOLES` and an optional `GUIDES` group. Inkscape remains the place to add labels, slots, custom profiles and manufacturing intent.
+
+1. Open the relevant [component palette](index.qmd#inkscape-component-palettes).
+2. Select the named component group and copy it into the master file.
+3. Use the toolbar or **Object → Transform** to enter exact width, height and position.
+4. Rename the group by purpose: `top-shelf`, `bottle-hole-01`, `left-gusset`.
+5. Duplicate repeated parts from one checked original. Use **Object → Align and Distribute** for centres and spacing.
+
+Avoid advanced node editing in the first sequence. If a shape requires many uncontrolled node moves, return to simpler parts or revise the paper plan.
+
+## Separate manufacturing intent
+
+Use clearly named groups or layers for **CUT**, **SCORE** and **ENGRAVE**. The library uses red, blue and black as a communication convention, but the machine operator confirms the local mapping. A colour alone is never approval to cut.
+
+For the first name-tag engraving, set the page to the measured pre-cut blank, keep artwork inside the safe margin, hide/delete guides, and export the page as PNG at the instructor-set resolution. Reopen the PNG and confirm pixel dimensions, crop and orientation before it enters the laser workflow.
+
+## Preflight
+
+- Page width, page height and intended object size are correct in mm.
+- Every critical dimension matches the paper plan.
+- One controlled original was used for duplicates.
+- No duplicate paths, stray objects, hidden output or critical external fonts remain.
+- The machine preview contains the expected count of cuts and engraves.
+- A fit coupon was made for slots, holes, hardware or measured objects.
+- The filename shows project and version; obsolete versions are not sent accidentally.
+
+## Evidence to submit
+
+Submit the paper plan, editable SVG master, fabrication/export file, photograph or measurement from the test, and one sentence naming what changed in the next version.
+
+Use [Material Fit + Calibration](../04-material-fit-calibration.qmd) whenever a dimension must mate with real stock, hardware or an object.

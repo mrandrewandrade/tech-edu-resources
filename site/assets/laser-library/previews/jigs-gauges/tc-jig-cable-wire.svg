@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="274.2857" viewBox="0 0 210 90">
+<title>Cable and wire outside-diameter gauge</title>
+<desc>Nine open-edge slots compare cable or insulated-wire outside diameter from 0.5 to 6 mm.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;jigs-gauges&quot;,&quot;description&quot;:&quot;Nine open-edge slots compare cable or insulated-wire outside diameter from 0.5 to 6 mm.&quot;,&quot;dimensional_tests&quot;:{&quot;largest_slot_width_mm&quot;:6,&quot;smallest_slot_width_mm&quot;:0.5},&quot;dimensions&quot;:{&quot;height&quot;:90,&quot;width&quot;:210},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/jigs-gauges/tc-jig-cable-wire.svg&quot;,&quot;svg&quot;:&quot;generated/svg/jigs-gauges/tc-jig-cable-wire.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-jig-cable-wire&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Do not force conductors into a slot. Deburr the cut edges and verify slot width after kerf compensation.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;measurement&quot;:&quot;outside-diameter&quot;,&quot;slot_widths_mm&quot;:[0.5,0.8,1.0,1.5,2.0,3.0,4.0,5.0,6.0]},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;cable-wire&quot;,&quot;tags&quot;:[&quot;cable&quot;,&quot;cable-wire&quot;,&quot;gauge&quot;,&quot;jig&quot;,&quot;wire&quot;],&quot;title&quot;:&quot;Cable and wire outside-diameter gauge&quot;,&quot;tool_family&quot;:&quot;cable-wire&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="210" height="90" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="0.5" y="0.5" width="209" height="89" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<path d="M 15.75 89 V 42 H 16.25 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 37.6 89 V 42 H 38.4 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 59.5 89 V 42 H 60.5 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 81.25 89 V 42 H 82.75 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 103 89 V 42 H 105 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 124.5 89 V 42 H 127.5 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 146 89 V 42 H 150 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 167.5 89 V 42 H 172.5 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+<path d="M 189 89 V 42 H 195 V 89" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="false"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="105" y="10" font-family="sans-serif" font-size="3.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">CABLE / WIRE OUTSIDE DIAMETER</text>
+<text x="16" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">0.5</text>
+<text x="38" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">0.8</text>
+<text x="60" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">1</text>
+<text x="82" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">1.5</text>
+<text x="104" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">2</text>
+<text x="126" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">3</text>
+<text x="148" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">4</text>
+<text x="170" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">5</text>
+<text x="192" y="33" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">6</text>
+<text x="105" y="78" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">OPEN SLOTS · VALUES IN mm</text>
+</g>
+</svg>

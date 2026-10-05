@@ -25,6 +25,8 @@ project:
     - assets/tej-curriculum.js
     - assets/tej-curriculum.css
     - "assets/laser-cutting/**"
+    - "assets/laser-library/**"
+    - assets/laser-library.js
     - assets/bs-glossary-lookup.json
     - "assets/lore/**"
 
@@ -47,25 +49,25 @@ website:
     title: "Tech Edu"
     collapse-below: xl
     left:
-      - text: TAS
-        menu:
-          - href: slides/tas.qmd
-            text: Slides
-          - href: tas2/index.qmd
-            text: Notes
-      - text: TEJ
-        menu:
-          - href: slides/tej.qmd
-            text: Slides
-          - href: tej3-4/index.qmd
-            text: Notes
-    right:
       - text: Educator Resources
         menu:
           - href: teacher-slides/index.qmd
-            text: Slides
+            text: General Slides
           - href: teaching-materials/index.qmd
-            text: Materials
+            text: General Materials
+          - href: design-fabrication/index.qmd
+            text: General Design & Fabrication
+          - href: tej3-4/index.qmd
+            text: TEJ Notes
+      - text: Classes
+        menu:
+          - href: slides/tas.qmd
+            text: TAS Slides
+          - href: slides/tej.qmd
+            text: TEJ Slides
+          - href: slides/ttj.qmd
+            text: TTJ / TTS Slides
+    right:
       - href: glossary/index.qmd
         text: Glossary
       - href: lore/index.qmd
@@ -73,23 +75,112 @@ website:
       - href: about.qmd
         text: About
   sidebar:
-    - id: tas2
-      title: "TAS Notes"
+    - id: design-fabrication
+      title: "General Design & Fabrication"
       style: docked
       collapse-level: 2
       contents:
-        - text: "Course Home"
-          href: tas2/index.qmd
-        - section: "0. Expectations"
-          href: tas2/00-expectations/index.qmd
-          contents: []
-        - section: "1. N.I.C.E. Design Process"
-          href: tas2/01-nice-design-process/index.qmd
+        - text: "Curriculum Home"
+          href: design-fabrication/index.qmd
+        - section: "Ideas by Technology Area"
+          href: design-fabrication/applications/index.qmd
           contents:
-            - text: "1.1 Needs & Necessities"
-              href: tas2/01-nice-design-process/01-needs-necessities.qmd
-            - text: "1.2 Investigate & Inquire"
-              href: tas2/01-nice-design-process/02-investigate-inquire.qmd
+            - href: design-fabrication/applications/exploring-technologies/index.qmd
+              text: "Exploring Technologies · TIJ1O"
+            - href: design-fabrication/applications/technological-design/index.qmd
+              text: "Technological Design · TDJ"
+            - href: design-fabrication/applications/manufacturing/index.qmd
+              text: "Manufacturing · TMJ"
+            - href: design-fabrication/applications/construction/index.qmd
+              text: "Construction · TCJ"
+            - href: design-fabrication/applications/transportation/index.qmd
+              text: "Transportation · TTJ"
+            - href: design-fabrication/applications/computer-technology/index.qmd
+              text: "Computer Technology · TEJ"
+            - href: design-fabrication/applications/communications-technology/index.qmd
+              text: "Communications Technology · TGJ"
+            - href: design-fabrication/applications/green-industries/index.qmd
+              text: "Green Industries · THJ"
+            - href: design-fabrication/applications/hairstyling-aesthetics/index.qmd
+              text: "Hairstyling & Aesthetics · TXJ"
+            - href: design-fabrication/applications/hospitality-tourism/index.qmd
+              text: "Hospitality & Tourism · TFJ"
+            - href: design-fabrication/applications/health-care/index.qmd
+              text: "Health Care · TPJ"
+        - section: "1. N.I.C.E. Design Process"
+          href: design-fabrication/01-nice-design-process/index.qmd
+          contents:
+            - href: design-fabrication/01-nice-design-process/01-needs-necessities.qmd
+              text: "1.1 Needs & Necessities"
+            - href: design-fabrication/01-nice-design-process/02-investigate-inquire.qmd
+              text: "1.2 Investigate & Inquire"
+            - href: design-fabrication/01-nice-design-process/03-create-communicate.qmd
+              text: "1.3 Create & Communicate"
+            - href: design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.qmd
+              text: "1.4 Prototype, Evaluate & Iterate"
+        - section: "2. Digital Design & Communication"
+          href: design-fabrication/02-digital-design/index.qmd
+          contents:
+            - href: design-fabrication/02-digital-design/01-raster-vector-svg.qmd
+              text: "2.1 Raster, Vector & SVG"
+            - href: design-fabrication/02-digital-design/02-vector-geometry.qmd
+              text: "2.2 Vector Geometry"
+            - href: design-fabrication/02-digital-design/03-logos-lettermarks.qmd
+              text: "2.3 Logos & Lettermarks"
+            - href: design-fabrication/02-digital-design/04-layout-typography-colour.qmd
+              text: "2.4 Layout, Type & Colour"
+            - href: design-fabrication/02-digital-design/05-animation-ui-ux.qmd
+              text: "2.5 Animation & UI/UX"
+        - section: "3. Laser Cutting & 2D Fabrication"
+          href: design-fabrication/03-laser-cutting/index.qmd
+          contents:
+            - href: design-fabrication/03-laser-cutting/01-name-logo.qmd
+              text: "3.1 Name + Logo"
+            - href: design-fabrication/03-laser-cutting/02-make-it-stand.qmd
+              text: "3.2 Make It Stand"
+            - href: design-fabrication/03-laser-cutting/03-measure-place.qmd
+              text: "3.3 Measure + Place"
+            - href: design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd
+              text: "3.4 Material Fit + Calibration"
+            - href: design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd
+              text: "3.5 Assemblies + Hybrid Fabrication"
+            - href: design-fabrication/03-laser-cutting/06-tool-holder.qmd
+              text: "3.6 Tool Holder"
+            - href: design-fabrication/03-laser-cutting/07-wall-bench-module.qmd
+              text: "3.7 Wall + Bench Module"
+            - href: design-fabrication/03-laser-cutting/08-capstone.qmd
+              text: "3.8 Capstone"
+            - href: design-fabrication/03-laser-cutting/resources/index.qmd
+              text: "First Projects Toolkit"
+            - href: design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd
+              text: "Organizer Assembly Gallery"
+            - href: design-fabrication/03-laser-cutting/resources/fabrication-planning-worksheet.qmd
+              text: "Fabrication Planning Sheet"
+            - href: design-fabrication/tools/plate-builder/index.qmd
+              text: "Fabrication Plate Builder"
+        - section: "4. 3D Printing"
+          href: design-fabrication/04-3d-printing/index.qmd
+          contents:
+            - href: design-fabrication/04-3d-printing/01-additive-cad.qmd
+              text: "4.1 Additive Manufacturing & CAD"
+            - href: design-fabrication/04-3d-printing/02-slicing-orientation.qmd
+              text: "4.2 Slicing & Orientation"
+            - href: design-fabrication/04-3d-printing/03-tolerances-functional-parts.qmd
+              text: "4.3 Tolerances & Functional Parts"
+            - href: design-fabrication/04-3d-printing/04-design-challenge.qmd
+              text: "4.4 Design Challenge"
+        - href: design-fabrication/05-cnc-digital-machining/index.qmd
+          text: "5. CNC & Digital Machining · Planned"
+        - href: design-fabrication/06-textiles-soft-goods/index.qmd
+          text: "6. Textiles & Soft Goods · Planned"
+        - href: design-fabrication/07-other-fabrication/index.qmd
+          text: "7. Other Fabrication · Planned"
+    - id: tas2
+      title: "General Design & Fabrication"
+      style: docked
+      contents:
+        - href: design-fabrication/index.qmd
+          text: "Open the reusable curriculum"
     - id: tej
       title: "TEJ Notes"
       style: docked

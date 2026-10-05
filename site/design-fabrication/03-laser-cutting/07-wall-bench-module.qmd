@@ -1,0 +1,43 @@
+---
+title: "Wall + Bench Tool Module | French Cleats and Removable Shop Organization"
+description: "A major fabrication project: design an organized tool module that mounts securely on a wall and remains stable, portable and useful on a workbench."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Design brief
+
+Design a visually organized holder for a related group of tools. It must mount vertically, be removable quickly as one module, and remain useful or stable when taken to a workbench.
+:::
+
+## Two operating states
+
+<div class="ter-two-state">
+  <div><strong>On the wall</strong><br>Visible · organized · secure · accessible</div>
+  <div><strong>On the bench</strong><br>Stable · portable · usable · easy to return</div>
+</div>
+
+## System decisions
+
+Consider a French cleat or other approved removable mounting interface, a thicker structural backer, 1/4 inch precision faces, dowels, pins, screws, holes, slots, combs, trays, labels, and shadow-board cues. Design a handle or safe grip only if it does not interfere with mounted use or tool retention.
+
+The wall rail, wall attachment, load path, and structural fasteners must be selected and approved for the actual installation. A thin laser-cut plywood face is not a rated wall-mounting system.
+
+## Test plan
+
+- Load and remove each tool while the module is mounted.
+- Remove and carry the complete module using the intended grip.
+- Place it on the bench and use tools without holding the module.
+- Check tipping, sliding, sharp edges, snagged cords, and tool collisions.
+- Confirm the module returns to the wall without a delicate alignment routine.
+- Revise at least one dimension or feature from test evidence.
+
+[Explore French-cleat modules](../../teaching-materials/laser-cutting/?type=french-cleat#library) and [tool-holder kits](../../teaching-materials/laser-cutting/?type=tool-holders#library) as component references.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Strongly relevant to **TMJ2O**, **TTJ2O**, **TCJ2O**, **TDJ2O**, and **TIJ1O** projects involving measurement, manufacturing, tool organization, material selection, assemblies, ergonomics, testing, and iteration. Electronics contexts may support **TEJ2O**.
+:::
+
+Next: define your own need in the [Design & Fabrication Capstone](08-capstone.qmd).

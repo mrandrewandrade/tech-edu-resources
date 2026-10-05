@@ -1,0 +1,33 @@
+---
+title: "3D Printing Tolerances | Fits, Holes, Fasteners and Functional Parts"
+description: "Test printed clearance, holes, press fits, fasteners and assemblies before designing brackets, adapters, repair parts and tool holders."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Nominal dimensions are a starting hypothesis
+
+Printed dimensions depend on machine calibration, material, orientation, layer height, toolpath width, shrinkage, cooling, and feature shape. Internal holes and external pins may not deviate in the same way.
+
+## Test the interface
+
+Create a small coupon containing several clearances, hole diameters, or pin/socket pairs around the target dimension. Label each value in the model. Print with the intended printer, material, orientation, and profile; measure the result and choose a fit from evidence.
+
+Functional choices include:
+
+- free-running clearance for moving or removable parts;
+- sliding fit for guided assembly;
+- snug fit for repeatable location;
+- press fit where material behaviour and removal requirements make it appropriate;
+- pilot, clearance, counterbore, or captured-nut features for conventional fasteners.
+
+## Useful applications
+
+Brackets, adapters, knobs, guards, cable guides, tool holders, replacement spacers, drill guides, enclosures, and jigs are valuable when they solve a real measured problem. A repair part should be evaluated for load, temperature, impact, chemicals, UV, wear, and failure consequences before use.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Supports **TMJ**, **TDJ**, **TEJ**, and **TIJ1O** work involving tolerances, fasteners, functional parts, assemblies, measurement, prototyping, maintenance, and quality control.
+:::
+
+Next: [Functional-Part Design Challenge](04-design-challenge.qmd).

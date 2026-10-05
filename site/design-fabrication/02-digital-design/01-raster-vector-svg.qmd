@@ -1,0 +1,37 @@
+---
+title: "Raster, Vector & SVG | Digital Design Foundations"
+description: "Teach pixels, resolution, vector paths, fill, stroke and SVG so students choose appropriate graphics for screens, engraving and digital fabrication."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Two ways to describe an image
+
+A **raster** image stores a grid of pixels. It is well suited to photographs, painted textures, and tone. Enlarging it eventually reveals the pixel grid. Resolution describes how much pixel information is available; it does not guarantee that the source is sharp or correctly sized.
+
+A **vector** image stores shapes and paths. Anchors, curves, fills, and strokes can be edited and scaled without creating a pixelated edge. Vector geometry is the normal starting point for cut lines, scored paths, logos, diagrams, and many CAD/CAM workflows.
+
+## Why SVG matters
+
+SVG is an open, text-based vector format that can preserve document dimensions, paths, groups, fills, and strokes. It can move between tools, but import settings still matter. Students should verify:
+
+- document units are millimetres when physical size matters;
+- a known rectangle measures correctly after export and import;
+- text is available in the destination environment or converted to paths in a copy;
+- the software distinguishes filled artwork from vector paths;
+- repeated or overlapping cut lines have been removed.
+
+## Sort by intended operation
+
+- **Raster image:** use when engraved tone or photographic detail is intentional.
+- **Filled vector shape:** useful for clean engraved artwork.
+- **Open or closed vector path:** useful for scoring or cutting when the machine workflow recognizes it.
+
+Create a three-column comparison with the same symbol represented as a low-resolution raster, a filled vector, and an outline path. Scale each one, inspect the edges, and predict how a laser workflow would interpret it.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Useful for **TGJ2O**, **TDJ2O**, and **TIJ1O** learning involving digital imagery, visual communication, file formats, CAD preparation, and digital fabrication.
+:::
+
+Next: [Vector Geometry & Exact Construction](02-vector-geometry.qmd).

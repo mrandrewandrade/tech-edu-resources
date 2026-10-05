@@ -66,7 +66,10 @@ def check(root: Path) -> tuple[int, list[str]]:
         for match in re.finditer(r'url\(\s*[\'"]?([^\)\'"\s]+)', path.read_text(encoding='utf-8')):
             if not match[1].startswith('#'):
                 inspect(path, 'css', match[1])
-    for required in ['index.html', 'tas2/index.html', 'tej3-4/index.html',
+    for required in ['index.html', 'design-fabrication/index.html',
+                     'design-fabrication/03-laser-cutting/index.html',
+                     'design-fabrication/04-3d-printing/index.html',
+                     'tas2/index.html', 'tej3-4/index.html',
                      'slides/index.html', 'teacher-slides/index.html',
                      'teaching-materials/index.html',
                      'lore/index.html']:

@@ -1,0 +1,39 @@
+---
+title: "Laser-Cut Tool Holder | Measurement, Ergonomics and Shop Organization"
+description: "Design a useful holder for real machine-shop, auto-shop, woodshop, electronics or general technology tools through measurement and testing."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Design brief
+
+Measure a related group of real shop tools and create a holder that makes each tool visible, identifiable, accessible, and easy to return. Prototype the critical opening or support before fabricating the complete holder.
+:::
+
+## Possible contexts
+
+- Machine shop: drill bits, end mills, collets, precision drivers, or measuring tools.
+- Auto shop: sockets, wrenches, screwdrivers, pliers, or pneumatic fittings.
+- Woodshop: chisels, files, drill bits, sanding tools, or layout tools.
+- Computer engineering/electronics: multimeter leads, soldering tools, tweezers, wire tools, or small drivers.
+- General technology shop: markers, hand tools, shared measuring tools, or project kits.
+
+## Design criteria
+
+Measure the actual tools and account for tapers, collars, handles, cords, and the hand position used during removal. Organize repeated geometry deliberately. Provide labels or silhouettes where they improve return-to-home behaviour. Test one-hand removal, visibility, reach, clearance, and whether neighbouring tools collide.
+
+[Browse the purpose-built holder kits](../../teaching-materials/laser-cutting/?type=tool-holders#library) for construction ideas. They are unverified starting geometry, not substitutes for measuring the class tools or testing the assembly.
+
+Before an independent holder, complete the [pill-bottle organizer progression](resources/pill-bottle-organizer.qmd). Its four reference systems separate components from examples and make the BOM, interfaces, load path, assembly order and physical-test status visible. Students should be able to explain which pattern transfers to their chosen tool family—and which dimensions do not.
+
+## Required evidence
+
+Include a tool-measurement table, alternatives, selected concept, critical-dimension prototype, user test, revision notes, and a final evaluation against the identified need.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Particularly useful for **TIJ1O**, **TMJ2O**, **TTJ2O**, and **TCJ2O**. Electronics holders can support **TEJ2O** and senior computer-engineering contexts. Course relevance depends on the actual tools, users, and fabrication process selected.
+:::
+
+Next: turn the holder into a removable [Wall + Bench Tool Module](07-wall-bench-module.qmd).

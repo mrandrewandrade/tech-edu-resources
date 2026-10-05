@@ -1,0 +1,38 @@
+---
+title: "2D Animation, UI/UX & Interface Prototypes | Design for User Needs"
+description: "Introduce 2D animation, user needs, user flows, interface states, feedback and low-fidelity website or app prototypes."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Start with the user and task
+
+UI describes the controls and visual elements a person interacts with. UX describes the larger experience of understanding, completing, and recovering from a task. Begin with the person, context, and goal before choosing colours or screen shapes.
+
+## User flow
+
+Write one concrete task, such as “find the correct safety procedure and return to the project.” Map the minimum sequence of screens or states. Include decision points, confirmation, error recovery, and a clear way back.
+
+## Prototype before building
+
+- Sketch several interface arrangements.
+- Turn the strongest into linked paper frames or digital wireframes.
+- Label actions with clear verbs.
+- Show selected, loading, success, empty, and error states where relevant.
+- Ask a test user to complete the task without coaching.
+- Record where they pause, choose incorrectly, or ask what something means.
+
+## Motion with purpose
+
+2D animation can explain a transition, show cause and effect, provide feedback, or direct attention. It should not delay the task or make important information harder to read. Storyboard the start state, change, and end state; then choose duration and easing that support the meaning.
+
+## Evidence from a usability test
+
+Measure task completion, wrong turns, unclear labels, and user comments. Revise the flow before polishing the graphics. A visually attractive interface that prevents task completion is not successful.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology** and related senior courses in animation, web design, digital imagery, and interactive media. It also supports **TDJ** and **TIJ1O** design-process work involving user needs, prototyping, feedback, and iteration.
+:::
+
+Apply the same user-centred process to a physical interface in [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd).

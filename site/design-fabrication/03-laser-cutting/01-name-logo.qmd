@@ -1,0 +1,46 @@
+---
+title: "Name + Logo | First Laser Engraving Project"
+description: "An accessible first laser project: prepare readable name and original logo artwork for a measured, teacher-supplied pre-cut wood blank."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+::: {.ter-project-brief}
+## Design brief
+
+Create a readable name and original logo or lettermark for a **teacher-supplied, pre-cut rectangular wood blank**. The first output is a PNG used for engraving. Keep the first machine experience intentionally simple so attention stays on measuring the real blank, layout, export quality and safe workflow.
+:::
+
+## Learning goals
+
+Students distinguish raster artwork from later vector cut geometry, fit artwork to an exact physical size, create visual hierarchy, export a clean PNG, and verify the file before it enters the machine workflow.
+
+## Choose an editing route
+
+**Inkscape (preferred):** use the [editable SVG template](../../assets/laser-library/classroom-kit/name-tag/name-tag-engraving-template.svg), set the page to the measured blank and export the page as PNG.
+
+**Photopea (accessible raster route):** create a new document with the same aspect ratio as the measured blank, place name and original logo on separate layers, maintain a safe margin, then export PNG. Record the intended physical blank size beside the submitted image because a PNG alone does not guarantee physical dimensions.
+
+Study the [three workable layouts and three common problems](../../assets/laser-library/classroom-kit/name-tag/name-tag-layout-examples.svg) before choosing a composition.
+
+## File preparation
+
+1. Measure the supplied blank in millimetres and record width × height.
+2. Set the page or canvas to that aspect ratio and physical size.
+3. Add the student's name with deliberate typography, spacing and strong contrast.
+4. Add the original [logo or lettermark](../02-digital-design/03-logos-lettermarks.qmd).
+5. Keep artwork inside the instructor-set safe margin.
+6. Remove/hide all guides and export the page—not a loose selection—as PNG.
+7. Save the editable master separately from the exported fabrication image.
+8. Reopen the PNG and verify crop, orientation, contrast and filename.
+
+## Before pressing start
+
+Follow the local material approval, focus, ventilation, supervision, fire-watch, and shutdown procedure. Confirm the machine job is **engrave only** and that no guide or accidental cut boundary appears.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Useful for **TIJ1O** and **TDJ2O** learning involving vector graphics, visual communication, exact dimensions, file preparation, manufacturing processes, safe tool use, and evaluation of a produced artifact. Communications Technology connections belong primarily in the preceding digital-design unit.
+:::
+
+Next: add an open-ended structural requirement in [Make It Stand](02-make-it-stand.qmd). Use the [planning worksheet and classroom toolkit](resources/index.qmd) to carry the same object into vector fabrication.

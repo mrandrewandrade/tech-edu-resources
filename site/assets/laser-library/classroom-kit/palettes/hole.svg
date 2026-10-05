@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="216mm" height="170mm" viewBox="0 0 216 170">
+<title>Hole Palette</title>
+<desc>Hole and circle-part semantics shown with exact geometry.</desc>
+<metadata id="technology-commons-classroom-kit">{&quot;description&quot;:&quot;Hole and circle-part semantics shown with exact geometry.&quot;,&quot;kerf_note&quot;:&quot;Nominal geometry is not finished fit; cut a test coupon.&quot;,&quot;palette&quot;:&quot;hole&quot;,&quot;review_status&quot;:&quot;unverified&quot;,&quot;title&quot;:&quot;Hole Palette&quot;,&quot;units&quot;:&quot;mm&quot;,&quot;version&quot;:&quot;1.0.0&quot;}</metadata>
+<text x="10" y="12" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="start" data-role="annotation">HOLES + CIRCLE PARTS</text>
+<text x="10" y="20" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="400" text-anchor="start" data-role="annotation">A hole removes material inside a larger part. A circle part keeps the disc.</text>
+<text x="10" y="27" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">RED = CUT · BLUE = SCORE · dimensions in mm · test before production</text>
+<g id="component-hole-6" aria-label="Ø6 hole in coupon" data-diameter-mm="6" data-semantic="hole">
+<rect x="8" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Ø6 hole in coupon</text>
+<text x="13" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">HOLE · removes centre</text>
+<rect x="25" y="49" width="62" height="32" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="56" cy="65" r="3" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-hole-10" aria-label="Ø10 hole in coupon" data-diameter-mm="10" data-semantic="hole">
+<rect x="112" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Ø10 hole in coupon</text>
+<text x="117" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">HOLE · verify hardware</text>
+<rect x="129" y="49" width="62" height="32" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="160" cy="65" r="5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-bottle-opening-36" aria-label="Ø36 bottle opening" data-diameter-mm="36" data-semantic="hole">
+<rect x="8" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Ø36 bottle opening</text>
+<text x="13" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">HOLE · 34 body + clearance</text>
+<rect x="23" y="112" width="66" height="40" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="56" cy="132" r="18" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-disc-36" aria-label="Ø36 circle part" data-diameter-mm="36" data-semantic="circle-part">
+<rect x="112" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Ø36 circle part</text>
+<text x="117" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">DISC · opposite cut result</text>
+<circle cx="160" cy="132" r="18" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+</svg>

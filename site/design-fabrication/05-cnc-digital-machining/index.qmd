@@ -1,0 +1,34 @@
+---
+title: "CNC & Digital Machining for Technology Education | Planned"
+description: "Planned Ontario technology education pathway for CNC routers and mills, CAM, work coordinates, workholding, toolpaths, end mills, pockets, profiles and drilling."
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-learn-article"
+execute: {enabled: false}
+---
+
+::: {.ter-status}
+Planned pathway
+:::
+
+This section intentionally describes future scope rather than presenting untested machine lessons as complete curriculum.
+
+## Proposed learning sequence
+
+- CNC router and CNC mill capabilities and limits;
+- machine coordinates, work coordinates, and zero/reference choices;
+- secure workholding and clearance planning;
+- end-mill geometry and tool selection;
+- CAM setup, pockets, profiles, drilling, and toolpath order;
+- feeds, speeds, chip formation, and machine/material-specific evidence;
+- simulation, dry-run practices, verification, inspection, and revision.
+
+Future lessons will depend on the available machine, tooling, materials, guarding, dust or chip control, supervision, and local safe-operating procedures.
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** Expected strongest fit with **TMJ Manufacturing Technology**, **TDJ Technological Design**, and **TCJ Construction Technology**, including relevant senior courses and emphasis areas in CAM, machining, mechanical engineering, and manufacturing. Exact mapping will follow the completed lessons.
+
+Potential senior contexts include **TMJ3M/TMJ4M**, **TMJ3C/TMJ4C**, **TMJ3E/TMJ4E**, **TDJ3M/TDJ4M**, and **TDJ3O/TDJ4O**. These are scope notes, not claims that an unfinished lesson satisfies every course.
+:::
+
+For currently supported digital fabrication, use [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd) or [3D Printing](../04-3d-printing/index.qmd).
