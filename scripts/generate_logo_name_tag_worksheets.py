@@ -111,7 +111,7 @@ def build_logo_worksheet():
     c.setFont("SourceSansBold", 12)
     c.drawString(43, 670, "1. Find two or three useful shapes")
     c.setFont("SourceSans", 10.5)
-    for i, line in enumerate(wrap_lines(c, "Start with your own drawing or an approved AI-made image. Circle only the shapes you might reuse. Do not trace every detail.", "SourceSans", 10.5, 526)):
+    for i, line in enumerate(wrap_lines(c, "Start with your own paper drawing. Photograph or scan it, then circle only the shapes you might reuse. Do not trace every detail.", "SourceSans", 10.5, 526)):
         c.drawString(43, 653 - i * 13, line)
     c.setStrokeColor(RULE)
     c.roundRect(43, 501, 526, 116, 5, stroke=1, fill=0)

@@ -1,6 +1,6 @@
 ---
-title: "Personal Logo | Idea to SVG"
-description: "A short student worksheet for turning an AI-made or hand-drawn inspiration image into an original, simple logo in Photopea."
+title: "Personal Logo | Sketch to SVG"
+description: "A visual, step-by-step lesson for photographing or scanning a hand-drawn idea and rebuilding it as a simple logo in Photopea."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, lettermark, typography, negative-space, vector-graphic, raster-image, scalable-vector-graphics]
 highlighted-terms: [logo, vector-graphic]
@@ -14,95 +14,125 @@ This is a classroom draft. Test the steps with students and record anything that
 
 ## Make your mark
 
-Create a simple personal mark from **your initials, a landscape idea, or both**. Your starting image may be hand drawn or created with an approved AI image tool. The finished logo must be your own simplified design.
+Draw a simple personal mark on paper, take a clear photograph or scan, and use that image as a tracing reference in Photopea. The finished logo should use **your initials, two or three meaningful shapes, or both**.
 
 [Open the idea worksheet Google Doc](https://docs.google.com/document/d/1amzmA_uCjCnRD1YX1KIoW8YhIvRrl10hZQvdADdNV8Y/edit){.btn .btn-primary}
 [Download the two-page worksheet](../../assets/name-tag-photopea/personal-logo-worksheet.pdf){.btn .btn-outline-primary}
 [Open the Photopea screenshot guide](https://docs.google.com/document/d/14Tu-Nq394PJ6q7XqGiKx-N0yA6PrIBK4M53pB01OFHw/edit){.btn .btn-primary}
 [Download the Photopea screenshot guide](../../assets/name-tag-photopea/personal-logo-photopea-guide.pdf){.btn .btn-outline-primary}
 
-![Four-step example showing a landscape inspiration becoming a simple coloured vector logo](../../assets/name-tag-photopea/landscape-to-logo.svg){fig-alt="A hand-drawn or AI-made landscape reference is reduced to a sun, mountain, and river, rebuilt with simple shapes in Photopea, and finished as an original coloured logo."}
+![Four-step example showing a paper sketch becoming a simple coloured vector logo](../../assets/name-tag-photopea/landscape-to-logo.svg){fig-alt="A paper landscape sketch is reduced to a sun, mountain, and river, rebuilt with simple shapes in Photopea, and finished as an original coloured logo."}
 
 ## 1. Start with an idea
 
-Use either:
+1. Think of a place, object, activity, or set of initials that represents you.
+2. Draw it quickly on plain white paper with a dark pencil or marker.
+3. Circle **two or three shapes** that carry the meaning.
+4. Leave small details behind. You will trace the useful structure, not every pencil mark.
 
-- your own quick drawing; or
-- an approved AI-made image created from your own prompt.
+![Worked example showing a paper landscape sketch and the three shapes selected from it](../../assets/name-tag-photopea/personal-logo-starting-idea.svg){fig-alt="A paper landscape sketch is photographed, then its circle, triangle, and curved river are selected as the useful logo ingredients."}
 
-Do **not** trace every detail. Circle only **two or three useful ingredients**, such as a mountain triangle, a sun circle, a river curve, or your initials.
+**Example:** The landscape sketch contains many marks, but the logo only needs a circle for the sun, a triangle for the mountain, and one curve for the river.
 
 ## 2. Sketch three different ideas
 
-Use the worksheet. Draw three simple marks quickly.
+Use the worksheet and draw three quick possibilities. Change the idea, not only the size.
 
-1. **Initials only**
-2. **Landscape shapes only**
-3. **Initials + one landscape shape**
+1. **Initials only:** combine or overlap your letters.
+2. **Shapes only:** use the strongest shapes from your paper sketch.
+3. **Initials + one shape:** connect one meaningful shape to your letters.
 
-Choose the idea with the clearest silhouette, not the most detail.
+![Three logo sketches: initials only, landscape shapes only, and initials combined with a mountain](../../assets/name-tag-photopea/personal-logo-three-sketches.svg){fig-alt="Three labelled student sketch examples compare initials only, landscape shapes only, and initials plus one landscape shape. The combined option is selected because it has the clearest silhouette."}
+
+Choose the idea that is easiest to recognize in one second. A clear silhouette is more useful than extra detail.
 
 ## 3. Know the file types
 
 <figure>
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bitmap_VS_SVG.svg" alt="A raster image becomes blocky when enlarged while an SVG vector stays smooth" style="display:block;max-width:720px;width:100%;margin-inline:auto">
-  <figcaption><strong>Raster:</strong> pixels, such as JPG and PNG. <strong>Vector:</strong> paths, such as SVG. Image: <a href="https://commons.wikimedia.org/wiki/File:Bitmap_VS_SVG.svg">Yug, Wikimedia Commons</a>, CC BY-SA 2.5.</figcaption>
+  <figcaption><strong>Raster:</strong> pixels, such as a phone photograph, JPG, or PNG. <strong>Vector:</strong> paths, such as SVG. Image: <a href="https://commons.wikimedia.org/wiki/File:Bitmap_VS_SVG.svg">Yug, Wikimedia Commons</a>, CC BY-SA 2.5.</figcaption>
 </figure>
 
-For this logo, keep the editable Photopea file and export an **SVG** master. A PNG copy is useful later for engraving.
+Your photograph or scan is a raster **reference**. You will trace it with clean Photopea shapes and export an **SVG** master. Keep a transparent PNG copy for the name tag.
 
-## 4. Rebuild your selected sketch in Photopea
+## 4. Trace and rebuild the sketch in Photopea
 
-Follow these steps after you have circled the sketch you want to develop.
+The six screenshots below are the complete visual walkthrough from the Google Doc. The Photopea advertising rail has been cropped out so every image focuses on the student action.
 
-::: {.callout-tip title="Use the visual guide"}
-Keep the [Photopea Step-by-Step Guide](https://docs.google.com/document/d/14Tu-Nq394PJ6q7XqGiKx-N0yA6PrIBK4M53pB01OFHw/edit) open beside Photopea. It shows each screen, what to select, and the checkpoint to complete before moving on. A [printable PDF copy](../../assets/name-tag-photopea/personal-logo-photopea-guide.pdf) is also available.
+::: {.callout-tip title="Keep the visual guide beside Photopea"}
+Open the [Photopea Step-by-Step Guide](https://docs.google.com/document/d/14Tu-Nq394PJ6q7XqGiKx-N0yA6PrIBK4M53pB01OFHw/edit) or its [printable PDF copy](../../assets/name-tag-photopea/personal-logo-photopea-guide.pdf). Stop after each image and compare your screen with the checkpoint.
 :::
+
+### Step 1 - Create a square logo file
 
 1. Open [Photopea](https://www.photopea.com/) and choose **File > New**.
 2. Set **Width: 1000 px**, **Height: 1000 px**, and **Background: Transparent**. Select **Create**.
-3. Choose **File > Open & Place** and select a clear photo or scan of your sketch.
-4. In the **Layers** panel, double-click the new layer name and rename it `REFERENCE`.
-5. Set the `REFERENCE` layer **Opacity to 30%**. Select the lock icon so you cannot move it by accident.
-6. Select the **New Layer** icon. Name the new layer for the part you will draw, such as `SUN`, `MOUNTAIN`, or `INITIALS`.
-7. Press **U** for a Shape tool. In the top bar, choose a shape, set **Fill to black**, and set **Stroke to none**. Drag to draw circles, rectangles, or polygons.
-8. Press **P** for the Pen tool when you need a custom shape. Click to make straight corners. Click and drag only when you need a curve. Close the path by clicking the first point.
-9. Press **T** for the Type tool if your mark uses initials. Choose a bold, readable sans-serif font. Keep the text layer editable while you test the idea.
-10. Press **V** for the Move tool. Select a layer, then use **Ctrl+T** to resize, rotate, or move that part. Hold **Shift** while resizing to keep its proportions.
-11. Keep one idea on one layer or in one clearly named group. Duplicate a layer before changing it so you can compare versions.
-12. Hide the `REFERENCE` layer by selecting its eye icon. Your logo should still look clear as one black silhouette.
 
-Use pixels here because this is a scale-free logo master, not the final physical name tag. You will use inches when you place the logo on the 11 by 4 inch name-tag canvas.
+![Photopea new-project screen for a 1000 by 1000 pixel transparent logo file](../../assets/personal-logo-photopea/01-photopea-personal-logo.jpg){fig-alt="A clean Photopea New Project screen shows a 1000 by 1000 pixel transparent document and a three-item checkpoint list. No advertising rail is visible."}
 
-### If you start with type
+Use pixels for this scale-free logo master because it does not represent the physical name-tag size. You will use **inches** when you place the logo on the 11 × 4 inch name-tag canvas.
 
-1. Keep one editable text layer.
-2. Duplicate it.
-3. Right-click the copy and choose **Convert to Shape**.
-4. Move, overlap, rotate, or combine the shapes.
+### Step 2 - Place your photograph or scan
 
-Do not convert your only editable text layer. Keep the original hidden in the PSD so spelling and font choices can still be changed.
+1. Photograph the sketch straight on in bright, even light, or scan it.
+2. Choose **File > Open & Place** and select the image.
+3. Hold the aspect ratio lock and resize the sketch to fill most of the square.
+4. In the **Layers** panel, rename the placed layer `REFERENCE`.
 
-### If you start with a drawing
+![Photopea with the photographed sketch placed on its own reference layer](../../assets/personal-logo-photopea/02-photopea-personal-logo.jpg){fig-alt="A clean Photopea workspace shows a simple landscape sketch placed on a layer named REFERENCE. No advertising rail is visible."}
 
-1. Photograph it straight on in bright, even light.
-2. Crop and increase the contrast.
-3. Choose **Image > Vectorize Bitmap**.
-4. Use very few colours.
-5. Remove bumps, tiny pieces, and unwanted holes.
+### Step 3 - Fade and lock the reference
+
+1. Select the `REFERENCE` layer.
+2. Set its **Opacity to 30%**.
+3. Select the lock icon so the photograph cannot move.
+4. Never draw on the `REFERENCE` layer.
+
+![Photopea with the reference sketch faded to 30 percent and locked](../../assets/personal-logo-photopea/03-photopea-personal-logo.jpg){fig-alt="A clean Photopea workspace shows the paper sketch faded to 30 percent opacity and locked on the REFERENCE layer."}
+
+### Step 4 - Trace with clean shapes
+
+1. Select **New Layer** and name the first part, such as `SUN`, `MOUNTAIN`, `RIVER`, or `INITIALS`.
+2. Press **U** for a Shape tool. Set **Fill to black** and **Stroke to none**. Draw circles, rectangles, or polygons over the photograph.
+3. Press **P** for the Pen tool when you need a custom shape. Click for straight corners. Click and drag only for curves. Close the path by clicking its first point.
+4. Press **T** for the Type tool if your logo uses initials. Choose a bold, readable sans-serif font and keep the text editable while you test.
+5. Press **V** for the Move tool. Use **Ctrl+T** to resize, rotate, or move the selected part. Keep the proportions locked.
+
+![Photopea tracing the faded sketch with separate black vector shapes](../../assets/personal-logo-photopea/04-photopea-personal-logo.jpg){fig-alt="A clean Photopea workspace shows a sun, mountain, and river traced as bold black shapes on separate named layers above the faded reference photograph."}
+
+::: {.callout-note title="If you begin with lettering"}
+Keep one editable text layer. Duplicate it before choosing **Convert to Shape**. Never convert your only editable text layer.
+:::
+
+::: {.callout-note title="If the photograph has too much detail"}
+Crop it, increase the contrast, and trace only the strongest edges. **Image > Vectorize Bitmap** can give you a starting point, but remove bumps, tiny pieces, and unwanted holes afterward.
+:::
+
+### Step 5 - Hide the photograph and run the black test
+
+1. Hide `REFERENCE` by selecting its eye icon.
+2. Group or clearly name the traced layers.
+3. Zoom out until the mark appears about **25 mm wide** on screen.
+4. Remove anything that disappears, closes up, or becomes confusing.
+
+![Photopea showing the finished black silhouette with the reference photograph hidden](../../assets/personal-logo-photopea/05-photopea-personal-logo.jpg){fig-alt="A clean Photopea workspace shows the reference photograph hidden and the traced logo tested as a strong black silhouette at a small size."}
 
 ## 5. Add simple colour
 
-Use **two or three colours at most**. Choose one main colour, one supporting colour, and an optional accent.
+Add colour only after the black silhouette works. Use **two or three colours at most**: one main colour, one supporting colour, and an optional accent.
+
+![One logo compared in black, two colours, and three colours](../../assets/name-tag-photopea/personal-logo-colour-example.svg){fig-alt="The same mountain logo appears as a strong black silhouette, a simple two-colour version, and a three-colour version. An overly detailed gradient version is marked as unsuitable."}
 
 - Keep strong light-dark contrast.
-- Do not use colour to hide an unclear shape.
 - Keep a black version for engraving.
-- Avoid gradients and tiny coloured details for the first version.
+- Avoid gradients and tiny coloured details in the first version.
+- Do not use colour to repair an unclear silhouette.
 
-Colour can add mood: warm colours may feel energetic, while blues and greens may feel calm or connected to land and water. These are choices, not fixed rules.
+![Photopea showing the logo coloured and ready to export](../../assets/personal-logo-photopea/06-photopea-personal-logo.jpg){fig-alt="A clean Photopea workspace shows the logo with three flat colours and a reminder to save PSD, SVG, and transparent PNG files."}
 
 ## 6. Run four quick tests
+
+![The same logo passing small, black, white-on-dark, and grayscale tests](../../assets/name-tag-photopea/personal-logo-four-tests.svg){fig-alt="Four examples show the logo at 25 millimetres, as a black silhouette, reversed in white on a dark field, and in grayscale."}
 
 - **Small:** is it recognizable at about 25 mm wide?
 - **Black:** does the silhouette still work?
@@ -113,6 +143,8 @@ If a thin line disappears, thicken it. If a small gap closes, open it. If the ma
 
 ## 7. Save the logo system
 
+![A visual file set showing the editable PSD, scalable SVG, and transparent PNG needed for the project](../../assets/name-tag-photopea/personal-logo-file-set.svg){fig-alt="Three file cards show an editable layered PSD, a scalable SVG master, and a transparent PNG copy for the name-tag project."}
+
 Save:
 
 - editable `lastname-logo-master.psd`
@@ -122,12 +154,12 @@ Save:
 - `lastname-logo-gray.svg`
 - transparent `lastname-logo.png`
 
-Choose **File > Export As > SVG** for the vector master. Keep the PSD so you can revise it.
+Choose **File > Export As > SVG** for the vector master. Keep the PSD so you can revise it. Export the transparent PNG for the name tag.
 
-Before submitting, reopen the exported SVG in Photopea. Confirm that it has the correct shapes, no missing letters, no accidental background, and no pieces outside the canvas.
+Before submitting, reopen both the SVG and PNG in Photopea. Check the shapes, spelling, transparent background, and canvas edges.
 
 ::: {.callout-tip title="Ready for the name tag?"}
-Bring the transparent PNG and the editable PSD to the [Name + Logo engraving worksheet](../03-laser-cutting/01-name-logo.qmd). You will test the proportions on paper before building the final file.
+Bring the transparent PNG and editable PSD to the [Name + Logo engraving worksheet](../03-laser-cutting/01-name-logo.qmd). The name-tag file is built at **11 × 4 inches**, not as a pixel-only canvas.
 :::
 
 ::: {.ter-curriculum-relevance}
