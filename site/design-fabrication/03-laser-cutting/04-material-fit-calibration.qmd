@@ -19,11 +19,11 @@ Calibration is not one magic kerf value. It is a short, recorded test that conne
 <section><h3>Material calibration</h3><p>Measure how one stock-and-setting combination changes size and fit. This is about the result of the process.</p><ul><li>Actual thickness and batch are recorded.</li><li>A known drawing dimension imports at 100%.</li><li>Cut width and finished dimensions are measured.</li><li>Slots and holes are tested against the real mating object.</li></ul></section>
 </div>
 
-Glowforge’s current guidance explains that **Set Focus** measures the head-to-material distance at a selected point and can improve focus and camera placement; it also advises selecting a point on the material, not close to an edge. If Set Focus is not used, autofocus runs before a print and can fall back to the selected material thickness if measurement fails. Use those features as machine setup—not as a substitute for a fit coupon. See [Glowforge: Alignment](https://support.glowforge.com/hc/en-us/articles/360033633714-Alignment) and [Glowforge: About Autofocus](https://support.glowforge.com/hc/en-us/articles/21250121938331-About-Autofocus).
+Glowforge’s current guidance explains that **Set Focus** measures the head-to-material distance at a selected point and can improve focus and camera placement; it also advises selecting a point on the material, not close to an edge. If Set Focus is not used, autofocus runs before a print and can fall back to the selected material thickness if measurement fails. Use those features as machine setup, not as a substitute for a fit coupon. See [Glowforge: Alignment](https://support.glowforge.com/hc/en-us/articles/360033633714-Alignment) and [Glowforge: About Autofocus](https://support.glowforge.com/hc/en-us/articles/21250121938331-About-Autofocus).
 
 ## 1 · Measure the actual sheet
 
-Plywood sold as 1/4 inch may not measure 6.35 mm. Measure at several locations with callipers, including near—but not on—a visibly damaged edge. Record the minimum, maximum and the value used to design the test.
+Plywood sold as 1/4 inch may not measure 6.35 mm. Measure at several locations with callipers, including near a visibly damaged edge but not on it. Record the minimum, maximum and the value used to design the test.
 
 <div class="ter-calibration-card-grid">
 <a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-material-thickness.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-material-thickness.svg" alt="Material thickness measurement reference"><strong>Material thickness</strong><span>Record a measured range, not a catalogue assumption.</span></a>
@@ -46,7 +46,7 @@ Ponoko’s 2011 article, [Figuring out kerf for precision parts](https://www.pon
 <a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-tab-fit.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-tab-fit.svg" alt="Tab fit coupon preview"><strong>Tab fit</strong><span>Test the male feature and its orientation.</span></a>
 <a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-slot-fit.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-slot-fit.svg" alt="Slot fit coupon preview"><strong>Slot fit</strong><span>Start from measured thickness, then compare a small series.</span></a>
 <a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-four-fit-series.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-four-fit-series.svg" alt="Loose sliding snug and press fit series preview"><strong>Four-fit series</strong><span>Name the function: loose, sliding, snug or press.</span></a>
-<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-hole-fit.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-hole-fit.svg" alt="Hole fit series preview"><strong>Hole fit</strong><span>Test the actual bottle, dowel or fastener—not only a calliper.</span></a>
+<a class="ter-calibration-card" href="../../assets/laser-library/previews/calibration/tc-cal-hole-fit.svg"><img src="../../assets/laser-library/previews/calibration/tc-cal-hole-fit.svg" alt="Hole fit series preview"><strong>Hole fit</strong><span>Test the actual bottle, dowel or fastener, not only a calliper.</span></a>
 </div>
 
 ## 3 · Cut, measure and decide

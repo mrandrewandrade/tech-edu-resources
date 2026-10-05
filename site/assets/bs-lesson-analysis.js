@@ -236,13 +236,13 @@
     ];
     Object.entries((analysis && analysis.equities) || {}).forEach(
       function (entry) {
-        rows.push(["Equity — " + humanize(entry[0]), formatEquity(entry[1])]);
+        rows.push(["Equity: " + humanize(entry[0]), formatEquity(entry[1])]);
       }
     );
     Object.entries((analysis && analysis.winning_probabilities) || {}).forEach(
       function (entry) {
         rows.push([
-          "Probability — " + humanize(entry[0]),
+          "Probability: " + humanize(entry[0]),
           formatProbability(entry[1])
         ]);
       }
@@ -504,7 +504,7 @@
     Object.entries(candidate.winning_probabilities || {}).forEach(
       function (entry) {
         rows.push([
-          "Probability — " + humanize(entry[0]),
+          "Probability: " + humanize(entry[0]),
           formatProbability(entry[1])
         ]);
       }

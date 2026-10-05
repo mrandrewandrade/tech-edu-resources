@@ -11,7 +11,7 @@ LICENSES/AGPL-3.0-only.txt
 LICENSES/CC-BY-SA-4.0.txt
 ```
 
-## 1. Software — GNU AGPL v3
+## 1. Software: GNU AGPL v3
 
 Unless a file states otherwise, original software in this repository is licensed under the **GNU Affero General Public License, version 3 only**:
 
@@ -34,7 +34,7 @@ Canonical license text:
 
 <https://www.gnu.org/licenses/agpl-3.0.html>
 
-## 2. Educational material — CC BY-SA 4.0
+## 2. Educational material: CC BY-SA 4.0
 
 Unless a file states otherwise, original educational material is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License**:
 

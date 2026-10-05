@@ -348,7 +348,7 @@ body.bs-title-eyebrow #title-block-header .subtitle {
 
 /*
   Quarto renders .quarto-title directly inside #title-block-header.
-  Constrain that element—not a nonexistent nested .quarto-title-block—so the
+  Constrain that element, not a nonexistent nested .quarto-title-block, so the
   title aligns exactly with the eyebrow, body copy, and section headings.
 */
 :is(body.bs-about-page, body.bs-editorial-page) #title-block-header .quarto-title {

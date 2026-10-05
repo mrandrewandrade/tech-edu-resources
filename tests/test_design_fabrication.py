@@ -17,6 +17,20 @@ class DesignFabricationTests(unittest.TestCase):
     def read(self, relative: str) -> str:
         return (SITE / relative).read_text(encoding="utf-8")
 
+    def test_site_source_has_no_em_dashes(self) -> None:
+        text_extensions = {
+            ".bib", ".css", ".html", ".js", ".json", ".lua", ".md", ".qmd",
+            ".scss", ".svg", ".txt", ".xml", ".yaml", ".yml",
+        }
+        for path in SITE.rglob("*"):
+            relative = path.relative_to(SITE)
+            if "_site" in relative.parts or ".quarto" in relative.parts:
+                continue
+            if not path.is_file() or path.suffix.lower() not in text_extensions:
+                continue
+            with self.subTest(path=path.relative_to(ROOT)):
+                self.assertNotIn("\u2014", path.read_text(encoding="utf-8"))
+
     def test_canonical_curriculum_structure_exists(self) -> None:
         required = [
             "index.qmd",
@@ -88,7 +102,7 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Current TAS projects", landing)
         self.assertIn("Name + Logo Wood Name Tag", landing)
         self.assertIn("3D Printed Faux Enamel Pin / Jewellery", landing)
-        self.assertIn("Hardware / Assembly Project — TBD", landing)
+        self.assertIn("Hardware / Assembly Project: TBD", landing)
         enamel = self.read("design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.qmd")
         self.assertIn("Do not reproduce the author's finished designs", enamel)
         for step in ("Sketch or choose", "Rebuild/model", "Export STL or 3MF", "Decide print orientation", "Finish and colour", "Revise the source model"):

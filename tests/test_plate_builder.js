@@ -4,7 +4,7 @@ const builder = require("../site/assets/plate-builder.js");
 
 const test = (name, fn) => { fn(); process.stdout.write(`ok - ${name}\n`); };
 
-test("1 measured diameter adds total—not radial—clearance", () => {
+test("1 measured diameter adds total, not radial, clearance", () => {
   assert.strictEqual(builder.effectiveHoleDiameter({ ...builder.defaults, objectDiameter: 34, clearance: 2 }), 36);
 });
 test("2 direct diameter is preserved", () => {
