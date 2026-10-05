@@ -82,31 +82,6 @@ website:
       contents:
         - text: "Curriculum Home"
           href: design-fabrication/index.qmd
-        - section: "Ideas by Technology Area"
-          href: design-fabrication/applications/index.qmd
-          contents:
-            - href: design-fabrication/applications/exploring-technologies/index.qmd
-              text: "Exploring Technologies · TIJ1O"
-            - href: design-fabrication/applications/technological-design/index.qmd
-              text: "Technological Design · TDJ"
-            - href: design-fabrication/applications/manufacturing/index.qmd
-              text: "Manufacturing · TMJ"
-            - href: design-fabrication/applications/construction/index.qmd
-              text: "Construction · TCJ"
-            - href: design-fabrication/applications/transportation/index.qmd
-              text: "Transportation · TTJ"
-            - href: design-fabrication/applications/computer-technology/index.qmd
-              text: "Computer Technology · TEJ"
-            - href: design-fabrication/applications/communications-technology/index.qmd
-              text: "Communications Technology · TGJ"
-            - href: design-fabrication/applications/green-industries/index.qmd
-              text: "Green Industries · THJ"
-            - href: design-fabrication/applications/hairstyling-aesthetics/index.qmd
-              text: "Hairstyling & Aesthetics · TXJ"
-            - href: design-fabrication/applications/hospitality-tourism/index.qmd
-              text: "Hospitality & Tourism · TFJ"
-            - href: design-fabrication/applications/health-care/index.qmd
-              text: "Health Care · TPJ"
         - section: "1. N.I.C.E. Design Process"
           href: design-fabrication/01-nice-design-process/index.qmd
           contents:
@@ -214,6 +189,31 @@ website:
               text: "Fabrication Planning Sheet"
             - href: design-fabrication/tools/plate-builder/index.qmd
               text: "Fabrication Plate Builder"
+        - section: "Ideas by Technology Area"
+          href: design-fabrication/applications/index.qmd
+          contents:
+            - href: design-fabrication/applications/exploring-technologies/index.qmd
+              text: "Exploring Technologies · TIJ1O"
+            - href: design-fabrication/applications/technological-design/index.qmd
+              text: "Technological Design · TDJ"
+            - href: design-fabrication/applications/manufacturing/index.qmd
+              text: "Manufacturing · TMJ"
+            - href: design-fabrication/applications/construction/index.qmd
+              text: "Construction · TCJ"
+            - href: design-fabrication/applications/transportation/index.qmd
+              text: "Transportation · TTJ"
+            - href: design-fabrication/applications/computer-technology/index.qmd
+              text: "Computer Technology · TEJ"
+            - href: design-fabrication/applications/communications-technology/index.qmd
+              text: "Communications Technology · TGJ"
+            - href: design-fabrication/applications/green-industries/index.qmd
+              text: "Green Industries · THJ"
+            - href: design-fabrication/applications/hairstyling-aesthetics/index.qmd
+              text: "Hairstyling & Aesthetics · TXJ"
+            - href: design-fabrication/applications/hospitality-tourism/index.qmd
+              text: "Hospitality & Tourism · TFJ"
+            - href: design-fabrication/applications/health-care/index.qmd
+              text: "Health Care · TPJ"
     - id: tas2
       title: "General Design & Fabrication"
       style: docked

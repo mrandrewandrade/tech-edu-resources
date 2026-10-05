@@ -77,6 +77,18 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertEqual(positions, sorted(positions))
         self.assertNotIn('title: "TAS Notes"', config)
 
+    def test_design_fabrication_sidebar_starts_with_nice_and_ends_with_applications(self) -> None:
+        config = self.read("_quarto.yml")
+        sidebar_start = config.index("- id: design-fabrication")
+        sidebar_end = config.index("- id: tas2", sidebar_start)
+        sidebar = config[sidebar_start:sidebar_end]
+        nice = sidebar.index('section: "1. N.I.C.E. Design Process"')
+        applications = sidebar.index('section: "Ideas by Technology Area"')
+        library = sidebar.index('section: "Fabrication Library & Tools"')
+        self.assertLess(nice, library)
+        self.assertLess(library, applications)
+        self.assertEqual(sidebar.count('section: "Ideas by Technology Area"'), 1)
+
     def test_homepage_prioritizes_reusable_resources(self) -> None:
         home = self.read("index.qmd")
         self.assertLess(home.index("Educator resources"), home.index("Current class slides"))
