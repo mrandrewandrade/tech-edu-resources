@@ -25,11 +25,29 @@ class CanonicalGlossaryJsonTests(unittest.TestCase):
             source.GLOSSARY_IMPORT_DIR,
             learn_glossary.REPOSITORY_ROOT / "glossary" / "imports",
         )
+        self.assertEqual(
+            source.TEJ_GLOSSARY_SOURCE_PATH,
+            learn_glossary.REPOSITORY_ROOT / "glossary" / "tej-curriculum.json",
+        )
         implementation = inspect.getsource(source.build_production_source)
         self.assertIn("load_contract_json", implementation)
         self.assertIn("build_imported_public_entries", implementation)
         self.assertNotIn("parse_markdown", implementation)
         self.assertNotIn("glossary_old", implementation)
+
+    def test_tej_terms_have_public_references_and_grounded_switch_alias(self) -> None:
+        tej_entries = source.load_tej_curriculum_entries()
+        self.assertGreaterEqual(len(tej_entries), 170)
+        for slug, entry in tej_entries.items():
+            self.assertEqual(len(entry["references"]), 1, slug)
+            reference = entry["references"][0]
+            self.assertEqual(reference["type"], "website", slug)
+            self.assertTrue(reference["title"], slug)
+            self.assertTrue(reference["url"].startswith("https://"), slug)
+        self.assertIn(
+            "Grounded Switch",
+            tej_entries["pull-up-resistor"]["aliases"],
+        )
 
     def test_only_published_entries_are_projected(self) -> None:
         self.assertEqual(self.report["curated_entries"], len(self.entries))

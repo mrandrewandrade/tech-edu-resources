@@ -19,6 +19,9 @@ except ImportError:  # Direct execution sets sys.path to scripts/.
 
 
 GLOSSARY_SOURCE_PATH = learn_glossary.REPOSITORY_ROOT / "glossary" / "glossary.json"
+TEJ_GLOSSARY_SOURCE_PATH = (
+    learn_glossary.REPOSITORY_ROOT / "glossary" / "tej-curriculum.json"
+)
 GLOSSARY_IMPORT_DIR = learn_glossary.REPOSITORY_ROOT / "glossary" / "imports"
 # Compatibility name for review tooling. It points to the one production source.
 CONFIRMED_SOURCE_PATH = GLOSSARY_SOURCE_PATH
@@ -138,21 +141,91 @@ def _reject_duplicate_keys(pairs: list[tuple[str, object]]) -> dict[str, object]
     return result
 
 
-def load_contract_json(path: Path = GLOSSARY_SOURCE_PATH) -> dict[str, dict[str, object]]:
+def _load_json_object(path: Path, label: str) -> dict[str, object]:
     raw_bytes = path.read_bytes()
     try:
         raw_text = raw_bytes.decode("utf-8")
     except UnicodeDecodeError as error:
-        raise ValidationError("Canonical glossary JSON must use UTF-8") from error
+        raise ValidationError(f"{label} must use UTF-8") from error
     raw_text = raw_text.replace("\r\n", "\n").replace("\r", "\n")
     if "\u2014" in raw_text:
-        raise ValidationError("Canonical glossary JSON contains a prohibited em dash")
+        raise ValidationError(f"{label} contains a prohibited em dash")
     try:
         parsed = json.loads(raw_text, object_pairs_hook=_reject_duplicate_keys)
     except json.JSONDecodeError as error:
-        raise ValidationError(f"Malformed canonical glossary JSON: {error}") from error
+        raise ValidationError(f"Malformed {label}: {error}") from error
     if not isinstance(parsed, dict) or not parsed:
-        raise ValidationError("Canonical glossary JSON must be a non-empty object")
+        raise ValidationError(f"{label} must be a non-empty object")
+    return parsed
+
+
+def load_tej_curriculum_entries(
+    path: Path = TEJ_GLOSSARY_SOURCE_PATH,
+) -> dict[str, dict[str, object]]:
+    """Expand the compact, curriculum-owned term list into the public contract."""
+    if not path.exists():
+        return {}
+    data = _load_json_object(path, "TEJ curriculum glossary JSON")
+    if data.get("schema_version") != 1:
+        raise ValidationError("TEJ curriculum glossary requires schema_version 1")
+    sources = data.get("sources")
+    raw_entries = data.get("entries")
+    if not isinstance(sources, dict) or not isinstance(raw_entries, dict):
+        raise ValidationError("TEJ curriculum glossary requires sources and entries objects")
+    added = data.get("added")
+    if not isinstance(added, str):
+        raise ValidationError("TEJ curriculum glossary requires an added date")
+
+    entries: dict[str, dict[str, object]] = {}
+    for slug, raw_entry in raw_entries.items():
+        if not isinstance(slug, str) or not isinstance(raw_entry, dict):
+            raise ValidationError("TEJ curriculum glossary entries must be objects")
+        source_id = raw_entry.get("source")
+        source = sources.get(source_id) if isinstance(source_id, str) else None
+        if not isinstance(source, dict):
+            raise ValidationError(f"{slug} uses an unknown TEJ glossary source")
+        title = source.get("title")
+        url = source.get("url")
+        if not isinstance(title, str) or not isinstance(url, str):
+            raise ValidationError(f"{slug} has an invalid TEJ glossary source")
+        term = raw_entry.get("term")
+        short = raw_entry.get("short_definition")
+        definition = raw_entry.get("long_definition", short)
+        category = raw_entry.get("category")
+        aliases = raw_entry.get("aliases", [])
+        if not all(isinstance(value, str) for value in (term, short, definition, category)):
+            raise ValidationError(f"{slug} has missing TEJ glossary text")
+        if not isinstance(aliases, list):
+            raise ValidationError(f"{slug} aliases must be a list")
+        entries[slug] = {
+            "term": term,
+            "aliases": sorted(aliases, key=str.casefold),
+            "redirect_slugs": [],
+            "short_definition": short,
+            "long_definition": definition,
+            "categories": [category],
+            "tracks": [],
+            "related_terms": [],
+            "inline_terms": {},
+            "status": "published",
+            "added": added,
+            "updated": added,
+            "references": [{"type": "website", "title": title, "url": url}],
+        }
+    return entries
+
+
+def load_contract_json(path: Path = GLOSSARY_SOURCE_PATH) -> dict[str, dict[str, object]]:
+    parsed = _load_json_object(path, "Canonical glossary JSON")
+    if path == GLOSSARY_SOURCE_PATH:
+        additions = load_tej_curriculum_entries()
+        collisions = set(parsed).intersection(additions)
+        if collisions:
+            raise ValidationError(
+                f"Duplicate curated glossary slugs: {sorted(collisions)}"
+            )
+        parsed.update(additions)
+        parsed = dict(sorted(parsed.items()))
     return validate_contract_entries(parsed)
 
 
@@ -983,6 +1056,29 @@ def validate_current_build_compatibility(
     }
 
 
+def generate_site_glossary_assets() -> dict[str, object]:
+    """Generate glossary-only outputs for sites without the legacy Learn tree."""
+    data = learn_glossary.read_json(PRODUCTION_SOURCE_PATH)
+    entries = validate_with_observed_counts(data)
+    outputs = {
+        learn_glossary.GENERATED_ENTRIES_PATH: learn_glossary.build_entries_html(
+            entries, {}, {}
+        ),
+        learn_glossary.GENERATED_LOOKUP_DATA_PATH: learn_glossary.build_lookup_data(
+            entries, {}
+        ),
+    }
+    changed = sum(
+        learn_glossary.write_if_changed(path, content)
+        for path, content in outputs.items()
+    )
+    return {
+        "changed": changed,
+        "entries": len(entries),
+        "outputs": len(outputs),
+    }
+
+
 def generate_subset(input_path: Path, output_path: Path) -> dict[str, int]:
     if output_path.resolve() == PRODUCTION_SOURCE_PATH.resolve():
         raise ValidationError("Refusing to overwrite the production glossary JSON")
@@ -1006,6 +1102,10 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         "check-source",
         help="Fail when tracked production JSON differs from a fresh generation",
     )
+    commands.add_parser(
+        "generate-site-assets",
+        help="Generate glossary HTML and lookup JSON without legacy Learn pages",
+    )
     subset = commands.add_parser(
         "generate-subset", help="Generate isolated review JSON from Markdown"
     )
@@ -1028,6 +1128,13 @@ def main(argv: list[str] | None = None) -> int:
             result = check_production_source()
             print(
                 "Production glossary source is current: "
+                + json.dumps(result, sort_keys=True)
+            )
+            return 0
+        if args.command == "generate-site-assets":
+            result = generate_site_glossary_assets()
+            print(
+                "Generated glossary site assets: "
                 + json.dumps(result, sort_keys=True)
             )
             return 0

@@ -1,6 +1,38 @@
 {
   "entries": [
     {
+      "aliases": [
+        {
+          "slug": "555-ic",
+          "term": "555 IC"
+        },
+        {
+          "slug": "555-timer-ic",
+          "term": "555 Timer IC"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A 555 timer is an integrated circuit used to create timed pulses, delays, and oscillations with external components.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A 555 timer is an integrated circuit used to create timed pulses, delays, and oscillations with external components.",
+      "slug": "three-five-five-timer",
+      "term": "555 Timer"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -220,6 +252,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Accuracy is the fraction of all predictions that a classification model gets correct.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Accuracy is the fraction of all predictions that a classification model gets correct.",
+      "slug": "accuracy",
+      "term": "Accuracy"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -292,6 +347,29 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An active-low signal performs its named action when the signal is at logic low.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An active-low signal performs its named action when the signal is at logic low.",
+      "slug": "active-low",
+      "term": "Active-low Logic"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "Less than 90°.",
       "definition_links": [],
@@ -338,6 +416,34 @@
       "term": "Admittance"
     },
     {
+      "aliases": [
+        {
+          "slug": "hallucination",
+          "term": "Hallucination"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "An AI hallucination is generated content presented without adequate support from reliable evidence.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An AI hallucination is generated content presented without adequate support from reliable evidence.",
+      "slug": "hallucination-ai",
+      "term": "AI Hallucination"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -359,6 +465,29 @@
       "short_definition": "Air space between poles of a magnet.",
       "slug": "air-gap",
       "term": "Air gap"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "An algorithm is a finite, ordered procedure for solving a problem or completing a task.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An algorithm is a finite, ordered procedure for solving a problem or completing a task.",
+      "slug": "algorithm",
+      "term": "Algorithm"
     },
     {
       "aliases": [],
@@ -394,22 +523,22 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Current that reverses direction at a regular rate. Alternating voltage reverses in polarity. The rate of reversals is the frequency.",
+      "date_added": "2026-10-04",
+      "definition": "Alternating current changes direction periodically and usually changes magnitude with time.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1211",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Current that reverses direction at a regular rate.",
+      "short_definition": "Alternating current changes direction periodically and usually changes magnitude with time.",
       "slug": "alternating-current",
-      "term": "Alternating current"
+      "term": "Alternating Current"
     },
     {
       "aliases": [],
@@ -595,6 +724,57 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An amplifier uses energy from a source to produce an output signal that follows an input with increased voltage, current, or power.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An amplifier uses energy from a source to produce an output signal that follows an input with increased voltage, current, or power.",
+      "slug": "amplifier",
+      "term": "Amplifier"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "analogue-input",
+          "term": "Analogue Input"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An analog input converts a voltage within an allowed range into a numerical reading.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An analog input converts a voltage within an allowed range into a numerical reading.",
+      "slug": "analog-input",
+      "term": "Analog Input"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "A test instrument that is used to make voltage, current, and resistance measurements. An analog multimeter uses a moving pointer and a printed scale to display the value of the measured quantity.",
       "definition_links": [],
@@ -611,6 +791,29 @@
       "short_definition": "A test instrument that is used to make voltage, current, and resistance measurements.",
       "slug": "analog-multimeter",
       "term": "Analog multimeter"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An AND gate outputs 1 only when every input is 1.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An AND gate outputs 1 only when every input is 1.",
+      "slug": "and-gate",
+      "term": "AND Gate"
     },
     {
       "aliases": [],
@@ -712,6 +915,57 @@
     {
       "aliases": [],
       "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "An array stores an ordered collection of values that are accessed by position or index.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An array stores an ordered collection of values that are accessed by position or index.",
+      "slug": "array",
+      "term": "Array"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "astable",
+          "term": "Astable"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An astable multivibrator switches repeatedly between two states without requiring an external trigger for each cycle.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An astable multivibrator switches repeatedly between two states without requiring an external trigger for each cycle.",
+      "slug": "astable-multivibrator",
+      "term": "Astable Multivibrator"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -781,6 +1035,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Attention lets a neural network assign different weights to information when producing a representation or prediction.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Attention lets a neural network assign different weights to information when producing a representation or prediction.",
+      "slug": "attention",
+      "term": "Attention"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -828,6 +1105,29 @@
       "short_definition": "Within the range of hearing, approximately 16 to 16,000 Hz.",
       "slug": "audio-frequency",
       "term": "Audio frequency"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Authentication is the process of verifying the identity of a user, device, or service.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 4251: Secure Shell Protocol Architecture",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc4251"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Authentication is the process of verifying the identity of a user, device, or service.",
+      "slug": "authentication",
+      "term": "Authentication"
     },
     {
       "aliases": [],
@@ -922,6 +1222,34 @@
       "term": "B-H magnetization curve"
     },
     {
+      "aliases": [
+        {
+          "slug": "counter-emf",
+          "term": "Counter EMF"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Back EMF is a voltage induced in a coil that opposes the change in current that produced it.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Back EMF is a voltage induced in a coil that opposes the change in current that produced it.",
+      "slug": "back-emf",
+      "term": "Back EMF"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -943,6 +1271,29 @@
       "short_definition": "Ohmmeter readings from right to left.",
       "slug": "back-off-ohmmeter-scale",
       "term": "Back-offohmmeter scale"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Backpropagation efficiently computes how each neural-network parameter contributes to prediction error.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Neural Networks: Zero to Hero",
+          "type": "website",
+          "url": "https://karpathy.ai/zero-to-hero.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Backpropagation efficiently computes how each neural-network parameter contributes to prediction error.",
+      "slug": "backpropagation",
+      "term": "Backpropagation"
     },
     {
       "aliases": [],
@@ -1136,6 +1487,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A baseline model is a simple reference result used to judge whether a more complex model adds useful performance.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A baseline model is a simple reference result used to judge whether a more complex model adds useful performance.",
+      "slug": "baseline-model",
+      "term": "Baseline Model"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -1205,6 +1579,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A bigram is an ordered pair of adjacent tokens used in a two-token language model.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Neural Networks: Zero to Hero",
+          "type": "website",
+          "url": "https://karpathy.ai/zero-to-hero.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A bigram is an ordered pair of adjacent tokens used in a two-token language model.",
+      "slug": "bigram",
+      "term": "Bigram"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -1224,6 +1621,122 @@
       "short_definition": "Electronic components that have the same current for opposite polarities of applied voltage.",
       "slug": "bilateral-components",
       "term": "Bilateral components"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "bom",
+          "term": "BOM"
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "A bill of materials is a structured list of the parts, quantities, and identifying details needed for a build.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Getting Started in KiCad",
+          "type": "website",
+          "url": "https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A bill of materials is a structured list of the parts, quantities, and identifying details needed for a build.",
+      "slug": "bill-of-materials",
+      "term": "Bill of Materials"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "base-2",
+          "term": "Base 2"
+        },
+        {
+          "slug": "binary",
+          "term": "Binary"
+        }
+      ],
+      "categories": [
+        "Units & Notation"
+      ],
+      "category": "Units & Notation",
+      "date_added": "2026-10-04",
+      "definition": "The binary number system represents values with powers of two and the digits 0 and 1.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "The binary number system represents values with powers of two and the digits 0 and 1.",
+      "slug": "binary-number-system",
+      "term": "Binary Number System"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "basic-input-output-system",
+          "term": "Basic Input Output System"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "BIOS is older PC firmware that initializes hardware and starts the operating-system boot process.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "BIOS is older PC firmware that initializes hardware and starts the operating-system boot process.",
+      "slug": "bios",
+      "term": "BIOS"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "bjt",
+          "term": "BJT"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A bipolar junction transistor is a three-terminal semiconductor device in which base current controls a larger collector current.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A bipolar junction transistor is a three-terminal semiconductor device in which base current controls a larger collector current.",
+      "slug": "bipolar-junction-transistor",
+      "term": "Bipolar Junction Transistor"
     },
     {
       "aliases": [],
@@ -1254,22 +1767,45 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Part of a parallel circuit.",
+      "date_added": "2026-10-04",
+      "definition": "Boolean algebra describes logical values and operations such as NOT, AND, and OR.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1211",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Part of a parallel circuit.",
-      "slug": "branch",
-      "term": "Branch"
+      "short_definition": "Boolean algebra describes logical values and operations such as NOT, AND, and OR.",
+      "slug": "boolean-algebra",
+      "term": "Boolean Algebra"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A solderless breadboard provides reusable connected rows and power rails for prototyping circuits.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A solderless breadboard provides reusable connected rows and power rails for prototyping circuits.",
+      "slug": "breadboard",
+      "term": "Breadboard"
     },
     {
       "aliases": [],
@@ -1499,20 +2035,20 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Device used to store electric charge.",
+      "date_added": "2026-10-04",
+      "definition": "A capacitor stores energy in an electric field between conductors separated by an insulator.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1212",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Device used to store electric charge.",
+      "short_definition": "A capacitor stores energy in an electric field between conductors separated by an insulator.",
       "slug": "capacitor",
       "term": "Capacitor"
     },
@@ -1803,22 +2339,50 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "A protective device that opens when excessive current flows in circuit. Can be reset.",
+      "date_added": "2026-10-04",
+      "definition": "A circuit breaker opens a circuit when current exceeds a safe condition and can normally be reset.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1212",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A protective device that opens when excessive current flows in circuit.",
+      "short_definition": "A circuit breaker opens a circuit when current exceeds a safe condition and can normally be reset.",
       "slug": "circuit-breaker",
-      "term": "Circuit breaker"
+      "term": "Circuit Breaker"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "schematic",
+          "term": "Schematic"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A circuit schematic uses standardized symbols and nets to show electrical relationships rather than physical layout.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Getting Started in KiCad",
+          "type": "website",
+          "url": "https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A circuit schematic uses standardized symbols and nets to show electrical relationships rather than physical layout.",
+      "slug": "circuit-schematic",
+      "term": "Circuit Schematic"
     },
     {
       "aliases": [
@@ -1941,6 +2505,126 @@
       "term": "Class C amplifier"
     },
     {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Class imbalance occurs when some target classes have many more examples than others.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Class imbalance occurs when some target classes have many more examples than others.",
+      "slug": "class-imbalance",
+      "term": "Class Imbalance"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Classification is a machine-learning task that predicts which category or class an example belongs to.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Classification is a machine-learning task that predicts which category or class an example belongs to.",
+      "slug": "classification",
+      "term": "Classification"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "decision-threshold",
+          "term": "Decision Threshold"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A classification threshold converts a model score or probability into a class decision.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A classification threshold converts a model score or probability into a class decision.",
+      "slug": "threshold-classification",
+      "term": "Classification Threshold"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A client is a program or device that requests a service from a server.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 1122: Requirements for Internet Hosts",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc1122"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A client is a program or device that requests a service from a server.",
+      "slug": "client",
+      "term": "Client"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Closed-loop control uses measured output feedback to adjust the controller's action.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Closed-loop control uses measured output feedback to adjust the controller's action.",
+      "slug": "closed-loop-control",
+      "term": "Closed-loop Control"
+    },
+    {
       "aliases": [
         {
           "slug": "fcl",
@@ -1995,6 +2679,29 @@
       "short_definition": "The voltage gain of an amplifier with negative feedback.",
       "slug": "closed-loop-voltage-gain",
       "term": "Closed-loop voltage gain"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Clustering groups examples by similarity without requiring known class labels.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Clustering groups examples by similarity without requiring known class labels.",
+      "slug": "clustering",
+      "term": "Clustering"
     },
     {
       "aliases": [],
@@ -2138,6 +2845,57 @@
       "short_definition": "System in which colors are used to indicate values in resistors.",
       "slug": "color-code",
       "term": "Color code"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Combinational logic produces outputs determined only by the current input values.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Combinational logic produces outputs determined only by the current input values.",
+      "slug": "combinational-logic",
+      "term": "Combinational Logic"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "shell",
+          "term": "Shell"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A command shell reads commands, expands their arguments, and starts programs or built-in operations.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Bash Reference Manual",
+          "type": "website",
+          "url": "https://www.gnu.org/software/bash/manual/bash.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A command shell reads commands, expands their arguments, and starts programs or built-in operations.",
+      "slug": "command-shell",
+      "term": "Command Shell"
     },
     {
       "aliases": [],
@@ -2449,6 +3207,34 @@
       "term": "Compound"
     },
     {
+      "aliases": [
+        {
+          "slug": "cnc",
+          "term": "CNC"
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "Computer numerical control coordinates machine motion from programmed commands.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Computer numerical control coordinates machine motion from programmed commands.",
+      "slug": "computer-numerical-control",
+      "term": "Computer Numerical Control"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -2521,6 +3307,29 @@
       "short_definition": "Any material that allows the free movement of electric charges, such as electrons, to provide an electric current.",
       "slug": "conductor",
       "term": "Conductor"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A confusion matrix counts predicted classes against actual classes so different error types remain visible.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A confusion matrix counts predicted classes against actual classes so different error types remain visible.",
+      "slug": "confusion-matrix",
+      "term": "Confusion Matrix"
     },
     {
       "aliases": [],
@@ -2613,6 +3422,29 @@
       "short_definition": "A resistance measurement that determines whether there is zero ohms of resistance (approximately) between two points, such as across the ends of a wire conductor.",
       "slug": "continuity-testing",
       "term": "Continuity testing"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A control system directs a process or machine so its output follows an intended behaviour.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A control system directs a process or machine so its output follows an intended behaviour.",
+      "slug": "control-system",
+      "term": "Control System"
     },
     {
       "aliases": [],
@@ -2735,34 +3567,6 @@
       "term": "Coulomb"
     },
     {
-      "aliases": [
-        {
-          "slug": "cemf",
-          "term": "cemf"
-        }
-      ],
-      "categories": [
-        "Electrical & Electronics"
-      ],
-      "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "A term used to describe the effect of an induced voltage in opposing a change in current.",
-      "definition_links": [],
-      "learning_tracks": [],
-      "redirect_slugs": [],
-      "references": [
-        {
-          "key": "grob2016",
-          "pages": "1212",
-          "type": "book"
-        }
-      ],
-      "related_terms": [],
-      "short_definition": "A term used to describe the effect of an induced voltage in opposing a change in current.",
-      "slug": "counter-emf",
-      "term": "Counter emf"
-    },
-    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -2853,6 +3657,52 @@
       "short_definition": "Cycles per second.",
       "slug": "cps",
       "term": "Cps"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Cron is a Unix-style scheduler that runs commands at configured dates or repeating times.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Cron is a Unix-style scheduler that runs commands at configured dates or repeating times.",
+      "slug": "cron",
+      "term": "Cron"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Cross-validation repeatedly changes which data subset is held out so model performance can be estimated more reliably.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Cross-validation repeatedly changes which data subset is held out so model performance can be estimated more reliably.",
+      "slug": "cross-validation",
+      "term": "Cross-validation"
     },
     {
       "aliases": [],
@@ -2995,22 +3845,22 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "A parallel circuit to provide branch I less than the main-line current.",
+      "date_added": "2026-10-04",
+      "definition": "A current divider is a parallel network in which branch current depends on branch resistance or impedance.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1213",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A parallel circuit to provide branch I less than the main-line current.",
+      "short_definition": "A current divider is a parallel network in which branch current depends on branch resistance or impedance.",
       "slug": "current-divider",
-      "term": "Current divider"
+      "term": "Current Divider"
     },
     {
       "aliases": [
@@ -3181,6 +4031,80 @@
     {
       "aliases": [
         {
+          "slug": "label-leakage",
+          "term": "Label Leakage"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Data leakage lets information unavailable at prediction time influence model training or evaluation.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Data leakage lets information unavailable at prediction time influence model training or evaluation.",
+      "slug": "data-leakage",
+      "term": "Data Leakage"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Data logging records measurements with time, units, and enough metadata to interpret the results later.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Data logging records measurements with time, units, and enough metadata to interpret the results later.",
+      "slug": "data-logging",
+      "term": "Data Logging"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A data type defines the kind of value a program can store and the operations allowed on it.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A data type defines the kind of value a program can store and the operations allowed on it.",
+      "slug": "data-type",
+      "term": "Data Type"
+    },
+    {
+      "aliases": [
+        {
           "slug": "decibel",
           "term": "Decibel"
         }
@@ -3314,6 +4238,34 @@
       "term": "DC load line"
     },
     {
+      "aliases": [
+        {
+          "slug": "switch-debounce",
+          "term": "Switch Debounce"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Debouncing prevents the rapid transitions of a mechanical contact from being counted as multiple intended events.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Debouncing prevents the rapid transitions of a mechanical contact from being counted as multiple intended events.",
+      "slug": "debouncing",
+      "term": "Debouncing"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -3381,6 +4333,61 @@
       "short_definition": "Numbers that are written in standard form without using powers of 10 notation.",
       "slug": "decimal-notation",
       "term": "Decimal notation"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "base-10",
+          "term": "Base 10"
+        },
+        {
+          "slug": "decimal",
+          "term": "Decimal"
+        }
+      ],
+      "categories": [
+        "Units & Notation"
+      ],
+      "category": "Units & Notation",
+      "date_added": "2026-10-04",
+      "definition": "The decimal number system represents values with powers of ten and the digits 0 through 9.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "The decimal number system represents values with powers of ten and the digits 0 through 9.",
+      "slug": "decimal-number-system",
+      "term": "Decimal Number System"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A decision tree makes predictions by following learned feature tests through branches to an output.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A decision tree makes predictions by following learned feature tests through branches to an output.",
+      "slug": "decision-tree",
+      "term": "Decision Tree"
     },
     {
       "aliases": [],
@@ -3519,6 +4526,29 @@
       "short_definition": "The amount that the power rating of a transistor must be reduced for each degree Celsius above 25°C.",
       "slug": "derating-factor",
       "term": "Derating factor"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "Desoldering removes solder so a connection or component can be separated without avoidable damage.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Desoldering removes solder so a connection or component can be separated without avoidable damage.",
+      "slug": "desoldering",
+      "term": "Desoldering"
     },
     {
       "aliases": [],
@@ -3763,30 +4793,62 @@
     {
       "aliases": [
         {
-          "slug": "dmm",
-          "term": "DMM"
+          "slug": "logic-level",
+          "term": "Logic Level"
         }
       ],
       "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "A popular test instrument that is used to measure voltage, current, and resistance.",
+      "date_added": "2026-10-04",
+      "definition": "A digital logic level is a voltage range interpreted as low, high, or indeterminate by a digital input.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1213",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A popular test instrument that is used to measure voltage, current, and resistance.",
+      "short_definition": "A digital logic level is a voltage range interpreted as low, high, or indeterminate by a digital input.",
+      "slug": "digital-logic-level",
+      "term": "Digital Logic Level"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "dmm",
+          "term": "DMM"
+        },
+        {
+          "slug": "multimeter",
+          "term": "Multimeter"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A digital multimeter measures quantities such as voltage, current, resistance, and continuity when connected in the correct mode.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A digital multimeter measures quantities such as voltage, current, resistance, and continuity when connected in the correct mode.",
       "slug": "digital-multimeter",
-      "term": "Digital multimeter"
+      "term": "Digital Multimeter"
     },
     {
       "aliases": [],
@@ -3845,22 +4907,22 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Current that flows in only one direction. DC voltage has a steady polarity that does not reverse.",
+      "date_added": "2026-10-04",
+      "definition": "Direct current maintains one direction of charge flow, even if its magnitude changes.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1213",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Current that flows in only one direction.",
+      "short_definition": "Direct current maintains one direction of charge flow, even if its magnitude changes.",
       "slug": "direct-current",
-      "term": "Direct current"
+      "term": "Direct Current"
     },
     {
       "aliases": [],
@@ -3907,6 +4969,34 @@
       "short_definition": "(1) The action of neutralizing the charge stored in a capacitor by connecting a conducting path across the capacitor leads.",
       "slug": "discharging",
       "term": "Discharging"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "partition",
+          "term": "Partition"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A disk partition is a defined region of a storage device that can be managed as a separate logical area.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A disk partition is a defined region of a storage device that can be managed as a separate logical area.",
+      "slug": "disk-partition",
+      "term": "Disk Partition"
     },
     {
       "aliases": [],
@@ -3975,6 +5065,34 @@
       "short_definition": "Distance is the total length of the path travelled.",
       "slug": "distance",
       "term": "Distance"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "dns",
+          "term": "DNS"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "The Domain Name System maps hierarchical names to resource records such as IP addresses.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 1034: Domain Names - Concepts and Facilities",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc1034"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "The Domain Name System maps hierarchical names to resource records such as IP addresses.",
+      "slug": "domain-name-system",
+      "term": "Domain Name System"
     },
     {
       "aliases": [],
@@ -4090,6 +5208,34 @@
       "short_definition": "One of the three leads of an FET.",
       "slug": "drain",
       "term": "Drain"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "dhcp",
+          "term": "DHCP"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "DHCP supplies network configuration, such as an IP address and lease time, to a client.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 2131: Dynamic Host Configuration Protocol",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc2131"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "DHCP supplies network configuration, such as an IP address and lease time, to a client.",
+      "slug": "dynamic-host-configuration-protocol",
+      "term": "Dynamic Host Configuration Protocol"
     },
     {
       "aliases": [],
@@ -4483,6 +5629,34 @@
       "term": "Electron-hole pair"
     },
     {
+      "aliases": [
+        {
+          "slug": "esd",
+          "term": "ESD"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Electrostatic discharge is a sudden transfer of static charge that can damage electronic components.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Electrostatic discharge is a sudden transfer of static charge that can damage electronic components.",
+      "slug": "electrostatic-discharge",
+      "term": "Electrostatic Discharge"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -4504,6 +5678,29 @@
       "short_definition": "A substance that cannot be decomposed any further by chemical action.",
       "slug": "element",
       "term": "Element"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "An embedding is a learned vector representation in which useful relationships can appear as geometric proximity.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An embedding is a learned vector representation in which useful relationships can appear as geometric proximity.",
+      "slug": "embedding",
+      "term": "Embedding"
     },
     {
       "aliases": [],
@@ -4639,22 +5836,22 @@
         "Units & Notation"
       ],
       "category": "Units & Notation",
-      "date_added": "2026-09-24",
-      "definition": "A form of powers of 10 notation in which a number is expressed as a number between 1 and 1000 times a power of 10 that is a multiple of 3.",
+      "date_added": "2026-10-04",
+      "definition": "Engineering notation uses powers of ten whose exponents are multiples of three.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1214",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A form of powers of 10 notation in which a number is expressed as a number between 1 and 1000 times a power of 10 that is a multiple of 3.",
+      "short_definition": "Engineering notation uses powers of ten whose exponents are multiples of three.",
       "slug": "engineering-notation",
-      "term": "Engineering notation"
+      "term": "Engineering Notation"
     },
     {
       "aliases": [],
@@ -4680,32 +5877,50 @@
       "term": "Enhancement mode"
     },
     {
-      "aliases": [
-        {
-          "slug": "req",
-          "term": "REQ"
-        }
-      ],
+      "aliases": [],
       "categories": [
-        "Electrical & Electronics"
+        "Analysis & Probability"
       ],
-      "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "In a parallel circuit this refers to a single resistance that would draw the same amount of current as all the parallel connected branches.",
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "An ensemble combines predictions from multiple models to produce a final result.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1214",
-          "type": "book"
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
         }
       ],
       "related_terms": [],
-      "short_definition": "In a parallel circuit this refers to a single resistance that would draw the same amount of current as all the parallel connected branches.",
+      "short_definition": "An ensemble combines predictions from multiple models to produce a final result.",
+      "slug": "ensemble-model",
+      "term": "Ensemble Model"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Equivalent resistance is the single resistance that has the same terminal voltage-current behaviour as a resistor network.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Equivalent resistance is the single resistance that has the same terminal voltage-current behaviour as a resistor network.",
       "slug": "equivalent-resistance",
-      "term": "Equivalent resistance"
+      "term": "Equivalent Resistance"
     },
     {
       "aliases": [
@@ -4734,6 +5949,52 @@
       "short_definition": "A resistance in series with an ideal capacitor that collectively represents all of the losses in a capacitor.",
       "slug": "equivalent-series-resistance",
       "term": "Equivalent series resistance"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "An exception is a program event that interrupts normal execution when an error or unusual condition occurs.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An exception is a program event that interrupts normal execution when an error or unusual condition occurs.",
+      "slug": "exception",
+      "term": "Exception"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Explainability concerns how people can understand the evidence and reasoning behind a model's behaviour.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Explainability concerns how people can understand the evidence and reasoning behind a model's behaviour.",
+      "slug": "explainability",
+      "term": "Explainability"
     },
     {
       "aliases": [],
@@ -4859,6 +6120,29 @@
       "short_definition": "For magnetic induction, the generated voltage is proportional to the flux and its rate of change.",
       "slug": "faradays-law",
       "term": "Faraday’s law"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Feedback returns information about a system's output to influence its future input or control action.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Feedback returns information about a system's output to influence its future input or control action.",
+      "slug": "feedback",
+      "term": "Feedback"
     },
     {
       "aliases": [
@@ -5067,6 +6351,62 @@
       "term": "Field winding"
     },
     {
+      "aliases": [
+        {
+          "slug": "permissions",
+          "term": "Permissions"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "File permissions control which users may read, modify, or execute a file or access a directory.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "File permissions control which users may read, modify, or execute a file or access a directory.",
+      "slug": "file-permissions",
+      "term": "File Permissions"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "file-system",
+          "term": "File System"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A filesystem organizes stored data into files, directories, names, and associated metadata.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A filesystem organizes stored data into files, directories, names, and associated metadata.",
+      "slug": "filesystem",
+      "term": "Filesystem"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -5141,6 +6481,29 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A floating input is not held at a defined logic voltage and may change state unpredictably.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A floating input is not held at a defined logic voltage and may change state unpredictably.",
+      "slug": "floating-input",
+      "term": "Floating Input"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "Varying voltage and current but no change in polarity.",
       "definition_links": [],
@@ -5208,6 +6571,34 @@
       "short_definition": "Amount of flux per unit area.",
       "slug": "flux-density",
       "term": "Flux density"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "freewheeling-diode",
+          "term": "Freewheeling Diode"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A flyback diode provides a safe current path when an inductive load is switched off.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A flyback diode provides a safe current path when an inductive load is switched off.",
+      "slug": "flyback-diode",
+      "term": "Flyback Diode"
     },
     {
       "aliases": [],
@@ -5427,6 +6818,29 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A full adder adds two input bits and a carry-in to produce a sum bit and carry-out.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A full adder adds two input bits and a carry-in to produce a sum bit and carry-out.",
+      "slug": "full-adder",
+      "term": "Full Adder"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "A circuit that provides an entirely positive or negative output voltage when an AC input voltage is applied. A full-wave rectifier provides an output for both the positive and negative alternations of the input voltage.",
       "definition_links": [],
@@ -5443,6 +6857,29 @@
       "short_definition": "A circuit that provides an entirely positive or negative output voltage when an AC input voltage is applied.",
       "slug": "full-wave-rectifi-er",
       "term": "Full-wave rectifier"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A function is a named, reusable block of code that can accept inputs and return a result.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A function is a named, reusable block of code that can accept inputs and return a result.",
+      "slug": "function-programming",
+      "term": "Function"
     },
     {
       "aliases": [],
@@ -5473,22 +6910,45 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Metal link that melts from excessive current and opens a circuit.",
+      "date_added": "2026-10-04",
+      "definition": "A fuse opens a circuit by melting its element when excessive current persists.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1214",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Metal link that melts from excessive current and opens a circuit.",
+      "short_definition": "A fuse opens a circuit by melting its element when excessive current persists.",
       "slug": "fuse",
       "term": "Fuse"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Gain is the ratio of an output signal quantity to the corresponding input signal quantity.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Gain is the ratio of an output signal quantity to the corresponding input signal quantity.",
+      "slug": "gain",
+      "term": "Gain"
     },
     {
       "aliases": [],
@@ -5638,6 +7098,34 @@
       "term": "Gauss"
     },
     {
+      "aliases": [
+        {
+          "slug": "gpio",
+          "term": "GPIO"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A GPIO pin is a configurable digital connection used by a controller to read or drive external circuits.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A GPIO pin is a configurable digital connection used by a controller to read or drive external circuits.",
+      "slug": "general-purpose-input-output",
+      "term": "General-purpose Input Output"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -5659,6 +7147,34 @@
       "short_definition": "A device that produces voltage output.",
       "slug": "generator",
       "term": "Generator"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "gerbers",
+          "term": "Gerbers"
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "A Gerber file describes one manufactured PCB layer for fabrication and inspection.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Getting Started in KiCad",
+          "type": "website",
+          "url": "https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A Gerber file describes one manufactured PCB layer for fabrication and inspection.",
+      "slug": "gerber-file",
+      "term": "Gerber File"
     },
     {
       "aliases": [
@@ -5740,6 +7256,85 @@
       "term": "Gilbert"
     },
     {
+      "aliases": [
+        {
+          "slug": "branch",
+          "term": "Branch"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A Git branch is a named line of development whose tip advances as new commits are added.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Git Reference and Glossary",
+          "type": "website",
+          "url": "https://git-scm.com/docs/gitglossary"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A Git branch is a named line of development whose tip advances as new commits are added.",
+      "slug": "branch-git",
+      "term": "Git Branch"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "commit",
+          "term": "Commit"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A Git commit records a project state together with identifying information and links to its parent history.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Git Reference and Glossary",
+          "type": "website",
+          "url": "https://git-scm.com/docs/gitglossary"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A Git commit records a project state together with identifying information and links to its parent history.",
+      "slug": "git-commit",
+      "term": "Git Commit"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A gradient collects the rates at which a function changes with respect to its parameters.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Neural Networks: Zero to Hero",
+          "type": "website",
+          "url": "https://karpathy.ai/zero-to-hero.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A gradient collects the rates at which a function changes with respect to its parameters.",
+      "slug": "gradient",
+      "term": "Gradient"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -5784,6 +7379,89 @@
       "short_definition": "Common return to earth for AC power lines.",
       "slug": "ground",
       "term": "Ground"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "ai-grounding",
+          "term": "AI Grounding"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Grounding connects generated claims to selected evidence, data, or observable system state.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Grounding connects generated claims to selected evidence, data, or observable system state.",
+      "slug": "grounding-ai",
+      "term": "Grounding"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "given-unknown-equation-substitute-solve",
+          "term": "Given Unknown Equation Substitute Solve"
+        },
+        {
+          "slug": "guess-workflow",
+          "term": "GUESS Workflow"
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "The GUESS method organizes a calculation as Given, Unknown, Equation, Substitute, and Solve.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "The GUESS method organizes a calculation as Given, Unknown, Equation, Substitute, and Solve.",
+      "slug": "guess-method",
+      "term": "GUESS Method"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A half adder adds two input bits to produce a sum bit and a carry bit.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A half adder adds two input bits to produce a sum bit and a carry bit.",
+      "slug": "half-adder",
+      "term": "Half Adder"
     },
     {
       "aliases": [],
@@ -5927,6 +7605,42 @@
       "short_definition": "Unit of frequency.",
       "slug": "hertz",
       "term": "Hertz"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "base-16",
+          "term": "Base 16"
+        },
+        {
+          "slug": "hex",
+          "term": "Hex"
+        },
+        {
+          "slug": "hexadecimal",
+          "term": "Hexadecimal"
+        }
+      ],
+      "categories": [
+        "Units & Notation"
+      ],
+      "category": "Units & Notation",
+      "date_added": "2026-10-04",
+      "definition": "The hexadecimal number system represents values with powers of sixteen and the symbols 0 through 9 and A through F.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "The hexadecimal number system represents values with powers of sixteen and the symbols 0 through 9 and A through F.",
+      "slug": "hexadecimal-number-system",
+      "term": "Hexadecimal Number System"
     },
     {
       "aliases": [],
@@ -6151,20 +7865,20 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "In electromagnets, the effect of magnetic induction lagging in time behind the applied magnetizing force.",
+      "date_added": "2026-10-04",
+      "definition": "Hysteresis uses different switching thresholds for rising and falling values to prevent rapid chatter.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1215",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "In electromagnets, the effect of magnetic induction lagging in time behind the applied magnetizing force.",
+      "short_definition": "Hysteresis uses different switching thresholds for rising and falling values to prevent rapid chatter.",
       "slug": "hysteresis",
       "term": "Hysteresis"
     },
@@ -6350,20 +8064,20 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Coil of wire with inductance.",
+      "date_added": "2026-10-04",
+      "definition": "An inductor stores energy in a magnetic field and opposes changes in current.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1215",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Coil of wire with inductance.",
+      "short_definition": "An inductor stores energy in a magnetic field and opposes changes in current.",
       "slug": "inductor",
       "term": "Inductor"
     },
@@ -6526,6 +8240,61 @@
       "term": "Interbase resistance"
     },
     {
+      "aliases": [
+        {
+          "slug": "input-pullup",
+          "term": "INPUT_PULLUP"
+        },
+        {
+          "slug": "internal-pullup",
+          "term": "Internal Pullup"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An internal pull-up is a controller's built-in resistor that weakly holds an input high when no device pulls it low.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An internal pull-up is a controller's built-in resistor that weakly holds an input high when no device pulls it low.",
+      "slug": "internal-pull-up",
+      "term": "Internal Pull-up"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Internal resistance models voltage loss and heating inside a source when it supplies current.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Internal resistance models voltage loss and heating inside a source when it supplies current.",
+      "slug": "internal-resistance",
+      "term": "Internal Resistance"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -6547,6 +8316,29 @@
       "short_definition": "Limits the current supplied by the voltage source to",
       "slug": "internal-resistance-ri",
       "term": "Internal resistance ri"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An interrupt pauses normal program flow so a designated routine can respond to an event.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An interrupt pauses normal program flow so a designated routine can respond to an event.",
+      "slug": "interrupt",
+      "term": "Interrupt"
     },
     {
       "aliases": [],
@@ -6687,6 +8479,34 @@
       "term": "Ionization current"
     },
     {
+      "aliases": [
+        {
+          "slug": "internet-protocol-address",
+          "term": "Internet Protocol Address"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "An IP address identifies an interface for delivering packets within an Internet Protocol network.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 1122: Requirements for Internet Hosts",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc1122"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An IP address identifies an interface for delivering packets within an Internet Protocol network.",
+      "slug": "ip-address",
+      "term": "IP Address"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -6807,6 +8627,34 @@
       "term": "Joule"
     },
     {
+      "aliases": [
+        {
+          "slug": "k-map",
+          "term": "K-map"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A Karnaugh map arranges truth-table values so adjacent groups can reveal a simpler Boolean expression.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A Karnaugh map arranges truth-table values so adjacent groups can reveal a simpler Boolean expression.",
+      "slug": "karnaugh-map",
+      "term": "Karnaugh Map"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -6851,6 +8699,29 @@
       "short_definition": "Absolute temperature scale, 273° below values on Celsius scale.",
       "slug": "kelvin-k-scale",
       "term": "Kelvin (K) scale"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A kernel is the operating-system core that manages hardware resources and provides services to programs.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A kernel is the operating-system core that manages hardware resources and provides services to programs.",
+      "slug": "kernel",
+      "term": "Kernel"
     },
     {
       "aliases": [],
@@ -6944,22 +8815,22 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "The algebraic sum of all currents into and out of any branch point in a circuit must equal zero.",
+      "date_added": "2026-10-04",
+      "definition": "Kirchhoff's current law states that the algebraic sum of currents at a node is zero.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1215",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "The algebraic sum of all currents into and out of any branch point in a circuit must equal zero.",
-      "slug": "kirchhoff-s-current-law",
-      "term": "Kirchhoff ’s current law"
+      "short_definition": "Kirchhoff's current law states that the algebraic sum of currents at a node is zero.",
+      "slug": "kirchhoffs-current-law",
+      "term": "Kirchhoff's Current Law"
     },
     {
       "aliases": [
@@ -6972,22 +8843,22 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "The algebraic sum of all voltages around any closed path must equal zero.",
+      "date_added": "2026-10-04",
+      "definition": "Kirchhoff's voltage law states that the algebraic sum of voltage changes around a closed loop is zero.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1215",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "The algebraic sum of all voltages around any closed path must equal zero.",
-      "slug": "kirchhoff-s-voltage-law",
-      "term": "Kirchhoff ’s voltage law"
+      "short_definition": "Kirchhoff's voltage law states that the algebraic sum of voltage changes around a closed loop is zero.",
+      "slug": "kirchhoffs-voltage-law",
+      "term": "Kirchhoff's Voltage Law"
     },
     {
       "aliases": [],
@@ -7011,6 +8882,62 @@
       "short_definition": "Thin sheets of steel insulated from one another to reduce eddy-current losses in inductors, motors, etc.",
       "slug": "laminations",
       "term": "Laminations"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "lm",
+          "term": "LM"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A language model assigns probabilities to token sequences and can predict tokens from context.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A language model assigns probabilities to token sequences and can predict tokens from context.",
+      "slug": "language-model",
+      "term": "Language Model"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "sampling",
+          "term": "Sampling"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Language-model sampling chooses an output token from a probability distribution rather than always taking only the top choice.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Neural Networks: Zero to Hero",
+          "type": "website",
+          "url": "https://karpathy.ai/zero-to-hero.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Language-model sampling chooses an output token from a probability distribution rather than always taking only the top choice.",
+      "slug": "sampling-language-model",
+      "term": "Language-model Sampling"
     },
     {
       "aliases": [],
@@ -7084,6 +9011,29 @@
     {
       "aliases": [],
       "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Least privilege gives each user or process only the permissions needed for its approved task.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Least privilege gives each user or process only the permissions needed for its approved task.",
+      "slug": "least-privilege",
+      "term": "Least Privilege"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -7149,6 +9099,38 @@
       "short_definition": "Induced current has magnetic field that opposes the change causing the induction.",
       "slug": "lenzs-law",
       "term": "Lenz’s law"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "ldr",
+          "term": "LDR"
+        },
+        {
+          "slug": "photoresistor",
+          "term": "Photoresistor"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A light-dependent resistor changes resistance as the light reaching it changes.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A light-dependent resistor changes resistance as the light reaching it changes.",
+      "slug": "light-dependent-resistor",
+      "term": "Light-dependent Resistor"
     },
     {
       "aliases": [
@@ -7250,6 +9232,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Linear regression fits a linear relationship between input features and a numerical target.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Linear regression fits a linear relationship between input features and a numerical target.",
+      "slug": "linear-regression",
+      "term": "Linear Regression"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -7269,6 +9274,34 @@
       "short_definition": "A resistance with a constant value of ohms.",
       "slug": "linear-resistance",
       "term": "Linear resistance"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "distro",
+          "term": "Distro"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A Linux distribution packages the Linux kernel with system tools, applications, and an update method.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A Linux distribution packages the Linux kernel with system tools, applications, and an update method.",
+      "slug": "linux-distribution",
+      "term": "Linux Distribution"
     },
     {
       "aliases": [],
@@ -7345,22 +9378,45 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Source voltage is decreased as amount of load current increases.",
+      "date_added": "2026-10-04",
+      "definition": "Loading occurs when a connected circuit changes the voltage or current that an earlier circuit would produce by itself.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1215",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Source voltage is decreased as amount of load current increases.",
+      "short_definition": "Loading occurs when a connected circuit changes the voltage or current that an earlier circuit would produce by itself.",
       "slug": "loading-effect",
-      "term": "Loading effect"
+      "term": "Loading Effect"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A logic gate implements a Boolean operation on one or more digital inputs.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A logic gate implements a Boolean operation on one or more digital inputs.",
+      "slug": "logic-gate",
+      "term": "Logic Gate"
     },
     {
       "aliases": [],
@@ -7388,24 +9444,24 @@
     {
       "aliases": [],
       "categories": [
-        "Electrical & Electronics"
+        "Software & Engines"
       ],
-      "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Any closed path in a circuit.",
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A loop repeats a block of instructions while a condition or sequence controls the repetition.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1215",
-          "type": "book"
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Any closed path in a circuit.",
-      "slug": "loop",
+      "short_definition": "A loop repeats a block of instructions while a condition or sequence controls the repetition.",
+      "slug": "loop-programming",
       "term": "Loop"
     },
     {
@@ -7434,6 +9490,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A loss function produces a numerical penalty that measures how far predictions are from desired results.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A loss function produces a numerical penalty that measures how far predictions are from desired results.",
+      "slug": "loss-function",
+      "term": "Loss Function"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -7453,6 +9532,146 @@
       "short_definition": "A filter that allows the lower frequency components of the applied voltage to develop appreciable output voltage while at the same time attenuating or eliminating the higher-frequency components.",
       "slug": "low-pass-filter",
       "term": "Low-pass filter"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "media-access-control-address",
+          "term": "Media Access Control Address"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A MAC address is a link-layer identifier used to deliver frames on a local network segment.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 1122: Requirements for Internet Hosts",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc1122"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A MAC address is a link-layer identifier used to deliver frames on a local network segment.",
+      "slug": "mac-address",
+      "term": "MAC Address"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "ml-bias",
+          "term": "ML Bias"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Machine-learning bias is a systematic tendency in data, modelling, or evaluation that distorts a system's results.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Machine-learning bias is a systematic tendency in data, modelling, or evaluation that distorts a system's results.",
+      "slug": "machine-learning-bias",
+      "term": "Machine-learning Bias"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "ml-fairness",
+          "term": "ML Fairness"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Machine-learning fairness examines whether a system's outcomes or errors create unjustified differences across people or groups.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Machine-learning fairness examines whether a system's outcomes or errors create unjustified differences across people or groups.",
+      "slug": "fairness-machine-learning",
+      "term": "Machine-learning Fairness"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "feature",
+          "term": "Feature"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A machine-learning feature is an input variable supplied to a model for training or prediction.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A machine-learning feature is an input variable supplied to a model for training or prediction.",
+      "slug": "feature-machine-learning",
+      "term": "Machine-learning Feature"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "label",
+          "term": "Label"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A machine-learning label is the target answer associated with a supervised training example.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A machine-learning label is the target answer associated with a supervised training example.",
+      "slug": "label-machine-learning",
+      "term": "Machine-learning Label"
     },
     {
       "aliases": [],
@@ -7649,6 +9868,29 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Maximum power transfer occurs at a load condition that receives the greatest available power from a source network.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Maximum power transfer occurs at a load condition that receives the greatest available power from a source network.",
+      "slug": "maximum-power-transfer",
+      "term": "Maximum Power Transfer"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "The maximum allowable voltage a resistor can safely withstand without internal arcing.",
       "definition_links": [],
@@ -7693,6 +9935,29 @@
       "short_definition": "Unit of magnetic flux equal to one line of force in the magnetic field.",
       "slug": "maxwell",
       "term": "Maxwell"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Measurement & Motion"
+      ],
+      "category": "Measurement & Motion",
+      "date_added": "2026-10-04",
+      "definition": "Measurement uncertainty describes the reasonable range around a measured result caused by instrument and method limits.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Measurement uncertainty describes the reasonable range around a measured result caused by instrument and method limits.",
+      "slug": "measurement-uncertainty",
+      "term": "Measurement Uncertainty"
     },
     {
       "aliases": [],
@@ -7893,6 +10158,29 @@
         "Units & Notation"
       ],
       "category": "Units & Notation",
+      "date_added": "2026-10-04",
+      "definition": "A metric prefix scales an SI unit by a named power of ten, such as milli, kilo, or mega.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A metric prefix scales an SI unit by a named power of ten, such as milli, kilo, or mega.",
+      "slug": "metric-prefix",
+      "term": "Metric Prefix"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Units & Notation"
+      ],
+      "category": "Units & Notation",
       "date_added": "2026-09-24",
       "definition": "Letter symbols used to replace the powers of 10 that are multiples of 3.",
       "definition_links": [],
@@ -7932,6 +10220,34 @@
       "short_definition": "Metric prefix for 1026.",
       "slug": "micro",
       "term": "Micro"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "mcu",
+          "term": "MCU"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A microcontroller combines a processor, memory, and programmable input-output hardware on one integrated circuit.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A microcontroller combines a processor, memory, and programmable input-output hardware on one integrated circuit.",
+      "slug": "microcontroller",
+      "term": "Microcontroller"
     },
     {
       "aliases": [],
@@ -8130,6 +10446,38 @@
       "term": "Molecules"
     },
     {
+      "aliases": [
+        {
+          "slug": "monostable",
+          "term": "Monostable"
+        },
+        {
+          "slug": "one-shot",
+          "term": "One-shot"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A monostable multivibrator has one stable state and produces a timed pulse when triggered.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A monostable multivibrator has one stable state and produces a timed pulse when triggered.",
+      "slug": "monostable-multivibrator",
+      "term": "Monostable Multivibrator"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -8199,6 +10547,34 @@
       "term": "Motor action"
     },
     {
+      "aliases": [
+        {
+          "slug": "mount-a-filesystem",
+          "term": "Mount a Filesystem"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "To mount a filesystem is to attach it at a directory so its files become accessible.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "To mount a filesystem is to attach it at a directory so its files become accessible.",
+      "slug": "mount-filesystem",
+      "term": "Mount"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -8222,12 +10598,7 @@
       "term": "Multiplier resistor"
     },
     {
-      "aliases": [
-        {
-          "slug": "lm",
-          "term": "LM"
-        }
-      ],
+      "aliases": [],
       "categories": [
         "Electrical & Electronics"
       ],
@@ -8248,6 +10619,29 @@
       "short_definition": "Ability of one coil to induce voltage in another coil.",
       "slug": "mutual-induction",
       "term": "Mutual induction"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "An n-gram is an ordered sequence of n adjacent tokens used to model local patterns.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Neural Networks: Zero to Hero",
+          "type": "website",
+          "url": "https://karpathy.ai/zero-to-hero.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An n-gram is an ordered sequence of n adjacent tokens used to model local patterns.",
+      "slug": "ngram",
+      "term": "N-gram"
     },
     {
       "aliases": [],
@@ -8298,6 +10692,29 @@
       "short_definition": "N.I.C.E. is a classroom design cycle: Needs & Necessities → Investigate & Inquire → Create & Communicate → Evaluate → repeat.",
       "slug": "nice-design-process",
       "term": "N.I.C.E. Design Process"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A NAND gate outputs the inverse of AND, so it outputs 0 only when every input is 1.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A NAND gate outputs the inverse of AND, so it outputs 0 only when every input is 1.",
+      "slug": "nand-gate",
+      "term": "NAND Gate"
     },
     {
       "aliases": [
@@ -8453,6 +10870,85 @@
       "term": "Negative temperature coefficient"
     },
     {
+      "aliases": [
+        {
+          "slug": "port",
+          "term": "Port"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A network port number identifies a transport-layer endpoint used by an application or service.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 1122: Requirements for Internet Hosts",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc1122"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A network port number identifies a transport-layer endpoint used by an application or service.",
+      "slug": "port-network",
+      "term": "Network Port"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "protocol",
+          "term": "Protocol"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A network protocol defines rules and message formats that communicating systems follow.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 1122: Requirements for Internet Hosts",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc1122"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A network protocol defines rules and message formats that communicating systems follow.",
+      "slug": "network-protocol",
+      "term": "Network Protocol"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A neural network is a layered model that learns parameterized transformations from examples.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Neural Networks: Zero to Hero",
+          "type": "website",
+          "url": "https://karpathy.ai/zero-to-hero.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A neural network is a layered model that learns parameterized transformations from examples.",
+      "slug": "neural-network",
+      "term": "Neural Network"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -8550,6 +11046,52 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A NOR gate outputs the inverse of OR, so it outputs 1 only when every input is 0.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A NOR gate outputs the inverse of OR, so it outputs 1 only when every input is 0.",
+      "slug": "nor-gate",
+      "term": "NOR Gate"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A Norton equivalent represents a linear two-terminal network as an ideal current source in parallel with a resistance.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A Norton equivalent represents a linear two-terminal network as an ideal current source in parallel with a resistance.",
+      "slug": "norton-equivalent",
+      "term": "Norton Equivalent"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "Method of reducing a complicated network to one current source with shunt resistance.",
       "definition_links": [],
@@ -8566,6 +11108,34 @@
       "short_definition": "Method of reducing a complicated network to one current source with shunt resistance.",
       "slug": "nortons-theorem",
       "term": "Norton’s theorem"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "inverter",
+          "term": "Inverter"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A NOT gate outputs the opposite logic value from its input.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A NOT gate outputs the opposite logic value from its input.",
+      "slug": "not-gate",
+      "term": "NOT Gate"
     },
     {
       "aliases": [],
@@ -8815,6 +11385,29 @@
       "term": "Open-circuit voltage"
     },
     {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Open-loop control applies a command without using measured output to correct the action.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Open-loop control applies a command without using measured output to correct the action.",
+      "slug": "open-loop-control",
+      "term": "Open-loop Control"
+    },
+    {
       "aliases": [
         {
           "slug": "fol",
@@ -8873,30 +11466,81 @@
     {
       "aliases": [
         {
+          "slug": "os",
+          "term": "OS"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "An operating system manages computer resources and provides services and interfaces for applications and users.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An operating system manages computer resources and provides services and interfaces for applications and users.",
+      "slug": "operating-system",
+      "term": "Operating System"
+    },
+    {
+      "aliases": [
+        {
           "slug": "op-amp",
-          "term": "op amp"
+          "term": "Op-amp"
         }
       ],
       "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "A high-gain, direct-coupled differential amplifier.",
+      "date_added": "2026-10-04",
+      "definition": "An operational amplifier is a high-gain differential amplifier commonly used with feedback to perform analog functions.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1216",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A high-gain, direct-coupled differential amplifier.",
-      "slug": "operational-amplifi-er",
-      "term": "Operational amplifier"
+      "short_definition": "An operational amplifier is a high-gain differential amplifier commonly used with feedback to perform analog functions.",
+      "slug": "operational-amplifier",
+      "term": "Operational Amplifier"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An OR gate outputs 1 when at least one input is 1.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An OR gate outputs 1 when at least one input is 1.",
+      "slug": "or-gate",
+      "term": "OR Gate"
     },
     {
       "aliases": [],
@@ -8952,6 +11596,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Overfitting occurs when a model fits training data so specifically that it performs poorly on new examples.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Overfitting occurs when a model fits training data so specifically that it performs poorly on new examples.",
+      "slug": "overfitting",
+      "term": "Overfitting"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -8971,6 +11638,29 @@
       "short_definition": "A semiconductor that has been doped with trivalent impurity atoms.",
       "slug": "p-type-semiconductor",
       "term": "P-type semiconductor"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A package manager installs, removes, and updates software from configured package sources while tracking dependencies.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A package manager installs, removes, and updates software from configured package sources while tracking dependencies.",
+      "slug": "package-manager",
+      "term": "Package Manager"
     },
     {
       "aliases": [],
@@ -9001,22 +11691,22 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "One that has two or more branches for separate currents from one voltage source.",
+      "date_added": "2026-10-04",
+      "definition": "A parallel circuit connects branches across the same two nodes, so each branch has the same voltage.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1216",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "One that has two or more branches for separate currents from one voltage source.",
+      "short_definition": "A parallel circuit connects branches across the same two nodes, so each branch has the same voltage.",
       "slug": "parallel-circuit",
-      "term": "Parallel circuit"
+      "term": "Parallel Circuit"
     },
     {
       "aliases": [],
@@ -9086,6 +11776,34 @@
       "short_definition": "A device that has printed circuits.",
       "slug": "pc-board",
       "term": "PC board"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "footprint",
+          "term": "Footprint"
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "A PCB footprint defines the pads, holes, outline, and placement information for a physical component.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Getting Started in KiCad",
+          "type": "website",
+          "url": "https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A PCB footprint defines the pads, holes, outline, and placement information for a physical component.",
+      "slug": "footprint-pcb",
+      "term": "PCB Footprint"
     },
     {
       "aliases": [
@@ -9239,6 +11957,29 @@
       "short_definition": "For an amplifier, this refers to the percentage of DC input power that is converted to useful AC output power.",
       "slug": "percent-effi-ciency",
       "term": "Percent efficiency"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "Perfboard is a perforated prototyping board used to solder components and hand-wire a permanent circuit.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Perfboard is a perforated prototyping board used to solder components and hand-wire a permanent circuit.",
+      "slug": "perfboard",
+      "term": "Perfboard"
     },
     {
       "aliases": [
@@ -9483,6 +12224,34 @@
     {
       "aliases": [
         {
+          "slug": "proportional-integral-derivative-control",
+          "term": "Proportional Integral Derivative Control"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "PID control combines proportional, integral, and derivative responses to the control error.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "PID control combines proportional, integral, and derivative responses to the control error.",
+      "slug": "pid-control",
+      "term": "PID Control"
+    },
+    {
+      "aliases": [
+        {
           "slug": "vp",
           "term": "VP"
         }
@@ -9507,6 +12276,29 @@
       "short_definition": "The drain-source voltage at which the drain current, ID, levels off.",
       "slug": "pinch-off-voltage",
       "term": "Pinch-offvoltage"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Ping tests reachability and round-trip response using Internet Control Message Protocol echo messages.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 792: Internet Control Message Protocol",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc792"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Ping tests reachability and round-trip response using Internet Control Message Protocol echo messages.",
+      "slug": "ping",
+      "term": "Ping"
     },
     {
       "aliases": [],
@@ -9664,25 +12456,30 @@
       "term": "Positive temperature coefficient"
     },
     {
-      "aliases": [],
+      "aliases": [
+        {
+          "slug": "pot",
+          "term": "Pot"
+        }
+      ],
       "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Variable resistor with three terminals connected as a voltage divider.",
+      "date_added": "2026-10-04",
+      "definition": "A potentiometer is a three-terminal adjustable resistor commonly used as a variable voltage divider.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1217",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Variable resistor with three terminals connected as a voltage divider.",
+      "short_definition": "A potentiometer is a three-terminal adjustable resistor commonly used as a variable voltage divider.",
       "slug": "potentiometer",
       "term": "Potentiometer"
     },
@@ -9847,6 +12644,62 @@
       "term": "Power supply"
     },
     {
+      "aliases": [
+        {
+          "slug": "psu",
+          "term": "PSU"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A computer power supply unit converts input power into regulated outputs for the computer's components.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A computer power supply unit converts input power into regulated outputs for the computer's components.",
+      "slug": "power-supply-unit",
+      "term": "Power Supply Unit"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "post",
+          "term": "POST"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A power-on self-test is firmware's initial check of essential hardware during startup.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A power-on self-test is firmware's initial check of essential hardware during startup.",
+      "slug": "power-on-self-test",
+      "term": "Power-on Self-test"
+    },
+    {
       "aliases": [],
       "categories": [
         "Units & Notation"
@@ -9868,6 +12721,34 @@
       "short_definition": "A numerical representation consisting of a base of 10 and an exponent; the base 10 raised to a power.",
       "slug": "powers-of-10",
       "term": "Powers of 10"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "classification-precision",
+          "term": "Classification Precision"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Precision is the fraction of positive predictions that are actually positive.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Precision is the fraction of positive predictions that are actually positive.",
+      "slug": "precision-metric",
+      "term": "Precision"
     },
     {
       "aliases": [],
@@ -9962,6 +12843,34 @@
       "term": "Principal node"
     },
     {
+      "aliases": [
+        {
+          "slug": "pcb",
+          "term": "PCB"
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "A printed circuit board mechanically supports components and connects them with patterned conductive layers.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Getting Started in KiCad",
+          "type": "website",
+          "url": "https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A printed circuit board mechanically supports components and connects them with patterned conductive layers.",
+      "slug": "printed-circuit-board",
+      "term": "Printed Circuit Board"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -9983,6 +12892,57 @@
       "short_definition": "Conducting paths printed on plastic board.",
       "slug": "printed-wiring",
       "term": "Printed wiring"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "computer-process",
+          "term": "Computer Process"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A process is a running instance of a program with its own execution state and assigned resources.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A process is a running instance of a program with its own execution state and assigned resources.",
+      "slug": "process-computing",
+      "term": "Process"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A prompt is the input instruction and context supplied to a generative model.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A prompt is the input instruction and context supplied to a generative model.",
+      "slug": "prompt",
+      "term": "Prompt"
     },
     {
       "aliases": [],
@@ -10013,6 +12973,29 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Proportional control makes controller output change in proportion to the current error.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Proportional control makes controller output change in proportion to the current error.",
+      "slug": "proportional-control",
+      "term": "Proportional Control"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "Particle with positive charge in the nucleus of an atom.",
       "definition_links": [],
@@ -10029,6 +13012,93 @@
       "short_definition": "Particle with positive charge in the nucleus of an atom.",
       "slug": "proton",
       "term": "Proton"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Pseudocode expresses an algorithm in structured plain language without requiring a programming language's exact syntax.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Pseudocode expresses an algorithm in structured plain language without requiring a programming language's exact syntax.",
+      "slug": "pseudocode",
+      "term": "Pseudocode"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "pulldown-resistor",
+          "term": "Pulldown Resistor"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A pull-down resistor weakly connects an input to ground so the un-driven state is a defined logic low.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A pull-down resistor weakly connects an input to ground so the un-driven state is a defined logic low.",
+      "slug": "pull-down-resistor",
+      "term": "Pull-down Resistor"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "grounded-switch",
+          "term": "Grounded Switch"
+        },
+        {
+          "slug": "grounded-switch-input",
+          "term": "Grounded Switch Input"
+        },
+        {
+          "slug": "pullup-resistor",
+          "term": "Pullup Resistor"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A pull-up resistor weakly holds an input high while a grounded switch can pull it low when pressed.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A pull-up resistor weakly holds an input high while a grounded switch can pull it low when pressed.",
+      "slug": "pull-up-resistor",
+      "term": "Pull-up Resistor"
     },
     {
       "aliases": [],
@@ -10075,6 +13145,34 @@
       "short_definition": "A sharp rise and decay of voltage or current of a specific peak value for a brief period of time.",
       "slug": "pulse",
       "term": "Pulse"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "pwm",
+          "term": "PWM"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Pulse-width modulation controls average delivered output by changing the fraction of each cycle spent on.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Pulse-width modulation controls average delivered output by changing the fraction of each cycle spent on.",
+      "slug": "pulse-width-modulation",
+      "term": "Pulse-width Modulation"
     },
     {
       "aliases": [],
@@ -10340,6 +13438,38 @@
       "term": "Real power"
     },
     {
+      "aliases": [
+        {
+          "slug": "sensitivity",
+          "term": "Sensitivity"
+        },
+        {
+          "slug": "true-positive-rate",
+          "term": "True Positive Rate"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Recall is the fraction of actual positive examples that a classifier correctly identifies.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Recall is the fraction of actual positive examples that a classifier correctly identifies.",
+      "slug": "recall",
+      "term": "Recall"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -10386,6 +13516,34 @@
       "term": "Reciprocal resistance formula"
     },
     {
+      "aliases": [
+        {
+          "slug": "recommender-system",
+          "term": "Recommender System"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A recommendation system selects and ranks items that may be useful or relevant to a user or context.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Recommendation Systems",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/recommendation"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A recommendation system selects and ranks items that may be useful or relevant to a user or context.",
+      "slug": "recommendation-system",
+      "term": "Recommendation System"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -10407,6 +13565,52 @@
       "short_definition": "Representation of a complex number in the form A 1 jB.",
       "slug": "rectangular-form",
       "term": "Rectangular form"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Rectification is the process of converting alternating current into a one-directional electrical output.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Rectification is the process of converting alternating current into a one-directional electrical output.",
+      "slug": "rectification",
+      "term": "Rectification"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A rectifier uses directional devices such as diodes to convert alternating current into one-directional output.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A rectifier uses directional devices such as diodes to convert alternating current into one-directional output.",
+      "slug": "rectifier",
+      "term": "Rectifier"
     },
     {
       "aliases": [],
@@ -10488,20 +13692,20 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Automatic switch operated by current in a coil.",
+      "date_added": "2026-10-04",
+      "definition": "A relay uses an electrically controlled actuator to open or close one or more separate contacts.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1217",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Automatic switch operated by current in a coil.",
+      "short_definition": "A relay uses an electrically controlled actuator to open or close one or more separate contacts.",
       "slug": "relay",
       "term": "Relay"
     },
@@ -10527,6 +13731,29 @@
       "short_definition": "The vibrating of relay contacts.",
       "slug": "relay-chatter",
       "term": "Relay chatter"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A residual is the difference between an observed target value and the value predicted by a model.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A residual is the difference between an observed target value and the value predicted by a model.",
+      "slug": "residual",
+      "term": "Residual"
     },
     {
       "aliases": [
@@ -10631,6 +13858,34 @@
       "short_definition": "The frequency at which the inductive reactance, XL and the capacitive reactance, XC of an LC circuit are equal.",
       "slug": "resonant-frequency",
       "term": "Resonant frequency"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "rag",
+          "term": "RAG"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Retrieval-augmented generation supplies selected external information to a generative model as context for its response.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Retrieval-augmented generation supplies selected external information to a generative model as context for its response.",
+      "slug": "retrieval-augmented-generation",
+      "term": "Retrieval-augmented Generation"
     },
     {
       "aliases": [],
@@ -10746,6 +14001,34 @@
       "short_definition": "Rotating part of generator or motor.",
       "slug": "rotor",
       "term": "Rotor"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "interlock",
+          "term": "Interlock"
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "A safety interlock permits operation only when required protective conditions are satisfied.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A safety interlock permits operation only when required protective conditions are satisfied.",
+      "slug": "safety-interlock",
+      "term": "Safety Interlock"
     },
     {
       "aliases": [],
@@ -10875,22 +14158,22 @@
         "Units & Notation"
       ],
       "category": "Units & Notation",
-      "date_added": "2026-09-24",
-      "definition": "A form of powers of 10 notation in which a number is expressed as a number between 1 and 10 times a power of 10.",
+      "date_added": "2026-10-04",
+      "definition": "Scientific notation writes a value as a coefficient from 1 up to 10 multiplied by a power of ten.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1217",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A form of powers of 10 notation in which a number is expressed as a number between 1 and 10 times a power of 10.",
-      "slug": "scientifi-c-notation",
-      "term": "Scientific notation"
+      "short_definition": "Scientific notation writes a value as a coefficient from 1 up to 10 multiplied by a power of ten.",
+      "slug": "scientific-notation",
+      "term": "Scientific Notation"
     },
     {
       "aliases": [],
@@ -10937,6 +14220,34 @@
       "short_definition": "Transformer coil connected to the load.",
       "slug": "secondary-winding",
       "term": "Secondary winding"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "ssh",
+          "term": "SSH"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Secure Shell provides authenticated, confidential remote login and related services over an untrusted network.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 4251: Secure Shell Protocol Architecture",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc4251"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Secure Shell provides authenticated, confidential remote login and related services over an untrusted network.",
+      "slug": "secure-shell",
+      "term": "Secure Shell"
     },
     {
       "aliases": [],
@@ -10990,22 +14301,68 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "One that has only one path for current.",
+      "date_added": "2026-10-04",
+      "definition": "Sequential logic produces outputs from current inputs together with stored state from earlier events.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1218",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "One that has only one path for current.",
+      "short_definition": "Sequential logic produces outputs from current inputs together with stored state from earlier events.",
+      "slug": "sequential-logic",
+      "term": "Sequential Logic"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "Serial communication transfers data as an ordered stream of bits over one or a small number of signal paths.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Serial communication transfers data as an ordered stream of bits over one or a small number of signal paths.",
+      "slug": "serial-communication",
+      "term": "Serial Communication"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A series circuit places components in one current path, so the same current passes through each component.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A series circuit places components in one current path, so the same current passes through each component.",
       "slug": "series-circuit",
-      "term": "Series circuit"
+      "term": "Series Circuit"
     },
     {
       "aliases": [],
@@ -11144,6 +14501,112 @@
       "short_definition": "Voltage sources that are connected so that the polarities of the individual sources will oppose each other in producing current flow in the circuit.",
       "slug": "series-opposing-voltages",
       "term": "Series-opposing voltages"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A server is a program or device that provides a service in response to client requests.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 1122: Requirements for Internet Hosts",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc1122"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A server is a program or device that provides a service in response to client requests.",
+      "slug": "server",
+      "term": "Server"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A setpoint is the target value that a control system tries to make its measured output follow.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A setpoint is the target value that a control system tries to make its measured output follow.",
+      "slug": "setpoint",
+      "term": "Setpoint"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "pipe",
+          "term": "Pipe"
+        },
+        {
+          "slug": "pipeline",
+          "term": "Pipeline"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A shell pipeline connects the output of one command to the input of the next command.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Bash Reference Manual",
+          "type": "website",
+          "url": "https://www.gnu.org/software/bash/manual/bash.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A shell pipeline connects the output of one command to the input of the next command.",
+      "slug": "pipe-shell",
+      "term": "Shell Pipeline"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "redirection",
+          "term": "Redirection"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Shell redirection changes where a command reads input or sends output and error streams.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Bash Reference Manual",
+          "type": "website",
+          "url": "https://www.gnu.org/software/bash/manual/bash.html"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Shell redirection changes where a command reads input or sends output and error streams.",
+      "slug": "redirection-shell",
+      "term": "Shell Redirection"
     },
     {
       "aliases": [],
@@ -11287,6 +14750,34 @@
       "short_definition": "Unit of conductance.",
       "slug": "siemens",
       "term": "Siemens"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "sig-figs",
+          "term": "Sig Figs"
+        }
+      ],
+      "categories": [
+        "Units & Notation"
+      ],
+      "category": "Units & Notation",
+      "date_added": "2026-10-04",
+      "definition": "Significant figures communicate which digits in a measured or calculated value carry meaningful precision.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Significant figures communicate which digits in a measured or calculated value carry meaningful precision.",
+      "slug": "significant-figures",
+      "term": "Significant Figures"
     },
     {
       "aliases": [],
@@ -11529,6 +15020,34 @@
       "term": "Small signal"
     },
     {
+      "aliases": [
+        {
+          "slug": "smoothing",
+          "term": "Smoothing"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A smoothing filter reduces ripple or rapid variation in a rectified or regulated output.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A smoothing filter reduces ripple or rapid variation in a rectified or regulated output.",
+      "slug": "smoothing-filter",
+      "term": "Smoothing Filter"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -11554,23 +15073,46 @@
     {
       "aliases": [],
       "categories": [
-        "Electrical & Electronics"
+        "Design Process"
       ],
-      "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Coil used for electromagnetic devices.",
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "Soldering joins conductors by heating the connection and flowing a lower-melting filler metal into it.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1218",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Coil used for electromagnetic devices.",
+      "short_definition": "Soldering joins conductors by heating the connection and flowing a lower-melting filler metal into it.",
+      "slug": "soldering",
+      "term": "Soldering"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A solenoid converts electrical current in a coil into a magnetic field and usually linear mechanical motion.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A solenoid converts electrical current in a coil into a magnetic field and usually linear mechanical motion.",
       "slug": "solenoid",
       "term": "Solenoid"
     },
@@ -11801,6 +15343,38 @@
       "term": "Standard resistor"
     },
     {
+      "aliases": [
+        {
+          "slug": "finite-state-machine",
+          "term": "Finite State Machine"
+        },
+        {
+          "slug": "fsm",
+          "term": "FSM"
+        }
+      ],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A state machine models behaviour as named states and event-driven transitions between them.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Arduino Built-in Examples",
+          "type": "website",
+          "url": "https://docs.arduino.cc/built-in-examples"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A state machine models behaviour as named states and event-driven transitions between them.",
+      "slug": "state-machine",
+      "term": "State Machine"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -11895,6 +15469,29 @@
     {
       "aliases": [],
       "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-10-04",
+      "definition": "Strain relief transfers pulling and bending forces away from an electrical termination.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Strain relief transfers pulling and bending forces away from an electrical termination.",
+      "slug": "strain-relief",
+      "term": "Strain Relief"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -11983,6 +15580,29 @@
       "short_definition": "Series resistor strings that are connected in parallel with each other.",
       "slug": "strings-in-parallel",
       "term": "Strings in parallel"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Structured output follows a defined machine-readable shape such as a table, record, or schema-constrained object.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Structured output follows a defined machine-readable shape such as a table, record, or schema-constrained object.",
+      "slug": "structured-output",
+      "term": "Structured Output"
     },
     {
       "aliases": [],
@@ -12240,6 +15860,34 @@
     {
       "aliases": [
         {
+          "slug": "service",
+          "term": "Service"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A system service is a managed background program that provides an operating-system or network function.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A system service is a managed background program that provides an operating-system or network function.",
+      "slug": "service-linux",
+      "term": "System Service"
+    },
+    {
+      "aliases": [
+        {
           "slug": "i-t",
           "term": "I T"
         }
@@ -12455,6 +16103,34 @@
       "term": "Tesla"
     },
     {
+      "aliases": [
+        {
+          "slug": "test-set",
+          "term": "Test Set"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A test dataset is held back from model selection and used for a final estimate of performance on unseen examples.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A test dataset is held back from model selection and used for a final estimate of performance on unseen examples.",
+      "slug": "test-dataset",
+      "term": "Test Dataset"
+    },
+    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -12476,6 +16152,29 @@
       "short_definition": "A resistor whose resistance value changes with changes in its operating temperatures.",
       "slug": "thermistor",
       "term": "Thermistor"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A Thevenin equivalent represents a linear two-terminal network as an ideal voltage source in series with a resistance.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A Thevenin equivalent represents a linear two-terminal network as an ideal voltage source in series with a resistance.",
+      "slug": "thevenin-equivalent",
+      "term": "Thevenin Equivalent"
     },
     {
       "aliases": [],
@@ -12603,22 +16302,91 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "Time required to change by 63% after a sudden rise or fall in V and I. Results from the ability of L and C to store energy. Equals RC or LyR.",
+      "date_added": "2026-10-04",
+      "definition": "A time constant characterizes how quickly a first-order circuit rises or falls after a change.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1219",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "Time required to change by 63% after a sudden rise or fall in V and I.",
+      "short_definition": "A time constant characterizes how quickly a first-order circuit rises or falls after a change.",
       "slug": "time-constant",
-      "term": "Time constant"
+      "term": "Time Constant"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "tmux is a terminal multiplexer that manages persistent terminal sessions containing multiple windows and panes.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "tmux is a terminal multiplexer that manages persistent terminal sessions containing multiple windows and panes.",
+      "slug": "tmux",
+      "term": "tmux"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A token is one discrete unit of text representation processed by a language model.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A token is one discrete unit of text representation processed by a language model.",
+      "slug": "token",
+      "term": "Token"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Tokenization converts text into a sequence of tokens according to a defined vocabulary and procedure.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Tokenization converts text into a sequence of tokens according to a defined vocabulary and procedure.",
+      "slug": "tokenization",
+      "term": "Tokenization"
     },
     {
       "aliases": [],
@@ -12667,6 +16435,57 @@
       "term": "Toroid"
     },
     {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "Traceroute estimates the sequence of network hops toward a destination by eliciting time-exceeded responses.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "RFC 792: Internet Control Message Protocol",
+          "type": "website",
+          "url": "https://www.rfc-editor.org/rfc/rfc792"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Traceroute estimates the sequence of network hops toward a destination by eliciting time-exceeded responses.",
+      "slug": "traceroute",
+      "term": "Traceroute"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "training-set",
+          "term": "Training Set"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A training dataset contains examples used to adjust a model's parameters.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A training dataset contains examples used to adjust a model's parameters.",
+      "slug": "training-dataset",
+      "term": "Training Dataset"
+    },
+    {
       "aliases": [
         {
           "slug": "gm",
@@ -12695,27 +16514,32 @@
       "term": "Transconductance"
     },
     {
-      "aliases": [],
-      "categories": [
-        "Electrical & Electronics"
+      "aliases": [
+        {
+          "slug": "transformer",
+          "term": "Transformer"
+        }
       ],
-      "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "A device that has two or more coil windings used to step up or step down AC voltage.",
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A Transformer is a neural-network architecture built around attention and position-aware token representations.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1219",
-          "type": "book"
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A device that has two or more coil windings used to step up or step down AC voltage.",
-      "slug": "transformer",
-      "term": "Transformer"
+      "short_definition": "A Transformer is a neural-network architecture built around attention and position-aware token representations.",
+      "slug": "transformer-model",
+      "term": "Transformer Model"
     },
     {
       "aliases": [],
@@ -12762,6 +16586,29 @@
       "short_definition": "A three-terminal semiconductor device that can amplify an AC signal or be used as an electronic switch.",
       "slug": "transistor",
       "term": "Transistor"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A transistor switch uses a smaller control signal to place a transistor in off or conducting operation for a load.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A transistor switch uses a smaller control signal to place a transistor in off or conducting operation for a load.",
+      "slug": "transistor-switch",
+      "term": "Transistor Switch"
     },
     {
       "aliases": [],
@@ -12861,6 +16708,29 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A truth table lists every input combination in binary order and records each output in its own column.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A truth table lists every input combination in binary order and records each output in its own column.",
+      "slug": "truth-table",
+      "term": "Truth Table"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
       "date_added": "2026-09-24",
       "definition": "Varying the resonant frequency of an LC circuit.",
       "definition_links": [],
@@ -12950,6 +16820,34 @@
     {
       "aliases": [
         {
+          "slug": "uefi",
+          "term": "UEFI"
+        }
+      ],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "UEFI is a modern firmware interface that initializes hardware and provides services for starting an operating system.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Ubuntu Server Documentation",
+          "type": "website",
+          "url": "https://documentation.ubuntu.com/server/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "UEFI is a modern firmware interface that initializes hardware and provides services for starting an operating system.",
+      "slug": "unified-extensible-firmware-interface",
+      "term": "Unified Extensible Firmware Interface"
+    },
+    {
+      "aliases": [
+        {
           "slug": "ujt",
           "term": "UJT"
         }
@@ -13024,6 +16922,29 @@
     {
       "aliases": [],
       "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "Unsupervised learning seeks patterns or representations in data without target labels for each example.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "Unsupervised learning seeks patterns or representations in data without target labels for each example.",
+      "slug": "unsupervised-learning",
+      "term": "Unsupervised Learning"
+    },
+    {
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
@@ -13043,6 +16964,57 @@
       "short_definition": "Electrons in the outermost ring or shell of an atom.",
       "slug": "valence-electrons",
       "term": "Valence electrons"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "validation-set",
+          "term": "Validation Set"
+        }
+      ],
+      "categories": [
+        "Analysis & Probability"
+      ],
+      "category": "Analysis & Probability",
+      "date_added": "2026-10-04",
+      "definition": "A validation dataset is separate from training data and supports model selection and tuning before final testing.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Google Machine Learning Glossary",
+          "type": "website",
+          "url": "https://developers.google.com/machine-learning/glossary/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A validation dataset is separate from training data and supports model selection and tuning before final testing.",
+      "slug": "validation-dataset",
+      "term": "Validation Dataset"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Software & Engines"
+      ],
+      "category": "Software & Engines",
+      "date_added": "2026-10-04",
+      "definition": "A variable is a named reference used by a program to access a value that may change.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "The Python Tutorial",
+          "type": "website",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A variable is a named reference used by a program to access a value that may change.",
+      "slug": "variable-programming",
+      "term": "Variable"
     },
     {
       "aliases": [],
@@ -13325,22 +17297,22 @@
         "Electrical & Electronics"
       ],
       "category": "Electrical & Electronics",
-      "date_added": "2026-09-24",
-      "definition": "A series circuit to provide V less than the source voltage.",
+      "date_added": "2026-10-04",
+      "definition": "A voltage divider uses series impedances to produce an output that is a fraction of the input voltage.",
       "definition_links": [],
       "learning_tracks": [],
       "redirect_slugs": [],
       "references": [
         {
-          "key": "grob2016",
-          "pages": "1219",
-          "type": "book"
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
         }
       ],
       "related_terms": [],
-      "short_definition": "A series circuit to provide V less than the source voltage.",
+      "short_definition": "A voltage divider uses series impedances to produce an output that is a fraction of the input voltage.",
       "slug": "voltage-divider",
-      "term": "Voltage divider"
+      "term": "Voltage Divider"
     },
     {
       "aliases": [],
@@ -13438,6 +17410,29 @@
       "short_definition": "The positive and negative ends of a potential difference across a component such as a resistor.",
       "slug": "voltage-polarity",
       "term": "Voltage polarity"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "A voltage regulator maintains an output voltage within limits as input or load conditions change.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "A voltage regulator maintains an output voltage within limits as input or load conditions change.",
+      "slug": "voltage-regulator",
+      "term": "Voltage Regulator"
     },
     {
       "aliases": [],
@@ -13842,6 +17837,52 @@
       "short_definition": "Inductive reactance equal to 2πfL.",
       "slug": "xl",
       "term": "XL"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An XNOR gate outputs 1 when its compared inputs have the same logic value.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An XNOR gate outputs 1 when its compared inputs have the same logic value.",
+      "slug": "xnor-gate",
+      "term": "XNOR Gate"
+    },
+    {
+      "aliases": [],
+      "categories": [
+        "Electrical & Electronics"
+      ],
+      "category": "Electrical & Electronics",
+      "date_added": "2026-10-04",
+      "definition": "An XOR gate outputs 1 when its compared inputs have different logic values.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "All About Circuits Textbook",
+          "type": "website",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        }
+      ],
+      "related_terms": [],
+      "short_definition": "An XOR gate outputs 1 when its compared inputs have different logic values.",
+      "slug": "xor-gate",
+      "term": "XOR Gate"
     },
     {
       "aliases": [],

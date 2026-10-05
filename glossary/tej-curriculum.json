@@ -1,0 +1,1255 @@
+{
+  "schema_version": 1,
+  "added": "2026-10-04",
+  "sources": {
+    "aac": {
+      "title": "All About Circuits Textbook",
+      "url": "https://www.allaboutcircuits.com/textbook/"
+    },
+    "arduino": {
+      "title": "Arduino Built-in Examples",
+      "url": "https://docs.arduino.cc/built-in-examples"
+    },
+    "bash": {
+      "title": "Bash Reference Manual",
+      "url": "https://www.gnu.org/software/bash/manual/bash.html"
+    },
+    "git": {
+      "title": "Git Reference and Glossary",
+      "url": "https://git-scm.com/docs/gitglossary"
+    },
+    "google-ml": {
+      "title": "Google Machine Learning Glossary",
+      "url": "https://developers.google.com/machine-learning/glossary/"
+    },
+    "google-recsys": {
+      "title": "Google Recommendation Systems",
+      "url": "https://developers.google.com/machine-learning/recommendation"
+    },
+    "kicad": {
+      "title": "Getting Started in KiCad",
+      "url": "https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html"
+    },
+    "karpathy": {
+      "title": "Neural Networks: Zero to Hero",
+      "url": "https://karpathy.ai/zero-to-hero.html"
+    },
+    "python": {
+      "title": "The Python Tutorial",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    "rfc-dhcp": {
+      "title": "RFC 2131: Dynamic Host Configuration Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc2131"
+    },
+    "rfc-dns": {
+      "title": "RFC 1034: Domain Names - Concepts and Facilities",
+      "url": "https://www.rfc-editor.org/rfc/rfc1034"
+    },
+    "rfc-icmp": {
+      "title": "RFC 792: Internet Control Message Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc792"
+    },
+    "rfc-ip": {
+      "title": "RFC 1122: Requirements for Internet Hosts",
+      "url": "https://www.rfc-editor.org/rfc/rfc1122"
+    },
+    "rfc-ssh": {
+      "title": "RFC 4251: Secure Shell Protocol Architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc4251"
+    },
+    "ubuntu": {
+      "title": "Ubuntu Server Documentation",
+      "url": "https://documentation.ubuntu.com/server/"
+    }
+  },
+  "entries": {
+    "alternating-current": {
+      "term": "Alternating Current",
+      "aliases": ["AC"],
+      "short_definition": "Alternating current changes direction periodically and usually changes magnitude with time.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "accuracy": {
+      "term": "Accuracy",
+      "short_definition": "Accuracy is the fraction of all predictions that a classification model gets correct.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "active-low": {
+      "term": "Active-low Logic",
+      "short_definition": "An active-low signal performs its named action when the signal is at logic low.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "algorithm": {
+      "term": "Algorithm",
+      "short_definition": "An algorithm is a finite, ordered procedure for solving a problem or completing a task.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "analog-input": {
+      "term": "Analog Input",
+      "aliases": ["Analogue Input"],
+      "short_definition": "An analog input converts a voltage within an allowed range into a numerical reading.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "and-gate": {
+      "term": "AND Gate",
+      "short_definition": "An AND gate outputs 1 only when every input is 1.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "array": {
+      "term": "Array",
+      "short_definition": "An array stores an ordered collection of values that are accessed by position or index.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "attention": {
+      "term": "Attention",
+      "short_definition": "Attention lets a neural network assign different weights to information when producing a representation or prediction.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "authentication": {
+      "term": "Authentication",
+      "short_definition": "Authentication is the process of verifying the identity of a user, device, or service.",
+      "category": "Software & Engines",
+      "source": "rfc-ssh"
+    },
+    "back-emf": {
+      "term": "Back EMF",
+      "aliases": ["Counter EMF"],
+      "short_definition": "Back EMF is a voltage induced in a coil that opposes the change in current that produced it.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "backpropagation": {
+      "term": "Backpropagation",
+      "short_definition": "Backpropagation efficiently computes how each neural-network parameter contributes to prediction error.",
+      "category": "Analysis & Probability",
+      "source": "karpathy"
+    },
+    "baseline-model": {
+      "term": "Baseline Model",
+      "short_definition": "A baseline model is a simple reference result used to judge whether a more complex model adds useful performance.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "bigram": {
+      "term": "Bigram",
+      "short_definition": "A bigram is an ordered pair of adjacent tokens used in a two-token language model.",
+      "category": "Analysis & Probability",
+      "source": "karpathy"
+    },
+    "bill-of-materials": {
+      "term": "Bill of Materials",
+      "aliases": ["BOM"],
+      "short_definition": "A bill of materials is a structured list of the parts, quantities, and identifying details needed for a build.",
+      "category": "Design Process",
+      "source": "kicad"
+    },
+    "binary-number-system": {
+      "term": "Binary Number System",
+      "aliases": ["Base 2", "Binary"],
+      "short_definition": "The binary number system represents values with powers of two and the digits 0 and 1.",
+      "category": "Units & Notation",
+      "source": "aac"
+    },
+    "bios": {
+      "term": "BIOS",
+      "aliases": ["Basic Input Output System"],
+      "short_definition": "BIOS is older PC firmware that initializes hardware and starts the operating-system boot process.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "boolean-algebra": {
+      "term": "Boolean Algebra",
+      "short_definition": "Boolean algebra describes logical values and operations such as NOT, AND, and OR.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "branch-git": {
+      "term": "Git Branch",
+      "aliases": ["Branch"],
+      "short_definition": "A Git branch is a named line of development whose tip advances as new commits are added.",
+      "category": "Software & Engines",
+      "source": "git"
+    },
+    "breadboard": {
+      "term": "Breadboard",
+      "short_definition": "A solderless breadboard provides reusable connected rows and power rails for prototyping circuits.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "capacitor": {
+      "term": "Capacitor",
+      "short_definition": "A capacitor stores energy in an electric field between conductors separated by an insulator.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "circuit-breaker": {
+      "term": "Circuit Breaker",
+      "short_definition": "A circuit breaker opens a circuit when current exceeds a safe condition and can normally be reset.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "classification": {
+      "term": "Classification",
+      "short_definition": "Classification is a machine-learning task that predicts which category or class an example belongs to.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "class-imbalance": {
+      "term": "Class Imbalance",
+      "short_definition": "Class imbalance occurs when some target classes have many more examples than others.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "client": {
+      "term": "Client",
+      "short_definition": "A client is a program or device that requests a service from a server.",
+      "category": "Software & Engines",
+      "source": "rfc-ip"
+    },
+    "closed-loop-control": {
+      "term": "Closed-loop Control",
+      "short_definition": "Closed-loop control uses measured output feedback to adjust the controller's action.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "clustering": {
+      "term": "Clustering",
+      "short_definition": "Clustering groups examples by similarity without requiring known class labels.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "computer-numerical-control": {
+      "term": "Computer Numerical Control",
+      "aliases": ["CNC"],
+      "short_definition": "Computer numerical control coordinates machine motion from programmed commands.",
+      "category": "Design Process",
+      "source": "ubuntu"
+    },
+    "combinational-logic": {
+      "term": "Combinational Logic",
+      "short_definition": "Combinational logic produces outputs determined only by the current input values.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "git-commit": {
+      "term": "Git Commit",
+      "aliases": ["Commit"],
+      "short_definition": "A Git commit records a project state together with identifying information and links to its parent history.",
+      "category": "Software & Engines",
+      "source": "git"
+    },
+    "confusion-matrix": {
+      "term": "Confusion Matrix",
+      "short_definition": "A confusion matrix counts predicted classes against actual classes so different error types remain visible.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "control-system": {
+      "term": "Control System",
+      "short_definition": "A control system directs a process or machine so its output follows an intended behaviour.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "cron": {
+      "term": "Cron",
+      "short_definition": "Cron is a Unix-style scheduler that runs commands at configured dates or repeating times.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "cross-validation": {
+      "term": "Cross-validation",
+      "short_definition": "Cross-validation repeatedly changes which data subset is held out so model performance can be estimated more reliably.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "current-divider": {
+      "term": "Current Divider",
+      "short_definition": "A current divider is a parallel network in which branch current depends on branch resistance or impedance.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "data-leakage": {
+      "term": "Data Leakage",
+      "aliases": ["Label Leakage"],
+      "short_definition": "Data leakage lets information unavailable at prediction time influence model training or evaluation.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "data-logging": {
+      "term": "Data Logging",
+      "short_definition": "Data logging records measurements with time, units, and enough metadata to interpret the results later.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "data-type": {
+      "term": "Data Type",
+      "short_definition": "A data type defines the kind of value a program can store and the operations allowed on it.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "direct-current": {
+      "term": "Direct Current",
+      "aliases": ["DC"],
+      "short_definition": "Direct current maintains one direction of charge flow, even if its magnitude changes.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "debouncing": {
+      "term": "Debouncing",
+      "aliases": ["Switch Debounce"],
+      "short_definition": "Debouncing prevents the rapid transitions of a mechanical contact from being counted as multiple intended events.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "decision-tree": {
+      "term": "Decision Tree",
+      "short_definition": "A decision tree makes predictions by following learned feature tests through branches to an output.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "decimal-number-system": {
+      "term": "Decimal Number System",
+      "aliases": ["Base 10", "Decimal"],
+      "short_definition": "The decimal number system represents values with powers of ten and the digits 0 through 9.",
+      "category": "Units & Notation",
+      "source": "aac"
+    },
+    "desoldering": {
+      "term": "Desoldering",
+      "short_definition": "Desoldering removes solder so a connection or component can be separated without avoidable damage.",
+      "category": "Design Process",
+      "source": "aac"
+    },
+    "dynamic-host-configuration-protocol": {
+      "term": "Dynamic Host Configuration Protocol",
+      "aliases": ["DHCP"],
+      "short_definition": "DHCP supplies network configuration, such as an IP address and lease time, to a client.",
+      "category": "Software & Engines",
+      "source": "rfc-dhcp"
+    },
+    "digital-logic-level": {
+      "term": "Digital Logic Level",
+      "aliases": ["Logic Level"],
+      "short_definition": "A digital logic level is a voltage range interpreted as low, high, or indeterminate by a digital input.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "domain-name-system": {
+      "term": "Domain Name System",
+      "aliases": ["DNS"],
+      "short_definition": "The Domain Name System maps hierarchical names to resource records such as IP addresses.",
+      "category": "Software & Engines",
+      "source": "rfc-dns"
+    },
+    "electrostatic-discharge": {
+      "term": "Electrostatic Discharge",
+      "aliases": ["ESD"],
+      "short_definition": "Electrostatic discharge is a sudden transfer of static charge that can damage electronic components.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "embedding": {
+      "term": "Embedding",
+      "short_definition": "An embedding is a learned vector representation in which useful relationships can appear as geometric proximity.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "engineering-notation": {
+      "term": "Engineering Notation",
+      "short_definition": "Engineering notation uses powers of ten whose exponents are multiples of three.",
+      "category": "Units & Notation",
+      "source": "aac"
+    },
+    "ensemble-model": {
+      "term": "Ensemble Model",
+      "short_definition": "An ensemble combines predictions from multiple models to produce a final result.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "equivalent-resistance": {
+      "term": "Equivalent Resistance",
+      "short_definition": "Equivalent resistance is the single resistance that has the same terminal voltage-current behaviour as a resistor network.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "exception": {
+      "term": "Exception",
+      "short_definition": "An exception is a program event that interrupts normal execution when an error or unusual condition occurs.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "explainability": {
+      "term": "Explainability",
+      "short_definition": "Explainability concerns how people can understand the evidence and reasoning behind a model's behaviour.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "fairness-machine-learning": {
+      "term": "Machine-learning Fairness",
+      "aliases": ["ML Fairness"],
+      "short_definition": "Machine-learning fairness examines whether a system's outcomes or errors create unjustified differences across people or groups.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "feedback": {
+      "term": "Feedback",
+      "short_definition": "Feedback returns information about a system's output to influence its future input or control action.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "filesystem": {
+      "term": "Filesystem",
+      "aliases": ["File System"],
+      "short_definition": "A filesystem organizes stored data into files, directories, names, and associated metadata.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "floating-input": {
+      "term": "Floating Input",
+      "short_definition": "A floating input is not held at a defined logic voltage and may change state unpredictably.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "flyback-diode": {
+      "term": "Flyback Diode",
+      "aliases": ["Freewheeling Diode"],
+      "short_definition": "A flyback diode provides a safe current path when an inductive load is switched off.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "footprint-pcb": {
+      "term": "PCB Footprint",
+      "aliases": ["Footprint"],
+      "short_definition": "A PCB footprint defines the pads, holes, outline, and placement information for a physical component.",
+      "category": "Design Process",
+      "source": "kicad"
+    },
+    "full-adder": {
+      "term": "Full Adder",
+      "short_definition": "A full adder adds two input bits and a carry-in to produce a sum bit and carry-out.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "function-programming": {
+      "term": "Function",
+      "short_definition": "A function is a named, reusable block of code that can accept inputs and return a result.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "fuse": {
+      "term": "Fuse",
+      "short_definition": "A fuse opens a circuit by melting its element when excessive current persists.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "gerber-file": {
+      "term": "Gerber File",
+      "aliases": ["Gerbers"],
+      "short_definition": "A Gerber file describes one manufactured PCB layer for fabrication and inspection.",
+      "category": "Design Process",
+      "source": "kicad"
+    },
+    "general-purpose-input-output": {
+      "term": "General-purpose Input Output",
+      "aliases": ["GPIO"],
+      "short_definition": "A GPIO pin is a configurable digital connection used by a controller to read or drive external circuits.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "gradient": {
+      "term": "Gradient",
+      "short_definition": "A gradient collects the rates at which a function changes with respect to its parameters.",
+      "category": "Analysis & Probability",
+      "source": "karpathy"
+    },
+    "grounding-ai": {
+      "term": "Grounding",
+      "aliases": ["AI Grounding"],
+      "short_definition": "Grounding connects generated claims to selected evidence, data, or observable system state.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "guess-method": {
+      "term": "GUESS Method",
+      "aliases": ["Given Unknown Equation Substitute Solve", "GUESS Workflow"],
+      "short_definition": "The GUESS method organizes a calculation as Given, Unknown, Equation, Substitute, and Solve.",
+      "category": "Design Process",
+      "source": "aac"
+    },
+    "half-adder": {
+      "term": "Half Adder",
+      "short_definition": "A half adder adds two input bits to produce a sum bit and a carry bit.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "hallucination-ai": {
+      "term": "AI Hallucination",
+      "aliases": ["Hallucination"],
+      "short_definition": "An AI hallucination is generated content presented without adequate support from reliable evidence.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "hexadecimal-number-system": {
+      "term": "Hexadecimal Number System",
+      "aliases": ["Base 16", "Hex", "Hexadecimal"],
+      "short_definition": "The hexadecimal number system represents values with powers of sixteen and the symbols 0 through 9 and A through F.",
+      "category": "Units & Notation",
+      "source": "aac"
+    },
+    "hysteresis": {
+      "term": "Hysteresis",
+      "short_definition": "Hysteresis uses different switching thresholds for rising and falling values to prevent rapid chatter.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "inductor": {
+      "term": "Inductor",
+      "short_definition": "An inductor stores energy in a magnetic field and opposes changes in current.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "internal-pull-up": {
+      "term": "Internal Pull-up",
+      "aliases": ["INPUT_PULLUP", "Internal Pullup"],
+      "short_definition": "An internal pull-up is a controller's built-in resistor that weakly holds an input high when no device pulls it low.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "safety-interlock": {
+      "term": "Safety Interlock",
+      "aliases": ["Interlock"],
+      "short_definition": "A safety interlock permits operation only when required protective conditions are satisfied.",
+      "category": "Design Process",
+      "source": "aac"
+    },
+    "internal-resistance": {
+      "term": "Internal Resistance",
+      "short_definition": "Internal resistance models voltage loss and heating inside a source when it supplies current.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "interrupt": {
+      "term": "Interrupt",
+      "short_definition": "An interrupt pauses normal program flow so a designated routine can respond to an event.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "ip-address": {
+      "term": "IP Address",
+      "aliases": ["Internet Protocol Address"],
+      "short_definition": "An IP address identifies an interface for delivering packets within an Internet Protocol network.",
+      "category": "Software & Engines",
+      "source": "rfc-ip"
+    },
+    "karnaugh-map": {
+      "term": "Karnaugh Map",
+      "aliases": ["K-map"],
+      "short_definition": "A Karnaugh map arranges truth-table values so adjacent groups can reveal a simpler Boolean expression.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "kernel": {
+      "term": "Kernel",
+      "short_definition": "A kernel is the operating-system core that manages hardware resources and provides services to programs.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "kirchhoffs-current-law": {
+      "term": "Kirchhoff's Current Law",
+      "aliases": ["KCL"],
+      "short_definition": "Kirchhoff's current law states that the algebraic sum of currents at a node is zero.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "kirchhoffs-voltage-law": {
+      "term": "Kirchhoff's Voltage Law",
+      "aliases": ["KVL"],
+      "short_definition": "Kirchhoff's voltage law states that the algebraic sum of voltage changes around a closed loop is zero.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "language-model": {
+      "term": "Language Model",
+      "aliases": ["LM"],
+      "short_definition": "A language model assigns probabilities to token sequences and can predict tokens from context.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "least-privilege": {
+      "term": "Least Privilege",
+      "short_definition": "Least privilege gives each user or process only the permissions needed for its approved task.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "light-dependent-resistor": {
+      "term": "Light-dependent Resistor",
+      "aliases": ["LDR", "Photoresistor"],
+      "short_definition": "A light-dependent resistor changes resistance as the light reaching it changes.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "linear-regression": {
+      "term": "Linear Regression",
+      "short_definition": "Linear regression fits a linear relationship between input features and a numerical target.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "linux-distribution": {
+      "term": "Linux Distribution",
+      "aliases": ["Distro"],
+      "short_definition": "A Linux distribution packages the Linux kernel with system tools, applications, and an update method.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "loading-effect": {
+      "term": "Loading Effect",
+      "short_definition": "Loading occurs when a connected circuit changes the voltage or current that an earlier circuit would produce by itself.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "logic-gate": {
+      "term": "Logic Gate",
+      "short_definition": "A logic gate implements a Boolean operation on one or more digital inputs.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "loop-programming": {
+      "term": "Loop",
+      "short_definition": "A loop repeats a block of instructions while a condition or sequence controls the repetition.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "loss-function": {
+      "term": "Loss Function",
+      "short_definition": "A loss function produces a numerical penalty that measures how far predictions are from desired results.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "mac-address": {
+      "term": "MAC Address",
+      "aliases": ["Media Access Control Address"],
+      "short_definition": "A MAC address is a link-layer identifier used to deliver frames on a local network segment.",
+      "category": "Software & Engines",
+      "source": "rfc-ip"
+    },
+    "machine-learning-bias": {
+      "term": "Machine-learning Bias",
+      "aliases": ["ML Bias"],
+      "short_definition": "Machine-learning bias is a systematic tendency in data, modelling, or evaluation that distorts a system's results.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "maximum-power-transfer": {
+      "term": "Maximum Power Transfer",
+      "short_definition": "Maximum power transfer occurs at a load condition that receives the greatest available power from a source network.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "measurement-uncertainty": {
+      "term": "Measurement Uncertainty",
+      "short_definition": "Measurement uncertainty describes the reasonable range around a measured result caused by instrument and method limits.",
+      "category": "Measurement & Motion",
+      "source": "aac"
+    },
+    "metric-prefix": {
+      "term": "Metric Prefix",
+      "short_definition": "A metric prefix scales an SI unit by a named power of ten, such as milli, kilo, or mega.",
+      "category": "Units & Notation",
+      "source": "aac"
+    },
+    "microcontroller": {
+      "term": "Microcontroller",
+      "aliases": ["MCU"],
+      "short_definition": "A microcontroller combines a processor, memory, and programmable input-output hardware on one integrated circuit.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "mount-filesystem": {
+      "term": "Mount",
+      "aliases": ["Mount a Filesystem"],
+      "short_definition": "To mount a filesystem is to attach it at a directory so its files become accessible.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "digital-multimeter": {
+      "term": "Digital Multimeter",
+      "aliases": ["DMM", "Multimeter"],
+      "short_definition": "A digital multimeter measures quantities such as voltage, current, resistance, and continuity when connected in the correct mode.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "nand-gate": {
+      "term": "NAND Gate",
+      "short_definition": "A NAND gate outputs the inverse of AND, so it outputs 0 only when every input is 1.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "neural-network": {
+      "term": "Neural Network",
+      "short_definition": "A neural network is a layered model that learns parameterized transformations from examples.",
+      "category": "Analysis & Probability",
+      "source": "karpathy"
+    },
+    "ngram": {
+      "term": "N-gram",
+      "short_definition": "An n-gram is an ordered sequence of n adjacent tokens used to model local patterns.",
+      "category": "Analysis & Probability",
+      "source": "karpathy"
+    },
+    "nor-gate": {
+      "term": "NOR Gate",
+      "short_definition": "A NOR gate outputs the inverse of OR, so it outputs 1 only when every input is 0.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "norton-equivalent": {
+      "term": "Norton Equivalent",
+      "short_definition": "A Norton equivalent represents a linear two-terminal network as an ideal current source in parallel with a resistance.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "not-gate": {
+      "term": "NOT Gate",
+      "aliases": ["Inverter"],
+      "short_definition": "A NOT gate outputs the opposite logic value from its input.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "open-loop-control": {
+      "term": "Open-loop Control",
+      "short_definition": "Open-loop control applies a command without using measured output to correct the action.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "operating-system": {
+      "term": "Operating System",
+      "aliases": ["OS"],
+      "short_definition": "An operating system manages computer resources and provides services and interfaces for applications and users.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "operational-amplifier": {
+      "term": "Operational Amplifier",
+      "aliases": ["Op-amp"],
+      "short_definition": "An operational amplifier is a high-gain differential amplifier commonly used with feedback to perform analog functions.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "or-gate": {
+      "term": "OR Gate",
+      "short_definition": "An OR gate outputs 1 when at least one input is 1.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "overfitting": {
+      "term": "Overfitting",
+      "short_definition": "Overfitting occurs when a model fits training data so specifically that it performs poorly on new examples.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "package-manager": {
+      "term": "Package Manager",
+      "short_definition": "A package manager installs, removes, and updates software from configured package sources while tracking dependencies.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "parallel-circuit": {
+      "term": "Parallel Circuit",
+      "short_definition": "A parallel circuit connects branches across the same two nodes, so each branch has the same voltage.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "disk-partition": {
+      "term": "Disk Partition",
+      "aliases": ["Partition"],
+      "short_definition": "A disk partition is a defined region of a storage device that can be managed as a separate logical area.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "printed-circuit-board": {
+      "term": "Printed Circuit Board",
+      "aliases": ["PCB"],
+      "short_definition": "A printed circuit board mechanically supports components and connects them with patterned conductive layers.",
+      "category": "Design Process",
+      "source": "kicad"
+    },
+    "perfboard": {
+      "term": "Perfboard",
+      "short_definition": "Perfboard is a perforated prototyping board used to solder components and hand-wire a permanent circuit.",
+      "category": "Design Process",
+      "source": "aac"
+    },
+    "file-permissions": {
+      "term": "File Permissions",
+      "aliases": ["Permissions"],
+      "short_definition": "File permissions control which users may read, modify, or execute a file or access a directory.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "pid-control": {
+      "term": "PID Control",
+      "aliases": ["Proportional Integral Derivative Control"],
+      "short_definition": "PID control combines proportional, integral, and derivative responses to the control error.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "ping": {
+      "term": "Ping",
+      "short_definition": "Ping tests reachability and round-trip response using Internet Control Message Protocol echo messages.",
+      "category": "Software & Engines",
+      "source": "rfc-icmp"
+    },
+    "pipe-shell": {
+      "term": "Shell Pipeline",
+      "aliases": ["Pipe", "Pipeline"],
+      "short_definition": "A shell pipeline connects the output of one command to the input of the next command.",
+      "category": "Software & Engines",
+      "source": "bash"
+    },
+    "port-network": {
+      "term": "Network Port",
+      "aliases": ["Port"],
+      "short_definition": "A network port number identifies a transport-layer endpoint used by an application or service.",
+      "category": "Software & Engines",
+      "source": "rfc-ip"
+    },
+    "power-on-self-test": {
+      "term": "Power-on Self-test",
+      "aliases": ["POST"],
+      "short_definition": "A power-on self-test is firmware's initial check of essential hardware during startup.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "potentiometer": {
+      "term": "Potentiometer",
+      "aliases": ["Pot"],
+      "short_definition": "A potentiometer is a three-terminal adjustable resistor commonly used as a variable voltage divider.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "precision-metric": {
+      "term": "Precision",
+      "aliases": ["Classification Precision"],
+      "short_definition": "Precision is the fraction of positive predictions that are actually positive.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "process-computing": {
+      "term": "Process",
+      "aliases": ["Computer Process"],
+      "short_definition": "A process is a running instance of a program with its own execution state and assigned resources.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "prompt": {
+      "term": "Prompt",
+      "short_definition": "A prompt is the input instruction and context supplied to a generative model.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "proportional-control": {
+      "term": "Proportional Control",
+      "short_definition": "Proportional control makes controller output change in proportion to the current error.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "network-protocol": {
+      "term": "Network Protocol",
+      "aliases": ["Protocol"],
+      "short_definition": "A network protocol defines rules and message formats that communicating systems follow.",
+      "category": "Software & Engines",
+      "source": "rfc-ip"
+    },
+    "pseudocode": {
+      "term": "Pseudocode",
+      "short_definition": "Pseudocode expresses an algorithm in structured plain language without requiring a programming language's exact syntax.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "pull-down-resistor": {
+      "term": "Pull-down Resistor",
+      "aliases": ["Pulldown Resistor"],
+      "short_definition": "A pull-down resistor weakly connects an input to ground so the un-driven state is a defined logic low.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "pull-up-resistor": {
+      "term": "Pull-up Resistor",
+      "aliases": ["Grounded Switch Input", "Grounded Switch", "Pullup Resistor"],
+      "short_definition": "A pull-up resistor weakly holds an input high while a grounded switch can pull it low when pressed.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "pulse-width-modulation": {
+      "term": "Pulse-width Modulation",
+      "aliases": ["PWM"],
+      "short_definition": "Pulse-width modulation controls average delivered output by changing the fraction of each cycle spent on.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "recall": {
+      "term": "Recall",
+      "aliases": ["Sensitivity", "True Positive Rate"],
+      "short_definition": "Recall is the fraction of actual positive examples that a classifier correctly identifies.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "recommendation-system": {
+      "term": "Recommendation System",
+      "aliases": ["Recommender System"],
+      "short_definition": "A recommendation system selects and ranks items that may be useful or relevant to a user or context.",
+      "category": "Analysis & Probability",
+      "source": "google-recsys"
+    },
+    "rectifier": {
+      "term": "Rectifier",
+      "short_definition": "A rectifier uses directional devices such as diodes to convert alternating current into one-directional output.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "redirection-shell": {
+      "term": "Shell Redirection",
+      "aliases": ["Redirection"],
+      "short_definition": "Shell redirection changes where a command reads input or sends output and error streams.",
+      "category": "Software & Engines",
+      "source": "bash"
+    },
+    "relay": {
+      "term": "Relay",
+      "short_definition": "A relay uses an electrically controlled actuator to open or close one or more separate contacts.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "residual": {
+      "term": "Residual",
+      "short_definition": "A residual is the difference between an observed target value and the value predicted by a model.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "retrieval-augmented-generation": {
+      "term": "Retrieval-augmented Generation",
+      "aliases": ["RAG"],
+      "short_definition": "Retrieval-augmented generation supplies selected external information to a generative model as context for its response.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "sampling-language-model": {
+      "term": "Language-model Sampling",
+      "aliases": ["Sampling"],
+      "short_definition": "Language-model sampling chooses an output token from a probability distribution rather than always taking only the top choice.",
+      "category": "Analysis & Probability",
+      "source": "karpathy"
+    },
+    "circuit-schematic": {
+      "term": "Circuit Schematic",
+      "aliases": ["Schematic"],
+      "short_definition": "A circuit schematic uses standardized symbols and nets to show electrical relationships rather than physical layout.",
+      "category": "Electrical & Electronics",
+      "source": "kicad"
+    },
+    "scientific-notation": {
+      "term": "Scientific Notation",
+      "short_definition": "Scientific notation writes a value as a coefficient from 1 up to 10 multiplied by a power of ten.",
+      "category": "Units & Notation",
+      "source": "aac"
+    },
+    "sequential-logic": {
+      "term": "Sequential Logic",
+      "short_definition": "Sequential logic produces outputs from current inputs together with stored state from earlier events.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "serial-communication": {
+      "term": "Serial Communication",
+      "short_definition": "Serial communication transfers data as an ordered stream of bits over one or a small number of signal paths.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "series-circuit": {
+      "term": "Series Circuit",
+      "short_definition": "A series circuit places components in one current path, so the same current passes through each component.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "server": {
+      "term": "Server",
+      "short_definition": "A server is a program or device that provides a service in response to client requests.",
+      "category": "Software & Engines",
+      "source": "rfc-ip"
+    },
+    "service-linux": {
+      "term": "System Service",
+      "aliases": ["Service"],
+      "short_definition": "A system service is a managed background program that provides an operating-system or network function.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "setpoint": {
+      "term": "Setpoint",
+      "short_definition": "A setpoint is the target value that a control system tries to make its measured output follow.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "command-shell": {
+      "term": "Command Shell",
+      "aliases": ["Shell"],
+      "short_definition": "A command shell reads commands, expands their arguments, and starts programs or built-in operations.",
+      "category": "Software & Engines",
+      "source": "bash"
+    },
+    "significant-figures": {
+      "term": "Significant Figures",
+      "aliases": ["Sig Figs"],
+      "short_definition": "Significant figures communicate which digits in a measured or calculated value carry meaningful precision.",
+      "category": "Units & Notation",
+      "source": "aac"
+    },
+    "soldering": {
+      "term": "Soldering",
+      "short_definition": "Soldering joins conductors by heating the connection and flowing a lower-melting filler metal into it.",
+      "category": "Design Process",
+      "source": "aac"
+    },
+    "solenoid": {
+      "term": "Solenoid",
+      "short_definition": "A solenoid converts electrical current in a coil into a magnetic field and usually linear mechanical motion.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "secure-shell": {
+      "term": "Secure Shell",
+      "aliases": ["SSH"],
+      "short_definition": "Secure Shell provides authenticated, confidential remote login and related services over an untrusted network.",
+      "category": "Software & Engines",
+      "source": "rfc-ssh"
+    },
+    "state-machine": {
+      "term": "State Machine",
+      "aliases": ["Finite State Machine", "FSM"],
+      "short_definition": "A state machine models behaviour as named states and event-driven transitions between them.",
+      "category": "Electrical & Electronics",
+      "source": "arduino"
+    },
+    "strain-relief": {
+      "term": "Strain Relief",
+      "short_definition": "Strain relief transfers pulling and bending forces away from an electrical termination.",
+      "category": "Design Process",
+      "source": "aac"
+    },
+    "structured-output": {
+      "term": "Structured Output",
+      "short_definition": "Structured output follows a defined machine-readable shape such as a table, record, or schema-constrained object.",
+      "category": "Software & Engines",
+      "source": "google-ml"
+    },
+    "test-dataset": {
+      "term": "Test Dataset",
+      "aliases": ["Test Set"],
+      "short_definition": "A test dataset is held back from model selection and used for a final estimate of performance on unseen examples.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "thevenin-equivalent": {
+      "term": "Thevenin Equivalent",
+      "short_definition": "A Thevenin equivalent represents a linear two-terminal network as an ideal voltage source in series with a resistance.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "three-five-five-timer": {
+      "term": "555 Timer",
+      "aliases": ["555 IC", "555 Timer IC"],
+      "short_definition": "A 555 timer is an integrated circuit used to create timed pulses, delays, and oscillations with external components.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "threshold-classification": {
+      "term": "Classification Threshold",
+      "aliases": ["Decision Threshold"],
+      "short_definition": "A classification threshold converts a model score or probability into a class decision.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "time-constant": {
+      "term": "Time Constant",
+      "short_definition": "A time constant characterizes how quickly a first-order circuit rises or falls after a change.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "tmux": {
+      "term": "tmux",
+      "short_definition": "tmux is a terminal multiplexer that manages persistent terminal sessions containing multiple windows and panes.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "token": {
+      "term": "Token",
+      "short_definition": "A token is one discrete unit of text representation processed by a language model.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "tokenization": {
+      "term": "Tokenization",
+      "short_definition": "Tokenization converts text into a sequence of tokens according to a defined vocabulary and procedure.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "traceroute": {
+      "term": "Traceroute",
+      "short_definition": "Traceroute estimates the sequence of network hops toward a destination by eliciting time-exceeded responses.",
+      "category": "Software & Engines",
+      "source": "rfc-icmp"
+    },
+    "training-dataset": {
+      "term": "Training Dataset",
+      "aliases": ["Training Set"],
+      "short_definition": "A training dataset contains examples used to adjust a model's parameters.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "transformer-model": {
+      "term": "Transformer Model",
+      "aliases": ["Transformer"],
+      "short_definition": "A Transformer is a neural-network architecture built around attention and position-aware token representations.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "transistor-switch": {
+      "term": "Transistor Switch",
+      "short_definition": "A transistor switch uses a smaller control signal to place a transistor in off or conducting operation for a load.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "truth-table": {
+      "term": "Truth Table",
+      "short_definition": "A truth table lists every input combination in binary order and records each output in its own column.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "unified-extensible-firmware-interface": {
+      "term": "Unified Extensible Firmware Interface",
+      "aliases": ["UEFI"],
+      "short_definition": "UEFI is a modern firmware interface that initializes hardware and provides services for starting an operating system.",
+      "category": "Software & Engines",
+      "source": "ubuntu"
+    },
+    "unsupervised-learning": {
+      "term": "Unsupervised Learning",
+      "short_definition": "Unsupervised learning seeks patterns or representations in data without target labels for each example.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "validation-dataset": {
+      "term": "Validation Dataset",
+      "aliases": ["Validation Set"],
+      "short_definition": "A validation dataset is separate from training data and supports model selection and tuning before final testing.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "variable-programming": {
+      "term": "Variable",
+      "short_definition": "A variable is a named reference used by a program to access a value that may change.",
+      "category": "Software & Engines",
+      "source": "python"
+    },
+    "voltage-divider": {
+      "term": "Voltage Divider",
+      "short_definition": "A voltage divider uses series impedances to produce an output that is a fraction of the input voltage.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "voltage-regulator": {
+      "term": "Voltage Regulator",
+      "short_definition": "A voltage regulator maintains an output voltage within limits as input or load conditions change.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "xnor-gate": {
+      "term": "XNOR Gate",
+      "short_definition": "An XNOR gate outputs 1 when its compared inputs have the same logic value.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "amplifier": {
+      "term": "Amplifier",
+      "short_definition": "An amplifier uses energy from a source to produce an output signal that follows an input with increased voltage, current, or power.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "astable-multivibrator": {
+      "term": "Astable Multivibrator",
+      "aliases": ["Astable"],
+      "short_definition": "An astable multivibrator switches repeatedly between two states without requiring an external trigger for each cycle.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "bipolar-junction-transistor": {
+      "term": "Bipolar Junction Transistor",
+      "aliases": ["BJT"],
+      "short_definition": "A bipolar junction transistor is a three-terminal semiconductor device in which base current controls a larger collector current.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "feature-machine-learning": {
+      "term": "Machine-learning Feature",
+      "aliases": ["Feature"],
+      "short_definition": "A machine-learning feature is an input variable supplied to a model for training or prediction.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "gain": {
+      "term": "Gain",
+      "short_definition": "Gain is the ratio of an output signal quantity to the corresponding input signal quantity.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "label-machine-learning": {
+      "term": "Machine-learning Label",
+      "aliases": ["Label"],
+      "short_definition": "A machine-learning label is the target answer associated with a supervised training example.",
+      "category": "Analysis & Probability",
+      "source": "google-ml"
+    },
+    "monostable-multivibrator": {
+      "term": "Monostable Multivibrator",
+      "aliases": ["Monostable", "One-shot"],
+      "short_definition": "A monostable multivibrator has one stable state and produces a timed pulse when triggered.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "power-supply-unit": {
+      "term": "Power Supply Unit",
+      "aliases": ["PSU"],
+      "short_definition": "A computer power supply unit converts input power into regulated outputs for the computer's components.",
+      "category": "Electrical & Electronics",
+      "source": "ubuntu"
+    },
+    "rectification": {
+      "term": "Rectification",
+      "short_definition": "Rectification is the process of converting alternating current into a one-directional electrical output.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "smoothing-filter": {
+      "term": "Smoothing Filter",
+      "aliases": ["Smoothing"],
+      "short_definition": "A smoothing filter reduces ripple or rapid variation in a rectified or regulated output.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    },
+    "xor-gate": {
+      "term": "XOR Gate",
+      "short_definition": "An XOR gate outputs 1 when its compared inputs have different logic values.",
+      "category": "Electrical & Electronics",
+      "source": "aac"
+    }
+  }
+}
