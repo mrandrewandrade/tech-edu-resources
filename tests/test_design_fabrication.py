@@ -226,6 +226,29 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Photopea", first_project)
         self.assertIn("export", first_project.lower())
         self.assertIn("PNG", first_project)
+        for detail in (
+            "3300 × 1200",
+            "75 px",
+            "Source Sans 3 Bold",
+            "NDRADE",
+            "JPG / JPEG",
+            "WebP",
+            "SVG",
+            "0.25 inch safe margin",
+            "Student submission checklist",
+        ):
+            self.assertIn(detail, first_project)
+        for screenshot in (
+            "01-create-canvas.jpg",
+            "02-safe-margin-guides.jpg",
+            "03-place-transparent-pngs.jpg",
+            "04-add-readable-name.jpg",
+            "05-final-layout.jpg",
+            "06-export-png.jpg",
+            "07-raster-format-guide.svg",
+        ):
+            self.assertIn(screenshot, first_project)
+            self.assertTrue((SITE / "assets" / "name-tag-photopea" / screenshot).is_file(), screenshot)
 
         organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench", "Captured bottle rack"):

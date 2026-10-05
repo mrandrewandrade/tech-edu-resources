@@ -1,48 +1,257 @@
 ---
-title: "Name + Logo | First Laser Engraving Project"
-description: "An accessible laser name tag project: prepare readable name and original logo artwork for a measured, teacher-supplied pre-cut wood blank."
+title: "Name + Logo | Photopea Engraving Worksheet"
+description: "A student-ready, screenshot-led worksheet for preparing a readable 11 × 4 inch name tag with transparent PNG logos in Photopea."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, lettermark, raster-image, vector-graphic, engraving, png, scalable-vector-graphics, aspect-ratio, typography, visual-hierarchy, contrast, image-dimensions]
-highlighted-terms: [logo, png]
+highlighted-terms: [raster-image, png, logo]
 toc: true
 execute: {enabled: false}
 ---
 
+::: {.callout-warning title="Work in progress"}
+This worksheet is an evolving classroom draft. Confirm measurements, machine settings, material approval, and the instructor's local laser procedure before fabrication. Record anything that needs revision after the first student test.
+:::
+
 ::: {.ter-project-brief}
 ## Design brief
 
-This **laser name tag** project uses a **teacher-supplied, pre-cut rectangular wood blank**. Create a readable name and original logo or lettermark. The first output is a PNG used for engraving. Keep the first machine experience intentionally simple so attention stays on measuring the real blank, layout, export quality and safe workflow.
+Create a clean engraving file for a **teacher-supplied, pre-cut 11 × 4 inch wood name-tag blank**. Place a transparent PNG logo, add a readable name, keep intentional space around every element, and export one full-size PNG for engraving. The example uses the Technology Commons emblem, Andrew's AA lettermark, and **NDRADE**, so the AA mark acts as the first A in **ANDRADE**.
 :::
 
 ## Learning goals
 
-Students distinguish raster artwork from later vector cut geometry, fit artwork to an exact physical size, create visual hierarchy, export a clean PNG, and verify the file before it enters the machine workflow.
+By the end, you can:
 
-## Choose an editing route
+- explain what a raster image is;
+- choose between JPG, PNG, WebP, and SVG for a specific job;
+- recognize transparency and explain why it matters;
+- convert 11 × 4 inches into a 3300 × 1200 pixel canvas at 300 pixels per inch;
+- use guides to create a 0.25 inch safe margin;
+- arrange a logo and name with readable typography, balanced spacing, and clear hierarchy;
+- save an editable master and export a checked PNG for engraving.
 
-**Inkscape (preferred):** use the [editable SVG template](../../assets/laser-library/classroom-kit/name-tag/name-tag-engraving-template.svg), set the page to the measured blank and export the page as PNG.
+## Part 1 - Raster images and PNG
 
-**Photopea (accessible raster route):** create a new document with the same aspect ratio as the measured blank, place name and original logo on separate layers, maintain a safe margin, then export PNG. Record the intended physical blank size beside the submitted image because a PNG alone does not guarantee physical dimensions.
+### What is a raster image?
 
-Study the [three workable layouts and three common problems](../../assets/laser-library/classroom-kit/name-tag/name-tag-layout-examples.svg) before choosing a composition.
+A raster image is a grid of tiny coloured squares called **pixels**. Zoom in far enough and the edges become blocky because the software is enlarging those squares. Photographs, screenshots, JPG files, PNG files, and most WebP files are raster images.
 
-## File preparation
+A vector graphic stores shapes as mathematical paths. It can scale up without becoming pixelated. SVG is a common vector format and is especially useful when exact outlines will become laser cut paths. In this project, the finished machine handoff is a raster PNG because the first operation is **engrave only**, not a vector cut.
 
-1. Measure the supplied blank in millimetres and record width × height.
-2. Set the page or canvas to that aspect ratio and physical size.
-3. Add the student's name with deliberate typography, spacing and strong contrast.
-4. Add the original [logo or lettermark](../02-digital-design/03-logos-lettermarks.qmd).
-5. Keep artwork inside the instructor-set safe margin.
-6. Remove or hide all guides and export the page, not a loose selection, as PNG.
-7. Save the editable master separately from the exported fabrication image.
-8. Reopen the PNG and verify crop, orientation, contrast and filename.
+![Visual comparison of JPG, PNG, WebP, and SVG for student artwork](../../assets/name-tag-photopea/07-raster-format-guide.svg){fig-alt="Four illustrated cards compare JPG for photographs, PNG for a transparent logo, WebP for efficient websites, and SVG for scalable vector geometry."}
+
+### Which format should I use?
+
+| Format | What it does well | Important limitation | Use here? |
+|---|---|---|---|
+| **JPG / JPEG** | Photographs and smooth colour changes at a small file size | Lossy compression can make sharp logo edges fuzzy, and JPG has no transparent background | No |
+| **PNG** | Sharp-edged artwork, lossless compression, and full alpha transparency | Often larger than JPG or WebP for photographs | **Yes** |
+| **WebP** | Efficient website images; can be lossy, lossless, or transparent | It is not our standard classroom laser handoff | Not for this submission |
+| **SVG** | Logos, icons, diagrams, and cut geometry that must stay sharp at any size | It is a vector file, not the raster engraving image requested here | Keep as an editable source when available |
+
+The [MDN image format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types) documents these differences. Photopea can open and export many of these formats, but the file type should follow the job, not habit.
+
+### Why use a transparent PNG logo?
+
+Transparency means the pixels around the logo are empty rather than filled with a white rectangle. Photopea displays transparency as a grey-and-white checkerboard. A transparent logo can sit over the page without bringing an unwanted box with it.
+
+::: {.columns}
+::: {.column width="50%"}
+#### Transparent PNG
+
+<div style="min-height:260px;display:flex;align-items:center;justify-content:center;padding:1.25rem;border-radius:1rem;background-color:#fff;background-image:linear-gradient(45deg,#d9e0e5 25%,transparent 25%),linear-gradient(-45deg,#d9e0e5 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#d9e0e5 75%),linear-gradient(-45deg,transparent 75%,#d9e0e5 75%);background-size:32px 32px;background-position:0 0,0 16px,16px -16px,-16px 0"><img src="../../assets/branding/logo/aa-logo-transparent.png" alt="Andrew Andrade AA lettermark shown over a checkerboard transparency pattern" style="max-height:210px;max-width:75%"></div>
+
+The checkerboard is not part of the image. It shows the empty pixels around the AA mark.
+:::
+::: {.column width="50%"}
+#### White-box problem
+
+<div style="min-height:260px;display:flex;align-items:center;justify-content:center;padding:1.25rem;border-radius:1rem;background:#163a59"><div style="background:#fff;padding:1.2rem"><img src="../../assets/branding/logo/aa-logo-transparent.png" alt="AA logo placed inside a visible white box on a dark field" style="max-height:170px;max-width:100%"></div></div>
+
+If a logo arrives with a white background, that rectangle becomes part of the artwork. Do not assume white means transparent.
+:::
+:::
+
+**Quick transparency check:** open the logo by itself in Photopea. Checkerboard around the mark means transparent. Solid white around it means those are actual white pixels.
+
+## Part 2 - Build the 11 × 4 inch name tag in Photopea
+
+### Before you start
+
+Use [Photopea](https://www.photopea.com/) in a modern browser. Download the instructor-approved transparent PNG logo before opening the editor. For the worked example, use:
+
+- [Technology Commons transparent emblem](../../assets/branding/emblem/commons-emblem-monochrome-blue-transparent.png)
+- [AA transparent lettermark](../../assets/branding/logo/aa-logo-transparent.png)
+
+Record your plan:
+
+| Decision | Your answer |
+|---|---|
+| Name to display | ______________________________________________ |
+| Logo file | ______________________________________________ |
+| Typeface and weight | ______________________________________________ |
+| Visual priority: logo, name, or equal | ______________________________________________ |
+
+### Step 1 - Create the exact-size canvas
+
+1. Open Photopea and choose **File > New**.
+2. Name the document clearly, such as `lastname-name-tag`.
+3. Set units to **Pixels**.
+4. Enter **3300 px** for width and **1200 px** for height.
+5. Enter **300 pixels per inch**.
+6. Choose a white background and click **Create**.
+
+The calculation is:
+
+$$11\text{ in} \times 300\text{ px/in} = 3300\text{ px}$$
+
+$$4\text{ in} \times 300\text{ px/in} = 1200\text{ px}$$
+
+The physical proportion is **11:4**, or **2.75:1**. If a file does not have this proportion, it will not fit the blank without cropping, stretching, or leaving unintended empty space.
+
+![Photopea New Project dialog set to 3300 by 1200 pixels at 300 pixels per inch](../../assets/name-tag-photopea/01-create-canvas.jpg){fig-alt="Photopea New Project dialog showing a document named ANDRADE Name Tag with width 3300 pixels, height 1200 pixels, 300 pixels per inch, and a white background."}
+
+### Step 2 - Build a 0.25 inch safe margin
+
+A **margin** is deliberate empty space between the artwork and the physical edge. It is not wasted space. It prevents the design from feeling crowded and gives room for small placement or material differences.
+
+At 300 pixels per inch, a 0.25 inch margin is:
+
+$$0.25\text{ in} \times 300\text{ px/in} = 75\text{ px}$$
+
+Add guides at:
+
+- **Vertical:** 75 px and 3225 px
+- **Horizontal:** 75 px and 1125 px
+
+Use **View > New Guide** for each guide. Keep every visible part of the logo and name inside the cyan guide box. The resulting safe area is **3150 × 1050 px**.
+
+![Blank Photopea canvas with cyan guides 75 pixels from all four edges](../../assets/name-tag-photopea/02-safe-margin-guides.jpg){fig-alt="Photopea canvas with cyan vertical and horizontal guides defining a quarter-inch safe margin."}
+
+### Step 3 - Place the transparent PNG logo
+
+1. Choose **File > Open & Place**.
+2. Select the transparent PNG logo.
+3. Hold the aspect ratio lock so the logo does not stretch.
+4. Resize from a corner. Do not pull only the width or height.
+5. Move the logo inside the safe area.
+6. Press **Enter** or click the checkmark to confirm.
+7. Repeat if the design uses a second approved mark.
+
+Andrew's example places the Technology Commons emblem first, followed by the AA lettermark. Each file remains on its own layer, which makes revision easier.
+
+![Technology Commons emblem and AA lettermark placed on separate layers inside the margin guides](../../assets/name-tag-photopea/03-place-transparent-pngs.jpg){fig-alt="Photopea workspace showing the Technology Commons round emblem and AA lettermark placed near the left side of the 11 by 4 inch canvas."}
+
+### Step 4 - Add a readable name
+
+1. Select the **Type Tool (T)**.
+2. Choose **Source Sans 3 Bold**. Source Sans Pro is also acceptable if that is the installed version.
+3. Use black or another instructor-approved high-contrast colour.
+4. Type the name in **ALL CAPS**.
+5. Start near **420 px** type size, then adjust to fit the name.
+6. Keep the letters inside the safe margin and leave a clear gap after the logo.
+7. Use the Move Tool to align the name visually with the logo, not just mathematically.
+
+For Andrew's example, type **NDRADE** after the AA lettermark. The mark supplies the first A, so the complete visual reads **ANDRADE**.
+
+![NDRADE typed in Source Sans 3 Bold at 420 pixels beside the AA lettermark](../../assets/name-tag-photopea/04-add-readable-name.jpg){fig-alt="Photopea workspace showing the Technology Commons emblem, AA lettermark, and the text NDRADE in Source Sans 3 Bold, all inside the safe-margin guides."}
+
+### What makes a font readable?
+
+Use a sans serif typeface with open letter shapes and enough stroke thickness to engrave clearly. **Source Sans 3 Bold** works well because the capitals are simple, the spacing is even, and similar letters remain easy to distinguish.
+
+Prefer:
+
+- Source Sans 3, Source Sans Pro, Arial, Helvetica, or another clean sans serif;
+- Bold or Semibold for reliable engraving contrast;
+- generous letter spacing and a size that can be read from about 2 metres away;
+- one typeface and one clear hierarchy.
+
+Avoid:
+
+- thin, hairline, or distressed lettering;
+- scripts where letters join or become ambiguous;
+- highly condensed fonts that squeeze counters closed;
+- stretching text wider or taller;
+- placing letters against the edge.
+
+**Readability test:** zoom out until the on-screen name tag is approximately hand-sized. Look away, then look back for two seconds. If the name is not immediately readable, simplify or enlarge it.
+
+### Step 5 - Judge spacing and balance
+
+Good spacing means the empty areas look intentional:
+
+- **Outer margin:** all artwork stays at least 0.25 inch from every edge.
+- **Logo-to-name gap:** the elements are related but do not collide. Aim for a gap similar to one medium-width letter.
+- **Visual centre:** the complete group feels centred on the board, even if the individual pieces are different sizes.
+- **Hierarchy:** the name is the first or equal reading target. Decorative details do not overpower it.
+- **Breathing room:** no logo tip, letter, or accent crowds the guide.
+
+Andrew's example uses the Technology Commons emblem as the context mark, the AA lettermark as the first letter, and NDRADE as the dominant readable word.
+
+![Finished ANDRADE name-tag composition with guides hidden](../../assets/name-tag-photopea/05-final-layout.jpg){fig-alt="Finished Photopea composition on a white 11 by 4 inch canvas, with Technology Commons emblem, AA lettermark, and NDRADE text forming ANDRADE."}
+
+### Step 6 - Save the master and export the engraving PNG
+
+1. Choose **File > Save as PSD** and save the editable master as `lastname-name-tag-master.psd`.
+2. Hide guides with **View > Extras** or **Ctrl+H**.
+3. Choose **File > Export As > PNG**.
+4. Confirm the export size is still **3300 × 1200 px**.
+5. Name it `lastname-name-tag-11x4-engrave.png`.
+6. Click **Save**.
+7. Reopen the exported PNG and check that nothing moved, cropped, or gained a white box.
+
+![Photopea Save for Web dialog showing PNG at 3300 by 1200 pixels](../../assets/name-tag-photopea/06-export-png.jpg){fig-alt="Photopea Save for Web dialog with PNG selected, width 3300 pixels, height 1200 pixels, and a clear engraving filename."}
+
+Photopea's [Open and Save guide](https://www.photopea.com/learn/opening-saving) explains the difference between saving an editable PSD and exporting a delivery format.
+
+## Student submission checklist
+
+Check every statement before handing in the file:
+
+- [ ] My canvas is 3300 × 1200 px at 300 pixels per inch.
+- [ ] My design matches the 11 × 4 inch blank.
+- [ ] My logo is an approved PNG with a transparent background.
+- [ ] I did not stretch the logo.
+- [ ] All artwork remains inside the 75 px safe margin.
+- [ ] My name is in a readable sans serif font.
+- [ ] My name can be read quickly from about 2 metres away.
+- [ ] The logo-to-name gap and outer margins look intentional.
+- [ ] Guides are hidden in the export.
+- [ ] I saved the editable PSD and the final PNG separately.
+- [ ] I reopened the PNG and checked crop, orientation, contrast, and spelling.
+- [ ] My submitted machine job is labelled **ENGRAVE ONLY**.
+
+## Short reflection
+
+1. Why was PNG a better choice than JPG for your logo?
+
+   ________________________________________________________________________________
+
+2. What did you change to make your name easier to read?
+
+   ________________________________________________________________________________
+
+3. Where is the smallest gap in your layout, and is it still larger than the safe margin?
+
+   ________________________________________________________________________________
+
+4. If you revised the tag, what would you change first?
+
+   ________________________________________________________________________________
 
 ## Before pressing start
 
-Follow the local material approval, focus, ventilation, supervision, fire-watch, and shutdown procedure. Confirm the machine job is **engrave only** and that no guide or accidental cut boundary appears.
+Follow the local material approval, focus, ventilation, supervision, fire-watch, and shutdown procedure. Confirm that the wood blank is approved and that the machine job is **engrave only**. No cyan guide, page border, or accidental vector cut boundary should appear in the submitted PNG.
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** Useful for **TIJ1O** and **TDJ2O** learning involving vector graphics, visual communication, exact dimensions, file preparation, manufacturing processes, safe tool use, and evaluation of a produced artifact. Communications Technology connections belong primarily in the preceding digital-design unit.
+**Ontario curriculum relevance:** useful for **TIJ1O** and **TDJ2O** learning involving raster and vector graphics, visual communication, exact dimensions, file preparation, manufacturing processes, safe tool use, and evaluation of a produced artifact.
 :::
 
-Use the [planning worksheet and classroom toolkit](resources/index.qmd) for this project. Students who are ready for an additional structural problem can continue to the optional [Make It Stand](02-make-it-stand.qmd) extension.
+Continue with the [planning worksheet and classroom toolkit](resources/index.qmd), or move to the optional [Make It Stand](02-make-it-stand.qmd) structural extension.
+
+## References
+
+- [Photopea: Open and Save](https://www.photopea.com/learn/opening-saving)
+- [MDN: Image file type and format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types)
+- [Google Fonts: Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
