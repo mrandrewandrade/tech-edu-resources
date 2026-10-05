@@ -8,29 +8,43 @@ execute:
   enabled: false
 ---
 
-This mini-curriculum moves from a deliberately easy first cut to measured, calibrated, useful fabrication. Students use vector design, test real materials, make evidence-based fit decisions, combine laser-cut precision with conventional materials, and complete a full design cycle.
+These canonical notes support a simple first TAS project and a deeper reusable fabrication pathway. Students can learn engraving versus cutting, SVG preparation, scale, material measurement, kerf, fit, holes, slots/tabs, supports, assemblies, hybrid fabrication and testing without treating every lesson as a required project.
 
 The learning sequence lives here. The separate [Laser Fabrication Library](../../teaching-materials/laser-cutting/index.qmd) holds downloadable SVGs, calibration files, editable geometry, project components, holders, and inspiration.
 
-For the first active sequence, use the [classroom toolkit](resources/index.qmd): planning worksheet, paper-to-Inkscape instructions, six component palettes, name-tag files, standing-name-tag components, five pill-bottle organizer references and a short teaching deck. For repeated holes and measured plates, open the [Fabrication Plate Builder](../tools/plate-builder/index.qmd), then verify the result with the [material-fit calibration workflow](04-material-fit-calibration.qmd).
+For the active name-tag project, use the [classroom toolkit](resources/index.qmd). For advanced work, the toolkit also includes component palettes, standing-name-tag ideas, five pill-bottle organizer references and teaching slides. For repeated holes and measured plates, open the [Fabrication Plate Builder](../tools/plate-builder/index.qmd), then verify the result with the [material-fit calibration workflow](04-material-fit-calibration.qmd).
 
-<div class="ter-toolkit-banner">
+<div class="ter-toolkit-banner ter-toolkit-banner--extension">
 <a href="resources/pill-bottle-organizer.qmd"><img src="../../assets/laser-library/classroom-kit/pill-bottle/removable-wall-bench-rack/exploded.svg" alt="Exploded preview of the removable pill-bottle organizer"></a>
-<div><p class="ter-assembly-kicker">Visual files + direct downloads</p><h2>See the organizer assemblies before opening Inkscape</h2><p>Compare five build strategies—including a serviceable keeper—inspect exploded views, preview every true-size parts sheet, then download the exact SVG you want to adapt.</p><p><a class="btn btn-primary" href="resources/pill-bottle-organizer.qmd">Browse the assembly gallery</a> <a class="btn btn-outline-secondary" href="resources/index.qmd">Open all classroom files</a></p></div>
+<div><p class="ter-assembly-kicker">Advanced extension · not a required TAS project</p><h2>Organizer assemblies and reusable fabrication tools</h2><p>Compare five pill-bottle strategies, inspect exploded views and true-size parts sheets, then study real build/revision evidence in the Tool Organizer Gallery.</p><p><a class="btn btn-primary" href="../tools/tool-organizer-gallery/index.qmd">Open the Tool Organizer Gallery</a> <a class="btn btn-outline-secondary" href="resources/pill-bottle-organizer.qmd">View reference assemblies</a></p></div>
 </div>
 
-## Project sequence
+## Current TAS project
+
+::: {.ter-project-brief}
+### Name + Logo Wood Name Tag
+
+The teacher supplies a pre-cut wood rectangle. The student measures its aspect ratio, lays out a readable name and original logo, exports a PNG, engraves it, and evaluates spacing and legibility. Complex joinery is not required.
+
+[Open the name-tag project →](01-name-logo.qmd)
+:::
+
+## Learn as the project requires
 
 <ol class="ter-lesson-sequence">
-  <li><a href="01-name-logo.qmd">Name + Logo: First Engraving</a> — fit name and original logo artwork to a measured pre-cut blank.</li>
-  <li><a href="02-make-it-stand.qmd">Make It Stand</a> — investigate stability, supports, slots, and balance.</li>
   <li><a href="03-measure-place.qmd">Measure + Place</a> — use calipers, exact geometry, spacing, arrays, and margins.</li>
   <li><a href="04-material-fit-calibration.qmd">Material Fit + Calibration</a> — measure actual stock, test kerf and choose a fit.</li>
   <li><a href="05-assemblies-hybrid-fabrication.qmd">Assemblies + Hybrid Fabrication</a> — combine precision faces with structural backers and conventional hardware.</li>
-  <li><a href="06-tool-holder.qmd">Tool Holder</a> — organize real shop tools through measurement, access, ergonomics, and revision.</li>
-  <li><a href="07-wall-bench-module.qmd">Wall + Bench Tool Module</a> — design for secure vertical storage and stable portable use.</li>
-  <li><a href="08-capstone.qmd">Design &amp; Fabrication Capstone</a> — identify a genuine need and complete a full N.I.C.E. cycle.</li>
 </ol>
+
+## Optional and general projects
+
+<div class="ter-project-grid">
+<article class="ter-project-card"><p class="ter-course-code">Optional extension</p><h3>Make It Stand</h3><p>Add feet, legs, a slot base, easel or another support to investigate stability and fit.</p><p><a href="02-make-it-stand.qmd">Open the extension →</a></p></article>
+<article class="ter-project-card"><p class="ter-course-code">Compact seasonal project</p><h3>Holiday Ornament / Reindeer</h3><p>Design or legally adapt an ornament; a reindeer is one possible worked idea, not the class answer.</p><p><a href="holiday-ornament-reindeer.qmd">Open the ornament project →</a></p></article>
+<article class="ter-project-card"><p class="ter-course-code">General / advanced</p><h3>Tool Organizer</h3><p>Measure real tools, test access and fit, then document DESIGN → BUILD → FEEDBACK → REVISION.</p><p><a href="06-tool-holder.qmd">Open the project guidance →</a></p></article>
+<article class="ter-project-card"><p class="ter-course-code">General / advanced</p><h3>Wall + Bench and Capstone</h3><p>Explore removable mounting, serviceability, hybrid fabrication or an independent N.I.C.E. design problem.</p><p><a href="07-wall-bench-module.qmd">Wall + bench module →</a> · <a href="08-capstone.qmd">Capstone →</a></p></article>
+</div>
 
 ## Safety and local procedures
 
@@ -42,4 +56,4 @@ This curriculum does not replace machine-specific training, supervision, ventila
 Senior applications may fit **TDJ3M/TDJ4M**, **TDJ3O/TDJ4O**, and relevant **TMJ3M/TMJ4M**, **TMJ3C/TMJ4C**, or **TMJ3E/TMJ4E** projects when the actual lesson addresses CAD/CAM, manufacturing processes, precision, fixtures, or assemblies.
 :::
 
-Start with [Name + Logo: Engrave and Cut](01-name-logo.qmd), or [browse the complete fabrication library](../../teaching-materials/laser-cutting/index.qmd).
+Start with the [Name + Logo Wood Name Tag](01-name-logo.qmd), or [browse the complete Fabrication Library & Tools collection](../../teaching-materials/laser-cutting/index.qmd).

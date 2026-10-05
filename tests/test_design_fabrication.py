@@ -18,9 +18,16 @@ class DesignFabricationTests(unittest.TestCase):
         required = [
             "index.qmd",
             "01-nice-design-process/index.qmd",
+            "ai/index.qmd",
+            "ai/07-ai-design-audit.qmd",
             "02-digital-design/index.qmd",
+            "02-digital-design/06-blender-artistic-3d.qmd",
+            "02-digital-design/07-website-ui-ux.qmd",
             "03-laser-cutting/index.qmd",
+            "03-laser-cutting/holiday-ornament-reindeer.qmd",
             "04-3d-printing/index.qmd",
+            "04-3d-printing/faux-enamel-pin-jewellery.qmd",
+            "tools/tool-organizer-gallery/index.qmd",
             "05-cnc-digital-machining/index.qmd",
             "06-textiles-soft-goods/index.qmd",
             "07-other-fabrication/index.qmd",
@@ -56,19 +63,47 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertLess(home.index("General Slides"), home.index("General Materials"))
         self.assertIn("design-fabrication/index.qmd", home)
 
-    def test_laser_curriculum_has_all_eight_projects(self) -> None:
+    def test_laser_curriculum_distinguishes_core_from_extensions(self) -> None:
         laser = self.read("design-fabrication/03-laser-cutting/index.qmd")
-        for name in (
-            "Name + Logo",
-            "Make It Stand",
-            "Measure + Place",
-            "Material Fit + Calibration",
-            "Assemblies + Hybrid Fabrication",
-            "Tool Holder",
-            "Wall + Bench Tool Module",
-            "Design &amp; Fabrication Capstone",
-        ):
+        for name in ("Current TAS project", "Name + Logo Wood Name Tag", "Learn as the project requires", "Optional and general projects", "Holiday Ornament / Reindeer", "Tool Organizer"):
             self.assertIn(name, laser)
+        self.assertIn("not a required TAS project", laser)
+
+    def test_ai_literacy_sequence_is_complete_and_source_grounded(self) -> None:
+        ai = self.read("design-fabrication/ai/index.qmd")
+        for term in ("define the goal", "limited job", "meaningful versions", "privacy", "copyright", "Last reviewed: October 4, 2026"):
+            self.assertIn(term, ai)
+        for source in ("unesco.org", "unicef.org", "priv.gc.ca", "edu.gov.on.ca"):
+            self.assertIn(source, ai)
+        self.assertNotIn("peelschools.org", ai)
+        audit = self.read("design-fabrication/ai/07-ai-design-audit.qmd")
+        for term in ("flawed answer", "Measure the actual", "authoritative", "Rewrite the prompt", "Compare the two outputs", "AI-use disclosure"):
+            self.assertIn(term, audit)
+
+    def test_current_tas_projects_are_prominent_and_original(self) -> None:
+        landing = self.read("design-fabrication/index.qmd")
+        self.assertIn("Current TAS projects", landing)
+        self.assertIn("Name + Logo Wood Name Tag", landing)
+        self.assertIn("3D Printed Faux Enamel Pin / Jewellery", landing)
+        self.assertIn("Hardware / Assembly Project — TBD", landing)
+        enamel = self.read("design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.qmd")
+        self.assertIn("Do not reproduce the author's finished designs", enamel)
+        for step in ("Sketch or choose", "Rebuild/model", "Export STL or 3MF", "Decide print orientation", "Finish and colour", "Revise the source model"):
+            self.assertIn(step, enamel)
+
+    def test_digital_design_and_modelling_branches_are_explicit(self) -> None:
+        digital = self.read("design-fabrication/02-digital-design/index.qmd")
+        for term in ("Pencil2D", "Blender", "Website", "UI/UX"):
+            self.assertIn(term, digital)
+        modelling = self.read("design-fabrication/04-3d-printing/01-additive-cad.qmd")
+        for term in ("Onshape", "parametric", "Blender", "STEP", "STL", "3MF", "editable source"):
+            self.assertIn(term, modelling)
+
+    def test_tool_organizer_gallery_preserves_evidence_status(self) -> None:
+        gallery = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
+        for term in ("DESIGN", "BUILD", "FEEDBACK", "REVISION", "TIJ1OR-E Knife Holder Design", "Revision 2", "March 22, 2024", "finished-project photo pending", "35°", "French cleat"):
+            self.assertIn(term, gallery)
+        self.assertIn("No substitute image has been invented", gallery)
 
     def test_curriculum_relevance_is_varied_and_compact(self) -> None:
         pages = list(CURRICULUM.rglob("*.qmd"))
@@ -156,11 +191,12 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertGreaterEqual(organizer.count(relative), 10)
 
         laser_home = self.read("design-fabrication/03-laser-cutting/index.qmd")
-        self.assertIn("Browse the assembly gallery", laser_home)
+        self.assertIn("Open the Tool Organizer Gallery", laser_home)
         self.assertIn("removable-wall-bench-rack/exploded.svg", laser_home)
 
         nav = self.read("_quarto.yml")
-        self.assertIn("Organizer Assembly Gallery", nav)
+        self.assertIn("Organizer Reference Assemblies", nav)
+        self.assertIn("Tool Organizer Gallery", nav)
         self.assertIn("Fabrication Planning Sheet", nav)
         self.assertIn("Fabrication Plate Builder", nav)
 

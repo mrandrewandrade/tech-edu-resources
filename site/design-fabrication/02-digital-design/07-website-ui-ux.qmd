@@ -1,0 +1,33 @@
+---
+title: "Small Website & UI/UX Portfolio | Audience, Hierarchy & Publishing"
+description: "Plan and publish a small responsive page that reuses student identity, graphics and animation without becoming a full web-programming course."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Design the experience before the screen
+
+Name the audience, their goal and the shortest useful path through the page. **UI** is the visible controls and presentation; **UX** is the larger experience of understanding, acting, receiving feedback and recovering from mistakes.
+
+Plan:
+
+- hierarchy: what should be noticed first, second and third;
+- layout: related items group together with usable spacing;
+- navigation: links are labelled clearly and the current location is understandable;
+- states and feedback: selected, loading, success, empty and error where relevant;
+- responsive thinking: content reflows and remains readable on a phone;
+- files and paths: image filenames, folders and links remain valid after publishing;
+- accessibility: semantic headings, meaningful alternative text, keyboard access, contrast and readable motion.
+
+## Small TAS task
+
+Create one simple page or portfolio that reuses the student's original identity, graphics and optional 2–4 second animation. Include a short project explanation, process evidence and one reflection. Test it on a narrow and wide screen, then publish using the teacher-approved location.
+
+This is a communication task, not a full programming curriculum. A polished template is not successful if the audience cannot understand the work or the student cannot explain the file structure and decisions.
+
+## Usability evidence
+
+Ask one person to find a specific project and explain its purpose without coaching. Record task completion, wrong turns, unclear labels and comments. Revise the structure before adding decoration.
+
+Apply the same user-centred thinking to a physical interface in [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd).

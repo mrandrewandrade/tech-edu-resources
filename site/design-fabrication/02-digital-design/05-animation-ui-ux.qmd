@@ -1,38 +1,38 @@
 ---
-title: "2D Animation, UI/UX & Interface Prototypes | Design for User Needs"
-description: "Introduce 2D animation, user needs, user flows, interface states, feedback and low-fidelity website or app prototypes."
+title: "2D Animation with Pencil2D | Frames, Timing & Short Loops"
+description: "Create a 2–4 second logo or simple-object animation using frames, keyframes, a timeline, onion skinning, timing and export."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 toc: true
 execute: {enabled: false}
 ---
 
-## Start with the user and task
+## Motion is designed over time
 
-UI describes the controls and visual elements a person interacts with. UX describes the larger experience of understanding, completing, and recovering from a task. Begin with the person, context, and goal before choosing colours or screen shapes.
+Animation is a sequence of deliberate changes shown for deliberate lengths of time. A **frame** is one image in the sequence; a **keyframe** records an important pose or change; the **timeline** controls order and duration; **onion skinning** shows nearby frames faintly so motion can be judged.
 
-## User flow
+## Beginner tool: Pencil2D
 
-Write one concrete task, such as “find the correct safety procedure and return to the project.” Map the minimum sequence of screens or states. Include decision points, confirmation, error recovery, and a clear way back.
+[Pencil2D](https://www.pencil2d.org/) is a focused open-source tool for hand-drawn raster and vector animation. Keep the first task small enough to revise:
 
-## Prototype before building
+1. storyboard a start, change and return;
+2. create the main keyframes first;
+3. turn on onion skinning and add only the in-between frames needed;
+4. preview the loop at different timings;
+5. hold important poses longer instead of redrawing them repeatedly;
+6. export using the teacher-approved format and reopen the export.
 
-- Sketch several interface arrangements.
-- Turn the strongest into linked paper frames or digital wireframes.
-- Label actions with clear verbs.
-- Show selected, loading, success, empty, and error states where relevant.
-- Ask a test user to complete the task without coaching.
-- Record where they pause, choose incorrectly, or ask what something means.
+## Classroom task: identity in motion
 
-## Motion with purpose
+Animate the student's original logo, lettermark or one simple object for **2–4 seconds**. The loop should communicate one idea through timing and shape change: assemble, reveal, bounce, rotate, transform or respond. Avoid tracing a commercial mark or downloading a finished character as the answer.
 
-2D animation can explain a transition, show cause and effect, provide feedback, or direct attention. It should not delay the task or make important information harder to read. Storyboard the start state, change, and end state; then choose duration and easing that support the meaning.
+## Evaluate the loop
 
-## Evidence from a usability test
+Ask another viewer what they notice first and whether the loop feels intentional. Check the silhouette, timing, distracting jumps, first/last-frame transition, crop, background and export quality. Save the editable Pencil2D file as well as the exported animation.
 
-Measure task completion, wrong turns, unclear labels, and user comments. Revise the flow before polishing the graphics. A visually attractive interface that prevents task completion is not successful.
+Use [Blender](06-blender-artistic-3d.qmd) when the goal becomes artistic 3D animation or rendering. Use [parametric CAD](../04-3d-printing/01-additive-cad.qmd) when the goal is a dimension-driven fabrication part.
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology** and related senior courses in animation, web design, digital imagery, and interactive media. It also supports **TDJ** and **TIJ1O** design-process work involving user needs, prototyping, feedback, and iteration.
+**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology** and related senior courses in animation and digital imagery. It also supports **TIJ1O** exploration and **TDJ** design communication through planning, testing, feedback and iteration.
 :::
 
-Apply the same user-centred process to a physical interface in [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd).
+Next: [Blender for Artistic 3D Design](06-blender-artistic-3d.qmd) or [Small Website & UI/UX Portfolio](07-website-ui-ux.qmd).

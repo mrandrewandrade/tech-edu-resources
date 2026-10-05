@@ -1,0 +1,25 @@
+---
+title: "Critically Evaluate an AI Output | Evidence Before Confidence"
+description: "Evaluate AI output for accuracy, feasibility, omissions, bias, accessibility, privacy and design fit."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Use a design-review lens
+
+Do not grade an answer by confidence, length or formatting. Annotate it:
+
+- **supported:** verified by a measurement, original source or local instruction;
+- **uncertain:** plausible but not yet checked;
+- **unsupported:** no usable evidence or citation;
+- **unsafe/out of scope:** conflicts with approved materials, tools, supervision or the assignment;
+- **missing:** ignores an important user, accessibility, maintenance, assembly or fabrication constraint.
+
+Ask whose needs and bodies the proposed design assumes. Check reach, grip, contrast, language, one-handed use, cost and access. Look for stereotypes or a “typical user” who was never defined.
+
+## Evaluate against criteria
+
+Create a small table with each criterion, the evidence available, the output's status and the next test. A useful critique produces an action: measure the real object, ask the user, open the cited source, prototype one feature, or reject the suggestion.
+
+Next: [Find and verify the source](03-verify-sources.qmd).

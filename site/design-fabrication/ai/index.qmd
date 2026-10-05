@@ -1,0 +1,60 @@
+---
+title: "AI Literacy & Reproducible Workflows | General Design & Fabrication"
+description: "Durable student practices for evaluating, verifying, documenting and disclosing AI-assisted design work."
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
+execute: {enabled: false}
+---
+
+AI can help explore alternatives, explain unfamiliar ideas, organize evidence and critique a draft. It can also produce confident errors, invented citations, unsuitable dimensions and designs that ignore the real user, material or shop. The student—not the tool—remains responsible for the decision and the result.
+
+::: {.callout-warning}
+## A fast-changing area
+
+AI tools, capabilities, privacy practices and policies change quickly. These notes teach durable critical-thinking and documentation habits. **Current teacher instructions and current PDSB requirements take precedence.**
+
+**Last reviewed: October 4, 2026**
+:::
+
+## A repeatable student workflow
+
+<ol class="ter-lesson-sequence">
+  <li><a href="01-capabilities-limits.qmd">What AI can and cannot do</a> — assign a limited job and separate facts, assumptions and suggestions.</li>
+  <li><a href="02-evaluate-output.qmd">Critically evaluate an AI output</a> — test relevance, accuracy, feasibility, bias, accessibility and omissions.</li>
+  <li><a href="03-verify-sources.qmd">Find and verify the source</a> — trace a claim to current, original and authoritative evidence.</li>
+  <li><a href="04-reproducible-workflow.qmd">Write a reproducible prompt and workflow</a> — preserve criteria, context, inputs, tool/model and settings.</li>
+  <li><a href="05-iterate-purposefully.qmd">Iterate with purpose</a> — change prompts because evidence revealed a problem, not just to collect versions.</li>
+  <li><a href="06-document-disclose.qmd">Document and disclose AI use</a> — show meaningful versions, decisions, sources, licences and the student's own thinking.</li>
+  <li><a href="07-ai-design-audit.qmd">AI Design Audit</a> — critique a flawed fabrication answer, verify it, improve it and defend the final decisions.</li>
+</ol>
+
+## Level 4 evidence standard
+
+Adapted from the internal **Documenting AI Projects: Level 4 Quick Guide**:
+
+- define the goal and success criteria before prompting;
+- name the tool/model and give it one limited job;
+- preserve the prompt or an accessible export after removing personal or confidential information;
+- show meaningful versions—normally three or the number set by the teacher;
+- record what changed, why, what was accepted or rejected, and what happens next;
+- cite sources and licences, and state exactly where AI helped;
+- verify facts, measurements, sources, function, bias, inclusion, accessibility, privacy and copyright;
+- explain the student's judgement and take ownership of the final result.
+
+This evidence supports Ontario assessment practice: criteria are communicated in advance, feedback improves learning, and evaluation is based on demonstrated student achievement—not on the apparent polish of an AI output.
+
+## Authoritative references
+
+- [UNESCO: Guidance for generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research)
+- [UNESCO: AI competency framework for students](https://www.unesco.org/en/articles/ai-competency-framework-students)
+- [UNESCO: AI competency framework for teachers](https://www.unesco.org/en/articles/ai-competency-framework-teachers)
+- [UNICEF: Guidance on AI and children, version 3.0](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children)
+- [Office of the Privacy Commissioner of Canada: privacy-protective generative AI principles](https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/gd_principles_ai/)
+- [Ontario Ministry of Education: Growing Success](https://www.edu.gov.on.ca/eng/policyfunding/growSuccess.pdf)
+
+::: {.ter-curriculum-relevance}
+**Ontario curriculum relevance:** This reusable literacy layer supports **TIJ1O** and any **TDJ, TMJ, TCJ, TTJ, TEJ, TGJ, THJ, TXJ, TFJ, or TPJ** project in which students use AI to research, design, communicate, code, model or evaluate. The subject-specific task still determines what counts as valid evidence.
+:::
+
+Next: [What AI can and cannot do](01-capabilities-limits.qmd).

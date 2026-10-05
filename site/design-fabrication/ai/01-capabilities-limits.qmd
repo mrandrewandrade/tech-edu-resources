@@ -1,0 +1,27 @@
+---
+title: "What AI Can and Cannot Do | Give It a Limited Job"
+description: "Use AI as a bounded assistant while preserving human criteria, verification and responsibility."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Start with criteria, not a prompt
+
+Write the user, need, must-haves and restrictions first. Only then decide whether AI has a useful job. Good limited jobs include generating questions for an interview, listing alternative support strategies, explaining an unfamiliar term, or critiquing a draft checklist.
+
+AI does not inspect the real stock, know the local machine rules, feel whether a fit works, or certify that a design is safe. A fluent answer may mix three categories:
+
+| Category | Meaning | Student action |
+|---|---|---|
+| Fact | Checkable claim about the world | Verify with an authoritative source or measurement |
+| Assumption | Unconfirmed condition treated as true | State it and test it |
+| Suggestion | Possible direction or alternative | Compare against criteria |
+
+## Bound the job
+
+Instead of “design my tool holder,” ask: “Using only the measured values below, identify three support strategies and list the trade-offs. Do not choose dimensions or claim a load rating.” Never enter personal, confidential or identifying student information into an unapproved tool.
+
+The human must select criteria, measure, test, decide, document and own the result.
+
+Next: [Critically evaluate an AI output](02-evaluate-output.qmd).

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">How print orientation changes layers and supports</title>
+  <desc id="desc">The same raised badge is shown flat and upright, with layer direction, support need, surface and strength questions.</desc>
+  <rect width="1200" height="430" rx="28" fill="#f7f4ee"/>
+  <g font-family="Arial, sans-serif" fill="#142536"><text x="600" y="54" text-anchor="middle" font-size="32" font-weight="700">THE SAME MODEL · TWO ORIENTATIONS</text></g>
+  <g transform="translate(105 110)">
+    <path d="M0 190h380l55-45H55Z" fill="#d9a66b" stroke="#142536" stroke-width="6"/>
+    <path d="M55 145h380V50H55Z" fill="#f0c993" stroke="#142536" stroke-width="6"/>
+    <path d="M160 145V90h105v55" fill="#b76537" stroke="#142536" stroke-width="5"/>
+    <g stroke="#fff" stroke-width="3"><path d="M55 70h380M55 90h380M55 110h380M55 130h380"/></g>
+    <text x="215" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#142536">FLAT</text>
+    <text x="215" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#142536">face finish · first layer · colour wells</text>
+  </g>
+  <g transform="translate(700 98)">
+    <path d="M75 250h250l55-42H130Z" fill="#d9a66b" stroke="#142536" stroke-width="6"/>
+    <path d="M130 208V8h95v200" fill="#f0c993" stroke="#142536" stroke-width="6"/>
+    <path d="M130 72H82v72h48" fill="#b76537" stroke="#142536" stroke-width="5"/>
+    <g stroke="#fff" stroke-width="3"><path d="M145 8v200M163 8v200M181 8v200M199 8v200"/></g>
+    <g fill="#6b8191"><path d="M80 145h50v63H65Z"/><path d="M95 174h35v34H82Z"/></g>
+    <text x="202" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#142536">UPRIGHT</text>
+    <text x="202" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#142536">supports · layer direction · adhesion</text>
+  </g>
+</svg>

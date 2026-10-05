@@ -1,24 +1,46 @@
 ---
-title: "Additive Manufacturing & CAD | Model with Design Intent"
-description: "Introduce additive manufacturing and create editable 3D CAD models using sketches, constraints, dimensions, features and design intent."
+title: "3D Modelling Foundations | Onshape CAD vs Blender Mesh"
+description: "Choose parametric solid CAD for dimension-driven fabrication, understand artistic mesh modelling, and move editable source through STEP, STL/3MF, slicer and printer."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 toc: true
 execute: {enabled: false}
 ---
 
+## Two useful modelling approaches
+
+| Parametric / solid CAD | Mesh / artistic modelling |
+|---|---|
+| Sketches, constraints, dimensions and feature history describe design intent. | Vertices, edges and faces describe the visible surface. |
+| Best default for holes, brackets, patterns, mating parts and predictable revision. | Excellent for organic, sculptural, character, rendering and animation work. |
+| **Primary classroom tool: Onshape.** | **Primary artistic tool: Blender.** |
+
+![Parametric CAD uses constraints, dimensions and features for predictable change; mesh modelling uses vertices, edges and faces to shape visible form.](../../assets/design-fabrication/cad-vs-mesh.svg){.ter-concept-diagram}
+
+Blender can make printable models, but it is not the default for dimension-driven mechanical or fabrication parts. Onshape is the primary fabrication-modelling tool because a student can change a dimension and inspect how the whole model updates.
+
 ## Additive manufacturing
 
-Unlike subtractive processes that remove material or forming processes that reshape it, additive manufacturing creates a part by depositing or joining material layer by layer. The digital model must become a printable toolpath, so model, slicer, machine, material, and orientation all influence the result.
+Unlike subtractive processes that remove material or forming processes that reshape it, additive manufacturing creates a part layer by layer. The model must become a printable toolpath, so model, slicer, machine, material and orientation all influence the result.
 
 ## Model with intent
 
-Begin from a measured need. Use constrained sketches, exact dimensions, and named parameters where the CAD tool supports them. Build features in a sequence another person can understand and revise.
+Begin from a measured need in **Onshape**. Use fully considered sketches, geometric constraints, exact dimensions and named variables where useful. Build features in a sequence another person can understand and revise.
 
-Common operations include extrude, revolve, hole, fillet, chamfer, pattern, mirror, shell, and Boolean combine. Use each because it describes the intended geometry—not merely because it produces the visible shape once.
+Core operations include **extrude, remove, hole, fillet/chamfer, pattern and mirror**. Use each because it describes the intended geometry—not merely because it produces the visible shape once. Change one controlling dimension and confirm that related features update predictably.
+
+## Keep the source; export for the next job
+
+<div class="ter-process-flow" aria-label="3D manufacturing file flow"><span>Editable source model</span><span>STEP when solid interchange is needed</span><span>STL or 3MF for slicing</span><span>Slicer project + toolpath</span><span>Printer</span></div>
+
+- **STEP** can transfer solid geometry between compatible CAD systems.
+- **STL** carries a triangulated surface but normally no units, colour or feature history.
+- **3MF** can carry units and richer manufacturing information; support depends on the software and printer workflow.
+
+An exported mesh is not the editable master. Retain the Onshape document/source model and record which version produced the manufacturing file.
 
 ## First modelling task
 
-Model a small cable guide or labelled spacer with controlled width, height, hole diameter, wall thickness, and edge treatment. Change one parameter and confirm the model updates predictably. Export an appropriate mesh for slicing while retaining the editable source model.
+Model a small identity badge or labelled spacer with controlled width, height, hole diameter, wall thickness and edge treatment. Use constraints rather than visual guessing. Change one parameter and confirm the model updates predictably. Export STL or 3MF for slicing while retaining the editable source.
 
 ## Model checks
 

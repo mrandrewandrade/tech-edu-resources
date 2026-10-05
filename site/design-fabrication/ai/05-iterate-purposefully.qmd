@@ -1,0 +1,22 @@
+---
+title: "Iterate with Purpose | Change the Prompt Because of Evidence"
+description: "Connect each AI-assisted revision to a discovered problem, new evidence or changed criterion."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Versions need a reason
+
+More outputs do not automatically mean more learning. Each meaningful version should answer:
+
+1. What did the previous output get wrong, miss or leave uncertain?
+2. What new evidence did you add?
+3. What changed in the prompt or process?
+4. What improved, and what still needs a human or physical test?
+
+Keep a compact decision log: version, change, reason, accepted/rejected ideas, evidence and next step. Usually three meaningful versions—or the number set by the teacher—are more useful than a long transcript of nearly identical prompts.
+
+Do not ask AI to “make it better.” Name the failed criterion: “The proposed opening assumes a 10 mm handle, but the measured handles range from 11.8–14.2 mm. Compare one adjustable strategy and two size-family strategies without selecting a clearance.”
+
+Next: [Document and disclose AI use](06-document-disclose.qmd).

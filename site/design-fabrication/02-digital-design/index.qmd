@@ -1,6 +1,6 @@
 ---
-title: "Digital Design & Communication | Vector Graphics, Logos, UI/UX & Animation"
-description: "Reusable Ontario technology lessons for raster and vector graphics, SVG, exact geometry, logo design, typography, layout, animation and UI/UX prototyping."
+title: "Digital Design & Communication | Graphics, Animation, Blender & UI/UX"
+description: "Reusable lessons for raster and vector graphics, logos, Pencil2D animation, artistic Blender work and a small website/UI-UX portfolio."
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
@@ -8,7 +8,7 @@ execute:
   enabled: false
 ---
 
-Digital design is both communication and preparation for fabrication. Students learn how images are represented, construct clean vector geometry, communicate identity and hierarchy, and test interfaces before those skills become cut lines, engraved artwork, printed parts, or screen-based prototypes.
+Digital design is both communication and preparation for fabrication. Students learn how images are represented, construct clean vector geometry, communicate identity and hierarchy, animate an idea, explore artistic 3D work, and test a small interface before those skills become engraving artwork, printed parts or screen-based media.
 
 ## Learning sequence
 
@@ -17,7 +17,9 @@ Digital design is both communication and preparation for fabrication. Students l
   <li><a href="02-vector-geometry.qmd">Vector Geometry &amp; Exact Construction</a> — shapes, nodes, Boolean operations, alignment, duplication, and dimensions.</li>
   <li><a href="03-logos-lettermarks.qmd">Logos, Lettermarks &amp; Negative Space</a> — identity, simplification, typography, and one-colour testing.</li>
   <li><a href="04-layout-typography-colour.qmd">Layout, Typography &amp; Colour</a> — hierarchy, spacing, contrast, readable type, and intentional palettes.</li>
-  <li><a href="05-animation-ui-ux.qmd">Animation, UI/UX &amp; Interface Prototypes</a> — user needs, flows, states, feedback, websites, apps, and motion.</li>
+  <li><a href="05-animation-ui-ux.qmd">2D Animation with Pencil2D</a> — frames, keyframes, timing, timeline, onion skinning, loops and export.</li>
+  <li><a href="06-blender-artistic-3d.qmd">Blender for Artistic 3D Design</a> — mesh editing, sculptural forms, materials, lighting, rendering and animation.</li>
+  <li><a href="07-website-ui-ux.qmd">Small Website &amp; UI/UX Portfolio</a> — audience, hierarchy, navigation, states, responsive layouts, files and publishing.</li>
 </ol>
 
 ## Readiness for fabrication
@@ -27,7 +29,7 @@ Before moving into laser cutting, students should be able to distinguish raster 
 ::: {.ter-project-brief}
 ### Suggested bridge project
 
-Create a name-and-logo plaque as a communication artifact first. Establish a clear rectangle, legible name, simple lettermark, and intentional spacing. Then carry the same SVG into the first laser-cutting lesson to engrave the artwork and cut the boundary.
+Create an original logo or lettermark as a thread across later work. Test it in black and white, animate it in a 2–4 second loop, use it on a small portfolio page, engrave it on the teacher-supplied name-tag blank, or rebuild its essential geometry for the faux-enamel print.
 :::
 
 ::: {.ter-curriculum-relevance}

@@ -18,7 +18,7 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("General Design & Fabrication", design)
         self.assertIn("N.I.C.E. Design Process", design)
         self.assertIn("Laser Cutting &amp; 2D Fabrication", design)
-        self.assertIn("3D Printing &amp; Additive Manufacturing", design)
+        self.assertIn("3D Modelling + 3D Printing", design)
         self.assertIn("**Work in progress.**", tej)
         self.assertIn("data-bs-learn-search", tej)
         self.assertIn("data-bs-learn-list", tej)

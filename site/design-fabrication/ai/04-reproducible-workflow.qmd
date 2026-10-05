@@ -1,0 +1,21 @@
+---
+title: "Write a Reproducible AI Prompt and Workflow"
+description: "Document inputs, criteria, tool/model, prompt, output, checks and decisions so another person can follow the work."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Prompt structure
+
+A reproducible prompt names the limited job, context, verified inputs, criteria, restrictions, requested format and uncertainty rule.
+
+> **Job:** critique, do not redesign. **Context:** desk name tag on a teacher-supplied 150 × 50 mm wood blank. **Criteria:** name readable at 2 m; 6 mm safe margin; original one-colour logo. **Restrictions:** engraving only; do not invent machine settings. **Output:** table of likely problems, evidence needed and one test for each. Label facts, assumptions and suggestions.
+
+## Workflow record
+
+Record the date, tool and model/version shown, exact prompt or accessible export, non-sensitive inputs, output identifier, sources opened, physical measurements, checks performed, decisions, and saved file versions. A person should be able to understand what happened without seeing a private chat.
+
+Remove personal/confidential information before sharing. Test every submitted link in the same permission context the teacher will use.
+
+Next: [Iterate with purpose](05-iterate-purposefully.qmd).

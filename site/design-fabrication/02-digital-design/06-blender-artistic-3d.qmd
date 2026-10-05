@@ -1,0 +1,27 @@
+---
+title: "Blender for Artistic 3D Design | Mesh, Rendering & Animation"
+description: "Use Blender for artistic forms, mesh editing, sculptural geometry, materials, rendering and 3D animation—not as the default fabrication CAD tool."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Choose the tool for the design intent
+
+[Blender](https://www.blender.org/) is excellent for artistic 3D work: mesh editing, organic or sculptural forms, characters, materials, lighting, rendering and animation. Its vertices, edges and faces make it natural to push, pull and sculpt visible form.
+
+Blender can produce printable meshes, but it is not the default teaching tool for dimension-driven fabrication parts. For a bracket, sized hole, repeated pattern or part that must update predictably when one dimension changes, use [Onshape and parametric/solid CAD](../04-3d-printing/01-additive-cad.qmd).
+
+## Focused advanced task
+
+Create a simple original 3D identity object or scene. Build the silhouette from a small number of forms, organize objects and names, set a camera, use intentional light and material choices, and render a still or short turntable. If a logo is imported, inspect and simplify its paths before extruding it.
+
+## Mesh checks
+
+- use transformations deliberately and apply scale when the workflow requires it;
+- inspect normals, intersections, holes and extremely thin regions;
+- keep source files editable and name important objects;
+- use only original or appropriately licensed textures, models and reference images;
+- distinguish a visual render from evidence that geometry is manufacturable.
+
+Next: [Small Website & UI/UX Portfolio](07-website-ui-ux.qmd).

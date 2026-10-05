@@ -32,7 +32,7 @@ The fabrication method is transferable. The application changes with the technol
 </ol>
 :::
 
-## Explore by fabrication method
+## Learn
 
 <div class="ter-path-grid">
   <article class="ter-path-card">
@@ -42,42 +42,68 @@ The fabrication method is transferable. The application changes with the technol
     <p class="ter-path-action"><a href="01-nice-design-process/index.qmd">Learn the design process</a></p>
   </article>
   <article class="ter-path-card">
-    <p class="ter-path-number">02 · Communicate</p>
+    <p class="ter-path-number">02 · Think critically</p>
+    <h2>AI Literacy &amp; Reproducible Workflows</h2>
+    <p>Define criteria before prompting, give AI a limited job, verify claims and sources, protect privacy, iterate because of evidence, and document/disclose meaningful use.</p>
+    <p class="ter-path-action"><a href="ai/index.qmd">Audit and document AI-assisted work</a></p>
+  </article>
+  <article class="ter-path-card">
+    <p class="ter-path-number">03 · Communicate</p>
     <h2>Digital Design &amp; Communication</h2>
-    <p>Build visual literacy through raster and vector graphics, SVG, paths, exact geometry, logos, typography, layout, animation, user flows, and interface prototypes.</p>
+    <p>Build visual literacy through raster/vector graphics, original logos, typography, Pencil2D animation, artistic Blender work, and a small website/UI-UX portfolio.</p>
     <p class="ter-path-action"><a href="02-digital-design/index.qmd">Build digital design skills</a></p>
   </article>
   <article class="ter-path-card">
-    <p class="ter-path-number">03 · Fabricate in 2D</p>
+    <p class="ter-path-number">04 · Fabricate in 2D</p>
     <h2>Laser Cutting &amp; 2D Fabrication</h2>
-    <p>Progress from a first engraved plaque to calibrated fits, assemblies, measured tool holders, removable wall-and-bench modules, and an independent capstone.</p>
-    <p class="ter-path-action"><a href="03-laser-cutting/index.qmd">Follow the laser-cutting curriculum</a></p>
+    <p>Start with a simple engraved name tag, then select measurement, calibration, fit, supports, assemblies and hybrid-fabrication notes as the project requires.</p>
+    <p class="ter-path-action"><a href="03-laser-cutting/index.qmd">Learn laser fabrication</a></p>
   </article>
   <article class="ter-path-card">
-    <p class="ter-path-number">04 · Fabricate in 3D</p>
-    <h2>3D Printing &amp; Additive Manufacturing</h2>
-    <p>Learn CAD, slicing, orientation, supports, tolerances, fasteners, functional parts, assemblies, repair parts, and evidence-based iteration.</p>
-    <p class="ter-path-action"><a href="04-3d-printing/index.qmd">Explore additive manufacturing</a></p>
+    <p class="ter-path-number">05 · Model + fabricate in 3D</p>
+    <h2>3D Modelling + 3D Printing</h2>
+    <p>Contrast Onshape parametric/solid CAD with Blender mesh work, then learn source files, STL/3MF/STEP, slicing, orientation, supports, tolerances and iteration.</p>
+    <p class="ter-path-action"><a href="04-3d-printing/index.qmd">Learn modelling and additive manufacturing</a></p>
   </article>
   <article class="ter-path-card ter-path-card--planned">
-    <p class="ter-status">Planned · 05</p>
-    <h2>CNC &amp; Digital Machining</h2>
-    <p>A future pathway for CAM, work coordinates, toolpaths, workholding, end mills, pockets, profiles, and safe machine-specific practice.</p>
-    <p class="ter-path-action"><a href="05-cnc-digital-machining/index.qmd">View the planned scope</a></p>
-  </article>
-  <article class="ter-path-card ter-path-card--planned">
-    <p class="ter-status">Planned · 06</p>
-    <h2>Textiles &amp; Soft Goods</h2>
-    <p>A future pathway for patterns, seam allowance, sewing, fasteners, embroidery, heat transfer, wearables, and soft-goods prototyping.</p>
-    <p class="ter-path-action"><a href="06-textiles-soft-goods/index.qmd">View the planned scope</a></p>
-  </article>
-  <article class="ter-path-card ter-path-card--planned">
-    <p class="ter-status">Planned · 07</p>
-    <h2>Other Fabrication Methods</h2>
-    <p>Intentional placeholders for vinyl cutting, plasma cutting, sheet metal, forming, molding, casting, and composites as equipment and instruction become available.</p>
-    <p class="ter-path-action"><a href="07-other-fabrication/index.qmd">View future methods</a></p>
+    <p class="ter-status">06 · Future methods</p>
+    <h2>CNC, Textiles &amp; Other Fabrication</h2>
+    <p>Planned pathways preserve space for CNC/digital machining, textiles/soft goods, vinyl, plasma, sheet metal, forming, molding, casting and composites.</p>
+    <p class="ter-path-action"><a href="07-other-fabrication/index.qmd">View the future-methods scope</a></p>
   </article>
 </div>
+
+## Current TAS projects
+
+TAS uses a small selection from this reusable curriculum; it is not a separate textbook and students are not expected to complete every lesson as a project.
+
+<div class="ter-project-grid ter-project-grid--featured">
+<article class="ter-project-card"><p class="ter-course-code">Project 1 · Laser engraving</p><h2>Name + Logo Wood Name Tag</h2><p>Measure a teacher-supplied pre-cut wood rectangle, lay out a readable name and original logo at the correct aspect ratio, export a PNG, engrave it, and evaluate spacing and legibility.</p><p><a href="03-laser-cutting/01-name-logo.qmd">Open Project 1 →</a></p></article>
+<article class="ter-project-card"><p class="ter-course-code">Project 2 · 3D modelling + printing</p><h2>3D Printed Faux Enamel Pin / Jewellery</h2><p>Simplify an original graphic, rebuild it parametrically in Onshape, create raised/recessed regions, slice, print, finish/colour, evaluate small-scale legibility and durability, then revise the source model.</p><p><a href="04-3d-printing/faux-enamel-pin-jewellery.qmd">Open Project 2 →</a></p></article>
+</div>
+
+## Project ideas and extensions
+
+<div class="ter-project-grid">
+<article class="ter-project-card"><p class="ter-course-code">Compact seasonal project</p><h3>Holiday Ornament / Reindeer</h3><p>Design or legally adapt an ornament while checking SVG simplicity, scale, small-feature limits, hanging holes, cut/engrave roles and personalization. Reindeer is one possible example, not the required answer.</p><p><a href="03-laser-cutting/holiday-ornament-reindeer.qmd">Open the ornament brief →</a></p></article>
+<article class="ter-project-card"><p class="ter-course-code">General / advanced extension</p><h3>Tool Organizer</h3><p>Measure real tools and study access, visual counting, ergonomics, calibration, assemblies, removable mounting and revision. Suitable across TAS, TEJ, TTS/TTJ, TMJ, TCJ and other contexts.</p><p><a href="tools/tool-organizer-gallery/index.qmd">Open the build gallery →</a></p></article>
+</div>
+
+::: {.callout-note}
+## Teacher planning idea only: Hardware / Assembly Project — TBD
+
+Select a worthwhile problem before creating a student assignment. The future learning goal is to combine designed/fabricated parts with screws, bolts, nuts, washers, dowels, pins or hinges while considering hardware dimensions, access, assembly sequence, clearance, load paths and serviceability.
+:::
+
+## Fabrication Library & Tools
+
+Use this infrastructure for teacher preparation, advanced work and independent projects:
+
+- [Laser Fabrication Library](../teaching-materials/laser-cutting/index.qmd): searchable SVGs, calibration files, palettes, components, holders, jigs and French-cleat concepts;
+- [First Laser Projects Toolkit](03-laser-cutting/resources/index.qmd): worksheet, paper-to-Inkscape support, name-tag files and reference assemblies;
+- [Fabrication Plate Builder](tools/plate-builder/index.qmd): dimensioned plates, holes and layout patterns;
+- [Tool Organizer Gallery](tools/tool-organizer-gallery/index.qmd): real build evidence, design review and revision status;
+- [Material Fit + Calibration](03-laser-cutting/04-material-fit-calibration.qmd): thickness, scale, kerf, fit and hole tests.
 
 ## Explore by technology area
 
@@ -106,6 +132,10 @@ These lessons can support Ontario secondary school Broad-Based Technological Edu
 ::: {.ter-curriculum-relevance}
 **Ontario curriculum relevance:** The complete pathway is especially useful for **TIJ1O Exploring Technologies**. Individual units also transfer to **TDJ, TMJ, TGJ, TEJ, TCJ, THJ, TTJ, TXJ, TFJ, and TPJ** contexts where the learning genuinely involves design, measurement, prototyping, communication, or fabrication. The application pages make those connections explicit without claiming one-to-one curriculum expectation mappings.
 :::
+
+## General notes and course-specific notes
+
+**General Design & Fabrication** is the canonical reusable layer for N.I.C.E., AI literacy, graphics, animation, UI/UX, parametric CAD, laser fabrication, 3D printing and general organizer guidance. **TEJ Notes** remain specific to computer engineering/electronics. **TTJ/TTS slides and notes** remain specific to transportation, automotive and shop learning. Those courses should link here for shared fabrication concepts instead of duplicating this curriculum.
 
 ## Resource collections
 
