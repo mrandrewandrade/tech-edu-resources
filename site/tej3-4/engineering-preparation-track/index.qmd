@@ -1,0 +1,299 @@
+---
+title: "Engineering Preparation Track"
+subtitle: "Optional enrichment for students preparing to study engineering after high school"
+description: "A practical pathway in mathematics, modelling, energy, programming, measurement, and control for students considering postsecondary engineering."
+sidebar: tej
+toc: true
+toc-depth: 3
+execute: {enabled: false}
+---
+
+::: {.callout-note title="Postsecondary engineering preparation"}
+This optional track adds engineering mathematics and modelling to regular Computer Engineering Technology work. It is locally developed, is not endorsed by any college or university, and does not guarantee admission or postsecondary credit.
+:::
+
+::: {.callout-warning title="Planning status"}
+This is a work-in-progress roadmap. Linked course lessons may be used now. The new assignments, answer keys, and thermal-process project are placeholders until they are developed, checked, and classroom-tested.
+:::
+
+## Why this track
+
+First-year engineering asks students to turn physical situations into equations, solve them carefully, test their assumptions, and explain the result. This track builds those habits through circuits, measurements, programs, sensors, actuators, energy, and control systems.
+
+The preparation is useful across electrical, computer, mechanical, mechatronics, systems, chemical, civil, environmental, and related programs. Waterloo's current program pages provide examples for [Electrical Engineering](https://uwaterloo.ca/future-students/programs/electrical-engineering), [Mechanical Engineering](https://uwaterloo.ca/future-students/programs/mechanical-engineering), [Mechatronics Engineering](https://uwaterloo.ca/engineering/future-students/mechatronics-engineering), [Systems Design Engineering](https://uwaterloo.ca/future-students/programs/systems-design-engineering), and [Chemical Engineering](https://uwaterloo.ca/future-students/programs/chemical-engineering).
+
+Every activity returns to four questions:
+
+1. What is the system boundary?
+2. What quantities enter, leave, accumulate, or are transformed?
+3. What equations and assumptions represent the system?
+4. Do calculated, simulated, and measured results agree closely enough to support the conclusion?
+
+## Learning goals and why they matter
+
+| Learning goal | Why it matters |
+|---|---|
+| Define variables, units, directions, assumptions, and the system boundary before calculating. | A clear model prevents hidden assumptions and sign errors. |
+| Use dimensional analysis, engineering notation, significant figures, estimation, and the Given–Unknown–Equation–Substitute–Solve method. | Units and estimates expose impossible calculator results. |
+| Derive equations from circuit and system diagrams. | Engineers must model unfamiliar systems, not only recognize familiar formulas. |
+| Solve and verify linear systems with two or three variables. | Coupled equations appear in circuits, structures, processes, controls, and data models. |
+| Apply conservation of charge, current, voltage, power, energy, and material. | Conservation laws connect many branches of engineering. |
+| Collect repeatable data, calibrate a model, and quantify error and uncertainty. | Measurements are evidence only when their limits are understood. |
+| Build a step-by-step model in a spreadsheet or program and compare it with measurements. | Computational models let engineers predict changing systems and test ideas safely. |
+| Compare designs using constraints, efficiency, sensitivity, cost, safety, and uncertainty. | Engineering decisions require trade-offs rather than one perfect answer. |
+| Design, build, program, test, revise, and explain an instrumented system. | A complete project joins mathematical reasoning with practical work and communication. |
+
+## Pathway structure
+
+The suggested pathway adds approximately 35 to 50 hours across a full course. Most work replaces simpler practice or adds one challenge section. Chapters 1 through 6 form the analytical core; later chapters can match the student's interests and available equipment.
+
+| Track chapter | Course connection | Engineering mathematics | Required evidence | References |
+|---|---|---|---|---|
+| Chapter 0: Engineering baseline and notebook | orientation and safety | arithmetic, algebra diagnostic, estimation, graph reading, units | diagnostic, learning plan, calculation standard, notebook setup | course safety resources |
+| Chapter 1: Quantities, units, and scale | number systems and measurement | dimensional analysis, engineering notation, significant figures, ratios and rates | Assignment 1: quantity and unit audit | [[1, Ch. 0]](../../references.qmd#ref-grob2016) [[27, Ch. 1]](../../references.qmd#ref-cengel2008) [[28, Chs. 1, 3]](../../references.qmd#ref-chapra2010) |
+| Chapter 2: Algebraic electrical models | charge, voltage, current, and resistance | rearranging equations, proportional and inverse relationships, domains and physical constraints | Assignment 2: resistive design brief | [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016) |
+| Chapter 3: Series and parallel networks | series and parallel circuits | sums, equivalent models, simultaneous constraints, power checks | Assignment 3: series-parallel design proof | [[1, Chs. 4–6]](../../references.qmd#ref-grob2016) |
+| Chapter 4: Coupled equations and Kirchhoff's laws | branch, node, and loop analysis | two- and three-variable linear systems, matrices, signs, residual checks | Assignment 4: branch-current system | [[1, Chs. 7, 9]](../../references.qmd#ref-grob2016) [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010) |
+| Chapter 5: Equivalent models and optimization | source equivalents and loading | functions, graphing, extrema, constraints, sensitivity and fault cases | Assignment 5: source/load optimization memo | [[1, Ch. 10]](../../references.qmd#ref-grob2016) [[28, Chs. 13–16]](../../references.qmd#ref-chapra2010) |
+| Chapter 6: Power and energy balances | power, energy, computer systems, and thermal behaviour | power versus energy, efficiency, storage, thermal energy and balances | Assignment 6: energy audit; Lab 1: thermal balance | [[1, Chs. 1, 12]](../../references.qmd#ref-grob2016) [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008) |
+| Chapter 7: Measurement, calibration, and uncertainty | measurement and sensors | slope, intercept, regression, residuals, percent error and uncertainty | Lab 2: sensor calibration | [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3, 4, 17, 20]](../../references.qmd#ref-chapra2010) |
+| Chapter 8: Transient and step-by-step systems | changing electrical and thermal systems | exponentials, time constants, recurrence relations and numerical stepping | Assignment 7: transient model | [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010) |
+| Chapter 9: Logic, algorithms, and state | digital logic, programming, and microcontrollers | Boolean expressions, binary enumeration, functions, conditions, arrays and state-transition tables | Assignment 8: solver; Assignment 9: safety state machine | [[28, Ch. 2]](../../references.qmd#ref-chapra2010) |
+| Chapter 10: Electromechanical systems | motors, switching, protection, and motion | speed, torque, gear ratio, electrical and mechanical power, efficiency | Lab 3: actuator characterization | [[1, Chs. 13–14]](../../references.qmd#ref-grob2016) |
+| Chapter 11: Feedback, models, and design decisions | control systems | error, gain, saturation, hysteresis, response metrics, parameter variation and trade-offs | Assignment 10: control-method comparison | [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010) |
+| Chapter 12: Integrated engineering project | culminating project | integrated modelling, validation, optimization and evidence-based revision | Project 1: capstone portfolio | selected sources and manufacturer documentation |
+
+## Chapter specifications
+
+### Chapter 0: Engineering baseline and notebook
+
+The track begins with a short diagnostic rather than a mark. The student demonstrates fraction and decimal operations, equation rearrangement, graph interpretation, unit conversions, calculator use, estimation, and a short technical explanation. The result determines which skills require review.
+
+The engineering notebook standard requires a dated problem statement, system diagram, givens, unknowns, assumptions, equations before substitution, units carried through the work, full calculator result, rounded answer, reasonableness check, and revision record. Safety decisions and failed tests remain part of the record.
+
+### Chapter 1: Quantities, units, and scale
+
+Complete [Number Systems, Measurement, Units, and Calculator Skills](../01-number-systems/index.qmd), then extend the work to compound units such as coulombs per second, joules per second, watt-hours, kilograms per second, litres per minute, joules per kilogram-degree Celsius, revolutions per minute, radians per second, and dollars per kilowatt-hour.
+
+The student should convert units by multiplying by identities, not by moving decimals without explanation. Estimation precedes calculator work. Final answers must state whether the magnitude is physically plausible.
+
+### Chapter 2: Algebraic electrical models
+
+Complete [Charge, Voltage, and Current](../02-basic-electronics/01-charge-voltage-current.qmd), [Closed, Open, and Short Circuits](../02-basic-electronics/02-circuits-opens-shorts.qmd), and [Ohm's Law](../02-basic-electronics/03-ohms-law.qmd).
+
+Track problems require the student to derive and rearrange relationships, identify impossible values, state operating limits, and compare symbolic predictions with simulation. Problems should include design choices rather than only asking for a missing number.
+
+### Chapter 3: Conservation in series and parallel networks
+
+Use the regular series and parallel circuit sequence. The extension emphasizes why the current, voltage, resistance, and power rules follow from circuit structure. Each solution includes at least two independent checks.
+
+The student should be able to demonstrate:
+
+$$I_T=I_1=I_2 \quad \text{for one series path}$$
+
+$$V_T=V_1=V_2 \quad \text{for parallel branches across the same nodes}$$
+
+$$P_T=\sum P_k$$
+
+The power equation is used as a conservation check after the circuit has been solved.
+
+### Chapter 4: Coupled equations and Kirchhoff's laws
+
+This is the central systems-of-equations chapter. It progresses from Kirchhoff's current law and Kirchhoff's voltage law to branch-current, node-voltage, and mesh-current methods. The student solves a two-source network by elimination, writes the equations in matrix form, and uses software to verify the result. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
+
+The solution includes a labelled schematic, assumed directions, independent node and loop equations, the algebraic solution, substitution into the original equations, a current-law residual, a voltage-law residual, and a power balance. A negative current means the actual direction is opposite to the assumed direction; it does not mean the calculation failed.
+
+### Chapter 5: Equivalent models and optimization
+
+Thevenin and Norton equivalents reduce a network to a useful model at two terminals. The student varies a load, graphs delivered power, identifies a maximum, and then explains why maximum power is not always the same design objective as maximum efficiency, minimum cost, lowest temperature, or longest battery life.
+
+This chapter introduces engineering optimization without requiring calculus. A valid recommendation must name the objective, constraints, variables, feasible alternatives, evidence, and trade-offs.
+
+### Chapter 6: Power and energy balances
+
+Complete [Power and Energy](../02-basic-electronics/04-power-energy.qmd), then apply a conserved-quantity balance:
+
+$$\text{input}-\text{output}=\text{accumulation}$$
+
+For a material species that can be produced or consumed, the more general form also includes generation and consumption terms. For total energy, energy may cross the boundary or change form, but it is conserved.
+
+For an electrical load:
+
+$$P=VI \qquad E_{\mathrm{in}}=VIt$$
+
+For a supervised low-voltage water-heating investigation:
+
+$$E_{\mathrm{water}}=mc\Delta T$$
+
+$$E_{\mathrm{in}}=E_{\mathrm{stored}}+E_{\mathrm{loss}}$$
+
+$$\eta=\frac{E_{\mathrm{useful}}}{E_{\mathrm{in}}}\times100\%$$
+
+The introductory calculation treats water as a closed batch and calculates an observed loss. The advanced investigation uses two experimental runs to estimate an effective heat capacity $C_{\mathrm{eff}}$ and a heat-loss coefficient $K$:
+
+$$\overline V_j\overline I_jt_j=C_{\mathrm{eff}}\Delta T_j+K(T_{\mathrm{avg},j}-T_{\mathrm{room},j})t_j$$
+
+Two runs produce two linear equations. A third run tests the model. The teacher background covers energy analysis, closed systems, and control volumes; the student activity remains original, low-voltage, and appropriate for a high-school laboratory. [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)
+
+::: {.callout-important title="Thermal-project safety boundary"}
+Use only teacher-approved protected low-voltage equipment. Students do not construct or probe mains circuits. Keep liquids isolated from exposed electronics, include temperature and current limits, provide secondary containment, and define a safe shutdown state before testing.
+:::
+
+### Chapter 7: Measurement, calibration, and uncertainty
+
+Compare calculated, simulated, and measured values, then calibrate one sensor or actuator using repeated measurements. The student produces a scatter plot, fitted relationship, residual table, stated valid range, and discussion of uncertainty.
+
+The objective is not to force every data set to be linear. The student must explain whether the model is suitable, where interpolation is defensible, and why extrapolation beyond the measured range may be unsafe.
+
+### Chapter 8: Transient and step-by-step systems
+
+Resistor-capacitor and resistor-inductor circuits provide a practical route into changing systems. The student measures or simulates a transient response, identifies a time constant, and compares observations with a model. A spreadsheet or program then advances the model one time step at a time.
+
+For the thermal process, an accessible no-calculus model is:
+
+$$T_{n+1}=T_n+\frac{P_{\mathrm{in}}-K(T_n-T_{\mathrm{room}})}{C_{\mathrm{eff}}}\Delta t$$
+
+The student changes the time step and explains why a numerical model can become inaccurate or unstable. Differential equations may be named as the later university language for the same idea, but they are not required to complete the track.
+
+### Chapter 9: Logic, algorithms, and state
+
+Complete the [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd) sequence and the appropriate Programming and Microcontroller modules. Three-input truth tables must count in binary order from $000$ to $111$, with a separate column for each output.
+
+The programming extension implements one previously solved model. Suitable programs include a Given–Unknown–Equation–Substitute–Solve calculator with unit checks, a two- or three-equation solver, a resistor-capacitor circuit simulator, a thermal time-step model, or a calibration tool. The student supplies tests, explains invalid-input handling, and compares program output with one hand calculation.
+
+### Chapter 10: Electromechanical systems
+
+Use magnetism, electromagnetism, switching, motors, protection, and motion control to connect electrical input to mechanical output. The minimum mathematical set is:
+
+$$P_{\mathrm{electrical}}=VI$$
+
+$$P_{\mathrm{mechanical}}=\tau\omega$$
+
+$$\eta=\frac{P_{\mathrm{mechanical}}}{P_{\mathrm{electrical}}}$$
+
+The student characterizes one approved actuator or pump across several operating points and explains why speed, torque, flow, current, temperature, and efficiency cannot all be optimized independently.
+
+### Chapter 11: Feedback, models, and design decisions
+
+Complete the [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd) comparison sequence. Use the same process model and disturbance when comparing open-loop, on-off, hysteresis, proportional, proportional-integral, and proportional-integral-derivative control. Record rise time, overshoot, settling behaviour, steady-state error, saturation, and failure response.
+
+Calculus is not required. The student should understand the operational meaning of accumulated error and rate of change, use graphs accurately, and explain how changing a parameter affects the complete system.
+
+### Chapter 12: Integrated engineering project
+
+The recommended project is an **instrumented low-voltage thermal process controller**. It connects circuits, sensors, microcontrollers, programming, energy, data, safety, and control while providing useful preparation across engineering disciplines.
+
+The student may propose a different project when it preserves the same mathematical and validation requirements. Suitable alternatives include a motor or pump test stand, battery discharge and thermal monitor, environmental chamber model, controlled fan-and-temperature system, tank-level simulator, or instrumented renewable-energy demonstrator.
+
+## Assignment and lab sequence
+
+| Item | Assignment or lab | Required student evidence | Course connection |
+|---|---|---|---|
+| Diagnostic | Engineering mathematics baseline | diagnostic, correction record and learning targets | ungraded starting point |
+| Assignment 1 | Quantity and unit audit | variable table, unit conversions, estimates and Given–Unknown–Equation–Substitute–Solve solutions | extends number systems and measurement |
+| Assignment 2 | Resistive design brief | schematic, symbolic relationships, selected values, simulation and limits | extends Ohm's law; use the existing [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf) as prerequisite practice |
+| Assignment 3 | Series-parallel design proof | complete circuit solution with voltage, current, resistance and power checks | extends series and parallel circuits and the same calculation package |
+| Assignment 4 | Branch-current system | two-source circuit, two or three independent equations, hand and software solutions, current-law and voltage-law residuals | extends Kirchhoff's laws; based on [[1, Ch. 9]](../../references.qmd#ref-grob2016) |
+| Assignment 5 | Source/load optimization memo | graph, feasible region or tested range, optimum, constraints and recommendation | extends equivalent circuits and source loading |
+| Assignment 6 | Energy audit | measured or documented load, power profile, energy, cost, uncertainty and improvement recommendation | extends power and energy through the [Computer Power and Parts mission](../computer-systems/computer-power-parts.qmd) |
+| Lab 1 | Electrical-to-thermal energy balance | circuit, measurements, $VIt$, $mc\Delta T$, losses, efficiency and safety record | new supervised low-voltage investigation |
+| Lab 2 | Sensor calibration and model check | repeated data, scatter plot, regression, residuals, valid range and uncertainty | extends measurement and sensors |
+| Assignment 7 | Transient model | resistor-capacitor or thermal data, time constant or parameters, spreadsheet or program model, prediction comparison | extends changing systems and programming |
+| Assignment 8 | Engineering calculation program | documented code, test cases, hand-check and invalid-input behaviour | extends programming fundamentals |
+| Assignment 9 | Safety state machine | state diagram, transition table, normal sequence, interlocks and fault recovery | extends digital logic and microcontrollers; use the [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf) first |
+| Lab 3 | Actuator characterization | electrical input, motion or flow output, efficiency graph, limits and protection | extends motors, protection, and motion control |
+| Assignment 10 | Control-method comparison | common process, common disturbance, response graphs, metrics and recommendation | uses the existing [Control Methods Comparison](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf) |
+| Project 1 | Integrated engineering capstone | requirements, design, model, build or approved simulation, code, validation, revision and technical report | extends the culminating project and control-systems work |
+
+## Capstone gates
+
+| Gate | Approval evidence |
+|---|---|
+| 1. Need and system boundary | stakeholder or use case, measurable need, inputs, outputs, disturbances and exclusions |
+| 2. Safety and feasibility | low-voltage boundary, hazards, limits, fault response, available equipment and teacher approval |
+| 3. Mathematical model | variables, units, assumptions, governing equations, expected range and hand-worked example |
+| 4. Electrical design | readable schematic, component ratings, protection, power budget and interface limits |
+| 5. Experimental plan | controlled variables, calibration, sampling plan, uncertainty and success criteria |
+| 6. Prototype or simulation | functional implementation, versioned code and initial data |
+| 7. Validation | predicted-versus-measured comparison, residuals, limitations and model revision |
+| 8. Communication | concise report, graphs, annotated evidence, references, demonstration and reflection |
+
+## Assessment model
+
+Track work should be assessed as engineering evidence rather than extra arithmetic. The recommended weighting within each major task is:
+
+| Category | Weight | Evidence |
+|---|---:|---|
+| Model formulation | 25% | boundary, variables, assumptions, diagram and equations |
+| Mathematical execution | 20% | algebra, units, precision, software use and verification |
+| Design and safety | 20% | ratings, constraints, protection, feasible choices and fault response |
+| Experiment and validation | 20% | calibration, repeatability, comparison, uncertainty and revision |
+| Communication | 15% | organized notebook, graphs, citations, explanation and conclusion |
+
+A polished answer with an unjustified model should not receive a high track result. A student who discovers and explains why a model failed may demonstrate stronger engineering judgement than a student whose numbers happen to agree.
+
+## Discipline connections
+
+| Engineering direction | Strongest track connections |
+|---|---|
+| Electrical and Computer | circuits, Kirchhoff's laws, equivalent networks, power, logic, programming, embedded systems and control |
+| Mechanical and Mechatronics | energy conversion, sensors, actuators, torque, motion, thermal behaviour, programming and control |
+| Systems Design | boundaries, requirements, models, feedback, trade-offs, optimization, uncertainty and communication |
+| Chemical and Biological | conservation laws, energy balances, transient models, sensors, process data and control |
+| Civil and Environmental | measurement, flow and energy analogies, structures or networks, data models, optimization and sustainability |
+| Management and Industrial | process mapping, constraints, data, efficiency, optimization, cost and decision records |
+
+## Textbook chapter map
+
+The textbooks are teacher references. Public track materials must use original explanations, diagrams, values, and questions. Do not copy or republish textbook pages or problem sets.
+
+### [[1]](../../references.qmd#ref-grob2016) Grob's Basic Electronics, 12th edition
+
+| Chapters used | Track use |
+|---|---|
+| Ch. 0, Introduction to Powers of 10 | engineering notation, metric prefixes and calculator fluency |
+| Ch. 1, Electricity | charge, current, voltage, power, energy and physical foundations |
+| Ch. 3, Ohm's Law | algebraic electrical models |
+| Chs. 4-6, Series, Parallel, and Series-Parallel Circuits | network structure and conservation checks |
+| Ch. 7, Voltage Dividers and Current Dividers | proportional models and loading |
+| Ch. 8, Analog and Digital Multimeters | measurement practice |
+| Ch. 9, Kirchhoff's Laws | current law, voltage law, branch currents, node voltage, mesh current and simultaneous equations |
+| Ch. 10, Network Theorems | equivalent models and maximum-power investigations |
+| Ch. 12, Batteries | stored energy, capacity and source behaviour |
+| Chs. 13-14, Magnetism and Electromagnetism | electromechanical systems |
+| Chs. 16, 18-22 | capacitance, inductance, transients and time constants |
+| Chs. 27–30 and 33 | optional device, switching, sensor-interface and operational-amplifier extensions |
+
+Grob remains the primary electronics sequencing source. [[1]](../../references.qmd#ref-grob2016)
+
+### [[27]](../../references.qmd#ref-cengel2008) Çengel, Introduction to Thermodynamics and Heat Transfer, 2nd edition
+
+| Chapters used | Teacher use in the track |
+|---|---|
+| Ch. 1, Introduction and Overview | units, systematic problem solving, modelling and systems of equations |
+| Ch. 3, Energy, Energy Transfer, and General Energy Analysis | energy forms, balances, conversion and efficiency |
+| Ch. 5, Energy Analysis of Closed Systems | batch thermal system background |
+| Ch. 6, Mass and Energy Analysis of Control Volumes | optional flow-system extension |
+| Ch. 9, Mechanisms of Heat Transfer | conduction, convection and radiation vocabulary |
+| Ch. 11, Transient Heat Conduction | advanced interpretation of time-dependent heating and cooling |
+
+This is a restricted teacher reference. Student materials use a deliberately smaller high-school model. [[27]](../../references.qmd#ref-cengel2008)
+
+### [[28]](../../references.qmd#ref-chapra2010) Chapra and Canale, Numerical Methods for Engineers, 6th edition
+
+| Chapters used | Teacher use in the track |
+|---|---|
+| Ch. 1, Mathematical Modeling and Engineering Problem Solving | conservation-law models across engineering disciplines |
+| Ch. 2, Programming and Software | structured computational implementation |
+| Chs. 3-4, Error Analysis | significant figures, accuracy, precision, uncertainty and error propagation |
+| Chs. 5-6, Roots of Equations | graphical solutions, iteration and convergence extensions |
+| Chs. 9-12, Linear Algebraic Equations | elimination, matrices, software verification and cross-discipline cases |
+| Chs. 13-16, Optimization | design variables, objectives, constraints and discipline examples |
+| Chs. 17 and 20, Curve Fitting and Case Studies | regression and experimental data |
+| Chs. 25 and 28, Ordinary Differential Equations and Case Studies | teacher background for discrete transient models |
+
+Chapter 12 is particularly useful as a teacher reference because it places reactor, truss, resistor-circuit, and spring-mass examples beside one another, showing that linear systems are shared engineering tools. Chapter 16 similarly compares tank, wastewater, circuit, and mechanical optimization cases. Track assignments remain original and use high-school mathematics. [[28]](../../references.qmd#ref-chapra2010)
+
+## Implementation status
+
+This page defines the intended track and source map. Existing course lessons and linked activities can be used now. The new assignments and thermal-process project still require student handouts, answer keys, equipment verification, accessibility review, and classroom testing before they are labelled published.
