@@ -147,7 +147,7 @@ class DesignFabricationTests(unittest.TestCase):
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench"):
             self.assertIn(design, organizer)
         self.assertIn("unverified", organizer)
-        self.assertEqual(organizer.count("ter-assembly-card\">"), 4)
+        self.assertEqual(organizer.count('class="ter-assembly-card"'), 4)
         self.assertEqual(organizer.count("True-size parts sheet"), 4)
         self.assertEqual(organizer.count("Download parts SVG"), 4)
 

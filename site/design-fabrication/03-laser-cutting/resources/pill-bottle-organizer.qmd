@@ -29,7 +29,7 @@ The 36 mm opening allows the example body to pass through while the larger cap r
 Each card shows both files you receive: the **exploded view** explains how the assembly goes together; the **parts sheet** is the true-size SVG students adapt in Inkscape. Select either preview to open it full size.
 
 <div class="ter-assembly-gallery">
-<article class="ter-assembly-card">
+<article class="ter-assembly-card" id="simple-shelf-rack">
 <a class="ter-assembly-preview ter-assembly-preview--hero" href="../../../assets/laser-library/classroom-kit/pill-bottle/simple-shelf-rack/exploded.svg"><img src="../../../assets/laser-library/classroom-kit/pill-bottle/simple-shelf-rack/exploded.svg" alt="Exploded view of the simple shelf rack" loading="lazy"><span>Exploded assembly</span></a>
 <div class="ter-assembly-card__body">
 <p class="ter-assembly-kicker">A · Best first build</p>
@@ -42,7 +42,7 @@ Each card shows both files you receive: the **exploded view** explains how the a
 </div>
 </article>
 
-<article class="ter-assembly-card">
+<article class="ter-assembly-card" id="dowel-supported-rack">
 <a class="ter-assembly-preview ter-assembly-preview--hero" href="../../../assets/laser-library/classroom-kit/pill-bottle/dowel-supported-rack/exploded.svg"><img src="../../../assets/laser-library/classroom-kit/pill-bottle/dowel-supported-rack/exploded.svg" alt="Exploded view of the dowel-supported rack" loading="lazy"><span>Exploded assembly</span></a>
 <div class="ter-assembly-card__body">
 <p class="ter-assembly-kicker">B · Hybrid fabrication</p>
@@ -55,7 +55,7 @@ Each card shows both files you receive: the **exploded view** explains how the a
 </div>
 </article>
 
-<article class="ter-assembly-card">
+<article class="ter-assembly-card" id="reinforced-wall-rack">
 <a class="ter-assembly-preview ter-assembly-preview--hero" href="../../../assets/laser-library/classroom-kit/pill-bottle/reinforced-wall-rack/exploded.svg"><img src="../../../assets/laser-library/classroom-kit/pill-bottle/reinforced-wall-rack/exploded.svg" alt="Exploded view of the reinforced wall rack" loading="lazy"><span>Exploded assembly</span></a>
 <div class="ter-assembly-card__body">
 <p class="ter-assembly-kicker">C · Load path study</p>
@@ -68,7 +68,7 @@ Each card shows both files you receive: the **exploded view** explains how the a
 </div>
 </article>
 
-<article class="ter-assembly-card">
+<article class="ter-assembly-card" id="removable-wall-bench-rack">
 <a class="ter-assembly-preview ter-assembly-preview--hero" href="../../../assets/laser-library/classroom-kit/pill-bottle/removable-wall-bench-rack/exploded.svg"><img src="../../../assets/laser-library/classroom-kit/pill-bottle/removable-wall-bench-rack/exploded.svg" alt="Exploded view of the removable wall and bench rack" loading="lazy"><span>Exploded assembly</span></a>
 <div class="ter-assembly-card__body">
 <p class="ter-assembly-kicker">D · Transferable module</p>
