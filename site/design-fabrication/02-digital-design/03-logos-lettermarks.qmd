@@ -16,7 +16,8 @@ This is a classroom draft. Test the steps with students and record anything that
 
 Create a simple personal mark from **your initials, a landscape idea, or both**. Your starting image may be hand drawn or created with an approved AI image tool. The finished logo must be your own simplified design.
 
-[Download the one-page personal-logo worksheet](../../assets/name-tag-photopea/personal-logo-worksheet.pdf){.btn .btn-primary}
+[Open the printable Google Doc](https://docs.google.com/document/d/1twC4psThGx-QTd_yiHPICXmogqdAH5zv1JRjKyQnUIM/edit){.btn .btn-primary}
+[Download the printable PDF](../../assets/name-tag-photopea/personal-logo-worksheet.pdf){.btn .btn-outline-primary}
 
 ![Four-step example showing a landscape inspiration becoming a simple coloured vector logo](../../assets/name-tag-photopea/landscape-to-logo.svg){fig-alt="A hand-drawn or AI-made landscape reference is reduced to a sun, mountain, and river, rebuilt with simple shapes in Photopea, and finished as an original coloured logo."}
 
@@ -48,18 +49,24 @@ Choose the idea with the clearest silhouette, not the most detail.
 
 For this logo, keep the editable Photopea file and export an **SVG** master. A PNG copy is useful later for engraving.
 
-## 4. Rebuild it in Photopea
+## 4. Rebuild your selected sketch in Photopea
 
-1. Open [Photopea](https://www.photopea.com/).
-2. Choose **File > New**.
-3. Enter **1000 × 1000 px**.
-4. Choose **Transparent**.
-5. Place the inspiration image as a reference layer.
-6. Lower its opacity and lock it.
-7. Rebuild the idea with the **Shape**, **Pen**, and **Type** tools.
-8. Hide the reference. The new mark should still make sense.
+Follow these steps after you have circled the sketch you want to develop.
 
-Start with black shapes. This makes weak shapes easy to see.
+1. Open [Photopea](https://www.photopea.com/) and choose **File > New**.
+2. Set **Width: 1000 px**, **Height: 1000 px**, and **Background: Transparent**. Select **Create**.
+3. Choose **File > Open & Place** and select a clear photo or scan of your sketch.
+4. In the **Layers** panel, double-click the new layer name and rename it `REFERENCE`.
+5. Set the `REFERENCE` layer **Opacity to 30%**. Select the lock icon so you cannot move it by accident.
+6. Select the **New Layer** icon. Name the new layer for the part you will draw, such as `SUN`, `MOUNTAIN`, or `INITIALS`.
+7. Press **U** for a Shape tool. In the top bar, choose a shape, set **Fill to black**, and set **Stroke to none**. Drag to draw circles, rectangles, or polygons.
+8. Press **P** for the Pen tool when you need a custom shape. Click to make straight corners. Click and drag only when you need a curve. Close the path by clicking the first point.
+9. Press **T** for the Type tool if your mark uses initials. Choose a bold, readable sans-serif font. Keep the text layer editable while you test the idea.
+10. Press **V** for the Move tool. Select a layer, then use **Ctrl+T** to resize, rotate, or move that part. Hold **Shift** while resizing to keep its proportions.
+11. Keep one idea on one layer or in one clearly named group. Duplicate a layer before changing it so you can compare versions.
+12. Hide the `REFERENCE` layer by selecting its eye icon. Your logo should still look clear as one black silhouette.
+
+Use pixels here because this is a scale-free logo master, not the final physical name tag. You will use inches when you place the logo on the 11 by 4 inch name-tag canvas.
 
 ### If you start with type
 
@@ -67,6 +74,8 @@ Start with black shapes. This makes weak shapes easy to see.
 2. Duplicate it.
 3. Right-click the copy and choose **Convert to Shape**.
 4. Move, overlap, rotate, or combine the shapes.
+
+Do not convert your only editable text layer. Keep the original hidden in the PSD so spelling and font choices can still be changed.
 
 ### If you start with a drawing
 
@@ -108,6 +117,8 @@ Save:
 - transparent `lastname-logo.png`
 
 Choose **File > Export As > SVG** for the vector master. Keep the PSD so you can revise it.
+
+Before submitting, reopen the exported SVG in Photopea. Confirm that it has the correct shapes, no missing letters, no accidental background, and no pieces outside the canvas.
 
 ::: {.callout-tip title="Ready for the name tag?"}
 Bring the transparent PNG and the editable PSD to the [Name + Logo engraving worksheet](../03-laser-cutting/01-name-logo.qmd). You will test the proportions on paper before building the final file.

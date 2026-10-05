@@ -283,6 +283,14 @@ class DesignFabricationTests(unittest.TestCase):
             "AI-made or hand-drawn inspiration image",
             "two or three colours at most",
             "landscape-to-logo.svg",
+            "File > Open & Place",
+            "Opacity to 30%",
+            "Press **U** for a Shape tool",
+            "Press **P** for the Pen tool",
+            "Press **T** for the Type tool",
+            "Ctrl+T",
+            "scale-free logo master",
+            "1twC4psThGx-QTd_yiHPICXmogqdAH5zv1JRjKyQnUIM",
         ):
             self.assertIn(detail, logo_lesson)
         self.assertTrue((SITE / "assets" / "name-tag-photopea" / "landscape-to-logo.svg").is_file())
