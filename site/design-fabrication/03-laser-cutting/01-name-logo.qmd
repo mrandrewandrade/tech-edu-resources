@@ -227,7 +227,7 @@ This version reduces the emblem and gives **ANDRADE** most of the available widt
 
 ![Technology Commons emblem, thick AA lettermark, and large NDRADE text](../../assets/name-tag-photopea/10-variation-3-aa-ndrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem, a thickened AA lettermark, and large NDRADE text that reads together as ANDRADE."}
 
-This version keeps the personal idea. The Commons emblem, AA lettermark, and **NDRADE** all share one centreline. The AA mark uses an outside stroke so its weight matches the letters. The AA mark and NDRADE read as one word without overlapping.
+This version keeps the personal idea. The Commons emblem and **NDRADE** establish the main centreline. The AA mark uses an outside stroke so its weight matches the letters, then sits slightly lower because its broad top makes it look visually high when it is centred mathematically. The AA mark and NDRADE read as one word without overlapping.
 
 ::: {.callout-tip title="Recommended worked example"}
 Use **Variation 3** for the detailed Photopea walkthrough because it teaches the most: transparent PNG placement, visual substitution, type matching, stroke weight, grouping, and distance testing. Keep Variations 1 and 2 as comparison examples.
@@ -243,13 +243,13 @@ Starting from the first-draft screenshots above:
 4. Keep the Technology Commons emblem near **1.6 inches high**.
 5. Keep the AA mark near **1.9 inches high** and lock its aspect ratio.
 6. Move NDRADE close enough that the mark reads as its first A. Do not leave a full-letter gap.
-7. Align the visual centre of the emblem, AA mark, and name to the same horizontal line.
+7. Align the emblem and name to one horizontal centreline. Then lower the top-heavy AA mark about **48 pixels (0.16 inch)** until the full word looks balanced.
 8. Centre the complete group vertically and keep every element inside the **0.25 inch** safe margin.
 9. Hide the guides and perform the two-second reading test from about **2 metres** away.
 
-![Alignment check for Variation 3](../../assets/name-tag-photopea/11-variation-3-alignment-check.png){fig-alt="The Technology Commons emblem, AA lettermark, and NDRADE text share one horizontal visual centreline inside a quarter-inch safe margin."}
+![Optical alignment check for Variation 3](../../assets/name-tag-photopea/11-variation-3-alignment-check.png){fig-alt="The Technology Commons emblem and NDRADE text share a horizontal centreline while the top-heavy AA lettermark sits slightly lower for optical balance, all inside a quarter-inch safe margin."}
 
-The cyan line is a temporary guide. It crosses the visual centre of the emblem, the AA mark, and the name. Hide it before export.
+The cyan line is a temporary guide through the emblem and name. The AA mark deliberately sits a little below it. This is **optical alignment**: judge what looks balanced, not only what measures as centred. Hide the guide before export.
 
 ### Student design files
 

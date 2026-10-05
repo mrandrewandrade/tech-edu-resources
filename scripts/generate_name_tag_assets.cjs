@@ -25,6 +25,7 @@ const { PNG } = localRequire("pngjs");
 const W = 3300;
 const H = 1200;
 const INK = "#0b2e4f";
+const AA_OPTICAL_DROP = 48;
 
 fs.mkdirSync(temp, { recursive: true });
 
@@ -190,7 +191,9 @@ function buildVariation3() {
   const total = emblemSize.width + gap1 + aaSize.width + gap2 + textSize.width;
   const startX = Math.round((W - total) / 2);
   const emblemY = Math.round((H - emblemSize.height) / 2);
-  const aaY = Math.round((H - aaSize.height) / 2);
+  // The AA mark carries more visual weight above its geometric centre.
+  // Lower it slightly so it looks balanced beside the wordmark.
+  const aaY = Math.round((H - aaSize.height) / 2) + AA_OPTICAL_DROP;
   const textY = Math.round((H - textSize.height) / 2);
   const emblemLayer = path.join(temp, "v3-emblem-layer.png");
   const aaLayer = path.join(temp, "v3-aa-layer.png");
@@ -200,6 +203,20 @@ function buildVariation3() {
   placeOnCanvas(textPrepared, startX + emblemSize.width + gap1 + aaSize.width + gap2, textY, textLayer);
   const output = path.join(assets, "10-variation-3-aa-ndrade.png");
   composite([emblemLayer, aaLayer, textLayer], output);
+  const alignmentCheck = path.join(assets, "11-variation-3-alignment-check.png");
+  magick([
+    output,
+    "-fill", "none",
+    "-stroke", "#22a6cc",
+    "-strokewidth", "6",
+    "-draw", "rectangle 75,75 3225,1125 line 75,600 3225,600",
+    "-fill", "#22a6cc",
+    "-stroke", "none",
+    "-font", font,
+    "-pointsize", "46",
+    "-draw", "text 120,150 'OPTICAL BALANCE: AA SITS SLIGHTLY LOWER'",
+    alignmentCheck,
+  ]);
   fs.copyFileSync(output, path.join(downloads, "variation-3-thick-aa-ndrade.png"));
   writePsd(path.join(downloads, "variation-3-thick-aa-ndrade.psd"), output, [
     makeTextLayer(textLayer, "NDRADE", 625, startX + emblemSize.width + gap1 + aaSize.width + gap2, textY, textSize.height),

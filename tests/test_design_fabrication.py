@@ -268,7 +268,11 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertTrue((downloads / student_file).is_file(), student_file)
             self.assertGreater((downloads / student_file).stat().st_size, 10_000, student_file)
 
-        for worksheet in ("personal-logo-worksheet.pdf", "name-tag-paper-prototype.pdf"):
+        for worksheet in (
+            "personal-logo-worksheet.pdf",
+            "personal-logo-photopea-guide.pdf",
+            "name-tag-paper-prototype.pdf",
+        ):
             self.assertTrue((SITE / "assets" / "name-tag-photopea" / worksheet).is_file(), worksheet)
             self.assertGreater((SITE / "assets" / "name-tag-photopea" / worksheet).stat().st_size, 10_000, worksheet)
 
@@ -279,6 +283,7 @@ class DesignFabricationTests(unittest.TestCase):
             "Vectorize Bitmap",
             "Export As > SVG",
             "personal-logo-worksheet.pdf",
+            "personal-logo-photopea-guide.pdf",
             "Bitmap_VS_SVG.svg",
             "AI-made or hand-drawn inspiration image",
             "two or three colours at most",
@@ -290,10 +295,15 @@ class DesignFabricationTests(unittest.TestCase):
             "Press **T** for the Type tool",
             "Ctrl+T",
             "scale-free logo master",
-            "1twC4psThGx-QTd_yiHPICXmogqdAH5zv1JRjKyQnUIM",
+            "1amzmA_uCjCnRD1YX1KIoW8YhIvRrl10hZQvdADdNV8Y",
+            "14Tu-Nq394PJ6q7XqGiKx-N0yA6PrIBK4M53pB01OFHw",
         ):
             self.assertIn(detail, logo_lesson)
         self.assertTrue((SITE / "assets" / "name-tag-photopea" / "landscape-to-logo.svg").is_file())
+        for screenshot_number in range(1, 7):
+            screenshots = list((SITE / "assets" / "personal-logo-photopea").glob(f"{screenshot_number:02d}-*.jpg"))
+            self.assertEqual(len(screenshots), 1, screenshot_number)
+            self.assertGreater(screenshots[0].stat().st_size, 10_000, screenshots[0].name)
 
         organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench", "Captured bottle rack"):
