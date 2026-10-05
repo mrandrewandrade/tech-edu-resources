@@ -90,6 +90,21 @@ class CourseContentTests(unittest.TestCase):
         self.assertNotIn("KVL", track)
         self.assertNotIn("WET-A", track)
 
+    def test_tej_pages_inherit_the_learn_sidebar_layout(self) -> None:
+        metadata_files = [SITE / "tej3-4" / "_metadata.yml"]
+        metadata_files.extend((SITE / "tej3-4").glob("**/_metadata.yml"))
+        for metadata_path in metadata_files:
+            content = metadata_path.read_text(encoding="utf-8")
+            if "body-classes:" in content:
+                self.assertIn(
+                    "bs-learn-article",
+                    content,
+                    f"{metadata_path.relative_to(SITE)} overrides the Learn layout",
+                )
+
+        root_metadata = self.read("tej3-4/_metadata.yml")
+        self.assertIn('body-classes: "bs-learn-article"', root_metadata)
+
 
 if __name__ == "__main__":
     unittest.main()
