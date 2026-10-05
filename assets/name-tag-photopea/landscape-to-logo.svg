@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Landscape inspiration to simple logo</title>
+  <desc id="desc">A four-step example showing a hand-drawn or AI-made landscape reference reduced to a few shapes, rebuilt in Photopea, and finished as a simple colour logo.</desc>
+  <rect width="1200" height="340" rx="24" fill="#eef4f7"/>
+  <style>
+    .label{font:700 22px 'Source Sans 3',Arial,sans-serif;fill:#0b2e4f}
+    .small{font:500 17px 'Source Sans 3',Arial,sans-serif;fill:#405568}
+    .panel{fill:#fff;stroke:#9fb2c1;stroke-width:2}
+    .arrow{fill:none;stroke:#5a768c;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    .sketch{fill:none;stroke:#5e6870;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+  <g transform="translate(20 22)">
+    <rect class="panel" width="255" height="296" rx="18"/>
+    <text class="label" x="18" y="36">1 · STARTING IDEA</text>
+    <text class="small" x="18" y="62">Hand drawn or AI made</text>
+    <circle cx="194" cy="111" r="29" fill="#f1b434" opacity=".8"/>
+    <path class="sketch" d="M28 216 L90 126 L131 177 L169 117 L229 216"/>
+    <path class="sketch" d="M31 241 Q108 203 226 240"/>
+    <text class="small" x="18" y="278">Use it as inspiration.</text>
+  </g>
+  <path class="arrow" d="M286 170h32m-12-12 12 12-12 12"/>
+  <g transform="translate(329 22)">
+    <rect class="panel" width="255" height="296" rx="18"/>
+    <text class="label" x="18" y="36">2 · PICK 3 SHAPES</text>
+    <text class="small" x="18" y="62">Circle · triangle · curve</text>
+    <circle cx="70" cy="134" r="35" fill="#f1b434"/>
+    <path d="M105 214 164 105l66 109z" fill="#2d6a4f"/>
+    <path d="M40 244 Q121 190 218 242" fill="none" stroke="#247ba0" stroke-width="20" stroke-linecap="round"/>
+    <text class="small" x="18" y="278">Leave the details behind.</text>
+  </g>
+  <path class="arrow" d="M595 170h32m-12-12 12 12-12 12"/>
+  <g transform="translate(638 22)">
+    <rect class="panel" width="255" height="296" rx="18"/>
+    <text class="label" x="18" y="36">3 · PHOTOPEA</text>
+    <text class="small" x="18" y="62">Rebuild with clean shapes</text>
+    <rect x="42" y="91" width="172" height="156" rx="10" fill="#f7fafb" stroke="#b5c4cf"/>
+    <circle cx="96" cy="139" r="24" fill="#111820"/>
+    <path d="M85 221 145 119l70 102z" fill="#111820"/>
+    <path d="M56 235 Q122 193 204 231" fill="none" stroke="#111820" stroke-width="15" stroke-linecap="round"/>
+    <text class="small" x="18" y="278">Test the silhouette in black.</text>
+  </g>
+  <path class="arrow" d="M904 170h32m-12-12 12 12-12 12"/>
+  <g transform="translate(947 22)">
+    <rect class="panel" width="233" height="296" rx="18"/>
+    <text class="label" x="18" y="36">4 · YOUR MARK</text>
+    <text class="small" x="18" y="62">Add 2–3 colours</text>
+    <circle cx="116" cy="167" r="88" fill="#f8f4e8" stroke="#0b2e4f" stroke-width="7"/>
+    <circle cx="87" cy="132" r="26" fill="#f1b434"/>
+    <path d="M55 210 116 111l68 99z" fill="#2d6a4f"/>
+    <path d="M48 219 Q110 180 182 216" fill="none" stroke="#247ba0" stroke-width="15" stroke-linecap="round"/>
+    <text class="small" x="18" y="278">Simple, original and editable.</text>
+  </g>
+</svg>

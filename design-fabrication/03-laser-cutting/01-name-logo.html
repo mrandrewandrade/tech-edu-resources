@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="An accessible first laser project: prepare readable name and original logo artwork for a measured, teacher-supplied pre-cut wood blank.">
+<meta name="description" content="A student-ready, screenshot-led worksheet for preparing a readable 11 × 4 inch name tag with transparent PNG logos in Photopea.">
 
-<title>Name + Logo | First Laser Engraving Project – Technological Education Resources</title>
+<title>Name + Logo | Photopea Engraving Worksheet – Technological Education Resources</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -84,6 +84,35 @@ ul.task-list li input[type="checkbox"] {
 <meta name="theme-color" content="#062650">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../assets/bs-shared.css">
 <link rel="stylesheet" href="../../assets/bs-components.css">
@@ -91,12 +120,16 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/bs-learn.css">
 <link rel="stylesheet" href="../../assets/tej-curriculum.css">
 <link rel="stylesheet" href="../../assets/design-fabrication.css">
-<meta property="og:title" content="Name + Logo | First Laser Engraving Project – Technological Education Resources">
-<meta property="og:description" content="An accessible first laser project: prepare readable name and original logo artwork for a measured, teacher-supplied pre-cut wood blank.">
+<meta property="og:title" content="Name + Logo | Photopea Engraving Worksheet – Technological Education Resources">
+<meta property="og:description" content="A student-ready, screenshot-led worksheet for preparing a readable 11 × 4 inch name tag with transparent PNG logos in Photopea.">
+<meta property="og:image" content="https://andrewandrade.ca/tech-edu-resources/assets/name-tag-photopea/07-raster-format-guide.svg">
 <meta property="og:site_name" content="Technological Education Resources">
-<meta name="twitter:title" content="Name + Logo | First Laser Engraving Project – Technological Education Resources">
-<meta name="twitter:description" content="An accessible first laser project: prepare readable name and original logo artwork for a measured, teacher-supplied pre-cut wood blank.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:alt" content="Four illustrated cards compare JPG for photographs, PNG for a transparent logo, WebP for efficient websites, and SVG for scalable vector geometry.">
+<meta name="twitter:title" content="Name + Logo | Photopea Engraving Worksheet – Technological Education Resources">
+<meta name="twitter:description" content="A student-ready, screenshot-led worksheet for preparing a readable 11 × 4 inch name tag with transparent PNG logos in Photopea.">
+<meta name="twitter:image" content="https://andrewandrade.ca/tech-edu-resources/assets/name-tag-photopea/07-raster-format-guide.svg">
+<meta name="twitter:image:alt" content="Four illustrated cards compare JPG for photographs, PNG for a transparent logo, WebP for efficient websites, and SVG for scalable vector geometry.">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed ter-design-fabrication bs-learn-article ter-notes-lesson quarto-light">
@@ -187,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/index.html">3. Laser Cutting &amp; 2D Fabrication</a></li><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/01-name-logo.html">3.1 Name + Logo</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/index.html">4. Laser Cutting &amp; 2D Fabrication</a></li><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/01-name-logo.html">4.1 Name + Logo (after Personal Logo)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -207,13 +240,348 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../design-fabrication/applications/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ideas by Technology Area</span></a>
+            <a href="../../design-fabrication/01-nice-design-process/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. N.I.C.E. Design Process</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/01-needs-necessities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Needs &amp; Necessities</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/02-investigate-inquire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Investigate &amp; Inquire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/03-create-communicate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Create &amp; Communicate</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Prototype, Evaluate &amp; Iterate</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/ai/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. AI Literacy &amp; Reproducible Workflows</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/01-capabilities-limits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Capabilities &amp; Limits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/02-evaluate-output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Evaluate an Output</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/03-verify-sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Verify Sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/04-reproducible-workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Reproducible Workflow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/05-iterate-purposefully.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5 Purposeful Iteration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/06-document-disclose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.6 Document &amp; Disclose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/07-ai-design-audit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Design Audit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/02-digital-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Digital Design &amp; Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/01-raster-vector-svg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Raster, Vector &amp; SVG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/02-vector-geometry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Vector Geometry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/03-logos-lettermarks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 Logos &amp; Lettermarks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/04-layout-typography-colour.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Layout, Type &amp; Colour</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/05-animation-ui-ux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 Animation · Pencil2D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/06-blender-artistic-3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 Blender · Artistic 3D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/07-website-ui-ux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 Website &amp; UI/UX</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/03-laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Laser Cutting &amp; 2D Fabrication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/01-name-logo.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">4.1 Name + Logo (after Personal Logo)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optional · Make It Stand</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/03-measure-place.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Measure + Place</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/04-material-fit-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Material Fit + Calibration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Assemblies + Hybrid Fabrication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/06-tool-holder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Tool Organizer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment · Good Idea, Better Product</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/07-wall-bench-module.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Wall + Bench</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/08-capstone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Capstone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/holiday-ornament-reindeer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seasonal · Holiday Ornament</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/04-3d-printing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. 3D Modelling + 3D Printing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/01-additive-cad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Onshape CAD vs Blender Mesh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/02-slicing-orientation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Slicing &amp; Orientation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/03-tolerances-functional-parts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Tolerances &amp; Functional Parts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project · Faux Enamel Jewellery</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/04-design-challenge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Functional Part</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/07-other-fabrication/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Future Fabrication Methods</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/05-cnc-digital-machining/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNC &amp; Digital Machining · Planned</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/06-textiles-soft-goods/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Textiles &amp; Soft Goods · Planned</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/07-other-fabrication/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other Fabrication · Planned</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../teaching-materials/laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Library &amp; Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/resources/work-in-progress/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Free Online Resource Directory · Work in Progress</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">First Laser Projects Toolkit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Organizer Reference Assemblies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reverse-Engineering Challenge</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/tool-organizer-gallery/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool Organizer Gallery</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/fabrication-planning-worksheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Planning Sheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/plate-builder/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Plate Builder</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/applications/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ideas by Technology Area</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../design-fabrication/applications/exploring-technologies/index.html" class="sidebar-item-text sidebar-link">
@@ -282,218 +650,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../design-fabrication/01-nice-design-process/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. N.I.C.E. Design Process</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/01-nice-design-process/01-needs-necessities.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.1 Needs &amp; Necessities</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/01-nice-design-process/02-investigate-inquire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.2 Investigate &amp; Inquire</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/01-nice-design-process/03-create-communicate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.3 Create &amp; Communicate</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.4 Prototype, Evaluate &amp; Iterate</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../design-fabrication/02-digital-design/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Digital Design &amp; Communication</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/02-digital-design/01-raster-vector-svg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.1 Raster, Vector &amp; SVG</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/02-digital-design/02-vector-geometry.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.2 Vector Geometry</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/02-digital-design/03-logos-lettermarks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.3 Logos &amp; Lettermarks</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/02-digital-design/04-layout-typography-colour.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.4 Layout, Type &amp; Colour</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/02-digital-design/05-animation-ui-ux.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.5 Animation &amp; UI/UX</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../design-fabrication/03-laser-cutting/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Laser Cutting &amp; 2D Fabrication</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/01-name-logo.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">3.1 Name + Logo</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.2 Make It Stand</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/03-measure-place.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3 Measure + Place</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/04-material-fit-calibration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.4 Material Fit + Calibration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.5 Assemblies + Hybrid Fabrication</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/06-tool-holder.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.6 Tool Holder</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/07-wall-bench-module.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.7 Wall + Bench Module</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/08-capstone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.8 Capstone</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/resources/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">First Projects Toolkit</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Organizer Assembly Gallery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/03-laser-cutting/resources/fabrication-planning-worksheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Fabrication Planning Sheet</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/tools/plate-builder/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Fabrication Plate Builder</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../design-fabrication/04-3d-printing/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. 3D Printing</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/04-3d-printing/01-additive-cad.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.1 Additive Manufacturing &amp; CAD</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/04-3d-printing/02-slicing-orientation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.2 Slicing &amp; Orientation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/04-3d-printing/03-tolerances-functional-parts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.3 Tolerances &amp; Functional Parts</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/04-3d-printing/04-design-challenge.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4.4 Design Challenge</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/05-cnc-digital-machining/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. CNC &amp; Digital Machining · Planned</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/06-textiles-soft-goods/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Textiles &amp; Soft Goods · Planned</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../design-fabrication/07-other-fabrication/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Other Fabrication · Planned</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -506,23 +662,45 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#design-brief" id="toc-design-brief" class="nav-link active" data-scroll-target="#design-brief">Design brief</a></li>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#choose-an-editing-route" id="toc-choose-an-editing-route" class="nav-link" data-scroll-target="#choose-an-editing-route">Choose an editing route</a></li>
-  <li><a href="#file-preparation" id="toc-file-preparation" class="nav-link" data-scroll-target="#file-preparation">File preparation</a></li>
+  <li><a href="#part-1---raster-images-and-png" id="toc-part-1---raster-images-and-png" class="nav-link" data-scroll-target="#part-1---raster-images-and-png">Part 1 - Raster images and PNG</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-raster-image" id="toc-what-is-a-raster-image" class="nav-link" data-scroll-target="#what-is-a-raster-image">What is a raster image?</a></li>
+  <li><a href="#which-format-should-i-use" id="toc-which-format-should-i-use" class="nav-link" data-scroll-target="#which-format-should-i-use">Which format should I use?</a></li>
+  <li><a href="#why-use-a-transparent-png-logo" id="toc-why-use-a-transparent-png-logo" class="nav-link" data-scroll-target="#why-use-a-transparent-png-logo">Why use a transparent PNG logo?</a></li>
+  </ul></li>
+  <li><a href="#part-2---build-the-11-4-inch-name-tag-in-photopea" id="toc-part-2---build-the-11-4-inch-name-tag-in-photopea" class="nav-link" data-scroll-target="#part-2---build-the-11-4-inch-name-tag-in-photopea">Part 2 - Build the 11 × 4 inch name tag in Photopea</a>
+  <ul class="collapse">
+  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
+  <li><a href="#step-0---make-a-paper-prototype" id="toc-step-0---make-a-paper-prototype" class="nav-link" data-scroll-target="#step-0---make-a-paper-prototype">Step 0 - Make a paper prototype</a></li>
+  <li><a href="#step-1---create-the-exact-size-canvas" id="toc-step-1---create-the-exact-size-canvas" class="nav-link" data-scroll-target="#step-1---create-the-exact-size-canvas">Step 1 - Create the exact-size canvas</a></li>
+  <li><a href="#step-2---build-a-0.25-inch-safe-margin" id="toc-step-2---build-a-0.25-inch-safe-margin" class="nav-link" data-scroll-target="#step-2---build-a-0.25-inch-safe-margin">Step 2 - Build a 0.25 inch safe margin</a></li>
+  <li><a href="#step-3---place-the-transparent-png-logo" id="toc-step-3---place-the-transparent-png-logo" class="nav-link" data-scroll-target="#step-3---place-the-transparent-png-logo">Step 3 - Place the transparent PNG logo</a></li>
+  <li><a href="#step-4---add-a-readable-name" id="toc-step-4---add-a-readable-name" class="nav-link" data-scroll-target="#step-4---add-a-readable-name">Step 4 - Add a readable name</a></li>
+  <li><a href="#what-makes-a-font-readable" id="toc-what-makes-a-font-readable" class="nav-link" data-scroll-target="#what-makes-a-font-readable">What makes a font readable?</a></li>
+  <li><a href="#step-5---judge-spacing-and-balance" id="toc-step-5---judge-spacing-and-balance" class="nav-link" data-scroll-target="#step-5---judge-spacing-and-balance">Step 5 - Judge spacing and balance</a></li>
+  <li><a href="#make-three-variations-before-choosing" id="toc-make-three-variations-before-choosing" class="nav-link" data-scroll-target="#make-three-variations-before-choosing">Make three variations before choosing</a></li>
+  <li><a href="#improve-variation-3-in-photopea" id="toc-improve-variation-3-in-photopea" class="nav-link" data-scroll-target="#improve-variation-3-in-photopea">Improve Variation 3 in Photopea</a></li>
+  <li><a href="#student-design-files" id="toc-student-design-files" class="nav-link" data-scroll-target="#student-design-files">Student design files</a></li>
+  <li><a href="#step-6---save-the-master-and-export-the-engraving-png" id="toc-step-6---save-the-master-and-export-the-engraving-png" class="nav-link" data-scroll-target="#step-6---save-the-master-and-export-the-engraving-png">Step 6 - Save the master and export the engraving PNG</a></li>
+  </ul></li>
+  <li><a href="#student-submission-checklist" id="toc-student-submission-checklist" class="nav-link" data-scroll-target="#student-submission-checklist">Student submission checklist</a></li>
+  <li><a href="#short-reflection" id="toc-short-reflection" class="nav-link" data-scroll-target="#short-reflection">Short reflection</a></li>
   <li><a href="#before-pressing-start" id="toc-before-pressing-start" class="nav-link" data-scroll-target="#before-pressing-start">Before pressing start</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/index.html">3. Laser Cutting &amp; 2D Fabrication</a></li><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/01-name-logo.html">3.1 Name + Logo</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/index.html">4. Laser Cutting &amp; 2D Fabrication</a></li><li class="breadcrumb-item"><a href="../../design-fabrication/03-laser-cutting/01-name-logo.html">4.1 Name + Logo (after Personal Logo)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Name + Logo | First Laser Engraving Project</h1>
+<h1 class="title">Name + Logo | Photopea Engraving Worksheet</h1>
 </div>
 
 <div>
   <div class="description">
-    An accessible first laser project: prepare readable name and original logo artwork for a measured, teacher-supplied pre-cut wood blank.
+    A student-ready, screenshot-led worksheet for preparing a readable 11 × 4 inch name tag with transparent PNG logos in Photopea.
   </div>
 </div>
 
@@ -539,40 +717,441 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-warning callout-titled" title="Work in progress">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Work in progress
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This worksheet is an evolving classroom draft. Confirm measurements, machine settings, material approval, and the instructor’s local laser procedure before fabrication. Record anything that needs revision after the first student test.</p>
+</div>
+</div>
 <section id="design-brief" class="level2 ter-project-brief">
 <h2 class="anchored" data-anchor-id="design-brief">Design brief</h2>
-<p>Create a readable name and original logo or lettermark for a <strong>teacher-supplied, pre-cut rectangular wood blank</strong>. The first output is a PNG used for engraving. Keep the first machine experience intentionally simple so attention stays on measuring the real blank, layout, export quality and safe workflow.</p>
+<p>Create a clean engraving file for a <strong>teacher-supplied, pre-cut 11 × 4 inch wood name-tag blank</strong>. Place a transparent PNG logo, add a readable name, keep intentional space around every element, and export one full-size PNG for engraving. The example uses the Technology Commons emblem, Andrew’s AA lettermark, and <strong>NDRADE</strong>, so the AA mark acts as the first A in <strong>ANDRADE</strong>.</p>
 </section>
 <section id="learning-goals" class="level2">
 <h2 class="anchored" data-anchor-id="learning-goals">Learning goals</h2>
-<p>Students distinguish raster artwork from later vector cut geometry, fit artwork to an exact physical size, create visual hierarchy, export a clean PNG, and verify the file before it enters the machine workflow.</p>
+<p>By the end, you can:</p>
+<ul>
+<li>explain what a raster image is;</li>
+<li>choose between JPG, PNG, WebP, and SVG for a specific job;</li>
+<li>recognize transparency and explain why it matters;</li>
+<li>create an 11 × 4 inch canvas at 300 pixels per inch;</li>
+<li>use guides to create a 0.25 inch safe margin;</li>
+<li>arrange a logo and name with readable typography, balanced spacing, and clear hierarchy;</li>
+<li>save an editable master and export a checked PNG for engraving.</li>
+</ul>
 </section>
-<section id="choose-an-editing-route" class="level2">
-<h2 class="anchored" data-anchor-id="choose-an-editing-route">Choose an editing route</h2>
-<p><strong>Inkscape (preferred):</strong> use the <a href="../../assets/laser-library/classroom-kit/name-tag/name-tag-engraving-template.svg">editable SVG template</a>, set the page to the measured blank and export the page as PNG.</p>
-<p><strong>Photopea (accessible raster route):</strong> create a new document with the same aspect ratio as the measured blank, place name and original logo on separate layers, maintain a safe margin, then export PNG. Record the intended physical blank size beside the submitted image because a PNG alone does not guarantee physical dimensions.</p>
-<p>Study the <a href="../../assets/laser-library/classroom-kit/name-tag/name-tag-layout-examples.svg">three workable layouts and three common problems</a> before choosing a composition.</p>
+<section id="part-1---raster-images-and-png" class="level2">
+<h2 class="anchored" data-anchor-id="part-1---raster-images-and-png">Part 1 - Raster images and PNG</h2>
+<section id="what-is-a-raster-image" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-raster-image">What is a raster image?</h3>
+<p>A <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#raster-image" class="bs-inline-glossary" data-bs-glossary-slug="raster-image">raster image</a> is a grid of tiny coloured squares called <strong>pixels</strong>. Zoom in far enough and the edges become blocky because the software is enlarging those squares. Photographs, screenshots, JPG files, <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#png" class="bs-inline-glossary" data-bs-glossary-slug="png">PNG</a> files, and most WebP files are raster images.</p>
+<p>A vector graphic stores shapes as mathematical paths. It can scale up without becoming pixelated. SVG is a common vector format and is especially useful when exact outlines will become laser cut paths. In this project, the finished machine handoff is a raster PNG because the first operation is <strong>engrave only</strong>, not a vector cut.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/07-raster-format-guide.svg" class="img-fluid figure-img" alt="Four illustrated cards compare JPG for photographs, PNG for a transparent logo, WebP for efficient websites, and SVG for scalable vector geometry."></p>
+<figcaption>Visual comparison of JPG, PNG, WebP, and SVG for student artwork</figcaption>
+</figure>
+</div>
 </section>
-<section id="file-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="file-preparation">File preparation</h2>
+<section id="which-format-should-i-use" class="level3">
+<h3 class="anchored" data-anchor-id="which-format-should-i-use">Which format should I use?</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Format</th>
+<th>What it does well</th>
+<th>Important limitation</th>
+<th>Use here?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>JPG / JPEG</strong></td>
+<td>Photographs and smooth colour changes at a small file size</td>
+<td>Lossy compression can make sharp logo edges fuzzy, and JPG has no transparent background</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><strong>PNG</strong></td>
+<td>Sharp-edged artwork, lossless compression, and full alpha transparency</td>
+<td>Often larger than JPG or WebP for photographs</td>
+<td><strong>Yes</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>WebP</strong></td>
+<td>Efficient website images; can be lossy, lossless, or transparent</td>
+<td>It is not our standard classroom laser handoff</td>
+<td>Not for this submission</td>
+</tr>
+<tr class="even">
+<td><strong>SVG</strong></td>
+<td>Logos, icons, diagrams, and cut geometry that must stay sharp at any size</td>
+<td>It is a vector file, not the raster engraving image requested here</td>
+<td>Keep as an editable source when available</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types">MDN image format guide</a> documents these differences. Photopea can open and export many of these formats, but the file type should follow the job, not habit.</p>
+</section>
+<section id="why-use-a-transparent-png-logo" class="level3">
+<h3 class="anchored" data-anchor-id="why-use-a-transparent-png-logo">Why use a transparent PNG logo?</h3>
+<p>Transparency means the pixels around the <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#logo" class="bs-inline-glossary" data-bs-glossary-slug="logo">logo</a> are empty rather than filled with a white rectangle. Photopea displays transparency as a grey-and-white checkerboard. A transparent logo can sit over the page without bringing an unwanted box with it.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="transparent-png" class="level4">
+<h4 class="anchored" data-anchor-id="transparent-png">Transparent PNG</h4>
+<div style="min-height:260px;display:flex;align-items:center;justify-content:center;padding:1.25rem;border-radius:1rem;background-color:#fff;background-image:linear-gradient(45deg,#d9e0e5 25%,transparent 25%),linear-gradient(-45deg,#d9e0e5 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#d9e0e5 75%),linear-gradient(-45deg,transparent 75%,#d9e0e5 75%);background-size:32px 32px;background-position:0 0,0 16px,16px -16px,-16px 0">
+<img src="../../assets/branding/logo/aa-logo-transparent.png" alt="Andrew Andrade AA lettermark shown over a checkerboard transparency pattern" style="max-height:210px;max-width:75%">
+</div>
+<p>The checkerboard is not part of the image. It shows the empty pixels around the AA mark.</p>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="white-box-problem" class="level4">
+<h4 class="anchored" data-anchor-id="white-box-problem">White-box problem</h4>
+<div style="min-height:260px;display:flex;align-items:center;justify-content:center;padding:1.25rem;border-radius:1rem;background:#163a59">
+<div style="background:#fff;padding:1.2rem">
+<img src="../../assets/branding/logo/aa-logo-transparent.png" alt="AA logo placed inside a visible white box on a dark field" style="max-height:170px;max-width:100%">
+</div>
+</div>
+<p>If a logo arrives with a white background, that rectangle becomes part of the artwork. Do not assume white means transparent.</p>
+</section>
+</div>
+</div>
+<p><strong>Quick transparency check:</strong> open the logo by itself in Photopea. Checkerboard around the mark means transparent. Solid white around it means those are actual white pixels.</p>
+</section>
+</section>
+<section id="part-2---build-the-11-4-inch-name-tag-in-photopea" class="level2">
+<h2 class="anchored" data-anchor-id="part-2---build-the-11-4-inch-name-tag-in-photopea">Part 2 - Build the 11 × 4 inch name tag in Photopea</h2>
+<section id="before-you-start" class="level3">
+<h3 class="anchored" data-anchor-id="before-you-start">Before you start</h3>
+<p>Use <a href="https://www.photopea.com/">Photopea</a> in a modern browser. Download the instructor-approved transparent PNG logo before opening the editor. For the worked example, use:</p>
+<ul>
+<li><a href="../../assets/branding/emblem/commons-emblem-monochrome-blue-transparent.png">Technology Commons transparent emblem</a></li>
+<li><a href="../../assets/branding/logo/aa-logo-transparent.png">AA transparent lettermark</a></li>
+</ul>
+<p>Record your plan:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decision</th>
+<th>Your answer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Name to display</td>
+<td>______________________________________________</td>
+</tr>
+<tr class="even">
+<td>Logo file</td>
+<td>______________________________________________</td>
+</tr>
+<tr class="odd">
+<td>Typeface and weight</td>
+<td>______________________________________________</td>
+</tr>
+<tr class="even">
+<td>Visual priority: logo, name, or equal</td>
+<td>______________________________________________</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-0---make-a-paper-prototype" class="level3">
+<h3 class="anchored" data-anchor-id="step-0---make-a-paper-prototype">Step 0 - Make a paper prototype</h3>
+<p>A letter-size sheet is 11 × 8.5 inches. Cut it lengthwise and trim the outside quarter-inch strips to make <strong>two exact 11 × 4 inch prototypes</strong>.</p>
+<p><a href="../../assets/name-tag-photopea/name-tag-paper-prototype.pdf" class="btn btn-primary">Download the full-size paper prototype sheet</a></p>
 <ol type="1">
-<li>Measure the supplied blank in millimetres and record width × height.</li>
-<li>Set the page or canvas to that aspect ratio and physical size.</li>
-<li>Add the student’s name with deliberate typography, spacing and strong contrast.</li>
-<li>Add the original <a href="../../design-fabrication/02-digital-design/03-logos-lettermarks.html">logo or lettermark</a>.</li>
-<li>Keep artwork inside the instructor-set safe margin.</li>
-<li>Remove/hide all guides and export the page—not a loose selection—as PNG.</li>
-<li>Save the editable master separately from the exported fabrication image.</li>
-<li>Reopen the PNG and verify crop, orientation, contrast and filename.</li>
+<li>Print in landscape at <strong>Actual size / 100%</strong>. Do not choose Fit.</li>
+<li>Measure the 1 inch check line with a ruler.</li>
+<li>Cut on the solid lines.</li>
+<li>Sketch the logo and name inside the dashed safe margin.</li>
+<li>Put the logo and name on one horizontal centreline.</li>
+<li>Hold it about 2 metres away. Revise before opening Photopea.</li>
+</ol>
+<p>Complete the <a href="../../design-fabrication/02-digital-design/03-logos-lettermarks.html">Personal Logo: Initials to SVG worksheet</a> first if you do not have an original logo.</p>
+</section>
+<section id="step-1---create-the-exact-size-canvas" class="level3">
+<h3 class="anchored" data-anchor-id="step-1---create-the-exact-size-canvas">Step 1 - Create the exact-size canvas</h3>
+<ol type="1">
+<li>Open Photopea and choose <strong>File &gt; New</strong>.</li>
+<li>Name the document clearly, such as <code>lastname-name-tag</code>.</li>
+<li>Set units to <strong>Inches</strong>.</li>
+<li>Enter <strong>11</strong> for width and <strong>4</strong> for height.</li>
+<li>Enter <strong>300 pixels per inch</strong>.</li>
+<li>Choose a white background and click <strong>Create</strong>.</li>
+</ol>
+<p>Photopea stores raster artwork as pixels, so it automatically creates:</p>
+<p><span class="math display">\[11\text{ in} \times 300\text{ px/in} = 3300\text{ px}\]</span></p>
+<p><span class="math display">\[4\text{ in} \times 300\text{ px/in} = 1200\text{ px}\]</span></p>
+<p>Design in inches because the wood is measured in inches. The resulting raster file is 3300 × 1200 pixels because 11 × 300 = 3300 and 4 × 300 = 1200.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/01-create-canvas-inches.jpg" class="img-fluid figure-img" alt="Photopea New Project dialog showing a document named ANDRADE Name Tag with width 11 inches, height 4 inches, 300 pixels per inch, and a white background."></p>
+<figcaption>Photopea New Project dialog set to an 11 by 4 inch canvas at 300 pixels per inch</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-2---build-a-0.25-inch-safe-margin" class="level3">
+<h3 class="anchored" data-anchor-id="step-2---build-a-0.25-inch-safe-margin">Step 2 - Build a 0.25 inch safe margin</h3>
+<p>A <strong>margin</strong> is deliberate empty space between the artwork and the physical edge. It is not wasted space. It prevents the design from feeling crowded and gives room for small placement or material differences.</p>
+<p>Enter <strong>0.25 in</strong> when Photopea accepts units. At 300 pixels per inch, the same margin is:</p>
+<p><span class="math display">\[0.25\text{ in} \times 300\text{ px/in} = 75\text{ px}\]</span></p>
+<p>Add guides at either measurement:</p>
+<ul>
+<li><strong>Vertical:</strong> 0.25 in and 10.75 in, or 75 px and 3225 px</li>
+<li><strong>Horizontal:</strong> 0.25 in and 3.75 in, or 75 px and 1125 px</li>
+</ul>
+<p>Use <strong>View &gt; New Guide</strong> for each guide. Keep every visible part of the logo and name inside the cyan guide box. The resulting safe area is <strong>3150 × 1050 px</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/02-safe-margin-guides.jpg" class="img-fluid figure-img" alt="Photopea canvas with cyan vertical and horizontal guides defining a quarter-inch safe margin."></p>
+<figcaption>Blank Photopea canvas with cyan guides 75 pixels from all four edges</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-3---place-the-transparent-png-logo" class="level3">
+<h3 class="anchored" data-anchor-id="step-3---place-the-transparent-png-logo">Step 3 - Place the transparent PNG logo</h3>
+<ol type="1">
+<li>Choose <strong>File &gt; Open &amp; Place</strong>.</li>
+<li>Select the transparent PNG logo.</li>
+<li>Hold the aspect ratio lock so the logo does not stretch.</li>
+<li>Resize from a corner. Do not pull only the width or height.</li>
+<li>Move the logo inside the safe area.</li>
+<li>Press <strong>Enter</strong> or click the checkmark to confirm.</li>
+<li>Repeat if the design uses a second approved mark.</li>
+</ol>
+<p>Andrew’s example places the Technology Commons emblem first, followed by the AA lettermark. Each file remains on its own layer, which makes revision easier.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/03-place-transparent-pngs.jpg" class="img-fluid figure-img" alt="Photopea workspace showing the Technology Commons round emblem and AA lettermark placed near the left side of the 11 by 4 inch canvas."></p>
+<figcaption>Technology Commons emblem and AA lettermark placed on separate layers inside the margin guides</figcaption>
+</figure>
+</div>
+</section>
+<section id="step-4---add-a-readable-name" class="level3">
+<h3 class="anchored" data-anchor-id="step-4---add-a-readable-name">Step 4 - Add a readable name</h3>
+<ol type="1">
+<li>Select the <strong>Type Tool (T)</strong>.</li>
+<li>Choose <strong>Source Sans 3 Bold</strong>. Source Sans Pro is also acceptable if that is the installed version.</li>
+<li>Use black or another instructor-approved high-contrast colour.</li>
+<li>Type the name in <strong>ALL CAPS</strong>.</li>
+<li>Enlarge the name until it occupies about half the tag height while remaining inside the margin.</li>
+<li>Keep the letters inside the safe margin and leave a clear gap after the logo.</li>
+<li>Use the Move Tool to align the name visually with the logo, not just mathematically.</li>
+</ol>
+<p>For Andrew’s example, type <strong>NDRADE</strong> after the AA lettermark. The mark supplies the first A, so the complete visual reads <strong>ANDRADE</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/04-add-readable-name.jpg" class="img-fluid figure-img" alt="Photopea workspace showing the first draft with the Technology Commons emblem, AA lettermark, and NDRADE text at 420 pixels. The next step enlarges and strengthens this draft."></p>
+<figcaption>NDRADE typed in Source Sans 3 Bold at 420 pixels beside the AA lettermark</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-makes-a-font-readable" class="level3">
+<h3 class="anchored" data-anchor-id="what-makes-a-font-readable">What makes a font readable?</h3>
+<p>Use a sans serif typeface with open letter shapes and enough stroke thickness to engrave clearly. <strong>Source Sans 3 Bold</strong> works well because the capitals are simple, the spacing is even, and similar letters remain easy to distinguish.</p>
+<p>Prefer:</p>
+<ul>
+<li>Source Sans 3, Source Sans Pro, Arial, Helvetica, or another clean sans serif;</li>
+<li>Bold or Semibold for reliable engraving contrast;</li>
+<li>generous letter spacing and a size that can be read from about 2 metres away;</li>
+<li>one typeface and one clear hierarchy.</li>
+</ul>
+<p>Avoid:</p>
+<ul>
+<li>thin, hairline, or distressed lettering;</li>
+<li>scripts where letters join or become ambiguous;</li>
+<li>highly condensed fonts that squeeze counters closed;</li>
+<li>stretching text wider or taller;</li>
+<li>placing letters against the edge.</li>
+</ul>
+<p><strong>Readability test:</strong> zoom out until the on-screen name tag is approximately hand-sized. Look away, then look back for two seconds. If the name is not immediately readable, simplify or enlarge it.</p>
+</section>
+<section id="step-5---judge-spacing-and-balance" class="level3">
+<h3 class="anchored" data-anchor-id="step-5---judge-spacing-and-balance">Step 5 - Judge spacing and balance</h3>
+<p>Good spacing means the empty areas look intentional:</p>
+<ul>
+<li><strong>Outer margin:</strong> all artwork stays at least 0.25 inch from every edge.</li>
+<li><strong>Logo-to-name gap:</strong> the elements are related but do not collide. Aim for a gap similar to one medium-width letter.</li>
+<li><strong>One centreline:</strong> the logo and name share the same horizontal visual centre.</li>
+<li><strong>Vertical centre:</strong> select the complete group and centre it between the top and bottom edges.</li>
+<li><strong>Hierarchy:</strong> the name is the first or equal reading target. Decorative details do not overpower it.</li>
+<li><strong>Breathing room:</strong> no logo tip, letter, or accent crowds the guide.</li>
+</ul>
+<p>The first draft below uses the Technology Commons emblem as the context mark, the AA lettermark as the first letter, and NDRADE as the readable word. It is intentionally kept as a <strong>critique draft</strong>: the letters are too small for the strongest distance reading, and the thin AA mark competes with the heavier type.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/05-final-layout.jpg" class="img-fluid figure-img" alt="First Photopea draft with Technology Commons emblem, a thin AA lettermark, and NDRADE text. This draft is used for critique before making the name larger."></p>
+<figcaption>First ANDRADE draft before the distance-readability improvements</figcaption>
+</figure>
+</div>
+</section>
+<section id="make-three-variations-before-choosing" class="level3">
+<h3 class="anchored" data-anchor-id="make-three-variations-before-choosing">Make three variations before choosing</h3>
+<p>Do not stop at the first acceptable layout. Duplicate the document twice and change one major decision in each copy. Compare all three at the same display size and choose the version that communicates the name fastest.</p>
+<section id="variation-1---clear-professional-baseline" class="level4">
+<h4 class="anchored" data-anchor-id="variation-1---clear-professional-baseline">Variation 1 - clear professional baseline</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/08-variation-1-a-andrade.png" class="img-fluid figure-img" alt="Eleven by four inch name tag with the Technology Commons emblem and large A. ANDRADE text in Source Sans 3 Semibold."></p>
+<figcaption>Technology Commons emblem beside large A. ANDRADE text</figcaption>
+</figure>
+</div>
+<p>This version uses the Commons emblem and <strong>A. ANDRADE</strong>. The logo and text share one centreline, and the complete group is centred vertically.</p>
+</section>
+<section id="variation-2---maximum-distance-readability" class="level4">
+<h4 class="anchored" data-anchor-id="variation-2---maximum-distance-readability">Variation 2 - maximum distance readability</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/09-variation-2-max-readability.png" class="img-fluid figure-img" alt="Eleven by four inch name tag with a smaller Technology Commons emblem and extra-large ANDRADE text."></p>
+<figcaption>Small Technology Commons emblem beside extra-large ANDRADE text</figcaption>
+</figure>
+</div>
+<p>This version reduces the emblem and gives <strong>ANDRADE</strong> most of the available width. It is the strongest choice for reading across a room.</p>
+</section>
+<section id="variation-3---personalized-aa-lettermark" class="level4">
+<h4 class="anchored" data-anchor-id="variation-3---personalized-aa-lettermark">Variation 3 - personalized AA lettermark</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/10-variation-3-aa-ndrade.png" class="img-fluid figure-img" alt="Eleven by four inch name tag with the Technology Commons emblem, a thickened AA lettermark, and large NDRADE text that reads together as ANDRADE."></p>
+<figcaption>Technology Commons emblem, thick AA lettermark, and large NDRADE text</figcaption>
+</figure>
+</div>
+<p>This version keeps the personal idea. The Commons emblem, AA lettermark, and <strong>NDRADE</strong> all share one centreline. The AA mark uses an outside stroke so its weight matches the letters. The AA mark and NDRADE read as one word without overlapping.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Recommended worked example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Recommended worked example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <strong>Variation 3</strong> for the detailed Photopea walkthrough because it teaches the most: transparent PNG placement, visual substitution, type matching, stroke weight, grouping, and distance testing. Keep Variations 1 and 2 as comparison examples.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="improve-variation-3-in-photopea" class="level3">
+<h3 class="anchored" data-anchor-id="improve-variation-3-in-photopea">Improve Variation 3 in Photopea</h3>
+<p>Starting from the first-draft screenshots above:</p>
+<ol type="1">
+<li>Select the <strong>NDRADE</strong> text layer and enlarge it until it occupies about half the tag height.</li>
+<li>Select the AA layer. Choose <strong>Layer &gt; Layer Style &gt; Stroke</strong>.</li>
+<li>Set the stroke position to <strong>Outside</strong>, use the same dark colour as the name, and begin near <strong>0.06 in / 18 px</strong>. Adjust only if a test engraving closes the interior spaces.</li>
+<li>Keep the Technology Commons emblem near <strong>1.6 inches high</strong>.</li>
+<li>Keep the AA mark near <strong>1.9 inches high</strong> and lock its aspect ratio.</li>
+<li>Move NDRADE close enough that the mark reads as its first A. Do not leave a full-letter gap.</li>
+<li>Align the visual centre of the emblem, AA mark, and name to the same horizontal line.</li>
+<li>Centre the complete group vertically and keep every element inside the <strong>0.25 inch</strong> safe margin.</li>
+<li>Hide the guides and perform the two-second reading test from about <strong>2 metres</strong> away.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/11-variation-3-alignment-check.png" class="img-fluid figure-img" alt="The Technology Commons emblem, AA lettermark, and NDRADE text share one horizontal visual centreline inside a quarter-inch safe margin."></p>
+<figcaption>Alignment check for Variation 3</figcaption>
+</figure>
+</div>
+<p>The cyan line is a temporary guide. It crosses the visual centre of the emblem, the AA mark, and the name. Hide it before export.</p>
+</section>
+<section id="student-design-files" class="level3">
+<h3 class="anchored" data-anchor-id="student-design-files">Student design files</h3>
+<p>Download the complete pack or inspect one direction at a time. Each Photoshop file is <strong>11 × 4 inches at 300 ppi</strong> and contains separately named artwork layers. The matching PNG is the clean full-size reference and export.</p>
+<ul>
+<li><a href="../../assets/name-tag-photopea/downloads/name-tag-design-pack.zip">Download the complete name-tag design pack</a></li>
+<li><strong>Variation 1:</strong> <a href="../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.psd">Photoshop file</a> | <a href="../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.png">PNG</a></li>
+<li><strong>Variation 2:</strong> <a href="../../assets/name-tag-photopea/downloads/variation-2-maximum-readability.psd">Photoshop file</a> | <a href="../../assets/name-tag-photopea/downloads/variation-2-maximum-readability.png">PNG</a></li>
+<li><strong>Variation 3:</strong> <a href="../../assets/name-tag-photopea/downloads/variation-3-thick-aa-ndrade.psd">Photoshop file</a> | <a href="../../assets/name-tag-photopea/downloads/variation-3-thick-aa-ndrade.png">PNG</a></li>
+<li><strong>Source artwork:</strong> <a href="../../assets/name-tag-photopea/downloads/source-files/technology-commons-transparent.png">Technology Commons transparent PNG</a> | <a href="../../assets/name-tag-photopea/downloads/source-files/aa-logo-original-transparent.png">original AA transparent PNG</a> | <a href="../../assets/name-tag-photopea/downloads/source-files/aa-logo-thickened.svg">thickened AA SVG</a></li>
+</ul>
+<p>When students make their own version, they should replace the example name and logo rather than submitting an unchanged sample.</p>
+</section>
+<section id="step-6---save-the-master-and-export-the-engraving-png" class="level3">
+<h3 class="anchored" data-anchor-id="step-6---save-the-master-and-export-the-engraving-png">Step 6 - Save the master and export the engraving PNG</h3>
+<ol type="1">
+<li>Choose <strong>File &gt; Save as PSD</strong> and save the editable master as <code>lastname-name-tag-master.psd</code>.</li>
+<li>Hide guides with <strong>View &gt; Extras</strong> or <strong>Ctrl+H</strong>.</li>
+<li>Choose <strong>File &gt; Export As &gt; PNG</strong>.</li>
+<li>Confirm the export size is still <strong>3300 × 1200 px</strong>.</li>
+<li>Name it <code>lastname-name-tag-11x4-engrave.png</code>.</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Reopen the exported PNG and check that nothing moved, cropped, or gained a white box.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/name-tag-photopea/06-export-png.jpg" class="img-fluid figure-img" alt="Photopea Save for Web dialog with PNG selected, width 3300 pixels, height 1200 pixels, and a clear engraving filename."></p>
+<figcaption>Photopea Save for Web dialog showing PNG at 3300 by 1200 pixels</figcaption>
+</figure>
+</div>
+<p>Photopea’s <a href="https://www.photopea.com/learn/opening-saving">Open and Save guide</a> explains the difference between saving an editable PSD and exporting a delivery format.</p>
+</section>
+</section>
+<section id="student-submission-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="student-submission-checklist">Student submission checklist</h2>
+<p>Check every statement before handing in the file:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">My canvas is 11 × 4 inches at 300 pixels per inch.</label></li>
+<li><label><input type="checkbox">My logo is an approved PNG with a transparent background.</label></li>
+<li><label><input type="checkbox">I did not stretch the logo.</label></li>
+<li><label><input type="checkbox">All artwork remains inside the 0.25 inch safe margin.</label></li>
+<li><label><input type="checkbox">The logo and name share one horizontal centreline.</label></li>
+<li><label><input type="checkbox">The complete group is centred vertically.</label></li>
+<li><label><input type="checkbox">My name is in a readable sans serif font.</label></li>
+<li><label><input type="checkbox">My name can be read quickly from about 2 metres away.</label></li>
+<li><label><input type="checkbox">The logo-to-name gap and outer margins look intentional.</label></li>
+<li><label><input type="checkbox">Guides are hidden in the export.</label></li>
+<li><label><input type="checkbox">I saved the editable PSD and the final PNG separately.</label></li>
+<li><label><input type="checkbox">I reopened the PNG and checked crop, orientation, contrast, and spelling.</label></li>
+<li><label><input type="checkbox">My submitted machine job is labelled <strong>ENGRAVE ONLY</strong>.</label></li>
+</ul>
+</section>
+<section id="short-reflection" class="level2">
+<h2 class="anchored" data-anchor-id="short-reflection">Short reflection</h2>
+<ol type="1">
+<li><p>Why was PNG a better choice than JPG for your logo?</p>
+<hr></li>
+<li><p>What did you change to make your name easier to read?</p>
+<hr></li>
+<li><p>Where is the smallest gap in your layout, and is it still larger than the safe margin?</p>
+<hr></li>
+<li><p>If you revised the tag, what would you change first?</p>
+<hr></li>
 </ol>
 </section>
 <section id="before-pressing-start" class="level2">
 <h2 class="anchored" data-anchor-id="before-pressing-start">Before pressing start</h2>
-<p>Follow the local material approval, focus, ventilation, supervision, fire-watch, and shutdown procedure. Confirm the machine job is <strong>engrave only</strong> and that no guide or accidental cut boundary appears.</p>
+<p>Follow the local material approval, focus, ventilation, supervision, fire-watch, and shutdown procedure. Confirm that the wood blank is approved and that the machine job is <strong>engrave only</strong>. No cyan guide, page border, or accidental vector cut boundary should appear in the submitted PNG.</p>
 <div class="ter-curriculum-relevance">
-<p><strong>Ontario curriculum relevance:</strong> Useful for <strong>TIJ1O</strong> and <strong>TDJ2O</strong> learning involving vector graphics, visual communication, exact dimensions, file preparation, manufacturing processes, safe tool use, and evaluation of a produced artifact. Communications Technology connections belong primarily in the preceding digital-design unit.</p>
+<p><strong>Ontario curriculum relevance:</strong> useful for <strong>TIJ1O</strong> and <strong>TDJ2O</strong> learning involving raster and vector graphics, visual communication, exact dimensions, file preparation, manufacturing processes, safe tool use, and evaluation of a produced artifact.</p>
 </div>
-<p>Next: add an open-ended structural requirement in <a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.html">Make It Stand</a>. Use the <a href="../../design-fabrication/03-laser-cutting/resources/index.html">planning worksheet and classroom toolkit</a> to carry the same object into vector fabrication.</p>
+<p>Continue with the <a href="../../design-fabrication/03-laser-cutting/resources/index.html">planning worksheet and classroom toolkit</a>, or move to the optional <a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.html">Make It Stand</a> structural extension.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li><a href="https://www.photopea.com/learn/opening-saving">Photopea: Open and Save</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types">MDN: Image file type and format guide</a></li>
+<li><a href="https://fonts.google.com/specimen/Source+Sans+3">Google Fonts: Source Sans 3</a></li>
+</ul>
 
 
 </section>

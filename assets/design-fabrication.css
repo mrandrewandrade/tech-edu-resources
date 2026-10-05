@@ -233,6 +233,81 @@
   font-size: 0.93rem;
 }
 
+.ter-project-grid--featured .ter-project-card {
+  border-top: 5px solid var(--bs-copper-dark);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-process-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .45rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.ter-process-flow span {
+  display: grid;
+  min-height: 3.5rem;
+  padding: .7rem;
+  place-items: center;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 7px;
+  background: var(--bs-surface);
+  color: var(--bs-navy-dark);
+  font-size: .86rem;
+  font-weight: 720;
+  text-align: center;
+}
+
+.ter-process-flow--strong {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.ter-process-flow--strong span {
+  min-height: 4.5rem;
+  border: 0;
+  background: var(--bs-navy-dark);
+  color: #fff;
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  letter-spacing: .05em;
+}
+
+.ter-case-status {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem;
+  border: 2px solid var(--bs-copper-dark);
+  border-radius: 8px;
+  background: var(--bs-surface);
+}
+
+.ter-case-status > :last-child { margin-bottom: 0; }
+
+.ter-case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.ter-case-study-grid > section {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 8px;
+  background: var(--bs-surface);
+}
+
+.ter-case-study-grid h3 { margin-top: 0; }
+
+.ter-concept-diagram {
+  display: block;
+  width: min(100%, 1100px);
+  height: auto;
+  margin: 1.25rem auto 1.75rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 10px;
+  background: #f7f4ee;
+}
+
 .ter-project-card dt,
 .ter-project-card dd {
   margin: 0;
@@ -513,12 +588,26 @@
   background: color-mix(in srgb, var(--bs-surface) 88%, var(--bs-copper));
 }
 
+[data-bs-theme="dark"] .ter-process-flow span {
+  color: var(--bs-text);
+}
+
+[data-bs-theme="dark"] .ter-process-flow--strong span {
+  color: #fff;
+}
+
 @media (max-width: 760px) {
   .ter-path-grid,
   .ter-two-state,
   .ter-application-grid,
   .ter-project-grid,
   .ter-family-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ter-process-flow,
+  .ter-process-flow--strong,
+  .ter-case-study-grid {
     grid-template-columns: 1fr;
   }
 

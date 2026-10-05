@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.15">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A progressive enrichment curriculum embedded in TEJ for students considering engineering programs.">
+
+<title>Waterloo Engineering Track – Technological Education Resources</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-71c7b49c685e597d910cb795eccce780.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a8915aa26982f2aa87b37c986303974c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.svg">
+
+<link rel="icon" type="image/png" sizes="96x96" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon-96x96.png">
+
+<link rel="icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.ico" sizes="any">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/apple-touch-icon.png">
+
+<link rel="manifest" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/site.webmanifest">
+
+<meta name="theme-color" content="#062650">
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../assets/bs-shared.css">
+<link rel="stylesheet" href="../../assets/bs-components.css">
+<link rel="stylesheet" href="../../assets/commons-overrides.css">
+<link rel="stylesheet" href="../../assets/bs-learn.css">
+<link rel="stylesheet" href="../../assets/tej-curriculum.css">
+<meta property="og:title" content="Waterloo Engineering Track – Technological Education Resources">
+<meta property="og:description" content="A progressive enrichment curriculum embedded in TEJ for students considering engineering programs.">
+<meta property="og:site_name" content="Technological Education Resources">
+<meta name="twitter:title" content="Waterloo Engineering Track – Technological Education Resources">
+<meta name="twitter:description" content="A progressive enrichment curriculum embedded in TEJ for students considering engineering programs.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo light-content">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Tech Edu</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-educator-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Educator Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-educator-resources">    
+        <li>
+    <a class="dropdown-item" href="../../teacher-slides/index.html">
+ <span class="dropdown-text">General Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-materials/index.html">
+ <span class="dropdown-text">General Materials</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../design-fabrication/index.html">
+ <span class="dropdown-text">General Design &amp; Fabrication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tej3-4/index.html">
+ <span class="dropdown-text">TEJ Notes</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-classes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Classes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-classes">    
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tas-2-sem-1.html">
+ <span class="dropdown-text">TAS Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tej-3-sem-1.html">
+ <span class="dropdown-text">TEJ Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-ttj-sem-1.html">
+ <span class="dropdown-text">TTJ / TTS Slides</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../glossary/index.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lore/index.html"> 
+<span class="menu-text">Lore</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/waterloo-engineering-track/index.html">Waterloo Engineering Track</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/curriculum/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Curriculum Roadmap</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/waterloo-engineering-track/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Waterloo Engineering Track</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">0. Orientation, Safety &amp; Design</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/01-number-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Numbers, Measurement &amp; Calculator</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/01-number-systems/01-significant-figures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Significant Figures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/01-number-systems/02-powers-of-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Powers of 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/01-number-systems/06-scientific-calculator.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Scientific Calculator</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/01-number-systems/03-scientific-notation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Scientific Notation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/01-number-systems/04-engineering-notation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 Engineering Notation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/01-number-systems/05-metric-prefixes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.6 Metric Prefixes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/02-basic-electronics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2-5. Electricity, Circuits &amp; Components</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/02-basic-electronics/01-charge-voltage-current.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Charge, Voltage &amp; Current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Closed, Open &amp; Short Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/02-basic-electronics/03-ohms-law.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Ohm’s Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/02-basic-electronics/04-power-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Power &amp; Energy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/03-digital-logic-inputs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Digital Logic &amp; Stable Inputs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/03-digital-logic-inputs/01-digital-levels.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Digital Voltage Levels</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/03-digital-logic-inputs/02-switches-floating-inputs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Switches &amp; Floating Inputs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/03-digital-logic-inputs/03-pull-down-inputs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 External Pull-Downs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/03-digital-logic-inputs/04-pull-up-active-low.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Pull-Ups &amp; Active-Low Logic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/03-digital-logic-inputs/05-debounce-protection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 Debouncing &amp; Protection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 Logic Gates &amp; Truth Tables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 Circuits Culminating Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/curriculum/index.html#unit-7" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Fabrication &amp; PCB Workflow</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching-materials/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shared Fabrication Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching-materials/laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Laser Cutting</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/computer-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Basic Computer Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/computer-power-parts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Main Mission: Power &amp; Parts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/make-it-print.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Side Quest: Make It Print</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/computer-recovery-crew-pilot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Side Quest: Recovery &amp; OS Comparison</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs01-electricity-bridge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS01 Electricity Bridge</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs02-parts-baseline-esd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS02 Parts, Baseline &amp; ESD</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs03-power-connections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS03 Power &amp; Connections</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs04-ready-to-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS04 Ready-to-Power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs05-post-firmware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS05 POST &amp; BIOS/UEFI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs06-linux-mint.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS06 Approved Linux</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs07-ram-upgrade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS07 RAM Upgrade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/cs08-benchmark-challenge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS08 Benchmark Challenge</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Side Quests</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/sq01-teardown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ01 Teardown &amp; Reassembly</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/sq02-fault-stations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ02 Fault Stations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/sq03-storage-expansion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ03 Storage &amp; Expansion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/sq04-linux-inventory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ04 Linux Inventory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/sq05-power-thermal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ05 Power &amp; Thermal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/sq06-repair-reuse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SQ06 Repair &amp; Reuse</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">9. Linux &amp; Operating Systems</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">10. Programming Fundamentals</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">11. Microcontrollers</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">12. Networking &amp; Systems</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">13. Data Science &amp; ML</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">14. Language Models &amp; AI</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">15. Culminating Projects</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/05-control-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bonus: Control Systems &amp; CNC</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c01-control-system-anatomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C01 Control-System Anatomy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c02-open-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C02 Open-Loop Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c03-closed-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C03 Closed-Loop Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c04-hysteresis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C04 On-Off &amp; Hysteresis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c05-proportional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C05 Proportional Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c06-pid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C06 Integral, Derivative &amp; PID</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c07-state-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C07 State Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c08-safety-interlocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C08 Safety Controls &amp; Interlocks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c09-motion-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C09 Motor &amp; Motion Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c10-cnc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C10 CNC as a Control System</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/05-control-systems/c11-culminating-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C11 Culminating Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electronics Library</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/modules/h01-safety-lab-practice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">H01 Safety &amp; Lab Practice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Components</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#relationship-to-waterloo-engineering" id="toc-relationship-to-waterloo-engineering" class="nav-link" data-scroll-target="#relationship-to-waterloo-engineering">Relationship to Waterloo engineering</a></li>
+  <li><a href="#intended-learning-outcomes" id="toc-intended-learning-outcomes" class="nav-link" data-scroll-target="#intended-learning-outcomes">Intended learning outcomes</a></li>
+  <li><a href="#pathway-structure" id="toc-pathway-structure" class="nav-link" data-scroll-target="#pathway-structure">Pathway structure</a></li>
+  <li><a href="#chapter-specifications" id="toc-chapter-specifications" class="nav-link" data-scroll-target="#chapter-specifications">Chapter specifications</a>
+  <ul class="collapse">
+  <li><a href="#wet00-engineering-baseline-and-notebook" id="toc-wet00-engineering-baseline-and-notebook" class="nav-link" data-scroll-target="#wet00-engineering-baseline-and-notebook">WET00 Engineering baseline and notebook</a></li>
+  <li><a href="#wet01-quantities-units-and-scale" id="toc-wet01-quantities-units-and-scale" class="nav-link" data-scroll-target="#wet01-quantities-units-and-scale">WET01 Quantities, units, and scale</a></li>
+  <li><a href="#wet02-algebraic-electrical-models" id="toc-wet02-algebraic-electrical-models" class="nav-link" data-scroll-target="#wet02-algebraic-electrical-models">WET02 Algebraic electrical models</a></li>
+  <li><a href="#wet03-conservation-in-series-and-parallel-networks" id="toc-wet03-conservation-in-series-and-parallel-networks" class="nav-link" data-scroll-target="#wet03-conservation-in-series-and-parallel-networks">WET03 Conservation in series and parallel networks</a></li>
+  <li><a href="#wet04-coupled-equations-kcl-and-kvl" id="toc-wet04-coupled-equations-kcl-and-kvl" class="nav-link" data-scroll-target="#wet04-coupled-equations-kcl-and-kvl">WET04 Coupled equations, KCL, and KVL</a></li>
+  <li><a href="#wet05-equivalent-models-and-optimization" id="toc-wet05-equivalent-models-and-optimization" class="nav-link" data-scroll-target="#wet05-equivalent-models-and-optimization">WET05 Equivalent models and optimization</a></li>
+  <li><a href="#wet06-power-and-energy-balances" id="toc-wet06-power-and-energy-balances" class="nav-link" data-scroll-target="#wet06-power-and-energy-balances">WET06 Power and energy balances</a></li>
+  <li><a href="#wet07-measurement-calibration-and-uncertainty" id="toc-wet07-measurement-calibration-and-uncertainty" class="nav-link" data-scroll-target="#wet07-measurement-calibration-and-uncertainty">WET07 Measurement, calibration, and uncertainty</a></li>
+  <li><a href="#wet08-transient-and-discrete-time-systems" id="toc-wet08-transient-and-discrete-time-systems" class="nav-link" data-scroll-target="#wet08-transient-and-discrete-time-systems">WET08 Transient and discrete-time systems</a></li>
+  <li><a href="#wet09-logic-algorithms-and-state" id="toc-wet09-logic-algorithms-and-state" class="nav-link" data-scroll-target="#wet09-logic-algorithms-and-state">WET09 Logic, algorithms, and state</a></li>
+  <li><a href="#wet10-electromechanical-systems" id="toc-wet10-electromechanical-systems" class="nav-link" data-scroll-target="#wet10-electromechanical-systems">WET10 Electromechanical systems</a></li>
+  <li><a href="#wet11-feedback-models-and-design-decisions" id="toc-wet11-feedback-models-and-design-decisions" class="nav-link" data-scroll-target="#wet11-feedback-models-and-design-decisions">WET11 Feedback, models, and design decisions</a></li>
+  <li><a href="#wet12-integrated-engineering-project" id="toc-wet12-integrated-engineering-project" class="nav-link" data-scroll-target="#wet12-integrated-engineering-project">WET12 Integrated engineering project</a></li>
+  </ul></li>
+  <li><a href="#assignment-and-lab-sequence" id="toc-assignment-and-lab-sequence" class="nav-link" data-scroll-target="#assignment-and-lab-sequence">Assignment and lab sequence</a></li>
+  <li><a href="#capstone-gates" id="toc-capstone-gates" class="nav-link" data-scroll-target="#capstone-gates">Capstone gates</a></li>
+  <li><a href="#assessment-model" id="toc-assessment-model" class="nav-link" data-scroll-target="#assessment-model">Assessment model</a></li>
+  <li><a href="#discipline-connections" id="toc-discipline-connections" class="nav-link" data-scroll-target="#discipline-connections">Discipline connections</a></li>
+  <li><a href="#textbook-chapter-map" id="toc-textbook-chapter-map" class="nav-link" data-scroll-target="#textbook-chapter-map">Textbook chapter map</a>
+  <ul class="collapse">
+  <li><a href="#grobs-basic-electronics-12th-edition" id="toc-grobs-basic-electronics-12th-edition" class="nav-link" data-scroll-target="#grobs-basic-electronics-12th-edition">Grob’s Basic Electronics, 12th edition</a></li>
+  <li><a href="#çengel-introduction-to-thermodynamics-and-heat-transfer-2nd-edition" id="toc-çengel-introduction-to-thermodynamics-and-heat-transfer-2nd-edition" class="nav-link" data-scroll-target="#çengel-introduction-to-thermodynamics-and-heat-transfer-2nd-edition">Çengel, Introduction to Thermodynamics and Heat Transfer, 2nd edition</a></li>
+  <li><a href="#chapra-and-canale-numerical-methods-for-engineers-6th-edition" id="toc-chapra-and-canale-numerical-methods-for-engineers-6th-edition" class="nav-link" data-scroll-target="#chapra-and-canale-numerical-methods-for-engineers-6th-edition">Chapra and Canale, Numerical Methods for Engineers, 6th edition</a></li>
+  </ul></li>
+  <li><a href="#implementation-status" id="toc-implementation-status" class="nav-link" data-scroll-target="#implementation-status">Implementation status</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Waterloo Engineering Track</h1>
+<p class="subtitle lead">Independent TEJ enrichment pathway for engineering mathematics, modelling, energy, programming, and control</p>
+</div>
+
+<div>
+  <div class="description">
+    A progressive enrichment curriculum embedded in TEJ for students considering engineering programs.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled" title="Independent enrichment pathway">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Independent enrichment pathway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Waterloo Engineering Track is a locally developed TEJ enrichment pathway. It is not created, approved, or endorsed by the University of Waterloo, it does not reproduce a Waterloo course, and it does not guarantee admission or university credit. The name identifies the preparation goal. The mathematical and engineering habits are intended to be useful for many first- and second-year engineering pathways.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Planning status">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Planning status
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a work-in-progress curriculum plan. Existing linked TEJ lessons and assignments may be used now. WET-coded handouts, answer keys, and the thermal-process capstone must be developed, safety-checked, accessibility-reviewed, and classroom-tested before release.</p>
+</div>
+</div>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>The student completes the regular TEJ sequence, laboratories, safety requirements, and projects. Track work extends selected TEJ activities with more algebra, systems of equations, conservation laws, energy balances, measurement analysis, programming, modelling, optimization, and technical communication.</p>
+<p>The track is not a separate chemical-engineering course and should not become a collection of disconnected university problems. Every extension begins with a real TEJ circuit, measurement, program, computer system, sensor, actuator, or controller. Applications then connect the same mathematics to electrical, computer, mechanical, mechatronics, systems, chemical, civil, environmental, and related engineering fields.</p>
+<p>The pathway is designed around four recurring questions:</p>
+<ol type="1">
+<li>What is the system boundary?</li>
+<li>What quantities enter, leave, accumulate, or are transformed?</li>
+<li>What equations and assumptions represent the system?</li>
+<li>Do calculated, simulated, and measured results agree closely enough to support the conclusion?</li>
+</ol>
+</section>
+<section id="relationship-to-waterloo-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-to-waterloo-engineering">Relationship to Waterloo engineering</h2>
+<p>Waterloo’s current first-year examples vary by program, but the common preparation pattern is mathematics, physical science, computation, design, laboratories, and communication. Electrical Engineering emphasizes calculus, linear algebra, programming, circuits, logic, and physics. Mechanical Engineering emphasizes mathematics, mechanics, chemistry, materials, electrical engineering, and design. Mechatronics combines mathematics, computation, circuits, statics, materials, and algorithms. Systems Design emphasizes mathematics, computation, modelling, design, communication, and human or ecological systems. Chemical Engineering combines mathematics, chemistry, programming, engineering concepts, laboratories, and design.</p>
+<p>Current program descriptions are available from Waterloo for <a href="https://uwaterloo.ca/future-students/programs/electrical-engineering">Electrical Engineering</a>, <a href="https://uwaterloo.ca/future-students/programs/mechanical-engineering">Mechanical Engineering</a>, <a href="https://uwaterloo.ca/engineering/future-students/mechatronics-engineering">Mechatronics Engineering</a>, <a href="https://uwaterloo.ca/future-students/programs/systems-design-engineering">Systems Design Engineering</a>, and <a href="https://uwaterloo.ca/future-students/programs/chemical-engineering">Chemical Engineering</a>. Course names and sequences can change; these links are context, not track requirements.</p>
+</section>
+<section id="intended-learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="intended-learning-outcomes">Intended learning outcomes</h2>
+<p>By the end of the pathway, the student should be able to:</p>
+<ol type="1">
+<li>define variables, units, directions, sign conventions, assumptions, and a system boundary before calculating;</li>
+<li>use dimensional analysis, engineering notation, significant figures, estimation, and a complete GUESS solution;</li>
+<li>derive equations from circuit and system diagrams instead of selecting formulas by appearance;</li>
+<li>solve and verify two- and three-variable linear systems by substitution, elimination, and matrix or software methods;</li>
+<li>apply conservation of charge, current, voltage, power, energy, and material to appropriate models;</li>
+<li>collect repeatable data, construct calibration models, quantify error, and distinguish interpolation from unsupported extrapolation;</li>
+<li>implement a discrete-time model in a spreadsheet or program and compare its prediction with measurements;</li>
+<li>compare design alternatives using constraints, efficiency, sensitivity, cost, safety, and uncertainty;</li>
+<li>design, build, program, test, revise, and communicate a small instrumented engineering system.</li>
+</ol>
+</section>
+<section id="pathway-structure" class="level2">
+<h2 class="anchored" data-anchor-id="pathway-structure">Pathway structure</h2>
+<p>The suggested pathway adds approximately 35 to 50 hours across a full TEJ course. Most work replaces a simpler practice set or adds one challenge section; it should not become an unmanageable second course. Chapters WET01 through WET06 establish the minimum analytical core. Later chapters may be selected to match the student’s interests and available equipment.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Track chapter</th>
+<th>Place in the TEJ sequence</th>
+<th>Engineering mathematics</th>
+<th>Required track evidence</th>
+<th>Principal references</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>WET00 Engineering baseline and notebook</td>
+<td>Unit 0 and H01</td>
+<td>arithmetic, algebra diagnostic, estimation, graph reading, units</td>
+<td>diagnostic, learning plan, calculation standard and notebook setup</td>
+<td>Ontario TEJ expectations; course safety resources</td>
+</tr>
+<tr class="even">
+<td>WET01 Quantities, units, and scale</td>
+<td>NS02-NS06</td>
+<td>dimensional analysis, engineering notation, significant figures, ratios and rates</td>
+<td>WET-A01 quantity and unit audit</td>
+<td>Grob Ch. 0; Çengel Ch. 1; Chapra Chs. 1 and 3</td>
+</tr>
+<tr class="odd">
+<td>WET02 Algebraic electrical models</td>
+<td>H02, EL02 and H07</td>
+<td>rearranging equations, proportional and inverse relationships, domains and physical constraints</td>
+<td>WET-A02 resistive design brief</td>
+<td>Grob Chs. 1 and 3</td>
+</tr>
+<tr class="even">
+<td>WET03 Conservation in series and parallel networks</td>
+<td>H09 and H10</td>
+<td>sums, equivalent models, simultaneous constraints, power checks</td>
+<td>WET-A03 series-parallel design proof</td>
+<td>Grob Chs. 4-6</td>
+</tr>
+<tr class="odd">
+<td>WET04 Coupled equations, KCL, and KVL</td>
+<td>H11 and H12</td>
+<td>two- and three-variable linear systems, matrices, signs, residual checks</td>
+<td>WET-A04 branch-current system</td>
+<td>Grob Chs. 7 and 9; Chapra Chs. 9 and 12</td>
+</tr>
+<tr class="even">
+<td>WET05 Equivalent models and optimization</td>
+<td>H13 and H16</td>
+<td>functions, graphing, extrema, constraints, sensitivity and fault cases</td>
+<td>WET-A05 source/load optimization memo</td>
+<td>Grob Ch. 10; Chapra Chs. 13-16</td>
+</tr>
+<tr class="odd">
+<td>WET06 Power and energy balances</td>
+<td>H08, H15, CS03 and SQ05</td>
+<td>power versus energy, efficiency, storage, thermal energy and balances</td>
+<td>WET-A06 energy audit and WET-L01 thermal balance</td>
+<td>Grob Chs. 1 and 12; Çengel Chs. 3, 5 and 6</td>
+</tr>
+<tr class="even">
+<td>WET07 Measurement, calibration, and uncertainty</td>
+<td>H05, BB06 and H06</td>
+<td>slope, intercept, regression, residuals, percent error and uncertainty</td>
+<td>WET-L02 sensor calibration</td>
+<td>Grob Ch. 8; Chapra Chs. 3, 4, 17 and 20</td>
+</tr>
+<tr class="odd">
+<td>WET08 Transient and discrete-time systems</td>
+<td>H19, H20 and H24</td>
+<td>exponentials, time constants, recurrence relations and numerical stepping</td>
+<td>WET-A07 transient model</td>
+<td>Grob Chs. 16, 18-22; Chapra Ch. 25 as teacher extension</td>
+</tr>
+<tr class="even">
+<td>WET09 Logic, algorithms, and state</td>
+<td>Digital Logic, Programming and Microcontrollers</td>
+<td>Boolean expressions, binary enumeration, functions, conditions, arrays and state transition tables</td>
+<td>WET-A08 solver and WET-A09 safety state machine</td>
+<td>TEJ digital-input sequence; Chapra Ch. 2</td>
+</tr>
+<tr class="odd">
+<td>WET10 Electromechanical systems</td>
+<td>H17, H18, H23 and C09</td>
+<td>speed, torque, gear ratio, electrical/mechanical power and efficiency</td>
+<td>WET-L03 actuator characterization</td>
+<td>Grob Chs. 13-14 and relevant switching chapters</td>
+</tr>
+<tr class="even">
+<td>WET11 Feedback, models, and design decisions</td>
+<td>C01-C08</td>
+<td>error, gain, saturation, hysteresis, response metrics, parameter variation and trade-offs</td>
+<td>WET-A10 control-method comparison</td>
+<td>TEJ control sequence; Çengel Ch. 3; Chapra Chs. 16 and 20</td>
+</tr>
+<tr class="odd">
+<td>WET12 Integrated engineering project</td>
+<td>Unit 15 and C11</td>
+<td>integrated modelling, validation, optimization and evidence-based revision</td>
+<td>WET-P01 capstone portfolio</td>
+<td>all selected sources and manufacturer documentation</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="chapter-specifications" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-specifications">Chapter specifications</h2>
+<section id="wet00-engineering-baseline-and-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="wet00-engineering-baseline-and-notebook">WET00 Engineering baseline and notebook</h3>
+<p>The track begins with a short diagnostic rather than a mark. The student demonstrates fraction and decimal operations, equation rearrangement, graph interpretation, unit conversions, calculator use, estimation, and a short technical explanation. The result determines which skills require review.</p>
+<p>The engineering notebook standard requires a dated problem statement, system diagram, givens, unknowns, assumptions, equations before substitution, units carried through the work, full calculator result, rounded answer, reasonableness check, and revision record. Safety decisions and failed tests remain part of the record.</p>
+</section>
+<section id="wet01-quantities-units-and-scale" class="level3">
+<h3 class="anchored" data-anchor-id="wet01-quantities-units-and-scale">WET01 Quantities, units, and scale</h3>
+<p>Complete <a href="../../tej3-4/01-number-systems/index.html">Number Systems, Measurement, Units, and Calculator Skills</a>, then extend the work to compound units such as coulombs per second, joules per second, watt-hours, kilograms per second, litres per minute, joules per kilogram-degree Celsius, revolutions per minute, radians per second, and dollars per kilowatt-hour.</p>
+<p>The student should convert units by multiplying by identities, not by moving decimals without explanation. Estimation precedes calculator work. Final answers must state whether the magnitude is physically plausible.</p>
+</section>
+<section id="wet02-algebraic-electrical-models" class="level3">
+<h3 class="anchored" data-anchor-id="wet02-algebraic-electrical-models">WET02 Algebraic electrical models</h3>
+<p>Complete <a href="../../tej3-4/02-basic-electronics/01-charge-voltage-current.html">Charge, Voltage, and Current</a>, <a href="../../tej3-4/02-basic-electronics/02-circuits-opens-shorts.html">Closed, Open, and Short Circuits</a>, and <a href="../../tej3-4/02-basic-electronics/03-ohms-law.html">Ohm’s Law</a>.</p>
+<p>Track problems require the student to derive and rearrange relationships, identify impossible values, state operating limits, and compare symbolic predictions with simulation. Problems should include design choices rather than only asking for a missing number.</p>
+</section>
+<section id="wet03-conservation-in-series-and-parallel-networks" class="level3">
+<h3 class="anchored" data-anchor-id="wet03-conservation-in-series-and-parallel-networks">WET03 Conservation in series and parallel networks</h3>
+<p>Use the regular H09 and H10 circuit sequence. The extension emphasizes why the current, voltage, resistance, and power rules follow from circuit structure. Each solution includes at least two independent checks.</p>
+<p>The student should be able to demonstrate:</p>
+<p><span class="math display">\[I_T=I_1=I_2 \quad \text{for one series path}\]</span></p>
+<p><span class="math display">\[V_T=V_1=V_2 \quad \text{for parallel branches across the same nodes}\]</span></p>
+<p><span class="math display">\[P_T=\sum P_k\]</span></p>
+<p>The power equation is used as a conservation check after the circuit has been solved.</p>
+</section>
+<section id="wet04-coupled-equations-kcl-and-kvl" class="level3">
+<h3 class="anchored" data-anchor-id="wet04-coupled-equations-kcl-and-kvl">WET04 Coupled equations, KCL, and KVL</h3>
+<p>This chapter is the central systems-of-equations experience. Grob Chapter 9 explicitly progresses from KCL and KVL to branch-current, node-voltage, and mesh-current methods. The student first solves a two-source network using elimination, then expresses the same equations in matrix form, and finally uses software to verify the result. <a href="../../references.html#ref-grob2016">[1, Ch. 9]</a></p>
+<p>The solution must include a labelled schematic, assumed directions, independent node and loop equations, the algebraic solution, substitution back into the original equations, a KCL residual, a KVL residual, and a power balance. A negative current is interpreted as evidence that the actual direction is opposite to the assumed reference, not as a failed calculation.</p>
+</section>
+<section id="wet05-equivalent-models-and-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="wet05-equivalent-models-and-optimization">WET05 Equivalent models and optimization</h3>
+<p>Thevenin and Norton equivalents reduce a network to a useful model at two terminals. The student varies a load, graphs delivered power, identifies a maximum, and then explains why maximum power is not always the same design objective as maximum efficiency, minimum cost, lowest temperature, or longest battery life.</p>
+<p>This chapter introduces engineering optimization without requiring calculus. A valid recommendation must name the objective, constraints, variables, feasible alternatives, evidence, and trade-offs.</p>
+</section>
+<section id="wet06-power-and-energy-balances" class="level3">
+<h3 class="anchored" data-anchor-id="wet06-power-and-energy-balances">WET06 Power and energy balances</h3>
+<p>Complete <a href="../../tej3-4/02-basic-electronics/04-power-energy.html">Power and Energy</a>, then apply a conserved-quantity balance:</p>
+<p><span class="math display">\[\text{input}-\text{output}=\text{accumulation}\]</span></p>
+<p>For a material species that can be produced or consumed, the more general form also includes generation and consumption terms. For total energy, energy may cross the boundary or change form, but it is conserved.</p>
+<p>For an electrical load:</p>
+<p><span class="math display">\[P=VI \qquad E_{\mathrm{in}}=VIt\]</span></p>
+<p>For a supervised low-voltage water-heating investigation:</p>
+<p><span class="math display">\[E_{\mathrm{water}}=mc\Delta T\]</span></p>
+<p><span class="math display">\[E_{\mathrm{in}}=E_{\mathrm{stored}}+E_{\mathrm{loss}}\]</span></p>
+<p><span class="math display">\[\eta=\frac{E_{\mathrm{useful}}}{E_{\mathrm{in}}}\times100\%\]</span></p>
+<p>The introductory calculation treats water as a closed batch and calculates an observed loss. The advanced investigation uses two experimental runs to estimate an effective heat capacity <span class="math inline">\(C_{\mathrm{eff}}\)</span> and a heat-loss coefficient <span class="math inline">\(K\)</span>:</p>
+<p><span class="math display">\[\overline V_j\overline I_jt_j=C_{\mathrm{eff}}\Delta T_j+K(T_{\mathrm{avg},j}-T_{\mathrm{room},j})t_j\]</span></p>
+<p>Two runs produce two linear equations. A third run tests the model. Çengel Chapters 3, 5, and 6 provide the teacher background for energy analysis, closed systems, and control volumes; the student activity remains original, low-voltage, and appropriate for TEJ. <a href="../../references.html#ref-cengel2008">[27, Chs. 3, 5-6]</a></p>
+<div class="callout callout-style-default callout-important callout-titled" title="Thermal-project safety boundary">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Thermal-project safety boundary
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use only teacher-approved protected low-voltage equipment. Students do not construct or probe mains circuits. Keep liquids isolated from exposed electronics, include temperature and current limits, provide secondary containment, and define a safe shutdown state before testing.</p>
+</div>
+</div>
+</section>
+<section id="wet07-measurement-calibration-and-uncertainty" class="level3">
+<h3 class="anchored" data-anchor-id="wet07-measurement-calibration-and-uncertainty">WET07 Measurement, calibration, and uncertainty</h3>
+<p>Use H05 and BB06 to compare calculated, simulated, and measured values. Calibrate one sensor or actuator using repeated measurements. The student produces a scatter plot, fitted relationship, residual table, stated valid range, and discussion of uncertainty.</p>
+<p>The objective is not to force every data set to be linear. The student must explain whether the model is suitable, where interpolation is defensible, and why extrapolation beyond the measured range may be unsafe.</p>
+</section>
+<section id="wet08-transient-and-discrete-time-systems" class="level3">
+<h3 class="anchored" data-anchor-id="wet08-transient-and-discrete-time-systems">WET08 Transient and discrete-time systems</h3>
+<p>RC and LR circuits provide a TEJ route into changing systems. The student measures or simulates a transient, identifies a time constant, and compares observations with a model. A spreadsheet or program then advances the model one time step at a time.</p>
+<p>For the thermal process, an accessible no-calculus model is:</p>
+<p><span class="math display">\[T_{n+1}=T_n+\frac{P_{\mathrm{in}}-K(T_n-T_{\mathrm{room}})}{C_{\mathrm{eff}}}\Delta t\]</span></p>
+<p>The student changes the time step and explains why a numerical model can become inaccurate or unstable. Differential equations may be named as the later university language for the same idea, but they are not required to complete the track.</p>
+</section>
+<section id="wet09-logic-algorithms-and-state" class="level3">
+<h3 class="anchored" data-anchor-id="wet09-logic-algorithms-and-state">WET09 Logic, algorithms, and state</h3>
+<p>Complete the <a href="../../tej3-4/03-digital-logic-inputs/index.html">Digital Logic and Stable Inputs</a> sequence and the appropriate Programming and Microcontroller modules. Three-input truth tables must count in binary order from <span class="math inline">\(000\)</span> to <span class="math inline">\(111\)</span>, with a separate column for each output.</p>
+<p>The programming extension implements one previously solved model. Suitable programs include a GUESS calculator with unit checks, a two- or three-equation solver, an RC simulator, a thermal time-step model, or a calibration tool. The student supplies tests, explains invalid-input handling, and compares program output with one hand calculation.</p>
+</section>
+<section id="wet10-electromechanical-systems" class="level3">
+<h3 class="anchored" data-anchor-id="wet10-electromechanical-systems">WET10 Electromechanical systems</h3>
+<p>Use magnetism, electromagnetism, switching, motors, protection, and motion control to connect electrical input to mechanical output. The minimum mathematical set is:</p>
+<p><span class="math display">\[P_{\mathrm{electrical}}=VI\]</span></p>
+<p><span class="math display">\[P_{\mathrm{mechanical}}=\tau\omega\]</span></p>
+<p><span class="math display">\[\eta=\frac{P_{\mathrm{mechanical}}}{P_{\mathrm{electrical}}}\]</span></p>
+<p>The student characterizes one approved actuator or pump across several operating points and explains why speed, torque, flow, current, temperature, and efficiency cannot all be optimized independently.</p>
+</section>
+<section id="wet11-feedback-models-and-design-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="wet11-feedback-models-and-design-decisions">WET11 Feedback, models, and design decisions</h3>
+<p>Complete the <a href="../../tej3-4/05-control-systems/index.html">Control Systems and CNC</a> comparison sequence. Use the same process model and disturbance when comparing open loop, on-off control, hysteresis, proportional control, and PI or PID control. Record rise time, overshoot, settling behaviour, steady-state error, saturation, and failure response.</p>
+<p>Calculus is not required. The student should understand the operational meaning of accumulated error and rate of change, use graphs accurately, and explain how changing a parameter affects the complete system.</p>
+</section>
+<section id="wet12-integrated-engineering-project" class="level3">
+<h3 class="anchored" data-anchor-id="wet12-integrated-engineering-project">WET12 Integrated engineering project</h3>
+<p>The recommended project is an <strong>instrumented low-voltage thermal process controller</strong>. It connects TEJ circuits, sensors, microcontrollers, programming, energy, data, safety, and control while providing useful preparation across engineering disciplines.</p>
+<p>The student may propose a different project when it preserves the same mathematical and validation requirements. Suitable alternatives include a motor or pump test stand, battery discharge and thermal monitor, environmental chamber model, controlled fan-and-temperature system, tank-level simulator, or instrumented renewable-energy demonstrator.</p>
+</section>
+</section>
+<section id="assignment-and-lab-sequence" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-and-lab-sequence">Assignment and lab sequence</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Assignment or lab</th>
+<th>Required student evidence</th>
+<th>Status and TEJ connection</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>WET-D00</td>
+<td>Engineering mathematics baseline</td>
+<td>diagnostic, correction record and learning targets</td>
+<td>New track diagnostic; ungraded</td>
+</tr>
+<tr class="even">
+<td>WET-A01</td>
+<td>Quantity and unit audit</td>
+<td>variable table, unit conversions, estimates and GUESS solutions</td>
+<td>Extends NS02-NS06</td>
+</tr>
+<tr class="odd">
+<td>WET-A02</td>
+<td>Resistive design brief</td>
+<td>schematic, symbolic relationships, selected values, simulation and limits</td>
+<td>Extends H07; use the existing <a href="https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf">Basic Circuit Calculations worksheet</a> as prerequisite practice</td>
+</tr>
+<tr class="even">
+<td>WET-A03</td>
+<td>Series-parallel design proof</td>
+<td>complete circuit solution with voltage, current, resistance and power checks</td>
+<td>Extends H09-H10 and the same circuit-calculation package</td>
+</tr>
+<tr class="odd">
+<td>WET-A04</td>
+<td>Branch-current system</td>
+<td>two-source circuit, two or three independent equations, hand and software solutions, KCL/KVL residuals</td>
+<td>Extends H11; based on Grob Ch. 9 methods</td>
+</tr>
+<tr class="even">
+<td>WET-A05</td>
+<td>Source/load optimization memo</td>
+<td>graph, feasible region or tested range, optimum, constraints and recommendation</td>
+<td>Extends H13 and H16</td>
+</tr>
+<tr class="odd">
+<td>WET-A06</td>
+<td>Energy audit</td>
+<td>measured or documented load, power profile, energy, cost, uncertainty and improvement recommendation</td>
+<td>Extends H08, H15 and the <a href="../../tej3-4/computer-systems/computer-power-parts.html">Computer Power and Parts mission</a></td>
+</tr>
+<tr class="even">
+<td>WET-L01</td>
+<td>Electrical-to-thermal energy balance</td>
+<td>circuit, measurements, <span class="math inline">\(VIt\)</span>, <span class="math inline">\(mc\Delta T\)</span>, losses, efficiency and safety record</td>
+<td>New supervised low-voltage track lab</td>
+</tr>
+<tr class="odd">
+<td>WET-L02</td>
+<td>Sensor calibration and model check</td>
+<td>repeated data, scatter plot, regression, residuals, valid range and uncertainty</td>
+<td>Extends H05, BB06 and H06</td>
+</tr>
+<tr class="even">
+<td>WET-A07</td>
+<td>Transient model</td>
+<td>RC or thermal data, time constant or parameters, spreadsheet/program model and prediction comparison</td>
+<td>Extends H19-H20 and Programming</td>
+</tr>
+<tr class="odd">
+<td>WET-A08</td>
+<td>Engineering calculation program</td>
+<td>documented code, test cases, hand-check and invalid-input behaviour</td>
+<td>Extends Programming Fundamentals</td>
+</tr>
+<tr class="even">
+<td>WET-A09</td>
+<td>Safety state machine</td>
+<td>state diagram, transition table, normal sequence, interlocks and fault recovery</td>
+<td>Extends digital logic, microcontrollers and C07-C08; use the <a href="https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf">Digital Inputs worksheet</a> first</td>
+</tr>
+<tr class="odd">
+<td>WET-L03</td>
+<td>Actuator characterization</td>
+<td>electrical input, motion or flow output, efficiency graph, limits and protection</td>
+<td>Extends H17, H18, H23 and C09</td>
+</tr>
+<tr class="even">
+<td>WET-A10</td>
+<td>Control-method comparison</td>
+<td>common process, common disturbance, response graphs, metrics and recommendation</td>
+<td>Uses the existing <a href="https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf">Control Methods Comparison</a></td>
+</tr>
+<tr class="odd">
+<td>WET-P01</td>
+<td>Integrated engineering capstone</td>
+<td>requirements, design, model, build or approved simulation, code, validation, revision and technical report</td>
+<td>Extends Unit 15 and C11</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="capstone-gates" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-gates">Capstone gates</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gate</th>
+<th>Approval evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Need and system boundary</td>
+<td>stakeholder or use case, measurable need, inputs, outputs, disturbances and exclusions</td>
+</tr>
+<tr class="even">
+<td>2. Safety and feasibility</td>
+<td>low-voltage boundary, hazards, limits, fault response, available equipment and teacher approval</td>
+</tr>
+<tr class="odd">
+<td>3. Mathematical model</td>
+<td>variables, units, assumptions, governing equations, expected range and hand-worked example</td>
+</tr>
+<tr class="even">
+<td>4. Electrical design</td>
+<td>readable schematic, component ratings, protection, power budget and interface limits</td>
+</tr>
+<tr class="odd">
+<td>5. Experimental plan</td>
+<td>controlled variables, calibration, sampling plan, uncertainty and success criteria</td>
+</tr>
+<tr class="even">
+<td>6. Prototype or simulation</td>
+<td>functional implementation, versioned code and initial data</td>
+</tr>
+<tr class="odd">
+<td>7. Validation</td>
+<td>predicted-versus-measured comparison, residuals, limitations and model revision</td>
+</tr>
+<tr class="even">
+<td>8. Communication</td>
+<td>concise report, graphs, annotated evidence, references, demonstration and reflection</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="assessment-model" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-model">Assessment model</h2>
+<p>Track work should be assessed as engineering evidence rather than extra arithmetic. The recommended weighting within each major task is:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th style="text-align: right;">Weight</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model formulation</td>
+<td style="text-align: right;">25%</td>
+<td>boundary, variables, assumptions, diagram and equations</td>
+</tr>
+<tr class="even">
+<td>Mathematical execution</td>
+<td style="text-align: right;">20%</td>
+<td>algebra, units, precision, software use and verification</td>
+</tr>
+<tr class="odd">
+<td>Design and safety</td>
+<td style="text-align: right;">20%</td>
+<td>ratings, constraints, protection, feasible choices and fault response</td>
+</tr>
+<tr class="even">
+<td>Experiment and validation</td>
+<td style="text-align: right;">20%</td>
+<td>calibration, repeatability, comparison, uncertainty and revision</td>
+</tr>
+<tr class="odd">
+<td>Communication</td>
+<td style="text-align: right;">15%</td>
+<td>organized notebook, graphs, citations, explanation and conclusion</td>
+</tr>
+</tbody>
+</table>
+<p>A polished answer with an unjustified model should not receive a high track result. A student who discovers and explains why a model failed may demonstrate stronger engineering judgement than a student whose numbers happen to agree.</p>
+</section>
+<section id="discipline-connections" class="level2">
+<h2 class="anchored" data-anchor-id="discipline-connections">Discipline connections</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Engineering direction</th>
+<th>Strongest track connections</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Electrical and Computer</td>
+<td>circuits, KCL/KVL, equivalent networks, power, logic, programming, embedded systems and control</td>
+</tr>
+<tr class="even">
+<td>Mechanical and Mechatronics</td>
+<td>energy conversion, sensors, actuators, torque, motion, thermal behaviour, programming and control</td>
+</tr>
+<tr class="odd">
+<td>Systems Design</td>
+<td>boundaries, requirements, models, feedback, trade-offs, optimization, uncertainty and communication</td>
+</tr>
+<tr class="even">
+<td>Chemical and Biological</td>
+<td>conservation laws, energy balances, transient models, sensors, process data and control</td>
+</tr>
+<tr class="odd">
+<td>Civil and Environmental</td>
+<td>measurement, flow and energy analogies, structures or networks, data models, optimization and sustainability</td>
+</tr>
+<tr class="even">
+<td>Management and Industrial</td>
+<td>process mapping, constraints, data, efficiency, optimization, cost and decision records</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="textbook-chapter-map" class="level2">
+<h2 class="anchored" data-anchor-id="textbook-chapter-map">Textbook chapter map</h2>
+<p>The textbooks are teacher references. Public track materials must use original explanations, diagrams, values, and questions. Do not copy or republish textbook pages or problem sets.</p>
+<section id="grobs-basic-electronics-12th-edition" class="level3">
+<h3 class="anchored" data-anchor-id="grobs-basic-electronics-12th-edition">Grob’s Basic Electronics, 12th edition</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chapters used</th>
+<th>Track use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ch. 0, Introduction to Powers of 10</td>
+<td>engineering notation, metric prefixes and calculator fluency</td>
+</tr>
+<tr class="even">
+<td>Ch. 1, Electricity</td>
+<td>charge, current, voltage, power, energy and physical foundations</td>
+</tr>
+<tr class="odd">
+<td>Ch. 3, Ohm’s Law</td>
+<td>algebraic electrical models</td>
+</tr>
+<tr class="even">
+<td>Chs. 4-6, Series, Parallel, and Series-Parallel Circuits</td>
+<td>network structure and conservation checks</td>
+</tr>
+<tr class="odd">
+<td>Ch. 7, Voltage Dividers and Current Dividers</td>
+<td>proportional models and loading</td>
+</tr>
+<tr class="even">
+<td>Ch. 8, Analog and Digital Multimeters</td>
+<td>measurement practice</td>
+</tr>
+<tr class="odd">
+<td>Ch. 9, Kirchhoff’s Laws</td>
+<td>KCL, KVL, branch currents, node voltage, mesh current and simultaneous equations</td>
+</tr>
+<tr class="even">
+<td>Ch. 10, Network Theorems</td>
+<td>equivalent models and maximum-power investigations</td>
+</tr>
+<tr class="odd">
+<td>Ch. 12, Batteries</td>
+<td>stored energy, capacity and source behaviour</td>
+</tr>
+<tr class="even">
+<td>Chs. 13-14, Magnetism and Electromagnetism</td>
+<td>electromechanical systems</td>
+</tr>
+<tr class="odd">
+<td>Chs. 16, 18-22</td>
+<td>capacitance, inductance, transients and time constants</td>
+</tr>
+<tr class="even">
+<td>Chs. 27-30 and 33</td>
+<td>optional device, switching, sensor-interface and op-amp extensions</td>
+</tr>
+</tbody>
+</table>
+<p>Grob remains the primary electronics sequencing source. <a href="../../references.html#ref-grob2016">[1]</a></p>
+</section>
+<section id="çengel-introduction-to-thermodynamics-and-heat-transfer-2nd-edition" class="level3">
+<h3 class="anchored" data-anchor-id="çengel-introduction-to-thermodynamics-and-heat-transfer-2nd-edition">Çengel, Introduction to Thermodynamics and Heat Transfer, 2nd edition</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chapters used</th>
+<th>Teacher use in the track</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ch. 1, Introduction and Overview</td>
+<td>units, systematic problem solving, modelling and systems of equations</td>
+</tr>
+<tr class="even">
+<td>Ch. 3, Energy, Energy Transfer, and General Energy Analysis</td>
+<td>energy forms, balances, conversion and efficiency</td>
+</tr>
+<tr class="odd">
+<td>Ch. 5, Energy Analysis of Closed Systems</td>
+<td>batch thermal system background</td>
+</tr>
+<tr class="even">
+<td>Ch. 6, Mass and Energy Analysis of Control Volumes</td>
+<td>optional flow-system extension</td>
+</tr>
+<tr class="odd">
+<td>Ch. 9, Mechanisms of Heat Transfer</td>
+<td>conduction, convection and radiation vocabulary</td>
+</tr>
+<tr class="even">
+<td>Ch. 11, Transient Heat Conduction</td>
+<td>advanced interpretation of time-dependent heating and cooling</td>
+</tr>
+</tbody>
+</table>
+<p>This is a restricted teacher reference. Student materials use a deliberately smaller high-school model. <a href="../../references.html#ref-cengel2008">[27]</a></p>
+</section>
+<section id="chapra-and-canale-numerical-methods-for-engineers-6th-edition" class="level3">
+<h3 class="anchored" data-anchor-id="chapra-and-canale-numerical-methods-for-engineers-6th-edition">Chapra and Canale, Numerical Methods for Engineers, 6th edition</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chapters used</th>
+<th>Teacher use in the track</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ch. 1, Mathematical Modeling and Engineering Problem Solving</td>
+<td>conservation-law models across engineering disciplines</td>
+</tr>
+<tr class="even">
+<td>Ch. 2, Programming and Software</td>
+<td>structured computational implementation</td>
+</tr>
+<tr class="odd">
+<td>Chs. 3-4, Error Analysis</td>
+<td>significant figures, accuracy, precision, uncertainty and error propagation</td>
+</tr>
+<tr class="even">
+<td>Chs. 5-6, Roots of Equations</td>
+<td>graphical solutions, iteration and convergence extensions</td>
+</tr>
+<tr class="odd">
+<td>Chs. 9-12, Linear Algebraic Equations</td>
+<td>elimination, matrices, software verification and cross-discipline cases</td>
+</tr>
+<tr class="even">
+<td>Chs. 13-16, Optimization</td>
+<td>design variables, objectives, constraints and discipline examples</td>
+</tr>
+<tr class="odd">
+<td>Chs. 17 and 20, Curve Fitting and Case Studies</td>
+<td>regression and experimental data</td>
+</tr>
+<tr class="even">
+<td>Chs. 25 and 28, Ordinary Differential Equations and Case Studies</td>
+<td>teacher background for discrete transient models</td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 12 is particularly useful as a teacher reference because it places reactor, truss, resistor-circuit, and spring-mass examples beside one another, showing that linear systems are shared engineering tools. Chapter 16 similarly compares tank, wastewater, circuit, and mechanical optimization cases. Track assignments remain original and use high-school mathematics. <a href="../../references.html#ref-chapra2010">[28]</a></p>
+</section>
+</section>
+<section id="implementation-status" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-status">Implementation status</h2>
+<p>This page defines the intended track and source map. Existing TEJ lessons and linked activities can be used now. WET-coded assignments and the thermal-process capstone still require separate student handouts, answer keys, equipment verification, accessibility review, and classroom piloting before they are labelled published.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+
+(function () {
+
+  "use strict";
+
+  const base = ["/commons", "/tech-edu-resources"].find(function (candidate) {
+
+    return window.location.pathname === candidate ||
+
+      window.location.pathname.startsWith(candidate + "/");
+
+  }) || "";
+
+  [
+
+    "commons-lore.js",
+
+    "bs-learn.js",
+
+    "bs-glossary.js",
+
+    "bs-learn-scroll.js"
+
+  ].forEach(function (file) {
+
+    const script = document.createElement("script");
+
+    script.src = base + "/assets/" + file;
+
+    script.async = false;
+
+    document.body.appendChild(script);
+
+  });
+
+})();
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/tech-edu-resources\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Website code: <a href="https://andrewandrade.ca/commons/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/commons/licensing.html">CC BY-SA 4.0</a>.</p>
+<p>Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, <a href="https://andrewandrade.ca/">andrewandrade.ca</a>, and <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when adapting it. <strong>Sharing is caring.</strong></p>
+<p>The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../references.html">
+<p>References</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../licensing.html">
+<p>Licensing</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
