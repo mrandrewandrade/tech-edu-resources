@@ -21,6 +21,8 @@ MID = HexColor("#98aabb")
 TEXT = HexColor("#171717")
 RULE = HexColor("#5f6368")
 HEADER_LOGO = OUT / "downloads" / "source-files" / "technology-commons-transparent.png"
+LOGO_EXAMPLE = OUT / "landscape-to-logo-example.png"
+PHOTOPEA_SCREENSHOTS = ROOT / "site" / "assets" / "personal-logo-photopea"
 HEADER_LOGO_IMAGE = None
 if HEADER_LOGO.is_file():
     HEADER_LOGO_IMAGE = Image.open(HEADER_LOGO).convert("RGBA")
@@ -142,51 +144,52 @@ def build_logo_worksheet():
     c.roundRect(43, 75, 526, 42, 5, stroke=0, fill=1)
     c.setFillColor(TEXT)
     c.setFont("SourceSansBold", 10.5)
-    c.drawString(55, 96, "Next: open Photopea and follow pages 2 and 3. Bring this page with you.")
+    c.drawString(55, 96, "Next: compare your sketch with the worked example on page 2.")
     c.setFont("SourceSans", 9)
-    c.drawString(55, 82, "The finished mark should be simpler and more original than the starting image.")
+    c.drawString(55, 82, "Then use the separate Photopea step-by-step guide to build your selected idea.")
     draw_footer(c, 1)
     c.showPage()
 
-    draw_print_header(c, "PHOTOPEA STEPS", "Build the selected sketch: setup and first shapes")
-    c.setFont("SourceSans", 10.5)
+    draw_print_header(c, "WORKED EXAMPLE", "What a strong simplification looks like")
     c.setFillColor(TEXT)
-    c.drawString(43, 672, "Complete each step in order. Keep the sketch beside you.")
-    steps_page_2 = [
-        (1, "Create the file", "Open Photopea. Select File > New. Set Width and Height to 1000 px. Choose Transparent, then Create."),
-        (2, "Place the sketch", "Select File > Open & Place. Choose a clear photo or scan of the sketch you circled on page 1."),
-        (3, "Set the reference", "In Layers, rename the placed image REFERENCE. Set Opacity to 30%. Select the lock icon."),
-        (4, "Make the first layer", "Select New Layer. Name it for the part you will draw, such as SUN, MOUNTAIN, or INITIALS."),
-        (5, "Draw basic shapes", "Press U. Choose a Shape tool. Set Fill to black and Stroke to none. Drag to draw the first shape."),
-        (6, "Draw custom shapes", "Press P for the Pen tool. Click for straight corners. Click and drag only when you need a curve. Close the path."),
-    ]
-    for row, step in enumerate(steps_page_2):
-        draw_step(c, *step, 646 - row * 86)
-    draw_footer(c, 2)
-    c.showPage()
+    c.setFont("SourceSans", 10.5)
+    c.drawString(43, 672, "Study the changes from the starting idea to the final mark. Use the same tests on your own design.")
+    if LOGO_EXAMPLE.is_file():
+        c.drawImage(str(LOGO_EXAMPLE), 43, 492, width=526, height=149, preserveAspectRatio=True, anchor="c")
 
-    draw_print_header(c, "PHOTOPEA STEPS", "Finish, test, and export the logo")
-    steps_page_3 = [
-        (7, "Add initials", "Press T. Choose a bold, readable sans-serif font. Keep the text editable while you test the idea."),
-        (8, "Arrange the parts", "Press V. Select a layer, then use Ctrl+T to move, resize, or rotate it. Hold Shift to keep proportions."),
-        (9, "Protect your options", "Duplicate a layer before changing it. Keep one idea per clearly named layer or group."),
-        (10, "Run the black test", "Hide REFERENCE by selecting its eye icon. The logo should still read clearly as one black silhouette."),
-        (11, "Add simple colour", "Use two or three colours at most. Keep strong contrast. Save a solid black version for engraving."),
-        (12, "Save and export", "Save the editable PSD. Select File > Export As > SVG. Export a transparent PNG for the name tag."),
+    analyses = [
+        ("1. Keep the meaning", "The sun, mountain, and river still communicate the original landscape idea."),
+        ("2. Reduce the parts", "The image is rebuilt with one circle, one triangle, and one strong curve."),
+        ("3. Test in black", "The silhouette remains clear without colour. That makes engraving possible."),
+        ("4. Remove tiny details", "Wide gaps and bold shapes remain readable when the logo is only 25 mm wide."),
+        ("5. Use limited colour", "Three colours separate the forms without making the mark complicated."),
+        ("6. Keep it editable", "Each part stays on its own named layer so size, spacing, and colour can change."),
     ]
-    for row, step in enumerate(steps_page_3):
-        draw_step(c, *step, 664 - row * 80)
+    positions = [(43, 402), (310, 402), (43, 314), (310, 314), (43, 226), (310, 226)]
+    for (title, body), (x, y) in zip(analyses, positions):
+        c.setStrokeColor(RULE)
+        c.setFillColor(white)
+        c.roundRect(x, y, 259, 76, 5, stroke=1, fill=1)
+        c.setFillColor(NAVY)
+        c.setFont("SourceSansBold", 10.5)
+        c.drawString(x + 10, y + 57, title)
+        c.setFillColor(TEXT)
+        c.setFont("SourceSans", 9.3)
+        for line_number, line in enumerate(wrap_lines(c, body, "SourceSans", 9.3, 239)):
+            c.drawString(x + 10, y + 40 - line_number * 11, line)
 
     c.setFillColor(LIGHT)
-    c.roundRect(43, 76, 526, 78, 5, stroke=0, fill=1)
+    c.roundRect(43, 77, 526, 126, 5, stroke=0, fill=1)
     c.setFillColor(TEXT)
     c.setFont("SourceSansBold", 11)
-    c.drawString(55, 135, "Final check")
-    c.setFont("SourceSans", 10.5)
-    checks = ["[ ] clear at 25 mm", "[ ] works in black", "[ ] no tiny gaps", "[ ] PSD + SVG + PNG saved"]
-    for index, check in enumerate(checks):
-        c.drawString(55 + (index % 2) * 250, 115 - (index // 2) * 22, check)
-    draw_footer(c, 3)
+    c.drawString(55, 181, "Analyze your selected sketch")
+    c.setFont("SourceSans", 9.7)
+    c.drawString(55, 162, "Which two or three shapes carry the meaning?  ______________________________________")
+    c.drawString(55, 139, "What detail can you remove?  __________________________________________________")
+    c.drawString(55, 116, "Will it still work in black at 25 mm?  ____________________________________________")
+    c.setFont("SourceSansBold", 9.7)
+    c.drawString(55, 91, "Next: open the separate Photopea Step-by-Step Guide and build the mark.")
+    draw_footer(c, 2)
     c.save()
 
 
@@ -234,7 +237,46 @@ def build_name_tag_prototype():
     c.save()
 
 
+def build_photopea_guide():
+    output = OUT / "personal-logo-photopea-guide.pdf"
+    c = canvas.Canvas(str(output), pagesize=letter)
+    pages = [
+        ("1. Create a square file", "Choose File > New. Name the file PERSONAL LOGO. Set Width to 1000 px, Height to 1000 px, and Background to Transparent. Select Create.", "Checkpoint: a square checkerboard canvas is visible."),
+        ("2. Place the selected sketch", "Choose File > Open & Place. Select a clear photo or scan of the sketch chosen on the worksheet. Resize it to fill most of the square without stretching it.", "Checkpoint: the sketch appears on its own layer."),
+        ("3. Make a safe reference layer", "In Layers, double-click the sketch layer name and type REFERENCE. Set Opacity to 30%, then select the lock icon. Never draw on this layer.", "Checkpoint: the sketch is faint and locked."),
+        ("4. Rebuild with clean shapes", "Select New Layer and name each part. Press U for circles and rectangles. Press P for a custom shape. Set Fill to black and Stroke to none. Close every Pen-tool path.", "Checkpoint: SUN, MOUNTAIN, and RIVER are separate named layers."),
+        ("5. Run the black and size tests", "Hide REFERENCE by selecting its eye icon. Zoom out until the mark is about 25 mm wide on screen. Remove details that disappear, close up, or become confusing.", "Checkpoint: the logo still reads as one strong black mark."),
+        ("6. Add colour and export", "Use two or three colours only after the black version works. Save the editable PSD. Choose File > Export As > SVG for the scale-free master and PNG for the transparent name-tag copy.", "Checkpoint: PSD, SVG, and transparent PNG are saved."),
+    ]
+    for page_number, (title, instruction, checkpoint) in enumerate(pages, start=1):
+        draw_print_header(c, "PHOTOPEA GUIDE", title)
+        screenshot = PHOTOPEA_SCREENSHOTS / f"{page_number:02d}-photopea-personal-logo.jpg"
+        if screenshot.is_file():
+            c.drawImage(str(screenshot), 43, 320, width=526, height=329, preserveAspectRatio=True, anchor="c")
+        c.setFillColor(TEXT)
+        c.setFont("SourceSansBold", 12)
+        c.drawString(43, 288, "Do this")
+        c.setFont("SourceSans", 10.5)
+        y = 270
+        for line in wrap_lines(c, instruction, "SourceSans", 10.5, 526):
+            c.drawString(43, y, line)
+            y -= 14
+        c.setFillColor(LIGHT)
+        c.roundRect(43, 104, 526, 70, 5, stroke=0, fill=1)
+        c.setFillColor(NAVY)
+        c.setFont("SourceSansBold", 11)
+        c.drawString(55, 146, "STOP AND CHECK")
+        c.setFillColor(TEXT)
+        c.setFont("SourceSans", 10.5)
+        for index, line in enumerate(wrap_lines(c, checkpoint, "SourceSans", 10.5, 500)):
+            c.drawString(55, 126 - index * 14, line)
+        draw_footer(c, page_number, "Photopea Guide")
+        c.showPage()
+    c.save()
+
+
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     build_logo_worksheet()
     build_name_tag_prototype()
+    build_photopea_guide()
