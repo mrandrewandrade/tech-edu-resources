@@ -80,8 +80,10 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn('"ref-grob2016": "Grob\'s Basic Electronics"', helper)
         self.assertIn('link.title = title', helper)
 
-    def test_waterloo_track_uses_plain_language_and_linked_references(self) -> None:
-        track = self.read("tej3-4/waterloo-engineering-track/index.qmd")
+    def test_engineering_preparation_track_uses_plain_language_and_linked_references(self) -> None:
+        track = self.read("tej3-4/engineering-preparation-track/index.qmd")
+        self.assertIn('title: "Engineering Preparation Track"', track)
+        self.assertNotIn('title: "Waterloo Engineering Track"', track)
         self.assertIn("## Learning goals and why they matter", track)
         self.assertIn("Kirchhoff's current law and Kirchhoff's voltage law", track)
         self.assertIn("[[1, Ch. 9]](../../references.qmd#ref-grob2016)", track)
@@ -89,6 +91,9 @@ class CourseContentTests(unittest.TestCase):
         self.assertNotIn("KCL", track)
         self.assertNotIn("KVL", track)
         self.assertNotIn("WET-A", track)
+
+        redirect = self.read("tej3-4/waterloo-engineering-track/index.qmd")
+        self.assertIn("../engineering-preparation-track/", redirect)
 
     def test_tej_pages_inherit_the_learn_sidebar_layout(self) -> None:
         metadata_files = [SITE / "tej3-4" / "_metadata.yml"]

@@ -14,7 +14,7 @@ OUTPUT = ROOT / ".tools" / "review" / "tej-electronics"
 ROUTES = [
     "tej3-4/index.html",
     "tej3-4/curriculum/index.html",
-    "tej3-4/waterloo-engineering-track/index.html",
+    "tej3-4/engineering-preparation-track/index.html",
     "tej3-4/03-digital-logic-inputs/index.html",
     "tej3-4/03-digital-logic-inputs/02-switches-floating-inputs.html",
     "tej3-4/03-digital-logic-inputs/03-pull-down-inputs.html",
