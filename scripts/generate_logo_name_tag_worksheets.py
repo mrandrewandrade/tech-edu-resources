@@ -33,68 +33,152 @@ def build_logo_worksheet():
     output = OUT / "personal-logo-worksheet.pdf"
     c = canvas.Canvas(str(output), pagesize=letter)
     width, height = letter
-    draw_header(c, "PERSONAL LOGO: INITIALS TO SVG", "Sketch three different ideas. Choose the clearest shape, not the fanciest one.", width)
+    draw_header(c, "PERSONAL LOGO: IDEA TO SVG", "Turn a hand-drawn or AI-made inspiration image into your own simple Photopea logo.", width)
 
     c.setFillColor(NAVY)
-    c.setFont("SourceSans", 13)
-    c.drawString(42, 690, "1  Write your initials:")
-    c.setStrokeColor(NAVY)
-    c.line(182, 687, 330, 687)
-    c.drawString(352, 690, "Three words it should feel like:")
-    c.line(535, 687, 570, 687)
+    c.setFont("SourceSansBold", 12)
+    c.drawString(42, 694, "1  START WITH INSPIRATION, THEN SIMPLIFY")
+    c.setFont("SourceSans", 9)
+    c.drawString(42, 679, "Do not trace every detail. Pick two or three useful shapes and rebuild them in your own way.")
 
-    labels = ["A  CLEAR LETTERS", "B  OVERLAP / INTERLOCK", "C  SYMBOL / NEGATIVE SPACE"]
+    panel_x = [42, 177, 312, 447]
+    panel_titles = ["STARTING IDEA", "PICK 3 SHAPES", "PHOTOPEA", "YOUR MARK"]
+    panel_notes = ["drawing or AI image", "circle · triangle · curve", "test in black", "add 2–3 colours"]
+    for x, title, note in zip(panel_x, panel_titles, panel_notes):
+        c.setFillColor(LIGHT)
+        c.roundRect(x, 525, 123, 136, 7, stroke=0, fill=1)
+        c.setFillColor(NAVY)
+        c.setFont("SourceSansBold", 8)
+        c.drawCentredString(x + 61.5, 642, title)
+        c.setFont("SourceSans", 7)
+        c.drawCentredString(x + 61.5, 630, note)
+
+    # Starting landscape sketch.
+    c.setStrokeColor(HexColor("#687985"))
+    c.setLineWidth(2.5)
+    p = c.beginPath()
+    p.moveTo(53, 555)
+    p.lineTo(83, 608)
+    p.lineTo(103, 577)
+    p.lineTo(127, 612)
+    p.lineTo(154, 555)
+    c.drawPath(p)
+    c.circle(137, 612, 9, stroke=1, fill=0)
+    p = c.beginPath()
+    p.moveTo(55, 546)
+    p.curveTo(88, 530, 120, 532, 153, 546)
+    c.drawPath(p)
+
+    # Three extracted shapes.
+    c.setFillColor(HexColor("#f1b434"))
+    c.circle(205, 591, 15, stroke=0, fill=1)
+    c.setFillColor(HexColor("#2d6a4f"))
+    p = c.beginPath()
+    p.moveTo(226, 550)
+    p.lineTo(255, 608)
+    p.lineTo(286, 550)
+    p.close()
+    c.drawPath(p, stroke=0, fill=1)
+    c.setStrokeColor(HexColor("#247ba0"))
+    c.setLineWidth(7)
+    p = c.beginPath()
+    p.moveTo(194, 543)
+    p.curveTo(225, 528, 257, 529, 290, 544)
+    c.drawPath(p)
+
+    # Black Photopea silhouette.
+    c.setFillColor(black)
+    c.circle(350, 591, 14, stroke=0, fill=1)
+    p = c.beginPath()
+    p.moveTo(347, 548)
+    p.lineTo(380, 611)
+    p.lineTo(416, 548)
+    p.close()
+    c.drawPath(p, stroke=0, fill=1)
+    c.setStrokeColor(black)
+    c.setLineWidth(7)
+    p = c.beginPath()
+    p.moveTo(331, 541)
+    p.curveTo(361, 528, 390, 529, 422, 543)
+    c.drawPath(p)
+
+    # Finished colour mark.
+    c.setFillColor(HexColor("#f8f4e8"))
+    c.setStrokeColor(NAVY)
+    c.setLineWidth(2)
+    c.circle(508, 575, 41, stroke=1, fill=1)
+    c.setFillColor(HexColor("#f1b434"))
+    c.circle(492, 590, 11, stroke=0, fill=1)
+    c.setFillColor(HexColor("#2d6a4f"))
+    p = c.beginPath()
+    p.moveTo(480, 552)
+    p.lineTo(510, 605)
+    p.lineTo(542, 552)
+    p.close()
+    c.drawPath(p, stroke=0, fill=1)
+    c.setStrokeColor(HexColor("#247ba0"))
+    c.setLineWidth(6)
+    p = c.beginPath()
+    p.moveTo(476, 548)
+    p.curveTo(500, 536, 526, 537, 544, 548)
+    c.drawPath(p)
+
+    c.setFillColor(NAVY)
+    c.setFont("SourceSansBold", 12)
+    c.drawString(42, 497, "2  SKETCH THREE DIFFERENT SIMPLE MARKS")
+    labels = ["A  INITIALS", "B  LANDSCAPE SHAPES", "C  INITIALS + ONE SHAPE"]
     x_positions = [42, 229, 416]
     for x, label in zip(x_positions, labels):
         c.setFillColor(LIGHT)
-        c.roundRect(x, 420, 154, 238, 8, stroke=0, fill=1)
+        c.roundRect(x, 319, 154, 160, 8, stroke=0, fill=1)
         c.setStrokeColor(MID)
         c.setDash(4, 3)
-        c.roundRect(x + 10, 444, 134, 178, 6, stroke=1, fill=0)
+        c.roundRect(x + 10, 342, 134, 104, 6, stroke=1, fill=0)
         c.setDash()
         c.setFillColor(NAVY)
-        c.setFont("SourceSans", 9)
-        c.drawCentredString(x + 77, 632, label)
         c.setFont("SourceSans", 8)
-        c.drawCentredString(x + 77, 429, "quick pencil sketch")
+        c.drawCentredString(x + 77, 461, label)
+        c.setFont("SourceSans", 7)
+        c.drawCentredString(x + 77, 327, "quick sketch — use few shapes")
 
     c.setFillColor(NAVY)
-    c.setFont("SourceSans", 13)
-    c.drawString(42, 390, "2  Circle one idea. Rebuild it in Photopea with black shapes first.")
+    c.setFont("SourceSansBold", 12)
+    c.drawString(42, 292, "3  BUILD IN PHOTOPEA")
+    c.setFont("SourceSans", 9)
+    c.drawString(42, 275, "1000 × 1000 px · transparent background · place reference · lower opacity · lock layer")
+    c.drawString(42, 260, "Rebuild with Shape, Pen and Type tools. Hide the reference. Test the new silhouette in black.")
 
-    tests = ["SMALL", "SOLID BLACK", "WHITE ON DARK", "GRAYSCALE"]
-    box_w = 123
-    for i, label in enumerate(tests):
-        x = 42 + i * 136
-        c.setStrokeColor(MID)
-        c.setFillColor(NAVY if label == "WHITE ON DARK" else white)
-        c.roundRect(x, 245, box_w, 112, 6, stroke=1, fill=1)
-        c.setFillColor(white if label == "WHITE ON DARK" else NAVY)
-        c.setFont("SourceSans", 9)
-        c.drawCentredString(x + box_w / 2, 332, label)
-        c.setFont("SourceSans", 30)
-        c.drawCentredString(x + box_w / 2, 278, "AA")
+    c.setFont("SourceSansBold", 12)
+    c.drawString(42, 230, "4  ADD SIMPLE COLOUR")
+    c.setFont("SourceSans", 9)
+    c.drawString(42, 213, "Use one main colour, one supporting colour and an optional accent. Keep a black version for engraving.")
+    swatches = [HexColor("#2d6a4f"), HexColor("#247ba0"), HexColor("#f1b434")]
+    for i, colour in enumerate(swatches):
+        c.setFillColor(colour)
+        c.circle(470 + i * 34, 218, 11, stroke=0, fill=1)
 
     c.setFillColor(NAVY)
-    c.setFont("SourceSans", 13)
-    c.drawString(42, 214, "3  Final check")
-    c.setFont("SourceSans", 10)
+    c.setFont("SourceSansBold", 12)
+    c.drawString(42, 180, "5  TEST + SAVE")
+    c.setFont("SourceSans", 9)
     checks = [
-        "[ ] recognizable at small size",
-        "[ ] strong in one colour",
-        "[ ] no tiny gaps or hairline strokes",
-        "[ ] saved as PSD and SVG",
+        "[ ] clear at 25 mm wide",
+        "[ ] works in solid black",
+        "[ ] works white on dark",
+        "[ ] colour has strong contrast",
+        "[ ] no tiny gaps or thin lines",
+        "[ ] saved as PSD, SVG and PNG",
     ]
     for i, item in enumerate(checks):
-        c.drawString(54 + (i % 2) * 270, 188 - (i // 2) * 24, item)
+        c.drawString(54 + (i % 2) * 270, 157 - (i // 2) * 19, item)
 
     c.setFillColor(LIGHT)
-    c.roundRect(42, 70, 528, 62, 8, stroke=0, fill=1)
+    c.roundRect(42, 58, 528, 42, 8, stroke=0, fill=1)
     c.setFillColor(NAVY)
-    c.setFont("SourceSans", 11)
-    c.drawString(56, 107, "PHOTOPEA: 1000 x 1000 px, transparent background")
-    c.setFont("SourceSans", 9)
-    c.drawString(56, 88, "Type + shapes: keep an editable text copy, convert the working copy to a shape, then export SVG.")
+    c.setFont("SourceSansBold", 9)
+    c.drawString(56, 83, "FLOW: inspiration → choose shapes → sketch → rebuild → colour → test → export")
+    c.setFont("SourceSans", 8)
+    c.drawString(56, 68, "Your final mark should be simpler and more original than the starting image.")
     c.save()
 
 

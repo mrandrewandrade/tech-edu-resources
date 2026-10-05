@@ -21,7 +21,7 @@ Most personal. The AA mark is thickened by 18 px so it survives engraving and re
 Each PSD is 11 x 4 in at 300 ppi and contains separate named artwork layers. The matching PNG is a clean full-size reference/export. Open the PSD in Photopea or Photoshop, select the name layer, replace the text, and recheck the 0.25 in safe margin. If a font substitution warning appears, choose Source Sans 3 Bold from Google Fonts.
 
 PRINTABLE WORKSHEETS
-personal-logo-worksheet.pdf: sketch three initials-based logo directions and run four quick tests.
+personal-logo-worksheet.pdf: turn a hand-drawn or AI-made landscape inspiration into an original, simple Photopea logo; add an optional 2–3 colour palette and run quick tests.
 name-tag-paper-prototype.pdf: print at Actual size / 100% to make two 11 x 4 in paper prototypes from one letter sheet.
 
 The detailed class walkthrough uses Variation 3. Variations 1 and 2 are examples for comparison, critique, and improvement.

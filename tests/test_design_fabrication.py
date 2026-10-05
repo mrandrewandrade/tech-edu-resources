@@ -280,8 +280,12 @@ class DesignFabricationTests(unittest.TestCase):
             "Export As > SVG",
             "personal-logo-worksheet.pdf",
             "Bitmap_VS_SVG.svg",
+            "AI-made or hand-drawn inspiration image",
+            "two or three colours at most",
+            "landscape-to-logo.svg",
         ):
             self.assertIn(detail, logo_lesson)
+        self.assertTrue((SITE / "assets" / "name-tag-photopea" / "landscape-to-logo.svg").is_file())
 
         organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench", "Captured bottle rack"):
