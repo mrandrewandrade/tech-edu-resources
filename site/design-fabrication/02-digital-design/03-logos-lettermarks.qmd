@@ -1,48 +1,93 @@
 ---
-title: "Logo & Lettermark Design | Shape, Type and Negative Space"
-description: "A reusable logo-design lesson using letterforms, simple vector geometry, negative space and one-colour testing for communication and fabrication."
+title: "Personal Logo | Initials to SVG"
+description: "A short student worksheet for sketching an original lettermark, building it in Photopea, testing it in one colour, and exporting an SVG."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
-terms: [logo, lettermark, typography, negative-space, audience, purpose, constraint, licence, attribution, vector-graphic]
-highlighted-terms: [logo]
+terms: [logo, lettermark, typography, negative-space, vector-graphic, raster-image, scalable-vector-graphics]
+highlighted-terms: [logo, vector-graphic]
 toc: true
 execute: {enabled: false}
 ---
 
-## Design for recognition
+::: {.callout-warning title="Work in progress"}
+This is a classroom draft. Test the steps with students and record anything that needs revision.
+:::
 
-A logo is not a small illustration of everything an organization does. It is an identifying mark that must remain recognizable across sizes, materials, and contexts. A **lettermark** starts with one or more letterforms and changes their shape, spacing, overlap, or negative space to create a distinctive symbol.
+## Make your mark
 
-## Development sequence
+Create a personal logo from your initials. It must work **small**, **in one colour**, and **as an SVG**.
 
-1. Identify the audience, context, and qualities the mark should communicate.
-2. Sketch at least six alternatives before opening vector software.
-3. Build two or three candidates using letterforms and simple geometry.
-4. Test positive and reversed versions in one colour.
-5. Reduce the design until every remaining element has a job.
-6. Check it at small size, from a distance, and as an engraved silhouette.
+[Download the one-page personal-logo worksheet](../../assets/name-tag-photopea/personal-logo-worksheet.pdf){.btn .btn-primary}
 
-## Negative space
+## 1. Sketch three different ideas
 
-Negative space is the area around and inside shapes. It can separate forms, reveal a second symbol, improve recognition, or create ambiguity. Test by filling the entire logo black. If the important counter-shapes close up, revise the spacing or simplify the form.
+Use the worksheet. Draw quickly.
 
-## Fabrication constraint
+1. **Clear letters**
+2. **Overlapping or interlocking letters**
+3. **A symbol made with negative space**
 
-Very thin lines, tiny counters, and detached islands may fail when engraved or cut. Preserve an editable master, then create a fabrication copy in which critical text is converted to paths and small features are checked against the material and machine.
+Choose the idea with the clearest shape.
 
-## Remix legally and trace the source
+## 2. Know the file types
 
-Original thumbnails are the default. If a teacher-approved reference, font, icon or vector is used, record the creator, original URL and licence before adapting it. A search result or “free” label is not a licence. Change the idea meaningfully rather than submitting a traced commercial mark, mascot or downloaded finished logo.
+<figure>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bitmap_VS_SVG.svg" alt="A raster image becomes blocky when enlarged while an SVG vector stays smooth" style="display:block;max-width:720px;width:100%;margin-inline:auto">
+  <figcaption><strong>Raster:</strong> pixels, such as JPG and PNG. <strong>Vector:</strong> paths, such as SVG. Image: <a href="https://commons.wikimedia.org/wiki/File:Bitmap_VS_SVG.svg">Yug, Wikimedia Commons</a>, CC BY-SA 2.5.</figcaption>
+</figure>
 
-Keep the editable vector master. Convert a copy of final type to paths only when the downstream workflow requires exact appearance; retain the live-text source for future revision.
+For this logo, keep the editable Photopea file and export an **SVG** master. A PNG copy is useful later for engraving.
 
-::: {.ter-project-brief}
-### Project
+## 3. Build it in Photopea
 
-Create an original lettermark and place it with your name inside an exact rectangular plaque. The mark can continue into the [Name + Logo engraving](../03-laser-cutting/01-name-logo.qmd), [short animation](05-animation-ui-ux.qmd), [small portfolio](07-website-ui-ux.qmd), or [faux-enamel 3D print](../04-3d-printing/faux-enamel-pin-jewellery.qmd).
+1. Open [Photopea](https://www.photopea.com/).
+2. Choose **File > New**.
+3. Enter **1000 × 1000 px**.
+4. Choose **Transparent**.
+5. Add initials with the **Type Tool**, or open a clear photo of your sketch.
+6. Work in black first.
+
+### If you start with type
+
+1. Keep one editable text layer.
+2. Duplicate it.
+3. Right-click the copy and choose **Convert to Shape**.
+4. Move, overlap, rotate, or combine the shapes.
+
+### If you start with a drawing
+
+1. Photograph it straight on in bright, even light.
+2. Crop and increase the contrast.
+3. Choose **Image > Vectorize Bitmap**.
+4. Use very few colours.
+5. Remove bumps, tiny pieces, and unwanted holes.
+
+## 4. Run four quick tests
+
+- **Small:** is it recognizable at about 25 mm wide?
+- **Black:** does the silhouette still work?
+- **White:** does it work on a dark background?
+- **Grayscale:** does the idea survive without colour?
+
+If a thin line disappears, thicken it. If a small gap closes, open it. If the mark needs colour to make sense, simplify it.
+
+## 5. Save the logo system
+
+Save:
+
+- editable `lastname-logo-master.psd`
+- `lastname-logo-dark.svg`
+- `lastname-logo-light.svg`
+- `lastname-logo-gray.svg`
+- transparent `lastname-logo.png`
+
+Choose **File > Export As > SVG** for the vector master. Keep the PSD so you can revise it.
+
+::: {.callout-tip title="Ready for the name tag?"}
+Bring the transparent PNG and the editable PSD to the [Name + Logo engraving worksheet](../03-laser-cutting/01-name-logo.qmd). You will test the proportions on paper before building the final file.
 :::
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology** and useful in **TDJ2O** and **TIJ1O** projects involving visual identity, vector graphics, typography, design alternatives, and communication.
+**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology** and useful in **TDJ2O** and **TIJ1O** work involving visual identity, vector graphics, design alternatives, and fabrication.
 :::
 
-Next: [Layout, Typography & Colour](04-layout-typography-colour.qmd).
+Next: [Name + Logo Wood Name Tag](../03-laser-cutting/01-name-logo.qmd).

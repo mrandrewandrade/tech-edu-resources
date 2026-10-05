@@ -239,7 +239,7 @@ class DesignFabricationTests(unittest.TestCase):
         ):
             self.assertIn(detail, first_project)
         for screenshot in (
-            "01-create-canvas.jpg",
+            "01-create-canvas-inches.jpg",
             "02-safe-margin-guides.jpg",
             "03-place-transparent-pngs.jpg",
             "04-add-readable-name.jpg",
@@ -249,6 +249,7 @@ class DesignFabricationTests(unittest.TestCase):
             "08-variation-1-a-andrade.png",
             "09-variation-2-max-readability.png",
             "10-variation-3-aa-ndrade.png",
+            "11-variation-3-alignment-check.png",
         ):
             self.assertIn(screenshot, first_project)
             self.assertTrue((SITE / "assets" / "name-tag-photopea" / screenshot).is_file(), screenshot)
@@ -266,6 +267,21 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertIn(student_file, first_project)
             self.assertTrue((downloads / student_file).is_file(), student_file)
             self.assertGreater((downloads / student_file).stat().st_size, 10_000, student_file)
+
+        for worksheet in ("personal-logo-worksheet.pdf", "name-tag-paper-prototype.pdf"):
+            self.assertTrue((SITE / "assets" / "name-tag-photopea" / worksheet).is_file(), worksheet)
+            self.assertGreater((SITE / "assets" / "name-tag-photopea" / worksheet).stat().st_size, 10_000, worksheet)
+
+        logo_lesson = self.read("design-fabrication/02-digital-design/03-logos-lettermarks.qmd")
+        for detail in (
+            "Personal Logo",
+            "three different ideas",
+            "Vectorize Bitmap",
+            "Export As > SVG",
+            "personal-logo-worksheet.pdf",
+            "Bitmap_VS_SVG.svg",
+        ):
+            self.assertIn(detail, logo_lesson)
 
         organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench", "Captured bottle rack"):

@@ -25,7 +25,7 @@ By the end, you can:
 - explain what a raster image is;
 - choose between JPG, PNG, WebP, and SVG for a specific job;
 - recognize transparency and explain why it matters;
-- convert 11 × 4 inches into a 3300 × 1200 pixel canvas at 300 pixels per inch;
+- create an 11 × 4 inch canvas at 300 pixels per inch;
 - use guides to create a 0.25 inch safe margin;
 - arrange a logo and name with readable typography, balanced spacing, and clear hierarchy;
 - save an editable master and export a checked PNG for engraving.
@@ -92,37 +92,52 @@ Record your plan:
 | Typeface and weight | ______________________________________________ |
 | Visual priority: logo, name, or equal | ______________________________________________ |
 
+### Step 0 - Make a paper prototype
+
+A letter-size sheet is 11 × 8.5 inches. Cut it lengthwise and trim the outside quarter-inch strips to make **two exact 11 × 4 inch prototypes**.
+
+[Download the full-size paper prototype sheet](../../assets/name-tag-photopea/name-tag-paper-prototype.pdf){.btn .btn-primary}
+
+1. Print in landscape at **Actual size / 100%**. Do not choose Fit.
+2. Measure the 1 inch check line with a ruler.
+3. Cut on the solid lines.
+4. Sketch the logo and name inside the dashed safe margin.
+5. Put the logo and name on one horizontal centreline.
+6. Hold it about 2 metres away. Revise before opening Photopea.
+
+Complete the [Personal Logo: Initials to SVG worksheet](../02-digital-design/03-logos-lettermarks.qmd) first if you do not have an original logo.
+
 ### Step 1 - Create the exact-size canvas
 
 1. Open Photopea and choose **File > New**.
 2. Name the document clearly, such as `lastname-name-tag`.
-3. Set units to **Pixels**.
-4. Enter **3300 px** for width and **1200 px** for height.
+3. Set units to **Inches**.
+4. Enter **11** for width and **4** for height.
 5. Enter **300 pixels per inch**.
 6. Choose a white background and click **Create**.
 
-The calculation is:
+Photopea stores raster artwork as pixels, so it automatically creates:
 
 $$11\text{ in} \times 300\text{ px/in} = 3300\text{ px}$$
 
 $$4\text{ in} \times 300\text{ px/in} = 1200\text{ px}$$
 
-The physical proportion is **11:4**, or **2.75:1**. If a file does not have this proportion, it will not fit the blank without cropping, stretching, or leaving unintended empty space.
+Design in inches because the wood is measured in inches. The resulting raster file is 3300 × 1200 pixels because 11 × 300 = 3300 and 4 × 300 = 1200.
 
-![Photopea New Project dialog set to 3300 by 1200 pixels at 300 pixels per inch](../../assets/name-tag-photopea/01-create-canvas.jpg){fig-alt="Photopea New Project dialog showing a document named ANDRADE Name Tag with width 3300 pixels, height 1200 pixels, 300 pixels per inch, and a white background."}
+![Photopea New Project dialog set to an 11 by 4 inch canvas at 300 pixels per inch](../../assets/name-tag-photopea/01-create-canvas-inches.jpg){fig-alt="Photopea New Project dialog showing a document named ANDRADE Name Tag with width 11 inches, height 4 inches, 300 pixels per inch, and a white background."}
 
 ### Step 2 - Build a 0.25 inch safe margin
 
 A **margin** is deliberate empty space between the artwork and the physical edge. It is not wasted space. It prevents the design from feeling crowded and gives room for small placement or material differences.
 
-At 300 pixels per inch, a 0.25 inch margin is:
+Enter **0.25 in** when Photopea accepts units. At 300 pixels per inch, the same margin is:
 
 $$0.25\text{ in} \times 300\text{ px/in} = 75\text{ px}$$
 
-Add guides at:
+Add guides at either measurement:
 
-- **Vertical:** 75 px and 3225 px
-- **Horizontal:** 75 px and 1125 px
+- **Vertical:** 0.25 in and 10.75 in, or 75 px and 3225 px
+- **Horizontal:** 0.25 in and 3.75 in, or 75 px and 1125 px
 
 Use **View > New Guide** for each guide. Keep every visible part of the logo and name inside the cyan guide box. The resulting safe area is **3150 × 1050 px**.
 
@@ -148,7 +163,7 @@ Andrew's example places the Technology Commons emblem first, followed by the AA 
 2. Choose **Source Sans 3 Bold**. Source Sans Pro is also acceptable if that is the installed version.
 3. Use black or another instructor-approved high-contrast colour.
 4. Type the name in **ALL CAPS**.
-5. Start near **420 px** while arranging the layers, then enlarge the final name toward **540 to 610 px** when the available width allows it.
+5. Enlarge the name until it occupies about half the tag height while remaining inside the margin.
 6. Keep the letters inside the safe margin and leave a clear gap after the logo.
 7. Use the Move Tool to align the name visually with the logo, not just mathematically.
 
@@ -183,7 +198,8 @@ Good spacing means the empty areas look intentional:
 
 - **Outer margin:** all artwork stays at least 0.25 inch from every edge.
 - **Logo-to-name gap:** the elements are related but do not collide. Aim for a gap similar to one medium-width letter.
-- **Visual centre:** the complete group feels centred on the board, even if the individual pieces are different sizes.
+- **One centreline:** the logo and name share the same horizontal visual centre.
+- **Vertical centre:** select the complete group and centre it between the top and bottom edges.
 - **Hierarchy:** the name is the first or equal reading target. Decorative details do not overpower it.
 - **Breathing room:** no logo tip, letter, or accent crowds the guide.
 
@@ -199,19 +215,19 @@ Do not stop at the first acceptable layout. Duplicate the document twice and cha
 
 ![Technology Commons emblem beside large A. ANDRADE text](../../assets/name-tag-photopea/08-variation-1-a-andrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem and large A. ANDRADE text in Source Sans 3 Semibold."}
 
-This version uses the Commons emblem and **A. ANDRADE** at approximately **440 px**. Abbreviating the first name gives the surname enough room to stay large. It is formal, balanced, and easy to understand.
+This version uses the Commons emblem and **A. ANDRADE**. The logo and text share one centreline, and the complete group is centred vertically.
 
 #### Variation 2 - maximum distance readability
 
 ![Small Technology Commons emblem beside extra-large ANDRADE text](../../assets/name-tag-photopea/09-variation-2-max-readability.png){fig-alt="Eleven by four inch name tag with a smaller Technology Commons emblem and extra-large ANDRADE text."}
 
-This version reduces the emblem and enlarges **ANDRADE** to approximately **610 px**. It is the strongest choice when the main goal is recognizing the wearer from across a room.
+This version reduces the emblem and gives **ANDRADE** most of the available width. It is the strongest choice for reading across a room.
 
 #### Variation 3 - personalized AA lettermark
 
 ![Technology Commons emblem, thick AA lettermark, and large NDRADE text](../../assets/name-tag-photopea/10-variation-3-aa-ndrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem, a thickened AA lettermark, and large NDRADE text that reads together as ANDRADE."}
 
-This version keeps the personal idea. The Commons emblem is reduced, **NDRADE** grows to approximately **580 px**, and the AA lettermark receives an **18 px outside stroke** so its thin geometry is closer in weight to the letters. The AA mark and NDRADE should touch visually as one word without actually overlapping.
+This version keeps the personal idea. The Commons emblem, AA lettermark, and **NDRADE** all share one centreline. The AA mark uses an outside stroke so its weight matches the letters. The AA mark and NDRADE read as one word without overlapping.
 
 ::: {.callout-tip title="Recommended worked example"}
 Use **Variation 3** for the detailed Photopea walkthrough because it teaches the most: transparent PNG placement, visual substitution, type matching, stroke weight, grouping, and distance testing. Keep Variations 1 and 2 as comparison examples.
@@ -221,18 +237,23 @@ Use **Variation 3** for the detailed Photopea walkthrough because it teaches the
 
 Starting from the first-draft screenshots above:
 
-1. Select the **NDRADE** text layer and increase it from **420 px** to about **580 px**.
+1. Select the **NDRADE** text layer and enlarge it until it occupies about half the tag height.
 2. Select the AA layer. Choose **Layer > Layer Style > Stroke**.
-3. Set the stroke position to **Outside**, use the same dark colour as the name, and begin near **18 px**. Adjust only if a test engraving closes the interior spaces.
-4. Reduce the Technology Commons emblem to approximately **360 × 360 px**.
-5. Make the AA mark approximately **520 × 520 px** and keep its aspect ratio locked.
+3. Set the stroke position to **Outside**, use the same dark colour as the name, and begin near **0.06 in / 18 px**. Adjust only if a test engraving closes the interior spaces.
+4. Keep the Technology Commons emblem near **1.6 inches high**.
+5. Keep the AA mark near **1.9 inches high** and lock its aspect ratio.
 6. Move NDRADE close enough that the mark reads as its first A. Do not leave a full-letter gap.
-7. Centre the complete group visually and keep every element inside the **75 px** safe margin.
-8. Hide the guides and perform the two-second reading test from about **2 metres** away.
+7. Align the visual centre of the emblem, AA mark, and name to the same horizontal line.
+8. Centre the complete group vertically and keep every element inside the **0.25 inch** safe margin.
+9. Hide the guides and perform the two-second reading test from about **2 metres** away.
+
+![Alignment check for Variation 3](../../assets/name-tag-photopea/11-variation-3-alignment-check.png){fig-alt="The Technology Commons emblem, AA lettermark, and NDRADE text share one horizontal visual centreline inside a quarter-inch safe margin."}
+
+The cyan line is a temporary guide. It crosses the visual centre of the emblem, the AA mark, and the name. Hide it before export.
 
 ### Student design files
 
-Download the complete pack or inspect one direction at a time. Each Photoshop file is **3300 × 1200 px** and contains separately named artwork layers. The matching PNG is the clean full-size reference and export.
+Download the complete pack or inspect one direction at a time. Each Photoshop file is **11 × 4 inches at 300 ppi** and contains separately named artwork layers. The matching PNG is the clean full-size reference and export.
 
 - [Download the complete name-tag design pack](../../assets/name-tag-photopea/downloads/name-tag-design-pack.zip)
 - **Variation 1:** [Photoshop file](../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.psd) | [PNG](../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.png)
@@ -260,11 +281,12 @@ Photopea's [Open and Save guide](https://www.photopea.com/learn/opening-saving) 
 
 Check every statement before handing in the file:
 
-- [ ] My canvas is 3300 × 1200 px at 300 pixels per inch.
-- [ ] My design matches the 11 × 4 inch blank.
+- [ ] My canvas is 11 × 4 inches at 300 pixels per inch.
 - [ ] My logo is an approved PNG with a transparent background.
 - [ ] I did not stretch the logo.
-- [ ] All artwork remains inside the 75 px safe margin.
+- [ ] All artwork remains inside the 0.25 inch safe margin.
+- [ ] The logo and name share one horizontal centreline.
+- [ ] The complete group is centred vertically.
 - [ ] My name is in a readable sans serif font.
 - [ ] My name can be read quickly from about 2 metres away.
 - [ ] The logo-to-name gap and outer margins look intentional.
