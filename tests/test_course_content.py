@@ -71,6 +71,40 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("6.23 × 1.23 = 7.6629 → 7.66", lesson)
         self.assertIn("round once, at the end", lesson)
 
+    def test_reference_links_load_hover_titles(self) -> None:
+        config = self.read("_quarto.yml")
+        scripts = self.read("includes/bs-scripts.html")
+        helper = self.read("assets/bs-reference-titles.js")
+        self.assertIn("assets/bs-reference-titles.js", config)
+        self.assertIn('"bs-reference-titles.js"', scripts)
+        self.assertIn('"ref-grob2016": "Grob\'s Basic Electronics"', helper)
+        self.assertIn('link.title = title', helper)
+
+    def test_waterloo_track_uses_plain_language_and_linked_references(self) -> None:
+        track = self.read("tej3-4/waterloo-engineering-track/index.qmd")
+        self.assertIn("## Learning goals and why they matter", track)
+        self.assertIn("Kirchhoff's current law and Kirchhoff's voltage law", track)
+        self.assertIn("[[1, Ch. 9]](../../references.qmd#ref-grob2016)", track)
+        self.assertIn("[[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)", track)
+        self.assertNotIn("KCL", track)
+        self.assertNotIn("KVL", track)
+        self.assertNotIn("WET-A", track)
+
+    def test_tej_pages_inherit_the_learn_sidebar_layout(self) -> None:
+        metadata_files = [SITE / "tej3-4" / "_metadata.yml"]
+        metadata_files.extend((SITE / "tej3-4").glob("**/_metadata.yml"))
+        for metadata_path in metadata_files:
+            content = metadata_path.read_text(encoding="utf-8")
+            if "body-classes:" in content:
+                self.assertIn(
+                    "bs-learn-article",
+                    content,
+                    f"{metadata_path.relative_to(SITE)} overrides the Learn layout",
+                )
+
+        root_metadata = self.read("tej3-4/_metadata.yml")
+        self.assertIn('body-classes: "bs-learn-article"', root_metadata)
+
 
 if __name__ == "__main__":
     unittest.main()
