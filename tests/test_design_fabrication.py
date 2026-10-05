@@ -246,9 +246,26 @@ class DesignFabricationTests(unittest.TestCase):
             "05-final-layout.jpg",
             "06-export-png.jpg",
             "07-raster-format-guide.svg",
+            "08-variation-1-a-andrade.png",
+            "09-variation-2-max-readability.png",
+            "10-variation-3-aa-ndrade.png",
         ):
             self.assertIn(screenshot, first_project)
             self.assertTrue((SITE / "assets" / "name-tag-photopea" / screenshot).is_file(), screenshot)
+
+        downloads = SITE / "assets" / "name-tag-photopea" / "downloads"
+        for student_file in (
+            "variation-1-commons-a-andrade.psd",
+            "variation-1-commons-a-andrade.png",
+            "variation-2-maximum-readability.psd",
+            "variation-2-maximum-readability.png",
+            "variation-3-thick-aa-ndrade.psd",
+            "variation-3-thick-aa-ndrade.png",
+            "name-tag-design-pack.zip",
+        ):
+            self.assertIn(student_file, first_project)
+            self.assertTrue((downloads / student_file).is_file(), student_file)
+            self.assertGreater((downloads / student_file).stat().st_size, 10_000, student_file)
 
         organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench", "Captured bottle rack"):

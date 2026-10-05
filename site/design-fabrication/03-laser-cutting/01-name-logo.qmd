@@ -148,13 +148,13 @@ Andrew's example places the Technology Commons emblem first, followed by the AA 
 2. Choose **Source Sans 3 Bold**. Source Sans Pro is also acceptable if that is the installed version.
 3. Use black or another instructor-approved high-contrast colour.
 4. Type the name in **ALL CAPS**.
-5. Start near **420 px** type size, then adjust to fit the name.
+5. Start near **420 px** while arranging the layers, then enlarge the final name toward **540 to 610 px** when the available width allows it.
 6. Keep the letters inside the safe margin and leave a clear gap after the logo.
 7. Use the Move Tool to align the name visually with the logo, not just mathematically.
 
 For Andrew's example, type **NDRADE** after the AA lettermark. The mark supplies the first A, so the complete visual reads **ANDRADE**.
 
-![NDRADE typed in Source Sans 3 Bold at 420 pixels beside the AA lettermark](../../assets/name-tag-photopea/04-add-readable-name.jpg){fig-alt="Photopea workspace showing the Technology Commons emblem, AA lettermark, and the text NDRADE in Source Sans 3 Bold, all inside the safe-margin guides."}
+![NDRADE typed in Source Sans 3 Bold at 420 pixels beside the AA lettermark](../../assets/name-tag-photopea/04-add-readable-name.jpg){fig-alt="Photopea workspace showing the first draft with the Technology Commons emblem, AA lettermark, and NDRADE text at 420 pixels. The next step enlarges and strengthens this draft."}
 
 ### What makes a font readable?
 
@@ -187,9 +187,60 @@ Good spacing means the empty areas look intentional:
 - **Hierarchy:** the name is the first or equal reading target. Decorative details do not overpower it.
 - **Breathing room:** no logo tip, letter, or accent crowds the guide.
 
-Andrew's example uses the Technology Commons emblem as the context mark, the AA lettermark as the first letter, and NDRADE as the dominant readable word.
+The first draft below uses the Technology Commons emblem as the context mark, the AA lettermark as the first letter, and NDRADE as the readable word. It is intentionally kept as a **critique draft**: the letters are too small for the strongest distance reading, and the thin AA mark competes with the heavier type.
 
-![Finished ANDRADE name-tag composition with guides hidden](../../assets/name-tag-photopea/05-final-layout.jpg){fig-alt="Finished Photopea composition on a white 11 by 4 inch canvas, with Technology Commons emblem, AA lettermark, and NDRADE text forming ANDRADE."}
+![First ANDRADE draft before the distance-readability improvements](../../assets/name-tag-photopea/05-final-layout.jpg){fig-alt="First Photopea draft with Technology Commons emblem, a thin AA lettermark, and NDRADE text. This draft is used for critique before making the name larger."}
+
+### Make three variations before choosing
+
+Do not stop at the first acceptable layout. Duplicate the document twice and change one major decision in each copy. Compare all three at the same display size and choose the version that communicates the name fastest.
+
+#### Variation 1 - clear professional baseline
+
+![Technology Commons emblem beside large A. ANDRADE text](../../assets/name-tag-photopea/08-variation-1-a-andrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem and large A. ANDRADE text in Source Sans 3 Semibold."}
+
+This version uses the Commons emblem and **A. ANDRADE** at approximately **440 px**. Abbreviating the first name gives the surname enough room to stay large. It is formal, balanced, and easy to understand.
+
+#### Variation 2 - maximum distance readability
+
+![Small Technology Commons emblem beside extra-large ANDRADE text](../../assets/name-tag-photopea/09-variation-2-max-readability.png){fig-alt="Eleven by four inch name tag with a smaller Technology Commons emblem and extra-large ANDRADE text."}
+
+This version reduces the emblem and enlarges **ANDRADE** to approximately **610 px**. It is the strongest choice when the main goal is recognizing the wearer from across a room.
+
+#### Variation 3 - personalized AA lettermark
+
+![Technology Commons emblem, thick AA lettermark, and large NDRADE text](../../assets/name-tag-photopea/10-variation-3-aa-ndrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem, a thickened AA lettermark, and large NDRADE text that reads together as ANDRADE."}
+
+This version keeps the personal idea. The Commons emblem is reduced, **NDRADE** grows to approximately **580 px**, and the AA lettermark receives an **18 px outside stroke** so its thin geometry is closer in weight to the letters. The AA mark and NDRADE should touch visually as one word without actually overlapping.
+
+::: {.callout-tip title="Recommended worked example"}
+Use **Variation 3** for the detailed Photopea walkthrough because it teaches the most: transparent PNG placement, visual substitution, type matching, stroke weight, grouping, and distance testing. Keep Variations 1 and 2 as comparison examples.
+:::
+
+### Improve Variation 3 in Photopea
+
+Starting from the first-draft screenshots above:
+
+1. Select the **NDRADE** text layer and increase it from **420 px** to about **580 px**.
+2. Select the AA layer. Choose **Layer > Layer Style > Stroke**.
+3. Set the stroke position to **Outside**, use the same dark colour as the name, and begin near **18 px**. Adjust only if a test engraving closes the interior spaces.
+4. Reduce the Technology Commons emblem to approximately **360 × 360 px**.
+5. Make the AA mark approximately **520 × 520 px** and keep its aspect ratio locked.
+6. Move NDRADE close enough that the mark reads as its first A. Do not leave a full-letter gap.
+7. Centre the complete group visually and keep every element inside the **75 px** safe margin.
+8. Hide the guides and perform the two-second reading test from about **2 metres** away.
+
+### Student design files
+
+Download the complete pack or inspect one direction at a time. Each Photoshop file is **3300 × 1200 px** and contains separately named artwork layers. The matching PNG is the clean full-size reference and export.
+
+- [Download the complete name-tag design pack](../../assets/name-tag-photopea/downloads/name-tag-design-pack.zip)
+- **Variation 1:** [Photoshop file](../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.psd) | [PNG](../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.png)
+- **Variation 2:** [Photoshop file](../../assets/name-tag-photopea/downloads/variation-2-maximum-readability.psd) | [PNG](../../assets/name-tag-photopea/downloads/variation-2-maximum-readability.png)
+- **Variation 3:** [Photoshop file](../../assets/name-tag-photopea/downloads/variation-3-thick-aa-ndrade.psd) | [PNG](../../assets/name-tag-photopea/downloads/variation-3-thick-aa-ndrade.png)
+- **Source artwork:** [Technology Commons transparent PNG](../../assets/name-tag-photopea/downloads/source-files/technology-commons-transparent.png) | [original AA transparent PNG](../../assets/name-tag-photopea/downloads/source-files/aa-logo-original-transparent.png) | [thickened AA SVG](../../assets/name-tag-photopea/downloads/source-files/aa-logo-thickened.svg)
+
+When students make their own version, they should replace the example name and logo rather than submitting an unchanged sample.
 
 ### Step 6 - Save the master and export the engraving PNG
 
