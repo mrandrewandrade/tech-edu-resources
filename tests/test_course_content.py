@@ -114,6 +114,17 @@ class CourseContentTests(unittest.TestCase):
         root_metadata = self.read("tej3-4/_metadata.yml")
         self.assertIn('body-classes: "bs-learn-article"', root_metadata)
 
+    def test_curriculum_roadmap_shows_classroom_needs_not_internal_status(self) -> None:
+        roadmap = self.read("tej3-4/curriculum/index.qmd")
+        self.assertIn("| Consumables |", roadmap)
+        self.assertIn("| Student deliverables |", roadmap)
+        self.assertIn("| Teacher notes |", roadmap)
+        self.assertIn("Materials, deliverables, and notes", roadmap)
+        self.assertNotIn("| Estimated time |", roadmap)
+        self.assertNotIn("| Student handout |", roadmap)
+        self.assertNotIn("| Copyright or permissions |", roadmap)
+        self.assertNotIn("data-tej-roadmap-status", roadmap)
+
 
 if __name__ == "__main__":
     unittest.main()

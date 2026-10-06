@@ -100,6 +100,7 @@ units:
     physical_lab_requirement: Required safety orientation
     equipment: [PPE, emergency equipment, low-voltage training equipment]
     software: [Google Drive, browser]
+    consumables: [safety agreement sheets, labels, ESD bags or protective packaging as needed]
     safety_level: Foundational
     student_deliverables: [safety agreement, design-process record, documentation sample]
     assessment_evidence: [safe conduct, hazard identification, clear source attribution]
@@ -164,6 +165,7 @@ units:
     physical_lab_requirement: Optional measurement stations
     equipment: [scientific calculator, ruler, DMM]
     software: [browser]
+    consumables: [graph paper or calculation sheets, replacement calculator or meter batteries as needed]
     safety_level: Low
     student_deliverables: [worked calculations, calculator evidence, measurement record]
     assessment_evidence: [correct units, significant figures, notation, and calculator workflow]
@@ -230,6 +232,7 @@ units:
     physical_lab_requirement: Required low-voltage investigations
     equipment: [protected low-voltage source, DMM, resistive loads]
     software: [Tinkercad Circuits]
+    consumables: [resistors, LEDs or lamps, hookup wire, protective fuses as needed]
     safety_level: Low-voltage electrical
     student_deliverables: [concept explanations, GUESS calculations, measurement comparison]
     assessment_evidence: [correct quantity relationships, units, safety decisions]
@@ -290,6 +293,7 @@ units:
     physical_lab_requirement: Required
     equipment: [breadboards, protected DC sources, DMMs, resistor kits]
     software: [Tinkercad Circuits]
+    consumables: [resistors, LEDs, hookup wire, replaceable protective fuses]
     safety_level: Low-voltage electrical
     student_deliverables: [GUESS calculations, schematics, simulations, measured comparisons, fault diagnosis]
     assessment_evidence: [equations before substitution, units, full calculator result, correct precision, interpretation]
@@ -300,7 +304,7 @@ units:
     source_references: [GROB, AAC, CASIO-FX991]
     access_level: Public
     copyright_permissions_note: Original worked examples and diagrams with citations.
-    implementation_notes: Do not label planned series and parallel packages as complete.
+    implementation_notes: Teach series first, parallel second, and mixed circuits only after students can explain and verify both rule sets.
     module_defaults: &unit3_defaults
       status: Planned
       pathway: core
@@ -364,6 +368,7 @@ units:
     physical_lab_requirement: Required
     equipment: [breadboards, leads, protected sources, DMMs, components]
     software: [Tinkercad Circuits, KiCad]
+    consumables: [hookup wire, resistors, LEDs, replaceable component samples, labels]
     safety_level: Low-voltage lab
     student_deliverables: [breadboard build, schematic, simulation, measurement plan, uncertainty statement]
     assessment_evidence: [clean wiring, correct symbols, meter safety, agreement and explained differences]
@@ -428,6 +433,7 @@ units:
     physical_lab_requirement: Required
     equipment: [component kits, DMMs, protected sources, breadboards, oscilloscope when available]
     software: [Tinkercad Circuits, KiCad]
+    consumables: [resistors, capacitors, diodes, transistors, LEDs, hookup wire, replaceable fuses]
     safety_level: Low-voltage lab with stored-energy and inductive-load controls
     student_deliverables: [component records, calculations, simulations, builds, troubleshooting evidence]
     assessment_evidence: [ratings, polarity, protection, measurements, functional explanation]
@@ -517,6 +523,7 @@ units:
     physical_lab_requirement: Required for stable-input circuits
     equipment: [logic ICs or simulator, switches, pull resistors, LEDs, protected supplies]
     software: [Tinkercad Circuits or logic simulator]
+    consumables: [logic ICs when not reusable, switches, resistors, LEDs, jumper wire]
     safety_level: Low-voltage digital
     student_deliverables: [stable-input circuits, truth tables, Boolean expressions, logic project]
     assessment_evidence: [defined states, correct binary test order, separate output columns, safe interfaces]
@@ -611,6 +618,7 @@ units:
     physical_lab_requirement: Required
     equipment: [soldering stations, hand tools, fume controls, DMMs, 3D printer, laser cutter when available]
     software: [KiCad, EasyEDA optional, CAD software]
+    consumables: [solder, flux, desoldering braid, perfboard or PCB stock, hookup wire, heat-shrink tubing, filament or sheet stock]
     safety_level: Shop and soldering
     student_deliverables: [soldered practice board, inspected assembly, PCB files, BOM, enclosure plan]
     assessment_evidence: [safe process, joint quality, continuity, design-rule checks, manufacturable files]
@@ -679,7 +687,7 @@ units:
 
   - unit_id: '8'
     title: Basic Computer Systems
-    short_description: Preserve the completed electricity-to-computer sprint, Linux commissioning sequence, service side quests, and current pilots.
+    short_description: Connect electrical safety and computer hardware to assembly, startup, Linux installation, maintenance, troubleshooting, and responsible reuse.
     status: Published
     pathway: core
     prerequisites: [Units 2 to 4]
@@ -688,6 +696,7 @@ units:
     physical_lab_requirement: Required
     equipment: [teacher-approved desktop computers, ESD equipment, tools, installer USB, test equipment]
     software: [approved Linux distribution, benchmark tools]
+    consumables: [thermal paste, cable ties, labels, cleaning supplies, replacement parts as approved]
     safety_level: Computer service with sealed-PSU boundary
     student_deliverables: [baseline, labelled evidence, readiness check, installation record, upgrade evidence, benchmark report]
     assessment_evidence: [safe service, successful POST, verified configuration, repeatable comparison]
@@ -698,7 +707,7 @@ units:
     source_references: [ON-TEJ]
     access_level: Public
     copyright_permissions_note: Original public instructions and diagrams. Teacher fault cards and trackers remain restricted.
-    implementation_notes: Keep existing routes. The Power and Parts lab remains a shell until actual evidence and values are ready.
+    implementation_notes: Use real computer labels and measured values where possible. Treat the Power and Parts activity as a preparation shell until the class hardware is selected.
     module_defaults: &unit8_defaults
       status: Published
       pathway: core
@@ -795,14 +804,14 @@ units:
         public_notes_route: "tej3-4/computer-systems/make-it-print.qmd"
       - module_id: "CSP03"
         title: "Computer Recovery and OS Comparison"
-        short_description: "Small-pair pilot comparing recovery and lightweight Linux options."
+        short_description: "Work in small pairs to compare recovery methods and lightweight Linux options."
         status: "Pilot"
         pathway: "side quest"
         public_notes_route: "tej3-4/computer-systems/computer-recovery-crew-pilot.qmd"
 
   - unit_id: '9'
     title: Linux and Operating Systems
-    short_description: Build a complete planned pathway from operating-system concepts and desktop use to safe command-line administration.
+    short_description: Progress from operating-system concepts and desktop use to safe command-line administration.
     status: Planned
     pathway: core
     prerequisites: [Unit 8]
@@ -811,6 +820,7 @@ units:
     physical_lab_requirement: Required on approved computers or Raspberry Pi hardware
     equipment: [classroom computer or Raspberry Pi, installer media, approved storage]
     software: [Xubuntu, Linux Mint Xfce, Lubuntu, terminal, SSH, tmux]
+    consumables: [USB installer media when not reusable, labels, replacement storage media as approved]
     safety_level: Data, account, storage, and network safety
     student_deliverables: [installation record, command-line tasks, administration evidence, backup and troubleshooting plan]
     assessment_evidence: [least privilege, correct commands, safe storage choices, reproducible results]
@@ -897,6 +907,7 @@ units:
     physical_lab_requirement: Optional until embedded modules
     equipment: [computer, optional Raspberry Pi or Arduino-compatible board]
     software: [Python, code editor, Git, C or C++ toolchain]
+    consumables: []
     safety_level: Data, code, and connected-hardware safety
     student_deliverables: [small programs, tests, documentation, version history, embedded exercise]
     assessment_evidence: [correct logic, readable code, testing, debugging, source use, responsible AI use]
@@ -981,6 +992,7 @@ units:
     physical_lab_requirement: Required
     equipment: [available controller boards, sensors, LEDs, buzzers, relays, motors, servos, protected supplies]
     software: [board toolchain, serial monitor, optional simulator]
+    consumables: [jumper wire, LEDs, resistors, header pins, hookup wire, replaceable sensors or actuators as approved]
     safety_level: Low-voltage embedded interfacing
     student_deliverables: [board record, interface calculations, code, state model, integrated project]
     assessment_evidence: [electrical limits, stable inputs, safe outputs, tested code, documentation]
@@ -1058,6 +1070,7 @@ units:
     physical_lab_requirement: Required on an approved classroom network
     equipment: [computer, Raspberry Pi or server, network equipment, approved storage]
     software: [Linux, SSH, tmux, web or file server software]
+    consumables: [cable labels, replacement connectors or patch cables as needed]
     safety_level: Network, account, data, and privacy
     student_deliverables: [network map, service deployment, administration transcript, security and backup checklist]
     assessment_evidence: [correct addressing, least privilege, service verification, logs, privacy controls]
@@ -1126,6 +1139,7 @@ units:
     physical_lab_requirement: Not required
     equipment: [computer]
     software: [Python, NumPy, pandas, plotting libraries, scikit-learn]
+    consumables: []
     safety_level: Data privacy and responsible model use
     student_deliverables: [notebooks or scripts, evaluation tables, model card, project report]
     assessment_evidence: [clean data process, valid split, baseline, appropriate metrics, limitations]
@@ -1204,6 +1218,7 @@ units:
     physical_lab_requirement: Not required
     equipment: [computer]
     software: [Python, notebooks, approved local models or APIs]
+    consumables: [approved API credits when a local model is not used]
     safety_level: Privacy, copyright, security, and human oversight
     student_deliverables: [small models or demonstrations, evaluation set, citations, project report]
     assessment_evidence: [accurate explanation, reproducible evaluation, grounded claims, responsible data use]
@@ -1214,7 +1229,7 @@ units:
     source_references: [KARPATHY-ZERO-HERO, GOOGLE-MLCC]
     access_level: Public
     copyright_permissions_note: Link to official sources. Use original lessons and approved model or API terms.
-    implementation_notes: Most modules are advanced, enrichment, or pilot. Do not train a production-scale LLM on classroom hardware.
+    implementation_notes: Use small educational examples and approved services. Do not train a production-scale language model on classroom hardware.
     module_defaults: &unit14_defaults
       status: Planned
       pathway: extension
@@ -1290,6 +1305,7 @@ units:
     physical_lab_requirement: Required for device pathways; optional for software-only pathways
     equipment: [project-specific approved equipment and components]
     software: [project-specific approved tools]
+    consumables: [project-specific components, wire, fasteners, fabrication stock, labels, replacement parts]
     safety_level: Project-specific with teacher approval gates
     student_deliverables: [proposal, BOM, design evidence, prototype, tests, presentation, reflection]
     assessment_evidence: [requirements, iteration, safety, function, testing, documentation, communication]
@@ -1333,7 +1349,7 @@ units:
 
   - unit_id: '16'
     title: Bonus Pathway - Control Systems and CNC
-    short_description: Preserve the complete C01-C11 sequence as an optional specialized pathway connected to electronics, programming, microcontrollers, motors, sensors, fabrication, Linux, and state machines.
+    short_description: Apply electronics, programming, microcontrollers, motors, sensors, fabrication, Linux, and state machines in an optional control-systems sequence.
     status: Bonus
     pathway: bonus
     prerequisites: [Units 5, 6, 7, 9, 10, and 11 as applicable]
@@ -1342,6 +1358,7 @@ units:
     physical_lab_requirement: Optional teacher-approved equipment labs
     equipment: [sensors, motors, controllers, optional CNC trainer]
     software: [controller simulator, LinuxCNC where approved]
+    consumables: [hookup wire, connectors, fasteners, test stock, replaceable sensors or actuators as approved]
     safety_level: Motion, machine, and interlock safety
     student_deliverables: [control diagrams, response comparison, safety analysis, optional motion or CNC evidence]
     assessment_evidence: [feedback reasoning, stable response, safe-state design, verified interlocks]
@@ -1352,7 +1369,7 @@ units:
     source_references: [ON-TEJ]
     access_level: Public
     copyright_permissions_note: Original public notes and diagrams. Equipment procedures remain teacher controlled where required.
-    implementation_notes: This is not part of the required core. Preserve all existing routes and clearly show prerequisites.
+    implementation_notes: Offer this as an optional pathway after the relevant electronics, programming, and fabrication prerequisites.
     module_defaults: &unit16_defaults
       status: Published
       pathway: bonus
