@@ -37,6 +37,7 @@ class DesignFabricationTests(unittest.TestCase):
             "resources/index.qmd",
             "resources/work-in-progress/index.qmd",
             "01-nice-design-process/index.qmd",
+            "systems-design-fabrication-track/index.qmd",
             "ai/index.qmd",
             "ai/07-ai-design-audit.qmd",
             "02-digital-design/index.qmd",
@@ -88,6 +89,41 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertLess(nice, library)
         self.assertLess(library, applications)
         self.assertEqual(sidebar.count('section: "Ideas by Technology Area"'), 1)
+
+    def test_systems_design_fabrication_track_covers_the_shop(self) -> None:
+        track = self.read("design-fabrication/systems-design-fabrication-track/index.qmd")
+        for term in (
+            "Systems Design & Fabrication Track",
+            "N.I.C.E. Design Process",
+            "jointer",
+            "planer",
+            "sheet metal",
+            "horizontal band saw",
+            "abrasive cut-off",
+            "resistance spot welding",
+            "MIG",
+            "TIG",
+            "shielded metal arc welding",
+            "manual milling",
+            "manual lathe",
+            "surface grinding",
+            "CNC mill",
+            "CNC router",
+            "CNC engraving",
+            "laser cutting",
+            "3D printing",
+            "manual plasma cutting",
+            "CNC plasma cutter is planned / to be built",
+            "Integrated systems capstone",
+            "Machine authorization gates",
+        ):
+            self.assertIn(term, track)
+        for code in ("TIJ", "TAS", "TDJ", "TMJ", "TCJ", "TTJ", "TEJ", "TGJ", "THJ"):
+            self.assertIn(code, track)
+        config = self.read("_quarto.yml")
+        self.assertIn("design-fabrication/systems-design-fabrication-track/index.qmd", config)
+        landing = self.read("design-fabrication/index.qmd")
+        self.assertIn("systems-design-fabrication-track/index.qmd", landing)
 
     def test_homepage_prioritizes_reusable_resources(self) -> None:
         home = self.read("index.qmd")
