@@ -25,7 +25,6 @@ const { PNG } = localRequire("pngjs");
 const W = 3300;
 const H = 1200;
 const INK = "#0b2e4f";
-const AA_OPTICAL_DROP = 48;
 
 fs.mkdirSync(temp, { recursive: true });
 
@@ -191,10 +190,11 @@ function buildVariation3() {
   const total = emblemSize.width + gap1 + aaSize.width + gap2 + textSize.width;
   const startX = Math.round((W - total) / 2);
   const emblemY = Math.round((H - emblemSize.height) / 2);
-  // The AA mark carries more visual weight above its geometric centre.
-  // Lower it slightly so it looks balanced beside the wordmark.
-  const aaY = Math.round((H - aaSize.height) / 2) + AA_OPTICAL_DROP;
   const textY = Math.round((H - textSize.height) / 2);
+  // Align the bottom of the AA artwork with the text baseline. The wide top
+  // then sits above NDRADE like an umbrella while the stem ends with the word.
+  const aaY = textY + textSize.height - aaSize.height;
+  const baselineY = textY + textSize.height;
   const emblemLayer = path.join(temp, "v3-emblem-layer.png");
   const aaLayer = path.join(temp, "v3-aa-layer.png");
   const textLayer = path.join(temp, "v3-text-layer.png");
@@ -209,12 +209,12 @@ function buildVariation3() {
     "-fill", "none",
     "-stroke", "#22a6cc",
     "-strokewidth", "6",
-    "-draw", "rectangle 75,75 3225,1125 line 75,600 3225,600",
+    "-draw", `rectangle 75,75 3225,1125 line 75,${baselineY} 3225,${baselineY}`,
     "-fill", "#22a6cc",
     "-stroke", "none",
     "-font", font,
     "-pointsize", "46",
-    "-draw", "text 120,150 'OPTICAL BALANCE: AA SITS SLIGHTLY LOWER'",
+    "-draw", "text 120,150 'AA BOTTOM ALIGNS WITH THE LETTER BASELINE'",
     alignmentCheck,
   ]);
   fs.copyFileSync(output, path.join(downloads, "variation-3-thick-aa-ndrade.png"));

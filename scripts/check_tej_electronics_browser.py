@@ -14,6 +14,7 @@ OUTPUT = ROOT / ".tools" / "review" / "tej-electronics"
 ROUTES = [
     "tej3-4/index.html",
     "tej3-4/curriculum/index.html",
+    "tej3-4/engineering-preparation-track/index.html",
     "tej3-4/03-digital-logic-inputs/index.html",
     "tej3-4/03-digital-logic-inputs/02-switches-floating-inputs.html",
     "tej3-4/03-digital-logic-inputs/03-pull-down-inputs.html",
@@ -86,6 +87,13 @@ def main():
                     assert response and response.ok, route
                     page.wait_for_load_state("networkidle")
                     assert page.locator("main").inner_text().strip(), f"Empty main: {route}"
+                    assert page.locator("body.bs-learn-article, body.bs-learn-index").count() == 1, (
+                        f"Learn page body class is missing: {route}"
+                    )
+                    if label == "desktop":
+                        left_toggle = page.locator(".bs-learn-left-sidebar-toggle")
+                        assert left_toggle.count() == 1, f"Left sidebar toggle is missing: {route}"
+                        assert left_toggle.is_visible(), f"Left sidebar toggle is hidden: {route}"
                     overflow = page.evaluate(
                         """() => ({
                             pageWidth: document.documentElement.scrollWidth,

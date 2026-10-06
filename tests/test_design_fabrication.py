@@ -285,7 +285,7 @@ class DesignFabricationTests(unittest.TestCase):
             "personal-logo-worksheet.pdf",
             "personal-logo-photopea-guide.pdf",
             "Bitmap_VS_SVG.svg",
-            "AI-made or hand-drawn inspiration image",
+            "photographing or scanning a hand-drawn idea",
             "two or three colours at most",
             "landscape-to-logo.svg",
             "File > Open & Place",
@@ -297,6 +297,13 @@ class DesignFabricationTests(unittest.TestCase):
             "scale-free logo master",
             "1amzmA_uCjCnRD1YX1KIoW8YhIvRrl10hZQvdADdNV8Y",
             "14Tu-Nq394PJ6q7XqGiKx-N0yA6PrIBK4M53pB01OFHw",
+            "personal-logo-starting-idea.svg",
+            "personal-logo-three-sketches.svg",
+            "personal-logo-colour-example.svg",
+            "personal-logo-four-tests.svg",
+            "personal-logo-file-set.svg",
+            "01-photopea-personal-logo.jpg",
+            "06-photopea-personal-logo.jpg",
         ):
             self.assertIn(detail, logo_lesson)
         self.assertTrue((SITE / "assets" / "name-tag-photopea" / "landscape-to-logo.svg").is_file())
@@ -304,6 +311,16 @@ class DesignFabricationTests(unittest.TestCase):
             screenshots = list((SITE / "assets" / "personal-logo-photopea").glob(f"{screenshot_number:02d}-*.jpg"))
             self.assertEqual(len(screenshots), 1, screenshot_number)
             self.assertGreater(screenshots[0].stat().st_size, 10_000, screenshots[0].name)
+
+        for clean_screenshot in (
+            "02-safe-margin-guides.jpg",
+            "03-place-transparent-pngs.jpg",
+            "04-add-readable-name.jpg",
+            "05-final-layout.jpg",
+            "06-export-png.jpg",
+        ):
+            self.assertTrue((SITE / "assets" / "name-tag-photopea" / "clean" / clean_screenshot).is_file())
+            self.assertIn(f"clean/{clean_screenshot}", first_project)
 
         organizer = self.read("design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd")
         for design in ("Simple shelf", "Dowel-supported", "Reinforced wall", "Removable wall / bench", "Captured bottle rack"):

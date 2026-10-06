@@ -84,8 +84,10 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn('event.preventDefault()', helper)
         self.assertIn('Cited here as ', helper)
 
-    def test_waterloo_track_uses_plain_language_and_linked_references(self) -> None:
-        track = self.read("tej3-4/waterloo-engineering-track/index.qmd")
+    def test_engineering_preparation_track_uses_plain_language_and_linked_references(self) -> None:
+        track = self.read("tej3-4/engineering-preparation-track/index.qmd")
+        self.assertIn('title: "Engineering Preparation Track"', track)
+        self.assertNotIn('title: "Waterloo Engineering Track"', track)
         self.assertIn("## Learning goals and why they matter", track)
         self.assertIn("Kirchhoff's current law and Kirchhoff's voltage law", track)
         self.assertIn("[[1, Ch. 9]](../../references.qmd#ref-grob2016)", track)
@@ -93,6 +95,24 @@ class CourseContentTests(unittest.TestCase):
         self.assertNotIn("KCL", track)
         self.assertNotIn("KVL", track)
         self.assertNotIn("WET-A", track)
+
+        redirect = self.read("tej3-4/waterloo-engineering-track/index.qmd")
+        self.assertIn("../engineering-preparation-track/", redirect)
+
+    def test_tej_pages_inherit_the_learn_sidebar_layout(self) -> None:
+        metadata_files = [SITE / "tej3-4" / "_metadata.yml"]
+        metadata_files.extend((SITE / "tej3-4").glob("**/_metadata.yml"))
+        for metadata_path in metadata_files:
+            content = metadata_path.read_text(encoding="utf-8")
+            if "body-classes:" in content:
+                self.assertIn(
+                    "bs-learn-article",
+                    content,
+                    f"{metadata_path.relative_to(SITE)} overrides the Learn layout",
+                )
+
+        root_metadata = self.read("tej3-4/_metadata.yml")
+        self.assertIn('body-classes: "bs-learn-article"', root_metadata)
 
 
 if __name__ == "__main__":

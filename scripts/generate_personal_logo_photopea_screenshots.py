@@ -13,6 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "site" / "assets" / "name-tag-photopea"
 OUT = ROOT / "site" / "assets" / "personal-logo-photopea"
+CLEAN_NAME_TAG = SOURCE / "clean"
 FONT = ROOT / "site" / "assets" / "fonts" / "SourceSans3-VariableFont_wght.ttf"
 BOLD = ROOT / "site" / "assets" / "fonts" / "SourceSans3-Bold.ttf"
 
@@ -119,19 +120,28 @@ def layer_row(draw, y, name, visible=True, selected=False, lock=False):
 
 
 def step1():
-    source = Image.open(SOURCE / "01-create-canvas.jpg").convert("RGB")
     canvas = Image.new("RGB", (W, H), DARK)
-    dialog = source.crop((0, 0, 545, 845)).resize((1035, 960), Image.Resampling.LANCZOS)
-    canvas.paste(dialog, (0, 0))
     draw = ImageDraw.Draw(canvas)
-    draw.rounded_rectangle((475, 76, 1010, 140), radius=5, fill="#383838")
-    draw.text((495, 88), "PERSONAL LOGO", font=font(34, True), fill="white")
-    draw.rounded_rectangle((475, 147, 642, 218), radius=5, fill="#383838")
-    draw.text((496, 162), "1000", font=font(32, True), fill="white")
-    draw.rounded_rectangle((653, 147, 775, 218), radius=5, fill="#383838")
-    draw.text((669, 162), "1000", font=font(32, True), fill="white")
-    draw.rounded_rectangle((475, 278, 706, 328), radius=5, fill="#383838")
-    draw.text((493, 285), "Transparent", font=font(31, True), fill="white")
+    draw.rounded_rectangle((85, 45, 955, 930), radius=18, fill="#3b3b3b", outline="#606266", width=3)
+    draw.text((120, 75), "New Project", font=font(38, True), fill="white")
+    draw.line((85, 132, 955, 132), fill="#595b5f", width=3)
+
+    def field(label, value, box, value_size=32):
+        x1, y1, x2, y2 = box
+        draw.text((x1, y1 - 38), label, font=font(25), fill="#e1e4e8")
+        draw.rounded_rectangle(box, radius=7, fill="#2f3032", outline="#515358", width=2)
+        draw.text((x1 + 18, y1 + 13), value, font=font(value_size, True), fill="white")
+
+    field("Name", "PERSONAL LOGO", (120, 200, 915, 275), 34)
+    field("Width", "1000", (120, 350, 365, 425))
+    field("Height", "1000", (390, 350, 635, 425))
+    field("Units", "Pixels", (660, 350, 915, 425), 30)
+    field("Resolution", "300 Pixels / Inch", (120, 500, 500, 575), 29)
+    field("Background", "Transparent", (530, 500, 915, 575), 29)
+    field("Mode", "RGB · 8 bit", (120, 650, 500, 725), 29)
+    field("Profile", "sRGB", (530, 650, 915, 725), 29)
+    draw.rounded_rectangle((120, 810, 915, 875), radius=7, fill="#65676b")
+    draw.text((518, 843), "Create", font=font(30, True), fill="white", anchor="mm")
     callout_panel(canvas, 1, "Create a square file", "Choose File > New. A square master is easy to reuse and does not represent the physical name-tag size.", ["Width: 1000 px", "Height: 1000 px", "Background: Transparent"])
     return canvas
 
@@ -211,12 +221,29 @@ def step6():
     return canvas
 
 
+def crop_name_tag_screenshots():
+    """Remove Photopea's advertising rail without recreating the interface."""
+    CLEAN_NAME_TAG.mkdir(parents=True, exist_ok=True)
+    crops = {
+        "02-safe-margin-guides.jpg": (0, 0, 560, 862),
+        "03-place-transparent-pngs.jpg": (0, 0, 560, 862),
+        "04-add-readable-name.jpg": (0, 0, 560, 862),
+        "05-final-layout.jpg": (0, 0, 560, 862),
+        "06-export-png.jpg": (0, 0, 545, 862),
+    }
+    for filename, crop_box in crops.items():
+        source = Image.open(SOURCE / filename).convert("RGB")
+        cropped = source.crop(crop_box)
+        cropped.save(CLEAN_NAME_TAG / filename, quality=92, subsampling=0)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     builders = [step1, step2, step3, step4, step5, step6]
     for index, builder in enumerate(builders, start=1):
         image = builder()
         image.save(OUT / f"{index:02d}-photopea-personal-logo.jpg", quality=92, subsampling=0)
+    crop_name_tag_screenshots()
 
 
 if __name__ == "__main__":

@@ -18,6 +18,8 @@ This worksheet is an evolving classroom draft. Confirm measurements, machine set
 Create a clean engraving file for a **teacher-supplied, pre-cut 11 × 4 inch wood name-tag blank**. Place a transparent PNG logo, add a readable name, keep intentional space around every element, and export one full-size PNG for engraving. The example uses the Technology Commons emblem, Andrew's AA lettermark, and **NDRADE**, so the AA mark acts as the first A in **ANDRADE**.
 :::
 
+[Open the editable name-tag worksheet in Google Docs](https://docs.google.com/document/d/1ej7D3k48sxNlEwlkdqto5saUhyaC0wiCxPC9rybdVSQ/edit){.btn .btn-primary}
+
 ## Learning goals
 
 By the end, you can:
@@ -141,7 +143,7 @@ Add guides at either measurement:
 
 Use **View > New Guide** for each guide. Keep every visible part of the logo and name inside the cyan guide box. The resulting safe area is **3150 × 1050 px**.
 
-![Blank Photopea canvas with cyan guides 75 pixels from all four edges](../../assets/name-tag-photopea/02-safe-margin-guides.jpg){fig-alt="Photopea canvas with cyan vertical and horizontal guides defining a quarter-inch safe margin."}
+![Blank Photopea canvas with cyan guides 0.25 inches from all four edges](../../assets/name-tag-photopea/clean/02-safe-margin-guides.jpg){fig-alt="A cropped Photopea canvas without advertisements shows cyan vertical and horizontal guides defining a quarter-inch safe margin."}
 
 ### Step 3 - Place the transparent PNG logo
 
@@ -155,7 +157,7 @@ Use **View > New Guide** for each guide. Keep every visible part of the logo and
 
 Andrew's example places the Technology Commons emblem first, followed by the AA lettermark. Each file remains on its own layer, which makes revision easier.
 
-![Technology Commons emblem and AA lettermark placed on separate layers inside the margin guides](../../assets/name-tag-photopea/03-place-transparent-pngs.jpg){fig-alt="Photopea workspace showing the Technology Commons round emblem and AA lettermark placed near the left side of the 11 by 4 inch canvas."}
+![Technology Commons emblem and AA lettermark placed on separate layers inside the margin guides](../../assets/name-tag-photopea/clean/03-place-transparent-pngs.jpg){fig-alt="A cropped Photopea workspace without advertisements shows the Technology Commons round emblem and AA lettermark placed near the left side of the 11 by 4 inch canvas."}
 
 ### Step 4 - Add a readable name
 
@@ -169,7 +171,7 @@ Andrew's example places the Technology Commons emblem first, followed by the AA 
 
 For Andrew's example, type **NDRADE** after the AA lettermark. The mark supplies the first A, so the complete visual reads **ANDRADE**.
 
-![NDRADE typed in Source Sans 3 Bold at 420 pixels beside the AA lettermark](../../assets/name-tag-photopea/04-add-readable-name.jpg){fig-alt="Photopea workspace showing the first draft with the Technology Commons emblem, AA lettermark, and NDRADE text at 420 pixels. The next step enlarges and strengthens this draft."}
+![NDRADE typed in Source Sans 3 Bold beside the AA lettermark](../../assets/name-tag-photopea/clean/04-add-readable-name.jpg){fig-alt="A cropped Photopea workspace without advertisements shows the first draft with the Technology Commons emblem, AA lettermark, and NDRADE text. The next step enlarges and strengthens this draft."}
 
 ### What makes a font readable?
 
@@ -205,7 +207,7 @@ Good spacing means the empty areas look intentional:
 
 The first draft below uses the Technology Commons emblem as the context mark, the AA lettermark as the first letter, and NDRADE as the readable word. It is intentionally kept as a **critique draft**: the letters are too small for the strongest distance reading, and the thin AA mark competes with the heavier type.
 
-![First ANDRADE draft before the distance-readability improvements](../../assets/name-tag-photopea/05-final-layout.jpg){fig-alt="First Photopea draft with Technology Commons emblem, a thin AA lettermark, and NDRADE text. This draft is used for critique before making the name larger."}
+![First ANDRADE draft before the distance-readability improvements](../../assets/name-tag-photopea/clean/05-final-layout.jpg){fig-alt="A cropped Photopea workspace without advertisements shows the first draft with Technology Commons emblem, a thin AA lettermark, and NDRADE text."}
 
 ### Make three variations before choosing
 
@@ -227,7 +229,7 @@ This version reduces the emblem and gives **ANDRADE** most of the available widt
 
 ![Technology Commons emblem, thick AA lettermark, and large NDRADE text](../../assets/name-tag-photopea/10-variation-3-aa-ndrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem, a thickened AA lettermark, and large NDRADE text that reads together as ANDRADE."}
 
-This version keeps the personal idea. The Commons emblem and **NDRADE** establish the main centreline. The AA mark uses an outside stroke so its weight matches the letters, then sits slightly lower because its broad top makes it look visually high when it is centred mathematically. The AA mark and NDRADE read as one word without overlapping.
+This version keeps the personal idea. The AA mark uses an outside stroke so its weight matches the letters. Its bottom aligns with the bottom of **NDRADE**, while its wide top rises above the word like an umbrella. The AA mark and NDRADE read as one word without overlapping.
 
 ::: {.callout-tip title="Recommended worked example"}
 Use **Variation 3** for the detailed Photopea walkthrough because it teaches the most: transparent PNG placement, visual substitution, type matching, stroke weight, grouping, and distance testing. Keep Variations 1 and 2 as comparison examples.
@@ -243,13 +245,13 @@ Starting from the first-draft screenshots above:
 4. Keep the Technology Commons emblem near **1.6 inches high**.
 5. Keep the AA mark near **1.9 inches high** and lock its aspect ratio.
 6. Move NDRADE close enough that the mark reads as its first A. Do not leave a full-letter gap.
-7. Align the emblem and name to one horizontal centreline. Then lower the top-heavy AA mark about **48 pixels (0.16 inch)** until the full word looks balanced.
+7. Align the **bottom of the AA mark** with the bottom of the letters in **NDRADE**. The AA canopy should rise above the name like an umbrella while its stem ends on the same baseline.
 8. Centre the complete group vertically and keep every element inside the **0.25 inch** safe margin.
 9. Hide the guides and perform the two-second reading test from about **2 metres** away.
 
-![Optical alignment check for Variation 3](../../assets/name-tag-photopea/11-variation-3-alignment-check.png){fig-alt="The Technology Commons emblem and NDRADE text share a horizontal centreline while the top-heavy AA lettermark sits slightly lower for optical balance, all inside a quarter-inch safe margin."}
+![Baseline alignment check for Variation 3](../../assets/name-tag-photopea/11-variation-3-alignment-check.png){fig-alt="The bottom of the AA lettermark aligns with the bottom of NDRADE, so its broad top rises above the word like an umbrella, all inside a quarter-inch safe margin."}
 
-The cyan line is a temporary guide through the emblem and name. The AA mark deliberately sits a little below it. This is **optical alignment**: judge what looks balanced, not only what measures as centred. Hide the guide before export.
+The cyan box marks the 0.25 inch safe margin. Use a temporary horizontal guide at the bottom of **NDRADE** to align the AA mark to the same baseline. Hide all guides before export.
 
 ### Student design files
 
@@ -273,7 +275,7 @@ When students make their own version, they should replace the example name and l
 6. Click **Save**.
 7. Reopen the exported PNG and check that nothing moved, cropped, or gained a white box.
 
-![Photopea Save for Web dialog showing PNG at 3300 by 1200 pixels](../../assets/name-tag-photopea/06-export-png.jpg){fig-alt="Photopea Save for Web dialog with PNG selected, width 3300 pixels, height 1200 pixels, and a clear engraving filename."}
+![Photopea Save for Web dialog for the 11 by 4 inch name tag](../../assets/name-tag-photopea/clean/06-export-png.jpg){fig-alt="A cropped Photopea Save for Web dialog without advertisements shows PNG selected and a clear engraving filename."}
 
 Photopea's [Open and Save guide](https://www.photopea.com/learn/opening-saving) explains the difference between saving an editable PSD and exporting a delivery format.
 
