@@ -9,6 +9,14 @@ select their sidebar in `_metadata.yml`. Link to source `.qmd` files; Quarto
 resolves the output routes. The inherited `bs-` CSS classes remain the shared
 presentation system; Commons styling lives in `commons-overrides.css`.
 
+## Daily slide decks
+
+Follow the canonical [Technology Commons Daily Slide Deck SOP](https://docs.google.com/document/d/1WNEgA-xn0oCiB0sp5rv67_SmsFuHpgxotrgjdXWIwB8/edit)
+when creating decks or publishing their links. A Fun Day closes the current
+instructional week. The first daily deck after a Fun Day starts a new week, so
+use or create the next `Week N` folder and list that day under a new `Week N`
+heading on the course slides page.
+
 Lore lists `site/lore/*.qmd`. Give stories a title, description, actual date,
 categories, and tags. Follow existing article metadata. Store images under
 `site/assets/lore` and preserve source attribution.
