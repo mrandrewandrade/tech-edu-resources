@@ -21,7 +21,7 @@ Work through the chapters in order. Each chapter connects mathematics to circuit
 **Learning goal:** Assess current algebra, units, graphing, estimation, calculator, and technical-writing skills, then establish a consistent engineering notebook format.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
-Engineering solutions must show the model, assumptions, equations, units, checks, and revisions—not only a final number. The diagnostic identifies skills to review before the analytical work begins.
+Engineering solutions must show the model, assumptions, equations, units, checks, and revisions, not only a final number. The diagnostic identifies skills to review before the analytical work begins.
 :::
 
 **Deliverable:** Unmarked diagnostic, correction record, learning targets, and notebook setup.
@@ -35,7 +35,7 @@ Units and estimates expose impossible calculator results. These habits transfer 
 :::
 
 **Start with:** [Number Systems, Measurement, Units, and Calculator Skills](../01-number-systems/index.qmd)
-**Deliverable:** Assignment 1—quantity and unit audit.
+**Deliverable:** Assignment 1: quantity and unit audit.
 **References:** [[1, Ch. 0]](../../references.qmd#ref-grob2016) [[27, Ch. 1]](../../references.qmd#ref-cengel2008) [[28, Chs. 1, 3]](../../references.qmd#ref-chapra2010)
 
 ### Chapter 2: Algebraic electrical models
@@ -47,7 +47,7 @@ Engineers must build and manipulate models rather than only substitute numbers i
 :::
 
 **Start with:** [Charge, Voltage, and Current](../02-basic-electronics/01-charge-voltage-current.qmd), [Closed, Open, and Short Circuits](../02-basic-electronics/02-circuits-opens-shorts.qmd), and [Ohm's Law](../02-basic-electronics/03-ohms-law.qmd).
-**Deliverable:** Assignment 2—resistive design brief, after the [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf).
+**Deliverable:** Assignment 2: resistive design brief, after the [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf).
 **Reference:** [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016)
 
 ### Chapter 3: Series and parallel networks
@@ -58,7 +58,7 @@ Engineers must build and manipulate models rather than only substitute numbers i
 Circuit rules are examples of conservation and equivalent modelling. Independent checks make a solution defensible.
 :::
 
-**Deliverable:** Assignment 3—series-parallel design proof.
+**Deliverable:** Assignment 3: series-parallel design proof.
 **Reference:** [[1, Chs. 4–6]](../../references.qmd#ref-grob2016)
 
 ### Chapter 4: Coupled equations and Kirchhoff's laws
@@ -69,7 +69,7 @@ Circuit rules are examples of conservation and equivalent modelling. Independent
 Coupled equations appear in circuits, structures, processes, controls, and data models. Residual and power checks show whether the complete model is consistent.
 :::
 
-**Deliverable:** Assignment 4—branch-current system solved by hand and checked with software.
+**Deliverable:** Assignment 4: branch-current system solved by hand and checked with software.
 **References:** [[1, Chs. 7, 9]](../../references.qmd#ref-grob2016) [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
 
 ### Chapter 5: Equivalent models and optimization
@@ -80,7 +80,7 @@ Coupled equations appear in circuits, structures, processes, controls, and data 
 Engineering decisions rarely have one perfect answer. Maximum power, maximum efficiency, minimum cost, and lowest temperature may require different designs.
 :::
 
-**Deliverable:** Assignment 5—source and load optimization memo.
+**Deliverable:** Assignment 5: source and load optimization memo.
 **References:** [[1, Ch. 10]](../../references.qmd#ref-grob2016) [[28, Chs. 13–16]](../../references.qmd#ref-chapra2010)
 
 ### Chapter 6: Power and energy balances
@@ -92,7 +92,7 @@ Energy balances connect electronics to computer, mechanical, chemical, and envir
 :::
 
 **Start with:** [Power and Energy](../02-basic-electronics/04-power-energy.qmd) and the [Computer Power and Parts mission](../computer-systems/computer-power-parts.qmd).
-**Deliverables:** Assignment 6—energy audit; Lab 1—supervised low-voltage thermal balance.
+**Deliverables:** Assignment 6: energy audit; Lab 1: supervised low-voltage thermal balance.
 **References:** [[1, Chs. 1, 12]](../../references.qmd#ref-grob2016) [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)
 
 ::: {.callout-important title="Safety boundary"}
@@ -107,7 +107,7 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 Measurements become useful evidence only when their limits are understood. Calibration and uncertainty affect every engineering discipline.
 :::
 
-**Deliverable:** Lab 2—sensor calibration and model check.
+**Deliverable:** Lab 2: sensor calibration and model check.
 **References:** [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3, 4, 17, 20]](../../references.qmd#ref-chapra2010)
 
 ### Chapter 8: Transient and step-by-step systems
@@ -118,7 +118,7 @@ Measurements become useful evidence only when their limits are understood. Calib
 Real systems take time to charge, heat, cool, accelerate, and settle. Numerical stepping builds intuition for later differential-equation models.
 :::
 
-**Deliverable:** Assignment 7—resistor-capacitor or thermal transient model.
+**Deliverable:** Assignment 7: resistor-capacitor or thermal transient model.
 **References:** [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010)
 
 ### Chapter 9: Logic, algorithms, and state
@@ -130,7 +130,7 @@ Programming makes a model repeatable and testable. Truth tables and state machin
 :::
 
 **Start with:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd) and the [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf).
-**Deliverables:** Assignment 8—engineering calculation program; Assignment 9—safety state machine.
+**Deliverables:** Assignment 8: engineering calculation program; Assignment 9: safety state machine.
 **Reference:** [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
 
 ### Chapter 10: Electromechanical systems
@@ -141,7 +141,7 @@ Programming makes a model repeatable and testable. Truth tables and state machin
 Motors, pumps, fans, and actuators join electrical and mechanical systems. Current, temperature, speed, load, and efficiency cannot all be optimized independently.
 :::
 
-**Deliverable:** Lab 3—actuator characterization.
+**Deliverable:** Lab 3: actuator characterization.
 **Reference:** [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
 
 ### Chapter 11: Feedback, models, and design decisions
@@ -153,7 +153,7 @@ Feedback responds to disturbances but introduces trade-offs involving speed, ove
 :::
 
 **Start with:** [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd).
-**Deliverable:** Assignment 10—control-method comparison, using the [Control Methods Comparison handout](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf).
+**Deliverable:** Assignment 10: control-method comparison, using the [Control Methods Comparison handout](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf).
 **References:** [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010)
 
 ### Chapter 12: Integrated engineering project
@@ -165,7 +165,7 @@ The project brings mathematical reasoning, construction, safety, data, programmi
 :::
 
 **Recommended project:** Instrumented low-voltage thermal process controller. Alternatives may include a motor or pump test stand, battery and thermal monitor, controlled fan system, tank-level simulator, or renewable-energy demonstrator.
-**Deliverable:** Project 1—requirements, model, schematic, build or approved simulation, code, validation, revision, and concise technical report.
+**Deliverable:** Project 1: requirements, model, schematic, build or approved simulation, code, validation, revision, and concise technical report.
 
 ## Core references
 
