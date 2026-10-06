@@ -1,304 +1,379 @@
 ---
 title: "Systems Design & Fabrication Track"
-subtitle: "A broad shop pathway from a real need to a safe, tested, multi-process build"
-description: "A work-in-progress Ontario technology education pathway joining the N.I.C.E. design process with wood, sheet metal, welding, machining, CNC, laser cutting, 3D printing, and plasma cutting."
+subtitle: "A practical reference from a real need to a documented, tested, multi-process build"
+description: "A broad design and fabrication reference covering technical drawings, standards, GD&T, fits, machine design, fastening, wood, metal, welding, machining, CNC, laser cutting, 3D printing, and plasma cutting."
 toc: true
 toc-depth: 3
 body-classes: "ter-design-fabrication bs-learn-article"
 execute: {enabled: false}
 ---
 
-::: {.callout-note title="Why the name Systems Design & Fabrication?"}
-**Systems** is broader than one material, machine, or course code. Students decide how parts, materials, processes, fasteners, controls, people, and safety requirements work together. **Design & Fabrication** keeps the pathway practical: every major decision must become a drawing, setup, prototype, test, inspection, or revision.
+::: {.callout-important title="School board and course safety information"}
+This public website explains design and fabrication concepts. Machine-specific safety instruction, operating procedures, assessments, and authorization are intentionally kept outside the website. Follow your school board's safety guidelines and the course-specific instruction provided by your teacher. Students in Mr. Andrade's classes can find that information in Google Classroom. This page is not permission or authorization to operate equipment.
 :::
 
-::: {.callout-warning title="Work in progress"}
-This page is an evolving curriculum roadmap, not a machine-operating procedure. A listed machine is not automatically available to every student. Before any operation, the teacher must confirm the current manufacturer manual, local safe-operating procedure, guarding, ventilation or dust collection, material approval, supervision, and student authorization. The CNC plasma system is explicitly marked **planned / to be built**.
+::: {.callout-note title="Why the name Systems Design & Fabrication?"}
+**Systems** is broader than one material, machine, or course code. Designers decide how parts, materials, processes, fasteners, mechanisms, controls, people, and environments work together. **Design & Fabrication** keeps the pathway practical: important decisions become drawings, calculations, prototypes, parts, inspections, tests, and revisions.
 :::
 
 ## Why this track
 
-The existing [Engineering Preparation Track](../../tej3-4/engineering-preparation-track/index.qmd) develops mathematical modelling through electrical and control systems. This parallel track develops **physical design judgement** through shop systems: measure a real need, choose a suitable material and process, plan the sequence, make parts safely, inspect them, assemble the system, and improve the result.
+The [Engineering Preparation Track](../../tej3-4/engineering-preparation-track/index.qmd) develops mathematical modelling through electrical and control systems. This parallel reference develops **physical design judgement** through fabrication systems: understand a need, investigate precedents, communicate a proposal, select materials and processes, make and inspect parts, assemble the system, evaluate evidence, and improve the design.
 
-The track is intended as a reusable spine for Ontario broad-based technological education. Its strongest connections are **TIJ/TAS, TDJ, TMJ, TCJ, TTJ, TEJ, TGJ, and THJ**. A teacher can select a shorter process sampler, a material-specific route, or the complete multi-process pathway.
+The strongest Ontario course connections are **TIJ/TAS, TDJ, TMJ, TCJ, TTJ, TEJ, TGJ, and THJ**, but the technical knowledge is useful to anyone learning how designed objects are specified and made. Select the sections that match the problem, materials, available equipment, and required accuracy.
 
-TXJ, TFJ, and TPJ can still use individual design, communication, organization, or accessibility projects, but they are not the main audience for the machine-intensive progression.
+Every project returns to six questions:
 
-Every activity returns to six questions:
-
-1. What need are we meeting, and who experiences it?
-2. What functions must the complete system perform?
-3. Which material, process, and joining method best fit each function?
-4. What hazards and authorization gates apply before work begins?
-5. How will we measure quality, fit, performance, and failure?
-6. What evidence justifies the next revision?
+1. What is the situation, who is affected, and what is actually needed?
+2. What do existing products, users, standards, and tests teach us?
+3. What is the simplest prototype that can sell the idea clearly and produce useful feedback?
+4. What materials, mechanisms, fasteners, fits, and processes make the system work?
+5. What do measurements, tests, and synthesized feedback reveal about the proposal?
+6. Should we revise the solution, the problem statement, the stated needs, or all three?
 
 <div class="ter-process-flow">
   <span>Need + criteria</span>
-  <span>Design + plan</span>
-  <span>Make + assemble</span>
-  <span>Inspect + test</span>
-  <span>Revise + explain</span>
+  <span>Investigate</span>
+  <span>Create + pitch</span>
+  <span>Evaluate evidence</span>
+  <span>Re-question + revise</span>
 </div>
 
-## Learning goals and why they matter
+## Learning goals
 
 | Learning goal | Why it matters |
 |---|---|
-| Use the [N.I.C.E. Design Process](../01-nice-design-process/index.qmd) to define a need, investigate precedents, generate alternatives, communicate a plan, and iterate from evidence. | A project should begin with a problem and criteria, not with a favourite machine. |
-| Read and create sketches, orthographic views, dimensions, tolerances, cut lists, process plans, and CAD/CAM files. | Other people must be able to understand, check, make, and revise the work. |
-| Measure with rules, squares, callipers, micrometers, gauges, and reference surfaces appropriate to the required accuracy. | Quality cannot be judged by appearance alone. |
-| Compare material properties, stock form, waste, cost, finish, repairability, and environmental impact. | The same geometry may succeed or fail depending on material and process. |
-| Select and sequence cutting, shaping, joining, finishing, and inspection operations. | A good part made in the wrong order may be impossible to assemble or verify. |
-| Use workholding, guarding, extraction, PPE, housekeeping, and stop-work decisions as parts of the design. | Safety is a system requirement, not a checklist added after the design. |
-| Distinguish manual skill from CNC repeatability and explain what each still requires from the operator. | Automation changes the work; it does not remove setup, verification, or responsibility. |
-| Inspect a part, record deviations, test the assembly, and revise the source drawing or model. | The editable design must learn from the physical result. |
-| Integrate wood, metal, sheet, printed, laser-cut, machined, and controlled parts when the function justifies them. | Real products use several processes because each process has different strengths. |
+| Use the [N.I.C.E. Design Process](../01-nice-design-process/index.qmd) to define a need, investigate precedents, create a minimal pitchable or viable product, pitch it, collect feedback, evaluate, and iterate. | A project should begin with a situation and evidence, not a favourite machine. |
+| Read and create sketches, orthographic views, section views, assembly drawings, dimensions, tolerances, and revision records. | Other people must be able to interpret, make, inspect, assemble, and revise the work. |
+| Use measurement, limits, fits, datums, and introductory GD&T to express function. | Precision is useful only when it is connected to how a part must fit and work. |
+| Explain loads, motion, interfaces, mechanisms, maintenance, and failure modes in a machine or product. | A collection of parts becomes a system only when the relationships are understood. |
+| Select materials, stock forms, fasteners, joining methods, and fabrication processes using stated criteria. | The same geometry can succeed or fail depending on material and process. |
+| Plan the order of cutting, shaping, drilling, threading, joining, finishing, and inspection. | A good part made in the wrong order may be difficult to measure, assemble, or repair. |
+| Compare manual processes with CNC, laser, additive, and other digital methods. | Automation changes setup and repeatability, but does not remove design judgement. |
+| Inspect a part, record deviations, test the assembly, synthesize feedback, and revise the editable source. | The next version should contain what was learned from the physical result. |
 
-## Course fit
+## Course connections
 
-| Technology area | Strongest track contribution | Example system context |
+| Technology area | Strongest contribution | Example system context |
 |---|---|---|
-| **TIJ / TAS** | supervised sampling, measurement, design communication, safe shop habits | compact organizer or display using two processes |
-| **TDJ** | requirements, human factors, CAD, modelling, prototyping, testing, iteration | adjustable workstation accessory or accessible interface |
-| **TMJ** | production planning, sheet metal, welding, machining, CNC, inspection | fixture, small mechanism, bracket system, or production aid |
-| **TCJ** | wood preparation, layout, joinery, assemblies, finishes, installation | modular storage, stand, cabinet component, or site-use jig |
-| **TTJ** | metal cutting, welding, machining, service access, fixtures | tool holder, component stand, inspection aid, or service cart module |
-| **TEJ** | enclosures, panels, cable management, sensors, controls, CNC integration | instrumented enclosure, test fixture, or controlled mechanism |
-| **TGJ** | graphics, signage, exhibits, laser/CNC engraving, documentation | branded display, wayfinding system, prop, or exhibit assembly |
-| **THJ** | outdoor material choices, repair, field use, sustainability | propagation station, durable label system, or garden tool module |
+| **TIJ / TAS** | measurement, design communication, materials, processes, and system thinking | compact organizer or display using two processes |
+| **TDJ** | requirements, human factors, CAD, modelling, technical drawings, testing, and iteration | adjustable workstation accessory or accessible interface |
+| **TMJ** | production planning, sheet metal, welding, machining, CNC, inspection, and quality | fixture, mechanism, bracket system, or production aid |
+| **TCJ** | wood preparation, layout, joinery, fastening, assemblies, finishes, and installation | modular storage, stand, cabinet component, or site-use jig |
+| **TTJ** | metal cutting, welding, machining, fastening, service access, and fixtures | component stand, inspection aid, tool control, or service cart module |
+| **TEJ** | enclosures, panels, cable management, sensors, controls, and CNC integration | instrumented enclosure, test fixture, or controlled mechanism |
+| **TGJ** | graphics, signage, exhibits, laser/CNC engraving, and documentation | branded display, wayfinding system, prop, or exhibit assembly |
+| **THJ** | outdoor materials, fastening, repair, field use, and sustainability | propagation station, durable label system, or garden tool module |
 
-## Pathway structure
+## Reference map
 
-The complete roadmap is approximately **90 to 140 hours**, depending on prior experience, available equipment, and the depth of the culminating project. Chapters 0 through 3 form the common core. Chapters 4 through 13 can be selected to match a course and machine access. Chapters 14 and 15 integrate several processes.
+The sections form a connected knowledge base. They do not prescribe a course length or require every process in one project.
 
-| Chapter | Focus and equipment | Required evidence | Current curriculum status |
-|---|---|---|---|
-| 0 | N.I.C.E., shop systems, authorization, notebook | design brief, system map, personal authorization record | linked foundation available |
-| 1 | measurement, layout, drawings, tolerances, inspection | dimensioned drawing, inspection plan, measurement study | roadmap to develop |
-| 2 | materials, process selection, stock and sequence | material/process decision matrix, cut list, process plan | roadmap to develop |
-| 3 | hand tools, drilling, deburring, fastening and finishing | accurately fitted hand-made assembly | roadmap to develop |
-| 4 | wood preparation: jointer, planer, band saw, sanding | prepared stock, reference faces, thickness and finish record | roadmap to develop |
-| 5 | sheet metal: layout, cutting, bending, rolling and fastening | flat pattern, formed part, bend/fit inspection | roadmap to develop |
-| 6 | metal cutting: horizontal/vertical band saw, cold saw, abrasive cut-off saw and hand saws | saw-selection rationale, secured cut, edge-preparation check | roadmap to develop |
-| 7 | welding: resistance spot, MIG/GMAW, stick/SMAW and TIG/GTAW | process comparison, practice coupons, joint inspection | roadmap to develop |
-| 8 | manual milling and drilling | squared workpiece, hole/pocket/slot inspection record | roadmap to develop |
-| 9 | manual lathe | faced and turned part with measured diameters and lengths | roadmap to develop |
-| 10 | surface grinding and precision finishing | approved setup, flatness/thickness/finish evidence | advanced roadmap to develop |
-| 11 | CAD/CAM, CNC mill, CNC router and engraving | setup sheet, simulation, work-offset proof, inspected part | [CNC scope is planned](../05-cnc-digital-machining/index.qmd) |
-| 12 | laser cutting/engraving and 3D printing | calibrated laser assembly and fitted printed component | [laser](../03-laser-cutting/index.qmd) and [3D printing](../04-3d-printing/index.qmd) lessons available |
-| 13 | manual plasma cutting; CNC plasma workflow | cut-quality study; CNC simulation and machine acceptance plan | manual process to develop; **CNC plasma planned / to be built** |
-| 14 | production system and quality control | repeatable batch, jig/fixture, inspection data, revision | roadmap to develop |
-| 15 | integrated systems capstone | complete N.I.C.E. portfolio and multi-process build | capstone framework defined here |
-
-## Chapter specifications
-
-### Chapter 0: N.I.C.E., shop systems, and authorization
-
-Begin with the complete [N.I.C.E. Design Process](../01-nice-design-process/index.qmd). Students map the shop as a system: people, material flow, clean and hot-work zones, stored energy, extraction, machine envelopes, inspection areas, emergency stops, waste streams, and communication.
-
-Each student maintains a **machine passport**. Authorization is machine-specific and can be paused or withdrawn. A written quiz alone is not authorization; the student must demonstrate the local pre-use check, setup boundaries, normal operation, stop procedure, cleanup, and response to an abnormal condition.
-
-### Chapter 1: Measurement, layout, drawings, and inspection
-
-Move from rough measurement to fit-for-purpose accuracy. Students compare a rule, tape, combination square, calliper, micrometer, and fixed gauge, then choose the least complex instrument that can verify the requirement.
-
-Required evidence includes:
-
-- a freehand concept sketch and dimensioned orthographic drawing;
-- datum or reference-surface choices;
-- nominal dimensions and tolerances that match the function;
-- an inspection plan written before fabrication;
-- measured results recorded without hiding failed attempts;
-- a drawing or model revision when the physical result exposes an error.
-
-### Chapter 2: Materials and process planning
-
-Students compare wood species and sheet goods, ferrous and non-ferrous metals, sheet thicknesses, plastics, and approved additive-manufacturing materials. The decision must consider function, stock form, machinability, weldability, grain direction, corrosion, heat, finish, cost, waste, reuse, and the available machines.
-
-The process plan identifies stock size, quantity, setup order, workholding, tools, joining sequence, inspection points, finishing, and material separation. Students should explain why one operation must happen before another.
-
-### Chapter 3: Hand fabrication, drilling, fastening, and finishing
-
-Before advanced machines, students build accuracy with marking tools, clamps, files, deburring tools, hand saws, drills, taps, dies, countersinks, rivets, threaded fasteners, adhesives, and approved finishes. The project should include at least one removable joint and one permanent or semi-permanent joint.
-
-The evidence is a small assembly that fits without forced alignment, has safe edges, can be serviced as intended, and matches its drawing closely enough for the stated use.
-
-### Chapter 4: Wood preparation and shaping
-
-Use the jointer to establish a reference face and edge, the planer to create a consistent thickness, the band saw or approved saw for shaping, and sanding equipment for controlled surface preparation. Students track grain direction, stock defects, minimum safe stock size, support length, push-block requirements, dust collection, and the difference between dimensioning and finishing.
-
-The sequence culminates in a square, stable wood component for a later hybrid assembly. The student records initial and final dimensions and explains where material was removed at each step. The [CCOHS jointer and planer guidance](https://www.ccohs.ca/oshanswers/safety_haz/woodwork/planer.html) is a background reference; the shop's own procedure remains authoritative.
-
-### Chapter 5: Sheet-metal systems
-
-Start with paper and card flat patterns before using metal. Students learn bend allowance as a measured shop result, not a magic universal number. Suitable operations include layout, shearing or sawing, notching, punching or drilling, deburring, bending, rolling when available, riveting, threaded inserts, screws, tabs, hems, and spot welds.
-
-The chapter project is a tray, guard, bracket, enclosure, panel, or duct-like prototype. Required evidence includes the flat pattern, bend sequence, grain or rolling direction when relevant, safe-edge strategy, formed dimensions, fastening plan, and a fit check with the mating parts.
-
-### Chapter 6: Cutting metal
-
-Compare the horizontal band saw, vertical band saw where approved for metal, powered hacksaw, cold saw, abrasive cut-off or chop saw, and manual hacksaw. Students select a method based on stock shape, material, section thickness, required accuracy, heat, burr, spark production, finish, speed, and available workholding.
-
-Every cut requires supported stock, a secured workpiece, a suitable blade or wheel, a clear drop zone, and an inspection after deburring. Abrasive cutting is treated as spark-producing hot work. CCOHS distinguishes [cold metal saws](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/metalsaws_cold.html) from [hot abrasive cut-off saws](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/metalsaws_hot.html); students must be able to explain the difference.
-
-### Chapter 7: Welding and thermal joining
-
-Teach welding as a set of different processes, not one interchangeable skill:
-
-| Process | Full name | Best introductory comparison |
+| Section | Technical focus | Useful evidence |
 |---|---|---|
-| **Spot** | resistance spot welding, RSW | rapid overlapping sheet-metal joints; electrode access and surface condition matter |
-| **MIG** | gas metal arc welding, GMAW | productive wire-fed joining; travel, stickout, fit-up, shielding and heat input matter |
-| **Arc / stick** | shielded metal arc welding, SMAW | portable process with consumable electrodes; arc length, angle, slag and restart quality matter |
-| **TIG** | gas tungsten arc welding, GTAW | precise heat and filler control; cleanliness, coordination and shielding matter |
+| 0 | N.I.C.E. design cycle and system definition | need statement, criteria, minimal pitchable or viable product, pitch, feedback synthesis, revision |
+| 1 | technical drawings, orthographic projection, sections, drawing standards | drawing set, title block, revision, assembly communication |
+| 2 | measurement, tolerances, GD&T, surface finish, and fits | functional dimensions, datum scheme, fit choice, inspection plan |
+| 3 | general machine and mechanism design | system diagram, load path, interfaces, component selection |
+| 4 | materials and process planning | material/process matrix, stock list, operation sequence |
+| 5 | fasteners, threads, anchors, and assembly | joint selection, fastener schedule, assembly drawing |
+| 6 | hand fabrication, holes, threads, and finishing | hand-made part, hole features, thread and finish callouts |
+| 7 | wood preparation and shaping | prepared stock, reference faces, dimensions, surface record |
+| 8 | sheet-metal systems | flat pattern, bend sequence, formed part, assembly check |
+| 9 | metal cutting and stock preparation | process comparison, cut plan, finished stock inspection |
+| 10 | resistance spot welding | lap-joint coupon, weld pattern, joint evaluation |
+| 11 | MIG / GMAW | bead and joint coupons, parameter record, joint evaluation |
+| 12 | stick / SMAW | bead and joint coupons, electrode comparison, joint evaluation |
+| 13 | TIG / GTAW | bead and joint coupons, filler/autogenous comparison, joint evaluation |
+| 14 | manual milling | squared block, faces, steps, slots, pockets, and hole features |
+| 15 | manual lathe | faced, turned, drilled, bored, threaded, or knurled part |
+| 16 | surface grinding and precision finishing | flatness, thickness, finish, and measurement evidence |
+| 17 | CAD/CAM, CNC milling, routing, and engraving | source model, setup sheet, toolpaths, first-part inspection |
+| 18 | laser cutting, engraving, and 3D printing | calibrated parts, fitted interfaces, editable source, revision |
+| 19 | manual and CNC plasma concepts | cut-quality study, nested drawing, CAM or simulation evidence |
+| 20 | production systems and integrated capstone | repeatable parts, quality record, assembled system, revision |
 
-Progress from identification and dry positioning to tack practice, beads, simple joints, destructive or bend testing of coupons, and finally an approved project joint. Students compare penetration, distortion, spatter, slag, appearance, speed, access, consumables, ventilation, and suitability. A visually smooth bead is not proof of a sound joint.
+## Technical foundations
 
-::: {.callout-important title="Hot-work boundary"}
-Welding and plasma work require the designated hot-work area, verified fume extraction, screens, correct eye/face/skin protection, combustible control, cylinder and lead management, and the local fire-watch procedure. Do not weld unknown, coated, painted, plated, pressurized, sealed, or contaminated material. CCOHS identifies fumes, gases, radiation, burns, electric shock, fire, and explosion among the major hazards, and states that local exhaust ventilation is the preferred fume-control method. See the [welding overview](https://www.ccohs.ca/oshanswers/safety_haz/welding/overview.html), [ventilation guidance](https://www.ccohs.ca/oshanswers/safety_haz/welding/ventilation.html), and [hot-work guidance](https://www.ccohs.ca/oshanswers/safety_haz/welding/hotwork.html).
-:::
+### 0. N.I.C.E.: define, create, communicate, and evaluate
 
-### Chapter 8: Manual milling
+Begin with the complete [N.I.C.E. Design Process](../01-nice-design-process/index.qmd).
 
-Students identify machine axes, spindle direction, cutting-tool geometry, workholding, parallels, edge finding, datums, speeds and feeds, conventional and climb cutting boundaries, and safe chip removal. The first project should be a simple squared block or plate with an inspected hole pattern, slot, step, or pocket.
+- **Needs and necessities:** describe the situation, the people affected, what must change, and the difference between a real need and a preferred feature.
+- **Investigate and inquire:** study users, precedents, failures, materials, mechanisms, standards, constraints, and unanswered questions.
+- **Create and communicate:** make the simplest version that can sell and test the proposal. Use a **minimal pitchable product** when the main goal is to make the idea understandable and persuasive, or a **minimal viable product** when a working function must be demonstrated. Minimal means the least complexity needed for the pitch or test, not a physically smaller object. Pitch the idea, ask focused questions, and collect feedback without defending the first version.
+- **Evaluate:** group and synthesize the feedback, compare it with the needs and criteria, re-question the situation and problem statement, decide whether the proposal meets the needs, and identify the next revision.
 
-The setup sheet must show the work coordinate origin, stock allowance, tool sequence, target dimensions, inspection stages, and a sketch of the secured work. Measurement and adjustment happen only with the cutter stopped. The [CCOHS milling-machine guidance](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/millingmachines.html) supports the local training.
+The cycle may return to any earlier stage. Evaluation can reveal that the design is weak, but it can also reveal that the original problem or assumed need was framed incorrectly.
 
-### Chapter 9: Manual lathe
+### 1. Technical drawings, orthographic projection, and standards
 
-The lathe sequence introduces centreline, workholding, stick-out, tool height, spindle speed, feed, facing, straight turning, chamfering, drilling, parting only when locally approved, and inspection between operations. Students must understand why chuck keys, loose clothing, hair, jewellery, gloves near rotation, unsupported stock, and reaching across rotating work are unacceptable.
+A technical drawing is a controlled description of an object, not simply a picture. The drawing should communicate enough information for another person to manufacture and inspect the part without guessing.
 
-The project is a simple spacer, bushing, handle component, alignment pin, or other non-critical part. Students submit a dimensioned turning plan and record measured diameters and lengths. CCOHS requires training, secure work, accessible stop controls, and removal of entanglement hazards in its [lathe guidance](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/lathes.html).
+Core drawing knowledge includes:
 
-### Chapter 10: Surface grinding and precision finishing
+- freehand design sketches, isometric or pictorial views, and multiview orthographic projection;
+- front, top, right-side, auxiliary, section, detail, assembly, and exploded views;
+- visible, hidden, centre, cutting-plane, section, dimension, extension, and leader lines;
+- title blocks, drawing numbers, part names, materials, units, scale, projection method, general tolerances, revisions, and approvals;
+- dimension placement that describes function without duplication, ambiguity, or hidden arithmetic;
+- part drawings for manufacturing and assembly drawings for relationships, item numbers, quantities, and orientation.
 
-Treat the surface grinder as an advanced precision process. Students first learn wheel identification, inspection, dressing concepts, magnetic-chuck cleanliness, work suitability, spark-out, heat control, burr removal, and measurement away from the moving wheel. Only teacher-approved magnetic workpieces and local setups are used.
+The drawing must identify the governing convention. Common references include the [ASME Y14 family of product-definition standards](https://www.asme.org/codes-standards/y14-standards) and the ISO Geometrical Product Specifications system. Do not combine symbols or assumptions from different systems without making the chosen convention explicit.
 
-Evidence includes a pre-approved setup drawing, starting and final measurements, finish comparison, and explanation of heat or flatness errors. General abrasive-wheel principles, including training, compatible wheels, guards, inspection, speed limits, and controlled startup, are reinforced through [CCOHS abrasive-wheel guidance](https://www.ccohs.ca/oshanswers/safety_haz/abrasive_wheels/safeuse2.html).
+### 2. Measurement, tolerances, GD&T, surface finish, and fits
 
-### Chapter 11: CAD/CAM, CNC milling, routing, and engraving
+Students should distinguish **nominal size**, **actual size**, **limits**, **deviation**, **tolerance**, **allowance**, **accuracy**, **precision**, and **resolution**. Use a rule, square, calliper, micrometer, height measurement, bore measurement, or fixed gauge according to the feature and required uncertainty.
 
-CNC begins with the same design and inspection discipline as manual machining. Students define stock, fixtures, work coordinates, tool numbers, tool lengths, clearances, operations, stepdowns, tabs or holding strategy, and inspection points. They simulate before running and verify the first motion through the local dry-run or single-block procedure.
+Dimensioning and tolerance topics include:
 
-The chapter can use:
+- unilateral, bilateral, limit, general, and reference dimensions;
+- datum features and datum reference frames;
+- size, location, orientation, form, profile, and runout requirements;
+- surface texture or finish where it affects sealing, friction, appearance, wear, or measurement;
+- tolerance stack-up across mating parts and assemblies;
+- inspection planning before fabrication begins.
 
-- **CNC mill** for accurate holes, pockets, profiles, and machined features;
-- **CNC router** for sheet goods, wood, plastics, fixtures, and larger 2D/2.5D parts;
-- **CNC engraving** for labels, scales, panels, signs, and traceable part identification.
+Introductory GD&T should connect each control to function. Typical concepts include straightness, flatness, circularity, cylindricity, parallelism, perpendicularity, angularity, position, profile, circular runout, and total runout. [ASME Y14.5](https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing) and [ISO 1101](https://www.iso.org/standard/66777.html) define formal systems; use the standard specified by the drawing or organization.
 
-Students submit the editable CAD file, CAM setup, setup sheet, tool list, simulation evidence, versioned machine file, first-off inspection, and revised source. Generic feeds and speeds are hypotheses until verified against the machine, tool, material, workholding, and local procedure. Continue with the [planned CNC and digital-machining pathway](../05-cnc-digital-machining/index.qmd).
+Fits describe the relationship between mating features:
 
-### Chapter 12: Laser cutting, engraving, and 3D printing
+| Fit | Relationship | Typical design intent |
+|---|---|---|
+| **Clearance fit** | the hole remains larger than the shaft across the specified limits | free movement, sliding, assembly by hand |
+| **Transition fit** | the limits may produce a small clearance or a small interference | accurate location with controlled assembly |
+| **Interference fit** | the shaft remains larger than the hole across the specified limits | retained or torque-transmitting assembly |
 
-Use [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd) for vector geometry, material approval, calibration, kerf, engraving, fit, assemblies, and machine-ready files. Use [3D Modelling + 3D Printing](../04-3d-printing/index.qmd) for parametric versus mesh modelling, source files, slicing, orientation, supports, tolerances, and revision.
+Also compare hole-basis and shaft-basis systems, running/sliding/location/press applications, temperature effects, finish, lubrication, and whether disassembly is required. The [ISO 286 limits-and-fits system](https://www.iso.org/ics/17.040.10/x/) is one formal reference; classroom examples should focus first on functional relationships and measurable limits.
 
-The combined project pairs a calibrated laser-cut structure with a printed connector, spacer, jig, knob, guard, cable guide, or ergonomic interface. Students must justify why each process is better suited to its part. NIOSH notes that additive-manufacturing hazards vary by technology and material, including emissions, chemicals, heat, moving parts, and maintenance; use its [3D-printing safety resources](https://www.cdc.gov/niosh/manufacturing/additive/) with the local printer procedure.
+### 3. General machine and mechanism design
 
-### Chapter 13: Manual and CNC plasma cutting
+A machine changes force, motion, energy, material, or information. Begin with a system diagram showing inputs, outputs, boundaries, components, interfaces, and feedback.
 
-Manual plasma cutting introduces torch angle and distance, travel consistency, piercing and edge starts, lead management, support slats, sparks, dross, distortion, cut quality, ventilation, and post-cut cleanup. Students begin with straight cuts and a quality-comparison coupon before attempting a project part.
+Study these recurring design ideas:
 
-The **CNC plasma cutter is planned / to be built**. Until the machine is commissioned, students may complete CAD, nesting, CAM, simulation, extraction and water-table research, torch-height-control research, risk assessment, and an acceptance-test plan. No page should imply that the machine is operational before guarding, electrical work, extraction, software limits, emergency stops, fire controls, and supervised test cuts have been verified.
+- force, torque, power, speed, work, energy, mechanical advantage, efficiency, and load paths;
+- tension, compression, shear, bending, torsion, bearing stress, deflection, wear, fatigue, impact, and buckling;
+- shafts, axles, bearings, bushings, keys, keyways, splines, pins, retaining rings, collars, and couplings;
+- gears, racks, lead screws, cams, linkages, pulleys, belts, sprockets, chains, springs, and linear guides;
+- fixed, rotating, sliding, pivoting, adjustable, detachable, and serviceable interfaces;
+- stiffness versus mass, alignment, balance, friction, lubrication, backlash, tolerance stack-up, and thermal expansion;
+- modularity, standard components, access for tools, replacement of wear parts, inspection, maintenance, and end-of-life disassembly.
 
-### Chapter 14: Production systems and quality control
+A strong machine-design explanation follows the force and motion through the system and identifies where fit, alignment, fastening, or material choice controls performance.
 
-Students manufacture a short batch rather than one part. They create a traveller or router, identify bottlenecks, design a jig or fixture, define inspection frequency, record cycle time, separate rework from scrap, and revise the process. The goal is consistent useful parts, not speed by itself.
+### 4. Materials and process planning
 
-A strong assignment compares a manual method with one digital method while holding the functional requirement constant. Students explain where CNC or a jig improves repeatability and where setup time, tooling, or batch size changes the decision.
+Compare wood species and sheet goods, ferrous and non-ferrous metals, sheet thicknesses, engineering plastics, elastomers, composites, and additive-manufacturing materials. Consider function, stock form, strength, stiffness, toughness, hardness, machinability, weldability, grain direction, corrosion, heat, finish, cost, waste, reuse, repair, and availability.
 
-### Chapter 15: Integrated systems capstone
+A process plan identifies stock size, quantity, datums, setup order, workholding concept, tools, cutting or forming operations, joining sequence, intermediate inspections, finishing, and assembly. Explain why each operation occurs when it does.
 
-The capstone combines at least **three processes from two material families**, unless an approved project justifies a narrower route with deeper precision. Suitable systems include:
+### 5. Fasteners, threads, anchors, and assembly design
 
-- a modular shop-storage or tool-access system using prepared wood, laser/CNC parts, printed interfaces, and metal brackets;
-- an instrumented enclosure or test stand using sheet metal, machining, engraving, fasteners, and TEJ controls;
-- a portable repair or field-work module with a welded frame, replaceable panels, tool retention, and documented ergonomics;
-- a small machine accessory, fixture, cart, display, or outdoor system that can be inspected, serviced, and improved;
-- an original student proposal with a real user, measurable criteria, approved processes, and a realistic test plan.
+Choose a joint by asking whether it must be removable, adjustable, hidden, sealed, conductive, corrosion resistant, vibration resistant, permanent, or easy to inspect.
 
-The capstone is not a collection of machine demonstrations. Every process must have a functional reason to be there.
+Threaded-fastener knowledge includes:
 
-## Machine authorization gates
+- the difference between bolts, machine screws, cap screws, wood screws, sheet-metal screws, set screws, studs, and threaded rod;
+- metric diameter and pitch, inch diameter and threads per inch, coarse and fine series, right- and left-hand threads;
+- thread form, major/minor/pitch diameter, lead, engagement, tapped holes, clearance holes, and blind-hole depth;
+- nuts, plain washers, hardened washers, lock nuts, prevailing-torque features, thread-locking compounds, safety wire, cotter pins, and tab washers where applicable;
+- strength grade or property class, material, coating, corrosion compatibility, preload, joint stiffness, tightening method, and access for installation and service;
+- threaded inserts for wood, plastics, sheet metal, and damaged-thread repair;
+- rivets, rivet nuts, clinch fasteners, pins, dowels, keys, retaining rings, adhesives, and welds as alternatives or complements.
 
-| Gate | Student evidence before advancing |
+For fastening into concrete or masonry, distinguish concrete screws, wedge anchors, sleeve anchors, drop-in anchors, adhesive anchors, and systems intended for hollow masonry. Selection depends on base material, member thickness, edge distance, spacing, embedment, hole condition, tension and shear, environmental exposure, removability, and the manufacturer's published design data. Permanent, structural, overhead, guard, handrail, or life-safety anchorage requires the applicable code, specified product system, and qualified design review rather than a generic classroom rule.
+
+The assembly drawing should name each fastener, show quantity and location, state the hole or thread requirement, identify the stack of parts, and preserve tool access. A bill of materials should distinguish purchased hardware from fabricated parts.
+
+### 6. Hand fabrication, hole features, threading, and finishing
+
+Build accuracy through layout, sawing, filing, deburring, drilling, reaming, tapping, die threading, countersinking, counterboring, spotfacing, scraping, sanding, and finishing. Connect each hole feature to its function:
+
+- a **clearance hole** allows a fastener to pass;
+- a **tap-drill hole** leaves material for an internal thread;
+- a **reamed hole** controls size and finish for a pin, shaft, or accurate fit;
+- a **counterbore** recesses a cylindrical head or creates a flat seating surface;
+- a **countersink** seats a tapered head or removes a sharp hole edge;
+- a **spotface** creates a local flat bearing surface.
+
+The evidence is a small assembly whose dimensions, hole features, threads, fasteners, finish, and service access match the drawing.
+
+## Material and forming processes
+
+### 7. Wood preparation and shaping
+
+Use the jointer to establish a reference face and edge, the planer to create consistent thickness, the band saw or another suitable process for shaping, and sanding equipment for controlled surface preparation. Track grain direction, moisture and stock defects, reference faces, initial and final dimensions, squareness, thickness, tear-out, and surface quality.
+
+The result is stable, square stock for a later component or assembly. Explain where material was removed at each operation and how the reference surfaces control later measurements.
+
+### 8. Sheet-metal systems
+
+Develop flat patterns in paper or card before committing material. Study material thickness, inside bend radius, bend angle, neutral axis, bend allowance, bend deduction, K-factor as a model, reliefs, hems, seams, tabs, beads, flanges, and the effect of operation order.
+
+Processes may include layout, shearing or sawing, notching, punching, drilling, deburring, bending, rolling, riveting, threaded inserts, screws, tabs, and resistance spot welding. Evidence should include the flat pattern, formed dimensions, bend sequence, joint plan, and fit with mating parts.
+
+### 9. Metal cutting and stock preparation
+
+Compare a horizontal band saw, vertical band saw configured for the material, powered hacksaw, cold saw, abrasive cut-off saw, manual hacksaw, plasma process, and CNC profile-cutting process. Select a method using stock shape, alloy, section thickness, required accuracy, heat input, kerf, burr, finish, speed, quantity, and later operations.
+
+Stock preparation includes identifying the datum end, allowing material for cleanup, controlling cut sequence, deburring, marking part identity, and verifying the blank before machining or welding.
+
+## Welding processes
+
+Welding processes are separated because their equipment, consumables, heat source, joint preparation, deposition, appearance, productivity, and suitable applications differ. For every process, record material, thickness, joint type, position, fit-up, machine settings, consumables, observations, distortion, and evaluation of the finished coupon.
+
+### 10. Resistance spot welding
+
+Resistance spot welding joins overlapping sheet by applying force and electrical resistance heating through electrodes. Study lap-joint geometry, electrode access, electrode face condition, sheet thickness, coating or surface condition, current, force, weld time, pitch, edge distance, indentation, nugget formation, and peel or destructive coupon evidence.
+
+Use it when repeated sheet-metal lap joints and two-sided electrode access suit the design. It does not create a continuous sealed seam unless the selected process and joint are specifically designed to do so.
+
+### 11. MIG / gas metal arc welding (GMAW)
+
+GMAW continuously feeds wire through the welding gun. Study voltage, wire-feed speed, travel speed, contact-tip-to-work distance, torch angle, polarity, shielding gas, transfer mode, tack sequence, starts and stops, joint gap, bead profile, penetration evidence, spatter, undercut, porosity, overlap, burn-through, and distortion.
+
+Compare butt, lap, tee, corner, fillet, and groove joints. Use labelled coupons to connect settings and technique to the resulting bead and joint rather than judging appearance alone.
+
+### 12. Stick / shielded metal arc welding (SMAW)
+
+SMAW uses a flux-coated consumable electrode. Study electrode classification, diameter, current range, polarity, arc length, work and travel angles, travel speed, bead placement, restarts, slag, multi-pass sequence, penetration evidence, inclusions, porosity, undercut, and distortion.
+
+Compare how electrode choice, material thickness, joint preparation, position, and access affect the result. Keep the electrode classification and parameter record with each practice coupon.
+
+### 13. TIG / gas tungsten arc welding (GTAW)
+
+GTAW uses a non-consumable tungsten electrode and may use separate filler. Study current type and polarity, amperage control, tungsten selection and preparation, arc length, torch and filler angles, shielding gas, travel speed, filler timing, autogenous versus filler-added joints, cleanliness, heat input, bead profile, penetration evidence, oxidation, porosity, undercut, and distortion.
+
+Compare the process where fine heat and filler control, thin material, clean appearance, or non-ferrous alloys matter. Document the relationship between joint fit-up, heat control, filler addition, and the finished coupon.
+
+## Machining and precision processes
+
+### 14. Manual milling and common operations
+
+Begin with machine axes, spindle direction, cutter types, workholding concepts, parallels, edge finding, datums, coordinates, stock allowance, speeds and feeds, depth and width of cut, conventional and climb cutting, and inspection between operations.
+
+Common operations include:
+
+- **squaring a block:** create the first reference face, produce an adjacent square face, establish parallel/opposite faces, and bring the block to length, width, and thickness from controlled datums;
+- face milling and fly cutting for broad flat surfaces;
+- peripheral, side, and end milling for faces, shoulders, and profiles;
+- steps, open and closed slots, keyways, pockets, contours, and chamfers;
+- drilling, centre drilling or spotting, reaming, boring, countersinking, counterboring, spotfacing, and tapping;
+- circular features, bolt circles, angular setups, and simple indexing where equipment permits.
+
+The setup sheet should identify stock, datums, coordinates, workholding concept, cutter sequence, target dimensions, tolerances, and inspection stages. A useful introductory project is a squared block or plate containing a step, slot, pocket, and inspected hole pattern.
+
+### 15. Manual lathe and common operations
+
+The lathe rotates the work around a centreline. Study workholding with chucks, collets, faceplates, or centres; tool height and geometry; stick-out; spindle speed; feed; depth of cut; tailstock use; centre drilling; and diameter/length inspection.
+
+Common operations include:
+
+- facing to establish a reference end;
+- straight turning, step turning, shoulder turning, and finishing to diameter;
+- taper turning, form turning, radii, chamfers, and edge breaks;
+- centre drilling, drilling, boring, and reaming along the spindle axis;
+- grooving, undercutting, and parting;
+- external and internal threading by single-point tool, tap, die, or another suitable method;
+- knurling to create a grip or controlled surface pattern;
+- work between centres and simple eccentric work where the design and equipment justify it.
+
+A turning plan should show the original stock, finished profile, centreline, datums, operation order, tools, dimensions, tolerances, surface requirements, and inspection points. Suitable parts include a spacer, bushing, pin, handle component, shaft feature, threaded adapter, or mating part for the milled component.
+
+### 16. Surface grinding and precision finishing
+
+Surface grinding controls flatness, parallelism, thickness, and finish on suitable work. Study wheel types and dressing concepts, work and chuck relationships, reference faces, downfeed and crossfeed as process variables, spark-out, heat effects, burrs, magnetic work suitability, and measurement of flatness, parallelism, thickness, and surface condition.
+
+Evidence includes starting and final measurements, a drawing with functional tolerances, a process record, and an explanation of how heat, burrs, cleanliness, or reference choice affected the result.
+
+## Digital fabrication
+
+### 17. CAD/CAM, CNC milling, routing, and engraving
+
+CNC begins with the same drawing, datum, fit, workholding, and inspection discipline as manual machining. Define stock, fixtures, work coordinates, tool numbers, tool lengths, clearances, operations, stepdowns, stepovers, entry moves, tabs or holding strategy, and inspection points. Simulate the complete toolpath and preserve the editable CAD and CAM source.
+
+- **CNC mill:** accurate holes, pockets, slots, profiles, surfacing, engraving, and 2D/2.5D machined features.
+- **CNC router:** sheet goods, wood, plastics, fixtures, signs, furniture parts, and larger 2D/2.5D components.
+- **CNC engraving:** labels, scales, panels, serials, part identification, diagrams, and graphic surfaces.
+
+Submit the source model, drawing, CAM setup, setup sheet, tool list, simulation evidence, machine file, first-part inspection, and revised source. Continue with [CNC & Digital Machining](../05-cnc-digital-machining/index.qmd).
+
+### 18. Laser cutting, engraving, and 3D printing
+
+Use [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd) for vector geometry, calibration, kerf, engraving, fit, assemblies, and machine-ready files. Use [3D Modelling + 3D Printing](../04-3d-printing/index.qmd) for parametric versus mesh modelling, source files, slicing, orientation, supports, tolerances, and revision.
+
+A combined project can pair a calibrated laser-cut structure with a printed connector, spacer, jig, knob, cable guide, enclosure feature, or ergonomic interface. Justify why each process suits its part, then measure the mating interface and revise the source files.
+
+### 19. Manual plasma cutting and CNC plasma concepts
+
+Manual plasma cutting introduces torch-to-work relationship, piercing and edge starts, travel consistency, kerf, lead-in/lead-out choices, dross, heat-affected geometry, distortion, cut quality, and post-cut finishing.
+
+CNC plasma adds CAD cleanup, closed profiles, nesting, cut order, lead geometry, consumable and kerf compensation concepts, torch height control, machine coordinates, CAM simulation, part identification, and first-part inspection. The Technology Commons CNC plasma system is still being built; this section describes the design and digital workflow without implying that the local machine is available.
+
+## Production and integration
+
+### 20. Production systems, quality control, and integrated systems capstone
+
+Move from one successful part to a repeatable process. Create a traveller or router, bill of materials, fixture or jig, setup record, inspection plan, sample frequency, nonconformance record, and revision. Compare cycle time, setup time, work in process, bottlenecks, rework, scrap, capability, and the value of interchangeable parts.
+
+The integrated project should combine processes only when each one has a functional reason. Suitable systems include:
+
+- modular shop storage using prepared wood, sheet or machined brackets, laser/CNC parts, printed interfaces, and standard hardware;
+- an instrumented enclosure or test stand using sheet metal, machined features, engraving, fasteners, and TEJ controls;
+- a service cart or portable work module with a frame, replaceable panels, tool retention, and documented ergonomics;
+- a fixture, mechanism, machine accessory, display, or outdoor system that can be inspected, serviced, and improved.
+
+## Suggested evidence sequence
+
+| Item | Design or fabrication study | Required evidence |
+|---|---|---|
+| Study 1 | Need, minimal pitchable or viable product, and pitch | situation, needs, alternatives, prototype, feedback record, synthesis, re-framed problem |
+| Study 2 | Technical drawing and fit | orthographic/section views, dimensions, tolerance and fit rationale, inspection plan |
+| Study 3 | Mechanism and fastening system | system diagram, load path, component selection, fastener schedule, assembly drawing |
+| Study 4 | Prepared material and hand-made assembly | process plan, reference surfaces, hole/thread features, measurements, revision |
+| Study 5 | Sheet-metal or welded assembly | flat pattern or joint drawing, process record, coupons, fit and distortion evidence |
+| Study 6 | Manual machining pair | milled and turned parts designed to mate, operation plans, measurements, fit result |
+| Study 7 | Digital manufacturing comparison | editable source, CAM/slicing setup, first-part inspection, comparison with manual method |
+| Study 8 | Short production run | jig or fixture, traveller, quality data, variation, process improvement |
+| Capstone | Integrated systems build | complete N.I.C.E. record, drawings, standards, source files, build record, inspection, test, feedback synthesis, revision |
+
+## Capstone review gates
+
+| Gate | Review evidence |
 |---|---|
-| 1. Observe and identify | names hazards, safe zone, controls, guards, extraction, PPE and emergency response |
-| 2. Prepare the setup | interprets the drawing, selects approved stock/tooling, inspects the machine, and shows workholding without power |
-| 3. Demonstrate with the teacher | completes the local start, operation, stop, cleanup, and inspection sequence under direct supervision |
-| 4. Supervised project use | repeats the sequence reliably, stops when conditions change, and records quality evidence |
-| 5. Advanced setup, when permitted | plans a new setup, receives explicit approval, verifies clearances, and documents the first-off result |
-
-::: {.callout-caution title="Authorization does not transfer automatically"}
-Authorization on one saw, welder, mill, lathe, grinder, laser, printer, router, or plasma cutter does not authorize another. A substitute teacher, altered guard, unfamiliar material, damaged tool, missing extraction, or changed setup is a reason to stop and obtain direction.
-:::
-
-## Assignment and project sequence
-
-| Item | Assignment or project | Required student evidence |
-|---|---|---|
-| Diagnostic | Shop systems and measurement baseline | prior-experience inventory, measurement check, drawing sample, personal learning targets |
-| Assignment 1 | Process-selection case | criteria, material/process matrix, hazard screen, sequence and recommendation |
-| Project 1 | Accurate hand-made assembly | drawing, cut list, removable joint, inspection record, revision |
-| Project 2 | Prepared-wood component | reference-face sequence, dimensions, dust-control check, surface-quality evidence |
-| Project 3 | Sheet-metal enclosure or bracket | flat pattern, formed dimensions, safe edges, fastener or spot-weld plan, fit check |
-| Lab 1 | Metal-cutting comparison | same stock cut by approved methods, time/heat/burr/accuracy comparison |
-| Lab 2 | Welding process and joint coupons | setup approval, labelled coupons, visual and destructive evidence, process recommendation |
-| Project 4 | Manual-machining pair | one milled feature and one turned part designed to fit, with measured results |
-| Lab 3 | Precision finishing | surface-grinding setup approval, measurements and finish/flatness discussion |
-| Project 5 | Digital manufacturing comparison | CNC/laser/print setup files, simulation or slicing evidence, first-off inspection, revision |
-| Lab 4 | Plasma cut-quality study | approved material, controlled changes, dross/kerf/distortion observations, revised technique |
-| Project 6 | Short production run | jig or fixture, process traveller, quality data, cycle-time evidence and improvement |
-| Capstone | Integrated systems build | complete N.I.C.E. portfolio, authorizations, drawings, source files, build record, test, inspection and revision |
-
-## Capstone gates
-
-| Gate | Approval evidence |
-|---|---|
-| 1. Need and users | real context, user or stakeholder, measurable criteria, constraints and exclusions |
-| 2. System architecture | functions, parts, interfaces, materials, processes, fasteners and service plan |
-| 3. Safety and authorization | hazard assessment, required machine passports, material approvals, ventilation/extraction and supervision plan |
-| 4. Drawings and source files | dimensioned drawing set, CAD models, cut list, tolerances, file versions and naming |
-| 5. Process plan | operation order, setups, workholding, tooling, joining, inspection points and finish |
-| 6. Prototype | lower-risk model or test coupon that answers the largest unknown before final fabrication |
-| 7. Fabrication review | teacher-approved setups, first-off results, deviations, stop-work decisions and changes |
-| 8. Validation | fit, function, load or use test, measured criteria, failure evidence and limitations |
-| 9. Revision and communication | updated source, before/after comparison, final demonstration and concise reflection |
+| 1. Situation and needs | real context, users, measurable criteria, constraints, exclusions, and assumptions |
+| 2. Investigation | precedents, standards, mechanisms, materials, processes, and questions still unresolved |
+| 3. Create and communicate | minimal pitchable or viable product, pitch, focused feedback questions, and recorded responses |
+| 4. Evaluate and re-question | synthesized feedback, comparison with needs, revised problem statement, and decision |
+| 5. System architecture | functions, parts, interfaces, loads, motion, materials, processes, fasteners, fits, and service plan |
+| 6. Drawings and source files | drawing set, CAD models, cut list, tolerances, GD&T where justified, versions, and naming |
+| 7. Process and inspection plan | operation order, setups, tooling, joining, intermediate checks, and final verification |
+| 8. Fabrication and assembly | first-part results, deviations, rework decisions, assembly record, and updated source |
+| 9. Validation and revision | fit, function, performance evidence, user feedback, limitations, and final revision |
 
 ## Assessment model
 
-Track work should reward design judgement and verified workmanship, not simply access to more machines.
+Track work should reward design judgement and verified workmanship, not simply the number of machines used.
 
 | Category | Suggested weight | Evidence |
 |---|---:|---|
-| Need, criteria, and alternatives | 15% | N.I.C.E. brief, investigation, alternatives and selection rationale |
-| Drawings, CAD, and process planning | 20% | dimensions, tolerances, interfaces, stock, sequence, setups and file control |
-| Safety and authorization | 20% | machine-specific demonstrations, inspections, controls and stop-work judgement |
-| Fabrication and workmanship | 20% | suitable process use, secure workholding, fit, finish and assembly quality |
-| Inspection, testing, and iteration | 20% | measurements, functional evidence, deviations, failures and revised source |
-| Communication | 5% | organized portfolio, photographs, labels, references and explanation |
+| Situation, needs, investigation, and alternatives | 15% | N.I.C.E. brief, precedents, questions, alternatives, and selection rationale |
+| Drawings, standards, GD&T, fits, and process planning | 20% | views, dimensions, tolerances, interfaces, stock, sequence, and file control |
+| Technical knowledge and design decisions | 20% | materials, mechanisms, fasteners, processes, calculations, and trade-offs |
+| Fabrication and workmanship | 20% | suitable process selection, datums, fit, finish, assembly, and serviceability |
+| Inspection, testing, feedback synthesis, and iteration | 20% | measurements, functional evidence, user feedback, deviations, failures, and revised source |
+| Communication | 5% | organized portfolio, photographs, labels, references, pitch, and explanation |
 
-A polished object with no process evidence should not receive a high result. A student who identifies a poor decision, stops safely, and uses inspection data to produce a stronger revision may demonstrate more learning than a student whose first part happened to fit.
+A polished object with no evidence should not receive a high result. Strong work makes the reasoning visible, records where the result differs from the drawing or need, and carries the evidence into the next version.
 
-## Teacher planning and official safety references
+## Technical standards references
 
-These sources support planning but do not replace Ontario requirements, board policies, manufacturer manuals, equipment-specific procedures, qualified instruction, or the teacher's professional judgement:
+Standards evolve and organizations may specify different systems. Always identify the standard, edition, units, projection method, and general drawing conventions used for a project.
 
-- [CCOHS: Safeguarding, working around machinery](https://www.ccohs.ca/oshanswers/safety_haz/safeguarding/machinery.html)
-- [CCOHS: Woodworking machines, jointers and planers](https://www.ccohs.ca/oshanswers/safety_haz/woodwork/planer.html)
-- [CCOHS: Woodworking machines, band saws](https://www.ccohs.ca/oshanswers/safety_haz/woodwork/band_saw.html)
-- [CCOHS: Metalworking machines, cold metal saws](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/metalsaws_cold.html)
-- [CCOHS: Metalworking machines, hot metal saws](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/metalsaws_hot.html)
-- [CCOHS: Welding types and hazards](https://www.ccohs.ca/oshanswers/safety_haz/welding/overview.html)
-- [CCOHS: Welding ventilation](https://www.ccohs.ca/oshanswers/safety_haz/welding/ventilation.html)
-- [CCOHS: Hot work](https://www.ccohs.ca/oshanswers/safety_haz/welding/hotwork.html)
-- [CCOHS: Metalworking machines, milling machines](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/millingmachines.html)
-- [CCOHS: Metalworking machines, lathes](https://www.ccohs.ca/oshanswers/safety_haz/metalworking/lathes.html)
-- [CCOHS: Abrasive wheels, bench and pedestal grinders](https://www.ccohs.ca/oshanswers/safety_haz/abrasive_wheels/safeuse2.html)
-- [NIOSH: 3D printing and additive manufacturing](https://www.cdc.gov/niosh/manufacturing/additive/)
-
-## Implementation status
-
-This page defines the intended pathway, equipment map, evidence standard, and safety gates. The linked N.I.C.E., laser, 3D-printing, fabrication-library, and project resources can be used now. The new wood, sheet-metal, welding, manual-machining, CNC, plasma, production, and capstone student packages still require local equipment verification, photographs, demonstrations, printable handouts, assessment tools, accessibility review, and classroom testing before they are labelled complete.
+- [ASME Y14 product-definition standards](https://www.asme.org/codes-standards/y14-standards)
+- [ASME Y14.5: Dimensioning and Tolerancing](https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing)
+- [ISO 1101: Geometrical tolerancing](https://www.iso.org/standard/66777.html)
+- [ISO limits and fits catalogue, including ISO 286](https://www.iso.org/ics/17.040.10/x/)
 
 Return to [General Design & Fabrication](../index.qmd), explore [ideas by technology area](../applications/index.qmd), or browse the [fabrication library and tools](../../teaching-materials/laser-cutting/index.qmd).

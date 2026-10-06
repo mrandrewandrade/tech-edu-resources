@@ -112,10 +112,17 @@ class DesignFabricationTests(unittest.TestCase):
             "CNC engraving",
             "laser cutting",
             "3D printing",
-            "manual plasma cutting",
-            "CNC plasma cutter is planned / to be built",
-            "Integrated systems capstone",
-            "Machine authorization gates",
+            "Manual plasma cutting",
+            "CNC plasma system is still being built",
+            "integrated systems capstone",
+            "concrete screws",
+            "wedge anchors",
+            "orthographic projection",
+            "GD&T",
+            "Clearance fit",
+            "squaring a block",
+            "step turning",
+            "knurling",
         ):
             self.assertIn(term, track)
         for code in ("TIJ", "TAS", "TDJ", "TMJ", "TCJ", "TTJ", "TEJ", "TGJ", "THJ"):
@@ -124,6 +131,47 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("design-fabrication/systems-design-fabrication-track/index.qmd", config)
         landing = self.read("design-fabrication/index.qmd")
         self.assertIn("systems-design-fabrication-track/index.qmd", landing)
+
+    def test_nice_create_communicate_and_evaluate_meanings_are_explicit(self) -> None:
+        overview = self.read("design-fabrication/01-nice-design-process/index.qmd")
+        create = self.read("design-fabrication/01-nice-design-process/03-create-communicate.qmd")
+        evaluate = self.read("design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.qmd")
+        track = self.read("design-fabrication/systems-design-fabrication-track/index.qmd")
+
+        for text in (overview, create, track):
+            self.assertIn("minimal pitchable", text.lower())
+            self.assertIn("minimal viable", text.lower())
+        for phrase in (
+            "simplest version that can **sell and test the idea**",
+            "Minimal does not mean physically smaller",
+            "Pitch the concept",
+            "Record the feedback without defending the first version",
+        ):
+            self.assertIn(phrase, create)
+        for phrase in (
+            "Synthesize feedback",
+            "re-question the situation",
+            "problem statement",
+            "stated needs",
+            "whether the proposal meets the needs",
+        ):
+            self.assertIn(phrase.lower(), evaluate.lower() + track.lower())
+
+    def test_public_safety_content_points_to_board_and_course_information(self) -> None:
+        landing = self.read("design-fabrication/index.qmd")
+        track = self.read("design-fabrication/systems-design-fabrication-track/index.qmd")
+        applications = self.read("design-fabrication/applications/index.qmd")
+        for content in (landing, track, applications):
+            self.assertIn("school board", content.lower())
+            self.assertIn("Google Classroom", content)
+            self.assertIn("Machine-specific safety instruction", content)
+        for forbidden in (
+            "Machine authorization gates",
+            "Current curriculum status",
+            "Implementation status",
+            "90 to 140 hours",
+        ):
+            self.assertNotIn(forbidden, track)
 
     def test_homepage_prioritizes_reusable_resources(self) -> None:
         home = self.read("index.qmd")
@@ -208,7 +256,7 @@ class DesignFabricationTests(unittest.TestCase):
         for page in pages:
             content = page.read_text(encoding="utf-8")
             self.assertGreaterEqual(content.count("ter-project-card"), 3, page)
-            for field in ("<dt>Process", "<dt>Skills", "<dt>Material", "<dt>Structural", "<dt>Safety", "<dt>Library", "<dt>Lesson", "<dt>Extension"):
+            for field in ("<dt>Process", "<dt>Skills", "<dt>Material", "<dt>Structural", "<dt>Use boundary", "<dt>Library", "<dt>Lesson", "<dt>Extension"):
                 self.assertIn(field, content, (page, field))
 
     def test_sensitive_application_pages_state_boundaries(self) -> None:
@@ -432,7 +480,7 @@ class DesignFabricationTests(unittest.TestCase):
             "Mixed",
             "creator, page title, URL, access date, and licence",
             "Teacher review is required",
-            "Machine information is not machine authorization",
+            "Online examples are not operating procedures",
             "Work in progress · Research notes · Not fully reviewed",
             "broad initial online research pass",
             "received complete editorial, technical, licensing, accessibility, age-suitability, or classroom review",
@@ -484,7 +532,7 @@ class DesignFabricationTests(unittest.TestCase):
         calibration = self.read("design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd")
         for asset in ("material-thickness", "ruler-check", "dimension-verification", "kerf-test", "tab-fit", "slot-fit", "four-fit-series", "hole-fit"):
             self.assertIn(asset, calibration)
-        for source in ("support.glowforge.com", "support.brmlasers.com", "ponoko.com"):
+        for source in ("support.brmlasers.com", "ponoko.com"):
             self.assertIn(source, calibration)
         self.assertIn("Printable calibration record", calibration)
 

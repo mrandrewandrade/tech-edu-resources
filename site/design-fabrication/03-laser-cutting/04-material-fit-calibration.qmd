@@ -1,25 +1,23 @@
 ---
 title: "Laser Cutter Calibration | Material Thickness, Kerf & Fit Tests"
-description: "A measurable classroom workflow for machine checks, stock measurement, kerf, slots, holes and fit decisions."
+description: "A measurable classroom workflow for stock measurement, scale verification, kerf, slots, holes and fit decisions."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson ter-calibration-lesson"
-terms: [calibration, focus, set-focus, material-thickness, nominal-dimension, actual-dimension, kerf, test-coupon, fit-gauge, slot, tab, loose-fit, sliding-fit, snug-fit, press-fit, clearance]
-highlighted-terms: [calibration, set-focus, kerf]
+terms: [calibration, material-thickness, nominal-dimension, actual-dimension, kerf, test-coupon, fit-gauge, slot, tab, loose-fit, sliding-fit, snug-fit, press-fit, clearance]
+highlighted-terms: [calibration, kerf]
 toc: true
 execute: {enabled: false}
 ---
 
 Calibration is not one magic kerf value. It is a short, recorded test that connects **this sheet**, **this machine condition**, **this geometry**, and **this intended fit**.
 
-<div class="ter-calibration-process" aria-label="Calibration workflow"><span>1 · Check machine</span><span>2 · Measure stock</span><span>3 · Verify scale</span><span>4 · Cut a test</span><span>5 · Measure result</span><span>6 · Choose + record fit</span></div>
+<div class="ter-calibration-process" aria-label="Calibration workflow"><span>1 · Confirm course process</span><span>2 · Measure stock</span><span>3 · Verify scale</span><span>4 · Make a test</span><span>5 · Measure result</span><span>6 · Choose + record fit</span></div>
 
-## Machine check or material calibration?
+## Operating procedure or material calibration?
 
 <div class="ter-two-state">
-<section><h3>Machine check</h3><p>Confirm the machine can locate and focus on the material, the bed and optics are ready, and the artwork aligns as expected. This is about machine condition and setup.</p><ul><li>Material is flat and supported.</li><li>Focus point lands on the material, away from an edge or hole.</li><li>Camera alignment is reasonable.</li><li>Approved settings and ventilation procedure are available.</li></ul></section>
+<section><h3>Operating procedure</h3><p>Machine-specific setup, safety instruction, assessments, and authorization are not provided on this public website. Follow your school board's safety guidelines and the course-specific instruction provided by your teacher. Students in Mr. Andrade's classes can find that information in Google Classroom.</p></section>
 <section><h3>Material calibration</h3><p>Measure how one stock-and-setting combination changes size and fit. This is about the result of the process.</p><ul><li>Actual thickness and batch are recorded.</li><li>A known drawing dimension imports at 100%.</li><li>Cut width and finished dimensions are measured.</li><li>Slots and holes are tested against the real mating object.</li></ul></section>
 </div>
-
-Glowforge’s current guidance explains that **Set Focus** measures the head-to-material distance at a selected point and can improve focus and camera placement; it also advises selecting a point on the material, not close to an edge. If Set Focus is not used, autofocus runs before a print and can fall back to the selected material thickness if measurement fails. Use those features as machine setup, not as a substitute for a fit coupon. See [Glowforge: Alignment](https://support.glowforge.com/hc/en-us/articles/360033633714-Alignment) and [Glowforge: About Autofocus](https://support.glowforge.com/hc/en-us/articles/21250121938331-About-Autofocus).
 
 ## 1 · Measure the actual sheet
 
@@ -53,23 +51,23 @@ Ponoko’s 2011 article, [Figuring out kerf for precision parts](https://www.pon
 
 1. Open one test SVG in Inkscape and confirm document units, `viewBox` scale and a known dimension.
 2. Label the coupon with material, batch, date, machine and revision before cutting.
-3. Use the instructor-approved machine setup for this material.
+3. Use the course-specific process provided by your teacher.
 4. Let the coupon cool and measure it consistently; do not force a calliper into a soft or angled edge.
 5. Test the real mating object in every candidate feature.
 6. Select the fit that serves the function. A press fit is not automatically “more accurate” than a sliding fit.
 7. Update the source dimension, save the record and repeat only the smallest necessary test.
 
 ::: {.callout-warning}
-Kerf compensation changes geometry; it does not correct loose belts, damaged optics, poor focus, warped stock, unapproved settings or an incorrectly scaled import. Stop and resolve a machine-check problem before interpreting the coupon.
+Kerf compensation changes geometry; it does not correct a machine-condition problem, warped stock, or an incorrectly scaled import. Resolve unexpected machine behaviour through the course-specific process before interpreting the coupon.
 :::
 
 ## Printable calibration record
 
 <section class="ter-calibration-record">
 <h3>Technology Commons · Laser calibration record</h3>
-<div class="ter-record-grid"><p>Name / group <span></span></p><p>Date <span></span></p><p>Machine <span></span></p><p>File + revision <span></span></p><p>Material / batch <span></span></p><p>Nominal thickness <span></span></p><p>Measured min / max <span></span></p><p>Drawing scale checked with <span></span></p><p>Approved settings reference <span></span></p><p>Focus method / location <span></span></p></div>
+<div class="ter-record-grid"><p>Name / group <span></span></p><p>Date <span></span></p><p>Machine <span></span></p><p>File + revision <span></span></p><p>Material / batch <span></span></p><p>Nominal thickness <span></span></p><p>Measured min / max <span></span></p><p>Drawing scale checked with <span></span></p><p>Course process reference <span></span></p><p>Calibration revision <span></span></p></div>
 <table><thead><tr><th>Feature / nominal</th><th>Measured result</th><th>Real-object fit</th><th>Decision / next revision</th></tr></thead><tbody><tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr></tbody></table>
-<p>Selected fit and why <span class="ter-record-line"></span></p><p>Observed issues / machine-check follow-up <span class="ter-record-line"></span></p><p>Tester / instructor review <span class="ter-record-line"></span></p>
+<p>Selected fit and why <span class="ter-record-line"></span></p><p>Observed issues / follow-up <span class="ter-record-line"></span></p><p>Tester / instructor review <span class="ter-record-line"></span></p>
 </section>
 
 [Open the complete calibration library](../../teaching-materials/laser-cutting/?type=calibration#library) for downloadable source files.

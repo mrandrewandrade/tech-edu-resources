@@ -93,7 +93,7 @@ website:
             - href: design-fabrication/01-nice-design-process/03-create-communicate.qmd
               text: "1.3 Create & Communicate"
             - href: design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.qmd
-              text: "1.4 Prototype, Evaluate & Iterate"
+              text: "1.4 Evaluate, Re-question & Iterate"
         - text: "Systems Design & Fabrication Track"
           href: design-fabrication/systems-design-fabrication-track/index.qmd
         - section: "2. AI Literacy & Reproducible Workflows"
@@ -166,15 +166,15 @@ website:
               text: "Project · Faux Enamel Jewellery"
             - href: design-fabrication/04-3d-printing/04-design-challenge.qmd
               text: "Advanced · Functional Part"
-        - section: "6. Future Fabrication Methods"
+        - section: "6. Additional Fabrication Methods"
           href: design-fabrication/07-other-fabrication/index.qmd
           contents:
             - href: design-fabrication/05-cnc-digital-machining/index.qmd
-              text: "CNC & Digital Machining · Planned"
+              text: "CNC & Digital Machining"
             - href: design-fabrication/06-textiles-soft-goods/index.qmd
-              text: "Textiles & Soft Goods · Planned"
+              text: "Textiles & Soft Goods"
             - href: design-fabrication/07-other-fabrication/index.qmd
-              text: "Other Fabrication · Planned"
+              text: "Other Fabrication"
         - section: "Fabrication Library & Tools"
           href: teaching-materials/laser-cutting/index.qmd
           contents:
