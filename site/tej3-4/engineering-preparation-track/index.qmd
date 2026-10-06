@@ -33,13 +33,11 @@ Work through the chapters in order. Each chapter connects mathematics to circuit
 
 ### Chapter 0: Engineering design and communication
 
-**Learning goal:** Assess current algebra, units, graphing, estimation, calculator, and technical-writing skills, then establish a consistent engineering notebook format.
+| Learning goal | Why it matters |
+|---|---|
+| Assess algebra, units, graphing, estimation, calculator, and technical-writing skills; establish an engineering notebook format. | Engineering work must show the model, assumptions, calculations, checks, and revisions. |
 
 **Subchapters:** Engineering baseline; engineering notebook; assumptions and evidence; technical communication.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Engineering solutions must show the model, assumptions, equations, units, checks, and revisions, not only a final number. The diagnostic identifies skills to review before the analytical work begins.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -56,13 +54,11 @@ Engineering solutions must show the model, assumptions, equations, units, checks
 
 ### Chapter 1: Engineering calculations
 
-**Learning goal:** Use dimensional analysis, engineering notation, significant figures, ratios, rates, estimates, and compound units.
+| Learning goal | Why it matters |
+|---|---|
+| Use dimensional analysis, engineering notation, significant figures, ratios, rates, estimates, and compound units. | Units and estimates expose impossible results and transfer across engineering disciplines. |
 
 **Subchapters:** Units and dimensions; engineering notation; significant figures; ratios and rates; estimation.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Units and estimates expose impossible calculator results. These habits transfer directly to every engineering discipline.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -80,13 +76,11 @@ Units and estimates expose impossible calculator results. These habits transfer 
 
 ### Chapter 2: Circuit fundamentals
 
-**Learning goal:** Rearrange electrical equations, identify proportional and inverse relationships, and apply physical limits to a design.
+| Learning goal | Why it matters |
+|---|---|
+| Rearrange electrical equations, identify relationships, and apply physical limits to a design. | A mathematically correct answer is useful only when the model and design are physically workable. |
 
 **Subchapters:** Charge; voltage; current; resistance; algebraic models; operating limits.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Engineers must build and manipulate models rather than only substitute numbers into formulas. Physical limits separate a mathematical answer from a workable design.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -104,13 +98,11 @@ Engineers must build and manipulate models rather than only substitute numbers i
 
 ### Chapter 3: Linear circuits
 
-**Learning goal:** Derive and apply the current, voltage, resistance, and power rules for series, parallel, and mixed circuits.
+| Learning goal | Why it matters |
+|---|---|
+| Derive and apply current, voltage, resistance, and power rules for series, parallel, and mixed circuits. | Circuit rules introduce conservation, equivalent models, and independent verification. |
 
 **Subchapters:** Series circuits; parallel circuits; series-parallel circuits; equivalent resistance; electrical power.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Circuit rules are examples of conservation and equivalent modelling. Independent checks make a solution defensible.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -127,13 +119,11 @@ Circuit rules are examples of conservation and equivalent modelling. Independent
 
 ### Chapter 4: Linear algebra for engineering
 
-**Learning goal:** Form and solve two- and three-variable linear systems from branch, node, and loop equations, then verify the result.
+| Learning goal | Why it matters |
+|---|---|
+| Form, solve, and verify two- and three-variable systems from branch, node, and loop equations. | Coupled equations appear in circuits, structures, processes, controls, and data models. |
 
 **Subchapters:** Systems of linear equations; Kirchhoff's current law; Kirchhoff's voltage law; matrices; residual and power checks.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Coupled equations appear in circuits, structures, processes, controls, and data models. Residual and power checks show whether the complete model is consistent.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -150,13 +140,11 @@ Coupled equations appear in circuits, structures, processes, controls, and data 
 
 ### Chapter 5: Modelling and optimization
 
-**Learning goal:** Replace a network with a useful terminal model and compare designs using constraints, sensitivity, efficiency, safety, and cost.
+| Learning goal | Why it matters |
+|---|---|
+| Build equivalent models and compare designs using constraints, sensitivity, efficiency, safety, and cost. | Different objectives produce different best designs, so trade-offs must be explicit. |
 
 **Subchapters:** Equivalent models; design variables; objective functions; constraints; sensitivity; trade-offs.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Engineering decisions rarely have one perfect answer. Maximum power, maximum efficiency, minimum cost, and lowest temperature may require different designs.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -173,13 +161,11 @@ Engineering decisions rarely have one perfect answer. Maximum power, maximum eff
 
 ### Chapter 6: Material and energy balances
 
-**Learning goal:** Define a system boundary and use input, output, accumulation, loss, and efficiency to model electrical and thermal energy.
+| Learning goal | Why it matters |
+|---|---|
+| Define a system boundary and model input, output, accumulation, loss, and efficiency. | Material and energy balances connect electrical, mechanical, chemical, and environmental systems. |
 
 **Subchapters:** System boundaries; process variables; material balances; energy balances; accumulation; efficiency.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Energy balances connect electronics to computer, mechanical, chemical, and environmental systems. Comparing input with stored energy also introduces loss and model calibration.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -201,13 +187,11 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 ### Chapter 7: Engineering laboratory and instrumentation
 
-**Learning goal:** Collect repeatable data, fit a suitable model, inspect residuals, and state its valid range and uncertainty.
+| Learning goal | Why it matters |
+|---|---|
+| Collect repeatable data, fit a model, inspect residuals, and state its range and uncertainty. | Measurements become evidence only when their limits are understood. |
 
 **Subchapters:** Measurement; sensors and instrumentation; calibration; regression; residuals; uncertainty.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Measurements become useful evidence only when their limits are understood. Calibration and uncertainty affect every engineering discipline.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -224,13 +208,11 @@ Measurements become useful evidence only when their limits are understood. Calib
 
 ### Chapter 8: Process dynamics and numerical modelling
 
-**Learning goal:** Model an electrical or thermal system that changes with time using a time constant or a step-by-step spreadsheet or program.
+| Learning goal | Why it matters |
+|---|---|
+| Model an electrical or thermal system that changes with time using time constants or numerical stepping. | Real systems take time to charge, heat, cool, accelerate, and settle. |
 
 **Subchapters:** Transient response; time constants; dynamic models; numerical stepping; model stability.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Real systems take time to charge, heat, cool, accelerate, and settle. Numerical stepping builds intuition for later differential-equation models.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -247,13 +229,11 @@ Real systems take time to charge, heat, cool, accelerate, and settle. Numerical 
 
 ### Chapter 9: Digital computation
 
-**Learning goal:** Translate logic, equations, and state behaviour into truth tables, algorithms, tested programs, and state-transition diagrams.
+| Learning goal | Why it matters |
+|---|---|
+| Translate logic, equations, and state behaviour into truth tables, algorithms, programs, and state diagrams. | Digital computation makes models repeatable, testable, and usable in embedded systems. |
 
 **Subchapters:** Boolean logic; truth tables; algorithms; data structures; state machines; testing.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Programming makes a model repeatable and testable. Truth tables and state machines bridge mathematical conditions and safe embedded-system behaviour.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -271,13 +251,11 @@ Programming makes a model repeatable and testable. Truth tables and state machin
 
 ### Chapter 10: Mechanics and electromechanical systems
 
-**Learning goal:** Relate electrical input to torque, speed, motion or flow, mechanical power, efficiency, and safe operating limits.
+| Learning goal | Why it matters |
+|---|---|
+| Relate electrical input to torque, speed, motion or flow, mechanical power, efficiency, and limits. | Motors, pumps, fans, and actuators connect electrical and mechanical systems. |
 
 **Subchapters:** Force and motion; torque; rotational speed; electrical power; mechanical power; efficiency.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Motors, pumps, fans, and actuators join electrical and mechanical systems. Current, temperature, speed, load, and efficiency cannot all be optimized independently.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -294,13 +272,11 @@ Motors, pumps, fans, and actuators join electrical and mechanical systems. Curre
 
 ### Chapter 11: Control systems
 
-**Learning goal:** Compare open-loop, on-off, hysteresis, proportional, proportional-integral, and proportional-integral-derivative control using common response evidence.
+| Learning goal | Why it matters |
+|---|---|
+| Compare open-loop, on-off, hysteresis, proportional, integral, and derivative control using response evidence. | Feedback manages disturbances but creates trade-offs in speed, error, stability, and safety. |
 
 **Subchapters:** Open-loop control; feedback; process control; response; stability; saturation; safety.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-Feedback responds to disturbances but introduces trade-offs involving speed, overshoot, error, saturation, stability, and safety.
-:::
 
 <details>
 <summary>What is needed</summary>
@@ -318,13 +294,11 @@ Feedback responds to disturbances but introduces trade-offs involving speed, ove
 
 ### Chapter 12: Engineering design project
 
-**Learning goal:** Design, model, build or simulate, program, measure, validate, revise, and explain an instrumented system.
+| Learning goal | Why it matters |
+|---|---|
+| Design, model, build or simulate, program, measure, validate, revise, and explain an instrumented system. | A complete project integrates mathematics, construction, safety, data, programming, and communication. |
 
 **Subchapters:** Requirements; engineering design; prototype; experiment; validation; optimization; technical communication.
-
-::: {.callout-note collapse="true" title="Why it matters"}
-The project brings mathematical reasoning, construction, safety, data, programming, and communication into one engineering workflow. Strong work includes evidence of revision, not just a working prototype.
-:::
 
 <details>
 <summary>What is needed</summary>
