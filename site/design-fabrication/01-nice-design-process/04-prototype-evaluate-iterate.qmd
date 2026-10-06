@@ -1,9 +1,9 @@
 ---
-title: "Prototype, Evaluate & Iterate | Test a Technology Design"
-description: "Plan a purposeful prototype, gather evidence, evaluate a technological solution and turn findings into the next design iteration."
+title: "Evaluate, Re-question & Iterate | Synthesize Feedback"
+description: "Synthesize feedback and test evidence, reconsider the situation, problem and needs, judge the proposal, and define the next iteration."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [prototype, evidence, evaluation, iteration, clearance, fit, joint, slot, tab, assembly]
-highlighted-terms: [prototype, evaluation]
+highlighted-terms: [evaluation]
 toc: true
 toc-depth: 3
 execute:
@@ -12,9 +12,9 @@ execute:
 
 ## Core idea
 
-A prototype answers a question. It does not need to look finished, and it should not consume more time or material than the question requires.
+Evaluation is more than collecting comments or asking whether people liked the pitch. Synthesize the feedback and test evidence, compare it with the stated needs, then re-question the situation, the problem, the assumed needs, and the proposal itself.
 
-## Choose the question first
+## Start with the pitch and evidence
 
 Examples:
 
@@ -24,25 +24,36 @@ Examples:
 - Does the interface flow make sense without explanation?
 - Is a tab-and-slot joint loose, sliding, snug, or too tight on the actual material?
 
-Choose a prototype type that produces evidence: a paper interface, cardboard form study, small material coupon, single joint, partial assembly, digital mock-up, or full working model.
+The Create and Communicate stage should already have produced a minimal pitchable or viable product. Use the pitch responses, observations, measurements, and test results as the evidence for evaluation.
 
-## Plan and test
+## Synthesize feedback
 
-1. Name the requirement or uncertainty being tested.
-2. Define what success would look like.
-3. Record dimensions, settings, material, and version.
-4. Test with the intended user or realistic conditions.
-5. Separate observations from explanations.
-6. Decide what to keep, change, or test next.
+1. Combine repeated comments into themes rather than listing every comment separately.
+2. Separate observations, interpretations, preferences, needs, and proposed fixes.
+3. Note agreements, contradictions, surprises, and missing perspectives.
+4. Compare each theme with the original situation, necessities, criteria, and restrictions.
+5. Decide whether the evidence challenges the solution, the problem statement, the stated needs, or an assumption.
+6. Identify what to keep, change, remove, investigate, or test next.
 
-## Evaluate the design, not the student
+A useful synthesis table uses the columns **feedback theme**, **evidence**, **need or criterion affected**, **what it changes**, and **next question**.
 
-Evaluation compares evidence with the need, requirements, and restrictions. A failed test can be a successful learning result when it identifies the next useful change.
+## Re-question the problem and needs
 
-End with a precise next-version statement: **“In version 2, I will change ___ because the test showed ___.”**
+Ask:
+
+- Does the proposal solve the situation people actually experience?
+- Are the original necessities still necessities?
+- Did the investigation miss a user, constraint, precedent, or system interaction?
+- Does the minimal product prove the important value, or only show an attractive form?
+- Which criteria were met, partly met, contradicted, or never tested?
+- Should the next cycle improve this proposal, choose another alternative, or redefine the problem?
+
+Evaluation compares synthesized evidence with the need, requirements, and restrictions. A weak pitch or failed test can still produce excellent design learning when it exposes the next useful question.
+
+End with a precise decision: **“The evidence changes our understanding of ___, so the next cycle will ___.”** The next step may revise the product, the pitch, the test, the need statement, or the complete direction.
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** Useful across **TIJ1O**, **TDJ**, **TMJ**, **TCJ**, **TEJ**, and **TTJ** projects where students plan prototypes, test safely, interpret evidence, evaluate performance, and improve a technological solution.
+**Ontario curriculum relevance:** Useful across **TIJ1O**, **TDJ**, **TMJ**, **TCJ**, **TEJ**, and **TTJ** projects where students synthesize feedback, interpret evidence, reconsider needs and constraints, evaluate performance, and improve a technological solution.
 :::
 
 Continue to [Digital Design & Communication](../02-digital-design/index.qmd), then apply the same cycle to [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd) or [3D Printing](../04-3d-printing/index.qmd).

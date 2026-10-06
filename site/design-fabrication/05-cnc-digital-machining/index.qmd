@@ -1,19 +1,15 @@
 ---
-title: "CNC & Digital Machining for Technology Education | Planned"
-description: "Planned Ontario technology education pathway for CNC routers and mills, CAM, work coordinates, workholding, toolpaths, end mills, pockets, profiles and drilling."
+title: "CNC & Digital Machining for Technology Education"
+description: "A general technology education reference for CNC routers and mills, CAM, work coordinates, workholding, toolpaths, end mills, pockets, profiles and drilling."
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-article"
 execute: {enabled: false}
 ---
 
-::: {.ter-status}
-Planned pathway
-:::
+This section organizes the shared concepts behind CNC routers and mills. The exact machine, controller, tooling, material, and classroom activity may differ.
 
-This section intentionally describes future scope rather than presenting untested machine lessons as complete curriculum.
-
-## Proposed learning sequence
+## Learning sequence
 
 - CNC router and CNC mill capabilities and limits;
 - machine coordinates, work coordinates, and zero/reference choices;
@@ -23,16 +19,16 @@ This section intentionally describes future scope rather than presenting unteste
 - feeds, speeds, chip formation, and machine/material-specific evidence;
 - simulation, dry-run practices, verification, inspection, and revision.
 
-Future lessons will depend on the available machine, tooling, materials, guarding, dust or chip control, supervision, and local safe-operating procedures.
+Machine-specific safety instruction follows school board guidelines and the course information provided by the teacher. Students in Mr. Andrade's classes use Google Classroom for that material.
 
 ## Free background resources
 
-Explore parametric parts and CAM concepts with [FreeCAD](https://www.freecad.org/), open machine-control documentation through [LinuxCNC](https://linuxcnc.org/) and the [official GRBL repository](https://github.com/gnea/grbl), and structured CAD/CAM instruction through [Autodesk Fusion learning](https://help.autodesk.com/view/fusion360/ENU/courses/). These resources do not authorize a machine setup or make generic feeds and speeds safe. See the [full free-resource directory · Work in Progress](../resources/work-in-progress/index.qmd) for additional provisional design, inspection, and fabrication notes.
+Explore parametric parts and CAM concepts with [FreeCAD](https://www.freecad.org/), open machine-control documentation through [LinuxCNC](https://linuxcnc.org/) and the [official GRBL repository](https://github.com/gnea/grbl), and structured CAD/CAM instruction through [Autodesk Fusion learning](https://help.autodesk.com/view/fusion360/ENU/courses/). Generic feeds and speeds remain starting hypotheses until they are verified for the machine, tool, material, workholding, and required finish. See the [full free-resource directory · Work in Progress](../resources/work-in-progress/index.qmd) for additional design, inspection, and fabrication references.
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** Expected strongest fit with **TMJ Manufacturing Technology**, **TDJ Technological Design**, and **TCJ Construction Technology**, including relevant senior courses and emphasis areas in CAM, machining, mechanical engineering, and manufacturing. Exact mapping will follow the completed lessons.
+**Ontario curriculum relevance:** Strongest fit with **TMJ Manufacturing Technology**, **TDJ Technological Design**, and **TCJ Construction Technology**, including relevant senior-course contexts involving CAM, machining, mechanical engineering, and manufacturing.
 
-Potential senior contexts include **TMJ3M/TMJ4M**, **TMJ3C/TMJ4C**, **TMJ3E/TMJ4E**, **TDJ3M/TDJ4M**, and **TDJ3O/TDJ4O**. These are scope notes, not claims that an unfinished lesson satisfies every course.
+Potential senior contexts include **TMJ3M/TMJ4M**, **TMJ3C/TMJ4C**, **TMJ3E/TMJ4E**, **TDJ3M/TDJ4M**, and **TDJ3O/TDJ4O**. Course codes identify useful contexts, not one-to-one expectation mappings.
 :::
 
 For currently supported digital fabrication, use [Laser Cutting & 2D Fabrication](../03-laser-cutting/index.qmd) or [3D Printing](../04-3d-printing/index.qmd).
