@@ -58,11 +58,145 @@
     });
   }
 
+  function createReferencePanel() {
+    const panel = document.createElement("aside");
+    panel.className = "bs-reference-panel";
+    panel.hidden = true;
+    panel.setAttribute("aria-hidden", "true");
+    panel.setAttribute("aria-labelledby", "bs-reference-panel-title");
+    panel.innerHTML =
+      '<div class="bs-reference-panel-heading">' +
+      '<div><p class="bs-reference-panel-kicker">Reference</p>' +
+      '<h2 id="bs-reference-panel-title" tabindex="-1">Source</h2></div>' +
+      '<button type="button" class="bs-reference-panel-close" ' +
+      'aria-label="Close reference">Close</button></div>' +
+      '<p class="bs-reference-panel-locator" data-bs-reference-locator></p>' +
+      '<div class="bs-reference-panel-content" data-bs-reference-content></div>' +
+      '<p class="bs-reference-panel-actions">' +
+      '<a data-bs-reference-page>View on references page</a></p>';
+    document.body.appendChild(panel);
+    return panel;
+  }
+
+  function referencePageUrl(link) {
+    const url = new URL(link.getAttribute("href"), document.baseURI);
+    url.pathname = url.pathname.replace(/\.qmd$/, ".html");
+    return url;
+  }
+
+  function initializeReferencePanel() {
+    const links = Array.from(document.querySelectorAll("a.bs-reference-link"));
+    if (links.length === 0) return;
+
+    const panel = createReferencePanel();
+    const title = panel.querySelector("#bs-reference-panel-title");
+    const locator = panel.querySelector("[data-bs-reference-locator]");
+    const content = panel.querySelector("[data-bs-reference-content]");
+    const pageLink = panel.querySelector("[data-bs-reference-page]");
+    const close = panel.querySelector(".bs-reference-panel-close");
+    const pagePromises = new Map();
+    let returnFocus = null;
+
+    function hidePanel() {
+      panel.hidden = true;
+      panel.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("bs-reference-panel-open");
+      if (returnFocus && document.contains(returnFocus)) {
+        returnFocus.focus({ preventScroll: true });
+      }
+      returnFocus = null;
+    }
+
+    function loadReferencePage(url) {
+      const key = url.origin + url.pathname;
+      if (!pagePromises.has(key)) {
+        pagePromises.set(
+          key,
+          fetch(key, { credentials: "same-origin" })
+            .then(function (response) {
+              if (!response.ok) throw new Error("Reference page unavailable");
+              return response.text();
+            })
+            .then(function (html) {
+              return new DOMParser().parseFromString(html, "text/html");
+            })
+        );
+      }
+      return pagePromises.get(key);
+    }
+
+    function showReference(link) {
+      const url = referencePageUrl(link);
+      const id = referenceId(link);
+      const sourceTitle = titles[id] || "Reference";
+      const citationLabel = link.textContent.trim();
+
+      returnFocus = link;
+      title.textContent = sourceTitle;
+      locator.textContent = citationLabel ? "Cited here as " + citationLabel : "";
+      locator.hidden = !citationLabel;
+      content.replaceChildren();
+      const loading = document.createElement("p");
+      loading.textContent = "Loading reference…";
+      content.appendChild(loading);
+      pageLink.href = url.href;
+      panel.hidden = false;
+      panel.setAttribute("aria-hidden", "false");
+      document.body.classList.add("bs-reference-panel-open");
+      title.focus({ preventScroll: true });
+
+      loadReferencePage(url)
+        .then(function (referenceDocument) {
+          const entry = referenceDocument.getElementById(id);
+          if (!entry) throw new Error("Reference entry unavailable");
+          const clonedEntry = entry.cloneNode(true);
+          clonedEntry.removeAttribute("id");
+          clonedEntry.querySelectorAll("a[href]").forEach(function (sourceLink) {
+            sourceLink.href = new URL(
+              sourceLink.getAttribute("href"),
+              url.href
+            ).href;
+          });
+          content.replaceChildren(clonedEntry);
+        })
+        .catch(function () {
+          const message = document.createElement("p");
+          message.textContent =
+            "The reference could not be loaded here. Open it on the references page instead.";
+          content.replaceChildren(message);
+        });
+    }
+
+    links.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        if (
+          event.defaultPrevented ||
+          event.button !== 0 ||
+          event.metaKey ||
+          event.ctrlKey ||
+          event.shiftKey ||
+          event.altKey
+        ) {
+          return;
+        }
+        event.preventDefault();
+        showReference(link);
+      });
+    });
+
+    close.addEventListener("click", hidePanel);
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) hidePanel();
+    });
+  }
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function () {
       addReferenceTitles(document);
+      initializeReferencePanel();
     });
   } else {
     addReferenceTitles(document);
+    initializeReferencePanel();
   }
 })();

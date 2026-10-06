@@ -71,7 +71,7 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("6.23 × 1.23 = 7.6629 → 7.66", lesson)
         self.assertIn("round once, at the end", lesson)
 
-    def test_reference_links_load_hover_titles(self) -> None:
+    def test_reference_links_load_hover_titles_and_reader_panel(self) -> None:
         config = self.read("_quarto.yml")
         scripts = self.read("includes/bs-scripts.html")
         helper = self.read("assets/bs-reference-titles.js")
@@ -79,6 +79,10 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn('"bs-reference-titles.js"', scripts)
         self.assertIn('"ref-grob2016": "Grob\'s Basic Electronics"', helper)
         self.assertIn('link.title = title', helper)
+        self.assertIn('className = "bs-reference-panel"', helper)
+        self.assertIn('fetch(key, { credentials: "same-origin" })', helper)
+        self.assertIn('event.preventDefault()', helper)
+        self.assertIn('Cited here as ', helper)
 
     def test_waterloo_track_uses_plain_language_and_linked_references(self) -> None:
         track = self.read("tej3-4/waterloo-engineering-track/index.qmd")

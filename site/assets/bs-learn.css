@@ -1160,8 +1160,115 @@ body:is(.bs-learn-index, .bs-learn-article)
   outline-offset: 2px;
 }
 
+/* Citation reader: opens complete bibliography entries without leaving a lesson. */
+
+.bs-reference-link {
+  cursor: pointer;
+}
+
+.bs-reference-panel {
+  position: fixed;
+  top: max(5rem, 12vh);
+  right: max(1rem, calc((100vw - 1120px) / 2));
+  z-index: 1080;
+  box-sizing: border-box;
+  width: min(30rem, calc(100vw - 2rem));
+  max-height: min(76vh, 46rem);
+  overflow-y: auto;
+  padding: 1rem;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 8px;
+  background: var(--bs-page-background);
+  box-shadow: 0 0.5rem 1.6rem rgb(24 51 65 / 20%);
+  color: var(--bs-text);
+}
+
+.bs-reference-panel[hidden] {
+  display: none;
+}
+
+.bs-reference-panel-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--bs-border);
+}
+
+.bs-reference-panel-kicker {
+  margin: 0 0 0.15rem;
+  color: var(--bs-text-muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bs-reference-panel-heading h2 {
+  margin: 0;
+  color: var(--bs-navy-dark);
+  font-size: 1.2rem;
+}
+
+.bs-reference-panel-close {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--bs-text-muted);
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+.bs-reference-panel-locator {
+  margin: 0.75rem 0;
+  color: var(--bs-text-muted);
+  font-size: 0.82rem;
+  font-weight: 680;
+}
+
+.bs-reference-panel-content {
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.bs-reference-panel-content > div > :last-child,
+.bs-reference-panel-content > :last-child {
+  margin-bottom: 0;
+}
+
+.bs-reference-panel-actions {
+  margin: 1rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--bs-border);
+}
+
+.bs-reference-panel-actions a {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.bs-reference-panel :focus-visible {
+  outline: 3px solid var(--bs-link-hover);
+  outline-offset: 2px;
+}
+
 @media (max-width: 767.98px) {
   .bs-glossary-sidebar {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 72vh;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .bs-reference-panel {
     top: auto;
     right: 0;
     bottom: 0;
