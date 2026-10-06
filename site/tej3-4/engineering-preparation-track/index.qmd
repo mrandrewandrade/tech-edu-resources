@@ -3,6 +3,7 @@ title: "Engineering Preparation Track"
 subtitle: "Optional enrichment for students preparing to study engineering after high school"
 description: "A practical pathway in mathematics, modelling, energy, programming, measurement, and control."
 sidebar: tej
+body-classes: engineering-preparation-track
 toc: true
 toc-depth: 2
 execute: {enabled: false}
@@ -16,156 +17,328 @@ This optional track adds engineering mathematics and modelling to regular Comput
 
 Work through the chapters in order. Each chapter connects mathematics to circuits, computers, programming, measurement, energy, or control. Existing lessons and activities are linked where they are ready.
 
-### Chapter 0: Engineering baseline and notebook
+- [0. Engineering design and communication](#chapter-0-engineering-design-and-communication)
+- [1. Engineering calculations](#chapter-1-engineering-calculations)
+- [2. Circuit fundamentals](#chapter-2-circuit-fundamentals)
+- [3. Linear circuits](#chapter-3-linear-circuits)
+- [4. Linear algebra for engineering](#chapter-4-linear-algebra-for-engineering)
+- [5. Modelling and optimization](#chapter-5-modelling-and-optimization)
+- [6. Material and energy balances](#chapter-6-material-and-energy-balances)
+- [7. Engineering laboratory and instrumentation](#chapter-7-engineering-laboratory-and-instrumentation)
+- [8. Process dynamics and numerical modelling](#chapter-8-process-dynamics-and-numerical-modelling)
+- [9. Digital computation](#chapter-9-digital-computation)
+- [10. Mechanics and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
+- [11. Control systems](#chapter-11-control-systems)
+- [12. Engineering design project](#chapter-12-engineering-design-project)
+
+### Chapter 0: Engineering design and communication
 
 **Learning goal:** Assess current algebra, units, graphing, estimation, calculator, and technical-writing skills, then establish a consistent engineering notebook format.
+
+**Subchapters:** Engineering baseline; engineering notebook; assumptions and evidence; technical communication.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Engineering solutions must show the model, assumptions, equations, units, checks, and revisions, not only a final number. The diagnostic identifies skills to review before the analytical work begins.
 :::
 
-**Deliverable:** Unmarked diagnostic, correction record, learning targets, and notebook setup.
+<details>
+<summary>What is needed</summary>
 
-### Chapter 1: Quantities, units, and scale
+| Teacher planning | Details |
+|---|---|
+| Equipment | Scientific calculator, engineering notebook |
+| Software | Spreadsheet or document editor |
+| Consumables | Graph paper or notebook paper |
+| Student deliverable | Unmarked diagnostic, correction record, learning targets, and notebook setup |
+| Teacher note | Use the diagnostic to select review work; do not grade it. |
+
+</details>
+
+### Chapter 1: Engineering calculations
 
 **Learning goal:** Use dimensional analysis, engineering notation, significant figures, ratios, rates, estimates, and compound units.
+
+**Subchapters:** Units and dimensions; engineering notation; significant figures; ratios and rates; estimation.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Units and estimates expose impossible calculator results. These habits transfer directly to every engineering discipline.
 :::
 
-**Start with:** [Number Systems, Measurement, Units, and Calculator Skills](../01-number-systems/index.qmd)
-**Deliverable:** Assignment 1: quantity and unit audit.
-**References:** [[1, Ch. 0]](../../references.qmd#ref-grob2016) [[27, Ch. 1]](../../references.qmd#ref-cengel2008) [[28, Chs. 1, 3]](../../references.qmd#ref-chapra2010)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 2: Algebraic electrical models
+| Teacher planning | Details |
+|---|---|
+| Equipment | Scientific calculator, ruler, sample component labels |
+| Software | Spreadsheet |
+| Consumables | Graph paper |
+| Start with | [Number Systems, Measurement, Units, and Calculator Skills](../01-number-systems/index.qmd) |
+| Student deliverable | Assignment 1: quantity and unit audit |
+| References | [[1, Ch. 0]](../../references.qmd#ref-grob2016) [[27, Ch. 1]](../../references.qmd#ref-cengel2008) [[28, Chs. 1, 3]](../../references.qmd#ref-chapra2010) |
+
+</details>
+
+### Chapter 2: Circuit fundamentals
 
 **Learning goal:** Rearrange electrical equations, identify proportional and inverse relationships, and apply physical limits to a design.
+
+**Subchapters:** Charge; voltage; current; resistance; algebraic models; operating limits.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Engineers must build and manipulate models rather than only substitute numbers into formulas. Physical limits separate a mathematical answer from a workable design.
 :::
 
-**Start with:** [Charge, Voltage, and Current](../02-basic-electronics/01-charge-voltage-current.qmd), [Closed, Open, and Short Circuits](../02-basic-electronics/02-circuits-opens-shorts.qmd), and [Ohm's Law](../02-basic-electronics/03-ohms-law.qmd).
-**Deliverable:** Assignment 2: resistive design brief, after the [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf).
-**Reference:** [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 3: Series and parallel networks
+| Teacher planning | Details |
+|---|---|
+| Equipment | Scientific calculator; optional breadboard, meter, and low-voltage source |
+| Software | Circuit simulator |
+| Consumables | Resistors and hookup wire if built physically |
+| Start with | [Charge, Voltage, and Current](../02-basic-electronics/01-charge-voltage-current.qmd), [Closed, Open, and Short Circuits](../02-basic-electronics/02-circuits-opens-shorts.qmd), [Ohm's Law](../02-basic-electronics/03-ohms-law.qmd), and the [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf) |
+| Student deliverable | Assignment 2: resistive design brief |
+| Reference | [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016) |
+
+</details>
+
+### Chapter 3: Linear circuits
 
 **Learning goal:** Derive and apply the current, voltage, resistance, and power rules for series, parallel, and mixed circuits.
+
+**Subchapters:** Series circuits; parallel circuits; series-parallel circuits; equivalent resistance; electrical power.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Circuit rules are examples of conservation and equivalent modelling. Independent checks make a solution defensible.
 :::
 
-**Deliverable:** Assignment 3: series-parallel design proof.
-**Reference:** [[1, Chs. 4–6]](../../references.qmd#ref-grob2016)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 4: Coupled equations and Kirchhoff's laws
+| Teacher planning | Details |
+|---|---|
+| Equipment | Scientific calculator; optional breadboard, meter, and low-voltage source |
+| Software | Circuit simulator |
+| Consumables | Resistors and hookup wire |
+| Student deliverable | Assignment 3: series-parallel design proof |
+| Reference | [[1, Chs. 4–6]](../../references.qmd#ref-grob2016) |
+
+</details>
+
+### Chapter 4: Linear algebra for engineering
 
 **Learning goal:** Form and solve two- and three-variable linear systems from branch, node, and loop equations, then verify the result.
+
+**Subchapters:** Systems of linear equations; Kirchhoff's current law; Kirchhoff's voltage law; matrices; residual and power checks.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Coupled equations appear in circuits, structures, processes, controls, and data models. Residual and power checks show whether the complete model is consistent.
 :::
 
-**Deliverable:** Assignment 4: branch-current system solved by hand and checked with software.
-**References:** [[1, Chs. 7, 9]](../../references.qmd#ref-grob2016) [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 5: Equivalent models and optimization
+| Teacher planning | Details |
+|---|---|
+| Equipment | Scientific calculator |
+| Software | Spreadsheet or equation-solving software; circuit simulator |
+| Consumables | Graph paper |
+| Student deliverable | Assignment 4: branch-current system solved by hand and checked with software |
+| References | [[1, Chs. 7, 9]](../../references.qmd#ref-grob2016) [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010) |
+
+</details>
+
+### Chapter 5: Modelling and optimization
 
 **Learning goal:** Replace a network with a useful terminal model and compare designs using constraints, sensitivity, efficiency, safety, and cost.
+
+**Subchapters:** Equivalent models; design variables; objective functions; constraints; sensitivity; trade-offs.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Engineering decisions rarely have one perfect answer. Maximum power, maximum efficiency, minimum cost, and lowest temperature may require different designs.
 :::
 
-**Deliverable:** Assignment 5: source and load optimization memo.
-**References:** [[1, Ch. 10]](../../references.qmd#ref-grob2016) [[28, Chs. 13–16]](../../references.qmd#ref-chapra2010)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 6: Power and energy balances
+| Teacher planning | Details |
+|---|---|
+| Equipment | Scientific calculator |
+| Software | Spreadsheet and circuit simulator |
+| Consumables | No special consumables |
+| Student deliverable | Assignment 5: source and load optimization memo |
+| References | [[1, Ch. 10]](../../references.qmd#ref-grob2016) [[28, Chs. 13–16]](../../references.qmd#ref-chapra2010) |
+
+</details>
+
+### Chapter 6: Material and energy balances
 
 **Learning goal:** Define a system boundary and use input, output, accumulation, loss, and efficiency to model electrical and thermal energy.
+
+**Subchapters:** System boundaries; process variables; material balances; energy balances; accumulation; efficiency.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Energy balances connect electronics to computer, mechanical, chemical, and environmental systems. Comparing input with stored energy also introduces loss and model calibration.
 :::
 
-**Start with:** [Power and Energy](../02-basic-electronics/04-power-energy.qmd) and the [Computer Power and Parts mission](../computer-systems/computer-power-parts.qmd).
-**Deliverables:** Assignment 6: energy audit; Lab 1: supervised low-voltage thermal balance.
-**References:** [[1, Chs. 1, 12]](../../references.qmd#ref-grob2016) [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)
+<details>
+<summary>What is needed</summary>
+
+| Teacher planning | Details |
+|---|---|
+| Equipment | Protected low-voltage source, meters, temperature sensor, insulated water container, secondary containment |
+| Software | Spreadsheet or data-logging software |
+| Consumables | Water, paper towel, labels |
+| Start with | [Power and Energy](../02-basic-electronics/04-power-energy.qmd) and the [Computer Power and Parts mission](../computer-systems/computer-power-parts.qmd) |
+| Student deliverables | Assignment 6: energy audit; Lab 1: supervised low-voltage thermal balance |
+| References | [[1, Chs. 1, 12]](../../references.qmd#ref-grob2016) [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008) |
+
+</details>
 
 ::: {.callout-important title="Safety boundary"}
 Use only teacher-approved protected low-voltage equipment. Students do not construct or probe mains circuits. Isolate liquids from exposed electronics and define temperature, current, containment, and shutdown limits before testing.
 :::
 
-### Chapter 7: Measurement, calibration, and uncertainty
+### Chapter 7: Engineering laboratory and instrumentation
 
 **Learning goal:** Collect repeatable data, fit a suitable model, inspect residuals, and state its valid range and uncertainty.
+
+**Subchapters:** Measurement; sensors and instrumentation; calibration; regression; residuals; uncertainty.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Measurements become useful evidence only when their limits are understood. Calibration and uncertainty affect every engineering discipline.
 :::
 
-**Deliverable:** Lab 2: sensor calibration and model check.
-**References:** [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3, 4, 17, 20]](../../references.qmd#ref-chapra2010)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 8: Transient and step-by-step systems
+| Teacher planning | Details |
+|---|---|
+| Equipment | Sensor, reference instrument, data-collection setup |
+| Software | Spreadsheet with graphing and regression |
+| Consumables | Labels and test samples appropriate to the sensor |
+| Student deliverable | Lab 2: sensor calibration and model check |
+| References | [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3, 4, 17, 20]](../../references.qmd#ref-chapra2010) |
+
+</details>
+
+### Chapter 8: Process dynamics and numerical modelling
 
 **Learning goal:** Model an electrical or thermal system that changes with time using a time constant or a step-by-step spreadsheet or program.
+
+**Subchapters:** Transient response; time constants; dynamic models; numerical stepping; model stability.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Real systems take time to charge, heat, cool, accelerate, and settle. Numerical stepping builds intuition for later differential-equation models.
 :::
 
-**Deliverable:** Assignment 7: resistor-capacitor or thermal transient model.
-**References:** [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 9: Logic, algorithms, and state
+| Teacher planning | Details |
+|---|---|
+| Equipment | Optional resistor-capacitor circuit or thermal test setup |
+| Software | Spreadsheet or programming environment; circuit simulator |
+| Consumables | Resistors, capacitors, hookup wire, or thermal-test materials |
+| Student deliverable | Assignment 7: resistor-capacitor or thermal transient model |
+| References | [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010) |
+
+</details>
+
+### Chapter 9: Digital computation
 
 **Learning goal:** Translate logic, equations, and state behaviour into truth tables, algorithms, tested programs, and state-transition diagrams.
+
+**Subchapters:** Boolean logic; truth tables; algorithms; data structures; state machines; testing.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Programming makes a model repeatable and testable. Truth tables and state machines bridge mathematical conditions and safe embedded-system behaviour.
 :::
 
-**Start with:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd) and the [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf).
-**Deliverables:** Assignment 8: engineering calculation program; Assignment 9: safety state machine.
-**Reference:** [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 10: Electromechanical systems
+| Teacher planning | Details |
+|---|---|
+| Equipment | Computer; optional microcontroller and protected input circuit |
+| Software | Programming environment and logic or circuit simulator |
+| Consumables | Jumper wire, switches, resistors, LEDs if built physically |
+| Start with | [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd) and the [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf) |
+| Student deliverables | Assignment 8: engineering calculation program; Assignment 9: safety state machine |
+| Reference | [[28, Ch. 2]](../../references.qmd#ref-chapra2010) |
+
+</details>
+
+### Chapter 10: Mechanics and electromechanical systems
 
 **Learning goal:** Relate electrical input to torque, speed, motion or flow, mechanical power, efficiency, and safe operating limits.
+
+**Subchapters:** Force and motion; torque; rotational speed; electrical power; mechanical power; efficiency.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Motors, pumps, fans, and actuators join electrical and mechanical systems. Current, temperature, speed, load, and efficiency cannot all be optimized independently.
 :::
 
-**Deliverable:** Lab 3: actuator characterization.
-**Reference:** [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 11: Feedback, models, and design decisions
+| Teacher planning | Details |
+|---|---|
+| Equipment | Protected low-voltage supply, motor or pump, driver, meter, speed or flow measurement |
+| Software | Spreadsheet or data-logging software |
+| Consumables | Hookup wire, connectors, fuses, mounting materials |
+| Student deliverable | Lab 3: actuator characterization |
+| Reference | [[1, Chs. 13–14]](../../references.qmd#ref-grob2016) |
+
+</details>
+
+### Chapter 11: Control systems
 
 **Learning goal:** Compare open-loop, on-off, hysteresis, proportional, proportional-integral, and proportional-integral-derivative control using common response evidence.
+
+**Subchapters:** Open-loop control; feedback; process control; response; stability; saturation; safety.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 Feedback responds to disturbances but introduces trade-offs involving speed, overshoot, error, saturation, stability, and safety.
 :::
 
-**Start with:** [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd).
-**Deliverable:** Assignment 10: control-method comparison, using the [Control Methods Comparison handout](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf).
-**References:** [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010)
+<details>
+<summary>What is needed</summary>
 
-### Chapter 12: Integrated engineering project
+| Teacher planning | Details |
+|---|---|
+| Equipment | Computer; optional controller, sensor, and actuator setup |
+| Software | Control-system simulator, spreadsheet, or programming environment |
+| Consumables | Project-specific hookup wire and mounting materials |
+| Start with | [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd) and the [Control Methods Comparison handout](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf) |
+| Student deliverable | Assignment 10: control-method comparison |
+| References | [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010) |
+
+</details>
+
+### Chapter 12: Engineering design project
 
 **Learning goal:** Design, model, build or simulate, program, measure, validate, revise, and explain an instrumented system.
+
+**Subchapters:** Requirements; engineering design; prototype; experiment; validation; optimization; technical communication.
 
 ::: {.callout-note collapse="true" title="Why it matters"}
 The project brings mathematical reasoning, construction, safety, data, programming, and communication into one engineering workflow. Strong work includes evidence of revision, not just a working prototype.
 :::
 
-**Recommended project:** Instrumented low-voltage thermal process controller. Alternatives may include a motor or pump test stand, battery and thermal monitor, controlled fan system, tank-level simulator, or renewable-energy demonstrator.
-**Deliverable:** Project 1: requirements, model, schematic, build or approved simulation, code, validation, revision, and concise technical report.
+<details>
+<summary>What is needed</summary>
+
+| Teacher planning | Details |
+|---|---|
+| Equipment | Computer, protected low-voltage source, controller, sensors, actuator, meters, project-specific test equipment |
+| Software | Programming environment, spreadsheet, simulator, documentation tools |
+| Consumables | Approved electronic components, hookup wire, connectors, fabrication stock, fasteners |
+| Recommended project | Instrumented low-voltage thermal process controller; alternatives may use a motor, pump, battery monitor, controlled fan, tank-level simulator, or renewable-energy demonstrator |
+| Student deliverable | Project 1: requirements, model, schematic, build or approved simulation, code, validation, revision, and concise technical report |
+| Teacher note | Approve the scope, equipment, safety limits, data use, and shutdown behaviour before construction. |
+
+</details>
 
 ## Core references
 
