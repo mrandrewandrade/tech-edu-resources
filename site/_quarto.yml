@@ -232,8 +232,35 @@ website:
           href: tej3-4/index.qmd
         - text: "Curriculum Roadmap"
           href: tej3-4/curriculum/index.qmd
-        - text: "Engineering Preparation Track"
+        - section: "Engineering Preparation Track"
           href: tej3-4/engineering-preparation-track/index.qmd
+          contents:
+            - text: "0. Design & Communication"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-0-engineering-design-and-communication
+            - text: "1. Engineering Calculations"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-1-engineering-calculations
+            - text: "2. Circuit Fundamentals"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-2-circuit-fundamentals
+            - text: "3. Linear Circuits"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-3-linear-circuits
+            - text: "4. Linear Algebra"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-4-linear-algebra-for-engineering
+            - text: "5. Modelling & Optimization"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-5-modelling-and-optimization
+            - text: "6. Material & Energy Balances"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-6-material-and-energy-balances
+            - text: "7. Laboratory & Instrumentation"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-7-engineering-laboratory-and-instrumentation
+            - text: "8. Process Dynamics"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-8-process-dynamics-and-numerical-modelling
+            - text: "9. Digital Computation"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-9-digital-computation
+            - text: "10. Electromechanical Systems"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-10-mechanics-and-electromechanical-systems
+            - text: "11. Control Systems"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-11-control-systems
+            - text: "12. Engineering Design Project"
+              href: tej3-4/engineering-preparation-track/index.qmd#chapter-12-engineering-design-project
         - section: "0. Orientation, Safety & Design"
           href: tej3-4/00-expectations/index.qmd
           contents: []
@@ -372,7 +399,7 @@ website:
               href: tej3-4/05-control-systems/c10-cnc.qmd
             - text: "C11 Culminating Project"
               href: tej3-4/05-control-systems/c11-culminating-project.qmd
-        - section: "Electronics Library"
+        - section: "Reference & Enhancement Library"
           href: tej3-4/electronics-library/index.qmd
           contents:
             - text: "H01 Safety & Lab Practice"

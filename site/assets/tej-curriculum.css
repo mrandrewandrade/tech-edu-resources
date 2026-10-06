@@ -87,16 +87,3 @@
   .tej-roadmap-filter-row { display: none; }
   .tej-roadmap-module { break-inside: avoid; box-shadow: none; }
 }
-.engineering-preparation-track .callout-note {
-  border: 1px solid var(--bs-border-color, #d7d9dc);
-  background: transparent;
-}
-
-.engineering-preparation-track .callout-note .callout-header {
-  color: var(--bs-body-color, #242629);
-  background: #f5f5f3;
-}
-
-.engineering-preparation-track .callout-note .callout-icon-container {
-  display: none;
-}

@@ -50,6 +50,46 @@ ALLOWED_ACCESS = {
 }
 ALLOWED_PATHWAYS = {"core", "extension", "side quest", "bonus"}
 
+ROADMAP_WHY = {
+    "0": "Safe, documented work is the foundation for every build, investigation, and engineering decision.",
+    "1": "Units, scale, estimation, and calculator fluency make technical results understandable and trustworthy.",
+    "2": "These quantities explain how electrical systems transfer energy and why components behave as they do.",
+    "3": "Circuit analysis turns schematics into predictions that can be checked by simulation and measurement.",
+    "4": "Readable schematics, careful construction, and correct measurement make troubleshooting possible.",
+    "5": "Component knowledge lets students select, connect, protect, and test useful electronic circuits.",
+    "6": "Stable inputs and Boolean logic connect physical switches and sensors to dependable digital decisions.",
+    "7": "Fabrication turns a tested design into a durable, repeatable physical product.",
+    "8": "Computer hardware work connects electrical principles to real systems, maintenance, repair, and reuse.",
+    "9": "Operating-system knowledge gives students control over files, software, permissions, and system behaviour.",
+    "10": "Programming turns a process or calculation into a repeatable tool that can handle inputs and errors.",
+    "11": "Physical computing joins code, sensors, outputs, timing, and electrical protection in one system.",
+    "12": "Networking explains how devices communicate and how small services are operated safely.",
+    "13": "Data science helps students turn measurements into evidence while recognizing uncertainty and bias.",
+    "14": "Understanding language models helps students use, test, and evaluate artificial intelligence responsibly.",
+    "15": "A culminating project combines design, construction, programming, testing, revision, and communication.",
+    "16": "Control systems show how sensing, decisions, and feedback produce safe, useful machine behaviour.",
+}
+
+ROADMAP_OUTCOMES = {
+    "0": "Work safely, document decisions, cite sources, and keep a usable design record.",
+    "1": "Convert technical quantities, use engineering notation, estimate results, and present calculations clearly.",
+    "2": "Explain and calculate voltage, current, resistance, power, energy, opens, shorts, and source behaviour.",
+    "3": "Solve and verify series, parallel, and mixed circuits and diagnose common faults.",
+    "4": "Build from a schematic, measure safely, compare predicted and measured values, and locate wiring errors.",
+    "5": "Design and test sensor, timing, switching, power-supply, and actuator-interface circuits.",
+    "6": "Build stable switch inputs, complete truth tables, analyze logic, and create a small digital system.",
+    "7": "Prepare a manufacturable design and produce a soldered, printed, laser-cut, or machined result.",
+    "8": "Identify, assemble, commission, benchmark, troubleshoot, upgrade, and document a computer.",
+    "9": "Install and use Linux, manage files and permissions, run commands, and complete basic administration.",
+    "10": "Write, test, debug, and document programs that calculate, model, process data, or control a task.",
+    "11": "Create a protected sensor-and-actuator system using a microcontroller or single-board computer.",
+    "12": "Configure and diagnose a small network or classroom service using defensive administration practices.",
+    "13": "Clean, visualize, model, and evaluate a non-personal dataset and explain the limits of the result.",
+    "14": "Build or evaluate a small grounded artificial-intelligence application with documented tests and limits.",
+    "15": "Deliver a working or simulated technology project supported by evidence, revision, and a technical explanation.",
+    "16": "Model or build a feedback-controlled system with safe states, interlocks, and measured response.",
+}
+
 
 def as_list(value: Any) -> list[str]:
     if value in (None, "", []):
@@ -57,11 +97,6 @@ def as_list(value: Any) -> list[str]:
     if isinstance(value, list):
         return [str(item) for item in value]
     return [str(value)]
-
-
-def display_list(value: Any, empty: str = "None") -> str:
-    items = as_list(value)
-    return ", ".join(html.escape(item) for item in items) if items else empty
 
 
 def validate_record(record: dict[str, Any], identity: str) -> None:
@@ -101,86 +136,32 @@ def effective_modules(unit: dict[str, Any]) -> list[dict[str, Any]]:
     return result
 
 
-def render_module(module: dict[str, Any]) -> str:
-    status_slug = str(module["status"]).lower().replace(" ", "-")
-    pathway_slug = str(module["pathway"]).lower().replace(" ", "-")
-    access_slug = str(module["access_level"]).lower().replace(" ", "-")
-    search_terms = " ".join(
-        [
-            str(module["module_id"]),
-            str(module["title"]),
-            str(module["short_description"]),
-            *as_list(module["equipment"]),
-            *as_list(module["software"]),
-        ]
-    )
-    notes = str(module["public_notes_route"] or "Not yet available")
-    if notes.endswith(".qmd"):
-        notes_markup = link_or_text("Public notes", notes)
-    else:
-        notes_markup = f"**Public notes:** {html.escape(notes)}"
-    return f"""
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="{status_slug}" data-pathway="{pathway_slug}" data-access="{access_slug}" data-search="{html.escape(search_terms, quote=True)}">
-<div class="tej-roadmap-module-heading">
-<h3>{html.escape(str(module['module_id']))}: {html.escape(str(module['title']))}</h3>
-</div>
-<p>{html.escape(str(module['short_description']))}</p>
-<details>
-<summary>Materials, deliverables, and notes</summary>
-
-| What is needed | Details |
-|:--|:--|
-| Equipment | {display_list(module['equipment'])} |
-| Software | {display_list(module['software'])} |
-| Consumables | {display_list(module.get('consumables'), 'No special consumables')} |
-| Student deliverables | {display_list(module['student_deliverables'])} |
-| Teacher notes | {html.escape(str(module['implementation_notes']))} |
-
-{notes_markup}
-</details>
-</article>
-""".strip()
-
-
 def render_unit(unit: dict[str, Any]) -> str:
     unit_id = str(unit["unit_id"])
     validate_record(unit, f"unit {unit_id}")
     modules = effective_modules(unit)
-    module_markup = "\n\n".join(render_module(module) for module in modules)
+    subsections: list[str] = []
+    for module in modules:
+        title = str(module["title"])
+        route = str(module.get("public_notes_route", ""))
+        if route.endswith(".qmd"):
+            subsections.append(link_or_text(title, route))
+        else:
+            subsections.append(html.escape(title))
+    subsection_markup = "; ".join(subsections)
+    why = ROADMAP_WHY[unit_id]
+    outcome = ROADMAP_OUTCOMES[unit_id]
     return f"""
 ## {html.escape(unit_id)}. {html.escape(str(unit['title']))} {{#unit-{unit_id.replace('.', '-')}}}
 
-<div class="tej-roadmap-unit-summary">
-<p>{html.escape(str(unit['short_description']))}</p>
-
-| What is needed | Unit overview |
+| What students learn | Why it matters |
 |:--|:--|
-| Equipment | {display_list(unit['equipment'])} |
-| Software | {display_list(unit['software'])} |
-| Consumables | {display_list(unit.get('consumables'), 'No special consumables')} |
-| Student deliverables | {display_list(unit['student_deliverables'])} |
-| Teacher notes | {html.escape(str(unit['implementation_notes']))} |
+| {html.escape(str(unit['short_description']))} | {html.escape(why)} |
 
-{link_or_text('Public notes', unit['public_notes_route'])}
-</div>
+**Subsections:** {subsection_markup}
 
-<div class="tej-roadmap-module-grid">
-{module_markup}
-</div>
+**Coming out of this section, students can:** {html.escape(outcome)}
 """.strip()
-
-
-def render_sources(sources: list[dict[str, Any]]) -> str:
-    rows = []
-    for source in sources:
-        access = html.escape(str(source["access_level"]))
-        url = str(source.get("url", ""))
-        title = html.escape(str(source["title"]))
-        title_markup = f"[{title}]({url})" if url.startswith("http") else title
-        rows.append(
-            f"| {html.escape(str(source['source_id']))} | {title_markup} | {html.escape(str(source['use']))} | {access} | {html.escape(str(source['copyright_permissions_note']))} |"
-        )
-    return "\n".join(rows)
 
 
 def build_page(data: dict[str, Any]) -> str:
@@ -202,10 +183,9 @@ def build_page(data: dict[str, Any]) -> str:
         for unit in units
     )
     unit_markup = "\n\n".join(render_unit(unit) for unit in units)
-    source_rows = render_sources(data.get("sources", []))
     return f"""---
 title: "TEJ Curriculum Roadmap"
-description: "The complete TEJ learning pathway in teaching order, with topics, materials, software, consumables, deliverables, and notes."
+description: "A concise guide to the TEJ learning pathway, major topics, and practical outcomes."
 categories: [TEJ, curriculum roadmap, electronics, fabrication, computer systems, Linux, programming, microcontrollers, networking, machine learning, artificial intelligence]
 sidebar: tej
 page-layout: full
@@ -218,11 +198,7 @@ format:
       - ../../includes/tej-curriculum-script.html
 ---
 
-::: {{.callout-note title="How to use this roadmap"}}
-Follow the units and modules in order. Each section states what students will learn or do, what equipment, software, and consumables are needed, what students submit, and any useful teacher notes.
-:::
-
-The sequence is a planning guide. Adjust individual activities to the available equipment and the students in the class.
+Use this page as a course map. Follow the sections in order, then use the TEJ sidebar to open lessons, reference notes, worksheets, labs, projects, and optional enhancements. Detailed implementation planning belongs in the teacher guide rather than on this public roadmap.
 
 ## Full progression
 

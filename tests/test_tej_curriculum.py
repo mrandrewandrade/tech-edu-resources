@@ -44,8 +44,11 @@ class TejCurriculumTests(unittest.TestCase):
         self.assertNotIn("docs.google.com/spreadsheets", page)
         self.assertNotIn("1jlhg9kwlaaxxwbvpbg9otsc8zrvdactu9ej1p-5dtay", page)
         self.assertIn("full progression", page)
-        self.assertIn("consumables", page)
-        self.assertIn("student deliverables", page)
+        self.assertIn("what students learn", page)
+        self.assertIn("why it matters", page)
+        self.assertIn("coming out of this section", page)
+        self.assertNotIn("consumables", page)
+        self.assertNotIn("teacher notes", page)
         self.assertNotIn("data-tej-roadmap-search", page)
 
 
