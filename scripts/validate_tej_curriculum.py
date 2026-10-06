@@ -90,10 +90,13 @@ def main() -> int:
     for marker in PRIVATE_MARKERS:
         assert marker not in lowered, f"private marker found: {marker}"
 
-    assert "data-tej-roadmap-search" in combined
-    assert "data-tej-roadmap-status" in combined
-    assert "data-tej-roadmap-pathway" in combined
-    assert "data-tej-roadmap-access" in combined
+    assert "Full progression" in combined
+    assert "Equipment" in combined
+    assert "Software" in combined
+    assert "Consumables" in combined
+    assert "Student deliverables" in combined
+    assert "Teacher notes" in combined
+    assert "data-tej-roadmap-search" not in OUTPUT_PATH.read_text(encoding="utf-8")
     print(
         f"Validated {len(units)} units, {len(module_ids)} modules, "
         f"{len(data['sources'])} sources, and {len(public_routes)} public routes."

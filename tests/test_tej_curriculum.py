@@ -43,7 +43,10 @@ class TejCurriculumTests(unittest.TestCase):
         page = PAGE.read_text(encoding="utf-8").lower()
         self.assertNotIn("docs.google.com/spreadsheets", page)
         self.assertNotIn("1jlhg9kwlaaxxwbvpbg9otsc8zrvdactu9ej1p-5dtay", page)
-        self.assertIn("data-tej-roadmap-search", page)
+        self.assertIn("full progression", page)
+        self.assertIn("consumables", page)
+        self.assertIn("student deliverables", page)
+        self.assertNotIn("data-tej-roadmap-search", page)
 
 
 if __name__ == "__main__":
