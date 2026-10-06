@@ -132,7 +132,7 @@ class CourseContentTests(unittest.TestCase):
         self.assertEqual(roadmap.count("| What students learn | Why it matters |"), 17)
         self.assertEqual(roadmap.count("**Subsections:**"), 17)
         self.assertEqual(roadmap.count("**Coming out of this section, students can:**"), 17)
-        self.assertIn("use the TEJ sidebar to open lessons", roadmap)
+        self.assertIn("Use the sidebar for lessons", roadmap)
         self.assertNotIn("| Consumables |", roadmap)
         self.assertNotIn("| Teacher notes |", roadmap)
         self.assertNotIn("| Estimated time |", roadmap)

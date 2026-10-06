@@ -50,6 +50,66 @@ ALLOWED_ACCESS = {
 }
 ALLOWED_PATHWAYS = {"core", "extension", "side quest", "bonus"}
 
+ROADMAP_TITLES = {
+    "0": "Orientation, Safety, and Design",
+    "1": "Numbers, Units, and Calculator Skills",
+    "2": "Electrical Fundamentals",
+    "3": "DC Circuit Analysis",
+    "4": "Building, Schematics, and Measurement",
+    "5": "Components and Applied Circuits",
+    "6": "Digital Logic and Inputs",
+    "7": "Fabrication and PCBs",
+    "8": "Computer Systems",
+    "9": "Linux and Operating Systems",
+    "10": "Programming",
+    "11": "Microcontrollers",
+    "12": "Networking and Administration",
+    "13": "Data Science and Machine Learning",
+    "14": "Language Models and Applied AI",
+    "15": "Culminating Projects",
+    "16": "Control Systems and CNC",
+}
+
+ROADMAP_SUBSECTIONS = {
+    "0": "Safety; design process; documentation; privacy and attribution",
+    "1": "Number systems; units; significant figures; engineering notation; calculator workflow",
+    "2": "Charge; voltage; current; resistance; power and energy; AC and DC",
+    "3": "Ohm's law; series and parallel circuits; Kirchhoff's laws; dividers; troubleshooting",
+    "4": "Breadboards; schematics; simulation; multimeter use; measurement uncertainty",
+    "5": "Sensors; batteries; capacitors; diodes; transistors; timers; motors and relays",
+    "6": "Logic levels; pull-ups and pull-downs; debouncing; logic gates; truth tables; state",
+    "7": "Soldering; connectors; PCB design; manufacturing files; enclosures and fabrication",
+    "8": "Components; power; assembly; startup; Linux installation; upgrades and troubleshooting",
+    "9": "Desktop use; files and permissions; command line; software; services; backup and recovery",
+    "10": "Algorithms; variables; conditions; loops; functions; files; testing and debugging",
+    "11": "Inputs and outputs; sensors; timing; communication; actuators; state machines; data logging",
+    "12": "Addresses; protocols; diagnostics; secure remote access; services; users and backups",
+    "13": "Data preparation; visualization; regression; classification; model evaluation; responsible use",
+    "14": "Tokens; prediction; small models; prompting; grounding; evaluation; responsible use",
+    "15": "Requirements; design; build or simulation; testing; revision; technical communication",
+    "16": "Open and closed loop control; hysteresis; proportional control; PID; interlocks; motion and CNC",
+}
+
+ROADMAP_LEARNING = {
+    "0": "Work safely, follow a design process, and document decisions and sources.",
+    "1": "Use number systems, units, engineering notation, estimates, and a scientific calculator.",
+    "2": "Explain and calculate electrical quantities, power, energy, sources, and loads.",
+    "3": "Analyze and verify series, parallel, and mixed direct-current circuits.",
+    "4": "Build readable circuits and compare calculated, simulated, and measured results.",
+    "5": "Select and apply common components in useful low-voltage circuits.",
+    "6": "Create stable digital inputs and analyze combinational and sequential logic.",
+    "7": "Turn a tested prototype into a durable fabricated or manufactured result.",
+    "8": "Assemble, commission, maintain, upgrade, and troubleshoot computer hardware.",
+    "9": "Use and administer a Linux system safely from the desktop and command line.",
+    "10": "Write, test, debug, and document programs for calculations, data, and control.",
+    "11": "Connect code to protected sensors, inputs, outputs, communication, and actuators.",
+    "12": "Explain networks and operate small classroom services using defensive practices.",
+    "13": "Prepare, visualize, model, and evaluate non-personal data responsibly.",
+    "14": "Explain, use, ground, and evaluate small language-model applications responsibly.",
+    "15": "Plan, build or simulate, test, revise, and explain an integrated technology project.",
+    "16": "Model or build systems that use sensing, decisions, feedback, and safe states.",
+}
+
 ROADMAP_WHY = {
     "0": "Safe, documented work is the foundation for every build, investigation, and engineering decision.",
     "1": "Units, scale, estimation, and calculator fluency make technical results understandable and trustworthy.",
@@ -91,14 +151,6 @@ ROADMAP_OUTCOMES = {
 }
 
 
-def as_list(value: Any) -> list[str]:
-    if value in (None, "", []):
-        return []
-    if isinstance(value, list):
-        return [str(item) for item in value]
-    return [str(value)]
-
-
 def validate_record(record: dict[str, Any], identity: str) -> None:
     missing = sorted(REQUIRED_RECORD_FIELDS - set(record))
     if missing:
@@ -109,16 +161,6 @@ def validate_record(record: dict[str, Any], identity: str) -> None:
         raise ValueError(f"{identity} has invalid access level: {record['access_level']}")
     if str(record["pathway"]).lower() not in ALLOWED_PATHWAYS:
         raise ValueError(f"{identity} has invalid pathway: {record['pathway']}")
-
-
-def link_or_text(label: str, value: Any) -> str:
-    text = str(value or "Not yet available")
-    if text.startswith("http://") or text.startswith("https://"):
-        return f"[{html.escape(label)}]({text})"
-    if text.endswith(".qmd"):
-        route = "../" + text.removeprefix("tej3-4/") if text.startswith("tej3-4/") else "../../" + text
-        return f"[{html.escape(label)}]({route})"
-    return f"**{html.escape(label)}:** {html.escape(text)}"
 
 
 def effective_modules(unit: dict[str, Any]) -> list[dict[str, Any]]:
@@ -139,26 +181,17 @@ def effective_modules(unit: dict[str, Any]) -> list[dict[str, Any]]:
 def render_unit(unit: dict[str, Any]) -> str:
     unit_id = str(unit["unit_id"])
     validate_record(unit, f"unit {unit_id}")
-    modules = effective_modules(unit)
-    subsections: list[str] = []
-    for module in modules:
-        title = str(module["title"])
-        route = str(module.get("public_notes_route", ""))
-        if route.endswith(".qmd"):
-            subsections.append(link_or_text(title, route))
-        else:
-            subsections.append(html.escape(title))
-    subsection_markup = "; ".join(subsections)
+    subsection_markup = ROADMAP_SUBSECTIONS[unit_id]
     why = ROADMAP_WHY[unit_id]
     outcome = ROADMAP_OUTCOMES[unit_id]
     return f"""
-## {html.escape(unit_id)}. {html.escape(str(unit['title']))} {{#unit-{unit_id.replace('.', '-')}}}
+## {html.escape(unit_id)}. {html.escape(ROADMAP_TITLES[unit_id])} {{#unit-{unit_id.replace('.', '-')}}}
 
 | What students learn | Why it matters |
 |:--|:--|
-| {html.escape(str(unit['short_description']))} | {html.escape(why)} |
+| {html.escape(ROADMAP_LEARNING[unit_id])} | {html.escape(why)} |
 
-**Subsections:** {subsection_markup}
+**Subsections:** {html.escape(subsection_markup)}
 
 **Coming out of this section, students can:** {html.escape(outcome)}
 """.strip()
@@ -179,7 +212,7 @@ def build_page(data: dict[str, Any]) -> str:
         raise ValueError("Curriculum module IDs must be unique")
 
     unit_links = "\n".join(
-        f"- [{html.escape(str(unit['unit_id']))}. {html.escape(str(unit['title']))}](#unit-{str(unit['unit_id']).replace('.', '-')})"
+        f"- [{html.escape(str(unit['unit_id']))}. {html.escape(ROADMAP_TITLES[str(unit['unit_id'])])}](#unit-{str(unit['unit_id']).replace('.', '-')})"
         for unit in units
     )
     unit_markup = "\n\n".join(render_unit(unit) for unit in units)
@@ -198,7 +231,7 @@ format:
       - ../../includes/tej-curriculum-script.html
 ---
 
-Use this page as a course map. Follow the sections in order, then use the TEJ sidebar to open lessons, reference notes, worksheets, labs, projects, and optional enhancements. Detailed implementation planning belongs in the teacher guide rather than on this public roadmap.
+Follow the sections in order. Use the sidebar for lessons, references, labs, projects, and optional enhancements.
 
 ## Full progression
 
