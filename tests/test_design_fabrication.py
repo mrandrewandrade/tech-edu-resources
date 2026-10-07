@@ -49,6 +49,8 @@ class DesignFabricationTests(unittest.TestCase):
             "04-3d-printing/index.qmd",
             "04-3d-printing/faux-enamel-pin-jewellery.qmd",
             "tools/tool-organizer-gallery/index.qmd",
+            "tools/plate-builder/index.qmd",
+            "tools/leg-builder/index.qmd",
             "05-cnc-digital-machining/index.qmd",
             "06-textiles-soft-goods/index.qmd",
             "07-other-fabrication/index.qmd",
@@ -535,6 +537,21 @@ class DesignFabricationTests(unittest.TestCase):
         for source in ("support.brmlasers.com", "ponoko.com"):
             self.assertIn(source, calibration)
         self.assertIn("Printable calibration record", calibration)
+
+    def test_leg_builder_and_easel_mechanics_are_connected(self) -> None:
+        builder = self.read("design-fabrication/tools/leg-builder/index.qmd")
+        for label in (
+            "Straight tabbed pair", "Angled tabbed pair", "Triangular support pair",
+            "Rear easel leg", "Cross-foot pair", "Download SVG", "Copy share link",
+        ):
+            self.assertIn(label, builder)
+        script = self.read("assets/leg-builder.js")
+        for group in ("CUT_PARTS", "CUT_HOLES", "MATING_SLOTS", "FIT_COUPON", "GUIDES"):
+            self.assertIn(group, script)
+        mechanics = self.read("design-fabrication/03-laser-cutting/02-make-it-stand.qmd")
+        for concept in ("bending moment", "rear kickstand", "support footprint", "cross rail", "pivot"):
+            self.assertIn(concept, mechanics)
+        self.assertIn("tools/leg-builder/index.qmd", mechanics)
 
 
 if __name__ == "__main__":

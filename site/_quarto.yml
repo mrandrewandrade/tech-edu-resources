@@ -192,6 +192,8 @@ website:
               text: "Fabrication Planning Sheet"
             - href: design-fabrication/tools/plate-builder/index.qmd
               text: "Fabrication Plate Builder"
+            - href: design-fabrication/tools/leg-builder/index.qmd
+              text: "Laser-Cut Leg & Support Builder"
         - section: "Ideas by Technology Area"
           href: design-fabrication/applications/index.qmd
           contents:

@@ -1,0 +1,78 @@
+---
+title: "Laser-Cut Leg & Support Builder"
+description: "Generate measured straight, angled, triangular, cross-foot and easel support parts with fit-aware slots and a true-size SVG export."
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication plate-builder-page"
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="../../../assets/plate-builder.css">
+        <script src="../../../assets/leg-builder.js" defer></script>
+execute: {enabled: false}
+---
+
+Use this tool after deciding how the holder should stand. It generates **support parts**, matching slot geometry and a fit coupon. It does not prove that a stand is stable or strong enough. Measure the real material, test the joint, and load-test the assembled prototype.
+
+<div id="leg-builder" class="plate-builder">
+<form class="plate-controls" onsubmit="return false">
+<h2>Leg settings</h2>
+<div class="plate-control-section plate-fields">
+<div class="plate-field plate-field--wide"><label for="lb-preset">Starting concept</label><select id="lb-preset" data-preset><option value="">Current / custom</option><option value="straight">Straight tabbed pair</option><option value="angled">Angled tabbed pair</option><option value="triangle">Triangular support pair</option><option value="easel">Rear easel leg</option><option value="crossfoot">Cross-foot pair</option></select></div>
+<div class="plate-field plate-field--wide"><label for="lb-type">Support type</label><select id="lb-type" data-key="type"><option value="straight">Straight tabbed leg</option><option value="angled">Angled tabbed leg</option><option value="triangle">Triangular support</option><option value="easel">Rear easel leg</option><option value="crossfoot">Cross-foot pair</option></select></div>
+<div class="plate-field"><label for="lb-height">Height / length (mm)</label><input id="lb-height" data-key="height" type="number" min="1" step="0.1"></div>
+<div class="plate-field"><label for="lb-footprint">Footprint / cross-foot length (mm)</label><input id="lb-footprint" data-key="footprint" type="number" min="1" step="0.1"></div>
+<div class="plate-field"><label for="lb-leg-width">Leg / member width (mm)</label><input id="lb-leg-width" data-key="legWidth" type="number" min="1" step="0.1"></div>
+<div class="plate-field"><label for="lb-angle">Lean from vertical (degrees)</label><input id="lb-angle" data-key="angle" type="number" min="-44" max="44" step="1"></div>
+<div class="plate-field"><label for="lb-quantity">Quantity / pairs</label><input id="lb-quantity" data-key="quantity" type="number" min="1" max="4" step="1"></div>
+<div class="plate-field"><label for="lb-gap">Part gap (mm)</label><input id="lb-gap" data-key="partGap" type="number" min="0" step="0.1"></div>
+</div>
+
+<div class="plate-control-section plate-fields">
+<div class="plate-field"><label for="lb-thickness">Measured material thickness (mm)</label><input id="lb-thickness" data-key="materialThickness" type="number" min="0.1" step="0.01"></div>
+<div class="plate-field"><label for="lb-fit">Total fit adjustment (mm)</label><input id="lb-fit" data-key="fitAdjustment" type="number" step="0.01"></div>
+<div class="plate-field"><label for="lb-tab-width">Tab length (mm)</label><input id="lb-tab-width" data-key="tabWidth" type="number" min="0.1" step="0.1"></div>
+<div class="plate-field"><label for="lb-tab-depth">Tab depth (mm)</label><input id="lb-tab-depth" data-key="tabDepth" type="number" min="0.1" step="0.1"></div>
+<label class="plate-check"><input data-key="includeSlots" type="checkbox"> Include separate matching slots</label>
+<label class="plate-check"><input data-key="includeCoupon" type="checkbox"> Include one fit coupon</label>
+</div>
+
+<div class="plate-control-section plate-fields">
+<div class="plate-field"><label for="lb-pivot">Pivot-hole diameter (mm)</label><input id="lb-pivot" data-key="pivotDiameter" type="number" min="0.1" step="0.1"></div>
+<div class="plate-field"><label for="lb-pivot-offset">Pivot centre from end (mm)</label><input id="lb-pivot-offset" data-key="pivotOffset" type="number" min="0.1" step="0.1"></div>
+<div class="plate-field"><label for="lb-radius">Easel-leg corner radius (mm)</label><input id="lb-radius" data-key="cornerRadius" type="number" min="0" step="0.1"></div>
+<label class="plate-check"><input data-key="previewGuides" type="checkbox"> Show preview guides</label>
+<label class="plate-check"><input data-key="exportGuides" type="checkbox"> Include guides in export</label>
+</div>
+
+<div class="plate-actions"><button type="button" data-download>Download SVG</button><button type="button" data-json>Settings JSON</button><button type="button" data-copy>Copy share link</button><button type="button" data-reset>Reset</button></div>
+</form>
+
+<section class="plate-workspace" aria-live="polite">
+<div class="plate-summary"><span>Calculated slot: <strong data-slot-width></strong></span><span>Cut parts: <strong data-count></strong></span><span>Thickness factor vs 3 mm: <strong data-stiffness></strong></span><span>Units: <strong>mm</strong></span></div>
+<div class="plate-preview" data-preview></div>
+<div class="plate-status" data-status></div>
+</section>
+</div>
+
+## Choose the support by the force path
+
+- **Straight tabbed leg:** compact and easy to place, but it can act like a cantilever when the load is offset.
+- **Angled tabbed leg:** moves the contact point outward and increases the footprint. Use a pair so the holder does not twist.
+- **Triangular support:** turns bending into a shorter compression path and is usually the stiffest simple side profile.
+- **Rear easel leg:** works with a front frame and pivot to make a three-point footprint. Keep useful material around the pivot hole.
+- **Cross-foot pair:** two half-slotted strips make a wide, removable base. Test the slot because both parts depend on the same fit.
+
+The purple coupon tests the chosen tab length and calculated slot width. Blue slot rectangles are **mating geometry to position in the holder plate**, not separate finished parts.
+
+## Before cutting
+
+1. Measure the actual sheet thickness in several places.
+2. Cut the fit coupon before the complete legs.
+3. Open the SVG in Inkscape and confirm its millimetre dimensions at 100% scale.
+4. Place matching slots in the holder plate and check that each slot has enough material around it.
+5. Prototype in cardboard or scrap stock.
+6. Assemble the real holder and test front-to-back and side-to-side tipping.
+
+Read [Make It Stand](../../03-laser-cutting/02-make-it-stand.qmd) for the easel force diagrams, bending explanation, starting proportions and external reference templates. Use the [Fabrication Plate Builder](../plate-builder/index.qmd) for the holder plate and repeated holes.
