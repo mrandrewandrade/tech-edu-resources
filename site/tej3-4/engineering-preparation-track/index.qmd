@@ -28,11 +28,12 @@ The chapter names use terminology found in current University of Waterloo engine
 - [7. Sensors, measurement, calibration, and uncertainty](#chapter-7-engineering-laboratory-and-instrumentation)
 - [8. Curve fitting, regression, and machine learning](#chapter-8-curve-fitting-regression-and-machine-learning)
 - [9. Resistor-capacitor and thermal transients](#chapter-8-process-dynamics-and-numerical-modelling)
-- [10. Number systems and digital representation](#chapter-10-number-systems-and-digital-representation)
+- [10. Motors and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
 - [11. Boolean logic, algorithms, and state machines](#chapter-9-digital-computation)
-- [12. Motors and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
-- [13. Feedback and control systems](#chapter-11-control-systems)
-- [14. Engineering design project](#chapter-12-engineering-design-project)
+- [12. Sensor, logic, and actuator project](#chapter-12-sensor-logic-actuator-project)
+- [13. Number systems and digital representation](#chapter-10-number-systems-and-digital-representation)
+- [14. Feedback and control systems](#chapter-11-control-systems)
+- [15. Engineering design project](#chapter-12-engineering-design-project)
 
 ## 0. Engineering design and communication {#chapter-0-engineering-design-and-communication}
 
@@ -252,56 +253,7 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **References:** [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010)
 
-## 10. Number systems and digital representation {#chapter-10-number-systems-and-digital-representation}
-
-**Learning goal:** Represent values in binary, decimal, and hexadecimal; interpret bits, bytes, words, Boolean values, signed and unsigned integers, two's complement, fixed-point and floating-point numbers, range, resolution, and overflow.
-
-**Why it matters:** A computer can only store a limited pattern of bits, so the representation determines which values it can use and what can go wrong.
-
-**Subsections:**
-
-1. Binary, decimal, and hexadecimal
-2. Bits, bytes, and words
-3. Boolean values
-4. Unsigned integers
-5. Signed integers and two's complement
-6. Fixed-point and floating-point representation
-7. Range, resolution, quantization, and overflow
-
-**Coming out of this chapter, students can:** convert common number representations, choose a suitable data type, and predict range, resolution, and overflow problems.
-
-**Computer-engineering branch:** This chapter and the next connect number representation to logic, programs, and embedded systems.
-
-**Related TEJ resources:** [Number Systems](../01-number-systems/index.qmd) and [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
-
-**Suggested work:** Digital representation worksheet using sensor readings, integer ranges, hexadecimal values, and overflow cases.
-
-**Reference:** [[1]](../../references.qmd#ref-grob2016)
-
-## 11. Boolean logic, algorithms, and state machines {#chapter-9-digital-computation}
-
-**Learning goal:** Use Boolean operators, logic gates, truth tables, algorithms, conditions, programs, state diagrams, and test cases.
-
-**Why it matters:** These tools turn rules and decisions into systems that can be tested.
-
-**Subsections:**
-
-1. Boolean logic
-2. Truth tables
-3. Algorithms
-4. Data structures
-5. State machines
-6. Testing
-
-**Coming out of this chapter, students can:** create a calculation program or safe state-machine design with documented tests.
-
-**Related TEJ resources:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
-
-**Suggested work:** Assignment 8: engineering calculation program; Assignment 9: safety state machine; [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf).
-
-**Reference:** [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
-
-## 12. Motors and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
+## 10. Motors and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
 
 **Learning goal:** Calculate force, torque, rotational speed, electrical input power, mechanical output power, efficiency, and operating limits.
 
@@ -322,7 +274,82 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **Reference:** [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
 
-## 13. Feedback and control systems {#chapter-11-control-systems}
+## 11. Boolean logic, algorithms, and state machines {#chapter-9-digital-computation}
+
+**Learning goal:** Use Boolean operators, logic gates, truth tables, algorithms, conditions, programs, state diagrams, and test cases.
+
+**Why it matters:** These tools turn rules and decisions into systems that can be tested.
+
+**Subsections:**
+
+1. Boolean logic
+2. Truth tables
+3. Algorithms
+4. Data structures
+5. State machines
+6. Testing
+
+**Coming out of this chapter, students can:** create a calculation program or safe state-machine design with documented tests.
+
+**Computer-engineering branch:** Chapters 11–13 connect logic states, physical outputs, and digital number representation.
+
+**Related TEJ resources:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
+
+**Suggested work:** Assignment 8: engineering calculation program; Assignment 9: safety state machine; [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf).
+
+**Reference:** [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
+
+## 12. Sensor, logic, and actuator project {#chapter-12-sensor-logic-actuator-project}
+
+**Learning goal:** Combine sensor inputs, thresholds, Boolean expressions, truth tables, or state rules to control a motor, fan, relay, alarm, or indicator through a suitable driver circuit.
+
+**Why it matters:** This project joins sensing, decision making, and physical action in one working system.
+
+**Subsections:**
+
+1. Input requirements and sensor thresholds
+2. Stable inputs and signal conditioning
+3. Truth table and Boolean expression
+4. Output driver and flyback protection
+5. Motor, relay, alarm, or indicator output
+6. Safe states and interlocks
+7. Test cases and fault handling
+
+**Coming out of this chapter, students can:** build or simulate a system that reads sensor states, applies documented logic, and safely controls a physical output.
+
+**Related TEJ resources:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd) and [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd)
+
+**Suggested work:** Project: sensor-controlled motor, fan, relay, alarm, or indicator with a truth table, schematic, safe output driver, tests, and short explanation.
+
+**Safety:** Use teacher-approved low-voltage equipment, motor or relay drivers, current limiting, and flyback protection where required.
+
+**References:** [[1, Chs. 13–14]](../../references.qmd#ref-grob2016) [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
+
+## 13. Number systems and digital representation {#chapter-10-number-systems-and-digital-representation}
+
+**Learning goal:** Represent values in binary, decimal, and hexadecimal; interpret bits, bytes, words, Boolean values, signed and unsigned integers, two's complement, fixed-point and floating-point numbers, range, resolution, and overflow.
+
+**Why it matters:** A computer can only store a limited pattern of bits, so the representation determines which values it can use and what can go wrong.
+
+**Subsections:**
+
+1. Binary, decimal, and hexadecimal
+2. Bits, bytes, and words
+3. Boolean values
+4. Unsigned integers
+5. Signed integers and two's complement
+6. Fixed-point and floating-point representation
+7. Range, resolution, quantization, and overflow
+
+**Coming out of this chapter, students can:** convert common number representations, choose a suitable data type, and predict range, resolution, and overflow problems.
+
+**Related TEJ resources:** [Number Systems](../01-number-systems/index.qmd) and [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
+
+**Suggested work:** Digital representation worksheet using sensor readings, integer ranges, hexadecimal values, and overflow cases.
+
+**Reference:** [[1]](../../references.qmd#ref-grob2016)
+
+## 14. Feedback and control systems {#chapter-11-control-systems}
 
 **Learning goal:** Compare open-loop, on-off, hysteresis, proportional, integral, and derivative control using rise time, overshoot, steady-state error, stability, and saturation.
 
@@ -346,7 +373,7 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **References:** [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010)
 
-## 14. Engineering design project {#chapter-12-engineering-design-project}
+## 15. Engineering design project {#chapter-12-engineering-design-project}
 
 **Learning goal:** Write requirements; create a model, schematic, and program; select sensors and actuators; build or simulate; test, validate, and revise.
 
