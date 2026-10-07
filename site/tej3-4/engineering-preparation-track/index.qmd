@@ -34,11 +34,16 @@ The chapter names use terminology found in current University of Waterloo engine
 
 ## 0. Engineering design and communication {#chapter-0-engineering-design-and-communication}
 
-| What students learn | Why it matters |
-|---|---|
-| Use an engineering notebook to record requirements, assumptions, diagrams, equations, units, test results, and revisions. | Clear records make work easier to check, improve, and explain. |
+**Learning goal:** Use an engineering notebook to record requirements, assumptions, diagrams, equations, units, test results, and revisions.
 
-**Subsections:** Engineering baseline; engineering notebook; assumptions and evidence; technical communication.
+**Why it matters:** Clear records make work easier to check, improve, and explain.
+
+**Subsections:**
+
+1. Engineering baseline
+2. Engineering notebook
+3. Assumptions and evidence
+4. Technical communication
 
 **Coming out of this chapter, students can:** document a technical problem and show a complete, checkable solution process.
 
@@ -46,11 +51,17 @@ The chapter names use terminology found in current University of Waterloo engine
 
 ## 1. Units, engineering notation, and estimation {#chapter-1-engineering-calculations}
 
-| What students learn | Why it matters |
-|---|---|
-| Convert International System of Units quantities and metric prefixes; use engineering notation, significant figures, dimensional analysis, ratios, rates, and estimation. | Good units and estimates help catch calculator mistakes. |
+**Learning goal:** Convert International System of Units quantities and metric prefixes; use engineering notation, significant figures, dimensional analysis, ratios, rates, and estimation.
 
-**Subsections:** Units and dimensions; engineering notation; significant figures; ratios and rates; estimation.
+**Why it matters:** Good units and estimates help catch calculator mistakes.
+
+**Subsections:**
+
+1. Units and dimensions
+2. Engineering notation
+3. Significant figures
+4. Ratios and rates
+5. Estimation
 
 **Coming out of this chapter, students can:** convert, estimate, calculate, and communicate technical quantities reliably.
 
@@ -62,11 +73,19 @@ The chapter names use terminology found in current University of Waterloo engine
 
 ## 2. Ohm's law and electrical power {#chapter-2-circuit-fundamentals}
 
-| What students learn | Why it matters |
-|---|---|
-| Calculate voltage, current, resistance, and power using Ohm's law and the power equations; rearrange equations and check component limits. | These calculations predict whether a circuit will work safely. |
+**Learning goal:** Calculate voltage, current, resistance, and power using Ohm's law and the power equations; rearrange equations and check component limits.
 
-**Subsections:** Charge; voltage; current; resistance; Ohm's law; electrical power; operating limits.
+**Why it matters:** These calculations predict whether a circuit will work safely.
+
+**Subsections:**
+
+1. Charge
+2. Voltage
+3. Current
+4. Resistance
+5. Ohm's law
+6. Electrical power
+7. Operating limits
 
 **Coming out of this chapter, students can:** derive and check a resistive design rather than only substitute into a formula.
 
@@ -78,11 +97,17 @@ The chapter names use terminology found in current University of Waterloo engine
 
 ## 3. Series, parallel, and series-parallel circuits {#chapter-3-linear-circuits}
 
-| What students learn | Why it matters |
-|---|---|
-| Calculate equivalent resistance, source current, branch current, voltage drops, and power in series, parallel, and series-parallel resistor circuits. | Students can predict circuit behaviour before building and find faults afterward. |
+**Learning goal:** Calculate equivalent resistance, source current, branch current, voltage drops, and power in series, parallel, and series-parallel resistor circuits.
 
-**Subsections:** Series resistance and voltage drops; parallel resistance and branch currents; series-parallel reduction; current and voltage checks; power checks.
+**Why it matters:** Students can predict circuit behaviour before building and find faults afterward.
+
+**Subsections:**
+
+1. Series resistance and voltage drops
+2. Parallel resistance and branch currents
+3. Series-parallel reduction
+4. Current and voltage checks
+5. Power checks
 
 **Coming out of this chapter, students can:** solve a network and prove the solution with voltage, current, resistance, and power checks.
 
@@ -92,11 +117,17 @@ The chapter names use terminology found in current University of Waterloo engine
 
 ## 4. Kirchhoff's laws and systems of equations {#chapter-4-linear-algebra-for-engineering}
 
-| What students learn | Why it matters |
-|---|---|
-| Apply Kirchhoff's current law at nodes and Kirchhoff's voltage law around loops; write, solve, and check two- and three-variable linear systems. | Many real circuits cannot be solved with one equation. |
+**Learning goal:** Apply Kirchhoff's current law at nodes and Kirchhoff's voltage law around loops; write, solve, and check two- and three-variable linear systems.
 
-**Subsections:** Systems of linear equations; Kirchhoff's current law; Kirchhoff's voltage law; matrices; residual and power checks.
+**Why it matters:** Many real circuits cannot be solved with one equation.
+
+**Subsections:**
+
+1. Systems of linear equations
+2. Kirchhoff's current law
+3. Kirchhoff's voltage law
+4. Matrices
+5. Residual and power checks
 
 **Coming out of this chapter, students can:** translate a physical network into simultaneous equations and verify the solution by hand and with software.
 
@@ -106,11 +137,18 @@ The chapter names use terminology found in current University of Waterloo engine
 
 ## 5. Equivalent circuits and optimization {#chapter-5-modelling-and-optimization}
 
-| What students learn | Why it matters |
-|---|---|
-| Use voltage and current dividers, Thévenin and Norton equivalent circuits, source and load models, maximum power transfer, constraints, and sensitivity. | A simpler model makes a complex design easier to compare and improve. |
+**Learning goal:** Use voltage and current dividers, Thévenin and Norton equivalent circuits, source and load models, maximum power transfer, constraints, and sensitivity.
 
-**Subsections:** Voltage and current dividers; Thévenin and Norton equivalents; source and load models; maximum power transfer; constraints; sensitivity.
+**Why it matters:** A simpler model makes a complex design easier to compare and improve.
+
+**Subsections:**
+
+1. Voltage and current dividers
+2. Thévenin and Norton equivalents
+3. Source and load models
+4. Maximum power transfer
+5. Constraints
+6. Sensitivity
 
 **Coming out of this chapter, students can:** recommend a design and defend it using a model, constraints, evidence, and trade-offs.
 
@@ -120,11 +158,18 @@ The chapter names use terminology found in current University of Waterloo engine
 
 ## 6. Material and energy balances {#chapter-6-material-and-energy-balances}
 
-| What students learn | Why it matters |
-|---|---|
-| Draw a system boundary and calculate material or energy input, output, accumulation, loss, and efficiency. | A balance shows where material or energy goes and what is being lost. |
+**Learning goal:** Draw a system boundary and calculate material or energy input, output, accumulation, loss, and efficiency.
 
-**Subsections:** System boundaries; process variables; material balances; energy balances; accumulation; efficiency.
+**Why it matters:** A balance shows where material or energy goes and what is being lost.
+
+**Subsections:**
+
+1. System boundaries
+2. Process variables
+3. Material balances
+4. Energy balances
+5. Accumulation
+6. Efficiency
 
 **Coming out of this chapter, students can:** complete an energy audit or supervised low-voltage thermal investigation and explain the losses.
 
@@ -140,11 +185,18 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 ## 7. Measurement, calibration, and uncertainty {#chapter-7-engineering-laboratory-and-instrumentation}
 
-| What students learn | Why it matters |
-|---|---|
-| Calibrate sensors, collect repeatable data, use regression, inspect residuals, and report range, resolution, error, and uncertainty. | Measurements are useful only when students know how much to trust them. |
+**Learning goal:** Calibrate sensors, collect repeatable data, use regression, inspect residuals, and report range, resolution, error, and uncertainty.
 
-**Subsections:** Measurement; sensors and instrumentation; calibration; regression; residuals; uncertainty.
+**Why it matters:** Measurements are useful only when students know how much to trust them.
+
+**Subsections:**
+
+1. Measurement
+2. Sensors and instrumentation
+3. Calibration
+4. Regression
+5. Residuals
+6. Uncertainty
 
 **Coming out of this chapter, students can:** calibrate a sensor, graph its response, quantify error, and state where the model is valid.
 
@@ -154,11 +206,17 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 ## 8. Resistor-capacitor and thermal transients {#chapter-8-process-dynamics-and-numerical-modelling}
 
-| What students learn | Why it matters |
-|---|---|
-| Model resistor-capacitor charging and discharging or heating and cooling using transient response, time constants, and numerical stepping. | Real systems do not change instantly, so time must be part of the model. |
+**Learning goal:** Model resistor-capacitor charging and discharging or heating and cooling using transient response, time constants, and numerical stepping.
 
-**Subsections:** Transient response; time constants; dynamic models; numerical stepping; model stability.
+**Why it matters:** Real systems do not change instantly, so time must be part of the model.
+
+**Subsections:**
+
+1. Transient response
+2. Time constants
+3. Dynamic models
+4. Numerical stepping
+5. Model stability
 
 **Coming out of this chapter, students can:** build a spreadsheet or program that predicts a changing electrical or thermal system.
 
@@ -168,11 +226,18 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 ## 9. Boolean logic, algorithms, and state machines {#chapter-9-digital-computation}
 
-| What students learn | Why it matters |
-|---|---|
-| Use Boolean operators, logic gates, truth tables, algorithms, conditions, programs, state diagrams, and test cases. | These tools turn rules and decisions into systems that can be tested. |
+**Learning goal:** Use Boolean operators, logic gates, truth tables, algorithms, conditions, programs, state diagrams, and test cases.
 
-**Subsections:** Boolean logic; truth tables; algorithms; data structures; state machines; testing.
+**Why it matters:** These tools turn rules and decisions into systems that can be tested.
+
+**Subsections:**
+
+1. Boolean logic
+2. Truth tables
+3. Algorithms
+4. Data structures
+5. State machines
+6. Testing
 
 **Coming out of this chapter, students can:** create a calculation program or safe state-machine design with documented tests.
 
@@ -184,11 +249,18 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 ## 10. Motors and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
 
-| What students learn | Why it matters |
-|---|---|
-| Calculate force, torque, rotational speed, electrical input power, mechanical output power, efficiency, and operating limits. | These calculations show how electrical energy produces useful motion. |
+**Learning goal:** Calculate force, torque, rotational speed, electrical input power, mechanical output power, efficiency, and operating limits.
 
-**Subsections:** Force and motion; torque; rotational speed; electrical power; mechanical power; efficiency.
+**Why it matters:** These calculations show how electrical energy produces useful motion.
+
+**Subsections:**
+
+1. Force and motion
+2. Torque
+3. Rotational speed
+4. Electrical power
+5. Mechanical power
+6. Efficiency
 
 **Coming out of this chapter, students can:** characterize an actuator and explain how load affects current, speed, temperature, and efficiency.
 
@@ -198,11 +270,19 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 ## 11. Feedback and control systems {#chapter-11-control-systems}
 
-| What students learn | Why it matters |
-|---|---|
-| Compare open-loop, on-off, hysteresis, proportional, integral, and derivative control using rise time, overshoot, steady-state error, stability, and saturation. | Feedback helps a system correct itself, but poor settings can make it slow or unstable. |
+**Learning goal:** Compare open-loop, on-off, hysteresis, proportional, integral, and derivative control using rise time, overshoot, steady-state error, stability, and saturation.
 
-**Subsections:** Open-loop control; feedback; process control; response; stability; saturation; safety.
+**Why it matters:** Feedback helps a system correct itself, but poor settings can make it slow or unstable.
+
+**Subsections:**
+
+1. Open-loop control
+2. Feedback
+3. Process control
+4. Response
+5. Stability
+6. Saturation
+7. Safety
 
 **Coming out of this chapter, students can:** compare control methods using common graphs, response measures, and safety criteria.
 
@@ -214,11 +294,19 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 ## 12. Engineering design project {#chapter-12-engineering-design-project}
 
-| What students learn | Why it matters |
-|---|---|
-| Write requirements; create a model, schematic, and program; select sensors and actuators; build or simulate; test, validate, and revise. | The project shows that students can combine the course skills into one working system. |
+**Learning goal:** Write requirements; create a model, schematic, and program; select sensors and actuators; build or simulate; test, validate, and revise.
 
-**Subsections:** Requirements; engineering design; prototype; experiment; validation; optimization; technical communication.
+**Why it matters:** The project shows that students can combine the course skills into one working system.
+
+**Subsections:**
+
+1. Requirements
+2. Engineering design
+3. Prototype
+4. Experiment
+5. Validation
+6. Optimization
+7. Technical communication
 
 **Coming out of this chapter, students can:** deliver an instrumented system supported by a mathematical model, test evidence, revision, and a concise technical report.
 
