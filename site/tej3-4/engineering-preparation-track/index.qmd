@@ -8,7 +8,9 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-This optional track adds engineering mathematics and modelling to regular Computer Engineering Technology work. It is locally developed, is not endorsed by a college or university, and does not guarantee admission or postsecondary credit.
+::: {.callout-note title="Work in progress"}
+This optional track adds engineering mathematics and modelling to regular Computer Engineering Technology work. It is locally developed, is not endorsed by a college or university, and does not guarantee admission or postsecondary credit. Some assignments and the thermal-process project still require classroom testing.
+:::
 
 Use this page as a pathway map. The TEJ sidebar contains the available lessons, worksheets, labs, projects, and reference notes. Detailed implementation planning belongs in the teacher guide.
 
@@ -17,164 +19,390 @@ The chapter names use terminology found in current University of Waterloo engine
 ## Full progression
 
 - [0. Engineering design and communication](#chapter-0-engineering-design-and-communication)
-- [1. Engineering calculations](#chapter-1-engineering-calculations)
-- [2. Circuit fundamentals](#chapter-2-circuit-fundamentals)
-- [3. Linear circuits](#chapter-3-linear-circuits)
-- [4. Linear algebra for engineering](#chapter-4-linear-algebra-for-engineering)
-- [5. Modelling and optimization](#chapter-5-modelling-and-optimization)
+- [1. Units, engineering notation, and estimation](#chapter-1-engineering-calculations)
+- [2. Ohm's law and electrical power](#chapter-2-circuit-fundamentals)
+- [3. Series, parallel, and series-parallel circuits](#chapter-3-linear-circuits)
+- [4. Kirchhoff's laws and systems of equations](#chapter-4-linear-algebra-for-engineering)
+- [5. Equivalent circuits and optimization](#chapter-5-modelling-and-optimization)
 - [6. Material and energy balances](#chapter-6-material-and-energy-balances)
-- [7. Engineering laboratory and instrumentation](#chapter-7-engineering-laboratory-and-instrumentation)
-- [8. Process dynamics and numerical modelling](#chapter-8-process-dynamics-and-numerical-modelling)
-- [9. Digital computation](#chapter-9-digital-computation)
-- [10. Mechanics and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
-- [11. Control systems](#chapter-11-control-systems)
-- [12. Engineering design project](#chapter-12-engineering-design-project)
+- [7. Resistor-capacitor and thermal transients](#chapter-7-resistor-capacitor-and-thermal-transients)
+- [8. Sensors, measurement, calibration, and uncertainty](#chapter-8-sensors-measurement-calibration-and-uncertainty)
+- [9. Curve fitting, regression, and machine learning](#chapter-9-curve-fitting-regression-and-machine-learning)
+- [10. Motors and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
+- [11. Boolean logic, algorithms, and state machines](#chapter-9-digital-computation)
+- [12. Sensor, logic, and actuator project](#chapter-12-sensor-logic-actuator-project)
+- [13. Number systems and digital representation](#chapter-10-number-systems-and-digital-representation)
+- [14. Feedback and control systems](#chapter-11-control-systems)
+- [15. Engineering design project](#chapter-12-engineering-design-project)
 
 ## 0. Engineering design and communication {#chapter-0-engineering-design-and-communication}
 
-| What students learn | Why it matters |
-|---|---|
-| Assess algebra, units, graphing, estimation, calculator, and technical-writing skills; establish an engineering notebook format. | Engineering work must show the model, assumptions, calculations, checks, and revisions. |
+**Learning goal:** Use an engineering notebook to record requirements, assumptions, diagrams, equations, units, test results, and revisions.
 
-**Subsections:** Engineering baseline; engineering notebook; assumptions and evidence; technical communication.
+**Why it matters:** Clear records make work easier to check, improve, and explain.
+
+**Subsections:**
+
+1. Engineering baseline
+2. Engineering notebook
+3. Assumptions and evidence
+4. Technical communication
 
 **Coming out of this chapter, students can:** document a technical problem and show a complete, checkable solution process.
 
-## 1. Engineering calculations {#chapter-1-engineering-calculations}
+**Suggested work:** Engineering baseline diagnostic, correction record, learning targets, and notebook setup.
 
-| What students learn | Why it matters |
-|---|---|
-| Use dimensional analysis, engineering notation, significant figures, ratios, rates, estimates, and compound units. | Units and estimates expose impossible results and transfer across engineering disciplines. |
+## 1. Units, engineering notation, and estimation {#chapter-1-engineering-calculations}
 
-**Subsections:** Units and dimensions; engineering notation; significant figures; ratios and rates; estimation.
+**Learning goal:** Convert International System of Units quantities and metric prefixes; use engineering notation, significant figures, dimensional analysis, ratios, rates, and estimation.
+
+**Why it matters:** Good units and estimates help catch calculator mistakes.
+
+**Subsections:**
+
+1. Units and dimensions
+2. Engineering notation
+3. Significant figures
+4. Ratios and rates
+5. Estimation
 
 **Coming out of this chapter, students can:** convert, estimate, calculate, and communicate technical quantities reliably.
 
 **Related TEJ resources:** [Number Systems, Measurement, Units, and Calculator Skills](../01-number-systems/index.qmd)
 
-## 2. Circuit fundamentals {#chapter-2-circuit-fundamentals}
+**Suggested work:** Assignment 1: quantity and unit audit.
 
-| What students learn | Why it matters |
-|---|---|
-| Rearrange electrical equations, identify relationships, and apply physical limits to a design. | A mathematically correct answer is useful only when the model and design are physically workable. |
+**References:** [[1, Ch. 0]](../../references.qmd#ref-grob2016) [[27, Ch. 1]](../../references.qmd#ref-cengel2008) [[28, Chs. 1, 3]](../../references.qmd#ref-chapra2010)
 
-**Subsections:** Charge; voltage; current; resistance; algebraic models; operating limits.
+## 2. Ohm's law and electrical power {#chapter-2-circuit-fundamentals}
+
+**Learning goal:** Calculate voltage, current, resistance, and power using Ohm's law and the power equations; rearrange equations and check component limits.
+
+**Why it matters:** These calculations predict whether a circuit will work safely.
+
+**Subsections:**
+
+1. Charge
+2. Voltage
+3. Current
+4. Resistance
+5. Ohm's law
+6. Electrical power
+7. Operating limits
 
 **Coming out of this chapter, students can:** derive and check a resistive design rather than only substitute into a formula.
 
 **Related TEJ resources:** [Basic Electronics](../02-basic-electronics/index.qmd)
 
-## 3. Linear circuits {#chapter-3-linear-circuits}
+**Suggested work:** Complete the [Basic Circuit Calculations worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf), then prepare Assignment 2: resistive design brief.
 
-| What students learn | Why it matters |
-|---|---|
-| Derive and apply current, voltage, resistance, and power rules for series, parallel, and mixed circuits. | Circuit rules introduce conservation, equivalent models, and independent verification. |
+**Reference:** [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016)
 
-**Subsections:** Series circuits; parallel circuits; series-parallel circuits; equivalent resistance; electrical power.
+## 3. Series, parallel, and series-parallel circuits {#chapter-3-linear-circuits}
+
+**Learning goal:** Calculate equivalent resistance, source current, branch current, voltage drops, and power in series, parallel, and series-parallel resistor circuits.
+
+**Why it matters:** Students can predict circuit behaviour before building and find faults afterward.
+
+**Subsections:**
+
+1. Series resistance and voltage drops
+2. Parallel resistance and branch currents
+3. Series-parallel reduction
+4. Current and voltage checks
+5. Power checks
 
 **Coming out of this chapter, students can:** solve a network and prove the solution with voltage, current, resistance, and power checks.
 
-## 4. Linear algebra for engineering {#chapter-4-linear-algebra-for-engineering}
+**Suggested work:** Assignment 3: series-parallel design proof.
 
-| What students learn | Why it matters |
-|---|---|
-| Form, solve, and verify two- and three-variable systems from branch, node, and loop equations. | Coupled equations appear in circuits, structures, processes, controls, and data models. |
+**Reference:** [[1, Chs. 4–6]](../../references.qmd#ref-grob2016)
 
-**Subsections:** Systems of linear equations; Kirchhoff's current law; Kirchhoff's voltage law; matrices; residual and power checks.
+## 4. Kirchhoff's laws and systems of equations {#chapter-4-linear-algebra-for-engineering}
+
+**Learning goal:** Apply Kirchhoff's current law at nodes and Kirchhoff's voltage law around loops; write, solve, and check two- and three-variable linear systems.
+
+**Why it matters:** Many real circuits cannot be solved with one equation.
+
+**Subsections:**
+
+1. Systems of linear equations
+2. Kirchhoff's current law
+3. Kirchhoff's voltage law
+4. Matrices
+5. Residual and power checks
 
 **Coming out of this chapter, students can:** translate a physical network into simultaneous equations and verify the solution by hand and with software.
 
-## 5. Modelling and optimization {#chapter-5-modelling-and-optimization}
+**Suggested work:** Assignment 4: branch-current system solved by hand and checked with software.
 
-| What students learn | Why it matters |
-|---|---|
-| Build equivalent models and compare designs using constraints, sensitivity, efficiency, safety, and cost. | Different objectives produce different best designs, so trade-offs must be explicit. |
+**References:** [[1, Chs. 7, 9]](../../references.qmd#ref-grob2016) [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
 
-**Subsections:** Equivalent models; design variables; objective functions; constraints; sensitivity; trade-offs.
+## 5. Equivalent circuits and optimization {#chapter-5-modelling-and-optimization}
+
+**Learning goal:** Use voltage and current dividers, Thévenin and Norton equivalent circuits, source and load models, maximum power transfer, constraints, and sensitivity.
+
+**Why it matters:** A simpler model makes a complex design easier to compare and improve.
+
+**Subsections:**
+
+1. Voltage and current dividers
+2. Thévenin and Norton equivalents
+3. Source and load models
+4. Maximum power transfer
+5. Constraints
+6. Sensitivity
 
 **Coming out of this chapter, students can:** recommend a design and defend it using a model, constraints, evidence, and trade-offs.
 
+**Suggested work:** Assignment 5: source and load optimization memo.
+
+**References:** [[1, Ch. 10]](../../references.qmd#ref-grob2016) [[28, Chs. 13–16]](../../references.qmd#ref-chapra2010)
+
 ## 6. Material and energy balances {#chapter-6-material-and-energy-balances}
 
-| What students learn | Why it matters |
-|---|---|
-| Define a system boundary and model input, output, accumulation, loss, and efficiency. | Material and energy balances connect electrical, mechanical, chemical, and environmental systems. |
+**Learning goal:** Draw a system boundary and calculate material or energy input, output, accumulation, loss, and efficiency.
 
-**Subsections:** System boundaries; process variables; material balances; energy balances; accumulation; efficiency.
+**Why it matters:** A balance shows where material or energy goes and what is being lost.
+
+**Subsections:**
+
+1. System boundaries
+2. Process variables
+3. Material balances
+4. Energy balances
+5. Accumulation
+6. Efficiency
 
 **Coming out of this chapter, students can:** complete an energy audit or supervised low-voltage thermal investigation and explain the losses.
 
 **Related TEJ resources:** [Power and Energy](../02-basic-electronics/04-power-energy.qmd) and [Computer Power and Parts](../computer-systems/computer-power-parts.qmd)
 
-## 7. Engineering laboratory and instrumentation {#chapter-7-engineering-laboratory-and-instrumentation}
+**Suggested work:** Assignment 6: energy audit; Lab 1: supervised low-voltage thermal balance.
 
-| What students learn | Why it matters |
-|---|---|
-| Collect repeatable data, fit a model, inspect residuals, and state its range and uncertainty. | Measurements become evidence only when their limits are understood. |
+**References:** [[1, Chs. 1, 12]](../../references.qmd#ref-grob2016) [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)
 
-**Subsections:** Measurement; sensors and instrumentation; calibration; regression; residuals; uncertainty.
+::: {.callout-important title="Safety boundary"}
+Use only teacher-approved protected low-voltage equipment. Students do not construct or probe mains circuits. Isolate liquids from exposed electronics and define temperature, current, containment, and shutdown limits before testing.
+:::
+
+## 7. Resistor-capacitor and thermal transients {#chapter-7-resistor-capacitor-and-thermal-transients}
+
+**Learning goal:** Model resistor-capacitor charging and discharging or heating and cooling using transient response, time constants, and numerical stepping.
+
+**Why it matters:** Real systems do not change instantly. Time constants also explain how circuits smooth noisy signals and why temperature sensors respond gradually.
+
+**Subsections:**
+
+1. Transient response
+2. Resistor-capacitor charging and discharging
+3. Time constants
+4. Signal smoothing and filtering
+5. Thermal response and sensor lag
+6. Numerical stepping and model stability
+
+**Coming out of this chapter, students can:** model a changing electrical or thermal system and explain how a resistor-capacitor network can smooth a sensor signal.
+
+**Suggested work:** Assignment 7: resistor-capacitor or thermal transient model.
+
+**References:** [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010)
+
+## 8. Sensors, measurement, calibration, and uncertainty {#chapter-8-sensors-measurement-calibration-and-uncertainty}
+
+**Learning goal:** Select and calibrate sensors; collect repeatable data; report range, sensitivity, resolution, accuracy, repeatability, error, and uncertainty.
+
+**Why it matters:** Measurements are useful only when students know how much to trust them.
+
+**Subsections:**
+
+1. Sensor selection and operating range
+2. Signal conditioning and data acquisition
+3. Calibration
+4. Sensitivity and resolution
+5. Accuracy and repeatability
+6. Error and uncertainty
 
 **Coming out of this chapter, students can:** calibrate a sensor, graph its response, quantify error, and state where the model is valid.
 
-## 8. Process dynamics and numerical modelling {#chapter-8-process-dynamics-and-numerical-modelling}
+**Instrumentation and data branch:** This chapter and the next connect physical measurements to curve fitting, regression, and machine learning.
 
-| What students learn | Why it matters |
-|---|---|
-| Model an electrical or thermal system that changes with time using time constants or numerical stepping. | Real systems take time to charge, heat, cool, accelerate, and settle. |
+**Suggested work:** Lab 2: sensor calibration and model check.
 
-**Subsections:** Transient response; time constants; dynamic models; numerical stepping; model stability.
+**References:** [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3–4]](../../references.qmd#ref-chapra2010)
 
-**Coming out of this chapter, students can:** build a spreadsheet or program that predicts a changing electrical or thermal system.
+## 9. Curve fitting, regression, and machine learning {#chapter-9-curve-fitting-regression-and-machine-learning}
 
-## 9. Digital computation {#chapter-9-digital-computation}
+**Learning goal:** Fit and compare models using sensor data, least-squares curve fitting, linear regression, residuals, training and test data, baselines, prediction error, and simple classification.
 
-| What students learn | Why it matters |
-|---|---|
-| Translate logic, equations, and state behaviour into truth tables, algorithms, programs, and state diagrams. | Digital computation makes models repeatable, testable, and usable in embedded systems. |
+**Why it matters:** A model can find useful patterns in data, but it must be tested before it is trusted.
 
-**Subsections:** Boolean logic; truth tables; algorithms; data structures; state machines; testing.
+**Subsections:**
 
-**Coming out of this chapter, students can:** create a calculation program or safe state-machine design with documented tests.
+1. Cleaning and plotting sensor data
+2. Curve fitting and least squares
+3. Linear regression and residuals
+4. Training, validation, and test data
+5. Baselines and model evaluation
+6. Introductory classification
+7. Overfitting, bias, privacy, and limits
 
-**Related TEJ resources:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
+**Coming out of this chapter, students can:** fit a model to non-personal sensor data, measure its error, compare it with a baseline, and explain its limits.
 
-## 10. Mechanics and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
+**Related TEJ resources:** [Data Science and Machine Learning](../curriculum/index.qmd#unit-13)
 
-| What students learn | Why it matters |
-|---|---|
-| Relate electrical input to torque, speed, motion or flow, mechanical power, efficiency, and limits. | Motors, pumps, fans, and actuators connect electrical and mechanical systems. |
+**Suggested work:** Sensor-data modelling investigation using at least two candidate models and a held-out test set.
 
-**Subsections:** Force and motion; torque; rotational speed; electrical power; mechanical power; efficiency.
+**References:** [[28, Chs. 17, 20]](../../references.qmd#ref-chapra2010) [[4]](../../references.qmd#ref-nistairmf2023)
+
+## 10. Motors and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
+
+**Learning goal:** Calculate force, torque, rotational speed, electrical input power, mechanical output power, efficiency, and operating limits.
+
+**Why it matters:** These calculations show how electrical energy produces useful motion.
+
+**Subsections:**
+
+1. Force and motion
+2. Torque
+3. Rotational speed
+4. Electrical power
+5. Mechanical power
+6. Efficiency
 
 **Coming out of this chapter, students can:** characterize an actuator and explain how load affects current, speed, temperature, and efficiency.
 
-## 11. Control systems {#chapter-11-control-systems}
+**Suggested work:** Lab 3: actuator characterization.
 
-| What students learn | Why it matters |
-|---|---|
-| Compare open-loop, on-off, hysteresis, proportional, integral, and derivative control using response evidence. | Feedback manages disturbances but creates trade-offs in speed, error, stability, and safety. |
+**Reference:** [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
 
-**Subsections:** Open-loop control; feedback; process control; response; stability; saturation; safety.
+## 11. Boolean logic, algorithms, and state machines {#chapter-9-digital-computation}
+
+**Learning goal:** Use Boolean operators, logic gates, truth tables, algorithms, conditions, programs, state diagrams, and test cases.
+
+**Why it matters:** These tools turn rules and decisions into systems that can be tested.
+
+**Subsections:**
+
+1. Boolean logic
+2. Truth tables
+3. Algorithms
+4. Data structures
+5. State machines
+6. Testing
+
+**Coming out of this chapter, students can:** create a calculation program or safe state-machine design with documented tests.
+
+**Computer-engineering branch:** Chapters 11–13 connect logic states, physical outputs, and digital number representation.
+
+**Related TEJ resources:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
+
+**Suggested work:** Assignment 8: engineering calculation program; Assignment 9: safety state machine; [Digital Inputs worksheet](https://mrandrewandrade.github.io/assets/D01_Digital_Inputs_Student_Worksheet.pdf).
+
+**Reference:** [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
+
+## 12. Sensor, logic, and actuator project {#chapter-12-sensor-logic-actuator-project}
+
+**Learning goal:** Combine sensor inputs, thresholds, Boolean expressions, truth tables, or state rules to control a motor, fan, relay, alarm, or indicator through a suitable driver circuit.
+
+**Why it matters:** This project joins sensing, decision making, and physical action in one working system.
+
+**Subsections:**
+
+1. Input requirements and sensor thresholds
+2. Stable inputs and signal conditioning
+3. Truth table and Boolean expression
+4. Output driver and flyback protection
+5. Motor, relay, alarm, or indicator output
+6. Safe states and interlocks
+7. Test cases and fault handling
+
+**Coming out of this chapter, students can:** build or simulate a system that reads sensor states, applies documented logic, and safely controls a physical output.
+
+**Related TEJ resources:** [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd) and [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd)
+
+**Suggested work:** Project: sensor-controlled motor, fan, relay, alarm, or indicator with a truth table, schematic, safe output driver, tests, and short explanation.
+
+**Safety:** Use teacher-approved low-voltage equipment, motor or relay drivers, current limiting, and flyback protection where required.
+
+**References:** [[1, Chs. 13–14]](../../references.qmd#ref-grob2016) [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
+
+## 13. Number systems and digital representation {#chapter-10-number-systems-and-digital-representation}
+
+**Learning goal:** Represent values in binary, decimal, and hexadecimal; interpret bits, bytes, words, Boolean values, signed and unsigned integers, two's complement, fixed-point and floating-point numbers, range, resolution, and overflow.
+
+**Why it matters:** A computer can only store a limited pattern of bits, so the representation determines which values it can use and what can go wrong.
+
+**Subsections:**
+
+1. Binary, decimal, and hexadecimal
+2. Bits, bytes, and words
+3. Boolean values
+4. Unsigned integers
+5. Signed integers and two's complement
+6. Fixed-point and floating-point representation
+7. Range, resolution, quantization, and overflow
+
+**Coming out of this chapter, students can:** convert common number representations, choose a suitable data type, and predict range, resolution, and overflow problems.
+
+**Related TEJ resources:** [Number Systems](../01-number-systems/index.qmd) and [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
+
+**Suggested work:** Digital representation worksheet using sensor readings, integer ranges, hexadecimal values, and overflow cases.
+
+**Reference:** [[1]](../../references.qmd#ref-grob2016)
+
+## 14. Feedback and control systems {#chapter-11-control-systems}
+
+**Learning goal:** Compare open-loop, on-off, hysteresis, proportional, integral, and derivative control using rise time, overshoot, steady-state error, stability, and saturation.
+
+**Why it matters:** Feedback helps a system correct itself, but poor settings can make it slow or unstable.
+
+**Subsections:**
+
+1. Open-loop control
+2. Feedback
+3. Process control
+4. Response
+5. Stability
+6. Saturation
+7. Safety
 
 **Coming out of this chapter, students can:** compare control methods using common graphs, response measures, and safety criteria.
 
 **Related TEJ resources:** [Control Systems and Computer Numerical Control](../05-control-systems/index.qmd)
 
-## 12. Engineering design project {#chapter-12-engineering-design-project}
+**Suggested work:** Assignment 10: control-method comparison using the [Control Methods Comparison handout](https://mrandrewandrade.github.io/assets/C06_Control_Methods_Comparison_Student.pdf).
 
-| What students learn | Why it matters |
-|---|---|
-| Design, model, build or simulate, program, measure, validate, revise, and explain an instrumented system. | A complete project integrates mathematics, construction, safety, data, programming, and communication. |
+**References:** [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010)
 
-**Subsections:** Requirements; engineering design; prototype; experiment; validation; optimization; technical communication.
+## 15. Engineering design project {#chapter-12-engineering-design-project}
+
+**Learning goal:** Write requirements; create a model, schematic, and program; select sensors and actuators; build or simulate; test, validate, and revise.
+
+**Why it matters:** The project shows that students can combine the course skills into one working system.
+
+**Subsections:**
+
+1. Requirements
+2. Engineering design
+3. Prototype
+4. Experiment
+5. Validation
+6. Optimization
+7. Technical communication
 
 **Coming out of this chapter, students can:** deliver an instrumented system supported by a mathematical model, test evidence, revision, and a concise technical report.
+
+**Suggested project:** Instrumented low-voltage thermal process controller. Alternatives may use a motor or pump test stand, battery and thermal monitor, controlled fan, tank-level simulator, or renewable-energy demonstrator.
+
+**Deliverable:** Requirements, model, schematic, build or approved simulation, code, validation, revision, and concise technical report.
 
 ## Core references
 
 The textbooks are teacher references. Public activities use original explanations, diagrams, values, and questions.
 
 [[1]](../../references.qmd#ref-grob2016) **Grob's Basic Electronics, 12th edition** supports electronics, measurement, circuit analysis, energy, electromagnetism, and transient circuits.
+
+[[4]](../../references.qmd#ref-nistairmf2023) **National Institute of Standards and Technology, Artificial Intelligence Risk Management Framework** supports responsible model evaluation, risk analysis, transparency, and human oversight.
 
 [[27]](../../references.qmd#ref-cengel2008) **Çengel, Introduction to Thermodynamics and Heat Transfer, 2nd edition** supports units, energy balances, closed systems, control volumes, heat transfer, and transient thermal behaviour.
 
