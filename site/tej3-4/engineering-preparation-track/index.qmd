@@ -25,9 +25,9 @@ The chapter names use terminology found in current University of Waterloo engine
 - [4. Kirchhoff's laws and systems of equations](#chapter-4-linear-algebra-for-engineering)
 - [5. Equivalent circuits and optimization](#chapter-5-modelling-and-optimization)
 - [6. Material and energy balances](#chapter-6-material-and-energy-balances)
-- [7. Sensors, measurement, calibration, and uncertainty](#chapter-7-engineering-laboratory-and-instrumentation)
-- [8. Curve fitting, regression, and machine learning](#chapter-8-curve-fitting-regression-and-machine-learning)
-- [9. Resistor-capacitor and thermal transients](#chapter-8-process-dynamics-and-numerical-modelling)
+- [7. Resistor-capacitor and thermal transients](#chapter-7-resistor-capacitor-and-thermal-transients)
+- [8. Sensors, measurement, calibration, and uncertainty](#chapter-8-sensors-measurement-calibration-and-uncertainty)
+- [9. Curve fitting, regression, and machine learning](#chapter-9-curve-fitting-regression-and-machine-learning)
 - [10. Motors and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
 - [11. Boolean logic, algorithms, and state machines](#chapter-9-digital-computation)
 - [12. Sensor, logic, and actuator project](#chapter-12-sensor-logic-actuator-project)
@@ -186,7 +186,28 @@ The chapter names use terminology found in current University of Waterloo engine
 Use only teacher-approved protected low-voltage equipment. Students do not construct or probe mains circuits. Isolate liquids from exposed electronics and define temperature, current, containment, and shutdown limits before testing.
 :::
 
-## 7. Sensors, measurement, calibration, and uncertainty {#chapter-7-engineering-laboratory-and-instrumentation}
+## 7. Resistor-capacitor and thermal transients {#chapter-7-resistor-capacitor-and-thermal-transients}
+
+**Learning goal:** Model resistor-capacitor charging and discharging or heating and cooling using transient response, time constants, and numerical stepping.
+
+**Why it matters:** Real systems do not change instantly. Time constants also explain how circuits smooth noisy signals and why temperature sensors respond gradually.
+
+**Subsections:**
+
+1. Transient response
+2. Resistor-capacitor charging and discharging
+3. Time constants
+4. Signal smoothing and filtering
+5. Thermal response and sensor lag
+6. Numerical stepping and model stability
+
+**Coming out of this chapter, students can:** model a changing electrical or thermal system and explain how a resistor-capacitor network can smooth a sensor signal.
+
+**Suggested work:** Assignment 7: resistor-capacitor or thermal transient model.
+
+**References:** [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010)
+
+## 8. Sensors, measurement, calibration, and uncertainty {#chapter-8-sensors-measurement-calibration-and-uncertainty}
 
 **Learning goal:** Select and calibrate sensors; collect repeatable data; report range, sensitivity, resolution, accuracy, repeatability, error, and uncertainty.
 
@@ -209,7 +230,7 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **References:** [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3–4]](../../references.qmd#ref-chapra2010)
 
-## 8. Curve fitting, regression, and machine learning {#chapter-8-curve-fitting-regression-and-machine-learning}
+## 9. Curve fitting, regression, and machine learning {#chapter-9-curve-fitting-regression-and-machine-learning}
 
 **Learning goal:** Fit and compare models using sensor data, least-squares curve fitting, linear regression, residuals, training and test data, baselines, prediction error, and simple classification.
 
@@ -232,26 +253,6 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 **Suggested work:** Sensor-data modelling investigation using at least two candidate models and a held-out test set.
 
 **References:** [[28, Chs. 17, 20]](../../references.qmd#ref-chapra2010) [[4]](../../references.qmd#ref-nistairmf2023)
-
-## 9. Resistor-capacitor and thermal transients {#chapter-8-process-dynamics-and-numerical-modelling}
-
-**Learning goal:** Model resistor-capacitor charging and discharging or heating and cooling using transient response, time constants, and numerical stepping.
-
-**Why it matters:** Real systems do not change instantly, so time must be part of the model.
-
-**Subsections:**
-
-1. Transient response
-2. Time constants
-3. Dynamic models
-4. Numerical stepping
-5. Model stability
-
-**Coming out of this chapter, students can:** build a spreadsheet or program that predicts a changing electrical or thermal system.
-
-**Suggested work:** Assignment 7: resistor-capacitor or thermal transient model.
-
-**References:** [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010)
 
 ## 10. Motors and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
 
