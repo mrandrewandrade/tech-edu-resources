@@ -25,12 +25,14 @@ The chapter names use terminology found in current University of Waterloo engine
 - [4. Kirchhoff's laws and systems of equations](#chapter-4-linear-algebra-for-engineering)
 - [5. Equivalent circuits and optimization](#chapter-5-modelling-and-optimization)
 - [6. Material and energy balances](#chapter-6-material-and-energy-balances)
-- [7. Measurement, calibration, and uncertainty](#chapter-7-engineering-laboratory-and-instrumentation)
-- [8. Resistor-capacitor and thermal transients](#chapter-8-process-dynamics-and-numerical-modelling)
-- [9. Boolean logic, algorithms, and state machines](#chapter-9-digital-computation)
-- [10. Motors and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
-- [11. Feedback and control systems](#chapter-11-control-systems)
-- [12. Engineering design project](#chapter-12-engineering-design-project)
+- [7. Sensors, measurement, calibration, and uncertainty](#chapter-7-engineering-laboratory-and-instrumentation)
+- [8. Curve fitting, regression, and machine learning](#chapter-8-curve-fitting-regression-and-machine-learning)
+- [9. Resistor-capacitor and thermal transients](#chapter-8-process-dynamics-and-numerical-modelling)
+- [10. Number systems and digital representation](#chapter-10-number-systems-and-digital-representation)
+- [11. Boolean logic, algorithms, and state machines](#chapter-9-digital-computation)
+- [12. Motors and electromechanical systems](#chapter-10-mechanics-and-electromechanical-systems)
+- [13. Feedback and control systems](#chapter-11-control-systems)
+- [14. Engineering design project](#chapter-12-engineering-design-project)
 
 ## 0. Engineering design and communication {#chapter-0-engineering-design-and-communication}
 
@@ -183,28 +185,54 @@ The chapter names use terminology found in current University of Waterloo engine
 Use only teacher-approved protected low-voltage equipment. Students do not construct or probe mains circuits. Isolate liquids from exposed electronics and define temperature, current, containment, and shutdown limits before testing.
 :::
 
-## 7. Measurement, calibration, and uncertainty {#chapter-7-engineering-laboratory-and-instrumentation}
+## 7. Sensors, measurement, calibration, and uncertainty {#chapter-7-engineering-laboratory-and-instrumentation}
 
-**Learning goal:** Calibrate sensors, collect repeatable data, use regression, inspect residuals, and report range, resolution, error, and uncertainty.
+**Learning goal:** Select and calibrate sensors; collect repeatable data; report range, sensitivity, resolution, accuracy, repeatability, error, and uncertainty.
 
 **Why it matters:** Measurements are useful only when students know how much to trust them.
 
 **Subsections:**
 
-1. Measurement
-2. Sensors and instrumentation
+1. Sensor selection and operating range
+2. Signal conditioning and data acquisition
 3. Calibration
-4. Regression
-5. Residuals
-6. Uncertainty
+4. Sensitivity and resolution
+5. Accuracy and repeatability
+6. Error and uncertainty
 
 **Coming out of this chapter, students can:** calibrate a sensor, graph its response, quantify error, and state where the model is valid.
 
+**Instrumentation and data branch:** This chapter and the next connect physical measurements to curve fitting, regression, and machine learning.
+
 **Suggested work:** Lab 2: sensor calibration and model check.
 
-**References:** [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3, 4, 17, 20]](../../references.qmd#ref-chapra2010)
+**References:** [[1, Ch. 8]](../../references.qmd#ref-grob2016) [[28, Chs. 3–4]](../../references.qmd#ref-chapra2010)
 
-## 8. Resistor-capacitor and thermal transients {#chapter-8-process-dynamics-and-numerical-modelling}
+## 8. Curve fitting, regression, and machine learning {#chapter-8-curve-fitting-regression-and-machine-learning}
+
+**Learning goal:** Fit and compare models using sensor data, least-squares curve fitting, linear regression, residuals, training and test data, baselines, prediction error, and simple classification.
+
+**Why it matters:** A model can find useful patterns in data, but it must be tested before it is trusted.
+
+**Subsections:**
+
+1. Cleaning and plotting sensor data
+2. Curve fitting and least squares
+3. Linear regression and residuals
+4. Training, validation, and test data
+5. Baselines and model evaluation
+6. Introductory classification
+7. Overfitting, bias, privacy, and limits
+
+**Coming out of this chapter, students can:** fit a model to non-personal sensor data, measure its error, compare it with a baseline, and explain its limits.
+
+**Related TEJ resources:** [Data Science and Machine Learning](../curriculum/index.qmd#unit-13)
+
+**Suggested work:** Sensor-data modelling investigation using at least two candidate models and a held-out test set.
+
+**References:** [[28, Chs. 17, 20]](../../references.qmd#ref-chapra2010) [[4]](../../references.qmd#ref-nistairmf2023)
+
+## 9. Resistor-capacitor and thermal transients {#chapter-8-process-dynamics-and-numerical-modelling}
 
 **Learning goal:** Model resistor-capacitor charging and discharging or heating and cooling using transient response, time constants, and numerical stepping.
 
@@ -224,7 +252,33 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **References:** [[1, Chs. 16, 18–22]](../../references.qmd#ref-grob2016) [[28, Ch. 25]](../../references.qmd#ref-chapra2010)
 
-## 9. Boolean logic, algorithms, and state machines {#chapter-9-digital-computation}
+## 10. Number systems and digital representation {#chapter-10-number-systems-and-digital-representation}
+
+**Learning goal:** Represent values in binary, decimal, and hexadecimal; interpret bits, bytes, words, Boolean values, signed and unsigned integers, two's complement, fixed-point and floating-point numbers, range, resolution, and overflow.
+
+**Why it matters:** A computer can only store a limited pattern of bits, so the representation determines which values it can use and what can go wrong.
+
+**Subsections:**
+
+1. Binary, decimal, and hexadecimal
+2. Bits, bytes, and words
+3. Boolean values
+4. Unsigned integers
+5. Signed integers and two's complement
+6. Fixed-point and floating-point representation
+7. Range, resolution, quantization, and overflow
+
+**Coming out of this chapter, students can:** convert common number representations, choose a suitable data type, and predict range, resolution, and overflow problems.
+
+**Computer-engineering branch:** This chapter and the next connect number representation to logic, programs, and embedded systems.
+
+**Related TEJ resources:** [Number Systems](../01-number-systems/index.qmd) and [Digital Logic and Stable Inputs](../03-digital-logic-inputs/index.qmd)
+
+**Suggested work:** Digital representation worksheet using sensor readings, integer ranges, hexadecimal values, and overflow cases.
+
+**Reference:** [[1]](../../references.qmd#ref-grob2016)
+
+## 11. Boolean logic, algorithms, and state machines {#chapter-9-digital-computation}
 
 **Learning goal:** Use Boolean operators, logic gates, truth tables, algorithms, conditions, programs, state diagrams, and test cases.
 
@@ -247,7 +301,7 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **Reference:** [[28, Ch. 2]](../../references.qmd#ref-chapra2010)
 
-## 10. Motors and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
+## 12. Motors and electromechanical systems {#chapter-10-mechanics-and-electromechanical-systems}
 
 **Learning goal:** Calculate force, torque, rotational speed, electrical input power, mechanical output power, efficiency, and operating limits.
 
@@ -268,7 +322,7 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **Reference:** [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
 
-## 11. Feedback and control systems {#chapter-11-control-systems}
+## 13. Feedback and control systems {#chapter-11-control-systems}
 
 **Learning goal:** Compare open-loop, on-off, hysteresis, proportional, integral, and derivative control using rise time, overshoot, steady-state error, stability, and saturation.
 
@@ -292,7 +346,7 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 
 **References:** [[27, Ch. 3]](../../references.qmd#ref-cengel2008) [[28, Chs. 16, 20]](../../references.qmd#ref-chapra2010)
 
-## 12. Engineering design project {#chapter-12-engineering-design-project}
+## 14. Engineering design project {#chapter-12-engineering-design-project}
 
 **Learning goal:** Write requirements; create a model, schematic, and program; select sensors and actuators; build or simulate; test, validate, and revise.
 
@@ -319,6 +373,8 @@ Use only teacher-approved protected low-voltage equipment. Students do not const
 The textbooks are teacher references. Public activities use original explanations, diagrams, values, and questions.
 
 [[1]](../../references.qmd#ref-grob2016) **Grob's Basic Electronics, 12th edition** supports electronics, measurement, circuit analysis, energy, electromagnetism, and transient circuits.
+
+[[4]](../../references.qmd#ref-nistairmf2023) **National Institute of Standards and Technology, Artificial Intelligence Risk Management Framework** supports responsible model evaluation, risk analysis, transparency, and human oversight.
 
 [[27]](../../references.qmd#ref-cengel2008) **Çengel, Introduction to Thermodynamics and Heat Transfer, 2nd edition** supports units, energy balances, closed systems, control volumes, heat transfer, and transient thermal behaviour.
 
