@@ -6,6 +6,7 @@
   "use strict";
 
   const defaults = Object.freeze({
+    unit: "mm",
     type: "angled", height: 80, footprint: 55, legWidth: 24, angle: 10,
     materialThickness: 6, fitAdjustment: 0.15, tabWidth: 16, tabDepth: 7,
     pivotDiameter: 5, pivotOffset: 12, cornerRadius: 3, quantity: 2,
@@ -22,13 +23,19 @@
   };
 
   const numericKeys = ["height", "footprint", "legWidth", "angle", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "quantity", "partGap"];
+  const dimensionalKeys = new Set(["height", "footprint", "legWidth", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "partGap"]);
   const boolKeys = ["includeSlots", "includeCoupon", "previewGuides", "exportGuides"];
   const round = value => Math.round(value * 1000) / 1000;
   const finite = (value, fallback) => Number.isFinite(Number(value)) ? Number(value) : fallback;
+  const toMm = (value, unit) => Number(value) * (unit === "in" ? 25.4 : 1);
+  const fromMm = (value, unit) => Number(value) / (unit === "in" ? 25.4 : 1);
+  const displayNumber = (value, unit) => Number(fromMm(value, unit).toFixed(unit === "in" ? 4 : 3)).toString();
+  const displayMeasurement = (value, unit) => `${displayNumber(value, unit)} ${unit}`;
   const esc = value => String(value).replace(/[&<>\"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[char]));
 
   function normalize(input) {
     const state = { ...defaults, ...(input || {}) };
+    state.unit = state.unit === "in" ? "in" : "mm";
     numericKeys.forEach(key => state[key] = finite(state[key], defaults[key]));
     boolKeys.forEach(key => state[key] = state[key] === true || state[key] === "true" || state[key] === "1");
     state.quantity = Math.max(1, Math.min(4, Math.round(state.quantity)));
@@ -105,18 +112,18 @@
   function validate(raw) {
     const state = normalize(raw), errors = [], warnings = [];
     const slot = effectiveSlotWidth(state);
-    if (state.height <= 0 || state.footprint <= 0 || state.legWidth <= 0) errors.push("Part dimensions must be greater than 0 mm.");
-    if (state.materialThickness <= 0) errors.push("Measured material thickness must be greater than 0 mm.");
+    if (state.height <= 0 || state.footprint <= 0 || state.legWidth <= 0) errors.push("Part dimensions must be greater than zero.");
+    if (state.materialThickness <= 0) errors.push("Measured material thickness must be greater than zero.");
     if (slot <= 0) errors.push("Material thickness plus fit adjustment must leave a positive slot width.");
     if (state.partGap < 0) errors.push("Part gap cannot be negative.");
     if (["straight", "angled"].includes(state.type)) {
       if (state.tabWidth <= 0 || state.tabWidth >= state.legWidth) errors.push("Tab width must be greater than 0 and smaller than the leg width.");
-      if (state.tabDepth <= 0) errors.push("Tab depth must be greater than 0 mm.");
+      if (state.tabDepth <= 0) errors.push("Tab depth must be greater than zero.");
       if (state.tabDepth < state.materialThickness) warnings.push("The tab is shallower than the measured material thickness.");
     }
     if (state.type === "angled" && Math.abs(state.angle) >= 45) errors.push("Keep the leg angle between -45 and 45 degrees.");
     if (state.type === "easel") {
-      if (state.pivotDiameter <= 0) errors.push("Pivot diameter must be greater than 0 mm.");
+      if (state.pivotDiameter <= 0) errors.push("Pivot diameter must be greater than zero.");
       const sideLigament = (state.legWidth - state.pivotDiameter) / 2;
       if (sideLigament < 2 * state.materialThickness) warnings.push("Less than two material thicknesses remain beside the pivot hole.");
       if (state.pivotOffset + state.pivotDiameter / 2 >= state.height) errors.push("The pivot hole does not fit inside the leg.");
@@ -165,8 +172,10 @@
     }
     const includeGuides = !!(options && options.includeGuides);
     const guides = includeGuides ? `<g id="GUIDES" fill="none" stroke="#68818c" stroke-width="0.25" stroke-dasharray="2 2"><rect x="0.5" y="0.5" width="${Math.max(0, data.width - 1)}" height="${Math.max(0, data.height - 1)}"/></g>` : `<g id="GUIDES"/>`;
-    const metadata = esc(JSON.stringify({ generator: "Technology Commons Leg and Support Builder V1", units: "mm", settings: state, validation: { valid: data.result.valid, errors: data.result.errors, warnings: data.result.warnings } }));
-    return `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${data.width}mm" height="${data.height}mm" viewBox="0 0 ${data.width} ${data.height}">\n<metadata>${metadata}</metadata>\n<g id="CUT_PARTS" fill="none" stroke="#ff0000" stroke-width="0.1">${outlines}</g>\n<g id="CUT_HOLES" fill="none" stroke="#ff0000" stroke-width="0.1">${holes}</g>\n<g id="MATING_SLOTS" fill="none" stroke="#245f9e" stroke-width="0.1">${slots}</g>\n<g id="FIT_COUPON" fill="none" stroke="#7a3f95" stroke-width="0.1">${coupon}</g>\n${guides}\n</svg>\n`;
+    const exportWidth = `${displayNumber(data.width, state.unit)}${state.unit}`;
+    const exportHeight = `${displayNumber(data.height, state.unit)}${state.unit}`;
+    const metadata = esc(JSON.stringify({ generator: "Technology Commons Leg and Support Builder V1", geometryUnits: "mm", displayUnit: state.unit, settings: state, validation: { valid: data.result.valid, errors: data.result.errors, warnings: data.result.warnings } }));
+    return `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${exportWidth}" height="${exportHeight}" viewBox="0 0 ${data.width} ${data.height}">\n<metadata>${metadata}</metadata>\n<g id="CUT_PARTS" fill="none" stroke="#ff0000" stroke-width="0.1">${outlines}</g>\n<g id="CUT_HOLES" fill="none" stroke="#ff0000" stroke-width="0.1">${holes}</g>\n<g id="MATING_SLOTS" fill="none" stroke="#245f9e" stroke-width="0.1">${slots}</g>\n<g id="FIT_COUPON" fill="none" stroke="#7a3f95" stroke-width="0.1">${coupon}</g>\n${guides}\n</svg>\n`;
   }
 
   function encodeState(raw) {
@@ -186,22 +195,41 @@
     if (!host) return;
     let state = decodeState(root.location.search);
     const controls = [...host.querySelectorAll("[data-key]")];
+    const unitButtons = [...host.querySelectorAll("[data-unit-button]")];
+    controls.forEach(control => {
+      if (!dimensionalKeys.has(control.dataset.key)) return;
+      if (control.hasAttribute("min")) control.dataset.minMm = control.getAttribute("min");
+      if (control.hasAttribute("step")) control.dataset.stepMm = control.getAttribute("step");
+    });
     const read = () => {
-      controls.forEach(control => { state[control.dataset.key] = control.type === "checkbox" ? control.checked : control.value; });
+      controls.forEach(control => {
+        const key = control.dataset.key;
+        if (control.type === "checkbox") state[key] = control.checked;
+        else state[key] = dimensionalKeys.has(key) ? toMm(control.value, state.unit) : control.value;
+      });
       state = normalize(state);
     };
-    const write = () => controls.forEach(control => {
-      const value = state[control.dataset.key];
-      if (control.type === "checkbox") control.checked = !!value;
-      else control.value = value;
-    });
-    const render = () => {
-      read();
+    const write = () => {
+      controls.forEach(control => {
+        const key = control.dataset.key, value = state[key];
+        if (control.type === "checkbox") control.checked = !!value;
+        else control.value = dimensionalKeys.has(key) ? displayNumber(value, state.unit) : value;
+        if (dimensionalKeys.has(key)) {
+          if (control.dataset.minMm !== undefined) control.min = displayNumber(control.dataset.minMm, state.unit);
+          if (control.dataset.stepMm !== undefined) control.step = displayNumber(control.dataset.stepMm, state.unit);
+        }
+      });
+      host.querySelectorAll("[data-unit-symbol]").forEach(item => { item.textContent = state.unit; });
+      unitButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.unitButton === state.unit)));
+    };
+    const render = (readControls = true) => {
+      if (readControls) read();
       const result = validate(state), svg = buildSvg(state, { includeGuides: state.previewGuides });
       host.querySelector("[data-preview]").innerHTML = svg.replace("<svg ", '<svg role="img" aria-label="Generated laser-cut leg and support parts" ');
-      host.querySelector("[data-slot-width]").textContent = `${result.slotWidth} mm`;
+      host.querySelector("[data-slot-width]").textContent = displayMeasurement(result.slotWidth, state.unit);
       host.querySelector("[data-count]").textContent = String(result.parts.length);
       host.querySelector("[data-stiffness]").textContent = `${round(Math.pow(state.materialThickness / 3, 3))}×`;
+      host.querySelector("[data-units]").textContent = state.unit === "in" ? "inches (in)" : "millimetres (mm)";
       const status = host.querySelector("[data-status]");
       status.className = `plate-status ${result.valid ? "is-valid" : "is-error"}`;
       status.innerHTML = result.valid
@@ -219,14 +247,15 @@
       setTimeout(() => URL.revokeObjectURL(link.href), 1000);
     };
     controls.forEach(control => control.addEventListener("input", render));
-    host.querySelector("[data-preset]").addEventListener("change", event => { state = normalize({ ...defaults, ...(presets[event.target.value] || {}) }); write(); render(); });
-    host.querySelector("[data-reset]").addEventListener("click", () => { state = normalize(defaults); write(); render(); });
+    unitButtons.forEach(button => button.addEventListener("click", () => { state.unit = button.dataset.unitButton; write(); render(false); }));
+    host.querySelector("[data-preset]").addEventListener("change", event => { state = normalize({ ...defaults, ...(presets[event.target.value] || {}), unit: state.unit }); write(); render(false); });
+    host.querySelector("[data-reset]").addEventListener("click", () => { state = normalize({ ...defaults, unit: state.unit }); write(); render(false); });
     host.querySelector("[data-download]").addEventListener("click", () => download(buildSvg(state, { includeGuides: state.exportGuides }), "laser-cut-leg-parts.svg", "image/svg+xml"));
     host.querySelector("[data-json]").addEventListener("click", () => download(JSON.stringify(normalize(state), null, 2) + "\n", "laser-cut-leg-settings.json", "application/json"));
     host.querySelector("[data-copy]").addEventListener("click", async event => { await navigator.clipboard.writeText(root.location.href); event.target.textContent = "Link copied"; setTimeout(() => event.target.textContent = "Copy share link", 1500); });
-    write(); render();
+    write(); render(false);
   }
 
   if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", () => init(document));
-  return { defaults, presets, normalize, effectiveSlotWidth, parts, validate, layout, buildSvg, encodeState, decodeState };
+  return { defaults, presets, normalize, toMm, fromMm, displayMeasurement, effectiveSlotWidth, parts, validate, layout, buildSvg, encodeState, decodeState };
 });

@@ -543,14 +543,20 @@ class DesignFabricationTests(unittest.TestCase):
         for label in (
             "Straight tabbed pair", "Angled tabbed pair", "Triangular support pair",
             "Rear easel leg", "Cross-foot pair", "Download SVG", "Copy share link",
+            'data-unit-button="mm"', 'data-unit-button="in"',
         ):
             self.assertIn(label, builder)
+        plate_builder = self.read("design-fabrication/tools/plate-builder/index.qmd")
+        self.assertIn('data-unit-button="mm"', plate_builder)
+        self.assertIn('data-unit-button="in"', plate_builder)
         script = self.read("assets/leg-builder.js")
         for group in ("CUT_PARTS", "CUT_HOLES", "MATING_SLOTS", "FIT_COUPON", "GUIDES"):
             self.assertIn(group, script)
         mechanics = self.read("design-fabrication/03-laser-cutting/02-make-it-stand.qmd")
         for concept in ("bending moment", "rear kickstand", "support footprint", "cross rail", "pivot"):
             self.assertIn(concept, mechanics)
+        for worked_example in ("11 × 4 inch name plate", "two high supports", "one low centre support"):
+            self.assertIn(worked_example, mechanics)
         self.assertIn("tools/leg-builder/index.qmd", mechanics)
 
 

@@ -48,3 +48,15 @@ test("13 export is true-size, grouped and transform-free", () => {
   assert.doesNotMatch(svg, /transform=|<text|<image/);
   assert.strictEqual((svg.match(/id="hole-/g) || []).length, 4);
 });
+
+test("14 inch entry converts to canonical millimetres", () => {
+  assert.strictEqual(builder.toMm(11, "in"), 279.4);
+  assert.strictEqual(builder.fromMm(101.6, "in"), 4);
+});
+
+test("15 inch export keeps the physical size", () => {
+  const svg = builder.buildSvg({ ...builder.defaults, unit: "in", width: 279.4, height: 101.6, pattern: "single" });
+  assert.match(svg, /width="11in" height="4in" viewBox="0 0 279.4 101.6"/);
+  assert.match(svg, /&quot;geometryUnits&quot;:&quot;mm&quot;/);
+  assert.match(svg, /&quot;displayUnit&quot;:&quot;in&quot;/);
+});

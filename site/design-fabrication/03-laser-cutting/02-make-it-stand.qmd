@@ -99,6 +99,41 @@ These are prototype starting points for a light display easel, not structural ra
 
 For 3 mm stock, those starting relationships suggest front rails around 12 to 18 mm wide, a cross rail at least about 12 mm deep, and a tab at least about 12 mm long. These are hypotheses to test with the actual stock, not guaranteed minimums.
 
+## Worked example: 11 × 4 inch name plate
+
+Assume the plaque is **11 inches wide, 4 inches high and nominally 1/8 inch thick**. Measure the actual material rather than entering exactly 0.125 inch automatically. Define the viewing angle from the tabletop: 75 degrees is 15 degrees back from vertical, while 80 degrees is 10 degrees back from vertical.
+
+| Viewing angle | Top moves behind the bottom | Vertical rise | Centre-of-mass projection behind the bottom |
+|---:|---:|---:|---:|
+| 75° | 1.04 in | 3.86 in | 0.52 in |
+| 80° | 0.69 in | 3.94 in | 0.35 in |
+
+The centre-of-mass values assume a uniform plaque without a heavy attachment. The support footprint must extend behind that projected point, with additional margin for bumps and material variation.
+
+### Stronger, quieter option: two high supports
+
+- Put two triangular cheeks or rear legs about **1.5 to 2 inches in from each end** of the 11-inch plaque.
+- Attach each support about **3 to 3.5 inches above the bottom edge**.
+- Start with the rear contact about **1.5 to 1.75 inches behind the plaque's bottom contact**.
+- A rear member from a 3.25-inch-high attachment to that footprint is about **3.2 to 3.4 inches long** at the proposed angles.
+
+The pair distributes load across the plaque and resists twisting. The higher attachment gives the support more leverage to resist rotation, but the longer member needs enough width to prevent sideways bending. A triangular cheek is usually stiffer than a narrow stick because it shortens the unsupported load path.
+
+### Sleeker option: one low centre support
+
+A single centred support can attach about **1.25 inches above the bottom**, place its rear contact about **1.25 inches behind the bottom**, and use a member about **1.5 to 1.6 inches long**. This is compact and visually quiet, but the smaller vertical spacing creates greater force at the joint for the same overturning moment. One central support also provides less resistance to twisting across an 11-inch-wide plaque.
+
+Use two separated bottom locating points or a continuous ledge even if there is only one rear leg. They stop the plaque from rotating around the centre support. Widening the concealed base of the centre support also improves side-to-side stability without making the visible leg taller.
+
+### Prototype sequence
+
+1. Draw both side profiles full size on half a sheet of paper or cardboard.
+2. Test 75 degrees and 80 degrees. Choose the smallest tilt that still reads well under the expected viewing height.
+3. Test the two-support version first as the reference design.
+4. Remove material or move toward a single centre support only after the reference design passes the push tests.
+5. Measure the real 1/8-inch stock and cut a slot coupon. Set the slot from measured thickness plus the tested fit adjustment.
+6. Push at both ends and at the top centre. Watch for tipping, plaque twist, slot splitting and out-of-plane leg bending.
+
 ## Stability checks
 
 - Locate the combined centre of mass approximately over the support area.
