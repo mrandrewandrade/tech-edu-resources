@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.15">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A broad design and fabrication reference covering technical drawings, standards, GD&amp;T, fits, machine design, fastening, wood, metal, welding, machining, CNC, laser cutting, 3D printing, and plasma cutting.">
+
+<title>Systems Design &amp; Fabrication Track – Technological Education Resources</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-71c7b49c685e597d910cb795eccce780.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a8915aa26982f2aa87b37c986303974c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.svg">
+
+<link rel="icon" type="image/png" sizes="96x96" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon-96x96.png">
+
+<link rel="icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.ico" sizes="any">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/apple-touch-icon.png">
+
+<link rel="manifest" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/site.webmanifest">
+
+<meta name="theme-color" content="#062650">
+
+
+
+<link rel="stylesheet" href="../../assets/bs-shared.css">
+<link rel="stylesheet" href="../../assets/bs-components.css">
+<link rel="stylesheet" href="../../assets/commons-overrides.css">
+<link rel="stylesheet" href="../../assets/bs-learn.css">
+<link rel="stylesheet" href="../../assets/tej-curriculum.css">
+<link rel="stylesheet" href="../../assets/design-fabrication.css">
+<meta property="og:title" content="Systems Design &amp; Fabrication Track – Technological Education Resources">
+<meta property="og:description" content="A broad design and fabrication reference covering technical drawings, standards, GD&amp;T, fits, machine design, fastening, wood, metal, welding, machining, CNC, laser cutting, 3D printing, and plasma cutting.">
+<meta property="og:site_name" content="Technological Education Resources">
+<meta name="twitter:title" content="Systems Design &amp; Fabrication Track – Technological Education Resources">
+<meta name="twitter:description" content="A broad design and fabrication reference covering technical drawings, standards, GD&amp;T, fits, machine design, fastening, wood, metal, welding, machining, CNC, laser cutting, 3D printing, and plasma cutting.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed ter-design-fabrication bs-learn-article quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo light-content">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Tech Edu</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-educator-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Educator Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-educator-resources">    
+        <li>
+    <a class="dropdown-item" href="../../teacher-slides/index.html">
+ <span class="dropdown-text">General Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-materials/index.html">
+ <span class="dropdown-text">General Materials</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../design-fabrication/index.html">
+ <span class="dropdown-text">General Design &amp; Fabrication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tej3-4/index.html">
+ <span class="dropdown-text">TEJ Notes</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-classes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Classes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-classes">    
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tas-2-sem-1.html">
+ <span class="dropdown-text">TAS Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tej-3-sem-1.html">
+ <span class="dropdown-text">TEJ Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-ttj-sem-1.html">
+ <span class="dropdown-text">TTJ / TTS Slides</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../glossary/index.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lore/index.html"> 
+<span class="menu-text">Lore</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../design-fabrication/systems-design-fabrication-track/index.html">Systems Design &amp; Fabrication Track</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Curriculum Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/01-nice-design-process/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. N.I.C.E. Design Process</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/01-needs-necessities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Needs &amp; Necessities</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/02-investigate-inquire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Investigate &amp; Inquire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/03-create-communicate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Create &amp; Communicate</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Evaluate, Re-question &amp; Iterate</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/systems-design-fabrication-track/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Systems Design &amp; Fabrication Track</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/ai/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. AI Literacy &amp; Reproducible Workflows</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/01-capabilities-limits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Capabilities &amp; Limits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/02-evaluate-output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Evaluate an Output</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/03-verify-sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Verify Sources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/04-reproducible-workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Reproducible Workflow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/05-iterate-purposefully.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5 Purposeful Iteration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/06-document-disclose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.6 Document &amp; Disclose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/ai/07-ai-design-audit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Design Audit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/02-digital-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Digital Design &amp; Communication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/01-raster-vector-svg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Raster, Vector &amp; SVG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/02-vector-geometry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Vector Geometry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/03-logos-lettermarks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 Logos &amp; Lettermarks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/04-layout-typography-colour.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Layout, Type &amp; Colour</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/05-animation-ui-ux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 Animation · Pencil2D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/06-blender-artistic-3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 Blender · Artistic 3D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/07-website-ui-ux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 Website &amp; UI/UX</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/03-laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Laser Cutting &amp; 2D Fabrication</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/01-name-logo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Name + Logo (after Personal Logo)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optional · Make It Stand</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/03-measure-place.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Measure + Place</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/04-material-fit-calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Material Fit + Calibration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Assemblies + Hybrid Fabrication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/06-tool-holder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Tool Organizer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignment · Good Idea, Better Product</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/07-wall-bench-module.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Wall + Bench</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/08-capstone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Capstone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/holiday-ornament-reindeer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seasonal · Holiday Ornament</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/04-3d-printing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. 3D Modelling + 3D Printing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/01-additive-cad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Onshape CAD vs Blender Mesh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/02-slicing-orientation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Slicing &amp; Orientation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/03-tolerances-functional-parts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Tolerances &amp; Functional Parts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project · Faux Enamel Jewellery</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/04-3d-printing/04-design-challenge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced · Functional Part</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/07-other-fabrication/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Additional Fabrication Methods</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/05-cnc-digital-machining/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNC &amp; Digital Machining</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/06-textiles-soft-goods/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Textiles &amp; Soft Goods</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/07-other-fabrication/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other Fabrication</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../teaching-materials/laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Library &amp; Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/resources/work-in-progress/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Free Online Resource Directory · Work in Progress</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">First Laser Projects Toolkit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Organizer Reference Assemblies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reverse-Engineering Challenge</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/tool-organizer-gallery/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool Organizer Gallery</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/resources/fabrication-planning-worksheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Planning Sheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/plate-builder/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Plate Builder</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../design-fabrication/applications/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ideas by Technology Area</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/exploring-technologies/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exploring Technologies · TIJ1O</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/technological-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Technological Design · TDJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/manufacturing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Manufacturing · TMJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/construction/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Construction · TCJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/transportation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transportation · TTJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/computer-technology/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computer Technology · TEJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/communications-technology/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Communications Technology · TGJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/green-industries/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Green Industries · THJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/hairstyling-aesthetics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hairstyling &amp; Aesthetics · TXJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/hospitality-tourism/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hospitality &amp; Tourism · TFJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/applications/health-care/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Health Care · TPJ</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-this-track" id="toc-why-this-track" class="nav-link active" data-scroll-target="#why-this-track">Why this track</a></li>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#course-connections" id="toc-course-connections" class="nav-link" data-scroll-target="#course-connections">Course connections</a></li>
+  <li><a href="#reference-map" id="toc-reference-map" class="nav-link" data-scroll-target="#reference-map">Reference map</a></li>
+  <li><a href="#technical-foundations" id="toc-technical-foundations" class="nav-link" data-scroll-target="#technical-foundations">Technical foundations</a>
+  <ul class="collapse">
+  <li><a href="#n.i.c.e.-define-create-communicate-and-evaluate" id="toc-n.i.c.e.-define-create-communicate-and-evaluate" class="nav-link" data-scroll-target="#n.i.c.e.-define-create-communicate-and-evaluate">0. N.I.C.E.: define, create, communicate, and evaluate</a></li>
+  <li><a href="#technical-drawings-orthographic-projection-and-standards" id="toc-technical-drawings-orthographic-projection-and-standards" class="nav-link" data-scroll-target="#technical-drawings-orthographic-projection-and-standards">1. Technical drawings, orthographic projection, and standards</a></li>
+  <li><a href="#measurement-tolerances-gdt-surface-finish-and-fits" id="toc-measurement-tolerances-gdt-surface-finish-and-fits" class="nav-link" data-scroll-target="#measurement-tolerances-gdt-surface-finish-and-fits">2. Measurement, tolerances, GD&amp;T, surface finish, and fits</a></li>
+  <li><a href="#general-machine-and-mechanism-design" id="toc-general-machine-and-mechanism-design" class="nav-link" data-scroll-target="#general-machine-and-mechanism-design">3. General machine and mechanism design</a></li>
+  <li><a href="#materials-and-process-planning" id="toc-materials-and-process-planning" class="nav-link" data-scroll-target="#materials-and-process-planning">4. Materials and process planning</a></li>
+  <li><a href="#fasteners-threads-anchors-and-assembly-design" id="toc-fasteners-threads-anchors-and-assembly-design" class="nav-link" data-scroll-target="#fasteners-threads-anchors-and-assembly-design">5. Fasteners, threads, anchors, and assembly design</a></li>
+  <li><a href="#hand-fabrication-hole-features-threading-and-finishing" id="toc-hand-fabrication-hole-features-threading-and-finishing" class="nav-link" data-scroll-target="#hand-fabrication-hole-features-threading-and-finishing">6. Hand fabrication, hole features, threading, and finishing</a></li>
+  </ul></li>
+  <li><a href="#material-and-forming-processes" id="toc-material-and-forming-processes" class="nav-link" data-scroll-target="#material-and-forming-processes">Material and forming processes</a>
+  <ul class="collapse">
+  <li><a href="#wood-preparation-and-shaping" id="toc-wood-preparation-and-shaping" class="nav-link" data-scroll-target="#wood-preparation-and-shaping">7. Wood preparation and shaping</a></li>
+  <li><a href="#sheet-metal-systems" id="toc-sheet-metal-systems" class="nav-link" data-scroll-target="#sheet-metal-systems">8. Sheet-metal systems</a></li>
+  <li><a href="#metal-cutting-and-stock-preparation" id="toc-metal-cutting-and-stock-preparation" class="nav-link" data-scroll-target="#metal-cutting-and-stock-preparation">9. Metal cutting and stock preparation</a></li>
+  </ul></li>
+  <li><a href="#welding-processes" id="toc-welding-processes" class="nav-link" data-scroll-target="#welding-processes">Welding processes</a>
+  <ul class="collapse">
+  <li><a href="#resistance-spot-welding" id="toc-resistance-spot-welding" class="nav-link" data-scroll-target="#resistance-spot-welding">10. Resistance spot welding</a></li>
+  <li><a href="#mig-gas-metal-arc-welding-gmaw" id="toc-mig-gas-metal-arc-welding-gmaw" class="nav-link" data-scroll-target="#mig-gas-metal-arc-welding-gmaw">11. MIG / gas metal arc welding (GMAW)</a></li>
+  <li><a href="#stick-shielded-metal-arc-welding-smaw" id="toc-stick-shielded-metal-arc-welding-smaw" class="nav-link" data-scroll-target="#stick-shielded-metal-arc-welding-smaw">12. Stick / shielded metal arc welding (SMAW)</a></li>
+  <li><a href="#tig-gas-tungsten-arc-welding-gtaw" id="toc-tig-gas-tungsten-arc-welding-gtaw" class="nav-link" data-scroll-target="#tig-gas-tungsten-arc-welding-gtaw">13. TIG / gas tungsten arc welding (GTAW)</a></li>
+  </ul></li>
+  <li><a href="#machining-and-precision-processes" id="toc-machining-and-precision-processes" class="nav-link" data-scroll-target="#machining-and-precision-processes">Machining and precision processes</a>
+  <ul class="collapse">
+  <li><a href="#manual-milling-and-common-operations" id="toc-manual-milling-and-common-operations" class="nav-link" data-scroll-target="#manual-milling-and-common-operations">14. Manual milling and common operations</a></li>
+  <li><a href="#manual-lathe-and-common-operations" id="toc-manual-lathe-and-common-operations" class="nav-link" data-scroll-target="#manual-lathe-and-common-operations">15. Manual lathe and common operations</a></li>
+  <li><a href="#surface-grinding-and-precision-finishing" id="toc-surface-grinding-and-precision-finishing" class="nav-link" data-scroll-target="#surface-grinding-and-precision-finishing">16. Surface grinding and precision finishing</a></li>
+  </ul></li>
+  <li><a href="#digital-fabrication" id="toc-digital-fabrication" class="nav-link" data-scroll-target="#digital-fabrication">Digital fabrication</a>
+  <ul class="collapse">
+  <li><a href="#cadcam-cnc-milling-routing-and-engraving" id="toc-cadcam-cnc-milling-routing-and-engraving" class="nav-link" data-scroll-target="#cadcam-cnc-milling-routing-and-engraving">17. CAD/CAM, CNC milling, routing, and engraving</a></li>
+  <li><a href="#laser-cutting-engraving-and-3d-printing" id="toc-laser-cutting-engraving-and-3d-printing" class="nav-link" data-scroll-target="#laser-cutting-engraving-and-3d-printing">18. Laser cutting, engraving, and 3D printing</a></li>
+  <li><a href="#manual-plasma-cutting-and-cnc-plasma-concepts" id="toc-manual-plasma-cutting-and-cnc-plasma-concepts" class="nav-link" data-scroll-target="#manual-plasma-cutting-and-cnc-plasma-concepts">19. Manual plasma cutting and CNC plasma concepts</a></li>
+  </ul></li>
+  <li><a href="#production-and-integration" id="toc-production-and-integration" class="nav-link" data-scroll-target="#production-and-integration">Production and integration</a>
+  <ul class="collapse">
+  <li><a href="#production-systems-quality-control-and-integrated-systems-capstone" id="toc-production-systems-quality-control-and-integrated-systems-capstone" class="nav-link" data-scroll-target="#production-systems-quality-control-and-integrated-systems-capstone">20. Production systems, quality control, and integrated systems capstone</a></li>
+  </ul></li>
+  <li><a href="#suggested-evidence-sequence" id="toc-suggested-evidence-sequence" class="nav-link" data-scroll-target="#suggested-evidence-sequence">Suggested evidence sequence</a></li>
+  <li><a href="#capstone-review-gates" id="toc-capstone-review-gates" class="nav-link" data-scroll-target="#capstone-review-gates">Capstone review gates</a></li>
+  <li><a href="#assessment-model" id="toc-assessment-model" class="nav-link" data-scroll-target="#assessment-model">Assessment model</a></li>
+  <li><a href="#technical-standards-references" id="toc-technical-standards-references" class="nav-link" data-scroll-target="#technical-standards-references">Technical standards references</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Systems Design &amp; Fabrication Track</h1>
+<p class="subtitle lead">A practical reference from a real need to a documented, tested, multi-process build</p>
+</div>
+
+<div>
+  <div class="description">
+    A broad design and fabrication reference covering technical drawings, standards, GD&amp;T, fits, machine design, fastening, wood, metal, welding, machining, CNC, laser cutting, 3D printing, and plasma cutting.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-important callout-titled" title="School board and course safety information">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>School board and course safety information
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This public website explains design and fabrication concepts. Machine-specific safety instruction, operating procedures, assessments, and authorization are intentionally kept outside the website. Follow your school board’s safety guidelines and the course-specific instruction provided by your teacher. Students in Mr.&nbsp;Andrade’s classes can find that information in Google Classroom. This page is not permission or authorization to operate equipment.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Why the name Systems Design &amp; Fabrication?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why the name Systems Design &amp; Fabrication?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Systems</strong> is broader than one material, machine, or course code. Designers decide how parts, materials, processes, fasteners, mechanisms, controls, people, and environments work together. <strong>Design &amp; Fabrication</strong> keeps the pathway practical: important decisions become drawings, calculations, prototypes, parts, inspections, tests, and revisions.</p>
+</div>
+</div>
+<section id="why-this-track" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-track">Why this track</h2>
+<p>The <a href="../../tej3-4/engineering-preparation-track/index.html">Engineering Preparation Track</a> develops mathematical modelling through electrical and control systems. This parallel reference develops <strong>physical design judgement</strong> through fabrication systems: understand a need, investigate precedents, communicate a proposal, select materials and processes, make and inspect parts, assemble the system, evaluate evidence, and improve the design.</p>
+<p>The strongest Ontario course connections are <strong>TIJ/TAS, TDJ, TMJ, TCJ, TTJ, TEJ, TGJ, and THJ</strong>, but the technical knowledge is useful to anyone learning how designed objects are specified and made. Select the sections that match the problem, materials, available equipment, and required accuracy.</p>
+<p>Every project returns to six questions:</p>
+<ol type="1">
+<li>What is the situation, who is affected, and what is actually needed?</li>
+<li>What do existing products, users, standards, and tests teach us?</li>
+<li>What is the simplest prototype that can sell the idea clearly and produce useful feedback?</li>
+<li>What materials, mechanisms, fasteners, fits, and processes make the system work?</li>
+<li>What do measurements, tests, and synthesized feedback reveal about the proposal?</li>
+<li>Should we revise the solution, the problem statement, the stated needs, or all three?</li>
+</ol>
+<div class="ter-process-flow">
+<p><span>Need + criteria</span> <span>Investigate</span> <span>Create + pitch</span> <span>Evaluate evidence</span> <span>Re-question + revise</span></p>
+</div>
+</section>
+<section id="learning-goals" class="level2">
+<h2 class="anchored" data-anchor-id="learning-goals">Learning goals</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Learning goal</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Use the <a href="../../design-fabrication/01-nice-design-process/index.html">N.I.C.E. Design Process</a> to define a need, investigate precedents, create a minimal pitchable or viable product, pitch it, collect feedback, evaluate, and iterate.</td>
+<td>A project should begin with a situation and evidence, not a favourite machine.</td>
+</tr>
+<tr class="even">
+<td>Read and create sketches, orthographic views, section views, assembly drawings, dimensions, tolerances, and revision records.</td>
+<td>Other people must be able to interpret, make, inspect, assemble, and revise the work.</td>
+</tr>
+<tr class="odd">
+<td>Use measurement, limits, fits, datums, and introductory GD&amp;T to express function.</td>
+<td>Precision is useful only when it is connected to how a part must fit and work.</td>
+</tr>
+<tr class="even">
+<td>Explain loads, motion, interfaces, mechanisms, maintenance, and failure modes in a machine or product.</td>
+<td>A collection of parts becomes a system only when the relationships are understood.</td>
+</tr>
+<tr class="odd">
+<td>Select materials, stock forms, fasteners, joining methods, and fabrication processes using stated criteria.</td>
+<td>The same geometry can succeed or fail depending on material and process.</td>
+</tr>
+<tr class="even">
+<td>Plan the order of cutting, shaping, drilling, threading, joining, finishing, and inspection.</td>
+<td>A good part made in the wrong order may be difficult to measure, assemble, or repair.</td>
+</tr>
+<tr class="odd">
+<td>Compare manual processes with CNC, laser, additive, and other digital methods.</td>
+<td>Automation changes setup and repeatability, but does not remove design judgement.</td>
+</tr>
+<tr class="even">
+<td>Inspect a part, record deviations, test the assembly, synthesize feedback, and revise the editable source.</td>
+<td>The next version should contain what was learned from the physical result.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="course-connections" class="level2">
+<h2 class="anchored" data-anchor-id="course-connections">Course connections</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technology area</th>
+<th>Strongest contribution</th>
+<th>Example system context</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>TIJ / TAS</strong></td>
+<td>measurement, design communication, materials, processes, and system thinking</td>
+<td>compact organizer or display using two processes</td>
+</tr>
+<tr class="even">
+<td><strong>TDJ</strong></td>
+<td>requirements, human factors, CAD, modelling, technical drawings, testing, and iteration</td>
+<td>adjustable workstation accessory or accessible interface</td>
+</tr>
+<tr class="odd">
+<td><strong>TMJ</strong></td>
+<td>production planning, sheet metal, welding, machining, CNC, inspection, and quality</td>
+<td>fixture, mechanism, bracket system, or production aid</td>
+</tr>
+<tr class="even">
+<td><strong>TCJ</strong></td>
+<td>wood preparation, layout, joinery, fastening, assemblies, finishes, and installation</td>
+<td>modular storage, stand, cabinet component, or site-use jig</td>
+</tr>
+<tr class="odd">
+<td><strong>TTJ</strong></td>
+<td>metal cutting, welding, machining, fastening, service access, and fixtures</td>
+<td>component stand, inspection aid, tool control, or service cart module</td>
+</tr>
+<tr class="even">
+<td><strong>TEJ</strong></td>
+<td>enclosures, panels, cable management, sensors, controls, and CNC integration</td>
+<td>instrumented enclosure, test fixture, or controlled mechanism</td>
+</tr>
+<tr class="odd">
+<td><strong>TGJ</strong></td>
+<td>graphics, signage, exhibits, laser/CNC engraving, and documentation</td>
+<td>branded display, wayfinding system, prop, or exhibit assembly</td>
+</tr>
+<tr class="even">
+<td><strong>THJ</strong></td>
+<td>outdoor materials, fastening, repair, field use, and sustainability</td>
+<td>propagation station, durable label system, or garden tool module</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reference-map" class="level2">
+<h2 class="anchored" data-anchor-id="reference-map">Reference map</h2>
+<p>The sections form a connected knowledge base. They do not prescribe a course length or require every process in one project.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>Technical focus</th>
+<th>Useful evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>N.I.C.E. design cycle and system definition</td>
+<td>need statement, criteria, minimal pitchable or viable product, pitch, feedback synthesis, revision</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>technical drawings, orthographic projection, sections, drawing standards</td>
+<td>drawing set, title block, revision, assembly communication</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>measurement, tolerances, GD&amp;T, surface finish, and fits</td>
+<td>functional dimensions, datum scheme, fit choice, inspection plan</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>general machine and mechanism design</td>
+<td>system diagram, load path, interfaces, component selection</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>materials and process planning</td>
+<td>material/process matrix, stock list, operation sequence</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>fasteners, threads, anchors, and assembly</td>
+<td>joint selection, fastener schedule, assembly drawing</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>hand fabrication, holes, threads, and finishing</td>
+<td>hand-made part, hole features, thread and finish callouts</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>wood preparation and shaping</td>
+<td>prepared stock, reference faces, dimensions, surface record</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>sheet-metal systems</td>
+<td>flat pattern, bend sequence, formed part, assembly check</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>metal cutting and stock preparation</td>
+<td>process comparison, cut plan, finished stock inspection</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>resistance spot welding</td>
+<td>lap-joint coupon, weld pattern, joint evaluation</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>MIG / GMAW</td>
+<td>bead and joint coupons, parameter record, joint evaluation</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>stick / SMAW</td>
+<td>bead and joint coupons, electrode comparison, joint evaluation</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>TIG / GTAW</td>
+<td>bead and joint coupons, filler/autogenous comparison, joint evaluation</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>manual milling</td>
+<td>squared block, faces, steps, slots, pockets, and hole features</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>manual lathe</td>
+<td>faced, turned, drilled, bored, threaded, or knurled part</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>surface grinding and precision finishing</td>
+<td>flatness, thickness, finish, and measurement evidence</td>
+</tr>
+<tr class="even">
+<td>17</td>
+<td>CAD/CAM, CNC milling, routing, and engraving</td>
+<td>source model, setup sheet, toolpaths, first-part inspection</td>
+</tr>
+<tr class="odd">
+<td>18</td>
+<td>laser cutting, engraving, and 3D printing</td>
+<td>calibrated parts, fitted interfaces, editable source, revision</td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>manual and CNC plasma concepts</td>
+<td>cut-quality study, nested drawing, CAM or simulation evidence</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>production systems and integrated capstone</td>
+<td>repeatable parts, quality record, assembled system, revision</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technical-foundations" class="level2">
+<h2 class="anchored" data-anchor-id="technical-foundations">Technical foundations</h2>
+<section id="n.i.c.e.-define-create-communicate-and-evaluate" class="level3">
+<h3 class="anchored" data-anchor-id="n.i.c.e.-define-create-communicate-and-evaluate">0. N.I.C.E.: define, create, communicate, and evaluate</h3>
+<p>Begin with the complete <a href="../../design-fabrication/01-nice-design-process/index.html">N.I.C.E. Design Process</a>.</p>
+<ul>
+<li><strong>Needs and necessities:</strong> describe the situation, the people affected, what must change, and the difference between a real need and a preferred feature.</li>
+<li><strong>Investigate and inquire:</strong> study users, precedents, failures, materials, mechanisms, standards, constraints, and unanswered questions.</li>
+<li><strong>Create and communicate:</strong> make the simplest version that can sell and test the proposal. Use a <strong>minimal pitchable product</strong> when the main goal is to make the idea understandable and persuasive, or a <strong>minimal viable product</strong> when a working function must be demonstrated. Minimal means the least complexity needed for the pitch or test, not a physically smaller object. Pitch the idea, ask focused questions, and collect feedback without defending the first version.</li>
+<li><strong>Evaluate:</strong> group and synthesize the feedback, compare it with the needs and criteria, re-question the situation and problem statement, decide whether the proposal meets the needs, and identify the next revision.</li>
+</ul>
+<p>The cycle may return to any earlier stage. Evaluation can reveal that the design is weak, but it can also reveal that the original problem or assumed need was framed incorrectly.</p>
+</section>
+<section id="technical-drawings-orthographic-projection-and-standards" class="level3">
+<h3 class="anchored" data-anchor-id="technical-drawings-orthographic-projection-and-standards">1. Technical drawings, orthographic projection, and standards</h3>
+<p>A technical drawing is a controlled description of an object, not simply a picture. The drawing should communicate enough information for another person to manufacture and inspect the part without guessing.</p>
+<p>Core drawing knowledge includes:</p>
+<ul>
+<li>freehand design sketches, isometric or pictorial views, and multiview orthographic projection;</li>
+<li>front, top, right-side, auxiliary, section, detail, assembly, and exploded views;</li>
+<li>visible, hidden, centre, cutting-plane, section, dimension, extension, and leader lines;</li>
+<li>title blocks, drawing numbers, part names, materials, units, scale, projection method, general tolerances, revisions, and approvals;</li>
+<li>dimension placement that describes function without duplication, ambiguity, or hidden arithmetic;</li>
+<li>part drawings for manufacturing and assembly drawings for relationships, item numbers, quantities, and orientation.</li>
+</ul>
+<p>The drawing must identify the governing convention. Common references include the <a href="https://www.asme.org/codes-standards/y14-standards">ASME Y14 family of product-definition standards</a> and the ISO Geometrical Product Specifications system. Do not combine symbols or assumptions from different systems without making the chosen convention explicit.</p>
+</section>
+<section id="measurement-tolerances-gdt-surface-finish-and-fits" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-tolerances-gdt-surface-finish-and-fits">2. Measurement, tolerances, GD&amp;T, surface finish, and fits</h3>
+<p>Students should distinguish <strong>nominal size</strong>, <strong>actual size</strong>, <strong>limits</strong>, <strong>deviation</strong>, <strong>tolerance</strong>, <strong>allowance</strong>, <strong>accuracy</strong>, <strong>precision</strong>, and <strong>resolution</strong>. Use a rule, square, calliper, micrometer, height measurement, bore measurement, or fixed gauge according to the feature and required uncertainty.</p>
+<p>Dimensioning and tolerance topics include:</p>
+<ul>
+<li>unilateral, bilateral, limit, general, and reference dimensions;</li>
+<li>datum features and datum reference frames;</li>
+<li>size, location, orientation, form, profile, and runout requirements;</li>
+<li>surface texture or finish where it affects sealing, friction, appearance, wear, or measurement;</li>
+<li>tolerance stack-up across mating parts and assemblies;</li>
+<li>inspection planning before fabrication begins.</li>
+</ul>
+<p>Introductory GD&amp;T should connect each control to function. Typical concepts include straightness, flatness, circularity, cylindricity, parallelism, perpendicularity, angularity, position, profile, circular runout, and total runout. <a href="https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing">ASME Y14.5</a> and <a href="https://www.iso.org/standard/66777.html">ISO 1101</a> define formal systems; use the standard specified by the drawing or organization.</p>
+<p>Fits describe the relationship between mating features:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fit</th>
+<th>Relationship</th>
+<th>Typical design intent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Clearance fit</strong></td>
+<td>the hole remains larger than the shaft across the specified limits</td>
+<td>free movement, sliding, assembly by hand</td>
+</tr>
+<tr class="even">
+<td><strong>Transition fit</strong></td>
+<td>the limits may produce a small clearance or a small interference</td>
+<td>accurate location with controlled assembly</td>
+</tr>
+<tr class="odd">
+<td><strong>Interference fit</strong></td>
+<td>the shaft remains larger than the hole across the specified limits</td>
+<td>retained or torque-transmitting assembly</td>
+</tr>
+</tbody>
+</table>
+<p>Also compare hole-basis and shaft-basis systems, running/sliding/location/press applications, temperature effects, finish, lubrication, and whether disassembly is required. The <a href="https://www.iso.org/ics/17.040.10/x/">ISO 286 limits-and-fits system</a> is one formal reference; classroom examples should focus first on functional relationships and measurable limits.</p>
+</section>
+<section id="general-machine-and-mechanism-design" class="level3">
+<h3 class="anchored" data-anchor-id="general-machine-and-mechanism-design">3. General machine and mechanism design</h3>
+<p>A machine changes force, motion, energy, material, or information. Begin with a system diagram showing inputs, outputs, boundaries, components, interfaces, and feedback.</p>
+<p>Study these recurring design ideas:</p>
+<ul>
+<li>force, torque, power, speed, work, energy, mechanical advantage, efficiency, and load paths;</li>
+<li>tension, compression, shear, bending, torsion, bearing stress, deflection, wear, fatigue, impact, and buckling;</li>
+<li>shafts, axles, bearings, bushings, keys, keyways, splines, pins, retaining rings, collars, and couplings;</li>
+<li>gears, racks, lead screws, cams, linkages, pulleys, belts, sprockets, chains, springs, and linear guides;</li>
+<li>fixed, rotating, sliding, pivoting, adjustable, detachable, and serviceable interfaces;</li>
+<li>stiffness versus mass, alignment, balance, friction, lubrication, backlash, tolerance stack-up, and thermal expansion;</li>
+<li>modularity, standard components, access for tools, replacement of wear parts, inspection, maintenance, and end-of-life disassembly.</li>
+</ul>
+<p>A strong machine-design explanation follows the force and motion through the system and identifies where fit, alignment, fastening, or material choice controls performance.</p>
+</section>
+<section id="materials-and-process-planning" class="level3">
+<h3 class="anchored" data-anchor-id="materials-and-process-planning">4. Materials and process planning</h3>
+<p>Compare wood species and sheet goods, ferrous and non-ferrous metals, sheet thicknesses, engineering plastics, elastomers, composites, and additive-manufacturing materials. Consider function, stock form, strength, stiffness, toughness, hardness, machinability, weldability, grain direction, corrosion, heat, finish, cost, waste, reuse, repair, and availability.</p>
+<p>A process plan identifies stock size, quantity, datums, setup order, workholding concept, tools, cutting or forming operations, joining sequence, intermediate inspections, finishing, and assembly. Explain why each operation occurs when it does.</p>
+</section>
+<section id="fasteners-threads-anchors-and-assembly-design" class="level3">
+<h3 class="anchored" data-anchor-id="fasteners-threads-anchors-and-assembly-design">5. Fasteners, threads, anchors, and assembly design</h3>
+<p>Choose a joint by asking whether it must be removable, adjustable, hidden, sealed, conductive, corrosion resistant, vibration resistant, permanent, or easy to inspect.</p>
+<p>Threaded-fastener knowledge includes:</p>
+<ul>
+<li>the difference between bolts, machine screws, cap screws, wood screws, sheet-metal screws, set screws, studs, and threaded rod;</li>
+<li>metric diameter and pitch, inch diameter and threads per inch, coarse and fine series, right- and left-hand threads;</li>
+<li>thread form, major/minor/pitch diameter, lead, engagement, tapped holes, clearance holes, and blind-hole depth;</li>
+<li>nuts, plain washers, hardened washers, lock nuts, prevailing-torque features, thread-locking compounds, safety wire, cotter pins, and tab washers where applicable;</li>
+<li>strength grade or property class, material, coating, corrosion compatibility, preload, joint stiffness, tightening method, and access for installation and service;</li>
+<li>threaded inserts for wood, plastics, sheet metal, and damaged-thread repair;</li>
+<li>rivets, rivet nuts, clinch fasteners, pins, dowels, keys, retaining rings, adhesives, and welds as alternatives or complements.</li>
+</ul>
+<p>For fastening into concrete or masonry, distinguish concrete screws, wedge anchors, sleeve anchors, drop-in anchors, adhesive anchors, and systems intended for hollow masonry. Selection depends on base material, member thickness, edge distance, spacing, embedment, hole condition, tension and shear, environmental exposure, removability, and the manufacturer’s published design data. Permanent, structural, overhead, guard, handrail, or life-safety anchorage requires the applicable code, specified product system, and qualified design review rather than a generic classroom rule.</p>
+<p>The assembly drawing should name each fastener, show quantity and location, state the hole or thread requirement, identify the stack of parts, and preserve tool access. A bill of materials should distinguish purchased hardware from fabricated parts.</p>
+</section>
+<section id="hand-fabrication-hole-features-threading-and-finishing" class="level3">
+<h3 class="anchored" data-anchor-id="hand-fabrication-hole-features-threading-and-finishing">6. Hand fabrication, hole features, threading, and finishing</h3>
+<p>Build accuracy through layout, sawing, filing, deburring, drilling, reaming, tapping, die threading, countersinking, counterboring, spotfacing, scraping, sanding, and finishing. Connect each hole feature to its function:</p>
+<ul>
+<li>a <strong>clearance hole</strong> allows a fastener to pass;</li>
+<li>a <strong>tap-drill hole</strong> leaves material for an internal thread;</li>
+<li>a <strong>reamed hole</strong> controls size and finish for a pin, shaft, or accurate fit;</li>
+<li>a <strong>counterbore</strong> recesses a cylindrical head or creates a flat seating surface;</li>
+<li>a <strong>countersink</strong> seats a tapered head or removes a sharp hole edge;</li>
+<li>a <strong>spotface</strong> creates a local flat bearing surface.</li>
+</ul>
+<p>The evidence is a small assembly whose dimensions, hole features, threads, fasteners, finish, and service access match the drawing.</p>
+</section>
+</section>
+<section id="material-and-forming-processes" class="level2">
+<h2 class="anchored" data-anchor-id="material-and-forming-processes">Material and forming processes</h2>
+<section id="wood-preparation-and-shaping" class="level3">
+<h3 class="anchored" data-anchor-id="wood-preparation-and-shaping">7. Wood preparation and shaping</h3>
+<p>Use the jointer to establish a reference face and edge, the planer to create consistent thickness, the band saw or another suitable process for shaping, and sanding equipment for controlled surface preparation. Track grain direction, moisture and stock defects, reference faces, initial and final dimensions, squareness, thickness, tear-out, and surface quality.</p>
+<p>The result is stable, square stock for a later component or assembly. Explain where material was removed at each operation and how the reference surfaces control later measurements.</p>
+</section>
+<section id="sheet-metal-systems" class="level3">
+<h3 class="anchored" data-anchor-id="sheet-metal-systems">8. Sheet-metal systems</h3>
+<p>Develop flat patterns in paper or card before committing material. Study material thickness, inside bend radius, bend angle, neutral axis, bend allowance, bend deduction, K-factor as a model, reliefs, hems, seams, tabs, beads, flanges, and the effect of operation order.</p>
+<p>Processes may include layout, shearing or sawing, notching, punching, drilling, deburring, bending, rolling, riveting, threaded inserts, screws, tabs, and resistance spot welding. Evidence should include the flat pattern, formed dimensions, bend sequence, joint plan, and fit with mating parts.</p>
+</section>
+<section id="metal-cutting-and-stock-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="metal-cutting-and-stock-preparation">9. Metal cutting and stock preparation</h3>
+<p>Compare a horizontal band saw, vertical band saw configured for the material, powered hacksaw, cold saw, abrasive cut-off saw, manual hacksaw, plasma process, and CNC profile-cutting process. Select a method using stock shape, alloy, section thickness, required accuracy, heat input, kerf, burr, finish, speed, quantity, and later operations.</p>
+<p>Stock preparation includes identifying the datum end, allowing material for cleanup, controlling cut sequence, deburring, marking part identity, and verifying the blank before machining or welding.</p>
+</section>
+</section>
+<section id="welding-processes" class="level2">
+<h2 class="anchored" data-anchor-id="welding-processes">Welding processes</h2>
+<p>Welding processes are separated because their equipment, consumables, heat source, joint preparation, deposition, appearance, productivity, and suitable applications differ. For every process, record material, thickness, joint type, position, fit-up, machine settings, consumables, observations, distortion, and evaluation of the finished coupon.</p>
+<section id="resistance-spot-welding" class="level3">
+<h3 class="anchored" data-anchor-id="resistance-spot-welding">10. Resistance spot welding</h3>
+<p>Resistance spot welding joins overlapping sheet by applying force and electrical resistance heating through electrodes. Study lap-joint geometry, electrode access, electrode face condition, sheet thickness, coating or surface condition, current, force, weld time, pitch, edge distance, indentation, nugget formation, and peel or destructive coupon evidence.</p>
+<p>Use it when repeated sheet-metal lap joints and two-sided electrode access suit the design. It does not create a continuous sealed seam unless the selected process and joint are specifically designed to do so.</p>
+</section>
+<section id="mig-gas-metal-arc-welding-gmaw" class="level3">
+<h3 class="anchored" data-anchor-id="mig-gas-metal-arc-welding-gmaw">11. MIG / gas metal arc welding (GMAW)</h3>
+<p>GMAW continuously feeds wire through the welding gun. Study voltage, wire-feed speed, travel speed, contact-tip-to-work distance, torch angle, polarity, shielding gas, transfer mode, tack sequence, starts and stops, joint gap, bead profile, penetration evidence, spatter, undercut, porosity, overlap, burn-through, and distortion.</p>
+<p>Compare butt, lap, tee, corner, fillet, and groove joints. Use labelled coupons to connect settings and technique to the resulting bead and joint rather than judging appearance alone.</p>
+</section>
+<section id="stick-shielded-metal-arc-welding-smaw" class="level3">
+<h3 class="anchored" data-anchor-id="stick-shielded-metal-arc-welding-smaw">12. Stick / shielded metal arc welding (SMAW)</h3>
+<p>SMAW uses a flux-coated consumable electrode. Study electrode classification, diameter, current range, polarity, arc length, work and travel angles, travel speed, bead placement, restarts, slag, multi-pass sequence, penetration evidence, inclusions, porosity, undercut, and distortion.</p>
+<p>Compare how electrode choice, material thickness, joint preparation, position, and access affect the result. Keep the electrode classification and parameter record with each practice coupon.</p>
+</section>
+<section id="tig-gas-tungsten-arc-welding-gtaw" class="level3">
+<h3 class="anchored" data-anchor-id="tig-gas-tungsten-arc-welding-gtaw">13. TIG / gas tungsten arc welding (GTAW)</h3>
+<p>GTAW uses a non-consumable tungsten electrode and may use separate filler. Study current type and polarity, amperage control, tungsten selection and preparation, arc length, torch and filler angles, shielding gas, travel speed, filler timing, autogenous versus filler-added joints, cleanliness, heat input, bead profile, penetration evidence, oxidation, porosity, undercut, and distortion.</p>
+<p>Compare the process where fine heat and filler control, thin material, clean appearance, or non-ferrous alloys matter. Document the relationship between joint fit-up, heat control, filler addition, and the finished coupon.</p>
+</section>
+</section>
+<section id="machining-and-precision-processes" class="level2">
+<h2 class="anchored" data-anchor-id="machining-and-precision-processes">Machining and precision processes</h2>
+<section id="manual-milling-and-common-operations" class="level3">
+<h3 class="anchored" data-anchor-id="manual-milling-and-common-operations">14. Manual milling and common operations</h3>
+<p>Begin with machine axes, spindle direction, cutter types, workholding concepts, parallels, edge finding, datums, coordinates, stock allowance, speeds and feeds, depth and width of cut, conventional and climb cutting, and inspection between operations.</p>
+<p>Common operations include:</p>
+<ul>
+<li><strong>squaring a block:</strong> create the first reference face, produce an adjacent square face, establish parallel/opposite faces, and bring the block to length, width, and thickness from controlled datums;</li>
+<li>face milling and fly cutting for broad flat surfaces;</li>
+<li>peripheral, side, and end milling for faces, shoulders, and profiles;</li>
+<li>steps, open and closed slots, keyways, pockets, contours, and chamfers;</li>
+<li>drilling, centre drilling or spotting, reaming, boring, countersinking, counterboring, spotfacing, and tapping;</li>
+<li>circular features, bolt circles, angular setups, and simple indexing where equipment permits.</li>
+</ul>
+<p>The setup sheet should identify stock, datums, coordinates, workholding concept, cutter sequence, target dimensions, tolerances, and inspection stages. A useful introductory project is a squared block or plate containing a step, slot, pocket, and inspected hole pattern.</p>
+</section>
+<section id="manual-lathe-and-common-operations" class="level3">
+<h3 class="anchored" data-anchor-id="manual-lathe-and-common-operations">15. Manual lathe and common operations</h3>
+<p>The lathe rotates the work around a centreline. Study workholding with chucks, collets, faceplates, or centres; tool height and geometry; stick-out; spindle speed; feed; depth of cut; tailstock use; centre drilling; and diameter/length inspection.</p>
+<p>Common operations include:</p>
+<ul>
+<li>facing to establish a reference end;</li>
+<li>straight turning, step turning, shoulder turning, and finishing to diameter;</li>
+<li>taper turning, form turning, radii, chamfers, and edge breaks;</li>
+<li>centre drilling, drilling, boring, and reaming along the spindle axis;</li>
+<li>grooving, undercutting, and parting;</li>
+<li>external and internal threading by single-point tool, tap, die, or another suitable method;</li>
+<li>knurling to create a grip or controlled surface pattern;</li>
+<li>work between centres and simple eccentric work where the design and equipment justify it.</li>
+</ul>
+<p>A turning plan should show the original stock, finished profile, centreline, datums, operation order, tools, dimensions, tolerances, surface requirements, and inspection points. Suitable parts include a spacer, bushing, pin, handle component, shaft feature, threaded adapter, or mating part for the milled component.</p>
+</section>
+<section id="surface-grinding-and-precision-finishing" class="level3">
+<h3 class="anchored" data-anchor-id="surface-grinding-and-precision-finishing">16. Surface grinding and precision finishing</h3>
+<p>Surface grinding controls flatness, parallelism, thickness, and finish on suitable work. Study wheel types and dressing concepts, work and chuck relationships, reference faces, downfeed and crossfeed as process variables, spark-out, heat effects, burrs, magnetic work suitability, and measurement of flatness, parallelism, thickness, and surface condition.</p>
+<p>Evidence includes starting and final measurements, a drawing with functional tolerances, a process record, and an explanation of how heat, burrs, cleanliness, or reference choice affected the result.</p>
+</section>
+</section>
+<section id="digital-fabrication" class="level2">
+<h2 class="anchored" data-anchor-id="digital-fabrication">Digital fabrication</h2>
+<section id="cadcam-cnc-milling-routing-and-engraving" class="level3">
+<h3 class="anchored" data-anchor-id="cadcam-cnc-milling-routing-and-engraving">17. CAD/CAM, CNC milling, routing, and engraving</h3>
+<p>CNC begins with the same drawing, datum, fit, workholding, and inspection discipline as manual machining. Define stock, fixtures, work coordinates, tool numbers, tool lengths, clearances, operations, stepdowns, stepovers, entry moves, tabs or holding strategy, and inspection points. Simulate the complete toolpath and preserve the editable CAD and CAM source.</p>
+<ul>
+<li><strong>CNC mill:</strong> accurate holes, pockets, slots, profiles, surfacing, engraving, and 2D/2.5D machined features.</li>
+<li><strong>CNC router:</strong> sheet goods, wood, plastics, fixtures, signs, furniture parts, and larger 2D/2.5D components.</li>
+<li><strong>CNC engraving:</strong> labels, scales, panels, serials, part identification, diagrams, and graphic surfaces.</li>
+</ul>
+<p>Submit the source model, drawing, CAM setup, setup sheet, tool list, simulation evidence, machine file, first-part inspection, and revised source. Continue with <a href="../../design-fabrication/05-cnc-digital-machining/index.html">CNC &amp; Digital Machining</a>.</p>
+</section>
+<section id="laser-cutting-engraving-and-3d-printing" class="level3">
+<h3 class="anchored" data-anchor-id="laser-cutting-engraving-and-3d-printing">18. Laser cutting, engraving, and 3D printing</h3>
+<p>Use <a href="../../design-fabrication/03-laser-cutting/index.html">Laser Cutting &amp; 2D Fabrication</a> for vector geometry, calibration, kerf, engraving, fit, assemblies, and machine-ready files. Use <a href="../../design-fabrication/04-3d-printing/index.html">3D Modelling + 3D Printing</a> for parametric versus mesh modelling, source files, slicing, orientation, supports, tolerances, and revision.</p>
+<p>A combined project can pair a calibrated laser-cut structure with a printed connector, spacer, jig, knob, cable guide, enclosure feature, or ergonomic interface. Justify why each process suits its part, then measure the mating interface and revise the source files.</p>
+</section>
+<section id="manual-plasma-cutting-and-cnc-plasma-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="manual-plasma-cutting-and-cnc-plasma-concepts">19. Manual plasma cutting and CNC plasma concepts</h3>
+<p>Manual plasma cutting introduces torch-to-work relationship, piercing and edge starts, travel consistency, kerf, lead-in/lead-out choices, dross, heat-affected geometry, distortion, cut quality, and post-cut finishing.</p>
+<p>CNC plasma adds CAD cleanup, closed profiles, nesting, cut order, lead geometry, consumable and kerf compensation concepts, torch height control, machine coordinates, CAM simulation, part identification, and first-part inspection. The Technology Commons CNC plasma system is still being built; this section describes the design and digital workflow without implying that the local machine is available.</p>
+</section>
+</section>
+<section id="production-and-integration" class="level2">
+<h2 class="anchored" data-anchor-id="production-and-integration">Production and integration</h2>
+<section id="production-systems-quality-control-and-integrated-systems-capstone" class="level3">
+<h3 class="anchored" data-anchor-id="production-systems-quality-control-and-integrated-systems-capstone">20. Production systems, quality control, and integrated systems capstone</h3>
+<p>Move from one successful part to a repeatable process. Create a traveller or router, bill of materials, fixture or jig, setup record, inspection plan, sample frequency, nonconformance record, and revision. Compare cycle time, setup time, work in process, bottlenecks, rework, scrap, capability, and the value of interchangeable parts.</p>
+<p>The integrated project should combine processes only when each one has a functional reason. Suitable systems include:</p>
+<ul>
+<li>modular shop storage using prepared wood, sheet or machined brackets, laser/CNC parts, printed interfaces, and standard hardware;</li>
+<li>an instrumented enclosure or test stand using sheet metal, machined features, engraving, fasteners, and TEJ controls;</li>
+<li>a service cart or portable work module with a frame, replaceable panels, tool retention, and documented ergonomics;</li>
+<li>a fixture, mechanism, machine accessory, display, or outdoor system that can be inspected, serviced, and improved.</li>
+</ul>
+</section>
+</section>
+<section id="suggested-evidence-sequence" class="level2">
+<h2 class="anchored" data-anchor-id="suggested-evidence-sequence">Suggested evidence sequence</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Design or fabrication study</th>
+<th>Required evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Study 1</td>
+<td>Need, minimal pitchable or viable product, and pitch</td>
+<td>situation, needs, alternatives, prototype, feedback record, synthesis, re-framed problem</td>
+</tr>
+<tr class="even">
+<td>Study 2</td>
+<td>Technical drawing and fit</td>
+<td>orthographic/section views, dimensions, tolerance and fit rationale, inspection plan</td>
+</tr>
+<tr class="odd">
+<td>Study 3</td>
+<td>Mechanism and fastening system</td>
+<td>system diagram, load path, component selection, fastener schedule, assembly drawing</td>
+</tr>
+<tr class="even">
+<td>Study 4</td>
+<td>Prepared material and hand-made assembly</td>
+<td>process plan, reference surfaces, hole/thread features, measurements, revision</td>
+</tr>
+<tr class="odd">
+<td>Study 5</td>
+<td>Sheet-metal or welded assembly</td>
+<td>flat pattern or joint drawing, process record, coupons, fit and distortion evidence</td>
+</tr>
+<tr class="even">
+<td>Study 6</td>
+<td>Manual machining pair</td>
+<td>milled and turned parts designed to mate, operation plans, measurements, fit result</td>
+</tr>
+<tr class="odd">
+<td>Study 7</td>
+<td>Digital manufacturing comparison</td>
+<td>editable source, CAM/slicing setup, first-part inspection, comparison with manual method</td>
+</tr>
+<tr class="even">
+<td>Study 8</td>
+<td>Short production run</td>
+<td>jig or fixture, traveller, quality data, variation, process improvement</td>
+</tr>
+<tr class="odd">
+<td>Capstone</td>
+<td>Integrated systems build</td>
+<td>complete N.I.C.E. record, drawings, standards, source files, build record, inspection, test, feedback synthesis, revision</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="capstone-review-gates" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-review-gates">Capstone review gates</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gate</th>
+<th>Review evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Situation and needs</td>
+<td>real context, users, measurable criteria, constraints, exclusions, and assumptions</td>
+</tr>
+<tr class="even">
+<td>2. Investigation</td>
+<td>precedents, standards, mechanisms, materials, processes, and questions still unresolved</td>
+</tr>
+<tr class="odd">
+<td>3. Create and communicate</td>
+<td>minimal pitchable or viable product, pitch, focused feedback questions, and recorded responses</td>
+</tr>
+<tr class="even">
+<td>4. Evaluate and re-question</td>
+<td>synthesized feedback, comparison with needs, revised problem statement, and decision</td>
+</tr>
+<tr class="odd">
+<td>5. System architecture</td>
+<td>functions, parts, interfaces, loads, motion, materials, processes, fasteners, fits, and service plan</td>
+</tr>
+<tr class="even">
+<td>6. Drawings and source files</td>
+<td>drawing set, CAD models, cut list, tolerances, GD&amp;T where justified, versions, and naming</td>
+</tr>
+<tr class="odd">
+<td>7. Process and inspection plan</td>
+<td>operation order, setups, tooling, joining, intermediate checks, and final verification</td>
+</tr>
+<tr class="even">
+<td>8. Fabrication and assembly</td>
+<td>first-part results, deviations, rework decisions, assembly record, and updated source</td>
+</tr>
+<tr class="odd">
+<td>9. Validation and revision</td>
+<td>fit, function, performance evidence, user feedback, limitations, and final revision</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="assessment-model" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-model">Assessment model</h2>
+<p>Track work should reward design judgement and verified workmanship, not simply the number of machines used.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th style="text-align: right;">Suggested weight</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Situation, needs, investigation, and alternatives</td>
+<td style="text-align: right;">15%</td>
+<td>N.I.C.E. brief, precedents, questions, alternatives, and selection rationale</td>
+</tr>
+<tr class="even">
+<td>Drawings, standards, GD&amp;T, fits, and process planning</td>
+<td style="text-align: right;">20%</td>
+<td>views, dimensions, tolerances, interfaces, stock, sequence, and file control</td>
+</tr>
+<tr class="odd">
+<td>Technical knowledge and design decisions</td>
+<td style="text-align: right;">20%</td>
+<td>materials, mechanisms, fasteners, processes, calculations, and trade-offs</td>
+</tr>
+<tr class="even">
+<td>Fabrication and workmanship</td>
+<td style="text-align: right;">20%</td>
+<td>suitable process selection, datums, fit, finish, assembly, and serviceability</td>
+</tr>
+<tr class="odd">
+<td>Inspection, testing, feedback synthesis, and iteration</td>
+<td style="text-align: right;">20%</td>
+<td>measurements, functional evidence, user feedback, deviations, failures, and revised source</td>
+</tr>
+<tr class="even">
+<td>Communication</td>
+<td style="text-align: right;">5%</td>
+<td>organized portfolio, photographs, labels, references, pitch, and explanation</td>
+</tr>
+</tbody>
+</table>
+<p>A polished object with no evidence should not receive a high result. Strong work makes the reasoning visible, records where the result differs from the drawing or need, and carries the evidence into the next version.</p>
+</section>
+<section id="technical-standards-references" class="level2">
+<h2 class="anchored" data-anchor-id="technical-standards-references">Technical standards references</h2>
+<p>Standards evolve and organizations may specify different systems. Always identify the standard, edition, units, projection method, and general drawing conventions used for a project.</p>
+<ul>
+<li><a href="https://www.asme.org/codes-standards/y14-standards">ASME Y14 product-definition standards</a></li>
+<li><a href="https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing">ASME Y14.5: Dimensioning and Tolerancing</a></li>
+<li><a href="https://www.iso.org/standard/66777.html">ISO 1101: Geometrical tolerancing</a></li>
+<li><a href="https://www.iso.org/ics/17.040.10/x/">ISO limits and fits catalogue, including ISO 286</a></li>
+</ul>
+<p>Return to <a href="../../design-fabrication/index.html">General Design &amp; Fabrication</a>, explore <a href="../../design-fabrication/applications/index.html">ideas by technology area</a>, or browse the <a href="../../teaching-materials/laser-cutting/index.html">fabrication library and tools</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+
+(function () {
+
+  "use strict";
+
+  const base = ["/commons", "/tech-edu-resources"].find(function (candidate) {
+
+    return window.location.pathname === candidate ||
+
+      window.location.pathname.startsWith(candidate + "/");
+
+  }) || "";
+
+  [
+
+    "commons-lore.js",
+
+    "bs-learn.js",
+
+    "bs-glossary.js",
+
+    "bs-reference-titles.js",
+
+    "bs-learn-scroll.js"
+
+  ].forEach(function (file) {
+
+    const script = document.createElement("script");
+
+    script.src = base + "/assets/" + file;
+
+    script.async = false;
+
+    document.body.appendChild(script);
+
+  });
+
+})();
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/tech-edu-resources\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Website code: <a href="https://andrewandrade.ca/commons/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/commons/licensing.html">CC BY-SA 4.0</a>.</p>
+<p>Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, <a href="https://andrewandrade.ca/">andrewandrade.ca</a>, and <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when adapting it. <strong>Sharing is caring.</strong></p>
+<p>The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../references.html">
+<p>References</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../licensing.html">
+<p>Licensing</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

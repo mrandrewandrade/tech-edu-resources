@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A measurable classroom workflow for machine checks, stock measurement, kerf, slots, holes and fit decisions.">
+<meta name="description" content="A measurable classroom workflow for stock measurement, scale verification, kerf, slots, holes and fit decisions.">
 
 <title>Laser Cutter Calibration | Material Thickness, Kerf &amp; Fit Tests – Technological Education Resources</title>
 <style>
@@ -92,12 +92,12 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/tej-curriculum.css">
 <link rel="stylesheet" href="../../assets/design-fabrication.css">
 <meta property="og:title" content="Laser Cutter Calibration | Material Thickness, Kerf &amp; Fit Tests – Technological Education Resources">
-<meta property="og:description" content="A measurable classroom workflow for machine checks, stock measurement, kerf, slots, holes and fit decisions.">
+<meta property="og:description" content="A measurable classroom workflow for stock measurement, scale verification, kerf, slots, holes and fit decisions.">
 <meta property="og:image" content="https://andrewandrade.ca/tech-edu-resources/assets/laser-library/previews/calibration/tc-cal-material-thickness.svg">
 <meta property="og:site_name" content="Technological Education Resources">
 <meta property="og:image:alt" content="Material thickness measurement reference">
 <meta name="twitter:title" content="Laser Cutter Calibration | Material Thickness, Kerf &amp; Fit Tests – Technological Education Resources">
-<meta name="twitter:description" content="A measurable classroom workflow for machine checks, stock measurement, kerf, slots, holes and fit decisions.">
+<meta name="twitter:description" content="A measurable classroom workflow for stock measurement, scale verification, kerf, slots, holes and fit decisions.">
 <meta name="twitter:image" content="https://andrewandrade.ca/tech-edu-resources/assets/laser-library/previews/calibration/tc-cal-material-thickness.svg">
 <meta name="twitter:image:alt" content="Material thickness measurement reference">
 <meta name="twitter:card" content="summary_large_image">
@@ -239,11 +239,17 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1.4 Prototype, Evaluate &amp; Iterate</span></a>
+ <span class="menu-text">1.4 Evaluate, Re-question &amp; Iterate</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/systems-design-fabrication-track/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Systems Design &amp; Fabrication Track</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../design-fabrication/ai/index.html" class="sidebar-item-text sidebar-link">
@@ -465,7 +471,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../design-fabrication/07-other-fabrication/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Future Fabrication Methods</span></a>
+ <span class="menu-text">6. Additional Fabrication Methods</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -474,19 +480,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../design-fabrication/05-cnc-digital-machining/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CNC &amp; Digital Machining · Planned</span></a>
+ <span class="menu-text">CNC &amp; Digital Machining</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../design-fabrication/06-textiles-soft-goods/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Textiles &amp; Soft Goods · Planned</span></a>
+ <span class="menu-text">Textiles &amp; Soft Goods</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../design-fabrication/07-other-fabrication/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Other Fabrication · Planned</span></a>
+ <span class="menu-text">Other Fabrication</span></a>
   </div>
 </li>
       </ul>
@@ -631,7 +637,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#machine-check-or-material-calibration" id="toc-machine-check-or-material-calibration" class="nav-link active" data-scroll-target="#machine-check-or-material-calibration">Machine check or material calibration?</a></li>
+  <li><a href="#operating-procedure-or-material-calibration" id="toc-operating-procedure-or-material-calibration" class="nav-link active" data-scroll-target="#operating-procedure-or-material-calibration">Operating procedure or material calibration?</a></li>
   <li><a href="#measure-the-actual-sheet" id="toc-measure-the-actual-sheet" class="nav-link" data-scroll-target="#measure-the-actual-sheet">1 · Measure the actual sheet</a></li>
   <li><a href="#understand-what-kerf-changes" id="toc-understand-what-kerf-changes" class="nav-link" data-scroll-target="#understand-what-kerf-changes">2 · Understand what kerf changes</a></li>
   <li><a href="#cut-measure-and-decide" id="toc-cut-measure-and-decide" class="nav-link" data-scroll-target="#cut-measure-and-decide">3 · Cut, measure and decide</a></li>
@@ -649,7 +655,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    A measurable classroom workflow for machine checks, stock measurement, kerf, slots, holes and fit decisions.
+    A measurable classroom workflow for stock measurement, scale verification, kerf, slots, holes and fit decisions.
   </div>
 </div>
 
@@ -668,32 +674,18 @@ ul.task-list li input[type="checkbox"] {
 
 <p><a href="https://andrewandrade.ca/tech-edu-resources/glossary/#calibration" class="bs-inline-glossary" data-bs-glossary-slug="calibration">Calibration</a> is not one magic <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#kerf" class="bs-inline-glossary" data-bs-glossary-slug="kerf">kerf</a> value. It is a short, recorded test that connects <strong>this sheet</strong>, <strong>this machine condition</strong>, <strong>this geometry</strong>, and <strong>this intended fit</strong>.</p>
 <div class="ter-calibration-process" aria-label="Calibration workflow">
-<span>1 · Check machine</span><span>2 · Measure stock</span><span>3 · Verify scale</span><span>4 · Cut a test</span><span>5 · Measure result</span><span>6 · Choose + record fit</span>
+<span>1 · Confirm course process</span><span>2 · Measure stock</span><span>3 · Verify scale</span><span>4 · Make a test</span><span>5 · Measure result</span><span>6 · Choose + record fit</span>
 </div>
-<section id="machine-check-or-material-calibration" class="level2">
-<h2 class="anchored" data-anchor-id="machine-check-or-material-calibration">Machine check or material calibration?</h2>
+<section id="operating-procedure-or-material-calibration" class="level2">
+<h2 class="anchored" data-anchor-id="operating-procedure-or-material-calibration">Operating procedure or material calibration?</h2>
 <div class="ter-two-state">
 <section>
 <h3 class="anchored">
-Machine check
+Operating procedure
 </h3>
 <p>
-Confirm the machine can locate and focus on the material, the bed and optics are ready, and the artwork aligns as expected. This is about machine condition and setup.
+Machine-specific setup, safety instruction, assessments, and authorization are not provided on this public website. Follow your school board’s safety guidelines and the course-specific instruction provided by your teacher. Students in Mr.&nbsp;Andrade’s classes can find that information in Google Classroom.
 </p>
-<ul>
-<li>
-Material is flat and supported.
-</li>
-<li>
-Focus point lands on the material, away from an edge or hole.
-</li>
-<li>
-Camera alignment is reasonable.
-</li>
-<li>
-Approved settings and ventilation procedure are available.
-</li>
-</ul>
 </section>
 <section>
 <h3 class="anchored">
@@ -718,7 +710,6 @@ Slots and holes are tested against the real mating object.
 </ul>
 </section>
 </div>
-<p>Glowforge’s current guidance explains that <strong>Set Focus</strong> measures the head-to-material distance at a selected point and can improve focus and camera placement; it also advises selecting a point on the material, not close to an edge. If <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#set-focus" class="bs-inline-glossary" data-bs-glossary-slug="set-focus">Set Focus</a> is not used, autofocus runs before a print and can fall back to the selected material thickness if measurement fails. Use those features as machine setup, not as a substitute for a fit coupon. See <a href="https://support.glowforge.com/hc/en-us/articles/360033633714-Alignment">Glowforge: Alignment</a> and <a href="https://support.glowforge.com/hc/en-us/articles/21250121938331-About-Autofocus">Glowforge: About Autofocus</a>.</p>
 </section>
 <section id="measure-the-actual-sheet" class="level2">
 <h2 class="anchored" data-anchor-id="measure-the-actual-sheet">1 · Measure the actual sheet</h2>
@@ -747,7 +738,7 @@ Slots and holes are tested against the real mating object.
 <ol type="1">
 <li>Open one test SVG in Inkscape and confirm document units, <code>viewBox</code> scale and a known dimension.</li>
 <li>Label the coupon with material, batch, date, machine and revision before cutting.</li>
-<li>Use the instructor-approved machine setup for this material.</li>
+<li>Use the course-specific process provided by your teacher.</li>
 <li>Let the coupon cool and measure it consistently; do not force a calliper into a soft or angled edge.</li>
 <li>Test the real mating object in every candidate feature.</li>
 <li>Select the fit that serves the function. A press fit is not automatically “more accurate” than a sliding fit.</li>
@@ -763,7 +754,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Kerf compensation changes geometry; it does not correct loose belts, damaged optics, poor focus, warped stock, unapproved settings or an incorrectly scaled import. Stop and resolve a machine-check problem before interpreting the coupon.</p>
+<p>Kerf compensation changes geometry; it does not correct a machine-condition problem, warped stock, or an incorrectly scaled import. Resolve unexpected machine behaviour through the course-specific process before interpreting the coupon.</p>
 </div>
 </div>
 </section>
@@ -799,10 +790,10 @@ Measured min / max <span></span>
 Drawing scale checked with <span></span>
 </p>
 <p>
-Approved settings reference <span></span>
+Course process reference <span></span>
 </p>
 <p>
-Focus method / location <span></span>
+Calibration revision <span></span>
 </p>
 </div>
 <table>
@@ -873,7 +864,7 @@ Decision / next revision
 Selected fit and why <span class="ter-record-line"></span>
 </p>
 <p>
-Observed issues / machine-check follow-up <span class="ter-record-line"></span>
+Observed issues / follow-up <span class="ter-record-line"></span>
 </p>
 <p>
 Tester / instructor review <span class="ter-record-line"></span>
