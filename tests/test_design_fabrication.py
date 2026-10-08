@@ -49,6 +49,8 @@ class DesignFabricationTests(unittest.TestCase):
             "04-3d-printing/index.qmd",
             "04-3d-printing/faux-enamel-pin-jewellery.qmd",
             "tools/tool-organizer-gallery/index.qmd",
+            "tools/plate-builder/index.qmd",
+            "tools/leg-builder/index.qmd",
             "05-cnc-digital-machining/index.qmd",
             "06-textiles-soft-goods/index.qmd",
             "07-other-fabrication/index.qmd",
@@ -535,6 +537,33 @@ class DesignFabricationTests(unittest.TestCase):
         for source in ("support.brmlasers.com", "ponoko.com"):
             self.assertIn(source, calibration)
         self.assertIn("Printable calibration record", calibration)
+
+    def test_leg_builder_and_easel_mechanics_are_connected(self) -> None:
+        builder = self.read("design-fabrication/tools/leg-builder/index.qmd")
+        for label in (
+            "Straight tabbed pair", "Angled tabbed pair", "Triangular side cheeks",
+            "Narrow hinged rear strut", "Wide single easel back", "Flat parts to cut",
+            "How the selected support is used", "Which reference file do I use?",
+            "Interlocking X-base", "Download SVG", "Copy share link",
+            "Measured material thickness", "Body length", "Calculated overall height",
+            "Top-edge mating slot", "What the dimensions mean",
+            'data-unit-button="mm"', 'data-unit-button="in"',
+        ):
+            self.assertIn(label, builder)
+        for source in ("freepatternsarea.com", "nationalartcraft.com", "troteclaser.com", "victocraft.com", "dpmsign.com"):
+            self.assertIn(source, builder)
+        plate_builder = self.read("design-fabrication/tools/plate-builder/index.qmd")
+        self.assertIn('data-unit-button="mm"', plate_builder)
+        self.assertIn('data-unit-button="in"', plate_builder)
+        script = self.read("assets/leg-builder.js")
+        for group in ("CUT_PARTS", "CUT_HOLES", "MATING_SLOTS", "FIT_COUPON", "GUIDES"):
+            self.assertIn(group, script)
+        mechanics = self.read("design-fabrication/03-laser-cutting/02-make-it-stand.qmd")
+        for concept in ("bending moment", "rear kickstand", "support footprint", "cross rail", "pivot"):
+            self.assertIn(concept, mechanics)
+        for worked_example in ("11 × 4 inch name plate", "two high supports", "one low centre support"):
+            self.assertIn(worked_example, mechanics)
+        self.assertIn("tools/leg-builder/index.qmd", mechanics)
 
 
 if __name__ == "__main__":

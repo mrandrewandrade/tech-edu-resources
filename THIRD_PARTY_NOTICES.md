@@ -23,6 +23,16 @@ The following tools and libraries are build dependencies and are not incorporate
 | fontTools | 4.63.0 | MIT | <https://fonttools.readthedocs.io/> |
 | R yaml | installed build dependency | BSD-3-Clause | <https://cran.r-project.org/package=yaml> |
 
+## FreePatternsArea easel templates
+
+- Project: Free laser-cut easel templates
+- Source: <https://www.freepatternsarea.com/designs/free-laser-cut-easel-templates-svg-dxf-cdr/>
+- Creator and publisher: FreePatternsArea
+- Licence stated by the current source page: CC BY-NC-SA 4.0 for personal, non-commercial use
+- Files: `site/assets/laser-library/references/freepatternsarea-easel-templates/*`
+- Modifications: none to the supplied source formats; an adjacent `README.txt` records attribution, source dimensions, licence, and verification status
+- Redistribution: these files are not covered by the repository's Technology Commons CC BY-SA licence; preserve attribution and check the [current source terms](https://www.freepatternsarea.com/license-agreement/)
+
 ## Project-owned visual assets
 
 Project-created Technological Education Resources visual assets remain subject to the repository's licensing and identity terms. Their inclusion does not grant trademark or endorsement rights. See `LICENSE.md` and `docs/ASSET_PROVENANCE.md`.
