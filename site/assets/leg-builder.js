@@ -334,8 +334,8 @@ ${sideScene}
     const info = {
       wideEasel: {
         title: "Wide single easel back dimensions",
-        derived: `Overall height = body length + top depth = ${displayMeasurement(state.bodyLength, state.unit)} + ${displayMeasurement(state.shoulderDepth, state.unit)} = ${displayMeasurement(state.height, state.unit)}.`,
-        note: "The blue slot is a separate mating outline. Its length follows the wide top; its height follows measured material thickness plus fit adjustment."
+        derived: "The blue line is cut to make the hole that the leg can be inserted into.",
+        note: ""
       },
       easel: {
         title: "Narrow hinged strut dimensions",

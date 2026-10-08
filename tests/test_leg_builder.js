@@ -103,7 +103,8 @@ test("14 a support-type link starts from that support's complete preset", () => 
 test("15 wide easel overall height is derived from body length and top depth", () => {
   const state = builder.normalize({ ...builder.defaults, type: "wideEasel", bodyLength: 70, shoulderDepth: 20 });
   assert.strictEqual(state.height, 90);
-  assert.match(builder.dimensionInfo(state).derived, /body length \+ top depth/);
+  assert.strictEqual(builder.dimensionInfo(state).derived, "The blue line is cut to make the hole that the leg can be inserted into.");
+  assert.strictEqual(builder.dimensionInfo(state).note, "");
   assert.doesNotMatch(builder.buildDimensionPreview(state), /body length/);
   assert.match(builder.buildDimensionPreview(state), /wide top/);
   assert.match(builder.buildDimensionPreview(state), /body width/);
