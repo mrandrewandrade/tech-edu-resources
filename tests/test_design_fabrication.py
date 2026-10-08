@@ -546,7 +546,7 @@ class DesignFabricationTests(unittest.TestCase):
             "How the selected support is used", "Which reference file do I use?",
             "Interlocking X-base", "Download SVG", "Copy share link",
             "Measured material thickness", "Body length", "Calculated overall height",
-            "Top-edge mating slot", "What the dimensions mean",
+            "Body mating slot", "What the dimensions mean",
             'data-unit-button="mm"', 'data-unit-button="in"',
         ):
             self.assertIn(label, builder)
