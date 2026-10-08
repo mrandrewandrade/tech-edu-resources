@@ -69,8 +69,8 @@ test("10 wide single easel back is one large T-shaped part", () => {
 test("11 wide easel guidance distinguishes cut part from complete assembly", () => {
   const info = builder.assemblyInfo({ ...builder.defaults, type: "wideEasel" });
   assert.match(info.name, /Wide single easel back/);
-  assert.match(info.add, /front plaque/);
-  assert.match(info.add, /stop or tether/);
+  assert.match(info.add, /fixed slot joint/);
+  assert.match(info.add, /hinged easel/);
   const diagram = builder.buildAssemblyPreview({ ...builder.defaults, type: "wideEasel" });
   assert.match(diagram, /BACK VIEW/);
   assert.match(diagram, /SIDE VIEW/);
@@ -80,7 +80,7 @@ test("11 wide easel guidance distinguishes cut part from complete assembly", () 
 test("12 straight-leg side view shows a tab connection, not an easel hinge", () => {
   const diagram = builder.buildAssemblyPreview({ ...builder.defaults, type: "straight" });
   assert.match(diagram, /TAB \/ SLOT/);
-  assert.match(diagram, /legs continue below the plaque/);
+  assert.match(diagram, /separate depth-bearing base/);
   assert.doesNotMatch(diagram, /HINGE|rear support opens/);
 });
 
@@ -98,5 +98,30 @@ test("14 a support-type link starts from that support's complete preset", () => 
   assert.strictEqual(state.legWidth, 25.4);
   assert.strictEqual(state.includeSlots, true);
   assert.strictEqual(state.includeCoupon, true);
+});
+
+test("15 wide easel overall height is derived from body length and top depth", () => {
+  const state = builder.normalize({ ...builder.defaults, type: "wideEasel", bodyLength: 70, shoulderDepth: 20 });
+  assert.strictEqual(state.height, 90);
+  assert.match(builder.dimensionInfo(state).derived, /centre-body length \+ wide-top depth/);
+  assert.match(builder.buildDimensionPreview(state), /body length/);
+  assert.match(builder.buildDimensionPreview(state), /wide top/);
+});
+
+test("16 wide easel export includes its measured-thickness mating slot", () => {
+  const state = { ...builder.defaults, ...builder.presets.wideEasel, backWidth: 76.2, materialThickness: 3.175, fitAdjustment: 0.1524, includeSlots: true };
+  const data = builder.layout(state);
+  assert.strictEqual(data.slotCount, 1);
+  assert.strictEqual(data.slotLength, 76.352);
+  assert.strictEqual(data.result.slotWidth, 3.327);
+  const svg = builder.buildSvg(state);
+  assert.match(svg, /id="matching-slot-01"/);
+  assert.match(svg, /width="76\.352" height="3\.327"/);
+});
+
+test("17 incomplete support concepts say what is not generated", () => {
+  assert.match(builder.assemblyInfo({ ...builder.defaults, type: "triangle" }).add, /does not create the joints/i);
+  assert.match(builder.assemblyInfo({ ...builder.defaults, type: "crossfoot" }).add, /does not include the upright post/i);
+  assert.match(builder.assemblyInfo({ ...builder.defaults, type: "straight" }).add, /do not create front-to-back stability/i);
 });
 

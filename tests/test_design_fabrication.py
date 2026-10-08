@@ -541,13 +541,17 @@ class DesignFabricationTests(unittest.TestCase):
     def test_leg_builder_and_easel_mechanics_are_connected(self) -> None:
         builder = self.read("design-fabrication/tools/leg-builder/index.qmd")
         for label in (
-            "Straight tabbed pair", "Angled tabbed pair", "Triangular support pair",
-            "Rear easel leg", "Wide single easel back", "Flat parts to cut",
+            "Straight tabbed pair", "Angled tabbed pair", "Triangular side cheeks",
+            "Narrow hinged rear strut", "Wide single easel back", "Flat parts to cut",
             "How the selected support is used", "Which reference file do I use?",
-            "Cross-foot pair", "Download SVG", "Copy share link",
+            "Interlocking X-base", "Download SVG", "Copy share link",
+            "Measured material thickness", "Centre-body length", "Calculated overall height",
+            "Top-edge mating slot", "What the dimensions mean",
             'data-unit-button="mm"', 'data-unit-button="in"',
         ):
             self.assertIn(label, builder)
+        for source in ("freepatternsarea.com", "nationalartcraft.com", "troteclaser.com", "victocraft.com", "dpmsign.com"):
+            self.assertIn(source, builder)
         plate_builder = self.read("design-fabrication/tools/plate-builder/index.qmd")
         self.assertIn('data-unit-button="mm"', plate_builder)
         self.assertIn('data-unit-button="in"', plate_builder)
