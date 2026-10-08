@@ -28,12 +28,12 @@ Use the focused [standing-name-tag component set](../../assets/laser-library/cla
 
 The external [FreePatternsArea easel set](https://www.freepatternsarea.com/designs/free-laser-cut-easel-templates-svg-dxf-cdr/) shows four variations on the same structural idea. Each uses a wide A-shaped front frame, one or more crosspieces, and a rear leg or kickstand. The variations change the ledge, hinge pieces, rear-leg adjustment and decorative openings rather than changing the basic load path.
 
-The source describes a **140 mm high, 94 mm wide easel for 3 mm material**. It suggests scaling the complete design by $4/3 = 1.333$ for 4 mm material, which produces an easel about **187 mm high and 125 mm wide**. That preserves every proportion, including the slots. It is not the best method when you want to change the display height without changing the material thickness. In that case, resize the structure and reset every slot from the measured material instead.
+The source describes a **5.51 in high, 3.70 in wide easel for 0.118 in material** (140 × 94 mm, using 3 mm stock). It suggests scaling the complete design by $4/3 = 1.333$ for 0.157 in (4 mm) material, which produces an easel about **7.35 in high and 4.92 in wide** (187 × 125 mm). That preserves every proportion, including the slots. It is not the best method when you want to change the display height without changing the material thickness. In that case, resize the structure and reset every slot from the measured material instead.
 
 ::: {.callout-warning}
 ## Reference, not a verified cutting file
 
-The SVG declares a numerical viewBox but does not declare millimetres. Import it using a known reference dimension, confirm the intended 140 mm assembled height, and measure every slot before cutting. The files have not been physically verified by Technology Commons.
+The SVG declares a numerical viewBox but does not declare a physical unit. Import it using a known reference dimension, confirm the intended 5.51 in (140 mm) assembled height, and measure every slot before cutting. The files have not been physically verified by Technology Commons.
 
 The source currently identifies the design as **CC BY-NC-SA 4.0 for personal, non-commercial use**. Preserve the FreePatternsArea credit and check the [current licence terms](https://www.freepatternsarea.com/license-agreement/) before using or sharing the files. These external files are not covered by the Technology Commons CC BY-SA licence.
 :::
@@ -80,7 +80,7 @@ $$\delta \propto \frac{F L^3}{E I}$$
 
 This explains why a leg that is merely twice as long can feel about eight times more flexible when its cross-section is unchanged. $E$ describes the material stiffness and $I$ describes how the material is distributed around the bending axis.
 
-For a rectangular strip bending out of the sheet plane, $I$ includes the material thickness cubed. Increasing thickness from 3 mm to 4 mm can therefore increase weak-axis bending stiffness by roughly $(4/3)^3 = 2.37$ when the other dimension stays the same. Increasing thickness from 3 mm to 6 mm gives roughly $2^3 = 8$ times the weak-axis stiffness. Real plywood varies by species, ply quality, grain direction, voids, moisture and cut quality, so these ratios explain trends rather than certify a load.
+For a rectangular strip bending out of the sheet plane, $I$ includes the material thickness cubed. Increasing thickness from 0.118 in to 0.157 in (3 to 4 mm) can therefore increase weak-axis bending stiffness by roughly $(4/3)^3 = 2.37$ when the other dimension stays the same. Increasing thickness from 0.118 in to 0.236 in (3 to 6 mm) gives roughly $2^3 = 8$ times the weak-axis stiffness. Real plywood varies by species, ply quality, grain direction, voids, moisture and cut quality, so these ratios explain trends rather than certify a load.
 
 The most effective design move is not simply making every leg thick. Keep forces in plane, use a triangular footprint, shorten unsupported lengths, tie the front legs together, and avoid eccentric joints that twist the sheet.
 
@@ -97,7 +97,7 @@ These are prototype starting points for a light display easel, not structural ra
 | Tab length along an edge | at least 4 material thicknesses | distributes bearing instead of concentrating it at one small tab |
 | Material beside a slot | at least 2 material thicknesses as a first check | reduces splitting at the slot end |
 
-For 3 mm stock, those starting relationships suggest front rails around 12 to 18 mm wide, a cross rail at least about 12 mm deep, and a tab at least about 12 mm long. These are hypotheses to test with the actual stock, not guaranteed minimums.
+For 0.118 in (3 mm) stock, those starting relationships suggest front rails around 0.47 to 0.71 in wide, a cross rail at least about 0.47 in deep, and a tab at least about 0.47 in long. These are hypotheses to test with the actual stock, not guaranteed minimums.
 
 ## Worked example: 11 × 4 inch name plate
 

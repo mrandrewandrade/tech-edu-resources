@@ -6,23 +6,23 @@
   "use strict";
 
   const defaults = Object.freeze({
-    unit: "mm",
-    base: "rounded", width: 190, height: 80, radius: 6, ringWall: 10,
-    holeMode: "measured", holeDiameter: 5, objectDiameter: 34, clearance: 2,
-    pattern: "row", rows: 1, columns: 4, spacingX: 42, spacingY: 42,
-    radialCount: 6, radialRadius: 30, startAngle: -90, perimeterCount: 8,
-    edgeMargin: 10, autoCentre: true, offsetX: 0, offsetY: 0,
+    unit: "in",
+    base: "rounded", width: 190.5, height: 82.55, radius: 6.35, ringWall: 10.16,
+    holeMode: "measured", holeDiameter: 5.08, objectDiameter: 34.036, clearance: 2.032,
+    pattern: "row", rows: 1, columns: 4, spacingX: 41.91, spacingY: 41.91,
+    radialCount: 6, radialRadius: 30.48, startAngle: -90, perimeterCount: 8,
+    edgeMargin: 10.16, autoCentre: true, offsetX: 0, offsetY: 0,
     previewGuides: true, exportGuides: false
   });
 
   const presets = {
-    blank: { base: "rounded", width: 120, height: 70, radius: 6, pattern: "single", holeMode: "direct", holeDiameter: 0 },
-    mount4: { base: "rounded", width: 100, height: 70, radius: 5, pattern: "grid", rows: 2, columns: 2, spacingX: 70, spacingY: 40, holeMode: "direct", holeDiameter: 5, edgeMargin: 10 },
-    bottles6: { base: "rounded", width: 270, height: 70, radius: 6, pattern: "row", columns: 6, spacingX: 42, holeMode: "measured", objectDiameter: 34, clearance: 2, edgeMargin: 8 },
-    bottles2x3: { base: "rounded", width: 150, height: 105, radius: 6, pattern: "grid", rows: 2, columns: 3, spacingX: 42, spacingY: 42, holeMode: "measured", objectDiameter: 34, clearance: 2, edgeMargin: 8 },
-    markers: { base: "rounded", width: 190, height: 65, radius: 6, pattern: "row", columns: 8, spacingX: 21, holeMode: "measured", objectDiameter: 14, clearance: 1.5, edgeMargin: 8 },
-    drills: { base: "rounded", width: 180, height: 42, radius: 4, pattern: "row", columns: 10, spacingX: 16, holeMode: "direct", holeDiameter: 8, edgeMargin: 7 },
-    cable: { base: "rounded", width: 120, height: 70, radius: 6, pattern: "grid", rows: 2, columns: 3, spacingX: 35, spacingY: 30, holeMode: "direct", holeDiameter: 10, edgeMargin: 8 }
+    blank: { base: "rounded", width: 120.65, height: 69.85, radius: 6.35, pattern: "single", holeMode: "direct", holeDiameter: 0 },
+    mount4: { base: "rounded", width: 101.6, height: 69.85, radius: 5.08, pattern: "grid", rows: 2, columns: 2, spacingX: 69.85, spacingY: 38.1, holeMode: "direct", holeDiameter: 5.08, edgeMargin: 10.16 },
+    bottles6: { base: "rounded", width: 273.05, height: 69.85, radius: 6.35, pattern: "row", columns: 6, spacingX: 41.91, holeMode: "measured", objectDiameter: 34.036, clearance: 2.032, edgeMargin: 7.62 },
+    bottles2x3: { base: "rounded", width: 152.4, height: 107.95, radius: 6.35, pattern: "grid", rows: 2, columns: 3, spacingX: 41.91, spacingY: 41.91, holeMode: "measured", objectDiameter: 34.036, clearance: 2.032, edgeMargin: 7.62 },
+    markers: { base: "rounded", width: 190.5, height: 63.5, radius: 6.35, pattern: "row", columns: 8, spacingX: 20.955, holeMode: "measured", objectDiameter: 13.97, clearance: 1.524, edgeMargin: 7.62 },
+    drills: { base: "rounded", width: 177.8, height: 44.45, radius: 4.064, pattern: "row", columns: 10, spacingX: 15.875, holeMode: "direct", holeDiameter: 7.9375, edgeMargin: 6.985 },
+    cable: { base: "rounded", width: 120.65, height: 69.85, radius: 6.35, pattern: "grid", rows: 2, columns: 3, spacingX: 34.925, spacingY: 29.972, holeMode: "direct", holeDiameter: 10.16, edgeMargin: 7.62 }
   };
 
   const numericKeys = ["width","height","radius","ringWall","holeDiameter","objectDiameter","clearance","rows","columns","spacingX","spacingY","radialCount","radialRadius","startAngle","perimeterCount","edgeMargin","offsetX","offsetY"];
@@ -118,12 +118,12 @@
       for (let j = i + 1; j < points.length; j += 1) {
         const gap = Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y) - diameter;
         if (gap < 0) errors.push("Hole geometry overlaps; increase spacing or reduce the diameter.");
-        else if (gap < 2) warnings.push("Less than 2 mm (0.079 in) of material remains between some holes.");
+        else if (gap < 2) warnings.push("Less than 0.079 in (2 mm) of material remains between some holes.");
       }
     }
     points.forEach(point => {
       const edge = Math.min(point.x - r, point.y - r, s.width - point.x - r, s.height - point.y - r);
-      if (edge >= 0 && edge < 2) warnings.push("Less than 2 mm (0.079 in) of material remains at an outer edge.");
+      if (edge >= 0 && edge < 2) warnings.push("Less than 0.079 in (2 mm) of material remains at an outer edge.");
     });
     return { valid: errors.length === 0, errors: [...new Set(errors)], warnings: [...new Set(warnings)], points, diameter: round(diameter) };
   }

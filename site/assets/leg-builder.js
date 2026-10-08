@@ -6,20 +6,20 @@
   "use strict";
 
   const defaults = Object.freeze({
-    unit: "mm",
-    type: "angled", height: 80, footprint: 55, legWidth: 24, angle: 10,
-    materialThickness: 6, fitAdjustment: 0.15, tabWidth: 16, tabDepth: 7,
-    pivotDiameter: 5, pivotOffset: 12, cornerRadius: 3, quantity: 2,
-    partGap: 8, includeSlots: true, includeCoupon: true,
+    unit: "in",
+    type: "angled", height: 82.55, footprint: 57.15, legWidth: 25.4, angle: 10,
+    materialThickness: 3.175, fitAdjustment: 0.1524, tabWidth: 15.875, tabDepth: 3.81,
+    pivotDiameter: 4.7625, pivotOffset: 12.7, cornerRadius: 3.175, quantity: 2,
+    partGap: 7.9375, includeSlots: true, includeCoupon: true,
     previewGuides: true, exportGuides: false
   });
 
   const presets = {
-    straight: { type: "straight", height: 70, legWidth: 24, quantity: 2, tabWidth: 16, tabDepth: 7 },
-    angled: { type: "angled", height: 80, legWidth: 24, angle: 10, quantity: 2, tabWidth: 16, tabDepth: 7 },
-    triangle: { type: "triangle", height: 70, footprint: 60, quantity: 2, includeSlots: false },
-    easel: { type: "easel", height: 130, legWidth: 20, pivotDiameter: 5, pivotOffset: 12, quantity: 1, includeSlots: false },
-    crossfoot: { type: "crossfoot", height: 24, footprint: 90, legWidth: 24, quantity: 1, includeSlots: false }
+    straight: { type: "straight", height: 76.2, legWidth: 25.4, quantity: 2, tabWidth: 15.875, tabDepth: 3.81 },
+    angled: { type: "angled", height: 82.55, legWidth: 25.4, angle: 10, quantity: 2, tabWidth: 15.875, tabDepth: 3.81 },
+    triangle: { type: "triangle", height: 76.2, footprint: 63.5, quantity: 2, includeSlots: false },
+    easel: { type: "easel", height: 133.35, legWidth: 22.225, pivotDiameter: 4.7625, pivotOffset: 12.7, quantity: 1, includeSlots: false },
+    crossfoot: { type: "crossfoot", height: 25.4, footprint: 88.9, legWidth: 25.4, quantity: 1, includeSlots: false }
   };
 
   const numericKeys = ["height", "footprint", "legWidth", "angle", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "quantity", "partGap"];

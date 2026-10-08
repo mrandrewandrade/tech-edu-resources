@@ -4,6 +4,11 @@ const builder = require("../site/assets/leg-builder.js");
 
 const test = (name, fn) => { fn(); process.stdout.write(`ok - ${name}\n`); };
 
+test("0 inches are the default display unit", () => {
+  assert.strictEqual(builder.defaults.unit, "in");
+  assert.strictEqual(builder.displayMeasurement(builder.defaults.height, "in"), "3.25 in");
+});
+
 test("1 slot width uses measured thickness plus total adjustment", () => {
   assert.strictEqual(builder.effectiveSlotWidth({ ...builder.defaults, materialThickness: 6, fitAdjustment: 0.15 }), 6.15);
 });
@@ -33,7 +38,7 @@ test("6 a weak pivot ligament produces a warning", () => {
 });
 
 test("7 export is true-size and grouped", () => {
-  const svg = builder.buildSvg({ ...builder.defaults, type: "straight", quantity: 2 });
+  const svg = builder.buildSvg({ ...builder.defaults, unit: "mm", type: "straight", quantity: 2 });
   assert.match(svg, /width="[0-9.]+mm" height="[0-9.]+mm"/);
   for (const group of ["CUT_PARTS", "CUT_HOLES", "MATING_SLOTS", "FIT_COUPON", "GUIDES"]) assert.match(svg, new RegExp(`id="${group}"`));
   assert.doesNotMatch(svg, /<text|<image/);

@@ -13,41 +13,41 @@ format:
 execute: {enabled: false}
 ---
 
-This browser tool makes repeatable plate geometry. Enter dimensions in millimetres or inches; changing the unit converts the current values instead of changing the physical size. The downloaded SVG keeps the selected physical unit. The tool does **not** choose safe material, machine settings, joints, mounting hardware, or a final fit.
+This browser tool makes repeatable plate geometry. It opens in inches. A millimetre toggle remains available when a machine or material specification needs it; changing the unit converts the current values instead of changing the physical size. The downloaded SVG keeps the selected physical unit. The tool does **not** choose safe material, machine settings, joints, mounting hardware, or a final fit.
 
 <div id="plate-builder" class="plate-builder">
 <form class="plate-controls" onsubmit="return false">
 <h2>Plate settings</h2>
-<div class="plate-unit-control" role="group" aria-label="Measurement unit"><button type="button" data-unit-button="mm" aria-pressed="true">Millimetres</button><button type="button" data-unit-button="in" aria-pressed="false">Inches</button></div>
+<div class="plate-unit-control" role="group" aria-label="Measurement unit"><button type="button" data-unit-button="in" aria-pressed="true">Inches</button><button type="button" data-unit-button="mm" aria-pressed="false">Millimetres</button></div>
 <div class="plate-control-section plate-fields">
 <div class="plate-field plate-field--wide"><label for="pb-preset">Starting preset</label><select id="pb-preset" data-preset><option value="">Current / custom</option><option value="blank">Blank rounded plate</option><option value="mount4">Four-hole mount</option><option value="bottles6">Six-bottle row</option><option value="bottles2x3">2 × 3 bottle plate</option><option value="markers">Marker rack</option><option value="drills">Drill row</option><option value="cable">Cable plate</option></select></div>
 <div class="plate-field plate-field--wide"><label for="pb-base">Base shape</label><select id="pb-base" data-key="base"><option value="rectangle">Rectangle</option><option value="rounded">Rounded rectangle</option><option value="circle">Circle</option><option value="ring">Ring</option></select></div>
-<div class="plate-field"><label for="pb-width">Width / diameter (<span data-unit-symbol>mm</span>)</label><input id="pb-width" data-key="width" type="number" min="1" step="0.1"></div>
-<div class="plate-field"><label for="pb-height">Height (<span data-unit-symbol>mm</span>)</label><input id="pb-height" data-key="height" type="number" min="1" step="0.1"></div>
-<div class="plate-field"><label for="pb-radius">Corner radius (<span data-unit-symbol>mm</span>)</label><input id="pb-radius" data-key="radius" type="number" min="0" step="0.1"></div>
-<div class="plate-field"><label for="pb-ring">Ring wall (<span data-unit-symbol>mm</span>)</label><input id="pb-ring" data-key="ringWall" type="number" min="0" step="0.1"></div>
+<div class="plate-field"><label for="pb-width">Width / diameter (<span data-unit-symbol>in</span>)</label><input id="pb-width" data-key="width" type="number" min="1" step="0.1"></div>
+<div class="plate-field"><label for="pb-height">Height (<span data-unit-symbol>in</span>)</label><input id="pb-height" data-key="height" type="number" min="1" step="0.1"></div>
+<div class="plate-field"><label for="pb-radius">Corner radius (<span data-unit-symbol>in</span>)</label><input id="pb-radius" data-key="radius" type="number" min="0" step="0.1"></div>
+<div class="plate-field"><label for="pb-ring">Ring wall (<span data-unit-symbol>in</span>)</label><input id="pb-ring" data-key="ringWall" type="number" min="0" step="0.1"></div>
 </div>
 <div class="plate-control-section plate-fields">
 <div class="plate-field plate-field--wide"><label for="pb-hole-mode">Hole sizing method</label><select id="pb-hole-mode" data-key="holeMode"><option value="measured">Measured object + total clearance</option><option value="direct">Direct finished diameter</option></select></div>
-<div class="plate-field"><label for="pb-object">Object diameter (<span data-unit-symbol>mm</span>)</label><input id="pb-object" data-key="objectDiameter" type="number" min="0" step="0.1"></div>
-<div class="plate-field"><label for="pb-clearance">Total clearance (<span data-unit-symbol>mm</span>)</label><input id="pb-clearance" data-key="clearance" type="number" step="0.1"></div>
-<div class="plate-field plate-field--wide"><label for="pb-hole">Direct diameter (<span data-unit-symbol>mm</span>)</label><input id="pb-hole" data-key="holeDiameter" type="number" min="0" step="0.1"></div>
+<div class="plate-field"><label for="pb-object">Object diameter (<span data-unit-symbol>in</span>)</label><input id="pb-object" data-key="objectDiameter" type="number" min="0" step="0.1"></div>
+<div class="plate-field"><label for="pb-clearance">Total clearance (<span data-unit-symbol>in</span>)</label><input id="pb-clearance" data-key="clearance" type="number" step="0.1"></div>
+<div class="plate-field plate-field--wide"><label for="pb-hole">Direct diameter (<span data-unit-symbol>in</span>)</label><input id="pb-hole" data-key="holeDiameter" type="number" min="0" step="0.1"></div>
 </div>
 <div class="plate-control-section plate-fields">
 <div class="plate-field plate-field--wide"><label for="pb-pattern">Pattern</label><select id="pb-pattern" data-key="pattern"><option value="single">Single</option><option value="row">Row</option><option value="column">Column</option><option value="grid">Grid</option><option value="staggered">Staggered grid</option><option value="radial">Radial</option><option value="perimeter">Perimeter</option></select></div>
 <div class="plate-field"><label for="pb-rows">Rows</label><input id="pb-rows" data-key="rows" type="number" min="1" step="1"></div>
 <div class="plate-field"><label for="pb-columns">Columns</label><input id="pb-columns" data-key="columns" type="number" min="1" step="1"></div>
-<div class="plate-field"><label for="pb-spacing-x">X spacing (<span data-unit-symbol>mm</span>)</label><input id="pb-spacing-x" data-key="spacingX" type="number" step="0.1"></div>
-<div class="plate-field"><label for="pb-spacing-y">Y spacing (<span data-unit-symbol>mm</span>)</label><input id="pb-spacing-y" data-key="spacingY" type="number" step="0.1"></div>
+<div class="plate-field"><label for="pb-spacing-x">X spacing (<span data-unit-symbol>in</span>)</label><input id="pb-spacing-x" data-key="spacingX" type="number" step="0.1"></div>
+<div class="plate-field"><label for="pb-spacing-y">Y spacing (<span data-unit-symbol>in</span>)</label><input id="pb-spacing-y" data-key="spacingY" type="number" step="0.1"></div>
 <div class="plate-field"><label for="pb-radial-count">Radial count</label><input id="pb-radial-count" data-key="radialCount" type="number" min="1" step="1"></div>
-<div class="plate-field"><label for="pb-radial-radius">Radial radius (<span data-unit-symbol>mm</span>)</label><input id="pb-radial-radius" data-key="radialRadius" type="number" min="0" step="0.1"></div>
+<div class="plate-field"><label for="pb-radial-radius">Radial radius (<span data-unit-symbol>in</span>)</label><input id="pb-radial-radius" data-key="radialRadius" type="number" min="0" step="0.1"></div>
 <div class="plate-field"><label for="pb-angle">Start angle (°)</label><input id="pb-angle" data-key="startAngle" type="number" step="1"></div>
 <div class="plate-field"><label for="pb-perimeter">Perimeter count</label><input id="pb-perimeter" data-key="perimeterCount" type="number" min="1" step="1"></div>
 </div>
 <div class="plate-control-section plate-fields">
-<div class="plate-field"><label for="pb-margin">Minimum edge margin (<span data-unit-symbol>mm</span>)</label><input id="pb-margin" data-key="edgeMargin" type="number" step="0.1"></div>
-<div class="plate-field"><label for="pb-offset-x">X offset / origin (<span data-unit-symbol>mm</span>)</label><input id="pb-offset-x" data-key="offsetX" type="number" step="0.1"></div>
-<div class="plate-field"><label for="pb-offset-y">Y offset / origin (<span data-unit-symbol>mm</span>)</label><input id="pb-offset-y" data-key="offsetY" type="number" step="0.1"></div>
+<div class="plate-field"><label for="pb-margin">Minimum edge margin (<span data-unit-symbol>in</span>)</label><input id="pb-margin" data-key="edgeMargin" type="number" step="0.1"></div>
+<div class="plate-field"><label for="pb-offset-x">X offset / origin (<span data-unit-symbol>in</span>)</label><input id="pb-offset-x" data-key="offsetX" type="number" step="0.1"></div>
+<div class="plate-field"><label for="pb-offset-y">Y offset / origin (<span data-unit-symbol>in</span>)</label><input id="pb-offset-y" data-key="offsetY" type="number" step="0.1"></div>
 <label class="plate-check"><input data-key="autoCentre" type="checkbox"> Centre pattern first (off = top-left origin)</label>
 <label class="plate-check"><input data-key="previewGuides" type="checkbox"> Show preview guides</label>
 <label class="plate-check"><input data-key="exportGuides" type="checkbox"> Include guides in export</label>
@@ -55,7 +55,7 @@ This browser tool makes repeatable plate geometry. Enter dimensions in millimetr
 <div class="plate-actions"><button type="button" data-download>Download SVG</button><button type="button" data-json>Settings JSON</button><button type="button" data-copy>Copy share link</button><button type="button" data-reset>Reset</button></div>
 </form>
 <section class="plate-workspace" aria-live="polite">
-<div class="plate-summary"><span>Hole diameter: <strong data-diameter></strong></span><span>Hole count: <strong data-count></strong></span><span>Units: <strong data-units>millimetres (mm)</strong></span></div>
+<div class="plate-summary"><span>Hole diameter: <strong data-diameter></strong></span><span>Hole count: <strong data-count></strong></span><span>Units: <strong data-units>inches (in)</strong></span></div>
 <div class="plate-preview" data-preview></div>
 <div class="plate-status" data-status></div>
 </section>

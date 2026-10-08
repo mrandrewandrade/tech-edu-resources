@@ -4,6 +4,11 @@ const builder = require("../site/assets/plate-builder.js");
 
 const test = (name, fn) => { fn(); process.stdout.write(`ok - ${name}\n`); };
 
+test("0 inches are the default display unit", () => {
+  assert.strictEqual(builder.defaults.unit, "in");
+  assert.strictEqual(builder.displayMeasurement(builder.defaults.width, "in"), "7.5 in");
+});
+
 test("1 measured diameter adds total, not radial, clearance", () => {
   assert.strictEqual(builder.effectiveHoleDiameter({ ...builder.defaults, objectDiameter: 34, clearance: 2 }), 36);
 });
@@ -42,8 +47,8 @@ test("12 out-of-bound holes are rejected", () => {
   assert.match(builder.validate({ ...builder.defaults, width: 50, height: 40, holeMode: "direct", holeDiameter: 20, edgeMargin: 10, pattern: "row", columns: 3, spacingX: 20 }).errors.join(" "), /boundary/);
 });
 test("13 export is true-size, grouped and transform-free", () => {
-  const svg = builder.buildSvg({ ...builder.presets.mount4, holeMode: "direct", holeDiameter: 5 });
-  assert.match(svg, /width="100mm" height="70mm" viewBox="0 0 100 70"/);
+  const svg = builder.buildSvg({ ...builder.presets.mount4, unit: "mm", holeMode: "direct", holeDiameter: 5.08 });
+  assert.match(svg, /width="101.6mm" height="69.85mm" viewBox="0 0 101.6 69.85"/);
   assert.match(svg, /id="CUT_OUTER"/); assert.match(svg, /id="CUT_HOLES"/); assert.match(svg, /id="GUIDES"/);
   assert.doesNotMatch(svg, /transform=|<text|<image/);
   assert.strictEqual((svg.match(/id="hole-/g) || []).length, 4);
