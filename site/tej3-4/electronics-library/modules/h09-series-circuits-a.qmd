@@ -1,0 +1,93 @@
+---
+title: "H09 Series Circuits A"
+description: "One current path, total resistance, voltage drops, Kirchhoff's voltage law, power, and a five-question progression."
+sidebar: tej
+page-layout: full
+toc: true
+execute: {enabled: false}
+---
+
+<span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span>
+
+## What students learn
+
+Students identify a series circuit as one continuous path, calculate total resistance and current, calculate each voltage drop, check the result with Kirchhoff's voltage law, and apply resistor power ratings.
+
+## Why it matters
+
+Series analysis lets students predict a circuit before they build it, check measurements, and recognize when a result cannot be correct.
+
+## Learning route
+
+1. Show a complete low-voltage series system before introducing equations.
+2. Watch the short conceptual introduction and predict what one open component will do.
+3. Move from the physical build to the schematic.
+4. Compare one series path with parallel branches.
+5. Learn the current, resistance, voltage, and power rules.
+6. Complete one guided GUESS example with separate Given and Unknown sections.
+7. Enter each calculator step on a separate line.
+8. Complete five progressively harder questions and submit one photo for each.
+9. Verify the rules with the adapted Grob Experiment 4-1 circuit.
+
+## Student resources
+
+::: {.tej-download-grid}
+::: {.tej-download-card}
+### Teaching deck
+
+[Open Series Circuits A slides](https://docs.google.com/presentation/d/1CQf3eYAcKw6tf2J7BCa38cskxnGP0T3fjBaxnLKbx-o/edit){target="_blank"}
+
+The deck begins with the complete system, then videos, schematic structure, rules, a guided example, calculator entry, and the five assigned questions.
+:::
+
+::: {.tej-download-card}
+### Student handout
+
+[Open the five-question student handout](https://docs.google.com/document/d/1KMKU3e4OkKn40jMy5KeyGHXKcn2IftQcRiNggfYHivc/edit){target="_blank"}
+
+The Google Doc has exactly five questions and one labelled photo space for each question.
+:::
+
+::: {.tej-download-card}
+### Formula support
+
+[Open the electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit){target="_blank"}
+
+Use the general equations before substituting numbered values.
+:::
+
+::: {.tej-download-card}
+### Videos
+
+[ElectroBOOM 101: circuits, series, and parallel](https://www.youtube.com/watch?v=AMXWm_bnsTE){target="_blank"}<br>
+[The Organic Chemistry Tutor: series and parallel circuits](https://www.youtube.com/watch?v=wejz5s31Cts){target="_blank"}<br>
+[Khan Academy: circuits, part 2](https://www.khanacademy.org/science/ap-physics-1/ap-circuits-topic/ap-circuits-resistance/v/circuits-part-2){target="_blank"}
+:::
+:::
+
+## Experiment 4-1 adaptation
+
+Use a current-limited 10.0 V direct-current supply, a breadboard, a fused digital multimeter, test leads, jumper wires, and 1.0 kΩ, 2.2 kΩ, and 3.3 kΩ resistors. No software is required; Tinkercad can be used as an optional pre-lab.
+
+Students calculate and measure total resistance, current at four points, each voltage drop, the voltage-law check, and percent difference. They submit one clear circuit photo.
+
+Power must be off for resistance measurements. The ammeter must be connected in series. Do not create a deliberate hard short.
+
+[Open the Grob Experiments Manual](https://drive.google.com/file/d/15KJmGLXvTh0oivaqnV0SvWB7N64V1soT/view){target="_blank"}
+
+Experiment 4-2 is a useful resistance-focused extension after the core investigation.
+
+## Teacher resources
+
+<span class="tej-badge restricted">Restricted</span>
+
+[Open the complete teacher answer key](https://docs.google.com/document/d/1_pH0LLfqyt0QOZPGVGsXNW0tGNeG2ksXh0ysAUQLF94/edit){target="_blank"}<br>
+[Open Grob's Basic Electronics, Chapter 4](https://drive.google.com/file/d/14nqYZQwgYer3mU_AjLOb_EXryzUtotqf/view){target="_blank"}<br>
+[Open the Grob Problems Manual](https://drive.google.com/file/d/14tvslnLyvOMci-5YBw_jHbHw_jxmsTfQ/view){target="_blank"}
+
+The answer key stays outside the student teaching folder. Google Drive permissions control access.
+
+## Scope boundary
+
+Series Circuits B will cover source combinations, random unknowns, ground references, opens, shorts, and troubleshooting.
+

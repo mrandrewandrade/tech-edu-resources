@@ -11,7 +11,7 @@ execute: {enabled: false}
 | L01 Protected low-voltage circuit | H01 | Tinkercad then physical | 75 min | protected extra-low voltage | complete |
 | L02 Resistance measurement and V-I behaviour | H06/H07 | physical | 75 min | current-limited source | planned |
 | L03 Ohm's law verification | H07 | Tinkercad then physical | 75 min | low voltage only | planned |
-| L04 Series circuits and open faults | H09/H16 | Tinkercad and physical | 90 min | power off for resistance | planned |
+| L04 Series-circuit current and voltage verification | H09 | physical; Tinkercad optional | 75 min | power off for resistance | ready |
 | L05 Parallel branches and faults | H10/H16 | Tinkercad and physical | 90 min | fused/current-limited | planned |
 | L21 Baseline, parts, and safe opening | CS01/CS02 | physical | 75 min | unplugged, ESD controls | complete |
 | L22 Power connections and ready-to-power gate | CS03/CS04 | physical | 75 min | no internal live probing | complete |
@@ -42,7 +42,7 @@ Use these as starting points rather than automatic assignments. Each lesson pack
 | Electrical quantities and safe setup | Experiment 1-1: Lab Safety, Equipment, and Components | Protected low-voltage source, digital multimeter, breadboard, resistor and component samples | Tinkercad optional | Label components and prepare one known-safe demonstration circuit |
 | Resistance and resistor identification | Experiments 2-1 and 2-2 | Digital multimeter, resistor assortment, breadboard, protected source | Tinkercad optional | Resistors with several values and tolerances; spare parts for damaged leads |
 | Ohm's law and power | Experiments 3-1 and 3-2 | Current-limited supply, digital multimeter, breadboard, rated resistors | Tinkercad first; Multisim optional | Choose values that remain below resistor power ratings |
-| Series circuits | Experiments 4-1 to 4-4 | Supply, digital multimeter, breadboard, three or more resistors, switch | Tinkercad or Multisim | Prepare a removable open fault; do not create a deliberate hard short |
+| Series circuits | Experiment 4-1 core; Experiment 4-2 extension | Current-limited 10.0 V supply, fused digital multimeter, breadboard, test leads, jumpers, 1.0 kΩ, 2.2 kΩ, and 3.3 kΩ resistors | None required; Tinkercad optional | Calculate and measure current at four points, voltage drops, Kirchhoff's voltage-law check, percent difference, and one circuit photo; do not create a deliberate hard short |
 | Parallel circuits | Experiments 5-1 to 5-4 | Fused or current-limited supply, digital multimeter, breadboard, branch resistors | Tinkercad or Multisim | Prepare an open-branch fault and verify the total-current meter range |
 | Series-parallel circuits | Experiments 6-1 to 6-4 | Supply, digital multimeter, breadboard, resistor network | Multisim recommended before building | Prepare one canonical network with labelled reduction stages |
 | Voltage and current dividers | Experiments 7-1 to 7-4 | Supply, digital multimeter, fixed resistors, potentiometer, representative load | Tinkercad or Multisim | Confirm the potentiometer pinout and resistor ratings |
