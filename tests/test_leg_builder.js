@@ -77,3 +77,26 @@ test("11 wide easel guidance distinguishes cut part from complete assembly", () 
   assert.match(diagram, /WIDE REAR SUPPORT/);
 });
 
+test("12 straight-leg side view shows a tab connection, not an easel hinge", () => {
+  const diagram = builder.buildAssemblyPreview({ ...builder.defaults, type: "straight" });
+  assert.match(diagram, /TAB \/ SLOT/);
+  assert.match(diagram, /legs continue below the plaque/);
+  assert.doesNotMatch(diagram, /HINGE|rear support opens/);
+});
+
+test("13 share links omit harmless inch conversion noise", () => {
+  assert.strictEqual(builder.toMm(1.75, "in"), 44.45);
+  const query = builder.encodeState({ ...builder.defaults, type: "straight", legWidth: 44.449999999999996 });
+  assert.match(query, /type=straight/);
+  assert.doesNotMatch(query, /legWidth|999999/);
+});
+
+test("14 a support-type link starts from that support's complete preset", () => {
+  const state = builder.decodeState("?type=straight");
+  assert.strictEqual(state.type, "straight");
+  assert.strictEqual(state.quantity, 2);
+  assert.strictEqual(state.legWidth, 25.4);
+  assert.strictEqual(state.includeSlots, true);
+  assert.strictEqual(state.includeCoupon, true);
+});
+

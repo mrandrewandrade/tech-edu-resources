@@ -28,8 +28,9 @@
   const dimensionalKeys = new Set(["height", "footprint", "legWidth", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "backWidth", "shoulderDepth", "partGap"]);
   const boolKeys = ["includeSlots", "includeCoupon", "previewGuides", "exportGuides"];
   const round = value => Math.round(value * 1000) / 1000;
+  const canonical = value => Math.round(Number(value) * 1000000) / 1000000;
   const finite = (value, fallback) => Number.isFinite(Number(value)) ? Number(value) : fallback;
-  const toMm = (value, unit) => Number(value) * (unit === "in" ? 25.4 : 1);
+  const toMm = (value, unit) => canonical(Number(value) * (unit === "in" ? 25.4 : 1));
   const fromMm = (value, unit) => Number(value) / (unit === "in" ? 25.4 : 1);
   const displayNumber = (value, unit) => Number(fromMm(value, unit).toFixed(unit === "in" ? 4 : 3)).toString();
   const displayMeasurement = (value, unit) => `${displayNumber(value, unit)} ${unit}`;
@@ -250,57 +251,82 @@
 
   function buildAssemblyPreview(raw) {
     const state = normalize(raw);
-    const wide = state.type === "wideEasel";
-    const narrow = state.type === "easel";
-    let backSupport = "";
-    let sideSupport = "";
+    const plaque = (x, y, width, height) => `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="8" fill="#dcecf2" stroke="#245f74" stroke-width="3"/>`;
+    let backScene = "";
+    let sideScene = "";
     let label = "SUPPORT";
-    if (wide) {
-      backSupport = '<path d="M 72 58 H 218 Q 226 58 226 66 V 91 H 174 V 204 H 116 V 91 H 64 V 66 Q 64 58 72 58 Z"/>';
-      sideSupport = '<path d="M 352 70 L 458 211 L 441 222 L 335 81 Z"/>';
+    let connectionLabel = "ATTACHMENT";
+    let caption = "Test the complete assembly";
+    let connectionX = 344, connectionY = 77, connectionTextX = 390, connectionTextY = 66;
+    if (state.type === "wideEasel") {
+      backScene = `${plaque(42, 38, 206, 145)}<path d="M 72 58 H 218 Q 226 58 226 66 V 91 H 174 V 204 H 116 V 91 H 64 V 66 Q 64 58 72 58 Z" fill="#e99a5b" fill-opacity=".82" stroke="#a34717" stroke-width="3"/>`;
+      sideScene = '<path d="M 359 216 L 316 54 L 337 48 L 381 211 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/><path d="M 349 73 L 458 211 L 441 222 L 335 82 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/><circle cx="344" cy="77" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>';
       label = "WIDE REAR SUPPORT";
-    } else if (narrow) {
-      backSupport = '<rect x="135" y="58" width="28" height="146" rx="12"/><circle cx="149" cy="77" r="5" fill="#fff" stroke="#a34717" stroke-width="3"/>';
-      sideSupport = '<path d="M 347 70 L 456 211 L 443 222 L 334 80 Z"/><circle cx="344" cy="76" r="5" fill="#fff" stroke="#a34717" stroke-width="3"/>';
+      connectionLabel = "HINGE / ATTACH";
+      caption = "The rear support opens behind the plaque";
+    } else if (state.type === "easel") {
+      backScene = `${plaque(42, 38, 206, 145)}<rect x="135" y="58" width="28" height="146" rx="12" fill="#e99a5b" fill-opacity=".82" stroke="#a34717" stroke-width="3"/><circle cx="149" cy="77" r="5" fill="#fff" stroke="#a34717" stroke-width="3"/>`;
+      sideScene = '<path d="M 359 216 L 316 54 L 337 48 L 381 211 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/><path d="M 347 70 L 456 211 L 443 222 L 334 80 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/><circle cx="344" cy="76" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>';
       label = "NARROW REAR LEG";
+      connectionLabel = "PIVOT";
+      caption = "The rear leg pivots behind the plaque";
+    } else if (state.type === "straight") {
+      backScene = `${plaque(42, 38, 206, 145)}<path d="M 72 158 H 96 V 225 H 68 Z M 194 158 H 218 L 222 225 H 198 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/>`;
+      sideScene = '<path d="M 342 44 L 365 43 L 389 184 L 366 187 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/><path d="M 366 171 H 384 L 386 225 H 366 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/><circle cx="375" cy="176" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>';
+      label = "TWO STRAIGHT LEGS";
+      connectionLabel = "TAB / SLOT";
+      caption = "The legs continue below the plaque";
+      connectionX = 375; connectionY = 176; connectionTextX = 421; connectionTextY = 160;
+    } else if (state.type === "angled") {
+      backScene = `${plaque(42, 38, 206, 145)}<path d="M 77 158 H 101 L 88 225 H 64 Z M 189 158 H 213 L 226 225 H 202 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/>`;
+      sideScene = '<path d="M 342 44 L 365 43 L 389 184 L 366 187 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/><path d="M 366 171 H 384 L 430 225 H 407 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/><circle cx="375" cy="176" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>';
+      label = "TWO ANGLED LEGS";
+      connectionLabel = "TAB / SLOT";
+      caption = "The feet move outward to widen the footprint";
+      connectionX = 375; connectionY = 176; connectionTextX = 421; connectionTextY = 160;
     } else if (state.type === "triangle") {
-      backSupport = '<path d="M 72 204 L 113 92 L 150 204 Z M 178 204 L 215 92 L 226 204 Z"/>';
-      sideSupport = '<path d="M 335 67 L 452 217 H 354 Z"/>';
-      label = "TRIANGULAR SUPPORT";
-    } else if (state.type === "crossfoot") {
-      backSupport = '<path d="M 65 172 H 225 V 190 H 65 Z M 136 116 H 154 V 228 H 136 Z"/>';
-      sideSupport = '<path d="M 330 205 H 468 V 220 H 330 Z M 385 174 H 400 V 238 H 385 Z"/>';
-      label = "CROSS-FOOT BASE";
+      backScene = `${plaque(42, 38, 206, 145)}<path d="M 68 225 L 96 139 L 132 225 Z M 170 225 L 204 139 L 226 225 Z" fill="#e99a5b" fill-opacity=".82" stroke="#a34717" stroke-width="3"/>`;
+      sideScene = '<path d="M 342 44 L 365 43 L 389 184 L 366 187 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/><path d="M 367 176 L 456 225 H 375 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/><circle cx="376" cy="180" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>';
+      label = "TWO TRIANGULAR SIDES";
+      connectionLabel = "ATTACHMENT";
+      caption = "A triangle braces the plaque from the side";
+      connectionX = 376; connectionY = 180; connectionTextX = 425; connectionTextY = 163;
     } else {
-      const skew = state.type === "angled" ? 12 : 0;
-      backSupport = `<path d="M ${82 + skew} 110 H ${102 + skew} L 91 217 H 68 Z M ${188 - skew} 110 H ${208 - skew} L 222 217 H 199 Z"/>`;
-      sideSupport = '<path d="M 337 89 L 374 218 H 354 L 320 96 Z"/>';
-      label = state.type === "angled" ? "TWO ANGLED LEGS" : "TWO STRAIGHT LEGS";
+      backScene = `${plaque(95, 35, 100, 135)}<path d="M 55 205 H 235 V 220 H 55 Z M 138 160 H 153 V 238 H 138 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/>`;
+      sideScene = '<path d="M 382 55 H 403 V 210 H 382 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/><path d="M 305 210 H 480 V 225 H 305 Z" fill="#e99a5b" stroke="#a34717" stroke-width="3"/><circle cx="393" cy="211" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>';
+      label = "CROSS-FOOT BASE";
+      connectionLabel = "BASE SLOT";
+      caption = "The plaque needs its own connection to the base";
+      connectionX = 393; connectionY = 211; connectionTextX = 445; connectionTextY = 196;
     }
     return `<svg viewBox="0 0 520 265" role="img" aria-label="Schematic showing the selected support behind a plaque">
 <rect width="520" height="265" fill="#ffffff"/>
 <text x="145" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#284650">BACK VIEW</text>
-<rect x="42" y="38" width="206" height="145" rx="8" fill="#dcecf2" stroke="#245f74" stroke-width="3"/>
-<g fill="#e99a5b" stroke="#a34717" stroke-width="3">${backSupport}</g>
+${backScene}
 <text x="145" y="247" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#7a3515">${label}</text>
 <text x="397" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#284650">SIDE VIEW</text>
 <line x1="280" y1="225" x2="495" y2="225" stroke="#52636b" stroke-width="3"/>
-<path d="M 359 216 L 316 54 L 337 48 L 381 211 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/>
-<g fill="#e99a5b" stroke="#a34717" stroke-width="3">${sideSupport}</g>
-<circle cx="344" cy="76" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>
-<text x="353" y="57" font-family="sans-serif" font-size="10" font-weight="700" fill="#1b7560">ATTACH / HINGE</text>
-<text x="397" y="247" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#52636b">Front contact + rear contact make the footprint</text>
+${sideScene}
+<line x1="${connectionX}" y1="${connectionY}" x2="${connectionTextX - 4}" y2="${connectionTextY + 3}" stroke="#1b7560" stroke-width="1.5"/>
+<text x="${connectionTextX}" y="${connectionTextY}" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#1b7560">${connectionLabel}</text>
+<text x="397" y="247" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#52636b">${caption}</text>
 </svg>`;
   }
 
   function encodeState(raw) {
     const state = normalize(raw), params = new URLSearchParams();
-    Object.keys(defaults).forEach(key => { if (state[key] !== defaults[key]) params.set(key, String(state[key])); });
+    Object.keys(defaults).forEach(key => {
+      const same = typeof defaults[key] === "number"
+        ? Math.abs(state[key] - defaults[key]) < 0.000001
+        : state[key] === defaults[key];
+      if (!same) params.set(key, String(state[key]));
+    });
     return params.toString();
   }
 
   function decodeState(search) {
-    const params = new URLSearchParams(String(search || "").replace(/^\?/, "")), state = {};
+    const params = new URLSearchParams(String(search || "").replace(/^\?/, ""));
+    const state = { ...(presets[params.get("type")] || {}) };
     params.forEach((value, key) => { if (key in defaults) state[key] = value; });
     return normalize(state);
   }
@@ -373,9 +399,15 @@
       doc.body.appendChild(link); link.click(); link.remove();
       setTimeout(() => URL.revokeObjectURL(link.href), 1000);
     };
-    controls.forEach(control => control.addEventListener("input", render));
+    controls.forEach(control => {
+      if (control.dataset.key !== "type") control.addEventListener("input", render);
+    });
+    const typeControl = host.querySelector('[data-key="type"]');
+    typeControl.addEventListener("change", event => {
+      state = normalize({ ...defaults, ...(presets[event.target.value] || {}), unit: state.unit });
+      write(); render(false);
+    });
     unitButtons.forEach(button => button.addEventListener("click", () => { state.unit = button.dataset.unitButton; write(); render(false); }));
-    host.querySelector("[data-preset]").addEventListener("change", event => { state = normalize({ ...defaults, ...(presets[event.target.value] || {}), unit: state.unit }); write(); render(false); });
     host.querySelector("[data-reset]").addEventListener("click", () => { state = normalize({ ...defaults, unit: state.unit }); write(); render(false); });
     host.querySelector("[data-download]").addEventListener("click", () => download(buildSvg(state, { includeGuides: state.exportGuides }), "laser-cut-leg-parts.svg", "image/svg+xml"));
     host.querySelector("[data-json]").addEventListener("click", () => download(JSON.stringify(normalize(state), null, 2) + "\n", "laser-cut-leg-settings.json", "application/json"));
