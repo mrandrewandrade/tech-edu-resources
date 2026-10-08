@@ -103,9 +103,10 @@ test("14 a support-type link starts from that support's complete preset", () => 
 test("15 wide easel overall height is derived from body length and top depth", () => {
   const state = builder.normalize({ ...builder.defaults, type: "wideEasel", bodyLength: 70, shoulderDepth: 20 });
   assert.strictEqual(state.height, 90);
-  assert.match(builder.dimensionInfo(state).derived, /centre-body length \+ wide-top depth/);
-  assert.match(builder.buildDimensionPreview(state), /body length/);
+  assert.match(builder.dimensionInfo(state).derived, /body length \+ top depth/);
+  assert.doesNotMatch(builder.buildDimensionPreview(state), /body length/);
   assert.match(builder.buildDimensionPreview(state), /wide top/);
+  assert.match(builder.buildDimensionPreview(state), /body width/);
 });
 
 test("16 wide easel export includes its measured-thickness mating slot", () => {

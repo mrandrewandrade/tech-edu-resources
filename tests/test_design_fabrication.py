@@ -545,7 +545,7 @@ class DesignFabricationTests(unittest.TestCase):
             "Narrow hinged rear strut", "Wide single easel back", "Flat parts to cut",
             "How the selected support is used", "Which reference file do I use?",
             "Interlocking X-base", "Download SVG", "Copy share link",
-            "Measured material thickness", "Centre-body length", "Calculated overall height",
+            "Measured material thickness", "Body length", "Calculated overall height",
             "Top-edge mating slot", "What the dimensions mean",
             'data-unit-button="mm"', 'data-unit-button="in"',
         ):

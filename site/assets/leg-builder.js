@@ -166,7 +166,7 @@
     }
     if (state.type === "wideEasel") {
       if (state.backWidth <= 0 || state.shoulderDepth <= 0) errors.push("The wide easel back needs a positive top width and top depth.");
-      if (state.bodyLength <= 0) errors.push("The centre-body length must be greater than zero.");
+      if (state.bodyLength <= 0) errors.push("The body length must be greater than zero.");
       if (state.legWidth >= state.backWidth) errors.push("The centre body must be narrower than the top attachment area.");
       if (state.shoulderDepth >= state.height) errors.push("The top attachment depth must be smaller than the overall height.");
       if (state.includeSlots && state.backWidth + state.fitAdjustment <= 0) errors.push("The matching top-edge slot must have a positive length.");
@@ -334,7 +334,7 @@ ${sideScene}
     const info = {
       wideEasel: {
         title: "Wide single easel back dimensions",
-        derived: `Overall height = centre-body length + wide-top depth = ${displayMeasurement(state.bodyLength, state.unit)} + ${displayMeasurement(state.shoulderDepth, state.unit)} = ${displayMeasurement(state.height, state.unit)}.`,
+        derived: `Overall height = body length + top depth = ${displayMeasurement(state.bodyLength, state.unit)} + ${displayMeasurement(state.shoulderDepth, state.unit)} = ${displayMeasurement(state.height, state.unit)}.`,
         note: "The blue slot is a separate mating outline. Its length follows the wide top; its height follows measured material thickness plus fit adjustment."
       },
       easel: {
@@ -377,7 +377,6 @@ ${sideScene}
       drawing = `<path d="M 145 55 H 365 V 110 H 285 V 245 H 225 V 110 H 145 Z" fill="#f3b783" stroke="#a34717" stroke-width="3"/>
 ${line(145, 35, 365, 35)}${textAt(255, 25, `wide top ${measure(state.backWidth)}`)}
 ${line(390, 55, 390, 110)}${textAt(402, 86, `top depth ${measure(state.shoulderDepth)}`, "start")}
-${line(305, 110, 305, 245)}${textAt(317, 181, `body length ${measure(state.bodyLength)}`, "start")}
 ${line(225, 266, 285, 266)}${textAt(255, 287, `body width ${measure(state.legWidth)}`)}
 ${line(118, 55, 118, 245)}${textAt(106, 154, `overall ${measure(state.height)}`, "end")}
 <rect x="425" y="178" width="145" height="22" fill="#dcecf2" stroke="#245f9e" stroke-width="3"/>
@@ -473,7 +472,7 @@ ${angled ? textAt(430, 110, `lean ${esc(state.angle)}°`) : ""}`;
         item.hidden = !item.dataset.showFor.split(/\s+/).includes(state.type);
       });
       const widthLabel = host.querySelector("[data-leg-width-label]");
-      if (widthLabel) widthLabel.textContent = state.type === "wideEasel" ? "Centre-body width" : "Leg / member width";
+      if (widthLabel) widthLabel.textContent = state.type === "wideEasel" ? "Body width" : "Leg / member width";
       const quantityLabel = host.querySelector("[data-quantity-label]");
       if (quantityLabel) quantityLabel.textContent = ["straight", "angled", "triangle"].includes(state.type) ? "Number of matching supports" : "Quantity";
       doc.querySelectorAll("[data-support-reference]").forEach(item => {
