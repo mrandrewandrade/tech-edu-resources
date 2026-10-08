@@ -84,6 +84,35 @@ ul.task-list li input[type="checkbox"] {
 <meta name="theme-color" content="#062650">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../assets/bs-shared.css">
 <link rel="stylesheet" href="../../assets/bs-components.css">
@@ -93,10 +122,14 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/design-fabrication.css">
 <meta property="og:title" content="Make It Stand | Optional Laser-Cutting Extension – Technological Education Resources">
 <meta property="og:description" content="Optionally extend a laser-cut plaque with feet, legs, a slot base, easel or another support while investigating stability, balance and iteration.">
+<meta property="og:image" content="https://andrewandrade.ca/tech-edu-resources/assets/laser-library/classroom-kit/standing-name-tag/easel-force-paths.svg">
 <meta property="og:site_name" content="Technological Education Resources">
+<meta property="og:image:alt" content="The front view shows two splayed front legs, a cross rail, ledge, downward display weight and upward ground reactions. The side view shows the front frame, rear kickstand, pivot, centre of mass and the front-to-back support footprint.">
 <meta name="twitter:title" content="Make It Stand | Optional Laser-Cutting Extension – Technological Education Resources">
 <meta name="twitter:description" content="Optionally extend a laser-cut plaque with feet, legs, a slot base, easel or another support while investigating stability, balance and iteration.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://andrewandrade.ca/tech-edu-resources/assets/laser-library/classroom-kit/standing-name-tag/easel-force-paths.svg">
+<meta name="twitter:image:alt" content="The front view shows two splayed front legs, a cross rail, ledge, downward display weight and upward ground reactions. The side view shows the front frame, rear kickstand, pivot, centre of mass and the front-to-back support footprint.">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed ter-design-fabrication bs-learn-article ter-notes-lesson quarto-light">
@@ -544,6 +577,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Fabrication Plate Builder</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/leg-builder/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Laser-Cut Leg &amp; Support Builder</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -635,6 +674,25 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#optional-extension" id="toc-optional-extension" class="nav-link active" data-scroll-target="#optional-extension">Optional extension</a></li>
   <li><a href="#investigate-alternatives" id="toc-investigate-alternatives" class="nav-link" data-scroll-target="#investigate-alternatives">Investigate alternatives</a></li>
+  <li><a href="#easel-reference-set" id="toc-easel-reference-set" class="nav-link" data-scroll-target="#easel-reference-set">Easel reference set</a>
+  <ul class="collapse">
+  <li><a href="#how-to-read-the-flat-reference-files" id="toc-how-to-read-the-flat-reference-files" class="nav-link" data-scroll-target="#how-to-read-the-flat-reference-files">How to read the flat reference files</a></li>
+  </ul></li>
+  <li><a href="#what-the-legs-actually-do" id="toc-what-the-legs-actually-do" class="nav-link" data-scroll-target="#what-the-legs-actually-do">What the legs actually do</a>
+  <ul class="collapse">
+  <li><a href="#two-splayed-front-legs" id="toc-two-splayed-front-legs" class="nav-link" data-scroll-target="#two-splayed-front-legs">Two splayed front legs</a></li>
+  <li><a href="#rear-kickstand" id="toc-rear-kickstand" class="nav-link" data-scroll-target="#rear-kickstand">Rear kickstand</a></li>
+  <li><a href="#cross-rail-and-ledge" id="toc-cross-rail-and-ledge" class="nav-link" data-scroll-target="#cross-rail-and-ledge">Cross rail and ledge</a></li>
+  <li><a href="#pivot-tabs-and-slots" id="toc-pivot-tabs-and-slots" class="nav-link" data-scroll-target="#pivot-tabs-and-slots">Pivot, tabs and slots</a></li>
+  </ul></li>
+  <li><a href="#bending-force-and-size" id="toc-bending-force-and-size" class="nav-link" data-scroll-target="#bending-force-and-size">Bending force and size</a></li>
+  <li><a href="#starting-proportions-to-investigate" id="toc-starting-proportions-to-investigate" class="nav-link" data-scroll-target="#starting-proportions-to-investigate">Starting proportions to investigate</a></li>
+  <li><a href="#worked-example-11-4-inch-name-plate" id="toc-worked-example-11-4-inch-name-plate" class="nav-link" data-scroll-target="#worked-example-11-4-inch-name-plate">Worked example: 11 × 4 inch name plate</a>
+  <ul class="collapse">
+  <li><a href="#stronger-quieter-option-two-high-supports" id="toc-stronger-quieter-option-two-high-supports" class="nav-link" data-scroll-target="#stronger-quieter-option-two-high-supports">Stronger, quieter option: two high supports</a></li>
+  <li><a href="#sleeker-option-one-low-centre-support" id="toc-sleeker-option-one-low-centre-support" class="nav-link" data-scroll-target="#sleeker-option-one-low-centre-support">Sleeker option: one low centre support</a></li>
+  <li><a href="#prototype-sequence" id="toc-prototype-sequence" class="nav-link" data-scroll-target="#prototype-sequence">Prototype sequence</a></li>
+  </ul></li>
   <li><a href="#stability-checks" id="toc-stability-checks" class="nav-link" data-scroll-target="#stability-checks">Stability checks</a></li>
   </ul>
 </nav>
@@ -669,12 +727,190 @@ ul.task-list li input[type="checkbox"] {
 <section id="optional-extension" class="level2 ter-project-brief">
 <h2 class="anchored" data-anchor-id="optional-extension">Optional extension</h2>
 <p>After completing the core engraving project, choose whether to make the plaque stand independently using <strong>feet, legs, a slot base, an easel or another support</strong>. This is not required for the first TAS name tag.</p>
+<p><a href="../../design-fabrication/tools/leg-builder/index.html" class="btn btn-primary">Open the Laser-Cut Leg &amp; Support Builder</a></p>
 </section>
 <section id="investigate-alternatives" class="level2">
 <h2 class="anchored" data-anchor-id="investigate-alternatives">Investigate alternatives</h2>
 <p>Do not give every student one finished stand file. Compare triangular legs, straight or angled legs, curved legs, T-feet, cross-feet, <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#slot" class="bs-inline-glossary" data-bs-glossary-slug="slot">slot</a> bases, easel backs, and two-leg systems. Ask what each solution changes about the footprint, material use, assembly, viewing angle, and centre of gravity.</p>
 <p>The <a href="../../teaching-materials/laser-cutting/?type=project-components#library">project-components library</a> provides starting geometry for investigation. Students remain responsible for adapting dimensions, selecting a concept, testing it, and documenting why it works.</p>
 <p>Use the focused <a href="../../assets/laser-library/classroom-kit/standing-name-tag/standing-name-tag-components.svg">standing-name-tag component set</a> to compare a triangle leg, T-foot, cross-foot and easel back. Copy a concept into a new file; do not submit the palette sheet as the project. Complete the <a href="../../design-fabrication/03-laser-cutting/resources/fabrication-planning-worksheet.html">fabrication planning worksheet</a> and follow <a href="../../design-fabrication/03-laser-cutting/resources/paper-to-inkscape.html">Paper to Inkscape</a>.</p>
+</section>
+<section id="easel-reference-set" class="level2">
+<h2 class="anchored" data-anchor-id="easel-reference-set">Easel reference set</h2>
+<p>The external <a href="https://www.freepatternsarea.com/designs/free-laser-cut-easel-templates-svg-dxf-cdr/">FreePatternsArea easel set</a> shows four variations on the same structural idea. Each uses a wide A-shaped front frame, one or more crosspieces, and a rear leg or kickstand. The variations change the ledge, hinge pieces, rear-leg adjustment and decorative openings rather than changing the basic load path.</p>
+<p>The source describes a <strong>5.51 in high, 3.70 in wide easel for 0.118 in material</strong> (140 × 94 mm, using 3 mm stock). It suggests scaling the complete design by <span class="math inline">\(4/3 = 1.333\)</span> for 0.157 in (4 mm) material, which produces an easel about <strong>7.35 in high and 4.92 in wide</strong> (187 × 125 mm). That preserves every proportion, including the slots. It is not the best method when you want to change the display height without changing the material thickness. In that case, resize the structure and reset every slot from the measured material instead.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Reference, not a verified cutting file
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The SVG declares a numerical viewBox but does not declare a physical unit. Import it using a known reference dimension, confirm the intended 5.51 in (140 mm) assembled height, and measure every slot before cutting. The files have not been physically verified by Technology Commons.</p>
+<p>The source currently identifies the design as <strong>CC BY-NC-SA 4.0 for personal, non-commercial use</strong>. Preserve the FreePatternsArea credit and check the <a href="https://www.freepatternsarea.com/license-agreement/">current licence terms</a> before using or sharing the files. These external files are not covered by the Technology Commons CC BY-SA licence.</p>
+</div>
+</div>
+<p>Reference formats: <a href="../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.svg">SVG</a>, <a href="../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.dxf">DXF</a>, <a href="../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.dwg">DWG</a>, <a href="../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.cdr">CDR</a>, <a href="../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.pdf">PDF</a>, and <a href="../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.png">PNG preview</a>.</p>
+<section id="how-to-read-the-flat-reference-files" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-the-flat-reference-files">How to read the flat reference files</h3>
+<p>The six downloads above are alternate formats of the same reference sheet. For the Technology Commons workflow, open the <strong>SVG in Inkscape</strong>. Use the PDF or PNG only to look at or print the design. DXF and DWG are for CAD/CAM software, and CDR is for CorelDRAW.</p>
+<p>The outlines are flat parts, not a picture of the assembled easel. In the cropped example, the large A-shaped outline is the front frame and the large T-shaped outline is the <strong>wide single rear support</strong>. That T-shaped part is the large single leg: its wide top provides an attachment or hinge zone and its broad centre reaches the table. It does not stand by itself. The complete design still needs the front frame, an attachment between the parts, and a stop or tether that controls the opening angle.</p>
+<p>The source sheet does not label every part or provide a verified step-by-step assembly sequence. Keep each apparent group together, <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#prototype" class="bs-inline-glossary" data-bs-glossary-slug="prototype">prototype</a> it in cardboard, and do not guess the purpose of an isolated small outline. For a clearer original starting point, choose <strong>Wide single easel back · like the reference</strong> in the <a href="../../design-fabrication/tools/leg-builder/index.html">Leg &amp; Support Builder</a>; the tool now shows both the flat cut part and a coloured assembled view.</p>
+</section>
+</section>
+<section id="what-the-legs-actually-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-legs-actually-do">What the legs actually do</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/laser-library/classroom-kit/standing-name-tag/easel-force-paths.svg" class="img-fluid figure-img" alt="The front view shows two splayed front legs, a cross rail, ledge, downward display weight and upward ground reactions. The side view shows the front frame, rear kickstand, pivot, centre of mass and the front-to-back support footprint."></p>
+<figcaption>Front and side force diagrams for a three-legged A-frame easel</figcaption>
+</figure>
+</div>
+<section id="two-splayed-front-legs" class="level3">
+<h3 class="anchored" data-anchor-id="two-splayed-front-legs">Two splayed front legs</h3>
+<p>The two front legs carry most of the vertical load. Their feet are farther apart than their tops, so the front support width is large without making the top bulky. The load should travel mostly <strong>along the plane of the sheet and down the legs as compression</strong>. Sheet material is much stiffer in its own plane than it is when pushed sideways out of plane.</p>
+<p>The space between the legs is not only decorative. Removing low-demand material reduces mass while leaving a deep outer frame. The remaining rail width must still resist cracking at slots, grain defects and narrow corners.</p>
+</section>
+<section id="rear-kickstand" class="level3">
+<h3 class="anchored" data-anchor-id="rear-kickstand">Rear kickstand</h3>
+<p>The rear leg changes the frame from a nearly flat object into a triangle. In side view, the front feet and rear foot form a support footprint. The stand remains stable while the vertical projection of the combined centre of mass stays inside that footprint.</p>
+<p>Moving the rear foot farther back increases the tipping margin and usually reduces the force needed to balance the display. It also creates a longer, more slender leg. A loose pivot or a sideways bump can then make the leg bend or buckle. The rear leg works best when its top pivot and bottom contact keep the main force close to the leg’s centreline, so the part carries compression instead of acting like a long cantilever.</p>
+</section>
+<section id="cross-rail-and-ledge" class="level3">
+<h3 class="anchored" data-anchor-id="cross-rail-and-ledge">Cross rail and ledge</h3>
+<p>The cross rail ties the two front legs together. It resists <strong>racking</strong>, where the frame changes from a symmetric A shape into a skewed shape, and <strong>splaying</strong>, where the feet move apart. The ledge carries the displayed object and transfers that load into both front legs. A ledge attached at only one small tab creates a concentrated bending force; two separated tabs or a continuous shoulder distribute the load more effectively.</p>
+</section>
+<section id="pivot-tabs-and-slots" class="level3">
+<h3 class="anchored" data-anchor-id="pivot-tabs-and-slots">Pivot, tabs and slots</h3>
+<p>The pivot carries shear between the front frame and rear leg while allowing the angle to change. A larger hole removes more of the leg’s net section, and a hole close to an edge can split the remaining material. Keep useful material around the hole, use a washer or smooth spacer where appropriate, and test repeated opening and closing.</p>
+<p>Tabs and slots locate parts and transfer shear through bearing on their faces. The <strong>shoulder</strong>, not the fragile tip of a tab, should stop the part at its final position. Make the slot from measured thickness plus a tested fit adjustment; do not assume nominal plywood thickness is exact.</p>
+</section>
+</section>
+<section id="bending-force-and-size" class="level2">
+<h2 class="anchored" data-anchor-id="bending-force-and-size">Bending force and size</h2>
+<p>The basic bending moment is:</p>
+<p><span class="math display">\[M = F L\]</span></p>
+<p>where <span class="math inline">\(F\)</span> is the applied force and <span class="math inline">\(L\)</span> is the perpendicular distance to the section being checked. Doubling the display load or doubling the lever arm doubles the bending moment.</p>
+<p>For a long member behaving roughly like a cantilever, deflection changes approximately with:</p>
+<p><span class="math display">\[\delta \propto \frac{F L^3}{E I}\]</span></p>
+<p>This explains why a leg that is merely twice as long can feel about eight times more flexible when its cross-section is unchanged. <span class="math inline">\(E\)</span> describes the material stiffness and <span class="math inline">\(I\)</span> describes how the material is distributed around the bending axis.</p>
+<p>For a rectangular strip bending out of the sheet plane, <span class="math inline">\(I\)</span> includes the material thickness cubed. Increasing thickness from 0.118 in to 0.157 in (3 to 4 mm) can therefore increase weak-axis bending stiffness by roughly <span class="math inline">\((4/3)^3 = 2.37\)</span> when the other dimension stays the same. Increasing thickness from 0.118 in to 0.236 in (3 to 6 mm) gives roughly <span class="math inline">\(2^3 = 8\)</span> times the weak-axis stiffness. Real plywood varies by species, ply quality, grain direction, voids, moisture and cut quality, so these ratios explain trends rather than certify a load.</p>
+<p>The most effective design move is not simply making every leg thick. Keep forces in plane, use a triangular footprint, shorten unsupported lengths, tie the front legs together, and avoid eccentric joints that twist the sheet.</p>
+</section>
+<section id="starting-proportions-to-investigate" class="level2">
+<h2 class="anchored" data-anchor-id="starting-proportions-to-investigate">Starting proportions to investigate</h2>
+<p>These are prototype starting points for a light display easel, not structural ratings:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th style="text-align: right;">Starting relationship</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Front footprint width</td>
+<td style="text-align: right;">about 0.6 to 0.75 of easel height</td>
+<td>improves side-to-side tipping resistance</td>
+</tr>
+<tr class="even">
+<td>Rear-foot distance</td>
+<td style="text-align: right;">about 0.35 to 0.5 of easel height</td>
+<td>improves front-to-back tipping resistance</td>
+</tr>
+<tr class="odd">
+<td>Front leg or frame-rail width</td>
+<td style="text-align: right;">at least 4 to 6 material thicknesses</td>
+<td>leaves a useful net section around cutouts and slots</td>
+</tr>
+<tr class="even">
+<td>Cross-rail depth</td>
+<td style="text-align: right;">at least 4 material thicknesses</td>
+<td>helps resist racking and leg splay</td>
+</tr>
+<tr class="odd">
+<td>Tab length along an edge</td>
+<td style="text-align: right;">at least 4 material thicknesses</td>
+<td>distributes bearing instead of concentrating it at one small tab</td>
+</tr>
+<tr class="even">
+<td>Material beside a slot</td>
+<td style="text-align: right;">at least 2 material thicknesses as a first check</td>
+<td>reduces splitting at the slot end</td>
+</tr>
+</tbody>
+</table>
+<p>For 0.118 in (3 mm) stock, those starting relationships suggest front rails around 0.47 to 0.71 in wide, a cross rail at least about 0.47 in deep, and a tab at least about 0.47 in long. These are hypotheses to test with the actual stock, not guaranteed minimums.</p>
+</section>
+<section id="worked-example-11-4-inch-name-plate" class="level2">
+<h2 class="anchored" data-anchor-id="worked-example-11-4-inch-name-plate">Worked example: 11 × 4 inch name plate</h2>
+<p>Assume the plaque is <strong>11 inches wide, 4 inches high and nominally 1/8 inch thick</strong>. Measure the actual material rather than entering exactly 0.125 inch automatically. Define the viewing angle from the tabletop: 75 degrees is 15 degrees back from vertical, while 80 degrees is 10 degrees back from vertical.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Viewing angle</th>
+<th style="text-align: right;">Top moves behind the bottom</th>
+<th style="text-align: right;">Vertical rise</th>
+<th style="text-align: right;">Centre-of-mass projection behind the bottom</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">75°</td>
+<td style="text-align: right;">1.04 in</td>
+<td style="text-align: right;">3.86 in</td>
+<td style="text-align: right;">0.52 in</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">80°</td>
+<td style="text-align: right;">0.69 in</td>
+<td style="text-align: right;">3.94 in</td>
+<td style="text-align: right;">0.35 in</td>
+</tr>
+</tbody>
+</table>
+<p>The centre-of-mass values assume a uniform plaque without a heavy attachment. The support footprint must extend behind that projected point, with additional margin for bumps and material variation.</p>
+<section id="stronger-quieter-option-two-high-supports" class="level3">
+<h3 class="anchored" data-anchor-id="stronger-quieter-option-two-high-supports">Stronger, quieter option: two high supports</h3>
+<ul>
+<li>Put two triangular cheeks or rear legs about <strong>1.5 to 2 inches in from each end</strong> of the 11-inch plaque.</li>
+<li>Attach each support about <strong>3 to 3.5 inches above the bottom edge</strong>.</li>
+<li>Start with the rear contact about <strong>1.5 to 1.75 inches behind the plaque’s bottom contact</strong>.</li>
+<li>A rear member from a 3.25-inch-high attachment to that footprint is about <strong>3.2 to 3.4 inches long</strong> at the proposed angles.</li>
+</ul>
+<p>The pair distributes load across the plaque and resists twisting. The higher attachment gives the support more leverage to resist rotation, but the longer member needs enough width to prevent sideways bending. A triangular cheek is usually stiffer than a narrow stick because it shortens the unsupported load path.</p>
+</section>
+<section id="sleeker-option-one-low-centre-support" class="level3">
+<h3 class="anchored" data-anchor-id="sleeker-option-one-low-centre-support">Sleeker option: one low centre support</h3>
+<p>A single centred support can attach about <strong>1.25 inches above the bottom</strong>, place its rear contact about <strong>1.25 inches behind the bottom</strong>, and use a member about <strong>1.5 to 1.6 inches long</strong>. This is compact and visually quiet, but the smaller vertical spacing creates greater force at the joint for the same overturning moment. One central support also provides less resistance to twisting across an 11-inch-wide plaque.</p>
+<p>Use two separated bottom locating points or a continuous ledge even if there is only one rear leg. They stop the plaque from rotating around the centre support. Widening the concealed base of the centre support also improves side-to-side stability without making the visible leg taller.</p>
+</section>
+<section id="prototype-sequence" class="level3">
+<h3 class="anchored" data-anchor-id="prototype-sequence">Prototype sequence</h3>
+<ol type="1">
+<li>Draw both side profiles full size on half a sheet of paper or cardboard.</li>
+<li>Test 75 degrees and 80 degrees. Choose the smallest tilt that still reads well under the expected viewing height.</li>
+<li>Test the two-support version first as the reference design.</li>
+<li>Remove material or move toward a single centre support only after the reference design passes the push tests.</li>
+<li>Measure the real 1/8-inch stock and cut a slot coupon. Set the slot from measured thickness plus the tested fit adjustment.</li>
+<li>Push at both ends and at the top centre. Watch for tipping, plaque twist, slot splitting and out-of-plane leg bending.</li>
+</ol>
+</section>
 </section>
 <section id="stability-checks" class="level2">
 <h2 class="anchored" data-anchor-id="stability-checks">Stability checks</h2>
@@ -683,12 +919,15 @@ ul.task-list li input[type="checkbox"] {
 <li>Increase the support footprint where tipping is likely.</li>
 <li>Consider plaque height, thickness, angle, and the direction of expected bumps.</li>
 <li>Test front-to-back and side-to-side stability.</li>
+<li>Push lightly from both sides and watch for out-of-plane leg bending or pivot twist.</li>
+<li>Check whether the cross rail prevents the front legs from spreading.</li>
 <li>Check whether slots weaken a narrow region or create fragile grain directions.</li>
+<li>Inspect the net material around every pivot hole and slot end.</li>
 <li>Record what changed between versions.</li>
 <li>Label the load path and the interface that locates the engraved blank.</li>
 <li>Test the stand with the actual blank rather than a guessed rectangle.</li>
 </ul>
-<p>Use cardboard or scrap material for a quick geometry <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#prototype" class="bs-inline-glossary" data-bs-glossary-slug="prototype">prototype</a> before cutting the full design. A stand that works only on a perfectly still surface needs another <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#iteration" class="bs-inline-glossary" data-bs-glossary-slug="iteration">iteration</a>.</p>
+<p>Use cardboard or scrap material for a quick geometry prototype before cutting the full design. A stand that works only on a perfectly still surface needs another <a href="https://andrewandrade.ca/tech-edu-resources/glossary/#iteration" class="bs-inline-glossary" data-bs-glossary-slug="iteration">iteration</a>.</p>
 <div class="ter-curriculum-relevance">
 <p><strong>Ontario curriculum relevance:</strong> Supports <strong>TIJ1O</strong> and <strong>TDJ2O</strong> design-process learning through alternatives, modelling, stability, constraints, testing, feedback, and iteration. Construction and manufacturing contexts may connect to <strong>TCJ2O</strong> and <strong>TMJ2O</strong>.</p>
 </div>
