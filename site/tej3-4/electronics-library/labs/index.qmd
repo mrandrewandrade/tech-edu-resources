@@ -27,3 +27,34 @@ execute: {enabled: false}
 [Download the Basic Computer Systems student activity packages](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf){target="_blank"}
 
 [Download the Computer Recovery Crew Pilot Job Sheet](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Job-Sheet.pdf){target="_blank"}
+
+## Grob experiment suggestions {#grob-experiment-suggestions}
+
+Use these as starting points rather than automatic assignments. Each lesson package should select the experiment that actually verifies its learning goal, adapt it to current equipment and protected low-voltage practice, or state that no experiment is needed.
+
+[Open the Grob Experiments Manual in Google Drive](https://drive.google.com/file/d/15KJmGLXvTh0oivaqnV0SvWB7N64V1soT/view){target="_blank"}
+
+[Open the complete TEJ lesson-package style guide](https://docs.google.com/document/d/1J3Wf2mPp0UHAIjWphWWiRx7wtk9TbDPhLshayqw_pVE/edit){target="_blank"}
+
+| TEJ lesson package | Suggested Grob experiment | Minimum equipment and components | Software | Consumables and preparation |
+|:--|:--|:--|:--|:--|
+| Engineering notation and calculator skills | Introduction Experiment: Electronics Math | Scientific calculator and TEJ reference | None | Calculation prompts; no circuit parts |
+| Electrical quantities and safe setup | Experiment 1-1: Lab Safety, Equipment, and Components | Protected low-voltage source, digital multimeter, breadboard, resistor and component samples | Tinkercad optional | Label components and prepare one known-safe demonstration circuit |
+| Resistance and resistor identification | Experiments 2-1 and 2-2 | Digital multimeter, resistor assortment, breadboard, protected source | Tinkercad optional | Resistors with several values and tolerances; spare parts for damaged leads |
+| Ohm's law and power | Experiments 3-1 and 3-2 | Current-limited supply, digital multimeter, breadboard, rated resistors | Tinkercad first; Multisim optional | Choose values that remain below resistor power ratings |
+| Series circuits | Experiments 4-1 to 4-4 | Supply, digital multimeter, breadboard, three or more resistors, switch | Tinkercad or Multisim | Prepare a removable open fault; do not create a deliberate hard short |
+| Parallel circuits | Experiments 5-1 to 5-4 | Fused or current-limited supply, digital multimeter, breadboard, branch resistors | Tinkercad or Multisim | Prepare an open-branch fault and verify the total-current meter range |
+| Series-parallel circuits | Experiments 6-1 to 6-4 | Supply, digital multimeter, breadboard, resistor network | Multisim recommended before building | Prepare one canonical network with labelled reduction stages |
+| Voltage and current dividers | Experiments 7-1 to 7-4 | Supply, digital multimeter, fixed resistors, potentiometer, representative load | Tinkercad or Multisim | Confirm the potentiometer pinout and resistor ratings |
+| Multimeter fundamentals | Adapt Experiments 1-1, 2-1, 3-1, 4-1, and 5-1 | Digital multimeter, fused leads, protected circuits, known-value resistors and battery | Meter simulation optional | Prepare voltage, current, resistance, and continuity stations; never energize an ohmmeter station |
+| Conductors and insulation | Experiment 11-1 | Digital multimeter plus conductor, wire, and insulator samples | None | Cut equal-length samples and deburr sharp wire ends |
+| Batteries and source behaviour | Experiments 12-1 and 12-2 | Cells or protected battery packs, holders, digital multimeter, rated loads | Multisim optional | Inspect cells and calculate safe loads; never short a cell |
+| Capacitors and RC response | Experiments 16-1 and 22-1 | Capacitors, resistors, breadboard, digital multimeter, oscilloscope or data logger | Multisim or Tinkercad where supported | Observe polarity and voltage ratings; discharge capacitors before handling |
+| Diodes and power supplies | Experiments 27-1, 27-3, 27-4, and 27-5 | Diodes, resistors, capacitors, oscilloscope, isolated low-voltage AC source or function generator | Multisim recommended | Keep student breadboards isolated from mains and prepare low-voltage rectifier parts |
+| Logic gates and truth tables | Supplemental Experiments A-1 to A-4 | Regulated 5 V source, logic ICs, switches, pull resistors, LEDs and current-limiting resistors | Logisim Evolution, Tinkercad, or equivalent | Verify IC family, pinout, supply voltage, and unused-input handling |
+
+### Required experiment record
+
+For every experiment used in a lesson package, record the experiment number, purpose, mode, equipment, software, reusable parts, consumables, teacher preparation, student evidence, safety boundary, and any adaptation from the published procedure.
+
+The common introductory kit is a current-limited low-voltage source, fused digital multimeter, breadboard, insulated leads, resistor assortment, switches, protected loads, calculator, and TEJ electronics reference. Add specialized parts only when the experiment requires them.
