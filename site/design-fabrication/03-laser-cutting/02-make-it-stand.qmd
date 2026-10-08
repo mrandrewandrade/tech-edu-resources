@@ -40,6 +40,14 @@ The source currently identifies the design as **CC BY-NC-SA 4.0 for personal, no
 
 Reference formats: [SVG](../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.svg), [DXF](../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.dxf), [DWG](../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.dwg), [CDR](../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.cdr), [PDF](../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.pdf), and [PNG preview](../../assets/laser-library/references/freepatternsarea-easel-templates/free-laser-cut-easel-templates.png).
 
+### How to read the flat reference files
+
+The six downloads above are alternate formats of the same reference sheet. For the Technology Commons workflow, open the **SVG in Inkscape**. Use the PDF or PNG only to look at or print the design. DXF and DWG are for CAD/CAM software, and CDR is for CorelDRAW.
+
+The outlines are flat parts, not a picture of the assembled easel. In the cropped example, the large A-shaped outline is the front frame and the large T-shaped outline is the **wide single rear support**. That T-shaped part is the large single leg: its wide top provides an attachment or hinge zone and its broad centre reaches the table. It does not stand by itself. The complete design still needs the front frame, an attachment between the parts, and a stop or tether that controls the opening angle.
+
+The source sheet does not label every part or provide a verified step-by-step assembly sequence. Keep each apparent group together, prototype it in cardboard, and do not guess the purpose of an isolated small outline. For a clearer original starting point, choose **Wide single easel back · like the reference** in the [Leg & Support Builder](../tools/leg-builder/index.qmd); the tool now shows both the flat cut part and a coloured assembled view.
+
 ## What the legs actually do
 
 ![Front and side force diagrams for a three-legged A-frame easel](../../assets/laser-library/classroom-kit/standing-name-tag/easel-force-paths.svg){fig-alt="The front view shows two splayed front legs, a cross rail, ledge, downward display weight and upward ground reactions. The side view shows the front frame, rear kickstand, pivot, centre of mass and the front-to-back support footprint."}

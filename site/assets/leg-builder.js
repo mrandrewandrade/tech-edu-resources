@@ -7,23 +7,25 @@
 
   const defaults = Object.freeze({
     unit: "in",
-    type: "angled", height: 82.55, footprint: 57.15, legWidth: 25.4, angle: 10,
+    type: "wideEasel", height: 82.55, footprint: 57.15, legWidth: 44.45, angle: 10,
     materialThickness: 3.175, fitAdjustment: 0.1524, tabWidth: 15.875, tabDepth: 3.81,
-    pivotDiameter: 4.7625, pivotOffset: 12.7, cornerRadius: 3.175, quantity: 2,
-    partGap: 7.9375, includeSlots: true, includeCoupon: true,
+    pivotDiameter: 4.7625, pivotOffset: 12.7, cornerRadius: 3.175, quantity: 1,
+    backWidth: 76.2, shoulderDepth: 15.875,
+    partGap: 7.9375, includeSlots: false, includeCoupon: false,
     previewGuides: true, exportGuides: false
   });
 
   const presets = {
-    straight: { type: "straight", height: 76.2, legWidth: 25.4, quantity: 2, tabWidth: 15.875, tabDepth: 3.81 },
-    angled: { type: "angled", height: 82.55, legWidth: 25.4, angle: 10, quantity: 2, tabWidth: 15.875, tabDepth: 3.81 },
+    straight: { type: "straight", height: 76.2, legWidth: 25.4, quantity: 2, tabWidth: 15.875, tabDepth: 3.81, includeSlots: true, includeCoupon: true },
+    angled: { type: "angled", height: 82.55, legWidth: 25.4, angle: 10, quantity: 2, tabWidth: 15.875, tabDepth: 3.81, includeSlots: true, includeCoupon: true },
     triangle: { type: "triangle", height: 76.2, footprint: 63.5, quantity: 2, includeSlots: false },
     easel: { type: "easel", height: 133.35, legWidth: 22.225, pivotDiameter: 4.7625, pivotOffset: 12.7, quantity: 1, includeSlots: false },
+    wideEasel: { type: "wideEasel", height: 82.55, backWidth: 76.2, shoulderDepth: 15.875, legWidth: 44.45, quantity: 1, includeSlots: false, includeCoupon: false },
     crossfoot: { type: "crossfoot", height: 25.4, footprint: 88.9, legWidth: 25.4, quantity: 1, includeSlots: false }
   };
 
-  const numericKeys = ["height", "footprint", "legWidth", "angle", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "quantity", "partGap"];
-  const dimensionalKeys = new Set(["height", "footprint", "legWidth", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "partGap"]);
+  const numericKeys = ["height", "footprint", "legWidth", "angle", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "backWidth", "shoulderDepth", "quantity", "partGap"];
+  const dimensionalKeys = new Set(["height", "footprint", "legWidth", "materialThickness", "fitAdjustment", "tabWidth", "tabDepth", "pivotDiameter", "pivotOffset", "cornerRadius", "backWidth", "shoulderDepth", "partGap"]);
   const boolKeys = ["includeSlots", "includeCoupon", "previewGuides", "exportGuides"];
   const round = value => Math.round(value * 1000) / 1000;
   const finite = (value, fallback) => Number.isFinite(Number(value)) ? Number(value) : fallback;
@@ -81,6 +83,30 @@
     };
   }
 
+  function wideEaselPart(state, id) {
+    const width = state.backWidth;
+    const bodyWidth = Math.min(state.legWidth, width);
+    const shoulderDepth = Math.min(state.shoulderDepth, state.height);
+    const left = (width - bodyWidth) / 2;
+    const right = left + bodyWidth;
+    const radius = Math.max(0, Math.min(state.cornerRadius, shoulderDepth / 2, width / 2));
+    const d = [
+      `M ${radius} 0`,
+      `H ${width - radius}`,
+      `Q ${width} 0 ${width} ${radius}`,
+      `V ${shoulderDepth}`,
+      `H ${right}`,
+      `V ${state.height}`,
+      `H ${left}`,
+      `V ${shoulderDepth}`,
+      "H 0",
+      `V ${radius}`,
+      `Q 0 0 ${radius} 0`,
+      "Z"
+    ].join(" ");
+    return { id, width, height: state.height, outline: `<path id="${id}" d="${d}"/>`, holes: "" };
+  }
+
   function crossfootParts(state, pairIndex) {
     const slot = effectiveSlotWidth(state), x = (state.footprint - slot) / 2;
     const a = {
@@ -104,6 +130,7 @@
       else if (state.type === "angled") result.push(angledPart(state, `angled-leg-${number}`));
       else if (state.type === "triangle") result.push(trianglePart(state, `triangle-support-${number}`));
       else if (state.type === "easel") result.push(easelPart(state, `easel-leg-${number}`));
+      else if (state.type === "wideEasel") result.push(wideEaselPart(state, `wide-easel-back-${number}`));
       else if (state.type === "crossfoot") result.push(...crossfootParts(state, number));
     }
     return result;
@@ -128,7 +155,13 @@
       if (sideLigament < 2 * state.materialThickness) warnings.push("Less than two material thicknesses remain beside the pivot hole.");
       if (state.pivotOffset + state.pivotDiameter / 2 >= state.height) errors.push("The pivot hole does not fit inside the leg.");
     }
-    if (state.legWidth < 4 * state.materialThickness && state.type !== "triangle") warnings.push("The member is narrower than four material thicknesses; inspect slots, holes and grain carefully.");
+    if (state.type === "wideEasel") {
+      if (state.backWidth <= 0 || state.shoulderDepth <= 0) errors.push("The wide easel back needs a positive top width and top depth.");
+      if (state.legWidth >= state.backWidth) errors.push("The centre body must be narrower than the top attachment area.");
+      if (state.shoulderDepth >= state.height) errors.push("The top attachment depth must be smaller than the overall height.");
+      if (state.legWidth < 6 * state.materialThickness) warnings.push("The wide easel body's centre section is narrow relative to the material thickness.");
+    }
+    if (state.legWidth < 4 * state.materialThickness && !["triangle", "wideEasel"].includes(state.type)) warnings.push("The member is narrower than four material thicknesses; inspect slots, holes and grain carefully.");
     if (state.height / state.legWidth > 10 && ["straight", "angled", "easel"].includes(state.type)) warnings.push("The leg is slender; test out-of-plane bending and sideways wobble.");
     if (state.type === "triangle" && state.footprint < state.height / 2) warnings.push("The triangular support has a short footprint relative to its height.");
     return { valid: errors.length === 0, errors: [...new Set(errors)], warnings: [...new Set(warnings)], slotWidth: slot, parts: parts(state) };
@@ -178,6 +211,88 @@
     return `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${exportWidth}" height="${exportHeight}" viewBox="0 0 ${data.width} ${data.height}">\n<metadata>${metadata}</metadata>\n<g id="CUT_PARTS" fill="none" stroke="#ff0000" stroke-width="0.1">${outlines}</g>\n<g id="CUT_HOLES" fill="none" stroke="#ff0000" stroke-width="0.1">${holes}</g>\n<g id="MATING_SLOTS" fill="none" stroke="#245f9e" stroke-width="0.1">${slots}</g>\n<g id="FIT_COUPON" fill="none" stroke="#7a3f95" stroke-width="0.1">${coupon}</g>\n${guides}\n</svg>\n`;
   }
 
+  function assemblyInfo(raw) {
+    const state = normalize(raw);
+    const info = {
+      straight: {
+        name: "Two straight tabbed legs",
+        cut: "Cut two matching legs. The tabs go into two matching slots in the plaque or a separate base.",
+        add: "You still need the plaque or base with those slots. Use the blue slot rectangles only as geometry to copy into that mating part."
+      },
+      angled: {
+        name: "Two angled tabbed legs",
+        cut: "Cut two matching legs and place them apart so the plaque cannot twist.",
+        add: "You still need two matching slots in the plaque or base. Prototype the viewing angle before cutting the finished material."
+      },
+      triangle: {
+        name: "Two triangular side supports",
+        cut: "Cut two triangles and attach one near each end of the plaque.",
+        add: "You still need a deliberate attachment method and a front stop so the plaque cannot slide."
+      },
+      easel: {
+        name: "Narrow hinged rear kickstand",
+        cut: "Cut one narrow rear leg. The round hole is for a pivot or hinge connection to the back of a front frame.",
+        add: "This part is not a complete easel. It needs a front frame or plaque, a pivot, and a stop that limits how far the leg opens."
+      },
+      wideEasel: {
+        name: "Wide single easel back",
+        cut: "Cut one large T-shaped rear support. The wide top is the attachment or hinge zone; the broad centre body reaches the table.",
+        add: "This is the large single support shown in the reference easel. It still needs a front plaque, a hinge or other tested attachment at the top, and a stop or tether that fixes the open angle."
+      },
+      crossfoot: {
+        name: "Interlocking cross-foot",
+        cut: "Cut both half-slotted bars. Rotate one bar 90 degrees and slide the slots together.",
+        add: "You still need a slot, tab, or other connection between the crossed base and the plaque."
+      }
+    };
+    return info[state.type] || info.angled;
+  }
+
+  function buildAssemblyPreview(raw) {
+    const state = normalize(raw);
+    const wide = state.type === "wideEasel";
+    const narrow = state.type === "easel";
+    let backSupport = "";
+    let sideSupport = "";
+    let label = "SUPPORT";
+    if (wide) {
+      backSupport = '<path d="M 72 58 H 218 Q 226 58 226 66 V 91 H 174 V 204 H 116 V 91 H 64 V 66 Q 64 58 72 58 Z"/>';
+      sideSupport = '<path d="M 352 70 L 458 211 L 441 222 L 335 81 Z"/>';
+      label = "WIDE REAR SUPPORT";
+    } else if (narrow) {
+      backSupport = '<rect x="135" y="58" width="28" height="146" rx="12"/><circle cx="149" cy="77" r="5" fill="#fff" stroke="#a34717" stroke-width="3"/>';
+      sideSupport = '<path d="M 347 70 L 456 211 L 443 222 L 334 80 Z"/><circle cx="344" cy="76" r="5" fill="#fff" stroke="#a34717" stroke-width="3"/>';
+      label = "NARROW REAR LEG";
+    } else if (state.type === "triangle") {
+      backSupport = '<path d="M 72 204 L 113 92 L 150 204 Z M 178 204 L 215 92 L 226 204 Z"/>';
+      sideSupport = '<path d="M 335 67 L 452 217 H 354 Z"/>';
+      label = "TRIANGULAR SUPPORT";
+    } else if (state.type === "crossfoot") {
+      backSupport = '<path d="M 65 172 H 225 V 190 H 65 Z M 136 116 H 154 V 228 H 136 Z"/>';
+      sideSupport = '<path d="M 330 205 H 468 V 220 H 330 Z M 385 174 H 400 V 238 H 385 Z"/>';
+      label = "CROSS-FOOT BASE";
+    } else {
+      const skew = state.type === "angled" ? 12 : 0;
+      backSupport = `<path d="M ${82 + skew} 110 H ${102 + skew} L 91 217 H 68 Z M ${188 - skew} 110 H ${208 - skew} L 222 217 H 199 Z"/>`;
+      sideSupport = '<path d="M 337 89 L 374 218 H 354 L 320 96 Z"/>';
+      label = state.type === "angled" ? "TWO ANGLED LEGS" : "TWO STRAIGHT LEGS";
+    }
+    return `<svg viewBox="0 0 520 265" role="img" aria-label="Schematic showing the selected support behind a plaque">
+<rect width="520" height="265" fill="#ffffff"/>
+<text x="145" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#284650">BACK VIEW</text>
+<rect x="42" y="38" width="206" height="145" rx="8" fill="#dcecf2" stroke="#245f74" stroke-width="3"/>
+<g fill="#e99a5b" stroke="#a34717" stroke-width="3">${backSupport}</g>
+<text x="145" y="247" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#7a3515">${label}</text>
+<text x="397" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#284650">SIDE VIEW</text>
+<line x1="280" y1="225" x2="495" y2="225" stroke="#52636b" stroke-width="3"/>
+<path d="M 359 216 L 316 54 L 337 48 L 381 211 Z" fill="#dcecf2" stroke="#245f74" stroke-width="3"/>
+<g fill="#e99a5b" stroke="#a34717" stroke-width="3">${sideSupport}</g>
+<circle cx="344" cy="76" r="6" fill="#fff" stroke="#1b7560" stroke-width="4"/>
+<text x="353" y="57" font-family="sans-serif" font-size="10" font-weight="700" fill="#1b7560">ATTACH / HINGE</text>
+<text x="397" y="247" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#52636b">Front contact + rear contact make the footprint</text>
+</svg>`;
+  }
+
   function encodeState(raw) {
     const state = normalize(raw), params = new URLSearchParams();
     Object.keys(defaults).forEach(key => { if (state[key] !== defaults[key]) params.set(key, String(state[key])); });
@@ -221,6 +336,13 @@
       });
       host.querySelectorAll("[data-unit-symbol]").forEach(item => { item.textContent = state.unit; });
       unitButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.unitButton === state.unit)));
+      host.querySelectorAll("[data-show-for]").forEach(item => {
+        item.hidden = !item.dataset.showFor.split(/\s+/).includes(state.type);
+      });
+      const widthLabel = host.querySelector("[data-leg-width-label]");
+      if (widthLabel) widthLabel.textContent = state.type === "wideEasel" ? "Centre-body width" : "Leg / member width";
+      const quantityLabel = host.querySelector("[data-quantity-label]");
+      if (quantityLabel) quantityLabel.textContent = ["straight", "angled", "triangle"].includes(state.type) ? "Number of matching supports" : "Quantity";
     };
     const render = (readControls = true) => {
       if (readControls) read();
@@ -230,10 +352,15 @@
       host.querySelector("[data-count]").textContent = String(result.parts.length);
       host.querySelector("[data-stiffness]").textContent = `${round(Math.pow(state.materialThickness / 3, 3))}×`;
       host.querySelector("[data-units]").textContent = state.unit === "in" ? "inches (in)" : "millimetres (mm)";
+      const info = assemblyInfo(state);
+      host.querySelector("[data-assembly-name]").textContent = info.name;
+      host.querySelector("[data-assembly-cut]").textContent = info.cut;
+      host.querySelector("[data-assembly-add]").textContent = info.add;
+      host.querySelector("[data-assembly-preview]").innerHTML = buildAssemblyPreview(state);
       const status = host.querySelector("[data-status]");
       status.className = `plate-status ${result.valid ? "is-valid" : "is-error"}`;
       status.innerHTML = result.valid
-        ? `<strong>Geometry is ready for a test cut.</strong>${result.warnings.map(item => `<span>${esc(item)}</span>`).join("")}`
+        ? `<strong>The flat cut outline is ready for a test cut.</strong>${result.warnings.map(item => `<span>${esc(item)}</span>`).join("")}`
         : `<strong>Fix before export.</strong>${result.errors.map(item => `<span>${esc(item)}</span>`).join("")}`;
       host.querySelector("[data-download]").disabled = !result.valid;
       const query = encodeState(state);
@@ -257,5 +384,5 @@
   }
 
   if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", () => init(document));
-  return { defaults, presets, normalize, toMm, fromMm, displayMeasurement, effectiveSlotWidth, parts, validate, layout, buildSvg, encodeState, decodeState };
+  return { defaults, presets, normalize, toMm, fromMm, displayMeasurement, effectiveSlotWidth, parts, validate, layout, buildSvg, assemblyInfo, buildAssemblyPreview, encodeState, decodeState };
 });

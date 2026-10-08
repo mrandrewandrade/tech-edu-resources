@@ -542,7 +542,9 @@ class DesignFabricationTests(unittest.TestCase):
         builder = self.read("design-fabrication/tools/leg-builder/index.qmd")
         for label in (
             "Straight tabbed pair", "Angled tabbed pair", "Triangular support pair",
-            "Rear easel leg", "Cross-foot pair", "Download SVG", "Copy share link",
+            "Rear easel leg", "Wide single easel back", "Flat parts to cut",
+            "How the selected support is used", "Which reference file do I use?",
+            "Cross-foot pair", "Download SVG", "Copy share link",
             'data-unit-button="mm"', 'data-unit-button="in"',
         ):
             self.assertIn(label, builder)

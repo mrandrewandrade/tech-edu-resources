@@ -6,6 +6,7 @@ const test = (name, fn) => { fn(); process.stdout.write(`ok - ${name}\n`); };
 
 test("0 inches are the default display unit", () => {
   assert.strictEqual(builder.defaults.unit, "in");
+  assert.strictEqual(builder.defaults.type, "wideEasel");
   assert.strictEqual(builder.displayMeasurement(builder.defaults.height, "in"), "3.25 in");
 });
 
@@ -54,5 +55,25 @@ test("9 inch export keeps the physical size", () => {
   assert.match(svg, /width="[0-9.]+in" height="[0-9.]+in"/);
   assert.match(svg, /&quot;geometryUnits&quot;:&quot;mm&quot;/);
   assert.match(svg, /&quot;displayUnit&quot;:&quot;in&quot;/);
+});
+
+test("10 wide single easel back is one large T-shaped part", () => {
+  const result = builder.validate({ ...builder.defaults, ...builder.presets.wideEasel });
+  assert.strictEqual(result.valid, true);
+  assert.strictEqual(result.parts.length, 1);
+  assert.match(result.parts[0].outline, /wide-easel-back-01/);
+  assert.match(result.parts[0].outline, /<path/);
+  assert.strictEqual(result.parts[0].holes, "");
+});
+
+test("11 wide easel guidance distinguishes cut part from complete assembly", () => {
+  const info = builder.assemblyInfo({ ...builder.defaults, type: "wideEasel" });
+  assert.match(info.name, /Wide single easel back/);
+  assert.match(info.add, /front plaque/);
+  assert.match(info.add, /stop or tether/);
+  const diagram = builder.buildAssemblyPreview({ ...builder.defaults, type: "wideEasel" });
+  assert.match(diagram, /BACK VIEW/);
+  assert.match(diagram, /SIDE VIEW/);
+  assert.match(diagram, /WIDE REAR SUPPORT/);
 });
 
