@@ -524,7 +524,11 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_plate_builder_and_calibration_workflow_are_connected(self) -> None:
         builder = self.read("design-fabrication/tools/plate-builder/index.qmd")
-        for label in ("Rectangle", "Rounded rectangle", "Circle", "Ring", "Staggered grid", "Radial", "Perimeter", "Download SVG", "Copy share link"):
+        for label in (
+            "Rectangle", "Rounded rectangle", "Circle", "Ring", "Staggered grid", "Radial", "Perimeter",
+            "Outer diameter", "Ring wall thickness", "Finished hole diameter", "Circle-of-centres radius",
+            "Download cut SVG", "Download settings JSON", "Copy share link", "What the downloads contain",
+        ):
             self.assertIn(label, builder)
         script = self.read("assets/plate-builder.js")
         for group in ("CUT_OUTER", "CUT_HOLES", "GUIDES"):
