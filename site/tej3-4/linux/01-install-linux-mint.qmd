@@ -1,0 +1,38 @@
+---
+title: "Install and Verify Linux Mint"
+description: "A standalone installation and classroom-computer commissioning procedure."
+sidebar: tej
+toc: true
+categories: [Linux Mint, Linux, installation, hardware]
+---
+
+**Goal:** restore an approved computer so another student can use it reliably. This module works independently of later SSH or GitHub lessons.
+
+## Before installing
+
+1. Record the computer's ID, model, RAM, disk capacity, known problems and the operating system currently installed.
+2. Obtain the teacher-approved Linux image and bootable USB. Use [Linux Mint](https://linuxmint.com/download.php), preferably its Xfce edition for modest hardware when appropriate. Xubuntu or another approved lightweight system may be substituted. Do not invent a generic Apple boot key sequence: follow the particular model's boot procedure.
+3. Use a **live USB session first**. Check keyboard, mouse/pointer visibility, display, Ethernet/Wi-Fi, browser, sound and that the target drive is detected.
+4. **Stop at the erase/partition choice.** Show the teacher the exact target disk and confirm that files have been preserved and this device is approved for erasure. Never erase a borrowed or personal device without explicit approval.
+
+## Install and commission
+
+After approval, run the installer and follow the chosen distribution's current instructions. Use teacher-specified language, keyboard, user/account and update settings. At restart, remove installation media when prompted.
+
+### Ready for TAS checklist
+
+- [ ] Machine boots to the installed system after a full restart.
+- [ ] Student can log in using the approved account.
+- [ ] Display and pointer remain visible; keyboard and mouse work.
+- [ ] A web browser opens and the approved network works.
+- [ ] Sound, USB ports and storage work where required.
+- [ ] Device ID, installed OS/version, missing features and last test date are recorded.
+- [ ] Teacher accepts the machine for TAS.
+
+Do not delay handing over a reliable first batch because other computers still have unresolved repairs.
+
+## Student record
+
+Record: assigned device, original fault, installation decisions requiring approval, checks passed/failed, what you fixed and **what I learned**.
+
+[Next independent module: Linux terminal](02-terminal-basics.qmd) | [Existing classroom CS06 commissioning notes](../computer-systems/cs06-linux-mint.qmd).
