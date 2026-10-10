@@ -61,16 +61,33 @@ class NotesRefactorTests(unittest.TestCase):
     def test_design_process_reuses_the_class_deck_and_videos(self) -> None:
         process = self.read("design-fabrication/design-process/index.qmd")
         for text in (
-            "Situation",
-            "N: Needs",
-            "I: Inquiry",
+            "Situation: understand what is happening",
+            "N: Needs and Necessities",
+            "I: Investigate and Inquire",
             "C: Create and Communicate",
             "E: Evaluate",
+            "Repeat the cycle",
             "1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ",
+            "pageid=p3",
+            "pageid=p4",
+            "pageid=p5",
+            "pageid=p6",
+            "pageid=p7",
+            "pageid=p9",
+            "19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo",
+            "1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho",
+            "1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs",
+            "1F_7NWcW4Bzd-PE7BdLssdBxeT-49clS92381QXjW8gw",
+            "173eivGi-7of6WWqpPsK81p4Z2Q6_3fIiW5ffjRI6jRQ",
+            "1QWY7ss3aY5wHh4ETOcSDGZxgpkrrIXcCYnWlXNv1lxo",
+            "1O_j4gcsUT0ELFpgJk3GiyG6B1l5brKPko-6lO8HQPfk",
+            "1Sai4_cQGkNudnAsLRYuwec6D-B-U4BqA8CCk0Nyo0CA",
             "Vcma79mVAYw",
             "3wRWN3_u17k",
         ):
             self.assertIn(text, process)
+        self.assertNotIn("pageid=p2", process)
+        self.assertNotIn("Where we are today", process)
 
     def test_old_linux_urls_are_redirects_to_number_free_pages(self) -> None:
         expectations = {
