@@ -14,6 +14,10 @@ execute:
 
 **Work in progress.** These notes are intentionally lean. They record what we have taught so far and are a starting point for student improvements.
 
+::: {.callout-tip title="Current classroom pathway: build on real computers"}
+Start with the [standalone Linux, networking, GitHub Pages, hardware sensors, curve fitting and Raspberry Pi modules](linux/index.qmd). The modules can be combined in different projects without duplicating instructions. During regular weeks, Monday is a concept introduction, Tuesday is required circuit-work practice, and Wednesday through Friday are computer/laptop project days. Deeper hands-on labs are in the separate [Engineering Preparation Track practical labs](engineering-preparation-track/labs/index.qmd). Weeks may compress for holidays and urgent TAS computer readiness.
+:::
+
 ::: {.tej-roadmap-cta}
 ## Curriculum Roadmap
 
@@ -45,7 +49,7 @@ Complete intended progression:
 6. [Digital Logic and Stable Inputs](03-digital-logic-inputs/index.qmd)
 7. [Fabrication and PCB Workflow](curriculum/index.qmd#unit-7)
 8. [Basic Computer Systems](computer-systems/index.qmd)
-9. [Linux and Operating Systems](curriculum/index.qmd#unit-9)
+9. [Linux, Networking, GitHub and Data](linux/index.qmd)
 10. [Programming Fundamentals](curriculum/index.qmd#unit-10)
 11. [Microcontrollers and Physical Computing](04-microcontrollers/index.qmd)
 12. [Networking and Systems Administration](curriculum/index.qmd#unit-12)
