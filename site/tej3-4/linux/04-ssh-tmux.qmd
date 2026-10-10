@@ -1,0 +1,52 @@
+---
+title: "SSH, tmux and Secure File Transfer"
+description: "Connect to permitted Linux machines, keep sessions running and copy files securely."
+sidebar: tej
+toc: true
+categories: [Linux, SSH, tmux, networking, remote access]
+---
+
+**Goal:** manage a permitted Linux computer remotely and recover a terminal session after disconnecting.
+
+## Before connecting
+
+A teacher designates the SSH server and accounts. Peer-to-peer traffic on school networks may be blocked. Use an approved isolated network or **localhost** on a single lab computer when required. Do not expose SSH to the public Internet or share credentials.
+
+## SSH workflow
+
+```bash
+ssh student@<teacher-approved-host>
+hostname
+whoami
+exit
+```
+
+Ask: which command ran on your computer and which on the remote computer? Explain why you verify the SSH host key the first time you connect, rather than blindly accepting an unexpected changed key.
+
+## Keep a session with tmux
+
+After `tmux` is installed on the permitted computer:
+
+```bash
+tmux new -s tej
+# Inside tmux run a safe long-lived teacher-approved command.
+# Press Ctrl+B, then D to detach.
+tmux list-sessions
+tmux attach -t tej
+```
+
+In a real remote test, detach, disconnect the SSH client, reconnect and attach again. Contrast a session with an ordinary remote shell that closes when the connection ends.
+
+## Transfer a test file
+
+```bash
+scp ~/tej-practice/notes.txt student@<teacher-approved-host>:~/
+```
+
+Use a permitted test file and accounts only. Understand the colon and destination home path.
+
+## Evidence
+
+Demonstrate a secure connection, tmux detach/attach and retrieval of the test file. Save a short troubleshooting note.
+
+[Previous: networking](03-networking.qmd) | [Next: Git and GitHub Pages](05-git-github-pages.qmd).
