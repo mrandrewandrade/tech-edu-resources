@@ -1,0 +1,46 @@
+---
+title: "Linux, Networking, GitHub and Data: Reusable TEJ Lessons"
+description: "Small, independent computing lessons that can be combined into different classroom projects."
+sidebar: tej
+toc: true
+categories: [Linux, TEJ, GitHub, networking, projects]
+---
+
+These are **reusable lessons**, not one giant workstation worksheet. Choose the relevant lesson for a computer installation, a laptop networking exercise, a Raspberry Pi project or a longer performance investigation. You may revisit any module without repeating the others.
+
+## Regular weekly rhythm
+
+| Class day | Regular TEJ learning |
+|---|---|
+| Monday | Present a concept, show a short worked example and connect it to computing |
+| Tuesday | Assign and support GUESS circuit calculations and practice |
+| Wednesday to Friday | Work on the computer implementation, test, troubleshoot, save evidence and update the portfolio |
+
+Weeks with holidays or urgent classroom computer recovery may be compressed. Everyone completes the circuit practice, while **deeper hands-on labs** are in the separate [Engineering Preparation Track labs](../engineering-preparation-track/labs/index.qmd).
+
+## Independent reusable modules
+
+1. [Install and verify Linux Mint](01-install-linux-mint.qmd): boot media, approved disk choice, desktop readiness.
+2. [Linux terminal and safe administration](02-terminal-basics.qmd): files, processes, package tools and documentation.
+3. [Networking fundamentals and diagnosis](03-networking.qmd): local address, gateway, DNS, DHCP and safe tests.
+4. [SSH, tmux and file transfer](04-ssh-tmux.qmd): manage a permitted remote machine.
+5. [Git, GitHub and GitHub Pages](05-git-github-pages.qmd): version control and a published technical portfolio.
+6. [Built-in Linux sensors and CSV logging](06-linux-hardware-sensors.qmd): real hardware readings and limitations.
+7. [Gaming and repeatable performance investigation](07-performance-data.qmd): a fair test that produces data.
+8. [Python functions and curve fitting](08-python-functions.qmd): identify a candidate function and test it.
+9. [Publish a technical blog post](09-technical-blog.qmd): evidence and conclusions on GitHub Pages.
+10. [Raspberry Pi and simulation options](10-raspberry-pi.qmd): apply Linux, networking and basic GPIO.
+
+## Combine modules by implementation
+
+**TAS computer recovery:** Linux installation + terminal basics + simple hardware inventory.
+
+**TEJ core workstation investigation:** Linux installation + terminal + networking + SSH/tmux + GitHub Pages + sensors + gaming + curve fitting + blog.
+
+**Raspberry Pi monitor:** Linux/SSH refresher + GPIO lesson + sensors + GitHub documentation, with a circuit simulator where suitable.
+
+**Engineering extension:** use the same core modules and select optional deeper [circuit, hardware, storage and measurement labs](../engineering-preparation-track/labs/index.qmd).
+
+## Required documentation
+
+For each completed implementation, save a brief record: **goal, important commands, tests/results, one problem or change, and what I learned**. Add selected projects to the same GitHub Pages portfolio. Never publish student identities, passwords, private network information or school-managed device credentials.
