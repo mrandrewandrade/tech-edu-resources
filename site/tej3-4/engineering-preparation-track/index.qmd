@@ -26,12 +26,12 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 8. [Equivalent circuits and optimization](#equivalent-circuits-and-optimization)
 9. [Material and energy balances](#material-and-energy-balances)
 10. [Transient systems](#transient-systems)
-11. [Sensors and measurement](#sensors-and-measurement)
-12. [Curve fitting, regression, and machine learning](#curve-fitting-regression-and-machine-learning)
-13. [Motors and electromechanical systems](#motors-and-electromechanical-systems)
-14. [Boolean logic, algorithms, and state machines](#boolean-logic-algorithms-and-state-machines)
+11. [Boolean logic, algorithms, and state machines](#boolean-logic-algorithms-and-state-machines)
+12. [Number systems and digital representation](#number-systems-and-digital-representation)
+13. [Sensors and measurement](#sensors-and-measurement)
+14. [Motors and electromechanical systems](#motors-and-electromechanical-systems)
 15. [Sensor, logic, and actuator project](#sensor-logic-and-actuator-project)
-16. [Number systems and digital representation](#number-systems-and-digital-representation)
+16. [Curve fitting, regression, and machine learning](#curve-fitting-regression-and-machine-learning)
 17. [Operational amplifiers and calculus](#operational-amplifiers-and-calculus)
 18. [Feedback and control](#feedback-and-control)
 19. [Engineering design project](#engineering-design-project)
@@ -124,13 +124,45 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **Used in university:** Differential equations, circuits, heat transfer, process dynamics, and control. [[1, Ch. 22]](../../references.qmd#ref-grob2016)
 
+## Boolean logic, algorithms, and state machines
+
+**I will be able to** interpret switches and digital sensor inputs as binary states and use logic gates, truth tables, Boolean expressions, algorithms, state diagrams, and test cases.
+
+**This is useful because I can** turn physical on-or-off inputs into clear decisions that can be tested.
+
+**Used in university:** Digital logic, programming, computer architecture, embedded systems, and control.
+
+## Number systems and digital representation
+
+**I will be able to** use binary, decimal, hexadecimal, signed and unsigned integers, two's complement, fixed-point, floating-point, analog-to-digital converter codes, pulse-width-modulation duty cycles, range, resolution, and overflow.
+
+**This is useful because I can** explain how a computer stores a switch state, represents a sensor reading, and commands a variable output.
+
+**Used in university:** Programming, computer engineering, embedded systems, numerical methods, and digital signal processing.
+
 ## Sensors and measurement
 
-**I will be able to** select and calibrate sensors and report range, sensitivity, resolution, accuracy, repeatability, error, and uncertainty.
+**I will be able to** connect pull-up and pull-down switch inputs, read digital sensors, convert analog sensor signals with an analog-to-digital converter, use pulse-width modulation for controlled outputs, calibrate measurements, and report range, sensitivity, resolution, accuracy, repeatability, error, and uncertainty.
 
-**This is useful because I can** decide whether measured data is trustworthy.
+**This is useful because I can** move from a simple on-or-off input to a measured value and a controlled output while deciding whether the data is trustworthy.
 
-**Used in university:** Engineering laboratories, instrumentation, experiments, robotics, and process control. [[1, Ch. 8]](../../references.qmd#ref-grob2016)
+**Used in university:** Engineering laboratories, instrumentation, embedded systems, robotics, experiments, and process control. [[1, Ch. 8]](../../references.qmd#ref-grob2016)
+
+## Motors and electromechanical systems
+
+**I will be able to** calculate force, torque, speed, electrical input power, mechanical output power, efficiency, and operating limits.
+
+**This is useful because I can** connect circuit behaviour and pulse-width-modulated control to useful motion.
+
+**Used in university:** Mechanical, electrical, mechatronics, robotics, and systems engineering. [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
+
+## Sensor, logic, and actuator project
+
+**I will be able to** combine digital or analog sensor inputs, thresholds, Boolean logic, pulse-width modulation, and a protected driver circuit to control a motor, fan, relay, alarm, or indicator.
+
+**This is useful because I can** build a complete system that senses, decides, and acts safely.
+
+**Used in university:** Mechatronics, embedded systems, robotics, automation, and design projects.
 
 ## Curve fitting, regression, and machine learning
 
@@ -139,38 +171,6 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 **This is useful because I can** find a useful pattern without assuming the first model is correct.
 
 **Used in university:** Data analysis, numerical methods, system identification, experiments, and introductory machine learning. [[28, Chs. 17, 20]](../../references.qmd#ref-chapra2010)
-
-## Motors and electromechanical systems
-
-**I will be able to** calculate force, torque, speed, electrical input power, mechanical output power, efficiency, and operating limits.
-
-**This is useful because I can** connect circuit behaviour to useful motion.
-
-**Used in university:** Mechanical, electrical, mechatronics, robotics, and systems engineering. [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
-
-## Boolean logic, algorithms, and state machines
-
-**I will be able to** use logic gates, truth tables, Boolean expressions, algorithms, state diagrams, and test cases.
-
-**This is useful because I can** turn clear rules into a system that can be tested.
-
-**Used in university:** Digital logic, programming, computer architecture, embedded systems, and control.
-
-## Sensor, logic, and actuator project
-
-**I will be able to** combine sensor thresholds, Boolean logic, and a protected driver circuit to control a motor, fan, relay, alarm, or indicator.
-
-**This is useful because I can** build a complete system that senses, decides, and acts safely.
-
-**Used in university:** Mechatronics, embedded systems, robotics, automation, and design projects.
-
-## Number systems and digital representation
-
-**I will be able to** use binary, decimal, hexadecimal, signed and unsigned integers, two's complement, fixed-point, floating-point, range, resolution, and overflow.
-
-**This is useful because I can** choose how a computer stores a value and predict what can go wrong.
-
-**Used in university:** Programming, computer engineering, embedded systems, numerical methods, and digital signal processing.
 
 ## Operational amplifiers and calculus
 
