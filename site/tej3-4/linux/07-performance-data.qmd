@@ -1,0 +1,45 @@
+---
+title: "Linux Gaming and Performance Investigation"
+description: "Explore an approved game, then gather comparable performance, temperature and power data."
+sidebar: tej
+toc: true
+categories: [Linux, games, performance, benchmark, data]
+---
+
+**Driving question:** how does extra workload or a setting change affect performance, CPU temperature and measured energy use?
+
+## First, explore
+
+Run an approved lightweight game and record the experience: graphics settings, perceived smoothness, resolution, controls and whether the computer was responsive. This is the engagement phase, not yet a controlled experiment.
+
+## Then design a repeatable test
+
+Choose a measurable outcome, such as a benchmark completion time, numerical throughput or available frame rate from a reproducible scene. Define the test duration, settings, machine model, room conditions and sampling interval.
+
+- Run an idle baseline and at least three workload levels or comparable settings.
+- Repeat each condition when possible.
+- Record performance and CPU temperature from a **validated** sensor.
+- If energy/power data are supported, label exactly what was measured: CPU package, a sensor-defined subsystem or entire wall outlet.
+- Leave watts unavailable if you only have CPU utilization.
+- Stop immediately for abnormal heat, failed cooling or other unsafe machine behavior.
+
+A game can be an initial motivator. A controlled benchmark or fixed workload often gives more consistent numerical comparisons.
+
+## Sample recording structure
+
+| Condition | Trial | Temperature (C) | Performance measure | Power (W), if valid |
+|---|---:|---:|---:|---:|
+| Idle | 1 | Record | Not applicable | Optional |
+| Low | 1 | Record | Record | Optional |
+| Medium | 1 | Record | Record | Optional |
+| High | 1 | Record | Record | Optional |
+
+Do not insert invented example measurements into final results.
+
+## Questions to answer
+
+What increased? What saturated? Did the temperature stabilize or continue rising? Are two computers fairly comparable? Is one configuration a reasonable compromise between performance and heat/energy?
+
+**Evidence:** settings, raw CSV, repeat runs, one graph and a sentence about test limitations.
+
+[Previous: Linux sensors](06-linux-hardware-sensors.qmd) | [Next: Python functions and curve fitting](08-python-functions.qmd).
