@@ -1,0 +1,34 @@
+---
+title: "Raspberry Pi: Linux, GPIO and Simulation"
+description: "Reuse Linux and networking skills to build a safe low-voltage Raspberry Pi monitor."
+sidebar: tej
+toc: true
+categories: [Raspberry Pi, Linux, GPIO, simulation, Python]
+---
+
+**Goal:** use the same Linux, SSH and Git skills on a Raspberry Pi, then build an elementary 3.3 V digital input/output circuit.
+
+## Required Raspberry Pi mini-project
+
+1. On a teacher-approved Pi, image Raspberry Pi OS, verify login, connect to an approved network and test SSH.
+2. Review the GPIO pinout. **GPIO uses 3.3 V logic.** Never put 5 V directly into a GPIO input, connect a motor directly or experiment with mains electricity.
+3. On an unpowered breadboard circuit, wire an LED through a suitable current-limiting resistor to a permitted GPIO and a button to another GPIO with an appropriate pull-up or pull-down arrangement.
+4. Use [GPIO Zero](https://gpiozero.readthedocs.io/) in Python to blink the LED and read button state.
+5. Read and log Pi CPU temperature and timestamp to CSV with an approved Python script, then use a defined condition to switch an indicator LED. The button may mark events in the log.
+6. Commit working code, a wiring diagram and a short results paragraph to your GitHub portfolio.
+
+For physical circuit work, require a teacher wiring check before powering.
+
+## Simulate first
+
+- [Wokwi Raspberry Pi Pico simulator](https://wokwi.com/pi-pico) is an accessible place to build and test simple LEDs, buttons and MicroPython code. **Pico is a microcontroller**, not a full Raspberry Pi running Linux. Code written for MicroPython on the Pico is not identical to full-Pi GPIO Zero code.
+- [PiForge](https://getpiforge.com/) advertises a browser-based Pi-style virtual computer and GPIO environment. This is newer software: test compatibility, access, privacy and availability on school machines before using it for assessment.
+- [Velxio Pi 4 simulator](https://velxio.dev/raspberry-pi-4-simulator/) offers Pi 4-style GPIO/Python emulation but its free access is limited. Confirm access before relying on it in class.
+
+The retired Microsoft Raspberry Pi web simulator is not recommended as the primary classroom option. None of these should replace testing code and wiring on real hardware when available.
+
+## Extension choices
+
+Add an approved environmental sensor, compare thresholds, graph data, show a status page locally or build a simple enclosure. Any hardware-measurement challenge requiring additional equipment belongs in the [Engineering Preparation Track labs](../engineering-preparation-track/labs/index.qmd).
+
+[Linux command line](02-terminal-basics.qmd) | [Networking](03-networking.qmd) | [Portfolio](05-git-github-pages.qmd).
