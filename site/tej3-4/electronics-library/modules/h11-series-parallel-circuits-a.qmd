@@ -1,0 +1,90 @@
+---
+title: "H11 Series-Parallel Circuits A"
+description: "Identify, redraw, reduce, solve, expand, and check series-parallel resistor networks."
+sidebar: tej
+page-layout: full
+toc: true
+execute: {enabled: false}
+---
+
+<span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span>
+
+## What students learn
+
+Students identify true series and parallel groups, redraw a mixed circuit, reduce it step by step, solve the equivalent circuit, return to the original branches, and check voltage, current, resistance, and power.
+
+## Why it matters
+
+A reduction plan turns a complicated circuit into smaller problems that can be checked.
+
+## Learning route
+
+1. Show a complete low-voltage system with one series component and two parallel loads.
+2. Watch the conceptual video and identify where current splits.
+3. Move from the physical build to the canonical schematic.
+4. Trace nodes and identify one reducible group.
+5. Redraw after every reduction.
+6. Solve one guided GUESS example.
+7. Enter each calculator step on a separate line.
+8. Complete five progressively harder questions and submit one photo for each.
+9. Verify the method with an adaptation of Grob Experiment 6-1.
+
+## Student resources
+
+::: {.tej-download-grid}
+::: {.tej-download-card}
+### Teaching deck
+
+[Open Series-Parallel Circuits A slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit){target="_blank"}
+
+The deck moves from the complete system to reduction, a guided example, calculator entry, and the five assigned questions.
+:::
+
+::: {.tej-download-card}
+### Student handout
+
+[Open the five-question student handout](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/edit){target="_blank"}
+
+The Google Doc has exactly five questions, canonical schematics, formula support, and one labelled photo space for each question.
+:::
+
+::: {.tej-download-card}
+### Formula support
+
+[Open the electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit){target="_blank"}
+
+Use general equations before substituting numbered values.
+:::
+
+::: {.tej-download-card}
+### Videos
+
+[ElectroBOOM 101: circuits, series, and parallel](https://www.youtube.com/watch?v=AMXWm_bnsTE){target="_blank"}<br>
+[The Organic Chemistry Tutor: series and parallel circuits](https://www.youtube.com/watch?v=wejz5s31Cts){target="_blank"}<br>
+[Khan Academy: circuits, part 2](https://www.khanacademy.org/science/ap-physics-1/ap-circuits-topic/ap-circuits-resistance/v/circuits-part-2){target="_blank"}
+:::
+:::
+
+## Experiment 6-1 adaptation
+
+Use a protected current-limited direct-current supply, breadboard, fused digital multimeter, leads, jumpers, and teacher-selected resistor values. Students submit reduction drawings, calculated and measured resistance, voltage and current checks, percent difference, and one clear circuit photo.
+
+Power must be off for resistance measurements. The ammeter must be connected in series. Do not create a deliberate hard short.
+
+[Open the Grob Experiments Manual](https://drive.google.com/file/d/15KJmGLXvTh0oivaqnV0SvWB7N64V1soT/view){target="_blank"}
+
+Experiment 6-2 is a useful network extension after the core investigation.
+
+## Teacher resources
+
+<span class="tej-badge restricted">Restricted</span>
+
+[Open the complete teacher answer key](https://docs.google.com/document/d/104YXtYrEaUFHAlsVYM46lGfbuelJhpcn0krpYsimVDA/edit){target="_blank"}<br>
+[Open the Grob textbook folder](https://drive.google.com/drive/folders/1Q_uSqf8qoEsLPAmbxNJ1BLaKgJ1ga7x1){target="_blank"}<br>
+[Open the Grob Problems Manual](https://drive.google.com/file/d/14tvslnLyvOMci-5YBw_jHbHw_jxmsTfQ/view){target="_blank"}
+
+The answer key is private and is not linked from the student-facing cards.
+
+## Scope boundary
+
+This package covers reduction and complete analysis. A later package will cover random unknowns, opens, shorts, and troubleshooting. Kirchhoff's laws are a separate unit based on Grob Chapter 9.

@@ -26,6 +26,8 @@ project:
     - "design-fabrication/tools/tool-organizer-gallery/**/*.qmd"
     - "tej3-4/index.qmd"
     - "tej3-4/circuits/**/*.qmd"
+    - "tej3-4/engineering-preparation-track/**/*.qmd"
+    - "tej3-4/electronics-library/**/*.qmd"
     - "tej3-4/linux-operating-systems/**/*.qmd"
     - "tej3-4/09-linux-operating-systems/**/*.qmd"
   pre-render:
@@ -137,6 +139,10 @@ website:
       contents:
         - text: "Course Home"
           href: tej3-4/index.qmd
+        - text: "Engineering Preparation Track"
+          href: tej3-4/engineering-preparation-track/index.qmd
+        - text: "Electronics Lesson Library"
+          href: tej3-4/electronics-library/index.qmd
         - section: "Circuits"
           href: tej3-4/circuits/index.qmd
           contents:

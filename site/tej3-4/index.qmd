@@ -15,7 +15,7 @@ execute:
 These notes are short classroom references. Use the linked slides, questions, handouts, and worked answers for the complete lesson.
 
 ::: {.callout-note title="Work in progress"}
-Only units with usable student material are listed here. Earlier draft notes are preserved on the `archive/notes-before-refactor-2026-10-10` branch while they are reviewed.
+Completed classroom materials are linked beside a concise implementation plan for the remaining engineering-preparation units. Earlier draft notes are preserved on the `archive/notes-before-refactor-2026-10-10` branch while they are reviewed.
 :::
 
 ## Available units
@@ -35,5 +35,13 @@ Significant figures, scientific and engineering notation, metric prefixes, Ohm's
 Choose a suitable Linux distribution, prepare for installation, install Linux Mint safely, and continue into basic networking.
 
 [Open Linux, Operating Systems and Basic Networking](linux-operating-systems/index.qmd)
+:::
+
+::: {.tej-download-card}
+### Engineering preparation track
+
+A progressive implementation plan for circuit analysis, linear algebra, energy balances, sensors, modelling, digital systems, operational amplifiers, and control.
+
+[Open the Engineering Preparation Track](engineering-preparation-track/index.qmd)
 :::
 :::
