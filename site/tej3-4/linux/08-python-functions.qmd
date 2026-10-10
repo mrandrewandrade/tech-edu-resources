@@ -1,0 +1,65 @@
+---
+title: "Python Functions, Fitting and the Practical Elbow"
+description: "Identify a function from data, fit it and explain a defensible operating point."
+sidebar: tej
+toc: true
+categories: [Python, curve fitting, square root, regression, data]
+---
+
+**Goal:** move from a scatter plot to a useful function, without pretending that all computers follow one universal curve.
+
+## Identify the shape first
+
+Plot the independent and dependent variables with axis labels and units. Possible functions include:
+
+- **Linear:** `y = a + b*x`, approximately constant gain.
+- **Square root:** `y = a + b*sqrt(x)`, a possible diminishing-returns shape.
+- **Logarithmic:** `y = a + b*log(x)`, another diminishing-returns candidate for `x > 0`.
+- **Saturating exponential:** `y = a + b*(1-exp(-x/tau))`, a possible plateau.
+
+For a computer experiment, a performance-versus-valid-power graph might show diminishing returns. A CPU temperature-versus-time graph after a load step may instead resemble a thermal rise toward equilibrium. **Choose based on the variables, physical explanation and observations**, not because the teacher expects a square root.
+
+## Minimal Python curve-fitting example
+
+Use a real CSV with two numerical columns. A teacher-provided clean dataset is fine for learning before real sensor data are ready.
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+df = pd.read_csv("measurements.csv").dropna(subset=["x", "y"])
+x = df["x"].to_numpy(dtype=float)
+y = df["y"].to_numpy(dtype=float)
+
+def sqrt_model(x, a, b):
+    return a + b * np.sqrt(x)
+
+if np.any(x < 0) or len(x) < 3:
+    raise ValueError("Need at least 3 values with x >= 0")
+
+params, _ = curve_fit(sqrt_model, x, y)
+predicted = sqrt_model(x, *params)
+
+plt.scatter(x, y, label="Measured")
+order = np.argsort(x)
+plt.plot(x[order], predicted[order], label="Fitted square-root model")
+plt.xlabel("x (include real units)")
+plt.ylabel("y (include real units)")
+plt.legend()
+plt.tight_layout()
+plt.show()
+print("Parameters:", params)
+print("Residuals:", y - predicted)
+```
+
+The code is a candidate example, not proof that the chosen function is best. If the data do not support square root, try a linear or saturating model and compare residuals with a similar level of complexity. Small samples and noisy measurements limit conclusions.
+
+## Define the 'elbow'
+
+A smooth square-root curve does not have one universal mathematical elbow. Decide what counts as worthwhile, for example a minimum acceptable performance, a maximum allowed temperature or a marginal-gain threshold. Compare candidate operating points and explain the chosen rule. If there is no meaningful elbow, say so.
+
+**Evidence:** scatter plot, candidate function, fitted parameters, residual check, operating-point rule and limitations.
+
+[Next: technical blog](09-technical-blog.qmd) | [Engineering regression extension](../engineering-preparation-track/index.qmd#chapter-9-curve-fitting-regression-and-machine-learning).
