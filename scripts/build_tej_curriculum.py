@@ -73,8 +73,8 @@ ROADMAP_TITLES = {
 ROADMAP_SUBSECTIONS = {
     "0": "Safety; design process; documentation; privacy and attribution",
     "1": "Number systems; units; significant figures; engineering notation; calculator workflow",
-    "2": "Charge; voltage; current; resistance; power and energy; AC and DC",
-    "3": "Ohm's law; series and parallel circuits; Kirchhoff's laws; dividers; troubleshooting",
+    "2": "Charge; voltage; current; resistance; sources and loads; AC and DC",
+    "3": "Ohm's law; series circuits; parallel circuits; mixed networks; Kirchhoff's laws; linear systems; work, energy, power, and efficiency; dividers; troubleshooting",
     "4": "Breadboards; schematics; simulation; multimeter use; measurement uncertainty",
     "5": "Sensors; batteries; capacitors; diodes; transistors; timers; motors and relays",
     "6": "Logic levels; pull-ups and pull-downs; debouncing; logic gates; truth tables; state",
@@ -93,8 +93,8 @@ ROADMAP_SUBSECTIONS = {
 ROADMAP_LEARNING = {
     "0": "Work safely, follow a design process, and document decisions and sources.",
     "1": "Use number systems, units, engineering notation, estimates, and a scientific calculator.",
-    "2": "Explain and calculate electrical quantities, power, energy, sources, and loads.",
-    "3": "Analyze and verify series, parallel, and mixed direct-current circuits.",
+    "2": "Explain and calculate charge, voltage, current, resistance, sources, and loads.",
+    "3": "Analyze direct-current networks, solve their equations, and connect electrical energy to useful work.",
     "4": "Build readable circuits and compare calculated, simulated, and measured results.",
     "5": "Select and apply common components in useful low-voltage circuits.",
     "6": "Create stable digital inputs and analyze combinational and sequential logic.",
@@ -113,8 +113,8 @@ ROADMAP_LEARNING = {
 ROADMAP_WHY = {
     "0": "Safe, documented work is the foundation for every build, investigation, and engineering decision.",
     "1": "Units, scale, estimation, and calculator fluency make technical results understandable and trustworthy.",
-    "2": "These quantities explain how electrical systems transfer energy and why components behave as they do.",
-    "3": "Circuit analysis turns schematics into predictions that can be checked by simulation and measurement.",
+    "2": "These quantities explain how sources, conductors, and loads behave in a complete circuit.",
+    "3": "Circuit analysis predicts electrical behaviour; an energy-conversion lab shows what that behaviour accomplishes in a real device.",
     "4": "Readable schematics, careful construction, and correct measurement make troubleshooting possible.",
     "5": "Component knowledge lets students select, connect, protect, and test useful electronic circuits.",
     "6": "Stable inputs and Boolean logic connect physical switches and sensors to dependable digital decisions.",
@@ -133,8 +133,8 @@ ROADMAP_WHY = {
 ROADMAP_OUTCOMES = {
     "0": "Work safely, document decisions, cite sources, and keep a usable design record.",
     "1": "Convert technical quantities, use engineering notation, estimate results, and present calculations clearly.",
-    "2": "Explain and calculate voltage, current, resistance, power, energy, opens, shorts, and source behaviour.",
-    "3": "Solve and verify series, parallel, and mixed circuits and diagnose common faults.",
+    "2": "Explain and calculate charge, voltage, current, resistance, opens, shorts, and source behaviour.",
+    "3": "Solve and verify series, parallel, and mixed networks, use linear equations, and compare electrical energy with mechanical work.",
     "4": "Build from a schematic, measure safely, compare predicted and measured values, and locate wiring errors.",
     "5": "Design and test sensor, timing, switching, power-supply, and actuator-interface circuits.",
     "6": "Build stable switch inputs, complete truth tables, analyze logic, and create a small digital system.",

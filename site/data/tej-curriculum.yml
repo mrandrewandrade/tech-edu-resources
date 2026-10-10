@@ -228,7 +228,7 @@ units:
         public_notes_route: "tej3-4/01-number-systems/06-scientific-calculator.qmd"
 
   - unit_id: '2'
-    title: Electricity, Charge, Voltage, Current, Resistance, Power, and Energy
+    title: Electricity, Charge, Voltage, Current, and Resistance
     short_description: Develop a practical model of electrical quantities, sources, loads, AC, and DC.
     status: Published
     pathway: core
@@ -279,10 +279,6 @@ units:
         title: "Resistance, closed paths, opens, and shorts"
         short_description: "Explain opposition to current and identify safe and unsafe circuit states."
         public_notes_route: "tej3-4/02-basic-electronics/02-circuits-opens-shorts.qmd"
-      - module_id: "H08"
-        title: "Power and energy"
-        short_description: "Calculate electrical power and energy and distinguish ratings from actual use."
-        public_notes_route: "tej3-4/02-basic-electronics/04-power-energy.qmd"
       - module_id: "H03"
         title: "AC and DC"
         short_description: "Compare polarity, direction, waveform, frequency, common sources, and safe classroom measurements."
@@ -346,6 +342,12 @@ units:
       - module_id: "H11"
         title: "Series-parallel circuits with KCL and KVL"
         short_description: "Reduce mixed networks and use Kirchhoff's laws to solve and check them."
+      - module_id: "LA01"
+        title: "Linear equations for circuit networks"
+        short_description: "Turn node and loop equations into a system and solve several unknown voltages or currents together."
+        physical_lab_requirement: Not required
+        student_deliverables: [GUESS solution, system of equations, matrix or elimination check]
+        assessment_evidence: [correct circuit equations, solution method, units, and circuit interpretation]
       - module_id: "H12"
         title: "Voltage dividers, current dividers, and equivalent resistance"
         short_description: "Design and analyze divider networks and recognize loading effects."
@@ -354,6 +356,19 @@ units:
         short_description: "Model a network at two terminals as an advanced bridge."
         pathway: "extension"
         status: "Bonus"
+      - module_id: "H08"
+        title: "Work, energy, power, and efficiency"
+        short_description: "Compare electrical energy supplied to a motor with the useful mechanical work it completes."
+        status: "In development"
+        prerequisites: [H11, LA01]
+        physical_lab_requirement: Required
+        equipment: [protected low-voltage source, DMM, small geared motor, spool and string, known masses, metre stick, timer]
+        software: [scientific calculator]
+        student_deliverables: [measurement table, derived-unit calculations, electrical-to-mechanical energy comparison, efficiency result]
+        assessment_evidence: [correct units, measured evidence, power and energy calculations, explained losses]
+        public_notes_route: "tej3-4/02-basic-electronics/04-power-energy.qmd"
+        source_references: [GROB]
+        implementation_notes: Use a motor-lift laboratory after network analysis and linear equations; retain Grob Chapters 3, 12, and 14 as the supporting references until the revised package is built.
       - module_id: "H16"
         title: "Faults, opens, shorts, and troubleshooting"
         short_description: "Predict symptoms and use evidence to locate a fault safely."

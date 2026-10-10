@@ -17,24 +17,25 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 ## Circuit sequence
 
 1. [Engineering calculations](#engineering-calculations)
-2. [Ohm's law and power](#ohms-law-and-power)
+2. [Ohm's law](#ohms-law)
 3. [Series circuits](#series-circuits)
 4. [Parallel circuits](#parallel-circuits)
 5. [Series-parallel circuits](#series-parallel-circuits)
 6. [Kirchhoff's laws](#kirchhoffs-laws)
 7. [Linear algebra for circuits](#linear-algebra-for-circuits)
-8. [Equivalent circuits and optimization](#equivalent-circuits-and-optimization)
-9. [Material and energy balances](#material-and-energy-balances)
-10. [Transient systems](#transient-systems)
-11. [Boolean logic, algorithms, and state machines](#boolean-logic-algorithms-and-state-machines)
-12. [Number systems and digital representation](#number-systems-and-digital-representation)
-13. [Sensors and measurement](#sensors-and-measurement)
-14. [Motors and electromechanical systems](#motors-and-electromechanical-systems)
-15. [Sensor, logic, and actuator project](#sensor-logic-and-actuator-project)
-16. [Curve fitting, regression, and machine learning](#curve-fitting-regression-and-machine-learning)
-17. [Operational amplifiers and calculus](#operational-amplifiers-and-calculus)
-18. [Feedback and control](#feedback-and-control)
-19. [Engineering design project](#engineering-design-project)
+8. [Work, energy, power, and efficiency](#work-energy-power-and-efficiency)
+9. [Equivalent circuits and optimization](#equivalent-circuits-and-optimization)
+10. [Material and energy balances](#material-and-energy-balances)
+11. [Transient systems](#transient-systems)
+12. [Boolean logic, algorithms, and state machines](#boolean-logic-algorithms-and-state-machines)
+13. [Number systems and digital representation](#number-systems-and-digital-representation)
+14. [Sensors and measurement](#sensors-and-measurement)
+15. [Motors and electromechanical systems](#motors-and-electromechanical-systems)
+16. [Sensor, logic, and actuator project](#sensor-logic-and-actuator-project)
+17. [Curve fitting, regression, and machine learning](#curve-fitting-regression-and-machine-learning)
+18. [Operational amplifiers and calculus](#operational-amplifiers-and-calculus)
+19. [Feedback and control](#feedback-and-control)
+20. [Engineering design project](#engineering-design-project)
 
 ## Engineering calculations
 
@@ -44,17 +45,17 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 **Used in college or university:** Every engineering course expects correct units, notation, and documented calculations. [[1, Chs. 0–1]](../../references.qmd#ref-grob2016)
 
-## Ohm's law and power
+## Ohm's law
 
-**I will be able to** calculate voltage, current, resistance, power, and safe component limits.
+**I will be able to** calculate voltage, current, and resistance and check whether the result is physically reasonable.
 
-**This is useful because I can** predict whether a basic circuit will work safely before I build it.
+**This is useful because I can** predict the basic behaviour of a circuit before I build it.
 
-**Used in college or university:** Circuit analysis, electronics laboratories, design courses, and energy calculations. [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Circuit analysis, electronics laboratories, and design courses. [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016)
 
 ## Series circuits
 
-**I will be able to** calculate total resistance, circuit current, voltage drops, and power in a one-path circuit.
+**I will be able to** calculate total resistance, circuit current, and voltage drops in a one-path circuit.
 
 **This is useful because I can** predict and check every value in a complete series circuit.
 
@@ -64,7 +65,7 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 ## Parallel circuits
 
-**I will be able to** calculate equivalent resistance, source current, branch currents, and branch power in a parallel circuit.
+**I will be able to** calculate equivalent resistance, source current, and branch currents in a parallel circuit.
 
 **This is useful because I can** explain how several loads operate from the same source voltage.
 
@@ -99,6 +100,16 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 **This is useful because I can** solve several unknown currents or voltages at the same time.
 
 **Used in college or university:** Linear algebra, numerical methods, statics, structures, circuits, process models, and control. [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
+
+## Work, energy, power, and efficiency
+
+**I will be able to** distinguish work, energy, and power; use their derived units; and compare electrical energy input with useful mechanical work output.
+
+**This is useful because I can** estimate battery use, motor performance, operating time, losses, and whether a device is doing useful work efficiently.
+
+**Planned laboratory:** A small motor lifts a known mass through a measured height. Students measure motor voltage, current, and lift time, then compare the electrical energy supplied with the mechanical work completed and calculate input power, output power, and efficiency.
+
+**Used in college or university:** Physics, mechanics, thermodynamics, circuits, electromechanical systems, and preparation for energy balances. [[1, Chs. 3, 12, 14]](../../references.qmd#ref-grob2016)
 
 ## Equivalent circuits and optimization
 

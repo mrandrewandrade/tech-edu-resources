@@ -83,30 +83,35 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn('title: "Engineering Preparation Track"', track)
         self.assertNotIn('title: "Waterloo Engineering Track"', track)
         self.assertIn("## Circuit sequence", track)
-        self.assertEqual(track.count("**I will be able to**"), 19)
-        self.assertEqual(track.count("**This is useful because I can**"), 19)
-        self.assertEqual(track.count("**Used in college or university:**"), 19)
+        self.assertEqual(track.count("**I will be able to**"), 20)
+        self.assertEqual(track.count("**This is useful because I can**"), 20)
+        self.assertEqual(track.count("**Used in college or university:**"), 20)
         self.assertNotIn("| What students learn | Why it matters |", track)
         self.assertNotIn("<summary>What is needed</summary>", track)
         self.assertNotIn("| Equipment |", track)
         self.assertNotIn("| Consumables |", track)
         self.assertNotIn("| Teacher note |", track)
-        self.assertIn("Ohm's law and power", track)
+        self.assertIn("## Ohm's law", track)
+        self.assertNotIn("## Ohm's law and power", track)
         self.assertIn("Series circuits", track)
         self.assertIn("Parallel circuits", track)
         self.assertIn("Series-parallel circuits", track)
         self.assertIn("Kirchhoff's laws", track)
         self.assertIn("Linear algebra for circuits", track)
+        self.assertIn("Work, energy, power, and efficiency", track)
+        self.assertIn("A small motor lifts a known mass", track)
+        self.assertIn("[[1, Chs. 3, 12, 14]]", track)
         self.assertIn("Material and energy balances", track)
         self.assertIn("Sensors and measurement", track)
         self.assertIn("Curve fitting, regression, and machine learning", track)
         self.assertIn("Number systems and digital representation", track)
         self.assertIn("Sensor, logic, and actuator project", track)
         sequence = [
-            "## Engineering calculations", "## Ohm's law and power",
+            "## Engineering calculations", "## Ohm's law",
             "## Series circuits", "## Parallel circuits",
             "## Series-parallel circuits", "## Kirchhoff's laws",
-            "## Linear algebra for circuits", "## Equivalent circuits and optimization",
+            "## Linear algebra for circuits", "## Work, energy, power, and efficiency",
+            "## Equivalent circuits and optimization",
             "## Material and energy balances", "## Transient systems",
             "## Boolean logic, algorithms, and state machines",
             "## Number systems and digital representation",
@@ -223,6 +228,7 @@ class CourseContentTests(unittest.TestCase):
 
     def test_curriculum_roadmap_is_a_concise_public_course_map(self) -> None:
         roadmap = self.read("tej3-4/curriculum/index.qmd")
+        metadata = self.read("data/tej-curriculum.yml")
         config = self.read("_quarto.yml")
         self.assertIn('"tej3-4/curriculum/**/*.qmd"', config)
         self.assertEqual(roadmap.count("| What students learn | Why it matters |"), 17)
@@ -230,6 +236,9 @@ class CourseContentTests(unittest.TestCase):
         self.assertEqual(roadmap.count("**Coming out of this section, students can:**"), 17)
         self.assertIn("Use the sidebar for lessons", roadmap)
         self.assertIn("Engineering Preparation Track collaboration map", roadmap)
+        self.assertIn("work, energy, power, and efficiency", roadmap)
+        self.assertLess(metadata.index('module_id: "LA01"'), metadata.index('module_id: "H08"'))
+        self.assertIn("Use a motor-lift laboratory after network analysis and linear equations", metadata)
         self.assertNotIn("| Consumables |", roadmap)
         self.assertNotIn("| Teacher notes |", roadmap)
         self.assertNotIn("| Estimated time |", roadmap)
