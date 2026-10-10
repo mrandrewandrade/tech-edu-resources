@@ -5,7 +5,9 @@ pathway: "Main Quest"
 categories: [main quest, Linux, Xfce, installation, commissioning, storage, developing difficulty, 150 minutes, data loss risk, physical lab]
 ---
 
-**Pathway:** {{< meta pathway >}}\
+**Pathway:** {{< meta pathway >}}
+
+**New modular classroom entry:** [Standalone Linux Mint installation and readiness checklist](../linux/01-install-linux-mint.qmd). This legacy CS06 page remains as a detailed service reference. Its CS05 prerequisite applies to the hardware-service quest, not the core computer setup sequence.\
 **Prerequisite:** [CS05](cs05-post-firmware.qmd)\
 **Previous:** [CS05 POST and BIOS/UEFI](cs05-post-firmware.qmd)\
 **Next:** [CS07 RAM upgrade](cs07-ram-upgrade.qmd)
