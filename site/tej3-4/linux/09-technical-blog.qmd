@@ -1,0 +1,32 @@
+---
+title: "Publish a Technical Blog Post"
+description: "Explain a reproducible Linux or Raspberry Pi investigation with graphs and evidence."
+sidebar: tej
+toc: true
+categories: [technical writing, GitHub Pages, blog, TEJ]
+---
+
+**Goal:** publish a readable account of an experiment on your existing GitHub Pages portfolio. The result matters more than decorative page design.
+
+## Blog outline
+
+1. **Question:** what did you try to find out?
+2. **Equipment and setup:** Linux version, computer model, sensors or workload, test conditions.
+3. **Procedure:** commands, scripts, settings, number of trials and how you measured.
+4. **Data:** a small summary table and downloadable or clearly described raw CSV.
+5. **Graph/model:** correctly labeled axes, units, candidate function, fitted parameters if relevant.
+6. **Interpretation:** where gains diminished, what 'best' meant, or why no clear optimum appeared.
+7. **Limitations:** unavailable sensors, test noise, hardware differences, invalid comparisons or uncertain claims.
+8. **What I learned:** one improvement you would make in the next experiment.
+
+Use correct alt text for graphs. Do not publish credentials, network addresses, identifiable classmates or restricted school assets.
+
+## Submit
+
+- Working GitHub Pages URL with a link from the homepage.
+- Source repository containing the page and reusable scripts.
+- Plot with labeled axes and appropriate units.
+- Evidence that the procedure could be repeated by another student.
+- One clear claim supported by your own data.
+
+[Website publishing](05-git-github-pages.qmd) | [Curve fitting](08-python-functions.qmd).
