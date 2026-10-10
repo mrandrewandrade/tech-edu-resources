@@ -20,15 +20,15 @@ execute: {enabled: false}
 
 Charge does not accumulate at an ideal node:
 
-\[
+$$
 \sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}
-\]
+$$
 
 Equivalently, using one consistent sign convention:
 
-\[
+$$
 \sum_{k=1}^{n} I_k = 0
-\]
+$$
 
 An assumed current direction is allowed. A negative answer means the real direction is opposite to the arrow you selected.
 
@@ -36,9 +36,9 @@ An assumed current direction is allowed. A negative answer means the real direct
 
 The algebraic sum of voltage changes around a closed loop is zero:
 
-\[
+$$
 \sum_{k=1}^{n}\Delta V_k = 0
-\]
+$$
 
 Choose a loop direction and keep the sign convention consistent. Crossing a source from negative to positive is a rise; crossing a resistor in the direction of current is a drop.
 
@@ -50,9 +50,9 @@ Choose a loop direction and keep the sign convention consistent. Crossing a sour
 4. Write voltage-law equations around independent loops.
 5. Replace resistor voltages with Ohm's law:
 
-\[
+$$
 V_R = IR
-\]
+$$
 
 6. Solve the simultaneous equations.
 7. Substitute the answers back into the original node and loop equations.

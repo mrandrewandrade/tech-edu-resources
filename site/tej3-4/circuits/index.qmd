@@ -24,42 +24,42 @@ This is important because it enables me to predict a circuit before I build it a
 Significant figures show the precision of a measured or stated value. Keep full calculator precision and round once, at the end.
 
 **0.00420** has three significant figures.  
-\(6.23 \times 1.23 = 7.6629\), reported as **7.66**.
+$6.23 \times 1.23 = 7.6629$, reported as **7.66**.
 
 For multiplication and division, use the same number of significant figures as the least precise input. For addition and subtraction, use the least precise decimal place.
 
 ## Notation and Metric Prefixes
 
-**Scientific notation:** \(a \times 10^n\), where \(1 \le a < 10\).  
-**Engineering notation:** \(a \times 10^n\), where \(1 \le a < 1000\) and \(n\) is a multiple of three.
+**Scientific notation:** $a \times 10^n$, where $1 \le a < 10$.
+**Engineering notation:** $a \times 10^n$, where $1 \le a < 1000$ and $n$ is a multiple of three.
 
-\(27\,000 = 2.7 \times 10^4 = 27 \times 10^3 = 27\,\mathrm{k}\)  
-\(0.00047 = 4.7 \times 10^{-4} = 470 \times 10^{-6} = 470\,\mu\)
+$27\,000 = 2.7 \times 10^4 = 27 \times 10^3 = 27\,\mathrm{k}$
+$0.00047 = 4.7 \times 10^{-4} = 470 \times 10^{-6} = 470\,\mu$
 
 | Prefix | Symbol | Power |
 |---|---:|---:|
-| mega | M | \(10^6\) |
-| kilo | k | \(10^3\) |
-| base unit |  | \(10^0\) |
-| milli | m | \(10^{-3}\) |
-| micro | \(\mu\) | \(10^{-6}\) |
-| nano | n | \(10^{-9}\) |
+| mega | M | $10^6$ |
+| kilo | k | $10^3$ |
+| base unit |  | $10^0$ |
+| milli | m | $10^{-3}$ |
+| micro | $\mu$ | $10^{-6}$ |
+| nano | n | $10^{-9}$ |
 
 ## Ohm's law and power
 
 Ohm's law connects voltage, current, and resistance.
 
-\[
+$$
 V = IR \qquad I = \frac{V}{R} \qquad R = \frac{V}{I}
-\]
+$$
 
 Electrical power is the rate of energy transfer.
 
-\[
+$$
 P = VI \qquad P = I^2R \qquad P = \frac{V^2}{R}
-\]
+$$
 
-Use volts (V), amperes (A), ohms (\(\Omega\)), and watts (W). Convert prefixes before substituting, then report the final answer with the appropriate prefix and significant figures.
+Use volts (V), amperes (A), ohms ($\Omega$), and watts (W). Convert prefixes before substituting, then report the final answer with the appropriate prefix and significant figures.
 
 ## GUESS method
 

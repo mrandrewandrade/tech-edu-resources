@@ -20,47 +20,47 @@ execute: {enabled: false}
 
 Components are in parallel when both ends connect to the same two nodes. Every branch has the same voltage:
 
-\[
+$$
 V_k = V_T
-\]
+$$
 
 ## General parallel rules
 
 The source current is the sum of the branch currents:
 
-\[
+$$
 I_T = \sum_{k=1}^{n} I_k
-\]
+$$
 
 The equivalent resistance is
 
-\[
+$$
 \frac{1}{R_T} = \sum_{k=1}^{n}\frac{1}{R_k}
-\]
+$$
 
 For exactly two parallel resistors, the product-over-sum shortcut is
 
-\[
+$$
 R_T = \frac{R_aR_b}{R_a+R_b}
-\]
+$$
 
 Calculate any branch current with Ohm's law:
 
-\[
+$$
 I_k = \frac{V_T}{R_k}
-\]
+$$
 
 Total power equals the sum of the branch powers:
 
-\[
+$$
 P_T = \sum_{k=1}^{n}P_k = V_T I_T
-\]
+$$
 
 ## Check the answer
 
-\[
+$$
 \sum_{k=1}^{n} I_k \overset{?}{=} I_T
-\]
+$$
 
 The equivalent resistance must be smaller than the smallest branch resistance.
 

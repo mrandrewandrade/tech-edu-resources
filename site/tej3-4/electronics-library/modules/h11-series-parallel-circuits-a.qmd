@@ -23,13 +23,13 @@ A reduction plan turns a complicated circuit into smaller problems that can be c
 
 The website notes use LaTeX for each reduction rule:
 
-\[
+$$
 R_{\mathrm{series}} = \sum_{k=1}^{n} R_k
-\]
+$$
 
-\[
+$$
 \frac{1}{R_{\mathrm{parallel}}} = \sum_{k=1}^{n}\frac{1}{R_k}
-\]
+$$
 
 After the circuit is reduced, students solve the equivalent circuit and work back to the original branches.
 

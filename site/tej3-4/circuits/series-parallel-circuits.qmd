@@ -26,23 +26,23 @@ Do not decide from appearance alone. Trace the nodes and current paths.
 
 For a series group:
 
-\[
+$$
 R_{\mathrm{series}} = \sum_{k=1}^{n}R_k
-\]
+$$
 
 For a parallel group:
 
-\[
+$$
 \frac{1}{R_{\mathrm{parallel}}}
 = \sum_{k=1}^{n}\frac{1}{R_k}
-\]
+$$
 
 For exactly two resistors in parallel:
 
-\[
+$$
 R_{\mathrm{parallel}}
 = \frac{R_aR_b}{R_a+R_b}
-\]
+$$
 
 ## Solve in two directions
 
@@ -51,12 +51,12 @@ R_{\mathrm{parallel}}
 1. Mark one true series or parallel group.
 2. Replace it with its equivalent resistance.
 3. Redraw the complete circuit.
-4. Repeat until only \(R_T\) remains.
+4. Repeat until only $R_T$ remains.
 5. Calculate total current:
 
-\[
+$$
 I_T = \frac{V_T}{R_T}
-\]
+$$
 
 ### Expand back to the branches
 
@@ -64,29 +64,29 @@ Work backward through the redraws. Apply the series rule when current is common 
 
 For any resistor:
 
-\[
+$$
 V_k = I_kR_k
-\]
+$$
 
 For the entire network:
 
-\[
+$$
 P_T = V_TI_T = \sum_{k=1}^{n}P_k
-\]
+$$
 
 ## Check the answer
 
 At every node:
 
-\[
+$$
 \sum I_{\mathrm{in}} \overset{?}{=} \sum I_{\mathrm{out}}
-\]
+$$
 
 Around every complete path:
 
-\[
+$$
 \sum \Delta V \overset{?}{=} 0
-\]
+$$
 
 Also confirm the total power equals the sum of the component powers.
 
