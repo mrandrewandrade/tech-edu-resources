@@ -45,7 +45,7 @@ Complete intended progression:
 6. [Digital Logic and Stable Inputs](03-digital-logic-inputs/index.qmd)
 7. [Fabrication and PCB Workflow](curriculum/index.qmd#unit-7)
 8. [Basic Computer Systems](computer-systems/index.qmd)
-9. [Linux and Operating Systems](curriculum/index.qmd#unit-9)
+9. [Linux, Operating Systems and Basic Networking](09-linux-operating-systems/index.qmd)
 10. [Programming Fundamentals](curriculum/index.qmd#unit-10)
 11. [Microcontrollers and Physical Computing](04-microcontrollers/index.qmd)
 12. [Networking and Systems Administration](curriculum/index.qmd#unit-12)
@@ -71,6 +71,7 @@ Complete intended progression:
 <button type="button" class="bs-learn-filter" data-bs-filter-track="tej-basic-electronics" aria-pressed="false">2. Basic Electronics</button>
 <button type="button" class="bs-learn-filter" data-bs-filter-track="tej-digital-inputs" aria-pressed="false">6. Digital Logic and Stable Inputs</button>
 <button type="button" class="bs-learn-filter" data-bs-filter-track="tej-computer-systems" aria-pressed="false">8. Basic Computer Systems</button>
+<button type="button" class="bs-learn-filter" data-bs-filter-track="tej-linux-operating-systems" aria-pressed="false">Linux, Operating Systems and Basic Networking</button>
 <button type="button" class="bs-learn-filter" data-bs-filter-track="tej-control-systems" aria-pressed="false">Bonus: Control Systems and CNC</button>
 </div>
 </details>
@@ -121,6 +122,14 @@ Complete intended progression:
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-computer-systems" data-bs-search-primary='["CS05-CS07","POST","BIOS","UEFI","Xubuntu","RAM Upgrade"]' data-bs-search-body='["Verify firmware, commission Xubuntu 26.04 LTS, and complete a compatible RAM upgrade."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/cs05-post-firmware.qmd">CS05-CS07 Commission and Upgrade</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-computer-systems" data-bs-search-primary='["CS08","Benchmark","Best Computer","Main Quest"]' data-bs-search-body='["Use repeatable tests and compatible approved parts to build the best computer for a stated user."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/cs08-benchmark-challenge.qmd">CS08 Benchmark Challenge</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-computer-systems" data-bs-search-primary='["SQ01-SQ06","Side Quest","Fault Stations","Storage","Linux","Thermal","Repair"]' data-bs-search-body='["Optional supervised work in service, troubleshooting, upgrades, administration, thermal control, repair, and reuse."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/index.qmd#side-quests">SQ01-SQ06 Side Quests</a></div></article>
+</div>
+</details>
+
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tej-linux-operating-systems" data-bs-total-lessons="2" open>
+<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="09-linux-operating-systems/index.qmd">Linux, Operating Systems and Basic Networking</a><span data-bs-learn-group-count>2 lessons</span></span></summary>
+<div class="bs-learn-catalogue-section-items">
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Linux Distributions","Debian","Ubuntu","Linux Mint","Lubuntu","Arch Linux","Xfce"]' data-bs-search-body='["Compare Linux distributions and explain why the class uses Linux Mint Xfce."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/01-choosing-a-distribution.qmd">Choosing a Linux Distribution</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Install Linux Mint","Linux Mint 22.3 Zena","Xfce","Operating System Installation"]' data-bs-search-body='["Install Linux Mint Xfce safely, test the browser, and install software from Software Manager."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/02-install-linux-mint.qmd">Install Linux Mint 22.3 Xfce</a></div></article>
 </div>
 </details>
 

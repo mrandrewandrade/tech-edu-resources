@@ -33,6 +33,8 @@ OFFICIAL_HOSTS = {
     "www.statlearning.com",
     "developers.google.com",
     "karpathy.ai",
+    "linuxmint.com",
+    "www.linuxmint.com",
 }
 
 

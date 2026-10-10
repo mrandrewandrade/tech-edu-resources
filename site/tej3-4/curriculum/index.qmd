@@ -50,7 +50,7 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 - [6. Digital Logic and Stable Inputs](#unit-6)
 - [7. Fabrication and PCB Workflow](#unit-7)
 - [8. Basic Computer Systems](#unit-8)
-- [9. Linux and Operating Systems](#unit-9)
+- [9. Linux, Operating Systems and Basic Networking](#unit-9)
 - [10. Programming Fundamentals](#unit-10)
 - [11. Microcontrollers and Physical Computing](#unit-11)
 - [12. Networking and Systems Administration](#unit-12)
@@ -2739,11 +2739,11 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 </article>
 </div>
 
-## 9. Linux and Operating Systems {#unit-9}
+## 9. Linux, Operating Systems and Basic Networking {#unit-9}
 
 <div class="tej-roadmap-unit-summary">
-<p><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></p>
-<p>Build a complete planned pathway from operating-system concepts and desktop use to safe command-line administration.</p>
+<p><span class="tej-badge status-in-development">In development</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></p>
+<p>Choose and install Linux Mint Xfce, then build from desktop use to basic networking and safe command-line administration.</p>
 
 | Unit field | Roadmap record |
 |:--|:--|
@@ -2752,18 +2752,18 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Simulation | Optional virtual machine |
 | Physical lab | Required on approved computers or Raspberry Pi hardware |
 | Equipment | classroom computer or Raspberry Pi, installer media, approved storage |
-| Software | Xubuntu, Linux Mint Xfce, Lubuntu, terminal, SSH, tmux |
+| Software | Linux Mint 22.3 Xfce, Lubuntu, terminal, SSH, tmux |
 | Safety level | Data, account, storage, and network safety |
 | Student deliverables | installation record, command-line tasks, administration evidence, backup and troubleshooting plan |
 | Assessment evidence | least privilege, correct commands, safe storage choices, reproducible results |
-| Student handout | Planned |
+| Student handout | In development |
 | Teacher guide | Teacher controlled |
 | Slides | Planned |
 | Source references | ON-TEJ |
 | Copyright or permissions | Original instructions with official distribution and tool documentation links. |
 | Implementation notes | Advanced administration is optional. Do not present the scope as implemented until lessons are tested. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/index.qmd)
 </div>
 
 <div class="tej-roadmap-module-grid">
@@ -2798,12 +2798,12 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX02 Distributions and desktop environments Compare Xubuntu, Mint Xfce, and Lubuntu for hardware fit, support, accessibility, and classroom use. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX02 Distributions and desktop environments Compare Debian, Ubuntu, Linux Mint Xfce, Lubuntu, and Arch for hardware fit, usability, and control. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
 <h3>LX02: Distributions and desktop environments</h3>
 <div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Compare Xubuntu, Mint Xfce, and Lubuntu for hardware fit, support, accessibility, and classroom use.</p>
+<p>Compare Debian, Ubuntu, Linux Mint Xfce, Lubuntu, and Arch for hardware fit, usability, and control.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -2816,8 +2816,8 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Equipment | approved Linux computer or Raspberry Pi |
 | Software | Linux desktop, terminal |
 | Safety level | Data and system administration |
-| Student deliverables | command transcript and short explanation |
-| Assessment evidence | correct command choice, safe scope, verified outcome |
+| Student deliverables | distribution comparison and classroom choice explanation |
+| Assessment evidence | accurate distribution relationships, hardware-fit reasoning, justified choice |
 | Student handout | Planned |
 | Teacher guide | Teacher controlled |
 | Slides | Planned |
@@ -2825,38 +2825,38 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/01-choosing-a-distribution.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX03 Installation media, partitions, and filesystems Prepare approved media and understand target drives, partitions, filesystems, and data-loss risk. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX03 Installation media, partitions, and filesystems Install Linux Mint 22.3 Xfce on an approved classroom computer and record the result. approved classroom computer Linux Mint 22.3 Xfce USB installer Linux Mint 22.3 Xfce Software Manager web browser">
 <div class="tej-roadmap-module-heading">
 <h3>LX03: Installation media, partitions, and filesystems</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Prepare approved media and understand target drives, partitions, filesystems, and data-loss risk.</p>
+<p>Install Linux Mint 22.3 Xfce on an approved classroom computer and record the result.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
 | Field | Roadmap record |
 |:--|:--|
 | Prerequisites | Unit 8 |
-| Estimated time | 1-3 periods |
+| Estimated time | 2-3 periods |
 | Simulation | Optional virtual machine |
 | Physical lab | Required |
-| Equipment | approved Linux computer or Raspberry Pi |
-| Software | Linux desktop, terminal |
-| Safety level | Data and system administration |
-| Student deliverables | command transcript and short explanation |
-| Assessment evidence | correct command choice, safe scope, verified outcome |
-| Student handout | Planned |
+| Equipment | approved classroom computer, Linux Mint 22.3 Xfce USB installer |
+| Software | Linux Mint 22.3 Xfce, Software Manager, web browser |
+| Safety level | Data-loss, account, storage, and network safety |
+| Student deliverables | completed installation, software test, installation lab log |
+| Assessment evidence | approved target drive, correct installer choices, unique hostname, working login, completed log |
+| Student handout | Pilot |
 | Teacher guide | Teacher controlled |
 | Slides | Planned |
-| Source references | ON-TEJ |
-| Copyright or permissions | Original instructions and official documentation links. |
-| Implementation notes | Test commands against the approved classroom image before publication. |
+| Source references | ON-TEJ, LINUX-MINT-INSTALL |
+| Copyright or permissions | Original classroom instructions with Linux Mint project screenshots and official documentation links. |
+| Implementation notes | Use only on teacher-approved classroom computers. This lab erases the target drive; dual boot is reserved for a future lab. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/02-install-linux-mint.qmd)
 </details>
 </article>
 
@@ -5473,6 +5473,7 @@ The roadmap uses original summaries and links to official or appropriately licen
 | GROB | Grob&#x27;s Basic Electronics, 12th edition | Teacher planning source for electronics sequencing and experiments | Classroom restricted | Classroom source available through the teacher. Do not upload scans or chapters publicly. |
 | OPEN-CIRCUITS | Open Circuits | Restricted visual reference for component interiors | Classroom restricted | Classroom source available through the teacher. Use original diagrams or separately cleared assets publicly. |
 | MAKE-ELECTRONICS | Make - Electronics | Teacher reference for hands-on build ideas | Classroom restricted | Classroom source available through the teacher. Do not publish copied pages or diagrams. |
+| LINUX-MINT-INSTALL | [Linux Mint Installation Guide](https://linuxmint.com/documentation.php) | Official installation sequence and installer screenshots | External official source | Link to the official guide. Linux Mint permits screenshots in articles, websites, and educational documents when affiliation is not implied. |
 
 </div>
 
