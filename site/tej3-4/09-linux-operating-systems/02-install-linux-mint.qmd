@@ -96,6 +96,16 @@ Select **Install Now** or **Continue**, depending on the wording shown. Read the
 
 In a future lab, we will install another operating system alongside Windows and create a **dual-boot** computer. That is not today’s task.
 
+::: {.callout-warning title="Dual-boot installations use different instructions"}
+If you are installing Linux on your own computer and want to keep Windows, **stop here and do not choose “Erase disk and install Linux Mint.”** A dual-boot installation requires a current backup, enough free storage, and a careful plan for the computer’s partitions, encryption, firmware, and recovery options.
+
+It is usually easier to **install Windows first and Linux second**. Windows installation can replace the existing boot sequence, while Linux Mint normally detects Windows and creates a menu for choosing an operating system at startup. See Linux Mint’s [official multi-boot guidance](https://linuxmint-installation-guide.readthedocs.io/en/latest/multiboot.html).
+
+Before changing partitions, check whether Windows uses **BitLocker/device encryption**, save its recovery key, and research the exact computer model. An encrypted Windows drive may prevent a Linux installer from safely examining or resizing the Windows partitions. Ubuntu’s [BitLocker dual-boot explanation](https://ubuntu.com/tutorials/install-ubuntu-desktop#13-installing-ubuntu-alongside-windows-with-bitlocker) describes this issue clearly.
+
+Some computers have two internal SSDs. Installing each operating system on a separate drive can make the layout easier to understand and can reduce the chance of accidentally changing the other system’s partitions or boot files. However, this is **not a rule of EFI/UEFI**, and it is not required on every computer. Firmware behaviour varies—even between Lenovo Legion models—so search the manufacturer, exact model, and terms such as **dual boot**, **UEFI**, and **boot order** before proceeding. Use a model-specific guide and ask for experienced help rather than guessing.
+:::
+
 ## 6. Set the time zone
 
 Choose **Toronto**, then select **Continue**.
@@ -193,8 +203,10 @@ Show the installed system and completed lab log to your teacher.
 - [Linux Mint Installation Guide: Install Linux Mint](https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html)
 - [Linux Mint Installation Guide: Create the bootable media](https://linuxmint-installation-guide.readthedocs.io/en/latest/burn.html)
 - [Linux Mint Installation Guide: Boot Linux Mint](https://linuxmint-installation-guide.readthedocs.io/en/latest/boot.html)
+- [Linux Mint Installation Guide: Multi-boot](https://linuxmint-installation-guide.readthedocs.io/en/latest/multiboot.html)
 - [Linux Mint 22.3 “Zena” editions](https://linuxmint.com/download.php/)
 - [Linux Mint FAQ: use of Linux Mint screenshots](https://www.linuxmint.com/faq.php)
 - [Apple: Mac startup key combinations](https://support.apple.com/en-ca/102603)
+- [Ubuntu: installing alongside Windows with BitLocker](https://ubuntu.com/tutorials/install-ubuntu-desktop#13-installing-ubuntu-alongside-windows-with-bitlocker)
 
 Linux Mint project screenshots are reproduced for this educational installation guide. This site is not affiliated with or endorsed by Linux Mint.
