@@ -1,0 +1,74 @@
+---
+title: "Parallel Circuits"
+description: "Student notes, equations, slides, and questions for direct-current parallel circuits."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+**I will be able to** identify parallel branches and calculate equivalent resistance, source current, branch current, and power.
+
+**This is useful because I can** explain how several loads operate independently from one source.
+
+**Used in university:** Circuit analysis, electrical distribution, instrumentation, electronics, and computer hardware.
+
+## Common voltage
+
+Components are in parallel when both ends connect to the same two nodes. Every branch has the same voltage:
+
+\[
+V_k = V_T
+\]
+
+## General parallel rules
+
+The source current is the sum of the branch currents:
+
+\[
+I_T = \sum_{k=1}^{n} I_k
+\]
+
+The equivalent resistance is
+
+\[
+\frac{1}{R_T} = \sum_{k=1}^{n}\frac{1}{R_k}
+\]
+
+For exactly two parallel resistors, the product-over-sum shortcut is
+
+\[
+R_T = \frac{R_aR_b}{R_a+R_b}
+\]
+
+Calculate any branch current with Ohm's law:
+
+\[
+I_k = \frac{V_T}{R_k}
+\]
+
+Total power equals the sum of the branch powers:
+
+\[
+P_T = \sum_{k=1}^{n}P_k = V_T I_T
+\]
+
+## Check the answer
+
+\[
+\sum_{k=1}^{n} I_k \overset{?}{=} I_T
+\]
+
+The equivalent resistance must be smaller than the smallest branch resistance.
+
+## Notes, slides, and question sheet
+
+- [Basic Electricity to Basic Computer Systems teaching slides](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
+- [Parallel-circuit student question sheet](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit)
+- [Parallel-circuit worked answers](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit)
+- [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+
+These notes follow *Grob's Basic Electronics*, Chapter 5. [[1, Ch. 5]](../../references.qmd#ref-grob2016)

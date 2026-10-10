@@ -1,0 +1,100 @@
+---
+title: "Series-Parallel Circuits"
+description: "Student notes, equations, slides, and questions for reducing and solving mixed resistor networks."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+**I will be able to** identify series and parallel groups, redraw a circuit, reduce it step by step, solve the equivalent circuit, and work back to the original branches.
+
+**This is useful because I can** turn a complicated network into smaller problems and check the final result.
+
+**Used in university:** Network reduction, circuit laboratories, electronics, instrumentation, and preparation for Kirchhoff analysis. [[1, Ch. 6]](../../references.qmd#ref-grob2016)
+
+## Identify the connections
+
+Components are in series when the same current must pass through them. Components are in parallel when both ends connect to the same two nodes.
+
+Do not decide from appearance alone. Trace the nodes and current paths.
+
+## Reduction equations
+
+For a series group:
+
+\[
+R_{\mathrm{series}} = \sum_{k=1}^{n}R_k
+\]
+
+For a parallel group:
+
+\[
+\frac{1}{R_{\mathrm{parallel}}}
+= \sum_{k=1}^{n}\frac{1}{R_k}
+\]
+
+For exactly two resistors in parallel:
+
+\[
+R_{\mathrm{parallel}}
+= \frac{R_aR_b}{R_a+R_b}
+\]
+
+## Solve in two directions
+
+### Reduce toward the source
+
+1. Mark one true series or parallel group.
+2. Replace it with its equivalent resistance.
+3. Redraw the complete circuit.
+4. Repeat until only \(R_T\) remains.
+5. Calculate total current:
+
+\[
+I_T = \frac{V_T}{R_T}
+\]
+
+### Expand back to the branches
+
+Work backward through the redraws. Apply the series rule when current is common and the parallel rule when voltage is common.
+
+For any resistor:
+
+\[
+V_k = I_kR_k
+\]
+
+For the entire network:
+
+\[
+P_T = V_TI_T = \sum_{k=1}^{n}P_k
+\]
+
+## Check the answer
+
+At every node:
+
+\[
+\sum I_{\mathrm{in}} \overset{?}{=} \sum I_{\mathrm{out}}
+\]
+
+Around every complete path:
+
+\[
+\sum \Delta V \overset{?}{=} 0
+\]
+
+Also confirm the total power equals the sum of the component powers.
+
+## Notes, slides, and question sheet
+
+- [Series-Parallel Circuits A teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
+- [Series-Parallel Circuits A student question sheet](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/edit)
+- [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- [Complete Series-Parallel Circuits lesson package](../electronics-library/modules/h11-series-parallel-circuits-a.qmd)
+
+The teacher answer key is restricted.

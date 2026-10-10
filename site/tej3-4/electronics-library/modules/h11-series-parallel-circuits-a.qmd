@@ -17,6 +17,22 @@ Students identify true series and parallel groups, redraw a mixed circuit, reduc
 
 A reduction plan turns a complicated circuit into smaller problems that can be checked.
 
+## Notes and equations
+
+[Open the Series-Parallel Circuits notes](../../circuits/series-parallel-circuits.qmd)
+
+The website notes use LaTeX for each reduction rule:
+
+\[
+R_{\mathrm{series}} = \sum_{k=1}^{n} R_k
+\]
+
+\[
+\frac{1}{R_{\mathrm{parallel}}} = \sum_{k=1}^{n}\frac{1}{R_k}
+\]
+
+After the circuit is reduced, students solve the equivalent circuit and work back to the original branches.
+
 ## Learning route
 
 1. Show a complete low-voltage system with one series component and two parallel loads.

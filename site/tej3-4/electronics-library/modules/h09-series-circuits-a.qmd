@@ -17,6 +17,24 @@ Students identify a series circuit as one continuous path, calculate total resis
 
 Series analysis lets students predict a circuit before they build it, check measurements, and recognize when a result cannot be correct.
 
+## Notes and equations
+
+[Open the Series Circuits notes](../../circuits/series-circuits.qmd)
+
+The website notes use LaTeX for the general series rules:
+
+\[
+I_k = I_T
+\]
+
+\[
+R_T = \sum_{k=1}^{n} R_k
+\]
+
+\[
+V_T = \sum_{k=1}^{n} V_k
+\]
+
 ## Learning route
 
 1. Show a complete low-voltage series system before introducing equations.

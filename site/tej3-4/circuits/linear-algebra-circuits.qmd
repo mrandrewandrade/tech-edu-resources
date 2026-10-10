@@ -1,0 +1,93 @@
+---
+title: "Linear Algebra for Circuits"
+description: "Student notes for turning Kirchhoff equations into matrix systems."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+**I will be able to** turn node or loop equations into a two- or three-variable system and solve it using elimination, matrices, or software.
+
+**This is useful because I can** find several unknown currents or voltages at the same time.
+
+**Used in university:** Linear algebra, numerical methods, circuits, statics, structures, process models, and control. [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
+
+## A system of equations
+
+Two circuit equations with two unknowns have the general form
+
+\[
+\begin{aligned}
+a_{11}x_1 + a_{12}x_2 &= b_1 \\
+a_{21}x_1 + a_{22}x_2 &= b_2
+\end{aligned}
+\]
+
+The same system can be written as a matrix equation:
+
+\[
+\underbrace{
+\begin{bmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{bmatrix}}_{A}
+\underbrace{
+\begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix}}_{\mathbf{x}}
+=
+\underbrace{
+\begin{bmatrix}
+b_1 \\
+b_2
+\end{bmatrix}}_{\mathbf{b}}
+\]
+
+In compact form:
+
+\[
+A\mathbf{x}=\mathbf{b}
+\]
+
+## Build the matrix from Kirchhoff equations
+
+1. Choose the unknown node voltages or loop currents.
+2. Write every Kirchhoff equation in the same variable order.
+3. Move the unknown terms to the left and known source terms to the right.
+4. Put the coefficients into \(A\), the unknowns into \(\mathbf{x}\), and the source values into \(\mathbf{b}\).
+5. Solve and check the result in the original circuit equations.
+
+## Solving methods
+
+For a small system, use substitution or elimination. For a larger system, use row reduction or a numerical solver.
+
+When \(A\) is invertible,
+
+\[
+\mathbf{x}=A^{-1}\mathbf{b}
+\]
+
+In engineering software, solve the system directly instead of manually calculating the inverse.
+
+## Check the answer
+
+Substitute the solution into the original equations or calculate the residual:
+
+\[
+\mathbf{r}=A\mathbf{x}-\mathbf{b}
+\]
+
+A correct solution should give a residual vector close to zero:
+
+\[
+\mathbf{r}\approx\mathbf{0}
+\]
+
+## Course-material status
+
+The website notes are available now. The teaching slides and five-question sheet will follow the Kirchhoff package so students first learn how the equations come from a real circuit.

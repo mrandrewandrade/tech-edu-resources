@@ -155,7 +155,15 @@ website:
             - text: "GUESS Method"
               href: tej3-4/circuits/index.qmd#guess-method
             - text: "Series Circuits"
-              href: tej3-4/circuits/index.qmd#series-circuits
+              href: tej3-4/circuits/series-circuits.qmd
+            - text: "Parallel Circuits"
+              href: tej3-4/circuits/parallel-circuits.qmd
+            - text: "Series-Parallel Circuits"
+              href: tej3-4/circuits/series-parallel-circuits.qmd
+            - text: "Kirchhoff's Laws"
+              href: tej3-4/circuits/kirchhoffs-laws.qmd
+            - text: "Linear Algebra for Circuits"
+              href: tej3-4/circuits/linear-algebra-circuits.qmd
             - text: "Class Resources"
               href: tej3-4/circuits/index.qmd#questions-answers-and-class-artifacts
         - section: "Linux, Operating Systems & Networking"

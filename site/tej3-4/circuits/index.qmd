@@ -14,7 +14,7 @@ execute:
 By the end of this unit:
 
 - I will be able to write values with suitable precision, notation, prefixes, and units.
-- I will be able to use Ohm's law, power equations, and series-circuit rules.
+- I will be able to use Ohm's law, power equations, and series, parallel, and mixed-circuit rules.
 - I will be able to organize a solution with the GUESS method and check whether it is reasonable.
 
 This is important because it enables me to predict a circuit before I build it and to explain my work clearly.
@@ -73,27 +73,15 @@ Put each part on its own line.
 
 For a Casio calculator, enter one calculation per line. Use `EXP` for powers of ten. Write units beside the result, not in the calculator.
 
-## Series circuits
+## Circuit-analysis chapters
 
-A series circuit has one continuous path, so the current is the same through every component.
+Use these notes with the matching teaching slides and question sheet.
 
-\[
-I_T = I_1 = I_2 = I_3
-\]
-
-Series resistances add.
-
-\[
-R_T = R_1 + R_2 + R_3
-\]
-
-The voltage drops add to the source voltage.
-
-\[
-V_T = V_1 + V_2 + V_3
-\]
-
-Use the voltage sum as a check. Total power can be found with \(P_T = V_TI_T\) or by adding the component powers.
+1. [Series circuits](series-circuits.qmd) — one current path, voltage drops, resistance, and power.
+2. [Parallel circuits](parallel-circuits.qmd) — common voltage, branch currents, equivalent resistance, and power.
+3. [Series-parallel circuits](series-parallel-circuits.qmd) — identify groups, reduce, solve, expand, and check.
+4. [Kirchhoff's laws](kirchhoffs-laws.qmd) — write current and voltage equations for networks that do not reduce directly.
+5. [Linear algebra for circuits](linear-algebra-circuits.qmd) — solve several node or loop equations together.
 
 ## Questions, answers, and class artifacts
 
@@ -116,7 +104,15 @@ Use the voltage sum as a check. Total power can be found with \(P_T = V_TI_T\) o
 
 The Series Circuits A teacher answers are not public yet.
 
+### Series-Parallel Circuits A
+
+- [Series-Parallel Circuits A notes](series-parallel-circuits.qmd)
+- [Series-Parallel Circuits A teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
+- [Series-Parallel Circuits A student questions](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/edit)
+
+The Series-Parallel Circuits A teacher answers remain restricted.
+
 ## Textbook support
 
-These topics follow *Grob's Basic Electronics*, Chapters 1, 3, and 4. [[1]](../../references.qmd#ref-grob2016)
+These topics follow *Grob's Basic Electronics*, Chapters 1, 3, 4, 5, 6, and 9. [[1]](../../references.qmd#ref-grob2016)
 
