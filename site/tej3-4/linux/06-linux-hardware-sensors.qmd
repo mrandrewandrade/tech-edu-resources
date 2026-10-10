@@ -1,0 +1,53 @@
+---
+title: "Linux Hardware Sensors and Data Logging"
+description: "Read available real CPU temperature and load data and produce a documented CSV."
+sidebar: tej
+toc: true
+categories: [Linux, sensors, hardware, CPU, data]
+---
+
+**Goal:** observe the computer using its existing Linux interfaces, then log a consistent measurement stream for data analysis. This module does not require opening or modifying hardware.
+
+## Inventory first
+
+```bash
+uname -a
+lscpu
+free -h
+lsblk
+uptime
+```
+
+On an approved Mint/Ubuntu computer, install the teacher-approved `lm-sensors` package if it is not already available, then try:
+
+```bash
+sensors
+sensors -j
+ls /sys/class/hwmon
+ls /sys/class/thermal
+```
+
+The `sensors` command reads supported hardware monitoring chips. The Linux sysfs `hwmon` interface can expose temperature, fan and sometimes power readings. **A thermal zone is not automatically a CPU temperature sensor.** Confirm sensor labels and units for the particular device before claiming to measure CPU temperature.
+
+Linux kernel reference: [hardware monitoring sysfs interface](https://docs.kernel.org/hwmon/sysfs-interface.html).
+
+## Record safe, honest data
+
+Recommended columns:
+
+`timestamp,device_id,workload,temperature_c,cpu_percent,power_w,notes`
+
+Use `date -Is` for timestamps and an approved logger script to capture readings at regular intervals. CPU utilization can be measured using a known sampling interval, for example with Python `psutil.cpu_percent(interval=1)`; do not treat an instantaneous unsampled value as a reliable test.
+
+**Power is separate.** A watt figure requires a valid power sensor, a hardware energy counter measured over time or an enclosed external wall-power meter. CPU percentage is not watts. On older iMacs and Mac minis, sensor interfaces may be absent or inconsistent. Leave unavailable values blank or `N/A`, and use a sample dataset for curve-fitting practice.
+
+## Check the instrument
+
+1. Identify the exact sensor and units, for example millidegrees Celsius from a documented `temp*_input` source.
+2. Record one baseline while idle and one reading during a reproducible approved task.
+3. Check for implausible spikes, different sensor locations and warm-up effects.
+4. Keep the raw readings. Describe how you cleaned or summarized them.
+
+**Evidence:** the sensor/command you validated, sample output, a timestamped CSV and a one-paragraph limitation.
+
+[Next: performance experiment](07-performance-data.qmd) | [Advanced measurement labs](../engineering-preparation-track/labs/index.qmd).
