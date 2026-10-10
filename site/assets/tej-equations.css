@@ -8,7 +8,16 @@
 
 .ter-equation-shell > p {
   margin: 0;
+  overflow: visible;
+}
+
+.ter-equation-shell mjx-container[display="true"] {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 !important;
+  padding: .65rem .25rem .8rem;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .ter-equation-toolbar {
