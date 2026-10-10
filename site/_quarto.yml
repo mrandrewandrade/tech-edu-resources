@@ -240,6 +240,8 @@ website:
         - section: "Engineering Preparation Track"
           href: tej3-4/engineering-preparation-track/index.qmd
           contents:
+            - text: "Optional Practical Labs"
+              href: tej3-4/engineering-preparation-track/labs/index.qmd
             - text: "0. Design & Communication"
               href: tej3-4/engineering-preparation-track/index.qmd#chapter-0-engineering-design-and-communication
             - text: "1. Units & Engineering Notation"
@@ -364,9 +366,31 @@ website:
                   href: tej3-4/computer-systems/sq05-power-thermal.qmd
                 - text: "SQ06 Repair & Reuse"
                   href: tej3-4/computer-systems/sq06-repair-reuse.qmd
-        - section: "9. Linux & Operating Systems"
-          href: tej3-4/curriculum/index.qmd#unit-9
-          contents: []
+        - section: "9. Linux, Networking, GitHub & Data"
+          href: tej3-4/linux/index.qmd
+          contents:
+            - text: "Module Overview"
+              href: tej3-4/linux/index.qmd
+            - text: "Install Linux Mint"
+              href: tej3-4/linux/01-install-linux-mint.qmd
+            - text: "Terminal Basics"
+              href: tej3-4/linux/02-terminal-basics.qmd
+            - text: "Networking"
+              href: tej3-4/linux/03-networking.qmd
+            - text: "SSH & tmux"
+              href: tej3-4/linux/04-ssh-tmux.qmd
+            - text: "GitHub Pages Portfolio"
+              href: tej3-4/linux/05-git-github-pages.qmd
+            - text: "Linux Hardware Sensors"
+              href: tej3-4/linux/06-linux-hardware-sensors.qmd
+            - text: "Gaming & Measurements"
+              href: tej3-4/linux/07-performance-data.qmd
+            - text: "Python Function Fitting"
+              href: tej3-4/linux/08-python-functions.qmd
+            - text: "Technical Blog"
+              href: tej3-4/linux/09-technical-blog.qmd
+            - text: "Raspberry Pi & Simulators"
+              href: tej3-4/linux/10-raspberry-pi.qmd
         - section: "10. Programming Fundamentals"
           href: tej3-4/curriculum/index.qmd#unit-10
           contents: []
