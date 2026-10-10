@@ -1,5 +1,5 @@
 schema_version: 1
-updated: 2026-10-04
+updated: 2026-10-09
 title: TEJ Curriculum Roadmap
 purpose: >-
   Curriculum-only public metadata for the complete TEJ learning pathway. This file
@@ -87,6 +87,12 @@ sources:
     url: ''
     access_level: Classroom restricted
     copyright_permissions_note: Classroom source available through the teacher. Do not publish copied pages or diagrams.
+  - source_id: LINUX-MINT-INSTALL
+    title: Linux Mint Installation Guide
+    use: Official installation sequence and installer screenshots
+    url: https://linuxmint.com/documentation.php
+    access_level: External official source
+    copyright_permissions_note: Link to the official guide. Linux Mint permits screenshots in articles, websites, and educational documents when affiliation is not implied.
 
 units:
   - unit_id: '0'
@@ -810,22 +816,22 @@ units:
         public_notes_route: "tej3-4/computer-systems/computer-recovery-crew-pilot.qmd"
 
   - unit_id: '9'
-    title: Linux and Operating Systems
-    short_description: Progress from operating-system concepts and desktop use to safe command-line administration.
-    status: Planned
+    title: Linux, Operating Systems and Basic Networking
+    short_description: Choose and install Linux Mint Xfce, then build from desktop use to basic networking and safe command-line administration.
+    status: In development
     pathway: core
     prerequisites: [Unit 8]
     estimated_time: 20-30 periods
     simulation_requirement: Optional virtual machine
     physical_lab_requirement: Required on approved computers or Raspberry Pi hardware
     equipment: [classroom computer or Raspberry Pi, installer media, approved storage]
-    software: [Xubuntu, Linux Mint Xfce, Lubuntu, terminal, SSH, tmux]
+    software: [Linux Mint 22.3 Xfce, Lubuntu, terminal, SSH, tmux]
     consumables: [USB installer media when not reusable, labels, replacement storage media as approved]
     safety_level: Data, account, storage, and network safety
     student_deliverables: [installation record, command-line tasks, administration evidence, backup and troubleshooting plan]
     assessment_evidence: [least privilege, correct commands, safe storage choices, reproducible results]
-    public_notes_route: Not yet available
-    student_handout: Planned
+    public_notes_route: "tej3-4/09-linux-operating-systems/index.qmd"
+    student_handout: In development
     teacher_guide: Teacher controlled
     slides: Planned
     source_references: [ON-TEJ]
@@ -858,11 +864,26 @@ units:
         short_description: "Explain kernels, drivers, filesystems, processes, services, users, and interfaces."
       - module_id: "LX02"
         title: "Distributions and desktop environments"
-        short_description: "Compare Xubuntu, Mint Xfce, and Lubuntu for hardware fit, support, accessibility, and classroom use."
+        short_description: "Compare Debian, Ubuntu, Linux Mint Xfce, Lubuntu, and Arch for hardware fit, usability, and control."
         status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/01-choosing-a-distribution.qmd"
+        student_deliverables: [distribution comparison and classroom choice explanation]
+        assessment_evidence: [accurate distribution relationships, hardware-fit reasoning, justified choice]
       - module_id: "LX03"
         title: "Installation media, partitions, and filesystems"
-        short_description: "Prepare approved media and understand target drives, partitions, filesystems, and data-loss risk."
+        short_description: "Install Linux Mint 22.3 Xfce on an approved classroom computer and record the result."
+        status: "Pilot"
+        estimated_time: 2-3 periods
+        equipment: [approved classroom computer, Linux Mint 22.3 Xfce USB installer]
+        software: [Linux Mint 22.3 Xfce, Software Manager, web browser]
+        safety_level: Data-loss, account, storage, and network safety
+        student_deliverables: [completed installation, software test, installation lab log]
+        assessment_evidence: [approved target drive, correct installer choices, unique hostname, working login, completed log]
+        public_notes_route: "tej3-4/09-linux-operating-systems/02-install-linux-mint.qmd"
+        student_handout: "Pilot"
+        source_references: [ON-TEJ, LINUX-MINT-INSTALL]
+        copyright_permissions_note: Original classroom instructions with Linux Mint project screenshots and official documentation links.
+        implementation_notes: Use only on teacher-approved classroom computers. This lab erases the target drive; dual boot is reserved for a future lab.
       - module_id: "LX04"
         title: "Users, groups, accounts, and permissions"
         short_description: "Distinguish standard and administrator work and apply least privilege."

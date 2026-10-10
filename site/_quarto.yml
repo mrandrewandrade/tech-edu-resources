@@ -364,9 +364,13 @@ website:
                   href: tej3-4/computer-systems/sq05-power-thermal.qmd
                 - text: "SQ06 Repair & Reuse"
                   href: tej3-4/computer-systems/sq06-repair-reuse.qmd
-        - section: "9. Linux & Operating Systems"
-          href: tej3-4/curriculum/index.qmd#unit-9
-          contents: []
+        - section: "Linux, Operating Systems & Basic Networking"
+          href: tej3-4/09-linux-operating-systems/index.qmd
+          contents:
+            - text: "Choosing a Distribution"
+              href: tej3-4/09-linux-operating-systems/01-choosing-a-distribution.qmd
+            - text: "Install Linux Mint 22.3 Xfce"
+              href: tej3-4/09-linux-operating-systems/02-install-linux-mint.qmd
         - section: "10. Programming Fundamentals"
           href: tej3-4/curriculum/index.qmd#unit-10
           contents: []

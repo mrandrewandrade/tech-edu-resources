@@ -1,0 +1,39 @@
+---
+title: "Choosing a Linux Distribution"
+description: "Compare Linux distributions and explain why this class uses Linux Mint Xfce."
+categories: [Linux, operating systems, distributions, Linux Mint, Xfce]
+---
+
+## Different flavours of Linux
+
+A **Linux distribution**, or **distro**, is a complete operating system built around Linux. Distros are a little like different flavours: they share many ingredients, but each has its own installer, desktop, software choices, update system, and community. No flavour is best for everyone, although people often have strong preferences. Some distributions are also based on other distributions.
+
+For example:
+
+```text
+Debian
+└── Ubuntu
+    ├── Linux Mint
+    └── Lubuntu
+```
+
+**Debian** is a long-running, community-built distribution known for stability. **Ubuntu** is based on Debian and aims to make Linux practical for a wide range of users. The African word *ubuntu* is often translated as **“I am because we are.”** Linux Mint is a child of Ubuntu: it uses Ubuntu as a foundation and adds its own desktop experience and tools.
+
+## Our choice: Linux Mint Xfce
+
+We will use **Linux Mint 22.3 “Zena” Xfce Edition** because it works well and is easy for students to begin using. **Xfce** is the desktop interface. Its layout feels a little like older versions of Windows, and it runs quickly on our older computers with less than 8 GB of RAM. It starts simple, but we can improve and personalize the way it looks later.
+
+**Lubuntu** is another good lightweight flavour to explore. If you want to compare many possibilities, try the questions at [Distrochooser](https://distrochooser.de/).
+
+**Arch Linux** is the most difficult option discussed here. It expects you to assemble and configure much more of the system yourself. That makes it a poor first classroom installation, but a valuable future challenge if you want to become a system administrator and understand or control every part of a Linux system.
+
+In my classes, students who chose Arch and persisted through its difficulties have often gone on to considerable success in computer engineering, including major scholarship and job opportunities. Arch itself is not a shortcut to those outcomes. The persistence, research, troubleshooting, and systems thinking required to make it work are excellent preparation.
+
+For this lab, our choice is Linux Mint Xfce. In a future lab, we will choose another operating system and install it alongside Windows to create a **dual-boot** computer.
+
+## Check your understanding
+
+1. What is a Linux distribution?
+2. How are Debian, Ubuntu, and Linux Mint related?
+3. Why is Xfce a good match for our classroom computers?
+4. Which distribution would you investigate next, and why?
