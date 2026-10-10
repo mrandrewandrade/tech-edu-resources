@@ -1,0 +1,38 @@
+---
+title: "Engineering Preparation Track: Optional Practical Labs"
+description: "Optional deeper circuit, electrical measurement and hardware engineering labs kept separate from the TEJ computer pathway."
+sidebar: tej
+toc: true
+categories: [engineering preparation, advanced labs, circuits, hardware]
+---
+
+These investigations extend the regular TEJ concept-and-circuit-work lessons. They are **not required prerequisites** for installing Linux, networking, GitHub Pages, data analysis or introductory Raspberry Pi work.
+
+## How this fits the weekly rhythm
+
+- **Monday:** everyone receives a short concept lesson.
+- **Tuesday:** everyone works through the relevant required circuit problems, using equations, units and GUESS.
+- **Wednesday through Friday:** everyone works on the current [Linux, GitHub or Raspberry Pi implementation](../../linux/index.qmd).
+- **Engineering extensions:** when approved, students who have finished core work can select an engineering lab for a deeper investigation. Some labs require staff, hardware, additional time or safety signoff.
+
+## Engineering lab options
+
+| Optional lab | Where to begin | Main focus |
+|---|---|---|
+| Series, parallel and multimeter measurement | [Ohm's law and power](../../02-basic-electronics/index.qmd) and [Engineering circuit fundamentals](../index.qmd#chapter-2-circuit-fundamentals) | Prediction vs measurement, component tolerance |
+| Kirchhoff's laws, complex resistor networks | [Engineering linear circuits](../index.qmd#chapter-3-linear-circuits) and [systems of equations](../index.qmd#chapter-4-linear-algebra-for-engineering) | Multi-branch analysis and checks |
+| Safe computer parts and fault stations | [Parts/ESD](../../computer-systems/cs02-parts-baseline-esd.qmd) and [teacher-set fault stations](../../computer-systems/sq02-fault-stations.qmd) | Controlled troubleshooting |
+| Mount and inspect a spare drive | [Storage and expansion](../../computer-systems/sq03-storage-expansion.qmd) | Filesystems, `lsblk`, safe mount/unmount |
+| RAM/storage upgrade and benchmark | [RAM upgrade](../../computer-systems/cs07-ram-upgrade.qmd) and [benchmarks](../../computer-systems/cs08-benchmark-challenge.qmd) | Service and fair comparisons |
+| Power budget, LEDs and multimeter | [Power and thermal behavior](../../computer-systems/sq05-power-thermal.qmd) | Circuit equations and **approved isolated low-voltage measurement** |
+| More advanced regression and sensors | [Engineering regression](../index.qmd#chapter-9-curve-fitting-regression-and-machine-learning) | Function choice, residuals, uncertainty and optimization |
+| Digital logic and input conditioning | [Digital logic and stable inputs](../../03-digital-logic-inputs/index.qmd) | Switches, pull-ups, logic gates |
+| Advanced Linux or repair | [Linux inventory](../../computer-systems/sq04-linux-inventory.qmd) and [repair/reuse](../../computer-systems/sq06-repair-reuse.qmd) | Approved system administration and hardware investigation |
+
+**Safety:** never open or probe inside a PSU enclosure. Keep changes to school computers and networks within teacher/IT permission. Only teacher-prepared fault stations are permitted; do not introduce live shorts. Mounted drives are teacher-approved test devices, not private student drives.
+
+## Evidence
+
+Every engineering lab should leave a small record: question, diagram, predicted result, actual measurement or observation, error or uncertainty and what changed. Add strong examples to a student's portfolio if suitable.
+
+Return to the [regular TEJ computing pathway](../../linux/index.qmd).
