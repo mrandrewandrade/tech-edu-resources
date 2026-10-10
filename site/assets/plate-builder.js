@@ -189,6 +189,12 @@
     };
     const render = (readControls = true) => {
       if (readControls) read();
+      const roundBase = state.base === "circle" || state.base === "ring";
+      const widthLabel = host.querySelector("[data-width-label]");
+      if (widthLabel) widthLabel.textContent = roundBase ? "Outer diameter" : "Width";
+      host.querySelectorAll("[data-show-base]").forEach(item => { item.hidden = !item.dataset.showBase.split(/\s+/).includes(state.base); });
+      host.querySelectorAll("[data-show-hole-mode]").forEach(item => { item.hidden = item.dataset.showHoleMode !== state.holeMode; });
+      host.querySelectorAll("[data-show-pattern]").forEach(item => { item.hidden = !item.dataset.showPattern.split(/\s+/).includes(state.pattern); });
       const result = validate(state), svg = buildSvg(state, { includeGuides: state.previewGuides });
       host.querySelector("[data-preview]").innerHTML = svg.replace("<svg ", '<svg role="img" aria-label="Generated fabrication plate preview" ');
       host.querySelector("[data-diameter]").textContent = displayMeasurement(result.diameter, state.unit);

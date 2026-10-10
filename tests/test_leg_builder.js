@@ -110,15 +110,15 @@ test("15 wide easel overall height is derived from body length and top depth", (
   assert.match(builder.buildDimensionPreview(state), /body width/);
 });
 
-test("16 wide easel export includes its measured-thickness mating slot", () => {
+test("16 wide easel export sizes its mating slot from body width and material thickness", () => {
   const state = { ...builder.defaults, ...builder.presets.wideEasel, backWidth: 76.2, materialThickness: 3.175, fitAdjustment: 0.1524, includeSlots: true };
   const data = builder.layout(state);
   assert.strictEqual(data.slotCount, 1);
-  assert.strictEqual(data.slotLength, 76.352);
+  assert.strictEqual(data.slotLength, 44.602);
   assert.strictEqual(data.result.slotWidth, 3.327);
   const svg = builder.buildSvg(state);
   assert.match(svg, /id="matching-slot-01"/);
-  assert.match(svg, /width="76\.352" height="3\.327"/);
+  assert.match(svg, /width="44\.602" height="3\.327"/);
 });
 
 test("17 incomplete support concepts say what is not generated", () => {

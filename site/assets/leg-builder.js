@@ -169,7 +169,7 @@
       if (state.bodyLength <= 0) errors.push("The body length must be greater than zero.");
       if (state.legWidth >= state.backWidth) errors.push("The centre body must be narrower than the top attachment area.");
       if (state.shoulderDepth >= state.height) errors.push("The top attachment depth must be smaller than the overall height.");
-      if (state.includeSlots && state.backWidth + state.fitAdjustment <= 0) errors.push("The matching top-edge slot must have a positive length.");
+      if (state.includeSlots && state.legWidth + state.fitAdjustment <= 0) errors.push("The matching body slot must have a positive length.");
       if (state.legWidth < 6 * state.materialThickness) warnings.push("The wide easel body's centre section is narrow relative to the material thickness.");
     }
     if (state.legWidth < 4 * state.materialThickness && !["triangle", "wideEasel"].includes(state.type)) warnings.push("The member is narrower than four material thicknesses; inspect slots, holes and grain carefully.");
@@ -192,7 +192,7 @@
     if (state.includeSlots && ["straight", "angled"].includes(state.type)) slotCount = state.quantity;
     if (state.includeSlots && state.type === "wideEasel") {
       slotCount = 1;
-      slotLength = state.backWidth + state.fitAdjustment;
+      slotLength = state.legWidth + state.fitAdjustment;
     }
     const extrasHeight = (slotCount || state.includeCoupon) ? 45 : 0;
     const slotsWidth = slotCount ? slotCount * slotLength + (slotCount - 1) * state.partGap + margin * 2 : 0;
@@ -253,7 +253,7 @@
       },
       wideEasel: {
         name: "Wide single easel back",
-        cut: "Cut one T-shaped support. The SVG also includes a blue mating slot whose length follows the wide top and whose height follows the measured material thickness plus fit adjustment.",
+        cut: "Cut one T-shaped support. The SVG also includes a blue mating slot sized for the body of the support.",
         add: "The blue rectangle is geometry to copy into a separately designed plaque. A fixed slot joint and a hinged easel are different assemblies: choose one, then prototype the connection and the opening stop."
       },
       crossfoot: {
@@ -380,7 +380,7 @@ ${line(390, 55, 390, 110)}${textAt(402, 86, `top depth ${measure(state.shoulderD
 ${line(225, 266, 285, 266)}${textAt(255, 287, `body width ${measure(state.legWidth)}`)}
 ${line(118, 55, 118, 245)}${textAt(106, 154, `overall ${measure(state.height)}`, "end")}
 <rect x="425" y="178" width="145" height="22" fill="#dcecf2" stroke="#245f9e" stroke-width="3"/>
-${textAt(497, 164, `slot ${measure(state.backWidth + state.fitAdjustment)} × ${measure(effectiveSlotWidth(state))}`)}
+${textAt(497, 164, `slot ${measure(state.legWidth + state.fitAdjustment)} × ${measure(effectiveSlotWidth(state))}`)}
 ${textAt(497, 222, "copy into the mating plaque")}`;
     } else if (state.type === "easel") {
       drawing = `<rect x="235" y="45" width="90" height="205" rx="18" fill="#f3b783" stroke="#a34717" stroke-width="3"/><circle cx="280" cy="88" r="14" fill="#fff" stroke="#245f9e" stroke-width="3"/>
@@ -498,7 +498,7 @@ ${angled ? textAt(430, 110, `lean ${esc(state.angle)}°`) : ""}`;
       host.querySelector("[data-derived-size]").textContent = dimensions.derived;
       host.querySelector("[data-dimension-note]").textContent = dimensions.note;
       const wideSlot = host.querySelector("[data-wide-slot-size]");
-      if (wideSlot) wideSlot.textContent = `${displayMeasurement(state.backWidth + state.fitAdjustment, state.unit)} × ${displayMeasurement(result.slotWidth, state.unit)}`;
+      if (wideSlot) wideSlot.textContent = `${displayMeasurement(state.legWidth + state.fitAdjustment, state.unit)} × ${displayMeasurement(result.slotWidth, state.unit)}`;
       const totalHeight = host.querySelector("[data-wide-total-height]");
       if (totalHeight) totalHeight.textContent = displayMeasurement(state.height, state.unit);
       const status = host.querySelector("[data-status]");

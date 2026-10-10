@@ -9,7 +9,7 @@ format:
     include-in-header:
       text: |
         <link rel="stylesheet" href="../../../assets/plate-builder.css">
-        <script src="../../../assets/plate-builder.js" defer></script>
+        <script src="../../../assets/plate-builder.js?v=plain-fields-20261008" defer></script>
 execute: {enabled: false}
 ---
 
@@ -20,39 +20,43 @@ This browser tool makes repeatable plate geometry. It opens in inches. A millime
 <h2>Plate settings</h2>
 <div class="plate-unit-control" role="group" aria-label="Measurement unit"><button type="button" data-unit-button="in" aria-pressed="true">Inches</button><button type="button" data-unit-button="mm" aria-pressed="false">Millimetres</button></div>
 <div class="plate-control-section plate-fields">
+<h3 class="plate-section-title">Plate outline</h3>
 <div class="plate-field plate-field--wide"><label for="pb-preset">Starting preset</label><select id="pb-preset" data-preset><option value="">Current / custom</option><option value="blank">Blank rounded plate</option><option value="mount4">Four-hole mount</option><option value="bottles6">Six-bottle row</option><option value="bottles2x3">2 × 3 bottle plate</option><option value="markers">Marker rack</option><option value="drills">Drill row</option><option value="cable">Cable plate</option></select></div>
 <div class="plate-field plate-field--wide"><label for="pb-base">Base shape</label><select id="pb-base" data-key="base"><option value="rectangle">Rectangle</option><option value="rounded">Rounded rectangle</option><option value="circle">Circle</option><option value="ring">Ring</option></select></div>
-<div class="plate-field"><label for="pb-width">Width / diameter (<span data-unit-symbol>in</span>)</label><input id="pb-width" data-key="width" type="number" min="1" step="0.1"></div>
-<div class="plate-field"><label for="pb-height">Height (<span data-unit-symbol>in</span>)</label><input id="pb-height" data-key="height" type="number" min="1" step="0.1"></div>
-<div class="plate-field"><label for="pb-radius">Corner radius (<span data-unit-symbol>in</span>)</label><input id="pb-radius" data-key="radius" type="number" min="0" step="0.1"></div>
-<div class="plate-field"><label for="pb-ring">Ring wall (<span data-unit-symbol>in</span>)</label><input id="pb-ring" data-key="ringWall" type="number" min="0" step="0.1"></div>
+<div class="plate-field"><label for="pb-width"><span data-width-label>Width</span> (<span data-unit-symbol>in</span>)</label><input id="pb-width" data-key="width" type="number" min="1" step="0.1"><small class="plate-field-help">For a circle or ring, enter the full outside diameter. The radius is calculated automatically.</small></div>
+<div class="plate-field" data-show-base="rectangle rounded"><label for="pb-height">Height (<span data-unit-symbol>in</span>)</label><input id="pb-height" data-key="height" type="number" min="1" step="0.1"><small class="plate-field-help">Top-to-bottom size of a rectangular plate.</small></div>
+<div class="plate-field" data-show-base="rounded"><label for="pb-radius">Corner radius (<span data-unit-symbol>in</span>)</label><input id="pb-radius" data-key="radius" type="number" min="0" step="0.1"><small class="plate-field-help">Rounds each outside corner. It does not change any hole diameter.</small></div>
+<div class="plate-field" data-show-base="ring"><label for="pb-ring">Ring wall thickness (<span data-unit-symbol>in</span>)</label><input id="pb-ring" data-key="ringWall" type="number" min="0" step="0.1"><small class="plate-field-help">Material left between the outside circle and inner cut. Inner diameter = outer diameter − 2 × wall thickness.</small></div>
 </div>
 <div class="plate-control-section plate-fields">
+<h3 class="plate-section-title">Hole size</h3>
 <div class="plate-field plate-field--wide"><label for="pb-hole-mode">Hole sizing method</label><select id="pb-hole-mode" data-key="holeMode"><option value="measured">Measured object + total clearance</option><option value="direct">Direct finished diameter</option></select></div>
-<div class="plate-field"><label for="pb-object">Object diameter (<span data-unit-symbol>in</span>)</label><input id="pb-object" data-key="objectDiameter" type="number" min="0" step="0.1"></div>
-<div class="plate-field"><label for="pb-clearance">Total clearance (<span data-unit-symbol>in</span>)</label><input id="pb-clearance" data-key="clearance" type="number" step="0.1"></div>
-<div class="plate-field plate-field--wide"><label for="pb-hole">Direct diameter (<span data-unit-symbol>in</span>)</label><input id="pb-hole" data-key="holeDiameter" type="number" min="0" step="0.1"></div>
+<div class="plate-field" data-show-hole-mode="measured"><label for="pb-object">Measured object diameter (<span data-unit-symbol>in</span>)</label><input id="pb-object" data-key="objectDiameter" type="number" min="0" step="0.1"><small class="plate-field-help">Measure straight across the widest part of the object.</small></div>
+<div class="plate-field" data-show-hole-mode="measured"><label for="pb-clearance">Total added clearance (<span data-unit-symbol>in</span>)</label><input id="pb-clearance" data-key="clearance" type="number" step="0.1"><small class="plate-field-help">Added once to the measured diameter. A 0.02-inch total clearance gives about 0.01 inch per side.</small></div>
+<div class="plate-field plate-field--wide" data-show-hole-mode="direct"><label for="pb-hole">Finished hole diameter (<span data-unit-symbol>in</span>)</label><input id="pb-hole" data-key="holeDiameter" type="number" min="0" step="0.1"><small class="plate-field-help">Use this when you already know the exact diameter of the circle to cut.</small></div>
 </div>
 <div class="plate-control-section plate-fields">
+<h3 class="plate-section-title">Hole arrangement</h3>
 <div class="plate-field plate-field--wide"><label for="pb-pattern">Pattern</label><select id="pb-pattern" data-key="pattern"><option value="single">Single</option><option value="row">Row</option><option value="column">Column</option><option value="grid">Grid</option><option value="staggered">Staggered grid</option><option value="radial">Radial</option><option value="perimeter">Perimeter</option></select></div>
-<div class="plate-field"><label for="pb-rows">Rows</label><input id="pb-rows" data-key="rows" type="number" min="1" step="1"></div>
-<div class="plate-field"><label for="pb-columns">Columns</label><input id="pb-columns" data-key="columns" type="number" min="1" step="1"></div>
-<div class="plate-field"><label for="pb-spacing-x">X spacing (<span data-unit-symbol>in</span>)</label><input id="pb-spacing-x" data-key="spacingX" type="number" step="0.1"></div>
-<div class="plate-field"><label for="pb-spacing-y">Y spacing (<span data-unit-symbol>in</span>)</label><input id="pb-spacing-y" data-key="spacingY" type="number" step="0.1"></div>
-<div class="plate-field"><label for="pb-radial-count">Radial count</label><input id="pb-radial-count" data-key="radialCount" type="number" min="1" step="1"></div>
-<div class="plate-field"><label for="pb-radial-radius">Radial radius (<span data-unit-symbol>in</span>)</label><input id="pb-radial-radius" data-key="radialRadius" type="number" min="0" step="0.1"></div>
-<div class="plate-field"><label for="pb-angle">Start angle (°)</label><input id="pb-angle" data-key="startAngle" type="number" step="1"></div>
-<div class="plate-field"><label for="pb-perimeter">Perimeter count</label><input id="pb-perimeter" data-key="perimeterCount" type="number" min="1" step="1"></div>
+<div class="plate-field" data-show-pattern="column grid staggered"><label for="pb-rows">Rows</label><input id="pb-rows" data-key="rows" type="number" min="1" step="1"></div>
+<div class="plate-field" data-show-pattern="row grid staggered"><label for="pb-columns">Columns</label><input id="pb-columns" data-key="columns" type="number" min="1" step="1"></div>
+<div class="plate-field" data-show-pattern="row grid staggered"><label for="pb-spacing-x">Horizontal centre spacing (<span data-unit-symbol>in</span>)</label><input id="pb-spacing-x" data-key="spacingX" type="number" step="0.1"><small class="plate-field-help">Distance from one hole centre to the next.</small></div>
+<div class="plate-field" data-show-pattern="column grid staggered"><label for="pb-spacing-y">Vertical centre spacing (<span data-unit-symbol>in</span>)</label><input id="pb-spacing-y" data-key="spacingY" type="number" step="0.1"><small class="plate-field-help">Distance from one row centre to the next.</small></div>
+<div class="plate-field" data-show-pattern="radial"><label for="pb-radial-count">Number of holes</label><input id="pb-radial-count" data-key="radialCount" type="number" min="1" step="1"></div>
+<div class="plate-field" data-show-pattern="radial"><label for="pb-radial-radius">Circle-of-centres radius (<span data-unit-symbol>in</span>)</label><input id="pb-radial-radius" data-key="radialRadius" type="number" min="0" step="0.1"><small class="plate-field-help">Distance from the plate centre to each hole centre. This is not the hole radius.</small></div>
+<div class="plate-field" data-show-pattern="radial"><label for="pb-angle">First-hole angle (°)</label><input id="pb-angle" data-key="startAngle" type="number" step="1"></div>
+<div class="plate-field" data-show-pattern="perimeter"><label for="pb-perimeter">Number of holes</label><input id="pb-perimeter" data-key="perimeterCount" type="number" min="1" step="1"></div>
 </div>
 <div class="plate-control-section plate-fields">
-<div class="plate-field"><label for="pb-margin">Minimum edge margin (<span data-unit-symbol>in</span>)</label><input id="pb-margin" data-key="edgeMargin" type="number" step="0.1"></div>
-<div class="plate-field"><label for="pb-offset-x">X offset / origin (<span data-unit-symbol>in</span>)</label><input id="pb-offset-x" data-key="offsetX" type="number" step="0.1"></div>
-<div class="plate-field"><label for="pb-offset-y">Y offset / origin (<span data-unit-symbol>in</span>)</label><input id="pb-offset-y" data-key="offsetY" type="number" step="0.1"></div>
-<label class="plate-check"><input data-key="autoCentre" type="checkbox"> Centre pattern first (off = top-left origin)</label>
+<h3 class="plate-section-title">Position and export</h3>
+<div class="plate-field"><label for="pb-margin">Material outside each hole (<span data-unit-symbol>in</span>)</label><input id="pb-margin" data-key="edgeMargin" type="number" step="0.1"><small class="plate-field-help">Minimum material from a hole edge to the plate edge.</small></div>
+<div class="plate-field"><label for="pb-offset-x">Move pattern left/right (<span data-unit-symbol>in</span>)</label><input id="pb-offset-x" data-key="offsetX" type="number" step="0.1"></div>
+<div class="plate-field"><label for="pb-offset-y">Move pattern up/down (<span data-unit-symbol>in</span>)</label><input id="pb-offset-y" data-key="offsetY" type="number" step="0.1"></div>
+<label class="plate-check"><input data-key="autoCentre" type="checkbox"> Start with the hole pattern centred</label>
 <label class="plate-check"><input data-key="previewGuides" type="checkbox"> Show preview guides</label>
 <label class="plate-check"><input data-key="exportGuides" type="checkbox"> Include guides in export</label>
 </div>
-<div class="plate-actions"><button type="button" data-download>Download SVG</button><button type="button" data-json>Settings JSON</button><button type="button" data-copy>Copy share link</button><button type="button" data-reset>Reset</button></div>
+<div class="plate-actions"><button type="button" data-download>Download cut SVG</button><button type="button" data-json>Download settings JSON</button><button type="button" data-copy>Copy share link</button><button type="button" data-reset>Reset</button></div>
 </form>
 <section class="plate-workspace" aria-live="polite">
 <div class="plate-summary"><span>Hole diameter: <strong data-diameter></strong></span><span>Hole count: <strong data-count></strong></span><span>Units: <strong data-units>inches (in)</strong></span></div>
@@ -60,6 +64,19 @@ This browser tool makes repeatable plate geometry. It opens in inches. A millime
 <div class="plate-status" data-status></div>
 </section>
 </div>
+
+## What the downloads contain
+
+- **Cut SVG:** the actual full-size plate outline and holes. Open this in Inkscape or compatible laser software. Red paths are cut geometry. Optional guides are not cut paths.
+- **Settings JSON:** a text record of every builder value. It is useful for documentation or troubleshooting, but it is not a laser-cut file and this version of the builder does not import it.
+- **Share link:** the current settings stored in the web address. Send or bookmark this when you want the builder to reopen the same design.
+
+### Diameter and radius, without the jargon
+
+- For a **circle**, set **Outer diameter**. The tool calculates its radius as half the diameter.
+- For a **ring**, set **Outer diameter** and **Ring wall thickness**. The ring's inner opening is the outer diameter minus twice the wall thickness.
+- For a **rounded rectangle**, set **Width**, **Height**, and **Corner radius**. Corner radius affects only the four outside corners.
+- For a holder hole, either measure the object and add clearance, or choose **Direct finished diameter** and enter the final circle size yourself.
 
 ## What happens next
 

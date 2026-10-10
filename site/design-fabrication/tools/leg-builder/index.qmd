@@ -9,7 +9,7 @@ format:
     include-in-header:
       text: |
         <link rel="stylesheet" href="../../../assets/plate-builder.css">
-        <script src="../../../assets/leg-builder.js" defer></script>
+        <script src="../../../assets/leg-builder.js?v=body-slot-20261008" defer></script>
 execute: {enabled: false}
 ---
 
@@ -103,7 +103,7 @@ Each card distinguishes an exact construction class from a related joinery examp
 </form>
 
 <section class="plate-workspace" aria-live="polite">
-<div class="plate-summary"><span data-show-for="straight angled">Calculated slot width: <strong data-slot-width></strong></span><span data-show-for="wideEasel">Top-edge mating slot: <strong data-wide-slot-size></strong></span><span>Cut parts: <strong data-count></strong></span><span data-show-for="straight angled">Thickness factor vs 0.118 in (3 mm): <strong data-stiffness></strong></span><span>Units: <strong data-units>inches (in)</strong></span></div>
+<div class="plate-summary"><span data-show-for="straight angled">Calculated slot width: <strong data-slot-width></strong></span><span data-show-for="wideEasel">Body mating slot: <strong data-wide-slot-size></strong></span><span>Cut parts: <strong data-count></strong></span><span data-show-for="straight angled">Thickness factor vs 0.118 in (3 mm): <strong data-stiffness></strong></span><span>Units: <strong data-units>inches (in)</strong></span></div>
 <div class="leg-dimension-card">
 <h2 class="leg-step-title">1. <span data-dimension-title>What the dimensions mean</span></h2>
 <div class="leg-dimension-preview" data-dimension-preview></div>

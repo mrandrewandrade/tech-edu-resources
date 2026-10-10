@@ -1,30 +1,22 @@
 ---
 title: "Linux, Operating Systems and Basic Networking"
-description: "Choose a Linux distribution, install it safely, and prepare for basic networking work."
+description: "Choose, install, and begin using Linux safely, then build toward basic networking and administration."
 sidebar: tej
-body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
-execute:
-  enabled: false
+execute: {enabled: false}
 ---
 
-## Learning goals
+| What students learn | Why it matters |
+|:--|:--|
+| Use and administer a Linux system safely from the desktop and command line. | Operating-system knowledge gives students control over files, software, permissions, and system behaviour. |
 
-By the end of this unit:
+**Subsections:** Desktop use; files and permissions; command line; software; basic networking; services; backup and recovery
 
-- I will be able to compare Linux distributions for a specific computer and user.
-- I will be able to prepare for and complete an approved Linux Mint installation.
-- I will be able to identify the network information needed for later troubleshooting.
-
-This is important because it enables me to install, test, and support a computer without guessing.
+**Coming out of this section, students can:** Install and use Linux, manage files and permissions, run commands, check basic network settings and connectivity, and complete basic administration.
 
 ## Start here
 
-1. [Choose a Linux distribution](choosing-a-distribution.qmd).
-2. [Install Linux Mint](install-linux-mint.qmd) on a teacher-approved computer.
-3. Record the computer name, wired or wireless connection, Internet Protocol address, gateway, and Domain Name System servers for the networking lesson.
+1. [Choose a Linux distribution](choosing-a-distribution.qmd)
+2. [Install Linux Mint 22.3 "Zena" Xfce Edition](install-linux-mint.qmd)
 
-::: {.callout-warning title="Before changing a drive"}
-An operating-system installation can erase files and existing partitions. Use only the assigned computer and installer. Stop for teacher confirmation before any step that changes a drive.
-:::
-
+Later lessons will build from the desktop into files, permissions, the command line, software, services, backup, and recovery.
