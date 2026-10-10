@@ -1,0 +1,40 @@
+---
+title: "Linux Terminal and Safe Administration"
+description: "Find, edit and inspect files and understand basic Linux system administration."
+sidebar: tej
+toc: true
+categories: [Linux, terminal, commands, beginner]
+---
+
+**Goal:** independently navigate and maintain your own permitted workspace from a terminal. Use a test directory in your home folder rather than deleting or changing system files.
+
+## Essential commands
+
+| Task | Command | What to notice |
+|---|---|---|
+| Current location | `pwd` | Absolute path |
+| List files | `ls -la` | Names, hidden files, permissions |
+| Navigate | `cd`, `cd ..`, `cd ~` | Relative and home paths |
+| Create workspace | `mkdir -p ~/tej-practice` | A safe folder for experiments |
+| Create/edit text | `nano ~/tej-practice/notes.txt` | Save with Ctrl+O |
+| Read text | `cat ~/tej-practice/notes.txt` | Content vs filename |
+| Copy or move | `cp`, `mv` | Source and destination |
+| Inspect help | `man ls`, `ls --help` | Read documentation |
+| Inspect system | `uname -a`, `lscpu`, `free -h`, `df -h` | Kernel, CPU, RAM, free disk |
+| Running processes | `top` or `htop` | Live CPU and memory use |
+
+Use tab completion and command history. Explain the difference between `/`, `~` and `.`. Know what `sudo` does but do not run system-changing commands without teacher approval.
+
+## 15-minute challenge
+
+Create `~/tej-practice`, open a text file, record three commands you used and their purposes, copy the file to a backup name, then locate both files using the terminal. Demonstrate the result to a partner.
+
+## Approved software setup
+
+On Debian/Ubuntu/Mint systems, use the teacher's package list. `sudo apt update` refreshes package information; `sudo apt install <package>` installs a package, but the specific package and authorization must be known. Do not paste unknown Internet install scripts into a terminal.
+
+## Evidence
+
+Take a screenshot or record a few important commands and results. Explain one error message you encountered.
+
+[Next: networking](03-networking.qmd) | [Hardware sensors](06-linux-hardware-sensors.qmd).
