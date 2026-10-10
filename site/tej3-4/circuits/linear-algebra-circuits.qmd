@@ -25,7 +25,7 @@ $$
 a_{11}x_1 + a_{12}x_2 &= b_1 \\
 a_{21}x_1 + a_{22}x_2 &= b_2
 \end{aligned}
-$$
+$$ {#eq-linear-system}
 
 The same system can be written as a matrix equation:
 
@@ -46,13 +46,13 @@ x_2
 b_1 \\
 b_2
 \end{bmatrix}}_{\mathbf{b}}
-$$
+$$ {#eq-linear-matrix-form}
 
 In compact form:
 
 $$
 A\mathbf{x}=\mathbf{b}
-$$
+$$ {#eq-linear-compact}
 
 ## Build the matrix from Kirchhoff equations
 
@@ -70,7 +70,7 @@ When $A$ is invertible,
 
 $$
 \mathbf{x}=A^{-1}\mathbf{b}
-$$
+$$ {#eq-linear-inverse}
 
 In engineering software, solve the system directly instead of manually calculating the inverse.
 
@@ -80,13 +80,15 @@ Substitute the solution into the original equations or calculate the residual:
 
 $$
 \mathbf{r}=A\mathbf{x}-\mathbf{b}
-$$
+$$ {#eq-linear-residual}
 
 A correct solution should give a residual vector close to zero:
 
 $$
 \mathbf{r}\approx\mathbf{0}
-$$
+$$ {#eq-linear-zero-residual}
+
+Equations @eq-linear-residual and @eq-linear-zero-residual give a numerical check on the solution.
 
 ## Course-material status
 

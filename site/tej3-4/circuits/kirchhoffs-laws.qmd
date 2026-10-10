@@ -18,17 +18,22 @@ execute: {enabled: false}
 
 ## Kirchhoff's current law
 
+<figure class="ter-circuit-figure">
+<img src="../../assets/electronics/schematics/kirchhoff-node-loop-reference.svg" alt="Circuit schematic identifying a square junction node and a closed loop for Kirchhoff analysis." loading="lazy">
+<figcaption>A node is a real junction in the schematic. A loop is a complete closed path.</figcaption>
+</figure>
+
 Charge does not accumulate at an ideal node:
 
 $$
 \sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}
-$$
+$$ {#eq-kirchhoff-current}
 
 Equivalently, using one consistent sign convention:
 
 $$
 \sum_{k=1}^{n} I_k = 0
-$$
+$$ {#eq-kirchhoff-current-signed}
 
 An assumed current direction is allowed. A negative answer means the real direction is opposite to the arrow you selected.
 
@@ -38,7 +43,7 @@ The algebraic sum of voltage changes around a closed loop is zero:
 
 $$
 \sum_{k=1}^{n}\Delta V_k = 0
-$$
+$$ {#eq-kirchhoff-voltage}
 
 Choose a loop direction and keep the sign convention consistent. Crossing a source from negative to positive is a rise; crossing a resistor in the direction of current is a drop.
 
@@ -52,9 +57,9 @@ Choose a loop direction and keep the sign convention consistent. Crossing a sour
 
 $$
 V_R = IR
-$$
+$$ {#eq-kirchhoff-ohms-law}
 
-6. Solve the simultaneous equations.
+6. Solve the simultaneous equations created with Equations @eq-kirchhoff-current and @eq-kirchhoff-voltage.
 7. Substitute the answers back into the original node and loop equations.
 
 ## Course-material status

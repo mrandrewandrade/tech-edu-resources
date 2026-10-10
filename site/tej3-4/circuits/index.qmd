@@ -51,13 +51,17 @@ Ohm's law connects voltage, current, and resistance.
 
 $$
 V = IR \qquad I = \frac{V}{R} \qquad R = \frac{V}{I}
-$$
+$$ {#eq-ohms-law}
 
-Electrical power is the rate of energy transfer.
+Equation @eq-ohms-law gives the three general forms of Ohm's law.
+
+Electrical power is the rate of energy transfer:
 
 $$
 P = VI \qquad P = I^2R \qquad P = \frac{V^2}{R}
-$$
+$$ {#eq-power-laws}
+
+Use Equation @eq-power-laws only after identifying the known quantities.
 
 Use volts (V), amperes (A), ohms ($\Omega$), and watts (W). Convert prefixes before substituting, then report the final answer with the appropriate prefix and significant figures.
 
@@ -77,11 +81,11 @@ For a Casio calculator, enter one calculation per line. Use `EXP` for powers of 
 
 Use these notes with the matching teaching slides and question sheet.
 
-1. [Series circuits](series-circuits.qmd) — one current path, voltage drops, resistance, and power.
-2. [Parallel circuits](parallel-circuits.qmd) — common voltage, branch currents, equivalent resistance, and power.
-3. [Series-parallel circuits](series-parallel-circuits.qmd) — identify groups, reduce, solve, expand, and check.
-4. [Kirchhoff's laws](kirchhoffs-laws.qmd) — write current and voltage equations for networks that do not reduce directly.
-5. [Linear algebra for circuits](linear-algebra-circuits.qmd) — solve several node or loop equations together.
+1. [Series circuits](series-circuits.qmd): one current path, voltage drops, resistance, and power.
+2. [Parallel circuits](parallel-circuits.qmd): common voltage, branch currents, equivalent resistance, and power.
+3. [Series-parallel circuits](series-parallel-circuits.qmd): identify groups, reduce, solve, expand, and check.
+4. [Kirchhoff's laws](kirchhoffs-laws.qmd): write current and voltage equations for networks that do not reduce directly.
+5. [Linear algebra for circuits](linear-algebra-circuits.qmd): solve several node or loop equations together.
 
 ## Questions, answers, and class artifacts
 

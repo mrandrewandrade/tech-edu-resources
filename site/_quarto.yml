@@ -49,11 +49,15 @@ project:
     - assets/tej-electronics.css
     - assets/tej-curriculum.js
     - assets/tej-curriculum.css
+    - assets/tej-equations.js
+    - "assets/electronics/**"
     - "assets/name-tag-photopea/**"
     - "assets/personal-logo-photopea/**"
     - "assets/laser-cutting/**"
     - "assets/laser-library/**"
     - assets/laser-library.js
+    - assets/plate-builder.js
+    - assets/leg-builder.js
     - assets/bs-glossary-lookup.json
     - "assets/lore/**"
 
@@ -195,6 +199,7 @@ format:
       - assets/commons-overrides.css
       - assets/bs-learn.css
       - assets/tej-curriculum.css
+      - assets/tej-equations.css
     include-after-body:
       - includes/bs-scripts.html
     include-in-header:

@@ -20,11 +20,16 @@ execute: {enabled: false}
 
 A series circuit has one continuous current path. Opening any part stops current everywhere.
 
+<figure class="ter-circuit-figure">
+<img src="../../assets/electronics/schematics/series-rule-reference.svg" alt="Series circuit schematic showing one path through the source and resistors." loading="lazy">
+<figcaption>Series-circuit reference schematic. The same current passes through every component.</figcaption>
+</figure>
+
 The same current passes through every component:
 
 $$
 I_k = I_T
-$$
+$$ {#eq-series-current}
 
 Here, $k$ represents any component in the series path.
 
@@ -34,31 +39,31 @@ Series resistances add:
 
 $$
 R_T = \sum_{k=1}^{n} R_k
-$$
+$$ {#eq-series-resistance}
 
 The source voltage equals the sum of the voltage drops:
 
 $$
 V_T = \sum_{k=1}^{n} V_k
-$$
+$$ {#eq-series-voltage}
 
 Total power equals the sum of the component powers:
 
 $$
 P_T = \sum_{k=1}^{n} P_k = V_T I_T
-$$
+$$ {#eq-series-power}
 
 After finding $R_T$, calculate the circuit current with Ohm's law:
 
 $$
 I_T = \frac{V_T}{R_T}
-$$
+$$ {#eq-series-total-current}
 
 Then calculate any component voltage drop:
 
 $$
 V_k = I_T R_k
-$$
+$$ {#eq-series-component-voltage}
 
 ## Voltage divider
 
@@ -66,15 +71,15 @@ For an unloaded series voltage divider, the voltage across any resistor is
 
 $$
 V_k = V_T\frac{R_k}{R_T}
-$$
+$$ {#eq-series-divider}
 
-The divider equation is a shortcut derived from Ohm's law. It does not replace the general series rules.
+Equation @eq-series-divider is a shortcut derived from Ohm's law. It does not replace Equations @eq-series-current, @eq-series-resistance, and @eq-series-voltage.
 
 ## Check the answer
 
 $$
 \sum_{k=1}^{n} V_k \overset{?}{=} V_T
-$$
+$$ {#eq-series-voltage-check}
 
 Also confirm that the units are correct, the current is identical everywhere, and the component powers do not exceed their ratings.
 

@@ -5,12 +5,27 @@
     return window.location.pathname === candidate ||
       window.location.pathname.startsWith(candidate + "/");
   }) || "";
+
+  window.terEquationSources = [];
+  document.querySelectorAll("span.math.display").forEach(function (equation, index) {
+    const source = equation.textContent
+      .trim()
+      .replace(/^\\\[\s*/, "")
+      .replace(/\s*\\\]$/, "")
+      .replace(/\s*\\tag\{[^}]+\}\s*$/, "")
+      .trim();
+    const key = "ter-equation-" + (index + 1);
+    equation.dataset.terEquationKey = key;
+    window.terEquationSources.push({ key: key, source: source });
+  });
+
   [
     "commons-lore.js",
     "bs-learn.js",
     "bs-glossary.js",
     "bs-reference-titles.js",
-    "bs-learn-scroll.js"
+    "bs-learn-scroll.js",
+    "tej-equations.js"
   ].forEach(function (file) {
     const script = document.createElement("script");
     script.src = base + "/assets/" + file;

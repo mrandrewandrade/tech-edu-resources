@@ -20,9 +20,14 @@ execute: {enabled: false}
 
 Components are in parallel when both ends connect to the same two nodes. Every branch has the same voltage:
 
+<figure class="ter-circuit-figure">
+<img src="../../assets/electronics/schematics/parallel-rule-reference.svg" alt="Parallel circuit schematic showing several resistor branches connected to the same two nodes." loading="lazy">
+<figcaption>Parallel-circuit reference schematic. Every branch connects to the same two nodes.</figcaption>
+</figure>
+
 $$
 V_k = V_T
-$$
+$$ {#eq-parallel-voltage}
 
 ## General parallel rules
 
@@ -30,39 +35,39 @@ The source current is the sum of the branch currents:
 
 $$
 I_T = \sum_{k=1}^{n} I_k
-$$
+$$ {#eq-parallel-current}
 
 The equivalent resistance is
 
 $$
 \frac{1}{R_T} = \sum_{k=1}^{n}\frac{1}{R_k}
-$$
+$$ {#eq-parallel-resistance}
 
 For exactly two parallel resistors, the product-over-sum shortcut is
 
 $$
 R_T = \frac{R_aR_b}{R_a+R_b}
-$$
+$$ {#eq-parallel-two-resistors}
 
 Calculate any branch current with Ohm's law:
 
 $$
 I_k = \frac{V_T}{R_k}
-$$
+$$ {#eq-parallel-branch-current}
 
 Total power equals the sum of the branch powers:
 
 $$
 P_T = \sum_{k=1}^{n}P_k = V_T I_T
-$$
+$$ {#eq-parallel-power}
 
 ## Check the answer
 
 $$
 \sum_{k=1}^{n} I_k \overset{?}{=} I_T
-$$
+$$ {#eq-parallel-current-check}
 
-The equivalent resistance must be smaller than the smallest branch resistance.
+Equation @eq-parallel-current-check checks the branch currents. The equivalent resistance from Equation @eq-parallel-resistance must be smaller than the smallest branch resistance.
 
 ## Notes, slides, and question sheet
 

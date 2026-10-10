@@ -22,27 +22,39 @@ Components are in series when the same current must pass through them. Component
 
 Do not decide from appearance alone. Trace the nodes and current paths.
 
+<figure class="ter-circuit-figure">
+<img src="../../assets/electronics/schematics/series-parallel-comparison.svg" alt="Comparison of a one-path series circuit and a parallel circuit with branches." loading="lazy">
+<figcaption>Use nodes and current paths, not visual appearance, to identify series and parallel connections.</figcaption>
+</figure>
+
 ## Reduction equations
 
 For a series group:
 
 $$
 R_{\mathrm{series}} = \sum_{k=1}^{n}R_k
-$$
+$$ {#eq-mixed-series-resistance}
 
 For a parallel group:
 
 $$
 \frac{1}{R_{\mathrm{parallel}}}
 = \sum_{k=1}^{n}\frac{1}{R_k}
-$$
+$$ {#eq-mixed-parallel-resistance}
 
 For exactly two resistors in parallel:
 
 $$
 R_{\mathrm{parallel}}
 = \frac{R_aR_b}{R_a+R_b}
-$$
+$$ {#eq-mixed-two-resistors}
+
+Equations @eq-mixed-series-resistance and @eq-mixed-parallel-resistance are applied one group at a time. Redraw the complete circuit after every reduction.
+
+<figure class="ter-circuit-figure">
+<img src="../../assets/electronics/schematics/series-parallel-example.png" alt="Canonical series-parallel circuit with a source, one series resistor, and two parallel branches." loading="lazy">
+<figcaption>Canonical mixed network used in the teaching slides and question sheet.</figcaption>
+</figure>
 
 ## Solve in two directions
 
@@ -56,7 +68,7 @@ $$
 
 $$
 I_T = \frac{V_T}{R_T}
-$$
+$$ {#eq-mixed-total-current}
 
 ### Expand back to the branches
 
@@ -66,13 +78,13 @@ For any resistor:
 
 $$
 V_k = I_kR_k
-$$
+$$ {#eq-mixed-ohms-law}
 
 For the entire network:
 
 $$
 P_T = V_TI_T = \sum_{k=1}^{n}P_k
-$$
+$$ {#eq-mixed-power}
 
 ## Check the answer
 
@@ -80,15 +92,15 @@ At every node:
 
 $$
 \sum I_{\mathrm{in}} \overset{?}{=} \sum I_{\mathrm{out}}
-$$
+$$ {#eq-mixed-current-check}
 
 Around every complete path:
 
 $$
 \sum \Delta V \overset{?}{=} 0
-$$
+$$ {#eq-mixed-voltage-check}
 
-Also confirm the total power equals the sum of the component powers.
+Use Equations @eq-mixed-current-check and @eq-mixed-voltage-check to check the network. Also confirm the total power equals the sum of the component powers.
 
 ## Notes, slides, and question sheet
 

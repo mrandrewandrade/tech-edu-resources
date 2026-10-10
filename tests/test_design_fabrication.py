@@ -80,100 +80,64 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertEqual(positions, sorted(positions))
         self.assertNotIn('title: "TAS Notes"', config)
 
-    def test_design_fabrication_sidebar_starts_with_nice_and_ends_with_applications(self) -> None:
+    def test_design_fabrication_sidebar_matches_the_public_collection(self) -> None:
         config = self.read("_quarto.yml")
         sidebar_start = config.index("- id: design-fabrication")
         sidebar_end = config.index("- id: tas2", sidebar_start)
         sidebar = config[sidebar_start:sidebar_end]
-        nice = sidebar.index('section: "1. N.I.C.E. Design Process"')
-        applications = sidebar.index('section: "Ideas by Technology Area"')
-        library = sidebar.index('section: "Fabrication Library & Tools"')
-        self.assertLess(nice, library)
-        self.assertLess(library, applications)
-        self.assertEqual(sidebar.count('section: "Ideas by Technology Area"'), 1)
+        ordered = [
+            'text: "Design & Fabrication Home"',
+            'text: "N.I.C.E. Design Process"',
+            'text: "Logo Design"',
+            'text: "Tool Organizer Project"',
+            'section: "Fabrication Tools"',
+        ]
+        positions = [sidebar.index(item) for item in ordered]
+        self.assertEqual(positions, sorted(positions))
+        self.assertNotIn("Systems Design & Fabrication Track", sidebar)
+        self.assertNotIn("Ideas by Technology Area", sidebar)
 
-    def test_systems_design_fabrication_track_covers_the_shop(self) -> None:
-        track = self.read("design-fabrication/systems-design-fabrication-track/index.qmd")
-        for term in (
-            "Systems Design & Fabrication Track",
-            "N.I.C.E. Design Process",
-            "jointer",
-            "planer",
-            "sheet metal",
-            "horizontal band saw",
-            "abrasive cut-off",
-            "resistance spot welding",
-            "MIG",
-            "TIG",
-            "shielded metal arc welding",
-            "manual milling",
-            "manual lathe",
-            "surface grinding",
-            "CNC mill",
-            "CNC router",
-            "CNC engraving",
-            "laser cutting",
-            "3D printing",
-            "Manual plasma cutting",
-            "CNC plasma system is still being built",
-            "integrated systems capstone",
-            "concrete screws",
-            "wedge anchors",
-            "orthographic projection",
-            "GD&T",
-            "Clearance fit",
-            "squaring a block",
-            "step turning",
-            "knurling",
-        ):
-            self.assertIn(term, track)
-        for code in ("TIJ", "TAS", "TDJ", "TMJ", "TCJ", "TTJ", "TEJ", "TGJ", "THJ"):
-            self.assertIn(code, track)
+    def test_retired_systems_track_is_not_published(self) -> None:
         config = self.read("_quarto.yml")
-        self.assertIn("design-fabrication/systems-design-fabrication-track/index.qmd", config)
+        self.assertNotIn("design-fabrication/systems-design-fabrication-track/index.qmd", config)
         landing = self.read("design-fabrication/index.qmd")
-        self.assertIn("systems-design-fabrication-track/index.qmd", landing)
+        self.assertNotIn("systems-design-fabrication-track/index.qmd", landing)
 
     def test_nice_create_communicate_and_evaluate_meanings_are_explicit(self) -> None:
-        overview = self.read("design-fabrication/01-nice-design-process/index.qmd")
-        create = self.read("design-fabrication/01-nice-design-process/03-create-communicate.qmd")
-        evaluate = self.read("design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.qmd")
-        track = self.read("design-fabrication/systems-design-fabrication-track/index.qmd")
-
-        for text in (overview, create, track):
-            self.assertIn("minimal pitchable", text.lower())
-            self.assertIn("minimal viable", text.lower())
-        for phrase in (
-            "simplest version that can **sell and test the idea**",
-            "Minimal does not mean physically smaller",
-            "Pitch the concept",
-            "Record the feedback without defending the first version",
+        process = self.read("design-fabrication/design-process/index.qmd")
+        for heading in (
+            "## Situation: understand what is happening",
+            "## N: Needs and Necessities",
+            "## I: Investigate and Inquire",
+            "## C: Create and Communicate",
+            "## E: Evaluate",
+            "## Repeat the cycle",
         ):
-            self.assertIn(phrase, create)
+            self.assertIn(heading, process)
         for phrase in (
-            "Synthesize feedback",
-            "re-question the situation",
-            "problem statement",
-            "stated needs",
-            "whether the proposal meets the needs",
+            "situation statement",
+            "need statement",
+            "evidence-based direction",
+            "clear pitch",
+            "revised solution supported by evidence",
         ):
-            self.assertIn(phrase.lower(), evaluate.lower() + track.lower())
+            self.assertIn(phrase.lower(), process.lower())
+        for worksheet in (
+            "N.I.C.E. Needs Worksheet",
+            "N.I.C.E. Inquiry Worksheet",
+            "Communicate Worksheet Online",
+            "Feedback Package",
+            "N.I.C.E. Evaluate Worksheet",
+            "N.I.C.E. Design Log",
+        ):
+            self.assertIn(worksheet, process)
 
-    def test_public_safety_content_points_to_board_and_course_information(self) -> None:
+    def test_public_pages_do_not_replace_local_safety_instruction(self) -> None:
         landing = self.read("design-fabrication/index.qmd")
-        track = self.read("design-fabrication/systems-design-fabrication-track/index.qmd")
-        applications = self.read("design-fabrication/applications/index.qmd")
-        for content in (landing, track, applications):
-            self.assertIn("school board", content.lower())
-            self.assertIn("Google Classroom", content)
-            self.assertIn("Machine-specific safety instruction", content)
-        for forbidden in (
-            "Machine authorization gates",
-            "Current curriculum status",
-            "Implementation status",
-            "90 to 140 hours",
-        ):
-            self.assertNotIn(forbidden, track)
+        organizer = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
+        self.assertNotIn("machine operating procedure", landing.lower())
+        self.assertNotIn("machine operating procedure", organizer.lower())
+        self.assertIn("safe handling", organizer)
 
     def test_homepage_prioritizes_reusable_resources(self) -> None:
         home = self.read("index.qmd")
@@ -200,14 +164,15 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_current_tas_projects_are_prominent_and_original(self) -> None:
         landing = self.read("design-fabrication/index.qmd")
-        self.assertIn("Current TAS projects", landing)
-        self.assertIn("Name + Logo Wood Name Tag", landing)
-        self.assertIn("3D Printed Faux Enamel Pin / Jewellery", landing)
-        self.assertIn("Hardware / Assembly Project: TBD", landing)
-        enamel = self.read("design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.qmd")
-        self.assertIn("Do not reproduce the author's finished designs", enamel)
-        for step in ("Sketch or choose", "Rebuild/model", "Export STL or 3MF", "Decide print orientation", "Finish and colour", "Revise the source model"):
-            self.assertIn(step, enamel)
+        for project in (
+            "N.I.C.E. Design Process",
+            "Logo Design",
+            "Tool Organizer Project",
+        ):
+            self.assertIn(project, landing)
+        organizer = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
+        for step in ("Measure the tools", "Make a small fit test", "build the prototype", "record the next revision"):
+            self.assertIn(step, organizer)
 
     def test_digital_design_and_modelling_branches_are_explicit(self) -> None:
         digital = self.read("design-fabrication/02-digital-design/index.qmd")
@@ -224,12 +189,10 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("No substitute image has been invented", gallery)
 
     def test_curriculum_relevance_is_varied_and_compact(self) -> None:
-        pages = list(CURRICULUM.rglob("*.qmd"))
-        relevance_pages = [p for p in pages if "ter-curriculum-relevance" in p.read_text(encoding="utf-8")]
-        self.assertGreaterEqual(len(relevance_pages), 20)
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")
-        for code in ("TIJ1O", "TDJ", "TMJ", "TGJ", "TEJ", "TCJ", "THJ", "TTJ"):
-            self.assertIn(code, main)
+        self.assertLess(len(main.split()), 300)
+        self.assertIn("A concise collection", main)
+        self.assertIn("Fabrication tools", main)
 
     def test_curriculum_glossary_metadata_resolves(self) -> None:
         glossary = json.loads((ROOT / "glossary" / "glossary.json").read_text(encoding="utf-8"))
@@ -271,11 +234,10 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_course_code_queries_have_specific_pages(self) -> None:
         expectations = {
-            "TDJ2O laser cutting": "design-fabrication/03-laser-cutting/index.qmd",
-            "TMJ2O 3d printing": "design-fabrication/04-3d-printing/index.qmd",
-            "TTJ tool holder": "design-fabrication/03-laser-cutting/06-tool-holder.qmd",
-            "TGJ logo": "design-fabrication/02-digital-design/03-logos-lettermarks.qmd",
-            "Ontario curriculum design process": "design-fabrication/01-nice-design-process/index.qmd",
+            "tool organizer": "design-fabrication/laser-cutting/tool-organizer.qmd",
+            "logo design": "design-fabrication/logo-design/index.qmd",
+            "design process": "design-fabrication/design-process/index.qmd",
+            "fabrication plate builder": "design-fabrication/tools/plate-builder/index.qmd",
         }
         for query, relative in expectations.items():
             words = re.findall(r"[a-z0-9]+", query.lower())
@@ -291,11 +253,11 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_library_and_curriculum_cross_link(self) -> None:
         library = self.read("teaching-materials/laser-cutting/index.qmd")
-        curriculum = self.read("design-fabrication/03-laser-cutting/index.qmd")
-        self.assertIn("design-fabrication/03-laser-cutting", library)
+        curriculum = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
+        self.assertIn("design-fabrication/laser-cutting/tool-organizer.qmd", library)
         self.assertIn("teaching-materials/laser-cutting", curriculum)
 
-    def test_first_laser_projects_toolkit_is_complete(self) -> None:
+    def legacy_first_laser_projects_toolkit_is_complete(self) -> None:
         toolkit = self.read("design-fabrication/03-laser-cutting/resources/index.qmd")
         for label in ("Basic Geometry", "Hole", "Slot", "Structure", "Wall + Mounting", "Organizer"):
             self.assertIn(label, toolkit)
@@ -430,6 +392,32 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Fabrication Planning Sheet", nav)
         self.assertIn("Fabrication Plate Builder", nav)
 
+    def test_first_laser_projects_toolkit_is_complete(self) -> None:
+        landing = self.read("design-fabrication/index.qmd")
+        organizer = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
+        logo = self.read("design-fabrication/logo-design/index.qmd")
+        nav = self.read("_quarto.yml")
+
+        for label in (
+            "Fabrication Plate Builder",
+            "Laser-Cut Leg & Support Builder",
+            "Tool Organizer Gallery",
+            "Laser-Cutting Files and Resources",
+        ):
+            self.assertIn(label, landing)
+            self.assertIn(label, nav)
+        for tool in ("Photopea", "GIMP", "Adobe Photoshop"):
+            self.assertIn(tool, logo)
+        self.assertEqual(logo.count("youtube.com/watch"), 4)
+        for phrase in (
+            "measure real tools",
+            "Fabrication Plate Builder",
+            "Laser-Cut Leg & Support Builder",
+            "small fit test",
+            "record the next revision",
+        ):
+            self.assertIn(phrase, organizer)
+
     def test_reverse_engineering_assignment_is_originality_and_evidence_first(self) -> None:
         assignment = self.read("design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.qmd")
         for quality in ("Faster", "Cheaper", "Better looking", "More ergonomic", "More positive", "More serviceable"):
@@ -445,7 +433,7 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Good Idea, Better Product", toolkit)
         self.assertIn("reverse-engineer-improve.qmd", toolkit)
 
-    def test_free_online_resource_directory_is_broad_and_careful(self) -> None:
+    def legacy_free_online_resource_directory_is_broad_and_careful(self) -> None:
         directory = self.read("design-fabrication/resources/work-in-progress/index.qmd")
         for heading in (
             "Find ideas and understand products",
@@ -513,6 +501,13 @@ class DesignFabricationTests(unittest.TestCase):
             content = self.read(relative)
             self.assertIn("resources/work-in-progress/index.qmd", content, relative)
             self.assertIn("Work in Progress", content, relative)
+
+    def test_draft_resource_directory_is_not_published(self) -> None:
+        config = self.read("_quarto.yml")
+        landing = self.read("design-fabrication/index.qmd")
+        self.assertNotIn("design-fabrication/resources/work-in-progress/index.qmd", config)
+        self.assertNotIn("Free Online Resource Directory", config)
+        self.assertNotIn("Free Online Resource Directory", landing)
 
     def test_public_classroom_kit_has_palettes_and_reference_assemblies(self) -> None:
         kit = SITE / "assets" / "laser-library" / "classroom-kit"

@@ -15,21 +15,15 @@ class CourseContentTests(unittest.TestCase):
     def test_course_homes_are_useful_and_searchable(self) -> None:
         design = self.read("design-fabrication/index.qmd")
         tej = self.read("tej3-4/index.qmd")
-        self.assertIn("General Design & Fabrication", design)
+        self.assertIn('title: "Design & Fabrication"', design)
         self.assertIn("N.I.C.E. Design Process", design)
-        self.assertIn("Laser Cutting &amp; 2D Fabrication", design)
-        self.assertIn("3D Modelling + 3D Printing", design)
-        self.assertIn("**Work in progress.**", tej)
-        self.assertIn("data-bs-learn-search", tej)
-        self.assertIn("data-bs-learn-list", tej)
-        self.assertIn(
-            "0. [Course Orientation, Safety, Design Process, and Documentation]", tej
-        )
-        self.assertIn(
-            "1. [Number Systems, Measurement, Units, and Calculator Skills]", tej
-        )
-        self.assertIn("## Curriculum Roadmap", tej)
-        self.assertIn("[Open the complete curriculum roadmap](curriculum/index.qmd)", tej)
+        self.assertIn("Logo Design", design)
+        self.assertIn("Tool Organizer Project", design)
+        self.assertIn("Fabrication Plate Builder", design)
+        self.assertIn('title="Work in progress"', tej)
+        self.assertIn("## Available units", tej)
+        self.assertIn("[Open Circuits](circuits/index.qmd)", tej)
+        self.assertIn("[Open the Engineering Preparation Track]", tej)
 
     def test_retired_lessons_are_compatibility_only(self) -> None:
         config = self.read("_quarto.yml")
@@ -88,59 +82,94 @@ class CourseContentTests(unittest.TestCase):
         track = self.read("tej3-4/engineering-preparation-track/index.qmd")
         self.assertIn('title: "Engineering Preparation Track"', track)
         self.assertNotIn('title: "Waterloo Engineering Track"', track)
-        self.assertIn("## Full progression", track)
-        self.assertEqual(track.count("**Learning goal:**"), 16)
-        self.assertEqual(track.count("**Why it matters:**"), 16)
-        self.assertEqual(track.count("**Subsections:**"), 16)
-        self.assertEqual(track.count("**Subsections:**\n\n1."), 16)
+        self.assertIn("## Circuit sequence", track)
+        self.assertEqual(track.count("**I will be able to**"), 19)
+        self.assertEqual(track.count("**This is useful because I can**"), 19)
+        self.assertEqual(track.count("**Used in university:**"), 19)
         self.assertNotIn("| What students learn | Why it matters |", track)
-        self.assertNotIn('collapse="true" title="Why it matters"', track)
-        self.assertIn("[0. Engineering design and communication](#chapter-0-engineering-design-and-communication)", track)
-        self.assertIn("[15. Engineering design project](#chapter-12-engineering-design-project)", track)
-        self.assertEqual(track.count("**Coming out of this chapter, students can:**"), 16)
         self.assertNotIn("<summary>What is needed</summary>", track)
-        self.assertEqual(track.count("**Suggested work:**"), 15)
-        self.assertEqual(track.count("**Reference:**") + track.count("**References:**"), 14)
         self.assertNotIn("| Equipment |", track)
         self.assertNotIn("| Consumables |", track)
         self.assertNotIn("| Teacher note |", track)
-        self.assertIn("Ohm's law and electrical power", track)
-        self.assertIn("Series, parallel, and series-parallel circuits", track)
-        self.assertIn("Kirchhoff's laws and systems of equations", track)
-        self.assertIn("equivalent resistance, source current, branch current, voltage drops, and power", track)
+        self.assertIn("Ohm's law and power", track)
+        self.assertIn("Series circuits", track)
+        self.assertIn("Parallel circuits", track)
+        self.assertIn("Series-parallel circuits", track)
+        self.assertIn("Kirchhoff's laws", track)
+        self.assertIn("Linear algebra for circuits", track)
         self.assertIn("Material and energy balances", track)
-        self.assertIn("Sensors, measurement, calibration, and uncertainty", track)
+        self.assertIn("Sensors and measurement", track)
         self.assertIn("Curve fitting, regression, and machine learning", track)
         self.assertIn("Number systems and digital representation", track)
         self.assertIn("Sensor, logic, and actuator project", track)
-        self.assertIn("Output driver and flyback protection", track)
-        self.assertIn("Signal smoothing and filtering", track)
-        self.assertLess(track.index("## 7. Resistor-capacitor"), track.index("## 8. Sensors"))
-        self.assertLess(track.index("## 8. Sensors"), track.index("## 9. Curve fitting"))
-        self.assertIn("Signed integers and two's complement", track)
-        self.assertIn("training and test data, baselines, prediction error", track)
-        self.assertLess(track.index("## 10. Motors"), track.index("## 11. Boolean logic"))
-        self.assertLess(track.index("## 11. Boolean logic"), track.index("## 12. Sensor, logic"))
-        self.assertLess(track.index("## 12. Sensor, logic"), track.index("## 13. Number systems"))
-        self.assertLess(track.index("## 13. Number systems"), track.index("## 14. Feedback"))
-        self.assertIn("Kirchhoff's current law at nodes", track)
+        sequence = [
+            "## Engineering calculations", "## Ohm's law and power",
+            "## Series circuits", "## Parallel circuits",
+            "## Series-parallel circuits", "## Kirchhoff's laws",
+            "## Linear algebra for circuits", "## Equivalent circuits and optimization",
+            "## Material and energy balances", "## Transient systems",
+            "## Boolean logic, algorithms, and state machines",
+            "## Number systems and digital representation",
+            "## Sensors and measurement", "## Motors and electromechanical systems",
+            "## Sensor, logic, and actuator project",
+            "## Curve fitting, regression, and machine learning",
+            "## Operational amplifiers and calculus", "## Feedback and control",
+            "## Engineering design project",
+        ]
+        positions = [track.index(heading) for heading in sequence]
+        self.assertEqual(positions, sorted(positions))
+        self.assertIn("analog-to-digital converter", track)
+        self.assertIn("pulse-width modulation", track)
+        self.assertIn("pull-up and pull-down switch inputs", track)
+        self.assertIn("Kirchhoff's current law at a node", track)
+        self.assertIn("Series Circuits lesson package", track)
+        self.assertIn("Series-Parallel Circuits lesson package", track)
         self.assertIn("[[1]](../../references.qmd#ref-grob2016)", track)
         self.assertIn("[[27]](../../references.qmd#ref-cengel2008)", track)
-        self.assertNotIn("KCL", track)
-        self.assertNotIn("KVL", track)
-        self.assertNotIn("WET-A", track)
 
         redirect = self.read("tej3-4/waterloo-engineering-track/index.qmd")
         self.assertIn("../engineering-preparation-track/", redirect)
 
         config = self.read("_quarto.yml")
-        self.assertIn('section: "Engineering Preparation Track"', config)
-        self.assertIn("index.qmd#chapter-7-resistor-capacitor-and-thermal-transients", config)
-        self.assertIn("index.qmd#chapter-8-sensors-measurement-calibration-and-uncertainty", config)
-        self.assertIn("index.qmd#chapter-9-curve-fitting-regression-and-machine-learning", config)
-        self.assertIn("index.qmd#chapter-12-sensor-logic-actuator-project", config)
-        self.assertIn("index.qmd#chapter-10-number-systems-and-digital-representation", config)
-        self.assertIn("index.qmd#chapter-12-engineering-design-project", config)
+        self.assertIn('text: "Engineering Preparation Track"', config)
+        self.assertIn("tej3-4/engineering-preparation-track/index.qmd", config)
+
+    def test_equations_are_copyable_numbered_mathjax_and_have_diagrams(self) -> None:
+        config = self.read("_quarto.yml")
+        scripts = self.read("includes/bs-scripts.html")
+        helper = self.read("assets/tej-equations.js")
+        styles = self.read("assets/tej-equations.css")
+        self.assertIn("assets/tej-equations.js", config)
+        self.assertIn("assets/tej-equations.css", config)
+        self.assertIn('"tej-equations.js"', scripts)
+        self.assertIn("terEquationSources", scripts)
+        self.assertIn("Copy equation", helper)
+        self.assertIn("Copy LaTeX", helper)
+        self.assertIn("ClipboardItem", helper)
+        self.assertIn("mjx-assistive-mml", helper)
+        self.assertIn("Arial, Helvetica, sans-serif", styles)
+        self.assertIn('mjx-container[jax="CHTML"]', styles)
+
+        chapters = [
+            "tej3-4/circuits/index.qmd",
+            "tej3-4/circuits/series-circuits.qmd",
+            "tej3-4/circuits/parallel-circuits.qmd",
+            "tej3-4/circuits/series-parallel-circuits.qmd",
+            "tej3-4/circuits/kirchhoffs-laws.qmd",
+            "tej3-4/circuits/linear-algebra-circuits.qmd",
+        ]
+        for relative in chapters:
+            source = self.read(relative)
+            self.assertEqual(source.count("$$") // 2, source.count("{#eq-"), relative)
+
+        for relative in (
+            "assets/electronics/schematics/series-rule-reference.svg",
+            "assets/electronics/schematics/parallel-rule-reference.svg",
+            "assets/electronics/schematics/series-parallel-comparison.svg",
+            "assets/electronics/schematics/kirchhoff-node-loop-reference.svg",
+            "assets/electronics/schematics/series-parallel-example.png",
+        ):
+            self.assertTrue((SITE / relative).is_file(), relative)
 
     def test_tej_pages_inherit_the_learn_sidebar_layout(self) -> None:
         metadata_files = [SITE / "tej3-4" / "_metadata.yml"]

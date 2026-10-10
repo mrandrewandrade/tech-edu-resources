@@ -67,9 +67,12 @@ def check(root: Path) -> tuple[int, list[str]]:
             if not match[1].startswith('#'):
                 inspect(path, 'css', match[1])
     for required in ['index.html', 'design-fabrication/index.html',
-                     'design-fabrication/03-laser-cutting/index.html',
-                     'design-fabrication/04-3d-printing/index.html',
-                     'tas2/index.html', 'tej3-4/index.html',
+                     'design-fabrication/design-process/index.html',
+                     'design-fabrication/logo-design/index.html',
+                     'design-fabrication/laser-cutting/tool-organizer.html',
+                     'tej3-4/index.html',
+                     'tej3-4/circuits/index.html',
+                     'tej3-4/engineering-preparation-track/index.html',
                      'slides/index.html', 'teacher-slides/index.html',
                      'teaching-materials/index.html',
                      'lore/index.html']:
