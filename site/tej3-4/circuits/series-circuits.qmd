@@ -14,15 +14,17 @@ execute: {enabled: false}
 
 **This is useful because I can** predict every electrical value before building the circuit and check whether my measurements make sense.
 
-**Used in university:** Direct-current circuit analysis, electrical laboratories, instrumentation, and introductory electronics. [[1, Ch. 4]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Direct-current circuit analysis, electrical laboratories, instrumentation, and introductory electronics. [[1, Ch. 4]](../../references.qmd#ref-grob2016)
+
+**Where you see it:** In a car, a switch, fuse, and lamp can form one current path. In a robot, a battery, current-limiting resistor, and status light form the same kind of series path.
 
 ## One path
 
 A series circuit has one continuous current path. Opening any part stops current everywhere.
 
-<figure class="ter-circuit-figure">
+<figure class="ter-circuit-figure" id="fig-series-rule">
 <img src="../../assets/electronics/schematics/series-rule-reference.svg" alt="Series circuit schematic showing one path through the source and resistors." loading="lazy">
-<figcaption>Series-circuit reference schematic. The same current passes through every component.</figcaption>
+<figcaption><a class="ter-figure-label" href="#fig-series-rule">Figure 1.</a> Series-circuit reference schematic. The same current passes through every component. <a class="ter-figure-anchor" href="#fig-series-rule" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
 
 The same current passes through every component:

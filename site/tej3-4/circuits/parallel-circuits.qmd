@@ -14,15 +14,17 @@ execute: {enabled: false}
 
 **This is useful because I can** explain how several loads operate independently from one source.
 
-**Used in university:** Circuit analysis, electrical distribution, instrumentation, electronics, and computer hardware.
+**Used in college or university:** Circuit analysis, electrical distribution, instrumentation, electronics, and computer hardware.
+
+**Where you see it:** A car connects its lights and control modules in parallel so each receives the battery voltage. A robot does the same when several sensors and controllers share one power supply.
 
 ## Common voltage
 
 Components are in parallel when both ends connect to the same two nodes. Every branch has the same voltage:
 
-<figure class="ter-circuit-figure">
+<figure class="ter-circuit-figure" id="fig-parallel-rule">
 <img src="../../assets/electronics/schematics/parallel-rule-reference.svg" alt="Parallel circuit schematic showing several resistor branches connected to the same two nodes." loading="lazy">
-<figcaption>Parallel-circuit reference schematic. Every branch connects to the same two nodes.</figcaption>
+<figcaption><a class="ter-figure-label" href="#fig-parallel-rule">Figure 1.</a> Parallel-circuit reference schematic. Every branch connects to the same two nodes. <a class="ter-figure-anchor" href="#fig-parallel-rule" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
 
 $$

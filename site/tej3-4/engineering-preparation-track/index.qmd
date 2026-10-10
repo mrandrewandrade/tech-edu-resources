@@ -42,7 +42,7 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 **This is useful because I can** catch mistakes and communicate a calculation clearly.
 
-**Used in university:** Every engineering course expects correct units, notation, and documented calculations. [[1, Chs. 0–1]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Every engineering course expects correct units, notation, and documented calculations. [[1, Chs. 0–1]](../../references.qmd#ref-grob2016)
 
 ## Ohm's law and power
 
@@ -50,7 +50,7 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 **This is useful because I can** predict whether a basic circuit will work safely before I build it.
 
-**Used in university:** Circuit analysis, electronics laboratories, design courses, and energy calculations. [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Circuit analysis, electronics laboratories, design courses, and energy calculations. [[1, Chs. 1, 3]](../../references.qmd#ref-grob2016)
 
 ## Series circuits
 
@@ -58,7 +58,7 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 **This is useful because I can** predict and check every value in a complete series circuit.
 
-**Used in university:** Direct-current circuit analysis and introductory electrical laboratories. [[1, Ch. 4]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Direct-current circuit analysis and introductory electrical laboratories. [[1, Ch. 4]](../../references.qmd#ref-grob2016)
 
 [Open the Series Circuits lesson package](../electronics-library/modules/h09-series-circuits-a.qmd)
 
@@ -68,7 +68,7 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 **This is useful because I can** explain how several loads operate from the same source voltage.
 
-**Used in university:** Network analysis, electrical distribution, instrumentation, and electronics. [[1, Ch. 5]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Network analysis, electrical distribution, instrumentation, and electronics. [[1, Ch. 5]](../../references.qmd#ref-grob2016)
 
 ## Series-parallel circuits
 
@@ -76,7 +76,7 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 **This is useful because I can** turn a mixed circuit into smaller problems and prove the final answer.
 
-**Used in university:** Network reduction, circuit laboratories, and preparation for Kirchhoff analysis. [[1, Ch. 6]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Network reduction, circuit laboratories, and preparation for Kirchhoff analysis. [[1, Ch. 6]](../../references.qmd#ref-grob2016)
 
 [Open the Series-Parallel Circuits lesson package](../electronics-library/modules/h11-series-parallel-circuits-a.qmd)
 
@@ -86,7 +86,7 @@ The track extends regular TEJ work with mathematics and modelling used in first-
 
 **This is useful because I can** write equations for circuits that cannot be reduced by inspection.
 
-**Used in university:** Nodal analysis, mesh analysis, electronics, power systems, and control hardware. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Nodal analysis, mesh analysis, electronics, power systems, and control hardware. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
 
 ::: {.callout-tip title="Recommended Grob sequence"}
 Chapter 9 can follow Chapter 6. Students already have the series, parallel, and reduction skills needed for Kirchhoff analysis. Teach the relevant meter-safety material from Chapter 8 before physical measurements; Chapter 7 can be returned to later.
@@ -98,7 +98,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** solve several unknown currents or voltages at the same time.
 
-**Used in university:** Linear algebra, numerical methods, statics, structures, circuits, process models, and control. [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
+**Used in college or university:** Linear algebra, numerical methods, statics, structures, circuits, process models, and control. [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
 
 ## Equivalent circuits and optimization
 
@@ -106,7 +106,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** replace a complicated source network with a simpler model and compare designs.
 
-**Used in university:** Circuit design, modelling, optimization, and instrumentation. [[1, Chs. 7, 10]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Circuit design, modelling, optimization, and instrumentation. [[1, Chs. 7, 10]](../../references.qmd#ref-grob2016)
 
 ## Material and energy balances
 
@@ -114,7 +114,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** show where material or energy goes and explain what is lost.
 
-**Used in university:** Chemical, mechanical, environmental, and energy engineering. [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)
+**Used in college or university:** Chemical, mechanical, environmental, and energy engineering. [[27, Chs. 3, 5–6]](../../references.qmd#ref-cengel2008)
 
 ## Transient systems
 
@@ -122,7 +122,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** predict how a real system changes over time instead of assuming it responds instantly.
 
-**Used in university:** Differential equations, circuits, heat transfer, process dynamics, and control. [[1, Ch. 22]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Differential equations, circuits, heat transfer, process dynamics, and control. [[1, Ch. 22]](../../references.qmd#ref-grob2016)
 
 ## Boolean logic, algorithms, and state machines
 
@@ -130,7 +130,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** turn physical on-or-off inputs into clear decisions that can be tested.
 
-**Used in university:** Digital logic, programming, computer architecture, embedded systems, and control.
+**Used in college or university:** Digital logic, programming, computer architecture, embedded systems, and control.
 
 ## Number systems and digital representation
 
@@ -138,7 +138,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** explain how a computer stores a switch state, represents a sensor reading, and commands a variable output.
 
-**Used in university:** Programming, computer engineering, embedded systems, numerical methods, and digital signal processing.
+**Used in college or university:** Programming, computer engineering, embedded systems, numerical methods, and digital signal processing.
 
 ## Sensors and measurement
 
@@ -146,7 +146,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** move from a simple on-or-off input to a measured value and a controlled output while deciding whether the data is trustworthy.
 
-**Used in university:** Engineering laboratories, instrumentation, embedded systems, robotics, experiments, and process control. [[1, Ch. 8]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Engineering laboratories, instrumentation, embedded systems, robotics, experiments, and process control. [[1, Ch. 8]](../../references.qmd#ref-grob2016)
 
 ## Motors and electromechanical systems
 
@@ -154,7 +154,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** connect circuit behaviour and pulse-width-modulated control to useful motion.
 
-**Used in university:** Mechanical, electrical, mechatronics, robotics, and systems engineering. [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Mechanical, electrical, mechatronics, robotics, and systems engineering. [[1, Chs. 13–14]](../../references.qmd#ref-grob2016)
 
 ## Sensor, logic, and actuator project
 
@@ -162,7 +162,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** build a complete system that senses, decides, and acts safely.
 
-**Used in university:** Mechatronics, embedded systems, robotics, automation, and design projects.
+**Used in college or university:** Mechatronics, embedded systems, robotics, automation, and design projects.
 
 ## Curve fitting, regression, and machine learning
 
@@ -170,7 +170,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** find a useful pattern without assuming the first model is correct.
 
-**Used in university:** Data analysis, numerical methods, system identification, experiments, and introductory machine learning. [[28, Chs. 17, 20]](../../references.qmd#ref-chapra2010)
+**Used in college or university:** Data analysis, numerical methods, system identification, experiments, and introductory machine learning. [[28, Chs. 17, 20]](../../references.qmd#ref-chapra2010)
 
 ## Operational amplifiers and calculus
 
@@ -178,7 +178,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** see calculus operate on a real voltage signal.
 
-**Used in university:** Calculus, analog electronics, instrumentation, signals, and control. [[1, Ch. 33]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Calculus, analog electronics, instrumentation, signals, and control. [[1, Ch. 33]](../../references.qmd#ref-grob2016)
 
 ## Feedback and control
 
@@ -186,7 +186,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** make a system correct itself and explain why poor settings cause problems.
 
-**Used in university:** Control systems, robotics, mechatronics, chemical processes, and automation.
+**Used in college or university:** Control systems, robotics, mechatronics, chemical processes, and automation.
 
 ## Engineering design project
 
@@ -194,7 +194,7 @@ Chapter 9 can follow Chapter 6. Students already have the series, parallel, and 
 
 **This is useful because I can** combine the track into one working, evidence-based design.
 
-**Used in university:** Design courses, laboratories, capstone projects, and technical communication.
+**Used in college or university:** Design courses, laboratories, capstone projects, and technical communication.
 
 ## Core references
 

@@ -14,13 +14,15 @@ execute: {enabled: false}
 
 **This is useful because I can** write equations for a circuit that cannot be reduced by inspection.
 
-**Used in university:** Nodal analysis, mesh analysis, electronics, power systems, and control hardware. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Nodal analysis, mesh analysis, electronics, power systems, and control hardware. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
+
+**Where you see it:** In a car wiring harness, current splits between lights, sensors, and control modules before returning to the battery. In a robot, Kirchhoff's laws describe the same splits and voltage changes between the controller, sensors, and motors.
 
 ## Kirchhoff's current law
 
-<figure class="ter-circuit-figure">
+<figure class="ter-circuit-figure" id="fig-kirchhoff-node-loop">
 <img src="../../assets/electronics/schematics/kirchhoff-node-loop-reference.svg" alt="Circuit schematic identifying a square junction node and a closed loop for Kirchhoff analysis." loading="lazy">
-<figcaption>A node is a real junction in the schematic. A loop is a complete closed path.</figcaption>
+<figcaption><a class="ter-figure-label" href="#fig-kirchhoff-node-loop">Figure 1.</a> A node is a real junction in the schematic. A loop is a complete closed path. <a class="ter-figure-anchor" href="#fig-kirchhoff-node-loop" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
 
 Charge does not accumulate at an ideal node:

@@ -14,7 +14,9 @@ execute: {enabled: false}
 
 **This is useful because I can** turn a complicated network into smaller problems and check the final result.
 
-**Used in university:** Network reduction, circuit laboratories, electronics, instrumentation, and preparation for Kirchhoff analysis. [[1, Ch. 6]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Network reduction, circuit laboratories, electronics, instrumentation, and preparation for Kirchhoff analysis. [[1, Ch. 6]](../../references.qmd#ref-grob2016)
+
+**Where you see it:** A car uses a fuse and switch in series with parallel lamps or control modules. A robot uses the same pattern when one protected supply feeds several sensors while each indicator light has its own series resistor.
 
 ## Identify the connections
 
@@ -22,9 +24,9 @@ Components are in series when the same current must pass through them. Component
 
 Do not decide from appearance alone. Trace the nodes and current paths.
 
-<figure class="ter-circuit-figure">
+<figure class="ter-circuit-figure" id="fig-series-parallel-comparison">
 <img src="../../assets/electronics/schematics/series-parallel-comparison.svg" alt="Comparison of a one-path series circuit and a parallel circuit with branches." loading="lazy">
-<figcaption>Use nodes and current paths, not visual appearance, to identify series and parallel connections.</figcaption>
+<figcaption><a class="ter-figure-label" href="#fig-series-parallel-comparison">Figure 1.</a> Use nodes and current paths, not visual appearance, to identify series and parallel connections. <a class="ter-figure-anchor" href="#fig-series-parallel-comparison" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
 
 ## Reduction equations
@@ -51,9 +53,9 @@ $$ {#eq-mixed-two-resistors}
 
 Equations @eq-mixed-series-resistance and @eq-mixed-parallel-resistance are applied one group at a time. Redraw the complete circuit after every reduction.
 
-<figure class="ter-circuit-figure">
+<figure class="ter-circuit-figure" id="fig-series-parallel-example">
 <img src="../../assets/electronics/schematics/series-parallel-example.png" alt="Canonical series-parallel circuit with a source, one series resistor, and two parallel branches." loading="lazy">
-<figcaption>Canonical mixed network used in the teaching slides and question sheet.</figcaption>
+<figcaption><a class="ter-figure-label" href="#fig-series-parallel-example">Figure 2.</a> Canonical mixed network used in the teaching slides and question sheet. <a class="ter-figure-anchor" href="#fig-series-parallel-example" aria-label="Link to Figure 2">#</a></figcaption>
 </figure>
 
 ## Solve in two directions

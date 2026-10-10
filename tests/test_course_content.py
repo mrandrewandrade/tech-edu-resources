@@ -85,7 +85,7 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("## Circuit sequence", track)
         self.assertEqual(track.count("**I will be able to**"), 19)
         self.assertEqual(track.count("**This is useful because I can**"), 19)
-        self.assertEqual(track.count("**Used in university:**"), 19)
+        self.assertEqual(track.count("**Used in college or university:**"), 19)
         self.assertNotIn("| What students learn | Why it matters |", track)
         self.assertNotIn("<summary>What is needed</summary>", track)
         self.assertNotIn("| Equipment |", track)
@@ -138,9 +138,9 @@ class CourseContentTests(unittest.TestCase):
         config = self.read("_quarto.yml")
         scripts = self.read("includes/bs-scripts.html")
         helper = self.read("assets/tej-equations-v1.js")
-        styles = self.read("assets/tej-equations-v1.css")
+        styles = self.read("assets/tej-equations-v2.css")
         self.assertIn("assets/tej-equations-v1.js", config)
-        self.assertIn("assets/tej-equations-v1.css", config)
+        self.assertIn("assets/tej-equations-v2.css", config)
         self.assertIn('"tej-equations-v1.js"', scripts)
         self.assertIn("terEquationSources", scripts)
         self.assertIn("Copy equation", helper)
@@ -148,8 +148,8 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("ClipboardItem", helper)
         self.assertIn('document.execCommand("copy")', helper)
         self.assertIn("mjx-assistive-mml", helper)
-        self.assertIn("Arial, Helvetica, sans-serif", styles)
-        self.assertIn('mjx-container[jax="CHTML"]', styles)
+        self.assertNotIn('mjx-container[jax="CHTML"]', styles)
+        self.assertIn(".ter-figure-anchor", styles)
 
         chapters = [
             "tej3-4/circuits/index.qmd",
@@ -162,6 +162,27 @@ class CourseContentTests(unittest.TestCase):
         for relative in chapters:
             source = self.read(relative)
             self.assertEqual(source.count("$$") // 2, source.count("{#eq-"), relative)
+
+        examples = {
+            "tej3-4/circuits/series-circuits.qmd": ("In a car", "In a robot", "fig-series-rule"),
+            "tej3-4/circuits/parallel-circuits.qmd": ("A car", "A robot", "fig-parallel-rule"),
+            "tej3-4/circuits/series-parallel-circuits.qmd": ("A car", "A robot", "fig-series-parallel-comparison"),
+            "tej3-4/circuits/kirchhoffs-laws.qmd": ("In a car", "In a robot", "fig-kirchhoff-node-loop"),
+            "tej3-4/circuits/linear-algebra-circuits.qmd": ("car wiring", "robotics engineer", "Used in college or university"),
+        }
+        for relative, required in examples.items():
+            source = self.read(relative)
+            self.assertIn("**Used in college or university:**", source)
+            self.assertIn("**Where you see it:**", source)
+            for phrase in required:
+                self.assertIn(phrase, source)
+
+        mixed = self.read("tej3-4/circuits/series-parallel-circuits.qmd")
+        self.assertIn('id="fig-series-parallel-example"', mixed)
+        self.assertEqual(mixed.count('class="ter-figure-anchor"'), 2)
+
+        comparison = self.read("assets/electronics/schematics/series-parallel-comparison.svg")
+        self.assertIn('viewBox="0 0 470 125"', comparison)
 
         for relative in (
             "assets/electronics/schematics/series-rule-reference.svg",

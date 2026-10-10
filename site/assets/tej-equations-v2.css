@@ -44,12 +44,6 @@
   outline: none;
 }
 
-mjx-container[jax="CHTML"],
-mjx-container[jax="CHTML"] *,
-mjx-container[jax="CHTML"] mjx-c::before {
-  font-family: Arial, Helvetica, sans-serif !important;
-}
-
 .ter-circuit-figure {
   margin: 1.25rem auto 1.5rem;
   padding: 1rem;
@@ -70,6 +64,28 @@ mjx-container[jax="CHTML"] mjx-c::before {
 .ter-circuit-figure figcaption {
   color: #4a5863;
   font: .88rem/1.4 Arial, Helvetica, sans-serif;
+}
+
+.ter-figure-label {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ter-figure-anchor {
+  display: inline-block;
+  margin-left: .25rem;
+  color: #657782;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ter-figure-label:hover,
+.ter-figure-label:focus-visible,
+.ter-figure-anchor:hover,
+.ter-figure-anchor:focus-visible {
+  color: #254f69;
+  text-decoration: underline;
 }
 
 @media print {
