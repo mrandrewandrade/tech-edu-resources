@@ -17,15 +17,43 @@ This classroom guide is adapted from the [official Linux Mint Installation Guide
 You need:
 
 - the assigned classroom computer;
-- the Linux Mint 22.3 “Zena” Xfce USB installer supplied in class;
+- a Linux Mint 22.3 “Zena” Xfce USB installer signed out from your teacher;
 - the classroom Wi-Fi credentials; and
 - your lab log.
 
 Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.
 
+### How the classroom USB was made
+
+The teacher, with help from student volunteers, prepared the bootable USB drives before this lab. They downloaded the Linux Mint Xfce **`.iso` image** from the [official Linux Mint download page](https://linuxmint.com/download.php/) and used [balenaEtcher](https://etcher.balena.io/) to write the image to a USB drive. On Windows, [Rufus](https://rufus.ie/) is another good tool for creating a bootable USB.
+
+An ISO cannot simply be copied onto a USB like an ordinary file. A tool such as Etcher or Rufus writes the image in a form the computer can start from. This process erases the USB drive, so do not try it with a personal drive unless its contents are safely backed up.
+
+For this lab, **sign out a prepared USB from your teacher**. Record its number if your class uses numbered drives, and return it when the installation is complete.
+
 ## 1. Start the live system
 
-Insert the Linux Mint USB drive and boot the computer from it. Choose the normal **Start Linux Mint** option if a startup menu appears. Linux Mint first opens a **live session**: a temporary desktop running from the USB drive.
+Insert the Linux Mint USB drive, then start or restart the computer. You need to choose the USB as the startup device before the existing operating system loads.
+
+### On the classroom Intel iMacs and Mac minis
+
+1. Press the power button or restart the Mac.
+2. Immediately hold **Option (⌥)** or **Alt** until Startup Manager appears.
+3. Select the USB drive—it may appear as **EFI Boot**—and press **Enter/Return**. If the USB does not appear, stop and ask your teacher.
+
+Apple documents the Option/Alt startup shortcut in its [Intel Mac startup-key guide](https://support.apple.com/en-ca/102603).
+
+### On a Windows PC
+
+The startup key is different for almost every manufacturer and model. Common keys include **Delete**, **F1**, **F2**, **F10**, **F11**, **F12**, and **Escape**.
+
+1. Watch the first manufacturer-logo screen for a message such as **Boot Menu**, **Boot Options**, **Setup**, **BIOS**, or **UEFI**.
+2. Press the listed key repeatedly as the computer starts. Try the one-time **Boot Menu** first and select the USB drive.
+3. If there is no boot menu, enter the BIOS/UEFI settings and, with teacher approval, temporarily move the USB drive ahead of the internal drive in the boot order. Do not change unrelated settings.
+
+If the key is not shown, search for **`manufacturer model boot menu key`** or **`manufacturer model boot from USB`**. Include the exact manufacturer and model printed on the computer. The [official Linux Mint boot guide](https://linuxmint-installation-guide.readthedocs.io/en/latest/boot.html) also lists common keys.
+
+Choose the normal **Start Linux Mint** option when the Linux Mint startup menu appears. Linux Mint first opens a **live session**: a temporary desktop running from the USB drive.
 
 The live session may feel slower than the finished installation, and changes made there are not permanent. If the live session asks for a password, leave it blank and press **Enter**.
 
@@ -163,7 +191,10 @@ Show the installed system and completed lab log to your teacher.
 ## Sources and image credit
 
 - [Linux Mint Installation Guide: Install Linux Mint](https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html)
+- [Linux Mint Installation Guide: Create the bootable media](https://linuxmint-installation-guide.readthedocs.io/en/latest/burn.html)
+- [Linux Mint Installation Guide: Boot Linux Mint](https://linuxmint-installation-guide.readthedocs.io/en/latest/boot.html)
 - [Linux Mint 22.3 “Zena” editions](https://linuxmint.com/download.php/)
 - [Linux Mint FAQ: use of Linux Mint screenshots](https://www.linuxmint.com/faq.php)
+- [Apple: Mac startup key combinations](https://support.apple.com/en-ca/102603)
 
 Linux Mint project screenshots are reproduced for this educational installation guide. This site is not affiliated with or endorsed by Linux Mint.
