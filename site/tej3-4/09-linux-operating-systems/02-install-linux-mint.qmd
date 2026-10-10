@@ -39,7 +39,7 @@ Insert the Linux Mint USB drive, then start or restart the computer. You need to
 
 1. Press the power button or restart the Mac.
 2. Immediately hold **Option (⌥)** or **Alt** until Startup Manager appears.
-3. Select the USB drive—it may appear as **EFI Boot**—and press **Enter/Return**. If the USB does not appear, stop and ask your teacher.
+3. Select the USB drive (it may appear as **EFI Boot**) and press **Enter/Return**. If the USB does not appear, stop and ask your teacher.
 
 Apple documents the Option/Alt startup shortcut in its [Intel Mac startup-key guide](https://support.apple.com/en-ca/102603).
 
@@ -103,7 +103,7 @@ It is usually easier to **install Windows first and Linux second**. Windows inst
 
 Before changing partitions, check whether Windows uses **BitLocker/device encryption**, save its recovery key, and research the exact computer model. An encrypted Windows drive may prevent a Linux installer from safely examining or resizing the Windows partitions. Ubuntu’s [BitLocker dual-boot explanation](https://ubuntu.com/tutorials/install-ubuntu-desktop#13-installing-ubuntu-alongside-windows-with-bitlocker) describes this issue clearly.
 
-Some computers have two internal SSDs. Installing each operating system on a separate drive can make the layout easier to understand and can reduce the chance of accidentally changing the other system’s partitions or boot files. However, this is **not a rule of EFI/UEFI**, and it is not required on every computer. Firmware behaviour varies—even between Lenovo Legion models—so search the manufacturer, exact model, and terms such as **dual boot**, **UEFI**, and **boot order** before proceeding. Use a model-specific guide and ask for experienced help rather than guessing.
+Some computers have two internal SSDs. Installing each operating system on a separate drive can make the layout easier to understand and can reduce the chance of accidentally changing the other system’s partitions or boot files. However, this is **not a rule of EFI/UEFI**, and it is not required on every computer. Firmware behaviour varies, even between Lenovo Legion models, so search the manufacturer, exact model, and terms such as **dual boot**, **UEFI**, and **boot order** before proceeding. Use a model-specific guide and ask for experienced help rather than guessing.
 :::
 
 ## 6. Set the time zone
@@ -152,7 +152,7 @@ Without closing the installer:
 
 1. Open the web browser.
 2. Visit the [TEJ Notes website](https://andrewandrade.ca/tech-edu-resources/tej3-4/) and record whether it loads.
-3. Open the main menu and find the **Software Manager**—Linux Mint’s “app store.” Search for `games` and record one school-appropriate game or application that looks interesting.
+3. Open the main menu and find the **Software Manager**, Linux Mint’s “app store.” Search for `games` and record one school-appropriate game or application that looks interesting.
 4. Find the File Manager and Terminal icons. You do not need to run commands yet.
 
 Software installed during the live session may disappear after restart, so wait until the finished system starts before installing your chosen application.
