@@ -17,15 +17,23 @@ Debian
     └── Lubuntu
 ```
 
-**Debian** is a long-running, community-built distribution known for stability. **Ubuntu** is based on Debian and aims to make Linux practical for a wide range of users. The African word *ubuntu* is often translated as **“I am because we are.”** Linux Mint is a child of Ubuntu: it uses Ubuntu as a foundation and adds its own desktop experience and tools.
+**[Debian](https://www.debian.org/releases/)** is a long-running, community-built distribution known for stability. **[Ubuntu](https://ubuntu.com/about)** is based on Debian and aims to make Linux practical for a wide range of users. The African word *ubuntu* is often translated as **“I am because we are.”** Linux Mint is a child of Ubuntu: it uses Ubuntu as a foundation and adds its own desktop experience and tools.
 
 ## Our choice: Linux Mint Xfce
 
 We will use **Linux Mint 22.3 “Zena” Xfce Edition** because it works well and is easy for students to begin using. **Xfce** is the desktop interface. Its layout feels a little like older versions of Windows, and it runs quickly on our older computers with less than 8 GB of RAM. It starts simple, but we can improve and personalize the way it looks later.
 
-**Lubuntu** is another good lightweight flavour to explore. If you want to compare many possibilities, try the questions at [Distrochooser](https://distrochooser.de/).
+**[Lubuntu](https://lubuntu.me/)** is another good lightweight flavour to explore. If you want to compare many possibilities, try the questions at [Distrochooser](https://distrochooser.de/).
 
-**Arch Linux** is the most difficult option discussed here. It expects you to assemble and configure much more of the system yourself. That makes it a poor first classroom installation, but a valuable future challenge if you want to become a system administrator and understand or control every part of a Linux system.
+## Release styles: a stable base or the newest software
+
+[Ubuntu publishes a new version every six months](https://ubuntu.com/project/docs/release-team/ubuntu-releases/), usually in April and October. Its version number shows the year and month: **24.04** means April 2024. Releases also have names, such as Ubuntu 24.04 **“Noble Numbat.”**
+
+Every two years, the April release is an **LTS**, or **Long Term Support**, release. LTS versions receive updates for much longer than the releases between them, making them a dependable base for a classroom or everyday computer. Linux Mint 22.3 “Zena” uses the Ubuntu 24.04 LTS package base and [is supported until April 2029](https://linuxmint.com/download_all.php). We can keep an LTS-based system for work and experiment with a faster-moving distribution on another computer, in a virtual machine, or later as part of a dual-boot setup.
+
+Arch uses a **rolling-release** model instead of publishing separate LTS versions on a fixed timetable. You install it once and update it continuously, so new software arrives quickly. This gives you current software and a great deal of control, but it also asks you to read update notices, make decisions, and troubleshoot more often.
+
+**[Arch Linux](https://archlinux.org/about/)** is the most difficult option discussed here. It expects you to assemble and configure much more of the system yourself. That makes it a poor first classroom installation, but a valuable future challenge if you want to become a system administrator and understand or control every part of a Linux system.
 
 In my classes, students who chose Arch and persisted through its difficulties have often gone on to considerable success in computer engineering, including major scholarship and job opportunities. Arch itself is not a shortcut to those outcomes. The persistence, research, troubleshooting, and systems thinking required to make it work are excellent preparation.
 
@@ -36,4 +44,13 @@ For this lab, our choice is Linux Mint Xfce. In a future lab, we will choose ano
 1. What is a Linux distribution?
 2. How are Debian, Ubuntu, and Linux Mint related?
 3. Why is Xfce a good match for our classroom computers?
-4. Which distribution would you investigate next, and why?
+4. What is the difference between an LTS release and a rolling release?
+5. Which distribution would you investigate next, and why?
+
+## Useful resources
+
+- [Linux Mint releases](https://linuxmint.com/download_all.php) and the [official installation guide](https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html)
+- [Ubuntu release cycle and support periods](https://ubuntu.com/project/docs/release-team/ubuntu-releases/)
+- [Debian releases](https://www.debian.org/releases/)
+- [Lubuntu downloads](https://lubuntu.me/downloads/) and the [Lubuntu manual](https://manual.lubuntu.me/lts/)
+- [Arch installation guide](https://wiki.archlinux.org/title/Installation_guide), [general recommendations](https://wiki.archlinux.org/title/General_recommendations), and [Arch news](https://archlinux.org/news/)
