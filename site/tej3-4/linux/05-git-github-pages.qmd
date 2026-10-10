@@ -1,0 +1,59 @@
+---
+title: "Git, GitHub and a Published Portfolio"
+description: "A small website published with GitHub Pages, updated as projects are completed."
+sidebar: tej
+toc: true
+categories: [Git, GitHub, GitHub Pages, portfolio]
+---
+
+**Goal:** publish a working, privacy-safe technical portfolio quickly. The website can be simple. The important skill is versioning, testing and publishing your own work.
+
+## Repository and website
+
+Use the school-approved GitHub identity. Do not post personal contact information, student photographs without consent or private school network information.
+
+Create a new public repository, for example `tej-portfolio`, with a README. Clone it to your own computer and add a minimal `index.html`:
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Computer Engineering Portfolio</title>
+</head>
+<body>
+  <h1>Computer Engineering Portfolio</h1>
+  <p>Projects, experiments, tests and what I learned.</p>
+  <h2>Projects</h2>
+  <ul><li><a href="linux.html">Linux computer setup</a></li></ul>
+</body>
+</html>
+```
+
+Create `linux.html` (or remove the unfinished link) before submitting. Record what you worked on without naming classmates or publishing machine passwords.
+
+## Version-control essentials
+
+From inside the clone:
+
+```bash
+git status
+git add .
+git commit -m "Publish first portfolio page"
+git push
+```
+
+Use `git log --oneline` to inspect history. Learn the difference between a repository on your computer and GitHub's remote copy.
+
+## GitHub Pages
+
+In the repository Settings > Pages, select the approved deployment source and branch/folder used by your site. Save and open the published URL. The URL pattern depends on whether you used a user site or project site, so **copy the actual URL from GitHub rather than guessing**.
+
+Check the site on another device. Verify working links, readable layout and mobile width. Record the repository URL and published URL.
+
+Official reference: [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart).
+
+## Keep updating it
+
+Each major project gets a small post: **Goal -> Tools/commands -> Tests -> Results -> Problems solved -> What I learned**. Commit the update. Next useful lesson: [technical blog reporting](09-technical-blog.qmd).
