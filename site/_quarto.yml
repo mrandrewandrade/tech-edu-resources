@@ -49,7 +49,7 @@ project:
     - assets/tej-electronics.css
     - assets/tej-curriculum.js
     - assets/tej-curriculum.css
-    - assets/tej-equations.js
+    - assets/tej-equations-v1.js
     - "assets/electronics/**"
     - "assets/name-tag-photopea/**"
     - "assets/personal-logo-photopea/**"
@@ -199,7 +199,7 @@ format:
       - assets/commons-overrides.css
       - assets/bs-learn.css
       - assets/tej-curriculum.css
-      - assets/tej-equations.css
+      - assets/tej-equations-v1.css
     include-after-body:
       - includes/bs-scripts.html
     include-in-header:
