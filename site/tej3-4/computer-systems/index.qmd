@@ -4,10 +4,10 @@ description: "Three current missions plus the later CS01-CS08 Best Workstation P
 categories: [computer systems, main quest, side quests, OS comparison, Linux, hardware, commissioning]
 ---
 
-The required route moves quickly from the electricity you already know to useful computer service work. Complete CS01-CS08 in order. Choose Side Quests when time, equipment, and teacher approval allow.
+For the current regular TEJ classroom route, use the independent [Linux, networking, GitHub Pages, sensors, modelling and Raspberry Pi modules](../linux/index.qmd). These can be arranged differently for each implementation. The CS01-CS08 sequence below remains a hardware-service reference and is **not** the prerequisite sequence for every student. Optional repair, multimeter and upgrade labs live in the [Engineering Preparation Track lab directory](../engineering-preparation-track/labs/index.qmd).
 
 ::: {.callout-note title="Current classroom missions"}
-All students complete Power Circuits Questions 1-6 first. [Computer Power and Parts](computer-power-parts.qmd) is currently a future-lab shell awaiting the actual classroom computer, photographs, and approved measurement method. Approved early finishers may choose [Make It Print](make-it-print.qmd), while a limited pair completes the [Computer Recovery and OS Comparison](computer-recovery-crew-pilot.qmd).
+Circuit calculations remain required weekly work, but the immediate priority is deploying a first approved batch of Linux machines for TAS. [Computer Power and Parts](computer-power-parts.qmd) is a future hardware lab shell. Teacher-assigned students may complete the [Computer Recovery and OS Comparison](computer-recovery-crew-pilot.qmd); approved early finishers may select [Make It Print](make-it-print.qmd).
 :::
 
 ![A desktop-computer cutaway showing the sealed power supply, motherboard, CPU, RAM, storage, expansion slots, and fan.](/assets/tej/Computer_System_Cutaway.svg){width=92%}
@@ -22,9 +22,9 @@ Never open or probe inside a power supply. Power off and unplug before changing 
 - **Side Quest:** [Make It Print](make-it-print.qmd), one shared submission per pair
 - **Side Quest:** [Computer Recovery and OS Comparison](computer-recovery-crew-pilot.qmd), one shared Google Doc per pair
 
-## After Thanksgiving: CS01-CS08 Best Workstation Project
+## Optional deeper hardware-service route: CS01-CS08
 
-After Thanksgiving, students use the operating system selected by the comparison pilot to commission, upgrade, benchmark, and recommend a classroom computer. The pilot does not complete this project early.
+These existing guides support supervised hardware investigation or engineering extensions. The regular TEJ Linux and portfolio sequence no longer requires completing all eight beforehand.
 
 1. [CS01 Fast electricity-to-computer bridge](cs01-electricity-bridge.qmd)
 2. [CS02 Parts, baseline testing, ESD, and safe opening](cs02-parts-baseline-esd.qmd)
@@ -58,4 +58,4 @@ Teacher answer materials, fault cards, the master tracker, and the internal Lead
 
 ## Route onward
 
-[Digital logic and stable inputs](../03-digital-logic-inputs/index.qmd) and the fabrication foundation precede this unit. Continue to [Linux and Operating Systems](../curriculum/index.qmd#unit-9), [Programming Fundamentals](../curriculum/index.qmd#unit-10), and then [Microcontrollers and Physical Computing](../04-microcontrollers/index.qmd).
+Continue directly to the [standalone Linux pathway](../linux/index.qmd) for the regular computer-work blocks. Use the [engineering lab directory](../engineering-preparation-track/labs/index.qmd) for optional hardware, circuits and measurements.
