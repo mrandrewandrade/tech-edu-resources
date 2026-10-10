@@ -1,0 +1,122 @@
+---
+title: "Circuits"
+description: "A concise reference for circuit calculations and the class resources used with them."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute:
+  enabled: false
+---
+
+## Learning goals
+
+By the end of this unit:
+
+- I will be able to write values with suitable precision, notation, prefixes, and units.
+- I will be able to use Ohm's law, power equations, and series-circuit rules.
+- I will be able to organize a solution with the GUESS method and check whether it is reasonable.
+
+This is important because it enables me to predict a circuit before I build it and to explain my work clearly.
+
+## Significant figures
+
+Significant figures show the precision of a measured or stated value. Keep full calculator precision and round once, at the end.
+
+**0.00420** has three significant figures.  
+\(6.23 \times 1.23 = 7.6629\), reported as **7.66**.
+
+For multiplication and division, use the same number of significant figures as the least precise input. For addition and subtraction, use the least precise decimal place.
+
+## Notation and Metric Prefixes
+
+**Scientific notation:** \(a \times 10^n\), where \(1 \le a < 10\).  
+**Engineering notation:** \(a \times 10^n\), where \(1 \le a < 1000\) and \(n\) is a multiple of three.
+
+\(27\,000 = 2.7 \times 10^4 = 27 \times 10^3 = 27\,\mathrm{k}\)  
+\(0.00047 = 4.7 \times 10^{-4} = 470 \times 10^{-6} = 470\,\mu\)
+
+| Prefix | Symbol | Power |
+|---|---:|---:|
+| mega | M | \(10^6\) |
+| kilo | k | \(10^3\) |
+| base unit |  | \(10^0\) |
+| milli | m | \(10^{-3}\) |
+| micro | \(\mu\) | \(10^{-6}\) |
+| nano | n | \(10^{-9}\) |
+
+## Ohm's law and power
+
+Ohm's law connects voltage, current, and resistance.
+
+\[
+V = IR \qquad I = \frac{V}{R} \qquad R = \frac{V}{I}
+\]
+
+Electrical power is the rate of energy transfer.
+
+\[
+P = VI \qquad P = I^2R \qquad P = \frac{V^2}{R}
+\]
+
+Use volts (V), amperes (A), ohms (\(\Omega\)), and watts (W). Convert prefixes before substituting, then report the final answer with the appropriate prefix and significant figures.
+
+## GUESS method
+
+Put each part on its own line.
+
+**G: Given:** list each known value with its symbol and unit.  
+**U: Unknown:** list each value you must find.  
+**E: Equation:** choose a general equation.  
+**S: Substitute:** rearrange first, then substitute values with units.  
+**S: Solve:** show the unrounded result, check it, then round once.
+
+For a Casio calculator, enter one calculation per line. Use `EXP` for powers of ten. Write units beside the result, not in the calculator.
+
+## Series circuits
+
+A series circuit has one continuous path, so the current is the same through every component.
+
+\[
+I_T = I_1 = I_2 = I_3
+\]
+
+Series resistances add.
+
+\[
+R_T = R_1 + R_2 + R_3
+\]
+
+The voltage drops add to the source voltage.
+
+\[
+V_T = V_1 + V_2 + V_3
+\]
+
+Use the voltage sum as a check. Total power can be found with \(P_T = V_TI_T\) or by adding the component powers.
+
+## Questions, answers, and class artifacts
+
+### Core circuit package
+
+- [Basic Electricity to Basic Computer Systems teaching slides](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
+- [Parallel-circuit student questions](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit)
+- [Parallel-circuit worked answers](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit)
+- [Electronics formulas, units, and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- [Two-page electronics quick reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
+- [Electronics reference handbook](https://andrewandrade.ca/assets/TEJ-Electronics-Reference-Handbook.pdf)
+
+### Series Circuits A
+
+- [Series Circuits A teaching slides](https://docs.google.com/presentation/d/1CQf3eYAcKw6tf2J7BCa38cskxnGP0T3fjBaxnLKbx-o/edit)
+- [Series Circuits A student questions](https://docs.google.com/document/d/1KMKU3e4OkKn40jMy5KeyGHXKcn2IftQcRiNggfYHivc/edit)
+- [ElectroBOOM 101: circuits, series, and parallel](https://www.youtube.com/watch?v=AMXWm_bnsTE)
+- [The Organic Chemistry Tutor: series and parallel circuits](https://www.youtube.com/watch?v=wejz5s31Cts)
+- [Khan Academy: circuits, part 2](https://www.khanacademy.org/science/ap-physics-1/ap-circuits-topic/ap-circuits-resistance/v/circuits-part-2)
+
+The Series Circuits A teacher answers are not public yet.
+
+## Textbook support
+
+These topics follow *Grob's Basic Electronics*, Chapters 1, 3, and 4. [[1]](../../references.qmd#ref-grob2016)
+

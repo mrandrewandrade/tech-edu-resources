@@ -1,0 +1,30 @@
+---
+title: "Linux, Operating Systems and Basic Networking"
+description: "Choose a Linux distribution, install it safely, and prepare for basic networking work."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute:
+  enabled: false
+---
+
+## Learning goals
+
+By the end of this unit:
+
+- I will be able to compare Linux distributions for a specific computer and user.
+- I will be able to prepare for and complete an approved Linux Mint installation.
+- I will be able to identify the network information needed for later troubleshooting.
+
+This is important because it enables me to install, test, and support a computer without guessing.
+
+## Start here
+
+1. [Choose a Linux distribution](choosing-a-distribution.qmd).
+2. [Install Linux Mint](install-linux-mint.qmd) on a teacher-approved computer.
+3. Record the computer name, wired or wireless connection, Internet Protocol address, gateway, and Domain Name System servers for the networking lesson.
+
+::: {.callout-warning title="Before changing a drive"}
+An operating-system installation can erase files and existing partitions. Use only the assigned computer and installer. Stop for teacher confirmation before any step that changes a drive.
+:::
+

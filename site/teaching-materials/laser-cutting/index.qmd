@@ -23,9 +23,9 @@ execute:
     <div>
       <p class="bs-laser-kicker">Technology Commons · Open fabrication library</p>
       <p class="bs-laser-lead">Start with calibration, download simple editable geometry, and build toward measured assemblies and original parametric designs. The catalogue contains <strong data-laser-total>232 purpose-built generated assets</strong>; none are claimed as physically verified.</p>
-      <p><a href="../../design-fabrication/03-laser-cutting/resources/index.qmd"><strong>First projects classroom toolkit:</strong> planning sheet, name-tag files, six Inkscape palettes, individual components, pill-bottle reference assemblies and teaching slides.</a></p>
+      <p><a href="../../design-fabrication/laser-cutting/tool-organizer.qmd"><strong>Tool Organizer Project:</strong> a concise route from measured tools to a tested prototype.</a></p>
       <div class="bs-laser-actions">
-        <a class="bs-laser-button bs-laser-button-primary" href="../../design-fabrication/03-laser-cutting/index.qmd">Teach laser fabrication</a>
+        <a class="bs-laser-button bs-laser-button-primary" href="../../design-fabrication/laser-cutting/tool-organizer.qmd">Teach laser fabrication</a>
         <a class="bs-laser-button bs-laser-button-primary" href="https://raw.githubusercontent.com/mrandrewandrade/assets/master/laser/generated/downloads/technology-commons-laser-library.zip">Download complete SVG bundle</a>
         <a class="bs-laser-button" href="https://github.com/mrandrewandrade/assets/tree/master/laser">Generators, metadata and tests</a>
         <a class="bs-laser-button" href="#library">Browse assets</a>
@@ -37,12 +37,12 @@ execute:
     <article>
       <p class="bs-laser-kicker">Learn before downloading</p>
       <h2>From first cut to calibrated assembly</h2>
-      <p>Use the <a href="../../design-fabrication/03-laser-cutting/index.qmd">Laser Cutting &amp; 2D Fabrication notes</a> for the core name-tag engraving plus optional lessons in supports, measured placement, material fit, assemblies and advanced organizer work. These are reusable choices, not one mandatory eight-project TAS sequence.</p>
+      <p>Use the <a href="../../design-fabrication/laser-cutting/tool-organizer.qmd">Tool Organizer Project</a> for the concise classroom route. These are reusable choices, not one mandatory sequence.</p>
     </article>
     <article>
       <p class="bs-laser-kicker">Apply the files</p>
       <h2>Choose a learning goal</h2>
-      <p><a href="../../design-fabrication/03-laser-cutting/02-make-it-stand.qmd">Explore an optional stand</a>, <a href="../../design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd">learn to make parts fit</a>, or use the advanced <a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd">Tool Organizer Gallery</a>. Library geometry is a starting point; students still measure, test, and revise.</p>
+      <p>Use the <a href="../../design-fabrication/tools/leg-builder/index.qmd">Leg &amp; Support Builder</a>, the <a href="../../design-fabrication/tools/plate-builder/index.qmd">Plate Builder</a>, or the <a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd">Tool Organizer Gallery</a>. Library geometry is a starting point; students still measure, test, and revise.</p>
     </article>
   </section>
 

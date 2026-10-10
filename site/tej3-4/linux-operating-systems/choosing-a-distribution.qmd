@@ -1,0 +1,35 @@
+---
+title: "Choosing a Linux Distribution"
+description: "Choose a Linux distribution that fits the computer, user, and classroom task."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute:
+  enabled: false
+---
+
+## Learning goals
+
+By the end of this page:
+
+- I will be able to explain what a Linux distribution is.
+- I will be able to choose an edition using hardware, software, support, and user needs.
+
+This is important because the best operating system is the one that fits the computer and the job.
+
+## Choose for the situation
+
+A Linux distribution combines the Linux kernel with system tools, software repositories, an installer, and a desktop environment.
+
+Check:
+
+1. whether the processor and memory meet the distribution's requirements;
+2. whether the graphics, wireless, sound, and other hardware work in a live session;
+3. whether the required applications are available;
+4. whether the release receives security updates for the needed period; and
+5. whether the desktop is comfortable for the user.
+
+For this course, use the teacher-approved Linux Mint edition and image. The official guide describes Cinnamon as the full-featured option, MATE as a more traditional option, and Xfce as the lightest option.
+
+[Read the official Linux Mint guide to choosing an edition](https://linuxmint-installation-guide.readthedocs.io/en/latest/choose.html).
+

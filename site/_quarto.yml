@@ -2,12 +2,34 @@ project:
   type: website
   output-dir: _site
   render:
-    - "**/*.qmd"
-    - "!mindfulness/"
-    - "!posts/"
-    - "!research/"
+    - "404.qmd"
+    - "about.qmd"
+    - "index.qmd"
+    - "licensing.qmd"
+    - "references.qmd"
+    - "glossary/**/*.qmd"
+    - "lore/**/*.qmd"
+    - "slides/**/*.qmd"
+    - "teacher-slides/**/*.qmd"
+    - "teaching-materials/index.qmd"
+    - "teaching-materials/laser-cutting/**/*.qmd"
+    - "teaching-materials/nice-design-process/**/*.qmd"
+    - "design-fabrication/index.qmd"
+    - "design-fabrication/design-process/**/*.qmd"
+    - "design-fabrication/logo-design/**/*.qmd"
+    - "design-fabrication/laser-cutting/**/*.qmd"
+    - "design-fabrication/01-nice-design-process/index.qmd"
+    - "design-fabrication/02-digital-design/03-logos-lettermarks.qmd"
+    - "design-fabrication/03-laser-cutting/06-tool-holder.qmd"
+    - "design-fabrication/tools/plate-builder/**/*.qmd"
+    - "design-fabrication/tools/leg-builder/**/*.qmd"
+    - "design-fabrication/tools/tool-organizer-gallery/**/*.qmd"
+    - "tej3-4/index.qmd"
+    - "tej3-4/circuits/**/*.qmd"
+    - "tej3-4/linux-operating-systems/**/*.qmd"
+    - "tej3-4/09-linux-operating-systems/**/*.qmd"
   pre-render:
-  - python ../scripts/bs_pre_render.py
+    - python ../scripts/bs_pre_render.py
   resources:
     - "assets/icons/**"
     - "assets/branding/**"
@@ -25,6 +47,8 @@ project:
     - assets/tej-electronics.css
     - assets/tej-curriculum.js
     - assets/tej-curriculum.css
+    - "assets/name-tag-photopea/**"
+    - "assets/personal-logo-photopea/**"
     - "assets/laser-cutting/**"
     - "assets/laser-library/**"
     - assets/laser-library.js
@@ -81,144 +105,25 @@ website:
       style: docked
       collapse-level: 2
       contents:
-        - text: "Curriculum Home"
+        - text: "Design & Fabrication Home"
           href: design-fabrication/index.qmd
-        - section: "1. N.I.C.E. Design Process"
-          href: design-fabrication/01-nice-design-process/index.qmd
-          contents:
-            - href: design-fabrication/01-nice-design-process/01-needs-necessities.qmd
-              text: "1.1 Needs & Necessities"
-            - href: design-fabrication/01-nice-design-process/02-investigate-inquire.qmd
-              text: "1.2 Investigate & Inquire"
-            - href: design-fabrication/01-nice-design-process/03-create-communicate.qmd
-              text: "1.3 Create & Communicate"
-            - href: design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.qmd
-              text: "1.4 Evaluate, Re-question & Iterate"
-        - text: "Systems Design & Fabrication Track"
-          href: design-fabrication/systems-design-fabrication-track/index.qmd
-        - section: "2. AI Literacy & Reproducible Workflows"
-          href: design-fabrication/ai/index.qmd
-          contents:
-            - href: design-fabrication/ai/01-capabilities-limits.qmd
-              text: "2.1 Capabilities & Limits"
-            - href: design-fabrication/ai/02-evaluate-output.qmd
-              text: "2.2 Evaluate an Output"
-            - href: design-fabrication/ai/03-verify-sources.qmd
-              text: "2.3 Verify Sources"
-            - href: design-fabrication/ai/04-reproducible-workflow.qmd
-              text: "2.4 Reproducible Workflow"
-            - href: design-fabrication/ai/05-iterate-purposefully.qmd
-              text: "2.5 Purposeful Iteration"
-            - href: design-fabrication/ai/06-document-disclose.qmd
-              text: "2.6 Document & Disclose"
-            - href: design-fabrication/ai/07-ai-design-audit.qmd
-              text: "AI Design Audit"
-        - section: "3. Digital Design & Communication"
-          href: design-fabrication/02-digital-design/index.qmd
-          contents:
-            - href: design-fabrication/02-digital-design/01-raster-vector-svg.qmd
-              text: "3.1 Raster, Vector & SVG"
-            - href: design-fabrication/02-digital-design/02-vector-geometry.qmd
-              text: "3.2 Vector Geometry"
-            - href: design-fabrication/02-digital-design/03-logos-lettermarks.qmd
-              text: "3.3 Logos & Lettermarks"
-            - href: design-fabrication/02-digital-design/04-layout-typography-colour.qmd
-              text: "3.4 Layout, Type & Colour"
-            - href: design-fabrication/02-digital-design/05-animation-ui-ux.qmd
-              text: "3.5 Animation · Pencil2D"
-            - href: design-fabrication/02-digital-design/06-blender-artistic-3d.qmd
-              text: "3.6 Blender · Artistic 3D"
-            - href: design-fabrication/02-digital-design/07-website-ui-ux.qmd
-              text: "3.7 Website & UI/UX"
-        - section: "4. Laser Cutting & 2D Fabrication"
-          href: design-fabrication/03-laser-cutting/index.qmd
-          contents:
-            - href: design-fabrication/03-laser-cutting/01-name-logo.qmd
-              text: "4.1 Name + Logo (after Personal Logo)"
-            - href: design-fabrication/03-laser-cutting/02-make-it-stand.qmd
-              text: "Optional · Make It Stand"
-            - href: design-fabrication/03-laser-cutting/03-measure-place.qmd
-              text: "4.2 Measure + Place"
-            - href: design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd
-              text: "4.3 Material Fit + Calibration"
-            - href: design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd
-              text: "4.4 Assemblies + Hybrid Fabrication"
-            - href: design-fabrication/03-laser-cutting/06-tool-holder.qmd
-              text: "Advanced · Tool Organizer"
-            - href: design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.qmd
-              text: "Assignment · Good Idea, Better Product"
-            - href: design-fabrication/03-laser-cutting/07-wall-bench-module.qmd
-              text: "Advanced · Wall + Bench"
-            - href: design-fabrication/03-laser-cutting/08-capstone.qmd
-              text: "Advanced · Capstone"
-            - href: design-fabrication/03-laser-cutting/holiday-ornament-reindeer.qmd
-              text: "Seasonal · Holiday Ornament"
-        - section: "5. 3D Modelling + 3D Printing"
-          href: design-fabrication/04-3d-printing/index.qmd
-          contents:
-            - href: design-fabrication/04-3d-printing/01-additive-cad.qmd
-              text: "5.1 Onshape CAD vs Blender Mesh"
-            - href: design-fabrication/04-3d-printing/02-slicing-orientation.qmd
-              text: "5.2 Slicing & Orientation"
-            - href: design-fabrication/04-3d-printing/03-tolerances-functional-parts.qmd
-              text: "5.3 Tolerances & Functional Parts"
-            - href: design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.qmd
-              text: "Project · Faux Enamel Jewellery"
-            - href: design-fabrication/04-3d-printing/04-design-challenge.qmd
-              text: "Advanced · Functional Part"
-        - section: "6. Additional Fabrication Methods"
-          href: design-fabrication/07-other-fabrication/index.qmd
-          contents:
-            - href: design-fabrication/05-cnc-digital-machining/index.qmd
-              text: "CNC & Digital Machining"
-            - href: design-fabrication/06-textiles-soft-goods/index.qmd
-              text: "Textiles & Soft Goods"
-            - href: design-fabrication/07-other-fabrication/index.qmd
-              text: "Other Fabrication"
-        - section: "Fabrication Library & Tools"
+        - text: "N.I.C.E. Design Process"
+          href: design-fabrication/design-process/index.qmd
+        - text: "Logo Design"
+          href: design-fabrication/logo-design/index.qmd
+        - text: "Tool Organizer Project"
+          href: design-fabrication/laser-cutting/tool-organizer.qmd
+        - section: "Fabrication Tools"
           href: teaching-materials/laser-cutting/index.qmd
           contents:
-            - href: design-fabrication/resources/work-in-progress/index.qmd
-              text: "Free Online Resource Directory · Work in Progress"
-            - href: design-fabrication/03-laser-cutting/resources/index.qmd
-              text: "First Laser Projects Toolkit"
-            - href: design-fabrication/03-laser-cutting/resources/pill-bottle-organizer.qmd
-              text: "Organizer Reference Assemblies"
-            - href: design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.qmd
-              text: "Reverse-Engineering Challenge"
-            - href: design-fabrication/tools/tool-organizer-gallery/index.qmd
-              text: "Tool Organizer Gallery"
-            - href: design-fabrication/03-laser-cutting/resources/fabrication-planning-worksheet.qmd
-              text: "Fabrication Planning Sheet"
-            - href: design-fabrication/tools/plate-builder/index.qmd
-              text: "Fabrication Plate Builder"
-            - href: design-fabrication/tools/leg-builder/index.qmd
-              text: "Laser-Cut Leg & Support Builder"
-        - section: "Ideas by Technology Area"
-          href: design-fabrication/applications/index.qmd
-          contents:
-            - href: design-fabrication/applications/exploring-technologies/index.qmd
-              text: "Exploring Technologies · TIJ1O"
-            - href: design-fabrication/applications/technological-design/index.qmd
-              text: "Technological Design · TDJ"
-            - href: design-fabrication/applications/manufacturing/index.qmd
-              text: "Manufacturing · TMJ"
-            - href: design-fabrication/applications/construction/index.qmd
-              text: "Construction · TCJ"
-            - href: design-fabrication/applications/transportation/index.qmd
-              text: "Transportation · TTJ"
-            - href: design-fabrication/applications/computer-technology/index.qmd
-              text: "Computer Technology · TEJ"
-            - href: design-fabrication/applications/communications-technology/index.qmd
-              text: "Communications Technology · TGJ"
-            - href: design-fabrication/applications/green-industries/index.qmd
-              text: "Green Industries · THJ"
-            - href: design-fabrication/applications/hairstyling-aesthetics/index.qmd
-              text: "Hairstyling & Aesthetics · TXJ"
-            - href: design-fabrication/applications/hospitality-tourism/index.qmd
-              text: "Hospitality & Tourism · TFJ"
-            - href: design-fabrication/applications/health-care/index.qmd
-              text: "Health Care · TPJ"
+            - text: "Fabrication Plate Builder"
+              href: design-fabrication/tools/plate-builder/index.qmd
+            - text: "Laser-Cut Leg & Support Builder"
+              href: design-fabrication/tools/leg-builder/index.qmd
+            - text: "Tool Organizer Gallery"
+              href: design-fabrication/tools/tool-organizer-gallery/index.qmd
+            - text: "Laser-Cutting Files and Resources"
+              href: teaching-materials/laser-cutting/index.qmd
     - id: tas2
       title: "General Design & Fabrication"
       style: docked
@@ -232,192 +137,28 @@ website:
       contents:
         - text: "Course Home"
           href: tej3-4/index.qmd
-        - text: "Curriculum Roadmap"
-          href: tej3-4/curriculum/index.qmd
-        - section: "Engineering Preparation Track"
-          href: tej3-4/engineering-preparation-track/index.qmd
+        - section: "Circuits"
+          href: tej3-4/circuits/index.qmd
           contents:
-            - text: "0. Design & Communication"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-0-engineering-design-and-communication
-            - text: "1. Units & Engineering Notation"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-1-engineering-calculations
-            - text: "2. Ohm's Law & Power"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-2-circuit-fundamentals
-            - text: "3. Series & Parallel Circuits"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-3-linear-circuits
-            - text: "4. Kirchhoff's Laws & Systems"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-4-linear-algebra-for-engineering
-            - text: "5. Equivalent Circuits"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-5-modelling-and-optimization
-            - text: "6. Material & Energy Balances"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-6-material-and-energy-balances
-            - text: "7. Transient Response"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-7-resistor-capacitor-and-thermal-transients
-            - text: "8. Sensors & Calibration"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-8-sensors-measurement-calibration-and-uncertainty
-            - text: "9. Regression & Machine Learning"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-9-curve-fitting-regression-and-machine-learning
-            - text: "10. Motors & Mechanics"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-10-mechanics-and-electromechanical-systems
-            - text: "11. Logic & State Machines"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-9-digital-computation
-            - text: "12. Sensor-Logic-Actuator Project"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-12-sensor-logic-actuator-project
-            - text: "13. Digital Number Representation"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-10-number-systems-and-digital-representation
-            - text: "14. Feedback & Control"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-11-control-systems
-            - text: "15. Engineering Design Project"
-              href: tej3-4/engineering-preparation-track/index.qmd#chapter-12-engineering-design-project
-        - section: "0. Orientation, Safety & Design"
-          href: tej3-4/00-expectations/index.qmd
-          contents: []
-        - section: "1. Numbers, Measurement & Calculator"
-          href: tej3-4/01-number-systems/index.qmd
+            - text: "Significant Figures"
+              href: tej3-4/circuits/index.qmd#significant-figures
+            - text: "Scientific & Engineering Notation"
+              href: tej3-4/circuits/index.qmd#notation-and-metric-prefixes
+            - text: "Ohm's Law & Power"
+              href: tej3-4/circuits/index.qmd#ohms-law-and-power
+            - text: "GUESS Method"
+              href: tej3-4/circuits/index.qmd#guess-method
+            - text: "Series Circuits"
+              href: tej3-4/circuits/index.qmd#series-circuits
+            - text: "Class Resources"
+              href: tej3-4/circuits/index.qmd#questions-answers-and-class-artifacts
+        - section: "Linux, Operating Systems & Networking"
+          href: tej3-4/linux-operating-systems/index.qmd
           contents:
-            - text: "1.1 Significant Figures"
-              href: tej3-4/01-number-systems/01-significant-figures.qmd
-            - text: "1.2 Powers of 10"
-              href: tej3-4/01-number-systems/02-powers-of-10.qmd
-            - text: "1.3 Scientific Calculator"
-              href: tej3-4/01-number-systems/06-scientific-calculator.qmd
-            - text: "1.4 Scientific Notation"
-              href: tej3-4/01-number-systems/03-scientific-notation.qmd
-            - text: "1.5 Engineering Notation"
-              href: tej3-4/01-number-systems/04-engineering-notation.qmd
-            - text: "1.6 Metric Prefixes"
-              href: tej3-4/01-number-systems/05-metric-prefixes.qmd
-        - section: "2-5. Electricity, Circuits & Components"
-          href: tej3-4/02-basic-electronics/index.qmd
-          contents:
-            - text: "2.1 Charge, Voltage & Current"
-              href: tej3-4/02-basic-electronics/01-charge-voltage-current.qmd
-            - text: "2.2 Closed, Open & Short Circuits"
-              href: tej3-4/02-basic-electronics/02-circuits-opens-shorts.qmd
-            - text: "2.3 Ohm's Law"
-              href: tej3-4/02-basic-electronics/03-ohms-law.qmd
-            - text: "2.4 Power & Energy"
-              href: tej3-4/02-basic-electronics/04-power-energy.qmd
-        - section: "6. Digital Logic & Stable Inputs"
-          href: tej3-4/03-digital-logic-inputs/index.qmd
-          contents:
-            - text: "3.1 Digital Voltage Levels"
-              href: tej3-4/03-digital-logic-inputs/01-digital-levels.qmd
-            - text: "3.2 Switches & Floating Inputs"
-              href: tej3-4/03-digital-logic-inputs/02-switches-floating-inputs.qmd
-            - text: "3.3 External Pull-Downs"
-              href: tej3-4/03-digital-logic-inputs/03-pull-down-inputs.qmd
-            - text: "3.4 Pull-Ups & Active-Low Logic"
-              href: tej3-4/03-digital-logic-inputs/04-pull-up-active-low.qmd
-            - text: "3.5 Debouncing & Protection"
-              href: tej3-4/03-digital-logic-inputs/05-debounce-protection.qmd
-            - text: "3.6 Logic Gates & Truth Tables"
-              href: tej3-4/03-digital-logic-inputs/06-logic-gates-truth-tables.qmd
-            - text: "3.7 Circuits Culminating Project"
-              href: tej3-4/03-digital-logic-inputs/06-circuits-culminating-project.qmd
-        - section: "7. Fabrication & PCB Workflow"
-          href: tej3-4/curriculum/index.qmd#unit-7
-          contents:
-            - text: "Shared Fabrication Resources"
-              href: teaching-materials/index.qmd
-            - text: "Laser Cutting"
-              href: teaching-materials/laser-cutting/index.qmd
-        - section: "8. Basic Computer Systems"
-          href: tej3-4/computer-systems/index.qmd
-          contents:
-            - text: "Main Mission: Power & Parts"
-              href: tej3-4/computer-systems/computer-power-parts.qmd
-            - text: "Side Quest: Make It Print"
-              href: tej3-4/computer-systems/make-it-print.qmd
-            - text: "Side Quest: Recovery & OS Comparison"
-              href: tej3-4/computer-systems/computer-recovery-crew-pilot.qmd
-            - text: "CS01 Electricity Bridge"
-              href: tej3-4/computer-systems/cs01-electricity-bridge.qmd
-            - text: "CS02 Parts, Baseline & ESD"
-              href: tej3-4/computer-systems/cs02-parts-baseline-esd.qmd
-            - text: "CS03 Power & Connections"
-              href: tej3-4/computer-systems/cs03-power-connections.qmd
-            - text: "CS04 Ready-to-Power"
-              href: tej3-4/computer-systems/cs04-ready-to-power.qmd
-            - text: "CS05 POST & BIOS/UEFI"
-              href: tej3-4/computer-systems/cs05-post-firmware.qmd
-            - text: "CS06 Approved Linux"
-              href: tej3-4/computer-systems/cs06-linux-mint.qmd
-            - text: "CS07 RAM Upgrade"
-              href: tej3-4/computer-systems/cs07-ram-upgrade.qmd
-            - text: "CS08 Benchmark Challenge"
-              href: tej3-4/computer-systems/cs08-benchmark-challenge.qmd
-            - section: "Side Quests"
-              contents:
-                - text: "SQ01 Teardown & Reassembly"
-                  href: tej3-4/computer-systems/sq01-teardown.qmd
-                - text: "SQ02 Fault Stations"
-                  href: tej3-4/computer-systems/sq02-fault-stations.qmd
-                - text: "SQ03 Storage & Expansion"
-                  href: tej3-4/computer-systems/sq03-storage-expansion.qmd
-                - text: "SQ04 Linux Inventory"
-                  href: tej3-4/computer-systems/sq04-linux-inventory.qmd
-                - text: "SQ05 Power & Thermal"
-                  href: tej3-4/computer-systems/sq05-power-thermal.qmd
-                - text: "SQ06 Repair & Reuse"
-                  href: tej3-4/computer-systems/sq06-repair-reuse.qmd
-        - section: "9. Linux & Operating Systems"
-          href: tej3-4/curriculum/index.qmd#unit-9
-          contents: []
-        - section: "10. Programming Fundamentals"
-          href: tej3-4/curriculum/index.qmd#unit-10
-          contents: []
-        - section: "11. Microcontrollers"
-          href: tej3-4/04-microcontrollers/index.qmd
-          contents: []
-        - section: "12. Networking & Systems"
-          href: tej3-4/curriculum/index.qmd#unit-12
-          contents: []
-        - section: "13. Data Science & ML"
-          href: tej3-4/curriculum/index.qmd#unit-13
-          contents: []
-        - section: "14. Language Models & AI"
-          href: tej3-4/curriculum/index.qmd#unit-14
-          contents: []
-        - section: "15. Culminating Projects"
-          href: tej3-4/electronics-library/projects/index.qmd
-          contents: []
-        - section: "Bonus: Control Systems & CNC"
-          href: tej3-4/05-control-systems/index.qmd
-          contents:
-            - text: "C01 Control-System Anatomy"
-              href: tej3-4/05-control-systems/c01-control-system-anatomy.qmd
-            - text: "C02 Open-Loop Control"
-              href: tej3-4/05-control-systems/c02-open-loop.qmd
-            - text: "C03 Closed-Loop Feedback"
-              href: tej3-4/05-control-systems/c03-closed-loop.qmd
-            - text: "C04 On-Off & Hysteresis"
-              href: tej3-4/05-control-systems/c04-hysteresis.qmd
-            - text: "C05 Proportional Control"
-              href: tej3-4/05-control-systems/c05-proportional.qmd
-            - text: "C06 Integral, Derivative & PID"
-              href: tej3-4/05-control-systems/c06-pid.qmd
-            - text: "C07 State Machines"
-              href: tej3-4/05-control-systems/c07-state-machines.qmd
-            - text: "C08 Safety Controls & Interlocks"
-              href: tej3-4/05-control-systems/c08-safety-interlocks.qmd
-            - text: "C09 Motor & Motion Control"
-              href: tej3-4/05-control-systems/c09-motion-control.qmd
-            - text: "C10 CNC as a Control System"
-              href: tej3-4/05-control-systems/c10-cnc.qmd
-            - text: "C11 Culminating Project"
-              href: tej3-4/05-control-systems/c11-culminating-project.qmd
-        - section: "Reference & Enhancement Library"
-          href: tej3-4/electronics-library/index.qmd
-          contents:
-            - text: "H01 Safety & Lab Practice"
-              href: tej3-4/electronics-library/modules/h01-safety-lab-practice.qmd
-            - text: "Components"
-              href: tej3-4/electronics-library/components/index.qmd
-            - text: "Labs"
-              href: tej3-4/electronics-library/labs/index.qmd
-            - text: "Projects"
-              href: tej3-4/electronics-library/projects/index.qmd
+            - text: "Choosing a Linux Distribution"
+              href: tej3-4/linux-operating-systems/choosing-a-distribution.qmd
+            - text: "Install Linux Mint"
+              href: tej3-4/linux-operating-systems/install-linux-mint.qmd
   page-footer:
     left: |
       Website code: [AGPL 3.0](https://andrewandrade.ca/commons/licensing.html). Educational content: [CC BY-SA 4.0](https://andrewandrade.ca/commons/licensing.html).

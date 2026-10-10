@@ -1,0 +1,35 @@
+---
+title: "Install Linux Mint"
+description: "Prepare, test, install, and verify Linux Mint on a teacher-approved computer."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute:
+  enabled: false
+---
+
+## Learning goals
+
+By the end of this page:
+
+- I will be able to start a computer from an approved Linux Mint USB installer.
+- I will be able to complete and verify an approved installation without confusing the installer USB with the internal drive.
+
+This is important because choosing the wrong drive can erase data.
+
+## Before installation
+
+1. Confirm the assigned computer, Linux Mint image, and installer USB.
+2. Back up any files that must be kept.
+3. Record the computer model and current drive information.
+4. Start the live environment and test display, keyboard, mouse, sound, wired networking, and wireless networking.
+5. Stop for teacher approval before opening the installer.
+
+## Install and verify
+
+Follow the [official Linux Mint Installation Guide](https://linuxmint-installation-guide.readthedocs.io/en/latest/) and the teacher's drive-partition instructions. Do not improvise around encryption, dual boot, BitLocker, redundant array settings, or unknown partitions.
+
+After installation, verify that the computer starts without the USB, reaches the desktop, connects to the approved network, reports the expected storage, and can install updates.
+
+Submit the requested installation record and photographs.
+
