@@ -1,0 +1,46 @@
+---
+title: "Networking: IP, Gateway, DNS and DHCP"
+description: "Understand a local network and diagnose common connectivity problems safely."
+sidebar: tej
+toc: true
+categories: [Linux, networking, IP, DNS, DHCP]
+---
+
+**Goal:** explain how the computer reaches another device and distinguish a local connection failure from DNS or Internet access trouble.
+
+## Concepts
+
+- **IP address:** the address assigned to a device on a network.
+- **Subnet:** which addresses are considered locally reachable.
+- **Router/default gateway:** the next hop to other networks.
+- **DHCP:** automatically supplies network configuration.
+- **DNS:** translates a hostname to an address.
+- **SSH:** a secure connection to a permitted remote machine, covered separately.
+
+## Inspect, predict, test
+
+Run these commands on a teacher-approved machine:
+
+```bash
+hostname
+ip address
+ip route
+resolvectl status
+```
+
+Not all systems use `resolvectl`; if it is unavailable, use the network settings GUI or the teacher-provided DNS method. Record the interface name, the network's private IP address, gateway and DNS resolver for **private classroom evidence only**.
+
+Then test **only** the teacher's permitted endpoints:
+
+```bash
+ping -c 3 <teacher-approved-gateway>
+ping -c 3 <teacher-approved-hostname>
+```
+
+If the gateway responds but a hostname does not resolve, explain why DNS might be involved. If neither responds, investigate local connection and address configuration first. A blocked ping does not by itself prove a server is offline.
+
+## Mini-challenge
+
+Make a small diagram: your device -> local router -> another service. Label the roles, then record a symptom, hypothesis, test, evidence and conclusion. Do not scan networks, probe other students' machines or alter school router settings.
+
+[Next: SSH and tmux](04-ssh-tmux.qmd).
