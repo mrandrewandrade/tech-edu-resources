@@ -126,6 +126,15 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("Series-Parallel Circuits lesson package", track)
         self.assertIn("[[1]](../../references.qmd#ref-grob2016)", track)
         self.assertIn("[[27]](../../references.qmd#ref-cengel2008)", track)
+        self.assertIn("## Ontario course collaboration opportunities", track)
+        self.assertIn("They do not mean that one course replaces", track)
+        for course in ("TEJ3M", "TEJ4M", "SPH3U", "SCH4U", "SBI4U"):
+            self.assertIn(course, track)
+        self.assertIn("the electronics are the instrument, not a substitute for the biology", track)
+        self.assertIn("2009teched1112curr.pdf", track)
+        self.assertIn("secondary-science/courses/sph3u/strands", track)
+        self.assertIn("secondary-science/courses/sch4u/strands", track)
+        self.assertIn("secondary-science/courses/sbi4u/strands", track)
 
         redirect = self.read("tej3-4/waterloo-engineering-track/index.qmd")
         self.assertIn("../engineering-preparation-track/", redirect)
@@ -183,6 +192,10 @@ class CourseContentTests(unittest.TestCase):
 
         comparison = self.read("assets/electronics/schematics/series-parallel-comparison.svg")
         self.assertIn('viewBox="0 0 470 125"', comparison)
+        self.assertNotIn('x="62.299" y="17.075"', comparison)
+        self.assertNotIn('x="283.401" y="17.075"', comparison)
+        self.assertIn('x="94" y="88.3"', comparison)
+        self.assertIn('x="330" y="88.3"', comparison)
 
         for relative in (
             "assets/electronics/schematics/series-rule-reference.svg",
@@ -210,10 +223,13 @@ class CourseContentTests(unittest.TestCase):
 
     def test_curriculum_roadmap_is_a_concise_public_course_map(self) -> None:
         roadmap = self.read("tej3-4/curriculum/index.qmd")
+        config = self.read("_quarto.yml")
+        self.assertIn('"tej3-4/curriculum/**/*.qmd"', config)
         self.assertEqual(roadmap.count("| What students learn | Why it matters |"), 17)
         self.assertEqual(roadmap.count("**Subsections:**"), 17)
         self.assertEqual(roadmap.count("**Coming out of this section, students can:**"), 17)
         self.assertIn("Use the sidebar for lessons", roadmap)
+        self.assertIn("Engineering Preparation Track collaboration map", roadmap)
         self.assertNotIn("| Consumables |", roadmap)
         self.assertNotIn("| Teacher notes |", roadmap)
         self.assertNotIn("| Estimated time |", roadmap)

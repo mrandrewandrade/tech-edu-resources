@@ -150,6 +150,14 @@ ROADMAP_OUTCOMES = {
     "16": "Model or build a feedback-controlled system with safe states, interlocks, and measured response.",
 }
 
+ROADMAP_COLLABORATION = {
+    "3": (
+        "**Collaboration:** The [Engineering Preparation Track collaboration map]"
+        "(../engineering-preparation-track/index.qmd#ontario-course-collaboration-opportunities) "
+        "connects this work with TEJ3M/TEJ4M, SPH3U physics, SCH4U chemistry, and SBI4U biology."
+    ),
+}
+
 
 def validate_record(record: dict[str, Any], identity: str) -> None:
     missing = sorted(REQUIRED_RECORD_FIELDS - set(record))
@@ -184,6 +192,9 @@ def render_unit(unit: dict[str, Any]) -> str:
     subsection_markup = ROADMAP_SUBSECTIONS[unit_id]
     why = ROADMAP_WHY[unit_id]
     outcome = ROADMAP_OUTCOMES[unit_id]
+    collaboration = ROADMAP_COLLABORATION.get(unit_id, "")
+    if collaboration:
+        collaboration = f"\n\n{collaboration}"
     return f"""
 ## {html.escape(unit_id)}. {html.escape(ROADMAP_TITLES[unit_id])} {{#unit-{unit_id.replace('.', '-')}}}
 
@@ -193,7 +204,7 @@ def render_unit(unit: dict[str, Any]) -> str:
 
 **Subsections:** {html.escape(subsection_markup)}
 
-**Coming out of this section, students can:** {html.escape(outcome)}
+**Coming out of this section, students can:** {html.escape(outcome)}{collaboration}
 """.strip()
 
 
