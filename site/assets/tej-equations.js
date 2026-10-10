@@ -16,8 +16,33 @@
     }, 1300);
   }
 
+  function legacyCopy(text) {
+    const field = document.createElement("textarea");
+    field.value = text;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.left = "-9999px";
+    document.body.appendChild(field);
+    field.select();
+    const copied = document.execCommand("copy");
+    field.remove();
+    if (!copied) throw new Error("The browser did not allow copying.");
+  }
+
+  async function writeText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return;
+      } catch (_error) {
+        // Managed browsers may deny the modern API while allowing execCommand.
+      }
+    }
+    legacyCopy(text);
+  }
+
   async function copyLatex(button, source) {
-    await navigator.clipboard.writeText(source);
+    await writeText(source);
     announce(button, "Copied");
   }
 
@@ -32,16 +57,21 @@
           return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[character];
         }) + "</span>";
 
-    if (navigator.clipboard.write && window.ClipboardItem) {
-      await navigator.clipboard.write([
-        new ClipboardItem({
-          "text/plain": new Blob([plainText], { type: "text/plain" }),
-          "text/html": new Blob([html], { type: "text/html" })
-        })
-      ]);
-    } else {
-      await navigator.clipboard.writeText(plainText);
+    if (navigator.clipboard && navigator.clipboard.write && window.ClipboardItem) {
+      try {
+        await navigator.clipboard.write([
+          new ClipboardItem({
+            "text/plain": new Blob([plainText], { type: "text/plain" }),
+            "text/html": new Blob([html], { type: "text/html" })
+          })
+        ]);
+        announce(button, "Copied");
+        return;
+      } catch (_error) {
+        // Fall through to the plain-text copy path.
+      }
     }
+    await writeText(plainText);
     announce(button, "Copied");
   }
 

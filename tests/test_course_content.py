@@ -146,6 +146,7 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("Copy equation", helper)
         self.assertIn("Copy LaTeX", helper)
         self.assertIn("ClipboardItem", helper)
+        self.assertIn('document.execCommand("copy")', helper)
         self.assertIn("mjx-assistive-mml", helper)
         self.assertIn("Arial, Helvetica, sans-serif", styles)
         self.assertIn('mjx-container[jax="CHTML"]', styles)
