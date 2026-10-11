@@ -1,12 +1,27 @@
 ---
 title: "Name + Logo | Photopea Engraving Worksheet"
 description: "A student-ready, screenshot-led worksheet for preparing a readable 11 × 4 inch name tag with transparent PNG logos in Photopea."
+sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, lettermark, raster-image, vector-graphic, engraving, png, scalable-vector-graphics, aspect-ratio, typography, visual-hierarchy, contrast, image-dimensions]
 highlighted-terms: [raster-image, png, logo]
 toc: true
 execute: {enabled: false}
 ---
+
+## Learning goals
+
+By the end of this project:
+
+- I can make an 11 × 4 inch name-tag file.
+- I can place a logo without stretching it.
+- I can add a clear, readable name.
+- I can keep the design away from the edges.
+- I can save the PSD and export the PNG needed for engraving.
+
+## Why this is useful
+
+This is the first project where your digital design becomes a real object. You will use the Photopea, image-file, layout, and vector skills from the earlier lessons to prepare artwork for a wood name tag.
 
 ::: {.callout-warning title="Work in progress"}
 This worksheet is an evolving classroom draft. Confirm measurements, machine settings, material approval, and the instructor's local laser procedure before fabrication. Record anything that needs revision after the first student test.
@@ -19,18 +34,6 @@ Create a clean engraving file for a **teacher-supplied, pre-cut 11 × 4 inch woo
 :::
 
 [Open the editable name-tag worksheet in Google Docs](https://docs.google.com/document/d/1ej7D3k48sxNlEwlkdqto5saUhyaC0wiCxPC9rybdVSQ/edit){.btn .btn-primary}
-
-## Learning goals
-
-By the end, you can:
-
-- explain what a raster image is;
-- choose between JPG, PNG, WebP, and SVG for a specific job;
-- recognize transparency and explain why it matters;
-- create an 11 × 4 inch canvas at 300 pixels per inch;
-- use guides to create a 0.25 inch safe margin;
-- arrange a logo and name with readable typography, balanced spacing, and clear hierarchy;
-- save an editable master and export a checked PNG for engraving.
 
 ## Part 1 - Raster images and PNG
 
@@ -320,13 +323,17 @@ Check every statement before handing in the file:
 Follow your school board's safety guidelines and the course-specific instruction provided by your teacher; students in Mr. Andrade's classes can find that information in Google Classroom. For the design check, confirm that the job is **engrave only**. No cyan guide, page border, or accidental vector cut boundary should appear in the submitted PNG.
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** useful for **TIJ1O** and **TDJ2O** learning involving raster and vector graphics, visual communication, exact dimensions, file preparation, manufacturing processes, safe tool use, and evaluation of a produced artifact.
+**Design curriculum:** This is the first physical-making project after the Photopea, raster/vector/SVG, and animation lessons. It supports **TIJ1O** and **TDJ2O** work with images, layout, exact size, file preparation, making, and checking a finished object.
 :::
 
-Continue with the [planning worksheet and classroom toolkit](resources/index.qmd), or move to the optional [Make It Stand](02-make-it-stand.qmd) structural extension.
+After the teacher approves the engraving file, follow the classroom laser-cutting instructions to make and check the wood name tag.
 
 ## References
 
 - [Photopea: Open and Save](https://www.photopea.com/learn/opening-saving)
 - [MDN: Image file type and format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types)
 - [Google Fonts: Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
+
+## Summary
+
+You planned an 11 × 4 inch name tag, placed a logo, added a readable name, and kept the design inside a safe margin. You saved the editable PSD and exported a full-size PNG for engraving. These files connect your digital-design work to the first physical laser-cutting project.

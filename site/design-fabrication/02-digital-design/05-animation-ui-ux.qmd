@@ -1,6 +1,7 @@
 ---
 title: "2D Animation with Pencil2D | Frames, Timing & Short Loops"
 description: "Create a 2–4 second logo or simple-object animation using frames, keyframes, a timeline, onion skinning, timing and export."
+sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [animation, frame, keyframe, frame-rate, timeline, onion-skinning, loop, logo]
 highlighted-terms: [frame]
@@ -8,13 +9,28 @@ toc: true
 execute: {enabled: false}
 ---
 
+## Learning goals
+
+By the end of this lesson:
+
+- I can plan a short animation.
+- I can use frames, keyframes, and a timeline.
+- I can change the timing and make a smooth loop.
+- I can save the working file and export the animation.
+
+## Why this is useful
+
+Animation helps you show change, movement, and ideas over time. The same planning skills are useful in videos, games, websites, presentations, and product demos.
+
 ## Motion is designed over time
 
-Animation is a sequence of deliberate changes shown for deliberate lengths of time. A **frame** is one image in the sequence; a **keyframe** records an important pose or change; the **timeline** controls order and duration; **onion skinning** shows nearby frames faintly so motion can be judged.
+Animation is a group of images shown in order. A **frame** is one image. A **keyframe** shows an important pose or change. The **timeline** controls the order and timing. **Onion skinning** shows nearby frames lightly so you can compare them.
+
+Each frame shows one moment in the motion.
 
 ## Beginner tool: Pencil2D
 
-[Pencil2D](https://www.pencil2d.org/) is a focused open-source tool for hand-drawn raster and vector animation. Keep the first task small enough to revise:
+[Pencil2D](https://www.pencil2d.org/) is a free tool for simple raster and vector animation. Keep the first task short:
 
 1. storyboard a start, change and return;
 2. create the main keyframes first;
@@ -29,12 +45,16 @@ Animate the student's original logo, lettermark or one simple object for **2–4
 
 ## Evaluate the loop
 
-Ask another viewer what they notice first and whether the loop feels intentional. Check the silhouette, timing, distracting jumps, first/last-frame transition, crop, background and export quality. Save the editable Pencil2D file as well as the exported animation.
+Ask another person what they notice first. Check the timing, sudden jumps, the first and last frames, the crop, and the background. Save the editable Pencil2D file and the exported animation.
 
 Use [Blender](06-blender-artistic-3d.qmd) when the goal becomes artistic 3D animation or rendering. Use [parametric CAD](../04-3d-printing/01-additive-cad.qmd) when the goal is a dimension-driven fabrication part.
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** Strongly relevant to **TGJ2O Communications Technology** and related senior courses in animation and digital imagery. It also supports **TIJ1O** exploration and **TDJ** design communication through planning, testing, feedback and iteration.
+**Design curriculum:** Complete this lesson after [Raster, Vector, and SVG](01-raster-vector-svg.qmd). It supports **TGJ2O**, **TIJ1O**, and **TDJ** work with planning, images, feedback, and revision.
 :::
 
-Next: [Blender for Artistic 3D Design](06-blender-artistic-3d.qmd) or [Small Website & UI/UX Portfolio](07-website-ui-ux.qmd).
+## Summary
+
+You planned a short change, drew the main keyframes, used the timeline to change the timing, and checked the loop. You saved the working file and exported a copy that other people can view.
+
+Next: use your Photopea and vector skills to make the [Name + Logo Laser-Cut Name Tag](../03-laser-cutting/01-name-logo.qmd).

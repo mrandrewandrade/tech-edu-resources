@@ -1,7 +1,7 @@
 ---
 title: "Design & Fabrication"
 subtitle: "Find a need, make an idea visible, build it, test it, and improve it."
-description: "A concise collection of design-process, logo, laser-fabrication, and tool-organizer resources."
+description: "A clear path from the design process, through digital design, to a first laser-cutting project."
 sidebar: design-fabrication
 page-layout: full
 toc: false
@@ -10,29 +10,39 @@ execute:
   enabled: false
 ---
 
-## Start with the project
+## Learning path
 
 ::: {.ter-path-grid}
 ::: {.ter-path-card}
-### N.I.C.E. Design Process
+### 1. N.I.C.E. Design Process
 
-Define the situation and needs, investigate, create and communicate, then evaluate and repeat.
+Find a need. Study the problem. Show your idea. Test it. Improve it.
 
 [Open the design process](design-process/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### Logo Design
+### 2. Digital Design
 
-Choose Photoshop, GIMP, or Photopea, then start making. Photopea runs in the browser.
+Learn the tools before making a physical project.
 
-[Open logo design](logo-design/index.qmd)
+1. [Photopea: Rough Sketch to SVG](logo-design/rough-sketch-to-svg-photopea.qmd)
+2. [Raster, Vector, and SVG](02-digital-design/01-raster-vector-svg.qmd)
+3. [2D Animation with Pencil2D](02-digital-design/05-animation-ui-ux.qmd)
 :::
 
 ::: {.ter-path-card}
-### Tool Organizer Project
+### 3. Name Tag Laser Cutting
 
-Measure real tools, plan access and support, build a prototype, and revise it from evidence.
+Use your Photopea and vector skills to design an 11 × 4 inch name tag. Then make and check the real wood part.
+
+[Open the name-tag project](03-laser-cutting/01-name-logo.qmd)
+:::
+
+::: {.ter-path-card}
+### 4. More Fabrication Projects
+
+After the name tag, use measurement, testing, and revision in larger projects.
 
 [Open the project](laser-cutting/tool-organizer.qmd)
 :::

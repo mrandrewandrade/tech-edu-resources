@@ -9,6 +9,10 @@ select their sidebar in `_metadata.yml`. Link to source `.qmd` files; Quarto
 resolves the output routes. The inherited `bs-` CSS classes remain the shared
 presentation system; Commons styling lives in `commons-overrides.css`.
 
+For student-facing instructions, follow the [student tutorial style guide](tutorial-style-guide.md).
+It defines the plain-language page order, screenshot rules, curriculum path,
+file placement, and publishing checklist.
+
 ## Daily slide decks
 
 Follow the canonical [Technology Commons Daily Slide Deck SOP](https://docs.google.com/document/d/1WNEgA-xn0oCiB0sp5rv67_SmsFuHpgxotrgjdXWIwB8/edit)

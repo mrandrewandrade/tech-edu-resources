@@ -1,6 +1,7 @@
 ---
 title: "Raster, Vector & SVG | Digital Design Foundations"
 description: "Teach pixels, resolution, vector paths, fill, stroke and SVG so students choose appropriate graphics for screens, engraving and digital fabrication."
+sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [raster-image, vector-graphic, pixel, image-resolution, image-dimensions, vector-path, node, fill, stroke, scalable-vector-graphics]
 highlighted-terms: [pixel]
@@ -8,15 +9,29 @@ toc: true
 execute: {enabled: false}
 ---
 
+## Learning goals
+
+By the end of this lesson:
+
+- I can tell the difference between a raster image and a vector image.
+- I can choose a useful file type for a job.
+- I can explain why SVG is useful for logos and making projects.
+
+## Why this is useful
+
+The wrong file can look blurry or behave badly in another program. Knowing how the file works helps you choose the right image for a screen, an engraving, or a cut line.
+
 ## Two ways to describe an image
 
-A **raster** image stores a grid of pixels. It is well suited to photographs, painted textures, and tone. Enlarging it eventually reveals the pixel grid. Resolution describes how much pixel information is available; it does not guarantee that the source is sharp or correctly sized.
+A **raster** image is made from a grid of tiny squares called pixels. Raster images work well for photos, painted textures, and shading. A raster image can look blocky when it is made too large.
 
-A **vector** image stores shapes and paths. Anchors, curves, fills, and strokes can be edited and scaled without creating a pixelated edge. Vector geometry is the normal starting point for cut lines, scored paths, logos, diagrams, and many CAD/CAM workflows.
+Each pixel stores one small piece of the image.
+
+A **vector** image is made from shapes and paths. Its points, curves, fills, and lines can be edited. It stays sharp when it is made larger or smaller. Vector files are useful for logos, diagrams, score lines, and cut lines.
 
 ## Why SVG matters
 
-SVG is an open, text-based vector format that can preserve document dimensions, paths, groups, fills, and strokes. It can move between tools, but import settings still matter. Students should verify:
+SVG is a common vector file type. It can store the page size, paths, groups, fills, and lines. It can move between many programs. Always check:
 
 - document units are millimetres when physical size matters;
 - a known rectangle measures correctly after export and import;
@@ -30,10 +45,14 @@ SVG is an open, text-based vector format that can preserve document dimensions, 
 - **Filled vector shape:** useful for clean engraved artwork.
 - **Open or closed vector path:** useful for scoring or cutting when the machine workflow recognizes it.
 
-Create a three-column comparison with the same symbol represented as a low-resolution raster, a filled vector, and an outline path. Scale each one, inspect the edges, and predict how a laser workflow would interpret it.
+Make the same symbol in three forms: a low-quality raster image, a filled vector shape, and an outline path. Make each one larger. Check the edges. Decide how a laser program may read each one.
 
 ::: {.ter-curriculum-relevance}
-**Ontario curriculum relevance:** Useful for **TGJ2O**, **TDJ2O**, and **TIJ1O** learning involving digital imagery, visual communication, file formats, CAD preparation, and digital fabrication.
+**Design curriculum:** Complete this lesson after [From Rough Sketch to SVG in Photopea](../logo-design/rough-sketch-to-svg-photopea.qmd). It supports **TGJ2O**, **TDJ2O**, and **TIJ1O** work with images, file types, design communication, and digital making.
 :::
 
-Next: [Vector Geometry & Exact Construction](02-vector-geometry.qmd).
+## Summary
+
+Raster images are made from pixels. Vector images are made from editable shapes and paths. SVG is a vector file type that stays sharp and can carry useful geometry into another program.
+
+Next: use your design in a short [2D Animation with Pencil2D](05-animation-ui-ux.qmd).

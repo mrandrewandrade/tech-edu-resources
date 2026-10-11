@@ -12,20 +12,20 @@ execute:
 
 By the end of this activity:
 
-- I can use a rough sketch as a reference instead of copying every wobble.
-- I can build a logo from editable vector shape layers.
-- I can improve symmetry, alignment, spacing, and visual weight.
-- I can save an editable PSD and export a scalable SVG.
+- I can open a sketch in Photopea.
+- I can trace the sketch with editable lines.
+- I can make both sides of a logo look even.
+- I can save a PSD and export an SVG.
 
 ## Why this is useful
 
-This is important because a strong digital design is usually refined rather than copied exactly from its first sketch. Tracing with editable vector shapes lets you correct uneven proportions while keeping the original idea.
+Your first sketch does not need to be perfect. Editable lines let you fix the shape while keeping the original idea.
 
-The same workflow is useful for personal logos, signs, decals, nameplates, laser engraving, and other projects that need clean artwork at different sizes. The PSD preserves your work for future changes, while the SVG is a compact final file that can scale without becoming blurry.
+You can use this skill for logos, signs, stickers, name tags, and laser projects. The PSD keeps your work editable. The SVG stays sharp when it is made larger or smaller.
 
 ## What you are making
 
-You will begin with a photograph of a hand-drawn mark and rebuild it with clean lines. The sketch supplies the idea. You decide the finished proportions.
+You will start with a photo of a hand-drawn mark. You will rebuild it with four clean lines. The sketch gives you the idea. You decide the final shape.
 
 The example uses four vector strokes:
 
@@ -38,7 +38,7 @@ The example uses four vector strokes:
 Build the complete symbol first. Hide the photograph only after all four strokes exist, then judge the clean silhouette and make corrections.
 :::
 
-## Before you begin
+## Before you start
 
 Open [Photopea](https://www.photopea.com/) in a modern browser. You can choose **File > Open** or drag the photograph from its folder onto Photopea.
 
@@ -47,7 +47,7 @@ You will use these parts of the editor:
 - **Toolbar:** the vertical row of tools on the left.
 - **Canvas:** the document in the centre.
 - **Layers panel:** the list of editable pieces on the right.
-- **Shape layer:** a vector object that can be resized or adjusted without becoming blurry.
+- **Shape layer:** an editable line or shape that stays sharp when you resize it.
 - **Stroke width:** the thickness of a line.
 
 ## 1. Open the sketch
@@ -56,7 +56,7 @@ Open the photograph and fit it on screen. Do not erase or paint on it. It is onl
 
 ![A blue hand-drawn AA logo opened as a reference image in Photopea.](../../assets/personal-logo-photopea/rough-sketch-to-svg/01-reference-photo.png){fig-alt="A blue hand-drawn AA logo opened as a reference image in Photopea."}
 
-Look for the simplest structure inside the rough drawing. In this example, the main decisions are the position of the top point, the angle of the two legs, the centre line, and the crossbar.
+Look for the simple shapes inside the drawing. In this example, check the top point, the two sloped legs, the centre line, and the crossbar.
 
 ## 2. Draw the first editable stroke
 
@@ -67,7 +67,7 @@ Look for the simplest structure inside the rough drawing. In this example, the m
 
 ![The first black vector line drawn over one side of the blue sketch.](../../assets/personal-logo-photopea/rough-sketch-to-svg/02-first-vector-stroke.png){fig-alt="The first black vector line drawn over one side of the blue sketch."}
 
-Photopea creates a new shape layer. This is different from drawing with a brush: the line stays editable and can be scaled cleanly.
+Photopea makes a new shape layer. A brush line is made of pixels. A shape line stays editable and sharp.
 
 ::: {.callout-note title="The sketch is a guide, not a rule"}
 Aim for a cleaner angle than the hand-drawn line. Ignore small bumps and changes in pen pressure.
@@ -79,39 +79,39 @@ Draw the remaining diagonal, the vertical centre stroke, and the crossbar. Keep 
 
 ![Four black vector strokes forming the AA logo over the original sketch, with separate shape layers visible.](../../assets/personal-logo-photopea/rough-sketch-to-svg/03-four-stroke-construction.png){fig-alt="Four black vector strokes forming the AA logo over the original sketch, with separate shape layers visible."}
 
-Work slowly and check these relationships:
+Work slowly and check these parts:
 
 - The two diagonal legs meet at one centred top point.
 - The lower endpoints of the legs are at the same height.
 - The vertical stroke is straight and centred.
 - The crossbar is level.
-- All four strokes have a similar visual weight.
+- All four lines have a similar thickness.
 
 It is fine if the first version is uneven. The next step is where the design work happens.
 
-## 4. Hide the photograph and inspect the silhouette
+## 4. Hide the photo and check the logo
 
 In the Layers panel, click the eye beside the photograph layer. The grey-and-white checkerboard means the background is transparent.
 
 ![The traced AA logo by itself on Photopea's transparent checkerboard.](../../assets/personal-logo-photopea/rough-sketch-to-svg/04-transparency-check.png){fig-alt="The traced AA logo by itself on Photopea's transparent checkerboard."}
 
-Without the sketch underneath, proportion problems become easier to see. Ask:
+The clean logo is easier to check when the photo is hidden. Ask:
 
 - Does the logo lean to one side?
 - Are the two legs equally far from the centre?
 - Is the centre stroke truly vertical?
 - Is the crossbar centred and level?
-- Does one stroke look heavier than the others?
+- Does one line look thicker than the others?
 
-## 5. Correct proportions and thickness
+## 5. Fix the size, spacing, and line thickness
 
 Select one shape layer at a time. Use the **Move tool** to reposition a whole stroke or the **Direct Select tool** to adjust its vector points. Change the stroke width in the top options bar when a line looks too heavy or too light.
 
-Make small changes, then look at the complete mark again. Perfect numerical symmetry is useful, but the final test is whether the logo *looks* balanced.
+Make one small change at a time. Then look at the whole logo again. The two sides should look even.
 
 ![A corrected, balanced black AA logo on a transparent background in Photopea.](../../assets/personal-logo-photopea/rough-sketch-to-svg/05-corrected-final-logo.png){fig-alt="A corrected, balanced black AA logo on a transparent background in Photopea."}
 
-### Design checkpoint
+### Check your work
 
 Continue only when:
 
@@ -119,7 +119,7 @@ Continue only when:
 - the two outside legs feel balanced;
 - the centre stroke is straight;
 - the crossbar is level and centred; and
-- the line thickness feels consistent.
+- the line thickness looks the same.
 
 ## 6. Save the editable working file
 
@@ -137,7 +137,7 @@ The PSD is the working file. It preserves the photograph and the editable shape 
 
 ![Photopea's Save for Web window with SVG selected as the export format.](../../assets/personal-logo-photopea/rough-sketch-to-svg/06-svg-export-settings.png){fig-alt="Photopea's Save for Web window with SVG selected as the export format."}
 
-The downloaded `.svg` is the final scalable artwork. It can be enlarged for a sign or reduced for a small label without becoming blurry.
+The downloaded `.svg` is the final artwork. It can be large on a sign or small on a label without becoming blurry.
 
 ![The completed AA logo in Photopea with a notification confirming the SVG download.](../../assets/personal-logo-photopea/rough-sketch-to-svg/07-svg-export-complete.png){fig-alt="The completed AA logo in Photopea with a notification confirming the SVG download."}
 
@@ -152,11 +152,15 @@ Submit both files:
 
 - **A line is on the photograph layer:** undo, choose the Line tool in Shape mode, and draw it again.
 - **A line is too thick or thin:** select its shape layer and change the stroke width in the top options bar.
-- **The symbol looks correct over the sketch but wrong alone:** keep the photograph hidden while correcting the proportions.
+- **The logo looks good over the sketch but wrong alone:** keep the photo hidden while you fix the size and spacing.
 - **The photo appears in the SVG:** hide the photo and export again with **add hidden layers** and **add raster graphics** turned off.
+
+::: {.ter-curriculum-relevance}
+**Design curriculum:** Complete this lesson after the [N.I.C.E. Design Process](../design-process/index.qmd). Next, learn about [Raster, Vector, and SVG](../02-digital-design/01-raster-vector-svg.qmd), then make a short [2D animation](../02-digital-design/05-animation-ui-ux.qmd). These skills lead to the [Name Tag Laser Cutting project](../03-laser-cutting/01-name-logo.qmd).
+:::
 
 ## Summary
 
-You used a rough sketch as a reference, rebuilt its main structure with editable vector strokes, and checked the logo without the photograph underneath. You then corrected the proportions and visual weight, saved an editable PSD, and exported a clean SVG.
+You used a rough sketch as a guide. You traced it with editable lines. You hid the photo, made both sides look even, saved a PSD, and exported an SVG.
 
-The important idea is not to copy every wobble in the sketch. Preserve the idea, simplify the geometry, and improve the design by comparing alignment, spacing, symmetry, and thickness.
+Do not copy every wobble in the sketch. Keep the idea, use simple lines, and make the spacing and thickness look even.
