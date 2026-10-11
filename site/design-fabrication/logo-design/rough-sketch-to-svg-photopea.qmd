@@ -17,6 +17,12 @@ By the end of this activity:
 - I can improve symmetry, alignment, spacing, and visual weight.
 - I can save an editable PSD and export a scalable SVG.
 
+## Why this is useful
+
+This is important because a strong digital design is usually refined rather than copied exactly from its first sketch. Tracing with editable vector shapes lets you correct uneven proportions while keeping the original idea.
+
+The same workflow is useful for personal logos, signs, decals, nameplates, laser engraving, and other projects that need clean artwork at different sizes. The PSD preserves your work for future changes, while the SVG is a compact final file that can scale without becoming blurry.
+
 ## What you are making
 
 You will begin with a photograph of a hand-drawn mark and rebuild it with clean lines. The sketch supplies the idea. You decide the finished proportions.
@@ -142,9 +148,15 @@ Submit both files:
 - the `.psd` working file with editable shape layers; and
 - the final `.svg` with only the finished vector artwork visible.
 
-## Common recovery
+## Common issues
 
 - **A line is on the photograph layer:** undo, choose the Line tool in Shape mode, and draw it again.
 - **A line is too thick or thin:** select its shape layer and change the stroke width in the top options bar.
 - **The symbol looks correct over the sketch but wrong alone:** keep the photograph hidden while correcting the proportions.
 - **The photo appears in the SVG:** hide the photo and export again with **add hidden layers** and **add raster graphics** turned off.
+
+## Summary
+
+You used a rough sketch as a reference, rebuilt its main structure with editable vector strokes, and checked the logo without the photograph underneath. You then corrected the proportions and visual weight, saved an editable PSD, and exported a clean SVG.
+
+The important idea is not to copy every wobble in the sketch. Preserve the idea, simplify the geometry, and improve the design by comparing alignment, spacing, symmetry, and thickness.
