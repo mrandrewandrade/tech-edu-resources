@@ -14,82 +14,63 @@ execute: {enabled: false}
 
 **This is useful because I can** predict every electrical value before building the circuit and check whether my measurements make sense.
 
-**Used in college or university:** Direct-current circuit analysis, electrical laboratories, instrumentation, and introductory electronics. [[1, Ch. 4]](../../references.qmd#ref-grob2016)
+**Used in college or university:** Direct-current circuit analysis and circuit laboratories. [[1, Ch. 4]](../../references.qmd#ref-grob2016)
 
-**Where you see it:** In a car, a switch, fuse, and lamp can form one current path. In a robot, a battery, current-limiting resistor, and status light form the same kind of series path.
+**Where you see it:** In a car, a lamp circuit can form one path through the battery, fuse, switch, and lamp. In a robot, a status light and current-limiting resistor form the same kind of path.
 
-## One path
+## Series and parallel
 
-A series circuit has one continuous current path. Opening any part stops current everywhere.
+A series circuit has one path, so the current is the same everywhere. A parallel circuit has branches that share the same two nodes, so each branch has the same voltage.
 
 <figure class="ter-circuit-figure" id="fig-series-rule">
 <img src="../../assets/electronics/schematics/series-rule-reference.svg" alt="Series circuit schematic showing one path through the source and resistors." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-series-rule">Figure 1.</a> Series-circuit reference schematic. The same current passes through every component. <a class="ter-figure-anchor" href="#fig-series-rule" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
 
-The same current passes through every component:
+Opening any component stops current everywhere.
+
+## General rules
 
 $$
 I_k = I_T
 $$ {#eq-series-current}
 
-Here, $k$ represents any component in the series path.
-
-## General series rules
-
-Series resistances add:
-
 $$
 R_T = \sum_{k=1}^{n} R_k
 $$ {#eq-series-resistance}
-
-The source voltage equals the sum of the voltage drops:
 
 $$
 V_T = \sum_{k=1}^{n} V_k
 $$ {#eq-series-voltage}
 
-Total power equals the sum of the component powers:
-
 $$
 P_T = \sum_{k=1}^{n} P_k = V_T I_T
 $$ {#eq-series-power}
-
-After finding $R_T$, calculate the circuit current with Ohm's law:
 
 $$
 I_T = \frac{V_T}{R_T}
 $$ {#eq-series-total-current}
 
-Then calculate any component voltage drop:
-
 $$
 V_k = I_T R_k
 $$ {#eq-series-component-voltage}
 
-## Voltage divider
-
-For an unloaded series voltage divider, the voltage across any resistor is
-
-$$
-V_k = V_T\frac{R_k}{R_T}
-$$ {#eq-series-divider}
-
-Equation @eq-series-divider is a shortcut derived from Ohm's law. It does not replace Equations @eq-series-current, @eq-series-resistance, and @eq-series-voltage.
-
-## Check the answer
+Here, $k$ means any component in the path. Keep full calculator precision until the final answer.
 
 $$
 \sum_{k=1}^{n} V_k \overset{?}{=} V_T
 $$ {#eq-series-voltage-check}
 
-Also confirm that the units are correct, the current is identical everywhere, and the component powers do not exceed their ratings.
+Use Equation @eq-series-voltage-check to check the voltage drops. Also check power ratings.
 
-## Notes, slides, and question sheet
+## Calculate then simulate
 
-- [Series Circuits A teaching slides](https://docs.google.com/presentation/d/1CQf3eYAcKw6tf2J7BCa38cskxnGP0T3fjBaxnLKbx-o/edit)
-- [Series Circuits A student question sheet](https://docs.google.com/document/d/1KMKU3e4OkKn40jMy5KeyGHXKcn2IftQcRiNggfYHivc/edit)
+Calculate the circuit first. Build the same series and parallel circuits in Tinkercad, measure current and voltage, then compare the calculated and simulated values.
+
+## Slides and problem set
+
+- [Parallel Review and Series Circuits teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
+- [Parallel Review and Series Circuits student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/edit)
 - [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
-- [Complete Series Circuits lesson package](../electronics-library/modules/h09-series-circuits-a.qmd)
 
 The teacher answer key is restricted.

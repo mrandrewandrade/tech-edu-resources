@@ -14,9 +14,9 @@ execute: {enabled: false}
 
 **This is useful because I can** explain how several loads operate independently from one source.
 
-**Used in college or university:** Circuit analysis, electrical distribution, instrumentation, electronics, and computer hardware.
+**Used in college or university:** Circuit analysis, electrical distribution, instrumentation, and electronics.
 
-**Where you see it:** A car connects its lights and control modules in parallel so each receives the battery voltage. A robot does the same when several sensors and controllers share one power supply.
+**Where you see it:** A car connects lights and control modules in parallel so each receives battery voltage. A robot does the same when several sensors share one supply.
 
 ## Common voltage
 
@@ -73,9 +73,10 @@ Equation @eq-parallel-current-check checks the branch currents. The equivalent r
 
 ## Notes, slides, and question sheet
 
-- [Basic Electricity to Basic Computer Systems teaching slides](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
-- [Parallel-circuit student question sheet](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit)
-- [Parallel-circuit worked answers](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit)
+- [Parallel Review and Series Circuits teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
+- [Parallel Review and Series Circuits student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/edit)
 - [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+
+The teacher answer key is restricted.
 
 These notes follow *Grob's Basic Electronics*, Chapter 5. [[1, Ch. 5]](../../references.qmd#ref-grob2016)

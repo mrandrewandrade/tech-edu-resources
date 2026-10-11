@@ -16,56 +16,47 @@ execute: {enabled: false}
 
 **Used in college or university:** Nodal analysis, mesh analysis, electronics, power systems, and control hardware. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
 
-**Where you see it:** In a car wiring harness, current splits between lights, sensors, and control modules before returning to the battery. In a robot, Kirchhoff's laws describe the same splits and voltage changes between the controller, sensors, and motors.
+**Where you see it:** In a car wiring harness, current splits between lights and control modules. In a robot, it splits between the controller, sensors, and motors.
 
 ## Kirchhoff's current law
 
 <figure class="ter-circuit-figure" id="fig-kirchhoff-node-loop">
-<img src="../../assets/electronics/schematics/kirchhoff-node-loop-reference.svg" alt="Circuit schematic identifying a square junction node and a closed loop for Kirchhoff analysis." loading="lazy">
-<figcaption><a class="ter-figure-label" href="#fig-kirchhoff-node-loop">Figure 1.</a> A node is a real junction in the schematic. A loop is a complete closed path. <a class="ter-figure-anchor" href="#fig-kirchhoff-node-loop" aria-label="Link to Figure 1">#</a></figcaption>
+<img src="../../assets/electronics/schematics/kirchhoff-current-law-node.svg" alt="Square junction node with one entering current and three leaving currents." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-kirchhoff-node-loop">Figure 1.</a> At a square junction node, total current entering equals total current leaving. <a class="ter-figure-anchor" href="#fig-kirchhoff-node-loop" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
-
-Charge does not accumulate at an ideal node:
 
 $$
 \sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}
 $$ {#eq-kirchhoff-current}
 
-Equivalently, using one consistent sign convention:
-
-$$
-\sum_{k=1}^{n} I_k = 0
-$$ {#eq-kirchhoff-current-signed}
-
-An assumed current direction is allowed. A negative answer means the real direction is opposite to the arrow you selected.
+A negative answer means the real current is opposite the arrow you selected.
 
 ## Kirchhoff's voltage law
 
-The algebraic sum of voltage changes around a closed loop is zero:
+<figure class="ter-circuit-figure" id="fig-kirchhoff-two-loop">
+<img src="../../assets/electronics/schematics/kirchhoff-two-loop-network.svg" alt="Two-loop circuit with two sources, three resistors, square nodes, and labelled currents." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-kirchhoff-two-loop">Figure 2.</a> Two loops share one resistor and create two simultaneous equations. <a class="ter-figure-anchor" href="#fig-kirchhoff-two-loop" aria-label="Link to Figure 2">#</a></figcaption>
+</figure>
 
 $$
 \sum_{k=1}^{n}\Delta V_k = 0
 $$ {#eq-kirchhoff-voltage}
 
-Choose a loop direction and keep the sign convention consistent. Crossing a source from negative to positive is a rise; crossing a resistor in the direction of current is a drop.
+Choose one loop direction and keep the signs consistent. A source rise is positive; a resistor drop in the current direction is negative.
 
-## From a circuit to equations
+## Workflow
 
 1. Mark the essential nodes and independent loops.
 2. Choose and label unknown current directions.
-3. Write current-law equations at the nodes.
-4. Write voltage-law equations around independent loops.
-5. Replace resistor voltages with Ohm's law:
+3. Write current-law and voltage-law equations.
+4. Replace resistor voltage with $V=IR$.
+5. Solve without rounding, then check every original node and loop equation.
+6. Build the same network in Tinkercad and compare the simulated values.
 
-$$
-V_R = IR
-$$ {#eq-kirchhoff-ohms-law}
+## Slides and problem set
 
-6. Solve the simultaneous equations created with Equations @eq-kirchhoff-current and @eq-kirchhoff-voltage.
-7. Substitute the answers back into the original node and loop equations.
+- [Kirchhoff's Laws teaching slides](https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit)
+- [Kirchhoff's Laws student problem set](https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/edit)
+- [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
 
-## Course-material status
-
-The website notes are available now. The teaching slides and five-question sheet are the next implementation package in the sequence.
-
-Chapter 9 can follow Chapter 6. Teach the relevant digital-multimeter safety from Chapter 8 before students make physical measurements.
+The teacher answer key is restricted.

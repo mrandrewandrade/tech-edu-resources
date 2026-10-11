@@ -14,13 +14,13 @@ execute: {enabled: false}
 
 **This is useful because I can** find several unknown currents or voltages at the same time.
 
-**Used in college or university:** Linear algebra, numerical methods, circuits, statics, structures, process models, and control. [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
+**Used in college or university:** Linear algebra, numerical methods, circuits, structures, process models, and control. [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
 
-**Where you see it:** A technician can model several unknown currents in a car wiring network at once. A robotics engineer uses the same system-of-equations method for sensor networks, motor currents, structures, and control models.
+**Where you see it:** A technician can model several currents in a car wiring network at once. A robotics engineer uses the same mathematics for sensor networks, motor currents, and control models.
 
 ## A system of equations
 
-Two circuit equations with two unknowns have the general form
+Each independent Kirchhoff loop gives one equation. Write every equation in the same variable order:
 
 $$
 \begin{aligned}
@@ -29,7 +29,12 @@ a_{21}x_1 + a_{22}x_2 &= b_2
 \end{aligned}
 $$ {#eq-linear-system}
 
-The same system can be written as a matrix equation:
+<figure class="ter-circuit-figure" id="fig-circuit-matrix-form">
+<img src="../../assets/electronics/schematics/circuit-matrix-form.svg" alt="Two simultaneous circuit equations written as a two by two matrix equation." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-circuit-matrix-form">Figure 1.</a> Coefficients form $A$, unknown currents form $\mathbf{x}$, and source voltages form $\mathbf{b}$. <a class="ter-figure-anchor" href="#fig-circuit-matrix-form" aria-label="Link to Figure 1">#</a></figcaption>
+</figure>
+
+The same system is
 
 $$
 \underbrace{
@@ -56,42 +61,31 @@ $$
 A\mathbf{x}=\mathbf{b}
 $$ {#eq-linear-compact}
 
-## Build the matrix from Kirchhoff equations
+## Solve and check
 
-1. Choose the unknown node voltages or loop currents.
-2. Write every Kirchhoff equation in the same variable order.
-3. Move the unknown terms to the left and known source terms to the right.
-4. Put the coefficients into $A$, the unknowns into $\mathbf{x}$, and the source values into $\mathbf{b}$.
-5. Solve and check the result in the original circuit equations.
-
-## Solving methods
-
-For a small system, use substitution or elimination. For a larger system, use row reduction or a numerical solver.
-
-When $A$ is invertible,
-
-$$
-\mathbf{x}=A^{-1}\mathbf{b}
-$$ {#eq-linear-inverse}
-
-In engineering software, solve the system directly instead of manually calculating the inverse.
-
-## Check the answer
-
-Substitute the solution into the original equations or calculate the residual:
+Use substitution or elimination for a small system. Use a simultaneous-equation or matrix solver for a larger system. Keep the variable order and units consistent, then substitute the answer into the original equations or calculate the residual:
 
 $$
 \mathbf{r}=A\mathbf{x}-\mathbf{b}
 $$ {#eq-linear-residual}
 
-A correct solution should give a residual vector close to zero:
-
 $$
 \mathbf{r}\approx\mathbf{0}
 $$ {#eq-linear-zero-residual}
 
-Equations @eq-linear-residual and @eq-linear-zero-residual give a numerical check on the solution.
+A large residual can flag a wrong sign, wrong measurement, or wiring fault.
 
-## Course-material status
+## Three unknowns
 
-The website notes are available now. The teaching slides and five-question sheet will follow the Kirchhoff package so students first learn how the equations come from a real circuit.
+<figure class="ter-circuit-figure" id="fig-circuit-matrix-three">
+<img src="../../assets/electronics/schematics/circuit-matrix-three-equations.svg" alt="Three simultaneous equations for three unknown circuit currents." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-circuit-matrix-three">Figure 2.</a> Three independent equations solve three unknown currents using the same workflow. <a class="ter-figure-anchor" href="#fig-circuit-matrix-three" aria-label="Link to Figure 2">#</a></figcaption>
+</figure>
+
+## Slides and problem set
+
+- [Simultaneous Equations and Matrices teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
+- [Simultaneous Equations and Matrices student problem set](https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/edit)
+- [Kirchhoff's Laws notes](kirchhoffs-laws.qmd)
+
+The teacher answer key is restricted.
