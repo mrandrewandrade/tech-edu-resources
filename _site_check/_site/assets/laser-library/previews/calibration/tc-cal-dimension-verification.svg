@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="436.3636" viewBox="0 0 220 150">
+<title>Dimension verification sheet</title>
+<desc>A 100 mm square, diagonal and 50 mm circle for checking exported physical scale.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;calibration&quot;,&quot;description&quot;:&quot;A 100 mm square, diagonal and 50 mm circle for checking exported physical scale.&quot;,&quot;dimensional_tests&quot;:{&quot;circle_diameter_mm&quot;:50,&quot;square_height_mm&quot;:100,&quot;square_width_mm&quot;:100},&quot;dimensions&quot;:{&quot;height&quot;:150,&quot;width&quot;:220},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/calibration/tc-cal-dimension-verification.svg&quot;,&quot;svg&quot;:&quot;generated/svg/calibration/tc-cal-dimension-verification.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-cal-dimension-verification&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Verify dimensions and local machine operation mapping before fabrication.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;SCORE&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;dimensions&quot;,&quot;tags&quot;:[&quot;calibration&quot;,&quot;circle&quot;,&quot;dimension&quot;,&quot;ruler&quot;,&quot;square&quot;],&quot;title&quot;:&quot;Dimension verification sheet&quot;,&quot;tool_family&quot;:&quot;none&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="220" height="150" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="10" y="10" width="100" height="100" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<circle cx="160" cy="60" r="25" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+</g>
+<g id="score" aria-label="SCORE">
+<line x1="10" y1="10" x2="110" y2="110" fill="none" stroke="#0000ff" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="SCORE" data-closed="false"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="60" y="118" font-family="sans-serif" font-size="3.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">100.00 mm square</text>
+<text x="160" y="94" font-family="sans-serif" font-size="3.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">50.00 mm circle</text>
+<text x="110" y="140" font-family="sans-serif" font-size="3.2" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">MEASURE X, Y AND DIAGONAL</text>
+</g>
+</svg>

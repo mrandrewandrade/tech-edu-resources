@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="274.2857" viewBox="0 0 210 90">
+<title>Slot-width gauge 3–12 mm</title>
+<desc>Seven cut slots provide direct physical checks of finished slot width after kerf compensation.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;jigs-gauges&quot;,&quot;description&quot;:&quot;Seven cut slots provide direct physical checks of finished slot width after kerf compensation.&quot;,&quot;dimensional_tests&quot;:{&quot;largest_slot_width_mm&quot;:12,&quot;smallest_slot_width_mm&quot;:3},&quot;dimensions&quot;:{&quot;height&quot;:90,&quot;width&quot;:210},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Veccy&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/jigs-gauges/tc-jig-slot-width.svg&quot;,&quot;svg&quot;:&quot;generated/svg/jigs-gauges/tc-jig-slot-width.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-jig-slot-width&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Measure the fabricated slots; nominal SVG width is not proof of finished width on a laser cutter.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;slot_widths_mm&quot;:[3,4,5,6,8,10,12]},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;slot-gauges&quot;,&quot;tags&quot;:[&quot;gauge&quot;,&quot;jig&quot;,&quot;slot&quot;,&quot;slot-gauges&quot;,&quot;width&quot;],&quot;title&quot;:&quot;Slot-width gauge 3\u201312 mm&quot;,&quot;tool_family&quot;:&quot;slot-gauges&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="210" height="90" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="0.5" y="0.5" width="209" height="89" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="16.5" y="30" width="3" height="28" rx="1.5" ry="1.5" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="45" y="30" width="4" height="28" rx="2" ry="2" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="73.5" y="30" width="5" height="28" rx="2.5" ry="2.5" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="102" y="30" width="6" height="28" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="130" y="30" width="8" height="28" rx="4" ry="4" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="158" y="30" width="10" height="28" rx="5" ry="5" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="186" y="30" width="12" height="28" rx="6" ry="6" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="105" y="10" font-family="sans-serif" font-size="3.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">SLOT WIDTH CHECK</text>
+<text x="18" y="70" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">3 mm</text>
+<text x="47" y="70" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">4 mm</text>
+<text x="76" y="70" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">5 mm</text>
+<text x="105" y="70" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">6 mm</text>
+<text x="134" y="70" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">8 mm</text>
+<text x="163" y="70" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">10 mm</text>
+<text x="192" y="70" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">12 mm</text>
+</g>
+</svg>

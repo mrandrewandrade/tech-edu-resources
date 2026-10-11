@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="216mm" height="170mm" viewBox="0 0 216 170">
+<title>Wall and Mounting Palette</title>
+<desc>Mounting and removable-module building blocks.</desc>
+<metadata id="technology-commons-classroom-kit">{&quot;description&quot;:&quot;Mounting and removable-module building blocks.&quot;,&quot;palette&quot;:&quot;wall-mounting&quot;,&quot;review_status&quot;:&quot;unverified&quot;,&quot;safety&quot;:&quot;Instructor approval and load testing required.&quot;,&quot;title&quot;:&quot;Wall and Mounting Palette&quot;,&quot;units&quot;:&quot;mm&quot;,&quot;version&quot;:&quot;1.0.0&quot;}</metadata>
+<text x="10" y="12" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="start" data-role="annotation">WALL + MOUNTING</text>
+<text x="10" y="20" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="400" text-anchor="start" data-role="annotation">The wall, fasteners and anchors carry the load. Laser-cut parts are not automatically load-rated.</text>
+<text x="10" y="27" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">RED = CUT · BLUE = SCORE · dimensions in mm · test before production</text>
+<g id="component-two-hole-mount" aria-label="Two-hole mount" data-hole-mm="5" data-spacing-mm="56">
+<rect x="8" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Two-hole mount</text>
+<text x="13" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">100 × 30 · Ø5</text>
+<rect x="15" y="51" width="82" height="25" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="28" cy="63.5" r="2.5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="84" cy="63.5" r="2.5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-keyhole-plate" aria-label="Keyhole test plate" data-review="prototype-only">
+<rect x="112" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Keyhole test plate</text>
+<text x="117" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">80 × 32 · test screw head</text>
+<rect x="120" y="50" width="80" height="32" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="135" cy="62" r="5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<path d="M 132 64 H 138 V 76 H 132 Z" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-cleat-face" aria-label="Cleat module face" data-width-mm="90" data-height-mm="40">
+<rect x="8" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Cleat module face</text>
+<text x="13" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">90 × 40</text>
+<rect x="11" y="115" width="90" height="40" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<line x1="18" y1="143" x2="94" y2="143" fill="none" stroke="#0000ff" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="SCORE"/>
+</g>
+<g id="component-removable-foot" aria-label="Bench foot" data-width-mm="70" data-height-mm="28" data-slot-width-mm="6">
+<rect x="112" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Bench foot</text>
+<text x="117" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">70 × 28 · slot 6</text>
+<path d="M 125 124 H 195 V 152 H 169 V 138 H 163 V 152 H 125 Z" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="306.087" viewBox="0 0 230 110">
+<title>Metric wrench-size gauge 6–19 mm</title>
+<desc>Ten exact-width slots compare the across-flats dimension of metric hex heads and nuts.</desc>
+<metadata id="technology-commons-metadata">{&quot;attribution&quot;:&quot;Technology Commons teaching materials by Andrew Andrade and contributors&quot;,&quot;category&quot;:&quot;jigs-gauges&quot;,&quot;description&quot;:&quot;Ten exact-width slots compare the across-flats dimension of metric hex heads and nuts.&quot;,&quot;dimensional_tests&quot;:{&quot;largest_slot_width_mm&quot;:19,&quot;smallest_slot_width_mm&quot;:6},&quot;dimensions&quot;:{&quot;height&quot;:110,&quot;width&quot;:230},&quot;editors&quot;:[&quot;Inkscape&quot;,&quot;Vectorpea&quot;],&quot;files&quot;:{&quot;preview&quot;:&quot;generated/previews/jigs-gauges/tc-jig-wrench-size.svg&quot;,&quot;svg&quot;:&quot;generated/svg/jigs-gauges/tc-jig-wrench-size.svg&quot;},&quot;fit_type&quot;:&quot;none&quot;,&quot;generator&quot;:{&quot;name&quot;:&quot;technology-commons-laser-generator&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;id&quot;:&quot;tc-jig-wrench-size&quot;,&quot;kerf_assumptions&quot;:{&quot;clearance_mm&quot;:0.15,&quot;kerf_mm&quot;:0.15,&quot;warning&quot;:&quot;Starting values only; select from a physical calibration cut.&quot;},&quot;license&quot;:&quot;CC-BY-SA-4.0&quot;,&quot;material&quot;:{&quot;measured_thickness_mm&quot;:6.0,&quot;name&quot;:&quot;Baltic birch plywood&quot;,&quot;nominal&quot;:&quot;1/4 inch&quot;,&quot;warning&quot;:&quot;Measure every sheet; nominal 1/4 inch plywood is not necessarily 6.35 mm.&quot;},&quot;notes&quot;:&quot;Use only after measuring kerf compensation; this reference does not replace a wrench or caliper.&quot;,&quot;operations&quot;:[&quot;CUT&quot;,&quot;ENGRAVE&quot;],&quot;parameters&quot;:{&quot;reference&quot;:&quot;hex-across-flats&quot;,&quot;slot_widths_mm&quot;:[6,7,8,10,12,13,14,15,17,19]},&quot;review_status&quot;:&quot;unverified&quot;,&quot;sensitivity&quot;:&quot;none&quot;,&quot;shop&quot;:&quot;general&quot;,&quot;skill_level&quot;:&quot;introductory&quot;,&quot;source_reference&quot;:&quot;Original procedural geometry; no traced or copied commercial artwork.&quot;,&quot;subcategory&quot;:&quot;wrench-size&quot;,&quot;tags&quot;:[&quot;gauge&quot;,&quot;jig&quot;,&quot;size&quot;,&quot;wrench&quot;,&quot;wrench-size&quot;],&quot;title&quot;:&quot;Metric wrench-size gauge 6\u201319 mm&quot;,&quot;tool_family&quot;:&quot;wrench-size&quot;,&quot;trademark_status&quot;:&quot;original-generic&quot;,&quot;units&quot;:&quot;mm&quot;}</metadata>
+<rect x="0" y="0" width="230" height="110" fill="#fffdf8"/>
+<g id="cut" aria-label="CUT">
+<rect x="0.5" y="0.5" width="229" height="109" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="21" y="31" width="6" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="65.5" y="31" width="7" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="110" y="31" width="8" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="154" y="31" width="10" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="198" y="31" width="12" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="17.5" y="73" width="13" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="62" y="73" width="14" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="106.5" y="73" width="15" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="150.5" y="73" width="17" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+<rect x="194.5" y="73" width="19" height="15" rx="1" ry="1" fill="none" stroke="#ff0000" stroke-width="0.1" vector-effect="non-scaling-stroke" data-operation="CUT" data-closed="true"/>
+</g>
+<g id="engrave" aria-label="ENGRAVE">
+<text x="115" y="10" font-family="sans-serif" font-size="3.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">HEX / NUT ACROSS-FLATS CHECK</text>
+<text x="24" y="54" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">6 mm</text>
+<text x="69" y="54" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">7 mm</text>
+<text x="114" y="54" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">8 mm</text>
+<text x="159" y="54" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">10 mm</text>
+<text x="204" y="54" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">12 mm</text>
+<text x="24" y="96" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">13 mm</text>
+<text x="69" y="96" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">14 mm</text>
+<text x="114" y="96" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">15 mm</text>
+<text x="159" y="96" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">17 mm</text>
+<text x="204" y="96" font-family="sans-serif" font-size="2.4" text-anchor="middle" fill="#000000" stroke="none" data-operation="ENGRAVE">19 mm</text>
+</g>
+</svg>

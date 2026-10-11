@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="216mm" height="170mm" viewBox="0 0 216 170">
+<title>Standing Name Tag Components</title>
+<desc>Four adaptable support concepts for an open-ended stability investigation.</desc>
+<metadata id="technology-commons-classroom-kit">{&quot;description&quot;:&quot;Four adaptable support concepts for an open-ended stability investigation.&quot;,&quot;material_example_mm&quot;:6.0,&quot;physical_test_status&quot;:&quot;unverified&quot;,&quot;project&quot;:&quot;make-it-stand&quot;,&quot;review_status&quot;:&quot;unverified&quot;,&quot;title&quot;:&quot;Standing Name Tag Components&quot;,&quot;units&quot;:&quot;mm&quot;,&quot;version&quot;:&quot;1.0.0&quot;}</metadata>
+<text x="10" y="12" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="start" data-role="annotation">STANDING NAME TAG COMPONENTS</text>
+<text x="10" y="20" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="400" text-anchor="start" data-role="annotation">Choose and adapt a support concept; this sheet does not prescribe one finished stand.</text>
+<text x="10" y="27" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">RED = CUT · BLUE = SCORE · dimensions in mm · test before production</text>
+<g id="stand-triangle-leg" aria-label="Triangle leg" data-concept="triangle-leg">
+<rect x="8" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Triangle leg</text>
+<text x="13" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">50 × 50 · simple support</text>
+<polygon points="27,82 77,82 27,32" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="stand-t-foot" aria-label="T-foot" data-concept="t-foot" data-slot-width-mm="6">
+<rect x="112" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">T-foot</text>
+<text x="117" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">80 × 35 · slot to calibrate</text>
+<path d="M 120 78 H 200 V 88 H 166 V 60 H 160 V 88 H 120 Z" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="stand-cross-foot" aria-label="Cross-foot pair" data-concept="cross-foot" data-slot-width-mm="6">
+<rect x="8" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Cross-foot pair</text>
+<text x="13" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">70 × 24 · half slots</text>
+<path d="M 18 123 H 94 V 147 H 59 V 135 H 53 V 147 H 18 Z" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="stand-easel-leg" aria-label="Easel back" data-concept="easel" data-pivot-mm="4">
+<rect x="112" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Easel back</text>
+<text x="117" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">70 × 18 · pivot Ø4</text>
+<rect x="126" y="122" width="70" height="18" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="187" cy="131" r="2" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+</svg>

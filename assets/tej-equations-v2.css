@@ -1,0 +1,94 @@
+.ter-equation-shell {
+  margin: 1.1rem 0 1.35rem;
+  padding: .75rem .9rem .55rem;
+  border: 1px solid #d9dee2;
+  border-radius: .55rem;
+  background: #fbfcfd;
+}
+
+.ter-equation-shell > p {
+  margin: 0;
+  overflow: visible;
+}
+
+.ter-equation-shell mjx-container[display="true"] {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 !important;
+  padding: .65rem .25rem .8rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ter-equation-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: .35rem;
+  margin-top: .35rem;
+}
+
+.ter-equation-copy {
+  padding: .2rem .45rem;
+  border: 1px solid #aeb8c2;
+  border-radius: .3rem;
+  background: #fff;
+  color: #23313d;
+  font: 600 .72rem/1.25 Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.ter-equation-copy:hover,
+.ter-equation-copy:focus-visible {
+  border-color: #315a76;
+  background: #eef4f8;
+  outline: none;
+}
+
+.ter-circuit-figure {
+  margin: 1.25rem auto 1.5rem;
+  padding: 1rem;
+  border: 1px solid #d9dee2;
+  border-radius: .65rem;
+  background: #fff;
+  text-align: center;
+}
+
+.ter-circuit-figure img {
+  display: block;
+  width: min(100%, 54rem);
+  max-height: 30rem;
+  margin: 0 auto .65rem;
+  object-fit: contain;
+}
+
+.ter-circuit-figure figcaption {
+  color: #4a5863;
+  font: .88rem/1.4 Arial, Helvetica, sans-serif;
+}
+
+.ter-figure-label {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ter-figure-anchor {
+  display: inline-block;
+  margin-left: .25rem;
+  color: #657782;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ter-figure-label:hover,
+.ter-figure-label:focus-visible,
+.ter-figure-anchor:hover,
+.ter-figure-anchor:focus-visible {
+  color: #254f69;
+  text-decoration: underline;
+}
+
+@media print {
+  .ter-equation-toolbar { display: none; }
+  .ter-equation-shell { border: 0; padding: 0; background: transparent; }
+}

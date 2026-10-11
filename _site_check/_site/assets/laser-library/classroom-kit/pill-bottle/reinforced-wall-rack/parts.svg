@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400mm" height="225mm" viewBox="0 0 400 225">
+<title>Reinforced Wall Rack</title>
+<desc>True-size reference parts for a configurable pill-bottle organizer.</desc>
+<metadata id="technology-commons-classroom-kit">{&quot;bom&quot;:[{&quot;part&quot;:&quot;shelf&quot;,&quot;qty&quot;:1,&quot;size_mm&quot;:[190,70]},{&quot;part&quot;:&quot;back&quot;,&quot;qty&quot;:1,&quot;size_mm&quot;:[190,90]},{&quot;part&quot;:&quot;gusset&quot;,&quot;qty&quot;:2,&quot;size_mm&quot;:[60,60]},{&quot;part&quot;:&quot;approved wall fastener&quot;,&quot;qty&quot;:3,&quot;size&quot;:&quot;site-specific&quot;}],&quot;description&quot;:&quot;True-size reference parts for a configurable pill-bottle organizer.&quot;,&quot;design&quot;:&quot;reinforced-wall-rack&quot;,&quot;parameters&quot;:{&quot;assembly&quot;:&quot;two shelf tabs locate in the back; gussets reinforce the shelf-to-back joint&quot;,&quot;bottle_body_diameter_mm&quot;:34.0,&quot;cap_diameter_mm&quot;:42.0,&quot;capacity&quot;:4,&quot;centre_spacing_mm&quot;:42.0,&quot;material_thickness_example_mm&quot;:6.0,&quot;mounting&quot;:&quot;wall&quot;,&quot;opening_diameter_mm&quot;:36.0,&quot;physical_test_status&quot;:&quot;unverified&quot;,&quot;radial_clearance_mm&quot;:1.0,&quot;safety&quot;:&quot;Instructor approves wall, anchors, fasteners and load test.&quot;,&quot;shelf_tab_width_mm&quot;:30,&quot;slot_start_mm&quot;:6.2},&quot;project&quot;:&quot;pill-bottle-organizer&quot;,&quot;review_status&quot;:&quot;unverified&quot;,&quot;title&quot;:&quot;Reinforced Wall Rack&quot;,&quot;units&quot;:&quot;mm&quot;,&quot;version&quot;:&quot;1.0.0&quot;}</metadata>
+<text x="8" y="10" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="6" font-weight="700" text-anchor="start" data-role="annotation">REINFORCED WALL RACK</text>
+<text x="8" y="17" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" text-anchor="start" data-role="annotation">Reference assembly · verify bottle, material, kerf, joints and mounting</text>
+<text x="8" y="29" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="700" text-anchor="start" data-role="annotation">SHELF</text>
+<text x="8" y="34" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" data-role="annotation">QTY 1 · 190 × 70 · tabs + 4 × Ø36</text>
+<path d="M 8 34 H 78 V 28 H 108 V 34 H 198 V 104 H 108 V 110 H 78 V 104 H 8 Z" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="38" cy="69" r="18" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="80" cy="69" r="18" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="122" cy="69" r="18" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="164" cy="69" r="18" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<text x="8" y="119" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="700" text-anchor="start" data-role="annotation">BACK</text>
+<text x="8" y="124" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" data-role="annotation">QTY 1 · 190 × 90 · slots + 3 × Ø5 mount</text>
+<rect x="8" y="124" width="190" height="90" rx="3" ry="3" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="28" cy="143" r="2.5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="103" cy="143" r="2.5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<circle cx="178" cy="143" r="2.5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<rect x="78" y="168" width="30" height="6.2" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<rect x="128" y="168" width="30" height="6.2" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<text x="218" y="29" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="700" text-anchor="start" data-role="annotation">GUSSET</text>
+<text x="218" y="34" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" data-role="annotation">QTY 2 · 60 × 60</text>
+<polygon points="218,94 278,94 218,34" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<polygon points="288,94 348,94 288,34" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+<text x="218" y="174" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4" font-weight="700" text-anchor="start" data-role="annotation">CUT FILE CHECK</text>
+<text x="218" y="181" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" text-anchor="start" data-role="annotation">□ mm + viewBox</text>
+<text x="218" y="187" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" text-anchor="start" data-role="annotation">□ one outline each</text>
+<text x="218" y="193" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" text-anchor="start" data-role="annotation">□ test opening</text>
+<text x="218" y="199" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" text-anchor="start" data-role="annotation">□ label parts</text>
+</svg>

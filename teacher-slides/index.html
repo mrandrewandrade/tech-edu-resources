@@ -90,6 +90,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/commons-overrides.css">
 <link rel="stylesheet" href="../assets/bs-learn.css">
 <link rel="stylesheet" href="../assets/tej-curriculum.css">
+<link rel="stylesheet" href="../assets/tej-equations-v2.css">
 <link rel="stylesheet" href="../assets/teacher-slides.css">
 <meta property="og:title" content="General Slides – Technological Education Resources">
 <meta property="og:description" content="Search reusable classroom slides across mathematics, science, business, technology, arts, human well-being, and other learning environments.">
@@ -558,6 +559,34 @@ ul.task-list li input[type="checkbox"] {
 
   }) || "";
 
+
+
+  window.terEquationSources = [];
+
+  document.querySelectorAll("span.math.display").forEach(function (equation, index) {
+
+    const source = equation.textContent
+
+      .trim()
+
+      .replace(/^\\\[\s*/, "")
+
+      .replace(/\s*\\\]$/, "")
+
+      .replace(/\s*\\tag\{[^}]+\}\s*$/, "")
+
+      .trim();
+
+    const key = "ter-equation-" + (index + 1);
+
+    equation.dataset.terEquationKey = key;
+
+    window.terEquationSources.push({ key: key, source: source });
+
+  });
+
+
+
   [
 
     "commons-lore.js",
@@ -568,7 +597,9 @@ ul.task-list li input[type="checkbox"] {
 
     "bs-reference-titles.js",
 
-    "bs-learn-scroll.js"
+    "bs-learn-scroll.js",
+
+    "tej-equations-v1.js"
 
   ].forEach(function (file) {
 

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">From a paper sketch to three useful shapes</title>
+  <desc id="desc">A landscape is drawn on paper, photographed, and reduced to a circle, triangle, and curve that can be traced in Photopea.</desc>
+  <rect width="1200" height="500" rx="30" fill="#eef4f7"/>
+  <style>
+    .title{font:700 27px 'Source Sans 3',Arial,sans-serif;fill:#0b2e4f}.label{font:700 21px 'Source Sans 3',Arial,sans-serif;fill:#0b2e4f}.note{font:500 18px 'Source Sans 3',Arial,sans-serif;fill:#405568}.paper{fill:#fff;stroke:#9fb2c1;stroke-width:3}.sketch{fill:none;stroke:#646e75;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.arrow{fill:none;stroke:#4d7188;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+  <text class="title" x="48" y="50">Worked example: find the shapes worth tracing</text>
+  <g transform="translate(45 82)">
+    <rect class="paper" width="320" height="350" rx="18"/>
+    <text class="label" x="24" y="38">1. Sketch on paper</text>
+    <circle cx="244" cy="112" r="42" fill="#f6c45b" opacity=".65"/>
+    <path class="sketch" d="M42 253 118 139 167 207 219 129 286 253"/>
+    <path class="sketch" d="M48 286 Q148 235 280 282"/>
+    <path d="M55 100c20-20 38 7 57-10m-69 22c27-18 48 8 75-11" stroke="#bcc7ce" stroke-width="4" fill="none"/>
+    <text class="note" x="24" y="326">Dark lines photograph clearly.</text>
+  </g>
+  <path class="arrow" d="M388 258h58m-20-20 20 20-20 20"/>
+  <g transform="translate(470 82)">
+    <rect class="paper" width="320" height="350" rx="18"/>
+    <text class="label" x="24" y="38">2. Circle 3 ingredients</text>
+    <circle cx="93" cy="138" r="42" fill="#f1b434"/>
+    <path d="M130 252 203 119l78 133z" fill="#2f6f52"/>
+    <path d="M45 287 Q151 224 278 282" fill="none" stroke="#2382b5" stroke-width="22" stroke-linecap="round"/>
+    <text class="note" x="45" y="94">CIRCLE</text><text class="note" x="188" y="94">TRIANGLE</text>
+    <text class="note" x="122" y="326">CURVE</text>
+  </g>
+  <path class="arrow" d="M813 258h58m-20-20 20 20-20 20"/>
+  <g transform="translate(895 82)">
+    <rect class="paper" width="260" height="350" rx="18"/>
+    <text class="label" x="24" y="38">3. Trace these</text>
+    <circle cx="91" cy="138" r="40" fill="#111820"/>
+    <path d="M57 264 150 100l92 164z" fill="#111820"/>
+    <path d="M35 290 Q125 236 228 286" fill="none" stroke="#111820" stroke-width="23" stroke-linecap="round"/>
+    <circle cx="139" cy="205" r="115" fill="none" stroke="#22a6cc" stroke-width="5" stroke-dasharray="12 10"/>
+    <text class="note" x="24" y="326">Leave the details behind.</text>
+  </g>
+</svg>

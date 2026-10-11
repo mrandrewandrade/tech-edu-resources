@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="216mm" height="170mm" viewBox="0 0 216 170">
+<title>Basic Geometry Palette</title>
+<desc>Exact-size primitive parts for Inkscape.</desc>
+<metadata id="technology-commons-classroom-kit">{&quot;description&quot;:&quot;Exact-size primitive parts for Inkscape.&quot;,&quot;palette&quot;:&quot;basic-geometry&quot;,&quot;review_status&quot;:&quot;unverified&quot;,&quot;title&quot;:&quot;Basic Geometry Palette&quot;,&quot;units&quot;:&quot;mm&quot;,&quot;version&quot;:&quot;1.0.0&quot;}</metadata>
+<text x="10" y="12" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="start" data-role="annotation">BASIC GEOMETRY</text>
+<text x="10" y="20" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.6" font-weight="400" text-anchor="start" data-role="annotation">Copy a named group; set exact W/H in Inkscape before arranging the project.</text>
+<text x="10" y="27" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">RED = CUT · BLUE = SCORE · dimensions in mm · test before production</text>
+<g id="component-rectangle-60x30" aria-label="Rectangle part" data-width-mm="60" data-height-mm="30">
+<rect x="8" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Rectangle part</text>
+<text x="13" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">60 × 30</text>
+<rect x="26" y="51" width="60" height="30" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-rounded-60x30" aria-label="Rounded rectangle" data-width-mm="60" data-height-mm="30" data-radius-mm="5">
+<rect x="112" y="34" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="42" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Rounded rectangle</text>
+<text x="117" y="89" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">60 × 30 · R5</text>
+<rect x="130" y="51" width="60" height="30" rx="5" ry="5" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-disc-40" aria-label="Circle part" data-diameter-mm="40" data-semantic="circle-part">
+<rect x="8" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="13" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Circle part</text>
+<text x="13" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">Ø40 · material kept</text>
+<circle cx="56" cy="128" r="20" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+<g id="component-triangle-50" aria-label="Triangle part" data-base-mm="50" data-height-mm="40">
+<rect x="112" y="102" width="96" height="60" rx="2" ry="2" fill="none" stroke="#c5cbd3" stroke-width="0.25" vector-effect="non-scaling-stroke" stroke-dasharray="2 2" data-operation="ENGRAVE"/>
+<text x="117" y="110" fill="#111111" stroke="none" font-family="Arial, sans-serif" font-size="4.3" font-weight="700" text-anchor="start" data-role="annotation">Triangle part</text>
+<text x="117" y="157" fill="#7b8794" stroke="none" font-family="Arial, sans-serif" font-size="3.2" font-weight="400" text-anchor="start" data-role="annotation">50 base × 40 high</text>
+<polygon points="135,145 185,145 160,105" fill="none" stroke="#ff0000" stroke-width="0.25" vector-effect="non-scaling-stroke" data-operation="CUT"/>
+</g>
+</svg>

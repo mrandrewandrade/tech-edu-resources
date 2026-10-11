@@ -1,0 +1,387 @@
+{
+  "files": [
+    {
+      "description": "Exact-size primitive parts for Inkscape.",
+      "kind": "palette",
+      "parameters": {
+        "palette": "basic-geometry"
+      },
+      "path": "palettes/basic-geometry.svg",
+      "review_status": "unverified",
+      "title": "Basic Geometry Palette"
+    },
+    {
+      "description": "Hole and circle-part semantics shown with exact geometry.",
+      "kind": "palette",
+      "parameters": {
+        "kerf_note": "Nominal geometry is not finished fit; cut a test coupon.",
+        "palette": "hole"
+      },
+      "path": "palettes/hole.svg",
+      "review_status": "unverified",
+      "title": "Hole Palette"
+    },
+    {
+      "description": "Four fit starting points for measured 6 mm material.",
+      "kind": "palette",
+      "parameters": {
+        "material_example_mm": 6.0,
+        "palette": "slot"
+      },
+      "path": "palettes/slot.svg",
+      "review_status": "unverified",
+      "title": "Slot Palette"
+    },
+    {
+      "description": "Reusable supports, feet and braces.",
+      "kind": "palette",
+      "parameters": {
+        "palette": "structure"
+      },
+      "path": "palettes/structure.svg",
+      "review_status": "unverified",
+      "title": "Structure Palette"
+    },
+    {
+      "description": "Mounting and removable-module building blocks.",
+      "kind": "palette",
+      "parameters": {
+        "palette": "wall-mounting",
+        "safety": "Instructor approval and load testing required."
+      },
+      "path": "palettes/wall-mounting.svg",
+      "review_status": "unverified",
+      "title": "Wall and Mounting Palette"
+    },
+    {
+      "description": "Measured openings, labels and dividers.",
+      "kind": "palette",
+      "parameters": {
+        "palette": "organizer"
+      },
+      "path": "palettes/organizer.svg",
+      "review_status": "unverified",
+      "title": "Organizer Palette"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "height_mm": 30,
+        "semantic": "part",
+        "width_mm": 60
+      },
+      "path": "components/rectangle-60x30.svg",
+      "review_status": "unverified",
+      "title": "Rectangle Part 60 \u00d7 30"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "diameter_mm": 40,
+        "semantic": "circle-part"
+      },
+      "path": "components/circle-part-40.svg",
+      "review_status": "unverified",
+      "title": "Circle Part \u00d840"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "diameter_mm": 6,
+        "semantic": "hole"
+      },
+      "path": "components/hole-coupon-6.svg",
+      "review_status": "unverified",
+      "title": "Hole Coupon \u00d86"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "fit": "slip",
+        "material_example_mm": 6.0,
+        "slot_width_mm": 6.15
+      },
+      "path": "components/slot-coupon-6p15.svg",
+      "review_status": "unverified",
+      "title": "Slip Slot Coupon 6.15"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "height_mm": 50,
+        "semantic": "structure",
+        "width_mm": 50
+      },
+      "path": "components/gusset-50.svg",
+      "review_status": "unverified",
+      "title": "Right-Triangle Gusset 50"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "hole_mm": 5,
+        "semantic": "mounting",
+        "spacing_mm": 70
+      },
+      "path": "components/two-hole-mount-100x30.svg",
+      "review_status": "unverified",
+      "title": "Two-Hole Mount Plate"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "opening_mm": 36,
+        "outer_mm": 54,
+        "semantic": "organizer"
+      },
+      "path": "components/bottle-retainer-36.svg",
+      "review_status": "unverified",
+      "title": "Bottle Retainer Ring"
+    },
+    {
+      "description": "Exact-size label-free component.",
+      "kind": "individual-component",
+      "parameters": {
+        "height_mm": 18,
+        "semantic": "organizer",
+        "width_mm": 60
+      },
+      "path": "components/label-tab-60x18.svg",
+      "review_status": "unverified",
+      "title": "Label Tab"
+    },
+    {
+      "description": "Editable template for a measured pre-cut blank.",
+      "kind": "project-template",
+      "parameters": {
+        "default_blank_mm": [
+          100,
+          40
+        ],
+        "safe_margin_mm": 5
+      },
+      "path": "name-tag/name-tag-engraving-template.svg",
+      "review_status": "unverified",
+      "title": "Name and Logo Engraving Template"
+    },
+    {
+      "description": "Good and poor engraving layouts for critique.",
+      "kind": "teacher-diagram",
+      "parameters": {},
+      "path": "name-tag/name-tag-layout-examples.svg",
+      "review_status": "unverified",
+      "title": "Name and Logo Layout Examples"
+    },
+    {
+      "description": "Four support concepts for the standing-name-tag task.",
+      "kind": "component-set",
+      "parameters": {
+        "concept_count": 4
+      },
+      "path": "standing-name-tag/standing-name-tag-components.svg",
+      "review_status": "unverified",
+      "title": "Standing Name Tag Components"
+    },
+    {
+      "description": "True-size reference parts; adapt measured parameters before cutting.",
+      "kind": "reference-assembly",
+      "parameters": {
+        "assembly": "side tabs locate in matching shelf and base slots; dry-fit before adhesive or approved fasteners",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench/free-standing",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "slot_start_mm": 6.2,
+        "tab_width_mm": 20
+      },
+      "path": "pill-bottle/simple-shelf-rack/parts.svg",
+      "review_status": "unverified",
+      "title": "Simple Shelf Rack"
+    },
+    {
+      "description": "Assembly relationship diagram.",
+      "kind": "teacher-diagram",
+      "parameters": {
+        "design": "simple-shelf-rack"
+      },
+      "path": "pill-bottle/simple-shelf-rack/exploded.svg",
+      "review_status": "unverified",
+      "title": "Simple Shelf Rack Exploded Diagram"
+    },
+    {
+      "description": "True-size reference parts; adapt measured parameters before cutting.",
+      "kind": "reference-assembly",
+      "parameters": {
+        "assembly": "dowels align and separate two plates",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "dowel_diameter_mm": 6.0,
+        "dowel_hole_start_mm": 6.4,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench/free-standing",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0
+      },
+      "path": "pill-bottle/dowel-supported-rack/parts.svg",
+      "review_status": "unverified",
+      "title": "Dowel Supported Rack"
+    },
+    {
+      "description": "Assembly relationship diagram.",
+      "kind": "teacher-diagram",
+      "parameters": {
+        "design": "dowel-supported-rack"
+      },
+      "path": "pill-bottle/dowel-supported-rack/exploded.svg",
+      "review_status": "unverified",
+      "title": "Dowel Supported Rack Exploded Diagram"
+    },
+    {
+      "description": "True-size reference parts; adapt measured parameters before cutting.",
+      "kind": "reference-assembly",
+      "parameters": {
+        "assembly": "two shelf tabs locate in the back; gussets reinforce the shelf-to-back joint",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "wall",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "Instructor approves wall, anchors, fasteners and load test.",
+        "shelf_tab_width_mm": 30,
+        "slot_start_mm": 6.2
+      },
+      "path": "pill-bottle/reinforced-wall-rack/parts.svg",
+      "review_status": "unverified",
+      "title": "Reinforced Wall Rack"
+    },
+    {
+      "description": "Assembly relationship diagram.",
+      "kind": "teacher-diagram",
+      "parameters": {
+        "design": "reinforced-wall-rack"
+      },
+      "path": "pill-bottle/reinforced-wall-rack/exploded.svg",
+      "review_status": "unverified",
+      "title": "Reinforced Wall Rack Exploded Diagram"
+    },
+    {
+      "description": "True-size reference parts; adapt measured parameters before cutting.",
+      "kind": "reference-assembly",
+      "parameters": {
+        "assembly": "two removable M6 hand knobs register the same module to either bench supports or an approved wall adapter",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "interface_hole_mm": 6.4,
+        "interface_spacing_mm": 130,
+        "material_thickness_example_mm": 6.0,
+        "mounting": "removable wall/bench",
+        "opening_diameter_mm": 36.0,
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "Adapter interface and wall installation require instructor approval and load testing."
+      },
+      "path": "pill-bottle/removable-wall-bench-rack/parts.svg",
+      "review_status": "unverified",
+      "title": "Removable Wall Bench Rack"
+    },
+    {
+      "description": "Assembly relationship diagram.",
+      "kind": "teacher-diagram",
+      "parameters": {
+        "design": "removable-wall-bench-rack"
+      },
+      "path": "pill-bottle/removable-wall-bench-rack/exploded.svg",
+      "review_status": "unverified",
+      "title": "Removable Wall Bench Rack Exploded Diagram"
+    },
+    {
+      "description": "True-size reference parts; adapt measured parameters before cutting.",
+      "kind": "reference-assembly",
+      "parameters": {
+        "assembly": "the lower plate locates each bottle body; the removable upper plate sits below the cap shoulder and is retained by two hand knobs",
+        "bottle_body_diameter_mm": 34.0,
+        "cap_capture_per_side_mm": 2.0,
+        "cap_diameter_mm": 42.0,
+        "capacity": 4,
+        "centre_spacing_mm": 42.0,
+        "interface_hole_mm": 6.4,
+        "keeper_opening_diameter_mm": 38.0,
+        "keeper_type": "hand-knob-retained removable upper plate",
+        "material_thickness_example_mm": 6.0,
+        "mounting": "bench or approved wall backer",
+        "opening_diameter_mm": 36.0,
+        "physical_test_record_fields": [
+          "bottle body diameter",
+          "cap diameter",
+          "material thickness",
+          "opening fit",
+          "keeper height",
+          "knob clearance",
+          "load test",
+          "revision"
+        ],
+        "physical_test_status": "unverified",
+        "radial_clearance_mm": 1.0,
+        "safety": "The keeper is a serviceable anti-lift feature, not a child-resistant lock. Physically test access, load path and wall mounting before use.",
+        "service_sequence": [
+          "support bottles",
+          "remove two hand knobs",
+          "lift keeper plate",
+          "remove or replace bottles",
+          "refit plate and hand knobs",
+          "record fit and revision"
+        ]
+      },
+      "path": "pill-bottle/captured-bottle-rack/parts.svg",
+      "review_status": "unverified",
+      "title": "Captured Bottle Rack"
+    },
+    {
+      "description": "Assembly relationship diagram.",
+      "kind": "teacher-diagram",
+      "parameters": {
+        "design": "captured-bottle-rack"
+      },
+      "path": "pill-bottle/captured-bottle-rack/exploded.svg",
+      "review_status": "unverified",
+      "title": "Captured Bottle Rack Exploded Diagram"
+    },
+    {
+      "description": "Parameters, BOMs, notes and verification status for five references.",
+      "kind": "manifest",
+      "parameters": {
+        "design_count": 5
+      },
+      "path": "pill-bottle/assemblies.json",
+      "review_status": "unverified",
+      "title": "Pill-Bottle Assembly Manifest"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "review_notice": "Software-checked does not mean physically tested. Every fabrication reference remains unverified until a recorded test.",
+  "schema_version": 1,
+  "title": "Technology Commons First Laser Projects Classroom Kit",
+  "units": "mm",
+  "version": "1.0.0"
+}

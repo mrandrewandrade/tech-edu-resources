@@ -1,0 +1,89 @@
+.tej-roadmap-cta {
+  margin: 1rem 0 1.5rem;
+  padding: 1.25rem 1.35rem;
+  border: 2px solid #1769aa;
+  border-radius: .85rem;
+  background: #edf6fc;
+  box-shadow: 0 .55rem 1.5rem rgba(30, 43, 85, .08);
+}
+
+.tej-roadmap-cta h2 { margin-top: 0; }
+.tej-roadmap-cta p:last-child { margin-bottom: 0; }
+
+.tej-roadmap-filter-row {
+  display: grid;
+  grid-template-columns: minmax(15rem, 1.4fr) repeat(3, minmax(10rem, .6fr));
+  gap: .75rem;
+  margin: 1rem 0;
+}
+
+.tej-roadmap-filter-row label { font-weight: 700; }
+.tej-roadmap-filter-row input,
+.tej-roadmap-filter-row select {
+  width: 100%;
+  margin-top: .25rem;
+  padding: .65rem .7rem;
+  border: 1px solid #687783;
+  border-radius: .35rem;
+  background: #fff;
+}
+
+.tej-roadmap-unit-summary {
+  max-width: 100%;
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+  border-left: .35rem solid #1e2b55;
+  background: #f7f8fa;
+  overflow-x: auto;
+}
+
+.tej-roadmap-module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.tej-roadmap-module {
+  min-width: 0;
+  max-width: 100%;
+  padding: 1rem 1.1rem;
+  border: 1px solid #d9dee2;
+  border-radius: .75rem;
+  background: #fff;
+  box-shadow: 0 .4rem 1.2rem rgba(30, 43, 85, .06);
+  overflow-wrap: anywhere;
+}
+
+.tej-roadmap-module[hidden] { display: none; }
+.tej-roadmap-module h3 { margin-top: 0; }
+.tej-roadmap-module details { margin-top: .75rem; }
+.tej-roadmap-module summary { cursor: pointer; font-weight: 700; }
+.tej-roadmap-module table { font-size: .9rem; }
+.tej-roadmap-module details { overflow-x: auto; }
+.tej-roadmap-result-count { font-weight: 700; }
+
+.tej-roadmap-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.tej-badge.status-published { border-color: #22733a; background: #edf8ef; color: #174f29; }
+.tej-badge.status-pilot { border-color: #8b5a00; background: #fff4d6; color: #633f00; }
+.tej-badge.status-in-development { border-color: #1769aa; background: #edf6fc; color: #124c7b; }
+.tej-badge.status-planned { border-color: #687783; background: #f1f3f4; color: #39434a; }
+.tej-badge.status-bonus { border-color: #6f42c1; background: #f4effc; color: #4c2d85; }
+.tej-badge.status-restricted-source { border-color: #9b2c2c; background: #fff0f0; color: #702020; }
+
+@media (max-width: 900px) {
+  .tej-roadmap-filter-row { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 620px) {
+  .tej-roadmap-filter-row,
+  .tej-roadmap-module-grid { grid-template-columns: 1fr; }
+}
+
+@media print {
+  .tej-roadmap-filter-row { display: none; }
+  .tej-roadmap-module { break-inside: avoid; box-shadow: none; }
+}

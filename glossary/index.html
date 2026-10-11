@@ -90,6 +90,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/commons-overrides.css">
 <link rel="stylesheet" href="../assets/bs-learn.css">
 <link rel="stylesheet" href="../assets/tej-curriculum.css">
+<link rel="stylesheet" href="../assets/tej-equations-v2.css">
 <meta property="og:title" content="Glossary – Technological Education Resources">
 <meta property="og:description" content="A searchable reference for basic Technological Education design, electrical, measurement, motion, and unit vocabulary.">
 <meta property="og:site_name" content="Technological Education Resources">
@@ -17247,6 +17248,34 @@ The <a class="bs-inline-glossary" href="#resistance" data-bs-glossary-slug="resi
 
   }) || "";
 
+
+
+  window.terEquationSources = [];
+
+  document.querySelectorAll("span.math.display").forEach(function (equation, index) {
+
+    const source = equation.textContent
+
+      .trim()
+
+      .replace(/^\\\[\s*/, "")
+
+      .replace(/\s*\\\]$/, "")
+
+      .replace(/\s*\\tag\{[^}]+\}\s*$/, "")
+
+      .trim();
+
+    const key = "ter-equation-" + (index + 1);
+
+    equation.dataset.terEquationKey = key;
+
+    window.terEquationSources.push({ key: key, source: source });
+
+  });
+
+
+
   [
 
     "commons-lore.js",
@@ -17257,7 +17286,9 @@ The <a class="bs-inline-glossary" href="#resistance" data-bs-glossary-slug="resi
 
     "bs-reference-titles.js",
 
-    "bs-learn-scroll.js"
+    "bs-learn-scroll.js",
+
+    "tej-equations-v1.js"
 
   ].forEach(function (file) {
 

@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.15">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Install Linux Mint 22.3 Zena Xfce Edition on an approved classroom computer and record the result.">
+
+<title>Install Linux Mint 22.3 Xfce – Technological Education Resources</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-71c7b49c685e597d910cb795eccce780.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a8915aa26982f2aa87b37c986303974c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.svg">
+
+<link rel="icon" type="image/png" sizes="96x96" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon-96x96.png">
+
+<link rel="icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.ico" sizes="any">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/apple-touch-icon.png">
+
+<link rel="manifest" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/site.webmanifest">
+
+<meta name="theme-color" content="#062650">
+
+
+
+<link rel="stylesheet" href="../../assets/bs-shared.css">
+<link rel="stylesheet" href="../../assets/bs-components.css">
+<link rel="stylesheet" href="../../assets/commons-overrides.css">
+<link rel="stylesheet" href="../../assets/bs-learn.css">
+<link rel="stylesheet" href="../../assets/tej-curriculum.css">
+<link rel="stylesheet" href="../../assets/tej-equations-v2.css">
+<meta property="og:title" content="Install Linux Mint 22.3 Xfce – Technological Education Resources">
+<meta property="og:description" content="Install Linux Mint 22.3 Zena Xfce Edition on an approved classroom computer and record the result.">
+<meta property="og:image" content="https://andrewandrade.ca/tech-edu-resources/assets/linux-mint-install/installer-language.png">
+<meta property="og:site_name" content="Technological Education Resources">
+<meta property="og:image:alt" content="Linux Mint installer language screen with English selected">
+<meta property="og:image:height" content="652">
+<meta property="og:image:width" content="834">
+<meta name="twitter:title" content="Install Linux Mint 22.3 Xfce – Technological Education Resources">
+<meta name="twitter:description" content="Install Linux Mint 22.3 Zena Xfce Edition on an approved classroom computer and record the result.">
+<meta name="twitter:image" content="https://andrewandrade.ca/tech-edu-resources/assets/linux-mint-install/installer-language.png">
+<meta name="twitter:image:alt" content="Linux Mint installer language screen with English selected">
+<meta name="twitter:image-height" content="652">
+<meta name="twitter:image-width" content="834">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked nav-fixed bs-learn-article quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo light-content">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Tech Edu</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-educator-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Educator Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-educator-resources">    
+        <li>
+    <a class="dropdown-item" href="../../teacher-slides/index.html">
+ <span class="dropdown-text">General Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-materials/index.html">
+ <span class="dropdown-text">General Materials</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../design-fabrication/index.html">
+ <span class="dropdown-text">General Design &amp; Fabrication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tej3-4/index.html">
+ <span class="dropdown-text">TEJ Notes</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-classes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Classes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-classes">    
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tas-2-sem-1.html">
+ <span class="dropdown-text">TAS Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tej-3-sem-1.html">
+ <span class="dropdown-text">TEJ Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-ttj-sem-1.html">
+ <span class="dropdown-text">TTJ / TTS Slides</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../glossary/index.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lore/index.html"> 
+<span class="menu-text">Lore</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/index.html">Linux, Operating Systems &amp; Networking</a></li><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/install-linux-mint.html">Install Linux Mint</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/engineering-preparation-track/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Engineering Preparation Track</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electronics Lesson Library</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/circuits/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Circuits</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/index.html#significant-figures" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Significant Figures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/index.html#notation-and-metric-prefixes" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Scientific &amp; Engineering Notation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/index.html#ohms-law-and-power" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ohm's Law &amp; Power</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/index.html#guess-method" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GUESS Method</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/series-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Series Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/parallel-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Parallel Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/series-parallel-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Series-Parallel Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/kirchhoffs-laws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kirchhoff’s Laws</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/linear-algebra-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linear Algebra for Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/index.html#questions-answers-and-class-artifacts" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Class Resources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/linux-operating-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linux, Operating Systems &amp; Networking</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/choosing-a-distribution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Choosing a Linux Distribution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/install-linux-mint.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Install Linux Mint</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#before-you-begin" id="toc-before-you-begin" class="nav-link active" data-scroll-target="#before-you-begin">Before you begin</a>
+  <ul class="collapse">
+  <li><a href="#how-the-classroom-usb-was-made" id="toc-how-the-classroom-usb-was-made" class="nav-link" data-scroll-target="#how-the-classroom-usb-was-made">How the classroom USB was made</a></li>
+  </ul></li>
+  <li><a href="#start-the-live-system" id="toc-start-the-live-system" class="nav-link" data-scroll-target="#start-the-live-system">1. Start the live system</a>
+  <ul class="collapse">
+  <li><a href="#on-the-classroom-intel-imacs-and-mac-minis" id="toc-on-the-classroom-intel-imacs-and-mac-minis" class="nav-link" data-scroll-target="#on-the-classroom-intel-imacs-and-mac-minis">On the classroom Intel iMacs and Mac minis</a></li>
+  <li><a href="#on-a-windows-pc" id="toc-on-a-windows-pc" class="nav-link" data-scroll-target="#on-a-windows-pc">On a Windows PC</a></li>
+  </ul></li>
+  <li><a href="#choose-the-language" id="toc-choose-the-language" class="nav-link" data-scroll-target="#choose-the-language">2. Choose the language</a></li>
+  <li><a href="#connect-to-the-classroom-wi-fi" id="toc-connect-to-the-classroom-wi-fi" class="nav-link" data-scroll-target="#connect-to-the-classroom-wi-fi">3. Connect to the classroom Wi-Fi</a></li>
+  <li><a href="#install-multimedia-codecs" id="toc-install-multimedia-codecs" class="nav-link" data-scroll-target="#install-multimedia-codecs">4. Install multimedia codecs</a></li>
+  <li><a href="#choose-the-installation-type" id="toc-choose-the-installation-type" class="nav-link" data-scroll-target="#choose-the-installation-type">5. Choose the installation type</a></li>
+  <li><a href="#set-the-time-zone" id="toc-set-the-time-zone" class="nav-link" data-scroll-target="#set-the-time-zone">6. Set the time zone</a></li>
+  <li><a href="#set-the-keyboard-layout" id="toc-set-the-keyboard-layout" class="nav-link" data-scroll-target="#set-the-keyboard-layout">7. Set the keyboard layout</a></li>
+  <li><a href="#create-the-classroom-account" id="toc-create-the-classroom-account" class="nav-link" data-scroll-target="#create-the-classroom-account">8. Create the classroom account</a></li>
+  <li><a href="#explore-safely-while-the-installer-works" id="toc-explore-safely-while-the-installer-works" class="nav-link" data-scroll-target="#explore-safely-while-the-installer-works">9. Explore safely while the installer works</a></li>
+  <li><a href="#restart-into-the-installed-system" id="toc-restart-into-the-installed-system" class="nav-link" data-scroll-target="#restart-into-the-installed-system">10. Restart into the installed system</a></li>
+  <li><a href="#test-the-new-installation" id="toc-test-the-new-installation" class="nav-link" data-scroll-target="#test-the-new-installation">11. Test the new installation</a></li>
+  <li><a href="#lab-log" id="toc-lab-log" class="nav-link" data-scroll-target="#lab-log">Lab log</a></li>
+  <li><a href="#sources-and-image-credit" id="toc-sources-and-image-credit" class="nav-link" data-scroll-target="#sources-and-image-credit">Sources and image credit</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/index.html">Linux, Operating Systems &amp; Networking</a></li><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/install-linux-mint.html">Install Linux Mint</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Install Linux Mint 22.3 Xfce</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Linux</div>
+    <div class="quarto-category">Linux Mint</div>
+    <div class="quarto-category">Xfce</div>
+    <div class="quarto-category">installation</div>
+    <div class="quarto-category">operating systems</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Install Linux Mint 22.3 Zena Xfce Edition on an approved classroom computer and record the result.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Linux Mint is a Linux operating system that usually <strong>just works</strong> and is easy for new users. We are installing <strong>Linux Mint 22.3 “Zena” Xfce Edition</strong>. Xfce has a familiar, classic Windows-like layout and uses fewer system resources, which makes it a good fit for our older computers with less than 8 GB of RAM.</p>
+<div class="callout-danger" title="This lab erases the computer">
+<p>Choose <strong>Erase disk and install Linux Mint</strong> only on the classroom computer assigned by your teacher. This deletes Windows, accounts, programs, and every file on the selected drive. Stop and ask your teacher before continuing if you are not certain that the computer and drive are approved.</p>
+</div>
+<p>This classroom guide is adapted from the <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html">official Linux Mint Installation Guide</a>. The installer screenshots come from that guide. Screens can change slightly between releases, and the example names or checkboxes shown in a screenshot may not match our required classroom settings. <strong>Follow the written choices on this page.</strong></p>
+<section id="before-you-begin" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-begin">Before you begin</h2>
+<p>You need:</p>
+<ul>
+<li>the assigned classroom computer;</li>
+<li>a Linux Mint 22.3 “Zena” Xfce USB installer signed out from your teacher;</li>
+<li>the classroom Wi-Fi credentials; and</li>
+<li>your lab log.</li>
+</ul>
+<p>Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.</p>
+<section id="how-the-classroom-usb-was-made" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-classroom-usb-was-made">How the classroom USB was made</h3>
+<p>The teacher, with help from student volunteers, prepared the bootable USB drives before this lab. They downloaded the Linux Mint Xfce <strong><code>.iso</code> image</strong> from the <a href="https://linuxmint.com/download.php/">official Linux Mint download page</a> and used <a href="https://etcher.balena.io/">balenaEtcher</a> to write the image to a USB drive. On Windows, <a href="https://rufus.ie/">Rufus</a> is another good tool for creating a bootable USB.</p>
+<p>An ISO cannot simply be copied onto a USB like an ordinary file. A tool such as Etcher or Rufus writes the image in a form the computer can start from. This process erases the USB drive, so do not try it with a personal drive unless its contents are safely backed up.</p>
+<p>For this lab, <strong>sign out a prepared USB from your teacher</strong>. Record its number if your class uses numbered drives, and return it when the installation is complete.</p>
+</section>
+</section>
+<section id="start-the-live-system" class="level2">
+<h2 class="anchored" data-anchor-id="start-the-live-system">1. Start the live system</h2>
+<p>Insert the Linux Mint USB drive, then start or restart the computer. You need to choose the USB as the startup device before the existing operating system loads.</p>
+<section id="on-the-classroom-intel-imacs-and-mac-minis" class="level3">
+<h3 class="anchored" data-anchor-id="on-the-classroom-intel-imacs-and-mac-minis">On the classroom Intel iMacs and Mac minis</h3>
+<ol type="1">
+<li>Press the power button or restart the Mac.</li>
+<li>Immediately hold <strong>Option (⌥)</strong> or <strong>Alt</strong> until Startup Manager appears.</li>
+<li>Select the USB drive (it may appear as <strong>EFI Boot</strong>) and press <strong>Enter/Return</strong>. If the USB does not appear, stop and ask your teacher.</li>
+</ol>
+<p>Apple documents the Option/Alt startup shortcut in its <a href="https://support.apple.com/en-ca/102603">Intel Mac startup-key guide</a>.</p>
+</section>
+<section id="on-a-windows-pc" class="level3">
+<h3 class="anchored" data-anchor-id="on-a-windows-pc">On a Windows PC</h3>
+<p>The startup key is different for almost every manufacturer and model. Common keys include <strong>Delete</strong>, <strong>F1</strong>, <strong>F2</strong>, <strong>F10</strong>, <strong>F11</strong>, <strong>F12</strong>, and <strong>Escape</strong>.</p>
+<ol type="1">
+<li>Watch the first manufacturer-logo screen for a message such as <strong>Boot Menu</strong>, <strong>Boot Options</strong>, <strong>Setup</strong>, <strong>BIOS</strong>, or <strong>UEFI</strong>.</li>
+<li>Press the listed key repeatedly as the computer starts. Try the one-time <strong>Boot Menu</strong> first and select the USB drive.</li>
+<li>If there is no boot menu, enter the BIOS/UEFI settings and, with teacher approval, temporarily move the USB drive ahead of the internal drive in the boot order. Do not change unrelated settings.</li>
+</ol>
+<p>If the key is not shown, search for <strong><code>manufacturer model boot menu key</code></strong> or <strong><code>manufacturer model boot from USB</code></strong>. Include the exact manufacturer and model printed on the computer. The <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/boot.html">official Linux Mint boot guide</a> also lists common keys.</p>
+<p>Choose the normal <strong>Start Linux Mint</strong> option when the Linux Mint startup menu appears. Linux Mint first opens a <strong>live session</strong>: a temporary desktop running from the USB drive.</p>
+<p>The live session may feel slower than the finished installation, and changes made there are not permanent. If the live session asks for a password, leave it blank and press <strong>Enter</strong>.</p>
+<p>Double-click <strong>Install Linux Mint</strong> on the desktop.</p>
+</section>
+</section>
+<section id="choose-the-language" class="level2">
+<h2 class="anchored" data-anchor-id="choose-the-language">2. Choose the language</h2>
+<p>Select <strong>English</strong>, then select <strong>Continue</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-language.png" class="img-fluid figure-img" alt="Linux Mint installer language screen with English selected"></p>
+<figcaption>Linux Mint installer language screen with English selected.</figcaption>
+</figure>
+</div>
+</section>
+<section id="connect-to-the-classroom-wi-fi" class="level2">
+<h2 class="anchored" data-anchor-id="connect-to-the-classroom-wi-fi">3. Connect to the classroom Wi-Fi</h2>
+<p>Select the classroom network and connect using the Wi-Fi credentials given in class.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Do not use guest Wi-Fi">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Do not use guest Wi-Fi
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do <strong>not</strong> use the guest Wi-Fi. Use only the classroom Wi-Fi credentials provided by your teacher.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-internet.png" class="img-fluid figure-img" alt="Linux Mint installer wireless network selection screen"></p>
+<figcaption>Linux Mint installer wireless-network selection screen.</figcaption>
+</figure>
+</div>
+</section>
+<section id="install-multimedia-codecs" class="level2">
+<h2 class="anchored" data-anchor-id="install-multimedia-codecs">4. Install multimedia codecs</h2>
+<p>Check <strong>Install multimedia codecs</strong>, then select <strong>Continue</strong>. Codecs help the computer play common audio and video formats.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-codecs.png" class="img-fluid figure-img" alt="Linux Mint installer option to install multimedia codecs"></p>
+<figcaption>Linux Mint installer option to install multimedia codecs.</figcaption>
+</figure>
+</div>
+</section>
+<section id="choose-the-installation-type" class="level2">
+<h2 class="anchored" data-anchor-id="choose-the-installation-type">5. Choose the installation type</h2>
+<p>Select <strong>Erase disk and install Linux Mint</strong>.</p>
+<ul>
+<li>Leave <strong>Advanced features</strong> at its default setting with <strong>None selected</strong>. We can explore advanced storage settings in a later lab.</li>
+<li>Do <strong>not</strong> select an encryption option for this classroom installation.</li>
+<li>Do <strong>not</strong> select <strong>Something else</strong>.</li>
+<li>Do <strong>not</strong> select an “install alongside” option in this lab.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-install.png" class="img-fluid figure-img" alt="Linux Mint installation type screen with Erase disk and install Linux Mint selected"></p>
+<figcaption>Linux Mint installation-type screen with Erase disk and install Linux Mint selected.</figcaption>
+</figure>
+</div>
+<p>Select <strong>Install Now</strong> or <strong>Continue</strong>, depending on the wording shown. Read the drive-change summary, confirm that it refers to the approved classroom drive, and then continue.</p>
+<p>In a future lab, we will install another operating system alongside Windows and create a <strong>dual-boot</strong> computer. That is not today’s task.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Dual-boot installations use different instructions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Dual-boot installations use different instructions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are installing Linux on your own computer and want to keep Windows, <strong>stop here and do not choose “Erase disk and install Linux Mint.”</strong> A dual-boot installation requires a current backup, enough free storage, and a careful plan for the computer’s partitions, encryption, firmware, and recovery options.</p>
+<p>It is usually easier to <strong>install Windows first and Linux second</strong>. Windows installation can replace the existing boot sequence, while Linux Mint normally detects Windows and creates a menu for choosing an operating system at startup. See Linux Mint’s <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/multiboot.html">official multi-boot guidance</a>.</p>
+<p>Before changing partitions, check whether Windows uses <strong>BitLocker/device encryption</strong>, save its recovery key, and research the exact computer model. An encrypted Windows drive may prevent a Linux installer from safely examining or resizing the Windows partitions. Ubuntu’s <a href="https://ubuntu.com/tutorials/install-ubuntu-desktop#13-installing-ubuntu-alongside-windows-with-bitlocker">BitLocker dual-boot explanation</a> describes this issue clearly.</p>
+<p>Some computers have two internal SSDs. Installing each operating system on a separate drive can make the layout easier to understand and can reduce the chance of accidentally changing the other system’s partitions or boot files. However, this is <strong>not a rule of EFI/UEFI</strong>, and it is not required on every computer. Firmware behaviour varies, even between Lenovo Legion models, so search the manufacturer, exact model, and terms such as <strong>dual boot</strong>, <strong>UEFI</strong>, and <strong>boot order</strong> before proceeding. Use a model-specific guide and ask for experienced help rather than guessing.</p>
+</div>
+</div>
+</section>
+<section id="set-the-time-zone" class="level2">
+<h2 class="anchored" data-anchor-id="set-the-time-zone">6. Set the time zone</h2>
+<p>Choose <strong>Toronto</strong>, then select <strong>Continue</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-timezone.png" class="img-fluid figure-img" alt="Linux Mint installer time zone screen"></p>
+<figcaption>Linux Mint installer time-zone screen.</figcaption>
+</figure>
+</div>
+</section>
+<section id="set-the-keyboard-layout" class="level2">
+<h2 class="anchored" data-anchor-id="set-the-keyboard-layout">7. Set the keyboard layout</h2>
+<p>Choose <strong>English (US)</strong> for the keyboard layout. Do <strong>not</strong> choose English (Canadian). Use the test box to check a few letters, numbers, and punctuation marks, then select <strong>Continue</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-keyboard.png" class="img-fluid figure-img" alt="Linux Mint installer keyboard layout screen"></p>
+<figcaption>Linux Mint installer keyboard-layout screen.</figcaption>
+</figure>
+</div>
+</section>
+<section id="create-the-classroom-account" class="level2">
+<h2 class="anchored" data-anchor-id="create-the-classroom-account">8. Create the classroom account</h2>
+<p>Enter the following settings exactly, except for the computer name:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Installer field</th>
+<th style="text-align: left;">Classroom setting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Your name</td>
+<td style="text-align: left;"><code>min</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Your computer’s name</td>
+<td style="text-align: left;">Create a unique, school-appropriate name</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pick a username</td>
+<td style="text-align: left;"><code>min</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Choose a password</td>
+<td style="text-align: left;"><code>pcss</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Confirm your password</td>
+<td style="text-align: left;"><code>pcss</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Login choice</td>
+<td style="text-align: left;"><strong>Require my password to log in</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Encrypt my home folder</td>
+<td style="text-align: left;"><strong>Leave unchecked</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Use only lowercase letters, numbers, and hyphens in the computer name, with no spaces. A name such as <code>min-tej-14</code> is clear and easy to record. Your name must be unique in the classroom.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Use the table, not the sample data in the screenshot">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Use the table, not the sample data in the screenshot
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The official screenshot shows example names and shows home-folder encryption selected. For this lab, use <code>min</code>, your unique computer name, the classroom password, <strong>Require my password to log in</strong>, and <strong>do not encrypt the home folder</strong>. The password <code>pcss</code> is for this classroom image only; never reuse it for a personal account.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-user.png" class="img-fluid figure-img" alt="Linux Mint installer user account screen"></p>
+<figcaption>Linux Mint installer user-account screen.</figcaption>
+</figure>
+</div>
+<p>Select <strong>Continue</strong> to begin the installation.</p>
+</section>
+<section id="explore-safely-while-the-installer-works" class="level2">
+<h2 class="anchored" data-anchor-id="explore-safely-while-the-installer-works">9. Explore safely while the installer works</h2>
+<p>The installation slideshow will run while files are copied.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-slideshow.png" class="img-fluid figure-img" alt="Linux Mint installation slideshow while files are copied"></p>
+<figcaption>Linux Mint installation slideshow while files are copied.</figcaption>
+</figure>
+</div>
+<p>Without closing the installer:</p>
+<ol type="1">
+<li>Open the web browser.</li>
+<li>Visit the <a href="https://andrewandrade.ca/tech-edu-resources/tej3-4/">TEJ Notes website</a> and record whether it loads.</li>
+<li>Open the main menu and find the <strong>Software Manager</strong>, Linux Mint’s “app store.” Search for <code>games</code> and record one school-appropriate game or application that looks interesting.</li>
+<li>Find the File Manager and Terminal icons. You do not need to run commands yet.</li>
+</ol>
+<p>Software installed during the live session may disappear after restart, so wait until the finished system starts before installing your chosen application.</p>
+</section>
+<section id="restart-into-the-installed-system" class="level2">
+<h2 class="anchored" data-anchor-id="restart-into-the-installed-system">10. Restart into the installed system</h2>
+<p>When the installer reports that it is finished, select <strong>Restart Now</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/linux-mint-install/installer-finished.png" class="img-fluid figure-img" alt="Linux Mint installation complete screen with Restart Now"></p>
+<figcaption>Linux Mint installation-complete screen with Restart Now.</figcaption>
+</figure>
+</div>
+<p>Remove the USB drive when the computer asks, then press <strong>Enter</strong>. Log in as <code>min</code> using the classroom password <code>pcss</code>.</p>
+</section>
+<section id="test-the-new-installation" class="level2">
+<h2 class="anchored" data-anchor-id="test-the-new-installation">11. Test the new installation</h2>
+<ol type="1">
+<li>Open the browser and confirm that the <a href="https://andrewandrade.ca/tech-edu-resources/tej3-4/">TEJ Notes website</a> still loads.</li>
+<li>Open <strong>Software Manager</strong> from the main menu.</li>
+<li>Search for <code>games</code> or search for the application you recorded earlier.</li>
+<li>With teacher approval, install one school-appropriate game or useful application. Record its exact name.</li>
+<li>Open the application once to confirm that it works.</li>
+</ol>
+<p>If you finish early, choose one optional challenge:</p>
+<ul>
+<li>change the desktop wallpaper or panel appearance without hiding essential controls;</li>
+<li>find the system-information screen and record the computer’s RAM;</li>
+<li>take a screenshot of your finished desktop;</li>
+<li>find one accessibility setting that could make the computer easier for someone to use; or</li>
+<li>compare the Linux desktop with Windows and list one similarity and one difference.</li>
+</ul>
+</section>
+<section id="lab-log" class="level2">
+<h2 class="anchored" data-anchor-id="lab-log">Lab log</h2>
+<p>Record the following in your lab log before you leave:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Prompt</th>
+<th style="text-align: left;">Your evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Computer name</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Did the TEJ Notes website load?</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Game or software installed</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">One thing I like</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">One thing I do not like yet</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">One thing I want to learn more about</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">One difference I noticed between Linux Mint and Windows</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Optional discovery or customization</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Show the installed system and completed lab log to your teacher.</p>
+</section>
+<section id="sources-and-image-credit" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-image-credit">Sources and image credit</h2>
+<ul>
+<li><a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html">Linux Mint Installation Guide: Install Linux Mint</a></li>
+<li><a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/burn.html">Linux Mint Installation Guide: Create the bootable media</a></li>
+<li><a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/boot.html">Linux Mint Installation Guide: Boot Linux Mint</a></li>
+<li><a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/multiboot.html">Linux Mint Installation Guide: Multi-boot</a></li>
+<li><a href="https://linuxmint.com/download.php/">Linux Mint 22.3 “Zena” editions</a></li>
+<li><a href="https://www.linuxmint.com/faq.php">Linux Mint FAQ: use of Linux Mint screenshots</a></li>
+<li><a href="https://support.apple.com/en-ca/102603">Apple: Mac startup key combinations</a></li>
+<li><a href="https://ubuntu.com/tutorials/install-ubuntu-desktop#13-installing-ubuntu-alongside-windows-with-bitlocker">Ubuntu: installing alongside Windows with BitLocker</a></li>
+</ul>
+<p>Linux Mint project screenshots are reproduced for this educational installation guide. This site is not affiliated with or endorsed by Linux Mint.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+
+(function () {
+
+  "use strict";
+
+  const base = ["/commons", "/tech-edu-resources"].find(function (candidate) {
+
+    return window.location.pathname === candidate ||
+
+      window.location.pathname.startsWith(candidate + "/");
+
+  }) || "";
+
+
+
+  window.terEquationSources = [];
+
+  document.querySelectorAll("span.math.display").forEach(function (equation, index) {
+
+    const source = equation.textContent
+
+      .trim()
+
+      .replace(/^\\\[\s*/, "")
+
+      .replace(/\s*\\\]$/, "")
+
+      .replace(/\s*\\tag\{[^}]+\}\s*$/, "")
+
+      .trim();
+
+    const key = "ter-equation-" + (index + 1);
+
+    equation.dataset.terEquationKey = key;
+
+    window.terEquationSources.push({ key: key, source: source });
+
+  });
+
+
+
+  [
+
+    "commons-lore.js",
+
+    "bs-learn.js",
+
+    "bs-glossary.js",
+
+    "bs-reference-titles.js",
+
+    "bs-learn-scroll.js",
+
+    "tej-equations-v1.js"
+
+  ].forEach(function (file) {
+
+    const script = document.createElement("script");
+
+    script.src = base + "/assets/" + file;
+
+    script.async = false;
+
+    document.body.appendChild(script);
+
+  });
+
+})();
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/tech-edu-resources\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Website code: <a href="https://andrewandrade.ca/commons/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/commons/licensing.html">CC BY-SA 4.0</a>.</p>
+<p>Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, <a href="https://andrewandrade.ca/">andrewandrade.ca</a>, and <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when adapting it. <strong>Sharing is caring.</strong></p>
+<p>The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../references.html">
+<p>References</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../licensing.html">
+<p>Licensing</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
