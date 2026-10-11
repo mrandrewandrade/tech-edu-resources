@@ -40,6 +40,28 @@ Keep **Learning goals** near the top. Keep **Summary** at the end.
 - Write alt text that says what the student needs to notice.
 - Do not use a screenshot when one short sentence is clearer.
 
+## Use visuals before adding more text
+
+When a picture, diagram, map, or example can teach the idea faster, use it and
+shorten the surrounding explanation.
+
+- Look for an accurate source visual before writing another paragraph.
+- Prefer visuals published by the people, community, artist, or institution
+  whose knowledge or work is being discussed.
+- Reuse a visual only when its licence or permission allows it. If reuse rights
+  are unclear, link to the creator's official page instead of copying the image.
+- Credit the creator, community or Nation when known, source, licence, and any
+  changes directly beside the visual.
+- Do not trace, imitate, or generate work in a living Indigenous artist's style.
+  Use a neutral instructional diagram for explanation and direct students to
+  the artist's own presentation of the work.
+- Give each visual useful alt text. Describe what the learner should notice,
+  not every decorative detail.
+- Use a short pattern: one-sentence introduction, visual, short caption, then
+  only the explanation the visual cannot carry.
+- Label reconstructions, interpretations, and classroom-use diagrams clearly.
+  Do not present an inferred process as a community's traditional procedure.
+
 ## Explain menu steps the same way
 
 Use this form:

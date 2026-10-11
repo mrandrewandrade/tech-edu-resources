@@ -33,6 +33,16 @@ The following tools and libraries are build dependencies and are not incorporate
 - Modifications: none to the supplied source formats; an adjacent `README.txt` records attribution, source dimensions, licence, and verification status
 - Redistribution: these files are not covered by the repository's Technology Commons CC BY-SA licence; preserve attribution and check the [current source terms](https://www.freepatternsarea.com/license-agreement/)
 
+## Turtle-shell calendar photograph
+
+- Work: `Turtle shell calendar.jpg`, an Iroquoian turtle-shell calendar display photographed at the Droulers-Tsiionhiakwatha archaeological site
+- Photographer: Pierre5018
+- Source: <https://commons.wikimedia.org/wiki/File:Turtle_shell_calendar.jpg>
+- Licence: Creative Commons Attribution-ShareAlike 4.0 International (`CC BY-SA 4.0`)
+- File: `site/assets/lore/turtle-shell-calendar-iroquoian.jpg`
+- Modifications: Wikimedia's 1024-pixel derivative was downloaded; no further visual changes were made
+- Redistribution: preserve the photographer credit, source link, licence link, and ShareAlike terms shown with the image
+
 ## Project-owned visual assets
 
 Project-created Technological Education Resources visual assets remain subject to the repository's licensing and identity terms. Their inclusion does not grant trademark or endorsement rights. See `LICENSE.md` and `docs/ASSET_PROVENANCE.md`.

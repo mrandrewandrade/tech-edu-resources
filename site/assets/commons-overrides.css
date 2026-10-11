@@ -183,3 +183,185 @@ body.bs-research-article #title-block-header .quarto-categories {
     gap: 0.35rem 0.9rem;
   }
 }
+
+/* Grandmother Moon visual teaching article. */
+body.bs-research-article .moon-lead-diagram,
+body.bs-research-article img[src*="use-turtle-calendar-diagram"] {
+  display: block;
+  width: 100%;
+  margin: 1.5rem auto 0.6rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 1rem;
+  background: #fbf7ef;
+}
+
+body.bs-research-article .moon-figure-grid,
+body.bs-research-article .moon-art-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+body.bs-research-article .moon-figure-card,
+body.bs-research-article .moon-art-card {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 0.9rem;
+  background: color-mix(in srgb, var(--bs-ivory) 58%, var(--bs-surface));
+}
+
+body.bs-research-article .moon-figure-card > :last-child,
+body.bs-research-article .moon-art-card > :last-child {
+  margin-bottom: 0;
+}
+
+body.bs-research-article .moon-figure-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.65rem;
+}
+
+body.bs-research-article .moon-number-key {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.5rem 0 1rem;
+}
+
+body.bs-research-article .moon-number-key--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.bs-research-article .moon-number-key > div {
+  display: grid;
+  align-content: start;
+  min-height: 8.5rem;
+  padding: 0.9rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 0.8rem;
+  background: var(--bs-surface);
+}
+
+body.bs-research-article .moon-number-key strong {
+  color: var(--bs-copper-dark);
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1;
+}
+
+body.bs-research-article .moon-number-key span {
+  margin-top: 0.45rem;
+  color: var(--bs-navy-dark);
+  font-weight: 760;
+}
+
+body.bs-research-article .moon-number-key small {
+  margin-top: 0.35rem;
+  color: var(--bs-text-secondary);
+  line-height: 1.35;
+}
+
+body.bs-research-article .moon-season-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.2rem 0;
+}
+
+body.bs-research-article .moon-season-grid article {
+  min-width: 0;
+  padding: 0.9rem;
+  border-top: 0.3rem solid var(--bs-copper);
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--bs-ivory) 70%, var(--bs-surface));
+}
+
+body.bs-research-article .moon-season-grid article:nth-child(4n + 2) {
+  border-top-color: #64806f;
+}
+
+body.bs-research-article .moon-season-grid article:nth-child(4n + 3) {
+  border-top-color: #537994;
+}
+
+body.bs-research-article .moon-season-grid article:nth-child(4n + 4) {
+  border-top-color: #c78b4b;
+}
+
+body.bs-research-article .moon-season-grid span,
+body.bs-research-article .moon-season-grid small {
+  color: var(--bs-text-secondary);
+  font-size: 0.82rem;
+}
+
+body.bs-research-article .moon-season-grid h3 {
+  margin: 0.35rem 0 0;
+  color: var(--bs-navy-dark);
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+body.bs-research-article .moon-season-grid p {
+  margin: 0.18rem 0 0.35rem;
+  color: var(--bs-copper-dark);
+  font-weight: 720;
+}
+
+body.bs-research-article .moon-phase-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+body.bs-research-article .moon-phase-pair > div {
+  padding: 1rem;
+  border: 1px solid var(--bs-border);
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--bs-navy-dark) 6%, var(--bs-surface));
+}
+
+body.bs-research-article .moon-phase-pair span {
+  float: left;
+  margin-right: 0.65rem;
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+body.bs-research-article .moon-phase-pair h3 {
+  margin: 0 0 0.35rem;
+  color: var(--bs-navy-dark);
+}
+
+body.bs-research-article .moon-phase-pair p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  body.bs-research-article .moon-figure-grid,
+  body.bs-research-article .moon-art-grid,
+  body.bs-research-article .moon-phase-pair {
+    grid-template-columns: 1fr;
+  }
+
+  body.bs-research-article .moon-season-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.bs-research-article .moon-number-key--three {
+    grid-template-columns: 1fr;
+  }
+
+  body.bs-research-article .moon-number-key--three > div {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  body.bs-research-article .moon-season-grid,
+  body.bs-research-article .moon-number-key {
+    grid-template-columns: 1fr;
+  }
+}
