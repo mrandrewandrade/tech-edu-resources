@@ -1,0 +1,158 @@
+---
+title: "Lesson 3 — Combine the Logo and Nameplate"
+description: "Place the finished vector logo in the nameplate, align the full design, and export PSD, PNG, and SVG files."
+sidebar: design-fabrication
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [logo, vector-graphic, png, scalable-vector-graphics, aspect-ratio]
+toc: true
+execute:
+  enabled: false
+---
+
+## Learning goals
+
+By the end of this lesson:
+
+- I can place a logo in another Photopea file.
+- I can resize a logo without stretching it.
+- I can align a logo and name so the design looks balanced.
+- I can save PSD, PNG, and SVG files.
+
+## Why this is useful
+
+A logo and a name should look like one design. Good size, spacing, and alignment make the nameplate easier to read and ready for the next project.
+
+## What you will make
+
+You will add the logo from Lesson 2 to the empty 4 × 4 inch space from Lesson 1. The final design has no background.
+
+<video controls preload="metadata" style="width:100%;height:auto" aria-label="Screen recording of the Photopea logo and nameplate lesson">
+  <source src="../../assets/name-tag-photopea/lesson-3-complete/lesson-3-combine-logo-nameplate.mp4" type="video/mp4">
+  Your browser cannot play this video. Use the screenshots and steps below.
+</video>
+
+## Before you start
+
+Finish these lessons first:
+
+1. [Lesson 1 — Build the Nameplate Text](01-nameplate-text-photopea.qmd)
+2. [Lesson 2 — Trace a Rough Logo](rough-sketch-to-svg-photopea.qmd)
+
+You need the nameplate PSD and the finished logo SVG.
+
+## 1. Open the nameplate
+
+1. Open Photopea.
+2. Choose **File > Open**.
+3. Open `Andrade-nameplate-text.psd`.
+4. Check that the 4 inch guide is still visible.
+
+![The nameplate PSD open with Andrade on the right and the four-inch guide marking the empty logo area.](../../assets/name-tag-photopea/lesson-3-complete/01-open-nameplate.png){fig-alt="The transparent nameplate open in Photopea with the name on the right and the left logo area empty."}
+
+## 2. Place the logo
+
+1. Choose **File > Open & Place**.
+2. Choose your finished logo SVG.
+3. Keep the link between **W** and **H** turned on. This keeps the logo's shape.
+4. Drag a corner to resize the logo.
+
+The logo may cover the name at first. That is normal. Resize it before judging the spacing.
+
+![The AA logo placed on the nameplate with transform handles visible.](../../assets/name-tag-photopea/lesson-3-complete/02-place-logo.png){fig-alt="The AA logo being resized with transform handles on the transparent nameplate."}
+
+## 3. Fit the logo in the left square
+
+Move the logo into the left 4 × 4 inch space.
+
+For the example:
+
+- the logo centre is near `X: 600 px` and `Y: 600 px`;
+- the width and height are about `24%`; and
+- the logo stays inside the guide with clear space around it.
+
+Your logo may need different numbers. Keep its shape locked and judge the empty space around it.
+
+![The AA logo centred inside the left four-inch area.](../../assets/name-tag-photopea/lesson-3-complete/03-align-logo.png){fig-alt="The AA logo centred in the left four-inch area with the name Andrade on the right."}
+
+## 4. Check the full design
+
+1. Press **Enter** or choose the checkmark to finish the transform.
+2. Hide guides with **View > Extras** or `Ctrl+H`.
+3. Look at the logo and name together.
+
+Check these points:
+
+- The logo has room on every side.
+- The logo and name feel centred from top to bottom.
+- The space between them is clear.
+- The name is still the easiest part to read.
+- Nothing touches an edge.
+
+![The completed transparent nameplate with the AA logo on the left and Andrade on the right.](../../assets/name-tag-photopea/lesson-3-complete/04-check-full-layout.png){fig-alt="The finished transparent nameplate with a balanced AA logo and Andrade layout."}
+
+## 5. Save the PSD and PNG
+
+1. Choose **File > Save as PSD**. Name it `Andrade-nameplate-complete.psd`.
+2. Choose **File > Export as > PNG**.
+3. Check that the size is `3300 × 1200 px`.
+4. Name it `Andrade-nameplate-complete.png`.
+5. Choose **Save**.
+
+The PNG should show the logo and name on a transparent background.
+
+![Photopea's transparent PNG export window for the completed nameplate.](../../assets/name-tag-photopea/lesson-3-complete/05-save-and-export.png){fig-alt="Photopea Save for web window set to PNG for the completed nameplate."}
+
+## 6. Export a true vector SVG
+
+A placed SVG can stay as a smart object in the PSD. Photopea may leave that smart object out of a normal SVG export.
+
+Use this checked method:
+
+1. Choose **File > Open** and open the logo SVG in its own Photopea tab.
+2. Select the logo's vector layers in the Layers panel.
+3. Copy them with `Ctrl+C`.
+4. Return to the nameplate tab and paste with `Ctrl+V`.
+5. Resize and place the pasted vector layers in the same position as the smart-object logo.
+6. Hide the smart-object logo so there is only one visible copy.
+7. Check that the name and the pasted logo paths are both visible in the Layers panel.
+8. Choose **File > Export as > SVG**.
+9. Leave **add raster graphics** off.
+10. Choose **Save**.
+
+![Photopea's Export as menu opened to the SVG choice for the all-vector nameplate.](../../assets/name-tag-photopea/lesson-3-complete/06-export-svg.png){fig-alt="Photopea File menu opened to Export as with SVG visible while the complete vector nameplate is open."}
+
+::: {.callout-warning title="Check the SVG before you submit it"}
+Open the exported SVG. Make sure both the logo and the name appear. If the logo is missing, do not submit that export. Use the checked all-vector SVG below.
+:::
+
+### Download the finished example files
+
+- [Editable PSD](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.psd)
+- [Transparent PNG](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.png)
+- [Checked all-vector SVG](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.svg)
+
+## Submit
+
+Submit all three files:
+
+- `Andrade-nameplate-complete.psd`
+- `Andrade-nameplate-complete.png`
+- `Andrade-nameplate-complete.svg`
+
+## Common issues
+
+- **The logo looks stretched:** undo, turn on the W/H link, and resize from a corner.
+- **The logo is too close to an edge:** make it smaller and centre it again.
+- **The design has a white background:** hide or remove the background layer before export.
+- **The SVG is missing the logo:** the placed logo stayed as a smart object. Use the all-vector file and export again.
+- **The name and logo do not feel connected:** adjust the gap. Keep enough space so they do not touch.
+
+::: {.ter-curriculum-relevance}
+**Design curriculum:** This lesson combines the files from [Lesson 1](01-nameplate-text-photopea.qmd) and [Lesson 2](rough-sketch-to-svg-photopea.qmd). Next, learn how [Raster, Vector, and SVG](../02-digital-design/01-raster-vector-svg.qmd) files work. These skills lead to animation and then the physical name-tag project.
+:::
+
+## Summary
+
+You placed the logo in the 4 × 4 inch space, kept its shape, checked the full layout, and made PSD, transparent PNG, and vector SVG files.
+
+Next: [Raster, Vector, and SVG](../02-digital-design/01-raster-vector-svg.qmd).

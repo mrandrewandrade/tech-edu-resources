@@ -1,6 +1,6 @@
 ---
-title: "Logo Design"
-description: "Choose a graphics editor, watch one useful example, and make a simple logo."
+title: "Photopea: Nameplate and Logo"
+description: "Make nameplate text, trace a rough logo, and combine both into one clean design."
 sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 toc: true
@@ -12,9 +12,9 @@ execute:
 
 By the end of this page:
 
-- I will be able to choose an image editor and create a simple logo or thumbnail.
+- I will be able to make a clear nameplate layout.
 - I will be able to rebuild a rough sketch as clean, editable vector artwork.
-- I will be able to save an editable file and export a usable image.
+- I will be able to combine the logo and name and export useful files.
 
 This is important because the fastest way to learn a design tool is to make something and revise it.
 
@@ -30,7 +30,11 @@ Use Photopea unless your teacher approves another tool. Keep the editable source
 
 ## Start here
 
-Follow the screenshot-led [From Rough Sketch to SVG in Photopea](rough-sketch-to-svg-photopea.qmd) activity to turn a photographed drawing into a balanced, editable vector logo. Save the working PSD, then export a scalable SVG.
+Complete the three short lessons in order:
+
+1. [Build the Nameplate Text](01-nameplate-text-photopea.qmd) — make an 11 × 4 inch file, leave room for a logo, and choose a readable font.
+2. [Trace a Rough Logo](rough-sketch-to-svg-photopea.qmd) — turn a photographed drawing into clean, editable vector lines.
+3. [Combine the Logo and Nameplate](03-combine-logo-nameplate.qmd) — align both parts and export PSD, PNG, and SVG files.
 
 ## Make something
 

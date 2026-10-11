@@ -1,5 +1,5 @@
 ---
-title: "From Rough Sketch to SVG in Photopea"
+title: "Lesson 2 — Trace a Rough Logo in Photopea"
 description: "Trace a photographed sketch with editable vector lines, improve its symmetry, and export a scalable SVG."
 sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
@@ -41,6 +41,8 @@ Build the complete symbol first. Hide the photograph only after all four strokes
 ## Before you start
 
 Open [Photopea](https://www.photopea.com/) in a modern browser. You can choose **File > Open** or drag the photograph from its folder onto Photopea.
+
+Complete [Lesson 1 — Build the Nameplate Text](01-nameplate-text-photopea.qmd) first. You will add this logo to that nameplate in Lesson 3.
 
 You will use these parts of the editor:
 
@@ -156,7 +158,7 @@ Submit both files:
 - **The photo appears in the SVG:** hide the photo and export again with **add hidden layers** and **add raster graphics** turned off.
 
 ::: {.ter-curriculum-relevance}
-**Design curriculum:** Complete this lesson after the [N.I.C.E. Design Process](../design-process/index.qmd). Next, learn about [Raster, Vector, and SVG](../02-digital-design/01-raster-vector-svg.qmd), then make a short [2D animation](../02-digital-design/05-animation-ui-ux.qmd). These skills lead to the [Name Tag Laser Cutting project](../03-laser-cutting/01-name-logo.qmd).
+**Design curriculum:** This is Lesson 2 in the Photopea sequence. Complete [Lesson 1](01-nameplate-text-photopea.qmd) first. Next, add the finished logo to the nameplate in [Lesson 3](03-combine-logo-nameplate.qmd).
 :::
 
 ## Summary
@@ -164,3 +166,5 @@ Submit both files:
 You used a rough sketch as a guide. You traced it with editable lines. You hid the photo, made both sides look even, saved a PSD, and exported an SVG.
 
 Do not copy every wobble in the sketch. Keep the idea, use simple lines, and make the spacing and thickness look even.
+
+Previous: [Lesson 1 — Build the Nameplate Text](01-nameplate-text-photopea.qmd). Next: [Lesson 3 — Combine the Logo and Nameplate](03-combine-logo-nameplate.qmd).
