@@ -1,10 +1,10 @@
 ---
-title: "Name + Logo | Photopea Engraving Worksheet"
-description: "A student-ready, screenshot-led worksheet for preparing a readable 11 × 4 inch name tag with transparent PNG logos in Photopea."
+title: "Your Turn: Design Your Own Name + Logo Name Tag"
+description: "Use the Andrade tutorial as an example, then design an original, readable 11 × 4 inch name tag with your own name and logo."
 sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, lettermark, raster-image, vector-graphic, engraving, png, scalable-vector-graphics, aspect-ratio, typography, visual-hierarchy, contrast, image-dimensions]
-highlighted-terms: [raster-image, png, logo]
+highlighted-terms: [logo]
 toc: true
 execute: {enabled: false}
 ---
@@ -13,331 +13,222 @@ execute: {enabled: false}
 
 By the end of this project:
 
-- I can make an 11 × 4 inch name-tag file.
-- I can place a logo without stretching it.
-- I can add a clear, readable name.
-- I can keep the design away from the edges.
-- I can save the PSD and export the PNG needed for engraving.
+- I can use a tutorial as a starting point without copying its final design.
+- I can try several layouts and fonts before choosing one.
+- I can make my own name and logo look balanced and easy to read.
+- I can prepare PSD, PNG, and SVG files for feedback and fabrication.
 
 ## Why this is useful
 
-This is the first project where your digital design becomes a real object. You will use the Photopea, image-file, layout, and vector skills from the earlier lessons to prepare artwork for a wood name tag.
+The tutorial showed you where the tools are and how they work. A designer must also make choices. This project asks you to use the same basic steps with **your own name, your own logo, and your own layout**.
 
-::: {.callout-note title="Finish the digital lessons first"}
-Bring the PSD, transparent PNG, and SVG from [Photopea Lesson 3](../logo-design/03-combine-logo-nameplate.qmd). This project builds on that work. Do not start the graphics again unless the design needs a change.
-:::
+You are designing for a real object. Good spacing, readable letters, and clean files make the name tag easier to understand and easier to manufacture.
 
-::: {.callout-warning title="Work in progress"}
-This worksheet is an evolving classroom draft. Confirm measurements, machine settings, material approval, and the instructor's local laser procedure before fabrication. Record anything that needs revision after the first student test.
+::: {.callout-important title="This is the task after the Andrade tutorial"}
+Finish [Photopea Lesson 3 and its video](../logo-design/03-combine-logo-nameplate.qmd) first. The ANDRADE file is a worked example, not your submission. Save a new copy and replace the example with your own design.
 :::
 
 ::: {.ter-project-brief}
 ## Design brief
 
-Create a clean engraving file for a **teacher-supplied, pre-cut 11 × 4 inch wood name-tag blank**. Place a transparent PNG logo, add a readable name, keep intentional space around every element, and export one full-size PNG for engraving. The example uses the Technology Commons emblem, Andrew's AA lettermark, and **NDRADE**, so the AA mark acts as the first A in **ANDRADE**.
+Create an original name tag for a teacher-approved **11 × 4 inch blank**. Put a personal logo in the left area and your name in the remaining space. The name must be readable from about 2 metres away. Keep everything away from the edges and prepare clean files for teacher approval.
 :::
 
-[Open the editable name-tag worksheet in Google Docs](https://docs.google.com/document/d/1ej7D3k48sxNlEwlkdqto5saUhyaC0wiCxPC9rybdVSQ/edit){.btn .btn-primary}
+## What you will submit
 
-## Part 1 - Raster images and PNG
+Submit these three versions of the same design:
 
-### What is a raster image?
+1. **PSD:** the editable master with clearly named layers.
+2. **PNG:** a transparent preview or engraving image at 3300 × 1200 pixels.
+3. **SVG:** the vector version with the logo and name visible.
 
-A raster image is a grid of tiny coloured squares called **pixels**. Zoom in far enough and the edges become blocky because the software is enlarging those squares. Photographs, screenshots, JPG files, PNG files, and most WebP files are raster images.
+Use clear filenames:
 
-A vector graphic stores shapes as mathematical paths. It can scale up without becoming pixelated. SVG is a common vector format and is especially useful when exact outlines will become laser cut paths. In this project, the finished machine handoff is a raster PNG because the first operation is **engrave only**, not a vector cut.
+- `lastname-name-tag-master.psd`
+- `lastname-name-tag.png`
+- `lastname-name-tag.svg`
 
-![Visual comparison of JPG, PNG, WebP, and SVG for student artwork](../../assets/name-tag-photopea/07-raster-format-guide.svg){fig-alt="Four illustrated cards compare JPG for photographs, PNG for a transparent logo, WebP for efficient websites, and SVG for scalable vector geometry."}
+Your teacher will tell you which file the machine workflow needs. A PNG can be used for raster engraving. An SVG can carry paths for scoring, cutting, plotting, or another fabrication process.
 
-### Which format should I use?
+## 1. Plan before opening Photopea
 
-| Format | What it does well | Important limitation | Use here? |
-|---|---|---|---|
-| **JPG / JPEG** | Photographs and smooth colour changes at a small file size | Lossy compression can make sharp logo edges fuzzy, and JPG has no transparent background | No |
-| **PNG** | Sharp-edged artwork, lossless compression, and full alpha transparency | Often larger than JPG or WebP for photographs | **Yes** |
-| **WebP** | Efficient website images; can be lossy, lossless, or transparent | It is not our standard classroom laser handoff | Not for this submission |
-| **SVG** | Logos, icons, diagrams, and cut geometry that must stay sharp at any size | It is a vector file, not the raster engraving image requested here | Keep as an editable source when available |
+Write down the name you want people to read. Then make **three small paper sketches**. Change at least one important idea in each sketch:
 
-The [MDN image format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types) documents these differences. Photopea can open and export many of these formats, but the file type should follow the job, not habit.
+- the size of the logo;
+- the size or position of the name;
+- the font;
+- the amount of empty space; or
+- the relationship between the logo and the first letter.
 
-### Why use a transparent PNG logo?
+[Download the full-size 11 × 4 inch paper prototype sheet](../../assets/name-tag-photopea/name-tag-paper-prototype.pdf){.btn .btn-primary}
 
-Transparency means the pixels around the logo are empty rather than filled with a white rectangle. Photopea displays transparency as a grey-and-white checkerboard. A transparent logo can sit over the page without bringing an unwanted box with it.
+Print at **Actual size / 100%**. Do not choose Fit. Hold each idea about 2 metres away and circle the one that communicates your name fastest.
+
+## 2. Study the example; do not copy it
+
+The three ANDRADE versions below solve the same problem in different ways.
 
 ::: {.columns}
-::: {.column width="50%"}
-#### Transparent PNG
+::: {.column width="33%"}
+### Clear baseline
 
-<div style="min-height:260px;display:flex;align-items:center;justify-content:center;padding:1.25rem;border-radius:1rem;background-color:#fff;background-image:linear-gradient(45deg,#d9e0e5 25%,transparent 25%),linear-gradient(-45deg,#d9e0e5 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#d9e0e5 75%),linear-gradient(-45deg,transparent 75%,#d9e0e5 75%);background-size:32px 32px;background-position:0 0,0 16px,16px -16px,-16px 0"><img src="../../assets/branding/logo/aa-logo-transparent.png" alt="Andrew Andrade AA lettermark shown over a checkerboard transparency pattern" style="max-height:210px;max-width:75%"></div>
+![Technology Commons emblem beside large A. ANDRADE text.](../../assets/name-tag-photopea/08-variation-1-a-andrade.png){fig-alt="An 11 by 4 inch name tag with the Technology Commons emblem and large A. ANDRADE text."}
 
-The checkerboard is not part of the image. It shows the empty pixels around the AA mark.
-:::
-::: {.column width="50%"}
-#### White-box problem
-
-<div style="min-height:260px;display:flex;align-items:center;justify-content:center;padding:1.25rem;border-radius:1rem;background:#163a59"><div style="background:#fff;padding:1.2rem"><img src="../../assets/branding/logo/aa-logo-transparent.png" alt="AA logo placed inside a visible white box on a dark field" style="max-height:170px;max-width:100%"></div></div>
-
-If a logo arrives with a white background, that rectangle becomes part of the artwork. Do not assume white means transparent.
-:::
+One logo, large type, and a simple centreline.
 :::
 
-**Quick transparency check:** open the logo by itself in Photopea. Checkerboard around the mark means transparent. Solid white around it means those are actual white pixels.
+::: {.column width="33%"}
+### Maximum readability
 
-## Part 2 - Build the 11 × 4 inch name tag in Photopea
+![Small Technology Commons emblem beside extra-large ANDRADE text.](../../assets/name-tag-photopea/09-variation-2-max-readability.png){fig-alt="An 11 by 4 inch name tag with a smaller Technology Commons emblem and extra-large ANDRADE text."}
 
-### Before you start
-
-Use [Photopea](https://www.photopea.com/) in a modern browser. Download the instructor-approved transparent PNG logo before opening the editor. For the worked example, use:
-
-- [Technology Commons transparent emblem](../../assets/branding/emblem/commons-emblem-monochrome-blue-transparent.png)
-- [AA transparent lettermark](../../assets/branding/logo/aa-logo-transparent.png)
-
-Record your plan:
-
-| Decision | Your answer |
-|---|---|
-| Name to display | ______________________________________________ |
-| Logo file | ______________________________________________ |
-| Typeface and weight | ______________________________________________ |
-| Visual priority: logo, name, or equal | ______________________________________________ |
-
-### Step 0 - Make a paper prototype
-
-A letter-size sheet is 11 × 8.5 inches. Cut it lengthwise and trim the outside quarter-inch strips to make **two exact 11 × 4 inch prototypes**.
-
-[Download the full-size paper prototype sheet](../../assets/name-tag-photopea/name-tag-paper-prototype.pdf){.btn .btn-primary}
-
-1. Print in landscape at **Actual size / 100%**. Do not choose Fit.
-2. Measure the 1 inch check line with a ruler.
-3. Cut on the solid lines.
-4. Sketch the logo and name inside the dashed safe margin.
-5. Put the logo and name on one horizontal centreline.
-6. Hold it about 2 metres away. Revise before opening Photopea.
-
-Complete [Photopea Lesson 1](../logo-design/01-nameplate-text-photopea.qmd), [Lesson 2](../logo-design/rough-sketch-to-svg-photopea.qmd), and [Lesson 3](../logo-design/03-combine-logo-nameplate.qmd) first if you do not have the finished digital files.
-
-### Step 1 - Create the exact-size canvas
-
-1. Open Photopea and choose **File > New**.
-2. Name the document clearly, such as `lastname-name-tag`.
-3. Set units to **Inches**.
-4. Enter **11** for width and **4** for height.
-5. Enter **300 pixels per inch**.
-6. Choose a white background and click **Create**.
-
-Photopea stores raster artwork as pixels, so it automatically creates:
-
-$$11\text{ in} \times 300\text{ px/in} = 3300\text{ px}$$
-
-$$4\text{ in} \times 300\text{ px/in} = 1200\text{ px}$$
-
-Design in inches because the wood is measured in inches. The resulting raster file is 3300 × 1200 pixels because 11 × 300 = 3300 and 4 × 300 = 1200.
-
-![Photopea New Project dialog set to an 11 by 4 inch canvas at 300 pixels per inch](../../assets/name-tag-photopea/01-create-canvas-inches.jpg){fig-alt="Photopea New Project dialog showing a document named ANDRADE Name Tag with width 11 inches, height 4 inches, 300 pixels per inch, and a white background."}
-
-### Step 2 - Build a 0.25 inch safe margin
-
-A **margin** is deliberate empty space between the artwork and the physical edge. It is not wasted space. It prevents the design from feeling crowded and gives room for small placement or material differences.
-
-Enter **0.25 in** when Photopea accepts units. At 300 pixels per inch, the same margin is:
-
-$$0.25\text{ in} \times 300\text{ px/in} = 75\text{ px}$$
-
-Add guides at either measurement:
-
-- **Vertical:** 0.25 in and 10.75 in, or 75 px and 3225 px
-- **Horizontal:** 0.25 in and 3.75 in, or 75 px and 1125 px
-
-Use **View > New Guide** for each guide. Keep every visible part of the logo and name inside the cyan guide box. The resulting safe area is **3150 × 1050 px**.
-
-![Blank Photopea canvas with cyan guides 0.25 inches from all four edges](../../assets/name-tag-photopea/clean/02-safe-margin-guides.jpg){fig-alt="A cropped Photopea canvas without advertisements shows cyan vertical and horizontal guides defining a quarter-inch safe margin."}
-
-### Step 3 - Place the transparent PNG logo
-
-1. Choose **File > Open & Place**.
-2. Select the transparent PNG logo.
-3. Hold the aspect ratio lock so the logo does not stretch.
-4. Resize from a corner. Do not pull only the width or height.
-5. Move the logo inside the safe area.
-6. Press **Enter** or click the checkmark to confirm.
-7. Repeat if the design uses a second approved mark.
-
-Andrew's example places the Technology Commons emblem first, followed by the AA lettermark. Each file remains on its own layer, which makes revision easier.
-
-![Technology Commons emblem and AA lettermark placed on separate layers inside the margin guides](../../assets/name-tag-photopea/clean/03-place-transparent-pngs.jpg){fig-alt="A cropped Photopea workspace without advertisements shows the Technology Commons round emblem and AA lettermark placed near the left side of the 11 by 4 inch canvas."}
-
-### Step 4 - Add a readable name
-
-1. Select the **Type Tool (T)**.
-2. Choose **Source Sans 3 Bold**. Source Sans Pro is also acceptable if that is the installed version.
-3. Use black or another instructor-approved high-contrast colour.
-4. Type the name in **ALL CAPS**.
-5. Enlarge the name until it occupies about half the tag height while remaining inside the margin.
-6. Keep the letters inside the safe margin and leave a clear gap after the logo.
-7. Use the Move Tool to align the name visually with the logo, not just mathematically.
-
-For Andrew's example, type **NDRADE** after the AA lettermark. The mark supplies the first A, so the complete visual reads **ANDRADE**.
-
-![NDRADE typed in Source Sans 3 Bold beside the AA lettermark](../../assets/name-tag-photopea/clean/04-add-readable-name.jpg){fig-alt="A cropped Photopea workspace without advertisements shows the first draft with the Technology Commons emblem, AA lettermark, and NDRADE text. The next step enlarges and strengthens this draft."}
-
-### What makes a font readable?
-
-Use a sans serif typeface with open letter shapes and enough stroke thickness to engrave clearly. **Source Sans 3 Bold** works well because the capitals are simple, the spacing is even, and similar letters remain easy to distinguish.
-
-Prefer:
-
-- Source Sans 3, Source Sans Pro, Arial, Helvetica, or another clean sans serif;
-- Bold or Semibold for reliable engraving contrast;
-- generous letter spacing and a size that can be read from about 2 metres away;
-- one typeface and one clear hierarchy.
-
-Avoid:
-
-- thin, hairline, or distressed lettering;
-- scripts where letters join or become ambiguous;
-- highly condensed fonts that squeeze counters closed;
-- stretching text wider or taller;
-- placing letters against the edge.
-
-**Readability test:** zoom out until the on-screen name tag is approximately hand-sized. Look away, then look back for two seconds. If the name is not immediately readable, simplify or enlarge it.
-
-### Step 5 - Judge spacing and balance
-
-Good spacing means the empty areas look intentional:
-
-- **Outer margin:** all artwork stays at least 0.25 inch from every edge.
-- **Logo-to-name gap:** the elements are related but do not collide. Aim for a gap similar to one medium-width letter.
-- **One centreline:** the logo and name share the same horizontal visual centre.
-- **Vertical centre:** select the complete group and centre it between the top and bottom edges.
-- **Hierarchy:** the name is the first or equal reading target. Decorative details do not overpower it.
-- **Breathing room:** no logo tip, letter, or accent crowds the guide.
-
-The first draft below uses the Technology Commons emblem as the context mark, the AA lettermark as the first letter, and NDRADE as the readable word. It is intentionally kept as a **critique draft**: the letters are too small for the strongest distance reading, and the thin AA mark competes with the heavier type.
-
-![First ANDRADE draft before the distance-readability improvements](../../assets/name-tag-photopea/clean/05-final-layout.jpg){fig-alt="A cropped Photopea workspace without advertisements shows the first draft with Technology Commons emblem, a thin AA lettermark, and NDRADE text."}
-
-### Make three variations before choosing
-
-Do not stop at the first acceptable layout. Duplicate the document twice and change one major decision in each copy. Compare all three at the same display size and choose the version that communicates the name fastest.
-
-#### Variation 1 - clear professional baseline
-
-![Technology Commons emblem beside large A. ANDRADE text](../../assets/name-tag-photopea/08-variation-1-a-andrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem and large A. ANDRADE text in Source Sans 3 Semibold."}
-
-This version uses the Commons emblem and **A. ANDRADE**. The logo and text share one centreline, and the complete group is centred vertically.
-
-#### Variation 2 - maximum distance readability
-
-![Small Technology Commons emblem beside extra-large ANDRADE text](../../assets/name-tag-photopea/09-variation-2-max-readability.png){fig-alt="Eleven by four inch name tag with a smaller Technology Commons emblem and extra-large ANDRADE text."}
-
-This version reduces the emblem and gives **ANDRADE** most of the available width. It is the strongest choice for reading across a room.
-
-#### Variation 3 - personalized AA lettermark
-
-![Technology Commons emblem, thick AA lettermark, and large NDRADE text](../../assets/name-tag-photopea/10-variation-3-aa-ndrade.png){fig-alt="Eleven by four inch name tag with the Technology Commons emblem, a thickened AA lettermark, and large NDRADE text that reads together as ANDRADE."}
-
-This version keeps the personal idea. The AA mark uses an outside stroke so its weight matches the letters. Its bottom aligns with the bottom of **NDRADE**, while its wide top rises above the word like an umbrella. The AA mark and NDRADE read as one word without overlapping.
-
-::: {.callout-tip title="Recommended worked example"}
-Use **Variation 3** for the detailed Photopea walkthrough because it teaches the most: transparent PNG placement, visual substitution, type matching, stroke weight, grouping, and distance testing. Keep Variations 1 and 2 as comparison examples.
+The name gets most of the space and reads well from far away.
 :::
 
-### Improve Variation 3 in Photopea
+::: {.column width="33%"}
+### Personal lettermark
 
-Starting from the first-draft screenshots above:
+![Technology Commons emblem, thick AA lettermark, and large NDRADE text.](../../assets/name-tag-photopea/10-variation-3-aa-ndrade.png){fig-alt="An 11 by 4 inch name tag with the Technology Commons emblem, a thick AA lettermark, and NDRADE text that reads together as ANDRADE."}
 
-1. Select the **NDRADE** text layer and enlarge it until it occupies about half the tag height.
-2. Select the AA layer. Choose **Layer > Layer Style > Stroke**.
-3. Set the stroke position to **Outside**, use the same dark colour as the name, and begin near **0.06 in / 18 px**. Adjust only if a test engraving closes the interior spaces.
-4. Keep the Technology Commons emblem near **1.6 inches high**.
-5. Keep the AA mark near **1.9 inches high** and lock its aspect ratio.
-6. Move NDRADE close enough that the mark reads as its first A. Do not leave a full-letter gap.
-7. Align the **bottom of the AA mark** with the bottom of the letters in **NDRADE**. The AA canopy should rise above the name like an umbrella while its stem ends on the same baseline.
-8. Centre the complete group vertically and keep every element inside the **0.25 inch** safe margin.
-9. Hide the guides and perform the two-second reading test from about **2 metres** away.
+The AA logo becomes part of the word, so its weight and spacing must match the letters.
+:::
+:::
 
-![Baseline alignment check for Variation 3](../../assets/name-tag-photopea/11-variation-3-alignment-check.png){fig-alt="The bottom of the AA lettermark aligns with the bottom of NDRADE, so its broad top rises above the word like an umbrella, all inside a quarter-inch safe margin."}
+Ask these questions:
 
-The cyan box marks the 0.25 inch safe margin. Use a temporary horizontal guide at the bottom of **NDRADE** to align the AA mark to the same baseline. Hide all guides before export.
+- Which version can you read fastest?
+- What do you notice first: the name or the logo?
+- Where is the empty space?
+- Why does the logo feel connected to the name?
 
-### Student design files
+::: {.callout-note title="Your design must be different"}
+Use the examples to understand size, spacing, and balance. Do not submit ANDRADE, the AA logo, or an unchanged example file. Replace them with your own name and your own approved symbol or lettermark.
+:::
 
-Download the complete pack or inspect one direction at a time. Each Photoshop file is **11 × 4 inches at 300 ppi** and contains separately named artwork layers. The matching PNG is the clean full-size reference and export.
+## 3. Make a new working copy
 
-- [Download the complete name-tag design pack](../../assets/name-tag-photopea/downloads/name-tag-design-pack.zip)
-- **Variation 1:** [Photoshop file](../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.psd) | [PNG](../../assets/name-tag-photopea/downloads/variation-1-commons-a-andrade.png)
-- **Variation 2:** [Photoshop file](../../assets/name-tag-photopea/downloads/variation-2-maximum-readability.psd) | [PNG](../../assets/name-tag-photopea/downloads/variation-2-maximum-readability.png)
-- **Variation 3:** [Photoshop file](../../assets/name-tag-photopea/downloads/variation-3-thick-aa-ndrade.psd) | [PNG](../../assets/name-tag-photopea/downloads/variation-3-thick-aa-ndrade.png)
-- **Source artwork:** [Technology Commons transparent PNG](../../assets/name-tag-photopea/downloads/source-files/technology-commons-transparent.png) | [original AA transparent PNG](../../assets/name-tag-photopea/downloads/source-files/aa-logo-original-transparent.png) | [thickened AA SVG](../../assets/name-tag-photopea/downloads/source-files/aa-logo-thickened.svg)
+1. Open your completed file from Photopea Lesson 3.
+2. Choose **File > Save as PSD** immediately.
+3. Give the copy your own filename.
+4. Keep the canvas at **11 × 4 inches** and **300 pixels per inch**.
+5. Keep the background transparent.
+6. Add a **0.25 inch safe margin** on every side.
 
-When students make their own version, they should replace the example name and logo rather than submitting an unchanged sample.
+At 300 pixels per inch, the document is **3300 × 1200 pixels** and the 0.25 inch margin is **75 pixels**.
 
-### Step 6 - Save the master and export the engraving PNG
+Need help with a tool? Return to the matching walkthrough:
 
-1. Choose **File > Save as PSD** and save the editable master as `lastname-name-tag-master.psd`.
-2. Hide guides with **View > Extras** or **Ctrl+H**.
-3. Choose **File > Export As > PNG**.
-4. Confirm the export size is still **3300 × 1200 px**.
-5. Name it `lastname-name-tag-11x4-engrave.png`.
-6. Click **Save**.
-7. Reopen the exported PNG and check that nothing moved, cropped, or gained a white box.
+- [Lesson 1: Build and format the name](../logo-design/01-nameplate-text-photopea.qmd)
+- [Lesson 2: Trace a rough logo](../logo-design/rough-sketch-to-svg-photopea.qmd)
+- [Lesson 3: Combine the logo and name](../logo-design/03-combine-logo-nameplate.qmd)
 
-![Photopea Save for Web dialog for the 11 by 4 inch name tag](../../assets/name-tag-photopea/clean/06-export-png.jpg){fig-alt="A cropped Photopea Save for Web dialog without advertisements shows PNG selected and a clear engraving filename."}
+## 4. Try fonts before choosing
 
-Photopea's [Open and Save guide](https://www.photopea.com/learn/opening-saving) explains the difference between saving an editable PSD and exporting a delivery format.
+Type your own name and test at least **three fonts**. Compare them at the same size.
 
-## Student submission checklist
+Start with a bold or semibold sans serif font such as Source Sans 3, Arial, or Helvetica. A balanced font has clear letter shapes, even spacing, and enough thickness to engrave cleanly.
 
-Check every statement before handing in the file:
+Choose the font that:
 
-- [ ] My canvas is 11 × 4 inches at 300 pixels per inch.
-- [ ] My logo is an approved PNG with a transparent background.
-- [ ] I did not stretch the logo.
-- [ ] All artwork remains inside the 0.25 inch safe margin.
-- [ ] The logo and name share one horizontal centreline.
-- [ ] The complete group is centred vertically.
-- [ ] My name is in a readable sans serif font.
-- [ ] My name can be read quickly from about 2 metres away.
-- [ ] The logo-to-name gap and outer margins look intentional.
-- [ ] Guides are hidden in the export.
-- [ ] I saved the editable PSD and the final PNG separately.
-- [ ] I reopened the PNG and checked crop, orientation, contrast, and spelling.
-- [ ] My submitted machine job is labelled **ENGRAVE ONLY**.
+- is easy to read in two seconds;
+- keeps open spaces inside letters such as A, B, D, O, P, and R;
+- has enough stroke thickness for the material and process;
+- fits without stretching; and
+- matches the visual weight of the logo.
+
+Avoid thin scripts, distressed letters, very narrow fonts, and text stretched wider or taller.
+
+## 5. Replace the example logo
+
+Use the logo you traced in Lesson 2 or another teacher-approved personal mark.
+
+1. Place the SVG or transparent PNG on its own layer.
+2. Keep the width-and-height link turned on.
+3. Resize from a corner so the logo does not stretch.
+4. Keep the logo inside the left 4 × 4 inch area.
+5. Leave visible space around the logo.
+
+If your logo replaces the first letter of your name, check that the complete word is still obvious. Match the logo’s thickness and baseline to the letters.
+
+## 6. Make the layout look intentional
+
+Check the complete design, not one layer at a time:
+
+- **Safe margin:** nothing crosses the 0.25 inch guide.
+- **Logo area:** the logo stays in the left 4 × 4 inch space.
+- **Alignment:** the logo and name feel centred from top to bottom.
+- **Gap:** the logo and name are connected but do not collide.
+- **Hierarchy:** your name is the first or equal reading target.
+- **Balance:** the empty space on one side does not make the design feel as if it is falling over.
+- **Distance:** the name is readable from about 2 metres away.
+
+![The AA mark and NDRADE share a baseline and remain inside the safe margin.](../../assets/name-tag-photopea/11-variation-3-alignment-check.png){fig-alt="An alignment example showing a logo and name sharing a baseline inside a quarter-inch safe margin."}
+
+Hide the guides and ask another person what they notice first. If they cannot read the name in two seconds, revise the size, font, spacing, or logo.
+
+## 7. Export and check every file
+
+### PSD
+
+- Keep the text and logo editable.
+- Name important layers.
+- Save the full 11 × 4 inch document.
+
+### PNG
+
+- Hide the background and guides.
+- Export at **3300 × 1200 pixels**.
+- Reopen the file and check its transparency, spelling, and crop.
+
+### SVG
+
+- Make sure the logo and text are vectors, not missing smart objects.
+- Export with raster graphics turned off.
+- Reopen the SVG and check that the complete design appears.
+
+::: {.callout-warning title="Check the SVG before submitting"}
+Photopea may leave a placed SVG smart object out of an SVG export. If the logo disappears, open the logo SVG, copy its vector layers, paste those layers into the name-tag file, hide the smart-object copy, and export again.
+:::
+
+### Example files for checking, not submitting
+
+- [Complete example pack](../../assets/name-tag-photopea/downloads/name-tag-design-pack.zip)
+- [ANDRADE tutorial PSD](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.psd)
+- [ANDRADE tutorial PNG](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.png)
+- [ANDRADE tutorial SVG](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.svg)
+
+## Final checklist
+
+- [ ] The design uses my own name and approved logo.
+- [ ] I sketched three layouts before choosing one.
+- [ ] I compared at least three fonts.
+- [ ] The canvas is 11 × 4 inches at 300 pixels per inch.
+- [ ] The background is transparent.
+- [ ] The logo is not stretched.
+- [ ] Everything stays inside the 0.25 inch safe margin.
+- [ ] The logo and name look balanced together.
+- [ ] My name can be read from about 2 metres away.
+- [ ] I checked the spelling.
+- [ ] I reopened and checked the PSD, PNG, and SVG.
+- [ ] My teacher approved the file before fabrication.
 
 ## Short reflection
 
-1. Why was PNG a better choice than JPG for your logo?
+1. Which font did you choose, and why is it easier to read than the other two?
+2. What changed between your first sketch and final layout?
+3. What does the viewer notice first?
+4. What would you improve after seeing the finished physical name tag?
 
-   ________________________________________________________________________________
+## Before fabrication
 
-2. What did you change to make your name easier to read?
-
-   ________________________________________________________________________________
-
-3. Where is the smallest gap in your layout, and is it still larger than the safe margin?
-
-   ________________________________________________________________________________
-
-4. If you revised the tag, what would you change first?
-
-   ________________________________________________________________________________
-
-## Before pressing start
-
-Follow your school board's safety guidelines and the course-specific instruction provided by your teacher; students in Mr. Andrade's classes can find that information in Google Classroom. For the design check, confirm that the job is **engrave only**. No cyan guide, page border, or accidental vector cut boundary should appear in the submitted PNG.
+Follow your teacher’s material, ventilation, fire-safety, and machine instructions. Do not press Start until the teacher has checked the file and confirmed whether each part should engrave, score, or cut.
 
 ::: {.ter-curriculum-relevance}
-**Design curriculum:** This is the first physical-making project after the Photopea, raster/vector/SVG, and animation lessons. It supports **TIJ1O** and **TDJ2O** work with images, layout, exact size, file preparation, making, and checking a finished object.
+**Design curriculum:** Complete this project after the three Photopea walkthroughs. It asks students to move from following an example to making and defending their own design decisions. It supports **TIJ1O** and **TDJ2O** work with images, typography, layout, file preparation, fabrication, testing, and revision.
 :::
-
-After the teacher approves the engraving file, follow the classroom laser-cutting instructions to make and check the wood name tag.
-
-## References
-
-- [Photopea: Open and Save](https://www.photopea.com/learn/opening-saving)
-- [MDN: Image file type and format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types)
-- [Google Fonts: Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
 
 ## Summary
 
-You planned an 11 × 4 inch name tag, placed a logo, added a readable name, and kept the design inside a safe margin. You saved the editable PSD and exported a full-size PNG for engraving. These files connect your digital-design work to the first physical laser-cutting project.
+The ANDRADE tutorial taught the basic Photopea steps. In this project, you used those skills to plan, compare, and build an original name tag. You tested its readability, checked its spacing, and exported editable, raster, and vector files.
+
+Next: learn why the PNG and SVG versions behave differently in [Raster, Vector, and SVG](../02-digital-design/01-raster-vector-svg.qmd).

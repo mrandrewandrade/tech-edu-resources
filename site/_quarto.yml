@@ -22,6 +22,7 @@ project:
     - "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"
     - "design-fabrication/02-digital-design/03-logos-lettermarks.qmd"
     - "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"
+    - "design-fabrication/03-laser-cutting/index.qmd"
     - "design-fabrication/03-laser-cutting/01-name-logo.qmd"
     - "design-fabrication/03-laser-cutting/06-tool-holder.qmd"
     - "design-fabrication/tools/plate-builder/**/*.qmd"
@@ -127,14 +128,16 @@ website:
               href: design-fabrication/logo-design/rough-sketch-to-svg-photopea.qmd
             - text: "Photopea 3: Combine Logo + Name"
               href: design-fabrication/logo-design/03-combine-logo-nameplate.qmd
+            - text: "Your Turn: Your Name + Logo"
+              href: design-fabrication/03-laser-cutting/01-name-logo.qmd
             - text: "Raster, Vector & SVG"
               href: design-fabrication/02-digital-design/01-raster-vector-svg.qmd
             - text: "2D Animation"
               href: design-fabrication/02-digital-design/05-animation-ui-ux.qmd
         - section: "Laser Cutting Projects"
           contents:
-            - text: "Name + Logo Name Tag"
-              href: design-fabrication/03-laser-cutting/01-name-logo.qmd
+            - text: "Laser Cutting Overview"
+              href: design-fabrication/03-laser-cutting/index.qmd
             - text: "Tool Organizer Project"
               href: design-fabrication/laser-cutting/tool-organizer.qmd
         - section: "Fabrication Tools"

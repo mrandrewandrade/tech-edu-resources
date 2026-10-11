@@ -21,11 +21,12 @@
           "order": 2,
           "title": "2. Digital Design & Communication",
           "lessons": [
-            {"order": 1, "title": "Raster, Vector & SVG", "source": "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"},
-            {"order": 2, "title": "Vector Geometry & Exact Construction", "source": "design-fabrication/02-digital-design/02-vector-geometry.qmd"},
-            {"order": 3, "title": "Logos, Lettermarks & Negative Space", "source": "design-fabrication/02-digital-design/03-logos-lettermarks.qmd"},
-            {"order": 4, "title": "Layout, Typography & Colour", "source": "design-fabrication/02-digital-design/04-layout-typography-colour.qmd"},
-            {"order": 5, "title": "Animation, UI/UX & Interface Prototypes", "source": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"}
+            {"order": 1, "title": "Photopea 1: Build the Nameplate Text", "source": "design-fabrication/logo-design/01-nameplate-text-photopea.qmd"},
+            {"order": 2, "title": "Photopea 2: Trace a Rough Logo", "source": "design-fabrication/logo-design/rough-sketch-to-svg-photopea.qmd"},
+            {"order": 3, "title": "Photopea 3: Combine Logo + Name", "source": "design-fabrication/logo-design/03-combine-logo-nameplate.qmd"},
+            {"order": 4, "title": "Your Turn: Your Name + Logo", "source": "design-fabrication/03-laser-cutting/01-name-logo.qmd"},
+            {"order": 5, "title": "Raster, Vector & SVG", "source": "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"},
+            {"order": 6, "title": "2D Animation", "source": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"}
           ]
         },
         {
@@ -33,14 +34,13 @@
           "order": 3,
           "title": "3. Laser Cutting & 2D Fabrication",
           "lessons": [
-            {"order": 1, "title": "Name + Logo: Engrave and Cut", "source": "design-fabrication/03-laser-cutting/01-name-logo.qmd"},
-            {"order": 2, "title": "Make It Stand", "source": "design-fabrication/03-laser-cutting/02-make-it-stand.qmd"},
-            {"order": 3, "title": "Measure + Place", "source": "design-fabrication/03-laser-cutting/03-measure-place.qmd"},
-            {"order": 4, "title": "Material Fit + Calibration", "source": "design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd"},
-            {"order": 5, "title": "Assemblies + Hybrid Fabrication", "source": "design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd"},
-            {"order": 6, "title": "Tool Holder", "source": "design-fabrication/03-laser-cutting/06-tool-holder.qmd"},
-            {"order": 7, "title": "Wall + Bench Tool Module", "source": "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd"},
-            {"order": 8, "title": "Design & Fabrication Capstone", "source": "design-fabrication/03-laser-cutting/08-capstone.qmd"}
+            {"order": 1, "title": "Make It Stand", "source": "design-fabrication/03-laser-cutting/02-make-it-stand.qmd"},
+            {"order": 2, "title": "Measure + Place", "source": "design-fabrication/03-laser-cutting/03-measure-place.qmd"},
+            {"order": 3, "title": "Material Fit + Calibration", "source": "design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd"},
+            {"order": 4, "title": "Assemblies + Hybrid Fabrication", "source": "design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd"},
+            {"order": 5, "title": "Tool Holder", "source": "design-fabrication/03-laser-cutting/06-tool-holder.qmd"},
+            {"order": 6, "title": "Wall + Bench Tool Module", "source": "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd"},
+            {"order": 7, "title": "Design & Fabrication Capstone", "source": "design-fabrication/03-laser-cutting/08-capstone.qmd"}
           ]
         },
         {
