@@ -27,7 +27,7 @@ Clean SVG files can be resized without becoming blurry. They can also become pat
 
 ## What you will make
 
-First, trace the simple AA mark as a short warm-up. Then follow a worked example that turns a landscape drawing into a clean logo. Finally, use the same steps with your own drawing.
+First, trace the simple AA mark as a short warm-up. Then follow a worked example that turns two mountain peaks into a clean AA landscape logo. Finally, use the same steps with your own drawing.
 
 ![Four steps show a paper landscape sketch becoming a simple vector logo.](../../assets/name-tag-photopea/landscape-to-logo.svg){fig-alt="A paper landscape sketch is reduced to a sun, mountain, and river, rebuilt with clean shapes in Photopea, and finished as a simple logo."}
 
@@ -73,17 +73,18 @@ This is the warm-up. Straight lines are useful, but most student logos need more
 
 ## 2. Study the worked example
 
-The landscape drawing has many pencil marks. The logo keeps only three main parts:
+The landscape drawing has many pencil marks. The logo keeps only four main parts:
 
 1. a circle for the sun;
-2. a mountain shape; and
-3. a curved shape for the river.
+2. a left peak for the first A;
+3. a right peak for the second A; and
+4. a curved shape for the river.
 
 ![A landscape sketch is reduced to a circle, triangle, and curve.](../../assets/name-tag-photopea/personal-logo-starting-idea.svg){fig-alt="A landscape sketch is examined and its three useful logo parts are identified as a circle, triangle, and curve."}
 
 Do the same with your drawing. Circle the parts that carry the idea. Leave small details behind.
 
-Your drawing may need more than three parts. Rebuild one important part at a time.
+Your drawing may need more than four parts. Rebuild one important part at a time.
 
 ::: {.callout-tip title="Keep the idea, not every wobble"}
 Use a few clean shapes. A logo should still make sense when it is small.
@@ -133,7 +134,7 @@ Use a shape tool when a part is a circle, rectangle, line, or simple polygon.
 
 ## 6. Use the Pen tool for custom shapes
 
-Use the Pen tool for the mountain and river.
+Use the Pen tool for the two peaks and the river.
 
 1. Choose the **Pen tool** or press **P**.
 2. Choose **Shape** in the top bar.
@@ -142,11 +143,13 @@ Use the Pen tool for the mountain and river.
 5. Click once to make a sharp corner.
 6. Click and drag to make a curve.
 7. Click the first point again to close the path.
-8. Rename the layer for the part you traced.
+8. Rename the layers `LEFT PEAK`, `RIGHT PEAK`, and `RIVER`.
 
 Use as few points as possible. Two or three smooth points make a better curve than many small points.
 
-![The sun, mountain, and river are rebuilt as separate black vector shapes.](../../assets/personal-logo-photopea/04-photopea-personal-logo.jpg){fig-alt="The landscape is rebuilt with separate black vector layers named SUN, MOUNTAIN, and RIVER above the pale reference drawing."}
+Keep the sun, both peaks, and river on separate shape layers. Do not merge them. In the next animation assignment, each part can move, fade, scale, or enter at a different time.
+
+![The sun, two peaks, and river are rebuilt as separate black vector shapes.](../../assets/personal-logo-photopea/04-photopea-personal-logo.jpg){fig-alt="The landscape is rebuilt with separate black vector layers for the sun, peaks, and river above the pale reference drawing."}
 
 ### Make both sides even
 
@@ -195,6 +198,7 @@ Continue when:
 
 - the photograph is hidden;
 - each part is an editable shape layer;
+- the sun, left peak, right peak, and river are still separate;
 - every filled shape is closed;
 - the logo is clear in black;
 - narrow gaps stay open;
@@ -239,8 +243,8 @@ Submit:
 
 ## Summary
 
-The AA warm-up showed how vector lines work. The landscape example showed how to rebuild a real drawing with simple shapes, custom curves, and closed paths.
+The AA warm-up showed how vector lines work. The landscape example turned two peaks into an AA mark and showed how to rebuild a real drawing with simple shapes, custom curves, and closed paths.
 
-Do not trace every pencil mark. Keep the idea, rebuild the important shapes, test the logo in black, and check the exported SVG.
+Do not trace every pencil mark. Keep the idea, rebuild the important shapes, test the logo in black, and check the exported SVG. Keep each part separate so the next animation assignment can move the elements one at a time.
 
 Previous: [Lesson 1: Build the Nameplate Text](01-nameplate-text-photopea.qmd). Next: [Lesson 3: Combine the Logo and Nameplate](03-combine-logo-nameplate.qmd).
