@@ -96,7 +96,7 @@ website:
           - href: design-fabrication/index.qmd
             text: General Design & Fabrication
           - href: tej3-4/index.qmd
-            text: TEJ Notes
+            text: Computer Engineering Notes
       - text: Classes
         menu:
           - href: slides/tas.qmd
@@ -149,11 +149,11 @@ website:
         - href: design-fabrication/index.qmd
           text: "Open the reusable curriculum"
     - id: tej
-      title: "TEJ Notes"
+      title: "Computer Engineering Notes"
       style: docked
       collapse-level: 2
       contents:
-        - text: "Course Home"
+        - text: "Computer Engineering Home"
           href: tej3-4/index.qmd
         - text: "Curriculum Roadmap"
           href: tej3-4/curriculum/index.qmd

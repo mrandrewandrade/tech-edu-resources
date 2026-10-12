@@ -1,6 +1,7 @@
 ---
-title: "TEJ3/4 Technology Education Resources"
-description: "Concise student notes and classroom resources for circuits, Linux, operating systems, and basic networking."
+title: "Computer Engineering Notes"
+subtitle: "TEJ3M and TEJ4M learning pathway"
+description: "Student notes and classroom resources for electronics, computer systems, Linux, programming, networking, microcontrollers, artificial intelligence, and control systems."
 sidebar: tej
 page-layout: full
 toc: false
@@ -12,36 +13,154 @@ execute:
   enabled: false
 ---
 
-These notes are short classroom references. Use the linked slides, questions, handouts, and worked answers for the complete lesson.
+Use these unit summaries to see the whole computer-engineering pathway. Open the detailed curriculum roadmap for the complete sequence, or choose a published lesson from the sidebar.
 
 ::: {.callout-note title="Work in progress"}
 Completed classroom materials are linked beside a concise implementation plan for the remaining engineering-preparation units. Earlier draft notes are preserved on the `archive/notes-before-refactor-2026-10-10` branch while they are reviewed.
 :::
 
-## Available units
+## Units at a glance
 
 ::: {.tej-download-grid}
 ::: {.tej-download-card}
-### Circuits
+### 0. Orientation and design
 
-Significant figures, scientific and engineering notation, metric prefixes, Ohm's law, power, the GUESS method, and series-circuit rules.
+Design process, documentation, source attribution, privacy, and classroom routines.
+
+[Open the roadmap](curriculum/index.qmd#unit-0)
+:::
+
+::: {.tej-download-card}
+### 1. Numbers and units
+
+Number systems, significant figures, engineering notation, metric prefixes, estimation, and calculator skills.
+
+[Open the roadmap](curriculum/index.qmd#unit-1)
+:::
+
+::: {.tej-download-card}
+### 2. Electrical fundamentals
+
+Charge, voltage, current, resistance, sources, loads, alternating current, and direct current.
+
+[Open the roadmap](curriculum/index.qmd#unit-2)
+:::
+
+::: {.tej-download-card}
+### 3. DC circuit analysis
+
+Ohm's law, power, series and parallel circuits, mixed networks, Kirchhoff's laws, dividers, and troubleshooting.
 
 [Open Circuits](circuits/index.qmd)
 :::
 
 ::: {.tej-download-card}
-### Linux, operating systems, and basic networking
+### 4. Building and measurement
 
-Choose a suitable Linux distribution, prepare for installation, install Linux Mint safely, and continue into basic networking.
+Breadboards, schematics, simulation, multimeter use, measurement uncertainty, and comparison of predicted and measured results.
 
-[Open Linux, Operating Systems and Basic Networking](linux-operating-systems/index.qmd)
+[Open the roadmap](curriculum/index.qmd#unit-4)
 :::
 
 ::: {.tej-download-card}
-### Engineering preparation track
+### 5. Components and applied circuits
 
-A progressive implementation plan for circuit analysis, linear algebra, energy balances, sensors, modelling, digital systems, operational amplifiers, and control.
+Sensors, batteries, capacitors, diodes, transistors, timers, motors, relays, and useful low-voltage circuits.
 
-[Open the Engineering Preparation Track](engineering-preparation-track/index.qmd)
+[Open the Electronics Lesson Library](electronics-library/index.qmd)
+:::
+
+::: {.tej-download-card}
+### 6. Digital logic and inputs
+
+Logic levels, stable switches, pull-ups, pull-downs, debouncing, gates, truth tables, and state.
+
+[Open the roadmap](curriculum/index.qmd#unit-6)
+:::
+
+::: {.tej-download-card}
+### 7. Fabrication and PCBs
+
+Soldering, connectors, printed circuit boards, manufacturing files, enclosures, and fabrication.
+
+[Open the roadmap](curriculum/index.qmd#unit-7)
+:::
+
+::: {.tej-download-card}
+### 8. Computer systems
+
+Computer components, power, assembly, startup, firmware, Linux installation, upgrades, repair, and reuse.
+
+[Open the roadmap](curriculum/index.qmd#unit-8)
+:::
+
+::: {.tej-download-card}
+### 9. Linux and basic networking
+
+Linux desktop use, files, permissions, command line, software, connectivity, services, backup, and recovery.
+
+[Open Linux and Operating Systems](linux-operating-systems/index.qmd)
+:::
+
+::: {.tej-download-card}
+### 10. Programming
+
+Algorithms, variables, conditions, loops, functions, files, testing, debugging, and technical documentation.
+
+[Open the roadmap](curriculum/index.qmd#unit-10)
+:::
+
+::: {.tej-download-card}
+### 11. Microcontrollers
+
+Protected inputs and outputs, sensors, timing, communication, actuators, state machines, and data logging.
+
+[Open the roadmap](curriculum/index.qmd#unit-11)
+:::
+
+::: {.tej-download-card}
+### 12. Networking and administration
+
+Addresses, protocols, diagnostics, secure remote access, users, classroom services, and defensive administration.
+
+[Open the roadmap](curriculum/index.qmd#unit-12)
+:::
+
+::: {.tej-download-card}
+### 13. Data science and machine learning
+
+Data preparation, visualization, regression, classification, model evaluation, uncertainty, and responsible use.
+
+[Open the roadmap](curriculum/index.qmd#unit-13)
+:::
+
+::: {.tej-download-card}
+### 14. Language models and applied AI
+
+Tokens, prediction, prompting, grounding, evaluation, small models, and responsible artificial-intelligence use.
+
+[Open the roadmap](curriculum/index.qmd#unit-14)
+:::
+
+::: {.tej-download-card}
+### 15. Culminating projects
+
+Requirements, planning, construction or simulation, testing, revision, evidence, and technical communication.
+
+[Open the roadmap](curriculum/index.qmd#unit-15)
+:::
+
+::: {.tej-download-card}
+### 16. Control systems and CNC
+
+Open and closed loops, hysteresis, proportional and PID control, interlocks, state machines, motion, and CNC.
+
+[Open the roadmap](curriculum/index.qmd#unit-16)
 :::
 :::
+
+## Other pathways
+
+- [Complete Curriculum Roadmap](curriculum/index.qmd)
+- [Electronics Lesson Library](electronics-library/index.qmd)
+- [Engineering Preparation Track](engineering-preparation-track/index.qmd)
