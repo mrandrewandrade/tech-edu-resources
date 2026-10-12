@@ -1,9 +1,9 @@
 ---
-title: "Lesson 2: Trace a Rough Logo in Photopea"
-description: "Practise with a simple mark, then rebuild a hand-drawn logo with clean vector shapes and export an SVG."
+title: "Lesson 2A: Warm-Up: Trace the AA Logo in Photopea"
+description: "Practise Photopea's vector tools by rebuilding a simple hand-drawn AA mark with four editable lines."
 sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
-terms: [logo, raster-image, vector-graphic, scalable-vector-graphics, negative-space]
+terms: [logo, raster-image, vector-graphic, scalable-vector-graphics]
 highlighted-terms: [logo]
 toc: true
 execute:
@@ -12,243 +12,120 @@ execute:
 
 ## Learning goals
 
-By the end of this lesson:
+By the end of this warm-up:
 
-- I can use a photograph as a tracing guide.
-- I can rebuild a drawing with editable vector shapes.
-- I can make clean corners, curves, and closed paths.
-- I can save a PSD and export a working SVG.
+- I can use a photo as a tracing guide.
+- I can draw an editable vector line.
+- I can make both sides of a mark look even.
+- I can save a PSD and export an SVG.
 
 ## Why this is useful
 
-A paper sketch can be rough. Vector shapes let you fix the lines without losing the idea.
+Your first sketch does not need to be perfect. Editable lines let you fix the shape while keeping the original idea.
 
-Clean SVG files can be resized without becoming blurry. They can also become paths for cutting, scoring, plotting, or embroidery software.
+This warm-up teaches the basic tools before you trace a logo with more parts.
 
 ## What you will make
 
-First, trace the simple AA mark as a short warm-up. Then follow a worked example that turns two mountain peaks into a clean AA landscape logo. Finally, use the same steps with your own drawing.
+You will rebuild the hand-drawn AA mark with four clean vector lines:
 
-![Four steps show a paper landscape sketch becoming a simple vector logo.](../../assets/name-tag-photopea/landscape-to-logo.svg){fig-alt="A paper landscape sketch is reduced to a sun, mountain, and river, rebuilt with clean shapes in Photopea, and finished as a simple logo."}
-
-The goal is not to copy every pencil mark. The goal is to rebuild the important shapes.
+1. a left diagonal;
+2. a right diagonal;
+3. a vertical centre line; and
+4. a horizontal crossbar.
 
 ## Before you start
 
-Open [Photopea](https://www.photopea.com/) in a modern browser.
+Open [Photopea](https://www.photopea.com/) in a browser. Open the AA reference photograph, or use another simple mark made from a few straight lines.
 
-You need:
+You will use:
 
-- a clear photograph or scan of your drawing;
-- a dark drawing on light paper;
-- the **Shape tool** for circles and simple shapes;
-- the **Pen tool** for custom shapes and curves; and
-- the **Layers panel** for keeping each part separate.
+- the **Line Tool**;
+- **Shape** mode;
+- the **Move Tool**; and
+- the **Layers** panel.
 
-[Download the landscape practice sketch](../../assets/personal-logo-photopea/landscape-sketch-reference.png){.btn .btn-primary}
+## 1. Open the sketch
 
-[Download the finished four-element SVG](../../assets/personal-logo-photopea/aa-mountain-animation-ready.svg){.btn .btn-outline-primary}
+Choose **File > Open**, then select the photograph. You can also drag the photograph onto Photopea.
 
-[Download the printable Photopea guide](../../assets/name-tag-photopea/personal-logo-photopea-guide.pdf){.btn .btn-outline-primary}
-
-## 1. Warm up with four straight lines
-
-Open the AA reference photograph. It is only a tracing guide.
+Do not erase or paint on the photograph. It is only a guide.
 
 ![A blue hand-drawn AA logo opened as a reference image in Photopea.](../../assets/personal-logo-photopea/rough-sketch-to-svg/01-reference-photo.png){fig-alt="A blue hand-drawn AA mark is open in Photopea as a tracing guide."}
 
-1. Choose the **Line tool**.
+## 2. Draw the first line
+
+1. Choose the **Line Tool**.
 2. Choose **Shape** in the top bar.
 3. Set the colour to black.
 4. Start with a line thickness near `14 px`.
 5. Drag over the left diagonal.
 
+Photopea makes a new shape layer. A shape line stays sharp when it is resized.
+
 ![One black vector line is drawn over the blue sketch.](../../assets/personal-logo-photopea/rough-sketch-to-svg/02-first-vector-stroke.png){fig-alt="One clean black vector line is drawn over the left side of the blue sketch."}
+
+## 3. Draw the other three lines
 
 Draw the other diagonal, the centre line, and the crossbar. Keep each line on its own shape layer.
 
 ![Four vector lines rebuild the AA mark.](../../assets/personal-logo-photopea/rough-sketch-to-svg/03-four-stroke-construction.png){fig-alt="Four black vector lines rebuild the AA mark above the reference photograph."}
 
-Hide the photograph. Move the lines until both sides look even.
+Check that:
 
-This is the warm-up. Straight lines are useful, but most student logos need more than four lines.
+- the two outside lines meet at one top point;
+- the lower ends are at the same height;
+- the centre line is straight;
+- the crossbar is level; and
+- the four lines have the same thickness.
 
-## 2. Study the worked example
+## 4. Hide the photo and fix the mark
 
-The landscape drawing has many pencil marks. The logo keeps only four main parts:
+Click the eye beside the photograph layer. The grey-and-white checkerboard means the background is transparent.
 
-1. a circle for the sun;
-2. a left peak for the first A;
-3. a right peak for the second A; and
-4. a curved shape for the river.
+![The traced AA logo by itself on Photopea's transparent checkerboard.](../../assets/personal-logo-photopea/rough-sketch-to-svg/04-transparency-check.png){fig-alt="The traced AA mark is visible on a transparent background after the photograph is hidden."}
 
-![A landscape sketch is reduced to a circle, triangle, and curve.](../../assets/name-tag-photopea/personal-logo-starting-idea.svg){fig-alt="A landscape sketch is examined and its three useful logo parts are identified as a circle, triangle, and curve."}
+Use the **Move Tool** to move a whole line. Make small changes until both sides look even.
 
-Do the same with your drawing. Circle the parts that carry the idea. Leave small details behind.
+![A corrected, balanced black AA logo on a transparent background in Photopea.](../../assets/personal-logo-photopea/rough-sketch-to-svg/05-corrected-final-logo.png){fig-alt="A balanced black AA mark made from four even vector lines."}
 
-Your drawing may need more than four parts. Rebuild one important part at a time.
-
-::: {.callout-tip title="Keep the idea, not every wobble"}
-Use a few clean shapes. A logo should still make sense when it is small.
-:::
-
-## 3. Create the logo file
-
-1. Choose **File > New**.
-2. Set **Width** to `1000 px`.
-3. Set **Height** to `1000 px`.
-4. Choose **Transparent** for the background.
-5. Select **Create**.
-
-![Photopea's New Project screen set to a 1000 by 1000 pixel transparent document.](../../assets/personal-logo-photopea/01-photopea-personal-logo.jpg){fig-alt="The Photopea New Project screen is set to a 1000 by 1000 pixel transparent document."}
-
-This square is a working area. The SVG can be resized later.
-
-## 4. Place, fade, and lock the drawing
-
-1. Choose **File > Open & Place**.
-2. Select the photograph or scan.
-3. Resize it to fill most of the square.
-4. Rename its layer `REFERENCE`.
-
-![The photographed drawing is placed on a layer named REFERENCE.](../../assets/personal-logo-photopea/02-photopea-personal-logo.jpg){fig-alt="A landscape drawing is placed in Photopea on a layer named REFERENCE."}
-
-1. Select the `REFERENCE` layer.
-2. Set its **Opacity** to about `30%`.
-3. Select the lock icon.
-
-![The reference layer is faded and locked.](../../assets/personal-logo-photopea/03-photopea-personal-logo.jpg){fig-alt="The landscape reference is faded to 30 percent opacity and locked in the Layers panel."}
-
-You should see a pale drawing that cannot move by accident.
-
-## 5. Rebuild the simple shapes
-
-Start with the easiest part. In the worked example, that is the sun.
-
-1. Choose the **Ellipse tool**.
-2. Choose **Shape** in the top bar.
-3. Set **Fill** to black.
-4. Set **Stroke** to none.
-5. Hold **Shift** and drag a circle over the sun.
-6. Rename the new shape layer `SUN`.
-
-Use a shape tool when a part is a circle, rectangle, line, or simple polygon.
-
-## 6. Use the Pen tool for custom shapes
-
-Use the Pen tool for the two peaks and the river.
-
-1. Choose the **Pen tool** or press **P**.
-2. Choose **Shape** in the top bar.
-3. Set **Fill** to black.
-4. Set **Stroke** to none.
-5. Click once to make a sharp corner.
-6. Click and drag to make a curve.
-7. Click the first point again to close the path.
-8. Rename the layers `LEFT-A`, `RIGHT-A`, and `RIVER`.
-
-Use as few points as possible. Two or three smooth points make a better curve than many small points.
-
-Keep the sun, both peaks, and river on separate shape layers. Do not merge them. Use the unique layer names `SUN`, `LEFT-A`, `RIGHT-A`, and `RIVER`. Photopea uses these names as element IDs in the exported SVG. In the next animation assignment, each part can move, fade, scale, or enter at a different time.
-
-![The sun, two peaks, and river are rebuilt as separate black vector shapes.](../../assets/personal-logo-photopea/04-photopea-personal-logo.jpg){fig-alt="The landscape is rebuilt with separate black vector layers for the sun, peaks, and river above the pale reference drawing."}
-
-### Make both sides even
-
-For a symmetrical part:
-
-1. Trace one half.
-2. Duplicate the shape layer.
-3. Choose **Edit > Transform > Flip Horizontally**.
-4. Move the copy until the centre edges meet.
-
-### Make a hole inside a shape
-
-Some logos have an opening inside a larger shape. Draw the outside path first. Draw the inside path next. Select both paths and choose **Subtract** in the path-operation menu.
-
-The opening should show the transparent checkerboard when the reference is hidden.
-
-## 7. Hide the drawing and run the black test
-
-1. Select the eye beside `REFERENCE` to hide it.
-2. Look at the logo as one black design.
-3. Zoom out until it looks about `25 mm` wide.
-
-![The reference is hidden and the black logo is checked at a small size.](../../assets/personal-logo-photopea/05-photopea-personal-logo.jpg){fig-alt="The reference layer is hidden so the black logo can be checked as a small, clear silhouette."}
-
-Fix the logo if:
-
-- a thin line disappears;
-- a small gap closes;
-- a curve looks bumpy;
-- one side looks heavier; or
-- a small part looks like a loose dot.
-
-Use the **Direct Select tool** to move a point or its curve handles. Make one small change, then look at the whole logo again.
-
-## 8. Add colour after the black version works
-
-Colour is optional for the name tag. Keep a black version for engraving.
-
-If you add colour, use two or three flat colours. Do not use colour to fix an unclear shape.
-
-![The completed logo uses three flat colours and keeps the shapes editable.](../../assets/personal-logo-photopea/06-photopea-personal-logo.jpg){fig-alt="The finished landscape logo uses three flat colours while the sun, mountain, and river remain on separate layers."}
-
-## 9. Check your work
-
-Continue when:
-
-- the photograph is hidden;
-- each part is an editable shape layer;
-- the sun, left peak, right peak, and river are still separate;
-- every filled shape is closed;
-- the logo is clear in black;
-- narrow gaps stay open;
-- curves use only the points they need; and
-- nothing important disappears at a small size.
-
-## 10. Save the PSD and export the SVG
+## 5. Save and export
 
 1. Choose **File > Save as PSD**.
-2. Save the file as `lastname-logo-working.psd`.
-3. Hide `REFERENCE` and any practice layers.
+2. Save the working file with a clear name.
+3. Keep the photograph hidden.
 4. Choose **File > Export as > SVG**.
 5. Leave **add hidden layers** off.
 6. Leave **add raster graphics** off.
 7. Choose **Save**.
 
-Because the layers have unique names, the SVG contains four separate elements. Do not combine the paths before exporting.
+![Photopea's SVG export window with hidden layers and raster graphics turned off.](../../assets/personal-logo-photopea/rough-sketch-to-svg/06-svg-export-settings.png){fig-alt="Photopea's SVG export window is ready to save only the visible vector lines."}
 
-![The SVG export window has hidden layers and raster graphics turned off.](../../assets/personal-logo-photopea/rough-sketch-to-svg/06-svg-export-settings.png){fig-alt="Photopea's SVG export window is ready to save only the visible vector shapes."}
+## Check your work
 
-Open the downloaded SVG in Photopea. Check that the photograph is gone and every logo part is visible.
+Continue when:
 
-## Submit
-
-Submit:
-
-- `lastname-logo-working.psd` with editable layers; and
-- `lastname-logo.svg` with only the finished vector artwork.
+- the four lines are editable shape layers;
+- both sides look even;
+- the line thickness matches;
+- the photograph is hidden; and
+- the SVG contains only the finished mark.
 
 ## Common issues
 
-- **The logo is made of pixels:** undo and choose **Shape** mode before drawing.
-- **The Pen tool makes a corner instead of a curve:** click and drag instead of clicking once.
-- **The curve is bumpy:** remove extra points and adjust the remaining handles.
-- **A filled part is open:** use the Pen tool to click the first point and close the path.
-- **The logo has too much detail:** keep the largest shapes and remove small marks.
-- **The two sides do not match:** trace one half, duplicate it, and flip the copy.
-- **The photograph appears in the SVG:** hide `REFERENCE` and export again with raster graphics turned off.
-- **Automatic tracing creates hundreds of points:** use **Image > Vectorize Bitmap** only as a starting point. Delete tiny pieces and rebuild important curves with the Pen tool.
+- **A line is made of pixels:** undo and choose **Shape** mode before drawing.
+- **A line is too thick or thin:** select its shape layer and change the line thickness.
+- **The mark looks wrong without the photo:** keep the photo hidden while you fix the spacing.
+- **The photo appears in the SVG:** hide the photo and export again with raster graphics turned off.
 
 ::: {.ter-curriculum-relevance}
-**Design curriculum:** This is Lesson 2 in the Photopea sequence. Complete [Lesson 1](01-nameplate-text-photopea.qmd) first. Next, add the finished logo to the nameplate in [Lesson 3](03-combine-logo-nameplate.qmd).
+**Design curriculum:** This warm-up builds basic vector drawing, visual checking, and file-export skills. Next, students use separate named shapes in the multi-layer worked example.
 :::
 
 ## Summary
 
-The AA warm-up showed how vector lines work. The landscape example turned two peaks into an AA mark and showed how to rebuild a real drawing with simple shapes, custom curves, and closed paths.
+You used a rough sketch as a guide. You rebuilt it with four editable lines, made both sides look even, saved a PSD, and exported an SVG.
 
-Do not trace every pencil mark. Keep the idea, rebuild the important shapes, test the logo in black, and check the exported SVG. Keep each part separate so the next animation assignment can move the elements one at a time.
+This was the warm-up. The next lesson uses different tools and named layers to trace a logo with several parts.
 
-Previous: [Lesson 1: Build the Nameplate Text](01-nameplate-text-photopea.qmd). Next: [Lesson 3: Combine the Logo and Nameplate](03-combine-logo-nameplate.qmd).
+Previous: [Lesson 1: Build the Nameplate Text](01-nameplate-text-photopea.qmd). Next: [Lesson 2B: Trace a Multi-Layer Logo](02b-advanced-multilayer-tracing-photopea.qmd).

@@ -19,7 +19,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 20)
+        self.assertEqual(len(design_routes), 21)
         self.assertEqual(
             design_routes[0],
             "/commons/design-fabrication/01-nice-design-process/01-needs-necessities.html",
@@ -29,6 +29,14 @@ class CourseNotesManifestTests(unittest.TestCase):
             "/commons/design-fabrication/04-3d-printing/04-design-challenge.html",
         )
         self.assertFalse(any("tool-holder" in route for route in design_routes))
+        self.assertEqual(
+            design_routes[5:8],
+            [
+                "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",
+                "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
+                "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
+            ],
+        )
         self.assertEqual(
             routes_by_course["tej"],
             [

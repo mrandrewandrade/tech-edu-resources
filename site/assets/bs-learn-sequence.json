@@ -76,12 +76,12 @@
       "course_title": "General Design & Fabrication",
       "lesson_order": 2,
       "route": "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",
-      "title": "Photopea 2: Trace a Rough Logo",
+      "title": "Photopea 2A: Warm-Up: Trace the AA Logo",
       "track_id": "design-digital",
       "track_order": 2,
       "track_title": "2. Digital Design & Communication",
       "previous_route": "/commons/design-fabrication/logo-design/01-nameplate-text-photopea.html",
-      "next_route": "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
+      "next_route": "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
       "next_starts_new_track": false,
       "sequence_index": 5
     },
@@ -89,13 +89,13 @@
       "course_id": "design-fabrication",
       "course_title": "General Design & Fabrication",
       "lesson_order": 3,
-      "route": "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
-      "title": "Photopea 3: Combine Logo + Name",
+      "route": "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
+      "title": "Photopea 2B: Trace a Multi-Layer Logo",
       "track_id": "design-digital",
       "track_order": 2,
       "track_title": "2. Digital Design & Communication",
       "previous_route": "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",
-      "next_route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
+      "next_route": "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
       "next_starts_new_track": false,
       "sequence_index": 6
     },
@@ -103,6 +103,20 @@
       "course_id": "design-fabrication",
       "course_title": "General Design & Fabrication",
       "lesson_order": 4,
+      "route": "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
+      "title": "Photopea 3: Combine Logo + Name",
+      "track_id": "design-digital",
+      "track_order": 2,
+      "track_title": "2. Digital Design & Communication",
+      "previous_route": "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
+      "next_route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
+      "next_starts_new_track": false,
+      "sequence_index": 7
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "lesson_order": 5,
       "route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
       "title": "Your Turn: Your Name + Logo",
       "track_id": "design-digital",
@@ -111,12 +125,12 @@
       "previous_route": "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
       "next_route": "/commons/design-fabrication/02-digital-design/01-raster-vector-svg.html",
       "next_starts_new_track": false,
-      "sequence_index": 7
+      "sequence_index": 8
     },
     {
       "course_id": "design-fabrication",
       "course_title": "General Design & Fabrication",
-      "lesson_order": 5,
+      "lesson_order": 6,
       "route": "/commons/design-fabrication/02-digital-design/01-raster-vector-svg.html",
       "title": "Raster, Vector & SVG",
       "track_id": "design-digital",
@@ -125,12 +139,12 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
       "next_route": "/commons/design-fabrication/02-digital-design/05-animation-ui-ux.html",
       "next_starts_new_track": false,
-      "sequence_index": 8
+      "sequence_index": 9
     },
     {
       "course_id": "design-fabrication",
       "course_title": "General Design & Fabrication",
-      "lesson_order": 6,
+      "lesson_order": 7,
       "route": "/commons/design-fabrication/02-digital-design/05-animation-ui-ux.html",
       "title": "2D Animation",
       "track_id": "design-digital",
@@ -139,7 +153,7 @@
       "previous_route": "/commons/design-fabrication/02-digital-design/01-raster-vector-svg.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
       "next_starts_new_track": true,
-      "sequence_index": 9
+      "sequence_index": 10
     },
     {
       "course_id": "design-fabrication",
@@ -153,7 +167,7 @@
       "previous_route": "/commons/design-fabrication/02-digital-design/05-animation-ui-ux.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
       "next_starts_new_track": false,
-      "sequence_index": 10
+      "sequence_index": 11
     },
     {
       "course_id": "design-fabrication",
@@ -167,7 +181,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
       "next_starts_new_track": false,
-      "sequence_index": 11
+      "sequence_index": 12
     },
     {
       "course_id": "design-fabrication",
@@ -181,7 +195,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
       "next_starts_new_track": false,
-      "sequence_index": 12
+      "sequence_index": 13
     },
     {
       "course_id": "design-fabrication",
@@ -195,7 +209,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
       "next_starts_new_track": false,
-      "sequence_index": 13
+      "sequence_index": 14
     },
     {
       "course_id": "design-fabrication",
@@ -209,7 +223,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
       "next_starts_new_track": false,
-      "sequence_index": 14
+      "sequence_index": 15
     },
     {
       "course_id": "design-fabrication",
@@ -223,7 +237,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
       "next_route": "/commons/design-fabrication/04-3d-printing/01-additive-cad.html",
       "next_starts_new_track": true,
-      "sequence_index": 15
+      "sequence_index": 16
     },
     {
       "course_id": "design-fabrication",
@@ -237,7 +251,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
       "next_route": "/commons/design-fabrication/04-3d-printing/02-slicing-orientation.html",
       "next_starts_new_track": false,
-      "sequence_index": 16
+      "sequence_index": 17
     },
     {
       "course_id": "design-fabrication",
@@ -251,7 +265,7 @@
       "previous_route": "/commons/design-fabrication/04-3d-printing/01-additive-cad.html",
       "next_route": "/commons/design-fabrication/04-3d-printing/03-tolerances-functional-parts.html",
       "next_starts_new_track": false,
-      "sequence_index": 17
+      "sequence_index": 18
     },
     {
       "course_id": "design-fabrication",
@@ -265,7 +279,7 @@
       "previous_route": "/commons/design-fabrication/04-3d-printing/02-slicing-orientation.html",
       "next_route": "/commons/design-fabrication/04-3d-printing/04-design-challenge.html",
       "next_starts_new_track": false,
-      "sequence_index": 18
+      "sequence_index": 19
     },
     {
       "course_id": "design-fabrication",
@@ -279,7 +293,7 @@
       "previous_route": "/commons/design-fabrication/04-3d-printing/03-tolerances-functional-parts.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 19
+      "sequence_index": 20
     },
     {
       "course_id": "tej",
@@ -293,7 +307,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/01-number-systems/02-powers-of-10.html",
       "next_starts_new_track": false,
-      "sequence_index": 20
+      "sequence_index": 21
     },
     {
       "course_id": "tej",
@@ -307,7 +321,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/01-significant-figures.html",
       "next_route": "/commons/tej3-4/01-number-systems/06-scientific-calculator.html",
       "next_starts_new_track": false,
-      "sequence_index": 21
+      "sequence_index": 22
     },
     {
       "course_id": "tej",
@@ -321,7 +335,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/02-powers-of-10.html",
       "next_route": "/commons/tej3-4/01-number-systems/03-scientific-notation.html",
       "next_starts_new_track": false,
-      "sequence_index": 22
+      "sequence_index": 23
     },
     {
       "course_id": "tej",
@@ -335,7 +349,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/06-scientific-calculator.html",
       "next_route": "/commons/tej3-4/01-number-systems/04-engineering-notation.html",
       "next_starts_new_track": false,
-      "sequence_index": 23
+      "sequence_index": 24
     },
     {
       "course_id": "tej",
@@ -349,7 +363,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/03-scientific-notation.html",
       "next_route": "/commons/tej3-4/01-number-systems/05-metric-prefixes.html",
       "next_starts_new_track": false,
-      "sequence_index": 24
+      "sequence_index": 25
     },
     {
       "course_id": "tej",
@@ -363,7 +377,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/04-engineering-notation.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/01-charge-voltage-current.html",
       "next_starts_new_track": true,
-      "sequence_index": 25
+      "sequence_index": 26
     },
     {
       "course_id": "tej",
@@ -377,7 +391,7 @@
       "previous_route": "/commons/tej3-4/01-number-systems/05-metric-prefixes.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/02-circuits-opens-shorts.html",
       "next_starts_new_track": false,
-      "sequence_index": 26
+      "sequence_index": 27
     },
     {
       "course_id": "tej",
@@ -391,7 +405,7 @@
       "previous_route": "/commons/tej3-4/02-basic-electronics/01-charge-voltage-current.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/03-ohms-law.html",
       "next_starts_new_track": false,
-      "sequence_index": 27
+      "sequence_index": 28
     },
     {
       "course_id": "tej",
@@ -405,7 +419,7 @@
       "previous_route": "/commons/tej3-4/02-basic-electronics/02-circuits-opens-shorts.html",
       "next_route": "/commons/tej3-4/02-basic-electronics/04-power-energy.html",
       "next_starts_new_track": false,
-      "sequence_index": 28
+      "sequence_index": 29
     },
     {
       "course_id": "tej",
@@ -419,7 +433,7 @@
       "previous_route": "/commons/tej3-4/02-basic-electronics/03-ohms-law.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 29
+      "sequence_index": 30
     }
   ]
 }
