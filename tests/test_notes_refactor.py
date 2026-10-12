@@ -18,7 +18,8 @@ class NotesRefactorTests(unittest.TestCase):
         self.assertNotIn("AI Literacy", config)
         self.assertNotIn("Language Models & AI", config)
         for path in (
-            "tej3-4/circuits/index.qmd",
+            "tej3-4/circuits/**/*.qmd",
+            "tej3-4/electronics-library/index.qmd",
             "tej3-4/linux-operating-systems/index.qmd",
             "design-fabrication/design-process/index.qmd",
             "design-fabrication/logo-design/index.qmd",
