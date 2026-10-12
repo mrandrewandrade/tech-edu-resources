@@ -5,39 +5,39 @@ Use visual examples, measured drawings, builders, and reusable files to make las
 
 The tools support measured prototypes, shop organization, and iterative fabrication.
 
-### [Make It Stand](/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html)
+### [Make It Stand](../../design-fabrication/03-laser-cutting/02-make-it-stand.qmd)
 
 Compare ways to support a flat design as a stable object.
 
 Support geometry is useful for signs, displays, holders, and models.
 
-### [Measure and Place](/commons/design-fabrication/03-laser-cutting/03-measure-place.html)
+### [Measure and Place](../../design-fabrication/03-laser-cutting/03-measure-place.qmd)
 
 Measure a real object and place openings and supports from evidence.
 
 Measured placement improves access, spacing, and fit.
 
-### [Material Fit and Calibration](/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html)
+### [Material Fit and Calibration](../../design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd)
 
 Test material thickness, kerf, and fit before cutting a full project.
 
 Calibration reduces wasted material and unreliable joints.
 
-### [Assemblies and Hybrid Fabrication](/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html)
+### [Assemblies and Hybrid Fabrication](../../design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd)
 
 Combine cut parts, fasteners, and other processes into an assembly.
 
 Hybrid fabrication expands what a flat-sheet process can make.
 
-### [Wall and Bench Tool Module](/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html)
+### [Wall and Bench Tool Module](../../design-fabrication/03-laser-cutting/07-wall-bench-module.qmd)
 
 Design a visible, labelled, stable holder for a wall or workbench.
 
 Good tool storage improves access, accountability, and shop safety.
 
-<p class="ter-resource-badges"><a class="ter-resource-badge" href="/commons/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
+<p class="ter-resource-badges"><a class="ter-resource-badge" href="https://andrewandrade.ca/commons/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
 
-### [Design and Fabrication Capstone](/commons/design-fabrication/03-laser-cutting/08-capstone.html)
+### [Design and Fabrication Capstone](../../design-fabrication/03-laser-cutting/08-capstone.qmd)
 
 Plan, prototype, test, and document an original fabricated solution.
 

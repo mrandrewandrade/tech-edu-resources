@@ -6,6 +6,12 @@
       "title": "General Design & Fabrication",
       "hub": "design-fabrication/index.qmd",
       "sidebar_id": "design-fabrication",
+      "course_resources": [
+        {"title": "Fabrication Plate Builder", "source": "design-fabrication/tools/plate-builder/index.qmd"},
+        {"title": "Laser-Cut Leg & Support Builder", "source": "design-fabrication/tools/leg-builder/index.qmd"},
+        {"title": "Tool Organizer Gallery", "source": "design-fabrication/tools/tool-organizer-gallery/index.qmd"},
+        {"title": "Laser-Cutting Files and Resources", "source": "teaching-materials/laser-cutting/index.qmd"}
+      ],
       "units": [
         {
           "id": "culture-land", "order": 1, "title": "Culture and Land-Based Learning", "hub": "design-fabrication/culture-land-based-learning/index.qmd",
@@ -62,7 +68,7 @@
             {"order": 2, "title": "Measure and Place", "source": "design-fabrication/03-laser-cutting/03-measure-place.qmd", "legacy_slug": true, "summary": "Measure a real object and place openings and supports from evidence.", "use": "Measured placement improves access, spacing, and fit.", "status": "published", "resources": []},
             {"order": 3, "title": "Material Fit and Calibration", "source": "design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd", "legacy_slug": true, "summary": "Test material thickness, kerf, and fit before cutting a full project.", "use": "Calibration reduces wasted material and unreliable joints.", "status": "published", "resources": []},
             {"order": 4, "title": "Assemblies and Hybrid Fabrication", "source": "design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd", "legacy_slug": true, "summary": "Combine cut parts, fasteners, and other processes into an assembly.", "use": "Hybrid fabrication expands what a flat-sheet process can make.", "status": "published", "resources": []},
-            {"order": 5, "title": "Wall and Bench Tool Module", "source": "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd", "legacy_slug": true, "summary": "Design a visible, labelled, stable holder for a wall or workbench.", "use": "Good tool storage improves access, accountability, and shop safety.", "status": "published", "resources": [{"label": "Project Gallery", "url": "/commons/design-fabrication/tools/tool-organizer-gallery/"}]},
+            {"order": 5, "title": "Wall and Bench Tool Module", "source": "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd", "legacy_slug": true, "summary": "Design a visible, labelled, stable holder for a wall or workbench.", "use": "Good tool storage improves access, accountability, and shop safety.", "status": "published", "resources": [{"label": "Project Gallery", "url": "https://andrewandrade.ca/commons/design-fabrication/tools/tool-organizer-gallery/"}]},
             {"order": 6, "title": "Design and Fabrication Capstone", "source": "design-fabrication/03-laser-cutting/08-capstone.qmd", "legacy_slug": true, "summary": "Plan, prototype, test, and document an original fabricated solution.", "use": "The capstone combines evidence, design decisions, fabrication, and evaluation.", "status": "published", "resources": []},
             {"order": 7, "title": "CNC Machining", "summary": "CNC machining resources are in development.", "use": "The future sequence will connect digital models to subtractive manufacturing.", "status": "planned", "resources": []},
             {"order": 8, "title": "3D Printing", "summary": "3D-printing resources are in development.", "use": "The future sequence will cover slicing, orientation, supports, and functional tolerances.", "status": "planned", "resources": []}
@@ -83,7 +89,7 @@
         {"id": "design", "order": 3, "title": "Design", "summary": "Use the N.I.C.E. process to define needs, develop ideas, and evaluate evidence.", "use": "Design reasoning supports circuits, computing, fabrication, and control projects.", "lessons": [{"order": 1, "title": "N.I.C.E. Design Process", "summary": "Use the General Design & Fabrication learning path.", "use": "The shared process prevents duplicate design notes.", "status": "planned", "resources": []}]},
         {"id": "portfolio", "order": 4, "title": "Project Portfolio", "summary": "Collect plans, tests, code, measurements, photographs, and reflections.", "use": "A portfolio shows both the result and the engineering process that produced it.", "lessons": [{"order": 1, "title": "Build a Technical Portfolio", "summary": "The portfolio lesson is planned.", "use": "It will support class assessment and future applications.", "status": "planned", "resources": []}]},
         {
-          "id": "circuits-electronics", "order": 5, "title": "Circuits and Electronics", "hub": "tej3-4/circuits/index.qmd",
+          "id": "circuits-electronics", "order": 5, "title": "Circuits and Electronics", "hub": "tej3-4/electronics-library/index.qmd",
           "summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
           "use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
           "lessons": [

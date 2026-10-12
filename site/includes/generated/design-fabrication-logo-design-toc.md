@@ -5,25 +5,25 @@ Learn browser-based graphic design by building a nameplate and logo in four shor
 
 The sequence develops editable vector artwork for signs, labels, slides, and fabrication.
 
-### [Build the Nameplate Text](/commons/design-fabrication/logo-design/01-nameplate-text-photopea.html)
+### [Build the Nameplate Text](01-nameplate-text-photopea.qmd)
 
 Make an 11 by 4 inch file, leave room for a logo, and choose readable type.
 
 Correct size, spacing, and legibility prepare a design for real output.
 
-### [Trace a Rough Logo](/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html)
+### [Trace a Rough Logo](rough-sketch-to-svg-photopea.qmd)
 
 Turn a photographed sketch into clean, editable vector lines.
 
 Tracing converts an idea on paper into artwork that can be revised and fabricated.
 
-### [Combine Logo and Nameplate](/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html)
+### [Combine Logo and Nameplate](03-combine-logo-nameplate.qmd)
 
 Combine the ANDRADE logo and nameplate, then export the complete design.
 
 The worked example shows alignment, proportion, and file-export decisions.
 
-### [Design Your Own Name Tag](/commons/design-fabrication/03-laser-cutting/01-name-logo.html)
+### [Design Your Own Name Tag](../03-laser-cutting/01-name-logo.qmd)
 
 Apply the tutorial skills to an original name-and-logo design and defend the choices.
 

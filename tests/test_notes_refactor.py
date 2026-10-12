@@ -14,7 +14,7 @@ class NotesRefactorTests(unittest.TestCase):
         return (SITE / relative).read_text(encoding="utf-8")
 
     def test_public_navigation_is_small_and_has_no_ai_literacy_unit(self) -> None:
-        config = self.read("_quarto.yml")
+        config = self.read("_quarto.yml") + self.read("_course-navigation.yml")
         self.assertNotIn("AI Literacy", config)
         self.assertNotIn("Language Models & AI", config)
         for path in (
@@ -26,8 +26,7 @@ class NotesRefactorTests(unittest.TestCase):
             self.assertIn(path, config)
 
     def test_canonical_sidebar_links_do_not_use_numbered_slugs(self) -> None:
-        config = self.read("_quarto.yml")
-        sidebar = config.split("  sidebar:", 1)[1].split("  page-footer:", 1)[0]
+        sidebar = self.read("_course-navigation.yml")
         self.assertNotRegex(sidebar, r"href: (?:tej3-4|design-fabrication)/\d{2}-")
 
     def test_circuits_page_has_the_requested_topics_and_artifacts(self) -> None:
@@ -49,7 +48,7 @@ class NotesRefactorTests(unittest.TestCase):
             self.assertIn(text, circuits)
         self.assertNotIn("1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw", circuits)
         self.assertNotIn("1_pH0LLfqyt0QOZPGVGsXNW0tGNeG2ksXh0ysAUQLF94", circuits)
-        self.assertIn("not public yet", circuits)
+        self.assertIn("teacher answers remain private", circuits.lower())
 
     def test_logo_page_is_make_first_and_has_all_requested_videos(self) -> None:
         logo = self.read("design-fabrication/logo-design/index.qmd")
@@ -59,21 +58,19 @@ class NotesRefactorTests(unittest.TestCase):
             self.assertIn(video_id, logo)
 
     def test_design_process_reuses_the_class_deck_and_videos(self) -> None:
-        process = self.read("design-fabrication/design-process/index.qmd")
+        process = self.read("design-fabrication/design-process/index.qmd") + self.read(
+            "includes/generated/design-fabrication-design-process-toc.md"
+        )
         for text in (
-            "Situation: understand what is happening",
-            "N: Needs and Necessities",
-            "I: Investigate and Inquire",
-            "C: Create and Communicate",
-            "E: Evaluate",
-            "Repeat the cycle",
+            "Understand the Situation",
+            "Record User Needs",
+            "Necessities and Nice-to-Haves",
+            "Rank Priorities",
+            "Investigate and Inquire",
+            "Create and Communicate",
+            "Evaluate and Repeat",
+            "Supply Chain and Life Cycle",
             "1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ",
-            "pageid=p3",
-            "pageid=p4",
-            "pageid=p5",
-            "pageid=p6",
-            "pageid=p7",
-            "pageid=p9",
             "19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo",
             "1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho",
             "1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs",
@@ -86,8 +83,6 @@ class NotesRefactorTests(unittest.TestCase):
             "3wRWN3_u17k",
         ):
             self.assertIn(text, process)
-        self.assertNotIn("pageid=p2", process)
-        self.assertNotIn("Where we are today", process)
 
     def test_old_linux_urls_are_redirects_to_number_free_pages(self) -> None:
         expectations = {

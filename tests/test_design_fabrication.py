@@ -71,25 +71,25 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertTrue((CURRICULUM / relative).is_file(), relative)
 
     def test_navigation_is_educator_first(self) -> None:
-        config = self.read("_quarto.yml")
+        config = self.read("_quarto.yml") + self.read("_course-navigation.yml")
         educator = config.index("text: Educator Resources")
         classes = config.index("text: Classes")
         self.assertLess(educator, classes)
-        ordered = ["General Slides", "General Materials", "General Design & Fabrication", "TEJ Notes"]
+        ordered = ["General Slides", "General Materials", "General Design & Fabrication", "Computer Engineering Notes"]
         positions = [config.index(item, educator) for item in ordered]
         self.assertEqual(positions, sorted(positions))
         self.assertNotIn('title: "TAS Notes"', config)
 
     def test_design_fabrication_sidebar_matches_the_public_collection(self) -> None:
-        config = self.read("_quarto.yml")
-        sidebar_start = config.index("- id: design-fabrication")
+        config = self.read("_course-navigation.yml")
+        sidebar_start = config.index('- id: "design-fabrication"')
         sidebar_end = config.index("- id: tas2", sidebar_start)
         sidebar = config[sidebar_start:sidebar_end]
         ordered = [
-            'text: "Design & Fabrication Home"',
-            'text: "N.I.C.E. Design Process"',
-            'text: "Logo Design"',
-            'section: "Fabrication Tools"',
+            'text: "General Design & Fabrication Home"',
+            'section: "N.I.C.E. Design Process"',
+            'section: "Logo Design in Photopea"',
+            'section: "Laser Cutting and Fabrication Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]
         self.assertEqual(positions, sorted(positions))
@@ -103,28 +103,32 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertNotIn("systems-design-fabrication-track/index.qmd", landing)
 
     def test_nice_create_communicate_and_evaluate_meanings_are_explicit(self) -> None:
-        process = self.read("design-fabrication/design-process/index.qmd")
+        process = self.read("design-fabrication/design-process/index.qmd") + self.read(
+            "includes/generated/design-fabrication-design-process-toc.md"
+        )
         for heading in (
-            "## Situation: understand what is happening",
-            "## N: Needs and Necessities",
-            "## I: Investigate and Inquire",
-            "## C: Create and Communicate",
-            "## E: Evaluate",
-            "## Repeat the cycle",
+            "Understand the Situation",
+            "Record User Needs",
+            "Necessities and Nice-to-Haves",
+            "Rank Priorities",
+            "Investigate and Inquire",
+            "Create and Communicate",
+            "Evaluate and Repeat",
+            "Supply Chain and Life Cycle",
         ):
             self.assertIn(heading, process)
         for phrase in (
-            "situation statement",
-            "need statement",
-            "evidence-based direction",
-            "clear pitch",
-            "revised solution supported by evidence",
+            "facts, assumptions, and interpretations",
+            "non-negotiable constraints",
+            "research, observe, measure",
+            "make the proposal understandable",
+            "turns feedback and test results",
         ):
             self.assertIn(phrase.lower(), process.lower())
         for worksheet in (
             "N.I.C.E. Needs Worksheet",
             "N.I.C.E. Inquiry Worksheet",
-            "Communicate Worksheet Online",
+            "Communicate Worksheet",
             "Feedback Package",
             "N.I.C.E. Evaluate Worksheet",
             "N.I.C.E. Design Log",
@@ -162,7 +166,9 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertIn(term, audit)
 
     def test_current_tas_projects_are_prominent_and_original(self) -> None:
-        landing = self.read("design-fabrication/index.qmd")
+        landing = self.read("design-fabrication/index.qmd") + self.read(
+            "includes/generated/design-fabrication-toc.md"
+        )
         for project in (
             "N.I.C.E. Design Process",
             "Logo Design",
@@ -197,11 +203,13 @@ class DesignFabricationTests(unittest.TestCase):
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")
         self.assertLess(len(main.split()), 300)
         self.assertIn("A concise collection", main)
-        self.assertIn("Fabrication tools", main)
+        self.assertIn("fabrication tools", main)
 
     def test_curriculum_glossary_metadata_resolves(self) -> None:
-        glossary = json.loads((ROOT / "glossary" / "glossary.json").read_text(encoding="utf-8"))
-        canonical = set(glossary)
+        glossary = json.loads(
+            (SITE / "assets" / "bs-glossary-lookup.json").read_text(encoding="utf-8")
+        )
+        canonical = {entry["slug"] for entry in glossary["entries"]}
         integrated_pages = 0
         for page in CURRICULUM.rglob("*.qmd"):
             source = page.read_text(encoding="utf-8")
@@ -398,10 +406,12 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Fabrication Plate Builder", nav)
 
     def test_first_laser_projects_toolkit_is_complete(self) -> None:
-        landing = self.read("design-fabrication/index.qmd")
+        landing = self.read("design-fabrication/index.qmd") + self.read(
+            "includes/generated/design-fabrication-toc.md"
+        )
         organizer = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
         logo = self.read("design-fabrication/logo-design/index.qmd")
-        nav = self.read("_quarto.yml")
+        nav = self.read("_course-navigation.yml")
 
         for label in (
             "Fabrication Plate Builder",

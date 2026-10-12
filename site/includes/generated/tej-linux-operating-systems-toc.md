@@ -5,7 +5,7 @@ Choose, install, explore, administer, program, and measure a Linux computer in a
 
 Linux skills support repair, servers, embedded systems, networking, automation, and engineering tools.
 
-### [Choosing a Linux Distribution](/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html)
+### [Choosing a Linux Distribution](choosing-a-distribution.qmd)
 
 Compare distribution families, desktop environments, hardware needs, software, and support.
 
@@ -13,7 +13,7 @@ A good choice matches the computer and the work instead of following a brand nam
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a></p>
 
-### [Install Linux Mint](/commons/tej3-4/linux-operating-systems/install-linux-mint.html)
+### [Install Linux Mint](install-linux-mint.qmd)
 
 Prepare installation media, protect data, install Mint, and verify the result.
 
@@ -21,7 +21,7 @@ The procedure supports computer recovery and prepares a system for later project
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Assignment</a></p>
 
-### [Explore Linux](/commons/tej3-4/linux-operating-systems/explore-linux.html)
+### [Explore Linux](explore-linux.qmd)
 
 Explore the desktop, accounts, files, terminal, and Bashcrawl while collecting evidence.
 
@@ -29,55 +29,55 @@ The activity builds confidence before students administer or program the system.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy">Assignment</a></p>
 
-### [Know Your Linux Computer](/commons/tej3-4/linux-operating-systems/know-your-computer.html)
+### [Know Your Linux Computer](know-your-computer.qmd)
 
 Record hardware, operating-system, storage, and device information.
 
 A verified inventory supports troubleshooting, upgrades, and performance comparisons.
 
-### [Files, Terminal, and Permissions](/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html)
+### [Files, Terminal, and Permissions](files-terminal-permissions.qmd)
 
 Navigate paths, inspect files, and use permissions safely.
 
 These skills are essential for administration, automation, and development.
 
-### [Git Version Control](/commons/tej3-4/linux-operating-systems/git-version-control.html)
+### [Git Version Control](git-version-control.qmd)
 
 Record, inspect, and share changes with a safe Git workflow.
 
 Version control protects project history and supports collaboration.
 
-### [Build a Quarto Website](/commons/tej3-4/linux-operating-systems/quarto-website.html)
+### [Build a Quarto Website](quarto-website.qmd)
 
 Turn Markdown, code, and media into a small technical website.
 
 A website makes project evidence and explanations easy to review and share.
 
-### [Publish with GitHub Pages](/commons/tej3-4/linux-operating-systems/publish-github-pages.html)
+### [Publish with GitHub Pages](publish-github-pages.qmd)
 
 Publish a reviewed static site without exposing secrets or private files.
 
 Deployment turns local documentation into a durable public portfolio.
 
-### [Python Measurement Logging](/commons/tej3-4/linux-operating-systems/python-data-logging.html)
+### [Python Measurement Logging](python-data-logging.qmd)
 
 Write a small Python program that records measurements with units and timestamps.
 
 Logging supports sensor tests, performance studies, and repeatable experiments.
 
-### [Python Analysis and Curve Fitting](/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html)
+### [Python Analysis and Curve Fitting](python-analysis-curve-fitting.qmd)
 
 Inspect recorded data and fit a simple model.
 
 Analysis connects observations to engineering decisions and predictions.
 
-### [Networking, SSH, and tmux](/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html)
+### [Networking, SSH, and tmux](networking-ssh-tmux.qmd)
 
 Diagnose a network connection and manage a remote Linux session safely.
 
 Remote administration is common for servers, Raspberry Pi systems, and lab equipment.
 
-### [Power and Raspberry Pi Bridge](/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html)
+### [Power and Raspberry Pi Bridge](power-and-raspberry-pi-bridge.qmd)
 
 Connect computer power concepts to a future Raspberry Pi build without inventing a lab.
 

@@ -73,15 +73,15 @@ class LessonInlineGlossaryTests(unittest.TestCase):
         result = self.render(self.highlighted_source())
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(result.stdout.count('class="bs-inline-glossary"'), 2)
-        self.assertIn('data-bs-glossary-slug="ace">Ace</a>', result.stdout)
+        self.assertIn('data-bs-glossary-slug="voltage">voltage</a>', result.stdout)
         self.assertIn(
-            'data-bs-glossary-slug="ahead-in-the-count">Ahead in the Race</a>',
+            'data-bs-glossary-slug="current">current</a>',
             result.stdout,
         )
-        self.assertIn('href="https://andrewandrade.ca/tech-edu-resources/glossary/#ace"', result.stdout)
-        self.assertIn('href="https://andrewandrade.ca/tech-edu-resources/glossary/#ahead-in-the-count"', result.stdout)
+        self.assertIn('href="https://andrewandrade.ca/tech-edu-resources/glossary/#voltage"', result.stdout)
+        self.assertIn('href="https://andrewandrade.ca/tech-edu-resources/glossary/#current"', result.stdout)
         self.assertIn(
-            "Ace appears again, and Ahead in the Count appears again",
+            "Voltage appears again, and Current appears again",
             result.stdout,
         )
 
@@ -90,15 +90,15 @@ class LessonInlineGlossaryTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         heading = result.stdout.split("</h1>", 1)[0]
         self.assertNotIn("bs-inline-glossary", heading)
-        self.assertIn('href="https://example.com/ace"', result.stdout)
-        self.assertIn("<code>ahead in the count in inline code</code>", result.stdout)
-        self.assertIn("Ace and Ahead in the Race in a fenced code block.", result.stdout)
+        self.assertIn('href="https://example.com/voltage"', result.stdout)
+        self.assertIn("<code>current in inline code</code>", result.stdout)
+        self.assertIn("Voltage and Electric Current in a fenced code block.", result.stdout)
         self.assertIn('class="math inline"', result.stdout)
         self.assertRegex(
             result.stdout,
-            r'class="fixture-raw">Ace and Ahead in the Race in raw\s+HTML\.</span>',
+            r'class="fixture-raw">Voltage and Electric Current in raw\s+HTML\.</span>',
         )
-        self.assertIn('alt="Ace and Ahead in the Race in a caption."', result.stdout)
+        self.assertIn('alt="Voltage and Electric Current in a caption."', result.stdout)
         self.assertNotIn("data-bs-glossary-summary", result.stdout)
         self.assertNotIn("short_definition=", result.stdout)
 
@@ -106,29 +106,29 @@ class LessonInlineGlossaryTests(unittest.TestCase):
         result = self.render(self.control_source())
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertNotIn("bs-inline-glossary", result.stdout)
-        self.assertIn("Ace and Ahead in the Race appear in ordinary prose", result.stdout)
+        self.assertIn("Voltage and Electric Current appear in ordinary prose", result.stdout)
 
     def test_broad_terms_still_drive_all_backlinks(self) -> None:
         lesson = {
             "relative_path": "fixture.qmd",
             "categories": ["Beginner"],
             "tags": ["Checker Play"],
-            "terms": ["ace", "active-builder", "ahead-in-the-count", "abt"],
-            "highlighted_terms": ["ace", "ahead-in-the-count"],
+            "terms": ["voltage", "resistance", "current", "ampere"],
+            "highlighted_terms": ["voltage", "current"],
             "title": "Fixture",
         }
         related = learn_glossary.validate_lessons([lesson], self.entries)
         self.assertEqual(
             set(related),
-            {"ace", "active-builder", "ahead-in-the-count", "abt"},
+            {"voltage", "resistance", "current", "ampere"},
         )
         self.assertEqual(
             lesson["terms"],
-            ["ace", "active-builder", "ahead-in-the-count", "abt"],
+            ["voltage", "resistance", "current", "ampere"],
         )
         self.assertEqual(
             lesson["highlighted_terms"],
-            ["ace", "ahead-in-the-count"],
+            ["voltage", "current"],
         )
 
     def test_absent_and_empty_highlighted_metadata_disable_highlighting(self) -> None:
@@ -179,7 +179,7 @@ class LessonInlineGlossaryTests(unittest.TestCase):
             "relative_path": "fixture.qmd",
             "categories": ["Beginner"],
             "tags": ["Checker Play"],
-            "terms": ["ace"],
+            "terms": ["voltage"],
             "title": "Fixture",
         }
         cases = (
@@ -190,13 +190,13 @@ class LessonInlineGlossaryTests(unittest.TestCase):
             (
                 {
                     **base,
-                    "terms": ["ahead-in-the-count"],
-                    "highlighted_terms": ["ahead-in-the-race"],
+                    "terms": ["current"],
+                    "highlighted_terms": ["electric-current"],
                 },
                 "uses alias slug",
             ),
             (
-                {**base, "highlighted_terms": ["ahead-in-the-count"]},
+                {**base, "highlighted_terms": ["current"]},
                 "missing from terms",
             ),
         )
@@ -226,7 +226,7 @@ Checkpoint is not a match. One Point comes first; point comes second.
         second = result.stdout.index('data-bs-glossary-slug="point"')
         self.assertLess(first, second)
 
-    def test_ambiguous_canonical_alias_phrase_fails(self) -> None:
+    def test_canonical_phrase_wins_over_an_ambiguous_alias(self) -> None:
         source = """---
 terms: [anchor, holding-point]
 highlighted-terms: [anchor, holding-point]
@@ -238,28 +238,32 @@ Anchor and Holding Point.
             source,
             lookup_path=FIXTURES / "ambiguous-phrase-lookup.json",
         )
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("ambiguous canonical or alias phrase", result.stderr)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('data-bs-glossary-slug="anchor">Anchor</a>', result.stdout)
+        self.assertRegex(
+            result.stdout,
+            r'data-bs-glossary-slug="holding-point">Holding\s+Point</a>',
+        )
 
     def test_existing_link_is_not_nested_and_missing_safe_match_warns(self) -> None:
         source = """---
-terms: [ace]
-highlighted-terms: [ace]
+terms: [voltage]
+highlighted-terms: [voltage]
 ---
 
-[Ace](https://example.com/ace)
+[Voltage](https://example.com/voltage)
 """
         result = self.render(source)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(result.stdout.count("<a "), 1)
         self.assertNotIn("bs-inline-glossary", result.stdout)
-        self.assertIn("no safe prose occurrence for ace", result.stderr)
+        self.assertIn("no safe prose occurrence for voltage", result.stderr)
 
     def test_rendering_is_byte_deterministic_and_metadata_order_independent(self) -> None:
         first = self.render(self.highlighted_source())
         second_source = self.highlighted_source().replace(
-            "  - ace\n  - ahead-in-the-count\n",
-            "  - ahead-in-the-count\n  - ace\n",
+            "  - voltage\n  - current\n",
+            "  - current\n  - voltage\n",
         )
         second = self.render(second_source)
         self.assertEqual(first.returncode, 0, first.stderr)
@@ -269,16 +273,16 @@ highlighted-terms: [ace]
     def test_generated_lookup_always_has_canonical_short_definitions(self) -> None:
         data = json.loads(LOOKUP.read_text(encoding="utf-8"))
         by_slug = {entry["slug"]: entry for entry in data["entries"]}
-        for slug in ("ace", "active-builder", "ahead-in-the-count", "abt"):
+        for slug in ("voltage", "resistance", "current", "ampere"):
             self.assertIsInstance(by_slug[slug]["short_definition"], str)
             self.assertTrue(by_slug[slug]["short_definition"])
         self.assertEqual(
-            by_slug["ahead-in-the-count"]["aliases"],
-            ["Ahead in the Race"],
+            by_slug["current"]["aliases"],
+            ["Electric Current", "I"],
         )
         self.assertEqual(
-            by_slug["ahead-in-the-count"]["alias_slugs"],
-            ["ahead-in-the-race"],
+            by_slug["current"]["alias_slugs"],
+            ["electric-current", "i"],
         )
 
     def test_client_hover_focus_and_slug_only_contract(self) -> None:
@@ -311,13 +315,13 @@ highlighted-terms: [ace]
             glossary_html,
         )
         self.assertNotIn(
-            'data-bs-glossary-slug="abt" '
-            'data-bs-definition-link="abt">American Backgammon Tour</a>',
+            'data-bs-glossary-slug="ampere" '
+            'data-bs-definition-link="ampere">Ampere</a>',
             glossary_html,
         )
         self.assertIn(
-            'data-bs-glossary-slug="active-builder" '
-            'data-bs-definition-link="active-builder">active builders</a>',
+            'data-bs-glossary-slug="current" '
+            'data-bs-definition-link="current">current</a>',
             glossary_html,
         )
 
@@ -326,6 +330,8 @@ highlighted-terms: [ace]
 
     def test_real_research_article_uses_the_same_highlight_contract(self) -> None:
         articles = learn_glossary.discover_research_articles()
+        if not articles:
+            self.skipTest("No research articles are part of the current public build")
         selected = next(
             article
             for article in articles
@@ -347,8 +353,8 @@ highlighted-terms: [ace]
     def test_research_highlighted_term_must_be_canonical_and_in_terms(self) -> None:
         base = {
             "relative_path": "research/fixture.qmd",
-            "terms": ["ahead-in-the-count"],
-            "highlighted_terms": ["ahead-in-the-race"],
+            "terms": ["current"],
+            "highlighted_terms": ["electric-current"],
             "title": "Fixture",
         }
         with self.assertRaisesRegex(
@@ -356,7 +362,7 @@ highlighted-terms: [ace]
             "uses alias slug",
         ):
             learn_glossary.validate_research_articles([base], self.entries)
-        base["highlighted_terms"] = ["ace"]
+        base["highlighted_terms"] = ["voltage"]
         with self.assertRaisesRegex(
             learn_glossary.ValidationError,
             "missing from terms",

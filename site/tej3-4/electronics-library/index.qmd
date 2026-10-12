@@ -8,7 +8,7 @@ body-classes: "bs-learn-track-index"
 execute: {enabled: false}
 ---
 
-Each package coordinates concise notes, a teaching deck, five student questions, formula and calculator references, and an experiment or explicit no-lab decision. Restricted answer keys are identified without exposing their files.
+Each package coordinates concise notes, a teaching deck, five student questions, formula and calculator references, and an experiment or explicit no-lab decision. Restricted answer keys are identified without exposing their files. Use the [circuit foundations reference](../circuits/index.qmd) for significant figures, notation, core equations, and the GUESS method.
 
 {{< include ../../includes/generated/tej-circuits-electronics-toc.md >}}
 

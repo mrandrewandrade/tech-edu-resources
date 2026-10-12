@@ -53,7 +53,7 @@ Move from measurement and notation to progressively harder circuit analysis pack
 
 These methods explain power paths in computers, vehicles, robots, sensors, and control systems.
 
-### [Series Circuits](/commons/tej3-4/circuits/series-circuits.html)
+### [Series Circuits](circuits/series-circuits.qmd)
 
 Calculate current, voltage drops, resistance, and power in one-path circuits.
 
@@ -61,7 +61,7 @@ Series rules appear in sensor chains, voltage drops, and component strings.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Formula Reference</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Parallel Circuits](/commons/tej3-4/circuits/parallel-circuits.html)
+### [Parallel Circuits](circuits/parallel-circuits.qmd)
 
 Calculate branch currents, common voltage, equivalent resistance, and power.
 
@@ -69,7 +69,7 @@ Parallel paths keep loads operating independently in buildings, vehicles, and co
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Series-Parallel Circuits](/commons/tej3-4/circuits/series-parallel-circuits.html)
+### [Series-Parallel Circuits](circuits/series-parallel-circuits.qmd)
 
 Reduce mixed networks in stages and verify currents and voltages.
 
@@ -77,7 +77,7 @@ Real systems often combine shared paths with parallel loads.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Kirchhoff's Laws](/commons/tej3-4/circuits/kirchhoffs-laws.html)
+### [Kirchhoff's Laws](circuits/kirchhoffs-laws.qmd)
 
 Write current and voltage equations for circuits that cannot be reduced directly.
 
@@ -85,7 +85,7 @@ Kirchhoff analysis supports troubleshooting and more advanced network methods.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Linear Algebra for Circuits](/commons/tej3-4/circuits/linear-algebra-circuits.html)
+### [Linear Algebra for Circuits](circuits/linear-algebra-circuits.qmd)
 
 Solve simultaneous circuit equations by substitution, elimination, and matrices.
 
@@ -111,7 +111,7 @@ Choose, install, explore, administer, program, and measure a Linux computer in a
 
 Linux skills support repair, servers, embedded systems, networking, automation, and engineering tools.
 
-### [Choosing a Linux Distribution](/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html)
+### [Choosing a Linux Distribution](linux-operating-systems/choosing-a-distribution.qmd)
 
 Compare distribution families, desktop environments, hardware needs, software, and support.
 
@@ -119,7 +119,7 @@ A good choice matches the computer and the work instead of following a brand nam
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a></p>
 
-### [Install Linux Mint](/commons/tej3-4/linux-operating-systems/install-linux-mint.html)
+### [Install Linux Mint](linux-operating-systems/install-linux-mint.qmd)
 
 Prepare installation media, protect data, install Mint, and verify the result.
 
@@ -127,7 +127,7 @@ The procedure supports computer recovery and prepares a system for later project
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Assignment</a></p>
 
-### [Explore Linux](/commons/tej3-4/linux-operating-systems/explore-linux.html)
+### [Explore Linux](linux-operating-systems/explore-linux.qmd)
 
 Explore the desktop, accounts, files, terminal, and Bashcrawl while collecting evidence.
 
@@ -135,55 +135,55 @@ The activity builds confidence before students administer or program the system.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy">Assignment</a></p>
 
-### [Know Your Linux Computer](/commons/tej3-4/linux-operating-systems/know-your-computer.html)
+### [Know Your Linux Computer](linux-operating-systems/know-your-computer.qmd)
 
 Record hardware, operating-system, storage, and device information.
 
 A verified inventory supports troubleshooting, upgrades, and performance comparisons.
 
-### [Files, Terminal, and Permissions](/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html)
+### [Files, Terminal, and Permissions](linux-operating-systems/files-terminal-permissions.qmd)
 
 Navigate paths, inspect files, and use permissions safely.
 
 These skills are essential for administration, automation, and development.
 
-### [Git Version Control](/commons/tej3-4/linux-operating-systems/git-version-control.html)
+### [Git Version Control](linux-operating-systems/git-version-control.qmd)
 
 Record, inspect, and share changes with a safe Git workflow.
 
 Version control protects project history and supports collaboration.
 
-### [Build a Quarto Website](/commons/tej3-4/linux-operating-systems/quarto-website.html)
+### [Build a Quarto Website](linux-operating-systems/quarto-website.qmd)
 
 Turn Markdown, code, and media into a small technical website.
 
 A website makes project evidence and explanations easy to review and share.
 
-### [Publish with GitHub Pages](/commons/tej3-4/linux-operating-systems/publish-github-pages.html)
+### [Publish with GitHub Pages](linux-operating-systems/publish-github-pages.qmd)
 
 Publish a reviewed static site without exposing secrets or private files.
 
 Deployment turns local documentation into a durable public portfolio.
 
-### [Python Measurement Logging](/commons/tej3-4/linux-operating-systems/python-data-logging.html)
+### [Python Measurement Logging](linux-operating-systems/python-data-logging.qmd)
 
 Write a small Python program that records measurements with units and timestamps.
 
 Logging supports sensor tests, performance studies, and repeatable experiments.
 
-### [Python Analysis and Curve Fitting](/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html)
+### [Python Analysis and Curve Fitting](linux-operating-systems/python-analysis-curve-fitting.qmd)
 
 Inspect recorded data and fit a simple model.
 
 Analysis connects observations to engineering decisions and predictions.
 
-### [Networking, SSH, and tmux](/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html)
+### [Networking, SSH, and tmux](linux-operating-systems/networking-ssh-tmux.qmd)
 
 Diagnose a network connection and manage a remote Linux session safely.
 
 Remote administration is common for servers, Raspberry Pi systems, and lab equipment.
 
-### [Power and Raspberry Pi Bridge](/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html)
+### [Power and Raspberry Pi Bridge](linux-operating-systems/power-and-raspberry-pi-bridge.qmd)
 
 Connect computer power concepts to a future Raspberry Pi build without inventing a lab.
 

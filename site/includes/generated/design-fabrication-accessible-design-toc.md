@@ -5,25 +5,25 @@ Build accessibility checks into graphic design instead of adding them at the end
 
 Readable, well-described graphics work better on screens, in print, and on fabricated objects.
 
-### [Access and Alt Text](/commons/design-fabrication/accessible-design/access-and-alt-text.html)
+### [Access and Alt Text](access-and-alt-text.qmd)
 
 Describe the instructional purpose of an image and identify barriers to access.
 
 Useful descriptions preserve meaning for people who cannot use the image visually.
 
-### [Fonts and Text Effects](/commons/design-fabrication/accessible-design/fonts-and-text-effects.html)
+### [Fonts and Text Effects](fonts-and-text-effects.qmd)
 
 Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.
 
 Legible type survives small screens, printing, engraving, and viewing from a distance.
 
-### [Understanding Colour](/commons/design-fabrication/accessible-design/understanding-colour.html)
+### [Understanding Colour](understanding-colour.qmd)
 
 Use hue, saturation, value, opacity, and colour models deliberately.
 
 Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.
 
-### [Contrast and Output](/commons/design-fabrication/accessible-design/contrast-and-output.html)
+### [Contrast and Output](contrast-and-output.qmd)
 
 Check contrast, real size, file type, and final screen, print, or fabrication output.
 

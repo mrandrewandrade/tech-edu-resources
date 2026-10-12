@@ -71,6 +71,14 @@ website:
               href: "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd"
             - text: "Design and Fabrication Capstone"
               href: "design-fabrication/03-laser-cutting/08-capstone.qmd"
+        - text: "Fabrication Plate Builder"
+          href: "design-fabrication/tools/plate-builder/index.qmd"
+        - text: "Laser-Cut Leg & Support Builder"
+          href: "design-fabrication/tools/leg-builder/index.qmd"
+        - text: "Tool Organizer Gallery"
+          href: "design-fabrication/tools/tool-organizer-gallery/index.qmd"
+        - text: "Laser-Cutting Files and Resources"
+          href: "teaching-materials/laser-cutting/index.qmd"
     - id: "tej"
       title: "TEJ3/4 Computer Engineering"
       style: docked
@@ -85,7 +93,7 @@ website:
         - text: "Electronics Lesson Library"
           href: "tej3-4/electronics-library/index.qmd"
         - section: "Circuits and Electronics"
-          href: "tej3-4/circuits/index.qmd"
+          href: "tej3-4/electronics-library/index.qmd"
           contents:
             - text: "Series Circuits"
               href: "tej3-4/circuits/series-circuits.qmd"

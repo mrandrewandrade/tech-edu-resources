@@ -5,7 +5,7 @@ Move from measurement and notation to progressively harder circuit analysis pack
 
 These methods explain power paths in computers, vehicles, robots, sensors, and control systems.
 
-### [Series Circuits](/commons/tej3-4/circuits/series-circuits.html)
+### [Series Circuits](../circuits/series-circuits.qmd)
 
 Calculate current, voltage drops, resistance, and power in one-path circuits.
 
@@ -13,7 +13,7 @@ Series rules appear in sensor chains, voltage drops, and component strings.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Formula Reference</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Parallel Circuits](/commons/tej3-4/circuits/parallel-circuits.html)
+### [Parallel Circuits](../circuits/parallel-circuits.qmd)
 
 Calculate branch currents, common voltage, equivalent resistance, and power.
 
@@ -21,7 +21,7 @@ Parallel paths keep loads operating independently in buildings, vehicles, and co
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Series-Parallel Circuits](/commons/tej3-4/circuits/series-parallel-circuits.html)
+### [Series-Parallel Circuits](../circuits/series-parallel-circuits.qmd)
 
 Reduce mixed networks in stages and verify currents and voltages.
 
@@ -29,7 +29,7 @@ Real systems often combine shared paths with parallel loads.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Kirchhoff's Laws](/commons/tej3-4/circuits/kirchhoffs-laws.html)
+### [Kirchhoff's Laws](../circuits/kirchhoffs-laws.qmd)
 
 Write current and voltage equations for circuits that cannot be reduced directly.
 
@@ -37,7 +37,7 @@ Kirchhoff analysis supports troubleshooting and more advanced network methods.
 
 <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
 
-### [Linear Algebra for Circuits](/commons/tej3-4/circuits/linear-algebra-circuits.html)
+### [Linear Algebra for Circuits](../circuits/linear-algebra-circuits.qmd)
 
 Solve simultaneous circuit equations by substitution, elimination, and matrices.
 

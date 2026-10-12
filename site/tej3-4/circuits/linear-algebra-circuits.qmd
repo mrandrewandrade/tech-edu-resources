@@ -89,7 +89,7 @@ A large residual can flag a wrong sign, wrong measurement, or wiring fault.
 
 On the course calculator, the **Casio fx-991ES PLUS C**, press `MODE`, then `5` for **EQN**. Press `1` for two unknowns or `2` for three unknowns. Enter each coefficient in equation order and press `=` after every value; after the final coefficient, each additional `=` displays the next solution. This sequence is verified against the [official Casio fx-991ES PLUS C equation guide](https://support.casio.com/global/en/calc/manual/fx-115ESPLUS_991ESPLUSC_en/using_calculation_modes/equation_calculations.html).
 
-::: {.callout-note collapse="true" title="Question 2 — Solve a two-by-two system"}
+::: {.callout-note collapse="true" title="Question 2: Solve a two-by-two system"}
 Enter the rows $(10,-4,6)$ and $(-4,12,3)$.
 
 $$
@@ -111,7 +111,7 @@ $$ {#eq-linear-worked-q2-system}
 Substitution into both original rows gives a residual of approximately zero.
 :::
 
-::: {.callout-note collapse="true" title="Question 4 — Solve a three-by-three system"}
+::: {.callout-note collapse="true" title="Question 4: Solve a three-by-three system"}
 Enter the coefficient rows $(10,-2,0,5)$, $(-2,12,-3,6)$, and $(0,-3,9,4)$. The zeros keep the variable columns aligned.
 
 **Final answers:** $I_1=0.657\,\mathrm{mA}$, $I_2=0.786\,\mathrm{mA}$, and $I_3=0.706\,\mathrm{mA}$.

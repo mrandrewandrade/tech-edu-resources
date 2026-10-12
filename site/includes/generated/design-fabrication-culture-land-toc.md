@@ -5,13 +5,13 @@ Connect design decisions to place, story, seasons, and respectful observation.
 
 These activities help students notice context before deciding what to make.
 
-### [Grandmother Moon, Seasons, and Turtle's Back](/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html)
+### [Grandmother Moon, Seasons, and Turtle's Back](grandmother-moon-seasons.qmd)
 
 Read seasonal patterns and use a turtle-shell model to organize observations.
 
 Pattern, place, and careful observation support design and environmental learning.
 
-### [Land Lettermark](/commons/design-fabrication/culture-land-based-learning/land-lettermark.html)
+### [Land Lettermark](land-lettermark.qmd)
 
 Build a lettermark from a place-based observation and document the design choice.
 
