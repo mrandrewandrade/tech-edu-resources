@@ -1,0 +1,44 @@
+---
+title: "Publish Your Quarto Site with GitHub Pages"
+description: "Connect a local Git repository to GitHub and publish a tested Quarto website."
+categories: [Linux, GitHub, GitHub Pages, Quarto, publishing]
+---
+
+## Learning goals
+
+- I will be able to connect a local repository to a teacher-approved GitHub repository.
+- I will be able to push source changes and publish a Quarto site with GitHub Pages.
+- I will be able to keep passwords, tokens, private data, and unnecessary generated files out of Git.
+
+This is important because it enables me to share a reproducible technical portfolio and understand how source code becomes a public website.
+
+## Publish safely
+
+Before publishing, remove student numbers, private IP addresses, passwords, Wi-Fi information, tokens, and identifiable information about other students. Use a teacher-approved GitHub identity and repository.
+
+Follow this progression:
+
+1. Render and test the complete site locally.
+2. Run `git status` and inspect every file that will be committed.
+3. Commit the tested source.
+4. Create or connect the GitHub repository.
+5. Push the source branch.
+6. Publish using the classroom Quarto GitHub Pages method.
+7. Open the public URL in a private browser window and test every page.
+8. Make one small improvement, commit it, push it, and confirm the public site updates.
+
+The class will use one publishing method consistently. Do not switch between a `docs` folder, a `gh-pages` branch, and a GitHub Action unless the teacher changes the class workflow.
+
+## Evidence
+
+Submit the repository URL, public site URL, screenshot of a successful deployment, final commit ID, and a privacy checklist.
+
+## Extend your learning
+
+- Read the official [Quarto GitHub Pages guide](https://quarto.org/docs/publishing/github-pages.html).
+- Review the [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart).
+- Add a useful project README with build and preview instructions.
+
+## Review and reflect
+
+What is the difference between the GitHub repository and the public website? What evidence proves that the published site came from your latest commit?

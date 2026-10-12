@@ -1,0 +1,44 @@
+---
+title: "Networking, SSH, and tmux"
+description: "Move from local network identification to a teacher-approved remote terminal and shared tmux session."
+categories: [Linux, networking, SSH, tmux, remote administration]
+---
+
+## Learning goals
+
+- I will be able to identify my computer's hostname, IP address, gateway, and network connection.
+- I will be able to connect to an approved Linux host with SSH and verify where I am logged in.
+- I will be able to create, detach from, and rejoin a tmux session responsibly.
+
+This is important because it enables me to work on a Linux computer from another computer and collaborate in a terminal without confusing local and remote systems.
+
+## Progression
+
+1. Use the GUI to identify the active connection and local IPv4 address.
+2. Confirm the hostname and addresses with `hostname`, `ip address`, and `ip route`.
+3. Use `ping` only with a teacher-approved host to test reachability.
+4. Connect to the assigned host using `ssh user@host`.
+5. Immediately run `hostname`, `whoami`, and `pwd` so you know which computer, account, and directory you are controlling.
+6. Create a named tmux session, open a second window, detach, and reattach.
+7. Join a teacher-approved shared session with a partner. Communicate before typing because both users can affect the same terminal.
+8. Exit the remote session cleanly and confirm that you are back on the local computer.
+
+Do not scan the network, attempt unknown accounts, share passwords, expose SSH to the public internet, or use another student's session without permission.
+
+## Evidence
+
+Submit a simple local-to-remote network diagram, a command transcript with private details removed, and a reflection describing one benefit and one risk of a shared terminal.
+
+## Everyday Python project: Connection Check
+
+Create a short Python program that prints the computer hostname and checks whether one teacher-approved website is reachable. Handle success, timeout, and connection failure with clear messages. This is a service check, not a network scanner. Do not probe addresses, ports, devices, or accounts that the teacher did not provide.
+
+## Extend your learning
+
+- Read the [Ubuntu OpenSSH server guide](https://documentation.ubuntu.com/server/how-to/security/openssh-server/).
+- Work through the [tmux getting-started guide](https://github.com/tmux/tmux/wiki/Getting-Started).
+- Investigate SSH keys conceptually before replacing classroom password authentication.
+
+## Review and reflect
+
+How did you prove whether a command was running locally or remotely? Why is a tmux session different from screen sharing?

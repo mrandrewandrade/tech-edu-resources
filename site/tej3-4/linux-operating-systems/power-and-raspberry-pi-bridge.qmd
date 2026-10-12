@@ -1,0 +1,40 @@
+---
+title: "From Linux Computer to Raspberry Pi"
+description: "Use power calculations, system administration, networking, and Python readiness checks before moving to Raspberry Pi hardware."
+categories: [Linux, Raspberry Pi, power, networking, Python, systems]
+---
+
+## Learning goals
+
+- I will be able to calculate whether a proposed power supply is suitable for a computer or Raspberry Pi system.
+- I will be able to explain which Linux skills transfer directly to a Raspberry Pi.
+- I will be able to prepare a safe commissioning and recovery plan before connecting hardware.
+
+This is important because a Raspberry Pi is both a computer and an electronic system. Reliable projects need correct power, storage, networking, software, and documentation.
+
+## Readiness sequence
+
+Before receiving a Raspberry Pi, complete these checkpoints:
+
+1. Use voltage, current, and power relationships to check the required supply and connected loads.
+2. Explain connector polarity and why voltage compatibility is not enough without adequate current capacity.
+3. Identify the intended operating system image, storage device, hostname, accounts, and network method.
+4. Plan how the image and project files will be backed up and recovered.
+5. Decide which work happens locally and which work happens through SSH.
+6. Prepare a small Git repository with a README, Python test program, data folder, and Quarto documentation page.
+7. Draw the complete system boundary: supply, Pi, storage, network, sensors, outputs, and user.
+
+The first Raspberry Pi lab should reuse familiar skills: boot Linux, identify hardware, update safely, clone a repository, run Python, record data, connect with SSH, use tmux, and publish results. Only then should students add sensors and control outputs.
+
+## Evidence
+
+Submit the power calculations, system diagram, commissioning checklist, backup plan, and repository link. Include one risk and the control that reduces it.
+
+## Extend your learning
+
+- Explore the official [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/).
+- Compare a desktop Linux computer and Raspberry Pi using CPU architecture, RAM, storage, power, and I/O.
+
+## Review and reflect
+
+Which Linux skills will transfer unchanged to the Raspberry Pi? Which new risks appear when the computer is connected to physical electronics?

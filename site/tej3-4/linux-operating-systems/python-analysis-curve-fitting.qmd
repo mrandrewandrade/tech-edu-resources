@@ -1,0 +1,40 @@
+---
+title: "Analyze Data and Fit a Curve with Python"
+description: "Move from a CSV file to a labelled graph, a fitted model, residuals, and an evidence-based conclusion."
+categories: [Linux, Python, data analysis, plotting, curve fitting]
+---
+
+## Learning goals
+
+- I will be able to load and check measurement data before graphing it.
+- I will be able to create a graph with labels, units, and a useful title.
+- I will be able to fit an appropriate model and explain what its parameters mean.
+
+This is important because it enables me to turn a table of measurements into a testable relationship instead of choosing a trendline only because it looks close.
+
+## Progression
+
+1. Load the CSV produced in the previous lesson.
+2. Check row count, column names, units, missing values, and impossible values.
+3. Plot the raw points before fitting anything.
+4. Begin with a linear model using a teacher dataset such as voltage versus current.
+5. Plot the fitted line on the same axes.
+6. Calculate residuals: measured value minus predicted value.
+7. Explain the slope, intercept, fit quality, and whether the model is physically reasonable.
+8. Publish the graph and interpretation on the Quarto site, then commit and push the update.
+
+Later datasets may use polynomial or nonlinear models, but the model must come from the system and evidence, not from trying random equations.
+
+## Evidence
+
+Submit the code, labelled graph, model equation, residual plot or table, and a paragraph connecting the result to the original measurement problem.
+
+## Extend your learning
+
+- Use the [Matplotlib quick-start guide](https://matplotlib.org/stable/users/explain/quick_start.html).
+- Compare a fit with and without one suspicious measurement, then justify whether that point should remain.
+- Add uncertainty or repeated trials when the measurement process supports them.
+
+## Review and reflect
+
+What does the slope represent in your system? What can a residual plot reveal that a fitted line alone may hide?

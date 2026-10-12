@@ -1,0 +1,81 @@
+---
+title: "Know Your Linux Computer"
+description: "Identify the computer's processor, memory, storage, graphics, and network hardware through the GUI and terminal."
+categories: [Linux, hardware, system information, htop, command line]
+---
+
+## Learning goals
+
+- I will be able to identify the main hardware in my assigned computer.
+- I will be able to find the same information with graphical tools and terminal commands.
+- I will be able to explain the difference between installed hardware and current resource use.
+
+This is important because it enables me to describe a computer accurately, decide whether software will run well, and notice when a system is under unusual load.
+
+## Start with the GUI
+
+Open **System Info** from the Linux Mint menu. Record the operating system, Xfce version, processor, installed memory, graphics device, and storage information. Then open **Task Manager** and observe CPU and memory use while no large application is open.
+
+Open a browser and Software Manager. Watch what changes. A computer can have 8 GB of RAM installed without having all 8 GB available because Linux and open applications are using some of it.
+
+## Confirm it in the terminal
+
+Run one command at a time. Read the output before continuing.
+
+```bash
+lscpu
+free -h
+lsblk
+df -h
+lspci
+ip address
+```
+
+Example `free -h` output:
+
+```text
+               total        used        free      available
+Mem:           7.7Gi       2.1Gi       3.8Gi          5.3Gi
+Swap:          2.0Gi          0B       2.0Gi
+```
+
+Example `lsblk` output:
+
+```text
+NAME   SIZE TYPE MOUNTPOINTS
+sda  238.5G disk
+├─sda1  512M part /boot/efi
+└─sda2  238G part /
+```
+
+Your device names and values will differ. Focus on what each column means rather than copying the example.
+
+Use `lscpu` for processor information, `free -h` for memory, `lsblk` for storage devices, `df -h` for used and available space, `lspci` for internal hardware, and `ip address` for network interfaces.
+
+Install **htop** from Software Manager if it is not already available, then run:
+
+```bash
+htop
+```
+
+Observe the processor meters, memory meter, process list, and load average. Press `q` to quit. Do not end a process unless your teacher approves it.
+
+## Submit
+
+Add a **Know your computer** section to your Linux Google Doc. Include a two-column hardware inventory, one System Info screenshot, one `htop` screenshot, and a short comparison of what was easier to learn from the GUI and terminal.
+
+## Everyday Python project: My Computer Report
+
+Create a small Python program named `computer_report.py`. It should print the operating system, computer name, processor description, Python version, and total, used, and free space in your home drive. Begin with Python's built-in `platform` and `shutil` modules so the program also works in WSL and on a Mac.
+
+Run it from the terminal and compare its answers with System Info and the Linux commands above. Add the program to your Git repository later. Your report must not include passwords, serial numbers, public IP addresses, access tokens, or private information about another student.
+
+## Extend your learning
+
+- Read the [Linux Mint user guide](https://linuxmint-user-guide.readthedocs.io/en/latest/).
+- Explore the [htop project documentation](https://htop.dev/).
+- Investigate one unfamiliar device listed by `lspci` and explain its purpose.
+
+## Review and reflect
+
+You identified CPU, RAM, storage, graphics, and networking information in two ways. Which measurement changed while you opened applications, and which hardware facts stayed the same?

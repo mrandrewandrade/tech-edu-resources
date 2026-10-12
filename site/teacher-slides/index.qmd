@@ -75,6 +75,36 @@ Filters are saved in the page URL as you select them, so you can copy the addres
     class="bs-slide-card"
     data-slide-card
     data-collection="General"
+    data-courses="TEJ"
+    data-tags="Linux|Linux Mint|WSL|user accounts|terminal|Git|Bashcrawl|operating systems"
+    data-search="Linux start here distribution choice Debian Ubuntu Linux Mint Xfce Arch over 90 independent WSL Windows home macOS Terminal installation accounts Bashcrawl commands outputs TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit" aria-label="Open Linux Start Here slides">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true">
+        <span class="bs-slide-thumb-kicker">General</span>
+        <strong>LINUX</strong>
+        <span>Mint + WSL + Bashcrawl</span>
+      </span>
+      <img src="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/export/png?id=1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM&amp;pageid=slide_01" alt="Linux Start Here title slide" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Linux Start Here: Mint, WSL, Accounts and Bashcrawl</a></h2>
+      <p class="bs-slide-card-description">A basic step-by-step deck for choosing a distribution, the independent Arch option, installing Linux Mint, using WSL at home, creating three accounts, meeting the terminal, and starting Bashcrawl.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="Linux">Linux</button><button type="button" data-slide-card-tag="WSL">WSL</button><button type="button" data-slide-card-tag="Bashcrawl">Bashcrawl</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Open Google Slides</a>
+        <a class="bs-slide-open" href="../tej3-4/linux-operating-systems/index.qmd">Open Linux notes</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk">Installation handout</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/edit?usp=drivesdk">Explore Linux handout</a>
+      </div>
+    </div>
+  </article>
+
+  <article
+    class="bs-slide-card"
+    data-slide-card
+    data-collection="General"
     data-courses="TTJ|TTS"
     data-tags="automotive fluids|vehicle inspection|engine oil|coolant|brake fluid|power steering|transmission fluid|washer fluid|maintenance"
     data-search="six fluids under the hood automotive basics vehicle inspection engine oil coolant brake fluid power steering transmission fluid washer fluid level condition reservoir dipstick maintenance colouring handout fillable worksheet TTJ TTS">

@@ -19,7 +19,7 @@ You need:
 - the assigned classroom computer;
 - a Linux Mint 22.3 “Zena” Xfce USB installer signed out from your teacher;
 - the classroom Wi-Fi credentials; and
-- your lab log.
+- the editable [Linux Mint Installation Digital Submission Google Doc](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk). The [website preview](install-linux-mint-submission.qmd) explains the same deliverables.
 
 Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.
 
@@ -30,6 +30,33 @@ The teacher, with help from student volunteers, prepared the bootable USB drives
 An ISO cannot simply be copied onto a USB like an ordinary file. A tool such as Etcher or Rufus writes the image in a form the computer can start from. This process erases the USB drive, so do not try it with a personal drive unless its contents are safely backed up.
 
 For this lab, **sign out a prepared USB from your teacher**. Record its number if your class uses numbered drives, and return it when the installation is complete.
+
+### Working at home: Windows and Mac options
+
+In class, we are installing Linux Mint directly on approved classroom computers. Do not erase or dual boot a family computer for this course.
+
+If you use Windows 11 or a supported Windows 10 computer at home, the recommended option is **Windows Subsystem for Linux 2 (WSL 2) with Ubuntu**. It gives you a real Linux command line without replacing Windows. Ask the computer owner for permission because installation requires administrator access and may require a restart.
+
+1. Open **PowerShell as Administrator**.
+2. Run:
+
+```powershell
+wsl --install
+```
+
+3. Restart Windows if asked.
+4. Open **Ubuntu** from the Start menu.
+5. Create a private Linux username and password. The password will not appear while you type it.
+6. Return to PowerShell and verify the installation:
+
+```powershell
+wsl --list --verbose
+wsl --status
+```
+
+If WSL is already installed but Ubuntu is missing, run `wsl --list --online`, then `wsl --install -d Ubuntu`. Never use `wsl --unregister` for this course because it permanently deletes that WSL distribution and its files. Follow the official [Microsoft WSL installation guide](https://learn.microsoft.com/windows/wsl/install) if your screen differs.
+
+On a Mac, use the built-in **Terminal** for transferable work such as files, Git, Quarto, Python and SSH. macOS is Unix-like, but it is not Linux. Complete Linux-specific hardware, package, permission and administration activities on the classroom Linux computer or an approved remote Linux host. Apple's [Terminal User Guide](https://support.apple.com/guide/terminal/welcome/mac) is a useful reference.
 
 ## 1. Start the live system
 
@@ -181,9 +208,13 @@ If you finish early, choose one optional challenge:
 - find one accessibility setting that could make the computer easier for someone to use; or
 - compare the Linux desktop with Windows and list one similarity and one difference.
 
-## Lab log
+## Google Classroom submission
 
-Record the following in your lab log before you leave:
+Complete the editable [Linux Mint Installation Digital Submission Google Doc](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk). You can also read the [website preview of the handout](install-linux-mint-submission.qmd).
+
+Submit **one Google Doc** in Google Classroom. The submission page gives you the required headings, screenshot, reflection questions, final checklist and **Above and beyond** section.
+
+Record the following evidence before you leave:
 
 | Prompt | Your evidence |
 |:--|:--|
@@ -197,6 +228,13 @@ Record the following in your lab log before you leave:
 | Optional discovery or customization | |
 
 Show the installed system and completed lab log to your teacher.
+
+## Extend your learning
+
+- Review the [Linux Start Here class slides](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit) for the distribution, installation, WSL, account and Bashcrawl sequence.
+- Visit the [Linux Mint documentation](https://linuxmint.com/documentation.php) to explore official desktop and system guides.
+- Explore the [Learn Linux TV YouTube channel](https://www.youtube.com/@LearnLinuxTV) for beginner Linux demonstrations. Choose a beginner video and record one new idea in the **Above and beyond** section of your Google Doc.
+- Try the [Ubuntu command-line tutorial](https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/) when you are ready to move beyond the desktop.
 
 ## Sources and image credit
 
