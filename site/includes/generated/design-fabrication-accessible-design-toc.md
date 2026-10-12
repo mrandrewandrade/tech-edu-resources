@@ -27,28 +27,28 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Access and Alt Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="access-and-alt-text.html">Access and Alt Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Describe the instructional purpose of an image and identify barriers to access.</p>
-        <p><strong>Why it matters:</strong> Useful descriptions preserve meaning for people who cannot use the image visually.</p>
+        <p>Useful descriptions preserve meaning for people who cannot use the image visually.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Fonts and Text Effects&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.&quot;, &quot;Legible type survives small screens, printing, engraving, and viewing from a distance.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Fonts and Text Effects"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="fonts-and-text-effects.html">Fonts and Text Effects</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.</p>
-        <p><strong>Why it matters:</strong> Legible type survives small screens, printing, engraving, and viewing from a distance.</p>
+        <p>Legible type survives small screens, printing, engraving, and viewing from a distance.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understanding Colour&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Use hue, saturation, value, opacity, and colour models deliberately.&quot;, &quot;Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Understanding Colour"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="understanding-colour.html">Understanding Colour</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use hue, saturation, value, opacity, and colour models deliberately.</p>
-        <p><strong>Why it matters:</strong> Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.</p>
+        <p>Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Contrast and Output&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Check contrast, real size, file type, and final screen, print, or fabrication output.&quot;, &quot;Testing catches problems before a graphic is shared or made.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Contrast and Output"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="contrast-and-output.html">Contrast and Output</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Check contrast, real size, file type, and final screen, print, or fabrication output.</p>
-        <p><strong>Why it matters:</strong> Testing catches problems before a graphic is shared or made.</p>
+        <p>Testing catches problems before a graphic is shared or made.</p>
       </details>
     </article>
   </div>

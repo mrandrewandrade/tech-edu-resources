@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Robotics and Control Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Robotics and Control Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The public package sequence is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect diagrams, code, measurements, and physical tests.</p>
+        <p>It will connect diagrams, code, measurements, and physical tests.</p>
       </details>
     </article>
   </div>

@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Technology Lab Safety"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Technology Lab Safety <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The consolidated safety lesson is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect hazard recognition to classroom procedures.</p>
+        <p>It will connect hazard recognition to classroom procedures.</p>
       </details>
     </article>
   </div>

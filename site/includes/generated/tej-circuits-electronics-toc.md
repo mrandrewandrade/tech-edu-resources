@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Series Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/series-circuits.html">Series Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Calculate current, voltage drops, resistance, and power in one-path circuits.</p>
-        <p><strong>Why it matters:</strong> Series rules appear in sensor chains, voltage drops, and component strings.</p>
+        <p>Series rules appear in sensor chains, voltage drops, and component strings.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Formula Reference</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -35,7 +35,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/parallel-circuits.html">Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Calculate branch currents, common voltage, equivalent resistance, and power.</p>
-        <p><strong>Why it matters:</strong> Parallel paths keep loads operating independently in buildings, vehicles, and computers.</p>
+        <p>Parallel paths keep loads operating independently in buildings, vehicles, and computers.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -43,7 +43,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Series-Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/series-parallel-circuits.html">Series-Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Reduce mixed networks in stages and verify currents and voltages.</p>
-        <p><strong>Why it matters:</strong> Real systems often combine shared paths with parallel loads.</p>
+        <p>Real systems often combine shared paths with parallel loads.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -51,7 +51,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Kirchhoff&#x27;s Laws"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/kirchhoffs-laws.html">Kirchhoff&#x27;s Laws</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Write current and voltage equations for circuits that cannot be reduced directly.</p>
-        <p><strong>Why it matters:</strong> Kirchhoff analysis supports troubleshooting and more advanced network methods.</p>
+        <p>Kirchhoff analysis supports troubleshooting and more advanced network methods.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -59,7 +59,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Linear Algebra for Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/linear-algebra-circuits.html">Linear Algebra for Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Solve simultaneous circuit equations by substitution, elimination, and matrices.</p>
-        <p><strong>Why it matters:</strong> The method prepares students for college and university network analysis.</p>
+        <p>The method prepares students for college and university network analysis.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>

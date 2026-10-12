@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Computer Systems Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Computer Systems Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The current computer-systems notes remain available while their package order is reconciled.</p>
-        <p><strong>Why it matters:</strong> The final sequence will connect hardware evidence to recovery and commissioning.</p>
+        <p>The final sequence will connect hardware evidence to recovery and commissioning.</p>
       </details>
     </article>
   </div>

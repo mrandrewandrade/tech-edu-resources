@@ -75,6 +75,8 @@ assert.match(scrollSource, /createTransitionNotice\(currentLesson, followingLess
 assert.match(scrollSource, /createEndState\(currentLesson\)/);
 assert.match(scrollSource, /createErrorState\(followingLesson, attemptLoad\)/);
 assert.match(scrollSource, /window\.history\.replaceState/);
+assert.match(scrollSource, /window\.history\.pushState/);
+assert.match(scrollSource, /window\.addEventListener\("popstate"/);
 assert.match(scrollSource, /document\.title = record\.documentTitle/);
 assert.match(scrollSource, /setActiveSidebar\(sidebar, record\.route/);
 assert.match(scrollSource, /replaceTocContents\(activeTocElement\(\), record\.toc\)/);
@@ -189,10 +191,38 @@ assert.equal(
   "/tej3-4/01-number-systems/01-significant-figures.html",
   "root-mounted previews strip the repository base"
 );
+assert.equal(
+  scroll.historyActionForLesson("/learn/first/", "/learn/first/", "push"),
+  "none"
+);
+assert.equal(
+  scroll.historyActionForLesson("/learn/first/", "/learn/middle.html", "push"),
+  "push"
+);
+assert.equal(
+  scroll.historyActionForLesson("/learn/first/", "/learn/first/", "replace"),
+  "replace"
+);
+assert.equal(
+  scroll.historyActionForLesson("/learn/first/", "/learn/middle.html", "none"),
+  "none"
+);
+assert.equal(scroll.isAtDocumentEnd(1064, 900, 1964), true);
+assert.equal(scroll.isAtDocumentEnd(800, 900, 1964), false);
 
 const first = scroll.findCurrentLesson(manifest, "/learn/first/index.html");
 const middle = scroll.findCurrentLesson(manifest, "/learn/middle.html");
 const finalLesson = scroll.findCurrentLesson(manifest, "/learn/second-track/");
+assert.equal(
+  scroll.lessonRecordIndexForRoute(
+    [
+      { route: "/learn/first/" },
+      { route: "/learn/middle.html" }
+    ],
+    "/tech-edu-resources/learn/middle.html"
+  ),
+  1
+);
 assert.equal(first.sequence_index, 0);
 assert.equal(scroll.nextLesson(manifest, first), middle);
 assert.equal(scroll.nextLesson(manifest, middle), null);

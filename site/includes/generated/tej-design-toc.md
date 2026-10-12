@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for N.I.C.E. Design Process"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">N.I.C.E. Design Process <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use the General Design &amp; Fabrication learning path.</p>
-        <p><strong>Why it matters:</strong> The shared process prevents duplicate design notes.</p>
+        <p>The shared process prevents duplicate design notes.</p>
       </details>
     </article>
   </div>

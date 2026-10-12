@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Course Orientation"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Course Orientation <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>A concise orientation lesson is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect the site, classroom workflow, and project evidence.</p>
+        <p>It will connect the site, classroom workflow, and project evidence.</p>
       </details>
     </article>
   </div>

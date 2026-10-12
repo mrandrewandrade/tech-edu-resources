@@ -27,14 +27,14 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Grandmother Moon, Seasons, and Turtle&#x27;s Back"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="grandmother-moon-seasons.html">Grandmother Moon, Seasons, and Turtle&#x27;s Back</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Read seasonal patterns and use a turtle-shell model to organize observations.</p>
-        <p><strong>Why it matters:</strong> Pattern, place, and careful observation support design and environmental learning.</p>
+        <p>Pattern, place, and careful observation support design and environmental learning.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="culture-land" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Land Lettermark&quot;, &quot;Culture and Land-Based Learning&quot;]" data-bs-search-body="[&quot;Build a lettermark from a place-based observation and document the design choice.&quot;, &quot;The activity connects visual identity, audience, and responsibility to place.&quot;, &quot;TAS Slides&quot;, &quot;TEJ Slides&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Land Lettermark"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="land-lettermark.html">Land Lettermark</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Build a lettermark from a place-based observation and document the design choice.</p>
-        <p><strong>Why it matters:</strong> The activity connects visual identity, audience, and responsibility to place.</p>
+        <p>The activity connects visual identity, audience, and responsibility to place.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1IuxxzckOhtdac5ZUhM-p5MgA0eHCq2Kb6yKLBXnOECI/edit">TAS Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/presentation/d/18YyZQx0m79TxRGB4GeChARpDlBSWNPFWGT17kHPL0kA/edit">TEJ Slides</a></p>
       </details>
     </article>

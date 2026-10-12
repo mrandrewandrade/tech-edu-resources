@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Engineering Preparation Track"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Engineering Preparation Track <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use the concise track overview and its current notes and problem sets.</p>
-        <p><strong>Why it matters:</strong> The page connects existing packages to recognizable engineering systems.</p>
+        <p>The page connects existing packages to recognizable engineering systems.</p>
       </details>
     </article>
   </div>

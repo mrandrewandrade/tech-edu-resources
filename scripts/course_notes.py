@@ -500,7 +500,7 @@ def build_hub_fragment(
                     '      <details class="bs-learn-catalogue-description">',
                     f'        <summary aria-label="Show description for {html.escape(title, quote=True)}"><span class="bs-learn-catalogue-title-row">{title_markup}<span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>',
                     f'        <p>{html.escape(str(lesson["summary"]))}</p>',
-                    f'        <p><strong>Why it matters:</strong> {html.escape(str(lesson["use"]))}</p>',
+                    f'        <p>{html.escape(str(lesson["use"]))}</p>',
                 ]
             )
             badges = _resource_badges(lesson.get("resources", []))

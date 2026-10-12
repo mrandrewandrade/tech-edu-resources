@@ -27,35 +27,35 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Build the Nameplate Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="01-nameplate-text-photopea.html">Build the Nameplate Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Make an 11 by 4 inch file, leave room for a logo, and choose readable type.</p>
-        <p><strong>Why it matters:</strong> Correct size, spacing, and legibility prepare a design for real output.</p>
+        <p>Correct size, spacing, and legibility prepare a design for real output.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Warm-Up: Trace the AA Logo&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Rebuild a simple hand-drawn mark with four clean vector lines.&quot;, &quot;The warm-up introduces editable vector shapes, visual checking, and SVG export.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Warm-Up: Trace the AA Logo"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="rough-sketch-to-svg-photopea.html">Warm-Up: Trace the AA Logo</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Rebuild a simple hand-drawn mark with four clean vector lines.</p>
-        <p><strong>Why it matters:</strong> The warm-up introduces editable vector shapes, visual checking, and SVG export.</p>
+        <p>The warm-up introduces editable vector shapes, visual checking, and SVG export.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Trace a Multi-Layer Logo&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Trace a landscape sketch as four named vector shapes and export an animation-ready SVG.&quot;, &quot;Separate layers make complex artwork easier to revise, colour, fabricate, and animate.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Trace a Multi-Layer Logo"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="02b-advanced-multilayer-tracing-photopea.html">Trace a Multi-Layer Logo</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Trace a landscape sketch as four named vector shapes and export an animation-ready SVG.</p>
-        <p><strong>Why it matters:</strong> Separate layers make complex artwork easier to revise, colour, fabricate, and animate.</p>
+        <p>Separate layers make complex artwork easier to revise, colour, fabricate, and animate.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Combine Logo and Nameplate&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Combine the ANDRADE logo and nameplate, then export the complete design.&quot;, &quot;The worked example shows alignment, proportion, and file-export decisions.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Combine Logo and Nameplate"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-combine-logo-nameplate.html">Combine Logo and Nameplate</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Combine the ANDRADE logo and nameplate, then export the complete design.</p>
-        <p><strong>Why it matters:</strong> The worked example shows alignment, proportion, and file-export decisions.</p>
+        <p>The worked example shows alignment, proportion, and file-export decisions.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Design Your Own Name Tag&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Apply the tutorial skills to an original name-and-logo design and defend the choices.&quot;, &quot;The project connects digital design, accessibility checks, and fabrication output.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Design Your Own Name Tag"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../03-laser-cutting/01-name-logo.html">Design Your Own Name Tag</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Apply the tutorial skills to an original name-and-logo design and defend the choices.</p>
-        <p><strong>Why it matters:</strong> The project connects digital design, accessibility checks, and fabrication output.</p>
+        <p>The project connects digital design, accessibility checks, and fabrication output.</p>
       </details>
     </article>
   </div>

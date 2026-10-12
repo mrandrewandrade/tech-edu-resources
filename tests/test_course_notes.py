@@ -87,6 +87,8 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertIn('data-bs-learn-search', design)
         self.assertIn('aria-label="Show description for Understand the Situation"', design)
         self.assertIn('data-bs-learn-result-count aria-live="polite"', design)
+        self.assertIn("A clear situation prevents a team from solving the wrong problem.", design)
+        self.assertNotIn("Why it matters:", design)
         self.assertNotIn("## Project path and tools", design)
         self.assertLess(design.index("Culture and Land-Based Learning"), design.index("N.I.C.E. Design Process"))
         self.assertLess(design.index("N.I.C.E. Design Process"), design.index("Logo Design in Photopea"))

@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Programming and Interfacing Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Programming and Interfacing Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The coordinated Python and hardware sequence is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect runnable examples to sensors and outputs.</p>
+        <p>It will connect runnable examples to sensors and outputs.</p>
       </details>
     </article>
   </div>

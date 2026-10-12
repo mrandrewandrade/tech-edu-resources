@@ -27,35 +27,35 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Make It Stand"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/02-make-it-stand.html">Make It Stand</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Compare ways to support a flat design as a stable object.</p>
-        <p><strong>Why it matters:</strong> Support geometry is useful for signs, displays, holders, and models.</p>
+        <p>Support geometry is useful for signs, displays, holders, and models.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Measure and Place&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Measure a real object and place openings and supports from evidence.&quot;, &quot;Measured placement improves access, spacing, and fit.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Measure and Place"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/03-measure-place.html">Measure and Place</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Measure a real object and place openings and supports from evidence.</p>
-        <p><strong>Why it matters:</strong> Measured placement improves access, spacing, and fit.</p>
+        <p>Measured placement improves access, spacing, and fit.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Material Fit and Calibration&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Test material thickness, kerf, and fit before cutting a full project.&quot;, &quot;Calibration reduces wasted material and unreliable joints.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Material Fit and Calibration"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/04-material-fit-calibration.html">Material Fit and Calibration</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Test material thickness, kerf, and fit before cutting a full project.</p>
-        <p><strong>Why it matters:</strong> Calibration reduces wasted material and unreliable joints.</p>
+        <p>Calibration reduces wasted material and unreliable joints.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assemblies and Hybrid Fabrication&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Combine cut parts, fasteners, and other processes into an assembly.&quot;, &quot;Hybrid fabrication expands what a flat-sheet process can make.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Assemblies and Hybrid Fabrication"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html">Assemblies and Hybrid Fabrication</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Combine cut parts, fasteners, and other processes into an assembly.</p>
-        <p><strong>Why it matters:</strong> Hybrid fabrication expands what a flat-sheet process can make.</p>
+        <p>Hybrid fabrication expands what a flat-sheet process can make.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Wall and Bench Tool Module&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Design a visible, labelled, stable holder for a wall or workbench.&quot;, &quot;Good tool storage improves access, accountability, and shop safety.&quot;, &quot;Project Gallery&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Wall and Bench Tool Module"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/07-wall-bench-module.html">Wall and Bench Tool Module</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Design a visible, labelled, stable holder for a wall or workbench.</p>
-        <p><strong>Why it matters:</strong> Good tool storage improves access, accountability, and shop safety.</p>
+        <p>Good tool storage improves access, accountability, and shop safety.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
       </details>
     </article>
@@ -63,21 +63,21 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Design and Fabrication Capstone"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/08-capstone.html">Design and Fabrication Capstone</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Plan, prototype, test, and document an original fabricated solution.</p>
-        <p><strong>Why it matters:</strong> The capstone combines evidence, design decisions, fabrication, and evaluation.</p>
+        <p>The capstone combines evidence, design decisions, fabrication, and evaluation.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;CNC Machining&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;CNC machining resources are in development.&quot;, &quot;The future sequence will connect digital models to subtractive manufacturing.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for CNC Machining"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">CNC Machining <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>CNC machining resources are in development.</p>
-        <p><strong>Why it matters:</strong> The future sequence will connect digital models to subtractive manufacturing.</p>
+        <p>The future sequence will connect digital models to subtractive manufacturing.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;3D Printing&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;3D-printing resources are in development.&quot;, &quot;The future sequence will cover slicing, orientation, supports, and functional tolerances.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for 3D Printing"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">3D Printing <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>3D-printing resources are in development.</p>
-        <p><strong>Why it matters:</strong> The future sequence will cover slicing, orientation, supports, and functional tolerances.</p>
+        <p>The future sequence will cover slicing, orientation, supports, and functional tolerances.</p>
       </details>
     </article>
   </div>

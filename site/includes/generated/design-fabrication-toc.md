@@ -37,14 +37,14 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Grandmother Moon, Seasons, and Turtle&#x27;s Back"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="culture-land-based-learning/grandmother-moon-seasons.html">Grandmother Moon, Seasons, and Turtle&#x27;s Back</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Read seasonal patterns and use a turtle-shell model to organize observations.</p>
-        <p><strong>Why it matters:</strong> Pattern, place, and careful observation support design and environmental learning.</p>
+        <p>Pattern, place, and careful observation support design and environmental learning.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="culture-land" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Land Lettermark&quot;, &quot;Culture and Land-Based Learning&quot;]" data-bs-search-body="[&quot;Build a lettermark from a place-based observation and document the design choice.&quot;, &quot;The activity connects visual identity, audience, and responsibility to place.&quot;, &quot;TAS Slides&quot;, &quot;TEJ Slides&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Land Lettermark"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="culture-land-based-learning/land-lettermark.html">Land Lettermark</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Build a lettermark from a place-based observation and document the design choice.</p>
-        <p><strong>Why it matters:</strong> The activity connects visual identity, audience, and responsibility to place.</p>
+        <p>The activity connects visual identity, audience, and responsibility to place.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1IuxxzckOhtdac5ZUhM-p5MgA0eHCq2Kb6yKLBXnOECI/edit">TAS Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/presentation/d/18YyZQx0m79TxRGB4GeChARpDlBSWNPFWGT17kHPL0kA/edit">TEJ Slides</a></p>
       </details>
     </article>
@@ -59,7 +59,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Understand the Situation"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/situation.html">Understand the Situation</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Separate facts, assumptions, and interpretations before defining the problem.</p>
-        <p><strong>Why it matters:</strong> A clear situation prevents a team from solving the wrong problem.</p>
+        <p>A clear situation prevents a team from solving the wrong problem.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -67,7 +67,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Record User Needs"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/user-needs.html">Record User Needs</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Observe and record what people actually need in the setting.</p>
-        <p><strong>Why it matters:</strong> Evidence about users guides safer and more useful designs.</p>
+        <p>Evidence about users guides safer and more useful designs.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -75,7 +75,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Necessities and Nice-to-Haves"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/necessities-nice-to-haves.html">Necessities and Nice-to-Haves</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Separate non-negotiable constraints from preferences.</p>
-        <p><strong>Why it matters:</strong> The distinction keeps safety and function visible when trade-offs appear.</p>
+        <p>The distinction keeps safety and function visible when trade-offs appear.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -83,7 +83,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Rank Priorities"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/rank-priorities.html">Rank Priorities</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Rank preferences so the most valuable improvements stay visible.</p>
-        <p><strong>Why it matters:</strong> Priorities help a team compare ideas without treating every wish as equal.</p>
+        <p>Priorities help a team compare ideas without treating every wish as equal.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -91,7 +91,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Investigate and Inquire"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/investigate-inquire.html">Investigate and Inquire</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Research, observe, measure, collect precedents, and generate several ideas.</p>
-        <p><strong>Why it matters:</strong> Investigation replaces guesses with evidence and expands the possible solutions.</p>
+        <p>Investigation replaces guesses with evidence and expands the possible solutions.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho/copy">Worksheet</a></p>
       </details>
     </article>
@@ -99,7 +99,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Create and Communicate"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/create-communicate.html">Create and Communicate</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Develop an idea, make the proposal understandable, pitch it, and collect feedback.</p>
-        <p><strong>Why it matters:</strong> Clear communication lets other people test, question, and improve a proposal.</p>
+        <p>Clear communication lets other people test, question, and improve a proposal.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs/copy">Worksheet</a></p>
       </details>
     </article>
@@ -107,7 +107,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Evaluate and Repeat"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/evaluate-repeat.html">Evaluate and Repeat</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Score ideas against necessities and priorities, then revise the strongest option.</p>
-        <p><strong>Why it matters:</strong> Evaluation turns feedback and test results into defensible improvements.</p>
+        <p>Evaluation turns feedback and test results into defensible improvements.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1O_j4gcsUT0ELFpgJk3GiyG6B1l5brKPko-6lO8HQPfk/copy">Worksheet</a></p>
       </details>
     </article>
@@ -115,7 +115,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Supply Chain and Life Cycle"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/supply-chain-life-cycle.html">Supply Chain and Life Cycle</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Follow a product through materials, manufacture, use, repair, reuse, and disposal.</p>
-        <p><strong>Why it matters:</strong> Life-cycle thinking reveals costs and effects that are easy to miss at fabrication time.</p>
+        <p>Life-cycle thinking reveals costs and effects that are easy to miss at fabrication time.</p>
       </details>
     </article>
   </div>
@@ -129,35 +129,35 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Build the Nameplate Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="logo-design/01-nameplate-text-photopea.html">Build the Nameplate Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Make an 11 by 4 inch file, leave room for a logo, and choose readable type.</p>
-        <p><strong>Why it matters:</strong> Correct size, spacing, and legibility prepare a design for real output.</p>
+        <p>Correct size, spacing, and legibility prepare a design for real output.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Warm-Up: Trace the AA Logo&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Rebuild a simple hand-drawn mark with four clean vector lines.&quot;, &quot;The warm-up introduces editable vector shapes, visual checking, and SVG export.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Warm-Up: Trace the AA Logo"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="logo-design/rough-sketch-to-svg-photopea.html">Warm-Up: Trace the AA Logo</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Rebuild a simple hand-drawn mark with four clean vector lines.</p>
-        <p><strong>Why it matters:</strong> The warm-up introduces editable vector shapes, visual checking, and SVG export.</p>
+        <p>The warm-up introduces editable vector shapes, visual checking, and SVG export.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Trace a Multi-Layer Logo&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Trace a landscape sketch as four named vector shapes and export an animation-ready SVG.&quot;, &quot;Separate layers make complex artwork easier to revise, colour, fabricate, and animate.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Trace a Multi-Layer Logo"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="logo-design/02b-advanced-multilayer-tracing-photopea.html">Trace a Multi-Layer Logo</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Trace a landscape sketch as four named vector shapes and export an animation-ready SVG.</p>
-        <p><strong>Why it matters:</strong> Separate layers make complex artwork easier to revise, colour, fabricate, and animate.</p>
+        <p>Separate layers make complex artwork easier to revise, colour, fabricate, and animate.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Combine Logo and Nameplate&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Combine the ANDRADE logo and nameplate, then export the complete design.&quot;, &quot;The worked example shows alignment, proportion, and file-export decisions.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Combine Logo and Nameplate"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="logo-design/03-combine-logo-nameplate.html">Combine Logo and Nameplate</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Combine the ANDRADE logo and nameplate, then export the complete design.</p>
-        <p><strong>Why it matters:</strong> The worked example shows alignment, proportion, and file-export decisions.</p>
+        <p>The worked example shows alignment, proportion, and file-export decisions.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Design Your Own Name Tag&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Apply the tutorial skills to an original name-and-logo design and defend the choices.&quot;, &quot;The project connects digital design, accessibility checks, and fabrication output.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Design Your Own Name Tag"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/01-name-logo.html">Design Your Own Name Tag</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Apply the tutorial skills to an original name-and-logo design and defend the choices.</p>
-        <p><strong>Why it matters:</strong> The project connects digital design, accessibility checks, and fabrication output.</p>
+        <p>The project connects digital design, accessibility checks, and fabrication output.</p>
       </details>
     </article>
   </div>
@@ -171,28 +171,28 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Access and Alt Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="accessible-design/access-and-alt-text.html">Access and Alt Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Describe the instructional purpose of an image and identify barriers to access.</p>
-        <p><strong>Why it matters:</strong> Useful descriptions preserve meaning for people who cannot use the image visually.</p>
+        <p>Useful descriptions preserve meaning for people who cannot use the image visually.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Fonts and Text Effects&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.&quot;, &quot;Legible type survives small screens, printing, engraving, and viewing from a distance.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Fonts and Text Effects"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="accessible-design/fonts-and-text-effects.html">Fonts and Text Effects</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.</p>
-        <p><strong>Why it matters:</strong> Legible type survives small screens, printing, engraving, and viewing from a distance.</p>
+        <p>Legible type survives small screens, printing, engraving, and viewing from a distance.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understanding Colour&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Use hue, saturation, value, opacity, and colour models deliberately.&quot;, &quot;Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Understanding Colour"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="accessible-design/understanding-colour.html">Understanding Colour</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use hue, saturation, value, opacity, and colour models deliberately.</p>
-        <p><strong>Why it matters:</strong> Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.</p>
+        <p>Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Contrast and Output&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Check contrast, real size, file type, and final screen, print, or fabrication output.&quot;, &quot;Testing catches problems before a graphic is shared or made.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Contrast and Output"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="accessible-design/contrast-and-output.html">Contrast and Output</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Check contrast, real size, file type, and final screen, print, or fabrication output.</p>
-        <p><strong>Why it matters:</strong> Testing catches problems before a graphic is shared or made.</p>
+        <p>Testing catches problems before a graphic is shared or made.</p>
       </details>
     </article>
   </div>
@@ -206,35 +206,35 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Make It Stand"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/02-make-it-stand.html">Make It Stand</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Compare ways to support a flat design as a stable object.</p>
-        <p><strong>Why it matters:</strong> Support geometry is useful for signs, displays, holders, and models.</p>
+        <p>Support geometry is useful for signs, displays, holders, and models.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Measure and Place&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Measure a real object and place openings and supports from evidence.&quot;, &quot;Measured placement improves access, spacing, and fit.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Measure and Place"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/03-measure-place.html">Measure and Place</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Measure a real object and place openings and supports from evidence.</p>
-        <p><strong>Why it matters:</strong> Measured placement improves access, spacing, and fit.</p>
+        <p>Measured placement improves access, spacing, and fit.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Material Fit and Calibration&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Test material thickness, kerf, and fit before cutting a full project.&quot;, &quot;Calibration reduces wasted material and unreliable joints.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Material Fit and Calibration"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/04-material-fit-calibration.html">Material Fit and Calibration</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Test material thickness, kerf, and fit before cutting a full project.</p>
-        <p><strong>Why it matters:</strong> Calibration reduces wasted material and unreliable joints.</p>
+        <p>Calibration reduces wasted material and unreliable joints.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assemblies and Hybrid Fabrication&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Combine cut parts, fasteners, and other processes into an assembly.&quot;, &quot;Hybrid fabrication expands what a flat-sheet process can make.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Assemblies and Hybrid Fabrication"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/05-assemblies-hybrid-fabrication.html">Assemblies and Hybrid Fabrication</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Combine cut parts, fasteners, and other processes into an assembly.</p>
-        <p><strong>Why it matters:</strong> Hybrid fabrication expands what a flat-sheet process can make.</p>
+        <p>Hybrid fabrication expands what a flat-sheet process can make.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Wall and Bench Tool Module&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Design a visible, labelled, stable holder for a wall or workbench.&quot;, &quot;Good tool storage improves access, accountability, and shop safety.&quot;, &quot;Project Gallery&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Wall and Bench Tool Module"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/07-wall-bench-module.html">Wall and Bench Tool Module</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Design a visible, labelled, stable holder for a wall or workbench.</p>
-        <p><strong>Why it matters:</strong> Good tool storage improves access, accountability, and shop safety.</p>
+        <p>Good tool storage improves access, accountability, and shop safety.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
       </details>
     </article>
@@ -242,21 +242,21 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Design and Fabrication Capstone"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/08-capstone.html">Design and Fabrication Capstone</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Plan, prototype, test, and document an original fabricated solution.</p>
-        <p><strong>Why it matters:</strong> The capstone combines evidence, design decisions, fabrication, and evaluation.</p>
+        <p>The capstone combines evidence, design decisions, fabrication, and evaluation.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;CNC Machining&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;CNC machining resources are in development.&quot;, &quot;The future sequence will connect digital models to subtractive manufacturing.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for CNC Machining"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">CNC Machining <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>CNC machining resources are in development.</p>
-        <p><strong>Why it matters:</strong> The future sequence will connect digital models to subtractive manufacturing.</p>
+        <p>The future sequence will connect digital models to subtractive manufacturing.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;3D Printing&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;3D-printing resources are in development.&quot;, &quot;The future sequence will cover slicing, orientation, supports, and functional tolerances.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for 3D Printing"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">3D Printing <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>3D-printing resources are in development.</p>
-        <p><strong>Why it matters:</strong> The future sequence will cover slicing, orientation, supports, and functional tolerances.</p>
+        <p>The future sequence will cover slicing, orientation, supports, and functional tolerances.</p>
       </details>
     </article>
   </div>

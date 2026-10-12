@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Networking Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Networking Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Core networking appears in the Linux path while a dedicated module is developed.</p>
-        <p><strong>Why it matters:</strong> The future module will add switching, routing, and service design.</p>
+        <p>The future module will add switching, routing, and service design.</p>
       </details>
     </article>
   </div>

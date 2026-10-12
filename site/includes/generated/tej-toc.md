@@ -43,7 +43,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Course Orientation"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Course Orientation <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>A concise orientation lesson is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect the site, classroom workflow, and project evidence.</p>
+        <p>It will connect the site, classroom workflow, and project evidence.</p>
       </details>
     </article>
   </div>
@@ -57,7 +57,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Technology Lab Safety"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Technology Lab Safety <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The consolidated safety lesson is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect hazard recognition to classroom procedures.</p>
+        <p>It will connect hazard recognition to classroom procedures.</p>
       </details>
     </article>
   </div>
@@ -71,7 +71,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for N.I.C.E. Design Process"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">N.I.C.E. Design Process <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use the General Design &amp; Fabrication learning path.</p>
-        <p><strong>Why it matters:</strong> The shared process prevents duplicate design notes.</p>
+        <p>The shared process prevents duplicate design notes.</p>
       </details>
     </article>
   </div>
@@ -85,7 +85,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Build a Technical Portfolio"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Build a Technical Portfolio <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The portfolio lesson is planned.</p>
-        <p><strong>Why it matters:</strong> It will support class assessment and future applications.</p>
+        <p>It will support class assessment and future applications.</p>
       </details>
     </article>
   </div>
@@ -99,7 +99,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Series Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="circuits/series-circuits.html">Series Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Calculate current, voltage drops, resistance, and power in one-path circuits.</p>
-        <p><strong>Why it matters:</strong> Series rules appear in sensor chains, voltage drops, and component strings.</p>
+        <p>Series rules appear in sensor chains, voltage drops, and component strings.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Formula Reference</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -107,7 +107,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="circuits/parallel-circuits.html">Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Calculate branch currents, common voltage, equivalent resistance, and power.</p>
-        <p><strong>Why it matters:</strong> Parallel paths keep loads operating independently in buildings, vehicles, and computers.</p>
+        <p>Parallel paths keep loads operating independently in buildings, vehicles, and computers.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -115,7 +115,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Series-Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="circuits/series-parallel-circuits.html">Series-Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Reduce mixed networks in stages and verify currents and voltages.</p>
-        <p><strong>Why it matters:</strong> Real systems often combine shared paths with parallel loads.</p>
+        <p>Real systems often combine shared paths with parallel loads.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -123,7 +123,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Kirchhoff&#x27;s Laws"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="circuits/kirchhoffs-laws.html">Kirchhoff&#x27;s Laws</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Write current and voltage equations for circuits that cannot be reduced directly.</p>
-        <p><strong>Why it matters:</strong> Kirchhoff analysis supports troubleshooting and more advanced network methods.</p>
+        <p>Kirchhoff analysis supports troubleshooting and more advanced network methods.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -131,7 +131,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Linear Algebra for Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="circuits/linear-algebra-circuits.html">Linear Algebra for Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Solve simultaneous circuit equations by substitution, elimination, and matrices.</p>
-        <p><strong>Why it matters:</strong> The method prepares students for college and university network analysis.</p>
+        <p>The method prepares students for college and university network analysis.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
       </details>
     </article>
@@ -146,7 +146,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Computer Systems Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Computer Systems Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The current computer-systems notes remain available while their package order is reconciled.</p>
-        <p><strong>Why it matters:</strong> The final sequence will connect hardware evidence to recovery and commissioning.</p>
+        <p>The final sequence will connect hardware evidence to recovery and commissioning.</p>
       </details>
     </article>
   </div>
@@ -160,7 +160,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Choosing a Linux Distribution"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/choosing-a-distribution.html">Choosing a Linux Distribution</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Compare distribution families, desktop environments, hardware needs, software, and support.</p>
-        <p><strong>Why it matters:</strong> A good choice matches the computer and the work instead of following a brand name.</p>
+        <p>A good choice matches the computer and the work instead of following a brand name.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a></p>
       </details>
     </article>
@@ -168,7 +168,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Install Linux Mint"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/install-linux-mint.html">Install Linux Mint</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Prepare installation media, protect data, install Mint, and verify the result.</p>
-        <p><strong>Why it matters:</strong> The procedure supports computer recovery and prepares a system for later projects.</p>
+        <p>The procedure supports computer recovery and prepares a system for later projects.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Assignment</a></p>
       </details>
     </article>
@@ -176,7 +176,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Explore Linux"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/explore-linux.html">Explore Linux</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Explore the desktop, accounts, files, terminal, and Bashcrawl while collecting evidence.</p>
-        <p><strong>Why it matters:</strong> The activity builds confidence before students administer or program the system.</p>
+        <p>The activity builds confidence before students administer or program the system.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy">Assignment</a></p>
       </details>
     </article>
@@ -184,63 +184,63 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Know Your Linux Computer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/know-your-computer.html">Know Your Linux Computer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Record hardware, operating-system, storage, and device information.</p>
-        <p><strong>Why it matters:</strong> A verified inventory supports troubleshooting, upgrades, and performance comparisons.</p>
+        <p>A verified inventory supports troubleshooting, upgrades, and performance comparisons.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Files, Terminal, and Permissions&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Navigate paths, inspect files, and use permissions safely.&quot;, &quot;These skills are essential for administration, automation, and development.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Files, Terminal, and Permissions"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/files-terminal-permissions.html">Files, Terminal, and Permissions</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Navigate paths, inspect files, and use permissions safely.</p>
-        <p><strong>Why it matters:</strong> These skills are essential for administration, automation, and development.</p>
+        <p>These skills are essential for administration, automation, and development.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Git Version Control&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Record, inspect, and share changes with a safe Git workflow.&quot;, &quot;Version control protects project history and supports collaboration.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Git Version Control"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/git-version-control.html">Git Version Control</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Record, inspect, and share changes with a safe Git workflow.</p>
-        <p><strong>Why it matters:</strong> Version control protects project history and supports collaboration.</p>
+        <p>Version control protects project history and supports collaboration.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build a Quarto Website&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Turn Markdown, code, and media into a small technical website.&quot;, &quot;A website makes project evidence and explanations easy to review and share.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Build a Quarto Website"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/quarto-website.html">Build a Quarto Website</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Turn Markdown, code, and media into a small technical website.</p>
-        <p><strong>Why it matters:</strong> A website makes project evidence and explanations easy to review and share.</p>
+        <p>A website makes project evidence and explanations easy to review and share.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Publish with GitHub Pages&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Publish a reviewed static site without exposing secrets or private files.&quot;, &quot;Deployment turns local documentation into a durable public portfolio.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Publish with GitHub Pages"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/publish-github-pages.html">Publish with GitHub Pages</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Publish a reviewed static site without exposing secrets or private files.</p>
-        <p><strong>Why it matters:</strong> Deployment turns local documentation into a durable public portfolio.</p>
+        <p>Deployment turns local documentation into a durable public portfolio.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Measurement Logging&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Write a small Python program that records measurements with units and timestamps.&quot;, &quot;Logging supports sensor tests, performance studies, and repeatable experiments.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Python Measurement Logging"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/python-data-logging.html">Python Measurement Logging</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Write a small Python program that records measurements with units and timestamps.</p>
-        <p><strong>Why it matters:</strong> Logging supports sensor tests, performance studies, and repeatable experiments.</p>
+        <p>Logging supports sensor tests, performance studies, and repeatable experiments.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Analysis and Curve Fitting&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Inspect recorded data and fit a simple model.&quot;, &quot;Analysis connects observations to engineering decisions and predictions.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Python Analysis and Curve Fitting"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/python-analysis-curve-fitting.html">Python Analysis and Curve Fitting</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Inspect recorded data and fit a simple model.</p>
-        <p><strong>Why it matters:</strong> Analysis connects observations to engineering decisions and predictions.</p>
+        <p>Analysis connects observations to engineering decisions and predictions.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Networking, SSH, and tmux&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Diagnose a network connection and manage a remote Linux session safely.&quot;, &quot;Remote administration is common for servers, Raspberry Pi systems, and lab equipment.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Networking, SSH, and tmux"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/networking-ssh-tmux.html">Networking, SSH, and tmux</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Diagnose a network connection and manage a remote Linux session safely.</p>
-        <p><strong>Why it matters:</strong> Remote administration is common for servers, Raspberry Pi systems, and lab equipment.</p>
+        <p>Remote administration is common for servers, Raspberry Pi systems, and lab equipment.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Power and Raspberry Pi Bridge&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Connect computer power concepts to a future Raspberry Pi build without inventing a lab.&quot;, &quot;The calculation bridge prepares students to reason about supplies, loads, and interfaces.&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Power and Raspberry Pi Bridge"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="linux-operating-systems/power-and-raspberry-pi-bridge.html">Power and Raspberry Pi Bridge</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Connect computer power concepts to a future Raspberry Pi build without inventing a lab.</p>
-        <p><strong>Why it matters:</strong> The calculation bridge prepares students to reason about supplies, loads, and interfaces.</p>
+        <p>The calculation bridge prepares students to reason about supplies, loads, and interfaces.</p>
       </details>
     </article>
   </div>
@@ -254,7 +254,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Networking Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Networking Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Core networking appears in the Linux path while a dedicated module is developed.</p>
-        <p><strong>Why it matters:</strong> The future module will add switching, routing, and service design.</p>
+        <p>The future module will add switching, routing, and service design.</p>
       </details>
     </article>
   </div>
@@ -268,7 +268,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Programming and Interfacing Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Programming and Interfacing Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The coordinated Python and hardware sequence is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect runnable examples to sensors and outputs.</p>
+        <p>It will connect runnable examples to sensors and outputs.</p>
       </details>
     </article>
   </div>
@@ -282,7 +282,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Robotics and Control Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Robotics and Control Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The public package sequence is planned.</p>
-        <p><strong>Why it matters:</strong> It will connect diagrams, code, measurements, and physical tests.</p>
+        <p>It will connect diagrams, code, measurements, and physical tests.</p>
       </details>
     </article>
   </div>
@@ -296,7 +296,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Engineering Preparation Track"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Engineering Preparation Track <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use the concise track overview and its current notes and problem sets.</p>
-        <p><strong>Why it matters:</strong> The page connects existing packages to recognizable engineering systems.</p>
+        <p>The page connects existing packages to recognizable engineering systems.</p>
       </details>
     </article>
   </div>

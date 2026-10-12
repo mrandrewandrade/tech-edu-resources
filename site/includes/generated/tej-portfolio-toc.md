@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Build a Technical Portfolio"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Build a Technical Portfolio <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The portfolio lesson is planned.</p>
-        <p><strong>Why it matters:</strong> It will support class assessment and future applications.</p>
+        <p>It will support class assessment and future applications.</p>
       </details>
     </article>
   </div>

@@ -27,7 +27,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Understand the Situation"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="situation.html">Understand the Situation</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Separate facts, assumptions, and interpretations before defining the problem.</p>
-        <p><strong>Why it matters:</strong> A clear situation prevents a team from solving the wrong problem.</p>
+        <p>A clear situation prevents a team from solving the wrong problem.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -35,7 +35,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Record User Needs"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="user-needs.html">Record User Needs</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Observe and record what people actually need in the setting.</p>
-        <p><strong>Why it matters:</strong> Evidence about users guides safer and more useful designs.</p>
+        <p>Evidence about users guides safer and more useful designs.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -43,7 +43,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Necessities and Nice-to-Haves"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="necessities-nice-to-haves.html">Necessities and Nice-to-Haves</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Separate non-negotiable constraints from preferences.</p>
-        <p><strong>Why it matters:</strong> The distinction keeps safety and function visible when trade-offs appear.</p>
+        <p>The distinction keeps safety and function visible when trade-offs appear.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -51,7 +51,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Rank Priorities"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="rank-priorities.html">Rank Priorities</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Rank preferences so the most valuable improvements stay visible.</p>
-        <p><strong>Why it matters:</strong> Priorities help a team compare ideas without treating every wish as equal.</p>
+        <p>Priorities help a team compare ideas without treating every wish as equal.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
@@ -59,7 +59,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Investigate and Inquire"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="investigate-inquire.html">Investigate and Inquire</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Research, observe, measure, collect precedents, and generate several ideas.</p>
-        <p><strong>Why it matters:</strong> Investigation replaces guesses with evidence and expands the possible solutions.</p>
+        <p>Investigation replaces guesses with evidence and expands the possible solutions.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho/copy">Worksheet</a></p>
       </details>
     </article>
@@ -67,7 +67,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Create and Communicate"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="create-communicate.html">Create and Communicate</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Develop an idea, make the proposal understandable, pitch it, and collect feedback.</p>
-        <p><strong>Why it matters:</strong> Clear communication lets other people test, question, and improve a proposal.</p>
+        <p>Clear communication lets other people test, question, and improve a proposal.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs/copy">Worksheet</a></p>
       </details>
     </article>
@@ -75,7 +75,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Evaluate and Repeat"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="evaluate-repeat.html">Evaluate and Repeat</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Score ideas against necessities and priorities, then revise the strongest option.</p>
-        <p><strong>Why it matters:</strong> Evaluation turns feedback and test results into defensible improvements.</p>
+        <p>Evaluation turns feedback and test results into defensible improvements.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1O_j4gcsUT0ELFpgJk3GiyG6B1l5brKPko-6lO8HQPfk/copy">Worksheet</a></p>
       </details>
     </article>
@@ -83,7 +83,7 @@
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Supply Chain and Life Cycle"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="supply-chain-life-cycle.html">Supply Chain and Life Cycle</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Follow a product through materials, manufacture, use, repair, reuse, and disposal.</p>
-        <p><strong>Why it matters:</strong> Life-cycle thinking reveals costs and effects that are easy to miss at fabrication time.</p>
+        <p>Life-cycle thinking reveals costs and effects that are easy to miss at fabrication time.</p>
       </details>
     </article>
   </div>
