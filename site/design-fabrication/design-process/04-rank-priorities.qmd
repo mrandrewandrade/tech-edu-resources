@@ -1,0 +1,29 @@
+---
+title: "Rank the Priorities"
+description: "Use a simple scale to decide which optional improvements matter most."
+sidebar: design-fabrication
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [priority, criterion, necessity, nice-to-have]
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goal
+
+I can rank nice-to-haves and explain which improvements should guide the design first.
+
+## Use the 1-10 scale
+
+- **10:** necessity; the design fails without it.
+- **7-9:** high-value improvement.
+- **4-6:** useful improvement.
+- **1-3:** minor preference.
+
+Give each nice-to-have a score and one short reason. Do not give every item a 9. Ranking only helps when it shows real trade-offs.
+
+## Compare two ideas
+
+Check every idea against all necessities first. Then compare how well each idea addresses the highest-ranked nice-to-haves. The score supports a decision; it does not replace judgement or user feedback.
+
+[Complete the priorities section of the N.I.C.E. Needs Worksheet](https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/edit).
+

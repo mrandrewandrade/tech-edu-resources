@@ -2,21 +2,14 @@
 title: "Photopea: Nameplate and Logo"
 description: "Make nameplate text, trace a rough logo, and combine both into one clean design."
 sidebar: design-fabrication
-body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
-toc: true
+page-layout: full
+body-classes: "ter-design-fabrication bs-learn-track-index"
+toc: false
 execute:
   enabled: false
 ---
 
-## Learning goals
-
-By the end of this page:
-
-- I will be able to make a clear nameplate layout.
-- I will be able to rebuild a rough sketch as clean, editable vector artwork.
-- I will be able to combine the logo and name and export useful files.
-
-This is important because the fastest way to learn a design tool is to make something and revise it.
+Learn Photopea by making a nameplate and logo. Complete the lessons in order, then make your own design.
 
 ## Choose a tool
 
@@ -28,16 +21,40 @@ This is important because the fastest way to learn a design tool is to make some
 
 Use Photopea unless your teacher approves another tool. Keep the editable source file and export a PNG or JPG for use.
 
-## Start here
+## Lessons
 
-Complete the three short walkthroughs, then make your own version:
+::: {.ter-path-grid}
+::: {.ter-path-card}
+### 1. Build the Nameplate Text
 
-1. [Build the Nameplate Text](01-nameplate-text-photopea.qmd): make an 11 × 4 inch file, leave room for a logo, and choose a readable font.
-2. [Trace a Rough Logo](rough-sketch-to-svg-photopea.qmd): turn a photographed drawing into clean, editable vector lines.
-3. [Combine the Logo and Nameplate](03-combine-logo-nameplate.qmd): follow the worked ANDRADE example and export the complete design.
-4. [Design Your Own Name + Logo Name Tag](../03-laser-cutting/01-name-logo.qmd): use the tutorial skills to make and defend an original design.
+Make an 11 × 4 inch file, leave room for a logo, and choose a readable font.
 
-Use [Accessible Design](../accessible-design/index.qmd) to compare font examples, zoom out to test readability, check contrast, and add useful alt text.
+[Open Lesson 1](01-nameplate-text-photopea.qmd)
+:::
+::: {.ter-path-card}
+### 2. Trace a Rough Logo
+
+Turn a photographed drawing into clean, editable vector lines.
+
+[Open Lesson 2](rough-sketch-to-svg-photopea.qmd)
+:::
+::: {.ter-path-card}
+### 3. Combine Logo & Nameplate
+
+Follow the worked ANDRADE example and export the complete design.
+
+[Open Lesson 3](03-combine-logo-nameplate.qmd)
+:::
+::: {.ter-path-card}
+### 4. Design Your Own Name Tag
+
+Use the tutorial skills to make and defend an original name-and-logo design.
+
+[Open the project](../03-laser-cutting/01-name-logo.qmd)
+:::
+:::
+
+Use [Accessible Design](../accessible-design/index.qmd) to compare fonts, test readability, check contrast, and write useful alt text.
 
 ## Make something
 

@@ -1,510 +1,89 @@
 ---
 title: "N.I.C.E. Design Process"
-description: "A human-centred design process for understanding people, defining needs, testing ideas, using feedback, and improving."
+subtitle: "Understand the situation, design for real needs, test ideas, and improve."
+description: "A visual table of contents for the N.I.C.E. human-centred design process."
 sidebar: design-fabrication
-body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
-toc: true
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute:
   enabled: false
 ---
 
-## Learning goals
+The N.I.C.E. process keeps the user and the evidence in view from the first question to the next version.
 
-By the end of this page:
+![The N.I.C.E. design process grows from a clearly described situation through Needs, Inquiry, Create and Communicate, and Evaluate. The cycle repeats as evidence improves the design.](../../assets/nice-design-process/lighthouse-garden.png){fig-alt="A lighthouse garden illustration shows the N.I.C.E. design cycle repeating upward from a rock labelled Situation."}
 
-- I can separate facts, assumptions, and interpretations before deciding what the problem is.
-- I can describe a need from the user's point of view instead of jumping straight to a product.
-- I can investigate alternatives and make an evidence-based design choice.
-- I can make an idea visible enough for people to react to it.
-- I can use feedback and testing to decide what to change next.
+## What you will learn
 
-The N.I.C.E. process is a simple way to practise **human-centred design**.
+- describe the situation without mixing facts, assumptions, and interpretations;
+- identify the user's needs, necessities, and priorities;
+- investigate several ideas before choosing one;
+- communicate an idea clearly enough to receive useful feedback; and
+- evaluate evidence, improve the design, and begin the next cycle.
 
-Human-centred design starts with the people affected by a problem. The goal is not to invent something first and then search for a reason to use it. The goal is to understand what people are trying to do, what gets in their way, and what would make the situation better.
+## Lessons
 
-> **Understand people before products. Make assumptions visible. Build enough to learn. Improve from evidence.**
+::: {.ter-path-grid}
+::: {.ter-path-card}
+### 1. Situation
 
-N.I.C.E. gives us four repeatable stages:
+Separate facts, assumptions, and interpretations before naming the problem.
 
-**N - Notice Needs and Necessities**  
-**I - Investigate and Inquire**  
-**C - Create and Communicate**  
-**E - Evaluate and Reflect**
+[Open the lesson](01-situation.qmd)
+:::
+::: {.ter-path-card}
+### 2. User Needs
 
-It is a cycle, not a straight line. You will often discover that your first understanding of the problem was incomplete. That is not failure. That is the design process working.
+Describe what the user is trying to do without choosing the product first.
 
-## Start with the situation
+[Open the lesson](02-user-needs.qmd)
+:::
+::: {.ter-path-card}
+### 3. Necessities & Nice-to-Haves
 
-<figure>
-  <img src="https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/export/png?id=1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ&amp;pageid=p3" alt="Situation step of the N.I.C.E. design process, separating facts, assumptions, and interpretations" style="display:block;max-width:960px;width:100%;margin-inline:auto">
-  <figcaption>Start by separating what happened from what you think it means.</figcaption>
-</figure>
+Separate what must work from what would improve the design.
 
-Good design starts by understanding reality before trying to change it.
+[Open the lesson](03-necessities-nice-to-haves.qmd)
+:::
+::: {.ter-path-card}
+### 4. Rank the Priorities
 
-A useful way to slow down your thinking is to separate the situation into three parts.
+Score the nice-to-haves so the most useful improvements guide the design.
 
-### Facts
+[Open the lesson](04-rank-priorities.qmd)
+:::
+::: {.ter-path-card}
+### 5. Investigate & Inquire
 
-Facts are things you can directly observe, measure, or support with reliable evidence.
+Brainstorm, study existing ideas, ask useful questions, and choose what to test.
 
-Examples:
+[Open the lesson](05-investigate-inquire.qmd)
+:::
+::: {.ter-path-card}
+### 6. Create & Communicate
 
-- Six students said they wanted music at the class celebration.
-- The class has a limited amount of time.
-- A material is 3 mm thick.
-- The user could not read the label from across the room.
+Show the idea, pitch it clearly, and ask for specific feedback.
 
-A fact should be specific enough that another person could check it.
+[Open the lesson](06-create-communicate.qmd)
+:::
+::: {.ter-path-card}
+### 7. Evaluate & Repeat
 
-### Assumptions
+Compare the evidence with the situation and priorities, then improve the next version.
 
-Assumptions are things you are currently treating as true but have not confirmed.
+[Open the lesson](07-evaluate-repeat.qmd)
+:::
+::: {.ter-path-card}
+### 8. Supply Chain & Life Cycle
 
-Examples:
+Follow materials, making, use, repair, and end-of-life decisions beyond the first prototype.
 
-- Everyone probably wants the same kind of music.
-- People will remember to bring their own materials.
-- The user will understand this symbol.
-- This part will probably be strong enough.
+[Open the lesson](08-supply-chain-life-cycle.qmd)
+:::
+:::
 
-Assumptions are not automatically bad. Design always involves uncertainty. The important skill is knowing which ideas are assumptions so you can test them.
+## Class materials
 
-### Interpretations
-
-Interpretations are the meaning, judgement, explanation, or story you attach to the facts.
-
-Example:
-
-**Fact:** three people asked where the tools belong.  
-**Interpretation:** the storage system is confusing.
-
-The interpretation might be correct, but it is still an interpretation. Maybe the labels are unclear. Maybe the students missed the demonstration. Maybe the tools were moved.
-
-Separating these categories keeps you from treating your first explanation as the truth.
-
-| Ask | Example |
-|---|---|
-| What happened? | Three people asked where the tools go. |
-| What do I know from evidence? | The same question was asked three times. |
-| What am I assuming? | Everyone finds the storage confusing. |
-| What am I interpreting? | The labels are the problem. |
-| What should I check next? | Can new users find the correct storage location without help? |
-
-The goal is not to remove judgement. The goal is to make your judgement visible enough to test.
-
-### Watch: engineering design in action
-
-The students in this Design Squad example begin by defining the need before building, then test and redesign.
-
-<div style="max-width: 900px; margin: 1.5rem auto;">
-<iframe
-  src="https://www.youtube.com/embed/Vcma79mVAYw"
-  title="Kid Engineer: Bike Trailer - Design Squad Global"
-  style="display:block;width:100%;aspect-ratio:16/9;border:0;"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
-</div>
-
-While you watch, notice:
-
-1. Who is the user?
-2. What is the user trying to accomplish?
-3. What requirements come from that need?
-4. What changes after they test the design?
-
-## N: Notice Needs and Necessities
-
-<figure>
-  <img src="https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/export/png?id=1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ&amp;pageid=p4" alt="Needs and Necessities step of the N.I.C.E. design process" style="display:block;max-width:960px;width:100%;margin-inline:auto">
-  <figcaption>Define what people need before deciding what product to make.</figcaption>
-</figure>
-
-### Needs live at the user level
-
-A need describes a change that would help a person, group, or other stakeholder.
-
-A need is usually **not an object**.
-
-Weak need:
-
-> We need a laser-cut name tag.
-
-Better need:
-
-> A person meeting a new classmate needs to identify who they are speaking with quickly and from a useful distance.
-
-The first sentence has already chosen the solution. The second leaves room for many possible solutions.
-
-Another example:
-
-Weak need:
-
-> We need a playlist.
-
-Better need:
-
-> Students need a way to influence the music while keeping it appropriate, reliable, and non-disruptive.
-
-The purpose of a need statement is to keep the problem open long enough to discover a better answer.
-
-### Need, requirement, restriction, necessity, or nice-to-have?
-
-These ideas are connected, but they are not identical.
-
-- A **need** describes what should become better for the user.
-- A **requirement** describes something the solution should accomplish.
-- A **restriction** is a limit the design must work within.
-- A **necessity** is a requirement or restriction that absolutely must be satisfied.
-- A **nice-to-have** would improve the solution, but the design can still work without it.
-
-In our class system:
-
-- **10 / 10 = necessity**
-- **1 to 9 / 10 = nice-to-have**
-
-This is a prioritization tool. A long list of "must-haves" is usually a sign that the problem has not been prioritized carefully enough.
-
-### Write a human-centred need statement
-
-A useful structure is:
-
-> **The user needs ___ because ___ while considering ___.**
-
-For example:
-
-> Students need a way to take part in choosing music because shared choices can make the celebration feel more inclusive, while considering school rules, volume, reliability, and limited class time.
-
-Notice that this sentence describes what the solution must help people accomplish without deciding exactly what the final solution will be.
-
-[Use the N.I.C.E. Needs Worksheet](https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/edit) to record the situation, user, facts, questions, requirements, restrictions, necessities, nice-to-haves, and final need statement.
-
-## I: Investigate and Inquire
-
-<figure>
-  <img src="https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/export/png?id=1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ&amp;pageid=p5" alt="Investigate and Inquire step of the N.I.C.E. design process" style="display:block;max-width:960px;width:100%;margin-inline:auto">
-  <figcaption>Inquiry begins with useful questions, not a random search.</figcaption>
-</figure>
-
-Inquiry is how you turn uncertainty into evidence.
-
-### Ask before you search
-
-Do not begin with:
-
-> What should I Google?
-
-Begin with:
-
-> What do I need to learn before I can make a better decision?
-
-Useful inquiry questions might include:
-
-- What do users actually do now?
-- What frustrates them?
-- What solutions already exist?
-- What works well about those solutions?
-- Where do they fail?
-- Which requirement is hardest to satisfy?
-- Which assumption would be most dangerous if it were wrong?
-- What could we test cheaply before committing to the full design?
-
-### Brainstorm before research
-
-Generate several ideas before looking at existing solutions.
-
-Why?
-
-Because research can accidentally narrow your imagination. If you see one existing solution first, it is easy to copy its basic structure without realizing you had other options.
-
-Go wide first. Strange ideas are allowed.
-
-Then research.
-
-### Compare, borrow, combine, improve
-
-Research is not copying.
-
-When you find an existing solution, ask:
-
-- What is good about it?
-- What problem does it have?
-- What would we need to check?
-- Which parts could be borrowed or combined?
-- How well does it meet our actual user needs?
-
-The goal is not to find "the answer." The goal is to improve your understanding and make a better design decision.
-
-### Test the riskiest assumption
-
-Some assumptions matter more than others.
-
-If your entire idea depends on users understanding a symbol, test the symbol early.
-
-If the whole project depends on a joint fitting together, make a small joint test before cutting the entire project.
-
-If the party plan depends on students participating, ask them before building the entire plan.
-
-A useful question is:
-
-> **What would I want to learn before spending more time, material, or money?**
-
-[Use the N.I.C.E. Inquiry Worksheet](https://docs.google.com/document/d/1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho/edit) to brainstorm, ask questions, compare alternatives, research existing solutions, and choose an idea worth testing.
-
-## C: Create and Communicate
-
-<figure>
-  <img src="https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/export/png?id=1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ&amp;pageid=p6" alt="Create and Communicate step of the N.I.C.E. design process" style="display:block;max-width:960px;width:100%;margin-inline:auto">
-  <figcaption>Make the idea visible enough that people can understand it and react to it.</figcaption>
-</figure>
-
-An idea in your head cannot be tested by anyone else.
-
-Create something another person can respond to:
-
-- sketch
-- diagram
-- storyboard
-- CAD model
-- mock-up
-- prototype
-- sample
-- process map
-- demonstration
-- short pitch
-- detailed plan
-
-The goal is not always to build the final product.
-
-The goal is to build **enough to learn**.
-
-If a sketch can answer the question, do not spend three hours making a finished model.
-
-If a cardboard mock-up can test the size, do not machine the final part yet.
-
-If showing five people a proposed layout can reveal the main problem, do that before committing to the full design.
-
-### Communicate the problem before selling the solution
-
-A short pitch can follow this structure:
-
-1. **Situation:** Have you ever experienced ___?
-2. **Need:** And needed or wanted ___?
-3. **Idea:** Our idea is ___.
-4. **Value:** It helps by ___.
-5. **Show it:** Here is the sketch, prototype, plan, or demonstration.
-6. **Ask:** What do you think about this specific part?
-
-Avoid only asking:
-
-> Do you like it?
-
-That usually produces weak feedback.
-
-Ask questions that could actually change the design.
-
-Examples:
-
-- What is unclear?
-- What would stop you from using this?
-- What would this need to do for you?
-- Which part feels unnecessary?
-- What did you expect to happen here?
-- Which option would fit the situation better, and why?
-
-### Watch: pitch the idea
-
-<div style="max-width: 900px; margin: 1.5rem auto;">
-<iframe
-  src="https://www.youtube.com/embed/3wRWN3_u17k"
-  title="Pitch the idea"
-  style="display:block;width:100%;aspect-ratio:16/9;border:0;"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen>
-</iframe>
-</div>
-
-While you watch, notice the sequence:
-
-**problem -> idea -> show it -> ask**
-
-Use the classroom materials in order when they fit the project:
-
-1. [Communicate Worksheet Online](https://docs.google.com/document/d/1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs/edit) or [Pitch and Show Your Idea Print](https://docs.google.com/document/d/1F_7NWcW4Bzd-PE7BdLssdBxeT-49clS92381QXjW8gw/edit)
-2. [Feedback Package](https://docs.google.com/document/d/173eivGi-7of6WWqpPsK81p4Z2Q6_3fIiW5ffjRI6jRQ/edit)
-3. [Plan and Plan Feedback](https://docs.google.com/document/d/1QWY7ss3aY5wHh4ETOcSDGZxgpkrrIXcCYnWlXNv1lxo/edit)
-
-## E: Evaluate and Reflect
-
-<figure>
-  <img src="https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/export/png?id=1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ&amp;pageid=p7" alt="Evaluate step of the N.I.C.E. design process" style="display:block;max-width:960px;width:100%;margin-inline:auto">
-  <figcaption>Feedback is evidence to think about, not a list of orders to obey.</figcaption>
-</figure>
-
-Evaluation means deciding what the evidence tells you.
-
-It does **not** mean making every change someone suggests.
-
-Look for patterns.
-
-Ask:
-
-- Did users actually have the need we predicted?
-- Which facts were confirmed?
-- Which assumptions were wrong?
-- Did our interpretation of the situation change?
-- Which necessities were met?
-- Which requirements were missed?
-- What worked during the test?
-- What failed?
-- What surprised us?
-- What feedback appeared more than once?
-- Is there a better question we should now be asking?
-
-Then make a decision.
-
-### Keep, change, remove, or test
-
-For each important part of the design, choose:
-
-- **Keep:** evidence suggests it is working.
-- **Change:** evidence suggests a specific improvement.
-- **Remove:** it adds complexity without enough value.
-- **Test:** you still do not know enough.
-
-Good evaluation ends with a next action, not just a paragraph about how the project went.
-
-[Use the N.I.C.E. Evaluate Worksheet](https://docs.google.com/document/d/1O_j4gcsUT0ELFpgJk3GiyG6B1l5brKPko-6lO8HQPfk/edit) to look for feedback patterns, re-question the original problem, and choose the first change or test for the next version.
-
-## The loop: make assumptions earn evidence
-
-<figure>
-  <img src="https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/export/png?id=1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ&amp;pageid=p9" alt="Repeat the N.I.C.E. design-process cycle after evaluation" style="display:block;max-width:960px;width:100%;margin-inline:auto">
-  <figcaption>Evaluation creates the next question, test, or version.</figcaption>
-</figure>
-
-The first version of a design is a hypothesis.
-
-You think:
-
-> If we make **this**, it will help **these people** because **this need matters**.
-
-Then you test that belief against reality.
-
-The cycle becomes:
-
-**Understand -> hypothesize -> make -> test -> learn -> revise**
-
-That is why a prototype does not have to be polished. Its job is to answer a question.
-
-## How N.I.C.E. connects to other design methods
-
-N.I.C.E. is a classroom framework, but the thinking behind it appears in professional design, engineering, product development, and entrepreneurship.
-
-### Human-centred design
-
-IDEO describes human-centred design as beginning with the people you are designing with and developing solutions around their needs. It emphasizes learning from people, generating ideas, making prototypes, sharing them, and improving through feedback.
-
-That maps closely onto N.I.C.E.:
-
-| N.I.C.E. | Human-centred design habit |
-|---|---|
-| Situation + Needs | Understand people and frame the real challenge |
-| Inquiry | Gather inspiration, ask questions, generate alternatives |
-| Create + Communicate | Make ideas tangible and test them with people |
-| Evaluate | Synthesize what you learned and improve the next version |
-
-The key idea is **desirability first**: does this actually help people?
-
-Then engineering adds other important questions:
-
-- **Desirability:** does it address a real human need?
-- **Feasibility:** can we actually make it work?
-- **Viability:** can it work within the available time, money, materials, maintenance, and organization?
-- **Responsibility:** is it safe, ethical, accessible, and considerate of possible harm?
-
-### Lean Startup and Build-Measure-Learn
-
-Lean Startup was created for uncertain product and business development, but its learning loop is useful well beyond startups.
-
-Its core pattern is:
-
-**Build -> Measure -> Learn**
-
-For our projects:
-
-- **Build:** make the smallest useful representation or prototype.
-- **Measure:** observe what happens and collect useful evidence.
-- **Learn:** decide whether to keep the direction, change it, or test something else.
-
-This does not mean "build badly" or rush unsafe work.
-
-It means **do not spend heavily on an assumption you could test cheaply first**.
-
-In N.I.C.E.:
-
-**Create = Build**  
-**Communicate/Test = Measure**  
-**Evaluate = Learn**
-
-Then you return to the situation and needs with better information.
-
-## A compact N.I.C.E. checklist
-
-### Situation
-
-- What actually happened?
-- What are the facts?
-- What am I assuming?
-- What am I interpreting?
-- What still needs to be checked?
-
-### N: Needs
-
-- Who is affected?
-- What are they trying to accomplish?
-- What gets in their way?
-- What does the solution need to accomplish?
-- What is a necessity?
-- What is only a nice-to-have?
-
-### I: Inquiry
-
-- What do I need to learn?
-- What already exists?
-- What alternatives can I generate?
-- What can I borrow, combine, simplify, or improve?
-- What assumption should I test first?
-
-### C: Create + Communicate
-
-- What is the quickest useful way to make the idea visible?
-- What exactly am I trying to learn?
-- Who should see or test it?
-- What specific question should I ask?
-
-### E: Evaluate
-
-- What did the evidence show?
-- What surprised me?
-- Which assumption changed?
-- What should I keep, change, remove, or test?
-- What is the next version or next question?
-
-## Class resources
-
-- [Open the complete N.I.C.E. slide deck](https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/edit)
-- [N.I.C.E. Needs Worksheet](https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/edit)
-- [N.I.C.E. Inquiry Worksheet](https://docs.google.com/document/d/1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho/edit)
-- [Pitch and Show Your Idea](https://docs.google.com/document/d/1F_7NWcW4Bzd-PE7BdLssdBxeT-49clS92381QXjW8gw/edit)
-- [Feedback Package](https://docs.google.com/document/d/173eivGi-7of6WWqpPsK81p4Z2Q6_3fIiW5ffjRI6jRQ/edit)
-- [N.I.C.E. Evaluate Worksheet](https://docs.google.com/document/d/1O_j4gcsUT0ELFpgJk3GiyG6B1l5brKPko-6lO8HQPfk/edit)
-- [N.I.C.E. Design Log](https://docs.google.com/document/d/1Sai4_cQGkNudnAsLRYuwec6D-B-U4BqA8CCk0Nyo0CA/edit)
-- [All N.I.C.E. worksheets, examples, and classroom materials](../../teaching-materials/nice-design-process/index.qmd)
-
-## Connections and further reading
-
-- [IDEO: What is human-centred design?](https://designthinking.ideo.com/faq/whats-the-difference-between-human-centered-design-and-design-thinking)
-- [IDEO: The design thinking process](https://designthinking.ideo.com/process)
-- [Lean Startup: Build-Measure-Learn](https://leanstartup.co/about/principles/)
+- [N.I.C.E. Design Process slides](https://docs.google.com/presentation/d/1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ/edit)
+- [Worksheets, feedback packages, examples, and the design log](../../teaching-materials/nice-design-process/index.qmd)

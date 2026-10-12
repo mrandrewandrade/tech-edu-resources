@@ -1,0 +1,27 @@
+---
+title: "Contrast, Emphasis & Output"
+description: "Use contrast and more than colour alone, then test the final screen, print, or fabricated result."
+sidebar: design-fabrication
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [contrast, accessibility, fabrication, testing]
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can use colour for emphasis without making colour the only cue.
+- I can test contrast at the final size and on the final output.
+- I can revise a design after another person tries to read or use it.
+
+![Four panels compare text over a busy background, text on a solid background, a thin outline, and a heavy 3D effect.](../../assets/accessible-design/text-legibility-examples.svg){fig-alt="The solid background and thin outline examples remain easiest to read; the busy background and heavy 3D effect interfere with the letters."}
+
+::: {.callout-note}
+The complete source text and links from the Graphics Accommodation Guide are retained below.
+:::
+
+{{< include sections/04-contrast-and-output.md >}}
+
+## Test the real result
+
+Show the design without explaining it. Ask what the person noticed first and what was difficult to understand. For a fabricated design, make a small sample and check thin lines, small gaps, inside spaces, and contrast before making the final piece.

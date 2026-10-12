@@ -1,7 +1,7 @@
 ---
-title: "Laser Fabrication Library | SVG, Calibration & Tool Holders"
-subtitle: "Measure first. Test fit. Then make it yours."
-description: "Free SVG laser-cutting resources for Ontario technology education: calibration files, exact geometry, stands, joinery, jigs, tool holders and shop organization."
+title: "Laser-Cutting Ideas & Tools"
+subtitle: "See an idea, open a starting point, measure the real object, and make your own version."
+description: "A visual gallery of tool-organizer ideas, two fabrication builders, and reusable SVG starting points."
 format:
   html:
     page-layout: full
@@ -21,71 +21,48 @@ execute:
 
   <section class="bs-laser-hero">
     <div>
-      <p class="bs-laser-kicker">Technology Commons · Open fabrication library</p>
-      <p class="bs-laser-lead">Start with calibration, download simple editable geometry, and build toward measured assemblies and original parametric designs. The catalogue contains <strong data-laser-total>232 purpose-built generated assets</strong>; none are claimed as physically verified.</p>
-      <p><a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd"><strong>Tool Organizer Gallery:</strong> design criteria, a Grade 9 knife-holder example and a route from measured tools to a tested prototype.</a></p>
+      <p class="bs-laser-kicker">Technology Commons · Tool organizer gallery</p>
+      <p class="bs-laser-lead">Browse organizer ideas and reusable parts. The Plate Builder and Leg &amp; Support Builder are the two current interactive tools. The SVG catalogue provides starting points, not finished plans.</p>
       <div class="bs-laser-actions">
-        <a class="bs-laser-button bs-laser-button-primary" href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd">Plan a tool organizer</a>
-        <a class="bs-laser-button bs-laser-button-primary" href="https://raw.githubusercontent.com/mrandrewandrade/assets/master/laser/generated/downloads/technology-commons-laser-library.zip">Download complete SVG bundle</a>
-        <a class="bs-laser-button" href="https://github.com/mrandrewandrade/assets/tree/master/laser">Generators, metadata and tests</a>
-        <a class="bs-laser-button" href="#library">Browse assets</a>
+        <a class="bs-laser-button bs-laser-button-primary" href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd">Open the organizer guide</a>
+        <a class="bs-laser-button" href="../../design-fabrication/tools/plate-builder/index.qmd">Plate Builder</a>
+        <a class="bs-laser-button" href="../../design-fabrication/tools/leg-builder/index.qmd">Leg &amp; Support Builder</a>
+        <a class="bs-laser-button" href="#library">Browse SVGs</a>
       </div>
     </div>
   </section>
 
-  <section class="bs-laser-guides" aria-label="Curriculum pathways">
-    <article>
-      <p class="bs-laser-kicker">Learn before downloading</p>
-      <h2>From first cut to calibrated assembly</h2>
-      <p>Use the <a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd">Tool Organizer Gallery</a> for the design criteria and concise classroom route. These are reusable choices, not one mandatory sequence.</p>
+  <section class="bs-laser-feature-grid" aria-label="Featured tool-organizer ideas">
+    <article class="bs-laser-feature-card">
+      <a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd#grade-9-knife-holder-example"><img src="../../assets/tool-organizer-gallery/grade-9-knife-holder-photo.jpg" alt="Freestanding wooden holder with five utility knives spaced so every handle can be seen and gripped."></a>
+      <div><p class="bs-laser-kicker">Finished example</p><h2>Ergonomic knife holder</h2><p>See the photo, orthographic drawing, spacing decisions, and documented revisions.</p><a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd#grade-9-knife-holder-example">Study the example →</a></div>
     </article>
-    <article>
-      <p class="bs-laser-kicker">Apply the files</p>
-      <h2>Choose a learning goal</h2>
-      <p>Use the <a href="../../design-fabrication/tools/leg-builder/index.qmd">Leg &amp; Support Builder</a>, the <a href="../../design-fabrication/tools/plate-builder/index.qmd">Plate Builder</a>, or the <a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd">Tool Organizer Gallery</a>. Library geometry is a starting point; students still measure, test, and revise.</p>
+    <article class="bs-laser-feature-card">
+      <a href="#library"><img src="../../assets/laser-library/generated/previews/tool-holders/tc-holder-screwdriver-rack.svg" alt="Laser-cut screwdriver rack kit shown as flat SVG parts."></a>
+      <div><p class="bs-laser-kicker">Organizer idea</p><h2>Screwdriver rack</h2><p>Use the SVG as a visual starting point, then change the holes and spacing for the real tools.</p><a href="#library">Browse holder SVGs →</a></div>
+    </article>
+    <article class="bs-laser-feature-card">
+      <a href="../../design-fabrication/tools/leg-builder/index.qmd"><img src="../../assets/laser-library/generated/previews/project-components/tc-project-cross-stand.svg" alt="Two interlocking laser-cut parts form a cross stand."></a>
+      <div><p class="bs-laser-kicker">Interactive tool</p><h2>Legs and supports</h2><p>Create a stand or support after measuring the project and the actual sheet material.</p><a href="../../design-fabrication/tools/leg-builder/index.qmd">Open the builder →</a></div>
+    </article>
+    <article class="bs-laser-feature-card">
+      <a href="../../design-fabrication/tools/plate-builder/index.qmd"><img src="../../assets/laser-library/generated/previews/core-geometry/tc-label-plate-100x30mm.svg" alt="Simple rectangular laser-cut plate with rounded corners and mounting holes."></a>
+      <div><p class="bs-laser-kicker">Interactive tool</p><h2>Plates and hole patterns</h2><p>Create a measured plate, ring, or repeated holder-hole pattern.</p><a href="../../design-fabrication/tools/plate-builder/index.qmd">Open the builder →</a></div>
     </article>
   </section>
 
-  <section class="bs-laser-workflow" aria-labelledby="workflow-title">
-    <div>
-      <p class="bs-laser-kicker">Material standard</p>
-      <h2 id="workflow-title">Nominal 1/4 inch is not a measurement</h2>
-      <p>Baltic birch sold as 1/4 inch may not be 6.35 mm. Sheet thickness, glue layers, focus and machine settings change fit. Use calipers and record the actual stock.</p>
-    </div>
-    <ol>
-      <li><strong>Measure</strong><span>Check the sheet in several places.</span></li>
-      <li><strong>Test</strong><span>Cut dimensions, kerf and fit gauges.</span></li>
-      <li><strong>Select fit</strong><span>Choose loose, slip, snug or press from evidence.</span></li>
-      <li><strong>Modify</strong><span>Update thickness, clearance and geometry.</span></li>
-      <li><strong>Cut + evaluate</strong><span>Prototype, measure and iterate.</span></li>
-    </ol>
-  </section>
-
-  <nav class="bs-laser-category-links" aria-label="Laser library category views">
+  <nav class="bs-laser-category-links" aria-label="Featured SVG views">
+    <button type="button" data-laser-preset="type" data-laser-value="tool-holders">Tool holders</button>
+    <button type="button" data-laser-preset="type" data-laser-value="project-components">Project parts</button>
     <button type="button" data-laser-preset="type" data-laser-value="calibration">Calibration first</button>
     <button type="button" data-laser-preset="type" data-laser-value="core-geometry">Core geometry</button>
-    <button type="button" data-laser-preset="type" data-laser-value="french-cleat">French cleats</button>
-    <button type="button" data-laser-preset="type" data-laser-value="tool-holders">Tool holders</button>
-    <button type="button" data-laser-preset="type" data-laser-value="jigs-gauges">Jigs + gauges</button>
-    <button type="button" data-laser-preset="type" data-laser-value="project-components">Project starters</button>
-    <button type="button" data-laser-preset="type" data-laser-value="themed-starters">Themed starters</button>
-    <button type="button" data-laser-preset="theme" data-laser-value="animals">Animals</button>
   </nav>
-
-  <section class="bs-laser-safety" aria-labelledby="cleat-safety-title">
-    <div>
-      <p class="bs-laser-kicker">Signature collection</p>
-      <h2 id="cleat-safety-title">Removable French-cleat organization</h2>
-      <p>Standard module faces, backers, standoffs, retainers, jigs, shelves and generic holders create obvious homes for tools and let complete sets travel to a bench. Faces are configuration, not a load rating. Thin laser-cut plywood is not a substitute for a structural rail, suitable backing or approved fasteners.</p>
-    </div>
-    <button type="button" class="bs-laser-button" data-laser-preset="type" data-laser-value="french-cleat">Explore the cleat system</button>
-  </section>
 
   <section id="library" class="bs-laser-library-section" aria-labelledby="library-title">
     <div class="bs-laser-section-heading">
-      <p class="bs-laser-kicker">Manifest-driven catalogue</p>
-      <h2 id="library-title">Find a fabrication starting point</h2>
-      <p>Cards are generated in the browser from the canonical structured manifest. Filters stay in the URL so a useful view can be bookmarked or shared.</p>
+      <p class="bs-laser-kicker">SVG starting points</p>
+      <h2 id="library-title">Browse the idea gallery</h2>
+      <p>Use the pictures to find a useful part or organizer idea. Measure the real tools and material before cutting.</p>
     </div>
 
     <div class="bs-laser-controls" data-laser-controls>

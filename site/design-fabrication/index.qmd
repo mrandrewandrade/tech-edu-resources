@@ -1,7 +1,7 @@
 ---
 title: "Design & Fabrication"
 subtitle: "Find a need, make an idea visible, build it, test it, and improve it."
-description: "A clear path from the design process, through digital design, to a first laser-cutting project."
+description: "A clear learning path for design, visual communication, accessibility, laser cutting, and fabrication."
 sidebar: design-fabrication
 page-layout: full
 toc: false
@@ -10,38 +10,7 @@ execute:
   enabled: false
 ---
 
-A concise collection of reusable design and fabrication lessons, projects, and classroom tools.
-
-## Fabrication tools
-
-Start with the project instructions, then use the builders and gallery as the design requires. The builders create editable SVG starting points. Students still measure the real material, test the fit, and revise the design.
-
-<div class="ter-project-grid ter-project-grid--featured">
-<article class="ter-project-card">
-<p class="ter-course-code">Make a plate</p>
-<h3>Fabrication Plate Builder</h3>
-<p>Create plates, rings, and repeated holder holes with measured spacing.</p>
-<p><a href="tools/plate-builder/index.qmd">Open the Plate Builder →</a></p>
-</article>
-<article class="ter-project-card">
-<p class="ter-course-code">Add supports</p>
-<h3>Laser-Cut Leg &amp; Support Builder</h3>
-<p>Create legs, stands, triangular supports, and a wide single easel back.</p>
-<p><a href="tools/leg-builder/index.qmd">Open the Leg &amp; Support Builder →</a></p>
-</article>
-<article class="ter-project-card">
-<p class="ter-course-code">Study examples</p>
-<h3>Tool Organizer Gallery</h3>
-<p>Compare organizer ideas, construction methods, drawings, and finished builds.</p>
-<p><a href="tools/tool-organizer-gallery/index.qmd">Open the Tool Organizer Gallery →</a></p>
-</article>
-<article class="ter-project-card">
-<p class="ter-course-code">Instructions and files</p>
-<h3>Tool Organizer Project &amp; SVG Library</h3>
-<p>Plan a measured organizer, then choose reusable SVGs and fabrication resources.</p>
-<p><a href="tools/tool-organizer-gallery/index.qmd#from-measurements-to-a-prototype">Open the project guide →</a> · <a href="../teaching-materials/laser-cutting/index.qmd">Browse SVG resources →</a></p>
-</article>
-</div>
+In this module, you will learn a practical design process and use fabrication tools to help with laser cutting. Start with the learning path. Open the tools when a project needs them.
 
 ## Learning path
 
@@ -63,39 +32,69 @@ Find a need. Show an idea. Test it. Improve it.
 :::
 
 ::: {.ter-path-card}
-### 2. Logo Design
+### 2. Logo & Nameplate Design
 
-Learn Photopea before fabricating.
+Use Photopea to build readable nameplate text, trace a logo, and combine the final design.
 
-1. [Photopea Lesson 1: Build the Nameplate Text](logo-design/01-nameplate-text-photopea.qmd)
-2. [Photopea Lesson 2: Trace a Rough Logo](logo-design/rough-sketch-to-svg-photopea.qmd)
-3. [Photopea Lesson 3: Combine the Logo and Nameplate](logo-design/03-combine-logo-nameplate.qmd)
-4. [Your Turn: Design Your Own Name + Logo Name Tag](03-laser-cutting/01-name-logo.qmd)
-5. [Raster, Vector, and SVG](02-digital-design/01-raster-vector-svg.qmd)
-6. [2D Animation with Pencil2D](02-digital-design/05-animation-ui-ux.qmd)
+[Open Logo Design](logo-design/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 3. Name Tag Laser Cutting
+### 3. Accessible Design
 
-Use an approved original design to make and check a wooden name tag.
+Make type, colour, images, screens, prints, and fabricated graphics easier to understand.
+
+[Open Accessible Design](accessible-design/index.qmd)
+:::
+
+::: {.ter-path-card}
+### 4. Laser Cutting
+
+Apply the design process to a name tag, measured parts, stands, organizers, and assemblies.
 
 [Open the laser-cutting pathway](03-laser-cutting/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 4. Tool Organizer Gallery
+### Tool Organizer Gallery
 
-See what makes a useful holder, review a Grade 9 knife-holder example, and plan a measured prototype.
+Study finished examples, drawings, ergonomic spacing, and the route from measurements to a prototype.
 
-[Open the Tool Organizer Gallery](tools/tool-organizer-gallery/index.qmd)
-:::
-
-::: {.ter-path-card}
-### Accessible Design
-
-Compare fonts, zoom out, test contrast, and avoid colour-only meaning.
-
-[Open Accessible Design](accessible-design/index.qmd)
+[Open the gallery](tools/tool-organizer-gallery/index.qmd)
 :::
 :::
+
+## Fabrication tools
+
+These tools provide editable starting points for laser-cut projects.
+
+<div class="ter-project-grid ter-project-grid--featured">
+<article class="ter-project-card">
+<p class="ter-course-code">Make a plate</p>
+<h3>Fabrication Plate Builder</h3>
+<p>Create plates, rings, and repeated holder holes with measured spacing.</p>
+<p><a href="tools/plate-builder/index.qmd">Open the Plate Builder →</a></p>
+</article>
+<article class="ter-project-card">
+<p class="ter-course-code">Add supports</p>
+<h3>Laser-Cut Leg &amp; Support Builder</h3>
+<p>Create legs, stands, triangular supports, and a wide single easel back.</p>
+<p><a href="tools/leg-builder/index.qmd">Open the Leg &amp; Support Builder →</a></p>
+</article>
+<article class="ter-project-card">
+<p class="ter-course-code">Study examples</p>
+<h3>Tool Organizer Gallery</h3>
+<p>Compare organizer ideas, construction methods, drawings, and finished builds.</p>
+<p><a href="tools/tool-organizer-gallery/index.qmd">Open the Tool Organizer Gallery →</a></p>
+</article>
+<article class="ter-project-card">
+<p class="ter-course-code">Browse files</p>
+<h3>Laser-Cutting Ideas &amp; SVGs</h3>
+<p>See visual examples, open the two builders, and browse reusable SVG starting points.</p>
+<p><a href="../teaching-materials/laser-cutting/index.qmd">Open the fabrication gallery →</a></p>
+</article>
+</div>
+
+## Coming soon
+
+CNC machining, 3D printing, textiles, and other fabrication methods will be added as classroom materials are ready.
