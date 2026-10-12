@@ -42,12 +42,12 @@ class NotesRefactorTests(unittest.TestCase):
             "GUESS method",
             "Series circuits",
             "11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA",
-            "1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw",
             "1KMKU3e4OkKn40jMy5KeyGHXKcn2IftQcRiNggfYHivc",
             "1CQf3eYAcKw6tf2J7BCa38cskxnGP0T3fjBaxnLKbx-o",
             "1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c",
         ):
             self.assertIn(text, circuits)
+        self.assertNotIn("1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw", circuits)
         self.assertNotIn("1_pH0LLfqyt0QOZPGVGsXNW0tGNeG2ksXh0ysAUQLF94", circuits)
         self.assertIn("not public yet", circuits)
 
