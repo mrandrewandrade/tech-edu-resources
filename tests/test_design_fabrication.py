@@ -88,9 +88,9 @@ class DesignFabricationTests(unittest.TestCase):
         sidebar = config[sidebar_start:sidebar_end]
         ordered = [
             'text: "General Design & Fabrication Home"',
-            'section: "N.I.C.E. Design Process"',
-            'section: "Logo Design in Photopea"',
-            'section: "Laser Cutting and Fabrication Tools"',
+            'section: "2. N.I.C.E. Design Process"',
+            'section: "3. Logo Design in Photopea"',
+            'section: "5. Laser Cutting and Fabrication Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]
         self.assertEqual(positions, sorted(positions))

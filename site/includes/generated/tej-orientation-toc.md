@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="orientation" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">Orientation</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">1. Orientation</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="orientation" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Course Orientation&quot;, &quot;Orientation&quot;]" data-bs-search-body="[&quot;A concise orientation lesson is planned.&quot;, &quot;It will connect the site, classroom workflow, and project evidence.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Course Orientation"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Course Orientation <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Course Orientation"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Course Orientation <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>A concise orientation lesson is planned.</p>
         <p>It will connect the site, classroom workflow, and project evidence.</p>
       </details>

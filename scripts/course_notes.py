@@ -281,6 +281,13 @@ def _yaml_string(value: object) -> str:
     return json.dumps(str(value), ensure_ascii=False)
 
 
+def _numbered_label(order: object, title: object) -> str:
+    """Add a presentation-only sequence number without changing the source title."""
+    if not isinstance(order, int) or isinstance(order, bool) or order < 1:
+        raise ValidationError("Display order must be a positive integer")
+    return f"{order}. {title}"
+
+
 def _published_lessons(raw_unit: dict[str, object]) -> list[dict[str, object]]:
     lessons = raw_unit.get("lessons", [])
     assert isinstance(lessons, list)
@@ -323,17 +330,19 @@ def build_navigation(data: dict[str, object]) -> str:
             lessons = _published_lessons(raw_unit)
             if not lessons:
                 continue
+            unit_label = _numbered_label(raw_unit.get("order"), raw_unit["title"])
             hub = raw_unit.get("hub")
             if hub:
-                lines.append(f"        - section: {_yaml_string(raw_unit['title'])}")
+                lines.append(f"        - section: {_yaml_string(unit_label)}")
                 lines.append(f"          href: {_yaml_string(hub)}")
             else:
-                lines.append(f"        - section: {_yaml_string(raw_unit['title'])}")
+                lines.append(f"        - section: {_yaml_string(unit_label)}")
             lines.append("          contents:")
             for lesson in lessons:
+                lesson_label = _numbered_label(lesson.get("order"), lesson["title"])
                 lines.extend(
                     [
-                        f"            - text: {_yaml_string(lesson['title'])}",
+                        f"            - text: {_yaml_string(lesson_label)}",
                         f"              href: {_yaml_string(lesson['source'])}",
                     ]
                 )
@@ -434,10 +443,11 @@ def build_hub_fragment(
         for raw_unit in selected_units:
             unit_id = str(raw_unit["id"])
             count = len(_catalogue_lessons(raw_unit))
+            unit_label = _numbered_label(raw_unit.get("order"), raw_unit["title"])
             lines.append(
                 f'        <button type="button" class="bs-learn-filter bs-learn-filter--track" '
                 f'data-bs-filter-track="{html.escape(unit_id, quote=True)}" aria-pressed="false">'
-                f'{html.escape(str(raw_unit["title"]))}<span class="bs-learn-filter-count">×{count}</span></button>'
+                f'{html.escape(unit_label)}<span class="bs-learn-filter-count">×{count}</span></button>'
             )
         lines.extend(["      </div>", "    </details>"])
     lines.extend(
@@ -459,15 +469,16 @@ def build_hub_fragment(
         unit_id = str(raw_unit["id"])
         lessons = _catalogue_lessons(raw_unit)
         count = len(lessons)
+        unit_label = _numbered_label(raw_unit.get("order"), raw_unit["title"])
         unit_hub = raw_unit.get("hub")
         if unit_hub:
             relative_hub = _relative_public_href(str(unit_hub), hub_source)
             heading = (
                 f'<a href="{html.escape(relative_hub, quote=True)}">'
-                f'{html.escape(str(raw_unit["title"]))}</a>'
+                f'{html.escape(unit_label)}</a>'
             )
         else:
-            heading = f'<span class="bs-learn-track-lessons-label">{html.escape(str(raw_unit["title"]))}</span>'
+            heading = f'<span class="bs-learn-track-lessons-label">{html.escape(unit_label)}</span>'
         lines.extend(
             [
                 f'<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="{html.escape(unit_id, quote=True)}" data-bs-total-lessons="{count}" open>',
@@ -480,11 +491,12 @@ def build_hub_fragment(
         for lesson in lessons:
             status = lesson.get("status", "published")
             title = str(lesson["title"])
+            lesson_label = _numbered_label(lesson.get("order"), title)
             if status == "published":
                 relative_source = _relative_public_href(str(lesson["source"]), hub_source)
-                title_markup = f'<a class="bs-learn-catalogue-link" href="{html.escape(relative_source, quote=True)}">{html.escape(title)}</a>'
+                title_markup = f'<a class="bs-learn-catalogue-link" href="{html.escape(relative_source, quote=True)}">{html.escape(lesson_label)}</a>'
             else:
-                title_markup = f'<span class="bs-learn-catalogue-link">{html.escape(title)} <em>(planned)</em></span>'
+                title_markup = f'<span class="bs-learn-catalogue-link">{html.escape(lesson_label)} <em>(planned)</em></span>'
             search_primary = _attribute_json([title, str(raw_unit["title"])])
             search_body = _attribute_json(
                 [str(lesson["summary"]), str(lesson["use"])]

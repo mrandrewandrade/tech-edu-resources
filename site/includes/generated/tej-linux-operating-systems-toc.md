@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="linux-operating-systems" data-bs-total-lessons="12" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">Linux and Operating Systems</a><span data-bs-learn-group-count>12 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">7. Linux and Operating Systems</a><span data-bs-learn-group-count>12 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Choosing a Linux Distribution&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Compare distribution families, desktop environments, hardware needs, software, and support.&quot;, &quot;A good choice matches the computer and the work instead of following a brand name.&quot;, &quot;Slides&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Choosing a Linux Distribution"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="choosing-a-distribution.html">Choosing a Linux Distribution</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Choosing a Linux Distribution"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="choosing-a-distribution.html">1. Choosing a Linux Distribution</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Compare distribution families, desktop environments, hardware needs, software, and support.</p>
         <p>A good choice matches the computer and the work instead of following a brand name.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a></p>
@@ -33,7 +33,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Install Linux Mint&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Prepare installation media, protect data, install Mint, and verify the result.&quot;, &quot;The procedure supports computer recovery and prepares a system for later projects.&quot;, &quot;Slides&quot;, &quot;Assignment&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Install Linux Mint"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="install-linux-mint.html">Install Linux Mint</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Install Linux Mint"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="install-linux-mint.html">2. Install Linux Mint</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Prepare installation media, protect data, install Mint, and verify the result.</p>
         <p>The procedure supports computer recovery and prepares a system for later projects.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Assignment</a></p>
@@ -41,7 +41,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Explore Linux&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Explore the desktop, accounts, files, terminal, and Bashcrawl while collecting evidence.&quot;, &quot;The activity builds confidence before students administer or program the system.&quot;, &quot;Slides&quot;, &quot;Assignment&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Explore Linux"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="explore-linux.html">Explore Linux</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Explore Linux"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="explore-linux.html">3. Explore Linux</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Explore the desktop, accounts, files, terminal, and Bashcrawl while collecting evidence.</p>
         <p>The activity builds confidence before students administer or program the system.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy">Assignment</a></p>
@@ -49,63 +49,63 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Know Your Linux Computer&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Record hardware, operating-system, storage, and device information.&quot;, &quot;A verified inventory supports troubleshooting, upgrades, and performance comparisons.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Know Your Linux Computer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="know-your-computer.html">Know Your Linux Computer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Know Your Linux Computer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="know-your-computer.html">4. Know Your Linux Computer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Record hardware, operating-system, storage, and device information.</p>
         <p>A verified inventory supports troubleshooting, upgrades, and performance comparisons.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Files, Terminal, and Permissions&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Navigate paths, inspect files, and use permissions safely.&quot;, &quot;These skills are essential for administration, automation, and development.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Files, Terminal, and Permissions"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="files-terminal-permissions.html">Files, Terminal, and Permissions</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Files, Terminal, and Permissions"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="files-terminal-permissions.html">5. Files, Terminal, and Permissions</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Navigate paths, inspect files, and use permissions safely.</p>
         <p>These skills are essential for administration, automation, and development.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Git Version Control&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Record, inspect, and share changes with a safe Git workflow.&quot;, &quot;Version control protects project history and supports collaboration.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Git Version Control"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="git-version-control.html">Git Version Control</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Git Version Control"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="git-version-control.html">6. Git Version Control</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Record, inspect, and share changes with a safe Git workflow.</p>
         <p>Version control protects project history and supports collaboration.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build a Quarto Website&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Turn Markdown, code, and media into a small technical website.&quot;, &quot;A website makes project evidence and explanations easy to review and share.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Build a Quarto Website"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="quarto-website.html">Build a Quarto Website</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Build a Quarto Website"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="quarto-website.html">7. Build a Quarto Website</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Turn Markdown, code, and media into a small technical website.</p>
         <p>A website makes project evidence and explanations easy to review and share.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Publish with GitHub Pages&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Publish a reviewed static site without exposing secrets or private files.&quot;, &quot;Deployment turns local documentation into a durable public portfolio.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Publish with GitHub Pages"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="publish-github-pages.html">Publish with GitHub Pages</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Publish with GitHub Pages"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="publish-github-pages.html">8. Publish with GitHub Pages</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Publish a reviewed static site without exposing secrets or private files.</p>
         <p>Deployment turns local documentation into a durable public portfolio.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Measurement Logging&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Write a small Python program that records measurements with units and timestamps.&quot;, &quot;Logging supports sensor tests, performance studies, and repeatable experiments.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Python Measurement Logging"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-data-logging.html">Python Measurement Logging</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Python Measurement Logging"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-data-logging.html">9. Python Measurement Logging</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Write a small Python program that records measurements with units and timestamps.</p>
         <p>Logging supports sensor tests, performance studies, and repeatable experiments.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Analysis and Curve Fitting&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Inspect recorded data and fit a simple model.&quot;, &quot;Analysis connects observations to engineering decisions and predictions.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Python Analysis and Curve Fitting"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-analysis-curve-fitting.html">Python Analysis and Curve Fitting</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Python Analysis and Curve Fitting"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-analysis-curve-fitting.html">10. Python Analysis and Curve Fitting</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Inspect recorded data and fit a simple model.</p>
         <p>Analysis connects observations to engineering decisions and predictions.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Networking, SSH, and tmux&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Diagnose a network connection and manage a remote Linux session safely.&quot;, &quot;Remote administration is common for servers, Raspberry Pi systems, and lab equipment.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Networking, SSH, and tmux"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="networking-ssh-tmux.html">Networking, SSH, and tmux</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Networking, SSH, and tmux"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="networking-ssh-tmux.html">11. Networking, SSH, and tmux</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Diagnose a network connection and manage a remote Linux session safely.</p>
         <p>Remote administration is common for servers, Raspberry Pi systems, and lab equipment.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="linux-operating-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Power and Raspberry Pi Bridge&quot;, &quot;Linux and Operating Systems&quot;]" data-bs-search-body="[&quot;Connect computer power concepts to a future Raspberry Pi build without inventing a lab.&quot;, &quot;The calculation bridge prepares students to reason about supplies, loads, and interfaces.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Power and Raspberry Pi Bridge"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="power-and-raspberry-pi-bridge.html">Power and Raspberry Pi Bridge</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Power and Raspberry Pi Bridge"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="power-and-raspberry-pi-bridge.html">12. Power and Raspberry Pi Bridge</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Connect computer power concepts to a future Raspberry Pi build without inventing a lab.</p>
         <p>The calculation bridge prepares students to reason about supplies, loads, and interfaces.</p>
       </details>

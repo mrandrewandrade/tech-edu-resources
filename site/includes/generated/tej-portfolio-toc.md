@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="portfolio" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">Project Portfolio</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">4. Project Portfolio</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="portfolio" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build a Technical Portfolio&quot;, &quot;Project Portfolio&quot;]" data-bs-search-body="[&quot;The portfolio lesson is planned.&quot;, &quot;It will support class assessment and future applications.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Build a Technical Portfolio"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Build a Technical Portfolio <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Build a Technical Portfolio"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Build a Technical Portfolio <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The portfolio lesson is planned.</p>
         <p>It will support class assessment and future applications.</p>
       </details>

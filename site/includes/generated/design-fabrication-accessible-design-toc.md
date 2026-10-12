@@ -20,33 +20,33 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="accessible-design" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">4. Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Access and Alt Text&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Describe the instructional purpose of an image and identify barriers to access.&quot;, &quot;Useful descriptions preserve meaning for people who cannot use the image visually.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Access and Alt Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="access-and-alt-text.html">Access and Alt Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Access and Alt Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="access-and-alt-text.html">1. Access and Alt Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Describe the instructional purpose of an image and identify barriers to access.</p>
         <p>Useful descriptions preserve meaning for people who cannot use the image visually.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Fonts and Text Effects&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.&quot;, &quot;Legible type survives small screens, printing, engraving, and viewing from a distance.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Fonts and Text Effects"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="fonts-and-text-effects.html">Fonts and Text Effects</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Fonts and Text Effects"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="fonts-and-text-effects.html">2. Fonts and Text Effects</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.</p>
         <p>Legible type survives small screens, printing, engraving, and viewing from a distance.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understanding Colour&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Use hue, saturation, value, opacity, and colour models deliberately.&quot;, &quot;Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Understanding Colour"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="understanding-colour.html">Understanding Colour</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Understanding Colour"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="understanding-colour.html">3. Understanding Colour</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use hue, saturation, value, opacity, and colour models deliberately.</p>
         <p>Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Contrast and Output&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Check contrast, real size, file type, and final screen, print, or fabrication output.&quot;, &quot;Testing catches problems before a graphic is shared or made.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Contrast and Output"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="contrast-and-output.html">Contrast and Output</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Contrast and Output"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="contrast-and-output.html">4. Contrast and Output</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Check contrast, real size, file type, and final screen, print, or fabrication output.</p>
         <p>Testing catches problems before a graphic is shared or made.</p>
       </details>

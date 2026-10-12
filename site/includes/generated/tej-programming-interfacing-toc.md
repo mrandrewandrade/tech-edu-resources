@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">Programming and Interfacing</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">9. Programming and Interfacing</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Programming and Interfacing Sequence&quot;, &quot;Programming and Interfacing&quot;]" data-bs-search-body="[&quot;The coordinated Python and hardware sequence is planned.&quot;, &quot;It will connect runnable examples to sensors and outputs.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Programming and Interfacing Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Programming and Interfacing Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Programming and Interfacing Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Programming and Interfacing Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The coordinated Python and hardware sequence is planned.</p>
         <p>It will connect runnable examples to sensors and outputs.</p>
       </details>

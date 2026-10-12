@@ -20,19 +20,19 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="culture-land" data-bs-total-lessons="2" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">Culture and Land-Based Learning</a><span data-bs-learn-group-count>2 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">1. Culture and Land-Based Learning</a><span data-bs-learn-group-count>2 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="culture-land" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Grandmother Moon, Seasons, and Turtle&#x27;s Back&quot;, &quot;Culture and Land-Based Learning&quot;]" data-bs-search-body="[&quot;Read seasonal patterns and use a turtle-shell model to organize observations.&quot;, &quot;Pattern, place, and careful observation support design and environmental learning.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Grandmother Moon, Seasons, and Turtle&#x27;s Back"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="grandmother-moon-seasons.html">Grandmother Moon, Seasons, and Turtle&#x27;s Back</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Grandmother Moon, Seasons, and Turtle&#x27;s Back"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="grandmother-moon-seasons.html">1. Grandmother Moon, Seasons, and Turtle&#x27;s Back</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Read seasonal patterns and use a turtle-shell model to organize observations.</p>
         <p>Pattern, place, and careful observation support design and environmental learning.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="culture-land" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Land Lettermark&quot;, &quot;Culture and Land-Based Learning&quot;]" data-bs-search-body="[&quot;Build a lettermark from a place-based observation and document the design choice.&quot;, &quot;The activity connects visual identity, audience, and responsibility to place.&quot;, &quot;TAS Slides&quot;, &quot;TEJ Slides&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Land Lettermark"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="land-lettermark.html">Land Lettermark</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Land Lettermark"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="land-lettermark.html">2. Land Lettermark</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Build a lettermark from a place-based observation and document the design choice.</p>
         <p>The activity connects visual identity, audience, and responsibility to place.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1IuxxzckOhtdac5ZUhM-p5MgA0eHCq2Kb6yKLBXnOECI/edit">TAS Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/presentation/d/18YyZQx0m79TxRGB4GeChARpDlBSWNPFWGT17kHPL0kA/edit">TEJ Slides</a></p>

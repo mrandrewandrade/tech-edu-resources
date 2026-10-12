@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="safety" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">Safety</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">2. Safety</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="safety" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Technology Lab Safety&quot;, &quot;Safety&quot;]" data-bs-search-body="[&quot;The consolidated safety lesson is planned.&quot;, &quot;It will connect hazard recognition to classroom procedures.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Technology Lab Safety"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Technology Lab Safety <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Technology Lab Safety"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Technology Lab Safety <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The consolidated safety lesson is planned.</p>
         <p>It will connect hazard recognition to classroom procedures.</p>
       </details>

@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="engineering-preparation" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">Engineering Preparation</a><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">11. Engineering Preparation</a><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="engineering-preparation" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Engineering Preparation Track&quot;, &quot;Engineering Preparation&quot;]" data-bs-search-body="[&quot;Use the concise track overview and its current notes and problem sets.&quot;, &quot;The page connects existing packages to recognizable engineering systems.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Engineering Preparation Track"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Engineering Preparation Track <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Engineering Preparation Track"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Engineering Preparation Track <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use the concise track overview and its current notes and problem sets.</p>
         <p>The page connects existing packages to recognizable engineering systems.</p>
       </details>

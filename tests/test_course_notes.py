@@ -98,6 +98,28 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertLess(design.index("CNC Machining"), design.index("3D Printing"))
         self.assertLess(design.index("3D Printing"), design.index("## Highlighted tools"))
 
+    def test_hubs_and_sidebar_number_sections_without_changing_titles_or_routes(self) -> None:
+        outputs = course_notes.generated_text_outputs(self.source)
+        design = outputs[course_notes.HUB_OUTPUT_DIR / "design-fabrication-toc.md"]
+        logo = outputs[
+            course_notes.HUB_OUTPUT_DIR / "design-fabrication-logo-design-toc.md"
+        ]
+        navigation = outputs[course_notes.NAVIGATION_PATH]
+
+        self.assertIn(">2. N.I.C.E. Design Process</a>", design)
+        self.assertIn(">1. Understand the Situation</a>", design)
+        self.assertIn(">3. Logo Design in Photopea</a>", logo)
+        self.assertIn(">1. Build the Nameplate Text</a>", logo)
+        self.assertIn('section: "3. Logo Design in Photopea"', navigation)
+        self.assertIn('text: "1. Build the Nameplate Text"', navigation)
+
+        logo_unit = self.source["courses"][0]["units"][2]
+        self.assertEqual(logo_unit["title"], "Logo Design in Photopea")
+        self.assertEqual(
+            logo_unit["lessons"][0]["source"],
+            "design-fabrication/logo-design/01-nameplate-text-photopea.qmd",
+        )
+
     def test_every_published_lesson_is_in_its_hub_and_sidebar(self) -> None:
         outputs = course_notes.generated_text_outputs(self.source)
         navigation = outputs[course_notes.NAVIGATION_PATH]

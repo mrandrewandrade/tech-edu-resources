@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="computer-systems" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">Computer Systems</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">6. Computer Systems</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Computer Systems Sequence&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;The current computer-systems notes remain available while their package order is reconciled.&quot;, &quot;The final sequence will connect hardware evidence to recovery and commissioning.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Computer Systems Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">Computer Systems Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Computer Systems Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Computer Systems Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>The current computer-systems notes remain available while their package order is reconciled.</p>
         <p>The final sequence will connect hardware evidence to recovery and commissioning.</p>
       </details>

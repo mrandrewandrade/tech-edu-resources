@@ -20,12 +20,12 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="circuits-electronics" data-bs-total-lessons="5" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">Circuits and Electronics</a><span data-bs-learn-group-count>5 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">5. Circuits and Electronics</a><span data-bs-learn-group-count>5 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="circuits-electronics" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Series Circuits&quot;, &quot;Circuits and Electronics&quot;]" data-bs-search-body="[&quot;Calculate current, voltage drops, resistance, and power in one-path circuits.&quot;, &quot;Series rules appear in sensor chains, voltage drops, and component strings.&quot;, &quot;Slides&quot;, &quot;Problem Set&quot;, &quot;Formula Reference&quot;, &quot;Teacher Answers&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Series Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/series-circuits.html">Series Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Series Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/series-circuits.html">1. Series Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Calculate current, voltage drops, resistance, and power in one-path circuits.</p>
         <p>Series rules appear in sensor chains, voltage drops, and component strings.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Formula Reference</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
@@ -33,7 +33,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="circuits-electronics" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Parallel Circuits&quot;, &quot;Circuits and Electronics&quot;]" data-bs-search-body="[&quot;Calculate branch currents, common voltage, equivalent resistance, and power.&quot;, &quot;Parallel paths keep loads operating independently in buildings, vehicles, and computers.&quot;, &quot;Slides&quot;, &quot;Problem Set&quot;, &quot;Teacher Answers&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/parallel-circuits.html">Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/parallel-circuits.html">2. Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Calculate branch currents, common voltage, equivalent resistance, and power.</p>
         <p>Parallel paths keep loads operating independently in buildings, vehicles, and computers.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
@@ -41,7 +41,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="circuits-electronics" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Series-Parallel Circuits&quot;, &quot;Circuits and Electronics&quot;]" data-bs-search-body="[&quot;Reduce mixed networks in stages and verify currents and voltages.&quot;, &quot;Real systems often combine shared paths with parallel loads.&quot;, &quot;Slides&quot;, &quot;Problem Set&quot;, &quot;Teacher Answers&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Series-Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/series-parallel-circuits.html">Series-Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Series-Parallel Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/series-parallel-circuits.html">3. Series-Parallel Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Reduce mixed networks in stages and verify currents and voltages.</p>
         <p>Real systems often combine shared paths with parallel loads.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
@@ -49,7 +49,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="circuits-electronics" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Kirchhoff&#x27;s Laws&quot;, &quot;Circuits and Electronics&quot;]" data-bs-search-body="[&quot;Write current and voltage equations for circuits that cannot be reduced directly.&quot;, &quot;Kirchhoff analysis supports troubleshooting and more advanced network methods.&quot;, &quot;Slides&quot;, &quot;Problem Set&quot;, &quot;Teacher Answers&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Kirchhoff&#x27;s Laws"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/kirchhoffs-laws.html">Kirchhoff&#x27;s Laws</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Kirchhoff&#x27;s Laws"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/kirchhoffs-laws.html">4. Kirchhoff&#x27;s Laws</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Write current and voltage equations for circuits that cannot be reduced directly.</p>
         <p>Kirchhoff analysis supports troubleshooting and more advanced network methods.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
@@ -57,7 +57,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="circuits-electronics" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Linear Algebra for Circuits&quot;, &quot;Circuits and Electronics&quot;]" data-bs-search-body="[&quot;Solve simultaneous circuit equations by substitution, elimination, and matrices.&quot;, &quot;The method prepares students for college and university network analysis.&quot;, &quot;Slides&quot;, &quot;Problem Set&quot;, &quot;Teacher Answers&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Linear Algebra for Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/linear-algebra-circuits.html">Linear Algebra for Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Linear Algebra for Circuits"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../circuits/linear-algebra-circuits.html">5. Linear Algebra for Circuits</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Solve simultaneous circuit equations by substitution, elimination, and matrices.</p>
         <p>The method prepares students for college and university network analysis.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit">Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/copy">Problem Set</a> <span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span></p>
