@@ -30,6 +30,7 @@ project:
     - "design-fabrication/tools/plate-builder/**/*.qmd"
     - "design-fabrication/tools/leg-builder/**/*.qmd"
     - "design-fabrication/tools/tool-organizer-gallery/**/*.qmd"
+    - "design-fabrication/accessible-design/**/*.qmd"
     - "tej3-4/index.qmd"
     - "tej3-4/curriculum/**/*.qmd"
     - "tej3-4/circuits/**/*.qmd"
@@ -59,6 +60,7 @@ project:
     - assets/tej-equations-v1.js
     - "assets/electronics/**"
     - "assets/name-tag-photopea/**"
+    - "assets/accessible-design/**"
     - "assets/personal-logo-photopea/**"
     - "assets/laser-cutting/**"
     - "assets/laser-library/**"
@@ -142,6 +144,8 @@ website:
               href: design-fabrication/tools/tool-organizer-gallery/index.qmd
             - text: "Laser-Cutting Files and Resources"
               href: teaching-materials/laser-cutting/index.qmd
+        - text: "Accessible Design"
+          href: design-fabrication/accessible-design/index.qmd
     - id: tas2
       title: "General Design & Fabrication"
       style: docked

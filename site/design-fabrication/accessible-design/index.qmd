@@ -1,0 +1,140 @@
+---
+title: "Accessible Design"
+description: "Choose readable type, test designs at different sizes, use strong contrast, and describe important images."
+sidebar: design-fabrication
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+toc: true
+execute:
+  enabled: false
+---
+
+## Learning goals
+
+By the end of this page:
+
+- I can compare fonts instead of choosing the first one I like.
+- I can zoom out to test whether a design stays clear.
+- I can use contrast, labels, and open letter shapes.
+- I can write useful alt text for a shared image.
+
+## Why this is useful
+
+Accessible design helps more people see, read, and understand your work. It also makes signs, labels, slides, and graphics work better for everyone.
+
+## What you will test
+
+Use these checks with a nameplate, logo, slide, poster, label, diagram, or web graphic.
+
+## Before you start
+
+Open the design you want to test. Keep an editable copy so you can change the font, size, spacing, and colours.
+
+## 1. Compare several fonts
+
+Try the same word in at least three fonts. Change only the font at first.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="../../assets/name-tag-photopea/lesson-1-nameplate/font-choice-comparison-mobile.svg">
+  <img src="../../assets/name-tag-photopea/lesson-1-nameplate/font-choice-comparison.svg" alt="Four versions of Andrade compare serif, sans serif, rounded display, and script fonts. Sans serif is shown as a strong starting point, while notes identify engraving and readability risks in the other styles." style="display:block;width:100%;height:auto">
+</picture>
+
+- **Serif:** Georgia and Times New Roman have small finishing strokes. Serif fonts are common in printed books. Thin strokes may disappear when a design is made.
+- **Sans serif:** DejaVu Sans, Arial, Verdana, and Open Sans use simpler letter shapes. They are a strong starting point for signs, screens, and nameplates.
+- **Rounded or display:** Nunito, Montserrat, and Impact add personality. Check for crowded letters and closed inside spaces.
+- **Script or decorative:** Brush Script and similar fonts can feel personal. Joined or detailed letters can be hard to read.
+
+No font is always good or bad. Choose one that fits the job and stays easy to read.
+
+## 2. Zoom out before choosing
+
+A font may look clear while it fills the screen. Zoom out until you can see the whole design.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="../../assets/accessible-design/font-zoom-test-mobile.svg">
+  <img src="../../assets/accessible-design/font-zoom-test.svg" alt="Andrade appears in four font styles at a large size and again inside a small nameplate at about twenty-five percent size. The sans serif version remains the quickest to read." style="display:block;width:100%;height:auto">
+</picture>
+
+In Photopea:
+
+1. Press **Ctrl + -** on Windows or **Command + -** on a Mac.
+2. Stop near `25%` or when the whole canvas fits on the screen.
+3. Read the design without leaning closer.
+4. Ask which font you can recognize first.
+5. Zoom back in to check line quality before exporting.
+
+Also step back from the screen or read the design from an arm's length away. If you need extra time to recognize the word, try a simpler font, larger type, or more spacing.
+
+## 3. Use four accessibility checks
+
+Use the checks below before you export or publish.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="../../assets/name-tag-photopea/lesson-1-nameplate/accessible-design-checks-mobile.svg">
+  <img src="../../assets/name-tag-photopea/lesson-1-nameplate/accessible-design-checks.svg" alt="Four accessible-design checks show strong contrast, labels used with colour, open letter shapes with sturdy lines, and a short alt text description for a shared image." style="display:block;width:100%;height:auto">
+</picture>
+
+1. **Use strong contrast.** Dark text on a light background, or light text on a dark background, is usually easier to read. For text shared online, aim for at least `4.5:1`, or `3:1` for large text.
+2. **Do not use colour alone.** Add a label, shape, pattern, or icon when colour carries meaning.
+3. **Keep letters open.** Use lines that are thick enough to print, cut, or engrave. Keep the spaces inside `a`, `e`, and `o` visible.
+4. **Describe digital images.** Add short alt text that explains what another person needs to understand.
+
+## 4. Keep text clear over images
+
+Text can disappear when it sits on a busy photo or changing video.
+
+- Put a solid, high-contrast box behind important text.
+- Use an outline or shadow only when it makes every letter clearer.
+- Avoid heavy 3D effects that change the letter shapes.
+- Check the lightest and darkest parts of the background.
+
+A solid background is often more reliable than adding several effects.
+
+## 5. Test with another person
+
+Show the design without explaining it first.
+
+Ask:
+
+- What did you read first?
+- Which part was hard to see?
+- What did the colours, shapes, or icons mean?
+- What would make the design easier to understand?
+
+Use the answer as evidence. Change one thing, then test again.
+
+## Check your work
+
+Your design is ready when:
+
+- the main words are easy to read when zoomed out;
+- similar characters such as `I`, `l`, and `1` are easy to tell apart;
+- lines are thick enough for the final material or screen;
+- text and background have strong contrast;
+- colour is not the only way information is shown; and
+- important digital images have useful alt text.
+
+## Common issues
+
+- **The font looks good up close but disappears when zoomed out:** use a simpler or heavier font.
+- **Letters close up:** reduce boldness, add spacing, or choose more open letter shapes.
+- **Text disappears over a photo:** add a solid high-contrast background behind it.
+- **A colour change carries all the meaning:** add a label, icon, shape, or pattern.
+- **Alt text repeats every detail:** describe only what a person needs to understand in this context.
+
+::: {.ter-curriculum-relevance}
+**Design curriculum:** Use this guide while creating logos, nameplates, slides, posters, labels, diagrams, and digital interfaces. Accessibility is part of testing and improving a design.
+:::
+
+## Sources and further reading
+
+This page is adapted from the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit?usp=drivesdk).
+
+- [W3C: Understanding text contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)
+- [W3C: Do not use colour alone](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html)
+- [Harvard: Write helpful alt text](https://accessibility.huit.harvard.edu/describe-content-images)
+
+## Summary
+
+You compared font choices, tested them while zoomed out, checked contrast and letter shapes, used more than colour, and planned useful alt text.
+
+Return to [Logo Design](../logo-design/index.qmd) or the [Design & Fabrication home page](../index.qmd).

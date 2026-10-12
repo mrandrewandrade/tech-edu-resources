@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 770" role="img" aria-labelledby="title desc">
+  <title id="title">Four font styles compared at full size and zoomed out</title>
+  <desc id="desc">The name Andrade appears in serif, sans serif, rounded display, and script styles. Each large sample is repeated inside a small nameplate at about twenty-five percent size. The sans serif choice remains the quickest to read.</desc>
+  <rect width="1200" height="770" rx="28" fill="#f6f0df"/>
+  <text x="64" y="70" fill="#1e2928" font-family="Arial, sans-serif" font-size="42" font-weight="700">Zoom out before you choose</text>
+  <text x="64" y="110" fill="#465452" font-family="Arial, sans-serif" font-size="24">A font that looks clear up close may become hard to read when the whole design is visible.</text>
+  <text x="235" y="164" fill="#31513d" font-family="Arial, sans-serif" font-size="22" font-weight="700">LARGE VIEW</text>
+  <text x="805" y="164" fill="#31513d" font-family="Arial, sans-serif" font-size="22" font-weight="700">ZOOMED OUT TO ABOUT 25%</text>
+
+  <g transform="translate(64 188)">
+    <rect width="1072" height="126" rx="18" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="24" y="32" fill="#5f5137" font-family="Arial, sans-serif" font-size="18" font-weight="700">SERIF</text>
+    <text x="170" y="92" fill="#18201f" font-family="Georgia, 'Times New Roman', serif" font-size="63">Andrade</text>
+    <rect x="730" y="25" width="310" height="78" rx="8" fill="#ffffff" stroke="#777" stroke-width="2"/>
+    <rect x="730" y="25" width="78" height="78" rx="8" fill="#e8dfcb"/>
+    <text x="918" y="76" text-anchor="middle" fill="#18201f" font-family="Georgia, 'Times New Roman', serif" font-size="25">Andrade</text>
+  </g>
+
+  <g transform="translate(64 330)">
+    <rect width="1072" height="126" rx="18" fill="#e4f0e7" stroke="#52745e" stroke-width="4"/>
+    <text x="24" y="32" fill="#31513d" font-family="Arial, sans-serif" font-size="18" font-weight="700">SANS SERIF · CLEAREST AT BOTH SIZES</text>
+    <text x="170" y="94" fill="#18201f" font-family="Arial, Verdana, sans-serif" font-size="66" font-weight="700">Andrade</text>
+    <rect x="730" y="25" width="310" height="78" rx="8" fill="#ffffff" stroke="#52745e" stroke-width="3"/>
+    <rect x="730" y="25" width="78" height="78" rx="8" fill="#c8ddcf"/>
+    <text x="918" y="77" text-anchor="middle" fill="#18201f" font-family="Arial, Verdana, sans-serif" font-size="27" font-weight="700">Andrade</text>
+  </g>
+
+  <g transform="translate(64 472)">
+    <rect width="1072" height="126" rx="18" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="24" y="32" fill="#5f5137" font-family="Arial, sans-serif" font-size="18" font-weight="700">ROUNDED OR DISPLAY</text>
+    <text x="170" y="94" fill="#18201f" font-family="'Arial Rounded MT Bold', Arial, sans-serif" font-size="64" font-weight="700">Andrade</text>
+    <rect x="730" y="25" width="310" height="78" rx="8" fill="#ffffff" stroke="#777" stroke-width="2"/>
+    <rect x="730" y="25" width="78" height="78" rx="8" fill="#e8dfcb"/>
+    <text x="918" y="77" text-anchor="middle" fill="#18201f" font-family="'Arial Rounded MT Bold', Arial, sans-serif" font-size="25" font-weight="700">Andrade</text>
+  </g>
+
+  <g transform="translate(64 614)">
+    <rect width="1072" height="126" rx="18" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="24" y="32" fill="#5f5137" font-family="Arial, sans-serif" font-size="18" font-weight="700">SCRIPT OR DECORATIVE</text>
+    <text x="170" y="96" fill="#18201f" font-family="'Brush Script MT', 'Segoe Script', cursive" font-size="70">Andrade</text>
+    <rect x="730" y="25" width="310" height="78" rx="8" fill="#ffffff" stroke="#777" stroke-width="2"/>
+    <rect x="730" y="25" width="78" height="78" rx="8" fill="#e8dfcb"/>
+    <text x="918" y="79" text-anchor="middle" fill="#18201f" font-family="'Brush Script MT', 'Segoe Script', cursive" font-size="29">Andrade</text>
+  </g>
+</svg>
