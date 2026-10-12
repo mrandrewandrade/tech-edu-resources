@@ -8,15 +8,18 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Learning goals
-
-**I will be able to** identify parallel branches and calculate equivalent resistance, source current, branch current, and power.
-
-**This is useful because I can** explain how several loads operate independently from one source.
+You will identify parallel branches and calculate equivalent resistance, source current, branch current, and power. This explains how several loads can operate independently from one source.
 
 **Used in college or university:** Circuit analysis, electrical distribution, instrumentation, and electronics.
 
 **Where you see it:** A car connects lights and control modules in parallel so each receives battery voltage. A robot does the same when several sensors share one supply.
+
+## Class materials
+
+- [Teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
+- [Make a copy of the five-question problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
+- [Formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- **Teacher answers:** restricted
 
 ## Common voltage
 
@@ -75,7 +78,7 @@ Equation @eq-parallel-current-check checks the branch currents. The equivalent r
 
 - [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
 - [Parallel Review and Series Circuits teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
-- [Parallel Review and Series Circuits student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/edit)
+- [Parallel Review and Series Circuits student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
 - [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
 
 Question 1 is the parallel review. Worked solutions for Questions 2 and 4 are on the [Series Circuits notes](series-circuits.qmd#worked-solutions). Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20parallel%20and%20series%20answer%20key).

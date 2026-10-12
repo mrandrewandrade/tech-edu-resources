@@ -8,15 +8,18 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Learning goals
-
-**I will be able to** apply Kirchhoff's current law at a node and Kirchhoff's voltage law around a loop.
-
-**This is useful because I can** write equations for a circuit that cannot be reduced by inspection.
+You will apply Kirchhoff's current law at a node and Kirchhoff's voltage law around a loop. These laws let you write equations for a circuit that cannot be reduced by inspection.
 
 **Used in college or university:** Nodal analysis, mesh analysis, electronics, power systems, and control hardware. [[1, Ch. 9]](../../references.qmd#ref-grob2016)
 
 **Where you see it:** In a car wiring harness, current splits between lights and control modules. In a robot, it splits between the controller, sensors, and motors.
+
+## Class materials
+
+- [Teaching slides](https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit)
+- [Make a copy of the five-question problem set](https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/copy)
+- [Formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- **Teacher answers:** restricted
 
 ## Kirchhoff's current law
 
@@ -52,15 +55,6 @@ Choose one loop direction and keep the signs consistent. A source rise is positi
 4. Replace resistor voltage with $V=IR$.
 5. Solve without rounding, then check every original node and loop equation.
 6. Build the same network in Tinkercad and compare the simulated values.
-
-## Slides and problem set
-
-- [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
-- [Kirchhoff's Laws teaching slides](https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit)
-- [Kirchhoff's Laws student problem set](https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/edit)
-- [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
-
-Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20Kirchhoff%20answer%20key).
 
 ## Worked solutions {#worked-solutions}
 

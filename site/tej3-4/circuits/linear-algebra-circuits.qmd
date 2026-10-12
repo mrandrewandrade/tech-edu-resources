@@ -8,15 +8,18 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Learning goals
-
-**I will be able to** turn node or loop equations into a two- or three-variable system and solve it using elimination, matrices, or software.
-
-**This is useful because I can** find several unknown currents or voltages at the same time.
+You will turn node or loop equations into a two- or three-variable system and solve it using elimination, matrices, or software. The method finds several unknown currents or voltages at the same time.
 
 **Used in college or university:** Linear algebra, numerical methods, circuits, structures, process models, and control. [[28, Chs. 9, 12]](../../references.qmd#ref-chapra2010)
 
 **Where you see it:** A technician can model several currents in a car wiring network at once. A robotics engineer uses the same mathematics for sensor networks, motor currents, and control models.
+
+## Class materials
+
+- [Teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
+- [Make a copy of the five-question problem set](https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/copy)
+- [Formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- **Teacher answers:** restricted
 
 ## A system of equations
 
@@ -82,18 +85,9 @@ A large residual can flag a wrong sign, wrong measurement, or wiring fault.
 <figcaption><a class="ter-figure-label" href="#fig-circuit-matrix-three">Figure 2.</a> Three independent equations solve three unknown currents using the same workflow. <a class="ter-figure-anchor" href="#fig-circuit-matrix-three" aria-label="Link to Figure 2">#</a></figcaption>
 </figure>
 
-## Slides and problem set
-
-- [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
-- [Simultaneous Equations and Matrices teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
-- [Simultaneous Equations and Matrices student problem set](https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/edit)
-- [Kirchhoff's Laws notes](kirchhoffs-laws.qmd)
-
-Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20matrices%20answer%20key).
-
 ## Worked solutions {#worked-solutions}
 
-Use the calculator path from the slides: `HOME → Equation → OK → Simul Equation → OK`, then choose the number of unknowns and enter one coefficient row at a time.
+On the course calculator, the **Casio fx-991ES PLUS C**, press `MODE`, then `5` for **EQN**. Press `1` for two unknowns or `2` for three unknowns. Enter each coefficient in equation order and press `=` after every value; after the final coefficient, each additional `=` displays the next solution. This sequence is verified against the [official Casio fx-991ES PLUS C equation guide](https://support.casio.com/global/en/calc/manual/fx-115ESPLUS_991ESPLUSC_en/using_calculation_modes/equation_calculations.html).
 
 ::: {.callout-note collapse="true" title="Question 2 — Solve a two-by-two system"}
 Enter the rows $(10,-4,6)$ and $(-4,12,3)$.

@@ -8,15 +8,18 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Learning goals
-
-**I will be able to** identify a series circuit and calculate its total resistance, current, voltage drops, and power.
-
-**This is useful because I can** predict every electrical value before building the circuit and check whether my measurements make sense.
+You will identify a series circuit and calculate total resistance, current, voltage drops, and power. This lets you predict electrical values before building and check whether measurements make sense.
 
 **Used in college or university:** Direct-current circuit analysis and circuit laboratories. [[1, Ch. 4]](../../references.qmd#ref-grob2016)
 
 **Where you see it:** In a car, a lamp circuit can form one path through the battery, fuse, switch, and lamp. In a robot, a status light and current-limiting resistor form the same kind of path.
+
+## Class materials
+
+- [Teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
+- [Make a copy of the five-question problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
+- [Formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- **Teacher answers:** restricted
 
 ## Series and parallel
 
@@ -66,15 +69,6 @@ Use Equation @eq-series-voltage-check to check the voltage drops. Also check pow
 ## Calculate then simulate
 
 Calculate the circuit first. Build the same series and parallel circuits in Tinkercad, measure current and voltage, then compare the calculated and simulated values.
-
-## Slides and problem set
-
-- [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
-- [Parallel Review and Series Circuits teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
-- [Parallel Review and Series Circuits student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/edit)
-- [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
-
-Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20series-circuit%20answer%20key).
 
 ## Worked solutions {#worked-solutions}
 

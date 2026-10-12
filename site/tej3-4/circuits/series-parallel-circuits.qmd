@@ -8,15 +8,18 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Learning goals
-
-**I will be able to** identify series and parallel groups, redraw a circuit, reduce it step by step, solve the equivalent circuit, and work back to the original branches.
-
-**This is useful because I can** turn a complicated network into smaller problems and check the final result.
+You will identify series and parallel groups, redraw a circuit, reduce it step by step, solve the equivalent circuit, and work back to the original branches. This turns a complicated network into smaller, checkable problems.
 
 **Used in college or university:** Network reduction, circuit laboratories, electronics, instrumentation, and preparation for Kirchhoff analysis. [[1, Ch. 6]](../../references.qmd#ref-grob2016)
 
 **Where you see it:** A car uses a fuse and switch in series with parallel lamps or control modules. A robot uses the same pattern when one protected supply feeds several sensors while each indicator light has its own series resistor.
+
+## Class materials
+
+- [Teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
+- [Make a copy of the five-question problem set](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy)
+- [Formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- **Teacher answers:** restricted
 
 ## Identify the connections
 
@@ -108,7 +111,7 @@ Use Equations @eq-mixed-current-check and @eq-mixed-voltage-check to check the n
 
 - [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
 - [Series-Parallel Circuits A teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
-- [Series-Parallel Circuits A student question sheet](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/edit)
+- [Series-Parallel Circuits A student question sheet](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy)
 - [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
 - [Complete Series-Parallel Circuits lesson package](../electronics-library/modules/h11-series-parallel-circuits-a.qmd)
 
