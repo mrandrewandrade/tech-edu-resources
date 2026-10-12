@@ -69,7 +69,7 @@ Kirchhoff's voltage law requires the source rise to equal the voltage drops:
 
 $$
 V_3=12.0\,\mathrm{V}-2.4\,\mathrm{V}-4.1\,\mathrm{V}=5.5\,\mathrm{V}.
-$$
+$$ {#eq-kirchhoff-worked-q2-voltage}
 
 **Check:** $12.0-2.4-4.1-5.5=0.0\,\mathrm{V}$.
 :::
@@ -79,11 +79,11 @@ The two loop equations are
 
 $$
 5I_1-2I_2=10
-$$
+$$ {#eq-kirchhoff-worked-q4-left-loop}
 
 $$
 -2I_1+7I_2=6.
-$$
+$$ {#eq-kirchhoff-worked-q4-right-loop}
 
 Solving them gives $I_1=2.645161\ldots\,\mathrm{mA}$ and $I_2=1.612903\ldots\,\mathrm{mA}$.
 
@@ -91,7 +91,7 @@ The shared-branch current is
 
 $$
 I_3=I_1-I_2=1.032258\ldots\,\mathrm{mA}.
-$$
+$$ {#eq-kirchhoff-worked-q4-shared-current}
 
 **Final answers:** $I_1=2.65\,\mathrm{mA}$, $I_2=1.61\,\mathrm{mA}$, and $I_3=1.03\,\mathrm{mA}$.
 :::

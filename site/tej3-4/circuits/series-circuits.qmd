@@ -85,11 +85,11 @@ Questions 2 and 4 are provided as student models. Complete the other questions i
 
 $$
 R_T=R_1+R_2+R_3=6.5\,\mathrm{k\Omega}
-$$
+$$ {#eq-series-worked-q2-resistance}
 
 $$
 I_T=\frac{V_T}{R_T}=\frac{15.0\,\mathrm{V}}{6.5\,\mathrm{k\Omega}}=2.307692\ldots\,\mathrm{mA}
-$$
+$$ {#eq-series-worked-q2-current}
 
 Using $V_k=I_TR_k$ gives $V_1=2.307692\ldots\,\mathrm{V}$, $V_2=5.076923\ldots\,\mathrm{V}$, and $V_3=7.615385\ldots\,\mathrm{V}$.
 
@@ -103,15 +103,15 @@ Using $V_k=I_TR_k$ gives $V_1=2.307692\ldots\,\mathrm{V}$, $V_2=5.076923\ldots\,
 
 $$
 V_R=V_T-V_L=9.0\,\mathrm{V}-6.0\,\mathrm{V}=3.0\,\mathrm{V}
-$$
+$$ {#eq-series-worked-q4-voltage}
 
 $$
 R=\frac{V_R}{I}=\frac{3.0\,\mathrm{V}}{80\times10^{-3}\,\mathrm{A}}=37.5\,\Omega
-$$
+$$ {#eq-series-worked-q4-resistance}
 
 $$
 P_R=V_RI=(3.0\,\mathrm{V})(80\times10^{-3}\,\mathrm{A})=0.240\,\mathrm{W}
-$$
+$$ {#eq-series-worked-q4-power}
 
 **Final answer:** the ideal value is $38\,\Omega$. Choose a common $39\,\Omega$ resistor rated for at least $0.5\,\mathrm{W}$.
 
