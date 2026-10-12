@@ -81,7 +81,7 @@ Everything left of the guide is for the logo. Keep the name to the right of it.
 
 ## 4. Try several fonts
 
-Try at least three fonts. Change only the font at first. This makes the choices easier to compare.
+Select the whole name. Try at least three fonts before choosing one. Change only the font at first. This makes the choices easier to compare.
 
 Try:
 
@@ -89,19 +89,21 @@ Try:
 2. a decorative or rounded font; and
 3. a plain sans serif font.
 
-A **serif** font has small finishing strokes on the letters. Serif fonts are common in printed books and can feel traditional. A **sans serif** font does not have those strokes. Sans serif fonts are often a clearer, more accessible starting point for signs and nameplates.
+A **serif** font has small finishing strokes on the letters. Serif fonts are common in printed books. A **sans serif** font does not have those strokes. Sans serif fonts are often a clearer starting point for signs and nameplates.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="../../assets/name-tag-photopea/lesson-1-nameplate/font-choice-comparison-mobile.svg">
+  <img src="../../assets/name-tag-photopea/lesson-1-nameplate/font-choice-comparison.svg" alt="Four versions of Andrade compare serif, sans serif, rounded display, and script fonts. Sans serif is shown as a strong starting point, while short notes identify engraving and readability risks in the other styles." style="display:block;width:100%;height:auto">
+</picture>
 
 No font is always good or bad. The best font fits the job and stays easy to read.
 
-| Font type | Examples to try | Strong choice for | Use with care when |
-|---|---|---|---|
-| Serif | Georgia, DejaVu Serif, Times New Roman | Printed pages, books, or a traditional look | Thin serifs may disappear when engraved. |
-| Sans serif | DejaVu Sans, Arial, Verdana, Open Sans | Signs, screens, nameplates, and reading from farther away | Extra-light versions may be too thin. |
-| Rounded or geometric | Nunito, Montserrat, Poppins | A friendly or modern logo | Wide letters may crowd a long name. |
-| Bold display | Impact, Cooper Black | A short name or heading | Heavy letters may close the spaces inside letters. |
-| Script or decorative | Brush Script, Pacifico | A personal accent | Joined or detailed letters can be hard to read and engrave. |
+- **Serif:** try Georgia or Times New Roman for a printed-book look. Check the thin strokes.
+- **Sans serif:** try DejaVu Sans, Arial, Verdana, or Open Sans for clear letters.
+- **Rounded or display:** try Nunito, Montserrat, or Impact for personality. Check for crowding.
+- **Script or decorative:** use joined or detailed letters with care. They can be hard to read and engrave.
 
-Font names may vary. Choose a similar font if one in the table is unavailable.
+Font names may vary. Choose a similar font if one is unavailable.
 
 ![Andrade shown in a serif font while the student compares font choices.](../../assets/name-tag-photopea/lesson-1-nameplate/04-try-serif-font.png){fig-alt="The word Andrade shown in a serif font during the font comparison step."}
 
@@ -109,12 +111,10 @@ Ask these questions:
 
 - Can I read the name quickly?
 - Can I tell similar characters apart, such as `I`, `l`, and `1`?
-- Are the lines thick enough to survive engraving?
-- Do the spaces inside letters such as `a`, `e`, and `o` stay open?
-- Does the name fit without stretching or squeezing the letters?
-- Will the letters still be clear when the nameplate is made?
+- Are the lines thick enough to engrave?
+- Do the spaces inside `a`, `e`, and `o` stay open?
 
-Read the name from an arm's length away. If you need extra time to recognize it, try a simpler font. Size, spacing, and contrast also affect accessibility, so choosing a sans serif font is only the first step.
+Read the name from an arm's length away. If you need extra time to recognize it, try a simpler font.
 
 The example ends with **DejaVu Sans Book** at about `300 px`. Another clear sans serif font is also fine.
 
@@ -130,6 +130,24 @@ Use your eyes as well as the numbers. The empty space above and below the name s
 
 ![Andrade in a balanced sans serif font with room for a logo on the left.](../../assets/name-tag-photopea/lesson-1-nameplate/05-balanced-sans-font.png){fig-alt="Andrade in a simple sans serif font, vertically centred with a clear right margin and an empty logo area on the left."}
 
+## Accessible design
+
+Accessible design helps more people see and understand your work. Use these four checks before you export.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="../../assets/name-tag-photopea/lesson-1-nameplate/accessible-design-checks-mobile.svg">
+  <img src="../../assets/name-tag-photopea/lesson-1-nameplate/accessible-design-checks.svg" alt="Four accessible-design checks show strong contrast, labels used with colour, open letter shapes with sturdy lines, and a short alt text description for a shared image." style="display:block;width:100%;height:auto">
+</picture>
+
+1. **Use strong contrast.** Dark letters on a light background, or light letters on a dark background, are usually easier to read. For text shared online, aim for a contrast ratio of at least `4.5:1`, or `3:1` for large text.
+2. **Do not use colour alone.** Add a label, shape, pattern, or icon when colour carries meaning.
+3. **Keep letters open.** Use lines that are thick enough to make. Keep the spaces inside letters such as `a`, `e`, and `o` visible.
+4. **Describe digital images.** If you post the design online, add short alt text that explains what another person needs to know.
+
+Do one final test. Show the design to another person without saying the name first. If they hesitate, improve the font, size, spacing, or contrast.
+
+This section is adapted from the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit?usp=drivesdk). Learn more from the [W3C guidance on text contrast](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), the [W3C guidance on using more than colour](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html), and [Harvard's guide to useful alt text](https://accessibility.huit.harvard.edu/describe-content-images).
+
 ### Check your work
 
 Continue when:
@@ -138,6 +156,7 @@ Continue when:
 - the background is transparent;
 - the left 4 × 4 inch area is empty;
 - the name is easy to read;
+- the letters have strong contrast and open shapes;
 - the name is centred from top to bottom; and
 - there is a good margin on the right.
 

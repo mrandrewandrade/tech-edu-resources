@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Four font styles compared using the name Andrade</title>
+  <desc id="desc">A serif, sans serif, rounded display, and script font are compared. Sans serif is marked as a strong starting point for a nameplate. The other styles have short cautions about thin lines, crowding, or readability.</desc>
+  <rect width="1200" height="760" rx="28" fill="#f6f0df"/>
+  <text x="64" y="72" fill="#1e2928" font-family="Arial, sans-serif" font-size="42" font-weight="700">Try fonts before choosing</text>
+  <text x="64" y="112" fill="#465452" font-family="Arial, sans-serif" font-size="24">Compare the same name. Look for clear letters, open spaces, and strong lines.</text>
+
+  <g transform="translate(64 154)">
+    <rect width="1072" height="125" rx="18" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="28" y="38" fill="#5f5137" font-family="Arial, sans-serif" font-size="21" font-weight="700">SERIF</text>
+    <text x="28" y="94" fill="#18201f" font-family="Georgia, 'Times New Roman', serif" font-size="58">Andrade</text>
+    <text x="550" y="47" fill="#1e2928" font-family="Arial, sans-serif" font-size="24" font-weight="700">Traditional and book-like</text>
+    <text x="550" y="84" fill="#465452" font-family="Arial, sans-serif" font-size="22">Check that thin finishing strokes will engrave clearly.</text>
+  </g>
+
+  <g transform="translate(64 299)">
+    <rect width="1072" height="125" rx="18" fill="#e4f0e7" stroke="#52745e" stroke-width="4"/>
+    <text x="28" y="38" fill="#31513d" font-family="Arial, sans-serif" font-size="21" font-weight="700">SANS SERIF · STRONG STARTING POINT</text>
+    <text x="28" y="96" fill="#18201f" font-family="Arial, Verdana, sans-serif" font-size="60" font-weight="700">Andrade</text>
+    <text x="550" y="47" fill="#1e2928" font-family="Arial, sans-serif" font-size="24" font-weight="700">Clear for signs and nameplates</text>
+    <text x="550" y="84" fill="#465452" font-family="Arial, sans-serif" font-size="22">Choose regular or bold letters, not extra-light ones.</text>
+  </g>
+
+  <g transform="translate(64 444)">
+    <rect width="1072" height="125" rx="18" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="28" y="38" fill="#5f5137" font-family="Arial, sans-serif" font-size="21" font-weight="700">ROUNDED OR DISPLAY</text>
+    <text x="28" y="96" fill="#18201f" font-family="'Arial Rounded MT Bold', Arial, sans-serif" font-size="58" font-weight="700">Andrade</text>
+    <text x="550" y="47" fill="#1e2928" font-family="Arial, sans-serif" font-size="24" font-weight="700">Friendly or bold personality</text>
+    <text x="550" y="84" fill="#465452" font-family="Arial, sans-serif" font-size="22">Watch for crowding and closed spaces inside letters.</text>
+  </g>
+
+  <g transform="translate(64 589)">
+    <rect width="1072" height="125" rx="18" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="28" y="38" fill="#5f5137" font-family="Arial, sans-serif" font-size="21" font-weight="700">SCRIPT OR DECORATIVE</text>
+    <text x="28" y="98" fill="#18201f" font-family="'Brush Script MT', 'Segoe Script', cursive" font-size="62">Andrade</text>
+    <text x="550" y="47" fill="#1e2928" font-family="Arial, sans-serif" font-size="24" font-weight="700">Personal, but use with care</text>
+    <text x="550" y="84" fill="#465452" font-family="Arial, sans-serif" font-size="22">Joined or detailed letters can be hard to read and engrave.</text>
+  </g>
+</svg>
