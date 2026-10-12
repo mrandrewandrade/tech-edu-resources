@@ -69,7 +69,7 @@ def check(root: Path) -> tuple[int, list[str]]:
     for required in ['index.html', 'design-fabrication/index.html',
                      'design-fabrication/design-process/index.html',
                      'design-fabrication/logo-design/index.html',
-                     'design-fabrication/laser-cutting/tool-organizer.html',
+                     'design-fabrication/tools/tool-organizer-gallery/index.html',
                      'tej3-4/index.html',
                      'tej3-4/circuits/index.html',
                      'tej3-4/engineering-preparation-track/index.html',

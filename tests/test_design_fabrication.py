@@ -89,7 +89,6 @@ class DesignFabricationTests(unittest.TestCase):
             'text: "Design & Fabrication Home"',
             'text: "N.I.C.E. Design Process"',
             'text: "Logo Design"',
-            'text: "Tool Organizer Project"',
             'section: "Fabrication Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]
@@ -134,10 +133,10 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_public_pages_do_not_replace_local_safety_instruction(self) -> None:
         landing = self.read("design-fabrication/index.qmd")
-        organizer = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
+        organizer = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
         self.assertNotIn("machine operating procedure", landing.lower())
         self.assertNotIn("machine operating procedure", organizer.lower())
-        self.assertIn("safe handling", organizer)
+        self.assertIn("Mounting hardware must suit", organizer)
 
     def test_homepage_prioritizes_reusable_resources(self) -> None:
         home = self.read("index.qmd")
@@ -167,11 +166,11 @@ class DesignFabricationTests(unittest.TestCase):
         for project in (
             "N.I.C.E. Design Process",
             "Logo Design",
-            "Tool Organizer Project",
+            "Tool Organizer Gallery",
         ):
             self.assertIn(project, landing)
-        organizer = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
-        for step in ("Measure the tools", "Make a small fit test", "build the prototype", "record the next revision"):
+        organizer = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
+        for step in ("Measure the real tools", "Make a small fit test", "complete prototype", "record the next revision"):
             self.assertIn(step, organizer)
 
     def test_digital_design_and_modelling_branches_are_explicit(self) -> None:
@@ -184,7 +183,7 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_tool_organizer_gallery_preserves_evidence_status(self) -> None:
         gallery = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
-        for term in ("DESIGN", "BUILD", "FEEDBACK", "REVISION", "TIJ1OR-E Knife Holder Design", "Revision 2", "March 22, 2024", "finished-project photo pending", "35°", "French cleat"):
+        for term in ("DESIGN", "BUILD", "FEEDBACK", "REVISION", "TIJ1OR-E Knife Holder Design", "Revision 2", "March 22, 2024", "project photos pending", "35°", "French cleat", "Visible inventory", "Clear labels", "Freestanding stability", "Stacking or modularity"):
             self.assertIn(term, gallery)
         self.assertIn("No substitute image has been invented", gallery)
 
@@ -234,7 +233,7 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_course_code_queries_have_specific_pages(self) -> None:
         expectations = {
-            "tool organizer": "design-fabrication/laser-cutting/tool-organizer.qmd",
+            "tool organizer": "design-fabrication/tools/tool-organizer-gallery/index.qmd",
             "logo design": "design-fabrication/logo-design/index.qmd",
             "design process": "design-fabrication/design-process/index.qmd",
             "fabrication plate builder": "design-fabrication/tools/plate-builder/index.qmd",
@@ -253,8 +252,8 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_library_and_curriculum_cross_link(self) -> None:
         library = self.read("teaching-materials/laser-cutting/index.qmd")
-        curriculum = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
-        self.assertIn("design-fabrication/laser-cutting/tool-organizer.qmd", library)
+        curriculum = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
+        self.assertIn("design-fabrication/tools/tool-organizer-gallery/index.qmd", library)
         self.assertIn("teaching-materials/laser-cutting", curriculum)
 
     def legacy_first_laser_projects_toolkit_is_complete(self) -> None:
@@ -394,7 +393,7 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_first_laser_projects_toolkit_is_complete(self) -> None:
         landing = self.read("design-fabrication/index.qmd")
-        organizer = self.read("design-fabrication/laser-cutting/tool-organizer.qmd")
+        organizer = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
         logo = self.read("design-fabrication/logo-design/index.qmd")
         nav = self.read("_quarto.yml")
 
@@ -410,7 +409,7 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertIn(tool, logo)
         self.assertEqual(logo.count("youtube.com/watch"), 4)
         for phrase in (
-            "measure real tools",
+            "Measure the real tools",
             "Fabrication Plate Builder",
             "Laser-Cut Leg & Support Builder",
             "small fit test",

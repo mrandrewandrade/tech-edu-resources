@@ -19,14 +19,12 @@ project:
     - "design-fabrication/design-process/**/*.qmd"
     - "design-fabrication/logo-design/index.qmd"
     - "design-fabrication/logo-design/**/*.qmd"
-    - "design-fabrication/laser-cutting/**/*.qmd"
     - "design-fabrication/01-nice-design-process/index.qmd"
     - "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"
     - "design-fabrication/02-digital-design/03-logos-lettermarks.qmd"
     - "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"
     - "design-fabrication/03-laser-cutting/index.qmd"
     - "design-fabrication/03-laser-cutting/01-name-logo.qmd"
-    - "design-fabrication/03-laser-cutting/06-tool-holder.qmd"
     - "design-fabrication/tools/plate-builder/**/*.qmd"
     - "design-fabrication/tools/leg-builder/**/*.qmd"
     - "design-fabrication/tools/tool-organizer-gallery/**/*.qmd"
@@ -131,8 +129,6 @@ website:
           href: design-fabrication/design-process/index.qmd
         - text: "Logo Design"
           href: design-fabrication/logo-design/index.qmd
-        - text: "Tool Organizer Project"
-          href: design-fabrication/laser-cutting/tool-organizer.qmd
         - section: "Fabrication Tools"
           href: teaching-materials/laser-cutting/index.qmd
           contents:

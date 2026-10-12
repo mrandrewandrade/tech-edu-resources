@@ -18,7 +18,7 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn('title: "Design & Fabrication"', design)
         self.assertIn("N.I.C.E. Design Process", design)
         self.assertIn("Logo Design", design)
-        self.assertIn("Tool Organizer Project", design)
+        self.assertIn("Tool Organizer Gallery", design)
         self.assertIn("Fabrication Plate Builder", design)
         self.assertIn('title="Work in progress"', tej)
         self.assertIn("## Available units", tej)
