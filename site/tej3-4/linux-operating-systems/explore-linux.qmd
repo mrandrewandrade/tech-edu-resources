@@ -2,21 +2,16 @@
 title: "Set Up Your Accounts and Explore Linux"
 description: "Create accounts for yourself and two other students, personalize Linux Mint, test networking, install software, and begin a Bashcrawl command-line adventure."
 categories: [Linux, Linux Mint, accounts, networking, software, Bash, Git, Bashcrawl]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
 ---
 
 The main goal of this assignment is simple: **have fun with Linux and make the computer useful.** You will create real accounts, explore the desktop, connect to the network, install something interesting, and finish with a short command-line adventure.
 
-## Learning goals
+## Class materials
 
-By the end of this page:
-
-- I will be able to create and test an administrator account for myself and standard accounts for two other students who share the computer.
-- I will be able to personalize Linux Mint and find useful settings with the graphical user interface (GUI).
-- I will be able to check a network connection and install trusted software with Software Manager.
-- I will be able to use a few basic terminal commands and download Bashcrawl with Git.
-- I will be able to export my Bash command history as evidence of my learning.
-
-This is important because it enables me to turn a fresh Linux installation into a computer that people can enjoy, use safely, and continue learning from.
+- [Linux Start Here slides](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit)
+- [Make a copy of the Explore Linux assignment](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy)
 
 ## What you already know
 
@@ -32,7 +27,7 @@ You need:
 - the `min` account and classroom password `pcss`;
 - the account names or aliases supplied for the two other students;
 - the classroom Wi-Fi credentials; and
-- the editable [Explore Linux Digital Submission Google Doc](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/edit?usp=drivesdk). The [website preview](explore-linux-submission.qmd) explains the same deliverables.
+- your copy of the Explore Linux assignment.
 
 ::: {.callout-warning title="Use only the assigned classroom computer"}
 Do not change accounts or files on another computer. Do not use guest Wi-Fi, scan the school network, or try to connect to another person's computer. Never submit or write a password in your Google Doc.
@@ -148,51 +143,140 @@ For this assignment, use Software Manager and the official Bashcrawl GitLab repo
 
 The **terminal** is a text-based way to give instructions to the operating system. It is not automatically better than the GUI. It is useful when a task is faster, clearer, repeatable, or only available as a command.
 
-Open Terminal and run each command separately:
+Open Terminal and run one command at a time. Input blocks are black and copyable. Example output is shown separately and is not a command.
+
+### Show the current user
+
+::: {.ter-terminal-input}
+**Input**
 
 ```bash
 whoami
-hostname
-pwd
-ls
 ```
+:::
 
-Example output:
+::: {.ter-terminal-output}
+**Example output**
 
 ```text
 sam
+```
+:::
+
+`whoami` prints the account currently using the terminal. Your username will be different.
+
+### Show the computer name
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+hostname
+```
+:::
+
+::: {.ter-terminal-output}
+**Example output**
+
+```text
 min-tej-14
+```
+:::
+
+`hostname` prints the computer's network name. Classroom computers should not all have the same name.
+
+### Show the current location
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+pwd
+```
+:::
+
+::: {.ter-terminal-output}
+**Example output**
+
+```text
 /home/sam
+```
+:::
+
+`pwd` means **print working directory**. A directory is a folder, and the output is the path to your current location.
+
+### List visible files and folders
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+ls
+```
+:::
+
+::: {.ter-terminal-output}
+**Example output**
+
+```text
 Desktop  Documents  Downloads  Music  Pictures
 ```
+:::
 
-Your username, computer name, home folder, and file list will be different. The command appears after the prompt, and the lines below it are the computer's output. Do not copy the example as if it came from your computer.
-
-| Command | What it shows |
-|:--|:--|
-| `whoami` | The account currently using the terminal |
-| `hostname` | The computer's network name |
-| `pwd` | The path of the current working directory |
-| `ls` | The visible files and directories in the current location |
+`ls` lists the visible contents of the current directory. Names vary by account and computer.
 
 Use the **Up Arrow** to bring back your previous command. Press **Tab** while typing a file or directory name to try automatic completion.
 
 ### A quick network check
 
-Run:
+Show the network interfaces and addresses:
+
+::: {.ter-terminal-input}
+**Input**
 
 ```bash
 ip -brief address
+```
+:::
+
+::: {.ter-terminal-output}
+**Example output**
+
+```text
+lo      UNKNOWN  127.0.0.1/8
+wlp2s0  UP       192.168.1.24/24
+```
+:::
+
+The interface names and private addresses vary. Keep usernames and local addresses in the private class submission when evidence is required.
+
+Show the path used to reach other networks:
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
 ip route
 ```
+:::
 
-The first command shows network interfaces and addresses. The second normally includes a `default` route, which is the path the computer uses to reach other networks.
+::: {.ter-terminal-output}
+**Example output**
+
+```text
+default via 192.168.1.1 dev wlp2s0
+```
+:::
 
 With teacher approval, you may also try:
+
+::: {.ter-terminal-input}
+**Input**
 
 ```bash
 ping -c 4 andrewandrade.ca
 ```
+:::
 
 Some school networks block ping. If it is blocked, record the result and use the working website in your browser as your main internet test.
 
@@ -202,55 +286,120 @@ Some school networks block ping. If it is blocked, record the result and use the
 
 First, confirm that Git is installed:
 
+::: {.ter-terminal-input}
+**Input**
+
 ```bash
 git --version
 ```
+:::
 
-Example output:
+::: {.ter-terminal-output}
+**Example output**
 
 ```text
 git version 2.43.0
 ```
+:::
 
 Your version number may differ. If the terminal says the command was not found, return to Software Manager and install Git.
 
-Create a Games directory, enter it, and download the official game repository:
+Return to your home directory. `~` is a shortcut for your home path.
+
+::: {.ter-terminal-input}
+**Input**
 
 ```bash
 cd ~
-mkdir -p Games
-cd Games
-git clone https://gitlab.com/slackermedia/bashcrawl.git
-cd bashcrawl/entrance
-cat scroll
 ```
+:::
 
-The clone step should begin with output similar to:
+Create a Games directory. `mkdir` means **make directory**; `-p` avoids an error if the directory already exists.
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+mkdir -p Games
+```
+:::
+
+Enter the directory. This is a **relative path** because `Games` is named from the current location instead of beginning at the filesystem root.
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+cd Games
+```
+:::
+
+Download the official Bashcrawl repository into a new `bashcrawl` folder.
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+git clone https://gitlab.com/slackermedia/bashcrawl.git
+```
+:::
+
+::: {.ter-terminal-output}
+**Example output**
 
 ```text
 Cloning into 'bashcrawl'...
 remote: Enumerating objects...
 Receiving objects: 100% (...)
 ```
+:::
 
-The numbers will differ. When `cat scroll` works, the terminal prints the first game clue.
+`git clone` downloads a working copy of a repository. It does not require `sudo`. Never add `sudo` to this command.
 
-`git clone` downloads a working copy of a repository into a new directory. It does not require `sudo`. Never add `sudo` to this command.
+Enter the game's entrance directory.
 
-You are now playing. Read the clues and use the commands the game teaches you. Helpful starting commands are:
+::: {.ter-terminal-input}
+**Input**
 
 ```bash
-pwd
-ls
-ls -a
-cat filename
-cd directory
-cd ..
+cd bashcrawl/entrance
 ```
+:::
+
+List the entrance files, then read the first clue.
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+ls
+```
+:::
+
+::: {.ter-terminal-input}
+**Input**
+
+```bash
+cat scroll
+```
+:::
+
+`cat` prints a file's contents. The first clue tells you what to inspect next.
+
+Use these commands one at a time as the clues require them:
+
+- `pwd` checks your current location;
+- `ls` lists visible contents;
+- `ls -a` also shows names that begin with a dot;
+- `cat filename` reads a named file;
+- `cd directory` enters a directory you can see; and
+- `cd ..` moves to the parent directory.
 
 Replace `filename` and `directory` with names you actually see. Do not type the angle brackets shown in some game instructions.
 
-Play for at least **20 minutes**. Finishing the game is optional. Curiosity, careful reading, and trying commands are the point.
+If you are in the wrong directory, run `pwd`, use `cd ..` to move up one level, and use `ls` before choosing the next path. To begin again without deleting anything, run `cd ~/Games/bashcrawl/entrance`.
+
+Finishing the game is optional. Curiosity, careful reading, and trying commands are the point.
 
 If a game instruction asks you to run a command you do not understand, read the clue again, use `command --help`, or ask your teacher. Do not use `sudo` anywhere in Bashcrawl.
 
@@ -281,7 +430,7 @@ Open `linux-bash-history.txt` with the GUI and read it before submitting it to G
 The file must not contain passwords, private information, access tokens, or Wi-Fi credentials. Passwords entered into a normal password prompt are not shown in Bash history. If you accidentally typed a password as part of a command, do not submit the file. Tell your teacher and change that password.
 :::
 
-Complete the editable [Explore Linux Digital Submission Google Doc](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/edit?usp=drivesdk). You can also read the [website preview of the handout](explore-linux-submission.qmd).
+Complete your copy of the [Explore Linux assignment](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy).
 
 Submit exactly **two files** in Google Classroom:
 

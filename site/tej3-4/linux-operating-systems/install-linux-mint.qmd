@@ -2,9 +2,16 @@
 title: "Install Linux Mint 22.3 Xfce"
 description: "Install Linux Mint 22.3 Zena Xfce Edition on an approved classroom computer and record the result."
 categories: [Linux, Linux Mint, Xfce, installation, operating systems]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
 ---
 
 Linux Mint is a Linux operating system that usually **just works** and is easy for new users. We are installing **Linux Mint 22.3 “Zena” Xfce Edition**. Xfce has a familiar, classic Windows-like layout and uses fewer system resources, which makes it a good fit for our older computers with less than 8 GB of RAM.
+
+## Class materials
+
+- [Linux Start Here slides](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit)
+- [Make a copy of the Linux Mint Installation assignment](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy)
 
 ::: {.callout-danger title="This lab erases the computer"}
 Choose **Erase disk and install Linux Mint** only on the classroom computer assigned by your teacher. This deletes Windows, accounts, programs, and every file on the selected drive. Stop and ask your teacher before continuing if you are not certain that the computer and drive are approved.
@@ -19,7 +26,7 @@ You need:
 - the assigned classroom computer;
 - a Linux Mint 22.3 “Zena” Xfce USB installer signed out from your teacher;
 - the classroom Wi-Fi credentials; and
-- the editable [Linux Mint Installation Digital Submission Google Doc](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk). The [website preview](install-linux-mint-submission.qmd) explains the same deliverables.
+- your copy of the Linux Mint Installation assignment.
 
 Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.
 
@@ -210,7 +217,7 @@ If you finish early, choose one optional challenge:
 
 ## Google Classroom submission
 
-Complete the editable [Linux Mint Installation Digital Submission Google Doc](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk). You can also read the [website preview of the handout](install-linux-mint-submission.qmd).
+Complete your copy of the [Linux Mint Installation assignment](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy).
 
 Submit **one Google Doc** in Google Classroom. The submission page gives you the required headings, screenshot, reflection questions, final checklist and **Above and beyond** section.
 
