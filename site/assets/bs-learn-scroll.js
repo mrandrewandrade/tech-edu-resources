@@ -101,7 +101,7 @@
   }
 
   function nextLesson(manifest, lesson) {
-    if (!lesson || !lesson.next_route) {
+    if (!lesson || !lesson.next_route || lesson.next_starts_new_track) {
       return null;
     }
     const lessons = lessonsFromManifest(manifest);
@@ -589,7 +589,27 @@
     return divider;
   }
 
-  function createEndState() {
+  function createTransitionNotice(currentLesson, nextLessonRecord) {
+    const notice = document.createElement("section");
+    const message = document.createElement("p");
+    const link = document.createElement("a");
+    notice.className = "bs-learn-transition-notice";
+    notice.dataset.bsLearnTransition = nextLessonRecord.route;
+    notice.setAttribute("role", "status");
+    notice.setAttribute("aria-live", "polite");
+    message.append(
+      document.createTextNode(
+        "You reached the end of " + currentLesson.title + ". Keep scrolling to continue to "
+      )
+    );
+    link.href = browserRoute(nextLessonRecord.route);
+    link.textContent = nextLessonRecord.title;
+    message.append(link, document.createTextNode("."));
+    notice.appendChild(message);
+    return notice;
+  }
+
+  function createEndState(lesson) {
     const end = document.createElement("section");
     const message = document.createElement("p");
     const link = document.createElement("a");
@@ -608,10 +628,11 @@
     }
     end.className = "bs-learn-scroll-end";
     end.dataset.bsLearnScrollEnd = "";
-    message.textContent = "You have reached the end of the current lessons.";
-    link.href = courseHome;
+    message.textContent = "You reached the end of this learning path. ";
+    link.href = lesson && lesson.course_hub ? browserRoute(lesson.course_hub) : courseHome;
     link.textContent = courseLabel;
-    end.append(message, link);
+    message.appendChild(link);
+    end.append(message);
     return end;
   }
 
@@ -887,16 +908,16 @@
         }
         synchronizeActiveLesson(lessonRecords[0]);
 
-        function showEndState() {
+        function showEndState(currentLesson) {
           if (!main.querySelector("[data-bs-learn-scroll-end]")) {
-            main.appendChild(createEndState());
+            main.appendChild(createEndState(currentLesson));
           }
         }
 
         function addSentinel(currentLesson) {
           const followingLesson = nextLesson(manifest, currentLesson);
           if (!followingLesson) {
-            showEndState();
+            showEndState(currentLesson);
             return;
           }
 
@@ -904,6 +925,7 @@
           sentinel.className = "bs-learn-scroll-sentinel";
           sentinel.dataset.bsLearnScrollSentinel = followingLesson.route;
           sentinel.setAttribute("aria-live", "polite");
+          main.appendChild(createTransitionNotice(currentLesson, followingLesson));
           main.appendChild(sentinel);
 
           function attemptLoad() {

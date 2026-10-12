@@ -1,87 +1,18 @@
 ---
 title: "N.I.C.E. Design Process"
-subtitle: "Understand the situation, design for real needs, test ideas, and improve."
 description: "A visual table of contents for the N.I.C.E. human-centred design process."
 sidebar: design-fabrication
 page-layout: full
 toc: false
-body-classes: "ter-design-fabrication bs-title-eyebrow"
-execute:
-  enabled: false
+body-classes: "ter-design-fabrication bs-learn-track-index"
+execute: {enabled: false}
 ---
 
-The N.I.C.E. process keeps the user and the evidence in view from the first question to the next version.
+The N.I.C.E. process keeps the user and the evidence in view from the first question to the next version. Use the matching worksheet beside the step where you need it.
 
 ![The N.I.C.E. design process grows from a clearly described situation through Needs, Inquiry, Create and Communicate, and Evaluate. The cycle repeats as evidence improves the design.](../../assets/nice-design-process/lighthouse-garden.png){fig-alt="A lighthouse garden illustration shows the N.I.C.E. design cycle repeating upward from a rock labelled Situation."}
 
-## What you will learn
-
-- describe the situation without mixing facts, assumptions, and interpretations;
-- identify the user's needs, necessities, and priorities;
-- investigate several ideas before choosing one;
-- communicate an idea clearly enough to receive useful feedback; and
-- evaluate evidence, improve the design, and begin the next cycle.
-
-## Lessons
-
-::: {.ter-path-grid}
-::: {.ter-path-card}
-### 1. Situation
-
-Separate facts, assumptions, and interpretations before naming the problem.
-
-[Open the lesson](01-situation.qmd)
-:::
-::: {.ter-path-card}
-### 2. User Needs
-
-Describe what the user is trying to do without choosing the product first.
-
-[Open the lesson](02-user-needs.qmd)
-:::
-::: {.ter-path-card}
-### 3. Necessities & Nice-to-Haves
-
-Separate what must work from what would improve the design.
-
-[Open the lesson](03-necessities-nice-to-haves.qmd)
-:::
-::: {.ter-path-card}
-### 4. Rank the Priorities
-
-Score the nice-to-haves so the most useful improvements guide the design.
-
-[Open the lesson](04-rank-priorities.qmd)
-:::
-::: {.ter-path-card}
-### 5. Investigate & Inquire
-
-Brainstorm, study existing ideas, ask useful questions, and choose what to test.
-
-[Open the lesson](05-investigate-inquire.qmd)
-:::
-::: {.ter-path-card}
-### 6. Create & Communicate
-
-Show the idea, pitch it clearly, and ask for specific feedback.
-
-[Open the lesson](06-create-communicate.qmd)
-:::
-::: {.ter-path-card}
-### 7. Evaluate & Repeat
-
-Compare the evidence with the situation and priorities, then improve the next version.
-
-[Open the lesson](07-evaluate-repeat.qmd)
-:::
-::: {.ter-path-card}
-### 8. Supply Chain & Life Cycle
-
-Follow materials, making, use, repair, and end-of-life decisions beyond the first prototype.
-
-[Open the lesson](08-supply-chain-life-cycle.qmd)
-:::
-:::
+{{< include ../../includes/generated/design-fabrication-design-process-toc.md >}}
 
 ## Class materials
 

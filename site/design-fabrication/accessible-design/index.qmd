@@ -1,55 +1,15 @@
 ---
 title: "Accessible Design"
-subtitle: "Make graphics easier to see, read, understand, print, and fabricate."
-description: "A lesson sequence based on the Graphics Accommodation Guide, with practical classroom examples."
+description: "Make graphics easier to see, read, understand, print, and fabricate."
 sidebar: design-fabrication
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-track-index"
-execute:
-  enabled: false
+execute: {enabled: false}
 ---
 
-Accessible design is part of good design. Use these lessons with logos, nameplates, slides, posters, labels, diagrams, interfaces, and fabricated objects.
+Accessible design is part of good design. Use this short sequence with logos, nameplates, slides, posters, labels, diagrams, interfaces, and fabricated objects.
 
-## What you will learn
+{{< include ../../includes/generated/design-fabrication-accessible-design-toc.md >}}
 
-- describe important images for people using screen readers;
-- choose readable type and use text effects carefully;
-- understand hue, saturation, value, opacity, and common colour models; and
-- test contrast and output on screens, prints, and real materials.
-
-## Lessons
-
-::: {.ter-path-grid}
-::: {.ter-path-card}
-### 1. Access & Alt Text
-
-Understand why accommodation matters and describe what an image contributes.
-
-[Open the lesson](01-access-and-alt-text.qmd)
-:::
-::: {.ter-path-card}
-### 2. Fonts & Text Effects
-
-Compare typefaces, zoom out, and test backgrounds, outlines, shadows, and 3D effects.
-
-[Open the lesson](02-fonts-and-text-effects.qmd)
-:::
-::: {.ter-path-card}
-### 3. Understanding Colour
-
-Connect human colour perception with hue, saturation, value, RGB, CMYK, and opacity.
-
-[Open the lesson](03-understanding-colour.qmd)
-:::
-::: {.ter-path-card}
-### 4. Contrast & Output
-
-Use colour for emphasis without relying on colour alone, then test screen, print, and fabrication output.
-
-[Open the lesson](04-contrast-and-output.qmd)
-:::
-:::
-
-The lesson text is reorganized from the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit). Source links and graphic descriptions are retained in the relevant lesson.
+The lessons paraphrase and reorganize the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit). Source links and graphic descriptions are retained in the relevant lesson.

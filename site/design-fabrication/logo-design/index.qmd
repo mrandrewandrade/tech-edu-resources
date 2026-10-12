@@ -1,67 +1,20 @@
 ---
 title: "Photopea: Nameplate and Logo"
-description: "Make nameplate text, trace a rough logo, and combine both into one clean design."
+description: "Make nameplate text, trace a rough logo, combine both, and defend an original design."
 sidebar: design-fabrication
 page-layout: full
-body-classes: "ter-design-fabrication bs-learn-track-index"
 toc: false
-execute:
-  enabled: false
+body-classes: "ter-design-fabrication bs-learn-track-index"
+execute: {enabled: false}
 ---
 
-Learn Photopea by making a nameplate and logo. Complete the lessons in order, then make your own design.
+Learn Photopea by making something in every lesson. Photoshop and GIMP can do similar work, but Photopea is the browser-based class workflow.
 
-## Choose a tool
+{{< include ../../includes/generated/design-fabrication-logo-design-toc.md >}}
 
-| Tool | Best reason to use it |
-|---|---|
-| [Photopea](https://www.photopea.com/) | Runs in a browser and is the class default. |
-| [GIMP](https://www.gimp.org/) | Free desktop image editor. |
-| [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) | Industry-standard commercial image editor. |
+## Short build-first videos
 
-Use Photopea unless your teacher approves another tool. Keep the editable source file and export a PNG or JPG for use.
-
-## Lessons
-
-::: {.ter-path-grid}
-::: {.ter-path-card}
-### 1. Build the Nameplate Text
-
-Make an 11 × 4 inch file, leave room for a logo, and choose a readable font.
-
-[Open Lesson 1](01-nameplate-text-photopea.qmd)
-:::
-::: {.ter-path-card}
-### 2. Trace a Rough Logo
-
-Turn a photographed drawing into clean, editable vector lines.
-
-[Open Lesson 2](rough-sketch-to-svg-photopea.qmd)
-:::
-::: {.ter-path-card}
-### 3. Combine Logo & Nameplate
-
-Follow the worked ANDRADE example and export the complete design.
-
-[Open Lesson 3](03-combine-logo-nameplate.qmd)
-:::
-::: {.ter-path-card}
-### 4. Design Your Own Name Tag
-
-Use the tutorial skills to make and defend an original name-and-logo design.
-
-[Open the project](../03-laser-cutting/01-name-logo.qmd)
-:::
-:::
-
-Use [Accessible Design](../accessible-design/index.qmd) to compare fonts, test readability, check contrast, and write useful alt text.
-
-## Make something
-
-- [Gaming / Roblox character logo](https://www.youtube.com/watch?v=mchoizRTY-s)
-- [Apex Legends thumbnail](https://www.youtube.com/watch?v=t9V6Wp_OnQk)
-- [Make a YouTube logo in under five minutes](https://www.youtube.com/watch?v=QmB14oyGWcw)
-- [Photopea beginner crash course](https://www.youtube.com/watch?v=6dwSRbkSuq8)
-
-Pick one video, make your own version, then change the wording, colours, images, spacing, and layout so the result fits your purpose.
-
+- [Gaming or Roblox character logo](https://www.youtube.com/watch?v=mchoizRTY-s): notice how a rough character idea becomes a compact mark.
+- [Apex Legends thumbnail](https://www.youtube.com/watch?v=t9V6Wp_OnQk): watch how contrast and hierarchy make one idea visible quickly.
+- [Make a YouTube logo in under five minutes](https://www.youtube.com/watch?v=QmB14oyGWcw): make a simple mark, then revise it with the accessibility checks.
+- [Photopea beginner crash course](https://www.youtube.com/watch?v=6dwSRbkSuq8): use this when you need a tour of the interface.

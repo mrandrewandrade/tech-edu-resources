@@ -1,88 +1,123 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "courses": [
     {
       "id": "design-fabrication",
       "title": "General Design & Fabrication",
+      "hub": "design-fabrication/index.qmd",
+      "sidebar_id": "design-fabrication",
       "units": [
         {
-          "id": "design-nice",
-          "order": 1,
-          "title": "1. N.I.C.E. Design Process",
+          "id": "culture-land", "order": 1, "title": "Culture and Land-Based Learning", "hub": "design-fabrication/culture-land-based-learning/index.qmd",
+          "summary": "Connect design decisions to place, story, seasons, and respectful observation.",
+          "use": "These activities help students notice context before deciding what to make.",
           "lessons": [
-            {"order": 1, "title": "Needs & Necessities", "source": "design-fabrication/01-nice-design-process/01-needs-necessities.qmd"},
-            {"order": 2, "title": "Investigate & Inquire", "source": "design-fabrication/01-nice-design-process/02-investigate-inquire.qmd"},
-            {"order": 3, "title": "Create & Communicate", "source": "design-fabrication/01-nice-design-process/03-create-communicate.qmd"},
-            {"order": 4, "title": "Prototype, Evaluate & Iterate", "source": "design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.qmd"}
+            {"order": 1, "title": "Grandmother Moon, Seasons, and Turtle's Back", "source": "design-fabrication/culture-land-based-learning/grandmother-moon-seasons.qmd", "summary": "Read seasonal patterns and use a turtle-shell model to organize observations.", "use": "Pattern, place, and careful observation support design and environmental learning.", "status": "published", "resources": []},
+            {"order": 2, "title": "Land Lettermark", "source": "design-fabrication/culture-land-based-learning/land-lettermark.qmd", "summary": "Build a lettermark from a place-based observation and document the design choice.", "use": "The activity connects visual identity, audience, and responsibility to place.", "status": "published", "resources": [{"label": "TAS Slides", "url": "https://docs.google.com/presentation/d/1IuxxzckOhtdac5ZUhM-p5MgA0eHCq2Kb6yKLBXnOECI/edit"}, {"label": "TEJ Slides", "url": "https://docs.google.com/presentation/d/18YyZQx0m79TxRGB4GeChARpDlBSWNPFWGT17kHPL0kA/edit"}]}
           ]
         },
         {
-          "id": "design-digital",
-          "order": 2,
-          "title": "2. Digital Design & Communication",
+          "id": "design-process", "order": 2, "title": "N.I.C.E. Design Process", "hub": "design-fabrication/design-process/index.qmd",
+          "summary": "Move from a real situation to evidence, criteria, ideas, feedback, and revision.",
+          "use": "The process makes design decisions explainable and repeatable in any project.",
           "lessons": [
-            {"order": 1, "title": "Photopea 1: Build the Nameplate Text", "source": "design-fabrication/logo-design/01-nameplate-text-photopea.qmd"},
-            {"order": 2, "title": "Photopea 2: Trace a Rough Logo", "source": "design-fabrication/logo-design/rough-sketch-to-svg-photopea.qmd"},
-            {"order": 3, "title": "Photopea 3: Combine Logo + Name", "source": "design-fabrication/logo-design/03-combine-logo-nameplate.qmd"},
-            {"order": 4, "title": "Your Turn: Your Name + Logo", "source": "design-fabrication/03-laser-cutting/01-name-logo.qmd"},
-            {"order": 5, "title": "Raster, Vector & SVG", "source": "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"},
-            {"order": 6, "title": "2D Animation", "source": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"}
+            {"order": 1, "title": "Understand the Situation", "source": "design-fabrication/design-process/situation.qmd", "summary": "Separate facts, assumptions, and interpretations before defining the problem.", "use": "A clear situation prevents a team from solving the wrong problem.", "status": "published", "resources": [{"label": "Worksheet", "url": "https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy"}]},
+            {"order": 2, "title": "Record User Needs", "source": "design-fabrication/design-process/user-needs.qmd", "summary": "Observe and record what people actually need in the setting.", "use": "Evidence about users guides safer and more useful designs.", "status": "published", "resources": [{"label": "Worksheet", "url": "https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy"}]},
+            {"order": 3, "title": "Necessities and Nice-to-Haves", "source": "design-fabrication/design-process/necessities-nice-to-haves.qmd", "summary": "Separate non-negotiable constraints from preferences.", "use": "The distinction keeps safety and function visible when trade-offs appear.", "status": "published", "resources": [{"label": "Worksheet", "url": "https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy"}]},
+            {"order": 4, "title": "Rank Priorities", "source": "design-fabrication/design-process/rank-priorities.qmd", "summary": "Rank preferences so the most valuable improvements stay visible.", "use": "Priorities help a team compare ideas without treating every wish as equal.", "status": "published", "resources": [{"label": "Worksheet", "url": "https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy"}]},
+            {"order": 5, "title": "Investigate and Inquire", "source": "design-fabrication/design-process/investigate-inquire.qmd", "summary": "Research, observe, measure, collect precedents, and generate several ideas.", "use": "Investigation replaces guesses with evidence and expands the possible solutions.", "status": "published", "resources": [{"label": "Worksheet", "url": "https://docs.google.com/document/d/1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho/copy"}]},
+            {"order": 6, "title": "Create and Communicate", "source": "design-fabrication/design-process/create-communicate.qmd", "summary": "Develop an idea, make the proposal understandable, pitch it, and collect feedback.", "use": "Clear communication lets other people test, question, and improve a proposal.", "status": "published", "resources": [{"label": "Worksheet", "url": "https://docs.google.com/document/d/1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs/copy"}]},
+            {"order": 7, "title": "Evaluate and Repeat", "source": "design-fabrication/design-process/evaluate-repeat.qmd", "summary": "Score ideas against necessities and priorities, then revise the strongest option.", "use": "Evaluation turns feedback and test results into defensible improvements.", "status": "published", "resources": [{"label": "Worksheet", "url": "https://docs.google.com/document/d/1O_j4gcsUT0ELFpgJk3GiyG6B1l5brKPko-6lO8HQPfk/copy"}]},
+            {"order": 8, "title": "Supply Chain and Life Cycle", "source": "design-fabrication/design-process/supply-chain-life-cycle.qmd", "summary": "Follow a product through materials, manufacture, use, repair, reuse, and disposal.", "use": "Life-cycle thinking reveals costs and effects that are easy to miss at fabrication time.", "status": "published", "resources": []}
           ]
         },
         {
-          "id": "design-laser",
-          "order": 3,
-          "title": "3. Laser Cutting & 2D Fabrication",
+          "id": "logo-design", "order": 3, "title": "Logo Design in Photopea", "hub": "design-fabrication/logo-design/index.qmd",
+          "summary": "Learn browser-based graphic design by building a nameplate and logo in four short projects.",
+          "use": "The sequence develops editable vector artwork for signs, labels, slides, and fabrication.",
           "lessons": [
-            {"order": 1, "title": "Make It Stand", "source": "design-fabrication/03-laser-cutting/02-make-it-stand.qmd"},
-            {"order": 2, "title": "Measure + Place", "source": "design-fabrication/03-laser-cutting/03-measure-place.qmd"},
-            {"order": 3, "title": "Material Fit + Calibration", "source": "design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd"},
-            {"order": 4, "title": "Assemblies + Hybrid Fabrication", "source": "design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd"},
-            {"order": 5, "title": "Wall + Bench Tool Module", "source": "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd"},
-            {"order": 6, "title": "Design & Fabrication Capstone", "source": "design-fabrication/03-laser-cutting/08-capstone.qmd"}
+            {"order": 1, "title": "Build the Nameplate Text", "source": "design-fabrication/logo-design/01-nameplate-text-photopea.qmd", "legacy_slug": true, "summary": "Make an 11 by 4 inch file, leave room for a logo, and choose readable type.", "use": "Correct size, spacing, and legibility prepare a design for real output.", "status": "published", "resources": []},
+            {"order": 2, "title": "Trace a Rough Logo", "source": "design-fabrication/logo-design/rough-sketch-to-svg-photopea.qmd", "summary": "Turn a photographed sketch into clean, editable vector lines.", "use": "Tracing converts an idea on paper into artwork that can be revised and fabricated.", "status": "published", "resources": []},
+            {"order": 3, "title": "Combine Logo and Nameplate", "source": "design-fabrication/logo-design/03-combine-logo-nameplate.qmd", "legacy_slug": true, "summary": "Combine the ANDRADE logo and nameplate, then export the complete design.", "use": "The worked example shows alignment, proportion, and file-export decisions.", "status": "published", "resources": []},
+            {"order": 4, "title": "Design Your Own Name Tag", "source": "design-fabrication/03-laser-cutting/01-name-logo.qmd", "legacy_slug": true, "summary": "Apply the tutorial skills to an original name-and-logo design and defend the choices.", "use": "The project connects digital design, accessibility checks, and fabrication output.", "status": "published", "resources": []}
           ]
         },
         {
-          "id": "design-additive",
-          "order": 4,
-          "title": "4. 3D Printing & Additive Manufacturing",
+          "id": "accessible-design", "order": 4, "title": "Accessible Design", "hub": "design-fabrication/accessible-design/index.qmd",
+          "summary": "Build accessibility checks into graphic design instead of adding them at the end.",
+          "use": "Readable, well-described graphics work better on screens, in print, and on fabricated objects.",
           "lessons": [
-            {"order": 1, "title": "Additive Manufacturing & CAD", "source": "design-fabrication/04-3d-printing/01-additive-cad.qmd"},
-            {"order": 2, "title": "Slicing, Orientation & Supports", "source": "design-fabrication/04-3d-printing/02-slicing-orientation.qmd"},
-            {"order": 3, "title": "Tolerances & Functional Parts", "source": "design-fabrication/04-3d-printing/03-tolerances-functional-parts.qmd"},
-            {"order": 4, "title": "Functional-Part Design Challenge", "source": "design-fabrication/04-3d-printing/04-design-challenge.qmd"}
+            {"order": 1, "title": "Access and Alt Text", "source": "design-fabrication/accessible-design/access-and-alt-text.qmd", "summary": "Describe the instructional purpose of an image and identify barriers to access.", "use": "Useful descriptions preserve meaning for people who cannot use the image visually.", "status": "published", "resources": []},
+            {"order": 2, "title": "Fonts and Text Effects", "source": "design-fabrication/accessible-design/fonts-and-text-effects.qmd", "summary": "Compare typefaces and test backgrounds, outlines, shadows, and decorative effects.", "use": "Legible type survives small screens, printing, engraving, and viewing from a distance.", "status": "published", "resources": []},
+            {"order": 3, "title": "Understanding Colour", "source": "design-fabrication/accessible-design/understanding-colour.qmd", "summary": "Use hue, saturation, value, opacity, and colour models deliberately.", "use": "Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.", "status": "published", "resources": []},
+            {"order": 4, "title": "Contrast and Output", "source": "design-fabrication/accessible-design/contrast-and-output.qmd", "summary": "Check contrast, real size, file type, and final screen, print, or fabrication output.", "use": "Testing catches problems before a graphic is shared or made.", "status": "published", "resources": []}
+          ]
+        },
+        {
+          "id": "fabrication-tools", "order": 5, "title": "Laser Cutting and Fabrication Tools", "hub": "teaching-materials/laser-cutting/index.qmd",
+          "summary": "Use visual examples, measured drawings, builders, and reusable files to make laser-cut projects.",
+          "use": "The tools support measured prototypes, shop organization, and iterative fabrication.",
+          "lessons": [
+            {"order": 1, "title": "Make It Stand", "source": "design-fabrication/03-laser-cutting/02-make-it-stand.qmd", "legacy_slug": true, "summary": "Compare ways to support a flat design as a stable object.", "use": "Support geometry is useful for signs, displays, holders, and models.", "status": "published", "resources": []},
+            {"order": 2, "title": "Measure and Place", "source": "design-fabrication/03-laser-cutting/03-measure-place.qmd", "legacy_slug": true, "summary": "Measure a real object and place openings and supports from evidence.", "use": "Measured placement improves access, spacing, and fit.", "status": "published", "resources": []},
+            {"order": 3, "title": "Material Fit and Calibration", "source": "design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd", "legacy_slug": true, "summary": "Test material thickness, kerf, and fit before cutting a full project.", "use": "Calibration reduces wasted material and unreliable joints.", "status": "published", "resources": []},
+            {"order": 4, "title": "Assemblies and Hybrid Fabrication", "source": "design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.qmd", "legacy_slug": true, "summary": "Combine cut parts, fasteners, and other processes into an assembly.", "use": "Hybrid fabrication expands what a flat-sheet process can make.", "status": "published", "resources": []},
+            {"order": 5, "title": "Wall and Bench Tool Module", "source": "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd", "legacy_slug": true, "summary": "Design a visible, labelled, stable holder for a wall or workbench.", "use": "Good tool storage improves access, accountability, and shop safety.", "status": "published", "resources": [{"label": "Project Gallery", "url": "/commons/design-fabrication/tools/tool-organizer-gallery/"}]},
+            {"order": 6, "title": "Design and Fabrication Capstone", "source": "design-fabrication/03-laser-cutting/08-capstone.qmd", "legacy_slug": true, "summary": "Plan, prototype, test, and document an original fabricated solution.", "use": "The capstone combines evidence, design decisions, fabrication, and evaluation.", "status": "published", "resources": []},
+            {"order": 7, "title": "CNC Machining", "summary": "CNC machining resources are in development.", "use": "The future sequence will connect digital models to subtractive manufacturing.", "status": "planned", "resources": []},
+            {"order": 8, "title": "3D Printing", "summary": "3D-printing resources are in development.", "use": "The future sequence will cover slicing, orientation, supports, and functional tolerances.", "status": "planned", "resources": []}
           ]
         }
       ]
     },
     {
-      "id": "tej",
-      "title": "TEJ Notes",
+      "id": "tej", "title": "TEJ3/4 Computer Engineering", "hub": "tej3-4/index.qmd", "sidebar_id": "tej",
+      "sidebar_links": [
+        {"title": "Curriculum Roadmap", "source": "tej3-4/curriculum/index.qmd"},
+        {"title": "Engineering Preparation Track", "source": "tej3-4/engineering-preparation-track/index.qmd"},
+        {"title": "Electronics Lesson Library", "source": "tej3-4/electronics-library/index.qmd"}
+      ],
       "units": [
+        {"id": "orientation", "order": 1, "title": "Orientation", "summary": "Learn how to use the notes, class materials, glossary, and submission links.", "use": "A clear starting routine makes independent work easier.", "lessons": [{"order": 1, "title": "Course Orientation", "summary": "A concise orientation lesson is planned.", "use": "It will connect the site, classroom workflow, and project evidence.", "status": "planned", "resources": []}]},
+        {"id": "safety", "order": 2, "title": "Safety", "summary": "Recognize electrical, tool, data, and workspace hazards before beginning a task.", "use": "Safe habits protect people, equipment, and project evidence.", "lessons": [{"order": 1, "title": "Technology Lab Safety", "summary": "The consolidated safety lesson is planned.", "use": "It will connect hazard recognition to classroom procedures.", "status": "planned", "resources": []}]},
+        {"id": "design", "order": 3, "title": "Design", "summary": "Use the N.I.C.E. process to define needs, develop ideas, and evaluate evidence.", "use": "Design reasoning supports circuits, computing, fabrication, and control projects.", "lessons": [{"order": 1, "title": "N.I.C.E. Design Process", "summary": "Use the General Design & Fabrication learning path.", "use": "The shared process prevents duplicate design notes.", "status": "planned", "resources": []}]},
+        {"id": "portfolio", "order": 4, "title": "Project Portfolio", "summary": "Collect plans, tests, code, measurements, photographs, and reflections.", "use": "A portfolio shows both the result and the engineering process that produced it.", "lessons": [{"order": 1, "title": "Build a Technical Portfolio", "summary": "The portfolio lesson is planned.", "use": "It will support class assessment and future applications.", "status": "planned", "resources": []}]},
         {
-          "id": "tej-number-systems",
-          "order": 1,
-          "title": "1. Number Systems",
+          "id": "circuits-electronics", "order": 5, "title": "Circuits and Electronics", "hub": "tej3-4/circuits/index.qmd",
+          "summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+          "use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
           "lessons": [
-            {"order": 1, "title": "Significant Figures", "source": "tej3-4/01-number-systems/01-significant-figures.qmd"},
-            {"order": 2, "title": "Powers of 10", "source": "tej3-4/01-number-systems/02-powers-of-10.qmd"},
-            {"order": 3, "title": "Scientific Calculator", "source": "tej3-4/01-number-systems/06-scientific-calculator.qmd"},
-            {"order": 4, "title": "Scientific Notation", "source": "tej3-4/01-number-systems/03-scientific-notation.qmd"},
-            {"order": 5, "title": "Engineering Notation", "source": "tej3-4/01-number-systems/04-engineering-notation.qmd"},
-            {"order": 6, "title": "Metric Prefixes", "source": "tej3-4/01-number-systems/05-metric-prefixes.qmd"}
+            {"order": 1, "title": "Series Circuits", "source": "tej3-4/circuits/series-circuits.qmd", "summary": "Calculate current, voltage drops, resistance, and power in one-path circuits.", "use": "Series rules appear in sensor chains, voltage drops, and component strings.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit"}, {"label": "Problem Set", "url": "https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy"}, {"label": "Formula Reference", "url": "https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit"}, {"label": "Teacher Answers", "restricted": true}]},
+            {"order": 2, "title": "Parallel Circuits", "source": "tej3-4/circuits/parallel-circuits.qmd", "summary": "Calculate branch currents, common voltage, equivalent resistance, and power.", "use": "Parallel paths keep loads operating independently in buildings, vehicles, and computers.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit"}, {"label": "Problem Set", "url": "https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy"}, {"label": "Teacher Answers", "restricted": true}]},
+            {"order": 3, "title": "Series-Parallel Circuits", "source": "tej3-4/circuits/series-parallel-circuits.qmd", "summary": "Reduce mixed networks in stages and verify currents and voltages.", "use": "Real systems often combine shared paths with parallel loads.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit"}, {"label": "Problem Set", "url": "https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/copy"}, {"label": "Teacher Answers", "restricted": true}]},
+            {"order": 4, "title": "Kirchhoff's Laws", "source": "tej3-4/circuits/kirchhoffs-laws.qmd", "summary": "Write current and voltage equations for circuits that cannot be reduced directly.", "use": "Kirchhoff analysis supports troubleshooting and more advanced network methods.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit"}, {"label": "Problem Set", "url": "https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/copy"}, {"label": "Teacher Answers", "restricted": true}]},
+            {"order": 5, "title": "Linear Algebra for Circuits", "source": "tej3-4/circuits/linear-algebra-circuits.qmd", "summary": "Solve simultaneous circuit equations by substitution, elimination, and matrices.", "use": "The method prepares students for college and university network analysis.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit"}, {"label": "Problem Set", "url": "https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/copy"}, {"label": "Teacher Answers", "restricted": true}]}
           ]
         },
+        {"id": "computer-systems", "order": 6, "title": "Computer Systems", "summary": "Connect components, power, firmware, storage, operating systems, and recovery as one system.", "use": "System thinking supports repair, commissioning, and reliable computing projects.", "lessons": [{"order": 1, "title": "Computer Systems Sequence", "summary": "The current computer-systems notes remain available while their package order is reconciled.", "use": "The final sequence will connect hardware evidence to recovery and commissioning.", "status": "planned", "resources": []}]},
         {
-          "id": "tej-basic-electronics",
-          "order": 2,
-          "title": "2. Basic Electronics",
+          "id": "linux-operating-systems", "order": 7, "title": "Linux and Operating Systems", "hub": "tej3-4/linux-operating-systems/index.qmd",
+          "summary": "Choose, install, explore, administer, program, and measure a Linux computer in a linear sequence.",
+          "use": "Linux skills support repair, servers, embedded systems, networking, automation, and engineering tools.",
           "lessons": [
-            {"order": 1, "title": "Charge, Voltage & Current", "source": "tej3-4/02-basic-electronics/01-charge-voltage-current.qmd"},
-            {"order": 2, "title": "Closed, Open & Short Circuits", "source": "tej3-4/02-basic-electronics/02-circuits-opens-shorts.qmd"},
-            {"order": 3, "title": "Ohm's Law", "source": "tej3-4/02-basic-electronics/03-ohms-law.qmd"},
-            {"order": 4, "title": "Power & Energy", "source": "tej3-4/02-basic-electronics/04-power-energy.qmd"}
+            {"order": 1, "title": "Choosing a Linux Distribution", "source": "tej3-4/linux-operating-systems/choosing-a-distribution.qmd", "summary": "Compare distribution families, desktop environments, hardware needs, software, and support.", "use": "A good choice matches the computer and the work instead of following a brand name.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit"}]},
+            {"order": 2, "title": "Install Linux Mint", "source": "tej3-4/linux-operating-systems/install-linux-mint.qmd", "summary": "Prepare installation media, protect data, install Mint, and verify the result.", "use": "The procedure supports computer recovery and prepares a system for later projects.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit"}, {"label": "Assignment", "url": "https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy"}]},
+            {"order": 3, "title": "Explore Linux", "source": "tej3-4/linux-operating-systems/explore-linux.qmd", "summary": "Explore the desktop, accounts, files, terminal, and Bashcrawl while collecting evidence.", "use": "The activity builds confidence before students administer or program the system.", "status": "published", "resources": [{"label": "Slides", "url": "https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit"}, {"label": "Assignment", "url": "https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy"}]},
+            {"order": 4, "title": "Know Your Linux Computer", "source": "tej3-4/linux-operating-systems/know-your-computer.qmd", "summary": "Record hardware, operating-system, storage, and device information.", "use": "A verified inventory supports troubleshooting, upgrades, and performance comparisons.", "status": "published", "resources": []},
+            {"order": 5, "title": "Files, Terminal, and Permissions", "source": "tej3-4/linux-operating-systems/files-terminal-permissions.qmd", "summary": "Navigate paths, inspect files, and use permissions safely.", "use": "These skills are essential for administration, automation, and development.", "status": "published", "resources": []},
+            {"order": 6, "title": "Git Version Control", "source": "tej3-4/linux-operating-systems/git-version-control.qmd", "summary": "Record, inspect, and share changes with a safe Git workflow.", "use": "Version control protects project history and supports collaboration.", "status": "published", "resources": []},
+            {"order": 7, "title": "Build a Quarto Website", "source": "tej3-4/linux-operating-systems/quarto-website.qmd", "summary": "Turn Markdown, code, and media into a small technical website.", "use": "A website makes project evidence and explanations easy to review and share.", "status": "published", "resources": []},
+            {"order": 8, "title": "Publish with GitHub Pages", "source": "tej3-4/linux-operating-systems/publish-github-pages.qmd", "summary": "Publish a reviewed static site without exposing secrets or private files.", "use": "Deployment turns local documentation into a durable public portfolio.", "status": "published", "resources": []},
+            {"order": 9, "title": "Python Measurement Logging", "source": "tej3-4/linux-operating-systems/python-data-logging.qmd", "summary": "Write a small Python program that records measurements with units and timestamps.", "use": "Logging supports sensor tests, performance studies, and repeatable experiments.", "status": "published", "resources": []},
+            {"order": 10, "title": "Python Analysis and Curve Fitting", "source": "tej3-4/linux-operating-systems/python-analysis-curve-fitting.qmd", "summary": "Inspect recorded data and fit a simple model.", "use": "Analysis connects observations to engineering decisions and predictions.", "status": "published", "resources": []},
+            {"order": 11, "title": "Networking, SSH, and tmux", "source": "tej3-4/linux-operating-systems/networking-ssh-tmux.qmd", "summary": "Diagnose a network connection and manage a remote Linux session safely.", "use": "Remote administration is common for servers, Raspberry Pi systems, and lab equipment.", "status": "published", "resources": []},
+            {"order": 12, "title": "Power and Raspberry Pi Bridge", "source": "tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.qmd", "summary": "Connect computer power concepts to a future Raspberry Pi build without inventing a lab.", "use": "The calculation bridge prepares students to reason about supplies, loads, and interfaces.", "status": "published", "resources": []}
           ]
-        }
+        },
+        {"id": "networking", "order": 8, "title": "Networking", "summary": "Move from local addressing and diagnosis to secure remote access.", "use": "Networks connect computers, controllers, sensors, and services.", "lessons": [{"order": 1, "title": "Networking Sequence", "summary": "Core networking appears in the Linux path while a dedicated module is developed.", "use": "The future module will add switching, routing, and service design.", "status": "planned", "resources": []}]},
+        {"id": "programming-interfacing", "order": 9, "title": "Programming and Interfacing", "summary": "Use code to automate a task, read data, and control an output.", "use": "Programming connects software decisions to physical evidence.", "lessons": [{"order": 1, "title": "Programming and Interfacing Sequence", "summary": "The coordinated Python and hardware sequence is planned.", "use": "It will connect runnable examples to sensors and outputs.", "status": "planned", "resources": []}]},
+        {"id": "robotics-control", "order": 10, "title": "Robotics and Control Systems", "summary": "Connect inputs, decisions, outputs, feedback, and state over time.", "use": "Control systems appear in robots, vehicles, manufacturing, and buildings.", "lessons": [{"order": 1, "title": "Robotics and Control Sequence", "summary": "The public package sequence is planned.", "use": "It will connect diagrams, code, measurements, and physical tests.", "status": "planned", "resources": []}]},
+        {"id": "engineering-preparation", "order": 11, "title": "Engineering Preparation", "hub": "tej3-4/engineering-preparation-track/index.qmd", "summary": "Extend the course toward college and university analysis without losing practical context.", "use": "The track prepares students for formal problem solving in circuits, data, energy, and systems.", "lessons": [{"order": 1, "title": "Engineering Preparation Track", "summary": "Use the concise track overview and its current notes and problem sets.", "use": "The page connects existing packages to recognizable engineering systems.", "status": "planned", "resources": []}]}
       ]
     }
   ]

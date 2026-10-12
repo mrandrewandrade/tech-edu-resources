@@ -151,15 +151,16 @@ const middle = scroll.findCurrentLesson(manifest, "/learn/middle.html");
 const finalLesson = scroll.findCurrentLesson(manifest, "/learn/second-track/");
 assert.equal(first.sequence_index, 0);
 assert.equal(scroll.nextLesson(manifest, first), middle);
-assert.equal(scroll.nextLesson(manifest, middle), finalLesson);
+assert.equal(scroll.nextLesson(manifest, middle), null);
 assert.equal(scroll.nextLesson(manifest, finalLesson), null);
 assert.equal(scroll.isFinalLesson(manifest, first), false);
+assert.equal(scroll.isFinalLesson(manifest, middle), true);
 assert.equal(scroll.isFinalLesson(manifest, finalLesson), true);
 assert.equal(scroll.findCurrentLesson(manifest, "/learn/not-a-lesson/"), null);
 assert.deepEqual(
   scroll.laterLessonRoutes(manifest, "/learn/middle.html"),
-  ["/learn/second-track/"],
-  "direct middle entry exposes only later lessons"
+  [],
+  "continuous scrolling stops at a track boundary"
 );
 assert.deepEqual(
   scroll.laterLessonRoutes(manifest, "/learn/second-track/"),

@@ -19,31 +19,22 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 20)
+        self.assertEqual(len(design_routes), 24)
         self.assertEqual(
             design_routes[0],
-            "/commons/design-fabrication/01-nice-design-process/01-needs-necessities.html",
+            "/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html",
         )
         self.assertEqual(
             design_routes[-1],
-            "/commons/design-fabrication/04-3d-printing/04-design-challenge.html",
+            "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
         )
-        self.assertFalse(any("tool-holder" in route for route in design_routes))
+        self.assertEqual(len(routes_by_course["tej"]), 17)
+        self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/circuits/series-circuits.html")
         self.assertEqual(
-            routes_by_course["tej"],
-            [
-                "/commons/tej3-4/01-number-systems/01-significant-figures.html",
-                "/commons/tej3-4/01-number-systems/02-powers-of-10.html",
-                "/commons/tej3-4/01-number-systems/06-scientific-calculator.html",
-                "/commons/tej3-4/01-number-systems/03-scientific-notation.html",
-                "/commons/tej3-4/01-number-systems/04-engineering-notation.html",
-                "/commons/tej3-4/01-number-systems/05-metric-prefixes.html",
-                "/commons/tej3-4/02-basic-electronics/01-charge-voltage-current.html",
-                "/commons/tej3-4/02-basic-electronics/02-circuits-opens-shorts.html",
-                "/commons/tej3-4/02-basic-electronics/03-ohms-law.html",
-                "/commons/tej3-4/02-basic-electronics/04-power-energy.html",
-            ],
+            routes_by_course["tej"][-1],
+            "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
         )
+        self.assertFalse(any("submission" in route for route in routes_by_course["tej"]))
 
     def test_course_boundaries_stop_cleanly(self) -> None:
         for course_id in ("design-fabrication", "tej"):
@@ -73,6 +64,15 @@ class CourseNotesManifestTests(unittest.TestCase):
     def test_generated_manifest_is_current(self) -> None:
         tracked = json.loads(course_notes.OUTPUT_PATH.read_text(encoding="utf-8"))
         self.assertEqual(tracked, self.manifest)
+        for path, expected in course_notes.generated_text_outputs(self.source).items():
+            self.assertEqual(path.read_text(encoding="utf-8"), expected)
+
+    def test_numbered_slugs_require_an_explicit_legacy_exception(self) -> None:
+        broken = copy.deepcopy(self.source)
+        lesson = broken["courses"][0]["units"][2]["lessons"][0]
+        lesson.pop("legacy_slug", None)
+        with self.assertRaisesRegex(course_notes.ValidationError, "Numbered lesson slug"):
+            course_notes.build_manifest(broken)
 
 
 if __name__ == "__main__":

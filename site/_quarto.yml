@@ -68,6 +68,9 @@ project:
     - assets/bs-glossary-lookup.json
     - "assets/lore/**"
 
+metadata-files:
+  - _course-navigation.yml
+
 filters:
   - bs-link-policy
 
@@ -112,109 +115,6 @@ website:
         text: Lore
       - href: about.qmd
         text: About
-  sidebar:
-    - id: design-fabrication
-      title: "General Design & Fabrication"
-      style: docked
-      collapse-level: 2
-      contents:
-        - text: "Design & Fabrication Home"
-          href: design-fabrication/index.qmd
-        - section: "Culture & Land-Based Learning"
-          href: design-fabrication/culture-land-based-learning/index.qmd
-          contents:
-            - text: "Grandmother Moon, Seasons & Turtle's Back"
-              href: lore/grandmother-moon-seasons-turtles-back.qmd
-        - text: "N.I.C.E. Design Process"
-          href: design-fabrication/design-process/index.qmd
-        - text: "Logo Design"
-          href: design-fabrication/logo-design/index.qmd
-        - section: "Fabrication Tools"
-          href: teaching-materials/laser-cutting/index.qmd
-          contents:
-            - text: "Fabrication Plate Builder"
-              href: design-fabrication/tools/plate-builder/index.qmd
-            - text: "Laser-Cut Leg & Support Builder"
-              href: design-fabrication/tools/leg-builder/index.qmd
-            - text: "Tool Organizer Gallery"
-              href: design-fabrication/tools/tool-organizer-gallery/index.qmd
-            - text: "Laser-Cutting Files and Resources"
-              href: teaching-materials/laser-cutting/index.qmd
-        - text: "Accessible Design"
-          href: design-fabrication/accessible-design/index.qmd
-    - id: tas2
-      title: "General Design & Fabrication"
-      style: docked
-      contents:
-        - href: design-fabrication/index.qmd
-          text: "Open the reusable curriculum"
-    - id: tej
-      title: "Computer Engineering Notes"
-      style: docked
-      collapse-level: 2
-      contents:
-        - text: "Computer Engineering Home"
-          href: tej3-4/index.qmd
-        - text: "Curriculum Roadmap"
-          href: tej3-4/curriculum/index.qmd
-        - text: "Engineering Preparation Track"
-          href: tej3-4/engineering-preparation-track/index.qmd
-        - text: "Electronics Lesson Library"
-          href: tej3-4/electronics-library/index.qmd
-        - section: "Circuits"
-          href: tej3-4/circuits/index.qmd
-          contents:
-            - text: "Significant Figures"
-              href: tej3-4/circuits/index.qmd#significant-figures
-            - text: "Scientific & Engineering Notation"
-              href: tej3-4/circuits/index.qmd#notation-and-metric-prefixes
-            - text: "Ohm's Law & Power"
-              href: tej3-4/circuits/index.qmd#ohms-law-and-power
-            - text: "GUESS Method"
-              href: tej3-4/circuits/index.qmd#guess-method
-            - text: "Series Circuits"
-              href: tej3-4/circuits/series-circuits.qmd
-            - text: "Parallel Circuits"
-              href: tej3-4/circuits/parallel-circuits.qmd
-            - text: "Series-Parallel Circuits"
-              href: tej3-4/circuits/series-parallel-circuits.qmd
-            - text: "Kirchhoff's Laws"
-              href: tej3-4/circuits/kirchhoffs-laws.qmd
-            - text: "Linear Algebra for Circuits"
-              href: tej3-4/circuits/linear-algebra-circuits.qmd
-            - text: "Class Resources"
-              href: tej3-4/circuits/index.qmd#questions-answers-and-class-artifacts
-        - section: "Linux, Operating Systems & Networking"
-          href: tej3-4/linux-operating-systems/index.qmd
-          contents:
-            - text: "Choosing a Linux Distribution"
-              href: tej3-4/linux-operating-systems/choosing-a-distribution.qmd
-            - text: "Install Linux Mint"
-              href: tej3-4/linux-operating-systems/install-linux-mint.qmd
-            - text: "Installation Handout Preview"
-              href: tej3-4/linux-operating-systems/install-linux-mint-submission.qmd
-            - text: "Explore Linux"
-              href: tej3-4/linux-operating-systems/explore-linux.qmd
-            - text: "Explore Linux Handout Preview"
-              href: tej3-4/linux-operating-systems/explore-linux-submission.qmd
-            - text: "Know Your Linux Computer"
-              href: tej3-4/linux-operating-systems/know-your-computer.qmd
-            - text: "Files, Terminal & Permissions"
-              href: tej3-4/linux-operating-systems/files-terminal-permissions.qmd
-            - text: "Git Version Control"
-              href: tej3-4/linux-operating-systems/git-version-control.qmd
-            - text: "Build a Quarto Website"
-              href: tej3-4/linux-operating-systems/quarto-website.qmd
-            - text: "Publish with GitHub Pages"
-              href: tej3-4/linux-operating-systems/publish-github-pages.qmd
-            - text: "Python Measurement Logging"
-              href: tej3-4/linux-operating-systems/python-data-logging.qmd
-            - text: "Python Analysis & Curve Fitting"
-              href: tej3-4/linux-operating-systems/python-analysis-curve-fitting.qmd
-            - text: "Networking, SSH & tmux"
-              href: tej3-4/linux-operating-systems/networking-ssh-tmux.qmd
-            - text: "Power & Raspberry Pi Bridge"
-              href: tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.qmd
   page-footer:
     left: |
       Website code: [AGPL 3.0](https://andrewandrade.ca/commons/licensing.html). Educational content: [CC BY-SA 4.0](https://andrewandrade.ca/commons/licensing.html).
