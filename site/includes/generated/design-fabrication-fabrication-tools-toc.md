@@ -35,7 +35,7 @@ Design a visible, labelled, stable holder for a wall or workbench.
 
 Good tool storage improves access, accountability, and shop safety.
 
-<p class="ter-resource-badges"><a class="ter-resource-badge" href="https://andrewandrade.ca/commons/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
+<p class="ter-resource-badges"><a class="ter-resource-badge" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
 
 ### [Design and Fabrication Capstone](../../design-fabrication/03-laser-cutting/08-capstone.qmd)
 

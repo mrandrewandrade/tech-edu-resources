@@ -100,4 +100,4 @@ printf '\nSource checkout remains on:\n'
 git status --short --branch
 
 printf '\nDeployment submitted successfully.\n'
-printf 'Site: https://andrewandrade.ca/commons/\n'
+printf 'Site: https://andrewandrade.ca/tech-edu-resources/\n'
