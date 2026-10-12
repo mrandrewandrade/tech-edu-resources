@@ -96,7 +96,7 @@ Life-cycle thinking reveals costs and effects that are easy to miss at fabricati
 
 ## Logo Design in Photopea
 
-Learn browser-based graphic design by building a nameplate and logo in four short projects.
+Learn browser-based graphic design by building a nameplate and logo in five short projects.
 
 The sequence develops editable vector artwork for signs, labels, slides, and fabrication.
 
@@ -106,11 +106,17 @@ Make an 11 by 4 inch file, leave room for a logo, and choose readable type.
 
 Correct size, spacing, and legibility prepare a design for real output.
 
-### [Trace a Rough Logo](logo-design/rough-sketch-to-svg-photopea.qmd)
+### [Warm-Up: Trace the AA Logo](logo-design/rough-sketch-to-svg-photopea.qmd)
 
-Turn a photographed sketch into clean, editable vector lines.
+Rebuild a simple hand-drawn mark with four clean vector lines.
 
-Tracing converts an idea on paper into artwork that can be revised and fabricated.
+The warm-up introduces editable vector shapes, visual checking, and SVG export.
+
+### [Trace a Multi-Layer Logo](logo-design/02b-advanced-multilayer-tracing-photopea.qmd)
+
+Trace a landscape sketch as four named vector shapes and export an animation-ready SVG.
+
+Separate layers make complex artwork easier to revise, colour, fabricate, and animate.
 
 ### [Combine Logo and Nameplate](logo-design/03-combine-logo-nameplate.qmd)
 
