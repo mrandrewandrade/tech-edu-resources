@@ -69,8 +69,51 @@ Calculate the circuit first. Build the same series and parallel circuits in Tink
 
 ## Slides and problem set
 
+- [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
 - [Parallel Review and Series Circuits teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
 - [Parallel Review and Series Circuits student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/edit)
 - [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
 
-The teacher answer key is restricted.
+Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20series-circuit%20answer%20key).
+
+## Worked solutions {#worked-solutions}
+
+Questions 2 and 4 are provided as student models. Complete the other questions independently using the same GUESS structure.
+
+::: {.callout-note collapse="true" title="Question 2 — Complete series analysis"}
+**Given:** $V_T=15.0\,\mathrm{V}$, $R_1=1.0\,\mathrm{k\Omega}$, $R_2=2.2\,\mathrm{k\Omega}$, $R_3=3.3\,\mathrm{k\Omega}$.
+
+$$
+R_T=R_1+R_2+R_3=6.5\,\mathrm{k\Omega}
+$$
+
+$$
+I_T=\frac{V_T}{R_T}=\frac{15.0\,\mathrm{V}}{6.5\,\mathrm{k\Omega}}=2.307692\ldots\,\mathrm{mA}
+$$
+
+Using $V_k=I_TR_k$ gives $V_1=2.307692\ldots\,\mathrm{V}$, $V_2=5.076923\ldots\,\mathrm{V}$, and $V_3=7.615385\ldots\,\mathrm{V}$.
+
+**Final answers:** $R_T=6.5\,\mathrm{k\Omega}$, $I_T=2.3\,\mathrm{mA}$, $V_1=2.3\,\mathrm{V}$, $V_2=5.1\,\mathrm{V}$, $V_3=7.6\,\mathrm{V}$, and $P_T=35\,\mathrm{mW}$.
+
+**Check:** Use the unrounded values: $V_1+V_2+V_3=15.0\,\mathrm{V}$.
+:::
+
+::: {.callout-note collapse="true" title="Question 4 — Choose a dropping resistor"}
+**Given:** a $6.0\,\mathrm{V}$, $80\,\mathrm{mA}$ lamp on a $9.0\,\mathrm{V}$ source.
+
+$$
+V_R=V_T-V_L=9.0\,\mathrm{V}-6.0\,\mathrm{V}=3.0\,\mathrm{V}
+$$
+
+$$
+R=\frac{V_R}{I}=\frac{3.0\,\mathrm{V}}{80\times10^{-3}\,\mathrm{A}}=37.5\,\Omega
+$$
+
+$$
+P_R=V_RI=(3.0\,\mathrm{V})(80\times10^{-3}\,\mathrm{A})=0.240\,\mathrm{W}
+$$
+
+**Final answer:** the ideal value is $38\,\Omega$. Choose a common $39\,\Omega$ resistor rated for at least $0.5\,\mathrm{W}$.
+
+**Key note:** A $0.25\,\mathrm{W}$ resistor is too close to the calculated $0.240\,\mathrm{W}$ load.
+:::

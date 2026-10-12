@@ -84,8 +84,43 @@ A large residual can flag a wrong sign, wrong measurement, or wiring fault.
 
 ## Slides and problem set
 
+- [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
 - [Simultaneous Equations and Matrices teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
 - [Simultaneous Equations and Matrices student problem set](https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/edit)
 - [Kirchhoff's Laws notes](kirchhoffs-laws.qmd)
 
-The teacher answer key is restricted.
+Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20matrices%20answer%20key).
+
+## Worked solutions {#worked-solutions}
+
+Use the calculator path from the slides: `HOME → Equation → OK → Simul Equation → OK`, then choose the number of unknowns and enter one coefficient row at a time.
+
+::: {.callout-note collapse="true" title="Question 2 — Solve a two-by-two system"}
+Enter the rows $(10,-4,6)$ and $(-4,12,3)$.
+
+$$
+\begin{bmatrix}
+10 & -4 \\
+-4 & 12
+\end{bmatrix}
+\begin{bmatrix}
+I_1 \\ I_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+6 \\ 3
+\end{bmatrix}
+$$
+
+**Final answers:** $I_1=0.808\,\mathrm{mA}$ and $I_2=0.519\,\mathrm{mA}$.
+
+Substitution into both original rows gives a residual of approximately zero.
+:::
+
+::: {.callout-note collapse="true" title="Question 4 — Solve a three-by-three system"}
+Enter the coefficient rows $(10,-2,0,5)$, $(-2,12,-3,6)$, and $(0,-3,9,4)$. The zeros keep the variable columns aligned.
+
+**Final answers:** $I_1=0.657\,\mathrm{mA}$, $I_2=0.786\,\mathrm{mA}$, and $I_3=0.706\,\mathrm{mA}$.
+
+Substitute the three currents into all three original rows to check the solution.
+:::

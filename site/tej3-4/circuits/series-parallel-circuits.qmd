@@ -106,9 +106,56 @@ Use Equations @eq-mixed-current-check and @eq-mixed-voltage-check to check the n
 
 ## Notes, slides, and question sheet
 
+- [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
 - [Series-Parallel Circuits A teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
 - [Series-Parallel Circuits A student question sheet](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/edit)
 - [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
 - [Complete Series-Parallel Circuits lesson package](../electronics-library/modules/h11-series-parallel-circuits-a.qmd)
 
-The teacher answer key is restricted.
+Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20series-parallel%20answer%20key).
+
+## Worked solutions {#worked-solutions}
+
+Questions 2 and 4 are provided as student models. Complete the other questions independently using the same reduce, solve, expand, and check process.
+
+::: {.callout-note collapse="true" title="Question 2 — Unequal parallel branches"}
+First reduce the parallel group:
+
+$$
+R_{23}=\frac{R_2R_3}{R_2+R_3}
+=\frac{(6.0\,\mathrm{k\Omega})(3.0\,\mathrm{k\Omega})}{6.0\,\mathrm{k\Omega}+3.0\,\mathrm{k\Omega}}
+=2.0\,\mathrm{k\Omega}
+$$
+
+Then $R_T=3.0\,\mathrm{k\Omega}+2.0\,\mathrm{k\Omega}=5.0\,\mathrm{k\Omega}$ and $I_T=18.0\,\mathrm{V}/5.0\,\mathrm{k\Omega}=3.60\,\mathrm{mA}$.
+
+The voltage across $R_1$ is $10.8\,\mathrm{V}$, leaving $7.2\,\mathrm{V}$ across both parallel branches.
+
+**Final answers:** $I_2=1.20\,\mathrm{mA}$, $I_3=2.40\,\mathrm{mA}$, and $P_T=64.8\,\mathrm{mW}$.
+
+**Check:** $I_2+I_3=3.60\,\mathrm{mA}=I_T$ and $10.8\,\mathrm{V}+7.2\,\mathrm{V}=18.0\,\mathrm{V}$.
+:::
+
+::: {.callout-note collapse="true" title="Question 4 — Find an unknown branch resistor"}
+The series drop is
+
+$$
+V_1=I_TR_1=(10.0\,\mathrm{mA})(1.2\,\mathrm{k\Omega})=12.0\,\mathrm{V}.
+$$
+
+The parallel group therefore has $V_{23}=20.0\,\mathrm{V}-12.0\,\mathrm{V}=8.0\,\mathrm{V}$.
+
+$$
+I_2=\frac{8.0\,\mathrm{V}}{2.4\,\mathrm{k\Omega}}=3.333333\ldots\,\mathrm{mA}
+$$
+
+$$
+I_3=I_T-I_2=6.666667\ldots\,\mathrm{mA}
+$$
+
+$$
+R_3=\frac{8.0\,\mathrm{V}}{6.666667\,\mathrm{mA}}=1.20\,\mathrm{k\Omega}
+$$
+
+**Final answers:** $V_1=12.0\,\mathrm{V}$, $V_{23}=8.0\,\mathrm{V}$, $I_2=3.33\,\mathrm{mA}$, $I_3=6.67\,\mathrm{mA}$, $R_3=1.20\,\mathrm{k\Omega}$, and $R_T=2.00\,\mathrm{k\Omega}$.
+:::
