@@ -16,7 +16,10 @@ file placement, and publishing checklist.
 ## Daily slide decks
 
 Follow the canonical [Tech Edu Resources Daily Slide Deck SOP](https://docs.google.com/document/d/1WNEgA-xn0oCiB0sp5rv67_SmsFuHpgxotrgjdXWIwB8/edit)
-when creating decks or publishing their links. A Fun Day closes the current
+when creating decks or publishing their links. The daily agenda slide must be
+titled `Schedule for Meeting` and use a plain numbered list in teaching order.
+Never use `Today's Route` or turn the agenda into a flowchart, pathway, timeline,
+process diagram, role cards, or checkpoint cards. A Fun Day closes the current
 instructional week. The first daily deck after a Fun Day starts a new week, so
 use or create the next `Week N` folder and list that day under a new `Week N`
 heading on the course slides page.
