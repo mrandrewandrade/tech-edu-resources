@@ -10,9 +10,40 @@ execute:
   enabled: false
 ---
 
-## Learning path
-
 A concise collection of reusable design and fabrication lessons, projects, and classroom tools.
+
+## Fabrication tools
+
+Start with the project instructions, then use the builders and gallery as the design requires. The builders create editable SVG starting points. Students still measure the real material, test the fit, and revise the design.
+
+<div class="ter-project-grid ter-project-grid--featured">
+<article class="ter-project-card">
+<p class="ter-course-code">Make a plate</p>
+<h3>Fabrication Plate Builder</h3>
+<p>Create plates, rings, and repeated holder holes with measured spacing.</p>
+<p><a href="tools/plate-builder/index.qmd">Open the Plate Builder →</a></p>
+</article>
+<article class="ter-project-card">
+<p class="ter-course-code">Add supports</p>
+<h3>Laser-Cut Leg &amp; Support Builder</h3>
+<p>Create legs, stands, triangular supports, and a wide single easel back.</p>
+<p><a href="tools/leg-builder/index.qmd">Open the Leg &amp; Support Builder →</a></p>
+</article>
+<article class="ter-project-card">
+<p class="ter-course-code">Study examples</p>
+<h3>Tool Organizer Gallery</h3>
+<p>Compare organizer ideas, construction methods, drawings, and downloads.</p>
+<p><a href="tools/tool-organizer-gallery/index.qmd">Open the Tool Organizer Gallery →</a></p>
+</article>
+<article class="ter-project-card">
+<p class="ter-course-code">Instructions and files</p>
+<h3>Build a Tool Organizer</h3>
+<p>Follow the project route, then find reusable SVGs and fabrication resources.</p>
+<p><a href="laser-cutting/tool-organizer.qmd">Open the project →</a> · <a href="../teaching-materials/laser-cutting/index.qmd">Browse files and resources →</a></p>
+</article>
+</div>
+
+## Learning path
 
 ::: {.ter-path-grid}
 ::: {.ter-path-card}
@@ -68,10 +99,3 @@ Compare fonts, zoom out, test contrast, and avoid colour-only meaning.
 [Open Accessible Design](accessible-design/index.qmd)
 :::
 :::
-
-## Fabrication tools
-
-- [Fabrication Plate Builder](tools/plate-builder/index.qmd) creates plates, rings, and repeated holder holes.
-- [Laser-Cut Leg & Support Builder](tools/leg-builder/index.qmd) creates legs, stands, triangular supports, and the wide single easel back.
-- [Tool Organizer Gallery](tools/tool-organizer-gallery/index.qmd) shows organizer examples, construction ideas, drawings, and downloads.
-- [Laser-Cutting Files and Resources](../teaching-materials/laser-cutting/index.qmd) collects downloadable files and classroom resources.
