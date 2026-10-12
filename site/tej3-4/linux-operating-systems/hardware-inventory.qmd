@@ -1,0 +1,54 @@
+---
+title: "Linux Hardware Inventory"
+description: "Identify the operating system, CPU, memory, storage, and available hardware sensors."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can identify the main hardware and operating-system details of a Linux computer.
+- I can compare what the desktop shows with command-line evidence.
+- I can state clearly when a sensor or value is not available.
+
+## Inspect the computer
+
+Start with **Settings > System Info** or the closest system-information page on your desktop. Record the computer name, Linux version, processor, memory, and storage.
+
+Then open Terminal and try:
+
+```bash
+hostnamectl
+lscpu
+free -h
+lsblk
+df -h
+uptime
+```
+
+Match each command to the information you found in the desktop. `lsblk` lists storage devices. `df -h` shows used and available file-system space.
+
+## Watch the computer work
+
+Run `htop` or `top`. Open another program, then watch CPU and memory use change. Don't treat one instant reading as a full performance test.
+
+If the teacher has installed `lm-sensors`, run `sensors`. Sensor support varies by computer. Record the sensor's label and units. If a temperature or power value isn't available, write **not available** instead of guessing.
+
+## Activity
+
+Create a one-page inventory with:
+
+- computer name and model if known
+- Linux version
+- CPU model and core count
+- installed and available memory
+- storage device and free space
+- one screenshot of `htop`
+- one difference between the desktop information and the command output
+
+## Check your work
+
+Every value should name its source. A screenshot without a short explanation is not enough.
+
+[Previous: Terminal Basics](terminal-basics.qmd) | [Next: Networking Diagnosis](networking-diagnosis.qmd)

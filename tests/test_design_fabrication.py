@@ -75,7 +75,7 @@ class DesignFabricationTests(unittest.TestCase):
         educator = config.index("text: Educator Resources")
         classes = config.index("text: Classes")
         self.assertLess(educator, classes)
-        ordered = ["General Slides", "General Materials", "General Design & Fabrication", "TEJ Notes"]
+        ordered = ["General Slides", "General Materials", "General Design & Fabrication", "Computer Engineering Notes"]
         positions = [config.index(item, educator) for item in ordered]
         self.assertEqual(positions, sorted(positions))
         self.assertNotIn('title: "TAS Notes"', config)

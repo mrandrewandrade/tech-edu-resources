@@ -93,10 +93,13 @@ def main() -> int:
         assert marker not in lowered, f"private marker found: {marker}"
 
     output = OUTPUT_PATH.read_text(encoding="utf-8")
-    assert "Full progression" in output
-    assert output.count("| What students learn | Why it matters |") == 17
-    assert output.count("**Subsections:**") == 17
-    assert output.count("**Coming out of this section, students can:**") == 17
+    assert "Learning map" in output
+    assert output.count('::: {.ter-path-card}') == 15
+    assert "Foundations and measurement" in output
+    assert "Projects and culminating work" in output
+    assert "What students learn" not in output
+    assert "Coming out of this section" not in output
+    assert "module_id" not in output
     assert "| Consumables |" not in output
     assert "| Teacher notes |" not in output
     assert "data-tej-roadmap-search" not in output

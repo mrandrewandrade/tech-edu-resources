@@ -1,22 +1,82 @@
 ---
-title: "Linux, Operating Systems and Basic Networking"
-description: "Choose, install, and begin using Linux safely, then build toward basic networking and administration."
+title: "Linux & Operating Systems"
+description: "Install Linux, use the terminal, inspect hardware, diagnose networks, compare performance, and administer a computer."
 sidebar: tej
-toc: true
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute: {enabled: false}
 ---
 
-| What students learn | Why it matters |
-|:--|:--|
-| Use and administer a Linux system safely from the desktop and command line. | Operating-system knowledge gives students control over files, software, permissions, and system behaviour. |
+An operating system is the software layer that makes a computer useful. In this section, you'll install Linux on classroom computers, learn your way around the desktop and terminal, inspect the hardware, and begin troubleshooting networks and software.
 
-**Subsections:** Desktop use; files and permissions; command line; software; basic networking; services; backup and recovery
+## Learning path
 
-**Coming out of this section, students can:** Install and use Linux, manage files and permissions, run commands, check basic network settings and connectivity, and complete basic administration.
+::: {.ter-path-grid}
+::: {.ter-path-card}
+### 1. Choose a distribution
 
-## Start here
+Compare Linux distributions and choose one that fits the computer and the job.
 
-1. [Choose a Linux distribution](choosing-a-distribution.qmd)
-2. [Install Linux Mint 22.3 "Zena" Xfce Edition](install-linux-mint.qmd)
+[Open the distribution guide](choosing-a-distribution.qmd)
+:::
 
-Later lessons will build from the desktop into files, permissions, the command line, software, services, backup, and recovery.
+::: {.ter-path-card}
+### 2. Install and commission Linux
+
+Prepare the computer, confirm the correct drive, install Linux Mint, create accounts, update it, and check that the hardware works.
+
+[Open the Linux Mint installation guide](install-linux-mint.qmd)
+:::
+
+::: {.ter-path-card}
+### 3. Use the terminal
+
+Move through folders, create and edit files, read command help, and inspect running processes.
+
+[Open Terminal Basics](terminal-basics.qmd)
+:::
+
+::: {.ter-path-card}
+### 4. Inspect the hardware
+
+Use the desktop and commands to identify the CPU, memory, storage, operating system, and available sensors.
+
+[Open Hardware Inventory](hardware-inventory.qmd)
+:::
+
+::: {.ter-path-card}
+### 5. Diagnose a network
+
+Find the local address, gateway, and DNS settings. Use simple tests to locate a connection problem.
+
+[Open Networking Diagnosis](networking-diagnosis.qmd)
+:::
+
+::: {.ter-path-card}
+### 6. Compare performance
+
+Plan a fair test, record repeatable measurements, graph the results, and explain the limits of the evidence.
+
+[Open Performance & Benchmarking](performance-benchmarking.qmd)
+:::
+
+::: {.ter-path-card}
+### 7. Remote administration
+
+Use SSH, file transfer, and tmux on a teacher-approved computer or isolated classroom network.
+
+[Open SSH & Administration](ssh-administration.qmd)
+:::
+:::
+
+## Class slides
+
+- [Linux Mint setup and accounts](https://docs.google.com/presentation/d/1Oh9ZDz-EeSwOgG1hqlMjvBBnG2tLQDR_xB8V3nYVDlU/edit)
+- [Linux Mint customization and Bashcrawl](https://docs.google.com/presentation/d/18uESqX3sh9ITtcGbu5xEBpiHJSlIexPvEVj7E3oMfmU/edit)
+- [All TEJ daily slides](../../slides/tej.qmd)
+
+## Related notes
+
+- [Computer Systems](../computer-systems/index.qmd) explains when and why the operating system is installed.
+- [Engineering Preparation Track](../engineering-preparation-track/index.qmd) connects Linux work to engineering calculations, data, and control.

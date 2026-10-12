@@ -13,7 +13,7 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 SITE_ROOT = REPOSITORY_ROOT / "site"
 SOURCE_PATH = SITE_ROOT / "data" / "course-notes.json"
 OUTPUT_PATH = SITE_ROOT / "assets" / "bs-learn-sequence.json"
-SITE_BASE = "/commons"
+SITE_BASE = "/tech-edu-resources"
 
 
 class ValidationError(RuntimeError):

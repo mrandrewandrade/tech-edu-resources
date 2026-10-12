@@ -1,6 +1,6 @@
 # Student tutorial style guide
 
-Use this guide for student tutorials on the Technology Commons site.
+Use this guide for student tutorials on the Tech Edu Resources site.
 
 ## Write for a beginner
 

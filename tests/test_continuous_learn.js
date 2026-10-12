@@ -112,9 +112,9 @@ assert.equal(
 );
 assert.equal(
   scroll.siteBaseForPath(
-    "/commons/tej3-4/01-number-systems/01-significant-figures.html"
+    "/tech-edu-resources/tej3-4/01-number-systems/01-significant-figures.html"
   ),
-  "/commons"
+  "/tech-edu-resources"
 );
 assert.equal(
   scroll.siteBaseForPath(
@@ -123,12 +123,12 @@ assert.equal(
   "/tech-edu-resources"
 );
 assert.equal(
-  learn.siteBaseForPath("/commons/tas2/01-nice-design-process/01-needs-necessities.html"),
-  "/commons"
+  learn.siteBaseForPath("/tech-edu-resources/tas2/01-nice-design-process/01-needs-necessities.html"),
+  "/tech-edu-resources"
 );
 assert.equal(
   scroll.deploymentRelativeRoute(
-    "/commons/tej3-4/01-number-systems/01-significant-figures.html"
+    "/tech-edu-resources/tej3-4/01-number-systems/01-significant-figures.html"
   ),
   "/tej3-4/01-number-systems/01-significant-figures.html"
 );

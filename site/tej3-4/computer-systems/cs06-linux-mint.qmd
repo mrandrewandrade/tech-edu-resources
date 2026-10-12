@@ -1,25 +1,27 @@
 ---
-title: "CS06 Approved Linux Installation and Commissioning"
-description: "Install the classroom Linux system selected by the comparison pilot and verify the workstation."
+title: "Install and Commission the Operating System"
+description: "Prepare the computer for Linux, then use the canonical installation guide and verify the result."
 pathway: "Main Quest"
-categories: [main quest, Linux, Xfce, installation, commissioning, storage, developing difficulty, 150 minutes, data loss risk, physical lab]
+categories: [computer systems, Linux, installation, commissioning]
 ---
 
-**Pathway:** {{< meta pathway >}}\
-**Prerequisite:** [CS05](cs05-post-firmware.qmd)\
-**Previous:** [CS05 POST and BIOS/UEFI](cs05-post-firmware.qmd)\
-**Next:** [CS07 RAM upgrade](cs07-ram-upgrade.qmd)
+The operating system turns the assembled hardware into a computer you can use. In this stage, confirm the target drive, test the live system, install Linux Mint, create the classroom account, and verify that the hardware works after restart.
 
-## Installation gate
+## Use the canonical guide
 
-Record the assigned asset, exact target drive model/capacity, preserved files, approved installer, and firmware detection. The teacher must confirm any erase or partition choice.
+[Open **Install Linux Mint 22.3 Xfce**](../linux-operating-systems/install-linux-mint.qmd).
 
-Use the live session first to test display, keyboard, mouse, USB, Ethernet, Wi-Fi, sound, and storage visibility. After approval, install the operating system selected by the classroom comparison pilot, apply approved updates, and verify CPU, RAM, storage, USB, sound, display, network, restart, and login.
+That page contains the current step-by-step installation choices, screenshots, checks, and lab log. It is the only installation procedure maintained on this site.
 
-::: {.callout-important title="Data safety"}
-An erase-disk installation destroys data on the selected drive. Confirm the exact target and preserve required files before continuing.
-:::
+## Computer Systems evidence
 
-The pilot decision is provisional until both Xubuntu 26.04 LTS and Linux Mint Xfce have been tested in the crossover comparison. The teacher may select Xubuntu, Mint Xfce, Lubuntu for weak machines, or additional testing. Ubuntu Server remains reserved for a later dedicated SSH and systems-administration machine.
+Add these items to your activity package:
 
-Official references: [Xubuntu releases](https://xubuntu.org/releases/), [Linux Mint downloads](https://linuxmint.com/download.php), and [Ubuntu bootable USB guidance](https://documentation.ubuntu.com/desktop/en/latest/how-to/create-a-bootable-usb-stick/).
+- the assigned computer and target drive
+- confirmation that the live session recognized the display, keyboard, mouse, network, sound, USB, and storage
+- the installed operating-system version
+- the computer name and account check
+- one post-install update or configuration step
+- one problem you found and how you tested it
+
+After installation, continue with [Terminal Basics](../linux-operating-systems/terminal-basics.qmd), then return to [CS07: RAM upgrade](cs07-ram-upgrade.qmd).

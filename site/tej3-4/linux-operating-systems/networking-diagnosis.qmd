@@ -1,0 +1,53 @@
+---
+title: "Networking Diagnosis"
+description: "Find the local address, gateway, and DNS settings, then use simple tests to locate a connection problem."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can explain the roles of an IP address, gateway, DHCP, and DNS.
+- I can inspect a Linux computer's network settings.
+- I can test a connection in a sensible order.
+
+## The four ideas
+
+- An **IP address** identifies a device on a network.
+- A **gateway** connects the local network to other networks.
+- **DHCP** usually gives the computer its address and other settings.
+- **DNS** changes a name such as `example.org` into an address.
+
+## Inspect the settings
+
+Use the desktop network settings first. Then compare them with:
+
+```bash
+hostname
+ip address
+ip route
+resolvectl status
+```
+
+Some systems don't use `resolvectl`. If it is unavailable, use the network settings window.
+
+Keep classroom network details private. Record only what your teacher asks for.
+
+## Test in order
+
+Use only teacher-approved addresses and services.
+
+1. Check whether Wi-Fi or Ethernet is connected.
+2. Check whether the computer has a local address.
+3. Ping the teacher-approved gateway.
+4. Test one teacher-approved hostname.
+5. Compare the evidence before changing settings.
+
+A blocked ping does not prove that a device is offline.
+
+## Activity
+
+Draw a small map: **your computer → local network → gateway → service**. Record one symptom, one possible cause, one test, the evidence, and your conclusion.
+
+[Previous: Hardware Inventory](hardware-inventory.qmd) | [Next: Performance & Benchmarking](performance-benchmarking.qmd)

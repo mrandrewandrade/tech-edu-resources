@@ -1,15 +1,49 @@
 ---
-title: "11. Microcontrollers and Physical Computing"
-description: "A planned hardware-neutral pathway after stable inputs and programming fundamentals."
+title: "Programming & Physical Computing"
+description: "Connect code to switches, sensors, outputs, timing, communication, and useful devices."
 sidebar: tej
-toc: true
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute: {enabled: false}
 ---
 
-This planned strand begins after students complete digital voltage levels, pull resistors, active-low logic, debouncing, GPIO compatibility, the circuits culminating project, and the required programming foundations.
+Physical computing connects a program to the world. A small computer reads an input, makes a decision, and controls an output. The exact board may change, but the same ideas apply to Arduino-compatible boards, micro:bit, Raspberry Pi, and other controllers.
 
-Planned device pathways include Arduino-compatible boards, Raspberry Pi, micro:bit, and other available controllers. Every activity must identify the exact board, GPIO voltage, current limits, and protection requirements rather than assuming all devices behave alike.
+## Build the foundation
 
-The first physical-computing activity will reuse the same active-low switch circuit from the D01 module so students can separate hardware behaviour from code behaviour.
+::: {.ter-path-grid}
+::: {.ter-path-card}
+### Stable inputs
 
-[See the full planned module sequence in the curriculum roadmap.](../curriculum/index.qmd#unit-11)
+Learn logic levels, switches, pull-up and pull-down resistors, active-low signals, and debouncing before connecting an input pin.
+
+[Open Digital Logic](../03-digital-logic-inputs/index.qmd)
+:::
+
+::: {.ter-path-card}
+### Programming ideas
+
+Use variables, conditions, loops, functions, and state machines to turn a process into code.
+
+[Explore algorithms and state machines](../engineering-preparation-track/index.qmd#boolean-logic-algorithms-and-state-machines)
+:::
+
+::: {.ter-path-card}
+### Sensors and outputs
+
+Read a sensor, check its range and units, then control an LED, motor, relay, display, or another useful output.
+
+[Explore sensors and measurement](../engineering-preparation-track/index.qmd#sensors-and-measurement)
+:::
+
+::: {.ter-path-card}
+### Build a system
+
+Combine an input, decision, output, test plan, and clear explanation in a small project.
+
+[Open the sensor, logic, and actuator project](../engineering-preparation-track/index.qmd#sensor-logic-and-actuator-project)
+:::
+:::
+
+Always check the exact board voltage, pin limits, component polarity, and required protection. Don't assume every controller uses the same electrical levels.

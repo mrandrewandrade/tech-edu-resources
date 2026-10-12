@@ -61,12 +61,12 @@ class NotesRefactorTests(unittest.TestCase):
     def test_design_process_reuses_the_class_deck_and_videos(self) -> None:
         process = self.read("design-fabrication/design-process/index.qmd")
         for text in (
-            "Situation: understand what is happening",
-            "N: Needs and Necessities",
+            "## Start with the situation",
+            "N: Notice Needs and Necessities",
             "I: Investigate and Inquire",
             "C: Create and Communicate",
-            "E: Evaluate",
-            "Repeat the cycle",
+            "E: Evaluate and Reflect",
+            "The loop: make assumptions earn evidence",
             "1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ",
             "pageid=p3",
             "pageid=p4",

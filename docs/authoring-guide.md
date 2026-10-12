@@ -1,4 +1,4 @@
-# Commons authoring guide
+# Tech Edu Resources authoring guide
 
 Edit `.qmd` source under `site/`. Run `quarto render site` from the repository
 root and inspect `site/_site`; never edit that output. `quarto preview site`
@@ -7,7 +7,7 @@ watches the project. `bash scripts/serve-built.sh` serves the existing build.
 All navbar and course sidebar entries live in `site/_quarto.yml`. Course folders
 select their sidebar in `_metadata.yml`. Link to source `.qmd` files; Quarto
 resolves the output routes. The inherited `bs-` CSS classes remain the shared
-presentation system; Commons styling lives in `commons-overrides.css`.
+presentation system; site-specific styling lives in `commons-overrides.css`.
 
 For student-facing instructions, follow the [student tutorial style guide](tutorial-style-guide.md).
 It defines the plain-language page order, screenshot rules, curriculum path,
@@ -15,7 +15,7 @@ file placement, and publishing checklist.
 
 ## Daily slide decks
 
-Follow the canonical [Technology Commons Daily Slide Deck SOP](https://docs.google.com/document/d/1WNEgA-xn0oCiB0sp5rv67_SmsFuHpgxotrgjdXWIwB8/edit)
+Follow the canonical [Tech Edu Resources Daily Slide Deck SOP](https://docs.google.com/document/d/1WNEgA-xn0oCiB0sp5rv67_SmsFuHpgxotrgjdXWIwB8/edit)
 when creating decks or publishing their links. A Fun Day closes the current
 instructional week. The first daily deck after a Fun Day starts a new week, so
 use or create the next `Week N` folder and list that day under a new `Week N`
@@ -34,7 +34,7 @@ PDF uses browser printing. Entries exist in the page only: export before leaving
 Edit `glossary/glossary.json`, then run `python scripts/commons_glossary.py generate`.
 This updates public JSON, `_entries.html`, and lookup JSON. Validation compares
 full generated contents. Current Backgammon terms are preserved without links
-to the retired lesson corpus. Do not use `learn_glossary.py generate`: Commons
+to the retired lesson corpus. Do not use `learn_glossary.py generate`: this site
 uses its shared parsing/rendering functions through `commons_glossary.py`.
 
 ## Verification

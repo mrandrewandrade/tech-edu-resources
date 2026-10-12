@@ -1,0 +1,59 @@
+---
+title: "SSH & Administration"
+description: "Connect to an approved Linux computer, keep a terminal session, and transfer a test file."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can tell whether a command runs on my computer or a remote computer.
+- I can connect to a teacher-approved Linux host with SSH.
+- I can detach from and return to a tmux session.
+
+## Before you connect
+
+Use only the host and account supplied by your teacher. The activity may use an isolated classroom network or `localhost`. Don't scan the network, share credentials, or expose SSH to the public Internet.
+
+## Connect with SSH
+
+```bash
+ssh student@<teacher-approved-host>
+hostname
+whoami
+exit
+```
+
+The first connection may show a host key. Stop and ask if the key is unexpected or has changed.
+
+## Keep a session with tmux
+
+On the approved remote computer:
+
+```bash
+tmux new -s tej
+```
+
+Press **Ctrl+B**, then **D** to detach. Reconnect and run:
+
+```bash
+tmux list-sessions
+tmux attach -t tej
+```
+
+Your earlier terminal session should still be there.
+
+## Transfer a test file
+
+```bash
+scp ~/tej-practice/notes.txt student@<teacher-approved-host>:~/
+```
+
+Use a test file with no personal or private information.
+
+## Check your work
+
+Show the connection, the tmux detach-and-return cycle, and the transferred test file. Add one short troubleshooting note.
+
+[Previous: Performance & Benchmarking](performance-benchmarking.qmd)

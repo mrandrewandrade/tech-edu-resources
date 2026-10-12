@@ -1,6 +1,6 @@
 ---
-title: "Circuits"
-description: "A concise reference for circuit calculations and the class resources used with them."
+title: "Circuit Analysis"
+description: "Notes, examples, questions, labs, slides, and references for direct-current circuits."
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
@@ -8,6 +8,16 @@ toc-depth: 2
 execute:
   enabled: false
 ---
+
+Start with [Basic Electricity](../02-basic-electronics/index.qmd) if charge, voltage, current, resistance, Ohm's law, power, or energy is new to you. This section continues with complete circuit networks.
+
+## Learning path
+
+1. [Series circuits](series-circuits.qmd)
+2. [Parallel circuits](parallel-circuits.qmd)
+3. [Series-parallel circuits](series-parallel-circuits.qmd)
+4. [Kirchhoff's laws](kirchhoffs-laws.qmd)
+5. [Linear algebra for circuits](linear-algebra-circuits.qmd), an optional engineering extension
 
 ## Learning goals
 
@@ -87,7 +97,7 @@ Use these notes with the matching teaching slides and question sheet.
 4. [Kirchhoff's laws](kirchhoffs-laws.qmd): write current and voltage equations for networks that do not reduce directly.
 5. [Linear algebra for circuits](linear-algebra-circuits.qmd): solve several node or loop equations together.
 
-## Slides, questions, and class artifacts {#questions-answers-and-class-artifacts}
+## Slides, questions, and class resources {#questions-answers-and-class-artifacts}
 
 ### Core circuit package
 

@@ -1,0 +1,49 @@
+---
+title: "Performance & Benchmarking"
+description: "Plan a fair computer test, collect repeatable measurements, and explain what the results show."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can change one main test condition at a time.
+- I can repeat a test and keep the raw results.
+- I can explain what a benchmark does and does not measure.
+
+## Choose a useful question
+
+A benchmark is a repeatable task used to compare performance. Ask a focused question such as:
+
+- Does a RAM upgrade change the time needed for the same task?
+- How does a graphics setting affect frame rate?
+- Does the computer slow down as it becomes warmer?
+
+Choose a result you can measure: time, frame rate, numerical throughput, memory use, or a validated temperature reading.
+
+## Make the test fair
+
+- Use the same computer, software version, task, and test length.
+- Change one main condition.
+- Run each condition more than once.
+- Record settings before the test.
+- Keep the raw results.
+- Stop if the computer behaves abnormally.
+
+CPU percentage is not electrical power. Record watts only when the computer exposes a documented power sensor or the teacher supplies an enclosed wall-power meter.
+
+## Record the results
+
+| Condition | Trial | Result | Temperature, if available | Notes |
+|---|---:|---:|---:|---|
+| Baseline | 1 |  |  |  |
+| Changed condition | 1 |  |  |  |
+
+Graph the results if a graph makes the comparison easier to see. Explain variation, limits, and anything that made the test less fair.
+
+## Check your work
+
+Another student should be able to repeat your test from your notes. Your conclusion must match the evidence you collected.
+
+[Previous: Networking Diagnosis](networking-diagnosis.qmd) | [Next: SSH & Administration](ssh-administration.qmd)

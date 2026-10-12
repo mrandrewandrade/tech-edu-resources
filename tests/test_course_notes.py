@@ -22,11 +22,11 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertEqual(len(design_routes), 21)
         self.assertEqual(
             design_routes[0],
-            "/commons/design-fabrication/01-nice-design-process/01-needs-necessities.html",
+            "/tech-edu-resources/design-fabrication/01-nice-design-process/01-needs-necessities.html",
         )
         self.assertEqual(
             design_routes[-1],
-            "/commons/design-fabrication/04-3d-printing/04-design-challenge.html",
+            "/tech-edu-resources/design-fabrication/04-3d-printing/04-design-challenge.html",
         )
         self.assertTrue(
             any(route.endswith("/03-laser-cutting/06-tool-holder.html") for route in design_routes)
@@ -34,16 +34,16 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertEqual(
             routes_by_course["tej"],
             [
-                "/commons/tej3-4/01-number-systems/01-significant-figures.html",
-                "/commons/tej3-4/01-number-systems/02-powers-of-10.html",
-                "/commons/tej3-4/01-number-systems/06-scientific-calculator.html",
-                "/commons/tej3-4/01-number-systems/03-scientific-notation.html",
-                "/commons/tej3-4/01-number-systems/04-engineering-notation.html",
-                "/commons/tej3-4/01-number-systems/05-metric-prefixes.html",
-                "/commons/tej3-4/02-basic-electronics/01-charge-voltage-current.html",
-                "/commons/tej3-4/02-basic-electronics/02-circuits-opens-shorts.html",
-                "/commons/tej3-4/02-basic-electronics/03-ohms-law.html",
-                "/commons/tej3-4/02-basic-electronics/04-power-energy.html",
+                "/tech-edu-resources/tej3-4/01-number-systems/01-significant-figures.html",
+                "/tech-edu-resources/tej3-4/01-number-systems/02-powers-of-10.html",
+                "/tech-edu-resources/tej3-4/01-number-systems/06-scientific-calculator.html",
+                "/tech-edu-resources/tej3-4/01-number-systems/03-scientific-notation.html",
+                "/tech-edu-resources/tej3-4/01-number-systems/04-engineering-notation.html",
+                "/tech-edu-resources/tej3-4/01-number-systems/05-metric-prefixes.html",
+                "/tech-edu-resources/tej3-4/02-basic-electronics/01-charge-voltage-current.html",
+                "/tech-edu-resources/tej3-4/02-basic-electronics/02-circuits-opens-shorts.html",
+                "/tech-edu-resources/tej3-4/02-basic-electronics/03-ohms-law.html",
+                "/tech-edu-resources/tej3-4/02-basic-electronics/04-power-energy.html",
             ],
         )
 

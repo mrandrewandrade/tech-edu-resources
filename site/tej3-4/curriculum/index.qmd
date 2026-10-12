@@ -1,210 +1,142 @@
 ---
-title: "TEJ Curriculum Roadmap"
-description: "A concise guide to the TEJ learning pathway, major topics, and practical outcomes."
+title: "Computer Engineering Curriculum Map"
+description: "The major areas of computer engineering in a useful learning order."
 categories: [TEJ, curriculum roadmap, electronics, fabrication, computer systems, Linux, programming, microcontrollers, networking, machine learning, artificial intelligence]
 sidebar: tej
 page-layout: full
-toc: true
-toc-depth: 2
+toc: false
+body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute: {enabled: false}
-format:
-  html:
-    include-after-body:
-      - ../../includes/tej-curriculum-script.html
 ---
 
-Follow the sections in order. Use the sidebar for lessons, references, labs, projects, and optional enhancements.
+This map shows the major areas of Computer Engineering and one sensible order for learning them. It is a map, not a checklist. Your class may move between areas as projects and equipment become available.
 
-## Full progression
+## Learning map
 
-- [0. Orientation, Safety, and Design](#unit-0)
-- [1. Numbers, Units, and Calculator Skills](#unit-1)
-- [2. Electrical Fundamentals](#unit-2)
-- [3. DC Circuit Analysis](#unit-3)
-- [4. Building, Schematics, and Measurement](#unit-4)
-- [5. Components and Applied Circuits](#unit-5)
-- [6. Digital Logic and Inputs](#unit-6)
-- [7. Fabrication and PCBs](#unit-7)
-- [8. Computer Systems](#unit-8)
-- [9. Linux, Operating Systems and Basic Networking](#unit-9)
-- [10. Programming](#unit-10)
-- [11. Microcontrollers](#unit-11)
-- [12. Networking and Administration](#unit-12)
-- [13. Data Science and Machine Learning](#unit-13)
-- [14. Language Models and Applied AI](#unit-14)
-- [15. Culminating Projects](#unit-15)
-- [16. Control Systems and CNC](#unit-16)
+::: {.ter-path-grid}
+::: {.ter-path-card}
+### 1. Foundations and measurement
 
-<div data-tej-roadmap>
-## 0. Orientation, Safety, and Design {#unit-0}
+Read measurements, use units, estimate, and write very large or small values clearly.
 
-| What students learn | Why it matters |
-|:--|:--|
-| Work safely, follow a design process, and document decisions and sources. | Safe, documented work is the foundation for every build, investigation, and engineering decision. |
+[Open Foundations](../01-number-systems/index.qmd)
+:::
 
-**Subsections:** Safety; design process; documentation; privacy and attribution
+::: {.ter-path-card}
+### 2. Basic electricity
 
-**Coming out of this section, students can:** Work safely, document decisions, cite sources, and keep a usable design record.
+Build a working model of charge, voltage, current, resistance, power, energy, opens, and shorts.
 
-## 1. Numbers, Units, and Calculator Skills {#unit-1}
+[Open Basic Electricity](../02-basic-electronics/index.qmd)
+:::
 
-| What students learn | Why it matters |
-|:--|:--|
-| Use number systems, units, engineering notation, estimates, and a scientific calculator. | Units, scale, estimation, and calculator fluency make technical results understandable and trustworthy. |
+::: {.ter-path-card}
+### 3. DC circuits
 
-**Subsections:** Number systems; units; significant figures; engineering notation; calculator workflow
+Calculate and check series, parallel, mixed, and Kirchhoff circuit networks.
 
-**Coming out of this section, students can:** Convert technical quantities, use engineering notation, estimate results, and present calculations clearly.
+[Open Circuit Analysis](../circuits/index.qmd)
+:::
 
-## 2. Electrical Fundamentals {#unit-2}
+::: {.ter-path-card}
+### 4. Measurement and circuit building
 
-| What students learn | Why it matters |
-|:--|:--|
-| Explain and calculate charge, voltage, current, resistance, sources, and loads. | These quantities explain how sources, conductors, and loads behave in a complete circuit. |
+Move from a schematic to a simulation or breadboard, then compare predictions with measurements.
 
-**Subsections:** Charge; voltage; current; resistance; sources and loads; AC and DC
+[Find labs and activities](../electronics-library/index.qmd#labs-and-assignments)
+:::
 
-**Coming out of this section, students can:** Explain and calculate charge, voltage, current, resistance, opens, shorts, and source behaviour.
+::: {.ter-path-card}
+### 5. Electronic components
 
-## 3. DC Circuit Analysis {#unit-3}
+Explore resistors, switches, diodes, capacitors, transistors, sensors, motors, relays, and useful circuits.
 
-| What students learn | Why it matters |
-|:--|:--|
-| Analyze direct-current networks, solve their equations, and connect electrical energy to useful work. | Circuit analysis predicts electrical behaviour; an energy-conversion lab shows what that behaviour accomplishes in a real device. |
+[Browse component resources](../electronics-library/index.qmd#components-and-applied-circuits)
+:::
 
-**Subsections:** Ohm&#x27;s law; series circuits; parallel circuits; mixed networks; Kirchhoff&#x27;s laws; linear systems; work, energy, power, and efficiency; dividers; troubleshooting
+::: {.ter-path-card}
+### 6. Digital logic
 
-**Coming out of this section, students can:** Solve and verify series, parallel, and mixed networks, use linear equations, and compare electrical energy with mechanical work.
+Use binary states, stable inputs, gates, truth tables, and simple digital decisions.
 
-**Collaboration:** The [Engineering Preparation Track collaboration map](../engineering-preparation-track/index.qmd#ontario-course-collaboration-opportunities) connects this work with TEJ3M/TEJ4M, SPH3U physics, SCH4U chemistry, and SBI4U biology.
+[Open Digital Logic](../03-digital-logic-inputs/index.qmd)
+:::
 
-## 4. Building, Schematics, and Measurement {#unit-4}
+::: {.ter-path-card}
+### 7. Fabrication and PCB workflow
 
-| What students learn | Why it matters |
-|:--|:--|
-| Build readable circuits and compare calculated, simulated, and measured results. | Readable schematics, careful construction, and correct measurement make troubleshooting possible. |
+Turn tested designs into physical parts, soldered circuits, boards, or enclosures.
 
-**Subsections:** Breadboards; schematics; simulation; multimeter use; measurement uncertainty
+[Open Design &amp; Fabrication](../../design-fabrication/index.qmd)
+:::
 
-**Coming out of this section, students can:** Build from a schematic, measure safely, compare predicted and measured values, and locate wiring errors.
+::: {.ter-path-card}
+### 8. Computer systems
 
-## 5. Components and Applied Circuits {#unit-5}
+Identify parts, understand power, start a computer, install an operating system, upgrade it, and test it.
 
-| What students learn | Why it matters |
-|:--|:--|
-| Select and apply common components in useful low-voltage circuits. | Component knowledge lets students select, connect, protect, and test useful electronic circuits. |
+[Open Computer Systems](../computer-systems/index.qmd)
+:::
 
-**Subsections:** Sensors; batteries; capacitors; diodes; transistors; timers; motors and relays
+::: {.ter-path-card}
+### 9. Linux, operating systems and networking
 
-**Coming out of this section, students can:** Design and test sensor, timing, switching, power-supply, and actuator-interface circuits.
+Install Linux, use the desktop and terminal, inspect hardware, and diagnose connections.
 
-## 6. Digital Logic and Inputs {#unit-6}
+[Open Linux &amp; Operating Systems](../linux-operating-systems/index.qmd)
+:::
 
-| What students learn | Why it matters |
-|:--|:--|
-| Create stable digital inputs and analyze combinational and sequential logic. | Stable inputs and Boolean logic connect physical switches and sensors to dependable digital decisions. |
+::: {.ter-path-card}
+### 10. Programming
 
-**Subsections:** Logic levels; pull-ups and pull-downs; debouncing; logic gates; truth tables; state
+Turn a process into clear steps, code, tests, and useful output.
 
-**Coming out of this section, students can:** Build stable switch inputs, complete truth tables, analyze logic, and create a small digital system.
+[Explore programming in the engineering track](../engineering-preparation-track/index.qmd#boolean-logic-algorithms-and-state-machines)
+:::
 
-## 7. Fabrication and PCBs {#unit-7}
+::: {.ter-path-card}
+### 11. Microcontrollers
 
-| What students learn | Why it matters |
-|:--|:--|
-| Turn a tested prototype into a durable fabricated or manufactured result. | Fabrication turns a tested design into a durable, repeatable physical product. |
+Connect code to protected inputs, sensors, outputs, timing, communication, and actuators.
 
-**Subsections:** Soldering; connectors; PCB design; manufacturing files; enclosures and fabrication
+[Open Physical Computing](../04-microcontrollers/index.qmd)
+:::
 
-**Coming out of this section, students can:** Prepare a manufacturable design and produce a soldered, printed, laser-cut, or machined result.
+::: {.ter-path-card}
+### 12. Systems administration and networks
 
-## 8. Computer Systems {#unit-8}
+Work with addresses, services, users, permissions, remote access, and troubleshooting.
 
-| What students learn | Why it matters |
-|:--|:--|
-| Assemble, commission, maintain, upgrade, and troubleshoot computer hardware. | Computer hardware work connects electrical principles to real systems, maintenance, repair, and reuse. |
+[Open Networking Diagnosis](../linux-operating-systems/networking-diagnosis.qmd)
+:::
 
-**Subsections:** Components; power; assembly; startup; Linux installation; upgrades and troubleshooting
+::: {.ter-path-card}
+### 13. Data and machine learning
 
-**Coming out of this section, students can:** Identify, assemble, commission, benchmark, troubleshoot, upgrade, and document a computer.
+Collect useful data, graph it, test models, and explain what the evidence can and cannot show.
 
-## 9. Linux, Operating Systems and Basic Networking {#unit-9}
+[Open the data and modelling track](../engineering-preparation-track/index.qmd#curve-fitting-regression-and-machine-learning)
+:::
 
-| What students learn | Why it matters |
-|:--|:--|
-| Use and administer a Linux system safely from the desktop and command line. | Operating-system knowledge gives students control over files, software, permissions, and system behaviour. |
+::: {.ter-path-card}
+### 14. Applied AI
 
-**Subsections:** Desktop use; files and permissions; command line; software; basic networking; services; backup and recovery
+Explore small, testable uses of artificial intelligence while checking sources, privacy, limits, and results.
 
-**Coming out of this section, students can:** Install and use Linux, manage files and permissions, run commands, check basic network settings and connectivity, and complete basic administration.
+[Start with data and model evaluation](../engineering-preparation-track/index.qmd#curve-fitting-regression-and-machine-learning)
+:::
 
-## 10. Programming {#unit-10}
+::: {.ter-path-card}
+### 15. Projects and culminating work
 
-| What students learn | Why it matters |
-|:--|:--|
-| Write, test, debug, and document programs for calculations, data, and control. | Programming turns a process or calculation into a repeatable tool that can handle inputs and errors. |
+Combine design, building, code, measurement, testing, revision, and communication in a useful project.
 
-**Subsections:** Algorithms; variables; conditions; loops; functions; files; testing and debugging
+[Explore projects](../electronics-library/projects/index.qmd)
+:::
+:::
 
-**Coming out of this section, students can:** Write, test, debug, and document programs that calculate, model, process data, or control a task.
+## Optional tracks
 
-## 11. Microcontrollers {#unit-11}
-
-| What students learn | Why it matters |
-|:--|:--|
-| Connect code to protected sensors, inputs, outputs, communication, and actuators. | Physical computing joins code, sensors, outputs, timing, and electrical protection in one system. |
-
-**Subsections:** Inputs and outputs; sensors; timing; communication; actuators; state machines; data logging
-
-**Coming out of this section, students can:** Create a protected sensor-and-actuator system using a microcontroller or single-board computer.
-
-## 12. Networking and Administration {#unit-12}
-
-| What students learn | Why it matters |
-|:--|:--|
-| Explain networks and operate small classroom services using defensive practices. | Networking explains how devices communicate and how small services are operated safely. |
-
-**Subsections:** Addresses; protocols; diagnostics; secure remote access; services; users and backups
-
-**Coming out of this section, students can:** Configure and diagnose a small network or classroom service using defensive administration practices.
-
-## 13. Data Science and Machine Learning {#unit-13}
-
-| What students learn | Why it matters |
-|:--|:--|
-| Prepare, visualize, model, and evaluate non-personal data responsibly. | Data science helps students turn measurements into evidence while recognizing uncertainty and bias. |
-
-**Subsections:** Data preparation; visualization; regression; classification; model evaluation; responsible use
-
-**Coming out of this section, students can:** Clean, visualize, model, and evaluate a non-personal dataset and explain the limits of the result.
-
-## 14. Language Models and Applied AI {#unit-14}
-
-| What students learn | Why it matters |
-|:--|:--|
-| Explain, use, ground, and evaluate small language-model applications responsibly. | Understanding language models helps students use, test, and evaluate artificial intelligence responsibly. |
-
-**Subsections:** Tokens; prediction; small models; prompting; grounding; evaluation; responsible use
-
-**Coming out of this section, students can:** Build or evaluate a small grounded artificial-intelligence application with documented tests and limits.
-
-## 15. Culminating Projects {#unit-15}
-
-| What students learn | Why it matters |
-|:--|:--|
-| Plan, build or simulate, test, revise, and explain an integrated technology project. | A culminating project combines design, construction, programming, testing, revision, and communication. |
-
-**Subsections:** Requirements; design; build or simulation; testing; revision; technical communication
-
-**Coming out of this section, students can:** Deliver a working or simulated technology project supported by evidence, revision, and a technical explanation.
-
-## 16. Control Systems and CNC {#unit-16}
-
-| What students learn | Why it matters |
-|:--|:--|
-| Model or build systems that use sensing, decisions, feedback, and safe states. | Control systems show how sensing, decisions, and feedback produce safe, useful machine behaviour. |
-
-**Subsections:** Open and closed loop control; hysteresis; proportional control; PID; interlocks; motion and CNC
-
-**Coming out of this section, students can:** Model or build a feedback-controlled system with safe states, interlocks, and measured response.
-</div>
+- [Engineering Preparation Track](../engineering-preparation-track/index.qmd)
+- [Linux & Systems pathway](../linux-operating-systems/index.qmd)
+- [Advanced Circuit Analysis](../circuits/index.qmd)

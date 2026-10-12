@@ -1,166 +1,88 @@
 ---
-title: "Computer Engineering Notes"
-subtitle: "TEJ3M and TEJ4M learning pathway"
-description: "Student notes and classroom resources for electronics, computer systems, Linux, programming, networking, microcontrollers, artificial intelligence, and control systems."
+title: "Computer Engineering"
+subtitle: "Electronics, computers, code, networks, and useful systems"
+description: "Student notes, explanations, videos, activities, references, and projects for computer engineering."
 sidebar: tej
 page-layout: full
 toc: false
-format:
-  html:
-    title-block-style: plain
-    body-classes: "ter-design-fabrication bs-title-eyebrow"
+body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute:
   enabled: false
 ---
 
-## Start here
+Computer engineering brings together electronics, computers, operating systems, programming, networks, measurement, troubleshooting, and design. These notes collect useful explanations, videos, references, activities, and projects. You don't have to read everything in order.
 
-Use the [General Computer Engineering Curriculum](curriculum/index.qmd) for the complete course sequence, or open the [Engineering Preparation Track](engineering-preparation-track/index.qmd) for students considering post-secondary engineering.
-
-## Learning path
-
-The boxes below show the major ideas and skills in each unit.
+## Find a topic
 
 ::: {.ter-path-grid}
 ::: {.ter-path-card}
-### 0. Orientation and design
+### Foundations
 
-Design process, documentation, source attribution, privacy, and classroom routines.
+Numbers, units, calculator skills, scientific notation, engineering notation, and measurement.
 
-[Open the roadmap](curriculum/index.qmd#unit-0)
+[Open Foundations](01-number-systems/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 1. Numbers and units
+### Basic Electricity
 
-Number systems, significant figures, engineering notation, metric prefixes, estimation, and calculator skills.
+Charge, voltage, current, resistance, circuits, Ohm's law, power, and energy.
 
-[Open the roadmap](curriculum/index.qmd#unit-1)
+[Open Basic Electricity](02-basic-electronics/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 2. Electrical fundamentals
+### Circuit Analysis
 
-Charge, voltage, current, resistance, sources, loads, alternating current, and direct current.
+Series, parallel, and mixed circuits, Kirchhoff's laws, measurement, and troubleshooting.
 
-[Open the roadmap](curriculum/index.qmd#unit-2)
+[Open Circuit Analysis](circuits/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 3. DC circuit analysis
+### Computer Systems
 
-Ohm's law, power, series and parallel circuits, mixed networks, Kirchhoff's laws, dividers, and troubleshooting.
+Parts, power, POST, BIOS/UEFI, operating systems, RAM, storage, upgrades, testing, and benchmarking.
 
-[Open Circuits](circuits/index.qmd)
+[Open Computer Systems](computer-systems/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 4. Building and measurement
+### Linux & Operating Systems
 
-Breadboards, schematics, simulation, multimeter use, measurement uncertainty, and comparison of predicted and measured results.
+Install Linux, use the terminal, inspect hardware, diagnose networks, compare performance, and administer a computer.
 
-[Open the roadmap](curriculum/index.qmd#unit-4)
+[Open Linux & Operating Systems](linux-operating-systems/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 5. Components and applied circuits
+### Digital Logic
 
-Sensors, batteries, capacitors, diodes, transistors, timers, motors, relays, and useful low-voltage circuits.
+Binary states, truth tables, gates, stable inputs, switches, pull-ups, and pull-downs.
 
-[Open the Electronics Lesson Library](electronics-library/index.qmd)
+[Open Digital Logic](03-digital-logic-inputs/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 6. Digital logic and inputs
+### Programming & Physical Computing
 
-Logic levels, stable switches, pull-ups, pull-downs, debouncing, gates, truth tables, and state.
+Programming, microcontrollers, sensors, actuators, and useful computer-controlled systems.
 
-[Open the roadmap](curriculum/index.qmd#unit-6)
+[Open Physical Computing](04-microcontrollers/index.qmd)
 :::
 
 ::: {.ter-path-card}
-### 7. Fabrication and PCBs
+### Explore Further
 
-Soldering, connectors, printed circuit boards, manufacturing files, enclosures, and fabrication.
+Engineering preparation, control systems, networking, Git and GitHub, data, machine learning, and other extensions.
 
-[Open the roadmap](curriculum/index.qmd#unit-7)
-:::
-
-::: {.ter-path-card}
-### 8. Computer systems
-
-Computer components, power, assembly, startup, firmware, Linux installation, upgrades, repair, and reuse.
-
-[Open the roadmap](curriculum/index.qmd#unit-8)
-:::
-
-::: {.ter-path-card}
-### 9. Linux and basic networking
-
-Linux desktop use, files, permissions, command line, software, connectivity, services, backup, and recovery.
-
-[Open Linux and Operating Systems](linux-operating-systems/index.qmd)
-:::
-
-::: {.ter-path-card}
-### 10. Programming
-
-Algorithms, variables, conditions, loops, functions, files, testing, debugging, and technical documentation.
-
-[Open the roadmap](curriculum/index.qmd#unit-10)
-:::
-
-::: {.ter-path-card}
-### 11. Microcontrollers
-
-Protected inputs and outputs, sensors, timing, communication, actuators, state machines, and data logging.
-
-[Open the roadmap](curriculum/index.qmd#unit-11)
-:::
-
-::: {.ter-path-card}
-### 12. Networking and administration
-
-Addresses, protocols, diagnostics, secure remote access, users, classroom services, and defensive administration.
-
-[Open the roadmap](curriculum/index.qmd#unit-12)
-:::
-
-::: {.ter-path-card}
-### 13. Data science and machine learning
-
-Data preparation, visualization, regression, classification, model evaluation, uncertainty, and responsible use.
-
-[Open the roadmap](curriculum/index.qmd#unit-13)
-:::
-
-::: {.ter-path-card}
-### 14. Language models and applied AI
-
-Tokens, prediction, prompting, grounding, evaluation, small models, and responsible artificial-intelligence use.
-
-[Open the roadmap](curriculum/index.qmd#unit-14)
-:::
-
-::: {.ter-path-card}
-### 15. Culminating projects
-
-Requirements, planning, construction or simulation, testing, revision, evidence, and technical communication.
-
-[Open the roadmap](curriculum/index.qmd#unit-15)
-:::
-
-::: {.ter-path-card}
-### 16. Control systems and CNC
-
-Open and closed loops, hysteresis, proportional and PID control, interlocks, state machines, motion, and CNC.
-
-[Open the roadmap](curriculum/index.qmd#unit-16)
+[Open the Engineering Preparation Track](engineering-preparation-track/index.qmd)
 :::
 :::
 
-## More resources
+## Maps and collections
 
-- [Electronics Lesson Library](electronics-library/index.qmd)
-- [Linux and Operating Systems](linux-operating-systems/index.qmd)
-- [Circuits Notes](circuits/index.qmd)
+- [Curriculum Map](curriculum/index.qmd) shows the major areas in a sensible learning order.
+- [Electronics Resources](electronics-library/index.qmd) collects references, questions, labs, assignments, and class materials.
+- [TEJ class slides](../slides/tej.qmd) shows the daily decks and supporting materials.
+- [General Materials](../teaching-materials/index.qmd) contains reusable handouts and worksheets.

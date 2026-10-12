@@ -159,6 +159,28 @@ ROADMAP_COLLABORATION = {
 }
 
 
+# The YAML remains the detailed teacher/development source.  The public map is
+# deliberately short: students see broad areas and useful destinations, not
+# implementation fields, status labels, or module IDs.
+PUBLIC_CURRICULUM_MAP = [
+    ("Foundations and measurement", "Read measurements, use units, estimate, and write very large or small values clearly.", "../01-number-systems/index.qmd", "Open Foundations"),
+    ("Basic electricity", "Build a working model of charge, voltage, current, resistance, power, energy, opens, and shorts.", "../02-basic-electronics/index.qmd", "Open Basic Electricity"),
+    ("DC circuits", "Calculate and check series, parallel, mixed, and Kirchhoff circuit networks.", "../circuits/index.qmd", "Open Circuit Analysis"),
+    ("Measurement and circuit building", "Move from a schematic to a simulation or breadboard, then compare predictions with measurements.", "../electronics-library/index.qmd#labs-and-assignments", "Find labs and activities"),
+    ("Electronic components", "Explore resistors, switches, diodes, capacitors, transistors, sensors, motors, relays, and useful circuits.", "../electronics-library/index.qmd#components-and-applied-circuits", "Browse component resources"),
+    ("Digital logic", "Use binary states, stable inputs, gates, truth tables, and simple digital decisions.", "../03-digital-logic-inputs/index.qmd", "Open Digital Logic"),
+    ("Fabrication and PCB workflow", "Turn tested designs into physical parts, soldered circuits, boards, or enclosures.", "../../design-fabrication/index.qmd", "Open Design & Fabrication"),
+    ("Computer systems", "Identify parts, understand power, start a computer, install an operating system, upgrade it, and test it.", "../computer-systems/index.qmd", "Open Computer Systems"),
+    ("Linux, operating systems and networking", "Install Linux, use the desktop and terminal, inspect hardware, and diagnose connections.", "../linux-operating-systems/index.qmd", "Open Linux & Operating Systems"),
+    ("Programming", "Turn a process into clear steps, code, tests, and useful output.", "../engineering-preparation-track/index.qmd#boolean-logic-algorithms-and-state-machines", "Explore programming in the engineering track"),
+    ("Microcontrollers", "Connect code to protected inputs, sensors, outputs, timing, communication, and actuators.", "../04-microcontrollers/index.qmd", "Open Physical Computing"),
+    ("Systems administration and networks", "Work with addresses, services, users, permissions, remote access, and troubleshooting.", "../linux-operating-systems/networking-diagnosis.qmd", "Open Networking Diagnosis"),
+    ("Data and machine learning", "Collect useful data, graph it, test models, and explain what the evidence can and cannot show.", "../engineering-preparation-track/index.qmd#curve-fitting-regression-and-machine-learning", "Open the data and modelling track"),
+    ("Applied AI", "Explore small, testable uses of artificial intelligence while checking sources, privacy, limits, and results.", "../engineering-preparation-track/index.qmd#curve-fitting-regression-and-machine-learning", "Start with data and model evaluation"),
+    ("Projects and culminating work", "Combine design, building, code, measurement, testing, revision, and communication in a useful project.", "../electronics-library/projects/index.qmd", "Explore projects"),
+]
+
+
 def validate_record(record: dict[str, Any], identity: str) -> None:
     missing = sorted(REQUIRED_RECORD_FIELDS - set(record))
     if missing:
@@ -222,36 +244,46 @@ def build_page(data: dict[str, Any]) -> str:
     if len(module_ids) != len(set(module_ids)):
         raise ValueError("Curriculum module IDs must be unique")
 
-    unit_links = "\n".join(
-        f"- [{html.escape(str(unit['unit_id']))}. {html.escape(ROADMAP_TITLES[str(unit['unit_id'])])}](#unit-{str(unit['unit_id']).replace('.', '-')})"
-        for unit in units
-    )
-    unit_markup = "\n\n".join(render_unit(unit) for unit in units)
+    cards = []
+    for number, (title, description, route, link_text) in enumerate(PUBLIC_CURRICULUM_MAP, start=1):
+        cards.append(
+            "\n".join(
+                (
+                    '::: {.ter-path-card}',
+                    f"### {number}. {html.escape(title)}",
+                    "",
+                    html.escape(description),
+                    "",
+                    f"[{html.escape(link_text)}]({route})",
+                    ":::",
+                )
+            )
+        )
+    card_markup = "\n\n".join(cards)
     return f"""---
-title: "TEJ Curriculum Roadmap"
-description: "A concise guide to the TEJ learning pathway, major topics, and practical outcomes."
+title: "Computer Engineering Curriculum Map"
+description: "The major areas of computer engineering in a useful learning order."
 categories: [TEJ, curriculum roadmap, electronics, fabrication, computer systems, Linux, programming, microcontrollers, networking, machine learning, artificial intelligence]
 sidebar: tej
 page-layout: full
-toc: true
-toc-depth: 2
+toc: false
+body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute: {{enabled: false}}
-format:
-  html:
-    include-after-body:
-      - ../../includes/tej-curriculum-script.html
 ---
 
-Follow the sections in order. Use the sidebar for lessons, references, labs, projects, and optional enhancements.
+This map shows the major areas of Computer Engineering and one sensible order for learning them. It is a map, not a checklist. Your class may move between areas as projects and equipment become available.
 
-## Full progression
+## Learning map
 
-{unit_links}
+::: {{.ter-path-grid}}
+{card_markup}
+:::
 
-<div data-tej-roadmap>
-{unit_markup}
-</div>
+## Optional tracks
 
+- [Engineering Preparation Track](../engineering-preparation-track/index.qmd)
+- [Linux & Systems pathway](../linux-operating-systems/index.qmd)
+- [Advanced Circuit Analysis](../circuits/index.qmd)
 """
 
 

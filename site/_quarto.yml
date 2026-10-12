@@ -32,6 +32,12 @@ project:
     - "design-fabrication/tools/tool-organizer-gallery/**/*.qmd"
     - "design-fabrication/accessible-design/**/*.qmd"
     - "tej3-4/index.qmd"
+    - "tej3-4/01-number-systems/**/*.qmd"
+    - "tej3-4/02-basic-electronics/**/*.qmd"
+    - "tej3-4/03-digital-logic-inputs/**/*.qmd"
+    - "tej3-4/04-microcontrollers/**/*.qmd"
+    - "tej3-4/05-control-systems/**/*.qmd"
+    - "tej3-4/computer-systems/**/*.qmd"
     - "tej3-4/curriculum/**/*.qmd"
     - "tej3-4/circuits/**/*.qmd"
     - "tej3-4/engineering-preparation-track/**/*.qmd"
@@ -159,13 +165,11 @@ website:
       contents:
         - text: "Computer Engineering Home"
           href: tej3-4/index.qmd
-        - text: "Curriculum Roadmap"
+        - text: "Curriculum Map"
           href: tej3-4/curriculum/index.qmd
-        - text: "Engineering Preparation Track"
-          href: tej3-4/engineering-preparation-track/index.qmd
-        - text: "Electronics Lesson Library"
+        - text: "Electronics Resources"
           href: tej3-4/electronics-library/index.qmd
-        - section: "Circuits"
+        - section: "Circuit Analysis"
           href: tej3-4/circuits/index.qmd
           contents:
             - text: "Significant Figures"
@@ -186,8 +190,10 @@ website:
               href: tej3-4/circuits/kirchhoffs-laws.qmd
             - text: "Linear Algebra for Circuits"
               href: tej3-4/circuits/linear-algebra-circuits.qmd
-            - text: "Class Resources"
+            - text: "Practice and Class Resources"
               href: tej3-4/circuits/index.qmd#questions-answers-and-class-artifacts
+        - text: "Computer Systems"
+          href: tej3-4/computer-systems/index.qmd
         - section: "Linux, Operating Systems & Networking"
           href: tej3-4/linux-operating-systems/index.qmd
           contents:
@@ -195,9 +201,21 @@ website:
               href: tej3-4/linux-operating-systems/choosing-a-distribution.qmd
             - text: "Install Linux Mint"
               href: tej3-4/linux-operating-systems/install-linux-mint.qmd
+            - text: "Terminal Basics"
+              href: tej3-4/linux-operating-systems/terminal-basics.qmd
+            - text: "Hardware Inventory"
+              href: tej3-4/linux-operating-systems/hardware-inventory.qmd
+            - text: "Networking Diagnosis"
+              href: tej3-4/linux-operating-systems/networking-diagnosis.qmd
+            - text: "Performance & Benchmarking"
+              href: tej3-4/linux-operating-systems/performance-benchmarking.qmd
+            - text: "SSH & Administration"
+              href: tej3-4/linux-operating-systems/ssh-administration.qmd
+        - text: "Engineering Preparation Track"
+          href: tej3-4/engineering-preparation-track/index.qmd
   page-footer:
     left: |
-      Website code: [AGPL 3.0](https://andrewandrade.ca/commons/licensing.html). Educational content: [CC BY-SA 4.0](https://andrewandrade.ca/commons/licensing.html).
+      Website code: [AGPL 3.0](https://andrewandrade.ca/tech-edu-resources/licensing.html). Educational content: [CC BY-SA 4.0](https://andrewandrade.ca/tech-edu-resources/licensing.html).
 
       Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, [andrewandrade.ca](https://andrewandrade.ca/), and [github.com/mrandrewandrade](https://github.com/mrandrewandrade). Add your own name and links when adapting it. **Sharing is caring.**
 
@@ -206,7 +224,7 @@ website:
       - text: References
         href: references.qmd
       - text: Licensing
-        href: licensing.qmd
+        href: https://andrewandrade.ca/tech-edu-resources/licensing.html
 
 format:
   html:

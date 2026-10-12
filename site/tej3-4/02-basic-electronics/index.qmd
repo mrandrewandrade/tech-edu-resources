@@ -1,5 +1,5 @@
 ---
-title: "2. Basic Electronics"
+title: "Basic Electricity"
 description: "Charge, voltage, current, circuits, Ohm's law, power, and energy using practical computer-electronics examples."
 sidebar: tej
 page-layout: full
@@ -9,20 +9,20 @@ execute:
   enabled: false
 ---
 
-This unit builds a practical model of electricity before introducing specific components in detail.
+Electricity becomes easier to understand when each new idea answers a real question: What is moving? What pushes it? What slows it down? What happens when the path breaks? How much power does a device use?
 
 Grob's *Basic Electronics* is the main technical reference for charge, potential difference, current, closed circuits, Ohm's law, power, energy, opens, and shorts. [[1, pp. 22-49, 76-99]](../../references.qmd#ref-grob2016)
 
 *Open Circuits* is used as a visual reference for what these ideas look like inside real electronic components and power-conversion hardware. [[2]](../../references.qmd#ref-opencircuits2023)
 
-1. [2.1 Charge, Voltage & Current](01-charge-voltage-current.qmd)
-2. [2.2 Closed, Open & Short Circuits](02-circuits-opens-shorts.qmd)
-3. [2.3 Ohm's Law](03-ohms-law.qmd)
-4. [2.4 Power & Energy](04-power-energy.qmd)
+## Learning path
 
-## Why this order?
+1. [Charge, voltage and current](01-charge-voltage-current.qmd)
+2. [Open, closed and short circuits](02-circuits-opens-shorts.qmd)
+3. [Ohm's law](03-ohms-law.qmd)
+4. [Power and energy](04-power-energy.qmd)
 
-The goal is to understand the quantities first:
+Keep these quantities separate:
 
 - **charge** tells us how much electric charge is involved
 - **voltage** tells us the potential difference between two points
@@ -32,3 +32,14 @@ The goal is to understand the quantities first:
 - **energy** tells us the total amount transferred over time
 
 Specific components such as resistors, capacitors, diodes, and transistors can then be introduced when we actually use them.
+
+## Class resources
+
+- [Handout: SI Prefixes and Electrical Quantities Cheat Sheet](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- [Handout: Schematic and GUESS calculation sheet](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit)
+- [Questions: Circuit Calculations student worksheet](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit)
+- [Slides: Basic Electricity to Basic Computer Systems](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
+- [Slides: Power Practice](https://docs.google.com/presentation/d/1cqEnGBcr8CJ_tYiYRPn1UxRQ-bY-ce6ZjLPfCoSwkR8/edit)
+- [Reference: Electronics quick reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
+
+Continue to [Circuit Analysis](../circuits/index.qmd) when you are ready to work with series, parallel, and mixed circuits.

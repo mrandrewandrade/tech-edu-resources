@@ -1,0 +1,44 @@
+---
+title: "Terminal Basics"
+description: "Move through folders, work with files, read command help, and inspect a Linux computer."
+sidebar: tej
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can tell where I am in the file system.
+- I can create, copy, move, and read files in my own practice folder.
+- I can use built-in help before running an unfamiliar command.
+
+## Before you start
+
+Open **Terminal** on your Linux computer. Work inside your own home folder. Don't paste commands from a website unless you understand them and your teacher has approved them.
+
+## Try the essential commands
+
+| Task | Command | What you should see |
+|---|---|---|
+| Show your location | `pwd` | A full path ending with your user or current folder |
+| List files | `ls -la` | Names, hidden files, and permissions |
+| Make a practice folder | `mkdir -p ~/tej-practice` | A new folder in your home directory |
+| Enter the folder | `cd ~/tej-practice` | Your prompt moves to the practice folder |
+| Make a text file | `nano notes.txt` | A simple text editor |
+| Read the file | `cat notes.txt` | The text appears in the terminal |
+| Copy the file | `cp notes.txt notes-backup.txt` | Two files appear when you run `ls` |
+| Move or rename it | `mv notes-backup.txt commands.txt` | The backup has its new name |
+| Read help | `man ls` or `ls --help` | The command's documentation |
+| Inspect processes | `top` or `htop` | Live CPU and memory activity |
+
+`~` means your home folder. `.` means the current folder. `/` is the top of the whole file system.
+
+## Activity
+
+Create `~/tej-practice`. Add a text file that records three commands and what each one does. Copy the file, rename the copy, and show both files to a partner.
+
+## Check your work
+
+Run `pwd` and `ls -la`. You should be inside `tej-practice` and see both text files. Save a screenshot or short command log for your class work.
+
+[Next: Hardware Inventory](hardware-inventory.qmd)

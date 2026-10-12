@@ -1,60 +1,33 @@
 ---
-title: "TEJ Lab Index"
-description: "Search-ready hardware labs and Tinkercad activities."
+title: "Electronics Labs & Activities"
+description: "Circuit, logic, and computer-system activities that are ready for classroom use."
 sidebar: tej
 toc: true
 execute: {enabled: false}
 ---
 
-| Lab | Module | Mode | Time | Safety | Status |
-|:--|:--|:--|--:|:--|:--|
-| L01 Protected low-voltage circuit | H01 | Tinkercad then physical | 75 min | protected extra-low voltage | complete |
-| L02 Resistance measurement and V-I behaviour | H06/H07 | physical | 75 min | current-limited source | planned |
-| L03 Ohm's law verification | H07 | Tinkercad then physical | 75 min | low voltage only | planned |
-| L04 Series-circuit current and voltage verification | H09 | physical; Tinkercad optional | 75 min | power off for resistance | ready |
-| L05 Parallel branches and faults | H10/H16 | Tinkercad and physical | 90 min | fused/current-limited | planned |
-| L21 Baseline, parts, and safe opening | CS01/CS02 | physical | 75 min | unplugged, ESD controls | complete |
-| L22 Power connections and ready-to-power gate | CS03/CS04 | physical | 75 min | no internal live probing | complete |
-| L23 POST and hardware fault stations | SQ02 | teacher-prepared stations | 90 min | teacher-prepared faults only | complete |
-| L24 Xubuntu 26.04 LTS commissioning | CS05/CS06 | physical and software | 150 min | confirmed target drive | complete |
-| L25 Power and thermal-control investigation | SQ05 | physical and software | 120 min | enclosed wall meter only | complete |
-| L26 Memory upgrade and verification | CS07 | physical | 90 min | unplugged, ESD controls | complete |
-| L27 Build-the-best-computer challenge | CS08 | physical and software | 240 min | approved parts and tests | complete |
-| L28 Storage and expansion upgrade | SQ03 | physical and software | 120 min | protect data, do not force connectors | complete |
+These activities connect calculations and diagrams to simulations, measurements, or real computers. Use the equipment and version assigned by your teacher.
 
-[Download the H01 lab](https://mrandrewandrade.github.io/assets/H01_Safety_Lab_Practice_Lab.pdf){target="_blank"}
+## Circuit labs
 
-[Download the Basic Computer Systems student activity packages](https://mrandrewandrade.github.io/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf){target="_blank"}
+- [Series-circuit calculation and measurement](../modules/h09-series-circuits-a.qmd)
+- [Series-parallel circuit investigation](../modules/h11-series-parallel-circuits-a.qmd)
+- [Digital-input and logic sequence](../../03-digital-logic-inputs/index.qmd)
+- [Circuits and Digital Logic project](../../03-digital-logic-inputs/06-circuits-culminating-project.qmd)
 
-[Download the Computer Recovery Crew Pilot Job Sheet](https://mrandrewandrade.github.io/assets/TEJ-Computer-Recovery-Crew-Pilot-Job-Sheet.pdf){target="_blank"}
+## Computer-system activities
 
-## Grob experiment suggestions {#grob-experiment-suggestions}
+- [Know the parts and record a baseline](../../computer-systems/cs02-parts-baseline-esd.qmd)
+- [Trace computer power connections](../../computer-systems/cs03-power-connections.qmd)
+- [POST and BIOS/UEFI](../../computer-systems/cs05-post-firmware.qmd)
+- [Install Linux Mint](../../linux-operating-systems/install-linux-mint.qmd)
+- [Upgrade and verify RAM](../../computer-systems/cs07-ram-upgrade.qmd)
+- [Benchmark and compare](../../computer-systems/cs08-benchmark-challenge.qmd)
 
-Use these as starting points rather than automatic assignments. Each lesson package should select the experiment that actually verifies its learning goal, adapt it to current equipment and protected low-voltage practice, or state that no experiment is needed.
+## Activity packages
 
-[Open the Grob Experiments Manual in Google Drive](https://drive.google.com/file/d/15KJmGLXvTh0oivaqnV0SvWB7N64V1soT/view){target="_blank"}
+- [Basic Computer Systems student activity package](https://andrewandrade.ca/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf)
+- [Circuit Calculations student worksheet](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit)
+- [Schematic and GUESS calculation sheet](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit)
 
-[Open the complete TEJ lesson-package style guide](https://docs.google.com/document/d/1J3Wf2mPp0UHAIjWphWWiRx7wtk9TbDPhLshayqw_pVE/edit){target="_blank"}
-
-| TEJ lesson package | Suggested Grob experiment | Minimum equipment and components | Software | Consumables and preparation |
-|:--|:--|:--|:--|:--|
-| Engineering notation and calculator skills | Introduction Experiment: Electronics Math | Scientific calculator and TEJ reference | None | Calculation prompts; no circuit parts |
-| Electrical quantities and safe setup | Experiment 1-1: Lab Safety, Equipment, and Components | Protected low-voltage source, digital multimeter, breadboard, resistor and component samples | Tinkercad optional | Label components and prepare one known-safe demonstration circuit |
-| Resistance and resistor identification | Experiments 2-1 and 2-2 | Digital multimeter, resistor assortment, breadboard, protected source | Tinkercad optional | Resistors with several values and tolerances; spare parts for damaged leads |
-| Ohm's law and power | Experiments 3-1 and 3-2 | Current-limited supply, digital multimeter, breadboard, rated resistors | Tinkercad first; Multisim optional | Choose values that remain below resistor power ratings |
-| Series circuits | Experiment 4-1 core; Experiment 4-2 extension | Current-limited 10.0 V supply, fused digital multimeter, breadboard, test leads, jumpers, 1.0 kΩ, 2.2 kΩ, and 3.3 kΩ resistors | None required; Tinkercad optional | Calculate and measure current at four points, voltage drops, Kirchhoff's voltage-law check, percent difference, and one circuit photo; do not create a deliberate hard short |
-| Parallel circuits | Experiments 5-1 to 5-4 | Fused or current-limited supply, digital multimeter, breadboard, branch resistors | Tinkercad or Multisim | Prepare an open-branch fault and verify the total-current meter range |
-| Series-parallel circuits | Experiments 6-1 to 6-4 | Supply, digital multimeter, breadboard, resistor network | Multisim recommended before building | Prepare one canonical network with labelled reduction stages |
-| Voltage and current dividers | Experiments 7-1 to 7-4 | Supply, digital multimeter, fixed resistors, potentiometer, representative load | Tinkercad or Multisim | Confirm the potentiometer pinout and resistor ratings |
-| Multimeter fundamentals | Adapt Experiments 1-1, 2-1, 3-1, 4-1, and 5-1 | Digital multimeter, fused leads, protected circuits, known-value resistors and battery | Meter simulation optional | Prepare voltage, current, resistance, and continuity stations; never energize an ohmmeter station |
-| Conductors and insulation | Experiment 11-1 | Digital multimeter plus conductor, wire, and insulator samples | None | Cut equal-length samples and deburr sharp wire ends |
-| Batteries and source behaviour | Experiments 12-1 and 12-2 | Cells or protected battery packs, holders, digital multimeter, rated loads | Multisim optional | Inspect cells and calculate safe loads; never short a cell |
-| Capacitors and RC response | Experiments 16-1 and 22-1 | Capacitors, resistors, breadboard, digital multimeter, oscilloscope or data logger | Multisim or Tinkercad where supported | Observe polarity and voltage ratings; discharge capacitors before handling |
-| Diodes and power supplies | Experiments 27-1, 27-3, 27-4, and 27-5 | Diodes, resistors, capacitors, oscilloscope, isolated low-voltage AC source or function generator | Multisim recommended | Keep student breadboards isolated from mains and prepare low-voltage rectifier parts |
-| Logic gates and truth tables | Supplemental Experiments A-1 to A-4 | Regulated 5 V source, logic ICs, switches, pull resistors, LEDs and current-limiting resistors | Logisim Evolution, Tinkercad, or equivalent | Verify IC family, pinout, supply voltage, and unused-input handling |
-
-### Required experiment record
-
-For every experiment used in a lesson package, record the experiment number, purpose, mode, equipment, software, reusable parts, consumables, teacher preparation, student evidence, safety boundary, and any adaptation from the published procedure.
-
-The common introductory kit is a current-limited low-voltage source, fused digital multimeter, breadboard, insulated leads, resistor assortment, switches, protected loads, calculator, and TEJ electronics reference. Add specialized parts only when the experiment requires them.
+[Back to Electronics Resources](../index.qmd)

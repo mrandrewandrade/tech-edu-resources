@@ -1,20 +1,22 @@
 ---
-title: "15. Culminating Projects"
-description: "Published and planned project pathways indexed by context, components, equipment, difficulty, and safety."
+title: "Computer Engineering Projects"
+description: "Projects that combine design, circuits, logic, computers, measurement, and communication."
 sidebar: tej
 toc: true
 execute: {enabled: false}
 ---
 
-The full project collection is intentionally **planned**. The published circuits and logic project remains the first culminating stage. Programming, Linux, systems, machine-learning, and applied-AI projects remain **Planned** until their classroom packages are complete.
+A project is a reason to bring several skills together. Begin with a need or clear goal, make enough to learn, test it, and use evidence to decide what to keep, change, remove, or test next.
 
-[See project requirements and the complete pathway in the curriculum roadmap.](../../curriculum/index.qmd#unit-15)
+## Projects you can use now
 
-| Project seed | Context | Components | Difficulty | Safety category | Status |
-|:--|:--|:--|:--|:--|:--|
-| Protected bicycle light | bicycle and transportation | fuse, switch, LED, resistor | introductory | protected extra-low voltage | H01 extension ready |
-| USB power monitor | computer and household | connector, sensor, display | intermediate | low-voltage USB | planned |
-| Vehicle temperature alarm | automotive | sensor, transistor, buzzer | intermediate | protected 12 V model | planned |
-| Accessible reminder device | household and accessibility | timer, LED, buzzer | intermediate | low-voltage battery | planned |
+- [Circuits and Digital Logic project](../../03-digital-logic-inputs/06-circuits-culminating-project.qmd) combines inputs, logic, outputs, diagrams, testing, and explanation.
+- [Computer Systems pathway](../../computer-systems/index.qmd) commissions, upgrades, benchmarks, and recommends a classroom computer.
+- [Control Systems and CNC](../../05-control-systems/index.qmd) explores feedback, state machines, motors, interlocks, and machine control.
+- [Engineering Design Project](../../engineering-preparation-track/index.qmd#engineering-design-project) connects engineering calculations to a tested design.
 
-Future project records will add stock, cost, supplier, substitutes, curriculum expectations, estimated time, source paths, and public or restricted access.
+## Design support
+
+Use the [N.I.C.E. Design Process](../../../design-fabrication/design-process/index.qmd) to identify the need, investigate, communicate an idea, test it, and improve it. The matching slides and handouts are linked from that page.
+
+[Back to Electronics Resources](../index.qmd)

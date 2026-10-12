@@ -1,151 +1,123 @@
 ---
-title: "TEJ Electronics Library"
-description: "Searchable hardware modules, components, labs, projects, downloads, and restricted teaching references."
+title: "Electronics Resources"
+description: "A curated collection of useful electronics notes, references, questions, labs, assignments, and class materials."
 sidebar: tej
 page-layout: full
 toc: true
+toc-depth: 2
+body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute: {enabled: false}
-format:
-  html:
-    include-after-body:
-      - ../../includes/tej-electronics-script.html
 ---
 
-::: {.tej-library-intro}
-::: {.tej-library-panel}
+Use this page when you need a formula, a question sheet, a lab, or another way to understand a circuit. Only materials that students can use now are shown here.
+
 ## Start here
 
-This hub follows the authoritative TEJ hardware-module sequence. H01, D01, C06, and the Basic Computer Systems layer have complete activity resources. Deeper programming, Linux, and systems lessons remain **Planned** for implementation.
+::: {.ter-path-grid}
+::: {.ter-path-card}
+### Electronics quick reference
 
-- [Complete curriculum roadmap](../curriculum/index.qmd)
-- [Quick reference and handbook](#quick-reference-and-handbook)
-- [Hardware modules](#hardware-modules)
-- [Component index](components/index.qmd)
-- [Lab index](labs/index.qmd)
-- [Project index](projects/index.qmd)
+Formulas, units, prefixes, circuit rules, and calculator checks on two pages.
+
+[Reference: Download the quick-reference PDF](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
 :::
 
-::: {.tej-library-panel}
-## Access legend
+::: {.ter-path-card}
+### Electronics handbook
 
-<span class="tej-badge required">Required</span>
-<span class="tej-badge">Extension</span>
-<span class="tej-badge restricted">Restricted</span>
-<span class="tej-badge status-planned">Planned</span>
+A larger reference with circuit rules, logic, components, measurement, control, and calculator help.
 
-Restricted links require the appropriate school Google Drive access. No copyrighted textbook PDF is hosted on this public site.
-:::
+[Reference: Open the handbook](https://andrewandrade.ca/assets/TEJ-Electronics-Reference-Handbook.html)
 :::
 
-## Lesson-package standard
-
-Each electronics concept is developed as a coordinated package: a teaching deck, a five-question handwritten-work submission document, a worked-answer document, textbook support, and a recommended experiment or an explicit no-lab decision.
-
-- [TEJ Electronics Lesson-Package Style Guide and SOP](https://docs.google.com/document/d/1J3Wf2mPp0UHAIjWphWWiRx7wtk9TbDPhLshayqw_pVE/edit){target="_blank"}
-- [Basic Electricity to Basic Computer Systems teaching deck](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit){target="_blank"}
-- [Circuit Calculations student question and photo-submission document](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit){target="_blank"}
-- [Circuit Calculations teacher answer document](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit){target="_blank"}
-- [Grob's Basic Electronics Experiments Manual](https://drive.google.com/file/d/15KJmGLXvTh0oivaqnV0SvWB7N64V1soT/view){target="_blank"}
-- [Suggested experiments, equipment, software, and consumables](labs/index.qmd#grob-experiment-suggestions)
-
-Google Drive permissions control access to the linked files. The site links to the files but does not host copies of the textbooks or manuals.
-
-## Quick reference and handbook
-
-::: {.tej-download-grid}
-::: {.tej-download-card}
-### Two-page electronics quick reference
-
-Core formulas and checks for assignments and tests. Long explanations, calculator instructions, and full truth tables stay in the handbook.
-
-[Download quick-reference PDF](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Quick-Reference.pdf){target="_blank"}<br>
-[View maintained source](https://github.com/mrandrewandrade/assets/blob/codex/tej-electronics-library/electronics/reference/TEJ-Electronics-Quick-Reference.qmd){target="_blank"}
-:::
-
-::: {.tej-download-card}
-### Electronics reference handbook
-
-Spacious chapters ordered to match the curriculum, including logic, stable digital inputs, PID, motion control, CNC, calculator procedures, and measurement.
-
-[Open accessible handbook HTML](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Reference-Handbook.html){target="_blank"}<br>
-[Download handbook PDF](https://mrandrewandrade.github.io/assets/TEJ-Electronics-Reference-Handbook.pdf){target="_blank"}<br>
-[View maintained source](https://github.com/mrandrewandrade/assets/blob/codex/tej-electronics-library/electronics/reference/TEJ-Electronics-Reference-Handbook.qmd){target="_blank"}
-:::
-
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### Basic circuit calculations
 
-Ten questions: Q1 to Q5 required, Q6 to Q10 optional Level 4 evidence.
+Use a schematic and the GUESS method to organize circuit calculations.
 
-[Download student worksheet](https://mrandrewandrade.github.io/assets/TEJ_Basic_Circuit_Calculations_Student_Worksheet.pdf){target="_blank"}<br>
-[Teacher answer key, restricted](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit){target="_blank"}
+[Questions: Open the student worksheet](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit)
+:::
+
+::: {.ter-path-card}
+### Drawing schematics
+
+Use consistent symbols, labels, current direction, polarity, wires, junctions, and meters.
+
+[Reference: Open the Classroom Schematic Style Guide](https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit)
 :::
 :::
 
-## Hardware modules
+## Basic electricity
 
-<div class="tej-filter-row" aria-label="Filter hardware modules">
-  <label>Search <input type="search" data-tej-search placeholder="Try fuse, parallel, motor, or Tinkercad"></label>
-  <label>Status <select data-tej-status><option value="all">All statuses</option><option value="published">Published</option><option value="pilot">Pilot</option><option value="in-development">In development</option><option value="planned">Planned</option><option value="bonus">Bonus</option></select></label>
-  <label>Access <select data-tej-access><option value="all">All access</option><option value="public">Public</option><option value="restricted">Restricted</option></select></label>
-</div>
+1. [Notes: Charge, voltage and current](../02-basic-electronics/01-charge-voltage-current.qmd)
+2. [Notes: Open, closed and short circuits](../02-basic-electronics/02-circuits-opens-shorts.qmd)
+3. [Notes: Ohm's law](../02-basic-electronics/03-ohms-law.qmd)
+4. [Notes: Power and energy](../02-basic-electronics/04-power-energy.qmd)
 
-<p data-tej-count aria-live="polite"></p>
+### Practice and handouts
 
-<div class="tej-module-grid" data-tej-catalogue>
-<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="H01 safety lab fuse switch LED bench supply DMM USB power bank automotive fuse panel">
-<span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span>
-<h3><a href="modules/h01-safety-lab-practice.qmd">H01 Safety and lab practice</a></h3>
-<p>Protected low-voltage circuit anatomy, GUESS calculation, meter placement, Tinkercad, physical build, troubleshooting, and reflection.</p>
-</article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H02 charge current voltage energy battery phone charger vehicle"><span class="tej-badge required">Required</span><h3>H02 Charge, current, voltage, energy</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H03 AC DC waveform frequency RMS alternator wall adapter"><span class="tej-badge required">Required</span><h3>H03 AC versus DC</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H04 symbols circuit anatomy flashlight USB fan schematic"><span class="tej-badge required">Required</span><h3>H04 Schematic symbols and circuit anatomy</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H05 multimeter DMM continuity resistance voltage current fuse battery"><span class="tej-badge required">Required</span><h3>H05 Multimeter fundamentals</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H06 resistance resistor colour code tolerance"><span class="tej-badge required">Required</span><h3>H06 Resistance and resistor identification</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H07 ohm law LED current accessory"><span class="tej-badge required">Required</span><h3>H07 Ohm's law</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H08 power energy gaming PC vehicle lamp"><span class="tej-badge required">Required</span><h3>H08 Power and energy</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="H09 series circuits Kirchhoff voltage current power GUESS Grob experiment"><span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span><h3><a href="modules/h09-series-circuits-a.qmd">H09 Series Circuits A</a></h3><p>One current path, total resistance, voltage drops, Kirchhoff's voltage law, power, five questions, and an adapted Experiment 4-1.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H10 parallel branches household vehicle"><span class="tej-badge required">Required</span><h3>H10 Parallel circuits</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="H11 series parallel reduction redraw Grob experiment"><span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span><h3><a href="modules/h11-series-parallel-circuits-a.qmd">H11 Series-Parallel Circuits A</a></h3><p>Identify, redraw, reduce, solve, expand, and check mixed resistor networks through five questions and an adapted Experiment 6-1.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H12 voltage current divider potentiometer LDR"><span class="tej-badge required">Required</span><h3>H12 Voltage and current dividers</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H13 Thevenin Norton maximum power"><span class="tej-badge">Optional Level 4</span><h3>H13 Thevenin, Norton, maximum power</h3><p>Planned extension.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H14 conductors protection fuse breaker wire"><span class="tej-badge required">Required</span><h3>H14 Conductors and protection</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H15 batteries sources power bank lead acid"><span class="tej-badge required">Required</span><h3>H15 Batteries and sources</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H16 faults troubleshooting open short"><span class="tej-badge required">Required</span><h3>H16 Faults and troubleshooting</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H17 magnetism electromagnetism speaker solenoid"><span class="tej-badge required">Required</span><h3>H17 Magnetism and electromagnetism</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H18 relay solenoid motor flyback"><span class="tej-badge required">Required</span><h3>H18 Relays, solenoids, and motors</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H19 capacitor RC response camera flash"><span class="tej-badge required">Required</span><h3>H19 Capacitors and RC response</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H20 inductor LR response ignition coil"><span class="tej-badge">Optional Level 4</span><h3>H20 Inductors and LR response</h3><p>Planned extension.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H21 diode LED polarity current limiting"><span class="tej-badge required">Required</span><h3>H21 Diodes and LEDs</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H22 rectifier power supply bridge regulator"><span class="tej-badge required">Required</span><h3>H22 Rectifiers and power supplies</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H23 transistor switch BJT MOSFET fan relay"><span class="tej-badge required">Required</span><h3>H23 Transistor as a switch</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H24 555 timer flasher monostable astable"><span class="tej-badge required">Required</span><h3>H24 555 timer</h3><p>Planned from the Hardware Modules tab.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H25 AC impedance resonance filters"><span class="tej-badge">Optional Level 4</span><h3>H25 AC impedance, resonance, and filters</h3><p>Planned extension.</p></article>
-<article class="tej-module-card" data-tej-module data-status="planned" data-access="public" data-search="H26 amplifier op amp sensor"><span class="tej-badge">Optional Level 4</span><h3>H26 Amplifiers and op-amps</h3><p>Planned extension.</p></article>
-<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="D01 digital input GPIO switch floating pull-up pull-down active-low debounce protection logic gate">
-<span class="tej-badge required">Required</span> <span class="tej-badge status-published">Published</span>
-<h3><a href="../03-digital-logic-inputs/index.qmd">D01 Digital inputs and stable switches</a></h3>
-<p>Required pre-microcontroller sequence with authoritative circuits, state tables, debouncing, compatibility, and a logic-system project.</p>
-</article>
-<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="CS01 CS02 CS03 CS04 CS05 CS06 CS07 CS08 SQ01 SQ02 SQ03 SQ04 SQ05 SQ06 computer systems Xubuntu Lubuntu recovery pilot RAM benchmark POST BIOS UEFI repair thermal">
-<span class="tej-badge required">Main Quest</span> <span class="tej-badge">Side Quests</span> <span class="tej-badge status-published">Published</span>
-<h3><a href="../computer-systems/index.qmd">CS01-CS08 Basic Computer Systems</a></h3>
-<p>Fast electricity bridge, safe opening, power connections, first boot, firmware, Xubuntu 26.04 LTS, RAM upgrade, benchmarking, a separate recovery pilot, and six optional service extensions.</p>
-</article>
-<article class="tej-module-card" data-tej-module data-status="published" data-access="public" data-search="C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 control PID CNC LinuxCNC state machine motor feedback">
-<span class="tej-badge">Bonus pathway</span> <span class="tej-badge status-published">Published</span>
-<h3><a href="../05-control-systems/index.qmd">C01-C11 Control Systems and CNC</a></h3>
-<p>Open and closed loop control, hysteresis, proportional and PID control, state machines, safety interlocks, motion control, CNC, and a culminating project.</p>
-</article>
-<article class="tej-module-card" data-tej-module data-status="bonus" data-access="public" data-search="PCBA electronics manufacturing PCB assembly soldering inspection"><span class="tej-badge status-bonus">Bonus</span><h3>PCBA electronics manufacturing</h3><p>Retained as an optional later pathway after circuits, interfacing, fabrication, and control systems.</p></article>
-</div>
+- [Handout: SI Prefixes and Electrical Quantities Cheat Sheet](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- [Handout: Schematic and GUESS calculation sheet](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit)
+- [Slides: Basic Electricity to Basic Computer Systems](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
+- [Slides: Power Practice](https://docs.google.com/presentation/d/1cqEnGBcr8CJ_tYiYRPn1UxRQ-bY-ce6ZjLPfCoSwkR8/edit)
 
-## Restricted references
+## Circuits
 
-- [Grob's Basic Electronics, 12th edition folder, restricted](https://drive.google.com/drive/folders/1Q_uSqf8qoEsLPAmbxNJ1BLaKgJ1ga7x1){target="_blank"}
-- [Make: Electronics and related books, restricted](https://drive.google.com/drive/folders/15gMc6wnIanBA-gGAV90exV5UMWT4KlDf){target="_blank"}
-- [Open Circuits, restricted visual reference](https://drive.google.com/file/d/1nRmKUWh6R0IsVMxQbFk2x4d_9B0GY3_G/view){target="_blank"}
-- [All About Circuits textbook, open resource](https://www.allaboutcircuits.com/textbook/){target="_blank"}
-- [Ontario TEJ curriculum, open official PDF](https://www.edu.gov.on.ca/eng/curriculum/secondary/2009teched1112curr.pdf){target="_blank"}
-- [Casio fx-991ES PLUS manual, open official PDF](https://www.casio.com/content/dam/casio/global/support/manuals/calculators/pdf/004-en/f/fx-570_991ES_PLUS_EN.pdf){target="_blank"}
+::: {.ter-path-grid}
+::: {.ter-path-card}
+### Series circuits
+
+One current path, total resistance, voltage drops, power, simulation, and measurement.
+
+[Notes and resources](../circuits/series-circuits.qmd)
+:::
+
+::: {.ter-path-card}
+### Parallel circuits
+
+Common voltage, branch current, equivalent resistance, power, and faults.
+
+[Notes and resources](../circuits/parallel-circuits.qmd)
+:::
+
+::: {.ter-path-card}
+### Series-parallel circuits
+
+Identify groups, reduce the circuit, solve it, expand it, and check the result.
+
+[Notes and resources](../circuits/series-parallel-circuits.qmd)
+:::
+
+::: {.ter-path-card}
+### Kirchhoff's laws
+
+Write current and voltage equations for networks that do not reduce directly.
+
+[Notes and resources](../circuits/kirchhoffs-laws.qmd)
+:::
+:::
+
+## Components and applied circuits
+
+- [Digital logic and stable inputs](../03-digital-logic-inputs/index.qmd) covers switches, pull resistors, debouncing, logic gates, and truth tables.
+- [Microcontrollers and physical computing](../04-microcontrollers/index.qmd) connects sensors and outputs to code.
+- [Control systems and CNC](../05-control-systems/index.qmd) explores sensing, decisions, feedback, motors, and machine control.
+- [Component index](components/index.qmd) is a quick guide to common component roles and selection details.
+
+## Labs and assignments
+
+- [Lab: Series-circuit calculation and measurement](modules/h09-series-circuits-a.qmd)
+- [Lab: Series-parallel circuit investigation](modules/h11-series-parallel-circuits-a.qmd)
+- [Assignment: Circuits and Digital Logic project](../03-digital-logic-inputs/06-circuits-culminating-project.qmd)
+- [Assignment package: Basic Computer Systems](https://andrewandrade.ca/assets/TEJ-Basic-Computer-Systems-Student-Activity-Packages.pdf)
+- [More classroom experiments](labs/index.qmd)
+- [Project ideas](projects/index.qmd)
+
+## Teacher and restricted resources
+
+These links may require a school Google Drive account. Students should use the public notes, question sheets, and checking resources supplied by their teacher.
+
+- [Answers: Circuit Calculations teacher answer document](https://docs.google.com/document/d/1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw/edit)
+- [Reference: Grob's Basic Electronics experiments manual](https://drive.google.com/file/d/15KJmGLXvTh0oivaqnV0SvWB7N64V1soT/view)
+- [Reference: Grob's Basic Electronics folder](https://drive.google.com/drive/folders/1Q_uSqf8qoEsLPAmbxNJ1BLaKgJ1ga7x1)
+- [Reference: Make: Electronics and related books](https://drive.google.com/drive/folders/15gMc6wnIanBA-gGAV90exV5UMWT4KlDf)
