@@ -35,6 +35,9 @@ OFFICIAL_HOSTS = {
     "karpathy.ai",
     "linuxmint.com",
     "www.linuxmint.com",
+    "documentation.ubuntu.com",
+    "gitlab.com",
+    "www.gnu.org",
 }
 
 

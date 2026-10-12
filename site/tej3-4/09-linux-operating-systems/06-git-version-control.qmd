@@ -1,0 +1,44 @@
+---
+title: "Git: Save the History of Your Work"
+description: "Create a local Git repository and practise a small, reviewable commit cycle."
+categories: [Linux, Git, version control, command line]
+---
+
+## Learning goals
+
+- I will be able to explain repository, working tree, stage, commit, and history.
+- I will be able to create a repository and make small commits with useful messages.
+- I will be able to inspect changes before saving or sharing them.
+
+This is important because it enables me to experiment, explain what changed, and recover earlier work without creating files named `final-final-really-final`.
+
+## Your first repository
+
+Create a teacher-approved project folder inside your home directory. Configure Git with the classroom identity supplied by your teacher. Do not publish a personal email address.
+
+```bash
+mkdir -p ~/linux-labs/my-site
+cd ~/linux-labs/my-site
+git init
+printf "# My Technology Site\n" > README.md
+git status
+git add README.md
+git diff --staged
+git commit -m "Add project README"
+git log --oneline
+```
+
+Repeat the cycle after making one small change: edit, `git status`, review, stage, review the staged change, commit, and inspect the history.
+
+## Evidence
+
+Submit the repository path, a screenshot of `git log --oneline`, and a six-step explanation of your commit cycle. Explain why a commit message should describe the change.
+
+## Extend your learning
+
+- Read [Getting started with Git](https://docs.github.com/en/get-started/start-your-journey/hello-world).
+- Use `git diff` to compare an uncommitted change with the last commit.
+
+## Review and reflect
+
+What is the difference between saving a file and committing it? At what point has Git recorded a recoverable checkpoint?

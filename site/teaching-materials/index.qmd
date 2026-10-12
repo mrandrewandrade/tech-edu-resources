@@ -91,6 +91,27 @@ Filters are saved in the page URL as you select them, so you can copy the addres
 
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
+    data-courses="TEJ"
+    data-tags="Linux|operating systems|Linux Mint|WSL|user accounts|terminal|Git|Bashcrawl|slide deck"
+    data-search="Linux start here slides distribution Debian Ubuntu Mint Xfce Arch WSL Windows home macOS Terminal installation accounts Bashcrawl commands outputs system administration TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit" aria-label="Open the Linux Start Here Google Slides deck">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">TEJ · Linux</span><strong>LINUX</strong><span>Mint + WSL + Bashcrawl</span></span>
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Linux Start Here: Mint, WSL, Accounts and Bashcrawl</a></h2>
+      <p class="bs-slide-card-description">The class deck for choosing a distribution, installing Linux Mint, setting up WSL or macOS terminal access, creating accounts, and beginning Bashcrawl.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="Linux">Linux</button><button type="button" data-slide-card-tag="WSL">WSL</button><button type="button" data-slide-card-tag="Bashcrawl">Bashcrawl</button><button type="button" data-slide-card-tag="slide deck">Slide deck</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Open Google Slides</a>
+        <a class="bs-slide-open" href="../tej3-4/09-linux-operating-systems/index.qmd">Open Linux notes</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
     data-courses=""
     data-tags="assessment|observation|evidence|support|teacher tool|tracking|digital|printable"
     data-search="daily learning tracker teacher tool assessment observation evidence support student activity shop task observe worksheet match sort count research present explain follow directions identify communicate answer teamwork independent prompted guided digital printable google sheet google doc">
@@ -112,8 +133,52 @@ Filters are saved in the page URL as you select them, so you can copy the addres
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
     data-courses="TEJ"
-    data-tags="electrical engineering|SI prefixes|scientific notation|electrical quantities|units|formula reference|cheat sheet|printable"
-    data-search="SI prefixes electrical quantities cheat sheet engineering powers of ten multiplier normalized E notation scientific notation voltage volt V current ampere amp A resistance ohm omega R power watt W P units symbols formula reference conversion metric printable TEJ">
+    data-tags="Linux|operating systems|system administration|Linux Mint|installation|Google Classroom|digital submission|worksheet|student evidence"
+    data-search="Linux Mint installation digital submission Google Classroom Google Doc worksheet computer name screenshot software reflection problem solving above and beyond operating systems system administration computer administration computer admin sysadmin TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk" aria-label="Open the Linux Mint Installation Digital Submission Google Doc">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">TEJ · Linux</span><strong>INSTALL</strong><span>Show + explain</span></span>
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk">Linux Mint Installation Digital Submission</a></h2>
+      <p class="bs-slide-card-description">A simple Google Classroom handout with one Google Doc, exact evidence, one desktop screenshot, reflection, problem solving, a final checklist, and an optional Above and beyond section.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="Linux">Linux</button><button type="button" data-slide-card-tag="system administration">System administration</button><button type="button" data-slide-card-tag="Google Classroom">Google Classroom</button><button type="button" data-slide-card-tag="digital submission">Digital submission</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk">Open Google Doc</a>
+        <a class="bs-slide-open" href="../tej3-4/09-linux-operating-systems/02-install-linux-mint.qmd">Open lesson notes</a>
+        <a class="bs-slide-open" href="../tej3-4/09-linux-operating-systems/install-linux-mint-submission.qmd">Preview handout</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
+    data-courses="TEJ"
+    data-tags="Linux|operating systems|system administration|user accounts|desktop customization|networking|command line|Bashcrawl|Google Classroom|digital submission|worksheet|student evidence"
+    data-search="Explore Linux digital submission Google Classroom Google Doc worksheet user accounts Grade 10 account administrator standard desktop customization networking IPv4 software terminal Bashcrawl bash history screenshot reflection above and beyond operating systems system administration computer administration computer admin sysadmin TEJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/edit?usp=drivesdk" aria-label="Open the Explore Linux Digital Submission Google Doc">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">TEJ · Linux</span><strong>EXPLORE</strong><span>Customize + command</span></span>
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/edit?usp=drivesdk">Explore Linux Digital Submission</a></h2>
+      <p class="bs-slide-card-description">A clear Google Classroom handout for accounts, desktop customization, networking, software, Bashcrawl, screenshots, Bash history, and optional extension evidence.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="Linux">Linux</button><button type="button" data-slide-card-tag="system administration">System administration</button><button type="button" data-slide-card-tag="networking">Networking</button><button type="button" data-slide-card-tag="command line">Command line</button><button type="button" data-slide-card-tag="digital submission">Digital submission</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/edit?usp=drivesdk">Open Google Doc</a>
+        <a class="bs-slide-open" href="../tej3-4/09-linux-operating-systems/explore-linux.qmd">Open lesson notes</a>
+        <a class="bs-slide-open" href="../tej3-4/09-linux-operating-systems/explore-linux-submission.qmd">Preview handout</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
+    data-courses="TEJ"
+    data-tags="circuits|electrical engineering|SI prefixes|scientific notation|electrical quantities|units|formula reference|cheat sheet|printable"
+    data-search="circuits circuit SI prefixes electrical quantities cheat sheet engineering powers of ten multiplier normalized E notation scientific notation voltage volt V current ampere amp A resistance ohm omega R power watt W P units symbols formula reference conversion metric printable TEJ">
     <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit" aria-label="Open SI Prefixes and Electrical Quantities Cheat Sheet">
       <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>SI + E</strong><span>Prefixes + quantities</span></span>
       <img src="https://drive.google.com/thumbnail?id=1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c&sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
@@ -123,7 +188,7 @@ Filters are saved in the page URL as you select them, so you can copy the addres
       <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">SI Prefixes and Electrical Quantities Cheat Sheet</a></h2>
       <p class="bs-slide-card-description">A printable electrical-engineering quick reference for SI prefixes, powers of ten, normalized and E notation, and the symbols and units used for voltage, current, resistance, and power.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
-      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="SI prefixes">SI prefixes</button><button type="button" data-slide-card-tag="electrical quantities">Electrical quantities</button><button type="button" data-slide-card-tag="formula reference">Formula reference</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="circuits">Circuits</button><button type="button" data-slide-card-tag="SI prefixes">SI prefixes</button><button type="button" data-slide-card-tag="electrical quantities">Electrical quantities</button><button type="button" data-slide-card-tag="formula reference">Formula reference</button></div>
       <div class="bs-slide-actions">
         <a class="bs-slide-open" href="https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit">Open Google Doc</a>
       </div>
@@ -133,8 +198,8 @@ Filters are saved in the page URL as you select them, so you can copy the addres
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
     data-courses="TEJ"
-    data-tags="circuit calculations|schematics|GUESS method|problem solving|electrical engineering|equations|units|significant digits|worksheet|printable"
-    data-search="circuit calculations general schematic GUESS handout given unknown equations substitute solve statement solution electrical engineering problem solving circuit diagram symbols units metric prefixes significant digits decimal places calculator final answer self check worksheet printable TEJ">
+    data-tags="circuits|circuit calculations|schematics|GUESS method|problem solving|electrical engineering|equations|units|significant digits|worksheet|printable"
+    data-search="circuits circuit calculations general schematic GUESS handout given unknown equations substitute solve statement solution electrical engineering problem solving circuit diagram symbols units metric prefixes significant digits decimal places calculator final answer self check worksheet printable TEJ">
     <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit" aria-label="Open Circuit Calculations General Schematic and GUESS Handout">
       <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>GUESS</strong><span>Draw + calculate</span></span>
       <img src="https://drive.google.com/thumbnail?id=1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo&sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
@@ -144,7 +209,7 @@ Filters are saved in the page URL as you select them, so you can copy the addres
       <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit">Circuit Calculations: General Schematic + GUESS Handout</a></h2>
       <p class="bs-slide-card-description">A reusable worksheet for organizing circuit calculations through a schematic and the GUESS process: givens, unknowns, equations, substitution and solving, and a final statement with units.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
-      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="circuit calculations">Circuit calculations</button><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="GUESS method">GUESS method</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="circuits">Circuits</button><button type="button" data-slide-card-tag="circuit calculations">Circuit calculations</button><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="GUESS method">GUESS method</button></div>
       <div class="bs-slide-actions">
         <a class="bs-slide-open" href="https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit">Open Google Doc</a>
       </div>
@@ -154,8 +219,8 @@ Filters are saved in the page URL as you select them, so you can copy the addres
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
     data-courses="TEJ"
-    data-tags="schematics|circuit diagrams|IEC symbols|electrical drawing|polarity|current direction|components|meters|reference guide|teacher asset|student reference"
-    data-search="Technology Commons Classroom Schematic Style Guide TEJ hand sketches slide diagrams generated circuit assets IEC 60617 IEC 61082 symbols reference letters battery polarity conventional current electron flow circuit layout wires junctions components meters ammeter voltmeter labels values drawing checklist electrical engineering reference guide">
+    data-tags="circuits|schematics|circuit diagrams|IEC symbols|electrical drawing|polarity|current direction|components|meters|reference guide|teacher asset|student reference"
+    data-search="circuits Technology Commons Classroom Schematic Style Guide TEJ hand sketches slide diagrams generated circuit assets IEC 60617 IEC 61082 symbols reference letters battery polarity conventional current electron flow circuit layout wires junctions components meters ammeter voltmeter labels values drawing checklist electrical engineering reference guide">
     <a class="bs-slide-thumb" href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit" aria-label="Open Technology Commons Classroom Schematic Style Guide">
       <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>IEC</strong><span>Draw + label</span></span>
       <img src="https://drive.google.com/thumbnail?id=1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs&sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
@@ -165,7 +230,7 @@ Filters are saved in the page URL as you select them, so you can copy the addres
       <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit">Classroom Schematic Style Guide</a></h2>
       <p class="bs-slide-card-description">A consistent TEJ standard for hand-drawn, slide-based, and generated circuit schematics, including IEC symbols, battery polarity, current direction, layout, junctions, components, meters, labels, and final drawing checks.</p>
       <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
-      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="IEC symbols">IEC symbols</button><button type="button" data-slide-card-tag="electrical drawing">Electrical drawing</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="circuits">Circuits</button><button type="button" data-slide-card-tag="schematics">Schematics</button><button type="button" data-slide-card-tag="IEC symbols">IEC symbols</button><button type="button" data-slide-card-tag="electrical drawing">Electrical drawing</button></div>
       <div class="bs-slide-actions">
         <a class="bs-slide-open" href="https://docs.google.com/document/d/1ogHcWcRLmQbXkVMEMUDw1kDc8tvAHvPH64ncEvKSTYs/edit">Open Google Doc</a>
       </div>

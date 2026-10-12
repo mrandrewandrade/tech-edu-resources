@@ -1,0 +1,39 @@
+---
+title: "Log Measurements with Python"
+description: "Create a clean CSV data log with units, timestamps, validation, and reproducible Python code."
+categories: [Linux, Python, data logging, CSV, measurement]
+---
+
+## Learning goals
+
+- I will be able to design a table for repeated measurements.
+- I will be able to write measurements to CSV with Python.
+- I will be able to validate, preserve, and document raw data.
+
+This is important because it enables me to turn observations from electrical and computer systems into evidence that can be checked and analyzed.
+
+## Progression
+
+1. Begin with a small teacher-provided dataset such as time, voltage, current, and temperature.
+2. Identify the independent variable, dependent variables, units, expected ranges, and missing-value rule.
+3. Write a Python program that appends one complete row to a CSV file.
+4. Add a timestamp and a clear header row.
+5. Reject values outside the teacher-approved range instead of silently saving them.
+6. Open the CSV in a text editor and spreadsheet to confirm that the structure is portable.
+7. Commit the program and a small non-private sample dataset.
+
+Keep raw data unchanged. If you clean or transform it, save the result as a new file and document what changed.
+
+## Evidence
+
+Submit the Python file, sample CSV, terminal output from a successful run, and a data dictionary explaining each column and unit.
+
+## Extend your learning
+
+- Read Python's official [`csv` module documentation](https://docs.python.org/3/library/csv.html).
+- Add command-line arguments for the output filename.
+- Record a sensor simulation at a fixed interval without connecting physical hardware yet.
+
+## Review and reflect
+
+Why are units and column names part of the data? Why should raw measurements be preserved before analysis?

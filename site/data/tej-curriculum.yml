@@ -1,5 +1,5 @@
 schema_version: 1
-updated: 2026-10-09
+updated: 2026-10-10
 title: TEJ Curriculum Roadmap
 purpose: >-
   Curriculum-only public metadata for the complete TEJ learning pathway. This file
@@ -93,6 +93,24 @@ sources:
     url: https://linuxmint.com/documentation.php
     access_level: External official source
     copyright_permissions_note: Link to the official guide. Linux Mint permits screenshots in articles, websites, and educational documents when affiliation is not implied.
+  - source_id: UBUNTU-CLI
+    title: Ubuntu command line for beginners
+    use: Beginner reference for the terminal, administrator access, and sudo
+    url: https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/
+    access_level: External official source
+    copyright_permissions_note: Link to the official documentation. Use original classroom explanations and examples.
+  - source_id: GNU-BASH
+    title: GNU Bash Reference Manual
+    use: Official reference for Bash commands and command history
+    url: https://www.gnu.org/software/bash/manual/html_node/Bash-History-Facilities.html
+    access_level: External official source
+    copyright_permissions_note: Link to the GNU manual. Use original classroom explanations and follow the source licence for reused text.
+  - source_id: BASHCRAWL
+    title: Bashcrawl
+    use: Beginner command-line navigation game
+    url: https://gitlab.com/slackermedia/bashcrawl
+    access_level: External official source
+    copyright_permissions_note: Link to or clone the official public repository. Verify the repository licence before republishing any of its files.
 
 units:
   - unit_id: '0'
@@ -429,7 +447,7 @@ units:
     status: Planned
     pathway: core
     prerequisites: [Unit 4]
-    estimated_time: 20-30 periods
+    estimated_time: 15-17 periods
     simulation_requirement: Required where models are suitable
     physical_lab_requirement: Required
     equipment: [component kits, DMMs, protected sources, breadboards, oscilloscope when available]
@@ -808,7 +826,7 @@ units:
 
   - unit_id: '9'
     title: Linux, Operating Systems and Basic Networking
-    short_description: Choose and install Linux Mint Xfce, then build from desktop use to basic networking and safe command-line administration.
+    short_description: Use Linux and Python for everyday computing, file management, publishing, data logging, analysis, networking, and preparation for Raspberry Pi projects.
     status: In development
     pathway: core
     prerequisites: [Unit 8]
@@ -816,9 +834,9 @@ units:
     simulation_requirement: Optional virtual machine
     physical_lab_requirement: Required on approved computers or Raspberry Pi hardware
     equipment: [classroom computer or Raspberry Pi, installer media, approved storage]
-    software: [Linux Mint 22.3 Xfce, Lubuntu, terminal, SSH, tmux]
+    software: [Linux Mint 22.3 Xfce, WSL 2 with Ubuntu, Python, Git, Quarto, Matplotlib, terminal, SSH, tmux]
     safety_level: Data, account, storage, and network safety
-    student_deliverables: [installation record, command-line tasks, administration evidence, backup and troubleshooting plan]
+    student_deliverables: [installation record, Python computer report, safe file utility, Git history, published Quarto site, Python data logger and analysis, connection checker, remote administration evidence, Raspberry Pi utility plan]
     assessment_evidence: [least privilege, correct commands, safe storage choices, reproducible results]
     public_notes_route: "tej3-4/09-linux-operating-systems/index.qmd"
     student_handout: In development
@@ -875,33 +893,71 @@ units:
         copyright_permissions_note: Original classroom instructions with Linux Mint project screenshots and official documentation links.
         implementation_notes: Use only on teacher-approved classroom computers. This lab erases the target drive; dual boot is reserved for a future lab.
       - module_id: "LX04"
-        title: "Users, groups, accounts, and permissions"
-        short_description: "Distinguish standard and administrator work and apply least privilege."
+        title: "Personal accounts and responsible desktop use"
+        short_description: "Create an administrator account for the current student and standard accounts for two other students, then explore Linux Mint through the GUI."
+        status: "Pilot"
+        estimated_time: 2-3 periods
+        equipment: [approved classroom Linux Mint computer]
+        software: [Linux Mint 22.3 Xfce, Users and Groups, Software Manager, Git, Bashcrawl, terminal]
+        safety_level: Account, password, software, network, and administrator-access safety
+        student_deliverables: [three tested user accounts, GUI exploration log, network check, software installation record, Bash history, reflection]
+        assessment_evidence: [correct account roles, working logins, responsible customization, approved software source, network evidence, reviewed Bash history]
+        public_notes_route: "tej3-4/09-linux-operating-systems/explore-linux.qmd"
+        student_handout: "Pilot"
+        source_references: [ON-TEJ, UBUNTU-CLI, GNU-BASH, BASHCRAWL]
+        copyright_permissions_note: Original classroom instructions with links to official Ubuntu, Git, GNU Bash, and Bashcrawl resources.
+        implementation_notes: The current student's account is Administrator and the other two student accounts are Standard. Test GUI labels, Git availability, and Bashcrawl against the approved Linux Mint 22.3 Xfce image before classroom use.
       - module_id: "LX05"
-        title: "Files, directories, history, and the command-line explorer game"
-        short_description: "Navigate safely, use command history, and complete a structured exploration challenge."
+        title: "Know your Linux computer"
+        short_description: "Identify CPU, RAM, storage, graphics, and networking through the GUI, then confirm the inventory with htop and terminal tools."
+        status: "Pilot"
+        estimated_time: 1-2 periods
+        software: [Linux Mint System Info, Task Manager, terminal, htop]
+        student_deliverables: [hardware inventory, System Info screenshot, htop screenshot, GUI and terminal comparison]
+        assessment_evidence: [accurate hardware identification, distinction between capacity and current use, matching GUI and terminal evidence]
+        public_notes_route: "tej3-4/09-linux-operating-systems/04-know-your-computer.qmd"
+        student_handout: "Pilot"
       - module_id: "LX06"
-        title: "Package management and open-source applications"
-        short_description: "Install, remove, update, and evaluate software from trusted sources."
+        title: "Files, folders, terminal, and permissions"
+        short_description: "Build safe navigation, file-management, path, ownership, and permission habits in a bounded practice folder."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/05-files-terminal-permissions.qmd"
       - module_id: "LX07"
-        title: "Processes, services, logs, and configuration"
-        short_description: "Inspect running software, service state, logs, and configuration files."
+        title: "Git version control"
+        short_description: "Create a local repository and practise an inspect, stage, commit, and review cycle."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/06-git-version-control.qmd"
       - module_id: "LX08"
-        title: "Storage mounting, Windows drives, recovery, and privacy"
-        short_description: "Mount only approved drives, protect private data, and document recovery decisions."
+        title: "Build a Quarto website"
+        short_description: "Create, preview, test, render, and version a small technical website from Markdown source."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/07-quarto-website.qmd"
       - module_id: "LX09"
-        title: "SSH, tmux, and remote administration"
-        short_description: "Connect securely and collaborate in a teacher-approved remote terminal session."
+        title: "Publish with GitHub Pages"
+        short_description: "Push reviewed source to GitHub and publish a tested Quarto site without exposing private information."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/08-publish-github-pages.qmd"
       - module_id: "LX10"
-        title: "Shell scripting, pipes, redirection, and scheduling"
-        short_description: "Build reviewable automation with safe inputs, logs, cron, and a teacher-approved yt-dlp example."
+        title: "Python measurement logging"
+        short_description: "Design a documented table and write validated measurement records to CSV with Python."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/09-python-data-logging.qmd"
       - module_id: "LX11"
-        title: "Backups, updates, and troubleshooting"
-        short_description: "Verify backups, apply updates, and diagnose power, hardware, OS, service, network, and application layers."
+        title: "Python analysis and curve fitting"
+        short_description: "Plot measurements, fit a physically appropriate model, inspect residuals, and publish an interpretation."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/10-python-analysis-curve-fitting.qmd"
       - module_id: "LX12"
-        title: "Customization, accessibility, and performance"
-        short_description: "Improve usability without creating unnecessary background load or instability."
+        title: "Networking, SSH, and tmux"
+        short_description: "Progress from local network identification to approved remote access and a shared terminal session."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/11-networking-ssh-tmux.qmd"
       - module_id: "LX13"
+        title: "Power and Raspberry Pi bridge"
+        short_description: "Combine power calculations, Linux, Git, Python, networking, backup, and commissioning plans before physical computing."
+        status: "Pilot"
+        public_notes_route: "tej3-4/09-linux-operating-systems/12-power-and-raspberry-pi-bridge.qmd"
+      - module_id: "LX14"
         title: "Advanced Linux administration"
         short_description: "Extend into services, hardening, deployment, and recovery only after core administration is secure."
         status: "Bonus"

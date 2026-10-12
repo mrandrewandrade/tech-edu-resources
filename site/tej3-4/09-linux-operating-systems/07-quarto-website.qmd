@@ -1,0 +1,40 @@
+---
+title: "Build a Website with Quarto"
+description: "Turn Markdown source files into a small local website and manage the source with Git."
+categories: [Linux, Quarto, Markdown, websites, Git]
+---
+
+## Learning goals
+
+- I will be able to distinguish source files from rendered website files.
+- I will be able to create, preview, edit, and render a small Quarto website.
+- I will be able to commit meaningful website changes with Git.
+
+This is important because it enables me to publish technical work from plain-text files that are easy to review, reproduce, and improve.
+
+## Build in small steps
+
+1. Confirm that Git and Quarto are installed with `git --version` and `quarto --version`.
+2. Use a teacher template or create a basic Quarto website inside your Git repository.
+3. Add a home page, an **About me as a technologist** page, and a **Linux learning log** page. Do not publish private information.
+4. Preview locally with `quarto preview`.
+5. Fix warnings and broken links.
+6. Render the complete site with `quarto render`.
+7. Open the generated site locally and test every navigation link.
+8. Review `git status`, then commit only the intended source and configuration files.
+
+Your first site should be simple. Clear headings, useful alt text, readable colour contrast, and working links matter more than effects.
+
+## Evidence
+
+Submit a screenshot of the local preview, the repository history, and a short explanation of `.qmd`, `_quarto.yml`, and `_site`. Record one problem you found by testing the rendered site.
+
+## Extend your learning
+
+- Follow the official [Quarto website guide](https://quarto.org/docs/websites/).
+- Add one image with useful alternative text.
+- Create a page that documents your Linux hardware inventory.
+
+## Review and reflect
+
+Which files are the source of your website? Why should you test the rendered output instead of assuming the source will work?

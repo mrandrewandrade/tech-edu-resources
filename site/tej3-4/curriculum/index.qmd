@@ -1082,7 +1082,7 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Unit field | Roadmap record |
 |:--|:--|
 | Prerequisites | Unit 4 |
-| Estimated time | 20-30 periods |
+| Estimated time | 15-17 periods |
 | Simulation | Required where models are suitable |
 | Physical lab | Required |
 | Equipment | component kits, DMMs, protected sources, breadboards, oscilloscope when available |
@@ -2743,7 +2743,7 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 
 <div class="tej-roadmap-unit-summary">
 <p><span class="tej-badge status-in-development">In development</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></p>
-<p>Choose and install Linux Mint Xfce, then build from desktop use to basic networking and safe command-line administration.</p>
+<p>Use Linux and Python for everyday computing, file management, publishing, data logging, analysis, networking, and preparation for Raspberry Pi projects.</p>
 
 | Unit field | Roadmap record |
 |:--|:--|
@@ -2752,9 +2752,9 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Simulation | Optional virtual machine |
 | Physical lab | Required on approved computers or Raspberry Pi hardware |
 | Equipment | classroom computer or Raspberry Pi, installer media, approved storage |
-| Software | Linux Mint 22.3 Xfce, Lubuntu, terminal, SSH, tmux |
+| Software | Linux Mint 22.3 Xfce, WSL 2 with Ubuntu, Python, Git, Quarto, Matplotlib, terminal, SSH, tmux |
 | Safety level | Data, account, storage, and network safety |
-| Student deliverables | installation record, command-line tasks, administration evidence, backup and troubleshooting plan |
+| Student deliverables | installation record, Python computer report, safe file utility, Git history, published Quarto site, Python data logger and analysis, connection checker, remote administration evidence, Raspberry Pi utility plan |
 | Assessment evidence | least privilege, correct commands, safe storage choices, reproducible results |
 | Student handout | In development |
 | Teacher guide | Teacher controlled |
@@ -2860,12 +2860,74 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX04 Users, groups, accounts, and permissions Distinguish standard and administrator work and apply least privilege. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX04 Personal accounts and responsible desktop use Create an administrator account for the current student and standard accounts for two other students, then explore Linux Mint through the GUI. approved classroom Linux Mint computer Linux Mint 22.3 Xfce Users and Groups Software Manager Git Bashcrawl terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX04: Users, groups, accounts, and permissions</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX04: Personal accounts and responsible desktop use</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Distinguish standard and administrator work and apply least privilege.</p>
+<p>Create an administrator account for the current student and standard accounts for two other students, then explore Linux Mint through the GUI.</p>
+<details>
+<summary>Requirements, evidence, and implementation notes</summary>
+
+| Field | Roadmap record |
+|:--|:--|
+| Prerequisites | Unit 8 |
+| Estimated time | 2-3 periods |
+| Simulation | Optional virtual machine |
+| Physical lab | Required |
+| Equipment | approved classroom Linux Mint computer |
+| Software | Linux Mint 22.3 Xfce, Users and Groups, Software Manager, Git, Bashcrawl, terminal |
+| Safety level | Account, password, software, network, and administrator-access safety |
+| Student deliverables | three tested user accounts, GUI exploration log, network check, software installation record, Bash history, reflection |
+| Assessment evidence | correct account roles, working logins, responsible customization, approved software source, network evidence, reviewed Bash history |
+| Student handout | Pilot |
+| Teacher guide | Teacher controlled |
+| Slides | Planned |
+| Source references | ON-TEJ, UBUNTU-CLI, GNU-BASH, BASHCRAWL |
+| Copyright or permissions | Original classroom instructions with links to official Ubuntu, Git, GNU Bash, and Bashcrawl resources. |
+| Implementation notes | The current student&#x27;s account is Administrator and the other two student accounts are Standard. Test GUI labels, Git availability, and Bashcrawl against the approved Linux Mint 22.3 Xfce image before classroom use. |
+
+[Public notes](../09-linux-operating-systems/explore-linux.qmd)
+</details>
+</article>
+
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX05 Know your Linux computer Identify CPU, RAM, storage, graphics, and networking through the GUI, then confirm the inventory with htop and terminal tools. approved Linux computer or Raspberry Pi Linux Mint System Info Task Manager terminal htop">
+<div class="tej-roadmap-module-heading">
+<h3>LX05: Know your Linux computer</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+</div>
+<p>Identify CPU, RAM, storage, graphics, and networking through the GUI, then confirm the inventory with htop and terminal tools.</p>
+<details>
+<summary>Requirements, evidence, and implementation notes</summary>
+
+| Field | Roadmap record |
+|:--|:--|
+| Prerequisites | Unit 8 |
+| Estimated time | 1-2 periods |
+| Simulation | Optional virtual machine |
+| Physical lab | Required |
+| Equipment | approved Linux computer or Raspberry Pi |
+| Software | Linux Mint System Info, Task Manager, terminal, htop |
+| Safety level | Data and system administration |
+| Student deliverables | hardware inventory, System Info screenshot, htop screenshot, GUI and terminal comparison |
+| Assessment evidence | accurate hardware identification, distinction between capacity and current use, matching GUI and terminal evidence |
+| Student handout | Pilot |
+| Teacher guide | Teacher controlled |
+| Slides | Planned |
+| Source references | ON-TEJ |
+| Copyright or permissions | Original instructions and official documentation links. |
+| Implementation notes | Test commands against the approved classroom image before publication. |
+
+[Public notes](../09-linux-operating-systems/04-know-your-computer.qmd)
+</details>
+</article>
+
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX06 Files, folders, terminal, and permissions Build safe navigation, file-management, path, ownership, and permission habits in a bounded practice folder. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<div class="tej-roadmap-module-heading">
+<h3>LX06: Files, folders, terminal, and permissions</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+</div>
+<p>Build safe navigation, file-management, path, ownership, and permission habits in a bounded practice folder.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -2887,16 +2949,16 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/05-files-terminal-permissions.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX05 Files, directories, history, and the command-line explorer game Navigate safely, use command history, and complete a structured exploration challenge. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX07 Git version control Create a local repository and practise an inspect, stage, commit, and review cycle. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX05: Files, directories, history, and the command-line explorer game</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX07: Git version control</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Navigate safely, use command history, and complete a structured exploration challenge.</p>
+<p>Create a local repository and practise an inspect, stage, commit, and review cycle.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -2918,16 +2980,16 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/06-git-version-control.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX06 Package management and open-source applications Install, remove, update, and evaluate software from trusted sources. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX08 Build a Quarto website Create, preview, test, render, and version a small technical website from Markdown source. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX06: Package management and open-source applications</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX08: Build a Quarto website</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Install, remove, update, and evaluate software from trusted sources.</p>
+<p>Create, preview, test, render, and version a small technical website from Markdown source.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -2949,16 +3011,16 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/07-quarto-website.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX07 Processes, services, logs, and configuration Inspect running software, service state, logs, and configuration files. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX09 Publish with GitHub Pages Push reviewed source to GitHub and publish a tested Quarto site without exposing private information. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX07: Processes, services, logs, and configuration</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX09: Publish with GitHub Pages</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Inspect running software, service state, logs, and configuration files.</p>
+<p>Push reviewed source to GitHub and publish a tested Quarto site without exposing private information.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -2980,16 +3042,16 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/08-publish-github-pages.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX08 Storage mounting, Windows drives, recovery, and privacy Mount only approved drives, protect private data, and document recovery decisions. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX10 Python measurement logging Design a documented table and write validated measurement records to CSV with Python. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX08: Storage mounting, Windows drives, recovery, and privacy</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX10: Python measurement logging</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Mount only approved drives, protect private data, and document recovery decisions.</p>
+<p>Design a documented table and write validated measurement records to CSV with Python.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -3011,16 +3073,16 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/09-python-data-logging.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX09 SSH, tmux, and remote administration Connect securely and collaborate in a teacher-approved remote terminal session. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX11 Python analysis and curve fitting Plot measurements, fit a physically appropriate model, inspect residuals, and publish an interpretation. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX09: SSH, tmux, and remote administration</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX11: Python analysis and curve fitting</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Connect securely and collaborate in a teacher-approved remote terminal session.</p>
+<p>Plot measurements, fit a physically appropriate model, inspect residuals, and publish an interpretation.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -3042,16 +3104,16 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/10-python-analysis-curve-fitting.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX10 Shell scripting, pipes, redirection, and scheduling Build reviewable automation with safe inputs, logs, cron, and a teacher-approved yt-dlp example. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX12 Networking, SSH, and tmux Progress from local network identification to approved remote access and a shared terminal session. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX10: Shell scripting, pipes, redirection, and scheduling</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX12: Networking, SSH, and tmux</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Build reviewable automation with safe inputs, logs, cron, and a teacher-approved yt-dlp example.</p>
+<p>Progress from local network identification to approved remote access and a shared terminal session.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -3073,16 +3135,16 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/11-networking-ssh-tmux.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX11 Backups, updates, and troubleshooting Verify backups, apply updates, and diagnose power, hardware, OS, service, network, and application layers. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="pilot" data-pathway="core" data-access="public" data-search="LX13 Power and Raspberry Pi bridge Combine power calculations, Linux, Git, Python, networking, backup, and commissioning plans before physical computing. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX11: Backups, updates, and troubleshooting</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
+<h3>LX13: Power and Raspberry Pi bridge</h3>
+<div><span class="tej-badge status-pilot">Pilot</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
 </div>
-<p>Verify backups, apply updates, and diagnose power, hardware, OS, service, network, and application layers.</p>
+<p>Combine power calculations, Linux, Git, Python, networking, backup, and commissioning plans before physical computing.</p>
 <details>
 <summary>Requirements, evidence, and implementation notes</summary>
 
@@ -3104,44 +3166,13 @@ Access is recorded as **Public**, **Teacher only**, **Classroom restricted**, or
 | Copyright or permissions | Original instructions and official documentation links. |
 | Implementation notes | Test commands against the approved classroom image before publication. |
 
-**Public notes:** Not yet available
+[Public notes](../09-linux-operating-systems/12-power-and-raspberry-pi-bridge.qmd)
 </details>
 </article>
 
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="planned" data-pathway="core" data-access="public" data-search="LX12 Customization, accessibility, and performance Improve usability without creating unnecessary background load or instability. approved Linux computer or Raspberry Pi Linux desktop terminal">
+<article class="tej-roadmap-module" data-tej-roadmap-module data-status="bonus" data-pathway="bonus" data-access="public" data-search="LX14 Advanced Linux administration Extend into services, hardening, deployment, and recovery only after core administration is secure. approved Linux computer or Raspberry Pi Linux desktop terminal">
 <div class="tej-roadmap-module-heading">
-<h3>LX12: Customization, accessibility, and performance</h3>
-<div><span class="tej-badge status-planned">Planned</span> <span class="tej-badge">Core</span> <span class="tej-badge">Public</span></div>
-</div>
-<p>Improve usability without creating unnecessary background load or instability.</p>
-<details>
-<summary>Requirements, evidence, and implementation notes</summary>
-
-| Field | Roadmap record |
-|:--|:--|
-| Prerequisites | Unit 8 |
-| Estimated time | 1-3 periods |
-| Simulation | Optional virtual machine |
-| Physical lab | Required |
-| Equipment | approved Linux computer or Raspberry Pi |
-| Software | Linux desktop, terminal |
-| Safety level | Data and system administration |
-| Student deliverables | command transcript and short explanation |
-| Assessment evidence | correct command choice, safe scope, verified outcome |
-| Student handout | Planned |
-| Teacher guide | Teacher controlled |
-| Slides | Planned |
-| Source references | ON-TEJ |
-| Copyright or permissions | Original instructions and official documentation links. |
-| Implementation notes | Test commands against the approved classroom image before publication. |
-
-**Public notes:** Not yet available
-</details>
-</article>
-
-<article class="tej-roadmap-module" data-tej-roadmap-module data-status="bonus" data-pathway="bonus" data-access="public" data-search="LX13 Advanced Linux administration Extend into services, hardening, deployment, and recovery only after core administration is secure. approved Linux computer or Raspberry Pi Linux desktop terminal">
-<div class="tej-roadmap-module-heading">
-<h3>LX13: Advanced Linux administration</h3>
+<h3>LX14: Advanced Linux administration</h3>
 <div><span class="tej-badge status-bonus">Bonus</span> <span class="tej-badge">Bonus</span> <span class="tej-badge">Public</span></div>
 </div>
 <p>Extend into services, hardening, deployment, and recovery only after core administration is secure.</p>
@@ -5474,6 +5505,9 @@ The roadmap uses original summaries and links to official or appropriately licen
 | OPEN-CIRCUITS | Open Circuits | Restricted visual reference for component interiors | Classroom restricted | Classroom source available through the teacher. Use original diagrams or separately cleared assets publicly. |
 | MAKE-ELECTRONICS | Make - Electronics | Teacher reference for hands-on build ideas | Classroom restricted | Classroom source available through the teacher. Do not publish copied pages or diagrams. |
 | LINUX-MINT-INSTALL | [Linux Mint Installation Guide](https://linuxmint.com/documentation.php) | Official installation sequence and installer screenshots | External official source | Link to the official guide. Linux Mint permits screenshots in articles, websites, and educational documents when affiliation is not implied. |
+| UBUNTU-CLI | [Ubuntu command line for beginners](https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/) | Beginner reference for the terminal, administrator access, and sudo | External official source | Link to the official documentation. Use original classroom explanations and examples. |
+| GNU-BASH | [GNU Bash Reference Manual](https://www.gnu.org/software/bash/manual/html_node/Bash-History-Facilities.html) | Official reference for Bash commands and command history | External official source | Link to the GNU manual. Use original classroom explanations and follow the source licence for reused text. |
+| BASHCRAWL | [Bashcrawl](https://gitlab.com/slackermedia/bashcrawl) | Beginner command-line navigation game | External official source | Link to or clone the official public repository. Verify the repository licence before republishing any of its files. |
 
 </div>
 

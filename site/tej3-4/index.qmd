@@ -15,6 +15,16 @@ execute:
 **Work in progress.** These notes are intentionally lean. They record what we have taught so far and are a starting point for student improvements.
 
 ::: {.tej-roadmap-cta}
+## Useful and relevant first
+
+Technical skills are taught as tools for doing something students may recognize or care about. A lesson might help a student improve a computer, organize files, automate a repeated task, publish a website, analyze measurements, create a game or tool, or solve a problem connected to school, home, a hobby, the community, or future work.
+
+Python and Linux are important parts of the program, but they are not the point of every lesson. We use the tool that fits the purpose. Whenever practical, students get limited project choices so they can meet the same learning goals through applications that matter to them.
+
+Each lesson should help a student answer at least one question: **What can I make, improve, understand, automate, analyze, or solve?**
+:::
+
+::: {.tej-roadmap-cta}
 ## Curriculum Roadmap
 
 <span class="tej-badge status-in-development">In Development</span>
@@ -125,11 +135,21 @@ Complete intended progression:
 </div>
 </details>
 
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tej-linux-operating-systems" data-bs-total-lessons="2" open>
-<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="09-linux-operating-systems/index.qmd">Linux, Operating Systems and Basic Networking</a><span data-bs-learn-group-count>2 lessons</span></span></summary>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="tej-linux-operating-systems" data-bs-total-lessons="12" open>
+<summary class="bs-learn-catalogue-section-heading"><span class="bs-learn-track-heading"><a href="09-linux-operating-systems/index.qmd">Linux, Operating Systems and Basic Networking</a><span data-bs-learn-group-count>12 lessons</span></span></summary>
 <div class="bs-learn-catalogue-section-items">
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Linux Distributions","Debian","Ubuntu","Linux Mint","Lubuntu","Arch Linux","Xfce"]' data-bs-search-body='["Compare Linux distributions and explain why the class uses Linux Mint Xfce."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/01-choosing-a-distribution.qmd">Choosing a Linux Distribution</a></div></article>
 <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Install Linux Mint","Linux Mint 22.3 Zena","Xfce","Operating System Installation"]' data-bs-search-body='["Install Linux Mint Xfce safely, test the browser, and install software from Software Manager."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/02-install-linux-mint.qmd">Install Linux Mint 22.3 Xfce</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Linux Accounts","Linux Mint","Networking","Software Manager","Git","Bashcrawl","Bash History"]' data-bs-search-body='["Create student accounts, explore Linux through the GUI, install software, check networking, and begin a command-line adventure."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/explore-linux.qmd">Set Up Your Accounts and Explore Linux</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Linux Hardware","RAM","CPU","Storage","htop","System Info"]' data-bs-search-body='["Identify computer hardware and compare GUI system information with terminal tools."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/04-know-your-computer.qmd">Know Your Linux Computer</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Files","Folders","Permissions","Terminal","Bash"]' data-bs-search-body='["Build safe file, path, terminal, and permission habits inside a practice folder."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/05-files-terminal-permissions.qmd">Files, Folders, Terminal, and Permissions</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Git","Version Control","Commits","Repository"]' data-bs-search-body='["Create a repository and practise a small, reviewable commit cycle."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/06-git-version-control.qmd">Git: Save the History of Your Work</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Quarto","Markdown","Website","GitHub Pages"]' data-bs-search-body='["Build, test, version, and publish a small technical website."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/07-quarto-website.qmd">Build a Website with Quarto</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["GitHub Pages","Publishing","Deployment","Quarto"]' data-bs-search-body='["Publish a tested Quarto website from a teacher-approved GitHub repository."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/08-publish-github-pages.qmd">Publish with GitHub Pages</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Python","CSV","Data Logging","Measurements"]' data-bs-search-body='["Create clean, documented measurement logs with Python."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/09-python-data-logging.qmd">Log Measurements with Python</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Python","Data Analysis","Curve Fitting","Matplotlib","Residuals"]' data-bs-search-body='["Plot measurements, fit a model, inspect residuals, and publish an interpretation."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/10-python-analysis-curve-fitting.qmd">Analyze Data and Fit a Curve</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Networking","SSH","tmux","Remote Administration"]' data-bs-search-body='["Move safely from local network identification to an approved shared remote terminal."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/11-networking-ssh-tmux.qmd">Networking, SSH, and tmux</a></div></article>
+<article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="tej-linux-operating-systems" data-bs-search-primary='["Raspberry Pi","Power Calculations","Linux","Python","Systems"]' data-bs-search-body='["Combine power, Linux, Git, Python, and networking readiness before physical computing."]'><div class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="09-linux-operating-systems/12-power-and-raspberry-pi-bridge.qmd">From Linux Computer to Raspberry Pi</a></div></article>
 </div>
 </details>
 

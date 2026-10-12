@@ -1,0 +1,57 @@
+---
+title: "Files, Folders, Terminal, and Permissions"
+description: "Build safe command-line habits while working only inside a practice folder."
+categories: [Linux, files, permissions, Bash, command line]
+---
+
+## Learning goals
+
+- I will be able to navigate, create, copy, move, and inspect files from the terminal.
+- I will be able to explain home folders, paths, ownership, and basic permissions.
+- I will be able to check my location before running a command that changes files.
+
+This is important because Git, Quarto, Python, SSH, and Raspberry Pi work all depend on knowing where files are and who is allowed to change them.
+
+## Safe practice workspace
+
+Sign in to your own account and create one practice directory:
+
+```bash
+mkdir -p ~/linux-labs/files-practice
+cd ~/linux-labs/files-practice
+pwd
+```
+
+Use `pwd` before every group of commands. Practise with `ls`, `mkdir`, `touch`, `cp`, `mv`, `cat`, `less`, and `rm`. Use `rm` only on teacher-approved practice files. Do not use `sudo`, wildcards with `rm`, or commands copied from an unknown site.
+
+Compare the same folder in Thunar File Manager. Turn on hidden files and find `.bash_history`. Do not edit or submit private information.
+
+## Permissions
+
+Create a file, then inspect it:
+
+```bash
+touch team-notes.txt
+ls -l team-notes.txt
+```
+
+Learn what the read, write, and execute positions mean for the owner, group, and others. Use `chmod` only on the practice file and verify the result with `ls -l`.
+
+## Evidence
+
+Submit a short command transcript, a screenshot showing the same folder in the terminal and GUI, and an explanation of why checking `pwd` reduces mistakes.
+
+## Everyday Python project: Downloads Folder Helper
+
+Write a Python program using `pathlib` that reads a teacher-approved practice folder and reports how many files have each extension. Add a dry-run mode that prints proposed moves without changing any files. Only after reviewing the output should the program organize copies inside the practice folder.
+
+Never test a new file-management program on your real Downloads folder, shared folders, or another student's files. A safe automation shows what it plans to do and stays inside a clearly bounded location.
+
+## Extend your learning
+
+- Work through the [Ubuntu command-line tutorial](https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/).
+- Continue Bashcrawl or begin [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) only with a teacher-approved account.
+
+## Review and reflect
+
+What is the difference between an absolute path and a path beginning with `~`? Why should a shared-computer user normally work inside their own home folder?

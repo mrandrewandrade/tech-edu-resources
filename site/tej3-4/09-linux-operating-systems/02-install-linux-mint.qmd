@@ -19,13 +19,62 @@ You need:
 - the assigned classroom computer;
 - the Linux Mint 22.3 “Zena” Xfce USB installer supplied in class;
 - the classroom Wi-Fi credentials; and
-- your lab log.
+- the editable [Linux Mint Installation Digital Submission Google Doc](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk). The [website preview](install-linux-mint-submission.qmd) explains the same deliverables.
 
 Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.
 
+### How the installer USB was prepared
+
+Your teacher, with help from students, prepared the installer before this lab:
+
+1. Download the Linux Mint 22.3 Xfce `.iso` file from the official Linux Mint website.
+2. Verify the downloaded image when possible.
+3. Insert an empty USB drive. Creating the installer erases that USB drive.
+4. Use [balenaEtcher](https://etcher.balena.io/) to select the image, select the correct USB drive, and flash it.
+5. On Windows, [Rufus](https://rufus.ie/) is another good tool for creating a bootable USB from an ISO image.
+6. Test the installer on one classroom computer before preparing the remaining computers.
+
+See the official Linux Mint instructions for [creating bootable media](https://linuxmint-installation-guide.readthedocs.io/en/latest/burn.html). Sign out an installer USB from your teacher. Do not create or erase installation media without approval.
+
+::: {.callout-note title="Dual boot uses different instructions"}
+This classroom lab erases an approved computer. Do not follow these erase instructions when keeping Windows or macOS. A dual-boot setup needs free space, a backup, careful partition selection, and a recovery plan. Install Windows before Linux when both systems share a drive. Some UEFI computers are easier to maintain when each operating system uses a separate physical drive, but this depends on the computer. Search the exact model and follow model-specific documentation before changing partitions or boot settings.
+:::
+
+### Working at home: Windows and Mac options
+
+In class, we are installing Linux Mint directly on approved classroom computers. Do not erase or dual boot a family computer for this course.
+
+If you use Windows 11 or a supported Windows 10 computer at home, the recommended option is **Windows Subsystem for Linux 2 (WSL 2) with Ubuntu**. It gives you a real Linux command line without replacing Windows. Ask the computer owner for permission because installation requires administrator access and may require a restart.
+
+1. Open **PowerShell as Administrator**.
+2. Run:
+
+```powershell
+wsl --install
+```
+
+3. Restart Windows if asked.
+4. Open **Ubuntu** from the Start menu.
+5. Create a private Linux username and password. The password will not appear while you type it.
+6. Return to PowerShell and verify the installation:
+
+```powershell
+wsl --list --verbose
+wsl --status
+```
+
+If WSL is already installed but Ubuntu is missing, run `wsl --list --online`, then `wsl --install -d Ubuntu`. Never use `wsl --unregister` for this course because it permanently deletes that WSL distribution and its files. Follow the official [Microsoft WSL installation guide](https://learn.microsoft.com/windows/wsl/install) if your screen differs.
+
+On a Mac, use the built-in **Terminal** for transferable work such as files, Git, Quarto, Python, and SSH. macOS is Unix-like, but it is not Linux. Complete Linux-specific hardware, package, permission, and administration activities on the classroom Linux computer or an approved remote Linux host. Apple's [Terminal User Guide](https://support.apple.com/guide/terminal/welcome/mac) is a useful reference.
+
 ## 1. Start the live system
 
-Insert the Linux Mint USB drive and boot the computer from it. Choose the normal **Start Linux Mint** option if a startup menu appears. Linux Mint first opens a **live session**: a temporary desktop running from the USB drive.
+Insert the Linux Mint USB drive and boot the computer from it.
+
+- On an Intel iMac or Mac mini, restart and hold **Alt** or **Option** after power-on. Select the USB entry. It may appear as **EFI Boot**.
+- On a typical Windows computer, use the model-specific boot-menu or BIOS/UEFI key. Common keys include **Delete**, **F12**, **F10**, **Esc**, or **F2**. Every computer differs, so search the exact make and model when the key is unknown.
+
+Choose the normal **Start Linux Mint** option if a startup menu appears. Linux Mint first opens a **live session**: a temporary desktop running from the USB drive.
 
 The live session may feel slower than the finished installation, and changes made there are not permanent. If the live session asks for a password, leave it blank and press **Enter**.
 
@@ -114,7 +163,7 @@ Without closing the installer:
 
 1. Open the web browser.
 2. Visit the [TEJ Notes website](https://andrewandrade.ca/tech-edu-resources/tej3-4/) and record whether it loads.
-3. Open the main menu and find the **Software Manager**—Linux Mint’s “app store.” Search for `games` and record one school-appropriate game or application that looks interesting.
+3. Open the main menu and find the **Software Manager**, Linux Mint's "app store." Search for `games` and record one school-appropriate game or application in your Google Doc.
 4. Find the File Manager and Terminal icons. You do not need to run commands yet.
 
 Software installed during the live session may disappear after restart, so wait until the finished system starts before installing your chosen application.
@@ -132,7 +181,7 @@ Remove the USB drive when the computer asks, then press **Enter**. Log in as `mi
 1. Open the browser and confirm that the [TEJ Notes website](https://andrewandrade.ca/tech-edu-resources/tej3-4/) still loads.
 2. Open **Software Manager** from the main menu.
 3. Search for `games` or search for the application you recorded earlier.
-4. With teacher approval, install one school-appropriate game or useful application. Record its exact name.
+4. With teacher approval, install one school-appropriate game or useful application. Record its exact name in your Google Doc.
 5. Open the application once to confirm that it works.
 
 If you finish early, choose one optional challenge:
@@ -143,22 +192,20 @@ If you finish early, choose one optional challenge:
 - find one accessibility setting that could make the computer easier for someone to use; or
 - compare the Linux desktop with Windows and list one similarity and one difference.
 
-## Lab log
+## Google Classroom submission
 
-Record the following in your lab log before you leave:
+Complete the editable [Linux Mint Installation Digital Submission Google Doc](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/edit?usp=drivesdk). You can also read the [website preview of the handout](install-linux-mint-submission.qmd).
 
-| Prompt | Your evidence |
-|:--|:--|
-| Computer name | |
-| Did the TEJ Notes website load? | |
-| Game or software installed | |
-| One thing I like | |
-| One thing I do not like yet | |
-| One thing I want to learn more about | |
-| One difference I noticed between Linux Mint and Windows | |
-| Optional discovery or customization | |
+Submit **one Google Doc** in Google Classroom. The submission page gives you the exact file name, required headings, screenshot, reflection questions, final checklist, and **Above and beyond** section.
 
-Show the installed system and completed lab log to your teacher.
+Show the installed system to your teacher before you leave.
+
+## Extend your learning
+
+- Review the [Linux Start Here class slides](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit) for the distribution, installation, WSL, account, and Bashcrawl sequence.
+- Visit the [Linux Mint documentation](https://linuxmint.com/documentation.php) to explore official desktop and system guides.
+- Explore the school-appropriate [Learn Linux TV YouTube channel](https://www.youtube.com/@LearnLinuxTV) for beginner Linux demonstrations. Choose a beginner video and record one new idea in the **Above and beyond** section of your Google Doc.
+- Try the [Ubuntu command-line tutorial](https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/) when you are ready to move beyond the desktop.
 
 ## Sources and image credit
 
