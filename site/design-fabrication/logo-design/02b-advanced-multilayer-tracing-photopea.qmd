@@ -3,7 +3,7 @@ title: "Lesson 2B: Trace a Multi-Layer Logo in Photopea"
 description: "Turn a rough sketch into separate vector shapes, add colour, and export an SVG that is ready for animation."
 sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
-terms: [logo, vector-graphic, scalable-vector-graphics]
+terms: [logo, vector-graphic, vector-path, node, closed-path, bezier-curve, graphics-layer, shape-layer, pen-tool, direct-select-tool, opacity, fill, stroke, photoshop-document, scalable-vector-graphics, transparency, animation]
 toc: true
 execute:
   enabled: false
@@ -20,7 +20,7 @@ By the end of this lesson:
 
 ## Why this is useful
 
-Most hand-drawn logos have more than one part. Separate layers make the parts easier to fix, colour, move, and animate.
+Most hand-drawn logos have more than one part. A separate graphics layer for each part makes the logo easier to fix, colour, move, and animate.
 
 An SVG can also guide a laser cutter, embroidery machine, vinyl cutter, or other machine. Clean paths and clear names make the file easier to use later.
 
@@ -75,7 +75,7 @@ The sketch should be light enough that new black shapes are easy to see.
 
 1. Choose the **Ellipse Tool**.
 2. Set the tool to **Shape** mode.
-3. Use a solid black fill.
+3. Use a solid black fill and set the stroke to **None**.
 4. Drag a circle over the sun.
 5. Rename the new layer `SUN`.
 
@@ -89,8 +89,8 @@ The two peaks are separate pieces. Do not trace the whole mountain as one shape.
 
 1. Choose the **Pen Tool**.
 2. Choose **Shape** in the top bar.
-3. Click the bottom-left corner, the top of the first peak, and the centre valley.
-4. Click the first point again to close the shape.
+3. Click anchor points at the bottom-left corner, the top of the first peak, and the centre valley.
+4. Click the first anchor point again to make a closed path.
 5. Rename the layer `LEFT-A`.
 6. Start a new shape layer.
 7. Trace the second peak and rename it `RIGHT-A`.
@@ -108,6 +108,8 @@ The river is a thin closed shape, not a brush line.
 3. Click back along the bottom edge.
 4. Close the path by clicking the first point.
 5. Rename the layer `RIVER`.
+
+For a smoother river, drag while placing an anchor point to make a Bézier curve. A few well-placed anchor points usually look smoother than many small ones.
 
 Keep the shape simple. The curve does not need many points.
 
@@ -162,7 +164,7 @@ Colour comes last because the black version makes shape problems easier to find.
 
 Choose **File > Save More > Save PSD/PSB**. Keep **PSD** selected, then choose **Save**.
 
-The PSD keeps the reference and all four editable shape layers.
+The Photoshop Document (PSD) keeps the reference and all four editable shape layers.
 
 ![Photopea's Save PSD or PSB window over the finished coloured logo.](../../assets/personal-logo-photopea/advanced-multilayer-tracing/07-save-layered-psd.png){fig-alt="The Save PSD or PSB window ready to download the layered working file."}
 
@@ -174,6 +176,8 @@ The PSD keeps the reference and all four editable shape layers.
 4. Leave **add raster graphics** off.
 5. Leave **add hidden layers** off.
 6. Choose **Save**.
+
+The empty background keeps its transparency, so the SVG does not gain a white rectangle.
 
 ![Photopea's SVG export window with raster graphics and hidden layers turned off.](../../assets/personal-logo-photopea/advanced-multilayer-tracing/08-svg-export-settings.png){fig-alt="The SVG Save for Web window showing the vector-only export settings."}
 

@@ -2125,6 +2125,42 @@
       "term": "Bypass capacitor"
     },
     {
+      "alias_slugs": [],
+      "aliases": [],
+      "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "A Bézier curve is a smooth vector curve controlled by anchor points and direction handles. Moving the points or handles changes the curve without turning it into pixels.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Structure of Vector Graphics",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/vg-structure"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "node",
+          "term": "Node"
+        },
+        {
+          "slug": "pen-tool",
+          "term": "Pen Tool"
+        },
+        {
+          "slug": "vector-path",
+          "term": "Vector path"
+        }
+      ],
+      "short_definition": "A Bézier curve is a vector curve controlled by anchor points and direction handles.",
+      "slug": "bezier-curve",
+      "term": "Bézier curve"
+    },
+    {
       "alias_slugs": [
         "2d-sketch"
       ],
@@ -2835,6 +2871,51 @@
       "short_definition": "A clearance hole is large enough for a fastener's shank to pass through without thread engagement.",
       "slug": "clearance-hole",
       "term": "Clearance hole"
+    },
+    {
+      "alias_slugs": [
+        "closed-vector-path"
+      ],
+      "aliases": [
+        "Closed vector path"
+      ],
+      "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "A closed path joins its last anchor point to its first. This makes an enclosed vector shape that can hold a fill, such as one mountain in a traced logo.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Creating Shapes",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/vg-creating"
+        },
+        {
+          "title": "Photopea: Structure of Vector Graphics",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/vg-structure"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "node",
+          "term": "Node"
+        },
+        {
+          "slug": "shape-layer",
+          "term": "Shape layer"
+        },
+        {
+          "slug": "vector-path",
+          "term": "Vector path"
+        }
+      ],
+      "short_definition": "A closed path is a vector path whose last anchor point connects back to its first anchor point.",
+      "slug": "closed-path",
+      "term": "Closed path"
     },
     {
       "alias_slugs": [
@@ -5177,6 +5258,46 @@
       "short_definition": "Current that flows in only one direction.",
       "slug": "direct-current",
       "term": "Direct current"
+    },
+    {
+      "alias_slugs": [
+        "direct-selection-tool"
+      ],
+      "aliases": [
+        "Direct Selection Tool"
+      ],
+      "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "The Direct Select Tool lets you select and move individual anchor points in a vector path. Use it to adjust one part of a shape without moving the whole shape.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Editing Shapes",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/vg-manipulation"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "bezier-curve",
+          "term": "Bézier curve"
+        },
+        {
+          "slug": "node",
+          "term": "Node"
+        },
+        {
+          "slug": "vector-path",
+          "term": "Vector path"
+        }
+      ],
+      "short_definition": "The Direct Select Tool selects and moves individual anchor points in a vector path.",
+      "slug": "direct-select-tool",
+      "term": "Direct Select Tool"
     },
     {
       "alias_slugs": [],
@@ -7863,6 +7984,46 @@
       "short_definition": "A 10:1 range of values on logarithmic graph paper.",
       "slug": "graph-cycle",
       "term": "Graph cycle"
+    },
+    {
+      "alias_slugs": [
+        "image-layer"
+      ],
+      "aliases": [
+        "Image layer"
+      ],
+      "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "A graphics layer holds one editable part of an image document. Keeping parts on separate layers lets you move, colour, hide, or animate one part without directly changing the others.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Layers",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/layers"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "opacity",
+          "term": "Opacity"
+        },
+        {
+          "slug": "photoshop-document",
+          "term": "Photoshop Document (PSD)"
+        },
+        {
+          "slug": "shape-layer",
+          "term": "Shape layer"
+        }
+      ],
+      "short_definition": "A graphics layer is one editable part of an image document.",
+      "slug": "graphics-layer",
+      "term": "Graphics layer"
     },
     {
       "alias_slugs": [],
@@ -12082,6 +12243,38 @@
       "alias_slugs": [],
       "aliases": [],
       "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "Opacity controls how solid or see-through an object or layer appears. Lower opacity lets more of the content underneath show through.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Layers",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/layers"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "graphics-layer",
+          "term": "Graphics layer"
+        },
+        {
+          "slug": "transparency",
+          "term": "Transparency"
+        }
+      ],
+      "short_definition": "Opacity controls how solid or see-through an object or layer appears.",
+      "slug": "opacity",
+      "term": "Opacity"
+    },
+    {
+      "alias_slugs": [],
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "definition": "One that has infinitely high resistance, resulting in zero current.",
@@ -12678,6 +12871,42 @@
       "alias_slugs": [],
       "aliases": [],
       "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "The Pen Tool creates vector paths by placing anchor points. Clicking makes straight segments, while dragging an anchor point can make a curve.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Creating Shapes",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/vg-creating"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "closed-path",
+          "term": "Closed path"
+        },
+        {
+          "slug": "node",
+          "term": "Node"
+        },
+        {
+          "slug": "vector-path",
+          "term": "Vector path"
+        }
+      ],
+      "short_definition": "The Pen Tool creates vector paths by placing anchor points.",
+      "slug": "pen-tool",
+      "term": "Pen Tool"
+    },
+    {
+      "alias_slugs": [],
+      "aliases": [],
+      "categories": [
         "Electrical & Electronics"
       ],
       "definition": "An atom with 5 valence electrons.",
@@ -12952,6 +13181,46 @@
       "short_definition": "A right triangle that represents the phasor sum of two quantities 90° out of phase with each other.",
       "slug": "phasor-triangle",
       "term": "Phasor triangle"
+    },
+    {
+      "alias_slugs": [
+        "psd"
+      ],
+      "aliases": [
+        "PSD"
+      ],
+      "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "A Photoshop Document uses the PSD file format to keep editable document structure, including layers and vector shapes. Save a PSD when you may need to revise the work later.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Open and Save",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/index.php?page=opening-saving"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "graphics-layer",
+          "term": "Graphics layer"
+        },
+        {
+          "slug": "raster-image",
+          "term": "Raster image"
+        },
+        {
+          "slug": "vector-graphic",
+          "term": "Vector graphic"
+        }
+      ],
+      "short_definition": "A Photoshop Document is an editable image file that can keep layers, shapes, and other document structure.",
+      "slug": "photoshop-document",
+      "term": "Photoshop Document (PSD)"
     },
     {
       "alias_slugs": [],
@@ -15559,6 +15828,55 @@
       "short_definition": "Set Focus measures the distance from a Glowforge print head to a selected point on the material before printing.",
       "slug": "set-focus",
       "term": "Set Focus"
+    },
+    {
+      "alias_slugs": [
+        "vector-shape-layer"
+      ],
+      "aliases": [
+        "Vector shape layer"
+      ],
+      "categories": [
+        "Digital Design & Media"
+      ],
+      "definition": "A shape layer stores an editable vector shape. Its path, fill, and stroke can be changed without redrawing the shape as pixels.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "title": "Photopea: Vector Graphics",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/vector-graphics"
+        },
+        {
+          "title": "Photopea: Structure of Vector Graphics",
+          "type": "website",
+          "url": "https://www.photopea.com/learn/vg-structure"
+        }
+      ],
+      "related_lessons": [],
+      "related_terms": [
+        {
+          "slug": "fill",
+          "term": "Fill"
+        },
+        {
+          "slug": "graphics-layer",
+          "term": "Graphics layer"
+        },
+        {
+          "slug": "stroke",
+          "term": "Stroke"
+        },
+        {
+          "slug": "vector-path",
+          "term": "Vector path"
+        }
+      ],
+      "short_definition": "A shape layer stores an editable vector shape with its own fill and stroke.",
+      "slug": "shape-layer",
+      "term": "Shape layer"
     },
     {
       "alias_slugs": [],

@@ -433,6 +433,33 @@
       }
     ]
   },
+  "bezier-curve": {
+    "term": "Bézier curve",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "A Bézier curve is a vector curve controlled by anchor points and direction handles.",
+    "long_definition": "A Bézier curve is a smooth vector curve controlled by anchor points and direction handles. Moving the points or handles changes the curve without turning it into pixels.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "node",
+      "pen-tool",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Structure of Vector Graphics",
+        "url": "https://www.photopea.com/learn/vg-structure"
+      }
+    ]
+  },
   "bias": {
     "term": "Bias",
     "aliases": [],
@@ -689,6 +716,40 @@
       {
         "type": "manual",
         "key": "nasafasteners1990"
+      }
+    ]
+  },
+  "closed-path": {
+    "term": "Closed path",
+    "aliases": [
+      "Closed vector path"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A closed path is a vector path whose last anchor point connects back to its first anchor point.",
+    "long_definition": "A closed path joins its last anchor point to its first. This makes an enclosed vector shape that can hold a fill, such as one mountain in a traced logo.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "node",
+      "shape-layer",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Creating Shapes",
+        "url": "https://www.photopea.com/learn/vg-creating"
+      },
+      {
+        "type": "website",
+        "title": "Photopea: Structure of Vector Graphics",
+        "url": "https://www.photopea.com/learn/vg-structure"
       }
     ]
   },
@@ -1054,6 +1115,35 @@
       {
         "type": "manual",
         "key": "onshapesketch"
+      }
+    ]
+  },
+  "direct-select-tool": {
+    "term": "Direct Select Tool",
+    "aliases": [
+      "Direct Selection Tool"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "The Direct Select Tool selects and moves individual anchor points in a vector path.",
+    "long_definition": "The Direct Select Tool lets you select and move individual anchor points in a vector path. Use it to adjust one part of a shape without moving the whole shape.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "bezier-curve",
+      "node",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Editing Shapes",
+        "url": "https://www.photopea.com/learn/vg-manipulation"
       }
     ]
   },
@@ -1778,6 +1868,35 @@
       {
         "type": "manual",
         "key": "onshapesketch"
+      }
+    ]
+  },
+  "graphics-layer": {
+    "term": "Graphics layer",
+    "aliases": [
+      "Image layer"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A graphics layer is one editable part of an image document.",
+    "long_definition": "A graphics layer holds one editable part of an image document. Keeping parts on separate layers lets you move, colour, hide, or animate one part without directly changing the others.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "opacity",
+      "photoshop-document",
+      "shape-layer"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Layers",
+        "url": "https://www.photopea.com/learn/layers"
       }
     ]
   },
@@ -2929,6 +3048,32 @@
       }
     ]
   },
+  "opacity": {
+    "term": "Opacity",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "Opacity controls how solid or see-through an object or layer appears.",
+    "long_definition": "Opacity controls how solid or see-through an object or layer appears. Lower opacity lets more of the content underneath show through.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "graphics-layer",
+      "transparency"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Layers",
+        "url": "https://www.photopea.com/learn/layers"
+      }
+    ]
+  },
   "orthographic-projection": {
     "term": "Orthographic projection",
     "aliases": [
@@ -3062,6 +3207,33 @@
       }
     ]
   },
+  "pen-tool": {
+    "term": "Pen Tool",
+    "aliases": [],
+    "redirect_slugs": [],
+    "short_definition": "The Pen Tool creates vector paths by placing anchor points.",
+    "long_definition": "The Pen Tool creates vector paths by placing anchor points. Clicking makes straight segments, while dragging an anchor point can make a curve.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "closed-path",
+      "node",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Creating Shapes",
+        "url": "https://www.photopea.com/learn/vg-creating"
+      }
+    ]
+  },
   "perimeter-wall": {
     "term": "Perimeter wall",
     "aliases": [
@@ -3111,6 +3283,35 @@
       {
         "type": "website",
         "key": "privacyai2023"
+      }
+    ]
+  },
+  "photoshop-document": {
+    "term": "Photoshop Document (PSD)",
+    "aliases": [
+      "PSD"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A Photoshop Document is an editable image file that can keep layers, shapes, and other document structure.",
+    "long_definition": "A Photoshop Document uses the PSD file format to keep editable document structure, including layers and vector shapes. Save a PSD when you may need to revise the work later.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "graphics-layer",
+      "raster-image",
+      "vector-graphic"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Open and Save",
+        "url": "https://www.photopea.com/learn/index.php?page=opening-saving"
       }
     ]
   },
@@ -3877,6 +4078,41 @@
       {
         "type": "manual",
         "key": "glowforgealignment"
+      }
+    ]
+  },
+  "shape-layer": {
+    "term": "Shape layer",
+    "aliases": [
+      "Vector shape layer"
+    ],
+    "redirect_slugs": [],
+    "short_definition": "A shape layer stores an editable vector shape with its own fill and stroke.",
+    "long_definition": "A shape layer stores an editable vector shape. Its path, fill, and stroke can be changed without redrawing the shape as pixels.",
+    "categories": [
+      "Digital Design & Media"
+    ],
+    "tracks": [],
+    "related_terms": [
+      "fill",
+      "graphics-layer",
+      "stroke",
+      "vector-path"
+    ],
+    "inline_terms": {},
+    "status": "published",
+    "added": "2026-10-12",
+    "updated": "2026-10-12",
+    "references": [
+      {
+        "type": "website",
+        "title": "Photopea: Vector Graphics",
+        "url": "https://www.photopea.com/learn/vector-graphics"
+      },
+      {
+        "type": "website",
+        "title": "Photopea: Structure of Vector Graphics",
+        "url": "https://www.photopea.com/learn/vg-structure"
       }
     ]
   },
