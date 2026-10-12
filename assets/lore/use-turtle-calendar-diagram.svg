@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Four-step classroom guide for using the turtle's back as a teaching calendar</title>
+  <desc id="desc">Four panels show how to identify the seasonal Moon, choose one large centre section, count one edge mark per day, then move to the next Moon while noticing changes on the land.</desc>
+  <defs>
+    <style>
+      .ink{fill:#18233d}.muted{fill:#596274}.panel{fill:#fffdf8;stroke:#d2c7b4;stroke-width:3}.step{fill:#9a5639}.steptext{fill:#fff;font:700 25px 'Source Sans 3',Arial,sans-serif;text-anchor:middle;dominant-baseline:middle}.heading{font:700 27px 'Source Sans 3',Arial,sans-serif}.body{font:500 21px 'Source Sans 3',Arial,sans-serif}.line{fill:none;stroke:#9a5639;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.shell{fill:#dce8d6;stroke:#18233d;stroke-width:4}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#9a5639"/></marker>
+  </defs>
+  <rect width="1400" height="760" rx="28" fill="#f8f2e8"/>
+  <text x="700" y="58" class="heading ink" text-anchor="middle">A classroom reading guide</text>
+  <text x="700" y="91" class="body muted" text-anchor="middle">Follow seasonal signs and community sources, not a fixed January 1 start.</text>
+
+  <g transform="translate(45 130)">
+    <rect width="310" height="535" rx="24" class="panel"/><circle cx="45" cy="45" r="27" class="step"/><text x="45" y="46" class="steptext">1</text>
+    <circle cx="155" cy="175" r="73" fill="#f2dca8" stroke="#18233d" stroke-width="4"/><path d="M125 175 A45 45 0 0 0 185 175 A45 45 0 0 1 125 175" fill="#fffdf8"/>
+    <path d="M80 270 C115 235 195 235 230 270" class="line"/><path d="M92 270 l18 -25 l15 25 l18 -36 l19 36 l16 -22 l18 22" fill="#c9dbcb" stroke="#18233d" stroke-width="3"/>
+    <text x="28" y="346" class="heading ink">Find the Moon</text>
+    <text x="28" y="384" class="body muted"><tspan x="28" dy="0">Notice the Moon and</tspan><tspan x="28" dy="30">what is changing in</tspan><tspan x="28" dy="30">weather, plants, animals,</tspan><tspan x="28" dy="30">water, and community life.</tspan></text>
+  </g>
+
+  <g transform="translate(380 130)">
+    <rect width="310" height="535" rx="24" class="panel"/><circle cx="45" cy="45" r="27" class="step"/><text x="45" y="46" class="steptext">2</text>
+    <ellipse cx="155" cy="196" rx="103" ry="82" class="shell"/>
+    <g fill="#fff9ef" stroke="#18233d" stroke-width="2"><circle cx="120" cy="162" r="18"/><circle cx="155" cy="162" r="18"/><circle cx="190" cy="162" r="18"/><circle cx="102" cy="198" r="18"/><circle cx="137" cy="198" r="18"/><circle cx="172" cy="198" r="18" fill="#f2c66d" stroke="#9a5639" stroke-width="5"/><circle cx="207" cy="198" r="18"/><circle cx="120" cy="234" r="18"/><circle cx="155" cy="234" r="18"/><circle cx="190" cy="234" r="18"/><circle cx="137" cy="270" r="18"/><circle cx="172" cy="270" r="18"/><circle cx="155" cy="126" r="18"/></g>
+    <text x="28" y="346" class="heading ink">Choose its section</text>
+    <text x="28" y="384" class="body muted"><tspan x="28" dy="0">Use one large centre</tspan><tspan x="28" dy="30">section for the current</tspan><tspan x="28" dy="30">Grandmother Moon.</tspan></text>
+  </g>
+
+  <g transform="translate(715 130)">
+    <rect width="310" height="535" rx="24" class="panel"/><circle cx="45" cy="45" r="27" class="step"/><text x="45" y="46" class="steptext">3</text>
+    <ellipse cx="155" cy="196" rx="103" ry="82" class="shell"/>
+    <g fill="#fff9ef" stroke="#9a5639" stroke-width="3"><circle cx="155" cy="101" r="9" fill="#f2c66d"/><circle cx="205" cy="114" r="9"/><circle cx="243" cy="150" r="9"/><circle cx="258" cy="196" r="9"/><circle cx="243" cy="242" r="9"/><circle cx="205" cy="278" r="9"/><circle cx="155" cy="291" r="9"/><circle cx="105" cy="278" r="9"/><circle cx="67" cy="242" r="9"/><circle cx="52" cy="196" r="9"/><circle cx="67" cy="150" r="9"/><circle cx="105" cy="114" r="9"/></g>
+    <path d="M151 85 C211 76 267 116 279 174" class="line" marker-end="url(#arrow)"/>
+    <text x="28" y="346" class="heading ink">Count the edge</text>
+    <text x="28" y="384" class="body muted"><tspan x="28" dy="0">Move one small edge</tspan><tspan x="28" dy="30">mark for each day in the</tspan><tspan x="28" dy="30">28-day teaching cycle.</tspan></text>
+  </g>
+
+  <g transform="translate(1050 130)">
+    <rect width="310" height="535" rx="24" class="panel"/><circle cx="45" cy="45" r="27" class="step"/><text x="45" y="46" class="steptext">4</text>
+    <path d="M82 250 C112 205 125 161 121 112 C167 126 193 166 205 216 C221 181 244 158 273 148 C266 204 235 251 184 279 C145 284 112 273 82 250 Z" fill="#c9dbcb" stroke="#18233d" stroke-width="4"/>
+    <path d="M95 253 C145 229 184 198 261 157" class="line"/><circle cx="93" cy="135" r="38" fill="#c6d8e8" stroke="#18233d" stroke-width="4"/><path d="M80 135 A26 26 0 0 0 106 109 A26 26 0 0 1 80 135" fill="#fffdf8"/>
+    <text x="28" y="346" class="heading ink">Continue the round</text>
+    <text x="28" y="384" class="body muted"><tspan x="28" dy="0">At the next cycle, move</tspan><tspan x="28" dy="30">to the next large section.</tspan><tspan x="28" dy="30">Keep observing seasonal</tspan><tspan x="28" dy="30">signs and relationships.</tspan></text>
+  </g>
+
+  <text x="700" y="720" class="body muted" text-anchor="middle">This diagram explains one classroom reading method. Community teachings determine names, order, meaning, and when a Moon begins.</text>
+</svg>

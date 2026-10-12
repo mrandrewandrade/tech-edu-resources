@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.15">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Trace a photographed sketch with editable vector lines, improve its symmetry, and export a scalable SVG.">
+
+<title>Lesson 2 — Trace a Rough Logo in Photopea – Technological Education Resources</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-71c7b49c685e597d910cb795eccce780.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a8915aa26982f2aa87b37c986303974c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.svg">
+
+<link rel="icon" type="image/png" sizes="96x96" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon-96x96.png">
+
+<link rel="icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.ico" sizes="any">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/apple-touch-icon.png">
+
+<link rel="manifest" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/site.webmanifest">
+
+<meta name="theme-color" content="#062650">
+
+
+
+<link rel="stylesheet" href="../../assets/bs-shared.css">
+<link rel="stylesheet" href="../../assets/bs-components.css">
+<link rel="stylesheet" href="../../assets/commons-overrides.css">
+<link rel="stylesheet" href="../../assets/bs-learn.css">
+<link rel="stylesheet" href="../../assets/tej-curriculum.css">
+<link rel="stylesheet" href="../../assets/tej-equations-v2.css">
+<link rel="stylesheet" href="../../assets/design-fabrication.css">
+<meta property="og:title" content="Lesson 2 — Trace a Rough Logo in Photopea – Technological Education Resources">
+<meta property="og:description" content="Trace a photographed sketch with editable vector lines, improve its symmetry, and export a scalable SVG.">
+<meta property="og:image" content="https://andrewandrade.ca/tech-edu-resources/assets/personal-logo-photopea/rough-sketch-to-svg/01-reference-photo.png">
+<meta property="og:site_name" content="Technological Education Resources">
+<meta property="og:image:alt" content="A blue hand-drawn AA logo opened as a reference image in Photopea.">
+<meta property="og:image:height" content="1014">
+<meta property="og:image:width" content="1280">
+<meta name="twitter:title" content="Lesson 2 — Trace a Rough Logo in Photopea – Technological Education Resources">
+<meta name="twitter:description" content="Trace a photographed sketch with editable vector lines, improve its symmetry, and export a scalable SVG.">
+<meta name="twitter:image" content="https://andrewandrade.ca/tech-edu-resources/assets/personal-logo-photopea/rough-sketch-to-svg/01-reference-photo.png">
+<meta name="twitter:image:alt" content="A blue hand-drawn AA logo opened as a reference image in Photopea.">
+<meta name="twitter:image-height" content="1014">
+<meta name="twitter:image-width" content="1280">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked nav-fixed ter-design-fabrication bs-learn-article ter-notes-lesson quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo light-content">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Tech Edu</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-educator-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Educator Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-educator-resources">    
+        <li>
+    <a class="dropdown-item" href="../../teacher-slides/index.html">
+ <span class="dropdown-text">General Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-materials/index.html">
+ <span class="dropdown-text">General Materials</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../design-fabrication/index.html">
+ <span class="dropdown-text">General Design &amp; Fabrication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tej3-4/index.html">
+ <span class="dropdown-text">TEJ Notes</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-classes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Classes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-classes">    
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tas-2-sem-1.html">
+ <span class="dropdown-text">TAS Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tej-3-sem-1.html">
+ <span class="dropdown-text">TEJ Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-ttj-sem-1.html">
+ <span class="dropdown-text">TTJ / TTS Slides</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../glossary/index.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lore/index.html"> 
+<span class="menu-text">Lore</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../design-fabrication/logo-design/01-nameplate-text-photopea.html">Digital Design</a></li><li class="breadcrumb-item"><a href="../../design-fabrication/logo-design/rough-sketch-to-svg-photopea.html">Photopea 2: Trace a Rough Logo</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Design &amp; Fabrication Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/design-process/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">N.I.C.E. Design Process</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Digital Design</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/logo-design/01-nameplate-text-photopea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Photopea 1: Nameplate Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/logo-design/rough-sketch-to-svg-photopea.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Photopea 2: Trace a Rough Logo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/logo-design/03-combine-logo-nameplate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Photopea 3: Combine Logo + Name</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/01-name-logo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Your Turn: Your Name + Logo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/01-raster-vector-svg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Raster, Vector &amp; SVG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/02-digital-design/05-animation-ui-ux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2D Animation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laser Cutting Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/03-laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Laser Cutting Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/laser-cutting/tool-organizer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool Organizer Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../teaching-materials/laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/plate-builder/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fabrication Plate Builder</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/leg-builder/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Laser-Cut Leg &amp; Support Builder</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../design-fabrication/tools/tool-organizer-gallery/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool Organizer Gallery</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching-materials/laser-cutting/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Laser-Cutting Files and Resources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#why-this-is-useful" id="toc-why-this-is-useful" class="nav-link" data-scroll-target="#why-this-is-useful">Why this is useful</a></li>
+  <li><a href="#what-you-are-making" id="toc-what-you-are-making" class="nav-link" data-scroll-target="#what-you-are-making">What you are making</a></li>
+  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
+  <li><a href="#open-the-sketch" id="toc-open-the-sketch" class="nav-link" data-scroll-target="#open-the-sketch">1. Open the sketch</a></li>
+  <li><a href="#draw-the-first-editable-stroke" id="toc-draw-the-first-editable-stroke" class="nav-link" data-scroll-target="#draw-the-first-editable-stroke">2. Draw the first editable stroke</a></li>
+  <li><a href="#build-the-complete-symbol" id="toc-build-the-complete-symbol" class="nav-link" data-scroll-target="#build-the-complete-symbol">3. Build the complete symbol</a></li>
+  <li><a href="#hide-the-photo-and-check-the-logo" id="toc-hide-the-photo-and-check-the-logo" class="nav-link" data-scroll-target="#hide-the-photo-and-check-the-logo">4. Hide the photo and check the logo</a></li>
+  <li><a href="#fix-the-size-spacing-and-line-thickness" id="toc-fix-the-size-spacing-and-line-thickness" class="nav-link" data-scroll-target="#fix-the-size-spacing-and-line-thickness">5. Fix the size, spacing, and line thickness</a>
+  <ul class="collapse">
+  <li><a href="#check-your-work" id="toc-check-your-work" class="nav-link" data-scroll-target="#check-your-work">Check your work</a></li>
+  </ul></li>
+  <li><a href="#save-the-editable-working-file" id="toc-save-the-editable-working-file" class="nav-link" data-scroll-target="#save-the-editable-working-file">6. Save the editable working file</a></li>
+  <li><a href="#export-the-svg" id="toc-export-the-svg" class="nav-link" data-scroll-target="#export-the-svg">7. Export the SVG</a></li>
+  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit</a></li>
+  <li><a href="#common-issues" id="toc-common-issues" class="nav-link" data-scroll-target="#common-issues">Common issues</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../design-fabrication/logo-design/01-nameplate-text-photopea.html">Digital Design</a></li><li class="breadcrumb-item"><a href="../../design-fabrication/logo-design/rough-sketch-to-svg-photopea.html">Photopea 2: Trace a Rough Logo</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lesson 2 — Trace a Rough Logo in Photopea</h1>
+</div>
+
+<div>
+  <div class="description">
+    Trace a photographed sketch with editable vector lines, improve its symmetry, and export a scalable SVG.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-goals" class="level2">
+<h2 class="anchored" data-anchor-id="learning-goals">Learning goals</h2>
+<p>By the end of this activity:</p>
+<ul>
+<li>I can open a sketch in Photopea.</li>
+<li>I can trace the sketch with editable lines.</li>
+<li>I can make both sides of a logo look even.</li>
+<li>I can save a PSD and export an SVG.</li>
+</ul>
+</section>
+<section id="why-this-is-useful" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-useful">Why this is useful</h2>
+<p>Your first sketch does not need to be perfect. Editable lines let you fix the shape while keeping the original idea.</p>
+<p>You can use this skill for logos, signs, stickers, name tags, and laser projects. The PSD keeps your work editable. The SVG stays sharp when it is made larger or smaller.</p>
+</section>
+<section id="what-you-are-making" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-are-making">What you are making</h2>
+<p>You will start with a photo of a hand-drawn mark. You will rebuild it with four clean lines. The sketch gives you the idea. You decide the final shape.</p>
+<p>The example uses four vector strokes:</p>
+<ol type="1">
+<li>a left diagonal;</li>
+<li>a right diagonal;</li>
+<li>a vertical centre line; and</li>
+<li>a horizontal crossbar.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Work from large shapes to small corrections">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work from large shapes to small corrections
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Build the complete symbol first. Hide the photograph only after all four strokes exist, then judge the clean silhouette and make corrections.</p>
+</div>
+</div>
+</section>
+<section id="before-you-start" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
+<p>Open <a href="https://www.photopea.com/">Photopea</a> in a modern browser. You can choose <strong>File &gt; Open</strong> or drag the photograph from its folder onto Photopea.</p>
+<p>Complete <a href="../../design-fabrication/logo-design/01-nameplate-text-photopea.html">Lesson 1 — Build the Nameplate Text</a> first. You will add this logo to that nameplate in Lesson 3.</p>
+<p>You will use these parts of the editor:</p>
+<ul>
+<li><strong>Toolbar:</strong> the vertical row of tools on the left.</li>
+<li><strong>Canvas:</strong> the document in the centre.</li>
+<li><strong>Layers panel:</strong> the list of editable pieces on the right.</li>
+<li><strong>Shape layer:</strong> an editable line or shape that stays sharp when you resize it.</li>
+<li><strong>Stroke width:</strong> the thickness of a line.</li>
+</ul>
+</section>
+<section id="open-the-sketch" class="level2">
+<h2 class="anchored" data-anchor-id="open-the-sketch">1. Open the sketch</h2>
+<p>Open the photograph and fit it on screen. Do not erase or paint on it. It is only a reference for the vector shapes you will place above it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/personal-logo-photopea/rough-sketch-to-svg/01-reference-photo.png" class="img-fluid figure-img" alt="A blue hand-drawn AA logo opened as a reference image in Photopea."></p>
+<figcaption>A blue hand-drawn AA logo opened as a reference image in Photopea.</figcaption>
+</figure>
+</div>
+<p>Look for the simple shapes inside the drawing. In this example, check the top point, the two sloped legs, the centre line, and the crossbar.</p>
+</section>
+<section id="draw-the-first-editable-stroke" class="level2">
+<h2 class="anchored" data-anchor-id="draw-the-first-editable-stroke">2. Draw the first editable stroke</h2>
+<ol type="1">
+<li>Select the <strong>Line tool</strong>. If it is hidden, press and hold the shape-tool icon in the toolbar and choose <strong>Line</strong>.</li>
+<li>In the top options bar, choose <strong>Shape</strong> mode.</li>
+<li>Choose black for the line and begin with a stroke width near <code>14 px</code>.</li>
+<li>Drag from one endpoint to the other to trace the left diagonal.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/personal-logo-photopea/rough-sketch-to-svg/02-first-vector-stroke.png" class="img-fluid figure-img" alt="The first black vector line drawn over one side of the blue sketch."></p>
+<figcaption>The first black vector line drawn over one side of the blue sketch.</figcaption>
+</figure>
+</div>
+<p>Photopea makes a new shape layer. A brush line is made of pixels. A shape line stays editable and sharp.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="The sketch is a guide, not a rule">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The sketch is a guide, not a rule
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aim for a cleaner angle than the hand-drawn line. Ignore small bumps and changes in pen pressure.</p>
+</div>
+</div>
+</section>
+<section id="build-the-complete-symbol" class="level2">
+<h2 class="anchored" data-anchor-id="build-the-complete-symbol">3. Build the complete symbol</h2>
+<p>Draw the remaining diagonal, the vertical centre stroke, and the crossbar. Keep each stroke as an editable shape layer.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/personal-logo-photopea/rough-sketch-to-svg/03-four-stroke-construction.png" class="img-fluid figure-img" alt="Four black vector strokes forming the AA logo over the original sketch, with separate shape layers visible."></p>
+<figcaption>Four black vector strokes forming the AA logo over the original sketch, with separate shape layers visible.</figcaption>
+</figure>
+</div>
+<p>Work slowly and check these parts:</p>
+<ul>
+<li>The two diagonal legs meet at one centred top point.</li>
+<li>The lower endpoints of the legs are at the same height.</li>
+<li>The vertical stroke is straight and centred.</li>
+<li>The crossbar is level.</li>
+<li>All four lines have a similar thickness.</li>
+</ul>
+<p>It is fine if the first version is uneven. The next step is where the design work happens.</p>
+</section>
+<section id="hide-the-photo-and-check-the-logo" class="level2">
+<h2 class="anchored" data-anchor-id="hide-the-photo-and-check-the-logo">4. Hide the photo and check the logo</h2>
+<p>In the Layers panel, click the eye beside the photograph layer. The grey-and-white checkerboard means the background is transparent.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/personal-logo-photopea/rough-sketch-to-svg/04-transparency-check.png" class="img-fluid figure-img" alt="The traced AA logo by itself on Photopea's transparent checkerboard."></p>
+<figcaption>The traced AA logo by itself on Photopea’s transparent checkerboard.</figcaption>
+</figure>
+</div>
+<p>The clean logo is easier to check when the photo is hidden. Ask:</p>
+<ul>
+<li>Does the logo lean to one side?</li>
+<li>Are the two legs equally far from the centre?</li>
+<li>Is the centre stroke truly vertical?</li>
+<li>Is the crossbar centred and level?</li>
+<li>Does one line look thicker than the others?</li>
+</ul>
+</section>
+<section id="fix-the-size-spacing-and-line-thickness" class="level2">
+<h2 class="anchored" data-anchor-id="fix-the-size-spacing-and-line-thickness">5. Fix the size, spacing, and line thickness</h2>
+<p>Select one shape layer at a time. Use the <strong>Move tool</strong> to reposition a whole stroke or the <strong>Direct Select tool</strong> to adjust its vector points. Change the stroke width in the top options bar when a line looks too heavy or too light.</p>
+<p>Make one small change at a time. Then look at the whole logo again. The two sides should look even.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/personal-logo-photopea/rough-sketch-to-svg/05-corrected-final-logo.png" class="img-fluid figure-img" alt="A corrected, balanced black AA logo on a transparent background in Photopea."></p>
+<figcaption>A corrected, balanced black AA logo on a transparent background in Photopea.</figcaption>
+</figure>
+</div>
+<section id="check-your-work" class="level3">
+<h3 class="anchored" data-anchor-id="check-your-work">Check your work</h3>
+<p>Continue only when:</p>
+<ul>
+<li>the top point is centred;</li>
+<li>the two outside legs feel balanced;</li>
+<li>the centre stroke is straight;</li>
+<li>the crossbar is level and centred; and</li>
+<li>the line thickness looks the same.</li>
+</ul>
+</section>
+</section>
+<section id="save-the-editable-working-file" class="level2">
+<h2 class="anchored" data-anchor-id="save-the-editable-working-file">6. Save the editable working file</h2>
+<p>Choose <strong>File &gt; Save as PSD</strong> and use a clear filename such as <code>initials-logo-working.psd</code>.</p>
+<p>The PSD is the working file. It preserves the photograph and the editable shape layers, so you can revise the logo later.</p>
+</section>
+<section id="export-the-svg" class="level2">
+<h2 class="anchored" data-anchor-id="export-the-svg">7. Export the SVG</h2>
+<ol type="1">
+<li>Hide the photograph and any abandoned practice layers.</li>
+<li>Choose <strong>File &gt; Export as &gt; SVG</strong>.</li>
+<li>Leave <strong>add hidden layers</strong> off.</li>
+<li>Leave <strong>add raster graphics</strong> off so the photograph is not embedded.</li>
+<li>Keep the original width and height, then choose <strong>Save</strong>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/personal-logo-photopea/rough-sketch-to-svg/06-svg-export-settings.png" class="img-fluid figure-img" alt="Photopea's Save for Web window with SVG selected as the export format."></p>
+<figcaption>Photopea’s Save for Web window with SVG selected as the export format.</figcaption>
+</figure>
+</div>
+<p>The downloaded <code>.svg</code> is the final artwork. It can be large on a sign or small on a label without becoming blurry.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../assets/personal-logo-photopea/rough-sketch-to-svg/07-svg-export-complete.png" class="img-fluid figure-img" alt="The completed AA logo in Photopea with a notification confirming the SVG download."></p>
+<figcaption>The completed AA logo in Photopea with a notification confirming the SVG download.</figcaption>
+</figure>
+</div>
+</section>
+<section id="submit" class="level2">
+<h2 class="anchored" data-anchor-id="submit">Submit</h2>
+<p>Submit both files:</p>
+<ul>
+<li>the <code>.psd</code> working file with editable shape layers; and</li>
+<li>the final <code>.svg</code> with only the finished vector artwork visible.</li>
+</ul>
+</section>
+<section id="common-issues" class="level2">
+<h2 class="anchored" data-anchor-id="common-issues">Common issues</h2>
+<ul>
+<li><strong>A line is on the photograph layer:</strong> undo, choose the Line tool in Shape mode, and draw it again.</li>
+<li><strong>A line is too thick or thin:</strong> select its shape layer and change the stroke width in the top options bar.</li>
+<li><strong>The logo looks good over the sketch but wrong alone:</strong> keep the photo hidden while you fix the size and spacing.</li>
+<li><strong>The photo appears in the SVG:</strong> hide the photo and export again with <strong>add hidden layers</strong> and <strong>add raster graphics</strong> turned off.</li>
+</ul>
+<div class="ter-curriculum-relevance">
+<p><strong>Design curriculum:</strong> This is Lesson 2 in the Photopea sequence. Complete <a href="../../design-fabrication/logo-design/01-nameplate-text-photopea.html">Lesson 1</a> first. Next, add the finished logo to the nameplate in <a href="../../design-fabrication/logo-design/03-combine-logo-nameplate.html">Lesson 3</a>.</p>
+</div>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>You used a rough sketch as a guide. You traced it with editable lines. You hid the photo, made both sides look even, saved a PSD, and exported an SVG.</p>
+<p>Do not copy every wobble in the sketch. Keep the idea, use simple lines, and make the spacing and thickness look even.</p>
+<p>Previous: <a href="../../design-fabrication/logo-design/01-nameplate-text-photopea.html">Lesson 1 — Build the Nameplate Text</a>. Next: <a href="../../design-fabrication/logo-design/03-combine-logo-nameplate.html">Lesson 3 — Combine the Logo and Nameplate</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+
+(function () {
+
+  "use strict";
+
+  const base = ["/commons", "/tech-edu-resources"].find(function (candidate) {
+
+    return window.location.pathname === candidate ||
+
+      window.location.pathname.startsWith(candidate + "/");
+
+  }) || "";
+
+
+
+  window.terEquationSources = [];
+
+  document.querySelectorAll("span.math.display").forEach(function (equation, index) {
+
+    const source = equation.textContent
+
+      .trim()
+
+      .replace(/^\\\[\s*/, "")
+
+      .replace(/\s*\\\]$/, "")
+
+      .replace(/\s*\\tag\{[^}]+\}\s*$/, "")
+
+      .trim();
+
+    const key = "ter-equation-" + (index + 1);
+
+    equation.dataset.terEquationKey = key;
+
+    window.terEquationSources.push({ key: key, source: source });
+
+  });
+
+
+
+  [
+
+    "commons-lore.js",
+
+    "bs-learn.js",
+
+    "bs-glossary.js",
+
+    "bs-reference-titles.js",
+
+    "bs-learn-scroll.js",
+
+    "tej-equations-v1.js"
+
+  ].forEach(function (file) {
+
+    const script = document.createElement("script");
+
+    script.src = base + "/assets/" + file;
+
+    script.async = false;
+
+    document.body.appendChild(script);
+
+  });
+
+})();
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/tech-edu-resources\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Website code: <a href="https://andrewandrade.ca/commons/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/commons/licensing.html">CC BY-SA 4.0</a>.</p>
+<p>Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, <a href="https://andrewandrade.ca/">andrewandrade.ca</a>, and <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when adapting it. <strong>Sharing is caring.</strong></p>
+<p>The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../references.html">
+<p>References</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../licensing.html">
+<p>Licensing</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

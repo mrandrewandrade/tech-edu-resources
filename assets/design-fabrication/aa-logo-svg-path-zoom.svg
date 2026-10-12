@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576" role="img" aria-labelledby="title desc">
+  <title id="title">Close view of an SVG path and its nodes</title>
+  <desc id="desc">A smooth black letter A edge with a blue vector path and editable square nodes.</desc>
+  <rect width="576" height="576" rx="24" fill="#ffffff"/>
+  <rect x="1.5" y="1.5" width="573" height="573" rx="22.5" fill="none" stroke="#d8dee6" stroke-width="3"/>
+
+  <!-- A simplified close view of the same pointed form used in the AA logo. -->
+  <path d="M42 548 L288 34 L534 548" fill="none" stroke="#111820" stroke-width="54" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M288 34 L288 576" fill="none" stroke="#111820" stroke-width="26" stroke-linecap="round"/>
+
+  <!-- The editable vector paths. -->
+  <path d="M42 548 L288 34 L534 548" fill="none" stroke="#00a6c8" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M288 34 L288 576" fill="none" stroke="#00a6c8" stroke-width="5"/>
+
+  <!-- Nodes mark the points that can be moved. -->
+  <g fill="#ffffff" stroke="#006f91" stroke-width="5">
+    <rect x="29" y="535" width="26" height="26"/>
+    <rect x="275" y="21" width="26" height="26"/>
+    <rect x="521" y="535" width="26" height="26"/>
+    <rect x="275" y="550" width="26" height="26"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#006f91">
+    <text x="316" y="76">path</text>
+    <text x="316" y="112">node</text>
+  </g>
+  <path d="M311 70 L303 55" fill="none" stroke="#006f91" stroke-width="3"/>
+  <path d="M311 106 L296 48" fill="none" stroke="#006f91" stroke-width="3"/>
+</svg>

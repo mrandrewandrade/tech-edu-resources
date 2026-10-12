@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Reading the turtle's back as a thirteen Moon and twenty-eight day teaching calendar</title>
+  <desc id="desc">A neutral instructional turtle diagram. Thirteen numbered centre sections represent the Moons. Twenty-eight small marks around the shell edge represent days in the teaching cycle.</desc>
+  <defs>
+    <style>
+      .ink{fill:#18233d}.muted{fill:#5b6475}.outline{stroke:#18233d;stroke-width:5;stroke-linejoin:round}.label{font:700 30px 'Source Sans 3',Arial,sans-serif}.small{font:600 22px 'Source Sans 3',Arial,sans-serif}.number{font:700 22px 'Source Sans 3',Arial,sans-serif;text-anchor:middle;dominant-baseline:middle}.line{fill:none;stroke:#9a5639;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#9a5639"/></marker>
+  </defs>
+  <rect width="1200" height="820" rx="28" fill="#fbf7ef"/>
+  <text x="600" y="62" class="label ink" text-anchor="middle">Read the pattern in two ways</text>
+  <text x="600" y="96" class="small muted" text-anchor="middle">13 large centre sections for Moons + 28 small edge marks for days</text>
+
+  <ellipse cx="600" cy="455" rx="370" ry="270" fill="#dce8d6" class="outline"/>
+  <ellipse cx="600" cy="151" rx="64" ry="55" fill="#dce8d6" class="outline"/>
+  <circle cx="577" cy="139" r="5" class="ink"/><circle cx="623" cy="139" r="5" class="ink"/>
+  <path d="M562 169 Q600 190 638 169" class="line"/>
+  <ellipse cx="273" cy="290" rx="72" ry="38" transform="rotate(-28 273 290)" fill="#dce8d6" class="outline"/>
+  <ellipse cx="927" cy="290" rx="72" ry="38" transform="rotate(28 927 290)" fill="#dce8d6" class="outline"/>
+  <ellipse cx="273" cy="619" rx="72" ry="38" transform="rotate(28 273 619)" fill="#dce8d6" class="outline"/>
+  <ellipse cx="927" cy="619" rx="72" ry="38" transform="rotate(-28 927 619)" fill="#dce8d6" class="outline"/>
+  <path d="M600 724 L568 774 L632 774 Z" fill="#dce8d6" class="outline"/>
+
+  <g aria-label="Twenty-eight day marks around the edge">
+    <circle cx="600.0" cy="225.0" r="12" fill="#f2c66d" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="677.9" cy="230.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="751.9" cy="247.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="818.2" cy="275.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="873.6" cy="311.6" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="915.3" cy="355.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="941.2" cy="403.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="950.0" cy="455.0" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="941.2" cy="506.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="915.3" cy="554.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="873.6" cy="598.4" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="818.2" cy="634.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="751.9" cy="662.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="677.9" cy="679.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="600.0" cy="685.0" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="522.1" cy="679.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="448.1" cy="662.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="381.8" cy="634.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="326.4" cy="598.4" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="284.7" cy="554.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="258.8" cy="506.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="250.0" cy="455.0" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="258.8" cy="403.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="284.7" cy="355.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="326.4" cy="311.6" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="381.8" cy="275.2" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="448.1" cy="247.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+    <circle cx="522.1" cy="230.8" r="12" fill="#fff9ef" stroke="#9a5639" stroke-width="4"/>
+  </g>
+
+  <g aria-label="Thirteen large centre sections">
+    <g fill="#f2dca8" class="outline"><rect x="410" y="315" width="88" height="76" rx="28"/><rect x="507" y="315" width="88" height="76" rx="28"/><rect x="604" y="315" width="88" height="76" rx="28"/><rect x="701" y="315" width="88" height="76" rx="28"/></g>
+    <g fill="#c9dbcb" class="outline"><rect x="362" y="407" width="88" height="76" rx="28"/><rect x="459" y="407" width="88" height="76" rx="28"/><rect x="556" y="407" width="88" height="76" rx="28"/><rect x="653" y="407" width="88" height="76" rx="28"/><rect x="750" y="407" width="88" height="76" rx="28"/></g>
+    <g fill="#c6d8e8" class="outline"><rect x="410" y="499" width="88" height="76" rx="28"/><rect x="507" y="499" width="88" height="76" rx="28"/><rect x="604" y="499" width="88" height="76" rx="28"/><rect x="701" y="499" width="88" height="76" rx="28"/></g>
+    <g class="number ink"><text x="454" y="353">1</text><text x="551" y="353">2</text><text x="648" y="353">3</text><text x="745" y="353">4</text><text x="406" y="445">5</text><text x="503" y="445">6</text><text x="600" y="445">7</text><text x="697" y="445">8</text><text x="794" y="445">9</text><text x="454" y="537">10</text><text x="551" y="537">11</text><text x="648" y="537">12</text><text x="745" y="537">13</text></g>
+  </g>
+
+  <path d="M270 420 C320 420 330 405 360 390" class="line" marker-end="url(#arrow)"/>
+  <text x="52" y="382" class="label ink">13 Moons</text>
+  <text x="52" y="416" class="small muted">large centre sections</text>
+
+  <path d="M930 260 C902 270 890 286 865 306" class="line" marker-end="url(#arrow)"/>
+  <text x="925" y="215" class="label ink">28 days</text>
+  <text x="925" y="249" class="small muted">small edge marks</text>
+
+  <text x="600" y="803" class="small muted" text-anchor="middle">Instructional schematic, not a copy of a community artwork or a claim about every turtle shell.</text>
+</svg>
