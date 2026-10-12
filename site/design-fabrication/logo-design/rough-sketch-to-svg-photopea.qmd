@@ -47,6 +47,8 @@ You need:
 
 [Download the landscape practice sketch](../../assets/personal-logo-photopea/landscape-sketch-reference.png){.btn .btn-primary}
 
+[Download the finished four-element SVG](../../assets/personal-logo-photopea/aa-mountain-animation-ready.svg){.btn .btn-outline-primary}
+
 [Download the printable Photopea guide](../../assets/name-tag-photopea/personal-logo-photopea-guide.pdf){.btn .btn-outline-primary}
 
 ## 1. Warm up with four straight lines
@@ -143,11 +145,11 @@ Use the Pen tool for the two peaks and the river.
 5. Click once to make a sharp corner.
 6. Click and drag to make a curve.
 7. Click the first point again to close the path.
-8. Rename the layers `LEFT PEAK`, `RIGHT PEAK`, and `RIVER`.
+8. Rename the layers `LEFT-A`, `RIGHT-A`, and `RIVER`.
 
 Use as few points as possible. Two or three smooth points make a better curve than many small points.
 
-Keep the sun, both peaks, and river on separate shape layers. Do not merge them. In the next animation assignment, each part can move, fade, scale, or enter at a different time.
+Keep the sun, both peaks, and river on separate shape layers. Do not merge them. Use the unique layer names `SUN`, `LEFT-A`, `RIGHT-A`, and `RIVER`. Photopea uses these names as element IDs in the exported SVG. In the next animation assignment, each part can move, fade, scale, or enter at a different time.
 
 ![The sun, two peaks, and river are rebuilt as separate black vector shapes.](../../assets/personal-logo-photopea/04-photopea-personal-logo.jpg){fig-alt="The landscape is rebuilt with separate black vector layers for the sun, peaks, and river above the pale reference drawing."}
 
@@ -214,6 +216,8 @@ Continue when:
 5. Leave **add hidden layers** off.
 6. Leave **add raster graphics** off.
 7. Choose **Save**.
+
+Because the layers have unique names, the SVG contains four separate elements. Do not combine the paths before exporting.
 
 ![The SVG export window has hidden layers and raster graphics turned off.](../../assets/personal-logo-photopea/rough-sketch-to-svg/06-svg-export-settings.png){fig-alt="Photopea's SVG export window is ready to save only the visible vector shapes."}
 

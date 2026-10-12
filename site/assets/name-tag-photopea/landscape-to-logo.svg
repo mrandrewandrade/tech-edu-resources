@@ -21,7 +21,7 @@
   <path class="arrow" d="M286 170h32m-12-12 12 12-12 12"/>
   <g transform="translate(329 22)">
     <rect class="panel" width="255" height="296" rx="18"/>
-    <text class="label" x="18" y="36">2 · PICK 3 SHAPES</text>
+    <text class="label" x="18" y="36">2 · PICK 4 ELEMENTS</text>
     <text class="small" x="18" y="62">Circle · 2 peaks · curve</text>
     <circle cx="70" cy="134" r="35" fill="#f1b434"/>
     <path d="M92 214 143 122l48 92z" fill="#255f46"/>
@@ -38,7 +38,7 @@
     <circle id="sun" cx="96" cy="139" r="24" fill="#111820"/>
     <path id="left-peak" d="M76 221 132 130l52 91z" fill="#111820"/>
     <path id="right-peak" d="M123 221 174 116l48 105z" fill="#111820"/>
-    <path d="M56 235 Q122 193 204 231" fill="none" stroke="#111820" stroke-width="15" stroke-linecap="round"/>
+    <path id="river" d="M56 235 Q122 193 204 231" fill="none" stroke="#111820" stroke-width="15" stroke-linecap="round"/>
     <text class="small" x="18" y="278">Test the silhouette in black.</text>
   </g>
   <path class="arrow" d="M904 170h32m-12-12 12 12-12 12"/>
