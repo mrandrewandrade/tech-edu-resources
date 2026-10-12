@@ -15,6 +15,7 @@ project:
     - "teaching-materials/laser-cutting/**/*.qmd"
     - "teaching-materials/nice-design-process/**/*.qmd"
     - "design-fabrication/index.qmd"
+    - "design-fabrication/culture-land-based-learning/**/*.qmd"
     - "design-fabrication/design-process/**/*.qmd"
     - "design-fabrication/logo-design/index.qmd"
     - "design-fabrication/logo-design/**/*.qmd"
@@ -119,6 +120,11 @@ website:
       contents:
         - text: "Design & Fabrication Home"
           href: design-fabrication/index.qmd
+        - section: "Culture & Land-Based Learning"
+          href: design-fabrication/culture-land-based-learning/index.qmd
+          contents:
+            - text: "Grandmother Moon, Seasons & Turtle's Back"
+              href: lore/grandmother-moon-seasons-turtles-back.qmd
         - text: "N.I.C.E. Design Process"
           href: design-fabrication/design-process/index.qmd
         - text: "Logo Design"
@@ -149,6 +155,8 @@ website:
       contents:
         - text: "Course Home"
           href: tej3-4/index.qmd
+        - text: "Curriculum Roadmap"
+          href: tej3-4/curriculum/index.qmd
         - text: "Engineering Preparation Track"
           href: tej3-4/engineering-preparation-track/index.qmd
         - text: "Electronics Lesson Library"
