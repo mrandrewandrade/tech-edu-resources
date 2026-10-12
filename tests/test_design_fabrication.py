@@ -183,9 +183,15 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_tool_organizer_gallery_preserves_evidence_status(self) -> None:
         gallery = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
-        for term in ("DESIGN", "BUILD", "FEEDBACK", "REVISION", "TIJ1OR-E Knife Holder Design", "Revision 2", "March 22, 2024", "project photos pending", "35°", "French cleat", "Visible inventory", "Clear labels", "Freestanding stability", "Stacking or modularity"):
+        for term in ("DESIGN", "BUILD", "FEEDBACK", "REVISION", "TIJ1OR-E Knife Holder Design", "Finished prototype photographed", "March 7, 2024", "March 22", "3 in centres", "2 in centres", "ergonomic spacing", "French cleat", "Visible inventory", "Clear labels", "Freestanding stability", "Stacking or modularity"):
             self.assertIn(term, gallery)
-        self.assertIn("No substitute image has been invented", gallery)
+        for asset in (
+            "grade-9-knife-holder-photo.jpg",
+            "grade-9-knife-holder-drawing.png",
+            "grade-9-knife-holder-assembly-drawing.pdf",
+        ):
+            self.assertIn(asset, gallery)
+            self.assertTrue((SITE / "assets" / "tool-organizer-gallery" / asset).is_file())
 
     def test_curriculum_relevance_is_varied_and_compact(self) -> None:
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")
