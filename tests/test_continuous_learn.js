@@ -70,38 +70,82 @@ assert.match(
   /!marginSidebar \|\| !inRefinedRightRail\(\) \|\| persistentLessonToc/
 );
 
-const manifest = {
-  schema_version: 1,
-  lessons: [
+assert.match(scrollSource, /sentinel\.textContent = "Loading the next lesson/);
+assert.match(scrollSource, /createTransitionNotice\(currentLesson, followingLesson\)/);
+assert.match(scrollSource, /createEndState\(currentLesson\)/);
+assert.match(scrollSource, /createErrorState\(followingLesson, attemptLoad\)/);
+assert.match(scrollSource, /window\.history\.replaceState/);
+assert.match(scrollSource, /document\.title = record\.documentTitle/);
+assert.match(scrollSource, /setActiveSidebar\(sidebar, record\.route/);
+assert.match(scrollSource, /replaceTocContents\(activeTocElement\(\), record\.toc\)/);
+
+function versionTwoLesson(overrides) {
+  return Object.assign(
     {
       course_id: "course-one",
+      course_title: "Course One",
+      course_hub: "/learn/",
+      sidebar_id: "course-one",
+      lesson_order: 1,
+      route: "/learn/first/",
+      source: "learn/first.qmd",
+      title: "First lesson",
+      summary: "A summary.",
+      use: "A practical use.",
+      resources: [],
+      track_id: "one",
+      track_order: 1,
+      track_title: "Track One",
+      track_hub: null,
+      track_summary: "Track summary.",
+      track_use: "Track use.",
+      previous_route: null,
+      next_route: null,
+      next_starts_new_track: false,
+      sequence_index: 0
+    },
+    overrides
+  );
+}
+
+const manifest = {
+  schema_version: 2,
+  lessons: [
+    versionTwoLesson({
       sequence_index: 0,
       route: "/learn/first/",
       previous_route: null,
       next_route: "/learn/middle.html",
-      track_id: "one",
-      next_starts_new_track: false
-    },
-    {
-      course_id: "course-one",
+      title: "First lesson"
+    }),
+    versionTwoLesson({
       sequence_index: 1,
+      lesson_order: 2,
       route: "/learn/middle.html",
       previous_route: "/learn/first/",
       next_route: "/learn/second-track/",
-      track_id: "one",
-      next_starts_new_track: true
-    },
-    {
-      course_id: "course-one",
+      title: "Middle lesson"
+    }),
+    versionTwoLesson({
       sequence_index: 2,
       route: "/learn/second-track/",
-      previous_route: "/learn/middle.html",
+      source: "learn/second-track.qmd",
+      title: "Second track lesson",
+      previous_route: null,
       next_route: null,
       track_id: "two",
-      next_starts_new_track: false
-    }
+      track_order: 2,
+      track_title: "Track Two"
+    })
   ]
 };
+
+assert.deepEqual(scroll.lessonsFromManifest({ schema_version: 1, lessons: [] }), []);
+assert.deepEqual(
+  scroll.lessonsFromManifest({ schema_version: 2, lessons: [{}] }),
+  [],
+  "schema v2 records must include the complete generated structure"
+);
 
 assert.equal(scroll.normalizeRoute("/learn/first"), "/learn/first/");
 assert.equal(scroll.normalizeRoute("/learn/first/index.html"), "/learn/first/");
@@ -167,30 +211,36 @@ assert.deepEqual(
   [],
   "final entry has no forward routes"
 );
-assert.equal(scroll.startsNewTrack(middle), true);
+assert.equal(scroll.startsNewTrack(middle), false);
 assert.equal(scroll.startsNewTrack(first), false);
 
 const courseBoundaryManifest = {
-  schema_version: 1,
+  schema_version: 2,
   lessons: [
-    {
+    versionTwoLesson({
       course_id: "tas",
+      course_title: "TAS",
+      sidebar_id: "tas",
       sequence_index: 0,
       route: "/tech-edu-resources/tas2/lesson-one.html",
+      source: "tas2/lesson-one.qmd",
       previous_route: null,
       next_route: null,
       track_id: "tas-unit",
-      next_starts_new_track: false
-    },
-    {
+      track_title: "TAS unit"
+    }),
+    versionTwoLesson({
       course_id: "tej",
+      course_title: "TEJ",
+      sidebar_id: "tej",
       sequence_index: 1,
       route: "/tech-edu-resources/tej3-4/lesson-one.html",
+      source: "tej3-4/lesson-one.qmd",
       previous_route: null,
       next_route: null,
       track_id: "tej-unit",
-      next_starts_new_track: false
-    }
+      track_title: "TEJ unit"
+    })
   ]
 };
 const tasFinal = scroll.findCurrentLesson(
@@ -205,6 +255,42 @@ assert.deepEqual(
   ),
   [],
   "later routes never cross from TAS into TEJ"
+);
+
+const realManifest = JSON.parse(
+  fs.readFileSync(
+    path.join(__dirname, "../site/assets/bs-learn-sequence.json"),
+    "utf8"
+  )
+);
+const realLessons = scroll.lessonsFromManifest(realManifest);
+assert.equal(realManifest.schema_version, 2);
+assert.equal(realLessons.length, realManifest.lessons.length);
+assert.ok(realLessons.length > 40, "the real generated manifest is exercised");
+const realSituation = scroll.findCurrentLesson(
+  realManifest,
+  "/tech-edu-resources/design-fabrication/design-process/situation.html"
+);
+assert.equal(
+  scroll.nextLesson(realManifest, realSituation).route,
+  "/commons/design-fabrication/design-process/user-needs.html"
+);
+const lastDesignProcessLesson = scroll.findCurrentLesson(
+  realManifest,
+  "/commons/design-fabrication/design-process/supply-chain-life-cycle.html"
+);
+assert.equal(
+  scroll.nextLesson(realManifest, lastDesignProcessLesson),
+  null,
+  "the real manifest stops continuous loading at a module boundary"
+);
+assert.equal(
+  scroll.transitionMessage(realSituation, scroll.nextLesson(realManifest, realSituation)),
+  "You reached the end of Understand the Situation. Keep scrolling to continue to Record User Needs."
+);
+assert.equal(
+  scroll.endStateMessage(),
+  "You reached the end of this learning path. "
 );
 
 const zeroWidthToc = {

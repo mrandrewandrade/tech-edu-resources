@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import re
 import unittest
 import json
@@ -169,6 +170,7 @@ class DesignFabricationTests(unittest.TestCase):
         landing = self.read("design-fabrication/index.qmd") + self.read(
             "includes/generated/design-fabrication-toc.md"
         )
+        landing = html.unescape(landing)
         for project in (
             "N.I.C.E. Design Process",
             "Logo Design",
@@ -409,6 +411,7 @@ class DesignFabricationTests(unittest.TestCase):
         landing = self.read("design-fabrication/index.qmd") + self.read(
             "includes/generated/design-fabrication-toc.md"
         )
+        landing = html.unescape(landing)
         organizer = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
         logo = self.read("design-fabrication/logo-design/index.qmd")
         nav = self.read("_course-navigation.yml")

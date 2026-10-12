@@ -24,10 +24,10 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("Logo Design", design)
         self.assertIn("Tool Organizer Gallery", design)
         self.assertIn("Fabrication Plate Builder", design)
-        self.assertIn("*(planned)*", tej)
-        self.assertIn("## Circuits and Electronics", tej)
-        self.assertIn("[Series Circuits](circuits/series-circuits.qmd)", tej)
-        self.assertIn("## Engineering Preparation", tej)
+        self.assertIn("<em>(planned)</em>", tej)
+        self.assertIn('data-bs-track-id="circuits-electronics"', tej)
+        self.assertIn('href="circuits/series-circuits.html">Series Circuits</a>', tej)
+        self.assertIn('data-bs-track-id="engineering-preparation"', tej)
 
     def test_retired_lessons_are_compatibility_only(self) -> None:
         config = self.read("_quarto.yml")

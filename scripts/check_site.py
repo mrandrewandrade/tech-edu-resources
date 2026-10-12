@@ -40,6 +40,8 @@ def check(root: Path) -> tuple[int, list[str]]:
             return
         count += 1
         path_text = unquote(url.path)
+        if tag == 'a' and path_text.lower().endswith('.qmd'):
+            problems.append('Public .qmd link: ' + f'{source.relative_to(root)}: {href}')
         for site_base in ('/commons', '/tech-edu-resources'):
             if path_text == site_base:
                 path_text = '/'

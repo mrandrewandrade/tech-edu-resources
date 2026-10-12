@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import copy
 import json
+import posixpath
 import unittest
 
 from scripts import course_notes
@@ -76,6 +77,72 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertEqual(tracked, self.manifest)
         for path, expected in course_notes.generated_text_outputs(self.source).items():
             self.assertEqual(path.read_text(encoding="utf-8"), expected)
+
+    def test_generated_hubs_use_the_interactive_catalogue(self) -> None:
+        outputs = course_notes.generated_text_outputs(self.source)
+        design = outputs[course_notes.HUB_OUTPUT_DIR / "design-fabrication-toc.md"]
+        self.assertIn('data-bs-learn-filters', design)
+        self.assertIn('data-bs-learn-collapse-all', design)
+        self.assertIn('data-bs-learn-expand-all', design)
+        self.assertIn('data-bs-learn-search', design)
+        self.assertIn('aria-label="Show description for Understand the Situation"', design)
+        self.assertIn('data-bs-learn-result-count aria-live="polite"', design)
+        self.assertNotIn("## Project path and tools", design)
+        self.assertLess(design.index("Culture and Land-Based Learning"), design.index("N.I.C.E. Design Process"))
+        self.assertLess(design.index("N.I.C.E. Design Process"), design.index("Logo Design in Photopea"))
+        self.assertLess(design.index("Logo Design in Photopea"), design.index("Accessible Design"))
+        self.assertLess(design.index("Accessible Design"), design.index("Laser Cutting and Fabrication Tools"))
+        self.assertLess(design.index("Laser Cutting and Fabrication Tools"), design.index("CNC Machining"))
+        self.assertLess(design.index("CNC Machining"), design.index("3D Printing"))
+        self.assertLess(design.index("3D Printing"), design.index("## Highlighted tools"))
+
+    def test_every_published_lesson_is_in_its_hub_and_sidebar(self) -> None:
+        outputs = course_notes.generated_text_outputs(self.source)
+        navigation = outputs[course_notes.NAVIGATION_PATH]
+        for course in self.source["courses"]:
+            hub = outputs[course_notes.HUB_OUTPUT_DIR / f"{course['id']}-toc.md"]
+            for unit in course["units"]:
+                for lesson in unit["lessons"]:
+                    if lesson.get("status", "published") != "published":
+                        continue
+                    relative_source = course_notes._relative_public_href(
+                        lesson["source"], course["hub"]
+                    )
+                    self.assertIn(f'href="{relative_source}"', hub)
+                    self.assertIn(f'href: "{lesson["source"]}"', navigation)
+
+    def test_restricted_resources_are_labels_not_links(self) -> None:
+        outputs = course_notes.generated_text_outputs(self.source)
+        electronics = outputs[
+            course_notes.HUB_OUTPUT_DIR / "tej-circuits-electronics-toc.md"
+        ]
+        self.assertIn(
+            '<span class="ter-resource-badge is-restricted">Teacher Answers, restricted</span>',
+            electronics,
+        )
+        self.assertNotIn('href="Teacher Answers"', electronics)
+
+    def test_manifest_rejects_incomplete_schema_two_records(self) -> None:
+        broken = copy.deepcopy(self.manifest)
+        broken["lessons"][0].pop("track_summary")
+        with self.assertRaisesRegex(course_notes.ValidationError, "track_summary"):
+            course_notes.validate_manifest(broken)
+
+    def test_nice_page_uses_the_canonical_cycle_image_once(self) -> None:
+        source = (
+            course_notes.SITE_ROOT / "design-fabrication" / "design-process" / "index.qmd"
+        ).read_text(encoding="utf-8")
+        self.assertEqual(source.count("nice-process-cycle.png"), 1)
+        self.assertIn("#fig-nice-process", source)
+        self.assertNotIn("lighthouse-garden.png", source)
+        image = course_notes.SITE_ROOT / "assets" / "nice-design-process" / "nice-process-cycle.png"
+        self.assertTrue(image.is_file())
+        self.assertGreater(image.stat().st_size, 1_000_000)
+
+    def test_all_published_laser_lessons_are_rendered(self) -> None:
+        quarto = (course_notes.SITE_ROOT / "_quarto.yml").read_text(encoding="utf-8")
+        self.assertIn('"design-fabrication/03-laser-cutting/**/*.qmd"', quarto)
+        self.assertNotIn('"design-fabrication/03-laser-cutting/01-name-logo.qmd"', quarto)
 
     def test_numbered_slugs_require_an_explicit_legacy_exception(self) -> None:
         broken = copy.deepcopy(self.source)

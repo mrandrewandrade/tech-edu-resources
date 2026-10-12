@@ -24,4 +24,5 @@ if __name__ == '__main__':
         for test in sorted((ROOT / 'tests').glob(pattern)):
             run('node', str(test))
     if args.rendered:
+        run(sys.executable, 'scripts/course_notes.py', 'validate-rendered')
         run(sys.executable, 'scripts/check_site.py')

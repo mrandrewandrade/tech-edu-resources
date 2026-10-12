@@ -834,9 +834,9 @@ body:is(.bs-learn-index, .bs-learn-track-index)
 }
 
 .bs-learn-catalogue-title-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  display: inline-flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 0.35rem;
   padding-left: 0.25rem;
 }
