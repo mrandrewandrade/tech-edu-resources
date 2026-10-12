@@ -8,21 +8,21 @@ toc: false
 format:
   html:
     title-block-style: plain
-    body-classes: "bs-learn-index bs-title-eyebrow"
+    body-classes: "ter-design-fabrication bs-title-eyebrow"
 execute:
   enabled: false
 ---
 
-Use these unit summaries to see the whole computer-engineering pathway. Open the detailed curriculum roadmap for the complete sequence, or choose a published lesson from the sidebar.
+## Start here
 
-::: {.callout-note title="Work in progress"}
-Completed classroom materials are linked beside a concise implementation plan for the remaining engineering-preparation units. Earlier draft notes are preserved on the `archive/notes-before-refactor-2026-10-10` branch while they are reviewed.
-:::
+Use the [General Computer Engineering Curriculum](curriculum/index.qmd) for the complete course sequence, or open the [Engineering Preparation Track](engineering-preparation-track/index.qmd) for students considering post-secondary engineering.
 
-## Units at a glance
+## Learning path
 
-::: {.tej-download-grid}
-::: {.tej-download-card}
+The boxes below show the major ideas and skills in each unit.
+
+::: {.ter-path-grid}
+::: {.ter-path-card}
 ### 0. Orientation and design
 
 Design process, documentation, source attribution, privacy, and classroom routines.
@@ -30,7 +30,7 @@ Design process, documentation, source attribution, privacy, and classroom routin
 [Open the roadmap](curriculum/index.qmd#unit-0)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 1. Numbers and units
 
 Number systems, significant figures, engineering notation, metric prefixes, estimation, and calculator skills.
@@ -38,7 +38,7 @@ Number systems, significant figures, engineering notation, metric prefixes, esti
 [Open the roadmap](curriculum/index.qmd#unit-1)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 2. Electrical fundamentals
 
 Charge, voltage, current, resistance, sources, loads, alternating current, and direct current.
@@ -46,7 +46,7 @@ Charge, voltage, current, resistance, sources, loads, alternating current, and d
 [Open the roadmap](curriculum/index.qmd#unit-2)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 3. DC circuit analysis
 
 Ohm's law, power, series and parallel circuits, mixed networks, Kirchhoff's laws, dividers, and troubleshooting.
@@ -54,7 +54,7 @@ Ohm's law, power, series and parallel circuits, mixed networks, Kirchhoff's laws
 [Open Circuits](circuits/index.qmd)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 4. Building and measurement
 
 Breadboards, schematics, simulation, multimeter use, measurement uncertainty, and comparison of predicted and measured results.
@@ -62,7 +62,7 @@ Breadboards, schematics, simulation, multimeter use, measurement uncertainty, an
 [Open the roadmap](curriculum/index.qmd#unit-4)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 5. Components and applied circuits
 
 Sensors, batteries, capacitors, diodes, transistors, timers, motors, relays, and useful low-voltage circuits.
@@ -70,7 +70,7 @@ Sensors, batteries, capacitors, diodes, transistors, timers, motors, relays, and
 [Open the Electronics Lesson Library](electronics-library/index.qmd)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 6. Digital logic and inputs
 
 Logic levels, stable switches, pull-ups, pull-downs, debouncing, gates, truth tables, and state.
@@ -78,7 +78,7 @@ Logic levels, stable switches, pull-ups, pull-downs, debouncing, gates, truth ta
 [Open the roadmap](curriculum/index.qmd#unit-6)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 7. Fabrication and PCBs
 
 Soldering, connectors, printed circuit boards, manufacturing files, enclosures, and fabrication.
@@ -86,7 +86,7 @@ Soldering, connectors, printed circuit boards, manufacturing files, enclosures, 
 [Open the roadmap](curriculum/index.qmd#unit-7)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 8. Computer systems
 
 Computer components, power, assembly, startup, firmware, Linux installation, upgrades, repair, and reuse.
@@ -94,7 +94,7 @@ Computer components, power, assembly, startup, firmware, Linux installation, upg
 [Open the roadmap](curriculum/index.qmd#unit-8)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 9. Linux and basic networking
 
 Linux desktop use, files, permissions, command line, software, connectivity, services, backup, and recovery.
@@ -102,7 +102,7 @@ Linux desktop use, files, permissions, command line, software, connectivity, ser
 [Open Linux and Operating Systems](linux-operating-systems/index.qmd)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 10. Programming
 
 Algorithms, variables, conditions, loops, functions, files, testing, debugging, and technical documentation.
@@ -110,7 +110,7 @@ Algorithms, variables, conditions, loops, functions, files, testing, debugging, 
 [Open the roadmap](curriculum/index.qmd#unit-10)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 11. Microcontrollers
 
 Protected inputs and outputs, sensors, timing, communication, actuators, state machines, and data logging.
@@ -118,7 +118,7 @@ Protected inputs and outputs, sensors, timing, communication, actuators, state m
 [Open the roadmap](curriculum/index.qmd#unit-11)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 12. Networking and administration
 
 Addresses, protocols, diagnostics, secure remote access, users, classroom services, and defensive administration.
@@ -126,7 +126,7 @@ Addresses, protocols, diagnostics, secure remote access, users, classroom servic
 [Open the roadmap](curriculum/index.qmd#unit-12)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 13. Data science and machine learning
 
 Data preparation, visualization, regression, classification, model evaluation, uncertainty, and responsible use.
@@ -134,7 +134,7 @@ Data preparation, visualization, regression, classification, model evaluation, u
 [Open the roadmap](curriculum/index.qmd#unit-13)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 14. Language models and applied AI
 
 Tokens, prediction, prompting, grounding, evaluation, small models, and responsible artificial-intelligence use.
@@ -142,7 +142,7 @@ Tokens, prediction, prompting, grounding, evaluation, small models, and responsi
 [Open the roadmap](curriculum/index.qmd#unit-14)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 15. Culminating projects
 
 Requirements, planning, construction or simulation, testing, revision, evidence, and technical communication.
@@ -150,7 +150,7 @@ Requirements, planning, construction or simulation, testing, revision, evidence,
 [Open the roadmap](curriculum/index.qmd#unit-15)
 :::
 
-::: {.tej-download-card}
+::: {.ter-path-card}
 ### 16. Control systems and CNC
 
 Open and closed loops, hysteresis, proportional and PID control, interlocks, state machines, motion, and CNC.
@@ -159,8 +159,8 @@ Open and closed loops, hysteresis, proportional and PID control, interlocks, sta
 :::
 :::
 
-## Other pathways
+## More resources
 
-- [Complete Curriculum Roadmap](curriculum/index.qmd)
 - [Electronics Lesson Library](electronics-library/index.qmd)
-- [Engineering Preparation Track](engineering-preparation-track/index.qmd)
+- [Linux and Operating Systems](linux-operating-systems/index.qmd)
+- [Circuits Notes](circuits/index.qmd)
