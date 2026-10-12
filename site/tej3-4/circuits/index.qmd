@@ -87,60 +87,52 @@ Use these notes with the matching teaching slides and question sheet.
 4. [Kirchhoff's laws](kirchhoffs-laws.qmd): write current and voltage equations for networks that do not reduce directly.
 5. [Linear algebra for circuits](linear-algebra-circuits.qmd): solve several node or loop equations together.
 
-## Slides, questions, and class artifacts {#questions-answers-and-class-artifacts}
+## Class materials {#questions-answers-and-class-artifacts}
 
-[Open the circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ){target="_blank"}. It contains the current circuit decks, student question sheets, formula reference, staging deck, and lesson-package SOP.
+[Open the student circuits lesson folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ){target="_blank"}. The links below identify the current student files. Files labelled **LEGACY**, teacher answer keys, the staging deck, and the lesson-package SOP are not part of the student lesson sequence.
 
-Each chapter below links the notes, teaching slides, and matching student worksheet. Worked solutions for Questions 2 and 4 are on the relevant notes page. Teachers can [email Andrew for the complete answer keys](mailto:andrew@andrewandrade.ca?subject=TEJ%20circuit%20answer%20key).
+### Core references
 
-### Core circuit package
-
-- [Basic Electricity to Basic Computer Systems teaching slides](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
-- [Parallel-circuit student questions](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/edit)
 - [Electronics formulas, units, and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
-- [Two-page electronics quick reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
-- [Electronics reference handbook](https://andrewandrade.ca/assets/TEJ-Electronics-Reference-Handbook.pdf)
+- [Standard 5% resistor values](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit?tab=t.0#heading=h.g1pcd9w8vl2j)
+- [General schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit)
 
-### Parallel review and series circuits
+### Parallel review and introduction to series
 
+- [Notes: Parallel Circuits](parallel-circuits.qmd)
+- [Notes: Series Circuits](series-circuits.qmd)
 - [Teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
-- [Student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/edit)
-- [ElectroBOOM 101: circuits, series, and parallel](https://www.youtube.com/watch?v=AMXWm_bnsTE)
-- [The Organic Chemistry Tutor: series and parallel circuits](https://www.youtube.com/watch?v=wejz5s31Cts)
-- [Khan Academy: circuits, part 2](https://www.khanacademy.org/science/ap-physics-1/ap-circuits-topic/ap-circuits-resistance/v/circuits-part-2)
+- [Make a copy of the student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
 
-Worked solutions for Questions 2 and 4 are on the [Series Circuits notes](series-circuits.qmd#worked-solutions). The complete teacher key is available by email.
+### Series Circuits A
 
-Earlier standalone files remain available while classes transition to the combined package:
-
-- [Series Circuits A teaching slides](https://docs.google.com/presentation/d/1CQf3eYAcKw6tf2J7BCa38cskxnGP0T3fjBaxnLKbx-o/edit)
-- [Series Circuits A student questions](https://docs.google.com/document/d/1KMKU3e4OkKn40jMy5KeyGHXKcn2IftQcRiNggfYHivc/edit)
-
-The earlier Series Circuits A teacher answers remain private.
+- [Teaching slides](https://docs.google.com/presentation/d/1CQf3eYAcKw6tf2J7BCa38cskxnGP0T3fjBaxnLKbx-o/edit)
+- [Make a copy of the current student handout](https://docs.google.com/document/d/1_Fiz7KlHHEtBQxfQKmXDNkuWB2RxrWcGWmWvCXh2Iqs/copy)
 
 ### Series-Parallel Circuits A
 
-- [Series-Parallel Circuits A notes](series-parallel-circuits.qmd)
-- [Series-Parallel Circuits A teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
-- [Series-Parallel Circuits A student questions](https://docs.google.com/document/d/1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA/edit)
-
-Worked solutions for Questions 2 and 4 are on the [Series-Parallel Circuits notes](series-parallel-circuits.qmd#worked-solutions). The complete teacher key is available by email.
+- [Notes](series-parallel-circuits.qmd)
+- [Reduction and analysis slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
+- [Make a copy of the current student handout](https://docs.google.com/document/d/1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4/copy)
 
 ### Kirchhoff's laws
 
-- [Kirchhoff's Laws notes](kirchhoffs-laws.qmd)
+- [Notes](kirchhoffs-laws.qmd)
 - [Teaching slides](https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit)
-- [Student problem set](https://docs.google.com/document/d/1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE/edit)
-
-Worked solutions for Questions 2 and 4 are on the [Kirchhoff's Laws notes](kirchhoffs-laws.qmd#worked-solutions). The complete teacher key is available by email.
+- [Make a copy of the current student problem set](https://docs.google.com/document/d/1qOS16EaUEUCnIGm16eN_7o76OlFKHrzABY3nfJ-v4i8/copy)
 
 ### Simultaneous equations and matrices
 
-- [Simultaneous Equations and Matrices notes](linear-algebra-circuits.qmd)
+- [Notes](linear-algebra-circuits.qmd)
 - [Teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
-- [Student problem set](https://docs.google.com/document/d/1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ/edit)
+- [Make a copy of the current student problem set](https://docs.google.com/document/d/1DmXKhtsC0AEfR24zmJSCQgU_JLvrGYfIFtn9nOvnmbI/copy)
 
-Worked solutions for Questions 2 and 4 are on the [Linear Algebra for Circuits notes](linear-algebra-circuits.qmd#worked-solutions). The complete teacher key is available by email.
+### Earlier parallel-circuit practice
+
+- [Make a copy of the parallel-circuit calculations handout](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/copy)
+- [Make a copy of the circuit-calculations photo submission](https://docs.google.com/document/d/12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g/copy)
+
+Worked solutions for selected questions are included on the relevant notes pages. Teachers can [email Andrew for complete answer keys](mailto:andrew@andrewandrade.ca?subject=TEJ%20circuit%20answer%20key); answer-key files are not linked publicly.
 
 ## Textbook support
 

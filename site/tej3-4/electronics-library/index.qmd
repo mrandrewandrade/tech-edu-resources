@@ -10,6 +10,15 @@ execute: {enabled: false}
 
 Each package coordinates concise notes, a teaching deck, five student questions, formula and calculator references, and an experiment or explicit no-lab decision. Restricted answer keys are identified without exposing their files. Use the [circuit foundations reference](../circuits/index.qmd) for significant figures, notation, core equations, and the GUESS method.
 
+## Shared student resources
+
+- [Electronics Formulas, Units, and Calculator Reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- [Standard 5% Resistor Values](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit?tab=t.0#heading=h.g1pcd9w8vl2j)
+- [General Schematic and GUESS Handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit)
+- [Student circuits lesson folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
+
+The catalogue below links only the current student lessons. Files marked **LEGACY**, teacher answer keys, the staging deck, and the development style guide are not part of the student sequence.
+
 {{< include ../../includes/generated/tej-circuits-electronics-toc.md >}}
 
 Teachers can use the [electronics lesson-package standard](https://github.com/mrandrewandrade/assets/blob/master/electronics/MODULE-DEVELOPMENT-SOP.md) when building or reviewing a package.

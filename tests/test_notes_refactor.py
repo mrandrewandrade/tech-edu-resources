@@ -42,14 +42,42 @@ class NotesRefactorTests(unittest.TestCase):
             "GUESS method",
             "Series circuits",
             "11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA",
-            "1KMKU3e4OkKn40jMy5KeyGHXKcn2IftQcRiNggfYHivc",
+            "12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g",
             "1CQf3eYAcKw6tf2J7BCa38cskxnGP0T3fjBaxnLKbx-o",
+            "1_Fiz7KlHHEtBQxfQKmXDNkuWB2RxrWcGWmWvCXh2Iqs",
+            "1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4",
+            "1qOS16EaUEUCnIGm16eN_7o76OlFKHrzABY3nfJ-v4i8",
+            "1DmXKhtsC0AEfR24zmJSCQgU_JLvrGYfIFtn9nOvnmbI",
             "1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c",
+            "1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo",
         ):
             self.assertIn(text, circuits)
-        self.assertNotIn("1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw", circuits)
-        self.assertNotIn("1_pH0LLfqyt0QOZPGVGsXNW0tGNeG2ksXh0ysAUQLF94", circuits)
-        self.assertIn("teacher answers remain private", circuits.lower())
+        self.assertIn("answer-key files are not linked publicly", circuits)
+
+    def test_student_circuit_pages_exclude_legacy_and_internal_drive_files(self) -> None:
+        circuit_sources = [
+            SITE / "data" / "course-notes.json",
+            *(SITE / "tej3-4" / "circuits").glob("*.qmd"),
+            *(SITE / "tej3-4" / "electronics-library").rglob("*.qmd"),
+        ]
+        published = "\n".join(path.read_text(encoding="utf-8") for path in circuit_sources)
+        for private_or_legacy_id in (
+            "1KMKU3e4OkKn40jMy5KeyGHXKcn2IftQcRiNggfYHivc",
+            "1dGTCgCEVFoxy-M1k4z1qiO31_7Wke69xmd51EnQCGUA",
+            "1pKpmcnNJlRVb74YJNFDIcpXS6LeGvjkO1e3KAgAD8JE",
+            "1BV2n5NBiJdxmmApagaIntdaDYWowiO4aZiF_VQ3_FHQ",
+            "1BxFm8SGSaiEf2NTi_Um7zXlwIjojd0l_hTR0ObwsvGo",
+            "1e28pwYXns0sP_EEKAn5sgBCidKrcajucV0sRy3nJxe8",
+            "1W3qPw_MyG4iw_SO3Trvovaj_qEZQXwARG_rgWk7OTeQ",
+            "1sIm21ehqLgxend99TToo9h7sWII-UbTT8m0at0NM6z8",
+            "1Ux3gAje5iED6vO_gBcF7SbaBJ5TJkV5RqJmkc6XFtDw",
+            "1blpn_hyzYhFTDt4BcNBgL9C7bqE17oJZ",
+            "1JLy3619EgPdDzOVuuR9s3xc9SfCIk911I0xk1CRZicM",
+            "1UXOjPUkv4sqgA96DttE2onmgWlp_k5CRAhmTiq2dkAU",
+            "1J3Wf2mPp0UHAIjWphWWiRx7wtk9TbDPhLshayqw_pVE",
+            "1unYhScz8OdePXy0d2gLM8oRjatb6r2RbNjfSUGRfyVY",
+        ):
+            self.assertNotIn(private_or_legacy_id, published)
 
     def test_logo_page_is_make_first_and_has_all_requested_videos(self) -> None:
         logo = self.read("design-fabrication/logo-design/index.qmd")

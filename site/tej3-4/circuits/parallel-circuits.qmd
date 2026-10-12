@@ -16,9 +16,21 @@ You will identify parallel branches and calculate equivalent resistance, source 
 
 ## Class materials
 
+**Parallel review**
+
 - [Teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
-- [Make a copy of the five-question problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
-- [Formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- [Make a copy of the review problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
+
+**Earlier parallel-circuit practice**
+
+- [Make a copy of the parallel-circuit calculations handout](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/copy)
+- [Make a copy of the circuit-calculations photo submission](https://docs.google.com/document/d/12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g/copy)
+
+**Core references**
+
+- [Electronics formulas, units, and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
+- [Standard 5% resistor values](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit?tab=t.0#heading=h.g1pcd9w8vl2j)
+- [General schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit)
 - **Teacher answers:** restricted
 
 ## Common voltage
@@ -74,13 +86,6 @@ $$ {#eq-parallel-current-check}
 
 Equation @eq-parallel-current-check checks the branch currents. The equivalent resistance from Equation @eq-parallel-resistance must be smaller than the smallest branch resistance.
 
-## Notes, slides, and question sheet
-
-- [Circuit teaching-materials folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ)
-- [Parallel Review and Series Circuits teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
-- [Parallel Review and Series Circuits student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
-- [Electronics formula and calculator reference](https://docs.google.com/document/d/1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c/edit)
-
-Question 1 is the parallel review. Worked solutions for Questions 2 and 4 are on the [Series Circuits notes](series-circuits.qmd#worked-solutions). Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20parallel%20and%20series%20answer%20key).
+Question 1 in the review problem set is the parallel review. Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20parallel%20and%20series%20answer%20key).
 
 These notes follow *Grob's Basic Electronics*, Chapter 5. [[1, Ch. 5]](../../references.qmd#ref-grob2016)
