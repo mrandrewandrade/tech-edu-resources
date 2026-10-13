@@ -814,9 +814,19 @@ Red outlines are cut paths. Blue outlines are mating slots to copy into a separa
 
   ].forEach(function (file) {
 
+    const versions = {
+
+      "bs-learn-scroll.js": "20261013-1",
+
+      "tej-equations-v1.js": "20261013-1"
+
+    };
+
     const script = document.createElement("script");
 
-    script.src = base + "/assets/" + file;
+    script.src = base + "/assets/" + file +
+
+      (versions[file] ? "?v=" + versions[file] : "");
 
     script.async = false;
 

@@ -760,9 +760,19 @@ See the complete assemblies and true-size cutting sheets side by side. Each desi
 
   ].forEach(function (file) {
 
+    const versions = {
+
+      "bs-learn-scroll.js": "20261013-1",
+
+      "tej-equations-v1.js": "20261013-1"
+
+    };
+
     const script = document.createElement("script");
 
-    script.src = base + "/assets/" + file;
+    script.src = base + "/assets/" + file +
+
+      (versions[file] ? "?v=" + versions[file] : "");
 
     script.async = false;
 
