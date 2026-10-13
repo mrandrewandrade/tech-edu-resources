@@ -221,6 +221,9 @@ class DesignFabricationTests(unittest.TestCase):
         headphones = self.read("teaching-materials/laser-cutting/headphone-stand.qmd")
         for page in ("turkey.qmd", "headphone-stand.qmd"):
             self.assertIn(page, gallery)
+        self.assertIn("bs-laser-feature-card--turkey", gallery)
+        laser_css = self.read("assets/laser-cutting.css")
+        self.assertIn("object-position: 50% 30%", laser_css)
         for asset in (
             "turkey.svg",
             "turkey-front.jpg",

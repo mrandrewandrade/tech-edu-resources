@@ -104,8 +104,12 @@ body.bs-laser-collection #title-block-header { margin-bottom: 1.5rem; }
 .bs-laser-test-batch { margin-top: 1rem; border-left: 5px solid var(--bs-copper-dark); }
 
 .bs-laser-project-grid { margin-top: 1.2rem; }
-.bs-laser-project-grid .bs-laser-feature-card:first-child > a { background: #201f1d; }
-.bs-laser-project-grid .bs-laser-feature-card:first-child > a img { object-fit: contain; }
+.bs-laser-project-grid .bs-laser-feature-card--turkey > a { background: #201f1d; }
+.bs-laser-project-grid .bs-laser-feature-card--turkey > a img {
+  min-height: 0;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
 
 .bs-laser-project-shell { max-width: 1120px; }
 
