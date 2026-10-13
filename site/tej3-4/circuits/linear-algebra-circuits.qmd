@@ -19,10 +19,11 @@ You will turn node or loop equations into a two- or three-variable system and so
 - [Teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
 - [Make a copy of the current student problem set](https://docs.google.com/document/d/1DmXKhtsC0AEfR24zmJSCQgU_JLvrGYfIFtn9nOvnmbI/copy)
 - [TEJ Electronics Quick Reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
-- [General schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/edit)
 - **Teacher answers:** restricted
 
 ## A system of equations
+
+Do not force the GUESS method onto a simultaneous system. Use this sequence: **define the variables, write the circuit equations, put them in standard or matrix form, solve, and verify by substitution**.
 
 Each independent Kirchhoff loop gives one equation. Write every equation in the same variable order:
 
