@@ -73,6 +73,25 @@ Filters are saved in the page URL as you select them, so you can copy the addres
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
     data-courses="TAS|TEJ"
+    data-tags="laser cutting|gallery|SVG|vector design|digital fabrication|tool organizers|French cleat|stands|joints"
+    data-search="laser cut gallery visual ideas SVG tool organizers French cleat stands joints calibration themed starters TAS TEJ">
+    <a class="bs-slide-thumb" href="laser-cutting/gallery.qmd" aria-label="Browse the Laser-Cut Gallery">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">General</span><strong>LASER</strong><span>Browse by picture</span></span>
+      <img src="../assets/laser-library/previews/tool-holders/tc-holder-screwdriver-rack.svg" alt="Laser-cut screwdriver rack parts shown as an SVG preview" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="laser-cutting/gallery.qmd">Laser-Cut Gallery</a></h2>
+      <p class="bs-slide-card-description">Browse reusable laser-cut ideas visually: organizers, French-cleat parts, stands, joints, calibration tools and themed shapes.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="laser cutting">Laser cutting</button><button type="button" data-slide-card-tag="gallery">Gallery</button><button type="button" data-slide-card-tag="tool organizers">Tool organizers</button></div>
+      <a class="bs-slide-open" href="laser-cutting/gallery.qmd">Open the visual gallery</a>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
+    data-courses="TAS|TEJ"
     data-tags="laser fabrication|SVG|vector design|digital fabrication|calibration|French cleat|shop organization|parametric design"
     data-search="laser fabrication 232 generated SVG vector design calibration kerf fit gauge French cleat tool holders jigs projects themes Inkscape Veccy plywood measured thickness TAS TEJ">
     <a class="bs-slide-thumb" href="laser-cutting/index.qmd" aria-label="Browse the Laser Fabrication Library">

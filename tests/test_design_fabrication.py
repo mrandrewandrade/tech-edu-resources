@@ -190,15 +190,30 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_tool_organizer_gallery_preserves_evidence_status(self) -> None:
         gallery = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
-        for term in ("DESIGN", "BUILD", "FEEDBACK", "REVISION", "TIJ1OR-E Knife Holder Design", "Finished prototype photographed", "March 7, 2024", "March 22", "3 in centres", "2 in centres", "ergonomic spacing", "French cleat", "Visible inventory", "Clear labels", "Freestanding stability", "Stacking or modularity"):
+        build = self.read("design-fabrication/tools/tool-organizer-gallery/grade-9-knife-holder.qmd")
+        for term in ("DESIGN", "BUILD", "FEEDBACK", "REVISION", "French cleat", "Visible inventory", "Clear labels", "Freestanding stability", "Stacking or modularity"):
             self.assertIn(term, gallery)
+        for term in ("TIJ1OR-E Knife Holder Design", "Finished prototype photographed", "March 7, 2024", "March 22", "3 in centres", "2 in centres", "Ergonomic spacing", "French-cleat", "Portable as one object", "Stands on its own"):
+            self.assertIn(term, build)
         for asset in (
             "grade-9-knife-holder-photo.jpg",
             "grade-9-knife-holder-drawing.png",
             "grade-9-knife-holder-assembly-drawing.pdf",
         ):
-            self.assertIn(asset, gallery)
+            self.assertIn(asset, gallery + build)
             self.assertTrue((SITE / "assets" / "tool-organizer-gallery" / asset).is_file())
+
+    def test_galleries_have_dedicated_pages(self) -> None:
+        organizer_index = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
+        organizer_build = self.read("design-fabrication/tools/tool-organizer-gallery/grade-9-knife-holder.qmd")
+        general = self.read("teaching-materials/index.qmd")
+        laser_gallery = self.read("teaching-materials/laser-cutting/gallery.qmd")
+        self.assertIn("grade-9-knife-holder.qmd", organizer_index)
+        self.assertIn("ter-annotated-build", organizer_build)
+        self.assertNotIn("{.columns}", organizer_build)
+        self.assertIn("laser-cutting/gallery.qmd", general)
+        self.assertIn("Laser-Cut Gallery", laser_gallery)
+        self.assertIn("data-laser-grid", laser_gallery)
 
     def test_curriculum_relevance_is_varied_and_compact(self) -> None:
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")

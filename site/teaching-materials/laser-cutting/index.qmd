@@ -24,6 +24,7 @@ execute:
       <p class="bs-laser-kicker">Technology Commons · Tool organizer gallery</p>
       <p class="bs-laser-lead">Browse organizer ideas and reusable parts. The Plate Builder and Leg &amp; Support Builder are the two current interactive tools. The SVG catalogue provides starting points, not finished plans.</p>
       <div class="bs-laser-actions">
+        <a class="bs-laser-button bs-laser-button-primary" href="gallery.qmd">Open the laser-cut gallery</a>
         <a class="bs-laser-button bs-laser-button-primary" href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd">Open the organizer guide</a>
         <a class="bs-laser-button" href="../../design-fabrication/tools/plate-builder/index.qmd">Plate Builder</a>
         <a class="bs-laser-button" href="../../design-fabrication/tools/leg-builder/index.qmd">Leg &amp; Support Builder</a>
@@ -34,8 +35,8 @@ execute:
 
   <section class="bs-laser-feature-grid" aria-label="Featured tool-organizer ideas">
     <article class="bs-laser-feature-card">
-      <a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd#grade-9-knife-holder-example"><img src="../../assets/tool-organizer-gallery/grade-9-knife-holder-photo.jpg" alt="Freestanding wooden holder with five utility knives spaced so every handle can be seen and gripped."></a>
-      <div><p class="bs-laser-kicker">Finished example</p><h2>Ergonomic knife holder</h2><p>See the photo, orthographic drawing, spacing decisions, and documented revisions.</p><a href="../../design-fabrication/tools/tool-organizer-gallery/index.qmd#grade-9-knife-holder-example">Study the example →</a></div>
+      <a href="../../design-fabrication/tools/tool-organizer-gallery/grade-9-knife-holder.qmd"><img src="../../assets/tool-organizer-gallery/grade-9-knife-holder-photo.jpg" alt="Freestanding wooden holder with five utility knives spaced so every handle can be seen and gripped."></a>
+      <div><p class="bs-laser-kicker">Finished example</p><h2>Portable utility-knife organizer</h2><p>See the full annotated photo, orthographic drawing, spacing decisions, and documented revisions.</p><a href="../../design-fabrication/tools/tool-organizer-gallery/grade-9-knife-holder.qmd">Study the example →</a></div>
     </article>
     <article class="bs-laser-feature-card">
       <a href="#library"><img src="../../assets/laser-library/previews/tool-holders/tc-holder-screwdriver-rack.svg" alt="Laser-cut screwdriver rack kit shown as flat SVG parts."></a>
