@@ -44,9 +44,11 @@ Submit these three versions of the same design:
 
 Use clear filenames:
 
-- `lastname-name-tag-master.psd`
-- `lastname-name-tag.png`
-- `lastname-name-tag.svg`
+- `studentnumber-lastname-name-tag-master.psd`
+- `studentnumber-lastname-name-tag.png`
+- `studentnumber-lastname-name-tag.svg`
+
+Every filename must begin with your student number, followed by your last name. Replace `studentnumber` and `lastname` with your own information. Example: `123456789-Smith-name-tag-master.psd`.
 
 Your teacher will tell you which file the machine workflow needs. A PNG can be used for raster engraving. An SVG can carry paths for scoring, cutting, plotting, or another fabrication process.
 
@@ -199,6 +201,8 @@ Photopea may leave a placed SVG smart object out of an SVG export. If the logo d
 - [ANDRADE tutorial PNG](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.png)
 - [ANDRADE tutorial SVG](../../assets/name-tag-photopea/downloads/tutorial-andrade/Andrade-nameplate-complete.svg)
 
+{{< include ../logo-design/_rename-downloaded-file.qmd >}}
+
 ## Final checklist
 
 - [ ] The design uses my own name and approved logo.
@@ -212,6 +216,7 @@ Photopea may leave a placed SVG smart object out of an SVG export. If the logo d
 - [ ] My name can be read from about 2 metres away.
 - [ ] I checked the spelling.
 - [ ] I reopened and checked the PSD, PNG, and SVG.
+- [ ] Every filename begins with my student number.
 - [ ] My teacher approved the file before fabrication.
 
 ## Short reflection

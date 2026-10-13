@@ -162,7 +162,7 @@ Colour comes last because the black version makes shape problems easier to find.
 
 ## 8. Save the editable PSD
 
-Choose **File > Save More > Save PSD/PSB**. Keep **PSD** selected, then choose **Save**.
+Choose **File > Save More > Save PSD/PSB**. Keep **PSD** selected. Name the file `studentnumber-lastname-layered-logo.psd`, then choose **Save**.
 
 The Photoshop Document (PSD) keeps the reference and all four editable shape layers.
 
@@ -172,7 +172,7 @@ The Photoshop Document (PSD) keeps the reference and all four editable shape lay
 
 1. Keep `REFERENCE` hidden.
 2. Choose **File > Export as > SVG**.
-3. Give the file a clear name.
+3. Name the file `studentnumber-lastname-layered-logo.svg`.
 4. Leave **add raster graphics** off.
 5. Leave **add hidden layers** off.
 6. Choose **Save**.
@@ -198,8 +198,12 @@ Before you submit, check that:
 
 Submit:
 
-- the layered `.psd` working file; and
-- the finished `.svg` file.
+- `studentnumber-lastname-layered-logo.psd`
+- `studentnumber-lastname-layered-logo.svg`
+
+Every filename must begin with your student number, followed by your last name. Replace `studentnumber` and `lastname` with your own information. Example: `123456789-Smith-layered-logo.psd`.
+
+{{< include _rename-downloaded-file.qmd >}}
 
 ## Common issues
 
