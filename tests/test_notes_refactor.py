@@ -48,11 +48,17 @@ class NotesRefactorTests(unittest.TestCase):
             "1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4",
             "1qOS16EaUEUCnIGm16eN_7o76OlFKHrzABY3nfJ-v4i8",
             "1DmXKhtsC0AEfR24zmJSCQgU_JLvrGYfIFtn9nOvnmbI",
-            "1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c",
+            "TEJ-Electronics-Quick-Reference.pdf",
             "1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo",
         ):
             self.assertIn(text, circuits)
         self.assertIn("answer-key files are not linked publicly", circuits)
+        self.assertNotIn("1DyGsEwpLrrwSRnyMXN5kze2qRYFoAY2t-P09wnfUS6c", circuits)
+
+    def test_screen_reader_callout_labels_are_visually_hidden(self) -> None:
+        shared_css = self.read("assets/bs-shared.css")
+        self.assertIn(".screen-reader-only", shared_css)
+        self.assertIn("clip: rect(0, 0, 0, 0)", shared_css)
 
     def test_student_circuit_pages_exclude_legacy_and_internal_drive_files(self) -> None:
         circuit_sources = [
