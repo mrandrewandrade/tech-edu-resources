@@ -21,11 +21,13 @@
           "order": 2,
           "title": "2. Digital Design & Communication",
           "lessons": [
-            {"order": 1, "title": "Two-Class Photopea Practice", "source": "design-fabrication/logo-design/01-photopea-practice-assignment.qmd"},
-            {"order": 2, "title": "Photopea: Combine Logo + Name", "source": "design-fabrication/logo-design/03-combine-logo-nameplate.qmd"},
-            {"order": 3, "title": "Your Turn: Your Name + Logo", "source": "design-fabrication/03-laser-cutting/01-name-logo.qmd"},
-            {"order": 4, "title": "Raster, Vector & SVG", "source": "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"},
-            {"order": 5, "title": "2D Animation", "source": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"}
+            {"order": 1, "title": "Photopea 1: Build the Nameplate Text", "source": "design-fabrication/logo-design/01-nameplate-text-photopea.qmd"},
+            {"order": 2, "title": "Photopea 2A: Warm-Up: Trace the AA Logo", "source": "design-fabrication/logo-design/rough-sketch-to-svg-photopea.qmd"},
+            {"order": 3, "title": "Photopea 2B: Trace a Multi-Layer Logo", "source": "design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.qmd"},
+            {"order": 4, "title": "Photopea 3: Combine Logo + Name", "source": "design-fabrication/logo-design/03-combine-logo-nameplate.qmd"},
+            {"order": 5, "title": "Your Turn: Your Name + Logo", "source": "design-fabrication/03-laser-cutting/01-name-logo.qmd"},
+            {"order": 6, "title": "Raster, Vector & SVG", "source": "design-fabrication/02-digital-design/01-raster-vector-svg.qmd"},
+            {"order": 7, "title": "2D Animation", "source": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"}
           ]
         },
         {

@@ -417,38 +417,6 @@ class DesignFabricationTests(unittest.TestCase):
         ):
             self.assertIn(phrase, organizer)
 
-    def test_photopea_two_class_assignment_is_complete(self) -> None:
-        assignment = self.read("design-fabrication/logo-design/01-photopea-practice-assignment.qmd")
-
-        for heading in (
-            "## Class 1",
-            "### Task 1: Build the Andrade nameplate",
-            "### Task 2: Trace the simple AA mark",
-            "## Class 2",
-            "### Task 3: Trace the multi-layer landscape logo",
-            "## Check your work",
-            "## Submit",
-        ):
-            self.assertIn(heading, assignment)
-
-        for guide in (
-            "01-nameplate-text-photopea.qmd",
-            "rough-sketch-to-svg-photopea.qmd",
-            "02b-advanced-multilayer-tracing-photopea.qmd",
-        ):
-            self.assertIn(guide, assignment)
-
-        for filename in (
-            "Andrade-nameplate-text.psd",
-            "Andrade-nameplate-text.png",
-            "Andrade-nameplate-text.svg",
-            "Andrade-AA-trace.psd",
-            "Andrade-AA-trace.svg",
-            "Andrade-layered-logo.psd",
-            "Andrade-layered-logo.svg",
-        ):
-            self.assertIn(filename, assignment)
-
     def test_reverse_engineering_assignment_is_originality_and_evidence_first(self) -> None:
         assignment = self.read("design-fabrication/03-laser-cutting/resources/reverse-engineer-improve.qmd")
         for quality in ("Faster", "Cheaper", "Better looking", "More ergonomic", "More positive", "More serviceable"):
