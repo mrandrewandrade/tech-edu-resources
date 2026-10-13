@@ -31,6 +31,24 @@ execute:
     </div>
   </section>
 
+  <section id="documented-projects" class="bs-laser-library-section" aria-labelledby="documented-projects-title">
+    <div class="bs-laser-section-heading">
+      <p class="bs-laser-kicker">Documented projects</p>
+      <h2 id="documented-projects-title">Photos and source files together</h2>
+      <p>These pages keep the finished object, supplied SVG, source attribution and material-fit cautions together. Each project has its own page.</p>
+    </div>
+    <div class="bs-laser-feature-grid bs-laser-project-grid">
+      <article class="bs-laser-feature-card">
+        <a href="turkey.qmd"><img src="../../assets/laser-gallery/turkey-front.jpg" alt="Finished laser-cut wooden turkey standing on a dark tabletop."></a>
+        <div><p class="bs-laser-kicker">Built and photographed</p><h2>Standing turkey</h2><p>See two finished-build photos, download the supplied SVG and review the slot-fit caution from the original source.</p><a href="turkey.qmd">Open the turkey project →</a></div>
+      </article>
+      <article class="bs-laser-feature-card">
+        <a href="headphone-stand.qmd"><img src="../../assets/laser-gallery/headphone-stand-3mm-baltic-birch.svg" alt="SVG cut layout for a slotted Baltic-birch headphone stand."></a>
+        <div><p class="bs-laser-kicker">Source file available</p><h2>3 mm headphone stand</h2><p>Inspect the supplied glue-free slot-fit layout and open the original design source. A finished-build photo has not yet been supplied.</p><a href="headphone-stand.qmd">Open the headphone stand project →</a></div>
+      </article>
+    </div>
+  </section>
+
   <nav class="bs-laser-category-links" aria-label="Gallery shortcuts">
     <button type="button" data-laser-preset="type" data-laser-value="tool-holders">Tool organizers</button>
     <button type="button" data-laser-preset="type" data-laser-value="french-cleat">French-cleat parts</button>

@@ -215,6 +215,25 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Laser-Cut Gallery", laser_gallery)
         self.assertIn("data-laser-grid", laser_gallery)
 
+    def test_laser_gallery_projects_include_files_photos_and_sources(self) -> None:
+        gallery = self.read("teaching-materials/laser-cutting/gallery.qmd")
+        turkey = self.read("teaching-materials/laser-cutting/turkey.qmd")
+        headphones = self.read("teaching-materials/laser-cutting/headphone-stand.qmd")
+        for page in ("turkey.qmd", "headphone-stand.qmd"):
+            self.assertIn(page, gallery)
+        for asset in (
+            "turkey.svg",
+            "turkey-front.jpg",
+            "turkey-side.jpg",
+            "headphone-stand-3mm-baltic-birch.svg",
+        ):
+            self.assertTrue((SITE / "assets" / "laser-gallery" / asset).is_file())
+        self.assertIn("community.glowforge.com/t/thanksgiving-turkey-box/119792", turkey)
+        self.assertIn("ragingcomputer.com/2021/06/28/glowforge-cut-headphone-stand-free-download", headphones)
+        self.assertIn("not relicensed under the site’s CC BY-SA licence", turkey)
+        self.assertIn("not relicensed under the site’s CC BY-SA licence", headphones)
+        self.assertNotIn("{.columns}", turkey + headphones)
+
     def test_curriculum_relevance_is_varied_and_compact(self) -> None:
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")
         self.assertLess(len(main.split()), 300)

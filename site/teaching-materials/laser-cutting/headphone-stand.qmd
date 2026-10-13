@@ -1,0 +1,64 @@
+---
+title: "3 mm Baltic-Birch Headphone Stand"
+subtitle: "Supplied SVG, material assumptions and original design source"
+description: "A free slotted headphone-stand SVG designed for 3 mm Baltic birch, with source attribution and fit-test guidance."
+format:
+  html:
+    page-layout: full
+    toc: true
+    title-block-style: plain
+    body-classes: "bs-editorial-page bs-title-eyebrow bs-laser-collection bs-laser-project-page"
+    css:
+      - ../../assets/teacher-slides.css
+      - ../../assets/laser-cutting.css
+execute:
+  enabled: false
+---
+
+```{=html}
+<div class="bs-laser-shell bs-laser-project-shell">
+  <p class="bs-laser-back"><a href="gallery.qmd">← Laser-Cut Gallery</a> · <a href="../index.qmd">General materials</a></p>
+
+  <section class="bs-laser-hero">
+    <div>
+      <p class="bs-laser-kicker">Source file supplied · Build photo needed</p>
+      <p class="bs-laser-lead">A compact slotted stand designed in Fusion 360 for 3.0 mm Baltic birch. The original designer describes a tight, glue-free fit.</p>
+      <div class="bs-laser-actions">
+        <a class="bs-laser-button bs-laser-button-primary" href="../../assets/laser-gallery/headphone-stand-3mm-baltic-birch.svg" download>Download the supplied SVG</a>
+        <a class="bs-laser-button" href="https://ragingcomputer.com/2021/06/28/glowforge-cut-headphone-stand-free-download/">Open the original source</a>
+      </div>
+    </div>
+  </section>
+
+  <figure class="bs-laser-project-figure bs-laser-project-figure--drawing">
+    <img src="../../assets/laser-gallery/headphone-stand-3mm-baltic-birch.svg" alt="Full SVG cut layout for a slotted headphone stand, arranged on a sheet approximately 280 by 252 millimetres.">
+    <figcaption>The supplied cut layout. A finished build photograph has not yet been added to this gallery.</figcaption>
+  </figure>
+
+  <section class="bs-laser-project-notes" aria-labelledby="headphone-design-title">
+    <p class="bs-laser-kicker">Design intent</p>
+    <h2 id="headphone-design-title">A flat sheet becomes a stable stand</h2>
+    <ul>
+      <li>The SVG uses interlocking profiles rather than glue or separate hardware.</li>
+      <li>The curved top supports the headphone band while the base spreads the load on the desk.</li>
+      <li>The source design was made for a Logitech G533 headset, so other headsets should be checked for band width, ear-cup clearance and centre of mass.</li>
+      <li>The SVG canvas is approximately 280.26 × 252.01 mm.</li>
+    </ul>
+  </section>
+
+  <section class="bs-laser-project-warning" aria-labelledby="headphone-fit-title">
+    <p class="bs-laser-kicker">Fit before a full cut</p>
+    <h2 id="headphone-fit-title">“3 mm” is a design assumption, not a measured sheet</h2>
+    <p>The original source describes tight slots for 3.0 mm Baltic birch and no glue. Measure the actual plywood with callipers and cut a slot coupon before the full layout. Kerf, finish and sheet variation can turn a tight press fit into a loose joint or a split part.</p>
+    <p>The SVG contains multiple operation colours exported from Fusion 360. Confirm the intended cut order and map every colour in the local laser software before fabrication.</p>
+  </section>
+
+  <section class="bs-laser-project-source" aria-labelledby="headphone-source-title">
+    <p class="bs-laser-kicker">Source and rights</p>
+    <h2 id="headphone-source-title">Glowforge Cut Headphone Stand</h2>
+    <p>Original design published by <strong>Raging Computer</strong> on June 28, 2021 as a free SVG download. The source states that it was designed in Fusion 360, cut on a Glowforge Basic and made from 3 mm Baltic birch.</p>
+    <p><a href="https://ragingcomputer.com/2021/06/28/glowforge-cut-headphone-stand-free-download/">View the original article and download context</a>.</p>
+    <p class="bs-laser-rights-note">Third-party design: the original creator retains their rights. “Free download” does not by itself define a standard open licence, so this file is not relicensed under the site’s CC BY-SA licence. Check the original article’s terms before redistributing or selling the design.</p>
+  </section>
+</div>
+```
