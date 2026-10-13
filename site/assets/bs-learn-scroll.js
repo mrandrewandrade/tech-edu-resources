@@ -1169,6 +1169,19 @@
                   window.BSLearn.mountLesson(fragment);
                 }
                 sentinel.replaceWith(fragment);
+                if (
+                  window.TEREquations &&
+                  typeof window.TEREquations.mount === "function"
+                ) {
+                  Promise.resolve(window.TEREquations.mount(main)).catch(
+                    function (error) {
+                      window.console.warn(
+                        "Appended lesson equations failed to render",
+                        error
+                      );
+                    }
+                  );
+                }
                 lessonRecords.push(
                   createLessonRecord(
                     Object.assign({}, followingLesson, {
