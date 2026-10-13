@@ -104,7 +104,6 @@ class NotesRefactorTests(unittest.TestCase):
             "Investigate and Inquire",
             "Create and Communicate",
             "Evaluate and Repeat",
-            "Supply Chain and Life Cycle",
             "1bQBt0WHBp6ca0RWtQHBHKbfqhzXMc4q4uUOJ8hHxvIQ",
             "19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo",
             "1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho",

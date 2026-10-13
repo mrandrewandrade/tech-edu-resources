@@ -20,7 +20,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 25)
+        self.assertEqual(len(design_routes), 24)
         self.assertEqual(
             design_routes[0],
             "/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html",
@@ -30,7 +30,7 @@ class CourseNotesManifestTests(unittest.TestCase):
             "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
         )
         self.assertEqual(
-            design_routes[10:15],
+            design_routes[9:14],
             [
                 "/commons/design-fabrication/logo-design/01-nameplate-text-photopea.html",
                 "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",

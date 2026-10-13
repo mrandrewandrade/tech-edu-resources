@@ -8,7 +8,7 @@
       <input id="design-fabrication-design-process-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 8 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 7 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,9 +18,9 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="design-process" data-bs-total-lessons="8" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="design-process" data-bs-total-lessons="7" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">2. N.I.C.E. Design Process</a><span data-bs-learn-group-count>8 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">2. N.I.C.E. Design Process</a><span data-bs-learn-group-count>7 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understand the Situation&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate facts, assumptions, and interpretations before defining the problem.&quot;, &quot;A clear situation prevents a team from solving the wrong problem.&quot;, &quot;Worksheet&quot;]">
@@ -77,13 +77,6 @@
         <p>Score ideas against necessities and priorities, then revise the strongest option.</p>
         <p>Evaluation turns feedback and test results into defensible improvements.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1O_j4gcsUT0ELFpgJk3GiyG6B1l5brKPko-6lO8HQPfk/copy">Worksheet</a></p>
-      </details>
-    </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Supply Chain and Life Cycle&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Follow a product through materials, manufacture, use, repair, reuse, and disposal.&quot;, &quot;Life-cycle thinking reveals costs and effects that are easy to miss at fabrication time.&quot;]">
-      <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Supply Chain and Life Cycle"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="supply-chain-life-cycle.html">8. Supply Chain and Life Cycle</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Follow a product through materials, manufacture, use, repair, reuse, and disposal.</p>
-        <p>Life-cycle thinking reveals costs and effects that are easy to miss at fabrication time.</p>
       </details>
     </article>
   </div>

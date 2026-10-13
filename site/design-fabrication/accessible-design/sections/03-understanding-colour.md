@@ -4,8 +4,7 @@ Colour is easier to control when you separate what kind of colour it is from how
 
 ## How the eye receives colour information
 
-::: {.ad-two-up}
-::: {.ad-figure-card}
+::: {.ad-concept-figure}
 ![A simplified eye points to the retina and optic nerve, then labels long, medium, and short wavelength cones plus rods.](../../assets/accessible-design/source-guide/human-eye.png)
 
 ### Four receptor types
@@ -13,19 +12,17 @@ Colour is easier to control when you separate what kind of colour it is from how
 The guide simplifies the retina into three kinds of cone cells for colour and rod cells that are especially useful in low light.
 :::
 
-::: {.ad-figure-card}
+::: {.ad-concept-figure}
 ![A graph plots the overlapping response ranges of short, medium, and long wavelength cones and rods from 400 to 700 nanometres.](../../assets/accessible-design/source-guide/cone-response.jpg)
 
 ### Overlapping responses
 
 The curves overlap. The brain interprets a pattern of signals rather than receiving a single red, green, or blue value. [Source noted in the guide](https://www.researchgate.net/publication/313657827_The_Information_Visualization_Thematic_Head_to_Head_with_Color_Blindness).
 :::
-:::
 
 ## Separate hue, saturation, and value
 
-::: {.ad-two-up}
-::: {.ad-figure-card}
+::: {.ad-concept-figure}
 ![Three vertical scales show hue changing through the spectrum, red losing saturation toward grey, and value changing from white to black.](../../assets/accessible-design/source-guide/hue-saturation-value.png)
 
 ### Hue, saturation, value
@@ -33,13 +30,12 @@ The curves overlap. The brain interprets a pattern of signals rather than receiv
 **Hue** identifies the colour family. **Saturation** describes intensity or greyness. **Value** describes lightness or darkness. [Source](https://www.virtualartacademy.com/three-components-of-color/).
 :::
 
-::: {.ad-figure-card}
+::: {.ad-concept-figure}
 ![A colour wheel appears beside a greyscale copy. Yellow becomes very light while several blue, green, and purple hues become similar dark greys.](../../assets/accessible-design/source-guide/colour-value-wheel.png)
 
 ### Different hue, similar value
 
 Strongly different colours can have nearly the same lightness. This is why a monochrome check can reveal weak contrast. [Source](https://www.virtualartacademy.com/value-in-art-for-beginners/).
-:::
 :::
 
 ## Connect the model to design software

@@ -4,35 +4,31 @@
 
 ## Use a measurable minimum
 
-::: {.ad-check-strip}
-::: {}
-**4.5:1**
+::: {.ad-contrast-demo aria-label="Visual comparison of passing and failing contrast"}
+::: {.ad-contrast-sample .is-strong}
+<span>Clear contrast</span>
 
-Minimum contrast for normal-size text.
+**12.6:1** · comfortably above the minimum
 :::
-::: {}
-**3:1**
+::: {.ad-contrast-sample .is-minimum}
+<span>Minimum contrast</span>
 
-Minimum for large text, at least 24 px regular or about 18.5 px bold.
+**4.5:1** · passes for normal-size text
 :::
-::: {}
-**3:1**
+::: {.ad-contrast-sample .is-failing}
+<span>Weak contrast</span>
 
-Minimum for essential icons, controls, and graphic boundaries.
+**2.0:1** · fails for text and essential graphics
 :::
-::: {}
-**Do not round**
+:::
 
-A result of 4.49:1 does not meet 4.5:1.
-:::
-:::
+Large text, at least 24 px regular or about 18.5 px bold, can use **3:1**. Essential icons, controls, and graphic boundaries also need **3:1**. Do not round: 4.49:1 does not meet 4.5:1.
 
 These are WCAG 2.2 Level AA thresholds for digital content. They are a starting point, not a promise that every person or output device will find the result easy to use. Aim higher when you can.
 
 ## Compare the guide's examples
 
-::: {.ad-figure-grid}
-::: {.ad-figure-card}
+::: {.ad-large-example}
 ![Black text on white and white text on black are labelled good contrast. Pale green on yellow and pale grey on light grey are labelled bad contrast.](../../assets/accessible-design/source-guide/good-bad-contrast.png)
 
 ### Light-dark difference matters
@@ -40,7 +36,7 @@ These are WCAG 2.2 Level AA thresholds for digital content. They are a starting 
 The top two pairs have a large value difference. The bottom pairs do not. [Source noted in the guide](https://aatt.d.umn.edu/february-color-and-contrast).
 :::
 
-::: {.ad-figure-card}
+::: {.ad-large-example}
 ![Six colour pairs place bad contrast examples in a left column and better contrast versions in a right column.](../../assets/accessible-design/source-guide/contrast-grid.png)
 
 ### Hue is not enough
@@ -48,13 +44,12 @@ The top two pairs have a large value difference. The bottom pairs do not. [Sourc
 Changing the background value makes each word easier to separate, even when the hue remains similar. [Source noted in the guide](https://www.localguidesconnect.com/t5/General-Discussion/Web-Accessibility-Good-Contrast/td-p/3115065).
 :::
 
-::: {.ad-figure-card}
+::: {.ad-large-example}
 ![Green text on red and pale blue text on blue are labelled bad choices. Pale yellow text on dark green is labelled a good choice.](../../assets/accessible-design/source-guide/colour-choices.png)
 
 ### Some pairs interfere
 
 Red-green and similar-blue pairs can fail for different reasons. The final pair adds a clear light-dark difference. [Source noted in the guide](https://www.sitepoint.com/typography-cheat-sheet/).
-:::
 :::
 
 ## Do not use colour alone

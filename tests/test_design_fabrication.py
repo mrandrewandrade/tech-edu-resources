@@ -115,7 +115,6 @@ class DesignFabricationTests(unittest.TestCase):
             "Investigate and Inquire",
             "Create and Communicate",
             "Evaluate and Repeat",
-            "Supply Chain and Life Cycle",
         ):
             self.assertIn(heading, process)
         for phrase in (
