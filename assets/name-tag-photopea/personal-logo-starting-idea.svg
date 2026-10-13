@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-  <title id="title">From a paper sketch to three useful shapes</title>
-  <desc id="desc">A landscape is drawn on paper, photographed, and reduced to a circle, triangle, and curve that can be traced in Photopea.</desc>
+  <title id="title">From a two-peak sketch to four useful shapes</title>
+  <desc id="desc">A landscape is drawn on paper, photographed, and reduced to a sun, left peak, right peak, and river that can be traced separately in Photopea and animated later.</desc>
   <rect width="1200" height="500" rx="30" fill="#eef4f7"/>
   <style>
     .title{font:700 27px 'Source Sans 3',Arial,sans-serif;fill:#0b2e4f}.label{font:700 21px 'Source Sans 3',Arial,sans-serif;fill:#0b2e4f}.note{font:500 18px 'Source Sans 3',Arial,sans-serif;fill:#405568}.paper{fill:#fff;stroke:#9fb2c1;stroke-width:3}.sketch{fill:none;stroke:#646e75;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.arrow{fill:none;stroke:#4d7188;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
@@ -18,11 +18,12 @@
   <path class="arrow" d="M388 258h58m-20-20 20 20-20 20"/>
   <g transform="translate(470 82)">
     <rect class="paper" width="320" height="350" rx="18"/>
-    <text class="label" x="24" y="38">2. Circle 3 ingredients</text>
-    <circle cx="93" cy="138" r="42" fill="#f1b434"/>
-    <path d="M130 252 203 119l78 133z" fill="#2f6f52"/>
-    <path d="M45 287 Q151 224 278 282" fill="none" stroke="#2382b5" stroke-width="22" stroke-linecap="round"/>
-    <text class="note" x="45" y="94">CIRCLE</text><text class="note" x="188" y="94">TRIANGLE</text>
+    <text class="label" x="24" y="38">2. Find 4 ingredients</text>
+    <circle id="sun" cx="93" cy="138" r="42" fill="#f1b434"/>
+    <path id="left-a" d="M112 252 168 145l52 107z" fill="#255f46"/>
+    <path id="right-a" d="M158 252 220 119l61 133z" fill="#3a7f5f"/>
+    <path id="river" d="M45 287 Q151 224 278 282" fill="none" stroke="#2382b5" stroke-width="22" stroke-linecap="round"/>
+    <text class="note" x="45" y="94">SUN</text><text class="note" x="171" y="94">TWO PEAKS</text>
     <text class="note" x="122" y="326">CURVE</text>
   </g>
   <path class="arrow" d="M813 258h58m-20-20 20 20-20 20"/>
@@ -30,7 +31,8 @@
     <rect class="paper" width="260" height="350" rx="18"/>
     <text class="label" x="24" y="38">3. Trace these</text>
     <circle cx="91" cy="138" r="40" fill="#111820"/>
-    <path d="M57 264 150 100l92 164z" fill="#111820"/>
+    <path d="M43 264 112 143l62 121z" fill="#111820"/>
+    <path d="M96 264 171 100l71 164z" fill="#111820"/>
     <path d="M35 290 Q125 236 228 286" fill="none" stroke="#111820" stroke-width="23" stroke-linecap="round"/>
     <circle cx="139" cy="205" r="115" fill="none" stroke="#22a6cc" stroke-width="5" stroke-dasharray="12 10"/>
     <text class="note" x="24" y="326">Leave the details behind.</text>

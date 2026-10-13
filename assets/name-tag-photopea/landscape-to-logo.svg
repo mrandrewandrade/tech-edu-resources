@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-  <title id="title">Landscape inspiration to simple logo</title>
-  <desc id="desc">A four-step example showing a photographed or scanned paper sketch reduced to a few shapes, traced in Photopea, and finished as a simple colour logo.</desc>
+  <title id="title">Two-peak landscape sketch to layered AA logo</title>
+  <desc id="desc">A four-step example showing a two-peak landscape sketch rebuilt as separate sun, left peak, right peak, and river shapes that can be animated later.</desc>
   <rect width="1200" height="340" rx="24" fill="#eef4f7"/>
   <style>
     .label{font:700 22px 'Source Sans 3',Arial,sans-serif;fill:#0b2e4f}
@@ -21,10 +21,11 @@
   <path class="arrow" d="M286 170h32m-12-12 12 12-12 12"/>
   <g transform="translate(329 22)">
     <rect class="panel" width="255" height="296" rx="18"/>
-    <text class="label" x="18" y="36">2 · PICK 3 SHAPES</text>
-    <text class="small" x="18" y="62">Circle · triangle · curve</text>
+    <text class="label" x="18" y="36">2 · PICK 4 ELEMENTS</text>
+    <text class="small" x="18" y="62">Circle · 2 peaks · curve</text>
     <circle cx="70" cy="134" r="35" fill="#f1b434"/>
-    <path d="M105 214 164 105l66 109z" fill="#2d6a4f"/>
+    <path d="M92 214 143 122l48 92z" fill="#255f46"/>
+    <path d="M137 214 193 105l52 109z" fill="#3a7f5f"/>
     <path d="M40 244 Q121 190 218 242" fill="none" stroke="#247ba0" stroke-width="20" stroke-linecap="round"/>
     <text class="small" x="18" y="278">Leave the details behind.</text>
   </g>
@@ -34,9 +35,10 @@
     <text class="label" x="18" y="36">3 · PHOTOPEA</text>
     <text class="small" x="18" y="62">Rebuild with clean shapes</text>
     <rect x="42" y="91" width="172" height="156" rx="10" fill="#f7fafb" stroke="#b5c4cf"/>
-    <circle cx="96" cy="139" r="24" fill="#111820"/>
-    <path d="M85 221 145 119l70 102z" fill="#111820"/>
-    <path d="M56 235 Q122 193 204 231" fill="none" stroke="#111820" stroke-width="15" stroke-linecap="round"/>
+    <circle id="sun" cx="96" cy="139" r="24" fill="#111820"/>
+    <path id="left-peak" d="M76 221 132 130l52 91z" fill="#111820"/>
+    <path id="right-peak" d="M123 221 174 116l48 105z" fill="#111820"/>
+    <path id="river" d="M56 235 Q122 193 204 231" fill="none" stroke="#111820" stroke-width="15" stroke-linecap="round"/>
     <text class="small" x="18" y="278">Test the silhouette in black.</text>
   </g>
   <path class="arrow" d="M904 170h32m-12-12 12 12-12 12"/>
@@ -45,9 +47,10 @@
     <text class="label" x="18" y="36">4 · YOUR MARK</text>
     <text class="small" x="18" y="62">Add 2–3 colours</text>
     <circle cx="116" cy="167" r="88" fill="#f8f4e8" stroke="#0b2e4f" stroke-width="7"/>
-    <circle cx="87" cy="132" r="26" fill="#f1b434"/>
-    <path d="M55 210 116 111l68 99z" fill="#2d6a4f"/>
-    <path d="M48 219 Q110 180 182 216" fill="none" stroke="#247ba0" stroke-width="15" stroke-linecap="round"/>
-    <text class="small" x="18" y="278">Simple, original and editable.</text>
+    <circle id="final-sun" cx="87" cy="132" r="26" fill="#f1b434"/>
+    <path id="final-left-peak" d="M48 210 101 123l49 87z" fill="#255f46"/>
+    <path id="final-right-peak" d="M93 210 146 105l50 105z" fill="#3a7f5f"/>
+    <path id="final-river" d="M48 219 Q110 180 182 216" fill="none" stroke="#247ba0" stroke-width="15" stroke-linecap="round"/>
+    <text class="small" x="18" y="278">Separate parts can move later.</text>
   </g>
 </svg>

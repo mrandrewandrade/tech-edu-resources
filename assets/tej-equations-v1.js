@@ -6,6 +6,53 @@
       return [entry.key, entry.source];
     })
   );
+  let nextEquationKey = sourceByKey.size + 1;
+
+  function equationSource(equation) {
+    return equation.textContent
+      .trim()
+      .replace(/^\\\[\s*/, "")
+      .replace(/\s*\\\]$/, "")
+      .replace(/\s*\\tag\{[^}]+\}\s*$/, "")
+      .trim();
+  }
+
+  function equationsIn(root) {
+    const equations = [];
+    if (root && root.matches && root.matches("span.math.display")) {
+      equations.push(root);
+    }
+    if (root && root.querySelectorAll) {
+      root.querySelectorAll("span.math.display").forEach(function (equation) {
+        equations.push(equation);
+      });
+    }
+    return equations;
+  }
+
+  function registerEquationSources(root) {
+    const equations = equationsIn(root);
+    window.terEquationSources = window.terEquationSources || [];
+
+    equations.forEach(function (equation) {
+      let key = equation.dataset.terEquationKey;
+      if (!key) {
+        do {
+          key = "ter-equation-" + nextEquationKey;
+          nextEquationKey += 1;
+        } while (sourceByKey.has(key));
+        equation.dataset.terEquationKey = key;
+      }
+
+      if (!sourceByKey.has(key)) {
+        const source = equationSource(equation);
+        sourceByKey.set(key, source);
+        window.terEquationSources.push({ key: key, source: source });
+      }
+    });
+
+    return equations;
+  }
 
   function announce(button, message) {
     const original = button.dataset.originalLabel || button.textContent;
@@ -89,8 +136,9 @@
     return button;
   }
 
-  function enhanceEquations() {
-    document.querySelectorAll("span.math.display[data-ter-equation-key]").forEach(function (equation) {
+  function enhanceEquations(root) {
+    equationsIn(root || document).forEach(function (equation) {
+      if (!equation.dataset.terEquationKey) return;
       if (equation.closest(".ter-equation-shell")) return;
 
       const source = sourceByKey.get(equation.dataset.terEquationKey) || "";
@@ -115,9 +163,48 @@
     });
   }
 
+  function mountEquations(root) {
+    const mountRoot = root || document;
+    const equations = registerEquationSources(mountRoot);
+    const pending = equations.filter(function (equation) {
+      return !equation.querySelector("mjx-container");
+    });
+
+    function finish() {
+      enhanceEquations(mountRoot);
+    }
+
+    if (!pending.length) {
+      finish();
+      return Promise.resolve();
+    }
+
+    if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
+      return window.MathJax.typesetPromise(pending).then(finish, function (error) {
+        finish();
+        throw error;
+      });
+    }
+
+    if (window.MathJax && typeof window.MathJax.typeset === "function") {
+      window.MathJax.typeset(pending);
+    }
+    finish();
+    return Promise.resolve();
+  }
+
+  window.TEREquations = window.TEREquations || {};
+  window.TEREquations.mount = mountEquations;
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", enhanceEquations, { once: true });
+    document.addEventListener("DOMContentLoaded", function () {
+      mountEquations(document).catch(function (error) {
+        window.console.warn("Equation rendering failed", error);
+      });
+    }, { once: true });
   } else {
-    enhanceEquations();
+    mountEquations(document).catch(function (error) {
+      window.console.warn("Equation rendering failed", error);
+    });
   }
 })();

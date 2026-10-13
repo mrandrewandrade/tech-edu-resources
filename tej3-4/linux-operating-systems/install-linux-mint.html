@@ -24,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -107,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-sidebar docked nav-fixed bs-learn-article quarto-light">
+<body class="nav-sidebar docked nav-fixed bs-learn-article ter-notes-lesson quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -195,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/index.html">Linux, Operating Systems &amp; Networking</a></li><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/install-linux-mint.html">Install Linux Mint</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/index.html">7. Linux and Operating Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/install-linux-mint.html">2. Install Linux Mint</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -210,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Computer Engineering Home</span></a>
+ <span class="menu-text">TEJ3/4 Computer Engineering Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -233,8 +268,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../tej3-4/circuits/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Circuits</span></a>
+            <a href="../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Circuits and Electronics</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -242,62 +277,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/circuits/index.html#significant-figures" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Significant Figures</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/circuits/index.html#notation-and-metric-prefixes" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Scientific &amp; Engineering Notation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/circuits/index.html#ohms-law-and-power" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ohm's Law &amp; Power</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/circuits/index.html#guess-method" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GUESS Method</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/series-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Series Circuits</span></a>
+ <span class="menu-text">1. Series Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/parallel-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Parallel Circuits</span></a>
+ <span class="menu-text">2. Parallel Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/series-parallel-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Series-Parallel Circuits</span></a>
+ <span class="menu-text">3. Series-Parallel Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/kirchhoffs-laws.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Kirchhoff’s Laws</span></a>
+ <span class="menu-text">4. Kirchhoff’s Laws</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/linear-algebra-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Linear Algebra for Circuits</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/circuits/index.html#questions-answers-and-class-artifacts" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Class Resources</span></a>
+ <span class="menu-text">5. Linear Algebra for Circuits</span></a>
   </div>
 </li>
       </ul>
@@ -305,7 +310,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../tej3-4/linux-operating-systems/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Linux, Operating Systems &amp; Networking</span></a>
+ <span class="menu-text">7. Linux and Operating Systems</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -314,13 +319,73 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/linux-operating-systems/choosing-a-distribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Choosing a Linux Distribution</span></a>
+ <span class="menu-text">1. Choosing a Linux Distribution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/linux-operating-systems/install-linux-mint.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Install Linux Mint</span></a>
+ <span class="menu-text">2. Install Linux Mint</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/explore-linux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Explore Linux</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/know-your-computer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Know Your Linux Computer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/files-terminal-permissions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Files, Terminal, and Permissions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/git-version-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Git Version Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/quarto-website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Build a Quarto Website</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/publish-github-pages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Publish with GitHub Pages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/python-data-logging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Python Measurement Logging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/python-analysis-curve-fitting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10. Python Analysis and Curve Fitting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/networking-ssh-tmux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11. Networking, SSH, and tmux</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12. Power and Raspberry Pi Bridge</span></a>
   </div>
 </li>
       </ul>
@@ -335,9 +400,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#before-you-begin" id="toc-before-you-begin" class="nav-link active" data-scroll-target="#before-you-begin">Before you begin</a>
+  <li><a href="#class-materials" id="toc-class-materials" class="nav-link active" data-scroll-target="#class-materials">Class materials</a></li>
+  <li><a href="#before-you-begin" id="toc-before-you-begin" class="nav-link" data-scroll-target="#before-you-begin">Before you begin</a>
   <ul class="collapse">
   <li><a href="#how-the-classroom-usb-was-made" id="toc-how-the-classroom-usb-was-made" class="nav-link" data-scroll-target="#how-the-classroom-usb-was-made">How the classroom USB was made</a></li>
+  <li><a href="#working-at-home-windows-and-mac-options" id="toc-working-at-home-windows-and-mac-options" class="nav-link" data-scroll-target="#working-at-home-windows-and-mac-options">Working at home: Windows and Mac options</a></li>
   </ul></li>
   <li><a href="#start-the-live-system" id="toc-start-the-live-system" class="nav-link" data-scroll-target="#start-the-live-system">1. Start the live system</a>
   <ul class="collapse">
@@ -354,7 +421,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#explore-safely-while-the-installer-works" id="toc-explore-safely-while-the-installer-works" class="nav-link" data-scroll-target="#explore-safely-while-the-installer-works">9. Explore safely while the installer works</a></li>
   <li><a href="#restart-into-the-installed-system" id="toc-restart-into-the-installed-system" class="nav-link" data-scroll-target="#restart-into-the-installed-system">10. Restart into the installed system</a></li>
   <li><a href="#test-the-new-installation" id="toc-test-the-new-installation" class="nav-link" data-scroll-target="#test-the-new-installation">11. Test the new installation</a></li>
-  <li><a href="#lab-log" id="toc-lab-log" class="nav-link" data-scroll-target="#lab-log">Lab log</a></li>
+  <li><a href="#google-classroom-submission" id="toc-google-classroom-submission" class="nav-link" data-scroll-target="#google-classroom-submission">Google Classroom submission</a></li>
+  <li><a href="#extend-your-learning" id="toc-extend-your-learning" class="nav-link" data-scroll-target="#extend-your-learning">Extend your learning</a></li>
   <li><a href="#sources-and-image-credit" id="toc-sources-and-image-credit" class="nav-link" data-scroll-target="#sources-and-image-credit">Sources and image credit</a></li>
   </ul>
 </nav>
@@ -362,7 +430,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/index.html">Linux, Operating Systems &amp; Networking</a></li><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/install-linux-mint.html">Install Linux Mint</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/index.html">7. Linux and Operating Systems</a></li><li class="breadcrumb-item"><a href="../../tej3-4/linux-operating-systems/install-linux-mint.html">2. Install Linux Mint</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Install Linux Mint 22.3 Xfce</h1>
   <div class="quarto-categories">
@@ -394,10 +462,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Linux Mint is a Linux operating system that usually <strong>just works</strong> and is easy for new users. We are installing <strong>Linux Mint 22.3 “Zena” Xfce Edition</strong>. Xfce has a familiar, classic Windows-like layout and uses fewer system resources, which makes it a good fit for our older computers with less than 8 GB of RAM.</p>
+<section id="class-materials" class="level2">
+<h2 class="anchored" data-anchor-id="class-materials">Class materials</h2>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Linux Start Here slides</a></li>
+<li><a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Make a copy of the Linux Mint Installation assignment</a></li>
+</ul>
 <div class="callout-danger" title="This lab erases the computer">
 <p>Choose <strong>Erase disk and install Linux Mint</strong> only on the classroom computer assigned by your teacher. This deletes Windows, accounts, programs, and every file on the selected drive. Stop and ask your teacher before continuing if you are not certain that the computer and drive are approved.</p>
 </div>
 <p>This classroom guide is adapted from the <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html">official Linux Mint Installation Guide</a>. The installer screenshots come from that guide. Screens can change slightly between releases, and the example names or checkboxes shown in a screenshot may not match our required classroom settings. <strong>Follow the written choices on this page.</strong></p>
+</section>
 <section id="before-you-begin" class="level2">
 <h2 class="anchored" data-anchor-id="before-you-begin">Before you begin</h2>
 <p>You need:</p>
@@ -405,7 +480,7 @@ ul.task-list li input[type="checkbox"] {
 <li>the assigned classroom computer;</li>
 <li>a Linux Mint 22.3 “Zena” Xfce USB installer signed out from your teacher;</li>
 <li>the classroom Wi-Fi credentials; and</li>
-<li>your lab log.</li>
+<li>your copy of the Linux Mint Installation assignment.</li>
 </ul>
 <p>Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.</p>
 <section id="how-the-classroom-usb-was-made" class="level3">
@@ -413,6 +488,26 @@ ul.task-list li input[type="checkbox"] {
 <p>The teacher, with help from student volunteers, prepared the bootable USB drives before this lab. They downloaded the Linux Mint Xfce <strong><code>.iso</code> image</strong> from the <a href="https://linuxmint.com/download.php/">official Linux Mint download page</a> and used <a href="https://etcher.balena.io/">balenaEtcher</a> to write the image to a USB drive. On Windows, <a href="https://rufus.ie/">Rufus</a> is another good tool for creating a bootable USB.</p>
 <p>An ISO cannot simply be copied onto a USB like an ordinary file. A tool such as Etcher or Rufus writes the image in a form the computer can start from. This process erases the USB drive, so do not try it with a personal drive unless its contents are safely backed up.</p>
 <p>For this lab, <strong>sign out a prepared USB from your teacher</strong>. Record its number if your class uses numbered drives, and return it when the installation is complete.</p>
+</section>
+<section id="working-at-home-windows-and-mac-options" class="level3">
+<h3 class="anchored" data-anchor-id="working-at-home-windows-and-mac-options">Working at home: Windows and Mac options</h3>
+<p>In class, we are installing Linux Mint directly on approved classroom computers. Do not erase or dual boot a family computer for this course.</p>
+<p>If you use Windows 11 or a supported Windows 10 computer at home, the recommended option is <strong>Windows Subsystem for Linux 2 (WSL 2) with Ubuntu</strong>. It gives you a real Linux command line without replacing Windows. Ask the computer owner for permission because installation requires administrator access and may require a restart.</p>
+<ol type="1">
+<li>Open <strong>PowerShell as Administrator</strong>.</li>
+<li>Run:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>install</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="3" type="1">
+<li>Restart Windows if asked.</li>
+<li>Open <strong>Ubuntu</strong> from the Start menu.</li>
+<li>Create a private Linux username and password. The password will not appear while you type it.</li>
+<li>Return to PowerShell and verify the installation:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>list <span class="op">--</span>verbose</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If WSL is already installed but Ubuntu is missing, run <code>wsl --list --online</code>, then <code>wsl --install -d Ubuntu</code>. Never use <code>wsl --unregister</code> for this course because it permanently deletes that WSL distribution and its files. Follow the official <a href="https://learn.microsoft.com/windows/wsl/install">Microsoft WSL installation guide</a> if your screen differs.</p>
+<p>On a Mac, use the built-in <strong>Terminal</strong> for transferable work such as files, Git, Quarto, Python and SSH. macOS is Unix-like, but it is not Linux. Complete Linux-specific hardware, package, permission and administration activities on the classroom Linux computer or an approved remote Linux host. Apple’s <a href="https://support.apple.com/guide/terminal/welcome/mac">Terminal User Guide</a> is a useful reference.</p>
 </section>
 </section>
 <section id="start-the-live-system" class="level2">
@@ -648,9 +743,11 @@ ul.task-list li input[type="checkbox"] {
 <li>compare the Linux desktop with Windows and list one similarity and one difference.</li>
 </ul>
 </section>
-<section id="lab-log" class="level2">
-<h2 class="anchored" data-anchor-id="lab-log">Lab log</h2>
-<p>Record the following in your lab log before you leave:</p>
+<section id="google-classroom-submission" class="level2">
+<h2 class="anchored" data-anchor-id="google-classroom-submission">Google Classroom submission</h2>
+<p>Complete your copy of the <a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Linux Mint Installation assignment</a>.</p>
+<p>Submit <strong>one Google Doc</strong> in Google Classroom. The submission page gives you the required headings, screenshot, reflection questions, final checklist and <strong>Above and beyond</strong> section.</p>
+<p>Record the following evidence before you leave:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -694,6 +791,15 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>Show the installed system and completed lab log to your teacher.</p>
+</section>
+<section id="extend-your-learning" class="level2">
+<h2 class="anchored" data-anchor-id="extend-your-learning">Extend your learning</h2>
+<ul>
+<li>Review the <a href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Linux Start Here class slides</a> for the distribution, installation, WSL, account and Bashcrawl sequence.</li>
+<li>Visit the <a href="https://linuxmint.com/documentation.php">Linux Mint documentation</a> to explore official desktop and system guides.</li>
+<li>Explore the <a href="https://www.youtube.com/@LearnLinuxTV">Learn Linux TV YouTube channel</a> for beginner Linux demonstrations. Choose a beginner video and record one new idea in the <strong>Above and beyond</strong> section of your Google Doc.</li>
+<li>Try the <a href="https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/">Ubuntu command-line tutorial</a> when you are ready to move beyond the desktop.</li>
+</ul>
 </section>
 <section id="sources-and-image-credit" class="level2">
 <h2 class="anchored" data-anchor-id="sources-and-image-credit">Sources and image credit</h2>
@@ -1189,7 +1295,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Website code: <a href="https://andrewandrade.ca/commons/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/commons/licensing.html">CC BY-SA 4.0</a>.</p>
+<p>Website code: <a href="https://andrewandrade.ca/tech-edu-resources/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/tech-edu-resources/licensing.html">CC BY-SA 4.0</a>.</p>
 <p>Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, <a href="https://andrewandrade.ca/">andrewandrade.ca</a>, and <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when adapting it. <strong>Sharing is caring.</strong></p>
 <p>The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.</p>
 </div>   

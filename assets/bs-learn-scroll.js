@@ -57,12 +57,44 @@
   function lessonsFromManifest(manifest) {
     if (
       !manifest ||
-      manifest.schema_version !== 1 ||
+      manifest.schema_version !== 2 ||
       !Array.isArray(manifest.lessons)
     ) {
       return [];
     }
-    return manifest.lessons;
+    const requiredStrings = [
+      "course_id",
+      "course_title",
+      "course_hub",
+      "sidebar_id",
+      "route",
+      "source",
+      "title",
+      "summary",
+      "use",
+      "track_id",
+      "track_title",
+      "track_summary",
+      "track_use"
+    ];
+    const lessonsAreValid = manifest.lessons.every(function (lesson, index) {
+      return (
+        lesson &&
+        requiredStrings.every(function (key) {
+          return typeof lesson[key] === "string" && lesson[key].trim() !== "";
+        }) &&
+        Number.isInteger(lesson.lesson_order) &&
+        Number.isInteger(lesson.track_order) &&
+        Number.isInteger(lesson.sequence_index) &&
+        lesson.sequence_index === index &&
+        Array.isArray(lesson.resources) &&
+        (lesson.track_hub === null || typeof lesson.track_hub === "string") &&
+        (lesson.previous_route === null || typeof lesson.previous_route === "string") &&
+        (lesson.next_route === null || typeof lesson.next_route === "string") &&
+        lesson.next_starts_new_track === false
+      );
+    });
+    return lessonsAreValid ? manifest.lessons : [];
   }
 
   function siteBaseForPath(pathname) {
@@ -91,6 +123,28 @@
     return SITE_BASE + (relative === "/" ? "/" : relative);
   }
 
+  function historyActionForLesson(currentPath, targetRoute, mode) {
+    if (mode === "none") {
+      return "none";
+    }
+    if (mode === "replace") {
+      return "replace";
+    }
+    return deploymentRelativeRoute(currentPath) ===
+      deploymentRelativeRoute(targetRoute)
+      ? "none"
+      : "push";
+  }
+
+  function lessonRecordIndexForRoute(records, route) {
+    const normalized = deploymentRelativeRoute(route);
+    return Array.from(records || []).findIndex(function (record) {
+      return (
+        record && deploymentRelativeRoute(record.route) === normalized
+      );
+    });
+  }
+
   function findCurrentLesson(manifest, pathname) {
     const route = deploymentRelativeRoute(pathname);
     return (
@@ -101,7 +155,7 @@
   }
 
   function nextLesson(manifest, lesson) {
-    if (!lesson || !lesson.next_route) {
+    if (!lesson || !lesson.next_route || lesson.next_starts_new_track) {
       return null;
     }
     const lessons = lessonsFromManifest(manifest);
@@ -332,6 +386,14 @@
     return Math.max(72, Math.min(140, height * 0.18));
   }
 
+  function isAtDocumentEnd(scrollY, viewportHeight, documentHeight, tolerance) {
+    const margin = Number.isFinite(tolerance) ? tolerance : 2;
+    return (
+      Number(scrollY) + Number(viewportHeight) >=
+      Number(documentHeight) - margin
+    );
+  }
+
   function selectActiveLessonIndex(
     markerTops,
     readingLine,
@@ -546,6 +608,7 @@
     return {
       route: normalizeRoute(lesson.route),
       title: String(lesson.title || ""),
+      documentTitle: String(lesson.document_title || lesson.title || ""),
       trackId: String(lesson.track_id || ""),
       trackTitle: String(lesson.track_title || ""),
       sectionElement: sectionElement,
@@ -564,6 +627,20 @@
       message: "The next lesson could not be loaded.",
       route: lesson ? normalizeRoute(lesson.route) : ""
     };
+  }
+
+  function transitionMessage(currentLesson, nextLessonRecord) {
+    return (
+      "You reached the end of " +
+      currentLesson.title +
+      ". Keep scrolling to continue to " +
+      nextLessonRecord.title +
+      "."
+    );
+  }
+
+  function endStateMessage() {
+    return "You reached the end of this learning path. ";
   }
 
   function createDivider(lesson, fetchedTitle, trackBoundary) {
@@ -589,7 +666,24 @@
     return divider;
   }
 
-  function createEndState() {
+  function createTransitionNotice(currentLesson, nextLessonRecord) {
+    const notice = document.createElement("section");
+    const message = document.createElement("p");
+    const link = document.createElement("a");
+    notice.className = "bs-learn-transition-notice";
+    notice.dataset.bsLearnTransition = nextLessonRecord.route;
+    notice.setAttribute("role", "status");
+    notice.setAttribute("aria-live", "polite");
+    const noticeText = transitionMessage(currentLesson, nextLessonRecord);
+    message.append(document.createTextNode(noticeText.slice(0, -nextLessonRecord.title.length - 1)));
+    link.href = browserRoute(nextLessonRecord.route);
+    link.textContent = nextLessonRecord.title;
+    message.append(link, document.createTextNode("."));
+    notice.appendChild(message);
+    return notice;
+  }
+
+  function createEndState(lesson) {
     const end = document.createElement("section");
     const message = document.createElement("p");
     const link = document.createElement("a");
@@ -608,10 +702,11 @@
     }
     end.className = "bs-learn-scroll-end";
     end.dataset.bsLearnScrollEnd = "";
-    message.textContent = "You have reached the end of the current lessons.";
-    link.href = courseHome;
+    message.textContent = endStateMessage();
+    link.href = lesson && lesson.course_hub ? browserRoute(lesson.course_hub) : courseHome;
     link.textContent = courseLabel;
-    end.append(message, link);
+    message.appendChild(link);
+    end.append(message);
     return end;
   }
 
@@ -753,7 +848,7 @@
         main.insertBefore(initialMarker, main.firstChild);
         lessonRecords.push(
           createLessonRecord(
-            current,
+            Object.assign({}, current, { document_title: document.title }),
             initialMarker,
             initialHeadingIds,
             initialToc
@@ -809,9 +904,31 @@
           }
         }
 
-        function synchronizeActiveLesson(record) {
+        function synchronizeActiveLesson(record, historyMode) {
           setActiveSidebar(sidebar, record.route, window.location.href);
           replaceTocContents(activeTocElement(), record.toc);
+          const activeRoute = browserRoute(record.route);
+          const historyAction = historyActionForLesson(
+            window.location.pathname,
+            activeRoute,
+            historyMode || "push"
+          );
+          if (historyAction === "push") {
+            window.history.pushState(
+              { bsLearnScrollRoute: record.route },
+              "",
+              activeRoute
+            );
+          } else if (historyAction === "replace") {
+            window.history.replaceState(
+              { bsLearnScrollRoute: record.route },
+              "",
+              activeRoute
+            );
+          }
+          if (record.documentTitle) {
+            document.title = record.documentTitle;
+          }
           updateActiveTocHeading(
             record,
             readingLineForViewport(window.innerHeight)
@@ -820,18 +937,26 @@
 
         function updateActiveLesson(direction) {
           const readingLine = readingLineForViewport(window.innerHeight);
-          const nextIndex = selectActiveLessonIndex(
-            lessonRecords.map(function (record) {
-              return record.sectionElement.getBoundingClientRect().top;
-            }),
-            readingLine,
-            activeLessonIndex,
-            direction,
-            28
-          );
+          const nextIndex =
+            direction >= 0 &&
+            isAtDocumentEnd(
+              window.scrollY,
+              window.innerHeight,
+              document.documentElement.scrollHeight
+            )
+              ? lessonRecords.length - 1
+              : selectActiveLessonIndex(
+                  lessonRecords.map(function (record) {
+                    return record.sectionElement.getBoundingClientRect().top;
+                  }),
+                  readingLine,
+                  activeLessonIndex,
+                  direction,
+                  28
+                );
           if (nextIndex >= 0 && nextIndex !== activeLessonIndex) {
             activeLessonIndex = nextIndex;
-            synchronizeActiveLesson(lessonRecords[activeLessonIndex]);
+            synchronizeActiveLesson(lessonRecords[activeLessonIndex], "push");
           } else {
             updateActiveTocHeading(
               lessonRecords[activeLessonIndex],
@@ -872,6 +997,32 @@
         window.addEventListener("resize", function () {
           scheduleActiveLessonUpdate(0);
         });
+        window.addEventListener("popstate", function (event) {
+          const requestedRoute =
+            event.state && typeof event.state.bsLearnScrollRoute === "string"
+              ? event.state.bsLearnScrollRoute
+              : window.location.pathname;
+          const targetIndex = lessonRecordIndexForRoute(
+            lessonRecords,
+            requestedRoute
+          );
+          if (targetIndex < 0) {
+            window.location.reload();
+            return;
+          }
+          activeLessonIndex = targetIndex;
+          const targetRecord = lessonRecords[targetIndex];
+          synchronizeActiveLesson(targetRecord, "none");
+          const readingLine = readingLineForViewport(window.innerHeight);
+          const targetTop = Math.max(
+            0,
+            window.scrollY +
+              targetRecord.sectionElement.getBoundingClientRect().top -
+              readingLine
+          );
+          lastScrollY = targetTop;
+          window.scrollTo({ top: targetTop, behavior: "auto" });
+        });
         main.addEventListener(
           "toggle",
           function () {
@@ -885,18 +1036,21 @@
           });
           contentResizeObserver.observe(main);
         }
-        synchronizeActiveLesson(lessonRecords[0]);
+        if ("scrollRestoration" in window.history) {
+          window.history.scrollRestoration = "manual";
+        }
+        synchronizeActiveLesson(lessonRecords[0], "replace");
 
-        function showEndState() {
+        function showEndState(currentLesson) {
           if (!main.querySelector("[data-bs-learn-scroll-end]")) {
-            main.appendChild(createEndState());
+            main.appendChild(createEndState(currentLesson));
           }
         }
 
         function addSentinel(currentLesson) {
           const followingLesson = nextLesson(manifest, currentLesson);
           if (!followingLesson) {
-            showEndState();
+            showEndState(currentLesson);
             return;
           }
 
@@ -904,6 +1058,7 @@
           sentinel.className = "bs-learn-scroll-sentinel";
           sentinel.dataset.bsLearnScrollSentinel = followingLesson.route;
           sentinel.setAttribute("aria-live", "polite");
+          main.appendChild(createTransitionNotice(currentLesson, followingLesson));
           main.appendChild(sentinel);
 
           function attemptLoad() {
@@ -1014,10 +1169,24 @@
                   window.BSLearn.mountLesson(fragment);
                 }
                 sentinel.replaceWith(fragment);
+                if (
+                  window.TEREquations &&
+                  typeof window.TEREquations.mount === "function"
+                ) {
+                  Promise.resolve(window.TEREquations.mount(main)).catch(
+                    function (error) {
+                      window.console.warn(
+                        "Appended lesson equations failed to render",
+                        error
+                      );
+                    }
+                  );
+                }
                 lessonRecords.push(
                   createLessonRecord(
                     Object.assign({}, followingLesson, {
-                      title: fetchedTitle
+                      title: fetchedTitle,
+                      document_title: nextDocument.title
                     }),
                     marker,
                     headingIds,
@@ -1069,8 +1238,12 @@
     findCurrentLesson: findCurrentLesson,
     findPrimaryToc: findPrimaryToc,
     headingIdsFromToc: headingIdsFromToc,
+    historyActionForLesson: historyActionForLesson,
     idPrefixForRoute: idPrefixForRoute,
     isFinalLesson: isFinalLesson,
+    isAtDocumentEnd: isAtDocumentEnd,
+    lessonsFromManifest: lessonsFromManifest,
+    lessonRecordIndexForRoute: lessonRecordIndexForRoute,
     laterLessonRoutes: laterLessonRoutes,
     nextLesson: nextLesson,
     normalizeRoute: normalizeRoute,
@@ -1089,7 +1262,9 @@
     sidebarRouteMatches: sidebarRouteMatches,
     siteBaseForPath: siteBaseForPath,
     tocHashTargets: tocHashTargets,
-    startsNewTrack: startsNewTrack
+    startsNewTrack: startsNewTrack,
+    transitionMessage: transitionMessage,
+    endStateMessage: endStateMessage
   };
 
   if (typeof module !== "undefined" && module.exports) {

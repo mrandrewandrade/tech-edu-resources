@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1160" role="img" aria-labelledby="title desc">
+  <title id="title">Hue, saturation, and value examples</title>
+  <desc id="desc">Three stacked panels demonstrate changes in hue, saturation, and value. A final panel shows coloured signals that become similar in greyscale and recommends labels or patterns.</desc>
+  <rect width="600" height="1160" rx="28" fill="#f6f1e7"/>
+  <text x="34" y="52" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1f2933">Change one component at a time</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(34 84)">
+      <rect width="532" height="215" rx="22" fill="#fff" stroke="#c9c1b3" stroke-width="3"/>
+      <text x="22" y="40" font-size="26" font-weight="700" fill="#1f2933">Hue</text>
+      <circle cx="92" cy="112" r="38" fill="#c84a3f"/>
+      <circle cx="266" cy="112" r="38" fill="#d49a28"/>
+      <circle cx="440" cy="112" r="38" fill="#277f75"/>
+      <text x="22" y="190" font-size="20" fill="#374151">Different colour families</text>
+    </g>
+    <g transform="translate(34 324)">
+      <rect width="532" height="215" rx="22" fill="#fff" stroke="#c9c1b3" stroke-width="3"/>
+      <text x="22" y="40" font-size="26" font-weight="700" fill="#1f2933">Saturation</text>
+      <circle cx="92" cy="112" r="38" fill="#1f77b4"/>
+      <circle cx="266" cy="112" r="38" fill="#6c8fa8"/>
+      <circle cx="440" cy="112" r="38" fill="#929ca3"/>
+      <text x="22" y="190" font-size="20" fill="#374151">Vivid to muted</text>
+    </g>
+    <g transform="translate(34 564)">
+      <rect width="532" height="215" rx="22" fill="#fff" stroke="#c9c1b3" stroke-width="3"/>
+      <text x="22" y="40" font-size="26" font-weight="700" fill="#1f2933">Value</text>
+      <circle cx="92" cy="112" r="38" fill="#0f3f5c"/>
+      <circle cx="266" cy="112" r="38" fill="#4989ad"/>
+      <circle cx="440" cy="112" r="38" fill="#b9d8e8"/>
+      <text x="22" y="190" font-size="20" fill="#374151">Dark to light</text>
+    </g>
+    <g transform="translate(34 804)">
+      <rect width="532" height="320" rx="22" fill="#fff" stroke="#c9c1b3" stroke-width="3"/>
+      <text x="22" y="40" font-size="24" font-weight="700" fill="#1f2933">Similar grey values</text>
+      <rect x="22" y="64" width="230" height="64" rx="10" fill="#bf4f4f"/>
+      <text x="137" y="105" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">STOP</text>
+      <rect x="280" y="64" width="230" height="64" rx="10" fill="#3c8e62"/>
+      <text x="395" y="105" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">GO</text>
+      <rect x="22" y="150" width="230" height="64" rx="10" fill="#737373"/>
+      <text x="137" y="191" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">STOP</text>
+      <rect x="280" y="150" width="230" height="64" rx="10" fill="#777"/>
+      <text x="395" y="191" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">GO</text>
+      <text x="22" y="252" font-size="19" fill="#374151">Keep words, symbols, or patterns.</text>
+      <text x="22" y="282" font-size="19" fill="#374151">Do not depend on colour alone.</text>
+    </g>
+  </g>
+</svg>

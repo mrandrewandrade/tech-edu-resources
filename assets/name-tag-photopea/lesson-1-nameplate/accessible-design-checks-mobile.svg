@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 990" role="img" aria-labelledby="title desc">
+  <title id="title">Four checks for accessible design</title>
+  <desc id="desc">A mobile layout shows strong contrast, labels used with colour, open letter shapes with sturdy lines, and a useful alt text description.</desc>
+  <rect width="600" height="990" rx="24" fill="#f6f0df"/>
+  <text x="34" y="56" fill="#1e2928" font-family="Arial, sans-serif" font-size="34" font-weight="700">Four checks before export</text>
+  <text x="34" y="91" fill="#465452" font-family="Arial, sans-serif" font-size="20">Make the design easy to understand.</text>
+
+  <g transform="translate(34 124)">
+    <rect width="532" height="184" rx="16" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <circle cx="43" cy="43" r="25" fill="#31513d"/>
+    <text x="43" y="52" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">1</text>
+    <text x="82" y="52" fill="#1e2928" font-family="Arial, sans-serif" font-size="27" font-weight="700">Use strong contrast</text>
+    <rect x="25" y="82" width="224" height="64" rx="10" fill="#171d1c"/>
+    <text x="137" y="124" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="29" font-weight="700">ANDRADE</text>
+    <rect x="273" y="82" width="234" height="64" rx="10" fill="#f6f0df"/>
+    <text x="390" y="124" text-anchor="middle" fill="#d4cbb8" font-family="Arial, sans-serif" font-size="29" font-weight="700">ANDRADE</text>
+    <text x="137" y="171" text-anchor="middle" fill="#31513d" font-family="Arial, sans-serif" font-size="17" font-weight="700">CLEAR</text>
+    <text x="390" y="171" text-anchor="middle" fill="#8a7652" font-family="Arial, sans-serif" font-size="17" font-weight="700">TOO FAINT</text>
+  </g>
+
+  <g transform="translate(34 326)">
+    <rect width="532" height="184" rx="16" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <circle cx="43" cy="43" r="25" fill="#31513d"/>
+    <text x="43" y="52" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">2</text>
+    <text x="82" y="52" fill="#1e2928" font-family="Arial, sans-serif" font-size="27" font-weight="700">Use colour plus labels</text>
+    <circle cx="88" cy="112" r="30" fill="#d86b50"/>
+    <text x="132" y="120" fill="#1e2928" font-family="Arial, sans-serif" font-size="23" font-weight="700">Logo area</text>
+    <rect x="328" y="82" width="60" height="60" rx="10" fill="#4b7796"/>
+    <text x="406" y="120" fill="#1e2928" font-family="Arial, sans-serif" font-size="23" font-weight="700">Name</text>
+    <text x="25" y="169" fill="#465452" font-family="Arial, sans-serif" font-size="18">Do not make colour carry meaning alone.</text>
+  </g>
+
+  <g transform="translate(34 528)">
+    <rect width="532" height="184" rx="16" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <circle cx="43" cy="43" r="25" fill="#31513d"/>
+    <text x="43" y="52" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">3</text>
+    <text x="82" y="52" fill="#1e2928" font-family="Arial, sans-serif" font-size="27" font-weight="700">Keep letter shapes open</text>
+    <text x="25" y="128" fill="#18201f" font-family="Arial, sans-serif" font-size="70" font-weight="700">a e o</text>
+    <path d="M304 101 H494" stroke="#31513d" stroke-width="9" stroke-linecap="round"/>
+    <path d="M304 133 H450" stroke="#31513d" stroke-width="9" stroke-linecap="round"/>
+    <text x="25" y="169" fill="#465452" font-family="Arial, sans-serif" font-size="18">Use sturdy lines and visible inside spaces.</text>
+  </g>
+
+  <g transform="translate(34 730)">
+    <rect width="532" height="226" rx="16" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <circle cx="43" cy="43" r="25" fill="#31513d"/>
+    <text x="43" y="52" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">4</text>
+    <text x="82" y="52" fill="#1e2928" font-family="Arial, sans-serif" font-size="27" font-weight="700">Describe shared images</text>
+    <rect x="25" y="80" width="482" height="94" rx="10" fill="#e4f0e7" stroke="#52745e" stroke-width="2"/>
+    <text x="45" y="112" fill="#31513d" font-family="Arial, sans-serif" font-size="18" font-weight="700">ALT TEXT</text>
+    <text x="45" y="141" fill="#1e2928" font-family="Arial, sans-serif" font-size="17">Andrade nameplate with an AA logo</text>
+    <text x="45" y="164" fill="#1e2928" font-family="Arial, sans-serif" font-size="17">on the left.</text>
+    <text x="25" y="208" fill="#465452" font-family="Arial, sans-serif" font-size="18">Explain what another person needs to know.</text>
+  </g>
+</svg>

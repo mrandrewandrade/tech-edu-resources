@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260mm" height="92mm" viewBox="0 0 260 92" role="img" aria-labelledby="title desc">
+<title id="title">How kerf changes an outside part and an inside opening</title>
+<desc id="desc">The laser removes a band centred on the vector path. The remaining outside part is smaller while the resulting inside opening is larger.</desc>
+<rect width="260" height="92" rx="5" fill="#f7f4ee"/>
+<g font-family="system-ui,sans-serif" fill="#17364a"><text x="16" y="15" font-size="6" font-weight="700">VECTOR PATH + REMOVED BAND</text><text x="105" y="15" font-size="6" font-weight="700">OUTSIDE PART</text><text x="185" y="15" font-size="6" font-weight="700">INSIDE OPENING</text></g>
+<g fill="none"><path d="M18 27h62v42H18z" stroke="#d44836" stroke-width="6" opacity=".32"/><path d="M18 27h62v42H18z" stroke="#17364a" stroke-width=".8" stroke-dasharray="3 2"/><path d="M28 23v50M70 23v50" stroke="#68818c" stroke-width=".5"/><path d="M28 77h42" stroke="#17364a" stroke-width=".7"/><path d="M28 74l-4 3 4 3m42-6l4 3-4 3" stroke="#17364a" stroke-width=".7"/><path d="M112 30h55v36h-55z" stroke="#17364a" stroke-width="2" fill="#dce8ed"/><path d="M192 24h54v48h-54z" stroke="#17364a" stroke-width="2" fill="#dce8ed"/><path d="M205 34h28v28h-28z" stroke="#d44836" stroke-width="2" fill="#fff"/></g>
+<g font-family="system-ui,sans-serif" fill="#405a68" font-size="4.5"><text x="32" y="87">Kerf is a width, centred on the line.</text><text x="111" y="76">remaining part is smaller</text><text x="192" y="82">finished opening is larger</text></g>
+</svg>

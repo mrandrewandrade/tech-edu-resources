@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 940" role="img" aria-labelledby="title desc">
+  <title id="title">Four font styles compared using the name Andrade</title>
+  <desc id="desc">A mobile layout compares serif, sans serif, rounded display, and script fonts. Sans serif is marked as a strong starting point for a nameplate.</desc>
+  <rect width="600" height="940" rx="24" fill="#f6f0df"/>
+  <text x="34" y="56" fill="#1e2928" font-family="Arial, sans-serif" font-size="34" font-weight="700">Try fonts before choosing</text>
+  <text x="34" y="91" fill="#465452" font-family="Arial, sans-serif" font-size="20">Compare the same name.</text>
+
+  <g transform="translate(34 124)">
+    <rect width="532" height="174" rx="16" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="24" y="36" fill="#5f5137" font-family="Arial, sans-serif" font-size="19" font-weight="700">SERIF · BOOK-LIKE</text>
+    <text x="24" y="103" fill="#18201f" font-family="Georgia, 'Times New Roman', serif" font-size="61">Andrade</text>
+    <text x="24" y="148" fill="#465452" font-family="Arial, sans-serif" font-size="19">Check that thin strokes will engrave.</text>
+  </g>
+
+  <g transform="translate(34 316)">
+    <rect width="532" height="174" rx="16" fill="#e4f0e7" stroke="#52745e" stroke-width="4"/>
+    <text x="24" y="36" fill="#31513d" font-family="Arial, sans-serif" font-size="19" font-weight="700">SANS SERIF · STRONG START</text>
+    <text x="24" y="106" fill="#18201f" font-family="Arial, Verdana, sans-serif" font-size="64" font-weight="700">Andrade</text>
+    <text x="24" y="148" fill="#465452" font-family="Arial, sans-serif" font-size="19">Clear for signs and nameplates.</text>
+  </g>
+
+  <g transform="translate(34 508)">
+    <rect width="532" height="174" rx="16" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="24" y="36" fill="#5f5137" font-family="Arial, sans-serif" font-size="19" font-weight="700">ROUNDED OR DISPLAY</text>
+    <text x="24" y="106" fill="#18201f" font-family="'Arial Rounded MT Bold', Arial, sans-serif" font-size="61" font-weight="700">Andrade</text>
+    <text x="24" y="148" fill="#465452" font-family="Arial, sans-serif" font-size="19">Watch for crowding and closed spaces.</text>
+  </g>
+
+  <g transform="translate(34 700)">
+    <rect width="532" height="206" rx="16" fill="#ffffff" stroke="#c9bea4" stroke-width="3"/>
+    <text x="24" y="36" fill="#5f5137" font-family="Arial, sans-serif" font-size="19" font-weight="700">SCRIPT OR DECORATIVE</text>
+    <text x="24" y="111" fill="#18201f" font-family="'Brush Script MT', 'Segoe Script', cursive" font-size="66">Andrade</text>
+    <text x="24" y="157" fill="#465452" font-family="Arial, sans-serif" font-size="19">Joined or detailed letters can be hard</text>
+    <text x="24" y="182" fill="#465452" font-family="Arial, sans-serif" font-size="19">to read and engrave.</text>
+  </g>
+</svg>
