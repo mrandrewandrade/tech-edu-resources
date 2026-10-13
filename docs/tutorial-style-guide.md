@@ -70,6 +70,17 @@ Use this form:
 
 Use the exact words shown in the program. Put button names, menu names, filenames, and values in bold or code formatting.
 
+## Teach file naming and renaming
+
+When students download or submit files:
+
+- Put the exact required filename beside the save or export step.
+- Make every submitted filename begin with the student's number, followed by the student's last name.
+- Use the pattern `studentnumber-lastname-project.filetype`.
+- Give one fake example, such as `123456789-Smith-logo.svg`.
+- Remind students to keep the file ending, such as `.psd`, `.png`, or `.svg`.
+- Include the shared Chromebook, Windows, and Linux renaming help from `site/design-fabrication/logo-design/_rename-downloaded-file.qmd`.
+
 ## Show the course path
 
 The main beginner path is:

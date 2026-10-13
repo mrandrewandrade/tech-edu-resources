@@ -91,13 +91,18 @@ Use the **Move Tool** to move a whole line. Make small changes until both sides 
 
 ## 5. Save and export
 
+Every filename must begin with your student number, followed by your last name. Replace `studentnumber` and `lastname` below with your own information.
+
 1. Choose **File > Save as PSD**.
-2. Save the working file with a clear name.
+2. Name the working file `studentnumber-lastname-AA-logo.psd`.
 3. Keep the photograph hidden.
 4. Choose **File > Export as > SVG**.
 5. Leave **add hidden layers** off.
 6. Leave **add raster graphics** off.
-7. Choose **Save**.
+7. Name the file `studentnumber-lastname-AA-logo.svg`.
+8. Choose **Save**.
+
+Example: `123456789-Smith-AA-logo.svg`
 
 ![Photopea's SVG export window with hidden layers and raster graphics turned off.](../../assets/personal-logo-photopea/rough-sketch-to-svg/06-svg-export-settings.png){fig-alt="Photopea's SVG export window is ready to save only the visible vector lines."}
 
@@ -110,6 +115,15 @@ Continue when:
 - the line thickness matches;
 - the photograph is hidden; and
 - the SVG contains only the finished mark.
+
+## Submit
+
+Submit both files:
+
+- `studentnumber-lastname-AA-logo.psd`
+- `studentnumber-lastname-AA-logo.svg`
+
+{{< include _rename-downloaded-file.qmd >}}
 
 ## Common issues
 

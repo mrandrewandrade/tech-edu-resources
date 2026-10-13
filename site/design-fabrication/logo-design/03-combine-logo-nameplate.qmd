@@ -93,10 +93,12 @@ Check these points:
 
 ## 5. Save the PSD and PNG
 
-1. Choose **File > Save as PSD**. Name it `Andrade-nameplate-complete.psd`.
+Every filename must begin with your student number, followed by your last name. Replace `studentnumber` and `lastname` below with your own information.
+
+1. Choose **File > Save as PSD**. Name it `studentnumber-lastname-nameplate-complete.psd`.
 2. Choose **File > Export as > PNG**.
 3. Check that the size is `3300 × 1200 px`.
-4. Name it `Andrade-nameplate-complete.png`.
+4. Name it `studentnumber-lastname-nameplate-complete.png`.
 5. Choose **Save**.
 
 The PNG should show the logo and name on a transparent background.
@@ -118,7 +120,7 @@ Use this checked method:
 7. Check that the name and the pasted logo paths are both visible in the Layers panel.
 8. Choose **File > Export as > SVG**.
 9. Leave **add raster graphics** off.
-10. Choose **Save**.
+10. Name it `studentnumber-lastname-nameplate-complete.svg`, then choose **Save**.
 
 ![Photopea's Export as menu opened to the SVG choice for the all-vector nameplate.](../../assets/name-tag-photopea/lesson-3-complete/06-export-svg.png){fig-alt="Photopea File menu opened to Export as with SVG visible while the complete vector nameplate is open."}
 
@@ -136,9 +138,13 @@ Open the exported SVG. Make sure both the logo and the name appear. If the logo 
 
 Submit all three files:
 
-- `Andrade-nameplate-complete.psd`
-- `Andrade-nameplate-complete.png`
-- `Andrade-nameplate-complete.svg`
+- `studentnumber-lastname-nameplate-complete.psd`
+- `studentnumber-lastname-nameplate-complete.png`
+- `studentnumber-lastname-nameplate-complete.svg`
+
+Example: `123456789-Smith-nameplate-complete.psd`
+
+{{< include _rename-downloaded-file.qmd >}}
 
 ## Common issues
 

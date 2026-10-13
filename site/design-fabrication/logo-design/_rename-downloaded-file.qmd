@@ -1,0 +1,31 @@
+:::: {.callout-tip title="Rename a downloaded file"}
+If Photopea downloads a file with the wrong name, rename it before you submit it. Keep the file ending, such as `.psd`, `.png`, or `.svg`.
+
+::: {.panel-tabset}
+### Chromebook
+
+1. Open the **Launcher**, then open **Files**.
+2. Open **Downloads**.
+3. Select the file.
+4. Press `Ctrl+Enter`.
+5. Type the required filename, then press `Enter`.
+
+### Windows
+
+1. Open **File Explorer** with `Windows+E`.
+2. Open **Downloads**.
+3. Select the file, then press `F2`.
+4. Type the required filename, then press `Enter`.
+
+### Linux
+
+1. Open **Files**.
+2. Open **Downloads**.
+3. Select the file, then press `F2`. If that does not work, right-click the file and choose **Rename**.
+4. Type the required filename, then press `Enter`.
+:::
+
+Do not remove or change the letters after the final dot. For example, an SVG filename must still end in `.svg`.
+
+Official help: [Chromebook Files](https://support.google.com/chromebook/answer/1700055?hl=en-GB), [Windows File Explorer](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec), and [Ubuntu Files](https://help.ubuntu.com/stable/ubuntu-help/files-rename.html.en).
+::::

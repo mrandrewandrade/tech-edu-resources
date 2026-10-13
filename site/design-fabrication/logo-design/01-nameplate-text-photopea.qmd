@@ -152,13 +152,19 @@ Continue when:
 
 Save three files.
 
-1. Choose **File > Save as PSD**. Name it `Andrade-nameplate-text.psd`.
-2. Choose **File > Export as > PNG**. Name it `Andrade-nameplate-text.png`.
-3. Choose **File > Export as > SVG**. Name it `Andrade-nameplate-text.svg`.
+Every filename must begin with your student number, followed by your last name. Replace `studentnumber` and `lastname` below with your own information.
+
+1. Choose **File > Save as PSD**. Name it `studentnumber-lastname-nameplate.psd`.
+2. Choose **File > Export as > PNG**. Name it `studentnumber-lastname-nameplate.png`.
+3. Choose **File > Export as > SVG**. Name it `studentnumber-lastname-nameplate.svg`.
+
+Example: `123456789-Smith-nameplate.psd`
 
 Keep **add raster graphics** off when you export the SVG. The checkerboard means the background is transparent. It will not appear in the saved image.
 
 ![Photopea's Export as menu with PNG and SVG choices visible.](../../assets/name-tag-photopea/lesson-1-nameplate/06-export-files.png){fig-alt="Photopea File menu opened to Export as, with PNG and SVG visible."}
+
+{{< include _rename-downloaded-file.qmd >}}
 
 ### Download the example files
 
