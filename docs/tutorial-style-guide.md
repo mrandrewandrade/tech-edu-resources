@@ -75,12 +75,11 @@ Use the exact words shown in the program. Put button names, menu names, filename
 The main beginner path is:
 
 1. **N.I.C.E. Design Process** — find a need, make an idea, test it, and improve it.
-2. **Photopea Lesson 1** — build the 11 × 4 inch nameplate text and leave a 4 × 4 inch logo space.
-3. **Photopea Lesson 2** — turn a rough sketch into clean editable vector lines.
-4. **Photopea Lesson 3** — combine the logo and nameplate, then export PSD, PNG, and SVG files.
-5. **Raster, Vector, and SVG** — learn how image files work and choose the right type.
-6. **Animation** — use the same design idea across frames and time.
-7. **Name Tag Laser Cutting** — use the finished digital files to make a real object.
+2. **Two-Class Photopea Practice Assignment** — follow three worked guides to build a nameplate, trace a simple mark, and trace a multi-layer logo.
+3. **Photopea Combine Example** — combine the logo and nameplate, then export PSD, PNG, and SVG files.
+4. **Raster, Vector, and SVG** — learn how image files work and choose the right type.
+5. **Animation** — use the same design idea across frames and time.
+6. **Name Tag Laser Cutting** — use the finished digital files to make a real object.
 
 The name tag begins the fabrication section. It is not another graphics lesson. It uses the digital-design skills students already learned.
 
