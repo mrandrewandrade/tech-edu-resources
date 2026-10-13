@@ -118,6 +118,8 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("window.TEREquations.mount = mountEquations", helper)
         self.assertIn("window.MathJax.typesetPromise(pending)", helper)
         self.assertIn("window.TEREquations.mount(main)", self.read("assets/bs-learn-scroll.js"))
+        self.assertIn('"bs-learn-scroll.js": "20261013-1"', scripts)
+        self.assertIn('"tej-equations-v1.js": "20261013-1"', scripts)
         self.assertIn("terEquationSources", scripts)
         self.assertIn("Copy equation", helper)
         self.assertIn("Copy LaTeX", helper)
