@@ -1,11 +1,9 @@
 ---
 title: "Standing Turkey"
-subtitle: "Finished build photos, supplied SVG and original design source"
-description: "A photographed laser-cut wooden turkey with the supplied SVG, source attribution and slot-fit cautions."
 format:
   html:
     page-layout: full
-    toc: true
+    toc: false
     title-block-style: plain
     body-classes: "bs-editorial-page bs-title-eyebrow bs-laser-collection bs-laser-project-page"
     css:
@@ -19,51 +17,18 @@ execute:
 <div class="bs-laser-shell bs-laser-project-shell">
   <p class="bs-laser-back"><a href="gallery.qmd">← Laser-Cut Gallery</a> · <a href="../index.qmd">General materials</a></p>
 
-  <section class="bs-laser-hero">
-    <div>
-      <p class="bs-laser-kicker">Built project · SVG supplied</p>
-      <p class="bs-laser-lead">A small turkey assembled from slotted laser-cut parts. The two photographs show the actual wooden build from the front and side.</p>
-      <div class="bs-laser-actions">
-        <a class="bs-laser-button bs-laser-button-primary" href="../../assets/laser-gallery/turkey.svg" download>Download the supplied SVG</a>
-        <a class="bs-laser-button" href="https://community.glowforge.com/t/thanksgiving-turkey-box/119792">Open the original source</a>
-      </div>
-    </div>
-  </section>
+  <div class="bs-laser-actions bs-laser-project-actions">
+    <a class="bs-laser-button bs-laser-button-primary" href="../../assets/laser-gallery/turkey.svg" download>Download SVG</a>
+    <a class="bs-laser-button" href="https://community.glowforge.com/t/thanksgiving-turkey-box/119792">Original source</a>
+  </div>
 
   <figure class="bs-laser-project-figure">
     <img src="../../assets/laser-gallery/turkey-front.jpg" alt="Front view of a finished wooden turkey. A fan-shaped feather piece stands behind the rounded body, with the head and neck projecting forward.">
-    <figcaption>Front view: the feather fan, body and projecting head read as separate interlocking layers.</figcaption>
   </figure>
 
   <figure class="bs-laser-project-figure">
     <img src="../../assets/laser-gallery/turkey-side.jpg" alt="Side view of the same wooden turkey, showing the slotted head and neck piece passing through the body and feather assembly.">
-    <figcaption>Side view: the photograph makes the slot connection and layered construction easier to understand.</figcaption>
   </figure>
-
-  <section class="bs-laser-project-notes" aria-labelledby="turkey-design-title">
-    <p class="bs-laser-kicker">What the build shows</p>
-    <h2 id="turkey-design-title">The SVG becomes a standing object</h2>
-    <ul>
-      <li>The large feather piece creates the broad silhouette and supports the visual identity of the turkey.</li>
-      <li>The body and neck intersect the feather assembly instead of relying on a flat printed image.</li>
-      <li>The feet and lower geometry keep the assembled figure upright on a tabletop.</li>
-      <li>Engraved feather arcs and radial lines add detail without creating more loose parts.</li>
-    </ul>
-  </section>
-
-  <section class="bs-laser-project-warning" aria-labelledby="turkey-fit-title">
-    <p class="bs-laser-kicker">Fit before a full cut</p>
-    <h2 id="turkey-fit-title">The slot must match the measured sheet</h2>
-    <p>The original forum author reports using 1/8-inch “medium” draftboard and warns that the slots may need adjustment for other material. Measure the actual sheet, cut a small slot coupon first and revise the SVG before cutting the full turkey.</p>
-    <p>The supplied SVG document is 9 × 4 inches and contains colour-separated Feathers, Text and Blue layers. Confirm which colours are cut, scored or engraved in the local laser workflow before sending the job.</p>
-  </section>
-
-  <section class="bs-laser-project-source" aria-labelledby="turkey-source-title">
-    <p class="bs-laser-kicker">Source and rights</p>
-    <h2 id="turkey-source-title">Thanksgiving Turkey Box</h2>
-    <p>Original design shared by <strong>h.suber</strong> in the Glowforge Owners Forum’s Free Laser Designs category on November 10, 2022. The source post includes the small paintable turkey and a separate turkey-box project.</p>
-    <p><a href="https://community.glowforge.com/t/thanksgiving-turkey-box/119792">View the original forum post and its download context</a>.</p>
-    <p class="bs-laser-rights-note">Third-party design: the original creator retains their rights. The source page does not state a standard open licence, so this file is not relicensed under the site’s CC BY-SA licence. Check the original post and forum terms before redistributing or selling the design.</p>
-  </section>
+  <p class="bs-laser-project-credit">Design by h.suber. <a href="https://community.glowforge.com/t/thanksgiving-turkey-box/119792">Source</a>. Third-party file: not relicensed under the site’s CC BY-SA licence.</p>
 </div>
 ```
