@@ -1,8 +1,9 @@
 ---
 title: "Understanding Colour"
-description: "Connect human colour perception with hue, saturation, value, RGB, CMYK, opacity, and colour-selection tools."
+description: "Connect human colour perception with hue, saturation, value, RGB, CMYK, and opacity."
 sidebar: design-fabrication
-body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+css: ../../assets/accessible-design.css
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson ter-accessible-design"
 terms: [contrast, transparency, visual-hierarchy]
 toc: true
 execute: {enabled: false}
@@ -14,15 +15,8 @@ execute: {enabled: false}
 - I can explain the difference between RGB screens and CMYK printing.
 - I can explain how opacity changes the result.
 
-![Examples separate hue, saturation, and value, then show that different hues can have similar grey values.](../../assets/accessible-design/colour-components.svg){fig-alt="Examples separate hue, saturation, and value. A second row shows that different hues can have similar grey values."}
-
 ::: {.callout-note}
-The complete source text and links from the Graphics Accommodation Guide are retained below.
+The lesson keeps the strongest diagrams from the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit) and trims repeated examples so the visual sequence is easier to follow.
 :::
 
 {{< include sections/03-understanding-colour.md >}}
-
-## Try it
-
-Choose one hue. Make a vivid, muted, light, and dark version. Convert the set to greyscale and record which differences remain visible.
-

@@ -1,57 +1,82 @@
-### Recommended Fonts
+## Why this is useful
 
-Use large clear fonts, ideally sans (meaning without) serifs. Serifs are small strokes or extensions at the end of a character’s longer strokes as shown below.
+Type can look clear while you are zoomed in and fail at the actual size. Letter shape, spacing, line thickness, background, and output method all affect readability.
 
-Graphic Caption: Example of Serif vs Sans Serif Typefaces (serifs are highlighted on the left for the serif character, and at the bottom on the right for sans serif character)
+## Start with clear letter shapes
 
-Source: https://typogram.co/blog/common-styles-of-serif-fonts-you-must-know-to-improve-your-design/
+::: {.ad-wide-figure}
+![A serif capital H beside a sans serif capital H. Small finishing strokes are marked on the serif letter and shown removed from the sans serif letter.](../../assets/accessible-design/source-guide/serif-vs-sans.png)
+:::
 
-Examples of accessible (sans serif) Fonts and non-accessible Fonts are shown in the figures below.
+<p class="ad-caption">The guide uses this comparison to introduce serifs. Source: <a href="https://typogram.co/blog/common-styles-of-serif-fonts-you-must-know-to-improve-your-design/">Typogram</a>.</p>
 
-Graphic Caption: Examples of accessible Sans Serif fonts (e.g. Lato, Arial, Verdana, Helvetica) are fonts without serifs. Their block-like and less decorative appearance increases their readability, making them more accessible fonts. Arial and Helvetica are the 2 most commonly used sans (serif) fonts.  Examples of Non-Accessible Serif fonts (e.g. Times New Roman, Georgia, Courier New) have articulations (strokes/lines/extensions) protruding from the edges of the characters, making them difficult for learners with visual accommodation needs to read. Most serif fonts are not considered accessible. Times New Roman is a commonly used font we should generally avoid.
+Sans serif is a useful starting point for small labels and screen text, but category alone does not make a font accessible. A familiar serif can outperform a thin, condensed, or decorative sans serif. Compare the actual letters at the actual size.
 
-Source (for both images): https://www.apsu.edu/online/faculty/digital-accessibility/text-high-contrast.php
+Look for:
 
-#### Using Fonts Effectively
+- open spaces inside letters such as **a**, **e**, **B**, and **8**;
+- clear differences between **I**, **l**, **1**, **O**, and **0**;
+- enough line thickness for the screen, printer, cutter, or engraver;
+- comfortable spacing between letters, words, and lines;
+- a size that still works after you step back.
 
-Ensure that the text is clearly legible over all backgrounds including during camera panning shots (if producing videos).  Use of text backgrounds, outlines or drop shadow may help increase the legibility of text if used effectively.
+![Four versions of Andrade compare serif, sans serif, rounded display, and script fonts.](../../assets/name-tag-photopea/lesson-1-nameplate/font-choice-comparison.svg){fig-alt="Four versions of Andrade compare serif, sans serif, rounded display, and script fonts. The plain sans serif version remains easiest to recognize quickly."}
 
-##### Use of Text Backgrounds with an Example
+## Give text a reliable background
 
-If text is in front of an image or video, it is recommended to use a high contrast background colour behind the text to enable the text to be more visible.
+::: {.ad-wide-figure}
+![A presentation slide called Sew, Sew, Sew, Your Boat. The body text sits on a pale solid rectangle instead of directly on the changing background photograph.](../../assets/accessible-design/source-guide/text-on-photo.png)
+:::
 
-Graphic Caption: Example of a presentation slide where text is used in front of a background image.
+<p class="ad-caption">The solid panel keeps the paragraph readable even when the photograph changes behind it. Example retained from the original guide.</p>
 
-The title, “Sew, Sew, Sew Your Boat” contrasts well with the blue sky in the background, but the body text would not be very visible in front of an image with different colours. Instead a neural, high contrast background colour is used. Before we can understand what high contrast means, we need to first understand how humans perceive colour, but before that we can use strokes, drop shadows and some effects to improve reliability sometimes.
+Text placed directly on a photograph has many backgrounds at once. A solid or nearly solid panel is the most dependable fix. A shadow or outline may help a short title, but it should not be asked to rescue a paragraph.
 
-##### Use of Text Outlines vs Simply Stroking with Examples
+## Compare effects by what they do to the letters
 
-Text characters can be outlined with a high contrast colour to increase the legibility of text, especially when the intention is not to cover the background.
+::: {.ad-figure-grid}
+::: {.ad-figure-card}
+![Four text samples compare a thin stroke, a proper outline, an overly thick stroke, and an overly thick outline. Thick effects close spaces inside the letters.](../../assets/accessible-design/source-guide/outline-weights.png)
 
-Graphic Caption: Image demonstrates how "Stroking" the text is not the same as "Outlining" the text.
+### Outline with restraint
 
-Properly outlining looks great, but stroking along with outlining too thickly looks terrible and can reduce readability.
+A thin halo can separate text from a changing background. Thick effects fill counters and merge neighbouring letters. [Source example](https://stackoverflow.com/questions/4919076/outline-effect-to-text).
+:::
 
-Source: https://stackoverflow.com/questions/4919076/outline-effect-to-text
+::: {.ad-figure-card}
+![The script word Hustle in white with a black outline and a large black drop shadow.](../../assets/accessible-design/source-guide/script-shadow.png)
 
-The graphics below shows the difference between outlining (showed on the left) and stroking (showed on the right)
+### Shadow can separate
 
-Graphic Caption: An outline evenly “outlines” a line (left), while a stroke adds different thickness lines (right)
+The outline and shadow add separation, but the script letter shapes still take longer to recognize. Style does not cancel the need to test.
+:::
 
-Source: https://community.adobe.com/t5/illustrator-discussions/what-is-the-difference-between-the-outline-stroke-command-and-effect/td-p/11599143
+::: {.ad-figure-card}
+![The words Check it use blue 3D depth, dark outlines, highlights, curved internal strokes, and a shadow.](../../assets/accessible-design/source-guide/heavy-3d-text.png)
 
-##### Use of Text Drop Shadow and 3D Text With Examples:
+### Effects can compete
 
-For stylistic reasons, designers sometimes use cursive writing fonts, which can greatly reduce readability.  Sometimes, text effects like drop shadows paired with outlines can be used to increase readability as shown below.
+Depth, highlights, outlines, and internal strokes all compete with the letters. Use this treatment for display only, not instructions or small labels. [Source video](https://youtu.be/j-JrFxOk8qc).
+:::
+:::
 
-Graphic Caption: Example of a text outline with a drop shadow increases some readability of the word “Hustle”
+## Try it
 
-Source:
+Set the same short word in three fonts. Keep the size and colour identical.
 
-While visually appealing to some, 3D effects and internal curved strokes (shown in white below) can reduce readability and should be avoided.
+1. View the words at 100%.
+2. Step back or reduce the design to its final output size.
+3. Compare the thinnest lines and the open spaces inside letters.
+4. Add one effect at a time. Keep it only if recognition becomes faster.
 
-Graphic Caption:  Example of the text “Check it” with 3D effects with some readability.
+## Check your work
 
-Source: https://youtu.be/j-JrFxOk8qc
+- The type remains clear at the final size.
+- Important text does not depend on a photograph staying light or dark.
+- An outline does not close the spaces inside letters.
+- A shadow separates text without becoming a second word.
+- Decorative or 3D type is limited to short display text.
 
-Style and aesthetics are important, so let’s learn how we can use high contrast to really create an impact in our work and how others perceive it.  To do that we need to understand what is colour and how does the human brain understand colour?
+## Summary
+
+Choose the font by testing the real output, then add the least effect needed. Continue to [Understanding Colour](understanding-colour.qmd).

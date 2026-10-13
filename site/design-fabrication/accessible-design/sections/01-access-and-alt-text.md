@@ -1,31 +1,84 @@
-### Introduction
+## Why this is useful
 
-Humans are not disabled, by not providing adequate accommodations, (we) people disable (them) people.
+People are not the problem. A design becomes disabling when it depends on one way of seeing, reading, hearing, or operating it. Accessible design gives the same idea more than one reliable path.
 
-We all should be committed to being inclusive and accessible to all humans.  For our audiences, accessibility can be central to receiving a high-quality service/product, therefore it is essential that accessibility is taken into account across all our output.
+For images, that second path is often text. The description should carry the image's purpose, not list every visible object.
 
-#### Why?
+## Decide what kind of image it is
 
-“Globally, at least 2.2 billion people have a near or distance vision impairment. In at least 1 billion of these, vision impairment could have been prevented or is yet to be addressed.”
+::: {.ad-rule-grid}
+::: {.ad-rule-card}
+### Informative
 
-Source: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+The image adds a useful fact or relationship. Write a short description of what the learner needs to notice.
+:::
 
-“Colour (colour) blindness (colour vision deficiency, or CVD) affects approximately 1 in 12 men (8%) and 1 in 200 women. In the UK there are approximately 3 million colour blind people (about 4.5% of the entire population), most of whom are male. Worldwide, there are estimated to be about 300 million people with colour blindness, almost the same number of people as the entire population of the USA!”
+::: {.ad-rule-card}
+### Complex
 
-Source: https://www.colourblindawareness.org/colour-blindness/
+The image is a chart, diagram, or detailed process. Use brief alt text and explain the important data or relationships in nearby text.
+:::
 
-Graphics and Text
+::: {.ad-rule-card}
+### Functional
 
-Some people who are challenged to see well might struggle to understand graphics, figures, illustrations, pictures and written text, but if these are made with care, some people can still understand them well.
+The image is a button or link. Describe the action or destination, not the way the icon looks.
+:::
 
-This guide outlines a marginal amount of theory and some practical considerations and recommendations.
+::: {.ad-rule-card}
+### Decorative
 
-#### Descriptions and Alt Text (Embedded for Screen Readers)
+The image adds no information. Use empty alt text so a screen reader can skip it.
+:::
+:::
 
-All published graphics should include a written description (usually under the graphic) that outlines its nature/content.  Graphics published online should also embed the description (known as an alt-tag or alt-text) to aid humans using a screen reader.
+## Use the guide's Google Docs example
 
-Different software has different ways of adding alt text to graphics (please look up the way for the tool/software language/framework you are using).  In Google Docs, you can add an alt text by right clicking the image and clicking Alt Text, or left clicking the graphic and hitting [Ctrl] + [Alt]+[Y] on the keyboard.
+::: {.ad-wide-figure}
+![Google Docs with an image selected and the Image options panel open to Alt Text. The animation shows the right-click method and the Ctrl plus Alt plus Y shortcut.](../../assets/accessible-design/source-guide/alt-text-google-docs.gif)
+:::
 
-Graphic Caption: GIF showing how you can add an alt text by right clicking the graphic and click Alt text, or left clicking the image and hitting Ctrl + Alt+Y on the keyboard
+<p class="ad-caption">The original guide demonstrates two ways to open the Alt Text control in Google Docs: right-click the image and choose <strong>Alt text</strong>, or select it and press <strong>Ctrl + Alt + Y</strong>.</p>
 
-To learn more about how to write alt text, this is a great resource: https://accessibility.huit.harvard.edu/describe-content-images
+Alt text is not the visible caption. A caption helps everyone understand the figure. Alt text gives an equivalent purpose or meaning when the image is unavailable.
+
+## Write for purpose, not pixels
+
+::: {.ad-two-up}
+::: {.ad-rule-card}
+### Too literal
+
+“A screenshot with a white panel, a blue square, black text, menus, and a toolbar.”
+:::
+
+::: {.ad-rule-card}
+### Useful
+
+“Google Docs Image options panel open to Alt Text for a selected image.”
+:::
+:::
+
+The useful version identifies the tool, the control, and the reason the screenshot is present. It avoids details that do not help someone complete the task.
+
+## Try it
+
+Choose one instructional image from a lesson or handout.
+
+1. Write one sentence stating its purpose.
+2. Name the relationship, result, or action the learner must notice.
+3. Remove details that do not change the meaning.
+4. If the image is complex, add a nearby explanation that carries the full information.
+
+## Check your work
+
+- The description makes sense without “image of” or “picture of.”
+- Text shown only inside the image is available in the alt text or nearby text.
+- A decorative image has empty alt text.
+- A linked image describes where the link goes or what it does.
+- A complex figure has more than a one-line description somewhere on the page.
+
+## Summary
+
+First decide what job the image performs. Then write the shortest text that performs the same job. Continue to [Fonts & Text Effects](fonts-and-text-effects.qmd).
+
+Sources: [W3C Images Tutorial](https://www.w3.org/WAI/tutorials/images/) and [Harvard Digital Accessibility: Write helpful image descriptions](https://accessibility.huit.harvard.edu/describe-content-images).

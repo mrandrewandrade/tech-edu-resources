@@ -4,16 +4,110 @@ description: "Make graphics easier to see, read, understand, print, and fabricat
 sidebar: design-fabrication
 page-layout: full
 toc: false
-body-classes: "ter-design-fabrication bs-learn-track-index"
+css: ../../assets/accessible-design.css
+body-classes: "ter-design-fabrication bs-learn-track-index ter-accessible-design"
 execute: {enabled: false}
 ---
 
-Accessible design is part of good design. Use this short sequence with logos, nameplates, slides, posters, labels, diagrams, interfaces, and fabricated objects.
+::: {.ad-guide-hero}
+::: {}
+<p class="ad-eyebrow">Graphics Accommodation Guide</p>
+
+## Keep the idea clear from screen to final object
+
+Accessible design is not a separate style. It is the work of making sure the idea survives small type, colour changes, busy backgrounds, printing, projection, and fabrication.
+
+These four lessons use the explanations and examples from the original guide, reorganized into a shorter path for students.
+:::
+
+::: {.ad-hero-visuals}
+![A serif capital H beside a sans serif capital H. Decorative strokes are marked around the serif letter.](../../assets/accessible-design/source-guide/serif-vs-sans.png)
+
+![Hue, saturation, and value shown as three separate colour scales.](../../assets/accessible-design/source-guide/hue-saturation-value.png)
+
+![High-contrast black and white text above two low-contrast colour combinations.](../../assets/accessible-design/source-guide/good-bad-contrast.png)
+:::
+:::
 
 ## Zoom out before choosing {#zoom-out-before-choosing}
 
-Check a design at its real output size and from farther away before choosing a font, colour, line weight, or level of detail.
+Check the design at its real output size and from the expected viewing distance before choosing a font, colour, line thickness, or level of detail.
 
-{{< include ../../includes/generated/design-fabrication-accessible-design-toc.md >}}
+::: {.ad-check-strip}
+::: {}
+**See it**
 
-The lessons paraphrase and reorganize the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit). Source links and graphic descriptions are retained in the relevant lesson.
+Can the important parts be found quickly?
+:::
+::: {}
+**Read it**
+
+Do size, spacing, and letter shapes hold up?
+:::
+::: {}
+**Understand it**
+
+Does the message work without colour alone?
+:::
+::: {}
+**Make it**
+
+Will the design survive print, projection, or fabrication?
+:::
+:::
+
+## Follow the guide
+
+::: {.ad-path-grid}
+::: {.ad-path-card}
+![Google Docs showing the Alt text panel for a selected image.](../../assets/accessible-design/source-guide/alt-text-google-docs.gif)
+
+::: {}
+<span class="ad-step">Lesson 1</span>
+
+### [Access & Alt Text](access-and-alt-text.qmd)
+
+Decide what an image contributes, then describe that purpose for someone who cannot see it.
+:::
+:::
+
+::: {.ad-path-card}
+![The words Properly stroked, Properly outlined, Thickly stroked, and Thickly outlined show how line weight changes letter shapes.](../../assets/accessible-design/source-guide/outline-weights.png)
+
+::: {}
+<span class="ad-step">Lesson 2</span>
+
+### [Fonts & Text Effects](fonts-and-text-effects.qmd)
+
+Choose readable type and use backgrounds, outlines, and shadows only when they help the letters stay clear.
+:::
+:::
+
+::: {.ad-path-card}
+![A colour wheel shown in full colour and in greyscale. Several different hues become similar grey values.](../../assets/accessible-design/source-guide/colour-value-wheel.png)
+
+::: {}
+<span class="ad-step">Lesson 3</span>
+
+### [Understanding Colour](understanding-colour.qmd)
+
+Separate hue, saturation, and value, then connect them to RGB, CMYK, opacity, and output.
+:::
+:::
+
+::: {.ad-path-card}
+![Three panels label red with green text and blue with lighter blue text as bad choices, and green with pale yellow text as a good choice.](../../assets/accessible-design/source-guide/colour-choices.png)
+
+::: {}
+<span class="ad-step">Lesson 4</span>
+
+### [Contrast, Emphasis & Output](contrast-and-output.qmd)
+
+Measure contrast, add a second cue beside colour, and test the actual screen, print, or fabricated result.
+:::
+:::
+:::
+
+::: {.ad-source-note}
+**Source and approach.** The sequence is adapted from the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit). The guide's examples, captions, and source links are kept where they teach the idea best. New graphics are used only when the website needs a clearer or more flexible explanation.
+:::

@@ -1,8 +1,9 @@
 ---
 title: "Contrast, Emphasis & Output"
-description: "Use contrast and more than colour alone, then test the final screen, print, or fabricated result."
+description: "Use measurable contrast and more than colour alone, then test the final result."
 sidebar: design-fabrication
-body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+css: ../../assets/accessible-design.css
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson ter-accessible-design"
 terms: [contrast, audience, prototype]
 toc: true
 execute: {enabled: false}
@@ -11,17 +12,11 @@ execute: {enabled: false}
 ## Learning goals
 
 - I can use colour for emphasis without making colour the only cue.
-- I can test contrast at the final size and on the final output.
-- I can revise a design after another person tries to read or use it.
-
-![Four panels compare text over a busy background, text on a solid background, a thin outline, and a heavy 3D effect.](../../assets/accessible-design/text-legibility-examples.svg){fig-alt="The solid background and thin outline examples remain easiest to read; the busy background and heavy 3D effect interfere with the letters."}
+- I can measure text and graphic contrast.
+- I can test the final screen, print, or fabricated result and revise it.
 
 ::: {.callout-note}
-The complete source text and links from the Graphics Accommodation Guide are retained below.
+The visual examples come from the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit). WCAG 2.2 ratios are added so students have a measurable test as well as a visual comparison.
 :::
 
 {{< include sections/04-contrast-and-output.md >}}
-
-## Test the real result
-
-Show the design without explaining it. Ask what the person noticed first and what was difficult to understand. For a fabricated design, make a small sample and check thin lines, small gaps, inside spaces, and contrast before making the final piece.

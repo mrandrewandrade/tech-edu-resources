@@ -1,69 +1,113 @@
-#### Apply what we learnt: Using Contrast to Increase Readability
+## Why this is useful
 
-The point of understanding how humans understand colour is to create good designs.
+“Looks different” is not a reliable contrast test. Two colours can have different hues and still be almost the same lightness. Measure the pair, then test the real output.
 
-Some additional readings:
+## Use a measurable minimum
 
-https://medium.muz.li/the-science-of-color-contrast-an-expert-designers-guide-33e84c41d156
+::: {.ad-check-strip}
+::: {}
+**4.5:1**
 
-https://medium.muz.li/the-ultimate-ux-guide-to-color-design-4d0a18a706ed
+Minimum contrast for normal-size text.
+:::
+::: {}
+**3:1**
 
-https://www.accessibility-developer-guide.com/knowledge/colours-and-contrast/how-to-calculate/
+Minimum for large text, at least 24 px regular or about 18.5 px bold.
+:::
+::: {}
+**3:1**
 
-Use colours which achieve a good contrast between foreground and background.
+Minimum for essential icons, controls, and graphic boundaries.
+:::
+::: {}
+**Do not round**
 
-##### Example 1: Good Contrast vs Bad Contrast
+A result of 4.49:1 does not meet 4.5:1.
+:::
+:::
 
-Image caption: The above image provides an example of Good Contrast and Bad Contrast. Lines 1 & 2: Good contrast written in black text with white background and white text with black background. Lines 3 & 4 demonstrate bad contrast written in lime green text with yellow background and grey text with light grey background.
+These are WCAG 2.2 Level AA thresholds for digital content. They are a starting point, not a promise that every person or output device will find the result easy to use. Aim higher when you can.
 
-Source: https://aatt.d.umn.edu/february-color-and-contrast
+## Compare the guide's examples
 
-##### Example 2: Good Contrast vs Bad Contrast with Colours
+::: {.ad-figure-grid}
+::: {.ad-figure-card}
+![Black text on white and white text on black are labelled good contrast. Pale green on yellow and pale grey on light grey are labelled bad contrast.](../../assets/accessible-design/source-guide/good-bad-contrast.png)
 
-Image caption:  Image with texts with different background and text colours, that say "good contrast" and "bad contrast" depending on their contrast.
+### Light-dark difference matters
 
-Source: https://www.localguidesconnect.com/t5/General-Discussion/Web-Accessibility-Good-Contrast/td-p/3115065
+The top two pairs have a large value difference. The bottom pairs do not. [Source noted in the guide](https://aatt.d.umn.edu/february-color-and-contrast).
+:::
 
-##### Example 3:
+::: {.ad-figure-card}
+![Six colour pairs place bad contrast examples in a left column and better contrast versions in a right column.](../../assets/accessible-design/source-guide/contrast-grid.png)
 
-Image caption: Good (right) and bad (left) pairings of different coloured text on different coloured backgrounds.
+### Hue is not enough
 
-Source: https://www.csun.edu/universal-design-center/web-accessibility-criteria-color-contrast
+Changing the background value makes each word easier to separate, even when the hue remains similar. [Source noted in the guide](https://www.localguidesconnect.com/t5/General-Discussion/Web-Accessibility-Good-Contrast/td-p/3115065).
+:::
 
-Example 4:
+::: {.ad-figure-card}
+![Green text on red and pale blue text on blue are labelled bad choices. Pale yellow text on dark green is labelled a good choice.](../../assets/accessible-design/source-guide/colour-choices.png)
 
-Image caption: Blue on red (left) is bad contrast while red on pink is good contrast (right)
+### Some pairs interfere
 
-https://webstrategies.com/contrast-as-a-principle-of-design/
+Red-green and similar-blue pairs can fail for different reasons. The final pair adds a clear light-dark difference. [Source noted in the guide](https://www.sitepoint.com/typography-cheat-sheet/).
+:::
+:::
 
-Example 5:
+## Do not use colour alone
 
-Image caption: 6 pairs of Good and Bad Contrast with Different Background Colours
+If colour communicates a status, category, warning, or selected state, add another cue.
 
-Source: https://www.apsu.edu/online/faculty/digital-accessibility/text-high-contrast.php
+::: {.ad-rule-grid}
+::: {.ad-rule-card}
+### Add a label
 
-Example 6: Poor Colour Choices
+Write **Pass** and **Revise**, not just green and red dots.
+:::
 
-Image caption: 2 examples of bad colour pair choices (green and red or two similar shades of blue) and 1 good colour pair choice (Dark Green with a light yellow text)
+::: {.ad-rule-card}
+### Add a shape or pattern
 
-Source: https://www.sitepoint.com/typography-cheat-sheet/
+Use different marker shapes, line styles, or fill patterns in a chart.
+:::
 
-Example 7: Contrast and Colour
+::: {.ad-rule-card}
+### Add position
 
-Image caption: 9 pairs examples of bad choices (green and red or two similar shades of blue) and one good choice (Dark Green with a light yellow text)
+Keep categories in a stable order and label them directly.
+:::
 
-Source: https://mockitt.wondershare.com/ui-ux-design/contrasting-colours.html
+::: {.ad-rule-card}
+### Add emphasis
 
-Example 8: Good
+Use weight, size, an icon, or a border together with colour.
+:::
+:::
 
-##### Using Color for Emphasis
+## Test the real result
 
-Don’t rely entirely on colour as a sole way to highlight something important. When using colour to emphasise text, use another visual indicator to differentiate it such as boldface, patterns/shapes highlighting, or increasing text size.  Do not use italics which makes it challenging to read or underline text which can be confused with embedded hyperlinks links.
+1. Check the design at its final size, not only while zoomed in.
+2. Use a contrast checker for digital text and essential graphics.
+3. View a greyscale copy.
+4. Test on the target projector, printer, material, cutter, or engraver.
+5. Show it without explaining it. Ask what the person noticed first and what was difficult to understand.
+6. Revise and test again.
 
-Where graphics use colour, we should ensure that colour is not the only way of understanding the information – for example by using labelling and icons – so that the information is accessible to people with colorblindness.
+For fabrication, make a small sample before the final piece. Check thin lines, small gaps, inside spaces, surface finish, and lighting.
 
-- Avoid graphic sequences which are out of step with simultaneous verbal information.
-- Spot-check in monochrome to ensure graphics are accessible to people with colorblindness.
-- The essential information published in graphics on BBC Online should also be explained in the text.
+## Check your work
 
-[1] Information from RNIB and Colour blindness UK
+- Normal-size text meets at least 4.5:1.
+- Large text and essential non-text graphics meet at least 3:1.
+- Colour is never the only signal.
+- Text over a photograph has a dependable background or a tested halo.
+- The real output has been checked from the expected viewing distance.
+
+## Summary
+
+Measure contrast, add a second cue, and test the actual output. Return to the [Accessible Design guide](index.qmd) and use the four checks before publishing.
+
+Sources: [W3C Understanding Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), [W3C Understanding Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html), and [W3C Understanding Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html).
