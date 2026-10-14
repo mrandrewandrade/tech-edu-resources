@@ -20,14 +20,9 @@ You will identify a series circuit and calculate total resistance, current, volt
 
 - [Teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
 - [Make a copy of the six-question student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
+- [Student worked models for Questions 2 and 4](https://docs.google.com/document/d/1W-SnG4eF0N2PR0vZ3hV8-P-0mhAmmZ-LaEedMVeLZpw/edit)
 - [Worked solution: Question 2](#question-2-complete-series-analysis)
 - [Worked solution: Question 4](#question-4-choose-a-dropping-resistor)
-
-**Later Series Circuits A practice**
-
-- [Teaching slides](https://docs.google.com/presentation/d/1QdstatFdLPdx21E9ZOB6CP5auibo5PBbXT2lClN7h2Q/edit)
-- [Make a copy of the current student handout](https://docs.google.com/document/d/1H-qRzwwkcFlVGMQosA4oRwvChkJVA6_kKXd9LV-FXdU/copy)
-- [Worked answers for Questions 2 and 4](https://docs.google.com/document/d/1Pb0UCAEnKD3zM9zavkzEK_uirPL82dNStkSvPEBmV4M/copy)
 
 **Core references**
 
@@ -130,7 +125,7 @@ $$
 P_R=V_RI=(3.0\,\mathrm{V})(80\times10^{-3}\,\mathrm{A})=0.240\,\mathrm{W}
 $$ {#eq-series-worked-q4-power}
 
-**Final answer:** the ideal value is $38\,\Omega$. Choose a common $39\,\Omega$ resistor rated for at least $0.5\,\mathrm{W}$.
+**Final answer:** the calculated value is $37.5\,\Omega$. Choose the next common 5% value, $39\,\Omega$, rated for at least $0.5\,\mathrm{W}$.
 
 **Key note:** A $0.25\,\mathrm{W}$ resistor is too close to the calculated $0.240\,\mathrm{W}$ load.
 :::
