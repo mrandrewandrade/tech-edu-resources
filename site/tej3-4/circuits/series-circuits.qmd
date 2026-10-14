@@ -16,16 +16,18 @@ You will identify a series circuit and calculate total resistance, current, volt
 
 ## Class materials
 
-**Series Circuits A**
+**Package 2: Parallel Review and Series Circuits**
+
+- [Teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
+- [Make a copy of the six-question student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
+- [Worked solution: Question 2](#question-2-complete-series-analysis)
+- [Worked solution: Question 4](#question-4-choose-a-dropping-resistor)
+
+**Later Series Circuits A practice**
 
 - [Teaching slides](https://docs.google.com/presentation/d/1QdstatFdLPdx21E9ZOB6CP5auibo5PBbXT2lClN7h2Q/edit)
 - [Make a copy of the current student handout](https://docs.google.com/document/d/1H-qRzwwkcFlVGMQosA4oRwvChkJVA6_kKXd9LV-FXdU/copy)
 - [Worked answers for Questions 2 and 4](https://docs.google.com/document/d/1Pb0UCAEnKD3zM9zavkzEK_uirPL82dNStkSvPEBmV4M/copy)
-
-**Parallel review and introduction to series**
-
-- [Review slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
-- [Make a copy of the review problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
 
 **Core references**
 
@@ -33,6 +35,14 @@ You will identify a series circuit and calculate total resistance, current, volt
 - [Standard 5% resistor values, page 2](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf#page=2)
 - [Make a copy of the General Schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/copy)
 - **Teacher answers:** restricted
+
+## Textbook and laboratory support
+
+- [Grob Chapter 4: Series Circuits](https://drive.google.com/file/d/1QnYoUvCkByIMJyCId-vLra24NE9neKHD/view) - the main reference for the one-path rules and calculations.
+- [Grob Chapter 5: Parallel Circuits](https://drive.google.com/file/d/1QwATa8MLIPw76NxLfrvFmx3k-sqrJPZ1/view) - review support for Question 1.
+- [Grob Problems Manual](https://drive.google.com/file/d/125X4YkWq2HO8evqYM9jRUuKPsbMXHhdG/view) - solved examples and additional Chapter 4 and 5 practice.
+- [Experiment 4-1: Series Circuits](https://drive.google.com/file/d/10eVEuQ5qLZKLGSWI0tIA8n_mbo_TYQ2B/view) - build and verify the core rules.
+- [Experiment 4-2: Series Circuits - Resistance](https://drive.google.com/file/d/10YkhmOECyUzPF_oUh4Erqb1SjhIlKekT/view) - optional extension.
 
 ## Series and parallel
 
@@ -87,7 +97,7 @@ Calculate the circuit first. Build the same series and parallel circuits in Tink
 
 Questions 2 and 4 are provided as student models. Complete the other questions independently using the same GUESS structure.
 
-::: {.callout-note collapse="true" title="Question 2: Complete series analysis"}
+::: {.callout-note collapse="true" title="Question 2: Complete series analysis" #question-2-complete-series-analysis}
 **Given:** $V_T=15.0\,\mathrm{V}$, $R_1=1.0\,\mathrm{k\Omega}$, $R_2=2.2\,\mathrm{k\Omega}$, $R_3=3.3\,\mathrm{k\Omega}$.
 
 $$
@@ -105,7 +115,7 @@ Using $V_k=I_TR_k$ gives $V_1=2.307692\ldots\,\mathrm{V}$, $V_2=5.076923\ldots\,
 **Check:** Use the unrounded values: $V_1+V_2+V_3=15.0\,\mathrm{V}$.
 :::
 
-::: {.callout-note collapse="true" title="Question 4: Choose a dropping resistor"}
+::: {.callout-note collapse="true" title="Question 4: Choose a dropping resistor" #question-4-choose-a-dropping-resistor}
 **Given:** a $6.0\,\mathrm{V}$, $80\,\mathrm{mA}$ lamp on a $9.0\,\mathrm{V}$ source.
 
 $$

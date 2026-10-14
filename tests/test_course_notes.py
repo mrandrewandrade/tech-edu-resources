@@ -40,7 +40,8 @@ class CourseNotesManifestTests(unittest.TestCase):
             ],
         )
         self.assertEqual(len(routes_by_course["tej"]), 17)
-        self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/circuits/series-circuits.html")
+        self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/circuits/parallel-circuits.html")
+        self.assertEqual(routes_by_course["tej"][1], "/commons/tej3-4/circuits/series-circuits.html")
         self.assertEqual(
             routes_by_course["tej"][-1],
             "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",

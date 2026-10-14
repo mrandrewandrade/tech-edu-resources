@@ -608,39 +608,51 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 1,
-      "route": "/commons/tej3-4/circuits/series-circuits.html",
-      "source": "tej3-4/circuits/series-circuits.qmd",
-      "title": "Series Circuits",
-      "summary": "Calculate current, voltage drops, resistance, and power in one-path circuits.",
-      "use": "Series rules appear in sensor chains, voltage drops, and component strings.",
+      "route": "/commons/tej3-4/circuits/parallel-circuits.html",
+      "source": "tej3-4/circuits/parallel-circuits.qmd",
+      "title": "Package 1: Basic Electricity and Parallel Circuits",
+      "summary": "Connect basic electrical quantities, components, measurement, computer loads, and parallel-circuit calculations.",
+      "use": "Parallel paths explain why loads in computers, vehicles, and buildings operate independently.",
       "resources": [
         {
-          "label": "Review Slides",
-          "url": "https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit"
+          "label": "Package 1 Slides",
+          "url": "https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit"
         },
         {
-          "label": "Review Problem Set",
-          "url": "https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy"
+          "label": "Parallel-Circuit Handout",
+          "url": "https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/copy"
         },
         {
-          "label": "Series A Slides",
-          "url": "https://docs.google.com/presentation/d/1QdstatFdLPdx21E9ZOB6CP5auibo5PBbXT2lClN7h2Q/edit"
+          "label": "Photo Submission",
+          "url": "https://docs.google.com/document/d/12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g/copy"
         },
         {
-          "label": "Series A Handout",
-          "url": "https://docs.google.com/document/d/1H-qRzwwkcFlVGMQosA4oRwvChkJVA6_kKXd9LV-FXdU/copy"
+          "label": "Student Models: Questions 1 and 2",
+          "url": "https://docs.google.com/document/d/1kaUIVX08SYaNkRgvyr9Odzhq9mKNebJ2oXO7mMRjmek/edit"
         },
         {
-          "label": "Worked Answers: Questions 2 and 4",
-          "url": "https://docs.google.com/document/d/1Pb0UCAEnKD3zM9zavkzEK_uirPL82dNStkSvPEBmV4M/copy"
+          "label": "Grob Chapter 5",
+          "url": "https://drive.google.com/file/d/1QwATa8MLIPw76NxLfrvFmx3k-sqrJPZ1/view"
+        },
+        {
+          "label": "Problems Manual",
+          "url": "https://drive.google.com/file/d/125X4YkWq2HO8evqYM9jRUuKPsbMXHhdG/view"
+        },
+        {
+          "label": "Experiment 5-1",
+          "url": "https://drive.google.com/file/d/13LHObgjmcIDpGDcDyTX0zj0EsjIugOLD/view"
+        },
+        {
+          "label": "Experiment 5-2",
+          "url": "https://drive.google.com/file/d/13QopEG2wKByrspBynRIVA3n8QYQwuuVS/view"
+        },
+        {
+          "label": "Experiment 5-3",
+          "url": "https://drive.google.com/file/d/13TPd66TjFbvxcFJMJoGYkHXKL_robfmf/view"
         },
         {
           "label": "Quick Reference",
           "url": "https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf"
-        },
-        {
-          "label": "5% Resistor Values",
-          "url": "https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf#page=2"
         },
         {
           "label": "Schematic + GUESS",
@@ -658,7 +670,7 @@
       "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
       "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
       "previous_route": null,
-      "next_route": "/commons/tej3-4/circuits/parallel-circuits.html",
+      "next_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_starts_new_track": false,
       "sequence_index": 24
     },
@@ -668,31 +680,39 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 2,
-      "route": "/commons/tej3-4/circuits/parallel-circuits.html",
-      "source": "tej3-4/circuits/parallel-circuits.qmd",
-      "title": "Parallel Circuits",
-      "summary": "Calculate branch currents, common voltage, equivalent resistance, and power.",
-      "use": "Parallel paths keep loads operating independently in buildings, vehicles, and computers.",
+      "route": "/commons/tej3-4/circuits/series-circuits.html",
+      "source": "tej3-4/circuits/series-circuits.qmd",
+      "title": "Package 2: Parallel Review and Series Circuits",
+      "summary": "Review one parallel calculation, then calculate current, voltage drops, resistance, and power in one-path circuits.",
+      "use": "Series rules appear in indicator lights, sensor chains, voltage drops, and component strings.",
       "resources": [
         {
-          "label": "Review Slides",
+          "label": "Package 2 Slides",
           "url": "https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit"
         },
         {
-          "label": "Review Problem Set",
+          "label": "Six-Question Problem Set",
           "url": "https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy"
         },
         {
-          "label": "Parallel Handout",
-          "url": "https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/copy"
+          "label": "Grob Chapter 4",
+          "url": "https://drive.google.com/file/d/1QnYoUvCkByIMJyCId-vLra24NE9neKHD/view"
         },
         {
-          "label": "Photo Submission",
-          "url": "https://docs.google.com/document/d/12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g/copy"
+          "label": "Grob Chapter 5 Review",
+          "url": "https://drive.google.com/file/d/1QwATa8MLIPw76NxLfrvFmx3k-sqrJPZ1/view"
         },
         {
-          "label": "Worked Answers: Questions 2 and 4",
-          "url": "https://docs.google.com/document/d/1Pb0UCAEnKD3zM9zavkzEK_uirPL82dNStkSvPEBmV4M/copy"
+          "label": "Problems Manual",
+          "url": "https://drive.google.com/file/d/125X4YkWq2HO8evqYM9jRUuKPsbMXHhdG/view"
+        },
+        {
+          "label": "Experiment 4-1",
+          "url": "https://drive.google.com/file/d/10eVEuQ5qLZKLGSWI0tIA8n_mbo_TYQ2B/view"
+        },
+        {
+          "label": "Experiment 4-2",
+          "url": "https://drive.google.com/file/d/10YkhmOECyUzPF_oUh4Erqb1SjhIlKekT/view"
         },
         {
           "label": "Quick Reference",
@@ -707,6 +727,14 @@
           "url": "https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/copy"
         },
         {
+          "label": "Later Series A Slides",
+          "url": "https://docs.google.com/presentation/d/1QdstatFdLPdx21E9ZOB6CP5auibo5PBbXT2lClN7h2Q/edit"
+        },
+        {
+          "label": "Later Series A Handout",
+          "url": "https://docs.google.com/document/d/1H-qRzwwkcFlVGMQosA4oRwvChkJVA6_kKXd9LV-FXdU/copy"
+        },
+        {
           "label": "Teacher Answers",
           "restricted": true
         }
@@ -717,7 +745,7 @@
       "track_hub": "tej3-4/electronics-library/index.qmd",
       "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
       "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
-      "previous_route": "/commons/tej3-4/circuits/series-circuits.html",
+      "previous_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_starts_new_track": false,
       "sequence_index": 25
@@ -765,7 +793,7 @@
       "track_hub": "tej3-4/electronics-library/index.qmd",
       "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
       "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
-      "previous_route": "/commons/tej3-4/circuits/parallel-circuits.html",
+      "previous_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_starts_new_track": false,
       "sequence_index": 26

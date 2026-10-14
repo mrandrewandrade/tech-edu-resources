@@ -81,8 +81,8 @@ For a Casio calculator, enter one calculation per line. Use `EXP` for powers of 
 
 Use these notes with the matching teaching slides and question sheet.
 
-1. [Series circuits](series-circuits.qmd): one current path, voltage drops, resistance, and power.
-2. [Parallel circuits](parallel-circuits.qmd): common voltage, branch currents, equivalent resistance, and power.
+1. [Parallel circuits](parallel-circuits.qmd): common voltage, branch currents, equivalent resistance, and power.
+2. [Series circuits](series-circuits.qmd): one current path, voltage drops, resistance, and power.
 3. [Series-parallel circuits](series-parallel-circuits.qmd): identify groups, reduce, solve, expand, and check.
 4. [Kirchhoff's laws](kirchhoffs-laws.qmd): write current and voltage equations for networks that do not reduce directly.
 5. [Linear algebra for circuits](linear-algebra-circuits.qmd): solve several node or loop equations together.
@@ -97,12 +97,24 @@ Use these notes with the matching teaching slides and question sheet.
 - [Standard 5% resistor values, page 2](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf#page=2)
 - [Make a copy of the General Schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/copy)
 
-### Parallel review and introduction to series
+### Package 1: Basic electricity to computer loads
+
+- [Notes: Parallel Circuits](parallel-circuits.qmd)
+- [Teaching slides](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
+- [Make a copy of the parallel-circuit calculations handout](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/copy)
+- [Make a copy of the circuit-calculations photo submission](https://docs.google.com/document/d/12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g/copy)
+- [Student models for Questions 1 and 2](https://docs.google.com/document/d/1kaUIVX08SYaNkRgvyr9Odzhq9mKNebJ2oXO7mMRjmek/edit)
+
+### Package 2: Parallel review and series circuits
 
 - [Notes: Parallel Circuits](parallel-circuits.qmd)
 - [Notes: Series Circuits](series-circuits.qmd)
 - [Teaching slides](https://docs.google.com/presentation/d/1kT3OA4uzqouoM693cY6Sl6T6LTt56Ee5V22iqucsO60/edit)
 - [Make a copy of the student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
+- [Grob Chapter 4: Series Circuits](https://drive.google.com/file/d/1QnYoUvCkByIMJyCId-vLra24NE9neKHD/view)
+- [Grob Chapter 5: Parallel Circuits](https://drive.google.com/file/d/1QwATa8MLIPw76NxLfrvFmx3k-sqrJPZ1/view)
+- [Grob Problems Manual](https://drive.google.com/file/d/125X4YkWq2HO8evqYM9jRUuKPsbMXHhdG/view)
+- [Experiment 4-1](https://drive.google.com/file/d/10eVEuQ5qLZKLGSWI0tIA8n_mbo_TYQ2B/view) and [Experiment 4-2](https://drive.google.com/file/d/10YkhmOECyUzPF_oUh4Erqb1SjhIlKekT/view)
 
 ### Series Circuits A
 
@@ -127,12 +139,6 @@ Use these notes with the matching teaching slides and question sheet.
 - [Notes](linear-algebra-circuits.qmd)
 - [Teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
 - [Make a copy of the current student problem set](https://docs.google.com/document/d/1DmXKhtsC0AEfR24zmJSCQgU_JLvrGYfIFtn9nOvnmbI/copy)
-
-### Earlier parallel-circuit practice
-
-- [Make a copy of the parallel-circuit calculations handout](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/copy)
-- [Make a copy of the circuit-calculations photo submission](https://docs.google.com/document/d/12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g/copy)
-- [Make a copy of the worked answers for Questions 2 and 4](https://docs.google.com/document/d/1Pb0UCAEnKD3zM9zavkzEK_uirPL82dNStkSvPEBmV4M/copy)
 
 Worked solutions for selected questions are included on the relevant notes pages. Teachers can [email Andrew for complete answer keys](mailto:andrew@andrewandrade.ca?subject=TEJ%20circuit%20answer%20key); answer-key files are not linked publicly.
 

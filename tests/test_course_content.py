@@ -26,7 +26,14 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("Fabrication Plate Builder", design)
         self.assertIn("<em>(planned)</em>", tej)
         self.assertIn('data-bs-track-id="circuits-electronics"', tej)
-        self.assertIn('href="circuits/series-circuits.html">1. Series Circuits</a>', tej)
+        self.assertIn(
+            'href="circuits/parallel-circuits.html">1. Package 1: Basic Electricity and Parallel Circuits</a>',
+            tej,
+        )
+        self.assertIn(
+            'href="circuits/series-circuits.html">2. Package 2: Parallel Review and Series Circuits</a>',
+            tej,
+        )
         self.assertIn('data-bs-track-id="engineering-preparation"', tej)
 
     def test_retired_lessons_are_compatibility_only(self) -> None:

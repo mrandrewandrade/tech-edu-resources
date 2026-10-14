@@ -95,10 +95,10 @@ website:
         - section: "5. Circuits and Electronics"
           href: "tej3-4/electronics-library/index.qmd"
           contents:
-            - text: "1. Series Circuits"
-              href: "tej3-4/circuits/series-circuits.qmd"
-            - text: "2. Parallel Circuits"
+            - text: "1. Package 1: Basic Electricity and Parallel Circuits"
               href: "tej3-4/circuits/parallel-circuits.qmd"
+            - text: "2. Package 2: Parallel Review and Series Circuits"
+              href: "tej3-4/circuits/series-circuits.qmd"
             - text: "3. Series-Parallel Circuits"
               href: "tej3-4/circuits/series-parallel-circuits.qmd"
             - text: "4. Kirchhoff's Laws"
