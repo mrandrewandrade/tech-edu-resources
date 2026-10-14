@@ -76,23 +76,86 @@ Submit **ONE completed Google Doc** in Google Classroom. It must contain a BEFOR
 
 Do this before changing any settings. Sign in to your own Linux account and show the full desktop with its wallpaper and bottom panel visible. Press **Print Screen (PrtSc)**. If nothing happens, try **Fn + PrtSc** or search the application menu for **Screenshot**. Save the picture in your Pictures folder and insert it into the assignment Google Doc.
 
-### 2. Make the three required changes
+::: {.callout-note title="What a clear BEFORE screenshot looks like"}
+![A typical Linux Mint Xfce desktop before customization, with the wallpaper and full panel visible.](https://linuxiac.b-cdn.net/wp-content/uploads/2024/07/linuxmint-22-xfce-desktop.jpg){fig-alt="A typical Linux Mint Xfce desktop with a green wallpaper, desktop icons, and the complete bottom panel visible"}
 
-Use the settings already included with Linux Mint. Do not download themes, scripts, packages, or desktop effects without teacher permission.
+Show the whole desktop, not a cropped corner. Keep the wallpaper and full panel visible. This reference image is not a student submission. [Image source: Linuxiac](https://linuxiac.com/linux-mint-22-wilma/).
+:::
 
-1. **Wallpaper:** Right-click an empty part of the desktop, open **Desktop Settings > Background**, and choose a different built-in picture.
-2. **Theme or icons:** Open **Menu > Settings > Appearance**. Change the built-in style or choose a different built-in icon set. Keep text and controls readable.
-3. **Panel:** Right-click the panel, open **Panel > Panel Preferences**, and change its row size, position, or appearance. Do not delete the panel or remove the application menu, network, sound, or clock controls.
+### 2. Get inspiration from Xfce makeovers
+
+Watch the parts that interest you. Use the built-in settings in the next section. You do **not** need to copy either design, download a theme, run terminal commands, or install Compiz.
+
+::: {.grid}
+::: {.g-col-12 .g-col-lg-6}
+{{< video https://www.youtube.com/watch?v=-s1KOzdj5ow >}}
+
+**[Customize Your Linux Mint XFCE: A Simple Guide](https://www.youtube.com/watch?v=-s1KOzdj5ow)** by Specter-3924 shows a complete Linux Mint Xfce desktop makeover.
+:::
+
+::: {.g-col-12 .g-col-lg-6}
+{{< video https://www.youtube.com/watch?v=B3WN0KGyMGw >}}
+
+**[Making XFCE Look Better](https://www.youtube.com/watch?v=B3WN0KGyMGw)** by NH Soft: start at **3:33** for wallpaper, **7:32** for themes, and **12:49** for the panel. Skip downloads, terminal commands, and the later Compiz effects.
+:::
+:::
+
+#### Three realistic built-in-only design ideas
+
+Pick one direction or mix ideas. Theme names can vary slightly between classroom computers.
+
+| Design direction | Wallpaper | Theme or icons | Panel |
+|:--|:--|:--|:--|
+| **Calm study desktop** | Choose a quiet nature or abstract built-in image | Try a light Mint-Y style and a simple built-in icon set | Keep it at the bottom and set a comfortable row size around 38 to 42 pixels |
+| **Dark coding desktop** | Choose a darker built-in image with little visual clutter | Try a built-in dark Mint-Y style and readable icons | Move it to the top or keep it at the bottom, then make it slightly taller |
+| **Easy-to-see desktop** | Choose an uncluttered image that does not hide labels | Choose the clearest high-contrast built-in style available | Increase the row size to about 46 to 52 pixels and keep the menu, network, sound, and clock easy to find |
 
 ![Example of a clean customized Xfce desktop with a calm wallpaper, tidy File Manager, readable Terminal, and a simple bottom panel.](../../assets/linux-desktop-example.svg){fig-alt="A customized Xfce-style desktop with a blue and green wallpaper, a tidy file manager, a readable dark terminal, and a bottom panel containing favourite applications and system controls"}
 
-The image is a reference, not a required design. If a setting looks wrong, return to the same settings window and change it back. If you cannot restore the panel or essential controls, stop and ask for help.
+This course example shows one possible finished direction. Your design should reflect your own choices and remain readable.
 
-### 3. Save your AFTER screenshot
+### 3. Make the three required changes
+
+Use the settings already included with Linux Mint. Do not download themes, scripts, packages, or desktop effects without teacher permission.
+
+#### Change A: wallpaper
+
+![Xfce Desktop Settings open to the Background controls and wallpaper choices.](https://itsfoss.com/content/images/wordpress/2018/07/7-800x546.jpg){fig-alt="Xfce Desktop Settings showing the Background tab, folder selector, style control, colour controls, and wallpaper thumbnails"}
+
+1. Right-click an empty part of the desktop.
+2. Select **Desktop Settings**, then **Background**.
+3. Choose a different built-in picture. Close the window to see the result.
+
+Example: choose a simple image whose light and dark areas still let you read desktop icon labels. [Screenshot source: It's FOSS](https://itsfoss.com/customize-xfce/).
+
+#### Change B: theme or icons
+
+![Xfce Appearance settings open to the Style tab with several built-in themes.](https://cdn.xfce.org/about/tour/4.18/settings-appearance.png){fig-alt="Xfce Appearance window showing built-in themes in the Style tab"}
+
+1. Open **Menu > Settings > Appearance**. If you cannot find it, type `Appearance` into the menu search box.
+2. Open the **Style** tab and try a different built-in style. This changes application windows, menus, buttons, and colours.
+3. You may also open the **Icons** tab and choose a different built-in icon set. Keep labels and controls readable.
+
+Example: compare one light and one dark Mint-Y variant, then keep the one that gives better contrast with your wallpaper. [Screenshot source: Xfce Project](https://xfce.org/about/tour418).
+
+#### Change C: panel
+
+![Xfce Panel Preferences showing the Display tab and Row size control.](https://itsfoss.com/content/images/2025/01/span-xfce-panel-across-monitors.png){fig-alt="Xfce Panel Preferences on the Display tab with controls for mode, output, position, length, and row size"}
+
+1. Right-click the bottom panel, which is the bar with the menu and clock.
+2. Choose **Panel > Panel Preferences**. You can also search for `Panel` in the menu.
+3. Change the **Row size** first. A small change, such as 36 pixels to 42 pixels, is easy to see and easy to reverse.
+4. If you want another change, move the panel to the top or adjust its appearance. Close Panel Preferences when finished.
+
+Do **not** delete the panel or remove the application menu, network, sound, or clock controls. [Screenshot source: It's FOSS](https://itsfoss.com/newsletter/foss-weekly-25-02/).
+
+If a setting looks wrong, return to the same settings window and change it back. If you cannot restore the panel or essential controls, stop and ask for help.
+
+### 4. Save your AFTER screenshot
 
 Make sure the updated wallpaper and panel are visible. You may leave File Manager open so the theme is also visible. Take another screenshot and insert it into the same Google Doc.
 
-### 4. Answer all five reflection questions
+### 5. Answer all five reflection questions
 
 In your assignment Google Doc, answer:
 

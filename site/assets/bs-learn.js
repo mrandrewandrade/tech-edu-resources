@@ -2238,8 +2238,7 @@
 
     const desktopQuery = window.matchMedia("(min-width: 992px)");
     const keepExpandedWhileScrolling =
-      document.body.classList.contains("bs-learn-index") ||
-      document.body.classList.contains("bs-learn-track-index");
+      document.body.classList.contains("bs-learn-index");
     const sidebarScroller =
       sidebar.querySelector(".sidebar-menu-container") || sidebar;
     const pageHeader = document.getElementById("quarto-header");

@@ -69,6 +69,14 @@ assert.match(
   learnSource,
   /!marginSidebar \|\| !inRefinedRightRail\(\) \|\| persistentLessonToc/
 );
+assert.match(
+  learnSource,
+  /const keepExpandedWhileScrolling =\s*document\.body\.classList\.contains\("bs-learn-index"\)/
+);
+assert.doesNotMatch(
+  learnSource,
+  /const keepExpandedWhileScrolling =[\s\S]{0,180}bs-learn-track-index/
+);
 
 assert.match(scrollSource, /sentinel\.textContent = "Loading the next lesson/);
 assert.match(scrollSource, /createTransitionNotice\(currentLesson, followingLesson\)/);
