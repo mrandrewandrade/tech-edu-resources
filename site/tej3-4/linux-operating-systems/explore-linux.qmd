@@ -1,443 +1,554 @@
 ---
 title: "Set Up Your Accounts and Explore Linux"
-description: "Create accounts for yourself and two other students, personalize Linux Mint, test networking, install software, and begin a Bashcrawl command-line adventure."
-categories: [Linux, Linux Mint, accounts, networking, software, Bash, Git, Bashcrawl]
+description: "Use Linux Mint safely, personalize the Xfce desktop, complete Terminal Quest, and explore Bashcrawl."
+categories: [Linux, Linux Mint, accounts, customization, terminal, WSL, macOS, Git, Bashcrawl]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 ---
 
-The main goal of this assignment is simple: **have fun with Linux and make the computer useful.** You will create real accounts, explore the desktop, connect to the network, install something interesting, and finish with a short command-line adventure.
+The main goal of this lesson is simple: **have fun with Linux and make the computer useful.** The website is your lesson and reference. Each Google Doc below is a separate submission artifact.
 
-## Class materials
+::: {.callout-important title="Choose the correct assignment"}
+- **Assignment 1:** [Make Linux Mint Xfce Your Own](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy)
+- **Assignment 2:** [Terminal Quest: WSL and Mac Basics](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy)
+- **Assignment 3:** [Bashcrawl Terminal Adventure](https://docs.google.com/document/d/1v6D0_GXfMcdLPr8k0DyBzJyXnnglwD1jyB1FrYzrVfE/copy)
 
-- [Linux Start Here slides](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit)
-- [Make a copy of the Explore Linux assignment](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy)
+Complete and submit each assignment separately. Do not combine their evidence or submit a separate history text file.
+:::
 
-## What you already know
+## Learning goals
 
-You have probably created an account on a phone, Chromebook, game console, or Windows computer. Each person gets their own files, settings, wallpaper, and preferences. Linux accounts work in a similar way.
+By the end of this page:
 
-Linux Mint also has a menu, an app store, network controls, and a file manager. The names and layout are different from Windows, but the purposes are familiar. Explore first. You do not need to memorize everything.
+- I will be able to create and test safe user accounts on an assigned classroom computer.
+- I will be able to personalize Linux Mint with the graphical user interface (GUI).
+- I will be able to open the correct terminal on Windows, Linux, or Mac and use beginner commands.
+- I will be able to create a folder and file, inspect processes, and review command history safely.
+- I will be able to download and explore Bashcrawl with Git.
 
 ## Before you begin
 
-You need:
+You may need:
 
-- the assigned classroom computer with Linux Mint installed;
-- the `min` account and classroom password `pcss`;
-- the account names or aliases supplied for the two other students;
-- the classroom Wi-Fi credentials; and
-- your copy of the Explore Linux assignment.
+- an assigned classroom computer with Linux Mint installed;
+- the `min` classroom account and the classroom account password supplied directly by your teacher;
+- the account names or aliases supplied for students who share the computer;
+- classroom Wi-Fi credentials supplied directly by your teacher; and
+- the [Linux Start Here class slides](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit).
 
-::: {.callout-warning title="Use only the assigned classroom computer"}
-Do not change accounts or files on another computer. Do not use guest Wi-Fi, scan the school network, or try to connect to another person's computer. Never submit or write a password in your Google Doc.
+::: {.callout-warning title="Use only an approved computer and account"}
+Do not change accounts or files on another computer. Do not use guest Wi-Fi, scan the school network, or try to connect to another person's computer. Never put passwords, Wi-Fi credentials, student numbers, access tokens, recovery information, or other private information in a Google Doc, screenshot, or command history.
 :::
 
-## Part 1: create three real user accounts
+## Extension work: create and test classroom accounts
 
-Sign in as `min`. Open **Menu > System > Users and Groups**, then select **Unlock**. Enter the classroom password when Linux asks for administrator approval.
+This account activity supports the shared Linux computers, but it is **not required evidence for Assignments 1, 2, or 3** unless your teacher assigns it separately.
 
-Create these three accounts:
+Sign in as `min`. Open **Menu > System > Users and Groups**, then select **Unlock**. Use the classroom account password supplied directly by your teacher when Linux asks for administrator approval.
+
+Create these three accounts only when your teacher has assigned the computer and approved the account names:
 
 | Account | Username | Account type | Password |
 |:--|:--|:--|:--|
 | Your account | Create a unique, school-appropriate username with no spaces | **Administrator** | Create a private password you can remember |
-| Other student 1 | Use the name or alias supplied by your teacher | **Standard** | Use the temporary password supplied by your teacher |
-| Other student 2 | Use the name or alias supplied by your teacher | **Standard** | Use the temporary password supplied by your teacher |
+| Other student 1 | Use the name or alias supplied by your teacher | **Standard** | Use the temporary password supplied directly by your teacher |
+| Other student 2 | Use the name or alias supplied by your teacher | **Standard** | Use the temporary password supplied directly by your teacher |
 
-Your username should not contain your student number, email address, or full legal name. A first name or school-approved nickname is enough. Record all three usernames, but **do not record any passwords**.
+Your username should not contain your student number, email address, or full legal name. Record usernames only if your teacher asks. **Never record a password.** Keep the `min` account as the classroom recovery account.
 
-Your account is an administrator because you will maintain this assigned computer and install approved software. The other two accounts are standard accounts so those students can explore and work without accidentally making system-wide changes.
+To test the accounts, sign out and sign in to each approved account. Confirm that each account opens normally and has a separate home folder. Sign back in to your own account before continuing. If an account does not work or an unexpected administrator warning appears, stop and ask your teacher for help.
 
-Keep the `min` account. It is the classroom recovery account.
+## Assignment 1: Make Linux Mint Xfce Your Own
 
-### Test the accounts
+::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
+If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
+:::
 
-1. Sign out of `min` and sign in to your new account.
-2. Confirm that your home folder and desktop are separate from the `min` account.
-3. Sign out and test the first other student's account.
-4. Confirm that it opens normally and has a separate home folder.
-5. Repeat the test for the second other student's account.
-6. Sign back in to your own account for the rest of the assignment.
+### Part 2: make Linux feel like your computer
 
-If an account does not work, stop and fix it before customizing the desktop.
+::: {.callout-important title="Open the assignment and know what to submit"}
+[Make a copy of **Make Linux Mint Xfce Your Own**](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy).
 
-## Part 2: make Linux feel like your computer
+Submit **ONE completed Google Doc** in Google Classroom. It must contain a BEFORE screenshot, an AFTER screenshot, and all five short reflection answers. Do not attach the screenshots as separate files.
+:::
 
-Linux is highly customizable. You can change how the desktop looks and how you move through it without replacing the operating system.
+### 1. Save your BEFORE screenshot
 
-### Visual challenge: make it better for you
+Do this before changing any settings. Sign in to your own Linux account and show the full desktop with its wallpaper and bottom panel visible. Press **Print Screen (PrtSc)**. If nothing happens, try **Fn + PrtSc** or search the application menu for **Screenshot**. Save the picture in your Pictures folder and insert it into the assignment Google Doc.
 
-Take a screenshot of the default desktop. Then make at least **one purposeful visual change** that improves how the desktop looks or feels for you.
+### 2. Make the three required changes
 
-You could change:
+Use the settings already included with Linux Mint. Do not download themes, scripts, packages, or desktop effects without teacher permission.
 
-- the wallpaper or background colour;
-- the window theme or icon style;
-- the panel position, size, or colour;
-- the application launchers on the panel;
-- the desktop icons and how they are arranged;
-- the font size or display scaling; or
-- the terminal colours and font size.
-
-Use the themes, wallpapers, and settings already included with Linux Mint for this assignment. Do not download a theme or run a customization script from an unknown website.
+1. **Wallpaper:** Right-click an empty part of the desktop, open **Desktop Settings > Background**, and choose a different built-in picture.
+2. **Theme or icons:** Open **Menu > Settings > Appearance**. Change the built-in style or choose a different built-in icon set. Keep text and controls readable.
+3. **Panel:** Right-click the panel, open **Panel > Panel Preferences**, and change its row size, position, or appearance. Do not delete the panel or remove the application menu, network, sound, or clock controls.
 
 ![Example of a clean customized Xfce desktop with a calm wallpaper, tidy File Manager, readable Terminal, and a simple bottom panel.](../../assets/linux-desktop-example.svg){fig-alt="A customized Xfce-style desktop with a blue and green wallpaper, a tidy file manager, a readable dark terminal, and a bottom panel containing favourite applications and system controls"}
 
-This is only one example. A good desktop does not need to look exactly like it. The example uses a calm wallpaper, a readable theme, a small set of favourite applications, an uncluttered desktop, and a panel that keeps the network, sound, and clock easy to find.
+The image is a reference, not a required design. If a setting looks wrong, return to the same settings window and change it back. If you cannot restore the panel or essential controls, stop and ask for help.
 
-Take an after screenshot. In your Google Doc, name the change and explain why it made the desktop better for you. Your reason might be appearance, readability, accessibility, organization, or speed.
+### 3. Save your AFTER screenshot
 
-After the required visual challenge, use the GUI to complete at least **three** more activities:
+Make sure the updated wallpaper and panel are visible. You may leave File Manager open so the theme is also visible. Take another screenshot and insert it into the same Google Doc.
 
-- explore the Xfce panel and application menu;
-- choose an account picture;
-- find the computer's processor, memory, and storage information;
-- create a folder named `Linux Lab` in your Documents folder;
-- take a screenshot and find it in the File Manager;
-- find an accessibility setting that could make the computer easier to use;
-- adjust the display, sound, mouse, or keyboard settings; or
-- discover another useful setting and explain what it changes.
+### 4. Answer all five reflection questions
 
-Do not remove the network, sound, clock, or application-menu controls from the panel. If you change something you cannot restore, ask for help instead of guessing.
+In your assignment Google Doc, answer:
 
-Record what you changed and one thing you discovered in your Google Doc.
+1. What wallpaper did you choose, and where did you change it?
+2. What theme or icon change did you make, and which setting did you use?
+3. What did you change about the panel, and how did you do it?
+4. Which change made the desktop look better or easier to use, and why?
+5. Did anything go wrong, and how did you fix it? Write “Nothing went wrong” if appropriate.
 
-## Part 3: check the network with the GUI
-
-1. Select the network icon in the panel.
-2. Connect using the classroom Wi-Fi credentials. Do **not** use guest Wi-Fi.
-3. Open the connection information or network settings.
-4. Record the connection name, whether it uses Wi-Fi or Ethernet, and the local Internet Protocol version 4 (IPv4) address.
-5. Open the browser and visit the [TEJ Notes website](https://andrewandrade.ca/tech-edu-resources/tej3-4/).
-
-Your local IPv4 address identifies the computer on the current network. It may change later. Include it in your private classroom submission, but do not post it publicly.
-
-If the website works but another network test later fails, the network may simply block that type of test. One failed test does not always mean the internet is broken.
-
-## Part 4: install something useful and something fun
-
-Open **Software Manager** from the application menu.
-
-1. Search for **Git** and install it if it is not already installed. Git will download the command-line game later in this assignment.
-2. Choose one additional school-appropriate game or useful application.
-3. Read its description before installing it.
-4. Install it using your own administrator password when prompted.
-5. Open it and try it for at least five minutes.
-
-Possible choices include a drawing program, audio editor, media player, educational game, puzzle, or programming tool. Large 3D games may run poorly on older classroom hardware, so check the download size and system requirements first.
-
-Record:
-
-- the exact software name;
-- what the software does;
-- why you chose it;
-- whether it worked properly; and
-- one thing you liked or disliked.
-
-::: {.callout-important title="Install from trusted sources"}
-For this assignment, use Software Manager and the official Bashcrawl GitLab repository. Do not paste installation commands from advertisements, forums, comments, or random videos.
+::: {.callout-note title="Optional customization"}
+After completing the required work, you may change fonts or pointer size, add a favourite application shortcut, arrange desktop icons, or investigate another built-in appearance setting. Do not install a theme or desktop effect without permission.
 :::
 
-## Part 5: meet the terminal
+## Extension work: network and software exploration
 
-The **terminal** is a text-based way to give instructions to the operating system. It is not automatically better than the GUI. It is useful when a task is faster, clearer, repeatable, or only available as a command.
+These activities build useful Linux skills, but they are **not required evidence for Assignments 1, 2, or 3** unless your teacher assigns them separately.
 
-Open Terminal and run one command at a time. Input blocks are black and copyable. Example output is shown separately and is not a command.
+### Check the network with the GUI
 
-### Show the current user
+1. Select the network icon in the panel.
+2. Connect using credentials supplied directly by your teacher. Do **not** use guest Wi-Fi.
+3. Open the connection information or network settings.
+4. Identify whether the connection uses Wi-Fi or Ethernet. Keep local addresses in private classroom work only.
+5. Open the browser and visit the [TEJ Notes website](https://andrewandrade.ca/tech-edu-resources/tej3-4/).
 
-::: {.ter-terminal-input}
-**Input**
+If a warning appears, credentials are rejected, or a result differs significantly from these instructions, stop and ask for help. Do not change security settings or scan the network.
+
+### Install approved software
+
+Open **Software Manager** from the application menu. Search for Git and install it only if it is missing and your teacher has approved the installation. You may also choose one school-appropriate game or useful application, read its description and system requirements, and ask for approval before installing it.
+
+::: {.callout-important title="Install from trusted sources"}
+Use Software Manager, an operating system's official documentation, or the official Bashcrawl GitLab repository. Do not paste installation commands from advertisements, comments, forums, or unknown sites. If installation requires administrator access and you do not have permission, stop and ask your teacher.
+:::
+
+## Assignment 2: Terminal Quest: WSL and Mac Basics
+
+::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
+If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
+:::
+
+### Part 5: meet the terminal
+
+::: {.callout-important title="Open the assignment and know what to submit"}
+[Make a copy of **Terminal Quest: WSL and Mac Basics**](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy).
+
+Submit **ONE completed Google Doc** in Google Classroom. Paste the complete, reviewed command history into that document. Do not submit a separate history text file.
+:::
+
+### 1. Open the correct terminal
+
+#### Windows with WSL
+
+Open **Start** and search for **WSL**, **Ubuntu**, or the name of the installed Linux distribution. Open the matching app. Run the Linux assignment commands there, not in PowerShell.
+
+If WSL is not installed, ask the computer owner or teacher for permission. Installation requires administrator access and may require a restart. With permission, open **PowerShell as Administrator** and run:
+
+**INPUT**
+
+```powershell
+wsl --install
+```
+
+Restart if Windows asks. If installation is blocked, a security warning appears, or you are unsure which distribution opened, stop and ask for help. Follow the official [Microsoft WSL installation guide](https://learn.microsoft.com/windows/wsl/install) when needed.
+
+#### Linux Mint or Ubuntu
+
+Press **Ctrl + Alt + T**, or search the application menu for **Terminal**. WSL is not needed on a Linux computer.
+
+#### Mac
+
+Press **Command + Space**, search for **Terminal**, and press **Return**. You can also open **Applications > Utilities > Terminal**.
+
+### 2. Identify the account and current folder
+
+Run one command at a time. Read the result and enter the requested answer in your Google Doc.
+
+**INPUT**
 
 ```bash
 whoami
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
-
-```text
-sam
-```
-:::
-
-`whoami` prints the account currently using the terminal. Your username will be different.
-
-### Show the computer name
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
 hostname
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
-
-```text
-min-tej-14
-```
-:::
-
-`hostname` prints the computer's network name. Classroom computers should not all have the same name.
-
-### Show the current location
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
 pwd
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
-
-```text
-/home/sam
-```
-:::
-
-`pwd` means **print working directory**. A directory is a folder, and the output is the path to your current location.
-
-### List visible files and folders
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
 ls
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
+**INPUT**
+
+```bash
+ls -a
+```
+
+**EXAMPLE OUTPUT**
 
 ```text
 Desktop  Documents  Downloads  Music  Pictures
 ```
-:::
 
-`ls` lists the visible contents of the current directory. Names vary by account and computer.
+Your username, computer name, path, files, and hidden items will differ. A shell prompt may end with `$` or `%`; do not type that prompt symbol as part of a command.
 
-Use the **Up Arrow** to bring back your previous command. Press **Tab** while typing a file or directory name to try automatic completion.
+### 3. Investigate the operating system
 
-### A quick network check
-
-Show the network interfaces and addresses:
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-ip -brief address
+uname -s
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
-
-```text
-lo      UNKNOWN  127.0.0.1/8
-wlp2s0  UP       192.168.1.24/24
-```
-:::
-
-The interface names and private addresses vary. Keep usernames and local addresses in the private class submission when evidence is required.
-
-Show the path used to reach other networks:
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-ip route
+uname -m
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
-
-```text
-default via 192.168.1.1 dev wlp2s0
-```
-:::
-
-With teacher approval, you may also try:
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-ping -c 4 andrewandrade.ca
+df -h .
 ```
-:::
 
-Some school networks block ping. If it is blocked, record the result and use the working website in your browser as your main internet test.
-
-## Part 6: clone and play Bashcrawl
-
-[Bashcrawl](https://gitlab.com/slackermedia/bashcrawl) is a simple text adventure that teaches terminal navigation. The game provides clues in files and directories. You move through it with commands such as `ls`, `cd`, and `cat`.
-
-First, confirm that Git is installed:
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-git --version
+uptime
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
+Record the system name, machine or CPU type, available space, and uptime in your Google Doc. On a Mac, the system name may be `Darwin`. In WSL, the system name is normally `Linux` because Linux is running inside Windows.
 
-```text
-git version 2.43.0
-```
-:::
+### 4. Create the `terminal-quest` folder and `hello.txt`
 
-Your version number may differ. If the terminal says the command was not found, return to Software Manager and install Git.
+Run each command separately:
 
-Return to your home directory. `~` is a shortcut for your home path.
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
 cd ~
 ```
-:::
 
-Create a Games directory. `mkdir` means **make directory**; `-p` avoids an error if the directory already exists.
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-mkdir -p Games
+mkdir -p terminal-quest
 ```
-:::
 
-Enter the directory. This is a **relative path** because `Games` is named from the current location instead of beginning at the filesystem root.
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-cd Games
+cd terminal-quest
 ```
-:::
 
-Download the official Bashcrawl repository into a new `bashcrawl` folder.
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-git clone https://gitlab.com/slackermedia/bashcrawl.git
+pwd
 ```
-:::
 
-::: {.ter-terminal-output}
-**Example output**
-
-```text
-Cloning into 'bashcrawl'...
-remote: Enumerating objects...
-Receiving objects: 100% (...)
-```
-:::
-
-`git clone` downloads a working copy of a repository. It does not require `sudo`. Never add `sudo` to this command.
-
-Enter the game's entrance directory.
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
-cd bashcrawl/entrance
+echo Hello from my computer > hello.txt
 ```
-:::
 
-List the entrance files, then read the first clue.
-
-::: {.ter-terminal-input}
-**Input**
+**INPUT**
 
 ```bash
 ls
 ```
+
+**INPUT**
+
+```bash
+cat hello.txt
+```
+
+**EXAMPLE OUTPUT**
+
+```text
+Hello from my computer
+```
+
+Return to your home folder and confirm your location:
+
+**INPUT**
+
+```bash
+cd ~
+```
+
+**INPUT**
+
+```bash
+pwd
+```
+
+### 5. View running processes
+
+On WSL, Linux Mint, or Ubuntu, try:
+
+**INPUT**
+
+```bash
+htop
+```
+
+If `htop` is not installed, use `top`, or ask permission before installing software. On Ubuntu-based systems, the approved installation commands are:
+
+**INPUT**
+
+```bash
+sudo apt update
+```
+
+**INPUT**
+
+```bash
+sudo apt install htop -y
+```
+
+On a Mac, use `htop` only if it is already installed. Otherwise run:
+
+**INPUT**
+
+```bash
+top
+```
+
+Press `q` to leave `htop` or `top`. Observe one CPU and one memory detail. Never end an unfamiliar process. If installation is blocked or asks for access you do not have, use `top` and ask for help.
+
+### 6. Review and copy the complete command history
+
+History contains commands, not their output. Review it before copying. Remove or redact passwords, tokens, personal names, private paths, Wi-Fi credentials, and other private information. If you see a password or token, do not paste it. Stop and ask for help, and change any exposed credential.
+
+#### Windows WSL, Linux Mint, or Ubuntu using Bash
+
+Review the history:
+
+**INPUT**
+
+```bash
+history
+```
+
+On **Windows WSL**, copy the complete history to the Windows clipboard:
+
+**INPUT**
+
+```bash
+history | clip.exe
+```
+
+On **Linux Mint or Ubuntu**, first check the desktop session:
+
+**INPUT**
+
+```bash
+echo $XDG_SESSION_TYPE
+```
+
+If the result is `x11`, ask permission to install `xclip` if needed, then copy:
+
+**INPUT**
+
+```bash
+sudo apt install xclip -y
+```
+
+**INPUT**
+
+```bash
+history | xclip -selection clipboard
+```
+
+If the result is `wayland`, ask permission to install `wl-clipboard` if needed, then copy:
+
+**INPUT**
+
+```bash
+sudo apt install wl-clipboard -y
+```
+
+**INPUT**
+
+```bash
+history | wl-copy
+```
+
+#### Mac using the default zsh shell
+
+Review the complete history:
+
+**INPUT**
+
+```bash
+history 1
+```
+
+Copy it to the Mac clipboard:
+
+**INPUT**
+
+```bash
+history 1 | pbcopy
+```
+
+If the Mac uses Bash instead of zsh, use `history` and `history | pbcopy`.
+
+Paste the complete, reviewed history into the labelled box in your Terminal Quest Google Doc. Confirm that it includes the activities you tried. Review the pasted text again before submitting. **Submit only that completed Google Doc.**
+
+## Assignment 3: Bashcrawl Terminal Adventure
+
+::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
+If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
 :::
 
-::: {.ter-terminal-input}
-**Input**
+### Part 6: clone and play Bashcrawl
+
+::: {.callout-important title="Open the assignment and know what to submit"}
+[Make a copy of **Bashcrawl Terminal Adventure**](https://docs.google.com/document/d/1v6D0_GXfMcdLPr8k0DyBzJyXnnglwD1jyB1FrYzrVfE/copy).
+
+Submit **ONE completed Google Doc** with all four reflection answers and at least one readable terminal screenshot. No history file is required.
+:::
+
+[Bashcrawl](https://gitlab.com/slackermedia/bashcrawl) is a terminal adventure. Folders are rooms and files contain clues. There is **no required final room and no time limit**. Explore for as long as you can, return another day if you want, and record the furthest room you reached.
+
+### 1. Open Terminal and check Git
+
+- **Windows:** Open WSL, Ubuntu, or the installed Linux distribution from Start.
+- **Linux Mint or Ubuntu:** Press **Ctrl + Alt + T**, or open Terminal from the application menu.
+- **Mac:** Press **Command + Space**, search for **Terminal**, and press **Return**.
+
+**INPUT**
+
+```bash
+git --version
+```
+
+**EXAMPLE OUTPUT**
+
+```text
+git version 2.43.0
+```
+
+Your version may differ. If Git is missing on WSL, Ubuntu, or Linux Mint, ask permission before running `sudo apt update` and `sudo apt install git -y`. On a Mac, follow the Apple Command Line Tools prompt only with the computer owner's permission. Stop and ask for help if installation is blocked.
+
+### 2. Download and start Bashcrawl
+
+Run one command at a time:
+
+**INPUT**
+
+```bash
+cd ~
+```
+
+**INPUT**
+
+```bash
+mkdir -p Games
+```
+
+**INPUT**
+
+```bash
+cd Games
+```
+
+**INPUT**
+
+```bash
+git clone https://gitlab.com/slackermedia/bashcrawl.git
+```
+
+If Bashcrawl is already downloaded in `~/Games`, skip the clone command.
+
+**INPUT**
+
+```bash
+cd bashcrawl/entrance
+```
+
+**INPUT**
 
 ```bash
 cat scroll
 ```
-:::
 
-`cat` prints a file's contents. The first clue tells you what to inspect next.
+`git clone` downloads a working copy of the repository into a new folder. It does not need administrator access. Never add `sudo` to that command.
 
-Use these commands one at a time as the clues require them:
+### 3. Explore the dungeon
 
-- `pwd` checks your current location;
-- `ls` lists visible contents;
-- `ls -a` also shows names that begin with a dot;
-- `cat filename` reads a named file;
-- `cd directory` enters a directory you can see; and
-- `cd ..` moves to the parent directory.
+Useful commands include:
 
-Replace `filename` and `directory` with names you actually see. Do not type the angle brackets shown in some game instructions.
-
-If you are in the wrong directory, run `pwd`, use `cd ..` to move up one level, and use `ls` before choosing the next path. To begin again without deleting anything, run `cd ~/Games/bashcrawl/entrance`.
-
-Finishing the game is optional. Curiosity, careful reading, and trying commands are the point.
-
-If a game instruction asks you to run a command you do not understand, read the clue again, use `command --help`, or ask your teacher. Do not use `sudo` anywhere in Bashcrawl.
-
-### Why Bashcrawl is the first game
-
-Bashcrawl is the required first game because it is small, runs locally in a real terminal, begins with only a few commands, and leaves useful evidence in Bash history.
-
-If you enjoy it, two good next steps are:
-
-- [GameShell](https://github.com/phyver/GameShell), which has more structured missions but needs extra software and runs a downloaded game script; and
-- [OverTheWire Bandit](https://overthewire.org/wargames/bandit/), which adds Secure Shell (SSH), remote accounts, passwords, and more challenging puzzles.
-
-Use those only with teacher approval. Bandit fits better in a later networking and remote-administration lesson.
-
-## Part 7: submit your Bash history
-
-Bash keeps a history of commands typed by your account. This lets you review your work and gives your teacher evidence of the path you tried, including mistakes and corrections.
-
-Create a text file on your desktop:
+**INPUT**
 
 ```bash
-history > ~/Desktop/linux-bash-history.txt
+pwd
 ```
 
-Open `linux-bash-history.txt` with the GUI and read it before submitting it to Google Classroom.
+**INPUT**
 
-::: {.callout-danger title="Check your history before submitting it"}
-The file must not contain passwords, private information, access tokens, or Wi-Fi credentials. Passwords entered into a normal password prompt are not shown in Bash history. If you accidentally typed a password as part of a command, do not submit the file. Tell your teacher and change that password.
-:::
+```bash
+ls
+```
 
-Complete your copy of the [Explore Linux assignment](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy).
+**INPUT**
 
-Submit exactly **two files** in Google Classroom:
+```bash
+ls -a
+```
 
-1. One Google Doc containing the required answers and screenshots
-2. Your reviewed `linux-bash-history.txt` file
+**INPUT**
 
-Your Bash history is evidence of exploration, not a speed contest. A useful history can include mistakes, repeated commands, and corrections.
+```bash
+cat filename
+```
+
+**INPUT**
+
+```bash
+cd directory
+```
+
+**INPUT**
+
+```bash
+cd ..
+```
+
+Replace `filename` and `directory` with names you actually see. Read every `scroll` file you find. If a command does not work, read the message, try `ls` or `ls -a`, reread the clue, or go back one room. Do not use `sudo` inside the game.
+
+### 4. Record and submit your progress
+
+In the Bashcrawl Google Doc:
+
+1. Record the furthest room or path you reached. Run `pwd` in that room if you need the path.
+2. Answer what clue, object, or surprise you discovered.
+3. Name one command you learned or used and explain what it does.
+4. Explain what you tried when you got stuck and whether it worked.
+5. Insert at least one readable screenshot showing the terminal at your furthest room or an interesting clue.
+
+Submit **ONE completed Google Doc** in Google Classroom. There is no required final room, no time limit, and no history file for this assignment.
 
 ## Helpful resources
 
@@ -446,30 +557,11 @@ Your Bash history is evidence of exploration, not a speed contest. A useful hist
 - Review the [Bashcrawl project on GitLab](https://gitlab.com/slackermedia/bashcrawl) to see where the game came from.
 - Read the [Git documentation for `git clone`](https://git-scm.com/docs/git-clone) when you want to understand the download command in more detail.
 - Use the [Ubuntu command-line tutorial](https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/) for another beginner-friendly introduction to the terminal.
-- Read the [GNU Bash explanation of command history](https://www.gnu.org/software/bash/manual/html_node/Bash-History-Facilities.html) to learn what Bash saves and when it writes the history file.
+- Read the [GNU Bash explanation of command history](https://www.gnu.org/software/bash/manual/html_node/Bash-History-Facilities.html) to learn what Bash saves.
 - Explore the school-appropriate [Learn Linux TV YouTube channel](https://www.youtube.com/@LearnLinuxTV) for beginner Linux and terminal demonstrations.
-- Try [Linux Journey](https://labex.io/linuxjourney) for free, short lessons about commands, permissions, processes, and networking.
+- Try [Linux Journey](https://labex.io/linuxjourney) for short lessons about commands, permissions, processes, and networking.
+- Try [GameShell](https://github.com/phyver/GameShell) or [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) only with teacher approval.
 
 ## Review
 
-On this page, you:
-
-- created your administrator account and standard accounts for two other students;
-- personalized Linux Mint through the GUI;
-- checked the classroom network and opened a website;
-- installed Git and another application from Software Manager;
-- used a few basic terminal and networking commands;
-- cloned and explored the Bashcrawl game; and
-- exported and reviewed your Bash history for Google Classroom.
-
-The next lessons will build on this experience with files, permissions, software, and more advanced networking. Linux should feel like a computer you can explore, not just a list of commands to memorize.
-
-## Reflect on your learning
-
-1. What made Linux feel most like your own computer?
-2. Why is your account an administrator while the other two student accounts are standard?
-3. Which application did you install, and would you recommend it to another student?
-4. What did `git clone` do?
-5. Which Bashcrawl command was most useful, and what did it do?
-6. What mistake did you make in the terminal, and how did you recover from it?
-7. What would you like to customize, install, or learn next?
+You can now separate three different kinds of evidence: visual customization belongs in **Make Linux Mint Xfce Your Own**, complete reviewed command history belongs inside **Terminal Quest**, and Bashcrawl progress belongs in **Bashcrawl Terminal Adventure**. Each assignment is submitted as one Google Doc.

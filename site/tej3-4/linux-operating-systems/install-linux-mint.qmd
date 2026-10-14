@@ -11,10 +11,14 @@ Linux Mint is a Linux operating system that usually **just works** and is easy f
 ## Class materials
 
 - [Linux Start Here slides](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit)
-- [Make a copy of the Linux Mint Installation assignment](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy)
+- [Linux Mint Installation Reflection](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy)
 
 ::: {.callout-danger title="This lab erases the computer"}
 Choose **Erase disk and install Linux Mint** only on the classroom computer assigned by your teacher. This deletes Windows, accounts, programs, and every file on the selected drive. Stop and ask your teacher before continuing if you are not certain that the computer and drive are approved.
+:::
+
+::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
+If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
 :::
 
 This classroom guide is adapted from the [official Linux Mint Installation Guide](https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html). The installer screenshots come from that guide. Screens can change slightly between releases, and the example names or checkboxes shown in a screenshot may not match our required classroom settings. **Follow the written choices on this page.**
@@ -26,7 +30,7 @@ You need:
 - the assigned classroom computer;
 - a Linux Mint 22.3 “Zena” Xfce USB installer signed out from your teacher;
 - the classroom Wi-Fi credentials; and
-- your copy of the Linux Mint Installation assignment.
+- your copy of the [Linux Mint Installation Reflection](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy).
 
 Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.
 
@@ -161,15 +165,15 @@ Enter the following settings exactly, except for the computer name:
 | Your name | `min` |
 | Your computer's name | Create a unique, school-appropriate name |
 | Pick a username | `min` |
-| Choose a password | `pcss` |
-| Confirm your password | `pcss` |
+| Choose a password | Use the classroom account password supplied directly by your teacher |
+| Confirm your password | Enter the same teacher-supplied password again |
 | Login choice | **Require my password to log in** |
 | Encrypt my home folder | **Leave unchecked** |
 
 Use only lowercase letters, numbers, and hyphens in the computer name, with no spaces. A name such as `min-tej-14` is clear and easy to record. Your name must be unique in the classroom.
 
 ::: {.callout-important title="Use the table, not the sample data in the screenshot"}
-The official screenshot shows example names and shows home-folder encryption selected. For this lab, use `min`, your unique computer name, the classroom password, **Require my password to log in**, and **do not encrypt the home folder**. The password `pcss` is for this classroom image only; never reuse it for a personal account.
+The official screenshot shows example names and shows home-folder encryption selected. For this lab, use `min`, your unique computer name, the classroom account password supplied directly by your teacher, **Require my password to log in**, and **do not encrypt the home folder**. Never reuse a classroom password for a personal account.
 :::
 
 ![Linux Mint installer user-account screen.](../../assets/linux-mint-install/installer-user.png){fig-alt="Linux Mint installer user account screen"}
@@ -197,7 +201,7 @@ When the installer reports that it is finished, select **Restart Now**.
 
 ![Linux Mint installation-complete screen with Restart Now.](../../assets/linux-mint-install/installer-finished.png){fig-alt="Linux Mint installation complete screen with Restart Now"}
 
-Remove the USB drive when the computer asks, then press **Enter**. Log in as `min` using the classroom password `pcss`.
+Remove the USB drive when the computer asks, then press **Enter**. Log in as `min` using the classroom account password supplied directly by your teacher.
 
 ## 11. Test the new installation
 
@@ -217,9 +221,16 @@ If you finish early, choose one optional challenge:
 
 ## Google Classroom submission
 
-Complete your copy of the [Linux Mint Installation assignment](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy).
+Complete your copy of the [Linux Mint Installation Reflection](https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy).
 
-Submit **one Google Doc** in Google Classroom. The submission page gives you the required headings, screenshot, reflection questions, final checklist and **Above and beyond** section.
+Submit **ONE completed Google Doc** in Google Classroom. The reflection document gives you the required headings, screenshot, reflection questions, final checklist and **Above and beyond** section.
+
+Your guide-improvement evidence must also show that you:
+
+1. added at least **two useful comments** to the installation guide;
+2. made at least **one clear improvement** in the assigned copy;
+3. pasted the improved sentence or step into the reflection document; and
+4. explained why the revision is clearer or more useful.
 
 Record the following evidence before you leave:
 

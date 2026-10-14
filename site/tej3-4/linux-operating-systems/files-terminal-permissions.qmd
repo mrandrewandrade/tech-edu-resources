@@ -14,6 +14,10 @@ body-classes: "bs-learn-article ter-notes-lesson"
 
 This is important because Git, Quarto, Python, SSH, and Raspberry Pi work all depend on knowing where files are and who is allowed to change them.
 
+::: {.callout-important title="Start with Terminal Quest"}
+[Make a copy of **Terminal Quest: WSL and Mac Basics**](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy) if you have not completed it. Terminal Quest explains how to open the correct terminal on Windows WSL, Linux Mint or Ubuntu, and Mac; use beginner commands; create `terminal-quest/hello.txt`; inspect processes; review private information; and paste complete reviewed history into **ONE Google Doc**. Do not submit a separate history text file.
+:::
+
 ## Safe practice workspace
 
 Sign in to your own account and create one practice directory:
@@ -41,7 +45,7 @@ Learn what the read, write, and execute positions mean for the owner, group, and
 
 ## Evidence
 
-Submit a short command transcript, a screenshot showing the same folder in the terminal and GUI, and an explanation of why checking `pwd` reduces mistakes.
+This follow-up lesson is separate from Terminal Quest. If your teacher assigns evidence for it, provide a short command transcript, a screenshot showing the same folder in the terminal and GUI, and an explanation of why checking `pwd` reduces mistakes. Follow the submission location and file count provided in Google Classroom. Do not add this evidence to Terminal Quest unless your teacher explicitly asks.
 
 ## Everyday Python project: Downloads Folder Helper
 

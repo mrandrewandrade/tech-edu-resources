@@ -24,6 +24,10 @@ Open a browser and Software Manager. Watch what changes. A computer can have 8 G
 
 Run one command at a time. Read the output before continuing.
 
+::: {.callout-note title="Begin with Terminal Quest"}
+If you have not completed the cross-platform terminal basics, make a copy of [Terminal Quest: WSL and Mac Basics](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy). It explains how to open WSL, Linux Terminal, or macOS Terminal, run beginner commands, inspect processes, and paste a reviewed command history into one Google Doc.
+:::
+
 ```bash
 lscpu
 free -h
@@ -64,7 +68,7 @@ Observe the processor meters, memory meter, process list, and load average. Pres
 
 ## Submit
 
-Add a **Know your computer** section to your Linux Google Doc. Include a two-column hardware inventory, one System Info screenshot, one `htop` screenshot, and a short comparison of what was easier to learn from the GUI and terminal.
+This is follow-up lesson evidence, not part of the three Explore Linux assignment submissions. If your teacher assigns it separately, include a two-column hardware inventory, one System Info screenshot, one `htop` or `top` screenshot, and a short comparison of what was easier to learn from the GUI and terminal. Follow the submission location and file count provided in Google Classroom.
 
 ## Everyday Python project: My Computer Report
 
