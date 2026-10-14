@@ -157,7 +157,7 @@ class CourseContentTests(unittest.TestCase):
 
         mixed = self.read("tej3-4/circuits/series-parallel-circuits.qmd")
         self.assertIn('id="fig-series-parallel-example"', mixed)
-        self.assertEqual(mixed.count('class="ter-figure-anchor"'), 2)
+        self.assertEqual(mixed.count('class="ter-figure-anchor"'), 4)
 
         comparison = self.read("assets/electronics/schematics/series-parallel-comparison.svg")
         self.assertIn('viewBox="0 0 470 125"', comparison)
