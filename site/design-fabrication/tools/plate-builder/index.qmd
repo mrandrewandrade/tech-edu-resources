@@ -9,7 +9,7 @@ format:
     include-in-header:
       text: |
         <link rel="stylesheet" href="../../../assets/plate-builder.css">
-        <script src="../../../assets/plate-builder.js?v=plain-fields-20261008" defer></script>
+        <script src="../../../assets/plate-builder.js?v=corner-holes-20261015" defer></script>
 execute: {enabled: false}
 ---
 
@@ -48,8 +48,25 @@ This browser tool makes repeatable plate geometry. It opens in inches. A millime
 <div class="plate-field" data-show-pattern="perimeter"><label for="pb-perimeter">Number of holes</label><input id="pb-perimeter" data-key="perimeterCount" type="number" min="1" step="1"></div>
 </div>
 <div class="plate-control-section plate-fields">
+<h3 class="plate-section-title">Corner holes A-D</h3>
+<label class="plate-check plate-field--wide"><input data-key="cornerHoles" type="checkbox"> Add four labelled corner holes</label>
+<div class="plate-field plate-field--wide" data-show-corner-holes><label for="pb-corner-reference">Offset measured to</label><select id="pb-corner-reference" data-key="cornerOffsetReference"><option value="center">Hole centre</option><option value="edge">Nearest edge of hole</option></select><small class="plate-field-help">Centre mode: a 3/8-inch offset puts the centre 3/8 inch from both adjoining edges. Hole-edge mode measures the material between the circle and each straight plate edge.</small></div>
+<fieldset class="corner-all-fields plate-field--wide" data-show-corner-holes>
+<legend>All corners</legend>
+<div class="plate-field"><label for="pb-corner-all-diameter">Diameter (<span data-unit-symbol>in</span>)</label><input id="pb-corner-all-diameter" data-all-corner="Diameter" type="number" min="0" step="0.01"></div>
+<div class="plate-field"><label for="pb-corner-all-offset">Offset (<span data-unit-symbol>in</span>)</label><input id="pb-corner-all-offset" data-all-corner="Offset" type="number" min="0" step="0.01"></div>
+<small class="plate-field-help">Changing either value updates A, B, C and D immediately. Adjust an individual corner below when it needs to be different.</small>
+</fieldset>
+<div class="corner-hole-grid plate-field--wide" data-show-corner-holes>
+<fieldset class="corner-hole-card"><legend><span class="corner-label">A</span> Top left</legend><div class="plate-field"><label for="pb-corner-a-diameter">Diameter (<span data-unit-symbol>in</span>)</label><input id="pb-corner-a-diameter" data-key="cornerADiameter" type="number" min="0" step="0.01"></div><div class="plate-field"><label for="pb-corner-a-offset">Offset (<span data-unit-symbol>in</span>)</label><input id="pb-corner-a-offset" data-key="cornerAOffset" type="number" min="0" step="0.01"></div></fieldset>
+<fieldset class="corner-hole-card"><legend><span class="corner-label">B</span> Top right</legend><div class="plate-field"><label for="pb-corner-b-diameter">Diameter (<span data-unit-symbol>in</span>)</label><input id="pb-corner-b-diameter" data-key="cornerBDiameter" type="number" min="0" step="0.01"></div><div class="plate-field"><label for="pb-corner-b-offset">Offset (<span data-unit-symbol>in</span>)</label><input id="pb-corner-b-offset" data-key="cornerBOffset" type="number" min="0" step="0.01"></div></fieldset>
+<fieldset class="corner-hole-card"><legend><span class="corner-label">C</span> Bottom right</legend><div class="plate-field"><label for="pb-corner-c-diameter">Diameter (<span data-unit-symbol>in</span>)</label><input id="pb-corner-c-diameter" data-key="cornerCDiameter" type="number" min="0" step="0.01"></div><div class="plate-field"><label for="pb-corner-c-offset">Offset (<span data-unit-symbol>in</span>)</label><input id="pb-corner-c-offset" data-key="cornerCOffset" type="number" min="0" step="0.01"></div></fieldset>
+<fieldset class="corner-hole-card"><legend><span class="corner-label">D</span> Bottom left</legend><div class="plate-field"><label for="pb-corner-d-diameter">Diameter (<span data-unit-symbol>in</span>)</label><input id="pb-corner-d-diameter" data-key="cornerDDiameter" type="number" min="0" step="0.01"></div><div class="plate-field"><label for="pb-corner-d-offset">Offset (<span data-unit-symbol>in</span>)</label><input id="pb-corner-d-offset" data-key="cornerDOffset" type="number" min="0" step="0.01"></div></fieldset>
+</div>
+</div>
+<div class="plate-control-section plate-fields">
 <h3 class="plate-section-title">Position and export</h3>
-<div class="plate-field"><label for="pb-margin">Material outside each hole (<span data-unit-symbol>in</span>)</label><input id="pb-margin" data-key="edgeMargin" type="number" step="0.1"><small class="plate-field-help">Minimum material from a hole edge to the plate edge.</small></div>
+<div class="plate-field"><label for="pb-margin">Material outside each pattern hole (<span data-unit-symbol>in</span>)</label><input id="pb-margin" data-key="edgeMargin" type="number" step="0.1"><small class="plate-field-help">Minimum material from a repeated-pattern hole edge to the plate edge. Corner holes use their own offsets.</small></div>
 <div class="plate-field"><label for="pb-offset-x">Move pattern left/right (<span data-unit-symbol>in</span>)</label><input id="pb-offset-x" data-key="offsetX" type="number" step="0.1"></div>
 <div class="plate-field"><label for="pb-offset-y">Move pattern up/down (<span data-unit-symbol>in</span>)</label><input id="pb-offset-y" data-key="offsetY" type="number" step="0.1"></div>
 <label class="plate-check"><input data-key="autoCentre" type="checkbox"> Start with the hole pattern centred</label>
@@ -59,7 +76,7 @@ This browser tool makes repeatable plate geometry. It opens in inches. A millime
 <div class="plate-actions"><button type="button" data-download>Download cut SVG</button><button type="button" data-json>Download settings JSON</button><button type="button" data-copy>Copy share link</button><button type="button" data-reset>Reset</button></div>
 </form>
 <section class="plate-workspace" aria-live="polite">
-<div class="plate-summary"><span>Hole diameter: <strong data-diameter></strong></span><span>Hole count: <strong data-count></strong></span><span>Units: <strong data-units>inches (in)</strong></span></div>
+<div class="plate-summary"><span>Pattern hole diameter: <strong data-diameter></strong></span><span>Total hole count: <strong data-count></strong></span><span>Corner holes: <strong data-corner-count>Off</strong></span><span>Units: <strong data-units>inches (in)</strong></span></div>
 <div class="plate-preview" data-preview></div>
 <div class="plate-status" data-status></div>
 </section>
@@ -67,7 +84,7 @@ This browser tool makes repeatable plate geometry. It opens in inches. A millime
 
 ## What the downloads contain
 
-- **Cut SVG:** the actual full-size plate outline and holes. Open this in Inkscape or compatible laser software. Red paths are cut geometry. Optional guides are not cut paths.
+- **Cut SVG:** the actual full-size plate outline and holes. Open this in Inkscape or compatible laser software. Red paths are cut geometry. Optional guides, including the A-D corner labels, are not cut paths.
 - **Settings JSON:** a text record of every builder value. It is useful for documentation or troubleshooting, but it is not a laser-cut file and this version of the builder does not import it.
 - **Share link:** the current settings stored in the web address. Send or bookmark this when you want the builder to reopen the same design.
 
@@ -77,6 +94,7 @@ This browser tool makes repeatable plate geometry. It opens in inches. A millime
 - For a **ring**, set **Outer diameter** and **Ring wall thickness**. The ring's inner opening is the outer diameter minus twice the wall thickness.
 - For a **rounded rectangle**, set **Width**, **Height**, and **Corner radius**. Corner radius affects only the four outside corners.
 - For a holder hole, either measure the object and add clearance, or choose **Direct finished diameter** and enter the final circle size yourself.
+- For corner holes, **Hole centre** measures from each adjoining plate edge to the centre of the circle. **Nearest edge of hole** measures the remaining material between the circle and those straight edges. The preview labels the corners A (top left), B (top right), C (bottom right) and D (bottom left).
 
 ## What happens next
 

@@ -65,3 +65,57 @@ test("15 inch export keeps the physical size", () => {
   assert.match(svg, /&quot;geometryUnits&quot;:&quot;mm&quot;/);
   assert.match(svg, /&quot;displayUnit&quot;:&quot;in&quot;/);
 });
+
+test("16 corner holes A-D use clockwise centre offsets", () => {
+  const holes = builder.cornerHoleSpecs({
+    ...builder.defaults, cornerHoles: true, base: "rectangle", width: 100, height: 60,
+    cornerADiameter: 6, cornerBDiameter: 6, cornerCDiameter: 6, cornerDDiameter: 6,
+    cornerAOffset: 10, cornerBOffset: 10, cornerCOffset: 10, cornerDOffset: 10
+  });
+  assert.deepStrictEqual(holes.map(hole => [hole.label, hole.x, hole.y]), [
+    ["A", 10, 10], ["B", 90, 10], ["C", 90, 50], ["D", 10, 50]
+  ]);
+});
+
+test("17 edge offsets add each corner hole radius", () => {
+  const holes = builder.cornerHoleSpecs({
+    ...builder.defaults, cornerHoles: true, cornerOffsetReference: "edge", base: "rectangle", width: 100, height: 60,
+    cornerADiameter: 6, cornerBDiameter: 8, cornerCDiameter: 10, cornerDDiameter: 12,
+    cornerAOffset: 10, cornerBOffset: 10, cornerCOffset: 10, cornerDOffset: 10
+  });
+  assert.deepStrictEqual(holes.map(hole => hole.centerDistance), [13, 14, 15, 16]);
+});
+
+test("18 corner holes validate their own boundary and collisions", () => {
+  const outside = builder.validate({
+    ...builder.defaults, cornerHoles: true, base: "rectangle", cornerOffsetReference: "center",
+    cornerADiameter: 10, cornerAOffset: 4
+  });
+  assert.match(outside.errors.join(" "), /Corner hole A centre offset/);
+  const overlap = builder.validate({
+    ...builder.defaults, width: 60, height: 60, pattern: "single", holeMode: "direct", holeDiameter: 10,
+    cornerHoles: true, base: "rectangle", cornerADiameter: 10, cornerBDiameter: 10,
+    cornerCDiameter: 10, cornerDDiameter: 10, cornerAOffset: 30, cornerBOffset: 30,
+    cornerCOffset: 30, cornerDOffset: 30
+  });
+  assert.match(overlap.errors.join(" "), /overlaps/);
+});
+
+test("19 SVG exports corner cuts and optional non-cut A-D labels", () => {
+  const state = { ...builder.defaults, cornerHoles: true, base: "rectangle", pattern: "single", holeMode: "direct", holeDiameter: 0 };
+  const cutOnly = builder.buildSvg(state);
+  const withGuides = builder.buildSvg(state, { includeGuides: true });
+  assert.strictEqual((cutOnly.match(/id="corner-hole-/g) || []).length, 4);
+  assert.doesNotMatch(cutOnly, /<text/);
+  assert.match(withGuides, /<text[^>]*>A<\/text>/);
+  assert.match(withGuides, /<text[^>]*>D<\/text>/);
+});
+
+test("20 corner settings survive a share-link round trip", () => {
+  const state = { ...builder.defaults, cornerHoles: true, cornerOffsetReference: "edge", cornerCDiameter: 7.5, cornerCOffset: 12 };
+  const decoded = builder.decodeState(builder.encodeState(state));
+  assert.strictEqual(decoded.cornerHoles, true);
+  assert.strictEqual(decoded.cornerOffsetReference, "edge");
+  assert.strictEqual(decoded.cornerCDiameter, 7.5);
+  assert.strictEqual(decoded.cornerCOffset, 12);
+});

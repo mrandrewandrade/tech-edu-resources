@@ -576,13 +576,15 @@ class DesignFabricationTests(unittest.TestCase):
         for label in (
             "Rectangle", "Rounded rectangle", "Circle", "Ring", "Staggered grid", "Radial", "Perimeter",
             "Outer diameter", "Ring wall thickness", "Finished hole diameter", "Circle-of-centres radius",
+            "Corner holes A-D", "Add four labelled corner holes", "Offset measured to", "All corners",
+            "Top left", "Top right", "Bottom right", "Bottom left", "Nearest edge of hole",
             "Download cut SVG", "Download settings JSON", "Copy share link", "What the downloads contain",
         ):
             self.assertIn(label, builder)
         script = self.read("assets/plate-builder.js")
         for group in ("CUT_OUTER", "CUT_HOLES", "GUIDES"):
             self.assertIn(group, script)
-        self.assertNotIn("<text", script.split("function buildSvg", 1)[1].split("function encodeState", 1)[0])
+        self.assertIn("cornerLabelsMarkup", script)
 
         calibration = self.read("design-fabrication/03-laser-cutting/04-material-fit-calibration.qmd")
         for asset in ("material-thickness", "ruler-check", "dimension-verification", "kerf-test", "tab-fit", "slot-fit", "four-fit-series", "hole-fit"):
