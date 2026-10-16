@@ -538,7 +538,7 @@ assert.ok(
   ["volts", "Volt"],
   ["m/s", "Metres per Second"],
   ["m/s²", "Metres per Second Squared"],
-  ["N.I.C.E.", "N.I.C.E. Design Process"],
+  ["N.I.C.E.", "S.O. N.I.C.E. Design Process"],
   ["Potential Difference", "Voltage"]
 ].forEach(([query, expectedCanonical]) => {
   const matchingItems = generatedGlossaryItems.filter((item) =>

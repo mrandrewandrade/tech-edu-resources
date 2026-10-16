@@ -11,14 +11,17 @@
       <summary>Filter by module</summary>
       <div class="bs-learn-filter-options" role="group" aria-label="Filter by module">
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="culture-land" aria-pressed="false">1. Culture and Land-Based Learning<span class="bs-learn-filter-count">×2</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="design-process" aria-pressed="false">2. N.I.C.E. Design Process<span class="bs-learn-filter-count">×7</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="design-process" aria-pressed="false">2. S.O. N.I.C.E. Design Process<span class="bs-learn-filter-count">×7</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-design" aria-pressed="false">3. Logo Design in Photopea<span class="bs-learn-filter-count">×5</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="accessible-design" aria-pressed="false">4. Accessible Design<span class="bs-learn-filter-count">×4</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">5. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×8</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">5. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×9</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="cad-parametric-modeling" aria-pressed="false">6. Introduction to CAD &amp; 3D Parametric Modeling<span class="bs-learn-filter-count">×2</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="hand-tools" aria-pressed="false">7. Introduction to Tools, Machines &amp; Phone Holder Building<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">8. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 26 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 31 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -52,18 +55,18 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="design-process" data-bs-total-lessons="7" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="design-process/index.html">2. N.I.C.E. Design Process</a><span data-bs-learn-group-count>7 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="design-process/index.html">2. S.O. N.I.C.E. Design Process</a><span data-bs-learn-group-count>7 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understand the Situation&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate facts, assumptions, and interpretations before defining the problem.&quot;, &quot;A clear situation prevents a team from solving the wrong problem.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understand the Situation &amp; Opportunity&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate facts, assumptions, and interpretations, then identify an opportunity to improve the situation.&quot;, &quot;A clear situation and opportunity keep the team focused on a meaningful improvement.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Understand the Situation"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/situation.html">1. Understand the Situation</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Separate facts, assumptions, and interpretations before defining the problem.</p>
-        <p>A clear situation prevents a team from solving the wrong problem.</p>
+        <summary aria-label="Show description for Understand the Situation &amp; Opportunity"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/situation.html">1. Understand the Situation &amp; Opportunity</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Separate facts, assumptions, and interpretations, then identify an opportunity to improve the situation.</p>
+        <p>A clear situation and opportunity keep the team focused on a meaningful improvement.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Record User Needs&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Observe and record what people actually need in the setting.&quot;, &quot;Evidence about users guides safer and more useful designs.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Record User Needs&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Observe and record what people actually need in the setting.&quot;, &quot;Evidence about users guides safer and more useful designs.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Record User Needs"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/user-needs.html">2. Record User Needs</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Observe and record what people actually need in the setting.</p>
@@ -71,7 +74,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Necessities and Nice-to-Haves&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate non-negotiable constraints from preferences.&quot;, &quot;The distinction keeps safety and function visible when trade-offs appear.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Necessities and Nice-to-Haves&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate non-negotiable constraints from preferences.&quot;, &quot;The distinction keeps safety and function visible when trade-offs appear.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Necessities and Nice-to-Haves"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/necessities-nice-to-haves.html">3. Necessities and Nice-to-Haves</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Separate non-negotiable constraints from preferences.</p>
@@ -79,7 +82,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Rank Priorities&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Rank preferences so the most valuable improvements stay visible.&quot;, &quot;Priorities help a team compare ideas without treating every wish as equal.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Rank Priorities&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Rank preferences so the most valuable improvements stay visible.&quot;, &quot;Priorities help a team compare ideas without treating every wish as equal.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Rank Priorities"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/rank-priorities.html">4. Rank Priorities</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Rank preferences so the most valuable improvements stay visible.</p>
@@ -87,7 +90,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Investigate and Inquire&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Research, observe, measure, collect precedents, and generate several ideas.&quot;, &quot;Investigation replaces guesses with evidence and expands the possible solutions.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Investigate and Inquire&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Research, observe, measure, collect precedents, and generate several ideas.&quot;, &quot;Investigation replaces guesses with evidence and expands the possible solutions.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Investigate and Inquire"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/investigate-inquire.html">5. Investigate and Inquire</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Research, observe, measure, collect precedents, and generate several ideas.</p>
@@ -95,7 +98,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Create and Communicate&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Develop an idea, make the proposal understandable, pitch it, and collect feedback.&quot;, &quot;Clear communication lets other people test, question, and improve a proposal.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Create and Communicate&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Develop an idea, make the proposal understandable, pitch it, and collect feedback.&quot;, &quot;Clear communication lets other people test, question, and improve a proposal.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Create and Communicate"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/create-communicate.html">6. Create and Communicate</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Develop an idea, make the proposal understandable, pitch it, and collect feedback.</p>
@@ -103,7 +106,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Evaluate and Repeat&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Score ideas against necessities and priorities, then revise the strongest option.&quot;, &quot;Evaluation turns feedback and test results into defensible improvements.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Evaluate and Repeat&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Score ideas against necessities and priorities, then revise the strongest option.&quot;, &quot;Evaluation turns feedback and test results into defensible improvements.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Evaluate and Repeat"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="design-process/evaluate-repeat.html">7. Evaluate and Repeat</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Score ideas against necessities and priorities, then revise the strongest option.</p>
@@ -190,9 +193,9 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="8" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="9" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="../teaching-materials/laser-cutting/index.html">5. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>8 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="../teaching-materials/laser-cutting/index.html">5. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Make It Stand&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Compare ways to support a flat design as a stable object.&quot;, &quot;Support geometry is useful for signs, displays, holders, and models.&quot;]">
@@ -223,9 +226,17 @@
         <p>Hybrid fabrication expands what a flat-sheet process can make.</p>
       </details>
     </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Laser-Cut Assembly, Adhesives &amp; Finishing&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Select joints, adhesives, cleanup tools, sanding, stain, and surface details as connected design decisions.&quot;, &quot;Assembly geometry and finishing choices affect strength, fit, appearance, and how clearly the final object communicates its purpose.&quot;, &quot;Wood Glue&quot;, &quot;Super Glue&quot;, &quot;Epoxy&quot;, &quot;3D-Printer Build Plate&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Laser-Cut Assembly, Adhesives &amp; Finishing"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/assembly-adhesives-finishing.html">5. Laser-Cut Assembly, Adhesives &amp; Finishing</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Select joints, adhesives, cleanup tools, sanding, stain, and surface details as connected design decisions.</p>
+        <p>Assembly geometry and finishing choices affect strength, fit, appearance, and how clearly the final object communicates its purpose.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.titebond.com/print/product/d4d28015-603f-4dfc-a7d9-f684acc71207">Wood Glue</a> <a class="ter-resource-badge" href="https://www.loctiteproducts.com/products/central-pdp.html/loctite-super-glue-liquid-professional/SAP_0201DCL029X4.html">Super Glue</a> <a class="ter-resource-badge" href="https://www.loctiteproducts.com/products/central-pdp.html/loctite-epoxy-metal-concrete/SAP_0201OIL029V6.html">Epoxy</a> <a class="ter-resource-badge" href="https://help.prusa3d.com/article/print-surface-preparation_686951">3D-Printer Build Plate</a></p>
+      </details>
+    </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Wall and Bench Tool Module&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Design a visible, labelled, stable holder for a wall or workbench.&quot;, &quot;Good tool storage improves access, accountability, and shop safety.&quot;, &quot;Project Gallery&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Wall and Bench Tool Module"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/07-wall-bench-module.html">5. Wall and Bench Tool Module</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Wall and Bench Tool Module"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/07-wall-bench-module.html">6. Wall and Bench Tool Module</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Design a visible, labelled, stable holder for a wall or workbench.</p>
         <p>Good tool storage improves access, accountability, and shop safety.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
@@ -233,23 +244,75 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Design and Fabrication Capstone&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Plan, prototype, test, and document an original fabricated solution.&quot;, &quot;The capstone combines evidence, design decisions, fabrication, and evaluation.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Design and Fabrication Capstone"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/08-capstone.html">6. Design and Fabrication Capstone</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Design and Fabrication Capstone"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="03-laser-cutting/08-capstone.html">7. Design and Fabrication Capstone</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Plan, prototype, test, and document an original fabricated solution.</p>
         <p>The capstone combines evidence, design decisions, fabrication, and evaluation.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;CNC Machining&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;CNC machining resources are in development.&quot;, &quot;The future sequence will connect digital models to subtractive manufacturing.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for CNC Machining"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">7. CNC Machining <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for CNC Machining"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">8. CNC Machining <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>CNC machining resources are in development.</p>
         <p>The future sequence will connect digital models to subtractive manufacturing.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;3D Printing&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;3D-printing resources are in development.&quot;, &quot;The future sequence will cover slicing, orientation, supports, and functional tolerances.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for 3D Printing"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">8. 3D Printing <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for 3D Printing"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">9. 3D Printing <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>3D-printing resources are in development.</p>
         <p>The future sequence will cover slicing, orientation, supports, and functional tolerances.</p>
+      </details>
+    </article>
+  </div>
+</details>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="cad-parametric-modeling" data-bs-total-lessons="2" open>
+  <summary class="bs-learn-catalogue-section-heading">
+    <span class="bs-learn-track-heading"><a href="cad-parametric-modeling/index.html">6. Introduction to CAD &amp; 3D Parametric Modeling</a><span data-bs-learn-group-count>2 lessons</span></span>
+  </summary>
+  <div class="bs-learn-catalogue-section-items">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="cad-parametric-modeling" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Introduction to CAD &amp; Parametric Modeling&quot;, &quot;Introduction to CAD &amp; 3D Parametric Modeling&quot;]" data-bs-search-body="[&quot;Use sketches, dimensions, constraints, and features to create an editable 3D model.&quot;, &quot;A well-structured model makes size and shape changes predictable.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Introduction to CAD &amp; Parametric Modeling"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="cad-parametric-modeling/introduction-to-cad.html">1. Introduction to CAD &amp; Parametric Modeling</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Use sketches, dimensions, constraints, and features to create an editable 3D model.</p>
+        <p>A well-structured model makes size and shape changes predictable.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="cad-parametric-modeling" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Phone Holder Design&quot;, &quot;Introduction to CAD &amp; 3D Parametric Modeling&quot;]" data-bs-search-body="[&quot;Use a premade plan or create and document an original phone-holder design before entering the shop.&quot;, &quot;The design stage connects user needs, dimensions, assemblies, and technical drawings to the later build.&quot;, &quot;Project Brief&quot;, &quot;Premade Plan&quot;, &quot;Drawing Submission&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Phone Holder Design"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="cad-parametric-modeling/phone-holder-design.html">2. Phone Holder Design</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Use a premade plan or create and document an original phone-holder design before entering the shop.</p>
+        <p>The design stage connects user needs, dimensions, assemblies, and technical drawings to the later build.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1erSte0Jdg1-iuhU82DN7iFaqwf75sq5QH6TIkUDDbwg/edit?tab=t.0#heading=h.ldwuulz1hza">Project Brief</a> <a class="ter-resource-badge" href="https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533">Premade Plan</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0">Drawing Submission</a></p>
+      </details>
+    </article>
+  </div>
+</details>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="hand-tools" data-bs-total-lessons="1" open>
+  <summary class="bs-learn-catalogue-section-heading">
+    <span class="bs-learn-track-heading"><a href="hand-tools/index.html">7. Introduction to Tools, Machines &amp; Phone Holder Building</a><span data-bs-learn-group-count>1 lesson</span></span>
+  </summary>
+  <div class="bs-learn-catalogue-section-items">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="hand-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build the Phone Holder&quot;, &quot;Introduction to Tools, Machines &amp; Phone Holder Building&quot;]" data-bs-search-body="[&quot;Review what each possible tool does, then follow the approved plan to build and test the phone holder.&quot;, &quot;The construction sequence turns a digital design into a finished physical object.&quot;, &quot;Premade Plan&quot;, &quot;Drawing Submission&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Build the Phone Holder"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="hand-tools/phone-holder.html">1. Build the Phone Holder</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Review what each possible tool does, then follow the approved plan to build and test the phone holder.</p>
+        <p>The construction sequence turns a digital design into a finished physical object.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533">Premade Plan</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0">Drawing Submission</a></p>
+      </details>
+    </article>
+  </div>
+</details>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="advanced-making" data-bs-total-lessons="1" open>
+  <summary class="bs-learn-catalogue-section-heading">
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">8. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
+  </summary>
+  <div class="bs-learn-catalogue-section-items">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Stamp or Faux-Enamel Jewellery&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Choose one of the linked advanced 3D-printing projects.&quot;, &quot;The links provide optional extension ideas without adding another local tutorial.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Stamp or Faux-Enamel Jewellery"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="advanced-making/stamp-faux-enamel-jewellery.html">1. Stamp or Faux-Enamel Jewellery</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Choose one of the linked advanced 3D-printing projects.</p>
+        <p>The links provide optional extension ideas without adding another local tutorial.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Faux-Stained-Glass-3D-Printed/">Faux Stained Glass - 3D Printed</a> <a class="ter-resource-badge" href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/">3D-Printed Faux Enamel Jewellery</a></p>
       </details>
     </article>
   </div>
@@ -261,8 +324,12 @@
 ## Highlighted tools
 
 <ul class="bs-learn-highlighted-tools">
-  <li><a href="tools/plate-builder/index.html">Fabrication Plate Builder</a></li>
-  <li><a href="tools/leg-builder/index.html">Laser-Cut Leg &amp; Support Builder</a></li>
-  <li><a href="tools/tool-organizer-gallery/index.html">Tool Organizer Gallery</a></li>
+  <li><a href="tools/index.html">CAD Tools</a>
+    <ul>
+      <li><a href="tools/plate-builder/index.html">Fabrication Plate Builder</a></li>
+      <li><a href="tools/leg-builder/index.html">Laser-Cut Leg &amp; Support Builder</a></li>
+      <li><a href="tools/tool-organizer-gallery/index.html">Tool Organizer Gallery</a></li>
+    </ul>
+  </li>
   <li><a href="../teaching-materials/laser-cutting/index.html">Laser-Cutting Files and Resources</a></li>
 </ul>

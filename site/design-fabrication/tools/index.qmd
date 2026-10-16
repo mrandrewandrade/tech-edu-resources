@@ -1,0 +1,31 @@
+---
+title: "CAD Tools"
+description: "Browser-based CAD helpers and design examples for measured fabrication projects."
+sidebar: design-fabrication
+page-layout: full
+toc: false
+body-classes: "ter-design-fabrication bs-learn-track-index"
+execute: {enabled: false}
+---
+
+Use these tools to turn measurements and construction ideas into editable geometry. Check every generated part against the real material, machine, and assembly before fabrication.
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-4}
+### [Fabrication Plate Builder](plate-builder/index.qmd)
+
+Create a measured plate with repeated holes and download a true-size SVG.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### [Laser-Cut Leg & Support Builder](leg-builder/index.qmd)
+
+Compare support styles and generate editable support geometry.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### [Tool Organizer Gallery](tool-organizer-gallery/index.qmd)
+
+Study documented tool-holder designs, criteria, and revisions.
+:::
+:::

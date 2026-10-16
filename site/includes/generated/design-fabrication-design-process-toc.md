@@ -20,18 +20,18 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="design-process" data-bs-total-lessons="7" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">2. N.I.C.E. Design Process</a><span data-bs-learn-group-count>7 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">2. S.O. N.I.C.E. Design Process</a><span data-bs-learn-group-count>7 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understand the Situation&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate facts, assumptions, and interpretations before defining the problem.&quot;, &quot;A clear situation prevents a team from solving the wrong problem.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Understand the Situation &amp; Opportunity&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate facts, assumptions, and interpretations, then identify an opportunity to improve the situation.&quot;, &quot;A clear situation and opportunity keep the team focused on a meaningful improvement.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Understand the Situation"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="situation.html">1. Understand the Situation</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Separate facts, assumptions, and interpretations before defining the problem.</p>
-        <p>A clear situation prevents a team from solving the wrong problem.</p>
+        <summary aria-label="Show description for Understand the Situation &amp; Opportunity"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="situation.html">1. Understand the Situation &amp; Opportunity</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Separate facts, assumptions, and interpretations, then identify an opportunity to improve the situation.</p>
+        <p>A clear situation and opportunity keep the team focused on a meaningful improvement.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Record User Needs&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Observe and record what people actually need in the setting.&quot;, &quot;Evidence about users guides safer and more useful designs.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Record User Needs&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Observe and record what people actually need in the setting.&quot;, &quot;Evidence about users guides safer and more useful designs.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Record User Needs"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="user-needs.html">2. Record User Needs</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Observe and record what people actually need in the setting.</p>
@@ -39,7 +39,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Necessities and Nice-to-Haves&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate non-negotiable constraints from preferences.&quot;, &quot;The distinction keeps safety and function visible when trade-offs appear.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Necessities and Nice-to-Haves&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Separate non-negotiable constraints from preferences.&quot;, &quot;The distinction keeps safety and function visible when trade-offs appear.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Necessities and Nice-to-Haves"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="necessities-nice-to-haves.html">3. Necessities and Nice-to-Haves</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Separate non-negotiable constraints from preferences.</p>
@@ -47,7 +47,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Rank Priorities&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Rank preferences so the most valuable improvements stay visible.&quot;, &quot;Priorities help a team compare ideas without treating every wish as equal.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Rank Priorities&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Rank preferences so the most valuable improvements stay visible.&quot;, &quot;Priorities help a team compare ideas without treating every wish as equal.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Rank Priorities"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="rank-priorities.html">4. Rank Priorities</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Rank preferences so the most valuable improvements stay visible.</p>
@@ -55,7 +55,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/19ObkJz3sYVXwB9VkNUiybXZGZ-ihuGw1FarRj81LtAo/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Investigate and Inquire&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Research, observe, measure, collect precedents, and generate several ideas.&quot;, &quot;Investigation replaces guesses with evidence and expands the possible solutions.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Investigate and Inquire&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Research, observe, measure, collect precedents, and generate several ideas.&quot;, &quot;Investigation replaces guesses with evidence and expands the possible solutions.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Investigate and Inquire"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="investigate-inquire.html">5. Investigate and Inquire</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Research, observe, measure, collect precedents, and generate several ideas.</p>
@@ -63,7 +63,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1c-7TbI3IMOicnHsTUSLkGNJ4s1i2OA6d458S2bTZ2ho/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Create and Communicate&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Develop an idea, make the proposal understandable, pitch it, and collect feedback.&quot;, &quot;Clear communication lets other people test, question, and improve a proposal.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Create and Communicate&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Develop an idea, make the proposal understandable, pitch it, and collect feedback.&quot;, &quot;Clear communication lets other people test, question, and improve a proposal.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Create and Communicate"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="create-communicate.html">6. Create and Communicate</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Develop an idea, make the proposal understandable, pitch it, and collect feedback.</p>
@@ -71,7 +71,7 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1T6f3beZhKXiOxS1ecXt3FHbam2yOqeP1yXrmaLFSbAs/copy">Worksheet</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Evaluate and Repeat&quot;, &quot;N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Score ideas against necessities and priorities, then revise the strongest option.&quot;, &quot;Evaluation turns feedback and test results into defensible improvements.&quot;, &quot;Worksheet&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design-process" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Evaluate and Repeat&quot;, &quot;S.O. N.I.C.E. Design Process&quot;]" data-bs-search-body="[&quot;Score ideas against necessities and priorities, then revise the strongest option.&quot;, &quot;Evaluation turns feedback and test results into defensible improvements.&quot;, &quot;Worksheet&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Evaluate and Repeat"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="evaluate-repeat.html">7. Evaluate and Repeat</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Score ideas against necessities and priorities, then revise the strongest option.</p>

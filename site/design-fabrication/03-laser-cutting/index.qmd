@@ -9,7 +9,7 @@ execute:
   enabled: false
 ---
 
-These canonical notes support a simple first TAS project and a deeper reusable fabrication pathway. Students can learn engraving versus cutting, SVG preparation, scale, material measurement, kerf, fit, holes, slots/tabs, supports, assemblies, hybrid fabrication and testing without treating every lesson as a required project.
+These canonical notes support a simple first TAS project and a deeper reusable fabrication pathway. Students can learn engraving versus cutting, SVG preparation, scale, material measurement, kerf, fit, holes, slots and tabs, supports, assemblies, adhesive selection, cleanup, sanding, staining, hybrid fabrication and testing without treating every lesson as a required project.
 
 The learning sequence lives here. The separate [Laser Fabrication Library](../../teaching-materials/laser-cutting/index.qmd) holds downloadable SVGs, calibration files, editable geometry, project components, holders, and inspiration.
 
@@ -38,6 +38,7 @@ First, students use the three Photopea walkthroughs to follow the worked ANDRADE
   <li><a href="03-measure-place.qmd">Measure + Place</a>: use calipers, exact geometry, spacing, arrays, and margins.</li>
   <li><a href="04-material-fit-calibration.qmd">Material Fit + Calibration</a>: measure actual stock, test kerf and choose a fit.</li>
   <li><a href="05-assemblies-hybrid-fabrication.qmd">Assemblies + Hybrid Fabrication</a>: combine precision faces with structural backers and conventional hardware.</li>
+  <li><a href="assembly-adhesives-finishing.qmd">Assembly, Adhesives + Finishing</a>: connect joint geometry, bonded area, cleanup tools and surface finish.</li>
 </ol>
 
 ## Optional and general projects

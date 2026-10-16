@@ -8,7 +8,7 @@
       <input id="design-fabrication-fabrication-tools-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 8 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 9 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,9 +18,9 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="8" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="9" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">5. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>8 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">5. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Make It Stand&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Compare ways to support a flat design as a stable object.&quot;, &quot;Support geometry is useful for signs, displays, holders, and models.&quot;]">
@@ -51,9 +51,17 @@
         <p>Hybrid fabrication expands what a flat-sheet process can make.</p>
       </details>
     </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Laser-Cut Assembly, Adhesives &amp; Finishing&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Select joints, adhesives, cleanup tools, sanding, stain, and surface details as connected design decisions.&quot;, &quot;Assembly geometry and finishing choices affect strength, fit, appearance, and how clearly the final object communicates its purpose.&quot;, &quot;Wood Glue&quot;, &quot;Super Glue&quot;, &quot;Epoxy&quot;, &quot;3D-Printer Build Plate&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Laser-Cut Assembly, Adhesives &amp; Finishing"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/assembly-adhesives-finishing.html">5. Laser-Cut Assembly, Adhesives &amp; Finishing</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Select joints, adhesives, cleanup tools, sanding, stain, and surface details as connected design decisions.</p>
+        <p>Assembly geometry and finishing choices affect strength, fit, appearance, and how clearly the final object communicates its purpose.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.titebond.com/print/product/d4d28015-603f-4dfc-a7d9-f684acc71207">Wood Glue</a> <a class="ter-resource-badge" href="https://www.loctiteproducts.com/products/central-pdp.html/loctite-super-glue-liquid-professional/SAP_0201DCL029X4.html">Super Glue</a> <a class="ter-resource-badge" href="https://www.loctiteproducts.com/products/central-pdp.html/loctite-epoxy-metal-concrete/SAP_0201OIL029V6.html">Epoxy</a> <a class="ter-resource-badge" href="https://help.prusa3d.com/article/print-surface-preparation_686951">3D-Printer Build Plate</a></p>
+      </details>
+    </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Wall and Bench Tool Module&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Design a visible, labelled, stable holder for a wall or workbench.&quot;, &quot;Good tool storage improves access, accountability, and shop safety.&quot;, &quot;Project Gallery&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Wall and Bench Tool Module"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/07-wall-bench-module.html">5. Wall and Bench Tool Module</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Wall and Bench Tool Module"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/07-wall-bench-module.html">6. Wall and Bench Tool Module</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Design a visible, labelled, stable holder for a wall or workbench.</p>
         <p>Good tool storage improves access, accountability, and shop safety.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/tools/tool-organizer-gallery/">Project Gallery</a></p>
@@ -61,21 +69,21 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Design and Fabrication Capstone&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Plan, prototype, test, and document an original fabricated solution.&quot;, &quot;The capstone combines evidence, design decisions, fabrication, and evaluation.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Design and Fabrication Capstone"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/08-capstone.html">6. Design and Fabrication Capstone</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Design and Fabrication Capstone"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="../../design-fabrication/03-laser-cutting/08-capstone.html">7. Design and Fabrication Capstone</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Plan, prototype, test, and document an original fabricated solution.</p>
         <p>The capstone combines evidence, design decisions, fabrication, and evaluation.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;CNC Machining&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;CNC machining resources are in development.&quot;, &quot;The future sequence will connect digital models to subtractive manufacturing.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for CNC Machining"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">7. CNC Machining <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for CNC Machining"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">8. CNC Machining <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>CNC machining resources are in development.</p>
         <p>The future sequence will connect digital models to subtractive manufacturing.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;3D Printing&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;3D-printing resources are in development.&quot;, &quot;The future sequence will cover slicing, orientation, supports, and functional tolerances.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for 3D Printing"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">8. 3D Printing <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for 3D Printing"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">9. 3D Printing <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>3D-printing resources are in development.</p>
         <p>The future sequence will cover slicing, orientation, supports, and functional tolerances.</p>
       </details>

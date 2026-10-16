@@ -20,14 +20,14 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 24)
+        self.assertEqual(len(design_routes), 29)
         self.assertEqual(
             design_routes[0],
             "/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html",
         )
         self.assertEqual(
             design_routes[-1],
-            "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
+            "/commons/design-fabrication/advanced-making/stamp-faux-enamel-jewellery.html",
         )
         self.assertEqual(
             design_routes[9:14],
@@ -37,6 +37,27 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
                 "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
                 "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
+            ],
+        )
+        self.assertEqual(
+            design_routes[18:25],
+            [
+                "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
+                "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
+                "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
+                "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
+                "/commons/design-fabrication/03-laser-cutting/assembly-adhesives-finishing.html",
+                "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
+                "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
+            ],
+        )
+        self.assertEqual(
+            design_routes[25:29],
+            [
+                "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
+                "/commons/design-fabrication/cad-parametric-modeling/phone-holder-design.html",
+                "/commons/design-fabrication/hand-tools/phone-holder.html",
+                "/commons/design-fabrication/advanced-making/stamp-faux-enamel-jewellery.html",
             ],
         )
         self.assertEqual(len(routes_by_course["tej"]), 17)
@@ -86,18 +107,25 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertIn('data-bs-learn-collapse-all', design)
         self.assertIn('data-bs-learn-expand-all', design)
         self.assertIn('data-bs-learn-search', design)
-        self.assertIn('aria-label="Show description for Understand the Situation"', design)
+        self.assertIn('aria-label="Show description for Understand the Situation &amp; Opportunity"', design)
         self.assertIn('data-bs-learn-result-count aria-live="polite"', design)
-        self.assertIn("A clear situation prevents a team from solving the wrong problem.", design)
+        self.assertIn("A clear situation and opportunity keep the team focused on a meaningful improvement.", design)
         self.assertNotIn("Why it matters:", design)
         self.assertNotIn("## Project path and tools", design)
-        self.assertLess(design.index("Culture and Land-Based Learning"), design.index("N.I.C.E. Design Process"))
-        self.assertLess(design.index("N.I.C.E. Design Process"), design.index("Logo Design in Photopea"))
-        self.assertLess(design.index("Logo Design in Photopea"), design.index("Accessible Design"))
-        self.assertLess(design.index("Accessible Design"), design.index("Laser Cutting and Fabrication Tools"))
-        self.assertLess(design.index("Laser Cutting and Fabrication Tools"), design.index("CNC Machining"))
-        self.assertLess(design.index("CNC Machining"), design.index("3D Printing"))
-        self.assertLess(design.index("3D Printing"), design.index("## Highlighted tools"))
+        catalogue = design[design.index('<div class="bs-learn-catalogue"'):]
+        self.assertLess(catalogue.index("Culture and Land-Based Learning"), catalogue.index("S.O. N.I.C.E. Design Process"))
+        self.assertLess(catalogue.index("S.O. N.I.C.E. Design Process"), catalogue.index("Logo Design in Photopea"))
+        self.assertLess(catalogue.index("Logo Design in Photopea"), catalogue.index("Accessible Design"))
+        self.assertLess(catalogue.index("Accessible Design"), catalogue.index("Laser Cutting and Fabrication Tools"))
+        self.assertLess(catalogue.index("Laser Cutting and Fabrication Tools"), catalogue.index("Laser-Cut Assembly, Adhesives &amp; Finishing"))
+        self.assertLess(catalogue.index("Laser-Cut Assembly, Adhesives &amp; Finishing"), catalogue.index("CNC Machining"))
+        self.assertLess(catalogue.index("CNC Machining"), catalogue.index("3D Printing"))
+        self.assertLess(catalogue.index("3D Printing"), catalogue.index("Introduction to CAD &amp; 3D Parametric Modeling"))
+        self.assertLess(catalogue.index("Introduction to CAD &amp; 3D Parametric Modeling"), catalogue.index("Phone Holder Design"))
+        self.assertLess(catalogue.index("Phone Holder Design"), catalogue.index("Introduction to Tools, Machines &amp; Phone Holder Building"))
+        self.assertLess(catalogue.index("Introduction to Tools, Machines &amp; Phone Holder Building"), catalogue.index("Advanced Making: Stamp or Faux-Enamel Jewellery"))
+        self.assertLess(catalogue.index("Advanced Making: Stamp or Faux-Enamel Jewellery"), catalogue.index("## Highlighted tools"))
+        self.assertIn('href="tools/index.html">CAD Tools</a>', design)
 
     def test_hubs_and_sidebar_number_sections_without_changing_titles_or_routes(self) -> None:
         outputs = course_notes.generated_text_outputs(self.source)
@@ -107,12 +135,18 @@ class CourseNotesManifestTests(unittest.TestCase):
         ]
         navigation = outputs[course_notes.NAVIGATION_PATH]
 
-        self.assertIn(">2. N.I.C.E. Design Process</a>", design)
-        self.assertIn(">1. Understand the Situation</a>", design)
+        self.assertIn(">2. S.O. N.I.C.E. Design Process</a>", design)
+        self.assertIn(">1. Understand the Situation &amp; Opportunity</a>", design)
         self.assertIn(">3. Logo Design in Photopea</a>", logo)
         self.assertIn(">1. Build the Nameplate Text</a>", logo)
         self.assertIn('section: "3. Logo Design in Photopea"', navigation)
         self.assertIn('text: "1. Build the Nameplate Text"', navigation)
+        self.assertIn('section: "CAD Tools"', navigation)
+        self.assertIn('href: "design-fabrication/tools/index.qmd"', navigation)
+        self.assertLess(
+            navigation.index('section: "CAD Tools"'),
+            navigation.index('text: "Laser-Cutting Files and Resources"'),
+        )
 
         logo_unit = self.source["courses"][0]["units"][2]
         self.assertEqual(logo_unit["title"], "Logo Design in Photopea")

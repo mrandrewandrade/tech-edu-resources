@@ -346,6 +346,31 @@ def build_navigation(data: dict[str, object]) -> str:
                         f"              href: {_yaml_string(lesson['source'])}",
                     ]
                 )
+        for group in raw_course.get("sidebar_groups", []):
+            assert isinstance(group, dict)
+            group_title = require_string(group.get("title"), "Sidebar group title")
+            group_source = require_string(group.get("source"), f"Sidebar group {group_title} source")
+            group_items = group.get("items")
+            if not isinstance(group_items, list) or not group_items:
+                raise ValidationError(f"Sidebar group {group_title} requires items")
+            lines.extend(
+                [
+                    f"        - section: {_yaml_string(group_title)}",
+                    f"          href: {_yaml_string(group_source)}",
+                    "          contents:",
+                ]
+            )
+            for item in group_items:
+                if not isinstance(item, dict):
+                    raise ValidationError(f"Sidebar group {group_title} item must be an object")
+                item_title = require_string(item.get("title"), f"Sidebar group {group_title} item title")
+                item_source = require_string(item.get("source"), f"Sidebar group {group_title} item source")
+                lines.extend(
+                    [
+                        f"            - text: {_yaml_string(item_title)}",
+                        f"              href: {_yaml_string(item_source)}",
+                    ]
+                )
         for resource in raw_course.get("course_resources", []):
             assert isinstance(resource, dict)
             lines.extend(
@@ -528,10 +553,26 @@ def build_hub_fragment(
         ]
     )
     if selected_unit is None:
+        sidebar_groups = raw_course.get("sidebar_groups", [])
+        assert isinstance(sidebar_groups, list)
         resources = raw_course.get("course_resources", [])
         assert isinstance(resources, list)
-        if resources:
+        if sidebar_groups or resources:
             lines.extend(["", "## Highlighted tools", "", '<ul class="bs-learn-highlighted-tools">'])
+            for group in sidebar_groups:
+                assert isinstance(group, dict)
+                group_source = _relative_public_href(str(group["source"]), hub_source)
+                lines.append(
+                    f'  <li><a href="{html.escape(group_source, quote=True)}">{html.escape(str(group["title"]))}</a>'
+                )
+                lines.append("    <ul>")
+                for item in group.get("items", []):
+                    assert isinstance(item, dict)
+                    item_source = _relative_public_href(str(item["source"]), hub_source)
+                    lines.append(
+                        f'      <li><a href="{html.escape(item_source, quote=True)}">{html.escape(str(item["title"]))}</a></li>'
+                    )
+                lines.extend(["    </ul>", "  </li>"])
             for resource in resources:
                 assert isinstance(resource, dict)
                 relative_source = _relative_public_href(str(resource["source"]), hub_source)

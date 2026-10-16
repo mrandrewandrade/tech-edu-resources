@@ -8,6 +8,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 |---|---|---|
 | 3D printing | `three-d-printing` | `/tech-edu-resources/glossary/#three-d-printing` |
 | 3MF | `three-mf` | `/tech-edu-resources/glossary/#three-mf` |
+| 555 Timer | `three-five-five-timer` | `/tech-edu-resources/glossary/#three-five-five-timer` |
 | A/D converter | `a-d-converter` | `/tech-edu-resources/glossary/#a-d-converter` |
 | Absolute path | `absolute-path` | `/tech-edu-resources/glossary/#absolute-path` |
 | AC beta | `ac-beta` | `/tech-edu-resources/glossary/#ac-beta` |
@@ -17,20 +18,24 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | AC load power | `ac-load-power` | `/tech-edu-resources/glossary/#ac-load-power` |
 | AC resistance of a diode | `ac-resistance-of-a-diode` | `/tech-edu-resources/glossary/#ac-resistance-of-a-diode` |
 | Acceleration | `acceleration` | `/tech-edu-resources/glossary/#acceleration` |
+| Accuracy | `accuracy` | `/tech-edu-resources/glossary/#accuracy` |
 | Active component | `active-component` | `/tech-edu-resources/glossary/#active-component` |
 | Active filter | `active-filter` | `/tech-edu-resources/glossary/#active-filter` |
 | Active region | `active-region` | `/tech-edu-resources/glossary/#active-region` |
+| Active-low Logic | `active-low` | `/tech-edu-resources/glossary/#active-low` |
 | Actual dimension | `actual-dimension` | `/tech-edu-resources/glossary/#actual-dimension` |
 | Acute angle | `acute-angle` | `/tech-edu-resources/glossary/#acute-angle` |
 | Additive manufacturing | `additive-manufacturing` | `/tech-edu-resources/glossary/#additive-manufacturing` |
 | Admittance | `admittance` | `/tech-edu-resources/glossary/#admittance` |
 | AI disclosure | `ai-disclosure` | `/tech-edu-resources/glossary/#ai-disclosure` |
+| AI Hallucination | `hallucination-ai` | `/tech-edu-resources/glossary/#hallucination-ai` |
 | AI output | `ai-output` | `/tech-edu-resources/glossary/#ai-output` |
 | Air gap | `air-gap` | `/tech-edu-resources/glossary/#air-gap` |
+| Algorithm | `algorithm` | `/tech-edu-resources/glossary/#algorithm` |
 | Alignment | `alignment` | `/tech-edu-resources/glossary/#alignment` |
 | Alignment template | `alignment-template` | `/tech-edu-resources/glossary/#alignment-template` |
 | Alkaline cell or battery | `alkaline-cell-or-battery` | `/tech-edu-resources/glossary/#alkaline-cell-or-battery` |
-| Alternating current | `alternating-current` | `/tech-edu-resources/glossary/#alternating-current` |
+| Alternating Current | `alternating-current` | `/tech-edu-resources/glossary/#alternating-current` |
 | Alternation | `alternation` | `/tech-edu-resources/glossary/#alternation` |
 | Alternator | `alternator` | `/tech-edu-resources/glossary/#alternator` |
 | Amp-clamp probe | `amp-clamp-probe` | `/tech-edu-resources/glossary/#amp-clamp-probe` |
@@ -38,29 +43,38 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Ampere turns/meter | `ampere-turns-meter` | `/tech-edu-resources/glossary/#ampere-turns-meter` |
 | Ampere-hour (A·h) rating | `ampere-hour-ah-rating` | `/tech-edu-resources/glossary/#ampere-hour-ah-rating` |
 | Ampere-turn | `ampere-turn` | `/tech-edu-resources/glossary/#ampere-turn` |
+| Amplifier | `amplifier` | `/tech-edu-resources/glossary/#amplifier` |
+| Analog Input | `analog-input` | `/tech-edu-resources/glossary/#analog-input` |
 | Analog multimeter | `analog-multimeter` | `/tech-edu-resources/glossary/#analog-multimeter` |
+| AND Gate | `and-gate` | `/tech-edu-resources/glossary/#and-gate` |
 | Animation | `animation` | `/tech-edu-resources/glossary/#animation` |
 | Antiresonance | `antiresonance` | `/tech-edu-resources/glossary/#antiresonance` |
 | Apparent power | `apparent-power` | `/tech-edu-resources/glossary/#apparent-power` |
 | Arctangent | `arctangent` | `/tech-edu-resources/glossary/#arctangent` |
 | Armature | `armature` | `/tech-edu-resources/glossary/#armature` |
+| Array | `array` | `/tech-edu-resources/glossary/#array` |
 | Artificial intelligence | `artificial-intelligence` | `/tech-edu-resources/glossary/#artificial-intelligence` |
 | Aspect ratio | `aspect-ratio` | `/tech-edu-resources/glossary/#aspect-ratio` |
 | Assembly | `assembly` | `/tech-edu-resources/glossary/#assembly` |
+| Astable Multivibrator | `astable-multivibrator` | `/tech-edu-resources/glossary/#astable-multivibrator` |
 | Asymmetrical JFET | `asymmetrical-jfet` | `/tech-edu-resources/glossary/#asymmetrical-jfet` |
 | Atom | `atom` | `/tech-edu-resources/glossary/#atom` |
 | Atomic number | `atomic-number` | `/tech-edu-resources/glossary/#atomic-number` |
+| Attention | `attention` | `/tech-edu-resources/glossary/#attention` |
 | Attenuation | `attenuation` | `/tech-edu-resources/glossary/#attenuation` |
 | Attribution | `attribution` | `/tech-edu-resources/glossary/#attribution` |
 | Audience | `audience` | `/tech-edu-resources/glossary/#audience` |
 | Audio frequency | `audio-frequency` | `/tech-edu-resources/glossary/#audio-frequency` |
+| Authentication | `authentication` | `/tech-edu-resources/glossary/#authentication` |
 | Authoritative source | `authoritative-source` | `/tech-edu-resources/glossary/#authoritative-source` |
 | Autotransformer | `autotransformer` | `/tech-edu-resources/glossary/#autotransformer` |
 | Avalanche | `avalanche` | `/tech-edu-resources/glossary/#avalanche` |
 | Average value | `average-value` | `/tech-edu-resources/glossary/#average-value` |
 | B-H magnetization curve | `b-h-magnetization-curve` | `/tech-edu-resources/glossary/#b-h-magnetization-curve` |
+| Back EMF | `back-emf` | `/tech-edu-resources/glossary/#back-emf` |
 | Back-offohmmeter scale | `back-off-ohmmeter-scale` | `/tech-edu-resources/glossary/#back-off-ohmmeter-scale` |
 | Backer | `backer` | `/tech-edu-resources/glossary/#backer` |
+| Backpropagation | `backpropagation` | `/tech-edu-resources/glossary/#backpropagation` |
 | Balanced bridge | `balanced-bridge` | `/tech-edu-resources/glossary/#balanced-bridge` |
 | Band-pass filter | `band-pass-filter` | `/tech-edu-resources/glossary/#band-pass-filter` |
 | Band-stop filter | `band-stop-filter` | `/tech-edu-resources/glossary/#band-stop-filter` |
@@ -69,14 +83,21 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Banks in series | `banks-in-series` | `/tech-edu-resources/glossary/#banks-in-series` |
 | Barrier potential | `barrier-potential` | `/tech-edu-resources/glossary/#barrier-potential` |
 | Base | `base` | `/tech-edu-resources/glossary/#base` |
+| Baseline Model | `baseline-model` | `/tech-edu-resources/glossary/#baseline-model` |
 | Battery | `battery` | `/tech-edu-resources/glossary/#battery` |
 | Bias | `bias` | `/tech-edu-resources/glossary/#bias` |
 | Bidirectional diode thyristor | `bidirectional-diode-thyristor` | `/tech-edu-resources/glossary/#bidirectional-diode-thyristor` |
+| Bigram | `bigram` | `/tech-edu-resources/glossary/#bigram` |
 | Bilateral components | `bilateral-components` | `/tech-edu-resources/glossary/#bilateral-components` |
+| Bill of Materials | `bill-of-materials` | `/tech-edu-resources/glossary/#bill-of-materials` |
+| Binary Number System | `binary-number-system` | `/tech-edu-resources/glossary/#binary-number-system` |
+| BIOS | `bios` | `/tech-edu-resources/glossary/#bios` |
+| Bipolar Junction Transistor | `bipolar-junction-transistor` | `/tech-edu-resources/glossary/#bipolar-junction-transistor` |
 | Bleeder current | `bleeder-current` | `/tech-edu-resources/glossary/#bleeder-current` |
 | Bolt | `bolt` | `/tech-edu-resources/glossary/#bolt` |
+| Boolean Algebra | `boolean-algebra` | `/tech-edu-resources/glossary/#boolean-algebra` |
 | Boolean operation | `boolean-operation` | `/tech-edu-resources/glossary/#boolean-operation` |
-| Branch | `branch` | `/tech-edu-resources/glossary/#branch` |
+| Breadboard | `breadboard` | `/tech-edu-resources/glossary/#breadboard` |
 | Breakdown region | `breakdown-region` | `/tech-edu-resources/glossary/#breakdown-region` |
 | Breakdown voltage | `breakdown-voltage` | `/tech-edu-resources/glossary/#breakdown-voltage` |
 | Bridge | `bridge` | `/tech-edu-resources/glossary/#bridge` |
@@ -85,6 +106,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Bulk resistance | `bulk-resistance` | `/tech-edu-resources/glossary/#bulk-resistance` |
 | Burr | `burr` | `/tech-edu-resources/glossary/#burr` |
 | Bypass capacitor | `bypass-capacitor` | `/tech-edu-resources/glossary/#bypass-capacitor` |
+| Bézier curve | `bezier-curve` | `/tech-edu-resources/glossary/#bezier-curve` |
 | CAD sketch | `sketch` | `/tech-edu-resources/glossary/#sketch` |
 | Calibration | `calibration` | `/tech-edu-resources/glossary/#calibration` |
 | Calorie | `calorie` | `/tech-edu-resources/glossary/#calorie` |
@@ -105,22 +127,32 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Chip capacitor | `chip-capacitor` | `/tech-edu-resources/glossary/#chip-capacitor` |
 | Choke | `choke` | `/tech-edu-resources/glossary/#choke` |
 | Circuit | `circuit` | `/tech-edu-resources/glossary/#circuit` |
-| Circuit breaker | `circuit-breaker` | `/tech-edu-resources/glossary/#circuit-breaker` |
+| Circuit Breaker | `circuit-breaker` | `/tech-edu-resources/glossary/#circuit-breaker` |
+| Circuit Schematic | `circuit-schematic` | `/tech-edu-resources/glossary/#circuit-schematic` |
 | Circular mil | `circular-mil` | `/tech-edu-resources/glossary/#circular-mil` |
 | Class A amplifier | `class-a-amplifi-er` | `/tech-edu-resources/glossary/#class-a-amplifi-er` |
 | Class B amplifier | `class-b-amplifi-er` | `/tech-edu-resources/glossary/#class-b-amplifi-er` |
 | Class B push-pull amplifier | `class-b-push-pull-amplifi-er` | `/tech-edu-resources/glossary/#class-b-push-pull-amplifi-er` |
 | Class C amplifier | `class-c-amplifi-er` | `/tech-edu-resources/glossary/#class-c-amplifi-er` |
+| Class Imbalance | `class-imbalance` | `/tech-edu-resources/glossary/#class-imbalance` |
+| Classification | `classification` | `/tech-edu-resources/glossary/#classification` |
+| Classification Threshold | `threshold-classification` | `/tech-edu-resources/glossary/#threshold-classification` |
 | Clearance | `clearance` | `/tech-edu-resources/glossary/#clearance` |
 | Clearance hole | `clearance-hole` | `/tech-edu-resources/glossary/#clearance-hole` |
+| Client | `client` | `/tech-edu-resources/glossary/#client` |
+| Closed path | `closed-path` | `/tech-edu-resources/glossary/#closed-path` |
+| Closed-loop Control | `closed-loop-control` | `/tech-edu-resources/glossary/#closed-loop-control` |
 | Closed-loop cutofffrequency | `closed-loop-cutoff-frequency` | `/tech-edu-resources/glossary/#closed-loop-cutoff-frequency` |
 | Closed-loop voltage gain | `closed-loop-voltage-gain` | `/tech-edu-resources/glossary/#closed-loop-voltage-gain` |
+| Clustering | `clustering` | `/tech-edu-resources/glossary/#clustering` |
 | Coaxial cable | `coaxial-cable` | `/tech-edu-resources/glossary/#coaxial-cable` |
 | Coding of capacitors | `coding-of-capacitors` | `/tech-edu-resources/glossary/#coding-of-capacitors` |
 | Coefficient of coupling | `coeffi-cient-of-coupling` | `/tech-edu-resources/glossary/#coeffi-cient-of-coupling` |
 | Coil | `coil` | `/tech-edu-resources/glossary/#coil` |
 | Collector | `collector` | `/tech-edu-resources/glossary/#collector` |
 | Color code | `color-code` | `/tech-edu-resources/glossary/#color-code` |
+| Combinational Logic | `combinational-logic` | `/tech-edu-resources/glossary/#combinational-logic` |
+| Command Shell | `command-shell` | `/tech-edu-resources/glossary/#command-shell` |
 | Common-base amplifier | `common-base-amplifi-er` | `/tech-edu-resources/glossary/#common-base-amplifi-er` |
 | Common-collector amplifier | `common-collector-amplifi-er` | `/tech-edu-resources/glossary/#common-collector-amplifi-er` |
 | Common-drain amplifier | `common-drain-amplifi-er` | `/tech-edu-resources/glossary/#common-drain-amplifi-er` |
@@ -134,11 +166,13 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Comparator | `comparator` | `/tech-edu-resources/glossary/#comparator` |
 | Complex number | `complex-number` | `/tech-edu-resources/glossary/#complex-number` |
 | Compound | `compound` | `/tech-edu-resources/glossary/#compound` |
+| Computer Numerical Control | `computer-numerical-control` | `/tech-edu-resources/glossary/#computer-numerical-control` |
 | Computer-aided design | `computer-aided-design` | `/tech-edu-resources/glossary/#computer-aided-design` |
 | Concept | `concept` | `/tech-edu-resources/glossary/#concept` |
 | Condenser | `condenser` | `/tech-edu-resources/glossary/#condenser` |
 | Conductance | `conductance` | `/tech-edu-resources/glossary/#conductance` |
 | Conductor | `conductor` | `/tech-edu-resources/glossary/#conductor` |
+| Confusion Matrix | `confusion-matrix` | `/tech-edu-resources/glossary/#confusion-matrix` |
 | Constant-current source | `constant-current-source` | `/tech-edu-resources/glossary/#constant-current-source` |
 | Constant-voltage source | `constant-voltage-source` | `/tech-edu-resources/glossary/#constant-voltage-source` |
 | Constraint | `constraint` | `/tech-edu-resources/glossary/#constraint` |
@@ -146,13 +180,13 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Continuity | `continuity` | `/tech-edu-resources/glossary/#continuity` |
 | Continuity testing | `continuity-testing` | `/tech-edu-resources/glossary/#continuity-testing` |
 | Contrast | `contrast` | `/tech-edu-resources/glossary/#contrast` |
+| Control System | `control-system` | `/tech-edu-resources/glossary/#control-system` |
 | Conventional current | `conventional-current` | `/tech-edu-resources/glossary/#conventional-current` |
 | Copyright | `copyright` | `/tech-edu-resources/glossary/#copyright` |
 | Corona effect | `corona-effect` | `/tech-edu-resources/glossary/#corona-effect` |
 | Cosine | `cosine` | `/tech-edu-resources/glossary/#cosine` |
 | Cosine wave | `cosine-wave` | `/tech-edu-resources/glossary/#cosine-wave` |
 | Coulomb | `coulomb` | `/tech-edu-resources/glossary/#coulomb` |
-| Counter emf | `counter-emf` | `/tech-edu-resources/glossary/#counter-emf` |
 | Counterbore | `counterbore` | `/tech-edu-resources/glossary/#counterbore` |
 | Countersink | `countersink` | `/tech-edu-resources/glossary/#countersink` |
 | Coupling capacitor | `coupling-capacitor` | `/tech-edu-resources/glossary/#coupling-capacitor` |
@@ -160,12 +194,14 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Covalent bonding | `covalent-bonding` | `/tech-edu-resources/glossary/#covalent-bonding` |
 | Cps | `cps` | `/tech-edu-resources/glossary/#cps` |
 | Criterion | `criterion` | `/tech-edu-resources/glossary/#criterion` |
+| Cron | `cron` | `/tech-edu-resources/glossary/#cron` |
+| Cross-validation | `cross-validation` | `/tech-edu-resources/glossary/#cross-validation` |
 | Crossover distortion | `crossover-distortion` | `/tech-edu-resources/glossary/#crossover-distortion` |
 | CRT | `crt` | `/tech-edu-resources/glossary/#crt` |
 | Crystal filter | `crystal-filter` | `/tech-edu-resources/glossary/#crystal-filter` |
 | Curie temperature | `curie-temperature` | `/tech-edu-resources/glossary/#curie-temperature` |
 | Current | `current` | `/tech-edu-resources/glossary/#current` |
-| Current divider | `current-divider` | `/tech-edu-resources/glossary/#current-divider` |
+| Current Divider | `current-divider` | `/tech-edu-resources/glossary/#current-divider` |
 | Current gain | `current-gain` | `/tech-edu-resources/glossary/#current-gain` |
 | Current source | `current-source` | `/tech-edu-resources/glossary/#current-source` |
 | Current-source region | `current-source-region` | `/tech-edu-resources/glossary/#current-source-region` |
@@ -173,15 +209,21 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Cutofffrequency | `cutoff-frequency` | `/tech-edu-resources/glossary/#cutoff-frequency` |
 | Cycle | `cycle` | `/tech-edu-resources/glossary/#cycle` |
 | Damping | `damping` | `/tech-edu-resources/glossary/#damping` |
+| Data Leakage | `data-leakage` | `/tech-edu-resources/glossary/#data-leakage` |
+| Data Logging | `data-logging` | `/tech-edu-resources/glossary/#data-logging` |
+| Data Type | `data-type` | `/tech-edu-resources/glossary/#data-type` |
 | DB | `db` | `/tech-edu-resources/glossary/#db` |
 | DC alpha | `dc-alpha` | `/tech-edu-resources/glossary/#dc-alpha` |
 | DC beta | `dc-beta` | `/tech-edu-resources/glossary/#dc-beta` |
 | DC input power | `dc-input-power` | `/tech-edu-resources/glossary/#dc-input-power` |
 | DC load line | `dc-load-line` | `/tech-edu-resources/glossary/#dc-load-line` |
+| Debouncing | `debouncing` | `/tech-edu-resources/glossary/#debouncing` |
 | Deburring | `deburring` | `/tech-edu-resources/glossary/#deburring` |
 | Decade | `decade` | `/tech-edu-resources/glossary/#decade` |
 | Decade resistance box | `decade-resistance-box` | `/tech-edu-resources/glossary/#decade-resistance-box` |
 | Decimal notation | `decimal-notation` | `/tech-edu-resources/glossary/#decimal-notation` |
+| Decimal Number System | `decimal-number-system` | `/tech-edu-resources/glossary/#decimal-number-system` |
+| Decision Tree | `decision-tree` | `/tech-edu-resources/glossary/#decision-tree` |
 | Degaussing | `degaussing` | `/tech-edu-resources/glossary/#degaussing` |
 | Delta (D) network | `delta-d-network` | `/tech-edu-resources/glossary/#delta-d-network` |
 | Depletion mode | `depletion-mode` | `/tech-edu-resources/glossary/#depletion-mode` |
@@ -190,6 +232,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Derating factor | `derating-factor` | `/tech-edu-resources/glossary/#derating-factor` |
 | Design brief | `design-brief` | `/tech-edu-resources/glossary/#design-brief` |
 | Design intent | `design-intent` | `/tech-edu-resources/glossary/#design-intent` |
+| Desoldering | `desoldering` | `/tech-edu-resources/glossary/#desoldering` |
 | Diac | `diac` | `/tech-edu-resources/glossary/#diac` |
 | Diamagnetic | `diamagnetic` | `/tech-edu-resources/glossary/#diamagnetic` |
 | Dielectric | `dielectric` | `/tech-edu-resources/glossary/#dielectric` |
@@ -200,16 +243,20 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Differential input voltage | `differential-input-voltage` | `/tech-edu-resources/glossary/#differential-input-voltage` |
 | Differential voltage gain | `differential-voltage-gain` | `/tech-edu-resources/glossary/#differential-voltage-gain` |
 | Differentiator | `differentiator` | `/tech-edu-resources/glossary/#differentiator` |
-| Digital multimeter | `digital-multimeter` | `/tech-edu-resources/glossary/#digital-multimeter` |
+| Digital Logic Level | `digital-logic-level` | `/tech-edu-resources/glossary/#digital-logic-level` |
+| Digital Multimeter | `digital-multimeter` | `/tech-edu-resources/glossary/#digital-multimeter` |
 | Dimension | `dimension` | `/tech-edu-resources/glossary/#dimension` |
 | Diode | `diode` | `/tech-edu-resources/glossary/#diode` |
 | Diode bias | `diode-bias` | `/tech-edu-resources/glossary/#diode-bias` |
-| Direct current | `direct-current` | `/tech-edu-resources/glossary/#direct-current` |
+| Direct Current | `direct-current` | `/tech-edu-resources/glossary/#direct-current` |
+| Direct Select Tool | `direct-select-tool` | `/tech-edu-resources/glossary/#direct-select-tool` |
 | Discharge current | `discharge-current` | `/tech-edu-resources/glossary/#discharge-current` |
 | Discharging | `discharging` | `/tech-edu-resources/glossary/#discharging` |
+| Disk Partition | `disk-partition` | `/tech-edu-resources/glossary/#disk-partition` |
 | Displacement | `displacement` | `/tech-edu-resources/glossary/#displacement` |
 | Distance | `distance` | `/tech-edu-resources/glossary/#distance` |
 | Distribution | `distribution` | `/tech-edu-resources/glossary/#distribution` |
+| Domain Name System | `domain-name-system` | `/tech-edu-resources/glossary/#domain-name-system` |
 | Doping | `doping` | `/tech-edu-resources/glossary/#doping` |
 | Double-subscript notation | `double-subscript-notation` | `/tech-edu-resources/glossary/#double-subscript-notation` |
 | Dowel | `dowel` | `/tech-edu-resources/glossary/#dowel` |
@@ -217,6 +264,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | DPST | `dpst` | `/tech-edu-resources/glossary/#dpst` |
 | Drain | `drain` | `/tech-edu-resources/glossary/#drain` |
 | Drilling template | `drilling-template` | `/tech-edu-resources/glossary/#drilling-template` |
+| Dynamic Host Configuration Protocol | `dynamic-host-configuration-protocol` | `/tech-edu-resources/glossary/#dynamic-host-configuration-protocol` |
 | Dynamometer | `dynamometer` | `/tech-edu-resources/glossary/#dynamometer` |
 | D’Arsonval meter | `darsonval-meter` | `/tech-edu-resources/glossary/#darsonval-meter` |
 | Earth ground | `earth-ground` | `/tech-edu-resources/glossary/#earth-ground` |
@@ -235,19 +283,24 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Electron valence | `electron-valence` | `/tech-edu-resources/glossary/#electron-valence` |
 | Electron volt | `electron-volt` | `/tech-edu-resources/glossary/#electron-volt` |
 | Electron-hole pair | `electron-hole-pair` | `/tech-edu-resources/glossary/#electron-hole-pair` |
+| Electrostatic Discharge | `electrostatic-discharge` | `/tech-edu-resources/glossary/#electrostatic-discharge` |
 | Element | `element` | `/tech-edu-resources/glossary/#element` |
+| Embedding | `embedding` | `/tech-edu-resources/glossary/#embedding` |
 | Emf | `emf` | `/tech-edu-resources/glossary/#emf` |
 | Emitter | `emitter` | `/tech-edu-resources/glossary/#emitter` |
 | Emitter bypass capacitor | `emitter-bypass-capacitor` | `/tech-edu-resources/glossary/#emitter-bypass-capacitor` |
 | Emitter follower | `emitter-follower` | `/tech-edu-resources/glossary/#emitter-follower` |
 | Engineering Design Process | `engineering-design-process` | `/tech-edu-resources/glossary/#engineering-design-process` |
-| Engineering notation | `engineering-notation` | `/tech-edu-resources/glossary/#engineering-notation` |
+| Engineering Notation | `engineering-notation` | `/tech-edu-resources/glossary/#engineering-notation` |
 | Engraving | `engraving` | `/tech-edu-resources/glossary/#engraving` |
 | Enhancement mode | `enhancement-mode` | `/tech-edu-resources/glossary/#enhancement-mode` |
-| Equivalent resistance | `equivalent-resistance` | `/tech-edu-resources/glossary/#equivalent-resistance` |
+| Ensemble Model | `ensemble-model` | `/tech-edu-resources/glossary/#ensemble-model` |
+| Equivalent Resistance | `equivalent-resistance` | `/tech-edu-resources/glossary/#equivalent-resistance` |
 | Equivalent series resistance | `equivalent-series-resistance` | `/tech-edu-resources/glossary/#equivalent-series-resistance` |
 | Evaluation | `evaluation` | `/tech-edu-resources/glossary/#evaluation` |
 | Evidence | `evidence` | `/tech-edu-resources/glossary/#evidence` |
+| Exception | `exception` | `/tech-edu-resources/glossary/#exception` |
+| Explainability | `explainability` | `/tech-edu-resources/glossary/#explainability` |
 | Extrinsic semiconductor | `extrinsic-semiconductor` | `/tech-edu-resources/glossary/#extrinsic-semiconductor` |
 | Extrude | `extrude` | `/tech-edu-resources/glossary/#extrude` |
 | F connector | `f-connector` | `/tech-edu-resources/glossary/#f-connector` |
@@ -267,6 +320,8 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Field intensity | `field-intensity` | `/tech-edu-resources/glossary/#field-intensity` |
 | Field winding | `field-winding` | `/tech-edu-resources/glossary/#field-winding` |
 | File path | `file-path` | `/tech-edu-resources/glossary/#file-path` |
+| File Permissions | `file-permissions` | `/tech-edu-resources/glossary/#file-permissions` |
+| Filesystem | `filesystem` | `/tech-edu-resources/glossary/#filesystem` |
 | Fill | `fill` | `/tech-edu-resources/glossary/#fill` |
 | Fillet | `fillet` | `/tech-edu-resources/glossary/#fillet` |
 | Film capacitor | `film-capacitor` | `/tech-edu-resources/glossary/#film-capacitor` |
@@ -274,9 +329,11 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Fit | `fit` | `/tech-edu-resources/glossary/#fit` |
 | Fit gauge | `fit-gauge` | `/tech-edu-resources/glossary/#fit-gauge` |
 | Float charging | `float-charging` | `/tech-edu-resources/glossary/#float-charging` |
+| Floating Input | `floating-input` | `/tech-edu-resources/glossary/#floating-input` |
 | Fluctuating direct current | `fluctuating-direct-current` | `/tech-edu-resources/glossary/#fluctuating-direct-current` |
 | Flux | `flux` | `/tech-edu-resources/glossary/#flux` |
 | Flux density | `flux-density` | `/tech-edu-resources/glossary/#flux-density` |
+| Flyback Diode | `flyback-diode` | `/tech-edu-resources/glossary/#flyback-diode` |
 | Flywheel effect | `flywheel-effect` | `/tech-edu-resources/glossary/#flywheel-effect` |
 | Form factor | `form-factor` | `/tech-edu-resources/glossary/#form-factor` |
 | Forward blocking current | `forward-blocking-current` | `/tech-edu-resources/glossary/#forward-blocking-current` |
@@ -290,24 +347,36 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Frequency multiplier | `frequency-multiplier` | `/tech-edu-resources/glossary/#frequency-multiplier` |
 | Front view | `front-view` | `/tech-edu-resources/glossary/#front-view` |
 | Fuel cell | `fuel-cell` | `/tech-edu-resources/glossary/#fuel-cell` |
+| Full Adder | `full-adder` | `/tech-edu-resources/glossary/#full-adder` |
 | Full-wave rectifier | `full-wave-rectifi-er` | `/tech-edu-resources/glossary/#full-wave-rectifi-er` |
+| Function | `function-programming` | `/tech-edu-resources/glossary/#function-programming` |
 | Funity | `funity` | `/tech-edu-resources/glossary/#funity` |
 | Fuse | `fuse` | `/tech-edu-resources/glossary/#fuse` |
+| Gain | `gain` | `/tech-edu-resources/glossary/#gain` |
 | Galvanic cell | `galvanic-cell` | `/tech-edu-resources/glossary/#galvanic-cell` |
 | Galvanometer | `galvanometer` | `/tech-edu-resources/glossary/#galvanometer` |
 | Ganged capacitors | `ganged-capacitors` | `/tech-edu-resources/glossary/#ganged-capacitors` |
 | Gate | `gate` | `/tech-edu-resources/glossary/#gate` |
 | Gate-source cutoffvoltage | `gate-source-cutoff-voltage` | `/tech-edu-resources/glossary/#gate-source-cutoff-voltage` |
 | Gauss | `gauss` | `/tech-edu-resources/glossary/#gauss` |
+| General-purpose Input Output | `general-purpose-input-output` | `/tech-edu-resources/glossary/#general-purpose-input-output` |
 | Generative AI | `generative-ai` | `/tech-edu-resources/glossary/#generative-ai` |
 | Generator | `generator` | `/tech-edu-resources/glossary/#generator` |
 | Geometric constraint | `geometric-constraint` | `/tech-edu-resources/glossary/#geometric-constraint` |
+| Gerber File | `gerber-file` | `/tech-edu-resources/glossary/#gerber-file` |
 | Germanium | `germanium` | `/tech-edu-resources/glossary/#germanium` |
 | Giga | `giga` | `/tech-edu-resources/glossary/#giga` |
 | Gilbert | `gilbert` | `/tech-edu-resources/glossary/#gilbert` |
+| Git Branch | `branch-git` | `/tech-edu-resources/glossary/#branch-git` |
+| Git Commit | `git-commit` | `/tech-edu-resources/glossary/#git-commit` |
+| Gradient | `gradient` | `/tech-edu-resources/glossary/#gradient` |
 | Graph cycle | `graph-cycle` | `/tech-edu-resources/glossary/#graph-cycle` |
+| Graphics layer | `graphics-layer` | `/tech-edu-resources/glossary/#graphics-layer` |
 | Ground | `ground` | `/tech-edu-resources/glossary/#ground` |
+| Grounding | `grounding-ai` | `/tech-edu-resources/glossary/#grounding-ai` |
+| GUESS Method | `guess-method` | `/tech-edu-resources/glossary/#guess-method` |
 | Gusset | `gusset` | `/tech-edu-resources/glossary/#gusset` |
+| Half Adder | `half-adder` | `/tech-edu-resources/glossary/#half-adder` |
 | Half-power points | `half-power-points` | `/tech-edu-resources/glossary/#half-power-points` |
 | Half-wave rectifier | `half-wave-rectifi-er` | `/tech-edu-resources/glossary/#half-wave-rectifi-er` |
 | Hall effect | `hall-effect` | `/tech-edu-resources/glossary/#hall-effect` |
@@ -315,6 +384,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Harmonic frequency | `harmonic-frequency` | `/tech-edu-resources/glossary/#harmonic-frequency` |
 | Henry | `henry` | `/tech-edu-resources/glossary/#henry` |
 | Hertz | `hertz` | `/tech-edu-resources/glossary/#hertz` |
+| Hexadecimal Number System | `hexadecimal-number-system` | `/tech-edu-resources/glossary/#hexadecimal-number-system` |
 | High-pass filter | `high-pass-filter` | `/tech-edu-resources/glossary/#high-pass-filter` |
 | Hinge | `hinge` | `/tech-edu-resources/glossary/#hinge` |
 | Holding current | `holding-current` | `/tech-edu-resources/glossary/#holding-current` |
@@ -347,7 +417,10 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Integrator | `integrator` | `/tech-edu-resources/glossary/#integrator` |
 | Interbase resistance | `interbase-resistance` | `/tech-edu-resources/glossary/#interbase-resistance` |
 | Interface state | `interface-state` | `/tech-edu-resources/glossary/#interface-state` |
+| Internal Pull-up | `internal-pull-up` | `/tech-edu-resources/glossary/#internal-pull-up` |
+| Internal Resistance | `internal-resistance` | `/tech-edu-resources/glossary/#internal-resistance` |
 | Internal resistance ri | `internal-resistance-ri` | `/tech-edu-resources/glossary/#internal-resistance-ri` |
+| Interrupt | `interrupt` | `/tech-edu-resources/glossary/#interrupt` |
 | Intrinsic semiconductor | `intrinsic-semiconductor` | `/tech-edu-resources/glossary/#intrinsic-semiconductor` |
 | Intrinsic standoffratio | `intrinsic-standoff-ratio` | `/tech-edu-resources/glossary/#intrinsic-standoff-ratio` |
 | Inverse relation | `inverse-relation` | `/tech-edu-resources/glossary/#inverse-relation` |
@@ -355,6 +428,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Investigation | `investigation` | `/tech-edu-resources/glossary/#investigation` |
 | Ion | `ion` | `/tech-edu-resources/glossary/#ion` |
 | Ionization current | `ionization-current` | `/tech-edu-resources/glossary/#ionization-current` |
+| IP Address | `ip-address` | `/tech-edu-resources/glossary/#ip-address` |
 | IR drop | `ir-drop` | `/tech-edu-resources/glossary/#ir-drop` |
 | Iron-vane meter | `iron-vane-meter` | `/tech-edu-resources/glossary/#iron-vane-meter` |
 | Isometric view | `isometric-view` | `/tech-edu-resources/glossary/#isometric-view` |
@@ -364,16 +438,20 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Joint | `joint` | `/tech-edu-resources/glossary/#joint` |
 | Joule | `joule` | `/tech-edu-resources/glossary/#joule` |
 | JPEG | `jpeg` | `/tech-edu-resources/glossary/#jpeg` |
+| Karnaugh Map | `karnaugh-map` | `/tech-edu-resources/glossary/#karnaugh-map` |
 | Keeper | `keeper` | `/tech-edu-resources/glossary/#keeper` |
 | Kelvin (K) scale | `kelvin-k-scale` | `/tech-edu-resources/glossary/#kelvin-k-scale` |
 | Kerf | `kerf` | `/tech-edu-resources/glossary/#kerf` |
+| Kernel | `kernel` | `/tech-edu-resources/glossary/#kernel` |
 | Keyframe | `keyframe` | `/tech-edu-resources/glossary/#keyframe` |
 | Kilo | `kilo` | `/tech-edu-resources/glossary/#kilo` |
 | Kilometres per Hour | `kilometres-per-hour` | `/tech-edu-resources/glossary/#kilometres-per-hour` |
 | Kilowatt-hour | `kilowatt-hour` | `/tech-edu-resources/glossary/#kilowatt-hour` |
-| Kirchhoff ’s current law | `kirchhoff-s-current-law` | `/tech-edu-resources/glossary/#kirchhoff-s-current-law` |
-| Kirchhoff ’s voltage law | `kirchhoff-s-voltage-law` | `/tech-edu-resources/glossary/#kirchhoff-s-voltage-law` |
+| Kirchhoff's Current Law | `kirchhoffs-current-law` | `/tech-edu-resources/glossary/#kirchhoffs-current-law` |
+| Kirchhoff's Voltage Law | `kirchhoffs-voltage-law` | `/tech-edu-resources/glossary/#kirchhoffs-voltage-law` |
 | Laminations | `laminations` | `/tech-edu-resources/glossary/#laminations` |
+| Language Model | `language-model` | `/tech-edu-resources/glossary/#language-model` |
+| Language-model Sampling | `sampling-language-model` | `/tech-edu-resources/glossary/#sampling-language-model` |
 | Laser cutter | `laser-cutter` | `/tech-edu-resources/glossary/#laser-cutter` |
 | Laser cutting | `laser-cutting` | `/tech-edu-resources/glossary/#laser-cutting` |
 | Laser focus | `focus` | `/tech-edu-resources/glossary/#focus` |
@@ -382,26 +460,37 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Leakage current | `leakage-current` | `/tech-edu-resources/glossary/#leakage-current` |
 | Leakage flux | `leakage-flux` | `/tech-edu-resources/glossary/#leakage-flux` |
 | Leakage resistance | `leakage-resistance` | `/tech-edu-resources/glossary/#leakage-resistance` |
+| Least Privilege | `least-privilege` | `/tech-edu-resources/glossary/#least-privilege` |
 | Leclanché cell | `leclanche-cell` | `/tech-edu-resources/glossary/#leclanche-cell` |
 | Left-hand rule | `left-hand-rule` | `/tech-edu-resources/glossary/#left-hand-rule` |
 | Lenz’s law | `lenzs-law` | `/tech-edu-resources/glossary/#lenzs-law` |
 | Lettermark | `lettermark` | `/tech-edu-resources/glossary/#lettermark` |
 | Licence | `licence` | `/tech-edu-resources/glossary/#licence` |
+| Light-dependent Resistor | `light-dependent-resistor` | `/tech-edu-resources/glossary/#light-dependent-resistor` |
 | Light-emitting diode | `light-emitting-diode` | `/tech-edu-resources/glossary/#light-emitting-diode` |
 | Linear amplifier | `linear-amplifi-er` | `/tech-edu-resources/glossary/#linear-amplifi-er` |
 | Linear component | `linear-component` | `/tech-edu-resources/glossary/#linear-component` |
 | Linear proportion | `linear-proportion` | `/tech-edu-resources/glossary/#linear-proportion` |
+| Linear Regression | `linear-regression` | `/tech-edu-resources/glossary/#linear-regression` |
 | Linear resistance | `linear-resistance` | `/tech-edu-resources/glossary/#linear-resistance` |
+| Linux Distribution | `linux-distribution` | `/tech-edu-resources/glossary/#linux-distribution` |
 | Load | `load` | `/tech-edu-resources/glossary/#load` |
 | Load currents | `load-currents` | `/tech-edu-resources/glossary/#load-currents` |
 | Loaded voltage | `loaded-voltage` | `/tech-edu-resources/glossary/#loaded-voltage` |
-| Loading effect | `loading-effect` | `/tech-edu-resources/glossary/#loading-effect` |
+| Loading Effect | `loading-effect` | `/tech-edu-resources/glossary/#loading-effect` |
+| Logic Gate | `logic-gate` | `/tech-edu-resources/glossary/#logic-gate` |
 | Logo | `logo` | `/tech-edu-resources/glossary/#logo` |
 | Long time constant | `long-time-constant` | `/tech-edu-resources/glossary/#long-time-constant` |
 | Loop | `loop` | `/tech-edu-resources/glossary/#loop` |
 | Loop equation | `loop-equation` | `/tech-edu-resources/glossary/#loop-equation` |
 | Loose fit | `loose-fit` | `/tech-edu-resources/glossary/#loose-fit` |
+| Loss Function | `loss-function` | `/tech-edu-resources/glossary/#loss-function` |
 | Low-pass filter | `low-pass-filter` | `/tech-edu-resources/glossary/#low-pass-filter` |
+| MAC Address | `mac-address` | `/tech-edu-resources/glossary/#mac-address` |
+| Machine-learning Bias | `machine-learning-bias` | `/tech-edu-resources/glossary/#machine-learning-bias` |
+| Machine-learning Fairness | `fairness-machine-learning` | `/tech-edu-resources/glossary/#fairness-machine-learning` |
+| Machine-learning Feature | `feature-machine-learning` | `/tech-edu-resources/glossary/#feature-machine-learning` |
+| Machine-learning Label | `label-machine-learning` | `/tech-edu-resources/glossary/#label-machine-learning` |
 | Magnetic flux | `magnetic-flux` | `/tech-edu-resources/glossary/#magnetic-flux` |
 | Magnetic pole | `magnetic-pole` | `/tech-edu-resources/glossary/#magnetic-pole` |
 | Magnetism | `magnetism` | `/tech-edu-resources/glossary/#magnetism` |
@@ -411,16 +500,20 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Majority current carrier | `majority-current-carrier` | `/tech-edu-resources/glossary/#majority-current-carrier` |
 | Make and break | `make-and-break` | `/tech-edu-resources/glossary/#make-and-break` |
 | Material thickness | `material-thickness` | `/tech-edu-resources/glossary/#material-thickness` |
+| Maximum Power Transfer | `maximum-power-transfer` | `/tech-edu-resources/glossary/#maximum-power-transfer` |
 | Maximum working voltage rating | `maximum-working-voltage-rating` | `/tech-edu-resources/glossary/#maximum-working-voltage-rating` |
 | Maxwell | `maxwell` | `/tech-edu-resources/glossary/#maxwell` |
+| Measurement Uncertainty | `measurement-uncertainty` | `/tech-edu-resources/glossary/#measurement-uncertainty` |
 | Mega | `mega` | `/tech-edu-resources/glossary/#mega` |
 | Mesh current | `mesh-current` | `/tech-edu-resources/glossary/#mesh-current` |
 | Metal-film resistors | `metal-film-resistors` | `/tech-edu-resources/glossary/#metal-film-resistors` |
 | Metre | `metre` | `/tech-edu-resources/glossary/#metre` |
 | Metres per Second | `metres-per-second` | `/tech-edu-resources/glossary/#metres-per-second` |
 | Metres per Second Squared | `metres-per-second-squared` | `/tech-edu-resources/glossary/#metres-per-second-squared` |
+| Metric Prefix | `metric-prefix` | `/tech-edu-resources/glossary/#metric-prefix` |
 | Metric prefixes | `metric-prefi-xes` | `/tech-edu-resources/glossary/#metric-prefi-xes` |
 | Micro | `micro` | `/tech-edu-resources/glossary/#micro` |
+| Microcontroller | `microcontroller` | `/tech-edu-resources/glossary/#microcontroller` |
 | Microfarad | `microfarad` | `/tech-edu-resources/glossary/#microfarad` |
 | Midpoint bias | `midpoint-bias` | `/tech-edu-resources/glossary/#midpoint-bias` |
 | Miles per Hour | `miles-per-hour` | `/tech-edu-resources/glossary/#miles-per-hour` |
@@ -431,13 +524,16 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Mks | `mks` | `/tech-edu-resources/glossary/#mks` |
 | Modifier | `modifier` | `/tech-edu-resources/glossary/#modifier` |
 | Molecules | `molecules` | `/tech-edu-resources/glossary/#molecules` |
+| Monostable Multivibrator | `monostable-multivibrator` | `/tech-edu-resources/glossary/#monostable-multivibrator` |
 | MOSFET | `mosfet` | `/tech-edu-resources/glossary/#mosfet` |
 | Motor | `motor` | `/tech-edu-resources/glossary/#motor` |
 | Motor action | `motor-action` | `/tech-edu-resources/glossary/#motor-action` |
+| Mount | `mount-filesystem` | `/tech-edu-resources/glossary/#mount-filesystem` |
 | Multiplier resistor | `multiplier-resistor` | `/tech-edu-resources/glossary/#multiplier-resistor` |
 | Mutual induction | `mutual-induction` | `/tech-edu-resources/glossary/#mutual-induction` |
+| N-gram | `ngram` | `/tech-edu-resources/glossary/#ngram` |
 | N-type semiconductor | `n-type-semiconductor` | `/tech-edu-resources/glossary/#n-type-semiconductor` |
-| N.I.C.E. Design Process | `nice-design-process` | `/tech-edu-resources/glossary/#nice-design-process` |
+| NAND Gate | `nand-gate` | `/tech-edu-resources/glossary/#nand-gate` |
 | Nano | `nano` | `/tech-edu-resources/glossary/#nano` |
 | Nanofarad | `nanofarad` | `/tech-edu-resources/glossary/#nanofarad` |
 | Navigation | `navigation` | `/tech-edu-resources/glossary/#navigation` |
@@ -448,13 +544,19 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Negative saturation voltage | `negative-saturation-voltage` | `/tech-edu-resources/glossary/#negative-saturation-voltage` |
 | Negative space | `negative-space` | `/tech-edu-resources/glossary/#negative-space` |
 | Negative temperature coefficient | `negative-temperature-coeffi-cient` | `/tech-edu-resources/glossary/#negative-temperature-coeffi-cient` |
+| Network Port | `port-network` | `/tech-edu-resources/glossary/#port-network` |
+| Network Protocol | `network-protocol` | `/tech-edu-resources/glossary/#network-protocol` |
+| Neural Network | `neural-network` | `/tech-edu-resources/glossary/#neural-network` |
 | Neutron | `neutron` | `/tech-edu-resources/glossary/#neutron` |
 | Nice-to-have | `nice-to-have` | `/tech-edu-resources/glossary/#nice-to-have` |
 | Node | `node` | `/tech-edu-resources/glossary/#node` |
 | Nominal dimension | `nominal-dimension` | `/tech-edu-resources/glossary/#nominal-dimension` |
 | Nonlinear resistance | `nonlinear-resistance` | `/tech-edu-resources/glossary/#nonlinear-resistance` |
 | Nonsinusoidal waveform | `nonsinusoidal-waveform` | `/tech-edu-resources/glossary/#nonsinusoidal-waveform` |
+| NOR Gate | `nor-gate` | `/tech-edu-resources/glossary/#nor-gate` |
+| Norton Equivalent | `norton-equivalent` | `/tech-edu-resources/glossary/#norton-equivalent` |
 | Norton’s theorem | `nortons-theorem` | `/tech-edu-resources/glossary/#nortons-theorem` |
+| NOT Gate | `not-gate` | `/tech-edu-resources/glossary/#not-gate` |
 | Nucleus | `nucleus` | `/tech-edu-resources/glossary/#nucleus` |
 | Nut | `nut` | `/tech-edu-resources/glossary/#nut` |
 | Obtuse angle | `obtuse-angle` | `/tech-edu-resources/glossary/#obtuse-angle` |
@@ -465,30 +567,39 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Ohms-per-volt rating | `ohms-per-volt-rating` | `/tech-edu-resources/glossary/#ohms-per-volt-rating` |
 | Ohm’s law | `ohms-law` | `/tech-edu-resources/glossary/#ohms-law` |
 | Onion skinning | `onion-skinning` | `/tech-edu-resources/glossary/#onion-skinning` |
+| Opacity | `opacity` | `/tech-edu-resources/glossary/#opacity` |
 | Open circuit | `open-circuit` | `/tech-edu-resources/glossary/#open-circuit` |
 | Open-circuit voltage | `open-circuit-voltage` | `/tech-edu-resources/glossary/#open-circuit-voltage` |
+| Open-loop Control | `open-loop-control` | `/tech-edu-resources/glossary/#open-loop-control` |
 | Open-loop cutofffrequency | `open-loop-cutoff-frequency` | `/tech-edu-resources/glossary/#open-loop-cutoff-frequency` |
 | Open-loop voltage gain | `open-loop-voltage-gain` | `/tech-edu-resources/glossary/#open-loop-voltage-gain` |
-| Operational amplifier | `operational-amplifi-er` | `/tech-edu-resources/glossary/#operational-amplifi-er` |
+| Operating System | `operating-system` | `/tech-edu-resources/glossary/#operating-system` |
+| Operational Amplifier | `operational-amplifier` | `/tech-edu-resources/glossary/#operational-amplifier` |
+| OR Gate | `or-gate` | `/tech-edu-resources/glossary/#or-gate` |
 | Orthographic projection | `orthographic-projection` | `/tech-edu-resources/glossary/#orthographic-projection` |
 | Oscilloscope | `oscilloscope` | `/tech-edu-resources/glossary/#oscilloscope` |
 | Output impedance | `output-impedance` | `/tech-edu-resources/glossary/#output-impedance` |
+| Overfitting | `overfitting` | `/tech-edu-resources/glossary/#overfitting` |
 | Overhang | `overhang` | `/tech-edu-resources/glossary/#overhang` |
 | P-type semiconductor | `p-type-semiconductor` | `/tech-edu-resources/glossary/#p-type-semiconductor` |
+| Package Manager | `package-manager` | `/tech-edu-resources/glossary/#package-manager` |
 | Parallel bank | `parallel-bank` | `/tech-edu-resources/glossary/#parallel-bank` |
-| Parallel circuit | `parallel-circuit` | `/tech-edu-resources/glossary/#parallel-circuit` |
+| Parallel Circuit | `parallel-circuit` | `/tech-edu-resources/glossary/#parallel-circuit` |
 | Paramagnetic | `paramagnetic` | `/tech-edu-resources/glossary/#paramagnetic` |
 | Parametric modelling | `parametric-modelling` | `/tech-edu-resources/glossary/#parametric-modelling` |
 | Part | `part` | `/tech-edu-resources/glossary/#part` |
 | Passive component | `passive-component` | `/tech-edu-resources/glossary/#passive-component` |
 | Pattern | `pattern` | `/tech-edu-resources/glossary/#pattern` |
 | PC board | `pc-board` | `/tech-edu-resources/glossary/#pc-board` |
+| PCB Footprint | `footprint-pcb` | `/tech-edu-resources/glossary/#footprint-pcb` |
 | Peak inverse voltage | `peak-inverse-voltage` | `/tech-edu-resources/glossary/#peak-inverse-voltage` |
 | Peak reverse voltage rating | `peak-reverse-voltage-rating` | `/tech-edu-resources/glossary/#peak-reverse-voltage-rating` |
 | Peak value | `peak-value` | `/tech-edu-resources/glossary/#peak-value` |
 | Peak-to-peak value | `peak-to-peak-value` | `/tech-edu-resources/glossary/#peak-to-peak-value` |
+| Pen Tool | `pen-tool` | `/tech-edu-resources/glossary/#pen-tool` |
 | Pentavalent atom | `pentavalent-atom` | `/tech-edu-resources/glossary/#pentavalent-atom` |
 | Percent efficiency | `percent-effi-ciency` | `/tech-edu-resources/glossary/#percent-effi-ciency` |
+| Perfboard | `perfboard` | `/tech-edu-resources/glossary/#perfboard` |
 | Perimeter wall | `perimeter-wall` | `/tech-edu-resources/glossary/#perimeter-wall` |
 | Period | `period` | `/tech-edu-resources/glossary/#period` |
 | Permanent magnet | `permanent-magnet` | `/tech-edu-resources/glossary/#permanent-magnet` |
@@ -498,11 +609,14 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Phasing dots | `phasing-dots` | `/tech-edu-resources/glossary/#phasing-dots` |
 | Phasor | `phasor` | `/tech-edu-resources/glossary/#phasor` |
 | Phasor triangle | `phasor-triangle` | `/tech-edu-resources/glossary/#phasor-triangle` |
+| Photoshop Document (PSD) | `photoshop-document` | `/tech-edu-resources/glossary/#photoshop-document` |
 | Pickup current | `pickup-current` | `/tech-edu-resources/glossary/#pickup-current` |
 | Pico | `pico` | `/tech-edu-resources/glossary/#pico` |
 | Picofarad | `picofarad` | `/tech-edu-resources/glossary/#picofarad` |
+| PID Control | `pid-control` | `/tech-edu-resources/glossary/#pid-control` |
 | Pilot hole | `pilot-hole` | `/tech-edu-resources/glossary/#pilot-hole` |
 | Pinch-offvoltage | `pinch-off-voltage` | `/tech-edu-resources/glossary/#pinch-off-voltage` |
+| Ping | `ping` | `/tech-edu-resources/glossary/#ping` |
 | Pixel | `pixel` | `/tech-edu-resources/glossary/#pixel` |
 | PNG | `png` | `/tech-edu-resources/glossary/#png` |
 | Polar form | `polar-form` | `/tech-edu-resources/glossary/#polar-form` |
@@ -519,7 +633,10 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Power factor | `power-factor` | `/tech-edu-resources/glossary/#power-factor` |
 | Power gain | `power-gain` | `/tech-edu-resources/glossary/#power-gain` |
 | Power supply | `power-supply` | `/tech-edu-resources/glossary/#power-supply` |
+| Power Supply Unit | `power-supply-unit` | `/tech-edu-resources/glossary/#power-supply-unit` |
+| Power-on Self-test | `power-on-self-test` | `/tech-edu-resources/glossary/#power-on-self-test` |
 | Powers of 10 | `powers-of-10` | `/tech-edu-resources/glossary/#powers-of-10` |
+| Precision | `precision-metric` | `/tech-edu-resources/glossary/#precision-metric` |
 | Preferred values | `preferred-values` | `/tech-edu-resources/glossary/#preferred-values` |
 | Press fit | `press-fit` | `/tech-edu-resources/glossary/#press-fit` |
 | Primary cell or battery | `primary-cell-or-battery` | `/tech-edu-resources/glossary/#primary-cell-or-battery` |
@@ -527,15 +644,23 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Primary winding | `primary-winding` | `/tech-edu-resources/glossary/#primary-winding` |
 | Principal node | `principal-node` | `/tech-edu-resources/glossary/#principal-node` |
 | Print orientation | `print-orientation` | `/tech-edu-resources/glossary/#print-orientation` |
+| Printed Circuit Board | `printed-circuit-board` | `/tech-edu-resources/glossary/#printed-circuit-board` |
 | Printed wiring | `printed-wiring` | `/tech-edu-resources/glossary/#printed-wiring` |
 | Privacy | `privacy` | `/tech-edu-resources/glossary/#privacy` |
+| Process | `process-computing` | `/tech-edu-resources/glossary/#process-computing` |
+| Programming Loop | `loop-programming` | `/tech-edu-resources/glossary/#loop-programming` |
 | Prompt | `prompt` | `/tech-edu-resources/glossary/#prompt` |
 | Proportional | `proportional` | `/tech-edu-resources/glossary/#proportional` |
+| Proportional Control | `proportional-control` | `/tech-edu-resources/glossary/#proportional-control` |
 | Proton | `proton` | `/tech-edu-resources/glossary/#proton` |
 | Prototype | `prototype` | `/tech-edu-resources/glossary/#prototype` |
 | Provenance | `provenance` | `/tech-edu-resources/glossary/#provenance` |
+| Pseudocode | `pseudocode` | `/tech-edu-resources/glossary/#pseudocode` |
+| Pull-down Resistor | `pull-down-resistor` | `/tech-edu-resources/glossary/#pull-down-resistor` |
+| Pull-up Resistor | `pull-up-resistor` | `/tech-edu-resources/glossary/#pull-up-resistor` |
 | Pulsating DC | `pulsating-dc` | `/tech-edu-resources/glossary/#pulsating-dc` |
 | Pulse | `pulse` | `/tech-edu-resources/glossary/#pulse` |
+| Pulse-width Modulation | `pulse-width-modulation` | `/tech-edu-resources/glossary/#pulse-width-modulation` |
 | Purpose | `purpose` | `/tech-edu-resources/glossary/#purpose` |
 | Q of a coil | `q-of-a-coil` | `/tech-edu-resources/glossary/#q-of-a-coil` |
 | Q point | `q-point` | `/tech-edu-resources/glossary/#q-point` |
@@ -550,9 +675,13 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Reactance | `reactance` | `/tech-edu-resources/glossary/#reactance` |
 | Real number | `real-number` | `/tech-edu-resources/glossary/#real-number` |
 | Real power | `real-power` | `/tech-edu-resources/glossary/#real-power` |
+| Recall | `recall` | `/tech-edu-resources/glossary/#recall` |
 | Reciprocal relation | `reciprocal-relation` | `/tech-edu-resources/glossary/#reciprocal-relation` |
 | Reciprocal resistance formula | `reciprocal-resistance-formula` | `/tech-edu-resources/glossary/#reciprocal-resistance-formula` |
+| Recommendation System | `recommendation-system` | `/tech-edu-resources/glossary/#recommendation-system` |
 | Rectangular form | `rectangular-form` | `/tech-edu-resources/glossary/#rectangular-form` |
+| Rectification | `rectification` | `/tech-edu-resources/glossary/#rectification` |
+| Rectifier | `rectifier` | `/tech-edu-resources/glossary/#rectifier` |
 | Reflected impedance | `refl-ected-impedance` | `/tech-edu-resources/glossary/#refl-ected-impedance` |
 | Relative path | `relative-path` | `/tech-edu-resources/glossary/#relative-path` |
 | Relative permeability | `relative-permeability` | `/tech-edu-resources/glossary/#relative-permeability` |
@@ -562,40 +691,52 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Rendering | `rendering` | `/tech-edu-resources/glossary/#rendering` |
 | Reproducibility | `reproducibility` | `/tech-edu-resources/glossary/#reproducibility` |
 | Requirement | `requirement` | `/tech-edu-resources/glossary/#requirement` |
+| Residual | `residual` | `/tech-edu-resources/glossary/#residual` |
 | Resistance | `resistance` | `/tech-edu-resources/glossary/#resistance` |
 | Resistance wire | `resistance-wire` | `/tech-edu-resources/glossary/#resistance-wire` |
 | Resonance | `resonance` | `/tech-edu-resources/glossary/#resonance` |
 | Resonant frequency | `resonant-frequency` | `/tech-edu-resources/glossary/#resonant-frequency` |
 | Responsive design | `responsive-design` | `/tech-edu-resources/glossary/#responsive-design` |
+| Retrieval-augmented Generation | `retrieval-augmented-generation` | `/tech-edu-resources/glossary/#retrieval-augmented-generation` |
 | Reverse bias | `reverse-bias` | `/tech-edu-resources/glossary/#reverse-bias` |
 | Revolve | `revolve` | `/tech-edu-resources/glossary/#revolve` |
 | Rheostat | `rheostat` | `/tech-edu-resources/glossary/#rheostat` |
 | Ringing | `ringing` | `/tech-edu-resources/glossary/#ringing` |
 | Root-mean-square (rms) value | `root-mean-square-rms-value` | `/tech-edu-resources/glossary/#root-mean-square-rms-value` |
 | Rotor | `rotor` | `/tech-edu-resources/glossary/#rotor` |
+| S.O. N.I.C.E. Design Process | `nice-design-process` | `/tech-edu-resources/glossary/#nice-design-process` |
+| Safety Interlock | `safety-interlock` | `/tech-edu-resources/glossary/#safety-interlock` |
 | Saturation | `saturation` | `/tech-edu-resources/glossary/#saturation` |
 | Saturation region | `saturation-region` | `/tech-edu-resources/glossary/#saturation-region` |
 | Sawtooth wave | `sawtooth-wave` | `/tech-edu-resources/glossary/#sawtooth-wave` |
 | Scalable Vector Graphics | `scalable-vector-graphics` | `/tech-edu-resources/glossary/#scalable-vector-graphics` |
 | Scalar | `scalar` | `/tech-edu-resources/glossary/#scalar` |
 | Schmitt trigger | `schmitt-trigger` | `/tech-edu-resources/glossary/#schmitt-trigger` |
-| Scientific notation | `scientifi-c-notation` | `/tech-edu-resources/glossary/#scientifi-c-notation` |
+| Scientific Notation | `scientific-notation` | `/tech-edu-resources/glossary/#scientific-notation` |
 | Scoring | `scoring` | `/tech-edu-resources/glossary/#scoring` |
 | Screw | `screw` | `/tech-edu-resources/glossary/#screw` |
 | Sculpting | `sculpting` | `/tech-edu-resources/glossary/#sculpting` |
 | Secondary cell or battery | `secondary-cell-or-battery` | `/tech-edu-resources/glossary/#secondary-cell-or-battery` |
 | Secondary winding | `secondary-winding` | `/tech-edu-resources/glossary/#secondary-winding` |
+| Secure Shell | `secure-shell` | `/tech-edu-resources/glossary/#secure-shell` |
 | Self-inductance | `self-inductance` | `/tech-edu-resources/glossary/#self-inductance` |
 | Semiconductor | `semiconductor` | `/tech-edu-resources/glossary/#semiconductor` |
-| Series circuit | `series-circuit` | `/tech-edu-resources/glossary/#series-circuit` |
+| Sequential Logic | `sequential-logic` | `/tech-edu-resources/glossary/#sequential-logic` |
+| Serial Communication | `serial-communication` | `/tech-edu-resources/glossary/#serial-communication` |
+| Series Circuit | `series-circuit` | `/tech-edu-resources/glossary/#series-circuit` |
 | Series components | `series-components` | `/tech-edu-resources/glossary/#series-components` |
 | Series opposing | `series-opposing` | `/tech-edu-resources/glossary/#series-opposing` |
 | Series string | `series-string` | `/tech-edu-resources/glossary/#series-string` |
 | Series-aiding | `series-aiding` | `/tech-edu-resources/glossary/#series-aiding` |
 | Series-aiding voltages | `series-aiding-voltages` | `/tech-edu-resources/glossary/#series-aiding-voltages` |
 | Series-opposing voltages | `series-opposing-voltages` | `/tech-edu-resources/glossary/#series-opposing-voltages` |
+| Server | `server` | `/tech-edu-resources/glossary/#server` |
 | Serviceability | `serviceability` | `/tech-edu-resources/glossary/#serviceability` |
 | Set Focus | `set-focus` | `/tech-edu-resources/glossary/#set-focus` |
+| Setpoint | `setpoint` | `/tech-edu-resources/glossary/#setpoint` |
+| Shape layer | `shape-layer` | `/tech-edu-resources/glossary/#shape-layer` |
+| Shell Pipeline | `pipe-shell` | `/tech-edu-resources/glossary/#pipe-shell` |
+| Shell Redirection | `redirection-shell` | `/tech-edu-resources/glossary/#redirection-shell` |
 | Shield | `shield` | `/tech-edu-resources/glossary/#shield` |
 | Short circuit | `short-circuit` | `/tech-edu-resources/glossary/#short-circuit` |
 | Short time constant | `short-time-constant` | `/tech-edu-resources/glossary/#short-time-constant` |
@@ -603,6 +744,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | SI | `si` | `/tech-edu-resources/glossary/#si` |
 | Side view | `side-view` | `/tech-edu-resources/glossary/#side-view` |
 | Siemens | `siemens` | `/tech-edu-resources/glossary/#siemens` |
+| Significant Figures | `significant-figures` | `/tech-edu-resources/glossary/#significant-figures` |
 | Silicon | `silicon` | `/tech-edu-resources/glossary/#silicon` |
 | Silicon controlled rectifier | `silicon-controlled-rectifi-er` | `/tech-edu-resources/glossary/#silicon-controlled-rectifi-er` |
 | Sine | `sine` | `/tech-edu-resources/glossary/#sine` |
@@ -616,8 +758,10 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Slot | `slot` | `/tech-edu-resources/glossary/#slot` |
 | Slow-blow fuse | `slow-blow-fuse` | `/tech-edu-resources/glossary/#slow-blow-fuse` |
 | Small signal | `small-signal` | `/tech-edu-resources/glossary/#small-signal` |
+| Smoothing Filter | `smoothing-filter` | `/tech-edu-resources/glossary/#smoothing-filter` |
 | Snug fit | `snug-fit` | `/tech-edu-resources/glossary/#snug-fit` |
 | Solder | `solder` | `/tech-edu-resources/glossary/#solder` |
+| Soldering | `soldering` | `/tech-edu-resources/glossary/#soldering` |
 | Solenoid | `solenoid` | `/tech-edu-resources/glossary/#solenoid` |
 | Solid modelling | `solid-modelling` | `/tech-edu-resources/glossary/#solid-modelling` |
 | Source | `source` | `/tech-edu-resources/glossary/#source` |
@@ -631,17 +775,20 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | SPST | `spst` | `/tech-edu-resources/glossary/#spst` |
 | Square wave | `square-wave` | `/tech-edu-resources/glossary/#square-wave` |
 | Standard resistor | `standard-resistor` | `/tech-edu-resources/glossary/#standard-resistor` |
+| State Machine | `state-machine` | `/tech-edu-resources/glossary/#state-machine` |
 | Static electricity | `static-electricity` | `/tech-edu-resources/glossary/#static-electricity` |
 | Stator | `stator` | `/tech-edu-resources/glossary/#stator` |
 | Steady-state value | `steady-state-value` | `/tech-edu-resources/glossary/#steady-state-value` |
 | STEP file | `step-file` | `/tech-edu-resources/glossary/#step-file` |
 | STL | `stl` | `/tech-edu-resources/glossary/#stl` |
 | Storage cell or battery | `storage-cell-or-battery` | `/tech-edu-resources/glossary/#storage-cell-or-battery` |
+| Strain Relief | `strain-relief` | `/tech-edu-resources/glossary/#strain-relief` |
 | Stray capacitance | `stray-capacitance` | `/tech-edu-resources/glossary/#stray-capacitance` |
 | Stray inductance | `stray-inductance` | `/tech-edu-resources/glossary/#stray-inductance` |
 | String | `string` | `/tech-edu-resources/glossary/#string` |
 | Strings in parallel | `strings-in-parallel` | `/tech-edu-resources/glossary/#strings-in-parallel` |
 | Stroke | `stroke` | `/tech-edu-resources/glossary/#stroke` |
+| Structured Output | `structured-output` | `/tech-edu-resources/glossary/#structured-output` |
 | Summing amplifier | `summing-amplifi-er` | `/tech-edu-resources/glossary/#summing-amplifi-er` |
 | Superconductivity | `superconductivity` | `/tech-edu-resources/glossary/#superconductivity` |
 | Superposition theorem | `superposition-theorem` | `/tech-edu-resources/glossary/#superposition-theorem` |
@@ -654,6 +801,7 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Switch | `switch` | `/tech-edu-resources/glossary/#switch` |
 | Switching contacts | `switching-contacts` | `/tech-edu-resources/glossary/#switching-contacts` |
 | Symmetrical JFET | `symmetrical-jfet` | `/tech-edu-resources/glossary/#symmetrical-jfet` |
+| System Service | `service-linux` | `/tech-edu-resources/glossary/#service-linux` |
 | Tab | `tab` | `/tech-edu-resources/glossary/#tab` |
 | Tail current | `tail-current` | `/tech-edu-resources/glossary/#tail-current` |
 | Tangent | `tangent` | `/tech-edu-resources/glossary/#tangent` |
@@ -666,41 +814,54 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Template | `template` | `/tech-edu-resources/glossary/#template` |
 | Tesla | `tesla` | `/tech-edu-resources/glossary/#tesla` |
 | Test coupon | `test-coupon` | `/tech-edu-resources/glossary/#test-coupon` |
+| Test Dataset | `test-dataset` | `/tech-edu-resources/glossary/#test-dataset` |
 | Test print | `test-print` | `/tech-edu-resources/glossary/#test-print` |
 | Thermistor | `thermistor` | `/tech-edu-resources/glossary/#thermistor` |
+| Thevenin Equivalent | `thevenin-equivalent` | `/tech-edu-resources/glossary/#thevenin-equivalent` |
 | Thevenin’s theorem | `thevenins-theorem` | `/tech-edu-resources/glossary/#thevenins-theorem` |
 | Three-phase power | `three-phase-power` | `/tech-edu-resources/glossary/#three-phase-power` |
 | Threshold voltage | `threshold-voltage` | `/tech-edu-resources/glossary/#threshold-voltage` |
 | Throw | `throw` | `/tech-edu-resources/glossary/#throw` |
 | Thyristor | `thyristor` | `/tech-edu-resources/glossary/#thyristor` |
-| Time constant | `time-constant` | `/tech-edu-resources/glossary/#time-constant` |
+| Time Constant | `time-constant` | `/tech-edu-resources/glossary/#time-constant` |
 | Timeline | `timeline` | `/tech-edu-resources/glossary/#timeline` |
+| tmux | `tmux` | `/tech-edu-resources/glossary/#tmux` |
+| Token | `token` | `/tech-edu-resources/glossary/#token` |
+| Tokenization | `tokenization` | `/tech-edu-resources/glossary/#tokenization` |
 | Tolerance | `tolerance` | `/tech-edu-resources/glossary/#tolerance` |
 | Top view | `top-view` | `/tech-edu-resources/glossary/#top-view` |
 | Toroid | `toroid` | `/tech-edu-resources/glossary/#toroid` |
+| Traceroute | `traceroute` | `/tech-edu-resources/glossary/#traceroute` |
 | Trade-off | `trade-off` | `/tech-edu-resources/glossary/#trade-off` |
+| Training Dataset | `training-dataset` | `/tech-edu-resources/glossary/#training-dataset` |
 | Transconductance | `transconductance` | `/tech-edu-resources/glossary/#transconductance` |
-| Transformer | `transformer` | `/tech-edu-resources/glossary/#transformer` |
+| Transformer Model | `transformer-model` | `/tech-edu-resources/glossary/#transformer-model` |
 | Transient response | `transient-response` | `/tech-edu-resources/glossary/#transient-response` |
 | Transistor | `transistor` | `/tech-edu-resources/glossary/#transistor` |
+| Transistor Switch | `transistor-switch` | `/tech-edu-resources/glossary/#transistor-switch` |
 | Transparency | `transparency` | `/tech-edu-resources/glossary/#transparency` |
 | Triac | `triac` | `/tech-edu-resources/glossary/#triac` |
 | Trigonometry | `trigonometry` | `/tech-edu-resources/glossary/#trigonometry` |
 | Trivalent atom | `trivalent-atom` | `/tech-edu-resources/glossary/#trivalent-atom` |
 | Troubleshooting | `troubleshooting` | `/tech-edu-resources/glossary/#troubleshooting` |
+| Truth Table | `truth-table` | `/tech-edu-resources/glossary/#truth-table` |
 | Tuning | `tuning` | `/tech-edu-resources/glossary/#tuning` |
 | Turns ratio | `turns-ratio` | `/tech-edu-resources/glossary/#turns-ratio` |
 | Twin lead | `twin-lead` | `/tech-edu-resources/glossary/#twin-lead` |
 | Typography | `typography` | `/tech-edu-resources/glossary/#typography` |
 | UHF | `uhf` | `/tech-edu-resources/glossary/#uhf` |
+| Unified Extensible Firmware Interface | `unified-extensible-firmware-interface` | `/tech-edu-resources/glossary/#unified-extensible-firmware-interface` |
 | Uniform Resource Locator | `uniform-resource-locator` | `/tech-edu-resources/glossary/#uniform-resource-locator` |
 | Unijunction transistor | `unijunction-transistor` | `/tech-edu-resources/glossary/#unijunction-transistor` |
 | Unipolar | `unipolar` | `/tech-edu-resources/glossary/#unipolar` |
 | Universal time constant graph | `universal-time-constant-graph` | `/tech-edu-resources/glossary/#universal-time-constant-graph` |
+| Unsupervised Learning | `unsupervised-learning` | `/tech-edu-resources/glossary/#unsupervised-learning` |
 | User experience | `user-experience` | `/tech-edu-resources/glossary/#user-experience` |
 | User flow | `user-flow` | `/tech-edu-resources/glossary/#user-flow` |
 | User interface | `user-interface` | `/tech-edu-resources/glossary/#user-interface` |
 | Valence electrons | `valence-electrons` | `/tech-edu-resources/glossary/#valence-electrons` |
+| Validation Dataset | `validation-dataset` | `/tech-edu-resources/glossary/#validation-dataset` |
+| Variable | `variable-programming` | `/tech-edu-resources/glossary/#variable-programming` |
 | Variac | `variac` | `/tech-edu-resources/glossary/#variac` |
 | Vector | `vector` | `/tech-edu-resources/glossary/#vector` |
 | Vector cut | `vector-cut` | `/tech-edu-resources/glossary/#vector-cut` |
@@ -716,11 +877,12 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Volt-ampere characteristic | `volt-ampere-characteristic` | `/tech-edu-resources/glossary/#volt-ampere-characteristic` |
 | Volt-ampere reactive | `volt-ampere-reactive` | `/tech-edu-resources/glossary/#volt-ampere-reactive` |
 | Voltage | `voltage` | `/tech-edu-resources/glossary/#voltage` |
-| Voltage divider | `voltage-divider` | `/tech-edu-resources/glossary/#voltage-divider` |
+| Voltage Divider | `voltage-divider` | `/tech-edu-resources/glossary/#voltage-divider` |
 | Voltage drop | `voltage-drop` | `/tech-edu-resources/glossary/#voltage-drop` |
 | Voltage follower | `voltage-follower` | `/tech-edu-resources/glossary/#voltage-follower` |
 | Voltage gain | `voltage-gain` | `/tech-edu-resources/glossary/#voltage-gain` |
 | Voltage polarity | `voltage-polarity` | `/tech-edu-resources/glossary/#voltage-polarity` |
+| Voltage Regulator | `voltage-regulator` | `/tech-edu-resources/glossary/#voltage-regulator` |
 | Voltage source | `voltage-source` | `/tech-edu-resources/glossary/#voltage-source` |
 | Voltage taps | `voltage-taps` | `/tech-edu-resources/glossary/#voltage-taps` |
 | Voltaic cell | `voltaic-cell` | `/tech-edu-resources/glossary/#voltaic-cell` |
@@ -743,6 +905,8 @@ Use only these canonical slugs in Learn and Research `terms` metadata. Every ter
 | Work | `work` | `/tech-edu-resources/glossary/#work` |
 | Wye network | `wye-network` | `/tech-edu-resources/glossary/#wye-network` |
 | XL | `xl` | `/tech-edu-resources/glossary/#xl` |
+| XNOR Gate | `xnor-gate` | `/tech-edu-resources/glossary/#xnor-gate` |
+| XOR Gate | `xor-gate` | `/tech-edu-resources/glossary/#xor-gate` |
 | Y network | `y-network` | `/tech-edu-resources/glossary/#y-network` |
 | Zener current | `zener-current` | `/tech-edu-resources/glossary/#zener-current` |
 | Zener diode | `zener-diode` | `/tech-edu-resources/glossary/#zener-diode` |

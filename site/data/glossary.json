@@ -7448,7 +7448,7 @@
       "related_terms": [
         {
           "slug": "nice-design-process",
-          "term": "N.I.C.E. Design Process"
+          "term": "S.O. N.I.C.E. Design Process"
         }
       ],
       "short_definition": "The engineering design process is an iterative way to identify needs, create solutions, test them, and improve them.",
@@ -13963,39 +13963,6 @@
       "term": "N-type semiconductor"
     },
     {
-      "aliases": [
-        {
-          "slug": "n-i-c-e",
-          "term": "N.I.C.E."
-        }
-      ],
-      "categories": [
-        "Design Process"
-      ],
-      "category": "Design Process",
-      "date_added": "2026-09-24",
-      "definition": "The N.I.C.E. Design Process is a classroom design cycle used in these resources: Needs & Necessities → Investigate & Inquire → Create & Communicate → Evaluate → repeat. It begins with what the design actually needs to accomplish, uses inquiry and investigation before choosing a solution, makes and communicates the solution, and uses evaluation to return to the needs and improve the next version.",
-      "definition_links": [],
-      "learning_tracks": [],
-      "redirect_slugs": [],
-      "references": [
-        {
-          "key": "ngss2013",
-          "section": "Appendix I",
-          "type": "manual"
-        }
-      ],
-      "related_terms": [
-        {
-          "slug": "engineering-design-process",
-          "term": "Engineering Design Process"
-        }
-      ],
-      "short_definition": "N.I.C.E. is a classroom design cycle: Needs & Necessities → Investigate & Inquire → Create & Communicate → Evaluate → repeat.",
-      "slug": "nice-design-process",
-      "term": "N.I.C.E. Design Process"
-    },
-    {
       "aliases": [],
       "categories": [
         "Electrical & Electronics"
@@ -18638,6 +18605,43 @@
       "short_definition": "Rotating part of generator or motor.",
       "slug": "rotor",
       "term": "Rotor"
+    },
+    {
+      "aliases": [
+        {
+          "slug": "n-i-c-e",
+          "term": "N.I.C.E."
+        },
+        {
+          "slug": "s-o-n-i-c-e",
+          "term": "S.O. N.I.C.E."
+        }
+      ],
+      "categories": [
+        "Design Process"
+      ],
+      "category": "Design Process",
+      "date_added": "2026-09-24",
+      "definition": "The S.O. N.I.C.E. Design Process begins by understanding the situation and identifying an opportunity to make it better. It then moves through Needs & Necessities → Investigate & Inquire → Create & Communicate → Evaluate → repeat.",
+      "definition_links": [],
+      "learning_tracks": [],
+      "redirect_slugs": [],
+      "references": [
+        {
+          "key": "ngss2013",
+          "section": "Appendix I",
+          "type": "manual"
+        }
+      ],
+      "related_terms": [
+        {
+          "slug": "engineering-design-process",
+          "term": "Engineering Design Process"
+        }
+      ],
+      "short_definition": "S.O. N.I.C.E. is a classroom design cycle: Situation & Opportunity → Needs & Necessities → Investigate & Inquire → Create & Communicate → Evaluate → repeat.",
+      "slug": "nice-design-process",
+      "term": "S.O. N.I.C.E. Design Process"
     },
     {
       "aliases": [

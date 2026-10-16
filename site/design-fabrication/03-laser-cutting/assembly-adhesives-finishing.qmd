@@ -1,0 +1,95 @@
+---
+title: "Laser-Cut Assembly, Adhesives & Finishing"
+description: "Choose joints, adhesives, cleanup tools, sanding and stain as connected decisions for laser-cut wood projects."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [assembly, joint, tab, slot, fit, laser-cutting, material-thickness, serviceability]
+toc: true
+execute: {enabled: false}
+---
+
+## Design the assembly, not just the cut parts
+
+A laser cutter makes accurate flat parts. The finished object also depends on how those parts locate one another, how loads move through the joints, how much surface is available for bonding, and how the edges and faces are finished.
+
+::: {.callout-important title="Scope of this lesson"}
+This lesson explains design and material choices. It is not safety information or equipment authorization. Use your school board's requirements, teacher instruction, professional experience and judgement, and the current manufacturer information for every machine, adhesive and finish.
+:::
+
+## Adhesive choices
+
+| Adhesive | Typical design use | Design consideration |
+|---|---|---|
+| **Wood glue** | Close-fitting wood, plywood or MDF joints | Works best when the mating surfaces fit well and provide useful bonded area. Select the exact product for the material and environment. |
+| **White glue** | Paper, cardboard, light wood and general porous-material assemblies | Useful for classroom models and lighter work, but do not assume it has the same strength or moisture resistance as a purpose-selected wood glue. |
+| **Epoxy** | Mixed materials, small gaps, repairs or assemblies that need a rigid bond | A two-part system can bond several material types and fill space, but the specific product determines cure, gap and finish behaviour. |
+| **Super glue (cyanoacrylate)** | Small, close-fitting parts that need a quick bond | Fast setting leaves little repositioning time. Test it on the real material because appearance and bond behaviour vary. |
+| **Glue stick** | A temporary adhesion or separation layer on a compatible **3D-printer build plate** | This is not a structural adhesive and is not for a laser-cutter bed. Follow the printer and filament guidance for the exact build surface. |
+
+Adhesive should support a good joint, not hide a poor fit. Keep glue away from visible surfaces that will be stained because sealed patches can absorb colour differently.
+
+## Joint geometry, surface area and strength
+
+- **Butt joint:** simple, but it offers little alignment and may have limited bonded area.
+- **Lap or half-lap:** overlaps material to increase contact area and resist sliding.
+- **Tab-and-slot joint:** locates parts and can transfer force when the tab, slot and material thickness match.
+- **Finger or box joint:** repeats interlocking fingers to increase bonded area and create a visible pattern.
+- **Mortise-and-tenon form:** uses a projecting part and a receiving opening to locate an assembly.
+- **Keyed, wedged or interlocking joint:** uses geometry or a separate key to hold parts in position.
+- **Layered or laminated joint:** stacks cut profiles to create thickness, relief or a stronger local feature.
+
+More bonded surface area can spread a load, but area alone does not guarantee strength. Also consider grain direction, sheet thickness, fit, leverage, notches, stress concentration, material quality and the selected adhesive.
+
+### Learn from Japanese joinery
+
+Japanese joinery can inspire precise shoulders, keys, wedges and interlocking forms. Study how the geometry locates parts and manages force, then adapt the principle to sheet material and the project's actual loads. A laser-cut imitation of a traditional joint is not automatically strong, so test fit and performance in the real material.
+
+## Design the appearance of the joint
+
+The joint can be hidden or become part of the visual language. Consider:
+
+- repetition and rhythm in fingers, slots or layers;
+- symmetry or intentional asymmetry;
+- grain direction across connected parts;
+- contrast between a clean face and a dark laser-cut edge;
+- consistent corner radii and edge treatment;
+- whether keys, fasteners and laminations should be displayed or concealed.
+
+Aesthetic choices should reinforce the object's function rather than disguise awkward fit or weak structure.
+
+## Cleanup and shaping tools
+
+| Tool | Useful for |
+|---|---|
+| **File or needle file** | Refining tabs, slots, straight edges and small openings with control. |
+| **Rasp** | Removing wood quickly and shaping larger outside profiles. |
+| **Sanding block** | Keeping broad faces and straight edges flat while smoothing them. |
+| **Belt sander** | Faster material removal on accessible outside edges and surfaces. |
+| **Oscillating spindle sander** | Smoothing inside curves, openings and concave edges. |
+| **Coping saw** | Trimming notches or internal shapes before final filing and sanding. |
+| **Fine abrasive paper** | Final smoothing and easing exposed corners without removing too much material. |
+
+Cleanup must preserve the dimensions that make a joint work. Keep a locating shoulder square when the assembly depends on it, while easing exposed corners when that improves touch and appearance.
+
+## Sanding and staining wood
+
+Sanding can remove residue, level faces, soften exposed corners and prepare a consistent surface. Do not sand away the fit of tabs, slots or calibrated edges. Move from shaping to finer finishing only as much as the material and intended appearance require.
+
+Stain changes colour and can emphasize grain, but laser-cut edges, glue residue and different sheet layers may absorb it unevenly. Test the complete combination on an offcut: cut edge, sanded face, adhesive and stain. Decide whether the project benefits from preserving the dark cut edge, sanding it lighter, or making every edge treatment consistent.
+
+## Assembly and finish check
+
+- Do the joints locate the parts without forcing them?
+- Is there enough well-fitted bonded area for the intended load?
+- Are high-stress notches, thin tabs or long lever arms creating a weak point?
+- Does the cleanup method preserve critical dimensions?
+- Are visible joints, grain, edges and stain part of one aesthetic decision?
+- Has the material, adhesive and finish combination been tested on an offcut?
+
+## Manufacturer references
+
+- [Titebond Original Wood Glue](https://www.titebond.com/print/product/d4d28015-603f-4dfc-a7d9-f684acc71207)
+- [Loctite Super Glue Liquid Professional](https://www.loctiteproducts.com/products/central-pdp.html/loctite-super-glue-liquid-professional/SAP_0201DCL029X4.html)
+- [Loctite Epoxy Metal/Concrete](https://www.loctiteproducts.com/products/central-pdp.html/loctite-epoxy-metal-concrete/SAP_0201OIL029V6.html)
+- [Prusa print-surface preparation and glue-stick guidance](https://help.prusa3d.com/article/print-surface-preparation_686951)
+
+Next: apply the joint, finish and serviceability decisions to a [Wall and Bench Tool Module](07-wall-bench-module.qmd).

@@ -71,12 +71,11 @@ assert.match(
 );
 assert.match(
   learnSource,
-  /const keepExpandedWhileScrolling =\s*document\.body\.classList\.contains\("bs-learn-index"\)/
+  /function initializeLearnLeftSidebarToggle\(\)[\s\S]*?const sidebar = document\.getElementById\("quarto-sidebar"\)[\s\S]*?if \(!sidebar\)/
 );
-assert.doesNotMatch(
-  learnSource,
-  /const keepExpandedWhileScrolling =[\s\S]{0,180}bs-learn-track-index/
-);
+assert.doesNotMatch(learnSource, /keepExpandedWhileScrolling/);
+assert.match(learnSource, /autoCollapsePending[\s\S]*?scrollingDown[\s\S]*?collapsed = true/);
+assert.match(learnSource, /classList\.toggle\("docked", !active\)/);
 
 assert.match(scrollSource, /sentinel\.textContent = "Loading the next lesson/);
 assert.match(scrollSource, /createTransitionNotice\(currentLesson, followingLesson\)/);
@@ -324,7 +323,7 @@ assert.equal(
 );
 assert.equal(
   scroll.transitionMessage(realSituation, scroll.nextLesson(realManifest, realSituation)),
-  "You reached the end of Understand the Situation. Keep scrolling to continue to Record User Needs."
+  "You reached the end of Understand the Situation & Opportunity. Keep scrolling to continue to Record User Needs."
 );
 assert.equal(
   scroll.endStateMessage(),

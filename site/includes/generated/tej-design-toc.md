@@ -23,9 +23,9 @@
     <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">3. Design</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;N.I.C.E. Design Process&quot;, &quot;Design&quot;]" data-bs-search-body="[&quot;Use the General Design &amp; Fabrication learning path.&quot;, &quot;The shared process prevents duplicate design notes.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;S.O. N.I.C.E. Design Process&quot;, &quot;Design&quot;]" data-bs-search-body="[&quot;Use the General Design &amp; Fabrication learning path.&quot;, &quot;The shared process prevents duplicate design notes.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for N.I.C.E. Design Process"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. N.I.C.E. Design Process <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for S.O. N.I.C.E. Design Process"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. S.O. N.I.C.E. Design Process <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use the General Design &amp; Fabrication learning path.</p>
         <p>The shared process prevents duplicate design notes.</p>
       </details>

@@ -816,7 +816,7 @@
     const controls = document.createElement("div");
     controls.className = "bs-learn-sidebar-actions";
     controls.setAttribute("role", "group");
-    controls.setAttribute("aria-label", "Learn sidebar sections");
+    controls.setAttribute("aria-label", "Sidebar navigation sections");
     controls.innerHTML =
       '<button type="button" data-bs-sidebar-collapse-all>Collapse all</button>' +
       '<button type="button" data-bs-sidebar-expand-all>Expand all</button>';
@@ -967,6 +967,7 @@
     }
 
     const desktopQuery = window.matchMedia("(min-width: 992px)");
+    const usesDockedSidebar = document.body.classList.contains("docked");
 
     function place() {
       const sidebar = document.getElementById("quarto-margin-sidebar");
@@ -2227,18 +2228,12 @@
   }
 
   function initializeLearnLeftSidebarToggle() {
-    const learnPage =
-      document.body.classList.contains("bs-learn-article") ||
-      document.body.classList.contains("bs-learn-index") ||
-      document.body.classList.contains("bs-learn-track-index");
     const sidebar = document.getElementById("quarto-sidebar");
-    if (!learnPage || !sidebar) {
+    if (!sidebar) {
       return;
     }
 
     const desktopQuery = window.matchMedia("(min-width: 992px)");
-    const keepExpandedWhileScrolling =
-      document.body.classList.contains("bs-learn-index");
     const sidebarScroller =
       sidebar.querySelector(".sidebar-menu-container") || sidebar;
     const pageHeader = document.getElementById("quarto-header");
@@ -2274,7 +2269,6 @@
       toggle.hidden =
         !desktopQuery.matches ||
         (!collapsed &&
-          !keepExpandedWhileScrolling &&
           scrollingDown &&
           (window.scrollY > 32 || sidebarScroller.scrollTop > 4));
       if (!toggle.hidden && !collapsed) {
@@ -2285,14 +2279,17 @@
     const update = function () {
       const active = desktopQuery.matches && collapsed;
       sidebar.hidden = active;
+      if (usesDockedSidebar) {
+        document.body.classList.toggle("docked", !active);
+      }
       document.body.classList.toggle("bs-learn-left-sidebar-collapsed", active);
       updateVisibility();
       toggle.setAttribute("aria-expanded", active ? "false" : "true");
       toggle.setAttribute(
         "aria-label",
-        active ? "Show Learn table of contents" : "Hide Learn table of contents"
+        active ? "Show sidebar navigation" : "Hide sidebar navigation"
       );
-      toggle.textContent = active ? "\u2192 Show Lessons" : "\u2190 Hide";
+      toggle.textContent = active ? "\u2192 Show Sidebar" : "\u2190 Hide";
       if (active) {
         toggle.style.left = "0.5rem";
       } else {
@@ -2311,7 +2308,7 @@
         const currentScrollY = window.scrollY;
         if (currentScrollY <= 32) {
           autoCollapsePending = true;
-          if (!keepExpandedWhileScrolling && collapsed) {
+          if (collapsed) {
             collapsed = false;
             pageScrollingDown = false;
             scrollingDown = false;
@@ -2325,7 +2322,6 @@
           scrollingDown = pageScrollingDown;
           lastScrollY = currentScrollY;
           if (
-            !keepExpandedWhileScrolling &&
             autoCollapsePending &&
             scrollingDown &&
             currentScrollY > 32

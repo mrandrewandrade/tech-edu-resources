@@ -45,10 +45,18 @@ class DesignFabricationTests(unittest.TestCase):
             "02-digital-design/06-blender-artistic-3d.qmd",
             "02-digital-design/07-website-ui-ux.qmd",
             "03-laser-cutting/index.qmd",
+            "03-laser-cutting/assembly-adhesives-finishing.qmd",
             "03-laser-cutting/holiday-ornament-reindeer.qmd",
             "03-laser-cutting/resources/reverse-engineer-improve.qmd",
+            "cad-parametric-modeling/index.qmd",
+            "cad-parametric-modeling/introduction-to-cad.qmd",
+            "cad-parametric-modeling/phone-holder-design.qmd",
+            "hand-tools/index.qmd",
+            "hand-tools/phone-holder.qmd",
+            "advanced-making/stamp-faux-enamel-jewellery.qmd",
             "04-3d-printing/index.qmd",
             "04-3d-printing/faux-enamel-pin-jewellery.qmd",
+            "tools/index.qmd",
             "tools/tool-organizer-gallery/index.qmd",
             "tools/plate-builder/index.qmd",
             "tools/leg-builder/index.qmd",
@@ -88,14 +96,33 @@ class DesignFabricationTests(unittest.TestCase):
         sidebar = config[sidebar_start:sidebar_end]
         ordered = [
             'text: "General Design & Fabrication Home"',
-            'section: "2. N.I.C.E. Design Process"',
+            'section: "2. S.O. N.I.C.E. Design Process"',
             'section: "3. Logo Design in Photopea"',
             'section: "5. Laser Cutting and Fabrication Tools"',
+            'section: "6. Introduction to CAD & 3D Parametric Modeling"',
+            'section: "7. Introduction to Tools, Machines & Phone Holder Building"',
+            'section: "8. Advanced Making: Stamp or Faux-Enamel Jewellery"',
+            'section: "CAD Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]
         self.assertEqual(positions, sorted(positions))
         self.assertNotIn("Systems Design & Fabrication Track", sidebar)
         self.assertNotIn("Ideas by Technology Area", sidebar)
+        self.assertEqual(sidebar.count('section: "CAD Tools"'), 1)
+        self.assertNotRegex(sidebar, r'(?m)^        - text: "(?:Fabrication Plate Builder|Laser-Cut Leg & Support Builder|Tool Organizer Gallery)"')
+
+    def test_laser_assembly_lesson_connects_joinery_cleanup_and_finish(self) -> None:
+        lesson = self.read("design-fabrication/03-laser-cutting/assembly-adhesives-finishing.qmd")
+        for adhesive in ("Wood glue", "White glue", "Epoxy", "Super glue", "Glue stick"):
+            self.assertIn(adhesive, lesson)
+        for joint in ("Butt joint", "Lap or half-lap", "Tab-and-slot joint", "Finger or box joint", "Japanese joinery"):
+            self.assertIn(joint, lesson)
+        for tool in ("File or needle file", "Rasp", "Belt sander", "Oscillating spindle sander", "Coping saw"):
+            self.assertIn(tool, lesson)
+        for design_point in ("surface area", "Sanding and staining wood", "grain direction", "This lesson explains design and material choices"):
+            self.assertIn(design_point, lesson)
+        self.assertIn("3D-printer build plate", lesson)
+        self.assertIn("not for a laser-cutter bed", lesson)
 
     def test_retired_systems_track_is_not_published(self) -> None:
         config = self.read("_quarto.yml")
@@ -108,7 +135,7 @@ class DesignFabricationTests(unittest.TestCase):
             "includes/generated/design-fabrication-design-process-toc.md"
         )
         for heading in (
-            "Understand the Situation",
+            "Understand the Situation &amp; Opportunity",
             "Record User Needs",
             "Necessities and Nice-to-Haves",
             "Rank Priorities",
@@ -134,6 +161,47 @@ class DesignFabricationTests(unittest.TestCase):
             "N.I.C.E. Design Log",
         ):
             self.assertIn(worksheet, process)
+
+    def test_phone_holder_separates_cad_design_from_tools_and_building(self) -> None:
+        cad = self.read("design-fabrication/cad-parametric-modeling/introduction-to-cad.qmd")
+        design = self.read("design-fabrication/cad-parametric-modeling/phone-holder-design.qmd")
+        page = self.read("design-fabrication/hand-tools/phone-holder.qmd")
+        for concept in ("sketches", "dimensions", "constraints", "features", "design intent", "assemblies", "drawings"):
+            self.assertIn(concept, cad.lower())
+        for tool in (
+            "hand saw",
+            "scroll saw",
+            "band saw",
+            "drill press",
+            "coping saw",
+            "edge sander",
+            "drum sander",
+            "orbital sander",
+            "oscillating sander",
+            "sanding by hand",
+        ):
+            self.assertIn(tool, page)
+        for phrase in (
+            "construction pathway",
+            "design pathway",
+            "situation",
+            "opportunity",
+            "premade dimensions and order of operations",
+            "giraffe build video",
+        ):
+            self.assertIn(phrase, design.lower())
+        for phrase in (
+            "this is not a safety section",
+            "does not contain safety information",
+            "consult your school board",
+            "professional experience and judgement",
+        ):
+            self.assertIn(phrase, page.lower())
+        advanced = self.read("design-fabrication/advanced-making/stamp-faux-enamel-jewellery.qmd")
+        self.assertIn("https://www.instructables.com/Faux-Stained-Glass-3D-Printed/", advanced)
+        self.assertIn("https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/", advanced)
+        self.assertIn("https://www.bbc.com/editorialguidelines/guidance/visually-and-hearing-impaired-audiences", self.read("design-fabrication/accessible-design/index.qmd"))
+        self.assertNotIn("1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4", self.read("design-fabrication/accessible-design/index.qmd"))
 
     def test_public_pages_do_not_replace_local_safety_instruction(self) -> None:
         landing = self.read("design-fabrication/index.qmd")
@@ -171,7 +239,7 @@ class DesignFabricationTests(unittest.TestCase):
         )
         landing = html.unescape(landing)
         for project in (
-            "N.I.C.E. Design Process",
+            "S.O. N.I.C.E. Design Process",
             "Logo Design",
             "Tool Organizer Gallery",
         ):

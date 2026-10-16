@@ -16,7 +16,7 @@ execute: {enabled: false}
 - I can write alt text that communicates what the image contributes.
 
 ::: {.callout-note}
-This lesson uses the original examples from the [Graphics Accommodation Guide](https://docs.google.com/document/d/1AfDpLSJQtKy7YUMdwL8-BBR81NTv9Ck_cyzQ4pA2Hk4/edit), then applies the current [W3C image decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/).
+This lesson applies the [BBC guidance for visually and hearing impaired audiences](https://www.bbc.com/editorialguidelines/guidance/visually-and-hearing-impaired-audiences) and the current [W3C image decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/).
 :::
 
 {{< include sections/01-access-and-alt-text.md >}}
