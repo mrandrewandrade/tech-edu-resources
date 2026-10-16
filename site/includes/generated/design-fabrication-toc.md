@@ -15,13 +15,12 @@
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-design" aria-pressed="false">3. Logo Design in Photopea<span class="bs-learn-filter-count">×5</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="accessible-design" aria-pressed="false">4. Accessible Design<span class="bs-learn-filter-count">×4</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">5. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×9</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="cad-parametric-modeling" aria-pressed="false">6. Introduction to CAD &amp; 3D Parametric Modeling<span class="bs-learn-filter-count">×2</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="hand-tools" aria-pressed="false">7. Introduction to Tools, Machines &amp; Phone Holder Building<span class="bs-learn-filter-count">×1</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">8. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="phone-holder-project" aria-pressed="false">6. Making the Phone Holder<span class="bs-learn-filter-count">×4</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">7. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 31 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 32 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -265,38 +264,38 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="cad-parametric-modeling" data-bs-total-lessons="2" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="phone-holder-project" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="cad-parametric-modeling/index.html">6. Introduction to CAD &amp; 3D Parametric Modeling</a><span data-bs-learn-group-count>2 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="cad-parametric-modeling/index.html">6. Making the Phone Holder</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="cad-parametric-modeling" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Introduction to CAD &amp; Parametric Modeling&quot;, &quot;Introduction to CAD &amp; 3D Parametric Modeling&quot;]" data-bs-search-body="[&quot;Use sketches, dimensions, constraints, and features to create an editable 3D model.&quot;, &quot;A well-structured model makes size and shape changes predictable.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="phone-holder-project" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Choose Your Phone Holder&quot;, &quot;Making the Phone Holder&quot;]" data-bs-search-body="[&quot;Choose the simple Level 3 holder or create a Level 4 design.&quot;, &quot;The choice sets the CAD and build work that follows.&quot;, &quot;Project Brief&quot;, &quot;Premade Plan&quot;, &quot;Westdale Project&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Introduction to CAD &amp; Parametric Modeling"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="cad-parametric-modeling/introduction-to-cad.html">1. Introduction to CAD &amp; Parametric Modeling</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Use sketches, dimensions, constraints, and features to create an editable 3D model.</p>
-        <p>A well-structured model makes size and shape changes predictable.</p>
+        <summary aria-label="Show description for Choose Your Phone Holder"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="cad-parametric-modeling/phone-holder-design.html">1. Choose Your Phone Holder</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Choose the simple Level 3 holder or create a Level 4 design.</p>
+        <p>The choice sets the CAD and build work that follows.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1erSte0Jdg1-iuhU82DN7iFaqwf75sq5QH6TIkUDDbwg/edit?tab=t.0#heading=h.ldwuulz1hza">Project Brief</a> <a class="ter-resource-badge" href="https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533">Premade Plan</a> <a class="ter-resource-badge" href="https://drive.google.com/file/d/1s9BFBX40vxdu2WpLCki3DKvmHzcZiEBl/view?usp=sharing">Westdale Project</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="cad-parametric-modeling" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Phone Holder Design&quot;, &quot;Introduction to CAD &amp; 3D Parametric Modeling&quot;]" data-bs-search-body="[&quot;Use a premade plan or create and document an original phone-holder design before entering the shop.&quot;, &quot;The design stage connects user needs, dimensions, assemblies, and technical drawings to the later build.&quot;, &quot;Project Brief&quot;, &quot;Premade Plan&quot;, &quot;Drawing Submission&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="phone-holder-project" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;CAD You Need&quot;, &quot;Making the Phone Holder&quot;]" data-bs-search-body="[&quot;Sketch, size, extrude, assemble, and draw the parts.&quot;, &quot;The model shows what to make before the shop work begins.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Phone Holder Design"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="cad-parametric-modeling/phone-holder-design.html">2. Phone Holder Design</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Use a premade plan or create and document an original phone-holder design before entering the shop.</p>
-        <p>The design stage connects user needs, dimensions, assemblies, and technical drawings to the later build.</p>
-        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/document/d/1erSte0Jdg1-iuhU82DN7iFaqwf75sq5QH6TIkUDDbwg/edit?tab=t.0#heading=h.ldwuulz1hza">Project Brief</a> <a class="ter-resource-badge" href="https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533">Premade Plan</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0">Drawing Submission</a></p>
+        <summary aria-label="Show description for CAD You Need"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="cad-parametric-modeling/introduction-to-cad.html">2. CAD You Need</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Sketch, size, extrude, assemble, and draw the parts.</p>
+        <p>The model shows what to make before the shop work begins.</p>
       </details>
     </article>
-  </div>
-</details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="hand-tools" data-bs-total-lessons="1" open>
-  <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="hand-tools/index.html">7. Introduction to Tools, Machines &amp; Phone Holder Building</a><span data-bs-learn-group-count>1 lesson</span></span>
-  </summary>
-  <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="hand-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build the Phone Holder&quot;, &quot;Introduction to Tools, Machines &amp; Phone Holder Building&quot;]" data-bs-search-body="[&quot;Review what each possible tool does, then follow the approved plan to build and test the phone holder.&quot;, &quot;The construction sequence turns a digital design into a finished physical object.&quot;, &quot;Premade Plan&quot;, &quot;Drawing Submission&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="phone-holder-project" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Tools and Machines&quot;, &quot;Making the Phone Holder&quot;]" data-bs-search-body="[&quot;See what each possible tool does in this project.&quot;, &quot;The pictures connect each tool to one job in the build.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Build the Phone Holder"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="hand-tools/phone-holder.html">1. Build the Phone Holder</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Review what each possible tool does, then follow the approved plan to build and test the phone holder.</p>
-        <p>The construction sequence turns a digital design into a finished physical object.</p>
+        <summary aria-label="Show description for Tools and Machines"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="hand-tools/tools-machines.html">3. Tools and Machines</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>See what each possible tool does in this project.</p>
+        <p>The pictures connect each tool to one job in the build.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="phone-holder-project" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build Steps&quot;, &quot;Making the Phone Holder&quot;]" data-bs-search-body="[&quot;Lay out, cut, drill, notch, sand, fit, and finish the holder.&quot;, &quot;The steps turn the approved drawing into a finished object.&quot;, &quot;Premade Plan&quot;, &quot;Drawing Submission&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Build Steps"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="hand-tools/phone-holder.html">4. Build Steps</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Lay out, cut, drill, notch, sand, fit, and finish the holder.</p>
+        <p>The steps turn the approved drawing into a finished object.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533">Premade Plan</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0">Drawing Submission</a></p>
       </details>
     </article>
@@ -304,7 +303,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="advanced-making" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">8. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">7. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Stamp or Faux-Enamel Jewellery&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Choose one of the linked advanced 3D-printing projects.&quot;, &quot;The links provide optional extension ideas without adding another local tutorial.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">

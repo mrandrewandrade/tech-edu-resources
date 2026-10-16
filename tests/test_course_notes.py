@@ -20,7 +20,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 29)
+        self.assertEqual(len(design_routes), 30)
         self.assertEqual(
             design_routes[0],
             "/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html",
@@ -54,10 +54,10 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertEqual(
             design_routes[25:29],
             [
-                "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
                 "/commons/design-fabrication/cad-parametric-modeling/phone-holder-design.html",
+                "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
+                "/commons/design-fabrication/hand-tools/tools-machines.html",
                 "/commons/design-fabrication/hand-tools/phone-holder.html",
-                "/commons/design-fabrication/advanced-making/stamp-faux-enamel-jewellery.html",
             ],
         )
         self.assertEqual(len(routes_by_course["tej"]), 17)
@@ -120,10 +120,12 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertLess(catalogue.index("Laser Cutting and Fabrication Tools"), catalogue.index("Laser-Cut Assembly, Adhesives &amp; Finishing"))
         self.assertLess(catalogue.index("Laser-Cut Assembly, Adhesives &amp; Finishing"), catalogue.index("CNC Machining"))
         self.assertLess(catalogue.index("CNC Machining"), catalogue.index("3D Printing"))
-        self.assertLess(catalogue.index("3D Printing"), catalogue.index("Introduction to CAD &amp; 3D Parametric Modeling"))
-        self.assertLess(catalogue.index("Introduction to CAD &amp; 3D Parametric Modeling"), catalogue.index("Phone Holder Design"))
-        self.assertLess(catalogue.index("Phone Holder Design"), catalogue.index("Introduction to Tools, Machines &amp; Phone Holder Building"))
-        self.assertLess(catalogue.index("Introduction to Tools, Machines &amp; Phone Holder Building"), catalogue.index("Advanced Making: Stamp or Faux-Enamel Jewellery"))
+        self.assertLess(catalogue.index("3D Printing"), catalogue.index("Making the Phone Holder"))
+        self.assertLess(catalogue.index("Making the Phone Holder"), catalogue.index("Choose Your Phone Holder"))
+        self.assertLess(catalogue.index("Choose Your Phone Holder"), catalogue.index("CAD You Need"))
+        self.assertLess(catalogue.index("CAD You Need"), catalogue.index("Tools and Machines"))
+        self.assertLess(catalogue.index("Tools and Machines"), catalogue.index("Build Steps"))
+        self.assertLess(catalogue.index("Build Steps"), catalogue.index("Advanced Making: Stamp or Faux-Enamel Jewellery"))
         self.assertLess(catalogue.index("Advanced Making: Stamp or Faux-Enamel Jewellery"), catalogue.index("## Highlighted tools"))
         self.assertIn('href="tools/index.html">CAD Tools</a>', design)
 

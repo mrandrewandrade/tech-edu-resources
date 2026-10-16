@@ -52,6 +52,7 @@ class DesignFabricationTests(unittest.TestCase):
             "cad-parametric-modeling/introduction-to-cad.qmd",
             "cad-parametric-modeling/phone-holder-design.qmd",
             "hand-tools/index.qmd",
+            "hand-tools/tools-machines.qmd",
             "hand-tools/phone-holder.qmd",
             "advanced-making/stamp-faux-enamel-jewellery.qmd",
             "04-3d-printing/index.qmd",
@@ -99,9 +100,8 @@ class DesignFabricationTests(unittest.TestCase):
             'section: "2. S.O. N.I.C.E. Design Process"',
             'section: "3. Logo Design in Photopea"',
             'section: "5. Laser Cutting and Fabrication Tools"',
-            'section: "6. Introduction to CAD & 3D Parametric Modeling"',
-            'section: "7. Introduction to Tools, Machines & Phone Holder Building"',
-            'section: "8. Advanced Making: Stamp or Faux-Enamel Jewellery"',
+            'section: "6. Making the Phone Holder"',
+            'section: "7. Advanced Making: Stamp or Faux-Enamel Jewellery"',
             'section: "CAD Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]
@@ -162,12 +162,15 @@ class DesignFabricationTests(unittest.TestCase):
         ):
             self.assertIn(worksheet, process)
 
-    def test_phone_holder_separates_cad_design_from_tools_and_building(self) -> None:
+    def test_phone_holder_is_one_visual_project_path(self) -> None:
         cad = self.read("design-fabrication/cad-parametric-modeling/introduction-to-cad.qmd")
         design = self.read("design-fabrication/cad-parametric-modeling/phone-holder-design.qmd")
+        tools = self.read("design-fabrication/hand-tools/tools-machines.qmd")
         page = self.read("design-fabrication/hand-tools/phone-holder.qmd")
-        for concept in ("sketches", "dimensions", "constraints", "features", "design intent", "assemblies", "drawings"):
+        hub = self.read("design-fabrication/cad-parametric-modeling/index.qmd")
+        for concept in ("sketch", "size", "extrude", "assemble", "draw"):
             self.assertIn(concept, cad.lower())
+        self.assertEqual(cad.count("<iframe"), 4)
         for tool in (
             "hand saw",
             "scroll saw",
@@ -178,25 +181,35 @@ class DesignFabricationTests(unittest.TestCase):
             "drum sander",
             "orbital sander",
             "oscillating sander",
-            "sanding by hand",
         ):
-            self.assertIn(tool, page)
+            self.assertIn(tool, tools.lower())
         for phrase in (
-            "construction pathway",
-            "design pathway",
-            "situation",
-            "opportunity",
-            "premade dimensions and order of operations",
-            "giraffe build video",
+            "level 3: simple holder",
+            "level 4: original or complex holder",
+            "this is **level 4**",
+            "westdale",
+            "giraffe video",
         ):
             self.assertIn(phrase, design.lower())
+        for image in (
+            "basic-phone-holder.jpg",
+            "two-parts.jpg",
+            "two-views.jpg",
+            "kermit-bob-ross.jpg",
+            "mad-hatter.jpg",
+            "cheshire-cat.jpg",
+        ):
+            self.assertIn(image, design)
         for phrase in (
             "this is not a safety section",
             "does not contain safety information",
-            "consult your school board",
             "professional experience and judgement",
         ):
-            self.assertIn(phrase, page.lower())
+            self.assertIn(phrase, tools.lower())
+        for step in ("1. Lay out", "2. Cut the parts", "3. Drill the opening", "4. Cut the slots", "5. Shape the edges", "6. Finish sand", "7. Fit and finish"):
+            self.assertIn(step, page)
+        for link in ("phone-holder-design.qmd", "introduction-to-cad.qmd", "tools-machines.qmd", "phone-holder.qmd"):
+            self.assertIn(link, hub)
         advanced = self.read("design-fabrication/advanced-making/stamp-faux-enamel-jewellery.qmd")
         self.assertIn("https://www.instructables.com/Faux-Stained-Glass-3D-Printed/", advanced)
         self.assertIn("https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/", advanced)

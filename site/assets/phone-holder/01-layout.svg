@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Measure and mark the phone-holder board</title>
+  <desc id="desc">A ruler and square mark a centre line, cut line, hole centre and two notches on a plywood rectangle.</desc>
+  <rect width="640" height="360" rx="24" fill="#f6f1e7"/>
+  <rect x="95" y="92" width="450" height="190" rx="8" fill="#d69b58" stroke="#1f3344" stroke-width="7"/>
+  <path d="M320 92v190M95 185h450" stroke="#0f6470" stroke-width="5" stroke-dasharray="14 10"/>
+  <circle cx="160" cy="140" r="13" fill="none" stroke="#c14d2d" stroke-width="7"/>
+  <path d="M135 282v-54h52v54M453 282v-54h52v54" fill="none" stroke="#c14d2d" stroke-width="8"/>
+  <rect x="72" y="42" width="496" height="28" rx="8" fill="#f7d96f" stroke="#1f3344" stroke-width="5"/>
+  <g stroke="#1f3344" stroke-width="3"><path d="M92 44v24M132 50v18M172 44v24M212 50v18M252 44v24M292 50v18M332 44v24M372 50v18M412 44v24M452 50v18M492 44v24M532 50v18"/></g>
+  <path d="M58 91h37v191H58" fill="none" stroke="#1f3344" stroke-width="9"/>
+  <text x="320" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1f3344">Measure from one straight edge</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Clean the outside edges</title>
+  <desc id="desc">A plywood edge touches a moving sanding belt while an arrow shows the edge being smoothed.</desc>
+  <rect width="640" height="360" rx="24" fill="#f1f5f7"/>
+  <rect x="360" y="52" width="145" height="240" rx="68" fill="#ad6b45" stroke="#1f3344" stroke-width="7"/>
+  <circle cx="432" cy="105" r="45" fill="#e5b47a" stroke="#1f3344" stroke-width="5"/>
+  <circle cx="432" cy="239" r="45" fill="#e5b47a" stroke="#1f3344" stroke-width="5"/>
+  <path d="M515 104v128" stroke="#0f6470" stroke-width="9"/>
+  <path d="M500 217l15 25 15-25" fill="none" stroke="#0f6470" stroke-width="9"/>
+  <path d="M104 98h270v152H104z" fill="#d69b58" stroke="#1f3344" stroke-width="7"/>
+  <path d="M370 98v152" stroke="#c14d2d" stroke-width="10"/>
+  <path d="M130 280h390" stroke="#687787" stroke-width="18"/>
+  <text x="270" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#1f3344">Smooth the outside edge</text>
+</svg>

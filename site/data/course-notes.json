@@ -84,24 +84,18 @@
           ]
         },
         {
-          "id": "cad-parametric-modeling", "order": 6, "title": "Introduction to CAD & 3D Parametric Modeling", "hub": "design-fabrication/cad-parametric-modeling/index.qmd",
-          "summary": "Learn how sketches, dimensions, constraints, and features create editable 3D models, then design a phone holder.",
-          "use": "Parametric models connect design decisions to measured parts that can be revised before anything is built.",
+          "id": "phone-holder-project", "order": 6, "title": "Making the Phone Holder", "hub": "design-fabrication/cad-parametric-modeling/index.qmd",
+          "summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
+          "use": "One connected project takes students from an idea to a finished holder.",
           "lessons": [
-            {"order": 1, "title": "Introduction to CAD & Parametric Modeling", "source": "design-fabrication/cad-parametric-modeling/introduction-to-cad.qmd", "summary": "Use sketches, dimensions, constraints, and features to create an editable 3D model.", "use": "A well-structured model makes size and shape changes predictable.", "status": "published", "resources": []},
-            {"order": 2, "title": "Phone Holder Design", "source": "design-fabrication/cad-parametric-modeling/phone-holder-design.qmd", "summary": "Use a premade plan or create and document an original phone-holder design before entering the shop.", "use": "The design stage connects user needs, dimensions, assemblies, and technical drawings to the later build.", "status": "published", "resources": [{"label": "Project Brief", "url": "https://docs.google.com/document/d/1erSte0Jdg1-iuhU82DN7iFaqwf75sq5QH6TIkUDDbwg/edit?tab=t.0#heading=h.ldwuulz1hza"}, {"label": "Premade Plan", "url": "https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533"}, {"label": "Drawing Submission", "url": "https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0"}]}
+            {"order": 1, "title": "Choose Your Phone Holder", "source": "design-fabrication/cad-parametric-modeling/phone-holder-design.qmd", "summary": "Choose the simple Level 3 holder or create a Level 4 design.", "use": "The choice sets the CAD and build work that follows.", "status": "published", "resources": [{"label": "Project Brief", "url": "https://docs.google.com/document/d/1erSte0Jdg1-iuhU82DN7iFaqwf75sq5QH6TIkUDDbwg/edit?tab=t.0#heading=h.ldwuulz1hza"}, {"label": "Premade Plan", "url": "https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533"}, {"label": "Westdale Project", "url": "https://drive.google.com/file/d/1s9BFBX40vxdu2WpLCki3DKvmHzcZiEBl/view?usp=sharing"}]},
+            {"order": 2, "title": "CAD You Need", "source": "design-fabrication/cad-parametric-modeling/introduction-to-cad.qmd", "summary": "Sketch, size, extrude, assemble, and draw the parts.", "use": "The model shows what to make before the shop work begins.", "status": "published", "resources": []},
+            {"order": 3, "title": "Tools and Machines", "source": "design-fabrication/hand-tools/tools-machines.qmd", "summary": "See what each possible tool does in this project.", "use": "The pictures connect each tool to one job in the build.", "status": "published", "resources": []},
+            {"order": 4, "title": "Build Steps", "source": "design-fabrication/hand-tools/phone-holder.qmd", "summary": "Lay out, cut, drill, notch, sand, fit, and finish the holder.", "use": "The steps turn the approved drawing into a finished object.", "status": "published", "resources": [{"label": "Premade Plan", "url": "https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533"}, {"label": "Drawing Submission", "url": "https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0"}]}
           ]
         },
         {
-          "id": "hand-tools", "order": 7, "title": "Introduction to Tools, Machines & Phone Holder Building", "hub": "design-fabrication/hand-tools/index.qmd",
-          "summary": "Learn what the project tools do, then lay out, cut, drill, fit, sand, test, and document the phone holder.",
-          "use": "The build connects the approved drawing to measured parts, fit, finish, and testing.",
-          "lessons": [
-            {"order": 1, "title": "Build the Phone Holder", "source": "design-fabrication/hand-tools/phone-holder.qmd", "summary": "Review what each possible tool does, then follow the approved plan to build and test the phone holder.", "use": "The construction sequence turns a digital design into a finished physical object.", "status": "published", "resources": [{"label": "Premade Plan", "url": "https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533"}, {"label": "Drawing Submission", "url": "https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0"}]}
-          ]
-        },
-        {
-          "id": "advanced-making", "order": 8, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
+          "id": "advanced-making", "order": 7, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
           "summary": "Continue with an optional advanced 3D-printing project.",
           "use": "These external project references provide a next challenge after the introductory build.",
           "lessons": [

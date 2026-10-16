@@ -1,13 +1,50 @@
 ---
-title: "Introduction to CAD & 3D Parametric Modeling"
-description: "Learn the foundations of editable 3D CAD, then design and document a phone holder."
+title: "Making the Phone Holder"
+description: "Choose a design, make the CAD, learn the tools, and build the phone holder."
 sidebar: design-fabrication
 page-layout: full
 toc: false
-body-classes: "ter-design-fabrication bs-learn-track-index"
+body-classes: "ter-design-fabrication bs-learn-track-index phone-holder-project"
+format:
+  html:
+    css: ../../assets/phone-holder/phone-holder.css
 execute: {enabled: false}
 ---
 
-Begin with sketches, dimensions, constraints, and features. Then use those ideas to model and document a phone holder before beginning hands-on construction.
+Make one project from start to finish.
 
-{{< include ../../includes/generated/design-fabrication-cad-parametric-modeling-toc.md >}}
+::: {.phone-project-path}
+::: {.phone-path-card}
+## 1. Choose
+
+![](../../assets/phone-holder/westdale/two-parts.jpg){fig-alt="Two flat wooden parts that slide together to make the simple phone holder."}
+
+[Choose Level 3 or Level 4](phone-holder-design.qmd)
+:::
+
+::: {.phone-path-card}
+## 2. Make the CAD
+
+![](../../assets/phone-holder/level-4-three-part-phone-holder.png){fig-alt="A Level 4 phone holder shown as a digital 3D model."}
+
+[Learn the CAD you need](introduction-to-cad.qmd)
+:::
+
+::: {.phone-path-card}
+## 3. Learn the tools
+
+![](../../assets/phone-holder/03-drill.svg){fig-alt="A drill press makes a round opening in one phone-holder part."}
+
+[See the tools and machines](../hand-tools/tools-machines.qmd)
+:::
+
+::: {.phone-path-card}
+## 4. Build it
+
+![](../../assets/phone-holder/westdale/basic-phone-holder.jpg){fig-alt="A finished simple phone holder supports a phone at an angle."}
+
+[Follow the build steps](../hand-tools/phone-holder.qmd)
+:::
+:::
+
+{{< include ../../includes/generated/design-fabrication-phone-holder-project-toc.md >}}

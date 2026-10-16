@@ -1,0 +1,225 @@
+.phone-project-map,
+.phone-project-path,
+.phone-choice-grid,
+.phone-tool-grid,
+.phone-step-grid,
+.phone-video-grid,
+.phone-photo-grid,
+.phone-image-grid,
+.phone-step-strip {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.phone-project-map,
+.phone-project-path,
+.phone-choice-grid,
+.phone-tool-grid,
+.phone-video-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.phone-step-strip {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.phone-step-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.phone-photo-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.phone-image-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.phone-project-card,
+.phone-path-card,
+.phone-choice-card,
+.phone-tool-card,
+.phone-step-card,
+.phone-video-card,
+.phone-photo-card,
+.phone-mini-step {
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid var(--bs-border-color, #d8d4ca);
+  border-radius: 0.9rem;
+  background: var(--bs-body-bg, #fff);
+  box-shadow: 0 0.2rem 0.8rem rgba(26, 39, 55, 0.07);
+}
+
+.phone-project-card,
+.phone-path-card,
+.phone-choice-card,
+.phone-tool-card,
+.phone-step-card,
+.phone-video-card,
+.phone-mini-step {
+  padding: 1rem;
+}
+
+.phone-project-card img,
+.phone-path-card img,
+.phone-choice-card img,
+.phone-tool-card img,
+.phone-step-card img,
+.phone-photo-card img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 0.55rem;
+}
+
+.phone-path-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #f7f4ed;
+}
+
+.phone-image-grid img {
+  width: 100%;
+  height: 100%;
+  min-height: 14rem;
+  max-height: 22rem;
+  object-fit: contain;
+  border: 1px solid var(--bs-border-color, #d8d4ca);
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.phone-project-card h2,
+.phone-project-card h3,
+.phone-path-card h2,
+.phone-path-card h3,
+.phone-choice-card h2,
+.phone-choice-card h3,
+.phone-tool-card h2,
+.phone-tool-card h3,
+.phone-step-card h2,
+.phone-step-card h3,
+.phone-video-card h2,
+.phone-video-card h3 {
+  margin: 0.75rem 0 0.35rem;
+}
+
+.phone-mini-step {
+  border-top: 0.35rem solid #0f6470;
+  text-align: center;
+}
+
+.phone-mini-step p {
+  margin: 0;
+}
+
+.phone-project-card p,
+.phone-choice-card p,
+.phone-tool-card p,
+.phone-step-card p,
+.phone-video-card p,
+.phone-photo-card p {
+  margin-bottom: 0.45rem;
+}
+
+.phone-level {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: #0f6470;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.phone-level.is-level-4 {
+  background: #704214;
+}
+
+.phone-video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: 0.65rem;
+  background: #111827;
+}
+
+.phone-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.phone-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: #111827;
+}
+
+.phone-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.phone-path-arrow {
+  color: #0f6470;
+  font-weight: 800;
+}
+
+.phone-photo-card figcaption {
+  padding: 0.65rem 0.75rem 0.8rem;
+  font-size: 0.92rem;
+}
+
+.phone-source-note {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--bs-secondary-color, #5d6470);
+}
+
+@media (max-width: 900px) {
+  .phone-step-grid,
+  .phone-photo-grid,
+  .phone-image-grid,
+  .phone-step-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .phone-project-map,
+  .phone-project-path,
+  .phone-choice-grid,
+  .phone-tool-grid,
+  .phone-step-grid,
+  .phone-video-grid,
+  .phone-photo-grid,
+  .phone-image-grid,
+  .phone-step-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-holder-project main,
+  .phone-holder-project .content,
+  .phone-holder-project .phone-path-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

@@ -1,34 +1,68 @@
 ---
-title: "Introduction to CAD & Parametric Modeling"
-description: "Use sketches, dimensions, constraints, and features to create an editable 3D model."
+title: "CAD You Need"
+description: "Sketch, size, extrude, assemble, and draw the phone-holder parts."
 sidebar: design-fabrication
-body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson phone-holder-project"
 toc: true
+format:
+  html:
+    css: ../../assets/phone-holder/phone-holder.css
 execute: {enabled: false}
 ---
 
-## What CAD does
+CAD lets you see and size the parts before you cut them.
 
-Computer-aided design, or CAD, makes an idea visible and measurable before it is built. A 3D model can be viewed from different directions, checked for fit, revised, assembled with other parts, and used to prepare technical drawings.
+::: {.phone-step-strip}
+::: {.phone-mini-step}
+**1. Sketch**<br>
+Draw the flat shape.
+:::
+::: {.phone-mini-step}
+**2. Size**<br>
+Add the needed dimensions.
+:::
+::: {.phone-mini-step}
+**3. Extrude**<br>
+Give the part its thickness.
+:::
+::: {.phone-mini-step}
+**4. Assemble**<br>
+Join the parts on screen.
+:::
+::: {.phone-mini-step}
+**5. Draw**<br>
+Show the views and sizes.
+:::
+:::
 
-## What parametric means
+## Watch the full example
 
-A parametric model is controlled by dimensions, relationships, and a sequence of features. When an important value changes, the model updates from those design decisions instead of being redrawn from the beginning.
+::: {.phone-video}
+<iframe src="https://drive.google.com/file/d/1Y_T4FIuuPPLAghir3bLk3iP6Rds_71y4/preview" title="Phone holder CAD example" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+:::
 
-The main ideas are:
+## Short videos
 
-- **sketches** define the starting 2D geometry;
-- **dimensions** control measurable sizes and locations;
-- **constraints** preserve relationships such as parallel, perpendicular, equal, tangent, or concentric;
-- **features** turn sketches into 3D forms through operations such as extrude, remove, hole, fillet, and chamfer;
-- **design intent** determines which dimensions should remain fixed and which should be easy to revise;
-- **assemblies** show how separate parts fit and move together; and
-- **drawings** communicate views and dimensions needed to make or inspect the parts.
+::: {.phone-video-grid}
+::: {.phone-video}
+<iframe src="https://www.youtube-nocookie.com/embed/bWrPhTa8s-w" title="Basic phone holder CAD video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+:::
 
-## First modelling practice
+::: {.phone-video}
+<iframe src="https://www.youtube-nocookie.com/embed/yl0L4jj4adk" title="Basic phone holder CAD video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+:::
 
-Create a simple part from a fully defined sketch. Give the part a thickness, add one measured feature, then change an earlier dimension and confirm that the model updates predictably.
+::: {.phone-video}
+<iframe src="https://www.youtube-nocookie.com/embed/1-SRLHCQ9tA" title="Basic phone holder CAD video 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+:::
+:::
 
-Before starting the phone holder, you should be able to identify the sketch, dimensions, constraints, and features that control a part.
+## Before you build
 
-Next: [design the phone holder](phone-holder-design.qmd).
+- Check that the parts fit on a 12 x 12 inch sheet.
+- Check the slot against the real material thickness.
+- Make an assembly.
+- Make a drawing with the needed sizes.
+- [Submit the CAD work](https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0).
+
+Next: [see the tools and machines](../hand-tools/tools-machines.qmd).

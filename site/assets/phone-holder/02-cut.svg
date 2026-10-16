@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Cut the phone-holder parts</title>
+  <desc id="desc">A hand saw cuts a straight line while a narrow machine blade cuts a curved outside shape.</desc>
+  <rect width="640" height="360" rx="24" fill="#eef5f2"/>
+  <rect x="52" y="96" width="245" height="145" rx="8" fill="#d69b58" stroke="#1f3344" stroke-width="7"/>
+  <path d="M172 96v145" stroke="#c14d2d" stroke-width="5" stroke-dasharray="13 9"/>
+  <path d="M82 57l220 86-16 31-220-86z" fill="#d9dde2" stroke="#1f3344" stroke-width="6"/>
+  <path d="M61 82l-32-12 19-48 48 19z" fill="#0f6470" stroke="#1f3344" stroke-width="6"/>
+  <path d="M355 250V80h220v170z" fill="#d69b58" stroke="#1f3344" stroke-width="7"/>
+  <path d="M470 55v225" stroke="#1f3344" stroke-width="8"/>
+  <path d="M355 210c75-90 145-90 220-10" fill="none" stroke="#c14d2d" stroke-width="5" stroke-dasharray="13 9"/>
+  <path d="M485 210c38-42 65-42 90-10" fill="none" stroke="#0f6470" stroke-width="7"/>
+  <text x="175" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#1f3344">Straight cut</text>
+  <text x="470" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#1f3344">Shape cut</text>
+</svg>

@@ -1,18 +1,18 @@
 ---
-title: "Introduction to Tools, Machines & Phone Holder Building"
-description: "Learn what the available project tools do, then build the approved phone-holder design."
+title: "Phone Holder: Tools and Building"
+description: "See the tools, then follow the phone-holder build steps."
 sidebar: design-fabrication
 page-layout: full
 toc: false
-body-classes: "ter-design-fabrication bs-learn-track-index"
+body-classes: "ter-design-fabrication bs-learn-track-index phone-holder-project"
+format:
+  html:
+    css: ../../assets/phone-holder/phone-holder.css
 execute: {enabled: false}
 ---
 
-::: {.callout-important title="Scope of this section"}
-This is not a safety section. This website does not contain safety information and does not replace training, supervision, operating procedures, or local requirements. Consult your school board, the qualified instructor or supervisor, and your professional experience and judgement before using any tool or machine.
-:::
+This work is part of [Making the Phone Holder](../cad-parametric-modeling/index.qmd).
 
-This section briefly explains what each possible tool does, then connects the approved drawing to layout, cutting, drilling, fitting, sanding, and testing.
-
-{{< include ../../includes/generated/design-fabrication-hand-tools-toc.md >}}
+1. [See the tools and machines](tools-machines.qmd).
+2. [Follow the build steps](phone-holder.qmd).
 

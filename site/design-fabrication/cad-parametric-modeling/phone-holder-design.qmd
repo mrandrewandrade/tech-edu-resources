@@ -1,64 +1,72 @@
 ---
-title: "Phone Holder Design"
-description: "Use a premade plan or create and document an original phone-holder design before entering the shop."
+title: "Choose Your Phone Holder"
+description: "Choose the simple Level 3 holder or make a more complex Level 4 design."
 sidebar: design-fabrication
-body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson phone-holder-project"
 toc: true
+format:
+  html:
+    css: ../../assets/phone-holder/phone-holder.css
 execute: {enabled: false}
 ---
 
-## Choose the pathway
+## Level 3: simple holder
 
-- **Construction pathway:** use the [premade dimensions and order of operations](https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533), review the parts, and prepare to make the device accurately.
-- **Design pathway:** use the [S.O. N.I.C.E. Design Process](../design-process/index.qmd) to understand the situation, identify an opportunity, define the user's needs, and create an original design.
+Use the Westdale two-part design. The parts slide together.
 
-An original design may focus on appearance and finish or add a useful feature such as a smartwatch charger, cable route, jewellery holder, key tray, or another approved function.
+::: {.phone-image-grid}
+![The simple two-part holder supporting a phone.](../../assets/phone-holder/westdale/basic-phone-holder.jpg)
 
-## Define the design
+![The two flat parts before they are joined.](../../assets/phone-holder/westdale/two-parts.jpg)
 
-For an original design, record:
+![Two views of the assembled holder.](../../assets/phone-holder/westdale/two-views.jpg)
+:::
 
-1. where the holder will be used;
-2. which phone or device it must support;
-3. what would improve the situation for the user;
-4. the necessities and priorities; and
-5. whether an added function improves the design or makes it harder to build and use.
+It can be plain, painted, or shaped like a character.
 
-Model the individual parts, assemble them digitally, and prepare aligned front, top, right-side, and isometric views. Show overall sizes and the critical dimensions needed to lay out the parts.
+::: {.phone-image-grid}
+![Kermit and Bob Ross phone holders.](../../assets/phone-holder/westdale/kermit-bob-ross.jpg)
 
-## Design examples
+![A Mad Hatter phone holder.](../../assets/phone-holder/westdale/mad-hatter.jpg)
+
+![A Cheshire Cat phone holder.](../../assets/phone-holder/westdale/cheshire-cat.jpg)
+:::
+
+[Open the Westdale project PDF](https://drive.google.com/file/d/1s9BFBX40vxdu2WpLCki3DKvmHzcZiEBl/view?usp=sharing) or [use the current premade plan](https://docs.google.com/spreadsheets/d/1rdGC6nsCR6Z5DtoN071NhLQZxIc3XbFz0cQT_RCSFDs/edit?gid=452419533#gid=452419533).
+
+## Level 4: original or complex holder
+
+Add a harder shape or a useful feature. You might add a cable path, watch charger, or jewellery holder.
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Level 3 example
+### Three-part holder
 
-![A three-piece digital phone-holder model with a sloping back, a front support rail, a wide shelf, and a small cable notch.](../../assets/phone-holder/level-3-phone-holder.png){fig-alt="A level 3 phone-holder concept uses a sloping back, front rail, shelf, and cable notch."}
+![A three-part digital phone holder with a sloped back, shelf, front rail, and cable notch.](../../assets/phone-holder/level-4-three-part-phone-holder.png)
 
-[Open the Level 3 Onshape model](https://cad.onshape.com/documents/b7521dff4faa9f0528bec91d/w/fcb08766ede91c026afcbaa9/e/92a90b128cc62be4e050d0de)
+This is **Level 4**. It is not a simple Level 3 design.
+
+[Open the Onshape model](https://cad.onshape.com/documents/b7521dff4faa9f0528bec91d/w/fcb08766ede91c026afcbaa9/e/92a90b128cc62be4e050d0de)
 :::
 
 ::: {.column width="50%"}
-### Level 4 giraffe example
+### Giraffe holder
 
-![A giraffe-shaped digital phone holder with a long neck, two device supports, a shelf, and four legs.](../../assets/phone-holder/level-4-giraffe-phone-holder.png){fig-alt="A level 4 giraffe-shaped phone-holder concept combines the animal silhouette with several functional supports."}
+![A giraffe-shaped digital phone holder with a long neck and several supports.](../../assets/phone-holder/level-4-giraffe-phone-holder.png)
 
-[Open the Level 4 giraffe Onshape model](https://cad.onshape.com/documents/af72919fe7e13f1460a563b9/w/b881f1eb0ede9513d859a9b6/e/1cd40a9ed11789007404a41c?renderMode=0&uiState=6ad28b5dba3347aa0b66da53)
+[Open the giraffe Onshape model](https://cad.onshape.com/documents/af72919fe7e13f1460a563b9/w/b881f1eb0ede9513d859a9b6/e/1cd40a9ed11789007404a41c?renderMode=0&uiState=6ad28b5dba3347aa0b66da53)
 :::
 :::
 
-::: {.callout-note title="Giraffe build video"}
-Video coming soon. This space is reserved for the complete giraffe build demonstration.
+## Level 4 giraffe video
+
+::: {.phone-video}
+<iframe src="https://www.youtube-nocookie.com/embed/sn3I_HFqoQI" title="Level 4 giraffe phone holder in-depth video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 :::
 
-## Resources and submission
+## Your next step
 
-- [Phone Holder Design project brief](https://docs.google.com/document/d/1erSte0Jdg1-iuhU82DN7iFaqwf75sq5QH6TIkUDDbwg/edit?tab=t.0#heading=h.ldwuulz1hza)
-- [Digital drawing submission](https://docs.google.com/document/d/1NgAOEpUvRkkanlb8MvY5porLpp18FNvFNbXxHZ6il-4/edit?tab=t.0)
-- [Phone-holder Onshape video folder](https://drive.google.com/drive/folders/1WjFCJD--ArZOx1bljsQ4XbxGdCZYuNg6)
-- [Basic phone-holder video 1](https://www.youtube.com/watch?v=bWrPhTa8s-w)
-- [Basic phone-holder video 2](https://www.youtube.com/watch?v=yl0L4jj4adk)
-- [Basic phone-holder video 3](https://www.youtube.com/watch?v=1-SRLHCQ9tA)
+- Construction students: use the premade plan.
+- Design students: use the [S.O. N.I.C.E. process](../design-process/index.qmd) and the [project brief](https://docs.google.com/document/d/1erSte0Jdg1-iuhU82DN7iFaqwf75sq5QH6TIkUDDbwg/edit?tab=t.0#heading=h.ldwuulz1hza).
 
-Submit the Onshape link and the required drawing evidence before beginning the physical build.
-
-Next: [learn what the tools and machines do, then build the phone holder](../hand-tools/index.qmd).
+Next: [make the CAD](introduction-to-cad.qmd).
