@@ -277,14 +277,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/circuits/series-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Series Circuits</span></a>
+  <a href="../../tej3-4/circuits/parallel-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Package 1: Basic Electricity and Parallel Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/circuits/parallel-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Parallel Circuits</span></a>
+  <a href="../../tej3-4/circuits/series-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Package 2: Parallel Review and Series Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -466,10 +466,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="class-materials">Class materials</h2>
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit">Linux Start Here slides</a></li>
-<li><a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Make a copy of the Linux Mint Installation assignment</a></li>
+<li><a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Linux Mint Installation Reflection</a></li>
 </ul>
 <div class="callout-danger" title="This lab erases the computer">
 <p>Choose <strong>Erase disk and install Linux Mint</strong> only on the classroom computer assigned by your teacher. This deletes Windows, accounts, programs, and every file on the selected drive. Stop and ask your teacher before continuing if you are not certain that the computer and drive are approved.</p>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>LEVEL 4+: MAKE THE INSTRUCTIONS BETTER
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr.&nbsp;A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.</p>
+</div>
 </div>
 <p>This classroom guide is adapted from the <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/install.html">official Linux Mint Installation Guide</a>. The installer screenshots come from that guide. Screens can change slightly between releases, and the example names or checkboxes shown in a screenshot may not match our required classroom settings. <strong>Follow the written choices on this page.</strong></p>
 </section>
@@ -480,7 +493,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>the assigned classroom computer;</li>
 <li>a Linux Mint 22.3 “Zena” Xfce USB installer signed out from your teacher;</li>
 <li>the classroom Wi-Fi credentials; and</li>
-<li>your copy of the Linux Mint Installation assignment.</li>
+<li>your copy of the <a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Linux Mint Installation Reflection</a>.</li>
 </ul>
 <p>Disconnect any personal USB drives or external storage. Have the teacher confirm the target computer before you erase anything.</p>
 <section id="how-the-classroom-usb-was-made" class="level3">
@@ -637,6 +650,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="create-the-classroom-account">8. Create the classroom account</h2>
 <p>Enter the following settings exactly, except for the computer name:</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Installer field</th>
@@ -658,11 +675,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">Choose a password</td>
-<td style="text-align: left;"><code>pcss</code></td>
+<td style="text-align: left;">Use the classroom account password supplied directly by your teacher</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Confirm your password</td>
-<td style="text-align: left;"><code>pcss</code></td>
+<td style="text-align: left;">Enter the same teacher-supplied password again</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Login choice</td>
@@ -685,7 +702,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The official screenshot shows example names and shows home-folder encryption selected. For this lab, use <code>min</code>, your unique computer name, the classroom password, <strong>Require my password to log in</strong>, and <strong>do not encrypt the home folder</strong>. The password <code>pcss</code> is for this classroom image only; never reuse it for a personal account.</p>
+<p>The official screenshot shows example names and shows home-folder encryption selected. For this lab, use <code>min</code>, your unique computer name, the classroom account password supplied directly by your teacher, <strong>Require my password to log in</strong>, and <strong>do not encrypt the home folder</strong>. Never reuse a classroom password for a personal account.</p>
 </div>
 </div>
 <div class="quarto-figure quarto-figure-center">
@@ -723,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Linux Mint installation-complete screen with Restart Now.</figcaption>
 </figure>
 </div>
-<p>Remove the USB drive when the computer asks, then press <strong>Enter</strong>. Log in as <code>min</code> using the classroom password <code>pcss</code>.</p>
+<p>Remove the USB drive when the computer asks, then press <strong>Enter</strong>. Log in as <code>min</code> using the classroom account password supplied directly by your teacher.</p>
 </section>
 <section id="test-the-new-installation" class="level2">
 <h2 class="anchored" data-anchor-id="test-the-new-installation">11. Test the new installation</h2>
@@ -745,8 +762,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="google-classroom-submission" class="level2">
 <h2 class="anchored" data-anchor-id="google-classroom-submission">Google Classroom submission</h2>
-<p>Complete your copy of the <a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Linux Mint Installation assignment</a>.</p>
-<p>Submit <strong>one Google Doc</strong> in Google Classroom. The submission page gives you the required headings, screenshot, reflection questions, final checklist and <strong>Above and beyond</strong> section.</p>
+<p>Complete your copy of the <a href="https://docs.google.com/document/d/120xWMTjO7YDA8XPMSy9Cy5rLjfBZixSiIRb3AvZQn_w/copy">Linux Mint Installation Reflection</a>.</p>
+<p>Submit <strong>ONE completed Google Doc</strong> in Google Classroom. The reflection document gives you the required headings, screenshot, reflection questions, final checklist and <strong>Above and beyond</strong> section.</p>
+<p>Your guide-improvement evidence must also show that you:</p>
+<ol type="1">
+<li>added at least <strong>two useful comments</strong> to the installation guide;</li>
+<li>made at least <strong>one clear improvement</strong> in the assigned copy;</li>
+<li>pasted the improved sentence or step into the reflection document; and</li>
+<li>explained why the revision is clearer or more useful.</li>
+</ol>
 <p>Record the following evidence before you leave:</p>
 <table class="caption-top table">
 <thead>

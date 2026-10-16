@@ -12,6 +12,11 @@
     pattern: "row", rows: 1, columns: 4, spacingX: 41.91, spacingY: 41.91,
     radialCount: 6, radialRadius: 30.48, startAngle: -90, perimeterCount: 8,
     edgeMargin: 10.16, autoCentre: true, offsetX: 0, offsetY: 0,
+    cornerHoles: false, cornerOffsetReference: "center",
+    cornerADiameter: 6.35, cornerAOffset: 9.525,
+    cornerBDiameter: 6.35, cornerBOffset: 9.525,
+    cornerCDiameter: 6.35, cornerCOffset: 9.525,
+    cornerDDiameter: 6.35, cornerDOffset: 9.525,
     previewGuides: true, exportGuides: false
   });
 
@@ -25,9 +30,10 @@
     cable: { base: "rounded", width: 120.65, height: 69.85, radius: 6.35, pattern: "grid", rows: 2, columns: 3, spacingX: 34.925, spacingY: 29.972, holeMode: "direct", holeDiameter: 10.16, edgeMargin: 7.62 }
   };
 
-  const numericKeys = ["width","height","radius","ringWall","holeDiameter","objectDiameter","clearance","rows","columns","spacingX","spacingY","radialCount","radialRadius","startAngle","perimeterCount","edgeMargin","offsetX","offsetY"];
-  const dimensionalKeys = new Set(["width","height","radius","ringWall","holeDiameter","objectDiameter","clearance","spacingX","spacingY","radialRadius","edgeMargin","offsetX","offsetY"]);
-  const boolKeys = ["autoCentre","previewGuides","exportGuides"];
+  const cornerLabels = ["A", "B", "C", "D"];
+  const numericKeys = ["width","height","radius","ringWall","holeDiameter","objectDiameter","clearance","rows","columns","spacingX","spacingY","radialCount","radialRadius","startAngle","perimeterCount","edgeMargin","offsetX","offsetY",...cornerLabels.flatMap(label => [`corner${label}Diameter`, `corner${label}Offset`])];
+  const dimensionalKeys = new Set(["width","height","radius","ringWall","holeDiameter","objectDiameter","clearance","spacingX","spacingY","radialRadius","edgeMargin","offsetX","offsetY",...cornerLabels.flatMap(label => [`corner${label}Diameter`, `corner${label}Offset`])]);
+  const boolKeys = ["autoCentre","cornerHoles","previewGuides","exportGuides"];
   const round = value => Math.round(value * 1000) / 1000;
   const finite = (value, fallback) => Number.isFinite(Number(value)) ? Number(value) : fallback;
   const toMm = (value, unit) => Number(value) * (unit === "in" ? 25.4 : 1);
@@ -44,6 +50,7 @@
     state.columns = Math.max(1, Math.round(state.columns));
     state.radialCount = Math.max(1, Math.round(state.radialCount));
     state.perimeterCount = Math.max(1, Math.round(state.perimeterCount));
+    state.cornerOffsetReference = state.cornerOffsetReference === "edge" ? "edge" : "center";
     if (state.base === "circle" || state.base === "ring") state.height = state.width;
     return state;
   }
@@ -92,9 +99,52 @@
     return points.map(point => ({ x: round(point.x), y: round(point.y) }));
   }
 
+  function cornerHoleSpecs(raw) {
+    const s = normalize(raw);
+    if (!s.cornerHoles) return [];
+    return cornerLabels.map((label, index) => {
+      const diameter = s[`corner${label}Diameter`];
+      const offset = s[`corner${label}Offset`];
+      const radius = diameter / 2;
+      const centerDistance = offset + (s.cornerOffsetReference === "edge" ? radius : 0);
+      const right = index === 1 || index === 2;
+      const bottom = index >= 2;
+      return {
+        label,
+        corner: ["top left", "top right", "bottom right", "bottom left"][index],
+        x: round(right ? s.width - centerDistance : centerDistance),
+        y: round(bottom ? s.height - centerDistance : centerDistance),
+        diameter: round(diameter),
+        offset: round(offset),
+        centerDistance: round(centerDistance)
+      };
+    });
+  }
+
+  function fitsInsideBase(s, hole, extraMargin) {
+    const clearance = hole.diameter / 2 + (extraMargin || 0);
+    const x = hole.x, y = hole.y;
+    if (s.base === "circle" || s.base === "ring") {
+      const distance = Math.hypot(x - s.width / 2, y - s.height / 2);
+      if (distance + clearance > s.width / 2) return false;
+      if (s.base === "ring" && distance - clearance < s.width / 2 - s.ringWall) return false;
+      return true;
+    }
+    if (x - clearance < 0 || y - clearance < 0 || x + clearance > s.width || y + clearance > s.height) return false;
+    if (s.base !== "rounded" || s.radius <= 0) return true;
+    const cornerChecks = [
+      [x < s.radius && y < s.radius, s.radius, s.radius],
+      [x > s.width - s.radius && y < s.radius, s.width - s.radius, s.radius],
+      [x > s.width - s.radius && y > s.height - s.radius, s.width - s.radius, s.height - s.radius],
+      [x < s.radius && y > s.height - s.radius, s.radius, s.height - s.radius]
+    ];
+    return cornerChecks.every(([inCorner, cx, cy]) => !inCorner || Math.hypot(x - cx, y - cy) + clearance <= s.radius);
+  }
+
   function validate(raw) {
-    const s = normalize(raw), diameter = effectiveHoleDiameter(s), r = diameter / 2;
+    const s = normalize(raw), diameter = effectiveHoleDiameter(s);
     const errors = [], warnings = [], points = diameter > 0 ? patternPoints(s) : [];
+    const cornerHoles = cornerHoleSpecs(s);
     if (s.width <= 0 || s.height <= 0) errors.push("Base dimensions must be greater than zero.");
     if (s.base === "rounded" && (s.radius < 0 || s.radius > Math.min(s.width, s.height) / 2)) errors.push("Corner radius must be between 0 and half the shortest side.");
     if (s.base === "ring" && (s.ringWall <= 0 || s.ringWall >= s.width / 2)) errors.push("Ring wall must be greater than 0 and less than the outer radius.");
@@ -104,28 +154,32 @@
     if ((s.spacingX < 0 || s.spacingY < 0) && ["row","column","grid","staggered"].includes(s.pattern)) errors.push("Pattern spacing cannot be negative.");
     if (s.pattern === "perimeter" && (s.width <= 2 * s.edgeMargin || s.height <= 2 * s.edgeMargin)) errors.push("The perimeter margin leaves no usable path.");
 
-    const outside = point => {
-      if (s.base === "circle" || s.base === "ring") {
-        const distance = Math.hypot(point.x - s.width / 2, point.y - s.height / 2);
-        if (distance + r + s.edgeMargin > s.width / 2) return true;
-        if (s.base === "ring" && distance - r - s.edgeMargin < s.width / 2 - s.ringWall) return true;
-        return false;
-      }
-      return point.x - r - s.edgeMargin < 0 || point.y - r - s.edgeMargin < 0 || point.x + r + s.edgeMargin > s.width || point.y + r + s.edgeMargin > s.height;
-    };
-    if (points.some(outside)) errors.push("One or more holes exceed the usable plate boundary or margin.");
-    for (let i = 0; i < points.length; i += 1) {
-      for (let j = i + 1; j < points.length; j += 1) {
-        const gap = Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y) - diameter;
+    if (s.cornerHoles && !["rectangle", "rounded"].includes(s.base)) errors.push("Corner holes A-D require a rectangular or rounded rectangular plate.");
+    cornerHoles.forEach(hole => {
+      if (hole.diameter <= 0) errors.push(`Corner hole ${hole.label} diameter must be greater than zero.`);
+      if (hole.offset < 0) errors.push(`Corner hole ${hole.label} offset cannot be negative.`);
+      if (s.cornerOffsetReference === "center" && hole.centerDistance < hole.diameter / 2) errors.push(`Corner hole ${hole.label} centre offset must be at least half its diameter.`);
+      if (["rectangle", "rounded"].includes(s.base) && hole.diameter > 0 && !fitsInsideBase(s, hole, 0)) errors.push(`Corner hole ${hole.label} exceeds the plate boundary.`);
+      const material = hole.centerDistance - hole.diameter / 2;
+      if (material >= 0 && material < 2) warnings.push(`Less than 0.079 in (2 mm) of material remains outside corner hole ${hole.label}.`);
+    });
+
+    const patternHoles = points.map((point, index) => ({ ...point, diameter, id: `hole-${String(index + 1).padStart(3, "0")}` }));
+    if (patternHoles.some(hole => !fitsInsideBase(s, hole, s.edgeMargin))) errors.push("One or more pattern holes exceed the usable plate boundary or margin.");
+    const holes = [...patternHoles, ...cornerHoles.map(hole => ({ ...hole, id: `corner-hole-${hole.label}` }))];
+    for (let i = 0; i < holes.length; i += 1) {
+      for (let j = i + 1; j < holes.length; j += 1) {
+        const gap = Math.hypot(holes[i].x - holes[j].x, holes[i].y - holes[j].y) - (holes[i].diameter + holes[j].diameter) / 2;
         if (gap < 0) errors.push("Hole geometry overlaps; increase spacing or reduce the diameter.");
         else if (gap < 2) warnings.push("Less than 0.079 in (2 mm) of material remains between some holes.");
       }
     }
-    points.forEach(point => {
-      const edge = Math.min(point.x - r, point.y - r, s.width - point.x - r, s.height - point.y - r);
+    patternHoles.forEach(hole => {
+      const r = hole.diameter / 2;
+      const edge = Math.min(hole.x - r, hole.y - r, s.width - hole.x - r, s.height - hole.y - r);
       if (edge >= 0 && edge < 2) warnings.push("Less than 0.079 in (2 mm) of material remains at an outer edge.");
     });
-    return { valid: errors.length === 0, errors: [...new Set(errors)], warnings: [...new Set(warnings)], points, diameter: round(diameter) };
+    return { valid: errors.length === 0, errors: [...new Set(errors)], warnings: [...new Set(warnings)], points, cornerHoles, holes, diameter: round(diameter) };
   }
 
   const esc = value => String(value).replace(/[&<>\"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[char]));
@@ -136,8 +190,10 @@
       : `<rect id="outer-boundary" x="0" y="0" width="${s.width}" height="${s.height}"${s.base === "rounded" ? ` rx="${s.radius}" ry="${s.radius}"` : ""}/>`;
     const holes = [];
     if (s.base === "ring") holes.push(`<circle id="ring-inner" cx="${s.width / 2}" cy="${s.height / 2}" r="${s.width / 2 - s.ringWall}"/>`);
-    result.points.forEach((point, index) => holes.push(`<circle id="hole-${String(index + 1).padStart(3, "0")}" cx="${point.x}" cy="${point.y}" r="${result.diameter / 2}"/>`));
-    const guideMarkup = includeGuides ? `<g id="GUIDES" fill="none" stroke="#68818c" stroke-width="0.25" stroke-dasharray="2 2"><path id="guide-centres" d="M 0 ${s.height / 2} H ${s.width} M ${s.width / 2} 0 V ${s.height}"/><rect id="guide-margin" x="${s.edgeMargin}" y="${s.edgeMargin}" width="${Math.max(0, s.width - 2 * s.edgeMargin)}" height="${Math.max(0, s.height - 2 * s.edgeMargin)}"/></g>` : `<g id="GUIDES"/>`;
+    result.holes.forEach(hole => holes.push(`<circle id="${hole.id}" cx="${hole.x}" cy="${hole.y}" r="${hole.diameter / 2}"/>`));
+    const labelSize = round(Math.max(3, Math.min(6, Math.min(s.width, s.height) / 14)));
+    const cornerLabelsMarkup = result.cornerHoles.map(hole => `<text x="${hole.x}" y="${hole.y}" text-anchor="middle" dominant-baseline="central" fill="#174e61" stroke="none" font-family="sans-serif" font-size="${labelSize}" font-weight="700">${hole.label}</text>`).join("");
+    const guideMarkup = includeGuides ? `<g id="GUIDES" fill="none" stroke="#68818c" stroke-width="0.25" stroke-dasharray="2 2"><path id="guide-centres" d="M 0 ${s.height / 2} H ${s.width} M ${s.width / 2} 0 V ${s.height}"/><rect id="guide-margin" x="${s.edgeMargin}" y="${s.edgeMargin}" width="${Math.max(0, s.width - 2 * s.edgeMargin)}" height="${Math.max(0, s.height - 2 * s.edgeMargin)}"/>${cornerLabelsMarkup}</g>` : `<g id="GUIDES"/>`;
     const exportWidth = `${displayNumber(s.width, s.unit)}${s.unit}`;
     const exportHeight = `${displayNumber(s.height, s.unit)}${s.unit}`;
     const metadata = esc(JSON.stringify({ generator: "Technology Commons Fabrication Plate Builder V1", geometryUnits: "mm", displayUnit: s.unit, settings: s, validation: { valid: result.valid, errors: result.errors, warnings: result.warnings } }));
@@ -160,9 +216,11 @@
     if (!host) return;
     let state = decodeState(root.location.search);
     const controls = [...host.querySelectorAll("[data-key]")];
+    const allCornerControls = [...host.querySelectorAll("[data-all-corner]")];
     const unitButtons = [...host.querySelectorAll("[data-unit-button]")];
-    controls.forEach(control => {
-      if (!dimensionalKeys.has(control.dataset.key)) return;
+    [...controls, ...allCornerControls].forEach(control => {
+      const key = control.dataset.key || `cornerA${control.dataset.allCorner}`;
+      if (!dimensionalKeys.has(key)) return;
       if (control.hasAttribute("min")) control.dataset.minMm = control.getAttribute("min");
       if (control.hasAttribute("step")) control.dataset.stepMm = control.getAttribute("step");
     });
@@ -173,6 +231,17 @@
         else state[key] = dimensionalKeys.has(key) ? toMm(control.value, state.unit) : control.value;
       });
       state = normalize(state);
+    };
+    const writeAllCorners = () => {
+      allCornerControls.forEach(control => {
+        const suffix = control.dataset.allCorner;
+        const values = cornerLabels.map(label => state[`corner${label}${suffix}`]);
+        const same = values.every(value => Math.abs(value - values[0]) < 0.0001);
+        control.value = same ? displayNumber(values[0], state.unit) : "";
+        control.placeholder = same ? "" : "Mixed";
+        if (control.dataset.minMm !== undefined) control.min = displayNumber(control.dataset.minMm, state.unit);
+        if (control.dataset.stepMm !== undefined) control.step = displayNumber(control.dataset.stepMm, state.unit);
+      });
     };
     const write = () => {
       controls.forEach(control => {
@@ -186,6 +255,7 @@
       });
       host.querySelectorAll("[data-unit-symbol]").forEach(item => { item.textContent = state.unit; });
       unitButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.unitButton === state.unit)));
+      writeAllCorners();
     };
     const render = (readControls = true) => {
       if (readControls) read();
@@ -195,10 +265,12 @@
       host.querySelectorAll("[data-show-base]").forEach(item => { item.hidden = !item.dataset.showBase.split(/\s+/).includes(state.base); });
       host.querySelectorAll("[data-show-hole-mode]").forEach(item => { item.hidden = item.dataset.showHoleMode !== state.holeMode; });
       host.querySelectorAll("[data-show-pattern]").forEach(item => { item.hidden = !item.dataset.showPattern.split(/\s+/).includes(state.pattern); });
+      host.querySelectorAll("[data-show-corner-holes]").forEach(item => { item.hidden = !state.cornerHoles; });
       const result = validate(state), svg = buildSvg(state, { includeGuides: state.previewGuides });
       host.querySelector("[data-preview]").innerHTML = svg.replace("<svg ", '<svg role="img" aria-label="Generated fabrication plate preview" ');
       host.querySelector("[data-diameter]").textContent = displayMeasurement(result.diameter, state.unit);
-      host.querySelector("[data-count]").textContent = String(result.points.length);
+      host.querySelector("[data-count]").textContent = String(result.holes.length);
+      host.querySelector("[data-corner-count]").textContent = state.cornerHoles ? "4 (A-D)" : "Off";
       host.querySelector("[data-units]").textContent = state.unit === "in" ? "inches (in)" : "millimetres (mm)";
       const status = host.querySelector("[data-status]");
       status.className = `plate-status ${result.valid ? "is-valid" : "is-error"}`;
@@ -206,6 +278,7 @@
         ? `<strong>Ready to export.</strong>${result.warnings.map(item => `<span>${esc(item)}</span>`).join("")}`
         : `<strong>Fix before export.</strong>${result.errors.map(item => `<span>${esc(item)}</span>`).join("")}`;
       host.querySelector("[data-download]").disabled = !result.valid;
+      writeAllCorners();
       root.history.replaceState(null, "", `${root.location.pathname}${encodeState(state) ? "?" + encodeState(state) : ""}${root.location.hash}`);
     };
     const download = (text, filename, type) => {
@@ -214,6 +287,13 @@
       doc.body.appendChild(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(link.href), 1000);
     };
     controls.forEach(control => control.addEventListener("input", render));
+    allCornerControls.forEach(control => control.addEventListener("change", () => {
+      if (control.value === "") return;
+      const suffix = control.dataset.allCorner;
+      const value = toMm(control.value, state.unit);
+      cornerLabels.forEach(label => { state[`corner${label}${suffix}`] = value; });
+      state = normalize(state); write(); render(false);
+    }));
     unitButtons.forEach(button => button.addEventListener("click", () => { state.unit = button.dataset.unitButton; write(); render(false); }));
     host.querySelector("[data-preset]").addEventListener("change", event => { state = normalize({ ...defaults, ...(presets[event.target.value] || {}), unit: state.unit }); write(); render(false); });
     host.querySelector("[data-reset]").addEventListener("click", () => { state = normalize({ ...defaults, unit: state.unit }); write(); render(false); });
@@ -224,5 +304,5 @@
   }
 
   if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", () => init(document));
-  return { defaults, presets, normalize, toMm, fromMm, displayMeasurement, effectiveHoleDiameter, patternPoints, validate, buildSvg, encodeState, decodeState };
+  return { defaults, presets, normalize, toMm, fromMm, displayMeasurement, effectiveHoleDiameter, patternPoints, cornerHoleSpecs, validate, buildSvg, encodeState, decodeState };
 });

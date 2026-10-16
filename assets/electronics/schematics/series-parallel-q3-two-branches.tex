@@ -1,0 +1,23 @@
+\documentclass[border=10pt]{standalone}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[europeanresistors,americanvoltages]{circuitikz}
+\definecolor{TechCharcoal}{HTML}{202124}
+\definecolor{TechBlue}{HTML}{1769AA}
+\begin{document}
+\begin{circuitikz}[line width=1.15pt,draw=TechCharcoal,text=TechCharcoal]
+  \ctikzset{bipoles/length=1.2cm}
+  \draw (0,0) to[battery1,l_={\(V_T=24.0\,\mathrm{V}\)}] (0,4)
+        -- (1,4) node[circ,label=above:{Node A}] {}
+        to[R,l={\(R_1=1.0\,\mathrm{k\Omega}\)}] (4.2,4)
+        to[R,l={\(R_2=3.0\,\mathrm{k\Omega}\)}] (7.4,4)
+        -- (8.4,4) node[circ,label=above:{Node B}] {}
+        -- (8.4,0) -- (0,0);
+  \draw (1,4) -- (1,1.6)
+        to[R,l_={\(R_3=2.0\,\mathrm{k\Omega}\)}] (4.2,1.6)
+        to[R,l_={\(R_4=4.0\,\mathrm{k\Omega}\)}] (7.4,1.6)
+        -- (8.4,1.6);
+  \draw[->,TechBlue,thick] (1.5,5.15) -- (2.7,5.15) node[midway,above,text=TechBlue]{\(I_A\)};
+  \draw[->,TechBlue,thick] (1.5,2.35) -- (2.7,2.35) node[midway,above,text=TechBlue]{\(I_B\)};
+\end{circuitikz}
+\end{document}
