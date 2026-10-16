@@ -170,7 +170,12 @@ class DesignFabricationTests(unittest.TestCase):
         hub = self.read("design-fabrication/cad-parametric-modeling/index.qmd")
         for concept in ("sketch", "size", "extrude", "assemble", "draw"):
             self.assertIn(concept, cad.lower())
-        self.assertEqual(cad.count("<iframe"), 4)
+        self.assertEqual(cad.count("<iframe"), 1)
+        self.assertEqual(design.count("<iframe"), 4)
+        level_4_start = design.index("## Level 4: original or complex holder")
+        for video_id in ("bWrPhTa8s-w", "yl0L4jj4adk", "1-SRLHCQ9tA"):
+            self.assertLess(design.index(video_id), level_4_start)
+        self.assertGreater(design.index("sn3I_HFqoQI"), level_4_start)
         for tool in (
             "hand saw",
             "scroll saw",
@@ -188,7 +193,7 @@ class DesignFabricationTests(unittest.TestCase):
             "level 4: original or complex holder",
             "this is **level 4**",
             "westdale",
-            "giraffe video",
+            "level 4 video",
         ):
             self.assertIn(phrase, design.lower())
         for image in (
@@ -206,6 +211,21 @@ class DesignFabricationTests(unittest.TestCase):
             "professional experience and judgement",
         ):
             self.assertIn(phrase, tools.lower())
+        for photo in (
+            "combination-square-in-use.jpg",
+            "bandsaw-in-use.jpg",
+            "scroll-saw-in-use.jpg",
+            "drill-press.jpg",
+            "coping-saw.jpg",
+            "belt-disc-sander.jpg",
+            "spindle-sander.jpg",
+            "orbital-sander.jpg",
+            "hand-sanding.jpg",
+        ):
+            self.assertIn(photo, tools)
+        self.assertIn("Photo credits", tools)
+        self.assertIn("combination-square-in-use.jpg", page)
+        self.assertIn("basic-phone-holder.jpg", page)
         for step in ("1. Lay out", "2. Cut the parts", "3. Drill the opening", "4. Cut the slots", "5. Shape the edges", "6. Finish sand", "7. Fit and finish"):
             self.assertIn(step, page)
         for link in ("phone-holder-design.qmd", "introduction-to-cad.qmd", "tools-machines.qmd", "phone-holder.qmd"):

@@ -1,6 +1,6 @@
 ---
 title: "Tools and Machines"
-description: "See what each possible tool does in the phone-holder project."
+description: "See the real tools and what each one does in the phone-holder project."
 sidebar: design-fabrication
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson phone-holder-project"
 toc: true
@@ -16,55 +16,80 @@ This website does not contain safety information. Use your board rules, training
 
 Your teacher will choose the tools for your shop.
 
-::: {.phone-tool-grid}
-::: {.phone-tool-card}
-![](../../assets/phone-holder/01-layout.svg){fig-alt="A ruler and square mark the size and cut lines on the wood."}
+## Measure and mark
 
-### Ruler and square
-
-Measure and mark the parts.
+::: {.phone-machine-section}
+::: {.phone-machine-visual}
+<figure><img src="../../assets/phone-holder/tools/combination-square-in-use.jpg" alt="A combination square marking a line on wood."><figcaption>Ruler and square</figcaption></figure>
+<figure><img src="../../assets/phone-holder/westdale/original-plan.png" alt="The measured plan for the two phone-holder parts."><figcaption>Mark these shapes</figcaption></figure>
 :::
 
-::: {.phone-tool-card}
-![](../../assets/phone-holder/02-cut.svg){fig-alt="A hand saw, scroll saw, and band saw can cut the outside shape."}
-
-### Hand saw, scroll saw, or band saw
-
-Cut the stock and outside shape.
+A ruler and square copy the sizes from the plan to the wood.
 :::
 
-::: {.phone-tool-card}
-![](../../assets/phone-holder/03-drill.svg){fig-alt="A drill press makes the large round start of an opening."}
+## Cut the outside
 
-### Drill press
-
-Make a round opening at a marked point.
+::: {.phone-machine-section}
+::: {.phone-machine-visual}
+<figure><img src="../../assets/phone-holder/tools/bandsaw-in-use.jpg" alt="A person cutting wood on a band saw."><figcaption>Band saw</figcaption></figure>
+<figure><img src="../../assets/phone-holder/tools/scroll-saw-in-use.jpg" alt="A scroll saw cutting a small wood shape."><figcaption>Scroll saw</figcaption></figure>
+<figure><img src="../../assets/phone-holder/westdale/two-parts.jpg" alt="Two phone-holder parts cut from sheet wood."><figcaption>Cut parts</figcaption></figure>
 :::
 
-::: {.phone-tool-card}
-![](../../assets/phone-holder/04-notch.svg){fig-alt="A coping saw or scroll saw cuts the slots that join the parts."}
-
-### Coping saw or scroll saw
-
-Cut the slots that join the parts.
+A hand saw, scroll saw, or band saw cuts the parts and outside shape.
 :::
 
-::: {.phone-tool-card}
-![](../../assets/phone-holder/05-edge-sander.svg){fig-alt="An edge or belt sander smooths an outside edge."}
+## Drill an opening
 
-### Edge sander or belt sander
-
-Shape and smooth outside edges.
+::: {.phone-machine-section}
+::: {.phone-machine-visual}
+<figure><img src="../../assets/phone-holder/tools/drill-press.jpg" alt="A drill press in a workshop."><figcaption>Drill press</figcaption></figure>
+<figure><img src="../../assets/phone-holder/westdale/original-plan.png" alt="A phone-holder plan with openings marked on the parts."><figcaption>Start at the marked point</figcaption></figure>
 :::
 
-::: {.phone-tool-card}
-![](../../assets/phone-holder/06-finish-sanding.svg){fig-alt="Hand sanding, an orbital sander, and an oscillating spindle sander finish surfaces and curves."}
-
-### Finish sanding
-
-Use hand sanding, a drum sander, an orbital sander, or an oscillating sander as directed.
+The drill press starts a round opening at the marked point.
 :::
+
+## Cut the slots
+
+::: {.phone-machine-section}
+::: {.phone-machine-visual}
+<figure><img src="../../assets/phone-holder/tools/coping-saw.jpg" alt="A coping saw resting on marked plywood."><figcaption>Coping saw</figcaption></figure>
+<figure><img src="../../assets/phone-holder/tools/scroll-saw-in-use.jpg" alt="A scroll saw cutting a small wood shape."><figcaption>Scroll saw</figcaption></figure>
+<figure><img src="../../assets/phone-holder/westdale/two-parts.jpg" alt="Two phone-holder parts with narrow joining slots."><figcaption>Slots join the parts</figcaption></figure>
 :::
+
+The narrow blade cuts the slots that join the two parts.
+:::
+
+## Shape and finish
+
+::: {.phone-machine-section}
+::: {.phone-machine-visual .is-four}
+<figure><img src="../../assets/phone-holder/tools/belt-disc-sander.jpg" alt="A workshop belt and disc sander."><figcaption>Edge sander or belt sander: outside edges</figcaption></figure>
+<figure><img src="../../assets/phone-holder/tools/spindle-sander.jpg" alt="A person using a spindle sander on a wood part."><figcaption>Oscillating sander or drum sander: inside curves</figcaption></figure>
+<figure><img src="../../assets/phone-holder/tools/orbital-sander.jpg" alt="A random orbital sander."><figcaption>Orbital sander: flat faces</figcaption></figure>
+<figure><img src="../../assets/phone-holder/tools/hand-sanding.jpg" alt="A hand sanding a small piece of wood."><figcaption>By hand: small details</figcaption></figure>
+:::
+
+Sand the faces, outside edges, and inside curves until they are smooth.
+
+![Painted Kermit and Bob Ross phone holders made from shaped and sanded parts.](../../assets/phone-holder/westdale/kermit-bob-ross.jpg){.phone-result-photo}
+:::
+
+<details class="phone-credits">
+<summary>Photo credits</summary>
+
+- Combination square: [Limarie Cabrera, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Combination_square_in_use.jpg)
+- Band saw: [U.S. Navy, public domain](https://commons.wikimedia.org/wiki/File:US_Navy_100104-N-1688B-018_Hull_Technician_3rd_Class_Elijah_Coe_uses_a_band_saw_to_cut_out_wooden_plaques.jpg)
+- Scroll saw: [Agashi5859, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Scroll_saw.jpg)
+- Coping saw: [Dale Simonson, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Coping_Saw.jpg)
+- Drill press: [LHOON, CC BY-SA 2.5](https://commons.wikimedia.org/wiki/File:Drillpress.jpg)
+- Belt and disc sander: [Chris.sherlock, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Belt_and_circular_sander.jpg)
+- Orbital sander: [Dave Pape, public domain](https://commons.wikimedia.org/wiki/File:Random_orbit_sander.jpg)
+- Spindle sander: [Lewis Hine / U.S. National Archives, public domain](https://commons.wikimedia.org/wiki/File:High_Point,_North_Carolina_-_Upholstering._Tomlinson_Chair_Manufacturing_Co._Spindle_sander_-_chair_leg_-_showing_man..._-_NARA_-_518496.jpg)
+- Hand sanding: [Nenad Stojković, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Close-up_of_a_carpenters_hand_sandpapering_the_wood.jpg)
+
+</details>
 
 Next: [build the phone holder](phone-holder.qmd).
-

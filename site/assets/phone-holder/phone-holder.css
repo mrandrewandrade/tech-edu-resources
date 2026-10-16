@@ -6,11 +6,19 @@
 .phone-video-grid,
 .phone-photo-grid,
 .phone-image-grid,
+.phone-video-stack,
+.phone-machine-visual,
+.phone-step-visual,
 .phone-step-strip {
   display: grid;
   gap: 1rem;
   width: 100%;
   min-width: 0;
+}
+
+.phone-video-stack {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .phone-project-map,
@@ -36,6 +44,80 @@
 .phone-image-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
+}
+
+.phone-machine-section {
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  border: 1px solid var(--bs-border-color, #d8d4ca);
+  border-radius: 0.9rem;
+  background: var(--bs-body-bg, #fff);
+  box-shadow: 0 0.2rem 0.8rem rgba(26, 39, 55, 0.07);
+}
+
+.phone-machine-section > :last-child {
+  margin-bottom: 0;
+}
+
+.phone-machine-visual,
+.phone-step-visual {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.phone-machine-visual figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--bs-border-color, #d8d4ca);
+  border-radius: 0.7rem;
+  background: #f7f4ed;
+}
+
+.phone-machine-visual img,
+.phone-step-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.65rem;
+}
+
+.phone-machine-visual figcaption {
+  padding: 0.55rem 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.phone-step-visual > p {
+  margin: 0;
+}
+
+.phone-step-visual img {
+  border: 1px solid var(--bs-border-color, #d8d4ca);
+  background: #f7f4ed;
+}
+
+.phone-result-photo,
+.phone-final-photo {
+  display: block;
+  width: min(100%, 46rem);
+  max-height: 32rem;
+  margin: 1rem auto 0;
+  object-fit: contain;
+  border-radius: 0.75rem;
+}
+
+.phone-credits {
+  margin: 1.5rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--bs-border-color, #d8d4ca);
+  border-radius: 0.65rem;
+}
+
+.phone-credits summary {
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .phone-project-card,
@@ -198,6 +280,8 @@
   .phone-step-grid,
   .phone-photo-grid,
   .phone-image-grid,
+  .phone-machine-visual,
+  .phone-step-visual,
   .phone-step-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -212,6 +296,8 @@
   .phone-video-grid,
   .phone-photo-grid,
   .phone-image-grid,
+  .phone-machine-visual,
+  .phone-step-visual,
   .phone-step-strip {
     grid-template-columns: 1fr;
   }
