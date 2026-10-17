@@ -29,6 +29,7 @@ You will identify parallel branches and calculate equivalent resistance, source 
 - [Make a copy of the six-question student problem set](https://docs.google.com/document/d/1PIFENbdpPcvp-gOeiFf4zIRl6Lw0TqHrUbFwf6pbE-I/copy)
 - [Student worked models for Questions 2 and 4](https://docs.google.com/document/d/1W-SnG4eF0N2PR0vZ3hV8-P-0mhAmmZ-LaEedMVeLZpw/edit)
 - [Series-circuit notes](series-circuits.qmd)
+- [Sigma notation LaTeX source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/sigma-notation/sigma-notation.tex)
 
 **Core references**
 
@@ -90,6 +91,26 @@ $$
 P_T = \sum_{k=1}^{n}P_k = V_T I_T
 $$ {#eq-parallel-power}
 
+### How sigma notation works
+
+$$
+I_T=\sum_{k=1}^{n}I_k=I_1+I_2+\cdots+I_n
+$$ {#eq-parallel-sigma-current}
+
+$$
+\frac{1}{R_T}=\sum_{k=1}^{n}\frac{1}{R_k}
+=\frac{1}{R_1}+\frac{1}{R_2}+\cdots+\frac{1}{R_n}
+$$ {#eq-parallel-sigma-resistance}
+
+| Symbol | Meaning |
+|---|---|
+| $R_T$ or $R_{eq}$ | total or equivalent resistance |
+| $R_k$ or $I_k$ | the value at position $k$ |
+| $k$ | the index variable; it changes through $1,2,3,\ldots,n$ |
+| $n$ | the fixed last index; the sum stops here |
+
+$\Sigma$ means add each term while $k$ runs from $1$ to $n$. The final expanded term uses $n$.
+
 ## Check the answer
 
 $$
@@ -101,3 +122,4 @@ Equation @eq-parallel-current-check checks the branch currents. The equivalent r
 Question 1 in the review problem set is the parallel review. Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20parallel%20and%20series%20answer%20key).
 
 These notes follow *Grob's Basic Electronics*, Chapter 5. [[1, Ch. 5]](../../references.qmd#ref-grob2016)
+
