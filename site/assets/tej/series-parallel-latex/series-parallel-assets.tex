@@ -1,6 +1,6 @@
 \documentclass[10pt]{article}
 \usepackage[paperwidth=12in,paperheight=4.8in,margin=0.24in]{geometry}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,amssymb,array}
 \usepackage{xcolor}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
@@ -8,6 +8,10 @@
 \renewcommand{\familydefault}{\sfdefault}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayshortskip}{2pt}
 \definecolor{Navy}{HTML}{17234D}
 \definecolor{Blue}{HTML}{087EBA}
 \definecolor{Green}{HTML}{147D52}
@@ -15,6 +19,8 @@
 
 \newcommand{\unit}[1]{\,\mathrm{#1}}
 \newcommand{\sectionlabel}[1]{{\color{Navy}\bfseries\small #1}\par\vspace{0.10in}}
+\newcommand{\solvestep}[1]{{\color{Navy}\bfseries\normalsize #1}\par\vspace{0.03in}}
+\newcommand{\finalanswer}[1]{\underline{\mathbf{#1}}}
 
 \input{series-parallel-circuits.tex}
 
@@ -56,22 +62,47 @@
 
 % Page 2: guided example substitution, solution, and checks
 \thispagestyle{empty}
-\sectionlabel{SUBSTITUTE AND SOLVE}
+\solvestep{1 | EQUIVALENT RESISTANCE}
 {\Large
 \begin{align*}
-R_{23}&=\frac{(2.0\unit{k\Omega})(2.0\unit{k\Omega})}{2.0\unit{k\Omega}+2.0\unit{k\Omega}}=1.0\unit{k\Omega}\\[0.10in]
-R_T&=R_1+R_{23}=1.0\unit{k\Omega}+1.0\unit{k\Omega}=2.0\unit{k\Omega}\\[0.10in]
-I_T&=\frac{V_T}{R_T}=\frac{10.0\unit{V}}{2.0\unit{k\Omega}}=5.0\unit{mA}\\[0.10in]
-V_1&=I_TR_1=(5.0\unit{mA})(1.0\unit{k\Omega})=5.0\unit{V}\\[0.10in]
-V_{23}&=V_T-V_1=10.0\unit{V}-5.0\unit{V}=5.0\unit{V}\\[0.10in]
-I_2=I_3&=\frac{V_{23}}{2.0\unit{k\Omega}}=2.5\unit{mA}
+R_{23}&=\frac{R_2R_3}{R_2+R_3}
+=\frac{(2.0\unit{k\Omega})(2.0\unit{k\Omega})}{2.0\unit{k\Omega}+2.0\unit{k\Omega}}
+=1.0\unit{k\Omega}\\[0.06in]
+R_T&=R_1+R_{23}=1.0\unit{k\Omega}+1.0\unit{k\Omega}=2.0\unit{k\Omega}
 \end{align*}}
-\vspace{0.05in}
-{\color{Green}\Large\bfseries
+\begin{minipage}[t]{0.48\textwidth}
+\solvestep{2 | CURRENT AND VOLTAGES}
+{\Large
 \begin{align*}
-V_1+V_{23}&=5.0\unit{V}+5.0\unit{V}=10.0\unit{V}=V_T\quad\checkmark\\
-I_2+I_3&=2.5\unit{mA}+2.5\unit{mA}=5.0\unit{mA}=I_T\quad\checkmark
+I_T&=\frac{V_T}{R_T}=\frac{10.0\unit{V}}{2.0\unit{k\Omega}}=5.0\unit{mA}\\[0.05in]
+V_1&=I_TR_1=(5.0\unit{mA})(1.0\unit{k\Omega})=5.0\unit{V}\\[0.05in]
+V_{23}&=V_T-V_1=10.0\unit{V}-5.0\unit{V}=5.0\unit{V}
 \end{align*}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\solvestep{3 | BRANCH CURRENTS AND CHECKS}
+{\Large
+\begin{align*}
+I_2=I_3&=\frac{V_{23}}{R_2}=\frac{5.0\unit{V}}{2.0\unit{k\Omega}}=2.5\unit{mA}
+\end{align*}}
+{\large\bfseries
+\begin{align*}
+V_1+V_{23}&=5.0\unit{V}+5.0\unit{V}=10.0\unit{V}\quad\checkmark\\
+I_2+I_3&=2.5\unit{mA}+2.5\unit{mA}=5.0\unit{mA}\quad\checkmark
+\end{align*}}
+\end{minipage}\par
+\vspace{0.03in}
+\solvestep{FINAL ANSWERS}
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+{\large\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$R_{23}$ & $\finalanswer{1.0\unit{k\Omega}}$ & $R_T$ & $\finalanswer{2.0\unit{k\Omega}}$ & $I_T$ & $\finalanswer{5.0\unit{mA}}$ \\
+\hline
+$V_1$ & $\finalanswer{5.0\unit{V}}$ & $V_{23}$ & $\finalanswer{5.0\unit{V}}$ & $I_2=I_3$ & $\finalanswer{2.5\unit{mA}}$ \\
+\hline
+\end{tabular}}
+\end{center}
 \clearpage
 
 % Page 3: Question 2 equations
@@ -85,23 +116,49 @@ I_2+I_3&=2.5\unit{mA}+2.5\unit{mA}=5.0\unit{mA}=I_T\quad\checkmark
 
 % Page 4: Question 2 substitution, solution, and checks
 \thispagestyle{empty}
-\sectionlabel{SUBSTITUTE AND SOLVE}
+\solvestep{1 | EQUIVALENT RESISTANCE}
 {\Large
 \begin{align*}
-R_{23}&=\frac{(6.0\unit{k\Omega})(3.0\unit{k\Omega})}{6.0\unit{k\Omega}+3.0\unit{k\Omega}}=2.0\unit{k\Omega}\\[0.09in]
-R_T&=3.0\unit{k\Omega}+2.0\unit{k\Omega}=5.0\unit{k\Omega}\\[0.09in]
-I_T&=\frac{18.0\unit{V}}{5.0\unit{k\Omega}}=3.60\unit{mA}\\[0.09in]
-V_1&=(3.60\unit{mA})(3.0\unit{k\Omega})=10.8\unit{V}\\[0.09in]
-V_{23}&=18.0\unit{V}-10.8\unit{V}=7.2\unit{V}\\[0.09in]
-I_2&=\frac{7.2\unit{V}}{6.0\unit{k\Omega}}=1.20\unit{mA}\qquad
-I_3=\frac{7.2\unit{V}}{3.0\unit{k\Omega}}=2.40\unit{mA}\\[0.09in]
-P_T&=(18.0\unit{V})(3.60\unit{mA})=64.8\unit{mW}
+R_{23}&=\frac{R_2R_3}{R_2+R_3}
+=\frac{(6.0\unit{k\Omega})(3.0\unit{k\Omega})}{6.0\unit{k\Omega}+3.0\unit{k\Omega}}
+=2.0\unit{k\Omega}\\[0.06in]
+R_T&=R_1+R_{23}=3.0\unit{k\Omega}+2.0\unit{k\Omega}=5.0\unit{k\Omega}
 \end{align*}}
-{\color{Green}\Large\bfseries
+\begin{minipage}[t]{0.48\textwidth}
+\solvestep{2 | TOTAL CURRENT AND POWER}
+{\large
 \begin{align*}
-10.8\unit{V}+7.2\unit{V}&=18.0\unit{V}\quad\checkmark &
-1.20\unit{mA}+2.40\unit{mA}&=3.60\unit{mA}\quad\checkmark
+I_T&=\frac{V_T}{R_T}=\frac{18.0\unit{V}}{5.0\unit{k\Omega}}=3.60\unit{mA}\\[0.05in]
+P_T&=V_TI_T=(18.0\unit{V})(3.60\unit{mA})=64.8\unit{mW}
 \end{align*}}
+\solvestep{3 | SECTION VOLTAGES}
+{\large
+\begin{align*}
+V_1&=I_TR_1=(3.60\unit{mA})(3.0\unit{k\Omega})=10.8\unit{V}\\[0.05in]
+V_{23}&=V_T-V_1=18.0\unit{V}-10.8\unit{V}=7.2\unit{V}
+\end{align*}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\solvestep{4 | BRANCH CURRENTS}
+{\large
+\begin{align*}
+I_2&=\frac{V_{23}}{R_2}=\frac{7.2\unit{V}}{6.0\unit{k\Omega}}=1.20\unit{mA}\\[0.05in]
+I_3&=\frac{V_{23}}{R_3}=\frac{7.2\unit{V}}{3.0\unit{k\Omega}}=2.40\unit{mA}
+\end{align*}}
+\end{minipage}\par
+\vspace{-0.06in}
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+{\small\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$R_{23}$ & $\finalanswer{2.0\unit{k\Omega}}$ & $R_T$ & $\finalanswer{5.0\unit{k\Omega}}$ & $I_T$ & $\finalanswer{3.60\unit{mA}}$ & $P_T$ & $\finalanswer{64.8\unit{mW}}$ \\
+\hline
+$V_1$ & $\finalanswer{10.8\unit{V}}$ & $V_{23}$ & $\finalanswer{7.2\unit{V}}$ & $I_2$ & $\finalanswer{1.20\unit{mA}}$ & $I_3$ & $\finalanswer{2.40\unit{mA}}$ \\
+\hline
+\multicolumn{8}{|c|}{\bfseries Checks: $10.8\unit{V}+7.2\unit{V}=18.0\unit{V}\ \checkmark$\qquad $1.20\unit{mA}+2.40\unit{mA}=3.60\unit{mA}\ \checkmark$} \\
+\hline
+\end{tabular}}
+\end{center}
 \clearpage
 
 % Page 5: Question 4 equations
@@ -115,20 +172,49 @@ P_T&=(18.0\unit{V})(3.60\unit{mA})=64.8\unit{mW}
 
 % Page 6: Question 4 substitution, solution, and checks
 \thispagestyle{empty}
-\sectionlabel{SUBSTITUTE AND SOLVE}
-{\Large
+\begin{minipage}[t]{0.48\textwidth}
+\solvestep{1 | SECTION VOLTAGES}
+{\LARGE
 \begin{align*}
-V_1&=(10.0\unit{mA})(1.2\unit{k\Omega})=12.0\unit{V}\\[0.09in]
-V_{23}&=20.0\unit{V}-12.0\unit{V}=8.0\unit{V}\\[0.09in]
-I_2&=\frac{8.0\unit{V}}{2.4\unit{k\Omega}}=3.33\unit{mA}\\[0.09in]
-I_3&=10.0\unit{mA}-3.33\unit{mA}=6.67\unit{mA}\\[0.09in]
-R_3&=\frac{8.0\unit{V}}{6.67\unit{mA}}\approx1.20\unit{k\Omega}\\[0.09in]
-R_T&=\frac{20.0\unit{V}}{10.0\unit{mA}}=2.00\unit{k\Omega}
+V_1&=I_TR_1=(10.0\unit{mA})(1.2\unit{k\Omega})=12.0\unit{V}\\[0.07in]
+V_{23}&=V_T-V_1=20.0\unit{V}-12.0\unit{V}=8.0\unit{V}
 \end{align*}}
-{\color{Green}\Large\bfseries
+\solvestep{2 | BRANCH CURRENTS}
+{\LARGE
 \begin{align*}
-3.33\unit{mA}+6.67\unit{mA}=10.0\unit{mA}=I_T\quad\checkmark
+I_2&=\frac{V_{23}}{R_2}=\frac{8.0\unit{V}}{2.4\unit{k\Omega}}=3.33\unit{mA}\\[0.07in]
+I_3&=I_T-I_2=10.0\unit{mA}-3.33\unit{mA}=6.67\unit{mA}
 \end{align*}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\solvestep{3 | UNKNOWN RESISTOR}
+{\LARGE
+\begin{align*}
+R_3&=\frac{V_{23}}{I_3}=\frac{8.0\unit{V}}{6.67\unit{mA}}\approx1.20\unit{k\Omega}
+\end{align*}}
+\solvestep{4 | TOTAL RESISTANCE}
+{\LARGE
+\begin{align*}
+R_T&=\frac{V_T}{I_T}=\frac{20.0\unit{V}}{10.0\unit{mA}}=2.00\unit{k\Omega}
+\end{align*}}
+\solvestep{CHECK}
+{\large\bfseries
+\begin{align*}
+I_2+I_3&=3.33\unit{mA}+6.67\unit{mA}=10.0\unit{mA}\quad\checkmark
+\end{align*}}
+\end{minipage}\par
+\vspace{0.06in}
+\solvestep{FINAL ANSWERS}
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+{\large\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$V_1$ & $\finalanswer{12.0\unit{V}}$ & $V_{23}$ & $\finalanswer{8.0\unit{V}}$ & $I_2$ & $\finalanswer{3.33\unit{mA}}$ \\
+\hline
+$I_3$ & $\finalanswer{6.67\unit{mA}}$ & $R_3$ & $\finalanswer{1.20\unit{k\Omega}}$ & $R_T$ & $\finalanswer{2.00\unit{k\Omega}}$ \\
+\hline
+\end{tabular}}
+\end{center}
 
 \clearpage
 % Page 7: series and parallel rule overview
