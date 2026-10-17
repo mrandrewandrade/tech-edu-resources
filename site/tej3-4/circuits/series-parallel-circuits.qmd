@@ -21,6 +21,7 @@ You will identify series and parallel groups, reduce a mixed circuit one group a
 - [TEJ Electronics Quick Reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
 - [General Schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/copy)
 - [LaTeX equations and worked solutions](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/series-parallel-latex/series-parallel-assets.tex)
+- [Sigma notation LaTeX source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/sigma-notation/sigma-notation.tex)
 - [TikZ circuit diagram source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/series-parallel-latex/series-parallel-circuits.tex)
 - [Asset build script](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/series-parallel-latex/render-assets.ps1)
 - **Teacher answer key:** restricted
@@ -94,6 +95,25 @@ $$ {#eq-mixed-ohms-law}
 $$
 P_k=V_kI_k=I_k^2R_k=\frac{V_k^2}{R_k}
 $$ {#eq-mixed-power}
+
+### How sigma notation works
+
+$$
+R_T=R_{eq}=\sum_{k=1}^{n}R_k=R_1+R_2+\cdots+R_n
+$$ {#eq-mixed-sigma-resistance}
+
+$$
+V_T=\sum_{k=1}^{n}V_k=V_1+V_2+\cdots+V_n
+$$ {#eq-mixed-sigma-voltage}
+
+| Symbol | Meaning |
+|---|---|
+| $R_T$ or $R_{eq}$ | total or equivalent resistance |
+| $R_k$ or $V_k$ | the value at position $k$ |
+| $k$ | the index variable; it changes through $1,2,3,\ldots,n$ |
+| $n$ | the fixed last index; the sum stops here |
+
+$\Sigma$ means add each term while $k$ runs from $1$ to $n$. The final expanded term is $R_n$ or $V_n$.
 
 ## Reduce, solve, expand, and check
 
