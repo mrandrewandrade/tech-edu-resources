@@ -60,12 +60,27 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/design-fabrication/hand-tools/phone-holder.html",
             ],
         )
-        self.assertEqual(len(routes_by_course["tej"]), 17)
+        self.assertEqual(len(routes_by_course["tej"]), 22)
         self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/circuits/parallel-circuits.html")
         self.assertEqual(routes_by_course["tej"][1], "/commons/tej3-4/circuits/series-circuits.html")
         self.assertEqual(
-            routes_by_course["tej"][-1],
+            routes_by_course["tej"][5:7],
+            [
+                "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
+                "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
+            ],
+        )
+        self.assertEqual(
+            routes_by_course["tej"][18],
             "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
+        )
+        self.assertEqual(
+            routes_by_course["tej"][-3:],
+            [
+                "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
+                "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
+                "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
+            ],
         )
         self.assertFalse(any("submission" in route for route in routes_by_course["tej"]))
 
@@ -78,7 +93,19 @@ class CourseNotesManifestTests(unittest.TestCase):
             self.assertIsNone(course_lessons[-1]["next_route"])
         all_routes = {lesson["route"] for lesson in self.lessons}
         self.assertFalse(any("identity-listening" in route for route in all_routes))
-        self.assertFalse(any(route.endswith("/index.html") for route in all_routes))
+        directory_index_routes = {
+            route for route in all_routes if route.endswith("/index.html")
+        }
+        self.assertEqual(
+            directory_index_routes,
+            {
+                "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
+                "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
+                "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
+                "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
+                "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
+            },
+        )
 
     def test_cross_course_link_fails_validation(self) -> None:
         broken = copy.deepcopy(self.manifest)
