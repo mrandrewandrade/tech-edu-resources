@@ -501,6 +501,46 @@ Submit **ONE completed Google Doc** with all four reflection answers and at leas
 - **Linux Mint or Ubuntu:** Press **Ctrl + Alt + T**, or open Terminal from the application menu.
 - **Mac:** Press **Command + Space**, search for **Terminal**, and press **Return**.
 
+#### Use a phone or tablet
+
+You can also play Bashcrawl on a phone or tablet if you have access to one.
+
+- **Android:** Install [Termux from F-Droid](https://f-droid.org/packages/com.termux/). Open Termux, then run these commands one at a time:
+
+**INPUT**
+
+```bash
+pkg update
+```
+
+**INPUT**
+
+```bash
+pkg install git
+```
+
+- **iPhone or iPad:** Install [iSH Shell](https://apps.apple.com/app/ish-shell/id1436902243). Open iSH, then run these commands one at a time:
+
+**INPUT**
+
+```bash
+apk update
+```
+
+**INPUT**
+
+```bash
+apk add bash git
+```
+
+**INPUT**
+
+```bash
+bash
+```
+
+After setup, continue with the same Bashcrawl commands below. A computer is more comfortable, but Android and iPhone both work. A Bluetooth keyboard makes the experience much better. 📱💻
+
 **INPUT**
 
 ```bash
