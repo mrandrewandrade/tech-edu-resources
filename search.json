@@ -638,6 +638,137 @@
     ]
   },
   {
+    "objectID": "tej3-4/networking/index.html",
+    "href": "tej3-4/networking/index.html",
+    "title": "12. Networking and Systems",
+    "section": "",
+    "text": "Follow the path, choose the cable, then build and test it.\n\n\n\n\n\nA home local-area network with wired and wireless devices.\n\n\n\n1. Wi-Fi, Ethernet, switch, router\nTrace the path to the Internet\n\n\n\n\n\n\nNumbered contacts on an 8P8C plug commonly called RJ45.\n\n\n\n2. Cable categories\nCompare Cat5e, Cat6, Cat6A, and Cat8\n\n\n\n\n\n\nAn Ethernet cable being prepared for an 8P8C plug.\n\n\n\n3. Build and test\nFollow the complete classroom T568B procedure\n\n\n\n\n\n\n\n\n\nNoteClassroom network\n\n\n\nComputers connect to the class switch. One switch port connects the classroom to the school network. Students do not reset or reconfigure shared network equipment.",
+    "crumbs": [
+      "Glossary",
+      "8. Networking"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/ethernet-cable-categories/index.html",
+    "href": "tej3-4/networking/ethernet-cable-categories/index.html",
+    "title": "Ethernet Cable Categories and Speeds",
+    "section": "",
+    "text": "The category printed on the cable describes tested cabling performance. The slowest port, cable path, or device sets the link speed.\n\n\n\n\n\nNumbered contacts on an 8P8C modular plug.\n\n\n\n8P8C, often called RJ45\nEight positions and eight contacts. Keep the pairs twisted close to the plug. Do not judge cable category by colour.\nFigure 1. Open source and licence.\n\n\n\n\n\n\nClose view of a twisted-pair Ethernet cable and modular plug.\n\n\n\nRead the jacket\nLook for the category, conductor type, and certification printed along the cable jacket.\nFigure 2. Open source and licence.\n\n\n\n\n\nCat5e1 Gbps to 100 m. 2.5 or 5 Gbps may work when the equipment and cable meet the standard.\n\n\nCat61 Gbps to 100 m. 10 Gbps on shorter runs, commonly up to 55 m in suitable conditions.\n\n\nCat6A10 Gbps to 100 m. Thicker and often less flexible.\n\n\nCat825 or 40 Gbps to 30 m. Mainly data centres, not a normal classroom patch cable.\n\n\n\n\n\n\n\n\nNoteWhat about Cat7?\n\n\n\nCat7 appears in retail listings, but it is not the normal ANSI/TIA category choice for a standard RJ45 classroom cable. Prefer a correctly made Cat6 or Cat6A cable for a known requirement.\n\n\nClass choice: use the cable and plug specified by the teacher. Match the plug to solid or stranded conductors and to the cable diameter.\nNext: build and test a T568B cable",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "2. Ethernet Cable Categories and Speeds"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/usb-and-cable-management/index.html",
+    "href": "tej3-4/computer-systems/usb-and-cable-management/index.html",
+    "title": "USB, Peripherals, and Cable Management",
+    "section": "",
+    "text": "USB connector shape and USB capability are different questions.\nFigure 1. Common USB shapes. Open image source and licence.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "3. USB, Peripherals, and Cable Management"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/usb-and-cable-management/index.html#usb-c-cables-are-different",
+    "href": "tej3-4/computer-systems/usb-and-cable-management/index.html#usb-c-cables-are-different",
+    "title": "USB, Peripherals, and Cable Management",
+    "section": "USB-C cables are different",
+    "text": "USB-C cables are different\n\n\n\n\n\nUSB-C port beside a matching USB-C cable plug.\n\n\n\nUSB-C to USB-C\nCheck the printed specification for data speed, charging power, and video support.\nFigure 2. Open source and licence.\n\n\n\n\n\n\nUSB Type-A to USB-C cable.\n\n\n\nUSB-A to USB-C\nA passive A-to-C cable does not carry DisplayPort Alt Mode to a monitor. An active USB graphics dock is different: it contains electronics and usually needs a driver.\nFigure 3. Open source and licence.\n\n\n\n\nCheck four things\n\nConnector shape at each end.\nData speed printed on the cable or package.\nMaximum charging power in watts.\nExplicit DisplayPort, USB4, or Thunderbolt support when video is needed.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "3. USB, Peripherals, and Cable Management"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/usb-and-cable-management/index.html#common-peripherals",
+    "href": "tej3-4/computer-systems/usb-and-cable-management/index.html#common-peripherals",
+    "title": "USB, Peripherals, and Cable Management",
+    "section": "Common peripherals",
+    "text": "Common peripherals\n\n\nMouse and keyboard\nUSB-A, USB-C, Bluetooth, or a small wireless receiver.\n\n\nHeadphones and microphone\n3.5 mm audio, USB-A, USB-C, or Bluetooth.\n\n\nStorage and printers\nFlash drive, HDD, SSD, card reader, printer, scanner, or camera.\n\n\nControllers\nWebcam, game controller, drawing tablet, robotics controller, or microcontroller.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "3. USB, Peripherals, and Cable Management"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/usb-and-cable-management/index.html#clean-cable-management",
+    "href": "tej3-4/computer-systems/usb-and-cable-management/index.html#clean-cable-management",
+    "title": "USB, Peripherals, and Cable Management",
+    "section": "Clean cable management",
+    "text": "Clean cable management\n\n\nBACKFixed cables: power, monitor, Ethernet, keyboard, mouse\n\n\nEDGERoute with gentle bends and hook-and-loop straps\n\n\nCLEARKeep vents, feet, chair wheels, and walkways free\n\n\nLeave a small service loop. Label both ends of similar cables. Do not pull tight, crush under furniture, or hang weight from a connector.\nVisual check: photograph the back of one correctly connected computer. Label power, monitor signal, Ethernet, keyboard, mouse, audio, and one spare USB port.\nContinue to Networking",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "3. USB, Peripherals, and Cable Management"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/safe-opening-and-parts/index.html",
+    "href": "tej3-4/computer-systems/safe-opening-and-parts/index.html",
+    "title": "Open a Computer Safely and Identify the Parts",
+    "section": "",
+    "text": "Power off. Unplug. Control static. Then look inside.\nFigure 1. The whole system first. Open image source and licence.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "1. Open a Computer Safely and Identify the Parts"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/safe-opening-and-parts/index.html#what-is-inside",
+    "href": "tej3-4/computer-systems/safe-opening-and-parts/index.html#what-is-inside",
+    "title": "Open a Computer Safely and Identify the Parts",
+    "section": "What is inside?",
+    "text": "What is inside?\n\n\nMotherboard\nThe main circuit board. It connects the CPU, RAM, storage, power, ports, and expansion cards.\n\n\nCPU\nRuns program instructions. A heat sink and fan usually cover it.\n\n\nRAM\nFast working memory for programs in use now. It clears when power is removed.\n\n\nPower supply\nConverts wall AC to the low-voltage DC used by the computer. Inspect only the outside, cables, and label.\n\n\nCooling\nFans, heat sinks, vents, and thermal material move heat away from chips.\n\n\nExpansion parts\nGraphics, Wi-Fi, network, and sound cards add functions. Not every computer has every part.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "1. Open a Computer Safely and Identify the Parts"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/safe-opening-and-parts/index.html#ssd-or-spinning-hard-disk",
+    "href": "tej3-4/computer-systems/safe-opening-and-parts/index.html#ssd-or-spinning-hard-disk",
+    "title": "Open a Computer Safely and Identify the Parts",
+    "section": "SSD or spinning hard disk?",
+    "text": "SSD or spinning hard disk?\n\n\n\n\n\nA hard disk drive beside a solid-state drive.\n\n\n\nHDD: spinning disk\nMagnetic platters spin under a moving read/write head. Usually cheaper per terabyte, but slower, noisier, and easier to damage while spinning.\nFigure 2. HDD and SSD. Open source and licence.\n\n\n\n\n\n\nM.2 solid-state drive circuit board.\n\n\n\nSSD: flash storage\nStores data in electronic flash memory. No moving parts. Usually faster, silent, lower-power, and more resistant to bumps.\nFigure 3. M.2 SSD. Open source and licence.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "1. Open a Computer Safely and Identify the Parts"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/safe-opening-and-parts/index.html#how-storage-connects",
+    "href": "tej3-4/computer-systems/safe-opening-and-parts/index.html#how-storage-connects",
+    "title": "Open a Computer Safely and Identify the Parts",
+    "section": "How storage connects",
+    "text": "How storage connects\n\n\n\n\n\nThe data and power connectors on a SATA solid-state drive.\n\n\n\nSATA drive: two connections\nSATA data is the narrow 7-pin path to the motherboard. SATA power is the wider 15-pin path to the power supply.\nFigure 4. SATA connectors. Open source and licence.\n\n\n\n\n\n\nM.2 storage board ready to mount in a motherboard slot.\n\n\n\nM.2 drive: mounts on the board\nM.2 describes the shape. The drive may use SATA or NVMe/PCIe. The drive and motherboard slot must support the same type.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "1. Open a Computer Safely and Identify the Parts"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/safe-opening-and-parts/index.html#try-it",
+    "href": "tej3-4/computer-systems/safe-opening-and-parts/index.html#try-it",
+    "title": "Open a Computer Safely and Identify the Parts",
+    "section": "Try it",
+    "text": "Try it\nWith the computer unplugged, point to each visible part. Say its name and job before touching it. Use the teacher’s motherboard photograph for the model-specific close-up.\n\n\n\n\n\n\nNoteOpen Circuits matches for classroom use\n\n\n\nUse only directly matching pages: processor SoC, pp. 86 to 87; SATA cable, p. 163; hard-drive heads, pp. 220 to 223; printed circuit boards, pp. 232 to 235; MicroSD flash as a comparison, pp. 238 to 239; logic board, pp. 244 to 247; DC-DC converter, p. 249. Do not publish book scans without permission.\n\n\nNext: monitors, signals, ports, and cables",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "1. Open a Computer Safely and Identify the Parts"
+    ]
+  },
+  {
     "objectID": "tej3-4/electronics-library/projects/index.html",
     "href": "tej3-4/electronics-library/projects/index.html",
     "title": "15. Culminating Projects",
@@ -1810,11 +1941,35 @@
     ]
   },
   {
+    "objectID": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-3-videos",
+    "href": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-3-videos",
+    "title": "Choose Your Phone Holder",
+    "section": "Level 3 videos",
+    "text": "Level 3 videos\nWatch these before making the simple holder.",
+    "crumbs": [
+      "Glossary",
+      "6. Making the Phone Holder",
+      "1. Choose Your Phone Holder"
+    ]
+  },
+  {
     "objectID": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-original-or-complex-holder",
     "href": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-original-or-complex-holder",
     "title": "Choose Your Phone Holder",
     "section": "Level 4: original or complex holder",
     "text": "Level 4: original or complex holder\nAdd a harder shape or a useful feature. You might add a cable path, watch charger, or jewellery holder.\n\n\n\nThree-part holder\n\n\n\nA three-part digital phone holder with a sloped back, shelf, front rail, and cable notch.\n\n\nThis is Level 4. It is not a simple Level 3 design.\nOpen the Onshape model\n\n\n\nGiraffe holder\n\n\n\nA giraffe-shaped digital phone holder with a long neck and several supports.\n\n\nOpen the giraffe Onshape model",
+    "crumbs": [
+      "Glossary",
+      "6. Making the Phone Holder",
+      "1. Choose Your Phone Holder"
+    ]
+  },
+  {
+    "objectID": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-video",
+    "href": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-video",
+    "title": "Choose Your Phone Holder",
+    "section": "Level 4 video",
+    "text": "Level 4 video",
     "crumbs": [
       "Glossary",
       "6. Making the Phone Holder",
@@ -5000,18 +5155,6 @@
     ]
   },
   {
-    "objectID": "design-fabrication/cad-parametric-modeling/introduction-to-cad.html#short-videos",
-    "href": "design-fabrication/cad-parametric-modeling/introduction-to-cad.html#short-videos",
-    "title": "CAD You Need",
-    "section": "Short videos",
-    "text": "Short videos",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "2. CAD You Need"
-    ]
-  },
-  {
     "objectID": "design-fabrication/cad-parametric-modeling/introduction-to-cad.html#before-you-build",
     "href": "design-fabrication/cad-parametric-modeling/introduction-to-cad.html#before-you-build",
     "title": "CAD You Need",
@@ -5035,7 +5178,67 @@
     "href": "design-fabrication/hand-tools/tools-machines.html",
     "title": "Tools and Machines",
     "section": "",
-    "text": "ImportantThis is not a safety section\n\n\n\nThis website does not contain safety information. Use your board rules, training, supervision, and your professional experience and judgement.\nYour teacher will choose the tools for your shop.",
+    "text": "ImportantThis is not a safety section\n\n\n\nThis website does not contain safety information. Use your board rules, training, supervision, and your professional experience and judgement.\nThese photos show the machine or setup. They do not show every safe action.\nYour teacher will choose the tools for your shop.",
+    "crumbs": [
+      "Glossary",
+      "6. Making the Phone Holder",
+      "3. Tools and Machines"
+    ]
+  },
+  {
+    "objectID": "design-fabrication/hand-tools/tools-machines.html#measure-and-mark",
+    "href": "design-fabrication/hand-tools/tools-machines.html#measure-and-mark",
+    "title": "Tools and Machines",
+    "section": "Measure and mark",
+    "text": "Measure and mark\n\n\n\n\n\nRuler and square\n\n\n\n\n\nMark these shapes\n\n\n\nA ruler and square copy the sizes from the plan to the wood.",
+    "crumbs": [
+      "Glossary",
+      "6. Making the Phone Holder",
+      "3. Tools and Machines"
+    ]
+  },
+  {
+    "objectID": "design-fabrication/hand-tools/tools-machines.html#cut-the-outside",
+    "href": "design-fabrication/hand-tools/tools-machines.html#cut-the-outside",
+    "title": "Tools and Machines",
+    "section": "Cut the outside",
+    "text": "Cut the outside\n\n\n\n\n\nBand saw: guide, fence, and push stick\n\n\n\n\n\nScroll saw: guarded machine\n\n\n\n\n\nCut parts\n\n\n\nA hand saw, scroll saw, or band saw cuts the parts and outside shape.\nSafety sources: CCOHS band saws and OSHA scroll saws",
+    "crumbs": [
+      "Glossary",
+      "6. Making the Phone Holder",
+      "3. Tools and Machines"
+    ]
+  },
+  {
+    "objectID": "design-fabrication/hand-tools/tools-machines.html#drill-an-opening",
+    "href": "design-fabrication/hand-tools/tools-machines.html#drill-an-opening",
+    "title": "Tools and Machines",
+    "section": "Drill an opening",
+    "text": "Drill an opening\n\n\n\n\n\nDrill press: work held in a vise\n\n\n\n\n\nStart at the marked point\n\n\n\nThe drill press starts a round opening at the marked point.\nSafety source: WorkSafeBC drill presses",
+    "crumbs": [
+      "Glossary",
+      "6. Making the Phone Holder",
+      "3. Tools and Machines"
+    ]
+  },
+  {
+    "objectID": "design-fabrication/hand-tools/tools-machines.html#cut-the-slots",
+    "href": "design-fabrication/hand-tools/tools-machines.html#cut-the-slots",
+    "title": "Tools and Machines",
+    "section": "Cut the slots",
+    "text": "Cut the slots\n\n\n\n\n\nCoping saw\n\n\n\n\n\nScroll saw\n\n\n\n\n\nSlots join the parts\n\n\n\nThe narrow blade cuts the slots that join the two parts.",
+    "crumbs": [
+      "Glossary",
+      "6. Making the Phone Holder",
+      "3. Tools and Machines"
+    ]
+  },
+  {
+    "objectID": "design-fabrication/hand-tools/tools-machines.html#shape-and-finish",
+    "href": "design-fabrication/hand-tools/tools-machines.html#shape-and-finish",
+    "title": "Tools and Machines",
+    "section": "Shape and finish",
+    "text": "Shape and finish\n\n\n\n\n\nEdge sander or belt sander: outside edges\n\n\n\n\n\nOrbital sander: flat faces\n\n\n\n\n\nBy hand: small details\n\n\n\nSand the faces, outside edges, and inside curves until they are smooth. An oscillating sander or drum sander can smooth inside curves.\nSafety sources: CCOHS sanders and NIOSH wood-dust control\n\n\n\nPainted Kermit and Bob Ross phone holders made from shaped and sanded parts.\n\n\n\n\n\nPhoto credits\n\n\nCombination square: Limarie Cabrera, CC BY 2.0\nBand saw: Health and Safety Executive. Contains public sector information published by the Health and Safety Executive and licensed under the Open Government Licence.\nScroll saw: OSHA Machine Guarding eTool\nCoping saw: Dale Simonson, CC BY-SA 2.0\nDrill press: CDC Public Health Image Library, Brenda J. Jones, public domain\nBelt and disc sander: Chris.sherlock, CC BY-SA 4.0\nOrbital sander: Dave Pape, public domain\nHand sanding: Nenad Stojković, CC BY 2.0\n\n\nNext: build the phone holder.",
     "crumbs": [
       "Glossary",
       "6. Making the Phone Holder",
@@ -5318,7 +5521,7 @@
     "href": "tej3-4/index.html",
     "title": "TEJ3/4 Computer Engineering",
     "section": "",
-    "text": "Use this page as the front door to the course. Open a published lesson and its class materials, or scan the planned modules to see where the sequence is going.\n\n\n  Search and filter lessons\n  \n    \n      Search lessons\n      \n    \n    \n      Filter by module\n      \n        1. Orientation×1\n        2. Safety×1\n        3. Design×1\n        4. Project Portfolio×1\n        5. Circuits and Electronics×5\n        6. Computer Systems×1\n        7. Linux and Operating Systems×12\n        8. Networking×1\n        9. Programming and Interfacing×1\n        10. Robotics and Control Systems×1\n        11. Engineering Preparation×1\n      \n    \n    \n      Showing 26 lessons.\n      Clear filters\n    \n  \n\n\n  Collapse all\n  Expand all\n\n\n\n  \n    1. Orientation1 lesson\n  \n  \n    \n      \n        1. Course Orientation (planned)▾\n        A concise orientation lesson is planned.\n        It will connect the site, classroom workflow, and project evidence.\n      \n    \n  \n\n\n  \n    2. Safety1 lesson\n  \n  \n    \n      \n        1. Technology Lab Safety (planned)▾\n        The consolidated safety lesson is planned.\n        It will connect hazard recognition to classroom procedures.\n      \n    \n  \n\n\n  \n    3. Design1 lesson\n  \n  \n    \n      \n        1. S.O. N.I.C.E. Design Process (planned)▾\n        Use the General Design & Fabrication learning path.\n        The shared process prevents duplicate design notes.\n      \n    \n  \n\n\n  \n    4. Project Portfolio1 lesson\n  \n  \n    \n      \n        1. Build a Technical Portfolio (planned)▾\n        The portfolio lesson is planned.\n        It will support class assessment and future applications.\n      \n    \n  \n\n\n  \n    5. Circuits and Electronics5 lessons\n  \n  \n    \n      \n        1. Package 1: Basic Electricity and Parallel Circuits▾\n        Connect basic electrical quantities, components, measurement, computer loads, and parallel-circuit calculations.\n        Parallel paths explain why loads in computers, vehicles, and buildings operate independently.\n        Package 1 Slides Parallel-Circuit Handout Photo Submission Student Models: Questions 1 and 2 Grob Chapter 5 Problems Manual Experiment 5-1 Experiment 5-2 Experiment 5-3 Quick Reference Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        2. Package 2: Parallel Review and Series Circuits▾\n        Review one parallel calculation, then calculate current, voltage drops, resistance, and power in one-path circuits.\n        Series rules appear in indicator lights, sensor chains, voltage drops, and component strings.\n        Package 2 Slides Six-Question Problem Set Worked Q2 + Q4 Grob Chapter 4 Grob Chapter 5 Review Problems Manual Experiment 4-1 Experiment 4-2 Quick Reference 5% Resistor Values Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        3. Series-Parallel Circuits▾\n        Reduce mixed networks in stages and verify currents and voltages.\n        Real systems often combine shared paths with parallel loads.\n        Slides Current Handout Quick Reference 5% Resistor Values Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        4. Kirchhoff's Laws▾\n        Write current and voltage equations for circuits that cannot be reduced directly.\n        Kirchhoff analysis supports troubleshooting and more advanced network methods.\n        Slides Current Problem Set Quick Reference Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        5. Linear Algebra for Circuits▾\n        Solve simultaneous circuit equations by substitution, elimination, and matrices.\n        The method prepares students for college and university network analysis.\n        Slides Current Problem Set Quick Reference Teacher Answers, restricted\n      \n    \n  \n\n\n  \n    6. Computer Systems1 lesson\n  \n  \n    \n      \n        1. Computer Systems Sequence (planned)▾\n        The current computer-systems notes remain available while their package order is reconciled.\n        The final sequence will connect hardware evidence to recovery and commissioning.\n      \n    \n  \n\n\n  \n    7. Linux and Operating Systems12 lessons\n  \n  \n    \n      \n        1. Choosing a Linux Distribution▾\n        Compare distribution families, desktop environments, hardware needs, software, and support.\n        A good choice matches the computer and the work instead of following a brand name.\n        Slides\n      \n    \n    \n      \n        2. Install Linux Mint▾\n        Prepare installation media, protect data, install Mint, and verify the result.\n        The procedure supports computer recovery and prepares a system for later projects.\n        Slides Linux Mint Installation Reflection\n      \n    \n    \n      \n        3. Explore Linux▾\n        Customize the desktop, complete Terminal Quest, and explore Bashcrawl using separate submission contracts.\n        The activities build confidence before students administer or program the system.\n        Slides Make Linux Mint Xfce Your Own Terminal Quest: WSL and Mac Basics Bashcrawl Terminal Adventure\n      \n    \n    \n      \n        4. Know Your Linux Computer▾\n        Record hardware, operating-system, storage, and device information.\n        A verified inventory supports troubleshooting, upgrades, and performance comparisons.\n      \n    \n    \n      \n        5. Files, Terminal, and Permissions▾\n        Navigate paths, inspect files, and use permissions safely.\n        These skills are essential for administration, automation, and development.\n      \n    \n    \n      \n        6. Git Version Control▾\n        Record, inspect, and share changes with a safe Git workflow.\n        Version control protects project history and supports collaboration.\n      \n    \n    \n      \n        7. Build a Quarto Website▾\n        Turn Markdown, code, and media into a small technical website.\n        A website makes project evidence and explanations easy to review and share.\n      \n    \n    \n      \n        8. Publish with GitHub Pages▾\n        Publish a reviewed static site without exposing secrets or private files.\n        Deployment turns local documentation into a durable public portfolio.\n      \n    \n    \n      \n        9. Python Measurement Logging▾\n        Write a small Python program that records measurements with units and timestamps.\n        Logging supports sensor tests, performance studies, and repeatable experiments.\n      \n    \n    \n      \n        10. Python Analysis and Curve Fitting▾\n        Inspect recorded data and fit a simple model.\n        Analysis connects observations to engineering decisions and predictions.\n      \n    \n    \n      \n        11. Networking, SSH, and tmux▾\n        Diagnose a network connection and manage a remote Linux session safely.\n        Remote administration is common for servers, Raspberry Pi systems, and lab equipment.\n      \n    \n    \n      \n        12. Power and Raspberry Pi Bridge▾\n        Connect computer power concepts to a future Raspberry Pi build without inventing a lab.\n        The calculation bridge prepares students to reason about supplies, loads, and interfaces.\n      \n    \n  \n\n\n  \n    8. Networking1 lesson\n  \n  \n    \n      \n        1. Networking Sequence (planned)▾\n        Core networking appears in the Linux path while a dedicated module is developed.\n        The future module will add switching, routing, and service design.\n      \n    \n  \n\n\n  \n    9. Programming and Interfacing1 lesson\n  \n  \n    \n      \n        1. Programming and Interfacing Sequence (planned)▾\n        The coordinated Python and hardware sequence is planned.\n        It will connect runnable examples to sensors and outputs.\n      \n    \n  \n\n\n  \n    10. Robotics and Control Systems1 lesson\n  \n  \n    \n      \n        1. Robotics and Control Sequence (planned)▾\n        The public package sequence is planned.\n        It will connect diagrams, code, measurements, and physical tests.\n      \n    \n  \n\n\n  \n    11. Engineering Preparation1 lesson\n  \n  \n    \n      \n        1. Engineering Preparation Track (planned)▾\n        Use the concise track overview and its current notes and problem sets.\n        The page connects existing packages to recognizable engineering systems.\n      \n    \n  \n\n\nNo lessons match these filters.",
+    "text": "Use this page as the front door to the course. Open a published lesson and its class materials, or scan the planned modules to see where the sequence is going.\n\n\n  Search and filter lessons\n  \n    \n      Search lessons\n      \n    \n    \n      Filter by module\n      \n        1. Orientation×1\n        2. Safety×1\n        3. Design×1\n        4. Project Portfolio×1\n        5. Circuits and Electronics×5\n        6. Computer Systems×3\n        7. Linux and Operating Systems×12\n        8. Networking×3\n        9. Programming and Interfacing×1\n        10. Robotics and Control Systems×1\n        11. Engineering Preparation×1\n      \n    \n    \n      Showing 30 lessons.\n      Clear filters\n    \n  \n\n\n  Collapse all\n  Expand all\n\n\n\n  \n    1. Orientation1 lesson\n  \n  \n    \n      \n        1. Course Orientation (planned)▾\n        A concise orientation lesson is planned.\n        It will connect the site, classroom workflow, and project evidence.\n      \n    \n  \n\n\n  \n    2. Safety1 lesson\n  \n  \n    \n      \n        1. Technology Lab Safety (planned)▾\n        The consolidated safety lesson is planned.\n        It will connect hazard recognition to classroom procedures.\n      \n    \n  \n\n\n  \n    3. Design1 lesson\n  \n  \n    \n      \n        1. S.O. N.I.C.E. Design Process (planned)▾\n        Use the General Design & Fabrication learning path.\n        The shared process prevents duplicate design notes.\n      \n    \n  \n\n\n  \n    4. Project Portfolio1 lesson\n  \n  \n    \n      \n        1. Build a Technical Portfolio (planned)▾\n        The portfolio lesson is planned.\n        It will support class assessment and future applications.\n      \n    \n  \n\n\n  \n    5. Circuits and Electronics5 lessons\n  \n  \n    \n      \n        1. Package 1: Basic Electricity and Parallel Circuits▾\n        Connect basic electrical quantities, components, measurement, computer loads, and parallel-circuit calculations.\n        Parallel paths explain why loads in computers, vehicles, and buildings operate independently.\n        Package 1 Slides Parallel-Circuit Handout Photo Submission Student Models: Questions 1 and 2 Grob Chapter 5 Problems Manual Experiment 5-1 Experiment 5-2 Experiment 5-3 Quick Reference Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        2. Package 2: Parallel Review and Series Circuits▾\n        Review one parallel calculation, then calculate current, voltage drops, resistance, and power in one-path circuits.\n        Series rules appear in indicator lights, sensor chains, voltage drops, and component strings.\n        Package 2 Slides Six-Question Problem Set Worked Q2 + Q4 Grob Chapter 4 Grob Chapter 5 Review Problems Manual Experiment 4-1 Experiment 4-2 Quick Reference 5% Resistor Values Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        3. Series-Parallel Circuits▾\n        Reduce mixed networks in stages and verify currents and voltages.\n        Real systems often combine shared paths with parallel loads.\n        Slides Current Handout Quick Reference 5% Resistor Values Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        4. Kirchhoff's Laws▾\n        Write current and voltage equations for circuits that cannot be reduced directly.\n        Kirchhoff analysis supports troubleshooting and more advanced network methods.\n        Slides Current Problem Set Quick Reference Schematic + GUESS Teacher Answers, restricted\n      \n    \n    \n      \n        5. Linear Algebra for Circuits▾\n        Solve simultaneous circuit equations by substitution, elimination, and matrices.\n        The method prepares students for college and university network analysis.\n        Slides Current Problem Set Quick Reference Teacher Answers, restricted\n      \n    \n  \n\n\n  \n    6. Computer Systems3 lessons\n  \n  \n    \n      \n        1. Open a Computer Safely and Identify the Parts▾\n        Use power and static precautions, identify the main internal parts, and compare HDD, SATA SSD, and M.2 storage.\n        Safe part recognition prepares students to inspect and service a desktop computer.\n      \n    \n    \n      \n        2. Monitors, Signals, Ports, and Cables▾\n        Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.\n        Port and cable recognition prevents forced connections and helps diagnose display problems.\n      \n    \n    \n      \n        3. USB, Peripherals, and Cable Management▾\n        Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.\n        A serviceable workstation is easier to use, inspect, and troubleshoot.\n      \n    \n  \n\n\n  \n    7. Linux and Operating Systems12 lessons\n  \n  \n    \n      \n        1. Choosing a Linux Distribution▾\n        Compare distribution families, desktop environments, hardware needs, software, and support.\n        A good choice matches the computer and the work instead of following a brand name.\n        Slides\n      \n    \n    \n      \n        2. Install Linux Mint▾\n        Prepare installation media, protect data, install Mint, and verify the result.\n        The procedure supports computer recovery and prepares a system for later projects.\n        Slides Linux Mint Installation Reflection\n      \n    \n    \n      \n        3. Explore Linux▾\n        Customize the desktop, complete Terminal Quest, and explore Bashcrawl using separate submission contracts.\n        The activities build confidence before students administer or program the system.\n        Slides Make Linux Mint Xfce Your Own Terminal Quest: WSL and Mac Basics Bashcrawl Terminal Adventure\n      \n    \n    \n      \n        4. Know Your Linux Computer▾\n        Record hardware, operating-system, storage, and device information.\n        A verified inventory supports troubleshooting, upgrades, and performance comparisons.\n      \n    \n    \n      \n        5. Files, Terminal, and Permissions▾\n        Navigate paths, inspect files, and use permissions safely.\n        These skills are essential for administration, automation, and development.\n      \n    \n    \n      \n        6. Git Version Control▾\n        Record, inspect, and share changes with a safe Git workflow.\n        Version control protects project history and supports collaboration.\n      \n    \n    \n      \n        7. Build a Quarto Website▾\n        Turn Markdown, code, and media into a small technical website.\n        A website makes project evidence and explanations easy to review and share.\n      \n    \n    \n      \n        8. Publish with GitHub Pages▾\n        Publish a reviewed static site without exposing secrets or private files.\n        Deployment turns local documentation into a durable public portfolio.\n      \n    \n    \n      \n        9. Python Measurement Logging▾\n        Write a small Python program that records measurements with units and timestamps.\n        Logging supports sensor tests, performance studies, and repeatable experiments.\n      \n    \n    \n      \n        10. Python Analysis and Curve Fitting▾\n        Inspect recorded data and fit a simple model.\n        Analysis connects observations to engineering decisions and predictions.\n      \n    \n    \n      \n        11. Networking, SSH, and tmux▾\n        Diagnose a network connection and manage a remote Linux session safely.\n        Remote administration is common for servers, Raspberry Pi systems, and lab equipment.\n      \n    \n    \n      \n        12. Power and Raspberry Pi Bridge▾\n        Connect computer power concepts to a future Raspberry Pi build without inventing a lab.\n        The calculation bridge prepares students to reason about supplies, loads, and interfaces.\n      \n    \n  \n\n\n  \n    8. Networking3 lessons\n  \n  \n    \n      \n        1. How Wi-Fi and Ethernet Connect▾\n        Trace data through an access point or cable, a switch, a router, and Internet service.\n        Separating the jobs of Wi-Fi, switching, and routing makes network faults easier to locate.\n      \n    \n    \n      \n        2. Ethernet Cable Categories and Speeds▾\n        Compare Cat5e, Cat6, Cat6A, and Cat8 and identify the 8P8C plug commonly called RJ45.\n        Cable labels and limits help students choose an appropriate connection instead of guessing by colour.\n      \n    \n    \n      \n        3. Build and Test an Ethernet Cable▾\n        Terminate both ends in T568B order, inspect the crimp, and verify all eight conductors with a tester.\n        A complete build-and-test procedure turns cable theory into reliable classroom work.\n      \n    \n  \n\n\n  \n    9. Programming and Interfacing1 lesson\n  \n  \n    \n      \n        1. Programming and Interfacing Sequence (planned)▾\n        The coordinated Python and hardware sequence is planned.\n        It will connect runnable examples to sensors and outputs.\n      \n    \n  \n\n\n  \n    10. Robotics and Control Systems1 lesson\n  \n  \n    \n      \n        1. Robotics and Control Sequence (planned)▾\n        The public package sequence is planned.\n        It will connect diagrams, code, measurements, and physical tests.\n      \n    \n  \n\n\n  \n    11. Engineering Preparation1 lesson\n  \n  \n    \n      \n        1. Engineering Preparation Track (planned)▾\n        Use the concise track overview and its current notes and problem sets.\n        The page connects existing packages to recognizable engineering systems.\n      \n    \n  \n\n\nNo lessons match these filters.",
     "crumbs": [
       "Glossary",
       "TEJ3/4 Computer Engineering Home"
@@ -5724,6 +5927,149 @@
     "title": "H11 Series-Parallel Circuits A",
     "section": "Scope boundary",
     "text": "Scope boundary\nThis package covers reduction and complete analysis. A later package will cover random unknowns, opens, shorts, and troubleshooting. Kirchhoff’s laws are a separate unit based on Grob Chapter 9."
+  },
+  {
+    "objectID": "tej3-4/computer-systems/index.html",
+    "href": "tej3-4/computer-systems/index.html",
+    "title": "6. Computer Systems",
+    "section": "",
+    "text": "Start with the complete computer, identify what each part does, then connect the monitor and peripherals safely.\n\n\n\n\n\nAn exploded desktop computer showing its internal parts.\n\n\n\n1. Safe opening and parts\nPower safety, static control, motherboard, CPU, RAM, storage, cooling, and expansion parts.\nOpen the visual guide\n\n\n\n\n\n\nA continuous analog waveform with discrete digital samples.\n\n\n\n2. Monitors, signals, and ports\nAnalog and digital signals plus VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C.\nCompare the ports and cables\n\n\n\n\n\n\nUSB Type-A, Type-B, Mini, Micro, and Type-C connector shapes.\n\n\n\n3. USB and peripherals\nUSB connector shapes, USB-C capabilities, mouse, keyboard, audio, storage, and cable management.\nConnect the workstation\n\n\n\n\n\n\n\n\n\nImportantHardware safety boundary\n\n\n\nPower off and unplug before opening a computer. Control static and handle circuit boards by their edges. Never open a power-supply enclosure.\n\n\nContinue to Networking",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
+    "href": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
+    "title": "Monitors, Signals, Ports, and Cables",
+    "section": "",
+    "text": "A monitor is an output device. It needs power and a picture signal from the computer.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "2. Monitors, Signals, Ports, and Cables"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html#analog-and-digital-in-three-steps",
+    "href": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html#analog-and-digital-in-three-steps",
+    "title": "Monitors, Signals, Ports, and Cables",
+    "section": "Analog and digital in three steps",
+    "text": "Analog and digital in three steps\n\n\n\n\nA grey continuous analog waveform with red digital samples over it.\n\n\n\n\n\n1Analog waveform changes continuously\n\n\n2Measure it at set intervals\n\n\n3Represent samples as digital values\n\n\nFigure 1. Grey is the continuous source signal. Red points are discrete, quantized digital samples. Public-domain image by Rbj and wdwd. Open image source.\nVGA is analog. Noise can appear as blur, colour shifts, or ghosting.\nHDMI, DisplayPort, Mini DisplayPort, USB-C video, and DVI-D are digital. A weak digital link may show sparkles, dropouts, or no picture. DVI-A is analog. DVI-I can carry both.",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "2. Monitors, Signals, Ports, and Cables"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html#match-the-port-to-the-cable",
+    "href": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html#match-the-port-to-the-cable",
+    "title": "Monitors, Signals, Ports, and Cables",
+    "section": "Match the port to the cable",
+    "text": "Match the port to the cable\nEach pair shows a cable plug and the matching computer or display port.\n\n\n \n\nVGA\nAnalog video. Usually no audio. Tighten the two thumb screws gently.\n\nCable source · port source\n\n\n\n\n \n\nDVI\nDVI-D is digital. DVI-A is analog. DVI-I supports both. Check the pin pattern before connecting.\n\nCable source · port source\n\n\n\n\n \n\nHDMI\nDigital video and audio. Common on monitors, televisions, laptops, and game consoles.\n\nCable source · port source\n\n\n\n\n \n\nDisplayPort\nDigital video and audio. The full-size connector has one clipped corner.\n\nCable source · port source\n\n\n\n\n \n\nMini DisplayPort\nThe same DisplayPort signal in a smaller connector. Thunderbolt 1 and 2 use the same shape, so check the symbol.\n\nCable source · port source\n\n\n\n\n \n\nFireWire / IEEE 1394\nA legacy digital peripheral connection for cameras, audio interfaces, and external drives. It is not a normal monitor connection.\n\nCable source · port source\n\n\n\n\n \n\nUSB-C video\nThe shape alone does not promise video. The computer port, cable, adapter or dock, and monitor must support the same video path.\n\nCable source · port source",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "2. Monitors, Signals, Ports, and Cables"
+    ]
+  },
+  {
+    "objectID": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html#connect-the-monitor",
+    "href": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.html#connect-the-monitor",
+    "title": "Monitors, Signals, Ports, and Cables",
+    "section": "Connect the monitor",
+    "text": "Connect the monitor\n\nConnect monitor power and turn it on.\nConnect a supported cable from the computer output to the matching monitor input.\nSelect that input on the monitor.\nNo picture? Check power, input choice, cable seating, adapter direction, and video support.\n\nNext: USB, peripherals, and cable management",
+    "crumbs": [
+      "Glossary",
+      "6. Computer Systems",
+      "2. Monitors, Signals, Ports, and Cables"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/build-and-test-ethernet-cable/index.html",
+    "href": "tej3-4/networking/build-and-test-ethernet-cable/index.html",
+    "title": "Build and Test an Ethernet Cable",
+    "section": "",
+    "text": "This is the complete step-by-step sequence from the classroom presentation.",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "3. Build and Test an Ethernet Cable"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/build-and-test-ethernet-cable/index.html#procedure",
+    "href": "tej3-4/networking/build-and-test-ethernet-cable/index.html#procedure",
+    "title": "Build and Test an Ethernet Cable",
+    "section": "Procedure",
+    "text": "Procedure\n\n\n0\n\nMeasure and cut\nLeave enough cable for a gentle route and a small service loop.\n\n\n\n1\n\nRemove the outer jacket\nStrip about 25 to 40 mm. Cut lightly. Do not nick the eight insulated conductors.\n\n\n\n2\n\nInspect every conductor\nIf copper is exposed or insulation is cut, remove the damaged section and start again.\n\n\n\n3\n\nUntangle and flatten\nSeparate the four pairs. Untwist only the length needed to reach the plug.\n\n\n\n4\n\nArrange T568B\nPlace all eight conductors in the colour order shown above.\n\n\n\n5\n\nTrim to an even 13 mm\nPinch the order between your fingers. Cut the ends straight and even.\n\n\n\n6\n\nInsert and verify\nClip down, gold pins up, white-orange on the left. Every wire reaches the front. About 6 mm of jacket enters the plug.\n\n\n\n7\n\nCrimp\nInsert the plug fully into the correct crimper slot. Squeeze completely using the demonstrated tool procedure.\n\n\n\n8\n\nInspect the termination\nAll contacts sit evenly. The strain relief grips the jacket. Gently tug the cable.\n\n\n\n9\n\nFinish the other end and test\nUse T568B again. A good tester shows pins 1 through 8 in the same order at both ends.\n\n\n\n\n\n\n\n\nOuter jacket being removed from an Ethernet cable.\n\n\n\nSteps 1 and 2\nRemove only the jacket, then inspect the inner insulation.\nFigure 3. Open source and licence.\n\n\n\n\n\n\nTwisted pairs separated for Ethernet termination.\n\n\n\nStep 3\nSeparate the pairs and keep the untwisted length short.\nFigure 4. Open source and licence.\n\n\n\n\n\n\nEthernet conductors aligned before entering the modular plug.\n\n\n\nSteps 4 to 6\nOrder, flatten, trim, insert, and check through the clear plug.\nFigure 5. Open source and licence.\n\n\n\n\n\n\nA photo sequence showing an 8P8C plug being inserted and crimped.\n\n\n\nSteps 7 and 8\nCrimp fully. Check contact height and strain relief before testing.\nFigure 6. Public-domain visual sequence. Open source.\n\n\n\n\n\n\nNetwork cable tester used for modular Ethernet cables.\n\n\n\nStep 9\nTest for correct order, opens, shorts, reversals, crossed pairs, and split pairs.\nFigure 7. Open source and licence.",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "3. Build and Test an Ethernet Cable"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/build-and-test-ethernet-cable/index.html#final-quality-check",
+    "href": "tej3-4/networking/build-and-test-ethernet-cable/index.html#final-quality-check",
+    "title": "Build and Test an Ethernet Cable",
+    "section": "Final quality check",
+    "text": "Final quality check\n\nT568B order on both ends.\nNo exposed copper or cut insulation.\nEvery conductor reaches the front.\nJacket is under the strain relief.\nAll contacts are evenly crimped.\nTester shows 1 through 8 in order.",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "3. Build and Test an Ethernet Cable"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/build-and-test-ethernet-cable/index.html#evidence",
+    "href": "tej3-4/networking/build-and-test-ethernet-cable/index.html#evidence",
+    "title": "Build and Test an Ethernet Cable",
+    "section": "Evidence",
+    "text": "Evidence\nTake five photos: stripped jacket, flattened T568B order, head-on view before crimping, finished connector, and tester result.\nReturn to Networking",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "3. Build and Test an Ethernet Cable"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
+    "href": "tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
+    "title": "How Wi-Fi and Ethernet Connect",
+    "section": "",
+    "text": "Wi-Fi is not the Internet. Ethernet is not the Internet. Both are ways to join a local network.\nFigure 1. One local network can use Wi-Fi and Ethernet at the same time. Open image source and licence.",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "1. How Wi-Fi and Ethernet Connect"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/how-wifi-and-ethernet-connect/index.html#switch-or-router",
+    "href": "tej3-4/networking/how-wifi-and-ethernet-connect/index.html#switch-or-router",
+    "title": "How Wi-Fi and Ethernet Connect",
+    "section": "Switch or router?",
+    "text": "Switch or router?\n\n\n\n\n\nFive-port Ethernet switch.\n\n\n\nSwitch: same local network\nLearns which device is on each port and forwards Ethernet frames using MAC addresses. It gives the class more Ethernet ports. It does not normally create the Internet connection.\nFigure 2. Classroom-style switch. Open source and licence.\n\n\n\nRouter: between networks\nForwards IP packets between different networks. The school router or gateway connects the classroom network toward the Internet.\nA home Wi-Fi router combines several jobs in one box: router, switch, Wi-Fi access point, DHCP, NAT, and firewall.",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "1. How Wi-Fi and Ethernet Connect"
+    ]
+  },
+  {
+    "objectID": "tej3-4/networking/how-wifi-and-ethernet-connect/index.html#classroom-path",
+    "href": "tej3-4/networking/how-wifi-and-ethernet-connect/index.html#classroom-path",
+    "title": "How Wi-Fi and Ethernet Connect",
+    "section": "Classroom path",
+    "text": "Classroom path\nCOMPUTER → ETHERNET CABLE → CLASS SWITCH → SCHOOL ROUTER/GATEWAY → INTERNET SERVICE\n\nAccess point: provides the Wi-Fi radio link.\nDHCP: gives a device local network settings.\nDNS: translates a name such as example.org into an IP address.\nModem or ONT: connects a customer network to cable, DSL, fibre, or another provider link.\n\nQuick check: if Wi-Fi connects but websites do not load, test local IP settings, gateway reachability, DNS, and Internet service separately.\nNext: choose an Ethernet cable",
+    "crumbs": [
+      "Glossary",
+      "8. Networking",
+      "1. How Wi-Fi and Ethernet Connect"
+    ]
   },
   {
     "objectID": "tej3-4/linux-operating-systems/choosing-a-distribution.html",
@@ -6233,101 +6579,5 @@
     "title": "Install Linux Mint",
     "section": "",
     "text": "This page moved to Install Linux Mint."
-  },
-  {
-    "objectID": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-giraffe-video",
-    "href": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-giraffe-video",
-    "title": "Choose Your Phone Holder",
-    "section": "Level 4 giraffe video",
-    "text": "Level 4 giraffe video",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "1. Choose Your Phone Holder"
-    ]
-  },
-  {
-    "objectID": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-3-videos",
-    "href": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-3-videos",
-    "title": "Choose Your Phone Holder",
-    "section": "Level 3 videos",
-    "text": "Level 3 videos\nWatch these before making the simple holder.",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "1. Choose Your Phone Holder"
-    ]
-  },
-  {
-    "objectID": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-video",
-    "href": "design-fabrication/cad-parametric-modeling/phone-holder-design.html#level-4-video",
-    "title": "Choose Your Phone Holder",
-    "section": "Level 4 video",
-    "text": "Level 4 video",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "1. Choose Your Phone Holder"
-    ]
-  },
-  {
-    "objectID": "design-fabrication/hand-tools/tools-machines.html#measure-and-mark",
-    "href": "design-fabrication/hand-tools/tools-machines.html#measure-and-mark",
-    "title": "Tools and Machines",
-    "section": "Measure and mark",
-    "text": "Measure and mark\n\n\n\n\n\nRuler and square\n\n\n\n\n\nMark these shapes\n\n\n\nA ruler and square copy the sizes from the plan to the wood.",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "3. Tools and Machines"
-    ]
-  },
-  {
-    "objectID": "design-fabrication/hand-tools/tools-machines.html#cut-the-outside",
-    "href": "design-fabrication/hand-tools/tools-machines.html#cut-the-outside",
-    "title": "Tools and Machines",
-    "section": "Cut the outside",
-    "text": "Cut the outside\n\n\n\n\n\nBand saw\n\n\n\n\n\nScroll saw\n\n\n\n\n\nCut parts\n\n\n\nA hand saw, scroll saw, or band saw cuts the parts and outside shape.",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "3. Tools and Machines"
-    ]
-  },
-  {
-    "objectID": "design-fabrication/hand-tools/tools-machines.html#drill-an-opening",
-    "href": "design-fabrication/hand-tools/tools-machines.html#drill-an-opening",
-    "title": "Tools and Machines",
-    "section": "Drill an opening",
-    "text": "Drill an opening\n\n\n\n\n\nDrill press\n\n\n\n\n\nStart at the marked point\n\n\n\nThe drill press starts a round opening at the marked point.",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "3. Tools and Machines"
-    ]
-  },
-  {
-    "objectID": "design-fabrication/hand-tools/tools-machines.html#cut-the-slots",
-    "href": "design-fabrication/hand-tools/tools-machines.html#cut-the-slots",
-    "title": "Tools and Machines",
-    "section": "Cut the slots",
-    "text": "Cut the slots\n\n\n\n\n\nCoping saw\n\n\n\n\n\nScroll saw\n\n\n\n\n\nSlots join the parts\n\n\n\nThe narrow blade cuts the slots that join the two parts.",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "3. Tools and Machines"
-    ]
-  },
-  {
-    "objectID": "design-fabrication/hand-tools/tools-machines.html#shape-and-finish",
-    "href": "design-fabrication/hand-tools/tools-machines.html#shape-and-finish",
-    "title": "Tools and Machines",
-    "section": "Shape and finish",
-    "text": "Shape and finish\n\n\n\n\n\nEdge sander or belt sander: outside edges\n\n\n\n\n\nOscillating sander or drum sander: inside curves\n\n\n\n\n\nOrbital sander: flat faces\n\n\n\n\n\nBy hand: small details\n\n\n\nSand the faces, outside edges, and inside curves until they are smooth.\n\n\n\nPainted Kermit and Bob Ross phone holders made from shaped and sanded parts.\n\n\n\n\n\nPhoto credits\n\n\nCombination square: Limarie Cabrera, CC BY 2.0\nBand saw: U.S. Navy, public domain\nScroll saw: Agashi5859, CC BY-SA 3.0\nCoping saw: Dale Simonson, CC BY-SA 2.0\nDrill press: LHOON, CC BY-SA 2.5\nBelt and disc sander: Chris.sherlock, CC BY-SA 4.0\nOrbital sander: Dave Pape, public domain\nSpindle sander: Lewis Hine / U.S. National Archives, public domain\nHand sanding: Nenad Stojković, CC BY 2.0\n\n\nNext: build the phone holder.",
-    "crumbs": [
-      "Glossary",
-      "6. Making the Phone Holder",
-      "3. Tools and Machines"
-    ]
   }
 ]

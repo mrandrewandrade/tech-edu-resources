@@ -1070,6 +1070,75 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 1,
+      "route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
+      "source": "tej3-4/computer-systems/safe-opening-and-parts/index.qmd",
+      "title": "Open a Computer Safely and Identify the Parts",
+      "summary": "Use power and static precautions, identify the main internal parts, and compare HDD, SATA SSD, and M.2 storage.",
+      "use": "Safe part recognition prepares students to inspect and service a desktop computer.",
+      "resources": [],
+      "track_id": "computer-systems",
+      "track_order": 6,
+      "track_title": "Computer Systems",
+      "track_hub": "tej3-4/computer-systems/index.qmd",
+      "track_summary": "Connect physical computer parts, storage, displays, USB, peripherals, and safe workstation setup.",
+      "track_use": "Recognizing the hardware and its connections supports safe inspection, upgrades, and troubleshooting.",
+      "previous_route": null,
+      "next_route": "/commons/tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
+      "next_starts_new_track": false,
+      "sequence_index": 35
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 2,
+      "route": "/commons/tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
+      "source": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.qmd",
+      "title": "Monitors, Signals, Ports, and Cables",
+      "summary": "Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.",
+      "use": "Port and cable recognition prevents forced connections and helps diagnose display problems.",
+      "resources": [],
+      "track_id": "computer-systems",
+      "track_order": 6,
+      "track_title": "Computer Systems",
+      "track_hub": "tej3-4/computer-systems/index.qmd",
+      "track_summary": "Connect physical computer parts, storage, displays, USB, peripherals, and safe workstation setup.",
+      "track_use": "Recognizing the hardware and its connections supports safe inspection, upgrades, and troubleshooting.",
+      "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
+      "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
+      "next_starts_new_track": false,
+      "sequence_index": 36
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 3,
+      "route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
+      "source": "tej3-4/computer-systems/usb-and-cable-management/index.qmd",
+      "title": "USB, Peripherals, and Cable Management",
+      "summary": "Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.",
+      "use": "A serviceable workstation is easier to use, inspect, and troubleshoot.",
+      "resources": [],
+      "track_id": "computer-systems",
+      "track_order": 6,
+      "track_title": "Computer Systems",
+      "track_hub": "tej3-4/computer-systems/index.qmd",
+      "track_summary": "Connect physical computer parts, storage, displays, USB, peripherals, and safe workstation setup.",
+      "track_use": "Recognizing the hardware and its connections supports safe inspection, upgrades, and troubleshooting.",
+      "previous_route": "/commons/tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 37
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 1,
       "route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "source": "tej3-4/linux-operating-systems/choosing-a-distribution.qmd",
       "title": "Choosing a Linux Distribution",
@@ -1090,7 +1159,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_starts_new_track": false,
-      "sequence_index": 35
+      "sequence_index": 38
     },
     {
       "course_id": "tej",
@@ -1122,7 +1191,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_starts_new_track": false,
-      "sequence_index": 36
+      "sequence_index": 39
     },
     {
       "course_id": "tej",
@@ -1162,7 +1231,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_starts_new_track": false,
-      "sequence_index": 37
+      "sequence_index": 40
     },
     {
       "course_id": "tej",
@@ -1185,7 +1254,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_starts_new_track": false,
-      "sequence_index": 38
+      "sequence_index": 41
     },
     {
       "course_id": "tej",
@@ -1208,7 +1277,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_starts_new_track": false,
-      "sequence_index": 39
+      "sequence_index": 42
     },
     {
       "course_id": "tej",
@@ -1231,7 +1300,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_starts_new_track": false,
-      "sequence_index": 40
+      "sequence_index": 43
     },
     {
       "course_id": "tej",
@@ -1254,7 +1323,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_starts_new_track": false,
-      "sequence_index": 41
+      "sequence_index": 44
     },
     {
       "course_id": "tej",
@@ -1277,7 +1346,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_starts_new_track": false,
-      "sequence_index": 42
+      "sequence_index": 45
     },
     {
       "course_id": "tej",
@@ -1300,7 +1369,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_starts_new_track": false,
-      "sequence_index": 43
+      "sequence_index": 46
     },
     {
       "course_id": "tej",
@@ -1323,7 +1392,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_starts_new_track": false,
-      "sequence_index": 44
+      "sequence_index": 47
     },
     {
       "course_id": "tej",
@@ -1346,7 +1415,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
       "next_starts_new_track": false,
-      "sequence_index": 45
+      "sequence_index": 48
     },
     {
       "course_id": "tej",
@@ -1369,7 +1438,76 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 46
+      "sequence_index": 49
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 1,
+      "route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
+      "source": "tej3-4/networking/how-wifi-and-ethernet-connect/index.qmd",
+      "title": "How Wi-Fi and Ethernet Connect",
+      "summary": "Trace data through an access point or cable, a switch, a router, and Internet service.",
+      "use": "Separating the jobs of Wi-Fi, switching, and routing makes network faults easier to locate.",
+      "resources": [],
+      "track_id": "networking",
+      "track_order": 8,
+      "track_title": "Networking",
+      "track_hub": "tej3-4/networking/index.qmd",
+      "track_summary": "Follow data through Wi-Fi, Ethernet, switches, routers, and the Internet, then build and test a patch cable.",
+      "track_use": "Networking skills connect classroom computers, controllers, sensors, and services.",
+      "previous_route": null,
+      "next_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
+      "next_starts_new_track": false,
+      "sequence_index": 50
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 2,
+      "route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
+      "source": "tej3-4/networking/ethernet-cable-categories/index.qmd",
+      "title": "Ethernet Cable Categories and Speeds",
+      "summary": "Compare Cat5e, Cat6, Cat6A, and Cat8 and identify the 8P8C plug commonly called RJ45.",
+      "use": "Cable labels and limits help students choose an appropriate connection instead of guessing by colour.",
+      "resources": [],
+      "track_id": "networking",
+      "track_order": 8,
+      "track_title": "Networking",
+      "track_hub": "tej3-4/networking/index.qmd",
+      "track_summary": "Follow data through Wi-Fi, Ethernet, switches, routers, and the Internet, then build and test a patch cable.",
+      "track_use": "Networking skills connect classroom computers, controllers, sensors, and services.",
+      "previous_route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
+      "next_route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
+      "next_starts_new_track": false,
+      "sequence_index": 51
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 3,
+      "route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
+      "source": "tej3-4/networking/build-and-test-ethernet-cable/index.qmd",
+      "title": "Build and Test an Ethernet Cable",
+      "summary": "Terminate both ends in T568B order, inspect the crimp, and verify all eight conductors with a tester.",
+      "use": "A complete build-and-test procedure turns cable theory into reliable classroom work.",
+      "resources": [],
+      "track_id": "networking",
+      "track_order": 8,
+      "track_title": "Networking",
+      "track_hub": "tej3-4/networking/index.qmd",
+      "track_summary": "Follow data through Wi-Fi, Ethernet, switches, routers, and the Internet, then build and test a patch cable.",
+      "track_use": "Networking skills connect classroom computers, controllers, sensors, and services.",
+      "previous_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 52
     }
   ]
 }
