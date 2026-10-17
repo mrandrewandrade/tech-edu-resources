@@ -123,10 +123,11 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("assets/tej-equations-v2.css", config)
         self.assertIn('"tej-equations-v1.js"', scripts)
         self.assertIn("window.TEREquations.mount = mountEquations", helper)
+        self.assertIn('root.querySelectorAll(".math")', helper)
         self.assertIn("window.MathJax.typesetPromise(pending)", helper)
         self.assertIn("window.TEREquations.mount(main)", self.read("assets/bs-learn-scroll.js"))
         self.assertIn('"bs-learn-scroll.js": "20261013-1"', scripts)
-        self.assertIn('"tej-equations-v1.js": "20261013-1"', scripts)
+        self.assertIn('"tej-equations-v1.js": "20261017-1"', scripts)
         self.assertIn("terEquationSources", scripts)
         self.assertIn("Copy equation", helper)
         self.assertIn("Copy LaTeX", helper)
@@ -220,3 +221,4 @@ class CourseContentTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
