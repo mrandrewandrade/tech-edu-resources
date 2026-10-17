@@ -15,6 +15,7 @@ try {
     Copy-Item 'series-parallel-04.png' 'question-2-solve-check.png' -Force
     Copy-Item 'series-parallel-06.png' 'question-4-equations.png' -Force
     Copy-Item 'series-parallel-07.png' 'question-4-solve-check.png' -Force
+    Copy-Item 'series-parallel-08.png' 'series-parallel-rules.png' -Force
 }
 finally {
     Pop-Location
@@ -27,4 +28,5 @@ Write-Host '  question-2-equations.png'
 Write-Host '  question-2-solve-check.png'
 Write-Host '  question-4-equations.png'
 Write-Host '  question-4-solve-check.png'
+Write-Host '  series-parallel-rules.png'
 
