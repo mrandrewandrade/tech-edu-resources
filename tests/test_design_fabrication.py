@@ -213,16 +213,19 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertIn(phrase, tools.lower())
         for photo in (
             "combination-square-in-use.jpg",
-            "bandsaw-in-use.jpg",
-            "scroll-saw-in-use.jpg",
-            "drill-press.jpg",
+            "band-saw-guarded-hse.jpg",
+            "scroll-saw-guarded-osha.jpg",
+            "drill-press-clamped-cdc.jpg",
             "coping-saw.jpg",
             "belt-disc-sander.jpg",
-            "spindle-sander.jpg",
             "orbital-sander.jpg",
             "hand-sanding.jpg",
         ):
             self.assertIn(photo, tools)
+        for source in ("ccohs.ca", "osha.gov", "worksafebc.com", "cdc.gov"):
+            self.assertIn(source, tools.lower())
+        for old_photo in ("bandsaw-in-use.jpg", "scroll-saw-in-use.jpg", "drill-press.jpg", "spindle-sander.jpg"):
+            self.assertNotIn(old_photo, tools + page + hub)
         self.assertIn("Photo credits", tools)
         self.assertIn("combination-square-in-use.jpg", page)
         self.assertIn("basic-phone-holder.jpg", page)
