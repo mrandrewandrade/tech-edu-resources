@@ -1,0 +1,210 @@
+.tej-visual-page {
+  --tej-ink: #17324d;
+  --tej-blue: #1f6feb;
+  --tej-teal: #087f8c;
+  --tej-warm: #fff7df;
+}
+
+.tej-visual-page .lead {
+  max-width: 68ch;
+  font-size: 1.12rem;
+}
+
+.tej-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.tej-visual-card,
+.tej-step-card,
+.tej-port-pair {
+  border: 1px solid rgba(23, 50, 77, 0.18);
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: 0 0.35rem 1rem rgba(23, 50, 77, 0.08);
+  overflow: hidden;
+}
+
+.tej-visual-card > :not(img),
+.tej-step-card > :not(img),
+.tej-port-pair > :not(img) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.tej-visual-card img,
+.tej-port-pair img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #f7f9fb;
+  padding: 0.5rem;
+}
+
+.tej-visual-card h3,
+.tej-port-pair h3,
+.tej-step-card h3 {
+  color: var(--tej-ink);
+  margin-top: 0.85rem;
+}
+
+.tej-caption {
+  color: #526273;
+  font-size: 0.82rem;
+}
+
+.tej-signal-steps,
+.tej-path-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.tej-signal-steps > div,
+.tej-path-strip > div {
+  border-radius: 0.8rem;
+  padding: 0.9rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--tej-ink);
+  background: #eaf3ff;
+}
+
+.tej-signal-steps strong,
+.tej-path-strip strong {
+  display: block;
+  color: var(--tej-blue);
+  font-size: 1.2rem;
+}
+
+.tej-port-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tej-port-pair .tej-port-copy {
+  grid-column: 1 / -1;
+}
+
+.tej-port-label {
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  background: #eef3f7;
+  color: var(--tej-ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tej-safety-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tej-safety-strip > p {
+  margin: 0;
+  border-radius: 999px;
+  background: #fff1f0;
+  border: 1px solid #e35d5b;
+  color: #7f1d1d;
+  padding: 0.55rem 0.75rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.tej-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.tej-category-grid > div {
+  border-left: 0.4rem solid var(--tej-teal);
+  border-radius: 0.55rem;
+  background: #edf9fa;
+  padding: 0.8rem;
+}
+
+.tej-category-grid strong {
+  display: block;
+  color: var(--tej-ink);
+  font-size: 1.15rem;
+}
+
+.tej-step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.85rem;
+  margin: 1rem 0;
+}
+
+.tej-step-card {
+  padding-bottom: 0.9rem;
+}
+
+.tej-step-number {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.9rem;
+  border-radius: 50%;
+  background: var(--tej-blue);
+  color: #fff;
+  font-weight: 800;
+}
+
+.tej-wire-order {
+  margin: 1rem 0;
+}
+
+.tej-wire-order p {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.tej-wire-order span {
+  border: 1px solid #718096;
+  border-radius: 0.4rem;
+  padding: 0.45rem 0.55rem;
+  background: #fff;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.tej-image-hero img {
+  display: block;
+  width: min(100%, 980px);
+  max-height: 520px;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: #f7f9fb;
+  padding: 0.75rem;
+}
+
+@media (max-width: 650px) {
+  .tej-signal-steps,
+  .tej-path-strip,
+  .tej-port-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .tej-port-pair .tej-port-copy {
+    grid-column: 1;
+  }
+
+  .tej-wire-order p {
+    grid-template-columns: 1fr;
+  }
+}

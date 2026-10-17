@@ -292,6 +292,12 @@ website:
           contents:
             - text: "Main Mission: Power & Parts"
               href: tej3-4/computer-systems/computer-power-parts.qmd
+            - text: "Visual Guide: Safe Opening & Parts"
+              href: tej3-4/computer-systems/safe-opening-and-parts/index.qmd
+            - text: "Visual Guide: Monitors & Ports"
+              href: tej3-4/computer-systems/monitors-ports-and-peripherals/index.qmd
+            - text: "Visual Guide: USB & Cable Management"
+              href: tej3-4/computer-systems/usb-and-cable-management/index.qmd
             - text: "Side Quest: Make It Print"
               href: tej3-4/computer-systems/make-it-print.qmd
             - text: "Side Quest: Recovery & OS Comparison"
@@ -364,8 +370,14 @@ website:
           href: tej3-4/04-microcontrollers/index.qmd
           contents: []
         - section: "12. Networking & Systems"
-          href: tej3-4/curriculum/index.qmd#unit-12
-          contents: []
+          href: tej3-4/networking/index.qmd
+          contents:
+            - text: "Wi-Fi, Ethernet, Switch & Router"
+              href: tej3-4/networking/how-wifi-and-ethernet-connect/index.qmd
+            - text: "Ethernet Categories & Speeds"
+              href: tej3-4/networking/ethernet-cable-categories/index.qmd
+            - text: "Build & Test an Ethernet Cable"
+              href: tej3-4/networking/build-and-test-ethernet-cable/index.qmd
         - section: "13. Data Science & ML"
           href: tej3-4/curriculum/index.qmd#unit-13
           contents: []
@@ -433,6 +445,7 @@ format:
       - assets/commons-overrides.css
       - assets/bs-learn.css
       - assets/tej-curriculum.css
+      - assets/tej-systems-visual.css
     include-after-body:
       - includes/bs-scripts.html
     include-in-header:
