@@ -2233,6 +2233,7 @@
       return;
     }
 
+    const usesDockedSidebar = document.body.classList.contains("docked");
     const desktopQuery = window.matchMedia("(min-width: 992px)");
     const sidebarScroller =
       sidebar.querySelector(".sidebar-menu-container") || sidebar;

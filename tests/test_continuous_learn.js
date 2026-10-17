@@ -73,6 +73,10 @@ assert.match(
   learnSource,
   /function initializeLearnLeftSidebarToggle\(\)[\s\S]*?const sidebar = document\.getElementById\("quarto-sidebar"\)[\s\S]*?if \(!sidebar\)/
 );
+assert.match(
+  learnSource,
+  /function initializeLearnLeftSidebarToggle\(\)[\s\S]*?const usesDockedSidebar = document\.body\.classList\.contains\("docked"\)[\s\S]*?if \(usesDockedSidebar\)/
+);
 assert.doesNotMatch(learnSource, /keepExpandedWhileScrolling/);
 assert.match(learnSource, /autoCollapsePending[\s\S]*?scrollingDown[\s\S]*?collapsed = true/);
 assert.match(learnSource, /classList\.toggle\("docked", !active\)/);

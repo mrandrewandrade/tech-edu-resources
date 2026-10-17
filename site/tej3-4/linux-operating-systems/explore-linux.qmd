@@ -10,7 +10,7 @@ The main goal of this lesson is simple: **have fun with Linux and make the compu
 
 ::: {.callout-important title="Choose the correct assignment"}
 - **Assignment 1:** [Make Linux Mint Xfce Your Own](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy)
-- **Assignment 2:** [Terminal Quest: WSL and Mac Basics](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy)
+- **Assignment 2:** [Terminal Quest: Computer Detective](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy)
 - **Assignment 3:** [Bashcrawl Terminal Adventure](https://docs.google.com/document/d/1CzNZyCFPe63nMXYZ_V9yqRs2sFNfgmykL25-HtGgFnM/copy)
 
 Complete and submit each assignment separately. Do not combine their evidence or submit a separate history text file.
@@ -22,7 +22,7 @@ By the end of this page:
 
 - I will be able to create and test safe user accounts on an assigned classroom computer.
 - I will be able to personalize Linux Mint with the graphical user interface (GUI).
-- I will be able to open the correct terminal on Windows, Linux, or Mac and use beginner commands.
+- I will be able to open the correct terminal on Windows, Linux, Mac, Android, or iPhone/iPad and use beginner commands.
 - I will be able to create a folder and file, inspect processes, and review command history safely.
 - I will be able to download and explore Bashcrawl with Git.
 
@@ -116,7 +116,7 @@ This course example shows one possible finished direction. Your design should re
 
 ### 3. Make the three required changes
 
-Use the settings already included with Linux Mint. Do not download themes, scripts, packages, or desktop effects without teacher permission.
+Use the settings already included with Linux Mint. Do not download themes, packages, or desktop effects without teacher permission. The optional course script below is the only approved appearance script for this activity.
 
 #### Change A: wallpaper
 
@@ -150,6 +150,63 @@ Example: compare one light and one dark Mint-Y variant, then keep the one that g
 Do **not** delete the panel or remove the application menu, network, sound, or clock controls. [Screenshot source: It's FOSS](https://itsfoss.com/newsletter/foss-weekly-25-02/).
 
 If a setting looks wrong, return to the same settings window and change it back. If you cannot restore the panel or essential controls, stop and ask for help.
+
+#### Optional shortcut: compare two Xfce layouts
+
+After you save the required BEFORE screenshot, you may use the course appearance script on **Linux Mint Xfce only**. It changes settings for your account without `sudo`, saves a backup of the current Xfce configuration, and offers two starting points:
+
+1. **Windows-style:** a full-width bottom panel with larger controls and desktop icons.
+2. **Mac-inspired:** a centred, auto-hiding bottom panel with larger launcher icons and window buttons on the left.
+
+The presets are starting points, not copies of Windows or macOS. You still decide whether the result is readable and useful.
+
+Open Terminal and run one command at a time:
+
+**INPUT**
+
+```bash
+cd ~/Downloads
+```
+
+**INPUT**
+
+```bash
+curl -fLO https://andrewandrade.ca/tech-edu-resources/assets/linux/tej-xfce-style.sh
+```
+
+Inspect the script before running it:
+
+**INPUT**
+
+```bash
+less tej-xfce-style.sh
+```
+
+Press `q` to leave `less`. Then make the script executable and run it:
+
+**INPUT**
+
+```bash
+chmod +x tej-xfce-style.sh
+```
+
+**INPUT**
+
+```bash
+./tej-xfce-style.sh
+```
+
+Choose option `1` or `2`. Take the required AFTER screenshot only after you have checked that the menu, network, sound, and clock are still easy to use.
+
+::: {.callout-tip title="Change values and see what happens"}
+The script creates `~/.config/tej-xfce-style.conf`. Open it in Linux Mint's text editor:
+
+```bash
+xed ~/.config/tej-xfce-style.conf
+```
+
+Try changing one value, save the file, run `./tej-xfce-style.sh` again, and choose option `3`. For example, `PANEL_SIZE=52` makes the panel taller, `PANEL_LENGTH=90` makes it shorter, and `DESKTOP_ICON_SIZE=64` makes desktop icons larger. Keep panel length from 40 to 100 and do not remove required controls.
+:::
 
 ### 4. Save your AFTER screenshot
 
@@ -191,7 +248,7 @@ Open **Software Manager** from the application menu. Search for Git and install 
 Use Software Manager, an operating system's official documentation, or the official Bashcrawl GitLab repository. Do not paste installation commands from advertisements, comments, forums, or unknown sites. If installation requires administrator access and you do not have permission, stop and ask your teacher.
 :::
 
-## Assignment 2: Terminal Quest: WSL and Mac Basics
+## Assignment 2: Terminal Quest: Computer Detective
 
 ::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
 If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
@@ -200,7 +257,7 @@ If anything here is unclear, incomplete, or could be explained better, improve i
 ### Part 5: meet the terminal
 
 ::: {.callout-important title="Open the assignment and know what to submit"}
-[Make a copy of **Terminal Quest: WSL and Mac Basics**](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy).
+[Make a copy of **Terminal Quest: Computer Detective**](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy).
 
 Submit **ONE completed Google Doc** in Google Classroom. Paste the complete, reviewed command history into that document. Do not submit a separate history text file.
 :::
@@ -228,6 +285,34 @@ Press **Ctrl + Alt + T**, or search the application menu for **Terminal**. WSL i
 #### Mac
 
 Press **Command + Space**, search for **Terminal**, and press **Return**. You can also open **Applications > Utilities > Terminal**.
+
+#### Android phone or tablet
+
+Install [Termux from F-Droid](https://f-droid.org/packages/com.termux/), then open Termux. Do not use the outdated Play Store build. The assignment commands work directly in Termux.
+
+#### iPhone or iPad
+
+Install [iSH Shell](https://apps.apple.com/app/ish-shell/id1436902243). Open iSH and run these commands one at a time so the remaining instructions use Bash:
+
+**INPUT**
+
+```bash
+apk update
+```
+
+**INPUT**
+
+```bash
+apk add bash
+```
+
+**INPUT**
+
+```bash
+bash
+```
+
+A computer is more comfortable, but Android and iPhone both work. A Bluetooth keyboard makes the experience much better. 📱💻
 
 ### 2. Identify the account and current folder
 
@@ -399,6 +484,8 @@ top
 
 Press `q` to leave `htop` or `top`. Observe one CPU and one memory detail. Never end an unfamiliar process. If installation is blocked or asks for access you do not have, use `top` and ask for help.
 
+On Android with Termux or iPhone/iPad with iSH, use `top`. Press `q` to leave it. Do not try to stop unfamiliar phone processes.
+
 ### 6. Review and copy the complete command history
 
 History contains commands, not their output. Review it before copying. Remove or redact passwords, tokens, personal names, private paths, Wi-Fi credentials, and other private information. If you see a password or token, do not paste it. Stop and ask for help, and change any exposed credential.
@@ -476,6 +563,32 @@ history 1 | pbcopy
 ```
 
 If the Mac uses Bash instead of zsh, use `history` and `history | pbcopy`.
+
+#### Android or iPhone/iPad using Bash
+
+Review the complete history:
+
+**INPUT**
+
+```bash
+history
+```
+
+Touch and hold in the terminal, select the reviewed history, and copy it. If the output is long, save it to a file and display it before selecting the text:
+
+**INPUT**
+
+```bash
+history > ~/terminal-quest-history.txt
+```
+
+**INPUT**
+
+```bash
+cat ~/terminal-quest-history.txt
+```
+
+Switch to your Google Doc, touch and hold in the FULL COMMAND HISTORY box, and choose **Paste**. Remove private information before submitting.
 
 Paste the complete, reviewed history into the labelled box in your Terminal Quest Google Doc. Confirm that it includes the activities you tried. Review the pasted text again before submitting. **Submit only that completed Google Doc.**
 
