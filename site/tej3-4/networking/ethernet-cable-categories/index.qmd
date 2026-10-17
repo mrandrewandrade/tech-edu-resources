@@ -1,0 +1,45 @@
+---
+title: "Ethernet Cable Categories and Speeds"
+description: "Compare Cat5e, Cat6, Cat6A, and Cat8, then identify an 8P8C plug and its cable label."
+categories: [networking, Ethernet, cable categories, 8P8C]
+body-classes: "tej-networking bs-learn-article ter-notes-lesson tej-visual-page"
+---
+
+The category printed on the cable describes tested cabling performance. The slowest port, cable path, or device sets the link speed.
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+![Numbered contacts on an 8P8C modular plug.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Rj45plug-8p8c.png)
+
+### 8P8C, often called RJ45
+
+Eight positions and eight contacts. Keep the pairs twisted close to the plug. Do not judge cable category by colour.
+
+*Figure 1. [Open source and licence.](https://commons.wikimedia.org/wiki/File:Rj45plug-8p8c.png)*
+:::
+
+::: {.tej-visual-card}
+![Close view of a twisted-pair Ethernet cable and modular plug.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Ethernet_cable_closeup.JPG)
+
+### Read the jacket
+
+Look for the category, conductor type, and certification printed along the cable jacket.
+
+*Figure 2. [Open source and licence.](https://commons.wikimedia.org/wiki/File:Ethernet_cable_closeup.JPG)*
+:::
+::::
+
+::: {.tej-category-grid}
+<div><strong>Cat5e</strong>1 Gbps to 100 m. 2.5 or 5 Gbps may work when the equipment and cable meet the standard.</div>
+<div><strong>Cat6</strong>1 Gbps to 100 m. 10 Gbps on shorter runs, commonly up to 55 m in suitable conditions.</div>
+<div><strong>Cat6A</strong>10 Gbps to 100 m. Thicker and often less flexible.</div>
+<div><strong>Cat8</strong>25 or 40 Gbps to 30 m. Mainly data centres, not a normal classroom patch cable.</div>
+:::
+
+::: {.callout-note title="What about Cat7?"}
+Cat7 appears in retail listings, but it is not the normal ANSI/TIA category choice for a standard RJ45 classroom cable. Prefer a correctly made Cat6 or Cat6A cable for a known requirement.
+:::
+
+**Class choice:** use the cable and plug specified by the teacher. Match the plug to solid or stranded conductors and to the cable diameter.
+
+[Next: build and test a T568B cable](../build-and-test-ethernet-cable/)

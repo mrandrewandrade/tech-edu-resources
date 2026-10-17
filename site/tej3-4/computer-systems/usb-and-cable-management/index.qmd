@@ -1,0 +1,113 @@
+---
+title: "USB, Peripherals, and Cable Management"
+description: "Recognize USB connector shapes, check USB-C capabilities, connect peripherals, and keep a workstation serviceable."
+categories: [computer systems, USB, peripherals, cable management]
+body-classes: "tej-computer-systems bs-learn-article ter-notes-lesson tej-visual-page"
+---
+
+USB connector **shape** and USB **capability** are different questions.
+
+::: {.tej-image-hero}
+![USB Type-A, Type-B, Micro-B, Mini-B, and Type-C connector shapes.](https://commons.wikimedia.org/wiki/Special:Redirect/file/USB_A%2C_B%2C_C_%281.1-3.0%29_connectors.svg)
+:::
+
+*Figure 1. Common USB shapes. [Open image source and licence.](https://commons.wikimedia.org/wiki/File:USB_A,_B,_C_(1.1-3.0)_connectors.svg)*
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+### USB Type-A
+
+The familiar rectangular connector for computers, chargers, flash drives, mice, and keyboards.
+:::
+
+::: {.tej-visual-card}
+### USB Type-B
+
+The square connector still used on printers, audio interfaces, and lab devices.
+:::
+
+::: {.tej-visual-card}
+### Mini-USB and Micro-USB
+
+Older small connectors on cameras, controllers, phones, and embedded boards.
+:::
+
+::: {.tej-visual-card}
+### USB-C
+
+Small and reversible. It may carry data, charging, docks, storage, Ethernet, audio, or video, but not every cable supports every feature.
+:::
+::::
+
+## USB-C cables are different
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+![USB-C port beside a matching USB-C cable plug.](https://commons.wikimedia.org/wiki/Special:Redirect/file/OnePlus_3_USB_port_and_the_cable.jpg)
+
+### USB-C to USB-C
+
+Check the printed specification for data speed, charging power, and video support.
+
+*Figure 2. [Open source and licence.](https://commons.wikimedia.org/wiki/File:OnePlus_3_USB_port_and_the_cable.jpg)*
+:::
+
+::: {.tej-visual-card}
+![USB Type-A to USB-C cable.](https://commons.wikimedia.org/wiki/Special:Redirect/file/USB_3.1_Gen2_Typ-C_to_Typ-A_cable_10Gbps_PD_60W.jpg)
+
+### USB-A to USB-C
+
+A passive A-to-C cable does **not** carry DisplayPort Alt Mode to a monitor. An active USB graphics dock is different: it contains electronics and usually needs a driver.
+
+*Figure 3. [Open source and licence.](https://commons.wikimedia.org/wiki/File:USB_3.1_Gen2_Typ-C_to_Typ-A_cable_10Gbps_PD_60W.jpg)*
+:::
+::::
+
+### Check four things
+
+1. Connector shape at each end.
+2. Data speed printed on the cable or package.
+3. Maximum charging power in watts.
+4. Explicit DisplayPort, USB4, or Thunderbolt support when video is needed.
+
+## Common peripherals
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+### Mouse and keyboard
+
+USB-A, USB-C, Bluetooth, or a small wireless receiver.
+:::
+
+::: {.tej-visual-card}
+### Headphones and microphone
+
+3.5 mm audio, USB-A, USB-C, or Bluetooth.
+:::
+
+::: {.tej-visual-card}
+### Storage and printers
+
+Flash drive, HDD, SSD, card reader, printer, scanner, or camera.
+:::
+
+::: {.tej-visual-card}
+### Controllers
+
+Webcam, game controller, drawing tablet, robotics controller, or microcontroller.
+:::
+::::
+
+## Clean cable management
+
+:::: {.tej-path-strip}
+<div><strong>BACK</strong>Fixed cables: power, monitor, Ethernet, keyboard, mouse</div>
+<div><strong>EDGE</strong>Route with gentle bends and hook-and-loop straps</div>
+<div><strong>CLEAR</strong>Keep vents, feet, chair wheels, and walkways free</div>
+::::
+
+Leave a small service loop. Label both ends of similar cables. Do not pull tight, crush under furniture, or hang weight from a connector.
+
+**Visual check:** photograph the back of one correctly connected computer. Label power, monitor signal, Ethernet, keyboard, mouse, audio, and one spare USB port.
+
+[Continue to Networking](../../networking/)

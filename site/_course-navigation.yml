@@ -125,6 +125,15 @@ website:
               href: "tej3-4/circuits/kirchhoffs-laws.qmd"
             - text: "5. Linear Algebra for Circuits"
               href: "tej3-4/circuits/linear-algebra-circuits.qmd"
+        - section: "6. Computer Systems"
+          href: "tej3-4/computer-systems/index.qmd"
+          contents:
+            - text: "1. Open a Computer Safely and Identify the Parts"
+              href: "tej3-4/computer-systems/safe-opening-and-parts/index.qmd"
+            - text: "2. Monitors, Signals, Ports, and Cables"
+              href: "tej3-4/computer-systems/monitors-ports-and-peripherals/index.qmd"
+            - text: "3. USB, Peripherals, and Cable Management"
+              href: "tej3-4/computer-systems/usb-and-cable-management/index.qmd"
         - section: "7. Linux and Operating Systems"
           href: "tej3-4/linux-operating-systems/index.qmd"
           contents:
@@ -152,6 +161,15 @@ website:
               href: "tej3-4/linux-operating-systems/networking-ssh-tmux.qmd"
             - text: "12. Power and Raspberry Pi Bridge"
               href: "tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.qmd"
+        - section: "8. Networking"
+          href: "tej3-4/networking/index.qmd"
+          contents:
+            - text: "1. How Wi-Fi and Ethernet Connect"
+              href: "tej3-4/networking/how-wifi-and-ethernet-connect/index.qmd"
+            - text: "2. Ethernet Cable Categories and Speeds"
+              href: "tej3-4/networking/ethernet-cable-categories/index.qmd"
+            - text: "3. Build and Test an Ethernet Cable"
+              href: "tej3-4/networking/build-and-test-ethernet-cable/index.qmd"
     - id: tas2
       title: "General Design & Fabrication"
       style: docked

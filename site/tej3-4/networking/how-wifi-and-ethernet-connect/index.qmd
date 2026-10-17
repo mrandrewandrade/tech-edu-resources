@@ -1,0 +1,55 @@
+---
+title: "How Wi-Fi and Ethernet Connect"
+description: "Follow data from a device through an access point or Ethernet cable, switch, router, and Internet service."
+categories: [networking, Wi-Fi, Ethernet, switch, router]
+body-classes: "tej-networking bs-learn-article ter-notes-lesson tej-visual-page"
+---
+
+Wi-Fi is not the Internet. Ethernet is not the Internet. Both are ways to join a local network.
+
+::: {.tej-image-hero}
+![A local-area network diagram showing wired and wireless devices.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Home_LAN_local_area_network_example_diagram.png)
+:::
+
+*Figure 1. One local network can use Wi-Fi and Ethernet at the same time. [Open image source and licence.](https://commons.wikimedia.org/wiki/File:Home_LAN_local_area_network_example_diagram.png)*
+
+::: {.tej-path-strip}
+<div><strong>1</strong>Device uses Wi-Fi or Ethernet</div>
+<div><strong>2</strong>Switch links the local wired devices</div>
+<div><strong>3</strong>Router links the local network to other networks</div>
+:::
+
+## Switch or router?
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+![Five-port Ethernet switch.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Netgear_Gigabit_Switch_5-port.jpg)
+
+### Switch: same local network
+
+Learns which device is on each port and forwards Ethernet frames using MAC addresses. It gives the class more Ethernet ports. It does not normally create the Internet connection.
+
+*Figure 2. Classroom-style switch. [Open source and licence.](https://commons.wikimedia.org/wiki/File:Netgear_Gigabit_Switch_5-port.jpg)*
+:::
+
+::: {.tej-visual-card}
+### Router: between networks
+
+Forwards IP packets between different networks. The school router or gateway connects the classroom network toward the Internet.
+
+A home Wi-Fi router combines several jobs in one box: router, switch, Wi-Fi access point, DHCP, NAT, and firewall.
+:::
+::::
+
+## Classroom path
+
+**COMPUTER → ETHERNET CABLE → CLASS SWITCH → SCHOOL ROUTER/GATEWAY → INTERNET SERVICE**
+
+- **Access point:** provides the Wi-Fi radio link.
+- **DHCP:** gives a device local network settings.
+- **DNS:** translates a name such as `example.org` into an IP address.
+- **Modem or ONT:** connects a customer network to cable, DSL, fibre, or another provider link.
+
+**Quick check:** if Wi-Fi connects but websites do not load, test local IP settings, gateway reachability, DNS, and Internet service separately.
+
+[Next: choose an Ethernet cable](../ethernet-cable-categories/)

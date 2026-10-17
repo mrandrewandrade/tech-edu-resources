@@ -15,16 +15,16 @@
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="design" aria-pressed="false">3. Design<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="portfolio" aria-pressed="false">4. Project Portfolio<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="circuits-electronics" aria-pressed="false">5. Circuits and Electronics<span class="bs-learn-filter-count">×5</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="computer-systems" aria-pressed="false">6. Computer Systems<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="computer-systems" aria-pressed="false">6. Computer Systems<span class="bs-learn-filter-count">×3</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="linux-operating-systems" aria-pressed="false">7. Linux and Operating Systems<span class="bs-learn-filter-count">×12</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="networking" aria-pressed="false">8. Networking<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="networking" aria-pressed="false">8. Networking<span class="bs-learn-filter-count">×3</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="programming-interfacing" aria-pressed="false">9. Programming and Interfacing<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="robotics-control" aria-pressed="false">10. Robotics and Control Systems<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="engineering-preparation" aria-pressed="false">11. Engineering Preparation<span class="bs-learn-filter-count">×1</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 26 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 30 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -137,16 +137,30 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="computer-systems" data-bs-total-lessons="1" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="computer-systems" data-bs-total-lessons="3" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">6. Computer Systems</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="computer-systems/index.html">6. Computer Systems</a><span data-bs-learn-group-count>3 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Computer Systems Sequence&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;The current computer-systems notes remain available while their package order is reconciled.&quot;, &quot;The final sequence will connect hardware evidence to recovery and commissioning.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Open a Computer Safely and Identify the Parts&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Use power and static precautions, identify the main internal parts, and compare HDD, SATA SSD, and M.2 storage.&quot;, &quot;Safe part recognition prepares students to inspect and service a desktop computer.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Computer Systems Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Computer Systems Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>The current computer-systems notes remain available while their package order is reconciled.</p>
-        <p>The final sequence will connect hardware evidence to recovery and commissioning.</p>
+        <summary aria-label="Show description for Open a Computer Safely and Identify the Parts"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/safe-opening-and-parts/index.html">1. Open a Computer Safely and Identify the Parts</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Use power and static precautions, identify the main internal parts, and compare HDD, SATA SSD, and M.2 storage.</p>
+        <p>Safe part recognition prepares students to inspect and service a desktop computer.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Monitors, Signals, Ports, and Cables&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.&quot;, &quot;Port and cable recognition prevents forced connections and helps diagnose display problems.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Monitors, Signals, Ports, and Cables"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/monitors-ports-and-peripherals/index.html">2. Monitors, Signals, Ports, and Cables</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.</p>
+        <p>Port and cable recognition prevents forced connections and helps diagnose display problems.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;USB, Peripherals, and Cable Management&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.&quot;, &quot;A serviceable workstation is easier to use, inspect, and troubleshoot.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for USB, Peripherals, and Cable Management"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/usb-and-cable-management/index.html">3. USB, Peripherals, and Cable Management</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.</p>
+        <p>A serviceable workstation is easier to use, inspect, and troubleshoot.</p>
       </details>
     </article>
   </div>
@@ -245,16 +259,30 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="networking" data-bs-total-lessons="1" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="networking" data-bs-total-lessons="3" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">8. Networking</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="networking/index.html">8. Networking</a><span data-bs-learn-group-count>3 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Networking Sequence&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Core networking appears in the Linux path while a dedicated module is developed.&quot;, &quot;The future module will add switching, routing, and service design.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;How Wi-Fi and Ethernet Connect&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Trace data through an access point or cable, a switch, a router, and Internet service.&quot;, &quot;Separating the jobs of Wi-Fi, switching, and routing makes network faults easier to locate.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Networking Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Networking Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Core networking appears in the Linux path while a dedicated module is developed.</p>
-        <p>The future module will add switching, routing, and service design.</p>
+        <summary aria-label="Show description for How Wi-Fi and Ethernet Connect"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="networking/how-wifi-and-ethernet-connect/index.html">1. How Wi-Fi and Ethernet Connect</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Trace data through an access point or cable, a switch, a router, and Internet service.</p>
+        <p>Separating the jobs of Wi-Fi, switching, and routing makes network faults easier to locate.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Ethernet Cable Categories and Speeds&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Compare Cat5e, Cat6, Cat6A, and Cat8 and identify the 8P8C plug commonly called RJ45.&quot;, &quot;Cable labels and limits help students choose an appropriate connection instead of guessing by colour.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Ethernet Cable Categories and Speeds"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="networking/ethernet-cable-categories/index.html">2. Ethernet Cable Categories and Speeds</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Compare Cat5e, Cat6, Cat6A, and Cat8 and identify the 8P8C plug commonly called RJ45.</p>
+        <p>Cable labels and limits help students choose an appropriate connection instead of guessing by colour.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build and Test an Ethernet Cable&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Terminate both ends in T568B order, inspect the crimp, and verify all eight conductors with a tester.&quot;, &quot;A complete build-and-test procedure turns cable theory into reliable classroom work.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Build and Test an Ethernet Cable"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="networking/build-and-test-ethernet-cable/index.html">3. Build and Test an Ethernet Cable</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Terminate both ends in T568B order, inspect the crimp, and verify all eight conductors with a tester.</p>
+        <p>A complete build-and-test procedure turns cable theory into reliable classroom work.</p>
       </details>
     </article>
   </div>

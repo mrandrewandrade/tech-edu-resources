@@ -1,0 +1,189 @@
+---
+title: "Build and Test an Ethernet Cable"
+description: "The complete classroom sequence for terminating an 8P8C plug in T568B order and testing the patch cable."
+categories: [networking, Ethernet, T568B, 8P8C, cable tester]
+body-classes: "tej-networking bs-learn-article ter-notes-lesson tej-visual-page"
+---
+
+This is the complete step-by-step sequence from the classroom presentation.
+
+::: {.callout-important title="Safety and tools"}
+Wear safety glasses when trimming conductors. Work only on an unplugged cable. Use the demonstrated stripper, cutter, and crimper. Keep wire clippings off the floor.
+:::
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+![Cable stripper, cable tester, punch-down tool, and modular crimper.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Cable_stripper%2C_cable_tester_%28RJ45%2C_RJ11%29%2C_LSA-Tool_and_crimping_tool.jpg)
+
+### Tools
+
+Cable, matching 8P8C plugs, stripper/cutter, crimper, tester, ruler, and scrap container.
+
+*Figure 1. Tools. [Open source and CC BY 4.0 licence.](https://commons.wikimedia.org/wiki/File:Cable_stripper,_cable_tester_(RJ45,_RJ11),_LSA-Tool_and_crimping_tool.jpg)*
+:::
+
+::: {.tej-visual-card}
+![Eight conductors arranged in T568B order.](https://commons.wikimedia.org/wiki/Special:Redirect/file/RJ-45_TIA-568B_Right.png)
+
+### T568B order
+
+Use the same order on both ends for this straight-through cable.
+
+*Figure 2. [Open source and licence.](https://commons.wikimedia.org/wiki/File:RJ-45_TIA-568B_Right.png)*
+:::
+::::
+
+::: {.tej-wire-order}
+<span>1 white-orange</span><span>2 orange</span><span>3 white-green</span><span>4 blue</span><span>5 white-blue</span><span>6 green</span><span>7 white-brown</span><span>8 brown</span>
+:::
+
+## Procedure
+
+::: {.tej-step-grid}
+::: {.tej-step-card}
+<span class="tej-step-number">0</span>
+
+### Measure and cut
+
+Leave enough cable for a gentle route and a small service loop.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">1</span>
+
+### Remove the outer jacket
+
+Strip about 25 to 40 mm. Cut lightly. Do not nick the eight insulated conductors.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">2</span>
+
+### Inspect every conductor
+
+If copper is exposed or insulation is cut, remove the damaged section and start again.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">3</span>
+
+### Untangle and flatten
+
+Separate the four pairs. Untwist only the length needed to reach the plug.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">4</span>
+
+### Arrange T568B
+
+Place all eight conductors in the colour order shown above.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">5</span>
+
+### Trim to an even 13 mm
+
+Pinch the order between your fingers. Cut the ends straight and even.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">6</span>
+
+### Insert and verify
+
+Clip down, gold pins up, white-orange on the left. Every wire reaches the front. About 6 mm of jacket enters the plug.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">7</span>
+
+### Crimp
+
+Insert the plug fully into the correct crimper slot. Squeeze completely using the demonstrated tool procedure.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">8</span>
+
+### Inspect the termination
+
+All contacts sit evenly. The strain relief grips the jacket. Gently tug the cable.
+:::
+
+::: {.tej-step-card}
+<span class="tej-step-number">9</span>
+
+### Finish the other end and test
+
+Use T568B again. A good tester shows pins 1 through 8 in the same order at both ends.
+:::
+:::
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+![Outer jacket being removed from an Ethernet cable.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Assemblaggio_cavo_RJ45_passo_1.jpg)
+
+### Steps 1 and 2
+
+Remove only the jacket, then inspect the inner insulation.
+
+*Figure 3. [Open source and licence.](https://commons.wikimedia.org/wiki/File:Assemblaggio_cavo_RJ45_passo_1.jpg)*
+:::
+
+::: {.tej-visual-card}
+![Twisted pairs separated for Ethernet termination.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Assemblaggio_cavo_RJ45_passo_2.jpg)
+
+### Step 3
+
+Separate the pairs and keep the untwisted length short.
+
+*Figure 4. [Open source and licence.](https://commons.wikimedia.org/wiki/File:Assemblaggio_cavo_RJ45_passo_2.jpg)*
+:::
+
+::: {.tej-visual-card}
+![Ethernet conductors aligned before entering the modular plug.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Assemblaggio_cavo_RJ45_passo_3.jpg)
+
+### Steps 4 to 6
+
+Order, flatten, trim, insert, and check through the clear plug.
+
+*Figure 5. [Open source and licence.](https://commons.wikimedia.org/wiki/File:Assemblaggio_cavo_RJ45_passo_3.jpg)*
+:::
+
+::: {.tej-visual-card}
+![A photo sequence showing an 8P8C plug being inserted and crimped.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Crimping_RJ45_socket_connector.jpg)
+
+### Steps 7 and 8
+
+Crimp fully. Check contact height and strain relief before testing.
+
+*Figure 6. Public-domain visual sequence. [Open source.](https://commons.wikimedia.org/wiki/File:Crimping_RJ45_socket_connector.jpg)*
+:::
+
+::: {.tej-visual-card}
+![Network cable tester used for modular Ethernet cables.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Network_cable_tester_IMGP1639_smial_wp.jpg)
+
+### Step 9
+
+Test for correct order, opens, shorts, reversals, crossed pairs, and split pairs.
+
+*Figure 7. [Open source and licence.](https://commons.wikimedia.org/wiki/File:Network_cable_tester_IMGP1639_smial_wp.jpg)*
+:::
+::::
+
+## Final quality check
+
+- T568B order on both ends.
+- No exposed copper or cut insulation.
+- Every conductor reaches the front.
+- Jacket is under the strain relief.
+- All contacts are evenly crimped.
+- Tester shows 1 through 8 in order.
+
+## Evidence
+
+Take five photos: stripped jacket, flattened T568B order, head-on view before crimping, finished connector, and tester result.
+
+[Return to Networking](../)

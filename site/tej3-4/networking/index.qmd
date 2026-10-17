@@ -1,0 +1,37 @@
+---
+title: "12. Networking and Systems"
+description: "A visual route from Wi-Fi and Ethernet to switches, routers, cable categories, and a tested T568B patch cable."
+categories: [networking, Ethernet, Wi-Fi, systems]
+---
+
+Follow the path, choose the cable, then build and test it.
+
+:::: {.tej-visual-grid}
+::: {.tej-visual-card}
+![A home local-area network with wired and wireless devices.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Home_LAN_local_area_network_example_diagram.png)
+
+### 1. Wi-Fi, Ethernet, switch, router
+
+[Trace the path to the Internet](how-wifi-and-ethernet-connect/)
+:::
+
+::: {.tej-visual-card}
+![Numbered contacts on an 8P8C plug commonly called RJ45.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Rj45plug-8p8c.png)
+
+### 2. Cable categories
+
+[Compare Cat5e, Cat6, Cat6A, and Cat8](ethernet-cable-categories/)
+:::
+
+::: {.tej-visual-card}
+![An Ethernet cable being prepared for an 8P8C plug.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Assemblaggio_cavo_RJ45_passo_1.jpg)
+
+### 3. Build and test
+
+[Follow the complete classroom T568B procedure](build-and-test-ethernet-cable/)
+:::
+::::
+
+::: {.callout-note title="Classroom network"}
+Computers connect to the **class switch**. One switch port connects the classroom to the school network. Students do not reset or reconfigure shared network equipment.
+:::

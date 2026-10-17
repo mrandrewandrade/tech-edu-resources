@@ -34,6 +34,11 @@ project:
     - "tej3-4/circuits/**/*.qmd"
     - "tej3-4/engineering-preparation-track/**/*.qmd"
     - "tej3-4/electronics-library/**/*.qmd"
+    - "tej3-4/computer-systems/index.qmd"
+    - "tej3-4/computer-systems/safe-opening-and-parts/index.qmd"
+    - "tej3-4/computer-systems/monitors-ports-and-peripherals/index.qmd"
+    - "tej3-4/computer-systems/usb-and-cable-management/index.qmd"
+    - "tej3-4/networking/**/*.qmd"
     - "tej3-4/linux-operating-systems/**/*.qmd"
     - "tej3-4/09-linux-operating-systems/**/*.qmd"
   pre-render:
@@ -141,6 +146,7 @@ format:
       - assets/bs-learn.css
       - assets/tej-curriculum.css
       - assets/tej-equations-v2.css
+      - assets/tej-systems-visual.css
     include-after-body:
       - includes/bs-scripts.html
     include-in-header:

@@ -8,7 +8,7 @@
       <input id="tej-networking-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 1 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 3 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,16 +18,30 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="networking" data-bs-total-lessons="1" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="networking" data-bs-total-lessons="3" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">8. Networking</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">8. Networking</a><span data-bs-learn-group-count>3 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Networking Sequence&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Core networking appears in the Linux path while a dedicated module is developed.&quot;, &quot;The future module will add switching, routing, and service design.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;How Wi-Fi and Ethernet Connect&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Trace data through an access point or cable, a switch, a router, and Internet service.&quot;, &quot;Separating the jobs of Wi-Fi, switching, and routing makes network faults easier to locate.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Networking Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Networking Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Core networking appears in the Linux path while a dedicated module is developed.</p>
-        <p>The future module will add switching, routing, and service design.</p>
+        <summary aria-label="Show description for How Wi-Fi and Ethernet Connect"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="how-wifi-and-ethernet-connect/index.html">1. How Wi-Fi and Ethernet Connect</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Trace data through an access point or cable, a switch, a router, and Internet service.</p>
+        <p>Separating the jobs of Wi-Fi, switching, and routing makes network faults easier to locate.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Ethernet Cable Categories and Speeds&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Compare Cat5e, Cat6, Cat6A, and Cat8 and identify the 8P8C plug commonly called RJ45.&quot;, &quot;Cable labels and limits help students choose an appropriate connection instead of guessing by colour.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Ethernet Cable Categories and Speeds"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="ethernet-cable-categories/index.html">2. Ethernet Cable Categories and Speeds</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Compare Cat5e, Cat6, Cat6A, and Cat8 and identify the 8P8C plug commonly called RJ45.</p>
+        <p>Cable labels and limits help students choose an appropriate connection instead of guessing by colour.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="networking" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build and Test an Ethernet Cable&quot;, &quot;Networking&quot;]" data-bs-search-body="[&quot;Terminate both ends in T568B order, inspect the crimp, and verify all eight conductors with a tester.&quot;, &quot;A complete build-and-test procedure turns cable theory into reliable classroom work.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Build and Test an Ethernet Cable"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="build-and-test-ethernet-cable/index.html">3. Build and Test an Ethernet Cable</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Terminate both ends in T568B order, inspect the crimp, and verify all eight conductors with a tester.</p>
+        <p>A complete build-and-test procedure turns cable theory into reliable classroom work.</p>
       </details>
     </article>
   </div>

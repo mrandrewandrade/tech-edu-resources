@@ -8,7 +8,7 @@
       <input id="tej-computer-systems-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 1 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 3 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,16 +18,30 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="computer-systems" data-bs-total-lessons="1" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="computer-systems" data-bs-total-lessons="3" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">6. Computer Systems</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">6. Computer Systems</a><span data-bs-learn-group-count>3 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Computer Systems Sequence&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;The current computer-systems notes remain available while their package order is reconciled.&quot;, &quot;The final sequence will connect hardware evidence to recovery and commissioning.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Open a Computer Safely and Identify the Parts&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Use power and static precautions, identify the main internal parts, and compare HDD, SATA SSD, and M.2 storage.&quot;, &quot;Safe part recognition prepares students to inspect and service a desktop computer.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Computer Systems Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Computer Systems Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>The current computer-systems notes remain available while their package order is reconciled.</p>
-        <p>The final sequence will connect hardware evidence to recovery and commissioning.</p>
+        <summary aria-label="Show description for Open a Computer Safely and Identify the Parts"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="safe-opening-and-parts/index.html">1. Open a Computer Safely and Identify the Parts</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Use power and static precautions, identify the main internal parts, and compare HDD, SATA SSD, and M.2 storage.</p>
+        <p>Safe part recognition prepares students to inspect and service a desktop computer.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Monitors, Signals, Ports, and Cables&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.&quot;, &quot;Port and cable recognition prevents forced connections and helps diagnose display problems.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Monitors, Signals, Ports, and Cables"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="monitors-ports-and-peripherals/index.html">2. Monitors, Signals, Ports, and Cables</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.</p>
+        <p>Port and cable recognition prevents forced connections and helps diagnose display problems.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;USB, Peripherals, and Cable Management&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.&quot;, &quot;A serviceable workstation is easier to use, inspect, and troubleshoot.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for USB, Peripherals, and Cable Management"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="usb-and-cable-management/index.html">3. USB, Peripherals, and Cable Management</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.</p>
+        <p>A serviceable workstation is easier to use, inspect, and troubleshoot.</p>
       </details>
     </article>
   </div>
