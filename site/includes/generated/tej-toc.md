@@ -15,7 +15,7 @@
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="design" aria-pressed="false">3. Design<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="portfolio" aria-pressed="false">4. Project Portfolio<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="circuits-electronics" aria-pressed="false">5. Circuits and Electronics<span class="bs-learn-filter-count">×5</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="computer-systems" aria-pressed="false">6. Computer Systems<span class="bs-learn-filter-count">×3</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="computer-systems" aria-pressed="false">6. Computer Systems<span class="bs-learn-filter-count">×2</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="linux-operating-systems" aria-pressed="false">7. Linux and Operating Systems<span class="bs-learn-filter-count">×12</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="networking" aria-pressed="false">8. Networking<span class="bs-learn-filter-count">×3</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="programming-interfacing" aria-pressed="false">9. Programming and Interfacing<span class="bs-learn-filter-count">×1</span></button>
@@ -24,7 +24,7 @@
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 30 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 29 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -137,9 +137,9 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="computer-systems" data-bs-total-lessons="3" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="computer-systems" data-bs-total-lessons="2" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="computer-systems/index.html">6. Computer Systems</a><span data-bs-learn-group-count>3 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="computer-systems/index.html">6. Computer Systems</a><span data-bs-learn-group-count>2 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Open a Computer Safely and Identify the Parts&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Use power and static precautions, identify the main internal parts, and compare HDD, SATA SSD, and M.2 storage.&quot;, &quot;Safe part recognition prepares students to inspect and service a desktop computer.&quot;]">
@@ -149,16 +149,9 @@
         <p>Safe part recognition prepares students to inspect and service a desktop computer.</p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Monitors, Signals, Ports, and Cables&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.&quot;, &quot;Port and cable recognition prevents forced connections and helps diagnose display problems.&quot;]">
-      <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Monitors, Signals, Ports, and Cables"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/monitors-ports-and-peripherals/index.html">2. Monitors, Signals, Ports, and Cables</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.</p>
-        <p>Port and cable recognition prevents forced connections and helps diagnose display problems.</p>
-      </details>
-    </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="computer-systems" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;USB, Peripherals, and Cable Management&quot;, &quot;Computer Systems&quot;]" data-bs-search-body="[&quot;Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.&quot;, &quot;A serviceable workstation is easier to use, inspect, and troubleshoot.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for USB, Peripherals, and Cable Management"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/usb-and-cable-management/index.html">3. USB, Peripherals, and Cable Management</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for USB, Peripherals, and Cable Management"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computer-systems/usb-and-cable-management/index.html">2. USB, Peripherals, and Cable Management</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Recognize USB connector shapes, check USB-C capabilities, connect common peripherals, and route cables cleanly.</p>
         <p>A serviceable workstation is easier to use, inspect, and troubleshoot.</p>
       </details>

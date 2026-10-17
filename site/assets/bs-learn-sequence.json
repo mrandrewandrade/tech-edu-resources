@@ -1083,7 +1083,7 @@
       "track_summary": "Connect physical computer parts, storage, displays, USB, peripherals, and safe workstation setup.",
       "track_use": "Recognizing the hardware and its connections supports safe inspection, upgrades, and troubleshooting.",
       "previous_route": null,
-      "next_route": "/commons/tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
+      "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
       "next_starts_new_track": false,
       "sequence_index": 35
     },
@@ -1093,29 +1093,6 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 2,
-      "route": "/commons/tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
-      "source": "tej3-4/computer-systems/monitors-ports-and-peripherals/index.qmd",
-      "title": "Monitors, Signals, Ports, and Cables",
-      "summary": "Compare analog and digital signals and match VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C plugs to ports.",
-      "use": "Port and cable recognition prevents forced connections and helps diagnose display problems.",
-      "resources": [],
-      "track_id": "computer-systems",
-      "track_order": 6,
-      "track_title": "Computer Systems",
-      "track_hub": "tej3-4/computer-systems/index.qmd",
-      "track_summary": "Connect physical computer parts, storage, displays, USB, peripherals, and safe workstation setup.",
-      "track_use": "Recognizing the hardware and its connections supports safe inspection, upgrades, and troubleshooting.",
-      "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
-      "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
-      "next_starts_new_track": false,
-      "sequence_index": 36
-    },
-    {
-      "course_id": "tej",
-      "course_title": "TEJ3/4 Computer Engineering",
-      "course_hub": "/commons/tej3-4/index.html",
-      "sidebar_id": "tej",
-      "lesson_order": 3,
       "route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
       "source": "tej3-4/computer-systems/usb-and-cable-management/index.qmd",
       "title": "USB, Peripherals, and Cable Management",
@@ -1128,10 +1105,10 @@
       "track_hub": "tej3-4/computer-systems/index.qmd",
       "track_summary": "Connect physical computer parts, storage, displays, USB, peripherals, and safe workstation setup.",
       "track_use": "Recognizing the hardware and its connections supports safe inspection, upgrades, and troubleshooting.",
-      "previous_route": "/commons/tej3-4/computer-systems/monitors-ports-and-peripherals/index.html",
+      "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 37
+      "sequence_index": 36
     },
     {
       "course_id": "tej",
@@ -1159,7 +1136,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_starts_new_track": false,
-      "sequence_index": 38
+      "sequence_index": 37
     },
     {
       "course_id": "tej",
@@ -1191,7 +1168,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_starts_new_track": false,
-      "sequence_index": 39
+      "sequence_index": 38
     },
     {
       "course_id": "tej",
@@ -1231,7 +1208,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_starts_new_track": false,
-      "sequence_index": 40
+      "sequence_index": 39
     },
     {
       "course_id": "tej",
@@ -1254,7 +1231,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_starts_new_track": false,
-      "sequence_index": 41
+      "sequence_index": 40
     },
     {
       "course_id": "tej",
@@ -1277,7 +1254,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_starts_new_track": false,
-      "sequence_index": 42
+      "sequence_index": 41
     },
     {
       "course_id": "tej",
@@ -1300,7 +1277,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_starts_new_track": false,
-      "sequence_index": 43
+      "sequence_index": 42
     },
     {
       "course_id": "tej",
@@ -1323,7 +1300,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_starts_new_track": false,
-      "sequence_index": 44
+      "sequence_index": 43
     },
     {
       "course_id": "tej",
@@ -1346,7 +1323,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_starts_new_track": false,
-      "sequence_index": 45
+      "sequence_index": 44
     },
     {
       "course_id": "tej",
@@ -1369,7 +1346,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_starts_new_track": false,
-      "sequence_index": 46
+      "sequence_index": 45
     },
     {
       "course_id": "tej",
@@ -1392,7 +1369,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_starts_new_track": false,
-      "sequence_index": 47
+      "sequence_index": 46
     },
     {
       "course_id": "tej",
@@ -1415,7 +1392,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
       "next_starts_new_track": false,
-      "sequence_index": 48
+      "sequence_index": 47
     },
     {
       "course_id": "tej",
@@ -1438,7 +1415,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 49
+      "sequence_index": 48
     },
     {
       "course_id": "tej",
@@ -1461,7 +1438,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 50
+      "sequence_index": 49
     },
     {
       "course_id": "tej",
@@ -1484,7 +1461,7 @@
       "previous_route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
       "next_route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 51
+      "sequence_index": 50
     },
     {
       "course_id": "tej",
@@ -1507,7 +1484,7 @@
       "previous_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 52
+      "sequence_index": 51
     }
   ]
 }

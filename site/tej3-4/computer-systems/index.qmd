@@ -6,7 +6,7 @@ sidebar: tej
 body-classes: "tej-computer-systems bs-learn-article tej-visual-page"
 ---
 
-Start with the complete computer, identify what each part does, then connect the monitor and peripherals safely.
+Start with the complete computer, identify what each part does, then connect peripherals safely.
 
 :::: {.tej-visual-grid}
 ::: {.tej-visual-card}
@@ -20,25 +20,19 @@ Power safety, static control, motherboard, CPU, RAM, storage, cooling, and expan
 :::
 
 ::: {.tej-visual-card}
-![A continuous analog waveform with discrete digital samples.](https://commons.wikimedia.org/wiki/Special:Redirect/file/Digital.signal.discret.svg)
-
-### 2. Monitors, signals, and ports
-
-Analog and digital signals plus VGA, DVI, HDMI, DisplayPort, Mini DisplayPort, FireWire, and USB-C.
-
-[Compare the ports and cables](monitors-ports-and-peripherals/)
-:::
-
-::: {.tej-visual-card}
 ![USB Type-A, Type-B, Mini, Micro, and Type-C connector shapes.](https://commons.wikimedia.org/wiki/Special:Redirect/file/USB_A%2C_B%2C_C_%281.1-3.0%29_connectors.svg)
 
-### 3. USB and peripherals
+### 2. USB and peripherals
 
 USB connector shapes, USB-C capabilities, mouse, keyboard, audio, storage, and cable management.
 
 [Connect the workstation](usb-and-cable-management/)
 :::
 ::::
+
+## Presentation
+
+[Download Monitors, Signals, Ports, and Cables](../../assets/presentations/monitors-signals-ports-cables.pptx){download="monitors-signals-ports-cables.pptx"}
 
 ::: {.callout-important title="Hardware safety boundary"}
 Power off and unplug before opening a computer. Control static and handle circuit boards by their edges. Never open a power-supply enclosure.
