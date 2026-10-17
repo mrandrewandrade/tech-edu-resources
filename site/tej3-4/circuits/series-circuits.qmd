@@ -23,6 +23,7 @@ You will identify a series circuit and calculate total resistance, current, volt
 - [Student worked models for Questions 2 and 4](https://docs.google.com/document/d/1W-SnG4eF0N2PR0vZ3hV8-P-0mhAmmZ-LaEedMVeLZpw/edit)
 - [Worked solution: Question 2](#question-2-complete-series-analysis)
 - [Worked solution: Question 4](#question-4-choose-a-dropping-resistor)
+- [Sigma notation LaTeX source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/sigma-notation/sigma-notation.tex)
 
 **Core references**
 
@@ -76,7 +77,24 @@ $$
 V_k = I_T R_k
 $$ {#eq-series-component-voltage}
 
-Here, $k$ means any component in the path. Keep full calculator precision until the final answer.
+### How sigma notation works
+
+$$
+R_T=R_{eq}=\sum_{k=1}^{n}R_k=R_1+R_2+\cdots+R_n
+$$ {#eq-series-sigma-resistance}
+
+$$
+V_T=\sum_{k=1}^{n}V_k=V_1+V_2+\cdots+V_n
+$$ {#eq-series-sigma-voltage}
+
+| Symbol | Meaning |
+|---|---|
+| $R_T$ or $R_{eq}$ | total or equivalent resistance |
+| $R_k$ or $V_k$ | the value at position $k$ |
+| $k$ | the index variable; it changes through $1,2,3,\ldots,n$ |
+| $n$ | the fixed last index; the sum stops here |
+
+$\Sigma$ means add each term while $k$ runs from $1$ to $n$. The final expanded term is $R_n$ or $V_n$. Keep full calculator precision until the final answer.
 
 $$
 \sum_{k=1}^{n} V_k \overset{?}{=} V_T
@@ -129,3 +147,4 @@ $$ {#eq-series-worked-q4-power}
 
 **Key note:** A $0.25\,\mathrm{W}$ resistor is too close to the calculated $0.240\,\mathrm{W}$ load.
 :::
+
