@@ -1,0 +1,30 @@
+% Reusable TikZ source for the series-parallel circuit diagrams.
+% The parent document defines Navy, Blue, and Red and loads TikZ with arrows.meta.
+\newcommand{\mixedcircuit}[5]{%
+\begin{tikzpicture}[line width=1.1pt,>=Latex,navy/.style={draw=Navy},every node/.style={font=\small}]
+  \draw[Navy] (0,0) -- (0,1.15);
+  \draw[Navy,fill=white] (0,1.65) circle (0.50);
+  \node[color=Navy,font=\bfseries] at (0,1.78) {$+$};
+  \node[color=Navy,font=\bfseries] at (0,1.49) {$-$};
+  \node[anchor=east,color=Navy] at (-0.62,1.65) {$V_T=#1$};
+  \draw[Navy] (0,2.15) -- (0,4.0) -- (1.65,4.0);
+  \node[draw=Navy,line width=1.1pt,fill=white,minimum width=2.0cm,minimum height=0.72cm] (r1) at (2.85,4.0) {$R_1=#2$};
+  \draw[Navy] (1.65,4.0) -- (r1.west);
+  \draw[Navy] (r1.east) -- (4.25,4.0) -- (7.4,4.0);
+  \fill[Navy] (4.55,4.0) circle (0.06);
+  \fill[Navy] (7.1,4.0) circle (0.06);
+  \node[draw=Navy,line width=1.1pt,fill=white,minimum width=0.82cm,minimum height=1.55cm,align=center] (r2) at (4.55,2.15) {$R_2$\\$#3$};
+  \node[draw=Navy,line width=1.1pt,fill=white,minimum width=0.82cm,minimum height=1.55cm,align=center] (r3) at (7.1,2.15) {$R_3$\\$#4$};
+  \draw[Navy] (4.55,4.0) -- (r2.north);
+  \draw[Navy] (r2.south) -- (4.55,0);
+  \draw[Navy] (7.1,4.0) -- (r3.north);
+  \draw[Navy] (r3.south) -- (7.1,0);
+  \draw[Navy] (7.1,0) -- (0,0);
+  \fill[Navy] (4.55,0) circle (0.06);
+  \draw[Blue,-Latex,line width=1.1pt] (0.7,4.35) -- (1.6,4.35) node[midway,above,color=Navy] {$I_T$};
+  \draw[Blue,-Latex,line width=1.1pt] (4.9,3.55) -- (4.9,2.85) node[midway,right,color=Navy] {$I_2$};
+  \draw[Blue,-Latex,line width=1.1pt] (7.45,3.55) -- (7.45,2.85) node[midway,right,color=Navy] {$I_3$};
+  \ifx&#5&\else\node[color=Red,font=\bfseries\small,anchor=west] at (0.2,-0.55) {$#5$};\fi
+\end{tikzpicture}%
+}
+
