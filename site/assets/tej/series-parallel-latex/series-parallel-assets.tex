@@ -1,0 +1,134 @@
+\documentclass[10pt]{article}
+\usepackage[paperwidth=12in,paperheight=4.8in,margin=0.24in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[scaled=0.96]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\definecolor{Navy}{HTML}{17234D}
+\definecolor{Blue}{HTML}{087EBA}
+\definecolor{Green}{HTML}{147D52}
+\definecolor{Red}{HTML}{A52A2A}
+
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\newcommand{\sectionlabel}[1]{{\color{Navy}\bfseries\small #1}\par\vspace{0.10in}}
+
+\input{series-parallel-circuits.tex}
+
+\newcommand{\equationpage}[6]{%
+\thispagestyle{empty}
+\begin{minipage}[t][4.00in][c]{0.44\textwidth}
+  \centering
+  #1
+\end{minipage}\hfill
+\begin{minipage}[t][4.00in][c]{0.53\textwidth}
+  \sectionlabel{GENERAL EQUATIONS}
+  {\large
+  \begin{align*}
+    #2\\[0.08in]
+    #3\\[0.08in]
+    #4
+  \end{align*}}
+  \vspace{0.06in}
+  \sectionlabel{FOR THIS SCHEMATIC}
+  {\large
+  \begin{align*}
+    #5\\[0.08in]
+    #6
+  \end{align*}}
+\end{minipage}
+\clearpage
+}
+
+\begin{document}
+
+% Page 1: guided example equations
+\equationpage
+  {\mixedcircuit{10.0\unit{V}}{1.0\unit{k\Omega}}{2.0\unit{k\Omega}}{2.0\unit{k\Omega}}{}}
+  {\dfrac{1}{R_P}&=\dfrac{1}{R_a}+\dfrac{1}{R_b}}
+  {R_T&=R_S+R_P \qquad I_T=\dfrac{V_T}{R_T}}
+  {V&=IR \qquad I_T=I_a+I_b}
+  {R_{23}&=\dfrac{R_2R_3}{R_2+R_3} \qquad R_T=R_1+R_{23}}
+  {I_T&=\dfrac{V_T}{R_T} \qquad V_{23}=V_T-I_TR_1 \qquad I_T=I_2+I_3}
+
+% Page 2: guided example substitution, solution, and checks
+\thispagestyle{empty}
+\sectionlabel{SUBSTITUTE AND SOLVE}
+{\Large
+\begin{align*}
+R_{23}&=\frac{(2.0\unit{k\Omega})(2.0\unit{k\Omega})}{2.0\unit{k\Omega}+2.0\unit{k\Omega}}=1.0\unit{k\Omega}\\[0.10in]
+R_T&=R_1+R_{23}=1.0\unit{k\Omega}+1.0\unit{k\Omega}=2.0\unit{k\Omega}\\[0.10in]
+I_T&=\frac{V_T}{R_T}=\frac{10.0\unit{V}}{2.0\unit{k\Omega}}=5.0\unit{mA}\\[0.10in]
+V_1&=I_TR_1=(5.0\unit{mA})(1.0\unit{k\Omega})=5.0\unit{V}\\[0.10in]
+V_{23}&=V_T-V_1=10.0\unit{V}-5.0\unit{V}=5.0\unit{V}\\[0.10in]
+I_2=I_3&=\frac{V_{23}}{2.0\unit{k\Omega}}=2.5\unit{mA}
+\end{align*}}
+\vspace{0.05in}
+{\color{Green}\Large\bfseries
+\begin{align*}
+V_1+V_{23}&=5.0\unit{V}+5.0\unit{V}=10.0\unit{V}=V_T\quad\checkmark\\
+I_2+I_3&=2.5\unit{mA}+2.5\unit{mA}=5.0\unit{mA}=I_T\quad\checkmark
+\end{align*}}
+\clearpage
+
+% Page 3: Question 2 equations
+\equationpage
+  {\mixedcircuit{18.0\unit{V}}{3.0\unit{k\Omega}}{6.0\unit{k\Omega}}{3.0\unit{k\Omega}}{}}
+  {\dfrac{1}{R_P}&=\dfrac{1}{R_a}+\dfrac{1}{R_b}}
+  {R_T&=R_S+R_P \qquad I_T=\dfrac{V_T}{R_T}}
+  {V&=IR \qquad I_T=I_a+I_b \qquad P_T=V_TI_T}
+  {R_{23}&=\dfrac{R_2R_3}{R_2+R_3} \qquad R_T=R_1+R_{23}}
+  {I_T&=\dfrac{V_T}{R_T} \qquad V_{23}=V_T-I_TR_1 \qquad P_T=V_TI_T}
+
+% Page 4: Question 2 substitution, solution, and checks
+\thispagestyle{empty}
+\sectionlabel{SUBSTITUTE AND SOLVE}
+{\Large
+\begin{align*}
+R_{23}&=\frac{(6.0\unit{k\Omega})(3.0\unit{k\Omega})}{6.0\unit{k\Omega}+3.0\unit{k\Omega}}=2.0\unit{k\Omega}\\[0.09in]
+R_T&=3.0\unit{k\Omega}+2.0\unit{k\Omega}=5.0\unit{k\Omega}\\[0.09in]
+I_T&=\frac{18.0\unit{V}}{5.0\unit{k\Omega}}=3.60\unit{mA}\\[0.09in]
+V_1&=(3.60\unit{mA})(3.0\unit{k\Omega})=10.8\unit{V}\\[0.09in]
+V_{23}&=18.0\unit{V}-10.8\unit{V}=7.2\unit{V}\\[0.09in]
+I_2&=\frac{7.2\unit{V}}{6.0\unit{k\Omega}}=1.20\unit{mA}\qquad
+I_3=\frac{7.2\unit{V}}{3.0\unit{k\Omega}}=2.40\unit{mA}\\[0.09in]
+P_T&=(18.0\unit{V})(3.60\unit{mA})=64.8\unit{mW}
+\end{align*}}
+{\color{Green}\Large\bfseries
+\begin{align*}
+10.8\unit{V}+7.2\unit{V}&=18.0\unit{V}\quad\checkmark &
+1.20\unit{mA}+2.40\unit{mA}&=3.60\unit{mA}\quad\checkmark
+\end{align*}}
+\clearpage
+
+% Page 5: Question 4 equations
+\equationpage
+  {\mixedcircuit{20.0\unit{V}}{1.2\unit{k\Omega}}{2.4\unit{k\Omega}}{?}{I_T=10.0\unit{mA}}}
+  {V_S&=I_TR_S \qquad V_P=V_T-V_S}
+  {I_a&=\dfrac{V_P}{R_a} \qquad I_b=I_T-I_a}
+  {R_b&=\dfrac{V_P}{I_b} \qquad R_T=\dfrac{V_T}{I_T}}
+  {V_1&=I_TR_1 \qquad V_{23}=V_T-V_1 \qquad I_2=\dfrac{V_{23}}{R_2}}
+  {I_3&=I_T-I_2 \qquad R_3=\dfrac{V_{23}}{I_3} \qquad R_T=\dfrac{V_T}{I_T}}
+
+% Page 6: Question 4 substitution, solution, and checks
+\thispagestyle{empty}
+\sectionlabel{SUBSTITUTE AND SOLVE}
+{\Large
+\begin{align*}
+V_1&=(10.0\unit{mA})(1.2\unit{k\Omega})=12.0\unit{V}\\[0.09in]
+V_{23}&=20.0\unit{V}-12.0\unit{V}=8.0\unit{V}\\[0.09in]
+I_2&=\frac{8.0\unit{V}}{2.4\unit{k\Omega}}=3.33\unit{mA}\\[0.09in]
+I_3&=10.0\unit{mA}-3.33\unit{mA}=6.67\unit{mA}\\[0.09in]
+R_3&=\frac{8.0\unit{V}}{6.67\unit{mA}}\approx1.20\unit{k\Omega}\\[0.09in]
+R_T&=\frac{20.0\unit{V}}{10.0\unit{mA}}=2.00\unit{k\Omega}
+\end{align*}}
+{\color{Green}\Large\bfseries
+\begin{align*}
+3.33\unit{mA}+6.67\unit{mA}=10.0\unit{mA}=I_T\quad\checkmark
+\end{align*}}
+
+\end{document}
+
