@@ -388,6 +388,42 @@ Filters are saved in the page URL as you select them, so you can copy the addres
     class="bs-slide-card"
     data-slide-card
     data-collection="Well-Being"
+    data-courses="TAS|TER"
+    data-tags="reflection|feedback|goals|friday routine|anonymous feedback|weekly progress"
+    data-search="friday feedback weekly reflection daily goal smart goals progress check anonymous feedback qr TAS TER">
+    <a class="bs-slide-thumb" href="https://docs.google.com/presentation/d/1XhWMCHl9dYheweLlojj1VCXSJ6OnhpUQK8etCLkfbtY/edit" aria-label="Open Friday Feedback + Weekly Reflection">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true">
+        <span class="bs-slide-thumb-kicker">Well-Being</span>
+        <strong>Reflect</strong>
+        <span>Feedback + next step</span>
+      </span>
+      <img src="https://docs.google.com/presentation/d/1XhWMCHl9dYheweLlojj1VCXSJ6OnhpUQK8etCLkfbtY/export/png?pageid=g3fbe032a372_12_0" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">Well-Being</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/presentation/d/1XhWMCHl9dYheweLlojj1VCXSJ6OnhpUQK8etCLkfbtY/edit">Friday Feedback + Weekly Reflection</a></h2>
+      <p class="bs-slide-card-description">A reusable Friday routine with a reflection quote, daily-goal update, weekly progress check, next-step prompt, and anonymous-feedback QR from the classroom SMART Goal log.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses">
+        <button type="button" data-slide-card-course="TAS">TAS</button>
+        <button type="button" data-slide-card-course="TER">TER</button>
+      </div>
+      <div class="bs-slide-card-tags" aria-label="Topics">
+        <button type="button" data-slide-card-tag="reflection">Reflection</button>
+        <button type="button" data-slide-card-tag="feedback">Feedback</button>
+        <button type="button" data-slide-card-tag="goals">Goals</button>
+        <button type="button" data-slide-card-tag="friday routine">Friday routine</button>
+        <button type="button" data-slide-card-tag="anonymous feedback">Anonymous feedback</button>
+        <button type="button" data-slide-card-tag="weekly progress">Weekly progress</button>
+      </div>
+      <a class="bs-slide-open" href="https://docs.google.com/presentation/d/1XhWMCHl9dYheweLlojj1VCXSJ6OnhpUQK8etCLkfbtY/edit">Open Google Slides</a>
+      <a class="bs-slide-open" href="https://andrewandrade.ca/assets/weekly-smart-goal-progress-log-andrew-bw.pdf">Open SMART Goal log</a>
+    </div>
+  </article>
+
+  <article
+    class="bs-slide-card"
+    data-slide-card
+    data-collection="Well-Being"
     data-courses=""
     data-tags="reflection|opening activity|quotes|indigenous voices|community|well-being"
     data-search="daily opening quotes reflection opening activity indigenous voices community well-being class start discussion connection">
