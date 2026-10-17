@@ -13,6 +13,10 @@ const learnSource = fs.readFileSync(
   path.join(__dirname, "../site/assets/bs-learn.js"),
   "utf8"
 );
+const scriptIncludeSource = fs.readFileSync(
+  path.join(__dirname, "../site/includes/bs-scripts.html"),
+  "utf8"
+);
 
 assert.match(
   scrollSource,
@@ -77,6 +81,7 @@ assert.match(
   learnSource,
   /function initializeLearnLeftSidebarToggle\(\)[\s\S]*?const usesDockedSidebar = document\.body\.classList\.contains\("docked"\)[\s\S]*?if \(usesDockedSidebar\)/
 );
+assert.match(scriptIncludeSource, /"bs-learn\.js": "20261017-1"/);
 assert.doesNotMatch(learnSource, /keepExpandedWhileScrolling/);
 assert.match(learnSource, /autoCollapsePending[\s\S]*?scrollingDown[\s\S]*?collapsed = true/);
 assert.match(learnSource, /classList\.toggle\("docked", !active\)/);
