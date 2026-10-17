@@ -20,6 +20,9 @@ You will identify series and parallel groups, reduce a mixed circuit one group a
 - [Make a copy of the student handout](https://docs.google.com/document/d/1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4/copy)
 - [TEJ Electronics Quick Reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
 - [General Schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/copy)
+- [LaTeX equations and worked solutions](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/series-parallel-latex/series-parallel-assets.tex)
+- [TikZ circuit diagram source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/series-parallel-latex/series-parallel-circuits.tex)
+- [Asset build script](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/series-parallel-latex/render-assets.ps1)
 - **Teacher answer key:** restricted
 
 ## Chapter and experiment support
@@ -106,14 +109,14 @@ $$ {#eq-mixed-power}
 <figcaption><a class="ter-figure-label" href="#fig-series-parallel-example">Figure 2.</a> The common mixed-network pattern used in Questions 1, 2, and 4. <a class="ter-figure-anchor" href="#fig-series-parallel-example" aria-label="Link to Figure 2">#</a></figcaption>
 </figure>
 
-## Guided example
+## Question 1 worked example {#question-1-worked-example}
 
-A $10.0\,\mathrm{V}$ source supplies $R_1=1.0\,\mathrm{k\Omega}$ in series with $R_2=2.0\,\mathrm{k\Omega}$ and $R_3=2.0\,\mathrm{k\Omega}$ in parallel.
+A $12.0\,\mathrm{V}$ source supplies $R_1=1.0\,\mathrm{k\Omega}$ in series with $R_2=2.0\,\mathrm{k\Omega}$ and $R_3=2.0\,\mathrm{k\Omega}$ in parallel. This is the complete model for the questions that follow.
 
 **Given**
 
 $$
-V_T=10.0\,\mathrm{V},\qquad
+V_T=12.0\,\mathrm{V},\qquad
 R_1=1.0\,\mathrm{k\Omega},\qquad
 R_2=R_3=2.0\,\mathrm{k\Omega}
 $$ {#eq-mixed-example-given}
@@ -127,19 +130,32 @@ $$ {#eq-mixed-example-unknowns}
 **General equations**
 
 $$
+R_{\mathrm{parallel}}=\frac{R_aR_b}{R_a+R_b},\qquad
+R_{\mathrm{series}}=\sum_{k=1}^{n}R_k,\qquad
+I=\frac{V}{R}
+$$ {#eq-mixed-example-general-reduction}
+
+$$
+V=IR,\qquad
+P=VI
+$$ {#eq-mixed-example-general-branches}
+
+**Circuit-specific equations**
+
+$$
 R_{23}=\frac{R_2R_3}{R_2+R_3},\qquad
 R_T=R_1+R_{23},\qquad
 I_T=\frac{V_T}{R_T}
-$$ {#eq-mixed-example-general-reduction}
+$$ {#eq-mixed-example-circuit-reduction}
 
 $$
 V_1=I_TR_1,\qquad
 V_{23}=V_T-V_1,\qquad
 I_2=\frac{V_{23}}{R_2},\qquad
 I_3=\frac{V_{23}}{R_3}
-$$ {#eq-mixed-example-general-branches}
+$$ {#eq-mixed-example-circuit-branches}
 
-**Substitute and solve**
+### Step 1: Equivalent resistance
 
 $$
 R_{23}=\frac{(2.0\,\mathrm{k\Omega})(2.0\,\mathrm{k\Omega})}
@@ -152,46 +168,66 @@ R_T=1.0\,\mathrm{k\Omega}+1.0\,\mathrm{k\Omega}
 =2.0\,\mathrm{k\Omega}
 $$ {#eq-mixed-example-total-resistance}
 
+### Step 2: Total current and section voltages
+
 $$
-I_T=\frac{10.0\,\mathrm{V}}{2.0\,\mathrm{k\Omega}}
-=5.0\,\mathrm{mA}
+I_T=\frac{12.0\,\mathrm{V}}{2.0\,\mathrm{k\Omega}}
+=6.0\,\mathrm{mA}
 $$ {#eq-mixed-example-total-current}
 
 $$
-V_1=(5.0\,\mathrm{mA})(1.0\,\mathrm{k\Omega})=5.0\,\mathrm{V}
+V_1=(6.0\,\mathrm{mA})(1.0\,\mathrm{k\Omega})=6.0\,\mathrm{V}
 $$ {#eq-mixed-example-series-voltage}
 
 $$
-V_{23}=10.0\,\mathrm{V}-5.0\,\mathrm{V}=5.0\,\mathrm{V}
+V_{23}=12.0\,\mathrm{V}-6.0\,\mathrm{V}=6.0\,\mathrm{V}
 $$ {#eq-mixed-example-parallel-voltage}
 
+### Step 3: Branch currents and power
+
 $$
-I_2=I_3=\frac{5.0\,\mathrm{V}}{2.0\,\mathrm{k\Omega}}
-=2.5\,\mathrm{mA}
+I_2=I_3=\frac{6.0\,\mathrm{V}}{2.0\,\mathrm{k\Omega}}
+=3.0\,\mathrm{mA}
 $$ {#eq-mixed-example-branch-current}
 
 $$
-P_T=V_TI_T=(10.0\,\mathrm{V})(5.0\,\mathrm{mA})
-=50\,\mathrm{mW}
+P_T=V_TI_T=(12.0\,\mathrm{V})(6.0\,\mathrm{mA})
+=72\,\mathrm{mW}
 $$ {#eq-mixed-example-power}
 
 **Calculator entries**
 
 ~~~text
 (2 EXP 3 × 2 EXP 3) ÷ (2 EXP 3 + 2 EXP 3)
-10 ÷ (2 EXP 3)
-5 ÷ (2 EXP 3)
+12 ÷ (2 EXP 3)
+6 ÷ (2 EXP 3)
 ~~~
 
-**Check:** $I_2+I_3=5.0\,\mathrm{mA}=I_T$ and $V_1+V_{23}=10.0\,\mathrm{V}=V_T$.
+### Step 4: Check
+
+$$
+I_2+I_3=3.0\,\mathrm{mA}+3.0\,\mathrm{mA}=6.0\,\mathrm{mA}=I_T
+$$ {#eq-mixed-example-current-check}
+
+$$
+V_1+V_{23}=6.0\,\mathrm{V}+6.0\,\mathrm{V}=12.0\,\mathrm{V}=V_T
+$$ {#eq-mixed-example-voltage-check}
+
+### Final answers
+
+| Quantity | $R_{23}$ | $R_T$ | $I_T$ | $V_1$ | $V_{23}$ | $I_2$ | $I_3$ | $P_T$ |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Answer | **<u>$1.0\,\mathrm{k\Omega}$</u>** | **<u>$2.0\,\mathrm{k\Omega}$</u>** | **<u>$6.0\,\mathrm{mA}$</u>** | **<u>$6.0\,\mathrm{V}$</u>** | **<u>$6.0\,\mathrm{V}$</u>** | **<u>$3.0\,\mathrm{mA}$</u>** | **<u>$3.0\,\mathrm{mA}$</u>** | **<u>$72\,\mathrm{mW}$</u>** |
+
+The full calculation, check, and final-answer table are shown here before students begin guided or independent questions.
 
 ## Student questions
 
 Use the [student handout](https://docs.google.com/document/d/1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4/copy) for the fillable GUESS tables and work space.
 
-### Question 1: reduce one parallel group
+### Question 1: worked model
 
-A $12.0\,\mathrm{V}$ source supplies $R_1=1.0\,\mathrm{k\Omega}$ in series with $R_2=2.0\,\mathrm{k\Omega}$ and $R_3=2.0\,\mathrm{k\Omega}$ in parallel. Find the equivalent resistance, total current, all resistor voltages and currents, and total power.
+[Review the complete Question 1 solution](#question-1-worked-example), then use the same sequence for the remaining questions.
 
 ### Question 2: unequal parallel branches
 
@@ -221,7 +257,7 @@ A $12.0\,\mathrm{V}$ source supplies $R_S$, $R_1=330\,\mathrm{\Omega}$, and a pa
 
 ## Worked student models {#worked-solutions}
 
-Questions 2 and 4 are provided as models. Complete Questions 1, 3, and 5 independently.
+Question 1 is the complete example. Questions 2 and 4 are additional models. Complete Questions 3 and 5 independently.
 
 ::: {.callout-note collapse="true" title="Question 2: GUESS solution"}
 **Given:** $V_T=18.0\,\mathrm{V}$, $R_1=3.0\,\mathrm{k\Omega}$, $R_2=6.0\,\mathrm{k\Omega}$, $R_3=3.0\,\mathrm{k\Omega}$.
@@ -343,3 +379,4 @@ Use [Experiment 6-1](https://drive.google.com/file/d/13fG4oiClYfP4AwCF06bAYHwt2I
 **Safety:** switch off the supply before moving components or measuring resistance. Measure current with the meter placed in series, never directly across a source.
 
 Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20series-parallel%20answer%20key).
+
