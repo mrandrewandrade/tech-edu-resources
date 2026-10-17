@@ -38,6 +38,9 @@ write_config() {
   cat > "${CONFIG_FILE}" <<EOF
 # TEJ Xfce appearance values
 # Edit the numbers, save the file, rerun the script, and choose option 3.
+# Safe ranges: panel length 40-100, panel size 24-80,
+# panel icon size 16-64, and desktop icon size 24-128.
+# AUTOHIDE_BEHAVIOR: 0 = never, 1 = intelligently, 2 = always.
 STYLE_NAME=${preset_name}
 PANEL_POSITION=${panel_position}
 PANEL_LENGTH=${panel_length}
@@ -47,6 +50,42 @@ DESKTOP_ICON_SIZE=${desktop_icon_size}
 AUTOHIDE_BEHAVIOR=${autohide_behavior}
 WINDOW_BUTTON_LAYOUT=${window_button_layout}
 EOF
+}
+
+get_panel_id() {
+  xfconf-query -c xfce4-panel -p /panels 2>/dev/null | awk '/^[0-9]+$/ { print; exit }'
+}
+
+read_setting() {
+  channel="$1"
+  property="$2"
+  fallback="$3"
+  value="$(xfconf-query -c "${channel}" -p "${property}" 2>/dev/null || true)"
+  if [ -n "${value}" ]; then
+    printf '%s' "${value}"
+  else
+    printf '%s' "${fallback}"
+  fi
+}
+
+show_current_settings() {
+  panel_id="$(get_panel_id)"
+  if [ -z "${panel_id}" ]; then
+    printf '%s\n' "No Xfce panel was found. Ask your teacher for help."
+    exit 1
+  fi
+
+  panel_path="/panels/panel-${panel_id}"
+  printf '%s\n' "Current Xfce values for panel ${panel_id}:"
+  printf '  PANEL_LENGTH=%s (percentage of screen)\n' "$(read_setting xfce4-panel "${panel_path}/length" "not set")"
+  printf '  PANEL_SIZE=%s (pixels)\n' "$(read_setting xfce4-panel "${panel_path}/size" "not set")"
+  printf '  PANEL_ICON_SIZE=%s (pixels)\n' "$(read_setting xfce4-panel "${panel_path}/icon-size" "automatic")"
+  printf '  DESKTOP_ICON_SIZE=%s (pixels)\n' "$(read_setting xfce4-desktop /desktop-icons/icon-size "not set")"
+  printf '  AUTOHIDE_BEHAVIOR=%s (0 never, 1 intelligently, 2 always)\n' "$(read_setting xfce4-panel "${panel_path}/autohide-behavior" "not set")"
+  printf '  WINDOW_BUTTON_LAYOUT=%s\n' "$(read_setting xfwm4 /general/button_layout "not set")"
+  printf '%s\n' ""
+  printf '%s\n' "Investigation command:"
+  printf '%s\n' "  xfconf-query -c xfce4-panel -p ${panel_path} -l -v"
 }
 
 load_config() {
@@ -132,7 +171,7 @@ apply_config() {
       ;;
   esac
 
-  panel_id="$(xfconf-query -c xfce4-panel -p /panels 2>/dev/null | awk '/^[0-9]+$/ { print; exit }')"
+  panel_id="$(get_panel_id)"
   if [ -z "${panel_id}" ]; then
     printf '%s\n' "No Xfce panel was found. Ask your teacher for help."
     exit 1
@@ -159,8 +198,9 @@ printf '%s\n' "TEJ Linux Mint Xfce appearance lab"
 printf '%s\n' "1. Windows-style: full bottom panel and larger icons"
 printf '%s\n' "2. Mac-inspired: centred auto-hiding dock and left window buttons"
 printf '%s\n' "3. Apply values from ${CONFIG_FILE}"
-printf '%s\n' "4. Quit"
-printf 'Choose 1, 2, 3, or 4: '
+printf '%s\n' "4. Show current Xfce values"
+printf '%s\n' "5. Quit"
+printf 'Choose 1, 2, 3, 4, or 5: '
 read -r choice
 
 case "${choice}" in
@@ -180,7 +220,8 @@ case "${choice}" in
     fi
     apply_config
     ;;
-  4) exit 0 ;;
+  4) show_current_settings ;;
+  5) exit 0 ;;
   *)
     printf '%s\n' "That was not one of the choices. Nothing changed."
     exit 1

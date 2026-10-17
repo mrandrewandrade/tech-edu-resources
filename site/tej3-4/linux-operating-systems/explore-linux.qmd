@@ -160,6 +160,8 @@ After you save the required BEFORE screenshot, you may use the course appearance
 
 The presets are starting points, not copies of Windows or macOS. You still decide whether the result is readable and useful.
 
+The script uses Xfce's own `xfconf-query` tool, following the same general approach documented by the [Xfce Project](https://docs.xfce.org/xfce/xfconf/xfconf-query) and used in [Linux Mint community customization scripts](https://forums.linuxmint.com/viewtopic.php?p=2491349). This course version changes only a small, checked set of visual settings.
+
 Open Terminal and run one command at a time:
 
 **INPUT**
@@ -208,6 +210,36 @@ xed ~/.config/tej-xfce-style.conf
 Try changing one value, save the file, run `./tej-xfce-style.sh` again, and choose option `3`. For example, `PANEL_SIZE=52` makes the panel taller, `PANEL_LENGTH=90` makes it shorter, and `DESKTOP_ICON_SIZE=64` makes desktop icons larger. Keep panel length from 40 to 100 and do not remove required controls.
 :::
 
+#### Configuration detective: predict, test, and solve {#configuration-detective}
+
+Do not stop at copying commands. Use the script as a small problem-solving experiment:
+
+1. Run `./tej-xfce-style.sh` and choose option `4` to record the current values.
+2. Pick **one** safe variable in `~/.config/tej-xfce-style.conf`. Before editing it, write what you predict will change and what should stay the same.
+3. Change only that variable in `xed`, save the file, rerun the script, and choose option `3`.
+4. Compare the result with your prediction. If it did not work as expected, read the terminal message, choose option `4` again, and check the spelling and allowed range in the configuration file.
+5. Use the built-in help instead of waiting for the next instruction:
+
+**INPUT**
+
+```bash
+xfconf-query --help
+```
+
+Then inspect the panel settings and their current values:
+
+**INPUT**
+
+```bash
+xfconf-query -c xfce4-panel -l -v
+```
+
+Find the property that matches the variable you changed. Explain what the channel, property, and value represent. The [Xfce `xfconf-query` guide](https://docs.xfce.org/xfce/xfconf/xfconf-query) explains the command options, and the [Xfce Panel guide](https://docs.xfce.org/xfce/xfce4-panel/preferences) explains panel size, length, and hiding behaviour.
+
+::: {.callout-important title="Independent problem-solving challenge"}
+Make one useful change that is **not** given as an exact value above. State your goal, predict the result, test it, and explain what you changed after seeing the result. If the first attempt fails, describe the evidence you used to correct it. Do not use `sudo`, delete a panel, remove required controls, or run an unfamiliar command that changes files.
+:::
+
 ### 4. Save your AFTER screenshot
 
 Make sure the updated wallpaper and panel are visible. You may leave File Manager open so the theme is also visible. Take another screenshot and insert it into the same Google Doc.
@@ -220,7 +252,7 @@ In your assignment Google Doc, answer:
 2. What theme or icon change did you make, and which setting did you use?
 3. What did you change about the panel, and how did you do it?
 4. Which change made the desktop look better or easier to use, and why?
-5. Did anything go wrong, and how did you fix it? Write “Nothing went wrong” if appropriate.
+5. What did you predict, test, and learn from your configuration change? If something went wrong, explain the evidence you used to fix it.
 
 ::: {.callout-note title="Optional customization"}
 After completing the required work, you may change fonts or pointer size, add a favourite application shortcut, arrange desktop icons, or investigate another built-in appearance setting. Do not install a theme or desktop effect without permission.
