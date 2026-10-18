@@ -14,6 +14,10 @@ You will turn node or loop equations into a two- or three-variable system and so
 
 **Where you see it:** A technician can model several currents in a car wiring network at once. A robotics engineer uses the same mathematics for sensor networks, motor currents, and control models.
 
+::: {.callout-note title="Reference and polarity"}
+Use the ground symbol as the 0 V reference before writing node or loop equations. The diagrams place higher-voltage nodes above ground and show the long battery line as positive so the equation signs match the schematic.
+:::
+
 ## Class materials
 
 - [Teaching slides](https://docs.google.com/presentation/d/1xmE338oWNkDwXAWNaUER9ykXmzFtUNycNhcWU597A0A/edit)
@@ -34,7 +38,7 @@ a_{21}x_1 + a_{22}x_2 &= b_2
 \end{aligned}
 $$ {#eq-linear-system}
 
-<figure class="ter-circuit-figure" id="fig-circuit-matrix-form">
+<figure class="ter-circuit-figure" id="fig-circuit-matrix-form" data-diagram-source="../../assets/electronics/schematics/circuit-matrix-form.tex">
 <img src="../../assets/electronics/schematics/circuit-matrix-form.svg" alt="Two simultaneous circuit equations written as a two by two matrix equation." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-circuit-matrix-form">Figure 1.</a> Coefficients form $A$, unknown currents form $\mathbf{x}$, and source voltages form $\mathbf{b}$. <a class="ter-figure-anchor" href="#fig-circuit-matrix-form" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
@@ -82,7 +86,7 @@ A large residual can flag a wrong sign, wrong measurement, or wiring fault.
 
 ## Three unknowns
 
-<figure class="ter-circuit-figure" id="fig-circuit-matrix-three">
+<figure class="ter-circuit-figure" id="fig-circuit-matrix-three" data-diagram-source="../../assets/electronics/schematics/circuit-matrix-three-equations.tex">
 <img src="../../assets/electronics/schematics/circuit-matrix-three-equations.svg" alt="Three simultaneous equations for three unknown circuit currents." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-circuit-matrix-three">Figure 2.</a> Three independent equations solve three unknown currents using the same workflow. <a class="ter-figure-anchor" href="#fig-circuit-matrix-three" aria-label="Link to Figure 2">#</a></figcaption>
 </figure>

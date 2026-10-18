@@ -1,0 +1,31 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[american]{circuitikz}
+\usepackage[scaled=0.95]{helvet}
+\usepackage{sansmath}
+\sansmath
+\begin{document}
+\begin{circuitikz}[american voltages, font=\sffamily]
+  \node[font=\bfseries\large] at (2.6,3.4) {SERIES: ONE PATH};
+  \draw (0,0) to[battery1,invert,l_={$V_T$}] (0,2.5)
+        to[R,l={$R_1$}] (2.2,2.5)
+        to[R,l={$R_2$}] (4.4,2.5)
+        to[R,l={$R_3$}] (6.6,2.5) -- (6.6,0) -- (0,0);
+  \draw (0,0) node[ground] {};
+  \draw[->,teal!70!black,very thick] (0.8,2.88) -- (2.0,2.88)
+        node[midway,above,black] {$I_T$};
+
+  \node[font=\bfseries\large] at (11.2,3.4) {PARALLEL: THREE BRANCHES};
+  \draw (8.0,0) to[battery1,invert,l_={$V_T$}] (8.0,2.5) -- (9.2,2.5)
+        -- (14.5,2.5) -- (14.5,0) -- (8.0,0);
+  \draw (8.0,0) node[ground] {};
+  \draw (10.0,2.5) to[R,l={$R_1$}] (10.0,0);
+  \draw (11.8,2.5) to[R,l={$R_2$}] (11.8,0);
+  \draw (13.6,2.5) to[R,l={$R_3$}] (13.6,0);
+  \foreach \x in {10.0,11.8,13.6} {
+    \fill[black] (\x,2.5) rectangle ++(0.10,0.10);
+    \fill[black] (\x,0) rectangle ++(0.10,0.10);
+  }
+  \draw[->,teal!70!black,very thick] (8.6,2.88) -- (9.8,2.88)
+        node[midway,above,black] {$I_T$};
+\end{circuitikz}
+\end{document}

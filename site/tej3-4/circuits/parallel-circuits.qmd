@@ -14,11 +14,15 @@ You will identify parallel branches and calculate equivalent resistance, source 
 
 **Where you see it:** A car connects lights and control modules in parallel so each receives battery voltage. A robot does the same when several sensors share one supply.
 
+::: {.callout-note title="Read the schematic"}
+Higher voltage is at the top and the 0 V or ground return is at the bottom. The battery's long line is the positive terminal. Conventional current leaves the positive rail, divides between the branches, and returns to ground.
+:::
+
 ## Class materials
 
 **Package 1: Basic Electricity to Computer Loads**
 
-- [Teaching slides](https://docs.google.com/presentation/d/1FD7od7Hi5-tcddWI44oEDzjqIKGQnsp7sOmaokiyH5o/edit)
+- [Teaching slides](https://docs.google.com/presentation/d/1jw3HJ4jJzf6n2_vwJ09a5zH7OLmNf0n1zKbIudvd4JQ/edit)
 - [Make a copy of the parallel-circuit calculations handout](https://docs.google.com/document/d/11ooJTlUf7ckOjkTP9eyJr8FyojWuOHV9-IFjZ5IoCeA/copy)
 - [Make a copy of the circuit-calculations photo submission](https://docs.google.com/document/d/12rTTMbWPdcCYSY07amSF5Ap3b0m08L5NT6NM4pAba_g/copy)
 - [Student models for Questions 1 and 2](https://docs.google.com/document/d/1kaUIVX08SYaNkRgvyr9Odzhq9mKNebJ2oXO7mMRjmek/edit)
@@ -50,7 +54,7 @@ You will identify parallel branches and calculate equivalent resistance, source 
 
 Components are in parallel when both ends connect to the same two nodes. Every branch has the same voltage:
 
-<figure class="ter-circuit-figure" id="fig-parallel-rule">
+<figure class="ter-circuit-figure" id="fig-parallel-rule" data-diagram-source="../../assets/electronics/schematics/parallel-rule-reference.tex">
 <img src="../../assets/electronics/schematics/parallel-rule-reference.svg" alt="Parallel circuit schematic showing several resistor branches connected to the same two nodes." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-parallel-rule">Figure 1.</a> Parallel-circuit reference schematic. Every branch connects to the same two nodes. <a class="ter-figure-anchor" href="#fig-parallel-rule" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>

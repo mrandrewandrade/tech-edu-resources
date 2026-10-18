@@ -88,7 +88,41 @@
   text-decoration: underline;
 }
 
+.ter-diagram-source-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .45rem;
+  margin-top: .7rem;
+  font: 600 .76rem/1.25 Arial, Helvetica, sans-serif;
+}
+
+.ter-diagram-source-copy,
+.ter-diagram-source-link {
+  padding: .3rem .55rem;
+  border: 1px solid #aeb8c2;
+  border-radius: .35rem;
+  background: #fff;
+  color: #23313d;
+  text-decoration: none;
+}
+
+.ter-diagram-source-copy {
+  cursor: pointer;
+}
+
+.ter-diagram-source-copy:hover,
+.ter-diagram-source-copy:focus-visible,
+.ter-diagram-source-link:hover,
+.ter-diagram-source-link:focus-visible {
+  border-color: #315a76;
+  background: #eef4f8;
+  color: #18324b;
+  outline: none;
+}
+
 @media print {
-  .ter-equation-toolbar { display: none; }
+  .ter-equation-toolbar,
+  .ter-diagram-source-tools { display: none; }
   .ter-equation-shell { border: 0; padding: 0; background: transparent; }
 }

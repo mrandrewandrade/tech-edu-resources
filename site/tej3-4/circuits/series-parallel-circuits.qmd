@@ -14,6 +14,10 @@ You will identify series and parallel groups, reduce a mixed circuit one group a
 
 **Where you see it:** A car uses a fuse and switch to feed parallel lamps or control modules. A robot uses one protected supply for sensors, indicators, and control boards.
 
+::: {.callout-note title="Read the schematic"}
+Higher voltage is at the top and the 0 V or ground return is at the bottom. The battery's long line is the positive terminal. Follow conventional current from the positive rail through the series section, through each branch, and back to ground.
+:::
+
 ## Class materials
 
 - [Teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
@@ -44,7 +48,7 @@ For an engaging introduction, watch [ElectroBOOM101-005](https://www.youtube.com
 
 Components are in **series** when the same current must pass through them. Components are in **parallel** when both ends connect to the same two nodes. Trace nodes and current paths; do not decide from visual appearance alone.
 
-<figure class="ter-circuit-figure" id="fig-series-parallel-comparison">
+<figure class="ter-circuit-figure" id="fig-series-parallel-comparison" data-diagram-source="../../assets/electronics/schematics/series-parallel-comparison.tex">
 <img src="../../assets/electronics/schematics/series-parallel-comparison.svg" alt="Comparison of a one-path series circuit and a parallel circuit with branches." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-series-parallel-comparison">Figure 1.</a> Series has one current path; parallel has branches connected to the same two nodes. <a class="ter-figure-anchor" href="#fig-series-parallel-comparison" aria-label="Link to Figure 1">#</a></figcaption>
 </figure>
@@ -124,7 +128,7 @@ $\Sigma$ means add each term while $k$ runs from $1$ to $n$. The final expanded 
 5. Work backward. Use common current for series parts and common voltage for parallel branches.
 6. Check that branch currents add, voltage drops add around a path, and component powers add to total power.
 
-<figure class="ter-circuit-figure" id="fig-series-parallel-example">
+<figure class="ter-circuit-figure" id="fig-series-parallel-example" data-diagram-source="../../assets/electronics/schematics/series-parallel-example.tex">
 <img src="../../assets/electronics/schematics/series-parallel-example.svg" alt="A source and resistor R1 in series with a branch node feeding parallel resistors R2 and R3." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-series-parallel-example">Figure 2.</a> The common mixed-network pattern used in Questions 1, 2, and 4. <a class="ter-figure-anchor" href="#fig-series-parallel-example" aria-label="Link to Figure 2">#</a></figcaption>
 </figure>
@@ -257,7 +261,7 @@ An $18.0\,\mathrm{V}$ source supplies $R_1=3.0\,\mathrm{k\Omega}$ in series with
 
 A $24.0\,\mathrm{V}$ source is connected across two branches. Branch A has $R_1=1.0\,\mathrm{k\Omega}$ and $R_2=3.0\,\mathrm{k\Omega}$ in series. Branch B has $R_3=2.0\,\mathrm{k\Omega}$ and $R_4=4.0\,\mathrm{k\Omega}$ in series. Find the branch resistances and currents, every resistor voltage, total current, equivalent resistance, and total power.
 
-<figure class="ter-circuit-figure" id="fig-series-parallel-q3">
+<figure class="ter-circuit-figure" id="fig-series-parallel-q3" data-diagram-source="../../assets/electronics/schematics/series-parallel-q3-two-branches.tex">
 <img src="../../assets/electronics/schematics/series-parallel-q3-two-branches.svg" alt="A 24 volt source across two parallel branches; each branch contains two series resistors." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-series-parallel-q3">Figure 3.</a> Question 3 has two series branches connected in parallel. <a class="ter-figure-anchor" href="#fig-series-parallel-q3" aria-label="Link to Figure 3">#</a></figcaption>
 </figure>
@@ -270,7 +274,7 @@ A $20.0\,\mathrm{V}$ source supplies $R_1=1.2\,\mathrm{k\Omega}$ in series with 
 
 A $12.0\,\mathrm{V}$ source supplies $R_S$, $R_1=330\,\mathrm{\Omega}$, and a parallel load made from $R_2=680\,\mathrm{\Omega}$ and $R_3=1.0\,\mathrm{k\Omega}$. Find the minimum $R_S$ that keeps source current at or below $15.0\,\mathrm{mA}$. Select the next safe [standard 5% value](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf#page=2), then calculate current, load voltage, branch currents, resistor powers, and suitable power ratings.
 
-<figure class="ter-circuit-figure" id="fig-series-parallel-q5">
+<figure class="ter-circuit-figure" id="fig-series-parallel-q5" data-diagram-source="../../assets/electronics/schematics/series-parallel-q5-current-limit.tex">
 <img src="../../assets/electronics/schematics/series-parallel-q5-current-limit.svg" alt="A 12 volt source with an unknown series current-limiting resistor, a 330 ohm resistor, and a parallel load." loading="lazy">
 <figcaption><a class="ter-figure-label" href="#fig-series-parallel-q5">Figure 4.</a> Question 5 turns the analysis process into a current-limit design. <a class="ter-figure-anchor" href="#fig-series-parallel-q5" aria-label="Link to Figure 4">#</a></figcaption>
 </figure>
