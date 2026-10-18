@@ -940,16 +940,24 @@
       "lesson_order": 3,
       "route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "source": "tej3-4/circuits/series-parallel-circuits.qmd",
-      "title": "Series-Parallel Circuits",
-      "summary": "Reduce mixed networks in stages and verify currents and voltages.",
+      "title": "Series-Parallel Combination Circuits, Part A",
+      "summary": "Assignment 1.4: reduce mixed networks in stages and verify currents and voltages.",
       "use": "Real systems often combine shared paths with parallel loads.",
       "resources": [
         {
-          "label": "Slides",
+          "label": "Day 22 Slides",
+          "url": "https://docs.google.com/presentation/d/1Ur3zDAlT4qp91-FAemSd-hDI58WCU5tYQ-5XoinLEMw/edit"
+        },
+        {
+          "label": "Complete Teaching Deck",
           "url": "https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit"
         },
         {
-          "label": "Current Handout",
+          "label": "Digital GUESS Assignment",
+          "url": "https://docs.google.com/document/d/1YhnErzfXv_NF7TboEC1obRU3BlGaBSj7efXq3qUn-Oc/copy"
+        },
+        {
+          "label": "Printable or Handwritten Assignment",
           "url": "https://docs.google.com/document/d/1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4/copy"
         },
         {
@@ -1179,7 +1187,7 @@
       "route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "source": "tej3-4/linux-operating-systems/explore-linux.qmd",
       "title": "Explore Linux",
-      "summary": "Customize the desktop, complete Terminal Quest, and explore Bashcrawl using separate submission contracts.",
+      "summary": "Complete Computer Detective, explore Bashcrawl, and customize the Linux Mint desktop using separate submission contracts.",
       "use": "The activities build confidence before students administer or program the system.",
       "resources": [
         {
@@ -1187,16 +1195,16 @@
           "url": "https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit"
         },
         {
-          "label": "Make Linux Mint Xfce Your Own",
-          "url": "https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy"
-        },
-        {
-          "label": "Terminal Quest: Computer Detective",
+          "label": "3.1 Computer Detective",
           "url": "https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy"
         },
         {
-          "label": "Bashcrawl Terminal Adventure",
+          "label": "3.2 Bashcrawl",
           "url": "https://docs.google.com/document/d/1CzNZyCFPe63nMXYZ_V9yqRs2sFNfgmykL25-HtGgFnM/copy"
+        },
+        {
+          "label": "3.3 Sleek Out Linux Mint",
+          "url": "https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy"
         },
         {
           "label": "Linux Offline Kit",

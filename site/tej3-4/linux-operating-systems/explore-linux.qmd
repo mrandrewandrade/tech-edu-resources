@@ -8,10 +8,11 @@ body-classes: "bs-learn-article ter-notes-lesson"
 
 The main goal of this lesson is simple: **have fun with Linux and make the computer useful.** The website is your lesson and reference. Each Google Doc below is a separate submission artifact.
 
-::: {.callout-important title="Choose the correct assignment"}
-- **Assignment 1:** [Make Linux Mint Xfce Your Own](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy)
-- **Assignment 2:** [Terminal Quest: Computer Detective](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy)
-- **Assignment 3:** [Bashcrawl Terminal Adventure](https://docs.google.com/document/d/1CzNZyCFPe63nMXYZ_V9yqRs2sFNfgmykL25-HtGgFnM/copy)
+::: {.callout-important title="Choose the correct lesson package"}
+- **3.1 Computer Detective:** [notes and instructions](#computer-detective) · [make a copy of the assignment](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy)
+- **3.2 Bashcrawl:** [notes and instructions](#bashcrawl) · [make a copy of the assignment](https://docs.google.com/document/d/1CzNZyCFPe63nMXYZ_V9yqRs2sFNfgmykL25-HtGgFnM/copy)
+- **3.3 Sleek Out Linux Mint:** [notes and instructions](#sleek-out-linux-mint) · [make a copy of the assignment](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy)
+- **Slides for all three lessons:** [Linux Start Here](https://docs.google.com/presentation/d/1V9VzFkTGhEyKs5TszsuZV96xya5k-zvfEx8qGKjgbzM/edit)
 
 Complete and submit each assignment separately. Do not combine their evidence or submit a separate history text file.
 :::
@@ -47,7 +48,7 @@ Do not change accounts or files on another computer. Do not use guest Wi-Fi, sca
 
 ## Extension work: create and test classroom accounts
 
-This account activity supports the shared Linux computers, but it is **not required evidence for Assignments 1, 2, or 3** unless your teacher assigns it separately.
+This account activity supports the shared Linux computers, but it is **not required evidence for Lessons 3.1, 3.2, or 3.3** unless your teacher assigns it separately.
 
 Sign in as `min`. Open **Menu > System > Users and Groups**, then select **Unlock**. Use the classroom account password supplied directly by your teacher when Linux asks for administrator approval.
 
@@ -63,7 +64,7 @@ Your username should not contain your student number, email address, or full leg
 
 To test the accounts, sign out and sign in to each approved account. Confirm that each account opens normally and has a separate home folder. Sign back in to your own account before continuing. If an account does not work or an unexpected administrator warning appears, stop and ask your teacher for help.
 
-## Assignment 1: Make Linux Mint Xfce Your Own
+## 3.3 Sleek Out Linux Mint {#sleek-out-linux-mint}
 
 ::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
 If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
@@ -72,7 +73,7 @@ If anything here is unclear, incomplete, or could be explained better, improve i
 ### Part 2: make Linux feel like your computer
 
 ::: {.callout-important title="Open the assignment and know what to submit"}
-[Make a copy of **Make Linux Mint Xfce Your Own**](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy).
+[Make a copy of **3.3 Sleek Out Linux Mint: Make Xfce Your Own**](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy).
 
 Submit **ONE completed Google Doc** in Google Classroom. It must contain a BEFORE screenshot, an AFTER screenshot, the configuration detective response, and all five short reflection answers. Do not attach the screenshots as separate files.
 :::
@@ -285,7 +286,7 @@ Open **Software Manager** from the application menu. Search for Git and install 
 Use Software Manager, an operating system's official documentation, or the official Bashcrawl GitLab repository. Do not paste installation commands from advertisements, comments, forums, or unknown sites. If installation requires administrator access and you do not have permission, stop and ask your teacher.
 :::
 
-## Assignment 2: Terminal Quest: Computer Detective
+## 3.1 Computer Detective {#computer-detective}
 
 ::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
 If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
@@ -294,7 +295,7 @@ If anything here is unclear, incomplete, or could be explained better, improve i
 ### Part 5: meet the terminal
 
 ::: {.callout-important title="Open the assignment and know what to submit"}
-[Make a copy of **Terminal Quest: Computer Detective**](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy).
+[Make a copy of **3.1 Computer Detective: Terminal Quest**](https://docs.google.com/document/d/1giXUn6HgP5CX-ZNAVb-GwBa3V_FW_70EDRTdzYyb5_0/copy).
 
 Submit **ONE completed Google Doc** in Google Classroom. Paste the complete, reviewed command history into that document. Do not submit a separate history text file.
 :::
@@ -635,7 +636,7 @@ Switch to your Google Doc, touch and hold in the FULL COMMAND HISTORY box, and c
 
 Paste the complete, reviewed history into the labelled box in your Terminal Quest Google Doc. Confirm that it includes the activities you tried. Review the pasted text again before submitting. **Submit only that completed Google Doc.**
 
-## Assignment 3: Bashcrawl Terminal Adventure
+## 3.2 Bashcrawl {#bashcrawl}
 
 ::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
 If anything here is unclear, incomplete, or could be explained better, improve it in your own copy. Use Suggesting mode if it is available. Otherwise, add a clearly labelled “Suggested improvement” with your revised wording. Include one sentence explaining why your version is clearer or more useful. Do not remove required work. Mr. A will review your change and may update the course website and future assignment documents if he agrees it helps. Improving a real instruction accurately is one way to demonstrate Level 4+ thinking.
@@ -644,7 +645,7 @@ If anything here is unclear, incomplete, or could be explained better, improve i
 ### Part 6: clone and play Bashcrawl
 
 ::: {.callout-important title="Open the assignment and know what to submit"}
-[Make a copy of **Bashcrawl Terminal Adventure**](https://docs.google.com/document/d/1CzNZyCFPe63nMXYZ_V9yqRs2sFNfgmykL25-HtGgFnM/copy).
+[Make a copy of **3.2 Bashcrawl Terminal Adventure**](https://docs.google.com/document/d/1CzNZyCFPe63nMXYZ_V9yqRs2sFNfgmykL25-HtGgFnM/copy).
 
 Submit **ONE completed Google Doc** with all four reflection answers and at least one readable terminal screenshot. No history file is required.
 :::
@@ -826,4 +827,4 @@ Submit **ONE completed Google Doc** in Google Classroom. There is no required fi
 
 ## Review
 
-You can now separate three different kinds of evidence: visual customization belongs in **Make Linux Mint Xfce Your Own**, complete reviewed command history belongs inside **Terminal Quest**, and Bashcrawl progress belongs in **Bashcrawl Terminal Adventure**. Each assignment is submitted as one Google Doc.
+You can now separate three different kinds of evidence: the complete reviewed command history belongs in **3.1 Computer Detective**, Bashcrawl progress belongs in **3.2 Bashcrawl**, and visual customization belongs in **3.3 Sleek Out Linux Mint**. Each assignment is submitted as one Google Doc.

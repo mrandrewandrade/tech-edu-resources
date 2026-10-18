@@ -1,5 +1,5 @@
 ---
-title: "Series-Parallel Circuits"
+title: "Series-Parallel Combination Circuits, Part A"
 description: "Student notes, equations, slides, questions, and chapter support for reducing and solving mixed resistor networks."
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
@@ -7,6 +7,8 @@ toc: true
 toc-depth: 2
 execute: {enabled: false}
 ---
+
+**Assignment 1.4**
 
 You will identify series and parallel groups, reduce a mixed circuit one group at a time, calculate the total values, and then work back to each resistor. This is useful when one protected power source feeds several loads in a robot, vehicle, computer, or sensor system.
 
@@ -20,8 +22,11 @@ Higher voltage is at the top and the 0 V or ground return is at the bottom. The 
 
 ## Class materials
 
-- [Teaching slides](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
-- [Make a copy of the student handout](https://docs.google.com/document/d/1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4/copy)
+- [Day 22 lesson slides](https://docs.google.com/presentation/d/1Ur3zDAlT4qp91-FAemSd-hDI58WCU5tYQ-5XoinLEMw/edit)
+- [Complete teaching deck](https://docs.google.com/presentation/d/177liW0qHi3201A6RaZl1r-xWMSVoo0rhj-a9np2jsoQ/edit)
+- [Make a copy of the digital GUESS assignment](https://docs.google.com/document/d/1YhnErzfXv_NF7TboEC1obRU3BlGaBSj7efXq3qUn-Oc/copy)
+- [Make a copy of the printable or handwritten assignment](https://docs.google.com/document/d/1AIOR80hBtAXB8klvf509k_TjPQGi4dZ3Wlv_1dJtDK4/copy)
+- [Assignment and resource summary](https://docs.google.com/document/d/19aMUBNhBrlnOMAGU4yJJQGibKtseP4kq2WpegdYpHhw/edit)
 - [TEJ Electronics Quick Reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
 - [General Schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/copy)
 - [LaTeX equations and worked solutions](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/assets/tej/series-parallel-latex/series-parallel-assets.tex)
@@ -42,7 +47,7 @@ Higher voltage is at the top and the 0 V or ground return is at the bottom. The 
 
 A robot may have a fuse, switch, and current-limiting resistor in series with several parallel loads. A vehicle uses the same pattern when one protected supply feeds lamps, sensors, or control modules. The series parts affect every load; each parallel branch still receives the same branch voltage.
 
-For an engaging introduction, watch [ElectroBOOM101-005](https://www.youtube.com/watch?v=AMXWm_bnsTE), then use [The Organic Chemistry Tutor’s series and parallel explanation](https://www.youtube.com/watch?v=7mdc-lRrW1c) or [Khan Academy’s circuit review](https://www.khanacademy.org/science/hs-physics-tx/x52b5e54e482d5bbe%3Acircuits-and-electromagnetics/x52b5e54e482d5bbe%3Avoltage-current-resistance/v/electric-circuits-part-2) for the calculation steps.
+For an engaging introduction, watch [ElectroBOOM101-005](https://www.youtube.com/watch?v=AMXWm_bnsTE), then use [The Organic Chemistry Tutor’s series and parallel explanation](https://www.youtube.com/watch?v=7mdc-lRrW1c) or [Khan Academy’s resistor-network review](https://www.khanacademy.org/science/physics/circuits-topic/circuits-resistance/v/resistors-in-series-and-parallel) for the calculation steps.
 
 ## Identify the connections
 
