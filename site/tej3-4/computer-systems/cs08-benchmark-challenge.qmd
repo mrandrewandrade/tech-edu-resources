@@ -7,10 +7,14 @@ categories: [main quest, benchmark, compatibility, optimization, design, evidenc
 
 **Pathway:** {{< meta pathway >}}\
 **Prerequisites:** CS01-CS07\
-**Previous:** [CS07 RAM upgrade](cs07-ram-upgrade.qmd)\
-**Next:** [Side Quest Hub](index.qmd#side-quests)
+**Previous:** [Safe opening and computer parts](safe-opening-and-parts/index.qmd)\
+**Unit home:** [Computer Systems](index.qmd)
 
 ![A repeatable benchmark and improvement loop.](/assets/tej/Computer_Benchmark_Loop.svg){width=100%}
+
+::: {.callout-warning title="Draft assignment"}
+[Make a copy of the 3.4 Linux Benchmarking Challenge draft](https://docs.google.com/document/d/1dqA8Ygm6pkdYJ_fLSGR5YcINJ74YotVUJEz2ilh-aPg/copy). Do not begin until your teacher posts it in Google Classroom and confirms the approved tools and hardware.
+:::
 
 Define what best means for the assigned user before final testing. Record hardware, operating system, benchmark version, run conditions, units, and baseline results. Use evidence to identify a bottleneck and propose an approved compatible change.
 
