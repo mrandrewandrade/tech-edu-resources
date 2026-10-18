@@ -6,7 +6,7 @@ This folder is designed to be copied to a USB drive and used without Internet ac
 START HERE
 ----------
 
-Open START-HERE.html in a web browser. It links to every assignment and explains which file to use.
+Copy TEJ-Linux-Offline-Kit.zip from the class USB drive to Downloads and extract it. Open START-HERE.html in the extracted folder. It works without Internet, links to every assignment, and explains which file to use.
 Print PRINTABLE-QUICK-START.pdf when students need the same instructions on paper.
 
 WHAT IS INCLUDED
@@ -43,13 +43,14 @@ If a LibreOffice version appears, it is ready. If the command is missing and the
 START BASHCRAWL OFFLINE
 -----------------------
 
-1. Copy the bashcrawl folder from the USB drive into your home folder or ~/Games.
-2. Open Terminal.
-3. Move into the entrance folder. For example:
+1. Copy the complete bashcrawl folder from the extracted kit.
+2. In Files, open Home, create a folder named Games, and paste bashcrawl inside it.
+3. Open Terminal with Ctrl + Alt + T in Linux Mint, including a live USB session.
+4. Move into the entrance folder. For example:
 
    cd ~/Games/bashcrawl/entrance
 
-4. Start the game:
+5. Start the game:
 
    cat scroll
 

@@ -31,7 +31,6 @@ INK = HexColor("#111820")
 NAVY = HexColor("#123A63")
 MID_GREY = HexColor("#4F5963")
 RULE = HexColor("#636C74")
-LIGHT_RULE = HexColor("#B9C0C6")
 LIGHT_FILL = HexColor("#F1F2F3")
 
 
@@ -117,85 +116,6 @@ def draw_code(pdf: canvas.Canvas, code: str, x: float, y: float, width: float) -
     return y - 33
 
 
-def draw_platform_table(pdf: canvas.Canvas, y_top: float) -> float:
-    x = 43
-    total_width = 526
-    platform_width = 105
-    instruction_width = total_width - platform_width
-    rows = [
-        (
-            "Windows",
-            "Open Start and search for WSL or Ubuntu. If it is missing, ask the computer owner before using wsl --install as an administrator. Setup needs Internet and may require a restart.",
-        ),
-        (
-            "Mac",
-            "Press Command + Space, type Terminal, then press Return. No installation is needed.",
-        ),
-        (
-            "Chromebook",
-            "On a personal or owner account: Settings > About ChromeOS > Developers > Linux development environment > Set up. Setup needs Internet once. A school-managed Chromebook may block this feature.",
-        ),
-        (
-            "Linux Mint or Ubuntu",
-            "Press Ctrl + Alt + T, or open Terminal from the application menu.",
-        ),
-        (
-            "Phone or tablet",
-            "Android: use Termux from F-Droid. iPhone or iPad: use iSH Shell. A phone is slower and more difficult to use, but it works. A Bluetooth keyboard helps.",
-        ),
-    ]
-
-    body_font = "TCArial"
-    body_size = 9.4
-    leading = 11.2
-    row_specs: list[tuple[str, list[str], float]] = []
-    for label, instruction in rows:
-        lines = wrap(instruction, body_font, body_size, instruction_width - 16)
-        height = max(30, len(lines) * leading + 12)
-        row_specs.append((label, lines, height))
-
-    header_height = 25
-    table_height = header_height + sum(item[2] for item in row_specs)
-    y_bottom = y_top - table_height
-
-    pdf.setFillColor(white)
-    pdf.setStrokeColor(RULE)
-    pdf.setLineWidth(0.65)
-    pdf.rect(x, y_bottom, total_width, table_height, stroke=1, fill=1)
-    pdf.setFillColor(LIGHT_FILL)
-    pdf.rect(x, y_top - header_height, total_width, header_height, stroke=0, fill=1)
-    pdf.setStrokeColor(RULE)
-    pdf.line(x, y_top - header_height, x + total_width, y_top - header_height)
-    pdf.line(x + platform_width, y_bottom, x + platform_width, y_top)
-
-    pdf.setFillColor(INK)
-    pdf.setFont("TCArial-Bold", 9.5)
-    pdf.drawString(x + 8, y_top - 17, "Computer")
-    pdf.drawString(x + platform_width + 8, y_top - 17, "How to open the terminal at home")
-
-    y = y_top - header_height
-    for index, (label, lines, height) in enumerate(row_specs):
-        row_bottom = y - height
-        if index < len(row_specs) - 1:
-            pdf.setStrokeColor(LIGHT_RULE)
-            pdf.line(x, row_bottom, x + total_width, row_bottom)
-        pdf.setFillColor(INK)
-        pdf.setFont("TCArial-Bold", 9.4)
-        label_lines = wrap(label, "TCArial-Bold", 9.4, platform_width - 16)
-        label_y = y - 14
-        for line in label_lines:
-            pdf.drawString(x + 8, label_y, line)
-            label_y -= leading
-        pdf.setFont(body_font, body_size)
-        body_y = y - 14
-        for line in lines:
-            pdf.drawString(x + platform_width + 8, body_y, line)
-            body_y -= leading
-        y = row_bottom
-
-    return y_bottom
-
-
 def build() -> None:
     register_fonts()
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
@@ -203,7 +123,7 @@ def build() -> None:
     page_width, page_height = letter
     pdf.setTitle("TEJ Linux Offline Kit - Printable Quick Start")
     pdf.setAuthor("Andrew Andrade, Technology Commons")
-    pdf.setSubject("Printable student quick start for Terminal Quest and Bashcrawl")
+    pdf.setSubject("Offline-first student quick start for Terminal Quest and Bashcrawl")
 
     # Compact identity block from the Technology Commons printable template.
     logo_size = 58
@@ -230,7 +150,7 @@ def build() -> None:
     pdf.line(43, page_height - 111, 569, page_height - 111)
 
     y = page_height - 132
-    y = section_heading(pdf, 1, "Get the files", y)
+    y = section_heading(pdf, 1, "Get the kit", y)
 
     qr_size = 61
     qr_x = 508
@@ -245,11 +165,11 @@ def build() -> None:
     drawing.drawOn(pdf, qr_x, qr_y)
 
     text_width = 450
-    y = draw_bullet(pdf, "Download the TEJ Linux Offline Kit or copy it from the class USB drive.", 43, y, text_width)
+    y = draw_bullet(pdf, "No Internet: copy TEJ-Linux-Offline-Kit.zip from the class USB drive to Downloads.", 43, y, text_width)
     y -= 2
-    y = draw_bullet(pdf, "Extract the ZIP. Keep the complete folder together, including hidden files.", 43, y, text_width)
+    y = draw_bullet(pdf, "Internet available: scan the code or open the address below and download the same ZIP.", 43, y, text_width)
     y -= 2
-    y = draw_bullet(pdf, "Open START-HERE.html inside the extracted folder.", 43, y, text_width)
+    y = draw_bullet(pdf, "Double-click the ZIP, choose Extract, and keep the complete extracted folder together.", 43, y, text_width)
     pdf.setFont("TCArial-Bold", 8.5)
     pdf.setFillColor(MID_GREY)
     pdf.drawString(qr_x - 8, qr_y - 13, "Linux Offline Kit")
@@ -257,37 +177,29 @@ def build() -> None:
     pdf.drawString(43, y - 2, "andrewandrade.ca/tech-edu-resources/tej3-4/linux-operating-systems/offline-kit/")
     y = min(y - 25, qr_y - 27)
 
-    y = section_heading(pdf, 2, "Open the correct terminal", y)
-    y = draw_platform_table(pdf, y + 2) - 9
+    y = section_heading(pdf, 2, "Open the local instructions", y)
+    y = draw_bullet(pdf, "Open the extracted TEJ-Linux-Offline-Kit folder.", 43, y, 526)
+    y -= 2
+    y = draw_bullet(pdf, "Double-click START-HERE.html. It opens locally in a browser and does not need Internet.", 43, y, 526)
+    y -= 2
+    y = draw_bullet(pdf, "Choose 3.1 Computer Detective or 3.2 Bashcrawl. Open the ODT in LibreOffice, or use the PDF and matching TXT answer sheet.", 43, y, 526)
+    y -= 2
     y = draw_wrapped(
         pdf,
-        "Waiting for a classroom computer or Internet connection? Use your phone to begin or continue instead of doing nothing.",
+        "This sheet focuses on Linux Mint and the class USB. Use the website for Windows, Mac, Chromebook, or phone instructions. A phone is slower and more difficult than a computer.",
         43,
         y,
         526,
-        font="TCArial-Bold",
         size=9.2,
         leading=11,
-        color=NAVY,
-    )
-    y -= 5
-
-    y = section_heading(pdf, 3, "Choose the work and file format", y)
-    y = draw_wrapped(
-        pdf,
-        "Terminal Quest inspects the computer and records commands. Bashcrawl teaches navigation through a terminal game. Use ODT in LibreOffice, DOCX in Word or LibreOffice, or TXT if no office program is installed. PDF is for reading or printing.",
-        43,
-        y,
-        526,
-        size=10.5,
-        leading=13,
+        color=MID_GREY,
     )
     y -= 9
 
-    y = section_heading(pdf, 4, "Start Bashcrawl", y)
+    y = section_heading(pdf, 3, "Prepare Bashcrawl", y)
     y = draw_wrapped(
         pdf,
-        "Copy the complete bashcrawl folder into Home > Games. On a Chromebook, move it into Linux files first. Then run one command at a time:",
+        "In the extracted kit, copy the complete bashcrawl folder. In Files, open Home, create a folder named Games, and paste bashcrawl inside it. Hidden rooms are part of the game, so copy the whole folder.",
         43,
         y,
         526,
@@ -295,16 +207,25 @@ def build() -> None:
         leading=13,
     )
     y -= 3
+    y = draw_bullet(pdf, "Open Terminal with Ctrl + Alt + T in Linux Mint, including the live USB session.", 43, y, 526)
+    y -= 4
     draw_code(pdf, "cd ~/Games/bashcrawl/entrance", 43, y, 253)
     y = draw_code(pdf, "cat scroll", 316, y, 253)
     y -= 3
 
-    y = section_heading(pdf, 5, "Save now and submit later", y)
-    y = draw_bullet(pdf, "Save the completed ODT, DOCX, or TXT file locally with your name in the filename.", 43, y, 526)
+    y = section_heading(pdf, 4, "Play and record your work", y)
+    y = draw_wrapped(pdf, "Run one command at a time. Do not type the $ prompt symbol.", 43, y, 526, font="TCArial-Bold", size=10.5, leading=13, color=NAVY)
+    y -= 5
+    draw_code(pdf, "ls        pwd        cat scroll", 43, y, 253)
+    y = draw_code(pdf, "cd roomname        cd ..        ls -a", 316, y, 253)
+    y -= 3
+    y = draw_bullet(pdf, "Read each clue, explore, and complete the answer sheet. A wrong turn is part of the problem solving.", 43, y, 526)
     y -= 2
-    y = draw_bullet(pdf, "Insert readable screenshots, or save them beside the TXT answer sheet.", 43, y, 526)
+    y = draw_bullet(pdf, "Save the completed ODT, DOCX, or TXT file with your name in the filename.", 43, y, 526)
     y -= 2
-    draw_bullet(pdf, "Upload the completed work to Google Classroom when Internet access returns. Never record passwords, tokens, Wi-Fi credentials, or student numbers.", 43, y, 526)
+    y = draw_bullet(pdf, "Save readable screenshots in the document or beside the TXT answer sheet.", 43, y, 526)
+    y -= 2
+    draw_bullet(pdf, "Copy your work back to the USB if needed. Upload it to Google Classroom when Internet returns. Never record passwords, tokens, or Wi-Fi credentials.", 43, y, 526)
 
     # Required footer wording from the printable handout guide.
     pdf.setStrokeColor(RULE)

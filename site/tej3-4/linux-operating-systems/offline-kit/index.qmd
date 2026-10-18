@@ -6,15 +6,25 @@ sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 ---
 
-The **TEJ Linux Offline Kit** puts the three Explore Linux assignments, the Xfce appearance script, and the complete Bashcrawl game into one ZIP file. Copy it to a USB drive before students lose Internet access.
+The **TEJ Linux Offline Kit** lets students begin Computer Detective and Bashcrawl from a class USB drive without Internet. Students with Internet can download the same ZIP and follow the same steps.
 
 ::: {.callout-important title="Download once, then use it offline"}
 [Download the TEJ Linux Offline Kit](../../../assets/linux/TEJ-Linux-Offline-Kit.zip){.btn .btn-primary download="TEJ-Linux-Offline-Kit.zip"}
 
 [Print the one-page Quick Start](../../../assets/linux/TEJ-Linux-Offline-Kit-Quick-Start.pdf){.btn .btn-outline-primary target="_blank"}
 
-Extract the ZIP before using it. Open `START-HERE.html` inside the extracted folder.
+Copy or download the ZIP, extract it, and open `START-HERE.html` inside the extracted folder. The start page works locally without Internet.
 :::
+
+## Start from a USB drive
+
+1. Copy `TEJ-Linux-Offline-Kit.zip` from the class USB drive to **Downloads**.
+2. Extract the ZIP. Keep the complete extracted folder together.
+3. Open the extracted `TEJ-Linux-Offline-Kit` folder.
+4. Double-click `START-HERE.html`.
+5. Choose **3.1 Computer Detective** or **3.2 Bashcrawl** and follow the local instructions.
+
+If Internet is available, download the ZIP above instead of copying it from the USB. Everything after the download is the same.
 
 ## What is included
 
@@ -52,13 +62,14 @@ Using a phone is slower and more difficult than using a computer, but it works. 
 
 Use `top` instead of trying to install `htop`. The account, file, system, process, and history commands do not need Internet access.
 
-## Bashcrawl without Git
+## Start Bashcrawl without Git
 
 The ZIP contains the complete Bashcrawl folder, so students do not need `git clone`. The same game commands work in Linux Mint after installation or from the live USB. They also work through WSL, Git Bash, Mac, Chromebook Linux, Termux, or iSH after those environments are ready.
 
-1. Copy the entire `bashcrawl` folder into `~/Games`.
-2. Open Terminal.
-3. Run one command at a time:
+1. In the extracted kit, copy the entire `bashcrawl` folder.
+2. In Files, open **Home**, create a folder named `Games`, and paste `bashcrawl` inside it.
+3. Open Terminal with **Ctrl + Alt + T** in Linux Mint, including a live USB session.
+4. Run one command at a time:
 
 **INPUT**
 
@@ -73,6 +84,8 @@ cat scroll
 ```
 
 Folders beginning with a dot are intentional hidden rooms. Copy the complete folder rather than selecting only the visible files.
+
+Continue with `ls`, `pwd`, `cat scroll`, `cd roomname`, `cd ..`, and `ls -a`. Do not type the `$` prompt symbol shown in some examples.
 
 ## Appearance script from the USB drive
 
