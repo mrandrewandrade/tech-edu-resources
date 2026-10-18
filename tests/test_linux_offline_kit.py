@@ -56,6 +56,31 @@ class LinuxOfflineKitTests(unittest.TestCase):
         self.assertFalse(any("/.git/" in name for name in names))
         self.assertFalse(any("answer key" in name.lower() for name in names))
 
+    def test_phone_support_and_difficulty_warning_are_consistent(self) -> None:
+        warning = "slower and more difficult"
+        text_sources = (
+            SITE / "tej3-4" / "linux-operating-systems" / "index.qmd",
+            SITE / "tej3-4" / "linux-operating-systems" / "explore-linux.qmd",
+            SITE / "tej3-4" / "linux-operating-systems" / "offline-kit" / "index.qmd",
+            KIT_SOURCE / "README.txt",
+            KIT_SOURCE / "START-HERE.html",
+            ROOT / "scripts" / "create_linux_offline_quick_start.py",
+        )
+        for path in text_sources:
+            self.assertIn(warning, path.read_text(encoding="utf-8"), path)
+
+        assignment_xml = (
+            ("Terminal-Quest.docx", "word/document.xml"),
+            ("Terminal-Quest.odt", "content.xml"),
+            ("Bashcrawl-Terminal-Adventure.docx", "word/document.xml"),
+            ("Bashcrawl-Terminal-Adventure.odt", "content.xml"),
+        )
+        for filename, xml_name in assignment_xml:
+            path = KIT_SOURCE / "assignments" / filename
+            with ZipFile(path) as archive:
+                content = archive.read(xml_name).decode("utf-8")
+            self.assertIn(warning, content, path)
+
 
 if __name__ == "__main__":
     unittest.main()

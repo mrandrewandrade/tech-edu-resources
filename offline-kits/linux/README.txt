@@ -64,6 +64,17 @@ On a personal Chromebook or owner account, enable the Linux development environm
 
 Open Terminal from the Launcher. In the Files app, move the complete bashcrawl folder into Linux files. A school-managed Chromebook may block Linux. Do not use Developer Mode to bypass that restriction.
 
+PHONE OR TABLET
+---------------
+
+Using a phone is slower and more difficult than using a computer, but it works. A Bluetooth keyboard makes the work easier.
+
+Android: install Termux from F-Droid. Terminal Quest works directly in Termux. For Bashcrawl, run pkg update and then pkg install git while Internet access is available.
+
+iPhone or iPad: install iSH Shell. Run apk update, apk add bash git, and then bash while Internet access is available.
+
+If you are waiting for a classroom computer or Internet connection, use your phone to begin or continue the assignment instead of doing nothing.
+
 SUBMITTING LATER
 ----------------
 

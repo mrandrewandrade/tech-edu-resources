@@ -46,6 +46,8 @@ Terminal Quest works completely offline on Linux Mint or Mac. It also works offl
 
 On a personal Chromebook or owner account, enable Linux through **Settings > About ChromeOS > Developers > Linux development environment > Set up** while Internet access is available. A school-managed Chromebook may block this feature. Do not use Developer Mode to bypass that restriction.
 
+Using a phone is slower and more difficult than using a computer, but it works. Android uses Termux from F-Droid, and iPhone or iPad uses iSH Shell. A Bluetooth keyboard makes the work easier. Students waiting for a classroom computer or Internet connection can begin or continue the assignments on a phone instead of doing nothing.
+
 Use `top` instead of trying to install `htop`. The account, file, system, process, and history commands do not need Internet access.
 
 ## Bashcrawl without Git

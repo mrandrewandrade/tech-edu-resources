@@ -139,6 +139,10 @@ def draw_platform_table(pdf: canvas.Canvas, y_top: float) -> float:
             "Linux Mint or Ubuntu",
             "Press Ctrl + Alt + T, or open Terminal from the application menu.",
         ),
+        (
+            "Phone or tablet",
+            "Android: use Termux from F-Droid. iPhone or iPad: use iSH Shell. A phone is slower and more difficult to use, but it works. A Bluetooth keyboard helps.",
+        ),
     ]
 
     body_font = "TCArial"
@@ -254,7 +258,19 @@ def build() -> None:
     y = min(y - 25, qr_y - 27)
 
     y = section_heading(pdf, 2, "Open the correct terminal", y)
-    y = draw_platform_table(pdf, y + 2) - 16
+    y = draw_platform_table(pdf, y + 2) - 9
+    y = draw_wrapped(
+        pdf,
+        "Waiting for a classroom computer or Internet connection? Use your phone to begin or continue instead of doing nothing.",
+        43,
+        y,
+        526,
+        font="TCArial-Bold",
+        size=9.2,
+        leading=11,
+        color=NAVY,
+    )
+    y -= 5
 
     y = section_heading(pdf, 3, "Choose the work and file format", y)
     y = draw_wrapped(
