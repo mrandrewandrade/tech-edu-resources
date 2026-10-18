@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 KIT_SOURCE = ROOT / "offline-kits" / "linux"
 KIT_ZIP = SITE / "assets" / "linux" / "TEJ-Linux-Offline-Kit.zip"
+QUICK_START = SITE / "assets" / "linux" / "TEJ-Linux-Offline-Kit-Quick-Start.pdf"
 
 
 class LinuxOfflineKitTests(unittest.TestCase):
@@ -16,7 +17,13 @@ class LinuxOfflineKitTests(unittest.TestCase):
         page = SITE / "tej3-4" / "linux-operating-systems" / "offline-kit" / "index.qmd"
         explore = SITE / "tej3-4" / "linux-operating-systems" / "explore-linux.qmd"
         self.assertIn("TEJ-Linux-Offline-Kit.zip", page.read_text(encoding="utf-8"))
+        self.assertIn(
+            "TEJ-Linux-Offline-Kit-Quick-Start.pdf",
+            page.read_text(encoding="utf-8"),
+        )
         self.assertIn("Linux Offline Kit", explore.read_text(encoding="utf-8"))
+        self.assertTrue(QUICK_START.read_bytes().startswith(b"%PDF-"))
+        self.assertGreater(QUICK_START.stat().st_size, 5_000)
 
     def test_editable_assignments_and_fallbacks_are_present(self) -> None:
         for stem in (
@@ -42,6 +49,7 @@ class LinuxOfflineKitTests(unittest.TestCase):
             names = set(archive.namelist())
         prefix = "TEJ-Linux-Offline-Kit/"
         self.assertIn(prefix + "START-HERE.html", names)
+        self.assertIn(prefix + "PRINTABLE-QUICK-START.pdf", names)
         self.assertIn(prefix + "tej-xfce-style.sh", names)
         self.assertIn(prefix + "bashcrawl/LICENSE", names)
         self.assertTrue(any("/bashcrawl/entrance/.chapel/" in name for name in names))

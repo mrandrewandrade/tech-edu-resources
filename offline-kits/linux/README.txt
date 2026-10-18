@@ -7,6 +7,7 @@ START HERE
 ----------
 
 Open START-HERE.html in a web browser. It links to every assignment and explains which file to use.
+Print PRINTABLE-QUICK-START.pdf when students need the same instructions on paper.
 
 WHAT IS INCLUDED
 ----------------
