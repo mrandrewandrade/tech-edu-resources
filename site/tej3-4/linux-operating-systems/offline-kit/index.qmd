@@ -42,7 +42,9 @@ If LibreOffice is missing, students can read the PDF and type their answers into
 
 ## Terminal Quest without Internet
 
-Terminal Quest works completely offline on Linux Mint or Mac. It also works offline in Windows WSL, a Chromebook Linux development environment, Android Termux, or iPhone/iPad iSH **after those environments are already installed**.
+There are two separate ways to use these materials. At home, Terminal Quest works through Windows WSL, Windows Git Bash, Mac, a Chromebook Linux environment, Linux, Android Termux, or iPhone/iPad iSH. In class, it works without Internet after Linux Mint is installed or while Linux Mint is running from the bootable USB.
+
+WSL, Git Bash, Chromebook Linux, Termux, and iSH must be installed while Internet access is available. [Git Bash](https://gitforwindows.org/) supplies Bash, Git, and common Unix-style commands on Windows, but it is not Linux or Unix. Windows still supplies the file system, permissions, processes, and system information, so some Computer Detective outputs and tools differ.
 
 On a personal Chromebook or owner account, enable Linux through **Settings > About ChromeOS > Developers > Linux development environment > Set up** while Internet access is available. A school-managed Chromebook may block this feature. Do not use Developer Mode to bypass that restriction.
 
@@ -52,7 +54,7 @@ Use `top` instead of trying to install `htop`. The account, file, system, proces
 
 ## Bashcrawl without Git
 
-The ZIP contains the complete Bashcrawl folder, so students do not need `git clone`.
+The ZIP contains the complete Bashcrawl folder, so students do not need `git clone`. The same game commands work in Linux Mint after installation or from the live USB. They also work through WSL, Git Bash, Mac, Chromebook Linux, Termux, or iSH after those environments are ready.
 
 1. Copy the entire `bashcrawl` folder into `~/Games`.
 2. Open Terminal.

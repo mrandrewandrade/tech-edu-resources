@@ -300,6 +300,12 @@ If anything here is unclear, incomplete, or could be explained better, improve i
 Submit **ONE completed Google Doc** in Google Classroom. Paste the complete, reviewed command history into that document. Do not submit a separate history text file.
 :::
 
+::: {.callout-note title="Two ways to keep working"}
+**At home:** complete Computer Detective on Windows with WSL or Git Bash, Mac, a Chromebook Linux environment, Linux, Android, or iPhone/iPad.
+
+**In class without Internet:** complete it after Linux Mint is installed or while Linux Mint is running from the bootable USB. The core commands work offline. Download the [TEJ Linux Offline Kit](offline-kit/) before disconnecting for offline assignment and answer-sheet copies. Making Ethernet cables and bringing every computer online will take time, so this work is ready while you wait.
+:::
+
 ### 1. Open the correct terminal
 
 #### Windows with WSL
@@ -315,6 +321,12 @@ wsl --install
 ```
 
 Restart if Windows asks. If installation is blocked, a security warning appears, or you are unsure which distribution opened, stop and ask for help. Follow the official [Microsoft WSL installation guide](https://learn.microsoft.com/windows/wsl/install) when needed.
+
+#### Windows with Git Bash
+
+With the computer owner's permission, install [Git for Windows](https://gitforwindows.org/) and open **Git Bash** from Start. Git Bash provides Bash, Git, and common Unix-style commands inside Windows.
+
+Git Bash is useful, but it is not Linux or Unix. Windows still supplies the file system, permissions, processes, and system information. Paths, available commands, and outputs can therefore differ from WSL, Linux, or macOS. Use Git Bash for file navigation, Git, shell practice, scripts, and Bashcrawl. If a Computer Detective step needs a Linux process tool, use the Windows alternative given in that step.
 
 #### Linux Mint or Ubuntu
 
@@ -530,11 +542,13 @@ Press `q` to leave `htop` or `top`. Observe one CPU and one memory detail. Never
 
 On Android with Termux or iPhone/iPad with iSH, use `top`. Press `q` to leave it. Do not try to stop unfamiliar phone processes.
 
+In Git Bash, `top` and `htop` are not normally included. Run `tasklist | more`, or open Windows Task Manager, then record one running process and one CPU or memory observation. This difference is useful evidence that Git Bash is a Windows shell environment rather than a Linux system.
+
 ### 6. Review and copy the complete command history
 
 History contains commands, not their output. Review it before copying. Remove or redact passwords, tokens, personal names, private paths, Wi-Fi credentials, and other private information. If you see a password or token, do not paste it. Stop and ask for help, and change any exposed credential.
 
-#### Windows WSL, Linux Mint, or Ubuntu using Bash
+#### Windows WSL, Windows Git Bash, Linux Mint, or Ubuntu using Bash
 
 Review the history:
 
@@ -544,7 +558,7 @@ Review the history:
 history
 ```
 
-On **Windows WSL**, copy the complete history to the Windows clipboard:
+On **Windows WSL or Git Bash**, copy the complete history to the Windows clipboard:
 
 **INPUT**
 
@@ -636,6 +650,10 @@ Switch to your Google Doc, touch and hold in the FULL COMMAND HISTORY box, and c
 
 Paste the complete, reviewed history into the labelled box in your Terminal Quest Google Doc. Confirm that it includes the activities you tried. Review the pasted text again before submitting. **Submit only that completed Google Doc.**
 
+::: {.callout-tip title="Bonus: compare a second operating system"}
+Repeat Sections 1 and 2 on a second operating system and explain one meaningful difference in the output. You may use another physical computer, a Linux Mint live USB, or [VirtualBox](https://www.virtualbox.org/wiki/Downloads) inside Windows, Mac, or Linux. Ask the computer owner before installing software, and do not change firmware, security, or virtualization settings without permission. This is worth up to 5 bonus marks.
+:::
+
 ## 3.2 Bashcrawl {#bashcrawl}
 
 ::: {.callout-tip title="LEVEL 4+: MAKE THE INSTRUCTIONS BETTER"}
@@ -650,16 +668,25 @@ If anything here is unclear, incomplete, or could be explained better, improve i
 Submit **ONE completed Google Doc** with all four reflection answers and at least one readable terminal screenshot. No history file is required.
 :::
 
+::: {.callout-note title="At home or offline in class"}
+**At home:** Bashcrawl works through Windows WSL, Windows Git Bash, Mac, a Chromebook Linux environment, Linux, Android, or iPhone/iPad.
+
+**In class without Internet:** after Linux Mint is installed or while it is running from the bootable USB, copy the included `bashcrawl` folder from the [TEJ Linux Offline Kit](offline-kit/) and play without downloading anything.
+:::
+
 [Bashcrawl](https://gitlab.com/slackermedia/bashcrawl) is a terminal adventure. Folders are rooms and files contain clues. There is **no required final room and no time limit**. Explore for as long as you can, return another day if you want, and record the furthest room you reached.
 
 ### 1. Open Terminal and check Git
 
-- **Windows:** Open WSL, Ubuntu, or the installed Linux distribution from Start.
+- **Windows WSL:** Open Ubuntu or the installed Linux distribution from Start.
+- **Windows Git Bash:** With the computer owner's permission, install [Git for Windows](https://gitforwindows.org/) and open Git Bash. Git Bash is not Linux or Unix, but the Bashcrawl commands used here are mostly the same.
 - **Linux Mint or Ubuntu:** Press **Ctrl + Alt + T**, or open Terminal from the application menu.
 - **Mac:** Press **Command + Space**, search for **Terminal**, and press **Return**.
 - **Chromebook:** Open the Linux Terminal from the Launcher. If Linux is not already enabled, use **Settings > About ChromeOS > Developers > Linux development environment > Set up** on a personal or owner account. A school-managed Chromebook may block this feature.
 
 On a Chromebook, extract the offline kit in the Files app. Move the complete `bashcrawl` folder into **Linux files**, then move it into `~/Games` from Terminal before starting the game. Linux setup requires Internet once, but the included Bashcrawl folder can be played offline afterward.
+
+The core Bashcrawl commands are mostly the same in WSL, Git Bash, Linux, macOS, ChromeOS Linux, Termux, and iSH: `ls`, `cd`, `pwd`, `cat`, and `git clone`. The prompt, home-folder path, permissions, and available system commands may differ.
 
 #### Use a phone or tablet
 
