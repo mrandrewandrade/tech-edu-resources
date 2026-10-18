@@ -191,6 +191,7 @@ def build() -> None:
     drawing = Drawing(qr_size, qr_size)
     drawing.add(qr)
     drawing.drawOn(pdf, qr_x, qr_y)
+    pdf.linkURL(PAGE_URL, (qr_x, qr_y, qr_x + qr_size, qr_y + qr_size), relative=0)
 
     bullet_width = CONTENT_WIDTH - qr_size - 24
     pdf.setFillColor(black)
@@ -221,15 +222,28 @@ def build() -> None:
         bullet_width - 18,
     )
     y = min(y - 24, qr_y - 25)
+    link_y = y
+    display_url = (
+        "andrewandrade.ca/tech-edu-resources/tej3-4/"
+        "linux-operating-systems/offline-kit/"
+    )
     y = draw_wrapped(
         pdf,
-        "andrewandrade.ca/tech-edu-resources/tej3-4/linux-operating-systems/offline-kit/",
+        display_url,
         LEFT,
         y,
         CONTENT_WIDTH,
         font="TCArial-Bold",
         size=9.5,
         leading=12,
+    )
+    link_width = pdfmetrics.stringWidth(display_url, "TCArial-Bold", 9.5)
+    pdf.setLineWidth(0.75)
+    pdf.line(LEFT, link_y - 2, LEFT + link_width, link_y - 2)
+    pdf.linkURL(
+        PAGE_URL,
+        (LEFT, link_y - 4, LEFT + link_width, link_y + 10),
+        relative=0,
     )
     y -= 14
 
