@@ -1,0 +1,57 @@
+TERMINAL QUEST: OFFLINE ANSWER SHEET
+
+Student:
+Device: Windows WSL / Linux / Mac / Android / iPhone or iPad
+Date:
+
+1. WHO AM I, AND WHERE AM I?
+
+whoami output:
+
+hostname output, or REDACTED:
+
+pwd output, with personal names replaced by REDACTED:
+
+Two or three names shown by ls:
+
+One hidden item shown by ls -a:
+
+2. BE A COMPUTER DETECTIVE
+
+uname -s:
+
+uname -m:
+
+Available space shown by df -h .:
+
+Uptime:
+
+3. MAKE A FOLDER AND FILE
+
+pwd inside terminal-quest:
+
+File shown by ls:
+
+Text shown by cat hello.txt:
+
+pwd after returning home:
+
+4. SEE WHAT THE COMPUTER IS DOING
+
+One CPU observation from top or htop:
+
+One memory observation from top or htop:
+
+5. REVIEWED COMMAND HISTORY
+
+Paste the complete available history below. Remove passwords, tokens, personal names, private paths, Wi-Fi credentials, and other private information.
+
+[PASTE REVIEWED HISTORY HERE]
+
+Privacy check:
+
+In cat hello.txt, which part is the command and which part is the argument?
+
+OPTIONAL
+
+Which new ls option did you learn from man ls, and what did it do?

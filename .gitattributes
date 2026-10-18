@@ -3,3 +3,6 @@ LICENSES/*.txt text eol=lf whitespace=-blank-at-eof,-trailing-space
 
 # CAD exports include intentional spacing in line-type descriptions.
 *.dxf text eol=lf whitespace=-trailing-space
+
+# Preserve the unmodified upstream Bashcrawl game files and their intentional spacing.
+offline-kits/linux/bashcrawl/** text eol=lf whitespace=-blank-at-eof,-trailing-space

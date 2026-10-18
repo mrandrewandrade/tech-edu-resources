@@ -1,0 +1,106 @@
+---
+title: "Linux Offline Kit"
+description: "Download the assignments, Xfce appearance script, and Bashcrawl for use without Internet access."
+categories: [Linux, offline, USB, terminal, Bashcrawl, LibreOffice]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+---
+
+The **TEJ Linux Offline Kit** puts the three Explore Linux assignments, the Xfce appearance script, and the complete Bashcrawl game into one ZIP file. Copy it to a USB drive before students lose Internet access.
+
+::: {.callout-important title="Download once, then use it offline"}
+[Download the TEJ Linux Offline Kit](../../../assets/linux/TEJ-Linux-Offline-Kit.zip){.btn .btn-primary download="TEJ-Linux-Offline-Kit.zip"}
+
+Extract the ZIP before using it. Open `START-HERE.html` inside the extracted folder.
+:::
+
+## What is included
+
+- **Make Linux Mint Xfce Your Own:** editable ODT and DOCX files, a PDF reference copy, and a plain-text answer sheet.
+- **Terminal Quest:** editable ODT and DOCX files, a PDF reference copy, and a plain-text answer sheet.
+- **Bashcrawl Terminal Adventure:** editable ODT and DOCX files, a PDF reference copy, and a plain-text answer sheet.
+- **Bashcrawl:** the complete game, including its hidden rooms and GNU GPL v3 licence.
+- **Xfce appearance script:** the Windows-style and Mac-inspired starting layouts used by the appearance activity.
+- **Offline start page:** a local HTML menu that works in a browser without a web server.
+
+## Do students need LibreOffice?
+
+Linux Mint normally includes **LibreOffice Writer**, so no portable office program should be needed on the classroom computers. Open the ODT version in LibreOffice when possible. DOCX is included for Microsoft Word and other compatible programs.
+
+Check before going offline:
+
+**INPUT**
+
+```bash
+libreoffice --version
+```
+
+If LibreOffice is missing, students can read the PDF and type their answers into the included TXT answer sheet using Linux Mint's Text Editor. This kit does not include a third-party portable office executable.
+
+## Terminal Quest without Internet
+
+Terminal Quest works completely offline on Linux Mint or Mac. It also works offline in Windows WSL, Android Termux, or iPhone/iPad iSH **after those environments are already installed**.
+
+Use `top` instead of trying to install `htop`. The account, file, system, process, and history commands do not need Internet access.
+
+## Bashcrawl without Git
+
+The ZIP contains the complete Bashcrawl folder, so students do not need `git clone`.
+
+1. Copy the entire `bashcrawl` folder into `~/Games`.
+2. Open Terminal.
+3. Run one command at a time:
+
+**INPUT**
+
+```bash
+cd ~/Games/bashcrawl/entrance
+```
+
+**INPUT**
+
+```bash
+cat scroll
+```
+
+Folders beginning with a dot are intentional hidden rooms. Copy the complete folder rather than selecting only the visible files.
+
+## Appearance script from the USB drive
+
+Copy `tej-xfce-style.sh` to `~/Downloads`, inspect it, and then run it:
+
+**INPUT**
+
+```bash
+cd ~/Downloads
+```
+
+**INPUT**
+
+```bash
+less tej-xfce-style.sh
+```
+
+**INPUT**
+
+```bash
+chmod +x tej-xfce-style.sh
+```
+
+**INPUT**
+
+```bash
+./tej-xfce-style.sh
+```
+
+The script changes only the current user's Xfce settings and does not use `sudo`.
+
+## Save now, submit later
+
+Students save the completed ODT, DOCX, or TXT file locally. When Internet access returns, they upload that file to the matching Google Classroom assignment. Screenshots should be inserted into the editable document or saved beside the TXT answer sheet with clear filenames.
+
+Do not record passwords, tokens, Wi-Fi credentials, student numbers, or other private information.
+
+## Sources and licences
+
+The assignments and appearance script are Technology Commons materials under CC BY-SA 4.0. [Bashcrawl](https://gitlab.com/slackermedia/bashcrawl) is included unmodified under GNU GPL v3, with its original README and licence preserved. The ZIP contains a source record and SHA-256 checksums.
