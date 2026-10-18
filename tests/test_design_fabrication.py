@@ -679,9 +679,12 @@ class DesignFabricationTests(unittest.TestCase):
         builder = self.read("design-fabrication/tools/plate-builder/index.qmd")
         for label in (
             "Rectangle", "Rounded rectangle", "Circle", "Ring", "Staggered grid", "Radial", "Perimeter",
-            "Outer diameter", "Ring wall thickness", "Finished hole diameter", "Circle-of-centres radius",
-            "Corner holes A-D", "Add four labelled corner holes", "Offset measured to", "All corners",
-            "Top left", "Top right", "Bottom right", "Bottom left", "Nearest edge of hole",
+            "Outer diameter", "Ring wall thickness", "Centre and pattern openings", "Add centre or repeated pattern openings", "Circle sizing method",
+            "Finished hole diameter", "Pattern arrangement", "Circle-of-centres radius", "Pattern opening:",
+            "Corner openings A-D", "Add four labelled corner holes", "Offset measured to", "All corners",
+            "Mixed (individual settings)", "Circle diameter", "Rectangle width", "Rectangle length",
+            "Shape centre", "Nearest edge of shape",
+            "Top left", "Top right", "Bottom right", "Bottom left",
             "Download cut SVG", "Download settings JSON", "Copy share link", "What the downloads contain",
         ):
             self.assertIn(label, builder)
@@ -696,6 +699,22 @@ class DesignFabricationTests(unittest.TestCase):
         for source in ("support.brmlasers.com", "ponoko.com"):
             self.assertIn(source, calibration)
         self.assertIn("Printable calibration record", calibration)
+
+    def test_left_sidebar_toggle_is_available_on_every_sidebar_page(self) -> None:
+        script = self.read("assets/bs-learn.js")
+        loader = self.read("includes/bs-scripts.html")
+        plate_builder = self.read("design-fabrication/tools/plate-builder/index.qmd")
+        self.assertIn("function initializeLeftSidebarToggle()", script)
+        self.assertIn('const sidebar = document.getElementById("quarto-sidebar")', script)
+        self.assertIn("if (!sidebar)", script)
+        self.assertNotIn("if (!learnPage || !sidebar)", script)
+        self.assertIn("Show site navigation", script)
+        self.assertIn("Hide site navigation", script)
+        self.assertIn("Show navigation", script)
+        self.assertIn("Hide navigation", script)
+        self.assertIn("initializeLeftSidebarToggle();", script)
+        self.assertIn('"bs-learn.js": "20261017-1"', loader)
+        self.assertNotIn("bs-learn-article", plate_builder)
 
     def test_leg_builder_and_easel_mechanics_are_connected(self) -> None:
         builder = self.read("design-fabrication/tools/leg-builder/index.qmd")

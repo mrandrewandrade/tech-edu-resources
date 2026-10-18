@@ -119,3 +119,121 @@ test("20 corner settings survive a share-link round trip", () => {
   assert.strictEqual(decoded.cornerCDiameter, 7.5);
   assert.strictEqual(decoded.cornerCOffset, 12);
 });
+
+test("21 rectangular corner openings use width, length and edge offsets", () => {
+  const holes = builder.cornerHoleSpecs({
+    ...builder.defaults, cornerHoles: true, cornerOffsetReference: "edge", base: "rectangle", width: 100, height: 60,
+    cornerAShape: "rectangle", cornerARectWidth: 20, cornerARectLength: 10, cornerAOffset: 5,
+    cornerBShape: "rectangle", cornerBRectWidth: 8, cornerBRectLength: 12, cornerBOffset: 5
+  });
+  assert.deepStrictEqual(
+    holes.slice(0, 2).map(hole => [hole.label, hole.shape, hole.x, hole.y, hole.width, hole.length]),
+    [["A", "rectangle", 15, 10, 20, 10], ["B", "rectangle", 91, 11, 8, 12]]
+  );
+});
+
+test("22 SVG exports rectangular corner openings as cut rectangles", () => {
+  const state = {
+    ...builder.defaults, cornerHoles: true, base: "rectangle", pattern: "single", holeMode: "direct", holeDiameter: 0,
+    cornerAShape: "rectangle", cornerARectWidth: 20, cornerARectLength: 10, cornerAOffset: 15
+  };
+  const svg = builder.buildSvg(state);
+  assert.match(svg, /<rect id="corner-hole-A" x="5" y="10" width="20" height="10"\/>/);
+  assert.strictEqual((svg.match(/id="corner-hole-/g) || []).length, 4);
+});
+
+test("23 rectangular corner dimensions are validated", () => {
+  const invalidSize = builder.validate({
+    ...builder.defaults, cornerHoles: true, base: "rectangle", cornerAShape: "rectangle", cornerARectWidth: 0
+  });
+  assert.match(invalidSize.errors.join(" "), /Corner rectangle A width and length/);
+  const invalidOffset = builder.validate({
+    ...builder.defaults, cornerHoles: true, base: "rectangle", cornerAShape: "rectangle",
+    cornerARectWidth: 20, cornerARectLength: 30, cornerAOffset: 10
+  });
+  assert.match(invalidOffset.errors.join(" "), /Corner hole A centre offset/);
+});
+
+test("24 rectangular corner settings survive a share-link round trip", () => {
+  const state = {
+    ...builder.defaults, cornerHoles: true, cornerCShape: "rectangle",
+    cornerCRectWidth: 8, cornerCRectLength: 16, cornerCOffset: 12
+  };
+  const decoded = builder.decodeState(builder.encodeState(state));
+  assert.strictEqual(decoded.cornerCShape, "rectangle");
+  assert.strictEqual(decoded.cornerCRectWidth, 8);
+  assert.strictEqual(decoded.cornerCRectLength, 16);
+  assert.strictEqual(decoded.cornerCOffset, 12);
+});
+
+test("25 the main pattern can use shared rectangle dimensions", () => {
+  const dimensions = builder.patternOpeningDimensions({
+    ...builder.defaults, holeShape: "rectangle", holeRectWidth: 18, holeRectLength: 30
+  });
+  assert.deepStrictEqual(dimensions, {
+    shape: "rectangle", diameter: builder.effectiveHoleDiameter(builder.defaults), width: 18, length: 30
+  });
+});
+
+test("26 SVG exports centre pattern openings as rectangles", () => {
+  const svg = builder.buildSvg({
+    ...builder.defaults, base: "rectangle", width: 100, height: 80, edgeMargin: 0,
+    pattern: "single", holeShape: "rectangle", holeRectWidth: 20, holeRectLength: 30
+  });
+  assert.match(svg, /<rect id="hole-001" x="40" y="25" width="20" height="30"\/>/);
+  assert.doesNotMatch(svg, /<circle id="hole-001"/);
+});
+
+test("27 rectangular pattern openings validate overlap and round boundaries", () => {
+  const overlap = builder.validate({
+    ...builder.defaults, base: "rectangle", width: 100, height: 80, edgeMargin: 0,
+    pattern: "row", columns: 2, spacingX: 15, holeShape: "rectangle", holeRectWidth: 20, holeRectLength: 10
+  });
+  assert.match(overlap.errors.join(" "), /overlaps/);
+  const outsideCircle = builder.validate({
+    ...builder.defaults, base: "circle", width: 100, edgeMargin: 0,
+    pattern: "single", holeShape: "rectangle", holeRectWidth: 80, holeRectLength: 80
+  });
+  assert.match(outsideCircle.errors.join(" "), /boundary/);
+});
+
+test("28 rectangular pattern settings survive a share-link round trip", () => {
+  const state = {
+    ...builder.defaults, holeShape: "rectangle", holeRectWidth: 18, holeRectLength: 31
+  };
+  const decoded = builder.decodeState(builder.encodeState(state));
+  assert.strictEqual(decoded.holeShape, "rectangle");
+  assert.strictEqual(decoded.holeRectWidth, 18);
+  assert.strictEqual(decoded.holeRectLength, 31);
+});
+
+test("29 pattern openings can be disabled for a plain plate", () => {
+  const result = builder.validate({
+    ...builder.defaults, patternOpenings: false, cornerHoles: false,
+    holeShape: "rectangle", holeRectWidth: -1, holeRectLength: 0,
+    edgeMargin: -1, spacingX: -1, spacingY: -1
+  });
+  assert.strictEqual(result.valid, true);
+  assert.strictEqual(result.holes.length, 0);
+  assert.strictEqual(result.points.length, 0);
+});
+
+test("30 a plain plate SVG contains no pattern cuts", () => {
+  const svg = builder.buildSvg({ ...builder.defaults, patternOpenings: false, cornerHoles: false });
+  assert.match(svg, /<g id="CUT_OUTER"/);
+  assert.match(svg, /<g id="CUT_HOLES"[^>]*><\/g>/);
+  assert.doesNotMatch(svg, /id="hole-|id="corner-hole-/);
+});
+
+test("31 corner openings remain available without centre openings", () => {
+  const result = builder.validate({
+    ...builder.defaults, patternOpenings: false, cornerHoles: true, base: "rectangle"
+  });
+  assert.strictEqual(result.holes.length, 4);
+  assert.deepStrictEqual(result.cornerHoles.map(hole => hole.label), ["A", "B", "C", "D"]);
+});
+
+test("32 the no-pattern option survives a share-link round trip", () => {
+  const decoded = builder.decodeState(builder.encodeState({ ...builder.defaults, patternOpenings: false }));
+  assert.strictEqual(decoded.patternOpenings, false);
+});

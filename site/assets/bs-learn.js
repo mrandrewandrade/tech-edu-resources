@@ -2227,7 +2227,7 @@
     }
   }
 
-  function initializeLearnLeftSidebarToggle() {
+  function initializeLeftSidebarToggle() {
     const sidebar = document.getElementById("quarto-sidebar");
     if (!sidebar) {
       return;
@@ -2288,9 +2288,9 @@
       toggle.setAttribute("aria-expanded", active ? "false" : "true");
       toggle.setAttribute(
         "aria-label",
-        active ? "Show sidebar navigation" : "Hide sidebar navigation"
+        active ? "Show site navigation" : "Hide site navigation"
       );
-      toggle.textContent = active ? "\u2192 Show Sidebar" : "\u2190 Hide";
+      toggle.textContent = active ? "\u2192 Show navigation" : "\u2190 Hide navigation";
       if (active) {
         toggle.style.left = "0.5rem";
       } else {
@@ -2478,6 +2478,7 @@
     canonicalShortDefinition: canonicalShortDefinition,
     groupControlState: groupControlState,
     inlineGlossaryTooltipPosition: inlineGlossaryTooltipPosition,
+    initializeLeftSidebarToggle: initializeLeftSidebarToggle,
     isMobileDrawerSwipe: isMobileDrawerSwipe,
     isSamePageTocHref: isSamePageTocHref,
     itemMatchesLesson: itemMatchesLesson,
@@ -2514,7 +2515,7 @@
       initializeInlineGlossary();
       initializeTermLookup();
       initializeMobileLessonBar();
-      initializeLearnLeftSidebarToggle();
+      initializeLeftSidebarToggle();
       placeLessonTrackLinks();
       placeLessonRightRailCards();
       mountLesson(document);

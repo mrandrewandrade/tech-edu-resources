@@ -75,11 +75,11 @@ assert.match(
 );
 assert.match(
   learnSource,
-  /function initializeLearnLeftSidebarToggle\(\)[\s\S]*?const sidebar = document\.getElementById\("quarto-sidebar"\)[\s\S]*?if \(!sidebar\)/
+  /function initializeLeftSidebarToggle\(\)[\s\S]*?const sidebar = document\.getElementById\("quarto-sidebar"\)[\s\S]*?if \(!sidebar\)/
 );
 assert.match(
   learnSource,
-  /function initializeLearnLeftSidebarToggle\(\)[\s\S]*?const usesDockedSidebar = document\.body\.classList\.contains\("docked"\)[\s\S]*?if \(usesDockedSidebar\)/
+  /function initializeLeftSidebarToggle\(\)[\s\S]*?const usesDockedSidebar = document\.body\.classList\.contains\("docked"\)[\s\S]*?if \(usesDockedSidebar\)/
 );
 assert.match(scriptIncludeSource, /"bs-learn\.js": "20261017-1"/);
 assert.doesNotMatch(learnSource, /keepExpandedWhileScrolling/);
@@ -963,5 +963,89 @@ assert.equal(mountedButton.listenerCount, 1);
 assert.equal(mountedAnalyzer.listenerCount, 1);
 assert.equal(mountedPrompt.dataset.bsAnswerChoicesMounted, "true");
 assert.equal(mountedAnalyzer.dataset.bsLazyAnalyzerMounted, "true");
+
+function fakeToggleClassList(initial) {
+  const values = new Set(initial || []);
+  return {
+    contains(value) {
+      return values.has(value);
+    },
+    toggle(value, active) {
+      if (active) values.add(value);
+      else values.delete(value);
+    }
+  };
+}
+
+const sidebarScroller = {
+  scrollTop: 0,
+  addEventListener() {}
+};
+const siteSidebar = {
+  id: "quarto-sidebar",
+  hidden: false,
+  querySelector(selector) {
+    return selector === ".sidebar-menu-container" ? sidebarScroller : null;
+  },
+  getBoundingClientRect() {
+    return { right: 320 };
+  }
+};
+const sidebarToggleButton = {
+  attributes: new Map(),
+  classList: fakeToggleClassList(),
+  dataset: {},
+  hidden: false,
+  offsetWidth: 90,
+  style: {},
+  textContent: "",
+  setAttribute(name, value) {
+    this.attributes.set(name, value);
+  },
+  addEventListener(name, listener) {
+    if (name === "click") this.click = listener;
+  }
+};
+const fakeBody = {
+  classList: fakeToggleClassList(["plate-builder-page"]),
+  appendChild(element) {
+    assert.equal(element, sidebarToggleButton);
+  }
+};
+const previousDocument = global.document;
+const previousWindow = global.window;
+global.document = {
+  body: fakeBody,
+  createElement(tag) {
+    assert.equal(tag, "button");
+    return sidebarToggleButton;
+  },
+  getElementById(id) {
+    if (id === "quarto-sidebar") return siteSidebar;
+    if (id === "quarto-header") return null;
+    return null;
+  }
+};
+global.window = {
+  scrollY: 0,
+  addEventListener() {},
+  matchMedia() {
+    return { matches: true, addEventListener() {} };
+  }
+};
+learn.initializeLeftSidebarToggle();
+assert.equal(sidebarToggleButton.textContent, "\u2190 Hide navigation");
+assert.equal(sidebarToggleButton.attributes.get("aria-expanded"), "true");
+assert.equal(siteSidebar.hidden, false);
+sidebarToggleButton.click();
+assert.equal(sidebarToggleButton.textContent, "\u2192 Show navigation");
+assert.equal(sidebarToggleButton.attributes.get("aria-expanded"), "false");
+assert.equal(siteSidebar.hidden, true);
+assert.equal(fakeBody.classList.contains("bs-learn-left-sidebar-collapsed"), true);
+sidebarToggleButton.click();
+assert.equal(siteSidebar.hidden, false);
+assert.equal(fakeBody.classList.contains("bs-learn-left-sidebar-collapsed"), false);
+global.document = previousDocument;
+global.window = previousWindow;
 
 console.log("continuous Learn helper tests passed");
