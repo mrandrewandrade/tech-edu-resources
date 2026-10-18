@@ -55,6 +55,15 @@ START BASHCRAWL OFFLINE
 
 Hidden folders are part of the game. Copy the entire bashcrawl folder, including files whose names begin with a dot.
 
+CHROMEBOOK
+----------
+
+On a personal Chromebook or owner account, enable the Linux development environment while Internet access is available:
+
+  Settings > About ChromeOS > Developers > Linux development environment > Set up
+
+Open Terminal from the Launcher. In the Files app, move the complete bashcrawl folder into Linux files. A school-managed Chromebook may block Linux. Do not use Developer Mode to bypass that restriction.
+
 SUBMITTING LATER
 ----------------
 

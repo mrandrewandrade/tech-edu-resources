@@ -1,7 +1,7 @@
 ---
 title: "Set Up Your Accounts and Explore Linux"
 description: "Use Linux Mint safely, personalize the Xfce desktop, complete Terminal Quest, and explore Bashcrawl."
-categories: [Linux, Linux Mint, accounts, customization, terminal, WSL, macOS, Git, Bashcrawl]
+categories: [Linux, Linux Mint, accounts, customization, terminal, WSL, macOS, ChromeOS, Git, Bashcrawl]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 ---
@@ -27,7 +27,7 @@ By the end of this page:
 - I will be able to create and test safe user accounts on an assigned classroom computer.
 - I will be able to personalize Linux Mint with the graphical user interface (GUI).
 - I will be able to predict, test, and troubleshoot one configuration change using terminal evidence.
-- I will be able to open the correct terminal on Windows, Linux, Mac, Android, or iPhone/iPad and use beginner commands.
+- I will be able to open the correct terminal on Windows, Linux, Mac, Chromebook, Android, or iPhone/iPad and use beginner commands.
 - I will be able to create a folder and file, inspect processes, and review command history safely.
 - I will be able to download and explore Bashcrawl with Git.
 
@@ -322,6 +322,12 @@ Press **Ctrl + Alt + T**, or search the application menu for **Terminal**. WSL i
 #### Mac
 
 Press **Command + Space**, search for **Terminal**, and press **Return**. You can also open **Applications > Utilities > Terminal**.
+
+#### Chromebook with the Linux development environment
+
+On a personal Chromebook or an owner account, open **Settings > About ChromeOS > Developers**. Beside **Linux development environment**, select **Set up** and follow the prompts. Setup needs Internet and can take several minutes. When it finishes, open **Terminal** from the Launcher and select the Linux terminal.
+
+A school-managed Chromebook may hide or block this feature. Do not remove management, change security settings, or use Developer Mode. Use another supported device if the normal Linux development environment is unavailable. Follow the official [Google Chromebook Linux setup guide](https://support.google.com/chromebook/answer/9145439) when needed.
 
 #### Android phone or tablet
 
@@ -650,6 +656,9 @@ Submit **ONE completed Google Doc** with all four reflection answers and at leas
 - **Windows:** Open WSL, Ubuntu, or the installed Linux distribution from Start.
 - **Linux Mint or Ubuntu:** Press **Ctrl + Alt + T**, or open Terminal from the application menu.
 - **Mac:** Press **Command + Space**, search for **Terminal**, and press **Return**.
+- **Chromebook:** Open the Linux Terminal from the Launcher. If Linux is not already enabled, use **Settings > About ChromeOS > Developers > Linux development environment > Set up** on a personal or owner account. A school-managed Chromebook may block this feature.
+
+On a Chromebook, extract the offline kit in the Files app. Move the complete `bashcrawl` folder into **Linux files**, then move it into `~/Games` from Terminal before starting the game. Linux setup requires Internet once, but the included Bashcrawl folder can be played offline afterward.
 
 #### Use a phone or tablet
 
