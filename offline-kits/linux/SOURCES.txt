@@ -37,3 +37,12 @@ LibreOffice
 
 Official download and documentation: https://www.libreoffice.org/download/
 LibreOffice is not bundled in this kit. Linux Mint normally includes LibreOffice Writer. Students without an office program can use the plain-text answer sheets.
+
+Cinnamon appearance settings
+----------------------------
+
+Official Cinnamon settings schema:
+https://github.com/linuxmint/cinnamon/blob/master/data/org.cinnamon.gschema.xml
+
+Official Cinnamon window settings module:
+https://github.com/linuxmint/cinnamon/blob/master/files/usr/share/cinnamon/cinnamon-settings/modules/cs_windows.py

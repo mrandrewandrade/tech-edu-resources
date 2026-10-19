@@ -1,6 +1,6 @@
 ---
 title: "Set Up Your Accounts and Explore Linux"
-description: "Use Linux Mint safely, personalize the Xfce desktop, complete Terminal Quest, and explore Bashcrawl."
+description: "Use Linux Mint safely, personalize Cinnamon or Xfce, complete Terminal Quest, and explore Bashcrawl."
 categories: [Linux, Linux Mint, accounts, customization, terminal, WSL, macOS, ChromeOS, Git, Bashcrawl]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
@@ -74,10 +74,16 @@ If anything here is unclear, incomplete, or could be explained better, improve i
 
 ### Part 2: make Linux feel like your computer
 
+::: {.callout-note title="Cinnamon or Xfce? Check before following appearance instructions"}
+Linux Mint Cinnamon and Linux Mint Xfce use different settings. Run `echo "$XDG_CURRENT_DESKTOP"` in Terminal. Use the Cinnamon script only when the result includes `Cinnamon`, and use the Xfce script only when it includes `XFCE`. Never force the wrong script to run.
+:::
+
 ::: {.callout-important title="Open the assignment and know what to submit"}
-[Make a copy of **3.3 Sleek Out Linux Mint: Make Xfce Your Own**](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy).
+[Make a copy of **3.3 Sleek Out Linux Mint**](https://docs.google.com/document/d/1i5idpi--acAt6GjY-TNwthrjG0jv0k5VPrbG5SjVLDg/copy).
 
 Submit **ONE completed Google Doc** in Google Classroom. It must contain a BEFORE screenshot, an AFTER screenshot, the configuration detective response, and all five short reflection answers. Do not attach the screenshots as separate files.
+
+The handout was originally written around Xfce. Cinnamon students complete the same evidence and reflection using the Cinnamon controls and script identified on this page.
 :::
 
 ### 1. Save your BEFORE screenshot
@@ -124,7 +130,15 @@ This course example shows one possible finished direction. Your design should re
 
 ### 3. Make the three required changes
 
-Use the settings already included with Linux Mint. Do not download themes, packages, or desktop effects without teacher permission. The optional course script below is the only approved appearance script for this activity.
+Use the settings already included with Linux Mint. Do not download themes, packages, or desktop effects without teacher permission. The optional course scripts below are the only approved appearance scripts for this activity.
+
+| Change | Linux Mint Cinnamon | Linux Mint Xfce |
+|:--|:--|:--|
+| Wallpaper | Right-click the desktop and choose **Change Desktop Background** | Right-click the desktop and choose **Desktop Settings** |
+| Theme or icons | Open **System Settings > Themes** | Open **Settings > Appearance** |
+| Panel | Open **System Settings > Panel**, or right-click the panel | Right-click the panel and choose **Panel > Panel Preferences** |
+
+The screenshots below show Xfce. Cinnamon students use the matching Cinnamon path in the table.
 
 #### Change A: wallpaper
 
@@ -159,7 +173,49 @@ Do **not** delete the panel or remove the application menu, network, sound, or c
 
 If a setting looks wrong, return to the same settings window and change it back. If you cannot restore the panel or essential controls, stop and ask for help.
 
-#### Optional shortcut: compare two Xfce layouts
+#### Optional shortcut for Cinnamon
+
+The Cinnamon script is designed for Linux Mint Cinnamon, including Cinnamon 5.6 on Linux Mint 21.1. It changes only a small set of current-user appearance settings. It does not use `sudo`, install software, download themes, remove applets, or modify personal files.
+
+It first shows a preview. If you continue, it creates a backup and requires you to type `APPLY`. Its menu also provides a Restore option.
+
+[Download `tej-cinnamon-style.sh`](../../assets/linux/tej-cinnamon-style.sh){.btn .btn-outline-primary download="tej-cinnamon-style.sh"}
+
+Run one command at a time:
+
+**INPUT**
+
+```bash
+cd ~/Downloads
+```
+
+**INPUT**
+
+```bash
+less tej-cinnamon-style.sh
+```
+
+Press `q` to leave `less`.
+
+**INPUT**
+
+```bash
+chmod +x tej-cinnamon-style.sh
+```
+
+**INPUT**
+
+```bash
+./tej-cinnamon-style.sh
+```
+
+Choose the Windows-style or Mac-inspired preview. Read the proposed changes, then type `APPLY` only if you want them. Choose Restore from the menu to return to the most recent settings saved by the course script.
+
+The script supports one Cinnamon panel. If it detects multiple panels, it stops without changing anything and directs you to use **System Settings > Panel** manually.
+
+The panel and window-setting names come from the [official Cinnamon settings schema](https://github.com/linuxmint/cinnamon/blob/master/data/org.cinnamon.gschema.xml) and [official window settings module](https://github.com/linuxmint/cinnamon/blob/master/files/usr/share/cinnamon/cinnamon-settings/modules/cs_windows.py).
+
+#### Optional shortcut for Xfce
 
 After you save the required BEFORE screenshot, you may use the course appearance script on **Linux Mint Xfce only**. It changes settings for your account without `sudo`, saves a backup of the current Xfce configuration, and offers two starting points:
 

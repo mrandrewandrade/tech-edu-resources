@@ -10,5 +10,8 @@ LICENSES/*.txt text eol=lf whitespace=-blank-at-eof,-trailing-space
 *.odt binary
 *.zip binary
 
+# Shell scripts must remain executable on Linux without CRLF interpreter errors.
+*.sh text eol=lf
+
 # Preserve the unmodified upstream Bashcrawl game files and their intentional spacing.
 offline-kits/linux/bashcrawl/** text eol=lf whitespace=-blank-at-eof,-trailing-space

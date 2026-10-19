@@ -24,6 +24,9 @@ bashcrawl/
 tej-xfce-style.sh
   The Linux Mint Xfce appearance script. It changes only the signed-in user's Xfce settings and never uses sudo.
 
+tej-cinnamon-style.sh
+  The Linux Mint Cinnamon appearance script. It previews each preset, backs up the settings it changes, includes a restore option, and never uses sudo.
+
 WHICH DOCUMENT FORMAT SHOULD I USE?
 -----------------------------------
 

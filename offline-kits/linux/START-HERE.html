@@ -74,8 +74,15 @@
   </section>
 
   <section>
-    <h2>Run the appearance script</h2>
-    <p>Copy <a href="tej-xfce-style.sh">tej-xfce-style.sh</a> to your Downloads folder. Inspect it before running it.</p>
+    <h2>Run the correct appearance script</h2>
+    <p>First identify the desktop. Cinnamon and Xfce use different settings, so do not force the wrong script to run.</p>
+    <pre><code>echo "$XDG_CURRENT_DESKTOP"</code></pre>
+    <p><strong>Cinnamon:</strong> copy <a href="tej-cinnamon-style.sh">tej-cinnamon-style.sh</a> to Downloads. It previews the preset, creates a backup, and includes Restore.</p>
+    <pre><code>cd ~/Downloads
+less tej-cinnamon-style.sh
+chmod +x tej-cinnamon-style.sh
+./tej-cinnamon-style.sh</code></pre>
+    <p><strong>Xfce:</strong> copy <a href="tej-xfce-style.sh">tej-xfce-style.sh</a> to Downloads.</p>
     <pre><code>cd ~/Downloads
 less tej-xfce-style.sh
 chmod +x tej-xfce-style.sh

@@ -1,6 +1,6 @@
 ---
 title: "Linux Offline Kit"
-description: "Download the assignments, Xfce appearance script, and Bashcrawl for use without Internet access."
+description: "Download the assignments, Cinnamon and Xfce appearance scripts, and Bashcrawl for use without Internet access."
 categories: [Linux, offline, USB, terminal, Bashcrawl, LibreOffice]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
@@ -12,6 +12,10 @@ The **TEJ Linux Offline Kit** lets students begin Computer Detective and Bashcra
 [Download the TEJ Linux Offline Kit](../../../assets/linux/TEJ-Linux-Offline-Kit.zip){.btn .btn-primary download="TEJ-Linux-Offline-Kit.zip"}
 
 [Print the two-page Quick Start](../../../assets/linux/TEJ-Linux-Offline-Kit-Quick-Start.pdf){.btn .btn-outline-primary target="_blank"}
+
+[Download the Cinnamon appearance script](../../../assets/linux/tej-cinnamon-style.sh){.btn .btn-outline-primary download="tej-cinnamon-style.sh"}
+
+[Download the Xfce appearance script](../../../assets/linux/tej-xfce-style.sh){.btn .btn-outline-primary download="tej-xfce-style.sh"}
 
 Copy or download the ZIP, extract it, and open `START-HERE.html` inside the extracted folder. The start page works locally without Internet.
 :::
@@ -32,7 +36,7 @@ If Internet is available, download the ZIP above instead of copying it from the 
 - **3.2 Bashcrawl:** editable ODT and DOCX files, a PDF reference copy, and a plain-text answer sheet.
 - **3.3 Sleek Out Linux Mint:** editable ODT and DOCX files, a PDF reference copy, and a plain-text answer sheet.
 - **Bashcrawl:** the complete game, including its hidden rooms and GNU GPL v3 licence.
-- **Xfce appearance script:** the Windows-style and Mac-inspired starting layouts used by the appearance activity.
+- **Cinnamon and Xfce appearance scripts:** separate Windows-style and Mac-inspired starting layouts for each desktop. Never force one desktop's script to run on the other.
 - **Offline start page:** a local HTML menu that works in a browser without a web server.
 - **Printable Quick Start:** a two-page, black-and-white handout with larger text and one command per step.
 
@@ -87,7 +91,43 @@ Folders beginning with a dot are intentional hidden rooms. Copy the complete fol
 
 Continue with `ls`, `pwd`, `cat scroll`, `cd roomname`, `cd ..`, and `ls -a`. Do not type the `$` prompt symbol shown in some examples.
 
-## Appearance script from the USB drive
+## Appearance scripts from the USB drive
+
+Identify the desktop first:
+
+**INPUT**
+
+```bash
+echo "$XDG_CURRENT_DESKTOP"
+```
+
+If the result includes `Cinnamon`, copy `tej-cinnamon-style.sh` to `~/Downloads`. It previews the proposed changes, backs up every setting it changes, requires the student to type `APPLY`, and includes a Restore option:
+
+**INPUT**
+
+```bash
+cd ~/Downloads
+```
+
+**INPUT**
+
+```bash
+less tej-cinnamon-style.sh
+```
+
+**INPUT**
+
+```bash
+chmod +x tej-cinnamon-style.sh
+```
+
+**INPUT**
+
+```bash
+./tej-cinnamon-style.sh
+```
+
+If the result includes `XFCE`, use the Xfce script below.
 
 Copy `tej-xfce-style.sh` to `~/Downloads`, inspect it, and then run it:
 

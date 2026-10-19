@@ -50,11 +50,29 @@ class LinuxOfflineKitTests(unittest.TestCase):
         prefix = "TEJ-Linux-Offline-Kit/"
         self.assertIn(prefix + "START-HERE.html", names)
         self.assertIn(prefix + "PRINTABLE-QUICK-START.pdf", names)
+        self.assertIn(prefix + "tej-cinnamon-style.sh", names)
         self.assertIn(prefix + "tej-xfce-style.sh", names)
         self.assertIn(prefix + "bashcrawl/LICENSE", names)
         self.assertTrue(any("/bashcrawl/entrance/.chapel/" in name for name in names))
         self.assertFalse(any("/.git/" in name for name in names))
         self.assertFalse(any("answer key" in name.lower() for name in names))
+
+    def test_appearance_scripts_are_separate_and_non_privileged(self) -> None:
+        cinnamon = (KIT_SOURCE / "tej-cinnamon-style.sh").read_text(encoding="utf-8")
+        xfce = (KIT_SOURCE / "tej-xfce-style.sh").read_text(encoding="utf-8")
+
+        self.assertIn("Cinnamon", cinnamon)
+        self.assertIn("Xfce", xfce)
+        self.assertIn("Preview only", cinnamon)
+        self.assertIn("restore_latest", cinnamon)
+        self.assertNotIn("sudo ", cinnamon)
+        self.assertNotIn("curl ", cinnamon)
+        self.assertNotIn("wget ", cinnamon)
+        self.assertNotIn("rm ", cinnamon)
+        self.assertEqual(
+            cinnamon,
+            (SITE / "assets" / "linux" / "tej-cinnamon-style.sh").read_text(encoding="utf-8"),
+        )
 
     def test_phone_support_and_difficulty_warning_are_consistent(self) -> None:
         warning = "slower and more difficult"
