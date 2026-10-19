@@ -19,7 +19,7 @@ execute:
 Reusable slide decks and lightweight classroom activities for educators and learners across subjects including mathematics, science, business, arts, and technological education. Source files are organized in the [Teaching folder](https://drive.google.com/drive/folders/1rWNYdJpppXTj5Oq_FO6mBqT-Ihee6b3S).
 :::
 
-**Number Systems** contains significant figures, powers of ten, notation, and related measurement material. **Well-Being** contains Funday Friday activities, reflection, creativity, attention, and connection material. **General** holds reusable templates and process decks that do not belong to one of those collections.
+**Number Systems** contains significant figures, powers of ten, notation, and related measurement material. **Well-Being** contains emotions, Funday Friday activities, reflection, creativity, attention, and connection material. **General** holds reusable learning-skills, classroom-expectations, template, and process decks.
 :::
 
 Filters are saved in the page URL as you select them, so you can copy the address bar and send someone the same filtered view.
@@ -38,7 +38,7 @@ Filters are saved in the page URL as you select them, so you can copy the addres
       id="general-slide-search"
       class="bs-slide-search"
       type="search"
-      placeholder="Search significant figures, reflection, sketching, measurement..."
+      placeholder="Search emotions, learning skills, reflection, measurement..."
       autocomplete="off"
       data-slide-search>
   </div>
@@ -70,6 +70,60 @@ Filters are saved in the page URL as you select them, so you can copy the addres
 </section>
 
 <div class="bs-slide-grid" data-slide-grid>
+
+  <article
+    class="bs-slide-card"
+    data-slide-card
+    data-collection="General"
+    data-courses="TAS|TEJ|TTJ"
+    data-tags="learning skills|class expectations|responsibility|organization|independent work|collaboration|initiative|self-regulation"
+    data-search="learning skills tech class expectations employer test responsibility organization independent work collaboration initiative self-regulation attendance phones submissions classroom routines job readiness TAS TEJ TTJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/presentation/d/11P1Vos4hxCoEIRqgbKW1CGvGL_bWsppDdISZaA6rQ2k/edit" aria-label="Open Learning Skills and Tech Class Expectations slides">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true">
+        <span class="bs-slide-thumb-kicker">General</span>
+        <strong>THE SIX</strong>
+        <span>Habits build trust</span>
+      </span>
+      <img src="https://docs.google.com/presentation/d/11P1Vos4hxCoEIRqgbKW1CGvGL_bWsppDdISZaA6rQ2k/export/png?id=11P1Vos4hxCoEIRqgbKW1CGvGL_bWsppDdISZaA6rQ2k&amp;pageid=g3fbe032a372_12_0" alt="Learning Skills and Tech Class Expectations title slide" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/presentation/d/11P1Vos4hxCoEIRqgbKW1CGvGL_bWsppDdISZaA6rQ2k/edit">Learning Skills and Tech Class Expectations</a></h2>
+      <p class="bs-slide-card-description">A discussion-first deck connecting Ontario's six learning skills to job readiness, classroom routines, attention, submissions, and practical tech-class expectations.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="learning skills">Learning skills</button><button type="button" data-slide-card-tag="class expectations">Class expectations</button><button type="button" data-slide-card-tag="self-regulation">Self-regulation</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/presentation/d/11P1Vos4hxCoEIRqgbKW1CGvGL_bWsppDdISZaA6rQ2k/edit">Open Google Slides</a>
+      </div>
+    </div>
+  </article>
+
+  <article
+    class="bs-slide-card"
+    data-slide-card
+    data-collection="Well-Being"
+    data-courses="TAS|TEJ|TTJ"
+    data-tags="emotions|emotion surfing|emotional regulation|well-being|visual communication|positive experiences"
+    data-search="why we have emotions feelings emotional regulation emotion surfing intense emotions 90 seconds wave anger fear happiness sadness love jealousy guilt shame envy disgust visual communication audience positive experiences personal brand TAS TEJ TTJ">
+    <a class="bs-slide-thumb" href="https://docs.google.com/presentation/d/1CnPQ-C1e5JIT2ZCuljJj2ddsWO-DCMcLBLV4Y_yZo0I/edit" aria-label="Open Why We Have Emotions slides">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true">
+        <span class="bs-slide-thumb-kicker">Well-Being</span>
+        <strong>FEEL</strong>
+        <span>Notice + surf + design</span>
+      </span>
+      <img src="https://docs.google.com/presentation/d/1CnPQ-C1e5JIT2ZCuljJj2ddsWO-DCMcLBLV4Y_yZo0I/export/png?id=1CnPQ-C1e5JIT2ZCuljJj2ddsWO-DCMcLBLV4Y_yZo0I&amp;pageid=g3fbe032a372_12_0" alt="Why We Have Emotions title slide" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">Well-Being</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/presentation/d/1CnPQ-C1e5JIT2ZCuljJj2ddsWO-DCMcLBLV4Y_yZo0I/edit">Why We Have Emotions</a></h2>
+      <p class="bs-slide-card-description">A simple visual lesson on what emotions do, how intense feelings rise and change, emotion surfing, and how design choices can create positive audience experiences.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TAS">TAS</button><button type="button" data-slide-card-course="TEJ">TEJ</button><button type="button" data-slide-card-course="TTJ">TTJ</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="emotions">Emotions</button><button type="button" data-slide-card-tag="emotion surfing">Emotion surfing</button><button type="button" data-slide-card-tag="visual communication">Visual communication</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/presentation/d/1CnPQ-C1e5JIT2ZCuljJj2ddsWO-DCMcLBLV4Y_yZo0I/edit">Open Google Slides</a>
+      </div>
+    </div>
+  </article>
 
   <article
     class="bs-slide-card"
