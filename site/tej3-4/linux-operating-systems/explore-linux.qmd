@@ -490,6 +490,8 @@ uname -m
 df -h .
 ```
 
+Find the row for the filesystem containing the current folder. Record the value in the `Avail` column from that row. Do not copy a value from another row such as `tmpfs`. The device name is different on different computers, so it may not be `/dev/sda2`.
+
 **INPUT**
 
 ```bash
@@ -500,13 +502,35 @@ Record the system name, machine or CPU type, available space, and uptime in your
 
 ### 4. Create the `terminal-quest` folder and `hello.txt`
 
-Run each command separately:
+Start at the file-system root so you can see the move. Run each command separately and press Enter after every command. `cd` means **change directory**, `pwd` means **print working directory**, and `~` means the signed-in user's **home folder**.
 
 **INPUT**
 
 ```bash
-cd ~
+cd /
 ```
+
+**INPUT**
+
+```bash
+pwd
+```
+
+Now return to your home folder and check the location again:
+
+**INPUT**
+
+```bash
+cd ~/
+```
+
+**INPUT**
+
+```bash
+pwd
+```
+
+Compare the two results. `cd /` moves to the root of the file system. `cd ~/` returns to your own home folder.
 
 **INPUT**
 
