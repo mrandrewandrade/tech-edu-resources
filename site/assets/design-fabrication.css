@@ -557,6 +557,42 @@
 .ter-toolkit-banner h2 { margin: .2rem 0 .6rem; }
 .ter-toolkit-banner p:last-child { margin-bottom: 0; }
 
+.ter-process-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.ter-process-example {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--bs-border);
+  border-radius: 10px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-process-example img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #ebe5da;
+}
+
+.ter-process-example figcaption {
+  padding: .9rem 1rem 1rem;
+  border-top: 4px solid var(--bs-copper-dark);
+  color: var(--bs-text-secondary);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.ter-process-example figcaption strong {
+  color: var(--bs-navy-dark);
+}
+
 .ter-assembly-jump {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -749,6 +785,7 @@
   .ter-resource-grid,
   .ter-feature-assets,
   .ter-assembly-gallery,
+  .ter-process-gallery,
   .ter-toolkit-banner,
   .ter-view-grid {
     grid-template-columns: 1fr;
@@ -797,6 +834,10 @@
   .ter-calibration-card img { height:125px; }
   .ter-calibration-record { padding:.55rem; overflow-x:auto; }
   .ter-calibration-record table { min-width:540px; }
+}
+
+[data-bs-theme="dark"] .ter-process-example figcaption strong {
+  color: var(--bs-text);
 }
 
 @media print {

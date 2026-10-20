@@ -17,6 +17,21 @@ For the active name-tag project, use the [classroom toolkit](resources/index.qmd
 
 For a freestanding holder, use the [Laser-Cut Leg & Support Builder](../tools/leg-builder/index.qmd) to generate measured legs, matching slots and a fit coupon, then read [Make It Stand](02-make-it-stand.qmd) to check the load path and stability.
 
+## Testing and iteration in practice
+
+These are examples of **process evidence**, not a set of projects to copy. A simple repeated shape can make changes in power and line quality easy to compare; puzzles, moving parts and assemblies reveal different questions about fit, clarity, structure and usability. Record what changed, compare the result with the intention, and use the evidence to choose the next revision.
+
+<div class="ter-process-gallery">
+<figure class="ter-process-example"><img src="../../assets/laser-cutting/process-gallery/power-test-bears.webp" alt="Three bear shapes on plywood showing different laser line darkness and cutting results" loading="lazy"><figcaption><strong>Power and line-quality tests.</strong> The bears are repeated test samples: their purpose is to make differences in engraving and cutting easy to see, not to prescribe a finished design.</figcaption></figure>
+<figure class="ter-process-example"><img src="../../assets/laser-cutting/process-gallery/bear-puzzle-prototype.webp" alt="Hand holding a laser-cut bear puzzle prototype" loading="lazy"><figcaption><strong>Cut and fit prototype.</strong> Repeating interlocking geometry exposes incomplete cuts, excessive burning and pieces that fit too loosely or tightly.</figcaption></figure>
+<figure class="ter-process-example"><img src="../../assets/laser-cutting/process-gallery/engraved-puzzle-prototype.webp" alt="Hand holding an engraved laser-cut puzzle prototype" loading="lazy"><figcaption><strong>Engraving plus cut geometry.</strong> One sample can test whether the image remains readable after puzzle lines, kerf and handling are introduced.</figcaption></figure>
+<figure class="ter-process-example"><img src="../../assets/laser-cutting/process-gallery/dial-iterations.webp" alt="Two overlapping circular laser-cut dial prototypes with different number styles" loading="lazy"><figcaption><strong>Compare alternatives.</strong> Different faces, symbols and mechanisms make design choices visible so evidence can guide the next version.</figcaption></figure>
+<figure class="ter-process-example"><img src="../../assets/laser-cutting/process-gallery/functional-prototype.webp" alt="Hand holding a layered laser-cut mechanical prototype with a clear cylindrical body" loading="lazy"><figcaption><strong>Functional prototype.</strong> Layered plates, slots, fasteners, wiring and moving parts shift testing from appearance to assembly, access and operation.</figcaption></figure>
+<figure class="ter-process-example"><img src="../../assets/laser-cutting/process-gallery/display-model.webp" alt="Detailed laser-cut wooden spacecraft display model on a clear stand" loading="lazy"><figcaption><strong>Refined display model.</strong> A developed build still depends on earlier tests of scale, joint fit, alignment, support and finish.</figcaption></figure>
+</div>
+
+Use the [material-fit calibration workflow](04-material-fit-calibration.qmd) to plan controlled tests, then use [Evaluate, Improve & Repeat](../design-process/evaluate-repeat.qmd) to turn observations into a specific next decision.
+
 <div class="ter-toolkit-banner ter-toolkit-banner--extension">
 <a href="resources/pill-bottle-organizer.qmd"><img src="../../assets/laser-library/classroom-kit/pill-bottle/removable-wall-bench-rack/exploded.svg" alt="Exploded preview of the removable pill-bottle organizer"></a>
 <div><p class="ter-assembly-kicker">Advanced extension · not a required TAS project</p><h2>Organizer assemblies and reusable fabrication tools</h2><p>Compare five pill-bottle strategies, inspect exploded views and true-size parts sheets, then study real build/revision evidence in the Tool Organizer Gallery.</p><p><a class="btn btn-primary" href="../tools/tool-organizer-gallery/index.qmd">Open the Tool Organizer Gallery</a> <a class="btn btn-outline-secondary" href="resources/pill-bottle-organizer.qmd">View reference assemblies</a></p></div>
