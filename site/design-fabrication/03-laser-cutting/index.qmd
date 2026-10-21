@@ -1,6 +1,6 @@
 ---
 title: "Laser Cutting for Technology Education | SVG, Kerf, Fits & Fabrication"
-description: "Free laser-cutting lessons and SVG fabrication resources for Ontario technology education. Learn vector design, material thickness, kerf, fit testing, joinery, tool holders and digital fabrication."
+description: "Laser-cutting projects, lessons, SVG files and design tools."
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
@@ -9,17 +9,18 @@ execute:
   enabled: false
 ---
 
-These canonical notes support a simple first TAS project and a deeper reusable fabrication pathway. Students can learn engraving versus cutting, SVG preparation, scale, material measurement, kerf, fit, holes, slots and tabs, supports, assemblies, adhesive selection, cleanup, sanding, staining, hybrid fabrication and testing without treating every lesson as a required project.
+Start with a project. Open a lesson, file or design tool when you need it.
 
-The learning sequence lives here. The separate [Laser Fabrication Library](../../teaching-materials/laser-cutting/index.qmd) holds downloadable SVGs, calibration files, editable geometry, project components, holders, and inspiration.
-
-For the active name-tag project, use the [classroom toolkit](resources/index.qmd). For advanced work, the toolkit also includes component palettes, standing-name-tag ideas, five pill-bottle organizer references and teaching slides. For repeated holes and measured plates, open the [Fabrication Plate Builder](../tools/plate-builder/index.qmd), then verify the result with the [material-fit calibration workflow](04-material-fit-calibration.qmd).
-
-For a freestanding holder, use the [Laser-Cut Leg & Support Builder](../tools/leg-builder/index.qmd) to generate measured legs, matching slots and a fit coupon, then read [Make It Stand](02-make-it-stand.qmd) to check the load path and stability.
+<div class="d-flex flex-wrap gap-2 mb-4">
+<a class="btn btn-primary" href="01-name-logo.qmd">Start the name tag</a>
+<a class="btn btn-outline-secondary" href="../../teaching-materials/laser-cutting/index.qmd">Browse SVG files</a>
+<a class="btn btn-outline-secondary" href="../tools/plate-builder/index.qmd">Open the plate builder</a>
+<a class="btn btn-outline-secondary" href="../tools/leg-builder/index.qmd">Open the leg builder</a>
+</div>
 
 ## Testing and iteration in practice
 
-These are examples of **process evidence**, not a set of projects to copy. A simple repeated shape can make changes in power and line quality easy to compare; puzzles, moving parts and assemblies reveal different questions about fit, clarity, structure and usability. Record what changed, compare the result with the intention, and use the evidence to choose the next revision.
+Small tests lead to better builds. Compare, record and revise.
 
 <div class="ter-process-gallery">
 <figure class="ter-process-example"><img src="../../assets/laser-cutting/process-gallery/power-test-bears.webp" alt="Three bear shapes on plywood showing different laser line darkness and cutting results" loading="lazy"><figcaption><strong>Power and line-quality tests.</strong> The bears are repeated test samples: their purpose is to make differences in engraving and cutting easy to see, not to prescribe a finished design.</figcaption></figure>
