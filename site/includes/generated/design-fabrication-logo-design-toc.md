@@ -25,7 +25,7 @@
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build the Nameplate Text&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Make an 11 by 4 inch file, leave room for a logo, and choose readable type.&quot;, &quot;Correct size, spacing, and legibility prepare a design for real output.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Build the Nameplate Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="01-nameplate-text-photopea.html">1. Build the Nameplate Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Build the Nameplate Text"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="nameplate-text-photopea.html">1. Build the Nameplate Text</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Make an 11 by 4 inch file, leave room for a logo, and choose readable type.</p>
         <p>Correct size, spacing, and legibility prepare a design for real output.</p>
       </details>

@@ -32,7 +32,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertEqual(
             design_routes[9:14],
             [
-                "/commons/design-fabrication/logo-design/01-nameplate-text-photopea.html",
+                "/commons/design-fabrication/logo-design/nameplate-text-photopea.html",
                 "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",
                 "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
                 "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
@@ -181,7 +181,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertEqual(logo_unit["title"], "Logo Design in Photopea")
         self.assertEqual(
             logo_unit["lessons"][0]["source"],
-            "design-fabrication/logo-design/01-nameplate-text-photopea.qmd",
+            "design-fabrication/logo-design/nameplate-text-photopea.qmd",
         )
 
     def test_every_published_lesson_is_in_its_hub_and_sidebar(self) -> None:
@@ -234,7 +234,7 @@ class CourseNotesManifestTests(unittest.TestCase):
 
     def test_numbered_slugs_require_an_explicit_legacy_exception(self) -> None:
         broken = copy.deepcopy(self.source)
-        lesson = broken["courses"][0]["units"][2]["lessons"][0]
+        lesson = broken["courses"][0]["units"][2]["lessons"][3]
         lesson.pop("legacy_slug", None)
         with self.assertRaisesRegex(course_notes.ValidationError, "Numbered lesson slug"):
             course_notes.build_manifest(broken)
