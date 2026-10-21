@@ -91,6 +91,17 @@ class NotesRefactorTests(unittest.TestCase):
             self.assertIn(text, logo)
         for video_id in ("mchoizRTY-s", "t9V6Wp_OnQk", "QmB14oyGWcw", "6dwSRbkSuq8"):
             self.assertIn(video_id, logo)
+        guided_sequence = "design-fabrication-logo-design-toc.md"
+        self.assertLess(logo.index("6dwSRbkSuq8"), logo.index(guided_sequence))
+        self.assertLess(logo.index(guided_sequence), logo.index("## Part 2:"))
+        self.assertIn("What to submit for Part 1", logo)
+        self.assertIn("What to submit for Part 2", logo)
+
+        open_ended = self.read(
+            "design-fabrication/logo-design/personal-brand-graphic-photopea.qmd"
+        )
+        self.assertNotIn("photopea-first-build", open_ended)
+        self.assertIn("Open-Ended Personal Brand Graphic", open_ended)
 
     def test_design_process_reuses_the_class_deck_and_videos(self) -> None:
         process = self.read("design-fabrication/design-process/index.qmd") + self.read(
