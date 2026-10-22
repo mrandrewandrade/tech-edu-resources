@@ -34,8 +34,6 @@ body.bs-landing-page .bs-home-explore-icon::before {
   mask-repeat: no-repeat;
 }
 
-/* One icon per home-page destination, named after what the card links to.
-   Keep this list one-to-one: never reuse an icon for a second card. */
 body.bs-landing-page
   .bs-home-explore-link--general-slides
   .bs-home-explore-icon::before {
