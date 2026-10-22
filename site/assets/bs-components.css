@@ -690,6 +690,8 @@ body.bs-landing-page .page-columns {
 }
 
 .bs-landing {
+  --bs-landing-section-gap: clamp(2.5rem, 5vw, 3.5rem);
+  --bs-landing-item-gap: clamp(0.8rem, 1.4vw, 1rem);
   box-sizing: border-box;
   width: min(calc(100% - 3rem), 1180px);
   margin-inline: auto;
@@ -726,7 +728,7 @@ body.bs-landing-page .page-columns {
 .bs-hero--editorial {
   display: block;
   min-height: 0;
-  padding: clamp(3rem, 6vw, 5rem) 0 clamp(2rem, 3.5vw, 2.75rem);
+  padding: clamp(3rem, 6vw, 5rem) 0 var(--bs-landing-section-gap);
 }
 
 .bs-hero--editorial h1,
@@ -758,8 +760,12 @@ body.bs-landing-page .page-columns {
   line-height: 1.55;
 }
 
+body.bs-landing-page .bs-home-explore + .bs-home-explore {
+  margin-top: var(--bs-landing-section-gap);
+}
+
 body.bs-landing-page .bs-home-explore > h2 {
-  margin: 0 0 0.7rem;
+  margin: 0 0 var(--bs-landing-item-gap);
   color: var(--bs-copper-dark);
   font-family:
     "Source Code Pro",
@@ -776,9 +782,13 @@ body.bs-landing-page .bs-home-explore > h2 {
   text-transform: uppercase;
 }
 
+body.bs-landing-page .bs-home-explore > p {
+  margin: 0 0 var(--bs-landing-item-gap);
+}
+
 body.bs-landing-page .bs-home-explore-list {
   display: grid;
-  gap: clamp(0.8rem, 1.4vw, 1rem);
+  gap: var(--bs-landing-item-gap);
 }
 
 body.bs-landing-page .bs-home-explore-list > p {
@@ -1179,7 +1189,7 @@ body.bs-landing-page .bs-home-explore-chevron {
 
   .bs-hero--editorial {
     min-height: auto;
-    padding: 2.75rem 0 1.9rem;
+    padding: 2.75rem 0 var(--bs-landing-section-gap);
   }
 
   .bs-hero--editorial h1 {

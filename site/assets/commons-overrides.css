@@ -35,55 +35,52 @@ body.bs-landing-page .bs-home-explore-icon::before {
 }
 
 body.bs-landing-page
-  .bs-home-explore-link--tas
+  .bs-home-explore-link--general-slides
   .bs-home-explore-icon::before {
-  -webkit-mask-image: url("icons/commons-discover.svg");
-  mask-image: url("icons/commons-discover.svg");
+  -webkit-mask-image: url("icons/commons-slides.svg");
+  mask-image: url("icons/commons-slides.svg");
 }
 
 body.bs-landing-page
-  .bs-home-explore-link--tej
+  .bs-home-explore-link--general-materials
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("icons/commons-materials.svg");
+  mask-image: url("icons/commons-materials.svg");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--design-fabrication
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("icons/commons-fabrication.svg");
+  mask-image: url("icons/commons-fabrication.svg");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--tej-notes
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("icons/commons-notes.svg");
+  mask-image: url("icons/commons-notes.svg");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--tas-slides
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("icons/commons-gear.svg");
+  mask-image: url("icons/commons-gear.svg");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--tej-slides
   .bs-home-explore-icon::before {
   -webkit-mask-image: url("icons/commons-chip.svg");
   mask-image: url("icons/commons-chip.svg");
 }
 
 body.bs-landing-page
-  .bs-home-explore-link--tas.bs-home-explore-link--notes
-  .bs-home-explore-icon::before,
-body.bs-landing-page
-  .bs-home-explore-link--tej.bs-home-explore-link--notes
+  .bs-home-explore-link--ttj-slides
   .bs-home-explore-icon::before {
-  -webkit-mask-image: url("icons/commons-book.svg");
-  mask-image: url("icons/commons-book.svg");
-}
-
-body.bs-landing-page
-  .bs-home-explore-link--ttj
-  .bs-home-explore-icon::before {
-  -webkit-mask-image: url("icons/commons-rocket.svg");
-  mask-image: url("icons/commons-rocket.svg");
-}
-
-body.bs-landing-page
-  .bs-home-explore-link--tools
-  .bs-home-explore-icon::before {
-  -webkit-mask-image: url("icons/commons-tools.svg");
-  mask-image: url("icons/commons-tools.svg");
-}
-
-body.bs-landing-page
-  .bs-home-explore-link--resources
-  .bs-home-explore-icon::before {
-  -webkit-mask-image: url("icons/commons-book.svg");
-  mask-image: url("icons/commons-book.svg");
-}
-
-body.bs-landing-page
-  .bs-home-explore-link--wellbeing
-  .bs-home-explore-icon::before {
-  -webkit-mask-image: url("icons/commons-leaf.svg");
-  mask-image: url("icons/commons-leaf.svg");
+  -webkit-mask-image: url("icons/commons-car.svg");
+  mask-image: url("icons/commons-car.svg");
 }
 
 body.bs-landing-page
@@ -98,6 +95,13 @@ body.bs-landing-page
   .bs-home-explore-icon::before {
   -webkit-mask-image: url("icons/commons-lore.svg");
   mask-image: url("icons/commons-lore.svg");
+}
+
+body.bs-landing-page
+  .bs-home-explore-link--about
+  .bs-home-explore-icon::before {
+  -webkit-mask-image: url("icons/commons-info.svg");
+  mask-image: url("icons/commons-info.svg");
 }
 
 /* Lore article title metadata. */
