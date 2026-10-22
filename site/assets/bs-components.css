@@ -690,8 +690,6 @@ body.bs-landing-page .page-columns {
 }
 
 .bs-landing {
-  /* Vertical rhythm: one gap between hero and sections and between
-     sections, and one gap inside a section (heading, intro, cards). */
   --bs-landing-section-gap: clamp(2.5rem, 5vw, 3.5rem);
   --bs-landing-item-gap: clamp(0.8rem, 1.4vw, 1rem);
   box-sizing: border-box;
