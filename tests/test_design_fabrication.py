@@ -713,7 +713,7 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Show navigation", script)
         self.assertIn("Hide navigation", script)
         self.assertIn("initializeLeftSidebarToggle();", script)
-        self.assertIn('"bs-learn.js": "20261024-1"', loader)
+        self.assertIn('"bs-learn.js": "20261024-2"', loader)
         self.assertNotIn("bs-learn-article", plate_builder)
 
     def test_leg_builder_and_easel_mechanics_are_connected(self) -> None:

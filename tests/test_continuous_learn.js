@@ -77,18 +77,14 @@ assert.match(
   learnSource,
   /function initializeLeftSidebarToggle\(\)[\s\S]*?const sidebar = document\.getElementById\("quarto-sidebar"\)[\s\S]*?if \(!sidebar\)/
 );
-assert.match(
-  learnSource,
-  /function initializeLeftSidebarToggle\(\)[\s\S]*?const usesDockedSidebar = document\.body\.classList\.contains\("docked"\)[\s\S]*?if \(usesDockedSidebar\)/
-);
-assert.match(scriptIncludeSource, /"bs-learn\.js": "20261024-1"/);
+assert.match(scriptIncludeSource, /"bs-learn\.js": "20261024-2"/);
 assert.doesNotMatch(learnSource, /autoCollapsePending/);
 assert.doesNotMatch(
   learnSource,
   /window\.addEventListener\(\s*"scroll"[\s\S]*?collapsed = true/
 );
 assert.match(learnSource, /toggle\.addEventListener\("click"[\s\S]*?collapsed = !collapsed/);
-assert.match(learnSource, /classList\.toggle\("docked", !active\)/);
+assert.doesNotMatch(learnSource, /classList\.toggle\("docked"/);
 
 assert.match(scrollSource, /sentinel\.textContent = "Loading the next lesson/);
 assert.match(scrollSource, /createTransitionNotice\(currentLesson, followingLesson\)/);
@@ -1011,7 +1007,7 @@ const sidebarToggleButton = {
   }
 };
 const fakeBody = {
-  classList: fakeToggleClassList(["plate-builder-page"]),
+  classList: fakeToggleClassList(["plate-builder-page", "docked"]),
   appendChild(element) {
     assert.equal(element, sidebarToggleButton);
   }
@@ -1046,9 +1042,11 @@ assert.equal(sidebarToggleButton.textContent, "\u2192 Show navigation");
 assert.equal(sidebarToggleButton.attributes.get("aria-expanded"), "false");
 assert.equal(siteSidebar.hidden, true);
 assert.equal(fakeBody.classList.contains("bs-learn-left-sidebar-collapsed"), true);
+assert.equal(fakeBody.classList.contains("docked"), true);
 sidebarToggleButton.click();
 assert.equal(siteSidebar.hidden, false);
 assert.equal(fakeBody.classList.contains("bs-learn-left-sidebar-collapsed"), false);
+assert.equal(fakeBody.classList.contains("docked"), true);
 global.document = previousDocument;
 global.window = previousWindow;
 

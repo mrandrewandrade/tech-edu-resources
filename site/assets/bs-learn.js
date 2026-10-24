@@ -2233,7 +2233,6 @@
       return;
     }
 
-    const usesDockedSidebar = document.body.classList.contains("docked");
     const desktopQuery = window.matchMedia("(min-width: 992px)");
     const pageHeader = document.getElementById("quarto-header");
     const toggle = document.createElement("button");
@@ -2269,9 +2268,6 @@
     const update = function () {
       const active = desktopQuery.matches && collapsed;
       sidebar.hidden = active;
-      if (usesDockedSidebar) {
-        document.body.classList.toggle("docked", !active);
-      }
       document.body.classList.toggle("bs-learn-left-sidebar-collapsed", active);
       updateVisibility();
       toggle.setAttribute("aria-expanded", active ? "false" : "true");
