@@ -81,9 +81,13 @@ assert.match(
   learnSource,
   /function initializeLeftSidebarToggle\(\)[\s\S]*?const usesDockedSidebar = document\.body\.classList\.contains\("docked"\)[\s\S]*?if \(usesDockedSidebar\)/
 );
-assert.match(scriptIncludeSource, /"bs-learn\.js": "20261017-1"/);
-assert.doesNotMatch(learnSource, /keepExpandedWhileScrolling/);
-assert.match(learnSource, /autoCollapsePending[\s\S]*?scrollingDown[\s\S]*?collapsed = true/);
+assert.match(scriptIncludeSource, /"bs-learn\.js": "20261024-1"/);
+assert.doesNotMatch(learnSource, /autoCollapsePending/);
+assert.doesNotMatch(
+  learnSource,
+  /window\.addEventListener\(\s*"scroll"[\s\S]*?collapsed = true/
+);
+assert.match(learnSource, /toggle\.addEventListener\("click"[\s\S]*?collapsed = !collapsed/);
 assert.match(learnSource, /classList\.toggle\("docked", !active\)/);
 
 assert.match(scrollSource, /sentinel\.textContent = "Loading the next lesson/);
