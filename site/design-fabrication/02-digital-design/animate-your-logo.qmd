@@ -240,6 +240,33 @@ smooth.video runs in the browser, needs WebGL, and does not require an account. 
 
 ## Make the animation in smooth.video
 
+### Start here: the easiest complete version
+
+Use this version first. It moves one PNG, takes about ten minutes, and gives you a working beginning, middle, and ending. You can add separate parts after it works.
+
+1. Open [smooth.video](https://smooth.video/).
+2. Select **Add media** at the top left.
+3. Choose the PNG of the logo you already made.
+4. Click the logo once on the canvas. A box should appear around it.
+5. On the right, select **Animate**.
+6. Select **In**, then choose **Scale**. If Scale does not suit your logo, choose **Fade** or **Slide**.
+7. At the bottom, drag the **In animation point** so the entrance finishes near `1.5 s`.
+8. Select **Out**, then choose **Fade**.
+9. Drag the **Out animation point** so the fade begins near `5.3 s` and ends near `6.0 s`.
+10. Select **Play** or press the space bar. Watch the whole six seconds.
+11. If the logo is hard to read, make the entrance slower or leave a longer still section in the middle.
+12. Select **Menu > Save project** and save the editable `.smooth` file.
+13. Select **Export**, choose **MP4** or **GIF**, and wait for the download.
+14. Open the downloaded file. If it plays correctly from beginning to end, you have a complete first draft.
+
+::: {.callout-tip title="What should you see?"}
+The logo grows onto the canvas, stays still long enough to read, and fades away. That is already two intentional changes: **Scale In** and **Fade Out**.
+:::
+
+::: {.callout-note title="Want separate moving parts?"}
+Return to Photopea, put each moving part on its own named layer, save a layered PSD, and import that PSD with **Add media**. Each layer should appear on its own timeline row. Apply the same four actions to one layer at a time: **select the part, choose Animate, choose an effect, then move its animation point on the timeline**.
+:::
+
 ### 1. Decide what the audience should feel
 
 Write one feeling at the top of your notes: for example, **energetic**, **confident**, **playful**, **precise**, or **premium**.
@@ -259,7 +286,7 @@ Choose only two or three motion ideas that support that feeling. More effects do
 ### 3. Try three entrance effects
 
 1. Select the logo or one part of it.
-2. Open **Animate** and then the **in** effect.
+2. Open **Animate** and then the **In** effect.
 3. Try three choices such as **Fade**, **Slide**, **Scale**, **Pop**, **Bounce**, **Elastic**, **Blur**, **Rotate**, or **Flip**.
 4. Select **Play** or press the space bar after each test.
 5. Keep the effect that best matches the feeling you chose.
