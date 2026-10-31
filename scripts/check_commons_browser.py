@@ -24,6 +24,7 @@ def main():
     pages = [
         'index.html',
         'design-fabrication/index.html',
+        'design-fabrication/02-digital-design/animate-your-logo.html',
         'design-fabrication/03-laser-cutting/index.html',
         'design-fabrication/04-3d-printing/index.html',
         'tej3-4/index.html',
@@ -104,7 +105,7 @@ def main():
             )
 
             page.set_viewport_size({'width': 390, 'height': 844})
-            for route in ['index.html', 'design-fabrication/index.html', 'design-fabrication/03-laser-cutting/index.html', 'tej3-4/index.html']:
+            for route in ['index.html', 'design-fabrication/index.html', 'design-fabrication/02-digital-design/animate-your-logo.html', 'design-fabrication/03-laser-cutting/index.html', 'tej3-4/index.html']:
                 page.goto(base + '/' + route)
                 page.wait_for_load_state('networkidle')
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), f'Horizontal overflow: {route}'
@@ -122,7 +123,7 @@ def main():
     finally:
         server.shutdown()
         server.server_close()
-    result = {'desktop_pages': len(pages), 'mobile_pages': 4, 'local_errors': errors, 'external_request_failures': sorted(failed_external)}
+    result = {'desktop_pages': len(pages), 'mobile_pages': 5, 'local_errors': errors, 'external_request_failures': sorted(failed_external)}
     (OUTPUT / 'browser-results.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
     print(json.dumps(result, indent=2))
 

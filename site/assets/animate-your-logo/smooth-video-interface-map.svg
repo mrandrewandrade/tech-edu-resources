@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Map of the smooth.video editor</title>
+  <desc id="desc">A simplified editor map showing the Menu and Add media buttons at the top left, Animate controls on the right, a canvas in the middle, Play below it, and the timeline across the bottom.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#a45a2a"/>
+    </marker>
+    <style>
+      .label{font:700 28px system-ui,sans-serif;fill:#16324f}.small{font:600 22px system-ui,sans-serif;fill:#172033}.ui{font:600 17px system-ui,sans-serif;fill:#e2e8f0}.note{font:500 19px system-ui,sans-serif;fill:#475569}.arrow{stroke:#a45a2a;stroke-width:5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="#f8fafc"/>
+  <text x="48" y="54" class="label">Where the main controls are</text>
+
+  <rect x="68" y="92" width="1064" height="540" rx="20" fill="#0f172a"/>
+  <rect x="68" y="92" width="1064" height="64" rx="20" fill="#1e293b"/>
+  <rect x="68" y="136" width="1064" height="20" fill="#1e293b"/>
+  <rect x="92" y="108" width="110" height="34" rx="7" fill="#334155"/>
+  <text x="116" y="132" class="ui">Menu</text>
+  <rect x="220" y="108" width="140" height="34" rx="7" fill="#216147"/>
+  <text x="242" y="132" class="ui">Add media</text>
+  <rect x="374" y="108" width="120" height="34" rx="7" fill="#334155"/>
+  <text x="393" y="132" class="ui">Add text</text>
+  <rect x="1006" y="108" width="98" height="34" rx="7" fill="#a45a2a"/>
+  <text x="1024" y="132" class="ui">Export</text>
+
+  <rect x="94" y="180" width="170" height="286" rx="12" fill="#1e293b"/>
+  <text x="116" y="215" class="ui">Layers</text>
+  <rect x="112" y="240" width="134" height="42" rx="7" fill="#334155"/>
+  <text x="130" y="267" class="ui">Logo</text>
+  <rect x="286" y="180" width="566" height="286" rx="12" fill="#e2e8f0"/>
+  <circle cx="667" cy="280" r="62" fill="#f6b52d"/>
+  <path d="M390 408 505 237 596 408Z" fill="#216147"/>
+  <path d="M544 408 650 219 763 408Z" fill="#398260"/>
+  <path d="m403 439 88-27 92-8 88 8 84 27-4 18-80-25-88-9-92 9-84 25Z" fill="#2679b7"/>
+  <rect x="874" y="180" width="230" height="286" rx="12" fill="#1e293b"/>
+  <text x="898" y="215" class="ui">Selected element</text>
+  <rect x="896" y="240" width="186" height="44" rx="7" fill="#216147"/>
+  <text x="957" y="268" class="ui">Animate</text>
+  <text x="898" y="318" class="ui">Transform</text>
+  <text x="898" y="356" class="ui">Effects</text>
+  <text x="898" y="394" class="ui">Actions</text>
+
+  <rect x="94" y="486" width="1010" height="122" rx="12" fill="#1e293b"/>
+  <rect x="112" y="506" width="76" height="34" rx="7" fill="#334155"/>
+  <text x="130" y="530" class="ui">Play</text>
+  <line x1="218" y1="522" x2="1072" y2="522" stroke="#64748b" stroke-width="3"/>
+  <line x1="218" y1="558" x2="1072" y2="558" stroke="#64748b" stroke-width="3"/>
+  <rect x="330" y="544" width="532" height="28" rx="8" fill="#216147"/>
+  <circle cx="428" cy="558" r="9" fill="#f6b52d"/>
+  <circle cx="740" cy="558" r="9" fill="#f6b52d"/>
+  <line x1="418" y1="492" x2="418" y2="596" stroke="#ef4444" stroke-width="4"/>
+
+  <text x="70" y="681" class="note">Verified labels: Menu · Add media · Animate · Play · Export</text>
+  <path d="M366 86 C360 55 300 55 294 100" class="arrow"/>
+  <path d="M1010 176 C994 146 974 158 974 230" class="arrow"/>
+  <path d="M220 470 C190 455 165 470 156 503" class="arrow"/>
+</svg>

@@ -1,0 +1,180 @@
+---
+title: "Teacher Guide: Bring Your Brand to Life"
+description: "Four-day delivery notes, checkpoints, differentiation, assessment, and verified tool limitations for the TAS logo-animation assignment."
+sidebar: design-fabrication
+body-classes: "ter-design-fabrication bs-learn-article ter-logo-animation"
+toc: true
+execute: {enabled: false}
+---
+
+This guide supports the student assignment [Bring Your Brand to Life: Animate Your Logo](animate-your-logo.qmd). Students animate the logo they already designed; they do not begin another logo-design task.
+
+::: {.callout-note title="Delivery at a glance"}
+- **Length:** four class periods
+- **Due:** end of Day 4
+- **Primary tool:** [smooth.video](https://smooth.video/)
+- **Fallback:** [Photopea](https://www.photopea.com/)
+- **Submission:** manual upload through Google Classroom
+:::
+
+[Open the project-launch slides](https://docs.google.com/presentation/d/1o2W4UskTUljoCi4y4d5t0GpXlWVc1w9QJXwY6u-ck3M/edit?usp=drivesdk){.btn .btn-outline-primary}
+[Open the editable student workspace](https://docs.google.com/document/d/10w0DbQ5fCOVRLjd0jbYHOhSq1swqOBaIixB52jIvPCo/edit?usp=drivesdk){.btn .btn-outline-primary}
+[Make a student copy](https://docs.google.com/document/d/10w0DbQ5fCOVRLjd0jbYHOhSq1swqOBaIixB52jIvPCo/copy){.btn .btn-primary}
+[Download the printable student handout](../../assets/animate-your-logo/animate-your-logo-handout.pdf){.btn .btn-outline-secondary}
+
+::: {.callout-warning title="Drive ownership handoff required"}
+The launch deck and student workspace are temporarily owned by the teacher's personal Google account. The school account is already an editor. Before student release, transfer ownership to the school account, return the personal account to editor access, verify the existing links still work, and enable the student sharing or copy permissions required by the class.
+:::
+
+## Before the assignment
+
+### Materials and access
+
+- Each student needs an existing logo as a layered PSD, a clean PNG, or another file the selected tool can import.
+- Test [smooth.video](https://smooth.video/) on the student network and device image. It needs a current browser and WebGL.
+- Keep Photopea available as an equal-status fallback.
+- Have students create one local folder for the project, draft exports, and final export.
+- No account, music, voice-over, or stock media is required.
+
+### Teacher demonstration files
+
+- [Animated AA example](../../assets/animate-your-logo/aa-logo-motion-example.gif)
+- [Advanced Technology Commons emblem example](../../assets/branding/emblem/technology-commons-emblem-motion.gif)
+- [Python source for the advanced emblem generator](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/scripts/build_animate_your_logo_assets.py)
+- [Editable smooth.video starter](../../assets/animate-your-logo/aa-logo-motion-starter.smooth)
+- [Original four-part AA SVG](../../assets/personal-logo-photopea/aa-mountain-animation-ready.svg)
+- [Before-and-after comparison](../../assets/animate-your-logo/aa-logo-motion-before-after.png)
+
+The AA logo is an inspection model. Ask students to identify the order, timing changes, hold, and ending before showing the editor.
+
+The Technology Commons emblem is an optional extension model. It shows that the same timeline skills can support a more complex transformation when the artwork is prepared as separate elements first. Emphasize that smooth.video can animate imported layers, but it does not automatically split a flattened PNG into the arrow halves, lighthouse supports, roots, waves, or hands. Three to five well-timed parts are enough for a successful student submission.
+
+## Learning evidence
+
+Look for four kinds of evidence:
+
+1. **Motion design:** at least two intentional changes across the logo or its parts.
+2. **Timing:** varied speed, a readable hold, and a complete 5–8 second sequence.
+3. **Brand clarity:** motion supports a named emotion and the logo remains legible.
+4. **Process:** version 1, feedback, one visible improvement, editable project when supported, final export, and one design sentence.
+
+## Suggested launch demonstration
+
+Keep the launch under 12 minutes so students can start making.
+
+1. Play the finished AA example once without explanation.
+2. Ask students to identify the beginning, middle, ending, and emotion.
+3. Open smooth.video and use **Add media** to import the existing logo.
+4. Show **Animate > in** and compare two effects.
+5. Drag an animation point on the timeline to change its duration.
+6. Stagger two parts, then add a readable hold.
+7. Show **Menu > Save project** and **Export > MP4** or **GIF**.
+8. Reopen the exported result.
+
+The student page includes a labelled interface map and a complete sequence. The compact project-launch deck mirrors this demonstration without turning the assignment into four lectures.
+
+## Four-day sequence
+
+### Day 1: Learn the editor and choose an emotion
+
+**Mini-lesson:** intent, timing, beginning-middle-end, and the difference between an entrance preset and a keyframe.
+
+**Student work:** import the existing logo, try three entrance effects, choose one direction and emotion, and build a rough motion test.
+
+**Checkpoint:** every student can play something from start to finish. Ask: “What should the audience feel, and which motion choice causes that feeling?”
+
+### Day 2: Build the first complete draft
+
+**Mini-lesson:** staggering elements, using contrast in speed, and holding the completed logo long enough to read.
+
+**Student work:** build a 5–8 second beginning, middle, and ending with at least two intentional changes.
+
+**Checkpoint:** students export and keep version 1. Check duration before discussing polish.
+
+### Day 3: Test and improve
+
+**Mini-lesson:** critique the motion, not the person. Use three prompts: intended feeling, strongest readable moment, and one timing problem.
+
+**Student work:** peer test once without explanation, record feedback, and make one visible improvement.
+
+**Checkpoint:** compare version 1 and version 2. The improvement should solve a named problem.
+
+### Day 4: Finalize and submit
+
+**Mini-lesson:** export choices, file naming, and the reopen test.
+
+**Student work:** peer test, make final fixes, save the editable project, export MP4 or GIF, reopen it, and submit manually in Google Classroom.
+
+**Checkpoint:** verify the final animation, editable project when supported, and design-choice sentence.
+
+## Assessment
+
+| Criterion | Evidence | Weight |
+|---|---|---:|
+| Movement and timing are intentional | At least two controlled changes; 5–8 seconds; readable hold; clear beginning, middle, and ending. | **30%** |
+| Animation communicates the brand or emotion | Motion supports the named feeling and the logo remains readable. | **30%** |
+| Testing, feedback, and improvement | A peer test leads to one meaningful, visible change. | **25%** |
+| Finished and submitted correctly | Accepted files, clear naming, reopen check, and design sentence are complete. | **15%** |
+
+Use the student-facing rubric on the assignment page or printable handout. Both use the same weights and plain-language descriptors.
+
+## Differentiation and accessibility
+
+- Let students animate one whole-logo PNG if layer separation creates too much setup work.
+- Give the editable `.smooth` starter to students who need a functioning timeline to inspect.
+- Let students use Photopea for a frame-by-frame GIF without penalty.
+- Encourage keyboard preview with the space bar and short work-test-save cycles.
+- Pair written directions with the labelled interface map; avoid requiring students to learn from video alone.
+- Let students choose low-motion fades or short slides when energetic motion is uncomfortable.
+- The web example swaps its animated GIF for a still frame when the device requests reduced motion.
+- Do not require audio. It is not assessed and can create access, copyright, and classroom-noise barriers.
+- Keep a copy of the two-page handout available in print or as a local PDF.
+
+## Common interventions
+
+| Problem | First teacher prompt |
+|---|---|
+| Student keeps redesigning the logo | “What can motion add without changing the mark?” |
+| Effects are random | “Name the emotion. Which one effect supports it best?” |
+| Everything moves at once | “What should the viewer notice first, second, and last?” |
+| Animation is too fast | “Where does the audience need a hold?” |
+| Student adds more effects instead of improving | “Change timing on one existing motion before adding anything.” |
+| Export fails | “Save the editable project, try the other accepted format, then reopen the result.” |
+
+The student page presents these as progressive hints so students can solve problems independently before asking for the next step.
+
+## Submission setup
+
+Post one Google Classroom assignment that asks for:
+
+1. `studentnumber-lastname-logo-animation.mp4` **or** `.gif`
+2. `studentnumber-lastname-logo-animation.smooth` or `.psd` when supported
+3. the sentence: **My most important design choice was ___ because ___.**
+
+No Classroom integration is built into the site. Students download locally and attach their files manually.
+
+## Verified tool notes and limitations
+
+These points were checked against the live tools and their current documentation on October 31, 2026:
+
+- smooth.video exposes **Menu**, **Add media**, **Add text**, **Animate**, **Play**, and **Export** in the browser editor.
+- Its entrance presets include Fade, Slide, Scale, Pop, Bounce, Elastic, Blur, Rotate, and Flip.
+- Its export menu includes MP4, WebM, GIF, PNG, JPG, and WebP. The assignment accepts MP4 or GIF.
+- The tool documents that editing and export run locally in the browser, with no account or watermark.
+- A `.smooth` file is the portable editable project. Browser autosave alone should not be treated as a submission copy.
+- GIF cannot preserve a transparent background in smooth.video. Use a planned background or another teacher-approved format.
+- Smooth.video requires WebGL and does not provide real-time collaboration.
+- The linked Photopea walkthrough was checked for the `_a_` frame-layer naming and GIF-export workflow.
+- The short inspiration reel is labelled as inspiration only. It is not presented as smooth.video instruction.
+
+School filtering, device policies, browser extensions, and local storage restrictions can change. Test the student environment before Day 1 and keep the fallback available.
+
+## Slide-deck SOP and Drive handoff
+
+The current Technology Commons Daily Slide Deck SOP was available and used for the compact project-launch deck. The deck keeps the official template structure, attribution footer, concise launch sequence, working student links, and teacher-led question/reveal pacing.
+
+The SOP now records the approved temporary-ownership exception used here: when the school account cannot create the files directly, the personal account may create them only with explicit teacher authorization, add the school account as editor, report the current owner, and flag the ownership transfer as unfinished. The work is not considered fully migrated until the school account is the owner, the personal account is an editor, and the links have been verified again.
+
+## After the assignment
+
+Students can reuse the final animation in a portfolio, product demo, presentation, creator video, or website. Consider showing version 1 beside version 2 so improvement, rather than effect count, remains the focus.

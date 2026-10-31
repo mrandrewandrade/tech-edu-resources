@@ -57,7 +57,15 @@
           ]
         },
         {
-          "id": "accessible-design", "order": 4, "title": "Accessible Design", "hub": "design-fabrication/accessible-design/index.qmd",
+          "id": "logo-animation", "order": 4, "title": "Logo Animation", "hub": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd",
+          "summary": "Apply animation foundations in a four-day browser project using the logo students already designed.",
+          "use": "Motion, timing, testing, and export turn a static brand into a short screen-ready introduction.",
+          "lessons": [
+            {"order": 1, "title": "Bring Your Brand to Life: Animate Your Logo", "source": "design-fabrication/02-digital-design/animate-your-logo.qmd", "summary": "Create a 5–8 second animated logo intro with intentional changes, a complete sequence, feedback, and improvement.", "use": "The assignment connects identity design to motion graphics used in creator, product, fashion, gaming, business, and portfolio media.", "status": "published", "resources": [{"label": "Project-Launch Slides", "url": "https://docs.google.com/presentation/d/1o2W4UskTUljoCi4y4d5t0GpXlWVc1w9QJXwY6u-ck3M/edit?usp=drivesdk"}, {"label": "Student Workspace", "url": "https://docs.google.com/document/d/10w0DbQ5fCOVRLjd0jbYHOhSq1swqOBaIixB52jIvPCo/copy"}, {"label": "Printable Handout", "url": "https://andrewandrade.ca/tech-edu-resources/assets/animate-your-logo/animate-your-logo-handout.pdf"}, {"label": "Teacher Guide", "url": "https://andrewandrade.ca/tech-edu-resources/design-fabrication/02-digital-design/animate-your-logo-teacher-guide.html"}]}
+          ]
+        },
+        {
+          "id": "accessible-design", "order": 5, "title": "Accessible Design", "hub": "design-fabrication/accessible-design/index.qmd",
           "summary": "Build accessibility checks into graphic design instead of adding them at the end.",
           "use": "Readable, well-described graphics work better on screens, in print, and on fabricated objects.",
           "lessons": [
@@ -68,7 +76,7 @@
           ]
         },
         {
-          "id": "fabrication-tools", "order": 5, "title": "Laser Cutting and Fabrication Tools", "hub": "teaching-materials/laser-cutting/index.qmd",
+          "id": "fabrication-tools", "order": 6, "title": "Laser Cutting and Fabrication Tools", "hub": "teaching-materials/laser-cutting/index.qmd",
           "summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
           "use": "The sequence connects precise cutting to strong assemblies, deliberate surfaces, shop organization, and iterative fabrication.",
           "lessons": [
@@ -84,7 +92,7 @@
           ]
         },
         {
-          "id": "phone-holder-project", "order": 6, "title": "Making the Phone Holder", "hub": "design-fabrication/cad-parametric-modeling/index.qmd",
+          "id": "phone-holder-project", "order": 7, "title": "Making the Phone Holder", "hub": "design-fabrication/cad-parametric-modeling/index.qmd",
           "summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
           "use": "One connected project takes students from an idea to a finished holder.",
           "lessons": [
@@ -95,7 +103,7 @@
           ]
         },
         {
-          "id": "advanced-making", "order": 7, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
+          "id": "advanced-making", "order": 8, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
           "summary": "Continue with an optional advanced 3D-printing project.",
           "use": "These external project references provide a next challenge after the introductory build.",
           "lessons": [

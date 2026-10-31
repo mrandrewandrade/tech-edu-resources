@@ -99,9 +99,11 @@ class DesignFabricationTests(unittest.TestCase):
             'text: "General Design & Fabrication Home"',
             'section: "2. S.O. N.I.C.E. Design Process"',
             'section: "3. Logo Design in Photopea"',
-            'section: "5. Laser Cutting and Fabrication Tools"',
-            'section: "6. Making the Phone Holder"',
-            'section: "7. Advanced Making: Stamp or Faux-Enamel Jewellery"',
+            'section: "4. Logo Animation"',
+            'section: "5. Accessible Design"',
+            'section: "6. Laser Cutting and Fabrication Tools"',
+            'section: "7. Making the Phone Holder"',
+            'section: "8. Advanced Making: Stamp or Faux-Enamel Jewellery"',
             'section: "CAD Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]

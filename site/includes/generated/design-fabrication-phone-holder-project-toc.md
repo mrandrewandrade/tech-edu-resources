@@ -20,7 +20,7 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="phone-holder-project" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">6. Making the Phone Holder</a><span data-bs-learn-group-count>4 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">7. Making the Phone Holder</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="phone-holder-project" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Choose Your Phone Holder&quot;, &quot;Making the Phone Holder&quot;]" data-bs-search-body="[&quot;Choose the simple Level 3 holder or create a Level 4 design.&quot;, &quot;The choice sets the CAD and build work that follows.&quot;, &quot;Project Brief&quot;, &quot;Premade Plan&quot;, &quot;Westdale Project&quot;]">

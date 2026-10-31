@@ -13,14 +13,15 @@
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="culture-land" aria-pressed="false">1. Culture and Land-Based Learning<span class="bs-learn-filter-count">×2</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="design-process" aria-pressed="false">2. S.O. N.I.C.E. Design Process<span class="bs-learn-filter-count">×7</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-design" aria-pressed="false">3. Logo Design in Photopea<span class="bs-learn-filter-count">×5</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="accessible-design" aria-pressed="false">4. Accessible Design<span class="bs-learn-filter-count">×4</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">5. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×9</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="phone-holder-project" aria-pressed="false">6. Making the Phone Holder<span class="bs-learn-filter-count">×4</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">7. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-animation" aria-pressed="false">4. Logo Animation<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="accessible-design" aria-pressed="false">5. Accessible Design<span class="bs-learn-filter-count">×4</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">6. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×9</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="phone-holder-project" aria-pressed="false">7. Making the Phone Holder<span class="bs-learn-filter-count">×4</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">8. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 32 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 33 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -157,9 +158,24 @@
     </article>
   </div>
 </details>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="logo-animation" data-bs-total-lessons="1" open>
+  <summary class="bs-learn-catalogue-section-heading">
+    <span class="bs-learn-track-heading"><a href="02-digital-design/05-animation-ui-ux.html">4. Logo Animation</a><span data-bs-learn-group-count>1 lesson</span></span>
+  </summary>
+  <div class="bs-learn-catalogue-section-items">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-animation" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Bring Your Brand to Life: Animate Your Logo&quot;, &quot;Logo Animation&quot;]" data-bs-search-body="[&quot;Create a 5–8 second animated logo intro with intentional changes, a complete sequence, feedback, and improvement.&quot;, &quot;The assignment connects identity design to motion graphics used in creator, product, fashion, gaming, business, and portfolio media.&quot;, &quot;Project-Launch Slides&quot;, &quot;Student Workspace&quot;, &quot;Printable Handout&quot;, &quot;Teacher Guide&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Bring Your Brand to Life: Animate Your Logo"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="02-digital-design/animate-your-logo.html">1. Bring Your Brand to Life: Animate Your Logo</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Create a 5–8 second animated logo intro with intentional changes, a complete sequence, feedback, and improvement.</p>
+        <p>The assignment connects identity design to motion graphics used in creator, product, fashion, gaming, business, and portfolio media.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://docs.google.com/presentation/d/1o2W4UskTUljoCi4y4d5t0GpXlWVc1w9QJXwY6u-ck3M/edit?usp=drivesdk">Project-Launch Slides</a> <a class="ter-resource-badge" href="https://docs.google.com/document/d/10w0DbQ5fCOVRLjd0jbYHOhSq1swqOBaIixB52jIvPCo/copy">Student Workspace</a> <a class="ter-resource-badge" href="https://andrewandrade.ca/tech-edu-resources/assets/animate-your-logo/animate-your-logo-handout.pdf">Printable Handout</a> <a class="ter-resource-badge" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/02-digital-design/animate-your-logo-teacher-guide.html">Teacher Guide</a></p>
+      </details>
+    </article>
+  </div>
+</details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="accessible-design" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="accessible-design/index.html">4. Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="accessible-design/index.html">5. Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Access and Alt Text&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Describe the instructional purpose of an image and identify barriers to access.&quot;, &quot;Useful descriptions preserve meaning for people who cannot use the image visually.&quot;]">
@@ -194,7 +210,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="9" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="../teaching-materials/laser-cutting/index.html">5. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="../teaching-materials/laser-cutting/index.html">6. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Make It Stand&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Compare ways to support a flat design as a stable object.&quot;, &quot;Support geometry is useful for signs, displays, holders, and models.&quot;]">
@@ -266,7 +282,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="phone-holder-project" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="cad-parametric-modeling/index.html">6. Making the Phone Holder</a><span data-bs-learn-group-count>4 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="cad-parametric-modeling/index.html">7. Making the Phone Holder</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="phone-holder-project" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Choose Your Phone Holder&quot;, &quot;Making the Phone Holder&quot;]" data-bs-search-body="[&quot;Choose the simple Level 3 holder or create a Level 4 design.&quot;, &quot;The choice sets the CAD and build work that follows.&quot;, &quot;Project Brief&quot;, &quot;Premade Plan&quot;, &quot;Westdale Project&quot;]">
@@ -303,7 +319,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="advanced-making" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">7. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">8. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Stamp or Faux-Enamel Jewellery&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Choose one of the linked advanced 3D-printing projects.&quot;, &quot;The links provide optional extension ideas without adding another local tutorial.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">

@@ -20,7 +20,7 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="9" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">5. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">6. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Make It Stand&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Compare ways to support a flat design as a stable object.&quot;, &quot;Support geometry is useful for signs, displays, holders, and models.&quot;]">

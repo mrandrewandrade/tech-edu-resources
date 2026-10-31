@@ -45,7 +45,12 @@ website:
               href: "design-fabrication/logo-design/03-combine-logo-nameplate.qmd"
             - text: "5. Design Your Own Name Tag"
               href: "design-fabrication/03-laser-cutting/01-name-logo.qmd"
-        - section: "4. Accessible Design"
+        - section: "4. Logo Animation"
+          href: "design-fabrication/02-digital-design/05-animation-ui-ux.qmd"
+          contents:
+            - text: "1. Bring Your Brand to Life: Animate Your Logo"
+              href: "design-fabrication/02-digital-design/animate-your-logo.qmd"
+        - section: "5. Accessible Design"
           href: "design-fabrication/accessible-design/index.qmd"
           contents:
             - text: "1. Access and Alt Text"
@@ -56,7 +61,7 @@ website:
               href: "design-fabrication/accessible-design/understanding-colour.qmd"
             - text: "4. Contrast and Output"
               href: "design-fabrication/accessible-design/contrast-and-output.qmd"
-        - section: "5. Laser Cutting and Fabrication Tools"
+        - section: "6. Laser Cutting and Fabrication Tools"
           href: "teaching-materials/laser-cutting/index.qmd"
           contents:
             - text: "1. Make It Stand"
@@ -73,7 +78,7 @@ website:
               href: "design-fabrication/03-laser-cutting/07-wall-bench-module.qmd"
             - text: "7. Design and Fabrication Capstone"
               href: "design-fabrication/03-laser-cutting/08-capstone.qmd"
-        - section: "6. Making the Phone Holder"
+        - section: "7. Making the Phone Holder"
           href: "design-fabrication/cad-parametric-modeling/index.qmd"
           contents:
             - text: "1. Choose Your Phone Holder"
@@ -84,7 +89,7 @@ website:
               href: "design-fabrication/hand-tools/tools-machines.qmd"
             - text: "4. Build Steps"
               href: "design-fabrication/hand-tools/phone-holder.qmd"
-        - section: "7. Advanced Making: Stamp or Faux-Enamel Jewellery"
+        - section: "8. Advanced Making: Stamp or Faux-Enamel Jewellery"
           contents:
             - text: "1. Stamp or Faux-Enamel Jewellery"
               href: "design-fabrication/advanced-making/stamp-faux-enamel-jewellery.qmd"

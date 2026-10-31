@@ -373,6 +373,46 @@
       "course_hub": "/commons/design-fabrication/index.html",
       "sidebar_id": "design-fabrication",
       "lesson_order": 1,
+      "route": "/commons/design-fabrication/02-digital-design/animate-your-logo.html",
+      "source": "design-fabrication/02-digital-design/animate-your-logo.qmd",
+      "title": "Bring Your Brand to Life: Animate Your Logo",
+      "summary": "Create a 5–8 second animated logo intro with intentional changes, a complete sequence, feedback, and improvement.",
+      "use": "The assignment connects identity design to motion graphics used in creator, product, fashion, gaming, business, and portfolio media.",
+      "resources": [
+        {
+          "label": "Project-Launch Slides",
+          "url": "https://docs.google.com/presentation/d/1o2W4UskTUljoCi4y4d5t0GpXlWVc1w9QJXwY6u-ck3M/edit?usp=drivesdk"
+        },
+        {
+          "label": "Student Workspace",
+          "url": "https://docs.google.com/document/d/10w0DbQ5fCOVRLjd0jbYHOhSq1swqOBaIixB52jIvPCo/copy"
+        },
+        {
+          "label": "Printable Handout",
+          "url": "https://andrewandrade.ca/tech-edu-resources/assets/animate-your-logo/animate-your-logo-handout.pdf"
+        },
+        {
+          "label": "Teacher Guide",
+          "url": "https://andrewandrade.ca/tech-edu-resources/design-fabrication/02-digital-design/animate-your-logo-teacher-guide.html"
+        }
+      ],
+      "track_id": "logo-animation",
+      "track_order": 4,
+      "track_title": "Logo Animation",
+      "track_hub": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd",
+      "track_summary": "Apply animation foundations in a four-day browser project using the logo students already designed.",
+      "track_use": "Motion, timing, testing, and export turn a static brand into a short screen-ready introduction.",
+      "previous_route": null,
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 14
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 1,
       "route": "/commons/design-fabrication/accessible-design/access-and-alt-text.html",
       "source": "design-fabrication/accessible-design/access-and-alt-text.qmd",
       "title": "Access and Alt Text",
@@ -380,7 +420,7 @@
       "use": "Useful descriptions preserve meaning for people who cannot use the image visually.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 4,
+      "track_order": 5,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -388,7 +428,7 @@
       "previous_route": null,
       "next_route": "/commons/design-fabrication/accessible-design/fonts-and-text-effects.html",
       "next_starts_new_track": false,
-      "sequence_index": 14
+      "sequence_index": 15
     },
     {
       "course_id": "design-fabrication",
@@ -403,7 +443,7 @@
       "use": "Legible type survives small screens, printing, engraving, and viewing from a distance.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 4,
+      "track_order": 5,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -411,7 +451,7 @@
       "previous_route": "/commons/design-fabrication/accessible-design/access-and-alt-text.html",
       "next_route": "/commons/design-fabrication/accessible-design/understanding-colour.html",
       "next_starts_new_track": false,
-      "sequence_index": 15
+      "sequence_index": 16
     },
     {
       "course_id": "design-fabrication",
@@ -426,7 +466,7 @@
       "use": "Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 4,
+      "track_order": 5,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -434,7 +474,7 @@
       "previous_route": "/commons/design-fabrication/accessible-design/fonts-and-text-effects.html",
       "next_route": "/commons/design-fabrication/accessible-design/contrast-and-output.html",
       "next_starts_new_track": false,
-      "sequence_index": 16
+      "sequence_index": 17
     },
     {
       "course_id": "design-fabrication",
@@ -449,7 +489,7 @@
       "use": "Testing catches problems before a graphic is shared or made.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 4,
+      "track_order": 5,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -457,7 +497,7 @@
       "previous_route": "/commons/design-fabrication/accessible-design/understanding-colour.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 17
+      "sequence_index": 18
     },
     {
       "course_id": "design-fabrication",
@@ -472,7 +512,7 @@
       "use": "Support geometry is useful for signs, displays, holders, and models.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -480,7 +520,7 @@
       "previous_route": null,
       "next_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
       "next_starts_new_track": false,
-      "sequence_index": 18
+      "sequence_index": 19
     },
     {
       "course_id": "design-fabrication",
@@ -495,7 +535,7 @@
       "use": "Measured placement improves access, spacing, and fit.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -503,7 +543,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
       "next_starts_new_track": false,
-      "sequence_index": 19
+      "sequence_index": 20
     },
     {
       "course_id": "design-fabrication",
@@ -518,7 +558,7 @@
       "use": "Calibration reduces wasted material and unreliable joints.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -526,7 +566,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
       "next_starts_new_track": false,
-      "sequence_index": 20
+      "sequence_index": 21
     },
     {
       "course_id": "design-fabrication",
@@ -541,7 +581,7 @@
       "use": "Hybrid fabrication expands what a flat-sheet process can make.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -549,7 +589,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/assembly-adhesives-finishing.html",
       "next_starts_new_track": false,
-      "sequence_index": 21
+      "sequence_index": 22
     },
     {
       "course_id": "design-fabrication",
@@ -581,7 +621,7 @@
         }
       ],
       "track_id": "fabrication-tools",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -589,7 +629,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
       "next_starts_new_track": false,
-      "sequence_index": 22
+      "sequence_index": 23
     },
     {
       "course_id": "design-fabrication",
@@ -609,7 +649,7 @@
         }
       ],
       "track_id": "fabrication-tools",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -617,7 +657,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/assembly-adhesives-finishing.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
       "next_starts_new_track": false,
-      "sequence_index": 23
+      "sequence_index": 24
     },
     {
       "course_id": "design-fabrication",
@@ -632,7 +672,7 @@
       "use": "The capstone combines evidence, design decisions, fabrication, and evaluation.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -640,7 +680,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 24
+      "sequence_index": 25
     },
     {
       "course_id": "design-fabrication",
@@ -668,7 +708,7 @@
         }
       ],
       "track_id": "phone-holder-project",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -676,7 +716,7 @@
       "previous_route": null,
       "next_route": "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
       "next_starts_new_track": false,
-      "sequence_index": 25
+      "sequence_index": 26
     },
     {
       "course_id": "design-fabrication",
@@ -691,7 +731,7 @@
       "use": "The model shows what to make before the shop work begins.",
       "resources": [],
       "track_id": "phone-holder-project",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -699,7 +739,7 @@
       "previous_route": "/commons/design-fabrication/cad-parametric-modeling/phone-holder-design.html",
       "next_route": "/commons/design-fabrication/hand-tools/tools-machines.html",
       "next_starts_new_track": false,
-      "sequence_index": 26
+      "sequence_index": 27
     },
     {
       "course_id": "design-fabrication",
@@ -714,7 +754,7 @@
       "use": "The pictures connect each tool to one job in the build.",
       "resources": [],
       "track_id": "phone-holder-project",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -722,7 +762,7 @@
       "previous_route": "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
       "next_route": "/commons/design-fabrication/hand-tools/phone-holder.html",
       "next_starts_new_track": false,
-      "sequence_index": 27
+      "sequence_index": 28
     },
     {
       "course_id": "design-fabrication",
@@ -746,7 +786,7 @@
         }
       ],
       "track_id": "phone-holder-project",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -754,7 +794,7 @@
       "previous_route": "/commons/design-fabrication/hand-tools/tools-machines.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 28
+      "sequence_index": 29
     },
     {
       "course_id": "design-fabrication",
@@ -778,7 +818,7 @@
         }
       ],
       "track_id": "advanced-making",
-      "track_order": 7,
+      "track_order": 8,
       "track_title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
       "track_hub": null,
       "track_summary": "Continue with an optional advanced 3D-printing project.",
@@ -786,7 +826,7 @@
       "previous_route": null,
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 29
+      "sequence_index": 30
     },
     {
       "course_id": "tej",
@@ -858,7 +898,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 30
+      "sequence_index": 31
     },
     {
       "course_id": "tej",
@@ -930,7 +970,7 @@
       "previous_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 31
+      "sequence_index": 32
     },
     {
       "course_id": "tej",
@@ -986,7 +1026,7 @@
       "previous_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_starts_new_track": false,
-      "sequence_index": 32
+      "sequence_index": 33
     },
     {
       "course_id": "tej",
@@ -1030,7 +1070,7 @@
       "previous_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 33
+      "sequence_index": 34
     },
     {
       "course_id": "tej",
@@ -1070,7 +1110,7 @@
       "previous_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 34
+      "sequence_index": 35
     },
     {
       "course_id": "tej",
@@ -1093,7 +1133,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 35
+      "sequence_index": 36
     },
     {
       "course_id": "tej",
@@ -1116,7 +1156,7 @@
       "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 36
+      "sequence_index": 37
     },
     {
       "course_id": "tej",
@@ -1144,7 +1184,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_starts_new_track": false,
-      "sequence_index": 37
+      "sequence_index": 38
     },
     {
       "course_id": "tej",
@@ -1176,7 +1216,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_starts_new_track": false,
-      "sequence_index": 38
+      "sequence_index": 39
     },
     {
       "course_id": "tej",
@@ -1220,7 +1260,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_starts_new_track": false,
-      "sequence_index": 39
+      "sequence_index": 40
     },
     {
       "course_id": "tej",
@@ -1243,7 +1283,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_starts_new_track": false,
-      "sequence_index": 40
+      "sequence_index": 41
     },
     {
       "course_id": "tej",
@@ -1266,7 +1306,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_starts_new_track": false,
-      "sequence_index": 41
+      "sequence_index": 42
     },
     {
       "course_id": "tej",
@@ -1289,7 +1329,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_starts_new_track": false,
-      "sequence_index": 42
+      "sequence_index": 43
     },
     {
       "course_id": "tej",
@@ -1312,7 +1352,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_starts_new_track": false,
-      "sequence_index": 43
+      "sequence_index": 44
     },
     {
       "course_id": "tej",
@@ -1335,7 +1375,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_starts_new_track": false,
-      "sequence_index": 44
+      "sequence_index": 45
     },
     {
       "course_id": "tej",
@@ -1358,7 +1398,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_starts_new_track": false,
-      "sequence_index": 45
+      "sequence_index": 46
     },
     {
       "course_id": "tej",
@@ -1381,7 +1421,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_starts_new_track": false,
-      "sequence_index": 46
+      "sequence_index": 47
     },
     {
       "course_id": "tej",
@@ -1404,7 +1444,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
       "next_starts_new_track": false,
-      "sequence_index": 47
+      "sequence_index": 48
     },
     {
       "course_id": "tej",
@@ -1427,7 +1467,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 48
+      "sequence_index": 49
     },
     {
       "course_id": "tej",
@@ -1450,7 +1490,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 49
+      "sequence_index": 50
     },
     {
       "course_id": "tej",
@@ -1473,7 +1513,7 @@
       "previous_route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
       "next_route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 50
+      "sequence_index": 51
     },
     {
       "course_id": "tej",
@@ -1496,7 +1536,7 @@
       "previous_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 51
+      "sequence_index": 52
     }
   ]
 }

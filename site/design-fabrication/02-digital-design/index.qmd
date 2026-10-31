@@ -1,6 +1,6 @@
 ---
 title: "Digital Design & Communication | Graphics, Animation, Blender & UI/UX"
-description: "Reusable lessons for raster and vector graphics, logos, Pencil2D animation, artistic Blender work and a small website/UI-UX portfolio."
+description: "Reusable lessons for raster and vector graphics, logos, browser-based logo animation, Pencil2D, artistic Blender work and a small website/UI-UX portfolio."
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
@@ -17,7 +17,8 @@ Digital design is both communication and preparation for fabrication. Students l
   <li><a href="02-vector-geometry.qmd">Vector Geometry &amp; Exact Construction</a>: shapes, nodes, Boolean operations, alignment, duplication, and dimensions.</li>
   <li><a href="03-logos-lettermarks.qmd">Logos, Lettermarks &amp; Negative Space</a>: identity, simplification, typography, and one-colour testing.</li>
   <li><a href="04-layout-typography-colour.qmd">Layout, Typography &amp; Colour</a>: hierarchy, spacing, contrast, readable type, and intentional palettes.</li>
-  <li><a href="05-animation-ui-ux.qmd">2D Animation with Pencil2D</a>: frames, keyframes, timing, timeline, onion skinning, loops and export.</li>
+  <li><a href="05-animation-ui-ux.qmd">Animation Foundations with Pencil2D</a>: frames, keyframes, timing, timeline, onion skinning, loops and export.</li>
+  <li><a href="animate-your-logo.qmd">Bring Your Brand to Life</a>: a four-day browser assignment using an existing logo, intentional motion, testing, and export.</li>
   <li><a href="06-blender-artistic-3d.qmd">Blender for Artistic 3D Design</a>: mesh editing, sculptural forms, materials, lighting, rendering and animation.</li>
   <li><a href="07-website-ui-ux.qmd">Small Website &amp; UI/UX Portfolio</a>: audience, hierarchy, navigation, states, responsive layouts, files and publishing.</li>
 </ol>
@@ -29,7 +30,7 @@ Before moving into laser cutting, students should be able to distinguish raster 
 ::: {.ter-project-brief}
 ### Suggested bridge project
 
-Create an original logo or lettermark as a thread across later work. Test it in black and white, animate it in a 2–4 second loop, use it on a small portfolio page, engrave it on the teacher-supplied name-tag blank, or rebuild its essential geometry for the faux-enamel print.
+Create an original logo or lettermark as a thread across later work. Test it in black and white, animate it in a 5–8 second browser-based intro, use it on a small portfolio page, engrave it on the teacher-supplied name-tag blank, or rebuild its essential geometry for the faux-enamel print.
 :::
 
 ::: {.ter-curriculum-relevance}

@@ -369,3 +369,62 @@ body.bs-research-article .moon-phase-pair p {
     grid-template-columns: 1fr;
   }
 }
+
+body.ter-logo-animation .ter-motion-example {
+  max-width: 38rem;
+  margin: 1.25rem auto;
+  overflow: hidden;
+  border: 1px solid var(--bs-border);
+  border-radius: 1rem;
+  background: #0f172a;
+  box-shadow: 0 1rem 2.25rem color-mix(in srgb, var(--bs-navy-dark) 16%, transparent);
+}
+
+body.ter-logo-animation .ter-motion-example img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body.ter-logo-animation .ter-motion-example img.ter-motion-example__still {
+  display: none;
+}
+
+body.ter-logo-animation figure img[src$="timing-emotion-guide.svg"],
+body.ter-logo-animation figure img[src$="smooth-video-interface-map.svg"] {
+  width: 100%;
+  border: 1px solid var(--bs-border);
+  border-radius: 0.85rem;
+  background: #f8fafc;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.ter-logo-animation .ter-motion-example img.ter-motion-example__animated {
+    display: none;
+  }
+
+  body.ter-logo-animation .ter-motion-example img.ter-motion-example__still {
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body.ter-logo-animation #rubric .table-responsive > table {
+    min-width: 42rem;
+  }
+
+  body.ter-logo-animation li code {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media print {
+  body.ter-logo-animation .ter-motion-example img.ter-motion-example__animated {
+    display: none;
+  }
+
+  body.ter-logo-animation .ter-motion-example img.ter-motion-example__still {
+    display: block;
+  }
+}

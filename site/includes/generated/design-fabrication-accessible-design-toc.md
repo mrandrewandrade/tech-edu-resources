@@ -20,7 +20,7 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="accessible-design" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">4. Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">5. Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Access and Alt Text&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Describe the instructional purpose of an image and identify barriers to access.&quot;, &quot;Useful descriptions preserve meaning for people who cannot use the image visually.&quot;]">

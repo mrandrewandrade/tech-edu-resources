@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Motion timing changes the emotion of a logo reveal</title>
+  <desc id="desc">Three six-second timelines compare energetic gaming or creator motion, confident personal brand motion, and polished product or business motion.</desc>
+  <defs>
+    <style>
+      .title{font:700 34px system-ui,sans-serif;fill:#16324f}.h{font:700 26px system-ui,sans-serif;fill:#172033}.p{font:500 20px system-ui,sans-serif;fill:#475569}.time{font:600 18px system-ui,sans-serif;fill:#64748b}.beat{font:700 18px system-ui,sans-serif;fill:#fff}.line{stroke:#94a3b8;stroke-width:3}.tick{stroke:#64748b;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="620" rx="28" fill="#f8fafc"/>
+  <text x="54" y="62" class="title">Same logo. Different feeling.</text>
+
+  <text x="54" y="126" class="h">Gaming / creator</text>
+  <text x="54" y="156" class="p">Fast arrival · punchy pause · quick exit</text>
+  <line x1="420" y1="140" x2="1120" y2="140" class="line"/>
+  <rect x="420" y="115" width="150" height="50" rx="12" fill="#a45a2a"/>
+  <rect x="580" y="115" width="380" height="50" rx="12" fill="#216147"/>
+  <rect x="970" y="115" width="150" height="50" rx="12" fill="#16324f"/>
+  <text x="463" y="147" class="beat">POP</text><text x="723" y="147" class="beat">HOLD</text><text x="1006" y="147" class="beat">FLIP</text>
+
+  <text x="54" y="276" class="h">Personal brand</text>
+  <text x="54" y="306" class="p">Clear build · calm hold · friendly finish</text>
+  <line x1="420" y1="290" x2="1120" y2="290" class="line"/>
+  <rect x="420" y="265" width="230" height="50" rx="12" fill="#2679b7"/>
+  <rect x="660" y="265" width="360" height="50" rx="12" fill="#216147"/>
+  <rect x="1030" y="265" width="90" height="50" rx="12" fill="#16324f"/>
+  <text x="478" y="297" class="beat">SLIDE</text><text x="797" y="297" class="beat">HOLD</text><text x="1049" y="297" class="beat">FADE</text>
+
+  <text x="54" y="426" class="h">Product / fashion / business</text>
+  <text x="54" y="456" class="p">Slow reveal · long hold · smooth fade</text>
+  <line x1="420" y1="440" x2="1120" y2="440" class="line"/>
+  <rect x="420" y="415" width="300" height="50" rx="12" fill="#398260"/>
+  <rect x="730" y="415" width="310" height="50" rx="12" fill="#216147"/>
+  <rect x="1050" y="415" width="70" height="50" rx="12" fill="#16324f"/>
+  <text x="485" y="447" class="beat">SLOW SCALE</text><text x="842" y="447" class="beat">HOLD</text>
+
+  <line x1="420" y1="520" x2="1120" y2="520" class="line"/>
+  <line x1="420" y1="510" x2="420" y2="530" class="tick"/><line x1="653" y1="510" x2="653" y2="530" class="tick"/><line x1="886" y1="510" x2="886" y2="530" class="tick"/><line x1="1120" y1="510" x2="1120" y2="530" class="tick"/>
+  <text x="414" y="558" class="time">0 s</text><text x="644" y="558" class="time">2 s</text><text x="877" y="558" class="time">4 s</text><text x="1110" y="558" class="time">6 s</text>
+  <text x="54" y="586" class="p">Change the spacing between moments before adding more effects.</text>
+</svg>
