@@ -76,7 +76,9 @@ def main() -> int:
             for href in (
                 "/assets/tej-computational/tej-computational-engineering-notebooks.zip",
                 "/assets/tej-computational/notebooks/01-engineering-calculator.ipynb",
+                "/assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb",
                 "/assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb",
+                "/assets/electronics/handouts/two-loop-to-matrix-bridge.pdf",
                 "/assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb",
                 "/assets/tej-computational/data/circuit-measurements.csv",
                 "/assets/tej-portfolio/quarto-portfolio-starter.zip",
@@ -136,7 +138,7 @@ def main() -> int:
         for server in (site_server, template_server):
             server.shutdown()
             server.server_close()
-    print("TEJ extension browser checks passed: 13 course routes, 6 downloads, responsive template controls")
+    print("TEJ extension browser checks passed: 15 course routes, 8 downloads, responsive template controls")
     return 0
 
 

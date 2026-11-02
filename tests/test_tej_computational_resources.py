@@ -10,9 +10,9 @@ NOTEBOOKS = ASSETS / "tej-computational" / "notebooks"
 
 
 class TejComputationalResourceTests(unittest.TestCase):
-    def test_eight_real_notebooks_have_required_learning_structure(self) -> None:
+    def test_nine_real_notebooks_have_required_learning_structure(self) -> None:
         paths = sorted(NOTEBOOKS.glob("*.ipynb"))
-        self.assertEqual(len(paths), 8)
+        self.assertEqual(len(paths), 9)
         required = (
             "Learning goal",
             "Why it matters",
@@ -31,6 +31,11 @@ class TejComputationalResourceTests(unittest.TestCase):
             for phrase in required:
                 self.assertIn(phrase.lower(), text.lower(), f"{phrase} missing from {path.name}")
             self.assertTrue(any(cell.get("cell_type") == "code" for cell in notebook["cells"]))
+
+        bridge = json.loads((NOTEBOOKS / "03a-two-loop-to-matrix-bridge.ipynb").read_text(encoding="utf-8"))
+        bridge_text = "".join("".join(cell.get("source", [])) for cell in bridge["cells"])
+        for phrase in ("I_3=I_1-I_2", "numpy.linalg.solve", "sympy", "exact fractions", "residual"):
+            self.assertIn(phrase.lower(), bridge_text.lower())
 
     def test_downloads_and_dataset_exist(self) -> None:
         dataset = ASSETS / "tej-computational" / "data" / "circuit-measurements.csv"

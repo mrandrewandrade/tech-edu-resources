@@ -37,8 +37,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--timeout", type=int, default=120, help="seconds allowed per cell")
     args = parser.parse_args(argv)
     paths = sorted(NOTEBOOK_ROOT.glob("*.ipynb"))
-    if len(paths) != 8:
-        print(f"ERROR: expected 8 notebooks, found {len(paths)}", file=sys.stderr)
+    if len(paths) != 9:
+        print(f"ERROR: expected 9 notebooks, found {len(paths)}", file=sys.stderr)
         return 1
     for path in paths:
         execute_notebook(path, args.timeout)

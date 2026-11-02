@@ -413,6 +413,215 @@ def notebooks() -> dict[str, dict[str, object]]:
         ],
     )
 
+    n3a = notebook(
+        "Notebook 3A: From Two Loops to a Matrix",
+        "Derive two KVL equations, arrange them as a matrix, and solve the same system numerically and symbolically.",
+        "KCL, KVL, resistor voltage drops, signed loop traversal, and the completed Question 4 circuit.",
+        [
+            md(
+                "## Before you start\n\n"
+                "Use the [printable two-loop-to-matrix guide](https://andrewandrade.ca/tech-edu-resources/assets/electronics/handouts/two-loop-to-matrix-bridge.pdf) "
+                "beside this notebook. Keep your returned Question 4 work and released answer available for comparison.\n\n"
+                "**Tomorrow's workflow:** arrows $\\rightarrow$ two KVL equations $\\rightarrow$ standard form "
+                "$\\rightarrow A\\mathbf{x}=\\mathbf{b}$ $\\rightarrow$ NumPy $\\rightarrow$ SymPy $\\rightarrow$ checks.\n\n"
+                "> This is a guided computational bridge. The intentional debugging stages and parameter sweep in Notebook 3 are later lessons.\n"
+            ),
+            md(
+                "## Working demonstration: define the currents\n\n"
+                "Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the shared resistor. "
+                "The mesh currents oppose each other there, so\n\n"
+                "$$I_3=I_1-I_2.$$\n\n"
+                "A negative value of $I_3$ would mean that the real shared-branch current is upward, opposite the chosen arrow.\n"
+            ),
+            md(
+                "## Working demonstration: derive Loop 1\n\n"
+                "Walking clockwise gives a $+10\\,\\mathrm{V}$ source rise, a $-3I_1$ drop, and a $-2I_3$ drop.\n\n"
+                "$$+10-3I_1-2I_3=0$$\n\n"
+                "Substitute $I_3=I_1-I_2$:\n\n"
+                "$$+10-3I_1-2(I_1-I_2)=0$$\n\n"
+                "Expand and collect:\n\n"
+                "$$+10-3I_1-2I_1+2I_2=0$$\n\n"
+                "$$\\boxed{5I_1-2I_2=10}.$$\n"
+            ),
+            md(
+                "## Working demonstration: derive Loop 2\n\n"
+                "Walking clockwise gives a $+6\\,\\mathrm{V}$ source rise and a $-5I_2$ drop. "
+                "The walk crosses the shared resistor against the defined $I_3$ direction, so that term is $+2I_3$.\n\n"
+                "$$+6-5I_2+2I_3=0$$\n\n"
+                "Substitute $I_3=I_1-I_2$:\n\n"
+                "$$+6-5I_2+2(I_1-I_2)=0$$\n\n"
+                "Expand and collect:\n\n"
+                "$$+6+2I_1-7I_2=0$$\n\n"
+                "$$2I_1-7I_2=-6$$\n\n"
+                "Multiply the complete equation by $-1$:\n\n"
+                "$$\\boxed{-2I_1+7I_2=6}.$$\n"
+            ),
+            md(
+                "## Working demonstration: read equations into a matrix\n\n"
+                "Keep the variable order $[I_1,I_2]$ in both rows.\n\n"
+                "| Equation | coefficient of $I_1$ | coefficient of $I_2$ | right side |\n"
+                "|:--|--:|--:|--:|\n"
+                "| $5I_1-2I_2=10$ | $5$ | $-2$ | $10$ |\n"
+                "| $-2I_1+7I_2=6$ | $-2$ | $7$ | $6$ |\n\n"
+                "$$"
+                "\\underbrace{\\begin{bmatrix}5&-2\\\\-2&7\\end{bmatrix}}_{A\\,[\\mathrm{k\\Omega}]}"
+                "\\underbrace{\\begin{bmatrix}I_1\\\\I_2\\end{bmatrix}}_{\\mathbf{x}\\,[\\mathrm{mA}]}"
+                "=\\underbrace{\\begin{bmatrix}10\\\\6\\end{bmatrix}}_{\\mathbf{b}\\,[\\mathrm{V}]}."
+                "$$\n\n"
+                "The units work because $[\\mathrm{k\\Omega}][\\mathrm{mA}]=[\\mathrm{V}]$.\n"
+            ),
+            code(
+                "import numpy as np\n"
+                "import sympy as sp\n\n"
+                "variable_order = ['I1', 'I2']\n"
+                "A_demo = np.array([[5.0, -2.0],\n"
+                "                   [-2.0, 7.0]])  # kOhm\n"
+                "b_demo = np.array([10.0, 6.0])     # V\n\n"
+                "print('Variable order:', variable_order)\n"
+                "print('Row 1 ->', A_demo[0, 0], 'I1 +', A_demo[0, 1], 'I2 =', b_demo[0])\n"
+                "print('Row 2 ->', A_demo[1, 0], 'I1 +', A_demo[1, 1], 'I2 =', b_demo[1])\n"
+                "assert A_demo.shape == (2, 2)\n"
+                "assert b_demo.shape == (2,)\n"
+            ),
+            md(
+                "## Numerical linear algebra with NumPy\n\n"
+                "`numpy.linalg.solve(A, b)` solves $A\\mathbf{x}=\\mathbf{b}$ without asking you to calculate the inverse. "
+                "The residual $A\\mathbf{x}-\\mathbf{b}$ checks the two equations entered.\n"
+            ),
+            code(
+                "currents_demo_mA = np.linalg.solve(A_demo, b_demo)\n"
+                "I1_numeric_mA, I2_numeric_mA = currents_demo_mA\n"
+                "I3_numeric_mA = I1_numeric_mA - I2_numeric_mA\n"
+                "residual_demo_V = A_demo @ currents_demo_mA - b_demo\n\n"
+                "print(f'I1 = {I1_numeric_mA:.6f} mA')\n"
+                "print(f'I2 = {I2_numeric_mA:.6f} mA')\n"
+                "print(f'I3 = {I3_numeric_mA:.6f} mA')\n"
+                "print('Residuals (V):', residual_demo_V)\n"
+                "assert np.allclose(residual_demo_V, 0.0, atol=1e-10)\n"
+            ),
+            md(
+                "## Symbolic solution with SymPy\n\n"
+                "A symbolic solver preserves exact fractions. This makes the algebra visible before decimal rounding.\n"
+            ),
+            code(
+                "I1, I2 = sp.symbols('I1 I2')\n"
+                "equations_demo = [\n"
+                "    sp.Eq(5*I1 - 2*I2, 10),\n"
+                "    sp.Eq(-2*I1 + 7*I2, 6),\n"
+                "]\n"
+                "exact_demo = sp.solve(equations_demo, (I1, I2), dict=True)[0]\n"
+                "I1_exact = exact_demo[I1]\n"
+                "I2_exact = exact_demo[I2]\n"
+                "I3_exact = sp.simplify(I1_exact - I2_exact)\n\n"
+                "print('Exact solution:', exact_demo)\n"
+                "print('I3 exact:', I3_exact)\n"
+                "print('Decimal check:', [sp.N(I1_exact, 8), sp.N(I2_exact, 8), sp.N(I3_exact, 8)])\n"
+                "assert sp.simplify(5*I1_exact - 2*I2_exact - 10) == 0\n"
+                "assert sp.simplify(-2*I1_exact + 7*I2_exact - 6) == 0\n"
+                "assert np.allclose([float(I1_exact), float(I2_exact)], currents_demo_mA)\n"
+            ),
+            md(
+                "## Tomorrow's assignment\n\n"
+                "**The problem:** show how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.\n\n"
+                "**The essential skill:** keep the shared-current definition and variable order consistent.\n\n"
+                "**The challenge:** explain every sign instead of copying the finished matrix.\n\n"
+                "**The stumbling block:** the Loop 2 shared-resistor sign changes because the loop traversal is against $I_3$.\n\n"
+                "**The investigation:** use the official NumPy or SymPy documentation when a solver object is unfamiliar.\n\n"
+                "**The verification:** use residuals, substitution, and $I_3=I_1-I_2$.\n"
+            ),
+            md(
+                "### Student explanation - replace every prompt\n\n"
+                "**Current definitions:** Explain $I_1$, $I_2$, and $I_3$.\n\n"
+                "**Loop 1 signs:** Explain why the terms are $+10$, $-3I_1$, and $-2I_3$.\n\n"
+                "**Loop 1 algebra:** Show every line from KVL to $5I_1-2I_2=10$.\n\n"
+                "**Loop 2 signs:** Explain why the shared-resistor term is $+2I_3$.\n\n"
+                "**Loop 2 algebra:** Show every line from KVL to $-2I_1+7I_2=6$.\n\n"
+                "**Variable order and units:** State them before entering the matrix.\n"
+            ),
+            code(
+                "# Keep False for a clean first run. Change to True after replacing every None.\n"
+                "begin_student_work = False\n\n"
+                "if begin_student_work:\n"
+                "    student_A = np.array([[None, None],\n"
+                "                          [None, None]], dtype=float)  # kOhm\n"
+                "    student_b = np.array([None, None], dtype=float)    # V\n"
+                "else:\n"
+                "    student_A = A_demo.copy()\n"
+                "    student_b = b_demo.copy()\n"
+                "    print('Working values loaded. Replace the None values before setting the flag to True.')\n\n"
+                "print('Row 1:', student_A[0], '=', student_b[0])\n"
+                "print('Row 2:', student_A[1], '=', student_b[1])\n"
+            ),
+            code(
+                "# Numerical solution and residual. Run after replacing every None.\n"
+                "student_currents_mA = np.linalg.solve(student_A, student_b)\n"
+                "student_residual_V = student_A @ student_currents_mA - student_b\n"
+                "student_I3_mA = student_currents_mA[0] - student_currents_mA[1]\n\n"
+                "print('I1, I2 (mA):', student_currents_mA)\n"
+                "print('I3 (mA):', student_I3_mA)\n"
+                "print('Residuals (V):', student_residual_V)\n"
+                "assert np.allclose(student_residual_V, 0.0, atol=1e-10)\n"
+            ),
+            code(
+                "# Symbolic solution: replace the coefficient and right-side blanks.\n"
+                "student_I1, student_I2 = sp.symbols('student_I1 student_I2')\n"
+                "if begin_student_work:\n"
+                "    student_equations = [\n"
+                "        sp.Eq(None*student_I1 + None*student_I2, None),\n"
+                "        sp.Eq(None*student_I1 + None*student_I2, None),\n"
+                "    ]\n"
+                "    # student_exact = sp.solve(student_equations, (student_I1, student_I2), dict=True)[0]\n"
+                "    # student_I3_exact = sp.simplify(student_exact[student_I1] - student_exact[student_I2])\n"
+                "    # print(student_exact, 'I3 =', student_I3_exact)\n"
+                "else:\n"
+                "    print('Symbolic student scaffold is ready. Replace the None values before setting the flag to True.')\n"
+            ),
+            md(
+                "## Comparison table - replace every blank\n\n"
+                "| Quantity | Original work | Released answer | NumPy | SymPy exact | Agreement and explanation |\n"
+                "|:--|--:|--:|--:|--:|:--|\n"
+                "| $I_1$ | ___ | ___ | ___ | ___ | ___ |\n"
+                "| $I_2$ | ___ | ___ | ___ | ___ | ___ |\n"
+                "| $I_3$ | ___ | ___ | ___ | ___ | ___ |\n"
+            ),
+            md(
+                "## Independent challenge and progressive hints\n\n"
+                "**Challenge:** read both matrix rows back as equations, then explain why a solver can produce a clean result even when the copied coefficients represent the wrong circuit.\n\n"
+                "### Hint 1 - concept clue\n\nThe shared resistor carries $I_1-I_2$ because the mesh currents oppose each other there.\n\n"
+                "### Hint 2 - documentation clue\n\nSearch `numpy.linalg.solve A shape` or `SymPy solve simultaneous equations`.\n\n"
+                "### Hint 3 - technical clue\n\nWith order $[I_1,I_2]$, the two rows are $[5,-2]$ and $[-2,7]$, with right side $[10,6]$.\n"
+            ),
+            md(
+                "## Common errors\n\n"
+                "- Jumping to a matrix before defining $I_3$.\n"
+                "- Using $-2I_3$ in both loops even though Loop 2 travels against $I_3$.\n"
+                "- Expanding $-2(I_1-I_2)$ as $-2I_1-2I_2$ instead of $-2I_1+2I_2$.\n"
+                "- Changing the variable order between rows.\n"
+                "- Mixing ohms with milliamperes or kilohms with amperes.\n"
+                "- Assuming a near-zero residual proves that the circuit model is correct.\n"
+            ),
+            md(
+                "## Reflection - complete in full sentences\n\n"
+                "1. Which Loop 2 sign was easiest to miss, and why?\n"
+                "2. How did standard form determine the matrix rows?\n"
+                "3. Why did SymPy show fractions while NumPy showed decimals?\n"
+                "4. What did the residual verify? What could it not verify?\n"
+                "5. What step changed your understanding of the two-loop circuit?\n"
+            ),
+            md(
+                "## Save and submit\n\n"
+                "- [ ] Current definitions and both complete derivations are visible.\n"
+                "- [ ] The variable order, units, $A$, and $\\mathbf{b}$ are visible.\n"
+                "- [ ] NumPy currents and residuals are visible.\n"
+                "- [ ] SymPy exact fractions and $I_3$ are visible.\n"
+                "- [ ] The comparison table and reflections are complete.\n"
+                "- [ ] Restart the kernel and run all required cells from top to bottom.\n"
+                "- [ ] Save and download `studentnumber-lastname-kirchhoff-jupyter.ipynb`.\n"
+                "- [ ] Reopen the downloaded notebook before submitting it.\n"
+            ),
+        ],
+    )
+
     n4 = notebook(
         "Notebook 4: Graphing Electrical Relationships",
         "Create labelled voltage-current and resistance-current graphs, then interpret a changed parameter.",
@@ -784,6 +993,7 @@ def notebooks() -> dict[str, dict[str, object]]:
     return {
         "01-engineering-calculator.ipynb": n1,
         "02-series-parallel-calculations.ipynb": n2,
+        "03a-two-loop-to-matrix-bridge.ipynb": n3a,
         "03-kirchhoff-systems.ipynb": n3,
         "04-graph-electrical-relationships.ipynb": n4,
         "05-experimental-data-analysis.ipynb": n5,
@@ -807,6 +1017,7 @@ REQUIREMENTS_TEXT = """jupyterlab>=4.2,<5
 numpy>=2.0,<3
 pandas>=2.2,<3
 matplotlib>=3.9,<4
+sympy>=1.13,<2
 nbclient>=0.10,<1
 nbformat>=5.10,<6
 """
@@ -844,7 +1055,7 @@ def build_collection_zip() -> None:
     shutil.copytree(DATA_ROOT, stage / "data")
     shutil.copy2(ASSET_ROOT / "requirements-jupyter.txt", stage / "requirements-jupyter.txt")
     (stage / "README.txt").write_text(
-        "Open the eight notebooks in order or use the notebook matched to the current electronics lesson.\n"
+        "Open the nine notebooks in order or use the notebook matched to the current electronics lesson.\n"
         "Upload data/circuit-measurements.csv beside Notebook 5. Notebook 7 works without physical hardware.\n"
         "For local JupyterLab, create a virtual environment and install requirements-jupyter.txt.\n"
         "Browser storage is not a backup: download work after every JupyterLite session.\n",

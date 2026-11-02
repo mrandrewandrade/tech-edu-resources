@@ -87,3 +87,59 @@
   .tej-roadmap-filter-row { display: none; }
   .tej-roadmap-module { break-inside: avoid; box-shadow: none; }
 }
+/* A readable, wrapping alternative to one long display equation for process chains. */
+.tej-process-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.55rem;
+  margin: 1rem 0;
+}
+
+.tej-process-chain__step {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--bs-border-color, #c9d2de);
+  border-radius: 0.35rem;
+  background: var(--bs-tertiary-bg, #f4f6f8);
+  font-weight: 650;
+}
+
+.tej-process-chain__arrow {
+  color: var(--bs-secondary-color, #5f6b7a);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Keep long code and comparison tables inside the lesson column on phones. */
+main.content,
+main.content > section,
+main.content div.sourceCode,
+main.content pre.sourceCode {
+  min-width: 0;
+  max-width: 100%;
+}
+
+main.content div.sourceCode,
+main.content pre.sourceCode,
+.tej-table-scroll {
+  overflow-x: auto;
+}
+
+.tej-table-scroll {
+  max-width: 100%;
+  margin: 0.75rem 0 1rem;
+}
+
+.tej-table-scroll table {
+  min-width: 42rem;
+  margin-bottom: 0;
+}
+
+main.content p code,
+main.content li code,
+main.content h1 code,
+main.content h2 code,
+main.content h3 code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}

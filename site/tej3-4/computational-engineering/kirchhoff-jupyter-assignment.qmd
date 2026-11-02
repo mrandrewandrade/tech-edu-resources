@@ -1,7 +1,7 @@
 ---
-title: "Assignment: Verify Kirchhoff Equations with Jupyter"
-description: "Use a completed two-loop solution, Python, documentation, residuals, and a parameter sweep to verify and investigate a circuit model."
-categories: [Python, Jupyter, Kirchhoff, debugging, assignment]
+title: "Assignment: From Two Loops to a Matrix"
+description: "Derive two loop equations, arrange them as a matrix, and solve the same system numerically and symbolically in Jupyter."
+categories: [Python, Jupyter, Kirchhoff, matrices, assignment]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
@@ -9,170 +9,272 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Where the class is now
+## Learning goals
 
-You have already completed basic schematics, Kirchhoff's current law, Kirchhoff's voltage law, and the five-question KCL/KVL problem set. You have also received the answers. This assignment does **not** restart that work.
+- I can define the current directions in a two-loop circuit.
+- I can write one signed KVL equation for each loop.
+- I can rearrange both equations into the same variable order.
+- I can build $A\mathbf{x}=\mathbf{b}$ and solve it with NumPy and SymPy.
+- I can verify the answer using residuals, substitution, and KCL.
 
-The new learning is to use Jupyter as an engineering verification tool:
+## Why this is useful
 
-```text
-completed circuit equations → Python model → residual check → documented repair → investigation
-```
+Two loops share one component, so the current through the shared component depends on both loop currents. A matrix does not replace the circuit reasoning. It organizes the equations after the arrows, signs, units, and KVL equations are correct.
 
-No new circuit theory is introduced during the independent work period.
+This bridge uses Question 4 from the completed five-question KCL/KVL package. It is a guided computational activity, not another five-question electronics package.
 
-## Assignment files
+## What you will make
 
-- [Download Notebook 3: Kirchhoff Systems](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb)
-- [Download the complete notebook bundle](../../assets/tej-computational/tej-computational-engineering-notebooks.zip)
-- [Review the Kirchhoff lesson and Monday demonstration](../circuits/kirchhoffs-laws.qmd)
-- [Use JupyterLite in a browser](jupyterlite.qmd)
-- [Install and run Jupyter locally using WSL, Windows, macOS, or Linux](local-python-jupyter.qmd)
-- [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd)
+Submit one Jupyter notebook showing this complete chain:
 
-Use your completed Question 4 or Question 5 work and the released teacher answer. Do not publish or upload the teacher answer.
+::: {.tej-process-chain role="list" aria-label="Assignment workflow"}
+<span class="tej-process-chain__step" role="listitem">arrows</span>
+<span class="tej-process-chain__arrow" aria-hidden="true">&rarr;</span>
+<span class="tej-process-chain__step" role="listitem">two KVL equations</span>
+<span class="tej-process-chain__arrow" aria-hidden="true">&rarr;</span>
+<span class="tej-process-chain__step" role="listitem">standard form</span>
+<span class="tej-process-chain__arrow" aria-hidden="true">&rarr;</span>
+<span class="tej-process-chain__step" role="listitem">$A\mathbf{x}=\mathbf{b}$</span>
+<span class="tej-process-chain__arrow" aria-hidden="true">&rarr;</span>
+<span class="tej-process-chain__step" role="listitem">two solver methods</span>
+<span class="tej-process-chain__arrow" aria-hidden="true">&rarr;</span>
+<span class="tej-process-chain__step" role="listitem">verification</span>
+:::
 
-## What to submit
+## Before you start
 
-Submit one completed `.ipynb` file. Rename it before working:
+1. Download the [printable two-loop-to-matrix guide](../../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf).
+2. Download [Notebook 3A: From Two Loops to a Matrix](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb).
+3. Keep your returned Question 4 work and released answer available for comparison.
+4. Choose a Jupyter route:
+   - [use JupyterLite in a browser](jupyterlite.qmd); or
+   - [run Jupyter locally using WSL, Windows, macOS, or Linux](local-python-jupyter.qmd).
+5. Rename the notebook before working:
 
 ```text
 studentnumber-lastname-kirchhoff-jupyter.ipynb
 ```
 
-The submitted notebook must reopen and run from the first cell without an unexpected error. Keep Markdown explanations, code, output, checks, and reflections together in the notebook.
+Example: `123456789-Smith-kirchhoff-jupyter.ipynb`. Keep the `.ipynb` ending.
 
-## Checkpoint 1: Tuesday independent assignment
+::: {.callout-note title="Textbook and lesson support"}
+- [Grob, Chapter 9: Kirchhoff's Laws, pp. 264–281](https://drive.google.com/file/d/1RXDje9v9TuuNF4V1Jlqemcsn1qJlKcjz/view)
+- [Problems Manual, Chapter 9](https://drive.google.com/file/d/125X4YkWq2HO8evqYM9jRUuKPsbMXHhdG/view)
+- [ElectroBOOM101-008: Lumped Model and Kirchhoff Circuit Laws](https://www.youtube.com/watch?v=d-a9Pr2z-qg)
+- [Kirchhoff lesson and worked Question 4](../circuits/kirchhoffs-laws.qmd#worked-solutions)
 
-### 1. Open and preserve the notebook
+This checkpoint is a computational verification activity. No physical lab is required tomorrow.
+:::
 
-1. Download Notebook 3.
-2. Open it in JupyterLite or local JupyterLab.
-3. Use **File > Save Notebook As** or make a copy with the required filename.
-4. Run the known-working demonstration before changing any code.
-5. Predict whether each demonstration current should be positive or negative.
+## 1. Define the three currents
 
-### 2. Enter a completed two-loop system
+Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the shared resistor.
 
-Copy the two equations from one completed question. Show:
-
-- both original KVL equations;
-- the standard-form equations;
-- the variable order;
-- the units used in $A$, $\mathbf{x}$, and $\mathbf{b}$;
-- the matrix $A$ and vector $\mathbf{b}$.
-
-Keep the same variable order in every equation and matrix row.
-
-### 3. Solve and verify
-
-Use `numpy.linalg.solve` to calculate the currents. Then calculate
+The currents oppose each other in the shared branch:
 
 $$
-\mathbf{r}=A\mathbf{x}-\mathbf{b}.
+I_3=I_1-I_2.
 $$
 
-For each equation, report the residual with units. A residual near zero shows that Python solved the equations you entered. It does not prove that the original circuit equations, signs, or units were correct.
+In the first notebook Markdown cell, describe all three current directions in words. Explain what a negative value of $I_3$ would mean.
 
-### 4. Compare three results
+## 2. Derive Equation 1 from Loop 1
 
-Complete a comparison table:
+Use the printable guide and record each signed KVL term:
 
-| Quantity | Handwritten result | Released answer | Python result | Agreement and explanation |
-|---|---:|---:|---:|---|
-| $I_1$ |  |  |  |  |
-| $I_2$ |  |  |  |  |
-| $I_3$ or shared current |  |  |  |  |
+| Element | Signed term | Reason |
+|---|---:|---|
+| $V_{S1}=10\,\mathrm{V}$ | $+10$ | source rise |
+| $R_1=3.0\,\mathrm{k\Omega}$ | $-3I_1$ | travel with $I_1$ |
+| $R_3=2.0\,\mathrm{k\Omega}$ | $-2I_3$ | travel with the defined $I_3$ |
 
-If a current is negative, explain what that means relative to the arrow selected on the schematic.
+Show all four lines in the notebook:
 
-### 5. Complete the easy documentation task
+$$
++10-3I_1-2I_3=0,
+$$
 
-Notebook 3 contains an intentional `numpy.round` keyword error. Change the Stage 1 flag only when you are ready to begin.
+$$
++10-3I_1-2(I_1-I_2)=0,
+$$
 
-Your debugging record must include:
+$$
++10-5I_1+2I_2=0,
+$$
 
-1. the exact error message as text;
-2. the search terms used;
-3. `help(np.round)`, `np.round?`, or the official NumPy documentation;
-4. the function signature or documented parameter that explains the problem;
-5. the smallest possible repair;
-6. evidence that the repaired cell works.
+$$
+\boxed{5I_1-2I_2=10}.
+$$
 
-Do not ask for the corrected line until you have recorded the evidence above.
+## 3. Derive Equation 2 from Loop 2
 
-### 6. Predict and investigate
+Loop 2 travels through the shared resistor against the defined direction of $I_3$. Its resistor term is therefore positive.
 
-Before running the parameter sweep, predict what will happen to each solved current when one source voltage increases.
+| Element | Signed term | Reason |
+|---|---:|---|
+| $V_{S2}=6.0\,\mathrm{V}$ | $+6$ | source rise |
+| $R_2=5.0\,\mathrm{k\Omega}$ | $-5I_2$ | travel with $I_2$ |
+| $R_3=2.0\,\mathrm{k\Omega}$ | $+2I_3$ | travel against the defined $I_3$ |
 
-Run the supplied sweep and then explain:
+Show all five lines:
 
-- whether each current increased, decreased, or crossed zero;
-- whether the trend matched the prediction;
-- what remained constant in the model;
-- one limitation of the numerical investigation.
+$$
++6-5I_2+2I_3=0,
+$$
 
-### 7. Answer the assigned reflections
+$$
++6-5I_2+2(I_1-I_2)=0,
+$$
 
-Answer the Checkpoint 1 reflections in complete sentences. Use **calculated**, **modelled**, **simulated**, and **measured** accurately. Python output from this assignment is calculated or modelled; it is not a physical measurement.
+$$
++6+2I_1-7I_2=0,
+$$
 
-## When you need help
+$$
+2I_1-7I_2=-6,
+$$
 
-You may use Python help, official documentation, Google, and existing Stack Overflow questions. Record the source and explain how it applies. Do not paste an unexplained solution.
+$$
+\boxed{-2I_1+7I_2=6}.
+$$
 
-Before asking the teacher, provide:
+Multiplying the complete equation by $-1$ does not change its solution.
 
-```markdown
-Goal:
-Expected result:
-Actual result:
-Exact error or failed check:
-Minimal code and input:
-Python and package versions:
-What I tried:
-Documentation or questions checked:
-My current hypothesis:
-My focused question:
+## 4. Build the matrix
+
+State the variable order before entering any coefficients:
+
+$$
+[I_1,I_2].
+$$
+
+Read each standard-form equation from left to right:
+
+| Equation | coefficient of $I_1$ | coefficient of $I_2$ | right side |
+|---|---:|---:|---:|
+| $5I_1-2I_2=10$ | $5$ | $-2$ | $10$ |
+| $-2I_1+7I_2=6$ | $-2$ | $7$ | $6$ |
+
+Therefore,
+
+$$
+\underbrace{\begin{bmatrix}5&-2\\-2&7\end{bmatrix}}_{A\,[\mathrm{k\Omega}]}
+\underbrace{\begin{bmatrix}I_1\\I_2\end{bmatrix}}_{\mathbf{x}\,[\mathrm{mA}]}
+=
+\underbrace{\begin{bmatrix}10\\6\end{bmatrix}}_{\mathbf{b}\,[\mathrm{V}]}.
+$$
+
+Use the row-reading cells in Notebook 3 to turn both rows back into equations. Do not continue until they match the two boxed equations above.
+
+## 5. Solve with numerical linear algebra
+
+Run the NumPy cells using:
+
+```python
+currents_mA = np.linalg.solve(A, b)
+residual_V = A @ currents_mA - b
 ```
 
-The problem must be reproducible from the information provided. Remove passwords, tokens, student numbers, private paths, and unrelated personal information.
+Report $I_1$, $I_2$, and the two residuals with units. Explain what a residual near zero proves and what it does not prove.
 
-## What is not due at Checkpoint 1
+## 6. Solve symbolically
 
-The following are later lessons, not Tuesday requirements:
+Run the SymPy cells. Keep the exact fractional results visible before converting them to decimals.
 
-- Stage 2: diagnosing the non-square `numpy.linalg.solve` input;
-- Stage 3: finding the silent factor-of-1000 unit error;
-- physical circuit construction or measurement;
-- capacitors and RC response.
+```python
+I1, I2 = sp.symbols("I1 I2")
+equations = [
+    sp.Eq(5*I1 - 2*I2, 10),
+    sp.Eq(-2*I1 + 7*I2, 6),
+]
+exact_solution = sp.solve(
+    equations,
+    (I1, I2),
+    dict=True,
+)[0]
+```
 
-Students who finish early may preview Stage 2, but it is not required for Checkpoint 1.
+Calculate $I_3=I_1-I_2$ symbolically and numerically.
 
-## Submission checklist
+## 7. Compare and verify
 
-- [ ] The file has the required `.ipynb` name.
-- [ ] The notebook starts with the original equations, variable order, and units.
-- [ ] $A$, $\mathbf{b}$, the solution, and the residual vector are visible.
-- [ ] Handwritten, released, and Python answers are compared.
-- [ ] Negative-current signs are interpreted physically where applicable.
-- [ ] Stage 1 includes the error, search, documentation, requirement, repair, and verification.
-- [ ] A prediction appears before the parameter sweep.
-- [ ] The numerical table or graph is present and interpreted.
-- [ ] The assigned reflections are complete.
-- [ ] Restarting the kernel and running all required cells succeeds.
-- [ ] The final `.ipynb` file is saved and submitted through the assigned classroom system.
+Complete the notebook comparison table:
 
-## Assessment
+::: {.tej-table-scroll}
+| Quantity | Original work | Released answer | NumPy | SymPy exact | Agreement and explanation |
+|---|---:|---:|---:|---:|---|
+| $I_1$ |  |  |  |  |  |
+| $I_2$ |  |  |  |  |  |
+| $I_3$ |  |  |  |  |  |
+:::
 
-| Category | Evidence |
-|---|---|
-| Circuit-to-code translation | Correct equations, coefficient order, units, $A$, and $\mathbf{b}$ |
-| Verification | Correct solution, residuals, comparison, and sign interpretation |
-| Documentation-driven debugging | Exact symptom, useful search, authoritative requirement, minimal repair, and rerun evidence |
-| Investigation and communication | Prediction, sweep, interpretation, limitations, and complete reflections |
+Then verify:
 
-The quality of the reasoning and evidence matters more than obtaining a clean-looking output on the first attempt.
+- Equation 1 by substitution;
+- Equation 2 by substitution;
+- $I_3=I_1-I_2$;
+- the NumPy residual vector.
 
-## Later checkpoints
+## Progressive hints
 
-Checkpoint 2 will use an exception and array shapes to diagnose a matrix-input problem. Checkpoint 3 will use dimensional analysis and an independent unit check to catch a believable wrong answer that produces no exception. After those debugging lessons, the class moves into capacitors and RC response.
+::: {.callout-tip collapse="true" title="Hint 1: concept clue"}
+The mesh currents oppose each other in the shared resistor. Start with $I_3=I_1-I_2$ and substitute that expression into both KVL equations.
+:::
+
+::: {.callout-tip collapse="true" title="Hint 2: documentation clue"}
+Search `numpy.linalg.solve A shape` or `SymPy solve simultaneous equations`. Use the official [NumPy solve documentation](https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html) and [SymPy solver documentation](https://docs.sympy.org/latest/guides/solving/solve-system-of-equations-algebraically.html).
+:::
+
+::: {.callout-tip collapse="true" title="Hint 3: technical clue"}
+With variable order $[I_1,I_2]$, use Row 1 $[5,-2]$, Row 2 $[-2,7]$, and right side $[10,6]$. Read both rows back as equations before solving.
+:::
+
+## Common issues
+
+### The shared resistor has the wrong sign
+
+Loop 1 travels with the defined $I_3$, so its term is $-2I_3$. Loop 2 travels against $I_3$, so its term is $+2I_3$.
+
+### The matrix solves the wrong equations
+
+Check the variable order and read each row back as an equation. A solver cannot recognize that a coefficient was copied into the wrong column.
+
+### SymPy is not installed
+
+If you see `ModuleNotFoundError: No module named 'sympy'`, use the current course JupyterLite environment or install the provided requirements in the local virtual environment:
+
+```bash
+python -m pip install -r requirements-jupyter.txt
+```
+
+### A negative current appears
+
+A negative current means the real current is opposite the arrow selected before solving. It is not automatically an error.
+
+## Check your work
+
+- [ ] The current arrows and $I_3=I_1-I_2$ are explained.
+- [ ] Both loop sign tables are present.
+- [ ] Every algebra line from KVL to standard form is visible.
+- [ ] The variable order and units are stated.
+- [ ] Both matrix rows are read back as equations.
+- [ ] NumPy produces the currents and residual vector.
+- [ ] SymPy produces exact fractional results.
+- [ ] $I_3$ is calculated and interpreted.
+- [ ] Original, released, numerical, and symbolic results are compared.
+- [ ] The reflection is answered in complete sentences.
+
+## Save and submit
+
+1. Restart the kernel.
+2. Run all required cells from top to bottom.
+3. Confirm that no required cell ends with an unexpected error.
+4. Save and download `studentnumber-lastname-kirchhoff-jupyter.ipynb`.
+5. Reopen the downloaded notebook and confirm that the Markdown, code, and output are present.
+6. Submit the `.ipynb` file through the assigned classroom system.
+
+## Summary and next lesson
+
+The circuit creates the equations. Standard form creates the matrix rows. NumPy gives a numerical solution, SymPy preserves exact algebra, and independent checks show whether the entered equations were solved consistently.
+
+The intentional keyword error, array-shape error, silent unit bug, parameter sweep, capacitors, and RC response are later checkpoints. They are not required tomorrow.

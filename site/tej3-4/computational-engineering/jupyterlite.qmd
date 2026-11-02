@@ -126,14 +126,15 @@ Check column names, units, missing values, and impossible values before interpre
 |---|---|---|
 | 1. Python as an Engineering Calculator | Variables, units, Ohm's law, and power | [`.ipynb`](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) |
 | 2. Series and Parallel Calculations | Equivalent resistance, currents, voltage drops, and checks | [`.ipynb`](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) |
-| 3. Kirchhoff Systems | NumPy matrices, coefficient order, substitution, and residuals | [`.ipynb`](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) |
+| 3A. Two Loops to a Matrix | Signed loop derivations, matrix rows, NumPy, SymPy, and verification | [`.ipynb`](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb) |
+| 3. Kirchhoff Systems | Documentation-driven debugging, residuals, and parameter investigation | [`.ipynb`](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) |
 | 4. Graph Electrical Relationships | Voltage-current and resistance-current plots | [`.ipynb`](../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) |
 | 5. Experimental Data Analysis | CSV import, prediction differences, graphs, and limitations | [`.ipynb`](../../assets/tej-computational/notebooks/05-experimental-data-analysis.ipynb) · [CSV](../../assets/tej-computational/data/circuit-measurements.csv) |
 | 6. Engineering Investigation | Choose a question, test it, troubleshoot, and explain evidence | [`.ipynb`](../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb) |
 | 7. RC, Op-Amps, and a Bridge to Calculus | Model transients, numerical slope and area, integration, differentiation, and optional XL741 evidence | [`.ipynb`](../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) |
 | 8. Optional Component Model Review | Compare resistor, capacitor, LED, transistor-switch, and op-amp models with explicit limitations; use only where review is needed | [`.ipynb`](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) |
 
-Download [all eight notebooks, the dataset, and local requirements as one ZIP](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
+Download [all nine notebooks, the dataset, and local requirements as one ZIP](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
 
 The notebooks use Python's standard library plus NumPy, pandas, and Matplotlib where the task requires them. They are designed for the Pyodide kernel in the official JupyterLite demonstration and for ordinary local JupyterLab with the supplied [requirements file](../../assets/tej-computational/requirements-jupyter.txt). A school deployment may provide a different kernel or package set.
 

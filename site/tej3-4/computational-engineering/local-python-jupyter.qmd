@@ -143,7 +143,7 @@ http://localhost:8888/lab?token=...
 
 Paste that URL into Chrome, Edge, or Firefox in Windows. WSL normally forwards Linux services to `localhost` on Windows, so the Windows browser can display the Jupyter server running inside Ubuntu. Do not share the token or bind the class server to a public network address.
 
-Open `notebooks/03-kirchhoff-systems.ipynb`, confirm that the selected kernel belongs to `.venv`, and run the working cells.
+Open `notebooks/03a-two-loop-to-matrix-bridge.ipynb`, confirm that the selected kernel belongs to `.venv`, and run the working cells before completing the student scaffold.
 
 To stop Jupyter, return to Ubuntu and press **Ctrl+C**. Confirm shutdown if asked. Then leave the environment with:
 

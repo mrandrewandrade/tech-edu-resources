@@ -1828,13 +1828,17 @@
       "lesson_order": 4,
       "route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "source": "tej3-4/computational-engineering/kirchhoff-jupyter-assignment.qmd",
-      "title": "Assignment: Verify Kirchhoff Equations with Jupyter",
-      "summary": "Verify a completed two-loop solution, document a NumPy repair, check residuals, and investigate a parameter change.",
-      "use": "The assignment turns completed KCL/KVL work into a reproducible computational model without introducing new circuit theory during independent work.",
+      "title": "Assignment: From Two Loops to a Matrix",
+      "summary": "Derive two signed KVL equations, arrange them in matrix form, and solve the same system numerically and symbolically.",
+      "use": "The guided bridge teaches the missing step between loop traversal and a reproducible computational solution without creating another five-question package.",
       "resources": [
         {
-          "label": "Kirchhoff Systems Notebook",
-          "url": "../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb"
+          "label": "Printable Two-Loop Guide",
+          "url": "../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf"
+        },
+        {
+          "label": "Two-Loop Matrix Notebook",
+          "url": "../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb"
         },
         {
           "label": "Notebook Bundle",

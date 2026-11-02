@@ -21,7 +21,8 @@ The bottom rail is normally the 0 V or ground reference, and higher-voltage node
 ## Class materials
 
 - [Teaching slides](https://docs.google.com/presentation/d/1WrkLYglw84qdaNbmFo1N80fFNo9uCr5nSOZ7JmsHgbw/edit)
-- [Assignment: Verify Kirchhoff Equations with Jupyter](../computational-engineering/kirchhoff-jupyter-assignment.qmd)
+- [Assignment: From Two Loops to a Matrix](../computational-engineering/kirchhoff-jupyter-assignment.qmd)
+- [Printable two-loop-to-matrix guide](../../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf)
 - [Make a copy of the current student problem set](https://docs.google.com/document/d/1qOS16EaUEUCnIGm16eN_7o76OlFKHrzABY3nfJ-v4i8/copy)
 - [TEJ Electronics Quick Reference](https://andrewandrade.ca/assets/TEJ-Electronics-Quick-Reference.pdf)
 - [Make a copy of the General Schematic and GUESS handout](https://docs.google.com/document/d/1RCkfqUT5U0FMKTOJ_ScyiDLmiGF-bCpyo-6y6Pm8ZUo/copy)
@@ -34,21 +35,22 @@ The bottom rail is normally the 0 V or ground reference, and higher-voltage node
 Watch ElectroBOOM101-008 together as the unit capstone rather than restarting the completed assignment. While watching, record one statement about the lumped-circuit model, one KCL statement, and one KVL statement. The teacher will then use the completed Question 4 equations to introduce standard form, the matrix equation $A\mathbf{x}=\mathbf{b}$, `numpy.linalg.solve`, negative-current interpretation, and residual verification. Predict each result before the live code runs. Monday is for explanation, prediction, and questions; the independent lab is Tuesday.
 :::
 
-### Tuesday: Jupyter verification and first debugging checkpoint
+### Tuesday: derive two loops, build the matrix, and solve two ways
 
-Open the [complete student assignment and submission instructions](../computational-engineering/kirchhoff-jupyter-assignment.qmd), then download the [Kirchhoff systems notebook](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb). Use one completed two-loop problem and its released teacher answer. This is not another KCL/KVL worksheet: it is a computational verification and investigation task.
+Open the [complete student assignment and submission instructions](../computational-engineering/kirchhoff-jupyter-assignment.qmd), use the [printable two-loop guide](../../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf), and download [Notebook 3A](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb). Use the completed Question 4 circuit and its released answer. This is not another KCL/KVL worksheet. It teaches the missing bridge from loop traversal to standard form and a matrix.
 
-1. Run the known-working demonstration before changing any code.
-2. Copy the two original equations, state the variable order and units, and construct $A$ and $\mathbf{b}$.
-3. Solve with Python, calculate $A\mathbf{x}-\mathbf{b}$, and compare the handwritten, teacher, and Python results.
-4. Complete the easy documentation task: repair one incorrect `numpy.round` keyword using `help()`, `?`, or the official documentation.
-5. Use the [technical help-request template](../computational-engineering/finding-documentation-and-asking-for-help.qmd) if a problem remains: include the goal, exact symptom, minimal code, environment, attempts, source, hypothesis, and one focused question.
-6. Predict what will happen when one source value changes, then run and interpret the parameter sweep.
+1. Define $I_1$, $I_2$, and the shared current $I_3=I_1-I_2$.
+2. Walk around Loop 1 and explain every KVL sign before rearranging Equation 1.
+3. Walk around Loop 2 and explain why the shared-resistor sign changes before rearranging Equation 2.
+4. State the variable order and units, build $A$ and $\mathbf{b}$, and read both matrix rows back as equations.
+5. Solve numerically with `numpy.linalg.solve` and report the residual vector.
+6. Solve symbolically with `sympy.solve`, preserve the exact fractions, and calculate $I_3$.
+7. Compare the original, released, numerical, and symbolic results, then complete the reflection.
 
-**Tuesday submission:** the completed `.ipynb` file through the working KCL/KVL verification, Stage 1 documentation task, comparison, prediction, parameter investigation, and assigned reflections. Stage 1 evidence includes the original symptom, search terms, documentation source, requirement found, minimal repair, and verification. No new circuit theory is introduced while the regular teacher is absent.
+**Tuesday submission:** one completed `.ipynb` file containing both full loop derivations, the matrix, NumPy results and residuals, SymPy exact results, the comparison table, and the assigned reflection. No physical lab or new circuit topology is required while the regular teacher is absent.
 
 ::: {.callout-note title="Later debugging lessons"}
-Do not compress the complete debugging ladder into Tuesday. A later lesson uses the non-square `numpy.linalg.solve` input to practise exception-driven shape diagnosis. Another later lesson uses the silent factor-of-1000 unit bug to show that code can run and residuals can pass while the reported engineering answer is still wrong.
+Do not compress the debugging ladder into Tuesday. Notebook 3 later uses a keyword error, a non-square `numpy.linalg.solve` input, and a silent factor-of-1000 unit bug. The parameter sweep is also later. Tomorrow is only the two-loop derivation, matrix, numerical solution, symbolic solution, and verification.
 :::
 
 ## Kirchhoff's current law
