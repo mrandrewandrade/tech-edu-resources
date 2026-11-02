@@ -21,7 +21,7 @@ execute: {enabled: false}
 
 Two loops share one component, so the current through the shared component depends on both loop currents. A matrix does not replace the circuit reasoning. It organizes the equations after the arrows, signs, units, and KVL equations are correct.
 
-This bridge uses Question 4 from the completed five-question KCL/KVL package. It is a guided computational activity, not another five-question electronics package.
+This bridge has two parts. Question 4 is the fully worked teaching example. Question 5 is the independent transfer task: the helper questions reveal the process, but not the completed coefficients, matrix, or currents.
 
 ## What you will make
 
@@ -45,7 +45,7 @@ Submit one Jupyter notebook showing this complete chain:
 
 1. Download the [printable two-loop-to-matrix guide](../../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf).
 2. Download [Notebook 3A: From Two Loops to a Matrix](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb).
-3. Keep your returned Question 4 work and released answer available for comparison.
+3. Keep your returned Question 4 and Question 5 work available. Use the released Question 4 answer for comparison, but do not copy the released Question 5 answer into the scaffold.
 4. Choose a Jupyter route:
    - [use JupyterLite in a browser](jupyterlite.qmd); or
    - [run Jupyter locally using WSL, Windows, macOS, or Linux](local-python-jupyter.qmd).
@@ -66,7 +66,11 @@ Example: `123456789-Smith-kirchhoff-jupyter.ipynb`. Keep the `.ipynb` ending.
 This checkpoint is a computational verification activity. No physical lab is required tomorrow.
 :::
 
-## 1. Define the three currents
+## Part A: Worked Question 4
+
+Follow the complete example once. Each line performs one algebra move, so you can reuse the method without reusing the numbers.
+
+### 1. Define the three currents
 
 Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the shared resistor.
 
@@ -84,7 +88,7 @@ $$
 
 In the first notebook Markdown cell, describe all three current directions in words. Explain what a negative value of $I_3$ would mean.
 
-## 2. Derive Equation 1 from Loop 1
+### 2. Derive Equation 1 from Loop 1
 
 Use the printable guide and record each signed KVL term:
 
@@ -101,7 +105,7 @@ $$
 $$
 
 $$
-V_{R1}=I_1R_1=3I_1,qquad V_{R3}=I_3R_3=2I_3,
+V_{R1}=I_1R_1=3I_1,\qquad V_{R3}=I_3R_3=2I_3,
 $$
 
 $$
@@ -130,7 +134,7 @@ $$
 
 The second-last line subtracts $10$ from both sides. The final line multiplies the complete equation by $-1$ so the leading coefficient is positive.
 
-## 3. Derive Equation 2 from Loop 2
+### 3. Derive Equation 2 from Loop 2
 
 Loop 2 travels through the shared resistor against the defined direction of $I_3$. Its resistor term is therefore positive.
 
@@ -147,7 +151,7 @@ $$
 $$
 
 $$
-V_{R2}=I_2R_2=5I_2,qquad V_{R3}=I_3R_3=2I_3,
+V_{R2}=I_2R_2=5I_2,\qquad V_{R3}=I_3R_3=2I_3,
 $$
 
 $$
@@ -180,7 +184,7 @@ $$
 
 Multiplying the complete equation by $-1$ does not change its solution.
 
-## 4. Build the matrix
+### 4. Build the matrix
 
 State the variable order before entering any coefficients:
 
@@ -219,7 +223,7 @@ Read the top row as Equation 1 and the bottom row as Equation 2. If either read-
 
 Use the row-reading cells in Notebook 3A to turn both rows back into equations. Do not continue until they match the two boxed equations above.
 
-## 5. Solve with numerical linear algebra
+### 5. Solve with numerical linear algebra
 
 Run the NumPy cells using:
 
@@ -235,7 +239,7 @@ residual_V = A @ currents_mA - b
 
 Report $I_1$, $I_2$, and the two residuals with units. Explain what a residual near zero proves and what it does not prove.
 
-## 6. Solve symbolically
+### 6. Solve symbolically
 
 Run the SymPy cells. Keep the exact fractional results visible before converting them to decimals.
 
@@ -254,7 +258,7 @@ exact_solution = sp.solve(
 
 Calculate $I_3=I_1-I_2$ symbolically and numerically.
 
-## 7. Compare and verify
+### 7. Compare and verify
 
 Complete the notebook comparison table:
 
@@ -273,6 +277,75 @@ Then verify:
 - $I_3=I_1-I_2$;
 - the NumPy residual vector.
 
+## Part B: Build Question 5 without being given the matrix
+
+Use your original Question 5 circuit and work through the prompts below. The symbols $a_{11}$, $a_{12}$, $a_{21}$, $a_{22}$, $b_1$, and $b_2$ are placeholders. Replace them with coefficients obtained from **your own algebra**.
+
+::: {.callout-warning title="Do not start with the released answer"}
+The purpose is to translate a circuit into a system. Complete the two standard-form equations, coefficient table, matrix, and row read-back before comparing currents with the released answer.
+:::
+
+### B1. Define the currents before doing algebra
+
+Answer these questions in a Markdown cell:
+
+1. Which direction did you assign to $I_1$?
+2. Which direction did you assign to $I_2$?
+3. Which direction did you assign to the shared-branch current $I_3$?
+4. Is your shared-current relationship $I_3=I_1-I_2$ or $I_3=I_2-I_1$? Why does it match your arrow?
+
+### B2. Rearrange both loop equations one move at a time
+
+For **each** loop, show all seven lines below. Do not combine multiple algebra moves on one line.
+
+1. Write signed KVL using resistor-voltage symbols such as $V_{R1}$.
+2. Replace every resistor voltage with $IR$.
+3. Substitute your expression for $I_3$.
+4. Distribute the resistance coefficient through the bracket.
+5. Reorder the terms into the variable order $[I_1,I_2]$.
+6. Combine like terms.
+7. Move the constant to the right side. If you multiply by $-1$, multiply **every** term.
+
+Your final equations must have this form:
+
+$$
+\boxed{a_{11}I_1+a_{12}I_2=b_1}
+$$
+
+$$
+\boxed{a_{21}I_1+a_{22}I_2=b_2}.
+$$
+
+### B3. Extract coefficients instead of guessing them
+
+Copy this table into the notebook and replace every blank:
+
+| Question 5 equation | coefficient of $I_1$ | coefficient of $I_2$ | right side |
+|---|---:|---:|---:|
+| Equation 1 |  |  |  |
+| Equation 2 |  |  |  |
+
+Now construct the matrix using the same variable order in both rows:
+
+$$
+\underbrace{\begin{bmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{bmatrix}}_{A}
+\underbrace{\begin{bmatrix}I_1\\I_2\end{bmatrix}}_{\mathbf{x}}
+=
+\underbrace{\begin{bmatrix}b_1\\b_2\end{bmatrix}}_{\mathbf{b}}.
+$$
+
+Replace the six placeholders with your Question 5 numbers. Then expand the top matrix row back into Equation 1 and the bottom row back into Equation 2. The read-back equations must match your boxed equations exactly.
+
+### B4. Use Jupyter as a check, not as the source of the equations
+
+Enter your coefficients only after completing B1-B3. Use the Question 5 scaffold in Notebook 3A to:
+
+- print both rows beside the equations they represent;
+- solve $A\mathbf{x}=\mathbf{b}$ numerically;
+- calculate the shared current using your chosen current definition;
+- calculate $A\mathbf{x}-\mathbf{b}$;
+- compare with the released answer only after the residual and row read-back checks pass.
+
 ## Progressive hints
 
 ::: {.callout-tip collapse="true" title="Hint 1: concept clue"}
@@ -285,6 +358,10 @@ Search `numpy.linalg.solve A shape` or `SymPy solve simultaneous equations`. Use
 
 ::: {.callout-tip collapse="true" title="Hint 3: technical clue"}
 With variable order $[I_1,I_2]$, use Row 1 $[5,-2]$, Row 2 $[-2,7]$, and right side $[10,6]$. Read both rows back as equations before solving.
+:::
+
+::: {.callout-tip collapse="true" title="Question 5 hint: matrix structure, not the answer"}
+The first boxed equation supplies $[a_{11},a_{12}]$ and $b_1$. The second supplies $[a_{21},a_{22}]$ and $b_2$. Keep the order $[I_1,I_2]$ in both rows. This tells you where coefficients go without revealing their values.
 :::
 
 ## Common issues
@@ -320,6 +397,8 @@ A negative current means the real current is opposite the arrow selected before 
 - [ ] SymPy produces exact fractional results.
 - [ ] $I_3$ is calculated and interpreted.
 - [ ] Original, released, numerical, and symbolic results are compared.
+- [ ] Question 5 includes both seven-line rearrangements, two boxed standard-form equations, a completed coefficient table, and a matrix row read-back.
+- [ ] Question 5 is solved only after its matrix has been derived.
 - [ ] The reflection is answered in complete sentences.
 
 ## Save and submit
@@ -333,6 +412,6 @@ A negative current means the real current is opposite the arrow selected before 
 
 ## Summary and next lesson
 
-The circuit creates the equations. Standard form creates the matrix rows. NumPy gives a numerical solution, SymPy preserves exact algebra, and independent checks show whether the entered equations were solved consistently.
+The circuit creates the equations. Standard form creates the matrix rows. Question 4 demonstrates the complete process; Question 5 proves that you can transfer it without being handed the matrix. NumPy gives a numerical solution, SymPy preserves exact algebra, and independent checks show whether the entered equations were solved consistently.
 
 The intentional keyword error, array-shape error, silent unit bug, parameter sweep, capacitors, and RC response are later checkpoints. They are not required tomorrow.

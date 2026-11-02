@@ -416,13 +416,14 @@ def notebooks() -> dict[str, dict[str, object]]:
     n3a = notebook(
         "Notebook 3A: From Two Loops to a Matrix",
         "Derive two KVL equations, arrange them as a matrix, and solve the same system numerically and symbolically.",
-        "KCL, KVL, resistor voltage drops, signed loop traversal, and the completed Question 4 circuit.",
+        "KCL, KVL, resistor voltage drops, signed loop traversal, and the completed Question 4 and Question 5 circuits.",
         [
             md(
                 "## Before you start\n\n"
                 "Use the [printable two-loop-to-matrix guide](https://andrewandrade.ca/tech-edu-resources/assets/electronics/handouts/two-loop-to-matrix-bridge.pdf) "
-                "beside this notebook. Keep your returned Question 4 work and released answer available for comparison.\n\n"
-                "**Tomorrow's workflow:** arrows $\\rightarrow$ two KVL equations $\\rightarrow$ standard form "
+                "beside this notebook. Keep your returned Question 4 and Question 5 work available. Use Question 4 as the worked model, "
+                "then derive Question 5 without copying its released answer.\n\n"
+                "**Workflow:** arrows $\\rightarrow$ two KVL equations $\\rightarrow$ standard form "
                 "$\\rightarrow A\\mathbf{x}=\\mathbf{b}$ $\\rightarrow$ NumPy $\\rightarrow$ SymPy $\\rightarrow$ checks.\n\n"
                 "> This is a guided computational bridge. The intentional debugging stages and parameter sweep in Notebook 3 are later lessons.\n"
             ),
@@ -545,8 +546,9 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "assert np.allclose([float(I1_exact), float(I2_exact)], currents_demo_mA)\n"
             ),
             md(
-                "## Tomorrow's assignment\n\n"
-                "**The problem:** show how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.\n\n"
+                "## Assignment overview\n\n"
+                "**Part A:** show how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.\n\n"
+                "**Part B:** transfer the same process to Question 5 using helper questions that do not reveal its matrix or currents.\n\n"
                 "**The essential skill:** keep the shared-current definition and variable order consistent.\n\n"
                 "**The challenge:** explain every sign instead of copying the finished matrix.\n\n"
                 "**The stumbling block:** the Loop 2 shared-resistor sign changes because the loop traversal is against $I_3$.\n\n"
@@ -609,6 +611,69 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "| $I_3$ | ___ | ___ | ___ | ___ | ___ |\n"
             ),
             md(
+                "## Part B - transfer the method to Question 5\n\n"
+                "Do not begin with the released Question 5 answer. Your job is to generate the matrix from the circuit and algebra. "
+                "The symbols $a_{11}$ through $a_{22}$ and $b_1,b_2$ below are placeholders, not Question 5 values.\n\n"
+                "### B1. Current definitions\n\n"
+                "Replace each prompt with a complete answer:\n\n"
+                "1. What directions did you choose for $I_1$, $I_2$, and $I_3$?\n"
+                "2. Is $I_3=I_1-I_2$ or $I_3=I_2-I_1$ for your arrows? Why?\n"
+                "3. Which terms are rises and which are drops in Loop 1?\n"
+                "4. Which terms are rises and which are drops in Loop 2?\n\n"
+                "### B2. Seven algebra lines for each loop\n\n"
+                "For **each** loop, show: (1) signed KVL with resistor-voltage symbols, (2) every $V_R=IR$ substitution, "
+                "(3) the shared-current substitution, (4) distribution, (5) reordering into $[I_1,I_2]$, "
+                "(6) collection of like terms, and (7) moving the constant to the right.\n\n"
+                "Finish with two boxed equations in this structure:\n\n"
+                "$$\\boxed{a_{11}I_1+a_{12}I_2=b_1}$$\n\n"
+                "$$\\boxed{a_{21}I_1+a_{22}I_2=b_2}.$$\n"
+            ),
+            md(
+                "### B3. Question 5 coefficient table and matrix\n\n"
+                "Replace every blank from your two boxed equations.\n\n"
+                "| Equation | coefficient of $I_1$ | coefficient of $I_2$ | right side |\n"
+                "|:--|--:|--:|--:|\n"
+                "| Equation 1 | ___ | ___ | ___ |\n"
+                "| Equation 2 | ___ | ___ | ___ |\n\n"
+                "Use the same variable order in both rows:\n\n"
+                "$$\\underbrace{\\begin{bmatrix}a_{11}&a_{12}\\\\a_{21}&a_{22}\\end{bmatrix}}_{A}"
+                "\\underbrace{\\begin{bmatrix}I_1\\\\I_2\\end{bmatrix}}_{\\mathbf{x}}"
+                "=\\underbrace{\\begin{bmatrix}b_1\\\\b_2\\end{bmatrix}}_{\\mathbf{b}}.$$\n\n"
+                "Replace the six placeholders with your Question 5 values. Expand the top row back into Equation 1 and the bottom row "
+                "back into Equation 2. Do not run a solver until both read-back equations match your boxed equations.\n"
+            ),
+            code(
+                "# Question 5: enter coefficients only after completing the algebra and row read-back.\n"
+                "q5_ready = False\n\n"
+                "q5_A = np.array([[None, None],\n"
+                "                 [None, None]], dtype=object)  # kOhm\n"
+                "q5_b = np.array([None, None], dtype=object)    # V\n\n"
+                "# Use +1.0 when I3 = I1 - I2; use -1.0 when I3 = I2 - I1.\n"
+                "q5_shared_sign = None\n\n"
+                "if q5_ready:\n"
+                "    q5_A = q5_A.astype(float)\n"
+                "    q5_b = q5_b.astype(float)\n"
+                "    assert q5_shared_sign in (-1.0, 1.0)\n"
+                "    print('Variable order: [I1, I2]')\n"
+                "    print('Row 1 ->', q5_A[0, 0], 'I1 +', q5_A[0, 1], 'I2 =', q5_b[0])\n"
+                "    print('Row 2 ->', q5_A[1, 0], 'I1 +', q5_A[1, 1], 'I2 =', q5_b[1])\n"
+                "else:\n"
+                "    print('Complete B1-B3, replace every None, then set q5_ready = True.')\n"
+            ),
+            code(
+                "# Question 5: solve only after the two printed rows match the boxed equations.\n"
+                "if q5_ready:\n"
+                "    q5_currents_mA = np.linalg.solve(q5_A, q5_b)\n"
+                "    q5_I3_mA = q5_shared_sign * (q5_currents_mA[0] - q5_currents_mA[1])\n"
+                "    q5_residual_V = q5_A @ q5_currents_mA - q5_b\n"
+                "    print('Question 5 I1, I2 (mA):', q5_currents_mA)\n"
+                "    print('Question 5 I3 (mA):', q5_I3_mA)\n"
+                "    print('Question 5 residuals (V):', q5_residual_V)\n"
+                "    assert np.allclose(q5_residual_V, 0.0, atol=1e-10)\n"
+                "else:\n"
+                "    print('Solver skipped: Question 5 matrix is not ready yet.')\n"
+            ),
+            md(
                 "## Independent challenge and progressive hints\n\n"
                 "**Challenge:** read both matrix rows back as equations, then explain why a solver can produce a clean result even when the copied coefficients represent the wrong circuit.\n\n"
                 "### Hint 1 - concept clue\n\nThe shared resistor carries $I_1-I_2$ because the mesh currents oppose each other there.\n\n"
@@ -631,6 +696,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "3. Why did SymPy show fractions while NumPy showed decimals?\n"
                 "4. What did the residual verify? What could it not verify?\n"
                 "5. What step changed your understanding of the two-loop circuit?\n"
+                "6. Which Question 5 helper question caught an error before the solver ran?\n"
             ),
             md(
                 "## Save and submit\n\n"
@@ -639,6 +705,9 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "- [ ] NumPy currents and residuals are visible.\n"
                 "- [ ] SymPy exact fractions and $I_3$ are visible.\n"
                 "- [ ] The comparison table and reflections are complete.\n"
+                "- [ ] Question 5 includes both seven-line rearrangements and two boxed standard-form equations.\n"
+                "- [ ] The Question 5 coefficient table, matrix, and two row read-backs are complete.\n"
+                "- [ ] Question 5 was solved only after the matrix was derived and checked.\n"
                 "- [ ] Restart the kernel and run all required cells from top to bottom.\n"
                 "- [ ] Save and download `studentnumber-lastname-kirchhoff-jupyter.ipynb`.\n"
                 "- [ ] Reopen the downloaded notebook before submitting it.\n"

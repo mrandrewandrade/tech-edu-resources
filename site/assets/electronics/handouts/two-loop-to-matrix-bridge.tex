@@ -98,7 +98,8 @@ You will submit one notebook showing this complete chain:
 \sectiontitle{Before you start}
 
 \begin{itemize}
-  \item Use your returned Question 4 work and the released answer for comparison.
+  \item Use Question 4 as the worked model, then transfer the method to Question 5.
+  \item Keep the released Question 5 answer closed until your matrix rows read back correctly.
   \item Download the course notebook from the assignment page.
   \item Keep resistance in $\kiloohm$, voltage in V, and current in mA.
   \item This checkpoint is a computational verification activity. No physical lab is required.
@@ -424,9 +425,76 @@ A near-zero residual proves that the calculated currents satisfy the equations e
 % ---------------------------------------------------------------------------
 % Page 7
 % ---------------------------------------------------------------------------
-\sectiontitle{Tomorrow's assignment}
+\sectiontitle{Part B: build the Question 5 matrix yourself}
 
-\textbf{The problem:} show how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.
+\textbf{The goal:} use the same method on Question 5 without being given its coefficients, completed matrix, or currents.
+
+\steptitle{10}{Define the currents and signs}
+
+In the notebook, answer before doing algebra:
+\begin{enumerate}
+  \item What directions did you choose for $I_1$, $I_2$, and $I_3$?
+  \item Is your shared-current equation $I_3=I_1-I_2$ or $I_3=I_2-I_1$? Why?
+  \item Which source and resistor terms are rises? Which are drops?
+  \item Why does the shared-resistor sign differ between the two loop walks?
+\end{enumerate}
+
+\steptitle{11}{Show seven algebra lines for each loop}
+
+For \textbf{each} loop, show one move per line:
+\begin{enumerate}
+  \item signed KVL using resistor-voltage symbols;
+  \item replace every resistor voltage with $IR$;
+  \item substitute the expression for $I_3$;
+  \item distribute through the bracket;
+  \item reorder into $[I_1,I_2]$;
+  \item combine like terms;
+  \item move the constant to the right side.
+\end{enumerate}
+
+Your two boxed equations should have the structure
+\[
+\boxed{a_{11}I_1+a_{12}I_2=b_1},
+\qquad
+\boxed{a_{21}I_1+a_{22}I_2=b_2}.
+\]
+
+\steptitle{12}{Extract coefficients and prove the matrix matches}
+
+\begin{center}
+\begin{tabular}{c c c c}
+\toprule
+Question 5 & coefficient of $I_1$ & coefficient of $I_2$ & right side \\
+\midrule
+Equation 1 & \rule{0.75in}{0.4pt} & \rule{0.75in}{0.4pt} & \rule{0.75in}{0.4pt} \\
+Equation 2 & \rule{0.75in}{0.4pt} & \rule{0.75in}{0.4pt} & \rule{0.75in}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\[
+\underbrace{\begin{bmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{bmatrix}}_{A}
+\underbrace{\begin{bmatrix}I_1\\I_2\end{bmatrix}}_{\mathbf{x}}
+=
+\underbrace{\begin{bmatrix}b_1\\b_2\end{bmatrix}}_{\mathbf{b}}
+\]
+
+Replace the six placeholders with your numbers. Read the top row back as Equation 1 and the bottom row as Equation 2. Only then use Jupyter to solve and compare with the released answer.
+
+\keybox{%
+The helper questions reveal the method, not the answer. Your algebra must generate the six numbers placed into $A$ and $\mathbf{b}$.
+}
+
+\newpage
+
+% ---------------------------------------------------------------------------
+% Page 8
+% ---------------------------------------------------------------------------
+\sectiontitle{Assignment and submission}
+
+\textbf{Part A:} explain how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.
+
+\textbf{Part B:} use the helper questions to derive the Question 5 equations and matrix without copying the completed answer.
 
 \textbf{The essential skill:} keep the shared-current definition and variable order consistent.
 
@@ -450,6 +518,8 @@ A near-zero residual proves that the calculated currents satisfy the equations e
   \item Solve the same equations with `sympy.solve` and report exact fractions.
   \item Calculate $I_3$ and compare all three currents with the released answer.
   \item Answer the notebook reflection in complete sentences.
+  \item For Question 5, show both seven-line rearrangements, the coefficient table, the completed matrix, and both row read-backs.
+  \item Solve Question 5 only after the matrix is justified; then compare with the released answer.
 \end{enumerate}
 
 \subsection*{Progressive hints}
