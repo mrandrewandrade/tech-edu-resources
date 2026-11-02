@@ -73,6 +73,12 @@ Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the s
 The currents oppose each other in the shared branch:
 
 $$
+I_1-I_2-I_3=0,
+$$
+
+so
+
+$$
 I_3=I_1-I_2.
 $$
 
@@ -88,7 +94,15 @@ Use the printable guide and record each signed KVL term:
 | $R_1=3.0\,\mathrm{k\Omega}$ | $-3I_1$ | travel with $I_1$ |
 | $R_3=2.0\,\mathrm{k\Omega}$ | $-2I_3$ | travel with the defined $I_3$ |
 
-Show all four lines in the notebook:
+Do not replace the resistor-voltage symbols with numbers in one jump. Show the complete chain:
+
+$$
++10-V_{R1}-V_{R3}=0,
+$$
+
+$$
+V_{R1}=I_1R_1=3I_1,qquad V_{R3}=I_3R_3=2I_3,
+$$
 
 $$
 +10-3I_1-2I_3=0,
@@ -99,12 +113,22 @@ $$
 $$
 
 $$
++10-3I_1-2I_1+2I_2=0,
+$$
+
+$$
 +10-5I_1+2I_2=0,
+$$
+
+$$
+-5I_1+2I_2=-10,
 $$
 
 $$
 \boxed{5I_1-2I_2=10}.
 $$
+
+The second-last line subtracts $10$ from both sides. The final line multiplies the complete equation by $-1$ so the leading coefficient is positive.
 
 ## 3. Derive Equation 2 from Loop 2
 
@@ -116,7 +140,15 @@ Loop 2 travels through the shared resistor against the defined direction of $I_3
 | $R_2=5.0\,\mathrm{k\Omega}$ | $-5I_2$ | travel with $I_2$ |
 | $R_3=2.0\,\mathrm{k\Omega}$ | $+2I_3$ | travel against the defined $I_3$ |
 
-Show all five lines:
+Again, begin with resistor-voltage symbols and show one algebra move per line:
+
+$$
++6-V_{R2}+V_{R3}=0,
+$$
+
+$$
+V_{R2}=I_2R_2=5I_2,qquad V_{R3}=I_3R_3=2I_3,
+$$
 
 $$
 +6-5I_2+2I_3=0,
@@ -124,6 +156,14 @@ $$
 
 $$
 +6-5I_2+2(I_1-I_2)=0,
+$$
+
+$$
++6-5I_2+2I_1-2I_2=0,
+$$
+
+$$
++6+2I_1-5I_2-2I_2=0,
 $$
 
 $$
@@ -164,13 +204,31 @@ $$
 \underbrace{\begin{bmatrix}10\\6\end{bmatrix}}_{\mathbf{b}\,[\mathrm{V}]}.
 $$
 
-Use the row-reading cells in Notebook 3 to turn both rows back into equations. Do not continue until they match the two boxed equations above.
+The matrix multiplication is only a compact way to write the same two row equations:
+
+$$
+\begin{bmatrix}
+5I_1+(-2)I_2\\
+(-2)I_1+7I_2
+\end{bmatrix}
+=
+\begin{bmatrix}10\\6\end{bmatrix}.
+$$
+
+Read the top row as Equation 1 and the bottom row as Equation 2. If either read-back equation differs from the boxed KVL equation, fix the matrix before calling a solver.
+
+Use the row-reading cells in Notebook 3A to turn both rows back into equations. Do not continue until they match the two boxed equations above.
 
 ## 5. Solve with numerical linear algebra
 
 Run the NumPy cells using:
 
 ```python
+A = np.array([
+    [ 5.0, -2.0],  # Equation 1 coefficients
+    [-2.0,  7.0],  # Equation 2 coefficients
+])
+b = np.array([10.0, 6.0])
 currents_mA = np.linalg.solve(A, b)
 residual_V = A @ currents_mA - b
 ```

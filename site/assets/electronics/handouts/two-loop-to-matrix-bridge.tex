@@ -4,7 +4,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{amsmath,amssymb,array,booktabs,enumitem,graphicx,tabularx,xcolor}
 \usepackage[colorlinks=true,linkcolor=TEJBlue,urlcolor=TEJBlue]{hyperref}
-\usepackage{fancyhdr}
+\usepackage{fancyhdr,lastpage}
 
 \definecolor{TEJNavy}{HTML}{1E2B55}
 \definecolor{TEJBlue}{HTML}{1769AA}
@@ -17,7 +17,7 @@
 \fancyhf{}
 \lhead{\color{TEJNavy}\small TEJ Electronics}
 \rhead{\color{TEJNavy}\small Two Loops to a Matrix}
-\cfoot{\color{TEJNavy}\small Page \thepage\ of 7}
+\cfoot{\color{TEJNavy}\small Page \thepage\ of \pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\headrule}{\hbox to\headwidth{\color{TEJRule}\leaders\hrule height \headrulewidth\hfill}}
 
@@ -122,7 +122,7 @@ For the completed Question 4 circuit, use clockwise mesh currents $I_1$ and $I_2
 \keybox{%
 \centering
 \Large
-$I_3=I_1-I_2$
+$I_1-I_2-I_3=0\quad\Longrightarrow\quad I_3=I_1-I_2$
 \par\smallskip
 \normalsize This is KCL at the shared branch. It fixes the meaning of every later sign.
 }
@@ -182,7 +182,15 @@ $R_3=2.0\,\kiloohm$ & $-2I_3$ & travel with the defined $I_3$ \\
 \end{tabular}
 \end{center}
 
-\textbf{Write KVL:}
+\textbf{Write the voltage changes before substituting Ohm's law:}
+\[
++10-V_{R1}-V_{R3}=0
+\]
+
+\textbf{Replace each resistor voltage with $IR$:}
+\[
+V_{R1}=I_1R_1=3I_1,\qquad V_{R3}=I_3R_3=2I_3
+\]
 \[
 +10-3I_1-2I_3=0
 \]
@@ -192,14 +200,19 @@ $R_3=2.0\,\kiloohm$ & $-2I_3$ & travel with the defined $I_3$ \\
 +10-3I_1-2(I_1-I_2)=0
 \]
 
-\textbf{Expand the bracket:}
+\textbf{Distribute $-2$ to both terms in the bracket:}
 \[
 +10-3I_1-2I_1+2I_2=0
 \]
 
-\textbf{Collect like terms and move the source to the right:}
+\textbf{Collect the two $I_1$ terms:}
 \[
 +10-5I_1+2I_2=0
+\]
+
+\textbf{Subtract 10 from both sides, then multiply every term by $-1$:}
+\[
+-5I_1+2I_2=-10
 \quad\Longrightarrow\quad
 \boxed{5I_1-2I_2=10}
 \]
@@ -233,7 +246,15 @@ $R_3=2.0\,\kiloohm$ & $+2I_3$ & travel against the defined $I_3$ \\
 \end{tabular}
 \end{center}
 
-\textbf{Write KVL:}
+\textbf{Write the voltage changes before substituting Ohm's law:}
+\[
++6-V_{R2}+V_{R3}=0
+\]
+
+\textbf{Replace each resistor voltage with $IR$:}
+\[
+V_{R2}=I_2R_2=5I_2,\qquad V_{R3}=I_3R_3=2I_3
+\]
 \[
 +6-5I_2+2I_3=0
 \]
@@ -243,10 +264,20 @@ $R_3=2.0\,\kiloohm$ & $+2I_3$ & travel against the defined $I_3$ \\
 +6-5I_2+2(I_1-I_2)=0
 \]
 
-\textbf{Expand and collect:}
+\textbf{Distribute $+2$ to both terms in the bracket:}
 \[
 +6-5I_2+2I_1-2I_2=0
+\]
+
+\textbf{Reorder the current terms, then combine the $I_2$ terms:}
+\[
++6+2I_1-5I_2-2I_2=0
 \quad\Longrightarrow\quad
++6+2I_1-7I_2=0
+\]
+
+\textbf{Subtract 6 from both sides:}
+\[
 2I_1-7I_2=-6
 \]
 
@@ -259,10 +290,8 @@ $R_3=2.0\,\kiloohm$ & $+2I_3$ & travel against the defined $I_3$ \\
 The second matrix row is $[-2,\,7]$ and $b_2=6$. Multiplying a complete equation by $-1$ does not change its solution.
 }
 
-\newpage
-
 % ---------------------------------------------------------------------------
-% Page 5
+% Page 5 continues after the detailed Loop 2 derivation
 % ---------------------------------------------------------------------------
 \sectiontitle{Put both equations into one matrix}
 
@@ -299,6 +328,18 @@ I_1\\I_2
 10\\6
 \end{bmatrix}}_{\mathbf{b}\;[\mathrm{V}]}
 \]
+
+\textbf{Expand the matrix product row by row:}
+\[
+\begin{bmatrix}
+5I_1+(-2)I_2\\
+(-2)I_1+7I_2
+\end{bmatrix}
+=
+\begin{bmatrix}10\\6\end{bmatrix}
+\]
+
+The top row is Equation 1. The bottom row is Equation 2. If either row reads back differently from the KVL equation, fix the matrix before solving.
 
 \keybox{%
 \centering

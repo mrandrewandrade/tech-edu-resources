@@ -8,15 +8,20 @@
 \definecolor{TEJRule}{HTML}{B8C2D1}
 \begin{document}
 \begin{tikzpicture}[text=TEJNavy]
-  \node[anchor=west,font=\bfseries\LARGE,text=TEJOrange] at (0,4.25) {LOOP 2 KVL};
-  \node[anchor=west,font=\large] at (0.15,3.45)
-    {source rise \hspace{0.45cm} $R_2$ drop \hspace{0.45cm} opposite shared current};
-  \node[anchor=west,font=\huge] at (0.15,2.58)
-    {$+6\; -\;5I_2\; +\;2(I_1-I_2)=0$};
-  \draw[TEJRule,line width=1.2pt] (0.15,1.95) -- (9.8,1.95);
-  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,1.28)
-    {Collect $I_1$ and $I_2$ terms};
-  \node[anchor=west,font=\Huge] at (1.62,0.38)
-    {$\boxed{-2I_1+7I_2=6}$};
+  \node[anchor=west,font=\bfseries\LARGE,text=TEJOrange] at (0,7.35) {LOOP 2: ONE ALGEBRA MOVE PER LINE};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,6.55) {1. Write signed KVL};
+  \node[anchor=west,font=\huge] at (4.25,6.55) {$6-5I_2+2I_3=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,5.55) {2. Substitute $I_3$};
+  \node[anchor=west,font=\huge] at (4.25,5.55) {$6-5I_2+2(I_1-I_2)=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,4.55) {3. Distribute $+2$};
+  \node[anchor=west,font=\huge] at (4.25,4.55) {$6-5I_2+2I_1-2I_2=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,3.55) {4. Reorder terms};
+  \node[anchor=west,font=\huge] at (4.25,3.55) {$6+2I_1-5I_2-2I_2=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,2.55) {5. Combine like terms};
+  \node[anchor=west,font=\huge] at (4.25,2.55) {$6+2I_1-7I_2=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,1.55) {6. Subtract 6};
+  \node[anchor=west,font=\huge] at (4.25,1.55) {$2I_1-7I_2=-6$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,0.55) {7. Multiply by $-1$};
+  \node[anchor=west,font=\Huge] at (4.25,0.55) {$\boxed{-2I_1+7I_2=6}$};
 \end{tikzpicture}
 \end{document}
