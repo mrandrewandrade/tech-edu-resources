@@ -122,7 +122,7 @@
 .tej-current-visual .ter-circuit-figure {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
 }
 
