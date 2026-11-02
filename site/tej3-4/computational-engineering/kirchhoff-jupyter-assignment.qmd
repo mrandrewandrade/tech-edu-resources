@@ -111,6 +111,29 @@ Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the s
 
 ### 2. Derive Equation 1 from Loop 1
 
+:::: {.tej-loop-equation-visual}
+<figure class="ter-circuit-figure" id="fig-question4-loop1-isolated">
+<img src="../../assets/electronics/schematics/kirchhoff-q4-loop1-clean.svg" alt="Loop 1 isolated from the two-loop circuit. The 10 volt source is on the left, the 3 kiloohm resistor is on top, and the shared 2 kiloohm resistor is on the right. I3 points downward beside the shared resistor." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-question4-loop1-isolated">Figure 2.</a> Isolate Loop 1 before writing its KVL equation. Only the three components crossed by this loop are shown. <a class="ter-figure-anchor" href="#fig-question4-loop1-isolated" aria-label="Link to Figure 2">#</a></figcaption>
+</figure>
+
+::: {.tej-loop-sign-card}
+#### Turn the circuit into signed terms
+
+<div class="tej-loop-sign-list" role="list" aria-label="Loop 1 signed KVL terms">
+  <div class="tej-loop-sign-row is-rise" role="listitem"><span class="tej-loop-sign-symbol">$V_{S1}$</span><span>source rise</span><strong>$+10$</strong></div>
+  <div class="tej-loop-sign-row is-drop" role="listitem"><span class="tej-loop-sign-symbol">$R_1$</span><span>with $I_1$</span><strong>$-3I_1$</strong></div>
+  <div class="tej-loop-sign-row is-drop" role="listitem"><span class="tej-loop-sign-symbol">$R_3$</span><span>with $I_3$</span><strong>$-2I_3$</strong></div>
+</div>
+
+::: {.tej-loop-sign-equation}
+$$
++10-3I_1-2I_3=0
+$$
+:::
+:::
+::::
+
 Use the printable guide and record each signed KVL term:
 
 | Element | Signed term | Reason |
@@ -156,6 +179,29 @@ $$
 The second-last line subtracts $10$ from both sides. The final line multiplies the complete equation by $-1$ so the leading coefficient is positive.
 
 ### 3. Derive Equation 2 from Loop 2
+
+:::: {.tej-loop-equation-visual}
+<figure class="ter-circuit-figure" id="fig-question4-loop2-isolated">
+<img src="../../assets/electronics/schematics/kirchhoff-q4-loop2-clean.svg" alt="Loop 2 isolated from the two-loop circuit. The shared 2 kiloohm resistor is on the left, the 5 kiloohm resistor is on top, and the 6 volt source is on the right. I3 points downward beside the shared resistor." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-question4-loop2-isolated">Figure 3.</a> Isolate Loop 2. This loop crosses the shared resistor in the direction opposite the defined $I_3$ arrow. <a class="ter-figure-anchor" href="#fig-question4-loop2-isolated" aria-label="Link to Figure 3">#</a></figcaption>
+</figure>
+
+::: {.tej-loop-sign-card}
+#### The shared-resistor sign changes
+
+<div class="tej-loop-sign-list" role="list" aria-label="Loop 2 signed KVL terms">
+  <div class="tej-loop-sign-row is-rise" role="listitem"><span class="tej-loop-sign-symbol">$V_{S2}$</span><span>source rise</span><strong>$+6$</strong></div>
+  <div class="tej-loop-sign-row is-drop" role="listitem"><span class="tej-loop-sign-symbol">$R_2$</span><span>with $I_2$</span><strong>$-5I_2$</strong></div>
+  <div class="tej-loop-sign-row is-rise" role="listitem"><span class="tej-loop-sign-symbol">$R_3$</span><span>against $I_3$</span><strong>$+2I_3$</strong></div>
+</div>
+
+::: {.tej-loop-sign-equation}
+$$
++6-5I_2+2I_3=0
+$$
+:::
+:::
+::::
 
 Loop 2 travels through the shared resistor against the defined direction of $I_3$. Its resistor term is therefore positive.
 
@@ -212,6 +258,11 @@ State the variable order before entering any coefficients:
 $$
 [I_1,I_2].
 $$
+
+<figure class="tej-matrix-bridge-figure" id="fig-question4-matrix-bridge">
+<img src="../../assets/electronics/equations/kirchhoff-matrix-bridge.png" alt="The two standard-form Kirchhoff equations are read left to right into a coefficient table. The coefficient rows form matrix A, the current symbols form vector x, and the voltage values form vector b. Expanding the matrix product recreates the original two equations." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-question4-matrix-bridge">Figure 4.</a> Each circuit equation becomes one matrix row. The variable order $[I_1,I_2]$ fixes the column order. <a class="ter-figure-anchor" href="#fig-question4-matrix-bridge" aria-label="Link to Figure 4">#</a></figcaption>
+</figure>
 
 Read each standard-form equation from left to right:
 

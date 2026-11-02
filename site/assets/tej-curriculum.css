@@ -192,6 +192,108 @@
   }
 }
 
+/* Put each isolated loop directly beside the signed KVL terms it produces. */
+.tej-loop-equation-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(17rem, 0.85fr);
+  gap: 1rem;
+  align-items: stretch;
+  margin: 1rem 0 1.5rem;
+}
+
+.tej-loop-equation-visual .ter-circuit-figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.tej-loop-equation-visual .ter-circuit-figure img {
+  width: 100%;
+  max-height: 25rem;
+  object-fit: contain;
+}
+
+.tej-loop-sign-card {
+  padding: 1rem;
+  border: 1px solid #c7d1dc;
+  border-radius: 0.65rem;
+  background: #f7f9fb;
+}
+
+.tej-loop-sign-card h4 {
+  margin-top: 0;
+  color: #17324d;
+}
+
+.tej-loop-sign-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.tej-loop-sign-row {
+  display: grid;
+  grid-template-columns: 3.7rem 1fr auto;
+  gap: 0.55rem;
+  align-items: center;
+  padding: 0.65rem 0.7rem;
+  border-left: 0.35rem solid #b64040;
+  border-radius: 0.4rem;
+  background: #fff;
+}
+
+.tej-loop-sign-row.is-rise {
+  border-left-color: #2c7a4b;
+}
+
+.tej-loop-sign-symbol {
+  font-weight: 800;
+  color: #17324d;
+}
+
+.tej-loop-sign-row strong {
+  color: #17324d;
+  white-space: nowrap;
+}
+
+.tej-loop-sign-equation {
+  padding: 0.65rem;
+  border: 2px solid #e97828;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.tej-loop-sign-equation mjx-container[display="true"] {
+  margin: 0.35rem 0 !important;
+}
+
+.tej-matrix-bridge-figure {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid #c7d1dc;
+  border-radius: 0.65rem;
+  background: #fff;
+  box-shadow: 0 0.35rem 1rem rgba(30, 43, 85, 0.07);
+  text-align: center;
+}
+
+.tej-matrix-bridge-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.tej-matrix-bridge-figure figcaption {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 860px) {
+  .tej-loop-equation-visual {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Keep long code and comparison tables inside the lesson column on phones. */
 main.content,
 main.content > section,
