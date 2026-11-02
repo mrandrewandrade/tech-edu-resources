@@ -41,21 +41,31 @@ Complete this short practice before starting the full logo animation. The goal i
 
 ### Make a four-second practice animation
 
+Use the three pictures below as a map. The editor may look slightly different on a Chromebook or a smaller screen, but the icons and diamonds are the same.
+
 1. Open [smooth.video](https://smooth.video/).
-2. Select **Add media** at the top left and import one PNG. You may use your logo, your initials, or one simple shape.
-3. Click the object once on the canvas. A selection box should appear, and its row should be highlighted on the timeline.
+2. Select the **picture icon** at the top left. This is **Add media**. Import one PNG: your logo, your initials, or one simple shape.
+3. Click the object once on the canvas. Look for **white handles** around it and a highlighted row on the timeline.
+
+![Steps 1 and 2. Click the picture icon to add a PNG, then click the picture until white selection handles appear.](../../assets/animate-your-logo/smooth-video-beginner-01-add-select.svg){fig-alt="A labelled smooth.video editor view. The picture icon is highlighted as Add media, and white handles show that the sun is selected."}
+
 4. Drag the **playhead** to `0:00`. Make the object small and place it near the left side of the canvas. This is the starting state.
 5. Drag the playhead to `1:00`, then move the object into the centre. A **diamond** appears on its timeline row. That diamond is a keyframe.
 6. Drag the playhead to `2:00`. Use the corner handles or **Transform** controls to make the object larger and rotate it slightly. A second diamond appears.
 7. Drag the playhead to `3:00`. Change the object's position, opacity, or colour to create another keyframe.
 8. Drag the playhead to `4:00` and create a clean final position.
 9. Open the keyframe's easing control and choose **Smooth** for at least one movement.
+
+![Steps 3 and 4. Drag the black playhead to a new time, then move, resize, or rotate the object. The diamond that appears is the keyframe.](../../assets/animate-your-logo/smooth-video-beginner-02-keyframe.svg){fig-alt="An enlarged smooth.video timeline with the black playhead at two seconds and a diamond keyframe circled in orange."}
+
 10. Press the **space bar** or select **Play**. Watch the entire four seconds and fix any jumpy motion.
 11. Select **Menu > Save project** and save the editable `.smooth` file.
 12. Select **Export**, choose **MP4** or **GIF**, and reopen the downloaded file to confirm that it plays.
 
+![Steps 5 to 7. Press Play, open Menu and choose Save project, then open Export and choose MP4 or GIF.](../../assets/animate-your-logo/smooth-video-beginner-03-play-save-export.svg){fig-alt="Three labelled panels show the Play triangle, Save project in the Menu, and MP4 and GIF in the Export menu."}
+
 ::: {.callout-tip title="How do I add a keyframe?"}
-You normally do not need an **Add keyframe** button. **Move the playhead first. Change the selected object second.** The change you make at that time becomes a diamond-shaped keyframe automatically.
+**Move the playhead first. Change the selected object second.** The change becomes a diamond-shaped keyframe automatically. If you want a keyframe without changing anything yet, click the **small hollow diamond** on the selected object's timeline row.
 :::
 
 | Time | What you do | What smooth.video records |
