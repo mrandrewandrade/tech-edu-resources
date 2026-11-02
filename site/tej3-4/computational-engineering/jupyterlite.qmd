@@ -1,0 +1,194 @@
+---
+title: "Python Engineering Notebooks with JupyterLite"
+description: "Open, run, edit, save, download, and submit engineering notebooks in a browser."
+categories: [Python, JupyterLite, notebooks, data analysis, circuits]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can run and revise Python and Markdown cells in a notebook.
+- I can import a CSV file, make a graph, and check a calculation.
+- I can download an `.ipynb` file and protect my work from browser-data loss.
+
+## Why this is useful
+
+Python can repeat calculations, test a range of values, and show patterns that are hard to see in one handwritten example. A notebook keeps code, evidence, and explanation together.
+
+## What you will make
+
+New Jupyter users will open **Notebook 1**, run its working demonstration, change one circuit value, verify the result, add a Markdown explanation, and download a copy. The current class has already completed basic schematics and the KCL/KVL problem set, so its first assessed computational task is **Notebook 3: Kirchhoff Systems**. Notebook 1 is a short interface practice, not a restart of the electronics curriculum.
+
+## Before you start
+
+- Use a current school-approved Chrome or Firefox browser. Private browsing can block features JupyterLite needs.
+- Download [Notebook 1: Python as an Engineering Calculator](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
+- Open the official [Try JupyterLab in your browser](https://jupyter.org/try-jupyter/lab/) site. This public demonstration uses JupyterLite; its available kernels and packages can change.
+
+::: {.callout-warning title="Browser storage is not cloud storage"}
+JupyterLite normally stores edited files in this browser's local storage. Another device, another browser profile, cleared site data, or a school reset may not have your work. Download the `.ipynb` file after every work period and keep the downloaded copy in the teacher-approved location.
+:::
+
+## 1. Open the notebook
+
+1. Wait until the JupyterLab file browser and launcher finish loading.
+2. Choose the **Upload Files** button in the file browser, or drag the downloaded notebook into the file area.
+3. Double-click `01-engineering-calculator.ipynb`.
+4. If asked for a kernel, choose the available **Python (Pyodide)** kernel. Wait until the kernel status is ready.
+
+A notebook is a sequence of cells. A **Code** cell runs Python. A **Markdown** cell displays headings, lists, links, equations, and explanations.
+
+## 2. Run, change, and rerun code
+
+Click the first code cell and press **Shift+Enter**. The cell runs and the selection moves to the next cell. The first scientific-package import can take longer because a browser kernel may need to load packages.
+
+```python
+voltage_V = 9.0
+resistance_ohm = 1000.0
+current_A = voltage_V / resistance_ohm
+power_W = voltage_V * current_A
+current_mA = current_A * 1000
+power_mW = power_W * 1000
+print(f"Current: {current_mA:.2f} mA")
+print(f"Power: {power_mW:.1f} mW")
+```
+
+Variables are named places that hold values. The unit is written in each variable name because Python does not automatically know that `9.0` means volts.
+
+Change `resistance_ohm`, press **Shift+Enter** again, and check whether current changes in the direction predicted by Ohm's law.
+
+## 3. Read an error message
+
+An error is evidence. Read the last line first.
+
+- `NameError` usually means a name is misspelled or its defining cell was not run.
+- `SyntaxError` means Python could not parse the code; check punctuation, quotes, and brackets near the marker.
+- `ModuleNotFoundError` means the selected environment does not have the package.
+- `FileNotFoundError` means the path or filename does not match the file browser.
+- A stale answer often means cells were run out of order. Choose **Kernel > Restart Kernel and Run All Cells** after saving.
+
+Continue with [Find Documentation and Ask for Programming Help](finding-documentation-and-asking-for-help.qmd) to learn how to reproduce the issue, search official documentation and Stack Overflow, and prepare an answerable request for the teacher.
+
+## 4. Add a Markdown explanation
+
+Choose a cell, change its type to **Markdown**, and enter:
+
+```markdown
+### What changed
+
+Increasing resistance reduced current because $I=V/R$
+while voltage stayed constant.
+```
+
+Press **Shift+Enter** to render it. Explain what the output means; do not paste a number without interpretation.
+
+## 5. Import a CSV and graph it
+
+Download [sample circuit measurements CSV](../../assets/tej-computational/data/circuit-measurements.csv) and upload it beside Notebook 5. The filename must match exactly.
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("circuit-measurements.csv")
+expected_columns = {
+    "voltage_V",
+    "measured_current_mA",
+}
+assert expected_columns.issubset(data.columns)
+data.plot(
+    x="voltage_V",
+    y="measured_current_mA",
+    marker="o",
+)
+plt.ylabel("Measured current (mA)")
+plt.title("Current through a fixed resistor")
+plt.grid(True)
+plt.show()
+```
+
+Check column names, units, missing values, and impossible values before interpreting the graph.
+
+## 6. Save, download, reopen, and submit
+
+1. Choose **File > Save Notebook** during the work period.
+2. Choose **File > Download**. If that menu item is absent in an older deployment, right-click the notebook in the file browser and choose **Download**.
+3. Keep the `.ipynb` ending. Rename the downloaded file <code>studentnumber-<wbr>lastname-<wbr>notebook-01.ipynb</code>, for example <code>123456789-<wbr>Smith-<wbr>notebook-01.ipynb</code>.
+4. To reopen it later, return to JupyterLite and upload the downloaded file. Open it, restart the kernel, and run all cells.
+5. Inspect the notebook for personal information. Upload the `.ipynb` file manually to the assigned Google Classroom post when that service is available. JupyterLite does not submit it for you.
+
+## Notebook progression
+
+| Notebook | Core task | Download |
+|---|---|---|
+| 1. Python as an Engineering Calculator | Variables, units, Ohm's law, and power | [`.ipynb`](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) |
+| 2. Series and Parallel Calculations | Equivalent resistance, currents, voltage drops, and checks | [`.ipynb`](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) |
+| 3. Kirchhoff Systems | NumPy matrices, coefficient order, substitution, and residuals | [`.ipynb`](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) |
+| 4. Graph Electrical Relationships | Voltage-current and resistance-current plots | [`.ipynb`](../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) |
+| 5. Experimental Data Analysis | CSV import, prediction differences, graphs, and limitations | [`.ipynb`](../../assets/tej-computational/notebooks/05-experimental-data-analysis.ipynb) · [CSV](../../assets/tej-computational/data/circuit-measurements.csv) |
+| 6. Engineering Investigation | Choose a question, test it, troubleshoot, and explain evidence | [`.ipynb`](../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb) |
+| 7. RC, Op-Amps, and a Bridge to Calculus | Model transients, numerical slope and area, integration, differentiation, and optional XL741 evidence | [`.ipynb`](../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) |
+| 8. Optional Component Model Review | Compare resistor, capacitor, LED, transistor-switch, and op-amp models with explicit limitations; use only where review is needed | [`.ipynb`](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) |
+
+Download [all eight notebooks, the dataset, and local requirements as one ZIP](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
+
+The notebooks use Python's standard library plus NumPy, pandas, and Matplotlib where the task requires them. They are designed for the Pyodide kernel in the official JupyterLite demonstration and for ordinary local JupyterLab with the supplied [requirements file](../../assets/tej-computational/requirements-jupyter.txt). A school deployment may provide a different kernel or package set.
+
+Use the [Jupyter Electronics Lab](jupyter-electronics-lab.qmd) for the complete simulation-first sequence and submission standard. It identifies what students can finish before physical components or kits are ready and how to add measurements later without replacing the original prediction.
+
+## The problem
+
+Your code runs and prints a plausible answer, but you need evidence that the calculation represents the circuit you intended.
+
+**The essential skill:** write an independent check such as a voltage sum, current sum, substitution, expected range, or residual.
+
+**The challenge:** change one parameter, predict the direction of the result before running the cell, and explain whether the output agrees.
+
+**The stumbling block:** correct code can faithfully solve the wrong equation or use values in the wrong units.
+
+**The investigation:** open the official [Python tutorial](https://docs.python.org/3/tutorial/), [NumPy `solve` documentation](https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html), [pandas CSV guide](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html), or [Matplotlib quick start](https://matplotlib.org/stable/users/explain/quick_start.html). Search with the exact function name and the last line of the error.
+
+::: {.callout-tip collapse="true" title="Hint 1: concept clue"}
+Choose a conservation rule or second equation that did not produce the answer directly.
+:::
+
+::: {.callout-tip collapse="true" title="Hint 2: documentation clue"}
+Search the function's official documentation for **parameters**, **returns**, and **examples**. Check the array shape and units.
+:::
+
+::: {.callout-tip collapse="true" title="Hint 3: technical clue"}
+Use `assert` with `abs(actual - expected) < tolerance`, or calculate `A @ x - b` for a matrix system. A near-zero residual checks the numerical solve, not the circuit model.
+:::
+
+## Troubleshooting
+
+| Problem | What to try |
+|---|---|
+| The page never finishes loading | Use a current non-private Chrome or Firefox window, reload once, and check whether the school filter permits WebAssembly and service workers. |
+| Kernel is not ready | Wait for the status indicator before running file-access or package cells. |
+| Uploaded file cannot be found | Put it beside the notebook, match capitalization, and use the exact relative filename. |
+| Package import fails | Confirm the Pyodide kernel is selected. Use the local pathway if the deployment does not provide the required package. |
+| A provided file seems unchanged | JupyterLite may prefer your browser-stored copy over the newer hosted file. Download work first, then remove the local copy or clear only the intended JupyterLite data. |
+| Work disappeared | Check the browser profile and downloads. Browser storage is device- and site-specific and is not a backup. |
+| Download is blocked | Use the file-browser context menu, then ask the teacher for the approved download route. Do not email private work to an unapproved account. |
+
+The storage and file guidance above follows the official [JupyterLite usage guide](https://jupyterlite.readthedocs.io/en/stable/quickstart/using.html) and [troubleshooting guide](https://jupyterlite.readthedocs.io/en/stable/troubleshooting.html).
+
+## Check your work
+
+- Restarting and running all cells finishes without an unexpected error.
+- Every graph has a title, labelled axes, and units.
+- Assertions or residual checks pass.
+- Markdown explains the engineering meaning and model limitations.
+- The downloaded notebook reopens and still contains your code and explanations.
+
+## Reflection
+
+What did the check establish? What did it *not* establish about the schematic, component model, wiring, or measurement?
+
+## Summary
+
+You can now preserve a reproducible calculation and its explanation. Use the [local Jupyter pathway](local-python-jupyter.qmd) only when you have an unrestricted computer or need packages and files beyond the browser environment.

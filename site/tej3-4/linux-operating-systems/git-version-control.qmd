@@ -32,6 +32,41 @@ git log --oneline
 
 Repeat the cycle after making one small change: edit, `git status`, review, stage, review the staged change, commit, and inspect the history.
 
+## Use Git with notebooks and websites
+
+Commit source files that another person needs to reproduce the work: `.qmd`, Markdown, configuration, code, small approved datasets, notebooks, and licensed assets. Do not commit Quarto's generated `_site` or `.quarto` folders for the classroom starter. Do not commit virtual environments, passwords, tokens, class codes, private student evidence, or restricted teacher resources.
+
+Before every commit:
+
+```bash
+git status
+git diff
+git diff --staged
+```
+
+Use `git add` with the intended paths, then inspect the staged diff. A useful commit contains one understandable change and a message that explains it.
+
+## The problem
+
+`git status` shows an unfamiliar generated file and a notebook containing output you did not intend to share.
+
+**The challenge:** decide what is source, what is generated, and what is private. Update `.gitignore` only for a repeatable file pattern, not to hide a mistake after it has been committed.
+
+::: {.callout-tip collapse="true" title="Hints"}
+1. Ask whether another person needs the file to reproduce the project.
+2. Use `git diff --staged` before committing and `git check-ignore -v path/to/file` to explain an ignored file.
+3. If a secret was committed, stop and tell the teacher; deleting the current file does not remove it from earlier history.
+:::
+
+## Common issues
+
+| Problem | Check |
+|---|---|
+| Git asks for identity | Use the teacher-approved classroom identity. Do not invent or publish a private email address. |
+| Everything is in one large commit | Unstage safely with `git restore --staged <path>`, then stage one coherent change. |
+| Line endings appear changed | Confirm the actual content and classroom Git configuration before committing a mass rewrite. |
+| Merge conflict markers appear | Do not delete them blindly. Compare both versions, keep the correct combined content, test, then stage the resolution. |
+
 ## Evidence
 
 Submit the repository path, a screenshot of `git log --oneline`, and a six-step explanation of your commit cycle. Explain why a commit message should describe the change.
@@ -40,6 +75,7 @@ Submit the repository path, a screenshot of `git log --oneline`, and a six-step 
 
 - Read [Getting started with Git](https://docs.github.com/en/get-started/start-your-journey/hello-world).
 - Use `git diff` to compare an uncommitted change with the last commit.
+- Continue to [Build a Website with Quarto](quarto-website.qmd) and use the same small commit cycle.
 
 ## Review and reflect
 

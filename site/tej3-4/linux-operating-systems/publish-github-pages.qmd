@@ -31,6 +31,42 @@ Follow this progression:
 
 The class will use one publishing method consistently. Do not switch between a `docs` folder, a `gh-pages` branch, and a GitHub Action unless the teacher changes the class workflow.
 
+Publishing is optional. A local render or private classroom submission can demonstrate the same learning. Never require identifiable student work to be public.
+
+## Verify the deployment
+
+Record the source commit ID before publishing:
+
+```bash
+git status
+git log -1 --oneline
+quarto render
+```
+
+After deployment finishes, open the public URL in a private window. Test the navbar, project listing filter, category controls, sorting, site search, images, and changed links. Compare the public content with the recorded commit.
+
+## The problem
+
+The repository has the latest source, but the public site is old, blank, or missing an image.
+
+**The challenge:** locate the failure in source, render, deployment, or browser cache and preserve evidence of the diagnosis.
+
+::: {.callout-tip collapse="true" title="Progressive hints"}
+1. Check whether `quarto render` succeeds locally before investigating hosting.
+2. Read the deployment log and the official [Quarto GitHub Pages guide](https://quarto.org/docs/publishing/github-pages.html) for the class publishing method.
+3. Confirm the configured branch/folder, filename capitalization, base paths, latest commit ID, and `.nojekyll` requirements for the selected method.
+:::
+
+## Common issues
+
+| Problem | Check |
+|---|---|
+| Build fails | Fix the first local Quarto error, commit the repair, and redeploy. |
+| Public site is 404 | Confirm Pages is enabled for the teacher-approved source branch or workflow and wait for the recorded deployment to finish. |
+| CSS or images are missing | Test relative paths and exact capitalization on the rendered site. Do not use a local drive path. |
+| Old content remains | Compare commit IDs, deployment time, and the private-window result before blaming cache. |
+| Workflow lacks permission | Ask the teacher or repository owner. Do not broaden repository permissions without authorization. |
+
 ## Evidence
 
 Submit the repository URL, public site URL, screenshot of a successful deployment, final commit ID, and a privacy checklist.

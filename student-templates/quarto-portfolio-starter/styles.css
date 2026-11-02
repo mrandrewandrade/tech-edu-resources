@@ -1,0 +1,25 @@
+:root {
+  --portfolio-accent: #0b5a7a;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.quarto-grid-item {
+  height: 100%;
+}
+
+.quarto-grid-item .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #f2f6f8;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--portfolio-accent);
+  outline-offset: 3px;
+}

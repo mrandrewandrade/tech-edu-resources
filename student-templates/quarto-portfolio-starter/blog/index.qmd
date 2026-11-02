@@ -1,0 +1,12 @@
+---
+title: "Learning Log"
+description: "Optional short posts about tests, documentation, and revisions."
+listing:
+  contents: "posts/*.qmd"
+  type: default
+  sort: "date desc"
+  categories: true
+  filter-ui: true
+---
+
+The blog is optional. Use it for short learning notes that do not belong in a complete project report.

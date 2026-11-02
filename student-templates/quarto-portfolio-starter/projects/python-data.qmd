@@ -1,0 +1,24 @@
+---
+title: "Python Measurement Analysis"
+description: "Use a notebook to graph measurements and check a circuit model."
+date: 2026-01-12
+categories: [Python, data, electronics]
+image: ../assets/data-project.svg
+image-alt: "Scatter points and a trend line on labelled voltage and current axes."
+---
+
+## The problem
+
+Decide whether measured current changes linearly with applied voltage over the tested range.
+
+## Method
+
+Preserve the raw CSV, document units, inspect missing values, graph the raw points, and compare the evidence with the chosen model.
+
+## Verification
+
+Include a numerical check or residual plot. A small residual checks the computation; it does not prove the circuit model or measurements are correct.
+
+## Revision and reflection
+
+Explain how one code, data, or model decision changed after inspection.

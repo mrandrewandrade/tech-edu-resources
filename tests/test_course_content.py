@@ -27,11 +27,15 @@ class CourseContentTests(unittest.TestCase):
         self.assertIn("<em>(planned)</em>", tej)
         self.assertIn('data-bs-track-id="circuits-electronics"', tej)
         self.assertIn(
-            'href="circuits/parallel-circuits.html">1. Package 1: Basic Electricity and Parallel Circuits</a>',
+            'href="electronics-library/components/schematic-basics.html">1. Component Foundations: Circuits and Schematics</a>',
             tej,
         )
         self.assertIn(
-            'href="circuits/series-circuits.html">2. Package 2: Parallel Review and Series Circuits</a>',
+            'href="circuits/parallel-circuits.html">7. Package 1: Basic Electricity and Parallel Circuits</a>',
+            tej,
+        )
+        self.assertIn(
+            'href="circuits/series-circuits.html">8. Package 2: Parallel Review and Series Circuits</a>',
             tej,
         )
         self.assertIn('data-bs-track-id="engineering-preparation"', tej)

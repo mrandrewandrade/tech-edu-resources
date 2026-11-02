@@ -1,0 +1,77 @@
+---
+title: "Component Foundations 3: Capacitors"
+description: "Understand charge storage, capacitance, polarity, voltage ratings, energy, and first-order RC behaviour."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can describe a capacitor as two conductors separated by a dielectric.
+- I can identify capacitance, voltage rating, tolerance, and polarity where applicable.
+- I can calculate charge, stored energy, and an RC time constant.
+- I can explain why capacitor voltage cannot change instantaneously in the ideal model.
+
+## What is a capacitor?
+
+A **capacitor** stores separated charge and energy in an electric field. It has two conductive regions separated by an insulating **dielectric**. Capacitance is represented by $C$ and measured in farads (F).
+
+$$C=\frac{Q}{V} \qquad Q=CV$$
+
+One farad is very large for many electronic circuits, so common values use:
+
+- microfarads: $1\,\mu\text{F}=10^{-6}\,\text{F}$;
+- nanofarads: $1\,\text{nF}=10^{-9}\,\text{F}$;
+- picofarads: $1\,\text{pF}=10^{-12}\,\text{F}$.
+
+The XL741 kit's 33 pF capacitor is therefore $33\times10^{-12}$ F. Its purpose is frequency compensation, not bulk energy storage.
+
+## Types, polarity, and ratings
+
+Ceramic capacitors are often non-polarized. Many electrolytic capacitors are polarized and must be connected with the correct positive and negative terminals.
+
+Before using a capacitor, identify:
+
+- capacitance;
+- maximum working voltage;
+- polarity, if any;
+- tolerance;
+- dielectric or capacitor type when behaviour matters;
+- stored-energy and discharge requirements.
+
+Never assume a capacitor is discharged because power is off.
+
+## Energy and RC response
+
+Stored energy in an ideal capacitor is:
+
+$$E_C=\frac{1}{2}CV^2$$
+
+For a resistor and capacitor, the time constant is:
+
+$$\tau=RC$$
+
+For ideal charging from 0 V toward a source $V_S$:
+
+$$V_C(t)=V_S\left(1-e^{-t/RC}\right)$$
+
+At one time constant, the capacitor reaches about 63.2% of its final voltage. After about five time constants, it is very close to the final value for many classroom purposes.
+
+## Five-question starter
+
+1. Describe the physical structure of a capacitor without saying that charge passes directly through its dielectric.
+2. Convert 100 nF to farads and microfarads.
+3. Calculate the charge stored by 47 µF at 5.0 V.
+4. Calculate the stored energy of 100 µF at 12.0 V and state a safe handling implication.
+5. For 10 kΩ and 100 µF, calculate $\tau$, predict $V_C(\tau)$ for a 5.0 V source, and explain what measurement would test the model.
+
+## Jupyter and lab pathway
+
+Use [Notebook 7: RC Circuits, Op-Amps, and a Bridge to Calculus](../../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) before hardware. It graphs charging, estimates slope, accumulates area, and prepares later op-amp work.
+
+Adapt Grob Experiments 16-1 and 22-1 only with teacher-approved values, voltage ratings, discharge procedures, and protected low-voltage equipment. Simulation is the complete start-now route when oscilloscopes, loggers, or components are unavailable.
+
+**Textbook support:** Grob, Chapters 16 and 22, pp. 484-515 and 668-691. [[1, Chs. 16, 22]](../../../references.qmd#ref-grob2016) *Open Circuits* provides classroom cutaway views of capacitor construction. [[2]](../../../references.qmd#ref-opencircuits2023)

@@ -106,9 +106,30 @@ $$ {#eq-series-voltage-check}
 
 Use Equation @eq-series-voltage-check to check the voltage drops. Also check power ratings.
 
-## Calculate then simulate
+## Practical pathway: find the wrong voltage drop
 
-Calculate the circuit first. Build the same series and parallel circuits in Tinkercad, measure current and voltage, then compare the calculated and simulated values.
+**Core learning:** complete the existing series-circuit questions first. Then follow the [Tinkercad build and measurement tutorial](tinkercad-circuits.qmd) to reproduce the three-resistor worked circuit.
+
+**Guided practice:** calculate total current, each voltage drop, and total power. Simulate the same values, measure at least two drops and the series current, and complete the table.
+
+| Quantity and location | Predicted | Simulated | Difference |
+|---|---:|---:|---:|
+| Series current (mA) |  |  |  |
+| Resistor 1 voltage (V) |  |  |  |
+| Resistor 2 voltage (V) |  |  |  |
+| Total power (mW) |  |  |  |
+
+**Independent challenge:** one simulated drop does not match. Decide whether the likely cause is a resistor value, probe location, source value, or topology error. Change one thing at a time and verify that all voltage drops add to the source.
+
+::: {.callout-tip collapse="true" title="Progressive hints"}
+1. A series circuit has one current everywhere.
+2. Review the voltage-sum check immediately above this activity.
+3. Stop the simulation, inspect `Ω` versus `kΩ`, then measure from the two terminals of the same resistor.
+:::
+
+**Optional Python verification:** use [Notebook 2](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) for repeated series values or [Notebook 4](../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) to graph a changing resistance.
+
+**Reflection:** Which check located the fault fastest, and why would matching simulated values still not prove the real component ratings are safe?
 
 ## Worked solutions {#worked-solutions}
 

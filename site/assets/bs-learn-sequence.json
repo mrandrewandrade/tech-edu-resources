@@ -834,6 +834,172 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 1,
+      "route": "/commons/tej3-4/portfolio/index.html",
+      "source": "tej3-4/portfolio/index.qmd",
+      "title": "Build a Technical Portfolio",
+      "summary": "Document an engineering problem, evidence, revisions, and conclusions in a private or teacher-approved format.",
+      "use": "The portfolio connects calculations, schematics, simulations, measurements, Python analysis, and reflection without requiring public publication.",
+      "resources": [
+        {
+          "label": "Quarto Portfolio Starter ZIP",
+          "url": "../assets/tej-portfolio/quarto-portfolio-starter.zip"
+        }
+      ],
+      "track_id": "portfolio",
+      "track_order": 4,
+      "track_title": "Project Portfolio",
+      "track_hub": "tej3-4/portfolio/index.qmd",
+      "track_summary": "Collect plans, tests, code, measurements, photographs, and reflections.",
+      "track_use": "A portfolio shows both the result and the engineering process that produced it.",
+      "previous_route": null,
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 31
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 1,
+      "route": "/commons/tej3-4/electronics-library/components/schematic-basics.html",
+      "source": "tej3-4/electronics-library/components/schematic-basics.qmd",
+      "title": "Component Foundations: Circuits and Schematics",
+      "summary": "Start from zero with circuit roles, schematic symbols, wires, nodes, junctions, ground, and one complete current path.",
+      "use": "Students need a shared visual language before calculations, simulation, breadboarding, or troubleshooting.",
+      "resources": [],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": null,
+      "next_route": "/commons/tej3-4/electronics-library/components/resistors.html",
+      "next_starts_new_track": false,
+      "sequence_index": 32
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 2,
+      "route": "/commons/tej3-4/electronics-library/components/resistors.html",
+      "source": "tej3-4/electronics-library/components/resistors.qmd",
+      "title": "Component Foundations: Resistors",
+      "summary": "Distinguish resistance from a resistor and use value, tolerance, power, Ohm's law, and current limiting.",
+      "use": "Resistors appear in nearly every later circuit and protect components such as LEDs and transistor inputs.",
+      "resources": [],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/electronics-library/components/schematic-basics.html",
+      "next_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
+      "next_starts_new_track": false,
+      "sequence_index": 33
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 3,
+      "route": "/commons/tej3-4/electronics-library/components/capacitors.html",
+      "source": "tej3-4/electronics-library/components/capacitors.qmd",
+      "title": "Component Foundations: Capacitors",
+      "summary": "Introduce charge storage, capacitance, polarity, voltage ratings, energy, and RC time constants.",
+      "use": "Capacitors connect physical components to changing signals, timing, filtering, and calculus.",
+      "resources": [],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/electronics-library/components/resistors.html",
+      "next_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
+      "next_starts_new_track": false,
+      "sequence_index": 34
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 4,
+      "route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
+      "source": "tej3-4/electronics-library/components/diodes-leds.qmd",
+      "title": "Component Foundations: Diodes and LEDs",
+      "summary": "Learn diode direction, polarity, forward voltage, reverse blocking, LED current limiting, and diode-mode testing.",
+      "use": "Diodes provide protection, indication, rectification, and two orientation-sensitive parts in the XL741 kit.",
+      "resources": [],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
+      "next_route": "/commons/tej3-4/electronics-library/components/transistors.html",
+      "next_starts_new_track": false,
+      "sequence_index": 35
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 5,
+      "route": "/commons/tej3-4/electronics-library/components/transistors.html",
+      "source": "tej3-4/electronics-library/components/transistors.qmd",
+      "title": "Component Foundations: Transistors",
+      "summary": "Introduce NPN and PNP transistor terminals, switching, ratings, pinout verification, and controlled load current.",
+      "use": "Transistor knowledge turns the XL741 from a mysterious board into a visible network of functional stages.",
+      "resources": [],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
+      "next_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
+      "next_starts_new_track": false,
+      "sequence_index": 36
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 6,
+      "route": "/commons/tej3-4/electronics-library/components/op-amps.html",
+      "source": "tej3-4/electronics-library/components/op-amps.qmd",
+      "title": "Component Foundations: Operational Amplifiers",
+      "summary": "Explain differential inputs, supply rails, negative feedback, voltage followers, real limits, and the optional XL741.",
+      "use": "Op-amps connect component behaviour to sensing, control, signals, feedback, and an optional bridge to calculus.",
+      "resources": [],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/electronics-library/components/transistors.html",
+      "next_route": "/commons/tej3-4/circuits/parallel-circuits.html",
+      "next_starts_new_track": false,
+      "sequence_index": 37
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 7,
       "route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "source": "tej3-4/circuits/parallel-circuits.qmd",
       "title": "Package 1: Basic Electricity and Parallel Circuits",
@@ -895,17 +1061,17 @@
       "track_hub": "tej3-4/electronics-library/index.qmd",
       "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
       "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
-      "previous_route": null,
+      "previous_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "next_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 31
+      "sequence_index": 38
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 2,
+      "lesson_order": 8,
       "route": "/commons/tej3-4/circuits/series-circuits.html",
       "source": "tej3-4/circuits/series-circuits.qmd",
       "title": "Package 2: Parallel Review and Series Circuits",
@@ -970,14 +1136,14 @@
       "previous_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 32
+      "sequence_index": 39
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 3,
+      "lesson_order": 9,
       "route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "source": "tej3-4/circuits/series-parallel-circuits.qmd",
       "title": "Series-Parallel Combination Circuits, Part A",
@@ -1026,14 +1192,14 @@
       "previous_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_starts_new_track": false,
-      "sequence_index": 33
+      "sequence_index": 40
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 4,
+      "lesson_order": 10,
       "route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "source": "tej3-4/circuits/kirchhoffs-laws.qmd",
       "title": "Kirchhoff's Laws",
@@ -1070,14 +1236,14 @@
       "previous_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 34
+      "sequence_index": 41
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 5,
+      "lesson_order": 11,
       "route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "source": "tej3-4/circuits/linear-algebra-circuits.qmd",
       "title": "Linear Algebra for Circuits",
@@ -1108,9 +1274,37 @@
       "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
       "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
       "previous_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
+      "next_route": "/commons/tej3-4/circuits/tinkercad-circuits.html",
+      "next_starts_new_track": false,
+      "sequence_index": 42
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 12,
+      "route": "/commons/tej3-4/circuits/tinkercad-circuits.html",
+      "source": "tej3-4/circuits/tinkercad-circuits.qmd",
+      "title": "Build and Measure Circuits in Tinkercad",
+      "summary": "Build a low-voltage circuit, run the simulation, measure it, and compare the evidence with a calculation.",
+      "use": "Simulation provides a safe, repeatable bridge between schematic analysis and physical measurement.",
+      "resources": [
+        {
+          "label": "Tinkercad Circuits",
+          "url": "https://www.tinkercad.com/circuits"
+        }
+      ],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 35
+      "sequence_index": 43
     },
     {
       "course_id": "tej",
@@ -1133,7 +1327,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 36
+      "sequence_index": 44
     },
     {
       "course_id": "tej",
@@ -1156,7 +1350,7 @@
       "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 37
+      "sequence_index": 45
     },
     {
       "course_id": "tej",
@@ -1184,7 +1378,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_starts_new_track": false,
-      "sequence_index": 38
+      "sequence_index": 46
     },
     {
       "course_id": "tej",
@@ -1216,7 +1410,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_starts_new_track": false,
-      "sequence_index": 39
+      "sequence_index": 47
     },
     {
       "course_id": "tej",
@@ -1260,7 +1454,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_starts_new_track": false,
-      "sequence_index": 40
+      "sequence_index": 48
     },
     {
       "course_id": "tej",
@@ -1283,7 +1477,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_starts_new_track": false,
-      "sequence_index": 41
+      "sequence_index": 49
     },
     {
       "course_id": "tej",
@@ -1306,7 +1500,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_starts_new_track": false,
-      "sequence_index": 42
+      "sequence_index": 50
     },
     {
       "course_id": "tej",
@@ -1329,7 +1523,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_starts_new_track": false,
-      "sequence_index": 43
+      "sequence_index": 51
     },
     {
       "course_id": "tej",
@@ -1352,7 +1546,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_starts_new_track": false,
-      "sequence_index": 44
+      "sequence_index": 52
     },
     {
       "course_id": "tej",
@@ -1375,7 +1569,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_starts_new_track": false,
-      "sequence_index": 45
+      "sequence_index": 53
     },
     {
       "course_id": "tej",
@@ -1398,7 +1592,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_starts_new_track": false,
-      "sequence_index": 46
+      "sequence_index": 54
     },
     {
       "course_id": "tej",
@@ -1421,7 +1615,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_starts_new_track": false,
-      "sequence_index": 47
+      "sequence_index": 55
     },
     {
       "course_id": "tej",
@@ -1444,7 +1638,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
       "next_starts_new_track": false,
-      "sequence_index": 48
+      "sequence_index": 56
     },
     {
       "course_id": "tej",
@@ -1467,7 +1661,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 49
+      "sequence_index": 57
     },
     {
       "course_id": "tej",
@@ -1490,7 +1684,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 50
+      "sequence_index": 58
     },
     {
       "course_id": "tej",
@@ -1513,7 +1707,7 @@
       "previous_route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
       "next_route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 51
+      "sequence_index": 59
     },
     {
       "course_id": "tej",
@@ -1536,7 +1730,159 @@
       "previous_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 52
+      "sequence_index": 60
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 1,
+      "route": "/commons/tej3-4/computational-engineering/jupyterlite.html",
+      "source": "tej3-4/computational-engineering/jupyterlite.qmd",
+      "title": "Python Engineering Notebooks with JupyterLite",
+      "summary": "Open, run, edit, save, download, and submit engineering notebooks in a browser.",
+      "use": "The browser workflow works without a local install or new account when the school permits JupyterLite.",
+      "resources": [
+        {
+          "label": "Notebook Bundle",
+          "url": "../assets/tej-computational/tej-computational-engineering-notebooks.zip"
+        }
+      ],
+      "track_id": "programming-interfacing",
+      "track_order": 9,
+      "track_title": "Computational Engineering",
+      "track_hub": "tej3-4/computational-engineering/index.qmd",
+      "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
+      "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
+      "previous_route": null,
+      "next_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
+      "next_starts_new_track": false,
+      "sequence_index": 61
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 2,
+      "route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
+      "source": "tej3-4/computational-engineering/local-python-jupyter.qmd",
+      "title": "Run Python and Jupyter on Your Own Computer",
+      "summary": "Install an isolated Python environment and run the TEJ notebooks in WSL, native Windows, macOS, or Linux.",
+      "use": "The local route removes dependence on JupyterLite and supports normal files, installed packages, and later measurement work.",
+      "resources": [
+        {
+          "label": "Notebook Requirements",
+          "url": "../assets/tej-computational/requirements-jupyter.txt"
+        }
+      ],
+      "track_id": "programming-interfacing",
+      "track_order": 9,
+      "track_title": "Computational Engineering",
+      "track_hub": "tej3-4/computational-engineering/index.qmd",
+      "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
+      "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
+      "previous_route": "/commons/tej3-4/computational-engineering/jupyterlite.html",
+      "next_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
+      "next_starts_new_track": false,
+      "sequence_index": 62
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 3,
+      "route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
+      "source": "tej3-4/computational-engineering/finding-documentation-and-asking-for-help.qmd",
+      "title": "Find Documentation and Ask for Programming Help",
+      "summary": "Reproduce a problem, search official documentation and Stack Overflow, and ask a complete technical question.",
+      "use": "Students learn to provide minimal code, exact errors, environment details, attempted fixes, sources, and a reasoned hypothesis when requesting help.",
+      "resources": [
+        {
+          "label": "Stack Overflow: How to Ask",
+          "url": "https://stackoverflow.com/help/how-to-ask"
+        },
+        {
+          "label": "pandas Documentation",
+          "url": "https://pandas.pydata.org/docs/"
+        }
+      ],
+      "track_id": "programming-interfacing",
+      "track_order": 9,
+      "track_title": "Computational Engineering",
+      "track_hub": "tej3-4/computational-engineering/index.qmd",
+      "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
+      "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
+      "previous_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
+      "next_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
+      "next_starts_new_track": false,
+      "sequence_index": 63
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 4,
+      "route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
+      "source": "tej3-4/computational-engineering/kirchhoff-jupyter-assignment.qmd",
+      "title": "Assignment: Verify Kirchhoff Equations with Jupyter",
+      "summary": "Verify a completed two-loop solution, document a NumPy repair, check residuals, and investigate a parameter change.",
+      "use": "The assignment turns completed KCL/KVL work into a reproducible computational model without introducing new circuit theory during independent work.",
+      "resources": [
+        {
+          "label": "Kirchhoff Systems Notebook",
+          "url": "../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb"
+        },
+        {
+          "label": "Notebook Bundle",
+          "url": "../assets/tej-computational/tej-computational-engineering-notebooks.zip"
+        }
+      ],
+      "track_id": "programming-interfacing",
+      "track_order": 9,
+      "track_title": "Computational Engineering",
+      "track_hub": "tej3-4/computational-engineering/index.qmd",
+      "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
+      "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
+      "previous_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
+      "next_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
+      "next_starts_new_track": false,
+      "sequence_index": 64
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 5,
+      "route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
+      "source": "tej3-4/computational-engineering/jupyter-electronics-lab.qmd",
+      "title": "Jupyter Electronics Lab",
+      "summary": "Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.",
+      "use": "Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.",
+      "resources": [
+        {
+          "label": "Notebook Bundle",
+          "url": "../assets/tej-computational/tej-computational-engineering-notebooks.zip"
+        },
+        {
+          "label": "RC and Op-Amp Calculus Notebook",
+          "url": "../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb"
+        }
+      ],
+      "track_id": "programming-interfacing",
+      "track_order": 9,
+      "track_title": "Computational Engineering",
+      "track_hub": "tej3-4/computational-engineering/index.qmd",
+      "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
+      "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
+      "previous_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 65
     }
   ]
 }

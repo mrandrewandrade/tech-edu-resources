@@ -1,0 +1,117 @@
+---
+title: "Build a Technical Portfolio"
+description: "Document an engineering problem, evidence, revisions, and conclusions in a private or teacher-approved format."
+categories: [portfolio, engineering design, Quarto, Markdown]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can organize technical evidence so another person can follow my process.
+- I can explain calculations, simulations, measurements, code, mistakes, and revisions.
+- I can choose a private, classroom, or public sharing method that protects personal information.
+
+## Why this is useful
+
+A final photograph shows what you made. A technical portfolio shows how you defined the problem, tested ideas, found faults, and reached a supported conclusion.
+
+## What you will make
+
+Create one portfolio entry for an existing TEJ project. Use the [student Quarto starter ZIP](../../assets/tej-portfolio/quarto-portfolio-starter.zip) if you can run Quarto. Otherwise, create the same headings in a Markdown file, approved document, or printed report and publish later.
+
+Quarto needs the Quarto command-line tool or an authorized hosted build environment. JupyterLite can edit notebooks, but it is not a replacement for the Quarto CLI and cannot render this website template.
+
+## Before you start
+
+- Choose one completed or current engineering task.
+- Gather only teacher-approved evidence.
+- Remove student numbers, faces, school account details, classroom codes, private repository links, network details, serial numbers, passwords, and tokens from anything that could be shared.
+- Read the starter [README source](https://github.com/mrandrewandrade/tech-edu-resources/tree/master/student-templates/quarto-portfolio-starter) or the README inside the ZIP.
+
+Public publishing is never required. A local render, private submission, or approved classroom file can demonstrate the same learning.
+
+## 1. Tell the engineering story
+
+Use these headings in this order:
+
+1. **The problem:** What need, fault, or question were you addressing? What would success look like?
+2. **Initial design or prediction:** Show the first idea and predict an outcome before testing.
+3. **Calculations:** Include units, significant figures, equations, assumptions, and an independent check.
+4. **Circuit schematic or system diagram:** Use the course drawing conventions and useful alt text.
+5. **Simulation or experimental evidence:** Include a labelled table, graph, photograph, or measurement record.
+6. **Python analysis:** Link or summarize the notebook when computation adds value. Do not add code only for decoration.
+7. **Mistakes and revisions:** Explain one meaningful stumbling block, the evidence that exposed it, and what changed.
+8. **Final conclusion:** State whether the evidence meets the original success criteria and identify limitations.
+9. **What I learned:** Explain the transferable skill and how you got unstuck.
+
+## 2. Add one project to the starter
+
+1. Extract the ZIP and follow `README.md`.
+2. Copy one sample page in `projects/` and rename it with a short lowercase filename such as `motor-current-test.qmd`.
+3. Replace the YAML title, description, date, categories, and image description.
+4. Replace every sample section with your own approved content.
+5. Preview with `quarto preview`. Test navigation, listing search, categories, images, and relative links.
+6. Render with `quarto render`. Review the generated site without editing `_site`.
+7. Inspect `git status`, then commit the source files and evidence you intended to include.
+
+The starter uses Quarto's native grid listing, category filters, text filter, sorting, responsive layout, and site search. It does not require an external data service or custom JavaScript after publishing.
+
+## The problem
+
+Another student can see the final result but cannot tell why your design changed or whether the evidence supports your conclusion.
+
+**The essential skill:** connect every claim to a calculation, test, observation, source, or limitation.
+
+**The challenge:** add one complete project, one new category, and one revision that materially changed the outcome. Then change the listing order using a documented Quarto option.
+
+**The stumbling block:** a broken image or link may work in the editor but fail in the rendered site because its relative path starts from the wrong source file.
+
+**The investigation:** use the official [Quarto websites](https://quarto.org/docs/websites/), [listings](https://quarto.org/docs/websites/website-listings.html), and [navigation](https://quarto.org/docs/websites/website-navigation) documentation. Search the exact option name and read the YAML example.
+
+::: {.callout-tip collapse="true" title="Hint 1: concept clue"}
+From a file inside `projects/`, count how many folders you must move up before moving into `assets/`. A relative path describes that route.
+:::
+
+::: {.callout-tip collapse="true" title="Hint 2: documentation clue"}
+Search the Quarto listing guide for `sort`, `sort-ui`, `filter-ui`, and `categories`.
+:::
+
+::: {.callout-tip collapse="true" title="Hint 3: technical clue"}
+For an image stored at `assets/example.svg`, a page in `projects/` uses `../assets/example.svg`. The project list can use `sort: "date desc"` and `sort-ui: [date, title]`.
+:::
+
+## Website repair challenges
+
+Complete the challenges your teacher assigns:
+
+- Add your own engineering project and category.
+- Change project ordering and explain the configuration option.
+- Use the listing's search/filter control to find a category or keyword.
+- Repair a broken image and a broken relative link.
+- Enable the optional blog, add a post, or remove the blog cleanly.
+- Diagnose one intentional YAML or link error using the render message.
+- Record the documentation page or search terms that helped.
+
+## Check your work
+
+- Every required section contains project-specific evidence.
+- Images have useful alternative text; tables and graphs include labels and units.
+- Calculated, simulated, and measured values are clearly distinguished.
+- Mistakes are explained as part of the engineering process, not hidden.
+- `quarto render` completes and all local links work.
+- A private-data review is complete before any sharing.
+
+## Save and submit
+
+Keep the source folder, not only the rendered `_site` folder. If assigned, submit the source repository or ZIP plus the rendered local evidence. Use a teacher-approved identity and sharing location. Publishing to GitHub Pages is optional and follows [Publish Your Quarto Site](../linux-operating-systems/publish-github-pages.qmd).
+
+## Reflection
+
+Which piece of evidence most changed your design or conclusion? What would a reviewer still need to know before reproducing your result?
+
+## Summary
+
+Your portfolio should make the engineering process inspectable without requiring public publication. Continue with [Build a Website with Quarto](../linux-operating-systems/quarto-website.qmd) for authoring details or use Markdown and publish later.

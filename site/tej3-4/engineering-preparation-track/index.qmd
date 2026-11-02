@@ -19,6 +19,30 @@ Textbook reference: *Grob's Basic Electronics*, supported by the Problems Manual
 
 Record repeatable measurements with units, uncertainty, and enough metadata to interpret the test later. Use [Python Measurement Logging](../linux-operating-systems/python-data-logging.qmd) and [Python Analysis and Curve Fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd).
 
+## Jupyter as the start-now engineering workspace
+
+Students can begin computational work before every component, instrument, or soldered kit is available. The [Jupyter Electronics Lab](../computational-engineering/jupyter-electronics-lab.qmd) provides a complete progression through circuit calculations, parameter sweeps, KCL/KVL systems, graphs, CSV analysis, RC transients, op-amp models, and numerical calculus.
+
+The required evidence is the hand prediction, reproducible notebook, independent check, graph, interpretation, and honest model limitation. Circuit simulation and physical measurement are later validation layers. A student must not label a numerical or simulated result as measured, but the absence of an optional kit does not prevent completion of the modelling outcomes.
+
+## Signals, op-amps, and a bridge to calculus
+
+After capacitors, RC response, diodes, and transistor fundamentals, an optional discrete XL741 op-amp project can make later mathematics visible in a real circuit. Calculus is not a prerequisite for the build. Start with average slope, area under a voltage-time graph, finite differences, and running sums; then compare those numerical results with measured integrator and differentiator outputs.
+
+An ideal differentiator models rate of change,
+
+$$
+V_{\text{out}}=-RC\frac{dV_{\text{in}}}{dt},
+$$
+
+while an ideal integrator models accumulation,
+
+$$
+V_{\text{out}}=-\frac{1}{RC}\int V_{\text{in}}\,dt.
+$$
+
+The core TEJ goal is to explain the observed input and output waveforms using circuits, measurements, graphs, and numerical approximations. Derivatives, integrals, the Fundamental Theorem of Calculus, and RC differential equations form an optional university-preparation extension. A strong investigation compares the same signal four ways: a hand estimate, a Python numerical result, a circuit simulation, and a measured XL741 output.
+
 ## Computing and control
 
 Connect operating systems, networking, programming, sensors, outputs, and feedback in recognizable systems. Continue through the [Linux and Operating Systems path](../linux-operating-systems/index.qmd) while the dedicated robotics and control packages are developed.

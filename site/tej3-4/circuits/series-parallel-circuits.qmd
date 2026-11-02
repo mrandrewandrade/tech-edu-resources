@@ -409,3 +409,28 @@ Use [Experiment 6-1](https://drive.google.com/file/d/13fG4oiClYfP4AwCF06bAYHwt2I
 
 Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20series-parallel%20answer%20key).
 
+## Practical pathway: reduce, build, expand, check
+
+**Core learning:** keep the existing Assignment 1.4 and worked models. After the calculation, build the same topology using the [Tinkercad tutorial](tinkercad-circuits.qmd).
+
+**Guided practice:** label the series resistor and parallel group before wiring. Record total current, the parallel-group voltage, and both branch currents.
+
+| Quantity and location | Predicted | Simulated | Difference |
+|---|---:|---:|---:|
+| Total current (mA) |  |  |  |
+| Series-resistor voltage (V) |  |  |  |
+| Parallel-group voltage (V) |  |  |  |
+| Branch currents (mA) |  |  |  |
+
+**Independent challenge:** choose one available branch resistor that keeps total current below a teacher-set limit. Show the reduced network, predict the new values, simulate, and verify both the voltage sum and current split.
+
+::: {.callout-tip collapse="true" title="Progressive hints"}
+1. Reduce only the parallel group first.
+2. Follow the lesson sequence: identify, reduce, solve, expand, check.
+3. After finding total current, use it for the series drop; the remaining voltage belongs across both parallel branches.
+:::
+
+Use [Notebook 2](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) to test alternatives without duplicating the handwritten derivation. Explain any simulator-model limitation before substituting another approved circuit tool.
+
+**Reflection:** Which representation (the original schematic, reduced circuit, simulation, or code) made the error easiest to see?
+

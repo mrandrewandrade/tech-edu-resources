@@ -8,7 +8,7 @@
       <input id="tej-programming-interfacing-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 1 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 5 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,16 +18,49 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="1" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="5" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">9. Programming and Interfacing</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">9. Computational Engineering</a><span data-bs-learn-group-count>5 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Programming and Interfacing Sequence&quot;, &quot;Programming and Interfacing&quot;]" data-bs-search-body="[&quot;The coordinated Python and hardware sequence is planned.&quot;, &quot;It will connect runnable examples to sensors and outputs.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Engineering Notebooks with JupyterLite&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Open, run, edit, save, download, and submit engineering notebooks in a browser.&quot;, &quot;The browser workflow works without a local install or new account when the school permits JupyterLite.&quot;, &quot;Notebook Bundle&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Programming and Interfacing Sequence"><span class="bs-learn-catalogue-title-row"><span class="bs-learn-catalogue-link">1. Programming and Interfacing Sequence <em>(planned)</em></span><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>The coordinated Python and hardware sequence is planned.</p>
-        <p>It will connect runnable examples to sensors and outputs.</p>
+        <summary aria-label="Show description for Python Engineering Notebooks with JupyterLite"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="jupyterlite.html">1. Python Engineering Notebooks with JupyterLite</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Open, run, edit, save, download, and submit engineering notebooks in a browser.</p>
+        <p>The browser workflow works without a local install or new account when the school permits JupyterLite.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a></p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Run Python and Jupyter on Your Own Computer&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Install an isolated Python environment and run the TEJ notebooks in WSL, native Windows, macOS, or Linux.&quot;, &quot;The local route removes dependence on JupyterLite and supports normal files, installed packages, and later measurement work.&quot;, &quot;Notebook Requirements&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Run Python and Jupyter on Your Own Computer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="local-python-jupyter.html">2. Run Python and Jupyter on Your Own Computer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Install an isolated Python environment and run the TEJ notebooks in WSL, native Windows, macOS, or Linux.</p>
+        <p>The local route removes dependence on JupyterLite and supports normal files, installed packages, and later measurement work.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/requirements-jupyter.txt">Notebook Requirements</a></p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Find Documentation and Ask for Programming Help&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Reproduce a problem, search official documentation and Stack Overflow, and ask a complete technical question.&quot;, &quot;Students learn to provide minimal code, exact errors, environment details, attempted fixes, sources, and a reasoned hypothesis when requesting help.&quot;, &quot;Stack Overflow: How to Ask&quot;, &quot;pandas Documentation&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Find Documentation and Ask for Programming Help"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="finding-documentation-and-asking-for-help.html">3. Find Documentation and Ask for Programming Help</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Reproduce a problem, search official documentation and Stack Overflow, and ask a complete technical question.</p>
+        <p>Students learn to provide minimal code, exact errors, environment details, attempted fixes, sources, and a reasoned hypothesis when requesting help.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://stackoverflow.com/help/how-to-ask">Stack Overflow: How to Ask</a> <a class="ter-resource-badge" href="https://pandas.pydata.org/docs/">pandas Documentation</a></p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assignment: Verify Kirchhoff Equations with Jupyter&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Verify a completed two-loop solution, document a NumPy repair, check residuals, and investigate a parameter change.&quot;, &quot;The assignment turns completed KCL/KVL work into a reproducible computational model without introducing new circuit theory during independent work.&quot;, &quot;Kirchhoff Systems Notebook&quot;, &quot;Notebook Bundle&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Assignment: Verify Kirchhoff Equations with Jupyter"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="kirchhoff-jupyter-assignment.html">4. Assignment: Verify Kirchhoff Equations with Jupyter</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Verify a completed two-loop solution, document a NumPy repair, check residuals, and investigate a parameter change.</p>
+        <p>The assignment turns completed KCL/KVL work into a reproducible computational model without introducing new circuit theory during independent work.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb">Kirchhoff Systems Notebook</a> <a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a></p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Jupyter Electronics Lab&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.&quot;, &quot;Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.&quot;, &quot;Notebook Bundle&quot;, &quot;RC and Op-Amp Calculus Notebook&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Jupyter Electronics Lab"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="jupyter-electronics-lab.html">5. Jupyter Electronics Lab</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.</p>
+        <p>Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a> <a class="ter-resource-badge" href="../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb">RC and Op-Amp Calculus Notebook</a></p>
       </details>
     </article>
   </div>

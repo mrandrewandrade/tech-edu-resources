@@ -123,6 +123,31 @@ $$ {#eq-parallel-current-check}
 
 Equation @eq-parallel-current-check checks the branch currents. The equivalent resistance from Equation @eq-parallel-resistance must be smaller than the smallest branch resistance.
 
+## Practical pathway: one branch changes
+
+**Core learning:** complete the existing parallel-circuit questions first. Then follow the [Tinkercad build and measurement tutorial](tinkercad-circuits.qmd) to reproduce a two-branch circuit from this lesson.
+
+**Guided practice:** predict the source current and both branch currents. Simulate the circuit and measure the common branch voltage plus each current. Stop the simulation before changing a resistor.
+
+| Quantity and location | Predicted | Simulated | Difference |
+|---|---:|---:|---:|
+| Common branch voltage (V) |  |  |  |
+| Branch 1 current (mA) |  |  |  |
+| Branch 2 current (mA) |  |  |  |
+| Source current (mA) |  |  |  |
+
+**Independent challenge:** increase one branch resistance to another available value. Predict which quantities will change and which will stay constant before restarting. Verify that branch currents add to source current.
+
+::: {.callout-tip collapse="true" title="Progressive hints"}
+1. Both branches still connect to the same two nodes.
+2. Review **common voltage** and the current-sum check above.
+3. Recalculate only the changed branch current, then add the branch currents for the new source current.
+:::
+
+**Optional Python verification:** use [Notebook 2](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) when you want to compare several branch values efficiently.
+
+**Reflection:** What did the unchanged quantity reveal about parallel topology? What wiring or unit error would break your current-sum check?
+
 Question 1 in the review problem set is the parallel review. Teachers can [email Andrew for the complete answer key](mailto:andrew@andrewandrade.ca?subject=TEJ%20parallel%20and%20series%20answer%20key).
 
 These notes follow *Grob's Basic Electronics*, Chapter 5. [[1, Ch. 5]](../../references.qmd#ref-grob2016)

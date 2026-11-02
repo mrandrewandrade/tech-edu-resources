@@ -34,6 +34,8 @@ project:
     - "tej3-4/index.qmd"
     - "tej3-4/curriculum/**/*.qmd"
     - "tej3-4/circuits/**/*.qmd"
+    - "tej3-4/computational-engineering/**/*.qmd"
+    - "tej3-4/portfolio/**/*.qmd"
     - "tej3-4/engineering-preparation-track/**/*.qmd"
     - "tej3-4/electronics-library/**/*.qmd"
     - "tej3-4/computer-systems/index.qmd"
@@ -65,6 +67,8 @@ project:
     - assets/tej-equations-v1.js
     - assets/tej-diagram-sources.js
     - "assets/electronics/**"
+    - "assets/tej-computational/**"
+    - "assets/tej-portfolio/**"
     - "assets/name-tag-photopea/**"
     - "assets/accessible-design/**"
     - "assets/phone-holder/**"

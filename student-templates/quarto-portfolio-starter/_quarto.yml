@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "My Technology Portfolio"
+  site-url: "https://example.invalid/"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: blog/index.qmd
+        text: Blog
+      - href: about.qmd
+        text: About
+  search:
+    location: navbar
+    type: overlay
+  page-footer:
+    left: "Student technology portfolio — replace this text with teacher-approved attribution."
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-newwindow: false
+    code-copy: true
+
+execute:
+  freeze: auto

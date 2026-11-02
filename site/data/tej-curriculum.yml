@@ -1,5 +1,5 @@
 schema_version: 1
-updated: 2026-10-09
+updated: 2026-10-31
 title: TEJ Curriculum Roadmap
 purpose: >-
   Curriculum-only public metadata for the complete TEJ learning pathway. This file
@@ -451,6 +451,8 @@ units:
       - module_id: "BB03"
         title: "Schematic symbols and Tinkercad verification"
         short_description: "Translate between a real build, a standard schematic, and a simulation."
+        status: "Published"
+        public_notes_route: "tej3-4/electronics-library/components/schematic-basics.qmd"
       - module_id: "BB04"
         title: "KiCad schematic capture"
         short_description: "Draw, annotate, connect, and check a basic circuit schematic in KiCad."
@@ -508,6 +510,8 @@ units:
       - module_id: "H06"
         title: "Resistors, potentiometers, LDRs, and sensors"
         short_description: "Select and measure fixed and variable resistive components and use them in dividers."
+        status: "Published"
+        public_notes_route: "tej3-4/electronics-library/components/resistors.qmd"
       - module_id: "H14"
         title: "Conductors and protection"
         short_description: "Relate conductor size, resistance, voltage drop, heat, current rating, fuses, and breakers."
@@ -520,6 +524,8 @@ units:
       - module_id: "H19"
         title: "Capacitors and RC response"
         short_description: "Explain charge storage, time constant, filtering, timing, and safe handling."
+        status: "Published"
+        public_notes_route: "tej3-4/electronics-library/components/capacitors.qmd"
       - module_id: "H20"
         title: "Inductors and magnetic energy"
         short_description: "Explore inductance, back EMF, and LR response as an extension."
@@ -528,6 +534,8 @@ units:
       - module_id: "H21"
         title: "Diodes and LEDs"
         short_description: "Apply polarity, forward voltage, reverse blocking, current limiting, and diode-mode testing."
+        status: "Published"
+        public_notes_route: "tej3-4/electronics-library/components/diodes-leds.qmd"
       - module_id: "H22"
         title: "Rectifiers and power supplies"
         short_description: "Trace rectification, smoothing, regulation, and protected low-voltage supply blocks."
@@ -537,6 +545,8 @@ units:
       - module_id: "H23"
         title: "Transistors as switches"
         short_description: "Use a BJT or MOSFET to control a load within voltage, current, power, and thermal limits."
+        status: "Published"
+        public_notes_route: "tej3-4/electronics-library/components/transistors.qmd"
       - module_id: "H24"
         title: "555 timers"
         short_description: "Build and calculate monostable and astable timing circuits."
@@ -546,10 +556,21 @@ units:
         pathway: "extension"
         status: "Bonus"
       - module_id: "H26"
-        title: "Amplifiers and op-amps"
-        short_description: "Introduce gain, feedback, and sensor conditioning as an extension."
+        title: "Op-amps, the XL741, and a bridge to calculus"
+        short_description: "Use gain and negative feedback, build and characterize a discrete XL741 op-amp, and connect integrator and differentiator circuits to slope, accumulated area, numerical methods, and optional formal calculus."
         pathway: "extension"
         status: "Bonus"
+        public_notes_route: "tej3-4/electronics-library/components/op-amps.qmd"
+        prerequisites: [H19, H21, H23]
+        estimated_time: 6-10 periods
+        simulation_requirement: Required; Jupyter model and circuit simulation form the complete start-now pathway
+        physical_lab_requirement: Optional later validation through a teacher demonstration or teacher-approved XL741 soldering kit
+        equipment: [breadboard, DMM, oscilloscope when available, function generator or approved signal source, teacher-approved current-limited dual supply, optional XL741 v2.0 discrete op-amp kit]
+        software: [circuit simulator, Python notebooks]
+        safety_level: Low-voltage soldering, polarity, stored energy, and current-limited power-up
+        student_deliverables: [op-amp calculation, Jupyter transient and calculus-bridge notebook, circuit simulation, evidence comparison, technical portfolio entry, optional hardware record]
+        assessment_evidence: [correct feedback model, reproducible numerical checks, labelled graphs, honest calculated-modelled-simulated-measured distinctions, safe hardware practice when used, clear distinction between numerical intuition and formal calculus]
+        implementation_notes: Formal differentiation and integration are not prerequisites. Begin with average slope, accumulated graph area, finite differences, and running sums. The Jupyter pathway must stand alone while kits are unavailable. The XL741 v2.0 guide documents a simple voltage-follower test with plus and minus 15 V rails and input within plus or minus 13 V; verify the current manufacturer datasheet, terminal assignments, supply limits, and current limiting before use. Add soldering, power-up, and measured evidence only when students have genuine hardware access; a teacher demonstration may provide shared data. Offer derivative, integral, and differential-equation notation as an engineering-preparation extension after students can explain the modelled circuit behaviour.
 
   - unit_id: '6'
     title: Digital Logic and Stable Inputs

@@ -91,6 +91,18 @@ Use these notes with the matching teaching slides and question sheet.
 4. [Kirchhoff's laws](kirchhoffs-laws.qmd): write current and voltage equations for networks that do not reduce directly.
 5. [Linear algebra for circuits](linear-algebra-circuits.qmd): solve several node or loop equations together.
 
+## Practical pathway
+
+Keep the normal teaching slides, Grob reading, question set, and worked examples. Add one short practical activity only when it supports the current concept:
+
+1. **Understand and calculate** using the existing lesson and assignment.
+2. **Build and simulate** with [Build and Measure Circuits in Tinkercad](tinkercad-circuits.qmd).
+3. **Measure and verify** with the circuit-specific evidence table.
+4. **Investigate with Python** using the [computational engineering notebooks](../computational-engineering/) when repeated calculations, graphs, or systems add value.
+5. **Document and share** a concise conclusion or [technical portfolio entry](../portfolio/).
+
+The simulation and notebook are supporting activities, not another full five-question electronics package. Most guided activities are designed for 15–30 minutes after the normal calculation work.
+
 ## Class materials {#questions-answers-and-class-artifacts}
 
 [Open the student circuits lesson folder](https://drive.google.com/drive/folders/1NWvgVWTRJ9oHrWCLrAia8LP-1lxUvfdZ){target="_blank"}. The links below identify the current student files. Files labelled **LEGACY**, teacher answer keys, the staging deck, and the lesson-package SOP are not part of the student lesson sequence.

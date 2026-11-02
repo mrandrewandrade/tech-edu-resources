@@ -1,0 +1,27 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\definecolor{equationink}{HTML}{1E2B55}
+
+\begin{document}
+\color{equationink}
+\begin{minipage}{16cm}
+\centering
+\Large
+\[
+\begin{gathered}
+\underbrace{5I_1-2I_2=10}_{\text{Loop 1 from Question 4}}\\[0.35cm]
+\underbrace{-2I_1+7I_2=6}_{\text{Loop 2 from Question 4}}
+\end{gathered}
+\quad\Longrightarrow\quad
+\begin{gathered}
+\underbrace{\begin{bmatrix}5&-2\\-2&7\end{bmatrix}}_{A}
+\underbrace{\begin{bmatrix}I_1\\I_2\end{bmatrix}}_{\mathbf{x}}
+=
+\underbrace{\begin{bmatrix}10\\6\end{bmatrix}}_{\mathbf{b}}\\[0.35cm]
+[\mathrm{k\Omega}]\,[\mathrm{mA}]=[\mathrm{V}]
+\end{gathered}
+\]
+\end{minipage}
+\end{document}

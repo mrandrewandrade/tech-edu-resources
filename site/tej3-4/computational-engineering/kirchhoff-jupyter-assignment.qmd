@@ -1,0 +1,178 @@
+---
+title: "Assignment: Verify Kirchhoff Equations with Jupyter"
+description: "Use a completed two-loop solution, Python, documentation, residuals, and a parameter sweep to verify and investigate a circuit model."
+categories: [Python, Jupyter, Kirchhoff, debugging, assignment]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Where the class is now
+
+You have already completed basic schematics, Kirchhoff's current law, Kirchhoff's voltage law, and the five-question KCL/KVL problem set. You have also received the answers. This assignment does **not** restart that work.
+
+The new learning is to use Jupyter as an engineering verification tool:
+
+```text
+completed circuit equations → Python model → residual check → documented repair → investigation
+```
+
+No new circuit theory is introduced during the independent work period.
+
+## Assignment files
+
+- [Download Notebook 3: Kirchhoff Systems](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb)
+- [Download the complete notebook bundle](../../assets/tej-computational/tej-computational-engineering-notebooks.zip)
+- [Review the Kirchhoff lesson and Monday demonstration](../circuits/kirchhoffs-laws.qmd)
+- [Use JupyterLite in a browser](jupyterlite.qmd)
+- [Install and run Jupyter locally using WSL, Windows, macOS, or Linux](local-python-jupyter.qmd)
+- [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd)
+
+Use your completed Question 4 or Question 5 work and the released teacher answer. Do not publish or upload the teacher answer.
+
+## What to submit
+
+Submit one completed `.ipynb` file. Rename it before working:
+
+```text
+studentnumber-lastname-kirchhoff-jupyter.ipynb
+```
+
+The submitted notebook must reopen and run from the first cell without an unexpected error. Keep Markdown explanations, code, output, checks, and reflections together in the notebook.
+
+## Checkpoint 1: Tuesday independent assignment
+
+### 1. Open and preserve the notebook
+
+1. Download Notebook 3.
+2. Open it in JupyterLite or local JupyterLab.
+3. Use **File > Save Notebook As** or make a copy with the required filename.
+4. Run the known-working demonstration before changing any code.
+5. Predict whether each demonstration current should be positive or negative.
+
+### 2. Enter a completed two-loop system
+
+Copy the two equations from one completed question. Show:
+
+- both original KVL equations;
+- the standard-form equations;
+- the variable order;
+- the units used in $A$, $\mathbf{x}$, and $\mathbf{b}$;
+- the matrix $A$ and vector $\mathbf{b}$.
+
+Keep the same variable order in every equation and matrix row.
+
+### 3. Solve and verify
+
+Use `numpy.linalg.solve` to calculate the currents. Then calculate
+
+$$
+\mathbf{r}=A\mathbf{x}-\mathbf{b}.
+$$
+
+For each equation, report the residual with units. A residual near zero shows that Python solved the equations you entered. It does not prove that the original circuit equations, signs, or units were correct.
+
+### 4. Compare three results
+
+Complete a comparison table:
+
+| Quantity | Handwritten result | Released answer | Python result | Agreement and explanation |
+|---|---:|---:|---:|---|
+| $I_1$ |  |  |  |  |
+| $I_2$ |  |  |  |  |
+| $I_3$ or shared current |  |  |  |  |
+
+If a current is negative, explain what that means relative to the arrow selected on the schematic.
+
+### 5. Complete the easy documentation task
+
+Notebook 3 contains an intentional `numpy.round` keyword error. Change the Stage 1 flag only when you are ready to begin.
+
+Your debugging record must include:
+
+1. the exact error message as text;
+2. the search terms used;
+3. `help(np.round)`, `np.round?`, or the official NumPy documentation;
+4. the function signature or documented parameter that explains the problem;
+5. the smallest possible repair;
+6. evidence that the repaired cell works.
+
+Do not ask for the corrected line until you have recorded the evidence above.
+
+### 6. Predict and investigate
+
+Before running the parameter sweep, predict what will happen to each solved current when one source voltage increases.
+
+Run the supplied sweep and then explain:
+
+- whether each current increased, decreased, or crossed zero;
+- whether the trend matched the prediction;
+- what remained constant in the model;
+- one limitation of the numerical investigation.
+
+### 7. Answer the assigned reflections
+
+Answer the Checkpoint 1 reflections in complete sentences. Use **calculated**, **modelled**, **simulated**, and **measured** accurately. Python output from this assignment is calculated or modelled; it is not a physical measurement.
+
+## When you need help
+
+You may use Python help, official documentation, Google, and existing Stack Overflow questions. Record the source and explain how it applies. Do not paste an unexplained solution.
+
+Before asking the teacher, provide:
+
+```markdown
+Goal:
+Expected result:
+Actual result:
+Exact error or failed check:
+Minimal code and input:
+Python and package versions:
+What I tried:
+Documentation or questions checked:
+My current hypothesis:
+My focused question:
+```
+
+The problem must be reproducible from the information provided. Remove passwords, tokens, student numbers, private paths, and unrelated personal information.
+
+## What is not due at Checkpoint 1
+
+The following are later lessons, not Tuesday requirements:
+
+- Stage 2: diagnosing the non-square `numpy.linalg.solve` input;
+- Stage 3: finding the silent factor-of-1000 unit error;
+- physical circuit construction or measurement;
+- capacitors and RC response.
+
+Students who finish early may preview Stage 2, but it is not required for Checkpoint 1.
+
+## Submission checklist
+
+- [ ] The file has the required `.ipynb` name.
+- [ ] The notebook starts with the original equations, variable order, and units.
+- [ ] $A$, $\mathbf{b}$, the solution, and the residual vector are visible.
+- [ ] Handwritten, released, and Python answers are compared.
+- [ ] Negative-current signs are interpreted physically where applicable.
+- [ ] Stage 1 includes the error, search, documentation, requirement, repair, and verification.
+- [ ] A prediction appears before the parameter sweep.
+- [ ] The numerical table or graph is present and interpreted.
+- [ ] The assigned reflections are complete.
+- [ ] Restarting the kernel and running all required cells succeeds.
+- [ ] The final `.ipynb` file is saved and submitted through the assigned classroom system.
+
+## Assessment
+
+| Category | Evidence |
+|---|---|
+| Circuit-to-code translation | Correct equations, coefficient order, units, $A$, and $\mathbf{b}$ |
+| Verification | Correct solution, residuals, comparison, and sign interpretation |
+| Documentation-driven debugging | Exact symptom, useful search, authoritative requirement, minimal repair, and rerun evidence |
+| Investigation and communication | Prediction, sweep, interpretation, limitations, and complete reflections |
+
+The quality of the reasoning and evidence matters more than obtaining a clean-looking output on the first attempt.
+
+## Later checkpoints
+
+Checkpoint 2 will use an exception and array shapes to diagnose a matrix-input problem. Checkpoint 3 will use dimensional analysis and an independent unit check to catch a believable wrong answer that produces no exception. After those debugging lessons, the class moves into capacitors and RC response.

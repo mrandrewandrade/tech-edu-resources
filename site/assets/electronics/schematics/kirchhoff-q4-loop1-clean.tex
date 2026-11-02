@@ -1,0 +1,40 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[europeanresistors,americanvoltages]{circuitikz}
+\definecolor{TEJNavy}{HTML}{1E2B55}
+\definecolor{TEJBlue}{HTML}{1769AA}
+\definecolor{TEJOrange}{HTML}{E97828}
+\begin{document}
+\begin{tikzpicture}[line width=1.2pt,draw=TEJNavy,text=TEJNavy,>=latex]
+  \ctikzset{bipoles/length=1.2cm}
+
+  % Canonical isolated Loop 1 topology. Labels are separate knockout nodes.
+  \draw (0.9,0.8)
+    to[battery1,invert] (0.9,3.9)
+    -- (2.15,3.9)
+    to[R] (4.65,3.9)
+    -- (6.35,3.9)
+    to[R] (6.35,0.8)
+    -- (0.9,0.8);
+  \draw (0.9,0.8) node[ground] {};
+  \fill[TEJNavy] (6.35,3.9) circle (3pt);
+  \fill[TEJNavy] (6.35,0.8) circle (3pt);
+
+  \node[fill=white,inner sep=2pt,font=\large] at (3.40,4.48)
+    {$R_1=3.0\,\mathrm{k}\Omega$};
+  % Keep the source label entirely clear of the vertical source branch.
+  \node[fill=white,inner sep=2pt,font=\large,anchor=west] at (1.35,1.62)
+    {$V_{S1}=10\,\mathrm{V}$};
+  \node[fill=white,inner sep=2pt,font=\large,anchor=east] at (5.95,1.58)
+    {$R_3=2.0\,\mathrm{k}\Omega$};
+  \node[fill=white,inner sep=2pt,font=\small,text=TEJBlue] at (0.85,0.18)
+    {$0\,\mathrm{V}$};
+
+  % One current cue only: place the shared-branch current beside R3 so the
+  % arrow cannot be mistaken for a separate KVL traversal direction.
+  \draw[->,TEJBlue,line width=1.45pt] (7.05,3.48) -- (7.05,2.28);
+  \node[fill=white,inner sep=2pt,font=\large,text=TEJBlue] at (7.52,2.88)
+    {$I_3$};
+\end{tikzpicture}
+\end{document}

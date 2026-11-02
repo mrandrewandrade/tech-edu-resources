@@ -1,0 +1,36 @@
+---
+title: "Computational Engineering"
+description: "Use browser-based or local Python notebooks to calculate, graph, test, debug, and explain engineering evidence."
+sidebar: tej
+page-layout: full
+toc: false
+body-classes: "bs-learn-track-index"
+execute: {enabled: false}
+---
+
+Use this pathway after the normal electronics teaching and problem set. The notebooks support the circuit model; they do not replace deriving equations, building safely, or measuring a real system.
+
+::: {.callout-note title="Current class position"}
+Basic schematics and the five KCL/KVL questions are complete. The current bridge is **handwritten circuit equations → working Jupyter model → documentation-driven debugging → independent verification**. Capacitors and RC response follow this bridge.
+:::
+
+1. [Start with Python and JupyterLite](jupyterlite.qmd): run a cell, edit working code, preserve the notebook, and learn the browser workflow.
+2. [Run Python and Jupyter on your own computer](local-python-jupyter.qmd): use a virtual environment in WSL, native Windows, macOS, or Linux instead of depending on JupyterLite.
+3. [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd): reproduce an issue, search Python, NumPy, pandas, and Stack Overflow, and write a complete technical help request.
+4. [Complete the Kirchhoff Jupyter assignment](kirchhoff-jupyter-assignment.qmd): verify one finished two-loop solution, document one repair, check residuals, and investigate a parameter change.
+5. [Work through the Jupyter Electronics Lab](jupyter-electronics-lab.qmd): apply the skills across KCL/KVL, graphs, data, investigation, RC, op-amps, and the calculus bridge.
+6. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
+
+::: {.callout-important title="Current assignment"}
+Open [Assignment: Verify Kirchhoff Equations with Jupyter](kirchhoff-jupyter-assignment.qmd). The assignment page contains the notebook download, setup choices, Tuesday instructions, required debugging evidence, submission checklist, assessment evidence, and the later work that is **not** due yet.
+:::
+
+::: {.callout-note title="Core workflow"}
+**Understand → Calculate → Build → Simulate → Measure → Verify → Investigate → Document → Share**
+
+Most introductory notebook activities take about 15–30 minutes after the electronics calculation is complete. The [Jupyter Electronics Lab](jupyter-electronics-lab.qmd) also defines multi-day investigations that can carry the electronics course while students wait for components, instruments, or soldered kits.
+:::
+
+The browser route does not require a local installation or a new account, but the school browser must allow JupyterLite and WebAssembly. Download work before leaving the browser.
+
+Hardware remains valuable, but it is not assumed to be simultaneously available to every student. A simulation-first submission is complete when it meets the stated modelling outcomes and labels its evidence honestly. Measurements can be added later as a separate validation stage.

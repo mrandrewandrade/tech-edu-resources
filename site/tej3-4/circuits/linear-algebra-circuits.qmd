@@ -126,3 +126,28 @@ Enter the coefficient rows $(10,-2,0,5)$, $(-2,12,-3,6)$, and $(0,-3,9,4)$. The 
 
 Substitute the three currents into all three original rows to check the solution.
 :::
+
+## Practical pathway: audit a computational solution
+
+**Core learning:** solve one assigned system using the established variable-and-equation workflow. Then open [Notebook 3: Kirchhoff Systems](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) through the [JupyterLite tutorial](../computational-engineering/jupyterlite.qmd).
+
+**Guided practice:** enter the same coefficient order in every matrix row. Compare the notebook result with the manual or calculator result, then calculate the residual for each original equation.
+
+| Evidence | Manual or calculator | Python | Difference or residual |
+|---|---:|---:|---:|
+| Unknown 1 (mA) |  |  |  |
+| Unknown 2 (mA) |  |  |  |
+| Unknown 3 (mA), if used |  |  |  |
+| Largest equation residual (V) |  |  |  |
+
+**Independent challenge:** introduce one realistic transcription error, predict how the residual or circuit check will respond, then design a procedure that finds the wrong row without seeing a worked solution.
+
+::: {.callout-tip collapse="true" title="Progressive hints"}
+1. Print the variables and units beside the matrix.
+2. Compare one row at a time with the original equation, not with another matrix copy.
+3. Substitute the computed currents into a separately typed KCL or KVL check so the same transcription error is less likely to appear twice.
+:::
+
+**Optional extension:** simulate or measure the original circuit when the available tool can represent it faithfully. A matching experiment increases confidence in the model; the numerical solve alone does not validate the schematic.
+
+**Reflection:** Which independent check was least likely to repeat the same error as the matrix entry?

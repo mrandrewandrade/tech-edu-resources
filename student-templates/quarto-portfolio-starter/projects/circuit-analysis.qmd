@@ -1,0 +1,35 @@
+---
+title: "Series-Parallel Circuit Check"
+description: "Compare calculated, simulated, and measured values for a resistor network."
+date: 2026-01-15
+categories: [electronics, circuits, simulation]
+image: ../assets/circuit-project.svg
+image-alt: "Simple series-parallel resistor network with labelled evidence stages."
+---
+
+## The problem
+
+Determine whether a resistor network meets its target current without exceeding component power ratings.
+
+## Initial design or prediction
+
+Add the source schematic and predict total current before simulation or construction.
+
+## Calculations
+
+Show equations, units, significant figures, and a power-rating check.
+
+## Evidence
+
+| Quantity | Predicted | Simulated | Measured | Unit |
+|---|---:|---:|---:|---|
+| Total current |  |  |  | mA |
+| Source power |  |  |  | mW |
+
+## Mistakes and revisions
+
+Explain one wiring, unit, sign, or measurement issue and the evidence that exposed it.
+
+## Conclusion and reflection
+
+State whether the design met its criteria, identify limitations, and explain what you would test next.

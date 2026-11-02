@@ -1,0 +1,17 @@
+---
+title: "Projects"
+description: "Search, filter, sort, and review engineering project evidence."
+page-layout: full
+listing:
+  contents: "*.qmd"
+  type: grid
+  grid-columns: 2
+  sort: "date desc"
+  sort-ui: [date, title]
+  filter-ui: [title, description, categories]
+  categories: true
+  fields: [image, title, description, date, categories]
+  page-size: 12
+---
+
+Use the filter box, category list, or sort control to find a project. Add a new `.qmd` file in this folder; Quarto will include it when its metadata is valid.

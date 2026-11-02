@@ -1,42 +1,194 @@
 ---
 title: "Build a Website with Quarto"
-description: "Turn Markdown source files into a small local website and manage the source with Git."
-categories: [Linux, Quarto, Markdown, websites, Git]
+description: "Turn Markdown, YAML, images, and project metadata into a small searchable technical portfolio."
+categories: [Linux, Quarto, Markdown, websites, Git, portfolio]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
 ---
 
 ## Learning goals
 
-- I will be able to distinguish source files from rendered website files.
-- I will be able to create, preview, edit, and render a small Quarto website.
-- I will be able to commit meaningful website changes with Git.
+- I can distinguish Quarto source files, configuration, assets, and rendered output.
+- I can write Markdown and YAML, use relative links, and add accessible images.
+- I can configure navigation, search, and a sortable, filterable project listing.
+- I can render, test, troubleshoot, and commit a small site.
 
-This is important because it enables me to publish technical work from plain-text files that are easy to review, reproduce, and improve.
+## Why this is useful
 
-## Build in small steps
+Quarto turns readable plain-text source into a consistent website. It can combine engineering explanations, equations, code, graphs, and project evidence without hand-editing HTML.
 
-1. Confirm that Git and Quarto are installed with `git --version` and `quarto --version`.
-2. Use a teacher template or create a basic Quarto website inside your Git repository.
-3. Add a home page, an **About me as a technologist** page, and a **Linux learning log** page. Do not publish private information.
-4. Preview locally with `quarto preview`.
-5. Fix warnings and broken links.
-6. Render the complete site with `quarto render`.
-7. Open the generated site locally and test every navigation link.
-8. Review `git status`, then commit only the intended source and configuration files.
+## What you will make
 
-Your first site should be simple. Clear headings, useful alt text, readable colour contrast, and working links matter more than effects.
+Download and extract the [TEJ Quarto portfolio starter](../../assets/tej-portfolio/quarto-portfolio-starter.zip). You will add one project, one category, an accessible image, and a tested relative link. This teaching website is a larger Quarto example; your project stays intentionally small.
 
-## Evidence
+## Before you start
 
-Submit a screenshot of the local preview, the repository history, and a short explanation of `.qmd`, `_quarto.yml`, and `_site`. Record one problem you found by testing the rendered site.
+- Complete [Git: Save the History of Your Work](git-version-control.qmd).
+- Install Quarto on an unrestricted computer and run `quarto check` and `git --version`.
+- Read the starter `README.md`.
+- Do not place private student information, credentials, classroom codes, or restricted files in the project.
 
-## Extend your learning
+JupyterLite cannot render Quarto websites. Use a local or teacher-authorized hosted environment with the Quarto CLI.
 
-- Follow the official [Quarto website guide](https://quarto.org/docs/websites/).
-- Add one image with useful alternative text.
-- Create a page that documents your Linux hardware inventory.
+## 1. Learn the source structure
 
-## Review and reflect
+```text
+quarto-portfolio-starter/
+├── _quarto.yml       # project and website configuration
+├── index.qmd         # home page source
+├── about.qmd         # about page source
+├── projects/         # listing page and project pages
+├── blog/             # optional posts and listing
+├── assets/           # images and downloadable evidence
+├── styles.css        # small visual adjustments
+└── _site/            # generated output; do not edit
+```
 
-Which files are the source of your website? Why should you test the rendered output instead of assuming the source will work?
+A relative link starts from the file containing the link. From `projects/circuit-analysis.qmd`, `../assets/circuit-project.svg` moves up from `projects/`, then into `assets/`.
+
+## 2. Write Markdown
+
+```markdown
+# Page title
+## Section heading
+
+Write a paragraph with **strong text**, *emphasis*, and a [useful link](https://quarto.org/).
+
+- Use a list for related items.
+- Keep units beside measured values.
+
+![Useful description of the evidence](../assets/example.svg)
+```
+
+Use descriptive link text. Alt text should state what a reader needs to notice, not repeat the filename.
+
+## 3. Edit YAML safely
+
+YAML front matter sits between `---` lines at the top of a page:
+
+```yaml
+---
+title: "Motor Current Test"
+description: "Compare predicted and measured current during a load test."
+date: 2026-01-20
+categories: [electronics, motors, measurement]
+image: ../assets/motor-test.svg
+image-alt: "Current rises as the motor load increases across four measured points."
+---
+```
+
+Indent with spaces, keep list items aligned, and quote text containing punctuation when unsure. A render error that names a line near the page top often indicates malformed YAML.
+
+## 4. Configure the website
+
+`_quarto.yml` sets project-wide behaviour. The starter uses a navbar, local full-text search, a Cosmo theme, shared CSS, a footer, and `_site` output.
+
+```yaml
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+  search:
+    location: navbar
+    type: overlay
+```
+
+Use the official [navigation guide](https://quarto.org/docs/websites/website-navigation) if you need a sidebar for a larger site. Do not add a sidebar merely to imitate this course website.
+
+Change the theme through the documented `format.html.theme` option. Keep readable contrast, visible keyboard focus, responsive layout, and consistent headings. Test at a narrow window width before adding custom CSS.
+
+## 5. Add a project listing
+
+The starter's `projects/index.qmd` uses Quarto's native listing:
+
+```yaml
+listing:
+  contents: "*.qmd"
+  type: grid
+  grid-columns: 2
+  sort: "date desc"
+  sort-ui: [date, title]
+  filter-ui: [title, description, categories]
+  categories: true
+```
+
+Each project contributes its title, description, date, categories, and image through YAML. Quarto builds the responsive card grid, filter box, category controls, and sort controls. No custom JavaScript is required.
+
+To add a category, add a term to one project's `categories` list and render. To change default order, change `sort` using the official [listing documentation](https://quarto.org/docs/websites/website-listings.html).
+
+## 6. Use the optional blog
+
+The `blog/` folder demonstrates dated posts and categories. Add a post by copying a file in `blog/posts/`, changing its metadata, and writing the note. To remove the blog, remove its navbar entry, delete the folder, render, and verify navigation and search. The starter README records the same procedure.
+
+## 7. Preview, render, and commit
+
+```bash
+quarto preview
+```
+
+Preview after one small change. Stop the preview with **Ctrl+C**. Then build the complete static site:
+
+```bash
+quarto render
+```
+
+Test the home page, project grid, category filter, sort control, search, images, and every changed link. Inspect the terminal for warnings.
+
+```bash
+git status
+git diff
+git add _quarto.yml index.qmd about.qmd projects blog assets styles.css README.md .gitignore
+git diff --staged
+git commit -m "Add tested engineering portfolio project"
+```
+
+Adjust the file list to match your intended changes. Do not add `_site`, `.quarto`, secrets, or private evidence.
+
+## The problem
+
+Your new project does not appear correctly: its image is broken, its category is missing, or the render stops.
+
+**The essential skill:** use the first specific error, inspect the named source, make one change, and render again.
+
+**The challenge:** add one project and category, change the project ordering, repair one broken image and relative link, and explain how you found the correct Quarto option.
+
+**The stumbling block:** YAML indentation and relative paths can look plausible while pointing to a different structure than the rendered site expects.
+
+**The investigation:** search the official [Quarto website guide](https://quarto.org/docs/websites/), [listing guide](https://quarto.org/docs/websites/website-listings.html), and [search guide](https://quarto.org/docs/websites/website-search.html) using the exact option or error text.
+
+::: {.callout-tip collapse="true" title="Hint 1: concept clue"}
+Separate the failure: configuration, page metadata, file path, or page content.
+:::
+
+::: {.callout-tip collapse="true" title="Hint 2: documentation clue"}
+Search for `Quarto listing sort-ui filter-ui categories` or the exact YAML key named by the error.
+:::
+
+::: {.callout-tip collapse="true" title="Hint 3: technical clue"}
+Validate YAML spacing, confirm filename capitalization, then count folder levels from the page containing the relative link.
+:::
+
+## Check your work
+
+- `quarto render` completes without an unexplained warning.
+- Search finds text from the new project.
+- The listing filters by its new category and sorts by the selected field.
+- Images load at desktop and narrow widths and have useful alt text.
+- Internal links work from the rendered site.
+- `git status` shows only intended source files.
+
+## Save and submit
+
+Keep the complete source project. Submit a teacher-approved ZIP or repository plus a screenshot of the local rendered result and `git log --oneline`. Publishing is optional; if assigned, continue to [Publish Your Quarto Site with GitHub Pages](publish-github-pages.qmd).
+
+## Reflection
+
+What was the first useful error or observation? Which documentation page or search terms led to the fix, and what test proved it?
+
+## Summary
+
+You can now build and verify a small technical website from maintainable source. Use [Build a Technical Portfolio](../portfolio/) to decide what engineering evidence belongs in each project.

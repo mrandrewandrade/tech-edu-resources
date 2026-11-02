@@ -64,26 +64,48 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/design-fabrication/hand-tools/phone-holder.html",
             ],
         )
-        self.assertEqual(len(routes_by_course["tej"]), 22)
-        self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/circuits/parallel-circuits.html")
-        self.assertEqual(routes_by_course["tej"][1], "/commons/tej3-4/circuits/series-circuits.html")
+        self.assertEqual(len(routes_by_course["tej"]), 35)
+        self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/portfolio/index.html")
         self.assertEqual(
-            routes_by_course["tej"][5:7],
+            routes_by_course["tej"][1:7],
+            [
+                "/commons/tej3-4/electronics-library/components/schematic-basics.html",
+                "/commons/tej3-4/electronics-library/components/resistors.html",
+                "/commons/tej3-4/electronics-library/components/capacitors.html",
+                "/commons/tej3-4/electronics-library/components/diodes-leds.html",
+                "/commons/tej3-4/electronics-library/components/transistors.html",
+                "/commons/tej3-4/electronics-library/components/op-amps.html",
+            ],
+        )
+        self.assertEqual(routes_by_course["tej"][7], "/commons/tej3-4/circuits/parallel-circuits.html")
+        self.assertEqual(routes_by_course["tej"][12], "/commons/tej3-4/circuits/tinkercad-circuits.html")
+        self.assertEqual(
+            routes_by_course["tej"][13:15],
             [
                 "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
                 "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
             ],
         )
         self.assertEqual(
-            routes_by_course["tej"][18],
+            routes_by_course["tej"][26],
             "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
         )
         self.assertEqual(
-            routes_by_course["tej"][-3:],
+            routes_by_course["tej"][27:30],
             [
                 "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
                 "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
                 "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
+            ],
+        )
+        self.assertEqual(
+            routes_by_course["tej"][-5:],
+            [
+                "/commons/tej3-4/computational-engineering/jupyterlite.html",
+                "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
+                "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
+                "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
+                "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
             ],
         )
         self.assertFalse(any("submission" in route for route in routes_by_course["tej"]))
@@ -103,6 +125,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertEqual(
             directory_index_routes,
             {
+                "/commons/tej3-4/portfolio/index.html",
                 "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
                 "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
                 "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",

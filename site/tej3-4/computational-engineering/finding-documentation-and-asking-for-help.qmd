@@ -1,0 +1,261 @@
+---
+title: "Find Documentation and Ask for Programming Help"
+description: "Reproduce a coding problem, search official documentation and Stack Overflow effectively, and ask a complete technical question."
+categories: [Python, debugging, documentation, Stack Overflow, reproducible examples]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can reduce a problem to a minimal reproducible example.
+- I can search for a function, an exact error, and the documentation for my installed version.
+- I can distinguish a tutorial, user guide, API reference, and community answer.
+- I can ask the teacher or an online community a question that includes enough evidence to reproduce the issue.
+
+## Where this fits
+
+Basic schematics and the five KCL/KVL questions are already complete. This lesson begins the computational-verification stage: use code to check equations, diagnose faults, and document evidence before moving into capacitors and RC response.
+
+This is not a one-day skill. Begin with working code, then practise an easy documentation lookup, an exception-driven repair, and finally a plausible wrong answer that requires an independent check.
+
+## The help ladder
+
+Use the first level that can answer the question. Record what you learned before moving down the list.
+
+1. Read the last line of the error and the line that caused it.
+2. Reproduce the issue in the smallest possible cell.
+3. Inspect values, types, shapes, column names, units, versions, and file locations.
+4. Use Python or Jupyter help.
+5. Search the official documentation.
+6. Search existing Stack Overflow questions.
+7. Ask a complete question using the template below.
+
+The goal is not to avoid asking for help. The goal is to make the question answerable.
+
+## 1. Reproduce the issue
+
+Save the notebook, restart the kernel, and run from the first cell. Then make a small copy that still produces the same problem.
+
+```python
+import sys
+import pandas as pd
+
+print(sys.executable)
+print(sys.version)
+print("pandas", pd.__version__)
+```
+
+For a pandas problem, also inspect the data structure instead of guessing:
+
+```python
+print(type(data))
+print(data.shape)
+print(data.columns.tolist())
+print(data.head())
+print(data.dtypes)
+```
+
+Copy errors as text. Do not submit a photograph of code or an error when the text can be copied.
+
+::: {.callout-important title="Protect information before sharing"}
+Remove names, student numbers, tokens, passwords, private file paths, and confidential data. Replace a large or private dataset with a few invented rows that still reproduce the behaviour.
+:::
+
+## 2. Ask Python and Jupyter first
+
+Use the object you are actually calling:
+
+```python
+help(pd.read_csv)
+```
+
+In a Jupyter cell, a question mark shows the signature and documentation:
+
+```python
+pd.read_csv?
+```
+
+For a method on a DataFrame:
+
+```python
+data.dropna?
+```
+
+Read the **signature**, **parameters**, **returns**, **raises**, and **examples**. Check whether the documented requirement matches your input type, array shape, column name, path, or unit.
+
+## 3. Search the web deliberately
+
+A useful search normally contains:
+
+```text
+library + function + exact error or unexpected behaviour
+```
+
+Examples:
+
+```text
+pandas read_csv FileNotFoundError Jupyter relative path
+numpy linalg solve matrix must be square
+matplotlib plot x and y different first dimension
+```
+
+Put a distinctive error fragment in quotation marks when the search is too broad:
+
+```text
+pandas read_csv "No such file or directory" Jupyter
+```
+
+Limit a search to an authoritative site when needed:
+
+```text
+site:pandas.pydata.org pandas read_csv usecols
+site:numpy.org numpy linalg solve shape
+site:docs.python.org pathlib current working directory
+site:stackoverflow.com pandas KeyError column name
+```
+
+Do not paste the first result into the notebook. Compare it with the installed package version, understand which line changes, and verify the result independently.
+
+## 4. Read pandas documentation
+
+Use the [pandas getting-started material](https://pandas.pydata.org/docs/getting_started/index.html) when the concept is new, the [pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html) for explanations by topic, and the [pandas API reference](https://pandas.pydata.org/docs/reference/index.html) for the exact signature and behaviour of a function or method.
+
+For example, the [`pandas.read_csv` reference](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) answers questions about paths, separators, headers, selected columns, missing values, and returned objects.
+
+Record four pieces of documentation evidence:
+
+1. the page title and link;
+2. the package version shown on the page and your installed version;
+3. the relevant parameter, return value, exception, or example;
+4. one sentence explaining how that requirement applies to your code.
+
+## 5. Search Stack Overflow
+
+Search before posting. Start with the exact error, language, library, and function. Read more than the accepted code snippet:
+
+- Does the question describe the same input and goal?
+- Which package and Python versions were involved?
+- Is the answer old enough that the API may have changed?
+- Do comments or newer answers identify a limitation?
+- Can you explain the suggested change before running it?
+
+Stack Overflow community answers are leads, not authority. Confirm important details in the current official documentation and test the proposed fix on the minimal example.
+
+## 6. Create a minimal reproducible example
+
+Stack Overflow calls this an MRE: **minimal, reproducible example**.
+
+- **Minimal:** remove unrelated imports, cells, files, and data.
+- **Complete:** include every import, variable, and small input needed to run it.
+- **Reproducible:** restart and verify that the example produces the reported result.
+
+Example small dataset:
+
+```python
+import pandas as pd
+
+data = pd.DataFrame(
+    {
+        "voltage_V": [2.0, 4.0, 6.0],
+        "current_mA": [2.1, 4.0, 6.2],
+    }
+)
+
+print(data["current_ma"].mean())
+```
+
+The example is short, contains its own data, and reproduces the column-name problem without requiring somebody else to download a private CSV file.
+
+Read Stack Overflow's official guidance on [asking a good question](https://stackoverflow.com/help/how-to-ask) and creating a [minimal reproducible example](https://stackoverflow.com/help/minimal-reproducible-example) before posting.
+
+## 7. Ask the teacher using the same standard
+
+Do not send only “it does not work,” a full notebook with no explanation, or a screenshot with the important text cut off. Use this template in the notebook, email, or classroom help request.
+
+```markdown
+### Goal
+I am trying to ...
+
+### Expected result
+I expected ... because ...
+
+### Actual result
+Instead, ...
+
+### Exact error or failed check
+Paste the complete final exception line or the incorrect output as text.
+
+### Minimal code and input
+Paste the smallest runnable example.
+
+### Environment
+Operating system:
+Python version:
+Package versions:
+Jupyter kernel/interpreter path:
+
+### What I tried
+1. I ...
+2. I ...
+
+### Sources I checked
+- Documentation or question link:
+- Relevant requirement or example:
+
+### My current hypothesis
+I think the problem may be ... because ...
+
+### Focused question
+What assumption, input, or documented requirement should I check next?
+```
+
+This lets the teacher see your reasoning, reproduce the issue, and teach the missing idea instead of guessing what happened.
+
+## 8. Draft a Stack Overflow question
+
+Posting publicly is not required for this course. A student can draft the question for assessment or teacher review without creating an account or publishing it.
+
+A strong public question contains:
+
+1. a specific title that states the unexpected behaviour;
+2. a short explanation of the goal and context;
+3. expected and actual results;
+4. the exact error as text;
+5. a minimal reproducible example in code blocks;
+6. relevant Python, library, operating-system, and Jupyter versions;
+7. what was tried and why it did not answer the question;
+8. links to related documentation or questions;
+9. one focused question;
+10. appropriate tags such as `python`, `pandas`, and `jupyter-notebook`.
+
+Do not post the entire assignment and ask somebody to solve it. Do not include private information, classroom answer keys, copyrighted course material, or images of text that should be searchable and copyable.
+
+## Worked help-request example
+
+**Weak:** “Pandas is broken. My file will not load. What do I do?”
+
+**Stronger:**
+
+> In JupyterLab, `pd.read_csv("circuit-measurements.csv")` raises `FileNotFoundError`, although the CSV appears in my Windows Downloads folder. The notebook is running from WSL, and `Path.cwd()` reports `/home/student/tej-computational-engineering/notebooks`. I confirmed pandas 2.x and read the `read_csv` path documentation. I think I am confusing the Windows Downloads path with the notebook's Linux working directory. What is the cleanest way to place or reference the CSV so the notebook remains portable?
+
+The stronger request gives a goal, exact symptom, environment, evidence, hypothesis, and focused question.
+
+## Submission check
+
+- [ ] The issue can be reproduced after restarting the kernel.
+- [ ] The exact error or failed verification check is copied as text.
+- [ ] The example contains only the code and sample data needed to reproduce it.
+- [ ] Python, package, kernel, and operating-system details are included when relevant.
+- [ ] Search terms and documentation links are recorded.
+- [ ] The documented requirement is explained in the student's own words.
+- [ ] Attempts and their results are listed.
+- [ ] The help request includes a reasoned hypothesis and one focused question.
+- [ ] Private and irrelevant information has been removed.
+
+## Next step
+
+Use this protocol in [Notebook 3: Kirchhoff Systems](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb), then carry the same evidence standard into pandas data work, RC modelling, and the independent investigation.

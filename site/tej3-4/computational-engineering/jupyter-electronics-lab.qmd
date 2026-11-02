@@ -1,0 +1,147 @@
+---
+title: "Jupyter Electronics Lab"
+description: "A simulation-first electronics pathway students can complete before physical components and kits are available."
+categories: [Python, Jupyter, circuits, simulation, engineering preparation]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can use a notebook to predict circuit behaviour and check my equations.
+- I can distinguish a hand calculation, numerical model, circuit simulation, and physical measurement.
+- I can preserve code, graphs, checks, and explanations as reproducible engineering evidence.
+- I can prepare useful predictions now and add measurements later without restarting the investigation.
+
+## Why Jupyter comes before the hardware
+
+Physical components, instruments, soldering time, and kits may not be available at the same moment for every student. Jupyter provides meaningful engineering work while students wait. It can repeat calculations, sweep component values, solve systems, model change over time, analyze data, and expose assumptions.
+
+Jupyter does not prove that a circuit was wired correctly or that hardware is safe. Until a physical test occurs, describe results as **calculated**, **modelled**, or **simulated**, never measured.
+
+::: {.callout-important title="The evidence ladder"}
+**Predict by hand → Model in Jupyter → Simulate the circuit → Measure when available → Compare → Explain**
+
+Each layer answers a different question. Agreement builds confidence; disagreement creates a troubleshooting investigation.
+:::
+
+## Start-now pathway
+
+| Stage | Notebook | What students do now | What hardware can add later |
+|---|---|---|---|
+| Foundation review | [Notebook 8](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) | Compare small resistor, capacitor, LED, transistor-switch, and op-amp models and name each limitation. | Identify real parts, ratings, polarity, pinout, and measured behaviour. |
+| 1. Engineering calculations | [Notebook 1](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) | Use named quantities, SI units, Ohm's law, power, and assertions. | Compare one result with a meter reading. |
+| 2. Circuit networks | [Notebook 2](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) | Solve series, parallel, and mixed circuits and verify KCL, KVL, and power. | Build one network and explain tolerance differences. |
+| 3. Coupled equations | [Notebook 3](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) | Diagnose a seeded error, repair a plausible wrong answer, solve manually derived equations, and inspect residuals. | Compare with a multi-loop circuit when suitable equipment is available. |
+| 4. Relationships and design | [Notebook 4](../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) | Sweep values, graph relationships, and justify a design range. | Test selected points rather than every possible value. |
+| 5. Experimental evidence | [Notebook 5](../../assets/tej-computational/notebooks/05-experimental-data-analysis.ipynb) | Import provided CSV data and compare prediction with evidence. | Replace or extend the dataset with approved measurements. |
+| 6. Independent investigation | [Notebook 6](../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb) | Define a question, criterion, model, test, and supported conclusion. | Validate the most important assumption physically. |
+| 7. RC, op-amps, and calculus | [Notebook 7](../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) | Model RC response, slope, accumulated area, ideal integration, and ideal differentiation. | Compare with a simulator, teacher demonstration, ordinary op-amp, or optional XL741 build. |
+
+Students do not need to wait for Notebook 7 until an XL741 is soldered. The notebook deliberately supports a complete model-and-simulation submission with the physical column marked **not available**.
+
+## Standard notebook assignment
+
+Every notebook submission should contain:
+
+1. a plain-language question or design goal;
+2. named variables with units and stated assumptions;
+3. one hand prediction recorded before running the code;
+4. the smallest working calculation;
+5. at least one independent assertion, residual, conservation check, or limiting case;
+6. a graph with title, labelled axes, units, and legend where needed;
+7. Markdown that explains what the output means;
+8. one changed parameter and a prediction of the direction of change;
+9. a conclusion that separates calculation, model, simulation, and measurement;
+10. the downloaded `.ipynb` file, reopened and run from the first cell.
+
+## Read the documentation before asking for the fix
+
+Coding lessons deliberately include two kinds of faults:
+
+- an **error** that stops the program and produces a message;
+- a **plausible wrong answer** that runs without an error but fails a units, residual, conservation, or limiting-case check.
+
+The sequence always starts from success and increases gradually: run and explain known-good code, repair one incorrect keyword, diagnose an array-shape error, and finally find a silent unit error that produces a believable result.
+
+Use this routine before asking for line-by-line help:
+
+1. **Reproduce:** run the smallest cell that still shows the problem.
+2. **Read:** copy the exact error message, or state which verification check failed.
+3. **Inspect:** print the relevant values, types, shapes, and units.
+4. **Research:** try `help(function_name)`, `function_name?`, or an exact-phrase web search containing the library and function name. Prefer the official documentation.
+5. **Repair:** change the smallest possible part of the code and explain the documented requirement behind the change.
+6. **Verify:** restart the kernel, run from the first cell, and use an independent check to show that the result is now trustworthy.
+
+::: {.callout-note title="Required debugging evidence"}
+Submit the original symptom, the search terms used, the documentation source, the requirement you found, the repair, and the verification result. Copying a finished solution without this evidence does not complete the debugging task.
+:::
+
+Use [Find Documentation and Ask for Programming Help](finding-documentation-and-asking-for-help.qmd) for the full pandas, official-documentation, Stack Overflow, minimal-example, and teacher-help protocol.
+
+## A repeatable class cycle
+
+### Day 1: understand and predict
+
+Read the matching electronics notes, draw or interpret the schematic, identify variables and units, and complete one representative hand calculation.
+
+### Day 2: model and verify
+
+Run the working notebook, change only the assigned values, add an independent check, and explain whether the result is physically reasonable.
+
+### Day 3: investigate
+
+Sweep one component or condition across a justified range. Use a graph to identify a pattern, threshold, trade-off, or sensitive region.
+
+### Day 4: simulate or analyze evidence
+
+Compare the numerical model with a circuit simulator or a supplied dataset. Record differences without forcing them to agree.
+
+### Day 5: communicate and prepare for hardware
+
+Write a concise conclusion, identify the most important assumption, and specify the physical measurement that would test it. This becomes the pre-lab prediction when equipment is available.
+
+## RC and XL741 investigation without a kit
+
+Notebook 7 provides the complete start-now route:
+
+- calculate $\tau=RC$ and predict the 63.2% charging point;
+- graph capacitor voltage and rate of change;
+- approximate a derivative with finite differences;
+- approximate an integral with accumulated rectangles;
+- model ideal op-amp integrator and differentiator outputs;
+- change the time step and test numerical convergence;
+- document real op-amp limits that the ideal model omits;
+- prepare an evidence table for a later simulation or physical test.
+
+If only one XL741 kit is available, the teacher can assemble it gradually and use it as a later class demonstration. Students can contribute predicted values and test plans from their notebooks, then add shared demonstration data with its source clearly labelled. If kits are available to individuals, the same notebook becomes their pre-lab and analysis record.
+
+### What the available XL741 kit adds
+
+The photographed XL741 v2.0 assembly guide identifies a genuinely discrete circuit: thirteen 2N3904 NPN transistors, seven 2N3906 PNP transistors, two BAT85 diodes, eleven resistors, and a 33 pF ceramic compensation capacitor. That makes the kit useful after students have studied resistors, capacitors, diodes, transistors, and feedback.
+
+The guide's suggested first functional test is a unity-gain voltage follower using $+15$ V and $-15$ V supply rails, with the input kept within $\pm13$ V. Notebook 7 now includes that ideal pre-lab sweep. It deliberately does not claim to be a transistor-level simulation of the XL741.
+
+Assembly is a substantial optional activity rather than a requirement for the whole class. It includes many polarity- and orientation-sensitive parts, repeated solder joints, inspection, terminal hardware, and a controlled dual-supply power-up. Use the current manufacturer documentation and a teacher-approved current-limited supply for any build. The photographed manual remains a planning reference and is not republished here.
+
+## Assessment boundary
+
+A strong simulation-only notebook can demonstrate modelling, programming, mathematical reasoning, verification, and communication. It cannot demonstrate soldering, safe instrument placement, physical troubleshooting, or measured agreement. Grade those hardware outcomes only when students have a genuine opportunity to perform them.
+
+## Submission check
+
+- Restarting and running all cells completes without an unexpected error.
+- Inputs and outputs have units.
+- Assertions and residual checks pass.
+- Seeded faults include the error or failed check, search terms, documentation evidence, repair, and verification.
+- Graphs are readable and interpreted in Markdown.
+- Claims use calculated, modelled, simulated, or measured accurately.
+- Optional hardware absence is stated honestly, not treated as missing student work.
+- The downloaded notebook reopens successfully.
+
+## Next steps
+
+Begin with [Python Engineering Notebooks with JupyterLite](jupyterlite.qmd). Use the [local Jupyter pathway](local-python-jupyter.qmd) only when a school computer permits installation or the investigation needs packages and files beyond the browser environment.

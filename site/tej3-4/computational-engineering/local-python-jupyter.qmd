@@ -1,0 +1,282 @@
+---
+title: "Run Python and Jupyter on Your Own Computer"
+description: "Use a virtual environment to run the TEJ notebooks in WSL, Windows, macOS, or Linux without depending on JupyterLite."
+categories: [Python, JupyterLab, WSL, virtual environments, local setup]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can explain the difference between the Jupyter server, browser interface, and Python kernel.
+- I can create a project-specific virtual environment and install packages into it.
+- I can run Jupyter in WSL and open it safely in a normal Windows browser.
+- I can start, stop, reactivate, and diagnose a local Jupyter environment on macOS or Linux.
+
+## Why run Jupyter locally?
+
+JupyterLite is useful for starting quickly, but it runs inside browser storage and supports only the packages provided by its browser kernel. Local JupyterLab can use normal files, installed Python packages, larger datasets, hardware interfaces, and later measurement tools.
+
+Jupyter is still viewed in a browser, but the work happens locally:
+
+```text
+terminal starts Jupyter server → browser shows JupyterLab → selected Python kernel runs code
+```
+
+No public website is required after the software and course files are installed.
+
+## Before you start
+
+Use these instructions only on a computer where you are allowed to install software. Installing WSL may require administrator approval and a restart. On a managed school computer, use the approved environment or ask the teacher.
+
+Download and extract the [complete notebook bundle](../../assets/tej-computational/tej-computational-engineering-notebooks.zip), or obtain the same ZIP from the teacher. It contains the notebooks, sample CSV, and `requirements-jupyter.txt`.
+
+Choose one route:
+
+- **Windows with WSL:** run Python and Jupyter in Linux, then use Chrome, Edge, or Firefox in Windows.
+- **macOS or Linux:** run Python and Jupyter directly from the native terminal.
+- **Native Windows:** use the Python launcher and PowerShell without WSL.
+
+## Route A: Windows with WSL
+
+WSL is the Windows Subsystem for Linux. It provides a Linux command line and filesystem while Windows continues to supply the desktop and browser.
+
+### A1. Check or install WSL
+
+Open PowerShell and check the installed distributions:
+
+```powershell
+wsl --status
+wsl --list --verbose
+```
+
+If WSL is not installed and this is your own computer, follow the official [Microsoft WSL installation guide](https://learn.microsoft.com/windows/wsl/install). The normal installation command is run from an administrator PowerShell window:
+
+```powershell
+wsl --install -d Ubuntu
+```
+
+Restart if requested. Launch Ubuntu, wait for its first-time setup, and create the Linux username and password when prompted. This Linux password is separate from the Windows sign-in and is used when an authorized system change requires `sudo`.
+
+### A2. Install Python support in Ubuntu
+
+In the Ubuntu terminal, check Python first:
+
+```bash
+python3 --version
+python3 -m venv --help
+```
+
+If `venv` or `pip` is unavailable, install the Ubuntu packages on a computer where you have permission:
+
+```bash
+sudo apt update
+sudo apt install python3 python3-venv python3-pip
+```
+
+Do not use `sudo pip install`. System packages belong to Ubuntu; course packages belong inside the virtual environment created below.
+
+### A3. Put the course folder in the Linux filesystem
+
+Keep a Linux-run project under `/home`, not permanently under `/mnt/c`, for better performance and fewer cross-filesystem permission problems.
+
+From Ubuntu, open your Linux home folder in Windows File Explorer:
+
+```bash
+cd ~
+explorer.exe .
+```
+
+Extract the course ZIP and copy the `tej-computational-engineering` folder into that window. The result should contain:
+
+```text
+~/tej-computational-engineering/
+├── data/
+├── notebooks/
+├── README.txt
+└── requirements-jupyter.txt
+```
+
+Windows can also reach the same location through a path such as:
+
+```text
+\\wsl.localhost\Ubuntu\home\your-linux-username\tej-computational-engineering
+```
+
+### A4. Create and activate the virtual environment
+
+In Ubuntu:
+
+```bash
+cd ~/tej-computational-engineering
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements-jupyter.txt
+```
+
+The prompt normally begins with `(.venv)` after activation. Verify that Python and pip come from the project:
+
+```bash
+which python
+python -m pip --version
+```
+
+Both paths should point inside `~/tej-computational-engineering/.venv`.
+
+### A5. Start Jupyter in WSL and use the Windows browser
+
+Keep the Ubuntu terminal open and run:
+
+```bash
+python -m jupyter lab --no-browser
+```
+
+Jupyter prints one or more local URLs. Copy the complete URL containing the token, for example:
+
+```text
+http://localhost:8888/lab?token=...
+```
+
+Paste that URL into Chrome, Edge, or Firefox in Windows. WSL normally forwards Linux services to `localhost` on Windows, so the Windows browser can display the Jupyter server running inside Ubuntu. Do not share the token or bind the class server to a public network address.
+
+Open `notebooks/03-kirchhoff-systems.ipynb`, confirm that the selected kernel belongs to `.venv`, and run the working cells.
+
+To stop Jupyter, return to Ubuntu and press **Ctrl+C**. Confirm shutdown if asked. Then leave the environment with:
+
+```bash
+deactivate
+```
+
+### A6. Start it again later
+
+```bash
+cd ~/tej-computational-engineering
+source .venv/bin/activate
+python -m jupyter lab --no-browser
+```
+
+If the Windows browser cannot connect, keep the Ubuntu terminal running and try these checks before changing firewall or network settings:
+
+```bash
+python -m jupyter server list
+```
+
+- Copy the exact current URL instead of reusing an old token.
+- Try the printed `127.0.0.1` URL if the printed `localhost` URL does not open, or the reverse.
+- Confirm that Jupyter is still running and did not exit with an error.
+- Confirm that the URL is opened on the same Windows computer running WSL.
+- Ask before changing firewall, WSL networking, or server binding settings.
+
+Microsoft documents that Windows applications can normally reach a service running in WSL through [`localhost`](https://learn.microsoft.com/windows/wsl/networking).
+
+## Route B: macOS or Linux terminal
+
+### B1. Check Python
+
+```bash
+python3 --version
+python3 -m venv --help
+```
+
+On macOS, install a current Python 3 release from the official [Python downloads page](https://www.python.org/downloads/macos/) if it is missing. Do not modify Apple's system Python.
+
+On Linux, use the distribution's official packages. For Ubuntu or Debian, `python3-venv` and `python3-pip` provide the usual support. Ask before using `sudo` on a managed computer.
+
+### B2. Create the environment
+
+Open the terminal in the extracted `tej-computational-engineering` folder:
+
+```bash
+cd ~/tej-computational-engineering
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements-jupyter.txt
+```
+
+Python's official [`venv` documentation](https://docs.python.org/3/library/venv.html) explains that the environment has its own interpreter and installed packages, isolated from other projects.
+
+### B3. Run Jupyter
+
+```bash
+python -m jupyter lab
+```
+
+The normal browser should open automatically. If it does not, copy the complete local URL printed in the terminal and paste it into the browser.
+
+Stop the server with **Ctrl+C**. Reactivate it later with:
+
+```bash
+cd ~/tej-computational-engineering
+source .venv/bin/activate
+python -m jupyter lab
+```
+
+## Route C: native Windows PowerShell
+
+Use this route if WSL is unavailable and a normal per-user Python installation is permitted.
+
+```powershell
+py --version
+Set-Location "$HOME\tej-computational-engineering"
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install -r requirements-jupyter.txt
+.\.venv\Scripts\python.exe -m jupyter lab
+```
+
+Using the direct `.venv` interpreter works even when PowerShell activation scripts are blocked. Do not weaken the computer-wide execution policy for this course.
+
+## Verify the environment
+
+Run this in a notebook cell:
+
+```python
+import sys
+import numpy as np
+import pandas as pd
+import matplotlib
+
+print("Python executable:", sys.executable)
+print("Python:", sys.version)
+print("NumPy:", np.__version__)
+print("pandas:", pd.__version__)
+print("Matplotlib:", matplotlib.__version__)
+```
+
+The executable should point inside this project's `.venv`. Restart the kernel and run one supplied notebook from top to bottom.
+
+## Common issues
+
+| Problem | Evidence and next check |
+|---|---|
+| `python3` or `py` not found | Verify the selected operating-system route and reopen the terminal after installing Python. |
+| `venv` creation fails on Ubuntu | Confirm that `python3-venv` is installed for the active Ubuntu release. |
+| `ModuleNotFoundError` | Print `sys.executable`. Install the package with that environment's `python -m pip`, not an unrelated `pip`. |
+| Jupyter command is missing | Run the `.venv` interpreter with `python -m jupyter lab` and confirm `requirements-jupyter.txt` installed successfully. |
+| WSL browser cannot connect | Keep Jupyter running, copy the current token URL, try `localhost` and `127.0.0.1`, and run `python -m jupyter server list`. |
+| Notebook uses the wrong kernel | Choose **Kernel > Change Kernel** and select the Python interpreter inside `.venv`. |
+| CSV file cannot be found | Run `from pathlib import Path; print(Path.cwd())` and place the file relative to that working directory. |
+| Port 8888 is busy | Stop the previous server or run `python -m jupyter lab --port 8890`. Do not open a public firewall port. |
+| PowerShell blocks activation | Use `.\.venv\Scripts\python.exe` directly. |
+
+## Environment evidence to submit
+
+Record:
+
+1. operating system and route used;
+2. output of the version-check cell;
+3. the Python executable path;
+4. the command used to start Jupyter;
+5. a successful restart-and-run-all result;
+6. one problem encountered and the evidence used to resolve it.
+
+Do not submit passwords, Jupyter tokens, private home-directory details, or screenshots containing unrelated personal information.
+
+## Next steps
+
+Continue to [Find Documentation and Ask for Programming Help](finding-documentation-and-asking-for-help.qmd). The official [Jupyter installation page](https://jupyter.org/install) documents the basic `pip install jupyterlab` and `jupyter lab` workflow; this course uses `python -m pip` and a virtual environment so the intended interpreter is explicit.

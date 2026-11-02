@@ -1,0 +1,87 @@
+---
+title: "Component Foundations 2: Resistors"
+description: "Understand what a resistor is, how it is labelled and rated, and why circuits use it to limit current and divide voltage."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can distinguish the physical resistor from the quantity resistance.
+- I can read resistance, tolerance, and power information.
+- I can use Ohm's law and a power equation to check a resistor choice.
+- I can measure resistance safely with circuit power removed.
+
+## Resistance and resistors
+
+**Resistance** is opposition to current. Its symbol is $R$ and its unit is the ohm ($\Omega$). A **resistor** is a component manufactured to provide a useful resistance.
+
+Resistors are used to:
+
+- limit current;
+- create voltage dividers;
+- set transistor and amplifier operating conditions;
+- define logic inputs;
+- convert electrical energy into heat within a rated limit.
+
+A resistor is normally non-polarized, so either lead may face either direction. Its value and power rating still matter.
+
+## What is inside?
+
+Common through-hole resistors use a resistive film formed around an insulating body, with metal end caps and leads. The material and geometry determine resistance. *Open Circuits* can be used in class to inspect truthful internal construction; public notes use original descriptions rather than copied cutaways. [[2]](../../../references.qmd#ref-opencircuits2023)
+
+## Value, tolerance, and power
+
+A resistor description such as **4.7 kΩ, ±5%, 0.25 W** contains three different limits:
+
+- **4.7 kΩ** is nominal resistance;
+- **±5%** is the permitted manufacturing range;
+- **0.25 W** is the maximum power rating under stated conditions.
+
+For 4.7 kΩ at ±5%, the resistance can reasonably fall between $4.465\,\text{k}\Omega$ and $4.935\,\text{k}\Omega$.
+
+The common four-band colour code for 4.7 kΩ ±5% is yellow, violet, red, gold. Always confirm unfamiliar codes with the course reference or a meter.
+
+## Equations
+
+Ohm's law connects voltage, current, and resistance:
+
+$$V=IR$$
+
+Resistor power can be checked with:
+
+$$P=VI=I^2R=\frac{V^2}{R}$$
+
+Choose a resistor rating comfortably above the expected operating power. A calculated value below the printed rating is not permission to ignore temperature, enclosure, ventilation, pulses, or manufacturer derating.
+
+## Example: LED current limiting
+
+For a 5.0 V source and an LED with an approximate 2.0 V forward drop, a 330 Ω series resistor has about 3.0 V across it:
+
+$$I\approx\frac{5.0\,\text{V}-2.0\,\text{V}}{330\,\Omega}=9.09\,\text{mA}$$
+
+The resistor power is about:
+
+$$P_R=I^2R\approx27.3\,\text{mW}$$
+
+This simplified calculation is a design estimate. The real LED forward voltage and resistor value vary.
+
+## Five-question starter
+
+1. Explain the difference between resistance and a resistor.
+2. State the nominal value, tolerance, and power rating of a 2.2 kΩ, ±5%, 0.25 W resistor.
+3. Calculate the possible resistance range of a 1.0 kΩ ±5% resistor.
+4. A 9.0 V source is connected across 1.0 kΩ. Calculate current and resistor power.
+5. A student selects a 100 Ω resistor for a 5.0 V LED circuit with a 2.0 V LED drop. Calculate the estimated current and resistor power, then explain what else must be checked before building.
+
+## Jupyter and lab pathway
+
+- Use [Notebook 1](../../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) for Ohm's law and power.
+- Use [Notebook 4](../../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) to sweep resistance and graph current.
+- Adapt Grob Experiments 2-1 and 2-2 for identification and meter comparison.
+- Measure resistance only with power removed and stored energy discharged.
+
+**Textbook support:** Grob, Chapter 2, pp. 54-70. **Practice support:** Grob Problems Manual, Chapter 2. [[1, Ch. 2]](../../../references.qmd#ref-grob2016)
