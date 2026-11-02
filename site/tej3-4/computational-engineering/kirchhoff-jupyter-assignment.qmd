@@ -70,23 +70,44 @@ This checkpoint is a computational verification activity. No physical lab is req
 
 Follow the complete example once. Each line performs one algebra move, so you can reuse the method without reusing the numbers.
 
-### 1. Define the three currents
+### 1. Use Kirchhoff's Current Law to define the three currents
 
-Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the shared resistor.
+:::: {.tej-current-visual}
+<figure class="ter-circuit-figure" id="fig-question4-current-map">
+<img src="../../assets/electronics/schematics/kirchhoff-two-loop-network.svg" alt="Complete Question 4 two-loop circuit. I1 points to the right through the left loop resistor, I2 points to the right through the right loop resistor, and I3 points downward through the shared centre resistor." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-question4-current-map">Figure 1.</a> Read the current arrows before reading the equations. The top centre junction connects all three current paths. <a class="ter-figure-anchor" href="#fig-question4-current-map" aria-label="Link to Figure 1">#</a></figcaption>
+</figure>
 
-The currents oppose each other in the shared branch:
+::: {.tej-current-node-card}
+#### Kirchhoff's Current Law at the junction
+
+At the top centre junction:
+
+<div class="tej-current-flow" role="list" aria-label="Current directions at the top junction">
+  <div class="tej-current-flow__row is-entering" role="listitem"><span class="tej-current-flow__tag">$I_1$</span><strong>enters</strong><span>from the left</span></div>
+  <div class="tej-current-flow__row is-leaving" role="listitem"><span class="tej-current-flow__tag">$I_2$</span><strong>leaves</strong><span>to the right</span></div>
+  <div class="tej-current-flow__row is-leaving" role="listitem"><span class="tej-current-flow__tag">$I_3$</span><strong>leaves</strong><span>downward</span></div>
+</div>
+
+::: {.tej-current-equation}
+**current entering = current leaving**
 
 $$
-I_1-I_2-I_3=0,
+I_1=I_2+I_3
 $$
 
-so
-
 $$
-I_3=I_1-I_2.
+I_1-I_2-I_3=0
 $$
 
-In the first notebook Markdown cell, describe all three current directions in words. Explain what a negative value of $I_3$ would mean.
+$$
+\boxed{I_3=I_1-I_2}
+$$
+:::
+:::
+::::
+
+Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the shared resistor, as shown. In the first notebook Markdown cell, describe all three directions in words and explain what a negative value of $I_3$ would mean.
 
 ### 2. Derive Equation 1 from Loop 1
 
@@ -409,6 +430,23 @@ A negative current means the real current is opposite the arrow selected before 
 4. Save and download `studentnumber-lastname-kirchhoff-jupyter.ipynb`.
 5. Reopen the downloaded notebook and confirm that the Markdown, code, and output are present.
 6. Submit the `.ipynb` file through the assigned classroom system.
+
+## Later hands-on verification
+
+::: {.callout-important title="Build later - not required for this notebook submission"}
+Students can eventually test the model with a low-voltage circuit board. Start with a one-battery, three-resistor network to verify KCL and KVL. To reproduce a two-source problem like Question 4, use two isolated battery holders or a current-limited dual bench supply.
+
+A practical classroom system should include:
+
+- switched AA battery holders or a current-limited low-voltage supply - never wall voltage;
+- $1\,\mathrm{k\Omega}$ to $4.7\,\mathrm{k\Omega}$ resistors so currents remain in the milliampere range;
+- a breadboard or labelled terminal board with colour-coded current paths;
+- power-off wiring checks before connecting either source;
+- voltage measurements across each resistor, followed by $I=V/R$ to infer current before students attempt direct current measurement;
+- a comparison table for predicted, simulated, and measured values.
+
+Use the measured battery voltages in the equations because real batteries will not equal their printed values exactly. The physical goal is agreement within component and measurement tolerance, not perfect decimal matching.
+:::
 
 ## Summary and next lesson
 

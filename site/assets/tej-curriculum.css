@@ -110,6 +110,88 @@
   line-height: 1;
 }
 
+/* Pair a complete circuit map with the KCL reasoning that defines its currents. */
+.tej-current-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(17rem, 0.85fr);
+  gap: 1rem;
+  align-items: stretch;
+  margin: 1rem 0 1.5rem;
+}
+
+.tej-current-visual .ter-circuit-figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.tej-current-visual .ter-circuit-figure img {
+  width: 100%;
+  max-height: 26rem;
+}
+
+.tej-current-node-card {
+  padding: 1rem;
+  border: 1px solid #b8c9d8;
+  border-radius: 0.65rem;
+  background: linear-gradient(180deg, #f7fbff 0%, #eef6fc 100%);
+}
+
+.tej-current-node-card h4 {
+  margin-top: 0;
+  color: #17324d;
+}
+
+.tej-current-flow {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.tej-current-flow__row {
+  display: grid;
+  grid-template-columns: 2.75rem 4.5rem 1fr;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 0.55rem 0.65rem;
+  border-left: 0.35rem solid #1769aa;
+  border-radius: 0.4rem;
+  background: #fff;
+}
+
+.tej-current-flow__row.is-entering {
+  border-left-color: #2c7a4b;
+}
+
+.tej-current-flow__tag {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.2rem 0.35rem;
+  border-radius: 999px;
+  background: #17324d;
+  color: #fff;
+  font-weight: 800;
+}
+
+.tej-current-equation {
+  padding: 0.8rem;
+  border: 2px solid #e97828;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.tej-current-equation mjx-container[display="true"] {
+  margin: 0.45rem 0 !important;
+}
+
+@media (max-width: 860px) {
+  .tej-current-visual {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Keep long code and comparison tables inside the lesson column on phones. */
 main.content,
 main.content > section,
