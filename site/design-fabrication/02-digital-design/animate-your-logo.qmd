@@ -35,7 +35,52 @@ If the Google Docs link asks for access, use the printable handout and tell your
 
 Animated logos appear in game intros, creator channels, product launches, fashion promos, business videos, and portfolio reels. Motion can make the same logo feel energetic, calm, playful, precise, or premium.
 
-## What you will make
+## Part 1: Beginner software warm-up
+
+Complete this short practice before starting the full logo animation. The goal is to learn the controls, not make a masterpiece.
+
+### Make a four-second practice animation
+
+1. Open [smooth.video](https://smooth.video/).
+2. Select **Add media** at the top left and import one PNG. You may use your logo, your initials, or one simple shape.
+3. Click the object once on the canvas. A selection box should appear, and its row should be highlighted on the timeline.
+4. Drag the **playhead** to `0:00`. Make the object small and place it near the left side of the canvas. This is the starting state.
+5. Drag the playhead to `1:00`, then move the object into the centre. A **diamond** appears on its timeline row. That diamond is a keyframe.
+6. Drag the playhead to `2:00`. Use the corner handles or **Transform** controls to make the object larger and rotate it slightly. A second diamond appears.
+7. Drag the playhead to `3:00`. Change the object's position, opacity, or colour to create another keyframe.
+8. Drag the playhead to `4:00` and create a clean final position.
+9. Open the keyframe's easing control and choose **Smooth** for at least one movement.
+10. Press the **space bar** or select **Play**. Watch the entire four seconds and fix any jumpy motion.
+11. Select **Menu > Save project** and save the editable `.smooth` file.
+12. Select **Export**, choose **MP4** or **GIF**, and reopen the downloaded file to confirm that it plays.
+
+::: {.callout-tip title="How do I add a keyframe?"}
+You normally do not need an **Add keyframe** button. **Move the playhead first. Change the selected object second.** The change you make at that time becomes a diamond-shaped keyframe automatically.
+:::
+
+| Time | What you do | What smooth.video records |
+|---|---|---|
+| `0:00` | Small object on the left | Starting state |
+| `1:00` | Move it to the centre | First keyframe |
+| `2:00` | Enlarge and rotate it | Second keyframe |
+| `3:00` | Change position, opacity, or colour | Third keyframe |
+| `4:00` | Create a clean final position | Final keyframe |
+
+::: {.callout-warning title="No diamond appeared?"}
+Confirm that the object is selected, move the playhead away from `0:00`, and then change its position, size, rotation, opacity, or colour. Changing the object only at `0:00` edits its starting state instead of adding a later keyframe.
+:::
+
+### Part 1 submission
+
+Submit these items in the **Animation Software Warm-Up** assignment:
+
+- the exported MP4 or GIF;
+- the editable `.smooth` project file; and
+- a private Classroom comment naming the easiest control and the hardest control.
+
+Before submitting, confirm that the animation has at least four keyframes, at least two kinds of change, smooth playback, and an exported file that opens correctly.
+
+## Part 2: Full logo animation
 
 Make a **5–8 second animated intro** from the logo you already designed.
 
@@ -57,7 +102,7 @@ Your animation must have:
 
 ![Three six-second timing plans show how fast, calm, and polished pacing create different emotions.](../../assets/animate-your-logo/timing-emotion-guide.svg){fig-alt="Three six-second timing plans compare punchy gaming or creator motion, clear personal-brand motion, and polished business motion."}
 
-## See a complete example
+## Part 2 examples and guidance {#see-a-complete-example}
 
 This six-second example reuses the four-part AA mountain logo from the earlier Photopea lesson. The sun rotates into place, the peaks arrive from opposite sides, the river slides in, the complete mark holds, and everything fades out.
 
@@ -238,9 +283,9 @@ smooth.video runs in the browser, needs WebGL, and does not require an account. 
 | **3: Improve** | Test timing and legibility. Use feedback to fix at least one weak moment. | Export **version 2** and explain what improved. |
 | **4: Finish and submit** | Peer test, make final fixes, export, reopen the result, and submit manually in Google Classroom. | All files and the design sentence are submitted. |
 
-## Make the animation in smooth.video
+## Part 2: Build the full logo animation
 
-### Start here: the easiest complete version
+### Start with a simple complete draft
 
 Use this version first. It moves one PNG, takes about ten minutes, and gives you a working beginning, middle, and ending. You can add separate parts after it works.
 
@@ -499,3 +544,4 @@ This assignment asks you to apply design-process skills, communicate an idea thr
 You animated the logo you already designed, used timing to communicate a brand feeling, tested the result, improved it, and exported a file that other people can watch.
 
 **Next:** use the final animation as an intro for a portfolio, product demo, presentation, or creator video.
+
