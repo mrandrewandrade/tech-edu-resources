@@ -20,6 +20,7 @@ This guide supports the student assignment [Bring Your Brand to Life: Animate Yo
 [Open the project-launch slides](https://docs.google.com/presentation/d/1o2W4UskTUljoCi4y4d5t0GpXlWVc1w9QJXwY6u-ck3M/edit?usp=drivesdk){.btn .btn-outline-primary}
 [Open the editable student workspace](https://docs.google.com/document/d/10w0DbQ5fCOVRLjd0jbYHOhSq1swqOBaIixB52jIvPCo/edit?usp=drivesdk){.btn .btn-outline-primary}
 [Make a student copy](https://docs.google.com/document/d/10w0DbQ5fCOVRLjd0jbYHOhSq1swqOBaIixB52jIvPCo/copy){.btn .btn-primary}
+[Open the step-by-step screencast](../../assets/animate-your-logo/smooth-video-beginner-screencast.mp4){.btn .btn-primary}
 [Download the printable student handout](../../assets/animate-your-logo/animate-your-logo-handout.pdf){.btn .btn-outline-secondary}
 
 ::: {.callout-warning title="Drive ownership handoff required"}
@@ -38,6 +39,7 @@ The launch deck and student workspace are temporarily owned by the teacher's per
 
 ### Teacher demonstration files
 
+- [Captioned smooth.video screencast](../../assets/animate-your-logo/smooth-video-beginner-screencast.mp4)
 - [Animated AA example](../../assets/animate-your-logo/aa-logo-motion-example.gif)
 - [Advanced Technology Commons emblem example](../../assets/branding/emblem/technology-commons-emblem-motion.gif)
 - [Python source for the advanced emblem generator](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/scripts/build_animate_your_logo_assets.py)
@@ -47,7 +49,7 @@ The launch deck and student workspace are temporarily owned by the teacher's per
 
 The AA logo is an inspection model. Ask students to identify the order, timing changes, hold, and ending before showing the editor.
 
-The Technology Commons emblem is an optional extension model. It shows that the same timeline skills can support a more complex transformation when the artwork is prepared as separate elements first. Emphasize that smooth.video can animate imported layers, but it does not automatically split a flattened PNG into the arrow halves, lighthouse supports, roots, waves, or hands. Three to five well-timed parts are enough for a successful student submission.
+The Technology Commons emblem is an optional teacher or coding extension. It is not part of the required student path. It shows that the same timeline skills can support a more complex transformation when the artwork is prepared as separate elements first. Emphasize that smooth.video can animate imported layers, but it does not automatically split a flattened PNG into the arrow halves, lighthouse supports, roots, waves, or hands. Three to five well-timed parts are enough for a successful student submission.
 
 ## Learning evidence
 
@@ -71,7 +73,7 @@ Keep the launch under 12 minutes so students can start making.
 7. Show **Menu > Save project** and **Export > MP4** or **GIF**.
 8. Reopen the exported result.
 
-The student page includes a labelled interface map and a complete sequence. The compact project-launch deck mirrors this demonstration without turning the assignment into four lectures.
+The student page begins with a real, captioned screencast that has pause, replay, and full-screen controls. It then follows one six-step path: watch, make a complete draft, add a keyframe change, match the feeling, test, and export. The compact project-launch deck mirrors this sequence without turning the assignment into four lectures.
 
 ## Four-day sequence
 
@@ -124,7 +126,7 @@ Use the student-facing rubric on the assignment page or printable handout. Both 
 - Give the editable `.smooth` starter to students who need a functioning timeline to inspect.
 - Let students use Photopea for a frame-by-frame GIF without penalty.
 - Encourage keyboard preview with the space bar and short work-test-save cycles.
-- Pair written directions with the labelled interface map; avoid requiring students to learn from video alone.
+- Pair the controllable screencast with the short written steps and screenshots; avoid requiring students to learn from video alone.
 - Let students choose low-motion fades or short slides when energetic motion is uncomfortable.
 - The web example swaps its animated GIF for a still frame when the device requests reduced motion.
 - Do not require audio. It is not assessed and can create access, copyright, and classroom-noise barriers.
@@ -164,7 +166,7 @@ These points were checked against the live tools and their current documentation
 - A `.smooth` file is the portable editable project. Browser autosave alone should not be treated as a submission copy.
 - GIF cannot preserve a transparent background in smooth.video. Use a planned background or another teacher-approved format.
 - Smooth.video requires WebGL and does not provide real-time collaboration.
-- The linked Photopea walkthrough was checked for the `_a_` frame-layer naming and GIF-export workflow.
+- The linked Photopea walkthrough was checked for the `_a_` frame-layer naming and GIF-export workflow. It opens directly on YouTube because its owner has disabled playback inside other websites.
 - The short inspiration reel is labelled as inspiration only. It is not presented as smooth.video instruction.
 
 School filtering, device policies, browser extensions, and local storage restrictions can change. Test the student environment before Day 1 and keep the fallback available.
