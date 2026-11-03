@@ -57,6 +57,28 @@ def notebook(title: str, goal: str, prior: str, cells: list[dict[str, object]]) 
     }
 
 
+def beginner_notebook(title: str, cells: list[dict[str, object]]) -> dict[str, object]:
+    opening = md(
+        f"# {title}\n\n"
+        "**Learning goal:** Run simple Python cells, store values in variables, recognize basic types, and use one small NumPy array.\n\n"
+        "**Why it matters:** Python can repeat calculations and keep the calculation beside your explanation.\n\n"
+        "**Prior knowledge:** No previous Python, Jupyter, or NumPy experience is needed.\n\n"
+        "> A notebook is a page made of boxes called cells. Run one cell at a time with **Shift+Enter**.\n"
+    )
+    notebook_cells = copy.deepcopy([opening, *cells])
+    for index, cell in enumerate(notebook_cells, start=1):
+        cell["id"] = f"cell-{index:02d}"
+    return {
+        "cells": notebook_cells,
+        "metadata": {
+            "kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
+            "language_info": {"name": "python", "version": "3"},
+        },
+        "nbformat": 4,
+        "nbformat_minor": 5,
+    }
+
+
 COMMON_CLOSE = [
     md(
         "## Common errors\n\n"
@@ -74,6 +96,213 @@ COMMON_CLOSE = [
 
 
 def notebooks() -> dict[str, dict[str, object]]:
+    n0 = beginner_notebook(
+        "Notebook 0: Python First Steps",
+        [
+            md(
+                "## Before you type anything\n\n"
+                "A **Markdown cell** contains directions or your written answer. A **code cell** contains Python. "
+                "Click a cell once and press **Shift+Enter**. Work from top to bottom. If a cell shows a red message, "
+                "stop and read the last line before changing anything.\n"
+            ),
+            md("## Working demonstration 1: run one line\n\nClick the code cell below. Press **Shift+Enter**.\n"),
+            code("print('Hello, TEJ!')\n"),
+            md(
+                "You should see `Hello, TEJ!` under the cell. `print()` tells Python to display something. Text goes "
+                "inside quotation marks.\n\n"
+                "### Your turn\n\nChange only the words inside the quotation marks. Run the cell again.\n"
+            ),
+            code("# TODO 1: replace the words, but keep the quotation marks.\nprint('Type your message here')\n"),
+            md("## Working demonstration 2: use Python as a calculator\n\nRun this cell. Read each printed answer.\n"),
+            code(
+                "print('2 + 3 =', 2 + 3)\n"
+                "print('10 - 4 =', 10 - 4)\n"
+                "print('3 × 5 =', 3 * 5)\n"
+                "print('12 ÷ 4 =', 12 / 4)\n"
+            ),
+            md(
+                "### Tiny challenge\n\n"
+                "Change the numbers so the answer is `10`.\n\n"
+                "**Hint:** keep the `+` sign and change only the two numbers.\n"
+            ),
+            code("# TODO 2: change the two numbers.\nanswer = 2 + 3\nprint(answer)\n"),
+            md(
+                "## Working demonstration 3: give values names\n\n"
+                "A **variable** is a name that stores a value. The `=` sign stores the value on the right in the name "
+                "on the left. Read `voltage_V = 9.0` as “store 9.0 in voltage_V.”\n"
+            ),
+            code(
+                "voltage_V = 9.0\n"
+                "resistance_ohm = 1000\n"
+                "component_name = 'resistor'\n"
+                "circuit_ready = False\n\n"
+                "print(voltage_V)\n"
+                "print(resistance_ohm)\n"
+                "print(component_name)\n"
+                "print(circuit_ready)\n"
+            ),
+            md(
+                "## Four basic types\n\n"
+                "A **type** tells Python what kind of value it has.\n\n"
+                "| Type | Meaning | Example |\n"
+                "|---|---|---|\n"
+                "| `int` | whole number | `1000` |\n"
+                "| `float` | number with a decimal point | `9.0` |\n"
+                "| `str` | text inside quotation marks | `'resistor'` |\n"
+                "| `bool` | `True` or `False` | `False` |\n\n"
+                "Run the next cell to ask Python for each type.\n"
+            ),
+            code(
+                "print(type(resistance_ohm))\n"
+                "print(type(voltage_V))\n"
+                "print(type(component_name))\n"
+                "print(type(circuit_ready))\n"
+            ),
+            md("### Your turn\n\nComplete the four values. Run the cell and check the four types.\n"),
+            code(
+                "# TODO 3: replace each starter value with the requested type.\n"
+                "my_whole_number = 0\n"
+                "my_decimal_number = 0.0\n"
+                "my_text = 'replace this text'\n"
+                "my_true_or_false = False\n\n"
+                "print(type(my_whole_number))\n"
+                "print(type(my_decimal_number))\n"
+                "print(type(my_text))\n"
+                "print(type(my_true_or_false))\n"
+            ),
+            md(
+                "## Working demonstration 4: calculate with variables\n\n"
+                "Ohm's law is $I=V/R$. Python uses `/` for division. The first answer is in amperes. Multiplying by "
+                "1000 converts amperes to milliamperes.\n"
+            ),
+            code(
+                "voltage_V = 9.0\n"
+                "resistance_ohm = 1000.0\n"
+                "current_A = voltage_V / resistance_ohm\n"
+                "current_mA = current_A * 1000\n\n"
+                "print('Current in amperes:', current_A)\n"
+                "print('Current in milliamperes:', current_mA)\n"
+            ),
+            md(
+                "### Your turn\n\n"
+                "Change the resistance to `2000.0`. Before running the cell, write **increase** or **decrease** in the "
+                "prediction line. Then run it.\n"
+            ),
+            code(
+                "# TODO 4: change the resistance and complete the prediction.\n"
+                "test_voltage_V = 9.0\n"
+                "test_resistance_ohm = 1000.0\n"
+                "prediction = 'increase or decrease?'\n"
+                "test_current_mA = test_voltage_V / test_resistance_ohm * 1000\n\n"
+                "print('Prediction:', prediction)\n"
+                "print('Current:', test_current_mA, 'mA')\n"
+            ),
+            md(
+                "## Working demonstration 5: store several values in a list\n\n"
+                "A **list** keeps several values together. Square brackets make the list. Python counts positions from "
+                "zero, so `[0]` selects the first value.\n"
+            ),
+            code(
+                "voltage_list_V = [1.5, 3.0, 4.5]\n"
+                "print('Complete list:', voltage_list_V)\n"
+                "print('First value:', voltage_list_V[0])\n"
+                "print('Second value:', voltage_list_V[1])\n"
+                "print('Number of values:', len(voltage_list_V))\n"
+            ),
+            md(
+                "### Your turn\n\n"
+                "Replace the three starter values with `2.0`, `4.0`, and `6.0`. Then print the third value by changing "
+                "the index.\n"
+            ),
+            code(
+                "# TODO 5: replace the values and change the index.\n"
+                "my_voltage_list_V = [0.0, 0.0, 0.0]\n"
+                "print('Third value:', my_voltage_list_V[0])\n"
+            ),
+            md(
+                "## Working demonstration 6: meet NumPy\n\n"
+                "NumPy is a Python library for working with groups of numbers. `import numpy as np` loads the library "
+                "and gives it the short name `np`. `np.array()` changes a list into a NumPy array.\n"
+            ),
+            code(
+                "import numpy as np\n\n"
+                "voltage_array_V = np.array([1.5, 3.0, 4.5])\n"
+                "print(voltage_array_V)\n"
+                "print(type(voltage_array_V))\n"
+            ),
+            md(
+                "## One calculation, three answers\n\n"
+                "NumPy can divide every number in the array by the same resistance. Run this cell.\n"
+            ),
+            code(
+                "resistance_ohm = 1000.0\n"
+                "current_array_mA = voltage_array_V / resistance_ohm * 1000\n"
+                "print('Voltage:', voltage_array_V, 'V')\n"
+                "print('Current:', current_array_mA, 'mA')\n"
+            ),
+            md(
+                "## Final mini-assignment\n\n"
+                "1. Replace the voltage values with `2.0`, `4.0`, and `6.0`.\n"
+                "2. Replace the resistance with `2000.0`.\n"
+                "3. Predict whether the largest current will be above or below `5 mA`.\n"
+                "4. Run the cell.\n"
+                "5. Replace the bracketed Markdown prompts below.\n"
+            ),
+            code(
+                "# TODO 6: complete the values, then run the cell.\n"
+                "final_voltage_V = np.array([1.0, 2.0, 3.0])\n"
+                "final_resistance_ohm = 1000.0\n"
+                "final_current_mA = final_voltage_V / final_resistance_ohm * 1000\n\n"
+                "print('Current:', final_current_mA, 'mA')\n\n"
+                "# These automatic checks should finish without an error.\n"
+                "assert len(final_current_mA) == 3\n"
+                "assert np.all(final_current_mA > 0)\n"
+                "print('Checks passed.')\n"
+            ),
+            md(
+                "### My explanation\n\n"
+                "- My prediction: `[above or below 5 mA]`\n"
+                "- What happened: `[state the largest current]`\n"
+                "- One thing I learned about variables, lists, or arrays: `[your sentence]`\n"
+            ),
+            md(
+                "## Optional error challenge\n\n"
+                "Run `print(voltage_aray_V)`. It contains a spelling mistake and should produce a `NameError`. Read the "
+                "last line, compare the spelling with `voltage_array_V`, and repair it.\n\n"
+                "**Hint:** the correct name contains two `r` letters in `array`.\n"
+            ),
+            code(
+                "# Optional: remove the first #, run the line, then repair the name.\n"
+                "# print(voltage_aray_V)\n"
+            ),
+            md(
+                "## Check your work\n\n"
+                "- Every code cell has been run from top to bottom.\n"
+                "- TODO 1 through TODO 6 are complete.\n"
+                "- The final cell prints three positive currents and `Checks passed.`\n"
+                "- Every bracketed Markdown prompt has been replaced.\n"
+            ),
+            md(
+                "## Save and submit\n\n"
+                "Download the notebook as `studentnumber-lastname-python-first-steps.ipynb`. Example: "
+                "`123456789-Smith-python-first-steps.ipynb`. Keep the `.ipynb` ending.\n"
+            ),
+            md(
+                "## Common errors\n\n"
+                "- `NameError`: check the spelling of the variable and run the cell that creates it.\n"
+                "- `SyntaxError`: check quotation marks, brackets, and punctuation.\n"
+                "- Wrong or old answer: choose **Kernel > Restart Kernel and Run All Cells**.\n"
+            ),
+            md(
+                "## Reflection\n\n"
+                "What is the difference between a variable, a list, and a NumPy array? Give one example of each from "
+                "this notebook.\n\n"
+                "## What comes next\n\n"
+                "Notebook 1 adds loops, functions, graphs, documentation, and a larger resistor investigation.\n"
+            ),
+        ],
+    )
+
     n1 = notebook(
         "Notebook 1: Python and NumPy Foundations",
         "Use Jupyter cells, Python variables and functions, NumPy arrays, plots, documentation, and verification checks.",
@@ -1329,6 +1558,7 @@ def notebooks() -> dict[str, dict[str, object]]:
     )
 
     return {
+        "00-python-first-steps.ipynb": n0,
         "01-engineering-calculator.ipynb": n1,
         "02-series-parallel-calculations.ipynb": n2,
         "03a-two-loop-to-matrix-bridge.ipynb": n3a,
@@ -1393,7 +1623,7 @@ def build_collection_zip() -> None:
     shutil.copytree(DATA_ROOT, stage / "data")
     shutil.copy2(ASSET_ROOT / "requirements-jupyter.txt", stage / "requirements-jupyter.txt")
     (stage / "README.txt").write_text(
-        "Open the nine notebooks in order or use the notebook matched to the current electronics lesson.\n"
+        "Open the ten notebooks in order or use the notebook matched to the current electronics lesson.\n"
         "Upload data/circuit-measurements.csv beside Notebook 5. Notebook 7 works without physical hardware.\n"
         "For local JupyterLab, create a virtual environment and install requirements-jupyter.txt.\n"
         "Browser storage is not a backup: download work after every JupyterLite session.\n",

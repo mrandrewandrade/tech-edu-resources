@@ -11,9 +11,9 @@ execute: {enabled: false}
 
 ## Where this fits
 
-Complete this lesson **before** [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd). It assumes that you know Ohm's law and metric prefixes, but it does not assume previous Python experience or linear algebra.
+Complete [Python First Steps in Jupyter](python-first-steps.qmd) **before** this lesson. This notebook assumes that you can run cells, use simple variables, recognize `int`, `float`, `str`, and `bool`, and select an item from a list. Complete this lesson **before** [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd).
 
-The sequence is:
+The sequence in this second notebook is:
 
 **run working code → change one value → use arrays → write a function → read documentation → repair an error → graph and explain**
 

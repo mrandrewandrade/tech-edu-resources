@@ -1,0 +1,181 @@
+---
+title: "Assignment: Python First Steps in Jupyter"
+description: "Learn what a notebook is, run simple Python, use variables and types, and finish with one small NumPy array."
+categories: [Python, Jupyter, beginner, variables, NumPy]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Learning goals
+
+- I can tell the difference between a Markdown cell and a code cell.
+- I can run one Python cell and change a value.
+- I can recognize a number, text, `True` or `False`, and a list.
+- I can use one small NumPy array to calculate three answers.
+
+## Why this is useful
+
+Python can act like a calculator, remember values, and repeat the same calculation. A Jupyter notebook keeps the directions, code, answers, and your explanation on one page.
+
+## What you will make
+
+You will complete a small notebook that starts with `print('Hello, TEJ!')`. By the end, you will use three voltages and one resistance to calculate three currents.
+
+You do **not** need previous Python, Jupyter, NumPy, or linear-algebra experience.
+
+## Before you start
+
+::: {.callout-important title="Open the beginner notebook"}
+1. Download [Notebook 0: Python First Steps](../../assets/tej-computational/notebooks/00-python-first-steps.ipynb).
+2. Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**.
+3. In JupyterLite, click **Upload Files**.
+4. Choose `00-python-first-steps.ipynb` from your Downloads folder.
+5. Double-click the uploaded notebook.
+6. Choose **Python (Pyodide)** if JupyterLite asks for a kernel.
+:::
+
+Use the [step-by-step JupyterLite guide](jupyterlite.qmd) if the notebook does not open. The [local Jupyter guide](local-python-jupyter.qmd) is an optional alternative for WSL, Windows, macOS, or Linux.
+
+## 1. Learn the two cell types
+
+| Cell type | What it contains | What you do |
+|---|---|---|
+| Markdown | directions and written answers | double-click to edit, then press **Shift+Enter** |
+| Code | Python instructions | click once, then press **Shift+Enter** |
+
+Work from the top of the notebook to the bottom. Run every working example before changing it.
+
+## 2. Print one line
+
+Run:
+
+```python
+print("Hello, TEJ!")
+```
+
+You should see `Hello, TEJ!` under the cell. Change only the words inside the quotation marks and run it again.
+
+## 3. Use Python as a calculator
+
+The notebook shows four operations:
+
+```python
+2 + 3
+10 - 4
+3 * 5
+12 / 4
+```
+
+Python uses `*` for multiplication and `/` for division. Complete the tiny challenge by changing two numbers so the answer is `10`.
+
+## 4. Store values in variables
+
+A **variable** is a name that stores a value.
+
+```python
+voltage_V = 9.0
+```
+
+Read this as “store `9.0` in `voltage_V`.” The `=` sign stores the value; it is not asking a question.
+
+## 5. Recognize four basic types
+
+| Python type | Plain meaning | Example |
+|---|---|---|
+| `int` | whole number | `1000` |
+| `float` | number with a decimal point | `9.0` |
+| `str` | text inside quotation marks | `"resistor"` |
+| `bool` | `True` or `False` | `False` |
+
+Run `type(value)` to ask Python what kind of value it is. Complete the four starter variables in the notebook.
+
+## 6. Calculate with variables
+
+The notebook uses Ohm's law:
+
+$$
+I=\frac{V}{R}
+$$
+
+```python
+current_A = voltage_V / resistance_ohm
+```
+
+Change one resistance. Predict whether current will increase or decrease before running the cell.
+
+## 7. Store several values in a list
+
+A **list** stores several values inside square brackets:
+
+```python
+voltage_list_V = [1.5, 3.0, 4.5]
+```
+
+Python starts counting positions at zero:
+
+- `[0]` selects the first value;
+- `[1]` selects the second value;
+- `[2]` selects the third value.
+
+Replace the starter list and print its third value.
+
+## 8. Meet one NumPy array
+
+NumPy is a Python library for groups of numbers.
+
+```python
+import numpy as np
+voltage_array_V = np.array([1.5, 3.0, 4.5])
+```
+
+The import loads NumPy. The short name `np` keeps later commands brief. The notebook then divides all three voltages by one resistance and produces three currents.
+
+Do not worry about matrices, shapes, filters, plotting, or functions yet. Those belong to the next notebook.
+
+## 9. Complete the mini-assignment
+
+Use:
+
+- voltages of `2.0`, `4.0`, and `6.0` volts;
+- a resistance of `2000.0` ohms.
+
+Before running the cell, predict whether the largest current will be above or below `5 mA`. Run the cell and complete the three short Markdown prompts.
+
+## Check your work
+
+- TODO 1 through TODO 6 are complete.
+- Every cell has been run from top to bottom.
+- The final code cell prints three positive currents.
+- The final code cell prints `Checks passed.`
+- Every bracketed Markdown prompt contains your own answer.
+
+## Save and submit
+
+Choose **File > Download**. Rename the file:
+
+```text
+studentnumber-lastname-python-first-steps.ipynb
+```
+
+Example: `123456789-Smith-python-first-steps.ipynb`. Keep the `.ipynb` ending.
+
+## Common issues
+
+| Problem | Try this |
+|---|---|
+| Nothing happens | Click inside the cell and press **Shift+Enter**. |
+| `NameError` | Check the variable spelling and run the earlier cell that creates it. |
+| `SyntaxError` | Check quotation marks, brackets, and punctuation. |
+| The answer looks old | Choose **Kernel > Restart Kernel and Run All Cells**. |
+| NumPy does not load | Confirm that the selected kernel is **Python (Pyodide)**. |
+
+## Summary
+
+You ran Python, used a calculator, stored values in variables, recognized four basic types, selected values from a list, and used one NumPy array.
+
+Next, continue to [Python and NumPy Foundations](python-numpy-foundations.qmd) for loops, functions, graphs, documentation, and the resistor investigation.
+
+The sequence follows the plain progression used by the official [Python introduction](https://docs.python.org/3/tutorial/introduction.html) and [NumPy beginner guide](https://numpy.org/doc/stable/user/absolute_beginners.html): numbers and text first, then lists, then arrays.

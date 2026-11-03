@@ -10,9 +10,9 @@ NOTEBOOKS = ASSETS / "tej-computational" / "notebooks"
 
 
 class TejComputationalResourceTests(unittest.TestCase):
-    def test_nine_real_notebooks_have_required_learning_structure(self) -> None:
+    def test_ten_real_notebooks_have_required_learning_structure(self) -> None:
         paths = sorted(NOTEBOOKS.glob("*.ipynb"))
-        self.assertEqual(len(paths), 9)
+        self.assertEqual(len(paths), 10)
         required = (
             "Learning goal",
             "Why it matters",
@@ -31,6 +31,21 @@ class TejComputationalResourceTests(unittest.TestCase):
             for phrase in required:
                 self.assertIn(phrase.lower(), text.lower(), f"{phrase} missing from {path.name}")
             self.assertTrue(any(cell.get("cell_type") == "code" for cell in notebook["cells"]))
+
+        first_steps = json.loads((NOTEBOOKS / "00-python-first-steps.ipynb").read_text(encoding="utf-8"))
+        first_steps_text = "".join("".join(cell.get("source", [])) for cell in first_steps["cells"])
+        for phrase in (
+            "No previous Python",
+            "Shift+Enter",
+            "Four basic types",
+            "variable",
+            "list",
+            "np.array",
+            "One calculation, three answers",
+            "TODO 1 through TODO 6",
+            "studentnumber-lastname-python-first-steps.ipynb",
+        ):
+            self.assertIn(phrase.lower(), first_steps_text.lower())
 
         foundations = json.loads((NOTEBOOKS / "01-engineering-calculator.ipynb").read_text(encoding="utf-8"))
         foundations_text = "".join("".join(cell.get("source", [])) for cell in foundations["cells"])
@@ -63,6 +78,15 @@ class TejComputationalResourceTests(unittest.TestCase):
             self.assertTrue(zipfile.is_zipfile(archive_path), archive_path)
             with zipfile.ZipFile(archive_path) as archive:
                 self.assertGreater(len(archive.namelist()), 5)
+
+        notebook_archive = ASSETS / "tej-computational" / "tej-computational-engineering-notebooks.zip"
+        with zipfile.ZipFile(notebook_archive) as archive:
+            self.assertIn(
+                "tej-computational-engineering/notebooks/00-python-first-steps.ipynb",
+                archive.namelist(),
+            )
+            readme = archive.read("tej-computational-engineering/README.txt").decode("utf-8")
+            self.assertIn("ten notebooks", readme)
 
     def test_template_uses_native_search_listing_and_accessible_images(self) -> None:
         template = ROOT / "student-templates" / "quarto-portfolio-starter"

@@ -11,7 +11,7 @@ execute: {enabled: false}
 ## Learning goals
 
 - I can run and revise Python and Markdown cells in a notebook.
-- I can import a CSV file, make a graph, and check a calculation.
+- I can run simple Python, change a value, and explain the output.
 - I can download an `.ipynb` file and protect my work from browser-data loss.
 
 ## Why this is useful
@@ -20,16 +20,16 @@ Python can repeat calculations, test a range of values, and show patterns that a
 
 ## What you will make
 
-New Jupyter users will open **Notebook 1**, run working code, complete numbered `TODO` scaffolds, investigate unfamiliar commands, repair one documentation-driven error, graph a resistor investigation, explain the output in Markdown, and download a submission copy. Complete the [Python and NumPy Foundations assignment](python-numpy-foundations.qmd) before beginning circuit linear algebra.
+New Jupyter users will open **Notebook 0**, run one line at a time, use Python as a calculator, store values in variables, recognize basic types, work with a list, and finish with one small NumPy array. Complete [Python First Steps](python-first-steps.qmd) before beginning the larger [Python and NumPy Foundations assignment](python-numpy-foundations.qmd).
 
 ## Before you start
 
 ::: {.callout-important title="Open JupyterLite in your browser"}
 **JupyterLite is the browser program that opens and runs the downloaded `.ipynb` notebook.** It is separate from this instruction page.
 
-1. Download [Notebook 1: Python and NumPy Foundations](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
+1. Download [Notebook 0: Python First Steps](../../assets/tej-computational/notebooks/00-python-first-steps.ipynb).
 2. Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**. A new tab containing JupyterLab will open; this is the JupyterLite workspace.
-3. In that new tab, use **Upload Files** to upload `01-engineering-calculator.ipynb`.
+3. In that new tab, use **Upload Files** to upload `00-python-first-steps.ipynb`.
 4. Double-click the uploaded notebook. Choose **Python (Pyodide)** if JupyterLite asks for a kernel.
 :::
 
@@ -43,7 +43,7 @@ JupyterLite normally stores edited files in this browser's local storage. Anothe
 
 1. Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}** and wait until the JupyterLab file browser and launcher finish loading.
 2. Choose the **Upload Files** button in the file browser, or drag the downloaded notebook into the file area.
-3. Double-click `01-engineering-calculator.ipynb`.
+3. Double-click `00-python-first-steps.ipynb`.
 4. If asked for a kernel, choose the available **Python (Pyodide)** kernel. Wait until the kernel status is ready.
 
 A notebook is a sequence of cells. A **Code** cell runs Python. A **Markdown** cell displays headings, lists, links, equations, and explanations.
@@ -53,66 +53,50 @@ A notebook is a sequence of cells. A **Code** cell runs Python. A **Markdown** c
 Click the first code cell and press **Shift+Enter**. The cell runs and the selection moves to the next cell. The first scientific-package import can take longer because a browser kernel may need to load packages.
 
 ```python
-voltage_V = 9.0
-resistance_ohm = 1000.0
-current_A = voltage_V / resistance_ohm
-power_W = voltage_V * current_A
-current_mA = current_A * 1000
-power_mW = power_W * 1000
-print(f"Current: {current_mA:.2f} mA")
-print(f"Power: {power_mW:.1f} mW")
+print("Hello, TEJ!")
 ```
 
-Variables are named places that hold values. The unit is written in each variable name because Python does not automatically know that `9.0` means volts.
+You should see `Hello, TEJ!` under the cell. Change only the words inside the quotation marks, press **Shift+Enter** again, and check that the new words appear.
 
-Change `resistance_ohm`, press **Shift+Enter** again, and check whether current changes in the direction predicted by Ohm's law.
+## 3. If you see a red message
 
-## 3. Read an error message
+Stop and read the last line.
 
-An error is evidence. Read the last line first.
+- `NameError` often means a variable name is misspelled. Compare it with the earlier cell.
+- `SyntaxError` often means a quotation mark or bracket is missing.
+- An old answer can mean the cells were run out of order. Save the notebook, then choose **Kernel > Restart Kernel and Run All Cells**.
 
-- `NameError` usually means a name is misspelled or its defining cell was not run.
-- `SyntaxError` means Python could not parse the code; check punctuation, quotes, and brackets near the marker.
-- `ModuleNotFoundError` means the selected environment does not have the package.
-- `FileNotFoundError` means the path or filename does not match the file browser.
-- A stale answer often means cells were run out of order. Choose **Kernel > Restart Kernel and Run All Cells** after saving.
+Notebook 0 has one optional spelling-error challenge near the end. The larger documentation and debugging lesson comes later, after the Python basics are comfortable.
 
-Continue with [Find Documentation and Ask for Programming Help](finding-documentation-and-asking-for-help.qmd) to learn how to reproduce the issue, search official documentation and Stack Overflow, and prepare an answerable request for the teacher.
+## 4. Complete a Markdown answer
 
-## 4. Add a Markdown explanation
+The notebook contains written prompts such as `[write your prediction]`.
 
-Choose a cell, change its type to **Markdown**, and enter:
+1. Double-click the Markdown cell.
+2. Replace the words inside the square brackets with your own answer.
+3. Press **Shift+Enter** to display the finished answer.
+4. Keep the question and heading in place.
 
-```markdown
-### What changed
+## 5. Complete Python First Steps
 
-Increasing resistance reduced current because $I=V/R$
-while voltage stayed constant.
-```
+Continue with [Assignment: Python First Steps in Jupyter](python-first-steps.qmd). Work through Notebook 0 in this order:
 
-Press **Shift+Enter** to render it. Explain what the output means; do not paste a number without interpretation.
+1. Run `print("Hello, TEJ!")`.
+2. Change only the printed words and run the cell again.
+3. Use Python as a calculator.
+4. Store values in variables.
+5. Use `type()` to recognize a whole number, decimal number, text, and `True` or `False`.
+6. Select values from a three-item list.
+7. Change that list into one NumPy array.
+8. Calculate three currents and complete three short Markdown answers.
 
-The supplied notebook already contains Markdown cells with bracketed prompts such as `[explain what you observed]`. Double-click the Markdown cell, replace every bracketed prompt with your answer, and press **Shift+Enter** to render it again. Do not delete the question or heading.
-
-## 5. Complete the Python and NumPy assignment
-
-The interface practice above is only the beginning. Continue with [Assignment: Python and NumPy Foundations](python-numpy-foundations.qmd). Work through the notebook in this order:
-
-1. Run each **Working demonstration** unchanged.
-2. At each checkpoint, read the numbered `TODO`, make the requested small change, and run the scaffold cell.
-3. Replace every bracketed Markdown prompt with your own prediction, observation, or explanation.
-4. For two unfamiliar commands, complete the **command detective** routine: predict what the command does, run it, read `help()` or the official documentation, change one input in the supplied sandbox, and explain the result in your own words.
-5. In the **error challenge**, change the trigger to `True`, run the incorrect command, and copy the final error line before editing anything. Use the documentation to make the smallest repair and complete every evidence prompt.
-6. Complete the resistor investigation's four scaffold cells: choose inputs, calculate arrays, inspect and filter results, then verify and graph.
-7. Finish every numbered `TODO` and bracketed prompt. Do not leave starter text such as `Replace this` or `TODO` in the submission.
-
-The scaffolds are starting points, not completed answers. Change only the requested part first. If the output is unexpected, undo unrelated edits and compare the cell with the working demonstration immediately above it.
+Do not begin with loops, functions, graphs, matrices, or documentation challenges. Those skills appear in the next notebook after these first steps are comfortable.
 
 ## 6. Save, download, reopen, and submit
 
 1. Choose **File > Save Notebook** during the work period.
 2. Choose **File > Download**. If that menu item is absent in an older deployment, right-click the notebook in the file browser and choose **Download**.
-3. Keep the `.ipynb` ending. Rename the downloaded file <code>studentnumber-<wbr>lastname-<wbr>jupyter-foundations.ipynb</code>, for example <code>123456789-<wbr>Smith-<wbr>jupyter-foundations.ipynb</code>.
+3. Keep the `.ipynb` ending. Rename the downloaded file <code>studentnumber-<wbr>lastname-<wbr>python-first-steps.ipynb</code>, for example <code>123456789-<wbr>Smith-<wbr>python-first-steps.ipynb</code>.
 4. To reopen it later, click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**, upload the downloaded file, and double-click it. Restart the kernel and run all cells.
 5. Inspect the notebook for personal information. Upload the `.ipynb` file manually to the assigned Google Classroom post when that service is available. JupyterLite does not submit it for you.
 
@@ -120,6 +104,7 @@ The scaffolds are starting points, not completed answers. Change only the reques
 
 | Notebook | Core task | Download |
 |---|---|---|
+| 0. Python First Steps | Cells, printing, calculator operations, variables, types, lists, and one small NumPy array | [lesson](python-first-steps.qmd) · [`.ipynb`](../../assets/tej-computational/notebooks/00-python-first-steps.ipynb) |
 | 1. Python and NumPy Foundations | Jupyter cells, variables, lists, functions, arrays, documentation, plotting, and a resistor investigation | [lesson](python-numpy-foundations.qmd) · [`.ipynb`](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) |
 | 2. Series and Parallel Calculations | Equivalent resistance, currents, voltage drops, and checks | [`.ipynb`](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) |
 | 3A. Two Loops to a Matrix | Signed loop derivations, matrix rows, NumPy, SymPy, and verification | [`.ipynb`](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb) |
@@ -130,62 +115,37 @@ The scaffolds are starting points, not completed answers. Change only the reques
 | 7. RC, Op-Amps, and a Bridge to Calculus | Model transients, numerical slope and area, integration, differentiation, and optional XL741 evidence | [`.ipynb`](../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) |
 | 8. Optional Component Model Review | Compare resistor, capacitor, LED, transistor-switch, and op-amp models with explicit limitations; use only where review is needed | [`.ipynb`](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) |
 
-Download [all nine notebooks, the dataset, and local requirements as one ZIP](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
+Download [all ten notebooks, the dataset, and local requirements as one ZIP](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
 
 The notebooks use Python's standard library plus NumPy, pandas, and Matplotlib where the task requires them. They are designed for the Pyodide kernel in the official JupyterLite demonstration and for ordinary local JupyterLab with the supplied [requirements file](../../assets/tej-computational/requirements-jupyter.txt). A school deployment may provide a different kernel or package set.
 
-Use the [Jupyter Electronics Lab](jupyter-electronics-lab.qmd) for the complete simulation-first sequence and submission standard. It identifies what students can finish before physical components or kits are ready and how to add measurements later without replacing the original prediction.
-
-## The problem
-
-Your code runs and prints a plausible answer, but you need evidence that the calculation represents the circuit you intended.
-
-**The essential skill:** write an independent check such as a voltage sum, current sum, substitution, expected range, or residual.
-
-**The challenge:** change one parameter, predict the direction of the result before running the cell, and explain whether the output agrees.
-
-**The stumbling block:** correct code can faithfully solve the wrong equation or use values in the wrong units.
-
-**The investigation:** open the official [Python tutorial](https://docs.python.org/3/tutorial/), [NumPy `solve` documentation](https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html), [pandas CSV guide](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html), or [Matplotlib quick start](https://matplotlib.org/stable/users/explain/quick_start.html). Search with the exact function name and the last line of the error.
-
-::: {.callout-tip collapse="true" title="Hint 1: concept clue"}
-Choose a conservation rule or second equation that did not produce the answer directly.
-:::
-
-::: {.callout-tip collapse="true" title="Hint 2: documentation clue"}
-Search the function's official documentation for **parameters**, **returns**, and **examples**. Check the array shape and units.
-:::
-
-::: {.callout-tip collapse="true" title="Hint 3: technical clue"}
-Use `assert` with `abs(actual - expected) < tolerance`, or calculate `A @ x - b` for a matrix system. A near-zero residual checks the numerical solve, not the circuit model.
-:::
+Use the [Jupyter Electronics Lab](jupyter-electronics-lab.qmd) later for the complete simulation-first sequence. Notebook 0 does not require physical components.
 
 ## Troubleshooting
 
 | Problem | What to try |
 |---|---|
-| The page never finishes loading | Use a current non-private Chrome or Firefox window, reload once, and check whether the school filter permits WebAssembly and service workers. |
-| Kernel is not ready | Wait for the status indicator before running file-access or package cells. |
-| Uploaded file cannot be found | Put it beside the notebook, match capitalization, and use the exact relative filename. |
-| Package import fails | Confirm the Pyodide kernel is selected. Use the local pathway if the deployment does not provide the required package. |
-| A provided file seems unchanged | JupyterLite may prefer your browser-stored copy over the newer hosted file. Download work first, then remove the local copy or clear only the intended JupyterLite data. |
+| The page never finishes loading | Reload once in a current school-approved Chrome or Firefox window. |
+| Kernel is not ready | Wait until **Python (Pyodide)** is ready before running the cell. |
+| Uploaded notebook cannot be found | Upload it again and look for the exact filename in the left file browser. |
+| NumPy does not load | Confirm that **Python (Pyodide)** is the selected kernel. |
 | Work disappeared | Check the browser profile and downloads. Browser storage is device- and site-specific and is not a backup. |
-| Download is blocked | Use the file-browser context menu, then ask the teacher for the approved download route. Do not email private work to an unapproved account. |
+| Download is blocked | Right-click the notebook in the file browser and choose **Download**, or ask the teacher for the approved route. |
 
 The storage and file guidance above follows the official [JupyterLite usage guide](https://jupyterlite.readthedocs.io/en/stable/quickstart/using.html) and [troubleshooting guide](https://jupyterlite.readthedocs.io/en/stable/troubleshooting.html).
 
 ## Check your work
 
-- Restarting and running all cells finishes without an unexpected error.
-- Every graph has a title, labelled axes, and units.
-- Assertions or residual checks pass.
-- Markdown explains the engineering meaning and model limitations.
-- The downloaded notebook reopens and still contains your code and explanations.
+- TODO 1 through TODO 6 are complete.
+- Every cell has been run from top to bottom.
+- The final cell prints three positive currents and `Checks passed.`
+- The three short Markdown answers are complete.
+- The downloaded notebook reopens and still contains your work.
 
 ## Reflection
 
-What did the check establish? What did it *not* establish about the schematic, component model, wiring, or measurement?
+What is one difference between a code cell and a Markdown cell? Why should you download the notebook before leaving?
 
 ## Summary
 
-You can now preserve a reproducible calculation and its explanation. Use the [local Jupyter pathway](local-python-jupyter.qmd) only when you have an unrestricted computer or need packages and files beyond the browser environment.
+You can now open, run, edit, download, and reopen a notebook. Continue with [Python First Steps](python-first-steps.qmd). Use the [local Jupyter pathway](local-python-jupyter.qmd) only when you have an unrestricted computer or need packages and files beyond the browser environment.

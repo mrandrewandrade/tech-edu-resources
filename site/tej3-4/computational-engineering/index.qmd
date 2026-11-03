@@ -11,7 +11,7 @@ execute: {enabled: false}
 Use this pathway after the normal electronics teaching and problem set. The notebooks support the circuit model; they do not replace deriving equations, building safely, or measuring a real system.
 
 ::: {.callout-note title="Current class position"}
-Basic schematics and the five KCL/KVL questions are complete. Before circuit linear algebra, students learn the notebook workflow, core Python, NumPy arrays, plotting, documentation lookup, and evidence-based help requests. The bridge is **working code → controlled changes → NumPy investigation → documentation-driven repair → Kirchhoff equations → matrix model**. Capacitors and RC response follow this bridge.
+Basic schematics and the five KCL/KVL questions are complete. Before circuit linear algebra, students begin with a zero-experience Python notebook, then learn NumPy, plotting, documentation lookup, and evidence-based help requests. The bridge is **run one line → variables and types → lists → one small array → NumPy investigation → Kirchhoff equations → matrix model**. Capacitors and RC response follow this bridge.
 :::
 
 ::: {.callout-important title="Browser start: open JupyterLite"}
@@ -19,15 +19,16 @@ Basic schematics and the five KCL/KVL questions are complete. Before circuit lin
 :::
 
 1. [Read the step-by-step JupyterLite instructions](jupyterlite.qmd): download a notebook, open JupyterLite, upload the file, run a cell, and preserve the finished work.
-2. [Run Python and Jupyter on your own computer](local-python-jupyter.qmd): use a virtual environment in WSL, native Windows, macOS, or Linux instead of depending on JupyterLite.
-3. [Complete Python and NumPy Foundations](python-numpy-foundations.qmd): practise variables, lists, indexing, loops, functions, arrays, filters, checks, plotting, and one documentation-driven repair.
-4. [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd): reproduce an issue, search Python, NumPy, pandas, and Stack Overflow, and write a complete technical help request.
-5. [Complete the two-loops-to-matrix assignment](kirchhoff-jupyter-assignment.qmd): derive each loop equation step by step, build the matrix, and compare NumPy with an exact SymPy solution.
-6. [Work through the Jupyter Electronics Lab](jupyter-electronics-lab.qmd): apply the skills across KCL/KVL, graphs, data, investigation, RC, op-amps, and the calculus bridge.
-7. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
+2. [Complete Python First Steps](python-first-steps.qmd): print one line, use calculator operations, store variables, recognize types, select list items, and use one small NumPy array.
+3. [Run Python and Jupyter on your own computer](local-python-jupyter.qmd): use a virtual environment in WSL, native Windows, macOS, or Linux instead of depending on JupyterLite.
+4. [Complete Python and NumPy Foundations](python-numpy-foundations.qmd): practise loops, functions, arrays, filters, checks, plotting, and one documentation-driven repair.
+5. [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd): reproduce an issue, search Python, NumPy, pandas, and Stack Overflow, and write a complete technical help request.
+6. [Complete the two-loops-to-matrix assignment](kirchhoff-jupyter-assignment.qmd): derive each loop equation step by step, build the matrix, and compare NumPy with an exact SymPy solution.
+7. [Work through the Jupyter Electronics Lab](jupyter-electronics-lab.qmd): apply the skills across KCL/KVL, graphs, data, investigation, RC, op-amps, and the calculus bridge.
+8. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
 
 ::: {.callout-important title="Current assignment"}
-Open [Assignment: Python and NumPy Foundations](python-numpy-foundations.qmd). Students complete a resistor investigation, use arrays and a function, make a graph, run assertions, and repair one intentional keyword error by reading the documentation. After this foundation, continue to [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd).
+Start with [Assignment: Python First Steps in Jupyter](python-first-steps.qmd). It assumes no previous Python or notebook experience. After it is comfortable, continue to [Python and NumPy Foundations](python-numpy-foundations.qmd), then [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd).
 :::
 
 ::: {.callout-note title="Core workflow"}
