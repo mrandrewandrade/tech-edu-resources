@@ -58,6 +58,7 @@ def main() -> int:
                 "/tej3-4/computational-engineering/jupyter-electronics-lab.html",
                 "/tej3-4/computational-engineering/jupyterlite.html",
                 "/tej3-4/computational-engineering/local-python-jupyter.html",
+                "/tej3-4/computational-engineering/python-numpy-foundations.html",
                 "/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
                 "/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
                 "/tej3-4/portfolio/index.html",

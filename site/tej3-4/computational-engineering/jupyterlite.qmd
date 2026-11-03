@@ -20,12 +20,12 @@ Python can repeat calculations, test a range of values, and show patterns that a
 
 ## What you will make
 
-New Jupyter users will open **Notebook 1**, run its working demonstration, change one circuit value, verify the result, add a Markdown explanation, and download a copy. The current class has already completed basic schematics and the KCL/KVL problem set, so its first assessed computational task is **Notebook 3: Kirchhoff Systems**. Notebook 1 is a short interface practice, not a restart of the electronics curriculum.
+New Jupyter users will open **Notebook 1**, run working code, make controlled changes, use NumPy arrays, repair one documentation-driven error, graph a resistor investigation, explain the output in Markdown, and download a submission copy. Complete the [Python and NumPy Foundations assignment](python-numpy-foundations.qmd) before beginning circuit linear algebra.
 
 ## Before you start
 
 - Use a current school-approved Chrome or Firefox browser. Private browsing can block features JupyterLite needs.
-- Download [Notebook 1: Python as an Engineering Calculator](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
+- Download [Notebook 1: Python and NumPy Foundations](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
 - Open the official [Try JupyterLab in your browser](https://jupyter.org/try-jupyter/lab/) site. This public demonstration uses JupyterLite; its available kernels and packages can change.
 
 ::: {.callout-warning title="Browser storage is not cloud storage"}
@@ -85,32 +85,11 @@ while voltage stayed constant.
 
 Press **Shift+Enter** to render it. Explain what the output means; do not paste a number without interpretation.
 
-## 5. Import a CSV and graph it
+## 5. Complete the Python and NumPy assignment
 
-Download [sample circuit measurements CSV](../../assets/tej-computational/data/circuit-measurements.csv) and upload it beside Notebook 5. The filename must match exactly.
+The interface practice above is only the beginning. Continue with [Assignment: Python and NumPy Foundations](python-numpy-foundations.qmd). It introduces variables, lists, indexing, loops, functions, NumPy arrays, vectorized calculations, Boolean filters, summary operations, assertions, documentation lookup, and plotting without using linear algebra.
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-
-data = pd.read_csv("circuit-measurements.csv")
-expected_columns = {
-    "voltage_V",
-    "measured_current_mA",
-}
-assert expected_columns.issubset(data.columns)
-data.plot(
-    x="voltage_V",
-    y="measured_current_mA",
-    marker="o",
-)
-plt.ylabel("Measured current (mA)")
-plt.title("Current through a fixed resistor")
-plt.grid(True)
-plt.show()
-```
-
-Check column names, units, missing values, and impossible values before interpreting the graph.
+The first coding submission is a resistor investigation in Notebook 1. Students predict the result, calculate a voltage range with NumPy, graph it, repair one intentional keyword error using the documentation, and explain both the result and a limitation.
 
 ## 6. Save, download, reopen, and submit
 
@@ -124,7 +103,7 @@ Check column names, units, missing values, and impossible values before interpre
 
 | Notebook | Core task | Download |
 |---|---|---|
-| 1. Python as an Engineering Calculator | Variables, units, Ohm's law, and power | [`.ipynb`](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) |
+| 1. Python and NumPy Foundations | Jupyter cells, variables, lists, functions, arrays, documentation, plotting, and a resistor investigation | [lesson](python-numpy-foundations.qmd) · [`.ipynb`](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) |
 | 2. Series and Parallel Calculations | Equivalent resistance, currents, voltage drops, and checks | [`.ipynb`](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) |
 | 3A. Two Loops to a Matrix | Signed loop derivations, matrix rows, NumPy, SymPy, and verification | [`.ipynb`](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb) |
 | 3. Kirchhoff Systems | Documentation-driven debugging, residuals, and parameter investigation | [`.ipynb`](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) |

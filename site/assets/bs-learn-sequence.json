@@ -1784,7 +1784,7 @@
       "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
       "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
       "previous_route": "/commons/tej3-4/computational-engineering/jupyterlite.html",
-      "next_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
+      "next_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_starts_new_track": false,
       "sequence_index": 62
     },
@@ -1794,6 +1794,38 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 3,
+      "route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
+      "source": "tej3-4/computational-engineering/python-numpy-foundations.qmd",
+      "title": "Assignment: Python and NumPy Foundations",
+      "summary": "Learn the Jupyter workflow, basic Python, NumPy arrays, plotting, documentation lookup, and evidence-based debugging before circuit linear algebra.",
+      "use": "Students complete a resistor investigation with vectorized calculations, a reusable function, assertions, a graph, Markdown explanations, and one documentation-driven repair.",
+      "resources": [
+        {
+          "label": "Python and NumPy Notebook",
+          "url": "../assets/tej-computational/notebooks/01-engineering-calculator.ipynb"
+        },
+        {
+          "label": "NumPy Documentation",
+          "url": "https://numpy.org/doc/stable/"
+        }
+      ],
+      "track_id": "programming-interfacing",
+      "track_order": 9,
+      "track_title": "Computational Engineering",
+      "track_hub": "tej3-4/computational-engineering/index.qmd",
+      "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
+      "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
+      "previous_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
+      "next_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
+      "next_starts_new_track": false,
+      "sequence_index": 63
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 4,
       "route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "source": "tej3-4/computational-engineering/finding-documentation-and-asking-for-help.qmd",
       "title": "Find Documentation and Ask for Programming Help",
@@ -1815,17 +1847,17 @@
       "track_hub": "tej3-4/computational-engineering/index.qmd",
       "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
       "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
-      "previous_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
+      "previous_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_starts_new_track": false,
-      "sequence_index": 63
+      "sequence_index": 64
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 4,
+      "lesson_order": 5,
       "route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "source": "tej3-4/computational-engineering/kirchhoff-jupyter-assignment.qmd",
       "title": "Assignment: From Two Loops to a Matrix",
@@ -1854,14 +1886,14 @@
       "previous_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "next_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "next_starts_new_track": false,
-      "sequence_index": 64
+      "sequence_index": 65
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 5,
+      "lesson_order": 6,
       "route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "source": "tej3-4/computational-engineering/jupyter-electronics-lab.qmd",
       "title": "Jupyter Electronics Lab",
@@ -1886,7 +1918,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 65
+      "sequence_index": 66
     }
   ]
 }

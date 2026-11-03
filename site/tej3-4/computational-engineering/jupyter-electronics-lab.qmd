@@ -33,7 +33,7 @@ Each layer answers a different question. Agreement builds confidence; disagreeme
 | Stage | Notebook | What students do now | What hardware can add later |
 |---|---|---|---|
 | Foundation review | [Notebook 8](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) | Compare small resistor, capacitor, LED, transistor-switch, and op-amp models and name each limitation. | Identify real parts, ratings, polarity, pinout, and measured behaviour. |
-| 1. Engineering calculations | [Notebook 1](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) | Use named quantities, SI units, Ohm's law, power, and assertions. | Compare one result with a meter reading. |
+| 1. Python and NumPy foundations | [Notebook 1](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) | Use Jupyter cells, named quantities, lists, functions, arrays, filters, plots, documentation, and assertions in a resistor investigation. | Compare one calculated result with a meter reading when hardware is available. |
 | 2. Circuit networks | [Notebook 2](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) | Solve series, parallel, and mixed circuits and verify KCL, KVL, and power. | Build one network and explain tolerance differences. |
 | 3A. Two-loop bridge | [Notebook 3A](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb) | Derive both signed loop equations, build the matrix, and compare numerical and symbolic solutions. | Compare with the released Question 4 answer; no physical lab is required. |
 | 3. Coupled equations | [Notebook 3](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) | Diagnose seeded errors, repair a plausible wrong answer, inspect residuals, and investigate a changed parameter. | Compare with a multi-loop circuit when suitable equipment is available. |
@@ -145,4 +145,4 @@ A strong simulation-only notebook can demonstrate modelling, programming, mathem
 
 ## Next steps
 
-Begin with [Python Engineering Notebooks with JupyterLite](jupyterlite.qmd). Use the [local Jupyter pathway](local-python-jupyter.qmd) only when a school computer permits installation or the investigation needs packages and files beyond the browser environment.
+Begin with [Python Engineering Notebooks with JupyterLite](jupyterlite.qmd), then complete [Python and NumPy Foundations](python-numpy-foundations.qmd). Use the [local Jupyter pathway](local-python-jupyter.qmd) when a school computer permits installation or the investigation needs packages and files beyond the browser environment.

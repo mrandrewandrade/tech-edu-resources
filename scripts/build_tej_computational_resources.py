@@ -75,40 +75,156 @@ COMMON_CLOSE = [
 
 def notebooks() -> dict[str, dict[str, object]]:
     n1 = notebook(
-        "Notebook 1: Python as an Engineering Calculator",
-        "Use named variables, engineering units, Ohm's law, power, and assertions.",
-        "Ohm's law, power, metric prefixes, and significant figures.",
+        "Notebook 1: Python and NumPy Foundations",
+        "Use Jupyter cells, Python variables and functions, NumPy arrays, plots, documentation, and verification checks.",
+        "Ohm's law, metric prefixes, and basic circuit quantities. No previous Python experience is required.",
         [
-            md("## Working demonstration\n\nRun the cell unchanged first. Then explain each unit conversion.\n"),
+            md(
+                "## How to work through this notebook\n\n"
+                "Run each working demonstration unchanged before editing anything. Predict what an edit should do, make "
+                "one change, rerun the cell, and compare the output with your prediction. Use **Shift+Enter** to run a "
+                "cell. Markdown cells explain; code cells calculate.\n"
+            ),
+            md("## Working demonstration 1: variables, arithmetic, and output\n\nRun this cell unchanged first.\n"),
             code(
                 "voltage_V = 9.0\n"
                 "resistance_ohm = 1000.0\n"
                 "current_A = voltage_V / resistance_ohm\n"
                 "power_W = voltage_V * current_A\n\n"
-                "print(f'Current: {current_A * 1000:.2f} mA')\n"
-                "print(f'Power: {power_W * 1000:.1f} mW')\n"
+                "current_mA = current_A * 1000\n"
+                "power_mW = power_W * 1000\n\n"
+                "print(f'Current: {current_mA:.2f} mA')\n"
+                "print(f'Power: {power_mW:.1f} mW')\n"
                 "assert abs(current_A - 0.009) < 1e-12\n"
                 "assert abs(power_W - 0.081) < 1e-12\n"
             ),
             md(
-                "## Purposeful problem\n\nA 12.0 V supply drives a 2.2 kΩ resistor. Calculate current and power. "
-                "Write values in base SI units in code, then report mA and mW with sensible significant figures.\n"
-            ),
-            code(
-                "# Student code: replace None, then run the assertions.\n"
-                "supply_V = 12.0\n"
-                "load_ohm = 2200.0\n"
-                "load_current_A = None\n"
-                "load_power_W = None\n\n"
-                "# assert abs(load_current_A - supply_V / load_ohm) < 1e-12\n"
-                "# assert abs(load_power_W - supply_V * load_current_A) < 1e-12\n"
+                "### Checkpoint 1\n\n"
+                "1. Change the resistance to $2.2\\,\\mathrm{k\\Omega}$.\n"
+                "2. Before running the cell, predict whether current and power increase or decrease.\n"
+                "3. Add a Markdown cell that explains the result in one complete sentence.\n"
             ),
             md(
-                "## Independent challenge\n\nChoose a standard resistor for a teacher-approved voltage and target current. "
-                "Check the actual current and resistor power after choosing the available value.\n\n"
-                "### Hints\n\n1. Start with $R=V/I$.\n"
-                "2. Search the course reference for **standard 5% resistor values**.\n"
-                "3. Compare calculated power with a rating that has a reasonable safety margin.\n"
+                "## Working demonstration 2: lists, indexing, and a loop\n\n"
+                "A list stores several related values. Python starts counting positions at zero.\n"
+            ),
+            code(
+                "resistor_values_ohm = [1000.0, 2200.0, 3300.0, 4700.0]\n"
+                "print('First value:', resistor_values_ohm[0])\n"
+                "print('Number of values:', len(resistor_values_ohm))\n\n"
+                "for value_ohm in resistor_values_ohm:\n"
+                "    current_mA = 9.0 / value_ohm * 1000\n"
+                "    print(f'{value_ohm:6.0f} ohm -> {current_mA:5.2f} mA')\n"
+            ),
+            md(
+                "### Checkpoint 2\n\nPrint the last resistance using a negative index. Then add $6800\\,\\Omega$ to "
+                "the list and rerun the loop.\n"
+            ),
+            md(
+                "## Working demonstration 3: NumPy arrays\n\n"
+                "NumPy performs the same operation on a complete array without writing a separate calculation for every "
+                "value. Inspect `shape`, `dtype`, and the first and last results before trusting the output.\n"
+            ),
+            code(
+                "import numpy as np\n\n"
+                "voltage_V = np.array([1.5, 3.0, 4.5, 6.0, 7.5, 9.0])\n"
+                "resistance_ohm = 2200.0\n"
+                "current_mA = voltage_V / resistance_ohm * 1000\n"
+                "power_mW = voltage_V * current_mA\n\n"
+                "print('shape:', voltage_V.shape)\n"
+                "print('dtype:', voltage_V.dtype)\n"
+                "print('current (mA):', current_mA)\n"
+                "print('minimum and maximum:', current_mA.min(), current_mA.max())\n"
+                "print('mean:', current_mA.mean())\n\n"
+                "assert voltage_V.shape == current_mA.shape\n"
+                "assert np.all(current_mA > 0)\n"
+                "assert np.all(np.diff(current_mA) > 0)\n"
+            ),
+            md(
+                "### Checkpoint 3\n\n"
+                "Explain why `voltage_V / resistance_ohm` produces six answers. Use indexing to print the result for "
+                "$6.0\\,\\mathrm{V}$ only. Then use a Boolean comparison to display only currents below $3\\,\\mathrm{mA}$.\n"
+            ),
+            md("## Working demonstration 4: write and test a function\n"),
+            code(
+                "def calculate_current_mA(voltage_V, resistance_ohm):\n"
+                "    \"\"\"Return resistor current in milliamperes.\"\"\"\n"
+                "    return np.asarray(voltage_V) / resistance_ohm * 1000\n\n"
+                "test_current_mA = calculate_current_mA([3.0, 6.0, 9.0], 3000.0)\n"
+                "print(test_current_mA)\n"
+                "assert np.allclose(test_current_mA, [1.0, 2.0, 3.0])\n"
+            ),
+            md(
+                "## Documentation task: repair one keyword error\n\n"
+                "Change `trigger_documentation_error` to `True`. Copy the final exception line. Use `help(np.round)`, "
+                "`np.round?`, or the official NumPy documentation to find the parameter that controls decimal places. "
+                "Repair only the incorrect keyword and record the source you used.\n"
+            ),
+            code(
+                "trigger_documentation_error = False\n\n"
+                "if trigger_documentation_error:\n"
+                "    rounded_current_mA = np.round(current_mA, digits=2)\n"
+                "    print(rounded_current_mA)\n"
+                "else:\n"
+                "    print('Set the flag to True when you are ready to practise reading documentation.')\n"
+            ),
+            md(
+                "### Documentation evidence\n\n"
+                "Record the exact error, your search terms, the documentation link, the relevant function signature, the "
+                "smallest repair, and a successful rerun. Explain the repair in your own words.\n"
+            ),
+            md("## Working demonstration 5: graph an array\n"),
+            code(
+                "import matplotlib.pyplot as plt\n\n"
+                "plt.plot(voltage_V, current_mA, marker='o')\n"
+                "plt.xlabel('Voltage (V)')\n"
+                "plt.ylabel('Current (mA)')\n"
+                "plt.title('Current through a 2.2 kOhm resistor')\n"
+                "plt.grid(True)\n"
+                "plt.show()\n"
+            ),
+            md(
+                "## Purposeful problem: coding assignment\n\n"
+                "Create a new section titled **My resistor investigation**. Choose a teacher-approved resistor from "
+                "$1.0\\,\\mathrm{k\\Omega}$ to $4.7\\,\\mathrm{k\\Omega}$ and analyze it from $1\\,\\mathrm{V}$ to "
+                "$12\\,\\mathrm{V}$. Your work must include:\n\n"
+                "1. named variables with units;\n"
+                "2. a NumPy voltage array with at least seven values;\n"
+                "3. vectorized current and power calculations;\n"
+                "4. indexing, one Boolean filter, and `min`, `max`, or `mean`;\n"
+                "5. a reusable function and at least two assertions;\n"
+                "6. a graph with title, axis labels, units, markers, and grid;\n"
+                "7. a Markdown prediction and a Markdown interpretation; and\n"
+                "8. the completed documentation-error evidence above.\n"
+            ),
+            code(
+                "# Student assignment starter: replace the example choice and add your analysis below.\n"
+                "student_resistance_ohm = 3300.0\n"
+                "student_voltage_V = np.linspace(1.0, 12.0, 12)\n"
+                "student_current_mA = calculate_current_mA(student_voltage_V, student_resistance_ohm)\n"
+                "student_power_mW = student_voltage_V * student_current_mA\n\n"
+                "assert student_voltage_V.shape == student_current_mA.shape\n"
+                "assert np.all(student_current_mA > 0)\n"
+                "print(student_current_mA)\n"
+                "# Add indexing, a Boolean filter, summary values, your graph, and one more meaningful assertion.\n"
+            ),
+            md(
+                "## Independent challenge\n\n"
+                "Compare two resistor values on the same graph. Predict which line will be steeper before running the "
+                "cell, then explain the result using $I=V/R$.\n\n"
+                "### Hints\n\n"
+                "1. Reuse the same voltage array for a fair comparison.\n"
+                "2. Call `calculate_current_mA` once for each resistor.\n"
+                "3. Add a label to each `plt.plot` call and finish with `plt.legend()`.\n"
+                "4. If a function is unfamiliar, inspect its signature and examples before guessing.\n"
+            ),
+            md(
+                "## Submission checklist\n\n"
+                "- [ ] Restarting the kernel and running all cells completes after the intentional error is repaired.\n"
+                "- [ ] The assignment contains the required array operations, function, assertions, graph, and Markdown.\n"
+                "- [ ] The documentation evidence includes the exact error, source, repair, and verification.\n"
+                "- [ ] The downloaded filename follows `studentnumber-lastname-python-numpy.ipynb`.\n"
+                "- [ ] The downloaded notebook reopens with code, output, and explanations present.\n"
             ),
             *COMMON_CLOSE,
         ],

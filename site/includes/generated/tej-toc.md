@@ -18,13 +18,13 @@
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="computer-systems" aria-pressed="false">6. Computer Systems<span class="bs-learn-filter-count">×2</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="linux-operating-systems" aria-pressed="false">7. Linux and Operating Systems<span class="bs-learn-filter-count">×12</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="networking" aria-pressed="false">8. Networking<span class="bs-learn-filter-count">×3</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="programming-interfacing" aria-pressed="false">9. Computational Engineering<span class="bs-learn-filter-count">×5</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="programming-interfacing" aria-pressed="false">9. Computational Engineering<span class="bs-learn-filter-count">×6</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="robotics-control" aria-pressed="false">10. Robotics and Control Systems<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="engineering-preparation" aria-pressed="false">11. Engineering Preparation<span class="bs-learn-filter-count">×1</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 40 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 41 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -331,9 +331,9 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="5" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="6" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="computational-engineering/index.html">9. Computational Engineering</a><span data-bs-learn-group-count>5 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="computational-engineering/index.html">9. Computational Engineering</a><span data-bs-learn-group-count>6 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Engineering Notebooks with JupyterLite&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Open, run, edit, save, download, and submit engineering notebooks in a browser.&quot;, &quot;The browser workflow works without a local install or new account when the school permits JupyterLite.&quot;, &quot;Notebook Bundle&quot;]">
@@ -352,9 +352,17 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/requirements-jupyter.txt">Notebook Requirements</a></p>
       </details>
     </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assignment: Python and NumPy Foundations&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Learn the Jupyter workflow, basic Python, NumPy arrays, plotting, documentation lookup, and evidence-based debugging before circuit linear algebra.&quot;, &quot;Students complete a resistor investigation with vectorized calculations, a reusable function, assertions, a graph, Markdown explanations, and one documentation-driven repair.&quot;, &quot;Python and NumPy Notebook&quot;, &quot;NumPy Documentation&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Assignment: Python and NumPy Foundations"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/python-numpy-foundations.html">3. Assignment: Python and NumPy Foundations</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Learn the Jupyter workflow, basic Python, NumPy arrays, plotting, documentation lookup, and evidence-based debugging before circuit linear algebra.</p>
+        <p>Students complete a resistor investigation with vectorized calculations, a reusable function, assertions, a graph, Markdown explanations, and one documentation-driven repair.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/01-engineering-calculator.ipynb">Python and NumPy Notebook</a> <a class="ter-resource-badge" href="https://numpy.org/doc/stable/">NumPy Documentation</a></p>
+      </details>
+    </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Find Documentation and Ask for Programming Help&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Reproduce a problem, search official documentation and Stack Overflow, and ask a complete technical question.&quot;, &quot;Students learn to provide minimal code, exact errors, environment details, attempted fixes, sources, and a reasoned hypothesis when requesting help.&quot;, &quot;Stack Overflow: How to Ask&quot;, &quot;pandas Documentation&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Find Documentation and Ask for Programming Help"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/finding-documentation-and-asking-for-help.html">3. Find Documentation and Ask for Programming Help</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Find Documentation and Ask for Programming Help"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/finding-documentation-and-asking-for-help.html">4. Find Documentation and Ask for Programming Help</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Reproduce a problem, search official documentation and Stack Overflow, and ask a complete technical question.</p>
         <p>Students learn to provide minimal code, exact errors, environment details, attempted fixes, sources, and a reasoned hypothesis when requesting help.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://stackoverflow.com/help/how-to-ask">Stack Overflow: How to Ask</a> <a class="ter-resource-badge" href="https://pandas.pydata.org/docs/">pandas Documentation</a></p>
@@ -362,7 +370,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assignment: From Two Loops to a Matrix&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Derive two signed KVL equations, arrange them in matrix form, and solve the same system numerically and symbolically.&quot;, &quot;The guided bridge teaches the missing step between loop traversal and a reproducible computational solution without creating another five-question package.&quot;, &quot;Printable Two-Loop Guide&quot;, &quot;Two-Loop Matrix Notebook&quot;, &quot;Notebook Bundle&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Assignment: From Two Loops to a Matrix"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/kirchhoff-jupyter-assignment.html">4. Assignment: From Two Loops to a Matrix</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Assignment: From Two Loops to a Matrix"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/kirchhoff-jupyter-assignment.html">5. Assignment: From Two Loops to a Matrix</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Derive two signed KVL equations, arrange them in matrix form, and solve the same system numerically and symbolically.</p>
         <p>The guided bridge teaches the missing step between loop traversal and a reproducible computational solution without creating another five-question package.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf">Printable Two-Loop Guide</a> <a class="ter-resource-badge" href="../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb">Two-Loop Matrix Notebook</a> <a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a></p>
@@ -370,7 +378,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Jupyter Electronics Lab&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.&quot;, &quot;Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.&quot;, &quot;Notebook Bundle&quot;, &quot;RC and Op-Amp Calculus Notebook&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Jupyter Electronics Lab"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/jupyter-electronics-lab.html">5. Jupyter Electronics Lab</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Jupyter Electronics Lab"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/jupyter-electronics-lab.html">6. Jupyter Electronics Lab</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.</p>
         <p>Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a> <a class="ter-resource-badge" href="../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb">RC and Op-Amp Calculus Notebook</a></p>

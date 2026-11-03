@@ -1,0 +1,257 @@
+---
+title: "Assignment: Python and NumPy Foundations"
+description: "Learn the Jupyter workflow, basic Python, NumPy arrays, simple plots, documentation lookup, and evidence-based debugging before circuit linear algebra."
+categories: [Python, Jupyter, NumPy, debugging, assignment]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+---
+
+## Where this fits
+
+Complete this lesson **before** [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd). It assumes that you know Ohm's law and metric prefixes, but it does not assume previous Python experience or linear algebra.
+
+The sequence is:
+
+**run working code → change one value → use arrays → write a function → read documentation → repair an error → graph and explain**
+
+## Learning goals
+
+- I can distinguish Markdown cells from code cells and run a notebook in order.
+- I can use variables, arithmetic, lists, indexing, loops, and functions.
+- I can create a NumPy array and inspect its shape, type, values, and units.
+- I can apply one calculation to a complete array and verify the result.
+- I can make and interpret a labelled graph.
+- I can use `help()`, `?`, official documentation, and an exact error message to repair code.
+- I can submit a notebook containing reproducible code, output, checks, sources, and explanations.
+
+## What to download
+
+1. Download [Notebook 1: Python and NumPy Foundations](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
+2. Use [JupyterLite in a browser](jupyterlite.qmd), or use the [local Jupyter installation pathway](local-python-jupyter.qmd).
+3. Rename the file before working:
+
+```text
+studentnumber-lastname-python-numpy.ipynb
+```
+
+## 1. Understand the notebook
+
+A notebook contains cells. The cell type matters.
+
+| Cell type | Use it for | Run it with |
+|---|---|---|
+| Markdown | headings, explanations, links, lists, and LaTeX equations | **Shift+Enter** |
+| Code | Python instructions that produce output or change variables | **Shift+Enter** |
+
+Run the supplied notebook from top to bottom once before editing. A later cell can depend on variables or imports created earlier.
+
+Use **Kernel → Restart Kernel and Run All Cells** before submission. This catches hidden state, missing setup cells, and code that only worked because cells were run out of order.
+
+## 2. Begin with named quantities
+
+```python
+voltage_V = 9.0
+resistance_ohm = 1000.0
+current_A = voltage_V / resistance_ohm
+current_mA = current_A * 1000
+
+print(f"Current: {current_mA:.2f} mA")
+```
+
+The part before `=` is a variable name. The part after `=` is evaluated and stored. Python does not automatically know that `9.0` is a voltage, so include the unit in the name.
+
+Comments begin with `#`:
+
+```python
+resistance_ohm = 2200.0  # 2.2 kΩ written in base ohms
+```
+
+### First checkpoint
+
+Change one resistance. Before running the cell, write a Markdown prediction stating whether current should increase or decrease. Rerun the code and explain whether the output agrees.
+
+## 3. Store several values
+
+A Python list stores an ordered collection:
+
+```python
+resistor_values_ohm = [1000.0, 2200.0, 3300.0, 4700.0]
+
+print(resistor_values_ohm[0])   # first item
+print(resistor_values_ohm[-1])  # last item
+print(len(resistor_values_ohm))
+```
+
+Python starts indexing at zero. A loop repeats an operation:
+
+```python
+for value_ohm in resistor_values_ohm:
+    current_mA = 9.0 / value_ohm * 1000
+    print(value_ohm, current_mA)
+```
+
+## 4. Meet NumPy
+
+NumPy arrays store numerical data and support vectorized operations: one expression can calculate every item.
+
+```python
+import numpy as np
+
+voltage_V = np.array([1.5, 3.0, 4.5, 6.0, 7.5, 9.0])
+resistance_ohm = 2200.0
+current_mA = voltage_V / resistance_ohm * 1000
+```
+
+This produces six currents because the division is applied to all six voltages.
+
+Inspect the data before interpreting it:
+
+```python
+print(type(voltage_V))
+print(voltage_V.shape)
+print(voltage_V.dtype)
+print(voltage_V)
+print(current_mA)
+```
+
+Useful array operations include:
+
+```python
+current_mA[0]                 # first result
+current_mA[-1]                # last result
+current_mA.min()
+current_mA.max()
+current_mA.mean()
+current_mA[current_mA < 3.0]  # Boolean filter
+```
+
+NumPy will later store matrix rows, but this lesson uses only one-dimensional arrays. You should understand the data before using a linear-algebra solver.
+
+## 5. Write a reusable function
+
+```python
+def calculate_current_mA(voltage_V, resistance_ohm):
+    """Return resistor current in milliamperes."""
+    return np.asarray(voltage_V) / resistance_ohm * 1000
+```
+
+Call and verify the function:
+
+```python
+test_current_mA = calculate_current_mA([3.0, 6.0, 9.0], 3000.0)
+
+assert np.allclose(test_current_mA, [1.0, 2.0, 3.0])
+```
+
+An assertion is a check, not the main calculation. If the condition is false, Python stops and shows where the check failed.
+
+## 6. Read the documentation
+
+Start with the object you are using:
+
+```python
+help(np.round)
+```
+
+In Jupyter, this also opens help:
+
+```python
+np.round?
+```
+
+Read the function **signature**, then the parameter descriptions, return value, and examples. Do not guess parameter names.
+
+The notebook contains this intentional error behind a switch:
+
+```python
+trigger_documentation_error = True
+
+if trigger_documentation_error:
+    rounded_current_mA = np.round(current_mA, digits=2)
+```
+
+Your debugging record must include:
+
+1. the exact final exception line as text;
+2. the search terms or Jupyter help command used;
+3. a link to the official [`numpy.round` documentation](https://numpy.org/doc/stable/reference/generated/numpy.round.html);
+4. the relevant part of the function signature;
+5. the smallest repair;
+6. a successful rerun; and
+7. one sentence explaining why the repair matches the documentation.
+
+Use the full [documentation and help-request lesson](finding-documentation-and-asking-for-help.qmd) when the first lookup does not solve the problem. That lesson also covers Google searches, Stack Overflow, minimal reproducible examples, and the evidence required when asking the teacher.
+
+## 7. Graph an array
+
+```python
+import matplotlib.pyplot as plt
+
+plt.plot(voltage_V, current_mA, marker="o")
+plt.xlabel("Voltage (V)")
+plt.ylabel("Current (mA)")
+plt.title("Current through a 2.2 kΩ resistor")
+plt.grid(True)
+plt.show()
+```
+
+A graph is not finished until the axes, units, and meaning are clear. In Markdown, explain why the line is straight and what determines its slope.
+
+## Coding assignment: resistor investigation
+
+Create a notebook section titled **My resistor investigation**. Choose a teacher-approved resistor from $1.0\,\mathrm{k\Omega}$ to $4.7\,\mathrm{k\Omega}$ and analyze it from $1\,\mathrm{V}$ to $12\,\mathrm{V}$.
+
+Your submission must include:
+
+1. a Markdown prediction made before running the analysis;
+2. named variables with units;
+3. a NumPy voltage array containing at least seven values;
+4. vectorized current and power calculations;
+5. indexing that selects one meaningful result;
+6. a Boolean filter that answers a stated question;
+7. at least one `min`, `max`, or `mean` calculation;
+8. a reusable calculation function;
+9. at least two meaningful assertions;
+10. a graph with a title, labelled axes, units, markers, and grid;
+11. a Markdown interpretation of the output and one limitation; and
+12. the completed documentation-error evidence.
+
+### Starter
+
+```python
+student_resistance_ohm = 3300.0
+student_voltage_V = np.linspace(1.0, 12.0, 12)
+
+student_current_mA = calculate_current_mA(
+    student_voltage_V,
+    student_resistance_ohm,
+)
+student_power_mW = student_voltage_V * student_current_mA
+
+assert student_voltage_V.shape == student_current_mA.shape
+assert np.all(student_current_mA > 0)
+```
+
+Do not copy a completed analysis from a search result. Use documentation to understand individual functions, then write and verify your own investigation.
+
+## Optional challenge
+
+Compare two resistor values on the same graph. Predict which line will be steeper before running the code. Use the same voltage array for both, add labels and a legend, and explain the result using $I=V/R$.
+
+## Submit
+
+Submit the downloaded `.ipynb` file. Before submitting:
+
+- [ ] The filename follows `studentnumber-lastname-python-numpy.ipynb`.
+- [ ] Restart Kernel and Run All Cells completes after the intentional error is repaired.
+- [ ] Code, output, graph, assertions, documentation evidence, and Markdown explanations are present.
+- [ ] Units are visible in variable names, printed output, and graph labels.
+- [ ] The downloaded notebook reopens correctly.
+- [ ] No private paths, passwords, tokens, or unnecessary personal information are included.
+
+## Next lesson
+
+After this assignment, complete [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd). The new idea in that lesson should be translating circuit equations into matrix rows, not learning Jupyter and NumPy at the same time.

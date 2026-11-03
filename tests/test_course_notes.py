@@ -64,7 +64,7 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/design-fabrication/hand-tools/phone-holder.html",
             ],
         )
-        self.assertEqual(len(routes_by_course["tej"]), 35)
+        self.assertEqual(len(routes_by_course["tej"]), 36)
         self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/portfolio/index.html")
         self.assertEqual(
             routes_by_course["tej"][1:7],
@@ -99,10 +99,11 @@ class CourseNotesManifestTests(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            routes_by_course["tej"][-5:],
+            routes_by_course["tej"][-6:],
             [
                 "/commons/tej3-4/computational-engineering/jupyterlite.html",
                 "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
+                "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
                 "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
                 "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
                 "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",

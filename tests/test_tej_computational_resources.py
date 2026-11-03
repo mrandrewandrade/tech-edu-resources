@@ -32,6 +32,19 @@ class TejComputationalResourceTests(unittest.TestCase):
                 self.assertIn(phrase.lower(), text.lower(), f"{phrase} missing from {path.name}")
             self.assertTrue(any(cell.get("cell_type") == "code" for cell in notebook["cells"]))
 
+        foundations = json.loads((NOTEBOOKS / "01-engineering-calculator.ipynb").read_text(encoding="utf-8"))
+        foundations_text = "".join("".join(cell.get("source", [])) for cell in foundations["cells"])
+        for phrase in (
+            "NumPy arrays",
+            "calculate_current_mA",
+            "Boolean filter",
+            "help(np.round)",
+            "documentation evidence",
+            "coding assignment",
+            "matplotlib",
+        ):
+            self.assertIn(phrase.lower(), foundations_text.lower())
+
         bridge = json.loads((NOTEBOOKS / "03a-two-loop-to-matrix-bridge.ipynb").read_text(encoding="utf-8"))
         bridge_text = "".join("".join(cell.get("source", [])) for cell in bridge["cells"])
         for phrase in ("I_3=I_1-I_2", "numpy.linalg.solve", "sympy", "exact fractions", "residual"):
