@@ -129,7 +129,7 @@ Substitute the three currents into all three original rows to check the solution
 
 ## Practical pathway: audit a computational solution
 
-**Core learning:** solve one assigned system using the established variable-and-equation workflow. Then open [Notebook 3: Kirchhoff Systems](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) through the [JupyterLite tutorial](../computational-engineering/jupyterlite.qmd).
+**Core learning:** solve one assigned system using the established variable-and-equation workflow. Then download [Notebook 3: Kirchhoff Systems](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb), click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**, choose **Upload Files**, and double-click the downloaded notebook. Use the [step-by-step JupyterLite instructions](../computational-engineering/jupyterlite.qmd) if needed.
 
 **Guided practice:** enter the same coefficient order in every matrix row. Compare the notebook result with the manual or calculator result, then calculate the residual for each original equation.
 

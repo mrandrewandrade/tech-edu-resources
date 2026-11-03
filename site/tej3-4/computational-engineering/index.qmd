@@ -14,7 +14,11 @@ Use this pathway after the normal electronics teaching and problem set. The note
 Basic schematics and the five KCL/KVL questions are complete. Before circuit linear algebra, students learn the notebook workflow, core Python, NumPy arrays, plotting, documentation lookup, and evidence-based help requests. The bridge is **working code → controlled changes → NumPy investigation → documentation-driven repair → Kirchhoff equations → matrix model**. Capacitors and RC response follow this bridge.
 :::
 
-1. [Start with Python and JupyterLite](jupyterlite.qmd): run a cell, edit working code, preserve the notebook, and learn the browser workflow.
+::: {.callout-important title="Browser start: open JupyterLite"}
+**JupyterLite is the browser program that runs the downloaded notebook.** Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**, use **Upload Files**, and double-click the downloaded `.ipynb` file. Use the [step-by-step JupyterLite instructions](jupyterlite.qmd) if this is your first notebook.
+:::
+
+1. [Read the step-by-step JupyterLite instructions](jupyterlite.qmd): download a notebook, open JupyterLite, upload the file, run a cell, and preserve the finished work.
 2. [Run Python and Jupyter on your own computer](local-python-jupyter.qmd): use a virtual environment in WSL, native Windows, macOS, or Linux instead of depending on JupyterLite.
 3. [Complete Python and NumPy Foundations](python-numpy-foundations.qmd): practise variables, lists, indexing, loops, functions, arrays, filters, checks, plotting, and one documentation-driven repair.
 4. [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd): reproduce an issue, search Python, NumPy, pandas, and Stack Overflow, and write a complete technical help request.

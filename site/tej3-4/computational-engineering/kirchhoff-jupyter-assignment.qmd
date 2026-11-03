@@ -48,8 +48,8 @@ Submit one Jupyter notebook showing this complete chain:
 3. Download [Notebook 3A: From Two Loops to a Matrix](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb).
 4. Keep your returned Question 4 and Question 5 work available. Use the released Question 4 answer for comparison, but do not copy the released Question 5 answer into the scaffold.
 5. Choose a Jupyter route:
-   - [use JupyterLite in a browser](jupyterlite.qmd); or
-   - [run Jupyter locally using WSL, Windows, macOS, or Linux](local-python-jupyter.qmd).
+   - **Browser route:** click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**. In JupyterLite, click **Upload Files**, select `03a-two-loop-to-matrix-bridge.ipynb`, and double-click it. Choose **Python (Pyodide)** if asked. See the [step-by-step JupyterLite instructions](jupyterlite.qmd) for saving, downloading, and reopening work.
+   - **Local route:** [run Jupyter locally using WSL, Windows, macOS, or Linux](local-python-jupyter.qmd).
 6. Rename the notebook before working:
 
 ```text

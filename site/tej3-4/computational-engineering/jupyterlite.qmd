@@ -24,9 +24,16 @@ New Jupyter users will open **Notebook 1**, run working code, complete numbered 
 
 ## Before you start
 
-- Use a current school-approved Chrome or Firefox browser. Private browsing can block features JupyterLite needs.
-- Download [Notebook 1: Python and NumPy Foundations](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
-- Open the official [Try JupyterLab in your browser](https://jupyter.org/try-jupyter/lab/) site. This public demonstration uses JupyterLite; its available kernels and packages can change.
+::: {.callout-important title="Open JupyterLite in your browser"}
+**JupyterLite is the browser program that opens and runs the downloaded `.ipynb` notebook.** It is separate from this instruction page.
+
+1. Download [Notebook 1: Python and NumPy Foundations](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
+2. Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**. A new tab containing JupyterLab will open; this is the JupyterLite workspace.
+3. In that new tab, use **Upload Files** to upload `01-engineering-calculator.ipynb`.
+4. Double-click the uploaded notebook. Choose **Python (Pyodide)** if JupyterLite asks for a kernel.
+:::
+
+Use a current school-approved Chrome or Firefox browser. Private browsing can block features JupyterLite needs. The public JupyterLite demonstration's available kernels and packages can change.
 
 ::: {.callout-warning title="Browser storage is not cloud storage"}
 JupyterLite normally stores edited files in this browser's local storage. Another device, another browser profile, cleared site data, or a school reset may not have your work. Download the `.ipynb` file after every work period and keep the downloaded copy in the teacher-approved location.
@@ -34,7 +41,7 @@ JupyterLite normally stores edited files in this browser's local storage. Anothe
 
 ## 1. Open the notebook
 
-1. Wait until the JupyterLab file browser and launcher finish loading.
+1. Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}** and wait until the JupyterLab file browser and launcher finish loading.
 2. Choose the **Upload Files** button in the file browser, or drag the downloaded notebook into the file area.
 3. Double-click `01-engineering-calculator.ipynb`.
 4. If asked for a kernel, choose the available **Python (Pyodide)** kernel. Wait until the kernel status is ready.
@@ -106,7 +113,7 @@ The scaffolds are starting points, not completed answers. Change only the reques
 1. Choose **File > Save Notebook** during the work period.
 2. Choose **File > Download**. If that menu item is absent in an older deployment, right-click the notebook in the file browser and choose **Download**.
 3. Keep the `.ipynb` ending. Rename the downloaded file <code>studentnumber-<wbr>lastname-<wbr>jupyter-foundations.ipynb</code>, for example <code>123456789-<wbr>Smith-<wbr>jupyter-foundations.ipynb</code>.
-4. To reopen it later, return to JupyterLite and upload the downloaded file. Open it, restart the kernel, and run all cells.
+4. To reopen it later, click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**, upload the downloaded file, and double-click it. Restart the kernel and run all cells.
 5. Inspect the notebook for personal information. Upload the `.ipynb` file manually to the assigned Google Classroom post when that service is available. JupyterLite does not submit it for you.
 
 ## Notebook progression

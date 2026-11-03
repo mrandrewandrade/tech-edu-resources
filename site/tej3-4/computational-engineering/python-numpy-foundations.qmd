@@ -30,8 +30,10 @@ The sequence is:
 ## What to download
 
 1. Download [Notebook 1: Python and NumPy Foundations](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb).
-2. Use [JupyterLite in a browser](jupyterlite.qmd), or use the [local Jupyter installation pathway](local-python-jupyter.qmd).
-3. Rename the file before working:
+2. Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**. This opens the browser program that runs the notebook; it is not another instruction page.
+3. In JupyterLite, click **Upload Files**, select `01-engineering-calculator.ipynb`, and then double-click the uploaded notebook. Choose **Python (Pyodide)** if asked.
+4. Use the [step-by-step JupyterLite instructions](jupyterlite.qmd) if you need help opening, editing, saving, or downloading the notebook. The [local Jupyter installation pathway](local-python-jupyter.qmd) is the alternative for WSL, Windows, macOS, or Linux.
+5. Rename the file before working:
 
 ```text
 studentnumber-lastname-jupyter-foundations.ipynb
