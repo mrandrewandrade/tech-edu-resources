@@ -20,7 +20,7 @@ Python can repeat calculations, test a range of values, and show patterns that a
 
 ## What you will make
 
-New Jupyter users will open **Notebook 1**, run working code, make controlled changes, use NumPy arrays, repair one documentation-driven error, graph a resistor investigation, explain the output in Markdown, and download a submission copy. Complete the [Python and NumPy Foundations assignment](python-numpy-foundations.qmd) before beginning circuit linear algebra.
+New Jupyter users will open **Notebook 1**, run working code, complete numbered `TODO` scaffolds, investigate unfamiliar commands, repair one documentation-driven error, graph a resistor investigation, explain the output in Markdown, and download a submission copy. Complete the [Python and NumPy Foundations assignment](python-numpy-foundations.qmd) before beginning circuit linear algebra.
 
 ## Before you start
 
@@ -85,17 +85,27 @@ while voltage stayed constant.
 
 Press **Shift+Enter** to render it. Explain what the output means; do not paste a number without interpretation.
 
+The supplied notebook already contains Markdown cells with bracketed prompts such as `[explain what you observed]`. Double-click the Markdown cell, replace every bracketed prompt with your answer, and press **Shift+Enter** to render it again. Do not delete the question or heading.
+
 ## 5. Complete the Python and NumPy assignment
 
-The interface practice above is only the beginning. Continue with [Assignment: Python and NumPy Foundations](python-numpy-foundations.qmd). It introduces variables, lists, indexing, loops, functions, NumPy arrays, vectorized calculations, Boolean filters, summary operations, assertions, documentation lookup, and plotting without using linear algebra.
+The interface practice above is only the beginning. Continue with [Assignment: Python and NumPy Foundations](python-numpy-foundations.qmd). Work through the notebook in this order:
 
-The first coding submission is a resistor investigation in Notebook 1. Students predict the result, calculate a voltage range with NumPy, graph it, repair one intentional keyword error using the documentation, and explain both the result and a limitation.
+1. Run each **Working demonstration** unchanged.
+2. At each checkpoint, read the numbered `TODO`, make the requested small change, and run the scaffold cell.
+3. Replace every bracketed Markdown prompt with your own prediction, observation, or explanation.
+4. For two unfamiliar commands, complete the **command detective** routine: predict what the command does, run it, read `help()` or the official documentation, change one input in the supplied sandbox, and explain the result in your own words.
+5. In the **error challenge**, change the trigger to `True`, run the incorrect command, and copy the final error line before editing anything. Use the documentation to make the smallest repair and complete every evidence prompt.
+6. Complete the resistor investigation's four scaffold cells: choose inputs, calculate arrays, inspect and filter results, then verify and graph.
+7. Finish every numbered `TODO` and bracketed prompt. Do not leave starter text such as `Replace this` or `TODO` in the submission.
+
+The scaffolds are starting points, not completed answers. Change only the requested part first. If the output is unexpected, undo unrelated edits and compare the cell with the working demonstration immediately above it.
 
 ## 6. Save, download, reopen, and submit
 
 1. Choose **File > Save Notebook** during the work period.
 2. Choose **File > Download**. If that menu item is absent in an older deployment, right-click the notebook in the file browser and choose **Download**.
-3. Keep the `.ipynb` ending. Rename the downloaded file <code>studentnumber-<wbr>lastname-<wbr>notebook-01.ipynb</code>, for example <code>123456789-<wbr>Smith-<wbr>notebook-01.ipynb</code>.
+3. Keep the `.ipynb` ending. Rename the downloaded file <code>studentnumber-<wbr>lastname-<wbr>jupyter-foundations.ipynb</code>, for example <code>123456789-<wbr>Smith-<wbr>jupyter-foundations.ipynb</code>.
 4. To reopen it later, return to JupyterLite and upload the downloaded file. Open it, restart the kernel, and run all cells.
 5. Inspect the notebook for personal information. Upload the `.ipynb` file manually to the assigned Google Classroom post when that service is available. JupyterLite does not submit it for you.
 
