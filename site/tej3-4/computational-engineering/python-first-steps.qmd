@@ -39,6 +39,40 @@ You do **not** need previous Python, Jupyter, NumPy, or linear-algebra experienc
 
 Use the [step-by-step JupyterLite guide](jupyterlite.qmd) if the notebook does not open. The [local Jupyter guide](local-python-jupyter.qmd) is an optional alternative for WSL, Windows, macOS, or Linux.
 
+## Video help
+
+Students do not need to watch an hour before beginning. Use the short videos and immediately complete the matching notebook tasks.
+
+| Watch | Then do |
+|---|---|
+| [Khan Academy: Print statements and expressions](https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6%3Acomputational-thinking-with-variables/x5279a44ae0ab15d6%3Aprogram-execution/v/plus-operator-and-the-print-function) | TASK 1 and TASK 2 |
+| [Khan Academy: Variables and assignment](https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6%3Acomputational-thinking-with-variables/x5279a44ae0ab15d6%3Avariables/v/what-is-a-variable-python) | TASK 3 and TASK 4 |
+| [Khan Academy: Lists](https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6%3Aautomating-tasks-with-lists/x5279a44ae0ab15d6%3Alist-indices/v/lists) | TASK 5 and TASK 6 |
+
+### Longer video option
+
+[Python for Beginners: Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8) by Programming with Mosh provides a longer explanation. Students should use it as a chaptered reference, not watch the entire hour in one sitting.
+
+| Topic | Watch this part |
+|---|---:|
+| First program and variables | `1:15 to 9:08` |
+| Strings and arithmetic | `18:49 to 25:59` |
+| Lists | `45:11 to 48:47` |
+
+Pause after each example and complete the matching task. If YouTube is unavailable on the school network, use the Khan Academy clips and the examples already inside the notebook.
+
+## Basic assignment
+
+1. Open Notebook 0.
+2. Watch the first short video. Complete TASK 1 and TASK 2.
+3. Watch the variables video. Complete TASK 3 and TASK 4.
+4. Watch the lists video. Complete TASK 5 and TASK 6.
+5. Run the notebook from top to bottom.
+6. Complete every short written answer.
+7. Download and submit the `.ipynb` file.
+
+Only the completed notebook is submitted. Students do not submit separate video notes.
+
 ## 1. Learn the two cell types
 
 | Cell type | What it contains | What you do |

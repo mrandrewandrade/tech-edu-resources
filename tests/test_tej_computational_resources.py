@@ -38,6 +38,8 @@ class TejComputationalResourceTests(unittest.TestCase):
         for phrase in (
             "No previous Python",
             "Shift+Enter",
+            "Video help: watch, pause, do",
+            "kqtD5dpn9C8",
             "Four basic types",
             "variable",
             "Why group values?",
