@@ -106,8 +106,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "stop and read the last line before changing anything.\n"
             ),
             md(
-                "## Video help: watch, pause, do\n\n"
-                "You do not need to watch everything at once. Use this order:\n\n"
+                "## Videos\n\n"
                 "1. Watch [Khan Academy: Print statements and expressions]"
                 "(https://www.khanacademy.org/computing/intro-to-python-fundamentals/"
                 "x5279a44ae0ab15d6%3Acomputational-thinking-with-variables/"
@@ -120,10 +119,10 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "(https://www.khanacademy.org/computing/intro-to-python-fundamentals/"
                 "x5279a44ae0ab15d6%3Aautomating-tasks-with-lists/"
                 "x5279a44ae0ab15d6%3Alist-indices/v/lists). Do TASK 5 and TASK 6.\n\n"
-                "For a longer explanation, use [Python for Beginners: Learn Python in 1 Hour]"
-                "(https://www.youtube.com/watch?v=kqtD5dpn9C8). Watch only the chapter you need: first program and "
+                "Need more help? Open [Python for Beginners: Learn Python in 1 Hour]"
+                "(https://www.youtube.com/watch?v=kqtD5dpn9C8). Watch only the part you need: first program and "
                 "variables from **1:15 to 9:08**, strings and arithmetic from **18:49 to 25:59**, or lists from "
-                "**45:11 to 48:47**. Pause the video while you work.\n"
+                "**45:11 to 48:47**.\n"
             ),
             md("## Example 1: run one line\n\nClick the code cell below. Press **Shift+Enter**.\n"),
             code("print('Hello, TEJ!')\n"),

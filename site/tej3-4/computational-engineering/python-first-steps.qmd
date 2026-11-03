@@ -29,19 +29,43 @@ You do **not** need previous Python, Jupyter, NumPy, or linear-algebra experienc
 ## Before you start
 
 ::: {.callout-important title="Open the beginner notebook"}
-1. Download [Notebook 0: Python First Steps](../../assets/tej-computational/notebooks/00-python-first-steps.ipynb).
-2. Click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**.
-3. In JupyterLite, click **Upload Files**.
-4. Choose `00-python-first-steps.ipynb` from your Downloads folder.
-5. Double-click the uploaded notebook.
-6. Choose **Python (Pyodide)** if JupyterLite asks for a kernel.
+1. Click **[OPEN JUPYTERLITE](https://jupyter.org/try-jupyter/lab/){target="_blank"}**.
+2. Choose **File > Open from URL**.
+3. Paste this notebook link:
+
+   `https://andrewandrade.ca/tech-edu-resources/assets/tej-computational/notebooks/00-python-first-steps.ipynb`
+
+4. Click **Open**.
+5. Choose **Python (Pyodide)** if asked.
 :::
 
-Use the [step-by-step JupyterLite guide](jupyterlite.qmd) if the notebook does not open. The [local Jupyter guide](local-python-jupyter.qmd) is an optional alternative for WSL, Windows, macOS, or Linux.
+If that does not work, [download Notebook 0](../../assets/tej-computational/notebooks/00-python-first-steps.ipynb), then use the **Upload Files** button in JupyterLite.
 
-## Video help
+## What to click
 
-Students do not need to watch an hour before beginning. Use the short videos and immediately complete the matching notebook tasks.
+### 1. Open the notebook
+
+Choose **File > Open from URL**. Paste the notebook link and click **Open**.
+
+![The Open URL box in JupyterLite.](../../assets/tej-computational/screenshots/jupyterlite-open-url.jpg){fig-alt="JupyterLite Open URL box with the Notebook 0 web address entered"}
+
+### 2. Run a cell
+
+Click a code cell. Press **Shift+Enter**.
+
+![Notebook 0 open at TASK 1.](../../assets/tej-computational/screenshots/jupyterlite-run-task.jpg){fig-alt="Notebook 0 showing the first print example and TASK 1"}
+
+### 3. Download your work
+
+Choose **File > Download** before you leave.
+
+![The Download command in the JupyterLite File menu.](../../assets/tej-computational/screenshots/jupyterlite-download.jpg){fig-alt="JupyterLite File menu showing the Download command"}
+
+Need more help opening the notebook? Use the [step-by-step JupyterLite guide](jupyterlite.qmd).
+
+## Videos
+
+Watch one short video. Then do the matching tasks.
 
 | Watch | Then do |
 |---|---|
@@ -49,9 +73,9 @@ Students do not need to watch an hour before beginning. Use the short videos and
 | [Khan Academy: Variables and assignment](https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6%3Acomputational-thinking-with-variables/x5279a44ae0ab15d6%3Avariables/v/what-is-a-variable-python) | TASK 3 and TASK 4 |
 | [Khan Academy: Lists](https://www.khanacademy.org/computing/intro-to-python-fundamentals/x5279a44ae0ab15d6%3Aautomating-tasks-with-lists/x5279a44ae0ab15d6%3Alist-indices/v/lists) | TASK 5 and TASK 6 |
 
-### Longer video option
+### Need more help?
 
-[Python for Beginners: Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8) by Programming with Mosh provides a longer explanation. Students should use it as a chaptered reference, not watch the entire hour in one sitting.
+Open [Python for Beginners: Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8). Watch only the part you need.
 
 | Topic | Watch this part |
 |---|---:|
@@ -59,7 +83,7 @@ Students do not need to watch an hour before beginning. Use the short videos and
 | Strings and arithmetic | `18:49 to 25:59` |
 | Lists | `45:11 to 48:47` |
 
-Pause after each example and complete the matching task. If YouTube is unavailable on the school network, use the Khan Academy clips and the examples already inside the notebook.
+Pause the video while you work. If YouTube is blocked, use the short videos.
 
 ## Basic assignment
 
@@ -71,7 +95,7 @@ Pause after each example and complete the matching task. If YouTube is unavailab
 6. Complete every short written answer.
 7. Download and submit the `.ipynb` file.
 
-Only the completed notebook is submitted. Students do not submit separate video notes.
+Submit only your completed notebook. You do not need video notes.
 
 ## 1. Learn the two cell types
 
