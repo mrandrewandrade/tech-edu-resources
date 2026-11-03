@@ -39,7 +39,10 @@ class TejComputationalResourceTests(unittest.TestCase):
             "calculate_current_mA",
             "Boolean filter",
             "help(np.round)",
-            "documentation evidence",
+            "Command detective routine",
+            "Exact final error line",
+            "Every numbered `TODO`",
+            "studentnumber-lastname-jupyter-foundations.ipynb",
             "coding assignment",
             "matplotlib",
         ):

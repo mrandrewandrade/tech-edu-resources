@@ -34,8 +34,10 @@ The sequence is:
 3. Rename the file before working:
 
 ```text
-studentnumber-lastname-python-numpy.ipynb
+studentnumber-lastname-jupyter-foundations.ipynb
 ```
+
+The notebook supplies working demonstrations, numbered `TODO` cells, Markdown response prompts, a command sandbox, and an intentional error challenge. Complete them in order rather than starting from an empty notebook.
 
 ## 1. Understand the notebook
 
@@ -49,6 +51,18 @@ A notebook contains cells. The cell type matters.
 Run the supplied notebook from top to bottom once before editing. A later cell can depend on variables or imports created earlier.
 
 Use **Kernel → Restart Kernel and Run All Cells** before submission. This catches hidden state, missing setup cells, and code that only worked because cells were run out of order.
+
+### When a command is unfamiliar
+
+Use the notebook's **command detective** routine:
+
+1. predict its purpose from the name and surrounding code;
+2. run it and inspect the output;
+3. use `help(command)`, `command?`, or the official documentation;
+4. change one input in the supplied sandbox; and
+5. explain, in your own words, what goes in, what comes out, and why the command helps.
+
+You will do this for at least two commands. Suitable examples include `np.array`, `.shape`, `.dtype`, `.mean()`, `np.diff`, `np.asarray`, `np.allclose`, Boolean masks, and `plt.plot`.
 
 ## 2. Begin with named quantities
 
@@ -217,9 +231,11 @@ Your submission must include:
 9. at least two meaningful assertions;
 10. a graph with a title, labelled axes, units, markers, and grid;
 11. a Markdown interpretation of the output and one limitation; and
-12. the completed documentation-error evidence.
+12. the completed error-challenge evidence.
 
 ### Starter
+
+The downloaded notebook divides this starter into four short code cells: choose inputs, calculate arrays, inspect and filter results, then verify and graph. Each cell contains numbered `TODO` comments and the matching Markdown cell contains prompts to replace.
 
 ```python
 student_resistance_ohm = 3300.0
@@ -245,8 +261,10 @@ Compare two resistor values on the same graph. Predict which line will be steepe
 
 Submit the downloaded `.ipynb` file. Before submitting:
 
-- [ ] The filename follows `studentnumber-lastname-python-numpy.ipynb`.
+- [ ] The filename follows `studentnumber-lastname-jupyter-foundations.ipynb`.
 - [ ] Restart Kernel and Run All Cells completes after the intentional error is repaired.
+- [ ] Every numbered `TODO` and bracketed Markdown prompt is complete.
+- [ ] The command detective notes explain two unfamiliar commands using output or documentation evidence.
 - [ ] Code, output, graph, assertions, documentation evidence, and Markdown explanations are present.
 - [ ] Units are visible in variable names, printed output, and graph labels.
 - [ ] The downloaded notebook reopens correctly.
