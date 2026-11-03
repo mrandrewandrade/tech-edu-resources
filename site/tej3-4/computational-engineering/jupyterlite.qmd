@@ -66,7 +66,7 @@ Stop and read the last line.
 - `SyntaxError` often means a quotation mark or bracket is missing.
 - An old answer can mean the cells were run out of order. Save the notebook, then choose **Kernel > Restart Kernel and Run All Cells**.
 
-Notebook 0 has one optional spelling-error challenge near the end. The larger documentation and debugging lesson comes later, after the Python basics are comfortable.
+The larger documentation and debugging lesson comes later, after the Python basics are comfortable.
 
 ## 4. Complete a Markdown answer
 
@@ -88,7 +88,7 @@ Continue with [Assignment: Python First Steps in Jupyter](python-first-steps.qmd
 5. Use `type()` to recognize a whole number, decimal number, text, and `True` or `False`.
 6. Select values from a three-item list.
 7. Change that list into one NumPy array.
-8. Calculate three currents and complete three short Markdown answers.
+8. Change one number in a small array and complete three short answers.
 
 Do not begin with loops, functions, graphs, matrices, or documentation challenges. Those skills appear in the next notebook after these first steps are comfortable.
 
@@ -136,9 +136,9 @@ The storage and file guidance above follows the official [JupyterLite usage guid
 
 ## Check your work
 
-- TODO 1 through TODO 6 are complete.
+- TASK 1 through TASK 6 are complete.
 - Every cell has been run from top to bottom.
-- The final cell prints three positive currents and `Checks passed.`
+- The final cell prints three numbers and `Checks passed.`
 - The three short Markdown answers are complete.
 - The downloaded notebook reopens and still contains your work.
 

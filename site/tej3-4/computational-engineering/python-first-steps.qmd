@@ -14,7 +14,7 @@ execute: {enabled: false}
 - I can tell the difference between a Markdown cell and a code cell.
 - I can run one Python cell and change a value.
 - I can recognize a number, text, `True` or `False`, and a list.
-- I can use one small NumPy array to calculate three answers.
+- I can describe an array and change one number in it.
 
 ## Why this is useful
 
@@ -22,7 +22,7 @@ Python can act like a calculator, remember values, and repeat the same calculati
 
 ## What you will make
 
-You will complete a small notebook that starts with `print('Hello, TEJ!')`. By the end, you will use three voltages and one resistance to calculate three currents.
+You will complete a small notebook that starts with `print('Hello, TEJ!')`. By the end, you will change one number in a three-number array.
 
 You do **not** need previous Python, Jupyter, NumPy, or linear-algebra experience.
 
@@ -116,7 +116,7 @@ voltage_2_V = 3.0
 voltage_3_V = 4.5
 ```
 
-That code works, but the three readings are not grouped together. A **container** gives one name to several stored values.
+That code works, but the three readings are not grouped together. A **list** puts them together under one name.
 
 ## 8. Use a list as the first container
 
@@ -144,69 +144,42 @@ Replace the starter list and print its third value.
 Think of the list as a small parts cabinet. The variable name labels the whole cabinet. Index `0`, index `1`, and index `2` label its three drawers.
 :::
 
-## 9. Understand what an array is
+## 9. What is an array?
 
-A **NumPy array** is another kind of container. In this lesson, it is one ordered row of numbers:
+A **NumPy array is a row of numbers stored under one name.**
 
-| Index | `0` | `1` | `2` |
+| Place | First | Middle | Last |
 |---|---:|---:|---:|
-| Array value | `1.5` | `3.0` | `4.5` |
+| Number | `1.0` | `2.0` | `3.0` |
 
-The array is useful because NumPy can apply the same calculation to every stored number.
-
-| Python list | NumPy array |
-|---|---|
-| Groups values together | Groups values together |
-| Can contain different kinds of values | Normally contains one kind of value |
-| Good for general storage | Good for repeated calculations with numbers |
-
-For now, an array does **not** mean a matrix or a complicated table. It is simply one numbered row containing three voltage values.
+That is all you need to know for this activity. Matrices and calculations with whole arrays come later.
 
 ## 10. Build the first NumPy array
 
-NumPy is a Python library for groups of numbers.
+NumPy is the tool that makes the array. Run this code without changing it:
 
 ```python
 import numpy as np
-voltage_list_V = [1.5, 3.0, 4.5]
-voltage_array_V = np.array(voltage_list_V)
+numbers = np.array([1.0, 2.0, 3.0])
+print(numbers)
 ```
 
-The import loads NumPy. The short name `np` keeps later commands brief. `np.array(voltage_list_V)` copies the three list values into an array.
-
-Before running the next cell, predict what multiplying the array by `2` will produce. NumPy multiplies each stored value:
-
-```text
-original:  [1.5  3.0  4.5]
-times 2:   [3.0  6.0  9.0]
-```
-
-The first input still lines up with the first output. The same is true for the second and third values.
-
-The notebook then divides each voltage by the same resistance:
-
-| Voltage input | Calculation | Current output |
-|---:|---:|---:|
-| `1.5 V` | `1.5 / 1000 × 1000` | `1.5 mA` |
-| `3.0 V` | `3.0 / 1000 × 1000` | `3.0 mA` |
-| `4.5 V` | `4.5 / 1000 × 1000` | `4.5 mA` |
-
-Do not worry about matrices, shapes, filters, plotting, or functions yet. Those belong to the next notebook.
+The output is `[1. 2. 3.]`. Those are the same three numbers.
 
 ## 11. Complete the mini-assignment
 
-Use:
-
-- voltages of `2.0`, `4.0`, and `6.0` volts;
-- a resistance of `2000.0` ohms.
-
-Before running the cell, predict whether the largest current will be above or below `5 mA`. Run the cell and complete the three short Markdown prompts.
+1. Find the middle number, `2.0`.
+2. Change only `2.0` to `4.0`.
+3. Press **Shift+Enter**.
+4. Write the first number.
+5. Write the new middle number.
+6. Finish this sentence: **An array is a row of numbers stored under one name.**
 
 ## Check your work
 
-- TODO 1 through TODO 6 are complete.
+- TASK 1 through TASK 6 are complete.
 - Every cell has been run from top to bottom.
-- The final code cell prints three positive currents.
+- The final code cell prints three numbers.
 - The final code cell prints `Checks passed.`
 - Every bracketed Markdown prompt contains your own answer.
 

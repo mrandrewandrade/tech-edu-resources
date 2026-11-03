@@ -17,7 +17,6 @@ class TejComputationalResourceTests(unittest.TestCase):
             "Learning goal",
             "Why it matters",
             "Prior knowledge",
-            "Working demonstration",
             "challenge",
             "Hint",
             "Common errors",
@@ -30,6 +29,8 @@ class TejComputationalResourceTests(unittest.TestCase):
             text = "".join("".join(cell.get("source", [])) for cell in notebook["cells"])
             for phrase in required:
                 self.assertIn(phrase.lower(), text.lower(), f"{phrase} missing from {path.name}")
+            if path.name != "00-python-first-steps.ipynb":
+                self.assertIn("working demonstration", text.lower(), path.name)
             self.assertTrue(any(cell.get("cell_type") == "code" for cell in notebook["cells"]))
 
         first_steps = json.loads((NOTEBOOKS / "00-python-first-steps.ipynb").read_text(encoding="utf-8"))
@@ -40,13 +41,12 @@ class TejComputationalResourceTests(unittest.TestCase):
             "Four basic types",
             "variable",
             "Why group values?",
-            "container",
             "list",
-            "From a list to an array",
-            "does **not** mean a matrix",
+            "What is an array?",
+            "array is a row of numbers stored under one name",
             "np.array",
-            "One calculation, three answers",
-            "TODO 1 through TODO 6",
+            "change only the middle number",
+            "TASK 1 through TASK 6",
             "studentnumber-lastname-python-first-steps.ipynb",
         ):
             self.assertIn(phrase.lower(), first_steps_text.lower())

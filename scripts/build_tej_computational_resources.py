@@ -105,15 +105,15 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "Click a cell once and press **Shift+Enter**. Work from top to bottom. If a cell shows a red message, "
                 "stop and read the last line before changing anything.\n"
             ),
-            md("## Working demonstration 1: run one line\n\nClick the code cell below. Press **Shift+Enter**.\n"),
+            md("## Example 1: run one line\n\nClick the code cell below. Press **Shift+Enter**.\n"),
             code("print('Hello, TEJ!')\n"),
             md(
                 "You should see `Hello, TEJ!` under the cell. `print()` tells Python to display something. Text goes "
                 "inside quotation marks.\n\n"
                 "### Your turn\n\nChange only the words inside the quotation marks. Run the cell again.\n"
             ),
-            code("# TODO 1: replace the words, but keep the quotation marks.\nprint('Type your message here')\n"),
-            md("## Working demonstration 2: use Python as a calculator\n\nRun this cell. Read each printed answer.\n"),
+            code("# TASK 1: replace the words, but keep the quotation marks.\nprint('Type your message here')\n"),
+            md("## Example 2: use Python as a calculator\n\nRun this cell. Read each printed answer.\n"),
             code(
                 "print('2 + 3 =', 2 + 3)\n"
                 "print('10 - 4 =', 10 - 4)\n"
@@ -125,9 +125,9 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "Change the numbers so the answer is `10`.\n\n"
                 "**Hint:** keep the `+` sign and change only the two numbers.\n"
             ),
-            code("# TODO 2: change the two numbers.\nanswer = 2 + 3\nprint(answer)\n"),
+            code("# TASK 2: change the two numbers.\nanswer = 2 + 3\nprint(answer)\n"),
             md(
-                "## Working demonstration 3: give values names\n\n"
+                "## Example 3: give values names\n\n"
                 "A **variable** is a name that stores a value. The `=` sign stores the value on the right in the name "
                 "on the left. Read `voltage_V = 9.0` as “store 9.0 in voltage_V.”\n"
             ),
@@ -160,7 +160,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md("### Your turn\n\nComplete the four values. Run the cell and check the four types.\n"),
             code(
-                "# TODO 3: replace each starter value with the requested type.\n"
+                "# TASK 3: replace each starter value with the requested type.\n"
                 "my_whole_number = 0\n"
                 "my_decimal_number = 0.0\n"
                 "my_text = 'replace this text'\n"
@@ -171,7 +171,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "print(type(my_true_or_false))\n"
             ),
             md(
-                "## Working demonstration 4: calculate with variables\n\n"
+                "## Example 4: calculate with variables\n\n"
                 "Ohm's law is $I=V/R$. Python uses `/` for division. The first answer is in amperes. Multiplying by "
                 "1000 converts amperes to milliamperes.\n"
             ),
@@ -189,7 +189,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "prediction line. Then run it.\n"
             ),
             code(
-                "# TODO 4: change the resistance and complete the prediction.\n"
+                "# TASK 4: change the resistance and complete the prediction.\n"
                 "test_voltage_V = 9.0\n"
                 "test_resistance_ohm = 1000.0\n"
                 "prediction = 'increase or decrease?'\n"
@@ -205,11 +205,11 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "voltage_2_V = 3.0\n"
                 "voltage_3_V = 4.5\n"
                 "```\n\n"
-                "That works, but the values are harder to keep together. A **container** is one name that holds several "
-                "values. Python's simplest container for this job is a **list**.\n"
+                "That works, but the values are harder to keep together. A **list** puts the values together under "
+                "one name.\n"
             ),
             md(
-                "## Working demonstration 5: store several values in a list\n\n"
+                "## Example 5: store several values in a list\n\n"
                 "Square brackets make a list: `[1.5, 3.0, 4.5]`. Each stored value has a numbered position called an "
                 "**index**. Python begins at index `0`.\n\n"
                 "| index | 0 | 1 | 2 |\n"
@@ -230,97 +230,53 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "the index.\n"
             ),
             code(
-                "# TODO 5: replace the values and change the index.\n"
+                "# TASK 5: replace the values and change the index.\n"
                 "my_voltage_list_V = [0.0, 0.0, 0.0]\n"
                 "print('Third value:', my_voltage_list_V[0])\n"
             ),
             md(
-                "## From a list to an array\n\n"
-                "A **NumPy array** is another container. In this lesson it is a numbered row of values, like the list "
-                "above. The useful difference is that NumPy is designed to perform the same calculation on every "
-                "number in the container.\n\n"
-                "| Python list | NumPy array |\n"
-                "|---|---|\n"
-                "| groups values together | groups values together |\n"
-                "| can hold different kinds of values | normally holds one kind of value |\n"
-                "| good for general storage | good for repeated numerical calculations |\n\n"
-                "For now, an array does **not** mean a matrix or a complicated table. It is just one ordered row of "
-                "three voltage numbers.\n"
+                "## What is an array?\n\n"
+                "An **array is a row of numbers stored under one name**.\n\n"
+                "| place | first | middle | last |\n"
+                "|---|---:|---:|---:|\n"
+                "| number | 1.0 | 2.0 | 3.0 |\n\n"
+                "That is all you need to know for this activity.\n"
             ),
             md(
-                "## Working demonstration 6: build the first NumPy array\n\n"
-                "`import numpy as np` loads NumPy and gives it the short name `np`. `np.array()` copies the three "
-                "list values into a NumPy array.\n"
+                "## Example 6: make one array\n\n"
+                "NumPy is the tool that makes the array. Run the code. Do not change it yet.\n"
             ),
             code(
                 "import numpy as np\n\n"
-                "voltage_list_V = [1.5, 3.0, 4.5]\n"
-                "voltage_array_V = np.array(voltage_list_V)\n"
-                "print('List:', voltage_list_V)\n"
-                "print('Array:', voltage_array_V)\n"
-                "print('First array value:', voltage_array_V[0])\n"
-                "print(type(voltage_array_V))\n"
+                "numbers = np.array([1.0, 2.0, 3.0])\n"
+                "print(numbers)\n"
             ),
             md(
-                "### Predict before running\n\n"
-                "What should happen if we multiply the array by `2`? Write a prediction, then run the cell.\n"
+                "## Small task\n\n"
+                "1. Find the middle number: `2.0`.\n"
+                "2. Change only `2.0` to `4.0`.\n"
+                "3. Press **Shift+Enter**.\n"
+                "4. Complete the three short answers below.\n"
             ),
             code(
-                "doubled_voltage_V = voltage_array_V * 2\n"
-                "print('Original array:', voltage_array_V)\n"
-                "print('Doubled array:', doubled_voltage_V)\n"
-            ),
-            md(
-                "## One calculation, three answers\n\n"
-                "NumPy divides **each** voltage by the same resistance. The first voltage produces the first current, "
-                "the second voltage produces the second current, and the third voltage produces the third current.\n"
-            ),
-            code(
-                "resistance_ohm = 1000.0\n"
-                "current_array_mA = voltage_array_V / resistance_ohm * 1000\n"
-                "print('Voltage:', voltage_array_V, 'V')\n"
-                "print('Current:', current_array_mA, 'mA')\n"
-            ),
-            md(
-                "## Final mini-assignment\n\n"
-                "1. Replace the voltage values with `2.0`, `4.0`, and `6.0`.\n"
-                "2. Replace the resistance with `2000.0`.\n"
-                "3. Predict whether the largest current will be above or below `5 mA`.\n"
-                "4. Run the cell.\n"
-                "5. Replace the bracketed Markdown prompts below.\n"
-            ),
-            code(
-                "# TODO 6: complete the values, then run the cell.\n"
-                "final_voltage_V = np.array([1.0, 2.0, 3.0])\n"
-                "final_resistance_ohm = 1000.0\n"
-                "final_current_mA = final_voltage_V / final_resistance_ohm * 1000\n\n"
-                "print('Current:', final_current_mA, 'mA')\n\n"
-                "# These automatic checks should finish without an error.\n"
-                "assert len(final_current_mA) == 3\n"
-                "assert np.all(final_current_mA > 0)\n"
+                "# TASK 6: change only the middle number.\n"
+                "my_numbers = np.array([1.0, 2.0, 3.0])\n"
+                "print(my_numbers)\n\n"
+                "# This check confirms that the array still has three numbers.\n"
+                "assert len(my_numbers) == 3\n"
                 "print('Checks passed.')\n"
             ),
             md(
-                "### My explanation\n\n"
-                "- My prediction: `[above or below 5 mA]`\n"
-                "- What happened: `[state the largest current]`\n"
-                "- One thing I learned about variables, lists, or arrays: `[your sentence]`\n"
-            ),
-            md(
-                "## Optional error challenge\n\n"
-                "Run `print(voltage_aray_V)`. It contains a spelling mistake and should produce a `NameError`. Read the "
-                "last line, compare the spelling with `voltage_array_V`, and repair it.\n\n"
-                "**Hint:** the correct name contains two `r` letters in `array`.\n"
-            ),
-            code(
-                "# Optional: remove the first #, run the line, then repair the name.\n"
-                "# print(voltage_aray_V)\n"
+                "### My three answers\n\n"
+                "- The first number is: `[answer]`\n"
+                "- The middle number is now: `[answer]`\n"
+                "- An array is: `[a row of numbers stored under one name]`\n"
             ),
             md(
                 "## Check your work\n\n"
                 "- Every code cell has been run from top to bottom.\n"
-                "- TODO 1 through TODO 6 are complete.\n"
-                "- The final cell prints three positive currents and `Checks passed.`\n"
+                "- TASK 1 through TASK 6 are complete.\n"
+                "- The final cell prints three numbers and `Checks passed.`\n"
                 "- Every bracketed Markdown prompt has been replaced.\n"
             ),
             md(
@@ -336,8 +292,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "## Reflection\n\n"
-                "What is the difference between a variable, a list, and a NumPy array? Give one example of each from "
-                "this notebook.\n\n"
+                "What is an array? Use the words **row**, **numbers**, and **one name**.\n\n"
                 "## What comes next\n\n"
                 "Notebook 1 adds loops, functions, graphs, documentation, and a larger resistor investigation.\n"
             ),
