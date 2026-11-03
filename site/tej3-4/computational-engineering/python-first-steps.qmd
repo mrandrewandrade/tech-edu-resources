@@ -106,7 +106,19 @@ current_A = voltage_V / resistance_ohm
 
 Change one resistance. Predict whether current will increase or decrease before running the cell.
 
-## 7. Store several values in a list
+## 7. Why group several values?
+
+Suppose you test a circuit at three voltages. You could create three separate variables:
+
+```python
+voltage_1_V = 1.5
+voltage_2_V = 3.0
+voltage_3_V = 4.5
+```
+
+That code works, but the three readings are not grouped together. A **container** gives one name to several stored values.
+
+## 8. Use a list as the first container
 
 A **list** stores several values inside square brackets:
 
@@ -114,7 +126,13 @@ A **list** stores several values inside square brackets:
 voltage_list_V = [1.5, 3.0, 4.5]
 ```
 
-Python starts counting positions at zero:
+Each stored value has a numbered position called an **index**:
+
+| Index | `0` | `1` | `2` |
+|---|---:|---:|---:|
+| Stored voltage | `1.5 V` | `3.0 V` | `4.5 V` |
+
+Python starts counting indexes at zero:
 
 - `[0]` selects the first value;
 - `[1]` selects the second value;
@@ -122,20 +140,60 @@ Python starts counting positions at zero:
 
 Replace the starter list and print its third value.
 
-## 8. Meet one NumPy array
+::: {.callout-note title="A useful mental picture"}
+Think of the list as a small parts cabinet. The variable name labels the whole cabinet. Index `0`, index `1`, and index `2` label its three drawers.
+:::
+
+## 9. Understand what an array is
+
+A **NumPy array** is another kind of container. In this lesson, it is one ordered row of numbers:
+
+| Index | `0` | `1` | `2` |
+|---|---:|---:|---:|
+| Array value | `1.5` | `3.0` | `4.5` |
+
+The array is useful because NumPy can apply the same calculation to every stored number.
+
+| Python list | NumPy array |
+|---|---|
+| Groups values together | Groups values together |
+| Can contain different kinds of values | Normally contains one kind of value |
+| Good for general storage | Good for repeated calculations with numbers |
+
+For now, an array does **not** mean a matrix or a complicated table. It is simply one numbered row containing three voltage values.
+
+## 10. Build the first NumPy array
 
 NumPy is a Python library for groups of numbers.
 
 ```python
 import numpy as np
-voltage_array_V = np.array([1.5, 3.0, 4.5])
+voltage_list_V = [1.5, 3.0, 4.5]
+voltage_array_V = np.array(voltage_list_V)
 ```
 
-The import loads NumPy. The short name `np` keeps later commands brief. The notebook then divides all three voltages by one resistance and produces three currents.
+The import loads NumPy. The short name `np` keeps later commands brief. `np.array(voltage_list_V)` copies the three list values into an array.
+
+Before running the next cell, predict what multiplying the array by `2` will produce. NumPy multiplies each stored value:
+
+```text
+original:  [1.5  3.0  4.5]
+times 2:   [3.0  6.0  9.0]
+```
+
+The first input still lines up with the first output. The same is true for the second and third values.
+
+The notebook then divides each voltage by the same resistance:
+
+| Voltage input | Calculation | Current output |
+|---:|---:|---:|
+| `1.5 V` | `1.5 / 1000 × 1000` | `1.5 mA` |
+| `3.0 V` | `3.0 / 1000 × 1000` | `3.0 mA` |
+| `4.5 V` | `4.5 / 1000 × 1000` | `4.5 mA` |
 
 Do not worry about matrices, shapes, filters, plotting, or functions yet. Those belong to the next notebook.
 
-## 9. Complete the mini-assignment
+## 11. Complete the mini-assignment
 
 Use:
 
@@ -178,4 +236,4 @@ You ran Python, used a calculator, stored values in variables, recognized four b
 
 Next, continue to [Python and NumPy Foundations](python-numpy-foundations.qmd) for loops, functions, graphs, documentation, and the resistor investigation.
 
-The sequence follows the plain progression used by the official [Python introduction](https://docs.python.org/3/tutorial/introduction.html) and [NumPy beginner guide](https://numpy.org/doc/stable/user/absolute_beginners.html): numbers and text first, then lists, then arrays.
+This original classroom sequence adapts the progression in the official [Python introduction](https://docs.python.org/3/tutorial/introduction.html) and [NumPy absolute beginner's guide](https://numpy.org/doc/stable/user/absolute_beginners.html): individual values first, then lists, then indexed arrays and repeated numerical operations.

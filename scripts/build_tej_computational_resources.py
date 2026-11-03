@@ -198,9 +198,24 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "print('Current:', test_current_mA, 'mA')\n"
             ),
             md(
+                "## Why group values?\n\n"
+                "Suppose we test a circuit at three voltages. We could make three separate variables:\n\n"
+                "```python\n"
+                "voltage_1_V = 1.5\n"
+                "voltage_2_V = 3.0\n"
+                "voltage_3_V = 4.5\n"
+                "```\n\n"
+                "That works, but the values are harder to keep together. A **container** is one name that holds several "
+                "values. Python's simplest container for this job is a **list**.\n"
+            ),
+            md(
                 "## Working demonstration 5: store several values in a list\n\n"
-                "A **list** keeps several values together. Square brackets make the list. Python counts positions from "
-                "zero, so `[0]` selects the first value.\n"
+                "Square brackets make a list: `[1.5, 3.0, 4.5]`. Each stored value has a numbered position called an "
+                "**index**. Python begins at index `0`.\n\n"
+                "| index | 0 | 1 | 2 |\n"
+                "|---|---:|---:|---:|\n"
+                "| voltage (V) | 1.5 | 3.0 | 4.5 |\n\n"
+                "Think of the index as the label on a small parts drawer. Index `0` labels the first drawer.\n"
             ),
             code(
                 "voltage_list_V = [1.5, 3.0, 4.5]\n"
@@ -220,19 +235,45 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "print('Third value:', my_voltage_list_V[0])\n"
             ),
             md(
-                "## Working demonstration 6: meet NumPy\n\n"
-                "NumPy is a Python library for working with groups of numbers. `import numpy as np` loads the library "
-                "and gives it the short name `np`. `np.array()` changes a list into a NumPy array.\n"
+                "## From a list to an array\n\n"
+                "A **NumPy array** is another container. In this lesson it is a numbered row of values, like the list "
+                "above. The useful difference is that NumPy is designed to perform the same calculation on every "
+                "number in the container.\n\n"
+                "| Python list | NumPy array |\n"
+                "|---|---|\n"
+                "| groups values together | groups values together |\n"
+                "| can hold different kinds of values | normally holds one kind of value |\n"
+                "| good for general storage | good for repeated numerical calculations |\n\n"
+                "For now, an array does **not** mean a matrix or a complicated table. It is just one ordered row of "
+                "three voltage numbers.\n"
+            ),
+            md(
+                "## Working demonstration 6: build the first NumPy array\n\n"
+                "`import numpy as np` loads NumPy and gives it the short name `np`. `np.array()` copies the three "
+                "list values into a NumPy array.\n"
             ),
             code(
                 "import numpy as np\n\n"
-                "voltage_array_V = np.array([1.5, 3.0, 4.5])\n"
-                "print(voltage_array_V)\n"
+                "voltage_list_V = [1.5, 3.0, 4.5]\n"
+                "voltage_array_V = np.array(voltage_list_V)\n"
+                "print('List:', voltage_list_V)\n"
+                "print('Array:', voltage_array_V)\n"
+                "print('First array value:', voltage_array_V[0])\n"
                 "print(type(voltage_array_V))\n"
             ),
             md(
+                "### Predict before running\n\n"
+                "What should happen if we multiply the array by `2`? Write a prediction, then run the cell.\n"
+            ),
+            code(
+                "doubled_voltage_V = voltage_array_V * 2\n"
+                "print('Original array:', voltage_array_V)\n"
+                "print('Doubled array:', doubled_voltage_V)\n"
+            ),
+            md(
                 "## One calculation, three answers\n\n"
-                "NumPy can divide every number in the array by the same resistance. Run this cell.\n"
+                "NumPy divides **each** voltage by the same resistance. The first voltage produces the first current, "
+                "the second voltage produces the second current, and the third voltage produces the third current.\n"
             ),
             code(
                 "resistance_ohm = 1000.0\n"
