@@ -20,7 +20,6 @@ class TejComputationalResourceTests(unittest.TestCase):
             "challenge",
             "Hint",
             "Common errors",
-            "Reflection",
             "assert",
         )
         for path in paths:
@@ -30,6 +29,7 @@ class TejComputationalResourceTests(unittest.TestCase):
             for phrase in required:
                 self.assertIn(phrase.lower(), text.lower(), f"{phrase} missing from {path.name}")
             if path.name != "00-python-first-steps.ipynb":
+                self.assertIn("reflection", text.lower(), path.name)
                 self.assertIn("working demonstration", text.lower(), path.name)
             self.assertTrue(any(cell.get("cell_type") == "code" for cell in notebook["cells"]))
 
@@ -42,16 +42,25 @@ class TejComputationalResourceTests(unittest.TestCase):
             "kqtD5dpn9C8",
             "Four basic types",
             "variable",
-            "Why group values?",
+            "Keep several values together",
             "list",
-            "What is an array?",
-            "array is a row of numbers stored under one name",
+            "Make a NumPy array",
+            "NumPy array stores numbers in order",
             "np.array",
             "change only the middle number",
             "TASK 1 through TASK 6",
             "studentnumber-lastname-python-first-steps.ipynb",
         ):
             self.assertIn(phrase.lower(), first_steps_text.lower())
+        for phrase in (
+            "Reflection",
+            "prediction",
+            "My three answers",
+            "Finish this sentence",
+            "written answer",
+            "Markdown prompt",
+        ):
+            self.assertNotIn(phrase.lower(), first_steps_text.lower())
 
         foundations = json.loads((NOTEBOOKS / "01-engineering-calculator.ipynb").read_text(encoding="utf-8"))
         foundations_text = "".join("".join(cell.get("source", [])) for cell in foundations["cells"])

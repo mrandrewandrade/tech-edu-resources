@@ -1,6 +1,6 @@
 ---
 title: "Assignment: Python First Steps in Jupyter"
-description: "Learn what a notebook is, run simple Python, use variables and types, and finish with one small NumPy array."
+description: "Run simple Python, edit basic syntax, and make the code work."
 categories: [Python, Jupyter, beginner, variables, NumPy]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
@@ -9,16 +9,16 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Learning goals
+## What you will do
 
-- I can tell the difference between a Markdown cell and a code cell.
-- I can run one Python cell and change a value.
-- I can recognize a number, text, `True` or `False`, and a list.
-- I can describe an array and change one number in it.
+- Run Python code with **Shift+Enter**.
+- Change text and numbers.
+- Use variables, types, lists, and one NumPy array.
+- Fix the code until its checks pass.
 
 ## Why this is useful
 
-Python can act like a calculator, remember values, and repeat the same calculation. A Jupyter notebook keeps the directions, code, answers, and your explanation on one page.
+Python follows instructions exactly. Quotation marks, brackets, commas, names, and spelling matter.
 
 ## What you will make
 
@@ -92,7 +92,7 @@ Pause the video while you work. If YouTube is blocked, use the short videos.
 3. Watch the variables video. Complete TASK 3 and TASK 4.
 4. Watch the lists video. Complete TASK 5 and TASK 6.
 5. Run the notebook from top to bottom.
-6. Complete every short written answer.
+6. Fix any red errors until the checks pass.
 7. Download and submit the `.ipynb` file.
 
 Submit only your completed notebook. You do not need video notes.
@@ -101,8 +101,8 @@ Submit only your completed notebook. You do not need video notes.
 
 | Cell type | What it contains | What you do |
 |---|---|---|
-| Markdown | directions and written answers | double-click to edit, then press **Shift+Enter** |
-| Code | Python instructions | click once, then press **Shift+Enter** |
+| Markdown | directions | read it |
+| Code | Python instructions | edit it and press **Shift+Enter** |
 
 Work from the top of the notebook to the bottom. Run every working example before changing it.
 
@@ -162,9 +162,9 @@ $$
 current_A = voltage_V / resistance_ohm
 ```
 
-Change one resistance. Predict whether current will increase or decrease before running the cell.
+Change the resistance to `2000.0`. Run the cell and check the new current.
 
-## 7. Why group several values?
+## 7. Keep several values together
 
 Suppose you test a circuit at three voltages. You could create three separate variables:
 
@@ -198,19 +198,13 @@ Python starts counting indexes at zero:
 
 Replace the starter list and print its third value.
 
-::: {.callout-note title="A useful mental picture"}
-Think of the list as a small parts cabinet. The variable name labels the whole cabinet. Index `0`, index `1`, and index `2` label its three drawers.
-:::
+## 9. Make a NumPy array
 
-## 9. What is an array?
-
-A **NumPy array is a row of numbers stored under one name.**
+A **NumPy array stores numbers in order.** Square brackets hold the numbers, and commas separate them.
 
 | Place | First | Middle | Last |
 |---|---:|---:|---:|
 | Number | `1.0` | `2.0` | `3.0` |
-
-That is all you need to know for this activity. Matrices and calculations with whole arrays come later.
 
 ## 10. Build the first NumPy array
 
@@ -229,9 +223,7 @@ The output is `[1. 2. 3.]`. Those are the same three numbers.
 1. Find the middle number, `2.0`.
 2. Change only `2.0` to `4.0`.
 3. Press **Shift+Enter**.
-4. Write the first number.
-5. Write the new middle number.
-6. Finish this sentence: **An array is a row of numbers stored under one name.**
+4. Keep fixing the code until it prints `Checks passed.`
 
 ## Check your work
 
@@ -239,7 +231,6 @@ The output is `[1. 2. 3.]`. Those are the same three numbers.
 - Every cell has been run from top to bottom.
 - The final code cell prints three numbers.
 - The final code cell prints `Checks passed.`
-- Every bracketed Markdown prompt contains your own answer.
 
 ## Save and submit
 
@@ -260,11 +251,3 @@ Example: `123456789-Smith-python-first-steps.ipynb`. Keep the `.ipynb` ending.
 | `SyntaxError` | Check quotation marks, brackets, and punctuation. |
 | The answer looks old | Choose **Kernel > Restart Kernel and Run All Cells**. |
 | NumPy does not load | Confirm that the selected kernel is **Python (Pyodide)**. |
-
-## Summary
-
-You ran Python, used a calculator, stored values in variables, recognized four basic types, selected values from a list, and used one NumPy array.
-
-Next, continue to [Python and NumPy Foundations](python-numpy-foundations.qmd) for loops, functions, graphs, documentation, and the resistor investigation.
-
-This original classroom sequence adapts the progression in the official [Python introduction](https://docs.python.org/3/tutorial/introduction.html) and [NumPy absolute beginner's guide](https://numpy.org/doc/stable/user/absolute_beginners.html): individual values first, then lists, then indexed arrays and repeated numerical operations.

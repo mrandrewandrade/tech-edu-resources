@@ -60,8 +60,8 @@ def notebook(title: str, goal: str, prior: str, cells: list[dict[str, object]]) 
 def beginner_notebook(title: str, cells: list[dict[str, object]]) -> dict[str, object]:
     opening = md(
         f"# {title}\n\n"
-        "**Learning goal:** Run simple Python cells, store values in variables, recognize basic types, and use one small NumPy array.\n\n"
-        "**Why it matters:** Python can repeat calculations and keep the calculation beside your explanation.\n\n"
+        "**Learning goal:** Run simple Python, edit the syntax, and make the code work.\n\n"
+        "**Why it matters:** Python follows instructions exactly. Quotation marks, brackets, commas, names, and spelling matter.\n\n"
         "**Prior knowledge:** No previous Python, Jupyter, or NumPy experience is needed.\n\n"
         "> A notebook is a page made of boxes called cells. Run one cell at a time with **Shift+Enter**.\n"
     )
@@ -101,7 +101,7 @@ def notebooks() -> dict[str, dict[str, object]]:
         [
             md(
                 "## Before you type anything\n\n"
-                "A **Markdown cell** contains directions or your written answer. A **code cell** contains Python. "
+                "A **Markdown cell** contains directions. A **code cell** contains Python. "
                 "Click a cell once and press **Shift+Enter**. Work from top to bottom. If a cell shows a red message, "
                 "stop and read the last line before changing anything.\n"
             ),
@@ -144,7 +144,13 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "Change the numbers so the answer is `10`.\n\n"
                 "**Hint:** keep the `+` sign and change only the two numbers.\n"
             ),
-            code("# TASK 2: change the two numbers.\nanswer = 2 + 3\nprint(answer)\n"),
+            code(
+                "# TASK 2: change the two numbers.\n"
+                "answer = 2 + 3\n"
+                "print(answer)\n"
+                "assert answer == 10\n"
+                "print('TASK 2 passed.')\n"
+            ),
             md(
                 "## Example 3: give values names\n\n"
                 "A **variable** is a name that stores a value. The `=` sign stores the value on the right in the name "
@@ -204,20 +210,19 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "### Your turn\n\n"
-                "Change the resistance to `2000.0`. Before running the cell, write **increase** or **decrease** in the "
-                "prediction line. Then run it.\n"
+                "Change the resistance to `2000.0`. Then run the cell and check the new current.\n"
             ),
             code(
-                "# TASK 4: change the resistance and complete the prediction.\n"
+                "# TASK 4: change the resistance to 2000.0.\n"
                 "test_voltage_V = 9.0\n"
                 "test_resistance_ohm = 1000.0\n"
-                "prediction = 'increase or decrease?'\n"
                 "test_current_mA = test_voltage_V / test_resistance_ohm * 1000\n\n"
-                "print('Prediction:', prediction)\n"
                 "print('Current:', test_current_mA, 'mA')\n"
+                "assert test_resistance_ohm == 2000.0\n"
+                "print('TASK 4 passed.')\n"
             ),
             md(
-                "## Why group values?\n\n"
+                "## Keep several values together\n\n"
                 "Suppose we test a circuit at three voltages. We could make three separate variables:\n\n"
                 "```python\n"
                 "voltage_1_V = 1.5\n"
@@ -251,15 +256,18 @@ def notebooks() -> dict[str, dict[str, object]]:
             code(
                 "# TASK 5: replace the values and change the index.\n"
                 "my_voltage_list_V = [0.0, 0.0, 0.0]\n"
-                "print('Third value:', my_voltage_list_V[0])\n"
+                "third_value = my_voltage_list_V[0]\n"
+                "print('Third value:', third_value)\n"
+                "assert my_voltage_list_V == [2.0, 4.0, 6.0]\n"
+                "assert third_value == 6.0\n"
+                "print('TASK 5 passed.')\n"
             ),
             md(
-                "## What is an array?\n\n"
-                "An **array is a row of numbers stored under one name**.\n\n"
+                "## Make a NumPy array\n\n"
+                "A **NumPy array stores numbers in order**. Square brackets hold the numbers, and commas separate them.\n\n"
                 "| place | first | middle | last |\n"
                 "|---|---:|---:|---:|\n"
-                "| number | 1.0 | 2.0 | 3.0 |\n\n"
-                "That is all you need to know for this activity.\n"
+                "| number | 1.0 | 2.0 | 3.0 |\n"
             ),
             md(
                 "## Example 6: make one array\n\n"
@@ -275,28 +283,22 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "1. Find the middle number: `2.0`.\n"
                 "2. Change only `2.0` to `4.0`.\n"
                 "3. Press **Shift+Enter**.\n"
-                "4. Complete the three short answers below.\n"
+                "4. Keep fixing the code until it prints `Checks passed.`\n"
             ),
             code(
                 "# TASK 6: change only the middle number.\n"
                 "my_numbers = np.array([1.0, 2.0, 3.0])\n"
                 "print(my_numbers)\n\n"
-                "# This check confirms that the array still has three numbers.\n"
+                "# These checks confirm the change.\n"
                 "assert len(my_numbers) == 3\n"
+                "assert my_numbers[1] == 4.0\n"
                 "print('Checks passed.')\n"
-            ),
-            md(
-                "### My three answers\n\n"
-                "- The first number is: `[answer]`\n"
-                "- The middle number is now: `[answer]`\n"
-                "- An array is: `[a row of numbers stored under one name]`\n"
             ),
             md(
                 "## Check your work\n\n"
                 "- Every code cell has been run from top to bottom.\n"
                 "- TASK 1 through TASK 6 are complete.\n"
                 "- The final cell prints three numbers and `Checks passed.`\n"
-                "- Every bracketed Markdown prompt has been replaced.\n"
             ),
             md(
                 "## Save and submit\n\n"
@@ -308,12 +310,6 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "- `NameError`: check the spelling of the variable and run the cell that creates it.\n"
                 "- `SyntaxError`: check quotation marks, brackets, and punctuation.\n"
                 "- Wrong or old answer: choose **Kernel > Restart Kernel and Run All Cells**.\n"
-            ),
-            md(
-                "## Reflection\n\n"
-                "What is an array? Use the words **row**, **numbers**, and **one name**.\n\n"
-                "## What comes next\n\n"
-                "Notebook 1 adds loops, functions, graphs, documentation, and a larger resistor investigation.\n"
             ),
         ],
     )
