@@ -27,9 +27,41 @@ Use **line thickness**, not *visual weight*, unless you explain the term. Use **
 6. **Check your work** — show what success looks like.
 7. **Save, export, or submit** — name the files students need.
 8. **Common issues** — describe the problem first, then the fix.
-9. **Summary** — repeat the main skill and link to the next lesson.
+9. **Help improve this lesson** — optional, short feedback at the bottom.
 
-Keep **Learning goals** near the top. Keep **Summary** at the end.
+Keep **Learning goals** near the top. Do not add a recap only to repeat material
+the student just completed.
+
+## Keep technical work code-first
+
+For coding, circuit analysis, calculations, simulation, and other technical
+practice, assess the work itself. Use code, output, assertions, calculations,
+schematics, measurements, tables, files, and successful tests as evidence.
+
+- Do not add a reflection, prediction paragraph, sentence completion, written
+  recap, or “explain in your own words” prompt unless the teacher explicitly
+  requests it.
+- Do not make students rewrite a definition that the lesson already gives.
+- Teach syntax by showing a small working example, then ask the student to
+  change it, run it, read the result, and fix it until the check passes.
+- Keep directions beside the code they control. Prefer one small task and one
+  visible success check over a separate worksheet of written questions.
+- Use technical writing only when it is part of the skill, such as labelled
+  units, a circuit equation, a test result, a bug report, or a design decision.
+- Reflection is appropriate when it is an explicit curriculum outcome, such as
+  the N.I.C.E. Design Process. It is not the default ending for technical work.
+
+At the bottom of a new lesson or handout, add a short optional section titled
+**Help improve this lesson**. Ask only:
+
+1. Which step or word was unclear?
+2. What do you still not know how to do?
+3. What one change would make this easier for the next student?
+
+Invite students to suggest or make a specific fix to the wording, example,
+screenshot, diagram, or starter code. Tell them useful fixes may be added to the
+course materials and credited. This section is feedback for improving the
+lesson. It is not a required reflection or recap unless the teacher says so.
 
 ## Use screenshots well
 
@@ -134,6 +166,8 @@ Only add `terms` that already exist in the site glossary.
 
 - Read every sentence aloud. Shorten anything that feels hard to say.
 - Check that a beginner can find the first step quickly.
+- Check that technical work is demonstrated through doing and testing, not a
+  forced reflection or written recap.
 - Check every screenshot and link.
 - Make sure the page has a clear previous and next lesson.
 - Render the page.

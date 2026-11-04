@@ -28,8 +28,10 @@ class TejComputationalResourceTests(unittest.TestCase):
             text = "".join("".join(cell.get("source", [])) for cell in notebook["cells"])
             for phrase in required:
                 self.assertIn(phrase.lower(), text.lower(), f"{phrase} missing from {path.name}")
+            self.assertNotIn("## reflection", text.lower(), path.name)
+            self.assertNotIn("finish this sentence", text.lower(), path.name)
+            self.assertIn("help improve this lesson", text.lower(), path.name)
             if path.name != "00-python-first-steps.ipynb":
-                self.assertIn("reflection", text.lower(), path.name)
                 self.assertIn("working demonstration", text.lower(), path.name)
             self.assertTrue(any(cell.get("cell_type") == "code" for cell in notebook["cells"]))
 
@@ -70,7 +72,7 @@ class TejComputationalResourceTests(unittest.TestCase):
             "Boolean filter",
             "help(np.round)",
             "Command detective routine",
-            "Exact final error line",
+            "Read the **final line**",
             "Every numbered `TODO`",
             "studentnumber-lastname-jupyter-foundations.ipynb",
             "coding assignment",

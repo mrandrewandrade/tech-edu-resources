@@ -11,7 +11,7 @@ execute: {enabled: false}
 ## Learning goals
 
 - I can run and revise Python and Markdown cells in a notebook.
-- I can run simple Python, change a value, and explain the output.
+- I can run simple Python, change a value, and check the output.
 - I can download an `.ipynb` file and protect my work from browser-data loss.
 
 ## Why this is useful
@@ -68,16 +68,7 @@ Stop and read the last line.
 
 The larger documentation and debugging lesson comes later, after the Python basics are comfortable.
 
-## 4. Complete a Markdown answer
-
-The notebook contains written prompts such as `[write your prediction]`.
-
-1. Double-click the Markdown cell.
-2. Replace the words inside the square brackets with your own answer.
-3. Press **Shift+Enter** to display the finished answer.
-4. Keep the question and heading in place.
-
-## 5. Complete Python First Steps
+## 4. Complete Python First Steps
 
 Continue with [Assignment: Python First Steps in Jupyter](python-first-steps.qmd). Work through Notebook 0 in this order:
 
@@ -88,11 +79,11 @@ Continue with [Assignment: Python First Steps in Jupyter](python-first-steps.qmd
 5. Use `type()` to recognize a whole number, decimal number, text, and `True` or `False`.
 6. Select values from a three-item list.
 7. Change that list into one NumPy array.
-8. Change one number in a small array and complete three short answers.
+8. Change one number in a small array until the checks pass.
 
 Do not begin with loops, functions, graphs, matrices, or documentation challenges. Those skills appear in the next notebook after these first steps are comfortable.
 
-## 6. Save, download, reopen, and submit
+## 5. Save, download, reopen, and submit
 
 1. Choose **File > Save Notebook** during the work period.
 2. Choose **File > Download**. If that menu item is absent in an older deployment, right-click the notebook in the file browser and choose **Download**.
@@ -111,7 +102,7 @@ Do not begin with loops, functions, graphs, matrices, or documentation challenge
 | 3. Kirchhoff Systems | Documentation-driven debugging, residuals, and parameter investigation | [`.ipynb`](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) |
 | 4. Graph Electrical Relationships | Voltage-current and resistance-current plots | [`.ipynb`](../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) |
 | 5. Experimental Data Analysis | CSV import, prediction differences, graphs, and limitations | [`.ipynb`](../../assets/tej-computational/notebooks/05-experimental-data-analysis.ipynb) · [CSV](../../assets/tej-computational/data/circuit-measurements.csv) |
-| 6. Engineering Investigation | Choose a question, test it, troubleshoot, and explain evidence | [`.ipynb`](../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb) |
+| 6. Engineering Investigation | Choose a question, test it, troubleshoot, and verify the result | [`.ipynb`](../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb) |
 | 7. RC, Op-Amps, and a Bridge to Calculus | Model transients, numerical slope and area, integration, differentiation, and optional XL741 evidence | [`.ipynb`](../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) |
 | 8. Optional Component Model Review | Compare resistor, capacitor, LED, transistor-switch, and op-amp models with explicit limitations; use only where review is needed | [`.ipynb`](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) |
 
@@ -139,13 +130,12 @@ The storage and file guidance above follows the official [JupyterLite usage guid
 - TASK 1 through TASK 6 are complete.
 - Every cell has been run from top to bottom.
 - The final cell prints three numbers and `Checks passed.`
-- The three short Markdown answers are complete.
 - The downloaded notebook reopens and still contains your work.
 
-## Reflection
+## Next step
 
-What is one difference between a code cell and a Markdown cell? Why should you download the notebook before leaving?
+Continue with [Python First Steps](python-first-steps.qmd). Use the [local Jupyter pathway](local-python-jupyter.qmd) only when you have an unrestricted computer or need packages and files beyond the browser environment.
 
-## Summary
+## Help improve this lesson (optional)
 
-You can now open, run, edit, download, and reopen a notebook. Continue with [Python First Steps](python-first-steps.qmd). Use the [local Jupyter pathway](local-python-jupyter.qmd) only when you have an unrestricted computer or need packages and files beyond the browser environment.
+If something got in the way, tell the teacher which step or word was unclear, what you still do not know how to do, and one change that would help the next student. If you can fix the wording or screenshot, show the teacher. A useful fix may be added to the course website and credited to you.

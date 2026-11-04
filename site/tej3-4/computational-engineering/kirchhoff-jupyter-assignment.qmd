@@ -43,7 +43,7 @@ Submit one Jupyter notebook showing this complete chain:
 
 ## Before you start
 
-1. Complete [Python and NumPy Foundations](python-numpy-foundations.qmd). You should already be able to run all cells, inspect an array, call a function, read basic documentation, and explain an assertion.
+1. Complete [Python and NumPy Foundations](python-numpy-foundations.qmd). You should already be able to run all cells, inspect an array, call a function, read basic documentation, and make an assertion pass.
 2. Download the [printable two-loop-to-matrix guide](../../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf).
 3. Download [Notebook 3A: From Two Loops to a Matrix](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb).
 4. Keep your returned Question 4 and Question 5 work available. Use the released Question 4 answer for comparison, but do not copy the released Question 5 answer into the scaffold.
@@ -108,7 +108,7 @@ $$
 :::
 ::::
 
-Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the shared resistor, as shown. In the first notebook Markdown cell, describe all three directions in words and explain what a negative value of $I_3$ would mean.
+Use clockwise mesh currents $I_1$ and $I_2$. Define $I_3$ downward through the shared resistor, as shown. Keep the arrows and the equation $I_3=I_1-I_2$ visible beside the work.
 
 ### 2. Derive Equation 1 from Loop 1
 
@@ -310,7 +310,7 @@ currents_mA = np.linalg.solve(A, b)
 residual_V = A @ currents_mA - b
 ```
 
-Report $I_1$, $I_2$, and the two residuals with units. Explain what a residual near zero proves and what it does not prove.
+Print $I_1$, $I_2$, and the two residuals with units. Keep the residual assertion in the code.
 
 ### 6. Solve symbolically
 
@@ -461,7 +461,7 @@ A negative current means the real current is opposite the arrow selected before 
 
 ## Check your work
 
-- [ ] The current arrows and $I_3=I_1-I_2$ are explained.
+- [ ] The current arrows and $I_3=I_1-I_2$ are visible.
 - [ ] Both loop sign tables are present.
 - [ ] Every algebra line from KVL to standard form is visible.
 - [ ] The variable order and units are stated.
@@ -472,7 +472,6 @@ A negative current means the real current is opposite the arrow selected before 
 - [ ] Original, released, numerical, and symbolic results are compared.
 - [ ] Question 5 includes both seven-line rearrangements, two boxed standard-form equations, a completed coefficient table, and a matrix row read-back.
 - [ ] Question 5 is solved only after its matrix has been derived.
-- [ ] The reflection is answered in complete sentences.
 
 ## Save and submit
 
@@ -500,8 +499,10 @@ A practical classroom system should include:
 Use the measured battery voltages in the equations because real batteries will not equal their printed values exactly. The physical goal is agreement within component and measurement tolerance, not perfect decimal matching.
 :::
 
-## Summary and next lesson
-
-The circuit creates the equations. Standard form creates the matrix rows. Question 4 demonstrates the complete process; Question 5 proves that you can transfer it without being handed the matrix. NumPy gives a numerical solution, SymPy preserves exact algebra, and independent checks show whether the entered equations were solved consistently.
+## Next lesson
 
 The intentional keyword error, array-shape error, silent unit bug, parameter sweep, capacitors, and RC response are later checkpoints. They are not required tomorrow.
+
+## Help improve this lesson (optional)
+
+If something got in the way, tell the teacher which step, sign, diagram, or code cell was unclear, what you still do not know how to do, and one change that would help the next student. If you can fix the wording, schematic, example, or starter code, show the teacher. A useful fix may be added to the course website and credited to you.

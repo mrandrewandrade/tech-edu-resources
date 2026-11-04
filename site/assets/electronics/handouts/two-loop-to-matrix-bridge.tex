@@ -492,24 +492,22 @@ The helper questions reveal the method, not the answer. Your algebra must genera
 % ---------------------------------------------------------------------------
 \sectiontitle{Assignment and submission}
 
-\textbf{Part A:} explain how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.
+\textbf{Part A:} show how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.
 
 \textbf{Part B:} use the helper questions to derive the Question 5 equations and matrix without copying the completed answer.
 
 \textbf{The essential skill:} keep the shared-current definition and variable order consistent.
 
-\textbf{The challenge:} explain every sign in both loop equations instead of copying the finished matrix.
+\textbf{The challenge:} show every signed term in both loop equations instead of copying the finished matrix.
 
 \textbf{The investigation:} use Python help and the official NumPy or SymPy documentation when a function or object is unfamiliar.
 
 \textbf{The verification:} use residuals, substitution, and $I_3=I_1-I_2$.
 
-\textbf{The reflection:} identify the step that changed your understanding of the two loops.
-
 \subsection*{Required notebook evidence}
 
 \begin{enumerate}
-  \item Write the definitions of $I_1$, $I_2$, and $I_3$ in a Markdown cell.
+  \item Draw and label the directions of $I_1$, $I_2$, and $I_3$.
   \item Show the three signed KVL terms for Loop 1 and derive Equation 1.
   \item Show the three signed KVL terms for Loop 2 and derive Equation 2.
   \item State the variable order and units.
@@ -517,7 +515,6 @@ The helper questions reveal the method, not the answer. Your algebra must genera
   \item Solve with `numpy.linalg.solve` and report the residual vector.
   \item Solve the same equations with `sympy.solve` and report exact fractions.
   \item Calculate $I_3$ and compare all three currents with the released answer.
-  \item Answer the notebook reflection in complete sentences.
   \item For Question 5, show both seven-line rearrangements, the coefficient table, the completed matrix, and both row read-backs.
   \item Solve Question 5 only after the matrix is justified; then compare with the released answer.
 \end{enumerate}
@@ -539,5 +536,9 @@ Rename the notebook exactly:
 Example: \texttt{123456789-Smith-kirchhoff-jupyter.ipynb}. Keep the `.ipynb` ending. Restart the kernel, run all required cells, save, download, reopen, and submit the notebook through the assigned classroom system.
 
 \textbf{Later, not tomorrow:} the intentional keyword error, array-shape error, unit bug, parameter sweep, capacitors, and RC response.
+
+\subsection*{Help improve this lesson (optional)}
+
+Tell the teacher which step, sign, diagram, or code cell was unclear, what you still do not know how to do, and one change that would help the next student. A useful fix to the wording, schematic, example, or starter code may be added to the course materials and credited to you.
 
 \end{document}

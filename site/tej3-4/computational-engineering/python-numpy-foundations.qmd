@@ -15,7 +15,7 @@ Complete [Python First Steps in Jupyter](python-first-steps.qmd) **before** this
 
 The sequence in this second notebook is:
 
-**run working code → change one value → use arrays → write a function → read documentation → repair an error → graph and explain**
+**run working code → change one value → use arrays → write a function → read documentation → repair an error → graph and check**
 
 ## Learning goals
 
@@ -25,7 +25,7 @@ The sequence in this second notebook is:
 - I can apply one calculation to a complete array and verify the result.
 - I can make and interpret a labelled graph.
 - I can use `help()`, `?`, official documentation, and an exact error message to repair code.
-- I can submit a notebook containing reproducible code, output, checks, sources, and explanations.
+- I can submit a notebook containing reproducible code, output, checks, and sources.
 
 ## What to download
 
@@ -39,7 +39,7 @@ The sequence in this second notebook is:
 studentnumber-lastname-jupyter-foundations.ipynb
 ```
 
-The notebook supplies working demonstrations, numbered `TODO` cells, Markdown response prompts, a command sandbox, and an intentional error challenge. Complete them in order rather than starting from an empty notebook.
+The notebook supplies working demonstrations, numbered `TODO` cells, a command sandbox, and an intentional error challenge. Complete them in order rather than starting from an empty notebook.
 
 ## 1. Understand the notebook
 
@@ -58,13 +58,13 @@ Use **Kernel → Restart Kernel and Run All Cells** before submission. This catc
 
 Use the notebook's **command detective** routine:
 
-1. predict its purpose from the name and surrounding code;
-2. run it and inspect the output;
+1. run the small working example;
+2. read the output or the last line of the error;
 3. use `help(command)`, `command?`, or the official documentation;
 4. change one input in the supplied sandbox; and
-5. explain, in your own words, what goes in, what comes out, and why the command helps.
+5. use the command in the task and keep fixing it until the check passes.
 
-You will do this for at least two commands. Suitable examples include `np.array`, `.shape`, `.dtype`, `.mean()`, `np.diff`, `np.asarray`, `np.allclose`, Boolean masks, and `plt.plot`.
+Suitable examples include `np.array`, `.shape`, `.dtype`, `.mean()`, `np.diff`, `np.asarray`, `np.allclose`, Boolean masks, and `plt.plot`.
 
 ## 2. Begin with named quantities
 
@@ -87,7 +87,7 @@ resistance_ohm = 2200.0  # 2.2 kΩ written in base ohms
 
 ### First checkpoint
 
-Change one resistance. Before running the cell, write a Markdown prediction stating whether current should increase or decrease. Rerun the code and explain whether the output agrees.
+Change the resistance to `2200.0`. Run the code. Add an assertion that checks the current is positive.
 
 ## 3. Store several values
 
@@ -189,15 +189,7 @@ if trigger_documentation_error:
     rounded_current_mA = np.round(current_mA, digits=2)
 ```
 
-Your debugging record must include:
-
-1. the exact final exception line as text;
-2. the search terms or Jupyter help command used;
-3. a link to the official [`numpy.round` documentation](https://numpy.org/doc/stable/reference/generated/numpy.round.html);
-4. the relevant part of the function signature;
-5. the smallest repair;
-6. a successful rerun; and
-7. one sentence explaining why the repair matches the documentation.
+Read the final exception line. Open the official [`numpy.round` documentation](https://numpy.org/doc/stable/reference/generated/numpy.round.html), find the correct keyword, repair only that keyword, and rerun the cell until it prints the rounded array.
 
 Use the full [documentation and help-request lesson](finding-documentation-and-asking-for-help.qmd) when the first lookup does not solve the problem. That lesson also covers Google searches, Stack Overflow, minimal reproducible examples, and the evidence required when asking the teacher.
 
@@ -214,7 +206,7 @@ plt.grid(True)
 plt.show()
 ```
 
-A graph is not finished until the axes, units, and meaning are clear. In Markdown, explain why the line is straight and what determines its slope.
+A graph is not finished until the axes, units, title, and data are clear. Add a numerical slope check in code.
 
 ## Coding assignment: resistor investigation
 
@@ -222,22 +214,21 @@ Create a notebook section titled **My resistor investigation**. Choose a teacher
 
 Your submission must include:
 
-1. a Markdown prediction made before running the analysis;
-2. named variables with units;
-3. a NumPy voltage array containing at least seven values;
-4. vectorized current and power calculations;
-5. indexing that selects one meaningful result;
-6. a Boolean filter that answers a stated question;
-7. at least one `min`, `max`, or `mean` calculation;
-8. a reusable calculation function;
-9. at least two meaningful assertions;
-10. a graph with a title, labelled axes, units, markers, and grid;
-11. a Markdown interpretation of the output and one limitation; and
-12. the completed error-challenge evidence.
+1. named variables with units;
+2. a NumPy voltage array containing at least seven values;
+3. vectorized current and power calculations;
+4. indexing that selects one result;
+5. a Boolean filter;
+6. at least one `min`, `max`, or `mean` calculation;
+7. a reusable calculation function;
+8. at least two meaningful assertions;
+9. a graph with a title, labelled axes, units, markers, and grid;
+10. a second resistor curve with a legend; and
+11. the repaired error-challenge cell.
 
 ### Starter
 
-The downloaded notebook divides this starter into four short code cells: choose inputs, calculate arrays, inspect and filter results, then verify and graph. Each cell contains numbered `TODO` comments and the matching Markdown cell contains prompts to replace.
+The downloaded notebook divides this starter into four short code cells: choose inputs, calculate arrays, inspect and filter results, then verify and graph. Each cell contains numbered `TODO` comments.
 
 ```python
 student_resistance_ohm = 3300.0
@@ -257,7 +248,7 @@ Do not copy a completed analysis from a search result. Use documentation to unde
 
 ## Optional challenge
 
-Compare two resistor values on the same graph. Predict which line will be steeper before running the code. Use the same voltage array for both, add labels and a legend, and explain the result using $I=V/R$.
+Compare two resistor values on the same graph. Use the same voltage array for both, add labels and a legend, and add an assertion that checks which current array is larger at the same voltage.
 
 ## Submit
 
@@ -265,9 +256,9 @@ Submit the downloaded `.ipynb` file. Before submitting:
 
 - [ ] The filename follows `studentnumber-lastname-jupyter-foundations.ipynb`.
 - [ ] Restart Kernel and Run All Cells completes after the intentional error is repaired.
-- [ ] Every numbered `TODO` and bracketed Markdown prompt is complete.
-- [ ] The command detective notes explain two unfamiliar commands using output or documentation evidence.
-- [ ] Code, output, graph, assertions, documentation evidence, and Markdown explanations are present.
+- [ ] Every numbered `TODO` is complete.
+- [ ] The help sandbox was run with one changed input.
+- [ ] Code, output, graph, assertions, and the repaired error challenge are present.
 - [ ] Units are visible in variable names, printed output, and graph labels.
 - [ ] The downloaded notebook reopens correctly.
 - [ ] No private paths, passwords, tokens, or unnecessary personal information are included.
@@ -275,3 +266,7 @@ Submit the downloaded `.ipynb` file. Before submitting:
 ## Next lesson
 
 After this assignment, complete [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd). The new idea in that lesson should be translating circuit equations into matrix rows, not learning Jupyter and NumPy at the same time.
+
+## Help improve this lesson (optional)
+
+If something got in the way, tell the teacher which step or word was unclear, what you still do not know how to do, and one change that would help the next student. If you can fix the wording, example, screenshot, or starter code, show the teacher. A useful fix may be added to the course website and credited to you.

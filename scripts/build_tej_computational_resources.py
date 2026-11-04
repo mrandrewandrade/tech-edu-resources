@@ -79,6 +79,19 @@ def beginner_notebook(title: str, cells: list[dict[str, object]]) -> dict[str, o
     }
 
 
+IMPROVEMENT_FEEDBACK = [
+    md(
+        "## Help improve this lesson (optional)\n\n"
+        "If something got in the way, leave a short note for the teacher:\n\n"
+        "1. Which step or word was unclear?\n"
+        "2. What do you still not know how to do?\n"
+        "3. What one change would make this easier for the next student?\n\n"
+        "If you can fix the wording, example, diagram, screenshot, or starter code, show the teacher. "
+        "Useful fixes may be added to the course materials and credited. This feedback is optional.\n"
+    ),
+]
+
+
 COMMON_CLOSE = [
     md(
         "## Common errors\n\n"
@@ -87,11 +100,7 @@ COMMON_CLOSE = [
         "- Read the last line of an error first and confirm every filename and variable name.\n"
         "- Keep full precision for intermediate values and round only the reported result.\n"
     ),
-    md(
-        "## Reflection\n\n"
-        "What do you know, what do you need to find out, and how will you know when you are right? "
-        "Explain what your check established and one limitation it could not remove.\n"
-    ),
+    *IMPROVEMENT_FEEDBACK,
 ]
 
 
@@ -311,6 +320,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "- `SyntaxError`: check quotation marks, brackets, and punctuation.\n"
                 "- Wrong or old answer: choose **Kernel > Restart Kernel and Run All Cells**.\n"
             ),
+            *IMPROVEMENT_FEEDBACK,
         ],
     )
 
@@ -321,20 +331,18 @@ def notebooks() -> dict[str, dict[str, object]]:
         [
             md(
                 "## How to work through this notebook\n\n"
-                "Run each working demonstration unchanged before editing anything. Predict what an edit should do, make "
-                "one change, rerun the cell, and compare the output with your prediction. Use **Shift+Enter** to run a "
-                "cell. Markdown cells explain; code cells calculate. Complete every numbered `TODO` before submitting.\n"
+                "Run each working demonstration unchanged before editing anything. Make one change, rerun the cell, and "
+                "read the output. Use **Shift+Enter** to run a cell. Markdown cells give directions; code cells calculate. "
+                "Complete every numbered `TODO` before submitting.\n"
             ),
             md(
                 "## Command detective routine\n\n"
                 "You are not expected to recognize every command immediately. When you meet an unfamiliar command:\n\n"
-                "1. **Predict:** use its name, punctuation, and the surrounding code to guess what it does.\n"
-                "2. **Run:** inspect the output and decide whether it supports your prediction.\n"
-                "3. **Read:** use `help(command)`, `command?`, or the official documentation.\n"
-                "4. **Test:** change one input in a small sandbox and run it again.\n"
-                "5. **Explain:** describe the command in your own words and name what goes in and what comes out.\n\n"
-                "> Do not paste a definition you do not understand. A useful explanation connects the command to the "
-                "values and output in this notebook.\n"
+                "1. **Run** the small working example.\n"
+                "2. **Read** the output or the last line of the error.\n"
+                "3. **Open help** with `help(command)`, `command?`, or the official documentation.\n"
+                "4. **Change one input** and run the small example again.\n"
+                "5. **Use the command** in the task and keep fixing it until the check passes.\n"
             ),
             md("## Working demonstration 1: variables, arithmetic, and output\n\nRun this cell unchanged first.\n"),
             code(
@@ -352,17 +360,15 @@ def notebooks() -> dict[str, dict[str, object]]:
             md(
                 "### Checkpoint 1\n\n"
                 "1. Change the resistance to $2.2\\,\\mathrm{k\\Omega}$.\n"
-                "2. Before running the cell, predict whether current and power increase or decrease.\n"
-                "3. Add a Markdown cell that explains the result in one complete sentence.\n"
+                "2. Run the cell.\n"
+                "3. Add an assertion that checks the current is positive.\n"
             ),
             code(
                 "# TODO 1: complete the checkpoint without changing the variable names.\n"
                 "checkpoint1_voltage_V = 9.0\n"
                 "checkpoint1_resistance_ohm = 2200.0\n"
-                "checkpoint1_prediction = 'Replace this with your prediction before running the cell.'\n\n"
                 "checkpoint1_current_mA = checkpoint1_voltage_V / checkpoint1_resistance_ohm * 1000\n"
                 "checkpoint1_power_mW = checkpoint1_voltage_V * checkpoint1_current_mA\n\n"
-                "print(checkpoint1_prediction)\n"
                 "print(f'Current: {checkpoint1_current_mA:.2f} mA')\n"
                 "print(f'Power: {checkpoint1_power_mW:.1f} mW')\n"
                 "# TODO: add one assertion that checks a result is positive.\n"
@@ -384,7 +390,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "the list and rerun the loop.\n"
             ),
             code(
-                "# TODO 2: change the two starter values, then explain what append() does.\n"
+                "# TODO 2: change the two starter values.\n"
                 "checkpoint2_values_ohm = [1000.0, 2200.0, 3300.0, 4700.0]\n"
                 "last_index = 0  # Replace 0 with the negative index for the final item.\n"
                 "value_to_add_ohm = 0.0  # Replace 0.0 with the required resistance.\n\n"
@@ -415,33 +421,24 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "### Checkpoint 3\n\n"
-                "Explain why `voltage_V / resistance_ohm` produces six answers. Use indexing to print the result for "
-                "$6.0\\,\\mathrm{V}$ only. Then use a Boolean comparison to display only currents below $3\\,\\mathrm{mA}$.\n"
+                "Use indexing to print the result for $6.0\\,\\mathrm{V}$. Then use a Boolean comparison to display only "
+                "currents below $3\\,\\mathrm{mA}$.\n"
             ),
             code(
-                "# TODO 3: run the scaffold, then explain index 3 and the Boolean mask in Markdown.\n"
+                "# TODO 3: run the scaffold and make both checks pass.\n"
                 "selected_index = 3\n"
                 "current_limit_mA = 3.0\n"
                 "below_limit = current_mA < current_limit_mA\n\n"
                 "print('Current at 6.0 V:', current_mA[selected_index])\n"
                 "print('Mask:', below_limit)\n"
                 "print('Currents below the limit:', current_mA[below_limit])\n"
+                "assert voltage_V[selected_index] == 6.0\n"
+                "assert np.all(current_mA[below_limit] < current_limit_mA)\n"
             ),
             md(
-                "### Command detective notes: NumPy\n\n"
-                "Choose **two** unfamiliar items from `np.array`, `.shape`, `.dtype`, `.mean()`, `np.diff`, indexing, "
-                "or the Boolean mask. Replace each bracketed prompt below.\n\n"
-                "#### Command 1\n"
-                "- Command: `[type the command]`\n"
-                "- My prediction: `[what I thought it would do]`\n"
-                "- Evidence from the output: `[what I observed]`\n"
-                "- Documentation or `help()` result: `[link or useful signature]`\n"
-                "- My explanation: `[what goes in, what comes out, and why it helps here]`\n\n"
-                "#### Command 2\n"
-                "- Command: `[type the command]`\n"
-                "- My prediction: `[what I thought it would do]`\n"
-                "- Small test I changed: `[describe one changed input]`\n"
-                "- My explanation: `[explain the result in your own words]`\n"
+                "### Try NumPy help\n\n"
+                "Run the sandbox. Uncomment one `help(...)` line. Change one number in `command_sample`, run the cell "
+                "again, and find the changed output.\n"
             ),
             code(
                 "# Command sandbox: uncomment one help line, then change the sample values.\n"
@@ -451,7 +448,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "print('mean:', command_sample.mean())\n"
                 "# help(np.array)\n"
                 "# help(np.mean)\n"
-                "# TODO: change one value above and record what changed in the output.\n"
+                "# TODO: change one value above and run the cell again.\n"
             ),
             md("## Working demonstration 4: write and test a function\n"),
             code(
@@ -469,16 +466,15 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "your_current_mA = calculate_current_mA(your_voltage_V, your_resistance_ohm)\n"
                 "print(your_current_mA)\n"
                 "# TODO: add an assertion for one current you can calculate by hand.\n"
-                "# TODO: explain np.asarray() and np.allclose() using the command detective routine.\n"
+                "# TODO: use help(np.asarray) or help(np.allclose), then rerun this cell.\n"
             ),
             md(
                 "## Error challenge: repair one keyword\n\n"
-                "1. Predict what `np.round(current_mA, digits=2)` is trying to do.\n"
-                "2. Change `trigger_documentation_error` to `True` and run the cell.\n"
-                "3. Copy the **final line** of the exception before changing the code.\n"
-                "4. Use `help(np.round)`, `np.round?`, or the official NumPy documentation.\n"
-                "5. Repair only the incorrect keyword, rerun the cell, and verify the output.\n\n"
-                "> The goal is not to guess quickly. The goal is to use the error and documentation as engineering evidence.\n"
+                "1. Change `trigger_documentation_error` to `True` and run the cell.\n"
+                "2. Read the **final line** of the error.\n"
+                "3. Use `help(np.round)`, `np.round?`, or the official NumPy documentation.\n"
+                "4. Repair only the incorrect keyword.\n"
+                "5. Rerun the cell until it prints the rounded array.\n"
             ),
             code(
                 "trigger_documentation_error = False\n\n"
@@ -487,18 +483,6 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "    print(rounded_current_mA)\n"
                 "else:\n"
                 "    print('Set the flag to True when you are ready to practise reading documentation.')\n"
-            ),
-            md(
-                "### Error challenge evidence: replace every bracketed prompt\n\n"
-                "- My prediction: `[what I expected the command to do]`\n"
-                "- Exact final error line: `[paste it here]`\n"
-                "- What I think the error means: `[your explanation]`\n"
-                "- Search terms: `[the words you searched]`\n"
-                "- Documentation source: `[link or help command]`\n"
-                "- Relevant function signature: `[copy only the useful signature]`\n"
-                "- Smallest repair: `[name the keyword you changed]`\n"
-                "- Verification: `[describe the successful output]`\n"
-                "- In my own words: `[explain what the repaired command means]`\n"
             ),
             md("## Working demonstration 5: graph an array\n"),
             code(
@@ -521,20 +505,15 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "4. indexing, one Boolean filter, and `min`, `max`, or `mean`;\n"
                 "5. a reusable function and at least two assertions;\n"
                 "6. a graph with title, axis labels, units, markers, and grid;\n"
-                "7. a Markdown prediction and a Markdown interpretation; and\n"
-                "8. the completed error-challenge evidence above.\n"
+                "7. a second resistor curve with a legend; and\n"
+                "8. the repaired error-challenge cell above.\n"
             ),
             code(
                 "# STEP 1 — choose inputs. Replace the example resistor with a teacher-approved value.\n"
                 "student_resistance_ohm = 3300.0\n"
                 "student_voltage_V = np.linspace(1.0, 12.0, 12)\n"
                 "print('Voltage values:', student_voltage_V)\n"
-                "# TODO 5: explain what start, stop, and num mean in np.linspace(start, stop, num).\n"
-            ),
-            md(
-                "### Prediction: replace the prompts\n\n"
-                "- I predict the current will `[describe the pattern]` as voltage increases.\n"
-                "- I think this because `[connect the prediction to I = V/R]`.\n"
+                "# TODO 5: use help(np.linspace), then change the number of voltage values.\n"
             ),
             code(
                 "# STEP 2 — calculate complete arrays with the function.\n"
@@ -547,7 +526,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             code(
                 "# STEP 3 — inspect one value, filter the array, and summarize it.\n"
-                "student_index = 0  # TODO 6: choose an index and explain which voltage it selects.\n"
+                "student_index = 0  # TODO 6: choose an index.\n"
                 "student_limit_mA = 3.0  # TODO: choose a useful limit.\n"
                 "student_mask = student_current_mA < student_limit_mA\n\n"
                 "print('Selected voltage:', student_voltage_V[student_index])\n"
@@ -569,16 +548,9 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "plt.show()\n"
             ),
             md(
-                "### Interpretation: replace the prompts\n\n"
-                "- The graph shows `[describe the pattern with values or units]`.\n"
-                "- This agrees or disagrees with my prediction because `[explain]`.\n"
-                "- One assertion checked `[state exactly what it established]`.\n"
-                "- One limitation is `[state what the calculation or assertion cannot prove]`.\n"
-            ),
-            md(
                 "## Independent challenge\n\n"
-                "Compare two resistor values on the same graph. Predict which line will be steeper before running the "
-                "cell, then explain the result using $I=V/R$.\n\n"
+                "Compare two resistor values on the same graph. Label both lines and add an assertion that checks which "
+                "current array is larger at the same voltage.\n\n"
                 "### Hints\n\n"
                 "1. Reuse the same voltage array for a fair comparison.\n"
                 "2. Call `calculate_current_mA` once for each resistor.\n"
@@ -588,12 +560,12 @@ def notebooks() -> dict[str, dict[str, object]]:
             md(
                 "## Submission checklist\n\n"
                 "- [ ] Restarting the kernel and running all cells completes after the intentional error is repaired.\n"
-                "- [ ] The assignment contains the required array operations, function, assertions, graph, and Markdown.\n"
-                "- [ ] Every numbered `TODO` and bracketed Markdown prompt has been completed.\n"
-                "- [ ] The command detective notes explain two unfamiliar commands using output or documentation evidence.\n"
-                "- [ ] The error challenge evidence includes the exact error, source, repair, and verification.\n"
+                "- [ ] The assignment contains the required array operations, function, assertions, and graph.\n"
+                "- [ ] Every numbered `TODO` has been completed.\n"
+                "- [ ] The help sandbox was run with one changed input.\n"
+                "- [ ] The error challenge runs after the keyword is repaired.\n"
                 "- [ ] The downloaded filename follows `studentnumber-lastname-jupyter-foundations.ipynb`.\n"
-                "- [ ] The downloaded notebook reopens with code, output, and explanations present.\n"
+                "- [ ] The downloaded notebook reopens with code and output present.\n"
             ),
             *COMMON_CLOSE,
         ],
@@ -650,7 +622,7 @@ def notebooks() -> dict[str, dict[str, object]]:
         "KCL, KVL, simultaneous equations, metric prefixes, and the completed five-question assignment.",
         [
             md(
-                "**Monday:** follow the teacher demonstration and predict each result before the code runs.  \n"
+                "**Monday:** follow the teacher demonstration and run each check.  \n"
                 "**Tuesday:** complete the independent verification lab using one two-loop question you already solved and corrected.\n\n"
                 "## Workflow\n\n"
                 "**Write Equations → Standard Form → $A\\mathbf{x}=\\mathbf{b}$ → Solve → Verify → Investigate**\n\n"
@@ -706,14 +678,14 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "3. **Inspect:** print `type(...)`, `.shape`, units, and the values entering the function.\n"
                 "4. **Research:** try `help(function)`, `function?`, or search the exact error with the library and function name. "
                 "Prefer the official NumPy or Jupyter documentation.\n"
-                "5. **Repair:** change the smallest necessary part and explain why the documentation supports it.\n"
+                "5. **Repair:** change the smallest necessary part shown by the documentation.\n"
                 "6. **Verify:** rerun from a clean kernel and use an independent equation, unit check, or residual.\n\n"
                 "Your debugging record must include the exact error or wrong result, search terms, source consulted, the "
                 "requirement you found, the repair, and the verification evidence.\n"
             ),
             md(
                 "### Difficulty ladder\n\n"
-                "1. **Working example:** run known-good code and explain its output.\n"
+                "1. **Working example:** run known-good code and match its output to the shown result.\n"
                 "2. **Easy:** fix one incorrect function keyword using `help()` or the function signature.\n"
                 "3. **Medium:** diagnose incompatible array shapes using an exception and the official documentation.\n"
                 "4. **Harder:** catch a believable unit error even though the program runs and its residual is near zero.\n"
@@ -732,8 +704,8 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "    print('Set the flag to True when you are ready for the easy documentation task.')\n"
             ),
             md(
-                "**Documentation evidence:** Copy the exact error, write the function signature you found, identify the "
-                "incorrect keyword, and link [the official `numpy.round` page](https://numpy.org/doc/stable/reference/generated/numpy.round.html).\n"
+                "Open [the official `numpy.round` page](https://numpy.org/doc/stable/reference/generated/numpy.round.html), "
+                "find the keyword for decimal places, and repair the code below.\n"
             ),
             code(
                 "# Student repair for Stage 1. Change only the incorrect keyword.\n"
@@ -757,9 +729,8 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "    print('Set the flag to True when you are ready to trigger the intentional error.')\n"
             ),
             md(
-                "**Documentation evidence:** What shape does `numpy.linalg.solve` require for $A$? Quote or paraphrase "
-                "the requirement, link [the official `numpy.linalg.solve` page](https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html), "
-                "repair the array, and show the verified solution below.\n"
+                "Open [the official `numpy.linalg.solve` page](https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html). "
+                "Use the required shape for $A$, repair the array, and make the residual check pass.\n"
             ),
             code(
                 "# Student repair for the seeded error. Do not paste a complete solution from a search result.\n"
@@ -824,10 +795,8 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "| Python result | ___ | ___ | ___ |\n"
             ),
             md(
-                "## Parameter investigation: predict before running\n\n"
-                "Predict what will happen to $I_1$ and $I_2$ as the left-loop source rises from "
-                "$6\\,\\mathrm{V}$ to $14\\,\\mathrm{V}$.\n\n"
-                "**Prediction:** ___\n"
+                "## Parameter investigation\n\n"
+                "Run the sweep from $6\\,\\mathrm{V}$ to $14\\,\\mathrm{V}$. Read the printed current table and graph.\n"
             ),
             code(
                 "# STEP 3 — Change one source systematically and graph the response.\n"
@@ -871,30 +840,20 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "- Assuming a near-zero residual proves the circuit model itself is correct.\n"
             ),
             md(
-                "## Reflection — complete in full sentences\n\n"
-                "1. What two equations and variable order did you use?\n"
-                "2. Did the handwritten, teacher, and Python answers agree?\n"
-                "3. What does a near-zero residual establish?\n"
-                "4. How could wrong circuit equations still produce near-zero residuals?\n"
-                "5. Was your source-change prediction correct? Explain the trend.\n"
-                "6. What does a negative current mean physically?\n"
-            ),
-            md(
                 "## Progressive submission checkpoints\n\n"
                 "### Checkpoint 1 — Tuesday\n\n"
                 "- [ ] Original equations, variable order, and units are visible.\n"
                 "- [ ] $A$, $\\mathbf{b}$, the solution, and residuals are complete.\n"
-                "- [ ] Stage 1 records the exact keyword error, function signature, documentation source, and minimal repair.\n"
+                "- [ ] Stage 1 runs after the keyword is repaired.\n"
                 "- [ ] The comparison table is complete.\n"
-                "- [ ] A prediction appears before the parameter sweep.\n"
                 "- [ ] The graph or complete numerical table is present.\n"
-                "- [ ] The assigned reflections are answered and the `.ipynb` is saved and submitted.\n\n"
+                "- [ ] The `.ipynb` is saved and submitted.\n\n"
                 "### Checkpoint 2 — later exception-driven debugging lesson\n\n"
-                "- [ ] Stage 2 records the exact shape error, search terms, official source, requirement, repair, and verification.\n\n"
+                "- [ ] Stage 2 uses the documented shape and the residual check passes.\n\n"
                 "### Checkpoint 3 — later wrong-answer debugging lesson\n\n"
                 "- [ ] Stage 3 repairs the wrong unit and protects the result with a unit-aware check.\n"
-                "- [ ] All six reflections are complete by the final checkpoint.\n"
             ),
+            *IMPROVEMENT_FEEDBACK,
         ],
     )
 
@@ -1035,17 +994,17 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "**Part A:** show how the completed Question 4 circuit becomes two equations, one matrix, and two matching solver results.\n\n"
                 "**Part B:** transfer the same process to Question 5 using helper questions that do not reveal its matrix or currents.\n\n"
                 "**The essential skill:** keep the shared-current definition and variable order consistent.\n\n"
-                "**The challenge:** explain every sign instead of copying the finished matrix.\n\n"
+                "**The challenge:** show every signed term instead of copying the finished matrix.\n\n"
                 "**The stumbling block:** the Loop 2 shared-resistor sign changes because the loop traversal is against $I_3$.\n\n"
                 "**The investigation:** use the official NumPy or SymPy documentation when a solver object is unfamiliar.\n\n"
                 "**The verification:** use residuals, substitution, and $I_3=I_1-I_2$.\n"
             ),
             md(
-                "### Student explanation - replace every prompt\n\n"
-                "**Current definitions:** Explain $I_1$, $I_2$, and $I_3$.\n\n"
-                "**Loop 1 signs:** Explain why the terms are $+10$, $-3I_1$, and $-2I_3$.\n\n"
+                "### Student derivation\n\n"
+                "**Current definitions:** Draw and label $I_1$, $I_2$, and $I_3$.\n\n"
+                "**Loop 1 signs:** Write the signed terms $+10$, $-3I_1$, and $-2I_3$.\n\n"
                 "**Loop 1 algebra:** Show every line from KVL to $5I_1-2I_2=10$.\n\n"
-                "**Loop 2 signs:** Explain why the shared-resistor term is $+2I_3$.\n\n"
+                "**Loop 2 signs:** Write the shared-resistor term as $+2I_3$.\n\n"
                 "**Loop 2 algebra:** Show every line from KVL to $-2I_1+7I_2=6$.\n\n"
                 "**Variable order and units:** State them before entering the matrix.\n"
             ),
@@ -1089,22 +1048,19 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "## Comparison table - replace every blank\n\n"
-                "| Quantity | Original work | Released answer | NumPy | SymPy exact | Agreement and explanation |\n"
-                "|:--|--:|--:|--:|--:|:--|\n"
-                "| $I_1$ | ___ | ___ | ___ | ___ | ___ |\n"
-                "| $I_2$ | ___ | ___ | ___ | ___ | ___ |\n"
-                "| $I_3$ | ___ | ___ | ___ | ___ | ___ |\n"
+                "| Quantity | Original work | Released answer | NumPy | SymPy exact |\n"
+                "|:--|--:|--:|--:|--:|\n"
+                "| $I_1$ | ___ | ___ | ___ | ___ |\n"
+                "| $I_2$ | ___ | ___ | ___ | ___ |\n"
+                "| $I_3$ | ___ | ___ | ___ | ___ |\n"
             ),
             md(
                 "## Part B - transfer the method to Question 5\n\n"
                 "Do not begin with the released Question 5 answer. Your job is to generate the matrix from the circuit and algebra. "
                 "The symbols $a_{11}$ through $a_{22}$ and $b_1,b_2$ below are placeholders, not Question 5 values.\n\n"
                 "### B1. Current definitions\n\n"
-                "Replace each prompt with a complete answer:\n\n"
-                "1. What directions did you choose for $I_1$, $I_2$, and $I_3$?\n"
-                "2. Is $I_3=I_1-I_2$ or $I_3=I_2-I_1$ for your arrows? Why?\n"
-                "3. Which terms are rises and which are drops in Loop 1?\n"
-                "4. Which terms are rises and which are drops in Loop 2?\n\n"
+                "Add arrows for $I_1$, $I_2$, and $I_3$. Write the matching $I_3$ equation. Then write the signed rise "
+                "and drop terms for Loop 1 and Loop 2.\n\n"
                 "### B2. Seven algebra lines for each loop\n\n"
                 "For **each** loop, show: (1) signed KVL with resistor-voltage symbols, (2) every $V_R=IR$ substitution, "
                 "(3) the shared-current substitution, (4) distribution, (5) reordering into $[I_1,I_2]$, "
@@ -1160,7 +1116,8 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "## Independent challenge and progressive hints\n\n"
-                "**Challenge:** read both matrix rows back as equations, then explain why a solver can produce a clean result even when the copied coefficients represent the wrong circuit.\n\n"
+                "**Challenge:** read both matrix rows back as equations. Change one coefficient deliberately, rerun the "
+                "solver, and observe that a near-zero residual can still occur for the wrong entered equations.\n\n"
                 "### Hint 1 - concept clue\n\nThe shared resistor carries $I_1-I_2$ because the mesh currents oppose each other there.\n\n"
                 "### Hint 2 - documentation clue\n\nSearch `numpy.linalg.solve A shape` or `SymPy solve simultaneous equations`.\n\n"
                 "### Hint 3 - technical clue\n\nWith order $[I_1,I_2]$, the two rows are $[5,-2]$ and $[-2,7]$, with right side $[10,6]$.\n"
@@ -1175,21 +1132,12 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "- Assuming a near-zero residual proves that the circuit model is correct.\n"
             ),
             md(
-                "## Reflection - complete in full sentences\n\n"
-                "1. Which Loop 2 sign was easiest to miss, and why?\n"
-                "2. How did standard form determine the matrix rows?\n"
-                "3. Why did SymPy show fractions while NumPy showed decimals?\n"
-                "4. What did the residual verify? What could it not verify?\n"
-                "5. What step changed your understanding of the two-loop circuit?\n"
-                "6. Which Question 5 helper question caught an error before the solver ran?\n"
-            ),
-            md(
                 "## Save and submit\n\n"
                 "- [ ] Current definitions and both complete derivations are visible.\n"
                 "- [ ] The variable order, units, $A$, and $\\mathbf{b}$ are visible.\n"
                 "- [ ] NumPy currents and residuals are visible.\n"
                 "- [ ] SymPy exact fractions and $I_3$ are visible.\n"
-                "- [ ] The comparison table and reflections are complete.\n"
+                "- [ ] The comparison table is complete.\n"
                 "- [ ] Question 5 includes both seven-line rearrangements and two boxed standard-form equations.\n"
                 "- [ ] The Question 5 coefficient table, matrix, and two row read-backs are complete.\n"
                 "- [ ] Question 5 was solved only after the matrix was derived and checked.\n"
@@ -1197,6 +1145,7 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "- [ ] Save and download `studentnumber-lastname-kirchhoff-jupyter.ipynb`.\n"
                 "- [ ] Reopen the downloaded notebook before submitting it.\n"
             ),
+            *IMPROVEMENT_FEEDBACK,
         ],
     )
 
@@ -1217,13 +1166,13 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "plt.title('Ohmic resistor model')\nplt.grid(True)\nplt.legend()\nplt.show()\n"
             ),
             md(
-                "## Purposeful problem\n\nAdd a 2.2 kΩ curve to the same voltage-current graph. Predict which line has the "
-                "smaller slope before running the cell, then interpret the slope in mA/V.\n"
+                "## Purposeful problem\n\nAdd a 2.2 kΩ curve to the same voltage-current graph. Calculate both slopes in "
+                "mA/V and add an assertion that checks which slope is smaller.\n"
             ),
             code("# Student code: add the second curve, labels, legend, and a numerical slope check.\n"),
             md(
                 "## Independent challenge\n\nHold voltage at 9.0 V, vary resistance from 100 Ω to 10 kΩ, and graph current. "
-                "Choose a linear or logarithmic horizontal scale and justify it.\n\n"
+                "Use a logarithmic horizontal scale so the full range is readable.\n\n"
                 "### Hints\n\n1. Current is inversely proportional to resistance at fixed voltage.\n"
                 "2. Search the Matplotlib quick start for **axis scale** and **legend**.\n"
                 "3. `plt.xscale('log')` can make a wide resistance range easier to inspect.\n"
@@ -1267,7 +1216,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             code("# Student code: locate the row, report it with units, and add a justified tolerance check.\n"),
             md(
                 "## Independent challenge\n\nAdd or replace measurements from a teacher-approved circuit. Preserve the original "
-                "CSV, document the instrument or simulator, and explain one model or measurement limitation.\n\n"
+                "CSV, put the instrument or simulator name in the `source` column, and add checks for missing or impossible values.\n\n"
                 "### Hints\n\n1. Inspect row count, headers, units, missing values, and impossible values first.\n"
                 "2. Read the pandas `read_csv` documentation and Matplotlib quick start.\n"
                 "3. Plot raw points before calculating a fit or removing a suspicious value.\n"
@@ -1284,10 +1233,12 @@ def notebooks() -> dict[str, dict[str, object]]:
             md(
                 "## The problem\n\nChoose or receive one focused question. Examples: Which available resistor best meets "
                 "a current target? How sensitive is branch current to a resistor tolerance? Where does a simulated result diverge from a simple model?\n\n"
-                "Write a measurable success criterion before coding.\n"
+                "Write the success limit as a variable before coding.\n"
             ),
-            md(
-                "## Plan\n\n- **What I know:**\n- **What I need to find out:**\n- **How I will know when I am right:**\n- **Variables and units:**\n- **Safety and privacy boundary:**\n"
+            code(
+                "# Set the values and the pass/fail limit for your investigation.\n"
+                "# Keep units in every variable name.\n"
+                "success_limit = None\n"
             ),
             md("## Working demonstration\n\nInspect how a 5% resistor tolerance changes the possible current range.\n"),
             code(
@@ -1302,19 +1253,19 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "plt.ylabel('Current (mA)')\nplt.title('Effect of 5% resistor tolerance')\nplt.grid(True)\nplt.show()\n"
             ),
             md(
-                "## Your investigation\n\nCreate the smallest working calculation first. Add one change at a time. Keep a brief "
-                "troubleshooting record: observation, hypothesis, test, result, and next decision.\n"
+                "## Your investigation\n\nCreate the smallest working calculation first. Add one change at a time. Print the "
+                "input values and add an assertion or comparison check after each change.\n"
             ),
             code("# Student investigation code. Add meaningful assertions or comparison checks.\n"),
             md(
-                "## Challenge and hints\n\nMake one independent design decision and defend it with evidence.\n\n"
+                "## Challenge and hints\n\nMake one independent design decision and show the evidence in a graph, table, or check.\n\n"
                 "1. Choose a parameter that can change the decision, not only the appearance of a graph.\n"
                 "2. Search official documentation using the function name and last line of any error.\n"
                 "3. Compare the final result with a second equation, limiting case, simulation, or measurement.\n"
             ),
             md(
-                "## Verification and conclusion\n\nState the result with units and significant figures. Explain whether it met the "
-                "success criterion, what changed after troubleshooting, and what the evidence cannot establish.\n"
+                "## Verification\n\nPrint the final result with units and significant figures. Add a Boolean pass/fail check "
+                "against `success_limit`, then show the final graph or table.\n"
             ),
             *COMMON_CLOSE,
         ],
@@ -1334,7 +1285,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             md(
                 "## Working demonstration: RC charging\n\n"
                 "For a charging capacitor, $V_C(t)=V_S(1-e^{-t/RC})$. The time constant is $\\tau=RC$. "
-                "Predict the voltage at one time constant before running the cell.\n"
+                "Run the cell and check the voltage at one time constant.\n"
             ),
             code(
                 "import numpy as np\nimport matplotlib.pyplot as plt\n\n"
@@ -1425,8 +1376,8 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "## Purposeful problem\n\n"
-                "Choose new teacher-approved resistor and capacitor values. Predict the new time constant, verify the "
-                "63.2% charging point, and determine how the initial slope changes. Add assertions before interpreting the graph.\n"
+                "Choose new teacher-approved resistor and capacitor values. Calculate the new time constant, verify the "
+                "63.2% charging point, and calculate the initial slope. Add assertions before graphing.\n"
             ),
             code(
                 "# Student code: change R and C, calculate tau, generate the model, and check V(tau).\n"
@@ -1447,8 +1398,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             md(
                 "## Independent challenge\n\n"
                 "Compare the same input four ways when possible: hand estimate, Python numerical model, circuit simulation, "
-                "and optional XL741 measurement. Explain one difference caused by sampling and one difference a real op-amp "
-                "could introduce.\n\n"
+                "and optional XL741 measurement. Put the numerical differences in the evidence table.\n\n"
                 "### Hints\n\n"
                 "1. Find slope with two nearby points before using derivative notation.\n"
                 "2. Find accumulated area with rectangles before using integral notation.\n"
@@ -1547,8 +1497,8 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "## Purposeful problem\n\n"
-                "Choose one component section. Change one value, predict the direction of the result before running the "
-                "cell, add a second independent check, and explain one real characteristic that the model omits.\n"
+                "Choose one component section. Change one value, rerun the cell, and add a second independent check. Keep "
+                "the model boundary shown above.\n"
             ),
             code(
                 "# Student work: copy only the smallest relevant model, change one justified input, and add assertions.\n"

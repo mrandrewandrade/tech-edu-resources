@@ -11,7 +11,11 @@ presentation system; Commons styling lives in `commons-overrides.css`.
 
 For student-facing instructions, follow the [student tutorial style guide](tutorial-style-guide.md).
 It defines the plain-language page order, screenshot rules, curriculum path,
-file placement, and publishing checklist.
+file placement, publishing checklist, and the code-first rule for technical
+work. Technical lessons do not receive default reflection, prediction, recap,
+or sentence-completion prompts. Add only the short optional lesson-improvement
+feedback section unless the teacher explicitly requests reflection as a learning
+outcome.
 
 ## Daily slide decks
 

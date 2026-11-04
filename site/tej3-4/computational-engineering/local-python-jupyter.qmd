@@ -280,3 +280,7 @@ Do not submit passwords, Jupyter tokens, private home-directory details, or scre
 ## Next steps
 
 Continue to [Find Documentation and Ask for Programming Help](finding-documentation-and-asking-for-help.qmd). The official [Jupyter installation page](https://jupyter.org/install) documents the basic `pip install jupyterlab` and `jupyter lab` workflow; this course uses `python -m pip` and a virtual environment so the intended interpreter is explicit.
+
+## Help improve this lesson (optional)
+
+If a setup step was unclear or failed, tell the teacher the step, operating system, exact error, and one change that would help the next student. If you can fix the wording, command, or screenshot, show the teacher. A useful fix may be added to the course website and credited to you.

@@ -11,10 +11,10 @@ execute: {enabled: false}
 
 ## Learning goals
 
-- I can use a notebook to predict circuit behaviour and check my equations.
+- I can use a notebook to calculate circuit behaviour and check my equations.
 - I can distinguish a hand calculation, numerical model, circuit simulation, and physical measurement.
-- I can preserve code, graphs, checks, and explanations as reproducible engineering evidence.
-- I can prepare useful predictions now and add measurements later without restarting the investigation.
+- I can preserve code, graphs, checks, and tables as reproducible engineering evidence.
+- I can prepare useful model results now and add measurements later without restarting the investigation.
 
 ## Why Jupyter comes before the hardware
 
@@ -23,7 +23,7 @@ Physical components, instruments, soldering time, and kits may not be available 
 Jupyter does not prove that a circuit was wired correctly or that hardware is safe. Until a physical test occurs, describe results as **calculated**, **modelled**, or **simulated**, never measured.
 
 ::: {.callout-important title="The evidence ladder"}
-**Predict by hand → Model in Jupyter → Simulate the circuit → Measure when available → Compare → Explain**
+**Calculate by hand → Model in Jupyter → Simulate the circuit → Measure when available → Compare → Verify**
 
 Each layer answers a different question. Agreement builds confidence; disagreement creates a troubleshooting investigation.
 :::
@@ -35,30 +35,29 @@ Each layer answers a different question. Agreement builds confidence; disagreeme
 | Foundation review | [Notebook 8](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) | Compare small resistor, capacitor, LED, transistor-switch, and op-amp models and name each limitation. | Identify real parts, ratings, polarity, pinout, and measured behaviour. |
 | 0. Python first steps | [Notebook 0](../../assets/tej-computational/notebooks/00-python-first-steps.ipynb) | Run cells, use simple variables and types, select list items, and change one number in a small array. | No hardware is needed. |
 | 1. Python and NumPy foundations | [Notebook 1](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) | Use Jupyter cells, named quantities, lists, functions, arrays, filters, plots, documentation, and assertions in a resistor investigation. | Compare one calculated result with a meter reading when hardware is available. |
-| 2. Circuit networks | [Notebook 2](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) | Solve series, parallel, and mixed circuits and verify KCL, KVL, and power. | Build one network and explain tolerance differences. |
+| 2. Circuit networks | [Notebook 2](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) | Solve series, parallel, and mixed circuits and verify KCL, KVL, and power. | Build one network and compare measured and calculated values. |
 | 3A. Two-loop bridge | [Notebook 3A](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb) | Derive both signed loop equations, build the matrix, and compare numerical and symbolic solutions. | Compare with the released Question 4 answer; no physical lab is required. |
 | 3. Coupled equations | [Notebook 3](../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb) | Diagnose seeded errors, repair a plausible wrong answer, inspect residuals, and investigate a changed parameter. | Compare with a multi-loop circuit when suitable equipment is available. |
-| 4. Relationships and design | [Notebook 4](../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) | Sweep values, graph relationships, and justify a design range. | Test selected points rather than every possible value. |
+| 4. Relationships and design | [Notebook 4](../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb) | Sweep values, graph relationships, and test a design range. | Test selected points rather than every possible value. |
 | 5. Experimental evidence | [Notebook 5](../../assets/tej-computational/notebooks/05-experimental-data-analysis.ipynb) | Import provided CSV data and compare prediction with evidence. | Replace or extend the dataset with approved measurements. |
-| 6. Independent investigation | [Notebook 6](../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb) | Define a question, criterion, model, test, and supported conclusion. | Validate the most important assumption physically. |
+| 6. Independent investigation | [Notebook 6](../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb) | Define a question, criterion, model, test, and pass/fail check. | Validate the most important assumption physically. |
 | 7. RC, op-amps, and calculus | [Notebook 7](../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) | Model RC response, slope, accumulated area, ideal integration, and ideal differentiation. | Compare with a simulator, teacher demonstration, ordinary op-amp, or optional XL741 build. |
 
 Students do not need to wait for Notebook 7 until an XL741 is soldered. The notebook deliberately supports a complete model-and-simulation submission with the physical column marked **not available**.
 
 ## Standard notebook assignment
 
-Every notebook submission should contain:
+Every technical notebook submission should contain:
 
-1. a plain-language question or design goal;
-2. named variables with units and stated assumptions;
-3. one hand prediction recorded before running the code;
-4. the smallest working calculation;
-5. at least one independent assertion, residual, conservation check, or limiting case;
-6. a graph with title, labelled axes, units, and legend where needed;
-7. Markdown that explains what the output means;
-8. one changed parameter and a prediction of the direction of change;
-9. a conclusion that separates calculation, model, simulation, and measurement;
-10. the downloaded `.ipynb` file, reopened and run from the first cell.
+1. named variables with units;
+2. the smallest working calculation;
+3. at least one independent assertion, residual, conservation check, or limiting case;
+4. a graph or table with labels and units where needed;
+5. one changed parameter and the rerun output;
+6. clear labels separating calculated, modelled, simulated, and measured values; and
+7. the downloaded `.ipynb` file, reopened and run from the first cell.
+
+Do not add a required reflection, prediction paragraph, written recap, or definition rewrite unless the teacher explicitly asks for it.
 
 ## Read the documentation before asking for the fix
 
@@ -67,7 +66,7 @@ Coding lessons deliberately include two kinds of faults:
 - an **error** that stops the program and produces a message;
 - a **plausible wrong answer** that runs without an error but fails a units, residual, conservation, or limiting-case check.
 
-The sequence always starts from success and increases gradually: run and explain known-good code, repair one incorrect keyword, diagnose an array-shape error, and finally find a silent unit error that produces a believable result.
+The sequence always starts from success and increases gradually: run known-good code, repair one incorrect keyword, diagnose an array-shape error, and finally find a silent unit error that produces a believable result.
 
 Use this routine before asking for line-by-line help:
 
@@ -86,13 +85,13 @@ Use [Find Documentation and Ask for Programming Help](finding-documentation-and-
 
 ## A repeatable class cycle
 
-### Day 1: understand and predict
+### Day 1: understand and calculate
 
 Read the matching electronics notes, draw or interpret the schematic, identify variables and units, and complete one representative hand calculation.
 
 ### Day 2: model and verify
 
-Run the working notebook, change only the assigned values, add an independent check, and explain whether the result is physically reasonable.
+Run the working notebook, change only the assigned values, and add an independent check.
 
 ### Day 3: investigate
 
@@ -102,15 +101,15 @@ Sweep one component or condition across a justified range. Use a graph to identi
 
 Compare the numerical model with a circuit simulator or a supplied dataset. Record differences without forcing them to agree.
 
-### Day 5: communicate and prepare for hardware
+### Day 5: verify and prepare for hardware
 
-Write a concise conclusion, identify the most important assumption, and specify the physical measurement that would test it. This becomes the pre-lab prediction when equipment is available.
+Finish the evidence table, run every check, and identify the physical measurement to add when equipment is available.
 
 ## RC and XL741 investigation without a kit
 
 Notebook 7 provides the complete start-now route:
 
-- calculate $\tau=RC$ and predict the 63.2% charging point;
+- calculate $\tau=RC$ and check the 63.2% charging point;
 - graph capacitor voltage and rate of change;
 - approximate a derivative with finite differences;
 - approximate an integral with accumulated rectangles;
@@ -139,7 +138,7 @@ A strong simulation-only notebook can demonstrate modelling, programming, mathem
 - Inputs and outputs have units.
 - Assertions and residual checks pass.
 - Seeded faults include the error or failed check, search terms, documentation evidence, repair, and verification.
-- Graphs are readable and interpreted in Markdown.
+- Graphs and tables are readable and labelled with units.
 - Claims use calculated, modelled, simulated, or measured accurately.
 - Optional hardware absence is stated honestly, not treated as missing student work.
 - The downloaded notebook reopens successfully.
@@ -147,3 +146,7 @@ A strong simulation-only notebook can demonstrate modelling, programming, mathem
 ## Next steps
 
 Begin with the [step-by-step JupyterLite instructions](jupyterlite.qmd), complete [Python First Steps](python-first-steps.qmd), and only then continue to [Python and NumPy Foundations](python-numpy-foundations.qmd). To start the browser workspace directly, click **[OPEN JUPYTERLITE NOW](https://jupyter.org/try-jupyter/lab/){target="_blank"}**, use **Upload Files**, and double-click the downloaded `.ipynb` notebook. Use the [local Jupyter pathway](local-python-jupyter.qmd) when a school computer permits installation or the investigation needs packages and files beyond the browser environment.
+
+## Help improve this lesson (optional)
+
+If something got in the way, tell the teacher which step or word was unclear, what you still do not know how to do, and one change that would help the next student. If you can fix the wording, diagram, screenshot, or starter code, show the teacher. A useful fix may be added to the course website and credited to you.
