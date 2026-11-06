@@ -1797,12 +1797,16 @@
       "route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
       "source": "tej3-4/computational-engineering/local-python-jupyter.qmd",
       "title": "Run Python and Jupyter on Your Own Computer",
-      "summary": "Install an isolated Python environment and run the TEJ notebooks in WSL, native Windows, macOS, or Linux.",
-      "use": "The local route removes dependence on JupyterLite and supports normal files, installed packages, and later measurement work.",
+      "summary": "Choose a Jupyter route for Windows with WSL, macOS, Linux, native Windows, or Google Colab.",
+      "use": "Local Jupyter gives students more control over files, packages, and hardware; Colab remains a no-install fallback.",
       "resources": [
         {
           "label": "Notebook Requirements",
           "url": "../assets/tej-computational/requirements-jupyter.txt"
+        },
+        {
+          "label": "Google Colab",
+          "url": "https://colab.research.google.com/"
         }
       ],
       "track_id": "programming-interfacing",

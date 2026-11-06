@@ -1,13 +1,26 @@
 ---
 title: "Run Python and Jupyter on Your Own Computer"
-description: "Use a virtual environment to run the TEJ notebooks in WSL, Windows, macOS, or Linux without depending on JupyterLite."
-categories: [Python, JupyterLab, WSL, virtual environments, local setup]
+description: "Choose a Jupyter route for Windows with WSL, macOS, Linux, native Windows, or Google Colab."
+categories: [Python, JupyterLab, WSL, Google Colab, virtual environments, local setup]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
 toc-depth: 2
+toc-title: "On this page"
 execute: {enabled: false}
 ---
+
+## Choose your route
+
+Use the route that matches the computer you control. The links jump directly to the complete instructions.
+
+| Route | When to use it |
+|---|---|
+| [Windows with WSL](#route-a-windows-with-wsl) | **Recommended for Windows.** Python runs in Linux while the notebook opens in your normal Windows browser. |
+| [macOS](#route-b-macos) | Use Terminal and a project-specific Python virtual environment. |
+| [Linux](#route-c-linux) | Use the distribution's Python packages and a project-specific virtual environment. |
+| [Native Windows PowerShell](#route-d-native-windows-powershell) | Works when WSL is unavailable, but it is not the recommended course route. |
+| [Google Colab](#route-e-google-colab) | Requires no local installation, but provides less control over files, packages, hardware, and runtime availability. |
 
 ## Learning goals
 
@@ -34,11 +47,7 @@ Use these instructions only on a computer where you are allowed to install softw
 
 Download and extract the [complete notebook bundle](../../assets/tej-computational/tej-computational-engineering-notebooks.zip), or obtain the same ZIP from the teacher. It contains the notebooks, sample CSV, and `requirements-jupyter.txt`.
 
-Choose one route:
-
-- **Windows with WSL:** run Python and Jupyter in Linux, then use Chrome, Edge, or Firefox in Windows.
-- **macOS or Linux:** run Python and Jupyter directly from the native terminal.
-- **Native Windows:** use the Python launcher and PowerShell without WSL.
+Choose one route from the [route table](#choose-your-route). Windows with WSL is the recommended Windows setup. Native Windows PowerShell works, but commands and paths differ from the Linux-based course environment. Google Colab is useful when installation is impossible, but it is a cloud service rather than a local engineering environment.
 
 ## Route A: Windows with WSL
 
@@ -173,7 +182,7 @@ python -m jupyter server list
 
 Microsoft documents that Windows applications can normally reach a service running in WSL through [`localhost`](https://learn.microsoft.com/windows/wsl/networking).
 
-## Route B: macOS or Linux terminal
+## Route B: macOS
 
 ### B1. Check Python
 
@@ -182,9 +191,7 @@ python3 --version
 python3 -m venv --help
 ```
 
-On macOS, install a current Python 3 release from the official [Python downloads page](https://www.python.org/downloads/macos/) if it is missing. Do not modify Apple's system Python.
-
-On Linux, use the distribution's official packages. For Ubuntu or Debian, `python3-venv` and `python3-pip` provide the usual support. Ask before using `sudo` on a managed computer.
+Install a current Python 3 release from the official [Python downloads page](https://www.python.org/downloads/macos/) if it is missing. Do not modify Apple's system Python.
 
 ### B2. Create the environment
 
@@ -216,9 +223,38 @@ source .venv/bin/activate
 python -m jupyter lab
 ```
 
-## Route C: native Windows PowerShell
+## Route C: Linux
 
-Use this route if WSL is unavailable and a normal per-user Python installation is permitted.
+### C1. Check Python support
+
+```bash
+python3 --version
+python3 -m venv --help
+```
+
+Use the distribution's official packages. For Ubuntu or Debian, install the usual support only when you have permission:
+
+```bash
+sudo apt update
+sudo apt install python3 python3-venv python3-pip
+```
+
+### C2. Create the environment and run Jupyter
+
+```bash
+cd ~/tej-computational-engineering
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements-jupyter.txt
+python -m jupyter lab
+```
+
+Stop the server with **Ctrl+C**, then run `deactivate`. To start again later, return to the project folder, activate `.venv`, and run `python -m jupyter lab`.
+
+## Route D: native Windows PowerShell
+
+Use this route if WSL is unavailable and a normal per-user Python installation is permitted. It works, but it is not the recommended course route because Windows paths, activation, and command-line behaviour differ from the WSL and Linux instructions used elsewhere in the course.
 
 ```powershell
 py --version
@@ -230,6 +266,17 @@ py -m venv .venv
 ```
 
 Using the direct `.venv` interpreter works even when PowerShell activation scripts are blocked. Do not weaken the computer-wide execution policy for this course.
+
+## Route E: Google Colab
+
+[Open Google Colab](https://colab.research.google.com/){target="_blank"} when you cannot install Python or Jupyter locally.
+
+1. Sign in with an approved Google account.
+2. Choose **File > Upload notebook** and upload the required `.ipynb` file from the [complete notebook bundle](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
+3. Upload any required CSV or other data file into the Colab session.
+4. Run the notebook from the top and download the finished `.ipynb` before ending the session.
+
+Colab is convenient because there is no local setup, but the code runs in a temporary cloud virtual machine. The runtime can disconnect or be replaced, local files are not automatically available, and free resources are neither guaranteed nor unlimited. For these small course notebooks, startup, uploads, Google Drive access, and network delay can make Colab feel slower than a prepared local environment. It also gives you less control over Python versions, installed packages, USB devices, serial ports, and measurement hardware. Use local Jupyter for repeatable engineering work whenever possible. See the official [Google Colab FAQ](https://research.google.com/colaboratory/faq.html){target="_blank"} for current runtime and resource limitations.
 
 ## Verify the environment
 
@@ -263,6 +310,8 @@ The executable should point inside this project's `.venv`. Restart the kernel an
 | CSV file cannot be found | Run `from pathlib import Path; print(Path.cwd())` and place the file relative to that working directory. |
 | Port 8888 is busy | Stop the previous server or run `python -m jupyter lab --port 8890`. Do not open a public firewall port. |
 | PowerShell blocks activation | Use `.\.venv\Scripts\python.exe` directly. |
+| Colab files disappear after reconnecting | Upload the required files again and download completed work before ending the temporary runtime. |
+| Colab package or version differs | Check the runtime's Python and package versions. Use a local `.venv` when the course requires a controlled environment. |
 
 ## Environment evidence to submit
 

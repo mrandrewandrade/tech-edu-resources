@@ -10,6 +10,28 @@ NOTEBOOKS = ASSETS / "tej-computational" / "notebooks"
 
 
 class TejComputationalResourceTests(unittest.TestCase):
+    def test_local_jupyter_page_keeps_route_navigation(self) -> None:
+        lesson = (
+            ROOT
+            / "site"
+            / "tej3-4"
+            / "computational-engineering"
+            / "local-python-jupyter.qmd"
+        ).read_text(encoding="utf-8")
+        for phrase in (
+            "toc: true",
+            'toc-title: "On this page"',
+            "## Choose your route",
+            "## Route A: Windows with WSL",
+            "## Route B: macOS",
+            "## Route C: Linux",
+            "## Route D: native Windows PowerShell",
+            "## Route E: Google Colab",
+            "https://colab.research.google.com/",
+            "not the recommended course route",
+        ):
+            self.assertIn(phrase, lesson)
+
     def test_ten_real_notebooks_have_required_learning_structure(self) -> None:
         paths = sorted(NOTEBOOKS.glob("*.ipynb"))
         self.assertEqual(len(paths), 10)
