@@ -9,10 +9,6 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-::: {.callout-important title="Due Thursday, November 12, 2026 at 7:00 p.m."}
-Submit the notebook, Tinkercad link, and screenshot by **7:00 p.m.** Missing course work must also be submitted in its original Classroom post by this deadline. This gives the teacher time to mark the final evidence before midterm marks are due Friday.
-:::
-
 ## What you will submit
 
 1. One completed Jupyter notebook: `studentnumber-lastname-midterm-circuit.ipynb`.
@@ -33,12 +29,12 @@ Use a fake name only in public examples. Keep your student number, class code, a
 
 | Day | Main work | Evidence to save |
 |---|---|---|
-| Monday | Open the notebook; learn the five LaTeX patterns; define the currents and write KCL | rendered LaTeX and Equation 1 |
-| Tuesday | Isolate both loops; derive both KVL equations; build the $3\times3$ matrix | Equations 2–3 and completed coefficient table |
-| Wednesday | Solve with NumPy; check Ohm's law and power; build the circuit in Tinkercad | currents, residuals, power, saved simulation |
-| Thursday | Measure, compare, restart and run all, submit missing course work | notebook, Tinkercad URL, screenshot by 7:00 p.m. |
+| Monday | Open the notebook; learn the five LaTeX patterns; define the currents; write KCL; isolate both loops; derive both KVL equations; build the $3\times3$ matrix | rendered LaTeX, Equations 1–3, and completed coefficient table |
+| Tuesday | Open the attached Tinkercad starter; set the values; arrange and wire the circuit; simulate and measure | saved simulation and clear meter evidence |
+| Wednesday | Solve with NumPy; check Ohm's law and power; compare the calculated and simulated values | currents, residuals, power, and comparison table |
+| Thursday | Restart and run all; fix errors; complete and submit missing course work | notebook, Tinkercad URL, and screenshot |
 
-If you finish early, use the remaining time to complete missing work before the same deadline.
+If you finish early, use the remaining time to complete missing work.
 
 ## 1. Open the notebook
 
@@ -170,17 +166,58 @@ Use $\mathrm{k\Omega}$ with $\mathrm{mA}$ in the matrix so the voltage result is
 
 ## 6. Build and measure it in Tinkercad
 
-1. Open [Tinkercad Circuits](https://www.tinkercad.com/circuits){target="_blank"}.
-2. Open the teacher's class from **Your Classes**. Use the class link, class code, or nickname supplied by the teacher.
-3. Choose **Create new Circuit**. Rename it `studentnumber-lastname-midterm-circuit`.
-4. Add two DC power supplies, three resistors, a breadboard, and a multimeter.
-5. Set the supplies to $12\,\mathrm{V}$ and $9\,\mathrm{V}$.
-6. Set the resistors to $2.2\,\mathrm{k\Omega}$, $3.3\,\mathrm{k\Omega}$, and $1.0\,\mathrm{k\Omega}$.
-7. Connect both negative supply terminals to the same ground rail.
-8. Wire the two source branches to the top node exactly as shown in Figure 1. Connect $R_3$ from the top node to ground.
-9. Choose **Start Simulation**.
-10. Measure the voltage across each resistor. Use $I=V/R$ to calculate each branch current. Directly measure at least one current by opening that branch and placing the multimeter in series.
-11. Stop the simulation before moving any wire or meter.
+### Start from the class activity
+
+1. Open the teacher's Tinkercad class.
+2. Open **Midterm Circuit Investigation - LaTeX, NumPy, and Tinkercad**.
+3. Choose **Tinker this** to make your own copy of the starter.
+4. Rename the copy `studentnumber-lastname-midterm-circuit`.
+
+The starter already contains two DC power supplies, three resistors, and a multimeter. They are not wired and their values are not complete.
+
+![Tinkercad starter with two power supplies, three loose resistors, and a multimeter. The Start Simulation button and Components panel are visible.](../../assets/tej-computational/tinkercad/midterm-01-open-starter.svg){fig-alt="Tinkercad starter with two power supplies, three loose resistors, and a multimeter. The Start Simulation button and Components panel are visible."}
+
+### Set the component values
+
+1. Click one resistor.
+2. In its settings box, type the resistance number.
+3. Choose the correct unit: **kΩ**.
+4. Repeat for all three resistors.
+5. Click each power supply and set its voltage.
+
+Use the schematic values: $R_1=2.2\,\mathrm{k\Omega}$, $R_2=3.3\,\mathrm{k\Omega}$, $R_3=1.0\,\mathrm{k\Omega}$, $V_{S1}=12\,\mathrm{V}$, and $V_{S2}=9\,\mathrm{V}$.
+
+![One resistor selected in Tinkercad. Its settings box shows a resistance entry and a kilohm unit menu.](../../assets/tej-computational/tinkercad/midterm-02-set-resistor.svg){fig-alt="One resistor selected in Tinkercad. Its settings box shows a resistance entry and a kilohm unit menu."}
+
+### Keep the wiring clear
+
+Use the same wire colours throughout the circuit:
+
+- **red:** positive supply connections;
+- **black:** the shared negative or ground return;
+- **blue:** the left-loop branch;
+- **green:** the right-loop branch;
+- **purple:** the shared $R_3$ branch.
+
+1. Move the parts into the same left, centre, and right positions as Figure 1.
+2. Click one terminal and then its destination terminal.
+3. Click an empty point to make a right-angle bend.
+4. Route wires around parts and labels, not through them.
+5. Keep wires separated when they are not connected.
+6. Make every real junction obvious. A crossing by itself is not a connection.
+
+The guide below shows only the first clean connections. Complete the rest from Figure 1.
+
+![Partial Tinkercad wiring example with red positive wires, a black common return, blue and green loop branches, and a purple shared branch. Several connections remain unfinished.](../../assets/tej-computational/tinkercad/midterm-03-wire-convention.svg){fig-alt="Partial Tinkercad wiring example with red positive wires, a black common return, blue and green loop branches, and a purple shared branch. Several connections remain unfinished."}
+
+### Simulate and measure
+
+1. Compare every node with Figure 1.
+2. Choose **Start Simulation**.
+3. Measure the voltage across each resistor.
+4. Use $I=V/R$ to calculate each branch current.
+5. Directly measure at least one current by opening that branch and placing the multimeter in series.
+6. Stop the simulation before moving any wire or meter.
 
 Complete this table in the notebook:
 
@@ -216,7 +253,7 @@ Correct work earns marks at each stage. A wrong final current does not erase cor
 4. Download the finished `.ipynb` file from JupyterLite.
 5. Reopen the downloaded file and confirm your work is still there.
 6. Submit the notebook and screenshot. Paste the Tinkercad URL in the assignment post.
-7. Submit any missing course work in its original post by **Thursday at 7:00 p.m.**
+7. Submit any missing course work in its original post.
 
 ## Common issues
 
