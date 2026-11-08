@@ -162,7 +162,7 @@ test_current_mA = calculate_current_mA([3.0, 6.0, 9.0], 3000.0)
 assert np.allclose(test_current_mA, [1.0, 2.0, 3.0])
 ```
 
-An assertion is a check, not the main calculation. If the condition is false, Python stops and shows where the check failed.
+An assertion is a check, not the main calculation. `np.allclose` is used for decimal calculations because computers may store a result such as `0.3` as a number that is extremely close to, but not exactly, `0.3`.
 
 ## 6. Read the documentation
 
@@ -179,6 +179,18 @@ np.round?
 ```
 
 Read the function **signature**, then the parameter descriptions, return value, and examples. Do not guess parameter names.
+
+### Read an error from the bottom
+
+When Python shows a traceback, start with the last line. Then look one line above it for the code that failed.
+
+| Last line says | Meaning | Check |
+|---|---|---|
+| `missing required positional argument` | The function needs another value | Compare your call with the function signature |
+| `unexpected keyword argument` | The keyword name is not accepted | Copy the exact parameter name from the documentation |
+| `AssertionError` | A check was false | Print both values; use `np.allclose` for decimal arrays |
+
+For a larger library, search the official documentation for the function name. Compare the signature with your line of code from left to right. Fix one mismatch and run the cell again.
 
 The notebook contains this intentional error behind a switch:
 
@@ -210,45 +222,37 @@ A graph is not finished until the axes, units, title, and data are clear. Add a 
 
 ## Coding assignment: resistor investigation
 
-Create a notebook section titled **My resistor investigation**. Choose a teacher-approved resistor from $1.0\,\mathrm{k\Omega}$ to $4.7\,\mathrm{k\Omega}$ and analyze it from $1\,\mathrm{V}$ to $12\,\mathrm{V}$.
+Create a notebook section titled **My resistor investigation**. Use a $2.0\,\mathrm{k\Omega}$ resistor and the six supplied voltage values. These numbers give clean whole-number currents.
 
 Your submission must include:
 
 1. named variables with units;
-2. a NumPy voltage array containing at least seven values;
-3. vectorized current and power calculations;
-4. indexing that selects one result;
-5. a Boolean filter;
-6. at least one `min`, `max`, or `mean` calculation;
-7. a reusable calculation function;
-8. at least two meaningful assertions;
-9. a graph with a title, labelled axes, units, markers, and grid;
-10. a second resistor curve with a legend; and
-11. the repaired error-challenge cell.
+2. the supplied NumPy voltage array;
+3. one current calculation using the supplied function;
+4. one printed current selected by its position;
+5. one `np.allclose` check; and
+6. a graph with a title, labelled axes, units, markers, and grid.
 
 ### Starter
 
-The downloaded notebook divides this starter into four short code cells: choose inputs, calculate arrays, inspect and filter results, then verify and graph. Each cell contains numbered `TODO` comments.
+The downloaded notebook divides this starter into four short code cells. Change only the lines marked `TODO`.
 
 ```python
-student_resistance_ohm = 3300.0
-student_voltage_V = np.linspace(1.0, 12.0, 12)
+student_resistance_ohm = 2000.0
+student_voltage_V = np.array([2, 4, 6, 8, 10, 12])
 
 student_current_mA = calculate_current_mA(
     student_voltage_V,
     student_resistance_ohm,
 )
-student_power_mW = student_voltage_V * student_current_mA
-
-assert student_voltage_V.shape == student_current_mA.shape
-assert np.all(student_current_mA > 0)
+assert np.allclose(student_current_mA, [1, 2, 3, 4, 5, 6])
 ```
 
 Do not copy a completed analysis from a search result. Use documentation to understand individual functions, then write and verify your own investigation.
 
 ## Optional challenge
 
-Compare two resistor values on the same graph. Use the same voltage array for both, add labels and a legend, and add an assertion that checks which current array is larger at the same voltage.
+Compare two resistor values on the same graph. Use the same voltage array for both, add labels and a legend, and add a check using `np.allclose`.
 
 ## Submit
 

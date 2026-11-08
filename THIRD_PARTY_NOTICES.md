@@ -43,6 +43,15 @@ The following tools and libraries are build dependencies and are not incorporate
 - Modifications: Wikimedia's 1024-pixel derivative was downloaded; no further visual changes were made
 - Redistribution: preserve the photographer credit, source link, licence link, and ShareAlike terms shown with the image
 
+## Autodesk Tinkercad interface screenshots
+
+- Product: Autodesk Tinkercad Circuits
+- Source: <https://www.tinkercad.com/>
+- Files: `site/assets/tej-computational/tinkercad/tinkercad-*-real.jpg`
+- Capture: teacher-owned classroom starter viewed in the live Tinkercad editor on November 8, 2026
+- Use: cropped browser captures used to explain component placement, component settings, and Schematic view
+- Rights: the Tinkercad name, interface, and Autodesk marks remain the property of Autodesk; these screenshots are not relicensed under the repository's CC BY-SA terms
+
 ## Project-owned visual assets
 
 Project-created Technological Education Resources visual assets remain subject to the repository's licensing and identity terms. Their inclusion does not grant trademark or endorsement rights. See `LICENSE.md` and `docs/ASSET_PROVENANCE.md`.

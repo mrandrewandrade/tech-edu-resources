@@ -173,9 +173,9 @@ Use $\mathrm{k\Omega}$ with $\mathrm{mA}$ in the matrix so the voltage result is
 3. Choose **Tinker this** to make your own copy of the starter.
 4. Rename the copy `studentnumber-lastname-midterm-circuit`.
 
-The starter already contains two DC power supplies, three resistors, and a multimeter. They are not wired and their values are not complete.
+The starter already contains two DC power supplies, three resistors, and a multimeter. It is intentionally incomplete: students must set the values, arrange the parts, and build the circuit from Figure 1.
 
-![Tinkercad starter with two power supplies, three loose resistors, and a multimeter. The Start Simulation button and Components panel are visible.](../../assets/tej-computational/tinkercad/midterm-01-open-starter.svg){fig-alt="Tinkercad starter with two power supplies, three loose resistors, and a multimeter. The Start Simulation button and Components panel are visible."}
+![Actual Tinkercad starter. Two DC power supplies, three loose resistors, and a multimeter are visible in the Circuits workspace.](../../assets/tej-computational/tinkercad/tinkercad-starter-real.jpg){fig-alt="Actual Tinkercad Circuits workspace showing the incomplete starter with two power supplies, three resistors, and a multimeter."}
 
 ### Set the component values
 
@@ -187,7 +187,7 @@ The starter already contains two DC power supplies, three resistors, and a multi
 
 Use the schematic values: $R_1=2.2\,\mathrm{k\Omega}$, $R_2=3.3\,\mathrm{k\Omega}$, $R_3=1.0\,\mathrm{k\Omega}$, $V_{S1}=12\,\mathrm{V}$, and $V_{S2}=9\,\mathrm{V}$.
 
-![One resistor selected in Tinkercad. Its settings box shows a resistance entry and a kilohm unit menu.](../../assets/tej-computational/tinkercad/midterm-02-set-resistor.svg){fig-alt="One resistor selected in Tinkercad. Its settings box shows a resistance entry and a kilohm unit menu."}
+![Actual Tinkercad resistor settings. A selected resistor shows its Name, Resistance field, and kilohm unit menu.](../../assets/tej-computational/tinkercad/tinkercad-resistor-selected-real.jpg){fig-alt="Actual Tinkercad resistor settings panel with the Resistance field and kilohm unit menu."}
 
 ### Keep the wiring clear
 
@@ -206,9 +206,13 @@ Use the same wire colours throughout the circuit:
 5. Keep wires separated when they are not connected.
 6. Make every real junction obvious. A crossing by itself is not a connection.
 
-The guide below shows only the first clean connections. Complete the rest from Figure 1.
+Do not copy a finished Tinkercad circuit. Use Figure 1 as the electrical plan and the colour list above as the wiring convention.
 
-![Partial Tinkercad wiring example with red positive wires, a black common return, blue and green loop branches, and a purple shared branch. Several connections remain unfinished.](../../assets/tej-computational/tinkercad/midterm-03-wire-convention.svg){fig-alt="Partial Tinkercad wiring example with red positive wires, a black common return, blue and green loop branches, and a purple shared branch. Several connections remain unfinished."}
+### Use Tinkercad's Schematic view as a check
+
+The screenshot below is the real starter in **Schematic** view before wiring. The parts appear, but there are no connection lines. After wiring the Circuits view, return here: the connection lines should match Figure 1. Missing or extra lines mean the topology still needs work.
+
+![Actual Tinkercad Schematic view of the unwired starter. The two supplies and three labelled resistors appear without connection lines.](../../assets/tej-computational/tinkercad/tinkercad-schematic-view-real.jpg){fig-alt="Actual Tinkercad Schematic view showing the unwired starter components without connection lines."}
 
 ### Simulate and measure
 

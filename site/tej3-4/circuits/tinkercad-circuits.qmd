@@ -44,6 +44,18 @@ If you already use an approved account, open **Your Classes**, choose **Join a C
 4. Click one terminal, then the destination terminal, to draw a wire. Use clear wire routes and colour consistently. A wire that only crosses another wire is not automatically a junction.
 5. Trace the finished path from the positive source terminal back to the negative terminal. Compare every node with the course schematic.
 
+This is an actual Tinkercad Circuits workspace. The incomplete starter contains the parts but does not give away the wiring.
+
+![Actual Tinkercad Circuits workspace with two power supplies, three resistors, a multimeter, the Components panel, and Start Simulation button.](../../assets/tej-computational/tinkercad/tinkercad-starter-real.jpg){fig-alt="Actual Tinkercad Circuits workspace showing loose circuit parts, the Components panel, and Start Simulation button."}
+
+Clicking a resistor opens the real settings panel. Type the number in **Resistance** and confirm the unit menu before wiring.
+
+![Actual Tinkercad resistor settings panel with a Resistance field and kilohm unit menu.](../../assets/tej-computational/tinkercad/tinkercad-resistor-selected-real.jpg){fig-alt="Actual Tinkercad resistor settings panel showing the Resistance field and kilohm unit menu."}
+
+Use **Schematic** view to check the finished topology. The starter below is still unwired, so its components appear without connection lines. After you wire the circuit, the lines should match the source schematic.
+
+![Actual Tinkercad Schematic view of the unwired starter with two supplies and three labelled resistors but no connection lines.](../../assets/tej-computational/tinkercad/tinkercad-schematic-view-real.jpg){fig-alt="Actual Tinkercad Schematic view showing components without connection lines before wiring."}
+
 Autodesk's current Circuits overview confirms that the editor supports placing and wiring components, changing component values, starting a simulation, and using starter circuits. Follow its built-in **Start Simulating**, **Editing Components**, **Wiring Components**, and **Ohm's Law** tutorials if a control has moved.
 
 ## 2. Simulate and measure
@@ -127,10 +139,12 @@ Rename evidence as `studentnumber-lastname-circuit-name.png` and the comparison 
 | Result is off by 1000 | Check `Ω` versus `kΩ`, and `A` versus `mA`. |
 | Real behaviour is missing | Tinkercad uses component models. Record the limitation and use teacher-approved hardware or a more suitable simulator when the model cannot represent the needed behaviour. |
 
-## Reflection
+## Help improve this lesson (optional)
 
-What changed between your first attempt and verified circuit? Which evidence convinced you that the revised result was reasonable?
+- Which step or screenshot was unclear?
+- What do you still not know how to do?
+- What one change would make this easier for the next student?
 
-## Summary
+Useful fixes may be added to the course materials and credited. This feedback is optional and is not part of the technical mark.
 
-You built, measured, and checked one model. Continue with the matching [series](series-circuits.qmd), [parallel](parallel-circuits.qmd), [series-parallel](series-parallel-circuits.qmd), or [Kirchhoff](kirchhoffs-laws.qmd) investigation, then use the [computational engineering notebooks](../computational-engineering/) when Python adds useful verification.
+Continue with the matching [series](series-circuits.qmd), [parallel](parallel-circuits.qmd), [series-parallel](series-parallel-circuits.qmd), or [Kirchhoff](kirchhoffs-laws.qmd) investigation, then use the [computational engineering notebooks](../computational-engineering/) when Python adds useful verification.

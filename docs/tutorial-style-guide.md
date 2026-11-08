@@ -44,6 +44,15 @@ schematics, measurements, tables, files, and successful tests as evidence.
 - Do not make students rewrite a definition that the lesson already gives.
 - Teach syntax by showing a small working example, then ask the student to
   change it, run it, read the result, and fix it until the check passes.
+- Before an intentional error, show students how to read a traceback: start at
+  the final line, then find the code line immediately above it. Include a tiny
+  reference for the exact errors used in the task.
+- When documentation is part of the lesson, teach students to compare the
+  function signature with their call from left to right. Distinguish a missing
+  positional value from a misspelled or unsupported keyword.
+- Use clean whole-number inputs for the first array and assertion exercises.
+  Introduce decimal tolerance only after the working example. For calculated
+  decimal arrays, use `np.allclose` rather than exact `==`.
 - Keep directions beside the code they control. Prefer one small task and one
   visible success check over a separate worksheet of written questions.
 - Use technical writing only when it is part of the skill, such as labelled
@@ -66,6 +75,10 @@ lesson. It is not a required reflection or recap unless the teacher says so.
 ## Use screenshots well
 
 - Use one screenshot for one important stage.
+- A screenshot must be a real capture of the named program. Do not substitute
+  a recreated interface illustration or synthetic mock-up and label it as a
+  screenshot. Use a clearly labelled diagram when a real capture is not
+  available.
 - Crop out the taskbar, other tabs, bookmarks, downloads, and recording controls.
 - Keep the tool, canvas, and layer panel visible when they help explain the step.
 - Put the screenshot after the action that creates that result.

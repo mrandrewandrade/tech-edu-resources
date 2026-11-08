@@ -97,7 +97,8 @@ COMMON_CLOSE = [
         "## Common errors\n\n"
         "- Check volts versus millivolts, amperes versus milliamperes, and ohms versus kilohms.\n"
         "- Run cells in order after restarting the kernel.\n"
-        "- Read the last line of an error first and confirm every filename and variable name.\n"
+        "- Read the last line of an error first, then read the code line above it.\n"
+        "- Use `np.allclose` instead of exact `==` when checking decimal arrays.\n"
         "- Keep full precision for intermediate values and round only the reported result.\n"
     ),
     *IMPROVEMENT_FEEDBACK,
@@ -421,7 +422,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "### Checkpoint 3\n\n"
-                "Use indexing to print the result for $6.0\\,\\mathrm{V}$. Then use a Boolean comparison to display only "
+                "Use indexing to print the result for $6.0\\,\\mathrm{V}$. Then use a **Boolean filter** to display only "
                 "currents below $3\\,\\mathrm{mA}$.\n"
             ),
             code(
@@ -469,12 +470,20 @@ def notebooks() -> dict[str, dict[str, object]]:
                 "# TODO: use help(np.asarray) or help(np.allclose), then rerun this cell.\n"
             ),
             md(
+                "## Before the error challenge\n\n"
+                "Read a traceback from the bottom. Read the **final line** first; it names the error. Then read the code "
+                "line above it.\n\n"
+                "| Last line says | Meaning | Check |\n"
+                "|---|---|---|\n"
+                "| `missing required positional argument` | The function needs another value | Compare your call with the function signature |\n"
+                "| `unexpected keyword argument` | The keyword name is not accepted | Copy the exact name from the documentation |\n"
+                "| `AssertionError` | A check was false | Print both values; use `np.allclose` for decimals |\n\n"
                 "## Error challenge: repair one keyword\n\n"
                 "1. Change `trigger_documentation_error` to `True` and run the cell.\n"
-                "2. Read the **final line** of the error.\n"
-                "3. Use `help(np.round)`, `np.round?`, or the official NumPy documentation.\n"
-                "4. Repair only the incorrect keyword.\n"
-                "5. Rerun the cell until it prints the rounded array.\n"
+                "2. Read the final line, then the code line above it.\n"
+                "3. Open `help(np.round)` or the official NumPy documentation.\n"
+                "4. Compare the function signature with the broken line from left to right.\n"
+                "5. Repair only the incorrect keyword and run the cell again.\n"
             ),
             code(
                 "trigger_documentation_error = False\n\n"
@@ -496,50 +505,42 @@ def notebooks() -> dict[str, dict[str, object]]:
             ),
             md(
                 "## Purposeful problem: coding assignment\n\n"
-                "Create a new section titled **My resistor investigation**. Choose a teacher-approved resistor from "
-                "$1.0\\,\\mathrm{k\\Omega}$ to $4.7\\,\\mathrm{k\\Omega}$ and analyze it from $1\\,\\mathrm{V}$ to "
-                "$12\\,\\mathrm{V}$. Your work must include:\n\n"
+                "Create a new section titled **My resistor investigation**. Use the supplied "
+                "$2.0\\,\\mathrm{k\\Omega}$ resistor and voltage values. The numbers give clean whole-number currents. "
+                "Your work must include:\n\n"
                 "1. named variables with units;\n"
-                "2. a NumPy voltage array with at least seven values;\n"
-                "3. vectorized current and power calculations;\n"
-                "4. indexing, one Boolean filter, and `min`, `max`, or `mean`;\n"
-                "5. a reusable function and at least two assertions;\n"
-                "6. a graph with title, axis labels, units, markers, and grid;\n"
-                "7. a second resistor curve with a legend; and\n"
-                "8. the repaired error-challenge cell above.\n"
+                "2. the supplied NumPy voltage array;\n"
+                "3. one current calculation using the supplied function;\n"
+                "4. one printed current selected by its position;\n"
+                "5. one `np.allclose` check; and\n"
+                "6. a graph with title, axis labels, units, markers, and grid.\n"
             ),
             code(
-                "# STEP 1 — choose inputs. Replace the example resistor with a teacher-approved value.\n"
-                "student_resistance_ohm = 3300.0\n"
-                "student_voltage_V = np.linspace(1.0, 12.0, 12)\n"
+                "# STEP 1 — use the supplied inputs.\n"
+                "student_resistance_ohm = 2000.0\n"
+                "student_voltage_V = np.array([2, 4, 6, 8, 10, 12])\n"
                 "print('Voltage values:', student_voltage_V)\n"
-                "# TODO 5: use help(np.linspace), then change the number of voltage values.\n"
+                "# TODO 5: change the final voltage from 12 to 14, run the cell, then change it back.\n"
             ),
             code(
-                "# STEP 2 — calculate complete arrays with the function.\n"
+                "# STEP 2 — calculate the current array.\n"
                 "student_current_mA = calculate_current_mA(student_voltage_V, student_resistance_ohm)\n"
-                "student_power_mW = student_voltage_V * student_current_mA\n\n"
+                "\n"
                 "print('Current (mA):', student_current_mA)\n"
-                "print('Power (mW):', student_power_mW)\n"
-                "assert student_voltage_V.shape == student_current_mA.shape\n"
-                "assert np.all(student_current_mA > 0)\n"
+                "assert np.allclose(student_current_mA, [1, 2, 3, 4, 5, 6])\n"
             ),
             code(
-                "# STEP 3 — inspect one value, filter the array, and summarize it.\n"
-                "student_index = 0  # TODO 6: choose an index.\n"
-                "student_limit_mA = 3.0  # TODO: choose a useful limit.\n"
-                "student_mask = student_current_mA < student_limit_mA\n\n"
+                "# STEP 3 — print one value by its position.\n"
+                "student_index = 2  # Position 2 is the third item.\n"
                 "print('Selected voltage:', student_voltage_V[student_index])\n"
                 "print('Selected current:', student_current_mA[student_index])\n"
-                "print('Currents below the limit:', student_current_mA[student_mask])\n"
-                "print('Minimum:', student_current_mA.min())\n"
-                "print('Maximum:', student_current_mA.max())\n"
-                "print('Mean:', student_current_mA.mean())\n"
+                "# TODO 6: change the position to print the fifth item.\n"
             ),
             code(
                 "# STEP 4 — verify and graph the investigation.\n"
-                "assert student_voltage_V.shape == student_power_mW.shape\n"
-                "# TODO 7: add one meaningful assertion based on a value you can predict.\n\n"
+                "# np.allclose is safer than == for decimal calculations.\n"
+                "# TODO 7: complete the expected current values.\n"
+                "assert np.allclose(student_current_mA, [1, 2, 3, __, __, __])\n\n"
                 "plt.plot(student_voltage_V, student_current_mA, marker='o')\n"
                 "plt.xlabel('Voltage (V)')\n"
                 "plt.ylabel('Current (mA)')\n"
@@ -560,7 +561,7 @@ def notebooks() -> dict[str, dict[str, object]]:
             md(
                 "## Submission checklist\n\n"
                 "- [ ] Restarting the kernel and running all cells completes after the intentional error is repaired.\n"
-                "- [ ] The assignment contains the required array operations, function, assertions, and graph.\n"
+                "- [ ] The assignment contains the supplied array, current calculation, one selected value, one check, and a graph.\n"
                 "- [ ] Every numbered `TODO` has been completed.\n"
                 "- [ ] The help sandbox was run with one changed input.\n"
                 "- [ ] The error challenge runs after the keyword is repaired.\n"
