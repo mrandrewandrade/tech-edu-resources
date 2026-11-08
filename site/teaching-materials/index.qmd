@@ -277,6 +277,28 @@ Filters are saved in the page URL as you select them, so you can copy the addres
 
   <article class="bs-slide-card" data-slide-card
     data-collection="General"
+    data-courses="TTJ|TTS"
+    data-tags="Initial D|vehicle specifications|drivetrain|rear-wheel drive|understeer|oversteer|four-wheel drift|piston engine|rotary engine|four-stroke cycle|tachometer|student assignment|Google Doc"
+    data-search="Initial D episodes 1 2 3 4 5 technical comparison assignment AE86 Toyota Nissan Silvia S13 Mazda RX-7 FD vehicle specifications drivetrain rear wheel drive RWD front wheel drive FWD understeer oversteer four wheel drift piston engine rotary engine four stroke cycle intake compression power exhaust tachometer RPM student assignment Google Doc TTJ TTS">
+    <a class="bs-slide-thumb" href="https://docs.google.com/document/d/19SwdMJ4um51QlWwQqyceITkn5c0Wwij1F2ZQB-s2bMA/edit" aria-label="Open Initial D Episodes 1–5 Technical Comparison Assignment">
+      <span class="bs-slide-thumb-fallback" aria-hidden="true"><span class="bs-slide-thumb-kicker">TTJ · TTS</span><strong>INITIAL D</strong><span>Compare + explain</span></span>
+      <img src="https://drive.google.com/thumbnail?id=19SwdMJ4um51QlWwQqyceITkn5c0Wwij1F2ZQB-s2bMA&amp;sz=w1200" alt="" loading="lazy" onerror="this.hidden=true">
+    </a>
+    <div class="bs-slide-card-body">
+      <p class="bs-slide-card-collection">General</p>
+      <h2 class="bs-slide-card-title"><a href="https://docs.google.com/document/d/19SwdMJ4um51QlWwQqyceITkn5c0Wwij1F2ZQB-s2bMA/edit">Initial D Episodes 1–5: Technical Comparison Assignment</a></h2>
+      <p class="bs-slide-card-description">A student-facing Google Doc for comparing the AE86, Silvia S13, and RX-7 through drivetrain layout, understeer and oversteer, four-wheel drift, piston and rotary engines, the four-stroke cycle, and tachometer readings.</p>
+      <div class="bs-slide-card-courses" aria-label="Courses"><button type="button" data-slide-card-course="TTJ">TTJ</button><button type="button" data-slide-card-course="TTS">TTS</button></div>
+      <div class="bs-slide-card-tags" aria-label="Topics"><button type="button" data-slide-card-tag="vehicle specifications">Vehicle specifications</button><button type="button" data-slide-card-tag="drivetrain">Drivetrain</button><button type="button" data-slide-card-tag="engine operation">Engine operation</button></div>
+      <div class="bs-slide-actions">
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/19SwdMJ4um51QlWwQqyceITkn5c0Wwij1F2ZQB-s2bMA/edit">Open Google Doc</a>
+        <a class="bs-slide-open" href="https://docs.google.com/document/d/19SwdMJ4um51QlWwQqyceITkn5c0Wwij1F2ZQB-s2bMA/copy">Make a copy</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="bs-slide-card" data-slide-card
+    data-collection="General"
     data-courses="TTJ|TAS"
     data-tags="vehicle inspection|service|maintenance|planning|printable"
     data-search="vehicle service preparation inspection worksheet pre job specifications wheels tires brakes steering suspension under hood maintenance planning printable TTJ TAS">
