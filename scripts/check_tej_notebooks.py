@@ -35,10 +35,14 @@ def execute_notebook(path: Path, timeout: int) -> None:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--timeout", type=int, default=120, help="seconds allowed per cell")
+    parser.add_argument("--pattern", default="*.ipynb", help="notebook filename glob")
     args = parser.parse_args(argv)
-    paths = sorted(NOTEBOOK_ROOT.glob("*.ipynb"))
-    if len(paths) != 9:
-        print(f"ERROR: expected 9 notebooks, found {len(paths)}", file=sys.stderr)
+    paths = sorted(NOTEBOOK_ROOT.glob(args.pattern))
+    if args.pattern == "*.ipynb" and len(paths) != 11:
+        print(f"ERROR: expected 11 notebooks, found {len(paths)}", file=sys.stderr)
+        return 1
+    if not paths:
+        print(f"ERROR: no notebooks matched {args.pattern!r}", file=sys.stderr)
         return 1
     for path in paths:
         execute_notebook(path, args.timeout)

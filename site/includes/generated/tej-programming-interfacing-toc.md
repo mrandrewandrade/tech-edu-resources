@@ -8,7 +8,7 @@
       <input id="tej-programming-interfacing-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 7 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 8 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,9 +18,9 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="7" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="8" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">9. Computational Engineering</a><span data-bs-learn-group-count>7 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">9. Computational Engineering</a><span data-bs-learn-group-count>8 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Engineering Notebooks with JupyterLite&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Open, run, edit, save, download, and submit engineering notebooks in a browser.&quot;, &quot;The browser workflow works without a local install or new account when the school permits JupyterLite.&quot;, &quot;Notebook Bundle&quot;]">
@@ -77,6 +77,14 @@
         <p>Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.</p>
         <p>Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a> <a class="ter-resource-badge" href="../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb">RC and Op-Amp Calculus Notebook</a></p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Midterm: Three-Current Circuit Investigation&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Show a three-equation circuit derivation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad.&quot;, &quot;The cumulative midterm joins schematic reading, Ohm&#x27;s law, power, KCL, KVL, matrices, Python, and simulation in one markable investigation.&quot;, &quot;Student Notebook&quot;, &quot;Tinkercad Circuits&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Midterm: Three-Current Circuit Investigation"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="midterm-circuit-investigation.html">8. Midterm: Three-Current Circuit Investigation</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Show a three-equation circuit derivation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad.</p>
+        <p>The cumulative midterm joins schematic reading, Ohm&#x27;s law, power, KCL, KVL, matrices, Python, and simulation in one markable investigation.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/09-midterm-three-current-circuit.ipynb">Student Notebook</a> <a class="ter-resource-badge" href="https://www.tinkercad.com/circuits">Tinkercad Circuits</a></p>
       </details>
     </article>
   </div>

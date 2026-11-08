@@ -18,13 +18,13 @@
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="computer-systems" aria-pressed="false">6. Computer Systems<span class="bs-learn-filter-count">×2</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="linux-operating-systems" aria-pressed="false">7. Linux and Operating Systems<span class="bs-learn-filter-count">×12</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="networking" aria-pressed="false">8. Networking<span class="bs-learn-filter-count">×3</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="programming-interfacing" aria-pressed="false">9. Computational Engineering<span class="bs-learn-filter-count">×7</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="programming-interfacing" aria-pressed="false">9. Computational Engineering<span class="bs-learn-filter-count">×8</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="robotics-control" aria-pressed="false">10. Robotics and Control Systems<span class="bs-learn-filter-count">×1</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="engineering-preparation" aria-pressed="false">11. Engineering Preparation<span class="bs-learn-filter-count">×1</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 42 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 43 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -331,9 +331,9 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="7" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="8" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="computational-engineering/index.html">9. Computational Engineering</a><span data-bs-learn-group-count>7 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="computational-engineering/index.html">9. Computational Engineering</a><span data-bs-learn-group-count>8 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Engineering Notebooks with JupyterLite&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Open, run, edit, save, download, and submit engineering notebooks in a browser.&quot;, &quot;The browser workflow works without a local install or new account when the school permits JupyterLite.&quot;, &quot;Notebook Bundle&quot;]">
@@ -390,6 +390,14 @@
         <p>Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.</p>
         <p>Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a> <a class="ter-resource-badge" href="../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb">RC and Op-Amp Calculus Notebook</a></p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Midterm: Three-Current Circuit Investigation&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Show a three-equation circuit derivation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad.&quot;, &quot;The cumulative midterm joins schematic reading, Ohm&#x27;s law, power, KCL, KVL, matrices, Python, and simulation in one markable investigation.&quot;, &quot;Student Notebook&quot;, &quot;Tinkercad Circuits&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Midterm: Three-Current Circuit Investigation"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="computational-engineering/midterm-circuit-investigation.html">8. Midterm: Three-Current Circuit Investigation</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Show a three-equation circuit derivation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad.</p>
+        <p>The cumulative midterm joins schematic reading, Ohm&#x27;s law, power, KCL, KVL, matrices, Python, and simulation in one markable investigation.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/09-midterm-three-current-circuit.ipynb">Student Notebook</a> <a class="ter-resource-badge" href="https://www.tinkercad.com/circuits">Tinkercad Circuits</a></p>
       </details>
     </article>
   </div>

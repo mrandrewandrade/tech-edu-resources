@@ -1,0 +1,45 @@
+\documentclass[tikz,border=9pt]{standalone}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[europeanresistors,americanvoltages]{circuitikz}
+\definecolor{TEJNavy}{HTML}{1E2B55}
+\definecolor{TEJBlue}{HTML}{1769AA}
+\definecolor{TEJOrange}{HTML}{E97828}
+\begin{document}
+\begin{tikzpicture}[line width=1.2pt,draw=TEJNavy,text=TEJNavy,>=latex]
+  \ctikzset{bipoles/length=1.2cm}
+
+  % Two source branches feed one centre load. Labels are separate from wires.
+  \draw (1.15,0.8) to[battery1,invert] (1.15,4.1)
+    -- (2.00,4.1) to[R] (4.00,4.1) -- (4.90,4.1)
+    to[R] (6.90,4.1) -- (7.75,4.1)
+    to[battery1] (7.75,0.8) -- (1.15,0.8);
+  \draw (4.90,4.1) to[R] (4.90,0.8);
+  \draw (1.15,0.8) node[ground] {};
+
+  \fill[TEJNavy] (4.90,4.1) circle (3.1pt);
+  \fill[TEJNavy] (4.90,0.8) circle (3.1pt);
+
+  \node[fill=white,inner sep=2pt,font=\large] at (3.00,4.66)
+    {$R_1=2.2\,\mathrm{k}\Omega$};
+  \node[fill=white,inner sep=2pt,font=\large] at (5.90,4.66)
+    {$R_2=3.3\,\mathrm{k}\Omega$};
+  \node[fill=white,inner sep=2pt,font=\large,anchor=east] at (4.48,2.42)
+    {$R_3=1.0\,\mathrm{k}\Omega$};
+  \node[fill=white,inner sep=2pt,font=\large,anchor=east] at (0.70,2.08)
+    {$V_{S1}=12\,\mathrm{V}$};
+  \node[fill=white,inner sep=2pt,font=\large,anchor=west] at (8.20,2.08)
+    {$V_{S2}=9\,\mathrm{V}$};
+  \node[fill=white,inner sep=2pt,font=\small,text=TEJBlue] at (1.13,0.17)
+    {$0\,\mathrm{V}$};
+  \node[fill=white,inner sep=2pt,font=\bfseries\small,text=TEJOrange] at (4.90,4.92)
+    {TOP NODE};
+
+  \draw[->,TEJBlue,line width=1.45pt] (1.85,3.62) -- (3.58,3.62);
+  \node[fill=white,inner sep=2pt,font=\large,text=TEJBlue] at (2.72,3.18) {$I_1$};
+  \draw[->,TEJBlue,line width=1.45pt] (7.05,3.62) -- (5.32,3.62);
+  \node[fill=white,inner sep=2pt,font=\large,text=TEJBlue] at (6.18,3.18) {$I_2$};
+  \draw[->,TEJBlue,line width=1.45pt] (5.60,3.42) -- (5.60,1.72);
+  \node[fill=white,inner sep=2pt,font=\large,text=TEJBlue] at (6.05,2.57) {$I_3$};
+\end{tikzpicture}
+\end{document}

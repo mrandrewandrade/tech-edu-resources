@@ -1948,9 +1948,41 @@
       "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
       "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
       "previous_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
-      "next_route": null,
+      "next_route": "/commons/tej3-4/computational-engineering/midterm-circuit-investigation.html",
       "next_starts_new_track": false,
       "sequence_index": 67
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 8,
+      "route": "/commons/tej3-4/computational-engineering/midterm-circuit-investigation.html",
+      "source": "tej3-4/computational-engineering/midterm-circuit-investigation.qmd",
+      "title": "Midterm: Three-Current Circuit Investigation",
+      "summary": "Show a three-equation circuit derivation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad.",
+      "use": "The cumulative midterm joins schematic reading, Ohm's law, power, KCL, KVL, matrices, Python, and simulation in one markable investigation.",
+      "resources": [
+        {
+          "label": "Student Notebook",
+          "url": "../assets/tej-computational/notebooks/09-midterm-three-current-circuit.ipynb"
+        },
+        {
+          "label": "Tinkercad Circuits",
+          "url": "https://www.tinkercad.com/circuits"
+        }
+      ],
+      "track_id": "programming-interfacing",
+      "track_order": 9,
+      "track_title": "Computational Engineering",
+      "track_hub": "tej3-4/computational-engineering/index.qmd",
+      "track_summary": "Use browser-based or locally installed Python notebooks to calculate, graph, test, debug, and explain engineering evidence.",
+      "track_use": "Programming connects circuit models, measurements, data, documentation, and reproducible technical explanations.",
+      "previous_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 68
     }
   ]
 }

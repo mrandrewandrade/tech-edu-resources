@@ -15,6 +15,9 @@ $buildDirTeX = $buildDir.Replace('\', '/')
 $schematicNames = @(
     'component-symbols-foundation',
     'first-led-circuit',
+    'midterm-three-current-network',
+    'midterm-three-current-loop1',
+    'midterm-three-current-loop2',
     'transistor-led-switch',
     'op-amp-voltage-follower'
 )

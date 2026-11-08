@@ -32,9 +32,9 @@ class TejComputationalResourceTests(unittest.TestCase):
         ):
             self.assertIn(phrase, lesson)
 
-    def test_ten_real_notebooks_have_required_learning_structure(self) -> None:
+    def test_eleven_real_notebooks_have_required_learning_structure(self) -> None:
         paths = sorted(NOTEBOOKS.glob("*.ipynb"))
-        self.assertEqual(len(paths), 10)
+        self.assertEqual(len(paths), 11)
         required = (
             "Learning goal",
             "Why it matters",
@@ -125,7 +125,11 @@ class TejComputationalResourceTests(unittest.TestCase):
                 archive.namelist(),
             )
             readme = archive.read("tej-computational-engineering/README.txt").decode("utf-8")
-            self.assertIn("ten notebooks", readme)
+            self.assertIn("eleven notebooks", readme)
+            self.assertIn(
+                "tej-computational-engineering/notebooks/09-midterm-three-current-circuit.ipynb",
+                archive.namelist(),
+            )
 
     def test_template_uses_native_search_listing_and_accessible_images(self) -> None:
         template = ROOT / "student-templates" / "quarto-portfolio-starter"

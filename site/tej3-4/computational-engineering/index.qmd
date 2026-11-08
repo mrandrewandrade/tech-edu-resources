@@ -25,10 +25,11 @@ Basic schematics and the five KCL/KVL questions are complete. Before circuit lin
 5. [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd): reproduce an issue, search Python, NumPy, pandas, and Stack Overflow, and write a complete technical help request.
 6. [Complete the two-loops-to-matrix assignment](kirchhoff-jupyter-assignment.qmd): derive each loop equation step by step, build the matrix, and compare NumPy with an exact SymPy solution.
 7. [Work through the Jupyter Electronics Lab](jupyter-electronics-lab.qmd): apply the skills across KCL/KVL, graphs, data, investigation, RC, op-amps, and the calculus bridge.
-8. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
+8. [Complete the cumulative midterm circuit investigation](midterm-circuit-investigation.qmd): show a three-equation derivation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad.
+9. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
 
 ::: {.callout-important title="Current assignment"}
-Start with [Assignment: Python First Steps in Jupyter](python-first-steps.qmd). It assumes no previous Python or notebook experience. After it is comfortable, continue to [Python and NumPy Foundations](python-numpy-foundations.qmd), then [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd).
+Complete the [Midterm Three-Current Circuit Investigation](midterm-circuit-investigation.qmd). The notebook, Tinkercad URL, screenshot, and all missing course work are due **Thursday, November 12, 2026 at 7:00 p.m.** Use [Python First Steps](python-first-steps.qmd), [Python and NumPy Foundations](python-numpy-foundations.qmd), and [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd) as support or catch-up work.
 :::
 
 ::: {.callout-note title="Core workflow"}

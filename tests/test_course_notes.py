@@ -64,7 +64,7 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/design-fabrication/hand-tools/phone-holder.html",
             ],
         )
-        self.assertEqual(len(routes_by_course["tej"]), 37)
+        self.assertEqual(len(routes_by_course["tej"]), 38)
         self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/portfolio/index.html")
         self.assertEqual(
             routes_by_course["tej"][1:7],
@@ -99,7 +99,7 @@ class CourseNotesManifestTests(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            routes_by_course["tej"][-7:],
+            routes_by_course["tej"][-8:],
             [
                 "/commons/tej3-4/computational-engineering/jupyterlite.html",
                 "/commons/tej3-4/computational-engineering/python-first-steps.html",
@@ -108,6 +108,7 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
                 "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
                 "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
+                "/commons/tej3-4/computational-engineering/midterm-circuit-investigation.html",
             ],
         )
         self.assertFalse(any("submission" in route for route in routes_by_course["tej"]))
