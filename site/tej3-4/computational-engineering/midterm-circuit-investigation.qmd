@@ -50,7 +50,13 @@ Try Jupyter runs inside the browser. Complete the Python cells in the notebook; 
 
 ## 2. Start with something fun
 
-The first notebook cells create a small circuit-lab title card. Change the displayed name, message, and colours, then run the cell again. The finished checkpoint currents later become a bar-chart dashboard.
+The notebook begins with a visual **Circuit Grid**:
+
+1. **Complete the circuit:** change one number in a pixel grid. An open path stays red; a closed path lights the lamp and gives an immediate success message.
+2. **Bug Hunt:** repair a broken resistance value by recognizing when Python is treating a number as text.
+3. **Customize the Lab:** change the circuit-lab title card and colours.
+4. **Unlock the Checkpoint:** correct Python calculations produce a `CIRCUIT VERIFIED` screen.
+5. **Tinkercad Boss Level:** enter the three measured currents. If they agree with Python, the notebook displays `SIMULATION MATCH — LIFE CHECKPOINT: 100% AVAILABLE`.
 
 The warm-up teaches the same Python tools used in the engineering work:
 
@@ -59,9 +65,9 @@ The warm-up teaches the same Python tools used in the engineering work:
 - `print()` displays text;
 - a function reuses instructions;
 - NumPy stores the solved currents;
-- Matplotlib turns the values into a graph.
+- Matplotlib turns the number grid and verified results into a circuit board, graph, and unlock screens.
 
-The warm-up is short. Complete it, then continue directly to the Life Checkpoint.
+Students change one clearly marked value, run the cell, and use immediate visual feedback. The games lead directly into the same Ohm's law and verification skills required by the checkpoint.
 
 ## 3. Digitize the original checkpoint
 
@@ -136,7 +142,7 @@ Route wires around components and labels. A crossing is not a connection unless 
 
 | Evidence | Marks |
 |---|---:|
-| Jupyter warm-up runs and is customized | 10 |
+| Circuit Grid, Bug Hunt, and title card are complete | 10 |
 | Ohm's law, power, units, and simple schematic | 15 |
 | Complete circuit, isolated loops, and KCL | 15 |
 | KVL algebra and LaTeX shown one move at a time | 20 |

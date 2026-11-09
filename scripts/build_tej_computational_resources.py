@@ -134,11 +134,78 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
             code(
                 "import numpy as np\n"
                 "import matplotlib.pyplot as plt\n\n"
+                "from matplotlib.colors import BoundaryNorm, ListedColormap\n\n"
                 "print('NumPy is ready:', np.__version__)\n"
                 "print('Matplotlib is ready.')\n"
             ),
             md(
-                "## 2. Working demonstration: make a circuit-lab title card\n\n"
+                "## 2. Working demonstration: Circuit Grid\n\n"
+                "The grid is a tiny circuit board. `0` means a missing piece and `1` means wire. Change only "
+                "`repair_piece` from `0` to `1`, then run the cell again. The picture and message will tell you "
+                "whether the lamp has power.\n"
+            ),
+            code(
+                "def show_circuit_grid(repair_piece):\n"
+                "    board = np.zeros((8, 12), dtype=int)\n"
+                "    board[2, 1:11] = 1\n"
+                "    board[5, 1:11] = 1\n"
+                "    board[2:6, 1] = 1\n"
+                "    board[2:6, 10] = 1\n"
+                "    board[3:5, 1] = 2       # battery\n"
+                "    board[2, 5] = 3         # resistor\n"
+                "    powered = repair_piece == 1\n"
+                "    board[5, 7] = 1 if powered else 6\n"
+                "    board[3:5, 10] = 5 if powered else 4\n\n"
+                "    colours = ['#10131a', '#36c5f0', '#ffd23f', '#ff8c42',\n"
+                "               '#59636f', '#b8ff5a', '#ef476f']\n"
+                "    colour_map = ListedColormap(colours)\n"
+                "    colour_norm = BoundaryNorm(np.arange(-0.5, 7.5, 1), colour_map.N)\n\n"
+                "    fig, ax = plt.subplots(figsize=(9, 5))\n"
+                "    fig.patch.set_facecolor('#10131a')\n"
+                "    ax.set_facecolor('#10131a')\n"
+                "    ax.imshow(board, cmap=colour_map, norm=colour_norm, interpolation='nearest')\n"
+                "    ax.set_xticks(np.arange(-0.5, 12, 1), minor=True)\n"
+                "    ax.set_yticks(np.arange(-0.5, 8, 1), minor=True)\n"
+                "    ax.grid(which='minor', color='#39424e', linewidth=1.3)\n"
+                "    ax.tick_params(which='both', bottom=False, left=False, labelbottom=False, labelleft=False)\n"
+                "    ax.text(1, 3.5, '+\\n−', ha='center', va='center', fontsize=16, weight='bold', color='#10131a')\n"
+                "    ax.text(5, 2, 'R', ha='center', va='center', fontsize=14, weight='bold', color='#10131a')\n"
+                "    ax.text(10, 3.5, 'ON' if powered else 'OFF', ha='center', va='center',\n"
+                "            fontsize=11, weight='bold', color='#10131a')\n"
+                "    ax.text(7, 5, '✓' if powered else '?', ha='center', va='center',\n"
+                "            fontsize=16, weight='bold', color='white')\n"
+                "    status = 'CIRCUIT COMPLETE — LAMP ON' if powered else 'OPEN CIRCUIT — FIND THE MISSING WIRE'\n"
+                "    status_colour = '#b8ff5a' if powered else '#ef476f'\n"
+                "    ax.set_title(status, color=status_colour, fontsize=17, weight='bold', pad=14)\n"
+                "    plt.show()\n"
+                "    return powered\n\n"
+                "# CHANGE ONLY THIS NUMBER from 0 to 1, then run the cell again.\n"
+                "repair_piece = 0\n"
+                "grid_complete = show_circuit_grid(repair_piece)\n\n"
+                "if grid_complete:\n"
+                "    print('LEVEL COMPLETE: current has a closed path around the loop.')\n"
+                "else:\n"
+                "    print('TRY AGAIN: change repair_piece to 1 and rerun this cell.')\n"
+            ),
+            md(
+                "## 3. Bug Hunt: Repair the current checker\n\n"
+                "The program below stores the resistance as text, so Python cannot divide by it. Run the cell once, "
+                "read the message, then remove only the quotation marks around `2000` and run it again.\n"
+            ),
+            code(
+                "bug_voltage_V = 12.0\n"
+                "bug_resistance_ohm = '2000'  # Remove the quotation marks to repair the program.\n\n"
+                "if isinstance(bug_resistance_ohm, str):\n"
+                "    print('BUG FOUND: resistance is text because it has quotation marks.')\n"
+                "    print('Repair: change the text to a number, then run this cell again.')\n"
+                "else:\n"
+                "    repaired_current_mA = bug_voltage_V / bug_resistance_ohm * 1000\n"
+                "    print(f'REPAIRED: current = {repaired_current_mA:.1f} mA')\n"
+                "    assert np.isclose(repaired_current_mA, 6.0)\n"
+                "    print('BUG HUNT COMPLETE.')\n"
+            ),
+            md(
+                "## 4. Customize your circuit-lab title card\n\n"
                 "Change only the three values under **EDIT THESE**. Run the cell again. The words are strings stored "
                 "in variables. The colours are stored in a list.\n"
             ),
@@ -167,7 +234,7 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "an error, read the final line and replace only that colour.\n"
             ),
             md(
-                "## 3. Ohm's law and power\n\n"
+                "## 5. Ohm's law and power\n\n"
                 "A $12\\,\\mathrm{V}$ supply is connected across a $2.0\\,\\mathrm{k\\Omega}$ resistor. Insert a "
                 "Markdown cell below. Show the formula, substitution, answer, and unit for current and power. Use one "
                 "displayed equation for each move.\n\n"
@@ -193,7 +260,7 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "    print(\"CHECKED: Ohm's law and power are correct.\")\n"
             ),
             md(
-                "## 4. Digitize the schematic evidence\n\n"
+                "## 6. Digitize the schematic evidence\n\n"
                 "The original checkpoint asked for a series loop containing a $9\\,\\mathrm{V}$ source, closed switch "
                 "$S1$, resistor $R1=1\\,\\mathrm{k\\Omega}$, source polarity, and a conventional-current arrow.\n\n"
                 "![Corrected series-loop schematic with a 9 volt source, closed switch, 1 kilohm resistor, and current "
@@ -202,7 +269,7 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "original was already complete, write `No correction needed`.\n"
             ),
             md(
-                "## 5. Read the two-loop circuit\n\n"
+                "## 7. Read the two-loop circuit\n\n"
                 "![Life Checkpoint circuit with two sources, three resistors, and currents I1, I2, and I3.]"
                 "(https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/life-checkpoint-two-loop-clean.png)\n\n"
                 "Use the isolated-loop diagrams to check which components belong in each loop.\n\n"
@@ -214,7 +281,7 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "![Loop 2 only.](https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/life-checkpoint-loop-2.svg)\n"
             ),
             md(
-                "## 6. KCL and KVL in LaTeX\n\n"
+                "## 8. KCL and KVL in LaTeX\n\n"
                 "Read the arrows. $I_1$ enters the centre node. $I_2$ and $I_3$ leave. Type the KCL equation and the "
                 "rearranged equation for $I_3$ in a Markdown cell.\n\n"
                 "Then show each KVL algebra move. Do not jump directly to standard form.\n\n"
@@ -235,7 +302,7 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "Write the matching matrix equation in a Markdown cell before entering it in Python.\n"
             ),
             md(
-                "## 7. Enter and solve the matrix\n\n"
+                "## 9. Enter and solve the matrix\n\n"
                 "Replace both `None` values. Keep row order Loop 1, Loop 2 and variable order $[I_1,I_2]$.\n\n"
                 "Example syntax: `np.array([[1.0, 2.0], [3.0, 4.0]])`\n"
             ),
@@ -261,7 +328,7 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "    print('CHECKED: the matrix produces the Life Checkpoint currents.')\n"
             ),
             md(
-                "## 8. Make the current dashboard\n\n"
+                "## 10. Make the current dashboard\n\n"
                 "The solved currents become a graph. Change the graph title and colours if you want. Do not change "
                 "the current values.\n"
             ),
@@ -282,7 +349,7 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "    plt.show()\n"
             ),
             md(
-                "## 9. Independent checks\n\n"
+                "## 11. Independent checks\n\n"
                 "In a Markdown cell, substitute the solved currents into KCL and both standard-form KVL equations. "
                 "Show the left side and right side with units. Then run the code check below.\n"
             ),
@@ -299,7 +366,38 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "    print('CHECKED: KCL and both KVL equations agree.')\n"
             ),
             md(
-                "## 10. Verify the same circuit in Tinkercad\n\n"
+                "## 12. Unlock the Python Check\n\n"
+                "Run this after the matrix and independent checks pass. It uses the verified values to unlock the "
+                "checkpoint screen.\n"
+            ),
+            code(
+                "if currents_mA is None:\n"
+                "    print('Solve and check the circuit first.')\n"
+                "else:\n"
+                "    python_verified = (\n"
+                "        np.allclose([I1_mA, I2_mA, I3_mA], [2.0, 1.0, 1.0])\n"
+                "        and np.isclose(I1_mA, I2_mA + I3_mA)\n"
+                "    )\n"
+                "    if python_verified:\n"
+                "        rng = np.random.default_rng(741)\n"
+                "        fig, ax = plt.subplots(figsize=(8, 4))\n"
+                "        ax.set_facecolor('#10131a')\n"
+                "        ax.scatter(rng.random(120), rng.random(120), s=rng.integers(20, 120, 120),\n"
+                "                   c=rng.random(120), cmap='hsv', alpha=0.85)\n"
+                "        ax.text(0.5, 0.58, 'CIRCUIT VERIFIED', ha='center', va='center',\n"
+                "                fontsize=28, weight='bold', color='white',\n"
+                "                bbox=dict(facecolor='#173f2a', edgecolor='lime', boxstyle='round,pad=0.5'))\n"
+                "        ax.text(0.5, 0.35, 'PYTHON CHECK PASSED', ha='center', va='center',\n"
+                "                fontsize=16, color='lime')\n"
+                "        ax.set_xlim(0, 1)\n"
+                "        ax.set_ylim(0, 1)\n"
+                "        ax.axis('off')\n"
+                "        plt.show()\n"
+                "    else:\n"
+                "        print('LOCKED: return to the matrix and check the three currents.')\n"
+            ),
+            md(
+                "## 13. Tinkercad Boss Level\n\n"
                 "Build the Life Checkpoint circuit using $12\\,\\mathrm{V}$, $5\\,\\mathrm{V}$, "
                 "$5\\,\\mathrm{k\\Omega}$, $7\\,\\mathrm{k\\Omega}$, and $2\\,\\mathrm{k\\Omega}$. Save it as "
                 "`studentnumber-lastname-life-checkpoint`.\n\n"
@@ -314,10 +412,38 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "**Screenshot filename:** `studentnumber-lastname-life-checkpoint.png`\n"
             ),
             md(
+                "### Final match\n\n"
+                "After measuring the three currents, enter them in the code cell below. Use this format: "
+                "`np.array([2.00, 1.00, 1.00])`. Values within $0.10\\,\\mathrm{mA}$ of Python unlock the final screen.\n"
+            ),
+            code(
+                "tinkercad_currents_mA = None  # Replace with np.array([I1, I2, I3]) from Tinkercad.\n\n"
+                "if tinkercad_currents_mA is None:\n"
+                "    print('Enter the three Tinkercad currents, then run this cell again.')\n"
+                "else:\n"
+                "    python_currents_mA = np.array([I1_mA, I2_mA, I3_mA])\n"
+                "    differences_mA = np.abs(tinkercad_currents_mA - python_currents_mA)\n"
+                "    print('Absolute differences (mA):', differences_mA)\n"
+                "    if np.all(differences_mA <= 0.10):\n"
+                "        fig, ax = plt.subplots(figsize=(8, 3))\n"
+                "        ax.set_facecolor('#10131a')\n"
+                "        ax.text(0.5, 0.63, 'SIMULATION MATCH', ha='center', va='center',\n"
+                "                fontsize=28, weight='bold', color='lime')\n"
+                "        ax.text(0.5, 0.34, 'LIFE CHECKPOINT: 100% AVAILABLE', ha='center', va='center',\n"
+                "                fontsize=16, color='white')\n"
+                "        ax.plot([0.16, 0.84], [0.15, 0.15], color='deepskyblue', linewidth=10)\n"
+                "        ax.set_xlim(0, 1)\n"
+                "        ax.set_ylim(0, 1)\n"
+                "        ax.axis('off')\n"
+                "        plt.show()\n"
+                "    else:\n"
+                "        print('NOT YET: compare component values, nodes, polarity, and meter placement.')\n"
+            ),
+            md(
                 "## Marks: opportunity to earn 100%\n\n"
                 "| Evidence | Marks |\n"
                 "|:--|--:|\n"
-                "| Jupyter warm-up runs and is customized | 10 |\n"
+                "| Circuit Grid, Bug Hunt, and title card are complete | 10 |\n"
                 "| Ohm's law, power, units, and simple schematic | 15 |\n"
                 "| Complete circuit, isolated loops, and KCL | 15 |\n"
                 "| KVL algebra and LaTeX shown one move at a time | 20 |\n"
@@ -335,12 +461,14 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
                 "- The matrix has the wrong shape: `A` needs two rows and two columns; `b` needs two values.\n"
                 "- Tinkercad current is zero: trace the branch and put the current meter in series.\n\n"
                 "### Final check\n\n"
+                "- [ ] I completed the Circuit Grid and Bug Hunt.\n"
                 "- [ ] My title card is customized.\n"
                 "- [ ] My Ohm's law and power work is rendered in LaTeX.\n"
                 "- [ ] My schematic corrections, loop evidence, KCL, and KVL work are complete.\n"
                 "- [ ] NumPy prints $I_1=2.0\\,\\mathrm{mA}$, $I_2=1.0\\,\\mathrm{mA}$, and "
                 "$I_3=1.0\\,\\mathrm{mA}$.\n"
                 "- [ ] My dashboard graph appears.\n"
+                "- [ ] The Python verified screen and Tinkercad simulation match screen appear.\n"
                 "- [ ] My Tinkercad table, direct URL, and screenshot filename are present.\n"
                 "- [ ] **Kernel > Restart Kernel and Run All Cells** finishes without an unexpected error.\n"
                 "- [ ] The downloaded notebook reopens with my work and output present.\n"

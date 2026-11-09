@@ -112,10 +112,16 @@ class TejComputationalResourceTests(unittest.TestCase):
         for phrase in (
             "same notebook for both days",
             "improve your Life Checkpoint mark to 100%",
+            "Working demonstration: Circuit Grid",
+            "OPEN CIRCUIT",
+            "CIRCUIT COMPLETE",
+            "BUG FOUND",
             "circuit-lab title card",
             "life-checkpoint-series.svg",
             "7I_1-2I_2=12",
             "current dashboard",
+            "CIRCUIT VERIFIED",
+            "SIMULATION MATCH",
             "Tinkercad circuit URL",
         ):
             self.assertIn(phrase.lower(), checkpoint_text.lower())
