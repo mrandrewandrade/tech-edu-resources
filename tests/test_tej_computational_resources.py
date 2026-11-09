@@ -35,7 +35,7 @@ class TejComputationalResourceTests(unittest.TestCase):
     def test_twelve_real_notebooks_have_required_learning_structure(self) -> None:
         paths = sorted(NOTEBOOKS.glob("*.ipynb"))
         self.assertEqual(len(paths), 12)
-        required = (
+        lesson_required = (
             "Learning goal",
             "Why it matters",
             "Prior knowledge",
@@ -48,12 +48,22 @@ class TejComputationalResourceTests(unittest.TestCase):
             notebook = json.loads(path.read_text(encoding="utf-8"))
             self.assertEqual(notebook["nbformat"], 4)
             text = "".join("".join(cell.get("source", [])) for cell in notebook["cells"])
+            required = lesson_required
+            if path.name == "09a-circuit-quest.ipynb":
+                required = (
+                    "Make it yours",
+                    "TEAM_NAME",
+                    "Hint",
+                    "Common errors",
+                    "assert",
+                    "Do not build this tile board in Tinkercad",
+                )
             for phrase in required:
                 self.assertIn(phrase.lower(), text.lower(), f"{phrase} missing from {path.name}")
             self.assertNotIn("## reflection", text.lower(), path.name)
             self.assertNotIn("finish this sentence", text.lower(), path.name)
             self.assertIn("help improve this lesson", text.lower(), path.name)
-            if path.name != "00-python-first-steps.ipynb":
+            if path.name not in ("00-python-first-steps.ipynb", "09a-circuit-quest.ipynb"):
                 self.assertIn("working demonstration", text.lower(), path.name)
             self.assertTrue(any(cell.get("cell_type") == "code" for cell in notebook["cells"]))
 
@@ -142,6 +152,8 @@ class TejComputationalResourceTests(unittest.TestCase):
             "Reset level",
             "Hint",
             "ipywidgets",
+            "TEAM_NAME",
+            "Do not build this tile board in Tinkercad",
         ):
             self.assertIn(phrase.lower(), circuit_quest_text.lower())
 

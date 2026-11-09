@@ -540,6 +540,7 @@ POWERED_COLOUR = "#b8ff5a"
 WIRE_COLOUR = "#35bde0"
 BOARD_COLOUR = "#17202a"
 LAMP_COLOUR = "#ffd23f"
+TEAM_NAME = "Circuit Crew"
 
 GLYPH = {
     0: " ", NORTH: "╵", EAST: "╴", SOUTH: "╷", WEST: "╶",
@@ -722,7 +723,7 @@ class CircuitQuest:
         powered = self._powered_squares()
         won = self._won(powered)
         self.header.value = (
-            f"<h2 style='margin:0;color:#35bde0'>⚡ Circuit Quest: Level {self.level_index + 1}/3</h2>"
+            f"<h2 style='margin:0;color:#35bde0'>⚡ {TEAM_NAME}: Level {self.level_index + 1}/3</h2>"
             f"<h3 style='margin:4px 0'>{level['title']}</h3>"
         )
         self.instructions.value = f"<p style='font-size:16px'>{level['message']} Click a wire to rotate it.</p>"
@@ -747,7 +748,7 @@ class CircuitQuest:
         if won:
             if self.level_index == len(LEVELS) - 1:
                 self.status.value = (
-                    f"<h3 style='color:#43a047'>🎉 QUEST COMPLETE in {self.moves} moves! "
+                    f"<h3 style='color:#43a047'>🎉 {TEAM_NAME}: QUEST COMPLETE in {self.moves} moves! "
                     "Both lamps have power.</h3>"
                 )
                 self.next_button.description = "Quest complete"
@@ -785,26 +786,38 @@ class CircuitQuest:
     )
     setup["metadata"] = {"jupyter": {"source_hidden": True}, "tags": ["game-engine"]}
 
-    return notebook(
+    game = notebook(
         "Circuit Quest: Power the Grid",
         "Rotate circuit tiles, complete three paths, and see how power travels through a branch.",
         "No coding experience is required. You only need to run a cell and click buttons.",
         [
             md(
-                "## Working demonstration: play before you code\n\n"
-                "This is a short game, not a written assignment. Run the two code cells below. The large setup cell "
-                "is collapsed on purpose; you do not need to understand it yet.\n\n"
-                "### How to play\n\n"
+                "## 1. Set up the game\n\n"
+                "Run the collapsed code cell below. It loads the buttons and game rules. You do not need to edit it.\n"
+            ),
+            setup,
+            md(
+                "## 2. Make it yours\n\n"
+                "Change the team name and **one** colour. Keep the quotation marks. Then run the cell.\n\n"
+                "Try a colour such as `hotpink`, `orange`, `violet`, `gold`, `cyan`, or `lime`.\n"
+            ),
+            code(
+                "# Change this line.\n"
+                "TEAM_NAME = 'Circuit Crew'\n"
+                "# Change ONE of these colour lines.\n"
+                "WIRE_COLOUR = 'deepskyblue'\n"
+                "POWERED_COLOUR = 'lime'\n\n"
+                "print(TEAM_NAME, 'is ready.')\n"
+                "print('Wire colour:', WIRE_COLOUR)\n"
+            ),
+            md(
+                "## 3. Play\n\n"
+                "Run the next cell. Your team name and colours appear in the game.\n\n"
                 "1. Click a blue wire tile to rotate it.\n"
                 "2. Trace the path from the battery. Connected tiles glow green.\n"
                 "3. Light every lamp.\n"
                 "4. Use **Hint** or **Reset level** whenever you need them.\n"
                 "5. Finish all three levels.\n"
-            ),
-            setup,
-            md(
-                "## Start Circuit Quest\n\n"
-                "Run this cell. The clickable game board appears directly below it.\n"
             ),
             code(
                 "quest = CircuitQuest()\n"
@@ -812,30 +825,17 @@ class CircuitQuest:
                 "print('Game ready. Click the wire tiles above.')\n"
             ),
             md(
-                "## Optional colour mod\n\n"
-                "After playing, change one colour code and run this cell. This is optional. If the colour causes an "
-                "error, use **Undo** or copy the original value back.\n"
-            ),
-            code(
-                "# Optional challenge: change one quoted colour, then run the cell.\n"
-                "POWERED_COLOUR = '#b8ff5a'\n"
-                "WIRE_COLOUR = '#35bde0'\n"
-                "quest.refresh()\n"
-                "assert POWERED_COLOUR.startswith('#') and len(POWERED_COLOUR) == 7\n"
-                "print('Colour mod applied.')\n"
-            ),
-            md(
-                "## What the game showed\n\n"
-                "- A lamp needs a complete path back to the source.\n"
-                "- A rotated wire can create an open circuit.\n"
-                "- A junction can send current into more than one branch.\n"
-                "- The computer checks connections after every move and gives immediate feedback.\n\n"
-                "Continue to the Life Checkpoint notebook after the final level. No separate written response is "
-                "required unless the teacher asks for one.\n"
+                "## 4. Next: the Life Checkpoint\n\n"
+                "Circuit Quest is the warm-up. **Do not build this tile board in Tinkercad.**\n\n"
+                "Next, open the [Life Checkpoint Upgrade](https://andrewandrade.ca/tech-edu-resources/"
+                "tej3-4/computational-engineering/midterm-circuit-investigation.html). Correct the checkpoint in "
+                "Jupyter, then build the checkpoint's two-loop circuit in Tinkercad. That circuit uses the "
+                "$12\\,\\mathrm{V}$ and $5\\,\\mathrm{V}$ sources with the $5\\,\\mathrm{k\\Omega}$, "
+                "$7\\,\\mathrm{k\\Omega}$, and $2\\,\\mathrm{k\\Omega}$ resistors.\n"
             ),
             md(
                 "## Common errors\n\n"
-                "- No board appears: run the collapsed setup cell, then run **Start Circuit Quest** again.\n"
+                "- No board appears: run the setup cell, your team-and-colours cell, and the play cell in order.\n"
                 "- Buttons show as text: confirm that **Python (Pyodide)** is the selected kernel.\n"
                 "- A lamp stays off: follow the green path and rotate the first blue tile after it.\n"
                 "- The game seems stuck: click **Hint** or **Reset level**.\n"
@@ -844,6 +844,12 @@ class CircuitQuest:
             *IMPROVEMENT_FEEDBACK,
         ],
     )
+    game["cells"][0]["source"] = (
+        "# Circuit Quest: Power the Grid\n\n"
+        "Put your team name and colours into the game. Then rotate circuit tiles and light every lamp.\n\n"
+        "**Order:** set up → change two lines of code → play → open the Life Checkpoint.\n"
+    ).splitlines(keepends=True)
+    return game
 
 
 def notebooks() -> dict[str, dict[str, object]]:

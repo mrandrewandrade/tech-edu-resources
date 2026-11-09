@@ -19,7 +19,7 @@ Basic schematics and the five KCL/KVL questions are complete. Before circuit lin
 :::
 
 1. [Read the step-by-step JupyterLite instructions](jupyterlite.qmd): download a notebook, open JupyterLite, upload the file, run a cell, and preserve the finished work.
-2. [Play Circuit Quest](circuit-quest.qmd): rotate circuit tiles, complete paths, light lamps, and power a branch.
+2. [Play and mod Circuit Quest](circuit-quest.qmd): add a team name, change a colour, rotate circuit tiles, and power two branches.
 3. [Complete Python First Steps](python-first-steps.qmd): print one line, use calculator operations, store variables, recognize types, select list items, and use one small NumPy array.
 4. [Run Python and Jupyter on your own computer](local-python-jupyter.qmd): use a virtual environment in WSL, native Windows, macOS, or Linux instead of depending on JupyterLite.
 5. [Complete Python and NumPy Foundations](python-numpy-foundations.qmd): practise loops, functions, arrays, filters, checks, plotting, and one documentation-driven repair.
@@ -30,7 +30,7 @@ Basic schematics and the five KCL/KVL questions are complete. Before circuit lin
 10. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
 
 ::: {.callout-important title="Current assignment"}
-Begin with [Circuit Quest](circuit-quest.qmd), then use the same [Life Checkpoint Upgrade: Jupyter + Tinkercad](midterm-circuit-investigation.qmd) notebook on Monday and Tuesday. Submit the notebook, Tinkercad URL, screenshot, and any missing course work through the assigned Classroom posts. Use [Python First Steps](python-first-steps.qmd), [Python and NumPy Foundations](python-numpy-foundations.qmd), and [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd) as support or catch-up work.
+Begin with [Circuit Quest](circuit-quest.qmd): change the team name and one colour, then finish three levels. Next, use the [Life Checkpoint Upgrade: Jupyter + Tinkercad](midterm-circuit-investigation.qmd) notebook on Monday and Tuesday. The Tinkercad build is the Life Checkpoint two-loop circuit, not the game board. Submit the notebook, Tinkercad URL, screenshot, and any missing course work through the assigned Classroom posts.
 :::
 
 ::: {.callout-note title="Core workflow"}

@@ -10,7 +10,7 @@ execute: {enabled: false}
 ---
 
 ::: {.callout-important title="Play first"}
-This is a short clickable game. There is no written response. Complete all three levels, then continue to the Life Checkpoint.
+Finish the three levels and make one small code change. Then move to the Life Checkpoint assignment.
 :::
 
 ## Open the game
@@ -19,9 +19,9 @@ This is a short clickable game. There is no written response. Complete all three
 
 1. Click **[PLAY CIRCUIT QUEST IN JUPYTERLITE](https://jupyter.org/try-jupyter/lab/index.html?fromURL=https%3A%2F%2Fandrewandrade.ca%2Ftech-edu-resources%2Fassets%2Ftej-computational%2Fnotebooks%2F09a-circuit-quest.ipynb){target="_blank"}**.
 2. Choose **Python (Pyodide)** if Jupyter asks for a kernel.
-3. Run the collapsed setup cell with **Shift+Enter**.
-4. Run **Start Circuit Quest**.
-5. Play the board that appears below the cell.
+3. Run the setup cell.
+4. Change the team name and one colour in **Make it yours**.
+5. Run the play cell and finish all three levels.
 
 ### Download and upload method
 
@@ -32,13 +32,13 @@ If the direct link does not open the notebook:
 3. Select **Upload Files** and choose `09a-circuit-quest.ipynb`.
 4. Double-click the uploaded file and choose **Python (Pyodide)**.
 
-## How to play
+## What to do
 
-1. Click a blue wire tile to rotate it.
-2. Trace the path from the battery.
-3. Connected tiles glow green.
-4. Light every lamp to finish the level.
-5. Use **Hint** or **Reset level** whenever you need them.
+1. Change `TEAM_NAME`.
+2. Change one colour word. Try `hotpink`, `orange`, `violet`, `gold`, `cyan`, or `lime`.
+3. Run the play cell.
+4. Click a wire tile to rotate it. Connected tiles glow green.
+5. Light every lamp. Use **Hint** or **Reset level** if needed.
 
 The game contains three small levels:
 
@@ -48,24 +48,26 @@ The game contains three small levels:
 | 2. Route around the corner | Build a complete path through a 3 by 3 grid. |
 | 3. Power two lamps | Rotate a junction and power two branches. |
 
-::: {.callout-note title="The setup code is collapsed"}
-You do not need to understand the whole game engine. Run it once. The game is an example of what Python can build from variables, lists, functions, conditions, loops, and button events.
+::: {.callout-note title="Your code is part of the game"}
+The game displays the team name and colours you put in the code. Leave the collapsed game engine alone for now.
 :::
 
-## What the game teaches
+## What happens next
 
-- A lamp needs a complete path to the source.
-- A rotated wire can create an open circuit.
-- A junction can send current into more than one branch.
-- A program can test every connection and provide immediate feedback.
+Circuit Quest is the warm-up. **Do not rebuild the tile board in Tinkercad.**
 
-After the game, continue to the [Life Checkpoint Upgrade](midterm-circuit-investigation.qmd).
+1. Open the [Life Checkpoint Upgrade instructions](midterm-circuit-investigation.qmd).
+2. Open the Life Checkpoint notebook and correct the checkpoint work in Jupyter.
+3. Build the checkpoint's two-loop circuit in Tinkercad: $12\,\mathrm{V}$ and $5\,\mathrm{V}$ sources with $5\,\mathrm{k\Omega}$, $7\,\mathrm{k\Omega}$, and $2\,\mathrm{k\Omega}$ resistors.
+4. Compare the Tinkercad currents with the Python answers.
+
+**[OPEN THE LIFE CHECKPOINT ASSIGNMENT](midterm-circuit-investigation.qmd)**
 
 ## Troubleshooting
 
 | Problem | Fix |
 |---|---|
-| No board appears | Run the collapsed setup cell, then run **Start Circuit Quest** again. |
+| No board appears | Run the setup, team-and-colours, and play cells in order. |
 | Buttons appear as plain text | Select **Python (Pyodide)** as the kernel. |
 | A lamp stays off | Follow the green path and rotate the first blue tile after it. |
 | You cannot find the mistake | Select **Hint**. |
