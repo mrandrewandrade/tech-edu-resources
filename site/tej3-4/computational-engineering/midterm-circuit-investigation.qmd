@@ -53,10 +53,11 @@ Try Jupyter runs inside the browser. Complete the Python cells in the notebook; 
 The notebook begins with a visual **Circuit Grid**:
 
 1. **Complete the circuit:** change one number in a pixel grid. An open path stays red; a closed path lights the lamp and gives an immediate success message.
-2. **Bug Hunt:** repair a broken resistance value by recognizing when Python is treating a number as text.
-3. **Customize the Lab:** change the circuit-lab title card and colours.
-4. **Unlock the Checkpoint:** correct Python calculations produce a `CIRCUIT VERIFIED` screen.
-5. **Tinkercad Boss Level:** enter the three measured currents. If they agree with Python, the notebook displays `SIMULATION MATCH: LIFE CHECKPOINT 100% AVAILABLE`.
+2. **Tune the current:** try four resistor values and use the visual meter to land in the green safe zone.
+3. **Bug Hunt:** repair a broken resistance value by recognizing when Python is treating a number as text.
+4. **Customize the Lab:** change the circuit-lab title card and colours.
+5. **Unlock the Checkpoint:** correct Python calculations produce a `CIRCUIT VERIFIED` screen.
+6. **Tinkercad Boss Level:** enter the three measured currents. If they agree with Python, the notebook displays `SIMULATION MATCH: LIFE CHECKPOINT 100% AVAILABLE`.
 
 The warm-up teaches the same Python tools used in the engineering work:
 

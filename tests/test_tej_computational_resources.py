@@ -115,6 +115,8 @@ class TejComputationalResourceTests(unittest.TestCase):
             "Working demonstration: Circuit Grid",
             "OPEN CIRCUIT",
             "CIRCUIT COMPLETE",
+            "Tune the current",
+            "SAFE RANGE - LAMP ON",
             "BUG FOUND",
             "circuit-lab title card",
             "life-checkpoint-series.svg",
