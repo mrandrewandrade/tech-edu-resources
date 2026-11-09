@@ -74,7 +74,7 @@ After the game, continue to the [Life Checkpoint Upgrade](midterm-circuit-invest
 
 ## Source note
 
-The activity adapts the rotating-tile idea used by circuit-path and Netwalk-style puzzles. It uses `ipywidgets`, which is included in the official Try Jupyter Python environment. The circuit levels and notebook implementation are original course materials.
+The activity adapts the rotating-tile idea used by circuit-path and Netwalk-style puzzles. It uses `ipywidgets`; the setup cell installs it automatically when the browser environment does not already have it. The circuit levels and notebook implementation are original course materials.
 
 ## Help improve this lesson (optional)
 
