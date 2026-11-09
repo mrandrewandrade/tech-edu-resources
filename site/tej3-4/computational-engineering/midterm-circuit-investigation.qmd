@@ -25,13 +25,72 @@ Use a fake name only in public examples. Keep your student number, class code, a
 - I can arrange three equations as $A\mathbf{x}=\mathbf{b}$ and solve them with NumPy.
 - I can build the same circuit in Tinkercad and compare predicted and simulated values.
 
+## Bridge from the Life Checkpoint
+
+The Life Checkpoint and the midterm use the same method, but they are not the same circuit. The bridge work makes the change explicit before the new assessment begins.
+
+| Life Checkpoint | Midterm extension |
+|---|---|
+| three labelled currents and two loops | three labelled currents and two loops |
+| $I_1$ enters the centre node; $I_2$ and $I_3$ leave | $I_1$ and $I_2$ enter the top node; $I_3$ leaves |
+| substitute $I_3=I_1-I_2$ and solve two unknowns | keep $I_1$, $I_2$, and $I_3$ as unknowns |
+| two KVL rows form a $2\times2$ system | one KCL row and two KVL rows form a $3\times3$ system |
+
+Do not reuse a memorized KCL equation. Read the arrows first. The direction of $I_2$ changes between the two diagrams.
+
+### Monday: checkpoint correction and LaTeX
+
+Work independently in the midterm notebook:
+
+1. Run the setup cell and complete the short LaTeX example.
+2. Use the checkpoint diagram below to type the supplied KCL and two standard-form equations in a Markdown cell.
+3. Type the $2\times2$ matrix in LaTeX.
+4. Run the supplied NumPy bridge cell and confirm $I_1=2\,\mathrm{mA}$, $I_2=1\,\mathrm{mA}$, and $I_3=1\,\mathrm{mA}$.
+5. Stop before the **Three-current challenge** unless the teacher launches it.
+
+![Life Checkpoint circuit with 12 V and 5 V sources, 5 kilohm and 7 kilohm upper resistors, a 2 kilohm shared resistor, and currents I1, I2, and I3.](../../assets/electronics/schematics/life-checkpoint-two-loop-clean.png){fig-alt="Life Checkpoint circuit with two sources, three resistors, and labelled current arrows."}
+
+The checkpoint correction uses
+
+$$
+I_1=I_2+I_3,
+$$
+
+$$
+7I_1-2I_2=12,
+$$
+
+$$
+-2I_1+9I_2=5.
+$$
+
+These become
+
+$$
+\begin{bmatrix}7&-2\\-2&9\end{bmatrix}
+\begin{bmatrix}I_1\\I_2\end{bmatrix}
+=
+\begin{bmatrix}12\\5\end{bmatrix}.
+$$
+
+### Tuesday: verify the checkpoint circuit in Tinkercad
+
+1. Open the assigned Tinkercad starter. It already contains two supplies, three resistors, and a multimeter.
+2. Build the checkpoint circuit shown above using $12\,\mathrm{V}$, $5\,\mathrm{V}$, $5\,\mathrm{k\Omega}$, $7\,\mathrm{k\Omega}$, and $2\,\mathrm{k\Omega}$.
+3. Follow the [Tinkercad wiring and measurement guide](../circuits/tinkercad-circuits.qmd).
+4. Start the simulation, measure one resistor voltage, and calculate its current using $I=V/R$.
+5. Save the design as `studentnumber-lastname-checkpoint-bridge` and record its URL and one screenshot in the notebook.
+6. Keep this working design. On Wednesday, duplicate it before changing values for the midterm.
+
+The Monday and Tuesday evidence is the first part of the same notebook, not a separate assignment.
+
 ## This week's plan
 
 | Day | Main work | Evidence to save |
 |---|---|---|
-| Monday | Open the notebook; learn the five LaTeX patterns; define the currents; write KCL; isolate both loops; derive both KVL equations; build the $3\times3$ matrix | rendered LaTeX, Equations 1–3, and completed coefficient table |
-| Tuesday | Open the attached Tinkercad starter; set the values; arrange and wire the circuit; simulate and measure | saved simulation and clear meter evidence |
-| Wednesday | Solve with NumPy; check Ohm's law and power; compare the calculated and simulated values | currents, residuals, power, and comparison table |
+| Monday | Independently correct the Life Checkpoint in LaTeX and run the supplied $2\times2$ NumPy bridge | rendered checkpoint equations, matrix, and clean current values |
+| Tuesday | Independently build and measure the checkpoint circuit in Tinkercad | checkpoint circuit URL and one meter screenshot |
+| Wednesday | Teacher launch: compare current arrows, duplicate the working circuit, derive the new KCL/KVL equations, and build the $3\times3$ midterm matrix | Equations 1–3, coefficient table, and renamed midterm simulation |
 | Thursday | Restart and run all; fix errors; complete and submit missing course work | notebook, Tinkercad URL, and screenshot |
 
 If you finish early, use the remaining time to complete missing work.
@@ -79,6 +138,8 @@ $$
 Do not submit a screenshot of handwritten math in place of the required LaTeX cells.
 
 ## 3. The circuit problem
+
+Begin this section on Wednesday after the checkpoint bridge has been checked.
 
 The two sources feed the top node. Use the current arrows shown. Do not change an arrow after beginning the equations.
 
