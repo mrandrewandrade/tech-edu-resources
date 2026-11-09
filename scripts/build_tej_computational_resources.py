@@ -518,7 +518,14 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
 def circuit_quest_notebook() -> dict[str, object]:
     setup = code(
         """import copy
-import ipywidgets as widgets
+
+try:
+    import ipywidgets as widgets
+except ModuleNotFoundError:
+    import micropip
+    print("Preparing the game. This may take a few seconds...")
+    await micropip.install("ipywidgets>=8.1,<9")
+    import ipywidgets as widgets
 
 from IPython.display import display
 
