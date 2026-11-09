@@ -515,6 +515,330 @@ def life_checkpoint_upgrade_notebook() -> dict[str, object]:
     )
 
 
+def circuit_quest_notebook() -> dict[str, object]:
+    setup = code(
+        """import copy
+import ipywidgets as widgets
+
+from IPython.display import display
+
+
+# Direction bits: north, east, south, west.
+NORTH, EAST, SOUTH, WEST = 1, 2, 4, 8
+DIRECTIONS = (NORTH, EAST, SOUTH, WEST)
+OPPOSITE = {NORTH: SOUTH, EAST: WEST, SOUTH: NORTH, WEST: EAST}
+STEP = {NORTH: (-1, 0), EAST: (0, 1), SOUTH: (1, 0), WEST: (0, -1)}
+
+POWERED_COLOUR = "#b8ff5a"
+WIRE_COLOUR = "#35bde0"
+BOARD_COLOUR = "#17202a"
+LAMP_COLOUR = "#ffd23f"
+
+GLYPH = {
+    0: " ", NORTH: "╵", EAST: "╴", SOUTH: "╷", WEST: "╶",
+    NORTH | SOUTH: "│", EAST | WEST: "─",
+    NORTH | EAST: "└", EAST | SOUTH: "┌",
+    SOUTH | WEST: "┐", WEST | NORTH: "┘",
+    NORTH | EAST | SOUTH: "├", EAST | SOUTH | WEST: "┬",
+    SOUTH | WEST | NORTH: "┤", WEST | NORTH | EAST: "┴",
+    NORTH | EAST | SOUTH | WEST: "┼",
+}
+
+
+def rotate(bits, turns=1):
+    for _ in range(turns % 4):
+        bits = ((bits << 1) & 15) | ((bits >> 3) & 1)
+    return bits
+
+
+def tile(kind="blank", solved=0, turns=0, locked=False):
+    return {"kind": kind, "solved": solved, "turns": turns, "locked": locked}
+
+
+B = "battery"
+W = "wire"
+L = "lamp"
+X = "blank"
+
+LEVELS = [
+    {
+        "title": "One turn to power",
+        "message": "Rotate the middle wire so the battery can reach the lamp.",
+        "board": [
+            [tile(B, EAST, locked=True), tile(W, EAST | WEST, turns=1), tile(L, WEST, locked=True)],
+            [tile(X), tile(X), tile(X)],
+        ],
+    },
+    {
+        "title": "Route around the corner",
+        "message": "Build one continuous path. Every wire must meet the next wire.",
+        "board": [
+            [tile(B, EAST, locked=True), tile(W, EAST | WEST, turns=1), tile(W, SOUTH | WEST, turns=3)],
+            [tile(X), tile(X), tile(W, NORTH | SOUTH, turns=1)],
+            [tile(L, EAST, locked=True), tile(W, EAST | WEST, turns=1), tile(W, NORTH | WEST, turns=2)],
+        ],
+    },
+    {
+        "title": "Power two lamps",
+        "message": "Use the branch to send power to both lamps.",
+        "board": [
+            [tile(X), tile(W, EAST | SOUTH, turns=2), tile(L, WEST, locked=True)],
+            [tile(B, EAST, locked=True), tile(W, NORTH | EAST | WEST, turns=2), tile(L, WEST, locked=True)],
+            [tile(X), tile(X), tile(X)],
+        ],
+    },
+]
+
+assert len(LEVELS) == 3
+
+
+class CircuitQuest:
+    def __init__(self):
+        self.level_index = 0
+        self.moves = 0
+        self.board = []
+        self.buttons = {}
+        self.header = widgets.HTML()
+        self.instructions = widgets.HTML()
+        self.status = widgets.HTML()
+        self.reset_button = widgets.Button(description="Reset level", button_style="warning")
+        self.hint_button = widgets.Button(description="Hint")
+        self.next_button = widgets.Button(description="Next level", button_style="success", disabled=True)
+        self.reset_button.on_click(self._reset_clicked)
+        self.hint_button.on_click(self._hint_clicked)
+        self.next_button.on_click(self._next_clicked)
+        self.controls = widgets.HBox(
+            [self.reset_button, self.hint_button, self.next_button],
+            layout=widgets.Layout(gap="8px"),
+        )
+        self.grid_holder = widgets.VBox()
+        self.view = widgets.VBox(
+            [self.header, self.instructions, self.grid_holder, self.status, self.controls],
+            layout=widgets.Layout(border="2px solid #35bde0", padding="14px", width="fit-content"),
+        )
+        self.load_level(0)
+
+    def show(self):
+        display(self.view)
+
+    def load_level(self, level_index):
+        self.level_index = level_index
+        self.moves = 0
+        level = LEVELS[level_index]
+        self.board = []
+        for row in level["board"]:
+            new_row = []
+            for specification in row:
+                current = copy.deepcopy(specification)
+                current["bits"] = rotate(current["solved"], current["turns"])
+                new_row.append(current)
+            self.board.append(new_row)
+        self._build_buttons()
+        self.refresh()
+
+    def _build_buttons(self):
+        self.buttons = {}
+        button_list = []
+        for row_number, row in enumerate(self.board):
+            for column_number, square in enumerate(row):
+                button = widgets.Button(
+                    description="",
+                    tooltip=f"Row {row_number + 1}, column {column_number + 1}",
+                    layout=widgets.Layout(width="64px", height="64px", font_size="28px"),
+                )
+                if square["kind"] == X:
+                    button.disabled = True
+                elif not square["locked"]:
+                    button.on_click(
+                        lambda unused, row=row_number, column=column_number: self.turn(row, column)
+                    )
+                self.buttons[(row_number, column_number)] = button
+                button_list.append(button)
+        columns = len(self.board[0])
+        grid = widgets.GridBox(
+            button_list,
+            layout=widgets.Layout(
+                grid_template_columns=f"repeat({columns}, 64px)",
+                grid_gap="6px",
+            ),
+        )
+        self.grid_holder.children = (grid,)
+
+    def _powered_squares(self):
+        source = None
+        for row_number, row in enumerate(self.board):
+            for column_number, square in enumerate(row):
+                if square["kind"] == B:
+                    source = (row_number, column_number)
+        powered = set()
+        if source is None:
+            return powered
+        queue = [source]
+        powered.add(source)
+        while queue:
+            row_number, column_number = queue.pop(0)
+            bits = self.board[row_number][column_number]["bits"]
+            for direction in DIRECTIONS:
+                if not bits & direction:
+                    continue
+                row_step, column_step = STEP[direction]
+                neighbour = (row_number + row_step, column_number + column_step)
+                neighbour_row, neighbour_column = neighbour
+                if not (0 <= neighbour_row < len(self.board)):
+                    continue
+                if not (0 <= neighbour_column < len(self.board[0])):
+                    continue
+                neighbour_bits = self.board[neighbour_row][neighbour_column]["bits"]
+                if neighbour_bits & OPPOSITE[direction] and neighbour not in powered:
+                    powered.add(neighbour)
+                    queue.append(neighbour)
+        return powered
+
+    def _won(self, powered):
+        lamps = {
+            (row_number, column_number)
+            for row_number, row in enumerate(self.board)
+            for column_number, square in enumerate(row)
+            if square["kind"] == L
+        }
+        return bool(lamps) and lamps.issubset(powered)
+
+    def turn(self, row_number, column_number):
+        square = self.board[row_number][column_number]
+        if square["kind"] != X and not square["locked"]:
+            square["bits"] = rotate(square["bits"])
+            self.moves += 1
+            self.refresh()
+
+    def refresh(self):
+        level = LEVELS[self.level_index]
+        powered = self._powered_squares()
+        won = self._won(powered)
+        self.header.value = (
+            f"<h2 style='margin:0;color:#35bde0'>⚡ Circuit Quest: Level {self.level_index + 1}/3</h2>"
+            f"<h3 style='margin:4px 0'>{level['title']}</h3>"
+        )
+        self.instructions.value = f"<p style='font-size:16px'>{level['message']} Click a wire to rotate it.</p>"
+        for position, button in self.buttons.items():
+            row_number, column_number = position
+            square = self.board[row_number][column_number]
+            kind = square["kind"]
+            if kind == B:
+                button.description = "🔋"
+            elif kind == L:
+                button.description = "💡" if position in powered else "○"
+            else:
+                button.description = GLYPH.get(square["bits"], "?")
+            if kind == X:
+                button.style.button_color = BOARD_COLOUR
+            elif position in powered and kind == L:
+                button.style.button_color = LAMP_COLOUR
+            elif position in powered:
+                button.style.button_color = POWERED_COLOUR
+            else:
+                button.style.button_color = WIRE_COLOUR
+        if won:
+            if self.level_index == len(LEVELS) - 1:
+                self.status.value = (
+                    f"<h3 style='color:#43a047'>🎉 QUEST COMPLETE in {self.moves} moves! "
+                    "Both lamps have power.</h3>"
+                )
+                self.next_button.description = "Quest complete"
+                self.next_button.disabled = True
+            else:
+                self.status.value = (
+                    f"<h3 style='color:#43a047'>✅ LEVEL COMPLETE in {self.moves} moves!</h3>"
+                )
+                self.next_button.description = "Next level"
+                self.next_button.disabled = False
+        else:
+            self.status.value = f"<p><b>Moves:</b> {self.moves} &nbsp; Lamp off. Keep rotating.</p>"
+            self.next_button.description = "Next level"
+            self.next_button.disabled = True
+
+    def _reset_clicked(self, unused):
+        self.load_level(self.level_index)
+
+    def _hint_clicked(self, unused):
+        for row_number, row in enumerate(self.board):
+            for column_number, square in enumerate(row):
+                if not square["locked"] and square["kind"] != X:
+                    if square["bits"] != square["solved"]:
+                        self.status.value = (
+                            f"<p style='color:#f59e0b'><b>Hint:</b> Try row {row_number + 1}, "
+                            f"column {column_number + 1}.</p>"
+                        )
+                        return
+        self.status.value = "<p>Hint: trace the glowing path from the battery.</p>"
+
+    def _next_clicked(self, unused):
+        if self.level_index < len(LEVELS) - 1:
+            self.load_level(self.level_index + 1)
+"""
+    )
+    setup["metadata"] = {"jupyter": {"source_hidden": True}, "tags": ["game-engine"]}
+
+    return notebook(
+        "Circuit Quest: Power the Grid",
+        "Rotate circuit tiles, complete three paths, and see how power travels through a branch.",
+        "No coding experience is required. You only need to run a cell and click buttons.",
+        [
+            md(
+                "## Working demonstration: play before you code\n\n"
+                "This is a short game, not a written assignment. Run the two code cells below. The large setup cell "
+                "is collapsed on purpose; you do not need to understand it yet.\n\n"
+                "### How to play\n\n"
+                "1. Click a blue wire tile to rotate it.\n"
+                "2. Trace the path from the battery. Connected tiles glow green.\n"
+                "3. Light every lamp.\n"
+                "4. Use **Hint** or **Reset level** whenever you need them.\n"
+                "5. Finish all three levels.\n"
+            ),
+            setup,
+            md(
+                "## Start Circuit Quest\n\n"
+                "Run this cell. The clickable game board appears directly below it.\n"
+            ),
+            code(
+                "quest = CircuitQuest()\n"
+                "quest.show()\n"
+                "print('Game ready. Click the wire tiles above.')\n"
+            ),
+            md(
+                "## Optional colour mod\n\n"
+                "After playing, change one colour code and run this cell. This is optional. If the colour causes an "
+                "error, use **Undo** or copy the original value back.\n"
+            ),
+            code(
+                "# Optional challenge: change one quoted colour, then run the cell.\n"
+                "POWERED_COLOUR = '#b8ff5a'\n"
+                "WIRE_COLOUR = '#35bde0'\n"
+                "quest.refresh()\n"
+                "assert POWERED_COLOUR.startswith('#') and len(POWERED_COLOUR) == 7\n"
+                "print('Colour mod applied.')\n"
+            ),
+            md(
+                "## What the game showed\n\n"
+                "- A lamp needs a complete path back to the source.\n"
+                "- A rotated wire can create an open circuit.\n"
+                "- A junction can send current into more than one branch.\n"
+                "- The computer checks connections after every move and gives immediate feedback.\n\n"
+                "Continue to the Life Checkpoint notebook after the final level. No separate written response is "
+                "required unless the teacher asks for one.\n"
+            ),
+            md(
+                "## Common errors\n\n"
+                "- No board appears: run the collapsed setup cell, then run **Start Circuit Quest** again.\n"
+                "- Buttons show as text: confirm that **Python (Pyodide)** is the selected kernel.\n"
+                "- A lamp stays off: follow the green path and rotate the first blue tile after it.\n"
+                "- The game seems stuck: click **Hint** or **Reset level**.\n"
+                "- The notebook was reopened: restart the kernel and run both game cells again.\n"
+            ),
+            *IMPROVEMENT_FEEDBACK,
+        ],
+    )
+
+
 def notebooks() -> dict[str, dict[str, object]]:
     n0 = beginner_notebook(
         "Notebook 0: Python First Steps",
@@ -2190,6 +2514,8 @@ def notebooks() -> dict[str, dict[str, object]]:
     # This week's distributed notebook is the two-day Life Checkpoint upgrade.
     n9 = life_checkpoint_upgrade_notebook()
 
+    circuit_quest = circuit_quest_notebook()
+
     return {
         "00-python-first-steps.ipynb": n0,
         "01-engineering-calculator.ipynb": n1,
@@ -2202,6 +2528,7 @@ def notebooks() -> dict[str, dict[str, object]]:
         "07-rc-op-amp-calculus-bridge.ipynb": n7,
         "08-electronic-components-from-zero.ipynb": n8,
         "09-midterm-three-current-circuit.ipynb": n9,
+        "09a-circuit-quest.ipynb": circuit_quest,
     }
 
 
@@ -2216,6 +2543,7 @@ CSV_TEXT = """trial,voltage_V,resistance_ohm,measured_current_mA,source
 
 
 REQUIREMENTS_TEXT = """jupyterlab>=4.2,<5
+ipywidgets>=8.1,<9
 numpy>=2.0,<3
 pandas>=2.2,<3
 matplotlib>=3.9,<4
@@ -2257,7 +2585,7 @@ def build_collection_zip() -> None:
     shutil.copytree(DATA_ROOT, stage / "data")
     shutil.copy2(ASSET_ROOT / "requirements-jupyter.txt", stage / "requirements-jupyter.txt")
     (stage / "README.txt").write_text(
-        "Open the eleven notebooks in order or use the notebook matched to the current electronics lesson.\n"
+        "Open the twelve notebooks in order or use the notebook matched to the current electronics lesson.\n"
         "Upload data/circuit-measurements.csv beside Notebook 5. Notebook 7 works without physical hardware.\n"
         "For local JupyterLab, create a virtual environment and install requirements-jupyter.txt.\n"
         "Browser storage is not a backup: download work after every JupyterLite session.\n",

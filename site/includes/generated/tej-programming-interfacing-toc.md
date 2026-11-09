@@ -8,7 +8,7 @@
       <input id="tej-programming-interfacing-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 8 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 9 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,9 +18,9 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="8" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="programming-interfacing" data-bs-total-lessons="9" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">9. Computational Engineering</a><span data-bs-learn-group-count>8 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">9. Computational Engineering</a><span data-bs-learn-group-count>9 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Python Engineering Notebooks with JupyterLite&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Open, run, edit, save, download, and submit engineering notebooks in a browser.&quot;, &quot;The browser workflow works without a local install or new account when the school permits JupyterLite.&quot;, &quot;Notebook Bundle&quot;]">
@@ -31,9 +31,17 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a></p>
       </details>
     </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Circuit Quest: Power the Grid&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Rotate circuit tiles, complete three paths, light lamps, and see how a branch carries power.&quot;, &quot;A short clickable game gives students an immediate success experience in Jupyter before the longer circuit assignment.&quot;, &quot;Circuit Quest Notebook&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Circuit Quest: Power the Grid"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="circuit-quest.html">2. Circuit Quest: Power the Grid</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Rotate circuit tiles, complete three paths, light lamps, and see how a branch carries power.</p>
+        <p>A short clickable game gives students an immediate success experience in Jupyter before the longer circuit assignment.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/09a-circuit-quest.ipynb">Circuit Quest Notebook</a></p>
+      </details>
+    </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assignment: Python First Steps&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Start from zero with notebook cells, printing, calculator operations, variables, four basic types, lists, and one small NumPy array.&quot;, &quot;Students learn the minimum Python and Jupyter vocabulary needed before the larger NumPy and circuit notebooks.&quot;, &quot;Python First Steps Notebook&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Assignment: Python First Steps"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-first-steps.html">2. Assignment: Python First Steps</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Assignment: Python First Steps"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-first-steps.html">3. Assignment: Python First Steps</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Start from zero with notebook cells, printing, calculator operations, variables, four basic types, lists, and one small NumPy array.</p>
         <p>Students learn the minimum Python and Jupyter vocabulary needed before the larger NumPy and circuit notebooks.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/00-python-first-steps.ipynb">Python First Steps Notebook</a></p>
@@ -41,7 +49,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Run Python and Jupyter on Your Own Computer&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Choose a Jupyter route for Windows with WSL, macOS, Linux, native Windows, or Google Colab.&quot;, &quot;Local Jupyter gives students more control over files, packages, and hardware; Colab remains a no-install fallback.&quot;, &quot;Notebook Requirements&quot;, &quot;Google Colab&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Run Python and Jupyter on Your Own Computer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="local-python-jupyter.html">3. Run Python and Jupyter on Your Own Computer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Run Python and Jupyter on Your Own Computer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="local-python-jupyter.html">4. Run Python and Jupyter on Your Own Computer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Choose a Jupyter route for Windows with WSL, macOS, Linux, native Windows, or Google Colab.</p>
         <p>Local Jupyter gives students more control over files, packages, and hardware; Colab remains a no-install fallback.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/requirements-jupyter.txt">Notebook Requirements</a> <a class="ter-resource-badge" href="https://colab.research.google.com/">Google Colab</a></p>
@@ -49,7 +57,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assignment: Python and NumPy Foundations&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Continue from Python basics to NumPy arrays, plotting, documentation lookup, and evidence-based debugging before circuit linear algebra.&quot;, &quot;Students complete a resistor investigation with vectorized calculations, a reusable function, assertions, a graph, Markdown explanations, and one documentation-driven repair.&quot;, &quot;Python and NumPy Notebook&quot;, &quot;NumPy Documentation&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Assignment: Python and NumPy Foundations"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-numpy-foundations.html">4. Assignment: Python and NumPy Foundations</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Assignment: Python and NumPy Foundations"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="python-numpy-foundations.html">5. Assignment: Python and NumPy Foundations</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Continue from Python basics to NumPy arrays, plotting, documentation lookup, and evidence-based debugging before circuit linear algebra.</p>
         <p>Students complete a resistor investigation with vectorized calculations, a reusable function, assertions, a graph, Markdown explanations, and one documentation-driven repair.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/01-engineering-calculator.ipynb">Python and NumPy Notebook</a> <a class="ter-resource-badge" href="https://numpy.org/doc/stable/">NumPy Documentation</a></p>
@@ -57,7 +65,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Find Documentation and Ask for Programming Help&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Reproduce a problem, search official documentation and Stack Overflow, and ask a complete technical question.&quot;, &quot;Students learn to provide minimal code, exact errors, environment details, attempted fixes, sources, and a reasoned hypothesis when requesting help.&quot;, &quot;Stack Overflow: How to Ask&quot;, &quot;pandas Documentation&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Find Documentation and Ask for Programming Help"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="finding-documentation-and-asking-for-help.html">5. Find Documentation and Ask for Programming Help</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Find Documentation and Ask for Programming Help"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="finding-documentation-and-asking-for-help.html">6. Find Documentation and Ask for Programming Help</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Reproduce a problem, search official documentation and Stack Overflow, and ask a complete technical question.</p>
         <p>Students learn to provide minimal code, exact errors, environment details, attempted fixes, sources, and a reasoned hypothesis when requesting help.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://stackoverflow.com/help/how-to-ask">Stack Overflow: How to Ask</a> <a class="ter-resource-badge" href="https://pandas.pydata.org/docs/">pandas Documentation</a></p>
@@ -65,7 +73,7 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Assignment: From Two Loops to a Matrix&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Derive two signed KVL equations, arrange them in matrix form, and solve the same system numerically and symbolically.&quot;, &quot;The guided bridge teaches the missing step between loop traversal and a reproducible computational solution without creating another five-question package.&quot;, &quot;Printable Two-Loop Guide&quot;, &quot;Two-Loop Matrix Notebook&quot;, &quot;Notebook Bundle&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Assignment: From Two Loops to a Matrix"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="kirchhoff-jupyter-assignment.html">6. Assignment: From Two Loops to a Matrix</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Assignment: From Two Loops to a Matrix"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="kirchhoff-jupyter-assignment.html">7. Assignment: From Two Loops to a Matrix</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Derive two signed KVL equations, arrange them in matrix form, and solve the same system numerically and symbolically.</p>
         <p>The guided bridge teaches the missing step between loop traversal and a reproducible computational solution without creating another five-question package.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/electronics/handouts/two-loop-to-matrix-bridge.pdf">Printable Two-Loop Guide</a> <a class="ter-resource-badge" href="../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb">Two-Loop Matrix Notebook</a> <a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a></p>
@@ -73,16 +81,16 @@
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Jupyter Electronics Lab&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.&quot;, &quot;Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.&quot;, &quot;Notebook Bundle&quot;, &quot;RC and Op-Amp Calculus Notebook&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Jupyter Electronics Lab"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="jupyter-electronics-lab.html">7. Jupyter Electronics Lab</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Jupyter Electronics Lab"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="jupyter-electronics-lab.html">8. Jupyter Electronics Lab</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Complete a simulation-first electronics pathway while components, instruments, or soldered kits are unavailable.</p>
         <p>Students apply documentation, debugging, calculations, models, graphs, checks, and investigations before adding physical validation.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/tej-computational-engineering-notebooks.zip">Notebook Bundle</a> <a class="ter-resource-badge" href="../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb">RC and Op-Amp Calculus Notebook</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Life Checkpoint Upgrade: Jupyter + Tinkercad&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Have some fun with Python, digitize and correct the Life Checkpoint, solve it with NumPy, and verify the same circuit in Tinkercad.&quot;, &quot;The two-day reassessment joins the existing checkpoint, LaTeX, Python, matrices, simulation, and measurement in one opportunity to improve the checkpoint mark to 100%.&quot;, &quot;Student Notebook&quot;, &quot;Tinkercad Circuits&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="programming-interfacing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Life Checkpoint Upgrade: Jupyter + Tinkercad&quot;, &quot;Computational Engineering&quot;]" data-bs-search-body="[&quot;Digitize and correct the Life Checkpoint, solve it with NumPy, and verify the same circuit in Tinkercad.&quot;, &quot;The two-day reassessment joins the existing checkpoint, LaTeX, Python, matrices, simulation, and measurement in one opportunity to improve the checkpoint mark to 100%.&quot;, &quot;Student Notebook&quot;, &quot;Tinkercad Circuits&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Life Checkpoint Upgrade: Jupyter + Tinkercad"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="midterm-circuit-investigation.html">8. Life Checkpoint Upgrade: Jupyter + Tinkercad</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Have some fun with Python, digitize and correct the Life Checkpoint, solve it with NumPy, and verify the same circuit in Tinkercad.</p>
+        <summary aria-label="Show description for Life Checkpoint Upgrade: Jupyter + Tinkercad"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="midterm-circuit-investigation.html">9. Life Checkpoint Upgrade: Jupyter + Tinkercad</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Digitize and correct the Life Checkpoint, solve it with NumPy, and verify the same circuit in Tinkercad.</p>
         <p>The two-day reassessment joins the existing checkpoint, LaTeX, Python, matrices, simulation, and measurement in one opportunity to improve the checkpoint mark to 100%.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-computational/notebooks/09-midterm-three-current-circuit.ipynb">Student Notebook</a> <a class="ter-resource-badge" href="https://www.tinkercad.com/circuits">Tinkercad Circuits</a></p>
       </details>

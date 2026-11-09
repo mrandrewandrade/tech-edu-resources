@@ -32,9 +32,9 @@ class TejComputationalResourceTests(unittest.TestCase):
         ):
             self.assertIn(phrase, lesson)
 
-    def test_eleven_real_notebooks_have_required_learning_structure(self) -> None:
+    def test_twelve_real_notebooks_have_required_learning_structure(self) -> None:
         paths = sorted(NOTEBOOKS.glob("*.ipynb"))
-        self.assertEqual(len(paths), 11)
+        self.assertEqual(len(paths), 12)
         required = (
             "Learning goal",
             "Why it matters",
@@ -129,6 +129,22 @@ class TejComputationalResourceTests(unittest.TestCase):
             self.assertIn(phrase.lower(), checkpoint_text.lower())
         self.assertNotIn("three-current challenge", checkpoint_text.lower())
 
+        circuit_quest = json.loads((NOTEBOOKS / "09a-circuit-quest.ipynb").read_text(encoding="utf-8"))
+        circuit_quest_text = "".join(
+            "".join(cell.get("source", [])) for cell in circuit_quest["cells"]
+        )
+        for phrase in (
+            "Circuit Quest: Power the Grid",
+            "Rotate circuit tiles",
+            "LEVEL COMPLETE",
+            "QUEST COMPLETE",
+            "Power two lamps",
+            "Reset level",
+            "Hint",
+            "ipywidgets",
+        ):
+            self.assertIn(phrase.lower(), circuit_quest_text.lower())
+
     def test_downloads_and_dataset_exist(self) -> None:
         dataset = ASSETS / "tej-computational" / "data" / "circuit-measurements.csv"
         self.assertIn("measured_current_mA", dataset.read_text(encoding="utf-8"))
@@ -147,9 +163,13 @@ class TejComputationalResourceTests(unittest.TestCase):
                 archive.namelist(),
             )
             readme = archive.read("tej-computational-engineering/README.txt").decode("utf-8")
-            self.assertIn("eleven notebooks", readme)
+            self.assertIn("twelve notebooks", readme)
             self.assertIn(
                 "tej-computational-engineering/notebooks/09-midterm-three-current-circuit.ipynb",
+                archive.namelist(),
+            )
+            self.assertIn(
+                "tej-computational-engineering/notebooks/09a-circuit-quest.ipynb",
                 archive.namelist(),
             )
 

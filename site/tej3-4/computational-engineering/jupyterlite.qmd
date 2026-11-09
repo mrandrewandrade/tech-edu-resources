@@ -96,6 +96,7 @@ Do not begin with loops, functions, graphs, matrices, or documentation challenge
 | Notebook | Core task | Download |
 |---|---|---|
 | 0. Python First Steps | Cells, printing, calculator operations, variables, types, lists, and one small NumPy array | [lesson](python-first-steps.qmd) · [`.ipynb`](../../assets/tej-computational/notebooks/00-python-first-steps.ipynb) |
+| Circuit Quest | Rotate wires, complete paths, light two lamps, and see a branch work | [game](circuit-quest.qmd) · [`.ipynb`](../../assets/tej-computational/notebooks/09a-circuit-quest.ipynb) |
 | 1. Python and NumPy Foundations | Jupyter cells, variables, lists, functions, arrays, documentation, plotting, and a resistor investigation | [lesson](python-numpy-foundations.qmd) · [`.ipynb`](../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb) |
 | 2. Series and Parallel Calculations | Equivalent resistance, currents, voltage drops, and checks | [`.ipynb`](../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb) |
 | 3A. Two Loops to a Matrix | Signed loop derivations, matrix rows, NumPy, SymPy, and verification | [`.ipynb`](../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb) |
@@ -106,7 +107,7 @@ Do not begin with loops, functions, graphs, matrices, or documentation challenge
 | 7. RC, Op-Amps, and a Bridge to Calculus | Model transients, numerical slope and area, integration, differentiation, and optional XL741 evidence | [`.ipynb`](../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) |
 | 8. Optional Component Model Review | Compare resistor, capacitor, LED, transistor-switch, and op-amp models with explicit limitations; use only where review is needed | [`.ipynb`](../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb) |
 
-Download [all ten notebooks, the dataset, and local requirements as one ZIP](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
+Download [all twelve notebooks, the dataset, and local requirements as one ZIP](../../assets/tej-computational/tej-computational-engineering-notebooks.zip).
 
 The notebooks use Python's standard library plus NumPy, pandas, and Matplotlib where the task requires them. They are designed for the Pyodide kernel in the official JupyterLite demonstration and for ordinary local JupyterLab with the supplied [requirements file](../../assets/tej-computational/requirements-jupyter.txt). A school deployment may provide a different kernel or package set.
 

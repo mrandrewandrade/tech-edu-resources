@@ -19,17 +19,18 @@ Basic schematics and the five KCL/KVL questions are complete. Before circuit lin
 :::
 
 1. [Read the step-by-step JupyterLite instructions](jupyterlite.qmd): download a notebook, open JupyterLite, upload the file, run a cell, and preserve the finished work.
-2. [Complete Python First Steps](python-first-steps.qmd): print one line, use calculator operations, store variables, recognize types, select list items, and use one small NumPy array.
-3. [Run Python and Jupyter on your own computer](local-python-jupyter.qmd): use a virtual environment in WSL, native Windows, macOS, or Linux instead of depending on JupyterLite.
-4. [Complete Python and NumPy Foundations](python-numpy-foundations.qmd): practise loops, functions, arrays, filters, checks, plotting, and one documentation-driven repair.
-5. [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd): reproduce an issue, search Python, NumPy, pandas, and Stack Overflow, and write a complete technical help request.
-6. [Complete the two-loops-to-matrix assignment](kirchhoff-jupyter-assignment.qmd): derive each loop equation step by step, build the matrix, and compare NumPy with an exact SymPy solution.
-7. [Work through the Jupyter Electronics Lab](jupyter-electronics-lab.qmd): apply the skills across KCL/KVL, graphs, data, investigation, RC, op-amps, and the calculus bridge.
-8. [Complete the Life Checkpoint Upgrade](midterm-circuit-investigation.qmd): have some fun with Python, digitize and correct the checkpoint, solve it with NumPy, and verify the same circuit in Tinkercad.
-9. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
+2. [Play Circuit Quest](circuit-quest.qmd): rotate circuit tiles, complete paths, light lamps, and power a branch.
+3. [Complete Python First Steps](python-first-steps.qmd): print one line, use calculator operations, store variables, recognize types, select list items, and use one small NumPy array.
+4. [Run Python and Jupyter on your own computer](local-python-jupyter.qmd): use a virtual environment in WSL, native Windows, macOS, or Linux instead of depending on JupyterLite.
+5. [Complete Python and NumPy Foundations](python-numpy-foundations.qmd): practise loops, functions, arrays, filters, checks, plotting, and one documentation-driven repair.
+6. [Find documentation and ask for programming help](finding-documentation-and-asking-for-help.qmd): reproduce an issue, search Python, NumPy, pandas, and Stack Overflow, and write a complete technical help request.
+7. [Complete the two-loops-to-matrix assignment](kirchhoff-jupyter-assignment.qmd): derive each loop equation step by step, build the matrix, and compare NumPy with an exact SymPy solution.
+8. [Work through the Jupyter Electronics Lab](jupyter-electronics-lab.qmd): apply the skills across KCL/KVL, graphs, data, investigation, RC, op-amps, and the calculus bridge.
+9. [Complete the Life Checkpoint Upgrade](midterm-circuit-investigation.qmd): digitize and correct the checkpoint, solve it with NumPy, and verify the same circuit in Tinkercad.
+10. Continue to [Python measurement logging](../linux-operating-systems/python-data-logging.qmd) and [analysis and curve fitting](../linux-operating-systems/python-analysis-curve-fitting.qmd) when the investigation needs repeated measurements or a fitted model.
 
 ::: {.callout-important title="Current assignment"}
-Use the same [Life Checkpoint Upgrade: Jupyter + Tinkercad](midterm-circuit-investigation.qmd) notebook on Monday and Tuesday. Submit the notebook, Tinkercad URL, screenshot, and any missing course work through the assigned Classroom posts. Use [Python First Steps](python-first-steps.qmd), [Python and NumPy Foundations](python-numpy-foundations.qmd), and [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd) as support or catch-up work.
+Begin with [Circuit Quest](circuit-quest.qmd), then use the same [Life Checkpoint Upgrade: Jupyter + Tinkercad](midterm-circuit-investigation.qmd) notebook on Monday and Tuesday. Submit the notebook, Tinkercad URL, screenshot, and any missing course work through the assigned Classroom posts. Use [Python First Steps](python-first-steps.qmd), [Python and NumPy Foundations](python-numpy-foundations.qmd), and [From Two Loops to a Matrix](kirchhoff-jupyter-assignment.qmd) as support or catch-up work.
 :::
 
 ::: {.callout-note title="Core workflow"}

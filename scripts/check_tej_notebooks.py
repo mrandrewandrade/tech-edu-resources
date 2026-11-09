@@ -38,8 +38,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--pattern", default="*.ipynb", help="notebook filename glob")
     args = parser.parse_args(argv)
     paths = sorted(NOTEBOOK_ROOT.glob(args.pattern))
-    if args.pattern == "*.ipynb" and len(paths) != 11:
-        print(f"ERROR: expected 11 notebooks, found {len(paths)}", file=sys.stderr)
+    if args.pattern == "*.ipynb" and len(paths) != 12:
+        print(f"ERROR: expected 12 notebooks, found {len(paths)}", file=sys.stderr)
         return 1
     if not paths:
         print(f"ERROR: no notebooks matched {args.pattern!r}", file=sys.stderr)
