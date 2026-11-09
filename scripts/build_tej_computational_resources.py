@@ -105,6 +105,251 @@ COMMON_CLOSE = [
 ]
 
 
+def life_checkpoint_upgrade_notebook() -> dict[str, object]:
+    return notebook(
+        "Life Checkpoint Upgrade: Make It, Solve It, Check It",
+        "Use a fun Python warm-up, LaTeX, NumPy, and Tinkercad to correct and verify the Life Checkpoint.",
+        "The original Life Checkpoint, basic Jupyter cells, Ohm's law, power, schematic symbols, KCL, and KVL.",
+        [
+            md(
+                "## One assignment for Monday and Tuesday\n\n"
+                "Use this **same notebook for both days**. Download a backup before leaving each day. Rename the file "
+                "`studentnumber-lastname-life-checkpoint-upgrade.ipynb`.\n\n"
+                "**This is your opportunity to improve your Life Checkpoint mark to 100%. Correct every section, "
+                "show your calculations, and use Tinkercad and Python to verify your work.**\n\n"
+                "Submit this notebook, the direct Tinkercad URL, and one screenshot with the simulation running and "
+                "a meter reading visible.\n"
+            ),
+            md(
+                "## Two-day plan\n\n"
+                "**Monday:** complete the Jupyter warm-up, Ohm's law and power, schematic evidence, loop diagrams, and KCL.\n\n"
+                "**Tuesday:** complete both KVL derivations, the matrix, NumPy check, current dashboard, and Tinkercad verification.\n\n"
+                "If one part stops you, continue to the next part and return later.\n"
+            ),
+            md(
+                "## 1. Run the setup cell\n\n"
+                "Click the code cell and press **Shift+Enter**. Run cells from top to bottom. No Linux command is "
+                "required in JupyterLite.\n"
+            ),
+            code(
+                "import numpy as np\n"
+                "import matplotlib.pyplot as plt\n\n"
+                "print('NumPy is ready:', np.__version__)\n"
+                "print('Matplotlib is ready.')\n"
+            ),
+            md(
+                "## 2. Working demonstration: make a circuit-lab title card\n\n"
+                "Change only the three values under **EDIT THESE**. Run the cell again. The words are strings stored "
+                "in variables. The colours are stored in a list.\n"
+            ),
+            code(
+                "# EDIT THESE three values. Keep the quotation marks and brackets.\n"
+                "display_name = 'Circuit Detective'\n"
+                "lab_message = 'Make it. Solve it. Check it.'\n"
+                "card_colours = ['#6a00ff', '#00b7ff', '#ffcc00']\n\n"
+                "assert len(display_name.strip()) > 0\n"
+                "assert len(lab_message.strip()) > 0\n"
+                "assert len(card_colours) == 3\n\n"
+                "fig, ax = plt.subplots(figsize=(8, 2.5))\n"
+                "ax.set_facecolor(card_colours[0])\n"
+                "ax.text(0.5, 0.64, f\"{display_name}'s Circuit Lab\", ha='center', va='center',\n"
+                "        fontsize=24, weight='bold', color='white')\n"
+                "ax.text(0.5, 0.30, lab_message, ha='center', va='center',\n"
+                "        fontsize=15, color=card_colours[2])\n"
+                "ax.plot([0.12, 0.88], [0.10, 0.10], linewidth=8, color=card_colours[1])\n"
+                "ax.set_xlim(0, 1)\nax.set_ylim(0, 1)\nax.axis('off')\nplt.show()\n"
+                "print('Title card complete.')\n"
+            ),
+            md(
+                "### Tiny challenge\n\n"
+                "Change the displayed name, message, and three colours. Run the cell until you like the card.\n\n"
+                "**Hint:** colour names such as `'purple'`, `'deepskyblue'`, and `'gold'` work. If a colour causes "
+                "an error, read the final line and replace only that colour.\n"
+            ),
+            md(
+                "## 3. Ohm's law and power\n\n"
+                "A $12\\,\\mathrm{V}$ supply is connected across a $2.0\\,\\mathrm{k\\Omega}$ resistor. Insert a "
+                "Markdown cell below. Show the formula, substitution, answer, and unit for current and power. Use one "
+                "displayed equation for each move.\n\n"
+                "```text\n"
+                "$$I=\\frac{V}{R}$$\n"
+                "$$I=\\frac{12\\,\\mathrm{V}}{2000\\,\\mathrm{\\Omega}}$$\n"
+                "$$I=\\ldots\\,\\mathrm{A}=\\ldots\\,\\mathrm{mA}$$\n"
+                "```\n"
+            ),
+            code(
+                "# Replace the two None values with expressions using the variable names.\n"
+                "voltage_V = 12.0\n"
+                "resistance_ohm = 2000.0\n"
+                "current_A = None       # voltage_V / resistance_ohm\n"
+                "power_W = None         # voltage_V * current_A\n\n"
+                "if current_A is None or power_W is None:\n"
+                "    print('Complete current_A and power_W, then run this cell again.')\n"
+                "else:\n"
+                "    print(f'Current = {current_A:.6f} A = {current_A * 1000:.1f} mA')\n"
+                "    print(f'Power = {power_W:.3f} W = {power_W * 1000:.1f} mW')\n"
+                "    assert np.isclose(current_A, 0.006)\n"
+                "    assert np.isclose(power_W, 0.072)\n"
+                "    print(\"CHECKED: Ohm's law and power are correct.\")\n"
+            ),
+            md(
+                "## 4. Digitize the schematic evidence\n\n"
+                "The original checkpoint asked for a series loop containing a $9\\,\\mathrm{V}$ source, closed switch "
+                "$S1$, resistor $R1=1\\,\\mathrm{k\\Omega}$, source polarity, and a conventional-current arrow.\n\n"
+                "![Corrected series-loop schematic with a 9 volt source, closed switch, 1 kilohm resistor, and current "
+                "arrow.](https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/life-checkpoint-series.svg)\n\n"
+                "Compare this with your original drawing. In a new Markdown cell, list what you corrected. If the "
+                "original was already complete, write `No correction needed`.\n"
+            ),
+            md(
+                "## 5. Read the two-loop circuit\n\n"
+                "![Life Checkpoint circuit with two sources, three resistors, and currents I1, I2, and I3.]"
+                "(https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/life-checkpoint-two-loop-clean.png)\n\n"
+                "Use the isolated-loop diagrams to check which components belong in each loop.\n\n"
+                "| Loop | Correct components | Your original drawing corrected? |\n"
+                "|:--|:--|:--|\n"
+                "| Loop 1 | $V_{S1}$, $R_1$, $R_3$ | type here |\n"
+                "| Loop 2 | $V_{S2}$, $R_2$, $R_3$ | type here |\n\n"
+                "![Loop 1 only.](https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/life-checkpoint-loop-1.svg)\n\n"
+                "![Loop 2 only.](https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/life-checkpoint-loop-2.svg)\n"
+            ),
+            md(
+                "## 6. KCL and KVL in LaTeX\n\n"
+                "Read the arrows. $I_1$ enters the centre node. $I_2$ and $I_3$ leave. Type the KCL equation and the "
+                "rearranged equation for $I_3$ in a Markdown cell.\n\n"
+                "Then show each KVL algebra move. Do not jump directly to standard form.\n\n"
+                "### Loop 1 scaffold\n\n"
+                "$$+12-5I_1-2I_3=0$$\n\n"
+                "Substitute your KCL expression for $I_3$, expand the brackets, and rearrange.\n\n"
+                "### Loop 2 scaffold\n\n"
+                "$$+5-7I_2+2I_3=0$$\n\n"
+                "Substitute the same expression for $I_3$, expand the brackets, and rearrange.\n\n"
+                "**Insert a Markdown cell below. Show KCL and every algebra line for both loops.**\n"
+            ),
+            md(
+                "### Restart point\n\n"
+                "If an earlier algebra line stopped you, use these standard-form equations for the remaining work. "
+                "Return and repair the derivation afterward.\n\n"
+                "$$7I_1-2I_2=12$$\n\n"
+                "$$-2I_1+9I_2=5$$\n\n"
+                "Write the matching matrix equation in a Markdown cell before entering it in Python.\n"
+            ),
+            md(
+                "## 7. Enter and solve the matrix\n\n"
+                "Replace both `None` values. Keep row order Loop 1, Loop 2 and variable order $[I_1,I_2]$.\n\n"
+                "Example syntax: `np.array([[1.0, 2.0], [3.0, 4.0]])`\n"
+            ),
+            code(
+                "A = None  # Replace with the 2 by 2 coefficient array.\n"
+                "b = None  # Replace with the two right-side values.\n\n"
+                "if A is None or b is None:\n"
+                "    currents_mA = None\n"
+                "    print('Complete A and b, then run this cell again.')\n"
+                "else:\n"
+                "    assert A.shape == (2, 2), 'A must have 2 rows and 2 columns.'\n"
+                "    assert b.shape == (2,), 'b must contain 2 values.'\n"
+                "    currents_mA = np.linalg.solve(A, b)\n"
+                "    I1_mA, I2_mA = currents_mA\n"
+                "    I3_mA = I1_mA - I2_mA\n"
+                "    residual_V = A @ currents_mA - b\n"
+                "    print(f'I1 = {I1_mA:.3f} mA')\n"
+                "    print(f'I2 = {I2_mA:.3f} mA')\n"
+                "    print(f'I3 = {I3_mA:.3f} mA')\n"
+                "    print('Residuals:', residual_V)\n"
+                "    assert np.allclose(residual_V, 0.0, atol=1e-10)\n"
+                "    assert np.allclose([I1_mA, I2_mA, I3_mA], [2.0, 1.0, 1.0])\n"
+                "    print('CHECKED: the matrix produces the Life Checkpoint currents.')\n"
+            ),
+            md(
+                "## 8. Make the current dashboard\n\n"
+                "The solved currents become a graph. Change the graph title and colours if you want. Do not change "
+                "the current values.\n"
+            ),
+            code(
+                "dashboard_title = f\"{display_name}'s Life Checkpoint\"\n"
+                "bar_colours = ['#6a00ff', '#00b7ff', '#ffcc00']\n\n"
+                "if currents_mA is None:\n"
+                "    print('Solve the matrix first.')\n"
+                "else:\n"
+                "    dashboard_currents = np.array([I1_mA, I2_mA, I3_mA])\n"
+                "    fig, ax = plt.subplots(figsize=(7, 4))\n"
+                "    bars = ax.bar(['I1', 'I2', 'I3'], dashboard_currents, color=bar_colours, edgecolor='black')\n"
+                "    ax.bar_label(bars, fmt='%.1f mA', padding=4, fontsize=12)\n"
+                "    ax.set_ylim(0, max(dashboard_currents) + 1.0)\n"
+                "    ax.set_ylabel('Current (mA)')\n"
+                "    ax.set_title(dashboard_title, weight='bold')\n"
+                "    ax.grid(axis='y', alpha=0.25)\n"
+                "    plt.show()\n"
+            ),
+            md(
+                "## 9. Independent checks\n\n"
+                "In a Markdown cell, substitute the solved currents into KCL and both standard-form KVL equations. "
+                "Show the left side and right side with units. Then run the code check below.\n"
+            ),
+            code(
+                "if currents_mA is None:\n"
+                "    print('Solve the matrix first.')\n"
+                "else:\n"
+                "    print('KCL difference:', I1_mA - I2_mA - I3_mA, 'mA')\n"
+                "    print('Loop 1 difference:', 7 * I1_mA - 2 * I2_mA - 12, 'V')\n"
+                "    print('Loop 2 difference:', -2 * I1_mA + 9 * I2_mA - 5, 'V')\n"
+                "    assert np.isclose(I1_mA, I2_mA + I3_mA)\n"
+                "    assert np.isclose(7 * I1_mA - 2 * I2_mA, 12)\n"
+                "    assert np.isclose(-2 * I1_mA + 9 * I2_mA, 5)\n"
+                "    print('CHECKED: KCL and both KVL equations agree.')\n"
+            ),
+            md(
+                "## 10. Verify the same circuit in Tinkercad\n\n"
+                "Build the Life Checkpoint circuit using $12\\,\\mathrm{V}$, $5\\,\\mathrm{V}$, "
+                "$5\\,\\mathrm{k\\Omega}$, $7\\,\\mathrm{k\\Omega}$, and $2\\,\\mathrm{k\\Omega}$. Save it as "
+                "`studentnumber-lastname-life-checkpoint`.\n\n"
+                "Measure the voltage across all three resistors. Use $I=V/R$ to calculate each current. Directly "
+                "measure at least one current with the meter in series.\n\n"
+                "| Quantity | Python prediction | Tinkercad result | absolute difference |\n"
+                "|:--|--:|--:|--:|\n"
+                "| $I_1$ (mA) | 2.0 | ___ | ___ |\n"
+                "| $I_2$ (mA) | 1.0 | ___ | ___ |\n"
+                "| $I_3$ (mA) | 1.0 | ___ | ___ |\n\n"
+                "**Tinkercad circuit URL:** paste it here  \n"
+                "**Screenshot filename:** `studentnumber-lastname-life-checkpoint.png`\n"
+            ),
+            md(
+                "## Marks: opportunity to earn 100%\n\n"
+                "| Evidence | Marks |\n"
+                "|:--|--:|\n"
+                "| Jupyter warm-up runs and is customized | 10 |\n"
+                "| Ohm's law, power, units, and simple schematic | 15 |\n"
+                "| Complete circuit, isolated loops, and KCL | 15 |\n"
+                "| KVL algebra and LaTeX shown one move at a time | 20 |\n"
+                "| Matrix, NumPy solution, dashboard, and independent checks | 20 |\n"
+                "| Tinkercad topology, measurements, URL, screenshot, and comparison | 20 |\n"
+                "| **Total** | **100** |\n\n"
+                "Correct work earns marks at every stage. An error in one section does not erase correct work later.\n"
+            ),
+            md(
+                "## Common errors and final check\n\n"
+                "- LaTeX is visible as raw text: change the cell to Markdown and press **Shift+Enter**.\n"
+                "- The graph does not appear: run the setup cell and matrix cell first.\n"
+                "- The answer is off by 1000: keep $\\mathrm{k\\Omega}$ with $\\mathrm{mA}$, or "
+                "$\\mathrm{\\Omega}$ with $\\mathrm{A}$.\n"
+                "- The matrix has the wrong shape: `A` needs two rows and two columns; `b` needs two values.\n"
+                "- Tinkercad current is zero: trace the branch and put the current meter in series.\n\n"
+                "### Final check\n\n"
+                "- [ ] My title card is customized.\n"
+                "- [ ] My Ohm's law and power work is rendered in LaTeX.\n"
+                "- [ ] My schematic corrections, loop evidence, KCL, and KVL work are complete.\n"
+                "- [ ] NumPy prints $I_1=2.0\\,\\mathrm{mA}$, $I_2=1.0\\,\\mathrm{mA}$, and "
+                "$I_3=1.0\\,\\mathrm{mA}$.\n"
+                "- [ ] My dashboard graph appears.\n"
+                "- [ ] My Tinkercad table, direct URL, and screenshot filename are present.\n"
+                "- [ ] **Kernel > Restart Kernel and Run All Cells** finishes without an unexpected error.\n"
+                "- [ ] The downloaded notebook reopens with my work and output present.\n"
+            ),
+            *IMPROVEMENT_FEEDBACK,
+        ],
+    )
+
+
 def notebooks() -> dict[str, dict[str, object]]:
     n0 = beginner_notebook(
         "Notebook 0: Python First Steps",
@@ -1519,7 +1764,7 @@ def notebooks() -> dict[str, dict[str, object]]:
         ],
     )
 
-    n9 = notebook(
+    n9_three_current_extension = notebook(
         "Midterm: Three-Current Circuit Investigation",
         "Show a three-equation circuit calculation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad.",
         "Ohm's law, power, schematic reading, KCL, KVL, Python variables and arrays, and the two-loop matrix lesson.",
@@ -1775,6 +2020,10 @@ def notebooks() -> dict[str, dict[str, object]]:
             *IMPROVEMENT_FEEDBACK,
         ],
     )
+
+    # Keep the three-current extension above for the later teacher-led lesson.
+    # This week's distributed notebook is the two-day Life Checkpoint upgrade.
+    n9 = life_checkpoint_upgrade_notebook()
 
     return {
         "00-python-first-steps.ipynb": n0,

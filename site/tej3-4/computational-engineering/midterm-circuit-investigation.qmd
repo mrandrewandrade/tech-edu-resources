@@ -1,7 +1,7 @@
 ---
-title: "Midterm Assignment: Three-Current Circuit Investigation"
-description: "Show a three-equation circuit calculation in LaTeX, solve it with NumPy, and verify the same circuit in Tinkercad."
-categories: [Python, Jupyter, LaTeX, Kirchhoff, Tinkercad, midterm]
+title: "Life Checkpoint Upgrade: Jupyter + Tinkercad"
+description: "Have some fun with Python, digitize the Life Checkpoint, correct every section, and verify the answers with NumPy and Tinkercad."
+categories: [Python, Jupyter, LaTeX, Kirchhoff, Tinkercad, reassessment]
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
@@ -9,52 +9,94 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
+::: {.callout-important title="One assignment for Monday and Tuesday"}
+Use the **same notebook for both days**. Begin with the short Jupyter activity, then improve your Life Checkpoint.
+
+**This is your opportunity to improve your Life Checkpoint mark to 100%. Correct every section, show your calculations, and use Tinkercad and Python to verify your work.**
+:::
+
 ## What you will submit
 
-1. One completed Jupyter notebook: `studentnumber-lastname-midterm-circuit.ipynb`.
-2. One saved Tinkercad circuit named `studentnumber-lastname-midterm-circuit`.
-3. The direct URL for your saved Tinkercad circuit.
-4. One screenshot with the simulation running and a meter reading visible: `studentnumber-lastname-midterm-circuit.png`.
+1. One completed notebook named `studentnumber-lastname-life-checkpoint-upgrade.ipynb`.
+2. One saved Tinkercad circuit named `studentnumber-lastname-life-checkpoint`.
+3. The direct URL for the saved Tinkercad circuit.
+4. One screenshot with the simulation running and a meter reading visible: `studentnumber-lastname-life-checkpoint.png`.
 
 Use a fake name only in public examples. Keep your student number, class code, and work inside the approved classroom systems.
 
-## Learning goals
+## Two-day plan
 
-- I can show circuit calculations with basic LaTeX in a Jupyter Markdown cell.
-- I can write one KCL equation and two KVL equations from a schematic.
-- I can arrange three equations as $A\mathbf{x}=\mathbf{b}$ and solve them with NumPy.
-- I can build the same circuit in Tinkercad and compare predicted and simulated values.
+| Day | Work in the same notebook | Evidence to save |
+|---|---|---|
+| Monday | Open and rename the notebook, complete the circuit-themed Python warm-up, then digitize Ohm's law, power, the simple schematic, the two loop diagrams, and KCL | working code, rendered calculations, and clear diagrams |
+| Tuesday | Complete the KVL algebra, matrix, NumPy solution, circuit dashboard, and Tinkercad build | checked calculations, Tinkercad URL, and meter screenshot |
 
-## Bridge from the Life Checkpoint
+If one section stops you, continue to the next section and return later.
 
-The Life Checkpoint and the midterm use the same method, but they are not the same circuit. The bridge work makes the change explicit before the new assessment begins.
+## 1. Open the notebook
 
-| Life Checkpoint | Midterm extension |
-|---|---|
-| three labelled currents and two loops | three labelled currents and two loops |
-| $I_1$ enters the centre node; $I_2$ and $I_3$ leave | $I_1$ and $I_2$ enter the top node; $I_3$ leaves |
-| substitute $I_3=I_1-I_2$ and solve two unknowns | keep $I_1$, $I_2$, and $I_3$ as unknowns |
-| two KVL rows form a $2\times2$ system | one KCL row and two KVL rows form a $3\times3$ system |
+1. Download [the Life Checkpoint Upgrade notebook](../../assets/tej-computational/notebooks/09-midterm-three-current-circuit.ipynb).
+2. Open **[JupyterLite](https://jupyter.org/try-jupyter/lab/){target="_blank"}**.
+3. Select **Upload Files** and choose the downloaded `.ipynb` file.
+4. Double-click the uploaded notebook. Choose **Python (Pyodide)** if asked.
+5. Rename it `studentnumber-lastname-life-checkpoint-upgrade.ipynb`.
+6. Work in this same file on Monday and Tuesday. Download a backup before leaving each day.
 
-Do not reuse a memorized KCL equation. Read the arrows first. The direction of $I_2$ changes between the two diagrams.
+Use the [step-by-step JupyterLite instructions](jupyterlite.qmd) if the notebook does not open.
 
-### Monday: checkpoint correction and LaTeX
+::: {.callout-note title="No Linux command is required"}
+Try Jupyter runs inside the browser. Complete the Python cells in the notebook; do not spend assignment time trying to run `apt`, `!pwd`, `!ls`, or other Linux shell commands.
+:::
 
-Work independently in the midterm notebook:
+## 2. Start with something fun
 
-1. Run the setup cell and complete the short LaTeX example.
-2. Use the checkpoint diagram below to type the supplied KCL and two standard-form equations in a Markdown cell.
-3. Type the $2\times2$ matrix in LaTeX.
-4. Run the supplied NumPy bridge cell and confirm $I_1=2\,\mathrm{mA}$, $I_2=1\,\mathrm{mA}$, and $I_3=1\,\mathrm{mA}$.
-5. Stop before the **Three-current challenge** unless the teacher launches it.
+The first notebook cells create a small circuit-lab title card. Change the displayed name, message, and colours, then run the cell again. The finished checkpoint currents later become a bar-chart dashboard.
+
+The warm-up teaches the same Python tools used in the engineering work:
+
+- a variable stores a value;
+- a list stores several values in order;
+- `print()` displays text;
+- a function reuses instructions;
+- NumPy stores the solved currents;
+- Matplotlib turns the values into a graph.
+
+The warm-up is short. Complete it, then continue directly to the Life Checkpoint.
+
+## 3. Digitize the original checkpoint
+
+The notebook contains the original tasks in order:
+
+1. Ohm's law and resistor power for a $12\,\mathrm{V}$ source and $2.0\,\mathrm{k\Omega}$ resistor;
+2. a simple series schematic with a $9\,\mathrm{V}$ source, closed switch, $1\,\mathrm{k\Omega}$ resistor, polarity, and a current arrow;
+3. the complete two-loop circuit and each loop by itself;
+4. KCL at the centre node;
+5. both KVL equations with every algebra move;
+6. the $2\times2$ matrix and NumPy solution;
+7. an independent KCL and KVL check;
+8. Tinkercad measurements.
+
+Use a **Markdown** cell for calculations. Press **Shift+Enter** to render the LaTeX.
+
+| What you need | Type this | It renders as |
+|---|---|---|
+| inline math | `$V=IR$` | $V=IR$ |
+| subscript | `$I_1$` | $I_1$ |
+| fraction | `$I=\frac{V}{R}$` | $I=\frac{V}{R}$ |
+| units | `$12\,\mathrm{V}$` | $12\,\mathrm{V}$ |
+| displayed equation | `$$V=IR$$` | $$V=IR$$ |
+
+## 4. Life Checkpoint circuit
 
 ![Life Checkpoint circuit with 12 V and 5 V sources, 5 kilohm and 7 kilohm upper resistors, a 2 kilohm shared resistor, and currents I1, I2, and I3.](../../assets/electronics/schematics/life-checkpoint-two-loop-clean.png){fig-alt="Life Checkpoint circuit with two sources, three resistors, and labelled current arrows."}
 
-The checkpoint correction uses
+Read the arrows before writing KCL. In this diagram, $I_1$ enters the centre node while $I_2$ and $I_3$ leave:
 
 $$
-I_1=I_2+I_3,
+I_1=I_2+I_3.
 $$
+
+The notebook gives restart equations after the derivation so that one algebra error does not block the remaining work:
 
 $$
 7I_1-2I_2=12,
@@ -64,276 +106,67 @@ $$
 -2I_1+9I_2=5.
 $$
 
-These become
+Students must still show how each equation was produced. NumPy then checks the completed matrix.
 
-$$
-\begin{bmatrix}7&-2\\-2&9\end{bmatrix}
-\begin{bmatrix}I_1\\I_2\end{bmatrix}
-=
-\begin{bmatrix}12\\5\end{bmatrix}.
-$$
+## 5. Build and verify in Tinkercad
 
-### Tuesday: verify the checkpoint circuit in Tinkercad
+1. Open the assigned Tinkercad Classroom starter.
+2. Set the sources to $12\,\mathrm{V}$ and $5\,\mathrm{V}$.
+3. Set the resistors to $5\,\mathrm{k\Omega}$, $7\,\mathrm{k\Omega}$, and $2\,\mathrm{k\Omega}$.
+4. Wire the exact circuit shown above.
+5. Follow the [Tinkercad wiring and measurement guide](../circuits/tinkercad-circuits.qmd).
+6. Start the simulation and measure the voltage across all three resistors.
+7. Use $I=V/R$ to obtain all three currents.
+8. Directly measure at least one current with the meter placed in series.
+9. Record the results, direct circuit URL, and screenshot filename in the notebook.
 
-1. Open the assigned Tinkercad starter. It already contains two supplies, three resistors, and a multimeter.
-2. Build the checkpoint circuit shown above using $12\,\mathrm{V}$, $5\,\mathrm{V}$, $5\,\mathrm{k\Omega}$, $7\,\mathrm{k\Omega}$, and $2\,\mathrm{k\Omega}$.
-3. Follow the [Tinkercad wiring and measurement guide](../circuits/tinkercad-circuits.qmd).
-4. Start the simulation, measure one resistor voltage, and calculate its current using $I=V/R$.
-5. Save the design as `studentnumber-lastname-checkpoint-bridge` and record its URL and one screenshot in the notebook.
-6. Keep this working design. On Wednesday, duplicate it before changing values for the midterm.
-
-The Monday and Tuesday evidence is the first part of the same notebook, not a separate assignment.
-
-## This week's plan
-
-| Day | Main work | Evidence to save |
-|---|---|---|
-| Monday | Independently correct the Life Checkpoint in LaTeX and run the supplied $2\times2$ NumPy bridge | rendered checkpoint equations, matrix, and clean current values |
-| Tuesday | Independently build and measure the checkpoint circuit in Tinkercad | checkpoint circuit URL and one meter screenshot |
-| Wednesday | Teacher launch: compare current arrows, duplicate the working circuit, derive the new KCL/KVL equations, and build the $3\times3$ midterm matrix | Equations 1–3, coefficient table, and renamed midterm simulation |
-| Thursday | Restart and run all; fix errors; complete and submit missing course work | notebook, Tinkercad URL, and screenshot |
-
-If you finish early, use the remaining time to complete missing work.
-
-## 1. Open the notebook
-
-1. Download [the Midterm Three-Current Circuit notebook](../../assets/tej-computational/notebooks/09-midterm-three-current-circuit.ipynb).
-2. Open **[JupyterLite](https://jupyter.org/try-jupyter/lab/){target="_blank"}**.
-3. Click **Upload Files**. Choose the downloaded `.ipynb` file.
-4. Double-click the uploaded notebook. Choose **Python (Pyodide)** if asked.
-5. Rename it `studentnumber-lastname-midterm-circuit.ipynb` before doing the work.
-
-Use the [step-by-step JupyterLite instructions](jupyterlite.qmd) if the notebook does not open.
-
-::: {.callout-note title="No Linux command is required"}
-Try Jupyter runs JupyterLite inside the browser. It is not a normal Linux computer. Complete the small Python environment cell in the notebook; do not spend assignment time trying to make `!pwd`, `!ls`, `apt`, or other shell commands work. Local Jupyter or WSL commands are an optional extension only.
-:::
-
-## 2. Type calculations with LaTeX
-
-Double-click a **Markdown** cell to edit it. Press **Shift+Enter** to render it.
-
-| What you need | Type this in a Markdown cell | It renders as |
-|---|---|---|
-| inline math | `$V=IR$` | $V=IR$ |
-| subscript | `$I_1$` | $I_1$ |
-| fraction | `$I=\frac{V}{R}$` | $I=\frac{V}{R}$ |
-| units | `$12\,\mathrm{V}$` | $12\,\mathrm{V}$ |
-| displayed equation | `$$V=IR$$` | $$V=IR$$ |
-
-Use one displayed line for each algebra move. For example:
-
-$$
-I=\frac{V}{R}
-$$
-
-$$
-I=\frac{5.00\,\mathrm{V}}{1.00\,\mathrm{k\Omega}}
-$$
-
-$$
-I=5.00\,\mathrm{mA}
-$$
-
-Do not submit a screenshot of handwritten math in place of the required LaTeX cells.
-
-## 3. The circuit problem
-
-Begin this section on Wednesday after the checkpoint bridge has been checked.
-
-The two sources feed the top node. Use the current arrows shown. Do not change an arrow after beginning the equations.
-
-<figure class="ter-circuit-figure" id="fig-midterm-three-current-network">
-<img src="../../assets/electronics/schematics/midterm-three-current-network.svg" alt="Two-source, three-resistor circuit. I1 flows right through the 2.2 kilohm resistor, I2 flows left through the 3.3 kilohm resistor, and I3 leaves the top node downward through the 1.0 kilohm resistor." loading="lazy">
-<figcaption><a class="ter-figure-label" href="#fig-midterm-three-current-network">Figure 1.</a> The original midterm circuit. Use $I_1$, $I_2$, and $I_3$ in this order throughout the notebook.</figcaption>
-</figure>
-
-### Equation 1: KCL at the top node
-
-Write one equation using
-
-$$
-\text{current entering}=\text{current leaving}.
-$$
-
-Then move every current term to the left so the right side is zero. Show both lines in LaTeX.
-
-### Equation 2: KVL around the left loop
-
-<figure class="ter-circuit-figure" id="fig-midterm-loop1">
-<img src="../../assets/electronics/schematics/midterm-three-current-loop1.svg" alt="Left loop isolated. It contains the 12 volt source, the 2.2 kilohm resistor carrying I1, and the 1.0 kilohm resistor carrying I3 downward." loading="lazy">
-<figcaption><a class="ter-figure-label" href="#fig-midterm-loop1">Figure 2.</a> Use only the source and two resistor drops crossed by the left loop.</figcaption>
-</figure>
-
-Show these steps in separate displayed lines:
-
-1. Source rise and resistor-voltage drops.
-2. Replace each resistor voltage with $IR$.
-3. Substitute the given values in $\mathrm{k\Omega}$ and $\mathrm{V}$.
-4. Move the current terms into the variable order $[I_1,I_2,I_3]$.
-5. Box the standard-form equation.
-
-### Equation 3: KVL around the right loop
-
-<figure class="ter-circuit-figure" id="fig-midterm-loop2">
-<img src="../../assets/electronics/schematics/midterm-three-current-loop2.svg" alt="Right loop isolated. It contains the 9 volt source, the 3.3 kilohm resistor carrying I2 to the left, and the 1.0 kilohm resistor carrying I3 downward." loading="lazy">
-<figcaption><a class="ter-figure-label" href="#fig-midterm-loop2">Figure 3.</a> Use only the source and two resistor drops crossed by the right loop.</figcaption>
-</figure>
-
-Repeat the same five steps. Keep the variable order $[I_1,I_2,I_3]$, even when one current is missing from an equation. A missing current has coefficient zero.
-
-## 4. Build the matrix
-
-Copy the coefficients from the three standard-form equations. Do not guess them from the picture.
-
-| Equation | coefficient of $I_1$ | coefficient of $I_2$ | coefficient of $I_3$ | right side |
-|---|---:|---:|---:|---:|
-| KCL |  |  |  |  |
-| left-loop KVL |  |  |  |  |
-| right-loop KVL |  |  |  |  |
-
-Then write
-
-$$
-\underbrace{\begin{bmatrix}
-a_{11}&a_{12}&a_{13}\\
-a_{21}&a_{22}&a_{23}\\
-a_{31}&a_{32}&a_{33}
-\end{bmatrix}}_{A}
-\underbrace{\begin{bmatrix}I_1\\I_2\\I_3\end{bmatrix}}_{\mathbf{x}}
-=
-\underbrace{\begin{bmatrix}b_1\\b_2\\b_3\end{bmatrix}}_{\mathbf{b}}.
-$$
-
-Replace every placeholder with your coefficients. Read each row back as an equation before running the solver.
-
-## 5. Solve and check in Python
-
-The notebook contains the code scaffold. Complete `A` and `b`, then run:
-
-```python
-currents_mA = np.linalg.solve(A, b)
-residual_V = A @ currents_mA - b
-```
-
-The residuals should be extremely close to zero. That proves the solution satisfies the equations you entered. It does **not** prove those equations match the circuit, so complete these independent checks:
-
-- KCL at the top node;
-- KVL around the left loop;
-- KVL around the right loop;
-- resistor power using $P=I^2R$ for all three resistors.
-
-Use $\mathrm{k\Omega}$ with $\mathrm{mA}$ in the matrix so the voltage result is in $\mathrm{V}$. Convert to amperes and ohms before calculating watts.
-
-## 6. Build and measure it in Tinkercad
-
-### Start from the class activity
-
-1. Open the teacher's Tinkercad class.
-2. Open **Midterm Circuit Investigation - LaTeX, NumPy, and Tinkercad**.
-3. Choose **Tinker this** to make your own copy of the starter.
-4. Rename the copy `studentnumber-lastname-midterm-circuit`.
-
-The starter already contains two DC power supplies, three resistors, and a multimeter. It is intentionally incomplete: students must set the values, arrange the parts, and build the circuit from Figure 1.
-
-![Actual Tinkercad starter. Two DC power supplies, three loose resistors, and a multimeter are visible in the Circuits workspace.](../../assets/tej-computational/tinkercad/tinkercad-starter-real.jpg){fig-alt="Actual Tinkercad Circuits workspace showing the incomplete starter with two power supplies, three resistors, and a multimeter."}
-
-### Set the component values
-
-1. Click one resistor.
-2. In its settings box, type the resistance number.
-3. Choose the correct unit: **kΩ**.
-4. Repeat for all three resistors.
-5. Click each power supply and set its voltage.
-
-Use the schematic values: $R_1=2.2\,\mathrm{k\Omega}$, $R_2=3.3\,\mathrm{k\Omega}$, $R_3=1.0\,\mathrm{k\Omega}$, $V_{S1}=12\,\mathrm{V}$, and $V_{S2}=9\,\mathrm{V}$.
-
-![Actual Tinkercad resistor settings. A selected resistor shows its Name, Resistance field, and kilohm unit menu.](../../assets/tej-computational/tinkercad/tinkercad-resistor-selected-real.jpg){fig-alt="Actual Tinkercad resistor settings panel with the Resistance field and kilohm unit menu."}
-
-### Keep the wiring clear
-
-Use the same wire colours throughout the circuit:
+Use consistent wire colours:
 
 - **red:** positive supply connections;
-- **black:** the shared negative or ground return;
-- **blue:** the left-loop branch;
-- **green:** the right-loop branch;
-- **purple:** the shared $R_3$ branch.
+- **black:** shared return;
+- **blue:** left loop;
+- **green:** right loop;
+- **purple:** shared resistor branch.
 
-1. Move the parts into the same left, centre, and right positions as Figure 1.
-2. Click one terminal and then its destination terminal.
-3. Click an empty point to make a right-angle bend.
-4. Route wires around parts and labels, not through them.
-5. Keep wires separated when they are not connected.
-6. Make every real junction obvious. A crossing by itself is not a connection.
+Route wires around components and labels. A crossing is not a connection unless a junction is visible.
 
-Do not copy a finished Tinkercad circuit. Use Figure 1 as the electrical plan and the colour list above as the wiring convention.
+![Actual Tinkercad Circuits workspace showing loose circuit parts, the Components panel, and the Start Simulation button.](../../assets/tej-computational/tinkercad/tinkercad-starter-real.jpg){fig-alt="Actual Tinkercad Circuits workspace showing the incomplete starter and the Start Simulation button."}
 
-### Use Tinkercad's Schematic view as a check
-
-The screenshot below is the real starter in **Schematic** view before wiring. The parts appear, but there are no connection lines. After wiring the Circuits view, return here: the connection lines should match Figure 1. Missing or extra lines mean the topology still needs work.
-
-![Actual Tinkercad Schematic view of the unwired starter. The two supplies and three labelled resistors appear without connection lines.](../../assets/tej-computational/tinkercad/tinkercad-schematic-view-real.jpg){fig-alt="Actual Tinkercad Schematic view showing the unwired starter components without connection lines."}
-
-### Simulate and measure
-
-1. Compare every node with Figure 1.
-2. Choose **Start Simulation**.
-3. Measure the voltage across each resistor.
-4. Use $I=V/R$ to calculate each branch current.
-5. Directly measure at least one current by opening that branch and placing the multimeter in series.
-6. Stop the simulation before moving any wire or meter.
-
-Complete this table in the notebook:
-
-| Quantity | NumPy prediction | Tinkercad result | absolute difference |
-|---|---:|---:|---:|
-| $I_1$ (mA) |  |  |  |
-| $I_2$ (mA) |  |  |  |
-| $I_3$ (mA) |  |  |  |
-| top-node voltage (V) |  |  |  |
-| $P_{R3}$ (mW) |  |  |  |
-
-Copy the direct circuit URL from the browser after the design is saved. If the class account does not allow a share link, submit the URL, exact design name, and screenshot; the teacher can open the design through the Tinkercad Classroom.
-
-## Marks: 50
+## Marks: opportunity to earn 100%
 
 | Evidence | Marks |
 |---|---:|
-| LaTeX renders correctly and every value has a unit | 6 |
-| KCL and both KVL derivations are shown one move at a time | 14 |
-| coefficient table, $3\times3$ matrix, NumPy solution, and residuals | 12 |
-| Ohm's law, KCL/KVL substitution, and resistor-power checks | 6 |
-| Tinkercad topology, values, measurements, URL, screenshot, and comparison | 10 |
-| notebook runs from top to bottom and is named correctly | 2 |
-| **Total** | **50** |
+| Jupyter warm-up runs and is customized | 10 |
+| Ohm's law, power, units, and simple schematic | 15 |
+| Complete circuit, isolated loops, and KCL | 15 |
+| KVL algebra and LaTeX shown one move at a time | 20 |
+| Matrix, NumPy solution, graph, and independent checks | 20 |
+| Tinkercad topology, values, measurements, URL, screenshot, and comparison | 20 |
+| **Total** | **100** |
 
-Correct work earns marks at each stage. A wrong final current does not erase correct current directions, equations, LaTeX, matrix rows, code, or simulation evidence.
+Correct work earns marks at every stage. An error in one section does not erase correct work in a later section.
 
 ## Check and submit
 
-1. Choose **Kernel > Restart Kernel and Run All Cells**.
+1. Select **Kernel > Restart Kernel and Run All Cells**.
 2. Fix every unexpected red error.
-3. Confirm the equations, code, outputs, Tinkercad table, and URL are present.
-4. Download the finished `.ipynb` file from JupyterLite.
-5. Reopen the downloaded file and confirm your work is still there.
-6. Submit the notebook and screenshot. Paste the Tinkercad URL in the assignment post.
-7. Submit any missing course work in its original post.
+3. Confirm that the LaTeX renders and the graph appears.
+4. Confirm that the Tinkercad results table, URL, and screenshot filename are complete.
+5. Download the finished `.ipynb` file.
+6. Reopen the downloaded file and confirm that the work and outputs are present.
+7. Submit the notebook and screenshot. Paste the Tinkercad URL in the assignment post.
 
 ## Common issues
 
 | Problem | Fix |
 |---|---|
-| LaTeX shows as plain text | Put it in a Markdown cell, include `$...$` or `$$...$$`, then press **Shift+Enter**. |
-| `np.linalg.solve` reports a singular matrix | One row is still zero, duplicated, or copied in the wrong order. Read all three matrix rows back as equations. |
-| Answer is off by 1000 | Keep $\mathrm{k\Omega}$ with $\mathrm{mA}$, or $\Omega$ with $\mathrm{A}$. Do not mix the two pairs. |
-| Tinkercad current is zero | Trace the branch, confirm a complete return path, and check that the meter is in series. |
-| Tinkercad value disagrees with Python | Compare one component value, one node, one polarity, and one meter connection at a time. |
-
-## Course source
-
-The method is adapted from the branch-current workflow in **Grob's Basic Electronics, Chapter 9: Kirchhoff's Laws** and the accompanying [Problems Manual, Section 9-3](https://drive.google.com/file/d/14tvslnLyvOMci-5YBw_jHbHw_jxmsTfQ/view){target="_blank"}. The circuit, values, diagrams, notebook, and assessment are original course materials.
+| LaTeX appears as code | Change the cell to Markdown and press **Shift+Enter**. |
+| Code runs but no graph appears | Run the setup cell first, then run the graph cell again. |
+| Answer is off by 1000 | Keep $\mathrm{k\Omega}$ with $\mathrm{mA}$, or $\Omega$ with $\mathrm{A}$. |
+| NumPy reports a matrix error | Check that `A` has two rows and two columns and `b` has two values. |
+| Tinkercad current is zero | Trace the complete branch and make sure the current meter is in series. |
+| Tinkercad disagrees with Python | Compare one component value, node, polarity, and meter connection at a time. |
 
 ## Help improve this lesson (optional)
 
-If one step, diagram, or code scaffold was unclear, show the teacher the exact place and one specific fix. A useful fix may be added to the course site and credited to you.
+If one instruction, diagram, or code scaffold was unclear, show the teacher the exact place and suggest one specific improvement. A useful fix may be added to the course site and credited to you.

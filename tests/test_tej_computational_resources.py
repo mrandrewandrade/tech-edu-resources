@@ -107,6 +107,20 @@ class TejComputationalResourceTests(unittest.TestCase):
         for phrase in ("I_3=I_1-I_2", "numpy.linalg.solve", "sympy", "exact fractions", "residual"):
             self.assertIn(phrase.lower(), bridge_text.lower())
 
+        checkpoint = json.loads((NOTEBOOKS / "09-midterm-three-current-circuit.ipynb").read_text(encoding="utf-8"))
+        checkpoint_text = "".join("".join(cell.get("source", [])) for cell in checkpoint["cells"])
+        for phrase in (
+            "same notebook for both days",
+            "improve your Life Checkpoint mark to 100%",
+            "circuit-lab title card",
+            "life-checkpoint-series.svg",
+            "7I_1-2I_2=12",
+            "current dashboard",
+            "Tinkercad circuit URL",
+        ):
+            self.assertIn(phrase.lower(), checkpoint_text.lower())
+        self.assertNotIn("three-current challenge", checkpoint_text.lower())
+
     def test_downloads_and_dataset_exist(self) -> None:
         dataset = ASSETS / "tej-computational" / "data" / "circuit-measurements.csv"
         self.assertIn("measured_current_mA", dataset.read_text(encoding="utf-8"))
