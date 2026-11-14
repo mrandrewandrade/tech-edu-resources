@@ -19,6 +19,40 @@ Turn an **original personal, business, club or community logo** into one circula
 The back stays flat for a glue-on finding. The front has raised walls and enclosed recessed areas that can be filled with teacher-approved nail polish.
 :::
 
+## New to Tinkercad? Start here
+
+Complete this short introduction before beginning the logo. Keep Tinkercad open in one window and this lesson or the video open beside it. Pause whenever you need to copy an action.
+
+:::: {.ter-tinkercad-starter}
+::: {.ter-tinkercad-video}
+<iframe src="https://www.youtube-nocookie.com/embed/vk3PmW5oqW0?start=285" title="Tinkercad interface and first 3D design introduction by Ty Ridings" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+:::
+
+::: {.ter-tinkercad-checklist}
+### Watch and follow
+
+1. Watch the **interface tour** beginning at 4:45.
+2. At 7:40, open a new design and follow along with the first build.
+3. At 28:47, watch how an STL is exported for 3D printing.
+
+[Open Autodesk's guided 3D-design basics](https://www.tinkercad.com/learn/designs/collection/3d-design-basics){.btn .btn-primary} [Open the complete video](https://www.youtube.com/watch?v=vk3PmW5oqW0){.btn .btn-outline-secondary}
+:::
+::::
+
+### Five-minute practice build
+
+Before using your logo, prove that you can control a simple shape:
+
+1. Create a new 3D design and rename it `lastname-tinkercad-practice`.
+2. Drag a **Cylinder** onto the workplane. Set its length and width to **30 mm** and its height to **3 mm**.
+3. Orbit, pan and zoom until you can inspect the top, front and side.
+4. Duplicate the cylinder. Make the copy **24 × 24 × 1 mm** and raise it **3 mm** above the workplane.
+5. Select both cylinders, choose **Align**, and select the two centre dots.
+6. Group the parts, then undo once so you know how to recover from a mistake.
+7. Export the practice object as an **STL**.
+
+You are ready when you can **view, size, raise, align, group, undo and export** without guessing. Autodesk also provides a [printable Tinkercad getting-started and keyboard-shortcut guide](https://images.tinkercad.com/jl5ii4oqrdmc/4nMtGEJi53o3n7V2KJKG7a/0b1818fdecff4868bebc74ebeaf925cf/Tinkercad_Getting_Started_Guide_printable.pdf).
+
 Do not copy a company, team, game, social-media or clothing logo. Use the logo you created in Photopea, or create another original, teacher-approved design.
 
 Read this as a **third-angle orthographic drawing**: the top view is above the front view, and the right-side view is placed to the right. The exterior views establish the shape and dimensions; **section A–A** shows how the two colour fills sit above the 3 mm base and between the 1 mm raised walls.
@@ -44,7 +78,7 @@ These photographs show the process and the range of products possible. Your artw
 </figure>
 </div>
 
-The reference photographs remain copyright of their creator and are not included in this site's CC BY-SA licence. Select any photograph to open the original project and full context.
+The reference photographs and screenshots by kura_kura are used under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/) and are not included in this site's CC BY-SA licence. Select any image to open the original project and full context.
 
 ## Choose the construction
 
@@ -122,6 +156,11 @@ This creates the flat surface that will later receive the glue-on finding.
 
 For the **AA arrow**, use the simpler arrow/lettermark without small text. For the **Technology Commons** example, use the circular lighthouse emblem without the words around it. Make that version a **50–60 mm brooch**, not an earring.
 
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F1G/D65B/LPPHTZID/F1GD65BLPPHTZID.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="A line drawing converted to SVG and then imported into the Tinkercad workplane" loading="lazy"></a>
+  <figcaption><strong>Import the SVG:</strong> the reference uses a heart, but your project uses the circular base and your original logo. Confirm that the imported lines are clean before continuing. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
+</figure>
+
 ## Step 5: Make the logo fillable
 
 For the preferred full faux-enamel version:
@@ -135,9 +174,14 @@ For the preferred full faux-enamel version:
 
 For the easier one-colour-fill version, leave **Fill Mode** at **Default**, set **Height** to **1 mm**, and raise the logo 3 mm.
 
-<figure class="ter-process-example ter-process-example--wide">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F1G/D65B/LPPHTZID/F1GD65BLPPHTZID.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Reference sequence showing an SVG imported into Tinkercad, duplicated, changed to Inner Line fill mode and aligned with a solid base" loading="lazy"></a>
-  <figcaption><strong>Reference sequence:</strong> import the SVG, create the solid base and raised wall version, then align the parts. Screenshot sequence: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FG2/FK81/LPPHTZIF/FG2FK81LPPHTZIF.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Two copies of an imported SVG separated vertically in Tinkercad so their construction can be edited" loading="lazy"></a>
+  <figcaption><strong>Duplicate before editing:</strong> keep one copy for the raised detail and use the other to create the solid base. Separating the copies temporarily makes it easier to see which part you are changing. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
+</figure>
+
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FH1/L92G/LPPHTZIC/FH1L92GLPPHTZIC.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Tinkercad Shape panel showing Inner Line fill mode and then a solid filled base" loading="lazy"></a>
+  <figcaption><strong>Change the fill mode:</strong> use <em>Inner Line</em> to create raised boundaries. Use the solid version for the flat base. Check the preview closely before aligning the parts. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
 </figure>
 
 ## Step 6: Align and inspect
@@ -151,6 +195,11 @@ For the easier one-colour-fill version, leave **Fill Mode** at **Default**, set 
 7. Select all parts and press **Ctrl + G** to group them.
 
 Do not continue if a cavity leaks through the rim, a wall is extremely thin, or a pocket is too small to fill cleanly.
+
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FDU/4IVV/LPPHTZIE/FDU4IVVLPPHTZIE.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Aligned base and raised-detail parts in Tinkercad with the upper feature set to 1 millimetre high" loading="lazy"></a>
+  <figcaption><strong>Align and inspect:</strong> centre the raised detail on the base, set the upper feature to 1 mm and orbit to a low side view. Your circular version should have the same flat base and clearly enclosed pockets. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
+</figure>
 
 ## Step 7: Export for printing
 

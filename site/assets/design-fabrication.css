@@ -591,6 +591,47 @@
   margin: 1.25rem auto 1.75rem;
 }
 
+.ter-process-example--screenshot img {
+  max-height: 720px;
+  object-fit: contain;
+  background: #111;
+}
+
+.ter-tinkercad-starter {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .85fr);
+  gap: 1.2rem;
+  align-items: start;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.ter-tinkercad-video {
+  overflow: hidden;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 10px;
+  background: #111;
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-tinkercad-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.ter-tinkercad-checklist {
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--bs-border-strong);
+  border-top: 4px solid var(--bs-copper-dark);
+  border-radius: 10px;
+  background: var(--bs-surface);
+}
+
+.ter-tinkercad-checklist > :first-child { margin-top: 0; }
+.ter-tinkercad-checklist > :last-child { margin-bottom: 0; }
+.ter-tinkercad-checklist .btn { margin: .2rem .25rem .2rem 0; }
+
 .ter-process-example figcaption {
   padding: .9rem 1rem 1rem;
   border-top: 4px solid var(--bs-copper-dark);
@@ -797,6 +838,7 @@
   .ter-assembly-gallery,
   .ter-process-gallery,
   .ter-toolkit-banner,
+  .ter-tinkercad-starter,
   .ter-view-grid {
     grid-template-columns: 1fr;
   }
