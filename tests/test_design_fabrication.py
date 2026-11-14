@@ -321,6 +321,25 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("Laser-Cut Gallery", laser_gallery)
         self.assertIn("data-laser-grid", laser_gallery)
 
+    def test_emotions_notes_and_worksheet_are_integrated(self) -> None:
+        notes = self.read("teaching-materials/emotions/why-we-have-emotions.qmd")
+        materials = self.read("teaching-materials/index.qmd")
+        slides = self.read("teacher-slides/index.qmd")
+        personal_brand = self.read("design-fabrication/logo-design/personal-brand-graphic-photopea.qmd")
+        worksheet_id = "1-wqGI8FIPJ-cW7bpEiIhJqWkCEuuI4CPLDTlg5gm6xM"
+        for heading in (
+            "They motivate us",
+            "They communicate to us",
+            "They communicate to others",
+            "What can we do with an emotion?",
+        ):
+            self.assertIn(heading, notes)
+        for source in (notes, materials, slides, personal_brand):
+            self.assertIn(worksheet_id, source)
+        for source in (materials, slides, personal_brand):
+            self.assertIn("emotions/why-we-have-emotions.qmd", source)
+        self.assertIn(f"{worksheet_id}/copy", notes)
+
     def test_laser_gallery_projects_include_files_photos_and_sources(self) -> None:
         gallery = self.read("teaching-materials/laser-cutting/gallery.qmd")
         turkey = self.read("teaching-materials/laser-cutting/turkey.qmd")
