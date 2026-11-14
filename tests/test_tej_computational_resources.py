@@ -32,9 +32,9 @@ class TejComputationalResourceTests(unittest.TestCase):
         ):
             self.assertIn(phrase, lesson)
 
-    def test_twelve_real_notebooks_have_required_learning_structure(self) -> None:
+    def test_fifteen_real_notebooks_have_required_learning_structure(self) -> None:
         paths = sorted(NOTEBOOKS.glob("*.ipynb"))
-        self.assertEqual(len(paths), 12)
+        self.assertEqual(len(paths), 15)
         lesson_required = (
             "Learning goal",
             "Why it matters",

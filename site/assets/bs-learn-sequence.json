@@ -910,10 +910,27 @@
       "lesson_order": 3,
       "route": "/commons/tej3-4/electronics-library/components/capacitors.html",
       "source": "tej3-4/electronics-library/components/capacitors.qmd",
-      "title": "Component Foundations: Capacitors",
-      "summary": "Introduce charge storage, capacitance, polarity, voltage ratings, energy, and RC time constants.",
-      "use": "Capacitors connect physical components to changing signals, timing, filtering, and calculus.",
-      "resources": [],
+      "title": "Capacitors 1: Capacitors from Zero",
+      "summary": "Learn capacitor structure, symbols, units, polarity, voltage rating, stored charge, and energy.",
+      "use": "The first package establishes the component before time-dependent circuit analysis.",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1QKVYTvEYKO5p1Tl6bNlBuRuYwMWiad3VUAgJcsY9Dbg/edit"
+        },
+        {
+          "label": "Five-Question Sheet",
+          "url": "https://docs.google.com/document/d/138IqjbDNyc9cwkKJ89LeYGx-B810x_O3lUpjP9jJKz4/copy"
+        },
+        {
+          "label": "Jupyter Notebook",
+          "url": "https://andrewandrade.ca/tech-edu-resources/assets/tej-computational/notebooks/10-capacitors-from-zero.ipynb"
+        },
+        {
+          "label": "Teacher Answers",
+          "restricted": true
+        }
+      ],
       "track_id": "circuits-electronics",
       "track_order": 5,
       "track_title": "Circuits and Electronics",
@@ -921,7 +938,7 @@
       "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
       "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
       "previous_route": "/commons/tej3-4/electronics-library/components/resistors.html",
-      "next_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
+      "next_route": "/commons/tej3-4/electronics-library/components/rc-charge-discharge.html",
       "next_starts_new_track": false,
       "sequence_index": 34
     },
@@ -931,6 +948,94 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 4,
+      "route": "/commons/tej3-4/electronics-library/components/rc-charge-discharge.html",
+      "source": "tej3-4/electronics-library/components/rc-charge-discharge.qmd",
+      "title": "Capacitors 2: RC Charging and Discharging",
+      "summary": "Predict starting conditions, steady state, charging curves, and discharging curves.",
+      "use": "Students connect a clean schematic to a graph, Jupyter model, and Tinkercad circuit.",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/130ilpoHB15CGT1_IQQuquD8zWLzIYprLojiKbAYDfk4/edit"
+        },
+        {
+          "label": "Five-Question Sheet",
+          "url": "https://docs.google.com/document/d/15-JnCH81bBWqF-rU5wDr9bnD6r-0hZarVn9fz1YW6Fs/copy"
+        },
+        {
+          "label": "Jupyter Notebook",
+          "url": "https://andrewandrade.ca/tech-edu-resources/assets/tej-computational/notebooks/11-rc-charge-discharge.ipynb"
+        },
+        {
+          "label": "Tinkercad Classroom",
+          "url": "https://www.tinkercad.com/classrooms/9Km3yctGOwi/home"
+        },
+        {
+          "label": "Teacher Answers",
+          "restricted": true
+        }
+      ],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
+      "next_route": "/commons/tej3-4/electronics-library/components/rc-time-constant-design.html",
+      "next_starts_new_track": false,
+      "sequence_index": 35
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 5,
+      "route": "/commons/tej3-4/electronics-library/components/rc-time-constant-design.html",
+      "source": "tej3-4/electronics-library/components/rc-time-constant-design.qmd",
+      "title": "Capacitors 3: RC Time Constants and Design",
+      "summary": "Calculate a time constant, solve for a part value, select a standard part, and verify the actual result.",
+      "use": "The design package connects RC circuits to simulation, engineering tolerances, op amps, and an optional calculus bridge.",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1N42Y9o1foMHonzgeO2wooZMHOW8aZAgvGPKRuZ9l4rw/edit"
+        },
+        {
+          "label": "Five-Question Sheet",
+          "url": "https://docs.google.com/document/d/13fdwh-aNJ8iGO1RfPaQI_-9Zn1bmuFAuY5v6rNB48PQ/copy"
+        },
+        {
+          "label": "Jupyter Notebook",
+          "url": "https://andrewandrade.ca/tech-edu-resources/assets/tej-computational/notebooks/12-rc-time-constant-design.ipynb"
+        },
+        {
+          "label": "Tinkercad Classroom",
+          "url": "https://www.tinkercad.com/classrooms/9Km3yctGOwi/home"
+        },
+        {
+          "label": "Teacher Answers",
+          "restricted": true
+        }
+      ],
+      "track_id": "circuits-electronics",
+      "track_order": 5,
+      "track_title": "Circuits and Electronics",
+      "track_hub": "tej3-4/electronics-library/index.qmd",
+      "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
+      "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
+      "previous_route": "/commons/tej3-4/electronics-library/components/rc-charge-discharge.html",
+      "next_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
+      "next_starts_new_track": false,
+      "sequence_index": 36
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 6,
       "route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
       "source": "tej3-4/electronics-library/components/diodes-leds.qmd",
       "title": "Component Foundations: Diodes and LEDs",
@@ -943,17 +1048,17 @@
       "track_hub": "tej3-4/electronics-library/index.qmd",
       "track_summary": "Move from measurement and notation to progressively harder circuit analysis packages.",
       "track_use": "These methods explain power paths in computers, vehicles, robots, sensors, and control systems.",
-      "previous_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
+      "previous_route": "/commons/tej3-4/electronics-library/components/rc-time-constant-design.html",
       "next_route": "/commons/tej3-4/electronics-library/components/transistors.html",
       "next_starts_new_track": false,
-      "sequence_index": 35
+      "sequence_index": 37
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 5,
+      "lesson_order": 7,
       "route": "/commons/tej3-4/electronics-library/components/transistors.html",
       "source": "tej3-4/electronics-library/components/transistors.qmd",
       "title": "Component Foundations: Transistors",
@@ -969,14 +1074,14 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
       "next_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "next_starts_new_track": false,
-      "sequence_index": 36
+      "sequence_index": 38
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 6,
+      "lesson_order": 8,
       "route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "source": "tej3-4/electronics-library/components/op-amps.qmd",
       "title": "Component Foundations: Operational Amplifiers",
@@ -992,14 +1097,14 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/transistors.html",
       "next_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 37
+      "sequence_index": 39
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 7,
+      "lesson_order": 9,
       "route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "source": "tej3-4/circuits/parallel-circuits.qmd",
       "title": "Package 1: Basic Electricity and Parallel Circuits",
@@ -1064,14 +1169,14 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "next_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 38
+      "sequence_index": 40
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 8,
+      "lesson_order": 10,
       "route": "/commons/tej3-4/circuits/series-circuits.html",
       "source": "tej3-4/circuits/series-circuits.qmd",
       "title": "Package 2: Parallel Review and Series Circuits",
@@ -1136,14 +1241,14 @@
       "previous_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 39
+      "sequence_index": 41
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 9,
+      "lesson_order": 11,
       "route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "source": "tej3-4/circuits/series-parallel-circuits.qmd",
       "title": "Series-Parallel Combination Circuits, Part A",
@@ -1192,14 +1297,14 @@
       "previous_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_starts_new_track": false,
-      "sequence_index": 40
+      "sequence_index": 42
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 10,
+      "lesson_order": 12,
       "route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "source": "tej3-4/circuits/kirchhoffs-laws.qmd",
       "title": "Kirchhoff's Laws",
@@ -1236,14 +1341,14 @@
       "previous_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 41
+      "sequence_index": 43
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 11,
+      "lesson_order": 13,
       "route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "source": "tej3-4/circuits/linear-algebra-circuits.qmd",
       "title": "Linear Algebra for Circuits",
@@ -1276,14 +1381,14 @@
       "previous_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_route": "/commons/tej3-4/circuits/tinkercad-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 42
+      "sequence_index": 44
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 12,
+      "lesson_order": 14,
       "route": "/commons/tej3-4/circuits/tinkercad-circuits.html",
       "source": "tej3-4/circuits/tinkercad-circuits.qmd",
       "title": "Build and Measure Circuits in Tinkercad",
@@ -1304,7 +1409,7 @@
       "previous_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 43
+      "sequence_index": 45
     },
     {
       "course_id": "tej",
@@ -1327,7 +1432,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 44
+      "sequence_index": 46
     },
     {
       "course_id": "tej",
@@ -1350,7 +1455,7 @@
       "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 45
+      "sequence_index": 47
     },
     {
       "course_id": "tej",
@@ -1378,7 +1483,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_starts_new_track": false,
-      "sequence_index": 46
+      "sequence_index": 48
     },
     {
       "course_id": "tej",
@@ -1410,7 +1515,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_starts_new_track": false,
-      "sequence_index": 47
+      "sequence_index": 49
     },
     {
       "course_id": "tej",
@@ -1454,7 +1559,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_starts_new_track": false,
-      "sequence_index": 48
+      "sequence_index": 50
     },
     {
       "course_id": "tej",
@@ -1477,7 +1582,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_starts_new_track": false,
-      "sequence_index": 49
+      "sequence_index": 51
     },
     {
       "course_id": "tej",
@@ -1500,7 +1605,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_starts_new_track": false,
-      "sequence_index": 50
+      "sequence_index": 52
     },
     {
       "course_id": "tej",
@@ -1523,7 +1628,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_starts_new_track": false,
-      "sequence_index": 51
+      "sequence_index": 53
     },
     {
       "course_id": "tej",
@@ -1546,7 +1651,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_starts_new_track": false,
-      "sequence_index": 52
+      "sequence_index": 54
     },
     {
       "course_id": "tej",
@@ -1569,7 +1674,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_starts_new_track": false,
-      "sequence_index": 53
+      "sequence_index": 55
     },
     {
       "course_id": "tej",
@@ -1592,7 +1697,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_starts_new_track": false,
-      "sequence_index": 54
+      "sequence_index": 56
     },
     {
       "course_id": "tej",
@@ -1615,7 +1720,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_starts_new_track": false,
-      "sequence_index": 55
+      "sequence_index": 57
     },
     {
       "course_id": "tej",
@@ -1638,7 +1743,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
       "next_starts_new_track": false,
-      "sequence_index": 56
+      "sequence_index": 58
     },
     {
       "course_id": "tej",
@@ -1661,7 +1766,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 57
+      "sequence_index": 59
     },
     {
       "course_id": "tej",
@@ -1684,7 +1789,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 58
+      "sequence_index": 60
     },
     {
       "course_id": "tej",
@@ -1707,7 +1812,7 @@
       "previous_route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
       "next_route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 59
+      "sequence_index": 61
     },
     {
       "course_id": "tej",
@@ -1730,7 +1835,7 @@
       "previous_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 60
+      "sequence_index": 62
     },
     {
       "course_id": "tej",
@@ -1758,7 +1863,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computational-engineering/circuit-quest.html",
       "next_starts_new_track": false,
-      "sequence_index": 61
+      "sequence_index": 63
     },
     {
       "course_id": "tej",
@@ -1786,7 +1891,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/jupyterlite.html",
       "next_route": "/commons/tej3-4/computational-engineering/python-first-steps.html",
       "next_starts_new_track": false,
-      "sequence_index": 62
+      "sequence_index": 64
     },
     {
       "course_id": "tej",
@@ -1814,7 +1919,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/circuit-quest.html",
       "next_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
       "next_starts_new_track": false,
-      "sequence_index": 63
+      "sequence_index": 65
     },
     {
       "course_id": "tej",
@@ -1846,7 +1951,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/python-first-steps.html",
       "next_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_starts_new_track": false,
-      "sequence_index": 64
+      "sequence_index": 66
     },
     {
       "course_id": "tej",
@@ -1878,7 +1983,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
       "next_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "next_starts_new_track": false,
-      "sequence_index": 65
+      "sequence_index": 67
     },
     {
       "course_id": "tej",
@@ -1910,7 +2015,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_starts_new_track": false,
-      "sequence_index": 66
+      "sequence_index": 68
     },
     {
       "course_id": "tej",
@@ -1946,7 +2051,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "next_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "next_starts_new_track": false,
-      "sequence_index": 67
+      "sequence_index": 69
     },
     {
       "course_id": "tej",
@@ -1978,7 +2083,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_route": "/commons/tej3-4/computational-engineering/midterm-circuit-investigation.html",
       "next_starts_new_track": false,
-      "sequence_index": 68
+      "sequence_index": 70
     },
     {
       "course_id": "tej",
@@ -2010,7 +2115,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 69
+      "sequence_index": 71
     }
   ]
 }
