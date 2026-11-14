@@ -18,7 +18,7 @@
         }
       ],
       "course_resources": [
-        {"title": "Laser-Cutting Files and Resources", "source": "teaching-materials/laser-cutting/index.qmd"}
+        {"title": "Laser-Cutting Files and Resources", "source": "design-fabrication/laser-cutting/index.qmd"}
       ],
       "units": [
         {
@@ -93,7 +93,7 @@
           ]
         },
         {
-          "id": "fabrication-tools", "order": 7, "title": "Laser Cutting and Fabrication Tools", "hub": "teaching-materials/laser-cutting/index.qmd",
+          "id": "fabrication-tools", "order": 7, "title": "Laser Cutting and Fabrication Tools", "hub": "design-fabrication/laser-cutting/index.qmd",
           "summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
           "use": "The sequence connects precise cutting to strong assemblies, deliberate surfaces, shop organization, and iterative fabrication.",
           "lessons": [

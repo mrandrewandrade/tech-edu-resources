@@ -288,7 +288,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="9" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="../teaching-materials/laser-cutting/index.html">7. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="laser-cutting/index.html">7. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Make It Stand&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Compare ways to support a flat design as a stable object.&quot;, &quot;Support geometry is useful for signs, displays, holders, and models.&quot;]">
@@ -424,5 +424,5 @@
       <li><a href="tools/tool-organizer-gallery/index.html">Tool Organizer Gallery</a></li>
     </ul>
   </li>
-  <li><a href="../teaching-materials/laser-cutting/index.html">Laser-Cutting Files and Resources</a></li>
+  <li><a href="laser-cutting/index.html">Laser-Cutting Files and Resources</a></li>
 </ul>

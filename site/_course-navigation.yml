@@ -85,7 +85,7 @@ website:
             - text: "4. Contrast and Output"
               href: "design-fabrication/accessible-design/contrast-and-output.qmd"
         - section: "7. Laser Cutting and Fabrication Tools"
-          href: "teaching-materials/laser-cutting/index.qmd"
+          href: "design-fabrication/laser-cutting/index.qmd"
           contents:
             - text: "1. Make It Stand"
               href: "design-fabrication/03-laser-cutting/02-make-it-stand.qmd"
@@ -126,7 +126,7 @@ website:
             - text: "Tool Organizer Gallery"
               href: "design-fabrication/tools/tool-organizer-gallery/index.qmd"
         - text: "Laser-Cutting Files and Resources"
-          href: "teaching-materials/laser-cutting/index.qmd"
+          href: "design-fabrication/laser-cutting/index.qmd"
     - id: "tej"
       title: "TEJ3/4 Computer Engineering"
       style: docked

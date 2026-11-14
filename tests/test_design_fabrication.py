@@ -314,13 +314,14 @@ class DesignFabricationTests(unittest.TestCase):
         organizer_index = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
         organizer_build = self.read("design-fabrication/tools/tool-organizer-gallery/grade-9-knife-holder.qmd")
         general = self.read("teaching-materials/index.qmd")
-        laser_gallery = self.read("teaching-materials/laser-cutting/gallery.qmd")
+        laser_gallery = self.read("design-fabrication/laser-cutting/gallery.qmd")
         self.assertIn("grade-9-knife-holder.qmd", organizer_index)
         self.assertIn("ter-annotated-build", organizer_build)
         self.assertNotIn("{.columns}", organizer_build)
         self.assertIn("laser-cutting/gallery.qmd", general)
         self.assertIn("Laser-Cut Gallery", laser_gallery)
         self.assertIn("data-laser-grid", laser_gallery)
+        self.assertIn("sidebar: design-fabrication", laser_gallery)
 
     def test_emotions_notes_and_worksheet_are_integrated(self) -> None:
         notes = self.read("design-fabrication/emotions/index.qmd")
@@ -407,9 +408,9 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertIn(text, about)
 
     def test_laser_gallery_projects_include_files_photos_and_sources(self) -> None:
-        gallery = self.read("teaching-materials/laser-cutting/gallery.qmd")
-        turkey = self.read("teaching-materials/laser-cutting/turkey.qmd")
-        headphones = self.read("teaching-materials/laser-cutting/headphone-stand.qmd")
+        gallery = self.read("design-fabrication/laser-cutting/gallery.qmd")
+        turkey = self.read("design-fabrication/laser-cutting/turkey.qmd")
+        headphones = self.read("design-fabrication/laser-cutting/headphone-stand.qmd")
         for page in ("turkey.qmd", "headphone-stand.qmd"):
             self.assertIn(page, gallery)
         self.assertIn("bs-laser-feature-card--turkey", gallery)
@@ -427,6 +428,13 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("not relicensed under the site’s CC BY-SA licence", turkey)
         self.assertIn("not relicensed under the site’s CC BY-SA licence", headphones)
         self.assertNotIn("{.columns}", turkey + headphones)
+        self.assertIn("sidebar: design-fabrication", turkey)
+        self.assertIn("sidebar: design-fabrication", headphones)
+
+        for name in ("index", "gallery", "turkey", "headphone-stand"):
+            redirect = self.read(f"teaching-materials/laser-cutting/{name}.qmd")
+            self.assertIn("search: false", redirect)
+            self.assertIn("design-fabrication/laser-cutting", redirect)
 
     def test_curriculum_relevance_is_varied_and_compact(self) -> None:
         main = (CURRICULUM / "index.qmd").read_text(encoding="utf-8")
@@ -494,10 +502,20 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertNotIn("TAS Notes", old)
 
     def test_library_and_curriculum_cross_link(self) -> None:
-        library = self.read("teaching-materials/laser-cutting/index.qmd")
+        library = self.read("design-fabrication/laser-cutting/index.qmd")
         curriculum = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")
-        self.assertIn("design-fabrication/tools/tool-organizer-gallery/index.qmd", library)
-        self.assertIn("teaching-materials/laser-cutting", curriculum)
+        self.assertIn("../tools/tool-organizer-gallery/index.qmd", library)
+        self.assertIn("../../laser-cutting/gallery.qmd", curriculum)
+
+    def test_nice_teacher_materials_are_distinct_from_student_notes(self) -> None:
+        materials = self.read("teaching-materials/nice-design-process/index.qmd")
+        general = self.read("teaching-materials/index.qmd")
+        slides = self.read("teacher-slides/index.qmd")
+        self.assertIn('title: "N.I.C.E. Classroom Materials"', materials)
+        self.assertIn("Teacher-facing slides, worksheets, examples, and planning tools", materials)
+        self.assertIn("../../design-fabrication/design-process/index.qmd", materials)
+        for source in (general, slides):
+            self.assertIn("N.I.C.E. Classroom Materials", source)
 
     def legacy_first_laser_projects_toolkit_is_complete(self) -> None:
         toolkit = self.read("design-fabrication/03-laser-cutting/resources/index.qmd")

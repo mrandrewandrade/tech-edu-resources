@@ -1,0 +1,35 @@
+---
+title: "Standing Turkey"
+sidebar: design-fabrication
+format:
+  html:
+    page-layout: full
+    toc: false
+    title-block-style: plain
+    body-classes: "bs-editorial-page bs-title-eyebrow bs-laser-collection bs-laser-project-page"
+    css:
+      - ../../assets/teacher-slides.css
+      - ../../assets/laser-cutting.css
+execute:
+  enabled: false
+---
+
+```{=html}
+<div class="bs-laser-shell bs-laser-project-shell">
+  <p class="bs-laser-back"><a href="gallery.qmd">← Laser-Cut Gallery</a> · <a href="../index.qmd">General Design &amp; Fabrication</a></p>
+
+  <div class="bs-laser-actions bs-laser-project-actions">
+    <a class="bs-laser-button bs-laser-button-primary" href="../../assets/laser-gallery/turkey.svg" download>Download SVG</a>
+    <a class="bs-laser-button" href="https://community.glowforge.com/t/thanksgiving-turkey-box/119792">Original source</a>
+  </div>
+
+  <figure class="bs-laser-project-figure">
+    <img src="../../assets/laser-gallery/turkey-front.jpg" alt="Front view of a finished wooden turkey. A fan-shaped feather piece stands behind the rounded body, with the head and neck projecting forward.">
+  </figure>
+
+  <figure class="bs-laser-project-figure">
+    <img src="../../assets/laser-gallery/turkey-side.jpg" alt="Side view of the same wooden turkey, showing the slotted head and neck piece passing through the body and feather assembly.">
+  </figure>
+  <p class="bs-laser-project-credit">Design by h.suber. <a href="https://community.glowforge.com/t/thanksgiving-turkey-box/119792">Source</a>. Third-party file: not relicensed under the site’s CC BY-SA licence.</p>
+</div>
+```

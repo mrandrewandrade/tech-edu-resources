@@ -1,30 +1,16 @@
 ---
-title: "3 mm Baltic-Birch Headphone Stand"
+title: "Headphone stand project has moved"
+search: false
+sidebar: false
+toc: false
 format:
   html:
-    page-layout: full
-    toc: false
-    title-block-style: plain
-    body-classes: "bs-editorial-page bs-title-eyebrow bs-laser-collection bs-laser-project-page"
-    css:
-      - ../../assets/teacher-slides.css
-      - ../../assets/laser-cutting.css
-execute:
-  enabled: false
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0; url=../../design-fabrication/laser-cutting/headphone-stand.html">
+        <link rel="canonical" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/laser-cutting/headphone-stand.html">
+        <meta name="robots" content="noindex,follow">
+execute: {enabled: false}
 ---
 
-```{=html}
-<div class="bs-laser-shell bs-laser-project-shell">
-  <p class="bs-laser-back"><a href="gallery.qmd">← Laser-Cut Gallery</a> · <a href="../index.qmd">General materials</a></p>
-
-  <div class="bs-laser-actions bs-laser-project-actions">
-    <a class="bs-laser-button bs-laser-button-primary" href="../../assets/laser-gallery/headphone-stand-3mm-baltic-birch.svg" download>Download SVG</a>
-    <a class="bs-laser-button" href="https://ragingcomputer.com/2021/06/28/glowforge-cut-headphone-stand-free-download/">Original source</a>
-  </div>
-
-  <figure class="bs-laser-project-figure bs-laser-project-figure--drawing">
-    <img src="../../assets/laser-gallery/headphone-stand-3mm-baltic-birch.svg" alt="Full SVG cut layout for a slotted headphone stand, arranged on a sheet approximately 280 by 252 millimetres.">
-  </figure>
-  <p class="bs-laser-project-credit">3 mm Baltic birch design by Raging Computer. <a href="https://ragingcomputer.com/2021/06/28/glowforge-cut-headphone-stand-free-download/">Source</a>. Third-party file: not relicensed under the site’s CC BY-SA licence.</p>
-</div>
-```
+The project now lives at [3 mm Headphone Stand](../../design-fabrication/laser-cutting/headphone-stand.qmd).
