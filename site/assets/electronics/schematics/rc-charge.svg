@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1F2430; }
+    .title { font-size: 34px; font-weight: 700; fill: #1E2B55; }
+    .label { font-size: 25px; font-weight: 700; fill: #1E2B55; }
+    .body { font-size: 23px; }
+    .small { font-size: 20px; fill: #6B7280; }
+    .wire { stroke: #1E2B55; stroke-width: 7; fill: none; stroke-linecap: square; stroke-linejoin: round; }
+    .thin { stroke: #1E2B55; stroke-width: 4; fill: none; }
+    .blue { stroke: #1769AA; fill: #1769AA; }
+  </style>
+
+    <text x="60" y="65" class="title">RC charging circuit</text>
+    <line x1="150" y1="150" x2="150" y2="255" class="wire"/>
+    <line x1="115" y1="255" x2="185" y2="255" class="wire"/>
+    <line x1="125" y1="300" x2="175" y2="300" class="wire"/>
+    <line x1="150" y1="300" x2="150" y2="530" class="wire"/>
+    <text x="55" y="285" class="label">Vₛ</text>
+    <line x1="150" y1="150" x2="300" y2="150" class="wire"/>
+    <circle cx="320" cy="150" r="9" fill="#1E2B55"/>
+    <circle cx="420" cy="150" r="9" fill="#1E2B55"/>
+    <line x1="320" y1="150" x2="403" y2="103" class="wire"/>
+    <text x="345" y="92" class="label">S</text>
+    <line x1="420" y1="150" x2="520" y2="150" class="wire"/>
+    <polyline points="520,150 545,115 585,185 625,115 665,185 705,115 745,150" class="wire"/>
+    <text x="615" y="90" class="label">R</text>
+    <line x1="745" y1="150" x2="900" y2="150" class="wire"/>
+    <line x1="900" y1="150" x2="900" y2="265" class="wire"/>
+    <line x1="825" y1="265" x2="975" y2="265" class="wire"/>
+    <line x1="825" y1="330" x2="975" y2="330" class="wire"/>
+    <line x1="900" y1="330" x2="900" y2="530" class="wire"/>
+    <text x="1005" y="305" class="label">C</text>
+    <text x="1005" y="355" class="body">vC(t)</text>
+    <line x1="900" y1="530" x2="150" y2="530" class="wire"/>
+    <line x1="465" y1="105" x2="690" y2="105" stroke="#1769AA" stroke-width="7"/>
+    <polygon points="690,105 665,90 665,120" fill="#1769AA"/>
+    <text x="550" y="85" class="label">i(t)</text>
+    <text x="60" y="625" class="body">Close S: current starts high, vC rises, and current falls as the capacitor charges.</text>
+
+</svg>

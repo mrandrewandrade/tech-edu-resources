@@ -1,6 +1,6 @@
 ---
-title: "Component Foundations 3: Capacitors"
-description: "Understand charge storage, capacitance, polarity, voltage ratings, energy, and first-order RC behaviour."
+title: "Capacitors 1: Capacitors from Zero"
+description: "Learn what a capacitor is, read its value and ratings, and calculate stored charge and energy."
 sidebar: tej
 body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
@@ -8,70 +8,124 @@ toc-depth: 2
 execute: {enabled: false}
 ---
 
-## Learning goals
+This is the first lesson in the capacitor sequence. Start here even if the hardware is not available.
 
-- I can describe a capacitor as two conductors separated by a dielectric.
-- I can identify capacitance, voltage rating, tolerance, and polarity where applicable.
-- I can calculate charge, stored energy, and an RC time constant.
-- I can explain why capacitor voltage cannot change instantaneously in the ideal model.
+::: {.callout-important title="Open the lesson materials"}
 
-## What is a capacitor?
+- **[Teaching slides](https://docs.google.com/presentation/d/1QKVYTvEYKO5p1Tl6bNlBuRuYwMWiad3VUAgJcsY9Dbg/edit){target="_blank"}**
+- **[Make a copy of the five-question sheet](https://docs.google.com/document/d/138IqjbDNyc9cwkKJ89LeYGx-B810x_O3lUpjP9jJKz4/copy){target="_blank"}**
+- **[Open the notebook in JupyterLite](https://jupyter.org/try-jupyter/lab/index.html?fromURL=https%3A%2F%2Fandrewandrade.ca%2Ftech-edu-resources%2Fassets%2Ftej-computational%2Fnotebooks%2F10-capacitors-from-zero.ipynb){target="_blank"}**
+- [Download the notebook](../../../assets/tej-computational/notebooks/10-capacitors-from-zero.ipynb)
 
-A **capacitor** stores separated charge and energy in an electric field. It has two conductive regions separated by an insulating **dielectric**. Capacitance is represented by $C$ and measured in farads (F).
+:::
 
-$$C=\frac{Q}{V} \qquad Q=CV$$
+## What you will learn
 
-One farad is very large for many electronic circuits, so common values use:
+- A capacitor has two conductors separated by an insulating dielectric.
+- Capacitance is measured in farads.
+- Many capacitors use microfarads, nanofarads, or picofarads.
+- A polarized capacitor must be connected the correct way.
+- The voltage rating must be greater than the circuit voltage.
 
-- microfarads: $1\,\mu\text{F}=10^{-6}\,\text{F}$;
-- nanofarads: $1\,\text{nF}=10^{-9}\,\text{F}$;
-- picofarads: $1\,\text{pF}=10^{-12}\,\text{F}$.
+## Look inside a capacitor
 
-The XL741 kit's 33 pF capacitor is therefore $33\times10^{-12}$ F. Its purpose is frequency compensation, not bulk energy storage.
+<figure class="ter-circuit-figure" id="fig-capacitor-structure" data-diagram-source="../../../assets/electronics/schematics/capacitor-structure.svg">
+<img src="../../../assets/electronics/schematics/capacitor-structure.svg" alt="A capacitor shown as two conductive plates separated by a dielectric, with positive and negative charge on opposite plates." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-capacitor-structure">Figure 1.</a> Charge does not pass straight through the dielectric. The separated charge creates an electric field.</figcaption>
+</figure>
 
-## Types, polarity, and ratings
+## Symbols and polarity
 
-Ceramic capacitors are often non-polarized. Many electrolytic capacitors are polarized and must be connected with the correct positive and negative terminals.
+<figure class="ter-circuit-figure" id="fig-capacitor-symbols" data-diagram-source="../../../assets/electronics/schematics/capacitor-symbols.svg">
+<img src="../../../assets/electronics/schematics/capacitor-symbols.svg" alt="Non-polarized and polarized capacitor symbols, with a plus mark on the positive side of the polarized symbol." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-capacitor-symbols">Figure 2.</a> Check polarity before connecting an electrolytic capacitor.</figcaption>
+</figure>
 
-Before using a capacitor, identify:
+## Units
 
-- capacitance;
-- maximum working voltage;
-- polarity, if any;
-- tolerance;
-- dielectric or capacitor type when behaviour matters;
-- stored-energy and discharge requirements.
+$$
+1\,\mathrm{F}=10^6\,\mu\mathrm{F},\qquad
+1\,\mu\mathrm{F}=10^3\,\mathrm{nF},\qquad
+1\,\mathrm{nF}=10^3\,\mathrm{pF}
+$$
 
-Never assume a capacitor is discharged because power is off.
+Example:
 
-## Energy and RC response
+$$
+220\,\mathrm{nF}\left(\frac{1\,\mu\mathrm{F}}{1000\,\mathrm{nF}}\right)=0.220\,\mu\mathrm{F}
+$$
 
-Stored energy in an ideal capacitor is:
+The unit you do not want cancels.
 
-$$E_C=\frac{1}{2}CV^2$$
+## Read the part before connecting it
 
-For a resistor and capacitor, the time constant is:
+<figure class="ter-circuit-figure" id="fig-capacitor-selection" data-diagram-source="../../../assets/electronics/schematics/capacitor-selection.svg">
+<img src="../../../assets/electronics/schematics/capacitor-selection.svg" alt="Three example capacitors showing a correct part, a part with the wrong voltage rating, and a part with the wrong capacitance." loading="lazy">
+<figcaption><a class="ter-figure-label" href="#fig-capacitor-selection">Figure 3.</a> Check capacitance, voltage rating, polarity, and physical fit.</figcaption>
+</figure>
 
-$$\tau=RC$$
+## Charge and energy
 
-For ideal charging from 0 V toward a source $V_S$:
+The charge stored by an ideal capacitor is:
 
-$$V_C(t)=V_S\left(1-e^{-t/RC}\right)$$
+$$
+Q=CV
+$$
 
-At one time constant, the capacitor reaches about 63.2% of its final voltage. After about five time constants, it is very close to the final value for many classroom purposes.
+The stored energy is:
 
-## Five-question starter
+$$
+E=\frac{1}{2}CV^2
+$$
 
-1. Describe the physical structure of a capacitor without saying that charge passes directly through its dielectric.
-2. Convert 100 nF to farads and microfarads.
-3. Calculate the charge stored by 47 µF at 5.0 V.
-4. Calculate the stored energy of 100 µF at 12.0 V and state a safe handling implication.
-5. For 10 kΩ and 100 µF, calculate $\tau$, predict $V_C(\tau)$ for a 5.0 V source, and explain what measurement would test the model.
+Use farads for $C$, volts for $V$, coulombs for $Q$, and joules for $E$.
 
-## Jupyter and lab pathway
+::: {.callout-warning title="Safe handling"}
+Disconnect power, discharge through a suitable resistor, and verify the voltage before handling a capacitor. Do not short a charged capacitor with a screwdriver.
+:::
 
-Use [Notebook 7: RC Circuits, Op-Amps, and a Bridge to Calculus](../../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb) before hardware. It graphs charging, estimates slope, accumulates area, and prepares later op-amp work.
+## Worked example using GUESS
 
-Adapt Grob Experiments 16-1 and 22-1 only with teacher-approved values, voltage ratings, discharge procedures, and protected low-voltage equipment. Simulation is the complete start-now route when oscilloscopes, loggers, or components are unavailable.
+A $68\,\mu\mathrm{F}$ capacitor is charged to $9.0\,\mathrm{V}$. Find the stored charge.
 
-**Textbook support:** Grob, Chapters 16 and 22, pp. 484-515 and 668-691. [[1, Chs. 16, 22]](../../../references.qmd#ref-grob2016) *Open Circuits* provides classroom cutaway views of capacitor construction. [[2]](../../../references.qmd#ref-opencircuits2023)
+**Given**
+
+$$C=68\times10^{-6}\,\mathrm{F},\qquad V=9.0\,\mathrm{V}$$
+
+**Unknown**
+
+$$Q=?$$
+
+**Equation**
+
+$$Q=CV$$
+
+**Substitute and solve**
+
+$$
+Q=(68\times10^{-6}\,\mathrm{F})(9.0\,\mathrm{V})
+=612\times10^{-6}\,\mathrm{C}
+$$
+
+**Statement**
+
+The capacitor stores $612\,\mu\mathrm{C}$ of charge.
+
+## Complete the work
+
+1. Watch [ElectroBOOM101-006: Capacitors](https://www.youtube.com/watch?v=rbCXKhhzBN0){target="_blank"} and the short calculation sections in [The Organic Chemistry Tutor capacitor lesson](https://www.youtube.com/watch?v=7H4I5dUnBB0){target="_blank"}.
+2. Complete the five-question sheet.
+3. Run the notebook and use it to check the arithmetic.
+4. Submit the question sheet and the completed `.ipynb` file.
+
+If the direct notebook link does not open, [download the notebook](../../../assets/tej-computational/notebooks/10-capacitors-from-zero.ipynb), open **[JupyterLite](https://jupyter.org/try-jupyter/lab/){target="_blank"}**, click **Upload Files**, and double-click the notebook.
+
+**Textbook support:** Grob, Chapter 16, sections 16-1 to 16-4, pp. 484-515. Practice support: Problems Manual, Chapter 16, pp. 238-250. Optional teacher-approved lab: Experiment 16-1. [[1, Ch. 16]](../../../references.qmd#ref-grob2016)
+
+## Next lesson
+
+Continue to [RC Charging and Discharging](rc-charge-discharge.qmd).
+
+## Help improve this lesson
+
+If a direction, diagram, or code cell is unclear, identify the exact step. Explain what you tried and what happened. A specific report can improve the lesson for everyone.
