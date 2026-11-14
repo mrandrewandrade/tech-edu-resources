@@ -2227,23 +2227,16 @@
     }
   }
 
-  function initializeLearnLeftSidebarToggle() {
+  function initializeLeftSidebarToggle() {
     const sidebar = document.getElementById("quarto-sidebar");
     if (!sidebar) {
       return;
     }
 
     const desktopQuery = window.matchMedia("(min-width: 992px)");
-    const sidebarScroller =
-      sidebar.querySelector(".sidebar-menu-container") || sidebar;
     const pageHeader = document.getElementById("quarto-header");
     const toggle = document.createElement("button");
     let collapsed = false;
-    let lastScrollY = window.scrollY;
-    let lastSidebarScrollTop = sidebarScroller.scrollTop;
-    let scrollingDown = false;
-    let pageScrollingDown = false;
-    let autoCollapsePending = window.scrollY <= 32;
     toggle.type = "button";
     toggle.className = "bs-learn-left-sidebar-toggle";
     toggle.dataset.bsLearnLeftSidebarToggle = "";
@@ -2264,13 +2257,9 @@
         "bs-learn-left-sidebar-toggle--nav-hidden",
         desktopQuery.matches &&
           window.scrollY > 32 &&
-          (pageScrollingDown || navbarHidden)
+          navbarHidden
       );
-      toggle.hidden =
-        !desktopQuery.matches ||
-        (!collapsed &&
-          scrollingDown &&
-          (window.scrollY > 32 || sidebarScroller.scrollTop > 4));
+      toggle.hidden = !desktopQuery.matches;
       if (!toggle.hidden && !collapsed) {
         positionExpandedToggle();
       }
@@ -2279,17 +2268,14 @@
     const update = function () {
       const active = desktopQuery.matches && collapsed;
       sidebar.hidden = active;
-      if (usesDockedSidebar) {
-        document.body.classList.toggle("docked", !active);
-      }
       document.body.classList.toggle("bs-learn-left-sidebar-collapsed", active);
       updateVisibility();
       toggle.setAttribute("aria-expanded", active ? "false" : "true");
       toggle.setAttribute(
         "aria-label",
-        active ? "Show sidebar navigation" : "Hide sidebar navigation"
+        active ? "Show site navigation" : "Hide site navigation"
       );
-      toggle.textContent = active ? "\u2192 Show Sidebar" : "\u2190 Hide";
+      toggle.textContent = active ? "\u2192 Show navigation" : "\u2190 Hide navigation";
       if (active) {
         toggle.style.left = "0.5rem";
       } else {
@@ -2302,54 +2288,6 @@
       update();
     });
     window.addEventListener("resize", update);
-    window.addEventListener(
-      "scroll",
-      function () {
-        const currentScrollY = window.scrollY;
-        if (currentScrollY <= 32) {
-          autoCollapsePending = true;
-          if (collapsed) {
-            collapsed = false;
-            pageScrollingDown = false;
-            scrollingDown = false;
-            lastScrollY = currentScrollY;
-            update();
-            return;
-          }
-        }
-        if (Math.abs(currentScrollY - lastScrollY) > 4) {
-          pageScrollingDown = currentScrollY > lastScrollY;
-          scrollingDown = pageScrollingDown;
-          lastScrollY = currentScrollY;
-          if (
-            autoCollapsePending &&
-            scrollingDown &&
-            currentScrollY > 32
-          ) {
-            autoCollapsePending = false;
-            if (!collapsed) {
-              collapsed = true;
-              update();
-              return;
-            }
-          }
-          updateVisibility();
-        }
-      },
-      { passive: true }
-    );
-    sidebarScroller.addEventListener(
-      "scroll",
-      function () {
-        const currentScrollTop = sidebarScroller.scrollTop;
-        if (Math.abs(currentScrollTop - lastSidebarScrollTop) > 4) {
-          scrollingDown = currentScrollTop > lastSidebarScrollTop;
-          lastSidebarScrollTop = currentScrollTop;
-          updateVisibility();
-        }
-      },
-      { passive: true }
-    );
     if (pageHeader && "MutationObserver" in window) {
       new MutationObserver(updateVisibility).observe(pageHeader, {
         attributes: true,
@@ -2477,6 +2415,7 @@
     canonicalShortDefinition: canonicalShortDefinition,
     groupControlState: groupControlState,
     inlineGlossaryTooltipPosition: inlineGlossaryTooltipPosition,
+    initializeLeftSidebarToggle: initializeLeftSidebarToggle,
     isMobileDrawerSwipe: isMobileDrawerSwipe,
     isSamePageTocHref: isSamePageTocHref,
     itemMatchesLesson: itemMatchesLesson,
@@ -2513,7 +2452,7 @@
       initializeInlineGlossary();
       initializeTermLookup();
       initializeMobileLessonBar();
-      initializeLearnLeftSidebarToggle();
+      initializeLeftSidebarToggle();
       placeLessonTrackLinks();
       placeLessonRightRailCards();
       mountLesson(document);

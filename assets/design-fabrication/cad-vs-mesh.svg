@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Parametric CAD compared with artistic mesh modelling</title>
+  <desc id="desc">Two panels compare a dimension-driven Onshape part with an editable parameter to a Blender mesh made from vertices, edges and faces.</desc>
+  <rect width="1200" height="520" rx="28" fill="#f7f4ee"/>
+  <g font-family="Arial, sans-serif" fill="#142536">
+    <text x="70" y="64" font-size="30" font-weight="700">PARAMETRIC / SOLID CAD</text>
+    <text x="670" y="64" font-size="30" font-weight="700">MESH / ARTISTIC MODELLING</text>
+    <text x="70" y="100" font-size="20">Onshape · constraints · dimensions · features</text>
+    <text x="670" y="100" font-size="20">Blender · vertices · edges · faces</text>
+  </g>
+  <g transform="translate(90 145)" stroke="#142536" stroke-width="8" fill="#d9a66b">
+    <path d="M45 220V70h300v150h-95v-70H140v70Z"/>
+    <circle cx="195" cy="110" r="28" fill="#f7f4ee"/>
+    <path d="M45 260h300M45 245v30M345 245v30" fill="none" stroke-width="4"/>
+    <path d="M45 260l24-12v24Zm300 0-24-12v24Z" stroke="none" fill="#142536"/>
+    <text x="155" y="304" font-family="Arial, sans-serif" font-size="24" fill="#142536" stroke="none">width = 80 mm</text>
+    <rect x="32" y="333" width="330" height="58" rx="10" fill="#142536" stroke="none"/>
+    <text x="58" y="371" font-family="Arial, sans-serif" font-size="22" fill="#fff" stroke="none">Change 80 → 95; model updates</text>
+  </g>
+  <g transform="translate(700 135)" stroke="#142536" stroke-width="3" fill="#c8d7df">
+    <path d="M0 265 85 45l125 50 95-55 120 205-170 105Z"/>
+    <path d="M0 265 210 95l45 255M85 45l170 305M210 95l95 150M0 265l305-20 120 0M85 45l125 50 215 150" fill="none"/>
+    <g fill="#b76537" stroke="none"><circle cx="0" cy="265" r="8"/><circle cx="85" cy="45" r="8"/><circle cx="210" cy="95" r="8"/><circle cx="305" cy="40" r="8"/><circle cx="425" cy="245" r="8"/><circle cx="255" cy="350" r="8"/></g>
+    <rect x="18" y="363" width="392" height="58" rx="10" fill="#142536" stroke="none"/>
+    <text x="43" y="401" font-family="Arial, sans-serif" font-size="22" fill="#fff" stroke="none">Push, pull and sculpt visible form</text>
+  </g>
+</svg>

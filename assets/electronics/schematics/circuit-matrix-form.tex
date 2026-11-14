@@ -1,0 +1,17 @@
+\documentclass[border=10pt]{standalone}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath}
+\definecolor{TechCharcoal}{HTML}{202124}
+\definecolor{TechNavy}{HTML}{18324B}
+\begin{document}
+\begin{tikzpicture}
+  \node[draw=TechNavy,rounded corners=7pt,line width=1.3pt,fill=TechNavy!5,
+        inner xsep=22pt,inner ysep=18pt,text=TechCharcoal,font=\Large] {
+    $\begin{bmatrix}5&-2\\-2&7\end{bmatrix}
+     \begin{bmatrix}I_1\\I_2\end{bmatrix}
+     =
+     \begin{bmatrix}10\\6\end{bmatrix}$
+  };
+\end{tikzpicture}
+\end{document}

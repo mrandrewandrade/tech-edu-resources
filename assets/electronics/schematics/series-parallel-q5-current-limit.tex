@@ -7,7 +7,7 @@
 \begin{document}
 \begin{circuitikz}[line width=1.15pt,draw=TechCharcoal,text=TechCharcoal]
   \ctikzset{bipoles/length=1.2cm}
-  \draw (0,0) to[battery1,l_={\(V_T=12.0\,\mathrm{V}\)}] (0,4)
+  \draw (0,0) to[battery1,invert,l_={\(V_T=12.0\,\mathrm{V}\)}] (0,4)
         -- (0.9,4)
         to[R,l={\(R_S=?\)}] (3.5,4)
         to[R,l={\(R_1=330\,\mathrm{\Omega}\)}] (6.1,4)
@@ -17,6 +17,7 @@
   \draw (7.1,4) -- (9.4,4)
         to[R,l={\(R_3=1.0\,\mathrm{k\Omega}\)}] (9.4,0)
         -- (7.1,0);
+  \draw (0,0) node[ground] {};
   \draw[->,TechBlue,thick] (0.9,5.15) -- (2.4,5.15) node[midway,above,text=TechBlue]{\(I_T\leq15.0\,\mathrm{mA}\)};
 \end{circuitikz}
 \end{document}

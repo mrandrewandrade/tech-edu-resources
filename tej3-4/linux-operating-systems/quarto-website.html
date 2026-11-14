@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Turn Markdown source files into a small local website and manage the source with Git.">
+<meta name="description" content="Turn Markdown, YAML, images, and project metadata into a small searchable technical portfolio.">
 
 <title>Build a Website with Quarto – Technological Education Resources</title>
 <style>
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -93,10 +128,10 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../assets/tej-equations-v2.css">
 <link rel="stylesheet" href="../../assets/tej-systems-visual.css">
 <meta property="og:title" content="Build a Website with Quarto – Technological Education Resources">
-<meta property="og:description" content="Turn Markdown source files into a small local website and manage the source with Git.">
+<meta property="og:description" content="Turn Markdown, YAML, images, and project metadata into a small searchable technical portfolio.">
 <meta property="og:site_name" content="Technological Education Resources">
 <meta name="twitter:title" content="Build a Website with Quarto – Technological Education Resources">
-<meta name="twitter:description" content="Turn Markdown source files into a small local website and manage the source with Git.">
+<meta name="twitter:description" content="Turn Markdown, YAML, images, and project metadata into a small searchable technical portfolio.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -226,8 +261,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Circuits and Electronics</span></a>
+            <a href="../../tej3-4/portfolio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Project Portfolio</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -235,32 +270,103 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/portfolio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Build a Technical Portfolio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Circuits and Electronics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/schematic-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Component Foundations: Circuits and Schematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/resistors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Component Foundations: Resistors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Capacitors 1: Capacitors from Zero</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/rc-charge-discharge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Capacitors 2: RC Charging and Discharging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/rc-time-constant-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Capacitors 3: RC Time Constants and Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/diodes-leds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Component Foundations: Diodes and LEDs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/transistors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Component Foundations: Transistors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/op-amps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Component Foundations: Operational Amplifiers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/parallel-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Package 1: Basic Electricity and Parallel Circuits</span></a>
+ <span class="menu-text">9. Package 1: Basic Electricity and Parallel Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/series-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Package 2: Parallel Review and Series Circuits</span></a>
+ <span class="menu-text">10. Package 2: Parallel Review and Series Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/series-parallel-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Series-Parallel Circuits</span></a>
+ <span class="menu-text">11. Series-Parallel Combination Circuits, Part A</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/kirchhoffs-laws.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Kirchhoff’s Laws</span></a>
+ <span class="menu-text">12. Kirchhoff’s Laws</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/circuits/linear-algebra-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Linear Algebra for Circuits</span></a>
+ <span class="menu-text">13. Linear Algebra for Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/tinkercad-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14. Build and Measure Circuits in Tinkercad</span></a>
   </div>
 </li>
       </ul>
@@ -269,11 +375,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../tej3-4/computer-systems/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">6. Computer Systems</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/computer-systems/safe-opening-and-parts/index.html" class="sidebar-item-text sidebar-link">
@@ -282,14 +388,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tej3-4/computer-systems/monitors-ports-and-peripherals/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Monitors, Signals, Ports, and Cables</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../tej3-4/computer-systems/usb-and-cable-management/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. USB, Peripherals, and Cable Management</span></a>
+ <span class="menu-text">2. USB, Peripherals, and Cable Management</span></a>
   </div>
 </li>
       </ul>
@@ -298,11 +398,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../tej3-4/linux-operating-systems/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">7. Linux and Operating Systems</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/linux-operating-systems/choosing-a-distribution.html" class="sidebar-item-text sidebar-link">
@@ -381,11 +481,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../tej3-4/networking/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">8. Networking</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tej3-4/networking/how-wifi-and-ethernet-connect/index.html" class="sidebar-item-text sidebar-link">
@@ -406,6 +506,71 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/computational-engineering/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Computational Engineering</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/jupyterlite.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Python Engineering Notebooks with JupyterLite</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/circuit-quest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Circuit Quest: Power the Grid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/python-first-steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Assignment: Python First Steps</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/local-python-jupyter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Run Python and Jupyter on Your Own Computer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/python-numpy-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Assignment: Python and NumPy Foundations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Find Documentation and Ask for Programming Help</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Assignment: From Two Loops to a Matrix</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/jupyter-electronics-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Jupyter Electronics Lab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/midterm-circuit-investigation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Life Checkpoint Upgrade: Jupyter + Tinkercad</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -417,10 +582,21 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#build-in-small-steps" id="toc-build-in-small-steps" class="nav-link" data-scroll-target="#build-in-small-steps">Build in small steps</a></li>
-  <li><a href="#evidence" id="toc-evidence" class="nav-link" data-scroll-target="#evidence">Evidence</a></li>
-  <li><a href="#extend-your-learning" id="toc-extend-your-learning" class="nav-link" data-scroll-target="#extend-your-learning">Extend your learning</a></li>
-  <li><a href="#review-and-reflect" id="toc-review-and-reflect" class="nav-link" data-scroll-target="#review-and-reflect">Review and reflect</a></li>
+  <li><a href="#why-this-is-useful" id="toc-why-this-is-useful" class="nav-link" data-scroll-target="#why-this-is-useful">Why this is useful</a></li>
+  <li><a href="#what-you-will-make" id="toc-what-you-will-make" class="nav-link" data-scroll-target="#what-you-will-make">What you will make</a></li>
+  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
+  <li><a href="#learn-the-source-structure" id="toc-learn-the-source-structure" class="nav-link" data-scroll-target="#learn-the-source-structure">1. Learn the source structure</a></li>
+  <li><a href="#write-markdown" id="toc-write-markdown" class="nav-link" data-scroll-target="#write-markdown">2. Write Markdown</a></li>
+  <li><a href="#edit-yaml-safely" id="toc-edit-yaml-safely" class="nav-link" data-scroll-target="#edit-yaml-safely">3. Edit YAML safely</a></li>
+  <li><a href="#configure-the-website" id="toc-configure-the-website" class="nav-link" data-scroll-target="#configure-the-website">4. Configure the website</a></li>
+  <li><a href="#add-a-project-listing" id="toc-add-a-project-listing" class="nav-link" data-scroll-target="#add-a-project-listing">5. Add a project listing</a></li>
+  <li><a href="#use-the-optional-blog" id="toc-use-the-optional-blog" class="nav-link" data-scroll-target="#use-the-optional-blog">6. Use the optional blog</a></li>
+  <li><a href="#preview-render-and-commit" id="toc-preview-render-and-commit" class="nav-link" data-scroll-target="#preview-render-and-commit">7. Preview, render, and commit</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#check-your-work" id="toc-check-your-work" class="nav-link" data-scroll-target="#check-your-work">Check your work</a></li>
+  <li><a href="#save-and-submit" id="toc-save-and-submit" class="nav-link" data-scroll-target="#save-and-submit">Save and submit</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -436,12 +612,13 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-category">Markdown</div>
     <div class="quarto-category">websites</div>
     <div class="quarto-category">Git</div>
+    <div class="quarto-category">portfolio</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Turn Markdown source files into a small local website and manage the source with Git.
+    Turn Markdown, YAML, images, and project metadata into a small searchable technical portfolio.
   </div>
 </div>
 
@@ -461,41 +638,194 @@ ul.task-list li input[type="checkbox"] {
 <section id="learning-goals" class="level2">
 <h2 class="anchored" data-anchor-id="learning-goals">Learning goals</h2>
 <ul>
-<li>I will be able to distinguish source files from rendered website files.</li>
-<li>I will be able to create, preview, edit, and render a small Quarto website.</li>
-<li>I will be able to commit meaningful website changes with Git.</li>
+<li>I can distinguish Quarto source files, configuration, assets, and rendered output.</li>
+<li>I can write Markdown and YAML, use relative links, and add accessible images.</li>
+<li>I can configure navigation, search, and a sortable, filterable project listing.</li>
+<li>I can render, test, troubleshoot, and commit a small site.</li>
 </ul>
-<p>This is important because it enables me to publish technical work from plain-text files that are easy to review, reproduce, and improve.</p>
 </section>
-<section id="build-in-small-steps" class="level2">
-<h2 class="anchored" data-anchor-id="build-in-small-steps">Build in small steps</h2>
-<ol type="1">
-<li>Confirm that Git and Quarto are installed with <code>git --version</code> and <code>quarto --version</code>.</li>
-<li>Use a teacher template or create a basic Quarto website inside your Git repository.</li>
-<li>Add a home page, an <strong>About me as a technologist</strong> page, and a <strong>Linux learning log</strong> page. Do not publish private information.</li>
-<li>Preview locally with <code>quarto preview</code>.</li>
-<li>Fix warnings and broken links.</li>
-<li>Render the complete site with <code>quarto render</code>.</li>
-<li>Open the generated site locally and test every navigation link.</li>
-<li>Review <code>git status</code>, then commit only the intended source and configuration files.</li>
-</ol>
-<p>Your first site should be simple. Clear headings, useful alt text, readable colour contrast, and working links matter more than effects.</p>
+<section id="why-this-is-useful" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-useful">Why this is useful</h2>
+<p>Quarto turns readable plain-text source into a consistent website. It can combine engineering explanations, equations, code, graphs, and project evidence without hand-editing HTML.</p>
 </section>
-<section id="evidence" class="level2">
-<h2 class="anchored" data-anchor-id="evidence">Evidence</h2>
-<p>Submit a screenshot of the local preview, the repository history, and a short explanation of <code>.qmd</code>, <code>_quarto.yml</code>, and <code>_site</code>. Record one problem you found by testing the rendered site.</p>
+<section id="what-you-will-make" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-make">What you will make</h2>
+<p>Download and extract the <a href="../../assets/tej-portfolio/quarto-portfolio-starter.zip">TEJ Quarto portfolio starter</a>. You will add one project, one category, an accessible image, and a tested relative link. This teaching website is a larger Quarto example; your project stays intentionally small.</p>
 </section>
-<section id="extend-your-learning" class="level2">
-<h2 class="anchored" data-anchor-id="extend-your-learning">Extend your learning</h2>
+<section id="before-you-start" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
 <ul>
-<li>Follow the official <a href="https://quarto.org/docs/websites/">Quarto website guide</a>.</li>
-<li>Add one image with useful alternative text.</li>
-<li>Create a page that documents your Linux hardware inventory.</li>
+<li>Complete <a href="../../tej3-4/linux-operating-systems/git-version-control.html">Git: Save the History of Your Work</a>.</li>
+<li>Install Quarto on an unrestricted computer and run <code>quarto check</code> and <code>git --version</code>.</li>
+<li>Read the starter <code>README.md</code>.</li>
+<li>Do not place private student information, credentials, classroom codes, or restricted files in the project.</li>
+</ul>
+<p>JupyterLite cannot render Quarto websites. Use a local or teacher-authorized hosted environment with the Quarto CLI.</p>
+</section>
+<section id="learn-the-source-structure" class="level2">
+<h2 class="anchored" data-anchor-id="learn-the-source-structure">1. Learn the source structure</h2>
+<pre class="text"><code>quarto-portfolio-starter/
+├── _quarto.yml       # project and website configuration
+├── index.qmd         # home page source
+├── about.qmd         # about page source
+├── projects/         # listing page and project pages
+├── blog/             # optional posts and listing
+├── assets/           # images and downloadable evidence
+├── styles.css        # small visual adjustments
+└── _site/            # generated output; do not edit</code></pre>
+<p>A relative link starts from the file containing the link. From <code>projects/circuit-analysis.qmd</code>, <code>../assets/circuit-project.svg</code> moves up from <code>projects/</code>, then into <code>assets/</code>.</p>
+</section>
+<section id="write-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="write-markdown">2. Write Markdown</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Page title</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Section heading</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Write a paragraph with **strong text**, *emphasis*, and a <span class="co">[</span><span class="ot">useful link</span><span class="co">](https://quarto.org/)</span>.</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Use a list for related items.</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keep units beside measured values.</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="al">![Useful description of the evidence](../assets/example.svg)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use descriptive link text. Alt text should state what a reader needs to notice, not repeat the filename.</p>
+</section>
+<section id="edit-yaml-safely" class="level2">
+<h2 class="anchored" data-anchor-id="edit-yaml-safely">3. Edit YAML safely</h2>
+<p>YAML front matter sits between <code>---</code> lines at the top of a page:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Motor Current Test"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"Compare predicted and measured current during a load test."</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> 2026-01-20</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">electronics</span><span class="kw">,</span><span class="at"> motors</span><span class="kw">,</span><span class="at"> measurement</span><span class="kw">]</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> ../assets/motor-test.svg</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">image-alt</span><span class="kw">:</span><span class="at"> </span><span class="st">"Current rises as the motor load increases across four measured points."</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Indent with spaces, keep list items aligned, and quote text containing punctuation when unsure. A render error that names a line near the page top often indicates malformed YAML.</p>
+</section>
+<section id="configure-the-website" class="level2">
+<h2 class="anchored" data-anchor-id="configure-the-website">4. Configure the website</h2>
+<p><code>_quarto.yml</code> sets project-wide behaviour. The starter uses a navbar, local full-text search, a Cosmo theme, shared CSS, a footer, and <code>_site</code> output.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> projects/index.qmd</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Projects</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">search</span><span class="kw">:</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">location</span><span class="kw">:</span><span class="at"> navbar</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">type</span><span class="kw">:</span><span class="at"> overlay</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use the official <a href="https://quarto.org/docs/websites/website-navigation">navigation guide</a> if you need a sidebar for a larger site. Do not add a sidebar merely to imitate this course website.</p>
+<p>Change the theme through the documented <code>format.html.theme</code> option. Keep readable contrast, visible keyboard focus, responsive layout, and consistent headings. Test at a narrow window width before adding custom CSS.</p>
+</section>
+<section id="add-a-project-listing" class="level2">
+<h2 class="anchored" data-anchor-id="add-a-project-listing">5. Add a project listing</h2>
+<p>The starter’s <code>projects/index.qmd</code> uses Quarto’s native listing:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span><span class="st">"*.qmd"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> grid</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">grid-columns</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">]</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">title</span><span class="kw">,</span><span class="at"> description</span><span class="kw">,</span><span class="at"> categories</span><span class="kw">]</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Each project contributes its title, description, date, categories, and image through YAML. Quarto builds the responsive card grid, filter box, category controls, and sort controls. No custom JavaScript is required.</p>
+<p>To add a category, add a term to one project’s <code>categories</code> list and render. To change default order, change <code>sort</code> using the official <a href="https://quarto.org/docs/websites/website-listings.html">listing documentation</a>.</p>
+</section>
+<section id="use-the-optional-blog" class="level2">
+<h2 class="anchored" data-anchor-id="use-the-optional-blog">6. Use the optional blog</h2>
+<p>The <code>blog/</code> folder demonstrates dated posts and categories. Add a post by copying a file in <code>blog/posts/</code>, changing its metadata, and writing the note. To remove the blog, remove its navbar entry, delete the folder, render, and verify navigation and search. The starter README records the same procedure.</p>
+</section>
+<section id="preview-render-and-commit" class="level2">
+<h2 class="anchored" data-anchor-id="preview-render-and-commit">7. Preview, render, and commit</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Preview after one small change. Stop the preview with <strong>Ctrl+C</strong>. Then build the complete static site:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Test the home page, project grid, category filter, sort control, search, images, and every changed link. Inspect the terminal for warnings.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add _quarto.yml index.qmd about.qmd projects blog assets styles.css README.md .gitignore</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff <span class="at">--staged</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add tested engineering portfolio project"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Adjust the file list to match your intended changes. Do not add <code>_site</code>, <code>.quarto</code>, secrets, or private evidence.</p>
+</section>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>Your new project does not appear correctly: its image is broken, its category is missing, or the render stops.</p>
+<p><strong>The essential skill:</strong> use the first specific error, inspect the named source, make one change, and render again.</p>
+<p><strong>The challenge:</strong> add one project and category, change the project ordering, repair one broken image and relative link, and explain how you found the correct Quarto option.</p>
+<p><strong>The stumbling block:</strong> YAML indentation and relative paths can look plausible while pointing to a different structure than the rendered site expects.</p>
+<p><strong>The investigation:</strong> search the official <a href="https://quarto.org/docs/websites/">Quarto website guide</a>, <a href="https://quarto.org/docs/websites/website-listings.html">listing guide</a>, and <a href="https://quarto.org/docs/websites/website-search.html">search guide</a> using the exact option or error text.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Hint 1: concept clue">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Hint 1: concept clue
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Separate the failure: configuration, page metadata, file path, or page content.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Hint 2: documentation clue">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Hint 2: documentation clue
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Search for <code>Quarto listing sort-ui filter-ui categories</code> or the exact YAML key named by the error.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Hint 3: technical clue">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Hint 3: technical clue
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Validate YAML spacing, confirm filename capitalization, then count folder levels from the page containing the relative link.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="check-your-work" class="level2">
+<h2 class="anchored" data-anchor-id="check-your-work">Check your work</h2>
+<ul>
+<li><code>quarto render</code> completes without an unexplained warning.</li>
+<li>Search finds text from the new project.</li>
+<li>The listing filters by its new category and sorts by the selected field.</li>
+<li>Images load at desktop and narrow widths and have useful alt text.</li>
+<li>Internal links work from the rendered site.</li>
+<li><code>git status</code> shows only intended source files.</li>
 </ul>
 </section>
-<section id="review-and-reflect" class="level2">
-<h2 class="anchored" data-anchor-id="review-and-reflect">Review and reflect</h2>
-<p>Which files are the source of your website? Why should you test the rendered output instead of assuming the source will work?</p>
+<section id="save-and-submit" class="level2">
+<h2 class="anchored" data-anchor-id="save-and-submit">Save and submit</h2>
+<p>Keep the complete source project. Submit a teacher-approved ZIP or repository plus a screenshot of the local rendered result and <code>git log --oneline</code>. Publishing is optional; if assigned, continue to <a href="../../tej3-4/linux-operating-systems/publish-github-pages.html">Publish Your Quarto Site with GitHub Pages</a>.</p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<p>What was the first useful error or observation? Which documentation page or search terms led to the fix, and what test proved it?</p>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>You can now build and verify a small technical website from maintainable source. Use <a href="../portfolio/">Build a Technical Portfolio</a> to decide what engineering evidence belongs in each project.</p>
 
 
 </section>
@@ -555,15 +885,21 @@ ul.task-list li input[type="checkbox"] {
 
     "bs-learn-scroll.js",
 
-    "tej-equations-v1.js"
+    "tej-equations-v1.js",
+
+    "tej-diagram-sources.js"
 
   ].forEach(function (file) {
 
     const versions = {
 
+      "bs-learn.js": "20261024-2",
+
       "bs-learn-scroll.js": "20261013-1",
 
-      "tej-equations-v1.js": "20261013-1"
+      "tej-equations-v1.js": "20261017-1",
+
+      "tej-diagram-sources.js": "20261017-1"
 
     };
 
@@ -582,6 +918,8 @@ ul.task-list li input[type="checkbox"] {
 })();
 
 </script>
+
+
 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

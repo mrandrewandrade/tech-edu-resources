@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.15">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Open, run, edit, save, download, and submit engineering notebooks in a browser.">
+
+<title>Python Engineering Notebooks with JupyterLite – Technological Education Resources</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-71c7b49c685e597d910cb795eccce780.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a8915aa26982f2aa87b37c986303974c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" type="image/svg+xml" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.svg">
+
+<link rel="icon" type="image/png" sizes="96x96" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon-96x96.png">
+
+<link rel="icon" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/favicon.ico" sizes="any">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/apple-touch-icon.png">
+
+<link rel="manifest" href="https://andrewandrade.ca/tech-edu-resources/assets/branding/logo/site.webmanifest">
+
+<meta name="theme-color" content="#062650">
+
+
+
+<link rel="stylesheet" href="../../assets/bs-shared.css">
+<link rel="stylesheet" href="../../assets/bs-components.css">
+<link rel="stylesheet" href="../../assets/commons-overrides.css">
+<link rel="stylesheet" href="../../assets/bs-learn.css">
+<link rel="stylesheet" href="../../assets/tej-curriculum.css">
+<link rel="stylesheet" href="../../assets/tej-equations-v2.css">
+<link rel="stylesheet" href="../../assets/tej-systems-visual.css">
+<meta property="og:title" content="Python Engineering Notebooks with JupyterLite – Technological Education Resources">
+<meta property="og:description" content="Open, run, edit, save, download, and submit engineering notebooks in a browser.">
+<meta property="og:site_name" content="Technological Education Resources">
+<meta name="twitter:title" content="Python Engineering Notebooks with JupyterLite – Technological Education Resources">
+<meta name="twitter:description" content="Open, run, edit, save, download, and submit engineering notebooks in a browser.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed bs-learn-article ter-notes-lesson quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo light-content">
+    <img src="../../assets/branding/pcss/tech-edu-resources.png" alt="Technological Education Resources" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Tech Edu</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-educator-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Educator Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-educator-resources">    
+        <li>
+    <a class="dropdown-item" href="../../teacher-slides/index.html">
+ <span class="dropdown-text">General Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching-materials/index.html">
+ <span class="dropdown-text">General Materials</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../design-fabrication/index.html">
+ <span class="dropdown-text">General Design &amp; Fabrication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tej3-4/index.html">
+ <span class="dropdown-text">Computer Engineering Notes</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-classes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Classes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-classes">    
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tas-2-sem-1.html">
+ <span class="dropdown-text">TAS Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-tej-3-sem-1.html">
+ <span class="dropdown-text">TEJ Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../slides/2026-27-ttj-sem-1.html">
+ <span class="dropdown-text">TTJ / TTS Slides</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../glossary/index.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lore/index.html"> 
+<span class="menu-text">Lore</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/computational-engineering/index.html">9. Computational Engineering</a></li><li class="breadcrumb-item"><a href="../../tej3-4/computational-engineering/jupyterlite.html">1. Python Engineering Notebooks with JupyterLite</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TEJ3/4 Computer Engineering Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/curriculum/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Curriculum Roadmap</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/engineering-preparation-track/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Engineering Preparation Track</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Electronics Lesson Library</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/portfolio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Project Portfolio</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/portfolio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Build a Technical Portfolio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Circuits and Electronics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/schematic-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Component Foundations: Circuits and Schematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/resistors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Component Foundations: Resistors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Capacitors 1: Capacitors from Zero</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/rc-charge-discharge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Capacitors 2: RC Charging and Discharging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/rc-time-constant-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Capacitors 3: RC Time Constants and Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/diodes-leds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Component Foundations: Diodes and LEDs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/transistors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Component Foundations: Transistors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/electronics-library/components/op-amps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Component Foundations: Operational Amplifiers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/parallel-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Package 1: Basic Electricity and Parallel Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/series-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10. Package 2: Parallel Review and Series Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/series-parallel-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11. Series-Parallel Combination Circuits, Part A</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/kirchhoffs-laws.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12. Kirchhoff’s Laws</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/linear-algebra-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13. Linear Algebra for Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/circuits/tinkercad-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14. Build and Measure Circuits in Tinkercad</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/computer-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Computer Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/safe-opening-and-parts/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Open a Computer Safely and Identify the Parts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computer-systems/usb-and-cable-management/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. USB, Peripherals, and Cable Management</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/linux-operating-systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Linux and Operating Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/choosing-a-distribution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Choosing a Linux Distribution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/install-linux-mint.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Install Linux Mint</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/explore-linux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Explore Linux</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/know-your-computer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Know Your Linux Computer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/files-terminal-permissions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Files, Terminal, and Permissions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/git-version-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Git Version Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/quarto-website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Build a Quarto Website</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/publish-github-pages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Publish with GitHub Pages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/python-data-logging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Python Measurement Logging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/python-analysis-curve-fitting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10. Python Analysis and Curve Fitting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/networking-ssh-tmux.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11. Networking, SSH, and tmux</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12. Power and Raspberry Pi Bridge</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/networking/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Networking</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/networking/how-wifi-and-ethernet-connect/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. How Wi-Fi and Ethernet Connect</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/networking/ethernet-cable-categories/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Ethernet Cable Categories and Speeds</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/networking/build-and-test-ethernet-cable/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Build and Test an Ethernet Cable</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tej3-4/computational-engineering/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Computational Engineering</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/jupyterlite.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">1. Python Engineering Notebooks with JupyterLite</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/circuit-quest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Circuit Quest: Power the Grid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/python-first-steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Assignment: Python First Steps</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/local-python-jupyter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Run Python and Jupyter on Your Own Computer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/python-numpy-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Assignment: Python and NumPy Foundations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Find Documentation and Ask for Programming Help</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Assignment: From Two Loops to a Matrix</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/jupyter-electronics-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Jupyter Electronics Lab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tej3-4/computational-engineering/midterm-circuit-investigation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Life Checkpoint Upgrade: Jupyter + Tinkercad</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
+  <li><a href="#why-this-is-useful" id="toc-why-this-is-useful" class="nav-link" data-scroll-target="#why-this-is-useful">Why this is useful</a></li>
+  <li><a href="#what-you-will-make" id="toc-what-you-will-make" class="nav-link" data-scroll-target="#what-you-will-make">What you will make</a></li>
+  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
+  <li><a href="#open-the-notebook" id="toc-open-the-notebook" class="nav-link" data-scroll-target="#open-the-notebook">1. Open the notebook</a></li>
+  <li><a href="#run-change-and-rerun-code" id="toc-run-change-and-rerun-code" class="nav-link" data-scroll-target="#run-change-and-rerun-code">2. Run, change, and rerun code</a></li>
+  <li><a href="#if-you-see-a-red-message" id="toc-if-you-see-a-red-message" class="nav-link" data-scroll-target="#if-you-see-a-red-message">3. If you see a red message</a></li>
+  <li><a href="#complete-python-first-steps" id="toc-complete-python-first-steps" class="nav-link" data-scroll-target="#complete-python-first-steps">4. Complete Python First Steps</a></li>
+  <li><a href="#save-download-reopen-and-submit" id="toc-save-download-reopen-and-submit" class="nav-link" data-scroll-target="#save-download-reopen-and-submit">5. Save, download, reopen, and submit</a></li>
+  <li><a href="#notebook-progression" id="toc-notebook-progression" class="nav-link" data-scroll-target="#notebook-progression">Notebook progression</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#check-your-work" id="toc-check-your-work" class="nav-link" data-scroll-target="#check-your-work">Check your work</a></li>
+  <li><a href="#next-step" id="toc-next-step" class="nav-link" data-scroll-target="#next-step">Next step</a></li>
+  <li><a href="#help-improve-this-lesson-optional" id="toc-help-improve-this-lesson-optional" class="nav-link" data-scroll-target="#help-improve-this-lesson-optional">Help improve this lesson (optional)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tej3-4/computational-engineering/index.html">9. Computational Engineering</a></li><li class="breadcrumb-item"><a href="../../tej3-4/computational-engineering/jupyterlite.html">1. Python Engineering Notebooks with JupyterLite</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Python Engineering Notebooks with JupyterLite</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">JupyterLite</div>
+    <div class="quarto-category">notebooks</div>
+    <div class="quarto-category">data analysis</div>
+    <div class="quarto-category">circuits</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Open, run, edit, save, download, and submit engineering notebooks in a browser.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-goals" class="level2">
+<h2 class="anchored" data-anchor-id="learning-goals">Learning goals</h2>
+<ul>
+<li>I can run and revise Python and Markdown cells in a notebook.</li>
+<li>I can run simple Python, change a value, and check the output.</li>
+<li>I can download an <code>.ipynb</code> file and protect my work from browser-data loss.</li>
+</ul>
+</section>
+<section id="why-this-is-useful" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-useful">Why this is useful</h2>
+<p>Python can repeat calculations, test a range of values, and show patterns that are hard to see in one handwritten example. A notebook keeps code, evidence, and explanation together.</p>
+</section>
+<section id="what-you-will-make" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-make">What you will make</h2>
+<p>New Jupyter users will open <strong>Notebook 0</strong>, run one line at a time, use Python as a calculator, store values in variables, recognize basic types, work with a list, and finish with one small NumPy array. Complete <a href="../../tej3-4/computational-engineering/python-first-steps.html">Python First Steps</a> before beginning the larger <a href="../../tej3-4/computational-engineering/python-numpy-foundations.html">Python and NumPy Foundations assignment</a>.</p>
+</section>
+<section id="before-you-start" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Open JupyterLite in your browser">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Open JupyterLite in your browser
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>JupyterLite is the browser program that opens and runs the downloaded <code>.ipynb</code> notebook.</strong> It is separate from this instruction page.</p>
+<ol type="1">
+<li>Download <a href="../../assets/tej-computational/notebooks/00-python-first-steps.ipynb">Notebook 0: Python First Steps</a>.</li>
+<li>Click <strong><a href="https://jupyter.org/try-jupyter/lab/">OPEN JUPYTERLITE NOW</a></strong>. A new tab containing JupyterLab will open; this is the JupyterLite workspace.</li>
+<li>In that new tab, use <strong>Upload Files</strong> to upload <code>00-python-first-steps.ipynb</code>.</li>
+<li>Double-click the uploaded notebook. Choose <strong>Python (Pyodide)</strong> if JupyterLite asks for a kernel.</li>
+</ol>
+</div>
+</div>
+<p>Use a current school-approved Chrome or Firefox browser. Private browsing can block features JupyterLite needs. The public JupyterLite demonstration’s available kernels and packages can change.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Browser storage is not cloud storage">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Browser storage is not cloud storage
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>JupyterLite normally stores edited files in this browser’s local storage. Another device, another browser profile, cleared site data, or a school reset may not have your work. Download the <code>.ipynb</code> file after every work period and keep the downloaded copy in the teacher-approved location.</p>
+</div>
+</div>
+</section>
+<section id="open-the-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="open-the-notebook">1. Open the notebook</h2>
+<ol type="1">
+<li>Click <strong><a href="https://jupyter.org/try-jupyter/lab/">OPEN JUPYTERLITE NOW</a></strong> and wait until the JupyterLab file browser and launcher finish loading.</li>
+<li>Choose the <strong>Upload Files</strong> button in the file browser, or drag the downloaded notebook into the file area.</li>
+<li>Double-click <code>00-python-first-steps.ipynb</code>.</li>
+<li>If asked for a kernel, choose the available <strong>Python (Pyodide)</strong> kernel. Wait until the kernel status is ready.</li>
+</ol>
+<p>A notebook is a sequence of cells. A <strong>Code</strong> cell runs Python. A <strong>Markdown</strong> cell displays headings, lists, links, equations, and explanations.</p>
+</section>
+<section id="run-change-and-rerun-code" class="level2">
+<h2 class="anchored" data-anchor-id="run-change-and-rerun-code">2. Run, change, and rerun code</h2>
+<p>Click the first code cell and press <strong>Shift+Enter</strong>. The cell runs and the selection moves to the next cell. The first scientific-package import can take longer because a browser kernel may need to load packages.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, TEJ!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see <code>Hello, TEJ!</code> under the cell. Change only the words inside the quotation marks, press <strong>Shift+Enter</strong> again, and check that the new words appear.</p>
+</section>
+<section id="if-you-see-a-red-message" class="level2">
+<h2 class="anchored" data-anchor-id="if-you-see-a-red-message">3. If you see a red message</h2>
+<p>Stop and read the last line.</p>
+<ul>
+<li><code>NameError</code> often means a variable name is misspelled. Compare it with the earlier cell.</li>
+<li><code>SyntaxError</code> often means a quotation mark or bracket is missing.</li>
+<li>An old answer can mean the cells were run out of order. Save the notebook, then choose <strong>Kernel &gt; Restart Kernel and Run All Cells</strong>.</li>
+</ul>
+<p>The larger documentation and debugging lesson comes later, after the Python basics are comfortable.</p>
+</section>
+<section id="complete-python-first-steps" class="level2">
+<h2 class="anchored" data-anchor-id="complete-python-first-steps">4. Complete Python First Steps</h2>
+<p>Continue with <a href="../../tej3-4/computational-engineering/python-first-steps.html">Assignment: Python First Steps in Jupyter</a>. Work through Notebook 0 in this order:</p>
+<ol type="1">
+<li>Run <code>print("Hello, TEJ!")</code>.</li>
+<li>Change only the printed words and run the cell again.</li>
+<li>Use Python as a calculator.</li>
+<li>Store values in variables.</li>
+<li>Use <code>type()</code> to recognize a whole number, decimal number, text, and <code>True</code> or <code>False</code>.</li>
+<li>Select values from a three-item list.</li>
+<li>Change that list into one NumPy array.</li>
+<li>Change one number in a small array until the checks pass.</li>
+</ol>
+<p>Do not begin with loops, functions, graphs, matrices, or documentation challenges. Those skills appear in the next notebook after these first steps are comfortable.</p>
+</section>
+<section id="save-download-reopen-and-submit" class="level2">
+<h2 class="anchored" data-anchor-id="save-download-reopen-and-submit">5. Save, download, reopen, and submit</h2>
+<ol type="1">
+<li>Choose <strong>File &gt; Save Notebook</strong> during the work period.</li>
+<li>Choose <strong>File &gt; Download</strong>. If that menu item is absent in an older deployment, right-click the notebook in the file browser and choose <strong>Download</strong>.</li>
+<li>Keep the <code>.ipynb</code> ending. Rename the downloaded file <code>studentnumber-<wbr>lastname-<wbr>python-first-steps.ipynb</code>, for example <code>123456789-<wbr>Smith-<wbr>python-first-steps.ipynb</code>.</li>
+<li>To reopen it later, click <strong><a href="https://jupyter.org/try-jupyter/lab/">OPEN JUPYTERLITE NOW</a></strong>, upload the downloaded file, and double-click it. Restart the kernel and run all cells.</li>
+<li>Inspect the notebook for personal information. Upload the <code>.ipynb</code> file manually to the assigned Google Classroom post when that service is available. JupyterLite does not submit it for you.</li>
+</ol>
+</section>
+<section id="notebook-progression" class="level2">
+<h2 class="anchored" data-anchor-id="notebook-progression">Notebook progression</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Notebook</th>
+<th>Core task</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0. Python First Steps</td>
+<td>Cells, printing, calculator operations, variables, types, lists, and one small NumPy array</td>
+<td><a href="../../tej3-4/computational-engineering/python-first-steps.html">lesson</a> · <a href="../../assets/tej-computational/notebooks/00-python-first-steps.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="even">
+<td>Circuit Quest</td>
+<td>Rotate wires, complete paths, light two lamps, and see a branch work</td>
+<td><a href="../../tej3-4/computational-engineering/circuit-quest.html">game</a> · <a href="../../assets/tej-computational/notebooks/09a-circuit-quest.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="odd">
+<td>1. Python and NumPy Foundations</td>
+<td>Jupyter cells, variables, lists, functions, arrays, documentation, plotting, and a resistor investigation</td>
+<td><a href="../../tej3-4/computational-engineering/python-numpy-foundations.html">lesson</a> · <a href="../../assets/tej-computational/notebooks/01-engineering-calculator.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="even">
+<td>2. Series and Parallel Calculations</td>
+<td>Equivalent resistance, currents, voltage drops, and checks</td>
+<td><a href="../../assets/tej-computational/notebooks/02-series-parallel-calculations.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="odd">
+<td>3A. Two Loops to a Matrix</td>
+<td>Signed loop derivations, matrix rows, NumPy, SymPy, and verification</td>
+<td><a href="../../assets/tej-computational/notebooks/03a-two-loop-to-matrix-bridge.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="even">
+<td>3. Kirchhoff Systems</td>
+<td>Documentation-driven debugging, residuals, and parameter investigation</td>
+<td><a href="../../assets/tej-computational/notebooks/03-kirchhoff-systems.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="odd">
+<td>4. Graph Electrical Relationships</td>
+<td>Voltage-current and resistance-current plots</td>
+<td><a href="../../assets/tej-computational/notebooks/04-graph-electrical-relationships.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="even">
+<td>5. Experimental Data Analysis</td>
+<td>CSV import, prediction differences, graphs, and limitations</td>
+<td><a href="../../assets/tej-computational/notebooks/05-experimental-data-analysis.ipynb"><code>.ipynb</code></a> · <a href="../../assets/tej-computational/data/circuit-measurements.csv">CSV</a></td>
+</tr>
+<tr class="odd">
+<td>6. Engineering Investigation</td>
+<td>Choose a question, test it, troubleshoot, and verify the result</td>
+<td><a href="../../assets/tej-computational/notebooks/06-engineering-investigation.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="even">
+<td>7. RC, Op-Amps, and a Bridge to Calculus</td>
+<td>Model transients, numerical slope and area, integration, differentiation, and optional XL741 evidence</td>
+<td><a href="../../assets/tej-computational/notebooks/07-rc-op-amp-calculus-bridge.ipynb"><code>.ipynb</code></a></td>
+</tr>
+<tr class="odd">
+<td>8. Optional Component Model Review</td>
+<td>Compare resistor, capacitor, LED, transistor-switch, and op-amp models with explicit limitations; use only where review is needed</td>
+<td><a href="../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb"><code>.ipynb</code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Download <a href="../../assets/tej-computational/tej-computational-engineering-notebooks.zip">all twelve notebooks, the dataset, and local requirements as one ZIP</a>.</p>
+<p>The notebooks use Python’s standard library plus NumPy, pandas, and Matplotlib where the task requires them. They are designed for the Pyodide kernel in the official JupyterLite demonstration and for ordinary local JupyterLab with the supplied <a href="../../assets/tej-computational/requirements-jupyter.txt">requirements file</a>. A school deployment may provide a different kernel or package set.</p>
+<p>Use the <a href="../../tej3-4/computational-engineering/jupyter-electronics-lab.html">Jupyter Electronics Lab</a> later for the complete simulation-first sequence. Notebook 0 does not require physical components.</p>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>What to try</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The page never finishes loading</td>
+<td>Reload once in a current school-approved Chrome or Firefox window.</td>
+</tr>
+<tr class="even">
+<td>Kernel is not ready</td>
+<td>Wait until <strong>Python (Pyodide)</strong> is ready before running the cell.</td>
+</tr>
+<tr class="odd">
+<td>Uploaded notebook cannot be found</td>
+<td>Upload it again and look for the exact filename in the left file browser.</td>
+</tr>
+<tr class="even">
+<td>NumPy does not load</td>
+<td>Confirm that <strong>Python (Pyodide)</strong> is the selected kernel.</td>
+</tr>
+<tr class="odd">
+<td>Work disappeared</td>
+<td>Check the browser profile and downloads. Browser storage is device- and site-specific and is not a backup.</td>
+</tr>
+<tr class="even">
+<td>Download is blocked</td>
+<td>Right-click the notebook in the file browser and choose <strong>Download</strong>, or ask the teacher for the approved route.</td>
+</tr>
+</tbody>
+</table>
+<p>The storage and file guidance above follows the official <a href="https://jupyterlite.readthedocs.io/en/stable/quickstart/using.html">JupyterLite usage guide</a> and <a href="https://jupyterlite.readthedocs.io/en/stable/troubleshooting.html">troubleshooting guide</a>.</p>
+</section>
+<section id="check-your-work" class="level2">
+<h2 class="anchored" data-anchor-id="check-your-work">Check your work</h2>
+<ul>
+<li>TASK 1 through TASK 6 are complete.</li>
+<li>Every cell has been run from top to bottom.</li>
+<li>The final cell prints three numbers and <code>Checks passed.</code></li>
+<li>The downloaded notebook reopens and still contains your work.</li>
+</ul>
+</section>
+<section id="next-step" class="level2">
+<h2 class="anchored" data-anchor-id="next-step">Next step</h2>
+<p>Continue with <a href="../../tej3-4/computational-engineering/python-first-steps.html">Python First Steps</a>. Use the <a href="../../tej3-4/computational-engineering/local-python-jupyter.html">local Jupyter pathway</a> only when you have an unrestricted computer or need packages and files beyond the browser environment.</p>
+</section>
+<section id="help-improve-this-lesson-optional" class="level2">
+<h2 class="anchored" data-anchor-id="help-improve-this-lesson-optional">Help improve this lesson (optional)</h2>
+<p>If something got in the way, tell the teacher which step or word was unclear, what you still do not know how to do, and one change that would help the next student. If you can fix the wording or screenshot, show the teacher. A useful fix may be added to the course website and credited to you.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+
+(function () {
+
+  "use strict";
+
+  const base = ["/commons", "/tech-edu-resources"].find(function (candidate) {
+
+    return window.location.pathname === candidate ||
+
+      window.location.pathname.startsWith(candidate + "/");
+
+  }) || "";
+
+
+
+  window.terEquationSources = [];
+
+  document.querySelectorAll("span.math.display").forEach(function (equation, index) {
+
+    const source = equation.textContent
+
+      .trim()
+
+      .replace(/^\\\[\s*/, "")
+
+      .replace(/\s*\\\]$/, "")
+
+      .replace(/\s*\\tag\{[^}]+\}\s*$/, "")
+
+      .trim();
+
+    const key = "ter-equation-" + (index + 1);
+
+    equation.dataset.terEquationKey = key;
+
+    window.terEquationSources.push({ key: key, source: source });
+
+  });
+
+
+
+  [
+
+    "commons-lore.js",
+
+    "bs-learn.js",
+
+    "bs-glossary.js",
+
+    "bs-reference-titles.js",
+
+    "bs-learn-scroll.js",
+
+    "tej-equations-v1.js",
+
+    "tej-diagram-sources.js"
+
+  ].forEach(function (file) {
+
+    const versions = {
+
+      "bs-learn.js": "20261024-2",
+
+      "bs-learn-scroll.js": "20261013-1",
+
+      "tej-equations-v1.js": "20261017-1",
+
+      "tej-diagram-sources.js": "20261017-1"
+
+    };
+
+    const script = document.createElement("script");
+
+    script.src = base + "/assets/" + file +
+
+      (versions[file] ? "?v=" + versions[file] : "");
+
+    script.async = false;
+
+    document.body.appendChild(script);
+
+  });
+
+})();
+
+</script>
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/andrewandrade\.ca\/tech-edu-resources\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Website code: <a href="https://andrewandrade.ca/tech-edu-resources/licensing.html">AGPL 3.0</a>. Educational content: <a href="https://andrewandrade.ca/tech-edu-resources/licensing.html">CC BY-SA 4.0</a>.</p>
+<p>Educational content may be shared, copied, modified, and redistributed. Keep the CC BY-SA 4.0 licence and credit Andrew Andrade, <a href="https://andrewandrade.ca/">andrewandrade.ca</a>, and <a href="https://github.com/mrandrewandrade">github.com/mrandrewandrade</a>. Add your own name and links when adapting it. <strong>Sharing is caring.</strong></p>
+<p>The website code uses the AGPL 3.0, a copyleft licence: if you share modified code or run a modified version as a network service, you must make the corresponding source code available under the same licence.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../references.html">
+<p>References</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../licensing.html">
+<p>Licensing</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

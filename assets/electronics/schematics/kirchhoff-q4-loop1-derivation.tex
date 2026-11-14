@@ -1,0 +1,25 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\definecolor{TEJNavy}{HTML}{1E2B55}
+\definecolor{TEJOrange}{HTML}{E97828}
+\definecolor{TEJRule}{HTML}{B8C2D1}
+\begin{document}
+\begin{tikzpicture}[text=TEJNavy]
+  \node[anchor=west,font=\bfseries\LARGE,text=TEJOrange] at (0,6.35) {LOOP 1: ONE ALGEBRA MOVE PER LINE};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,5.55) {1. Write signed KVL};
+  \node[anchor=west,font=\huge] at (4.25,5.55) {$10-3I_1-2I_3=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,4.55) {2. Substitute $I_3$};
+  \node[anchor=west,font=\huge] at (4.25,4.55) {$10-3I_1-2(I_1-I_2)=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,3.55) {3. Distribute $-2$};
+  \node[anchor=west,font=\huge] at (4.25,3.55) {$10-3I_1-2I_1+2I_2=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,2.55) {4. Combine like terms};
+  \node[anchor=west,font=\huge] at (4.25,2.55) {$10-5I_1+2I_2=0$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,1.55) {5. Subtract 10};
+  \node[anchor=west,font=\huge] at (4.25,1.55) {$-5I_1+2I_2=-10$};
+  \node[anchor=west,font=\large,text=TEJOrange] at (0.15,0.55) {6. Multiply by $-1$};
+  \node[anchor=west,font=\Huge] at (4.25,0.55) {$\boxed{5I_1-2I_2=10}$};
+\end{tikzpicture}
+\end{document}

@@ -30,6 +30,19 @@
     return equations;
   }
 
+  function mathIn(root) {
+    const math = [];
+    if (root && root.matches && root.matches(".math")) {
+      math.push(root);
+    }
+    if (root && root.querySelectorAll) {
+      root.querySelectorAll(".math").forEach(function (expression) {
+        math.push(expression);
+      });
+    }
+    return math;
+  }
+
   function registerEquationSources(root) {
     const equations = equationsIn(root);
     window.terEquationSources = window.terEquationSources || [];
@@ -165,9 +178,9 @@
 
   function mountEquations(root) {
     const mountRoot = root || document;
-    const equations = registerEquationSources(mountRoot);
-    const pending = equations.filter(function (equation) {
-      return !equation.querySelector("mjx-container");
+    registerEquationSources(mountRoot);
+    const pending = mathIn(mountRoot).filter(function (expression) {
+      return !expression.querySelector("mjx-container");
     });
 
     function finish() {
@@ -208,3 +221,4 @@
     });
   }
 })();
+

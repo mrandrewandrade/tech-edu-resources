@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1F2430; }
+    .title { font-size: 34px; font-weight: 700; fill: #1E2B55; }
+    .label { font-size: 25px; font-weight: 700; fill: #1E2B55; }
+    .body { font-size: 23px; }
+    .small { font-size: 20px; fill: #6B7280; }
+    .wire { stroke: #1E2B55; stroke-width: 7; fill: none; stroke-linecap: square; stroke-linejoin: round; }
+    .thin { stroke: #1E2B55; stroke-width: 4; fill: none; }
+    .blue { stroke: #1769AA; fill: #1769AA; }
+  </style>
+
+    <text x="60" y="65" class="title">RC discharge circuit</text>
+    <line x1="215" y1="180" x2="215" y2="285" class="wire"/>
+    <line x1="140" y1="285" x2="290" y2="285" class="wire"/>
+    <line x1="140" y1="350" x2="290" y2="350" class="wire"/>
+    <line x1="215" y1="350" x2="215" y2="530" class="wire"/>
+    <text x="95" y="325" class="label">C</text>
+    <text x="70" y="380" class="body">vC(t)</text>
+    <line x1="215" y1="180" x2="435" y2="180" class="wire"/>
+    <circle cx="455" cy="180" r="9" fill="#1E2B55"/>
+    <circle cx="555" cy="180" r="9" fill="#1E2B55"/>
+    <line x1="455" y1="180" x2="538" y2="133" class="wire"/>
+    <text x="485" y="120" class="label">S</text>
+    <line x1="555" y1="180" x2="675" y2="180" class="wire"/>
+    <polyline points="675,180 710,145 755,215 800,145 845,215 890,145 925,180" class="wire"/>
+    <text x="785" y="115" class="label">R</text>
+    <line x1="925" y1="180" x2="925" y2="530" class="wire"/>
+    <line x1="925" y1="530" x2="215" y2="530" class="wire"/>
+    <line x1="845" y1="125" x2="635" y2="125" stroke="#1769AA" stroke-width="7"/>
+    <polygon points="635,125 660,110 660,140" fill="#1769AA"/>
+    <text x="720" y="105" class="label">i(t)</text>
+    <text x="60" y="625" class="body">Close S: the stored energy drives current through R while vC falls toward 0 V.</text>
+
+</svg>

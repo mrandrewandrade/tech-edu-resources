@@ -557,6 +557,93 @@
 .ter-toolkit-banner h2 { margin: .2rem 0 .6rem; }
 .ter-toolkit-banner p:last-child { margin-bottom: 0; }
 
+.ter-process-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.ter-process-example {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--bs-border);
+  border-radius: 10px;
+  background: var(--bs-surface);
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-process-example img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #ebe5da;
+}
+
+.ter-process-example--photo img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.ter-process-example--wide {
+  max-width: 860px;
+  margin: 1.25rem auto 1.75rem;
+}
+
+.ter-process-example--screenshot img {
+  max-height: 720px;
+  object-fit: contain;
+  background: #111;
+}
+
+.ter-tinkercad-starter {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .85fr);
+  gap: 1.2rem;
+  align-items: start;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.ter-tinkercad-video {
+  overflow: hidden;
+  border: 1px solid var(--bs-border-strong);
+  border-radius: 10px;
+  background: #111;
+  box-shadow: var(--bs-shadow-soft);
+}
+
+.ter-tinkercad-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.ter-tinkercad-checklist {
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--bs-border-strong);
+  border-top: 4px solid var(--bs-copper-dark);
+  border-radius: 10px;
+  background: var(--bs-surface);
+}
+
+.ter-tinkercad-checklist > :first-child { margin-top: 0; }
+.ter-tinkercad-checklist > :last-child { margin-bottom: 0; }
+.ter-tinkercad-checklist .btn { margin: .2rem .25rem .2rem 0; }
+
+.ter-process-example figcaption {
+  padding: .9rem 1rem 1rem;
+  border-top: 4px solid var(--bs-copper-dark);
+  color: var(--bs-text-secondary);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.ter-process-example figcaption strong {
+  color: var(--bs-navy-dark);
+}
+
 .ter-assembly-jump {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -749,7 +836,9 @@
   .ter-resource-grid,
   .ter-feature-assets,
   .ter-assembly-gallery,
+  .ter-process-gallery,
   .ter-toolkit-banner,
+  .ter-tinkercad-starter,
   .ter-view-grid {
     grid-template-columns: 1fr;
   }
@@ -797,6 +886,10 @@
   .ter-calibration-card img { height:125px; }
   .ter-calibration-record { padding:.55rem; overflow-x:auto; }
   .ter-calibration-record table { min-width:540px; }
+}
+
+[data-bs-theme="dark"] .ter-process-example figcaption strong {
+  color: var(--bs-text);
 }
 
 @media print {

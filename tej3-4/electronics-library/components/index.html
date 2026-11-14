@@ -84,6 +84,35 @@ ul.task-list li input[type="checkbox"] {
 <meta name="theme-color" content="#062650">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../assets/bs-shared.css">
 <link rel="stylesheet" href="../../../assets/bs-components.css">
@@ -95,10 +124,14 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../assets/tej-electronics.css">
 <meta property="og:title" content="TEJ Component Index – Technological Education Resources">
 <meta property="og:description" content="Component roles, modules, selection fields, and source boundaries.">
+<meta property="og:image" content="https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/component-symbols-foundation.svg">
 <meta property="og:site_name" content="Technological Education Resources">
+<meta property="og:image:alt" content="Common schematic symbols for a battery, resistor, capacitor, diode, LED, NPN transistor, op-amp, and ground with their basic functional roles.">
 <meta name="twitter:title" content="TEJ Component Index – Technological Education Resources">
 <meta name="twitter:description" content="Component roles, modules, selection fields, and source boundaries.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://andrewandrade.ca/tech-edu-resources/assets/electronics/schematics/component-symbols-foundation.svg">
+<meta name="twitter:image:alt" content="Common schematic symbols for a battery, resistor, capacitor, diode, LED, NPN transistor, op-amp, and ground with their basic functional roles.">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed bs-learn-article quarto-light">
@@ -227,8 +260,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Circuits and Electronics</span></a>
+            <a href="../../../tej3-4/portfolio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Project Portfolio</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -236,32 +269,103 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/portfolio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Build a Technical Portfolio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../tej3-4/electronics-library/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Circuits and Electronics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/schematic-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Component Foundations: Circuits and Schematics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/resistors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Component Foundations: Resistors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/capacitors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Capacitors 1: Capacitors from Zero</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/rc-charge-discharge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Capacitors 2: RC Charging and Discharging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/rc-time-constant-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Capacitors 3: RC Time Constants and Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/diodes-leds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Component Foundations: Diodes and LEDs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/transistors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Component Foundations: Transistors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/electronics-library/components/op-amps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Component Foundations: Operational Amplifiers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/circuits/parallel-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Package 1: Basic Electricity and Parallel Circuits</span></a>
+ <span class="menu-text">9. Package 1: Basic Electricity and Parallel Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/circuits/series-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Package 2: Parallel Review and Series Circuits</span></a>
+ <span class="menu-text">10. Package 2: Parallel Review and Series Circuits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/circuits/series-parallel-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Series-Parallel Circuits</span></a>
+ <span class="menu-text">11. Series-Parallel Combination Circuits, Part A</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/circuits/kirchhoffs-laws.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Kirchhoff’s Laws</span></a>
+ <span class="menu-text">12. Kirchhoff’s Laws</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/circuits/linear-algebra-circuits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Linear Algebra for Circuits</span></a>
+ <span class="menu-text">13. Linear Algebra for Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/circuits/tinkercad-circuits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14. Build and Measure Circuits in Tinkercad</span></a>
   </div>
 </li>
       </ul>
@@ -270,11 +374,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../tej3-4/computer-systems/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">6. Computer Systems</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/computer-systems/safe-opening-and-parts/index.html" class="sidebar-item-text sidebar-link">
@@ -283,14 +387,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../tej3-4/computer-systems/monitors-ports-and-peripherals/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Monitors, Signals, Ports, and Cables</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/computer-systems/usb-and-cable-management/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. USB, Peripherals, and Cable Management</span></a>
+ <span class="menu-text">2. USB, Peripherals, and Cable Management</span></a>
   </div>
 </li>
       </ul>
@@ -299,11 +397,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../tej3-4/linux-operating-systems/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">7. Linux and Operating Systems</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/linux-operating-systems/choosing-a-distribution.html" class="sidebar-item-text sidebar-link">
@@ -382,11 +480,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../../tej3-4/networking/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">8. Networking</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../tej3-4/networking/how-wifi-and-ethernet-connect/index.html" class="sidebar-item-text sidebar-link">
@@ -407,13 +505,86 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../tej3-4/computational-engineering/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Computational Engineering</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/jupyterlite.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Python Engineering Notebooks with JupyterLite</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/circuit-quest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Circuit Quest: Power the Grid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/python-first-steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Assignment: Python First Steps</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/local-python-jupyter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Run Python and Jupyter on Your Own Computer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/python-numpy-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Assignment: Python and NumPy Foundations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Find Documentation and Ask for Programming Help</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Assignment: From Two Loops to a Matrix</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/jupyter-electronics-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Jupyter Electronics Lab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../tej3-4/computational-engineering/midterm-circuit-investigation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Life Checkpoint Upgrade: Jupyter + Tinkercad</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#start-from-zero" id="toc-start-from-zero" class="nav-link active" data-scroll-target="#start-from-zero">Start from zero</a></li>
+  <li><a href="#component-catalogue" id="toc-component-catalogue" class="nav-link" data-scroll-target="#component-catalogue">Component catalogue</a></li>
+  <li><a href="#jupyter-before-components-are-available" id="toc-jupyter-before-components-are-available" class="nav-link" data-scroll-target="#jupyter-before-components-are-available">Jupyter before components are available</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -442,6 +613,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>This sequence assumes no prior component knowledge. Begin with the difference between a physical circuit and a schematic, then study one component family at a time. Each lesson identifies terminals, polarity, value, rating, symbol, functional role, first equations, safety boundary, five student questions, and a simulation or lab pathway.</p>
+<section id="start-from-zero" class="level2">
+<h2 class="anchored" data-anchor-id="start-from-zero">Start from zero</h2>
+<ol type="1">
+<li><a href="../../../tej3-4/electronics-library/components/schematic-basics.html">Circuits and Schematics</a>: circuit roles, symbols, nodes, junctions, ground, and a first complete schematic.</li>
+<li><a href="../../../tej3-4/electronics-library/components/resistors.html">Resistors</a>: resistance, colour code, tolerance, power, Ohm’s law, and current limiting.</li>
+<li><a href="../../../tej3-4/electronics-library/components/capacitors.html">Capacitors from Zero</a>: physical structure, symbols, units, polarity, ratings, charge, and energy.</li>
+<li><a href="../../../tej3-4/electronics-library/components/rc-charge-discharge.html">RC Charging and Discharging</a>: starting conditions, steady state, graphs, Jupyter, and Tinkercad verification.</li>
+<li><a href="../../../tej3-4/electronics-library/components/rc-time-constant-design.html">RC Time Constants and Design</a>: calculate <span class="math inline">\(\tau\)</span>, choose real parts, and connect the model to calculus.</li>
+<li><a href="../../../tej3-4/electronics-library/components/diodes-leds.html">Diodes and LEDs</a>: direction, forward voltage, reverse blocking, current limiting, and diode-mode testing.</li>
+<li><a href="../../../tej3-4/electronics-library/components/transistors.html">Transistors</a>: NPN and PNP devices, terminals, switching, ratings, and pinout verification.</li>
+<li><a href="../../../tej3-4/electronics-library/components/op-amps.html">Operational Amplifiers</a>: differential inputs, supplies, negative feedback, followers, real limits, and the XL741.</li>
+</ol>
+<figure class="ter-circuit-figure figure" id="fig-component-foundation-map" data-diagram-source="../../../assets/electronics/schematics/component-symbols-foundation.tex">
+<img src="../../../assets/electronics/schematics/component-symbols-foundation.svg" alt="Common schematic symbols for a battery, resistor, capacitor, diode, LED, NPN transistor, op-amp, and ground with their basic functional roles." loading="lazy" class="figure-img">
+<figcaption>
+<a class="ter-figure-label" href="#fig-component-foundation-map">Figure 1.</a> Students meet the physical part, internal function, symbol, terminals, ratings, and circuit role as one coordinated concept.
+</figcaption>
+</figure>
+</section>
+<section id="component-catalogue" class="level2">
+<h2 class="anchored" data-anchor-id="component-catalogue">Component catalogue</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -465,7 +658,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">current limiting and division</td>
 <td style="text-align: left;">H06-H12, H21-H24</td>
 <td style="text-align: left;">resistance, tolerance, power, package</td>
-<td style="text-align: left;">indexed</td>
+<td style="text-align: left;">foundation published</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Fuse</td>
@@ -493,30 +686,37 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">storage, timing, filtering</td>
 <td style="text-align: left;">H19, H22, H24</td>
 <td style="text-align: left;">capacitance, voltage, polarity, ESR</td>
-<td style="text-align: left;">planned</td>
+<td style="text-align: left;">foundation published</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Diode</td>
 <td style="text-align: left;">polarity, protection, rectification</td>
 <td style="text-align: left;">H21, H22</td>
 <td style="text-align: left;">current, forward drop, reverse voltage, recovery</td>
-<td style="text-align: left;">planned</td>
+<td style="text-align: left;">foundation published</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">BJT or MOSFET</td>
 <td style="text-align: left;">switching and amplification</td>
 <td style="text-align: left;">H23, H26</td>
 <td style="text-align: left;">voltage, current, power, drive, pinout</td>
-<td style="text-align: left;">planned</td>
+<td style="text-align: left;">BJT foundation published</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Op-amp / XL741</td>
+<td style="text-align: left;">feedback, amplification, integration, and differentiation</td>
+<td style="text-align: left;">H26</td>
+<td style="text-align: left;">supply range, input and output limits, gain, bandwidth, offset, stability</td>
+<td style="text-align: left;">foundation published; hardware optional</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Relay</td>
 <td style="text-align: left;">isolated electromechanical switching</td>
 <td style="text-align: left;">H18</td>
 <td style="text-align: left;">coil and contact ratings, form</td>
 <td style="text-align: left;">planned</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">Motor</td>
 <td style="text-align: left;">electrical to mechanical conversion</td>
 <td style="text-align: left;">H18, H23</td>
@@ -526,8 +726,15 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>Copyrighted cutaway artwork remains a restricted visual reference. Public pages use original diagrams or appropriately licensed open media.</p>
+<p>Grob’s <em>Basic Electronics</em>, Problems Manual, and Experiments Manual provide the teacher sequencing, problem patterns, and experiment checks. <em>Open Circuits</em> provides classroom cutaway views. The public lessons do not copy their artwork, questions, answers, or procedures; they use original diagrams, explanations, values, and activities with bibliographic references.</p>
+</section>
+<section id="jupyter-before-components-are-available" class="level2">
+<h2 class="anchored" data-anchor-id="jupyter-before-components-are-available">Jupyter before components are available</h2>
+<p><a href="../../../assets/tej-computational/notebooks/08-electronic-components-from-zero.ipynb">Notebook 8: Electronic Components from Zero</a> provides a complete start-now activity across resistors, capacitors, LEDs, transistor switches, and op-amp followers. Every model includes an explicit limitation so students do not mistake a Python result for a datasheet check, safe build, or physical measurement.</p>
+<p>The XL741 pathway is an optional extension after capacitors, diodes, and transistor fundamentals. The available v2.0 kit contains a discrete network of 2N3904 and 2N3906 transistors, BAT85 diodes, resistors, and a 33 pF compensation capacitor. Formal calculus is not required for assembly or basic characterization; slope, accumulated area, finite differences, and running sums provide the initial mathematical model. Follow the current manufacturer documentation and a teacher-approved current-limited dual-supply procedure for any physical build or test.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -584,15 +791,21 @@ ul.task-list li input[type="checkbox"] {
 
     "bs-learn-scroll.js",
 
-    "tej-equations-v1.js"
+    "tej-equations-v1.js",
+
+    "tej-diagram-sources.js"
 
   ].forEach(function (file) {
 
     const versions = {
 
+      "bs-learn.js": "20261024-2",
+
       "bs-learn-scroll.js": "20261013-1",
 
-      "tej-equations-v1.js": "20261013-1"
+      "tej-equations-v1.js": "20261017-1",
+
+      "tej-diagram-sources.js": "20261017-1"
 
     };
 
@@ -611,6 +824,8 @@ ul.task-list li input[type="checkbox"] {
 })();
 
 </script>
+
+
 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

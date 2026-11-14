@@ -1,0 +1,222 @@
+{
+  "settings": {
+    "fps": 60,
+    "color": "#0f172a",
+    "width": 1000,
+    "height": 1000
+  },
+  "elements": [
+    {
+      "type": "image",
+      "id": "aa-logo-motion-starter-1",
+      "name": "sun",
+      "start": 0,
+      "duration": 6000,
+      "data": {
+        "src": "/files/sun.png",
+        "x": 804,
+        "y": 247,
+        "width": 238,
+        "height": 238,
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "cover",
+        "alpha": 1,
+        "angle": 0,
+        "radius": 0,
+        "strokeStyle": "#000000",
+        "lineWidth": 0,
+        "blur": 0,
+        "brightness": 1,
+        "contrast": 1,
+        "grayscale": 0,
+        "hueRotate": 0,
+        "saturate": 1,
+        "sepia": 0,
+        "scale": 1
+      },
+      "animations": {
+        "in": {
+          "animation": "rotate",
+          "duration": 800,
+          "angle": 160
+        },
+        "out": {
+          "animation": "fade",
+          "duration": 500
+        }
+      },
+      "keyframes": [
+        {
+          "timestamp": 2400,
+          "easing": "linear",
+          "data": {
+            "scale": 1
+          }
+        },
+        {
+          "timestamp": 3000,
+          "easing": "easeOutCubic",
+          "data": {
+            "scale": 1.08
+          }
+        },
+        {
+          "timestamp": 3600,
+          "easing": "easeInOutSine",
+          "data": {
+            "scale": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "id": "aa-logo-motion-starter-2",
+      "name": "left-peak",
+      "start": 450,
+      "duration": 5550,
+      "data": {
+        "src": "/files/left-peak.png",
+        "x": 358,
+        "y": 554,
+        "width": 398,
+        "height": 330,
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "cover",
+        "alpha": 1,
+        "angle": 0,
+        "radius": 0,
+        "strokeStyle": "#000000",
+        "lineWidth": 0,
+        "blur": 0,
+        "brightness": 1,
+        "contrast": 1,
+        "grayscale": 0,
+        "hueRotate": 0,
+        "saturate": 1,
+        "sepia": 0
+      },
+      "animations": {
+        "in": {
+          "animation": "slide",
+          "duration": 900,
+          "direction": "left",
+          "distance": 180
+        },
+        "out": {
+          "animation": "fade",
+          "duration": 500
+        }
+      },
+      "keyframes": []
+    },
+    {
+      "type": "image",
+      "id": "aa-logo-motion-starter-3",
+      "name": "right-peak",
+      "start": 800,
+      "duration": 5200,
+      "data": {
+        "src": "/files/right-peak.png",
+        "x": 673,
+        "y": 542,
+        "width": 412,
+        "height": 355,
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "cover",
+        "alpha": 1,
+        "angle": 0,
+        "radius": 0,
+        "strokeStyle": "#000000",
+        "lineWidth": 0,
+        "blur": 0,
+        "brightness": 1,
+        "contrast": 1,
+        "grayscale": 0,
+        "hueRotate": 0,
+        "saturate": 1,
+        "sepia": 0
+      },
+      "animations": {
+        "in": {
+          "animation": "slide",
+          "duration": 900,
+          "direction": "right",
+          "distance": 180
+        },
+        "out": {
+          "animation": "fade",
+          "duration": 500
+        }
+      },
+      "keyframes": []
+    },
+    {
+      "type": "image",
+      "id": "aa-logo-motion-starter-4",
+      "name": "river",
+      "start": 1250,
+      "duration": 4750,
+      "data": {
+        "src": "/files/river.png",
+        "x": 512,
+        "y": 774,
+        "width": 660,
+        "height": 100,
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "cover",
+        "alpha": 1,
+        "angle": 0,
+        "radius": 0,
+        "strokeStyle": "#000000",
+        "lineWidth": 0,
+        "blur": 0,
+        "brightness": 1,
+        "contrast": 1,
+        "grayscale": 0,
+        "hueRotate": 0,
+        "saturate": 1,
+        "sepia": 0
+      },
+      "animations": {
+        "in": {
+          "animation": "slide",
+          "duration": 800,
+          "direction": "down",
+          "distance": 120
+        },
+        "out": {
+          "animation": "fade",
+          "duration": 500
+        }
+      },
+      "keyframes": [
+        {
+          "timestamp": 1800,
+          "easing": "linear",
+          "data": {
+            "x": 512
+          }
+        },
+        {
+          "timestamp": 2400,
+          "easing": "easeInOutSine",
+          "data": {
+            "x": 540
+          }
+        },
+        {
+          "timestamp": 3000,
+          "easing": "easeInOutSine",
+          "data": {
+            "x": 512
+          }
+        }
+      ]
+    }
+  ]
+}

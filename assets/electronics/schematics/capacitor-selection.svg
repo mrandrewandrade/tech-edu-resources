@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #1F2430; }
+    .title { font-size: 34px; font-weight: 700; fill: #1E2B55; }
+    .label { font-size: 25px; font-weight: 700; fill: #1E2B55; }
+    .body { font-size: 23px; }
+    .small { font-size: 20px; fill: #6B7280; }
+    .wire { stroke: #1E2B55; stroke-width: 7; fill: none; stroke-linecap: square; stroke-linejoin: round; }
+    .thin { stroke: #1E2B55; stroke-width: 4; fill: none; }
+    .blue { stroke: #1769AA; fill: #1769AA; }
+  </style>
+
+    <text x="60" y="65" class="title">Read the part before you connect it</text>
+    <rect x="90" y="130" width="290" height="430" rx="22" fill="#E9F3FA" stroke="#1E2B55" stroke-width="5"/>
+    <rect x="455" y="130" width="290" height="430" rx="22" fill="#FFF8DC" stroke="#1E2B55" stroke-width="5"/>
+    <rect x="820" y="130" width="290" height="430" rx="22" fill="#FDECEC" stroke="#C62828" stroke-width="5"/>
+    <text x="135" y="205" class="label">10 µF</text><text x="135" y="255" class="body">16 V</text><text x="135" y="305" class="body">polarized</text><text x="135" y="405" class="label">works at 9 V</text><text x="135" y="455" class="body">with correct polarity</text>
+    <text x="500" y="205" class="label">10 µF</text><text x="500" y="255" class="body">25 V</text><text x="500" y="305" class="body">polarized</text><text x="500" y="405" class="label">works at 9 V</text><text x="500" y="455" class="body">more voltage margin</text>
+    <text x="865" y="205" class="label">10 µF</text><text x="865" y="255" class="body">6.3 V</text><text x="865" y="305" class="body">polarized</text><text x="865" y="405" class="label">do not use</text><text x="865" y="455" class="body">rating below 9 V</text>
+    <text x="90" y="635" class="small">Capacitance must fit the job. The voltage rating must exceed the circuit voltage. Polarity must match the circuit.</text>
+
+</svg>
