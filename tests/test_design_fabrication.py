@@ -323,6 +323,21 @@ class DesignFabricationTests(unittest.TestCase):
 
     def test_emotions_notes_and_worksheet_are_integrated(self) -> None:
         notes = self.read("teaching-materials/emotions/why-we-have-emotions.qmd")
+        emotion_pages = {
+            name: self.read(f"teaching-materials/emotions/{name}.qmd")
+            for name in (
+                "fear-anxiety",
+                "anger",
+                "disgust",
+                "envy",
+                "jealousy",
+                "guilt",
+                "shame",
+                "happiness",
+                "love",
+                "sadness",
+            )
+        }
         materials = self.read("teaching-materials/index.qmd")
         slides = self.read("teacher-slides/index.qmd")
         personal_brand = self.read("design-fabrication/logo-design/personal-brand-graphic-photopea.qmd")
@@ -334,12 +349,15 @@ class DesignFabricationTests(unittest.TestCase):
             "What can we do with an emotion?",
         ):
             self.assertIn(heading, notes)
-        for phrase in (
-            "Turn comparison into a healthy goal.",
-            "Name it to tame it.",
-            "Feel it to heal it.",
-        ):
+        for phrase in ("Name it to tame it.", "Feel it to heal it."):
             self.assertIn(phrase, notes)
+        self.assertIn("Don't let the feed farm you", notes)
+        self.assertIn("Turn comparison into a healthy goal.", emotion_pages["envy"])
+        for name, page in emotion_pages.items():
+            self.assertIn(f"({name}.qmd)", notes)
+            self.assertIn("What can help", page)
+            self.assertIn("Design connection", page)
+            self.assertIn("why-we-have-emotions.qmd", page)
         for source in (notes, materials, slides, personal_brand):
             self.assertIn(worksheet_id, source)
         for source in (materials, slides, personal_brand):
