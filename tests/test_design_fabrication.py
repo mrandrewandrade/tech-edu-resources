@@ -364,6 +364,7 @@ class DesignFabricationTests(unittest.TestCase):
             "They motivate us",
             "They communicate to us",
             "They communicate to others",
+            "| Emotion | What it does | What we can do |",
             "What can we do with an emotion?",
         ):
             self.assertIn(heading, notes)
