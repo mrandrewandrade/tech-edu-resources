@@ -1,6 +1,6 @@
 ---
-title: "3D Modelling + 3D Printing | Onshape, Slicing & Faux-Enamel Jewellery"
-description: "Reusable lessons for parametric Onshape CAD, mesh contrast, STL/3MF/STEP, slicing, orientation, supports, tolerances and a faux-enamel pin or jewellery project."
+title: "3D Modelling + 3D Printing | Tinkercad, Onshape, Slicing & Faux-Enamel Jewellery"
+description: "Reusable lessons for Tinkercad and parametric Onshape CAD, STL/3MF/STEP, slicing, orientation, supports, tolerances and a faux-enamel logo jewellery project."
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
@@ -15,9 +15,9 @@ Additive manufacturing builds geometry layer by layer. Orientation changes stren
 
 ### 3D Printed Faux Enamel Pin / Jewellery
 
-Create an original pin, badge, pendant, charm or other teacher-approved wearable graphic. Simplify the idea, rebuild it parametrically in Onshape, create raised or recessed regions, print, finish/colour, evaluate and revise.
+Turn an original Photopea SVG logo into a circular earring or brooch in Tinkercad. Build a flat base, raised boundary walls and enclosed recessed pockets, then print, fill, attach approved hardware, evaluate and revise.
 
-[Open the complete project →](faux-enamel-pin-jewellery.qmd)
+[Open the step-by-step Tinkercad guide →](tinkercad-faux-enamel-logo.qmd)
 :::
 
 ## Learning sequence
@@ -26,7 +26,8 @@ Create an original pin, badge, pendant, charm or other teacher-approved wearable
   <li><a href="01-additive-cad.qmd">3D Modelling Foundations: Onshape CAD vs Blender Mesh</a>: choose the model type, use constraints and dimensions, and preserve design intent.</li>
   <li><a href="02-slicing-orientation.qmd">Slicing, Orientation &amp; Supports</a>: connect layer height, walls, infill, toolpaths, strength, time, and surface quality.</li>
   <li><a href="03-tolerances-functional-parts.qmd">Tolerances &amp; Functional Parts</a>: test holes, clearance, press fits, fasteners, assemblies, brackets, adapters, and repair parts.</li>
-  <li><a href="faux-enamel-pin-jewellery.qmd">Faux Enamel Pin / Jewellery</a>: the current TAS project: original graphic, parametric model, print, finish and revise.</li>
+  <li><a href="tinkercad-faux-enamel-logo.qmd">Tinkercad Faux-Enamel Logo Earring or Brooch</a>: the current TAS project: original SVG, circular base, fillable cavities, print and finish.</li>
+  <li><a href="faux-enamel-pin-jewellery.qmd">Parametric Faux-Enamel Pin / Jewellery</a>: a later Onshape version with constrained sketches and evidence-based revision.</li>
   <li><a href="04-design-challenge.qmd">Functional-Part Design Challenge</a>: a general/advanced project for a measured need.</li>
 </ol>
 
@@ -44,4 +45,4 @@ Relevant senior contexts can include **TDJ3M/TDJ4M**, **TDJ3O/TDJ4O**, and appro
 
 Model with education access to [Onshape](https://www.onshape.com/en/education/plans) or open-source [FreeCAD](https://www.freecad.org/) and [OpenSCAD](https://openscad.org/). Compare downloadable work on [Printables](https://www.printables.com/), [Thingiverse](https://www.thingiverse.com/), [NASA 3D Resources](https://science.nasa.gov/3d-resources/), and [Smithsonian Open Access](https://www.si.edu/OpenAccess), then slice with [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/), [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura/), or the [official OrcaSlicer repository](https://github.com/OrcaSlicer/OrcaSlicer). Check each model's licence, scale, geometry, and suitability. More provisional options are in the [full free-resource directory · Work in Progress](../resources/work-in-progress/index.qmd).
 
-Start with [3D Modelling Foundations](01-additive-cad.qmd), or open the [current faux-enamel project](faux-enamel-pin-jewellery.qmd).
+Start with the [current Tinkercad faux-enamel project](tinkercad-faux-enamel-logo.qmd), then continue to [3D Modelling Foundations](01-additive-cad.qmd) for the parametric Onshape pathway.

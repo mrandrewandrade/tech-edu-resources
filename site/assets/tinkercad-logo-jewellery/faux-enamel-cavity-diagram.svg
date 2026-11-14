@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Faux-enamel badge cavity construction</title>
+  <desc id="desc">Top view and cross-section showing a circular base, raised outer rim and logo outline, and two recessed pockets filled with white and black nail polish.</desc>
+  <style>
+    .navy{fill:#0b2e4f}.gold{fill:#f0b429}.ink{fill:#111827}.paper{fill:#fff}.muted{fill:#64748b}.line{stroke:#0b2e4f;stroke-width:4;fill:none}.label{font:700 24px system-ui,sans-serif;fill:#0b2e4f}.small{font:500 19px system-ui,sans-serif;fill:#334155}
+  </style>
+  <rect width="960" height="420" rx="28" fill="#f8fafc"/>
+  <text x="55" y="55" class="label">Top view</text>
+  <circle cx="250" cy="225" r="135" class="ink"/>
+  <circle cx="250" cy="225" r="118" class="paper"/>
+  <path d="M250 125 330 214 307 228 267 184 267 307 233 307 233 184 193 228 170 214Z" class="ink"/>
+  <path d="M250 139 309 206 301 211 258 164 258 295 242 295 242 164 199 211 191 206Z" class="gold"/>
+  <text x="55" y="390" class="small">White background pocket + black logo pocket; raised walls keep polish separated.</text>
+  <text x="520" y="55" class="label">Cross-section</text>
+  <rect x="520" y="284" width="370" height="62" rx="8" fill="#64748b"/>
+  <rect x="520" y="224" width="25" height="122" rx="4" class="ink"/>
+  <rect x="660" y="224" width="25" height="122" rx="4" class="ink"/>
+  <rect x="865" y="224" width="25" height="122" rx="4" class="ink"/>
+  <rect x="545" y="244" width="115" height="40" class="paper" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="685" y="244" width="180" height="40" class="gold"/>
+  <path d="M510 284h390" class="line"/>
+  <path d="M905 224h36M905 284h36M930 224v60" class="line"/>
+  <path d="m922 237 8-13 8 13M922 271l8 13 8-13" class="navy"/>
+  <text x="735" y="210" class="small">1 mm-deep cavities</text>
+  <path d="M710 214 680 240" class="line"/>
+  <text x="635" y="380" class="small">3 mm solid base</text>
+  <path d="M705 360 705 326" class="line"/>
+</svg>
