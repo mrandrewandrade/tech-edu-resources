@@ -20,7 +20,7 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="logo-design" data-bs-total-lessons="5" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">3. Logo Design in Photopea</a><span data-bs-learn-group-count>5 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">4. Logo Design in Photopea</a><span data-bs-learn-group-count>5 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build the Nameplate Text&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Make an 11 by 4 inch file, leave room for a logo, and choose readable type.&quot;, &quot;Correct size, spacing, and legibility prepare a design for real output.&quot;]">

@@ -45,7 +45,24 @@
           ]
         },
         {
-          "id": "logo-design", "order": 3, "title": "Logo Design in Photopea", "hub": "design-fabrication/logo-design/index.qmd",
+          "id": "emotions-visual-communication", "order": 3, "title": "Emotions and Visual Communication", "hub": "design-fabrication/emotions/index.qmd",
+          "summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+          "use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+          "lessons": [
+            {"order": 1, "title": "Fear and Anxiety", "source": "design-fabrication/emotions/fear-anxiety.qmd", "summary": "Notice danger, uncertainty, preparation, and the urge to escape, avoid, or freeze.", "use": "Fear and anxiety can prompt protection, fact checking, support, and one safe brave step.", "status": "published", "resources": []},
+            {"order": 2, "title": "Anger", "source": "design-fabrication/emotions/anger.qmd", "summary": "Connect anger with blocked goals, unfairness, boundaries, and action.", "use": "Anger can be directed toward a clear boundary, repair, or another useful response.", "status": "published", "resources": []},
+            {"order": 3, "title": "Disgust", "source": "design-fabrication/emotions/disgust.qmd", "summary": "Notice signals of danger, harm, or a conflict with values.", "use": "Disgust can support stepping back and rejecting harm without dehumanizing people.", "status": "published", "resources": []},
+            {"order": 4, "title": "Envy", "source": "design-fabrication/emotions/envy.qmd", "summary": "Turn comparison and desire into a specific healthy goal.", "use": "Envy can reveal an aspiration and point toward learning, planning, and progress.", "status": "published", "resources": []},
+            {"order": 5, "title": "Jealousy", "source": "design-fabrication/emotions/jealousy.qmd", "summary": "Distinguish fear of losing a relationship, role, place, or attention from envy.", "use": "Jealousy can prompt fact checking, direct communication, and trust building.", "status": "published", "resources": []},
+            {"order": 6, "title": "Guilt", "source": "design-fabrication/emotions/guilt.qmd", "summary": "Use guilt to notice when behaviour may not match values.", "use": "Guilt can lead to acknowledgement, repair, changed behaviour, and release.", "status": "published", "resources": []},
+            {"order": 7, "title": "Shame", "source": "design-fabrication/emotions/shame.qmd", "summary": "Separate a mistaken action from a belief that something is wrong with the whole person.", "use": "Fact checking, repair, and safe support can move shame toward self-respect.", "status": "published", "resources": []},
+            {"order": 8, "title": "Happiness", "source": "design-fabrication/emotions/happiness.qmd", "summary": "Notice reward, connection, celebration, and momentum.", "use": "Happiness can show what is working and encourage people to continue and connect.", "status": "published", "resources": []},
+            {"order": 9, "title": "Love", "source": "design-fabrication/emotions/love.qmd", "summary": "Connect love with care, belonging, values, boundaries, and support.", "use": "Love can motivate useful care while still respecting boundaries.", "status": "published", "resources": []},
+            {"order": 10, "title": "Sadness", "source": "design-fabrication/emotions/sadness.qmd", "summary": "Notice loss, meaning, support, and the need to slow down.", "use": "Sadness can invite acknowledgement, rest, connection, and one small action.", "status": "published", "resources": []}
+          ]
+        },
+        {
+          "id": "logo-design", "order": 4, "title": "Logo Design in Photopea", "hub": "design-fabrication/logo-design/index.qmd",
           "summary": "Learn browser-based graphic design by building a nameplate and logo in five short projects.",
           "use": "The sequence develops editable vector artwork for signs, labels, slides, and fabrication.",
           "lessons": [
@@ -57,7 +74,7 @@
           ]
         },
         {
-          "id": "logo-animation", "order": 4, "title": "Logo Animation", "hub": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd",
+          "id": "logo-animation", "order": 5, "title": "Logo Animation", "hub": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd",
           "summary": "Apply animation foundations in a four-day browser project using the logo students already designed.",
           "use": "Motion, timing, testing, and export turn a static brand into a short screen-ready introduction.",
           "lessons": [
@@ -65,7 +82,7 @@
           ]
         },
         {
-          "id": "accessible-design", "order": 5, "title": "Accessible Design", "hub": "design-fabrication/accessible-design/index.qmd",
+          "id": "accessible-design", "order": 6, "title": "Accessible Design", "hub": "design-fabrication/accessible-design/index.qmd",
           "summary": "Build accessibility checks into graphic design instead of adding them at the end.",
           "use": "Readable, well-described graphics work better on screens, in print, and on fabricated objects.",
           "lessons": [
@@ -76,7 +93,7 @@
           ]
         },
         {
-          "id": "fabrication-tools", "order": 6, "title": "Laser Cutting and Fabrication Tools", "hub": "teaching-materials/laser-cutting/index.qmd",
+          "id": "fabrication-tools", "order": 7, "title": "Laser Cutting and Fabrication Tools", "hub": "teaching-materials/laser-cutting/index.qmd",
           "summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
           "use": "The sequence connects precise cutting to strong assemblies, deliberate surfaces, shop organization, and iterative fabrication.",
           "lessons": [
@@ -92,7 +109,7 @@
           ]
         },
         {
-          "id": "phone-holder-project", "order": 7, "title": "Making the Phone Holder", "hub": "design-fabrication/cad-parametric-modeling/index.qmd",
+          "id": "phone-holder-project", "order": 8, "title": "Making the Phone Holder", "hub": "design-fabrication/cad-parametric-modeling/index.qmd",
           "summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
           "use": "One connected project takes students from an idea to a finished holder.",
           "lessons": [
@@ -103,7 +120,7 @@
           ]
         },
         {
-          "id": "advanced-making", "order": 8, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
+          "id": "advanced-making", "order": 9, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
           "summary": "Continue with an optional advanced 3D-printing project.",
           "use": "These external project references provide a next challenge after the introductory build.",
           "lessons": [

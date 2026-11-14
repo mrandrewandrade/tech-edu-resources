@@ -258,6 +258,236 @@
       "course_hub": "/commons/design-fabrication/index.html",
       "sidebar_id": "design-fabrication",
       "lesson_order": 1,
+      "route": "/commons/design-fabrication/emotions/fear-anxiety.html",
+      "source": "design-fabrication/emotions/fear-anxiety.qmd",
+      "title": "Fear and Anxiety",
+      "summary": "Notice danger, uncertainty, preparation, and the urge to escape, avoid, or freeze.",
+      "use": "Fear and anxiety can prompt protection, fact checking, support, and one safe brave step.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": null,
+      "next_route": "/commons/design-fabrication/emotions/anger.html",
+      "next_starts_new_track": false,
+      "sequence_index": 9
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 2,
+      "route": "/commons/design-fabrication/emotions/anger.html",
+      "source": "design-fabrication/emotions/anger.qmd",
+      "title": "Anger",
+      "summary": "Connect anger with blocked goals, unfairness, boundaries, and action.",
+      "use": "Anger can be directed toward a clear boundary, repair, or another useful response.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/fear-anxiety.html",
+      "next_route": "/commons/design-fabrication/emotions/disgust.html",
+      "next_starts_new_track": false,
+      "sequence_index": 10
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 3,
+      "route": "/commons/design-fabrication/emotions/disgust.html",
+      "source": "design-fabrication/emotions/disgust.qmd",
+      "title": "Disgust",
+      "summary": "Notice signals of danger, harm, or a conflict with values.",
+      "use": "Disgust can support stepping back and rejecting harm without dehumanizing people.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/anger.html",
+      "next_route": "/commons/design-fabrication/emotions/envy.html",
+      "next_starts_new_track": false,
+      "sequence_index": 11
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 4,
+      "route": "/commons/design-fabrication/emotions/envy.html",
+      "source": "design-fabrication/emotions/envy.qmd",
+      "title": "Envy",
+      "summary": "Turn comparison and desire into a specific healthy goal.",
+      "use": "Envy can reveal an aspiration and point toward learning, planning, and progress.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/disgust.html",
+      "next_route": "/commons/design-fabrication/emotions/jealousy.html",
+      "next_starts_new_track": false,
+      "sequence_index": 12
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 5,
+      "route": "/commons/design-fabrication/emotions/jealousy.html",
+      "source": "design-fabrication/emotions/jealousy.qmd",
+      "title": "Jealousy",
+      "summary": "Distinguish fear of losing a relationship, role, place, or attention from envy.",
+      "use": "Jealousy can prompt fact checking, direct communication, and trust building.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/envy.html",
+      "next_route": "/commons/design-fabrication/emotions/guilt.html",
+      "next_starts_new_track": false,
+      "sequence_index": 13
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 6,
+      "route": "/commons/design-fabrication/emotions/guilt.html",
+      "source": "design-fabrication/emotions/guilt.qmd",
+      "title": "Guilt",
+      "summary": "Use guilt to notice when behaviour may not match values.",
+      "use": "Guilt can lead to acknowledgement, repair, changed behaviour, and release.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/jealousy.html",
+      "next_route": "/commons/design-fabrication/emotions/shame.html",
+      "next_starts_new_track": false,
+      "sequence_index": 14
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 7,
+      "route": "/commons/design-fabrication/emotions/shame.html",
+      "source": "design-fabrication/emotions/shame.qmd",
+      "title": "Shame",
+      "summary": "Separate a mistaken action from a belief that something is wrong with the whole person.",
+      "use": "Fact checking, repair, and safe support can move shame toward self-respect.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/guilt.html",
+      "next_route": "/commons/design-fabrication/emotions/happiness.html",
+      "next_starts_new_track": false,
+      "sequence_index": 15
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 8,
+      "route": "/commons/design-fabrication/emotions/happiness.html",
+      "source": "design-fabrication/emotions/happiness.qmd",
+      "title": "Happiness",
+      "summary": "Notice reward, connection, celebration, and momentum.",
+      "use": "Happiness can show what is working and encourage people to continue and connect.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/shame.html",
+      "next_route": "/commons/design-fabrication/emotions/love.html",
+      "next_starts_new_track": false,
+      "sequence_index": 16
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 9,
+      "route": "/commons/design-fabrication/emotions/love.html",
+      "source": "design-fabrication/emotions/love.qmd",
+      "title": "Love",
+      "summary": "Connect love with care, belonging, values, boundaries, and support.",
+      "use": "Love can motivate useful care while still respecting boundaries.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/happiness.html",
+      "next_route": "/commons/design-fabrication/emotions/sadness.html",
+      "next_starts_new_track": false,
+      "sequence_index": 17
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 10,
+      "route": "/commons/design-fabrication/emotions/sadness.html",
+      "source": "design-fabrication/emotions/sadness.qmd",
+      "title": "Sadness",
+      "summary": "Notice loss, meaning, support, and the need to slow down.",
+      "use": "Sadness can invite acknowledgement, rest, connection, and one small action.",
+      "resources": [],
+      "track_id": "emotions-visual-communication",
+      "track_order": 3,
+      "track_title": "Emotions and Visual Communication",
+      "track_hub": "design-fabrication/emotions/index.qmd",
+      "track_summary": "Understand what emotions do and use emotional signals deliberately in visual communication.",
+      "track_use": "The sequence connects self-awareness, audience response, and practical design choices for personal-brand graphics.",
+      "previous_route": "/commons/design-fabrication/emotions/love.html",
+      "next_route": null,
+      "next_starts_new_track": false,
+      "sequence_index": 18
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 1,
       "route": "/commons/design-fabrication/logo-design/nameplate-text-photopea.html",
       "source": "design-fabrication/logo-design/nameplate-text-photopea.qmd",
       "title": "Build the Nameplate Text",
@@ -265,7 +495,7 @@
       "use": "Correct size, spacing, and legibility prepare a design for real output.",
       "resources": [],
       "track_id": "logo-design",
-      "track_order": 3,
+      "track_order": 4,
       "track_title": "Logo Design in Photopea",
       "track_hub": "design-fabrication/logo-design/index.qmd",
       "track_summary": "Learn browser-based graphic design by building a nameplate and logo in five short projects.",
@@ -273,7 +503,7 @@
       "previous_route": null,
       "next_route": "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",
       "next_starts_new_track": false,
-      "sequence_index": 9
+      "sequence_index": 19
     },
     {
       "course_id": "design-fabrication",
@@ -288,7 +518,7 @@
       "use": "The warm-up introduces editable vector shapes, visual checking, and SVG export.",
       "resources": [],
       "track_id": "logo-design",
-      "track_order": 3,
+      "track_order": 4,
       "track_title": "Logo Design in Photopea",
       "track_hub": "design-fabrication/logo-design/index.qmd",
       "track_summary": "Learn browser-based graphic design by building a nameplate and logo in five short projects.",
@@ -296,7 +526,7 @@
       "previous_route": "/commons/design-fabrication/logo-design/nameplate-text-photopea.html",
       "next_route": "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
       "next_starts_new_track": false,
-      "sequence_index": 10
+      "sequence_index": 20
     },
     {
       "course_id": "design-fabrication",
@@ -311,7 +541,7 @@
       "use": "Separate layers make complex artwork easier to revise, colour, fabricate, and animate.",
       "resources": [],
       "track_id": "logo-design",
-      "track_order": 3,
+      "track_order": 4,
       "track_title": "Logo Design in Photopea",
       "track_hub": "design-fabrication/logo-design/index.qmd",
       "track_summary": "Learn browser-based graphic design by building a nameplate and logo in five short projects.",
@@ -319,7 +549,7 @@
       "previous_route": "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",
       "next_route": "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
       "next_starts_new_track": false,
-      "sequence_index": 11
+      "sequence_index": 21
     },
     {
       "course_id": "design-fabrication",
@@ -334,7 +564,7 @@
       "use": "The worked example shows alignment, proportion, and file-export decisions.",
       "resources": [],
       "track_id": "logo-design",
-      "track_order": 3,
+      "track_order": 4,
       "track_title": "Logo Design in Photopea",
       "track_hub": "design-fabrication/logo-design/index.qmd",
       "track_summary": "Learn browser-based graphic design by building a nameplate and logo in five short projects.",
@@ -342,7 +572,7 @@
       "previous_route": "/commons/design-fabrication/logo-design/02b-advanced-multilayer-tracing-photopea.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/01-name-logo.html",
       "next_starts_new_track": false,
-      "sequence_index": 12
+      "sequence_index": 22
     },
     {
       "course_id": "design-fabrication",
@@ -357,7 +587,7 @@
       "use": "The project connects digital design, accessibility checks, and fabrication output.",
       "resources": [],
       "track_id": "logo-design",
-      "track_order": 3,
+      "track_order": 4,
       "track_title": "Logo Design in Photopea",
       "track_hub": "design-fabrication/logo-design/index.qmd",
       "track_summary": "Learn browser-based graphic design by building a nameplate and logo in five short projects.",
@@ -365,7 +595,7 @@
       "previous_route": "/commons/design-fabrication/logo-design/03-combine-logo-nameplate.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 13
+      "sequence_index": 23
     },
     {
       "course_id": "design-fabrication",
@@ -397,7 +627,7 @@
         }
       ],
       "track_id": "logo-animation",
-      "track_order": 4,
+      "track_order": 5,
       "track_title": "Logo Animation",
       "track_hub": "design-fabrication/02-digital-design/05-animation-ui-ux.qmd",
       "track_summary": "Apply animation foundations in a four-day browser project using the logo students already designed.",
@@ -405,7 +635,7 @@
       "previous_route": null,
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 14
+      "sequence_index": 24
     },
     {
       "course_id": "design-fabrication",
@@ -420,7 +650,7 @@
       "use": "Useful descriptions preserve meaning for people who cannot use the image visually.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -428,7 +658,7 @@
       "previous_route": null,
       "next_route": "/commons/design-fabrication/accessible-design/fonts-and-text-effects.html",
       "next_starts_new_track": false,
-      "sequence_index": 15
+      "sequence_index": 25
     },
     {
       "course_id": "design-fabrication",
@@ -443,7 +673,7 @@
       "use": "Legible type survives small screens, printing, engraving, and viewing from a distance.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -451,7 +681,7 @@
       "previous_route": "/commons/design-fabrication/accessible-design/access-and-alt-text.html",
       "next_route": "/commons/design-fabrication/accessible-design/understanding-colour.html",
       "next_starts_new_track": false,
-      "sequence_index": 16
+      "sequence_index": 26
     },
     {
       "course_id": "design-fabrication",
@@ -466,7 +696,7 @@
       "use": "Colour decisions affect emphasis, reproduction, and whether meaning survives greyscale.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -474,7 +704,7 @@
       "previous_route": "/commons/design-fabrication/accessible-design/fonts-and-text-effects.html",
       "next_route": "/commons/design-fabrication/accessible-design/contrast-and-output.html",
       "next_starts_new_track": false,
-      "sequence_index": 17
+      "sequence_index": 27
     },
     {
       "course_id": "design-fabrication",
@@ -489,7 +719,7 @@
       "use": "Testing catches problems before a graphic is shared or made.",
       "resources": [],
       "track_id": "accessible-design",
-      "track_order": 5,
+      "track_order": 6,
       "track_title": "Accessible Design",
       "track_hub": "design-fabrication/accessible-design/index.qmd",
       "track_summary": "Build accessibility checks into graphic design instead of adding them at the end.",
@@ -497,7 +727,7 @@
       "previous_route": "/commons/design-fabrication/accessible-design/understanding-colour.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 18
+      "sequence_index": 28
     },
     {
       "course_id": "design-fabrication",
@@ -512,7 +742,7 @@
       "use": "Support geometry is useful for signs, displays, holders, and models.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -520,7 +750,7 @@
       "previous_route": null,
       "next_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
       "next_starts_new_track": false,
-      "sequence_index": 19
+      "sequence_index": 29
     },
     {
       "course_id": "design-fabrication",
@@ -535,7 +765,7 @@
       "use": "Measured placement improves access, spacing, and fit.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -543,7 +773,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
       "next_starts_new_track": false,
-      "sequence_index": 20
+      "sequence_index": 30
     },
     {
       "course_id": "design-fabrication",
@@ -558,7 +788,7 @@
       "use": "Calibration reduces wasted material and unreliable joints.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -566,7 +796,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
       "next_starts_new_track": false,
-      "sequence_index": 21
+      "sequence_index": 31
     },
     {
       "course_id": "design-fabrication",
@@ -581,7 +811,7 @@
       "use": "Hybrid fabrication expands what a flat-sheet process can make.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -589,7 +819,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/04-material-fit-calibration.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/assembly-adhesives-finishing.html",
       "next_starts_new_track": false,
-      "sequence_index": 22
+      "sequence_index": 32
     },
     {
       "course_id": "design-fabrication",
@@ -621,7 +851,7 @@
         }
       ],
       "track_id": "fabrication-tools",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -629,7 +859,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/05-assemblies-hybrid-fabrication.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
       "next_starts_new_track": false,
-      "sequence_index": 23
+      "sequence_index": 33
     },
     {
       "course_id": "design-fabrication",
@@ -649,7 +879,7 @@
         }
       ],
       "track_id": "fabrication-tools",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -657,7 +887,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/assembly-adhesives-finishing.html",
       "next_route": "/commons/design-fabrication/03-laser-cutting/08-capstone.html",
       "next_starts_new_track": false,
-      "sequence_index": 24
+      "sequence_index": 34
     },
     {
       "course_id": "design-fabrication",
@@ -672,7 +902,7 @@
       "use": "The capstone combines evidence, design decisions, fabrication, and evaluation.",
       "resources": [],
       "track_id": "fabrication-tools",
-      "track_order": 6,
+      "track_order": 7,
       "track_title": "Laser Cutting and Fabrication Tools",
       "track_hub": "teaching-materials/laser-cutting/index.qmd",
       "track_summary": "Use measured drawings, joint design, adhesives, finishing choices, builders, and reusable files to make laser-cut projects.",
@@ -680,7 +910,7 @@
       "previous_route": "/commons/design-fabrication/03-laser-cutting/07-wall-bench-module.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 25
+      "sequence_index": 35
     },
     {
       "course_id": "design-fabrication",
@@ -708,7 +938,7 @@
         }
       ],
       "track_id": "phone-holder-project",
-      "track_order": 7,
+      "track_order": 8,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -716,7 +946,7 @@
       "previous_route": null,
       "next_route": "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
       "next_starts_new_track": false,
-      "sequence_index": 26
+      "sequence_index": 36
     },
     {
       "course_id": "design-fabrication",
@@ -731,7 +961,7 @@
       "use": "The model shows what to make before the shop work begins.",
       "resources": [],
       "track_id": "phone-holder-project",
-      "track_order": 7,
+      "track_order": 8,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -739,7 +969,7 @@
       "previous_route": "/commons/design-fabrication/cad-parametric-modeling/phone-holder-design.html",
       "next_route": "/commons/design-fabrication/hand-tools/tools-machines.html",
       "next_starts_new_track": false,
-      "sequence_index": 27
+      "sequence_index": 37
     },
     {
       "course_id": "design-fabrication",
@@ -754,7 +984,7 @@
       "use": "The pictures connect each tool to one job in the build.",
       "resources": [],
       "track_id": "phone-holder-project",
-      "track_order": 7,
+      "track_order": 8,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -762,7 +992,7 @@
       "previous_route": "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
       "next_route": "/commons/design-fabrication/hand-tools/phone-holder.html",
       "next_starts_new_track": false,
-      "sequence_index": 28
+      "sequence_index": 38
     },
     {
       "course_id": "design-fabrication",
@@ -786,7 +1016,7 @@
         }
       ],
       "track_id": "phone-holder-project",
-      "track_order": 7,
+      "track_order": 8,
       "track_title": "Making the Phone Holder",
       "track_hub": "design-fabrication/cad-parametric-modeling/index.qmd",
       "track_summary": "Choose a phone holder, make the CAD, learn the tools, and build it.",
@@ -794,7 +1024,7 @@
       "previous_route": "/commons/design-fabrication/hand-tools/tools-machines.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 29
+      "sequence_index": 39
     },
     {
       "course_id": "design-fabrication",
@@ -818,7 +1048,7 @@
         }
       ],
       "track_id": "advanced-making",
-      "track_order": 8,
+      "track_order": 9,
       "track_title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
       "track_hub": null,
       "track_summary": "Continue with an optional advanced 3D-printing project.",
@@ -826,7 +1056,7 @@
       "previous_route": null,
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 30
+      "sequence_index": 40
     },
     {
       "course_id": "tej",
@@ -854,7 +1084,7 @@
       "previous_route": null,
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 31
+      "sequence_index": 41
     },
     {
       "course_id": "tej",
@@ -877,7 +1107,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/electronics-library/components/resistors.html",
       "next_starts_new_track": false,
-      "sequence_index": 32
+      "sequence_index": 42
     },
     {
       "course_id": "tej",
@@ -900,7 +1130,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/schematic-basics.html",
       "next_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
       "next_starts_new_track": false,
-      "sequence_index": 33
+      "sequence_index": 43
     },
     {
       "course_id": "tej",
@@ -940,7 +1170,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/resistors.html",
       "next_route": "/commons/tej3-4/electronics-library/components/rc-charge-discharge.html",
       "next_starts_new_track": false,
-      "sequence_index": 34
+      "sequence_index": 44
     },
     {
       "course_id": "tej",
@@ -984,7 +1214,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
       "next_route": "/commons/tej3-4/electronics-library/components/rc-time-constant-design.html",
       "next_starts_new_track": false,
-      "sequence_index": 35
+      "sequence_index": 45
     },
     {
       "course_id": "tej",
@@ -1028,7 +1258,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/rc-charge-discharge.html",
       "next_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
       "next_starts_new_track": false,
-      "sequence_index": 36
+      "sequence_index": 46
     },
     {
       "course_id": "tej",
@@ -1051,7 +1281,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/rc-time-constant-design.html",
       "next_route": "/commons/tej3-4/electronics-library/components/transistors.html",
       "next_starts_new_track": false,
-      "sequence_index": 37
+      "sequence_index": 47
     },
     {
       "course_id": "tej",
@@ -1074,7 +1304,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
       "next_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "next_starts_new_track": false,
-      "sequence_index": 38
+      "sequence_index": 48
     },
     {
       "course_id": "tej",
@@ -1097,7 +1327,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/transistors.html",
       "next_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 39
+      "sequence_index": 49
     },
     {
       "course_id": "tej",
@@ -1169,7 +1399,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "next_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 40
+      "sequence_index": 50
     },
     {
       "course_id": "tej",
@@ -1241,7 +1471,7 @@
       "previous_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 41
+      "sequence_index": 51
     },
     {
       "course_id": "tej",
@@ -1297,7 +1527,7 @@
       "previous_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_starts_new_track": false,
-      "sequence_index": 42
+      "sequence_index": 52
     },
     {
       "course_id": "tej",
@@ -1341,7 +1571,7 @@
       "previous_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 43
+      "sequence_index": 53
     },
     {
       "course_id": "tej",
@@ -1381,7 +1611,7 @@
       "previous_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_route": "/commons/tej3-4/circuits/tinkercad-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 44
+      "sequence_index": 54
     },
     {
       "course_id": "tej",
@@ -1409,7 +1639,7 @@
       "previous_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 45
+      "sequence_index": 55
     },
     {
       "course_id": "tej",
@@ -1432,7 +1662,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 46
+      "sequence_index": 56
     },
     {
       "course_id": "tej",
@@ -1455,7 +1685,7 @@
       "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 47
+      "sequence_index": 57
     },
     {
       "course_id": "tej",
@@ -1483,7 +1713,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_starts_new_track": false,
-      "sequence_index": 48
+      "sequence_index": 58
     },
     {
       "course_id": "tej",
@@ -1515,7 +1745,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_starts_new_track": false,
-      "sequence_index": 49
+      "sequence_index": 59
     },
     {
       "course_id": "tej",
@@ -1559,7 +1789,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_starts_new_track": false,
-      "sequence_index": 50
+      "sequence_index": 60
     },
     {
       "course_id": "tej",
@@ -1582,7 +1812,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_starts_new_track": false,
-      "sequence_index": 51
+      "sequence_index": 61
     },
     {
       "course_id": "tej",
@@ -1605,7 +1835,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_starts_new_track": false,
-      "sequence_index": 52
+      "sequence_index": 62
     },
     {
       "course_id": "tej",
@@ -1628,7 +1858,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_starts_new_track": false,
-      "sequence_index": 53
+      "sequence_index": 63
     },
     {
       "course_id": "tej",
@@ -1651,7 +1881,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_starts_new_track": false,
-      "sequence_index": 54
+      "sequence_index": 64
     },
     {
       "course_id": "tej",
@@ -1674,7 +1904,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_starts_new_track": false,
-      "sequence_index": 55
+      "sequence_index": 65
     },
     {
       "course_id": "tej",
@@ -1697,7 +1927,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_starts_new_track": false,
-      "sequence_index": 56
+      "sequence_index": 66
     },
     {
       "course_id": "tej",
@@ -1720,7 +1950,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_starts_new_track": false,
-      "sequence_index": 57
+      "sequence_index": 67
     },
     {
       "course_id": "tej",
@@ -1743,7 +1973,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
       "next_starts_new_track": false,
-      "sequence_index": 58
+      "sequence_index": 68
     },
     {
       "course_id": "tej",
@@ -1766,7 +1996,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 59
+      "sequence_index": 69
     },
     {
       "course_id": "tej",
@@ -1789,7 +2019,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 60
+      "sequence_index": 70
     },
     {
       "course_id": "tej",
@@ -1812,7 +2042,7 @@
       "previous_route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
       "next_route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 61
+      "sequence_index": 71
     },
     {
       "course_id": "tej",
@@ -1835,7 +2065,7 @@
       "previous_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 62
+      "sequence_index": 72
     },
     {
       "course_id": "tej",
@@ -1863,7 +2093,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computational-engineering/circuit-quest.html",
       "next_starts_new_track": false,
-      "sequence_index": 63
+      "sequence_index": 73
     },
     {
       "course_id": "tej",
@@ -1891,7 +2121,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/jupyterlite.html",
       "next_route": "/commons/tej3-4/computational-engineering/python-first-steps.html",
       "next_starts_new_track": false,
-      "sequence_index": 64
+      "sequence_index": 74
     },
     {
       "course_id": "tej",
@@ -1919,7 +2149,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/circuit-quest.html",
       "next_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
       "next_starts_new_track": false,
-      "sequence_index": 65
+      "sequence_index": 75
     },
     {
       "course_id": "tej",
@@ -1951,7 +2181,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/python-first-steps.html",
       "next_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_starts_new_track": false,
-      "sequence_index": 66
+      "sequence_index": 76
     },
     {
       "course_id": "tej",
@@ -1983,7 +2213,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
       "next_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "next_starts_new_track": false,
-      "sequence_index": 67
+      "sequence_index": 77
     },
     {
       "course_id": "tej",
@@ -2015,7 +2245,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_starts_new_track": false,
-      "sequence_index": 68
+      "sequence_index": 78
     },
     {
       "course_id": "tej",
@@ -2051,7 +2281,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "next_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "next_starts_new_track": false,
-      "sequence_index": 69
+      "sequence_index": 79
     },
     {
       "course_id": "tej",
@@ -2083,7 +2313,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_route": "/commons/tej3-4/computational-engineering/midterm-circuit-investigation.html",
       "next_starts_new_track": false,
-      "sequence_index": 70
+      "sequence_index": 80
     },
     {
       "course_id": "tej",
@@ -2115,7 +2345,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 71
+      "sequence_index": 81
     }
   ]
 }

@@ -98,12 +98,13 @@ class DesignFabricationTests(unittest.TestCase):
         ordered = [
             'text: "General Design & Fabrication Home"',
             'section: "2. S.O. N.I.C.E. Design Process"',
-            'section: "3. Logo Design in Photopea"',
-            'section: "4. Logo Animation"',
-            'section: "5. Accessible Design"',
-            'section: "6. Laser Cutting and Fabrication Tools"',
-            'section: "7. Making the Phone Holder"',
-            'section: "8. Advanced Making: Stamp or Faux-Enamel Jewellery"',
+            'section: "3. Emotions and Visual Communication"',
+            'section: "4. Logo Design in Photopea"',
+            'section: "5. Logo Animation"',
+            'section: "6. Accessible Design"',
+            'section: "7. Laser Cutting and Fabrication Tools"',
+            'section: "8. Making the Phone Holder"',
+            'section: "9. Advanced Making: Stamp or Faux-Enamel Jewellery"',
             'section: "CAD Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]
@@ -322,8 +323,23 @@ class DesignFabricationTests(unittest.TestCase):
         self.assertIn("data-laser-grid", laser_gallery)
 
     def test_emotions_notes_and_worksheet_are_integrated(self) -> None:
-        notes = self.read("teaching-materials/emotions/why-we-have-emotions.qmd")
+        notes = self.read("design-fabrication/emotions/index.qmd")
         emotion_pages = {
+            name: self.read(f"design-fabrication/emotions/{name}.qmd")
+            for name in (
+                "fear-anxiety",
+                "anger",
+                "disgust",
+                "envy",
+                "jealousy",
+                "guilt",
+                "shame",
+                "happiness",
+                "love",
+                "sadness",
+            )
+        }
+        redirects = {
             name: self.read(f"teaching-materials/emotions/{name}.qmd")
             for name in (
                 "fear-anxiety",
@@ -338,9 +354,11 @@ class DesignFabricationTests(unittest.TestCase):
                 "sadness",
             )
         }
+        hub_redirect = self.read("teaching-materials/emotions/why-we-have-emotions.qmd")
         materials = self.read("teaching-materials/index.qmd")
         slides = self.read("teacher-slides/index.qmd")
         personal_brand = self.read("design-fabrication/logo-design/personal-brand-graphic-photopea.qmd")
+        course_notes = self.read("data/course-notes.json")
         worksheet_id = "1-wqGI8FIPJ-cW7bpEiIhJqWkCEuuI4CPLDTlg5gm6xM"
         for heading in (
             "They motivate us",
@@ -357,12 +375,33 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertIn(f"({name}.qmd)", notes)
             self.assertIn("What can help", page)
             self.assertIn("Design connection", page)
-            self.assertIn("why-we-have-emotions.qmd", page)
+            self.assertIn("sidebar: design-fabrication", page)
+            self.assertIn("(index.qmd)", page)
+            self.assertIn("search: false", redirects[name])
+            self.assertIn(f"design-fabrication/emotions/{name}.html", redirects[name])
+        self.assertIn("sidebar: design-fabrication", notes)
+        self.assertIn("search: false", hub_redirect)
+        self.assertIn("design-fabrication/emotions/", hub_redirect)
+        self.assertIn('"id": "emotions-visual-communication"', course_notes)
+        self.assertIn('"hub": "design-fabrication/emotions/index.qmd"', course_notes)
         for source in (notes, materials, slides, personal_brand):
             self.assertIn(worksheet_id, source)
         for source in (materials, slides, personal_brand):
-            self.assertIn("emotions/why-we-have-emotions.qmd", source)
+            self.assertIn("emotions/index.qmd", source)
         self.assertIn(f"{worksheet_id}/copy", notes)
+
+    def test_about_page_links_live_projects_and_tools(self) -> None:
+        about = self.read("about.qmd")
+        for text in (
+            "Projects and tools",
+            "https://andrewandrade.ca/sos/",
+            "https://andrewandrade.ca/soundboard/",
+            "https://andrewandrade.ca/blog/",
+            "https://andrewandrade.ca/cv/",
+            "https://github.com/mrandrewandrade/sos",
+            "https://github.com/mrandrewandrade/soundboard",
+        ):
+            self.assertIn(text, about)
 
     def test_laser_gallery_projects_include_files_photos_and_sources(self) -> None:
         gallery = self.read("teaching-materials/laser-cutting/gallery.qmd")

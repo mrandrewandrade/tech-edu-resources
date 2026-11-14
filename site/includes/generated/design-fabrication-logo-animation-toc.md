@@ -20,7 +20,7 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="logo-animation" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="05-animation-ui-ux.html">4. Logo Animation</a><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="05-animation-ui-ux.html">5. Logo Animation</a><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-animation" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Bring Your Brand to Life: Animate Your Logo&quot;, &quot;Logo Animation&quot;]" data-bs-search-body="[&quot;Create a 5–8 second animated logo intro with intentional changes, a complete sequence, feedback, and improvement.&quot;, &quot;The assignment connects identity design to motion graphics used in creator, product, fashion, gaming, business, and portfolio media.&quot;, &quot;Project-Launch Slides&quot;, &quot;Student Workspace&quot;, &quot;Printable Handout&quot;, &quot;Teacher Guide&quot;]">

@@ -1,122 +1,16 @@
 ---
-title: "What Do Emotions Do?"
-description: "A short lesson on how emotions motivate us, communicate with us, and communicate with other people."
-body-classes: "bs-learn-article ter-notes-lesson"
-toc: true
-execute:
-  enabled: false
+title: "Emotions notes have moved"
+search: false
+sidebar: false
+toc: false
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0; url=../../design-fabrication/emotions/">
+        <link rel="canonical" href="https://andrewandrade.ca/tech-edu-resources/design-fabrication/emotions/">
+        <meta name="robots" content="noindex,follow">
+execute: {enabled: false}
 ---
 
-Emotions give us information and energy. They are signals, not commands.
-
-You never need to share private details to take part in this lesson.
-
-## What do emotions do?
-
-### 1. They motivate us
-
-Emotions prepare us to act.
-
-### 2. They communicate to us
-
-They point to what matters, what feels unsafe, or what needs attention.
-
-### 3. They communicate to others
-
-People read our face, voice, posture, and actions. Design communicates in similar ways through colour, type, images, shapes, spacing, and contrast.
-
-## Don't let the feed farm you
-
-The feed picks what you see.
-
-It makes money when you keep scrolling.
-
-**Look up. Name what you feel. Pick your own move.**
-
-## Explore an emotion
-
-::: {.grid}
-::: {.g-col-12 .g-col-md-6}
-### [Fear and anxiety](fear-anxiety.qmd)
-
-Danger, uncertainty, protection, and courage.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Anger](anger.qmd)
-
-Blocked goals, unfairness, boundaries, and action.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Disgust](disgust.qmd)
-
-Safety, harm, values, and stepping back.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Envy](envy.qmd)
-
-Comparison, desire, goals, and healthy progress.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Jealousy](jealousy.qmd)
-
-Connection, loss, trust, and communication.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Guilt](guilt.qmd)
-
-Values, responsibility, repair, and change.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Shame](shame.qmd)
-
-Exposure, identity, self-respect, and support.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Happiness](happiness.qmd)
-
-Reward, connection, celebration, and momentum.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Love](love.qmd)
-
-Care, belonging, boundaries, and support.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Sadness](sadness.qmd)
-
-Loss, meaning, support, and one small step.
-:::
-:::
-
-## What can we do with an emotion?
-
-1. **Name it to tame it.** What am I feeling?
-2. **Feel it to heal it.** Notice the feeling without acting right away.
-3. **Check the facts.** What is happening? What does the emotion make me want to do?
-4. **Choose the next action.** What response will help?
-
-## Use emotions in your design
-
-Choose three emotions you want people to feel when they see your personal brand.
-
-For each emotion, choose one design move using colour, type, images, shapes, spacing, or contrast.
-
-[Open the Three Emotions worksheet](https://docs.google.com/document/d/1-wqGI8FIPJ-cW7bpEiIhJqWkCEuuI4CPLDTlg5gm6xM/edit){.btn .btn-primary}
-[Make a worksheet copy](https://docs.google.com/document/d/1-wqGI8FIPJ-cW7bpEiIhJqWkCEuuI4CPLDTlg5gm6xM/copy){.btn .btn-outline-primary}
-
-Continue with the [Personal Brand Graphic in Photopea](../../design-fabrication/logo-design/personal-brand-graphic-photopea.qmd).
-
-## Lesson resources
-
-- [Why We Have Emotions slide deck](https://docs.google.com/presentation/d/1CnPQ-C1e5JIT2ZCuljJj2ddsWO-DCMcLBLV4Y_yZo0I/edit)
-- [Three Emotions for My Personal Brand worksheet](https://docs.google.com/document/d/1-wqGI8FIPJ-cW7bpEiIhJqWkCEuuI4CPLDTlg5gm6xM/edit)
-- [Personal Brand Graphic notes and assignment](../../design-fabrication/logo-design/personal-brand-graphic-photopea.qmd)
+These notes now live in [Emotions and Visual Communication](../../design-fabrication/emotions/index.qmd).

@@ -12,16 +12,17 @@
       <div class="bs-learn-filter-options" role="group" aria-label="Filter by module">
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="culture-land" aria-pressed="false">1. Culture and Land-Based Learning<span class="bs-learn-filter-count">×2</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="design-process" aria-pressed="false">2. S.O. N.I.C.E. Design Process<span class="bs-learn-filter-count">×7</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-design" aria-pressed="false">3. Logo Design in Photopea<span class="bs-learn-filter-count">×5</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-animation" aria-pressed="false">4. Logo Animation<span class="bs-learn-filter-count">×1</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="accessible-design" aria-pressed="false">5. Accessible Design<span class="bs-learn-filter-count">×4</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">6. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×9</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="phone-holder-project" aria-pressed="false">7. Making the Phone Holder<span class="bs-learn-filter-count">×4</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">8. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="emotions-visual-communication" aria-pressed="false">3. Emotions and Visual Communication<span class="bs-learn-filter-count">×10</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-design" aria-pressed="false">4. Logo Design in Photopea<span class="bs-learn-filter-count">×5</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="logo-animation" aria-pressed="false">5. Logo Animation<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="accessible-design" aria-pressed="false">6. Accessible Design<span class="bs-learn-filter-count">×4</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">7. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×9</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="phone-holder-project" aria-pressed="false">8. Making the Phone Holder<span class="bs-learn-filter-count">×4</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">9. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 33 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 43 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -116,9 +117,86 @@
     </article>
   </div>
 </details>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="emotions-visual-communication" data-bs-total-lessons="10" open>
+  <summary class="bs-learn-catalogue-section-heading">
+    <span class="bs-learn-track-heading"><a href="emotions/index.html">3. Emotions and Visual Communication</a><span data-bs-learn-group-count>10 lessons</span></span>
+  </summary>
+  <div class="bs-learn-catalogue-section-items">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Fear and Anxiety&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Notice danger, uncertainty, preparation, and the urge to escape, avoid, or freeze.&quot;, &quot;Fear and anxiety can prompt protection, fact checking, support, and one safe brave step.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Fear and Anxiety"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/fear-anxiety.html">1. Fear and Anxiety</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Notice danger, uncertainty, preparation, and the urge to escape, avoid, or freeze.</p>
+        <p>Fear and anxiety can prompt protection, fact checking, support, and one safe brave step.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Anger&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Connect anger with blocked goals, unfairness, boundaries, and action.&quot;, &quot;Anger can be directed toward a clear boundary, repair, or another useful response.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Anger"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/anger.html">2. Anger</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Connect anger with blocked goals, unfairness, boundaries, and action.</p>
+        <p>Anger can be directed toward a clear boundary, repair, or another useful response.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Disgust&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Notice signals of danger, harm, or a conflict with values.&quot;, &quot;Disgust can support stepping back and rejecting harm without dehumanizing people.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Disgust"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/disgust.html">3. Disgust</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Notice signals of danger, harm, or a conflict with values.</p>
+        <p>Disgust can support stepping back and rejecting harm without dehumanizing people.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Envy&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Turn comparison and desire into a specific healthy goal.&quot;, &quot;Envy can reveal an aspiration and point toward learning, planning, and progress.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Envy"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/envy.html">4. Envy</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Turn comparison and desire into a specific healthy goal.</p>
+        <p>Envy can reveal an aspiration and point toward learning, planning, and progress.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Jealousy&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Distinguish fear of losing a relationship, role, place, or attention from envy.&quot;, &quot;Jealousy can prompt fact checking, direct communication, and trust building.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Jealousy"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/jealousy.html">5. Jealousy</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Distinguish fear of losing a relationship, role, place, or attention from envy.</p>
+        <p>Jealousy can prompt fact checking, direct communication, and trust building.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Guilt&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Use guilt to notice when behaviour may not match values.&quot;, &quot;Guilt can lead to acknowledgement, repair, changed behaviour, and release.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Guilt"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/guilt.html">6. Guilt</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Use guilt to notice when behaviour may not match values.</p>
+        <p>Guilt can lead to acknowledgement, repair, changed behaviour, and release.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Shame&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Separate a mistaken action from a belief that something is wrong with the whole person.&quot;, &quot;Fact checking, repair, and safe support can move shame toward self-respect.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Shame"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/shame.html">7. Shame</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Separate a mistaken action from a belief that something is wrong with the whole person.</p>
+        <p>Fact checking, repair, and safe support can move shame toward self-respect.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Happiness&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Notice reward, connection, celebration, and momentum.&quot;, &quot;Happiness can show what is working and encourage people to continue and connect.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Happiness"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/happiness.html">8. Happiness</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Notice reward, connection, celebration, and momentum.</p>
+        <p>Happiness can show what is working and encourage people to continue and connect.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Love&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Connect love with care, belonging, values, boundaries, and support.&quot;, &quot;Love can motivate useful care while still respecting boundaries.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Love"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/love.html">9. Love</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Connect love with care, belonging, values, boundaries, and support.</p>
+        <p>Love can motivate useful care while still respecting boundaries.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="emotions-visual-communication" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Sadness&quot;, &quot;Emotions and Visual Communication&quot;]" data-bs-search-body="[&quot;Notice loss, meaning, support, and the need to slow down.&quot;, &quot;Sadness can invite acknowledgement, rest, connection, and one small action.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Sadness"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="emotions/sadness.html">10. Sadness</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Notice loss, meaning, support, and the need to slow down.</p>
+        <p>Sadness can invite acknowledgement, rest, connection, and one small action.</p>
+      </details>
+    </article>
+  </div>
+</details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="logo-design" data-bs-total-lessons="5" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="logo-design/index.html">3. Logo Design in Photopea</a><span data-bs-learn-group-count>5 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="logo-design/index.html">4. Logo Design in Photopea</a><span data-bs-learn-group-count>5 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Build the Nameplate Text&quot;, &quot;Logo Design in Photopea&quot;]" data-bs-search-body="[&quot;Make an 11 by 4 inch file, leave room for a logo, and choose readable type.&quot;, &quot;Correct size, spacing, and legibility prepare a design for real output.&quot;]">
@@ -160,7 +238,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="logo-animation" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="02-digital-design/05-animation-ui-ux.html">4. Logo Animation</a><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="02-digital-design/05-animation-ui-ux.html">5. Logo Animation</a><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="logo-animation" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Bring Your Brand to Life: Animate Your Logo&quot;, &quot;Logo Animation&quot;]" data-bs-search-body="[&quot;Create a 5–8 second animated logo intro with intentional changes, a complete sequence, feedback, and improvement.&quot;, &quot;The assignment connects identity design to motion graphics used in creator, product, fashion, gaming, business, and portfolio media.&quot;, &quot;Project-Launch Slides&quot;, &quot;Student Workspace&quot;, &quot;Printable Handout&quot;, &quot;Teacher Guide&quot;]">
@@ -175,7 +253,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="accessible-design" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="accessible-design/index.html">5. Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="accessible-design/index.html">6. Accessible Design</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="accessible-design" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Access and Alt Text&quot;, &quot;Accessible Design&quot;]" data-bs-search-body="[&quot;Describe the instructional purpose of an image and identify barriers to access.&quot;, &quot;Useful descriptions preserve meaning for people who cannot use the image visually.&quot;]">
@@ -210,7 +288,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="fabrication-tools" data-bs-total-lessons="9" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="../teaching-materials/laser-cutting/index.html">6. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="../teaching-materials/laser-cutting/index.html">7. Laser Cutting and Fabrication Tools</a><span data-bs-learn-group-count>9 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="fabrication-tools" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Make It Stand&quot;, &quot;Laser Cutting and Fabrication Tools&quot;]" data-bs-search-body="[&quot;Compare ways to support a flat design as a stable object.&quot;, &quot;Support geometry is useful for signs, displays, holders, and models.&quot;]">
@@ -282,7 +360,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="phone-holder-project" data-bs-total-lessons="4" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="cad-parametric-modeling/index.html">7. Making the Phone Holder</a><span data-bs-learn-group-count>4 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="cad-parametric-modeling/index.html">8. Making the Phone Holder</a><span data-bs-learn-group-count>4 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="phone-holder-project" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Choose Your Phone Holder&quot;, &quot;Making the Phone Holder&quot;]" data-bs-search-body="[&quot;Choose the simple Level 3 holder or create a Level 4 design.&quot;, &quot;The choice sets the CAD and build work that follows.&quot;, &quot;Project Brief&quot;, &quot;Premade Plan&quot;, &quot;Westdale Project&quot;]">
@@ -319,7 +397,7 @@
 </details>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="advanced-making" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">8. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">9. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Stamp or Faux-Enamel Jewellery&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Choose one of the linked advanced 3D-printing projects.&quot;, &quot;The links provide optional extension ideas without adding another local tutorial.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">

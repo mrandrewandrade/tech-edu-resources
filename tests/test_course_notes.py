@@ -20,7 +20,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 31)
+        self.assertEqual(len(design_routes), 41)
         self.assertEqual(
             design_routes[0],
             "/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html",
@@ -30,7 +30,22 @@ class CourseNotesManifestTests(unittest.TestCase):
             "/commons/design-fabrication/advanced-making/stamp-faux-enamel-jewellery.html",
         )
         self.assertEqual(
-            design_routes[9:14],
+            design_routes[9:19],
+            [
+                "/commons/design-fabrication/emotions/fear-anxiety.html",
+                "/commons/design-fabrication/emotions/anger.html",
+                "/commons/design-fabrication/emotions/disgust.html",
+                "/commons/design-fabrication/emotions/envy.html",
+                "/commons/design-fabrication/emotions/jealousy.html",
+                "/commons/design-fabrication/emotions/guilt.html",
+                "/commons/design-fabrication/emotions/shame.html",
+                "/commons/design-fabrication/emotions/happiness.html",
+                "/commons/design-fabrication/emotions/love.html",
+                "/commons/design-fabrication/emotions/sadness.html",
+            ],
+        )
+        self.assertEqual(
+            design_routes[19:24],
             [
                 "/commons/design-fabrication/logo-design/nameplate-text-photopea.html",
                 "/commons/design-fabrication/logo-design/rough-sketch-to-svg-photopea.html",
@@ -40,11 +55,11 @@ class CourseNotesManifestTests(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            design_routes[14],
+            design_routes[24],
             "/commons/design-fabrication/02-digital-design/animate-your-logo.html",
         )
         self.assertEqual(
-            design_routes[19:26],
+            design_routes[29:36],
             [
                 "/commons/design-fabrication/03-laser-cutting/02-make-it-stand.html",
                 "/commons/design-fabrication/03-laser-cutting/03-measure-place.html",
@@ -56,7 +71,7 @@ class CourseNotesManifestTests(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            design_routes[26:30],
+            design_routes[36:40],
             [
                 "/commons/design-fabrication/cad-parametric-modeling/phone-holder-design.html",
                 "/commons/design-fabrication/cad-parametric-modeling/introduction-to-cad.html",
@@ -174,7 +189,8 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertNotIn("## Project path and tools", design)
         catalogue = design[design.index('<div class="bs-learn-catalogue"'):]
         self.assertLess(catalogue.index("Culture and Land-Based Learning"), catalogue.index("S.O. N.I.C.E. Design Process"))
-        self.assertLess(catalogue.index("S.O. N.I.C.E. Design Process"), catalogue.index("Logo Design in Photopea"))
+        self.assertLess(catalogue.index("S.O. N.I.C.E. Design Process"), catalogue.index("Emotions and Visual Communication"))
+        self.assertLess(catalogue.index("Emotions and Visual Communication"), catalogue.index("Logo Design in Photopea"))
         self.assertLess(catalogue.index("Logo Design in Photopea"), catalogue.index("Accessible Design"))
         self.assertLess(catalogue.index("Accessible Design"), catalogue.index("Laser Cutting and Fabrication Tools"))
         self.assertLess(catalogue.index("Laser Cutting and Fabrication Tools"), catalogue.index("Laser-Cut Assembly, Adhesives &amp; Finishing"))
@@ -199,9 +215,10 @@ class CourseNotesManifestTests(unittest.TestCase):
 
         self.assertIn(">2. S.O. N.I.C.E. Design Process</a>", design)
         self.assertIn(">1. Understand the Situation &amp; Opportunity</a>", design)
-        self.assertIn(">3. Logo Design in Photopea</a>", logo)
+        self.assertIn(">4. Logo Design in Photopea</a>", logo)
         self.assertIn(">1. Build the Nameplate Text</a>", logo)
-        self.assertIn('section: "3. Logo Design in Photopea"', navigation)
+        self.assertIn('section: "3. Emotions and Visual Communication"', navigation)
+        self.assertIn('section: "4. Logo Design in Photopea"', navigation)
         self.assertIn('text: "1. Build the Nameplate Text"', navigation)
         self.assertIn('section: "CAD Tools"', navigation)
         self.assertIn('href: "design-fabrication/tools/index.qmd"', navigation)
@@ -210,7 +227,7 @@ class CourseNotesManifestTests(unittest.TestCase):
             navigation.index('text: "Laser-Cutting Files and Resources"'),
         )
 
-        logo_unit = self.source["courses"][0]["units"][2]
+        logo_unit = self.source["courses"][0]["units"][3]
         self.assertEqual(logo_unit["title"], "Logo Design in Photopea")
         self.assertEqual(
             logo_unit["lessons"][0]["source"],
@@ -267,7 +284,7 @@ class CourseNotesManifestTests(unittest.TestCase):
 
     def test_numbered_slugs_require_an_explicit_legacy_exception(self) -> None:
         broken = copy.deepcopy(self.source)
-        lesson = broken["courses"][0]["units"][2]["lessons"][3]
+        lesson = broken["courses"][0]["units"][3]["lessons"][3]
         lesson.pop("legacy_slug", None)
         with self.assertRaisesRegex(course_notes.ValidationError, "Numbered lesson slug"):
             course_notes.build_manifest(broken)
