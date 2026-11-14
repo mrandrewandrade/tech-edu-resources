@@ -581,6 +581,16 @@
   background: #ebe5da;
 }
 
+.ter-process-example--photo img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.ter-process-example--wide {
+  max-width: 860px;
+  margin: 1.25rem auto 1.75rem;
+}
+
 .ter-process-example figcaption {
   padding: .9rem 1rem 1rem;
   border-top: 4px solid var(--bs-copper-dark);

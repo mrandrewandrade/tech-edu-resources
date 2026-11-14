@@ -25,6 +25,27 @@ Read this as a **third-angle orthographic drawing**: the top view is above the f
 
 ![Aligned top, front and right-side orthographic views of the circular badge, with section A–A showing the solid PLA base, raised walls, background fill and logo fill.](../../assets/tinkercad-logo-jewellery/faux-enamel-cavity-diagram.svg){.ter-concept-diagram}
 
+## See the finished idea
+
+These photographs show the process and the range of products possible. Your artwork must still be original.
+
+<div class="ter-process-gallery">
+<figure class="ter-process-example ter-process-example--photo">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F30/ZT2R/LPPHU5YB/F30ZT2RLPPHU5YB.jpg?auto=webp&amp;frame=1&amp;width=1200" alt="A collection of completed colourful faux-enamel jewellery made from 3D-printed parts and nail polish" loading="lazy"></a>
+  <figcaption><strong>Finished possibilities:</strong> the same method can produce earrings, brooches, collar pins and other small jewellery. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+</figure>
+<figure class="ter-process-example ter-process-example--photo">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step2" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FVF/P2DZ/LPPHTYQG/FVFP2DZLPPHTYQG.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;width=1200" alt="Nail polish being guided into recessed areas of a printed jewellery piece" loading="lazy"></a>
+  <figcaption><strong>Fill the pockets:</strong> place colour inside the recessed areas and guide it to the raised walls. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step2" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+</figure>
+<figure class="ter-process-example ter-process-example--photo">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step4" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FMC/2TDW/LPPHTYQK/FMC2TDWLPPHTYQK.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Metal earring posts, brooch pins and other jewellery findings attached to the backs of completed pieces" loading="lazy"></a>
+  <figcaption><strong>Add the hardware:</strong> a flat back accepts an earring post, brooch bar or another teacher-approved finding. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step4" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+</figure>
+</div>
+
+The reference photographs remain copyright of their creator and are not included in this site's CC BY-SA licence. Select any photograph to open the original project and full context.
+
 ## Choose the construction
 
 ### Full faux-enamel (preferred)
@@ -56,8 +77,17 @@ Use the earring size only for a very simple logo. Detailed logos belong on the l
 - [Circular rim SVG](../../assets/tinkercad-logo-jewellery/source/circle-rim.svg)
 - [AA raised-detail example SVG](../../assets/tinkercad-logo-jewellery/source/aa-faux-enamel-detail.svg)
 - [AA brooch teacher-example STL](../../assets/tinkercad-logo-jewellery/downloads/aa-arrow-faux-enamel-brooch.stl)
+- [Technology Commons fabrication SVG](../../assets/branding/emblem/commons-emblem-fabrication.svg)
+- [Technology Commons colour-reference SVG](../../assets/branding/emblem/commons-emblem.svg)
 
 You also need your own transparent **SVG logo** from the Photopea logo assignment.
+
+### Technology Commons example
+
+<div class="ter-toolkit-banner">
+<a href="../../assets/branding/emblem/commons-emblem-fabrication.svg"><img src="../../assets/branding/emblem/commons-emblem-monochrome-blue-white-background.png" alt="Circular Technology Commons lighthouse emblem simplified for fabrication"></a>
+<div><h2>Use the lighthouse as a larger brooch</h2><p>This is the missing Technology Commons example. Use the simplified fabrication file, remove details that disappear in the slicer, and make it a <strong>50–60 mm brooch</strong>. It is too detailed for a 30 mm earring.</p><p><a class="btn btn-primary" href="../../assets/branding/emblem/commons-emblem-fabrication.svg">Download fabrication SVG</a> <a class="btn btn-outline-secondary" href="../../assets/branding/emblem/commons-emblem.svg">View colour reference</a></p></div>
+</div>
 
 ## Step 1: Start the Tinkercad design
 
@@ -104,6 +134,11 @@ For the preferred full faux-enamel version:
 6. Raise the logo **3 mm** above the workplane with **Ctrl + Up Arrow** three times.
 
 For the easier one-colour-fill version, leave **Fill Mode** at **Default**, set **Height** to **1 mm**, and raise the logo 3 mm.
+
+<figure class="ter-process-example ter-process-example--wide">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F1G/D65B/LPPHTZID/F1GD65BLPPHTZID.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Reference sequence showing an SVG imported into Tinkercad, duplicated, changed to Inner Line fill mode and aligned with a solid base" loading="lazy"></a>
+  <figcaption><strong>Reference sequence:</strong> import the SVG, create the solid base and raised wall version, then align the parts. Screenshot sequence: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+</figure>
 
 ## Step 6: Align and inspect
 
