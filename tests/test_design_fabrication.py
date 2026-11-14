@@ -334,6 +334,12 @@ class DesignFabricationTests(unittest.TestCase):
             "What can we do with an emotion?",
         ):
             self.assertIn(heading, notes)
+        for phrase in (
+            "Turn comparison into a healthy goal.",
+            "Name it to tame it.",
+            "Feel it to heal it.",
+        ):
+            self.assertIn(phrase, notes)
         for source in (notes, materials, slides, personal_brand):
             self.assertIn(worksheet_id, source)
         for source in (materials, slides, personal_brand):

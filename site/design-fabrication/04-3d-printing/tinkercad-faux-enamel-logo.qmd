@@ -25,13 +25,13 @@ Do not copy a company, team, game, social-media or clothing logo. Use the logo y
 
 ## Choose the construction
 
-### Full faux-enamel — preferred
+### Full faux-enamel (preferred)
 
 The outer rim and the **outline of the logo** are raised. The logo and background are both recessed pockets. Fill each pocket with a different colour.
 
 Example: fill the AA arrow pocket black and the background pocket white.
 
-### One-colour fill — easier
+### One-colour fill (easier)
 
 The outer rim and the complete logo are raised solid plastic. Only the background is recessed and filled. This is useful when a logo outline would create pockets that are too small.
 
@@ -57,14 +57,14 @@ Use the earring size only for a very simple logo. Detailed logos belong on the l
 
 You also need your own transparent **SVG logo** from the Photopea logo assignment.
 
-## Step 1 — Start the Tinkercad design
+## Step 1: Start the Tinkercad design
 
 1. Sign in to [Tinkercad](https://www.tinkercad.com/).
 2. Select **Create → 3D Design**.
 3. Rename the design `lastname-logo-earring` or `lastname-logo-brooch`.
 4. Keep **Snap Grid** at **1.0 mm** while setting the main heights.
 
-## Step 2 — Import the circular base
+## Step 2: Import the circular base
 
 1. Select **Import**.
 2. Choose `circle-base.svg`.
@@ -74,14 +74,14 @@ You also need your own transparent **SVG logo** from the Photopea logo assignmen
 
 This creates the flat surface that will later receive the glue-on finding.
 
-## Step 3 — Add the outer rim
+## Step 3: Add the outer rim
 
 1. Import `circle-rim.svg` at the **same diameter** as the base.
 2. Set its **Height** to **1 mm**.
 3. Raise it **3 mm** above the workplane. Press **Ctrl + Up Arrow** three times.
 4. Confirm that the rim sits on the base and creates an enclosed pocket. It must not hang past the edge.
 
-## Step 4 — Import and size the logo
+## Step 4: Import and size the logo
 
 1. Select **Import** and choose your original SVG logo.
 2. Use the target logo width from the dimension table.
@@ -90,7 +90,7 @@ This creates the flat surface that will later receive the glue-on finding.
 
 For the **AA arrow**, use the simpler arrow/lettermark without small text. For the **Technology Commons** example, use the circular lighthouse emblem without the words around it. Make that version a **50–60 mm brooch**, not an earring.
 
-## Step 5 — Make the logo fillable
+## Step 5: Make the logo fillable
 
 For the preferred full faux-enamel version:
 
@@ -103,7 +103,7 @@ For the preferred full faux-enamel version:
 
 For the easier one-colour-fill version, leave **Fill Mode** at **Default**, set **Height** to **1 mm**, and raise the logo 3 mm.
 
-## Step 6 — Align and inspect
+## Step 6: Align and inspect
 
 1. Select the base, rim and logo.
 2. Select **Align**.
@@ -115,7 +115,7 @@ For the easier one-colour-fill version, leave **Fill Mode** at **Default**, set 
 
 Do not continue if a cavity leaks through the rim, a wall is extremely thin, or a pocket is too small to fill cleanly.
 
-## Step 7 — Export for printing
+## Step 7: Export for printing
 
 1. Select the grouped model.
 2. Select **Export**.
