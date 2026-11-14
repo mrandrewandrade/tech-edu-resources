@@ -364,7 +364,7 @@ class DesignFabricationTests(unittest.TestCase):
             "They motivate us",
             "They communicate to us",
             "They communicate to others",
-            "| Emotion | What it does | What we can do |",
+            "| Emotion | What it does | What we can do | Brand examples |",
             "What can we do with an emotion?",
         ):
             self.assertIn(heading, notes)
@@ -372,6 +372,8 @@ class DesignFabricationTests(unittest.TestCase):
             self.assertIn(phrase, notes)
         self.assertIn("Don't let the feed farm you", notes)
         self.assertIn("Turn comparison into a healthy goal.", emotion_pages["envy"])
+        for brand in ("Volvo", "Riot Games", "Rolex", "Patagonia", "LEGO", "Sanrio", "Pixar"):
+            self.assertIn(brand, notes)
         for name, page in emotion_pages.items():
             self.assertIn(f"({name}.qmd)", notes)
             self.assertIn("What can help", page)
