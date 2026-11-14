@@ -31,11 +31,11 @@ class CourseContentTests(unittest.TestCase):
             tej,
         )
         self.assertIn(
-            'href="circuits/parallel-circuits.html">7. Package 1: Basic Electricity and Parallel Circuits</a>',
+            'href="circuits/parallel-circuits.html">9. Package 1: Basic Electricity and Parallel Circuits</a>',
             tej,
         )
         self.assertIn(
-            'href="circuits/series-circuits.html">8. Package 2: Parallel Review and Series Circuits</a>',
+            'href="circuits/series-circuits.html">10. Package 2: Parallel Review and Series Circuits</a>',
             tej,
         )
         self.assertIn('data-bs-track-id="engineering-preparation"', tej)
