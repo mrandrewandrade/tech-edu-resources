@@ -14,14 +14,6 @@ Most students complete the printed capacitor worksheet. A small group sorts resi
 
 :::
 
-::: {.callout-note title="For the future powered stations only"}
-
-Set the bench supply to **5.0 V** before connecting it. Use a current limit of **20 mA or less**. Turn power off before changing components or using the resistance setting. Never place a meter in current mode directly across the supply.
-
-:::
-
-The sequence is adapted from the measurement method in *Grob Basic Electronics Experiments*, especially Experiment 2-2, Experiment 9-1, and Experiment 22-1. The component values, wiring, procedure, and questions below are original classroom adaptations for a 5 V supply.
-
 ## Station 0: Sort and identify the real components
 
 Use this before students build the two circuits. It turns the mixed component bins into a usable class inventory and gives every student practice reading parts and checking a value with a meter.
@@ -59,6 +51,14 @@ After the broad sort, make smaller labeled sections for the common values actual
 ### Useful challenge without extra theory
 
 Give each group one resistor and one capacitor chosen by another group. They must identify both parts, verify the resistor with a meter, explain capacitor polarity and voltage rating when present, and return both to the correct bins. No written reflection is required.
+
+::: {.callout-note collapse="true" title="Future teacher planning: powered circuit stations"}
+
+Do not use these stations this week. Revisit them after checking the actual components, meters, breadboards, and power supplies.
+
+Set the bench supply to **5.0 V** before connecting it. Use a current limit of **20 mA or less**. Turn power off before changing components or using the resistance setting. Never place a meter in current mode directly across the supply.
+
+The sequence is adapted from the measurement method in *Grob Basic Electronics Experiments*, especially Experiment 2-2, Experiment 9-1, and Experiment 22-1. The component values, wiring, procedure, and questions below are original classroom adaptations for a 5 V supply.
 
 ## Station 1: Measure and verify KCL and KVL
 
@@ -174,3 +174,5 @@ Use groups of four or five. Assign one student as meter operator, one as power o
 ## Where this leads
 
 The same RC station can later feed a transistor switch or an op-amp buffer. The XL741 kit should come after students can explain the charging curve, identify a polarized capacitor, and use a meter safely. Its 33 pF capacitor is a compensation component, not the large timing capacitor used in this station.
+
+:::
