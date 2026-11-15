@@ -13,7 +13,7 @@ ASSETS = {
     "cap-given-68uf": [r"$\mathrm{GIVEN}\quad C=68\,\mu\mathrm{F}\qquad V=9.0\,\mathrm{V}$"],
     "cap-unknown-q": [r"$\mathrm{UNKNOWN}\quad Q\;\mathrm{in\ coulombs}$"],
     "cap-equation-qcv": [r"$\mathrm{EQUATION}\quad Q=CV$"],
-    "cap-convert-68uf": [r"$68\,\mu\mathrm{F}\left(\frac{1\,\mathrm{F}}{1{,}000{,}000\,\mu\mathrm{F}}\right)=68\times10^{-6}\,\mathrm{F}$"],
+    "cap-convert-68uf": [r"$1\,\mu\mathrm{F}=0.000001\,\mathrm{F}\qquad 68\,\mu\mathrm{F}=0.000068\,\mathrm{F}$"],
     "cap-q-solution": [r"$Q=CV$", r"$Q=(68\times10^{-6}\,\mathrm{F})(9.0\,\mathrm{V})$", r"$Q=612\times10^{-6}\,\mathrm{C}$", r"$Q=612\,\mu\mathrm{C}$"],
     "cap-energy": [r"$E=\frac{CV^2}{2}$"],
     "cap-energy-white": [r"$E=\frac{CV^2}{2}$"],
