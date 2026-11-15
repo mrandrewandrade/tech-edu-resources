@@ -6,9 +6,15 @@ toc: true
 execute: {enabled: false}
 ---
 
-These two stations connect the calculations, schematics, meters, Jupyter graphs, and real components used in the course. The teacher builds and checks the boards first. Students work in groups with assigned roles.
+This page holds the component-sorting procedure for this week and two possible circuit stations for later. The teacher will check the available hardware before assigning either circuit.
 
-::: {.callout-important title="Use low voltage and current limiting"}
+::: {.callout-important title="This week: use only the sorting section"}
+
+Most students complete the printed capacitor worksheet. A small group sorts resistors and capacitors, then rotates. Use the multimeter only in resistance mode on disconnected resistors. Read capacitor markings and polarity, but do not connect a powered circuit yet. Stations 1 and 2 are future plans.
+
+:::
+
+::: {.callout-note title="For the future powered stations only"}
 
 Set the bench supply to **5.0 V** before connecting it. Use a current limit of **20 mA or less**. Turn power off before changing components or using the resistance setting. Never place a meter in current mode directly across the supply.
 
