@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[active,tightpage]{preview}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\definecolor{SlideNavy}{HTML}{12202F}
+\setlength\PreviewBorder{12pt}
+\pagestyle{empty}
+\begin{document}
+\color{SlideNavy}
+
+\begin{preview}\[1\,\mathrm{F}=1{,}000{,}000\,\mu\mathrm{F}\qquad 1\,\mu\mathrm{F}=1{,}000\,\mathrm{nF}\qquad 1\,\mathrm{nF}=1{,}000\,\mathrm{pF}\]\end{preview}
+\begin{preview}\[220\,\mathrm{nF}\left(\frac{1\,\mu\mathrm{F}}{1000\,\mathrm{nF}}\right)=0.220\,\mu\mathrm{F}\]\end{preview}
+\begin{preview}\[Q=CV\]\end{preview}
+\begin{preview}\[\text{GIVEN}\quad C=68\,\mu\mathrm{F}\qquad V=9.0\,\mathrm{V}\]\end{preview}
+\begin{preview}\[\text{UNKNOWN}\quad Q\;\text{in coulombs}\]\end{preview}
+\begin{preview}\[\text{EQUATION}\quad Q=CV\]\end{preview}
+\begin{preview}\[68\,\mu\mathrm{F}\left(\frac{1\,\mathrm{F}}{1{,}000{,}000\,\mu\mathrm{F}}\right)=68\times10^{-6}\,\mathrm{F}\]\end{preview}
+\begin{preview}\[\begin{aligned}Q&=CV\\Q&=(68\times10^{-6}\,\mathrm{F})(9.0\,\mathrm{V})\\Q&=612\times10^{-6}\,\mathrm{C}\\Q&=612\,\mu\mathrm{C}\end{aligned}\]\end{preview}
+\begin{preview}\[E=\frac{CV^2}{2}\]\end{preview}
+\begin{preview}\[v_C(0)=0\,\mathrm{V}\]\end{preview}
+\begin{preview}\[i(0)=\frac{V_S}{R}\]\end{preview}
+\begin{preview}\[v_C(\infty)=V_S\]\end{preview}
+\begin{preview}\[i(\infty)=0\,\mathrm{A}\]\end{preview}
+\begin{preview}\[\begin{aligned}t=\tau &: \quad v_C\approx0.632V_S\text{ charging},\quad v_C\approx0.368V_0\text{ discharging}\\t=5\tau &: \quad \text{use the practical final value}\end{aligned}\]\end{preview}
+\begin{preview}\[\begin{aligned}\text{GIVEN}&\quad V_S=12.0\,\mathrm{V},\quad t=\tau\text{ and }5\tau\\\text{UNKNOWN}&\quad v_C(\tau),\quad v_C(5\tau)\\\text{EQUATIONS}&\quad v_C(\tau)\approx0.632V_S,\quad v_C(5\tau)\approx0.993V_S\end{aligned}\]\end{preview}
+\begin{preview}\[\begin{aligned}v_C(\tau)&=0.632(12.0\,\mathrm{V})=7.58\,\mathrm{V}\\v_C(5\tau)&=0.993(12.0\,\mathrm{V})=11.9\,\mathrm{V}\end{aligned}\]\end{preview}
+\begin{preview}\[\tau=RC\]\end{preview}
+\begin{preview}\[\begin{aligned}\Omega\cdot\mathrm{F}&=\mathrm{s}\\\mathrm{k}\Omega\cdot\mu\mathrm{F}&=\mathrm{ms}\\\mathrm{M}\Omega\cdot\mu\mathrm{F}&=\mathrm{s}\end{aligned}\]\end{preview}
+\begin{preview}\[\begin{aligned}\text{GIVEN}&\quad R=15\,\mathrm{k}\Omega,\quad C=47\,\mu\mathrm{F}\\\text{UNKNOWN}&\quad \tau,\quad 5\tau\\\text{EQUATION}&\quad \tau=RC\end{aligned}\]\end{preview}
+\begin{preview}\[\begin{aligned}\tau&=(15\,\mathrm{k}\Omega)(47\,\mu\mathrm{F})=705\,\mathrm{ms}=0.705\,\mathrm{s}\\5\tau&=5(0.705\,\mathrm{s})=3.525\,\mathrm{s}\end{aligned}\]\end{preview}
+\begin{preview}\[R=\frac{\tau}{C}\]\end{preview}
+\begin{preview}\[\begin{aligned}\text{TARGET}&\quad \tau=2.0\,\mathrm{s}\\\text{CHOOSE}&\quad C=100\,\mu\mathrm{F}\\\text{SOLVE}&\quad R=\frac{2.0\,\mathrm{s}}{100\,\mu\mathrm{F}}\\\text{SELECT}&\quad R\approx20\,\mathrm{k}\Omega\end{aligned}\]\end{preview}
+\begin{preview}\[C=\frac{\tau}{R}\]\end{preview}
+\begin{preview}\[\begin{aligned}\text{TARGET}&\quad \tau=0.50\,\mathrm{s}\\\text{CHOOSE}&\quad R=10\,\mathrm{k}\Omega\\\text{SOLVE}&\quad C=\frac{0.50\,\mathrm{s}}{10\,\mathrm{k}\Omega}\\\text{SELECT}&\quad C\approx50\,\mu\mathrm{F}\end{aligned}\]\end{preview}
+\begin{preview}\[v_C(t)=V_S\left(1-e^{-t/(RC)}\right)\]\end{preview}
+\begin{preview}\[v_C(t)=V_0e^{-t/(RC)}\]\end{preview}
+
+\end{document}

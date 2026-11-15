@@ -1043,7 +1043,7 @@
     "href": "tej3-4/electronics-library/components/rc-time-constant-design.html#complete-the-work",
     "title": "Capacitors 3: RC Time Constants and Design",
     "section": "Complete the work",
-    "text": "Complete the work\n\nComplete all five questions using GUESS.\nShow the unit conversions.\nUse the notebook to verify each numerical result.\nBuild Question 4 or 5 in Tinkercad.\nSubmit the sheet, notebook, and Tinkercad link.\n\nTextbook support: Grob, Chapter 22, pp. 668-691. Practice support: Problems Manual, Chapter 22, pp. 309-316. Optional teacher-approved lab: Experiment 22-1. [1, Ch. 22]",
+    "text": "Complete the work\n\nComplete all five questions using GUESS.\nShow the unit conversions.\nUse the notebook to verify each numerical result.\nBuild Question 4 or 5 in Tinkercad.\nSubmit the sheet, notebook, and Tinkercad link.\n\nTextbook support: Grob, Chapter 22, pp. 668-691. Practice support: Problems Manual, Chapter 22, pp. 309-316. Optional teacher-approved lab: Experiment 22-1. [1, Ch. 22]\n\n\nEquation and diagram source files\n\n\nLaTeX equation source\nRC charging schematic\nRC discharging schematic\nRC curves",
     "crumbs": [
       "Glossary",
       "5. Circuits and Electronics",
@@ -9843,7 +9843,7 @@
     "href": "tej3-4/electronics-library/components/capacitors.html#charge-and-energy",
     "title": "Capacitors 1: Capacitors from Zero",
     "section": "Charge and energy",
-    "text": "Charge and energy\nThe charge stored by an ideal capacitor is:\n\\[\nQ=CV\n\\]\nThe stored energy is:\n\\[\nE=\\frac{1}{2}CV^2\n\\]\nUse farads for \\(C\\), volts for \\(V\\), coulombs for \\(Q\\), and joules for \\(E\\).\n\n\n\n\n\n\nWarningSafe handling\n\n\n\nDisconnect power, discharge through a suitable resistor, and verify the voltage before handling a capacitor. Do not short a charged capacitor with a screwdriver.",
+    "text": "Charge and energy\nThe charge stored by an ideal capacitor is:\n\\[\nQ=CV\n\\]\nThe stored energy is:\n\\[\nE=\\frac{CV^2}{2}\n\\]\nUse farads for \\(C\\), volts for \\(V\\), coulombs for \\(Q\\), and joules for \\(E\\).\n\n\n\n\n\n\nWarningSafe handling\n\n\n\nDisconnect power, discharge through a suitable resistor, and verify the voltage before handling a capacitor. Do not short a charged capacitor with a screwdriver.",
     "crumbs": [
       "Glossary",
       "5. Circuits and Electronics",
@@ -9867,7 +9867,7 @@
     "href": "tej3-4/electronics-library/components/capacitors.html#complete-the-work",
     "title": "Capacitors 1: Capacitors from Zero",
     "section": "Complete the work",
-    "text": "Complete the work\n\nWatch ElectroBOOM101-006: Capacitors and the short calculation sections in The Organic Chemistry Tutor capacitor lesson.\nComplete the five-question sheet.\nRun the notebook and use it to check the arithmetic.\nSubmit the question sheet and the completed .ipynb file.\n\nIf the direct notebook link does not open, download the notebook, open JupyterLite, click Upload Files, and double-click the notebook.\nTextbook support: Grob, Chapter 16, sections 16-1 to 16-4, pp. 484-515. Practice support: Problems Manual, Chapter 16, pp. 238-250. Optional teacher-approved lab: Experiment 16-1. [1, Ch. 16]",
+    "text": "Complete the work\n\nWatch ElectroBOOM101-006: Capacitors and the short calculation sections in The Organic Chemistry Tutor capacitor lesson.\nComplete the five-question sheet.\nRun the notebook and use it to check the arithmetic.\nSubmit the question sheet and the completed .ipynb file.\n\nIf the direct notebook link does not open, download the notebook, open JupyterLite, click Upload Files, and double-click the notebook.\nTextbook support: Grob, Chapter 16, sections 16-1 to 16-4, pp. 484-515. Practice support: Problems Manual, Chapter 16, pp. 238-250. Optional teacher-approved lab: Experiment 16-1. [1, Ch. 16]\n\n\nEquation and diagram source files\n\n\nLaTeX equation source\nCapacitor symbols\nCapacitor structure",
     "crumbs": [
       "Glossary",
       "5. Circuits and Electronics",
@@ -10003,7 +10003,7 @@
     "href": "tej3-4/electronics-library/components/rc-charge-discharge.html#complete-the-work",
     "title": "Capacitors 2: RC Charging and Discharging",
     "section": "Complete the work",
-    "text": "Complete the work\n\nComplete all five questions using GUESS.\nLabel \\(0\\), \\(\\tau\\), and \\(5\\tau\\) on the graph.\nUse the notebook to check the estimates.\nBuild one charging circuit in Tinkercad.\nSubmit the sheet, notebook, and Tinkercad link.\n\nTextbook support: Grob, Chapter 22, sections 22-2 to 22-3, pp. 668-675. Practice support: Problems Manual, Chapter 22, pp. 309-316. Optional teacher-approved lab: Experiment 22-1. [1, Ch. 22]",
+    "text": "Complete the work\n\nComplete all five questions using GUESS.\nLabel \\(0\\), \\(\\tau\\), and \\(5\\tau\\) on the graph.\nUse the notebook to check the estimates.\nBuild one charging circuit in Tinkercad.\nSubmit the sheet, notebook, and Tinkercad link.\n\nTextbook support: Grob, Chapter 22, sections 22-2 to 22-3, pp. 668-675. Practice support: Problems Manual, Chapter 22, pp. 309-316. Optional teacher-approved lab: Experiment 22-1. [1, Ch. 22]\n\n\nEquation and diagram source files\n\n\nLaTeX equation source\nRC charging schematic\nRC discharging schematic\nRC curves",
     "crumbs": [
       "Glossary",
       "5. Circuits and Electronics",
