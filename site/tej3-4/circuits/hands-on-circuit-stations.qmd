@@ -60,9 +60,43 @@ Do not use these stations this week. Revisit them after checking the actual comp
 
 Set the bench supply to **5.0 V** before connecting it. Use a current limit of **20 mA or less**. Turn power off before changing components or using the resistance setting. Never place a meter in current mode directly across the supply.
 
-The sequence is adapted from the measurement method in *Grob Basic Electronics Experiments*, especially Experiment 2-2, Experiment 9-1, and Experiment 22-1. The component values, wiring, procedure, and questions below are original classroom adaptations for a 5 V supply.
+The sequence draws on *Grob's Basic Electronics*, Chapter 9 for KCL and KVL, Chapter 22 and Experiment 22-1 for RC time constants, and Chapter 27 for LED behaviour and current limiting. The exact LED-fade circuit, component values, wiring, procedure, and questions below are an original classroom bridge for a 5 V supply.
 
-## Station 1: Measure and verify KCL and KVL
+## Station 1: Watch a capacitor-powered LED fade
+
+![A 5 V source and switch feed a 330 ohm charging resistor and Node A. A polarized capacitor, a resistor-limited red LED, and a 10 kilohm bleeder resistor connect from Node A to ground. Current arrows support KCL and the labelled voltage supports KVL.](../../assets/electronics/schematics/hands-on-led-rc-fade.svg){fig-alt="A 5 V source and switch feed a 330 ohm charging resistor and Node A. A polarized capacitor, a resistor-limited red LED, and a 10 kilohm bleeder resistor connect from Node A to ground. Current arrows support KCL and the labelled voltage supports KVL."}
+
+This is the preferred first powered build after the parts are checked. Closing the switch charges the capacitor and turns on the LED. Opening the switch disconnects the source; the capacitor then supplies the LED, so the light fades. The bleeder resistor provides a complete discharge path after the LED turns off.
+
+### Teacher build
+
+| Part | Value or setting |
+|---|---|
+| Supply | 5.0 V DC, current limit 20 mA |
+| Charging resistor $R_C$ | 330 Ω, 1/4 W |
+| LED resistor $R_{LED}$ | 1.0 kΩ, 1/4 W |
+| Bleeder resistor $R_B$ | 10 kΩ, 1/4 W |
+| Capacitor | 1000 µF to 4700 µF electrolytic, rated 10 V or higher |
+| LED | Red, with anode toward Node A through $R_{LED}$ |
+| Switch | SPST switch or one teacher-controlled jumper |
+
+Use the largest suitable capacitor found during Tuesday's inventory. A larger capacitance produces a longer visible fade. Confirm capacitor polarity and LED direction before applying power.
+
+### Student progression
+
+1. Identify the LED anode and cathode, the capacitor positive and negative leads, and all three resistor values.
+2. With power off, compare the breadboard with the schematic one connection at a time.
+3. Set the supply to 5.0 V and the current limit to 20 mA before connecting the board.
+4. Close $S_1$. Observe the LED and measure Node A voltage to ground.
+5. Open $S_1$. Observe the LED fade and record Node A voltage at regular times.
+6. Use KVL during discharge: $V_C=V_{RLED}+V_{LED}$.
+7. Estimate LED current while it is lit: $I_{LED}\approx(V_C-2.0\,\mathrm{V})/R_{LED}$.
+8. Use KCL at Node A while charging: $I_S=I_C+I_{LED}+I_B$.
+9. Compare the measured fade with the dots and function curve from the Wednesday notebook.
+
+The fixed 2.0 V LED drop is a first model. The real LED forward voltage changes with current, so the measured light and the model will not match perfectly.
+
+## Station 2: Measure and verify KCL and KVL
 
 ![A 5 V source feeds a 1 kΩ resistor and then splits into 2.2 kΩ and 3.3 kΩ branches. Current arrows identify the incoming and two outgoing currents.](../../assets/electronics/schematics/hands-on-kirchhoff-station.svg){fig-alt="A 5 V source feeds a 1 kΩ resistor and then splits into 2.2 kΩ and 3.3 kΩ branches. Current arrows identify the incoming and two outgoing currents."}
 
@@ -107,7 +141,7 @@ Component tolerances will cause small differences.
 
 Students do not need to move the meter lead to the current jack. Calculating current from measured voltage and resistance is safer and still provides experimental evidence for KCL.
 
-## Station 2: Watch a capacitor charge and discharge
+## Station 3: Measure capacitor charge and discharge
 
 ![A movable jumper selects either 5 V for charging or ground for discharging. A 10 kΩ resistor connects to a 470 µF polarized capacitor, and a voltmeter measures capacitor voltage.](../../assets/electronics/schematics/hands-on-rc-station.svg){fig-alt="A movable jumper selects either 5 V for charging or ground for discharging. A 10 kΩ resistor connects to a 470 µF polarized capacitor, and a voltmeter measures capacitor voltage."}
 
@@ -167,14 +201,14 @@ Complete the DMM version first.
 
 Use groups of four or five. Assign one student as meter operator, one as power operator, one as recorder, one as timer, and one as checker. Students who are waiting for a circuit board work at the component-sorting station or on Jupyter and graphing.
 
-| Stage | Sorting station | Station 1 | Station 2 |
-|---|---|---|---|
-| First visit | Broad-sort and verify values | Measure resistance and voltage | Check polarity and record charging data |
-| Second visit | Make labels and count parts | Verify KCL, KVL, and power | Record discharge and change capacitance |
-| Later extension | Build a class inventory | Measure current in series after a meter-safety lesson | Capture the curve with the oscilloscope |
+| Stage | Sorting station | Station 1: LED fade | Station 2: Kirchhoff | Station 3: RC data |
+|---|---|---|---|---|
+| First visit | Broad-sort and verify values | Check polarity and observe the fade | Measure resistance and voltage | Check polarity and record charging data |
+| Second visit | Make labels and count parts | Measure Node A and apply KCL/KVL | Verify KCL, KVL, and power | Record discharge and change capacitance |
+| Later extension | Build a class inventory | Compare measured and modelled LED current | Measure current after a meter-safety lesson | Capture the curve with the oscilloscope |
 
 ## Where this leads
 
-The same RC station can later feed a transistor switch or an op-amp buffer. The XL741 kit should come after students can explain the charging curve, identify a polarized capacitor, and use a meter safely. Its 33 pF capacitor is a compensation component, not the large timing capacitor used in this station.
+The LED-fade station deliberately reconnects Ohm's law, KCL, KVL, functions, and capacitor response in one visible circuit. It can later feed a transistor switch or an op-amp buffer. The XL741 kit should come after students can explain the charging curve, identify a polarized capacitor, and use a meter safely. Its 33 pF capacitor is a compensation component, not the large timing capacitor used in this station.
 
 :::

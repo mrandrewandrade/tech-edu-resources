@@ -10,7 +10,7 @@ execute: {enabled: false}
 
 ::: {.callout-important title="Wednesday notebook"}
 
-Use the same time and voltage data from Tuesday's handout. Run the supplied notebook cells, complete the short code blanks, and make the charging and discharging graph. Students are not expected to use exponential equations in this activity.
+Use the same time and voltage data from Tuesday's handout. Calculate $\tau=RC$, plot the measured values as dots, define the charging and discharging functions, and overlay their smooth curves. Then use KVL and a simple LED function to predict how the light fades as the capacitor discharges. The notebook supplies the exponential syntax and scaffolds the required changes.
 
 :::
 
