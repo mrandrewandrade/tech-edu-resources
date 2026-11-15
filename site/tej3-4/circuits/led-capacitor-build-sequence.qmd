@@ -29,11 +29,59 @@ This sequence adds one idea at a time. Every physical circuit must first be comp
 | Friday, November 20 | Lab 220 | Build and test Stage 1 in Tinkercad. |
 | Sunday, November 22 at 7:00 PM | Online deadline | Submit the Stage 1 Tinkercad link and screenshot. |
 | Monday, November 23 | Lab 225 | Correction day. Fix the simulation and receive the 100% readiness check. |
-| Tuesday, November 24 | Portable 1 | Hardware preparation buffer. Approved students improve their paper plan, help identify parts, or preview Stage 2 in Tinkercad. No class-wide powered build is promised. |
+| Tuesday, November 24 | Portable 1 | Hardware preparation buffer. If materials are ready, a small group completes the unpowered Stage 0 breadboard map using its approved Tinkercad circuit. No supply or capacitor is connected. |
 
 Physical build dates are announced only after the teacher has sorted the required parts, tested one complete reference circuit, and confirmed the power-supply limits. A 100% simulation makes a student eligible for the matching physical stage; it does not force the physical stage to happen immediately.
 
 **[Download the two-page Stage 1 planning and readiness sheet](../../assets/electronics/worksheets/led-stage1-readiness-sheet.pdf)**
+
+## Stage 0: breadboard from the approved simulation
+
+Students do not begin with a different practice circuit. They use the same Stage 1 LED, resistor, and pushbutton circuit that they already built and tested in Tinkercad.
+
+### First, map the Tinkercad breadboard
+
+With the simulation stopped:
+
+1. Orient the breadboard so the centre gap is vertical and the power rails are easy to identify.
+2. Find one five-hole terminal group. All five holes in that group are the same electrical node.
+3. Confirm that the centre gap separates the left and right terminal groups.
+4. Check whether each red or blue power rail is continuous or split in the middle. Do not assume every breadboard is identical.
+5. Record the exact row used by each Stage 1 connection:
+
+| Stage 1 connection | Tinkercad breadboard location |
+|---|---|
+| +5 V wire to pushbutton | ____________________ |
+| Pushbutton to 1.0 kΩ resistor | ____________________ |
+| Resistor to LED anode | ____________________ |
+| LED cathode to ground | ____________________ |
+
+The row number is not electrically special. It is a location that helps the student reproduce the approved simulation accurately.
+
+### Then, reproduce only the placement
+
+This first physical session is unpowered.
+
+1. Place the real breadboard in the same orientation as the Tinkercad breadboard.
+2. Point to one connected five-hole group, the centre gap, the positive rail, and the ground rail.
+3. Insert one jumper at a time by following the approved Tinkercad row map.
+4. Add the 1.0 kΩ resistor so its two leads are in different nodes.
+5. Identify the LED anode and cathode before inserting it.
+6. Place the pushbutton across the centre gap so opposite sides are not accidentally shorted together.
+7. Compare every physical connection with the simulation. Do not connect the power supply.
+
+### Stage 0 check
+
+A student is ready to continue when they can show the teacher:
+
+1. Which five holes are connected in one terminal group.
+2. Why the centre gap separates the two sides.
+3. Why both resistor leads cannot be placed in the same connected group.
+4. Which LED leg is the anode and which is the cathode.
+5. Where +5 V and ground will connect later.
+6. That the physical row map matches the approved Tinkercad circuit.
+
+Stage 0 does not use current mode, a powered circuit, a capacitor, or an oscilloscope.
 
 ## Stage 1: LED, resistor, and pushbutton
 

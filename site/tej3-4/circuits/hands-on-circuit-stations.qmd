@@ -12,7 +12,7 @@ This page holds the component-sorting procedure and physical stations. Every phy
 
 On Tuesday, most students complete the [two-page capacitor graph handout](../../assets/electronics/worksheets/capacitors-tuesday-worksheet.pdf). Small groups rotate through the sorting table to decode and meter-check resistors, read capacitor values and voltage ratings, identify polarized parts, and label the organizers. No powered capacitor circuit is required Tuesday.
 
-On Thursday, continue the component inventory and prepare the Stage 1 paper plan. On Friday, begin the LED, resistor, and pushbutton circuit in Tinkercad. No student begins a powered physical build until the matching simulation earns 100% and receives the teacher's **READY TO BUILD** check.
+On Thursday, continue the component inventory and prepare the Stage 1 paper plan. On Friday, begin the LED, resistor, and pushbutton circuit in Tinkercad. After the 100% check, the first physical session is [Stage 0: an unpowered breadboard map of that same approved simulation](led-capacitor-build-sequence.qmd#stage-0-breadboard-from-the-approved-simulation). No student begins a powered physical build until the breadboard map is also checked and the teacher opens the hardware station.
 
 :::
 
@@ -66,7 +66,7 @@ The sequence draws on *Grob's Basic Electronics*, Chapter 9 for KCL and KVL, Cha
 
 ![A 5 V source and switch feed a 330 ohm charging resistor and Node A. A polarized capacitor, a resistor-limited red LED, and a 10 kilohm bleeder resistor connect from Node A to ground. Current arrows support KCL and the labelled voltage supports KVL.](../../assets/electronics/schematics/hands-on-led-rc-fade.svg){fig-alt="A 5 V source and switch feed a 330 ohm charging resistor and Node A. A polarized capacitor, a resistor-limited red LED, and a 10 kilohm bleeder resistor connect from Node A to ground. Current arrows support KCL and the labelled voltage supports KVL."}
 
-This is the preferred first powered build after the parts are checked. Closing the switch charges the capacitor and turns on the LED. Opening the switch disconnects the source; the capacitor then supplies the LED, so the light fades. The bleeder resistor provides a complete discharge path after the LED turns off.
+This is a future capacitor extension after students complete the unpowered breadboard lesson and the simpler powered LED, resistor, and pushbutton circuit. Closing the switch charges the capacitor and turns on the LED. Opening the switch disconnects the source; the capacitor then supplies the LED, so the light fades. The bleeder resistor provides a complete discharge path after the LED turns off.
 
 ### Teacher build
 
