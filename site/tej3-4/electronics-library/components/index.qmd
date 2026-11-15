@@ -16,8 +16,9 @@ This sequence assumes no prior component knowledge. Begin with the difference be
 4. [RC Charging and Discharging](rc-charge-discharge.qmd): starting conditions, steady state, graphs, Jupyter, and Tinkercad verification.
 5. [RC Time Constants and Design](rc-time-constant-design.qmd): calculate $\tau$, choose real parts, and connect the model to calculus.
 6. [Diodes and LEDs](diodes-leds.qmd): direction, forward voltage, reverse blocking, current limiting, and diode-mode testing.
-7. [Transistors](transistors.qmd): NPN and PNP devices, terminals, switching, ratings, and pinout verification.
-8. [Operational Amplifiers](op-amps.qmd): differential inputs, supplies, negative feedback, followers, real limits, and the XL741.
+7. [LED to capacitor build sequence](../../circuits/led-capacitor-build-sequence.qmd): simulate, correct, earn the 100% readiness check, then build the approved physical circuit.
+8. [Transistors](transistors.qmd): NPN and PNP devices, terminals, switching, ratings, and pinout verification.
+9. [Operational Amplifiers](op-amps.qmd): differential inputs, supplies, negative feedback, followers, real limits, and the XL741.
 
 <figure class="ter-circuit-figure" id="fig-component-foundation-map" data-diagram-source="../../../assets/electronics/schematics/component-symbols-foundation.tex">
 <img src="../../../assets/electronics/schematics/component-symbols-foundation.svg" alt="Common schematic symbols for a battery, resistor, capacitor, diode, LED, NPN transistor, op-amp, and ground with their basic functional roles." loading="lazy">

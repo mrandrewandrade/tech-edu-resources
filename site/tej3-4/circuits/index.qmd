@@ -90,14 +90,15 @@ Use these notes with the matching teaching slides and question sheet.
 3. [Series-parallel circuits](series-parallel-circuits.qmd): identify groups, reduce, solve, expand, and check.
 4. [Kirchhoff's laws](kirchhoffs-laws.qmd): write current and voltage equations for networks that do not reduce directly.
 5. [Linear algebra for circuits](linear-algebra-circuits.qmd): solve several node or loop equations together.
+6. [LED to capacitor build sequence](led-capacitor-build-sequence.qmd): earn the Tinkercad readiness check, correct the simulation, then build and measure the approved physical circuit.
 
 ## Practical pathway
 
 Keep the normal teaching slides, Grob reading, question set, and worked examples. Add one short practical activity only when it supports the current concept:
 
 1. **Understand and calculate** using the existing lesson and assignment.
-2. **Build and simulate** with [Build and Measure Circuits in Tinkercad](tinkercad-circuits.qmd).
-3. **Measure and verify** with the [component-sorting and hands-on circuit stations](hands-on-circuit-stations.qmd) and the circuit-specific evidence table.
+2. **Build and simulate** with [Build and Measure Circuits in Tinkercad](tinkercad-circuits.qmd). The matching simulation must earn 100% before physical parts are issued.
+3. **Correct and approve** on the next scheduled lab day. Then measure and verify with the [LED-to-capacitor build sequence](led-capacitor-build-sequence.qmd) and [hands-on circuit stations](hands-on-circuit-stations.qmd).
 4. **Investigate with Python** using the [computational engineering notebooks](../computational-engineering/) when repeated calculations, graphs, or systems add value.
 5. **Document and share** a concise conclusion or [technical portfolio entry](../portfolio/).
 

@@ -18,6 +18,12 @@ execute: {enabled: false}
 
 A simulator lets you test a model before using classroom parts. It can reveal a wiring error, but a matching result does not prove that the original model or real circuit is correct.
 
+::: {.callout-important title="Simulation before hardware"}
+
+For the [LED-to-capacitor build sequence](led-capacitor-build-sequence.qmd), the matching Tinkercad circuit must earn 100% before physical parts are issued. The next scheduled lab class is a correction day, so students can fix the simulation and request another readiness check.
+
+:::
+
 ## What you will make
 
 You will reproduce one circuit from the course notes, measure it, and submit a circuit view plus a comparison table. Use the same labels and values as the source schematic.

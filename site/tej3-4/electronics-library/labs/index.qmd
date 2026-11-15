@@ -13,6 +13,7 @@ execute: {enabled: false}
 | L03 Ohm's law verification | H07 | Tinkercad then physical | 75 min | low voltage only | planned |
 | L04 Series-circuit current and voltage verification | H09 | physical; Tinkercad optional | 75 min | power off for resistance | ready |
 | L05 Parallel branches and faults | H10/H16 | Tinkercad and physical | 90 min | fused/current-limited | planned |
+| L06 LED to capacitor build sequence | H19/H21 | Tinkercad 100% gate, correction day, then physical | 3 staged periods | 5 V, current-limited, polarity checks | ready |
 | L21 Baseline, parts, and safe opening | CS01/CS02 | physical | 75 min | unplugged, ESD controls | complete |
 | L22 Power connections and ready-to-power gate | CS03/CS04 | physical | 75 min | no internal live probing | complete |
 | L23 POST and hardware fault stations | SQ02 | teacher-prepared stations | 90 min | teacher-prepared faults only | complete |
