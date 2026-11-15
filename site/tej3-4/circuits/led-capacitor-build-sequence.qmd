@@ -29,7 +29,9 @@ This sequence adds one idea at a time. Every physical circuit must first be comp
 | Friday, November 20 | Lab 220 | Build and test Stage 1 in Tinkercad. |
 | Sunday, November 22 at 7:00 PM | Online deadline | Submit the Stage 1 Tinkercad link and screenshot. |
 | Monday, November 23 | Lab 225 | Correction day. Fix the simulation and receive the 100% readiness check. |
-| Tuesday, November 24 | Portable 1 | Students with an approved 100% simulation build Stage 1 with real components. Other students finish the simulation first. |
+| Tuesday, November 24 | Portable 1 | Hardware preparation buffer. Approved students improve their paper plan, help identify parts, or preview Stage 2 in Tinkercad. No class-wide powered build is promised. |
+
+Physical build dates are announced only after the teacher has sorted the required parts, tested one complete reference circuit, and confirmed the power-supply limits. A 100% simulation makes a student eligible for the matching physical stage; it does not force the physical stage to happen immediately.
 
 **[Download the two-page Stage 1 planning and readiness sheet](../../assets/electronics/worksheets/led-stage1-readiness-sheet.pdf)**
 
@@ -103,7 +105,16 @@ Students who do not yet have 100% remain in Tinkercad for the next lab class.
 
 ## Stage 1 physical verification
 
-Use a teacher-set 5.0 V supply with a current limit of 20 mA or less. Students use voltage mode and calculate current from the resistor voltage. They do not move the meter lead to the current jack in the first physical build.
+This stage begins only when the teacher announces that the hardware station is ready. Start with a small supervised group while the rest of the class continues simulation, Jupyter, calculations, or corrections.
+
+Before opening the station, the teacher:
+
+1. Builds and tests one reference circuit.
+2. Sorts the required LEDs, 1.0 kΩ resistors, pushbuttons, breadboards, and leads.
+3. Sets a 5.0 V supply with a current limit of 20 mA or less.
+4. Confirms that the multimeters are in voltage mode with the leads in the correct jacks.
+
+Students calculate current from the resistor voltage. They do not move the meter lead to the current jack in the first physical build.
 
 1. Identify the resistor, LED anode and cathode, and pushbutton terminals.
 2. With power off, reproduce the approved Tinkercad topology on the breadboard.
