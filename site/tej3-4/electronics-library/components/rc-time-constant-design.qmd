@@ -147,6 +147,16 @@ Differentiation describes how fast voltage changes. Integration connects current
 
 **Textbook support:** Grob, Chapter 22, pp. 668-691. Practice support: Problems Manual, Chapter 22, pp. 309-316. Optional teacher-approved lab: Experiment 22-1. [[1, Ch. 22]](../../../references.qmd#ref-grob2016)
 
+<details>
+<summary>Equation and diagram source files</summary>
+
+- [LaTeX equation source](../../../assets/electronics/equations/capacitor-rc-slides/capacitor-rc-equations.tex)
+- [RC charging schematic](../../../assets/electronics/schematics/rc-charge.svg)
+- [RC discharging schematic](../../../assets/electronics/schematics/rc-discharge.svg)
+- [RC curves](../../../assets/electronics/schematics/rc-curves.svg)
+
+</details>
+
 ## Where this leads
 
 Continue to [Diodes and LEDs](diodes-leds.qmd), then [Transistors](transistors.qmd), and then [Operational Amplifiers and the XL741](op-amps.qmd). Capacitors and resistors also lead to filters, integrators, differentiators, and calculus.

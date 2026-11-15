@@ -86,7 +86,7 @@ $$
 The stored energy is:
 
 $$
-E=\frac{1}{2}CV^2
+E=\frac{CV^2}{2}
 $$
 
 Use farads for $C$, volts for $V$, coulombs for $Q$, and joules for $E$.
@@ -132,6 +132,15 @@ The capacitor stores $612\,\mu\mathrm{C}$ of charge.
 If the direct notebook link does not open, [download the notebook](../../../assets/tej-computational/notebooks/10-capacitors-from-zero.ipynb), open **[JupyterLite](https://jupyter.org/try-jupyter/lab/){target="_blank"}**, click **Upload Files**, and double-click the notebook.
 
 **Textbook support:** Grob, Chapter 16, sections 16-1 to 16-4, pp. 484-515. Practice support: Problems Manual, Chapter 16, pp. 238-250. Optional teacher-approved lab: Experiment 16-1. [[1, Ch. 16]](../../../references.qmd#ref-grob2016)
+
+<details>
+<summary>Equation and diagram source files</summary>
+
+- [LaTeX equation source](../../../assets/electronics/equations/capacitor-rc-slides/capacitor-rc-equations.tex)
+- [Capacitor symbols](../../../assets/electronics/schematics/capacitor-symbols.svg)
+- [Capacitor structure](../../../assets/electronics/schematics/capacitor-structure.svg)
+
+</details>
 
 ## Next lesson
 
