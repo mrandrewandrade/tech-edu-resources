@@ -1,0 +1,32 @@
+\documentclass[tikz,border=9pt]{standalone}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[europeanresistors,americanvoltages]{circuitikz}
+\definecolor{TEJNavy}{HTML}{0E1733}
+\definecolor{TEJGreen}{HTML}{147D55}
+\definecolor{TEJBlue}{HTML}{14A8D4}
+\begin{document}
+\begin{tikzpicture}[line width=1.15pt,draw=TEJNavy,text=TEJNavy,font=\sffamily]
+  \ctikzset{bipoles/length=1.18cm}
+  \draw
+    (0,0) node[ground]{} to[battery1,l_={$V_S=5.0\,\mathrm{V}$}] (0,4)
+    to[R,l={$R_1=1.0\,\mathrm{k}\Omega$}] (4,4)
+    node[circ,label=above:{Node A}] (A) {}
+    to[R,l={$R_2=2.2\,\mathrm{k}\Omega$}] (4,0)
+    -- (0,0);
+  \draw
+    (A) -- (7,4)
+    to[R,l={$R_3=3.3\,\mathrm{k}\Omega$}] (7,0)
+    -- (4,0);
+  \draw[TEJGreen,very thick,->] (1.0,5.0) -- (2.5,5.0)
+    node[midway,above] {$I_1$};
+  \draw[TEJBlue,very thick,->] (4.65,3.35) -- (4.65,2.25)
+    node[midway,right] {$I_2$};
+  \draw[TEJBlue,very thick,->] (7.65,3.35) -- (7.65,2.25)
+    node[midway,right] {$I_3$};
+  \node[draw=TEJGreen,rounded corners=3pt,inner sep=5pt,align=center]
+    at (2.0,-0.85) {Measure $V_S$ and $V_{R1}$};
+  \node[draw=TEJBlue,rounded corners=3pt,inner sep=5pt,align=center]
+    at (6.0,-0.85) {Measure Node A to ground};
+\end{tikzpicture}
+\end{document}

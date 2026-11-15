@@ -84,6 +84,35 @@ ul.task-list li input[type="checkbox"] {
 <meta name="theme-color" content="#062650">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../assets/bs-shared.css">
 <link rel="stylesheet" href="../assets/bs-components.css">
@@ -581,13 +610,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><strong>Monday, Lab 225:</strong> Open <a href="../tej3-4/electronics-library/components/capacitors.html">Capacitors from Zero</a>, the <a href="https://docs.google.com/presentation/d/1QKVYTvEYKO5p1Tl6bNlBuRuYwMWiad3VUAgJcsY9Dbg/edit">teaching slides</a>, and the <a href="https://jupyter.org/try-jupyter/lab/index.html?fromURL=https%3A%2F%2Fandrewandrade.ca%2Ftech-edu-resources%2Fassets%2Ftej-computational%2Fnotebooks%2F10-capacitors-from-zero.ipynb">beginner notebook in JupyterLite</a>.</li>
-<li><strong>Tuesday, Portable 1:</strong> Complete the <a href="../assets/electronics/worksheets/capacitors-tuesday-worksheet.pdf">two-page capacitor worksheet</a>. Upload clear photos of both pages.</li>
-<li><strong>Wednesday, Lab 225:</strong> Open <a href="../tej3-4/electronics-library/components/rc-charge-discharge.html">RC Charging and Discharging</a>, the <a href="https://docs.google.com/presentation/d/130ilpoHB15CGT1_IQQuquD8zWLzIYprLojiKbAYDfk4/edit">RC slides</a>, the <a href="https://jupyter.org/try-jupyter/lab/index.html?fromURL=https%3A%2F%2Fandrewandrade.ca%2Ftech-edu-resources%2Fassets%2Ftej-computational%2Fnotebooks%2F11-rc-charge-discharge.ipynb">graph notebook in JupyterLite</a>, and the <a href="https://www.tinkercad.com/classrooms/9Km3yctGOwi/home">TEJ Tinkercad classroom</a>.</li>
-<li><strong>Thursday, Portable 1:</strong> Complete the <a href="../assets/electronics/worksheets/rc-timing-thursday-worksheet.pdf">two-page RC timing worksheet</a>. Upload clear photos of both pages.</li>
-<li><strong>Friday, Lab 220, half-day schedule:</strong> Open <a href="../tej3-4/electronics-library/components/rc-time-constant-design.html">RC Time Constants and Design</a>, the <a href="https://jupyter.org/try-jupyter/lab/index.html?fromURL=https%3A%2F%2Fandrewandrade.ca%2Ftech-edu-resources%2Fassets%2Ftej-computational%2Fnotebooks%2F12-rc-time-constant-design.ipynb">design notebook in JupyterLite</a>, and the <a href="https://www.tinkercad.com/classrooms/9Km3yctGOwi/home">TEJ Tinkercad classroom</a>. Finish any incomplete work.</li>
+<li><strong>Monday, Lab 225:</strong> Learn capacitor types, polarity, ratings, charge, and one complete <span class="math inline">\(Q=CV\)</span> example using <a href="../tej3-4/electronics-library/components/capacitors.html">Capacitors from Zero</a> and the <a href="https://docs.google.com/presentation/d/1QKVYTvEYKO5p1Tl6bNlBuRuYwMWiad3VUAgJcsY9Dbg/edit">teaching slides</a>. In the <a href="https://jupyter.org/try-jupyter/lab/index.html?fromURL=https%3A%2F%2Fandrewandrade.ca%2Ftech-edu-resources%2Fassets%2Ftej-computational%2Fnotebooks%2F10-capacitors-from-zero.ipynb">beginner notebook</a>, complete only Parts 1 and 2. The energy and part-choice sections are optional.</li>
+<li><strong>Tuesday, Portable 1, regular teacher away:</strong> Complete the <a href="../assets/electronics/worksheets/capacitors-tuesday-worksheet.pdf">two-page capacitor worksheet</a>. Everything needed is printed on the pages. No new lesson, hardware, Tinkercad, or notebook work is required. Upload clear photos of both pages.</li>
+<li><strong>Wednesday, Lab 225:</strong> Use <a href="../tej3-4/electronics-library/components/rc-charge-discharge.html">RC Charging and Discharging</a> and slides 1 to 10 of the <a href="https://docs.google.com/presentation/d/130ilpoHB15CGT1_IQQuquD8zWLzIYprLojiKbAYDfk4/edit">RC deck</a>. Run the supplied <a href="https://jupyter.org/try-jupyter/lab/index.html?fromURL=https%3A%2F%2Fandrewandrade.ca%2Ftech-edu-resources%2Fassets%2Ftej-computational%2Fnotebooks%2F11-rc-charge-discharge.ipynb">graph notebook</a>, change one value, and compare the curves. Students run the provided NumPy code; they are not expected to write the exponential model.</li>
+<li><strong>Thursday, Portable 1:</strong> Complete Questions 1 to 4 of the <a href="../assets/electronics/worksheets/rc-timing-thursday-worksheet.pdf">RC timing worksheet</a>. Questions 5 and 6 are optional challenges. Use the <a href="../tej3-4/circuits/hands-on-circuit-stations.html">5 V RC station</a> for a teacher demonstration if it is ready.</li>
+<li><strong>Friday, Lab 220, half-day schedule:</strong> Sort and identify the real resistors and capacitors, then rotate through the <a href="../tej3-4/circuits/hands-on-circuit-stations.html">hands-on circuit stations</a>. Save one piece of measurement evidence and finish incomplete work. The RC design deck, third notebook, calculus bridge, and full Tinkercad design move to the following week.</li>
 </ol>
 <p><a href="../tej3-4/electronics-library/components/capacitors.html">Open the complete capacitor week page</a>.</p>
+<p><a href="../tej3-4/circuits/hands-on-circuit-stations.html">Open the hands-on station build guide</a>.</p>
 </div>
 </div>
 <!-- Generated by scripts/course_notes.py; do not edit. -->
