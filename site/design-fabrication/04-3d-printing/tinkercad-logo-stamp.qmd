@@ -10,6 +10,30 @@ execute: {enabled: false}
 
 Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the required dimensions, success criteria and submission list.
 
+## Prepare the logo in Photopea
+
+The Tinkercad and Onshape pathways begin with the same artwork process:
+
+1. Open the original photograph, scan, PNG or JPG in [Photopea](https://www.photopea.com/).
+2. Choose **Image - Vectorize Bitmap**.
+3. For a simple black-and-white logo, set **Colors** to **2** and compare the source and vector previews.
+4. Select **OK**, expand the generated vector group and hide the page-sized white background layer.
+5. Keep any smaller white Shape layers that create required holes or cutouts.
+6. Confirm that the checkerboard appears around the logo and that important openings remain clear.
+7. Choose **File - Export as - SVG** and leave **add hidden layers** turned off.
+
+![Photopea's bitmap vectorizer set to two colours, with source and vector previews shown side by side.](../../assets/onshape-logo-stamp/photopea-workflow/02-vectorize-two-colours.jpg){.ter-concept-diagram}
+
+![Clean vector artwork on a transparent background, with the generated Shape layers visible in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){.ter-concept-diagram}
+
+For the complete explanation of raster layers, Shape layers, background removal and SVG export, use [Part A of the Photopea-to-Onshape guide](onshape-logo-stamp.qmd#part-a---prepare-the-artwork-in-photopea).
+
+::: {.callout-tip}
+## Tinkercad skips the DXF conversion
+
+Tinkercad imports SVG files directly. After the clean SVG is exported from Photopea, continue with the steps below. Do **not** convert the artwork to DXF for this pathway.
+:::
+
 ## Step 1 - Start and name the design
 
 1. Sign in to [Tinkercad](https://www.tinkercad.com/).
@@ -28,10 +52,12 @@ Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the require
 ## Step 3 - Import your original logo
 
 1. Select **Import**.
-2. Choose your transparent SVG logo.
-3. Import it at no more than **30-32 mm wide**.
-4. Set the logo height to **2 mm**.
-5. Remove or simplify details thinner than **1.2 mm**.
+2. Choose the transparent SVG exported from Photopea.
+3. Select the **Art** import type when Tinkercad asks how to interpret the file.
+4. Import it at no more than **30-32 mm wide**.
+5. Keep the width and length proportions linked while resizing.
+6. Set the logo height to **2 mm**.
+7. Remove or simplify details thinner than **1.2 mm**.
 
 If Tinkercad fills openings incorrectly, return to the SVG and repair the paths before continuing. Do not cover the problem with extra shapes.
 
