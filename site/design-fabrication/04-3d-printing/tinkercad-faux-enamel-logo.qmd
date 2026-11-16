@@ -19,6 +19,40 @@ Complete the project in two versions:
 Version 1 is guided practice. Version 2 shows that you can transfer the process to your own design.
 :::
 
+## New to Tinkercad? Start here
+
+Complete this short introduction before beginning the logo. Keep Tinkercad open in one window and this lesson or the video open beside it. Pause whenever you need to copy an action.
+
+:::: {.ter-tinkercad-starter}
+::: {.ter-tinkercad-video}
+<iframe src="https://www.youtube-nocookie.com/embed/vk3PmW5oqW0?start=285" title="Tinkercad interface and first 3D design introduction by Ty Ridings" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+:::
+
+::: {.ter-tinkercad-checklist}
+### Watch and follow
+
+1. Watch the **interface tour** beginning at 4:45.
+2. At 7:40, open a new design and follow along with the first build.
+3. At 28:47, watch how an STL is exported for 3D printing.
+
+[Open Autodesk's guided 3D-design basics](https://www.tinkercad.com/learn/designs/collection/3d-design-basics){.btn .btn-primary} [Open the complete video](https://www.youtube.com/watch?v=vk3PmW5oqW0){.btn .btn-outline-secondary}
+:::
+::::
+
+### Five-minute practice build
+
+Before using your logo, prove that you can control a simple shape:
+
+1. Create a new 3D design and rename it `lastname-tinkercad-practice`.
+2. Drag a **Cylinder** onto the workplane. Set its length and width to **30 mm** and its height to **3 mm**.
+3. Orbit, pan and zoom until you can inspect the top, front and side.
+4. Duplicate the cylinder. Make the copy **24 × 24 × 1 mm** and raise it **3 mm** above the workplane.
+5. Select both cylinders, choose **Align**, and select the two centre dots.
+6. Group the parts, then undo once so you know how to recover from a mistake.
+7. Export the practice object as an **STL**.
+
+You are ready when you can **view, size, raise, align, group, undo and export** without guessing. Autodesk also provides a [printable Tinkercad getting-started and keyboard-shortcut guide](https://images.tinkercad.com/jl5ii4oqrdmc/4nMtGEJi53o3n7V2KJKG7a/0b1818fdecff4868bebc74ebeaf925cf/Tinkercad_Getting_Started_Guide_printable.pdf).
+
 ## Version 1 reference — PCSS Warriors
 
 ![Port Credit Warriors roundel with a navy outer band, gold centre, white lettering and white circular outlines.](../../assets/branding/pcss/pcss-warriors.png){fig-alt="Port Credit Warriors roundel used as the Version 1 class reference" width="420"}
@@ -55,6 +89,27 @@ Your Version 2 design must:
 Read Figure 2 as a **third-angle orthographic drawing**. The circular decorated face is the **front view**. Its thin **top view** is aligned directly above it, and the thin **right-side view** is aligned directly to its right. **Section A–A** cuts through the centre of the front view to show the construction: a 3 mm solid base, 1 mm raised walls and two separately fillable colour pockets. The section is not another exterior view.
 
 ![Aligned top, front and right-side orthographic views of the circular badge, with section A–A showing the solid PLA base, raised walls, background fill and logo fill.](../../assets/tinkercad-logo-jewellery/faux-enamel-cavity-diagram.svg){.ter-concept-diagram}
+
+## See the finished idea
+
+These photographs show the process and the range of products possible. Your artwork must still be original.
+
+<div class="ter-process-gallery">
+<figure class="ter-process-example ter-process-example--photo">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F30/ZT2R/LPPHU5YB/F30ZT2RLPPHU5YB.jpg?auto=webp&amp;frame=1&amp;width=1200" alt="A collection of completed colourful faux-enamel jewellery made from 3D-printed parts and nail polish" loading="lazy"></a>
+  <figcaption><strong>Finished possibilities:</strong> the same method can produce earrings, brooches, collar pins and other small jewellery. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+</figure>
+<figure class="ter-process-example ter-process-example--photo">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step2" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FVF/P2DZ/LPPHTYQG/FVFP2DZLPPHTYQG.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;width=1200" alt="Nail polish being guided into recessed areas of a printed jewellery piece" loading="lazy"></a>
+  <figcaption><strong>Fill the pockets:</strong> place colour inside the recessed areas and guide it to the raised walls. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step2" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+</figure>
+<figure class="ter-process-example ter-process-example--photo">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step4" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FMC/2TDW/LPPHTYQK/FMC2TDWLPPHTYQK.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Metal earring posts, brooch pins and other jewellery findings attached to the backs of completed pieces" loading="lazy"></a>
+  <figcaption><strong>Add the hardware:</strong> a flat back accepts an earring post, brooch bar or another teacher-approved finding. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step4" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
+</figure>
+</div>
+
+The reference photographs and screenshots by kura_kura are used under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/) and are not included in this site's CC BY-SA licence. Select any image to open the original project and full context.
 
 ## Dimensions
 
@@ -131,6 +186,11 @@ The whole part will be printed in white PLA. The flat rear surface will later re
 
 Do not convert the lettering or circular outlines into holes. They are visible white features in the finished badge.
 
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F1G/D65B/LPPHTZID/F1GD65BLPPHTZID.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="A line drawing converted to SVG and then imported into the Tinkercad workplane" loading="lazy"></a>
+  <figcaption><strong>Import the SVG:</strong> the reference uses a heart, but Version 1 uses the separated PCSS artwork and Version 2 uses your original logo. Confirm that the imported lines are clean before continuing. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
+</figure>
+
 ### Step 5 — make the navy regions fillable
 
 1. Import `pcss-navy-regions.svg` at exactly the same scale and centre as the white structure.
@@ -143,6 +203,16 @@ Thin white divider walls may appear around some navy shapes. They are the fabric
 
 ### Step 6 — align, group and perform the leak test
 
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FG2/FK81/LPPHTZIF/FG2FK81LPPHTZIF.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Two copies of an imported SVG separated vertically in Tinkercad so their construction can be edited" loading="lazy"></a>
+  <figcaption><strong>Duplicate before editing:</strong> keep one copy for the raised detail and use the other to create the solid base. Separating the copies temporarily makes it easier to see which part you are changing. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
+</figure>
+
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FH1/L92G/LPPHTZIC/FH1L92GLPPHTZIC.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Tinkercad Shape panel showing Inner Line fill mode and then a solid filled base" loading="lazy"></a>
+  <figcaption><strong>Change the fill mode:</strong> use <em>Inner Line</em> to create raised boundaries. Use the solid version for the flat base. Check the preview closely before aligning the parts. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
+</figure>
+
 1. Select the base, outside rim, white structure and navy-region dividers.
 2. Select **Align** and use the two centre dots.
 3. Orbit the model and inspect it from the top, side and bottom.
@@ -152,6 +222,11 @@ Thin white divider walls may appear around some navy shapes. They are the fabric
 7. Group the parts.
 
 Do not export if a cavity leaks through the rim, a letter is broken, a divider is under 1.2 mm, or a pocket is too small for a brush or toothpick.
+
+<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
+  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FDU/4IVV/LPPHTZIE/FDU4IVVLPPHTZIE.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Aligned base and raised-detail parts in Tinkercad with the upper feature set to 1 millimetre high" loading="lazy"></a>
+  <figcaption><strong>Align and inspect:</strong> centre the raised detail on the base, set the upper feature to 1 mm and orbit to a low side view. Your circular version should have the same flat base and clearly enclosed pockets. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
+</figure>
 
 ### Step 7 — export Version 1
 
@@ -191,6 +266,18 @@ For the 60 mm PCSS badge or a Version 2 brooch, use a **20–25 mm glue-on bar p
 Lightly roughen only the glue area and remove dust. A teacher may apply a small amount of [Loctite Super Glue Gel Control](https://www.loctiteproducts.com/products/central-pdp.html/loctite-super-glue-gel-control/SAP_0201DGL029X7/variation/234790.html) or another school-approved adhesive after testing it on the printed material. Five-minute epoxy is stronger and more gap-filling but requires additional handling controls. Hot glue is not a durable jewellery attachment.
 
 Do not wear the product until the fill and adhesive are completely cured. Do not claim that an earring finding is hypoallergenic unless the supplier documents the exact material.
+
+## What to buy for one class
+
+Search Amazon or a jewellery supplier for:
+
+- `glue on brooch pin backs 20mm or 25mm`;
+- `stainless steel flat pad earring posts 8mm or 10mm with backs` for approved Version 2 earrings;
+- teacher-approved Port Credit navy, Warriors gold and student-choice fill colours;
+- toothpicks or fine disposable applicators; and
+- a teacher-controlled gel cyanoacrylate or approved two-part epoxy.
+
+Buy findings in bulk only after printing one test badge and confirming that the hardware fits the flat back.
 
 ## Submit
 
