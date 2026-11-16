@@ -1,0 +1,84 @@
+---
+title: "Tinkercad Logo Stamp | Step-by-Step"
+description: "Build a mirrored 38 mm circular logo stamp in Tinkercad and export an STL for impression testing."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [logo, computer-aided-design, additive-manufacturing, stl, dimension, mirror, evaluation]
+highlighted-terms: [logo, stl]
+toc: true
+execute: {enabled: false}
+---
+
+Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the required dimensions, success criteria and submission list.
+
+## Step 1 - Start and name the design
+
+1. Sign in to [Tinkercad](https://www.tinkercad.com/).
+2. Select **Create - 3D Design**.
+3. Rename the design `lastname-logo-stamp`.
+4. Set the **Snap Grid** to **0.5 mm**.
+
+## Step 2 - Make the backing coin
+
+1. Drag a **Cylinder** onto the workplane.
+2. Set its width and length to **38 mm**.
+3. Set its height to **4 mm**.
+4. Increase the cylinder sides so the edge appears smooth.
+5. Leave the back flat. Do not add a handle.
+
+## Step 3 - Import your original logo
+
+1. Select **Import**.
+2. Choose your transparent SVG logo.
+3. Import it at no more than **30-32 mm wide**.
+4. Set the logo height to **2 mm**.
+5. Remove or simplify details thinner than **1.2 mm**.
+
+If Tinkercad fills openings incorrectly, return to the SVG and repair the paths before continuing. Do not cover the problem with extra shapes.
+
+## Step 4 - Mirror the stamp face
+
+1. Select only the logo.
+2. Choose **Mirror**.
+3. Select the left-right mirror control.
+4. Confirm that letters and directional symbols now look backwards on the stamp face. They will read correctly in the impression.
+
+## Step 5 - Place the relief on the coin
+
+1. Select the logo.
+2. Raise it **4 mm** above the workplane so it sits on the backing.
+3. Select the logo and cylinder together.
+4. Choose **Align**.
+5. Select the two centre alignment dots.
+6. Confirm there is at least **3 mm** of clear backing around the logo.
+
+## Step 6 - Inspect before grouping
+
+Orbit to the top, front and right-side views.
+
+Check that:
+
+- the backing is 4 mm thick;
+- the logo rises 2 mm above the backing;
+- the logo is mirrored;
+- no part hangs beyond the circle;
+- small gaps remain open; and
+- the back remains flat.
+
+Select everything and press **Ctrl + G** only after these checks pass.
+
+## Step 7 - Export
+
+1. Select the grouped stamp.
+2. Select **Export**.
+3. Choose **The selected shape**.
+4. Choose **STL**.
+5. Rename the file `lastname-logo-stamp.stl`.
+6. Open it in the class slicer and inspect every layer.
+
+For the rigid class prototype, print with the flat back on the build plate and the raised logo facing upward. A flexible ink-stamp version uses a teacher-selected material and printer-specific orientation.
+
+## Step 8 - Test and revise
+
+Make one impression in teacher-approved modelling material. If the result is backwards, incomplete, crowded or too faint, return to Tinkercad and revise the source before printing again.
+
+Record the first result and the change you made. A successful print without evidence of testing is not the complete mission.
