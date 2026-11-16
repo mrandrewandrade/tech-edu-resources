@@ -1,0 +1,89 @@
+---
+title: "Onshape Logo Stamp | Parametric Version"
+description: "Build the same 38 mm mirrored logo stamp as an editable parametric Onshape model."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [logo, parametric-modelling, computer-aided-design, sketch, geometric-constraint, dimension, mirror, stl, evaluation, iteration]
+highlighted-terms: [logo, stl]
+toc: true
+execute: {enabled: false}
+---
+
+Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the common dimensions, success criteria and submission list.
+
+## Step 1 - Create and name the document
+
+1. Create a new Onshape document named `lastname-logo-stamp`.
+2. Rename the first Part Studio `Stamp`.
+3. Confirm the workspace uses millimetres.
+
+## Step 2 - Add the controlling variables
+
+Create these variables at the top of the feature list:
+
+| Variable | Value |
+|---|---:|
+| `#stampDiameter` | 38 mm |
+| `#baseThickness` | 4 mm |
+| `#reliefHeight` | 2 mm |
+| `#logoWidth` | 30 mm |
+| `#edgeMargin` | 3 mm |
+
+The goal is not simply to type the correct numbers once. The model should update predictably if an approved dimension changes.
+
+## Step 3 - Model the backing coin
+
+1. Start a sketch on the **Top plane**.
+2. Draw a centre-point circle from the origin.
+3. Dimension its diameter as `#stampDiameter`.
+4. Confirm the sketch is fully constrained.
+5. Finish the sketch and **Extrude - Add** by `#baseThickness`.
+6. Optionally add a small fillet to the back outer edge, but keep the rear face flat for the later handle.
+
+## Step 4 - Prepare the logo geometry
+
+Use an original logo. For Onshape, either:
+
+- rebuild simple geometry with constrained sketch entities; or
+- convert the approved SVG to DXF and insert that DXF into a sketch.
+
+Do not import a finished STL as the editable source. Do not trace or copy a commercial logo.
+
+## Step 5 - Place and mirror the stamping face
+
+1. Start a sketch on the top face of the coin.
+2. Insert or construct the logo.
+3. Add horizontal and vertical construction centre lines through the origin.
+4. Constrain the logo to the centre.
+5. Dimension its controlling width as `#logoWidth`.
+6. Mirror the logo left-right across the vertical construction line, or mirror the source geometry before insertion.
+7. Delete or suppress the unmirrored copy so only the mirrored stamp geometry remains.
+8. Confirm at least `#edgeMargin` remains around the design.
+
+Letters should look backwards on the stamp face and correct in the impression.
+
+## Step 6 - Create the raised relief
+
+1. Finish the logo sketch.
+2. Select the closed logo regions.
+3. **Extrude - Add** by `#reliefHeight`.
+4. Rename the feature `Mirrored logo relief`.
+5. Inspect the feature list: variables, backing sketch, backing extrude, logo sketch and relief extrude should appear in a readable order.
+
+## Step 7 - Inspect and export
+
+1. Use top, front, right-side and isometric views.
+2. Measure the overall diameter, backing thickness and relief height.
+3. Confirm there are no detached islands or details below 1.2 mm.
+4. Right-click the finished part and choose **Export**.
+5. Export an STL in millimetres using the class resolution setting.
+6. Name it `lastname-logo-stamp.stl`.
+
+For the rigid class prototype, print flat-back down with the relief upward. A flexible ink-stamp version uses a teacher-selected material and printer-specific orientation.
+
+## Step 8 - Test the design intent
+
+After the first impression, revise a variable, sketch dimension or logo feature based on evidence. Capture the feature list and the changed model. The Onshape version is successful when another person can understand and edit the design without rebuilding it from the beginning.
+
+## Optional configuration
+
+After the 38 mm stamp works, create a teacher-approved **25.4 mm** configuration for a very simple logo. Do not claim the smaller version works until it has been printed and tested.

@@ -1032,16 +1032,81 @@
       "course_hub": "/commons/design-fabrication/index.html",
       "sidebar_id": "design-fabrication",
       "lesson_order": 1,
-      "route": "/commons/design-fabrication/advanced-making/stamp-faux-enamel-jewellery.html",
-      "source": "design-fabrication/advanced-making/stamp-faux-enamel-jewellery.qmd",
-      "title": "Stamp or Faux-Enamel Jewellery",
-      "summary": "Choose one of the linked advanced 3D-printing projects.",
-      "use": "The links provide optional extension ideas without adding another local tutorial.",
+      "route": "/commons/design-fabrication/04-3d-printing/logo-stamp-mission.html",
+      "source": "design-fabrication/04-3d-printing/logo-stamp-mission.qmd",
+      "title": "Mission 2: Logo Stamp",
+      "summary": "Convert an original logo into a mirrored 38 mm relief stamp and test its impression.",
+      "use": "A common brief and dimensions keep the Tinkercad and Onshape pathways comparable.",
+      "resources": [],
+      "track_id": "advanced-making",
+      "track_order": 9,
+      "track_title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
+      "track_hub": "design-fabrication/04-3d-printing/index.qmd",
+      "track_summary": "Turn an original logo into a tested stamp, then reuse it as faux-enamel jewellery.",
+      "track_use": "The sequence moves from introductory Tinkercad construction to parametric Onshape modelling and physical finishing.",
+      "previous_route": null,
+      "next_route": "/commons/design-fabrication/04-3d-printing/tinkercad-logo-stamp.html",
+      "next_starts_new_track": false,
+      "sequence_index": 40
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 2,
+      "route": "/commons/design-fabrication/04-3d-printing/tinkercad-logo-stamp.html",
+      "source": "design-fabrication/04-3d-printing/tinkercad-logo-stamp.qmd",
+      "title": "Tinkercad Logo Stamp",
+      "summary": "Import, mirror, align, group, export, and test the stamp in Tinkercad.",
+      "use": "The first pathway extends the skills from the introductory keychain.",
+      "resources": [],
+      "track_id": "advanced-making",
+      "track_order": 9,
+      "track_title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
+      "track_hub": "design-fabrication/04-3d-printing/index.qmd",
+      "track_summary": "Turn an original logo into a tested stamp, then reuse it as faux-enamel jewellery.",
+      "track_use": "The sequence moves from introductory Tinkercad construction to parametric Onshape modelling and physical finishing.",
+      "previous_route": "/commons/design-fabrication/04-3d-printing/logo-stamp-mission.html",
+      "next_route": "/commons/design-fabrication/04-3d-printing/onshape-logo-stamp.html",
+      "next_starts_new_track": false,
+      "sequence_index": 41
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 3,
+      "route": "/commons/design-fabrication/04-3d-printing/onshape-logo-stamp.html",
+      "source": "design-fabrication/04-3d-printing/onshape-logo-stamp.qmd",
+      "title": "Onshape Logo Stamp",
+      "summary": "Rebuild the stamp with variables, constrained sketches, and named features.",
+      "use": "The parametric version preserves design intent and supports controlled revisions.",
+      "resources": [],
+      "track_id": "advanced-making",
+      "track_order": 9,
+      "track_title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
+      "track_hub": "design-fabrication/04-3d-printing/index.qmd",
+      "track_summary": "Turn an original logo into a tested stamp, then reuse it as faux-enamel jewellery.",
+      "track_use": "The sequence moves from introductory Tinkercad construction to parametric Onshape modelling and physical finishing.",
+      "previous_route": "/commons/design-fabrication/04-3d-printing/tinkercad-logo-stamp.html",
+      "next_route": "/commons/design-fabrication/04-3d-printing/tinkercad-faux-enamel-logo.html",
+      "next_starts_new_track": false,
+      "sequence_index": 42
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 4,
+      "route": "/commons/design-fabrication/04-3d-printing/tinkercad-faux-enamel-logo.html",
+      "source": "design-fabrication/04-3d-printing/tinkercad-faux-enamel-logo.qmd",
+      "title": "Mission 3: Tinkercad Faux-Enamel Brooch",
+      "summary": "Turn the logo into enclosed colour cavities for a printed brooch or earring.",
+      "use": "Students reuse the same visual identity while designing for nail-polish filling and attached findings.",
       "resources": [
-        {
-          "label": "Faux Stained Glass - 3D Printed",
-          "url": "https://www.instructables.com/Faux-Stained-Glass-3D-Printed/"
-        },
         {
           "label": "3D-Printed Faux Enamel Jewellery",
           "url": "https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/"
@@ -1050,13 +1115,41 @@
       "track_id": "advanced-making",
       "track_order": 9,
       "track_title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
-      "track_hub": null,
-      "track_summary": "Continue with an optional advanced 3D-printing project.",
-      "track_use": "These external project references provide a next challenge after the introductory build.",
-      "previous_route": null,
+      "track_hub": "design-fabrication/04-3d-printing/index.qmd",
+      "track_summary": "Turn an original logo into a tested stamp, then reuse it as faux-enamel jewellery.",
+      "track_use": "The sequence moves from introductory Tinkercad construction to parametric Onshape modelling and physical finishing.",
+      "previous_route": "/commons/design-fabrication/04-3d-printing/onshape-logo-stamp.html",
+      "next_route": "/commons/design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.html",
+      "next_starts_new_track": false,
+      "sequence_index": 43
+    },
+    {
+      "course_id": "design-fabrication",
+      "course_title": "General Design & Fabrication",
+      "course_hub": "/commons/design-fabrication/index.html",
+      "sidebar_id": "design-fabrication",
+      "lesson_order": 5,
+      "route": "/commons/design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.html",
+      "source": "design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.qmd",
+      "title": "Onshape Faux-Enamel Jewellery",
+      "summary": "Develop the fillable jewellery design as an editable parametric Onshape model.",
+      "use": "The later extension connects constrained CAD, orthographic evidence, printing, and finishing.",
+      "resources": [
+        {
+          "label": "Faux Stained Glass - 3D Printed",
+          "url": "https://www.instructables.com/Faux-Stained-Glass-3D-Printed/"
+        }
+      ],
+      "track_id": "advanced-making",
+      "track_order": 9,
+      "track_title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
+      "track_hub": "design-fabrication/04-3d-printing/index.qmd",
+      "track_summary": "Turn an original logo into a tested stamp, then reuse it as faux-enamel jewellery.",
+      "track_use": "The sequence moves from introductory Tinkercad construction to parametric Onshape modelling and physical finishing.",
+      "previous_route": "/commons/design-fabrication/04-3d-printing/tinkercad-faux-enamel-logo.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 40
+      "sequence_index": 44
     },
     {
       "course_id": "tej",
@@ -1084,7 +1177,7 @@
       "previous_route": null,
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 41
+      "sequence_index": 45
     },
     {
       "course_id": "tej",
@@ -1107,7 +1200,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/electronics-library/components/resistors.html",
       "next_starts_new_track": false,
-      "sequence_index": 42
+      "sequence_index": 46
     },
     {
       "course_id": "tej",
@@ -1130,7 +1223,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/schematic-basics.html",
       "next_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
       "next_starts_new_track": false,
-      "sequence_index": 43
+      "sequence_index": 47
     },
     {
       "course_id": "tej",
@@ -1170,7 +1263,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/resistors.html",
       "next_route": "/commons/tej3-4/electronics-library/components/rc-charge-discharge.html",
       "next_starts_new_track": false,
-      "sequence_index": 44
+      "sequence_index": 48
     },
     {
       "course_id": "tej",
@@ -1214,7 +1307,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/capacitors.html",
       "next_route": "/commons/tej3-4/electronics-library/components/rc-time-constant-design.html",
       "next_starts_new_track": false,
-      "sequence_index": 45
+      "sequence_index": 49
     },
     {
       "course_id": "tej",
@@ -1258,7 +1351,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/rc-charge-discharge.html",
       "next_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
       "next_starts_new_track": false,
-      "sequence_index": 46
+      "sequence_index": 50
     },
     {
       "course_id": "tej",
@@ -1281,7 +1374,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/rc-time-constant-design.html",
       "next_route": "/commons/tej3-4/electronics-library/components/transistors.html",
       "next_starts_new_track": false,
-      "sequence_index": 47
+      "sequence_index": 51
     },
     {
       "course_id": "tej",
@@ -1304,7 +1397,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/diodes-leds.html",
       "next_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "next_starts_new_track": false,
-      "sequence_index": 48
+      "sequence_index": 52
     },
     {
       "course_id": "tej",
@@ -1327,7 +1420,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/transistors.html",
       "next_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 49
+      "sequence_index": 53
     },
     {
       "course_id": "tej",
@@ -1399,7 +1492,7 @@
       "previous_route": "/commons/tej3-4/electronics-library/components/op-amps.html",
       "next_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 50
+      "sequence_index": 54
     },
     {
       "course_id": "tej",
@@ -1471,7 +1564,7 @@
       "previous_route": "/commons/tej3-4/circuits/parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 51
+      "sequence_index": 55
     },
     {
       "course_id": "tej",
@@ -1527,7 +1620,7 @@
       "previous_route": "/commons/tej3-4/circuits/series-circuits.html",
       "next_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_starts_new_track": false,
-      "sequence_index": 52
+      "sequence_index": 56
     },
     {
       "course_id": "tej",
@@ -1571,7 +1664,7 @@
       "previous_route": "/commons/tej3-4/circuits/series-parallel-circuits.html",
       "next_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 53
+      "sequence_index": 57
     },
     {
       "course_id": "tej",
@@ -1611,7 +1704,7 @@
       "previous_route": "/commons/tej3-4/circuits/kirchhoffs-laws.html",
       "next_route": "/commons/tej3-4/circuits/tinkercad-circuits.html",
       "next_starts_new_track": false,
-      "sequence_index": 54
+      "sequence_index": 58
     },
     {
       "course_id": "tej",
@@ -1639,7 +1732,7 @@
       "previous_route": "/commons/tej3-4/circuits/linear-algebra-circuits.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 55
+      "sequence_index": 59
     },
     {
       "course_id": "tej",
@@ -1662,7 +1755,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computer-systems/usb-and-cable-management/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 56
+      "sequence_index": 60
     },
     {
       "course_id": "tej",
@@ -1685,7 +1778,7 @@
       "previous_route": "/commons/tej3-4/computer-systems/safe-opening-and-parts/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 57
+      "sequence_index": 61
     },
     {
       "course_id": "tej",
@@ -1713,7 +1806,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_starts_new_track": false,
-      "sequence_index": 58
+      "sequence_index": 62
     },
     {
       "course_id": "tej",
@@ -1745,7 +1838,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/choosing-a-distribution.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_starts_new_track": false,
-      "sequence_index": 59
+      "sequence_index": 63
     },
     {
       "course_id": "tej",
@@ -1789,7 +1882,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/install-linux-mint.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_starts_new_track": false,
-      "sequence_index": 60
+      "sequence_index": 64
     },
     {
       "course_id": "tej",
@@ -1812,7 +1905,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/explore-linux.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_starts_new_track": false,
-      "sequence_index": 61
+      "sequence_index": 65
     },
     {
       "course_id": "tej",
@@ -1835,7 +1928,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/know-your-computer.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_starts_new_track": false,
-      "sequence_index": 62
+      "sequence_index": 66
     },
     {
       "course_id": "tej",
@@ -1858,7 +1951,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/files-terminal-permissions.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_starts_new_track": false,
-      "sequence_index": 63
+      "sequence_index": 67
     },
     {
       "course_id": "tej",
@@ -1881,7 +1974,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/git-version-control.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_starts_new_track": false,
-      "sequence_index": 64
+      "sequence_index": 68
     },
     {
       "course_id": "tej",
@@ -1904,7 +1997,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/quarto-website.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_starts_new_track": false,
-      "sequence_index": 65
+      "sequence_index": 69
     },
     {
       "course_id": "tej",
@@ -1927,7 +2020,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/publish-github-pages.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_starts_new_track": false,
-      "sequence_index": 66
+      "sequence_index": 70
     },
     {
       "course_id": "tej",
@@ -1950,7 +2043,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-data-logging.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_starts_new_track": false,
-      "sequence_index": 67
+      "sequence_index": 71
     },
     {
       "course_id": "tej",
@@ -1973,7 +2066,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/python-analysis-curve-fitting.html",
       "next_route": "/commons/tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html",
       "next_starts_new_track": false,
-      "sequence_index": 68
+      "sequence_index": 72
     },
     {
       "course_id": "tej",
@@ -1996,7 +2089,7 @@
       "previous_route": "/commons/tej3-4/linux-operating-systems/networking-ssh-tmux.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 69
+      "sequence_index": 73
     },
     {
       "course_id": "tej",
@@ -2019,7 +2112,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 70
+      "sequence_index": 74
     },
     {
       "course_id": "tej",
@@ -2042,7 +2135,7 @@
       "previous_route": "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
       "next_route": "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
       "next_starts_new_track": false,
-      "sequence_index": 71
+      "sequence_index": 75
     },
     {
       "course_id": "tej",
@@ -2065,7 +2158,7 @@
       "previous_route": "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 72
+      "sequence_index": 76
     },
     {
       "course_id": "tej",
@@ -2093,7 +2186,7 @@
       "previous_route": null,
       "next_route": "/commons/tej3-4/computational-engineering/circuit-quest.html",
       "next_starts_new_track": false,
-      "sequence_index": 73
+      "sequence_index": 77
     },
     {
       "course_id": "tej",
@@ -2121,7 +2214,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/jupyterlite.html",
       "next_route": "/commons/tej3-4/computational-engineering/python-first-steps.html",
       "next_starts_new_track": false,
-      "sequence_index": 74
+      "sequence_index": 78
     },
     {
       "course_id": "tej",
@@ -2149,7 +2242,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/circuit-quest.html",
       "next_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
       "next_starts_new_track": false,
-      "sequence_index": 75
+      "sequence_index": 79
     },
     {
       "course_id": "tej",
@@ -2181,7 +2274,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/python-first-steps.html",
       "next_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_starts_new_track": false,
-      "sequence_index": 76
+      "sequence_index": 80
     },
     {
       "course_id": "tej",
@@ -2213,7 +2306,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/local-python-jupyter.html",
       "next_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "next_starts_new_track": false,
-      "sequence_index": 77
+      "sequence_index": 81
     },
     {
       "course_id": "tej",
@@ -2245,7 +2338,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/python-numpy-foundations.html",
       "next_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_starts_new_track": false,
-      "sequence_index": 78
+      "sequence_index": 82
     },
     {
       "course_id": "tej",
@@ -2281,7 +2374,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/finding-documentation-and-asking-for-help.html",
       "next_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "next_starts_new_track": false,
-      "sequence_index": 79
+      "sequence_index": 83
     },
     {
       "course_id": "tej",
@@ -2313,7 +2406,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/kirchhoff-jupyter-assignment.html",
       "next_route": "/commons/tej3-4/computational-engineering/midterm-circuit-investigation.html",
       "next_starts_new_track": false,
-      "sequence_index": 80
+      "sequence_index": 84
     },
     {
       "course_id": "tej",
@@ -2345,7 +2438,7 @@
       "previous_route": "/commons/tej3-4/computational-engineering/jupyter-electronics-lab.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 81
+      "sequence_index": 85
     }
   ]
 }
