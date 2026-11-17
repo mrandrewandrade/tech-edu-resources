@@ -114,6 +114,8 @@ An imported DXF does not automatically resize when an Onshape variable changes. 
 
 ## Part C - Build the stamp in Onshape
 
+Open the [teacher reference model in Onshape](https://cad.onshape.com/documents/0e36bf05b0d1e4ec76afe941/w/a33ad2c0945ed61fa1d612aa/e/ca1279488c8e4ae515f05a36) in another tab. Use it to compare feature names and dimensions, but build the model in your own document. Every screenshot below was captured from that working model.
+
 ### Step 5 - Create and name the document
 
 1. Create a new Onshape document named `lastname-logo-stamp`.
@@ -121,6 +123,13 @@ An imported DXF does not automatically resize when an Onshape variable changes. 
 3. Confirm the workspace uses millimetres.
 
 ### Step 6 - Add the controlling variables
+
+1. Select the **Variable** tool (the `x` icon) in the feature toolbar.
+2. Enter the name without the number sign: `stampDiameter`.
+3. Set the type to **Length**, enter `38 mm`, and select the green check.
+4. Repeat the process for the remaining four variables.
+
+![The Onshape Variable dialog with stampDiameter set to 38 mm.](../../assets/onshape-logo-stamp/onshape-workflow/01-variable-stamp-diameter.jpg){.ter-concept-diagram}
 
 Create these variables at the top of the feature list:
 
@@ -134,37 +143,53 @@ Create these variables at the top of the feature list:
 
 The variables document the required design intent. Remember that `#logoWidth` describes the target logo size but does not directly control imported DXF entities.
 
+![The completed variable block above the named backing and logo features.](../../assets/onshape-logo-stamp/onshape-workflow/01-variables-and-feature-tree.jpg){.ter-concept-diagram}
+
 ### Step 7 - Model the backing coin
 
-1. Start a sketch on the **Top plane**.
-2. Draw a centre-point circle from the origin.
-3. Dimension its diameter as `#stampDiameter`.
-4. Confirm the sketch is fully constrained.
-5. Finish the sketch and **Extrude - Add** by `#baseThickness`.
-6. Keep the rear face flat for the later handle.
+1. In the feature tree, select the **Top plane**, then select **Sketch**.
+2. Choose **Centre point circle**. Click the origin for the centre, then click again to place the circle.
+3. Choose **Dimension**, click the circle, and enter `#stampDiameter` for its diameter.
+4. The displayed dimension should read **38 mm**. Select the green check to finish the sketch.
+5. Rename it `Backing Sketch`.
+
+![The backing sketch viewed from the top, with its centre constrained to the origin and its diameter set to 38 mm.](../../assets/onshape-logo-stamp/onshape-workflow/02-backing-sketch.jpg){.ter-concept-diagram}
+
+6. Select the circular sketch region, then select **Extrude**.
+7. Set the operation to **Solid - New**, the end type to **Blind**, and the depth to `#baseThickness`.
+8. Confirm the preview is a 4 mm solid disk and select the green check.
+9. Rename the feature `Backing Extrude`. Keep the rear face flat for a later handle.
+
+![The Backing Extrude dialog set to a new solid with a 4 mm blind depth.](../../assets/onshape-logo-stamp/onshape-workflow/03-backing-extrude-4mm.jpg){.ter-concept-diagram}
 
 ### Step 8 - Import the prepared DXF
 
 1. Select the top face of the 4 mm backing and start a new sketch.
-2. Choose the sketch **Insert DXF or DWG** command.
-3. Select the prepared DXF.
-4. Set the import units to **Millimetre**.
-5. Enable **Use file origin position** so the prepared artwork lands at the stamp centre.
-6. Confirm the stamp face looks backwards.
-7. Measure or inspect the clear edge. It must remain at least `#edgeMargin`.
-8. Rename the sketch `Mirrored Logo Sketch`.
+2. While editing the sketch, choose **Insert DXF or DWG** in the sketch toolbar.
+3. Choose the prepared DXF from its Onshape tab, or upload `aa-logo-stamp-32mm-mirrored.dxf` when following the worked example.
+4. Set **Units** to **Millimetre**.
+5. Enable **Use file origin position**. The preparation step placed the file origin at the stamp centre, so do not drag the imported geometry by eye.
+6. Confirm the stamp face looks backwards. This is correct: the clay impression will read forwards.
+7. Confirm that the artwork is inside the backing circle and leaves at least `#edgeMargin` (3 mm) at the edge.
+8. Select the green check to finish the sketch, then rename it `Mirrored Logo Sketch`.
+
+![The imported mirrored DXF geometry centred on the backing face while the Mirrored Logo Sketch is being edited.](../../assets/onshape-logo-stamp/onshape-workflow/04-mirrored-logo-sketch.jpg){.ter-concept-diagram}
 
 Do not scale one direction independently. The logo must keep its original proportions.
 
 ### Step 9 - Create the raised relief
 
-1. Finish the logo sketch.
-2. Select every closed logo region that should touch the clay.
-3. **Extrude - Add** by `#reliefHeight`.
-4. Confirm the merge scope joins the relief to the backing as one part.
-5. Rename the feature `Logo Relief Extrude`.
+1. Select every closed logo region that should touch the clay. Hold **Ctrl** while selecting additional regions when needed.
+2. Select **Extrude**.
+3. Set the operation to **Solid - Add**, the end type to **Blind**, and the depth to `#reliefHeight`.
+4. Under **Merge scope**, confirm `Part 1` is selected. The preview must show the logo joining the backing, not becoming separate parts.
+5. Select the green check and rename the feature `Logo Relief Extrude`.
 
-![Completed 38 mm Onshape stamp in isometric view, with the editable variables and feature list visible.](../../assets/onshape-logo-stamp/onshape-reference-proof.jpg){.ter-concept-diagram}
+![The Logo Relief Extrude dialog set to Add, with a 2 mm blind depth and Part 1 in the merge scope.](../../assets/onshape-logo-stamp/onshape-workflow/05-logo-relief-extrude-2mm.jpg){.ter-concept-diagram}
+
+The Parts list at the lower left must still say **Parts (1)**. More than one part means the relief did not merge with the backing.
+
+![The completed 38 mm stamp in isometric view with its five variables and four named modelling features visible.](../../assets/onshape-logo-stamp/onshape-workflow/06-final-isometric-feature-tree.jpg){.ter-concept-diagram}
 
 ### Step 10 - Inspect and export
 
@@ -172,11 +197,34 @@ Do not scale one direction independently. The logo must keep its original propor
 2. Use a front or side view to confirm a **4 mm backing**, **2 mm relief** and **6 mm overall height**.
 3. Use the isometric view to check that all raised regions are joined to one part.
 4. Confirm there are no detached islands or details below 1.2 mm.
-5. Right-click the finished part and choose **Export**.
-6. Export an STL in millimetres using the class resolution setting.
-7. Name it `lastname-logo-stamp.stl`.
+5. Expand **Parts (1)**, right-click `Part 1`, and choose **Export**.
+
+![The Part 1 context menu with Export selected.](../../assets/onshape-logo-stamp/onshape-workflow/07-part-export-menu.jpg){.ter-concept-diagram}
+
+6. In the Export dialog, use these settings:
+   - **File name:** `lastname-logo-stamp`
+   - **Format:** STL
+   - **STL Format:** Binary
+   - **Units:** Millimeter
+   - **Resolution:** Fine
+   - **Options:** Download
+7. Select **Export**. Do not leave the units at Onshape's default **Inch** setting.
+
+![The Onshape Export dialog set to STL, Binary, Millimeter, Fine and Download.](../../assets/onshape-logo-stamp/onshape-workflow/08-stl-export-settings.jpg){.ter-concept-diagram}
 
 For the rigid class prototype, print flat-back down with the relief upward. A flexible ink-stamp version uses a teacher-selected material and printer-specific orientation.
+
+## If yours does not match
+
+| Symptom | Most likely cause | Fix |
+|---|---|---|
+| The circle will not extrude | The backing sketch is open or the wrong region is selected | Edit `Backing Sketch`, repair the circle and select its closed region |
+| The final impression will read backwards | The artwork was not mirrored before DXF export | Return to the preparation step and generate a new mirrored DXF |
+| The artwork is off-centre | The DXF was dragged manually or imported without its file origin | Reinsert it with **Use file origin position** |
+| Holes or cutouts are filled | The Photopea vector paths are open or a required cutout layer was hidden | Repair the vector layers in Photopea and export a new SVG and DXF |
+| The model contains two or more parts | The relief extrude used **New** instead of **Add**, or the merge scope is empty | Edit `Logo Relief Extrude`, choose **Add**, and select `Part 1` as the merge scope |
+| The printed stamp is far too large or small | The DXF or STL was exported with the wrong units | Use **Millimetre** for DXF import and **Millimeter** for STL export |
+| A thin detail disappears when sliced | The path or gap is below the 1.2 mm minimum | Simplify or thicken it in Photopea, then repeat the SVG-to-DXF step |
 
 ## Final checklist
 
