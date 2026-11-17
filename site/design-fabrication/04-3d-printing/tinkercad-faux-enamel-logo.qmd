@@ -18,6 +18,12 @@ Print the complete badge **once in white PLA**. There is no filament change and 
 - The colours shown in the original logo are a finishing guide, not separate Tinkercad solids.
 :::
 
+::: {.callout-important}
+## Account and permission check
+
+Before students create or use a Tinkercad or Photopea account, confirm each service through the current board's digital-tool process, vendor age requirements and privacy/security guidance. Confirm that the required Ontario third-party software notice has been issued and obtain parent/guardian permission whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). Provide an approved account-free, offline or teacher-operated alternative when needed.
+:::
+
 ## The two-version assignment
 
 1. **V1 — guided PCSS badge:** follow the photographed workflow and build the supplied school logo as a 60 mm badge.
@@ -32,6 +38,8 @@ Tinkercad is excellent for learning the basic moves. It is also, affectionately,
 
 Continue with the [Onshape logo-stamp workflow](onshape-logo-stamp.qmd), then build the [parametric Onshape faux-enamel pin or jewellery project](faux-enamel-pin-jewellery.qmd). Start with [3D Modelling Foundations](01-additive-cad.qmd) if constraints and parametric modelling are new to you.
 :::
+
+![The class running joke: Tinkercad is fast and friendly Temu CAD; Onshape adds parametric control and editability.](../../assets/design-fabrication/tinkercad-temu-cad-vs-onshape-meme.png){.ter-concept-diagram}
 
 ## What you are making
 
@@ -111,6 +119,8 @@ Automatic tracing is useful for learning and for simple V2 logos, but the PCSS m
 
 Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, and rename it `lastname-pcss-faux-enamel-v1`.
 
+This is the Temu CAD shift: two clean SVG imports, two controlled heights, one alignment and one printable group. Simple is a feature when every measurement is verified.
+
 ### Step 5 — import and size the base
 
 1. Select **Import**.
@@ -143,6 +153,12 @@ Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, and re
 ![The finished PCSS badge as one grouped white model.](../../assets/tinkercad-logo-jewellery/pcss-workflow/08-final-one-white-model.png){fig-alt="Finished one-colour white PCSS model grouped in Tinkercad"}
 
 ![A low view showing the solid base and raised white structure.](../../assets/tinkercad-logo-jewellery/pcss-workflow/10-side-view-3-plus-1.png){fig-alt="Low perspective view of the three millimetre base and one millimetre raised detail"}
+
+::: {.callout-note}
+## Temu CAD inspection rule
+
+`Ctrl+G` can merge a good model or hide a bad one. The low view, flat back, slicer preview and physical print—not the Group button—prove that the geometry works.
+:::
 
 ::: {.callout-warning}
 Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The grouped model is one white part; colour is a finishing operation.
@@ -214,6 +230,8 @@ These screenshots show the same steps on a simple original `AA` example:
 8. Choose two or three post-print colours that contrast with the white structure.
 
 Use a 50 mm badge for most V2 designs. Use 30 mm only when the design has very few, very wide shapes.
+
+V2 is the Temu CAD graduation test: the software stays simple, but the design decisions must become original, measurable and defensible.
 
 # Assignment SOP
 
