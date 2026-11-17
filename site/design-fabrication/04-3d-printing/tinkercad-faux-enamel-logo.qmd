@@ -1,6 +1,6 @@
 ---
 title: "Tinkercad Faux-Enamel Badge | PCSS V1 → Original V2"
-description: "Learn the faux-enamel workflow by rebuilding the PCSS Warriors roundel, then transfer the process to an original multicolour logo."
+description: "A photographed Photopea-to-Tinkercad workflow: print one white PLA badge, then add faux-enamel colour after printing."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, scalable-vector-graphics, computer-aided-design, stl, additive-manufacturing, layer, perimeter-wall, print-orientation]
 highlighted-terms: [logo, stl]
@@ -8,310 +8,256 @@ toc: true
 execute: {enabled: false}
 ---
 
-::: {.ter-project-brief}
-## The project
+::: {.callout-important}
+## One print. One filament colour.
 
-Complete the project in two versions:
+Print the complete badge **once in white PLA**. There is no filament change and no multicolour print.
 
-1. **Version 1 — PCSS Warriors practice badge:** rebuild the supplied school roundel as a **60 mm brooch**. Print the structure in **white filament**, then add Port Credit navy and Warriors gold as teacher-approved faux-enamel fills. The lettering and circular ring outlines must remain white.
-2. **Version 2 — original logo:** apply the same construction method to your own personal, business, club or community logo. Simplify it into two or three large colour regions that can be printed and filled cleanly.
-
-Version 1 is guided practice. Version 2 shows that you can transfer the process to your own design.
+- The curved text, circular outlines and raised details stay white.
+- Port Credit navy and Warriors gold are added **after printing** as teacher-approved faux-enamel finishes.
+- The colours shown in the original logo are a finishing guide, not separate Tinkercad solids.
 :::
 
-## New to Tinkercad? Start here
+## The two-version assignment
 
-Complete this short introduction before beginning the logo. Keep Tinkercad open in one window and this lesson or the video open beside it. Pause whenever you need to copy an action.
+1. **V1 — guided PCSS badge:** follow the photographed workflow and build the supplied school logo as a 60 mm badge.
+2. **V2 — original badge:** repeat the same process using a simple logo you designed yourself.
 
-:::: {.ter-tinkercad-starter}
-::: {.ter-tinkercad-video}
-<iframe src="https://www.youtube-nocookie.com/embed/vk3PmW5oqW0?start=285" title="Tinkercad interface and first 3D design introduction by Ty Ridings" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-:::
+V1 teaches the production method. V2 proves that you can transfer it to original work.
 
-::: {.ter-tinkercad-checklist}
-### Watch and follow
+## What you are making
 
-1. Watch the **interface tour** beginning at 4:45.
-2. At 7:40, open a new design and follow along with the first build.
-3. At 28:47, watch how an STL is exported for 3D printing.
-
-[Open Autodesk's guided 3D-design basics](https://www.tinkercad.com/learn/designs/collection/3d-design-basics){.btn .btn-primary} [Open the complete video](https://www.youtube.com/watch?v=vk3PmW5oqW0){.btn .btn-outline-secondary}
-:::
-::::
-
-### Five-minute practice build
-
-Before using your logo, prove that you can control a simple shape:
-
-1. Create a new 3D design and rename it `lastname-tinkercad-practice`.
-2. Drag a **Cylinder** onto the workplane. Set its length and width to **30 mm** and its height to **3 mm**.
-3. Orbit, pan and zoom until you can inspect the top, front and side.
-4. Duplicate the cylinder. Make the copy **24 × 24 × 1 mm** and raise it **3 mm** above the workplane.
-5. Select both cylinders, choose **Align**, and select the two centre dots.
-6. Group the parts, then undo once so you know how to recover from a mistake.
-7. Export the practice object as an **STL**.
-
-You are ready when you can **view, size, raise, align, group, undo and export** without guessing. Autodesk also provides a [printable Tinkercad getting-started and keyboard-shortcut guide](https://images.tinkercad.com/jl5ii4oqrdmc/4nMtGEJi53o3n7V2KJKG7a/0b1818fdecff4868bebc74ebeaf925cf/Tinkercad_Getting_Started_Guide_printable.pdf).
-
-## Version 1 reference — PCSS Warriors
-
-![Port Credit Warriors roundel with a navy outer band, gold centre, white lettering and white circular outlines.](../../assets/branding/pcss/pcss-warriors.png){fig-alt="Port Credit Warriors roundel used as the Version 1 class reference" width="420"}
-
-[Download the supplied PCSS Warriors PNG](../../assets/branding/pcss/pcss-warriors.png){download="pcss-warriors.png"}
-
-This school mark is the authorized class reference for Version 1. Preserve the recognizable roundel, lighthouse, waves and maple leaf, but simplify tiny details when they would make weak walls or unfillable pockets.
-
-### Required colour plan
-
-| Finished region | Material or finish | Requirement |
-|---|---|---|
-| Lettering and circular ring outlines | White PLA | Leave exposed and clean; do not cover with polish |
-| Outer band, lighthouse, waves and maple leaf | Port Credit navy fill | Use the teacher-approved navy colour |
-| Centre field and gold accents | Warriors gold fill | Use the teacher-approved gold colour |
-| Thin dividers required to contain a fill | White PLA | Keep at least 1.2 mm wide |
-
-The finished piece is multicolour, but it is printed as **one white PLA model**. The navy and gold are added after printing as faux-enamel fills. Tinkercad colours are only a planning aid and do not change the STL.
-
-## Version 2 — your own logo
-
-After Version 1 has passed its cavity test, create a second badge from an **original logo you designed**. Do not copy a company, team, game, social-media or clothing logo.
-
-Your Version 2 design must:
-
-- use at least **two fill colours** plus visible white filament structure;
-- have large, completely enclosed colour regions;
-- keep every important wall and stroke at least **1.2 mm** wide;
-- remove tiny text and details that will not print or fill cleanly; and
-- keep a flat back for a glue-on finding.
-
-## Read the construction drawing
-
-Read Figure 2 as a **third-angle orthographic drawing**. The circular decorated face is the **front view**. Its thin **top view** is aligned directly above it, and the thin **right-side view** is aligned directly to its right. **Section A–A** cuts through the centre of the front view to show the construction: a 3 mm solid base, 1 mm raised walls and two separately fillable colour pockets. The section is not another exterior view.
-
-![Aligned top, front and right-side orthographic views of the circular badge, with section A–A showing the solid PLA base, raised walls, background fill and logo fill.](../../assets/tinkercad-logo-jewellery/faux-enamel-cavity-diagram.svg){.ter-concept-diagram}
-
-## See the finished idea
-
-These photographs show the process and the range of products possible. Your artwork must still be original.
-
-<div class="ter-process-gallery">
-<figure class="ter-process-example ter-process-example--photo">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F30/ZT2R/LPPHU5YB/F30ZT2RLPPHU5YB.jpg?auto=webp&amp;frame=1&amp;width=1200" alt="A collection of completed colourful faux-enamel jewellery made from 3D-printed parts and nail polish" loading="lazy"></a>
-  <figcaption><strong>Finished possibilities:</strong> the same method can produce earrings, brooches, collar pins and other small jewellery. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
-</figure>
-<figure class="ter-process-example ter-process-example--photo">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step2" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FVF/P2DZ/LPPHTYQG/FVFP2DZLPPHTYQG.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;width=1200" alt="Nail polish being guided into recessed areas of a printed jewellery piece" loading="lazy"></a>
-  <figcaption><strong>Fill the pockets:</strong> place colour inside the recessed areas and guide it to the raised walls. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step2" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
-</figure>
-<figure class="ter-process-example ter-process-example--photo">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step4" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FMC/2TDW/LPPHTYQK/FMC2TDWLPPHTYQK.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Metal earring posts, brooch pins and other jewellery findings attached to the backs of completed pieces" loading="lazy"></a>
-  <figcaption><strong>Add the hardware:</strong> a flat back accepts an earring post, brooch bar or another teacher-approved finding. Photograph: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step4" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>.</figcaption>
-</figure>
-</div>
-
-The reference photographs and screenshots by kura_kura are used under the [CC BY-NC-SA 4.0 licence](https://creativecommons.org/licenses/by-nc-sa/4.0/) and are not included in this site's CC BY-SA licence. Select any image to open the original project and full context.
-
-## Dimensions
-
-| Feature | Version 1: PCSS | Version 2: original |
+| Feature | V1: PCSS badge | V2: original badge |
 |---|---:|---:|
-| Circle diameter | 60 mm | 50 mm brooch or 30 mm earring |
-| Main artwork width | about 52 mm | 38–40 mm brooch or 22–24 mm earring |
-| Solid base | 3 mm | 3 mm |
-| Raised white structure | 1 mm | 1 mm |
-| Fill depth | 0.8–1 mm | 0.8–1 mm |
-| Minimum wall or stroke | 1.2 mm | 1.2 mm |
-| Finished printed thickness | about 4 mm | about 4 mm |
+| Finished diameter | 60 mm | 50 mm brooch, or 30 mm for a very simple design |
+| Solid white base | 3 mm | 3 mm |
+| Raised white artwork | 1 mm | 1 mm |
+| Total thickness | about 4 mm | about 4 mm |
+| Minimum printable stroke | 1.2 mm | 1.2 mm |
+| Filament | white PLA only | white PLA only |
+| Colour | applied after printing | applied after printing |
 
-Use the 30 mm earring size only for an extremely simple Version 2 logo. The PCSS badge is always a 60 mm brooch so its curved lettering remains printable.
+![The PCSS Warriors logo used as the V1 reference.](../../assets/branding/pcss/pcss-warriors.png){fig-alt="Port Credit Warriors round school logo" width="400"}
 
-## Download the starter files
+## Download the V1 files
 
-- [PCSS Warriors reference PNG](../../assets/branding/pcss/pcss-warriors.png){download="pcss-warriors.png"}
-- [Circular base SVG](../../assets/tinkercad-logo-jewellery/source/circle-base.svg)
-- [Circular rim SVG](../../assets/tinkercad-logo-jewellery/source/circle-rim.svg)
-- [AA raised-detail example SVG](../../assets/tinkercad-logo-jewellery/source/aa-faux-enamel-detail.svg)
-- [AA brooch teacher-example STL](../../assets/tinkercad-logo-jewellery/downloads/aa-arrow-faux-enamel-brooch.stl)
+- [PCSS reference PNG](../../assets/branding/pcss/pcss-warriors.png){download="pcss-warriors.png"}
+- [Clean PCSS raised-detail SVG](../../assets/tinkercad-logo-jewellery/source/pcss-white-structure.svg){download="pcss-white-structure.svg"}
+- [60 mm circular base SVG](../../assets/tinkercad-logo-jewellery/source/circle-base.svg){download="circle-base.svg"}
+- [Completed one-colour PCSS STL](../../assets/tinkercad-logo-jewellery/downloads/pcss-faux-enamel-one-colour.stl){download="pcss-faux-enamel-one-colour.stl"}
 
-For Version 2, you also need the transparent SVG from your Photopea logo assignment.
+The completed STL is a teacher reference and recovery file. Build the editable Tinkercad version yourself before using it.
 
-## Part A — prepare the PCSS artwork in Photopea
+# V1 — PCSS guided build
 
-The PCSS PNG is a reference image, not yet Tinkercad geometry. Separate it into fabrication layers before importing it.
+## Part A — inspect and vectorize the logo in Photopea
 
-1. Open [Photopea](https://www.photopea.com/) and open `pcss-warriors.png`.
-2. Follow the [Photopea bitmap-to-vector workflow](onshape-logo-stamp.qmd#part-a---prepare-the-artwork-in-photopea), using a small colour count so the navy, gold and white areas remain distinct.
-3. Remove the transparent background and any accidental edge fragments.
-4. Separate the vector result into named groups: `WHITE STRUCTURE`, `NAVY REGIONS` and `GOLD REFERENCE`.
-5. Keep the white lettering and both circular outlines in `WHITE STRUCTURE`.
-6. Keep the outer band, lighthouse, waves and maple leaf in `NAVY REGIONS`.
-7. Use `GOLD REFERENCE` to check the intended fill areas. Gold does not need to become a raised solid shape.
-8. Export the white group as `pcss-white-structure.svg`.
-9. Export the navy group as `pcss-navy-regions.svg`.
+The original PNG is made from pixels. Tinkercad needs an SVG made from vector paths. The following screenshots were made while completing the actual PCSS workflow in [Photopea](https://www.photopea.com/).
 
-Before leaving Photopea, zoom in and confirm that `WARRIORS`, `PORT CREDIT` and both ring outlines are complete. These are the features that must remain white filament in the finished badge.
+### Step 1 — open the PCSS PNG
 
-## Part B — build Version 1 in Tinkercad
+1. Open Photopea.
+2. Select **File → Open**.
+3. Open `pcss-warriors.png`.
+4. Confirm that the full circular logo is visible and not cropped.
 
-### Step 1 — start the design
+![PCSS Warriors PNG open in Photopea.](../../assets/tinkercad-logo-jewellery/pcss-workflow/01-open-pcss-logo.png){fig-alt="PCSS Warriors logo open in the Photopea workspace"}
 
-1. Sign in to [Tinkercad](https://www.tinkercad.com/).
-2. Select **Create → 3D Design**.
-3. Rename the design `lastname-pcss-faux-enamel-v1`.
-4. Keep **Snap Grid** at **1.0 mm** while setting the main heights.
+### Step 2 — vectorize the bitmap
 
-### Step 2 — make the 60 mm base
+1. Select **Image → Vectorize Bitmap**.
+2. Set **Colors** to **4**.
+3. Choose the **Photo** preset.
+4. Turn on **Reduce noise** and **Merge colors**.
+5. Preview the result before accepting it.
 
-1. Import `circle-base.svg`.
-2. Set both dimensions to **60 mm**.
-3. Set its **Height** to **3 mm**.
-4. Centre it on the workplane.
+![Photopea Vectorize Bitmap window set to four colours.](../../assets/tinkercad-logo-jewellery/pcss-workflow/02-vectorize-four-colours.png){fig-alt="Photopea Vectorize Bitmap dialogue with four colours selected"}
 
-The whole part will be printed in white PLA. The flat rear surface will later receive a glue-on brooch finding.
+### Step 3 — inspect the vector layer
 
-### Step 3 — add the white outside rim
+1. Accept the vectorization.
+2. In the Layers panel, confirm that Photopea created a **Vector** layer.
+3. Zoom in on `WARRIORS`, `PORT CREDIT`, the rings, lighthouse and maple leaf.
+4. Look for broken letters, small islands and rough edges.
 
-1. Import `circle-rim.svg` at **60 mm**.
-2. Set its **Height** to **1 mm**.
-3. Raise it **3 mm** above the workplane.
-4. Align it horizontally and vertically with the base.
+![The traced PCSS artwork as a vector layer in Photopea.](../../assets/tinkercad-logo-jewellery/pcss-workflow/03-vector-layers.png){fig-alt="Photopea Layers panel showing the PCSS vector artwork"}
 
-### Step 4 — import the white lettering and rings
+::: {.callout-note}
+Automatic tracing is useful for learning and for simple V2 logos, but the PCSS mark contains curved lettering and many small shapes. For V1, use the supplied **clean PCSS raised-detail SVG** in Tinkercad. It keeps the school mark recognizable and the strokes printable.
+:::
 
-1. Import `pcss-white-structure.svg`.
-2. Keep **Fill Mode** at **Default** so the letters and ring outlines remain solid white filament.
-3. Scale the artwork to fit inside the 60 mm outside rim without touching it.
-4. Set its **Height** to **1 mm** and raise it **3 mm** above the workplane.
-5. Align it to the centre of the base.
+### Step 4 — export an SVG
 
-Do not convert the lettering or circular outlines into holes. They are visible white features in the finished badge.
+1. Select **File → Export as → SVG**.
+2. Keep the full artwork selected.
 
-<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/F1G/D65B/LPPHTZID/F1GD65BLPPHTZID.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="A line drawing converted to SVG and then imported into the Tinkercad workplane" loading="lazy"></a>
-  <figcaption><strong>Import the SVG:</strong> the reference uses a heart, but Version 1 uses the separated PCSS artwork and Version 2 uses your original logo. Confirm that the imported lines are clean before continuing. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
-</figure>
+![Photopea File menu with Export as SVG selected.](../../assets/tinkercad-logo-jewellery/pcss-workflow/04-export-svg-menu.png){fig-alt="Photopea Export as menu with SVG selected"}
 
-### Step 5 — make the navy regions fillable
+3. In the SVG export window, check the preview and dimensions.
+4. Select **Save**.
+5. Name the file clearly, such as `lastname-pcss-trace.svg`.
 
-1. Import `pcss-navy-regions.svg` at exactly the same scale and centre as the white structure.
-2. Open **Fill Mode** and choose **Inner Line** so the navy shapes become enclosed pockets instead of solid navy-coloured geometry.
-3. Adjust the line width until every divider is at least **1.2 mm** wide.
-4. Set the divider **Height** to **1 mm** and raise it **3 mm** above the workplane.
-5. Check the outer band, lighthouse, waves and maple leaf separately.
+![Photopea SVG export settings and preview.](../../assets/tinkercad-logo-jewellery/pcss-workflow/05-svg-export-settings.png){fig-alt="Photopea SVG export preview and settings"}
 
-Thin white divider walls may appear around some navy shapes. They are the fabrication boundaries that prevent navy and gold fills from flowing together.
+## Part B — build the one-colour model in Tinkercad
 
-### Step 6 — align, group and perform the leak test
+Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, and rename it `lastname-pcss-faux-enamel-v1`.
 
-<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FG2/FK81/LPPHTZIF/FG2FK81LPPHTZIF.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Two copies of an imported SVG separated vertically in Tinkercad so their construction can be edited" loading="lazy"></a>
-  <figcaption><strong>Duplicate before editing:</strong> keep one copy for the raised detail and use the other to create the solid base. Separating the copies temporarily makes it easier to see which part you are changing. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
-</figure>
+### Step 5 — import and size the base
 
-<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FH1/L92G/LPPHTZIC/FH1L92GLPPHTZIC.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Tinkercad Shape panel showing Inner Line fill mode and then a solid filled base" loading="lazy"></a>
-  <figcaption><strong>Change the fill mode:</strong> use <em>Inner Line</em> to create raised boundaries. Use the solid version for the flat base. Check the preview closely before aligning the parts. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
-</figure>
+1. Select **Import**.
+2. Upload `circle-base.svg`. If file upload is unavailable, use **Import from URL** with the file link supplied by your teacher.
+3. Set width and length to **60 mm × 60 mm**.
+4. Set **Height** to **3 mm**.
+5. Set the shape colour to white. This is a visual reminder that the print uses white PLA.
 
-1. Select the base, outside rim, white structure and navy-region dividers.
-2. Select **Align** and use the two centre dots.
-3. Orbit the model and inspect it from the top, side and bottom.
-4. Confirm that the back is flat.
-5. Confirm that every navy and gold fill area is completely enclosed.
-6. Confirm that the lettering and circular outlines remain solid raised features.
-7. Group the parts.
+![The circular SVG base in Tinkercad at 60 mm and 3 mm high.](../../assets/tinkercad-logo-jewellery/pcss-workflow/06-base-60x3-corrected.png){fig-alt="Tinkercad workplane with the circular base selected and height set to 3 millimetres"}
 
-Do not export if a cavity leaks through the rim, a letter is broken, a divider is under 1.2 mm, or a pocket is too small for a brush or toothpick.
+### Step 6 — import the raised PCSS detail
 
-<figure class="ter-process-example ter-process-example--wide ter-process-example--screenshot">
-  <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer"><img src="https://content.instructables.com/FDU/4IVV/LPPHTZIE/FDU4IVVLPPHTZIE.png?auto=webp&amp;fit=bounds&amp;frame=1&amp;height=1024&amp;width=1024" alt="Aligned base and raised-detail parts in Tinkercad with the upper feature set to 1 millimetre high" loading="lazy"></a>
-  <figcaption><strong>Align and inspect:</strong> centre the raised detail on the base, set the upper feature to 1 mm and orbit to a low side view. Your circular version should have the same flat base and clearly enclosed pockets. Screenshot: <a href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/#step1" target="_blank" rel="noopener noreferrer">kura_kura / Instructables</a>, CC BY-NC-SA 4.0.</figcaption>
-</figure>
+1. Select **Import** again.
+2. Import `pcss-white-structure.svg`.
+3. Set it to **60 mm × 60 mm**.
+4. Set **Height** to **1 mm**.
+5. Raise it **3 mm** above the workplane. The detail must sit on top of the 3 mm base, not inside it.
+6. Set this shape to white too.
 
-### Step 7 — export Version 1
+![The PCSS detail selected in Tinkercad with a 1 mm height.](../../assets/tinkercad-logo-jewellery/pcss-workflow/07-detail-60x1-raised-3.png){fig-alt="White PCSS raised detail aligned above the circular base with its height set to 1 millimetre"}
 
-1. Select the grouped model.
-2. Select **Export → The selected shape → .STL**.
-3. Name the file `lastname-pcss-faux-enamel-v1.stl`.
-4. Open it in the class slicer and inspect every layer.
-5. Print it flat, back down and decorated face upward, using the teacher-approved white filament profile.
+### Step 7 — align, inspect and group
 
-## Part C — finish Version 1
+1. Select both objects.
+2. Select **Align** and click the horizontal and vertical centre dots.
+3. Orbit to a low side view. Confirm that the base is 3 mm and the detail is 1 mm on top.
+4. Confirm that the back is flat and that the text and rings are not floating.
+5. Press **Ctrl+G** to group the two shapes into one printable model.
 
-1. Let the print cool completely and remove loose strings.
-2. Test the navy and gold finish on a failed print or sample first.
-3. Place a small drop of navy fill into the outer-band and navy-detail pockets.
-4. Place gold fill into the centre-field and gold-accent pockets.
-5. Guide each colour to its edges with the brush or a toothpick. Do not cover the raised white lettering, rings or divider walls.
-6. Apply **two or three thin coats**, allowing each coat to dry.
-7. Let the finished piece cure fully before gluing hardware or wearing it.
+![The finished PCSS badge as one grouped white model.](../../assets/tinkercad-logo-jewellery/pcss-workflow/08-final-one-white-model.png){fig-alt="Finished one-colour white PCSS model grouped in Tinkercad"}
 
-Use only teacher-approved polish and finishing products, with the ventilation and protective procedures required by the school.
+![A low view showing the solid base and raised white structure.](../../assets/tinkercad-logo-jewellery/pcss-workflow/10-side-view-3-plus-1.png){fig-alt="Low perspective view of the three millimetre base and one millimetre raised detail"}
 
-## Part D — create Version 2
+::: {.callout-warning}
+Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The grouped model is one white part; colour is a finishing operation.
+:::
 
-1. Duplicate the Version 1 Tinkercad design so you keep the proven base, rim and heights.
-2. Rename it `lastname-original-faux-enamel-v2`.
-3. Delete the PCSS-specific lettering and artwork.
-4. Prepare your original logo in Photopea as separate structure and fill-region SVGs.
-5. Import, align and test the new artwork using the same 3 mm base, 1 mm structure and 1.2 mm minimum wall.
-6. Choose two or three fill colours that give strong contrast.
-7. Export as `lastname-original-faux-enamel-v2.stl`.
-8. Print, fill, evaluate and revise it using evidence from Version 1.
+### Step 8 — export the STL
 
-## Glue on the finding
+1. Keep the grouped model selected.
+2. Select **Export**.
+3. Choose **The selected shape**.
+4. Under **For 3D Print**, select **.STL**.
+5. Name it `lastname-pcss-faux-enamel-v1.stl`.
 
-For the 60 mm PCSS badge or a Version 2 brooch, use a **20–25 mm glue-on bar pin** with a flat base. For an approved Version 2 earring, use an **8–10 mm stainless-steel flat-pad earring post** with a matching back.
+![Tinkercad export window with STL available under For 3D Print.](../../assets/tinkercad-logo-jewellery/pcss-workflow/11-export-stl.png){fig-alt="Tinkercad Export window with STL selected for 3D printing"}
 
-Lightly roughen only the glue area and remove dust. A teacher may apply a small amount of [Loctite Super Glue Gel Control](https://www.loctiteproducts.com/products/central-pdp.html/loctite-super-glue-gel-control/SAP_0201DGL029X7/variation/234790.html) or another school-approved adhesive after testing it on the printed material. Five-minute epoxy is stronger and more gap-filling but requires additional handling controls. Hot glue is not a durable jewellery attachment.
+## Part C — slice, print and finish
 
-Do not wear the product until the fill and adhesive are completely cured. Do not claim that an earring finding is hypoallergenic unless the supplier documents the exact material.
+### Step 9 — slicer check
 
-## What to buy for one class
+1. Import the STL into the class slicer.
+2. Place it flat, plain side down and decorated side up.
+3. Use the approved white-PLA profile.
+4. Preview every layer. The print should begin with a solid circular base and finish with the raised logo structure.
+5. Ask for the teacher checkpoint before printing.
 
-Search Amazon or a jewellery supplier for:
+### Step 10 — faux-enamel finish
 
-- `glue on brooch pin backs 20mm or 25mm`;
-- `stainless steel flat pad earring posts 8mm or 10mm with backs` for approved Version 2 earrings;
-- teacher-approved Port Credit navy, Warriors gold and student-choice fill colours;
-- toothpicks or fine disposable applicators; and
-- a teacher-controlled gel cyanoacrylate or approved two-part epoxy.
+1. Let the white print cool and remove strings or loose material.
+2. Test the approved navy and gold finishes on a failed print or scrap piece.
+3. Add small amounts of navy and gold only to the recessed areas.
+4. Guide the finish with a fine brush or toothpick.
+5. Keep the raised text, rings and divider details white.
+6. Apply several thin coats instead of one thick coat.
+7. Let the finish cure completely before attaching a brooch finding.
 
-Buy findings in bulk only after printing one test badge and confirming that the hardware fits the flat back.
+Use only teacher-approved finishing products, ventilation, PPE and adhesive procedures.
 
-## Submit
+# V2 — your original logo
 
-### Version 1 — PCSS practice
+V2 uses the same process with artwork you created. Do not copy a company, sports team, game, social-media or clothing logo.
+
+## Part D — make a simple V2 SVG in Photopea
+
+1. Start with a high-contrast black-and-white logo or a logo with no more than three large colours.
+2. Open it in Photopea.
+3. Select **Image → Vectorize Bitmap**.
+4. Begin with **2–4 colours**, then reduce the number until the edges are clean.
+5. Remove tiny text, detached dots and narrow features.
+6. Keep every important stroke at least **1.2 mm** at the final badge size.
+7. Select **File → Export as → SVG** and save `lastname-original-logo.svg`.
+
+These screenshots show the same steps on a simple original `AA` example:
+
+![An original raster logo open in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/01-open-raster-logo.jpg){fig-alt="Original AA logo open in Photopea"}
+
+![The original logo vectorized with two colours.](../../assets/onshape-logo-stamp/photopea-workflow/02-vectorize-two-colours.jpg){fig-alt="Photopea Vectorize Bitmap window set to two colours for a simple original logo"}
+
+![The cleaned vector artwork in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){fig-alt="Clean vector layer for the original AA logo"}
+
+## Part E — repeat the Tinkercad build
+
+1. Duplicate your successful V1 design or begin a new Tinkercad file.
+2. Keep the proven **3 mm white base**.
+3. Import your V2 SVG as the **1 mm raised white detail**.
+4. Raise the artwork **3 mm** and centre-align it with the base.
+5. Inspect the top, side and bottom.
+6. Group the model and export one STL.
+7. Print once in white PLA.
+8. Choose two or three post-print colours that contrast with the white structure.
+
+Use a 50 mm badge for most V2 designs. Use 30 mm only when the design has very few, very wide shapes.
+
+# Assignment SOP
+
+Use this standard operating procedure for both versions.
+
+| SOP stage | Required action | Evidence |
+|---|---|---|
+| 1. Plan | Identify white structure, navy/gold or student-choice finish areas, final size and finding | annotated logo or colour plan |
+| 2. Prepare | Vectorize and simplify in Photopea; export SVG | Photopea screenshot and SVG |
+| 3. Produce | Build 3 mm base + 1 mm raised detail in Tinkercad | top/low-view screenshot |
+| 4. Verify | Check alignment, flat back, 1.2 mm strokes and slicer preview | teacher checkpoint screenshot |
+| 5. Manufacture | Print once in white PLA using the approved profile | unpainted print photo |
+| 6. Finish | Apply thin, teacher-approved faux-enamel coats and cure | finished photo |
+| 7. Evaluate | Compare V1 with V2 and identify one evidence-based improvement | 100–150 word reflection |
+
+## Submit V1 — guided checkpoint
 
 Submit:
 
-1. a Photopea screenshot showing the named white, navy and gold groups;
-2. a top-view Tinkercad screenshot showing the white text and ring structure;
-3. a side-view screenshot showing the 3 mm base and 1 mm raised structure;
-4. `lastname-pcss-faux-enamel-v1.stl`; and
-5. a photograph of the cured navy, gold and white badge.
+1. one Photopea vector screenshot;
+2. one Tinkercad side/low-view screenshot;
+3. `lastname-pcss-faux-enamel-v1.stl`;
+4. a photo of the unpainted white print; and
+5. a photo of the cured navy, gold and white badge.
 
-### Version 2 — original design
+## Submit V2 — original final
 
 Submit:
 
-1. the original logo SVG;
-2. top and side screenshots of the Tinkercad model;
+1. `lastname-original-logo.svg`;
+2. top and side/low-view Tinkercad screenshots;
 3. `lastname-original-faux-enamel-v2.stl`;
-4. a photograph of the finished product; and
-5. a short comparison explaining what you changed after Version 1 and why Version 2 is easier to print or fill.
+4. unpainted and finished photographs; and
+5. the short V1-to-V2 improvement reflection.
 
 ## Success criteria
 
-- Version 1 is recognizably based on the supplied PCSS Warriors roundel.
-- The lettering and circular outlines remain clean white filament.
-- Navy and gold regions are visibly different and do not bleed together.
-- Every fill area is enclosed and accessible.
-- The base is 3 mm, the raised structure is 1 mm and critical walls are at least 1.2 mm.
-- Version 2 uses an original logo rather than copied commercial or team artwork.
-- Both STL files match their editable Tinkercad models.
-- The comparison identifies a specific, evidence-based improvement.
+- Both badges are printed once in **white PLA**.
+- V1 is recognizably based on the supplied PCSS Warriors mark.
+- Curved text and circular outlines stay visible as white raised structure.
+- The base is 3 mm and the raised artwork is 1 mm.
+- Important strokes are at least 1.2 mm wide.
+- Colour stays in the intended recessed areas without covering the white structure.
+- V2 uses an original, simplified logo.
+- Each submitted STL matches its editable Tinkercad design.
+- The reflection identifies a specific improvement supported by evidence.
 
-## Reference
+## Teacher note — Google Classroom draft
 
-The finishing idea is adapted from [Turn 3D Printed Faux Enamel Pins Into Unique Jewellery](https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewellery/). Use it as process inspiration, not as an answer file. Version 1 uses the supplied school reference; Version 2 must use original student artwork.
+Create two unassigned Classroom drafts from the submission lists above:
+
+- **Faux-Enamel Badge V1 — PCSS Guided Checkpoint**
+- **Faux-Enamel Badge V2 — Original Logo Final**
+
+Attach this lesson to both drafts. Keep V1 as a formative checkpoint and grade V2 with the success criteria. Do not assign either post until the printer, white PLA, finishing products, ventilation and findings are ready.
