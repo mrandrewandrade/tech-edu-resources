@@ -10,6 +10,18 @@ execute: {enabled: false}
 
 Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the required dimensions, success criteria and submission list.
 
+::: {.callout-tip}
+## Welcome to Temu CAD
+
+Tinkercad is **Temu CAD**—said with affection. It is fast, friendly, browser-based and perfect for learning primitives, alignment and boolean grouping. It is also why this pathway sometimes uses careful checkpoints where a parametric system would use constraints and variables.
+:::
+
+::: {.callout-important}
+## Account and permission check
+
+Before students create or use a Tinkercad account, confirm that Tinkercad is approved under the current board's digital-tool process, that students meet the vendor's age/account requirements, that the required Ontario third-party software notice has been provided, and that parent/guardian permission has been obtained whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). A student who cannot use the web service needs an approved alternative—not a lower mark.
+:::
+
 ## Prepare the logo in Photopea
 
 The Tinkercad and Onshape pathways begin with the same artwork process:
@@ -32,6 +44,8 @@ For the complete explanation of raster layers, Shape layers, background removal 
 ## Tinkercad skips the DXF conversion
 
 Tinkercad imports SVG files directly. After the clean SVG is exported from Photopea, continue with the steps below. Do **not** convert the artwork to DXF for this pathway.
+
+That direct SVG import is Temu CAD at its best: fewer steps, fewer settings and a surprisingly quick route to a real prototype.
 :::
 
 ## Step 1 - Start and name the design
@@ -92,6 +106,12 @@ Check that:
 
 Select everything and press **Ctrl + G** only after these checks pass.
 
+::: {.callout-note}
+## Temu CAD quality control
+
+Grouping is not proof that the design is correct; it only proves that Tinkercad agreed to glue the shapes together. The top, side and slicer checks are the evidence.
+:::
+
 ## Step 7 - Export
 
 1. Select the grouped stamp.
@@ -108,3 +128,5 @@ For the rigid class prototype, print with the flat back on the build plate and t
 Make one impression in teacher-approved modelling material. If the result is backwards, incomplete, crowded or too faint, return to Tinkercad and revise the source before printing again.
 
 Record the first result and the change you made. A successful print without evidence of testing is not the complete mission.
+
+If Temu CAD made the first prototype, the physical test gets the final vote. Move to the [Onshape pathway](onshape-logo-stamp.qmd) when you want the same design controlled by dimensions, variables and an editable feature history.

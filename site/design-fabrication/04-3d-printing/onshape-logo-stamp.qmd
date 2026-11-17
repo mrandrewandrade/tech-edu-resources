@@ -10,6 +10,12 @@ execute: {enabled: false}
 
 Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the common dimensions, success criteria and submission list.
 
+::: {.callout-important}
+## Account and permission check
+
+Before students create or use an Onshape account, confirm that Onshape is approved under the current board's digital-tool process, that students meet the vendor's age/account requirements, that the required Ontario third-party software notice has been provided, and that parent/guardian permission has been obtained whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). Provide an approved alternative when a student cannot use the service.
+:::
+
 ## Workflow overview
 
 This pathway uses three connected tools:
@@ -19,6 +25,14 @@ This pathway uses three connected tools:
 3. **Onshape** imports the DXF into a sketch and creates the editable 3D stamp.
 
 Photopea exports the artwork as **SVG**, not DXF. The conversion step between Photopea and Onshape is required. Do not import a finished STL as the editable source.
+
+::: {.callout-tip}
+## Graduating from Temu CAD
+
+The Tinkercad pathway—affectionately, **Temu CAD**—is quicker for a first prototype. This Onshape pathway takes longer because it records dimensions, constraints, variables and feature order. That extra structure is the point: the model should remain understandable and editable after the first print.
+:::
+
+![A classroom meme contrasting a fast, friendly Tinkercad prototype with a constrained and editable Onshape model.](../../assets/design-fabrication/tinkercad-temu-cad-vs-onshape-meme.png){.ter-concept-diagram}
 
 ::: {.callout-important}
 ## Design for an impression
