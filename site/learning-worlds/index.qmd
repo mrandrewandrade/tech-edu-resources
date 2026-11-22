@@ -1,0 +1,65 @@
+---
+title: "Technology Commons: The Learning Worlds"
+subtitle: "Start in the centre. Choose a route. Open the real lesson."
+description: "An accessible game-like map of TEJ circuit and computing lessons and TAS fabrication lessons."
+page-layout: full
+toc: false
+body-classes: "learning-worlds-page"
+execute: {enabled: false}
+format:
+  html:
+    css: ../assets/learning-map/learning-map.css
+---
+
+::: {.learning-worlds-shell data-learning-worlds="" data-manifest="../assets/learning-map/learning-map.json" data-view="map"}
+
+::: {.learning-worlds-intro}
+::: {}
+This is an **optional way to explore** the course. It does not replace the normal menus, search, lesson pages, or teacher directions. Start at the Technology Commons Hub, travel to a connected stop, and open the lesson when you are ready.
+:::
+
+::: {.learning-worlds-reminder}
+**Visited ≠ mastered.** A checkmark only means that this browser opened the stop. It is not a grade and it does not lock or unlock class content.
+:::
+:::
+
+::: {.map-toolbar aria-label="Map controls"}
+<button type="button" data-view="map" aria-pressed="true">Map view</button>
+<button type="button" data-view="list" aria-pressed="false">Lesson list</button>
+<button type="button" data-reset-progress>Reset visited stops</button>
+<a href="field-guide.html">Visual field guide</a>
+<a href="print.html">Printable map</a>
+
+<label class="map-search">Find a stop <input type="search" data-map-search placeholder="Try resistor, Python, CAD…" autocomplete="off"></label>
+:::
+
+<p class="map-status" data-map-status role="status" aria-live="polite">Loading the learning map…</p>
+
+::: {.map-layout}
+<div class="learning-map-canvas" data-map-canvas tabindex="0" aria-label="Learning Worlds map. Use Tab to reach a stop. Arrow keys or W A S D move between connected stops. Space shows details and Enter opens the lesson.">
+  <svg class="world-paths" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g data-path-layer></g></svg>
+  <div class="world-nodes" data-node-layer></div>
+</div>
+
+<aside class="map-detail" data-node-detail aria-live="polite" aria-label="Selected stop details">
+  <h2>Technology Commons Hub</h2>
+  <p>The map is loading. The regular lesson links remain available through the site navigation.</p>
+</aside>
+:::
+
+<div class="map-list-view" data-map-list aria-label="All Learning Worlds stops"></div>
+
+::: {.map-legend aria-label="Map legend"}
+<span>● Hub</span><span>↗ Portal</span><span>• Lesson</span><span>◆ Project</span><span>! Safety</span><span>★ Portfolio</span><span>✓ Visited</span>
+:::
+
+::: {.source-note}
+The map artwork and [visual field-guide diagrams](field-guide.qmd) are original redraws. Technical references are linked from applicable stops and listed beside each field-guide diagram. Mission-video buttons appear only when a valid video URL is added to the manifest; videos never autoplay.
+:::
+
+{{< include ../includes/generated/learning-map-noscript.html >}}
+
+:::
+
+<script src="../assets/learning-map/learning-map.js" defer></script>
+

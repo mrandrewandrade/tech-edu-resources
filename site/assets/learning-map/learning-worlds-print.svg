@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Technology Commons Learning Worlds map</title>
+<desc id="desc">A printable route map connecting the central hub, TEJ circuit and computing regions, and TAS fabrication regions.</desc>
+<rect width="1600" height="1000" fill="#f8f5ea"/>
+<path d="M0 0H720V1000H0Z" fill="#e7f6f8"/><path d="M880 0H1600V1000H880Z" fill="#fff0e7"/>
+<text x="38" y="54" font-family="system-ui,sans-serif" font-size="34" font-weight="800" fill="#0d4f63">CIRCUIT + COMPUTING REALMS</text>
+<text x="1562" y="54" text-anchor="end" font-family="system-ui,sans-serif" font-size="34" font-weight="800" fill="#7a3518">FABRICATION FRONTIER</text>
+<g stroke="#52616b" stroke-width="5" stroke-linecap="round" opacity=".72" fill="none">
+<line x1="800" y1="480" x2="800" y2="368"/>
+<line x1="800" y1="480" x2="640" y2="480"/>
+<line x1="800" y1="480" x2="960" y2="480"/>
+<line x1="800" y1="480" x2="800" y2="232"/>
+<line x1="800" y1="480" x2="800" y2="600"/>
+<line x1="800" y1="480" x2="800" y2="752"/>
+<line x1="800" y1="368" x2="800" y2="232"/>
+<line x1="800" y1="600" x2="800" y2="752"/>
+<line x1="800" y1="752" x2="528" y2="824"/>
+<line x1="800" y1="752" x2="1072" y2="824"/>
+<line x1="640" y1="480" x2="496" y2="240"/>
+<line x1="640" y1="480" x2="448" y2="376"/>
+<line x1="640" y1="480" x2="544" y2="704"/>
+<line x1="496" y1="240" x2="288" y2="232"/>
+<line x1="496" y1="240" x2="448" y2="376"/>
+<line x1="288" y1="232" x2="128" y2="360"/>
+<line x1="128" y1="360" x2="224" y2="464"/>
+<line x1="448" y1="376" x2="224" y2="464"/>
+<line x1="448" y1="376" x2="464" y2="576"/>
+<line x1="224" y1="464" x2="272" y2="568"/>
+<line x1="272" y1="568" x2="464" y2="576"/>
+<line x1="464" y1="576" x2="240" y2="808"/>
+<line x1="544" y1="704" x2="336" y2="704"/>
+<line x1="544" y1="704" x2="528" y2="824"/>
+<line x1="336" y1="704" x2="128" y2="680"/>
+<line x1="336" y1="704" x2="240" y2="808"/>
+<line x1="128" y1="680" x2="240" y2="808"/>
+<line x1="240" y1="808" x2="528" y2="824"/>
+<line x1="960" y1="480" x2="1088" y2="240"/>
+<line x1="960" y1="480" x2="1120" y2="408"/>
+<line x1="960" y1="480" x2="1088" y2="576"/>
+<line x1="1088" y1="240" x2="1280" y2="184"/>
+<line x1="1088" y1="240" x2="1120" y2="408"/>
+<line x1="1280" y1="184" x2="1456" y2="272"/>
+<line x1="1456" y1="272" x2="1312" y2="376"/>
+<line x1="1312" y1="376" x2="1472" y2="464"/>
+<line x1="1312" y1="376" x2="1280" y2="520"/>
+<line x1="1120" y1="408" x2="1088" y2="576"/>
+<line x1="1120" y1="408" x2="1280" y2="520"/>
+<line x1="1088" y1="576" x2="1392" y2="632"/>
+<line x1="1088" y1="576" x2="1200" y2="712"/>
+<line x1="1280" y1="520" x2="1472" y2="464"/>
+<line x1="1280" y1="520" x2="1392" y2="632"/>
+<line x1="1472" y1="464" x2="1392" y2="632"/>
+<line x1="1392" y1="632" x2="1200" y2="712"/>
+<line x1="1200" y1="712" x2="1408" y2="808"/>
+<line x1="1200" y1="712" x2="1072" y2="824"/>
+<line x1="1408" y1="808" x2="1072" y2="824"/>
+</g>
+<g><circle cx="800" cy="480" r="37" fill="#f6c453" stroke="#152832" stroke-width="5"/>
+<text x="800" y="490" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">●</text>
+<text x="800" y="540" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Technology</text>
+<text x="800" y="558" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Commons Hub</text>
+</g>
+<g><circle cx="800" cy="368" r="27" fill="#f6c453" stroke="#152832" stroke-width="5"/>
+<text x="800" y="378" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">!</text>
+<text x="800" y="418" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Safety Gate</text>
+</g>
+<g><circle cx="800" cy="232" r="37" fill="#f6c453" stroke="#152832" stroke-width="5"/>
+<text x="800" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">↗</text>
+<text x="800" y="292" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Mission Control</text>
+</g>
+<g><circle cx="800" cy="600" r="27" fill="#f6c453" stroke="#152832" stroke-width="5"/>
+<text x="800" y="610" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">?</text>
+<text x="800" y="650" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Help and Search</text>
+</g>
+<g><circle cx="800" cy="752" r="27" fill="#f6c453" stroke="#152832" stroke-width="5"/>
+<text x="800" y="762" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">★</text>
+<text x="800" y="802" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Portfolio Archive</text>
+</g>
+<g><circle cx="640" cy="480" r="37" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="640" y="490" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">↗</text>
+<text x="640" y="540" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Circuit and</text>
+<text x="640" y="558" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Computing Realms</text>
+</g>
+<g><circle cx="496" cy="240" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="496" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="496" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Measurement Meadow</text>
+</g>
+<g><circle cx="288" cy="232" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="288" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="288" y="282" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Ohm&#x27;s Law Outpost</text>
+</g>
+<g><circle cx="128" cy="360" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="128" y="370" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="128" y="410" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Kirchhoff Canyons</text>
+</g>
+<g><circle cx="448" cy="376" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="448" y="386" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="448" y="426" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Breadboard Bay</text>
+</g>
+<g><circle cx="224" cy="464" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="224" y="474" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="224" y="514" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Series-Parallel Pass</text>
+</g>
+<g><circle cx="272" cy="568" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="272" y="578" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="272" y="618" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Component Caverns</text>
+</g>
+<g><circle cx="464" cy="576" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="464" y="586" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="464" y="626" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Capacitor Coast</text>
+</g>
+<g><circle cx="544" cy="704" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="544" y="714" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="544" y="754" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Linux Terminal Tower</text>
+</g>
+<g><circle cx="336" cy="704" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="336" y="714" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="336" y="754" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Python Plains</text>
+</g>
+<g><circle cx="128" cy="680" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="128" y="690" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="128" y="730" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">BeagleBone Bridge</text>
+</g>
+<g><circle cx="240" cy="808" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="240" y="818" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="240" y="858" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Project Portals</text>
+</g>
+<g><circle cx="528" cy="824" r="27" fill="#6ed6e8" stroke="#152832" stroke-width="5"/>
+<text x="528" y="834" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">★</text>
+<text x="528" y="874" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">TEJ Portfolio Dock</text>
+</g>
+<g><circle cx="960" cy="480" r="37" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="960" y="490" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">↗</text>
+<text x="960" y="540" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Fabrication Frontier</text>
+</g>
+<g><circle cx="1088" cy="240" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1088" y="250" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="1088" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Design Process Plaza</text>
+</g>
+<g><circle cx="1280" cy="184" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1280" y="194" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="1280" y="234" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Sketching Slopes</text>
+</g>
+<g><circle cx="1456" cy="272" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1456" y="282" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="1456" y="322" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Digital</text>
+<text x="1456" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Design District</text>
+</g>
+<g><circle cx="1312" cy="376" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1312" y="386" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="1312" y="426" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">CAD Citadel</text>
+</g>
+<g><circle cx="1120" cy="408" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1120" y="418" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="1120" y="458" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Materials Forest</text>
+</g>
+<g><circle cx="1088" cy="576" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1088" y="586" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">!</text>
+<text x="1088" y="626" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Hand Tool Harbour</text>
+</g>
+<g><circle cx="1280" cy="520" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1280" y="530" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="1280" y="570" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Laser Labyrinth</text>
+</g>
+<g><circle cx="1472" cy="464" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1472" y="474" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="1472" y="514" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">3D Print Peaks</text>
+</g>
+<g><circle cx="1392" cy="632" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1392" y="642" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="1392" y="682" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Prototype Yard</text>
+</g>
+<g><circle cx="1200" cy="712" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1200" y="722" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">•</text>
+<text x="1200" y="762" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Testing Works</text>
+</g>
+<g><circle cx="1408" cy="808" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1408" y="818" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">◆</text>
+<text x="1408" y="858" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">Fabrication Missions</text>
+</g>
+<g><circle cx="1072" cy="824" r="27" fill="#f39b65" stroke="#152832" stroke-width="5"/>
+<text x="1072" y="834" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="900" fill="#152832">★</text>
+<text x="1072" y="874" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="750" fill="#152832">TAS Portfolio Dock</text>
+</g>
+<g transform="translate(38 940)" font-family="system-ui,sans-serif" font-size="18" fill="#152832">
+<text font-weight="800">Legend:</text><text x="88">● hub</text><text x="180">↗ portal</text>
+<text x="300">! safety</text><text x="405">◆ project</text><text x="520">★ portfolio</text>
+<text x="650">A visited stop records exploration, not mastery.</text></g>
+</svg>
