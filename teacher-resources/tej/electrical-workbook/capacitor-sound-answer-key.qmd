@@ -1,0 +1,112 @@
+---
+title: "Can a Capacitor Sound a Horn? — Answer Key"
+format:
+  html:
+    embed-resources: true
+    html-math-method: katex
+    toc: false
+    page-layout: full
+    css: print.css
+execute: {enabled: false}
+---
+
+::: {.teacher-key}
+The buzzer and horn currents are stated modelling assumptions. Confirm the
+actual device voltage, current, polarity, acoustic risk, and supply/fuse ratings
+before a demonstration. The LED investigation is the required student build.
+:::
+
+## 1. Discharge-loop KVL
+
+Using the indicated voltage polarities:
+
+$$
++V_C-V_{R1}-V_{LED}=0
+$$
+
+or $V_C=V_{R1}+V_{LED}$. As $V_C$ falls, LED current falls and the simple fixed
+forward-voltage model becomes less accurate.
+
+## 2. Node-A KCL
+
+While S1 is closed:
+
+$$
+I_{RC}=I_C+I_{LED}
+$$
+
+For the optional buzzer branch, replace $I_{LED}$ with the appropriate verified
+load current. Current directions must be defined consistently.
+
+## 3. Stored energy
+
+$1000\ \mu\mathrm{F}=0.001000$ F.
+
+$$
+E_C=\frac{1}{2}CV^2=\frac{1}{2}(0.001000)(5.0)^2=0.0125\ \mathrm{J}
+$$
+
+## 4. Buzzer support estimate
+
+$$
+\Delta t\approx\frac{C\Delta V}{I}
+=\frac{(0.001000)(5.0-3.0)}{0.012}=0.167\ \mathrm{s}
+$$
+
+The real duration may differ because buzzer current is not constant, the buzzer
+has a minimum operating voltage, the capacitor has tolerance and internal
+resistance, and circuit resistance causes additional voltage loss.
+
+## 5. Measured KVL check
+
+Answers depend on student measurements. Accept a clearly labelled check of
+$V_C-(V_{R1}+V_{LED})$ with meter resolution and changing capacitor voltage
+considered. Measurements taken at widely separated times should not be treated
+as simultaneous.
+
+## 6. Automotive capacitance estimate
+
+$$
+C\approx\frac{I\Delta t}{\Delta V}
+=\frac{(5.0)(0.250)}{4.0}=0.3125\ \mathrm{F}
+$$
+
+$$
+0.3125\ \mathrm{F}=312{,}500\ \mu\mathrm{F}
+$$
+
+This is an idealized lower-order estimate, not a recommended capacitor value.
+
+## 7. Energy and comparison
+
+$$
+E=\frac{1}{2}(0.3125)(12.0)^2=22.5\ \mathrm{J}
+$$
+
+Capacitance ratio:
+
+$$
+\frac{312{,}500\ \mu\mathrm{F}}{1000\ \mu\mathrm{F}}=312.5
+$$
+
+The estimate requires over 300 times the student capacitor's capacitance.
+Actual performance also depends on equivalent series resistance, surge current,
+horn behaviour, temperature, wiring, and the horn's minimum useful voltage.
+
+## 8. Timing versus energy
+
+The RC network produces a changing low-energy control voltage. A threshold or
+switching driver converts that voltage into a definite command for the relay
+coil. The relay provides electrical separation between its coil and contacts.
+The fused 12 V source, load wiring, contacts, and return carry horn current. The
+timing capacitor does not carry or supply the horn's load current.
+
+## Calculation checks
+
+| Quantity | Check |
+|---|---:|
+| 1000 µF energy at 5 V | 0.0125 J |
+| ideal 12 mA buzzer estimate, 5 V to 3 V | 0.167 s |
+| horn estimate | 0.3125 F = 312,500 µF |
+| estimated energy at 12 V | 22.5 J |
+| capacitance ratio | 312.5:1 |

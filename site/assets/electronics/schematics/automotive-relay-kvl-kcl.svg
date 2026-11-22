@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 940" role="img" aria-labelledby="title desc">
+  <title id="title">Automotive relay control and switched-load investigation</title>
+  <desc id="desc">A 12 volt control loop energizes relay K1 through fuse F2 and switch S1. A separate fused 12 volt load circuit connects terminal 30 to lamp L1 through normally closed terminal 87a when the coil is off, or to parallel lamp L2 and horn H1 through normally open terminal 87 when the coil is on.</desc>
+  <defs>
+    <style>
+      .wire{fill:none;stroke:#263238;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+      .pos{fill:none;stroke:#a4202a;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .ctrl{fill:none;stroke:#176b87;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:14 9}
+      .box{fill:#fff;stroke:#263238;stroke-width:4}
+      .panel{fill:#f7fafb;stroke:#90a4ae;stroke-width:3}
+      .label{font:700 30px system-ui,sans-serif;fill:#172126}
+      .body{font:25px system-ui,sans-serif;fill:#172126}
+      .small{font:22px system-ui,sans-serif;fill:#37474f}
+      .term{font:700 24px ui-monospace,monospace;fill:#172126}
+      .tp{fill:#fff;stroke:#5c3977;stroke-width:4}
+      .node{fill:#263238}
+      .ground{stroke:#263238;stroke-width:5}
+      .arrow-red{stroke:#a4202a;stroke-width:5;fill:none;marker-end:url(#arrowRed)}
+      .arrow-blue{stroke:#176b87;stroke-width:5;fill:none;stroke-dasharray:12 8;marker-end:url(#arrowBlue)}
+    </style>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#a4202a"/></marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#176b87"/></marker>
+  </defs>
+
+  <rect class="panel" x="35" y="35" width="1530" height="330" rx="20"/>
+  <text class="label" x="70" y="85">CONTROL CIRCUIT · K1 coil</text>
+  <text class="small" x="70" y="120">State A: S1 open, coil off · State B: S1 closed, coil on</text>
+
+  <circle class="box" cx="115" cy="225" r="48"/>
+  <text class="label" x="85" y="235">12 V</text>
+  <text class="body" x="75" y="305">V<tspan baseline-shift="sub" font-size="18">S</tspan></text>
+  <path class="ctrl" d="M163 225H245"/>
+  <rect class="box" x="245" y="190" width="135" height="70" rx="8"/>
+  <text class="body" x="277" y="220">F2</text><text class="small" x="267" y="250">1 A</text>
+  <path class="ctrl" d="M380 225H495"/>
+  <circle class="node" cx="495" cy="225" r="8"/>
+  <circle class="node" cx="610" cy="225" r="8"/>
+  <path class="wire" d="M495 225L592 175"/>
+  <text class="body" x="508" y="285">S1</text>
+  <path class="ctrl" d="M610 225H755"/>
+  <circle class="tp" cx="755" cy="225" r="13"/><text class="term" x="724" y="185">86</text><text class="small" x="720" y="280">TP1</text>
+  <rect class="box" x="770" y="165" width="260" height="120" rx="18"/>
+  <path class="wire" d="M800 225c18-50 42 50 60 0s42 50 60 0s42 50 60 0"/>
+  <text class="body" x="815" y="322">K1 coil · 80 Ω</text>
+  <circle class="tp" cx="1045" cy="225" r="13"/><text class="term" x="1027" y="185">85</text><text class="small" x="1010" y="280">TP2</text>
+  <path class="ctrl" d="M1045 225H1325V300"/>
+  <path class="ground" d="M1285 300H1365M1298 318H1352M1312 336H1338"/>
+  <path class="arrow-blue" d="M655 145H930"/>
+  <text class="body" x="710" y="135">I<tspan baseline-shift="sub" font-size="18">COIL</tspan></text>
+  <text class="small" x="1140" y="195">Measure V<tspan baseline-shift="sub" font-size="16">COIL</tspan> between TP1 and TP2</text>
+
+  <rect class="panel" x="35" y="395" width="1530" height="510" rx="20"/>
+  <text class="label" x="70" y="445">SWITCHED LOAD CIRCUIT · K1 contacts</text>
+  <text class="small" x="70" y="480">Ideal wires, fuse and closed contacts have 0 V drop. Lamps use their 12 V rated power.</text>
+
+  <circle class="box" cx="115" cy="630" r="48"/>
+  <text class="label" x="85" y="640">12 V</text>
+  <path class="pos" d="M163 630H245"/>
+  <rect class="box" x="245" y="595" width="135" height="70" rx="8"/>
+  <text class="body" x="277" y="625">F1</text><text class="small" x="260" y="655">15 A</text>
+  <path class="pos" d="M380 630H505"/>
+  <circle class="tp" cx="505" cy="630" r="13"/><text class="small" x="470" y="690">TP3</text>
+
+  <rect x="535" y="515" width="365" height="280" rx="18" fill="#fff" stroke="#607d8b" stroke-width="4" stroke-dasharray="12 8"/>
+  <text class="body" x="555" y="552">K1 SPDT contacts</text>
+  <circle class="node" cx="600" cy="630" r="10"/><text class="term" x="565" y="675">30</text>
+  <path class="wire" d="M505 630H600"/>
+  <circle class="node" cx="820" cy="570" r="10"/><text class="term" x="837" y="579">87a</text>
+  <circle class="node" cx="820" cy="710" r="10"/><text class="term" x="837" y="719">87</text>
+  <path class="wire" d="M600 630L792 576"/>
+  <path class="wire" d="M790 690L820 710"/>
+  <text class="small" x="612" y="610">de-energized</text>
+  <text class="small" x="650" y="752">energized</text>
+
+  <path class="pos" d="M820 570H1000V550H1060"/>
+  <circle class="tp" cx="920" cy="570" r="13"/><text class="small" x="890" y="535">TP4</text>
+  <circle class="box" cx="1120" cy="550" r="60"/>
+  <path class="wire" d="M1080 510L1160 590M1160 510L1080 590"/>
+  <text class="body" x="1200" y="545">L1</text><text class="small" x="1200" y="575">21 W @ 12 V</text>
+  <path class="wire" d="M1180 550H1440V835"/>
+
+  <path class="pos" d="M820 710H970"/>
+  <circle class="tp" cx="920" cy="710" r="13"/><text class="small" x="890" y="680">TP5</text>
+  <circle class="node" cx="970" cy="710" r="10"/>
+  <path class="pos" d="M970 710V680H1065"/>
+  <circle class="box" cx="1120" cy="680" r="55"/>
+  <path class="wire" d="M1084 644L1156 716M1156 644L1084 716"/>
+  <text class="body" x="1195" y="675">L2</text><text class="small" x="1195" y="704">21 W @ 12 V</text>
+  <path class="wire" d="M1175 680H1325V835"/>
+
+  <path class="pos" d="M970 710V775H1220"/>
+  <rect class="box" x="1220" y="725" width="230" height="100" rx="18"/>
+  <text class="body" x="1300" y="765">H1</text>
+  <text class="small" x="1248" y="800">automotive horn</text>
+  <path class="wire" d="M1450 775V835"/>
+
+  <path class="wire" d="M85 835H1460"/>
+  <path class="wire" d="M115 678V835M1325 835M1440 835M1450 835"/>
+  <path class="ground" d="M720 835V865M680 865H760M695 882H745M710 899H730"/>
+  <text class="small" x="770" y="878">0 V return</text>
+
+  <path class="arrow-red" d="M395 555H495"/>
+  <text class="body" x="390" y="535">I<tspan baseline-shift="sub" font-size="18">30</tspan></text>
+  <rect x="410" y="720" width="300" height="72" rx="12" fill="#fff8e6" stroke="#9b6a00" stroke-width="3"/>
+  <text class="body" x="435" y="750">State B measurement:</text>
+  <text class="label" x="435" y="783">I<tspan baseline-shift="sub" font-size="21">30</tspan> = 6.50 A</text>
+  <path class="arrow-red" d="M995 650H1060"/><text class="small" x="980" y="635">I<tspan baseline-shift="sub" font-size="15">L2</tspan></text>
+  <path class="arrow-red" d="M1050 775H1190"/><text class="small" x="1030" y="760">I<tspan baseline-shift="sub" font-size="15">H</tspan></text>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 1040" role="img" aria-labelledby="title desc">
+  <title id="title">BeagleBone low-side MOSFET driver for a 12 volt automotive relay</title>
+  <desc id="desc">A verified 3.3 volt BeagleBone GPIO drives the gate of a logic-level N-channel MOSFET through a resistor. The MOSFET switches the separately fused 12 volt relay coil, protected by a flyback diode. Separate relay contacts switch a fused 12 volt lamp or horn load. The shared-ground version is shown, with a note explaining that a truly opto-isolated version must not share grounds.</desc>
+  <defs>
+    <style>
+      .wire{fill:none;stroke:#263238;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.pos{fill:none;stroke:#a4202a;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.signal{fill:none;stroke:#176b87;stroke-width:6;stroke-dasharray:14 9;stroke-linecap:round}.coilpath{fill:none;stroke:#5c3977;stroke-width:6;stroke-dasharray:4 9;stroke-linecap:round}.box{fill:#fff;stroke:#263238;stroke-width:4}.panel{fill:#f7fafb;stroke:#90a4ae;stroke-width:3}.note{fill:#fff8e6;stroke:#9b6a00;stroke-width:3}.label{font:700 31px system-ui,sans-serif;fill:#172126}.body{font:25px system-ui,sans-serif;fill:#172126}.small{font:21px system-ui,sans-serif;fill:#37474f}.term{font:700 24px ui-monospace,monospace;fill:#172126}.node{fill:#263238}.mech{stroke:#607d8b;stroke-width:4;stroke-dasharray:12 10}.arrow-red{stroke:#a4202a;stroke-width:5;fill:none;marker-end:url(#ar)}.arrow-blue{stroke:#176b87;stroke-width:5;fill:none;stroke-dasharray:12 8;marker-end:url(#ab)}.arrow-purple{stroke:#5c3977;stroke-width:5;fill:none;stroke-dasharray:4 9;marker-end:url(#ap)}
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#a4202a"/></marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#176b87"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#5c3977"/></marker>
+  </defs>
+
+  <rect class="panel" x="35" y="35" width="1630" height="600" rx="20"/>
+  <text class="label" x="70" y="85">CONTROL SIDE · 3.3 V GPIO switches a separately powered 12 V coil</text>
+
+  <rect x="70" y="145" width="315" height="300" rx="22" fill="#eef6f8" stroke="#176b87" stroke-width="5"/>
+  <text class="label" x="110" y="200">BeagleBone</text>
+  <text class="body" x="110" y="245">verified 3.3 V GPIO</text>
+  <text class="small" x="110" y="280">Choose the exact header pin</text>
+  <text class="small" x="110" y="310">after checking board/image pinmux.</text>
+  <circle cx="355" cy="350" r="11" fill="#176b87"/><text class="term" x="185" y="360">GPIO OUT</text>
+  <circle cx="355" cy="410" r="11" fill="#263238"/><text class="term" x="235" y="420">GND</text>
+
+  <path class="signal" d="M355 350H440"/>
+  <rect class="box" x="440" y="315" width="145" height="70" rx="8"/>
+  <text class="body" x="470" y="345">R1</text><text class="small" x="460" y="375">100 Ω</text>
+  <path class="signal" d="M585 350H705"/>
+  <circle class="node" cx="650" cy="350" r="10"/>
+  <rect class="box" x="590" y="430" width="120" height="70" rx="8"/>
+  <text class="body" x="617" y="460">R2</text><text class="small" x="608" y="490">100 kΩ</text>
+  <path class="wire" d="M650 350V430M650 500V545"/>
+
+  <text class="label" x="730" y="330">Q1</text>
+  <text class="small" x="720" y="365">3.3 V logic-level</text>
+  <text class="small" x="720" y="394">N-MOSFET</text>
+  <path class="wire" d="M705 350H760M790 305V430M815 320V415M815 320H875M815 415H875"/>
+  <path class="wire" d="M875 415V545"/>
+  <text class="term" x="875" y="300">D</text><text class="term" x="875" y="455">S</text><text class="term" x="740" y="340">G</text>
+
+  <path class="pos" d="M540 175H650"/>
+  <rect class="box" x="650" y="140" width="145" height="70" rx="8"/>
+  <text class="body" x="682" y="170">F2</text><text class="small" x="660" y="200">size to coil*</text>
+  <path class="coilpath" d="M795 175H930"/>
+  <circle class="node" cx="930" cy="175" r="10"/><text class="term" x="905" y="135">86</text>
+  <rect class="box" x="945" y="115" width="260" height="120" rx="18"/>
+  <path class="wire" d="M975 175c18-50 42 50 60 0s42 50 60 0s42 50 60 0"/>
+  <text class="body" x="985" y="270">K1 coil · 12 V</text>
+  <circle class="node" cx="1220" cy="175" r="10"/><text class="term" x="1195" y="135">85</text>
+  <path class="coilpath" d="M1220 175H1295V305H875"/>
+
+  <path class="wire" d="M930 175V75H1220V175"/>
+  <path d="M1040 75H1110" stroke="#263238" stroke-width="5"/>
+  <path d="M1110 45V105" stroke="#263238" stroke-width="5"/>
+  <path d="M1110 45L1165 75L1110 105Z" fill="#fff" stroke="#263238" stroke-width="4"/>
+  <text class="body" x="1015" y="55">D1 flyback diode</text>
+  <text class="small" x="1130" y="125">cathode at 86</text>
+
+  <path class="wire" d="M355 410V545H1385"/>
+  <path class="wire" d="M540 225V545"/>
+  <path class="wire" d="M650 545M875 545"/>
+  <path class="wire" d="M1000 545V575M960 575H1040M975 592H1025M990 609H1010"/>
+  <text class="small" x="1070" y="590">shared 0 V return</text>
+  <circle class="box" cx="540" cy="175" r="48"/><text class="body" x="505" y="185">12 V</text>
+  <path class="arrow-blue" d="M410 280H610"/><text class="body" x="430" y="265">GPIO signal</text>
+  <path class="arrow-purple" d="M820 245H1115"/><text class="body" x="885" y="230">I<tspan baseline-shift="sub" font-size="18">COIL</tspan></text>
+
+  <line class="mech" x1="1075" y1="290" x2="1075" y2="690"/>
+  <rect x="880" y="455" width="385" height="58" rx="10" fill="#fff" stroke="#607d8b" stroke-width="3"/>
+  <text class="small" x="905" y="492">mechanical link only · no electrical connection</text>
+
+  <rect class="panel" x="35" y="670" width="1630" height="335" rx="20"/>
+  <text class="label" x="70" y="720">LOAD SIDE · contacts switch external load current</text>
+  <circle class="box" cx="120" cy="850" r="48"/><text class="body" x="85" y="860">12 V</text>
+  <path class="pos" d="M168 850H255"/>
+  <rect class="box" x="255" y="815" width="150" height="70" rx="8"/>
+  <text class="body" x="290" y="845">F1</text><text class="small" x="275" y="875">size to load</text>
+  <path class="pos" d="M405 850H565"/>
+  <circle class="node" cx="565" cy="850" r="10"/><text class="term" x="535" y="895">30</text>
+  <rect x="530" y="745" width="380" height="220" rx="18" fill="#fff" stroke="#607d8b" stroke-width="4" stroke-dasharray="12 8"/>
+  <circle class="node" cx="825" cy="805" r="10"/><text class="term" x="842" y="815">87a</text>
+  <circle class="node" cx="825" cy="900" r="10"/><text class="term" x="842" y="910">87</text>
+  <path class="wire" d="M565 850L800 812M795 880L825 900"/>
+  <path class="pos" d="M825 900H1035"/>
+  <rect class="box" x="1035" y="805" width="285" height="145" rx="18"/>
+  <text class="label" x="1090" y="855">L1 / H1</text>
+  <text class="body" x="1065" y="895">lamp or horn load</text>
+  <text class="small" x="1070" y="930">teacher-approved rating</text>
+  <path class="wire" d="M1320 875H1490V970H120"/>
+  <path class="wire" d="M120 898V970"/>
+  <path class="arrow-red" d="M430 785H760"/><text class="body" x="505" y="770">I<tspan baseline-shift="sub" font-size="18">LOAD</tspan> · solid path</text>
+
+  <rect class="note" x="1325" y="95" width="305" height="420" rx="16"/>
+  <text class="label" x="1355" y="145">Isolation note</text>
+  <text class="body" x="1355" y="190">This drawing uses a</text>
+  <text class="body" x="1355" y="225">shared ground.</text>
+  <text class="small" x="1355" y="275">A truly opto-isolated</text>
+  <text class="small" x="1355" y="305">interface uses a rated</text>
+  <text class="small" x="1355" y="335">isolator/module and an</text>
+  <text class="small" x="1355" y="365">isolated coil supply.</text>
+  <text class="small" x="1355" y="415">Do not join the grounds</text>
+  <text class="small" x="1355" y="445">and still call it isolated.</text>
+  <text class="small" x="1355" y="490">*Verify every rating.</text>
+</svg>

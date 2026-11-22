@@ -1,0 +1,69 @@
+:root {
+  --ink: #172126;
+  --muted: #42545c;
+  --line: #81939b;
+  --accent: #176b87;
+  --pale: #eef6f8;
+  --warning: #fff4dd;
+}
+
+html { font-size: 11.5pt; }
+body {
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.35;
+  max-width: none;
+  margin: 0;
+}
+
+main.content { max-width: none; }
+h1 { font-size: 24pt; margin: 0 0 0.2in; }
+h2 { font-size: 17pt; margin-top: 0.25in; border-bottom: 2px solid var(--accent); padding-bottom: 0.05in; }
+h3 { font-size: 13pt; margin-top: 0.18in; }
+p, li, td, th { font-size: 11.5pt; }
+table { width: 100%; border-collapse: collapse; margin: 0.12in 0 0.18in; }
+th, td { border: 1px solid #64757d; padding: 0.07in; vertical-align: top; }
+th { background: var(--pale); font-weight: 700; }
+img { display: block; max-width: 100%; max-height: 7.1in; margin: 0.1in auto; }
+figcaption { color: var(--muted); font-size: 10.5pt; text-align: center; }
+.student-fields { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 0.18in; margin: 0.12in 0 0.2in; }
+.student-fields > div { border-bottom: 1px solid var(--ink); min-height: 0.28in; }
+.answer-line { border-bottom: 1px solid #607d8b; min-height: 0.28in; margin: 0.05in 0; }
+.answer-box { border: 1px solid #607d8b; min-height: 0.75in; margin: 0.08in 0 0.16in; }
+.answer-box.tall { min-height: 1.35in; }
+.equation-box, .safety-box, .given-box {
+  border: 2px solid var(--accent);
+  border-radius: 0.08in;
+  padding: 0.12in 0.15in;
+  margin: 0.12in 0;
+  break-inside: avoid;
+}
+.safety-box { border-color: #9b6a00; background: var(--warning); }
+.given-box { background: var(--pale); }
+.question { break-inside: avoid; margin: 0.12in 0 0.18in; }
+.question > p:first-child { font-weight: 700; }
+.page-break { break-before: page; page-break-before: always; }
+.keep-together { break-inside: avoid; }
+.fault-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.18in; }
+.fault-card { border: 2px solid #42545c; border-radius: 0.08in; padding: 0.14in; min-height: 4.35in; break-inside: avoid; }
+.fault-card h2 { border: 0; margin-top: 0; font-size: 15pt; }
+.fault-card h3 { font-size: 11.5pt; margin: 0.1in 0 0.03in; }
+.compact td, .compact th { padding: 0.045in; font-size: 10.5pt; }
+.teacher-key { border-left: 0.08in solid #5c3977; padding-left: 0.15in; }
+.assumption { color: var(--muted); font-style: italic; }
+.source-note {
+  margin-top: 0.2in;
+  padding-top: 0.08in;
+  border-top: 1px solid #65747c;
+  color: #37474f;
+  font-size: 9pt;
+  line-height: 1.25;
+}
+
+@page { size: Letter; margin: 0.5in; }
+
+@media print {
+  nav, .quarto-title-banner, #quarto-header, .page-navigation, .nav-footer { display: none !important; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: var(--ink); text-decoration: none; }
+}

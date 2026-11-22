@@ -1,0 +1,177 @@
+---
+title: "Automotive Relay Investigation — Answer Key"
+subtitle: "Ideal steady-state model"
+format:
+  html:
+    embed-resources: true
+    html-math-method: katex
+    toc: false
+    page-layout: full
+    css: print.css
+execute: {enabled: false}
+---
+
+::: {.teacher-key}
+This key checks the original classroom model, not a particular physical relay or
+horn. Verify actual coil resistance, contact layout, lamp ratings, horn current,
+fuse size, conductor size, and supply limits before construction.
+:::
+
+## Relay-state table
+
+| Condition | Coil energized? | Connected contact | Loads that operate |
+|---|---|---|---|
+| State A: S1 open | No | 30 to 87a | L1 |
+| State B: S1 closed | Yes | 30 to 87 | L2 and H1 |
+
+## 1. State A path
+
+Positive 12 V source → F1 → terminal 30 → closed 87a contact → L1 → 0 V
+return → source. Terminal 87 is open, so the L2/horn branch has no source path.
+
+## 2. State B paths
+
+Coil: positive 12 V control branch → F2 → S1 → terminal 86 → K1 coil →
+terminal 85 → return.
+
+Load branches: positive 12 V load branch → F1 → terminal 30 → terminal 87 →
+branch node. One branch continues through L2 to return; the other continues
+through H1 to return. Terminal 87a is open, so L1 is off.
+
+## 3. Coil current and power
+
+$$
+I_{COIL}=\frac{V}{R}=\frac{12.0\ \mathrm{V}}{80.0\ \Omega}=0.150\ \mathrm{A}
+$$
+
+$$
+P_{COIL}=VI=(12.0)(0.150)=1.80\ \mathrm{W}
+$$
+
+## 4. Coil-loop KVL
+
+Using ideal F2 and S1:
+
+$$
++12.0-V_{F2}-V_{S1}-V_{COIL}=0
+$$
+
+Therefore $V_{COIL}=12.0$ V from TP1 to TP2, and each ideal closed fuse,
+switch, or wire has 0 V drop.
+
+<div class="page-break"></div>
+
+## 5. Lamp current
+
+For either lamp at its rating:
+
+$$
+I_L=\frac{P}{V}=\frac{21.0\ \mathrm{W}}{12.0\ \mathrm{V}}=1.75\ \mathrm{A}
+$$
+
+## 6. State A current and KVL
+
+Only L1 is energized, so $I_{30}=I_{L1}=1.75$ A.
+
+$$
++12.0-V_{F1}-V_{30\rightarrow87a}-V_{L1}=0
+$$
+
+With ideal protection and contacts, $V_{L1}=12.0$ V.
+
+## 7. State B KCL and horn power
+
+At the node after terminal 87:
+
+$$
+I_{30}=I_{L2}+I_H
+$$
+
+$$
+I_H=6.50-1.75=4.75\ \mathrm{A}
+$$
+
+The parallel horn has 12.0 V across it:
+
+$$
+P_H=VI=(12.0)(4.75)=57.0\ \mathrm{W}
+$$
+
+## 8. Total battery current and power
+
+If both fused branches use the same battery:
+
+$$
+I_{BAT}=I_{30}+I_{COIL}=6.50+0.150=6.65\ \mathrm{A}
+$$
+
+$$
+P_{BAT}=VI=(12.0)(6.65)=79.8\ \mathrm{W}
+$$
+
+The load branch accounts for 78.0 W and the coil for 1.80 W.
+
+## 9. Meter placement
+
+Voltage across L2: red probe at the L2 positive terminal supplied from 87; black
+probe at the L2 return terminal. A DC clamp for horn current surrounds the horn
+supply conductor or horn return conductor alone—not both.
+
+<div class="page-break"></div>
+
+## 10. Poor-ground calculation
+
+Modelled hot lamp resistance:
+
+$$
+R_{L1}=\frac{V^2}{P}=\frac{(12.0)^2}{21.0}=6.857\ \Omega\approx6.86\ \Omega
+$$
+
+With the 1.00 Ω fault:
+
+$$
+R_T=6.857+1.00=7.857\ \Omega
+$$
+
+$$
+I=\frac{12.0}{7.857}=1.527\ \mathrm{A}\approx1.53\ \mathrm{A}
+$$
+
+$$
+V_{L1}=IR=(1.527)(6.857)=10.47\ \mathrm{V}
+$$
+
+$$
+V_{FAULT}=I(1.00)=1.527\ \mathrm{V}\approx1.53\ \mathrm{V}
+$$
+
+KVL check: $10.47+1.53=12.00$ V.
+
+## 11. Faulted lamp power
+
+$$
+P_{L1}=I^2R=(1.527)^2(6.857)=16.0\ \mathrm{W}
+$$
+
+This is below 21.0 W, so the model predicts a dimmer lamp. The 1.00 Ω fault
+dissipates approximately 2.33 W. Real lamp resistance is temperature-dependent,
+so a physical reading will not exactly match this fixed-resistance model.
+
+## 12. Diagnostic conclusion
+
+A 1.53 V reading from lamp ground to battery negative while current flows shows
+excess voltage drop on the ground side. The supported fault region is the lamp
+ground connection, return conductor, connector, or chassis bond between the
+lamp and battery negative. Power off, isolate the source, and inspect/tighten the
+ground-side terminals and conductor before using resistance or continuity mode.
+
+## Independent agreement checks
+
+| Check | Result |
+|---|---:|
+| State B branch current | $1.75+4.75=6.50$ A |
+| State B power | $21.0+57.0=78.0$ W |
+| Source load power | $12.0\times6.50=78.0$ W |
+| Poor-ground KVL | $10.47+1.53=12.00$ V |
+| Poor-ground power | $16.0+2.33\approx18.33$ W |
+| Faulted source power | $12.0\times1.527\approx18.33$ W |

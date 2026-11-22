@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 620" role="img" aria-labelledby="title desc">
+  <title id="title">Correct automotive voltage and current measurement placement</title>
+  <desc id="desc">A voltmeter is connected in parallel across a lamp. A DC clamp surrounds only the lamp supply conductor. A warning shows that a meter in current mode must not be placed across the supply.</desc>
+  <defs>
+    <style>
+      .wire{fill:none;stroke:#263238;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.pos{stroke:#a4202a}.box{fill:#fff;stroke:#263238;stroke-width:4}.panel{fill:#f7fafb;stroke:#90a4ae;stroke-width:3}.label{font:700 30px system-ui,sans-serif;fill:#172126}.body{font:25px system-ui,sans-serif;fill:#172126}.small{font:21px system-ui,sans-serif;fill:#37474f}.ok{fill:#e8f5e9;stroke:#2e7d32;stroke-width:4}.bad{fill:#fff3e0;stroke:#b23c17;stroke-width:4}.meter{fill:#fff;stroke:#176b87;stroke-width:5}.dash{fill:none;stroke:#176b87;stroke-width:5;stroke-dasharray:12 8}
+    </style>
+  </defs>
+  <rect class="panel" x="30" y="30" width="930" height="560" rx="20"/>
+  <text class="label" x="65" y="80">Correct placement</text>
+  <circle class="box" cx="120" cy="280" r="52"/><text class="body" x="88" y="290">12 V</text>
+  <path class="wire pos" d="M172 280H420"/>
+  <circle class="box" cx="555" cy="280" r="75"/><path class="wire" d="M505 230L605 330M605 230L505 330"/>
+  <text class="body" x="520" y="390">LAMP</text>
+  <path class="wire" d="M630 280H810V480H120V332"/>
+  <ellipse class="dash" cx="340" cy="280" rx="55" ry="92"/>
+  <text class="body" x="245" y="185">DC clamp</text><text class="small" x="235" y="215">one conductor only</text>
+  <circle class="meter" cx="555" cy="505" r="52"/><text class="label" x="537" y="515">V</text>
+  <path class="dash" d="M515 465L495 340M595 465L615 340"/>
+  <text class="small" x="650" y="520">voltmeter in parallel</text>
+  <rect class="ok" x="70" y="95" width="115" height="50" rx="10"/><text class="body" x="92" y="130">PASS</text>
+
+  <rect class="panel" x="990" y="30" width="480" height="560" rx="20"/>
+  <text class="label" x="1025" y="80">Never do this</text>
+  <rect class="bad" x="1025" y="110" width="410" height="390" rx="16"/>
+  <circle class="box" cx="1120" cy="270" r="52"/><text class="body" x="1088" y="280">12 V</text>
+  <circle cx="1305" cy="270" r="58" fill="#fff" stroke="#b23c17" stroke-width="6"/><text class="label" x="1285" y="281">A</text>
+  <path d="M1172 240H1248M1172 300H1248" stroke="#b23c17" stroke-width="7"/>
+  <path d="M1045 155L1415 455M1415 155L1045 455" stroke="#b23c17" stroke-width="16" opacity="0.82"/>
+  <text class="body" x="1050" y="550">Current mode across a source can create a short.</text>
+</svg>
