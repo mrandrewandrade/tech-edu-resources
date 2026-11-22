@@ -74,6 +74,8 @@ No physical header pin is approved merely because an online example used it. Con
 
 Write the table before writing hardware code. The state machine should be testable using keyboard or simulated inputs while the external circuit is disconnected.
 
+![Alarm state machine from DISARMED through ARMING, ARMED, ALARM, and SILENCED, including reset and safe-state paths.](../../../assets/tej-capstone/projects/sensor-alarm/diagrams/alarm-state-machine.svg){fig-alt="Five alarm states are connected by labelled arrows. Reset and disarm paths return to DISARMED. Invalid input or program exit requests the safe output state." width="100%"}
+
 ## Input circuit
 
 A switch input must not float. Use one teacher-approved pattern:
@@ -82,6 +84,10 @@ A switch input must not float. Use one teacher-approved pattern:
 - an external pull-down to ground with the switch to 3.3 V.
 
 Measure the open and closed input-node voltages before connecting the GPIO. Long wires and mechanical contacts may need software timing or a teacher-approved RC debounce network. Do not hide a wiring problem with a very long software delay.
+
+![Protected active-low switch input with a visible external pull-up, optional series protection, and voltage test points before the GPIO.](../../../assets/tej-capstone/projects/sensor-alarm/diagrams/alarm-door-input.svg){fig-alt="A ten kilohm example pull-up connects a switch input to 3.3 volts. The switch connects the input to ground. Test points appear before and after an optional series resistor." width="78%"}
+
+*Original classroom drawing based on the official [BeagleBone Black connector cautions](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html). Verify the exact classroom image and header pin.*
 
 ## Output circuit
 
@@ -94,6 +100,10 @@ $$
 Select an available higher standard value when it keeps the LED visible and reduces GPIO current. Verify the actual board limit; do not treat an example current as universal.
 
 Use a transistor, MOSFET, or approved driver for the buzzer whenever its current is not demonstrably within the GPIO limit. Inductive relay coils require flyback suppression. The relay contact side and external load supply are a separate energy path.
+
+![Separate alarm-output paths: a resistor-limited LED and a transistor-driven buzzer with a protected load supply.](../../../assets/tej-capstone/projects/sensor-alarm/diagrams/alarm-output-drivers.svg){fig-alt="One verified GPIO drives an LED through a current-limiting resistor. A second verified GPIO drives the base of an NPN transistor through a resistor; the transistor switches a buzzer from a protected load supply." width="100%"}
+
+*Original classroom topology based on the [onsemi 2N3903/2N3904 datasheet](https://www.onsemi.com/pub/Collateral/2N3903-D.PDF). Confirm the exact buzzer type before deciding whether flyback protection is required.*
 
 ## Event log
 
@@ -152,6 +162,10 @@ Software cleanup reduces risk but is not an emergency stop. A hardware fuse and 
 ### Relay-controlled lamp
 
 The GPIO drives the approved transistor/relay interface. The relay switches a separately fused lamp supply. Record coil-side and contact-side voltages separately.
+
+![A GPIO-controlled MOSFET drives a protected relay coil with a flyback diode; isolated relay contacts switch a separately fused load.](../../../assets/tej-capstone/projects/sensor-alarm/diagrams/alarm-relay-driver.svg){fig-alt="The control side shows a BeagleBone GPIO, gate resistor, pull-down, MOSFET, relay coil, and flyback diode. A dashed divider separates it from fused relay contacts that switch a lamp or shared teacher horn." width="100%"}
+
+*Original classroom topology based on TI's [guidance for driving inductive loads](https://www.ti.com/document-viewer/lit/html/SLVAF04). It is not a parts list: confirm every real rating and terminal number.*
 
 ### Shared automotive horn demonstration
 

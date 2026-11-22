@@ -58,13 +58,15 @@ Do not use a capacitor as the horn's energy source. A capacitor can time/filter 
 
 Never create a deliberate short or apply an overvoltage.
 
-## Requested diagrams for the shared diagram workstream
+## Available source-backed diagrams
 
 1. Active-low door input with external 3.3 V pull-up.
 2. LED and buzzer-driver output stages with test points.
 3. BeagleBone-to-transistor-to-relay coil with flyback diode.
 4. Separate fused contact-side lamp/horn circuit with 30/87 terminals.
 5. State diagram for DISARMED, ARMING, ARMED, ALARM, and SILENCED.
+
+Editable CircuitTikZ sources plus print PDFs and website SVGs are in `site/assets/tej-capstone/projects/sensor-alarm/diagrams/`.
 
 ## References
 

@@ -70,12 +70,14 @@ Do not publish these readings as expected student results. Classroom parts and l
 - Reversing the photoresistor position reverses the sensor-voltage response.
 - A logged value is not automatically calibrated illuminance.
 
-## Requested diagrams for the shared diagram workstream
+## Available source-backed diagrams
 
 1. Standalone LDR-divider/NPN/LED topology with labelled test points.
 2. Comparator route with LM393 open-collector output pulled to 3.3 V.
 3. BeagleBone ADC divider boundary diagram showing 1.8 V maximum and pre-connection meter check.
 4. Digital I²C sensor route with a warning against hidden 5 V pull-ups.
+
+Editable CircuitTikZ sources plus print PDFs and website SVGs are in `site/assets/tej-capstone/projects/sensor-alarm/diagrams/`.
 
 ## Authoritative references
 

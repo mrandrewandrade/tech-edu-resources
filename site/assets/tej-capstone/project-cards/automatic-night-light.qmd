@@ -12,6 +12,8 @@ format:
 
 Make a protected low-voltage light turn on in darkness and off in light. Prove the threshold, electrical safety, and repeatability with calculations and measurements.
 
+![Standalone night-light circuit model.](../projects/sensor-alarm/diagrams/night-light-standalone.svg){fig-alt="A photoresistor divider drives an NPN transistor and resistor-limited LED." width="100%"}
+
 | Minimum | Proficient | Extension |
 |---|---|---|
 | Standalone photoresistor/transistor LED circuit | BeagleBone reads an approved sensor and applies threshold plus hysteresis | Adjustable threshold and timestamped logging/graphing |

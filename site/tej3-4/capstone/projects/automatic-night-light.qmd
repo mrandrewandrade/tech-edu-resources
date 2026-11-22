@@ -56,6 +56,10 @@ Use a protected 5 V or teacher-selected supply. A light-dependent divider create
 
 The photoresistor may go on the upper or lower side of the divider. Decide which arrangement makes the sensor voltage rise in darkness, then prove it by calculation and measurement. Do not copy a diagram without tracing its nodes.
 
+![Standalone night-light model with a photoresistor divider, test point, base resistor, NPN transistor, and resistor-limited LED.](../../../assets/tej-capstone/projects/sensor-alarm/diagrams/night-light-standalone.svg){fig-alt="A photoresistor voltage divider feeds an NPN transistor through a base resistor. The transistor switches a resistor-limited LED. The sensing node is labelled TP1." width="100%"}
+
+*Original classroom drawing based on the [onsemi 2N3903/2N3904 datasheet](https://www.onsemi.com/pub/Collateral/2N3903-D.PDF). Confirm the actual transistor pinout and ratings.*
+
 ### Required calculations
 
 For a divider with $R_1$ above the sensing node and $R_2$ below it,
@@ -88,6 +92,10 @@ A single transistor threshold may change gradually and may chatter close to the 
 
 Choose one input route. Do not combine routes until each works independently.
 
+![Three safe input routes: documented 3.3 V digital sensor, open-collector comparator with a 3.3 V pull-up, or a calculated and measured ADC divider.](../../../assets/tej-capstone/projects/sensor-alarm/diagrams/night-light-safe-input-options.svg){fig-alt="Three separate sensor routes lead to verified BeagleBone inputs. The diagram warns that GPIO uses 3.3 volt logic and the ADC has a 1.8 volt maximum." width="100%"}
+
+*Original classroom overview based on the official [BeagleBone Black connector documentation](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html), [Vishay VEML7700 datasheet](https://www.vishay.com/docs/84286/veml7700.pdf), and [TI LM393 documentation](https://www.ti.com/product/LM393).*
+
 ### Route 1: digital ambient-light sensor — preferred
 
 A verified 3.3 V-compatible I²C sensor avoids direct ADC scaling. For example, the VEML7700 manufacturer datasheet specifies a 2.5 V to 3.6 V supply and separate limits for its I²C pull-ups. A breakout board can add regulators or pull-ups, so inspect the **module**, not only the sensor chip.
@@ -113,6 +121,8 @@ V_{ADC,max}=V_{in,max}\frac{R_{bottom}}{R_{top}+R_{bottom}}<1.8\text{ V}.
 $$
 
 Use a conservative margin below 1.8 V. Account for tolerances and wiring faults. The ADC reference ground is not interchangeable with an arbitrary external return; follow the board documentation and teacher-approved connection plan.
+
+![ADC divider approval sequence: calculate, build without the board, measure TP1, then connect only after approval.](../../../assets/tej-capstone/projects/sensor-alarm/diagrams/beaglebone-adc-divider-check.svg){fig-alt="A resistor divider feeds test point TP1. A multimeter measures TP1 while the BeagleBone is disconnected. A dashed arrow shows connection to the ADC only after approval." width="100%"}
 
 ## Threshold and hysteresis
 

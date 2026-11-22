@@ -12,6 +12,8 @@ format:
 
 Propose a different protected low-voltage project using at least one approved input, useful Linux/Python behaviour, and one safely interfaced output.
 
+![Three safe sensor-input patterns for a BeagleBone project.](../projects/sensor-alarm/diagrams/night-light-safe-input-options.svg){fig-alt="Documented digital sensor, comparator, and measured ADC-divider routes connect to verified BeagleBone input limits." width="100%"}
+
 ## Approval required before building
 
 - measurable success criteria;

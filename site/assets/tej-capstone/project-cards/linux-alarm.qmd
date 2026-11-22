@@ -12,6 +12,8 @@ format:
 
 Use Linux and Python to read a protected door/pushbutton input and control status outputs through a clear, testable state machine.
 
+![Linux alarm state machine.](../projects/sensor-alarm/diagrams/alarm-state-machine.svg){fig-alt="The alarm moves through DISARMED, ARMING, ARMED, ALARM, and SILENCED states with reset and safe-state paths." width="100%"}
+
 | Minimum | Proficient | Extension |
 |---|---|---|
 | Switch input changes a resistor-limited status LED | DISARMED, ARMING, ARMED, ALARM, and SILENCED states; buzzer and event log | Relay-controlled lamp, second sensor, or shared supervised horn demonstration |
