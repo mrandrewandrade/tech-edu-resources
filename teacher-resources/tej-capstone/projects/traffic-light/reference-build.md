@@ -91,13 +91,12 @@ Use shortened classroom timings. Automated tests should use an injected/fake clo
 | Stop/exception cleanup |  |  |
 | Accessible alternative |  |  |
 
-## Diagram requests for the integration stream
+## Included diagrams
 
-1. State diagram showing Startup Safe, Vehicle Go, Vehicle Warn, All Stop, Pedestrian Go, and Pedestrian Clear.
-2. Three-LED breadboard schematic with one resistor per LED and a defined button input.
-3. System boundary diagram separating pure Python logic, GPIO adapter, and hardware.
+- [Three-LED and button hardware reference](../../../../site/assets/tej-capstone/project-diagrams/traffic-light-hardware.svg)
+- [Pedestrian finite-state machine](../../../../site/assets/tej-capstone/project-diagrams/traffic-light-state-machine.svg)
 
-Do not assign actual header pins in the generic diagram. Use placeholders tied to the teacher-approved inventory record.
+The hardware drawing deliberately uses placeholder GPIO names tied to the teacher-approved inventory record. The state drawing must be revised if a group changes transition rules, adds states, or changes repeated-request behaviour.
 
 ## Reference
 

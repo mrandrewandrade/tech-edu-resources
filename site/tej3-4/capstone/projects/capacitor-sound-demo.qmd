@@ -18,6 +18,12 @@ Students use a resistor-limited LED or a teacher-approved low-current active buz
 
 ## The two models
 
+### Charge and discharge reference
+
+![A polarized capacitor shown in separate charge and discharge switch states.](../../../assets/tej-capstone/project-diagrams/capacitor-charge-discharge.svg){fig-alt="Left: a protected 5 volt source charges a polarized capacitor through R charge, with a bleeder across the capacitor. Right: the source is disconnected and the capacitor supplies a resistor-limited LED or low-current active buzzer, with the bleeder still present. Charge and discharge KVL equations appear below." width="100%"}
+
+The two switch states are drawn separately so no line crossing or switch ambiguity hides the active loop. The circuit is an original redraw based on the charge/discharge behaviour described in Panasonic's [Basic Knowledge of Capacitors](https://industrial.panasonic.com/ww/ds/ss/technical/b2). Values are not universal: calculate them for the approved source, capacitor, and small load.
+
 ### Model 1: the capacitor supplies the load
 
 The capacitor is charged, the source is disconnected, and the capacitor becomes the temporary source for an LED-resistor branch or low-current active buzzer. The stored energy is
@@ -33,6 +39,12 @@ Voltage falls as energy leaves, so the LED fades or the buzzer changes and stops
 The capacitor charges or discharges through a resistor and creates a changing control voltage. A transistor, comparator, timer, or computer input interprets that voltage. A separate supply powers the relay coil and horn or lamp.
 
 **The capacitor decides when; the supply provides the load energy.**
+
+### Teacher demonstration architecture
+
+![Capacitor timing path separated from a fused horn load path.](../../../assets/tej-capstone/project-diagrams/capacitor-horn-control.svg){fig-alt="The upper low-energy path sends a changing capacitor voltage through a threshold stage and protected relay driver to relay coil 85 and 86. A dashed mechanical link reaches the lower path, where a separate fused 12 volt supply powers a mounted horn or lamp through contacts 30 and 87. There is no direct electrical path from the timing capacitor to the horn." width="100%"}
+
+This is an architecture diagram, not a complete build schematic. The exact threshold device, hysteresis, driver, clamp, relay, fuse, wire, and horn ratings require teacher verification. Students may substitute the lamp and explain the same timing idea without producing sound.
 
 ## Choose a pathway
 
@@ -192,4 +204,10 @@ Record the meter loading, sampling interval, and exact stop condition as limitat
 ## Portfolio evidence
 
 Include the two energy-flow models, approved schematic, parts/rating table, stored-energy calculation, voltage-time data and graph, KVL/KCL checks, direct-horn estimate, one comparison test, safety decisions, and a conclusion that distinguishes energy storage from control.
+
+## References
+
+- [Panasonic: capacitor charge/discharge behaviour and circuit examples](https://industrial.panasonic.com/ww/ds/ss/technical/b2)
+- [Panasonic: polarized-capacitor precautions and capacitor types](https://industrial.panasonic.com/ww/ds/ss/technical/b3)
+- [Texas Instruments: relay-coil current decay and clamping](https://www.ti.com/document-viewer/lit/html/SLVAF04/GUID-6EC58385-6811-4984-B5CF-9CD8D8E7D24E)
 

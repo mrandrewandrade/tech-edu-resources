@@ -32,6 +32,12 @@ The common five-terminal changeover arrangement normally uses these functional n
 
 A four-terminal normally open relay may not have 87a. A relay with an internal diode is polarity-sensitive at 85 and 86. A relay with an internal resistor behaves differently. The case diagram and exact datasheet decide.
 
+### Contact states
+
+![A form-C relay shown released and energized. Released connects 30 to 87a; energized connects 30 to 87. The 85–86 coil is separate.](../../../assets/tej-capstone/project-diagrams/relay-contact-states.svg){fig-alt="Two large side-by-side relay diagrams. Released: terminal 30 touches 87a and 87 is open. Energized: terminal 30 touches 87 and 87a is open. A separate coil is labelled 85 and 86." width="100%"}
+
+This is an original redraw of a common form-C arrangement described in the [TE Connectivity Micro Relay A data sheet](https://www.te.com/content/dam/te-com/documents/automotive/global/ENG_DS_V23074-X0000-A001_0615.pdf). It explains function, not physical socket position. Match the case diagram and exact data sheet for the relay in your hand.
+
 ## Two circuits in one device
 
 ### Coil or control circuit
@@ -55,6 +61,12 @@ The contact circuit is electrically separate from the coil circuit. For the norm
 **12 V load source → fuse → terminal 30 → terminal 87 → lamp → return**
 
 With the relay released, 30 normally connects to 87a instead. Verify both states with power removed and continuity mode before connecting the 12 V supply.
+
+### Manual two-loop reference circuit
+
+![Separate control and lamp loops for a manual relay trainer.](../../../assets/tej-capstone/project-diagrams/relay-manual-two-loop.svg){fig-alt="A left control loop carries a protected 12 volt supply through a switch and relay coil 86 to 85. A right load loop carries a separately fused 12 volt supply through relay contacts 30 and 87 and a lamp. A dashed mechanical link joins coil and contact without an electrical connection." width="100%"}
+
+The dashed line is a **mechanical** link. It is not a wire. The two 0 V references may be separate; connect them only when the approved design calls for it. The lamp is the normal classroom load.
 
 ## Choose a pathway
 
@@ -87,6 +99,12 @@ Replace the manual coil switch with a teacher-approved driver stage:
 Place a flyback diode across a plain DC coil with its cathode toward the positive coil supply. Confirm whether the relay already contains suppression before adding anything. Use a separate fused load supply. Use a documented shared reference only when the approved driver design requires it; an opto-isolated module may use a different arrangement.
 
 The extension must include a default-off state, a software stop method, and a hardware means to remove load power. The BeagleBone Black expansion I/O is a 3.3 V domain; it does not supply relay-coil or horn current. See the official [BeagleBone Black overview](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html).
+
+### GPIO driver reference
+
+![BeagleBone low-side relay driver and separate fused load circuit.](../../../assets/tej-capstone/project-diagrams/relay-gpio-driver.svg){fig-alt="A verified 3.3 volt GPIO drives a logic-compatible MOSFET through a calculated resistor. A pull-down holds it off. A separate 12 volt supply powers relay coil 85 to 86 and a labelled flyback diode is across the coil. Isolated relay contacts switch a separately fused lamp or teacher-supervised horn." width="100%"}
+
+The drawing is a topology, not a parts list. Confirm the MOSFET pinout and logic-level operation, calculate the gate and pull-down resistors, and select the flyback diode from the measured coil current and switching requirements. If the relay already contains a diode or resistor, follow its exact data sheet instead of adding parts by habit.
 
 ## Parts and approval record
 
@@ -171,6 +189,7 @@ Include the approved schematic, actual part identification, terminal map, predic
 
 - [BeagleBone Black features and I/O voltage domains](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html)
 - [TE Connectivity Micro ISO relay data sheet: example of part-specific coil, contact, form, and suppression information](https://www.te.com/content/dam/te-com/documents/automotive/global/ENG_DS_V23074-X0000-A001_0615.pdf)
+- [Texas Instruments: switching inductive loads and the effect of a freewheeling path](https://www.ti.com/document-viewer/lit/html/SLVAF04/GUID-6EC58385-6811-4984-B5CF-9CD8D8E7D24E)
 
 These references show why the exact board and relay must be identified. They do not replace the datasheet for the classroom relay.
 

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 680" role="img" aria-labelledby="title desc">
+  <title id="title">Pedestrian traffic light finite-state machine</title>
+  <desc id="desc">The sequence begins at Startup Safe, then Vehicle Go. When a request is stored and minimum green time completes, it moves through Vehicle Warn, All Stop, Pedestrian Go, Pedestrian Clear, and back to Vehicle Go.</desc>
+  <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#111"/></marker><style>.t{font:700 38px Arial,sans-serif;fill:#111}.l{font:28px Arial,sans-serif;fill:#111}.n{font:700 26px Arial,sans-serif;fill:#111}.s{stroke:#111;stroke-width:6;fill:none;marker-end:url(#a)}.b{fill:#fff;stroke:#111;stroke-width:4}</style></defs>
+  <rect width="1700" height="680" fill="white"/><text x="850" y="48" text-anchor="middle" class="t">PEDESTRIAN TRAFFIC-LIGHT STATE MACHINE</text>
+  <circle cx="85" cy="260" r="14" fill="#111"/><line x1="100" y1="260" x2="170" y2="260" class="s"/>
+  <rect x="180" y="205" width="220" height="110" rx="20" class="b"/><text x="290" y="248" text-anchor="middle" class="n">STARTUP_SAFE</text><text x="290" y="282" text-anchor="middle" class="l">red + wait</text>
+  <rect x="470" y="205" width="220" height="110" rx="20" class="b"/><text x="580" y="248" text-anchor="middle" class="n">VEHICLE_GO</text><text x="580" y="282" text-anchor="middle" class="l">green + wait</text>
+  <rect x="760" y="205" width="220" height="110" rx="20" class="b"/><text x="870" y="248" text-anchor="middle" class="n">VEHICLE_WARN</text><text x="870" y="282" text-anchor="middle" class="l">yellow + wait</text>
+  <rect x="1050" y="205" width="220" height="110" rx="20" class="b"/><text x="1160" y="248" text-anchor="middle" class="n">ALL_STOP</text><text x="1160" y="282" text-anchor="middle" class="l">red + wait</text>
+  <rect x="1340" y="205" width="250" height="110" rx="20" class="b"/><text x="1465" y="248" text-anchor="middle" class="n">PEDESTRIAN_GO</text><text x="1465" y="282" text-anchor="middle" class="l">red + walk</text>
+  <rect x="760" y="455" width="300" height="110" rx="20" class="b"/><text x="910" y="498" text-anchor="middle" class="n">PEDESTRIAN_CLEAR</text><text x="910" y="532" text-anchor="middle" class="l">red + flashing wait</text>
+  <line x1="400" y1="260" x2="470" y2="260" class="s"/><text x="435" y="195" text-anchor="middle" class="l">checks pass</text>
+  <line x1="690" y1="260" x2="760" y2="260" class="s"/><text x="725" y="165" text-anchor="middle" class="l">request stored +</text><text x="725" y="190" text-anchor="middle" class="l">minimum green complete</text>
+  <line x1="980" y1="260" x2="1050" y2="260" class="s"/><text x="1015" y="195" text-anchor="middle" class="l">warning timer</text>
+  <line x1="1270" y1="260" x2="1340" y2="260" class="s"/><text x="1305" y="195" text-anchor="middle" class="l">clearance timer</text>
+  <path d="M1465 315 V385 H1060 V455" class="s"/><text x="1270" y="375" text-anchor="middle" class="l">walk timer complete</text>
+  <path d="M760 510 H580 V315" class="s"/><text x="645" y="500" text-anchor="middle" class="l">clear count complete;</text><text x="645" y="528" text-anchor="middle" class="l">walk off before green</text>
+  <path d="M580 205 V115 H650 V205" class="s"/><text x="615" y="100" text-anchor="middle" class="l">no request: remain / normal cycle rule</text>
+  <text x="850" y="635" text-anchor="middle" class="l">A new request during service is ignored or stored according to one documented rule—never used to skip a clearance state.</text>
+</svg>
+

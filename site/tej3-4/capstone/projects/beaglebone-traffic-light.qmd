@@ -85,6 +85,12 @@ $$
 
 Do not copy an Arduino resistor value without doing the BeagleBone calculation and checking the actual LED.
 
+### Hardware reference diagram
+
+![Three independently limited LEDs and a defined pedestrian button input.](../../../assets/tej-capstone/project-diagrams/traffic-light-hardware.svg){fig-alt="A BeagleBone has three verified output pins. Each output has its own calculated resistor and red, yellow, or green LED to ground. A fourth verified pin reads a normally open button to 3.3 volts and has a 10 kilo-ohm pull-down to ground. No wires cross." width="100%"}
+
+The exact header pins are intentionally left blank until the classroom board, Linux image, and pin mode are verified. This original redraw follows the one-LED pattern in the official [BeagleBone Cookbook external-LED tutorial](https://docs.beagleboard.org/books/beaglebone-cookbook/03displays/displays.html), then repeats the independently current-limited branch three times.
+
 ## Required states
 
 Use descriptive names in the program. One workable model is:
@@ -99,6 +105,12 @@ Use descriptive names in the program. One workable model is:
 | `STARTUP_SAFE` | on | off | off | wait | initialization checks complete |
 
 Your final state diagram must show every state, transition condition, initial state, and the response to a new request while one is already pending.
+
+### State diagram
+
+![Finite-state machine for the pedestrian traffic light.](../../../assets/tej-capstone/project-diagrams/traffic-light-state-machine.svg){fig-alt="The initial arrow enters Startup Safe, then Vehicle Go. A stored request after minimum green leads to Vehicle Warn, All Stop, Pedestrian Go, Pedestrian Clear, and back to Vehicle Go. A no-request loop remains at Vehicle Go." width="100%"}
+
+Trace the arrows with the timing table and code. If your design adds a normal no-request cycle, night mode, or fault state, update all three together. Never let a new request skip VEHICLE_WARN or ALL_STOP.
 
 ## Timing plan
 
@@ -181,7 +193,9 @@ Use voltage across each resistor to calculate LED current. Do not use a GPIO pin
 
 Include the system goal, GPIO/parts table, resistor calculations, state diagram, timing table, code structure, test results, voltage table, one useful failure and revision, accessible-output decision, clear build image, and a conclusion that distinguishes a classroom model from a safety-certified traffic controller.
 
-## Reference
+## References
 
-[BeagleBone Black features, expansion interfaces, and voltage domains](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html)
+- [BeagleBone Black features, expansion interfaces, and voltage domains](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html)
+- [BeagleBone Cookbook: external LED, series resistor, and conservative GPIO current](https://docs.beagleboard.org/books/beaglebone-cookbook/03displays/displays.html)
+- [BeagleBone Black documentation licence: CC BY-SA 4.0](https://docs.beagleboard.org/boards/beaglebone/black/index.html)
 

@@ -69,11 +69,10 @@ At 5 A for 0.10 s with an allowed 4 V drop, the ideal estimate is 0.125 F or 125
 | Horn estimate reviewed |  |  |
 | Relay-control demo safe, if used |  |  |
 
-## Diagram requests for the integration stream
+## Included diagrams
 
-1. Low-voltage charge/discharge circuit with switch states, charging resistor, polarized capacitor, bleeder, and small output branch.
-2. Energy-flow comparison: capacitor powers small load versus capacitor controls driver/relay while external supply powers horn.
-3. Voltage-time graph with measurement points and one time constant.
+- [Separate charge and discharge switch states](../../../../site/assets/tej-capstone/project-diagrams/capacitor-charge-discharge.svg)
+- [Capacitor timing with separately powered horn or lamp](../../../../site/assets/tej-capstone/project-diagrams/capacitor-horn-control.svg)
 
-Use distinct source boundaries, large polarity marks, no crossed leaders, and clear current directions for each switch state.
+The diagrams use distinct source boundaries, large polarity marks, no crossed conductors, and separate low-energy and high-current paths. Students still create their own measured voltage-time graph and mark one time constant from their selected parts.
 

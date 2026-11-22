@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">Five-terminal automotive relay contact states</title>
+  <desc id="desc">Side-by-side released and energized diagrams. In the released state terminal 30 connects to 87a. In the energized state terminal 30 connects to 87. Terminals 85 and 86 are the separate coil circuit.</desc>
+  <defs><style>.t{font:700 38px Arial,sans-serif;fill:#111}.l{font:30px Arial,sans-serif;fill:#111}.s{stroke:#111;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round}.b{fill:#fff;stroke:#111;stroke-width:4}.d{stroke:#555;stroke-width:4;stroke-dasharray:13 10;fill:none}</style></defs>
+  <rect width="1400" height="620" fill="white"/>
+  <text x="700" y="48" text-anchor="middle" class="t">FORM-C RELAY: CONTACTS AND COIL ARE SEPARATE CIRCUITS</text>
+  <rect x="45" y="85" width="620" height="480" rx="20" class="b"/><rect x="735" y="85" width="620" height="480" rx="20" class="b"/>
+  <text x="355" y="135" text-anchor="middle" class="t">RELEASED — COIL OFF</text><text x="1045" y="135" text-anchor="middle" class="t">ENERGIZED — COIL ON</text>
+  <circle cx="230" cy="240" r="11" fill="#111"/><circle cx="480" cy="240" r="11" fill="#111"/><circle cx="355" cy="405" r="11" fill="#111"/>
+  <text x="230" y="205" text-anchor="middle" class="t">87a</text><text x="480" y="205" text-anchor="middle" class="t">87</text><text x="355" y="455" text-anchor="middle" class="t">30</text>
+  <line x1="355" y1="405" x2="230" y2="240" class="s"/><line x1="230" y1="240" x2="125" y2="240" class="s"/><line x1="480" y1="240" x2="585" y2="240" class="s"/>
+  <text x="355" y="505" text-anchor="middle" class="l">30 connects to 87a (normally closed)</text>
+  <circle cx="920" cy="240" r="11" fill="#111"/><circle cx="1170" cy="240" r="11" fill="#111"/><circle cx="1045" cy="405" r="11" fill="#111"/>
+  <text x="920" y="205" text-anchor="middle" class="t">87a</text><text x="1170" y="205" text-anchor="middle" class="t">87</text><text x="1045" y="455" text-anchor="middle" class="t">30</text>
+  <line x1="1045" y1="405" x2="1170" y2="240" class="s"/><line x1="920" y1="240" x2="815" y2="240" class="s"/><line x1="1170" y1="240" x2="1275" y2="240" class="s"/>
+  <text x="1045" y="505" text-anchor="middle" class="l">30 connects to 87 (normally open)</text>
+  <path d="M620 575 h-145 q-35 0-35-28 q0-28 35-28 h100 q35 0 35 28 q0 28-35 28" class="s"/>
+  <text x="400" y="586" text-anchor="end" class="t">85</text><text x="635" y="586" class="t">86</text><text x="700" y="585" class="l">Coil terminals: verify polarity if the relay contains a diode</text>
+</svg>
+

@@ -88,13 +88,13 @@ Prefer voltage evidence and calculation for the student sequence. If a clamp is 
 | Program stop/exception test |  |  |
 | Horn station test, if used |  |  |
 
-## Diagram requests for the integration stream
+## Included diagrams
 
-1. Manual two-loop relay schematic with 30/85/86/87/87a and six voltage test points.
-2. BeagleBone low-side driver schematic with transistor/MOSFET, bias resistor, coil supply, flyback diode, and separated contact circuit.
-3. Released-versus-energized contact inset showing 30–87a and 30–87.
+- [Released and energized contact states](../../../../site/assets/tej-capstone/project-diagrams/relay-contact-states.svg)
+- [Manual two-loop relay trainer](../../../../site/assets/tej-capstone/project-diagrams/relay-manual-two-loop.svg)
+- [BeagleBone low-side relay driver](../../../../site/assets/tej-capstone/project-diagrams/relay-gpio-driver.svg)
 
-Each should use large terminal labels, avoid conductor crossings, distinguish control and load current, and remain clear in grayscale.
+The drawings use large terminal labels, straight uncrossed conductors, grayscale-safe line work, alt text in the student page, and explicit control/load boundaries. They are functional references, not substitutes for the actual relay, socket, transistor, diode, lamp, or horn data sheets.
 
 ## Authoritative references to retain
 
