@@ -4,6 +4,8 @@
 
 Use a body of evidence to determine what each student knows and can do in design, electronics, Linux/Python, testing, troubleshooting, revision, and technical communication. The final device is one source of evidence, not the sole source and not a proxy for individual achievement.
 
+Use the printable `circuit-reference-diagrams.qmd` as a visual companion for voltage measurement, the four supported project pathways, and capacitor timing. Its diagrams are reference patterns only; the exact component datasheet and teacher-approved student schematic control the build.
+
 ## Evidence model
 
 Collect evidence through:

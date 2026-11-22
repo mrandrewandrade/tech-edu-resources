@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">BeagleBone mini traffic light</title>
+  <desc id="desc">Three verified GPIO outputs each connect through a separate resistor and LED to ground. A separate button input has a defined pull resistor. A state diagram cycles through red, red and yellow, green, and yellow.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1769aa"/></marker>
+    <style>
+      .wire{fill:none;stroke:#1d2a44;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.sig{fill:none;stroke:#1769aa;stroke-width:4;marker-end:url(#arrow)}.box{fill:#eef5fb;stroke:#1769aa;stroke-width:3}.t{font:24px Arial,sans-serif;fill:#111}.s{font:20px Arial,sans-serif;fill:#111}.b{font:bold 27px Arial,sans-serif;fill:#111}.pin{font:bold 22px Arial,sans-serif;fill:#1769aa}
+    </style>
+  </defs>
+  <rect width="1000" height="560" fill="#fff"/>
+  <text x="38" y="44" class="b">One current-limiting resistor for each LED branch</text>
+  <rect x="45" y="100" width="250" height="300" rx="18" class="box"/>
+  <text x="82" y="145" class="b">BeagleBone</text>
+  <text x="68" y="190" class="t">verified GPIO R</text>
+  <text x="68" y="250" class="t">verified GPIO Y</text>
+  <text x="68" y="310" class="t">verified GPIO G</text>
+  <text x="68" y="370" class="t">verified input</text>
+
+  <g>
+    <path d="M295 183 H365 l15 -20 l25 40 l25 -40 l25 40 l15 -20 h40" class="wire"/>
+    <circle cx="545" cy="183" r="28" fill="#d73a32" stroke="#1d2a44" stroke-width="4"/>
+    <path d="M510 183 h7 m56 0 h7" class="wire"/>
+    <text x="365" y="150" class="pin">R1</text><text x="590" y="169" class="t">RED</text>
+  </g>
+  <g>
+    <path d="M295 243 H365 l15 -20 l25 40 l25 -40 l25 40 l15 -20 h40" class="wire"/>
+    <circle cx="545" cy="243" r="28" fill="#f3c623" stroke="#1d2a44" stroke-width="4"/>
+    <path d="M510 243 h7 m56 0 h7" class="wire"/>
+    <text x="365" y="220" class="pin">R2</text><text x="590" y="229" class="t">YELLOW</text>
+  </g>
+  <g>
+    <path d="M295 303 H365 l15 -20 l25 40 l25 -40 l25 40 l15 -20 h40" class="wire"/>
+    <circle cx="545" cy="303" r="28" fill="#2e8b57" stroke="#1d2a44" stroke-width="4"/>
+    <path d="M510 303 h7 m56 0 h7" class="wire"/>
+    <text x="365" y="280" class="pin">R3</text><text x="590" y="289" class="t">GREEN</text>
+  </g>
+  <path d="M580 183 H690 V345 H330" class="wire"/>
+  <path d="M580 243 H690 M580 303 H690" class="wire"/>
+  <path d="M330 345 h80 m-65 18 h50 m-35 18 h20" class="wire"/>
+  <text x="475" y="380" class="s">common 0 V reference</text>
+  <path d="M295 363 H360" class="wire"/>
+  <circle cx="370" cy="363" r="8" fill="#fff" stroke="#1d2a44" stroke-width="5"/>
+  <circle cx="430" cy="397" r="8" fill="#fff" stroke="#1d2a44" stroke-width="5"/>
+  <line x1="370" y1="363" x2="419" y2="386" class="wire"/>
+  <path d="M430 405 H690 V345" class="wire"/>
+  <text x="300" y="414" class="s">button to 0 V; verified pull-up</text>
+
+  <rect x="715" y="90" width="250" height="300" rx="18" fill="#fafcff" stroke="#1d2a44" stroke-width="3"/>
+  <text x="766" y="132" class="b">Python states</text>
+  <rect x="750" y="145" width="180" height="42" rx="10" class="box"/><text x="810" y="174" class="t">RED</text>
+  <rect x="750" y="202" width="180" height="42" rx="10" class="box"/><text x="773" y="231" class="t">RED + YELLOW</text>
+  <rect x="750" y="259" width="180" height="42" rx="10" class="box"/><text x="795" y="288" class="t">GREEN</text>
+  <rect x="750" y="316" width="180" height="42" rx="10" class="box"/><text x="790" y="345" class="t">YELLOW</text>
+  <path d="M840 187 V199 M840 244 V256 M840 301 V313 M930 337 C970 337 970 166 933 166" class="sig"/>
+
+  <rect x="50" y="430" width="915" height="92" rx="12" fill="#fff4e5" stroke="#a85d00" stroke-width="3"/>
+  <text x="75" y="466" class="b">Build test order:</text>
+  <text x="300" y="466" class="s">all off → each LED alone → full cycle → button</text>
+  <text x="75" y="500" class="s">Use labels as well as colour. Verify GPIO limits and the safe startup state.</text>
+</svg>

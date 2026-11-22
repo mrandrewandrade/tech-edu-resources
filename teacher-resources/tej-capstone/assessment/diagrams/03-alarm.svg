@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+  <title id="title">Alarm input and protected output</title>
+  <desc id="desc">A pull-up resistor holds a GPIO input at a known high level. A normally open switch pulls it to ground when closed. Python reads the state and controls a buzzer through a transistor or MOSFET driver and a separate approved load supply.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1769aa"/></marker>
+    <style>
+      .wire{fill:none;stroke:#1d2a44;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.sig{fill:none;stroke:#1769aa;stroke-width:5;marker-end:url(#arrow)}.box{fill:#eef5fb;stroke:#1769aa;stroke-width:3}.load{fill:#fff4e5;stroke:#a85d00;stroke-width:3}.node{fill:#1d2a44}.t{font:24px Arial,sans-serif;fill:#111}.s{font:20px Arial,sans-serif;fill:#111}.b{font:bold 27px Arial,sans-serif;fill:#111}.warn{font:bold 20px Arial,sans-serif;fill:#8b1a16}
+    </style>
+  </defs>
+  <rect width="1000" height="540" fill="#fff"/>
+  <text x="40" y="45" class="b">A defined input state and a protected output</text>
+
+  <text x="50" y="92" class="s">verified logic supply</text>
+  <path d="M155 105 v30 l-22 16 l44 25 l-44 25 l44 25 l-22 16 v34" class="wire"/>
+  <text x="190" y="198" class="t">pull-up</text>
+  <circle cx="155" cy="276" r="9" class="node"/>
+  <text x="42" y="286" class="b">INPUT</text>
+  <path d="M155 276 v64" class="wire"/>
+  <circle cx="155" cy="348" r="8" fill="#fff" stroke="#1d2a44" stroke-width="5"/>
+  <circle cx="210" cy="424" r="8" fill="#fff" stroke="#1d2a44" stroke-width="5"/>
+  <line x1="155" y1="348" x2="202" y2="397" class="wire"/>
+  <text x="45" y="382" class="t">NO switch</text>
+  <line x1="210" y1="432" x2="210" y2="455" class="wire"/>
+  <path d="M170 455 h80 m-65 18 h50 m-35 18 h20" class="wire"/>
+  <text x="122" y="518" class="s">0 V reference</text>
+
+  <path d="M165 276 H325" class="sig"/>
+  <rect x="335" y="180" width="190" height="190" rx="16" class="box"/>
+  <text x="374" y="228" class="b">GPIO input</text>
+  <text x="375" y="270" class="t">released = 1</text>
+  <text x="388" y="306" class="t">closed = 0</text>
+  <text x="360" y="346" class="s">verify actual polarity</text>
+
+  <path d="M525 276 H620" class="sig"/>
+  <rect x="630" y="180" width="150" height="190" rx="16" class="box"/>
+  <text x="660" y="225" class="b">Python</text>
+  <text x="657" y="266" class="t">arm</text>
+  <text x="657" y="300" class="t">alarm</text>
+  <text x="657" y="334" class="t">reset</text>
+
+  <path d="M780 276 H840" class="sig"/>
+  <rect x="850" y="130" width="120" height="150" rx="16" class="load"/>
+  <text x="870" y="174" class="b">Driver</text>
+  <text x="864" y="210" class="s">transistor/</text>
+  <text x="874" y="238" class="s">MOSFET</text>
+  <path d="M910 280 v48" class="wire"/>
+  <path d="M870 350 h70 l24 22 l-24 22 h-70 z" fill="#fff" stroke="#a85d00" stroke-width="4"/>
+  <path d="M964 362 q25 10 0 20 M972 352 q42 20 0 40" fill="none" stroke="#a85d00" stroke-width="4"/>
+  <text x="760" y="430" class="t">quiet buzzer or LED</text>
+  <text x="765" y="464" class="s">approved load supply</text>
+
+  <rect x="310" y="405" width="440" height="96" rx="10" fill="#fff5f4" stroke="#b3261e" stroke-width="3"/>
+  <text x="332" y="438" class="warn">A floating input can change by itself.</text>
+  <text x="332" y="471" class="s">Confirm the pull-up/pull-down and startup state.</text>
+</svg>

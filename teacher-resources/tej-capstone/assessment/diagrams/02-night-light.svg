@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+  <title id="title">Automatic night light reference pattern</title>
+  <desc id="desc">An LDR and fixed resistor form a voltage divider. The sense node enters an approved board input. Python or a comparator decides whether it is dark. A GPIO signal operates a protected driver which controls a separately powered light load.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1769aa"/></marker>
+    <style>
+      .wire{fill:none;stroke:#1d2a44;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.sig{fill:none;stroke:#1769aa;stroke-width:5;marker-end:url(#arrow)}.box{fill:#eef5fb;stroke:#1769aa;stroke-width:3}.load{fill:#fff4e5;stroke:#a85d00;stroke-width:3}.node{fill:#1d2a44}.t{font:24px Arial,sans-serif;fill:#111}.s{font:20px Arial,sans-serif;fill:#111}.b{font:bold 27px Arial,sans-serif;fill:#111}.warn{font:bold 20px Arial,sans-serif;fill:#8b1a16}
+    </style>
+  </defs>
+  <rect width="1000" height="540" fill="#fff"/>
+  <text x="40" y="45" class="b">Sense → decide → drive the load</text>
+
+  <text x="75" y="88" class="b">Sensor divider</text>
+  <line x1="170" y1="112" x2="170" y2="150" class="wire"/>
+  <text x="115" y="124" class="s">verified sensor supply</text>
+  <path d="M170 150 l-24 18 l48 28 l-48 28 l48 28 l-24 18" class="wire"/>
+  <text x="205" y="215" class="t">LDR</text>
+  <circle cx="170" cy="290" r="9" class="node"/>
+  <text x="72" y="298" class="b">V<tspan baseline-shift="sub" font-size="18">sense</tspan></text>
+  <path d="M170 290 v22 l-24 18 l48 28 l-48 28 l48 28 l-24 18 v28" class="wire"/>
+  <text x="205" y="382" class="t">R1</text>
+  <path d="M130 460 h80 m-65 18 h50 m-35 18 h20" class="wire"/>
+  <text x="84" y="500" class="s">0 V reference</text>
+
+  <path d="M180 290 H330" class="sig"/>
+  <rect x="340" y="210" width="190" height="160" rx="16" class="box"/>
+  <text x="365" y="252" class="b">Approved input</text>
+  <text x="370" y="292" class="t">ADC, digital,</text>
+  <text x="370" y="326" class="t">or comparator</text>
+  <text x="365" y="355" class="warn">Verify exact limit</text>
+
+  <path d="M530 290 H620" class="sig"/>
+  <rect x="630" y="210" width="150" height="160" rx="16" class="box"/>
+  <text x="658" y="255" class="b">Python</text>
+  <text x="650" y="298" class="t">threshold</text>
+  <text x="662" y="332" class="t">+ delay</text>
+
+  <path d="M780 290 H850" class="sig"/>
+  <rect x="850" y="175" width="120" height="230" rx="16" class="load"/>
+  <text x="872" y="220" class="b">Driver</text>
+  <text x="868" y="258" class="s">resistor +</text>
+  <text x="868" y="286" class="s">transistor/</text>
+  <text x="868" y="314" class="s">MOSFET</text>
+  <line x1="910" y1="405" x2="910" y2="445" class="wire"/>
+  <circle cx="910" cy="474" r="29" fill="#fff" stroke="#a85d00" stroke-width="5"/>
+  <path d="M892 474 q18 -30 36 0 q-18 30 -36 0" fill="none" stroke="#a85d00" stroke-width="4"/>
+  <text x="770" y="525" class="s">approved light load</text>
+  <text x="790" y="430" class="s">approved load supply</text>
+
+  <rect x="330" y="80" width="640" height="86" rx="10" fill="#fff5f4" stroke="#b3261e" stroke-width="3"/>
+  <text x="350" y="112" class="warn">Board input and GPIO ratings depend on the exact model.</text>
+  <text x="350" y="143" class="s">Never connect an unverified divider or high-current load directly.</text>
+</svg>
