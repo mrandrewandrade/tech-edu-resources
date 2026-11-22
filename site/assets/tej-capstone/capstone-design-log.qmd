@@ -1,0 +1,365 @@
+---
+title: "TEJ Capstone Design Log"
+subtitle: "Plan, build, test, troubleshoot, revise, and document"
+author: "Student working copy"
+date: last-modified
+format:
+  typst:
+    papersize: us-letter
+    fontsize: 10pt
+    margin:
+      x: 0.58in
+      y: 0.52in
+    toc: false
+    number-sections: false
+---
+
+**Student:** ____________________________________  **Team:** ____________________
+
+**Project:** [ ] Night light  [ ] Alarm  [ ] Relay trainer  [ ] Traffic light  [ ] Approved alternative
+
+**Teacher status:** [ ] Not reviewed  [ ] Revise  [ ] Approved to simulate  [ ] Approved to build
+
+::: {.callout-important title="Power boundary"}
+Do not energize a circuit until the teacher approves the schematic and completes the power-off inspection. A BeagleBone GPIO does not directly power a relay coil, horn, automotive lamp, motor, or other high-current load.
+:::
+
+# 1. Proposal
+
+## Problem and user
+
+What useful behaviour, need, or question will the project address?
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+## Measurable success criteria
+
+Write criteria another person could test. Include at least one circuit behaviour, one Python/Linux behaviour, and one documentation requirement.
+
+1. ______________________________________________________________________________
+
+2. ______________________________________________________________________________
+
+3. ______________________________________________________________________________
+
+## Constraints and fallback
+
+| Constraint | What it means for this project |
+|---|---|
+| Available class time | |
+| Available equipment and parts | |
+| Protected low-voltage boundary | |
+| Accessibility or user need | |
+| If the preferred part/build fails | |
+
+## Team responsibilities
+
+| Student | First responsibility | Evidence this student will own |
+|---|---|---|
+| | | |
+| | | |
+| | | |
+
+Every student must be able to explain the complete system. Roles organize the work; they do not divide the marks.
+
+{{< pagebreak >}}
+
+# 2. Approved schematic and system plan
+
+Attach or draw a readable schematic/system diagram. Label:
+
+- source voltage and ground/reference;
+- protection and current limiting;
+- inputs and sensors;
+- controller and exact verified GPIO/ADC connections;
+- transistor/MOSFET/driver and flyback protection where required;
+- output/load and its separate supply where required;
+- component reference designators and values;
+- voltage test points; and
+- current paths or KCL nodes needed for the analysis.
+
+**Diagram title/version:** ________________________________________________________
+
+**Source or original design:** ____________________________________________________
+
+**Teacher schematic check:** [ ] Revise  [ ] Approved for simulation  [ ] Approved for power-off build
+
+**Required correction before continuing:**
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+## System I/O table
+
+| Name | Input/output | Electrical state or range | Python meaning/action |
+|---|---|---|---|
+| | | | |
+| | | | |
+| | | | |
+| | | | |
+
+## Bill of materials
+
+| Ref. | Part and value | Qty. | Critical rating/pinout | Stock/approved substitution |
+|---|---|---:|---|---|
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+
+**Datasheets or authoritative references checked:**
+
+________________________________________________________________________________
+
+{{< pagebreak >}}
+
+# 3. Predictions and test plan
+
+## Circuit reasoning
+
+State the rule used: [ ] Ohm's law  [ ] KVL  [ ] KCL  [ ] power  [ ] capacitor timing  [ ] other
+
+Show at least one prediction with equation, substitution, units, and a reasonableness check.
+
+**Given/known:** _________________________________________________________________
+
+**Find:** ________________________________________________________________________
+
+**Equation and calculation:**
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+
+**Independent check or expected range:**
+
+________________________________________________________________________________
+
+## Planned measurements
+
+| Test point/quantity | Reference point | Expected value/range | Meter mode/range | Power state |
+|---|---|---:|---|---|
+| | | | | On / Off |
+| | | | | On / Off |
+| | | | | On / Off |
+| | | | | On / Off |
+
+## Planned code tests
+
+| Test | Input/initial state | Expected program state/output | Pass evidence |
+|---|---|---|---|
+| Startup safe state | | | |
+| Normal operation | | | |
+| Boundary or timing case | | | |
+| Shutdown/restart | | | |
+
+## Staged power-up sequence
+
+Number the checks. Begin with power removed and the load disconnected where appropriate.
+
+1. ______________________________________________________________________________
+
+2. ______________________________________________________________________________
+
+3. ______________________________________________________________________________
+
+4. ______________________________________________________________________________
+
+{{< pagebreak >}}
+
+# 4. Daily build record
+
+Complete one row during every project class. Record specific evidence, not “worked on project.”
+
+| Date | Goal | What changed/tested | Evidence/result | Next action | Initials |
+|---|---|---|---|---|---|
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+
+## Teacher observations or conference notes
+
+| Date | Student explanation/skill observed | Feedback or next evidence needed |
+|---|---|---|
+| | | |
+| | | |
+| | | |
+
+{{< pagebreak >}}
+
+# 5. Measurements and circuit checks
+
+Record calculated/predicted, simulated where used, and measured values separately. Do not change a prediction after measuring without recording the revision.
+
+| Quantity and test points | Predicted | Simulated | Measured | Unit | Difference/explanation |
+|---|---:|---:|---:|---|---|
+| Source voltage | | | | V | |
+| Input/control voltage | | | | V | |
+| Load voltage | | | | V | |
+| Resistor/driver voltage | | | | V | |
+| Calculated current | | | | mA/A | |
+| Other: | | | | | |
+
+## KVL, KCL, or suitable circuit reasoning
+
+**Loop or node name:** ____________________________________________________________
+
+**Equation using named quantities:** ______________________________________________
+
+**Substitution using evidence:** __________________________________________________
+
+**Check result and interpretation:**
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+
+## Measurement-quality check
+
+- [ ] Meter mode, range, and jacks were checked before connection.
+- [ ] Voltage was measured across two named points.
+- [ ] Resistance/continuity was used only with power removed and stored energy discharged.
+- [ ] Values include units and reasonable precision.
+- [ ] Unexpected signs, zeros, overloads, or unstable readings were investigated.
+- [ ] A photograph/screenshot is approved and does not expose private information.
+
+{{< pagebreak >}}
+
+# 6. Fault, diagnosis, and correction
+
+One strong troubleshooting record is required even if the project ultimately remains partly unsuccessful.
+
+**Observed symptom:**
+
+________________________________________________________________________________
+
+**Expected behaviour:**
+
+________________________________________________________________________________
+
+**First hypothesis and why it was plausible:**
+
+________________________________________________________________________________
+
+| Diagnostic step | Safe test performed | Evidence | What the result ruled in/out |
+|---|---|---|---|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+
+**Correction or controlled substitution:**
+
+________________________________________________________________________________
+
+**Retest result:**
+
+________________________________________________________________________________
+
+**If unresolved, what can and cannot be concluded from the evidence?**
+
+________________________________________________________________________________
+
+{{< pagebreak >}}
+
+# 7. Python and Linux evidence
+
+## Environment record
+
+| Item | Verified value/evidence |
+|---|---|
+| Board/computer model | |
+| Linux distribution/image | |
+| Python version | |
+| GPIO library/interface or simulator | |
+| Program filename and location | |
+
+## Test results
+
+| Test name | Expected | Observed | Pass/revise | Student initials |
+|---|---|---|---|---|
+| Safe startup | | | | |
+| Input change | | | | |
+| Output/state change | | | | |
+| Timing/boundary | | | | |
+| Safe stop/restart | | | | |
+
+**Most useful error message or failed test:**
+
+________________________________________________________________________________
+
+**What it revealed and what changed:**
+
+________________________________________________________________________________
+
+**Individual code contribution or explanation:**
+
+________________________________________________________________________________
+
+{{< pagebreak >}}
+
+# 8. Revision, demonstration, and portfolio transfer
+
+## Major revision
+
+| Before | Evidence that required change | After | Result |
+|---|---|---|---|
+| | | | |
+
+## Final success-criteria check
+
+| Criterion from Page 1 | Evidence | Met / partly / not yet |
+|---|---|---|
+| 1 | | |
+| 2 | | |
+| 3 | | |
+
+## Demonstration record
+
+**Date:** __________________  **Mode:** [ ] Physical  [ ] Simulation  [ ] Diagnostic walkthrough  [ ] Mixed
+
+**What the student demonstrated and explained:**
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+
+**Teacher/peer question and student response:**
+
+________________________________________________________________________________
+
+## Portfolio transfer checklist
+
+- [ ] Problem, user, constraints, and success criteria are clear.
+- [ ] Final schematic/system diagram is readable and matches the tested version.
+- [ ] Calculations show units, assumptions, and a check.
+- [ ] Predicted, simulated, and measured evidence are distinguished.
+- [ ] Linux/Python evidence includes meaningful tests, not only a code screenshot.
+- [ ] One fault, diagnostic sequence, correction, and retest are explained.
+- [ ] Revision and limitations are honest.
+- [ ] Images have useful captions and alt text.
+- [ ] Sources, collaborators, and adapted material are credited.
+- [ ] Student numbers, private accounts, schedules, classroom codes, device identifiers, passwords, tokens, and information about other students are removed.
+- [ ] All links work in the rendered portfolio.
+
+## Individual reflection
+
+What evidence most changed your design or conclusion? What can you now do independently, and what would you test next?
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+
+________________________________________________________________________________
