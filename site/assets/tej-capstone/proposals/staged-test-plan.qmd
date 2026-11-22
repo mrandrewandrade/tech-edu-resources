@@ -1,0 +1,54 @@
+---
+title: "Staged Test Plan and Approval Record"
+description: "Test software, input, output, and integration separately before the complete build."
+toc: false
+execute: {enabled: false}
+---
+
+**Project:** ______________________________  **Team:** _______________
+
+## Planned tests
+
+| ID | Requirement | Setup/input | Expected result | Measurement or log | Stop condition |
+|---|---|---|---|---|---|
+| S1 | Software without hardware |  |  |  |  |
+| S2 | Input only |  |  |  |  |
+| S3 | Output/driver only |  |  |  |  |
+| S4 | Minimum integration |  |  |  |  |
+| S5 | Boundary condition |  |  |  |  |
+| S6 | Prepared fault |  |  |  |  |
+| S7 | Safe shutdown |  |  |  |  |
+
+## Approval gates
+
+| Gate | Required evidence | Teacher initials/date |
+|---|---|---|
+| Proposal | Problem, success criteria, scope, fallback |  |
+| Documentation | Exact parts and official limits |  |
+| Schematic | Calculations, safe state, test points |  |
+| Unpowered build | Nodes, polarity, pinouts, protection |  |
+| Input test | Measured voltage is safe |  |
+| Output test | Driver/load works separately |  |
+| Integration | Minimum system ready for current-limited power |  |
+
+## Test record
+
+| ID | Observed evidence | Pass/revise | Change made | Retest result |
+|---|---|---|---|---|
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+## Troubleshooting note
+
+**Symptom:** ________________________________________________________
+
+**One hypothesis:** ________________________________________________
+
+**Measurement or observation:** ____________________________________
+
+**What it ruled in/out:** __________________________________________
+
+**One change:** ____________________________________________________
+
+**Retest:** _________________________________________________________

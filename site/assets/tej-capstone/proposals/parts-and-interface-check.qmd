@@ -1,0 +1,43 @@
+---
+title: "Parts, Budget, and Interface Check"
+description: "Verify exact components and electrical compatibility before connection or purchasing."
+toc: false
+execute: {enabled: false}
+---
+
+**Project:** ______________________________  **Date:** _______________
+
+## Bill of materials
+
+| Part/role | Exact part number or official link | Qty. | In stock / borrow / buy | Cost | Datasheet checked? |
+|---|---|---:|---|---:|---|
+| Controller |  |  |  |  |  |
+| Input/sensor |  |  |  |  |  |
+| Output/load |  |  |  |  |  |
+| Driver |  |  |  |  |  |
+| Protection |  |  |  |  |  |
+| Other |  |  |  |  |  |
+
+**Budget maximum:** __________  **Estimated total:** __________
+
+## Signal compatibility
+
+| Signal | From → to | Supply | Output min/max | Receiving limit | Current | Protection/translation | Safe? |
+|---|---|---:|---:|---:|---:|---|---|
+| 1 |  |  |  |  |  |  |  |
+| 2 |  |  |  |  |  |  |  |
+| 3 |  |  |  |  |  |  |  |
+
+## Before connecting the controller
+
+- [ ] Exact board model and Linux image recorded.
+- [ ] Exact header pins or GPIO lines verified.
+- [ ] Sensor/module schematic or manufacturer documentation checked.
+- [ ] Pull-up voltage checked; no hidden 5 V pull-up reaches 3.3 V GPIO.
+- [ ] Analogue worst-case voltage calculated below the exact ADC limit.
+- [ ] Unconnected interface voltage measured with a multimeter.
+- [ ] High-current or inductive load uses a suitable driver.
+- [ ] Flyback protection installed where required.
+- [ ] Fuse/current limit and safe state identified.
+
+**Teacher interface approval:** _____________________________________

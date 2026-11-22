@@ -1,0 +1,192 @@
+---
+title: "Automatic Night Light"
+description: "Sense darkness, switch a protected light, measure the circuit, and optionally control and log it with a BeagleBone."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+Build a light that turns on when its surroundings become dark. The project can remain a standalone analogue circuit or use Linux and Python to make the threshold adjustable and record evidence.
+
+::: {.callout-important title="Safety boundary"}
+Use only a teacher-approved, protected extra-low-voltage supply. A BeagleBone Black uses **3.3 V GPIO**, while its analogue inputs are limited to **1.8 V maximum**. Never connect a 5 V sensor output, 5 V pull-up, lamp, relay coil, or other load directly to a GPIO or analogue input. Measure an unproven sensor output with a multimeter before connecting it to the board.
+:::
+
+## Choose a level
+
+| Level | Required result | Computing |
+|---|---|---|
+| Minimum | A standalone light-sensor/transistor circuit switches a resistor-limited LED between a documented bright and dark condition. | None required |
+| Proficient | A BeagleBone reads a teacher-approved light input, applies a threshold with hysteresis, controls an LED through a safe interface, and reports its state. | Linux and Python |
+| Extension | The threshold is configurable and the program logs time, sensor evidence, state changes, and one deliberate lighting test. | Python logging or graphing |
+
+All levels require a schematic, calculations, voltage measurements, staged testing, troubleshooting evidence, and a portfolio entry.
+
+## Success criteria
+
+Before choosing parts, rewrite these criteria using values that can actually be tested:
+
+1. The light remains off in the agreed bright test condition.
+2. The light turns on in the agreed dark test condition within ______ seconds.
+3. The output does not chatter rapidly when light is close to the threshold.
+4. Every measured input remains within the rating documented for that exact component and board pin.
+5. The LED resistor and switching device remain within their current and power ratings.
+6. Power-up, normal operation, and shutdown leave the output in a defined safe state.
+
+Do not use vague criteria such as “works well.” Record the room, enclosure, distance, or light-source arrangement used to repeat the bright and dark tests.
+
+## Parts and evidence table
+
+The teacher approves actual part numbers before the build. A module name alone is not a specification.
+
+| Role | Possible part | Confirm before connection | Evidence to record |
+|---|---|---|---|
+| Light sensor | Photoresistor, digital ambient-light sensor, or comparator module | Supply range, output type, pull-up voltage, pinout, maximum output | Part number and source |
+| Threshold | Fixed divider, potentiometer, comparator, or Python value | End-to-end resistance, wiper pin, input range, open-collector pull-up if used | Calculated or chosen threshold |
+| Controller | None or BeagleBone Black | Exact board model, Linux image, verified header pins, GPIO/ADC limits | Board inventory record |
+| Switch/driver | NPN transistor, logic-level MOSFET, or approved driver module | Pinout, current rating, required base/gate drive, power | Datasheet page or manufacturer link |
+| Output | LED for the core build | Polarity, forward-voltage range, target current | Resistor calculation |
+| Protection | Current-limited supply, series resistors, optional fuse | Set voltage/current limit and component power ratings | Teacher power-up approval |
+| Measurement | Digital multimeter | Leads in COM and V/ohm jacks; DC voltage selected | Test-point table |
+
+## Path A: standalone sensor and transistor
+
+Use a protected 5 V or teacher-selected supply. A light-dependent divider creates a sensor voltage. That voltage drives a transistor **through a resistor**; the transistor switches a separate resistor-limited LED path.
+
+The photoresistor may go on the upper or lower side of the divider. Decide which arrangement makes the sensor voltage rise in darkness, then prove it by calculation and measurement. Do not copy a diagram without tracing its nodes.
+
+### Required calculations
+
+For a divider with $R_1$ above the sensing node and $R_2$ below it,
+
+$$
+V_{sense}=V_S\frac{R_2}{R_1+R_2}.
+$$
+
+Calculate $V_{sense}$ using a measured bright resistance and a measured dark resistance. Photoresistor values vary, so the measured resistance is evidence, not a universal specification.
+
+For an LED estimate,
+
+$$
+R_{LED}=\frac{V_S-V_{LED}-V_{switch}}{I_{LED}}.
+$$
+
+Select an available resistor that keeps current conservative. Then check
+
+$$
+P_R=I_{LED}^2R_{LED}.
+$$
+
+The transistor stage is not complete until the base or gate network has been justified from the exact device datasheet. Package shape does not prove pinout.
+
+### Standalone limitation
+
+A single transistor threshold may change gradually and may chatter close to the switching point. That is useful evidence. A comparator with hysteresis is the preferred analogue extension when a sharp, stable threshold is required.
+
+## Path B: BeagleBone-controlled night light
+
+Choose one input route. Do not combine routes until each works independently.
+
+### Route 1: digital ambient-light sensor — preferred
+
+A verified 3.3 V-compatible I²C sensor avoids direct ADC scaling. For example, the VEML7700 manufacturer datasheet specifies a 2.5 V to 3.6 V supply and separate limits for its I²C pull-ups. A breakout board can add regulators or pull-ups, so inspect the **module**, not only the sensor chip.
+
+1. Verify the module schematic or measure its pull-up rail.
+2. Prove that SDA and SCL cannot be pulled to 5 V.
+3. Detect the device from Linux before writing the project program.
+4. Read and print values with the output disconnected.
+5. Choose threshold and hysteresis values from recorded bright/dark readings.
+
+### Route 2: comparator input
+
+A photoresistor divider and comparator can produce one digital state. An LM393-family comparator has an open-collector output; it requires a pull-up. Pull the output up to the verified **3.3 V GPIO rail**, never to 5 V. Confirm the exact comparator input range, supply, output current, module connections, and polarity from its datasheet.
+
+### Route 3: direct ADC — teacher approval required
+
+Use an analogue input only when the complete divider has been calculated, built without the board, and measured across all expected conditions.
+
+For a source that might reach $V_{in,max}$,
+
+$$
+V_{ADC,max}=V_{in,max}\frac{R_{bottom}}{R_{top}+R_{bottom}}<1.8\text{ V}.
+$$
+
+Use a conservative margin below 1.8 V. Account for tolerances and wiring faults. The ADC reference ground is not interchangeable with an arbitrary external return; follow the board documentation and teacher-approved connection plan.
+
+## Threshold and hysteresis
+
+One threshold can cause rapid on/off changes near the boundary. Use two:
+
+- turn on when the reading indicates **darker than the ON threshold**;
+- remain on until the reading indicates **brighter than the OFF threshold**.
+
+Your sensor direction determines whether “darker” means a larger or smaller number. Record this instead of guessing.
+
+## Staged build gates
+
+1. **Parts gate:** identify exact part numbers, pinouts, and voltage limits.
+2. **Unpowered gate:** submit the schematic and resistance calculations; teacher checks breadboard nodes.
+3. **Sensor-only gate:** power the sensor without the BeagleBone; measure supply and output limits.
+4. **Board-input gate:** read and print the input with every output disconnected.
+5. **LED gate:** test the resistor-limited LED or driver separately.
+6. **Integration gate:** combine input, logic, and output; begin with a current-limited source.
+7. **Evidence gate:** repeat bright, boundary, and dark tests and record results.
+
+## Test plan and voltage record
+
+| Test point or quantity | Expected | Measured | Unit | Condition | Within limit? |
+|---|---:|---:|---|---|---|
+| Sensor supply |  |  | V | Bright |  |
+| Sensor output or I²C pull-up |  |  | V | Bright |  |
+| Sensor output or reading |  |  | V or raw units | Dark |  |
+| GPIO/ADC input maximum observed |  |  | V | Worst case |  |
+| LED resistor drop |  |  | V | Light on |  |
+| LED current from $I=V_R/R$ |  |  | mA | Light on |  |
+
+### Required trials
+
+1. Confirm the light is off at power-up until the program or standalone circuit reaches a valid state.
+2. Run three bright-to-dark and three dark-to-bright trials.
+3. Hold light close to the threshold for ten seconds and check for chatter.
+4. Disconnect the sensor and document the safe fault response.
+5. Restart Linux or cycle the low-voltage project supply and verify recovery.
+6. For logging, compare at least one logged state change with a direct observation.
+
+## Troubleshooting without guessing
+
+| Symptom | First safe check | Evidence that separates causes |
+|---|---|---|
+| LED never lights | Test LED/resistor/driver independently | Measured resistor voltage when commanded on |
+| LED is always on | Print or measure the input before changing code | Bright and dark input evidence |
+| Reading does not change | Check sensor supply, common reference, address, and pinout | Supply voltage and sensor-detection result |
+| Switches rapidly | Record readings near threshold | Gap between ON and OFF thresholds |
+| ADC value is pinned high | Disconnect the board and measure the divider | Worst-case voltage must remain below approved limit |
+| Works until output connects | Check supply droop and driver wiring | Supply voltage with output off and on |
+| Values are reversed | Trace divider orientation or sensor response | Bright/dark readings labelled before programming |
+
+## Exact portfolio evidence
+
+Submit one project entry containing:
+
+1. a one-sentence problem and numbered success criteria;
+2. the selected level and input route;
+3. an original schematic with labelled supply rails and test points;
+4. exact part numbers, source links, and verified voltage/current limits;
+5. divider, LED-resistor, and power calculations where applicable;
+6. expected-versus-measured voltage table;
+7. three repeated bright/dark trials;
+8. a short, relevant Python excerpt or state description for a BeagleBone build;
+9. one fault, the diagnostic evidence, and the correction;
+10. a conclusion that states which criteria passed, which did not, limitations, and the next test.
+
+Do not invent measurements or use a photograph as proof of an electrical quantity.
+
+## References
+
+- [BeagleBone Black features and electrical domains](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html), BeagleBoard.org.
+- [BeagleBone Black connector reference](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html), BeagleBoard.org.
+- [VEML7700 ambient-light sensor datasheet](https://www.vishay.com/docs/84286/veml7700.pdf), Vishay.
+- [LM393 comparator product page and datasheet](https://www.ti.com/product/LM393), Texas Instruments.
+
+Use the current manufacturer datasheet for the exact part or breakout board issued in class.
