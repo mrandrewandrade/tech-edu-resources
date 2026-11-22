@@ -1,0 +1,43 @@
+---
+title: "Project Card: Capacitor and Sound"
+description: "Compare a capacitor supplying a small load with a capacitor controlling a larger powered load."
+format:
+  html:
+    toc: false
+execute: {enabled: false}
+---
+
+## Challenge
+
+Measure a capacitor discharging through an LED or low-current active buzzer. Then show mathematically why an ordinary classroom capacitor cannot sustain an automotive horn.
+
+## Safety boundary
+
+- Student builds use protected extra-low voltage and a small approved load.
+- Verify electrolytic polarity and voltage rating.
+- Discharge through a resistor and verify voltage before handling.
+- Never short the capacitor.
+- A fused real horn is a teacher demonstration only.
+
+## Pathways
+
+| Minimum | Proficient | Extension |
+|---|---|---|
+| Calculate stored energy; record capacitor voltage and output change during discharge. | Add $\tau=RC$, a voltage-time graph, KVL/KCL, current estimate, and two-capacitance comparison. | Use the capacitor as a timing/control signal for an approved driver and relay while a separate supply powers the load. |
+
+## Equations
+
+$$E=\frac{1}{2}CV^2 \qquad i_C=C\frac{dv_C}{dt} \qquad C\approx\frac{I\Delta t}{\Delta V}$$
+
+## Gates
+
+1. Part type, value, rating, polarity, and load current approved.
+2. Power-off schematic and discharge path approved.
+3. Charge KVL check passes.
+4. Discharge data table is complete.
+5. Direct-horn estimate and limitations are explained.
+
+## Submit
+
+Two energy-flow models, approved schematic, parts table, calculations, voltage-time graph, KVL/KCL evidence, comparison test, safety decisions, and reflection.
+
