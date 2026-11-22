@@ -12,6 +12,12 @@ This platform separates the part that decides **what should happen** from the
 part that touches physical pins. The same tested Python controllers can run with
 terminal commands, automated tests, or a teacher-verified BeagleBone adapter.
 
+![The five-stage platform starts with Linux and simulation, then moves through the onboard LED and protected external circuits before an approved project.](diagrams/platform-learning-path.svg){fig-alt="Five left-to-right boxes labelled Linux, Simulate, Onboard, Protected, and Project, with teacher approval required before external wiring." width="100%"}
+
+The diagram is an original course drawing. Its staged hardware progression is
+informed by the official BeagleBoard Cookbook lessons on
+[onboard and external LEDs](https://docs.beagleboard.org/books/beaglebone-cookbook/03displays/displays.html).
+
 ## Required order
 
 1. [Use Linux and run Python](linux-introduction.qmd).

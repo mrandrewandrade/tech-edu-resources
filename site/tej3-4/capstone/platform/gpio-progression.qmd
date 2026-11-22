@@ -11,6 +11,8 @@ execute: {enabled: false}
 GPIO work is released in small gates. Passing a software test does not approve
 wiring, and a physically correct-looking header does not prove its pin mapping.
 
+![Five GPIO gates: onboard LED, verified line, resistor-limited external LED, defined button input, and an approved driver stage.](diagrams/gpio-gates.svg){fig-alt="Five large numbered boxes joined by straight arrows, with teacher approval required at every arrow." width="100%"}
+
 ## Gate 1: inspect an onboard LED
 
 Linux exposes available LED devices through `/sys/class/leds`. List what the
@@ -62,6 +64,14 @@ voltage, or the wiring. Check the exact board documentation and measure the
 resistor voltage after teacher approval. The GPIO is for signalling; it is not a
 power supply for a load.
 
+![Generic external LED circuit. A teacher-approved 3.3 volt GPIO connects through a series resistor and LED to board ground.](diagrams/external-led.svg){fig-alt="Schematic with a BeagleBone GPIO output, resistor, LED, and ground connected in one uncrossed series path." width="100%"}
+
+This is an original schematic redrawn from the standard series circuit taught
+in the official BeagleBoard Cookbook's
+[external LED lesson](https://docs.beagleboard.org/books/beaglebone-cookbook/03displays/displays.html#toggling-an-external-led).
+Unlike that worked example, it deliberately omits a header-pin number. The
+teacher supplies the verified pin and resistor value for the actual board.
+
 ## Gate 4: one biased button
 
 A common protected pattern uses an external pull-up from the selected GPIO input
@@ -71,6 +81,13 @@ starting pull-up may be 10 kΩ, subject to the exact board and circuit check.
 
 The software adapter uses `active_low: true` so project code receives
 `trigger=True` when the button is pressed. Do not use an external 5 V pull-up.
+
+![Generic active-low button input. A pull-up holds the input at 3.3 volts; pressing the normally open button connects the input to ground.](diagrams/button-pullup.svg){fig-alt="Schematic with a 3.3 volt rail, pull-up resistor, GPIO input node, normally open button, and ground." width="100%"}
+
+This original diagram adapts the passive-switch idea in the official
+[BeagleBoard button lesson](https://docs.beagleboard.org/books/beaglebone-cookbook/02sensors/sensors.html#reading-the-status-of-a-pushbutton-or-magnetic-switch-passive-on-off-sensor)
+while making the pull resistor and active-low behaviour explicit. It is a
+generic pattern, not a verified header mapping.
 
 ## Gate 5: configure, do not hard-code
 
@@ -92,6 +109,13 @@ Relay coils, horns, lamps, motors, and many buzzers require a driver, protection
 and an external supply. This platform only exposes a logical `relay` output; the
 project's approved driver circuit performs the electrical work.
 
+![Concept boundary from low-current GPIO logic through an approved driver to a separately powered relay or load.](diagrams/load-driver-boundary.svg){fig-alt="Four large blocks show BeagleBone GPIO, an approved protected driver, a relay or load, and a fused external supply. It is labelled as a concept, not a wiring diagram." width="100%"}
+
+The driver figure is intentionally a block diagram rather than a construction
+schematic. Component ratings, flyback protection, isolation or shared ground,
+wire size, fuse, relay contacts, and supply must be selected for the actual
+load before a horn, lamp, motor, or automotive relay is connected.
+
 ## Clean stop test
 
 1. Run with the high-current load disconnected.
@@ -102,3 +126,13 @@ project's approved driver circuit performs the electrical work.
 
 The official [BeagleBone Black connector documentation](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html)
 is the authority for the board-specific warnings, not this summary.
+
+## Diagram references
+
+The drawings on this page are original and were checked against these official
+sources rather than copied from a textbook figure:
+
+- [BeagleBoard Cookbook: displays and external LEDs](https://docs.beagleboard.org/books/beaglebone-cookbook/03displays/displays.html)
+- [BeagleBoard Cookbook: passive switch inputs and GPIO mapping](https://docs.beagleboard.org/books/beaglebone-cookbook/02sensors/sensors.html)
+- [BeagleBone Black expansion connector warnings](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html)
+- [BeagleBone Black voltage domains](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html)

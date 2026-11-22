@@ -15,6 +15,8 @@ execute: {enabled: false}
 - I can run and stop Python safely.
 - I can preserve the command and error evidence needed to get help.
 
+![A safe Linux work cycle: locate, edit, run, read the full error, record evidence, and stop cleanly before repeating.](diagrams/linux-workflow.svg){fig-alt="A six-step rectangular workflow for locating files, editing, running Python, reading errors, recording evidence, and stopping safely." width="100%"}
+
 ## Sign in and identify the system
 
 Use only the teacher-provided account. Do not change another account, system
@@ -121,3 +123,8 @@ Save source and approved evidence. Stop running programs. Use the normal Linux
 shutdown menu or teacher-approved shutdown command. The BeagleBoard guide
 recommends an orderly shutdown to protect the microSD card or eMMC; see the
 [official power-button guidance](https://docs.beagleboard.org/boards/beaglebone/black/ch05.html#power-button).
+
+## Diagram source note
+
+The workflow figure is an original course diagram. The shutdown step follows
+BeagleBoard's official power-button and orderly-shutdown guidance linked above.
