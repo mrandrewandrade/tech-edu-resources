@@ -1,0 +1,84 @@
+---
+title: "Log and Graph Control Events"
+description: "Record state changes in a portable CSV and distinguish synthetic, simulated, and physical evidence."
+categories: [TEJ, Python, CSV, matplotlib, data logging]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Why log events?
+
+A flashing light shows that something happened. A time-stamped event log shows
+**when**, in which state, after which input, and with which outputs. That makes a
+timing or state-machine claim checkable.
+
+## Stable CSV fields
+
+The shared logger records:
+
+- UTC timestamp and elapsed monotonic time;
+- system, state, and transition event;
+- logical arm, disarm, trigger, silence, and pedestrian inputs;
+- optional ambient value and unit;
+- logical light, alarm, relay, and walk outputs;
+- explicit data origin.
+
+The logger refuses to append to a file with a different header. Raw logs remain
+unchanged; cleaned or transformed results use a new filename.
+
+## Label the origin honestly
+
+Use values such as:
+
+- `synthetic-example` for fabricated teaching data;
+- `simulated-terminal` for controller runs driven by typed commands;
+- `physical-gpio` only for an approved physical run.
+
+Changing a label cannot turn synthetic data into a measurement.
+
+## Example files
+
+- [Synthetic alarm events](../../../assets/tej-capstone/data/sample-alarm-events.csv)
+- [Synthetic traffic-light events](../../../assets/tej-capstone/data/sample-traffic-events.csv)
+- [Synthetic night-light events](../../../assets/tej-capstone/data/sample-night-light-events.csv)
+
+Every row in those files is explicitly labelled `synthetic-example`.
+
+## Make a plot
+
+From the Python platform folder:
+
+```sh
+python3 plot_events.py ../data/sample-alarm-events.csv --output alarm-events.png
+```
+
+Adjust the relative path for the way the teacher distributes the folders. The
+script plots state, logical outputs, and ambient values when present. If
+matplotlib is unavailable, stop and ask before installing packages.
+
+## Night light
+
+Add an ambient value and unit to each row. Graph ambient value beside the output
+state. A useful conclusion identifies the threshold, any hysteresis, response
+delay, sensor limitations, and whether the values are synthetic or measured.
+
+## Alarm
+
+Compare the requested arming delay with the elapsed time between `arm_requested`
+and `arming_delay_complete`. Check whether silence makes the alarm and relay
+outputs inactive without falsely reporting DISARMED.
+
+## Traffic light
+
+Check state durations and confirm that a pedestrian request is latched until a
+WALK phase. The graph should show vehicle red active during WALK.
+
+## Evidence to submit
+
+1. unchanged raw CSV;
+2. source code or configuration used;
+3. graph with labelled time axis and origin;
+4. one numerical timing check;
+5. one limitation or unexpected observation.

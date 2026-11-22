@@ -1,0 +1,104 @@
+---
+title: "GPIO Progression: Inspect, Verify, Then Connect"
+description: "Move from a Linux-controlled onboard LED to one protected external input and output."
+categories: [TEJ, BeagleBone, GPIO, LED, button, safety]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+GPIO work is released in small gates. Passing a software test does not approve
+wiring, and a physically correct-looking header does not prove its pin mapping.
+
+## Gate 1: inspect an onboard LED
+
+Linux exposes available LED devices through `/sys/class/leds`. List what the
+current board actually reports:
+
+```sh
+python3 -m tej_platform.onboard_led --list
+```
+
+The teacher selects an appropriate device name. Then run:
+
+```sh
+python3 -m tej_platform.onboard_led --name TEACHER_APPROVED_NAME
+```
+
+The script records the original trigger and brightness, blinks briefly, and
+attempts to restore the original state. Stop if permission is denied; do not add
+`sudo` by habit.
+
+## Gate 2: verify one proposed header line
+
+With no external circuit connected, the teacher records:
+
+- exact board model and revision;
+- current Linux image and kernel;
+- header name and physical pin number;
+- voltage domain and pinmux function;
+- `/dev/gpiochipN` and reported line name or offset;
+- whether another driver already uses the line;
+- the result after a reboot.
+
+`gpioinfo` reports current kernel line information. BeagleBoard's
+[GPIO mapping guide](https://docs.beagleboard.org/books/beaglebone-cookbook/02sensors/sensors.html#mapping-header-numbers-to-gpio-numbers)
+shows the inspection method, but its example output is not permission to reuse
+that example pin.
+
+## Gate 3: one resistor-limited LED
+
+Use the board's documented logic supply, a teacher-approved GPIO, an LED, and a
+series resistor. For a first estimate with a 3.3 V output, 2.0 V red LED model,
+and 1.0 kΩ resistor:
+
+$$
+I\approx\frac{3.3\,\mathrm{V}-2.0\,\mathrm{V}}{1000\,\Omega}=1.3\,\mathrm{mA}.
+$$
+
+That calculation does not prove the selected GPIO's drive limit, the real LED
+voltage, or the wiring. Check the exact board documentation and measure the
+resistor voltage after teacher approval. The GPIO is for signalling; it is not a
+power supply for a load.
+
+## Gate 4: one biased button
+
+A common protected pattern uses an external pull-up from the selected GPIO input
+to the board's documented 3.3 V rail and a normally open button from the input
+to ground. Pressed is then logically active but electrically low. A typical
+starting pull-up may be 10 kΩ, subject to the exact board and circuit check.
+
+The software adapter uses `active_low: true` so project code receives
+`trigger=True` when the button is pressed. Do not use an external 5 V pull-up.
+
+## Gate 5: configure, do not hard-code
+
+Copy `gpio-config.example.json`. Replace its placeholders only from the approved
+header worksheet. The current adapter uses the documented libgpiod 2.x
+`request_lines` and `LineSettings` API. It refuses a placeholder or incompatible
+older binding.
+
+## Voltage and load limits
+
+::: {.callout-warning title="BeagleBone Black boundaries"}
+The BeagleBone Black connector documentation identifies 3.3 V signals and warns
+that 5 V logic can damage the board. Its analogue inputs have a 1.8 V maximum.
+Do not apply a voltage to I/O while the board is unpowered. Check other models
+separately.
+:::
+
+Relay coils, horns, lamps, motors, and many buzzers require a driver, protection,
+and an external supply. This platform only exposes a logical `relay` output; the
+project's approved driver circuit performs the electrical work.
+
+## Clean stop test
+
+1. Run with the high-current load disconnected.
+2. Activate each logical output.
+3. Press `Ctrl+C`.
+4. Verify the GPIO adapter sets every controlled output inactive.
+5. Reconnect an approved load only after the driver-side test passes.
+
+The official [BeagleBone Black connector documentation](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html)
+is the authority for the board-specific warnings, not this summary.
