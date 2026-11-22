@@ -3,22 +3,60 @@ title: "My Technology Portfolio"
 description: "Selected engineering projects, evidence, revisions, and reflections."
 page-layout: full
 toc: false
+listing:
+  contents: "projects/*.qmd"
+  type: grid
+  grid-columns: 3
+  sort: "date desc"
+  max-items: 3
+  fields: [image, title, description, date, categories]
 ---
 
-## Start here
+::: {.portfolio-hero}
+<p class="portfolio-kicker">Grade 11 computer engineering</p>
 
-This small site records how projects changed from an initial idea to tested evidence. Replace this sample text. Do not publish your student number, schedule, private contact details, classroom codes, passwords, tokens, or identifiable information about other students.
+## I build, test, and improve things.
 
-::: {.callout-note title="Current focus"}
-Add one project to the [project collection](projects/index.qmd), then verify the calculations, links, images, and privacy checklist before sharing.
+**Portfolio by {{< meta student-name >}}.**
+
+Replace this paragraph with two or three sentences about the technologies you
+use, the problems you enjoy solving, and the evidence visitors will find here.
+Keep your student number, schedule, private contact details, and location out of
+the public page.
+
+::: {.portfolio-actions}
+[See my projects](projects/index.qmd){.btn .btn-primary}
+[How I work](about.qmd){.btn .btn-outline-primary}
+:::
 :::
 
-## What a project entry shows
+## How I work
 
-- the engineering problem and success criteria;
-- an initial design or prediction;
-- calculations, schematics, code, simulation, or measurements;
-- mistakes, revisions, and final conclusions;
-- what the student learned and how the evidence was checked.
+::: {.evidence-grid}
+::: {.evidence-card}
+### Define
 
-[Browse the sample projects](projects/index.qmd){.btn .btn-primary}
+I identify the problem, constraints, and success criteria before choosing parts
+or writing code.
+:::
+
+::: {.evidence-card}
+### Test
+
+I compare predictions, simulations, measurements, and program output without
+pretending they are identical.
+:::
+
+::: {.evidence-card}
+### Improve
+
+I document useful mistakes, revisions, limitations, and the next test I would
+run.
+:::
+:::
+
+## Featured work
+
+The newest three projects appear here automatically. The complete
+[Projects page](projects/index.qmd) lets a visitor search, filter, and sort all
+work.

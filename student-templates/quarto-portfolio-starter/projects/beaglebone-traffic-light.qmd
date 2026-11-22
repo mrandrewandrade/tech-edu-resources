@@ -1,0 +1,58 @@
+---
+title: "BeagleBone Traffic Light — Example"
+description: "Combine a tested Python state machine, safe LED outputs, and a pedestrian request input."
+date: 2027-01-12
+categories: [BeagleBone, Python, state machine, accessibility]
+image: ../assets/data-project.svg
+image-alt: "Placeholder data illustration with labelled points and a checked trend."
+---
+
+::: {.callout-warning title="Example only"}
+The timings below are **synthetic placeholders**. Confirm the exact board,
+Linux image, GPIO mapping, voltage domain, and resistor values before building.
+:::
+
+::: {.project-facts}
+**Role:** circuit builder and Python programmer
+
+**Inputs:** pedestrian request switch
+
+**Outputs:** red, yellow, and green indicators
+:::
+
+## The problem
+
+Create a traffic-light sequence that never displays conflicting vehicle states.
+A pedestrian request is remembered and served at a safe transition rather than
+changing outputs immediately.
+
+## State model
+
+Document each state, permitted next state, output pattern, duration, and response
+to a request. Run the same state logic on a keyboard-driven simulator before
+connecting external LEDs.
+
+## Software test evidence
+
+| Test | Expected | Synthetic result |
+|---|---|---|
+| normal cycle | green → yellow → red | pass |
+| request during green | stored until transition | pass |
+| repeated request | one pending request | pass |
+| shutdown | all external outputs off | pass |
+
+## Circuit verification
+
+For each LED, show the actual GPIO level, LED forward-voltage assumption,
+current-limiting resistor calculation, measured voltage, and safe shutdown test.
+
+## Mistake and revision
+
+The first version used blocking delays, so a request could be missed. I revised
+the program to check elapsed time and input events while maintaining the current
+state.
+
+## Conclusion
+
+Software tests support the sequencing rules, while voltage measurements support
+the physical interface. Neither form of evidence replaces the other.

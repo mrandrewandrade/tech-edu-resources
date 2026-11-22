@@ -1,0 +1,55 @@
+---
+title: "Linux Alarm Controller — Example"
+description: "Run a Python state machine that reads a switch, reports events, and controls safe outputs."
+date: 2027-01-20
+categories: [Linux, Python, GPIO, alarm]
+image: ../assets/computer-project.svg
+image-alt: "Placeholder system illustration with inspect, repair, and verify stages."
+---
+
+::: {.callout-warning title="Example only"}
+The timings and test results below are **synthetic placeholders**. GPIO voltage,
+pin selection, pull resistors, and output drivers must match the exact board and
+teacher-approved circuit.
+:::
+
+::: {.project-facts}
+**Role:** Python programmer and system tester
+
+**Platform:** Linux single-board computer
+
+**Success:** correct state and log entry for every tested input sequence
+:::
+
+## The problem
+
+Build an alarm controller with DISARMED, ARMING, ARMED, ALARM, and SILENCED
+states. A switch provides the input; safe indicator outputs show the state. Any
+relay, lamp, or horn is controlled by an approved driver rather than a GPIO pin.
+
+## Program design
+
+The program separates state logic from hardware access. This permits tests on a
+regular Linux computer before connecting GPIO. Insert a state-transition table
+and explain what happens for valid, repeated, or unexpected inputs.
+
+## Test evidence
+
+| Test sequence | Expected final state | Synthetic result | Log produced? |
+|---|---|---|---|
+| arm, wait | ARMED | ARMED | yes |
+| arm, trigger | ALARM | ALARM | yes |
+| trigger while disarmed | DISARMED | DISARMED | yes |
+| alarm, silence | SILENCED | SILENCED | yes |
+
+## Mistake and revision
+
+The first loop treated a held button as many presses. I revised the input logic
+to respond once per deliberate change and added a test for a switch that remains
+closed.
+
+## Conclusion
+
+Passing software tests supports the state logic; it does not prove the external
+circuit is safe or correctly wired. Hardware verification requires power-off
+inspection, voltage checks, and staged output testing.

@@ -1,6 +1,6 @@
 ---
 title: "Learning Log"
-description: "Optional short posts about tests, documentation, and revisions."
+description: "Short posts about tests, discoveries, documentation, and revisions."
 listing:
   contents: "posts/*.qmd"
   type: default
@@ -9,4 +9,6 @@ listing:
   filter-ui: true
 ---
 
-The blog is optional. Use it for short learning notes that do not belong in a complete project report.
+Use the Learning Log for one useful moment: a test that changed your thinking,
+a fault you isolated, a command you learned, or a source that answered a precise
+question. Complete project reports belong in Projects.

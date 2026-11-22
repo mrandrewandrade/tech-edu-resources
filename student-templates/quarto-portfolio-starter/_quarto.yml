@@ -1,33 +1,51 @@
+# ================================================================
+# STUDENT SETUP — EDIT THIS SMALL SECTION FIRST
+# ================================================================
+# 1. Replace the student name, site title, and description below.
+# 2. Choose ONE site version: core, blog, skills, or full.
+# 3. Change colours and typography in _brand.yml.
+
+profile:
+  default: full
+  group:
+    - [core, blog, skills, full]
+
 project:
   type: website
   output-dir: _site
 
+brand: _brand.yml
+
+metadata:
+  student-name: "Student Name or Initials"
+
 website:
   title: "My Technology Portfolio"
-  site-url: "https://example.invalid/"
+  description: "Engineering projects, code, testing evidence, revisions, and reflection."
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: projects/index.qmd
-        text: Projects
-      - href: blog/index.qmd
-        text: Blog
-      - href: about.qmd
-        text: About
+    pinned: true
+    collapse-below: md
   search:
     location: navbar
     type: overlay
+    copy-button: true
   page-footer:
-    left: "Student technology portfolio — replace this text with teacher-approved attribution."
+    border: true
+    left: "Student technology portfolio — replace with teacher-approved attribution."
+    right:
+      - href: privacy.qmd
+        text: Privacy
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-    link-external-newwindow: false
     code-copy: true
+    code-overflow: wrap
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: false
 
 execute:
   freeze: auto
