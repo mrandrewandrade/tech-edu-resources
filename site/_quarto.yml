@@ -50,6 +50,7 @@ project:
     - "tej3-4/networking/**/*.qmd"
     - "tej3-4/linux-operating-systems/**/*.qmd"
     - "tej3-4/09-linux-operating-systems/**/*.qmd"
+    - "learning-worlds/**/*.qmd"
   pre-render:
     - python ../scripts/bs_pre_render.py
   resources:
@@ -90,6 +91,7 @@ project:
     - assets/leg-builder.js
     - assets/bs-glossary-lookup.json
     - "assets/lore/**"
+    - "assets/learning-map/**"
 
 metadata-files:
   - _course-navigation.yml
@@ -125,6 +127,8 @@ website:
             text: Computer Engineering Notes
       - text: Classes
         menu:
+          - href: learning-worlds/index.qmd
+            text: Learning Worlds Map
           - href: slides/tas.qmd
             text: TAS Slides
           - href: slides/tej.qmd

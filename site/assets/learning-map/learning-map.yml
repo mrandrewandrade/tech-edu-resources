@@ -1,0 +1,468 @@
+version: 1
+title: "Technology Commons: The Learning Worlds"
+subtitle: "Choose a route, open the real lesson, and return when you are ready for the next stop."
+storage_key: "technology-commons-learning-worlds-v1"
+nodes:
+  - id: commons-hub
+    title: Technology Commons Hub
+    world: hub
+    region: Central Hub
+    type: hub
+    status: required
+    x: 50
+    y: 50
+    href: ../index.html
+    summary: Start here. Choose the circuit-and-computing realm or the fabrication frontier.
+    do: Pick the route that matches today's class or project.
+    look_for: Two course portals, safety, mission control, help, and the portfolio archive.
+    neighbours: [safety-gate, tej-portal, tas-portal, mission-control, help-search, portfolio-archive]
+
+  - id: safety-gate
+    title: Safety Gate
+    world: hub
+    region: Central Hub
+    type: safety
+    status: required
+    x: 50
+    y: 36
+    href: ../tej3-4/electronics-library/index.html
+    summary: Pause before tools, power, heat, or moving equipment.
+    do: Read the safety directions for the lesson and ask before powering a circuit or machine.
+    look_for: PPE, power-off checks, teacher approval points, and emergency stops.
+    neighbours: [commons-hub, mission-control]
+
+  - id: mission-control
+    title: Mission Control
+    world: hub
+    region: Central Hub
+    type: portal
+    status: optional
+    x: 50
+    y: 19
+    href: ../tej3-4/curriculum/index.html
+    summary: See the larger course route and choose the next useful mission.
+    do: Check the current class task before exploring an extension.
+    look_for: Current priorities, mission choices, and documentation expectations.
+    neighbours: [safety-gate, commons-hub]
+
+  - id: help-search
+    title: Help and Search
+    world: hub
+    region: Central Hub
+    type: help
+    status: optional
+    x: 50
+    y: 65
+    href: ../glossary/index.html
+    summary: Use the site search, glossary, classmates, documentation, and your teacher.
+    do: Name what you tried, what happened, and the smallest question you can ask.
+    look_for: Vocabulary, examples, error messages, and reliable documentation.
+    neighbours: [commons-hub, portfolio-archive]
+
+  - id: portfolio-archive
+    title: Portfolio Archive
+    world: hub
+    region: Central Hub
+    type: portfolio
+    status: required
+    x: 50
+    y: 84
+    href: ../tej3-4/portfolio/index.html
+    summary: "Turn work into evidence: decisions, tests, photos, code, and reflection."
+    do: Save one useful artifact and explain what it proves about your learning.
+    look_for: Clear captions, readable images, honest reflection, and next steps.
+    neighbours: [commons-hub, help-search, tej-portfolio, tas-portfolio]
+
+  - id: tej-portal
+    title: Circuit and Computing Realms
+    world: tej
+    region: TEJ Portal
+    type: portal
+    status: required
+    x: 40
+    y: 50
+    href: ../tej3-4/index.html
+    summary: Enter TEJ to measure, build, compute, program, and document.
+    do: Choose the region that matches the component or system you are using.
+    look_for: Safe measurement, working evidence, and explanations grounded in results.
+    neighbours: [commons-hub, measurement-meadow, breadboard-bay, linux-tower]
+
+  - id: measurement-meadow
+    title: Measurement Meadow
+    world: tej
+    region: Measurement Meadow
+    type: lesson
+    status: required
+    x: 31
+    y: 20
+    href: ../tej3-4/02-basic-electronics/01-charge-voltage-current.html
+    summary: Learn what voltage and current mean before placing a meter.
+    do: Identify what is measured across a component and what flows through a path.
+    look_for: Units, reference points, polarity, and safe meter placement.
+    reference:
+      title: SparkFun — How to Use a Multimeter
+      url: https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/introduction
+    neighbours: [tej-portal, ohms-outpost, breadboard-bay]
+
+  - id: ohms-outpost
+    title: Ohm's Law Outpost
+    world: tej
+    region: Ohm's Law Outpost
+    type: lesson
+    status: required
+    x: 18
+    y: 19
+    href: ../tej3-4/02-basic-electronics/03-ohms-law.html
+    summary: Connect voltage, current, and resistance using predictions and measurements.
+    do: Predict one missing value, measure it, then explain any difference.
+    look_for: Correct units, sensible scale, and agreement between theory and evidence.
+    neighbours: [measurement-meadow, kirchhoff-canyons]
+
+  - id: kirchhoff-canyons
+    title: Kirchhoff Canyons
+    world: tej
+    region: Kirchhoff Canyons
+    type: lesson
+    status: optional
+    x: 8
+    y: 35
+    href: ../tej3-4/circuits/kirchhoffs-laws.html
+    summary: Track current at junctions and voltage around complete loops.
+    do: Label a circuit, write one KCL equation and one KVL equation, then test them.
+    look_for: Conserved current at nodes and voltage rises and drops around loops.
+    reference:
+      title: OpenStax — Kirchhoff's Rules
+      url: https://openstax.org/books/college-physics-2e/pages/21-3-kirchhoffs-rules
+    neighbours: [ohms-outpost, series-parallel-pass]
+
+  - id: breadboard-bay
+    title: Breadboard Bay
+    world: tej
+    region: Breadboard Bay
+    type: project
+    status: required
+    x: 28
+    y: 37
+    href: ../tej3-4/circuits/tinkercad-circuits.html
+    summary: Move from a schematic to a simulated or physical circuit without guessing.
+    do: Trace each electrical node, build with power off, inspect, then test.
+    look_for: Shared rows, rail breaks, polarity, resistor values, and clean evidence.
+    reference:
+      title: SparkFun — How to Use a Breadboard
+      url: https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/
+    neighbours: [tej-portal, measurement-meadow, series-parallel-pass, capacitor-coast]
+
+  - id: series-parallel-pass
+    title: Series-Parallel Pass
+    world: tej
+    region: Breadboard Bay
+    type: lesson
+    status: required
+    x: 14
+    y: 48
+    href: ../tej3-4/circuits/series-parallel-circuits.html
+    summary: Read paths and junctions before calculating an equivalent circuit.
+    do: Mark series groups, parallel branches, and the direction of conventional current.
+    look_for: Nodes that are truly shared and components that carry the same current.
+    reference:
+      title: SparkFun — Series and Parallel Circuits
+      url: https://learn.sparkfun.com/tutorials/series-and-parallel-circuits/experiment-time---part-1
+    neighbours: [kirchhoff-canyons, breadboard-bay, component-caverns]
+
+  - id: component-caverns
+    title: Component Caverns
+    world: tej
+    region: Component Caverns
+    type: lesson
+    status: required
+    x: 17
+    y: 61
+    href: ../tej3-4/electronics-library/components/index.html
+    summary: Explore resistors, diodes, transistors, op amps, and schematic symbols.
+    do: Identify the part, its job, orientation, limits, and test method.
+    look_for: Datasheet clues, polarity marks, pinouts, and safe operating values.
+    neighbours: [series-parallel-pass, capacitor-coast]
+
+  - id: capacitor-coast
+    title: Capacitor Coast
+    world: tej
+    region: Capacitor Coast
+    type: project
+    status: optional
+    x: 29
+    y: 62
+    href: ../tej3-4/electronics-library/components/capacitors.html
+    summary: Watch stored charge change voltage over time and shape circuit behaviour.
+    do: Predict, measure, graph, and explain one charging or discharging event.
+    look_for: Polarity, time constant, safe discharge, and evidence over time.
+    reference:
+      title: OpenStax — RC Circuits
+      url: https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits
+    neighbours: [breadboard-bay, component-caverns, project-portals]
+
+  - id: linux-tower
+    title: Linux Terminal Tower
+    world: tej
+    region: Linux Terminal Tower
+    type: lesson
+    status: optional
+    x: 34
+    y: 78
+    href: ../tej3-4/linux-operating-systems/files-terminal-permissions.html
+    summary: Navigate files and use the terminal with deliberate, visible commands.
+    do: Run a small command, predict its effect, and verify the result.
+    look_for: Current directory, exact paths, permissions, and readable command history.
+    neighbours: [tej-portal, python-plains, tej-portfolio]
+
+  - id: python-plains
+    title: Python Plains
+    world: tej
+    region: Python Plains
+    type: lesson
+    status: optional
+    x: 21
+    y: 78
+    href: ../tej3-4/computational-engineering/python-first-steps.html
+    summary: Use small Python programs to calculate, log, graph, and explain evidence.
+    do: Change one input, run the code, inspect the output, and describe the relationship.
+    look_for: Clear variable names, units, reproducible steps, and meaningful graphs.
+    reference:
+      title: Python documentation — The Python Tutorial
+      url: https://docs.python.org/3/tutorial/
+    neighbours: [linux-tower, beaglebone-bridge, project-portals]
+
+  - id: beaglebone-bridge
+    title: BeagleBone Bridge
+    world: tej
+    region: BeagleBone Bridge
+    type: project
+    status: optional
+    x: 8
+    y: 75
+    href: ../tej3-4/linux-operating-systems/power-and-raspberry-pi-bridge.html
+    summary: Connect Linux and Python to low-voltage inputs and outputs safely.
+    do: Prove the software first, prove the circuit second, then connect through an interface.
+    look_for: Common ground, voltage limits, current protection, and safe isolation.
+    reference:
+      title: BeagleBoard.org — Getting Started Guide
+      url: https://docs.beagleboard.org/intro/support/getting-started.html
+    neighbours: [python-plains, project-portals]
+
+  - id: project-portals
+    title: Project Portals
+    world: tej
+    region: Project Portals
+    type: project
+    status: optional
+    x: 15
+    y: 91
+    href: ../tej3-4/computational-engineering/circuit-quest.html
+    summary: Combine a useful circuit, code, testing, and a story of improvement.
+    do: Define the problem, build the smallest test, gather evidence, and iterate.
+    look_for: A working core, safe construction, readable code, and honest documentation.
+    neighbours: [capacitor-coast, python-plains, beaglebone-bridge, tej-portfolio]
+
+  - id: tej-portfolio
+    title: TEJ Portfolio Dock
+    world: tej
+    region: Portfolio Archive
+    type: portfolio
+    status: required
+    x: 33
+    y: 93
+    href: ../tej3-4/portfolio/index.html
+    summary: Publish the evidence behind your circuits, code, tests, and decisions.
+    do: Add a project entry with a purpose, process, evidence, result, and reflection.
+    look_for: Labels, units, captions, source credit, and what you would improve.
+    neighbours: [linux-tower, project-portals, portfolio-archive]
+
+  - id: tas-portal
+    title: Fabrication Frontier
+    world: tas
+    region: TAS Portal
+    type: portal
+    status: required
+    x: 60
+    y: 50
+    href: ../design-fabrication/index.html
+    summary: Enter TAS to investigate, design, fabricate, test, and improve.
+    do: Choose the stage of the design process you need right now.
+    look_for: User needs, safe methods, accurate plans, prototypes, and iteration.
+    neighbours: [commons-hub, design-plaza, materials-forest, hand-tool-harbour]
+
+  - id: design-plaza
+    title: Design Process Plaza
+    world: tas
+    region: Design Process Plaza
+    type: lesson
+    status: required
+    x: 68
+    y: 20
+    href: ../design-fabrication/design-process/index.html
+    summary: Start with a situation and user need, not a favourite tool or first idea.
+    do: Record needs, constraints, questions, and criteria before choosing a concept.
+    look_for: Evidence about the user, ranked priorities, and testable success criteria.
+    neighbours: [tas-portal, sketching-slopes, materials-forest]
+
+  - id: sketching-slopes
+    title: Sketching Slopes
+    world: tas
+    region: Sketching Slopes
+    type: lesson
+    status: required
+    x: 80
+    y: 13
+    href: ../design-fabrication/design-process/create-communicate.html
+    summary: Make ideas visible so they can be discussed, measured, and improved.
+    do: Draw more than one idea and label size, material, movement, and assembly.
+    look_for: Multiple views, useful labels, proportions, and design decisions.
+    neighbours: [design-plaza, digital-district]
+
+  - id: digital-district
+    title: Digital Design District
+    world: tas
+    region: Digital Design District
+    type: lesson
+    status: optional
+    x: 91
+    y: 24
+    href: ../design-fabrication/02-digital-design/index.html
+    summary: Build clear raster, vector, layout, animation, and interface assets.
+    do: Choose the right file type, work at the right scale, and export deliberately.
+    look_for: Readable hierarchy, clean geometry, contrast, and accessible output.
+    neighbours: [sketching-slopes, cad-citadel]
+
+  - id: cad-citadel
+    title: CAD Citadel
+    world: tas
+    region: CAD Citadel
+    type: project
+    status: optional
+    x: 82
+    y: 37
+    href: ../design-fabrication/cad-parametric-modeling/index.html
+    summary: Model with dimensions and relationships that can survive a change.
+    do: Constrain the important geometry and test one intentional revision.
+    look_for: Units, origin choice, fully defined geometry, and manufacturable features.
+    reference:
+      title: Autodesk Fusion Help — Sketch Constraints
+      url: https://help.autodesk.com/cloudhelp/ENU/Fusion-Sketch/files/SKT-CONSTRAINTS.htm
+    neighbours: [digital-district, print-peaks, laser-labyrinth]
+
+  - id: materials-forest
+    title: Materials Forest
+    world: tas
+    region: Materials Forest
+    type: lesson
+    status: required
+    x: 70
+    y: 41
+    href: ../design-fabrication/03-laser-cutting/04-material-fit-calibration.html
+    summary: Match material properties and tolerances to the process and purpose.
+    do: Measure a sample, record the result, and use it to choose a fit or setting.
+    look_for: Thickness variation, grain or direction, kerf, finish, and waste.
+    neighbours: [tas-portal, design-plaza, hand-tool-harbour, laser-labyrinth]
+
+  - id: hand-tool-harbour
+    title: Hand Tool Harbour
+    world: tas
+    region: Hand Tool Harbour
+    type: safety
+    status: required
+    x: 68
+    y: 62
+    href: ../design-fabrication/hand-tools/tools-machines.html
+    summary: Select, inspect, carry, use, and store tools safely.
+    do: Demonstrate the setup and safe body position before starting the operation.
+    look_for: Guards, clamps, sharp edges, stable work, and a clear surrounding area.
+    neighbours: [tas-portal, materials-forest, prototype-yard, testing-works]
+
+  - id: laser-labyrinth
+    title: Laser Labyrinth
+    world: tas
+    region: Laser Labyrinth
+    type: project
+    status: optional
+    x: 80
+    y: 55
+    href: ../design-fabrication/03-laser-cutting/index.html
+    summary: Prepare clean vector geometry, test material settings, and assemble accurately.
+    do: Run a small calibration before committing the full sheet.
+    look_for: Closed paths, line settings, kerf, ventilation, flame watch, and fit.
+    reference:
+      title: Trotec — Vector Processing and Kerf Correction
+      url: https://www.troteclaser.com/en-us/helpcenter/software/ruby/vector-processing
+    neighbours: [materials-forest, cad-citadel, print-peaks, prototype-yard]
+
+  - id: print-peaks
+    title: 3D Print Peaks
+    world: tas
+    region: 3D Print Peaks
+    type: project
+    status: optional
+    x: 92
+    y: 48
+    href: ../design-fabrication/04-3d-printing/index.html
+    summary: Design for layers, orientation, support, tolerance, and useful iteration.
+    do: Slice the part, inspect the preview, estimate time and material, then revise.
+    look_for: First-layer contact, overhangs, wall thickness, fit, and print direction.
+    reference:
+      title: Prusa Knowledge Base — Object Orientation
+      url: https://help.prusa3d.com/article/object-orientation_1658
+    neighbours: [cad-citadel, laser-labyrinth, prototype-yard]
+
+  - id: prototype-yard
+    title: Prototype Yard
+    world: tas
+    region: Prototype Yard
+    type: project
+    status: required
+    x: 87
+    y: 69
+    href: ../design-fabrication/01-nice-design-process/04-prototype-evaluate-iterate.html
+    summary: Build the smallest useful model that can answer one important question.
+    do: State the question, choose the fidelity, test, and record what changed.
+    look_for: Fast learning, visible evidence, controlled changes, and reduced risk.
+    neighbours: [hand-tool-harbour, laser-labyrinth, print-peaks, testing-works]
+
+  - id: testing-works
+    title: Testing Works
+    world: tas
+    region: Testing Works
+    type: lesson
+    status: required
+    x: 75
+    y: 79
+    href: ../design-fabrication/design-process/evaluate-repeat.html
+    summary: Compare the result with the success criteria and improve from evidence.
+    do: Test one criterion at a time, record the result, and name the next change.
+    look_for: Repeatable methods, measurements, user feedback, and specific revisions.
+    neighbours: [hand-tool-harbour, prototype-yard, fabrication-missions, tas-portfolio]
+
+  - id: fabrication-missions
+    title: Fabrication Missions
+    world: tas
+    region: Fabrication Missions
+    type: project
+    status: optional
+    x: 88
+    y: 91
+    href: ../design-fabrication/03-laser-cutting/08-capstone.html
+    summary: Choose or propose a project that proves design, making, testing, and communication.
+    do: Pitch a realistic scope, identify hazards and resources, then build in testable stages.
+    look_for: User value, safe methods, good fit and finish, iteration, and documentation.
+    neighbours: [testing-works, tas-portfolio]
+
+  - id: tas-portfolio
+    title: TAS Portfolio Dock
+    world: tas
+    region: Portfolio Archive
+    type: portfolio
+    status: required
+    x: 67
+    y: 93
+    href: ../design-fabrication/index.html
+    summary: Publish the story behind the need, design choices, making, tests, and changes.
+    do: Add labelled process evidence and explain what each artifact shows.
+    look_for: Iterations, measurements, safe practice, clear photos, and reflection.
+    neighbours: [testing-works, fabrication-missions, portfolio-archive]

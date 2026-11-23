@@ -1,0 +1,90 @@
+---
+title: "Learning Worlds Visual Field Guide"
+subtitle: "Large, printable diagrams for the most important map ideas"
+description: "Original teaching diagrams informed by authoritative tutorials and open textbooks."
+page-layout: full
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+format:
+  html:
+    css: ../assets/learning-map/learning-map.css
+---
+
+[Return to the Learning Worlds map](index.qmd)
+
+These are **original redraws**, not copied textbook figures. They use standard electrical and fabrication conventions, with the sources that informed each redraw linked below it. Always follow the equipment manual and your teacher's safety directions.
+
+## 1. Put the meter in the right place
+
+::: {.field-guide-card}
+<svg viewBox="0 0 1200 430" role="img" aria-labelledby="meter-title meter-desc">
+  <title id="meter-title">Three safe meter setups</title>
+  <desc id="meter-desc">Voltage is measured in parallel with black lead in common and red lead in volts. Current is measured by clamping one conductor only. Resistance is measured with circuit power off.</desc>
+  <defs><marker id="arrow-meter" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#152832"/></marker></defs>
+  <g font-family="system-ui,sans-serif" fill="#152832" stroke="#152832" stroke-width="5">
+    <g transform="translate(30 30)"><rect width="350" height="360" rx="22" fill="#e7f6f8"/><text x="175" y="42" text-anchor="middle" stroke="none" font-size="25" font-weight="800">VOLTAGE: ACROSS</text><path d="M65 120H285V260H65Z" fill="none"/><path d="M175 120V75"/><circle cx="175" cy="205" r="55" fill="#fff"/><text x="175" y="216" text-anchor="middle" stroke="none" font-size="34" font-weight="850">V</text><path d="M120 205H65M230 205H285" stroke="#c23b22"/><text x="175" y="325" text-anchor="middle" stroke="none" font-size="20" font-weight="700">Black → COM · Red → VΩ</text></g>
+    <g transform="translate(425 30)"><rect width="350" height="360" rx="22" fill="#fff7d6"/><text x="175" y="42" text-anchor="middle" stroke="none" font-size="25" font-weight="800">CURRENT: CLAMP</text><path d="M175 75V300"/><path d="M145 150C80 130 80 255 175 255C270 255 270 130 205 150" fill="none" stroke="#d45c22" stroke-width="24"/><path d="M143 151L105 100M207 151L245 100" stroke="#d45c22" stroke-width="24"/><text x="175" y="325" text-anchor="middle" stroke="none" font-size="20" font-weight="700">Clamp ONE conductor only</text><text x="175" y="348" text-anchor="middle" stroke="none" font-size="17">Two conductors cancel the reading</text></g>
+    <g transform="translate(820 30)"><rect width="350" height="360" rx="22" fill="#fff0e7"/><text x="175" y="42" text-anchor="middle" stroke="none" font-size="25" font-weight="800">RESISTANCE: POWER OFF</text><path d="M55 180H105L120 150L145 210L170 150L195 210L220 150L245 210L265 180H300" fill="none"/><circle cx="175" cy="285" r="48" fill="#fff"/><text x="175" y="297" text-anchor="middle" stroke="none" font-size="32" font-weight="850">Ω</text><path d="M135 255L80 205M215 255L270 205" stroke="#c23b22"/><path d="M65 85L285 125" stroke="#b3261e" stroke-width="12"/><text x="175" y="335" text-anchor="middle" stroke="none" font-size="20" font-weight="700">Remove power before Ω</text></g>
+  </g>
+</svg>
+:::
+
+Reference: [SparkFun, “How to Use a Multimeter”](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/introduction). The classroom convention here uses a clamp for current; follow the exact clamp-meter manual.
+
+## 2. Read a breadboard as electrical nodes
+
+::: {.field-guide-card}
+<svg viewBox="0 0 1200 430" role="img" aria-labelledby="bread-title bread-desc">
+  <title id="bread-title">Breadboard node diagram</title><desc id="bread-desc">Power rails run along the sides and may be split. Groups of five holes on each side of the centre trench are connected. The trench separates integrated circuit pins.</desc>
+  <g font-family="system-ui,sans-serif" fill="#152832"><rect x="65" y="55" width="1070" height="310" rx="25" fill="#f7f3e8" stroke="#152832" stroke-width="5"/><path d="M120 105H1080M120 315H1080" stroke="#c33" stroke-width="8" stroke-dasharray="95 18"/><path d="M120 135H1080M120 285H1080" stroke="#2468b4" stroke-width="8" stroke-dasharray="95 18"/><rect x="575" y="150" width="50" height="120" fill="#d3cbbb"/><g fill="#65747a"><circle cx="170" cy="180" r="8"/><circle cx="170" cy="215" r="8"/><circle cx="170" cy="250" r="8"/><circle cx="220" cy="180" r="8"/><circle cx="220" cy="215" r="8"/><circle cx="220" cy="250" r="8"/><circle cx="270" cy="180" r="8"/><circle cx="270" cy="215" r="8"/><circle cx="270" cy="250" r="8"/><circle cx="320" cy="180" r="8"/><circle cx="320" cy="215" r="8"/><circle cx="320" cy="250" r="8"/><circle cx="670" cy="180" r="8"/><circle cx="670" cy="215" r="8"/><circle cx="670" cy="250" r="8"/><circle cx="720" cy="180" r="8"/><circle cx="720" cy="215" r="8"/><circle cx="720" cy="250" r="8"/><circle cx="770" cy="180" r="8"/><circle cx="770" cy="215" r="8"/><circle cx="770" cy="250" r="8"/><circle cx="820" cy="180" r="8"/><circle cx="820" cy="215" r="8"/><circle cx="820" cy="250" r="8"/></g><path d="M170 180V250M220 180V250M670 180V250M720 180V250" stroke="#0d5266" stroke-width="18" opacity=".23"/><text x="600" y="42" text-anchor="middle" font-size="26" font-weight="850">DO NOT TRUST THE PATTERN—TRACE THE CONNECTED METAL</text><text x="600" y="405" text-anchor="middle" font-size="22" font-weight="750">Side rails can be split. Check continuity with power off.</text><text x="600" y="225" text-anchor="middle" font-size="18" font-weight="800" transform="rotate(-90 600 225)">CENTRE TRENCH</text></g>
+</svg>
+:::
+
+Reference: [SparkFun, “How to Use a Breadboard”](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/).
+
+## 3. KCL at a junction, KVL around a loop
+
+::: {.field-guide-card}
+<svg viewBox="0 0 1200 450" role="img" aria-labelledby="k-title k-desc">
+  <title id="k-title">Kirchhoff current and voltage rules</title><desc id="k-desc">Incoming current at a junction equals outgoing branch currents. Around a closed loop, voltage rises and drops sum to zero.</desc>
+  <defs><marker id="arrow-k" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#152832"/></marker></defs>
+  <g font-family="system-ui,sans-serif" fill="#152832" stroke="#152832" stroke-width="6"><g transform="translate(35 35)"><rect width="520" height="365" rx="22" fill="#e7f6f8"/><text x="260" y="45" text-anchor="middle" stroke="none" font-size="27" font-weight="850">KCL: CURRENT AT A NODE</text><path d="M60 185H245" fill="none" marker-end="url(#arrow-k)"/><path d="M260 185L445 95" fill="none" marker-end="url(#arrow-k)"/><path d="M260 185L445 275" fill="none" marker-end="url(#arrow-k)"/><circle cx="260" cy="185" r="13" fill="#152832"/><text x="120" y="160" stroke="none" font-size="24">I₁ = 3 A</text><text x="365" y="90" stroke="none" font-size="24">I₂ = 1 A</text><text x="360" y="315" stroke="none" font-size="24">I₃ = 2 A</text><text x="260" y="350" text-anchor="middle" stroke="none" font-size="26" font-weight="800">3 A in = 1 A + 2 A out</text></g><g transform="translate(645 35)"><rect width="520" height="365" rx="22" fill="#fff0e7"/><text x="260" y="45" text-anchor="middle" stroke="none" font-size="27" font-weight="850">KVL: VOLTAGE AROUND A LOOP</text><path d="M80 105H440V290H80Z" fill="none"/><path d="M80 150H45M115 150H80"/><path d="M65 130V170M95 115V185"/><path d="M190 105L205 80L230 130L255 80L280 130L305 80L325 105" fill="none"/><circle cx="440" cy="200" r="42" fill="#fff"/><text x="440" y="210" text-anchor="middle" stroke="none" font-size="22" font-weight="800">LOAD</text><text x="260" y="158" text-anchor="middle" stroke="none" font-size="22">Resistor drop: −4 V</text><text x="430" y="265" text-anchor="end" stroke="none" font-size="22">Load: −8 V</text><text x="120" y="245" stroke="none" font-size="22">Source: +12 V</text><text x="260" y="350" text-anchor="middle" stroke="none" font-size="26" font-weight="800">+12 V − 4 V − 8 V = 0 V</text></g></g>
+</svg>
+:::
+
+Reference: [OpenStax, “Kirchhoff’s Rules”](https://openstax.org/books/college-physics-2e/pages/21-3-kirchhoffs-rules).
+
+## 4. Capacitor timing a relay-controlled horn
+
+::: {.field-guide-card .field-guide-card--warning}
+<svg viewBox="0 0 1200 500" role="img" aria-labelledby="horn-title horn-desc">
+  <title id="horn-title">Concept diagram for capacitor timing and an automotive relay horn circuit</title><desc id="horn-desc">A low-current resistor-capacitor timer drives an isolated relay driver. A separate fused twelve-volt loop supplies the horn through relay terminals 30 and 87. A controller never drives the relay coil or horn directly.</desc>
+  <defs><marker id="arrow-h" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#152832"/></marker></defs>
+  <g font-family="system-ui,sans-serif" fill="#152832" stroke="#152832" stroke-width="5"><rect x="35" y="50" width="500" height="385" rx="22" fill="#e7f6f8"/><text x="285" y="90" text-anchor="middle" stroke="none" font-size="27" font-weight="850">LOW-CURRENT CONTROL SIDE</text><path d="M85 190H160L175 165L200 215L225 165L250 215L275 165L295 190H360" fill="none"/><path d="M360 145V235M390 145V235M390 190H470"/><text x="225" y="150" text-anchor="middle" stroke="none" font-size="22">R limits charge current</text><text x="375" y="270" text-anchor="middle" stroke="none" font-size="22">C stores charge</text><rect x="150" y="315" width="270" height="75" rx="14" fill="#fff"/><text x="285" y="348" text-anchor="middle" stroke="none" font-size="22" font-weight="800">TRANSISTOR / RELAY DRIVER</text><text x="285" y="375" text-anchor="middle" stroke="none" font-size="18">with flyback protection</text><path d="M375 235L330 315" marker-end="url(#arrow-h)"/><rect x="665" y="50" width="500" height="385" rx="22" fill="#fff0e7"/><text x="915" y="90" text-anchor="middle" stroke="none" font-size="27" font-weight="850">FUSED 12 V LOAD SIDE</text><path d="M720 180H805"/><rect x="805" y="155" width="70" height="50" fill="#fff"/><text x="840" y="188" text-anchor="middle" stroke="none" font-size="19" font-weight="800">FUSE</text><path d="M875 180H975M1015 180H1105V330H720V180" fill="none"/><circle cx="1040" cy="255" r="52" fill="#fff"/><text x="1040" y="264" text-anchor="middle" stroke="none" font-size="24" font-weight="850">HORN</text><circle cx="995" cy="180" r="6" fill="#152832"/><path d="M965 145L1015 180"/><text x="995" y="125" text-anchor="middle" stroke="none" font-size="22" font-weight="800">87</text><text x="930" y="210" text-anchor="middle" stroke="none" font-size="22" font-weight="800">30</text><text x="760" y="150" text-anchor="middle" stroke="none" font-size="22">+12 V</text><text x="760" y="360" text-anchor="middle" stroke="none" font-size="22">0 V / chassis return</text><path d="M535 350H665" stroke-dasharray="12 10" marker-end="url(#arrow-h)"/><text x="600" y="335" text-anchor="middle" stroke="none" font-size="19" font-weight="800">ISOLATED CONTROL</text></g>
+</svg>
+:::
+
+This is a **concept**, not a wiring instruction for an unknown horn. An automotive relay can switch the horn if its contact rating, coil voltage, fuse, wire size, terminals, and enclosure suit the actual load. The capacitor belongs in the low-current control/timing stage; do not ask a BeagleBone pin to drive a relay coil or horn. Verify the specific relay pinout—common automotive numbers are 30, 85, 86, 87, and sometimes 87a.
+
+References: [OpenStax, “RC Circuits”](https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits) and [BeagleBoard.org Getting Started](https://docs.beagleboard.org/intro/support/getting-started.html). The relay-driver stage must be designed from the actual relay datasheet.
+
+## 5. CAD constraints and dimensions
+
+::: {.field-guide-card}
+<svg viewBox="0 0 1200 430" role="img" aria-labelledby="cad-title cad-desc"><title id="cad-title">A constrained CAD sketch</title><desc id="cad-desc">A rectangular plate is tied to the origin and controlled by width, height, equal hole diameters, and offsets.</desc><defs><marker id="cad-a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#152832"/></marker></defs><g font-family="system-ui,sans-serif" fill="#152832" stroke="#152832" stroke-width="5"><rect x="330" y="105" width="540" height="230" rx="18" fill="#e7f6f8"/><circle cx="405" cy="180" r="28" fill="#fff"/><circle cx="795" cy="180" r="28" fill="#fff"/><circle cx="405" cy="270" r="28" fill="#fff"/><circle cx="795" cy="270" r="28" fill="#fff"/><path d="M330 75H870M330 58V92M870 58V92"/><text x="600" y="62" text-anchor="middle" stroke="none" font-size="24" font-weight="800">WIDTH = 120 mm</text><path d="M900 105V335M885 105H915M885 335H915"/><text x="935" y="225" stroke="none" font-size="24" font-weight="800">60 mm</text><path d="M585 205H615M600 190V220"/><text x="620" y="205" stroke="none" font-size="22">Origin / symmetry</text><path d="M405 180L460 135" marker-end="url(#cad-a)"/><text x="465" y="130" stroke="none" font-size="22">Ø 8 mm · equal</text><text x="600" y="390" text-anchor="middle" stroke="none" font-size="25" font-weight="800">Dimensions control size. Constraints control relationships.</text></g></svg>
+:::
+
+Reference: [Autodesk Fusion Help, “Constraints in sketches”](https://help.autodesk.com/cloudhelp/ENU/Fusion-Sketch/files/SKT-CONSTRAINTS.htm).
+
+## 6. Fabrication changes the geometry
+
+::: {.field-guide-card}
+<svg viewBox="0 0 1200 430" role="img" aria-labelledby="fab-title fab-desc"><title id="fab-title">Laser kerf and 3D print orientation</title><desc id="fab-desc">Laser kerf removes material around the toolpath, so fit requires a measured test. A printed bracket has different support needs and strength depending on layer orientation.</desc><g font-family="system-ui,sans-serif" fill="#152832" stroke="#152832" stroke-width="5"><g transform="translate(40 40)"><rect width="520" height="340" rx="22" fill="#fff0e7"/><text x="260" y="42" text-anchor="middle" stroke="none" font-size="26" font-weight="850">LASER: MEASURE KERF FIRST</text><rect x="90" y="105" width="150" height="150" fill="#fff"/><path d="M240 105V255" stroke="#e1352b" stroke-width="18"/><rect x="290" y="105" width="150" height="150" fill="#fff"/><path d="M290 105V255" stroke="#e1352b" stroke-width="18"/><text x="260" y="300" text-anchor="middle" stroke="none" font-size="22">Beam removes material around the path</text><text x="260" y="326" text-anchor="middle" stroke="none" font-size="20" font-weight="800">Cut a fit test → measure → compensate</text></g><g transform="translate(640 40)"><rect width="520" height="340" rx="22" fill="#e7f6f8"/><text x="260" y="42" text-anchor="middle" stroke="none" font-size="26" font-weight="850">3D PRINT: ORIENT ON PURPOSE</text><path d="M95 260H220V125H300V260H425" fill="#fff"/><path d="M95 140H425M95 155H425M95 170H425M95 185H425M95 200H425M95 215H425M95 230H425M95 245H425" stroke="#60a6b5" stroke-width="3"/><path d="M330 115L420 185M420 185L395 180M420 185L405 162" stroke="#b3261e" stroke-width="7"/><text x="350" y="95" stroke="none" font-size="20" font-weight="800">Load direction</text><text x="260" y="305" text-anchor="middle" stroke="none" font-size="22">Layers, support, finish, time, strength</text><text x="260" y="330" text-anchor="middle" stroke="none" font-size="20" font-weight="800">Inspect the slice preview before printing</text></g></g></svg>
+:::
+
+References: [Trotec, “Vector Processing”](https://www.troteclaser.com/en-us/helpcenter/software/ruby/vector-processing) and [Prusa Knowledge Base, “Object orientation”](https://help.prusa3d.com/article/object-orientation_1658).
+
+## Source and reuse note
+
+The web references explain the underlying techniques. The diagrams on this page are new, simplified classroom drawings created for this site. Do not substitute them for a manufacturer’s manual, component datasheet, machine training, or teacher approval.
