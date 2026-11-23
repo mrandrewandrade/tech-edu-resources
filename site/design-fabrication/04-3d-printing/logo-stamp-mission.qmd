@@ -1,6 +1,6 @@
 ---
-title: "Mission 2 | Turn Your Logo into a Stamp"
-description: "Convert an original logo into a mirrored 38 mm relief stamp, test the impression, and prepare the flat back for a later lighthouse handle."
+title: "Mission 2 | AA Arrow Stamp → Your Own Stamp"
+description: "Learn the stamp workflow with the supplied AA arrow, then transfer it to an original mirrored relief stamp. PCSS and faux-enamel work are optional bonuses afterward."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, computer-aided-design, additive-manufacturing, stl, print-orientation, dimension, mirror, evaluation, iteration]
 highlighted-terms: [logo, stl]
@@ -9,52 +9,61 @@ execute: {enabled: false}
 ---
 
 ::: {.ter-project-brief}
-## The mission
+## The required stamp mission
 
-Turn your **original logo** into a working circular stamp. The finished stamp must make a clear, correctly oriented impression. Build the same design idea in either **Tinkercad** or **Onshape**, export it for printing, test it and improve it.
+Complete the stamp project in this order:
+
+1. **V1 - guided AA arrow stamp:** build the supplied AA arrow as a mirrored circular relief stamp. This is the technique checkpoint.
+2. **V2 - your own stamp:** repeat the same workflow with a simple original logo. This is the assessed transfer task.
+
+Do not begin the PCSS or faux-enamel bonuses until V1 and V2 have passed their impression tests.
 :::
 
-This mission follows the introductory keychain. The keychain taught placement, alignment and grouping. The stamp adds **relief, mirroring, minimum feature size and physical testing**. The later faux-enamel brooch uses the same logo again, but changes raised stamping surfaces into enclosed colour cavities.
+The introductory keychain taught placement, alignment and grouping. The stamp adds **relief, mirroring, minimum feature size and physical testing**. Starting with the AA arrow keeps the first stamp readable and lets everyone practise the same process before making original design decisions.
 
-## Standard size
+## Files for V1 - AA arrow
 
-Use a **38 mm diameter stamp**. This is approximately **1.5 inches** and gives most student logos enough room to remain printable and readable.
+- [AA arrow PNG reference](../../assets/branding/logo/aa-logo-transparent.png){download="aa-arrow-reference.png"}
+- [Editable AA arrow SVG](../../assets/onshape-logo-stamp/photopea-workflow/aa-logo-vector.svg){download="aa-arrow-vector.svg"}
+- [Centred and mirrored AA DXF for Onshape](../../assets/branding/logo/aa-logo-stamp-32mm-mirrored.dxf){download="aa-arrow-stamp-mirrored.dxf"}
 
-A **25.4 mm (1 inch)** stamp is an optional teacher-approved challenge for a very simple logo. Do not shrink a detailed logo until its lines disappear.
+Use the supplied geometry to learn the fabrication process. You are not being assessed on inventing the AA mark.
+
+## Standard stamp size
+
+Use a **1.50 in diameter stamp**. The backing and relief dimensions below are used for both V1 and V2.
 
 | Feature | Required dimension |
 |---|---:|
-| Stamp diameter | 38 mm |
-| Flat backing thickness | 4 mm |
-| Raised logo relief | 2 mm |
-| Minimum logo stroke | 1.2 mm |
-| Minimum gap between details | 1.2 mm |
-| Clear edge margin | at least 3 mm |
-| Maximum logo width | about 30-32 mm |
+| Stamp diameter | 1.50 in |
+| Flat backing thickness | 0.16 in |
+| Raised logo relief | 0.08 in |
+| Minimum logo stroke | 0.05 in |
+| Minimum gap between details | 0.05 in |
+| Clear edge margin | at least 0.12 in |
+| Maximum logo width | about 1.25 in |
 
-![Third-angle orthographic drawing of the 38 mm stamp coin, including front, top and right-side views and section A-A.](../../assets/tinkercad-logo-stamp/logo-stamp-orthographic.svg){.ter-concept-diagram}
+![Third-angle orthographic drawing of the circular stamp coin, including front, top and right-side views and section A-A.](../../assets/tinkercad-logo-stamp/logo-stamp-orthographic.svg){.ter-concept-diagram}
 
 ## The important idea: mirror the stamping face
 
 A raised stamp prints the opposite of what is on its face. **Mirror the logo before printing** so letters, initials and directional symbols appear correctly in the impression.
 
-Before exporting, use the top view and ask: "If I press this face downward, will the result read correctly?"
+Before exporting, use the top view and ask: “If I press this face downward, will the result read correctly?” The AA arrow should look backwards on the stamp face and correct in the impression.
 
-## Choose your CAD pathway
+## Choose one CAD pathway
 
 ### Tinkercad pathway
 
-Use the [step-by-step Tinkercad logo stamp guide](tinkercad-logo-stamp.qmd). This pathway reinforces import, resize, mirror, align, workplane height and grouping.
+Use the [step-by-step Tinkercad stamp guide](tinkercad-logo-stamp.qmd). It reinforces SVG import, resize, mirror, align, workplane height and grouping.
 
 ### Onshape pathway
 
-Use the [parametric Onshape logo stamp guide](onshape-logo-stamp.qmd). This pathway adds variables, constrained sketches, feature order and an editable model that can change size reliably.
+Use the [step-by-step Onshape stamp guide](onshape-logo-stamp.qmd). It adds variables, constrained sketches, feature order and an editable model.
 
-Both pathways produce the same required object and use the same success criteria.
+Both pathways produce the same required object and use the same success criteria. Board-approved Autodesk Inventor, Fusion, SolidWorks, FreeCAD or another capable CAD package is acceptable when the student can show equivalent dimensions, mirror direction, editable source and exported manufacturing file.
 
-The mission is **software-neutral**. A student may use board-approved Autodesk Inventor, Fusion, SolidWorks, FreeCAD or another capable CAD system when they can demonstrate the same dimensions, mirror direction, relief, flat back, editable source and exported manufacturing file. The concepts transfer; only the interface and evidence screens change.
-
-Tinkercad is our affectionate **Temu CAD** option: fast, accessible and slightly janky. Onshape is the parametric option. Neither name on the toolbar earns marks - the design evidence does.
+Tinkercad remains our affectionate **Temu CAD** option: fast, accessible and slightly janky. Onshape records more design intent. Neither toolbar earns marks; the evidence does.
 
 ::: {.callout-important}
 ## Web-tool policy check
@@ -62,53 +71,81 @@ Tinkercad is our affectionate **Temu CAD** option: fast, accessible and slightly
 Before assigning a student account in Tinkercad, Onshape, Photopea or another online service, check the current board-approved-tool process, privacy/security guidance, vendor age restriction and local parent/guardian permission procedure. Confirm that the required Ontario third-party software notice has been issued. Obtain permission when required and provide an approved alternative when access is unavailable. Read [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission).
 :::
 
-## Originality rule
+# V1 - guided AA arrow stamp
 
-Use your own personal, business, club or community logo. Do not copy a company, game, team, social-media or clothing logo. You may simplify your own earlier logo so it stamps cleanly.
+1. Open or trace the supplied AA arrow artwork.
+2. Import the SVG into Tinkercad, or use the prepared mirrored DXF in Onshape.
+3. Build the standard circular backing.
+4. Mirror and centre the AA arrow.
+5. Create the raised relief and keep the rear face flat.
+6. Export the STL and inspect every slicer layer.
+7. Print and make one impression in teacher-approved modelling material.
+8. Fix any backwards, incomplete, crowded or weak areas before starting V2.
 
-## Keep the back flat
+### V1 checkpoint evidence
 
-Do not add a handle during this mission. The flat back lets the teacher attach a separate **Technology Commons lighthouse handle** after the stamp face has passed its impression test. The handle is an extension, not a way to hide a weak stamp design.
+- top-view CAD screenshot;
+- side-view screenshot showing backing and relief;
+- exported AA arrow STL;
+- photograph of the AA impression; and
+- one sentence identifying the first problem or confirming why the test passed.
 
-## What this version can stamp
+# V2 - your own original stamp
 
-The standard class print is a rigid **relief stamp for modelling clay or plasticine**. A rigid PLA stamp is useful for checking the logo, mirror direction, spacing and handle, but it should not be graded by its ink result on paper.
+Create a simple original personal, business, club or community logo. Do not copy a company, game, team, social-media or clothing logo.
 
-If the class makes an ink-on-paper version, the stamp face needs an approved **flexible material** and a printer-specific setup. [Prusa's stamp-making guide](https://blog.prusa3d.com/how-to-3d-print-stamps_108285/) recommends flexible material for ink stamps and explains why rigid PLA often leaves blank areas. The CAD dimensions and mirrored logo remain the same.
+Repeat the proven V1 workflow:
 
-## Test the impression
+1. prepare the original artwork in Photopea;
+2. export clean SVG geometry;
+3. mirror the stamping face;
+4. build the same standard backing and relief;
+5. inspect, export, slice and print;
+6. test the impression; and
+7. revise the editable source using physical evidence.
 
-1. Follow the teacher's print orientation for the selected material. For the rigid class prototype, place the flat back on the build plate and the raised design upward.
-2. Remove loose strings without rounding off the relief.
-3. Test first in modelling clay, plasticine or another teacher-approved material.
-4. If a teacher-approved washable stamp pad is used, test on scrap paper and clean the stamp as directed.
-5. Compare the printed stamp face with the impression.
-6. Record one problem and revise the editable source model.
-
-Do not use the printed part on skin, food, property or permanent surfaces.
-
-## Success criteria
-
-- The impression is readable and correctly oriented.
-- The logo is centred with at least a 3 mm edge margin.
-- All important strokes and gaps are at least 1.2 mm.
-- The raised relief is 2 mm above a 4 mm backing.
-- The stamp back is flat and available for the later handle.
-- The exported STL matches the editable source model.
-- The student tests, evaluates and revises the design.
-
-## Digital submission
+### V2 final submission
 
 Submit:
 
-1. a top-view screenshot of the completed model;
-2. a side-view screenshot showing the 4 mm backing and 2 mm relief;
-3. the exported STL;
+1. the original editable SVG;
+2. top and side CAD screenshots;
+3. `lastname-original-logo-stamp.stl`;
 4. one photograph of the physical impression beside the stamp; and
-5. a short reflection explaining what changed after the test.
+5. a 100–150 word reflection comparing V1 and V2 and explaining one evidence-based improvement.
 
-File name: `lastname-logo-stamp.stl`
+## Success criteria
 
-## Next mission
+- V1 clearly matches the supplied AA arrow.
+- V2 uses a simple original logo.
+- Both impressions are readable and correctly oriented.
+- The logo is centred with at least a 0.12 in edge margin.
+- Important strokes and gaps are at least 0.05 in.
+- The relief rises 0.08 in above a 0.16 in flat backing.
+- Each exported STL matches its editable source model.
+- The student tests, evaluates and revises the design.
 
-After the stamp, reuse the same original logo for the [Tinkercad Faux-Enamel Logo Earring or Brooch](tinkercad-faux-enamel-logo.qmd). Instead of one raised stamping face, that project creates enclosed recessed areas that can be filled with teacher-approved nail polish.
+## Safe testing
+
+Use teacher-approved modelling clay, plasticine or another approved test material. Do not use the printed stamp on food, skin, property or permanent surfaces. Follow the course printer, cleanup and material-handling procedures.
+
+## Bonus 1 - PCSS stamp challenge
+
+After V1 and V2 pass, adapt the PCSS artwork into a stamp. The crest is deliberately more difficult because it contains curved text, rings and small details. Simplify it honestly rather than forcing every tiny feature into the print.
+
+- [PCSS reference artwork](../../assets/branding/pcss/pcss-warriors.png){download="pcss-warriors.png"}
+- [Clean PCSS vector structure](../../assets/tinkercad-logo-jewellery/source/pcss-white-structure.svg){download="pcss-stamp-vector.svg"}
+
+The bonus earns credit for successful simplification, mirroring and impression quality, not for merely importing a complicated file.
+
+## Bonus 2 - faux-enamel extension
+
+Only after the two required stamps are complete, reuse the successful original logo for the [optional Tinkercad faux-enamel extension](tinkercad-faux-enamel-logo.qmd). It is not part of the required stamp grade. The [parametric Onshape faux-enamel challenge](faux-enamel-pin-jewellery.qmd) is a further optional extension.
+
+## Teacher note - Classroom order
+
+Keep these as unposted drafts until materials and timing are confirmed:
+
+1. **Logo Stamp Mission - AA Arrow V1 → Original V2** - required assignment.
+2. **Bonus - PCSS Stamp Challenge** - optional, after the required stamp.
+3. **Bonus - Faux-Enamel Badge Extension** - optional, after the stamp project.

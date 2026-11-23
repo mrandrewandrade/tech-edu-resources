@@ -104,7 +104,7 @@ class DesignFabricationTests(unittest.TestCase):
             'section: "6. Accessible Design"',
             'section: "7. Laser Cutting and Fabrication Tools"',
             'section: "8. Making the Phone Holder"',
-            'section: "9. Advanced Making: Stamp or Faux-Enamel Jewellery"',
+            'section: "9. Stamp First, Optional Bonuses After"',
             'section: "CAD Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]

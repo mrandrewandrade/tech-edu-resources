@@ -211,8 +211,8 @@
     {
       "id": "track-design-fabrication-advanced-making",
       "kind": "track",
-      "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
-      "summary": "Turn an original logo into a tested stamp, then reuse it as faux-enamel jewellery.",
+      "title": "Stamp First, Optional Bonuses After",
+      "summary": "Learn with the AA arrow, transfer the process to an original stamp, then choose optional PCSS or faux-enamel bonuses.",
       "href": "../design-fabrication/04-3d-printing/index.html",
       "course": "design-fabrication",
       "track": "advanced-making",
@@ -910,8 +910,8 @@
     {
       "id": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
       "kind": "lesson",
-      "title": "Mission 2: Logo Stamp",
-      "summary": "Convert an original logo into a mirrored 38 mm relief stamp and test its impression.",
+      "title": "Mission 2: AA Stamp → Your Stamp",
+      "summary": "Build and test the supplied AA arrow stamp, then repeat the workflow with an original logo.",
       "href": "../design-fabrication/04-3d-printing/logo-stamp-mission.html",
       "source": "design-fabrication/04-3d-printing/logo-stamp-mission.qmd",
       "course": "design-fabrication",
@@ -927,8 +927,8 @@
     {
       "id": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
       "kind": "lesson",
-      "title": "Tinkercad Logo Stamp",
-      "summary": "Import, mirror, align, group, export, and test the stamp in Tinkercad.",
+      "title": "Tinkercad Stamp Pathway",
+      "summary": "Build the AA arrow first, then import, mirror, align, group, export, and test an original stamp.",
       "href": "../design-fabrication/04-3d-printing/tinkercad-logo-stamp.html",
       "source": "design-fabrication/04-3d-printing/tinkercad-logo-stamp.qmd",
       "course": "design-fabrication",
@@ -943,8 +943,8 @@
     {
       "id": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
       "kind": "lesson",
-      "title": "Onshape Logo Stamp",
-      "summary": "Rebuild the stamp with variables, constrained sketches, and named features.",
+      "title": "Onshape Stamp Pathway",
+      "summary": "Build the same required AA-to-original sequence with variables, constrained sketches, and named features.",
       "href": "../design-fabrication/04-3d-printing/onshape-logo-stamp.html",
       "source": "design-fabrication/04-3d-printing/onshape-logo-stamp.qmd",
       "course": "design-fabrication",
@@ -960,8 +960,8 @@
     {
       "id": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
       "kind": "lesson",
-      "title": "Mission 3: Tinkercad Faux-Enamel Brooch",
-      "summary": "Turn the logo into enclosed colour cavities for a printed brooch or earring.",
+      "title": "Bonus: Tinkercad Faux-Enamel Badge",
+      "summary": "Optionally reuse the successful original stamp logo as enclosed colour cavities.",
       "href": "../design-fabrication/04-3d-printing/tinkercad-faux-enamel-logo.html",
       "source": "design-fabrication/04-3d-printing/tinkercad-faux-enamel-logo.qmd",
       "course": "design-fabrication",
@@ -976,8 +976,8 @@
     {
       "id": "lesson-design-fabrication-04-3d-printing-faux-enamel-pin-jewellery-qmd",
       "kind": "lesson",
-      "title": "Onshape Faux-Enamel Jewellery",
-      "summary": "Develop the fillable jewellery design as an editable parametric Onshape model.",
+      "title": "Bonus: Onshape Faux-Enamel Jewellery",
+      "summary": "Optionally develop the fillable jewellery design as an editable parametric Onshape model.",
       "href": "../design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.html",
       "source": "design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.qmd",
       "course": "design-fabrication",
@@ -2438,6 +2438,11 @@
       "type": "related"
     },
     {
+      "from": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-faux-enamel-pin-jewellery-qmd",
+      "type": "related"
+    },
+    {
       "from": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
       "to": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
       "type": "sequence"
@@ -2445,6 +2450,11 @@
     {
       "from": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
       "to": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
       "type": "related"
     },
     {
@@ -2453,14 +2463,14 @@
       "type": "sequence"
     },
     {
-      "from": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
-      "to": "lesson-design-fabrication-04-3d-printing-faux-enamel-pin-jewellery-qmd",
-      "type": "sequence"
+      "from": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
+      "type": "related"
     },
     {
       "from": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
-      "to": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
-      "type": "related"
+      "to": "lesson-design-fabrication-04-3d-printing-faux-enamel-pin-jewellery-qmd",
+      "type": "sequence"
     },
     {
       "from": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",

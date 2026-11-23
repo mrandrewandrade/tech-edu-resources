@@ -1,6 +1,6 @@
 ---
-title: "3D Modelling + 3D Printing | Tinkercad, Onshape, Stamps & Faux-Enamel Jewellery"
-description: "A progressive 3D-modelling sequence from a basic keychain to a mirrored logo stamp and fillable faux-enamel jewellery, with Tinkercad and parametric Onshape pathways."
+title: "3D Modelling + 3D Printing | AA Stamp → Original Stamp"
+description: "A progressive 3D-modelling sequence from the keychain to a guided AA arrow stamp and an original stamp, with optional PCSS and faux-enamel bonuses afterward."
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
@@ -33,9 +33,9 @@ Read the detailed [software access, privacy and permission note](01-additive-cad
 ::: {.ter-project-brief}
 ## Current TAS project
 
-### Mission 2: Turn Your Logo into a Stamp
+### Mission 2: AA Arrow Stamp → Your Own Stamp
 
-Turn the logo from the introductory keychain into a **38 mm mirrored relief stamp**. Make the same required object in Tinkercad or Onshape, test the impression and revise it. Keep the back flat for a later teacher-added lighthouse handle.
+First build the supplied **AA arrow** as a 1.50 in mirrored relief stamp. Then repeat the proven workflow with an **original logo**, test both impressions and revise the editable source. Keep the back flat for a later teacher-added lighthouse handle.
 
 [Open the Logo Stamp mission →](logo-stamp-mission.qmd)
 :::
@@ -43,9 +43,9 @@ Turn the logo from the introductory keychain into a **38 mm mirrored relief stam
 ## Classroom mission sequence
 
 1. **Basic keychain:** learn the workplane, primitive shapes, alignment, grouping and export.
-2. **Logo stamp:** add mirroring, controlled relief, minimum feature size and physical impression testing.
-3. **Faux-enamel brooch:** turn the same logo into enclosed cavities and finish them with teacher-approved nail polish.
-4. **Onshape rebuild:** reproduce the stamp or brooch with variables, constraints and an editable feature history.
+2. **Guided AA arrow stamp:** learn mirroring, controlled relief and impression testing with common artwork.
+3. **Original-logo stamp:** transfer the process to an original design and revise it from physical evidence.
+4. **Optional bonuses:** attempt the complex PCSS stamp, faux-enamel finishing or a parametric Onshape extension only after the required stamp is complete.
 
 ## Learning sequence
 
@@ -53,11 +53,12 @@ Turn the logo from the introductory keychain into a **38 mm mirrored relief stam
   <li><a href="01-additive-cad.qmd">3D Modelling Foundations: Onshape CAD vs Blender Mesh</a>: choose the model type, use constraints and dimensions, and preserve design intent.</li>
   <li><a href="02-slicing-orientation.qmd">Slicing, Orientation &amp; Supports</a>: connect layer height, walls, infill, toolpaths, strength, time, and surface quality.</li>
   <li><a href="03-tolerances-functional-parts.qmd">Tolerances &amp; Functional Parts</a>: test holes, clearance, press fits, fasteners, assemblies, brackets, adapters, and repair parts.</li>
-  <li><a href="logo-stamp-mission.qmd">Mission 2: Turn Your Logo into a Stamp</a>: common dimensions, success criteria, impression test and submission.</li>
-  <li><a href="tinkercad-logo-stamp.qmd">Tinkercad Logo Stamp</a>: import, mirror, align, group and export the 38 mm stamp.</li>
-  <li><a href="onshape-logo-stamp.qmd">Onshape Logo Stamp</a>: rebuild the stamp with variables, constrained sketches and named features.</li>
-  <li><a href="tinkercad-faux-enamel-logo.qmd">Mission 3: Tinkercad Faux-Enamel Logo Earring or Brooch</a>: reuse the logo as fillable colour cavities.</li>
-  <li><a href="faux-enamel-pin-jewellery.qmd">Parametric Faux-Enamel Pin / Jewellery</a>: the later Onshape version with constrained sketches and evidence-based revision.</li>
+  <li><a href="logo-stamp-mission.qmd">Mission 2: AA Arrow Stamp → Your Own Stamp</a>: guided checkpoint, original transfer task, impression tests and submission.</li>
+  <li><a href="tinkercad-logo-stamp.qmd">Tinkercad Stamp Pathway</a>: build the AA arrow first, then repeat it with an original logo.</li>
+  <li><a href="onshape-logo-stamp.qmd">Onshape Stamp Pathway</a>: build the same required sequence with variables, constrained sketches and named features.</li>
+  <li><a href="logo-stamp-mission.qmd#bonus-1--pcss-stamp-challenge">Bonus: PCSS Stamp Challenge</a>: simplify the more complex school crest after both required stamps pass.</li>
+  <li><a href="tinkercad-faux-enamel-logo.qmd">Bonus: Tinkercad Faux-Enamel Badge</a>: optional post-stamp reuse of the successful original logo.</li>
+  <li><a href="faux-enamel-pin-jewellery.qmd">Bonus: Parametric Faux-Enamel Jewellery</a>: a further optional Onshape extension.</li>
   <li><a href="04-design-challenge.qmd">Functional-Part Design Challenge</a>: a general/advanced project for a measured need.</li>
 </ol>
 
@@ -75,4 +76,4 @@ Relevant senior contexts can include **TDJ3M/TDJ4M**, **TDJ3O/TDJ4O**, and appro
 
 Model with a board-approved option. Possibilities include education access to [Onshape](https://www.onshape.com/en/education/plans), [Autodesk Inventor](https://www.autodesk.com/education/edu-software/overview), [Autodesk Fusion](https://www.autodesk.com/education/edu-software/overview) or SolidWorks, plus open-source [FreeCAD](https://www.freecad.org/) and [OpenSCAD](https://openscad.org/). Compare downloadable work on [Printables](https://www.printables.com/), [Thingiverse](https://www.thingiverse.com/), [NASA 3D Resources](https://science.nasa.gov/3d-resources/), and [Smithsonian Open Access](https://www.si.edu/OpenAccess), then slice with [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/), [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura/), or the [official OrcaSlicer repository](https://github.com/OrcaSlicer/OrcaSlicer). Check each model's licence, scale, geometry, and suitability. More provisional options are in the [full free-resource directory · Work in Progress](../resources/work-in-progress/index.qmd).
 
-Start with the [Logo Stamp mission](logo-stamp-mission.qmd). Continue to the [Tinkercad faux-enamel brooch](tinkercad-faux-enamel-logo.qmd), then use [3D Modelling Foundations](01-additive-cad.qmd) for the parametric Onshape pathway.
+Start with the [AA Arrow Stamp → Your Own Stamp mission](logo-stamp-mission.qmd). Use the optional PCSS or faux-enamel extensions only after the required stamp work passes its impression tests.

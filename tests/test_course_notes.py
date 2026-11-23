@@ -201,8 +201,8 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertLess(catalogue.index("Choose Your Phone Holder"), catalogue.index("CAD You Need"))
         self.assertLess(catalogue.index("CAD You Need"), catalogue.index("Tools and Machines"))
         self.assertLess(catalogue.index("Tools and Machines"), catalogue.index("Build Steps"))
-        self.assertLess(catalogue.index("Build Steps"), catalogue.index("Advanced Making: Stamp or Faux-Enamel Jewellery"))
-        self.assertLess(catalogue.index("Advanced Making: Stamp or Faux-Enamel Jewellery"), catalogue.index("## Highlighted tools"))
+        self.assertLess(catalogue.index("Build Steps"), catalogue.index("Stamp First, Optional Bonuses After"))
+        self.assertLess(catalogue.index("Stamp First, Optional Bonuses After"), catalogue.index("## Highlighted tools"))
         self.assertIn('href="tools/index.html">CAD Tools</a>', design)
 
     def test_hubs_and_sidebar_number_sections_without_changing_titles_or_routes(self) -> None:

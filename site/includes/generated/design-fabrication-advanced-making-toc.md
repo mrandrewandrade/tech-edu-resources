@@ -20,42 +20,42 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="advanced-making" data-bs-total-lessons="5" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">9. Advanced Making: Stamp or Faux-Enamel Jewellery</a><span data-bs-learn-group-count>5 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">9. Stamp First, Optional Bonuses After</a><span data-bs-learn-group-count>5 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Mission 2: Logo Stamp&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Convert an original logo into a mirrored 38 mm relief stamp and test its impression.&quot;, &quot;A common brief and dimensions keep the Tinkercad and Onshape pathways comparable.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Mission 2: AA Stamp → Your Stamp&quot;, &quot;Stamp First, Optional Bonuses After&quot;]" data-bs-search-body="[&quot;Build and test the supplied AA arrow stamp, then repeat the workflow with an original logo.&quot;, &quot;The common checkpoint teaches mirroring and relief before the assessed transfer task.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Mission 2: Logo Stamp"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="logo-stamp-mission.html">1. Mission 2: Logo Stamp</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Convert an original logo into a mirrored 38 mm relief stamp and test its impression.</p>
-        <p>A common brief and dimensions keep the Tinkercad and Onshape pathways comparable.</p>
+        <summary aria-label="Show description for Mission 2: AA Stamp → Your Stamp"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="logo-stamp-mission.html">1. Mission 2: AA Stamp → Your Stamp</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Build and test the supplied AA arrow stamp, then repeat the workflow with an original logo.</p>
+        <p>The common checkpoint teaches mirroring and relief before the assessed transfer task.</p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Tinkercad Logo Stamp&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Import, mirror, align, group, export, and test the stamp in Tinkercad.&quot;, &quot;The first pathway extends the skills from the introductory keychain.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Tinkercad Stamp Pathway&quot;, &quot;Stamp First, Optional Bonuses After&quot;]" data-bs-search-body="[&quot;Build the AA arrow first, then import, mirror, align, group, export, and test an original stamp.&quot;, &quot;The browser-based pathway extends the skills from the introductory keychain.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Tinkercad Logo Stamp"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="tinkercad-logo-stamp.html">2. Tinkercad Logo Stamp</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Import, mirror, align, group, export, and test the stamp in Tinkercad.</p>
-        <p>The first pathway extends the skills from the introductory keychain.</p>
+        <summary aria-label="Show description for Tinkercad Stamp Pathway"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="tinkercad-logo-stamp.html">2. Tinkercad Stamp Pathway</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Build the AA arrow first, then import, mirror, align, group, export, and test an original stamp.</p>
+        <p>The browser-based pathway extends the skills from the introductory keychain.</p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Onshape Logo Stamp&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Rebuild the stamp with variables, constrained sketches, and named features.&quot;, &quot;The parametric version preserves design intent and supports controlled revisions.&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Onshape Stamp Pathway&quot;, &quot;Stamp First, Optional Bonuses After&quot;]" data-bs-search-body="[&quot;Build the same required AA-to-original sequence with variables, constrained sketches, and named features.&quot;, &quot;The parametric version preserves design intent and supports controlled revisions.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Onshape Logo Stamp"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="onshape-logo-stamp.html">3. Onshape Logo Stamp</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Rebuild the stamp with variables, constrained sketches, and named features.</p>
+        <summary aria-label="Show description for Onshape Stamp Pathway"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="onshape-logo-stamp.html">3. Onshape Stamp Pathway</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Build the same required AA-to-original sequence with variables, constrained sketches, and named features.</p>
         <p>The parametric version preserves design intent and supports controlled revisions.</p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Mission 3: Tinkercad Faux-Enamel Brooch&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Turn the logo into enclosed colour cavities for a printed brooch or earring.&quot;, &quot;Students reuse the same visual identity while designing for nail-polish filling and attached findings.&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Bonus: Tinkercad Faux-Enamel Badge&quot;, &quot;Stamp First, Optional Bonuses After&quot;]" data-bs-search-body="[&quot;Optionally reuse the successful original stamp logo as enclosed colour cavities.&quot;, &quot;This post-stamp bonus introduces one-colour printing and teacher-approved finishing without replacing the required stamps.&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Mission 3: Tinkercad Faux-Enamel Brooch"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="tinkercad-faux-enamel-logo.html">4. Mission 3: Tinkercad Faux-Enamel Brooch</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Turn the logo into enclosed colour cavities for a printed brooch or earring.</p>
-        <p>Students reuse the same visual identity while designing for nail-polish filling and attached findings.</p>
+        <summary aria-label="Show description for Bonus: Tinkercad Faux-Enamel Badge"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="tinkercad-faux-enamel-logo.html">4. Bonus: Tinkercad Faux-Enamel Badge</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Optionally reuse the successful original stamp logo as enclosed colour cavities.</p>
+        <p>This post-stamp bonus introduces one-colour printing and teacher-approved finishing without replacing the required stamps.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/">3D-Printed Faux Enamel Jewellery</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Onshape Faux-Enamel Jewellery&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Develop the fillable jewellery design as an editable parametric Onshape model.&quot;, &quot;The later extension connects constrained CAD, orthographic evidence, printing, and finishing.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Bonus: Onshape Faux-Enamel Jewellery&quot;, &quot;Stamp First, Optional Bonuses After&quot;]" data-bs-search-body="[&quot;Optionally develop the fillable jewellery design as an editable parametric Onshape model.&quot;, &quot;The later extension connects constrained CAD, orthographic evidence, printing, and finishing.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Onshape Faux-Enamel Jewellery"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="faux-enamel-pin-jewellery.html">5. Onshape Faux-Enamel Jewellery</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Develop the fillable jewellery design as an editable parametric Onshape model.</p>
+        <summary aria-label="Show description for Bonus: Onshape Faux-Enamel Jewellery"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="faux-enamel-pin-jewellery.html">5. Bonus: Onshape Faux-Enamel Jewellery</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Optionally develop the fillable jewellery design as an editable parametric Onshape model.</p>
         <p>The later extension connects constrained CAD, orthographic evidence, printing, and finishing.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Faux-Stained-Glass-3D-Printed/">Faux Stained Glass - 3D Printed</a></p>
       </details>

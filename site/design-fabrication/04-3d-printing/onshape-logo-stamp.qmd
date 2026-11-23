@@ -1,6 +1,6 @@
 ---
-title: "Onshape Logo Stamp | Photopea to Parametric CAD"
-description: "Turn original raster artwork into clean Photopea vector layers, prepare a mirrored DXF and build a 38 mm parametric stamp in Onshape."
+title: "Onshape Stamp | AA Arrow First, Original Logo Second"
+description: "Build the supplied AA arrow as a parametric stamp, then repeat the workflow with an original logo."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, parametric-modelling, computer-aided-design, sketch, geometric-constraint, dimension, mirror, stl, evaluation, iteration]
 highlighted-terms: [logo, stl]
@@ -8,13 +8,20 @@ toc: true
 execute: {enabled: false}
 ---
 
-Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the common dimensions, success criteria and submission list.
+Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the common dimensions, success criteria and submission list. Complete **V1 with the supplied AA arrow**, then repeat the process for **V2 with your own original logo**.
 
 ::: {.callout-important}
 ## Account and permission check
 
 Before students create or use an Onshape account, confirm that Onshape is approved under the current board's digital-tool process, that students meet the vendor's age/account requirements, that the required Ontario third-party software notice has been provided, and that parent/guardian permission has been obtained whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). Provide an approved alternative when a student cannot use the service.
 :::
+
+## Required order
+
+1. **V1 - AA arrow:** use the supplied AA SVG and prepared mirrored DXF to learn the complete Onshape workflow.
+2. **V2 - original logo:** create and clean your own Photopea vector, prepare a new mirrored DXF, and rebuild the stamp.
+
+The PCSS stamp and faux-enamel projects are optional bonuses after both required stamps pass their impression tests.
 
 ## Workflow overview
 
@@ -40,7 +47,7 @@ The Tinkercad pathway - affectionately, **Temu CAD** - is quicker for a first pr
 The stamp face must look backwards so the impression reads correctly. Keep every important stroke and gap at least **1.2 mm**, and leave at least **3 mm** between the artwork and the outside edge of the stamp.
 :::
 
-## Part A - Prepare the artwork in Photopea
+## Part A - Learn the Photopea workflow, then make V2
 
 ### Step 1 - Open the raster artwork
 
@@ -99,7 +106,7 @@ The SVG is the editable two-dimensional artwork submitted to the stamp-preparati
 
 ### Worked-example files
 
-Use these files to compare your own workflow with the demonstrated result:
+Use these files for the guided AA V1 and to compare your own V2 workflow with the demonstrated result:
 
 - [Photopea SVG export from the AA example](../../assets/onshape-logo-stamp/photopea-workflow/aa-logo-vector.svg)
 - [Centred and mirrored AA DXF prepared for Onshape](../../assets/branding/logo/aa-logo-stamp-32mm-mirrored.dxf)
@@ -259,4 +266,4 @@ After the first physical impression, revise the Photopea vector layers, DXF prep
 
 ## Optional configuration
 
-After the 38 mm stamp works, create a teacher-approved **25.4 mm** version for a very simple logo. Generate a new DXF for the smaller stamp and do not claim it works until it has been printed and tested.
+After V1 and V2 work, the [PCSS stamp challenge](logo-stamp-mission.qmd#bonus-1--pcss-stamp-challenge) and [faux-enamel extension](tinkercad-faux-enamel-logo.qmd) are optional bonuses. A teacher-approved smaller stamp is another possible challenge, but it does not replace the required AA and original-logo stamps.

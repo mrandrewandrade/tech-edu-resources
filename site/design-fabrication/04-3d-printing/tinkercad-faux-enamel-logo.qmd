@@ -1,6 +1,6 @@
 ---
-title: "Tinkercad Faux-Enamel Badge | AA Arrow V1 → Original V2"
-description: "A photographed Photopea-to-Tinkercad workflow: learn with a simple AA arrow, print once in white PLA, then add faux-enamel colour after printing."
+title: "Bonus Extension | Tinkercad Faux-Enamel Badge"
+description: "An optional post-stamp extension: reuse a successful original logo as a one-colour printed badge with colour added afterward."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, scalable-vector-graphics, computer-aided-design, stl, additive-manufacturing, layer, perimeter-wall, print-orientation]
 highlighted-terms: [logo, stl]
@@ -13,7 +13,7 @@ execute: {enabled: false}
 
 Print the complete badge **once in white PLA**. There is no filament change and no multicolour print.
 
-- The outside ring and AA arrow stay white.
+- The raised ring and logo stay white.
 - Navy, gold and any other approved colours are added **after printing** in the recessed areas.
 - The colours in the preview are a finishing plan, not separate Tinkercad solids.
 :::
@@ -24,12 +24,9 @@ Print the complete badge **once in white PLA**. There is no filament change and 
 Before students create or use a Tinkercad or Photopea account, confirm each service through the current board's digital-tool process, vendor age requirements and privacy/security guidance. Confirm that the required Ontario third-party software notice has been issued and obtain parent/guardian permission whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). Provide an approved account-free, offline or teacher-operated alternative when needed.
 :::
 
-## The two-version assignment
+## This is not the main assignment
 
-1. **V1 — guided AA arrow badge:** follow every step below and build the supplied AA arrow inside a circular rim.
-2. **V2 — original badge:** repeat the same workflow using a simple logo you designed yourself.
-
-The AA arrow is intentionally simple. V1 teaches the production method without burying the class in a complicated school crest. V2 proves that you can transfer the method to original work.
+Complete the required [AA Arrow Stamp → Your Own Stamp mission](logo-stamp-mission.qmd) first. This page is an **optional bonus extension** that reuses the student’s already-tested original logo. The PCSS crest is not the starting badge and there is no required faux-enamel V1/V2 sequence.
 
 ::: {.callout-tip}
 ## Temu CAD, used on purpose
@@ -37,27 +34,25 @@ The AA arrow is intentionally simple. V1 teaches the production method without b
 Tinkercad is our affectionate **Temu CAD** pathway: quick, web-based and surprisingly capable when the geometry is simple. It is perfect for this guided build. When you need exact constraints, variables and feature history, move to [Onshape](faux-enamel-pin-jewellery.qmd) or another teacher-approved parametric CAD package.
 :::
 
-![The finished-colour plan: white printed ring and AA arrow with navy and gold added after printing.](../../assets/tinkercad-logo-jewellery/aa-arrow-faux-enamel-preview.svg){.ter-concept-diagram fig-alt="Circular navy and gold badge with a white outer ring and white AA arrow"}
-
-## What you are making — inches only
+## What you are making - inches only
 
 Before modelling, select **Edit Grid** in Tinkercad and change the units to **inches**.
 
-| Feature | V1: AA arrow badge | V2: original badge |
-|---|---:|---:|
-| Finished diameter | 2.00 in | 2.00 in |
-| Solid white base | 0.12 in | 0.12 in |
-| Raised white walls | 0.04 in | 0.04 in |
-| Total thickness | about 0.16 in | about 0.16 in |
-| Minimum wall or gap | 0.05 in | 0.05 in |
-| Filament | white PLA only | white PLA only |
-| Colour | applied after printing | applied after printing |
+| Feature | Bonus badge |
+|---|---:|
+| Finished diameter | 2.00 in |
+| Solid white base | 0.12 in |
+| Raised white walls | 0.04 in |
+| Total thickness | about 0.16 in |
+| Minimum wall or gap | 0.05 in |
+| Filament | white PLA only |
+| Colour | applied after printing |
 
 ![Third-angle drawing of the faux-enamel construction, including the colour cavities and raised walls.](../../assets/tinkercad-logo-jewellery/faux-enamel-cavity-diagram.svg){.ter-concept-diagram}
 
-## Instructions, editable source and downloads
+## Optional practice files and downloads
 
-Use the source kit below. The SVG files are editable design geometry. The STL is only a teacher reference and recovery file.
+Use the AA files below only as a technical practice or recovery example. For the bonus submission, use the same original logo that passed the required stamp mission.
 
 - [AA arrow raster reference](../../assets/branding/logo/aa-logo-transparent.png){download="aa-arrow-reference.png"}
 - [Editable AA arrow SVG](../../assets/onshape-logo-stamp/photopea-workflow/aa-logo-vector.svg){download="aa-arrow-vector.svg"}
@@ -66,22 +61,22 @@ Use the source kit below. The SVG files are editable design geometry. The STL is
 
 ### Completed reference STL
 
-- [Download the AA arrow STL as a ZIP — recommended](../../assets/tinkercad-logo-jewellery/downloads/aa-arrow-faux-enamel-brooch-stl.zip){download="aa-arrow-faux-enamel-brooch-stl.zip"}
+- [Download the AA arrow STL as a ZIP - recommended](../../assets/tinkercad-logo-jewellery/downloads/aa-arrow-faux-enamel-brooch-stl.zip){download="aa-arrow-faux-enamel-brooch-stl.zip"}
 - [Download the AA arrow STL directly](../../assets/tinkercad-logo-jewellery/downloads/aa-arrow-faux-enamel-brooch.stl){download="aa-arrow-faux-enamel-brooch.stl"}
 
 ::: {.callout-tip}
 ## If the STL link will not download
 
-Use the **ZIP — recommended** link. Extract `aa-arrow-faux-enamel-brooch.stl`, then import the STL into the class slicer. Some browsers try to preview a direct `.stl` link instead of saving it; the ZIP avoids that problem.
+Use the **ZIP - recommended** link. Extract `aa-arrow-faux-enamel-brooch.stl`, then import the STL into the class slicer. Some browsers try to preview a direct `.stl` link instead of saving it; the ZIP avoids that problem.
 :::
 
-# V1 — guided AA arrow build {#v1-aa-arrow-guided-build}
+# Optional AA practice example {#optional-aa-practice-example}
 
-## Part A — learn the Photopea trace
+## Part A - learn the Photopea trace
 
 The raster PNG is made from pixels. Tinkercad needs clean vector paths. These screenshots show the actual AA arrow workflow in [Photopea](https://www.photopea.com/).
 
-### Step 1 — open the simple AA arrow
+### Step 1 - open the simple AA arrow
 
 1. Download `aa-arrow-reference.png` from the source kit.
 2. Open Photopea.
@@ -90,7 +85,7 @@ The raster PNG is made from pixels. Tinkercad needs clean vector paths. These sc
 
 ![The AA arrow raster open in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/01-open-raster-logo.jpg){fig-alt="AA arrow raster open in the Photopea workspace"}
 
-### Step 2 — vectorize the bitmap
+### Step 2 - vectorize the bitmap
 
 1. Select **Image → Vectorize Bitmap**.
 2. Set **Colors** to **2**.
@@ -100,7 +95,7 @@ The raster PNG is made from pixels. Tinkercad needs clean vector paths. These sc
 
 ![Photopea Vectorize Bitmap set to two colours for the simple AA arrow.](../../assets/onshape-logo-stamp/photopea-workflow/02-vectorize-two-colours.jpg){fig-alt="Photopea Vectorize Bitmap window set to two colours"}
 
-### Step 3 — inspect the vector layer
+### Step 3 - inspect the vector layer
 
 1. In the Layers panel, confirm that Photopea created a **Vector** layer.
 2. Zoom in on the point, curved crossbar and long centre stem.
@@ -109,7 +104,7 @@ The raster PNG is made from pixels. Tinkercad needs clean vector paths. These sc
 
 ![The cleaned AA arrow as a vector layer in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){fig-alt="Clean AA arrow vector layer in Photopea"}
 
-### Step 4 — export the SVG
+### Step 4 - export the SVG
 
 1. Select **File → Export as → SVG**.
 2. Check the preview and make sure the whole arrow is inside the canvas.
@@ -124,13 +119,13 @@ The raster PNG is made from pixels. Tinkercad needs clean vector paths. These sc
 The supplied `aa-arrow-faux-enamel-detail.svg` adds a circular outer rim to the arrow. The rim is important because it contains the post-print colour. Compare your trace with the supplied fabrication-ready SVG before entering Tinkercad.
 :::
 
-## Part B — build the one-colour model in Tinkercad
+## Part B - build the one-colour model in Tinkercad
 
-Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, rename it `lastname-aa-faux-enamel-v1`, and change **Edit Grid → Units** to **inches**.
+Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, rename it `lastname-faux-enamel-bonus`, and change **Edit Grid → Units** to **inches**.
 
 This is the Temu CAD shift: two SVG imports, two controlled heights, one alignment and one printable group.
 
-### Step 5 — import and size the base
+### Step 5 - import and size the base
 
 1. Select **Import**.
 2. Upload `circle-base.svg`.
@@ -140,7 +135,7 @@ This is the Temu CAD shift: two SVG imports, two controlled heights, one alignme
 
 Checkpoint: the base must be a flat, solid circle with no hole in the centre.
 
-### Step 6 — import the AA arrow and rim
+### Step 6 - import the AA arrow and rim
 
 1. Select **Import** again.
 2. Upload `aa-arrow-faux-enamel-detail.svg`.
@@ -151,7 +146,7 @@ Checkpoint: the base must be a flat, solid circle with no hole in the centre.
 
 ![The fabrication-ready SVG contains only the raised outside rim and AA arrow.](../../assets/tinkercad-logo-jewellery/source/aa-faux-enamel-detail.svg){fig-alt="Black vector preview of the circular rim and AA arrow" width="520"}
 
-### Step 7 — align, inspect and group
+### Step 7 - align, inspect and group
 
 1. Select both objects.
 2. Select **Align**.
@@ -164,14 +159,14 @@ Checkpoint: the base must be a flat, solid circle with no hole in the centre.
 ::: {.callout-note}
 ## Temu CAD inspection rule
 
-`Ctrl+G` can merge a good model or hide a bad one. The low view, flat back, slicer preview and physical print—not the Group button—prove that the geometry works.
+`Ctrl+G` can merge a good model or hide a bad one. The low view, flat back, slicer preview and physical print-not the Group button-prove that the geometry works.
 :::
 
 ::: {.callout-warning}
 Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The model is one white part; colour is a finishing operation.
 :::
 
-### Step 8 — export the STL
+### Step 8 - export the STL
 
 1. Keep the grouped model selected.
 2. Select **Export**.
@@ -179,9 +174,9 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 4. Under **For 3D Print**, select **.STL**.
 5. Name it `lastname-aa-faux-enamel-v1.stl`.
 
-## Part C — slice, print and finish
+## Part C - slice, print and finish
 
-### Step 9 — slicer check
+### Step 9 - slicer check
 
 1. Import the STL into the class slicer.
 2. Place it flat, plain side down and decorated side up.
@@ -189,7 +184,7 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 4. Preview every layer. The print should begin with a solid circular base and finish with the raised ring and arrow.
 5. Ask for the teacher checkpoint before printing.
 
-### Step 10 — apply the faux-enamel colour
+### Step 10 - apply the faux-enamel colour
 
 1. Let the white print cool and remove strings or loose material.
 2. Test the approved finish on a failed print or scrap piece.
@@ -201,11 +196,11 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 
 Use only teacher-approved finishing products, ventilation, PPE and adhesive procedures.
 
-# V2 — your original logo
+# Use your successful original stamp logo
 
-V2 uses the same process with artwork you created. Do not copy a company, sports team, game, social-media or clothing logo.
+Reuse the original artwork that passed the required stamp mission. Do not copy a company, sports team, game, social-media or clothing logo.
 
-## Part D — make a simple V2 SVG in Photopea
+## Part D - adapt the successful stamp SVG in Photopea
 
 1. Begin with a high-contrast logo containing no more than three large colour regions.
 2. Open it in Photopea and select **Image → Vectorize Bitmap**.
@@ -215,9 +210,9 @@ V2 uses the same process with artwork you created. Do not copy a company, sports
 6. Add a closed outside rim so every planned colour area is contained.
 7. Select **File → Export as → SVG** and save `lastname-original-logo.svg`.
 
-## Part E — repeat the Tinkercad build
+## Part E - repeat the Tinkercad build
 
-1. Duplicate your successful V1 design or begin a new Tinkercad file.
+1. Duplicate the optional AA practice design or begin a new Tinkercad file.
 2. Keep the proven **2.00 in × 0.12 in** circular base.
 3. Import your original SVG as **0.04 in** raised white structure.
 4. Raise the artwork **0.12 in** and centre-align it with the base.
@@ -226,7 +221,7 @@ V2 uses the same process with artwork you created. Do not copy a company, sports
 7. Print once in white PLA.
 8. Add two or three contrasting colours after printing.
 
-V2 is the Temu CAD graduation test: the software stays simple, but the design decisions must become original, measurable and defensible.
+The extension is optional: the software stays simple, but the design decisions must remain original, measurable and defensible.
 
 # Assignment SOP
 
@@ -238,42 +233,27 @@ V2 is the Temu CAD graduation test: the software stays simple, but the design de
 | 4. Verify | Check alignment, flat back, 0.05 in walls and slicer preview | teacher checkpoint screenshot |
 | 5. Manufacture | Print once in white PLA using the approved profile | unpainted print photo |
 | 6. Finish | Apply thin, teacher-approved faux-enamel coats and cure | finished photo |
-| 7. Evaluate | Compare V1 with V2 and identify one evidence-based improvement | 100–150 word reflection |
+| 7. Evaluate | Explain how the stamp logo was adapted into enclosed colour regions | 100–150 word reflection |
 
-## Submit V1 — guided checkpoint
-
-1. one Photopea vector screenshot;
-2. one Tinkercad top-view screenshot;
-3. one Tinkercad side or low-view screenshot;
-4. `lastname-aa-faux-enamel-v1.stl`;
-5. a photo of the unpainted white print; and
-6. a photo of the cured multicolour badge with the ring and arrow still white.
-
-## Submit V2 — original final
+## Bonus submission
 
 1. `lastname-original-logo.svg`;
 2. top and side or low-view Tinkercad screenshots;
-3. `lastname-original-faux-enamel-v2.stl`;
+3. `lastname-faux-enamel-bonus.stl`;
 4. unpainted and finished photographs; and
-5. the short V1-to-V2 improvement reflection.
+5. a short reflection explaining how the successful stamp logo was adapted into enclosed colour regions.
 
 ## Success criteria
 
-- Both badges are printed once in **white PLA**.
-- V1 clearly matches the supplied AA arrow and circular rim.
-- The outside ring and AA arrow remain visible as white raised structure.
+- The badge is printed once in **white PLA**.
+- The raised outside ring and logo remain visible as white structure.
 - The base is **0.12 in** and the raised artwork is **0.04 in**.
 - Important walls and gaps are at least **0.05 in**.
 - Colour stays inside the intended recessed areas.
-- V2 uses an original, simplified logo.
+- The badge uses the same original, simplified logo that passed the stamp mission.
 - Each submitted STL matches its editable Tinkercad design.
 - The reflection identifies a specific improvement supported by evidence.
 
-## Teacher note — Google Classroom drafts
+## Teacher note - Google Classroom draft
 
-Create two unassigned Classroom drafts:
-
-- **Faux-Enamel Badge V1 — AA Arrow Guided Checkpoint**
-- **Faux-Enamel Badge V2 — Original Logo Final**
-
-Attach this lesson to both drafts. Keep V1 as a formative checkpoint and grade V2 with the success criteria. Do not assign either post until the printer, white PLA, finishing products, ventilation and findings are ready.
+Keep one unassigned optional draft titled **Bonus - Faux-Enamel Badge Extension**. Do not post it until the required AA and original-logo stamps are complete and the printer, white PLA, finishing products, ventilation and findings are ready.
