@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 SEQUENCE = SITE / "assets" / "bs-learn-sequence.json"
 OUTPUT = SITE / "assets" / "learning-map" / "learning-graph.json"
+SCRIPT_OUTPUT = SITE / "assets" / "learning-map" / "learning-graph-data.js"
 
 STRANDS = {
     "circuits": {"label": "Circuits & Electronics", "colour": "#1677a6", "soft": "#d9f2ff"},
@@ -285,7 +286,12 @@ def build_graph() -> dict:
 
 def main() -> int:
     graph = build_graph()
-    OUTPUT.write_text(json.dumps(graph, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    serialized = json.dumps(graph, ensure_ascii=False, indent=2)
+    OUTPUT.write_text(serialized + "\n", encoding="utf-8")
+    SCRIPT_OUTPUT.write_text(
+        "window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = " + serialized + ";\n",
+        encoding="utf-8",
+    )
     counts = {kind: sum(node["kind"] == kind for node in graph["nodes"]) for kind in ("hub", "course", "track", "lesson")}
     print(f"Built learning graph: {len(graph['nodes'])} nodes, {len(graph['edges'])} edges ({counts})")
     return 0

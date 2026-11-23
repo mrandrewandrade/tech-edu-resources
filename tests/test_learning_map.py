@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "site" / "assets" / "learning-map" / "learning-map.yml"
 JSON_OUTPUT = ROOT / "site" / "assets" / "learning-map" / "learning-map.json"
 GRAPH_OUTPUT = ROOT / "site" / "assets" / "learning-map" / "learning-graph.json"
+GRAPH_SCRIPT_OUTPUT = ROOT / "site" / "assets" / "learning-map" / "learning-graph-data.js"
 SEQUENCE_OUTPUT = ROOT / "site" / "assets" / "bs-learn-sequence.json"
 JS = ROOT / "site" / "assets" / "learning-map" / "learning-map.js"
 
@@ -74,6 +75,13 @@ class LearningGraphTests(unittest.TestCase):
         self.assertEqual(len(tracks), 15)
         self.assertEqual(sum(node["kind"] == "course" for node in self.graph["nodes"]), 2)
         self.assertIn("commons-hub", self.by_id)
+
+    def test_graph_has_file_protocol_compatible_data_script(self):
+        script = GRAPH_SCRIPT_OUTPUT.read_text(encoding="utf-8")
+        prefix = "window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = "
+        self.assertTrue(script.startswith(prefix))
+        embedded = json.loads(script.removeprefix(prefix).removesuffix(";\n"))
+        self.assertEqual(embedded, self.graph)
 
     def test_graph_edges_are_typed_unique_and_known(self):
         valid_types = {"contains", "sequence", "related"}

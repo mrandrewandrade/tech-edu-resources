@@ -599,9 +599,12 @@
 
   async function init() {
     try {
-      const response = await fetch(root.dataset.manifest);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      state.data = await response.json();
+      state.data = window.TECHNOLOGY_COMMONS_LEARNING_GRAPH;
+      if (!state.data) {
+        const response = await fetch(root.dataset.manifest);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        state.data = await response.json();
+      }
       indexGraph();
       loadProgress();
       revealRoute(state.selectedId);
