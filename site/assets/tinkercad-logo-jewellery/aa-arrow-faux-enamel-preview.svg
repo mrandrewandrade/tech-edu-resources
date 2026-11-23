@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">AA arrow faux-enamel colour preview</title>
+  <desc id="desc">A circular navy and gold badge with a white outer ring and a white AA arrow structure.</desc>
+  <defs>
+    <clipPath id="disc"><circle cx="400" cy="400" r="318"/></clipPath>
+  </defs>
+  <rect width="800" height="800" rx="56" fill="#eef2f8"/>
+  <g clip-path="url(#disc)">
+    <circle cx="400" cy="400" r="318" fill="#20294f"/>
+    <path d="M400 124L174 370Q286 326 380 322V124Z" fill="#ffdd3f"/>
+    <path d="M420 124V322Q514 326 626 370Z" fill="#f6b51f"/>
+    <path d="M420 352Q536 360 674 416V720H420Z" fill="#ffdd3f"/>
+  </g>
+  <circle cx="400" cy="400" r="318" fill="none" stroke="#ffffff" stroke-width="28"/>
+  <path d="M176 375L400 132L624 375M214 338Q400 272 586 338M400 132V680"
+        fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="square" stroke-linejoin="miter"/>
+  <circle cx="400" cy="400" r="332" fill="none" stroke="#15213f" stroke-width="4" opacity=".28"/>
+</svg>

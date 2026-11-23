@@ -1,149 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Faux-enamel badge orthographic drawing and section</title>
-  <desc id="desc">Third-angle orthographic drawing showing aligned top, front and right-side views of a 50 millimetre circular brooch, plus section A-A showing the three millimetre base, one millimetre raised walls and two polish-filled recessed pockets.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1400 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Professional third-angle drawing for a faux-enamel brooch</title>
+  <desc id="desc">A third-angle engineering drawing with the thin top view above the circular front view, the thin right-side view aligned to the right, and section A-A below. Dimensions identify a 2 inch diameter, 0.12 inch base, 0.04 inch raised walls, and 0.16 inch overall thickness.</desc>
   <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
-      <path d="M8 0 0 4 8 8Z" fill="#172033"/>
-    </marker>
-    <marker id="section-arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-      <path d="M0 0 10 5 0 10Z" fill="#172033"/>
-    </marker>
-    <pattern id="pla-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <line x1="0" y1="0" x2="0" y2="12" stroke="#596579" stroke-width="2"/>
-    </pattern>
-    <pattern id="background-fill" width="10" height="10" patternUnits="userSpaceOnUse">
-      <rect width="10" height="10" fill="#eef2f7"/>
-      <circle cx="2" cy="2" r="1.4" fill="#7c8798"/>
-    </pattern>
-    <pattern id="logo-fill" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <rect width="10" height="10" fill="#f4c64f"/>
-      <line x1="0" y1="0" x2="0" y2="10" stroke="#604b13" stroke-width="2"/>
-    </pattern>
+    <marker id="dimArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0 0 4 8 8Z" fill="#152235"/></marker>
+    <marker id="sectionArrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#152235"/></marker>
+    <pattern id="plasticHatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#657287" stroke-width="1.4"/></pattern>
+    <pattern id="fillA" width="9" height="9" patternUnits="userSpaceOnUse"><rect width="9" height="9" fill="#edf2f7"/><circle cx="2" cy="2" r="1" fill="#748196"/></pattern>
+    <pattern id="fillB" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="9" height="9" fill="#f5c84b"/><line x1="0" y1="0" x2="0" y2="9" stroke="#6b5516" stroke-width="1.5"/></pattern>
     <style>
-      .sheet{fill:#fff;stroke:#9aa5b4;stroke-width:2}
-      .object{fill:none;stroke:#172033;stroke-width:4;stroke-linejoin:round}
-      .thin{fill:none;stroke:#172033;stroke-width:2}
-      .hidden{fill:none;stroke:#596579;stroke-width:2;stroke-dasharray:12 8}
-      .centre{fill:none;stroke:#677489;stroke-width:1.8;stroke-dasharray:24 6 4 6}
-      .projection{fill:none;stroke:#b7c0cc;stroke-width:1.5;stroke-dasharray:4 7}
-      .dimension{fill:none;stroke:#172033;stroke-width:1.8;marker-start:url(#arrow);marker-end:url(#arrow)}
-      .extension{fill:none;stroke:#596579;stroke-width:1.5}
-      .cutline{fill:none;stroke:#172033;stroke-width:2.5;stroke-dasharray:28 8 5 8}
-      .wall{fill:#283347;stroke:#172033;stroke-width:2}
-      .base{fill:url(#pla-hatch);stroke:#172033;stroke-width:3}
-      .bgfill{fill:url(#background-fill);stroke:#172033;stroke-width:1.5}
-      .logofill{fill:url(#logo-fill);stroke:#172033;stroke-width:1.5}
-      .heading{font:600 25px Arial,sans-serif;letter-spacing:1px;fill:#172033}
-      .view{font:600 20px Arial,sans-serif;letter-spacing:1.4px;fill:#172033}
-      .label{font:500 18px Arial,sans-serif;fill:#172033}
-      .note{font:400 16px Arial,sans-serif;fill:#465267}
-      .dimtext{font:500 17px Arial,sans-serif;fill:#172033}
+      .sheet{fill:#fff;stroke:#687487;stroke-width:2}.heavy{fill:none;stroke:#152235;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.visible{fill:none;stroke:#152235;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#536176;stroke-width:1.35}.hidden{fill:none;stroke:#657287;stroke-width:1.5;stroke-dasharray:10 6}.centre{fill:none;stroke:#66748a;stroke-width:1.3;stroke-dasharray:24 6 4 6}.projection{fill:none;stroke:#a8b2c0;stroke-width:1.15;stroke-dasharray:5 7}.cut{fill:none;stroke:#152235;stroke-width:2;stroke-dasharray:20 7 4 7}.dim{fill:none;stroke:#152235;stroke-width:1.35;marker-start:url(#dimArrow);marker-end:url(#dimArrow)}.extension{fill:none;stroke:#657287;stroke-width:1.15}.base{fill:url(#plasticHatch);stroke:#152235;stroke-width:2.2}.wall{fill:#28364b;stroke:#152235;stroke-width:1.4}.fill-a{fill:url(#fillA);stroke:#152235;stroke-width:1}.fill-b{fill:url(#fillB);stroke:#152235;stroke-width:1}.title{font:700 25px Arial,sans-serif;letter-spacing:1.1px;fill:#152235}.subtitle{font:500 16px Arial,sans-serif;fill:#445168}.view{font:700 18px Arial,sans-serif;letter-spacing:1.5px;fill:#152235}.label{font:600 16px Arial,sans-serif;fill:#152235}.note{font:400 14px Arial,sans-serif;fill:#445168}.dimtext{font:600 15px Arial,sans-serif;fill:#152235}.tb-label{font:600 11px Arial,sans-serif;letter-spacing:.7px;fill:#59677b}.tb-value{font:600 14px Arial,sans-serif;fill:#152235}
     </style>
   </defs>
 
-  <rect x="20" y="20" width="1160" height="960" class="sheet"/>
-  <text x="55" y="68" class="heading">FAUX-ENAMEL BROOCH: ORTHOGRAPHIC VIEWS</text>
-  <text x="1145" y="60" text-anchor="end" class="note">THIRD-ANGLE PROJECTION</text>
-  <text x="1145" y="84" text-anchor="end" class="note">ALL DIMENSIONS IN mm</text>
-  <line x1="55" y1="103" x2="1145" y2="103" class="thin"/>
+  <rect x="18" y="18" width="1364" height="964" class="sheet"/>
+  <text x="52" y="62" class="title">FAUX-ENAMEL BROOCH — THIRD-ANGLE ORTHOGRAPHIC DRAWING</text>
+  <text x="52" y="88" class="subtitle">2.00 in teacher example · decorated face is the FRONT view · dimensions in inches</text>
+  <line x1="52" y1="108" x2="1348" y2="108" class="thin"/>
+
+  <line x1="250" y1="236" x2="250" y2="320" class="projection"/><line x1="400" y1="236" x2="400" y2="320" class="projection"/><line x1="550" y1="236" x2="550" y2="320" class="projection"/>
+  <line x1="550" y1="320" x2="700" y2="320" class="projection"/><line x1="550" y1="470" x2="700" y2="470" class="projection"/><line x1="550" y1="620" x2="700" y2="620" class="projection"/>
 
   <g aria-label="Top view">
-    <text x="350" y="142" text-anchor="middle" class="view">TOP</text>
-    <circle cx="350" cy="330" r="145" class="wall"/>
-    <circle cx="350" cy="330" r="132" class="bgfill"/>
-    <path d="M350 224 430 312 410 329 365 280 365 432 335 432 335 280 290 329 270 312Z
-             M350 248 404 309 396 315 356 271 356 419 344 419 344 271 304 315 296 309Z"
-          fill="#283347" fill-rule="evenodd" stroke="#172033" stroke-width="2" stroke-linejoin="round"/>
-    <path d="M350 248 404 309 396 315 356 271 356 419 344 419 344 271 304 315 296 309Z" class="logofill"/>
-    <line x1="175" y1="330" x2="525" y2="330" class="centre"/>
-    <line x1="350" y1="155" x2="350" y2="505" class="centre"/>
-    <line x1="195" y1="330" x2="505" y2="330" class="cutline"/>
-    <line x1="195" y1="330" x2="160" y2="330" class="thin" marker-end="url(#section-arrow)"/>
-    <line x1="505" y1="330" x2="540" y2="330" class="thin" marker-end="url(#section-arrow)"/>
-    <text x="148" y="337" text-anchor="end" class="label">A</text>
-    <text x="552" y="337" class="label">A</text>
-    <line x1="205" y1="183" x2="205" y2="140" class="extension"/>
-    <line x1="495" y1="183" x2="495" y2="140" class="extension"/>
-    <line x1="205" y1="155" x2="495" y2="155" class="dimension"/>
-    <rect x="313" y="142" width="74" height="26" fill="#fff"/>
-    <text x="350" y="161" text-anchor="middle" class="dimtext">⌀ 50</text>
+    <text x="400" y="142" text-anchor="middle" class="view">TOP</text>
+    <path d="M250 198H550V222H250Z" class="heavy"/><path d="M250 192V198M258 192V198M392 192V198M408 192V198M542 192V198M550 192V198" class="heavy"/><line x1="400" y1="170" x2="400" y2="244" class="centre"/>
+    <line x1="250" y1="248" x2="250" y2="272" class="extension"/><line x1="550" y1="248" x2="550" y2="272" class="extension"/><line x1="250" y1="262" x2="550" y2="262" class="dim"/><rect x="365" y="250" width="70" height="23" fill="#fff"/><text x="400" y="267" text-anchor="middle" class="dimtext">2.00 in</text>
   </g>
 
-  <line x1="205" y1="485" x2="205" y2="625" class="projection"/>
-  <line x1="350" y1="485" x2="350" y2="625" class="projection"/>
-  <line x1="495" y1="485" x2="495" y2="625" class="projection"/>
-
   <g aria-label="Front view">
-    <text x="350" y="554" text-anchor="middle" class="view">FRONT</text>
-    <path d="M205 590H495V630H205Z" class="object"/>
-    <path d="M205 580V590M219 580V590M481 580V590M495 580V590" class="object"/>
-    <line x1="335" y1="580" x2="335" y2="630" class="hidden"/>
-    <line x1="365" y1="580" x2="365" y2="630" class="hidden"/>
-    <line x1="350" y1="566" x2="350" y2="642" class="centre"/>
-    <line x1="510" y1="580" x2="560" y2="580" class="extension"/>
-    <line x1="510" y1="590" x2="560" y2="590" class="extension"/>
-    <line x1="510" y1="630" x2="560" y2="630" class="extension"/>
-    <line x1="545" y1="580" x2="545" y2="590" class="dimension"/>
-    <line x1="545" y1="590" x2="545" y2="630" class="dimension"/>
-    <text x="568" y="590" class="dimtext">1 wall</text>
-    <text x="568" y="616" class="dimtext">3 base</text>
+    <text x="400" y="304" text-anchor="middle" class="view">FRONT</text>
+    <circle cx="400" cy="470" r="150" fill="#f7f9fc" stroke="#152235" stroke-width="4"/><circle cx="400" cy="470" r="141" fill="none" stroke="#152235" stroke-width="6"/>
+    <image x="310" y="376" width="180" height="180" href="../branding/logo/aa-logo.svg" xlink:href="../branding/logo/aa-logo.svg" preserveAspectRatio="xMidYMid meet"/>
+    <line x1="220" y1="470" x2="580" y2="470" class="centre"/><line x1="400" y1="290" x2="400" y2="650" class="centre"/>
+    <line x1="238" y1="470" x2="562" y2="470" class="cut"/><line x1="238" y1="470" x2="205" y2="470" class="visible" marker-end="url(#sectionArrow)"/><line x1="562" y1="470" x2="595" y2="470" class="visible" marker-end="url(#sectionArrow)"/><text x="192" y="476" text-anchor="end" class="label">A</text><text x="608" y="476" class="label">A</text>
+    <line x1="230" y1="335" x2="192" y2="300" class="extension"/><line x1="570" y1="335" x2="608" y2="300" class="extension"/><line x1="207" y1="315" x2="593" y2="315" class="dim"/><rect x="360" y="302" width="80" height="24" fill="#fff"/><text x="400" y="319" text-anchor="middle" class="dimtext">Ø2.00 in</text>
   </g>
 
   <g aria-label="Right-side view">
-    <text x="865" y="554" text-anchor="middle" class="view">RIGHT SIDE</text>
-    <path d="M720 590H1010V630H720Z" class="object"/>
-    <path d="M720 580V590M734 580V590M996 580V590M1010 580V590" class="object"/>
-    <line x1="850" y1="580" x2="850" y2="630" class="hidden"/>
-    <line x1="880" y1="580" x2="880" y2="630" class="hidden"/>
-    <line x1="865" y1="566" x2="865" y2="642" class="centre"/>
-    <text x="865" y="662" text-anchor="middle" class="note">Vertical scale enlarged for clarity</text>
+    <text x="770" y="304" text-anchor="middle" class="view">RIGHT SIDE</text>
+    <path d="M730 320H754V620H730Z" class="heavy"/><path d="M724 320H730M724 328H730M724 462H730M724 478H730M724 612H730M724 620H730" class="heavy"/><line x1="700" y1="470" x2="780" y2="470" class="centre"/>
+    <line x1="802" y1="320" x2="826" y2="320" class="extension"/><line x1="802" y1="620" x2="826" y2="620" class="extension"/><line x1="816" y1="320" x2="816" y2="620" class="dim"/><rect x="788" y="447" width="56" height="46" fill="#fff"/><text x="816" y="465" text-anchor="middle" class="dimtext">2.00</text><text x="816" y="483" text-anchor="middle" class="note">in DIA</text>
   </g>
 
-  <g aria-label="Section A-A through the filled cavities">
-    <text x="600" y="718" text-anchor="middle" class="view">SECTION A-A: AFTER FILLING</text>
-    <rect x="210" y="815" width="780" height="72" class="base"/>
-    <rect x="210" y="791" width="24" height="96" class="wall"/>
-    <rect x="470" y="791" width="24" height="96" class="wall"/>
-    <rect x="706" y="791" width="24" height="96" class="wall"/>
-    <rect x="966" y="791" width="24" height="96" class="wall"/>
-    <rect x="234" y="796" width="236" height="19" class="bgfill"/>
-    <rect x="494" y="796" width="212" height="19" class="logofill"/>
-    <rect x="730" y="796" width="236" height="19" class="bgfill"/>
-    <text x="350" y="774" text-anchor="middle" class="label">background colour</text>
-    <line x1="350" y1="779" x2="350" y2="796" class="thin"/>
-    <text x="600" y="774" text-anchor="middle" class="label">logo colour</text>
-    <line x1="600" y1="779" x2="600" y2="796" class="thin"/>
-    <text x="850" y="774" text-anchor="middle" class="label">background colour</text>
-    <line x1="850" y1="779" x2="850" y2="796" class="thin"/>
-    <line x1="1008" y1="791" x2="1060" y2="791" class="extension"/>
-    <line x1="1008" y1="815" x2="1060" y2="815" class="extension"/>
-    <line x1="1008" y1="887" x2="1060" y2="887" class="extension"/>
-    <line x1="1045" y1="791" x2="1045" y2="815" class="dimension"/>
-    <line x1="1045" y1="815" x2="1045" y2="887" class="dimension"/>
-    <text x="1068" y="807" class="dimtext">1</text>
-    <text x="1068" y="857" class="dimtext">3</text>
-    <line x1="210" y1="914" x2="990" y2="914" class="dimension"/>
-    <line x1="210" y1="894" x2="210" y2="928" class="extension"/>
-    <line x1="990" y1="894" x2="990" y2="928" class="extension"/>
-    <rect x="574" y="900" width="52" height="28" fill="#fff"/>
-    <text x="600" y="920" text-anchor="middle" class="dimtext">50</text>
+  <g aria-label="Section A-A">
+    <text x="400" y="704" text-anchor="middle" class="view">SECTION A–A</text>
+    <rect x="250" y="790" width="300" height="54" class="base"/><rect x="250" y="772" width="10" height="72" class="wall"/><rect x="338" y="772" width="10" height="72" class="wall"/><rect x="452" y="772" width="10" height="72" class="wall"/><rect x="540" y="772" width="10" height="72" class="wall"/>
+    <rect x="260" y="776" width="78" height="14" class="fill-a"/><rect x="348" y="776" width="104" height="14" class="fill-b"/><rect x="462" y="776" width="78" height="14" class="fill-a"/>
+    <text x="299" y="751" text-anchor="middle" class="note">BACKGROUND FILL</text><line x1="299" y1="756" x2="299" y2="776" class="thin"/><text x="400" y="751" text-anchor="middle" class="note">LOGO FILL</text><line x1="400" y1="756" x2="400" y2="776" class="thin"/><text x="501" y="751" text-anchor="middle" class="note">BACKGROUND FILL</text><line x1="501" y1="756" x2="501" y2="776" class="thin"/>
+    <line x1="568" y1="772" x2="620" y2="772" class="extension"/><line x1="568" y1="790" x2="620" y2="790" class="extension"/><line x1="568" y1="844" x2="620" y2="844" class="extension"/><line x1="604" y1="772" x2="604" y2="790" class="dim"/><line x1="604" y1="790" x2="604" y2="844" class="dim"/><text x="628" y="786" class="dimtext">0.04 in wall / recess</text><text x="628" y="823" class="dimtext">0.12 in base</text>
+    <line x1="660" y1="772" x2="688" y2="772" class="extension"/><line x1="660" y1="844" x2="688" y2="844" class="extension"/><line x1="676" y1="772" x2="676" y2="844" class="dim"/><text x="700" y="812" class="dimtext">0.16 in overall</text>
+    <line x1="250" y1="874" x2="550" y2="874" class="dim"/><line x1="250" y1="852" x2="250" y2="888" class="extension"/><line x1="550" y1="852" x2="550" y2="888" class="extension"/><rect x="365" y="862" width="70" height="24" fill="#fff"/><text x="400" y="879" text-anchor="middle" class="dimtext">2.00 in</text>
   </g>
 
-  <g aria-label="Line and fill legend">
-    <line x1="720" y1="160" x2="780" y2="160" class="object"/>
-    <text x="793" y="166" class="note">visible edge</text>
-    <line x1="720" y1="194" x2="780" y2="194" class="hidden"/>
-    <text x="793" y="200" class="note">hidden edge</text>
-    <line x1="720" y1="228" x2="780" y2="228" class="centre"/>
-    <text x="793" y="234" class="note">centre line</text>
-    <rect x="720" y="254" width="60" height="22" class="base"/>
-    <text x="793" y="271" class="note">sectioned PLA</text>
-    <rect x="720" y="290" width="60" height="22" class="bgfill"/>
-    <text x="793" y="307" class="note">background fill</text>
-    <rect x="720" y="326" width="60" height="22" class="logofill"/>
-    <text x="793" y="343" class="note">logo fill</text>
+  <g aria-label="Drawing notes">
+    <text x="900" y="152" class="view">DESIGN NOTES</text><text x="900" y="184" class="note">1. Raised walls and outer rim: 0.05 in minimum width.</text><text x="900" y="210" class="note">2. Fill must remain below the top of the walls.</text><text x="900" y="236" class="note">3. Back face remains flat for glue-on hardware.</text><text x="900" y="262" class="note">4. Remove pockets too small to fill or print cleanly.</text>
+    <text x="900" y="322" class="view">THIRD-ANGLE SYMBOL</text><path d="M920 362L1010 348V422L920 408Z" class="visible"/><line x1="942" y1="359" x2="942" y2="411" class="visible"/><line x1="990" y1="351" x2="990" y2="419" class="visible"/><ellipse cx="1080" cy="385" rx="36" ry="36" class="visible"/><ellipse cx="1080" cy="385" rx="14" ry="36" class="visible"/><line x1="1044" y1="385" x2="1116" y2="385" class="centre"/><text x="900" y="452" class="note">Circle on the right = third-angle projection.</text>
+    <text x="900" y="520" class="view">SECTION KEY</text><rect x="900" y="544" width="56" height="22" class="base"/><text x="970" y="561" class="note">PRINTED PLASTIC (CUT)</text><rect x="900" y="582" width="56" height="22" class="fill-a"/><text x="970" y="599" class="note">BACKGROUND COLOUR</text><rect x="900" y="620" width="56" height="22" class="fill-b"/><text x="970" y="637" class="note">LOGO COLOUR</text><rect x="900" y="658" width="56" height="22" class="wall"/><text x="970" y="675" class="note">RAISED WALL / RIM</text>
   </g>
 
-  <line x1="55" y1="946" x2="1145" y2="946" class="thin"/>
-  <text x="55" y="970" class="note">Nominal 50 mm brooch shown. Use the dimension table for the 30 mm earring version.</text>
+  <g aria-label="Title block">
+    <rect x="840" y="760" width="508" height="188" class="visible"/><line x1="840" y1="816" x2="1348" y2="816" class="thin"/><line x1="840" y1="870" x2="1348" y2="870" class="thin"/><line x1="1060" y1="816" x2="1060" y2="948" class="thin"/><line x1="1220" y1="816" x2="1220" y2="948" class="thin"/>
+    <text x="858" y="782" class="tb-label">DRAWING TITLE</text><text x="858" y="806" class="tb-value">2.00 in FAUX-ENAMEL BROOCH — CONSTRUCTION</text><text x="858" y="838" class="tb-label">DRAWING TYPE</text><text x="858" y="861" class="tb-value">THIRD-ANGLE ORTHOGRAPHIC + SECTION</text><text x="1078" y="838" class="tb-label">UNITS</text><text x="1078" y="861" class="tb-value">in</text><text x="1238" y="838" class="tb-label">SCALE</text><text x="1238" y="861" class="tb-value">NTS</text><text x="858" y="894" class="tb-label">MODEL</text><text x="858" y="921" class="tb-value">BROOCH 2.00</text><text x="1078" y="894" class="tb-label">BASE / WALL</text><text x="1078" y="921" class="tb-value">0.12 / 0.04</text><text x="1238" y="894" class="tb-label">PROJECTION</text><text x="1238" y="921" class="tb-value">3rd ANGLE</text>
+  </g>
+
+  <text x="52" y="966" class="note">Teacher example only. Students use their own original logo; adapt diameter from the project dimension table.</text>
 </svg>
