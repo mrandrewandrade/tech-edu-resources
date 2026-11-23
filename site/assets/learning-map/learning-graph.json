@@ -211,8 +211,8 @@
     {
       "id": "track-design-fabrication-advanced-making",
       "kind": "track",
-      "title": "Stamp First, Optional Bonuses After",
-      "summary": "Learn with the AA arrow, transfer the process to an original stamp, then choose optional PCSS or faux-enamel bonuses.",
+      "title": "Keychain, Stamps, Then Optional Extensions",
+      "summary": "Begin with the basic keychain, build the AA and original stamps, then choose optional Blender, PCSS or faux-enamel extensions.",
       "href": "../design-fabrication/04-3d-printing/index.html",
       "course": "design-fabrication",
       "track": "advanced-making",
@@ -908,6 +908,21 @@
       "sequence_index": 39
     },
     {
+      "id": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "kind": "lesson",
+      "title": "Mission 1: Basic Keychain + CAD Foundations",
+      "summary": "Learn the workplane, primitives, alignment, grouping, a through-hole and export before beginning the stamp project.",
+      "href": "../design-fabrication/04-3d-printing/01-additive-cad.html",
+      "source": "design-fabrication/04-3d-printing/01-additive-cad.qmd",
+      "course": "design-fabrication",
+      "track": "advanced-making",
+      "strands": [
+        "fabrication"
+      ],
+      "order": 1,
+      "sequence_index": 40
+    },
+    {
       "id": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
       "kind": "lesson",
       "title": "Mission 2: AA Stamp → Your Stamp",
@@ -921,8 +936,8 @@
         "design-process",
         "visual-design"
       ],
-      "order": 1,
-      "sequence_index": 40
+      "order": 2,
+      "sequence_index": 41
     },
     {
       "id": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
@@ -937,8 +952,8 @@
         "fabrication",
         "visual-design"
       ],
-      "order": 2,
-      "sequence_index": 41
+      "order": 3,
+      "sequence_index": 42
     },
     {
       "id": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
@@ -954,8 +969,24 @@
         "design-process",
         "visual-design"
       ],
-      "order": 3,
-      "sequence_index": 42
+      "order": 4,
+      "sequence_index": 43
+    },
+    {
+      "id": "lesson-design-fabrication-04-3d-printing-blender-stamp-handle-qmd",
+      "kind": "lesson",
+      "title": "Bonus: Blender Custom Stamp Handle",
+      "summary": "After both required stamps pass, preserve the tested stamp face and add an ergonomic or sculptural mesh handle.",
+      "href": "../design-fabrication/04-3d-printing/blender-stamp-handle.html",
+      "source": "design-fabrication/04-3d-printing/blender-stamp-handle.qmd",
+      "course": "design-fabrication",
+      "track": "advanced-making",
+      "strands": [
+        "fabrication",
+        "design-process"
+      ],
+      "order": 5,
+      "sequence_index": 44
     },
     {
       "id": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
@@ -970,8 +1001,8 @@
         "fabrication",
         "visual-design"
       ],
-      "order": 4,
-      "sequence_index": 43
+      "order": 6,
+      "sequence_index": 45
     },
     {
       "id": "lesson-design-fabrication-04-3d-printing-faux-enamel-pin-jewellery-qmd",
@@ -987,8 +1018,8 @@
         "portfolio",
         "design-process"
       ],
-      "order": 5,
-      "sequence_index": 44
+      "order": 7,
+      "sequence_index": 46
     },
     {
       "id": "lesson-tej3-4-portfolio-index-qmd",
@@ -1003,7 +1034,7 @@
         "portfolio"
       ],
       "order": 1,
-      "sequence_index": 45
+      "sequence_index": 47
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-schematic-basics-qmd",
@@ -1018,7 +1049,7 @@
         "circuits"
       ],
       "order": 1,
-      "sequence_index": 46
+      "sequence_index": 48
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-resistors-qmd",
@@ -1033,7 +1064,7 @@
         "circuits"
       ],
       "order": 2,
-      "sequence_index": 47
+      "sequence_index": 49
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-capacitors-qmd",
@@ -1048,7 +1079,7 @@
         "circuits"
       ],
       "order": 3,
-      "sequence_index": 48
+      "sequence_index": 50
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-rc-charge-discharge-qmd",
@@ -1063,7 +1094,7 @@
         "circuits"
       ],
       "order": 4,
-      "sequence_index": 49
+      "sequence_index": 51
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-rc-time-constant-design-qmd",
@@ -1078,7 +1109,7 @@
         "circuits"
       ],
       "order": 5,
-      "sequence_index": 50
+      "sequence_index": 52
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-diodes-leds-qmd",
@@ -1093,7 +1124,7 @@
         "circuits"
       ],
       "order": 6,
-      "sequence_index": 51
+      "sequence_index": 53
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-transistors-qmd",
@@ -1108,7 +1139,7 @@
         "circuits"
       ],
       "order": 7,
-      "sequence_index": 52
+      "sequence_index": 54
     },
     {
       "id": "lesson-tej3-4-electronics-library-components-op-amps-qmd",
@@ -1123,7 +1154,7 @@
         "circuits"
       ],
       "order": 8,
-      "sequence_index": 53
+      "sequence_index": 55
     },
     {
       "id": "lesson-tej3-4-circuits-parallel-circuits-qmd",
@@ -1138,7 +1169,7 @@
         "circuits"
       ],
       "order": 9,
-      "sequence_index": 54
+      "sequence_index": 56
     },
     {
       "id": "lesson-tej3-4-circuits-series-circuits-qmd",
@@ -1153,7 +1184,7 @@
         "circuits"
       ],
       "order": 10,
-      "sequence_index": 55
+      "sequence_index": 57
     },
     {
       "id": "lesson-tej3-4-circuits-series-parallel-circuits-qmd",
@@ -1168,7 +1199,7 @@
         "circuits"
       ],
       "order": 11,
-      "sequence_index": 56
+      "sequence_index": 58
     },
     {
       "id": "lesson-tej3-4-circuits-kirchhoffs-laws-qmd",
@@ -1183,7 +1214,7 @@
         "circuits"
       ],
       "order": 12,
-      "sequence_index": 57
+      "sequence_index": 59
     },
     {
       "id": "lesson-tej3-4-circuits-linear-algebra-circuits-qmd",
@@ -1198,7 +1229,7 @@
         "circuits"
       ],
       "order": 13,
-      "sequence_index": 58
+      "sequence_index": 60
     },
     {
       "id": "lesson-tej3-4-circuits-tinkercad-circuits-qmd",
@@ -1213,7 +1244,7 @@
         "circuits"
       ],
       "order": 14,
-      "sequence_index": 59
+      "sequence_index": 61
     },
     {
       "id": "lesson-tej3-4-computer-systems-safe-opening-and-parts-index-qmd",
@@ -1228,7 +1259,7 @@
         "systems"
       ],
       "order": 1,
-      "sequence_index": 60
+      "sequence_index": 62
     },
     {
       "id": "lesson-tej3-4-computer-systems-usb-and-cable-management-index-qmd",
@@ -1243,7 +1274,7 @@
         "systems"
       ],
       "order": 2,
-      "sequence_index": 61
+      "sequence_index": 63
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-choosing-a-distribution-qmd",
@@ -1258,7 +1289,7 @@
         "linux"
       ],
       "order": 1,
-      "sequence_index": 62
+      "sequence_index": 64
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-install-linux-mint-qmd",
@@ -1273,7 +1304,7 @@
         "linux"
       ],
       "order": 2,
-      "sequence_index": 63
+      "sequence_index": 65
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-explore-linux-qmd",
@@ -1288,7 +1319,7 @@
         "linux"
       ],
       "order": 3,
-      "sequence_index": 64
+      "sequence_index": 66
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-know-your-computer-qmd",
@@ -1303,7 +1334,7 @@
         "linux"
       ],
       "order": 4,
-      "sequence_index": 65
+      "sequence_index": 67
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-files-terminal-permissions-qmd",
@@ -1318,7 +1349,7 @@
         "linux"
       ],
       "order": 5,
-      "sequence_index": 66
+      "sequence_index": 68
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-git-version-control-qmd",
@@ -1333,7 +1364,7 @@
         "linux"
       ],
       "order": 6,
-      "sequence_index": 67
+      "sequence_index": 69
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-quarto-website-qmd",
@@ -1348,7 +1379,7 @@
         "linux"
       ],
       "order": 7,
-      "sequence_index": 68
+      "sequence_index": 70
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-publish-github-pages-qmd",
@@ -1363,7 +1394,7 @@
         "linux"
       ],
       "order": 8,
-      "sequence_index": 69
+      "sequence_index": 71
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-python-data-logging-qmd",
@@ -1378,7 +1409,7 @@
         "linux"
       ],
       "order": 9,
-      "sequence_index": 70
+      "sequence_index": 72
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-python-analysis-curve-fitting-qmd",
@@ -1393,7 +1424,7 @@
         "linux"
       ],
       "order": 10,
-      "sequence_index": 71
+      "sequence_index": 73
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-networking-ssh-tmux-qmd",
@@ -1408,7 +1439,7 @@
         "linux"
       ],
       "order": 11,
-      "sequence_index": 72
+      "sequence_index": 74
     },
     {
       "id": "lesson-tej3-4-linux-operating-systems-power-and-raspberry-pi-bridge-qmd",
@@ -1423,7 +1454,7 @@
         "linux"
       ],
       "order": 12,
-      "sequence_index": 73
+      "sequence_index": 75
     },
     {
       "id": "lesson-tej3-4-networking-how-wifi-and-ethernet-connect-index-qmd",
@@ -1438,7 +1469,7 @@
         "systems"
       ],
       "order": 1,
-      "sequence_index": 74
+      "sequence_index": 76
     },
     {
       "id": "lesson-tej3-4-networking-ethernet-cable-categories-index-qmd",
@@ -1453,7 +1484,7 @@
         "systems"
       ],
       "order": 2,
-      "sequence_index": 75
+      "sequence_index": 77
     },
     {
       "id": "lesson-tej3-4-networking-build-and-test-ethernet-cable-index-qmd",
@@ -1468,7 +1499,7 @@
         "systems"
       ],
       "order": 3,
-      "sequence_index": 76
+      "sequence_index": 78
     },
     {
       "id": "lesson-tej3-4-computational-engineering-jupyterlite-qmd",
@@ -1483,7 +1514,7 @@
         "programming"
       ],
       "order": 1,
-      "sequence_index": 77
+      "sequence_index": 79
     },
     {
       "id": "lesson-tej3-4-computational-engineering-circuit-quest-qmd",
@@ -1498,7 +1529,7 @@
         "programming"
       ],
       "order": 2,
-      "sequence_index": 78
+      "sequence_index": 80
     },
     {
       "id": "lesson-tej3-4-computational-engineering-python-first-steps-qmd",
@@ -1513,7 +1544,7 @@
         "programming"
       ],
       "order": 3,
-      "sequence_index": 79
+      "sequence_index": 81
     },
     {
       "id": "lesson-tej3-4-computational-engineering-local-python-jupyter-qmd",
@@ -1528,7 +1559,7 @@
         "programming"
       ],
       "order": 4,
-      "sequence_index": 80
+      "sequence_index": 82
     },
     {
       "id": "lesson-tej3-4-computational-engineering-python-numpy-foundations-qmd",
@@ -1543,7 +1574,7 @@
         "programming"
       ],
       "order": 5,
-      "sequence_index": 81
+      "sequence_index": 83
     },
     {
       "id": "lesson-tej3-4-computational-engineering-finding-documentation-and-asking-for-help-qmd",
@@ -1558,7 +1589,7 @@
         "programming"
       ],
       "order": 6,
-      "sequence_index": 82
+      "sequence_index": 84
     },
     {
       "id": "lesson-tej3-4-computational-engineering-kirchhoff-jupyter-assignment-qmd",
@@ -1573,7 +1604,7 @@
         "programming"
       ],
       "order": 7,
-      "sequence_index": 83
+      "sequence_index": 85
     },
     {
       "id": "lesson-tej3-4-computational-engineering-jupyter-electronics-lab-qmd",
@@ -1588,7 +1619,7 @@
         "programming"
       ],
       "order": 8,
-      "sequence_index": 84
+      "sequence_index": 86
     },
     {
       "id": "lesson-tej3-4-computational-engineering-midterm-circuit-investigation-qmd",
@@ -1603,7 +1634,7 @@
         "programming"
       ],
       "order": 9,
-      "sequence_index": 85
+      "sequence_index": 87
     }
   ],
   "edges": [
@@ -1894,6 +1925,11 @@
     },
     {
       "from": "track-design-fabrication-advanced-making",
+      "to": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-design-fabrication-advanced-making",
       "to": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
       "type": "contains"
     },
@@ -1905,6 +1941,11 @@
     {
       "from": "track-design-fabrication-advanced-making",
       "to": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-design-fabrication-advanced-making",
+      "to": "lesson-design-fabrication-04-3d-printing-blender-stamp-handle-qmd",
       "type": "contains"
     },
     {
@@ -2418,6 +2459,16 @@
       "type": "related"
     },
     {
+      "from": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-blender-stamp-handle-qmd",
+      "type": "related"
+    },
+    {
       "from": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
       "to": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
       "type": "sequence"
@@ -2434,6 +2485,11 @@
     },
     {
       "from": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
       "to": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
       "type": "related"
     },
@@ -2449,6 +2505,11 @@
     },
     {
       "from": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-tinkercad-logo-stamp-qmd",
       "to": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
       "type": "related"
     },
@@ -2459,12 +2520,27 @@
     },
     {
       "from": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
-      "to": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-blender-stamp-handle-qmd",
       "type": "sequence"
     },
     {
       "from": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-onshape-logo-stamp-qmd",
       "to": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-blender-stamp-handle-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-blender-stamp-handle-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-logo-stamp-mission-qmd",
       "type": "related"
     },
     {
@@ -2474,7 +2550,17 @@
     },
     {
       "from": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-tinkercad-faux-enamel-logo-qmd",
       "to": "lesson-design-fabrication-04-3d-printing-faux-enamel-pin-jewellery-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-design-fabrication-04-3d-printing-faux-enamel-pin-jewellery-qmd",
+      "to": "lesson-design-fabrication-04-3d-printing-01-additive-cad-qmd",
       "type": "related"
     },
     {

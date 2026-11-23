@@ -104,7 +104,7 @@ class DesignFabricationTests(unittest.TestCase):
             'section: "6. Accessible Design"',
             'section: "7. Laser Cutting and Fabrication Tools"',
             'section: "8. Making the Phone Holder"',
-            'section: "9. Stamp First, Optional Bonuses After"',
+            'section: "9. Keychain, Stamps, Then Optional Extensions"',
             'section: "CAD Tools"',
         ]
         positions = [sidebar.index(item) for item in ordered]
@@ -294,6 +294,10 @@ class DesignFabricationTests(unittest.TestCase):
         modelling = self.read("design-fabrication/04-3d-printing/01-additive-cad.qmd")
         for term in ("Onshape", "parametric", "Blender", "STEP", "STL", "3MF", "editable source"):
             self.assertIn(term, modelling)
+        self.assertIn("Mission 1 - basic keychain", modelling)
+        blender = self.read("design-fabrication/04-3d-printing/blender-stamp-handle.qmd")
+        for term in ("after the stamps", "1.50 in", "watertight", "parametric CAD", "mesh modelling"):
+            self.assertIn(term, blender)
 
     def test_tool_organizer_gallery_preserves_evidence_status(self) -> None:
         gallery = self.read("design-fabrication/tools/tool-organizer-gallery/index.qmd")

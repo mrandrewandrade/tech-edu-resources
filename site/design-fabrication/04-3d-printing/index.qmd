@@ -10,7 +10,7 @@ execute:
 
 Additive manufacturing builds geometry layer by layer. Orientation changes strength and finish, supports leave evidence, holes may print undersize, thin details can disappear, and matching parts need tested clearance. Students keep the editable source model so evidence can drive a real revision.
 
-The concepts in this unit are **software-independent**. Sketch, constrain, dimension, extrude, mirror, pattern, combine, inspect and export are transferable habits whether the buttons belong to Tinkercad, Onshape, Autodesk Inventor, Fusion, SolidWorks, Creo, FreeCAD, OpenSCAD, Blender or another approved tool. These notes demonstrate Tinkercad and Onshape because they are familiar, browser-based and easier to provide consistently across different student devices.
+The concepts in this unit are **software-independent**. Sketch, constrain, dimension, extrude, mirror, pattern, combine, inspect and export are transferable habits whether the buttons belong to Tinkercad, Onshape, Autodesk Inventor, Fusion, SolidWorks, Creo, FreeCAD, OpenSCAD, Blender or another approved tool. These notes demonstrate Tinkercad and Onshape first because they are familiar, browser-based and suited to controlled fabrication geometry. Blender comes later, after the required stamps, as an optional mesh-modelled handle extension.
 
 ![A classroom meme comparing Tinkercad as fast, friendly "Temu CAD" with Onshape as constrained, editable parametric CAD.](../../assets/design-fabrication/tinkercad-temu-cad-vs-onshape-meme.png){.ter-concept-diagram}
 
@@ -54,12 +54,13 @@ First build the supplied **AA arrow** as a 1.50 in mirrored relief stamp. Then r
 ## Learning sequence
 
 <ol class="ter-lesson-sequence">
-  <li><a href="01-additive-cad.qmd">3D Modelling Foundations: Onshape CAD vs Blender Mesh</a>: choose the model type, use constraints and dimensions, and preserve design intent.</li>
+  <li><a href="01-additive-cad.qmd">3D Modelling Foundations: Precise CAD First</a>: learn controlled size, alignment, constraints and editable design intent before mesh modelling.</li>
   <li><a href="02-slicing-orientation.qmd">Slicing, Orientation &amp; Supports</a>: connect layer height, walls, infill, toolpaths, strength, time, and surface quality.</li>
   <li><a href="03-tolerances-functional-parts.qmd">Tolerances &amp; Functional Parts</a>: test holes, clearance, press fits, fasteners, assemblies, brackets, adapters, and repair parts.</li>
   <li><a href="logo-stamp-mission.qmd">Mission 2: AA Arrow Stamp → Your Own Stamp</a>: guided checkpoint, original transfer task, impression tests and submission.</li>
   <li><a href="tinkercad-logo-stamp.qmd">Tinkercad Stamp Pathway</a>: build the AA arrow first, then repeat it with an original logo.</li>
   <li><a href="onshape-logo-stamp.qmd">Onshape Stamp Pathway</a>: build the same required sequence with variables, constrained sketches and named features.</li>
+  <li><a href="blender-stamp-handle.qmd">Bonus: Blender Custom Stamp Handle</a>: only after V1 and V2 pass, preserve the tested stamp face and add an ergonomic or sculptural mesh handle.</li>
   <li><a href="logo-stamp-mission.qmd#bonus-pcss-stamp-challenge">Bonus: PCSS Stamp Challenge</a>: simplify the more complex school crest after both required stamps pass.</li>
   <li><a href="tinkercad-faux-enamel-logo.qmd">Bonus: Tinkercad Faux-Enamel Badge</a>: optional post-stamp reuse of the successful original logo.</li>
   <li><a href="faux-enamel-pin-jewellery.qmd">Bonus: Parametric Faux-Enamel Jewellery</a>: a further optional Onshape extension.</li>

@@ -1,6 +1,6 @@
 ---
-title: "3D Modelling Foundations | Onshape CAD vs Blender Mesh"
-description: "Choose parametric solid CAD for dimension-driven fabrication, understand artistic mesh modelling, and move editable source through STEP, STL/3MF, slicer and printer."
+title: "3D Modelling Foundations | Precise CAD First"
+description: "Learn dimension-driven fabrication in Tinkercad and parametric CAD before moving to Blender mesh modelling after the required stamp project."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [computer-aided-design, parametric-modelling, solid-modelling, polygon-mesh, sketch, geometric-constraint, dimension, design-intent, feature, extrude, revolve, fillet, chamfer, pattern, mirror, part, additive-manufacturing, step-file, stl, three-mf, slicer]
 highlighted-terms: [stl]
@@ -8,17 +8,17 @@ toc: true
 execute: {enabled: false}
 ---
 
-## Two useful modelling approaches
+## Why precise CAD comes first
 
 | Parametric / solid CAD | Mesh / artistic modelling |
 |---|---|
 | Sketches, constraints, dimensions and feature history describe design intent. | Vertices, edges and faces describe the visible surface. |
 | Best default for holes, brackets, patterns, mating parts and predictable revision. | Excellent for organic, sculptural, character, rendering and animation work. |
-| **Primary classroom tool: Onshape.** | **Primary artistic tool: Blender.** |
+| **Primary classroom tool: Onshape.** | **Later artistic extension: Blender.** |
 
 ![Parametric CAD uses constraints, dimensions and features for predictable change; mesh modelling uses vertices, edges and faces to shape visible form.](../../assets/design-fabrication/cad-vs-mesh.svg){.ter-concept-diagram}
 
-Blender can make printable models, but it is not the default for dimension-driven mechanical or fabrication parts. Onshape is the primary fabrication-modelling tool because a student can change a dimension and inspect how the whole model updates.
+Blender can make printable models, but it is not the default for dimension-driven mechanical or fabrication parts. Onshape is the primary fabrication-modelling tool because a student can change a dimension and inspect how the whole model updates. Blender comes **after the required AA and original-logo stamps**, when students already understand scale, printable thickness, flat reference faces, slicer inspection and physical testing.
 
 ## Same concepts, different buttons
 
@@ -83,9 +83,9 @@ Core operations include **extrude, remove, hole, fillet/chamfer, pattern and mir
 
 An exported mesh is not the editable master. Retain the Onshape, Inventor, Fusion, SolidWorks, FreeCAD or other native source model and record which version produced the manufacturing file.
 
-## First modelling task
+## Mission 1 - basic keychain
 
-Model a small identity badge or labelled spacer with controlled width, height, hole diameter, wall thickness and edge treatment. Use constraints rather than visual guessing. Change one parameter and confirm the model updates predictably. Export STL or 3MF for slicing while retaining the editable source.
+Build a basic keychain to learn the workplane, primitive shapes, alignment, grouping, a through-hole and STL export. This is the first mission because the geometry is simple enough to practise the software without hiding scale, alignment or printability problems inside a complex form.
 
 ## Model checks
 
@@ -98,5 +98,9 @@ Model a small identity badge or labelled spacer with controlled width, height, h
 ::: {.ter-curriculum-relevance}
 **Ontario curriculum relevance:** Supports **TDJ2O**, **TMJ2O**, **TIJ1O**, **TEJ2O**, and senior design/manufacturing learning involving CAD, geometric modelling, design communication, manufacturing preparation, and iteration.
 :::
+
+## Where Blender belongs
+
+Blender is introduced only after the guided AA stamp and the student's original stamp pass their impression tests. In the later [Blender custom stamp-handle extension](blender-stamp-handle.qmd), students preserve the tested stamp face and use mesh modelling for an ergonomic or sculptural handle. This keeps precision work in CAD and uses Blender where its organic modelling tools add value.
 
 Next: [Slicing, Orientation & Supports](02-slicing-orientation.qmd).

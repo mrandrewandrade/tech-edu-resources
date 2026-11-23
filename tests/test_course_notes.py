@@ -20,7 +20,7 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 45)
+        self.assertEqual(len(design_routes), 47)
         self.assertEqual(
             design_routes[0],
             "/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html",
@@ -201,8 +201,8 @@ class CourseNotesManifestTests(unittest.TestCase):
         self.assertLess(catalogue.index("Choose Your Phone Holder"), catalogue.index("CAD You Need"))
         self.assertLess(catalogue.index("CAD You Need"), catalogue.index("Tools and Machines"))
         self.assertLess(catalogue.index("Tools and Machines"), catalogue.index("Build Steps"))
-        self.assertLess(catalogue.index("Build Steps"), catalogue.index("Stamp First, Optional Bonuses After"))
-        self.assertLess(catalogue.index("Stamp First, Optional Bonuses After"), catalogue.index("## Highlighted tools"))
+        self.assertLess(catalogue.index("Build Steps"), catalogue.index("Keychain, Stamps, Then Optional Extensions"))
+        self.assertLess(catalogue.index("Keychain, Stamps, Then Optional Extensions"), catalogue.index("## Highlighted tools"))
         self.assertIn('href="tools/index.html">CAD Tools</a>', design)
 
     def test_hubs_and_sidebar_number_sections_without_changing_titles_or_routes(self) -> None:

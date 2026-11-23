@@ -1,0 +1,99 @@
+---
+title: "Bonus Extension | Blender Custom Stamp Handle"
+description: "After both required stamps pass, preserve the proven stamping face and use Blender mesh modelling for an ergonomic or sculptural handle."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [polygon-mesh, stl, additive-manufacturing, dimension, print-orientation, evaluation, iteration]
+highlighted-terms: [stl]
+toc: true
+execute: {enabled: false}
+---
+
+::: {.callout-important}
+## This lesson comes after the stamps
+
+Complete the required [AA Arrow Stamp → Your Own Stamp mission](logo-stamp-mission.qmd) first. Do not begin Blender until both V1 and V2 have readable, correctly oriented impressions.
+:::
+
+## Why Blender comes later
+
+Tinkercad and Onshape teach controlled size, alignment, mirroring, relief, flat reference faces and editable design intent. Blender is excellent for organic forms, characters, textures and sculptural surfaces, but it is also easier to create an object with the wrong scale, paper-thin areas, reversed normals or non-manifold geometry.
+
+The proven stamp becomes a safe foundation. Students keep the dimension-critical stamping face unchanged and use Blender only where mesh modelling adds value: the handle.
+
+## What you are making
+
+Create an optional custom handle on the flat back of a successful stamp. The handle may be ergonomic, geometric, character-inspired or connected to the student's original logo.
+
+- Keep the stamping face at **1.50 in diameter**.
+- Do not sculpt, remesh or distort the tested relief.
+- Keep the handle centred on the flat back.
+- Make the narrowest structural area at least **0.12 in thick**.
+- Keep the complete model as one watertight printable object.
+
+## Step 1 - prepare the proven stamp
+
+1. Duplicate the successful V2 CAD model so the approved source remains untouched.
+2. Export a fresh STL from the approved model.
+3. Open Blender and set the scene units to **Imperial** with length displayed in **inches**.
+4. Import the STL.
+5. Measure the circular face. If it is not 1.50 in, scale the complete stamp uniformly until it is correct.
+6. Apply the object scale before adding or joining handle geometry.
+
+## Step 2 - protect the functional face
+
+1. Orient the stamp so the relief faces downward and the flat back faces upward.
+2. Do not enter Sculpt Mode on the imported stamping face.
+3. Save a separate Blender file before changing the mesh.
+4. Hide or duplicate the original imported object as a recovery copy.
+
+## Step 3 - block out the handle
+
+1. Add a cylinder, rounded cube or another simple primitive above the flat back.
+2. Start with a handle approximately **0.75-1.00 in wide** and **0.75-1.25 in high**.
+3. Centre the primitive on the stamp.
+4. Move it downward until it overlaps the back enough to form a strong connection.
+5. Test the silhouette from the front, side and top views.
+
+## Step 4 - shape the organic form
+
+Use Edit Mode, proportional editing or gentle sculpting to improve the handle. Keep the form broad near the stamp and avoid narrow necks, sharp spikes or deep unsupported overhangs. Add only details that will remain visible at the final printed size.
+
+The goal is not maximum complexity. The goal is a handle that is comfortable, printable and visibly more organic than the precise CAD base.
+
+## Step 5 - make one printable mesh
+
+1. Join the handle to the stamp with a Boolean Union or another teacher-approved mesh workflow.
+2. Inspect the connection from a low side view.
+3. Recalculate normals to the outside.
+4. Check for non-manifold edges, internal faces and accidental loose pieces.
+5. Confirm that the flat stamping face and mirrored relief are still unchanged.
+
+## Step 6 - export and verify
+
+1. Export only the finished object as STL.
+2. Import the STL into the class slicer.
+3. Confirm the diameter is still 1.50 in.
+4. Preview every layer, especially the handle connection and the first relief layers.
+5. Compare print time and support material with the original handle-free stamp.
+6. Revise the Blender source if the slicer exposes a thin, floating or unsupported area.
+
+## Bonus submission
+
+Submit:
+
+1. the `.blend` source file;
+2. front, side and isometric Blender screenshots;
+3. the exported STL;
+4. a slicer screenshot showing the handle connection; and
+5. a short explanation of why Blender was useful for the handle but not necessary for the dimension-critical stamp face.
+
+## Success criteria
+
+- Both required stamps were completed before this extension.
+- The original stamping face remains 1.50 in and produces the same readable impression.
+- The handle is centred, connected and comfortable to grip.
+- The exported object is watertight and correctly scaled.
+- The slicer shows no floating geometry or paper-thin structural areas.
+- The student can explain the difference between parametric CAD and mesh modelling.
+
+This is an optional extension. It does not replace the AA stamp, original stamp or their physical impression evidence.
