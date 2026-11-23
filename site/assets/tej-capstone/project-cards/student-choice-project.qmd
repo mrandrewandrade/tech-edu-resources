@@ -1,0 +1,38 @@
+---
+title: "Project Card: Student-Designed Alternative"
+description: "A printable approval card for an original Linux, Python, and circuits project."
+toc: false
+execute: {enabled: false}
+format:
+  html:
+    page-layout: article
+---
+
+## Challenge
+
+Propose a different protected low-voltage project using at least one approved input, useful Linux/Python behaviour, and one safely interfaced output.
+
+![Three safe sensor-input patterns for a BeagleBone project.](../projects/sensor-alarm/diagrams/night-light-safe-input-options.svg){fig-alt="Documented digital sensor, comparator, and measured ADC-divider routes connect to verified BeagleBone input limits." width="100%"}
+
+## Approval required before building
+
+- measurable success criteria;
+- exact schematic and signal/interface table;
+- datasheets or official documentation;
+- bill of materials, budget, and confirmed availability;
+- staged test plan and safe state;
+- fallback using classroom stock or simulated input.
+
+| Minimum | Proficient | Extension |
+|---|---|---|
+| One input, one low-current output, and small Python behaviour | State machine/decision, log or graph, and driver/interface stage | Second sensor/output or carefully justified new component |
+
+## Non-negotiable limits
+
+No direct high-current load from GPIO. No unverified 5 V signal into 3.3 V GPIO. No signal above the exact ADC maximum. No purchasing or powered wiring before teacher approval.
+
+## Portfolio evidence
+
+Approved proposal/BOM, schematic, interface limits, calculations, test results, three trials, one diagnosed fault, code/log evidence, conclusion, sources, and privacy check.
+
+[Open the complete project pathway](../../../tej3-4/capstone/projects/student-choice-project.qmd).

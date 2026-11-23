@@ -1,0 +1,66 @@
+---
+title: "Capstone Project Proposal"
+description: "Define the problem, scope, success criteria, interfaces, and fallback before building."
+toc: false
+execute: {enabled: false}
+---
+
+**Student(s):** ____________________________________
+
+**Project:** _______________________________________
+
+**Requested level:** Minimum / Proficient / Extension
+
+## Problem
+
+> We will design a __________________ that uses __________________ to __________________.
+
+**Who or what benefits?**
+
+____________________________________________________________________
+
+## Measurable success criteria
+
+1. _________________________________________________________________
+2. _________________________________________________________________
+3. _________________________________________________________________
+4. _________________________________________________________________
+5. _________________________________________________________________
+
+Include response/threshold, repeatability, electrical limit, safe state, and documentation evidence.
+
+## System plan
+
+| Block | Proposed choice | What it does |
+|---|---|---|
+| Input/sensor |  |  |
+| Linux/Python controller |  |  |
+| Driver/protection |  |  |
+| Output/load |  |  |
+| Power source |  |  |
+
+## Software behaviour
+
+List the required states, decisions, delays, and logged information. Attach a state table or flowchart when the project has more than two behaviours.
+
+____________________________________________________________________
+
+## Fallback
+
+If a part is unavailable or incompatible, we will use:
+
+____________________________________________________________________
+
+The fallback still produces circuit, Linux/Python, test, and portfolio evidence.
+
+## Student declaration
+
+- [ ] We have not purchased parts or powered the circuit.
+- [ ] We will not connect an unmeasured signal to the controller.
+- [ ] We understand that approval may reduce the proposed scope.
+
+**Teacher decision:** Revise / Approved for documentation / Approved for unpowered build / Approved for staged power-up
+
+**Required changes and conditions:**
+
+____________________________________________________________________

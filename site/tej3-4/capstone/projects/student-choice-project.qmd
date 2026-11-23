@@ -1,0 +1,186 @@
+---
+title: "Student-Designed Linux and Circuits Project"
+description: "Propose a safe, testable alternative using approved sensors, Linux, Python, and low-voltage circuits."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+Design an alternative to the night light, alarm, relay trainer, or traffic light. Choice does not remove the engineering requirements: the project still needs a safe circuit, Linux/Python evidence, measurements, staged tests, and a documented revision.
+
+::: {.callout-warning title="Approval comes before purchasing or wiring"}
+Do not buy parts, connect a board, reserve a high-current load, or begin a powered build until the teacher approves the problem, schematic, bill of materials, interface voltages, budget, fallback, and test plan.
+:::
+
+::: {.callout-important title="Safety boundary"}
+Student wiring remains at protected extra-low voltage. An approved driver and separate protected supply are required for any load beyond a low-current indicator. Never connect a signal to GPIO or an analogue input until its worst-case voltage has been documented and measured within the exact board limit.
+:::
+
+## Choose a level
+
+| Level | Scope | Minimum evidence |
+|---|---|---|
+| Minimum | One protected input, one low-current output, and a small Linux/Python behaviour | Schematic, I/O table, measurements, three tests |
+| Proficient | A state machine or adjustable decision, event evidence, and one driver/interface stage | State table, calculations, log or graph, fault diagnosis |
+| Extension | A second sensor/output, data analysis, relay-controlled load, or carefully justified new component | Datasheet-based interface design and additional validation |
+
+The teacher may reduce an unsafe or oversized proposal to a smaller approved version.
+
+## Non-negotiable constraints
+
+1. All student wiring uses protected extra-low voltage.
+2. The exact controller, sensor, and output limits are documented before connection.
+3. GPIO does not directly power motors, relay coils, lamps, solenoids, or horns.
+4. Analogue input voltage remains within the exact board limit under normal conditions and one credible fault.
+5. A teacher-approved schematic and BOM exist before power-up.
+6. The minimum version uses parts already available or a confirmed fallback.
+7. The project can be tested in small independent stages.
+8. Linux/Python is functional, not decorative.
+9. Success criteria are measurable within the available class time.
+10. Public portfolio evidence contains no credentials, private network data, faces without approval, or real security details.
+
+## Suitable project directions
+
+| Input idea | Output/behaviour idea | Interface question to resolve |
+|---|---|---|
+| Pushbutton, limit switch, magnetic contact | LED pattern, timer, counter, alarm model | Pull-up/pull-down and debounce |
+| Approved digital light, temperature, or distance sensor | Threshold indicator or event log | Supply, logic level, bus, and library |
+| Potentiometer or analogue sensor | Bar graph or threshold control | ADC maximum and divider design |
+| Two switches | Reaction game or access/interlock model | Stable idle state and state machine |
+| Approved moisture or environmental module | Reminder or warning model | Corrosion, output range, calibration |
+| Keyboard or simulated input | Full software prototype while hardware is unavailable | Clear later hardware adapter |
+
+Examples are starting points, not pre-approved circuits. Modules with the same product name may contain different regulators and pull-ups.
+
+## Problem and success criteria
+
+Write one sentence:
+
+> We will design a __________________ that uses __________________ to __________________.
+
+Then write four to six numbered criteria. Include:
+
+- one input-response time or threshold;
+- one electrical limit;
+- one repeatability requirement;
+- one safe power-up/shutdown requirement;
+- one documentation or logging requirement.
+
+## Parts and budget table
+
+| Part/role | Exact part number or link | Quantity | Stock / borrow / buy | Estimated cost | Electrical limits to verify | Approved? |
+|---|---|---:|---|---:|---|---|
+| Controller |  |  |  |  |  |  |
+| Input/sensor |  |  |  |  |  |  |
+| Output/load |  |  |  |  |  |  |
+| Driver/protection |  |  |  |  |  |  |
+| Resistors/connectors |  |  |  |  |  |  |
+
+Budget: teacher sets the maximum. Shipping time does not count as project progress. Parts are not ordered until the teacher confirms compatibility and availability.
+
+## Required interface table
+
+| Signal | From | To | Minimum/maximum voltage | Expected current | Protection or translation | Evidence source |
+|---|---|---|---|---|---|---|
+| Input 1 |  |  |  |  |  |  |
+| Output 1 |  |  |  |  |  |  |
+| Optional signal |  |  |  |  |  |  |
+
+If a voltage/current cell is unknown, the interface is not ready to build.
+
+## Approval gates
+
+### Gate 1: proposal
+
+- problem and users are clear;
+- success criteria are measurable;
+- minimum version fits the time and budget;
+- fallback is named.
+
+### Gate 2: documentation
+
+- exact datasheets or official platform documentation are linked;
+- supply, GPIO, ADC, and load limits are recorded;
+- pinouts are verified from the exact parts.
+
+### Gate 3: schematic and calculations
+
+- source, protection, input, controller, driver, output, and return are visible;
+- resistor, divider, current, power, or timing calculations are complete;
+- test points and safe state are labelled.
+
+### Gate 4: staged test
+
+- software logic runs with simulated input;
+- sensor is tested without the controller when appropriate;
+- output/driver is tested separately;
+- measured interface voltage is safe before connection.
+
+### Gate 5: integration
+
+- teacher performs a power-off inspection;
+- initial power uses current limiting;
+- minimum function is demonstrated before extensions begin.
+
+## Test plan
+
+| Test ID | Requirement | Setup and input | Expected result | Measurement/log needed | Stop condition |
+|---|---|---|---|---|---|
+| T1 | Safe power-up |  |  |  | Heat, smell, supply limiting, unexpected voltage |
+| T2 | Normal case |  |  |  |  |
+| T3 | Boundary case |  |  |  |  |
+| T4 | Repeatability | Repeat three times |  |  |  |
+| T5 | Prepared fault | Teacher-approved open/disconnected input |  |  |  |
+| T6 | Safe shutdown | Stop program and remove load power | Outputs off | Voltage or observation |  |
+
+## Troubleshooting guide
+
+1. Stop and remove load power before moving wiring.
+2. Reduce the system to the last stage that worked.
+3. State one hypothesis; do not replace several parts at once.
+4. Choose one measurement or software observation that separates two possible causes.
+5. Record expected and observed evidence.
+6. Change one variable and repeat the same test.
+7. Restore the safe state before reconnecting the next stage.
+
+| Symptom | Evidence to collect first |
+|---|---|
+| No sensor data | Sensor supply, device detection, pinout, and raw read error |
+| Random input | Input-node voltage, pull resistor, contact stability |
+| Code works in simulation but not hardware | Raw GPIO/sensor state before project logic |
+| Controller resets when load activates | Supply voltage before/during activation; driver and return paths |
+| Output always active | Driver polarity and safe-state command |
+| Values make no physical sense | Units, range, calibration, raw value, and datasheet definition |
+
+## Fallback if parts fail to arrive
+
+Every proposal selects one:
+
+1. replace the missing sensor with a pushbutton or potentiometer using an approved interface;
+2. run the same state machine with keyboard or synthetic input and document the hardware adapter;
+3. build the automatic night light, Linux alarm, or traffic-light core using class stock;
+4. complete a measured subsystem and a simulated integration, clearly labelled as such.
+
+The fallback must still produce circuit, Linux/Python, testing, and portfolio evidence.
+
+## Exact portfolio evidence
+
+1. approved proposal, selected level, and success criteria;
+2. approved BOM with actual costs or confirmed stock status;
+3. official documentation for every electrical interface;
+4. original system block diagram and circuit schematic;
+5. calculations and stated assumptions;
+6. completed interface table and pre-connection voltage evidence;
+7. software state diagram, flowchart, or clear behavioural description;
+8. completed test table with at least three trials;
+9. one fault, hypothesis, diagnostic measurement, change, and retest;
+10. relevant code or log excerpt;
+11. conclusion against each criterion, limitations, and next step;
+12. source attribution and a privacy check.
+
+Do not represent simulated, example, or predicted values as physical measurements.
+
+## Authoritative sources
+
+Use the manufacturer datasheet for the exact sensor and driver, the official documentation for the exact controller, and the Python standard-library documentation for software features. For a BeagleBone Black, begin with the [official board overview](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html) and [connector reference](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html).
