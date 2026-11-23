@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">Measure DC voltage in parallel</title>
+  <desc id="desc">A source and resistor load form a closed circuit. Test points A and B are on opposite sides of the resistor. A digital multimeter is connected across A and B, with the black lead in COM and red lead in V and ohms.</desc>
+  <defs>
+    <style>
+      .wire{fill:none;stroke:#1d2a44;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#1d2a44;stroke-width:3}.red{stroke:#b3261e}.blue{stroke:#1769aa}.box{fill:#fff;stroke:#1d2a44;stroke-width:4}.soft{fill:#eef5fb;stroke:#1769aa;stroke-width:3}.node{fill:#1d2a44}.t{font:26px Arial,sans-serif;fill:#111}.s{font:22px Arial,sans-serif;fill:#111}.b{font:bold 27px Arial,sans-serif;fill:#111}.note{font:bold 22px Arial,sans-serif;fill:#8b1a16}
+    </style>
+  </defs>
+  <rect width="1000" height="520" fill="#fff"/>
+  <text x="40" y="48" class="b">Voltage is measured across two points — the circuit stays connected</text>
+
+  <line x1="115" y1="145" x2="115" y2="330" class="wire"/>
+  <line x1="90" y1="205" x2="140" y2="205" class="wire"/>
+  <line x1="100" y1="245" x2="130" y2="245" class="wire"/>
+  <text x="47" y="205" class="t">+</text><text x="51" y="260" class="t">−</text>
+  <text x="42" y="306" class="s">approved</text><text x="42" y="334" class="s">DC source</text>
+
+  <path d="M115 145 H330" class="wire"/>
+  <circle cx="330" cy="145" r="9" class="node"/>
+  <text x="310" y="112" class="b">A</text>
+  <path d="M330 145 h35 l16 -24 l26 48 l26 -48 l26 48 l26 -48 l16 24 h35" class="wire"/>
+  <text x="407" y="100" class="b">R1</text>
+  <circle cx="536" cy="145" r="9" class="node"/>
+  <text x="520" y="112" class="b">B</text>
+  <path d="M536 145 H715 V330 H115" class="wire"/>
+  <rect x="590" y="220" width="250" height="180" rx="18" class="soft"/>
+  <rect x="630" y="250" width="170" height="54" rx="7" class="box"/>
+  <text x="666" y="288" class="b">V DC</text>
+  <circle cx="660" cy="355" r="16" fill="#fff" stroke="#1d2a44" stroke-width="4"/>
+  <circle cx="772" cy="355" r="16" fill="#fff" stroke="#1d2a44" stroke-width="4"/>
+  <text x="628" y="390" class="s">V/Ω</text>
+  <text x="742" y="390" class="s">COM</text>
+  <text x="666" y="213" class="b">DMM</text>
+
+  <path d="M660 355 C610 455 330 455 330 154" class="thin red" stroke-width="6"/>
+  <path d="M772 355 C850 185 700 145 545 145" class="thin blue" stroke-width="6"/>
+  <text x="185" y="464" class="s">red lead: V/Ω to higher-potential point A</text>
+  <text x="600" y="464" class="s">black lead: COM to point B</text>
+
+  <rect x="40" y="370" width="435" height="72" rx="10" fill="#fff5f4" stroke="#b3261e" stroke-width="3"/>
+  <text x="60" y="400" class="note">Never use the A or mA jack</text>
+  <text x="60" y="428" class="s">for this voltage measurement.</text>
+</svg>

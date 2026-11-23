@@ -1,0 +1,154 @@
+---
+title: "TEJ Linux, Python, and Circuits Capstone Rubric"
+subtitle: "Evidence from observations, conversations, and products"
+author: "Student and teacher working copy"
+date: last-modified
+format:
+  typst:
+    papersize: us-letter
+    fontsize: 10pt
+    margin:
+      x: 0.55in
+      y: 0.52in
+    toc: false
+    number-sections: false
+---
+
+**Student:** __________________________________  **Project/team:** __________________________
+
+**Evidence codes:** **O** = teacher observation, **C** = conversation/explanation, **P** = product such as design log, schematic, code, measurement, demonstration, or portfolio.
+
+Achievement is based on the most consistent and relevant evidence. A working product alone does not establish a level, and a partly unsuccessful product does not prevent strong achievement when the student demonstrates safe practice, sound reasoning, disciplined testing, useful revision, and honest conclusions.
+
+# 1. Design and schematic
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Defines a meaningful problem and measurable criteria; creates a complete, readable schematic/system diagram with correct sources, protection, interfaces, values, test points, and signal/load relationships; choices are justified with authoritative part information. |
+| **3 — Considerable** | Defines a clear problem and testable criteria; schematic/system diagram is substantially correct and supports construction and testing; most important ratings, interfaces, and test points are documented. |
+| **2 — Some** | Problem or criteria are partly measurable; diagram communicates the main circuit but needs correction or additional labels; some choices rely on unverified assumptions. |
+| **1 — Limited** | Problem and criteria are unclear; diagram is incomplete or unsafe to build from; critical source, protection, interface, value, or pinout information is missing. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+# 2. Safe construction and professional practice
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Consistently performs power-off checks, controls energizing, verifies polarity/pinouts/ratings, uses current limiting/fusing and approved drivers, manages conductors and parts carefully, and can explain the safety boundary to others. |
+| **3 — Considerable** | Usually follows the staged build and power-up process independently; makes safe connections and responds appropriately to unexpected heat, smell, current limiting, or behaviour. |
+| **2 — Some** | Follows key procedures with reminders; occasionally rushes checks or cannot yet explain why a protection/driver choice is required. |
+| **1 — Limited** | Requires frequent intervention to prevent unsafe or damaging connections; energizes before approval or cannot identify the project’s electrical boundary. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+# 3. Linux and Python
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Uses the Linux environment purposefully; writes or adapts structured Python with clear states/functions; separates logic from hardware where appropriate; tests startup, normal, boundary, and shutdown behaviour; interprets errors and improves reliability. |
+| **3 — Considerable** | Runs and explains the program; implements the required input, decision/state, and output; uses meaningful tests and makes supported corrections. |
+| **2 — Some** | Produces partly working code with scaffolding; can explain the main sequence but testing is narrow or hardware details are embedded in ways that make diagnosis difficult. |
+| **1 — Limited** | Runs copied fragments without explaining their role; required input/decision/output is missing or untested; errors are addressed mainly through guessing. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+# 4. Voltage measurements and circuit reasoning
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Predicts values with units and assumptions; selects correct meter mode/range/jacks and named reference points; records useful measurements; applies KVL/KCL, Ohm’s law, power, timing, or another suitable model; explains differences and limitations. |
+| **3 — Considerable** | Measures voltage safely and correctly; calculations and circuit reasoning are substantially correct; compares predicted and observed evidence and identifies meaningful differences. |
+| **2 — Some** | Obtains some valid measurements but needs help naming test points, choosing a range, or connecting evidence to circuit rules; units or precision may be inconsistent. |
+| **1 — Limited** | Meter setup or measurement connection is frequently incorrect; values lack context or units; circuit claims are unsupported by calculations or observations. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+# 5. Testing and troubleshooting
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Converts symptoms into testable hypotheses; chooses safe, discriminating tests; isolates one variable; uses voltage, continuity with power removed, code tests, logs, or substitution appropriately; records what each result rules in or out. |
+| **3 — Considerable** | Uses a logical diagnostic sequence and useful evidence to locate or narrow a fault; avoids random rewiring and verifies the correction with a retest. |
+| **2 — Some** | Recognizes faults and completes teacher-suggested tests, but records limited reasoning or changes several variables at once. |
+| **1 — Limited** | Troubleshooting consists mainly of guessing, repeated restarting, or component replacement without evidence; corrections are not retested. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+# 6. Revision and engineering judgement
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Uses evidence to make a material design/code/test revision; explains trade-offs and limitations; scopes extensions responsibly; identifies the next most informative test. |
+| **3 — Considerable** | Makes a supported revision that improves function, safety, clarity, or testability; explains why the change addresses the evidence. |
+| **2 — Some** | Makes a useful correction, but the connection between evidence and revision is only partly explained or the project remains over-scoped. |
+| **1 — Limited** | Changes are cosmetic, unsupported, or undocumented; limitations and remaining uncertainty are not recognized. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+# 7. Communication and portfolio
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Portfolio tells a coherent engineering story; captions, alt text, tables, diagrams, units, code excerpts, citations, and links make evidence independently understandable; privacy and attribution are carefully handled. |
+| **3 — Considerable** | Portfolio clearly presents the problem, design, evidence, fault, revision, and conclusion; visual and written evidence is readable, sourced, and substantially complete. |
+| **2 — Some** | Portfolio contains the main sections but relies on unexplained screenshots/photos, weak captions, missing units, or general reflection; some links or privacy checks need attention. |
+| **1 — Limited** | Portfolio is incomplete or difficult to follow; claims are not connected to evidence; private or improperly attributed material remains. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+# 8. Individual accountability and explanation
+
+| Level | Descriptor |
+|---|---|
+| **4 — Thorough** | Independently explains the complete system, own contribution, important code/circuit decisions, measurements, fault evidence, and limitations; responds accurately to transfer questions beyond a memorized script. |
+| **3 — Considerable** | Explains the system and own contribution accurately; answers questions about input, control, driver/protection, load, code state, measurements, and troubleshooting. |
+| **2 — Some** | Explains assigned tasks but has gaps in understanding other system sections or depends heavily on team language and prompts. |
+| **1 — Limited** | Cannot identify or explain own contribution and key system behaviour; available team evidence cannot confidently be attributed to this student. |
+
+**Evidence used:** [ ] O  [ ] C  [ ] P  **Level:** ____
+
+**Feedback/next evidence:** ______________________________________________________
+
+{{< pagebreak >}}
+
+## Evidence summary
+
+| Criterion | Level | Strongest evidence source and date |
+|---|---:|---|
+| Design and schematic | | |
+| Safe construction | | |
+| Linux and Python | | |
+| Measurements and reasoning | | |
+| Testing and troubleshooting | | |
+| Revision and judgement | | |
+| Communication and portfolio | | |
+| Individual accountability | | |
+
+**Overall professional judgement:** ______________________________________________
+
+**Most important demonstrated strength:**
+
+________________________________________________________________________________
+
+**Most useful next step:**
+
+________________________________________________________________________________
+
+## Evidence when the circuit remains partly unsuccessful
+
+Strong evidence may include an approved schematic, safe staged construction, correct predicted values, valid test-point measurements, passing hardware-independent Python tests, a logical fault tree, an isolated failed component/interface, a controlled substitution, an honest limitation, and a precise next test. Do not award or remove marks merely because the final load operates during one demonstration.

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">Capacitor timing with a horn-safe boundary</title>
+  <desc id="desc">A resistor charges a capacitor and creates a changing control voltage. A comparator or protected input senses the voltage, then a driver operates a relay coil. Separate fused relay contacts switch the horn or a quiet load. The capacitor does not power the horn.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1769aa"/></marker>
+    <style>
+      .wire{fill:none;stroke:#1d2a44;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.sig{fill:none;stroke:#1769aa;stroke-width:5;marker-end:url(#arrow)}.dash{fill:none;stroke:#687386;stroke-width:4;stroke-dasharray:12 10}.box{fill:#eef5fb;stroke:#1769aa;stroke-width:3}.load{fill:#fff4e5;stroke:#a85d00;stroke-width:3}.node{fill:#1d2a44}.t{font:24px Arial,sans-serif;fill:#111}.s{font:20px Arial,sans-serif;fill:#111}.b{font:bold 27px Arial,sans-serif;fill:#111}.warn{font:bold 20px Arial,sans-serif;fill:#8b1a16}
+    </style>
+  </defs>
+  <rect width="1000" height="570" fill="#fff"/>
+  <text x="35" y="44" class="b">The capacitor sets the timing; the fused supply powers the load</text>
+
+  <text x="48" y="105" class="s">approved control supply</text>
+  <path d="M150 118 H245 l16 -22 l27 44 l27 -44 l27 44 l16 -22 h40" class="wire"/>
+  <text x="273" y="82" class="b">R</text>
+  <circle cx="398" cy="118" r="9" class="node"/>
+  <text x="368" y="90" class="b">V<tspan baseline-shift="sub" font-size="18">C</tspan></text>
+  <line x1="398" y1="118" x2="398" y2="218" class="wire"/>
+  <line x1="360" y1="218" x2="436" y2="218" class="wire"/>
+  <line x1="360" y1="246" x2="436" y2="246" class="wire"/>
+  <line x1="398" y1="246" x2="398" y2="285" class="wire"/>
+  <path d="M358 285 h80 m-65 18 h50 m-35 18 h20" class="wire"/>
+  <text x="447" y="240" class="b">C</text>
+  <text x="315" y="350" class="s">τ = R × C</text>
+
+  <path d="M408 118 H545" class="sig"/>
+  <rect x="555" y="75" width="185" height="170" rx="16" class="box"/>
+  <text x="580" y="116" class="b">Sense threshold</text>
+  <text x="580" y="157" class="t">comparator or</text>
+  <text x="580" y="191" class="t">protected ADC</text>
+  <text x="580" y="224" class="s">verify exact input</text>
+  <path d="M740 160 H825" class="sig"/>
+  <rect x="835" y="75" width="130" height="170" rx="16" class="box"/>
+  <text x="862" y="116" class="b">Driver</text>
+  <text x="852" y="155" class="s">transistor/</text>
+  <text x="864" y="183" class="s">MOSFET</text>
+  <text x="852" y="218" class="s">relay coil</text>
+
+  <line x1="60" y1="405" x2="940" y2="405" class="dash"/>
+  <text x="65" y="392" class="s">electrical isolation / relay contact boundary</text>
+  <rect x="120" y="435" width="745" height="92" rx="14" class="load"/>
+  <text x="145" y="468" class="b">fused load supply → relay contact → load → return</text>
+  <text x="145" y="497" class="s">Use a quiet load, or a brief teacher-controlled horn demonstration.</text>
+  <text x="145" y="522" class="s">Load current does not pass through the capacitor, ADC, GPIO, or controller.</text>
+
+  <rect x="35" y="150" width="235" height="190" rx="12" fill="#fafcff" stroke="#1d2a44" stroke-width="3"/>
+  <text x="58" y="183" class="b">Charge landmarks</text>
+  <line x1="75" y1="300" x2="240" y2="300" class="wire" stroke-width="3"/>
+  <line x1="75" y1="300" x2="75" y2="205" class="wire" stroke-width="3"/>
+  <path d="M75 300 C112 226 165 214 235 210" fill="none" stroke="#1769aa" stroke-width="5"/>
+  <line x1="112" y1="300" x2="112" y2="238" class="dash" stroke-width="2"/>
+  <text x="90" y="327" class="s">1τ</text><text x="132" y="255" class="s">63%</text>
+
+  <text x="420" y="560" class="warn">The capacitor does not power the horn.</text>
+</svg>

@@ -1,0 +1,161 @@
+---
+title: "TEJ Component and Project Approval"
+subtitle: "Parts, ratings, interfaces, budget, and build authorization"
+author: "Student and teacher working copy"
+date: last-modified
+format:
+  typst:
+    papersize: us-letter
+    fontsize: 10pt
+    margin:
+      x: 0.58in
+      y: 0.55in
+    toc: false
+    number-sections: false
+---
+
+**Student(s):** _________________________________________________________________
+
+**Project:** [ ] Night light  [ ] Alarm  [ ] Relay trainer  [ ] Traffic light  [ ] Alternative
+
+**Proposed function:** ____________________________________________________________
+
+## Approval stages
+
+| Stage | Status | Teacher initials/date | Required correction |
+|---|---|---|---|
+| Problem and success criteria | Not reviewed / Revise / Approved | | |
+| Schematic/system diagram | Not reviewed / Revise / Approved | | |
+| Parts, ratings, and interfaces | Not reviewed / Revise / Approved | | |
+| Simulation or code tests | Not reviewed / Revise / Approved | | |
+| Power-off physical inspection | Not reviewed / Revise / Approved | | |
+| Controlled power-up | Not reviewed / Revise / Approved | | |
+
+Approval applies only to the documented version. A changed source, load, driver, polarity, pin, or wiring route requires another check.
+
+{{< pagebreak >}}
+
+# Parts and ratings
+
+| Ref. | Exact part/value | Qty. | Voltage/current/power rating | Pinout/polarity source | Stock status |
+|---|---|---:|---|---|---|
+| | | | | | In stock / Substitute / Needed |
+| | | | | | In stock / Substitute / Needed |
+| | | | | | In stock / Substitute / Needed |
+| | | | | | In stock / Substitute / Needed |
+| | | | | | In stock / Substitute / Needed |
+| | | | | | In stock / Substitute / Needed |
+| | | | | | In stock / Substitute / Needed |
+
+## Datasheet-dependent checks
+
+- [ ] Exact BeagleBone/processor and safe GPIO voltage confirmed.
+- [ ] ADC maximum confirmed before any analogue connection.
+- [ ] LED polarity and current-limiting resistor confirmed.
+- [ ] Transistor/MOSFET part number, pinout, drive requirement, and load rating confirmed.
+- [ ] Relay coil voltage/current and contact ratings confirmed.
+- [ ] Flyback diode part, orientation, and rating confirmed.
+- [ ] Sensor supply, output type, and logic compatibility confirmed.
+- [ ] Capacitor capacitance, voltage rating, polarity, and discharge path confirmed.
+- [ ] Lamp, buzzer, or horn voltage/current and supply capacity confirmed.
+- [ ] Fuse value and holder rating approved for the conductor and load.
+
+**References used:**
+
+________________________________________________________________________________
+
+{{< pagebreak >}}
+
+# Interface and safety boundary
+
+## Power sources
+
+| Supply | Nominal voltage | Current limit/fuse | Loads powered | Ground relationship |
+|---|---:|---:|---|---|
+| BeagleBone/computer supply | | | | |
+| Breadboard/control supply | | | | |
+| External load supply | | | | |
+
+## GPIO/input-output interface
+
+| Board signal | Direction | External circuit | Protection/driver | Safe state at startup |
+|---|---|---|---|---|
+| | Input / Output | | | |
+| | Input / Output | | | |
+| | Input / Output | | | |
+
+## High-current or inductive load gate
+
+If the project uses a relay, lamp, motor, solenoid, or horn:
+
+- [ ] GPIO drives an approved interface, never the load directly.
+- [ ] Relay/transistor/MOSFET circuit has an approved source and return path.
+- [ ] Flyback/suppression is installed where required.
+- [ ] External load circuit is fused and current-limited where practical.
+- [ ] Relay terminal numbers are verified from the actual part, not assumed from shape.
+- [ ] Automotive horn use is teacher-controlled and has a quiet alternative.
+- [ ] Students know the emergency power-off action.
+
+## Power-up authorization
+
+**Power-off inspection result:**
+
+________________________________________________________________________________
+
+**Approved source settings and current limit/fuse:**
+
+________________________________________________________________________________
+
+**First three voltage test points:**
+
+1. ______________________________  Expected: ______________________________
+
+2. ______________________________  Expected: ______________________________
+
+3. ______________________________  Expected: ______________________________
+
+**Teacher authorization:** [ ] Not authorized  [ ] Controlled power-up authorized
+
+Teacher initials/date: ______________________
+
+{{< pagebreak >}}
+
+# Cost, availability, and fallback
+
+No purchase is authorized by this form. The teacher confirms ordering separately.
+
+| Part/group | Must-have / useful / extension | Available qty. | Needed qty. | Price band | Approved substitute/fallback |
+|---|---|---:|---:|---:|---|
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+
+**Proposed total price band per group:** [ ] $0 stock only  [ ] under $10  [ ] $10–$25  [ ] over $25
+
+**If a preferred part is unavailable, the minimum viable project becomes:**
+
+________________________________________________________________________________
+
+**Equivalent simulator/diagnostic pathway:**
+
+________________________________________________________________________________
+
+## Final approval decision
+
+[ ] **Approved:** proceed through the staged checks.
+
+[ ] **Revise:** correct the items below and return for another review.
+
+[ ] **Use supported fallback:** scope/parts are not realistic for the remaining time.
+
+[ ] **Use equivalent evidence pathway:** document the reason and required evidence.
+
+**Decision notes:**
+
+________________________________________________________________________________
+
+________________________________________________________________________________
+
+Student initials: __________________  Teacher initials: __________________  Date: __________
