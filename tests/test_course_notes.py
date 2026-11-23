@@ -20,14 +20,14 @@ class CourseNotesManifestTests(unittest.TestCase):
         for lesson in self.lessons:
             routes_by_course.setdefault(lesson["course_id"], []).append(lesson["route"])
         design_routes = routes_by_course["design-fabrication"]
-        self.assertEqual(len(design_routes), 41)
+        self.assertEqual(len(design_routes), 45)
         self.assertEqual(
             design_routes[0],
             "/commons/design-fabrication/culture-land-based-learning/grandmother-moon-seasons.html",
         )
         self.assertEqual(
             design_routes[-1],
-            "/commons/design-fabrication/advanced-making/stamp-faux-enamel-jewellery.html",
+            "/commons/design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.html",
         )
         self.assertEqual(
             design_routes[9:19],

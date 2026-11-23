@@ -26,8 +26,8 @@ Before students create or use a Tinkercad or Photopea account, confirm each serv
 
 ## The two-version assignment
 
-1. **V1 — guided PCSS badge:** follow the photographed workflow and build the supplied school logo as a 60 mm badge.
-2. **V2 — original badge:** repeat the same process using a simple logo you designed yourself.
+1. **V1  -  guided PCSS badge:** follow the photographed workflow and build the supplied school logo as a 60 mm badge.
+2. **V2  -  original badge:** repeat the same process using a simple logo you designed yourself.
 
 V1 teaches the production method. V2 proves that you can transfer it to original work.
 
@@ -64,13 +64,13 @@ Continue with the [Onshape logo-stamp workflow](onshape-logo-stamp.qmd), then bu
 
 The completed STL is a teacher reference and recovery file. Build the editable Tinkercad version yourself before using it.
 
-# V1 — PCSS guided build
+# V1  -  PCSS guided build
 
-## Part A — inspect and vectorize the logo in Photopea
+## Part A  -  inspect and vectorize the logo in Photopea
 
 The original PNG is made from pixels. Tinkercad needs an SVG made from vector paths. The following screenshots were made while completing the actual PCSS workflow in [Photopea](https://www.photopea.com/).
 
-### Step 1 — open the PCSS PNG
+### Step 1  -  open the PCSS PNG
 
 1. Open Photopea.
 2. Select **File → Open**.
@@ -79,7 +79,7 @@ The original PNG is made from pixels. Tinkercad needs an SVG made from vector pa
 
 ![PCSS Warriors PNG open in Photopea.](../../assets/tinkercad-logo-jewellery/pcss-workflow/01-open-pcss-logo.png){fig-alt="PCSS Warriors logo open in the Photopea workspace"}
 
-### Step 2 — vectorize the bitmap
+### Step 2  -  vectorize the bitmap
 
 1. Select **Image → Vectorize Bitmap**.
 2. Set **Colors** to **4**.
@@ -89,7 +89,7 @@ The original PNG is made from pixels. Tinkercad needs an SVG made from vector pa
 
 ![Photopea Vectorize Bitmap window set to four colours.](../../assets/tinkercad-logo-jewellery/pcss-workflow/02-vectorize-four-colours.png){fig-alt="Photopea Vectorize Bitmap dialogue with four colours selected"}
 
-### Step 3 — inspect the vector layer
+### Step 3  -  inspect the vector layer
 
 1. Accept the vectorization.
 2. In the Layers panel, confirm that Photopea created a **Vector** layer.
@@ -102,7 +102,7 @@ The original PNG is made from pixels. Tinkercad needs an SVG made from vector pa
 Automatic tracing is useful for learning and for simple V2 logos, but the PCSS mark contains curved lettering and many small shapes. For V1, use the supplied **clean PCSS raised-detail SVG** in Tinkercad. It keeps the school mark recognizable and the strokes printable.
 :::
 
-### Step 4 — export an SVG
+### Step 4  -  export an SVG
 
 1. Select **File → Export as → SVG**.
 2. Keep the full artwork selected.
@@ -115,13 +115,13 @@ Automatic tracing is useful for learning and for simple V2 logos, but the PCSS m
 
 ![Photopea SVG export settings and preview.](../../assets/tinkercad-logo-jewellery/pcss-workflow/05-svg-export-settings.png){fig-alt="Photopea SVG export preview and settings"}
 
-## Part B — build the one-colour model in Tinkercad
+## Part B  -  build the one-colour model in Tinkercad
 
 Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, and rename it `lastname-pcss-faux-enamel-v1`.
 
 This is the Temu CAD shift: two clean SVG imports, two controlled heights, one alignment and one printable group. Simple is a feature when every measurement is verified.
 
-### Step 5 — import and size the base
+### Step 5  -  import and size the base
 
 1. Select **Import**.
 2. Upload `circle-base.svg`. If file upload is unavailable, use **Import from URL** with the file link supplied by your teacher.
@@ -131,7 +131,7 @@ This is the Temu CAD shift: two clean SVG imports, two controlled heights, one a
 
 ![The circular SVG base in Tinkercad at 60 mm and 3 mm high.](../../assets/tinkercad-logo-jewellery/pcss-workflow/06-base-60x3-corrected.png){fig-alt="Tinkercad workplane with the circular base selected and height set to 3 millimetres"}
 
-### Step 6 — import the raised PCSS detail
+### Step 6  -  import the raised PCSS detail
 
 1. Select **Import** again.
 2. Import `pcss-white-structure.svg`.
@@ -142,7 +142,7 @@ This is the Temu CAD shift: two clean SVG imports, two controlled heights, one a
 
 ![The PCSS detail selected in Tinkercad with a 1 mm height.](../../assets/tinkercad-logo-jewellery/pcss-workflow/07-detail-60x1-raised-3.png){fig-alt="White PCSS raised detail aligned above the circular base with its height set to 1 millimetre"}
 
-### Step 7 — align, inspect and group
+### Step 7  -  align, inspect and group
 
 1. Select both objects.
 2. Select **Align** and click the horizontal and vertical centre dots.
@@ -157,14 +157,14 @@ This is the Temu CAD shift: two clean SVG imports, two controlled heights, one a
 ::: {.callout-note}
 ## Temu CAD inspection rule
 
-`Ctrl+G` can merge a good model or hide a bad one. The low view, flat back, slicer preview and physical print—not the Group button—prove that the geometry works.
+`Ctrl+G` can merge a good model or hide a bad one. The low view, flat back, slicer preview and physical print - not the Group button - prove that the geometry works.
 :::
 
 ::: {.callout-warning}
 Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The grouped model is one white part; colour is a finishing operation.
 :::
 
-### Step 8 — export the STL
+### Step 8  -  export the STL
 
 1. Keep the grouped model selected.
 2. Select **Export**.
@@ -174,9 +174,9 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 
 ![Tinkercad export window with STL available under For 3D Print.](../../assets/tinkercad-logo-jewellery/pcss-workflow/11-export-stl.png){fig-alt="Tinkercad Export window with STL selected for 3D printing"}
 
-## Part C — slice, print and finish
+## Part C  -  slice, print and finish
 
-### Step 9 — slicer check
+### Step 9  -  slicer check
 
 1. Import the STL into the class slicer.
 2. Place it flat, plain side down and decorated side up.
@@ -184,7 +184,7 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 4. Preview every layer. The print should begin with a solid circular base and finish with the raised logo structure.
 5. Ask for the teacher checkpoint before printing.
 
-### Step 10 — faux-enamel finish
+### Step 10  -  faux-enamel finish
 
 1. Let the white print cool and remove strings or loose material.
 2. Test the approved navy and gold finishes on a failed print or scrap piece.
@@ -196,11 +196,11 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 
 Use only teacher-approved finishing products, ventilation, PPE and adhesive procedures.
 
-# V2 — your original logo
+# V2  -  your original logo
 
 V2 uses the same process with artwork you created. Do not copy a company, sports team, game, social-media or clothing logo.
 
-## Part D — make a simple V2 SVG in Photopea
+## Part D  -  make a simple V2 SVG in Photopea
 
 1. Start with a high-contrast black-and-white logo or a logo with no more than three large colours.
 2. Open it in Photopea.
@@ -218,7 +218,7 @@ These screenshots show the same steps on a simple original `AA` example:
 
 ![The cleaned vector artwork in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){fig-alt="Clean vector layer for the original AA logo"}
 
-## Part E — repeat the Tinkercad build
+## Part E  -  repeat the Tinkercad build
 
 1. Duplicate your successful V1 design or begin a new Tinkercad file.
 2. Keep the proven **3 mm white base**.
@@ -247,7 +247,7 @@ Use this standard operating procedure for both versions.
 | 6. Finish | Apply thin, teacher-approved faux-enamel coats and cure | finished photo |
 | 7. Evaluate | Compare V1 with V2 and identify one evidence-based improvement | 100–150 word reflection |
 
-## Submit V1 — guided checkpoint
+## Submit V1  -  guided checkpoint
 
 Submit:
 
@@ -257,7 +257,7 @@ Submit:
 4. a photo of the unpainted white print; and
 5. a photo of the cured navy, gold and white badge.
 
-## Submit V2 — original final
+## Submit V2  -  original final
 
 Submit:
 
@@ -279,11 +279,11 @@ Submit:
 - Each submitted STL matches its editable Tinkercad design.
 - The reflection identifies a specific improvement supported by evidence.
 
-## Teacher note — Google Classroom draft
+## Teacher note  -  Google Classroom draft
 
 Create two unassigned Classroom drafts from the submission lists above:
 
-- **Faux-Enamel Badge V1 — PCSS Guided Checkpoint**
-- **Faux-Enamel Badge V2 — Original Logo Final**
+- **Faux-Enamel Badge V1  -  PCSS Guided Checkpoint**
+- **Faux-Enamel Badge V2  -  Original Logo Final**
 
 Attach this lesson to both drafts. Keep V1 as a formative checkpoint and grade V2 with the success criteria. Do not assign either post until the printer, white PLA, finishing products, ventilation and findings are ready.
