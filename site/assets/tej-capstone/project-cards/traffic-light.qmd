@@ -1,0 +1,42 @@
+---
+title: "Project Card: BeagleBone Traffic Light"
+description: "Program and verify a safe pedestrian traffic-light state machine."
+format:
+  html:
+    toc: false
+execute: {enabled: false}
+---
+
+## Challenge
+
+Build from one resistor-limited LED to a red/yellow/green sequence with a pedestrian request. The keyboard simulator and hardware must use the same state rules.
+
+## Safety boundary
+
+- Confirm the exact BeagleBone, pin mapping, and Linux image.
+- Use the 3.3 V GPIO domain only as documented.
+- Give every LED its own calculated resistor.
+- Do not drive a relay, lamp, motor, or automotive sounder from GPIO.
+
+## Pathways
+
+| Minimum | Proficient | Extension |
+|---|---|---|
+| Pass the one-LED gate, calculate current, and run a three-light timed sequence. | Add a defined pedestrian input, state diagram, timing table, keyboard fallback, hardware-independent Python tests, and voltage evidence. | Add a quiet accessible output, configuration file, event logging, fault state, second input, or local status display. |
+
+## Required states
+
+Startup Safe, Vehicle Go, Vehicle Warn, All Stop, Pedestrian Go, and Pedestrian Clear. Define every transition and the response to repeated requests.
+
+## Gates
+
+1. Keyboard state-machine simulation passes.
+2. One LED calculation, wiring, and voltage check pass.
+3. Three outputs pass individually.
+4. Button idle/active voltages pass.
+5. Automated invariants pass.
+6. Ten complete request cycles pass.
+
+## Submit
+
+System diagram, parts/GPIO table, resistor calculations, state diagram, timings, test output, voltage table, code link, revision evidence, accessible-output decision, build image, and reflection.

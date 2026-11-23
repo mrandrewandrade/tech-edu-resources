@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 850" role="img" aria-labelledby="title desc">
+  <title id="title">Capacitor energy experiment and relay timing concept</title>
+  <desc id="desc">The student circuit charges a polarized capacitor from five volts and lets it discharge through a resistor-limited LED or verified low-current buzzer. The teacher-only extension uses an RC timing node and threshold driver to control a relay; the separate fused 12 volt supply, not the capacitor, powers the horn.</desc>
+  <defs><style>
+    .wire{fill:none;stroke:#263238;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.pos{fill:none;stroke:#a4202a;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.sense{fill:none;stroke:#5c3977;stroke-width:6;stroke-dasharray:12 8;stroke-linecap:round}.box{fill:#fff;stroke:#263238;stroke-width:4}.panel{fill:#f7fafb;stroke:#90a4ae;stroke-width:3}.note{fill:#fff8e6;stroke:#9b6a00;stroke-width:3}.label{font:700 30px system-ui,sans-serif;fill:#172126}.body{font:25px system-ui,sans-serif;fill:#172126}.small{font:21px system-ui,sans-serif;fill:#37474f}.term{font:700 23px ui-monospace,monospace;fill:#172126}.node{fill:#263238}.cap{stroke:#263238;stroke-width:6}.arrow{stroke:#5c3977;stroke-width:5;fill:none;stroke-dasharray:12 8;marker-end:url(#a)}
+  </style><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#5c3977"/></marker><marker id="led" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#263238"/></marker></defs>
+
+  <rect class="panel" x="30" y="30" width="1580" height="350" rx="20"/>
+  <text class="label" x="65" y="80">STUDENT CIRCUIT · capacitor supplies a small load briefly</text>
+  <circle class="box" cx="115" cy="220" r="48"/><text class="body" x="85" y="230">5 V</text>
+  <path class="pos" d="M163 220H250"/>
+  <circle class="node" cx="250" cy="220" r="9"/><circle class="node" cx="350" cy="220" r="9"/><path class="wire" d="M250 220L335 175"/><text class="body" x="265" y="275">S1</text>
+  <path class="pos" d="M350 220H420"/>
+  <rect class="box" x="420" y="185" width="150" height="70" rx="8"/><text class="body" x="455" y="215">R<tspan baseline-shift="sub" font-size="17">C</tspan></text><text class="small" x="450" y="245">330 Ω</text>
+  <path class="pos" d="M570 220H690"/><circle class="node" cx="690" cy="220" r="10"/><text class="term" x="650" y="190">NODE A</text>
+
+  <path class="wire" d="M690 220V295"/><line class="cap" x1="650" y1="295" x2="730" y2="295"/><line class="cap" x1="650" y1="325" x2="730" y2="325"/><path class="wire" d="M690 325V350"/>
+  <text class="body" x="575" y="310">C1 1000 µF</text><text class="small" x="590" y="340">10 V or higher</text><text class="label" x="745" y="300">+</text>
+
+  <path class="wire" d="M690 220H855"/><rect class="box" x="855" y="185" width="150" height="70" rx="8"/><text class="body" x="890" y="215">R1</text><text class="small" x="885" y="245">1.0 kΩ</text>
+  <path class="wire" d="M1005 220H1085"/>
+  <path d="M1085 180L1160 220L1085 260Z" fill="#fff" stroke="#263238" stroke-width="5"/><line class="cap" x1="1160" y1="175" x2="1160" y2="265"/>
+  <path d="M1105 175L1135 145M1128 185L1158 155" fill="none" stroke="#263238" stroke-width="4" marker-end="url(#led)"/>
+  <path class="wire" d="M1160 220H1270V350"/>
+  <text class="body" x="1075" y="300">D1 LED</text>
+  <rect class="note" x="1300" y="135" width="275" height="165" rx="14"/>
+  <text class="body" x="1330" y="175">Optional buzzer</text>
+  <text class="small" x="1330" y="210">Replace LED branch only</text>
+  <text class="small" x="1330" y="240">with a verified 5 V active</text>
+  <text class="small" x="1330" y="270">buzzer drawing ≤ 20 mA.</text>
+  <path class="wire" d="M85 350H1370"/><path class="wire" d="M115 268V350"/>
+  <path class="wire" d="M785 350V372M745 372H825M760 389H810M775 406H795"/>
+
+  <rect class="panel" x="30" y="415" width="1580" height="405" rx="20"/>
+  <text class="label" x="65" y="465">TEACHER-ONLY HORN EXTENSION · capacitor controls time; supply provides energy</text>
+  <rect class="box" x="80" y="545" width="215" height="115" rx="16"/><text class="label" x="118" y="585">RC timing</text><text class="small" x="110" y="625">C2 voltage changes</text>
+  <path class="sense" d="M295 602H405"/>
+  <rect class="box" x="405" y="545" width="255" height="115" rx="16"/><text class="body" x="445" y="585">Threshold + driver</text><text class="small" x="450" y="625">rated transistor stage</text>
+  <path class="sense" d="M660 602H765"/>
+  <rect class="box" x="765" y="500" width="275" height="145" rx="18"/><text class="label" x="840" y="545">K1 coil</text><text class="small" x="815" y="580">12 V relay + flyback diode</text><text class="term" x="790" y="625">86</text><text class="term" x="980" y="625">85</text>
+  <path class="arrow" d="M325 520H700"/><text class="body" x="405" y="505">timing/control signal</text>
+
+  <circle class="box" cx="115" cy="705" r="40"/><text class="body" x="83" y="715">12 V</text>
+  <path class="pos" d="M155 705H245"/><rect class="box" x="245" y="670" width="145" height="70" rx="8"/><text class="body" x="280" y="700">F1</text><text class="small" x="270" y="730">rated fuse</text>
+  <path class="pos" d="M390 705H515"/><rect class="box" x="515" y="655" width="220" height="100" rx="14"/><text class="body" x="548" y="695">K1 contacts</text><text class="term" x="545" y="735">30 → 87</text>
+  <path class="pos" d="M735 705H940"/>
+  <rect class="box" x="940" y="655" width="260" height="100" rx="18"/>
+  <text class="body" x="1035" y="695">H1</text><text class="small" x="985" y="730">automotive horn</text>
+  <path class="wire" d="M1200 705H1450V770H115V745"/>
+  <path class="wire" d="M760 770V780M720 780H800M735 794H785M750 808H770"/>
+  <rect class="note" x="1260" y="500" width="300" height="150" rx="14"/>
+  <text class="body" x="1290" y="535">The horn is not powered</text>
+  <text class="body" x="1290" y="568">by C2.</text>
+  <text class="small" x="1290" y="605">Use a fused external supply,</text>
+  <text class="small" x="1290" y="635">short tests and hearing controls.</text>
+</svg>

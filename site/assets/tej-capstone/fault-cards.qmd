@@ -1,0 +1,205 @@
+---
+title: "Circuit and Program Fault Cards"
+subtitle: "Predict · diagnose safely · collect evidence · correct · explain"
+format:
+  html:
+    embed-resources: true
+    toc: false
+    page-layout: full
+    css: ../../../teacher-resources/tej/electrical-workbook/print.css
+execute: {enabled: false}
+---
+
+::: {.safety-box}
+Use only teacher-prepared, reversible faults. Power off before moving wires or
+components. Use voltage mode on energized circuits and resistance/continuity
+only after isolation and discharge. None of these cards requires a deliberate
+short circuit.
+:::
+
+::: {.fault-grid}
+::: {.fault-card}
+## Card 1 · Open ground
+
+**Symptom:** The load does not operate. Its positive terminal measures close to
+the source voltage relative to battery negative.
+
+### Predict
+Where should voltage appear if the return path is open?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Test points and readings:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+
+::: {.fault-card}
+## Card 2 · Reversed LED
+
+**Symptom:** The supply and resistor are correct, but the LED remains off.
+
+### Predict
+What voltage and polarity do you expect across the LED?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Record polarity marks and DC voltage:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+
+::: {.fault-card}
+## Card 3 · Wrong resistor decade
+
+**Symptom:** An LED is unexpectedly dim, or a calculated current is ten times
+different from the expected result.
+
+### Predict
+What changes if 1.0 kΩ is replaced by 10 kΩ?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Colour code, power-off resistance, and voltage:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+
+::: {.fault-card}
+## Card 4 · Terminal 87 versus 87a
+
+**Symptom:** A relay-controlled lamp operates when the coil is off instead of
+when the coil is on.
+
+### Predict
+Which contact is closed with the coil de-energized?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Case diagram, terminal numbers, and voltages:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+:::
+<div class="page-break"></div>
+
+::: {.fault-grid}
+::: {.fault-card}
+## Card 5 · Missing pull resistor
+
+**Symptom:** A GPIO input changes randomly when the button is released.
+
+### Predict
+What logical state should exist with the switch open?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Program readings and measured input voltage:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+
+::: {.fault-card}
+## Card 6 · Incorrect program pin
+
+**Symptom:** The program runs without an exception, but the intended LED or
+input never changes.
+
+### Predict
+Which physical and logical pin names must agree?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Pin map, `gpioinfo`, and program configuration:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+
+::: {.fault-card}
+## Card 7 · Program not running
+
+**Symptom:** Hardware passed a power-off check, but no output changes and no log
+entries appear.
+
+### Predict
+What process or terminal evidence should exist?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Command, output, process, or traceback:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+
+::: {.fault-card}
+## Card 8 · Simulated blown fuse
+
+**Symptom:** Source voltage is present before F1 but absent after F1. The load is
+off. The trainer uses a teacher-opened fuse link—never a created short.
+
+### Predict
+What voltage appears across the open fuse while the load is commanded on?
+<div class="answer-line"></div>
+
+### Safe diagnostic sequence
+1. __________________________________
+2. __________________________________
+3. __________________________________
+
+### Evidence
+Upstream, downstream, and across-fuse voltage:
+<div class="answer-box"></div>
+
+### Correction and explanation
+<div class="answer-box"></div>
+:::
+:::

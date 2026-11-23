@@ -1,0 +1,42 @@
+---
+title: "Project Card: Automotive Relay Trainer"
+description: "Use voltage evidence to explain and troubleshoot a fused five-terminal relay circuit."
+format:
+  html:
+    toc: false
+execute: {enabled: false}
+---
+
+## Challenge
+
+Make a fused 12 V lamp operate through a verified automotive relay. Explain terminals 30, 85, 86, 87, and 87a, then diagnose a reversible fault from voltage evidence.
+
+## Safety boundary
+
+- Verify the exact case diagram and datasheet.
+- Use a relay socket and lamp as the normal load.
+- Power off before moving wires or using continuity mode.
+- Never connect the coil, lamp, or horn directly to BeagleBone GPIO.
+- A real horn is a short teacher-supervised extension only.
+
+## Pathways
+
+| Minimum | Proficient | Extension |
+|---|---|---|
+| Identify the relay; map the socket; operate a fused NO lamp; measure source, coil, and lamp voltage. | Add KVL/KCL labels, all voltage test points, released/energized tables, and diagnose two faults. | Use a transistor/MOSFET driver, flyback protection, default-off Python control, and separate fused load supply. |
+
+## Parts to request
+
+Verified 12 V relay and socket, fused/current-limited 12 V source, fuse holder, rated lamp, switch, insulated leads, multimeter, and—only for the extension—approved driver parts.
+
+## Gates
+
+1. Datasheet and socket map approved.
+2. Power-off continuity states approved.
+3. Fused lamp build approved.
+4. Voltage table and two fault diagnoses complete.
+5. Driver schematic approved before any BeagleBone connection.
+
+## Submit
+
+Approved schematic, terminal/datasheet record, calculations, predicted/measured voltage table, KVL/KCL checks, fault log, one clear photograph, safety decisions, and reflection.
