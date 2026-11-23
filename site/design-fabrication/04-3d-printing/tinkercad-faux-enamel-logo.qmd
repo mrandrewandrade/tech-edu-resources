@@ -1,6 +1,6 @@
 ---
-title: "Tinkercad Faux-Enamel Badge | PCSS V1 → Original V2"
-description: "A photographed Photopea-to-Tinkercad workflow: print one white PLA badge, then add faux-enamel colour after printing."
+title: "Tinkercad Faux-Enamel Badge | AA Arrow V1 → Original V2"
+description: "A photographed Photopea-to-Tinkercad workflow: learn with a simple AA arrow, print once in white PLA, then add faux-enamel colour after printing."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, scalable-vector-graphics, computer-aided-design, stl, additive-manufacturing, layer, perimeter-wall, print-orientation]
 highlighted-terms: [logo, stl]
@@ -13,9 +13,9 @@ execute: {enabled: false}
 
 Print the complete badge **once in white PLA**. There is no filament change and no multicolour print.
 
-- The curved text, circular outlines and raised details stay white.
-- Port Credit navy and Warriors gold are added **after printing** as teacher-approved faux-enamel finishes.
-- The colours shown in the original logo are a finishing guide, not separate Tinkercad solids.
+- The outside ring and AA arrow stay white.
+- Navy, gold and any other approved colours are added **after printing** in the recessed areas.
+- The colours in the preview are a finishing plan, not separate Tinkercad solids.
 :::
 
 ::: {.callout-important}
@@ -26,133 +26,140 @@ Before students create or use a Tinkercad or Photopea account, confirm each serv
 
 ## The two-version assignment
 
-1. **V1 — guided PCSS badge:** follow the photographed workflow and build the supplied school logo as a 60 mm badge.
-2. **V2 — original badge:** repeat the same process using a simple logo you designed yourself.
+1. **V1 — guided AA arrow badge:** follow every step below and build the supplied AA arrow inside a circular rim.
+2. **V2 — original badge:** repeat the same workflow using a simple logo you designed yourself.
 
-V1 teaches the production method. V2 proves that you can transfer it to original work.
+The AA arrow is intentionally simple. V1 teaches the production method without burying the class in a complicated school crest. V2 proves that you can transfer the method to original work.
 
 ::: {.callout-tip}
-## Ready to leave Temu CAD?
+## Temu CAD, used on purpose
 
-Tinkercad is excellent for learning the basic moves. It is also, affectionately, **Temu CAD**: quick, cheap and surprisingly capable until you need exact constraints, variables or a feature history.
-
-Continue with the [Onshape logo-stamp workflow](onshape-logo-stamp.qmd), then build the [parametric Onshape faux-enamel pin or jewellery project](faux-enamel-pin-jewellery.qmd). Start with [3D Modelling Foundations](01-additive-cad.qmd) if constraints and parametric modelling are new to you.
+Tinkercad is our affectionate **Temu CAD** pathway: quick, web-based and surprisingly capable when the geometry is simple. It is perfect for this guided build. When you need exact constraints, variables and feature history, move to [Onshape](faux-enamel-pin-jewellery.qmd) or another teacher-approved parametric CAD package.
 :::
 
-![The class running joke: Tinkercad is fast and friendly Temu CAD; Onshape adds parametric control and editability.](../../assets/design-fabrication/tinkercad-temu-cad-vs-onshape-meme.png){.ter-concept-diagram}
+![The finished-colour plan: white printed ring and AA arrow with navy and gold added after printing.](../../assets/tinkercad-logo-jewellery/aa-arrow-faux-enamel-preview.svg){.ter-concept-diagram fig-alt="Circular navy and gold badge with a white outer ring and white AA arrow"}
 
-## What you are making
+## What you are making — inches only
 
-| Feature | V1: PCSS badge | V2: original badge |
+Before modelling, select **Edit Grid** in Tinkercad and change the units to **inches**.
+
+| Feature | V1: AA arrow badge | V2: original badge |
 |---|---:|---:|
-| Finished diameter | 60 mm | 50 mm brooch, or 30 mm for a very simple design |
-| Solid white base | 3 mm | 3 mm |
-| Raised white artwork | 1 mm | 1 mm |
-| Total thickness | about 4 mm | about 4 mm |
-| Minimum printable stroke | 1.2 mm | 1.2 mm |
+| Finished diameter | 2.00 in | 2.00 in |
+| Solid white base | 0.12 in | 0.12 in |
+| Raised white walls | 0.04 in | 0.04 in |
+| Total thickness | about 0.16 in | about 0.16 in |
+| Minimum wall or gap | 0.05 in | 0.05 in |
 | Filament | white PLA only | white PLA only |
 | Colour | applied after printing | applied after printing |
 
-![The PCSS Warriors logo used as the V1 reference.](../../assets/branding/pcss/pcss-warriors.png){fig-alt="Port Credit Warriors round school logo" width="400"}
+![Third-angle drawing of the faux-enamel construction, including the colour cavities and raised walls.](../../assets/tinkercad-logo-jewellery/faux-enamel-cavity-diagram.svg){.ter-concept-diagram}
 
-## Download the V1 files
+## Instructions, editable source and downloads
 
-- [PCSS reference PNG](../../assets/branding/pcss/pcss-warriors.png){download="pcss-warriors.png"}
-- [Clean PCSS raised-detail SVG](../../assets/tinkercad-logo-jewellery/source/pcss-white-structure.svg){download="pcss-white-structure.svg"}
-- [60 mm circular base SVG](../../assets/tinkercad-logo-jewellery/source/circle-base.svg){download="circle-base.svg"}
-- [Completed one-colour PCSS STL](../../assets/tinkercad-logo-jewellery/downloads/pcss-faux-enamel-one-colour.stl){download="pcss-faux-enamel-one-colour.stl"}
+Use the source kit below. The SVG files are editable design geometry. The STL is only a teacher reference and recovery file.
 
-The completed STL is a teacher reference and recovery file. Build the editable Tinkercad version yourself before using it.
+- [AA arrow raster reference](../../assets/branding/logo/aa-logo-transparent.png){download="aa-arrow-reference.png"}
+- [Editable AA arrow SVG](../../assets/onshape-logo-stamp/photopea-workflow/aa-logo-vector.svg){download="aa-arrow-vector.svg"}
+- [Fabrication-ready AA arrow and circular rim SVG](../../assets/tinkercad-logo-jewellery/source/aa-faux-enamel-detail.svg){download="aa-arrow-faux-enamel-detail.svg"}
+- [Editable circular base SVG](../../assets/tinkercad-logo-jewellery/source/circle-base.svg){download="circle-base.svg"}
 
-# V1 — PCSS guided build
+### Completed reference STL
 
-## Part A — inspect and vectorize the logo in Photopea
+- [Download the AA arrow STL as a ZIP — recommended](../../assets/tinkercad-logo-jewellery/downloads/aa-arrow-faux-enamel-brooch-stl.zip){download="aa-arrow-faux-enamel-brooch-stl.zip"}
+- [Download the AA arrow STL directly](../../assets/tinkercad-logo-jewellery/downloads/aa-arrow-faux-enamel-brooch.stl){download="aa-arrow-faux-enamel-brooch.stl"}
 
-The original PNG is made from pixels. Tinkercad needs an SVG made from vector paths. The following screenshots were made while completing the actual PCSS workflow in [Photopea](https://www.photopea.com/).
+::: {.callout-tip}
+## If the STL link will not download
 
-### Step 1 — open the PCSS PNG
+Use the **ZIP — recommended** link. Extract `aa-arrow-faux-enamel-brooch.stl`, then import the STL into the class slicer. Some browsers try to preview a direct `.stl` link instead of saving it; the ZIP avoids that problem.
+:::
 
-1. Open Photopea.
-2. Select **File → Open**.
-3. Open `pcss-warriors.png`.
-4. Confirm that the full circular logo is visible and not cropped.
+# V1 — guided AA arrow build {#v1-aa-arrow-guided-build}
 
-![PCSS Warriors PNG open in Photopea.](../../assets/tinkercad-logo-jewellery/pcss-workflow/01-open-pcss-logo.png){fig-alt="PCSS Warriors logo open in the Photopea workspace"}
+## Part A — learn the Photopea trace
+
+The raster PNG is made from pixels. Tinkercad needs clean vector paths. These screenshots show the actual AA arrow workflow in [Photopea](https://www.photopea.com/).
+
+### Step 1 — open the simple AA arrow
+
+1. Download `aa-arrow-reference.png` from the source kit.
+2. Open Photopea.
+3. Select **File → Open** and choose the PNG.
+4. Confirm that the complete arrow is visible and not cropped.
+
+![The AA arrow raster open in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/01-open-raster-logo.jpg){fig-alt="AA arrow raster open in the Photopea workspace"}
 
 ### Step 2 — vectorize the bitmap
 
 1. Select **Image → Vectorize Bitmap**.
-2. Set **Colors** to **4**.
-3. Choose the **Photo** preset.
-4. Turn on **Reduce noise** and **Merge colors**.
-5. Preview the result before accepting it.
+2. Set **Colors** to **2**.
+3. Turn on **Reduce noise** and **Merge colors**.
+4. Preview the result. The outside edges should be smooth and the centre openings should remain open.
+5. Accept the vectorization.
 
-![Photopea Vectorize Bitmap window set to four colours.](../../assets/tinkercad-logo-jewellery/pcss-workflow/02-vectorize-four-colours.png){fig-alt="Photopea Vectorize Bitmap dialogue with four colours selected"}
+![Photopea Vectorize Bitmap set to two colours for the simple AA arrow.](../../assets/onshape-logo-stamp/photopea-workflow/02-vectorize-two-colours.jpg){fig-alt="Photopea Vectorize Bitmap window set to two colours"}
 
 ### Step 3 — inspect the vector layer
 
-1. Accept the vectorization.
-2. In the Layers panel, confirm that Photopea created a **Vector** layer.
-3. Zoom in on `WARRIORS`, `PORT CREDIT`, the rings, lighthouse and maple leaf.
-4. Look for broken letters, small islands and rough edges.
+1. In the Layers panel, confirm that Photopea created a **Vector** layer.
+2. Zoom in on the point, curved crossbar and long centre stem.
+3. Remove stray dots or disconnected fragments.
+4. Keep the arrow bold. Do not add tiny text.
 
-![The traced PCSS artwork as a vector layer in Photopea.](../../assets/tinkercad-logo-jewellery/pcss-workflow/03-vector-layers.png){fig-alt="Photopea Layers panel showing the PCSS vector artwork"}
+![The cleaned AA arrow as a vector layer in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){fig-alt="Clean AA arrow vector layer in Photopea"}
 
-::: {.callout-note}
-Automatic tracing is useful for learning and for simple V2 logos, but the PCSS mark contains curved lettering and many small shapes. For V1, use the supplied **clean PCSS raised-detail SVG** in Tinkercad. It keeps the school mark recognizable and the strokes printable.
-:::
-
-### Step 4 — export an SVG
+### Step 4 — export the SVG
 
 1. Select **File → Export as → SVG**.
-2. Keep the full artwork selected.
+2. Check the preview and make sure the whole arrow is inside the canvas.
+3. Select **Save**.
+4. Name the file `lastname-aa-arrow.svg`.
 
-![Photopea File menu with Export as SVG selected.](../../assets/tinkercad-logo-jewellery/pcss-workflow/04-export-svg-menu.png){fig-alt="Photopea Export as menu with SVG selected"}
+![Photopea File menu with Export as SVG selected.](../../assets/onshape-logo-stamp/photopea-workflow/04-export-as-svg-menu.jpg){fig-alt="Photopea Export as menu with SVG selected"}
 
-3. In the SVG export window, check the preview and dimensions.
-4. Select **Save**.
-5. Name the file clearly, such as `lastname-pcss-trace.svg`.
+![Photopea SVG export settings for the AA arrow.](../../assets/onshape-logo-stamp/photopea-workflow/05-svg-export-settings.jpg){fig-alt="Photopea SVG export preview and settings"}
 
-![Photopea SVG export settings and preview.](../../assets/tinkercad-logo-jewellery/pcss-workflow/05-svg-export-settings.png){fig-alt="Photopea SVG export preview and settings"}
+::: {.callout-note}
+The supplied `aa-arrow-faux-enamel-detail.svg` adds a circular outer rim to the arrow. The rim is important because it contains the post-print colour. Compare your trace with the supplied fabrication-ready SVG before entering Tinkercad.
+:::
 
 ## Part B — build the one-colour model in Tinkercad
 
-Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, and rename it `lastname-pcss-faux-enamel-v1`.
+Open [Tinkercad](https://www.tinkercad.com/), create a new **3D Design**, rename it `lastname-aa-faux-enamel-v1`, and change **Edit Grid → Units** to **inches**.
 
-This is the Temu CAD shift: two clean SVG imports, two controlled heights, one alignment and one printable group. Simple is a feature when every measurement is verified.
+This is the Temu CAD shift: two SVG imports, two controlled heights, one alignment and one printable group.
 
 ### Step 5 — import and size the base
 
 1. Select **Import**.
-2. Upload `circle-base.svg`. If file upload is unavailable, use **Import from URL** with the file link supplied by your teacher.
-3. Set width and length to **60 mm × 60 mm**.
-4. Set **Height** to **3 mm**.
+2. Upload `circle-base.svg`.
+3. Set the width and length to **2.00 in × 2.00 in**.
+4. Set **Height** to **0.12 in**.
 5. Set the shape colour to white. This is a visual reminder that the print uses white PLA.
 
-![The circular SVG base in Tinkercad at 60 mm and 3 mm high.](../../assets/tinkercad-logo-jewellery/pcss-workflow/06-base-60x3-corrected.png){fig-alt="Tinkercad workplane with the circular base selected and height set to 3 millimetres"}
+Checkpoint: the base must be a flat, solid circle with no hole in the centre.
 
-### Step 6 — import the raised PCSS detail
+### Step 6 — import the AA arrow and rim
 
 1. Select **Import** again.
-2. Import `pcss-white-structure.svg`.
-3. Set it to **60 mm × 60 mm**.
-4. Set **Height** to **1 mm**.
-5. Raise it **3 mm** above the workplane. The detail must sit on top of the 3 mm base, not inside it.
-6. Set this shape to white too.
+2. Upload `aa-arrow-faux-enamel-detail.svg`.
+3. Set the width and length to **2.00 in × 2.00 in**.
+4. Set **Height** to **0.04 in**.
+5. Raise the detail **0.12 in** above the workplane so it sits on top of the base.
+6. Set the detail to white too.
 
-![The PCSS detail selected in Tinkercad with a 1 mm height.](../../assets/tinkercad-logo-jewellery/pcss-workflow/07-detail-60x1-raised-3.png){fig-alt="White PCSS raised detail aligned above the circular base with its height set to 1 millimetre"}
+![The fabrication-ready SVG contains only the raised outside rim and AA arrow.](../../assets/tinkercad-logo-jewellery/source/aa-faux-enamel-detail.svg){fig-alt="Black vector preview of the circular rim and AA arrow" width="520"}
 
 ### Step 7 — align, inspect and group
 
 1. Select both objects.
-2. Select **Align** and click the horizontal and vertical centre dots.
-3. Orbit to a low side view. Confirm that the base is 3 mm and the detail is 1 mm on top.
-4. Confirm that the back is flat and that the text and rings are not floating.
-5. Press **Ctrl+G** to group the two shapes into one printable model.
-
-![The finished PCSS badge as one grouped white model.](../../assets/tinkercad-logo-jewellery/pcss-workflow/08-final-one-white-model.png){fig-alt="Finished one-colour white PCSS model grouped in Tinkercad"}
-
-![A low view showing the solid base and raised white structure.](../../assets/tinkercad-logo-jewellery/pcss-workflow/10-side-view-3-plus-1.png){fig-alt="Low perspective view of the three millimetre base and one millimetre raised detail"}
+2. Select **Align**.
+3. Click the horizontal centre dot and the vertical centre dot.
+4. Orbit to a low side view.
+5. Confirm the base is **0.12 in** and the detail rises another **0.04 in**.
+6. Confirm the back is flat and the raised ring and arrow touch the base.
+7. Press **Ctrl+G** to group the shapes into one printable model.
 
 ::: {.callout-note}
 ## Temu CAD inspection rule
@@ -161,7 +168,7 @@ This is the Temu CAD shift: two clean SVG imports, two controlled heights, one a
 :::
 
 ::: {.callout-warning}
-Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The grouped model is one white part; colour is a finishing operation.
+Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The model is one white part; colour is a finishing operation.
 :::
 
 ### Step 8 — export the STL
@@ -170,9 +177,7 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 2. Select **Export**.
 3. Choose **The selected shape**.
 4. Under **For 3D Print**, select **.STL**.
-5. Name it `lastname-pcss-faux-enamel-v1.stl`.
-
-![Tinkercad export window with STL available under For 3D Print.](../../assets/tinkercad-logo-jewellery/pcss-workflow/11-export-stl.png){fig-alt="Tinkercad Export window with STL selected for 3D printing"}
+5. Name it `lastname-aa-faux-enamel-v1.stl`.
 
 ## Part C — slice, print and finish
 
@@ -181,16 +186,16 @@ Do not make navy and gold objects in Tinkercad. Do not plan a filament swap. The
 1. Import the STL into the class slicer.
 2. Place it flat, plain side down and decorated side up.
 3. Use the approved white-PLA profile.
-4. Preview every layer. The print should begin with a solid circular base and finish with the raised logo structure.
+4. Preview every layer. The print should begin with a solid circular base and finish with the raised ring and arrow.
 5. Ask for the teacher checkpoint before printing.
 
-### Step 10 — faux-enamel finish
+### Step 10 — apply the faux-enamel colour
 
 1. Let the white print cool and remove strings or loose material.
-2. Test the approved navy and gold finishes on a failed print or scrap piece.
-3. Add small amounts of navy and gold only to the recessed areas.
+2. Test the approved finish on a failed print or scrap piece.
+3. Add small amounts of navy, gold and other approved colours only to the recessed areas.
 4. Guide the finish with a fine brush or toothpick.
-5. Keep the raised text, rings and divider details white.
+5. Keep the outside ring and AA arrow white.
 6. Apply several thin coats instead of one thick coat.
 7. Let the finish cure completely before attaching a brooch finding.
 
@@ -202,67 +207,52 @@ V2 uses the same process with artwork you created. Do not copy a company, sports
 
 ## Part D — make a simple V2 SVG in Photopea
 
-1. Start with a high-contrast black-and-white logo or a logo with no more than three large colours.
-2. Open it in Photopea.
-3. Select **Image → Vectorize Bitmap**.
-4. Begin with **2–4 colours**, then reduce the number until the edges are clean.
-5. Remove tiny text, detached dots and narrow features.
-6. Keep every important stroke at least **1.2 mm** at the final badge size.
+1. Begin with a high-contrast logo containing no more than three large colour regions.
+2. Open it in Photopea and select **Image → Vectorize Bitmap**.
+3. Begin with **2–4 colours**, then reduce the number until the edges are clean.
+4. Remove tiny text, detached dots and narrow features.
+5. Keep every important wall and gap at least **0.05 in** at the final badge size.
+6. Add a closed outside rim so every planned colour area is contained.
 7. Select **File → Export as → SVG** and save `lastname-original-logo.svg`.
-
-These screenshots show the same steps on a simple original `AA` example:
-
-![An original raster logo open in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/01-open-raster-logo.jpg){fig-alt="Original AA logo open in Photopea"}
-
-![The original logo vectorized with two colours.](../../assets/onshape-logo-stamp/photopea-workflow/02-vectorize-two-colours.jpg){fig-alt="Photopea Vectorize Bitmap window set to two colours for a simple original logo"}
-
-![The cleaned vector artwork in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){fig-alt="Clean vector layer for the original AA logo"}
 
 ## Part E — repeat the Tinkercad build
 
 1. Duplicate your successful V1 design or begin a new Tinkercad file.
-2. Keep the proven **3 mm white base**.
-3. Import your V2 SVG as the **1 mm raised white detail**.
-4. Raise the artwork **3 mm** and centre-align it with the base.
+2. Keep the proven **2.00 in × 0.12 in** circular base.
+3. Import your original SVG as **0.04 in** raised white structure.
+4. Raise the artwork **0.12 in** and centre-align it with the base.
 5. Inspect the top, side and bottom.
 6. Group the model and export one STL.
 7. Print once in white PLA.
-8. Choose two or three post-print colours that contrast with the white structure.
-
-Use a 50 mm badge for most V2 designs. Use 30 mm only when the design has very few, very wide shapes.
+8. Add two or three contrasting colours after printing.
 
 V2 is the Temu CAD graduation test: the software stays simple, but the design decisions must become original, measurable and defensible.
 
 # Assignment SOP
 
-Use this standard operating procedure for both versions.
-
 | SOP stage | Required action | Evidence |
 |---|---|---|
-| 1. Plan | Identify white structure, navy/gold or student-choice finish areas, final size and finding | annotated logo or colour plan |
+| 1. Plan | Identify white structure, colour cavities, final size and finding | annotated logo or colour plan |
 | 2. Prepare | Vectorize and simplify in Photopea; export SVG | Photopea screenshot and SVG |
-| 3. Produce | Build 3 mm base + 1 mm raised detail in Tinkercad | top/low-view screenshot |
-| 4. Verify | Check alignment, flat back, 1.2 mm strokes and slicer preview | teacher checkpoint screenshot |
+| 3. Produce | Build 0.12 in base + 0.04 in raised detail | top and low-view screenshots |
+| 4. Verify | Check alignment, flat back, 0.05 in walls and slicer preview | teacher checkpoint screenshot |
 | 5. Manufacture | Print once in white PLA using the approved profile | unpainted print photo |
 | 6. Finish | Apply thin, teacher-approved faux-enamel coats and cure | finished photo |
 | 7. Evaluate | Compare V1 with V2 and identify one evidence-based improvement | 100–150 word reflection |
 
 ## Submit V1 — guided checkpoint
 
-Submit:
-
 1. one Photopea vector screenshot;
-2. one Tinkercad side/low-view screenshot;
-3. `lastname-pcss-faux-enamel-v1.stl`;
-4. a photo of the unpainted white print; and
-5. a photo of the cured navy, gold and white badge.
+2. one Tinkercad top-view screenshot;
+3. one Tinkercad side or low-view screenshot;
+4. `lastname-aa-faux-enamel-v1.stl`;
+5. a photo of the unpainted white print; and
+6. a photo of the cured multicolour badge with the ring and arrow still white.
 
 ## Submit V2 — original final
 
-Submit:
-
 1. `lastname-original-logo.svg`;
-2. top and side/low-view Tinkercad screenshots;
+2. top and side or low-view Tinkercad screenshots;
 3. `lastname-original-faux-enamel-v2.stl`;
 4. unpainted and finished photographs; and
 5. the short V1-to-V2 improvement reflection.
@@ -270,20 +260,20 @@ Submit:
 ## Success criteria
 
 - Both badges are printed once in **white PLA**.
-- V1 is recognizably based on the supplied PCSS Warriors mark.
-- Curved text and circular outlines stay visible as white raised structure.
-- The base is 3 mm and the raised artwork is 1 mm.
-- Important strokes are at least 1.2 mm wide.
-- Colour stays in the intended recessed areas without covering the white structure.
+- V1 clearly matches the supplied AA arrow and circular rim.
+- The outside ring and AA arrow remain visible as white raised structure.
+- The base is **0.12 in** and the raised artwork is **0.04 in**.
+- Important walls and gaps are at least **0.05 in**.
+- Colour stays inside the intended recessed areas.
 - V2 uses an original, simplified logo.
 - Each submitted STL matches its editable Tinkercad design.
 - The reflection identifies a specific improvement supported by evidence.
 
-## Teacher note — Google Classroom draft
+## Teacher note — Google Classroom drafts
 
-Create two unassigned Classroom drafts from the submission lists above:
+Create two unassigned Classroom drafts:
 
-- **Faux-Enamel Badge V1 — PCSS Guided Checkpoint**
+- **Faux-Enamel Badge V1 — AA Arrow Guided Checkpoint**
 - **Faux-Enamel Badge V2 — Original Logo Final**
 
 Attach this lesson to both drafts. Keep V1 as a formative checkpoint and grade V2 with the success criteria. Do not assign either post until the printer, white PLA, finishing products, ventilation and findings are ready.
