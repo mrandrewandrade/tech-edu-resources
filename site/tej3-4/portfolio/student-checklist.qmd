@@ -1,0 +1,65 @@
+---
+title: "Portfolio Checklist"
+description: "Check the source, evidence, accessibility, privacy, and rendered site before submitting."
+categories: [portfolio, checklist, accessibility]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+## Before winter break
+
+- [ ] `quarto render` completes without an error.
+- [ ] The site title, description, home introduction, and About page are mine.
+- [ ] I selected `core`, `blog`, `skills`, or `full` in `_quarto.yml`.
+- [ ] I kept or changed an accessible palette in `_brand.yml`.
+- [ ] One existing project has a meaningful draft.
+- [ ] No student number, schedule, private contact detail, or password appears.
+- [ ] I kept the complete source folder, not only `_site`.
+
+## For every complete project
+
+- [ ] The problem and measurable success criteria are clear.
+- [ ] My role and collaborators are identified honestly.
+- [ ] The design includes a schematic, system model, calculation, or plan.
+- [ ] Predictions are separated from simulated and measured results.
+- [ ] Tables and graphs include labels, units, and useful precision.
+- [ ] Code excerpts explain decisions instead of filling space.
+- [ ] At least one fault, diagnostic test, and revision is explained.
+- [ ] The conclusion answers the original question and names a limitation.
+- [ ] Images have useful alternative text.
+- [ ] Sources, licences, and adapted work are credited.
+
+## January integrated project
+
+- [ ] The Linux environment and relevant Python version are documented.
+- [ ] The input, output, state, or data flow is explained.
+- [ ] Software tests and physical circuit checks are distinguished.
+- [ ] GPIO or component voltage/current limits are verified from suitable sources.
+- [ ] The safe shutdown or power-off state is tested.
+- [ ] Private network, account, device, and repository information is removed.
+
+## Final two-week quality check
+
+- [ ] No prompt text or synthetic example value remains in my claimed work.
+- [ ] Home, Projects, About, and enabled optional sections all open.
+- [ ] Search, category filters, and sorting work.
+- [ ] Local images and relative links work after a complete render.
+- [ ] The site works at phone width without sideways scrolling.
+- [ ] Keyboard focus is visible and navigation can be used without a mouse.
+- [ ] Text remains understandable in grayscale and without colour.
+- [ ] Motion is limited and reduced-motion preferences are respected.
+- [ ] Every photograph has been checked at full size for private information.
+- [ ] The portfolio is ready for a three-minute tour of one strong project.
+
+## Final command check
+
+Run from the portfolio folder:
+
+```sh
+quarto render
+python scripts/validate_portfolio.py
+```
+
+Fix source files and render again. Do not repair generated HTML inside `_site`.

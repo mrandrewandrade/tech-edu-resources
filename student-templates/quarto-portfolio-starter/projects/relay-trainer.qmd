@@ -1,0 +1,54 @@
+---
+title: "Automotive Relay Trainer — Example"
+description: "Trace the coil and contact circuits, measure test points, and diagnose one inserted fault."
+date: 2027-01-16
+categories: [automotive, relay, KVL, troubleshooting]
+image: ../assets/fabrication-project.svg
+image-alt: "Placeholder technical illustration representing a measured and revised build."
+---
+
+::: {.callout-warning title="Example only"}
+The readings below are **synthetic placeholders**. Verify the diagram printed on
+the actual relay; case shape alone does not establish terminal orientation.
+:::
+
+::: {.project-facts}
+**Role:** wiring and diagnostic technician
+
+**System:** fused extra-low-voltage relay trainer
+
+**Success:** switch the load and identify a fault from voltage evidence
+:::
+
+## The problem
+
+Use a five-terminal relay to control a protected lamp while keeping the coil
+circuit and load circuit distinct. Identify terminals 30, 85, 86, 87, and 87a
+from verified documentation.
+
+## Initial schematic and prediction
+
+Add a clean schematic showing source, fuse, switch, coil, suppression component,
+contacts, load, and return. Mark the expected energized path and normally closed
+path without crossing unrelated conductors.
+
+## Test evidence
+
+| Test point | Switch open | Switch closed | Example interpretation |
+|---|---:|---:|---|
+| Coil supply | 0.0 V | 11.9 V | control reaches coil |
+| Terminal 30 to ground | 12.0 V | 12.0 V | fused load supply present |
+| Terminal 87 to ground | 0.0 V | 11.8 V | contact changes state |
+| Across lamp | 0.0 V | 11.7 V | load receives voltage |
+
+## Fault and revision
+
+With the poor-ground fault inserted, terminal 87 measured near source voltage but
+the lamp remained off. Measuring across the ground connection exposed an
+unexpected voltage drop. Repairing the return path restored operation.
+
+## Conclusion
+
+The relay separates control from the higher-current load path. A BeagleBone can
+control an approved transistor or relay module, but its GPIO must never power an
+automotive relay coil, lamp, or horn directly.

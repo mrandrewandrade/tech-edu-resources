@@ -1,0 +1,38 @@
+# ================================================================
+# COLOUR AND TYPE — THIS IS THE ACTIVE "HARBOUR" PALETTE
+# ================================================================
+# Copy another complete palette from docs/colour-palettes.md to try it.
+# Keep background/foreground and link colours high contrast.
+
+meta:
+  name: "Student Technology Portfolio"
+
+color:
+  palette:
+    ink: "#18232A"
+    paper: "#FFFFFF"
+    navy: "#173A51"
+    blue: "#166B86"
+    gold: "#B57400"
+    mist: "#EAF4F6"
+  background: paper
+  foreground: ink
+  primary: blue
+  secondary: navy
+  warning: gold
+  light: mist
+
+typography:
+  base:
+    family: "system-ui"
+    size: 1rem
+    line-height: 1.65
+  headings:
+    family: "system-ui"
+    weight: 700
+    color: navy
+  monospace:
+    family: "ui-monospace"
+  link:
+    color: blue
+    decoration: underline

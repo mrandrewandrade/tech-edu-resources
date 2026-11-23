@@ -1,0 +1,60 @@
+---
+title: "Automatic Night Light — Example"
+description: "Use a light sensor to switch an LED load and verify the threshold with voltage evidence."
+date: 2027-01-22
+categories: [electronics, sensor, testing]
+image: ../assets/circuit-project.svg
+image-alt: "Placeholder circuit illustration labelled predict, test, and revise."
+---
+
+::: {.callout-warning title="Example only"}
+All values on this page are **synthetic placeholders**, not physical
+measurements. Replace the circuit, parts, values, photographs, and conclusions
+with your approved work.
+:::
+
+::: {.project-facts}
+**Role:** circuit builder and tester
+
+**Tools:** light sensor, multimeter, breadboard
+
+**Success:** light changes state at a repeatable threshold
+:::
+
+## The problem
+
+Create a low-voltage light that turns on when the sensor is covered and remains
+off in normal room light. The load must be current-limited and the sensor signal
+must remain within the receiving device's permitted voltage range.
+
+## Initial design and prediction
+
+The first design used a light-dependent resistor and fixed resistor as a voltage
+divider. I predicted the sensor-node voltage would move upward as the room became
+darker. The switching device and exact threshold still required verification.
+
+## Calculations and system design
+
+Show the actual divider equation, supply voltage, component tolerances, LED
+resistor calculation, and transistor or input-interface check here. A package
+shape is not proof of a component pinout.
+
+## Test evidence
+
+| Condition | Predicted sensor voltage | Example synthetic observation | Unit | Result |
+|---|---:|---:|---|---|
+| Bright room | 0.7 | 0.8 | V | load off |
+| Sensor partly covered | 1.6 | 1.5 | V | near threshold |
+| Sensor covered | 2.8 | 2.7 | V | load on |
+
+## Mistake and revision
+
+The first test changed state when a hand moved near the sensor. I separated the
+sensor from the indicator light, repeated the same three lighting conditions,
+and recorded the physical setup so the test was more reproducible.
+
+## Conclusion and next test
+
+The example suggests a usable threshold but does not establish performance in
+sunlight, different rooms, or with component variation. The next useful test is
+to repeat the measurements at several distances and record the switching range.

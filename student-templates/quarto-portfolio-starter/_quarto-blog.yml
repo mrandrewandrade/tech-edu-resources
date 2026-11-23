@@ -1,0 +1,20 @@
+# Blog: Core pages plus the optional Learning Log.
+project:
+  render:
+    - index.qmd
+    - projects/*.qmd
+    - blog/**/*.qmd
+    - about.qmd
+    - privacy.qmd
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: blog/index.qmd
+        text: Learning Log
+      - href: about.qmd
+        text: About

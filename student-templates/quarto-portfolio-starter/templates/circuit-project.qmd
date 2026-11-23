@@ -1,0 +1,40 @@
+---
+title: "Replace with a Circuit Project Title"
+description: "One sentence explaining what the circuit should do."
+date: 2027-01-01
+categories: [electronics, circuit]
+image: ../assets/circuit-project.svg
+image-alt: "Replace with a useful description of the circuit image."
+draft: true
+---
+
+## The problem and success criteria
+
+Define the function, supply limits, load, safety boundary, and measurable success
+criteria.
+
+## Schematic and prediction
+
+Add the approved schematic. Label components, values, polarity, nodes, expected
+current paths, and measurement locations.
+
+## Calculations
+
+Show equations, assumptions, units, significant figures, component ratings, and
+one independent check.
+
+## Evidence
+
+| Quantity | Predicted | Simulated | Measured | Unit |
+|---|---:|---:|---:|---|
+| Replace |  |  |  |  |
+
+## Build and safe test sequence
+
+Explain power-off checks, staged power-up, meter mode and connection, and stop
+conditions.
+
+## Fault, revision, and conclusion
+
+Connect the conclusion to evidence. Do not hide an unsuccessful test; explain
+what it ruled out and what you would test next.

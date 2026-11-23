@@ -1,0 +1,17 @@
+# Core: Home, Projects, About, and Privacy only.
+project:
+  render:
+    - index.qmd
+    - projects/*.qmd
+    - about.qmd
+    - privacy.qmd
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: about.qmd
+        text: About

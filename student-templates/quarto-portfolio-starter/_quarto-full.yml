@@ -1,0 +1,23 @@
+# Full: Core pages, Learning Log, and Skills and Tools.
+project:
+  render:
+    - index.qmd
+    - projects/*.qmd
+    - blog/**/*.qmd
+    - skills.qmd
+    - about.qmd
+    - privacy.qmd
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: blog/index.qmd
+        text: Learning Log
+      - href: skills.qmd
+        text: Skills
+      - href: about.qmd
+        text: About

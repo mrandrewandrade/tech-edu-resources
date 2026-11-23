@@ -1,0 +1,38 @@
+---
+title: "Replace with a Linux/Python Project Title"
+description: "One sentence explaining the program and the system it controls or studies."
+date: 2027-01-01
+categories: [Linux, Python]
+image: ../assets/computer-project.svg
+image-alt: "Replace with a useful description of the project image."
+draft: true
+---
+
+## The problem and user
+
+Who needs the system, what should it do, and how will you know it works?
+
+## Environment and design
+
+Record the relevant operating system, Python version, input/output design, data
+flow, state model, and dependencies without publishing device or network secrets.
+
+## Important code
+
+Include short excerpts only when they help explain a decision. Link to the full
+teacher-approved source when appropriate.
+
+## Tests
+
+| Test | Input or setup | Expected | Observed | Result |
+|---|---|---|---|---|
+| Replace |  |  |  | pass / revise |
+
+## Hardware evidence, if used
+
+Separate software results from GPIO voltage, circuit, and load-interface checks.
+
+## Fault, revision, and conclusion
+
+Explain the evidence that exposed one bug or design problem, the revision, and
+the remaining limitation.
