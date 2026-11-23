@@ -105,6 +105,12 @@ class GlossaryBuildFreshnessTests(unittest.TestCase):
                 mock.call(
                     [
                         bs_pre_render.sys.executable,
+                        str(bs_pre_render.REPO_ROOT / "scripts" / "build_learning_graph.py"),
+                    ]
+                ),
+                mock.call(
+                    [
+                        bs_pre_render.sys.executable,
                         str(bs_pre_render.REPO_ROOT / "scripts" / "laser_library.py"),
                         "validate",
                     ]

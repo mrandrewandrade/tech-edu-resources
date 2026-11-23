@@ -1,7 +1,7 @@
 ---
-title: "Technology Commons: The Learning Worlds"
-subtitle: "Start in the centre. Choose a route. Open the real lesson."
-description: "An accessible game-like map of TEJ circuit and computing lessons and TAS fabrication lessons."
+title: "Technology Commons Learning Web"
+subtitle: "Expand a world, follow a quest path, or discover where ideas connect."
+description: "An expandable graph generated from TEJ and design-and-fabrication lessons, sequences, strands, and internal links."
 page-layout: full
 toc: false
 body-classes: "learning-worlds-page"
@@ -11,55 +11,88 @@ format:
     css: ../assets/learning-map/learning-map.css
 ---
 
-::: {.learning-worlds-shell data-learning-worlds="" data-manifest="../assets/learning-map/learning-map.json" data-view="map"}
+::: {.learning-worlds-shell data-learning-worlds="" data-manifest="../assets/learning-map/learning-graph.json" data-view="map"}
 
 ::: {.learning-worlds-intro}
 ::: {}
-This is an **optional way to explore** the course. It does not replace the normal menus, search, lesson pages, or teacher directions. Start at the Technology Commons Hub, travel to a connected stop, and open the lesson when you are ready.
+This is a **quest map for the real course website**. Start in the centre, expand one world, and open only the route you need. **Connected Web** groups related ideas; **Quest Paths** straightens them into the normal teaching sequence.
 :::
 
 ::: {.learning-worlds-reminder}
-**Visited ≠ mastered.** A checkmark only means that this browser opened the stop. It is not a grade and it does not lock or unlock class content.
+**Explored ≠ mastered.** A checkmark only means that this browser selected the stop. Nothing is locked, and the map does not create a grade.
 :::
 :::
 
-::: {.map-toolbar aria-label="Map controls"}
-<button type="button" data-view="map" aria-pressed="true">Map view</button>
+::: {.map-toolbar aria-label="Learning web controls"}
+::: {.map-toolbar__group aria-label="View controls"}
+<button type="button" class="is-active" data-view="map" aria-pressed="true">Map</button>
 <button type="button" data-view="list" aria-pressed="false">Lesson list</button>
-<button type="button" data-reset-progress>Reset visited stops</button>
-<a href="field-guide.html">Visual field guide</a>
-<a href="print.html">Printable map</a>
-
-<label class="map-search">Find a stop <input type="search" data-map-search placeholder="Try resistor, Python, CAD…" autocomplete="off"></label>
+<button type="button" class="is-active" data-layout="web" aria-pressed="true">Connected web</button>
+<button type="button" data-layout="path" aria-pressed="false">Quest paths</button>
 :::
 
-<p class="map-status" data-map-status role="status" aria-live="polite">Loading the learning map…</p>
+::: {.map-toolbar__group aria-label="Graph controls"}
+<button type="button" data-focus-selected>Focus selected</button>
+<button type="button" data-show-all>Show full web</button>
+<button type="button" data-fit-map>Fit map</button>
+<button type="button" data-reset-map>Start over</button>
+<button type="button" data-reset-progress>Reset checkmarks</button>
+<a href="print.html">Printable overview</a>
+:::
+
+::: {.map-toolbar__group .map-toolbar__group--wide aria-label="Search and filters"}
+<label class="map-select-wrap">Course
+<select data-course-filter><option value="">All courses</option></select>
+</label>
+<label class="map-select-wrap">Strand
+<select data-strand-filter><option value="">All strands</option></select>
+</label>
+<label class="map-search-wrap">Find a stop
+<input type="search" data-map-search placeholder="Try capacitor, Linux, logo…" autocomplete="off">
+<span class="map-search-results" data-search-results hidden></span>
+</label>
+:::
+:::
+
+<p class="map-status" data-map-status role="status" aria-live="polite">Loading the learning web…</p>
 
 ::: {.map-layout}
-<div class="learning-map-canvas" data-map-canvas tabindex="0" aria-label="Learning Worlds map. Use Tab to reach a stop. Arrow keys or W A S D move between connected stops. Space shows details and Enter opens the lesson.">
-  <svg class="world-paths" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g data-path-layer></g></svg>
-  <div class="world-nodes" data-node-layer></div>
+<div class="learning-map-stage" aria-label="Expandable learning graph">
+  <svg class="learning-graph" data-graph-svg role="application" aria-label="Learning graph. Select nodes with a pointer or keyboard. Use the mouse wheel to zoom and drag the background to pan.">
+    <defs data-graph-defs></defs>
+    <g data-graph-viewport>
+      <g data-edge-layer aria-hidden="true"></g>
+      <g data-node-layer></g>
+    </g>
+  </svg>
+  <p class="learning-map-help">Select a node for details. Double-select a world or strand to expand it. Drag to pan; use the mouse wheel to zoom.</p>
 </div>
 
-<aside class="map-detail" data-node-detail aria-live="polite" aria-label="Selected stop details">
-  <h2>Technology Commons Hub</h2>
-  <p>The map is loading. The regular lesson links remain available through the site navigation.</p>
+<aside class="map-detail" data-node-detail aria-live="polite" aria-label="Selected learning stop">
+  <h2>Technology Commons</h2>
+  <p>The graph is loading. The normal course navigation remains available.</p>
 </aside>
 :::
 
-<div class="map-list-view" data-map-list aria-label="All Learning Worlds stops"></div>
+<div class="map-list-view" data-map-list aria-label="All lessons by strand"></div>
 
-::: {.map-legend aria-label="Map legend"}
-<span>● Hub</span><span>↗ Portal</span><span>• Lesson</span><span>◆ Project</span><span>! Safety</span><span>★ Portfolio</span><span>✓ Visited</span>
+::: {.map-legend aria-label="Connection legend"}
+<span>Thick line: next lesson</span>
+<span>Thin line: belongs to this strand</span>
+<span>Dashed curve: related page link</span>
+<span>Blended node: connects more than one strand</span>
+<span>+ / −: expandable region</span>
+<span>✓: explored on this browser</span>
 :::
 
 ::: {.source-note}
-The map artwork and [visual field-guide diagrams](field-guide.qmd) are original redraws. Technical references are linked from applicable stops and listed beside each field-guide diagram. Mission-video buttons appear only when a valid video URL is added to the manifest; videos never autoplay.
+The interactive graph is generated from the same course sequence that powers the normal lesson navigation. Links written inside lesson pages add cross-connections. The existing [printable overview](print.qmd) remains a compact paper map.
 :::
 
-{{< include ../includes/generated/learning-map-noscript.html >}}
+<noscript>
+JavaScript is required for the expandable graph. Use the [TEJ course notes](../tej3-4/index.qmd), [Design and Fabrication notes](../design-fabrication/index.qmd), or the [printable overview](print.qmd).
+</noscript>
 
 :::
 
 <script src="../assets/learning-map/learning-map.js" defer></script>
-

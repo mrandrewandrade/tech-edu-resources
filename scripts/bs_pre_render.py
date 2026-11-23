@@ -38,6 +38,13 @@ def main() -> int:
             "generate",
         ]
     )
+    print("Generating the expandable Learning Worlds graph.")
+    run(
+        [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "build_learning_graph.py"),
+        ]
+    )
     print("Validating the public laser fabrication catalogue.")
     run(
         [
