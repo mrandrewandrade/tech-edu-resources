@@ -429,11 +429,11 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/">3D-Printed Faux Enamel Jewellery</a></p>
       </details>
     </article>
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Bonus: Onshape Faux-Enamel Jewellery&quot;, &quot;Stamp First, Optional Bonuses After&quot;]" data-bs-search-body="[&quot;Optionally develop the fillable jewellery design as an editable parametric Onshape model.&quot;, &quot;The later extension connects constrained CAD, orthographic evidence, printing, and finishing.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Bonus: Onshape Faux-Enamel Jewellery&quot;, &quot;Stamp First, Optional Bonuses After&quot;]" data-bs-search-body="[&quot;Optionally develop the fillable jewellery design as an editable parametric Onshape model.&quot;, &quot;The later extension connects constrained CAD, CAD-generated evidence, printing, and finishing.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;]">
       <details class="bs-learn-catalogue-description">
         <summary aria-label="Show description for Bonus: Onshape Faux-Enamel Jewellery"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="04-3d-printing/faux-enamel-pin-jewellery.html">5. Bonus: Onshape Faux-Enamel Jewellery</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Optionally develop the fillable jewellery design as an editable parametric Onshape model.</p>
-        <p>The later extension connects constrained CAD, orthographic evidence, printing, and finishing.</p>
+        <p>The later extension connects constrained CAD, CAD-generated evidence, printing, and finishing.</p>
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Faux-Stained-Glass-3D-Printed/">Faux Stained Glass - 3D Printed</a></p>
       </details>
     </article>
