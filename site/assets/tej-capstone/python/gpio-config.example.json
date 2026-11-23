@@ -1,0 +1,19 @@
+{
+  "_instructions": "Copy this file. Replace every placeholder only after the teacher records gpioinfo evidence for the exact board and image.",
+  "inputs": {
+    "trigger": {
+      "chip": "/dev/gpiochipREPLACE",
+      "line": "REPLACE_WITH_VERIFIED_LINE_NAME_OR_OFFSET",
+      "active_low": true,
+      "bias": "pull-up"
+    }
+  },
+  "outputs": {
+    "status": {
+      "chip": "/dev/gpiochipREPLACE",
+      "line": "REPLACE_WITH_VERIFIED_LINE_NAME_OR_OFFSET",
+      "active_low": false,
+      "bias": "as-is"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 480" role="img" aria-labelledby="title desc">
+  <title id="title">Traffic-light state machine</title><desc id="desc">Red changes to green, then yellow, then red. A latched pedestrian request inserts a walk state after yellow.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><style>.s{fill:#fff;stroke:#222;stroke-width:4}.red{fill:#fff1ee;stroke:#a32a1f}.green{fill:#eef8ee;stroke:#276c2c}.yellow{fill:#fff8d8;stroke:#8b6b00}.walk{fill:#eef6ff;stroke:#174a7e}.h{font:700 22px Arial,sans-serif}.t{font:18px Arial,sans-serif}.l{fill:none;stroke:#222;stroke-width:4;marker-end:url(#a)}</style></defs>
+  <rect width="1050" height="480" fill="#fff"/>
+  <text x="525" y="28" text-anchor="middle" class="h">Traffic-light controller states</text>
+  <ellipse cx="180" cy="150" rx="105" ry="65" class="s red"/><text x="180" y="147" text-anchor="middle" class="h">RED</text><text x="180" y="177" text-anchor="middle" class="t">vehicle stop</text>
+  <ellipse cx="525" cy="150" rx="105" ry="65" class="s green"/><text x="525" y="147" text-anchor="middle" class="h">GREEN</text><text x="525" y="177" text-anchor="middle" class="t">vehicle go</text>
+  <ellipse cx="870" cy="150" rx="105" ry="65" class="s yellow"/><text x="870" y="147" text-anchor="middle" class="h">YELLOW</text><text x="870" y="177" text-anchor="middle" class="t">clearance</text>
+  <ellipse cx="870" cy="355" rx="115" ry="65" class="s walk"/><text x="870" y="352" text-anchor="middle" class="h">WALK</text><text x="870" y="382" text-anchor="middle" class="t">vehicle red stays on</text>
+  <line x1="290" y1="150" x2="415" y2="150" class="l"/><text x="352" y="125" text-anchor="middle" class="t">red timer</text>
+  <line x1="635" y1="150" x2="760" y2="150" class="l"/><text x="697" y="125" text-anchor="middle" class="t">green timer</text>
+  <path d="M975 150H1015V58H180V82" class="l"/><text x="620" y="80" text-anchor="middle" class="t">yellow timer; no request</text>
+  <line x1="870" y1="220" x2="870" y2="285" class="l"/><text x="890" y="260" class="t">request latched</text>
+  <path d="M750 355H180V220" class="l"/><text x="430" y="385" text-anchor="middle" class="t">walk timer → RED</text>
+  <text x="525" y="458" text-anchor="middle" class="t">A button press records a request; it does not interrupt the safe sequence.</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Capstone platform learning path</title>
+  <desc id="desc">Five stages: Linux basics, simulation, onboard LED, protected external circuits, and an approved project.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/>
+    </marker>
+    <style>
+      .box{fill:#fff;stroke:#222;stroke-width:3;rx:14}.stage{font:700 22px Arial,sans-serif;fill:#111}.detail{font:18px Arial,sans-serif;fill:#222}.arrow{stroke:#222;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="260" fill="#fff"/>
+  <text x="600" y="34" text-anchor="middle" class="stage">Work from software evidence to approved hardware</text>
+  <g transform="translate(25 70)"><rect class="box" width="190" height="130"/><text x="95" y="38" text-anchor="middle" class="stage">1. Linux</text><text x="95" y="72" text-anchor="middle" class="detail">files, editor,</text><text x="95" y="98" text-anchor="middle" class="detail">run and stop</text></g>
+  <line x1="220" y1="135" x2="255" y2="135" class="arrow"/>
+  <g transform="translate(260 70)"><rect class="box" width="190" height="130"/><text x="95" y="38" text-anchor="middle" class="stage">2. Simulate</text><text x="95" y="72" text-anchor="middle" class="detail">state machine</text><text x="95" y="98" text-anchor="middle" class="detail">and tests</text></g>
+  <line x1="455" y1="135" x2="490" y2="135" class="arrow"/>
+  <g transform="translate(495 70)"><rect class="box" width="190" height="130"/><text x="95" y="38" text-anchor="middle" class="stage">3. Onboard</text><text x="95" y="72" text-anchor="middle" class="detail">discover LED;</text><text x="95" y="98" text-anchor="middle" class="detail">no wiring</text></g>
+  <line x1="690" y1="135" x2="725" y2="135" class="arrow"/>
+  <g transform="translate(730 70)"><rect class="box" width="190" height="130"/><text x="95" y="38" text-anchor="middle" class="stage">4. Protected</text><text x="95" y="72" text-anchor="middle" class="detail">LED, then</text><text x="95" y="98" text-anchor="middle" class="detail">button</text></g>
+  <line x1="925" y1="135" x2="960" y2="135" class="arrow"/>
+  <g transform="translate(965 70)"><rect class="box" width="210" height="130"/><text x="105" y="38" text-anchor="middle" class="stage">5. Project</text><text x="105" y="72" text-anchor="middle" class="detail">verified pins,</text><text x="105" y="98" text-anchor="middle" class="detail">driver and load</text></g>
+  <text x="600" y="238" text-anchor="middle" class="detail">Teacher approval is required before each external-wiring stage.</text>
+</svg>

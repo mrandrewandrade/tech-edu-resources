@@ -1,0 +1,65 @@
+---
+title: "Teacher BeagleBone Preflight"
+description: "Inventory, inspect, and verify each board/image combination before student GPIO work."
+categories: [TEJ, teacher guide, BeagleBone, GPIO, safety]
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+This page summarizes the release gate. The editable inventory, header worksheet,
+and compatibility notes are kept in the teacher resources rather than student
+project pages.
+
+## Evidence script
+
+[Download the read-only collection script](../../../assets/tej-capstone/scripts/collect-beaglebone-evidence.sh).
+
+Run it from a normal account on one reference board for each distinct model,
+revision, and Linux image:
+
+```sh
+bash collect-beaglebone-evidence.sh
+```
+
+It records the reported model, kernel, OS, storage, Python, libgpiod tools,
+`gpioinfo`, LED-device names, and interface state. It intentionally omits IP
+addresses, MAC addresses, Wi-Fi names, and credentials. Keep the evidence folder
+private.
+
+## Evidence the script cannot supply
+
+- printed model/revision and physical condition;
+- correct adapter voltage, polarity, current capacity, and condition;
+- measured supply behaviour;
+- header position and external wiring;
+- GPIO/ADC electrical suitability;
+- success of the reference circuit;
+- load current and protection.
+
+## Release gate
+
+1. Reconcile script output with physical inventory.
+2. Complete one verified pin worksheet per board/image combination.
+3. Run the platform tests without GPIO.
+4. Test an onboard LED device.
+5. Test one external LED and one button.
+6. Confirm clean output shutdown.
+7. Test the driver without its load.
+8. Only then test the protected load.
+
+## Older images
+
+The supplied adapter targets libgpiod Python API 2.x. If a classroom image uses
+an older API, decide whether to update the reference image or build a separately
+tested legacy adapter with the same three-method contract. Do not combine old and
+new GPIO examples in student code.
+
+## Official references
+
+- [BeagleBone Black overview](https://docs.beagleboard.org/boards/beaglebone/black/ch04.html)
+- [Expansion connectors and electrical warnings](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html)
+- [Orderly power-down guidance](https://docs.beagleboard.org/boards/beaglebone/black/ch05.html#power-button)
+- [`gpioinfo` mapping workflow](https://docs.beagleboard.org/books/beaglebone-cookbook/02sensors/sensors.html#mapping-header-numbers-to-gpio-numbers)
+- [libgpiod 2.x Python API](https://libgpiod.readthedocs.io/en/v2.3/python_api.html)

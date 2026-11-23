@@ -1,0 +1,7 @@
+timestamp_utc,elapsed_s,system,state,event,input_arm,input_disarm,input_trigger,input_silence,input_pedestrian,ambient_value,ambient_unit,output_red,output_yellow,output_green,output_status,output_alarm,output_relay,output_pedestrian_walk,data_origin
+2027-01-14T22:00:00+00:00,0.000,night_light,LIGHT,synthetic_start,0,0,0,0,0,820,relative_light,0,0,0,0,0,0,0,synthetic-example
+2027-01-14T22:00:02+00:00,2.000,night_light,LIGHT,,0,0,0,0,0,610,relative_light,0,0,0,0,0,0,0,synthetic-example
+2027-01-14T22:00:04+00:00,4.000,night_light,DARK,threshold_crossed,0,0,0,0,0,390,relative_light,0,0,0,1,0,1,0,synthetic-example
+2027-01-14T22:00:06+00:00,6.000,night_light,DARK,,0,0,0,0,0,240,relative_light,0,0,0,1,0,1,0,synthetic-example
+2027-01-14T22:00:08+00:00,8.000,night_light,DARK,,0,0,0,0,0,330,relative_light,0,0,0,1,0,1,0,synthetic-example
+2027-01-14T22:00:10+00:00,10.000,night_light,LIGHT,hysteresis_release,0,0,0,0,0,520,relative_light,0,0,0,0,0,0,0,synthetic-example

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 430" role="img" aria-labelledby="title desc">
+  <title id="title">Hardware-independent Python architecture</title><desc id="desc">Terminal, scripted-test, and GPIO adapters share input and output snapshots with a project controller.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><style>.b{fill:#fff;stroke:#222;stroke-width:3;rx:12}.core{fill:#eef6ff;stroke:#174a7e;stroke-width:4;rx:12}.h{font:700 22px Arial,sans-serif}.t{font:18px Arial,sans-serif}.l{stroke:#222;stroke-width:4;marker-start:url(#a);marker-end:url(#a)}</style></defs>
+  <rect width="1150" height="430" fill="#fff"/>
+  <text x="575" y="36" text-anchor="middle" class="h">One controller; three interchangeable adapters</text>
+  <g transform="translate(35 85)"><rect class="b" width="250" height="100"/><text x="125" y="40" text-anchor="middle" class="h">Terminal adapter</text><text x="125" y="72" text-anchor="middle" class="t">student commands</text></g>
+  <g transform="translate(35 230)"><rect class="b" width="250" height="100"/><text x="125" y="40" text-anchor="middle" class="h">Scripted adapter</text><text x="125" y="72" text-anchor="middle" class="t">automated tests</text></g>
+  <line x1="290" y1="135" x2="430" y2="185" class="l"/><line x1="290" y1="280" x2="430" y2="230" class="l"/>
+  <g transform="translate(435 120)"><rect class="core" width="280" height="180"/><text x="140" y="42" text-anchor="middle" class="h">Project controller</text><text x="140" y="82" text-anchor="middle" class="t">alarm or traffic</text><text x="140" y="115" text-anchor="middle" class="t">state + timing</text><text x="140" y="150" text-anchor="middle" class="t">no gpiod import</text></g>
+  <line x1="720" y1="210" x2="855" y2="210" class="l"/>
+  <g transform="translate(860 120)"><rect class="b" width="255" height="180"/><text x="127" y="42" text-anchor="middle" class="h">GPIO adapter</text><text x="127" y="82" text-anchor="middle" class="t">verified JSON map</text><text x="127" y="115" text-anchor="middle" class="t">libgpiod 2.x</text><text x="127" y="150" text-anchor="middle" class="t">close → safe outputs</text></g>
+  <text x="575" y="355" text-anchor="middle" class="h">InputSnapshot and OutputSnapshot</text><text x="575" y="392" text-anchor="middle" class="t">Hardware can change without rewriting tested project logic.</text>
+</svg>

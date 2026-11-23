@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+  <title id="title">Safe Linux and Python work cycle</title>
+  <desc id="desc">A loop from locating files through editing, running, reading errors, saving evidence, and stopping cleanly.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><style>.b{fill:#fff;stroke:#222;stroke-width:3;rx:12}.h{font:700 21px Arial,sans-serif}.t{font:18px Arial,sans-serif}.l{fill:none;stroke:#222;stroke-width:4;marker-end:url(#a)}</style></defs>
+  <rect width="1100" height="430" fill="#fff"/>
+  <text x="550" y="35" text-anchor="middle" class="h">A repeatable terminal workflow</text>
+  <g transform="translate(40 80)"><rect class="b" width="200" height="100"/><text x="100" y="37" text-anchor="middle" class="h">1. Locate</text><text x="100" y="70" text-anchor="middle" class="t">pwd · ls -la</text></g>
+  <line x1="245" y1="130" x2="325" y2="130" class="l"/>
+  <g transform="translate(330 80)"><rect class="b" width="200" height="100"/><text x="100" y="37" text-anchor="middle" class="h">2. Edit</text><text x="100" y="70" text-anchor="middle" class="t">nano file.py</text></g>
+  <line x1="535" y1="130" x2="615" y2="130" class="l"/>
+  <g transform="translate(620 80)"><rect class="b" width="200" height="100"/><text x="100" y="37" text-anchor="middle" class="h">3. Run</text><text x="100" y="70" text-anchor="middle" class="t">python3 file.py</text></g>
+  <line x1="825" y1="130" x2="905" y2="130" class="l"/>
+  <g transform="translate(910 80)"><rect class="b" width="150" height="100"/><text x="75" y="37" text-anchor="middle" class="h">4. Read</text><text x="75" y="70" text-anchor="middle" class="t">full error</text></g>
+  <path d="M985 185V285H825" class="l"/>
+  <g transform="translate(620 240)"><rect class="b" width="200" height="100"/><text x="100" y="37" text-anchor="middle" class="h">5. Record</text><text x="100" y="70" text-anchor="middle" class="t">history + evidence</text></g>
+  <line x1="615" y1="290" x2="535" y2="290" class="l"/>
+  <g transform="translate(330 240)"><rect class="b" width="200" height="100"/><text x="100" y="37" text-anchor="middle" class="h">6. Stop safely</text><text x="100" y="70" text-anchor="middle" class="t">Ctrl+C · close()</text></g>
+  <path d="M325 290H140V185" class="l"/>
+  <text x="550" y="395" text-anchor="middle" class="t">Change one thing, then repeat. Do not hide errors with sudo.</text>
+</svg>

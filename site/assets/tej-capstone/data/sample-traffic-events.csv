@@ -1,0 +1,7 @@
+timestamp_utc,elapsed_s,system,state,event,input_arm,input_disarm,input_trigger,input_silence,input_pedestrian,ambient_value,ambient_unit,output_red,output_yellow,output_green,output_status,output_alarm,output_relay,output_pedestrian_walk,data_origin
+2027-01-13T15:00:00+00:00,0.000,traffic_light,RED,reset,0,0,0,0,0,,,1,0,0,0,0,0,0,synthetic-example
+2027-01-13T15:00:01+00:00,1.000,traffic_light,RED,pedestrian_request_latched,0,0,0,0,1,,,1,0,0,0,0,0,0,synthetic-example
+2027-01-13T15:00:03+00:00,3.000,traffic_light,GREEN,red_complete,0,0,0,0,0,,,0,0,1,0,0,0,0,synthetic-example
+2027-01-13T15:00:08+00:00,8.000,traffic_light,YELLOW,green_complete,0,0,0,0,0,,,0,1,0,0,0,0,0,synthetic-example
+2027-01-13T15:00:10+00:00,10.000,traffic_light,WALK,walk_started,0,0,0,0,0,,,1,0,0,0,0,0,1,synthetic-example
+2027-01-13T15:00:14+00:00,14.000,traffic_light,RED,walk_complete,0,0,0,0,0,,,1,0,0,0,0,0,0,synthetic-example

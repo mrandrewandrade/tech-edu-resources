@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 390" role="img" aria-labelledby="title desc">
+  <title id="title">Alarm state machine</title><desc id="desc">Disarmed, arming, armed, alarm, and silenced states with their normal transitions and a global disarm path.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><style>.s{fill:#fff;stroke:#222;stroke-width:3}.safe{fill:#eef8ee;stroke:#276c2c;stroke-width:4}.alarm{fill:#fff1ee;stroke:#a32a1f;stroke-width:4}.h{font:700 20px Arial,sans-serif}.t{font:17px Arial,sans-serif}.l{fill:none;stroke:#222;stroke-width:4;marker-end:url(#a)}</style></defs>
+  <rect width="1180" height="390" fill="#fff"/>
+  <text x="590" y="32" text-anchor="middle" class="h">Alarm controller states</text>
+  <ellipse cx="120" cy="170" rx="100" ry="62" class="safe"/><text x="120" y="166" text-anchor="middle" class="h">DISARMED</text><text x="120" y="192" text-anchor="middle" class="t">safe outputs</text>
+  <ellipse cx="350" cy="170" rx="90" ry="62" class="s"/><text x="350" y="166" text-anchor="middle" class="h">ARMING</text><text x="350" y="192" text-anchor="middle" class="t">delay</text>
+  <ellipse cx="575" cy="170" rx="90" ry="62" class="s"/><text x="575" y="166" text-anchor="middle" class="h">ARMED</text><text x="575" y="192" text-anchor="middle" class="t">watch input</text>
+  <ellipse cx="800" cy="170" rx="90" ry="62" class="alarm"/><text x="800" y="166" text-anchor="middle" class="h">ALARM</text><text x="800" y="192" text-anchor="middle" class="t">output active</text>
+  <ellipse cx="1055" cy="170" rx="105" ry="62" class="s"/><text x="1055" y="166" text-anchor="middle" class="h">SILENCED</text><text x="1055" y="192" text-anchor="middle" class="t">output off</text>
+  <line x1="225" y1="170" x2="255" y2="170" class="l"/><text x="240" y="142" text-anchor="middle" class="t">arm</text>
+  <line x1="445" y1="170" x2="480" y2="170" class="l"/><text x="462" y="142" text-anchor="middle" class="t">timer</text>
+  <line x1="670" y1="170" x2="705" y2="170" class="l"/><text x="687" y="142" text-anchor="middle" class="t">trigger</text>
+  <line x1="895" y1="170" x2="945" y2="170" class="l"/><text x="920" y="142" text-anchor="middle" class="t">silence</text>
+  <path d="M1055 237V300H120V237" class="l"/>
+  <path d="M350 237V300M575 237V300M800 237V300" fill="none" stroke="#222" stroke-width="3"/>
+  <text x="590" y="343" text-anchor="middle" class="h">disarm from any active state returns to DISARMED</text>
+</svg>

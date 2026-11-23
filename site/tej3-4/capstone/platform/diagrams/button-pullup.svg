@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 520" role="img" aria-labelledby="title desc">
+  <title id="title">Generic active-low button input with external pull-up</title><desc id="desc">A 10 kilo-ohm starting-value pull-up connects the input to 3.3 volts and a normally open button connects the input to ground.</desc>
+  <defs><style>.w{fill:none;stroke:#111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.b{fill:#fff;stroke:#111;stroke-width:3;rx:12}.h{font:700 23px Arial,sans-serif}.t{font:19px Arial,sans-serif}.s{font:17px Arial,sans-serif}</style></defs>
+  <rect width="1050" height="520" fill="#fff"/>
+  <text x="525" y="36" text-anchor="middle" class="h">Generic button input — active-low with a defined idle level</text>
+  <text x="525" y="82" text-anchor="middle" class="h">Documented 3.3 V rail</text>
+  <path d="M525 95V130L500 145L550 170L500 195L550 220L500 245L525 260V295" class="w"/>
+  <text x="615" y="195" class="h">10 kΩ starting value</text>
+  <circle cx="525" cy="295" r="8" fill="#111"/>
+  <path d="M525 295H295" class="w"/>
+  <rect x="45" y="210" width="250" height="160" class="b"/><text x="170" y="250" text-anchor="middle" class="h">BeagleBone</text><text x="170" y="286" text-anchor="middle" class="t">teacher-approved</text><text x="170" y="314" text-anchor="middle" class="t">GPIO input</text><text x="170" y="345" text-anchor="middle" class="s">software: active_low</text>
+  <path d="M525 295V340" class="w"/><circle cx="525" cy="355" r="7" fill="#fff" stroke="#111" stroke-width="4"/><circle cx="525" cy="405" r="7" fill="#fff" stroke="#111" stroke-width="4"/><path d="M500 365L548 385" class="w"/><path d="M525 412V430M490 430H560M502 448H548M515 464H535" class="w"/>
+  <text x="650" y="375" class="h">Normally open button</text><text x="650" y="408" class="t">Pressed = electrical LOW</text>
+  <text x="525" y="505" text-anchor="middle" class="s">Never use a 5 V pull-up. Confirm the voltage domain for the exact board.</text>
+</svg>

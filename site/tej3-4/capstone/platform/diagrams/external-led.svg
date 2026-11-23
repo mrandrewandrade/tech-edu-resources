@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 390" role="img" aria-labelledby="title desc">
+  <title id="title">Generic resistor-limited external LED circuit</title><desc id="desc">A teacher-approved GPIO output connects in series through a resistor and LED to board ground.</desc>
+  <defs><style>.w{fill:none;stroke:#111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.b{fill:#fff;stroke:#111;stroke-width:3;rx:12}.h{font:700 23px Arial,sans-serif}.t{font:19px Arial,sans-serif}.s{font:17px Arial,sans-serif}</style></defs>
+  <rect width="1050" height="390" fill="#fff"/>
+  <text x="525" y="36" text-anchor="middle" class="h">Generic external LED — pin name comes from the verified worksheet</text>
+  <rect x="45" y="95" width="235" height="180" class="b"/><text x="162" y="135" text-anchor="middle" class="h">BeagleBone</text><text x="162" y="170" text-anchor="middle" class="t">teacher-approved</text><text x="162" y="198" text-anchor="middle" class="t">3.3 V GPIO output</text><circle cx="275" cy="230" r="7" fill="#111"/>
+  <path d="M282 230H375L390 205L420 255L450 205L480 255L510 205L525 230H605" class="w"/>
+  <text x="450" y="185" text-anchor="middle" class="h">R</text><text x="450" y="290" text-anchor="middle" class="s">teacher-approved value</text>
+  <path d="M605 230H665" class="w"/><path d="M665 190V270L735 230Z" fill="#fff" stroke="#111" stroke-width="5"/><path d="M735 185V275" class="w"/><path d="M735 230H850V300" class="w"/>
+  <path d="M815 300H885M827 320H873M840 340H860" class="w"/>
+  <path d="M680 175L710 145M705 175L735 145" class="w"/><path d="M706 145L696 150M706 145L701 156M731 145L721 150M731 145L726 156" class="w"/>
+  <text x="700" y="115" text-anchor="middle" class="h">LED</text><text x="850" y="370" text-anchor="middle" class="t">Board GND</text>
+  <text x="525" y="365" text-anchor="middle" class="s">Power off before wiring. Check LED polarity. Never omit the resistor.</text>
+</svg>

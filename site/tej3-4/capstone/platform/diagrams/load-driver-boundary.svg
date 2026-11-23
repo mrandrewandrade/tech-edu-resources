@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 430" role="img" aria-labelledby="title desc">
+  <title id="title">Safe boundary between GPIO logic and a powered load</title><desc id="desc">The BeagleBone sends a low-current logic signal to an approved driver, which controls a separately fused supply and load.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#222"/></marker><style>.b{fill:#fff;stroke:#222;stroke-width:3;rx:14}.danger{fill:#fff4f0;stroke:#a32a1f;stroke-width:4;rx:14}.h{font:700 22px Arial,sans-serif}.t{font:18px Arial,sans-serif}.l{stroke:#222;stroke-width:4;marker-end:url(#a)}.p{stroke:#a32a1f;stroke-width:5;marker-end:url(#a)}</style></defs>
+  <rect width="1180" height="430" fill="#fff"/>
+  <text x="590" y="38" text-anchor="middle" class="h">Concept boundary only — not a construction wiring diagram</text>
+  <g transform="translate(35 95)"><rect class="b" width="220" height="150"/><text x="110" y="45" text-anchor="middle" class="h">BeagleBone GPIO</text><text x="110" y="82" text-anchor="middle" class="t">3.3 V logic</text><text x="110" y="112" text-anchor="middle" class="t">low current</text></g>
+  <line x1="260" y1="170" x2="350" y2="170" class="l"/><text x="305" y="145" text-anchor="middle" class="t">signal</text>
+  <g transform="translate(355 75)"><rect class="danger" width="275" height="190"/><text x="137" y="42" text-anchor="middle" class="h">Approved driver stage</text><text x="137" y="78" text-anchor="middle" class="t">input resistor</text><text x="137" y="108" text-anchor="middle" class="t">transistor / driver</text><text x="137" y="138" text-anchor="middle" class="t">flyback protection</text><text x="137" y="168" text-anchor="middle" class="t">rated wiring</text></g>
+  <line x1="635" y1="170" x2="720" y2="170" class="p"/><text x="678" y="145" text-anchor="middle" class="t">switches</text>
+  <g transform="translate(725 75)"><rect class="danger" width="190" height="190"/><text x="95" y="42" text-anchor="middle" class="h">Relay / load</text><text x="95" y="80" text-anchor="middle" class="t">coil or module</text><text x="95" y="112" text-anchor="middle" class="t">lamp / horn</text><text x="95" y="144" text-anchor="middle" class="t">rated contacts</text></g>
+  <line x1="920" y1="170" x2="1010" y2="170" class="p"/>
+  <g transform="translate(1015 95)"><rect class="danger" width="130" height="150"/><text x="65" y="45" text-anchor="middle" class="h">External</text><text x="65" y="75" text-anchor="middle" class="h">supply</text><text x="65" y="112" text-anchor="middle" class="t">fused</text></g>
+  <path d="M145 285V330H1080V285" fill="none" stroke="#777" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="590" y="365" text-anchor="middle" class="h">Shared reference or isolation must be chosen by the teacher for the actual driver.</text>
+  <text x="590" y="402" text-anchor="middle" class="t">Never connect a relay coil, horn, lamp, motor, or automotive load directly to GPIO.</text>
+</svg>
