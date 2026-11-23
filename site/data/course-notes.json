@@ -120,11 +120,15 @@
           ]
         },
         {
-          "id": "advanced-making", "order": 9, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery",
-          "summary": "Continue with an optional advanced 3D-printing project.",
-          "use": "These external project references provide a next challenge after the introductory build.",
+          "id": "advanced-making", "order": 9, "title": "Advanced Making: Stamp or Faux-Enamel Jewellery", "hub": "design-fabrication/04-3d-printing/index.qmd",
+          "summary": "Turn an original logo into a tested stamp, then reuse it as faux-enamel jewellery.",
+          "use": "The sequence moves from introductory Tinkercad construction to parametric Onshape modelling and physical finishing.",
           "lessons": [
-            {"order": 1, "title": "Stamp or Faux-Enamel Jewellery", "source": "design-fabrication/advanced-making/stamp-faux-enamel-jewellery.qmd", "summary": "Choose one of the linked advanced 3D-printing projects.", "use": "The links provide optional extension ideas without adding another local tutorial.", "status": "published", "resources": [{"label": "Faux Stained Glass - 3D Printed", "url": "https://www.instructables.com/Faux-Stained-Glass-3D-Printed/"}, {"label": "3D-Printed Faux Enamel Jewellery", "url": "https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/"}]}
+            {"order": 1, "title": "Mission 2: Logo Stamp", "source": "design-fabrication/04-3d-printing/logo-stamp-mission.qmd", "summary": "Convert an original logo into a mirrored 38 mm relief stamp and test its impression.", "use": "A common brief and dimensions keep the Tinkercad and Onshape pathways comparable.", "status": "published", "resources": []},
+            {"order": 2, "title": "Tinkercad Logo Stamp", "source": "design-fabrication/04-3d-printing/tinkercad-logo-stamp.qmd", "summary": "Import, mirror, align, group, export, and test the stamp in Tinkercad.", "use": "The first pathway extends the skills from the introductory keychain.", "status": "published", "resources": []},
+            {"order": 3, "title": "Onshape Logo Stamp", "source": "design-fabrication/04-3d-printing/onshape-logo-stamp.qmd", "summary": "Rebuild the stamp with variables, constrained sketches, and named features.", "use": "The parametric version preserves design intent and supports controlled revisions.", "status": "published", "resources": []},
+            {"order": 4, "title": "Mission 3: Tinkercad Faux-Enamel Brooch", "source": "design-fabrication/04-3d-printing/tinkercad-faux-enamel-logo.qmd", "summary": "Turn the logo into enclosed colour cavities for a printed brooch or earring.", "use": "Students reuse the same visual identity while designing for nail-polish filling and attached findings.", "status": "published", "resources": [{"label": "3D-Printed Faux Enamel Jewellery", "url": "https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/"}]},
+            {"order": 5, "title": "Onshape Faux-Enamel Jewellery", "source": "design-fabrication/04-3d-printing/faux-enamel-pin-jewellery.qmd", "summary": "Develop the fillable jewellery design as an editable parametric Onshape model.", "use": "The later extension connects constrained CAD, orthographic evidence, printing, and finishing.", "status": "published", "resources": [{"label": "Faux Stained Glass - 3D Printed", "url": "https://www.instructables.com/Faux-Stained-Glass-3D-Printed/"}]}
           ]
         }
       ]

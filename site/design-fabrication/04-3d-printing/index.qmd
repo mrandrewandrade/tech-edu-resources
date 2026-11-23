@@ -1,6 +1,6 @@
 ---
-title: "3D Modelling + 3D Printing | Tinkercad, Onshape, Slicing & Faux-Enamel Jewellery"
-description: "Reusable lessons for Tinkercad and parametric Onshape CAD, STL/3MF/STEP, slicing, orientation, supports, tolerances and a faux-enamel logo jewellery project."
+title: "3D Modelling + 3D Printing | Tinkercad, Onshape, Stamps & Faux-Enamel Jewellery"
+description: "A progressive 3D-modelling sequence from a basic keychain to a mirrored logo stamp and fillable faux-enamel jewellery, with Tinkercad and parametric Onshape pathways."
 page-layout: full
 toc: false
 body-classes: "ter-design-fabrication bs-learn-article bs-learn-track-index"
@@ -10,15 +10,42 @@ execute:
 
 Additive manufacturing builds geometry layer by layer. Orientation changes strength and finish, supports leave evidence, holes may print undersize, thin details can disappear, and matching parts need tested clearance. Students keep the editable source model so evidence can drive a real revision.
 
+The concepts in this unit are **software-independent**. Sketch, constrain, dimension, extrude, mirror, pattern, combine, inspect and export are transferable habits whether the buttons belong to Tinkercad, Onshape, Autodesk Inventor, Fusion, SolidWorks, Creo, FreeCAD, OpenSCAD, Blender or another approved tool. These notes demonstrate Tinkercad and Onshape because they are familiar, browser-based and easier to provide consistently across different student devices.
+
+![A classroom meme comparing Tinkercad as fast, friendly "Temu CAD" with Onshape as constrained, editable parametric CAD.](../../assets/design-fabrication/tinkercad-temu-cad-vs-onshape-meme.png){.ter-concept-diagram}
+
+::: {.callout-tip}
+## The official running joke
+
+Tinkercad is **Temu CAD**—affectionately. It is fast, friendly and a little janky, but it gets a beginner from an idea to a printable prototype. Onshape is where the same idea graduates into constraints, variables and a feature history. The joke is about software limitations, never about the student using it.
+:::
+
+::: {.callout-important}
+## Before students sign in to a web tool
+
+Ontario's new third-party software rule is a **notice and transparency requirement**, not a blanket provincial consent rule. Effective **July 1, 2026**, Ontario Regulation 52/26 requires school boards to give plain-language notice when a student's personal digital information is disclosed to third-party software. Ministry guidance says the notice goes to the parent/caregiver for students under 16 and directly to students aged 16–17; it also says the regulation itself does not create a required opt-out.
+
+Before assigning Tinkercad, Onshape, Photopea, an AI tool or any other online service, educators must still check the current **board-approved-tool process, privacy/security guidance, vendor age requirement and local parent/guardian permission procedure**. Obtain permission whenever the board, school or vendor requires it, minimize personal information, and provide an approved alternative when access is unavailable.
+
+Read the detailed [software access, privacy and permission note](01-additive-cad.qmd#software-access-privacy-and-permission), [Ontario Regulation 52/26](https://www.ontario.ca/laws/regulation/260052), and the [Ontario implementation guidance for school boards](https://forms.mgcs.gov.on.ca/en/dataset/5c12d821-9079-4b20-a091-c9a946cf12a7/resource/494ef03e-02ae-4970-aa20-82eb0cd0afcc/download/implementation-guidance-for-school-boards.pdf).
+:::
+
 ::: {.ter-project-brief}
 ## Current TAS project
 
-### 3D Printed Faux Enamel Pin / Jewellery
+### Mission 2: Turn Your Logo into a Stamp
 
-Turn an original Photopea SVG logo into a circular earring or brooch in Tinkercad. Build a flat base, raised boundary walls and enclosed recessed pockets, then print, fill, attach approved hardware, evaluate and revise.
+Turn the logo from the introductory keychain into a **38 mm mirrored relief stamp**. Make the same required object in Tinkercad or Onshape, test the impression and revise it. Keep the back flat for a later teacher-added lighthouse handle.
 
-[Open the step-by-step Tinkercad guide →](tinkercad-faux-enamel-logo.qmd)
+[Open the Logo Stamp mission →](logo-stamp-mission.qmd)
 :::
+
+## Classroom mission sequence
+
+1. **Basic keychain:** learn the workplane, primitive shapes, alignment, grouping and export.
+2. **Logo stamp:** add mirroring, controlled relief, minimum feature size and physical impression testing.
+3. **Faux-enamel brooch:** turn the same logo into enclosed cavities and finish them with teacher-approved nail polish.
+4. **Onshape rebuild:** reproduce the stamp or brooch with variables, constraints and an editable feature history.
 
 ## Learning sequence
 
@@ -26,8 +53,11 @@ Turn an original Photopea SVG logo into a circular earring or brooch in Tinkerca
   <li><a href="01-additive-cad.qmd">3D Modelling Foundations: Onshape CAD vs Blender Mesh</a>: choose the model type, use constraints and dimensions, and preserve design intent.</li>
   <li><a href="02-slicing-orientation.qmd">Slicing, Orientation &amp; Supports</a>: connect layer height, walls, infill, toolpaths, strength, time, and surface quality.</li>
   <li><a href="03-tolerances-functional-parts.qmd">Tolerances &amp; Functional Parts</a>: test holes, clearance, press fits, fasteners, assemblies, brackets, adapters, and repair parts.</li>
-  <li><a href="tinkercad-faux-enamel-logo.qmd">Tinkercad Faux-Enamel Logo Earring or Brooch</a>: the current TAS project: original SVG, circular base, fillable cavities, print and finish.</li>
-  <li><a href="faux-enamel-pin-jewellery.qmd">Parametric Faux-Enamel Pin / Jewellery</a>: a later Onshape version with constrained sketches and evidence-based revision.</li>
+  <li><a href="logo-stamp-mission.qmd">Mission 2: Turn Your Logo into a Stamp</a>: common dimensions, success criteria, impression test and submission.</li>
+  <li><a href="tinkercad-logo-stamp.qmd">Tinkercad Logo Stamp</a>: import, mirror, align, group and export the 38 mm stamp.</li>
+  <li><a href="onshape-logo-stamp.qmd">Onshape Logo Stamp</a>: rebuild the stamp with variables, constrained sketches and named features.</li>
+  <li><a href="tinkercad-faux-enamel-logo.qmd">Mission 3: Tinkercad Faux-Enamel Logo Earring or Brooch</a>: reuse the logo as fillable colour cavities.</li>
+  <li><a href="faux-enamel-pin-jewellery.qmd">Parametric Faux-Enamel Pin / Jewellery</a>: the later Onshape version with constrained sketches and evidence-based revision.</li>
   <li><a href="04-design-challenge.qmd">Functional-Part Design Challenge</a>: a general/advanced project for a measured need.</li>
 </ol>
 
@@ -43,6 +73,6 @@ Relevant senior contexts can include **TDJ3M/TDJ4M**, **TDJ3O/TDJ4O**, and appro
 
 ## Free CAD, model, and slicing resources
 
-Model with education access to [Onshape](https://www.onshape.com/en/education/plans) or open-source [FreeCAD](https://www.freecad.org/) and [OpenSCAD](https://openscad.org/). Compare downloadable work on [Printables](https://www.printables.com/), [Thingiverse](https://www.thingiverse.com/), [NASA 3D Resources](https://science.nasa.gov/3d-resources/), and [Smithsonian Open Access](https://www.si.edu/OpenAccess), then slice with [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/), [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura/), or the [official OrcaSlicer repository](https://github.com/OrcaSlicer/OrcaSlicer). Check each model's licence, scale, geometry, and suitability. More provisional options are in the [full free-resource directory · Work in Progress](../resources/work-in-progress/index.qmd).
+Model with a board-approved option. Possibilities include education access to [Onshape](https://www.onshape.com/en/education/plans), [Autodesk Inventor](https://www.autodesk.com/education/edu-software/overview), [Autodesk Fusion](https://www.autodesk.com/education/edu-software/overview) or SolidWorks, plus open-source [FreeCAD](https://www.freecad.org/) and [OpenSCAD](https://openscad.org/). Compare downloadable work on [Printables](https://www.printables.com/), [Thingiverse](https://www.thingiverse.com/), [NASA 3D Resources](https://science.nasa.gov/3d-resources/), and [Smithsonian Open Access](https://www.si.edu/OpenAccess), then slice with [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/), [UltiMaker Cura](https://ultimaker.com/software/ultimaker-cura/), or the [official OrcaSlicer repository](https://github.com/OrcaSlicer/OrcaSlicer). Check each model's licence, scale, geometry, and suitability. More provisional options are in the [full free-resource directory · Work in Progress](../resources/work-in-progress/index.qmd).
 
-Start with the [current Tinkercad faux-enamel project](tinkercad-faux-enamel-logo.qmd), then continue to [3D Modelling Foundations](01-additive-cad.qmd) for the parametric Onshape pathway.
+Start with the [Logo Stamp mission](logo-stamp-mission.qmd). Continue to the [Tinkercad faux-enamel brooch](tinkercad-faux-enamel-logo.qmd), then use [3D Modelling Foundations](01-additive-cad.qmd) for the parametric Onshape pathway.

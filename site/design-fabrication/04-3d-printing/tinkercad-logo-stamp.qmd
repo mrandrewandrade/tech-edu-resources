@@ -1,0 +1,132 @@
+---
+title: "Tinkercad Logo Stamp | Step-by-Step"
+description: "Build a mirrored 38 mm circular logo stamp in Tinkercad and export an STL for impression testing."
+body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
+terms: [logo, computer-aided-design, additive-manufacturing, stl, dimension, mirror, evaluation]
+highlighted-terms: [logo, stl]
+toc: true
+execute: {enabled: false}
+---
+
+Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the required dimensions, success criteria and submission list.
+
+::: {.callout-tip}
+## Welcome to Temu CAD
+
+Tinkercad is **Temu CAD**—said with affection. It is fast, friendly, browser-based and perfect for learning primitives, alignment and boolean grouping. It is also why this pathway sometimes uses careful checkpoints where a parametric system would use constraints and variables.
+:::
+
+::: {.callout-important}
+## Account and permission check
+
+Before students create or use a Tinkercad account, confirm that Tinkercad is approved under the current board's digital-tool process, that students meet the vendor's age/account requirements, that the required Ontario third-party software notice has been provided, and that parent/guardian permission has been obtained whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). A student who cannot use the web service needs an approved alternative—not a lower mark.
+:::
+
+## Prepare the logo in Photopea
+
+The Tinkercad and Onshape pathways begin with the same artwork process:
+
+1. Open the original photograph, scan, PNG or JPG in [Photopea](https://www.photopea.com/).
+2. Choose **Image - Vectorize Bitmap**.
+3. For a simple black-and-white logo, set **Colors** to **2** and compare the source and vector previews.
+4. Select **OK**, expand the generated vector group and hide the page-sized white background layer.
+5. Keep any smaller white Shape layers that create required holes or cutouts.
+6. Confirm that the checkerboard appears around the logo and that important openings remain clear.
+7. Choose **File - Export as - SVG** and leave **add hidden layers** turned off.
+
+![Photopea's bitmap vectorizer set to two colours, with source and vector previews shown side by side.](../../assets/onshape-logo-stamp/photopea-workflow/02-vectorize-two-colours.jpg){.ter-concept-diagram}
+
+![Clean vector artwork on a transparent background, with the generated Shape layers visible in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){.ter-concept-diagram}
+
+For the complete explanation of raster layers, Shape layers, background removal and SVG export, use [Part A of the Photopea-to-Onshape guide](onshape-logo-stamp.qmd#part-a---prepare-the-artwork-in-photopea).
+
+::: {.callout-tip}
+## Tinkercad skips the DXF conversion
+
+Tinkercad imports SVG files directly. After the clean SVG is exported from Photopea, continue with the steps below. Do **not** convert the artwork to DXF for this pathway.
+
+That direct SVG import is Temu CAD at its best: fewer steps, fewer settings and a surprisingly quick route to a real prototype.
+:::
+
+## Step 1 - Start and name the design
+
+1. Sign in to [Tinkercad](https://www.tinkercad.com/).
+2. Select **Create - 3D Design**.
+3. Rename the design `lastname-logo-stamp`.
+4. Set the **Snap Grid** to **0.5 mm**.
+
+## Step 2 - Make the backing coin
+
+1. Drag a **Cylinder** onto the workplane.
+2. Set its width and length to **38 mm**.
+3. Set its height to **4 mm**.
+4. Increase the cylinder sides so the edge appears smooth.
+5. Leave the back flat. Do not add a handle.
+
+## Step 3 - Import your original logo
+
+1. Select **Import**.
+2. Choose the transparent SVG exported from Photopea.
+3. Select the **Art** import type when Tinkercad asks how to interpret the file.
+4. Import it at no more than **30-32 mm wide**.
+5. Keep the width and length proportions linked while resizing.
+6. Set the logo height to **2 mm**.
+7. Remove or simplify details thinner than **1.2 mm**.
+
+If Tinkercad fills openings incorrectly, return to the SVG and repair the paths before continuing. Do not cover the problem with extra shapes.
+
+## Step 4 - Mirror the stamp face
+
+1. Select only the logo.
+2. Choose **Mirror**.
+3. Select the left-right mirror control.
+4. Confirm that letters and directional symbols now look backwards on the stamp face. They will read correctly in the impression.
+
+## Step 5 - Place the relief on the coin
+
+1. Select the logo.
+2. Raise it **4 mm** above the workplane so it sits on the backing.
+3. Select the logo and cylinder together.
+4. Choose **Align**.
+5. Select the two centre alignment dots.
+6. Confirm there is at least **3 mm** of clear backing around the logo.
+
+## Step 6 - Inspect before grouping
+
+Orbit to the top, front and right-side views.
+
+Check that:
+
+- the backing is 4 mm thick;
+- the logo rises 2 mm above the backing;
+- the logo is mirrored;
+- no part hangs beyond the circle;
+- small gaps remain open; and
+- the back remains flat.
+
+Select everything and press **Ctrl + G** only after these checks pass.
+
+::: {.callout-note}
+## Temu CAD quality control
+
+Grouping is not proof that the design is correct; it only proves that Tinkercad agreed to glue the shapes together. The top, side and slicer checks are the evidence.
+:::
+
+## Step 7 - Export
+
+1. Select the grouped stamp.
+2. Select **Export**.
+3. Choose **The selected shape**.
+4. Choose **STL**.
+5. Rename the file `lastname-logo-stamp.stl`.
+6. Open it in the class slicer and inspect every layer.
+
+For the rigid class prototype, print with the flat back on the build plate and the raised logo facing upward. A flexible ink-stamp version uses a teacher-selected material and printer-specific orientation.
+
+## Step 8 - Test and revise
+
+Make one impression in teacher-approved modelling material. If the result is backwards, incomplete, crowded or too faint, return to Tinkercad and revise the source before printing again.
+
+Record the first result and the change you made. A successful print without evidence of testing is not the complete mission.
+
+If Temu CAD made the first prototype, the physical test gets the final vote. Move to the [Onshape pathway](onshape-logo-stamp.qmd) when you want the same design controlled by dimensions, variables and an editable feature history.

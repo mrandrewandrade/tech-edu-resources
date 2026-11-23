@@ -16,6 +16,14 @@ Create an original **pin, badge, pendant, charm or small teacher-approved wearab
 
 For the current introductory project, use the [Tinkercad Faux-Enamel Logo Earring or Brooch guide](tinkercad-faux-enamel-logo.qmd). This page is the later Onshape extension.
 
+Onshape is the demonstrated tool, not the only acceptable one. The same parametric challenge may be completed in board-approved Autodesk Inventor, Fusion, SolidWorks, FreeCAD or another CAD system that supports constrained sketches, controlled features and an editable source model. Students submit equivalent design evidence even when the button names differ.
+
+::: {.callout-important}
+## Account and permission check
+
+For any browser or cloud CAD service, check the current board-approved-tool process, vendor age requirement, privacy/security guidance, Ontario third-party software notice and local parent/guardian permission procedure before student sign-in. Obtain permission whenever required and provide an approved alternative. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission).
+:::
+
 ## Inspiration, not an answer file
 
 Study [Turn 3D Printed Faux Enamel Pins Into Unique Jewellery](https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/) as a process reference. Do not reproduce the author's finished designs. Record the source and develop original artwork. Follow your school board's safety guidelines and the course-specific information provided by your teacher; students in Mr. Andrade's classes can find it in Google Classroom.
@@ -27,10 +35,10 @@ Study [Turn 3D Printed Faux Enamel Pins Into Unique Jewellery](https://www.instr
 <ol class="ter-lesson-sequence">
   <li><strong>Sketch or choose an original graphic.</strong> State the meaning and intended wearer/viewer.</li>
   <li><strong>Simplify it for small-scale production.</strong> Remove tiny counters, narrow islands and details that will not survive printing or finishing.</li>
-  <li><strong>Rebuild/model it parametrically in Onshape.</strong> Use constrained sketches and intentional dimensions instead of importing a finished 3D answer.</li>
+  <li><strong>Rebuild/model it in approved parametric CAD.</strong> Use constrained sketches and intentional dimensions instead of importing a finished 3D answer.</li>
   <li><strong>Create raised or recessed regions.</strong> Make boundaries appropriate for the intended visual effect and finishing process.</li>
   <li><strong>Confirm dimensions and thicknesses.</strong> Inspect overall size, base, details, holes and any attachment interface.</li>
-  <li><strong>Export STL or 3MF.</strong> Retain the editable Onshape source and identify the exported version.</li>
+  <li><strong>Export STL or 3MF.</strong> Retain the editable native CAD source and identify the exported version.</li>
   <li><strong>Slice.</strong> Inspect every layer, walls, top/bottom layers, infill, travel and estimated time/material.</li>
   <li><strong>Decide print orientation.</strong> Compare visual face quality, layer direction, supports, adhesion and strength.</li>
   <li><strong>Print.</strong> Use the course-specific process provided by your teacher.</li>
@@ -49,7 +57,7 @@ Do not copy a universal minimum feature size. It depends on nozzle, layer height
 
 - original sketches and source/licence notes;
 - criteria and overall dimensions;
-- Onshape source/version plus exported STL or 3MF;
+- native parametric CAD source/version plus exported STL or 3MF;
 - screenshot of constrained sketch and feature history;
 - slicer preview and orientation justification;
 - first print with observations;

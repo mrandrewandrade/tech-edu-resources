@@ -18,11 +18,11 @@
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="accessible-design" aria-pressed="false">6. Accessible Design<span class="bs-learn-filter-count">×4</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="fabrication-tools" aria-pressed="false">7. Laser Cutting and Fabrication Tools<span class="bs-learn-filter-count">×9</span></button>
         <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="phone-holder-project" aria-pressed="false">8. Making the Phone Holder<span class="bs-learn-filter-count">×4</span></button>
-        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">9. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×1</span></button>
+        <button type="button" class="bs-learn-filter bs-learn-filter--track" data-bs-filter-track="advanced-making" aria-pressed="false">9. Advanced Making: Stamp or Faux-Enamel Jewellery<span class="bs-learn-filter-count">×5</span></button>
       </div>
     </details>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 43 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 47 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -395,17 +395,46 @@
     </article>
   </div>
 </details>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="advanced-making" data-bs-total-lessons="1" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="advanced-making" data-bs-total-lessons="5" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">9. Advanced Making: Stamp or Faux-Enamel Jewellery</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><a href="04-3d-printing/index.html">9. Advanced Making: Stamp or Faux-Enamel Jewellery</a><span data-bs-learn-group-count>5 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
-    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Stamp or Faux-Enamel Jewellery&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Choose one of the linked advanced 3D-printing projects.&quot;, &quot;The links provide optional extension ideas without adding another local tutorial.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Mission 2: Logo Stamp&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Convert an original logo into a mirrored 38 mm relief stamp and test its impression.&quot;, &quot;A common brief and dimensions keep the Tinkercad and Onshape pathways comparable.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Stamp or Faux-Enamel Jewellery"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="advanced-making/stamp-faux-enamel-jewellery.html">1. Stamp or Faux-Enamel Jewellery</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
-        <p>Choose one of the linked advanced 3D-printing projects.</p>
-        <p>The links provide optional extension ideas without adding another local tutorial.</p>
-        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Faux-Stained-Glass-3D-Printed/">Faux Stained Glass - 3D Printed</a> <a class="ter-resource-badge" href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/">3D-Printed Faux Enamel Jewellery</a></p>
+        <summary aria-label="Show description for Mission 2: Logo Stamp"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="04-3d-printing/logo-stamp-mission.html">1. Mission 2: Logo Stamp</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Convert an original logo into a mirrored 38 mm relief stamp and test its impression.</p>
+        <p>A common brief and dimensions keep the Tinkercad and Onshape pathways comparable.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Tinkercad Logo Stamp&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Import, mirror, align, group, export, and test the stamp in Tinkercad.&quot;, &quot;The first pathway extends the skills from the introductory keychain.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Tinkercad Logo Stamp"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="04-3d-printing/tinkercad-logo-stamp.html">2. Tinkercad Logo Stamp</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Import, mirror, align, group, export, and test the stamp in Tinkercad.</p>
+        <p>The first pathway extends the skills from the introductory keychain.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Onshape Logo Stamp&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Rebuild the stamp with variables, constrained sketches, and named features.&quot;, &quot;The parametric version preserves design intent and supports controlled revisions.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Onshape Logo Stamp"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="04-3d-printing/onshape-logo-stamp.html">3. Onshape Logo Stamp</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Rebuild the stamp with variables, constrained sketches, and named features.</p>
+        <p>The parametric version preserves design intent and supports controlled revisions.</p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Mission 3: Tinkercad Faux-Enamel Brooch&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Turn the logo into enclosed colour cavities for a printed brooch or earring.&quot;, &quot;Students reuse the same visual identity while designing for nail-polish filling and attached findings.&quot;, &quot;3D-Printed Faux Enamel Jewellery&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Mission 3: Tinkercad Faux-Enamel Brooch"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="04-3d-printing/tinkercad-faux-enamel-logo.html">4. Mission 3: Tinkercad Faux-Enamel Brooch</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Turn the logo into enclosed colour cavities for a printed brooch or earring.</p>
+        <p>Students reuse the same visual identity while designing for nail-polish filling and attached findings.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Turn-3D-Printed-Faux-Enamel-Pins-Into-Unique-Jewel/">3D-Printed Faux Enamel Jewellery</a></p>
+      </details>
+    </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="advanced-making" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Onshape Faux-Enamel Jewellery&quot;, &quot;Advanced Making: Stamp or Faux-Enamel Jewellery&quot;]" data-bs-search-body="[&quot;Develop the fillable jewellery design as an editable parametric Onshape model.&quot;, &quot;The later extension connects constrained CAD, orthographic evidence, printing, and finishing.&quot;, &quot;Faux Stained Glass - 3D Printed&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Onshape Faux-Enamel Jewellery"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="04-3d-printing/faux-enamel-pin-jewellery.html">5. Onshape Faux-Enamel Jewellery</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Develop the fillable jewellery design as an editable parametric Onshape model.</p>
+        <p>The later extension connects constrained CAD, orthographic evidence, printing, and finishing.</p>
+        <p class="ter-resource-badges"><a class="ter-resource-badge" href="https://www.instructables.com/Faux-Stained-Glass-3D-Printed/">Faux Stained Glass - 3D Printed</a></p>
       </details>
     </article>
   </div>
