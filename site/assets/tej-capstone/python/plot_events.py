@@ -65,7 +65,7 @@ def plot_events(csv_path: Path, output_path: Path) -> None:
         axes[2].set_ylabel("ambient")
     axes[2].set_xlabel("elapsed time (s)")
     axes[2].grid(alpha=0.3)
-    figure.suptitle(f"{rows[0]['system']} event log — {rows[0]['data_origin']} data")
+    figure.suptitle(f"{rows[0]['system']} event log  -  {rows[0]['data_origin']} data")
     figure.savefig(output_path, dpi=160)
 
 

@@ -92,7 +92,7 @@ def write_fallback(data: dict) -> None:
             if node["world"] != world:
                 continue
             out.append(
-                '<li><a href="{href}">{title}</a> — {summary}</li>'.format(
+                '<li><a href="{href}">{title}</a> - {summary}</li>'.format(
                     href=html.escape(node["href"], quote=True),
                     title=html.escape(node["title"]),
                     summary=html.escape(node["summary"]),

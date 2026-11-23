@@ -134,7 +134,7 @@
       "do": "Identify what is measured across a component and what flows through a path.",
       "look_for": "Units, reference points, polarity, and safe meter placement.",
       "reference": {
-        "title": "SparkFun — How to Use a Multimeter",
+        "title": "SparkFun  -  How to Use a Multimeter",
         "url": "https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/introduction"
       },
       "neighbours": [
@@ -175,7 +175,7 @@
       "do": "Label a circuit, write one KCL equation and one KVL equation, then test them.",
       "look_for": "Conserved current at nodes and voltage rises and drops around loops.",
       "reference": {
-        "title": "OpenStax — Kirchhoff's Rules",
+        "title": "OpenStax  -  Kirchhoff's Rules",
         "url": "https://openstax.org/books/college-physics-2e/pages/21-3-kirchhoffs-rules"
       },
       "neighbours": [
@@ -197,7 +197,7 @@
       "do": "Trace each electrical node, build with power off, inspect, then test.",
       "look_for": "Shared rows, rail breaks, polarity, resistor values, and clean evidence.",
       "reference": {
-        "title": "SparkFun — How to Use a Breadboard",
+        "title": "SparkFun  -  How to Use a Breadboard",
         "url": "https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/"
       },
       "neighbours": [
@@ -221,7 +221,7 @@
       "do": "Mark series groups, parallel branches, and the direction of conventional current.",
       "look_for": "Nodes that are truly shared and components that carry the same current.",
       "reference": {
-        "title": "SparkFun — Series and Parallel Circuits",
+        "title": "SparkFun  -  Series and Parallel Circuits",
         "url": "https://learn.sparkfun.com/tutorials/series-and-parallel-circuits/experiment-time---part-1"
       },
       "neighbours": [
@@ -262,7 +262,7 @@
       "do": "Predict, measure, graph, and explain one charging or discharging event.",
       "look_for": "Polarity, time constant, safe discharge, and evidence over time.",
       "reference": {
-        "title": "OpenStax — RC Circuits",
+        "title": "OpenStax  -  RC Circuits",
         "url": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits"
       },
       "neighbours": [
@@ -304,7 +304,7 @@
       "do": "Change one input, run the code, inspect the output, and describe the relationship.",
       "look_for": "Clear variable names, units, reproducible steps, and meaningful graphs.",
       "reference": {
-        "title": "Python documentation — The Python Tutorial",
+        "title": "Python documentation  -  The Python Tutorial",
         "url": "https://docs.python.org/3/tutorial/"
       },
       "neighbours": [
@@ -327,7 +327,7 @@
       "do": "Prove the software first, prove the circuit second, then connect through an interface.",
       "look_for": "Common ground, voltage limits, current protection, and safe isolation.",
       "reference": {
-        "title": "BeagleBoard.org — Getting Started Guide",
+        "title": "BeagleBoard.org  -  Getting Started Guide",
         "url": "https://docs.beagleboard.org/intro/support/getting-started.html"
       },
       "neighbours": [
@@ -463,7 +463,7 @@
       "do": "Constrain the important geometry and test one intentional revision.",
       "look_for": "Units, origin choice, fully defined geometry, and manufacturable features.",
       "reference": {
-        "title": "Autodesk Fusion Help — Sketch Constraints",
+        "title": "Autodesk Fusion Help  -  Sketch Constraints",
         "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Sketch/files/SKT-CONSTRAINTS.htm"
       },
       "neighbours": [
@@ -526,7 +526,7 @@
       "do": "Run a small calibration before committing the full sheet.",
       "look_for": "Closed paths, line settings, kerf, ventilation, flame watch, and fit.",
       "reference": {
-        "title": "Trotec — Vector Processing and Kerf Correction",
+        "title": "Trotec  -  Vector Processing and Kerf Correction",
         "url": "https://www.troteclaser.com/en-us/helpcenter/software/ruby/vector-processing"
       },
       "neighbours": [
@@ -550,7 +550,7 @@
       "do": "Slice the part, inspect the preview, estimate time and material, then revise.",
       "look_for": "First-layer contact, overhangs, wall thickness, fit, and print direction.",
       "reference": {
-        "title": "Prusa Knowledge Base — Object Orientation",
+        "title": "Prusa Knowledge Base  -  Object Orientation",
         "url": "https://help.prusa3d.com/article/object-orientation_1658"
       },
       "neighbours": [

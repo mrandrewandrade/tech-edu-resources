@@ -96,7 +96,7 @@ Choose one input route. Do not combine routes until each works independently.
 
 *Original classroom overview based on the official [BeagleBone Black connector documentation](https://docs.beagleboard.org/boards/beaglebone/black/ch07.html), [Vishay VEML7700 datasheet](https://www.vishay.com/docs/84286/veml7700.pdf), and [TI LM393 documentation](https://www.ti.com/product/LM393).*
 
-### Route 1: digital ambient-light sensor — preferred
+### Route 1: digital ambient-light sensor  -  preferred
 
 A verified 3.3 V-compatible I²C sensor avoids direct ADC scaling. For example, the VEML7700 manufacturer datasheet specifies a 2.5 V to 3.6 V supply and separate limits for its I²C pull-ups. A breakout board can add regulators or pull-ups, so inspect the **module**, not only the sensor chip.
 
@@ -110,7 +110,7 @@ A verified 3.3 V-compatible I²C sensor avoids direct ADC scaling. For example, 
 
 A photoresistor divider and comparator can produce one digital state. An LM393-family comparator has an open-collector output; it requires a pull-up. Pull the output up to the verified **3.3 V GPIO rail**, never to 5 V. Confirm the exact comparator input range, supply, output current, module connections, and polarity from its datasheet.
 
-### Route 3: direct ADC — teacher approval required
+### Route 3: direct ADC  -  teacher approval required
 
 Use an analogue input only when the complete divider has been calculated, built without the board, and measured across all expected conditions.
 

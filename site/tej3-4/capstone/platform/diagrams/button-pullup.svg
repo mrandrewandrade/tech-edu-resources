@@ -2,7 +2,7 @@
   <title id="title">Generic active-low button input with external pull-up</title><desc id="desc">A 10 kilo-ohm starting-value pull-up connects the input to 3.3 volts and a normally open button connects the input to ground.</desc>
   <defs><style>.w{fill:none;stroke:#111;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.b{fill:#fff;stroke:#111;stroke-width:3;rx:12}.h{font:700 23px Arial,sans-serif}.t{font:19px Arial,sans-serif}.s{font:17px Arial,sans-serif}</style></defs>
   <rect width="1050" height="520" fill="#fff"/>
-  <text x="525" y="36" text-anchor="middle" class="h">Generic button input — active-low with a defined idle level</text>
+  <text x="525" y="36" text-anchor="middle" class="h">Generic button input  -  active-low with a defined idle level</text>
   <text x="525" y="82" text-anchor="middle" class="h">Documented 3.3 V rail</text>
   <path d="M525 95V130L500 145L550 170L500 195L550 220L500 245L525 260V295" class="w"/>
   <text x="615" y="195" class="h">10 kΩ starting value</text>

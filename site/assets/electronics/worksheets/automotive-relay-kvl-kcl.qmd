@@ -45,7 +45,7 @@ resistance or continuity mode on an energized circuit.
 
 <div class="page-break"></div>
 
-## Part 1 — Read the relay states
+## Part 1  -  Read the relay states
 
 Complete the table before calculating.
 
@@ -68,7 +68,7 @@ branches. Keep the coil and contact circuits separate.
 <div class="answer-box tall"></div>
 :::
 
-## Part 2 — Coil circuit: KVL and power
+## Part 2  -  Coil circuit: KVL and power
 
 ::: {.equation-box}
 Use $V=IR$, $P=VI$, and KVL: the algebraic sum of voltage changes around a
@@ -91,7 +91,7 @@ or fuse.
 
 <div class="page-break"></div>
 
-## Part 3 — Load circuit: KCL and power
+## Part 3  -  Load circuit: KCL and power
 
 ::: {.question}
 **5.** Calculate the rated current of each 21.0 W lamp at 12.0 V.
@@ -120,7 +120,7 @@ battery current and power in State B. Include the coil.
 <div class="answer-box"></div>
 :::
 
-## Part 4 — Place the meters safely
+## Part 4  -  Place the meters safely
 
 ![Correct placement shows a voltmeter in parallel across the lamp and a DC clamp around one conductor. Current mode across a source is crossed out.](../schematics/automotive-relay-meter-placement.svg)
 
@@ -134,7 +134,7 @@ surround to measure horn current.
 
 <div class="page-break"></div>
 
-## Part 5 — Poor-ground fault
+## Part 5  -  Poor-ground fault
 
 For this calculation only, model the hot resistance of L1 from its rating:
 $R_{L1}=V^2/P$. A 1.00 Ω unwanted ground resistance is then added in series.

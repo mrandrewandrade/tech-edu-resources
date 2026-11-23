@@ -184,7 +184,7 @@ Command, output, process, or traceback:
 ## Card 8 · Simulated blown fuse
 
 **Symptom:** Source voltage is present before F1 but absent after F1. The load is
-off. The trainer uses a teacher-opened fuse link—never a created short.
+off. The trainer uses a teacher-opened fuse link - never a created short.
 
 ### Predict
 What voltage appears across the open fuse while the load is commanded on?
