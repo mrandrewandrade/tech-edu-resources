@@ -1,6 +1,6 @@
 ---
-title: "Tinkercad Stamp | AA Arrow First, Original Logo Second"
-description: "Learn the stamp workflow with the supplied AA arrow, then repeat it with an original logo in Tinkercad."
+title: "Tinkercad AA Arrow Stamp | Screenshot Walkthrough"
+description: "Build the guided AA arrow stamp in Tinkercad with exact inch dimensions, real screenshots and a verified STL download."
 body-classes: "ter-design-fabrication bs-learn-article ter-notes-lesson"
 terms: [logo, computer-aided-design, additive-manufacturing, stl, dimension, mirror, evaluation]
 highlighted-terms: [logo, stl]
@@ -8,137 +8,194 @@ toc: true
 execute: {enabled: false}
 ---
 
-Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the required dimensions, success criteria and submission list. Complete the **guided AA arrow stamp first**, then repeat the workflow with your own original logo.
+Build this **guided AA arrow stamp first**. After it works, repeat the same process with your own original logo. Return to the [Logo Stamp mission brief](logo-stamp-mission.qmd) for the submission list, success criteria and due dates.
 
 ::: {.callout-tip}
 ## Welcome to Temu CAD
 
-Tinkercad is **Temu CAD** - said with affection. It is fast, friendly, browser-based and perfect for learning primitives, alignment and boolean grouping. It is also why this pathway sometimes uses careful checkpoints where a parametric system would use constraints and variables.
+Tinkercad is **Temu CAD**—said with affection. It is quick, browser-based and friendly enough to teach the core ideas: primitives, exact dimensions, mirroring, alignment and grouping. The same concepts transfer to Onshape, Autodesk Inventor, Fusion, SolidWorks, FreeCAD and other CAD software.
 :::
 
 ::: {.callout-important}
 ## Account and permission check
 
-Before students create or use a Tinkercad account, confirm that Tinkercad is approved under the current board's digital-tool process, that students meet the vendor's age/account requirements, that the required Ontario third-party software notice has been provided, and that parent/guardian permission has been obtained whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). A student who cannot use the web service needs an approved alternative - not a lower mark.
+Before students create or use a Tinkercad account, confirm that Tinkercad is approved under the current board's digital-tool process, that students meet the vendor's age/account requirements, that the required Ontario third-party software notice has been provided, and that parent/guardian permission has been obtained whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). A student who cannot use the web service needs an approved alternative—not a lower mark.
 :::
 
-## V1 files - use the supplied AA arrow
+## V1 downloads
 
-- [AA arrow PNG reference](../../assets/branding/logo/aa-logo-transparent.png){download="aa-arrow-reference.png"}
-- [Editable AA arrow SVG](../../assets/onshape-logo-stamp/photopea-workflow/aa-logo-vector.svg){download="aa-arrow-vector.svg"}
+- [AA arrow SVG for Tinkercad](../../assets/branding/logo/aa-logo.svg){download="aa-arrow.svg"}
+- [Verified AA stamp STL](../../assets/tinkercad-logo-stamp/downloads/aa-arrow-stamp-tinkercad.stl){download="aa-arrow-stamp-tinkercad.stl"}
+- [Logo Stamp mission brief](logo-stamp-mission.qmd)
 
-For V1, import the supplied SVG so everyone learns the same stamp process. The Photopea steps below become essential when you prepare your original V2 logo.
+The STL is a troubleshooting and printing reference. **Submitting the downloaded STL does not prove that you completed the CAD work.**
 
-## Prepare V2 artwork in Photopea
+## Target dimensions
 
-The Tinkercad and Onshape pathways begin with the same artwork process:
+| Part | Exact size |
+|---|---:|
+| Circular backing | 1.50 × 1.50 × 0.16 in |
+| AA arrow | about 1.06 × 1.25 in |
+| Raised arrow height | 0.08 in |
+| Total stamp height | 0.24 in |
+| Snap Grid | 1/64 in |
 
-1. Open the original photograph, scan, PNG or JPG in [Photopea](https://www.photopea.com/).
-2. Choose **Image - Vectorize Bitmap**.
-3. For a simple black-and-white logo, set **Colors** to **2** and compare the source and vector previews.
-4. Select **OK**, expand the generated vector group and hide the page-sized white background layer.
-5. Keep any smaller white Shape layers that create required holes or cutouts.
-6. Confirm that the checkerboard appears around the logo and that important openings remain clear.
-7. Choose **File - Export as - SVG** and leave **add hidden layers** turned off.
-
-![Photopea's bitmap vectorizer set to two colours, with source and vector previews shown side by side.](../../assets/onshape-logo-stamp/photopea-workflow/02-vectorize-two-colours.jpg){.ter-concept-diagram}
-
-![Clean vector artwork on a transparent background, with the generated Shape layers visible in Photopea.](../../assets/onshape-logo-stamp/photopea-workflow/03-clean-vector-layers.jpg){.ter-concept-diagram}
-
-For the complete explanation of raster layers, Shape layers, background removal and SVG export, use [Part A of the Photopea-to-Onshape guide](onshape-logo-stamp.qmd#photopea-workflow).
-
-::: {.callout-tip}
-## Tinkercad skips the DXF conversion
-
-Tinkercad imports SVG files directly. After the clean SVG is exported from Photopea, continue with the steps below. Do **not** convert the artwork to DXF for this pathway.
-
-That direct SVG import is Temu CAD at its best: fewer steps, fewer settings and a surprisingly quick route to a real prototype.
-:::
-
-## Step 1 - Start and name the design
+## Step 1 — Create and name the design
 
 1. Sign in to [Tinkercad](https://www.tinkercad.com/).
-2. Select **Create - 3D Design**.
-3. For V1, rename the design `lastname-aa-stamp-v1`. For V2, use `lastname-original-stamp-v2`.
-4. Select **Edit Grid** and change the units to **inches**.
-5. Set the **Snap Grid** to **0.01 in**.
+2. Select **Create → 3D Design**.
+3. Click the automatic name in the upper-left corner.
+4. Rename V1 `lastname-aa-stamp-v1`.
 
-## Step 2 - Make the backing coin
+![A new Tinkercad 3D design renamed for the AA logo stamp.](../../assets/tinkercad-logo-stamp/screenshots/01-create-and-name-design.jpg){.ter-concept-diagram}
 
-1. Drag a **Cylinder** onto the workplane.
-2. Set its width and length to **1.50 in**.
-3. Set its height to **0.16 in**.
-4. Increase the cylinder sides so the edge appears smooth.
-5. Leave the back flat. Do not add a handle.
+## Step 2 — Change the workspace to inches
 
-## Step 3 - Import the AA arrow for V1
+1. Select **Settings** in the lower-right corner.
+2. Change **Units** to **Inches**.
+3. Keep the default workplane size and select **Update Grid**.
 
-1. Select **Import**.
-2. For V1, choose `aa-logo-vector.svg`. For V2, choose the transparent SVG exported from Photopea.
-3. Select the **Art** import type when Tinkercad asks how to interpret the file.
-4. Import it at no more than **1.25 in wide**.
-5. Keep the width and length proportions linked while resizing.
-6. Set the logo height to **0.08 in**.
-7. Remove or simplify details thinner than **0.05 in**.
+![Tinkercad grid settings changed from metric to imperial inches.](../../assets/tinkercad-logo-stamp/screenshots/02-set-inch-units.jpg){.ter-concept-diagram}
 
-If Tinkercad fills openings incorrectly, return to the SVG and repair the paths before continuing. Do not cover the problem with extra shapes.
+Open **Snap Grid** and choose **1/64 in**. The previous `0.01 in` instruction was wrong; Tinkercad presents fractional-inch choices.
 
-## Step 4 - Mirror the stamp face
+![The Snap Grid menu set to one sixty-fourth of an inch.](../../assets/tinkercad-logo-stamp/screenshots/03-set-snap-grid.jpg){.ter-concept-diagram}
 
-1. Select only the logo.
-2. Choose **Mirror**.
-3. Select the left-right mirror control.
-4. Confirm that letters and directional symbols now look backwards on the stamp face. They will read correctly in the impression.
+## Step 3 — Build the solid backing
 
-## Step 5 - Place the relief on the coin
+1. Drag a **Cylinder** from **Basic Shapes** onto the workplane.
+2. In the shape panel, select **Solid**, not **Hole**. A solid is coloured; a hole looks grey and striped.
+3. Drag a **Ruler** onto an empty part of the workplane.
+4. Select the cylinder and type **1.50 in** for width and **1.50 in** for length.
+5. Type **0.16 in** for height.
+6. Set **Sides** to **48** so the edge prints smoothly.
 
-1. Select the logo.
-2. Raise it **0.16 in** above the workplane so it sits on the backing.
-3. Select the logo and cylinder together.
-4. Choose **Align**.
-5. Select the two centre alignment dots.
-6. Confirm there is at least **0.12 in** of clear backing around the logo.
+::: {.callout-warning}
+## Stop if the cylinder looks transparent
 
-## Step 6 - Inspect before grouping
-
-Orbit to the top, front and right-side views.
-
-Check that:
-
-- the backing is 0.16 in thick;
-- the logo rises 0.08 in above the backing;
-- the logo is mirrored;
-- no part hangs beyond the circle;
-- small gaps remain open; and
-- the back remains flat.
-
-Select everything and press **Ctrl + G** only after these checks pass.
-
-::: {.callout-note}
-## Temu CAD quality control
-
-Grouping is not proof that the design is correct; it only proves that Tinkercad agreed to glue the shapes together. The top, side and slicer checks are the evidence.
+A grey striped cylinder is a **Hole**. Change it back to **Solid** before grouping, or Temu CAD will cheerfully subtract your entire backing and export only the arrow.
 :::
 
-## Step 7 - Export
+## Step 4 — Import the supplied AA arrow
+
+1. Download the [AA arrow SVG](../../assets/branding/logo/aa-logo.svg){download="aa-arrow.svg"}.
+2. Select **Import → Choose a file** and choose `aa-arrow.svg`.
+3. Select **Art**, not **Artboard**. The preview should show the AA arrow on a transparent background.
+4. Select **Import**. Do not depend on the size fields in this import window.
+
+![The correct AA arrow visible in Tinkercad's SVG import preview with Art selected.](../../assets/tinkercad-logo-stamp/screenshots/05-import-aa-arrow-svg.jpg){.ter-concept-diagram}
+
+::: {.callout-note}
+## Why resize after importing?
+
+Tinkercad's SVG import window can behave as though its size fields are still metric even after the workplane is changed to inches. Import first, then use the on-workplane **Ruler**. The Ruler is the reliable source of truth.
+:::
+
+## Step 5 — Resize the arrow and set its relief
+
+1. Select the imported arrow.
+2. With the Ruler active, set its long dimension to **1.25 in**.
+3. Set the other dimension to about **1.06 in**. Keep its proportions; do not stretch the logo.
+4. Set the arrow height to **0.08 in**.
+5. Remove or simplify details thinner than **0.05 in** on your later V2 artwork.
+
+![The imported AA arrow sized to 1.25 inches with a relief height of 0.08 inches.](../../assets/tinkercad-logo-stamp/screenshots/08-logo-relief-height.jpg){.ter-concept-diagram}
+
+## Step 6 — Mirror the stamp face
+
+1. Select only the arrow.
+2. Select **Mirror** in the top toolbar.
+3. Select the left-right mirror control.
+
+![Tinkercad's mirror controls displayed around the selected AA arrow.](../../assets/tinkercad-logo-stamp/screenshots/09-mirror-aa-logo.jpg){.ter-concept-diagram}
+
+The AA arrow is almost left-right symmetrical, so the change is subtle. **Still complete the mirror step.** On V2, letters and directional artwork must look backwards on the stamp so the impression reads correctly.
+
+## Step 7 — Raise the arrow onto the backing
+
+1. Keep only the arrow selected.
+2. Use the Ruler's green vertical-position value.
+3. Type **0.16 in**. This places the bottom of the arrow exactly on top of the 0.16 in backing.
+4. Confirm that the arrow itself is still **0.08 in** high.
+
+![The AA arrow raised to a vertical position of 0.16 inches while retaining a height of 0.08 inches.](../../assets/tinkercad-logo-stamp/screenshots/10-raise-logo-to-base.jpg){.ter-concept-diagram}
+
+## Step 8 — Align both centres
+
+1. Delete the Ruler by selecting its small **×**.
+2. Select the arrow and cylinder together. **Ctrl + A** works when those are the only two shapes.
+3. Select **Align**.
+4. Select the middle dot on the horizontal axis.
+5. Select the middle dot on the vertical axis.
+
+![The arrow centred over the circular backing with Tinkercad's middle alignment dots selected.](../../assets/tinkercad-logo-stamp/screenshots/11-align-logo-and-coin.jpg){.ter-concept-diagram}
+
+Click on an empty part of the workplane. The top view should show an even border around the arrow.
+
+![Top view of the centred AA arrow on its circular backing.](../../assets/tinkercad-logo-stamp/screenshots/12-check-top-view.jpg){.ter-concept-diagram}
+
+## Step 9 — Inspect, then group
+
+Rotate the ViewCube to inspect the model in 3D. Check all of these before grouping:
+
+- the backing is solid, circular and **0.16 in** thick;
+- the arrow rises **0.08 in** above the backing;
+- no part of the arrow hangs beyond the circle;
+- the openings in the AA symbol remain clear; and
+- the back of the stamp remains flat.
+
+![A three-dimensional inspection view showing the raised arrow above the circular backing.](../../assets/tinkercad-logo-stamp/screenshots/13-check-3d-relief.jpg){.ter-concept-diagram}
+
+Select both shapes and press **Ctrl + G**. The grouped result should remain a full circular stamp—not an arrow by itself.
+
+![The completed single-colour AA arrow stamp after grouping.](../../assets/tinkercad-logo-stamp/screenshots/14-completed-stamp.jpg){.ter-concept-diagram}
+
+::: {.callout-tip}
+## Temu CAD quality control
+
+Grouping is not proof that the design is correct; it only proves that Tinkercad agreed to glue the shapes together. The top, 3D and slicer checks are the evidence.
+:::
+
+## Step 10 — Export and verify the STL
 
 1. Select the grouped stamp.
 2. Select **Export**.
 3. Choose **The selected shape**.
 4. Choose **STL**.
-5. Name V1 `lastname-aa-stamp-v1.stl` and V2 `lastname-original-stamp-v2.stl`.
-6. Open it in the class slicer and inspect every layer.
+5. Rename the download `lastname-aa-stamp-v1.stl`.
+6. Open it in the class slicer.
+7. Confirm that the slicer reports a **1.50 × 1.50 × 0.24 in** model before printing.
 
-For the rigid class prototype, print with the flat back on the build plate and the raised logo facing upward. A flexible ink-stamp version uses a teacher-selected material and printer-specific orientation.
+Print the rigid class prototype with its flat back on the build plate and the raised logo facing upward. A flexible ink-stamp version uses teacher-selected material and printer settings.
 
-## Step 8 - Test and revise
+## Step 11 — Test and revise
 
-Make one impression in teacher-approved modelling material. If the result is backwards, incomplete, crowded or too faint, return to Tinkercad and revise the source before printing again.
+Make one impression in teacher-approved modelling material. If the result is backwards, incomplete, crowded or too faint, return to the Tinkercad source and revise it before printing again.
 
-Record the first result and the change you made. A successful print without evidence of testing is not the complete mission. V1 is complete only when the AA impression reads correctly; then duplicate the proven process and replace the artwork with your original V2 logo.
+Record:
 
-## Optional bonuses - only after V2
+- one photo of the first impression;
+- one problem you observed; and
+- one change you made.
 
-The [PCSS stamp challenge](logo-stamp-mission.qmd#bonus-pcss-stamp-challenge) and [faux-enamel extension](tinkercad-faux-enamel-logo.qmd) are optional. They do not replace the guided AA stamp or the original-logo stamp.
+V1 is complete only when the AA impression reads correctly. Then duplicate the proven process and replace the artwork with your original V2 logo.
+
+## Prepare original V2 artwork in Photopea
+
+For V2, use the same artwork process as the Onshape pathway:
+
+1. Open the original photograph, scan, PNG or JPG in [Photopea](https://www.photopea.com/).
+2. Choose **Image → Vectorize Bitmap**.
+3. For a simple black-and-white logo, set **Colors** to **2**.
+4. Hide the page-sized white background Shape layer.
+5. Keep smaller white Shape layers that create required holes.
+6. Confirm that the checkerboard appears around the logo.
+7. Choose **File → Export as → SVG** with hidden layers turned off.
+
+For screenshots and a full explanation of raster layers, Shape layers and background removal, use [Part A of the Photopea-to-Onshape guide](onshape-logo-stamp.qmd#photopea-workflow). Tinkercad imports the clean SVG directly; it does not need the DXF conversion used by Onshape.
+
+## Optional bonuses — only after V2
+
+The [PCSS stamp challenge](logo-stamp-mission.qmd#bonus-pcss-stamp-challenge) and [faux-enamel extension](tinkercad-faux-enamel-logo.qmd) come after the guided AA stamp and original-logo stamp. They do not replace either required build.
 
 If Temu CAD made the first prototype, the physical test gets the final vote. Move to the [Onshape pathway](onshape-logo-stamp.qmd) when you want the same design controlled by dimensions, variables and an editable feature history.
