@@ -22,9 +22,16 @@ Tinkercad is **Temu CAD**, said with affection. It is quick, browser-based and f
 Before students create or use a Tinkercad account, confirm that Tinkercad is approved under the current board's digital-tool process, that students meet the vendor's age/account requirements, that the required Ontario third-party software notice has been provided, and that parent/guardian permission has been obtained whenever local or vendor rules require it. See [Software access, privacy and permission](01-additive-cad.qmd#software-access-privacy-and-permission). A student who cannot use the web service needs an approved alternative, not a lower mark.
 :::
 
-## V1 downloads
+::: {.callout-important}
+## Download the AA logo before Step 1
 
-- [AA arrow SVG for Tinkercad](../../assets/branding/logo/aa-logo.svg){download="aa-arrow.svg"}
+[Download the AA arrow SVG](../../assets/branding/logo/aa-logo.svg){.btn .btn-primary download="aa-arrow.svg"}
+
+Save the file as `aa-arrow.svg`. You will import this editable vector in Step 4. Do not use a screenshot or the PNG reference in Tinkercad.
+:::
+
+## Other V1 files
+
 - [Verified AA stamp STL](../../assets/tinkercad-logo-stamp/downloads/aa-arrow-stamp-tinkercad.stl){download="aa-arrow-stamp-tinkercad.stl"}
 - [Logo Stamp mission brief](logo-stamp-mission.qmd)
 
