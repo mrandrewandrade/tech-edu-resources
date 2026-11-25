@@ -253,7 +253,7 @@ For the rigid class prototype, print flat-back down with the relief upward. A fl
 | Holes or cutouts are filled | The Photopea vector paths are open or a required cutout layer was hidden | Repair the vector layers in Photopea and export a new SVG and DXF |
 | The model contains two or more parts | The relief extrude used **New** instead of **Add**, or the merge scope is empty | Edit `Logo Relief Extrude`, choose **Add**, and select `Part 1` as the merge scope |
 | The printed stamp is far too large or small | The DXF or STL was exported with the wrong units | Use **Millimetre** for DXF import and **Millimeter** for STL export |
-| A thin detail disappears when sliced | The path or gap is below the 1.2 mm minimum | Simplify or thicken it in Photopea, then repeat the SVG-to-DXF step |
+| A thin detail is missing from the print | The path or gap is below the 1.2 mm minimum | Simplify or thicken it in Photopea, then repeat the SVG-to-DXF step |
 
 ## Final checklist
 

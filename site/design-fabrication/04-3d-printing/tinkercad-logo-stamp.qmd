@@ -160,7 +160,7 @@ Select both shapes and press **Ctrl + G**. The grouped result should remain a fu
 ::: {.callout-tip}
 ## Temu CAD quality control
 
-Grouping is not proof that the design is correct; it only proves that Tinkercad agreed to glue the shapes together. The top, 3D and slicer checks are the evidence.
+Grouping is not proof that the design is correct; it only proves that Tinkercad agreed to glue the shapes together. The top and 3D checks are the evidence.
 :::
 
 ::: {.callout-important}
@@ -169,15 +169,13 @@ Grouping is not proof that the design is correct; it only proves that Tinkercad 
 Capture one clear top view and one side view now. Follow the [Windows Snipping Tool screenshot instructions](logo-stamp-mission.qmd#snipping-tool), then save the files as `lastname-aa-stamp-top.png` and `lastname-aa-stamp-side.png`.
 :::
 
-## Step 10: Export and verify the STL
+## Step 10: Export the STL
 
 1. Select the grouped stamp.
 2. Select **Export**.
 3. Choose **The selected shape**.
 4. Choose **STL**.
 5. Rename the download `lastname-aa-stamp-v1.stl`.
-6. Open it in the class slicer.
-7. Confirm that the slicer reports a **1.50 × 1.50 × 0.24 in** model before printing.
 
 Print the rigid class prototype with its flat back on the build plate and the raised logo facing upward. A flexible ink-stamp version uses teacher-selected material and printer settings.
 
