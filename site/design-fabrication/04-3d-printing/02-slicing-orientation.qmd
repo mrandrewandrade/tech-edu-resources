@@ -29,93 +29,93 @@ Do not send a print, start a printer, remove a build plate or reach inside a mac
 Confirm all of these:
 
 - the filename identifies you and the project;
-- the model is complete, watertight and exported as an STL;
-- you know its intended overall dimensions;
+- the model is complete, watertight and exported in a supported format (`.stl`, `.3mf`, `.step` / `.stp`, `.obj` or `.amf`);
+- you know its intended overall dimensions in millimetres (`mm`);
 - the flat build surface and intended print orientation are clear; and
-- your teacher has identified the printer, nozzle, plate and filament you will use.
+- your teacher has identified the printer (`X1 Carbon` or `P1S`), `0.4 mm` nozzle, `Textured PEI Plate` and filament (`PLA`) you will use.
 
-If Bambu Studio is not installed, use the [official Bambu Studio download](https://bambulab.com/download/studio). Do not download an installer from an advertisement or an unofficial mirror. A school-managed account or computer may block installation; use the teacher-approved classroom device or process instead.
+If Bambu Studio is not installed, use the [official Bambu Studio download](https://bambulab.com/download/studio). Do not download an installer from an advertisement or an unofficial mirror. School accounts block software downloads, so use a personal device or an approved classroom workstation with Bambu Studio already installed.
 
-The screenshots show the Bambu Studio interface used when the student guide was created. Labels can move between software versions, but the verification process remains the same.
+The screenshots show the Bambu Studio interface used when the student guide was created, with numbered callouts and no personal or account details shown. Labels can move between software versions, but the verification process remains the same.
 
-## Step 1: Create a project and import the STL
+## Step 1: Create a project and import the model
 
-1. Open Bambu Studio and create a new project.
-2. Select **Add** or drag the `.stl` file onto the build plate.
-3. If an import message asks about units, choose the units used when the STL was exported.
-4. Select the model and read its displayed size. Compare it with the dimensions recorded in CAD.
-5. Save the working project as `lastname-project-name.3mf`. A 3MF project preserves the plate layout and slicing choices; the original STL remains your geometry file.
+1. Open Bambu Studio and select **New Project**.
+2. Select **Add** (**1**—the cube icon with a `+` sign) or drag your model file onto the build plate.
+3. If an import message asks about units, choose the units used when the model was exported.
+4. Select the model and read its displayed size (`X × Y × Z` in `mm`) in the bottom-right **Object size** box (**2**). Compare it with the dimensions recorded in CAD.
+5. Save the working project as `lastname-project-name.3mf`. A 3MF project preserves the plate layout and slicing choices; the original model file remains your geometry source.
 
 ::: {.callout-warning}
 ## Stop if the size is wrong
 
-A model that is about **25.4 times too large or too small** probably has an inch-to-millimetre mismatch. Do not guess by dragging a scale handle. Check the CAD export units or ask your teacher before scaling.
+A model that is about **25.4 times too large or too small** probably has an inch-to-millimetre mismatch, or may be accidentally microscopic or larger than the build plate. Check the bottom-right size readout and edge/error status before scaling—do not guess by dragging a scale handle. Check the CAD export units or ask your teacher before scaling.
 :::
 
 ## Step 2: Match the physical printer setup
 
 Select the exact classroom setup assigned by your teacher:
 
-1. **Printer:** choose the actual machine model, such as the classroom X1 Carbon or P1S.
-2. **Nozzle:** confirm the installed nozzle diameter, commonly `0.4 mm` in this classroom.
-3. **Plate:** select **Textured PEI Plate** only when that is the plate physically installed.
-4. **Filament:** choose the profile that matches the loaded material, not merely a similar colour. For example, Bambu PLA Basic and Generic PLA are different profiles.
-5. **Process:** begin with the teacher-approved preset. `0.20 mm Standard` is a common first-pass profile for a 0.4 mm nozzle, but it is not a universal requirement.
+1. **Printer (**`1`**):** choose the actual machine model, such as the classroom **Bambu Lab X1 Carbon** or **Bambu Lab P1S**.
+2. **Plate (**`2`**):** select **Textured PEI Plate**, which is used on both classroom printers when that plate is physically installed.
+3. **Nozzle (**`3`**):** confirm the installed nozzle diameter is **`0.4`**.
+4. **Filament (**`4`**):** choose the profile that matches the loaded material (such as **PLA Basic**), not merely a similar colour.
+5. **Process:** begin with the teacher-approved preset (`0.20mm Standard` is a common first-pass profile for a `0.4 mm` nozzle).
 
-![Bambu Studio with the printer, plate and filament areas identified by the student author.](../../assets/3d-printing/bambu-studio/01-select-printer-plate-filament.png){.ter-concept-diagram}
+![Bambu Studio profile setup showing numbered callouts for Printer (1), Plate (2), Nozzle diameter (3) and Project Filaments (4).](../../assets/3d-printing/bambu-studio/01-select-printer-plate-filament.png){.ter-concept-diagram}
 
-Never assume the software profile matches the machine because the screen looks familiar. Verify all four items every time.
+Never assume the software profile matches the machine because the screen looks familiar. Verify all four items every time so the print does not fail or damage the bed.
 
 ## Step 3: Orient and place the model
 
-1. Use **Rotate** and **Lay on Face** so the intended base sits flat on the plate.
-2. Confirm that no part is below the plate, floating above it or outside the printable boundary.
+1. Select your model and use **Rotate (`R`)** (**1**) or **Lay on Face (`F`)** (**2**) in the top toolbar so the largest, flattest base sits flat against the build plate (**3**).
+2. Rotate your camera view underneath and around the build plate to confirm no part is below the plate, floating above it with gaps, or outside the printable boundary (no red out-of-bounds highlights).
 3. Keep separate objects spaced apart. Use **Arrange** when the teacher permits multiple parts on one plate.
 4. Recheck the displayed size after rotating or scaling.
 
 For the stamp project, place the **flat back on the build plate** with the raised logo facing upward. This orientation normally needs no support material.
 
-![The student example identifying Add, Rotate and Lay on Face in Bambu Studio.](../../assets/3d-printing/bambu-studio/02-import-orient-model.png){.ter-concept-diagram}
+![Bambu Studio toolbar and build plate showing Rotate (1), Lay on Face (2) and the model resting flat on the plate (3).](../../assets/3d-printing/bambu-studio/02-import-orient-model.png){.ter-concept-diagram}
 
 ## Step 4: Understand the main settings
 
-Leave the teacher-approved preset unchanged unless the project requires a deliberate change. Record any setting you change and why.
+Leave the teacher-approved preset (`0.20mm Standard`) unchanged unless the project requires a deliberate change. Record any setting you change and why.
 
-| Setting | What it controls | Sensible starting point |
+| Setting | What it does | Default / starting point |
 |---|---|---|
-| Layer height | Vertical detail, surface texture and print time | `0.20 mm` is a common general-purpose choice with a 0.4 mm nozzle |
-| Wall loops | Solid outer shells and much of the part's strength | The selected preset often uses 2 or 3; functional parts may need more |
-| Sparse infill | Internal structure supporting upper surfaces | Decorative parts often need modest infill; more is not automatically better |
+| Layer height (under Quality) | Thickness of each horizontal layer of melted plastic; affects vertical detail, surface smoothness and print time | `0.20 mm` (good balance of speed and quality with a `0.4 mm` nozzle) |
+| Wall loops (under Strength) | Number of solid outer perimeter lines forming the outer shell of your object | `2` to `3` walls (more walls add perimeter strength) |
+| Sparse infill density (under Strength) | Percentage of internal crisscross grid printed inside the object to support upper surfaces and add strength without wasting plastic | `15%` |
 | Top and bottom shells | Solid closure above and below infill | Keep the approved profile unless thin surfaces appear in preview |
-| Supports | Temporary material beneath otherwise unsupported regions | Off for the flat-backed stamp; enable only when preview and teacher direction show a need |
-| Brim | A removable collar that increases plate contact | Auto or off for stable parts; consider it for tall, narrow or small-footprint parts |
+| Supports (under Support) | Temporary plastic scaffolding printed underneath steep overhangs or parts starting in mid-air (snapped off after printing) | `Off` for flat-backed parts; enable only when preview and teacher direction show a need |
+| Brim (under Others) | Thin, flat collar printed around the bottom edge to help small or tall parts grip the build plate | `Auto` or `Off` for stable parts; consider for tall, narrow or small-footprint parts |
 
 For a functional bracket or handle, orientation and additional walls can matter more than raising infill from 15% to 50%. Use test evidence instead of treating one percentage as a strength guarantee.
 
 ## Step 5: Slice and inspect every layer
 
-1. Select **Slice plate**.
-2. Open **Preview**.
-3. Drag the vertical layer slider from the first layer to the final layer.
+1. Select **Slice plate** (**1**) in the top-right corner to generate the toolpath and open **Preview**.
+2. Check the **Slicing Result** box (**2**) to review the **Total time** and filament weight (`g`).
+3. Grab the **vertical layer slider** (**3**) on the right edge, drag it all the way down to **Layer 1**, and slowly scrub upward to the final layer.
 4. Inspect the model against the checklist below.
 
-![The sliced preview with the layer slider, estimated time and filament use identified.](../../assets/3d-printing/bambu-studio/03-preview-layers-time-material.png){.ter-concept-diagram}
+![Sliced Preview screen showing Slice plate (1), Slicing Result time and filament details (2) and the vertical layer slider (3).](../../assets/3d-printing/bambu-studio/03-preview-layers-time-material.png){.ter-concept-diagram}
 
 ### Preview checklist
 
-- The first layer is continuous and matches the intended footprint.
-- No toolpath begins in mid-air.
+- The first layer is continuous, flat, cleanly attached and matches the intended footprint.
+- No toolpath starts in mid-air without material or supports underneath it.
 - Holes and required gaps remain open.
 - Thin walls, letters and logo details have not disappeared.
 - Supports appear only where expected.
 - Every toolpath remains inside the build area.
 - The final layers close correctly.
-- Estimated time and filament use are plausible for the model's size.
+- Estimated time and filament use are plausible for the model's size and fit within class time limits.
 - The preview still matches the shape and orientation approved in CAD.
 
 If any item fails, return to **Prepare** or to the CAD source. Slicing cannot repair missing geometry or an unsuitable design.
 
-## Step 6: Save the correct file
+## Step 6: Save and export the correct file
 
 Keep two different files when possible:
 
@@ -124,15 +124,16 @@ Keep two different files when possible:
 
 For a teacher-directed SD card or USB workflow:
 
-1. Open the menu beside **Print plate**.
-2. Select **Export plate sliced file**.
-3. Save it in the location specified by your teacher.
-4. Do not change the generated file extension.
-5. Never reuse a sliced file on a different printer model, nozzle, plate or material setup.
+1. Open the dropdown arrow (**1**) beside **Slice plate** / **Print plate** in the top-right corner.
+2. Select **Export plate sliced file** (**2**).
+3. Save it with a clear name (such as `FirstName_PartName.gcode.3mf`) in the location specified by your teacher (class folder, USB drive or SD card).
+4. Confirm the saved file ends in `.gcode.3mf` (not just `.3mf` or `.stl`) and do not change the generated file extension.
+5. Safely eject your SD card or USB drive before removing it, and never reuse a sliced file on a different printer model, nozzle, plate or material setup.
 
-![The student example showing Export plate sliced file in the Print plate menu.](../../assets/3d-printing/bambu-studio/04-export-sliced-plate.png){.ter-concept-diagram}
+![Top-right menu showing the dropdown arrow (1) and Export plate sliced file (2).](../../assets/3d-printing/bambu-studio/04-export-sliced-plate.png){.ter-concept-diagram}
 
 If the classroom uses network printing, stop after preview and request teacher approval. Do not select **Print plate**, **Send** or **Send all** independently.
+
 
 ## Step 7: Teacher check before printing
 
@@ -145,7 +146,7 @@ Show the teacher:
 5. the estimated time and material; and
 6. any supports, brim or non-default settings.
 
-The teacher confirms that the physical printer is ready, the correct plate and filament are installed, the build area is clear and the job fits the class schedule.
+Make sure that the teacher confirms that the physical printer is ready, the correct plate and filament are installed, the build area is clear and the job fits the class schedule.
 
 ## Step 8: Print and remove the part safely
 
