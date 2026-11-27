@@ -4,6 +4,7 @@ project:
   render:
     - "404.qmd"
     - "about.qmd"
+    - "contribute.qmd"
     - "index.qmd"
     - "licensing.qmd"
     - "references.qmd"
@@ -140,6 +141,8 @@ website:
         text: Glossary
       - href: lore/index.qmd
         text: Lore
+      - href: contribute.qmd
+        text: Improve This Site
       - href: about.qmd
         text: About
   page-footer:

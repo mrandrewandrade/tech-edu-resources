@@ -1,0 +1,203 @@
+---
+title: "Improve This Website | Student Contribution Guide"
+description: "Edit a Quarto source file, preview the website locally, and optionally propose a change through GitHub with the required permission."
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+toc-depth: 3
+execute: {enabled: false}
+---
+
+This website is built from editable **Quarto Markdown** files. Their filename extension is `.qmd`, not `.pdf`, `.html` or `.qml`. A PDF can show an idea, but it is not the file used to maintain this website.
+
+::: {.callout-important}
+## What to submit
+
+Submit the edited `.qmd` file and any new image files, or propose the change through GitHub when you have permission. **Do not submit another PDF as the website update.**
+
+For the Bambu Studio guide:
+
+- [open the finished website page](design-fabrication/04-3d-printing/02-slicing-orientation.qmd);
+- [view its editable `.qmd` source on GitHub](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd); or
+- [download the raw `.qmd` source](https://raw.githubusercontent.com/mrandrewandrade/tech-edu-resources/master/site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd).
+
+Its path inside the project is:
+
+```text
+site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd
+```
+:::
+
+## Choose one route
+
+| Route | Account needed? | Best when |
+|---|---:|---|
+| **A. Edit locally** | No | You want to use a text editor and give the files to your teacher. |
+| **B. Edit with GitHub** | Yes | Parent/guardian permission and teacher or board approval are already in place. |
+
+Both routes edit the same `.qmd` source. GitHub is a way to share and review the change; it is not required to write the page.
+
+::: {.callout-warning}
+## Permission and privacy
+
+For this class, **do not create or use a GitHub account without parent/guardian permission and teacher or school-board approval**. The local route works without a GitHub account.
+
+GitHub's Terms require users to be at least 13 years old, and a higher minimum age may apply under local law. Meeting an age minimum does not replace the permission required for this class. Read the [current GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-age-and-account-requirements).
+
+Never publish your student number, timetable, school account details, private email, location, faces, full legal name or another person's personal information. Ask before including anyone's name or image. A first name and last initial may be used for credit only when the student and teacher approve it.
+:::
+
+## Route A: edit locally with a text editor
+
+### 1. Get a working copy
+
+Ask your teacher for a ZIP copy of the project, or download the repository ZIP only if your teacher has approved that route. Extract the ZIP before editing it.
+
+Open the project folder in an approved text editor. Visual Studio Code is convenient, but a basic text editor can edit a `.qmd` file too. Do not use Microsoft Word because it can insert formatting that breaks plain-text source files.
+
+### 2. Open the source, not the rendered site
+
+Open the `.qmd` file inside the `site` folder. Do **not** edit files inside `site/_site`; that folder is generated again whenever the website renders, so direct changes there will be overwritten.
+
+Keep the file's opening block between the two `---` lines. That is the page metadata.
+
+```yaml
+---
+title: "Page title"
+description: "One-sentence description"
+---
+```
+
+### 3. Edit with simple Markdown
+
+```markdown
+## Section heading
+
+Write an ordinary paragraph here.
+
+- first checklist item
+- second checklist item
+
+[descriptive link text](https://example.com)
+
+![Useful description of the image](assets/example.png)
+```
+
+Use headings in order, write descriptive link text, and give every useful image accurate alternative text. Keep screenshots tightly cropped and make sure no personal information is visible.
+
+### 4. Save images beside the site's other assets
+
+Put new images in an appropriate folder under `site/assets`. Use short lowercase filenames with hyphens, such as `05-check-printer-profile.png`. Do not rename or move existing files unless you also repair every link to them.
+
+Only add work you made or material the teacher has permission to publish. Record the source and licence for anything created by someone else.
+
+### 5. Preview the page
+
+To preview on a computer with [Quarto](https://quarto.org/docs/get-started/) installed, open a terminal in the project root, which is the folder containing `README.md`, and run:
+
+```powershell
+quarto preview site
+```
+
+The terminal shows a local web address. Open it in a browser. Quarto refreshes the preview after a saved change. Stop the preview with `Ctrl+C`.
+
+If software installation is not available on your school computer, you can still edit the `.qmd` source. Give the edited file and its assets to your teacher for rendering.
+
+### 6. Render and check the full site
+
+On the first local setup, install the small Python dependency from the project root:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+Then build and check the complete website:
+
+```powershell
+quarto render site
+python scripts/check_commons.py --rendered
+```
+
+`quarto preview site` is the fast working view. `quarto render site` rebuilds the whole website. The check script catches broken links and other project rules. Always run the full render before a change is published.
+
+### 7. Give the change to your teacher
+
+Send or hand in:
+
+- the edited `.qmd` file;
+- every new or changed image or asset;
+- a two- or three-sentence summary of what you changed and why;
+- the result of the render and check, or a note saying the teacher still needs to run them; and
+- the sources and permissions for any material you did not create.
+
+A ZIP containing only those files is fine. A PDF is not an editable website contribution.
+
+## Route B: propose the change through GitHub
+
+Use this route only after the permission described above is in place.
+
+1. Sign in to the approved GitHub account.
+2. Open the [Bambu Studio guide's `.qmd` source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd), or navigate to the source file for another page.
+3. Select the pencil icon labelled **Edit this file**.
+4. If GitHub says it will fork the repository, continue only if that public copy is permitted. A fork is a copy under your GitHub account.
+5. Edit the text and use GitHub's **Preview** tab to catch simple Markdown mistakes. GitHub's preview is helpful, but it is not a complete Quarto website render.
+6. Select **Commit changes**. Write a short message such as `Clarify Bambu Studio profile check`.
+7. Choose the option to create a new branch and propose the change. Do not work directly on the published `master` branch.
+8. Open the pull request. Explain what you changed, why it improves the page, how it was checked, and the source or permission for new images.
+9. Respond to review feedback by editing the same proposed change. The teacher reviews and decides what is published.
+
+GitHub documents this workflow in [Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) and [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+
+::: {.callout-tip collapse="true"}
+## Optional: GitHub with a local clone
+
+This route is useful after you have learned branches and commits. It still requires the same permission.
+
+```powershell
+git clone https://github.com/mrandrewandrade/tech-edu-resources.git
+cd tech-edu-resources
+git switch -c student/short-change-name
+quarto preview site
+```
+
+After editing and completing the full render and check:
+
+```powershell
+git status
+git add site/path/to/page.qmd site/assets/path/to/new-image.png
+git commit -m "Explain the focused improvement"
+git push -u origin student/short-change-name
+```
+
+If you do not have write access to the repository, work in an approved fork and open a pull request from that fork.
+:::
+
+## Before you submit
+
+- [ ] I edited the `.qmd` source, not a PDF, Word file or generated HTML file.
+- [ ] My change is focused and technically accurate.
+- [ ] The steps are numbered, complete and easy for another student to test.
+- [ ] Screenshots are readable, tightly cropped and free of personal information.
+- [ ] Images have useful alternative text.
+- [ ] Links use meaningful labels and open the intended source.
+- [ ] I identified the source and permission for material I did not make.
+- [ ] I did not edit or submit the generated `site/_site` folder.
+- [ ] I previewed the page, or clearly told the teacher that it still needs rendering.
+- [ ] I included a short explanation of what changed and why.
+
+## Suggested contribution note
+
+Copy this into your hand-in or pull request and complete it:
+
+```text
+Page improved:
+Files changed:
+Problem I noticed:
+What I changed and why:
+How I tested it:
+New images or sources and their permission/licence:
+Credit preference approved by the teacher:
+```
+
+## How contributions are used
+
+The teacher may correct, shorten, reorganize or combine a contribution before publication. Educational content on this site is shared under [CC BY-SA 4.0](licensing.qmd), and site code is shared under the [AGPL 3.0](licensing.qmd). Published contributions can therefore be studied, adapted and shared under the applicable licence. Credit is discussed before a student's name is published.
