@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Gallery entry example placeholder</title>
+  <desc id="desc">An abstract fabricated geometric object, design grid and electronics traces.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10243e"/>
+      <stop offset="1" stop-color="#243b67"/>
+    </linearGradient>
+    <linearGradient id="object" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#67d2c3"/>
+      <stop offset="1" stop-color="#2c9f9b"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" rx="30" fill="url(#background)"/>
+  <rect width="1200" height="675" rx="30" fill="url(#grid)"/>
+  <g transform="translate(125 125)">
+    <path d="M80 250 250 150l170 100-170 100Z" fill="#8be1d4" opacity="0.32"/>
+    <path d="M80 250v120l170 100V350Z" fill="#207c86"/>
+    <path d="M420 250v120L250 470V350Z" fill="#15556d"/>
+    <path d="M80 250 250 150l170 100-170 100Z" fill="url(#object)"/>
+    <circle cx="250" cy="250" r="58" fill="#10243e" opacity="0.68"/>
+    <circle cx="250" cy="250" r="34" fill="#e8fbf8"/>
+  </g>
+  <g fill="none" stroke="#f4b860" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M660 160h110l45 45h115"/>
+    <path d="M660 250h90l45 45h165"/>
+    <path d="M660 340h140l45-45h115"/>
+  </g>
+  <g fill="#f4b860">
+    <circle cx="660" cy="160" r="14"/><circle cx="930" cy="205" r="14"/>
+    <circle cx="660" cy="250" r="14"/><circle cx="960" cy="295" r="14"/>
+    <circle cx="660" cy="340" r="14"/><circle cx="960" cy="295" r="14"/>
+  </g>
+  <rect x="650" y="405" width="390" height="26" rx="13" fill="#ffffff" opacity="0.78"/>
+  <rect x="650" y="457" width="275" height="18" rx="9" fill="#c9d8eb" opacity="0.62"/>
+  <rect x="650" y="499" width="330" height="18" rx="9" fill="#c9d8eb" opacity="0.42"/>
+</svg>

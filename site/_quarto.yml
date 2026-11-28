@@ -10,6 +10,8 @@ project:
     - "references.qmd"
     - "glossary/**/*.qmd"
     - "lore/**/*.qmd"
+    - "student-builds/index.qmd"
+    - "student-builds/entries/**/*.qmd"
     - "slides/**/*.qmd"
     - "teacher-slides/**/*.qmd"
     - "teaching-materials/index.qmd"
@@ -93,6 +95,7 @@ project:
     - assets/bs-glossary-lookup.json
     - "assets/lore/**"
     - "assets/learning-map/**"
+    - "assets/student-builds/**"
 
 metadata-files:
   - _course-navigation.yml
@@ -141,6 +144,8 @@ website:
         text: Glossary
       - href: lore/index.qmd
         text: Lore
+      - href: student-builds/index.qmd
+        text: Student Builds
       - href: contribute.qmd
         text: Improve This Site
       - href: about.qmd

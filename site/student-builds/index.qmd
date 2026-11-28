@@ -1,0 +1,60 @@
+---
+title: "Student Builds Gallery"
+description: "Anonymous project examples from technological education, filterable by fabrication process, material and design tool."
+body-classes: "bs-learn-article ter-notes-lesson"
+page-layout: full
+toc: true
+toc-depth: 2
+execute: {enabled: false}
+listing:
+  contents: "entries/*.qmd"
+  type: grid
+  grid-columns: 3
+  sort: "title"
+  sort-ui: false
+  filter-ui: [title, description, categories]
+  categories: true
+  page-size: 12
+---
+
+This gallery shares project ideas, processes and learning without publishing current-student identities. Use the search box and category controls to filter entries by processes such as **3D printing**, **laser cutting**, **CNC**, **electronics**, **woodworking** or **CAD and design**.
+
+::: {.callout-important}
+## Anonymous by default
+
+Current-student entries do not include names, initials, usernames, student numbers, school email addresses, class identifiers, faces or location details. Project photos must use the [photo-privacy process](../contribute.qmd#prepare-photos-safely). After graduation, a former student may separately request credit under a chosen public name; it is never added automatically.
+:::
+
+## Add one project
+
+The gallery structure and filters are already built. A contributor only needs to:
+
+1. copy [`_entry-template.qmd`](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/student-builds/_entry-template.qmd) into `site/student-builds/entries/` and give it a short lowercase filename such as `geometric-stamp.qmd`;
+2. add one privacy-cleaned image to `site/assets/student-builds/`, using the same filename stem when practical;
+3. complete the template's title, description, image path, alternative text, categories and short project reflection;
+4. preview the page if possible; and
+5. open a pull request, even if part of the entry still needs help.
+
+If Git becomes confusing or the entry needs more work than expected, submit what you have and explain where you became stuck. The maintainer can review it, repair the integration or help finish it. Email and Google Classroom remain available as private alternatives.
+
+## What each entry contains
+
+| Required item | Purpose |
+|---|---|
+| Project title | Identifies the build without identifying its creator |
+| Project-only photo and alt text | Shows the result accessibly without faces or private details |
+| Process categories | Powers filters such as 3D printing, laser cutting, CNC or electronics |
+| Materials and design tools | Gives useful technical context |
+| Short description | Explains what was made and what problem or purpose guided it |
+| Learning reflection | Records one decision, challenge, test or improvement |
+| Source and permission note | Confirms the contributor created the work or has permission to share it |
+| Privacy and metadata check | Confirms the final image is ready for public publication |
+
+Optional additions include a safe link to original design files, an iteration photo, measured dimensions or a short explanation of how testing changed the design. Do not include confidential machine procedures or settings presented as universal values.
+
+::: {.callout-note}
+## Optional portfolio evidence
+
+Public website contributions are entirely optional and not expected. No bonus marks are awarded. A contributor may later choose to share a GitHub profile or pull request as evidence of writing, design, documentation and collaboration when building a portfolio for employment, apprenticeship, postsecondary study or other opportunities.
+:::
+

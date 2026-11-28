@@ -49,6 +49,14 @@ site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd
 ```
 :::
 
+::: {.callout-tip}
+## Adding a Student Builds entry?
+
+The [Student Builds gallery](student-builds/index.qmd) and its filters are already built. Copy the [gallery entry template](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/student-builds/_entry-template.qmd), add one privacy-cleaned image and complete the short project fields. You do not need to redesign or repair the gallery.
+
+If you become stuck, open the pull request with what you have and explain what remains. The maintainer can review it, repair the integration or help you finish it.
+:::
+
 ## Choose one route
 
 | Route | Account needed? | Best when |
@@ -66,6 +74,32 @@ Use the **GitHub website** for a quick correction to one text file: fix a typo, 
 
 Use a **local clone with Git Bash or WSL** when the contribution adds or renames screenshots, changes several files, needs a complete Quarto preview, or will probably require several rounds of review. The initial setup takes longer, but Git makes larger work easier to inspect, test, correct and update safely.
 :::
+
+## Git and GitHub in plain language
+
+These terms describe different copies or stages of the same work:
+
+| Term | Meaning | What it changes |
+|---|---|---|
+| **Repository** | The project files together with their Git history | The complete website project |
+| **Fork** | Your public GitHub copy of someone else's repository | Creates a separate repository under your GitHub account |
+| **Clone** | A working copy downloaded to your computer | Creates a local folder where you can edit and test files |
+| **Branch** | A named line of work inside a repository | Keeps one focused change separate from the published `master` branch |
+| **Commit** | A saved checkpoint containing the staged changes | Records a change in Git history; it does not upload the change by itself |
+| **Push** | Sending local commits to GitHub | Updates the matching branch in your GitHub fork |
+| **Pull request** | A request to compare, review and merge a branch | Shows the proposed changes to the original repository's maintainer |
+
+The usual path is:
+
+```text
+original repository -> fork on GitHub -> clone on your computer
+                                       -> focused branch
+                                       -> one or more commits
+                                       -> push to GitHub
+                                       -> pull request
+```
+
+A branch can contain several commits. After a pull request is open, new commits pushed to that same branch appear in the same pull request automatically. A pull request is a review conversation, not a claim that the work is already perfect.
 
 ::: {.callout-warning}
 ## Permission, identity and privacy
