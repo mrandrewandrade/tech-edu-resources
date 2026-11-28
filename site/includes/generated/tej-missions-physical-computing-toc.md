@@ -8,7 +8,7 @@
       <input id="tej-missions-physical-computing-lesson-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, topic, or purpose" data-bs-learn-search>
     </div>
     <div class="bs-learn-filter-footer">
-      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 18 lessons.</p>
+      <p class="bs-learn-result-count" data-bs-learn-result-count aria-live="polite">Showing 19 lessons.</p>
       <button type="button" class="bs-learn-clear" data-bs-learn-clear hidden>Clear filters</button>
     </div>
   </div>
@@ -18,9 +18,9 @@
   <button type="button" data-bs-learn-expand-all>Expand all</button>
 </div>
 <div class="bs-learn-catalogue" data-bs-learn-list>
-<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="missions-physical-computing" data-bs-total-lessons="18" open>
+<details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="missions-physical-computing" data-bs-total-lessons="19" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><a href="index.html">10. Missions and Physical Computing</a><span data-bs-learn-group-count>18 lessons</span></span>
+    <span class="bs-learn-track-heading"><a href="index.html">10. Missions and Physical Computing</a><span data-bs-learn-group-count>19 lessons</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Mission Control&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Choose a route, review prerequisites, and use one common evidence and equipment-return contract.&quot;, &quot;A common launch page keeps independent projects organized and makes approval gates visible.&quot;]">
@@ -52,100 +52,107 @@
         <p class="ter-resource-badges"><a class="ter-resource-badge" href="../assets/tej-portfolio/quarto-portfolio-starter.zip">Quarto Course-Site Starter</a></p>
       </details>
     </article>
+    <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Beginner Breadboard and Raspberry Pi LED&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Map a breadboard, calculate LED current, power one protected LED from the Pi&#x27;s fixed 3.3 V rail, and verify the circuit with a meter.&quot;, &quot;This beginner mission gives every pair a visible hardware success before programmable GPIO and external loads.&quot;]">
+      <details class="bs-learn-catalogue-description">
+        <summary aria-label="Show description for Beginner Breadboard and Raspberry Pi LED"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/beginner-breadboard-pi-led.html">5. Beginner Breadboard and Raspberry Pi LED</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <p>Map a breadboard, calculate LED current, power one protected LED from the Pi&#x27;s fixed 3.3 V rail, and verify the circuit with a meter.</p>
+        <p>This beginner mission gives every pair a visible hardware success before programmable GPIO and external loads.</p>
+      </details>
+    </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Raspberry Pi and BeagleBone Platform Setup&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Prepare an offline Linux controller station and complete the software-first platform sequence.&quot;, &quot;Students verify the operating system and program logic before connecting physical inputs or outputs.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Raspberry Pi and BeagleBone Platform Setup"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="platform/index.html">5. Raspberry Pi and BeagleBone Platform Setup</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Raspberry Pi and BeagleBone Platform Setup"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="platform/index.html">6. Raspberry Pi and BeagleBone Platform Setup</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Prepare an offline Linux controller station and complete the software-first platform sequence.</p>
         <p>Students verify the operating system and program logic before connecting physical inputs or outputs.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;GPIO Progression&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Move from a simulated signal to an LED, button, state machine, and safely isolated external load.&quot;, &quot;The progression prevents a pump, motor, relay, or horn from being connected directly to a controller pin.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for GPIO Progression"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="platform/gpio-progression.html">6. GPIO Progression</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for GPIO Progression"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="platform/gpio-progression.html">7. GPIO Progression</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Move from a simulated signal to an LED, button, state machine, and safely isolated external load.</p>
         <p>The progression prevents a pump, motor, relay, or horn from being connected directly to a controller pin.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Reaction Timer&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Build a playable Python and GPIO reaction game and analyze five measured results.&quot;, &quot;The ready-now mission combines an LED, button, timing, lists, calculations, and optional data logging.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Reaction Timer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/reaction-timer.html">7. Reaction Timer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Reaction Timer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/reaction-timer.html">8. Reaction Timer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Build a playable Python and GPIO reaction game and analyze five measured results.</p>
         <p>The ready-now mission combines an LED, button, timing, lists, calculations, and optional data logging.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Water Sensor Warning&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Identify a water sensor, verify its output with a multimeter, and create a safe warning output.&quot;, &quot;This input-first mission prepares students to control a pump without guessing at sensor voltage or signal type.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Water Sensor Warning"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/water-sensor-warning.html">8. Water Sensor Warning</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Water Sensor Warning"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/water-sensor-warning.html">9. Water Sensor Warning</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Identify a water sensor, verify its output with a multimeter, and create a safe warning output.</p>
         <p>This input-first mission prepares students to control a pump without guessing at sensor voltage or signal type.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Water Pump Controller&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Control a low-voltage pump from a separate fused supply through an approved driver and flyback diode.&quot;, &quot;Students combine sensor logic, default-off behaviour, current-limited testing, and a timed safety stop.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Water Pump Controller"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/water-pump-controller.html">9. Water Pump Controller</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Water Pump Controller"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/water-pump-controller.html">10. Water Pump Controller</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Control a low-voltage pump from a separate fused supply through an approved driver and flyback diode.</p>
         <p>Students combine sensor logic, default-off behaviour, current-limited testing, and a timed safety stop.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Low-Voltage DC Motor Controller&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Characterize a classroom low-voltage motor, build one-direction driver control, add PWM, and optionally add safe direction control.&quot;, &quot;A staged motor mission teaches that the controller provides a signal while an external supply provides load power.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Low-Voltage DC Motor Controller"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/dc-motor-controller.html">10. Low-Voltage DC Motor Controller</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Low-Voltage DC Motor Controller"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/dc-motor-controller.html">11. Low-Voltage DC Motor Controller</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Characterize a classroom low-voltage motor, build one-direction driver control, add PWM, and optionally add safe direction control.</p>
         <p>A staged motor mission teaches that the controller provides a signal while an external supply provides load power.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Automatic Night Light&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Use a light sensor and state logic to control an indicator or approved lamp driver.&quot;, &quot;This accessible sensor-to-output mission reinforces thresholds, testing, and clear documentation.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Automatic Night Light"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/automatic-night-light.html">11. Automatic Night Light</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Automatic Night Light"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/automatic-night-light.html">12. Automatic Night Light</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use a light sensor and state logic to control an indicator or approved lamp driver.</p>
         <p>This accessible sensor-to-output mission reinforces thresholds, testing, and clear documentation.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;BeagleBone Traffic Light&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Build and program a timed traffic-light state machine.&quot;, &quot;The mission connects GPIO, sequencing, diagrams, timing, and Python in a visible system.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for BeagleBone Traffic Light"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/beaglebone-traffic-light.html">12. BeagleBone Traffic Light</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for BeagleBone Traffic Light"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/beaglebone-traffic-light.html">13. BeagleBone Traffic Light</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Build and program a timed traffic-light state machine.</p>
         <p>The mission connects GPIO, sequencing, diagrams, timing, and Python in a visible system.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Linux Alarm&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Use Linux and Python to monitor an input and produce a controlled alarm response.&quot;, &quot;The project brings the earlier operating-system work into a physical-computing context.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Linux Alarm"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/linux-alarm.html">13. Linux Alarm</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Linux Alarm"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/linux-alarm.html">14. Linux Alarm</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use Linux and Python to monitor an input and produce a controlled alarm response.</p>
         <p>The project brings the earlier operating-system work into a physical-computing context.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Capacitor Sound Demonstration&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Connect stored charge and RC timing to a buzzer or sound demonstration.&quot;, &quot;This mission provides a physical bridge from capacitor graphs and time constants to an observable output.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Capacitor Sound Demonstration"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/capacitor-sound-demo.html">14. Capacitor Sound Demonstration</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Capacitor Sound Demonstration"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/capacitor-sound-demo.html">15. Capacitor Sound Demonstration</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Connect stored charge and RC timing to a buzzer or sound demonstration.</p>
         <p>This mission provides a physical bridge from capacitor graphs and time constants to an observable output.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;LED Strip Controller&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Verify a classroom LED strip, control one channel through a protected driver, and add PWM colour control.&quot;, &quot;The mission applies external-load power, transistor or MOSFET switching, PWM, current measurement, and power calculations.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for LED Strip Controller"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/led-strip-controller.html">15. LED Strip Controller</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for LED Strip Controller"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/led-strip-controller.html">16. LED Strip Controller</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Verify a classroom LED strip, control one channel through a protected driver, and add PWM colour control.</p>
         <p>The mission applies external-load power, transistor or MOSFET switching, PWM, current measurement, and power calculations.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Automotive Relay Trainer&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Use an automotive relay to separate a low-current control circuit from a fused 12 V load circuit.&quot;, &quot;The trainer connects relay terminal numbers, multimeter testing, KCL, KVL, and future horn control.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Automotive Relay Trainer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/automotive-relay-trainer.html">16. Automotive Relay Trainer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Automotive Relay Trainer"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/automotive-relay-trainer.html">17. Automotive Relay Trainer</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Use an automotive relay to separate a low-current control circuit from a fused 12 V load circuit.</p>
         <p>The trainer connects relay terminal numbers, multimeter testing, KCL, KVL, and future horn control.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Salvage Machine Detective&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Trace an unknown salvaged mechanism while it is unpowered and reconstruct its connectors and functional blocks.&quot;, &quot;Students use photographs, continuity, resistance, evidence, and safe-test planning to turn the parts bins into usable inventory.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Salvage Machine Detective"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/salvage-machine-detective.html">17. Salvage Machine Detective</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Salvage Machine Detective"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/salvage-machine-detective.html">18. Salvage Machine Detective</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Trace an unknown salvaged mechanism while it is unpowered and reconstruct its connectors and functional blocks.</p>
         <p>Students use photographs, continuity, resistance, evidence, and safe-test planning to turn the parts bins into usable inventory.</p>
       </details>
     </article>
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="missions-physical-computing" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Student-Choice Mission&quot;, &quot;Missions and Physical Computing&quot;]" data-bs-search-body="[&quot;Propose a project using the same approval, safety, evidence, checkout, and return requirements.&quot;, &quot;Students can pursue an interest without skipping the engineering process or electrical safety gates.&quot;]">
       <details class="bs-learn-catalogue-description">
-        <summary aria-label="Show description for Student-Choice Mission"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/student-choice-project.html">18. Student-Choice Mission</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
+        <summary aria-label="Show description for Student-Choice Mission"><span class="bs-learn-catalogue-title-row"><a class="bs-learn-catalogue-link" href="projects/student-choice-project.html">19. Student-Choice Mission</a><span class="bs-learn-description-arrow" aria-hidden="true">▾</span></span></summary>
         <p>Propose a project using the same approval, safety, evidence, checkout, and return requirements.</p>
         <p>Students can pursue an interest without skipping the engineering process or electrical safety gates.</p>
       </details>

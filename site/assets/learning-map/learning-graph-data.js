@@ -1714,6 +1714,21 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "sequence_index": 91
     },
     {
+      "id": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
+      "kind": "lesson",
+      "title": "Beginner Breadboard and Raspberry Pi LED",
+      "summary": "Map a breadboard, calculate LED current, power one protected LED from the Pi's fixed 3.3 V rail, and verify the circuit with a meter.",
+      "href": "../tej3-4/capstone/projects/beginner-breadboard-pi-led.html",
+      "source": "tej3-4/capstone/projects/beginner-breadboard-pi-led.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 5,
+      "sequence_index": 92
+    },
+    {
       "id": "lesson-tej3-4-capstone-platform-index-qmd",
       "kind": "lesson",
       "title": "Raspberry Pi and BeagleBone Platform Setup",
@@ -1725,8 +1740,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 5,
-      "sequence_index": 92
+      "order": 6,
+      "sequence_index": 93
     },
     {
       "id": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
@@ -1740,8 +1755,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 6,
-      "sequence_index": 93
+      "order": 7,
+      "sequence_index": 94
     },
     {
       "id": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
@@ -1756,8 +1771,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
         "circuits",
         "programming"
       ],
-      "order": 7,
-      "sequence_index": 94
+      "order": 8,
+      "sequence_index": 95
     },
     {
       "id": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
@@ -1771,8 +1786,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 8,
-      "sequence_index": 95
+      "order": 9,
+      "sequence_index": 96
     },
     {
       "id": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
@@ -1786,8 +1801,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 9,
-      "sequence_index": 96
+      "order": 10,
+      "sequence_index": 97
     },
     {
       "id": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
@@ -1801,8 +1816,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 10,
-      "sequence_index": 97
+      "order": 11,
+      "sequence_index": 98
     },
     {
       "id": "lesson-tej3-4-capstone-projects-automatic-night-light-qmd",
@@ -1816,8 +1831,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 11,
-      "sequence_index": 98
+      "order": 12,
+      "sequence_index": 99
     },
     {
       "id": "lesson-tej3-4-capstone-projects-beaglebone-traffic-light-qmd",
@@ -1831,8 +1846,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 12,
-      "sequence_index": 99
+      "order": 13,
+      "sequence_index": 100
     },
     {
       "id": "lesson-tej3-4-capstone-projects-linux-alarm-qmd",
@@ -1846,8 +1861,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 13,
-      "sequence_index": 100
+      "order": 14,
+      "sequence_index": 101
     },
     {
       "id": "lesson-tej3-4-capstone-projects-capacitor-sound-demo-qmd",
@@ -1861,8 +1876,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 14,
-      "sequence_index": 101
+      "order": 15,
+      "sequence_index": 102
     },
     {
       "id": "lesson-tej3-4-capstone-projects-led-strip-controller-qmd",
@@ -1877,8 +1892,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
         "circuits",
         "programming"
       ],
-      "order": 15,
-      "sequence_index": 102
+      "order": 16,
+      "sequence_index": 103
     },
     {
       "id": "lesson-tej3-4-capstone-projects-automotive-relay-trainer-qmd",
@@ -1892,8 +1907,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 16,
-      "sequence_index": 103
+      "order": 17,
+      "sequence_index": 104
     },
     {
       "id": "lesson-tej3-4-capstone-projects-salvage-machine-detective-qmd",
@@ -1907,8 +1922,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 17,
-      "sequence_index": 104
+      "order": 18,
+      "sequence_index": 105
     },
     {
       "id": "lesson-tej3-4-capstone-projects-student-choice-project-qmd",
@@ -1922,8 +1937,8 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
       "strands": [
         "circuits"
       ],
-      "order": 18,
-      "sequence_index": 105
+      "order": 19,
+      "sequence_index": 106
     }
   ],
   "edges": [
@@ -2475,6 +2490,11 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
     {
       "from": "track-tej-missions-physical-computing",
       "to": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
       "type": "contains"
     },
     {
@@ -3319,6 +3339,11 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
     },
     {
       "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
       "to": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
       "type": "related"
     },
@@ -3459,6 +3484,11 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
     },
     {
       "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
       "to": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
       "type": "related"
     },
@@ -3514,12 +3544,27 @@ window.TECHNOLOGY_COMMONS_LEARNING_GRAPH = {
     },
     {
       "from": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
-      "to": "lesson-tej3-4-capstone-platform-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
       "type": "sequence"
     },
     {
       "from": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
       "to": "lesson-tej3-4-linux-operating-systems-quarto-website-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
+      "to": "lesson-tej3-4-capstone-platform-index-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
+      "to": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-beginner-breadboard-pi-led-qmd",
+      "to": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
       "type": "related"
     },
     {

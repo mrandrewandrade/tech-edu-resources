@@ -13,10 +13,11 @@ Use this page to choose work that fits your interests and the equipment that is 
 
 ## Finish-strong pathway
 
-1. [Make your first Git checkpoint](projects/git-first-save.qmd).
-2. [Open the Quarto starter and build your course website](projects/quarto-course-site.qmd).
-3. Choose one achievable mission from the [Mission Bank](mission-bank.qmd).
-4. Add the result to the website and make one more Git commit.
+1. Start with the [Breadboard and Raspberry Pi LED beginner mission](projects/beginner-breadboard-pi-led.qmd).
+2. [Make your first Git checkpoint](projects/git-first-save.qmd).
+3. [Open the Quarto starter and build your course website](projects/quarto-course-site.qmd).
+4. Choose one achievable mission from the [Mission Bank](mission-bank.qmd).
+5. Add the result to the website and make one more Git commit.
 
 Git works locally without Wi-Fi. Public publishing is optional.
 
@@ -41,7 +42,7 @@ Start, inspect, and shut down the computer correctly. Use the terminal, open and
 
 Map the breadboard, measure resistance and voltage, build the approved LED and pushbutton circuit, and verify one KVL calculation.
 
-[Open the hands-on circuit stations](../circuits/hands-on-circuit-stations.qmd)
+[Start the beginner breadboard and Raspberry Pi LED mission](projects/beginner-breadboard-pi-led.qmd)
 :::
 
 ::: {.g-col-12 .g-col-md-4}

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Raspberry Pi powered breadboard LED</title>
+  <desc id="desc">Raspberry Pi physical pin 1 supplies 3.3 volts to a red breadboard rail. A 330 ohm resistor and red LED connect in series to the ground rail, which returns to physical pin 6.</desc>
+  <defs>
+    <style>
+      .wire{fill:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .black{stroke:#171717}.red{stroke:#c62828}.blue{stroke:#1565c0}
+      .box{fill:#fff;stroke:#202020;stroke-width:4}
+      .board{fill:#f8fafc;stroke:#202020;stroke-width:4}
+      .hole{fill:#fff;stroke:#64748b;stroke-width:2}
+      .h{font:700 28px Arial,sans-serif;fill:#111827}
+      .t{font:22px Arial,sans-serif;fill:#111827}
+      .s{font:18px Arial,sans-serif;fill:#374151}
+      .pin{font:700 18px Arial,sans-serif;fill:#111827}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#fff"/>
+  <text x="600" y="42" text-anchor="middle" class="h">First powered circuit: fixed 3.3 V rail, resistor, LED, ground</text>
+
+  <rect x="35" y="92" width="275" height="320" rx="18" class="box"/>
+  <text x="172" y="130" text-anchor="middle" class="h">Raspberry Pi 4</text>
+  <text x="172" y="162" text-anchor="middle" class="s">Power off while wiring</text>
+  <rect x="90" y="195" width="165" height="145" rx="10" fill="#e5e7eb" stroke="#202020" stroke-width="3"/>
+  <circle cx="125" cy="230" r="13" fill="#c62828"/><text x="165" y="210" class="pin">Pin 1  3V3</text>
+  <circle cx="125" cy="298" r="13" fill="#171717"/><text x="165" y="330" class="pin">Pin 6  GND</text>
+  <text x="172" y="380" text-anchor="middle" class="s">Use physical pin numbers</text>
+
+  <rect x="390" y="92" width="765" height="320" rx="18" class="board"/>
+  <text x="772" y="130" text-anchor="middle" class="h">Breadboard</text>
+  <line x1="445" y1="185" x2="1095" y2="185" class="wire red"/>
+  <line x1="445" y1="345" x2="1095" y2="345" class="wire blue"/>
+  <text x="465" y="170" class="pin">+ 3.3 V rail</text>
+  <text x="465" y="380" class="pin">0 V rail</text>
+  <g>
+    <circle cx="520" cy="255" r="8" class="hole"/><circle cx="560" cy="255" r="8" class="hole"/><circle cx="600" cy="255" r="8" class="hole"/>
+    <circle cx="810" cy="255" r="8" class="hole"/><circle cx="850" cy="255" r="8" class="hole"/><circle cx="890" cy="255" r="8" class="hole"/>
+  </g>
+
+  <path d="M125 230H350V185H445" class="wire red"/>
+  <path d="M125 298H335V345H445" class="wire black"/>
+
+  <path d="M520 185V225" class="wire red"/>
+  <path d="M520 225H565L580 205L610 245L640 205L670 245L700 205L715 225H760V255" class="wire black"/>
+  <text x="620" y="310" text-anchor="middle" class="h">330 Ω series resistor</text>
+
+  <path d="M760 255H820" class="wire black"/>
+  <path d="M820 215V295L895 255Z" fill="#fff" stroke="#202020" stroke-width="5"/>
+  <path d="M895 210V300" class="wire black"/>
+  <path d="M895 255H970V345" class="wire black"/>
+  <path d="M842 196L875 163M870 196L903 163" class="wire red" marker-end="url(#arrow)"/>
+  <text x="965" y="145" text-anchor="middle" class="h">Red LED</text>
+  <text x="805" y="330" text-anchor="middle" class="s">anode</text>
+  <text x="930" y="330" text-anchor="middle" class="s">cathode</text>
+
+  <path d="M520 450H970" class="wire black" marker-end="url(#arrow)"/>
+  <text x="745" y="488" text-anchor="middle" class="t">Conventional current: 3.3 V → resistor → LED → ground</text>
+</svg>

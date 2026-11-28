@@ -15,6 +15,7 @@ readiness_levels:
   ready: {label: Ready, css_class: ready, teacher_gate: false}
   simulation_first: {label: Simulation first, css_class: ready, teacher_gate: false}
   power_off: {label: Power-off ready, css_class: ready, teacher_gate: false}
+  teacher_check: {label: Teacher check, css_class: check, teacher_gate: true}
   input_check: {label: Input check, css_class: check, teacher_gate: true}
   driver_check: {label: Driver check, css_class: check, teacher_gate: true}
   part_check: {label: Part check, css_class: check, teacher_gate: true}
@@ -120,6 +121,21 @@ missions:
     equipment: [Ethernet cable, connectors, crimper, cable tester]
     prerequisites: []
     learns: [T568B, termination, inspection, continuity testing]
+    pilot: true
+
+  - id: beginner-breadboard-pi-led
+    order: 9
+    title: Breadboard and Raspberry Pi LED
+    href: tej3-4/capstone/projects/beginner-breadboard-pi-led.qmd
+    region: signal-station
+    group: Circuit foundations
+    readiness: teacher_check
+    effort: 2
+    stats: {circuits: 4, coding: 1, measurement: 4, building: 3, troubleshooting: 3}
+    summary: Map a breadboard, calculate a safe LED current, power it from the Pi's fixed 3.3 V rail, and verify it with a meter.
+    equipment: [Raspberry Pi 4, breadboard, red LED, 330 ohm resistor, jumpers, multimeter]
+    prerequisites: []
+    learns: [breadboard connections, continuity, LED polarity, current limiting, voltage measurement, safe shutdown]
     pilot: true
 
   - id: breadboard-map

@@ -2579,7 +2579,7 @@
       "track_summary": "Choose a mission, sign out a complete equipment bin, simulate or verify each stage, then build and document a safe working system.",
       "track_use": "The mission structure lets TEJ and Transportation students share core circuit skills while choosing different sensors, loads, controllers, and extensions.",
       "previous_route": "/commons/tej3-4/capstone/projects/git-first-save.html",
-      "next_route": "/commons/tej3-4/capstone/platform/index.html",
+      "next_route": "/commons/tej3-4/capstone/projects/beginner-breadboard-pi-led.html",
       "next_starts_new_track": false,
       "sequence_index": 91
     },
@@ -2589,6 +2589,29 @@
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
       "lesson_order": 5,
+      "route": "/commons/tej3-4/capstone/projects/beginner-breadboard-pi-led.html",
+      "source": "tej3-4/capstone/projects/beginner-breadboard-pi-led.qmd",
+      "title": "Beginner Breadboard and Raspberry Pi LED",
+      "summary": "Map a breadboard, calculate LED current, power one protected LED from the Pi's fixed 3.3 V rail, and verify the circuit with a meter.",
+      "use": "This beginner mission gives every pair a visible hardware success before programmable GPIO and external loads.",
+      "resources": [],
+      "track_id": "missions-physical-computing",
+      "track_order": 10,
+      "track_title": "Missions and Physical Computing",
+      "track_hub": "tej3-4/capstone/index.qmd",
+      "track_summary": "Choose a mission, sign out a complete equipment bin, simulate or verify each stage, then build and document a safe working system.",
+      "track_use": "The mission structure lets TEJ and Transportation students share core circuit skills while choosing different sensors, loads, controllers, and extensions.",
+      "previous_route": "/commons/tej3-4/capstone/projects/quarto-course-site.html",
+      "next_route": "/commons/tej3-4/capstone/platform/index.html",
+      "next_starts_new_track": false,
+      "sequence_index": 92
+    },
+    {
+      "course_id": "tej",
+      "course_title": "TEJ3/4 Computer Engineering",
+      "course_hub": "/commons/tej3-4/index.html",
+      "sidebar_id": "tej",
+      "lesson_order": 6,
       "route": "/commons/tej3-4/capstone/platform/index.html",
       "source": "tej3-4/capstone/platform/index.qmd",
       "title": "Raspberry Pi and BeagleBone Platform Setup",
@@ -2601,17 +2624,17 @@
       "track_hub": "tej3-4/capstone/index.qmd",
       "track_summary": "Choose a mission, sign out a complete equipment bin, simulate or verify each stage, then build and document a safe working system.",
       "track_use": "The mission structure lets TEJ and Transportation students share core circuit skills while choosing different sensors, loads, controllers, and extensions.",
-      "previous_route": "/commons/tej3-4/capstone/projects/quarto-course-site.html",
+      "previous_route": "/commons/tej3-4/capstone/projects/beginner-breadboard-pi-led.html",
       "next_route": "/commons/tej3-4/capstone/platform/gpio-progression.html",
       "next_starts_new_track": false,
-      "sequence_index": 92
+      "sequence_index": 93
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 6,
+      "lesson_order": 7,
       "route": "/commons/tej3-4/capstone/platform/gpio-progression.html",
       "source": "tej3-4/capstone/platform/gpio-progression.qmd",
       "title": "GPIO Progression",
@@ -2627,14 +2650,14 @@
       "previous_route": "/commons/tej3-4/capstone/platform/index.html",
       "next_route": "/commons/tej3-4/capstone/projects/reaction-timer.html",
       "next_starts_new_track": false,
-      "sequence_index": 93
+      "sequence_index": 94
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 7,
+      "lesson_order": 8,
       "route": "/commons/tej3-4/capstone/projects/reaction-timer.html",
       "source": "tej3-4/capstone/projects/reaction-timer.qmd",
       "title": "Reaction Timer",
@@ -2650,14 +2673,14 @@
       "previous_route": "/commons/tej3-4/capstone/platform/gpio-progression.html",
       "next_route": "/commons/tej3-4/capstone/projects/water-sensor-warning.html",
       "next_starts_new_track": false,
-      "sequence_index": 94
+      "sequence_index": 95
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 8,
+      "lesson_order": 9,
       "route": "/commons/tej3-4/capstone/projects/water-sensor-warning.html",
       "source": "tej3-4/capstone/projects/water-sensor-warning.qmd",
       "title": "Water Sensor Warning",
@@ -2673,14 +2696,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/reaction-timer.html",
       "next_route": "/commons/tej3-4/capstone/projects/water-pump-controller.html",
       "next_starts_new_track": false,
-      "sequence_index": 95
+      "sequence_index": 96
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 9,
+      "lesson_order": 10,
       "route": "/commons/tej3-4/capstone/projects/water-pump-controller.html",
       "source": "tej3-4/capstone/projects/water-pump-controller.qmd",
       "title": "Water Pump Controller",
@@ -2696,14 +2719,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/water-sensor-warning.html",
       "next_route": "/commons/tej3-4/capstone/projects/dc-motor-controller.html",
       "next_starts_new_track": false,
-      "sequence_index": 96
+      "sequence_index": 97
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 10,
+      "lesson_order": 11,
       "route": "/commons/tej3-4/capstone/projects/dc-motor-controller.html",
       "source": "tej3-4/capstone/projects/dc-motor-controller.qmd",
       "title": "Low-Voltage DC Motor Controller",
@@ -2719,14 +2742,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/water-pump-controller.html",
       "next_route": "/commons/tej3-4/capstone/projects/automatic-night-light.html",
       "next_starts_new_track": false,
-      "sequence_index": 97
+      "sequence_index": 98
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 11,
+      "lesson_order": 12,
       "route": "/commons/tej3-4/capstone/projects/automatic-night-light.html",
       "source": "tej3-4/capstone/projects/automatic-night-light.qmd",
       "title": "Automatic Night Light",
@@ -2742,14 +2765,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/dc-motor-controller.html",
       "next_route": "/commons/tej3-4/capstone/projects/beaglebone-traffic-light.html",
       "next_starts_new_track": false,
-      "sequence_index": 98
+      "sequence_index": 99
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 12,
+      "lesson_order": 13,
       "route": "/commons/tej3-4/capstone/projects/beaglebone-traffic-light.html",
       "source": "tej3-4/capstone/projects/beaglebone-traffic-light.qmd",
       "title": "BeagleBone Traffic Light",
@@ -2765,14 +2788,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/automatic-night-light.html",
       "next_route": "/commons/tej3-4/capstone/projects/linux-alarm.html",
       "next_starts_new_track": false,
-      "sequence_index": 99
+      "sequence_index": 100
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 13,
+      "lesson_order": 14,
       "route": "/commons/tej3-4/capstone/projects/linux-alarm.html",
       "source": "tej3-4/capstone/projects/linux-alarm.qmd",
       "title": "Linux Alarm",
@@ -2788,14 +2811,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/beaglebone-traffic-light.html",
       "next_route": "/commons/tej3-4/capstone/projects/capacitor-sound-demo.html",
       "next_starts_new_track": false,
-      "sequence_index": 100
+      "sequence_index": 101
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 14,
+      "lesson_order": 15,
       "route": "/commons/tej3-4/capstone/projects/capacitor-sound-demo.html",
       "source": "tej3-4/capstone/projects/capacitor-sound-demo.qmd",
       "title": "Capacitor Sound Demonstration",
@@ -2811,14 +2834,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/linux-alarm.html",
       "next_route": "/commons/tej3-4/capstone/projects/led-strip-controller.html",
       "next_starts_new_track": false,
-      "sequence_index": 101
+      "sequence_index": 102
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 15,
+      "lesson_order": 16,
       "route": "/commons/tej3-4/capstone/projects/led-strip-controller.html",
       "source": "tej3-4/capstone/projects/led-strip-controller.qmd",
       "title": "LED Strip Controller",
@@ -2834,14 +2857,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/capacitor-sound-demo.html",
       "next_route": "/commons/tej3-4/capstone/projects/automotive-relay-trainer.html",
       "next_starts_new_track": false,
-      "sequence_index": 102
+      "sequence_index": 103
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 16,
+      "lesson_order": 17,
       "route": "/commons/tej3-4/capstone/projects/automotive-relay-trainer.html",
       "source": "tej3-4/capstone/projects/automotive-relay-trainer.qmd",
       "title": "Automotive Relay Trainer",
@@ -2857,14 +2880,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/led-strip-controller.html",
       "next_route": "/commons/tej3-4/capstone/projects/salvage-machine-detective.html",
       "next_starts_new_track": false,
-      "sequence_index": 103
+      "sequence_index": 104
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 17,
+      "lesson_order": 18,
       "route": "/commons/tej3-4/capstone/projects/salvage-machine-detective.html",
       "source": "tej3-4/capstone/projects/salvage-machine-detective.qmd",
       "title": "Salvage Machine Detective",
@@ -2880,14 +2903,14 @@
       "previous_route": "/commons/tej3-4/capstone/projects/automotive-relay-trainer.html",
       "next_route": "/commons/tej3-4/capstone/projects/student-choice-project.html",
       "next_starts_new_track": false,
-      "sequence_index": 104
+      "sequence_index": 105
     },
     {
       "course_id": "tej",
       "course_title": "TEJ3/4 Computer Engineering",
       "course_hub": "/commons/tej3-4/index.html",
       "sidebar_id": "tej",
-      "lesson_order": 18,
+      "lesson_order": 19,
       "route": "/commons/tej3-4/capstone/projects/student-choice-project.html",
       "source": "tej3-4/capstone/projects/student-choice-project.qmd",
       "title": "Student-Choice Mission",
@@ -2903,7 +2926,7 @@
       "previous_route": "/commons/tej3-4/capstone/projects/salvage-machine-detective.html",
       "next_route": null,
       "next_starts_new_track": false,
-      "sequence_index": 105
+      "sequence_index": 106
     }
   ]
 }
