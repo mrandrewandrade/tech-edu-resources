@@ -41,7 +41,7 @@ The screenshots show the Bambu Studio interface used when the student guide was 
 ## Step 1: Create a project and import the model
 
 1. Open Bambu Studio and select **New Project**.
-2. Select **Add** (**1**—the cube icon with a `+` sign) or drag your model file onto the build plate.
+2. Select **Add** (**1**, the cube icon with a `+` sign) or drag your model file onto the build plate.
 3. If an import message asks about units, choose the units used when the model was exported.
 4. Select the model and read its displayed size (`X × Y × Z` in `mm`) in the bottom-right **Object size** box (**2**). Compare it with the dimensions recorded in CAD.
 5. Save the working project as `lastname-project-name.3mf`. A 3MF project preserves the plate layout and slicing choices; the original model file remains your geometry source.
@@ -53,7 +53,7 @@ The screenshots show the Bambu Studio interface used when the student guide was 
 ::: {.callout-warning}
 ## Stop if the size is wrong
 
-A model that is about **25.4 times too large or too small** probably has an inch-to-millimetre mismatch, or may be accidentally microscopic or larger than the build plate. Check the bottom-right size readout and edge/error status before scaling—do not guess by dragging a scale handle. Check the CAD export units or ask your teacher before scaling.
+A model that is about **25.4 times too large or too small** probably has an inch-to-millimetre mismatch, or may be accidentally microscopic or larger than the build plate. Check the bottom-right size readout and edge/error status before scaling; do not guess by dragging a scale handle. Check the CAD export units or ask your teacher before scaling.
 :::
 
 ## Step 2: Match the physical printer setup
