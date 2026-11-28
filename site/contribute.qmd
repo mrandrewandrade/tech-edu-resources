@@ -17,7 +17,7 @@ This website is built from editable **Quarto Markdown** files. Their filename ex
 | **Graduate / former student** | Anonymous by default; may separately request credit under a chosen public name | Route B for a quick correction or Route C for several files and images |
 | **Teacher or other adult contributor** | May contribute under their own chosen public identity | Route B for a quick correction or Route C for larger work |
 
-Public website contributions are entirely optional. They are not assigned or expected and do not earn marks or bonus marks. No current student is required to create a GitHub account, publish a pull request or attach a public identity to an improvement.
+Public website contributions are entirely optional. **No bonus marks are awarded for contributing.** No current student is required to create a GitHub account, publish a pull request or attach a public identity to an improvement.
 
 ### Current students
 
@@ -325,17 +325,51 @@ Capture the terminal after `git status --short`, the GitHub **Files changed** ta
 
 A project photo can contain information that is not visible in the picture, including GPS location, capture time, camera or phone details and an owner's name. It can also reveal information in the background. Work from a copy and keep the original private.
 
-Before submitting a photo:
+Before submitting a photo on any device, crop out faces, names, badges, student work belonging to other people, screens, street signs, house numbers, school identifiers and location clues. Then use the instructions for your device.
 
-1. Crop out faces, names, badges, student work belonging to other people, screens, street signs, house numbers, school identifiers and location clues.
-2. In Windows File Explorer, right-click the copied image and select **Properties**.
-3. Open **Details**, then select **Remove Properties and Personal Information**.
-4. Choose **Create a copy with all possible properties removed**, select **OK**, and use the new copy.
-5. Reopen **Properties > Details** on the new file. Confirm that it does not show GPS coordinates, an author or owner, camera or phone identifiers, or other personal details.
+### Windows
 
-### Screenshot alternative
+1. In File Explorer, right-click the copied image and select **Properties**.
+2. Open **Details**, then select **Remove Properties and Personal Information**.
+3. Choose **Create a copy with all possible properties removed**, select **OK**, and use the new copy.
+4. Reopen **Properties > Details** on the new file. Confirm that it does not show GPS coordinates, an author or owner, camera or phone identifiers, or other personal details.
 
-If removing properties is confusing, open the cropped photo on screen and press **Windows + Shift + S**. Select only the project, save the result as a new image and submit that screenshot instead of the original camera file. A screenshot normally does not carry the original photo's camera and GPS EXIF data, but it can still contain basic information of its own. Check **Properties > Details** and inspect the visible background before sharing it.
+If that option is unavailable, open the cropped photo and press **Windows + Shift + S**. Select only the project and save the screenshot as a new file.
+
+### macOS
+
+1. In Photos, select the copied image and choose **Image > Location > Hide Location**.
+2. In **Photos > Settings > General**, turn off **Include location information** before sharing or exporting.
+3. For a fresh image that does not reuse the original camera file, open the cropped photo and press **Shift + Command + 4**.
+4. Drag around only the project and use the resulting screenshot.
+
+See Apple's instructions for [managing photo location metadata](https://support.apple.com/en-ie/guide/personal-safety/ips0d7a5df82/web) and [capturing part of the screen](https://support.apple.com/en-ae/102646).
+
+### Linux
+
+If [ExifTool](https://exiftool.org/) is installed, open a terminal in the image folder and create a separate cleaned copy:
+
+```bash
+exiftool -all= -o project-photo-clean.jpg project-photo-original.jpg
+exiftool -a -G1 -s project-photo-clean.jpg
+```
+
+Use ordinary `.jpg` or `.png` project photos, not RAW camera files. Read the second command's output and confirm that it does not show GPS, owner, author, camera serial number or other personal fields. Open the cleaned image afterward to confirm its colours and orientation still look correct. ExifTool documents both [`-all=` metadata removal and separate output files](https://exiftool.org/exiftool_pod2.html).
+
+If ExifTool is unavailable, open the cropped photo and use the desktop's screenshot tool or **Print Screen** to capture only the project into a new file.
+
+### Chromebook
+
+1. Open the cropped photo large enough to inspect it clearly.
+2. Press **Shift + Ctrl + Show windows**. On an external keyboard without a Show windows key, press **Ctrl + Shift + F5**.
+3. Choose **Partial screenshot** and capture only the project.
+4. Use the new screenshot from **Downloads**, not the original camera file.
+
+Google documents these controls in [Take a screenshot or record your screen](https://support.google.com/chromebook/answer/10474268).
+
+### Check every cleaned image
+
+A screenshot normally does not carry the original photo's camera and GPS EXIF data, but it can contain basic information of its own and may capture notifications, account names or other screen content. Open the final file, inspect every visible area and use any metadata-inspection tools available on the device. Submit the cleaned copy or screenshot, never the original camera file.
 
 Email and Google Classroom provide a private submission route, but they do not make a photo automatically safe for public publication. Tell the teacher if identifying details remain so the image can be edited or kept private.
 
