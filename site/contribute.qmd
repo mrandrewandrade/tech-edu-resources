@@ -1,6 +1,6 @@
 ---
-title: "Improve This Website | Student Contribution Guide"
-description: "Edit a Quarto source file, preview the website locally, and propose a focused change through GitHub in a browser, Git Bash or WSL with the required permission."
+title: "Improve This Website | Contribution Guide"
+description: "Optional contribution routes for current students, graduates, teachers and community contributors, including private submission, GitHub, photo privacy and local preview instructions."
 body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
 toc-depth: 3
@@ -8,6 +8,28 @@ execute: {enabled: false}
 ---
 
 This website is built from editable **Quarto Markdown** files. Their filename extension is `.qmd`, not `.pdf`, `.html` or `.qml`. A PDF can show an idea, but it is not the file used to maintain this website.
+
+## Who this guide is for
+
+| Contributor | Public identity | Recommended starting route |
+|---|---|---|
+| **Current student** | Anonymous on the finished site; do not include a name, initials, username, student number, school email or class identifier | Email Mr. Andrade or submit files privately through Google Classroom using Route A |
+| **Graduate / former student** | Anonymous by default; may separately request credit under a chosen public name | Route B for a quick correction or Route C for several files and images |
+| **Teacher or other adult contributor** | May contribute under their own chosen public identity | Route B for a quick correction or Route C for larger work |
+
+Public website contributions are entirely optional. They are not assigned or expected and do not earn marks or bonus marks. No current student is required to create a GitHub account, publish a pull request or attach a public identity to an improvement.
+
+### Current students
+
+Use the private route unless a public GitHub contribution has been specifically approved. Email a suggestion to Mr. Andrade or submit the edited source and images through Google Classroom. The quality of the idea matters, not whether it was submitted publicly. Published student work is anonymized.
+
+### Graduates and former students
+
+Use the private route, the GitHub website or a local Git workflow. Contributions remain anonymous unless the former student separately asks for credit under a chosen public name and the applicable requirements are satisfied. The site never publishes a student number or automatically converts an old classroom identity into public credit.
+
+### Teachers and other contributors
+
+Use any route that fits the size of the change. Public pull requests may use the contributor's own chosen identity. Do not include student information, confidential school or board material, copyrighted content without permission, or photos of identifiable people. Include sources, licences and verification notes with the contribution.
 
 ::: {.callout-important}
 ## What to submit
@@ -31,11 +53,11 @@ site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd
 
 | Route | Account needed? | Best when |
 |---|---:|---|
-| **A. Edit locally** | No | You want to use a text editor and give the files to your teacher. |
+| **A. Edit locally and submit privately** | No | You want to use a text editor and email the files to the maintainer or submit them through Google Classroom. |
 | **B. Edit with GitHub in a browser** | Yes | You want the shortest route to one small text change. |
 | **C. Use Git from a local clone** | Yes | You are changing several files, adding screenshots or responding to review feedback. |
 
-All three routes edit the same `.qmd` source. GitHub is a way to share and review the change; it is not required to write the page.
+All three routes edit the same `.qmd` source. GitHub is a way to share and review the change; it is not required to write the page or suggest an improvement.
 
 ::: {.callout-tip}
 ## Quick edit or larger contribution?
@@ -46,24 +68,24 @@ Use a **local clone with Git Bash or WSL** when the contribution adds or renames
 :::
 
 ::: {.callout-warning}
-## Permission and privacy
+## Permission, identity and privacy
 
 For this class, **do not create or use a GitHub account without parent/guardian permission and teacher or school-board approval**. The local route works without a GitHub account.
 
 GitHub's Terms require users to be at least 13 years old, and a higher minimum age may apply under local law. Meeting an age minimum does not replace the permission required for this class. Read the [current GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-age-and-account-requirements).
 
-Never publish your student number, timetable, school account details, private email, location, faces, full legal name or another person's personal information. Ask before including anyone's name or image. A first name and last initial may be used for credit only when the student chooses that credit and the required school consent process is complete.
+Never publish a student name, initials, username, student number, timetable, school account details, school email, class identifier, location, face or another person's personal information. Student numbers are never published, including after graduation. Project examples are anonymous by default while the creator is a student.
 
-A pull request is public and displays the contributor's GitHub username and activity. Make a pull request only if you want that public record and all required permissions are in place. A credit line on the finished website is a separate, optional choice. Declining public credit does not affect the contribution or its evaluation.
+A pull request is public and displays the contributor's GitHub username and activity. Make a pull request only if you want that public record and all required permissions are in place. The finished website does not repeat or add a current student's identity. After graduation, a former student may separately request credit under a chosen public name, but credit is never automatic and a student number is never used.
 
-The [Information and Privacy Commissioner of Ontario's guidance for schools](https://www.ipc.on.ca/en/media-centre/multimedia-resources/protecting-student-privacy-rights-ontario) says identifiable student information should not be posted online without consent and recommends written consent, or a written record of oral consent, as a best practice. Before adding student credit, the teacher must also confirm the current school and board procedure with the principal or board privacy contact.
+The [Information and Privacy Commissioner of Ontario's guidance for schools](https://www.ipc.on.ca/en/media-centre/multimedia-resources/protecting-student-privacy-rights-ontario) says identifiable student information should not be posted online without consent. This site's simpler default is to publish current student work anonymously and omit student identifiers.
 :::
 
-## Route A: edit locally with a text editor
+## Route A: edit locally and submit privately
 
 ### 1. Get a working copy
 
-Ask your teacher for a ZIP copy of the project, or download the repository ZIP only if your teacher has approved that route. Extract the ZIP before editing it.
+Current students can ask the teacher for a ZIP copy of the project. Graduates, teachers and other contributors can download the repository ZIP. Extract the ZIP before editing it.
 
 Open the project folder in an approved text editor. Visual Studio Code is convenient, but a basic text editor can edit a `.qmd` file too. Do not use Microsoft Word because it can insert formatting that breaks plain-text source files.
 
@@ -132,9 +154,9 @@ python scripts/check_commons.py --rendered
 
 `quarto preview site` is the fast working view. `quarto render site` rebuilds the whole website. The check script catches broken links and other project rules. Always run the full render before a change is published.
 
-### 7. Give the change to your teacher
+### 7. Send the change privately
 
-Send or hand in:
+Email the maintainer or, for current students, submit through Google Classroom:
 
 - the edited `.qmd` file;
 - every new or changed image or asset;
@@ -146,7 +168,7 @@ A ZIP containing only those files is fine. A PDF is not an editable website cont
 
 ## Route B: make a quick edit on the GitHub website
 
-Use this route only after the permission described above is in place. It is the quickest option for one small, self-contained text correction. If the change affects images, several files or the structure of the page, use Route C instead.
+For current students, use this route only after the permission described above is in place. Graduates, teachers and other contributors may use their own GitHub account. It is the quickest option for one small, self-contained text correction. If the change affects images, several files or the structure of the page, use Route C instead.
 
 1. Sign in to the approved GitHub account.
 2. Open the [Bambu Studio guide's `.qmd` source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd), or navigate to the source file for another page.
@@ -156,7 +178,7 @@ Use this route only after the permission described above is in place. It is the 
 6. Select **Commit changes**. Write a short message such as `Clarify Bambu Studio profile check`.
 7. Choose the option to create a new branch and propose the change. Do not work directly on the published `master` branch.
 8. Open the pull request. Explain what you changed, why it improves the page, how it was checked, and the source or permission for new images.
-9. Respond to review feedback by editing the same proposed change. The teacher reviews and decides what is published.
+9. Respond to review feedback by editing the same proposed change. The site maintainer reviews and decides what is published.
 
 GitHub documents this workflow in [Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) and [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
@@ -165,9 +187,9 @@ GitHub documents this workflow in [Editing files](https://docs.github.com/en/rep
 Use this tutorial when the work is more than a quick browser edit. A local clone is the better choice for screenshots and other assets, multiple related files, full-site checks and repeated review corrections.
 
 ::: {.callout-note}
-## You are learning ahead of the course
+## Current students are learning ahead of the course
 
-The command line, Git branches and pull requests have **not** been taught as a complete classroom lesson yet. If you try this route, you are going directly into a real professional workflow. Feeling lost, making an accidental commit or needing help with an error message does not mean you failed; it means you are learning a tool with several new ideas at once.
+The command line, Git branches and pull requests have **not** been taught as a complete classroom lesson yet. A current student who tries this route is going directly into a real professional workflow. Feeling lost, making an accidental commit or needing help with an error message does not mean you failed; it means you are learning a tool with several new ideas at once.
 
 The first few sessions can feel slow and annoying. The effort becomes worthwhile when you can see exactly which files changed, restore an accidental deletion, keep screenshots with their page and update one pull request without repeatedly uploading files by hand.
 :::
@@ -299,12 +321,32 @@ git remote -v
 Capture the terminal after `git status --short`, the GitHub **Files changed** tab and the exact error message. Crop out the Windows username in the folder path, email addresses, access tokens, student numbers and unrelated tabs. A screenshot should show the problem without publishing private information.
 :::
 
+## Prepare photos safely
+
+A project photo can contain information that is not visible in the picture, including GPS location, capture time, camera or phone details and an owner's name. It can also reveal information in the background. Work from a copy and keep the original private.
+
+Before submitting a photo:
+
+1. Crop out faces, names, badges, student work belonging to other people, screens, street signs, house numbers, school identifiers and location clues.
+2. In Windows File Explorer, right-click the copied image and select **Properties**.
+3. Open **Details**, then select **Remove Properties and Personal Information**.
+4. Choose **Create a copy with all possible properties removed**, select **OK**, and use the new copy.
+5. Reopen **Properties > Details** on the new file. Confirm that it does not show GPS coordinates, an author or owner, camera or phone identifiers, or other personal details.
+
+### Screenshot alternative
+
+If removing properties is confusing, open the cropped photo on screen and press **Windows + Shift + S**. Select only the project, save the result as a new image and submit that screenshot instead of the original camera file. A screenshot normally does not carry the original photo's camera and GPS EXIF data, but it can still contain basic information of its own. Check **Properties > Details** and inspect the visible background before sharing it.
+
+Email and Google Classroom provide a private submission route, but they do not make a photo automatically safe for public publication. Tell the teacher if identifying details remain so the image can be edited or kept private.
+
 ## Before you submit
 
 - [ ] I edited the `.qmd` source, not a PDF, Word file or generated HTML file.
 - [ ] My change is focused and technically accurate.
 - [ ] The steps are numbered, complete and easy for another student to test.
 - [ ] Screenshots are readable, tightly cropped and free of personal information.
+- [ ] Project photos contain no names, initials, student numbers, usernames, faces, school identifiers or location clues.
+- [ ] I removed photo metadata or clearly asked the teacher to process the image privately.
 - [ ] Images have useful alternative text.
 - [ ] Links use meaningful labels and open the intended source.
 - [ ] I identified the source and permission for material I did not make.
@@ -323,9 +365,9 @@ Problem I noticed:
 What I changed and why:
 How I tested it:
 New images or sources and their permission/licence:
-Credit preference approved by the teacher:
+Contains any public student identity: no
 ```
 
 ## How contributions are used
 
-The teacher may correct, shorten, reorganize or combine a contribution before publication. Educational content on this site is shared under [CC BY-SA 4.0](licensing.qmd), and site code is shared under the [AGPL 3.0](licensing.qmd). Published contributions can therefore be studied, adapted and shared under the applicable licence. A student's name is not placed on the website unless the student chooses public credit and the required school consent process is complete. A student may instead contribute anonymously or use only the public identity already attached to an approved GitHub pull request.
+The maintainer may correct, shorten, reorganize, anonymize or combine a contribution before publication. Educational content on this site is shared under [CC BY-SA 4.0](licensing.qmd), and site code is shared under the [AGPL 3.0](licensing.qmd). Published contributions can therefore be studied, adapted and shared under the applicable licence. Public current-student work is anonymous by default and does not include names, initials, usernames, student numbers, school emails or class identifiers. After graduation, a former student may separately request credit under a chosen public name, subject to the applicable requirements; it is never added automatically.
