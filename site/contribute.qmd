@@ -1,6 +1,6 @@
 ---
 title: "Improve This Website | Student Contribution Guide"
-description: "Edit a Quarto source file, preview the website locally, and optionally propose a change through GitHub with the required permission."
+description: "Edit a Quarto source file, preview the website locally, and propose a focused change through GitHub in a browser, Git Bash or WSL with the required permission."
 body-classes: "bs-learn-article ter-notes-lesson"
 toc: true
 toc-depth: 3
@@ -32,9 +32,10 @@ site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd
 | Route | Account needed? | Best when |
 |---|---:|---|
 | **A. Edit locally** | No | You want to use a text editor and give the files to your teacher. |
-| **B. Edit with GitHub** | Yes | Parent/guardian permission and teacher or board approval are already in place. |
+| **B. Edit with GitHub in a browser** | Yes | You want the shortest route to one small text change. |
+| **C. Use Git from a local clone** | Yes | You are changing several files, adding screenshots or responding to review feedback. |
 
-Both routes edit the same `.qmd` source. GitHub is a way to share and review the change; it is not required to write the page.
+All three routes edit the same `.qmd` source. GitHub is a way to share and review the change; it is not required to write the page.
 
 ::: {.callout-warning}
 ## Permission and privacy
@@ -151,28 +152,141 @@ Use this route only after the permission described above is in place.
 
 GitHub documents this workflow in [Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) and [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
-::: {.callout-tip collapse="true"}
-## Optional: GitHub with a local clone
+## Route C: use Git Bash or WSL with a local clone
 
-This route is useful after you have learned branches and commits. It still requires the same permission.
+::: {.callout-note}
+## You are learning ahead of the course
 
-```powershell
-git clone https://github.com/mrandrewandrade/tech-edu-resources.git
+The command line, Git branches and pull requests have **not** been taught as a complete classroom lesson yet. If you try this route, you are going directly into a real professional workflow. Feeling lost, making an accidental commit or needing help with an error message does not mean you failed; it means you are learning a tool with several new ideas at once.
+
+The first few sessions can feel slow and annoying. The effort becomes worthwhile when you can see exactly which files changed, restore an accidental deletion, keep screenshots with their page and update one pull request without repeatedly uploading files by hand.
+:::
+
+### Choose a terminal on Windows
+
+| Terminal | Best reason to choose it | Learning curve |
+|---|---|---|
+| **Git Bash** | Recommended first route. It installs with Git for Windows and uses the commands shown below. | Lowest of these two options; Windows files and familiar applications remain close by. |
+| **Windows Subsystem for Linux (WSL)** | Useful if you also want to learn Linux tools and development. | Steeper at first. Windows and Linux use different path styles and each environment has its own installed programs. |
+
+WSL is worth learning, especially for software, electronics and server work, but it adds another layer while Git itself is still new. A file such as `C:\Users\Student\Documents\project` appears under a path such as `/mnt/c/Users/Student/Documents/project` in WSL. Run Quarto in the environment where Quarto is installed; installing it in Windows does not automatically install it inside WSL.
+
+Use only school-approved software and the approved GitHub account. If installation is blocked, use Route A or Route B and ask the teacher for help.
+
+### 1. Fork first, then clone your fork
+
+On GitHub, open the [Technology Commons repository](https://github.com/mrandrewandrade/tech-edu-resources), select **Fork**, and create the permitted copy under your account. Then open Git Bash or WSL and replace `<your-github-name>` below with your public GitHub username:
+
+```bash
+git clone https://github.com/<your-github-name>/tech-edu-resources.git
 cd tech-edu-resources
-git switch -c student/short-change-name
+git remote add upstream https://github.com/mrandrewandrade/tech-edu-resources.git
+git remote -v
+```
+
+`origin` should identify your fork. `upstream` should identify the class website. These names let Git distinguish your copy from the published source.
+
+### 2. Start a focused branch
+
+Bring in the latest published work, then create a branch with a short descriptive name:
+
+```bash
+git fetch upstream
+git switch -c student/bambu-screenshot-fix upstream/master
+git branch --show-current
+```
+
+Do not make the website change directly on `master`. One branch should contain one focused contribution.
+
+### 3. Edit the source and assets together
+
+Edit the `.qmd` source in an approved text editor. Put new screenshots under the appropriate `site/assets` folder and update the image links in the `.qmd` file to use the exact new filenames.
+
+Before committing, inspect the working folder:
+
+```bash
+git status --short
+git diff -- site/path/to/page.qmd
+```
+
+In `git status --short`, `M` means modified, `A` means added and `D` means deleted. A deletion is not automatically wrong, but it must be intentional. If a page still links to a deleted image, the website will show a broken image.
+
+Preview the site when Quarto is available:
+
+```bash
 quarto preview site
 ```
 
-After editing and completing the full render and check:
+Check the page at desktop and phone width. Confirm that every screenshot loads, its callout numbers match the written steps and no account name, email, student number, notification or unrelated browser tab is visible.
 
-```powershell
-git status
+### 4. Stage only the intended files
+
+Name the files instead of staging the entire repository:
+
+```bash
 git add site/path/to/page.qmd site/assets/path/to/new-image.png
-git commit -m "Explain the focused improvement"
-git push -u origin student/short-change-name
+git diff --cached --stat
+git diff --cached
 ```
 
-If you do not have write access to the repository, work in an approved fork and open a pull request from that fork.
+The cached diff is the exact change that the next commit will record. Stop and ask for help if it contains an unrelated file, a private detail or a large deletion you did not intend.
+
+### 5. Commit and push the branch
+
+```bash
+git commit -m "Clarify Bambu Studio screenshot steps"
+git push -u origin student/bambu-screenshot-fix
+```
+
+GitHub normally displays a **Compare & pull request** button after the first push. Open it, confirm that the base repository is `mrandrewandrade/tech-edu-resources`, the base branch is `master`, and the head branch is your focused branch. Review the **Files changed** tab before selecting **Create pull request**.
+
+### 6. Update the same pull request
+
+Review feedback does not require a new pull request. Keep the same branch checked out, make the correction, inspect it and push another commit:
+
+```bash
+git branch --show-current
+git status --short
+git add site/path/to/corrected-file.qmd
+git commit -m "Address screenshot review feedback"
+git push
+```
+
+The open pull request updates automatically. Do not delete the branch or open another pull request for the same review.
+
+### 7. Recover from common mistakes
+
+Before committing, restore a file you accidentally changed or deleted:
+
+```bash
+git restore -- path/to/file
+```
+
+Restore the published version from the class website:
+
+```bash
+git fetch upstream
+git restore --source=upstream/master -- path/to/file
+```
+
+Remove a file from the next commit without deleting the working copy:
+
+```bash
+git restore --staged -- path/to/file
+```
+
+When uncertain, do not use `git reset --hard`, do not delete the repository and do not keep clicking until the error disappears. Copy the output of these commands and ask for help:
+
+```bash
+git branch --show-current
+git status --short
+git remote -v
+```
+
+::: {.callout-tip}
+## Useful screenshots when asking for help
+
+Capture the terminal after `git status --short`, the GitHub **Files changed** tab and the exact error message. Crop out the Windows username in the folder path, email addresses, access tokens, student numbers and unrelated tabs. A screenshot should show the problem without publishing private information.
 :::
 
 ## Before you submit
