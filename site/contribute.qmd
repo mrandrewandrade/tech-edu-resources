@@ -37,6 +37,14 @@ site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd
 
 All three routes edit the same `.qmd` source. GitHub is a way to share and review the change; it is not required to write the page.
 
+::: {.callout-tip}
+## Quick edit or larger contribution?
+
+Use the **GitHub website** for a quick correction to one text file: fix a typo, clarify a sentence, repair one link or make another small change that GitHub's Preview tab can show clearly.
+
+Use a **local clone with Git Bash or WSL** when the contribution adds or renames screenshots, changes several files, needs a complete Quarto preview, or will probably require several rounds of review. The initial setup takes longer, but Git makes larger work easier to inspect, test, correct and update safely.
+:::
+
 ::: {.callout-warning}
 ## Permission and privacy
 
@@ -136,9 +144,9 @@ Send or hand in:
 
 A ZIP containing only those files is fine. A PDF is not an editable website contribution.
 
-## Route B: propose the change through GitHub
+## Route B: make a quick edit on the GitHub website
 
-Use this route only after the permission described above is in place.
+Use this route only after the permission described above is in place. It is the quickest option for one small, self-contained text correction. If the change affects images, several files or the structure of the page, use Route C instead.
 
 1. Sign in to the approved GitHub account.
 2. Open the [Bambu Studio guide's `.qmd` source](https://github.com/mrandrewandrade/tech-edu-resources/blob/master/site/design-fabrication/04-3d-printing/02-slicing-orientation.qmd), or navigate to the source file for another page.
@@ -152,7 +160,9 @@ Use this route only after the permission described above is in place.
 
 GitHub documents this workflow in [Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) and [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
-## Route C: use Git Bash or WSL with a local clone
+## Route C: use Git Bash or WSL for a larger contribution
+
+Use this tutorial when the work is more than a quick browser edit. A local clone is the better choice for screenshots and other assets, multiple related files, full-site checks and repeated review corrections.
 
 ::: {.callout-note}
 ## You are learning ahead of the course
