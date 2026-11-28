@@ -55,6 +55,14 @@
       "teacher_gate": true
     }
   },
+  "regions": {
+    "field-archive": {
+      "label": "Field Archive"
+    },
+    "signal-station": {
+      "label": "Signal Station"
+    }
+  },
   "mission_pattern": {
     "minimum_success": [
       "Identify the exact part, file, or system.",

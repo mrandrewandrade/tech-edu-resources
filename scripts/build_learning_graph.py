@@ -44,6 +44,7 @@ TRACK_STRANDS = {
     "linux-operating-systems": "linux",
     "computer-systems": "systems",
     "networking": "systems",
+    "missions-physical-computing": "circuits",
     "portfolio": "portfolio",
     "design-process": "design-process",
     "accessible-design": "visual-design",

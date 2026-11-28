@@ -17,7 +17,6 @@ SITE = ROOT / "site"
 SOURCE = SITE / "data" / "mission-catalog.yml"
 JSON_OUTPUT = SITE / "assets" / "missions" / "mission-catalog.json"
 TABLE_OUTPUT = SITE / "includes" / "generated" / "mission-stat-table.md"
-GAME_REGIONS = SITE / "assets" / "pc-eng-world" / "game-worlds.yml"
 STAT_KEYS = ("circuits", "coding", "measurement", "building", "troubleshooting")
 
 
@@ -42,10 +41,13 @@ def load_catalog() -> dict[str, Any]:
 
 def validate(data: dict[str, Any]) -> list[dict[str, Any]]:
     readiness = data.get("readiness_levels", {})
+    regions = data.get("regions", {})
     stat_labels = data.get("stat_labels", {})
     missions = data.get("missions", [])
     if not isinstance(readiness, dict) or not readiness:
         raise ValueError("readiness_levels must contain at least one entry")
+    if not isinstance(regions, dict) or not regions:
+        raise ValueError("regions must contain at least one entry")
     if tuple(stat_labels) != STAT_KEYS:
         raise ValueError(f"stat_labels must use this order: {', '.join(STAT_KEYS)}")
     if not isinstance(missions, list) or not missions:
@@ -58,8 +60,7 @@ def validate(data: dict[str, Any]) -> list[dict[str, Any]]:
     if any(not stage_id for stage_id in stage_ids) or len(stage_ids) != len(set(stage_ids)):
         raise ValueError("mission_pattern stage ids must be present and unique")
 
-    game = yaml.safe_load(GAME_REGIONS.read_text(encoding="utf-8")) or {}
-    region_ids = {str(region["id"]) for region in game.get("regions", [])}
+    region_ids = {str(region_id) for region_id in regions}
     ids: set[str] = set()
     for mission in missions:
         mission_id = str(mission.get("id", ""))
@@ -127,6 +128,7 @@ def generate_json(data: dict[str, Any], missions: list[dict[str, Any]]) -> str:
         "generated_from": "site/data/mission-catalog.yml",
         "stat_labels": data["stat_labels"],
         "readiness_levels": readiness,
+        "regions": data["regions"],
         "mission_pattern": data["mission_pattern"],
         "missions": [
             {

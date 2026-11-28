@@ -7,6 +7,10 @@ stat_labels:
   building: Build
   troubleshooting: Debug
 
+regions:
+  field-archive: {label: Field Archive}
+  signal-station: {label: Signal Station}
+
 readiness_levels:
   ready: {label: Ready, css_class: ready, teacher_gate: false}
   simulation_first: {label: Simulation first, css_class: ready, teacher_gate: false}

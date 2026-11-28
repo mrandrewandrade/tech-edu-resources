@@ -20,7 +20,7 @@
 <div class="bs-learn-catalogue" data-bs-learn-list>
 <details class="bs-learn-catalogue-section" data-bs-learn-group data-bs-track-id="robotics-control" data-bs-total-lessons="1" open>
   <summary class="bs-learn-catalogue-section-heading">
-    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">10. Robotics and Control Systems</span><span data-bs-learn-group-count>1 lesson</span></span>
+    <span class="bs-learn-track-heading"><span class="bs-learn-track-lessons-label">11. Robotics and Control Systems</span><span data-bs-learn-group-count>1 lesson</span></span>
   </summary>
   <div class="bs-learn-catalogue-section-items">
     <article class="bs-learn-catalogue-item" data-bs-learn-item data-bs-track="robotics-control" data-bs-difficulties="[]" data-bs-terms="[]" data-bs-search-primary="[&quot;Robotics and Control Sequence&quot;, &quot;Robotics and Control Systems&quot;]" data-bs-search-body="[&quot;The public package sequence is planned.&quot;, &quot;It will connect diagrams, code, measurements, and physical tests.&quot;]">

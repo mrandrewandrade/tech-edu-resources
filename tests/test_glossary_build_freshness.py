@@ -84,6 +84,16 @@ class GlossaryBuildFreshnessTests(unittest.TestCase):
                         str(
                             bs_pre_render.REPO_ROOT
                             / "scripts"
+                            / "build_mission_catalog.py"
+                        ),
+                    ]
+                ),
+                mock.call(
+                    [
+                        bs_pre_render.sys.executable,
+                        str(
+                            bs_pre_render.REPO_ROOT
+                            / "scripts"
                             / "build_tej_curriculum.py"
                         ),
                     ]

@@ -79,7 +79,7 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/design-fabrication/hand-tools/phone-holder.html",
             ],
         )
-        self.assertEqual(len(routes_by_course["tej"]), 41)
+        self.assertEqual(len(routes_by_course["tej"]), 59)
         self.assertEqual(routes_by_course["tej"][0], "/commons/tej3-4/portfolio/index.html")
         self.assertEqual(
             routes_by_course["tej"][1:9],
@@ -116,7 +116,7 @@ class CourseNotesManifestTests(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            routes_by_course["tej"][-9:],
+            routes_by_course["tej"][32:41],
             [
                 "/commons/tej3-4/computational-engineering/jupyterlite.html",
                 "/commons/tej3-4/computational-engineering/circuit-quest.html",
@@ -152,6 +152,8 @@ class CourseNotesManifestTests(unittest.TestCase):
                 "/commons/tej3-4/networking/how-wifi-and-ethernet-connect/index.html",
                 "/commons/tej3-4/networking/ethernet-cable-categories/index.html",
                 "/commons/tej3-4/networking/build-and-test-ethernet-cable/index.html",
+                "/commons/tej3-4/capstone/index.html",
+                "/commons/tej3-4/capstone/platform/index.html",
             },
         )
 

@@ -72,7 +72,7 @@ class LearningGraphTests(unittest.TestCase):
         lessons = [node for node in self.graph["nodes"] if node["kind"] == "lesson"]
         tracks = [node for node in self.graph["nodes"] if node["kind"] == "track"]
         self.assertEqual(len(lessons), len(self.sequence["lessons"]))
-        self.assertEqual(len(tracks), 15)
+        self.assertEqual(len(tracks), 16)
         self.assertEqual(sum(node["kind"] == "course" for node in self.graph["nodes"]), 2)
         self.assertIn("commons-hub", self.by_id)
 

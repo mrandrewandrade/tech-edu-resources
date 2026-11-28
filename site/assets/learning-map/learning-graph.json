@@ -300,6 +300,19 @@
       "order": 9
     },
     {
+      "id": "track-tej-missions-physical-computing",
+      "kind": "track",
+      "title": "Missions and Physical Computing",
+      "summary": "Choose a mission, sign out a complete equipment bin, simulate or verify each stage, then build and document a safe working system.",
+      "href": "../tej3-4/capstone/index.html",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 10
+    },
+    {
       "id": "lesson-design-fabrication-culture-land-based-learning-grandmother-moon-seasons-qmd",
       "kind": "lesson",
       "title": "Grandmother Moon, Seasons, and Turtle's Back",
@@ -1635,6 +1648,282 @@
       ],
       "order": 9,
       "sequence_index": 87
+    },
+    {
+      "id": "lesson-tej3-4-capstone-index-qmd",
+      "kind": "lesson",
+      "title": "Mission Control",
+      "summary": "Choose a route, review prerequisites, and use one common evidence and equipment-return contract.",
+      "href": "../tej3-4/capstone/index.html",
+      "source": "tej3-4/capstone/index.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 1,
+      "sequence_index": 88
+    },
+    {
+      "id": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "kind": "lesson",
+      "title": "Inventory-Based Mission Bank",
+      "summary": "Match available classroom equipment to foundation, Linux, sensor, motion, lighting, sound, and automotive missions.",
+      "href": "../tej3-4/capstone/mission-bank.html",
+      "source": "tej3-4/capstone/mission-bank.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 2,
+      "sequence_index": 89
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "kind": "lesson",
+      "title": "Git First Save",
+      "summary": "Create a local repository, make one useful commit, and show the recoverable checkpoint in Git history.",
+      "href": "../tej3-4/capstone/projects/git-first-save.html",
+      "source": "tej3-4/capstone/projects/git-first-save.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits",
+        "linux",
+        "portfolio"
+      ],
+      "order": 3,
+      "sequence_index": 90
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "kind": "lesson",
+      "title": "Build Your Course Website",
+      "summary": "Open the prepared Quarto starter, choose the core profile, edit the home page, and render a working local site.",
+      "href": "../tej3-4/capstone/projects/quarto-course-site.html",
+      "source": "tej3-4/capstone/projects/quarto-course-site.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits",
+        "linux",
+        "portfolio"
+      ],
+      "order": 4,
+      "sequence_index": 91
+    },
+    {
+      "id": "lesson-tej3-4-capstone-platform-index-qmd",
+      "kind": "lesson",
+      "title": "Raspberry Pi and BeagleBone Platform Setup",
+      "summary": "Prepare an offline Linux controller station and complete the software-first platform sequence.",
+      "href": "../tej3-4/capstone/platform/index.html",
+      "source": "tej3-4/capstone/platform/index.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 5,
+      "sequence_index": 92
+    },
+    {
+      "id": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
+      "kind": "lesson",
+      "title": "GPIO Progression",
+      "summary": "Move from a simulated signal to an LED, button, state machine, and safely isolated external load.",
+      "href": "../tej3-4/capstone/platform/gpio-progression.html",
+      "source": "tej3-4/capstone/platform/gpio-progression.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 6,
+      "sequence_index": 93
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
+      "kind": "lesson",
+      "title": "Reaction Timer",
+      "summary": "Build a playable Python and GPIO reaction game and analyze five measured results.",
+      "href": "../tej3-4/capstone/projects/reaction-timer.html",
+      "source": "tej3-4/capstone/projects/reaction-timer.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits",
+        "programming"
+      ],
+      "order": 7,
+      "sequence_index": 94
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
+      "kind": "lesson",
+      "title": "Water Sensor Warning",
+      "summary": "Identify a water sensor, verify its output with a multimeter, and create a safe warning output.",
+      "href": "../tej3-4/capstone/projects/water-sensor-warning.html",
+      "source": "tej3-4/capstone/projects/water-sensor-warning.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 8,
+      "sequence_index": 95
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "kind": "lesson",
+      "title": "Water Pump Controller",
+      "summary": "Control a low-voltage pump from a separate fused supply through an approved driver and flyback diode.",
+      "href": "../tej3-4/capstone/projects/water-pump-controller.html",
+      "source": "tej3-4/capstone/projects/water-pump-controller.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 9,
+      "sequence_index": 96
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
+      "kind": "lesson",
+      "title": "Low-Voltage DC Motor Controller",
+      "summary": "Characterize a classroom low-voltage motor, build one-direction driver control, add PWM, and optionally add safe direction control.",
+      "href": "../tej3-4/capstone/projects/dc-motor-controller.html",
+      "source": "tej3-4/capstone/projects/dc-motor-controller.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 10,
+      "sequence_index": 97
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-automatic-night-light-qmd",
+      "kind": "lesson",
+      "title": "Automatic Night Light",
+      "summary": "Use a light sensor and state logic to control an indicator or approved lamp driver.",
+      "href": "../tej3-4/capstone/projects/automatic-night-light.html",
+      "source": "tej3-4/capstone/projects/automatic-night-light.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 11,
+      "sequence_index": 98
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-beaglebone-traffic-light-qmd",
+      "kind": "lesson",
+      "title": "BeagleBone Traffic Light",
+      "summary": "Build and program a timed traffic-light state machine.",
+      "href": "../tej3-4/capstone/projects/beaglebone-traffic-light.html",
+      "source": "tej3-4/capstone/projects/beaglebone-traffic-light.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 12,
+      "sequence_index": 99
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-linux-alarm-qmd",
+      "kind": "lesson",
+      "title": "Linux Alarm",
+      "summary": "Use Linux and Python to monitor an input and produce a controlled alarm response.",
+      "href": "../tej3-4/capstone/projects/linux-alarm.html",
+      "source": "tej3-4/capstone/projects/linux-alarm.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 13,
+      "sequence_index": 100
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-capacitor-sound-demo-qmd",
+      "kind": "lesson",
+      "title": "Capacitor Sound Demonstration",
+      "summary": "Connect stored charge and RC timing to a buzzer or sound demonstration.",
+      "href": "../tej3-4/capstone/projects/capacitor-sound-demo.html",
+      "source": "tej3-4/capstone/projects/capacitor-sound-demo.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 14,
+      "sequence_index": 101
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-led-strip-controller-qmd",
+      "kind": "lesson",
+      "title": "LED Strip Controller",
+      "summary": "Verify a classroom LED strip, control one channel through a protected driver, and add PWM colour control.",
+      "href": "../tej3-4/capstone/projects/led-strip-controller.html",
+      "source": "tej3-4/capstone/projects/led-strip-controller.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits",
+        "programming"
+      ],
+      "order": 15,
+      "sequence_index": 102
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-automotive-relay-trainer-qmd",
+      "kind": "lesson",
+      "title": "Automotive Relay Trainer",
+      "summary": "Use an automotive relay to separate a low-current control circuit from a fused 12 V load circuit.",
+      "href": "../tej3-4/capstone/projects/automotive-relay-trainer.html",
+      "source": "tej3-4/capstone/projects/automotive-relay-trainer.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 16,
+      "sequence_index": 103
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-salvage-machine-detective-qmd",
+      "kind": "lesson",
+      "title": "Salvage Machine Detective",
+      "summary": "Trace an unknown salvaged mechanism while it is unpowered and reconstruct its connectors and functional blocks.",
+      "href": "../tej3-4/capstone/projects/salvage-machine-detective.html",
+      "source": "tej3-4/capstone/projects/salvage-machine-detective.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 17,
+      "sequence_index": 104
+    },
+    {
+      "id": "lesson-tej3-4-capstone-projects-student-choice-project-qmd",
+      "kind": "lesson",
+      "title": "Student-Choice Mission",
+      "summary": "Propose a project using the same approval, safety, evidence, checkout, and return requirements.",
+      "href": "../tej3-4/capstone/projects/student-choice-project.html",
+      "source": "tej3-4/capstone/projects/student-choice-project.qmd",
+      "course": "tej",
+      "track": "missions-physical-computing",
+      "strands": [
+        "circuits"
+      ],
+      "order": 18,
+      "sequence_index": 105
     }
   ],
   "edges": [
@@ -1721,6 +2010,11 @@
     {
       "from": "course-tej",
       "to": "track-tej-programming-interfacing",
+      "type": "contains"
+    },
+    {
+      "from": "course-tej",
+      "to": "track-tej-missions-physical-computing",
       "type": "contains"
     },
     {
@@ -2161,6 +2455,96 @@
     {
       "from": "track-tej-programming-interfacing",
       "to": "lesson-tej3-4-computational-engineering-midterm-circuit-investigation-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-index-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-platform-index-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-automatic-night-light-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-beaglebone-traffic-light-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-linux-alarm-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-capacitor-sound-demo-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-led-strip-controller-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-automotive-relay-trainer-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-salvage-machine-detective-qmd",
+      "type": "contains"
+    },
+    {
+      "from": "track-tej-missions-physical-computing",
+      "to": "lesson-tej3-4-capstone-projects-student-choice-project-qmd",
       "type": "contains"
     },
     {
@@ -2922,6 +3306,301 @@
       "from": "lesson-tej3-4-computational-engineering-midterm-circuit-investigation-qmd",
       "to": "lesson-tej3-4-circuits-tinkercad-circuits-qmd",
       "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-platform-index-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-automatic-night-light-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-beaglebone-traffic-light-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-student-choice-project-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-led-strip-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-salvage-machine-detective-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-linux-alarm-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-capacitor-sound-demo-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-index-qmd",
+      "to": "lesson-tej3-4-capstone-projects-automotive-relay-trainer-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-linux-operating-systems-publish-github-pages-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-portfolio-index-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-computational-engineering-python-first-steps-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-platform-index-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-beaglebone-traffic-light-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-linux-alarm-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-networking-build-and-test-ethernet-cable-index-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-automatic-night-light-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-salvage-machine-detective-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-capacitor-sound-demo-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-led-strip-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-mission-bank-qmd",
+      "to": "lesson-tej3-4-capstone-projects-automotive-relay-trainer-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "to": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "to": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-git-first-save-qmd",
+      "to": "lesson-tej3-4-linux-operating-systems-git-version-control-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "to": "lesson-tej3-4-capstone-platform-index-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-quarto-course-site-qmd",
+      "to": "lesson-tej3-4-linux-operating-systems-quarto-website-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-platform-index-qmd",
+      "to": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-platform-index-qmd",
+      "to": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-platform-gpio-progression-qmd",
+      "to": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-reaction-timer-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-water-sensor-warning-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "to": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
+      "to": "lesson-tej3-4-capstone-projects-automatic-night-light-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-dc-motor-controller-qmd",
+      "to": "lesson-tej3-4-capstone-projects-water-pump-controller-qmd",
+      "type": "related"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-automatic-night-light-qmd",
+      "to": "lesson-tej3-4-capstone-projects-beaglebone-traffic-light-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-beaglebone-traffic-light-qmd",
+      "to": "lesson-tej3-4-capstone-projects-linux-alarm-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-linux-alarm-qmd",
+      "to": "lesson-tej3-4-capstone-projects-capacitor-sound-demo-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-capacitor-sound-demo-qmd",
+      "to": "lesson-tej3-4-capstone-projects-led-strip-controller-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-led-strip-controller-qmd",
+      "to": "lesson-tej3-4-capstone-projects-automotive-relay-trainer-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-automotive-relay-trainer-qmd",
+      "to": "lesson-tej3-4-capstone-projects-salvage-machine-detective-qmd",
+      "type": "sequence"
+    },
+    {
+      "from": "lesson-tej3-4-capstone-projects-salvage-machine-detective-qmd",
+      "to": "lesson-tej3-4-capstone-projects-student-choice-project-qmd",
+      "type": "sequence"
     }
   ]
 }
