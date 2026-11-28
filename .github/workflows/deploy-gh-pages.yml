@@ -52,6 +52,11 @@ jobs:
         with:
           path: site/_site
 
+      # GitHub's artifact API can briefly return zero results immediately after
+      # a large upload is finalized, causing deploy-pages to fail spuriously.
+      - name: Allow Pages artifact to become visible
+        run: sleep 15
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
