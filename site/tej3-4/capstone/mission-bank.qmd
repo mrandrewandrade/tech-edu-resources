@@ -1,0 +1,247 @@
+---
+title: "Mission Bank"
+description: "Choose a practical computer-engineering mission that matches your interests, progress, and available classroom hardware."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson mission-bank-page"
+toc: true
+execute: {enabled: false}
+format:
+  html:
+    css: ../../assets/mission-bank.css
+---
+
+Choose a mission you can complete successfully, then add the evidence to your course website. You do not need to finish the hardest hardware project to show strong computer-engineering learning.
+
+## Start here for the final part of the course
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### 1. Save with Git
+
+Make one local Git repository and one useful commit. This works without Wi-Fi.
+
+[Complete Git First Save](projects/git-first-save.qmd){.btn .btn-primary}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 2. Build your course website
+
+Open the starter, choose the simple `core` version, edit the home page, and render it locally.
+
+[Build Your Course Website](projects/quarto-course-site.qmd){.btn .btn-primary}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 3. Choose one mission
+
+Pick a Ready mission first. Add its calculation, code, test, photograph, or result to the website.
+
+[Compare the missions](#mission-stats){.btn .btn-primary}
+:::
+
+::::
+
+::: {.callout-tip title="A good finish is better than an unfinished giant project"}
+A completed foundation, Linux, Python, networking, or documentation mission counts. Start with a minimum result you can demonstrate. Add an extension only after the minimum result works.
+:::
+
+## How every mission works
+
+The missions use one repeatable lab pattern. It combines the useful progression found in Grob-style electronics work, Open Circuits resources, software documentation, simulation, and real measurement without requiring every mission to use every tool.
+
+:::: {.mission-paths}
+::: {}
+### 1. Identify
+
+Find the exact part number, rating, pinout, command, or file. Do not guess.
+:::
+::: {}
+### 2. Predict
+
+Say what should happen. Calculate an expected value when the mission includes a circuit.
+:::
+::: {}
+### 3. Represent
+
+Use a schematic, wiring diagram, flowchart, state table, or command sequence.
+:::
+::: {}
+### 4. Simulate
+
+Test the idea in Tinkercad, Jupyter, or another suitable tool when one is available.
+:::
+::: {}
+### 5. Build
+
+Work one stage at a time. Stop for the required teacher check before power.
+:::
+::: {}
+### 6. Measure
+
+Record a voltage, resistance, current, time, output, or test result with units.
+:::
+::: {}
+### 7. Troubleshoot
+
+Compare expected and actual behaviour. Isolate one cause and record the correction.
+:::
+::: {}
+### 8. Improve
+
+Add one useful extension only after the minimum version works.
+:::
+::::
+
+::: {.callout-note title="Minimum successful submission"}
+Identify the exact system, make the minimum version work safely, measure or test one result, and add the evidence to the course website with a Git checkpoint.
+:::
+
+## Hardware already available
+
+| Equipment group | Known classroom hardware | How it is used |
+|:--|:--|:--|
+| Computers | approximately 23 Raspberry Pi 4 computers, several BeagleBones, microSD cards, monitors, keyboards, and mice | Linux, Python, GPIO, logging, state machines, Git, and documentation |
+| Core circuits | breadboards, prototyping shields, jumper wires, resistors, LEDs, pushbuttons, capacitors, buzzers, and multimeters | foundation and low-current missions |
+| Power | 5 V and 12 V computer supplies plus low-voltage bench supplies | controller power and separately protected load power |
+| Motion and water | low-voltage DC motors, small pumps, water sensors, and salvaged mechanisms | motor, pump, warning, and reverse-engineering missions |
+| Lighting and automotive | LEDs, LED strip, trailer lamps, relays, fuses, and an automotive horn | indicator, driver, relay, KCL, KVL, and troubleshooting missions |
+
+::: {.callout-note title="Check an unknown part before power"}
+Record the label and verify voltage, current, polarity, connector pinout, and required driver before powering a motor, pump, buzzer, LED strip, relay, or salvaged assembly.
+:::
+
+## Availability labels
+
+1. **Ready:** begin independently using confirmed low-voltage equipment or software.
+2. **Simulation first:** prove the program or circuit logic before physical construction.
+3. **Input, driver, or part check:** the teacher confirms the connection and exact component.
+4. **Shared station:** use a teacher-prepared setup such as the 12 V relay and trailer lamp.
+5. **Optional online:** complete only when accounts, internet access, and privacy approval are available.
+
+## Mission stats
+
+These ratings are not marks.
+
+:::: {.mission-stat-legend}
+::: {}
+**Effort**
+
+1 is about one period. 3 is several periods. 5 is a longer multi-stage build.
+:::
+::: {}
+**Learning stats**
+
+0 means the skill is not a focus. 3 means it is a core skill. 5 means it is a major part of the mission.
+:::
+::: {}
+**Readiness**
+
+Choose Ready missions independently. Other labels require the stated check or approval.
+:::
+::::
+
+{{< include ../../includes/generated/mission-stat-table.md >}}
+
+### Choose by what you want to learn
+
+:::: {.mission-paths}
+::: {}
+### More Linux and Git
+
+Choose Offline Linux Workstation, Git First Save, Build Your Course Website, or Publish Your Course Website.
+:::
+::: {}
+### More Python
+
+Choose Python and Jupyter First Steps, Reaction Timer, Traffic Light, Linux Alarm, or Sensor Data Logger.
+:::
+::: {}
+### More circuits
+
+Choose LED Resistor Designer, Capacitor Timer, Night Light, Motor Control, or Relay and Trailer Lamp.
+:::
+::: {}
+### More tools and measurement
+
+Choose Resistor Detective, Meter Troubleshooter, Ethernet Cable, Water Sensor Warning, or Salvage Machine Detective.
+:::
+::: {}
+### More building
+
+Choose Water Pump, Low-Voltage Motor, LED Strip, Traffic Light, Ethernet Cable, or Relay and Trailer Lamp.
+:::
+::: {}
+### A short successful mission
+
+Choose Git First Save, Breadboard Map, Resistor Detective, LED Resistor Designer, or Python and Jupyter First Steps.
+:::
+::::
+
+## Mission routes
+
+### Course website and documentation
+
+1. [Git First Save](projects/git-first-save.qmd)
+2. [Build Your Course Website](projects/quarto-course-site.qmd)
+3. [Publish Your Course Website](../linux-operating-systems/publish-github-pages.qmd), optional
+4. [Build a Technical Portfolio](../portfolio/index.qmd)
+
+### Linux, Python, and networking
+
+1. [Python and Jupyter First Steps](../computational-engineering/python-first-steps.qmd)
+2. [Offline Linux Workstation](platform/index.qmd)
+3. [GPIO Progression](platform/gpio-progression.qmd)
+4. [Reaction Timer](projects/reaction-timer.qmd)
+5. [Traffic Light](projects/beaglebone-traffic-light.qmd)
+6. [Linux Alarm](projects/linux-alarm.qmd)
+7. [Build and Test an Ethernet Cable](../networking/build-and-test-ethernet-cable/index.qmd)
+
+### Circuit foundations
+
+| Mission | Minimum result |
+|:--|:--|
+| Breadboard Map | Mark connected rows and rails and prove them with continuity mode. |
+| Resistor Detective | Predict, measure, and correctly sort resistor values. |
+| LED Resistor Designer | Calculate, build, and measure one protected LED circuit. |
+| Capacitor Timer | Compare two RC combinations and graph the result. |
+| Meter Troubleshooter | Find and explain one prepared circuit fault. |
+
+[Open the breadboard and meter checkout](../circuits/hands-on-circuit-stations.qmd)
+
+### Sensors, water, and data
+
+1. [Water Sensor Warning](projects/water-sensor-warning.qmd)
+2. [Automatic Night Light](projects/automatic-night-light.qmd)
+3. [Water Pump Controller](projects/water-pump-controller.qmd)
+4. [Sensor Data Logger](platform/data-extension.qmd)
+
+### Motion and machines
+
+1. [Low-Voltage Motor Controller](projects/dc-motor-controller.qmd)
+2. [Salvage Machine Detective](projects/salvage-machine-detective.qmd)
+3. Servo or Stepper Positioner after an exact motor and matching driver are approved
+
+### Light, sound, and automotive
+
+1. [Capacitor Sound](projects/capacitor-sound-demo.qmd)
+2. [LED Strip Controller](projects/led-strip-controller.qmd)
+3. [Relay and Trailer Lamp](projects/automotive-relay-trainer.qmd)
+4. Automotive horn as a brief teacher-controlled extension
+
+## Common mission finish line
+
+Every completed mission needs only the evidence that fits the work:
+
+1. a readable schematic, command sequence, diagram, or plan;
+2. relevant calculations, code, or configuration;
+3. a test result with units or a clear success check;
+4. one useful photograph or screenshot when appropriate;
+5. one Git commit after the evidence is added to the course website;
+6. a safe shutdown and complete equipment return when hardware was issued.
+
+Students may work together on one physical system, but each student maintains their own Git history and course website.
+
+## If you finish early
+
+Choose one extension, improve the instructions for the next group, add a second project page, repair an accessibility problem, or help test a classmate's mission using their stated success check.

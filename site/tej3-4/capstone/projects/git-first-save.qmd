@@ -1,0 +1,65 @@
+---
+title: "Mission: Git First Save"
+description: "Create a local Git repository and record one recoverable checkpoint in about one class period."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+terms: [git, linux, documentation]
+---
+
+## Mission result
+
+Create one local Git repository, make one commit, and show the commit in the history. No GitHub account or Wi-Fi is required.
+
+## Before you start
+
+Use a teacher-approved folder. Do not include passwords, tokens, student numbers, private photographs, or files belonging to another student.
+
+## Complete the mission
+
+Open a terminal in your project folder.
+
+```bash
+git init
+git status
+```
+
+Create or edit one small file such as `README.md` or `index.qmd`. Then run:
+
+```bash
+git status
+git add README.md
+git diff --staged
+git commit -m "Start my course website"
+git log --oneline
+```
+
+If you edited `index.qmd`, replace `README.md` with `index.qmd` in the `git add` command.
+
+::: {.callout-tip title="If Git asks who you are"}
+Use the classroom identity supplied by the teacher. Configure it for this repository only:
+
+```bash
+git config user.name "Student Name or Initials"
+git config user.email "student@localhost"
+```
+
+Then run the commit command again.
+:::
+
+## Success check
+
+You are finished when:
+
+1. `git status` says there is nothing to commit;
+2. `git log --oneline` shows your commit;
+3. you can explain that saving changes a file while committing records a named checkpoint.
+
+## Submit
+
+Submit one screenshot containing the project folder name and `git log --oneline`. Do not submit the entire computer home folder.
+
+## Next mission
+
+Continue to [Build Your Course Website](quarto-course-site.qmd). The full [Git lesson](../../linux-operating-systems/git-version-control.qmd) remains available when you want staging, diffs, restore, ignore rules, and troubleshooting in more depth.

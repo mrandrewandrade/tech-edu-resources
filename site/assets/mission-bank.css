@@ -1,0 +1,150 @@
+.mission-stat-legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.mission-stat-legend > div {
+  border-left: 5px solid #146c94;
+  background: #f3f8fb;
+  padding: 0.85rem 1rem;
+}
+
+.mission-stat-legend strong {
+  display: block;
+  color: #123b52;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.mission-stat-board {
+  margin: 1rem 0 1.5rem;
+  overflow-x: auto;
+  border: 1px solid #b8cbd5;
+  border-radius: 0.65rem;
+  box-shadow: 0 4px 14px rgb(17 54 72 / 8%);
+}
+
+.mission-stat-board table {
+  width: 100%;
+  min-width: 920px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.mission-stat-board thead th {
+  background: #123b52;
+  color: #fff;
+  border-color: #315b70;
+  padding: 0.8rem 0.6rem;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.mission-stat-board thead th:first-child,
+.mission-stat-board tbody td:first-child {
+  min-width: 220px;
+  text-align: left;
+}
+
+.mission-stat-board tbody td {
+  padding: 0.65rem 0.55rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mission-stat-board tbody tr:nth-child(even) {
+  background: #f7fafc;
+}
+
+.mission-stat-board tbody tr:hover {
+  background: #e9f4f8;
+}
+
+.mission-score {
+  display: inline-grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-0 { color: #687984; background: #f0f3f5; }
+.score-1 { color: #315f76; background: #e3f2f8; }
+.score-2 { color: #1b6688; background: #cbe8f4; }
+.score-3 { color: #0e5879; background: #9fd6e9; }
+.score-4 { color: #fff; background: #197da5; border-color: #197da5; }
+.score-5 { color: #fff; background: #844d08; border-color: #844d08; }
+
+.mission-readiness {
+  display: inline-block;
+  min-width: 6.7rem;
+  padding: 0.34rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.mission-readiness.ready {
+  color: #14532d;
+  background: #dcfce7;
+  border: 1px solid #86d7a3;
+}
+
+.mission-readiness.check {
+  color: #6f3d00;
+  background: #fff0c7;
+  border: 1px solid #e7b95f;
+}
+
+.mission-readiness.shared {
+  color: #553078;
+  background: #f0e5ff;
+  border: 1px solid #c6a1e8;
+}
+
+.mission-paths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.mission-paths > div {
+  border-top: 6px solid #197da5;
+  background: #fff;
+  box-shadow: 0 4px 16px rgb(15 52 70 / 10%);
+  padding: 1rem 1.1rem;
+}
+
+.mission-paths h3 {
+  color: #123b52;
+  font-size: 1.1rem;
+  margin: 0 0 0.45rem;
+}
+
+.mission-paths p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  body.mission-bank-page #quarto-document-content > table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .mission-stat-board {
+    border-radius: 0;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+
+  .mission-stat-board table {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,246 @@
+---
+title: "Mission Control"
+description: "Choose a circuits, Linux, Python, sensor, motion, or automotive mission and move through the required safety gates."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+---
+
+Use this page to choose work that fits your interests and the equipment that is available. A mission may be assigned to the whole class, completed by a pair, or selected as an independent project.
+
+**Not sure which mission to choose?** [Compare every mission by equipment, effort, circuits, coding, measurement, building, and troubleshooting.](mission-bank.qmd)
+
+## Finish-strong pathway
+
+1. [Make your first Git checkpoint](projects/git-first-save.qmd).
+2. [Open the Quarto starter and build your course website](projects/quarto-course-site.qmd).
+3. Choose one achievable mission from the [Mission Bank](mission-bank.qmd).
+4. Add the result to the website and make one more Git commit.
+
+Git works locally without Wi-Fi. Public publishing is optional.
+
+::: {.callout-important title="The rule for every powered load"}
+A Raspberry Pi or BeagleBone sends a **control signal**. It does not power a pump, DC motor, relay coil, horn, automotive lamp, or LED strip. Those loads use a teacher-approved driver, protection, and separate supply.
+:::
+
+## Complete the three checkouts
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### 1. Linux and Python
+
+Start, inspect, and shut down the computer correctly. Use the terminal, open and save a Python program, and run a simple input/output simulation.
+
+[Open the Linux and Python platform](platform/index.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 2. Breadboard and meter
+
+Map the breadboard, measure resistance and voltage, build the approved LED and pushbutton circuit, and verify one KVL calculation.
+
+[Open the hands-on circuit stations](../circuits/hands-on-circuit-stations.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 3. Protected GPIO
+
+Control a resistor-limited LED, read a defined button input, stop the program safely, and explain why a high-current load needs a driver.
+
+[Open the GPIO progression](platform/gpio-progression.qmd)
+:::
+
+::::
+
+## Choose a mission
+
+The labels tell you how the mission may be used:
+
+- **Independent:** suitable for a student or pair working from the page.
+- **Class:** suitable for a teacher-led transportation or computer-engineering lesson.
+- **Teacher check:** the circuit must be inspected before power is connected.
+- **Simulation first:** logic and calculations are tested before physical wiring.
+
+### Sensors and water
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-lg-4}
+### Water Sensor Warning
+
+**Independent · Class · Teacher check**
+
+Identify the exact sensor, measure its output safely, read wet/dry states, and control an LED or low-current buzzer.
+
+[Open the water sensor mission](projects/water-sensor-warning.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### Water Pump Controller
+
+**Simulation first · Teacher check**
+
+Control a small pump from a separate supply through an approved MOSFET or driver module. Begin with a pushbutton, then add the water sensor.
+
+[Open the water pump mission](projects/water-pump-controller.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### Automatic Night Light
+
+**Independent · Class · Teacher check**
+
+Measure a light sensor, set a threshold, switch a protected light, and optionally log the result in Python.
+
+[Open the night-light mission](projects/automatic-night-light.qmd)
+:::
+
+::::
+
+### Motion and machines
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-lg-4}
+### DC Motor Controller
+
+**Simulation first · Teacher check**
+
+Use one of the classroom low-voltage motors. Secure it, measure its starting and running current from a teacher-set current-limited supply, add on/off control, then PWM speed control. Reversing is an extension using an approved H-bridge.
+
+[Open the DC motor mission](projects/dc-motor-controller.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### Traffic Light
+
+**Independent · Class**
+
+Build a state machine, operate three protected indicators, and prove that the program always returns to a safe state.
+
+[Open the traffic-light mission](projects/beaglebone-traffic-light.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### Student-Designed System
+
+**Independent · Approval required**
+
+Propose a sensor, output, and testable behaviour using available equipment. Choice does not remove the electrical and documentation requirements.
+
+[Open the student-choice mission](projects/student-choice-project.qmd)
+:::
+
+::::
+
+### Games, lighting, and salvage
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-lg-4}
+### Reaction Timer
+
+**Independent · Ready now**
+
+Use an LED and pushbutton to build a playable Python reaction game. Store five results and calculate the best and average time.
+
+[Open the reaction-timer mission](projects/reaction-timer.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### LED Strip Controller
+
+**Driver check · Teacher check**
+
+Identify the classroom strip, test one channel from the external supply, then add protected PWM colour control.
+
+[Open the LED-strip mission](projects/led-strip-controller.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### Salvage Machine Detective
+
+**Independent · Power-off first**
+
+Trace a salvaged motor or mechanism, map its connectors, and produce a safe test proposal before applying power.
+
+[Open the salvage-machine mission](projects/salvage-machine-detective.qmd)
+:::
+
+::::
+
+### Sound, timing, and automotive systems
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-lg-4}
+### Linux Alarm
+
+**Independent · Class**
+
+Read an input, run a timed state machine, and create a visible or low-current audible warning.
+
+[Open the Linux alarm mission](projects/linux-alarm.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### Capacitor Sound Demo
+
+**Class · Teacher check**
+
+Use an RC circuit to change a timing or control voltage and compare the measured behaviour with a Jupyter graph.
+
+[Open the capacitor sound mission](projects/capacitor-sound-demo.qmd)
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+### Automotive Relay Trainer
+
+**Class · Teacher check · Advanced**
+
+Trace the control and load circuits, verify terminals 30, 85, 86, 87, and 87a, operate a fused 12 V lamp, and diagnose prepared faults.
+
+[Open the automotive relay mission](projects/automotive-relay-trainer.qmd)
+:::
+
+::::
+
+## The same mission can serve two courses
+
+| Route | Main evidence |
+|:--|:--|
+| Transportation class | Neat wiring, safe meter use, voltage-drop evidence, circuit operation, and fault diagnosis |
+| Computer engineering | Schematic, calculations, simulation, Python, protected interface, measurements, and testing |
+| Independent extension | A second input/output, data log, state machine, improved driver, or prepared troubleshooting challenge |
+
+Students may work together on one physical system while submitting evidence for their own route.
+
+## Standard mission sequence
+
+1. Choose the minimum version.
+2. Identify the exact parts and their ratings.
+3. Draw or read the approved schematic.
+4. Simulate the logic or circuit when a suitable simulator is available.
+5. Calculate expected voltage, current, power, or timing.
+6. Request the equipment.
+7. Pass the power-off teacher check.
+8. Build and test one stage at a time.
+9. Measure the result and compare it with the prediction.
+10. Demonstrate the system, submit the evidence, and return every issued part.
+
+## Evidence required for every mission
+
+- one readable schematic or approved wiring diagram;
+- actual part numbers and ratings;
+- calculations that match the circuit;
+- expected and measured values with units;
+- relevant code or simulation evidence;
+- one problem, the evidence used to diagnose it, and the correction;
+- clear photographs of the completed setup;
+- a safe shutdown and complete equipment return.
+
+## If the instructions are unclear
+
+Name the exact heading or numbered step, state what you expected to happen, show what happened instead, and suggest one change that would make the page easier for the next group.

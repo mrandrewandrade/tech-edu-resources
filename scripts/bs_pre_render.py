@@ -15,6 +15,13 @@ def run(command: list[str]) -> None:
 
 
 def main() -> int:
+    print("Generating the shared mission catalogue for the website and game.")
+    run(
+        [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "build_mission_catalog.py"),
+        ]
+    )
     print("Generating the TEJ curriculum roadmap.")
     run(
         [

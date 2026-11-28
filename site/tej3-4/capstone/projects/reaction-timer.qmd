@@ -1,0 +1,79 @@
+---
+title: "Mission: Reaction Timer"
+description: "Build a playable Python and GPIO reaction game using an LED, pushbutton, and optional buzzer."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+terms: [python, programming, circuit, gpio, data-logging]
+---
+
+This is a ready-now mission using the Raspberry Pi or BeagleBone stations, one LED, one resistor, one pushbutton, and an optional quiet buzzer.
+
+## Minimum result
+
+The program waits for a random delay, turns on the LED, measures the time until the button is pressed, and displays the reaction time. Complete five rounds and report the best and average time.
+
+## Stage 1: make the game work without hardware
+
+1. Import `time` and `random`.
+2. Choose a random delay between 2 and 5 seconds.
+3. Print `WAIT`.
+4. Wait for the random delay.
+5. Print `GO` and record the start time using `time.monotonic()`.
+6. Press Enter as quickly as possible.
+7. Record the finish time and calculate the difference.
+8. Repeat five times and store the results in a list.
+
+Use milliseconds:
+
+$$
+t_{ms}=1000(t_{finish}-t_{start})
+$$
+
+## Stage 2: build the input and output
+
+Build only the approved circuit from the GPIO checkout:
+
+1. controller output to LED current-limiting resistor;
+2. resistor to LED anode;
+3. LED cathode to controller ground;
+4. pushbutton connected using the approved internal or external pull resistor;
+5. optional buzzer only if its current is within the approved output route.
+
+Pass the power-off teacher check before connecting the controller.
+
+## Stage 3: connect the game
+
+Replace the `WAIT` and `GO` messages with physical states:
+
+| Game state | LED | Button response |
+|:--|:--|:--|
+| Waiting | off | an early press is a false start |
+| Go | on | first valid press ends the round |
+| Result | off | print the reaction time |
+
+The program must turn every output off when it ends or when `Ctrl+C` is pressed.
+
+## Required calculations and code evidence
+
+1. Calculate the LED resistor current using the measured supply and LED voltage.
+2. Record five reaction times.
+3. Calculate the best time.
+4. Calculate the average time.
+5. Display the results with units.
+
+## Extensions
+
+Choose one:
+
+1. add a quiet start beep;
+2. detect and penalize false starts;
+3. add a two-player mode;
+4. save the results to a CSV file;
+5. graph the five reaction times in Jupyter;
+6. build a traffic-light start sequence.
+
+## Submit
+
+Submit the circuit schematic, LED calculation, code, five results, one photograph, and a short screen recording or teacher demonstration.

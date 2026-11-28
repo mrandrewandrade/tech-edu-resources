@@ -1,0 +1,74 @@
+---
+title: "Mission: LED Strip Controller"
+description: "Control a classroom LED strip from a separate supply using protected transistor or MOSFET channels."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+terms: [python, programming, circuit, transistor, power]
+---
+
+The classroom has LED strip sections that may operate from 12 V. The exact strip markings and connector order must be checked before power is connected.
+
+::: {.callout-important title="Separate control from load power"}
+The Raspberry Pi or BeagleBone does not power the strip. The strip uses the teacher-approved external supply. Each colour channel uses an approved transistor or logic-level MOSFET driver.
+:::
+
+## Minimum result
+
+Control one verified strip channel safely. Measure its supply voltage and current and show that the controller returns the strip to off when the program stops.
+
+## Stage 1: identify the strip
+
+Record:
+
+1. printed voltage;
+2. number of conductors;
+3. common-anode, common-cathode, or individually addressable type;
+4. connector labels and wire colours;
+5. current for the exact test length;
+6. whether the strip already contains current-limiting resistors.
+
+Do not assume the wire colour identifies the electrical function.
+
+## Stage 2: test one channel manually
+
+1. Use a short teacher-approved strip section.
+2. Set the current limit before connecting it.
+3. Connect the strip directly to the approved supply without the controller.
+4. Verify one channel and measure current.
+5. Disconnect power before changing wires.
+
+## Stage 3: add one driver
+
+Use the approved driver circuit with:
+
+1. controller output connected through the required gate or base resistor;
+2. pull-down or pull-up resistor that keeps the output off during startup;
+3. common reference between controller and driver when required;
+4. strip current flowing through the driver, not the GPIO pin;
+5. external supply connected only to the load side.
+
+Pass the power-off teacher check before connecting either supply.
+
+## Stage 4: add PWM
+
+Test three command levels such as 25%, 50%, and 100%. Record command level, supply voltage, strip current, and observed brightness.
+
+## RGB extension
+
+After one channel passes, repeat the driver stage for red, green, and blue. Create at least five named colours. Each colour channel needs its own approved driver.
+
+## Required calculations
+
+Calculate load power at the maximum tested setting:
+
+$$
+P=VI
+$$
+
+Compare the measured current with the supply, driver, conductor, and fuse ratings.
+
+## Submit
+
+Submit the verified connector map, schematic, voltage and current table, power calculation, program, photographs, and a demonstration of safe shutdown.

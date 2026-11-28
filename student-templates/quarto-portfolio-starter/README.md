@@ -19,6 +19,10 @@ The design borrows three useful portfolio ideas:
 Install the current Quarto CLI from <https://quarto.org/docs/get-started/>. Git is
 recommended. JupyterLite can edit notebooks but cannot render this website.
 
+## Start with the smallest successful site
+
+Open `START-HERE.md` and use the `core` profile first. Do not begin with every optional page. Render the small site, make one Git commit, and add sections only after that works.
+
 ## Ten-minute setup
 
 1. Open `_quarto.yml`.
@@ -26,7 +30,7 @@ recommended. JupyterLite can edit notebooks but cannot render this website.
    `Student Name or Initials`, `My Technology Portfolio`, the description, and
    footer attribution with teacher-approved wording. This is the one place for
    site identity and title.
-3. Choose one profile after `default:`:
+3. Keep `core` for the first successful render. Later, choose one profile after `default:`:
    - `core` — Home, Projects, About, Privacy;
    - `blog` — core plus Learning Log;
    - `skills` — core plus Skills and Tools;

@@ -1,0 +1,83 @@
+---
+title: "Mission: Salvage Machine Detective"
+description: "Use a multimeter and careful documentation to identify motors, switches, connectors, and functional blocks in salvaged equipment."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+terms: [circuit, voltage, current, resistance, computer-systems]
+---
+
+The salvage bins contain low-voltage motors, geared mechanisms, switches, wiring harnesses, small boards, battery holders, and unknown assemblies. This mission begins as a power-off investigation.
+
+## Minimum result
+
+Identify one usable low-voltage motor or mechanism, trace its connections, create a block diagram, and prepare a safe test proposal. Power is optional and requires teacher approval.
+
+## Stage 1: photograph before changing anything
+
+1. Place the assembly on a clear background.
+2. Photograph the full assembly and every connector.
+3. Give the item a temporary inventory ID.
+4. Record all labels, numbers, colours, and symbols exactly.
+5. Do not cut wires or remove parts yet.
+
+## Stage 2: sort the parts by role
+
+Identify visible examples of:
+
+- power input;
+- motor, pump, solenoid, or actuator;
+- switch or position sensor;
+- control board;
+- connector or harness;
+- mechanical output;
+- protective component.
+
+Use `unknown` when the evidence is insufficient.
+
+## Stage 3: use the multimeter with power disconnected
+
+1. Use continuity mode to trace each connector wire.
+2. Measure switch states while operating the mechanism by hand.
+3. Measure motor winding resistance without applying power.
+4. Check whether any wire is connected to the frame.
+5. Create a connector table showing pin, wire colour, destination, and evidence.
+
+## Stage 4: reconstruct the system
+
+Draw a block diagram showing:
+
+```text
+power source -> protection -> controller or switch -> driver -> motor or load -> mechanical output
+```
+
+Add feedback arrows for limit switches, position sensors, or other inputs.
+
+## Stage 5: propose a safe powered test
+
+The proposal must state:
+
+1. why the motor is believed to be low voltage;
+2. the starting voltage and current limit;
+3. how the assembly will be secured;
+4. which wires will be insulated;
+5. what measurement will stop the test;
+6. how power will be disconnected immediately.
+
+Do not connect an unknown board or motor directly to a Raspberry Pi, BeagleBone, USB port, or fixed 12 V source.
+
+## Extensions
+
+After teacher approval:
+
+1. test the motor briefly from a current-limited supply;
+2. measure starting and running current;
+3. create a MOSFET-driver proposal;
+4. add a limit switch to the reaction-timer or alarm code;
+5. recover useful connectors and label them for inventory;
+6. compare the original control board with a replacement block diagram.
+
+## Submit
+
+Submit the inventory ID, photographs, connector table, resistance measurements, block diagram, safe-test proposal, and the final storage location of every part.

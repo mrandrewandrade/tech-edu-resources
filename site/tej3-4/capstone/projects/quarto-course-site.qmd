@@ -1,0 +1,85 @@
+---
+title: "Mission: Build Your Course Website"
+description: "Open the prepared Quarto starter, choose a simple site version, and render a working local website."
+sidebar: tej
+body-classes: "bs-learn-article ter-notes-lesson"
+toc: true
+execute: {enabled: false}
+terms: [quarto, git, markdown, website, portfolio]
+---
+
+## Mission result
+
+Create a working local course website with your approved name or initials, one edited home page, one mission page, and a Git checkpoint.
+
+## Download the starter
+
+[Download the TEJ Quarto course-site starter](../../../assets/tej-portfolio/quarto-portfolio-starter.zip){.btn .btn-primary}
+
+Extract the ZIP to a teacher-approved project folder. Open `START-HERE.md` first.
+
+## Choose the easy version
+
+Open `_quarto.yml`. Keep this setting for the first successful render:
+
+```yaml
+profile:
+  default: core
+```
+
+| Choice | Pages | Use it when |
+|:--|:--|:--|
+| `core` | Home, Projects, About, Privacy | recommended starting point |
+| `skills` | Core plus Skills | you want a skills and tools page |
+| `blog` | Core plus Learning Log | you want short dated updates |
+| `full` | Every section | the core version already works |
+
+## Make three small edits
+
+1. In `_quarto.yml`, replace the student name or initials and site title.
+2. In `index.qmd`, replace the opening sample text with two or three sentences about your course work.
+3. Copy `templates/general-project.qmd` into `projects/`, rename it with a short lowercase filename, and replace the title and minimum-result sections.
+
+Do not add private information or photographs of other students.
+
+## Render the site
+
+Open a terminal in the extracted project folder:
+
+```bash
+quarto check
+quarto preview
+```
+
+Open the local address shown in the terminal. Check the home page and Projects page. Stop the preview using `Ctrl+C`, then run:
+
+```bash
+quarto render
+```
+
+## Save the result with Git
+
+```bash
+git status
+git add _quarto.yml index.qmd projects
+git diff --staged
+git commit -m "Build my course website"
+git log --oneline
+```
+
+Do not add `_site` or `.quarto`. The starter already includes a `.gitignore` for generated output.
+
+## Success check
+
+You are finished when:
+
+1. `quarto render` finishes without an unexplained error;
+2. the home page shows your approved title;
+3. the Projects page opens your mission page;
+4. `git log --oneline` shows the website commit.
+
+## Continue through the course
+
+For each later mission, add one project page containing the evidence that fits the task. This could be code, a schematic, a calculation, a test table, a photograph, a screenshot, or a troubleshooting record. Make one useful commit after the evidence is complete.
+
+The longer [Quarto website lesson](../../linux-operating-systems/quarto-website.qmd) explains listings, profiles, relative links, themes, accessibility, and debugging. Public publishing is optional.

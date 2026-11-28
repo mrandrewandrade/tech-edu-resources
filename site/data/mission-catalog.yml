@@ -1,0 +1,434 @@
+version: 1
+
+stat_labels:
+  circuits: Circuits
+  coding: Code
+  measurement: Measure
+  building: Build
+  troubleshooting: Debug
+
+readiness_levels:
+  ready: {label: Ready, css_class: ready, teacher_gate: false}
+  simulation_first: {label: Simulation first, css_class: ready, teacher_gate: false}
+  power_off: {label: Power-off ready, css_class: ready, teacher_gate: false}
+  input_check: {label: Input check, css_class: check, teacher_gate: true}
+  driver_check: {label: Driver check, css_class: check, teacher_gate: true}
+  part_check: {label: Part check, css_class: check, teacher_gate: true}
+  buzzer_check: {label: Buzzer check, css_class: check, teacher_gate: true}
+  shared_station: {label: Shared station, css_class: shared, teacher_gate: true}
+  optional_online: {label: Optional online, css_class: shared, teacher_gate: true}
+
+mission_pattern:
+  minimum_success:
+    - Identify the exact part, file, or system.
+    - Make the minimum version work safely.
+    - Measure or test one result.
+    - Add the evidence to the course website and save it with Git.
+  stages:
+    - {id: identify, label: Identify, prompt: Record the part number, rating, pinout, command, or file you are actually using.}
+    - {id: predict, label: Predict, prompt: State what should happen and calculate an expected value when the mission includes a circuit.}
+    - {id: represent, label: Represent, prompt: Read or create the schematic, wiring diagram, flowchart, state table, or command sequence.}
+    - {id: simulate, label: Simulate, prompt: Test the circuit or program virtually when a suitable simulator is available.}
+    - {id: build, label: Build, prompt: Assemble or configure one small stage at a time and pass any required teacher check.}
+    - {id: measure, label: Measure, prompt: Record an actual voltage, resistance, current, time, output, or test result with units.}
+    - {id: troubleshoot, label: Troubleshoot, prompt: Compare expected and actual behaviour, isolate one cause, and record the correction.}
+    - {id: improve, label: Improve, prompt: Add one extension only after the minimum version works.}
+  evidence_types:
+    - schematic or system diagram
+    - calculation or prediction
+    - simulation or code
+    - measured result with units
+    - photograph or screenshot
+    - fault and correction
+    - Git checkpoint
+
+missions:
+  - id: git-first-save
+    order: 1
+    title: Git First Save
+    href: tej3-4/capstone/projects/git-first-save.qmd
+    region: field-archive
+    group: Course website
+    readiness: ready
+    effort: 1
+    stats: {circuits: 0, coding: 2, measurement: 0, building: 1, troubleshooting: 3}
+    summary: Create a local repository, make one useful commit, and prove that the checkpoint exists.
+    equipment: [Linux, macOS, or Windows computer, Git]
+    prerequisites: []
+    learns: [repository, status, staging, commit, history]
+    pilot: true
+
+  - id: course-site-starter
+    order: 2
+    title: Build Your Course Website
+    href: tej3-4/capstone/projects/quarto-course-site.qmd
+    region: field-archive
+    group: Course website
+    readiness: ready
+    effort: 2
+    stats: {circuits: 0, coding: 3, measurement: 0, building: 4, troubleshooting: 3}
+    summary: Open the Quarto starter, choose a simple site profile, change the home page, and render a working local website.
+    equipment: [Computer, Quarto, course-site starter ZIP]
+    prerequisites: [git-first-save]
+    learns: [Markdown, YAML, Quarto, local preview, Git checkpoint]
+    pilot: true
+
+  - id: python-jupyter-first-steps
+    order: 3
+    title: Python and Jupyter First Steps
+    href: tej3-4/computational-engineering/python-first-steps.qmd
+    region: signal-station
+    group: Linux and code
+    readiness: ready
+    effort: 2
+    stats: {circuits: 1, coding: 4, measurement: 1, building: 1, troubleshooting: 3}
+    summary: Run simple Python, change variables, use a list, and complete a small engineering calculation.
+    equipment: [JupyterLite, Jupyter, or Google Colab]
+    prerequisites: []
+    learns: [Python syntax, variables, types, lists, notebook cells]
+    pilot: true
+
+  - id: offline-linux-workstation
+    order: 4
+    title: Offline Linux Workstation
+    href: tej3-4/capstone/platform/index.qmd
+    region: signal-station
+    group: Linux and code
+    readiness: ready
+    effort: 2
+    stats: {circuits: 0, coding: 2, measurement: 0, building: 1, troubleshooting: 4}
+    summary: Boot, inspect, run Python, save evidence, and shut down a classroom controller correctly without Wi-Fi.
+    equipment: [Raspberry Pi or BeagleBone, microSD card, monitor, keyboard, mouse]
+    prerequisites: []
+    learns: [Linux startup, terminal, files, Python, safe shutdown]
+    pilot: true
+
+  - id: ethernet-cable
+    order: 5
+    title: Build and Test an Ethernet Cable
+    href: tej3-4/networking/build-and-test-ethernet-cable/index.qmd
+    region: signal-station
+    group: Networking
+    readiness: ready
+    effort: 2
+    stats: {circuits: 2, coding: 0, measurement: 4, building: 4, troubleshooting: 4}
+    summary: Terminate a cable in T568B order and verify all eight conductors using a cable tester.
+    equipment: [Ethernet cable, connectors, crimper, cable tester]
+    prerequisites: []
+    learns: [T568B, termination, inspection, continuity testing]
+    pilot: true
+
+  - id: breadboard-map
+    order: 10
+    title: Breadboard Map
+    href: tej3-4/capstone/mission-bank.qmd#foundation-missions
+    region: signal-station
+    group: Circuit foundations
+    readiness: ready
+    effort: 1
+    stats: {circuits: 2, coding: 0, measurement: 5, building: 2, troubleshooting: 3}
+    summary: Map connected rows and rails and prove the connections using continuity mode.
+    equipment: [Breadboard, jumpers, multimeter]
+    prerequisites: []
+    learns: [breadboard connections, continuity, meter setup]
+    pilot: true
+
+  - id: resistor-detective
+    order: 11
+    title: Resistor Detective
+    href: tej3-4/capstone/mission-bank.qmd#foundation-missions
+    region: signal-station
+    group: Circuit foundations
+    readiness: ready
+    effort: 1
+    stats: {circuits: 3, coding: 0, measurement: 5, building: 1, troubleshooting: 2}
+    summary: Read a resistor colour code, predict its value, measure it, and sort it correctly.
+    equipment: [Resistor assortment, multimeter]
+    prerequisites: []
+    learns: [resistance, colour code, tolerance, measurement]
+    pilot: false
+
+  - id: led-resistor-designer
+    order: 12
+    title: LED Resistor Designer
+    href: tej3-4/capstone/mission-bank.qmd#foundation-missions
+    region: signal-station
+    group: Circuit foundations
+    readiness: ready
+    effort: 2
+    stats: {circuits: 4, coding: 0, measurement: 4, building: 3, troubleshooting: 3}
+    summary: Calculate, build, and measure one protected LED and pushbutton circuit.
+    equipment: [LED, resistor, pushbutton, breadboard, 5 V supply, multimeter]
+    prerequisites: [breadboard-map]
+    learns: [Ohm's law, polarity, current limiting, voltage measurement]
+    pilot: true
+
+  - id: capacitor-timer
+    order: 13
+    title: Capacitor Timer
+    href: tej3-4/capstone/mission-bank.qmd#foundation-missions
+    region: signal-station
+    group: Circuit foundations
+    readiness: ready
+    effort: 3
+    stats: {circuits: 4, coding: 2, measurement: 4, building: 3, troubleshooting: 3}
+    summary: Compare two RC combinations and graph the measured charge or discharge.
+    equipment: [Capacitors, resistors, LED, breadboard, multimeter]
+    prerequisites: [led-resistor-designer]
+    learns: [capacitance, polarity, time constant, graphing]
+    pilot: false
+
+  - id: meter-troubleshooter
+    order: 14
+    title: Meter Troubleshooter
+    href: tej3-4/capstone/mission-bank.qmd#foundation-missions
+    region: signal-station
+    group: Circuit foundations
+    readiness: ready
+    effort: 2
+    stats: {circuits: 4, coding: 0, measurement: 5, building: 1, troubleshooting: 5}
+    summary: Diagnose a prepared open, reversed LED, wrong resistor, or missing reference connection.
+    equipment: [Prepared circuit, multimeter, fault card]
+    prerequisites: [breadboard-map, led-resistor-designer]
+    learns: [continuity, voltage tracing, fault isolation]
+    pilot: false
+
+  - id: gpio-blink-button
+    order: 20
+    title: GPIO Blink and Button
+    href: tej3-4/capstone/platform/gpio-progression.qmd
+    region: signal-station
+    group: Linux and code
+    readiness: ready
+    effort: 2
+    stats: {circuits: 2, coding: 3, measurement: 2, building: 2, troubleshooting: 3}
+    summary: Produce one protected output, read one defined input, and return the system to a safe state.
+    equipment: [Controller, LED, resistor, button, breadboard]
+    prerequisites: [offline-linux-workstation, led-resistor-designer]
+    learns: [GPIO, input, output, pull resistor, safe shutdown]
+    pilot: true
+
+  - id: reaction-timer
+    order: 21
+    title: Reaction Timer
+    href: tej3-4/capstone/projects/reaction-timer.qmd
+    region: signal-station
+    group: Linux and code
+    readiness: ready
+    effort: 3
+    stats: {circuits: 2, coding: 5, measurement: 2, building: 3, troubleshooting: 4}
+    summary: Build a playable Python reaction game and calculate the best and average time.
+    equipment: [Controller, LED, resistor, pushbutton, optional buzzer]
+    prerequisites: [gpio-blink-button]
+    learns: [Python timing, random delay, lists, average, GPIO]
+    pilot: true
+
+  - id: traffic-light
+    order: 22
+    title: Traffic Light
+    href: tej3-4/capstone/projects/beaglebone-traffic-light.qmd
+    region: signal-station
+    group: Linux and code
+    readiness: ready
+    effort: 3
+    stats: {circuits: 2, coding: 4, measurement: 2, building: 3, troubleshooting: 3}
+    summary: Program a timed state machine with three indicators and a pedestrian request.
+    equipment: [Controller, red LED, yellow LED, green LED, resistors, button]
+    prerequisites: [gpio-blink-button]
+    learns: [state machine, sequencing, timing, testing]
+    pilot: false
+
+  - id: linux-alarm
+    order: 23
+    title: Linux Alarm
+    href: tej3-4/capstone/projects/linux-alarm.qmd
+    region: signal-station
+    group: Linux and code
+    readiness: ready
+    effort: 4
+    stats: {circuits: 3, coding: 4, measurement: 2, building: 3, troubleshooting: 4}
+    summary: Arm, trigger, silence, and log a visible or quiet audible alarm state machine.
+    equipment: [Controller, switches, LEDs, resistors, approved buzzer]
+    prerequisites: [gpio-blink-button]
+    learns: [Linux, Python, state machine, logging, alarm states]
+    pilot: false
+
+  - id: water-sensor-warning
+    order: 30
+    title: Water Sensor Warning
+    href: tej3-4/capstone/projects/water-sensor-warning.qmd
+    region: signal-station
+    group: Sensors and water
+    readiness: input_check
+    effort: 3
+    stats: {circuits: 3, coding: 3, measurement: 5, building: 3, troubleshooting: 4}
+    summary: Verify a water sensor output with a meter and create a wet and dry warning.
+    equipment: [Water sensor, multimeter, LED or quiet buzzer, controller]
+    prerequisites: [gpio-blink-button]
+    learns: [sensor verification, voltage measurement, thresholds, input safety]
+    pilot: true
+
+  - id: automatic-night-light
+    order: 31
+    title: Automatic Night Light
+    href: tej3-4/capstone/projects/automatic-night-light.qmd
+    region: signal-station
+    group: Sensors and water
+    readiness: driver_check
+    effort: 4
+    stats: {circuits: 4, coding: 3, measurement: 4, building: 4, troubleshooting: 4}
+    summary: Measure a light sensor, choose a threshold, and switch an approved light.
+    equipment: [Light sensor, resistors, LED or lamp, approved driver]
+    prerequisites: [gpio-blink-button]
+    learns: [voltage divider, threshold, transistor driver, testing]
+    pilot: false
+
+  - id: water-pump-controller
+    order: 32
+    title: Water Pump Controller
+    href: tej3-4/capstone/projects/water-pump-controller.qmd
+    region: signal-station
+    group: Sensors and water
+    readiness: driver_check
+    effort: 5
+    stats: {circuits: 4, coding: 4, measurement: 5, building: 5, troubleshooting: 5}
+    summary: Run a low-voltage pump for a limited time through an approved driver and protection circuit.
+    equipment: [Low-voltage pump, driver, diode, external supply, tubing, tray]
+    prerequisites: [water-sensor-warning, gpio-blink-button]
+    learns: [motor load, flyback protection, timed control, water safety]
+    pilot: true
+
+  - id: sensor-data-logger
+    order: 33
+    title: Sensor Data Logger
+    href: tej3-4/capstone/platform/data-extension.qmd
+    region: signal-station
+    group: Sensors and water
+    readiness: input_check
+    effort: 3
+    stats: {circuits: 2, coding: 4, measurement: 4, building: 2, troubleshooting: 3}
+    summary: Record time-stamped sensor values or states and graph the result.
+    equipment: [Approved sensor, controller, Python]
+    prerequisites: [python-jupyter-first-steps]
+    learns: [CSV, timestamps, logging, graphing, interpretation]
+    pilot: false
+
+  - id: low-voltage-motor
+    order: 40
+    title: Low-Voltage Motor Controller
+    href: tej3-4/capstone/projects/dc-motor-controller.qmd
+    region: signal-station
+    group: Motion and machines
+    readiness: driver_check
+    effort: 4
+    stats: {circuits: 4, coding: 4, measurement: 5, building: 5, troubleshooting: 5}
+    summary: Characterize a classroom motor, control it through an approved driver, and add PWM speed control.
+    equipment: [Low-voltage motor, current-limited supply, driver, diode, meter, controller]
+    prerequisites: [gpio-blink-button, led-resistor-designer]
+    learns: [motor current, MOSFET driver, flyback protection, PWM]
+    pilot: true
+
+  - id: salvage-machine-detective
+    order: 41
+    title: Salvage Machine Detective
+    href: tej3-4/capstone/projects/salvage-machine-detective.qmd
+    region: signal-station
+    group: Motion and machines
+    readiness: power_off
+    effort: 3
+    stats: {circuits: 3, coding: 1, measurement: 5, building: 2, troubleshooting: 5}
+    summary: Trace a salvaged mechanism, map its connectors, and propose a safe powered test.
+    equipment: [Salvaged mechanism, multimeter, labels, camera]
+    prerequisites: [breadboard-map]
+    learns: [continuity tracing, resistance, block diagram, safe test plan]
+    pilot: false
+
+  - id: servo-stepper-positioner
+    order: 42
+    title: Servo or Stepper Positioner
+    href: tej3-4/capstone/mission-bank.qmd#motion-missions
+    region: signal-station
+    group: Motion and machines
+    readiness: part_check
+    effort: 4
+    stats: {circuits: 3, coding: 4, measurement: 3, building: 4, troubleshooting: 4}
+    summary: Identify a motor and matching driver and move to repeatable positions.
+    equipment: [Verified motor, matching driver, external supply, controller]
+    prerequisites: [gpio-blink-button]
+    learns: [position control, driver matching, sequencing, calibration]
+    pilot: false
+
+  - id: capacitor-sound
+    order: 50
+    title: Capacitor Sound
+    href: tej3-4/capstone/projects/capacitor-sound-demo.qmd
+    region: signal-station
+    group: Light, sound, and automotive
+    readiness: buzzer_check
+    effort: 3
+    stats: {circuits: 4, coding: 2, measurement: 4, building: 3, troubleshooting: 3}
+    summary: Change a delay, cadence, or tone and compare it with an RC prediction.
+    equipment: [Capacitors, resistors, approved buzzer or piezo, meter]
+    prerequisites: [capacitor-timer]
+    learns: [RC timing, sound output, measurement, graph comparison]
+    pilot: false
+
+  - id: led-strip-controller
+    order: 51
+    title: LED Strip Controller
+    href: tej3-4/capstone/projects/led-strip-controller.qmd
+    region: signal-station
+    group: Light, sound, and automotive
+    readiness: driver_check
+    effort: 4
+    stats: {circuits: 4, coding: 4, measurement: 4, building: 4, troubleshooting: 5}
+    summary: Verify a strip, control one channel through a protected driver, and add PWM colour control.
+    equipment: [LED strip, external supply, approved drivers, controller, meter]
+    prerequisites: [gpio-blink-button]
+    learns: [PWM, MOSFET channels, current, power, colour mixing]
+    pilot: false
+
+  - id: relay-trailer-lamp
+    order: 52
+    title: Relay and Trailer Lamp
+    href: tej3-4/capstone/projects/automotive-relay-trainer.qmd
+    region: signal-station
+    group: Light, sound, and automotive
+    readiness: shared_station
+    effort: 4
+    stats: {circuits: 5, coding: 2, measurement: 5, building: 5, troubleshooting: 5}
+    summary: Verify an automotive relay, operate a fused trailer lamp, and diagnose prepared faults.
+    equipment: [Relay, fused 12 V source, trailer lamp, switch, meter]
+    prerequisites: [meter-troubleshooter]
+    learns: [relay terminals, KCL, KVL, voltage drop, fault diagnosis]
+    pilot: true
+
+  - id: publish-course-site
+    order: 60
+    title: Publish Your Course Website
+    href: tej3-4/linux-operating-systems/publish-github-pages.qmd
+    region: field-archive
+    group: Course website
+    readiness: optional_online
+    effort: 3
+    stats: {circuits: 0, coding: 3, measurement: 0, building: 3, troubleshooting: 4}
+    summary: Publish a teacher-approved Quarto site only after the local site and privacy check pass.
+    equipment: [Internet access, teacher-approved GitHub account, completed local site]
+    prerequisites: [course-site-starter]
+    learns: [GitHub, deployment, privacy, verification]
+    pilot: false
+
+  - id: student-choice
+    order: 70
+    title: Student-Choice Mission
+    href: tej3-4/capstone/projects/student-choice-project.qmd
+    region: field-archive
+    group: Independent extension
+    readiness: part_check
+    effort: 5
+    stats: {circuits: 3, coding: 3, measurement: 3, building: 4, troubleshooting: 4}
+    summary: Propose a safe, testable mission using available equipment and the common evidence requirements.
+    equipment: [Teacher-approved parts]
+    prerequisites: [course-site-starter]
+    learns: [planning, research, prototyping, testing, documentation]
+    pilot: false
